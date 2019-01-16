@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som medföljer Microsoft 365 Business.
-ms.openlocfilehash: bfddb419dbe5db441741a73ecb49e3d52649e382
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26983179"
 ---
 # <a name="microsoft-365-business-security-features"></a>Säkerhetsfunktionerna i Microsoft 365 Business
@@ -130,11 +130,9 @@ Möjligheten att använda följande begränsningar när du skickar e-postmeddela
 
 Kontrollera att AIP är aktiverad:
 
-1. Logga in på [Azure Active Directory administratörscenter](https://portal.azure.com/).
+1. Logga in på [Azure portal](https://portal.azure.com/).
 
-    Du också sjunger i genom att söka efter **resurser Admin** \> **Azure Active Directory** i vänstra navigeringsfältet i administratörscenter.
-
-2. Markera **alla tjänster** och tyoe i *Azure informationsskydd* i **Sökrutan**.
+2. Markera **alla tjänster** och Skriv i *Azure informationsskydd* i **Sökrutan**.
 
 3. När resultatet visas klickar du på start nästa på **Azure informationsskydd** så att det blir en favorit och lätta att hitta senare.
 
@@ -144,7 +142,7 @@ Kontrollera att AIP är aktiverad:
 
 Om du vill visa och ändra befintliga etiketter:
 
-1. Välj **klassificeringar** på instrumentpanelen Azure informationsskydd \> ** etiketter. <br/>![Standardetiketter för informationsskydd i Azure.](media/AIPLabels.png)
+1. Välj **klassificeringar** på instrumentpanelen Azure informationsskydd \> **etiketter**. <br/>![Standardetiketter för informationsskydd i Azure.](media/AIPLabels.png)
 
 2. Du kan välja alla etiketter för att visa alternativ kan du ändra visningsnamnet, färger osv.
  
@@ -159,6 +157,16 @@ Att manuellt installera klienten för AIP:
 2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och se till att alternativet **skydda** är tillgängliga på fliken **Start** . <br/>![Fliken skydd listrutan i ett Word-dokument.](media/Word_Protect.png)
 
 Mer information finns i [installera klienten](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## <a name="go-to-intune-admin-center"></a>Gå till Intune administratörscenter
+
+1. Logga in på [Azure portal](https://portal.azure.com/).
+
+2. Markera **alla tjänster** och Skriv i *Intune* i **Sökrutan**.
+
+3. När resultatet visas klickar du på start nästa **Microsoft Intune** så att det blir en favorit och lätta att hitta senare.
+ 
+Du kan använda Intune för att registrera och hantera enheter i din organisation. Mer information finns i [funktioner som metod för certifikatregistrering för Windows-enheter](https://docs.microsoft.com/intune/enrollment-method-capabs) och [registreringsalternativ för enheter som hanteras av Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>Vanliga frågor och svar
 
@@ -174,15 +182,4 @@ Ja, dessa funktioner finns på alla marknader där Microsoft 365 Business säljs
     
     ![Välj Admin Center i vänstra navigeringsfältet i Microsoft 365 administratörscenter.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Välj **säkerhet &amp; att** att gå till säkerhet &amp; regelefterlevnadscentret. 
-    
- ### <a name="how-do-i-find-the-intune-admin-center"></a>Hur hittar Intune administratörscenter?
-  
-  
-1. [Logga in på Microsoft 365 Business](https://portal.microsoft.com/) med admin-referenser. 
-    
-2. Hitta **resurser Admin** i vänster navigeringsfält och expandera den. 
-    
-3. Välj **Intune** gå till Intune administratörscenter. 
-    
-
+3. Välj **säkerhet &amp; att** att gå till säkerhet &amp; regelefterlevnadscentret.

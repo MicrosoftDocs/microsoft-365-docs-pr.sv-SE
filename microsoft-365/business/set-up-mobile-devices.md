@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installera Office på en iPhone eller en Android telefon och arbete-filer i Office apps kommer att skyddas av Microsoft 365 Business.
 ms.openlocfilehash: 15dc9742cb9712bcbf21e7e3668adc572ee9eb2b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26982599"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Konfigurera mobila enheter för Microsoft 365 företag-användare

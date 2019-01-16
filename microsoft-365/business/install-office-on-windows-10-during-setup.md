@@ -21,10 +21,10 @@ search.appverid:
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Lär dig att distribuera Office automatiskt till Windows 10 enheter under installationen.
 ms.openlocfilehash: c51be45b4b4782de43939e648e77239f42492c4c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26983319"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installera Office vid Windows 10-installationen

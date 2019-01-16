@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig att få åtkomst till lokala resurser som Line Of Business apps, filresurser och skrivare från en Azure Active Directory ingår Windows 10-enhet.
 ms.openlocfilehash: 0a5d4b0828888fcb99676223000c446479f84ddc
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26982259"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Åtkomst på lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business
