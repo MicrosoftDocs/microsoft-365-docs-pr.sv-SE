@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig hur du flyttar verksamheten till Microsoft 365 Business.
-ms.openlocfilehash: fd6f18c02453e6751d6163ab79e726eae9c951a9
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26983499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285724"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrera till Microsoft 365 Business från Office 365 Business Premium
 
@@ -55,9 +58,9 @@ Om du får en länk för att köpa dina licenser vägleder genom en guide som i 
     
 2. Du kan lägga till en domän genom att välja **Anslut en domän du redan äger** om du vill använda den här möjligheten att lägga till en annan domän i din prenumeration på sidan **Anpassa din inloggning och e-post** . 
     
-    Om du redan har registrerat en domän, det andra fältet visar som och säger **Fortsätt med** \< _domännamnet_ \> **för e-post och logga in**. Om du inte har registrerat en domän med prenumeration du säger det **Fortsätt med** \< _företag-name.onmicrosoft.com_ \> **för e-post och logga in**.    
+    Om du redan har registrerat en domän, det andra fältet visar som och säger **Fortsätt med** \< _domännamnet_ \> **för e-post och logga in**.   Om du inte har registrerat en domän med prenumeration du säger det **Fortsätt med** \< _företag-name.onmicrosoft.com_ \> **för e-post och logga in**.  
     
-    Välj **Next**.
+    Välj **Nästa**.
     
     ![På Anpassa din inloggning och e-sida kan du antingen lägga till en domän eller använda den som du har använt.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
   
@@ -95,7 +98,7 @@ När du har tilldelat Microsoft 365 Business licenser kan du börja med att skyd
     
   - [Ange programskyddsinställningar för Windows 10-enheter](protection-settings-for-windows-10-devices.md)
     
-  - [Ange inställningar för enhetsskydd för Windows 10](protection-settings-for-windows-10-pcs.md)
+  - [Ange inställningar för skydd för datorer med Windows 10](protection-settings-for-windows-10-pcs.md)
     
    ![Ange ett namn för den i fönstret Lägg till principen och välja principtypen från den nedrullningsbara menyn.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   

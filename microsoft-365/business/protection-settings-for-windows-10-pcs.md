@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Mer information om standard och andra inställningar som är tillgängliga i Microsoft 365 Business att skydda Windows 10 enheter.
-ms.openlocfilehash: ebfe5f59e544b67e5a4f2ecd990031e9221ff8e5
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: f9e890cde7a8290a9a8e81720d32a6a2889c312f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285938"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Ange inställningar för enhetsskydd för Windows 10
 
@@ -31,17 +34,15 @@ Titta på en video om hur du skyddar Windows 10-enheter med Microsoft 365 Busine
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Logga in på [Microsoft 365 Business](https://portal.office.com) som global administratör. 
+1. Logga in på [administratörscenter](https://go.microsoft.com/fwlink/p/?linkid=837890) med globala admin autentiseringsuppgifter. 
     
-2. I Administrationscenter väljer du **Lägg till princip** från kortet **Enheter**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. Välj **enheter** på vänster navigeringsfält \> **principer** \> **Lägg till**.
   
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Under **Typ av princip** väljer du **Konfiguration av Windows 10-enhet**.
     
-5. Expandera **Skydda Windows 10-enheter** \> konfigurera inställningar enligt eget önskemål. Se [Tillgängliga inställningar](protection-settings-for-windows-10-pcs.md#bkmk_availablesettings) för mer information. 
+5. Expandera **Skydda Windows 10-enheter** \> konfigurera inställningar enligt eget önskemål. Se [Tillgängliga inställningar](#available-settings) för mer information. 
     
     Du kan alltid använda länken **Återställ standardinställningar** för att återgå till standardinställningar. 
     

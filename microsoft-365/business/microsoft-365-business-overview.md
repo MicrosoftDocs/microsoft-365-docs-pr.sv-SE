@@ -5,10 +5,12 @@ author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig att konfigurera Microsoft 365 Business.
-ms.openlocfilehash: ee15ffa98de032d7936d950124cdf772335949bd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 80c6590a682af5fadeceac7a75e409adac897f6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26983289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276745"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Komma igång med Microsoft 365 Business
 
@@ -44,7 +46,7 @@ Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fle
 
  **Översikt över Microsoft 365 Business Suite ställa in**
   
-Följande diagram beskriver hur administratörer konfigurera Microsoft 365 Business. Här beskrivs också hur du förbereder Windows-datorer för Microsoft 365 Business. Du kan också lägga till nya enheter till Microsoft 365 Business admin Center med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda AutoPilot för att ställa in och konfigurera nya enheter före förbereda dem för produktiv användning när en användare loggar in med sina Microsoft 365 Business-autentiseringsuppgifter.
+Följande diagram beskriver hur administratörer konfigurera Microsoft 365 Business. Dessutom beskrivs stegen för att förbereda Windows-datorer för Microsoft 365 Business. Du kan också lägga till nya enheter i administrationscentret för Microsoft 365 Business med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda AutoPilot för att installera och förkonfigurera nya enheter och på så sätt göra dem klara att användas i produktionen så snart en användare loggar in med sina Microsoft 365 Business-autentiseringsuppgifter.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
   
@@ -58,13 +60,13 @@ Logga in på [administrationscentret för Microsoft 365 Business](https://portal
     
 2. [Konfigurera Microsoft 365 Business med hjälp av installationsguiden](set-up.md)
     
-    Om du **flyttar permanent från en lokal Active Directory till molnet**, du kan antingen lägga till användarna manuellt i Microsoft 365 Business administratörscenter med hjälp av guiden eller kan du göra en enstaka synkronisering med Azure AD Connect. Det finns två sätt att göra detta: 
+    Om du **flyttar permanent från en lokal Active Directory till molnet**, du kan antingen lägga till användarna manuellt i Microsoft 365 Business administratörscenter med hjälp av guiden eller kan du göra en enstaka synkronisering med Azure AD Connect. Du kan göra det på två sätt: 
     
-  - Om du har en Exchange 2010, Exchange 2013 och 2016 för Exchange server, kan du [Använda Minimal Hybrid snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Minimal hybrid stegen omfattar en enstaka användare till Azure AD-synkronisering samt e-migrering från lokal till molnet. När e-migreringen är klar, inaktiveras synkronisering directory automatiskt när du använder den här metoden.
+  - Om du har en Exchange 2010, Exchange 2013 och 2016 för Exchange server, kan du [Använda Minimal Hybrid snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Stegen för minimal hybridkonfiguration omfattar en engångssynkronisering av användare till Azure AD samt e-postmigrering från lokala resurser till molnet. När e-postmigreringen är klar inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
     
   - Använd Office 365-guiden för katalogsynkronisering för att synkronisera användarna till molnet. Följ stegen i [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) för att slutföra processen. När du har synkroniserat användarna med molnet måste du [Turn off directory synchronization for Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Du måste även ge varje användare som har lagts till på så sätt en licens för Microsoft 365 verksamhet. Du kan göra detta i [installationsguiden](set-up.md)eller [tilldela licenser till användare i Office 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    Du måste också ge var och en av användarna som har lagts till på det här sättet en licens för Microsoft 365 Business. Du kan göra detta i [installationsguiden](set-up.md)eller [tilldela licenser till användare i Office 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
     
 ### <a name="2-prepare-mobile-devices"></a>2: förbereda för mobila enheter
 

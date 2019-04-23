@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Lär dig hur du ställer in Windows-enheter som kör Windows 10 Pro för Microsoft 365 företagsanvändare. '
-ms.openlocfilehash: 482199b175c568bfae420619aa02024303894789
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284441"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Konfigurera Windows-enheter för Microsoft 365 Business-användare
 
@@ -33,7 +36,7 @@ Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8.
   
 Följ stegen i det här avsnittet för att få mer information om hur du uppgraderar Windows-enheter till Windows 10 Pro Creators Update: [Uppgradera Windows-enheter till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
-Läs [Kontrollera att enheten uppgraderats till Windows 10 Business](set-up-windows-devices.md#bkmk_verifywin10) och kontrollera att du har uppgraderingen och att uppgraderingen fungerade. 
+[Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad) kontrollerar du har uppgraderingen eller kontrollera att uppgraderingen har arbetat i avsnittet. 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Anslut Windows 10-enheter till organisationens Azure AD
 
@@ -51,7 +54,7 @@ Följ de här stegen för helt nya enheter som kör Windows 10 Pro Creators Upda
     
 3. Slutför konfigurationen av Windows 10-enhet.
     
-   När du är klar är användaren ansluten till organisationens Azure AD. Kontrollera att allt är korrekt genom att läsa [Kontrollera att enheten är ansluten till Azure AD](set-up-windows-devices.md#bkmk_verifyaad). 
+   När du är klar är användaren ansluten till organisationens Azure AD. Kontrollera att allt är korrekt genom att läsa [Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad). 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Enheter som redan är konfigurerade och använder Windows 10 Pro
 
@@ -73,13 +76,13 @@ Följ de här stegen för helt nya enheter som kör Windows 10 Pro Creators Upda
   
    ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. **Dags att du är inloggad** på sidan Ange ditt arbete eller skolan konto \> **Nästa**.
+5. On the **Let's get you signed in** page, enter your work or school account \> **Next**.
   
-   Ange ditt lösenord på sidan **Ange lösenord** \> **Logga in**.
+   On the **Enter password** page, enter your password \> **Sign in**.
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. På den ** kontrollera att detta är din organisation ** sidan, kontrollera att informationen är korrekt och klicka på **Anslut till**.
+6. Kontrollera att informationen är korrekt på sidan **kontrollerar du att det här är din organisation** och klicka på **Anslut till**.
   
    På sidan **Klart!** klickar du på **Klar**.
   
@@ -89,7 +92,7 @@ Om du laddade upp filer till OneDrive för företag, synkroniserar du dem med da
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Kontrollera att enheten är ansluten till Azure AD
 
-Om du vill verifiera din synkroniseringsstatus, klickar du i området **Ansluten till** _ **** organization name**** _ på sidan \< i \> för att visa knapparna **Info** och **Koppla från**. Klicka på **Info** för att visa din synkroniseringsstatus. 
+Om du vill kontrollera din synkroniseringsstatus på sidan **Access arbetet eller i skolan** i **inställningarna**klickar du på **ansluten till** _ \<organisationens namn\> _ område för att visa knapparna **Info** och **Koppla från**. Klicka på **Info** för att visa synkroniseringsstatus för. 
   
 Klicka på Synkronisera på sidan Synkroniseringsstatus synkronisering för att hämta de senaste hanteringsprinciperna för mobila enheter till datorn.
   

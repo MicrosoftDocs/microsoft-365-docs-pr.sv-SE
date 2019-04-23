@@ -5,16 +5,17 @@ author: jasongroce
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
+ms.collection: M365-subscription-management
 localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, business
 ms.date: 06/08/2018
-ms.openlocfilehash: e5937b1436701e872898dc079ba892181772202f
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 1e277aed366d82e524ef99c43ab0401b5d35e5b0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26983489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286138"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga och frågor svar om Microsoft 365 Business
 
@@ -29,8 +30,8 @@ Microsoft 365 är en integrerad lösning som sammanför bäst i klassen produkti
 * Business apps från Office (bokningar, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft listor<sup>[1](#footnote1)</sup>, Microsoft anslutningar<sup>[1](#footnote1)</sup>, Microsoft fakturering<sup>[1](#footnote1)</sup>) 
  
 **Företagsverktyg enhetsfunktioner för hantering och säkerhet** 
-- Ger skydd mot externa hot som nätfiske och sofistikerade skadliga program med Office 365 Advanced Threat Protection och Windows Defender utnyttja Guard 
--  Hjälper till att styra och hantera hur känslig information är tillgänglig och överförs med Office 365 förhindra dataförlust principer (ska vara tillgängliga i sommaren 2018) och Azure Information Protection Plan 1 
+- Ger skydd mot externa hot som nätfiske & sofistikerade skadliga program med Office 365 Advanced Threat Protection och Windows Defender utnyttja Guard 
+-  Hjälper till att kontrollera & hantera hur känslig information är tillgänglig och överförs med Office 365 förhindra dataförlust principer (ska vara tillgängliga i sommaren 2018) och Azure Information Protection Plan 1 
 -  Hjälper till att skydda, bevara och säkerhetskopiera dina data med Exchange Online-arkivering  
 -   App-skydd för Office & andra mobila appar med Intune App Protection 
 -  Enhetshantering för datorer med Windows 10, MacOS & Mobile-enheter med Intune-enhetshantering 
@@ -84,7 +85,7 @@ Microsoft 365 företag erbjuder sina kunder en enkla men kraftfulla sätt att ak
 * **Enhetshantering för iOS, Android & MacOS** funktioner hjälper företag att hantera ett ekosystem med olika enhet med iOS, Android, Windows och macOS enheter på ett säkert sätt. 
 
 ### <a name="how-does-microsoft-365-business-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Hur Microsoft 365 Business skyddar datorer i organisationen från skadliga attacker? 
-Datorer som hanteras med Microsoft 365 Business skyddas med Windows Defender, som är funktionen nr 1 antivirusprogram på Windows 10, skydda fler datorer mot virus, skadlig programvara, spionprogram och andra hot än andra lösningar.  Med Microsoft 365 Business säkerställa företag skydd för Windows Defender fungerar alltid uppdaterad på sina Windows 10-enheter.  
+Datorer som hanteras med Microsoft 365 Business skyddas med Windows Defender, som är det Nej. 1 antivirus-funktionen på Windows 10, skydda fler datorer mot virus, skadlig programvara, spionprogram och andra hot än andra lösningar.  Med Microsoft 365 Business säkerställa företag skydd för Windows Defender fungerar alltid uppdaterad på sina Windows 10-enheter.  
  
 Windows 10 Business även Windows Defender utnyttja Guard, en ny uppsättning funktioner för förebyggande av intrång. En av dess funktioner, kontrollerade mappåtkomst, stoppar ransomware i dess spår genom att låsa mappar och hindra obehöriga program från att komma åt viktiga filer. 
 
@@ -179,7 +180,7 @@ Microsoft 365 Business gör inte ett annat oäkta äkta Windows-version. Microso
 Samma stöd kanaler tillgängliga för CSP partners idag (premier support och stöd för avancerade program) har tränats på Microsoft 365 Business och är redo att ge partners med stöd. 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>Vad är BNPR och hur Microsoft 365 Business hjälper kunder med deras skyldigheter att?
-Allmänna Data Protection förordning (BNPR) är en omfattande ny sekretess lag som ger invånare i Europeiska unionen (EU) större kontroll över sina ”personuppgifter” och kräver organisationer att upprätthålla den personliga informationens integritet. BNPR kräver organisationer som kontroll eller bearbeta personuppgifter knutna till EU: S invånare att bara använda tredje parts databehandlare som uppfyller kraven på BNPR för behandling av personliga data. I mars 2017 gjort Microsoft tillgängliga avtalsenliga garantier som ger dessa garantier. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina skyldigheter för ytterligare BNPR bör Lär dig avancerade överensstämmelse och säkerhetsfunktioner som är tillgängliga som tillägg (t.ex. Azure informationsskydd, förhindra dataförlust, Advnaced Threat Protection, etc.) och i andra paket (exempelvis Microsoft 365 Enterprise E5). Om du vill veta mer kan du besöka [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+Allmänna Data Protection förordning (BNPR) är en omfattande ny sekretess lag som ger invånare i Europeiska unionen (EU) större kontroll över sina ”personuppgifter” och kräver organisationer att upprätthålla den personliga informationens integritet. BNPR kräver organisationer som kontroll eller bearbeta personuppgifter knutna till EU: S invånare att bara använda tredje parts databehandlare som uppfyller kraven på BNPR för behandling av personliga data. I mars 2017 gjort Microsoft tillgängliga avtalsenliga garantier som ger dessa garantier. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina skyldigheter för ytterligare BNPR bör Lär dig avancerade överensstämmelse och säkerhetsfunktioner som är tillgängliga som tillägg (t.ex. Azure informationsskydd, förhindra dataförlust, Avancerat Threat Protection, etc.) och i andra paket (exempelvis Microsoft 365 Enterprise E5). Om du vill veta mer kan du besöka [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 
 

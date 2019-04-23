@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -21,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Lär dig hur du skapar en princip för hantering av app och skydda arbete filer på Windows 10 enheter.
-ms.openlocfilehash: acf19a72d994185a35b2e425f8334a73a121ee10
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278203"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Ange programskyddsinställningar för Windows 10-enheter
 
@@ -34,12 +37,10 @@ ms.locfileid: "26982829"
 
 Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter med kan du skydda data även på de enheterna.
   
-1. Logga in på [Microsoft 365 Business](https://portal.office.com) som global administratör. Välj panelen **Administratör** för att gå till administrationscentret. 
+1. Logga in på [administratörscenter](https://go.microsoft.com/fwlink/p/?linkid=837890) med globala admin autentiseringsuppgifter. Välj panelen **Administratör** för att gå till administrationscentret. 
     
-2. På kortet **Enhetsprinciper** i administrationsportalen väljer du **Lägg till princip**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. Välj **enheter** på vänster navigeringsfält \> **principer** \> **Lägg till**.
+
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Välj **Programhantering för Windows 10** under **Principtyp**.
@@ -50,7 +51,7 @@ Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter 
     
 7. Ange **Hindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler i OneDrive för företag** till **På** om du inte vill att användare ska kunna spara filer på sina datorer. 
     
-8. Expandera **hantera hur användare kan komma åt Office-filer på enheter som** \> hur du vill konfigurera. **Hantera hur användare kommer åt kontorsenheter på mobila enheter** är **inaktiverat** som standard, men det rekommenderas att du **aktiverar det** och acceptera standardvärdena. Mer information finns i [tillgängliga inställningar](protection-settings-for-windows-10-devices.md#bkmk_settings) . 
+8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. Mer information finns i [tillgängliga inställningar](#available-settings). 
     
     Du kan alltid använda länken **Återställ standardinställningar** för att återgå till standardinställningarna. 
     

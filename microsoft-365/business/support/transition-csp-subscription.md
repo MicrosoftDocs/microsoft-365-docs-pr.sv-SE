@@ -10,11 +10,11 @@ audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365 SMB övergång CSP-prenumeration
 ms.date: 11/01/2017
 ms.openlocfilehash: 8109c0b00f06a15c12bbccf89e7f49dc3fa4b34a
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286298"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Överföra en Microsoft 365 Business CSP-prenumeration
 
@@ -65,7 +65,7 @@ I följande tabell sammanfattas konsekvenserna för kunder som inte övergår fr
 
 |       | T-0 T + 30     | T + 30-T + 60 | T + 60 T + 120 | Utöver T + 120  |
 |-------|-----------------|--------------|---------------|---------------|
-| **Region** | I grace-perioden | Upphört att gälla      | Inaktiverad      | Deprovisioned |
+| **Tillstånd** | I grace-perioden | Upphört att gälla      | Inaktiverad      | Deprovisioned |
 | **Tjänsten påverkar**                                                        |
 | **Administrationsportalen för Microsoft 365 Business** | Ingen påverkan på funktionen | Ingen påverkan på funktionen | Lägg till/ta bort användare kan köpa prenumerationer.</br> Det går inte att tilldela/återkalla licenser. | Kundens prenumeration och alla data raderas. Admin kan hantera andra betalda prenumerationer. |
 | **Office-appar**                         | Ingen inverkan på slutanvändaren | Ingen inverkan på slutanvändaren | Office övergår i läget Nedsatt funktionalitet.</br> Användare kan visa endast filer. | Office övergår i läget Nedsatt funktionalitet.</br> Användare kan visa endast filer. |

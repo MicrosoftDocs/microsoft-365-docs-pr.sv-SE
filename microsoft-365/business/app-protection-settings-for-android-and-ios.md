@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,28 +21,26 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Lär dig skapa, redigera eller ta bort en princip för hantering av app och skydda arbete filer på Android eller iOS-enheter.
-ms.openlocfilehash: ed03227496120369b94bf2396974eebfd7798678
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26983669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277469"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Ange inställningar för appskydd för Android- eller iOS-enheter
 
 ## <a name="create-an-app-management-policy"></a>Skapa en princip för programhantering
 
-1. Logga in på [Microsoft 365 Business](https://portal.office.com) som global administratör. 
+1. Logga in på [Microsoft 365 Business administratörscenter](https://go.microsoft.com/fwlink/p/?linkid=837890) med globala admin autentiseringsuppgifter. 
     
-2. I Administrationscenter väljer du **Lägg till princip** från kortet **Enheter**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
+2. Välj **enheter** i administratörscenter, \> **principer** \> **Lägg till princip**.
   
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Under **Typ av princip** väljer du **Programhantering för Android** eller **Programhantering för iOS** beroende på vilken uppsättning principer du vill skapa. 
     
-5. Expandera **Skydda filer om enheter försvinner eller blir stulna** och **Hantera hur användare får åtkomst till Office-filer på mobila enheter** \> konfigurera inställningar efter eget önskemål. **Styr hur användare får åtkomst till Office-filer på mobila enheter** är **Av** som standard, men vi rekommenderar att du aktiverar det med **På** och godkänner standardvärdena. Se [Tillgängliga inställningar](app-protection-settings-for-android-and-ios.md#bkmk_availablesettings) för mer information. 
+5. Expandera **Skydda filer om enheter försvinner eller blir stulna** och **Hantera hur användare får åtkomst till Office-filer på mobila enheter** \> konfigurera inställningar efter eget önskemål. **Styr hur användare får åtkomst till Office-filer på mobila enheter** är **Av** som standard, men vi rekommenderar att du aktiverar det med **På** och godkänner standardvärdena. Mer information finns i [tillgängliga inställningar](#available-settings) . 
     
     Du kan alltid använda länken **Återställ standardinställningar** för att återgå till standardinställningar. 
     
@@ -61,7 +62,7 @@ ms.locfileid: "26983669"
     
 ## <a name="delete-an-app-management-policy"></a>Ta bort en princip för programhantering
 
-1. Välj **Ta bort principen**på kortet **principer** .
+1. On the **Policies** card, choose **Delete policy**.
     
 2. I fönstret **Ta bort princip** markerar du de principer du vill ta bort \> **Välj** och sedan **Bekräfta** för att ta bort principen eller principerna du valt. 
     
@@ -93,7 +94,7 @@ Följande inställningar är tillgängliga för att bestämma hur användare kan
 |Återställ PIN-kod när inloggningen misslyckas så här många gånger  <br/> |Om du vill förhindra att obehöriga användare slumpmässigt gissar en PIN-kod. PIN-koden återställs efter det antal felaktiga försök som du anger.  <br/> |
 |Kräv att användare loggar in igen efter att Office-appar har varit inaktiva  <br/> |Den här inställningen bestämmer hur lång tid användare kan vara inaktiva innan de uppmanas att logga in igen.  <br/> |
 |Neka åtkomst till arbetsfiler på jailbroken eller rotade enheter  <br/> |Smarta användarna kanske har en jailbroken eller rotad enhet. Det innebär att användaren kan ändra operativsystemet, vilket gör enheten mer utsatt för skadlig programvara. De här enheterna är blockerade när den här inställningen är **På**.  <br/> |
-|Tillåt användare att kopiera innehåll från Office-program till personliga program  <br/> |Vi tillåter detta som standard, men om den här inställningen är **aktiverad**kommer användaren kan kopiera information i en arbetsfil till en personlig fil. Om inställningen är **Inaktiverad**, kan användaren inte kopiera informationen från ett konto för arbete till en personlig app eller kontoinformation.<br/> |
+|Tillåt användare att kopiera innehåll från Office-program till personliga program  <br/> |Vi tillåter inte detta som standard, men om inställningen är **På** kan användaren kopiera information i en arbetsfil till en privat fil. Om inställningen är **Av**, kan användaren inte kopiera information från en arbetskonto till ett privat program eller konto.  <br/> |
    
 
   

@@ -1,5 +1,5 @@
 # [Komma igång](microsoft-365-business-overview.md)
-## [Skaffa Microsoft 365 Business](get-microsoft-365-business.md)
+## [Hämta Microsoft 365 Business](sign-up.md)
 ## [Bestämmelser för dataskydd](pre-requisites-for-data-protection.md)
 ## [Säkerhetsfunktioner](security-features.md)
 ## [Konfigurera](set-up.md)

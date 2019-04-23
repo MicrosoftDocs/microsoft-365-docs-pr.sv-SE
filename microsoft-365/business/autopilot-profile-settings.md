@@ -4,14 +4,17 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot profiler hjälper dig att styra hur Windows installeras på användarens enheter. Profilerna innehåller standard och valfria inställningar som att hoppa över installationen av Cortana.
-ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276950"
 ---
 # <a name="about-autopilot-profile-settings"></a>Om AutoPilot-profilinställningar
 

@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Lär dig att hantera Microsoft 365 Business relaterade administrativa uppgifter, mobila enheter, Windows 10PCs och många aktiviteter.
-ms.openlocfilehash: 280bff9f12a884e6a19e26feea5d8a339297a434
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 993db51ec487237395ca57290e37a6c5edbce8b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278584"
 ---
 # <a name="manage-microsoft-365-business"></a>Hantera Microsoft 365 Business
 

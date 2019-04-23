@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Lär dig att flytta dina filer till OneDrive.
-ms.openlocfilehash: bef14f1231e73cc6d70f3266913d2bde89447c0a
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: a5cc0ff46599bcbf5aee71a76bce3ed99c8b9a66
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26982969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285448"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 

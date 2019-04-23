@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-security-compliance
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -16,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som medföljer Microsoft 365 Business.
-ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 24d4c4e79e7d8737beb82336796956774f127209
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26983179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286914"
 ---
 # <a name="microsoft-365-business-security-features"></a>Säkerhetsfunktionerna i Microsoft 365 Business
 
