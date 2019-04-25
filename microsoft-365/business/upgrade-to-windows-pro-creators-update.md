@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Lär dig hur du uppgraderar Windows-enheter till Windows 10 Pro skapare Update. '
-ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 13a964b19b1fbd43e9c255a90161ca6b48099305
+ms.sourcegitcommit: 2f7791159b715790463c6ce4835fbd9c0b48c047
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "33138173"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Uppgradera Windows-enheter till Windows Pro Creators Update
 
@@ -37,6 +37,9 @@ ms.locfileid: "32279874"
      - Skapa en installations-CD med [Verktyg för skapande av Media](https://go.microsoft.com/fwlink/?LinkID=836960) - Välj det här alternativet om du vill skapa ett installationsmedium för Windows 10 Pro skapare Update (USB-flash-enhet eller ISO-fil) för att installera Windows 10 på en dator som skiljer sig från den som du använder.
     
         en. Läs instruktionerna om hur du använder verktyget och skapa installationsmedia. 
+
+> [!Note]
+> Om du har enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro, Microsoft 365 Business-prenumeration ger dig rätt till en Windows 10-uppgradering - Windows kräver inte en produktnyckel.
     
 Se [ställa in Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md) att slutföra konfigurationen av Windows 10 enheter. 
   
