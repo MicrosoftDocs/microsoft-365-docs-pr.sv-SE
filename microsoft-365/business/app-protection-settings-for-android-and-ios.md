@@ -21,20 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Lär dig skapa, redigera eller ta bort en princip för hantering av app och skydda arbete filer på Android eller iOS-enheter.
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660598"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Ange inställningar för appskydd för Android- eller iOS-enheter
 
+![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>Skapa en princip för programhantering
 
-1. Logga in på [Microsoft 365 Business administratörscenter](https://go.microsoft.com/fwlink/p/?linkid=837890) med globala admin autentiseringsuppgifter. 
+1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Välj **enheter** i administratörscenter, \> **principer** \> **Lägg till princip**.
+2. Välj **enheter** i vänster navigeringsfält \> **principer** \> **Lägg till**.
   
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277469"
     
 ## <a name="delete-an-app-management-policy"></a>Ta bort en princip för programhantering
 
-1. On the **Policies** card, choose **Delete policy**.
+1. Välj en princip och sedan **Ta bort**på sidan **principer** .
     
-2. I fönstret **Ta bort princip** markerar du de principer du vill ta bort \> **Välj** och sedan **Bekräfta** för att ta bort principen eller principerna du valt. 
+2. Välj **Bekräfta** ta bort principen eller principerna som du valde i fönstret **Ta bort principen** . 
     
 ## <a name="available-settings"></a>Tillgängliga inställningar
 

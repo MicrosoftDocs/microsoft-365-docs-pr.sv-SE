@@ -19,18 +19,20 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som medföljer Microsoft 365 Business.
-ms.openlocfilehash: 24d4c4e79e7d8737beb82336796956774f127209
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: adf1cf183022f3d2c19364b9f60868e285f78637
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286914"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660616"
 ---
 # <a name="microsoft-365-business-security-features"></a>Säkerhetsfunktionerna i Microsoft 365 Business
 
 Microsoft 365 Business erbjuder förenklad säkerhetsfunktioner för att skydda data på datorer, telefoner och Tablet-datorer.
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Säkerhetsfunktioner i Microsoft 365 Business admin center
+
+![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 Du kan hantera många Microsoft 365 Business säkerhetsfunktionerna i administratörscenter, som ger dig ett förenklat sätt att aktivera och inaktivera dessa funktioner. I administratörscenter kan du göra följande:
   
@@ -86,90 +88,6 @@ Avancerade funktioner i Microsoft 365 Business finns tillgängliga för att hjä
     
 I nästa avsnitt beskrivs hur du kan hantera dessa funktioner i säkerhet &amp; regelefterlevnadscentret och Intune administratörscenter. Förenklade kontroller kommer att läggas till Microsoft 365 Business administratörscenter över tiden.
   
-## <a name="set-up-advanced-threat-protection-features"></a>Ställa in avancerade Threat Protection funktioner
-
-- **Skydd mot osäkra bilagor:** ATP identifierar skadligt innehåll genom att öppna e-postbilagor i en virtuell miljö och utför analys av resulterande beteende. Innehåll utvärderas för att avgöra dess avsikt (normal eller skadliga), och ATP blockerar leverans av osäkra bifogade filer, skydda mot phishing system och ransomware infektioner. Om du vill aktivera skydd för bifogade filer finns i [ställa in principer för Office 365 ATP säkra bifogade filer](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775).
-    
-- Skydda miljön när användaren klickar på skadliga länkar: ATP undersöker också länkar i e-post när en användare klickar på dem.. Om en länk är osäkra, inte att besöka webbplatsen för användaren eller informeras om att webbplatsen har blockerats. Detta skyddar mot phishing system. Du kan [Konfigurera principer för Office 365 ATP Safe länkar](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) eller [Konfigurera Office 365 ATP Safe länkar principer](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
-    
-## <a name="set-up-dlp-features"></a>Ställa in funktioner för DLP
-
-Ett exempel på hur du ställer in en princip som skyddar mot personligt identifierbar information (PII) finns i [Skapa en DLP-princip från en mall](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) . 
-  
-DLP levereras med flera färdiga att använda principmallar för många olika språk. Till exempel ekonomiska Data i Australien, Kanada personlig Information Act, amerikanska ekonomiska Data, etc. Se [vad den DLP principmallar innehåller](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) en fullständig lista. Alla dessa mallar kan aktiveras ungefär så PII mall. 
-  
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Ställ in e-lagring med Exchange Online-arkivering
-
- Funktioner för **Exchange Online-arkivering** licens ger dig möjlighet att upprätthålla överensstämmelse och reglerande normer genom att bevara e innehåll för e-informationsavslöjande. Det hjälper till att minska risken i händelse av tvist och ger möjlighet att återskapa data efter ett intrång eller när du behöver återskapa borttagna objekt. Om du vill aktivera dessa funktioner kan du använda rättstvist håller för att bevara en användares innehåll eller använda bevarandeprinciper för större anpassning. 
-  
-**Rättstvist håller:** Du kan behålla alla innehållet inklusive borttagna objekt genom att infoga hela postlådan för en användare i en rättstvist håller. 
-    
-Om du vill placera håller en postlåda på rättstvist i administratörscenter
-    
-1. Gå till **användare** i vänster navigeringsfält \> **aktiva användare**.
-    
-2. Välj en användare vars postlåda du vill placera på rättstvist håller och expandera **e-postinställningar** i fönstret användare och vid **Fler inställningar** väljer du **Redigera Exchange egenskaper**.
-    
-3. Välj på sidan postlåda för användaren ** postlåda funktioner ** i vänstra navigeringsfältet och välj sedan **Aktivera** länk under **rättstvist håller**.
-    
-4. I **rättstvist håller** dialogrutan kan du ange rättstvist håller varaktighet i fältet **rättstvist håller varaktighet** , lämna fältet tomt om du vill placera en oändlig håll. Du kan också lägga till anteckningar och direkt e-rutan ägare till en webbplats som du kan behöva förklara mer om tvisten håller \> **Spara**.
-    
-**Bevarande:** Du kan aktivera anpassade lagringsprinciper, till exempel att bevara under en viss tid eller permanent ta bort innehåll i slutet av loggperioden. Mer information finns i [Översikt över bevarandeprinciper](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
-## <a name="set-up-azure-information-protection-features"></a>Ställa in funktioner för informationsskydd i Azure
-
-Azure Information skydd (AIP) är en molnbaserad lösning som hjälper företaget att klassificera och du kan också skydda sina dokument och e-post med hjälp av etiketter. Etiketter kan användas av administratörer som definierar regler och villkor manuellt av användare eller en kombination där användare ges rekommendationer automatiskt.
-
-Möjligheten att använda följande begränsningar när du skickar e-postmeddelanden i Outlook på webben aktiveras automatiskt för alla användare:
-  
-- **Vidarebefordra inte**: mottagarna kan läsa meddelandet, men de kan inte vidarebefordra, skriva ut eller kopiera innehåll
-    
-- **Kryptera**: hela meddelandet är krypterat. Mottagarna måste vidta ytterligare åtgärder för att bekräfta sin identitet innan åtkomst till krypterade innehållet och kan inte ta bort kryptering.
-    
-- **Konfidentiellt**: ger anställda i organisationen fullständig behörighet till e-innehåll och bifogade filer, men inte till personer utanför organisationen. Data kan spåra och återkalla innehåll när som helst.
-    
-- **Mycket konfidentiella**: den här begränsningen kan användas till mycket konfidentiella data, vilket gör att anställda kan visa, redigera och svara, men inte vidarebefordra, skriva ut eller kopiera data. Data kan spåra och återkalla innehåll när som helst.
-
-### <a name="make-sure-azure-information-protection-is-activated"></a>Kontrollera att Azure informationsskydd är aktiverat
-
-Kontrollera att AIP är aktiverad:
-
-1. Logga in på [Azure portal](https://portal.azure.com/).
-
-2. Markera **alla tjänster** och Skriv i *Azure informationsskydd* i **Sökrutan**.
-
-3. När resultatet visas klickar du på start nästa på **Azure informationsskydd** så att det blir en favorit och lätta att hitta senare.
-
-4. Välj **Azure informationsskydd** \> **skydd aktivering** och gör att den har statusen till aktiverad. 
-
-### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Visa Azure informationsskydd princip- och etiketter 
-
-Om du vill visa och ändra befintliga etiketter:
-
-1. Välj **klassificeringar** på instrumentpanelen Azure informationsskydd \> **etiketter**. <br/>![Standardetiketter för informationsskydd i Azure.](media/AIPLabels.png)
-
-2. Du kan välja alla etiketter för att visa alternativ kan du ändra visningsnamnet, färger osv.
- 
-3. Se [ändra och skapa nya etiketter](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) om du vill skapa en egen. 
-
-### <a name="install-the-azure-information-protection-client-manually"></a>Installera Azure informationsskydd klienten manuellt
-
-Att manuellt installera klienten för AIP:
-
-1. Hämta **AzInfoProtection.exe** från [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
- 
-2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och se till att alternativet **skydda** är tillgängliga på fliken **Start** . <br/>![Fliken skydd listrutan i ett Word-dokument.](media/Word_Protect.png)
-
-Mer information finns i [installera klienten](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
-
-## <a name="go-to-intune-admin-center"></a>Gå till Intune administratörscenter
-
-1. Logga in på [Azure portal](https://portal.azure.com/).
-
-2. Markera **alla tjänster** och Skriv i *Intune* i **Sökrutan**.
-
-3. När resultatet visas klickar du på start nästa **Microsoft Intune** så att det blir en favorit och lätta att hitta senare.
- 
-Du kan använda Intune för att registrera och hantera enheter i din organisation. Mer information finns i [funktioner som metod för certifikatregistrering för Windows-enheter](https://docs.microsoft.com/intune/enrollment-method-capabs) och [registreringsalternativ för enheter som hanteras av Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>Vanliga frågor och svar
 

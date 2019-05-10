@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 'Installera eller avinstallera Office på Windows 10 enheter från Microsoft 365 Business administratörscenter. '
-ms.openlocfilehash: fef4a543aed489202bf05dfb1e8cafbb784ca819
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 94e5761b516c150caa11048be73d97f468b09fb5
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277309"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660619"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>Installera och avinstallera Office automatiskt på Windows 10-enheter
+
+![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
 Du kan snabbt och enkelt installera Office på datorer med Windows 10 från Microsoft 365 Business Administrationscenter.
   

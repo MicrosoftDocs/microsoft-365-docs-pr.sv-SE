@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig att få åtkomst till lokala resurser som Line Of Business apps, filresurser och skrivare från en Azure Active Directory ingår Windows 10-enhet.
-ms.openlocfilehash: 212685bc229f519152e69b09d0a745bfac7a38cd
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2be8eb16b9d17547d3bc4c3e4fe499b4c14117a4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660278"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Åtkomst på lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business
 
@@ -47,11 +47,9 @@ Om din organisation inte är redo att distribuera i Azure AD anslutna enhetens k
 Om du är Azure AD ansluta till en Windows-enhet som tidigare har anslutit till domänen eller i en arbetsgrupp måste du beakta följande begränsningar:
   
 - När en enhet Azure AD ansluter till, skapar en ny användare utan hänvisar till en befintlig profil. Lös problemet behöver profiler migreras manuellt. En användarprofil innehåller information, till exempel Favoriter, lokala filer, webbläsarinställningar, inställningar för Start-menyn, etc. Bästa metoden är att hitta ett tredjepartsverktyg för att mappa befintliga filer och inställningar till den nya profilen
-    
-- Om enheten använder grupprincip-objekt (GPO), kan vissa grupprincipobjekt inte har en jämförbar [Configuration Service Provider](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) i Intune. Kör [verktyget MMAT](https://www.microsoft.com/download/details.aspx?id=45520) för att hitta jämförbara kryptografiproviders för befintliga grupprincipobjekt. 
-    
-- Användare kommer inte att kunna autentisera till program som bygger på Active Directory-autentisering. För att bekämpa utvärdera med hjälp av en äldre app och överväga en uppdatering till en app som använder moderna autentisering om det är möjligt.
-    
-- Identifiering av Active Directory skrivaren fungerar inte. Ge alla användare direkt Skrivarsökvägar eller utnyttja [Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)åtgärda detta.
-    
 
+- Om enheten använder grupprincip-objekt (GPO), kan vissa grupprincipobjekt inte har en jämförbar [Configuration Service Provider](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) i Intune. Kör [verktyget MMAT](https://www.microsoft.com/download/details.aspx?id=45520) för att hitta jämförbara kryptografiproviders för befintliga grupprincipobjekt.
+
+- Användare kommer inte att kunna autentisera till program som bygger på Active Directory-autentisering. För att bekämpa utvärdera med hjälp av en äldre app och överväga en uppdatering till en app som använder moderna autentisering om det är möjligt.
+
+- Identifiering av Active Directory skrivaren fungerar inte. Ge alla användare direkt Skrivarsökvägar eller utnyttja [Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)åtgärda detta.
