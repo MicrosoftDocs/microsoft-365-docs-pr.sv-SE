@@ -19,34 +19,32 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visa enhet politik och åtgärder genom att logga in till Microsoft 365 företag med global administration-credintials.
-ms.openlocfilehash: 524e5382fb242ea6b77abd72191073ce4df14f0c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: fa609aad36b945fe9df99392aa1f9f8252baff1c
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285839"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660235"
 ---
-# <a name="view-policies-and-devices"></a><span data-ttu-id="7505b-103">Visa principer och enheter</span><span class="sxs-lookup"><span data-stu-id="7505b-103">View policies and devices</span></span>
+# <a name="view-and-manage-policies-and-devices"></a><span data-ttu-id="6ef6c-103">Visa och hantera principer och enheter</span><span class="sxs-lookup"><span data-stu-id="6ef6c-103">View and manage policies and devices</span></span>
 
-## <a name="view-device-policies"></a><span data-ttu-id="7505b-104">Visa principer för enheter</span><span class="sxs-lookup"><span data-stu-id="7505b-104">View device policies</span></span>
+![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
-1. <span data-ttu-id="7505b-105">Logga in på [Microsoft 365 Business](https://portal.office.com) som global administratör.</span><span class="sxs-lookup"><span data-stu-id="7505b-105">Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials.</span></span> 
-    
-2. <span data-ttu-id="7505b-106">Välj **enheter** på vänster navigeringsfält \> **principer** \> **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="7505b-106">On the left nav, choose **Devices** \> **Policies** \> **Add**.</span></span>
-    
-    <span data-ttu-id="7505b-107">På den här sidan kan du skapa, redigera, ändra målgruppen eller ta bort en princip.</span><span class="sxs-lookup"><span data-stu-id="7505b-107">On this page you can create, edit, change target group, or delete a policy.</span></span>
-    
-    ![Screenshot of the Policies page](media/27ebb1d3-d04b-4221-a13f-8583045b5077.png)
-  
-## <a name="view-device-actions"></a><span data-ttu-id="7505b-109">Visa enhetsåtgärder</span><span class="sxs-lookup"><span data-stu-id="7505b-109">View device actions</span></span>
+## <a name="view-and-edit-device-policies"></a><span data-ttu-id="6ef6c-105">Visa och redigera principer för enheten</span><span class="sxs-lookup"><span data-stu-id="6ef6c-105">View and edit device policies</span></span>
 
-1. <span data-ttu-id="7505b-110">Logga in på [Microsoft 365 Business](https://portal.office.com) som global administratör.</span><span class="sxs-lookup"><span data-stu-id="7505b-110">Sign in to [Microsoft 365 Business](https://portal.office.com) with global admin credentials.</span></span> 
-    
-2. <span data-ttu-id="7505b-111">Från kortet **Enhetsåtgärder** i administratörscentret väljer du **Enhetsåtgärder** för att öppna sidan **Enhetsåtgärder**.</span><span class="sxs-lookup"><span data-stu-id="7505b-111">In the admin center, on the **Device actions** card, choose **Device actions** to open the **Device actions** page.</span></span> 
-    
-    <span data-ttu-id="7505b-p101">På den här sidan kan du välja en eller flera enheter och ta bort företagsdata. För Windows 10-enheter som du har angett skyddsinställningar för kan du också välja att återställa enheten till fabriksinställningarna.</span><span class="sxs-lookup"><span data-stu-id="7505b-p101">On this page you can select one or more devices and either remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.</span></span>
-    
-    ![Device actions page.](media/6d2ad0c4-9c96-4489-ab93-c4e38e317d45.PNG)
+1.  <span data-ttu-id="6ef6c-106">Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="6ef6c-106">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
+2. <span data-ttu-id="6ef6c-107">Välj **enheter** på vänster navigeringsfält \> **principer**.</span><span class="sxs-lookup"><span data-stu-id="6ef6c-107">On the left nav, choose **Devices** \> **Policies**.</span></span>
+
+    <span data-ttu-id="6ef6c-108">På den här sidan kan du skapa, redigera, ändra målgruppen eller ta bort en princip.</span><span class="sxs-lookup"><span data-stu-id="6ef6c-108">On this page you can create, edit, change target group, or delete a policy.</span></span>
+
+    ![Screenshot of the Policies page](media/devicepolicies.png)
   
+## <a name="view-and-manage-devices"></a><span data-ttu-id="6ef6c-110">Visa och hantera enheter</span><span class="sxs-lookup"><span data-stu-id="6ef6c-110">View and manage devices</span></span>
+
+
+1. <span data-ttu-id="6ef6c-111">Välj **enheter** på vänster navigeringsfält \> **Hantera**.</span><span class="sxs-lookup"><span data-stu-id="6ef6c-111">On the left nav, choose **Devices** \> **Manage**.</span></span> 
+    
+    <span data-ttu-id="6ef6c-p101">På den här sidan kan du välja en eller flera enheter och ta bort företagsdata. För Windows 10-enheter som du har angett skyddsinställningar för kan du också välja att återställa enheten till fabriksinställningarna.</span><span class="sxs-lookup"><span data-stu-id="6ef6c-p101">On this page you can select one or more devices and either remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.</span></span>
   
+   ![Hantera enheter sida](media/devicesmanage.png)
 
