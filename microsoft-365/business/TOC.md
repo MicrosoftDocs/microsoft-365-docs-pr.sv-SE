@@ -1,7 +1,9 @@
-# [Microsoft 365 Business](index.md)
-## [Översikt](microsoft-365-business-overview.md)
+# Microsoft 365 Business
+## [Microsoft 365](index.md)
+## [Vad är Microsoft 365 Business?](microsoft-365-business-overview.md)
 ## [Hämta Microsoft 365 Business](sign-up.md)
 ## [Bestämmelser för dataskydd](pre-requisites-for-data-protection.md)
+## [Översikt över ställs in](set-up-overview.md)
 ## [Konfigurera](set-up.md)
 ### [Uppgradera till Windows Update Pro skapare](upgrade-to-windows-pro-creators-update.md)
 ### [Konfigurera mobila enheter](set-up-mobile-devices.md)
@@ -14,8 +16,10 @@
 ## [Säker](security-features.md)
 ### [Skydda ditt företag](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Ställ in avancerade säkerhetsfunktioner](set-up-advanced-security.md)
-## [Hantera](manage.md)
+## Användare
 ### [Add users](add-users-m365b.md)
+### [Ta bort en medarbetare](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Hantera enheter
 ### [Visa och redigera principer och enheter](view-policies-and-devices.md)
 ### [Ta bort företagsdata](remove-company-data.md)
 ### [Återställa enheter till fabriksinställningarna](reset-devices-to-factory-settings.md)
@@ -26,7 +30,12 @@
 #### [Validera inställningar på datorer med Windows 10](validate-settings-on-windows-10-pcs.md)
 ### [Inställningar för Windows 10 enheter](protection-settings-for-windows-10-devices.md)
 ## [Migrera till Microsoft 365 Business](migrate-to-microsoft-365-business.md)
-## [Lägga till Autopilot enheter och profil](add-autopilot-devices-and-profile.md)
+## Fakturering
+### [Din faktura](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [Betala](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [Avbryt](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Autopilot
+### [Lägga till Autopilot enheter och profil](add-autopilot-devices-and-profile.md)
 ### [Skapa och redigera AutoPilot-profiler](create-and-edit-autopilot-profiles.md)
 ### [Skapa och redigera AutoPilot-enheter](create-and-edit-autopilot-devices.md)
 ### [AutoPilot profilinställningar](autopilot-profile-settings.md)
