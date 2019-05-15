@@ -3,7 +3,7 @@ title: Installera och avinstallera Office automatiskt på Windows 10-enheter
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,41 +20,41 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 'Installera eller avinstallera Office på Windows 10 enheter från Microsoft 365 Business administratörscenter. '
-ms.openlocfilehash: 94e5761b516c150caa11048be73d97f468b09fb5
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 1e962f51882ddfd97da566858a0a1e6fb56ecbb8
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660619"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071969"
 ---
-# <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a><span data-ttu-id="cbcba-103">Installera och avinstallera Office automatiskt på Windows 10-enheter</span><span class="sxs-lookup"><span data-stu-id="cbcba-103">Automatically install or uninstall Office on Windows 10 devices</span></span>
+# <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a><span data-ttu-id="1d8f1-103">Installera och avinstallera Office automatiskt på Windows 10-enheter</span><span class="sxs-lookup"><span data-stu-id="1d8f1-103">Automatically install or uninstall Office on Windows 10 devices</span></span>
 
 ![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
 
-<span data-ttu-id="cbcba-105">Du kan snabbt och enkelt installera Office på datorer med Windows 10 från Microsoft 365 Business Administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="cbcba-105">You can quickly and easily install Office to Windows 10 PCs from the Microsoft 365 Business admin center.</span></span>
+<span data-ttu-id="1d8f1-105">Du kan snabbt och enkelt installera Office på datorer med Windows 10 från Microsoft 365 Business Administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-105">You can quickly and easily install Office to Windows 10 PCs from the Microsoft 365 Business admin center.</span></span>
   
-<span data-ttu-id="cbcba-106">Om du vill veta mer om hur det fungerar med tidigare installerade Office-program kan du läsa [Förbered för installation av Office-klienten](prepare-for-office-client-deployment.md) innan du sätter igång.</span><span class="sxs-lookup"><span data-stu-id="cbcba-106">To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started.</span></span> 
+<span data-ttu-id="1d8f1-106">Om du vill veta mer om hur det fungerar med tidigare installerade Office-program kan du läsa [Förbered för installation av Office-klienten](prepare-for-office-client-deployment.md) innan du sätter igång.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-106">To understand how this works with previously installed Office apps, read [Prepare for Office client installation](prepare-for-office-client-deployment.md) before you get started.</span></span> 
   
-## <a name="manage-office-deployments"></a><span data-ttu-id="cbcba-107">Hantera Office-distribution</span><span class="sxs-lookup"><span data-stu-id="cbcba-107">Manage Office deployments</span></span>
+## <a name="manage-office-deployments"></a><span data-ttu-id="1d8f1-107">Hantera Office-distribution</span><span class="sxs-lookup"><span data-stu-id="1d8f1-107">Manage Office deployments</span></span>
 
-1. <span data-ttu-id="cbcba-108">Logga in på [Administrationscenter](https://aka.ms/bcsportal) som global administratör.</span><span class="sxs-lookup"><span data-stu-id="cbcba-108">Sign in to the [admin center](https://aka.ms/bcsportal) with global admin credentials.</span></span> 
+1. <span data-ttu-id="1d8f1-108">Logga in på [Administrationscenter](https://aka.ms/bcsportal) som global administratör.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-108">Sign in to the [admin center](https://aka.ms/bcsportal) with global admin credentials.</span></span> 
     
-2. <span data-ttu-id="cbcba-109">På kortet **Enheter** väljer du **Hantera Office-distribution**.</span><span class="sxs-lookup"><span data-stu-id="cbcba-109">On the **Devices** card, choose **Manage Office Deployment**.</span></span>
-      <span data-ttu-id="cbcba-110">Om du inte ser **enheten åtgärder** -kort klickar du på **Lägg till** (+) om du vill lägga till den i hemmet admin admin center **Hem** på sidan.</span><span class="sxs-lookup"><span data-stu-id="cbcba-110">If you do not see the **Device actions** card, in the admin center **Home** page, click **Add** (+) to add it to your admin home.</span></span>
+2. <span data-ttu-id="1d8f1-109">På kortet **Enheter** väljer du **Hantera Office-distribution**.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-109">On the **Devices** card, choose **Manage Office Deployment**.</span></span>
+      <span data-ttu-id="1d8f1-110">Om du inte ser **enheten åtgärder** -kort klickar du på **Lägg till** (+) om du vill lägga till den i hemmet admin admin center **Hem** på sidan.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-110">If you do not see the **Device actions** card, in the admin center **Home** page, click **Add** (+) to add it to your admin home.</span></span>
     
     ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
-3. <span data-ttu-id="cbcba-112">I fönstret **Hantera Office distribution** som öppnas väljer du **Lägg till en grupp** och markerar de grupper som du vill använda.</span><span class="sxs-lookup"><span data-stu-id="cbcba-112">On the **Manage Office deployment** pane that opens, choose **Add a group**, then select the groups you want use.</span></span>
+3. <span data-ttu-id="1d8f1-112">I fönstret **Hantera Office distribution** som öppnas väljer du **Lägg till en grupp** och markerar de grupper som du vill använda.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-112">On the **Manage Office deployment** pane that opens, choose **Add a group**, then select the groups you want use.</span></span>
     
-4. <span data-ttu-id="cbcba-113">När du har lagt till den eller de grupper som du vill använda väljer du antingen **Installera Office så snart som möjligt** eller **Avinstallera Office** i listrutan **Distributionsåtgärd**.</span><span class="sxs-lookup"><span data-stu-id="cbcba-113">After you have added the group or groups you want to use, from the **Deployment Action** drop-down, select either **Install Office as soon as possible** or **Uninstall Office**.</span></span>
+4. <span data-ttu-id="1d8f1-113">När du har lagt till den eller de grupper som du vill använda väljer du antingen **Installera Office så snart som möjligt** eller **Avinstallera Office** i listrutan **Distributionsåtgärd**.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-113">After you have added the group or groups you want to use, from the **Deployment Action** drop-down, select either **Install Office as soon as possible** or **Uninstall Office**.</span></span>
     
     ![In the Manage Office deployment pane, choose either Install Office as soon as possible, or Uninstall Office.](media/00f24a61-1848-40c0-b037-78d726c7d757.png)
   
-5. <span data-ttu-id="cbcba-115">Välj **Nästa** \> granska inställningarna och välj sedan **Bekräfta**.</span><span class="sxs-lookup"><span data-stu-id="cbcba-115">Choose **Next** \> review the settings and then choose **Confirm**.</span></span>
+5. <span data-ttu-id="1d8f1-115">Välj **Nästa** \> granska inställningarna och välj sedan **Bekräfta**.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-115">Choose **Next** \> review the settings and then choose **Confirm**.</span></span>
     
-<span data-ttu-id="cbcba-116">32-bitarsversionen av Office installeras/avinstalleras automatiskt på de enheter som ägs av användare som ingår i gruppen eller grupperna du valde.</span><span class="sxs-lookup"><span data-stu-id="cbcba-116">A 32-bit Office will be automatically installed, or uninstalled in the devices owned by users specified by the group or groups you used.</span></span>
+<span data-ttu-id="1d8f1-116">32-bitarsversionen av Office installeras/avinstalleras automatiskt på de enheter som ägs av användare som ingår i gruppen eller grupperna du valde.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-116">A 32-bit Office will be automatically installed, or uninstalled in the devices owned by users specified by the group or groups you used.</span></span>
   
-<span data-ttu-id="cbcba-117">För att bekräfta åtgärden kan du öppna Aktivitetshanteraren på en dator som har angivits för Office-installation och leta processen Microsoft Office Klicka-och-kör.</span><span class="sxs-lookup"><span data-stu-id="cbcba-117">To verify you can open the Task Manager on a computer that was selected for an Office install and look for Microsoft Office Click-to-Run process.</span></span>
+<span data-ttu-id="1d8f1-117">För att bekräfta åtgärden kan du öppna Aktivitetshanteraren på en dator som har angivits för Office-installation och leta processen Microsoft Office Klicka-och-kör.</span><span class="sxs-lookup"><span data-stu-id="1d8f1-117">To verify you can open the Task Manager on a computer that was selected for an Office install and look for Microsoft Office Click-to-Run process.</span></span>
   
 
 
