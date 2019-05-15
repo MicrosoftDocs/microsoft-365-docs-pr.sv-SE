@@ -3,8 +3,9 @@
 ## [Vad är Microsoft 365 Business?](microsoft-365-business-overview.md)
 ## [Hämta Microsoft 365 Business](sign-up.md)
 ## [Bestämmelser för dataskydd](pre-requisites-for-data-protection.md)
-## [Översikt över ställs in](set-up-overview.md)
-## [Konfigurera](set-up.md)
+## Installation
+### [Översikt över inställningar](set-up-overview.md)
+### [Ställ in Microsoft 365 Business](set-up.md)
 ### [Uppgradera till Windows Update Pro skapare](upgrade-to-windows-pro-creators-update.md)
 ### [Konfigurera mobila enheter](set-up-mobile-devices.md)
 ### [Ställ in Windows-enheter](set-up-windows-devices.md)
