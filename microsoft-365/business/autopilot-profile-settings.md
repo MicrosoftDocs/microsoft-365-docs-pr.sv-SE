@@ -3,7 +3,7 @@ title: Om AutoPilot-profilinställningar
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot profiler hjälper dig att styra hur Windows installeras på användarens enheter. Profilerna innehåller standard och valfria inställningar som att hoppa över installationen av Cortana.
-ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: adc8112861b67fd96a91ff24dc155aeb0c394532
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071869"
 ---
 # <a name="about-autopilot-profile-settings"></a>Om AutoPilot-profilinställningar
 

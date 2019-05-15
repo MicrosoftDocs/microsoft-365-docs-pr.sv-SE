@@ -3,7 +3,7 @@ title: Felsöka AutoPilot-enhetsfel
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 f1_keywords:
 - ZTDTroubleshootDeviceErrors
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: Lär dig felsöka AutoPilot enhet filfel.
-ms.openlocfilehash: 9d4a47f78c38d8c076f5b3876a36b6bf46eaaaf3
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 88b59ec20ddda401c1dac45ff729ac38497a767e
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074369"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Felsöka AutoPilot-enhetsfel
 

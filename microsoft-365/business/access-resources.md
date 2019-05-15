@@ -3,7 +3,7 @@ title: Åtkomst på lokala resurser från en Azure AD-ansluten enhet i Microsoft
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig att få åtkomst till lokala resurser som Line Of Business apps, filresurser och skrivare från en Azure Active Directory ingår Windows 10-enhet.
-ms.openlocfilehash: 2be8eb16b9d17547d3bc4c3e4fe499b4c14117a4
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: fa3cf640e799feb81ff08c5b7b81d57f707e0152
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660278"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072039"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Åtkomst på lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business
 

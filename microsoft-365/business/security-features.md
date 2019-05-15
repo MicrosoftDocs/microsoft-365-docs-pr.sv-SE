@@ -3,7 +3,7 @@ title: Säkerhetsfunktionerna i Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som medföljer Microsoft 365 Business.
-ms.openlocfilehash: adf1cf183022f3d2c19364b9f60868e285f78637
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 6ce69f387461edc0eea6c705f15a9083547698ff
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660616"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074539"
 ---
 # <a name="microsoft-365-business-security-features"></a>Säkerhetsfunktionerna i Microsoft 365 Business
 

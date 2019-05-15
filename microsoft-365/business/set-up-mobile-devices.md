@@ -3,7 +3,7 @@ title: Konfigurera mobila enheter för Microsoft 365 företag-användare
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installera Office på en iPhone eller en Android telefon och arbete-filer i Office apps kommer att skyddas av Microsoft 365 Business.
-ms.openlocfilehash: 4ffde6197104cfceb337a9d531032dacfd9efcf0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 81ec7eb980cbe35ced37ab3b25d87d77d9e4390a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074699"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Konfigurera mobila enheter för Microsoft 365 företag-användare
 

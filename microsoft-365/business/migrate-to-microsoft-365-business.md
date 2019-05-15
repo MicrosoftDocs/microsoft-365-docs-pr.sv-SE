@@ -3,7 +3,7 @@ title: Migrera till Microsoft 365 Business från Office 365 Business Premium
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig hur du flyttar verksamheten till Microsoft 365 Business.
-ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072749"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrera till Microsoft 365 Business från Office 365 Business Premium
 

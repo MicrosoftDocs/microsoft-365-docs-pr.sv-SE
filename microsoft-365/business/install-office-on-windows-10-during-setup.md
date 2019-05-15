@@ -3,7 +3,7 @@ title: Installera Office vid Windows 10-installationen
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4OfficeInstall
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Lär dig att distribuera Office automatiskt till Windows 10 enheter under installationen.
-ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 10d1b14fdc1d4cf937bfe29c51525b0bf2f1a2e7
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660683"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073999"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installera Office vid Windows 10-installationen
 

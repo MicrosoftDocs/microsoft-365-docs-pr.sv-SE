@@ -3,7 +3,7 @@ title: Hur principer i Microsoft 365 Business skyddar företagsdata
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_ESPoliciesLM
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Mer information om principer som är avsedda för specifika enheter och säkerhetsgrupper för att skydda företagets data på användarens personliga enheter.
-ms.openlocfilehash: 11f0432b9e738841e6523dce436c534af41b827a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ee7a0a1a397d7f527c3db16520ba157168cfbee3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276796"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072649"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Hur principer i Microsoft 365 Business skyddar företagsdata
 
