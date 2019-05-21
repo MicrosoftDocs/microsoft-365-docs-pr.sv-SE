@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, business
 ms.date: 06/08/2018
-ms.openlocfilehash: 9757abb98f4f1c2612f20c75fffd5da10bbbc381
-ms.sourcegitcommit: b05aa01a72c3bc257a9f3b06a7779d88a89758c6
+ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
+ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33657216"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34276232"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga och frågor svar om Microsoft 365 Business
 
@@ -80,7 +80,7 @@ Många anställda som vill använda sina egna mobiltelefoner eller tabletter acc
 Microsoft 365 företag erbjuder sina kunder en enkla men kraftfulla sätt att aktivera anställda att använda sina personliga enheter för arbete och ger företaget möjlighet att förhindra att dessa enheter från att komma åt, behålla och dela information . Mer specifikt: 
 * **App-skydd för Office mobile apps** skyddar Office data, inklusive e-post, kalender, kontakter och dokument på iOS och Android mobila enheter genom tvingande principer som automatiskt tar bort business data efter en föreskriven tid inte ansluta till tjänsten, som kräver att information lagras endast för OneDrive för företag som kräver en PIN-kod/fingeravtryck kontroll att få tillgång till Office-program och förhindra att företagets data som kopieras från ett Office-program till personliga appar. Hantering av mobila program för andra mobila appar via Intune är också tillgängligt för Microsoft 365 Business prenumeranter. 
   
-* **Device Management för Windows 10 datorer** aallows företag kan välja att ställa in och använda funktioner som Windows Defender skydd mot skadlig kod, Automatiska uppdateringar och stänga av skärmar efter en föreskriven tid. Dessutom kan borttappade eller stulna enheter för Windows 10 vara helt torkas av program och data via administratörscenter. 
+* **Device Management för Windows 10-datorer** gör att företag kan välja att ställa in och använda funktioner som Windows Defender skydd mot skadlig kod, Automatiska uppdateringar och stänga av skärmar efter en föreskriven tid. Dessutom kan borttappade eller stulna enheter för Windows 10 vara helt torkas av program och data via administratörscenter. 
 
 * **Enhetshantering för iOS, Android & MacOS** funktioner hjälper företag att hantera ett ekosystem med olika enhet med iOS, Android, Windows och macOS enheter på ett säkert sätt. 
 
