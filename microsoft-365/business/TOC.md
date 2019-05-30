@@ -7,17 +7,18 @@
 ### [Översikt över inställningar](set-up-overview.md)
 ### [Ställ in Microsoft 365 Business](set-up.md)
 ### [Uppgradera till Windows Update Pro skapare](upgrade-to-windows-pro-creators-update.md)
-### [Konfigurera mobila enheter](set-up-mobile-devices.md)
-### [Ställ in Windows-enheter](set-up-windows-devices.md)
 ### [Förbereda för distribution av Office-klient](prepare-for-office-client-deployment.md)
 ### [Automatisk installation eller avinstallation av Office](auto-install-or-uninstall-office.md)
 ### [Komma åt lokala resurser]()
 #### [Aktivera domänanslutna Windows 10-enheter som ska hanteras](manage-windows-devices.md)
 #### [Få tillgång till resurser från en Azure AD-ansluten enhet](access-resources.md)
+## Användarinställningar för enheten
+### [Konfigurera mobila enheter](set-up-mobile-devices.md)
+### [Ställ in Windows-enheter](set-up-windows-devices.md)
 ## [Säker](security-features.md)
 ### [Skydda ditt företag](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Ställ in avancerade säkerhetsfunktioner](set-up-advanced-security.md)
-## Användare
+## Hantera användare
 ### [Add users](add-users-m365b.md)
 ### [Ta bort en medarbetare](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ## Hantera enheter
