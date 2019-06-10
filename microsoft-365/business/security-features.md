@@ -1,5 +1,5 @@
 ---
-title: Säkerhetsfunktionerna i Microsoft 365 Business
+title: Microsoft 365 Business funktioner för säkerhet och efterlevnad
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som medföljer Microsoft 365 Business.
-ms.openlocfilehash: 6ce69f387461edc0eea6c705f15a9083547698ff
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 54bac38ca3a60f88f848ec3ab8bdd8a7c0fabd54
+ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074539"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780788"
 ---
-# <a name="microsoft-365-business-security-features"></a>Säkerhetsfunktionerna i Microsoft 365 Business
+# <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business funktioner för säkerhet och efterlevnad
 
 Microsoft 365 Business erbjuder förenklad säkerhetsfunktioner för att skydda data på datorer, telefoner och Tablet-datorer.
     
@@ -36,7 +36,6 @@ Microsoft 365 Business erbjuder förenklad säkerhetsfunktioner för att skydda 
 
 Du kan hantera många Microsoft 365 Business säkerhetsfunktionerna i administratörscenter, som ger dig ett förenklat sätt att aktivera och inaktivera dessa funktioner. I administratörscenter kan du göra följande:
   
-![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
 - [Ange inställningar för programmet för Android eller iOS-enheter](app-protection-settings-for-android-and-ios.md) . 
     
@@ -69,7 +68,18 @@ Avancerade funktioner i Microsoft 365 Business finns tillgängliga för att hjä
   - Avancerade bifogad fil skanning och AI-powered analys för att identifiera och ta bort farliga meddelanden.
     
   - Automatiska kontroller av länkar i e-post för att bedöma om de är en del av ett schema för nätfiske. Detta håller du säker tillgång till osäkra webbplatser.
+
+- **[Alla funktioner i Intune i Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
+    Komma åt Intune administratörscenter i Azure portal kan du konfigurera ytterligare säkerhetsfunktioner, till exempel hantering av MacOS-enheter, iPhone och Android-enheter med avancerad enhetshantering för Windows, som inte är tillgängliga via Microsoft 365 business administratörscenter.
+- **Samma [Villkorad tillgång](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) som Azure AD P1 plan**
+
+    Villkorad tillgång hjälper dig att skydda din organisation från logga in risk, tillgång till försök från ett oväntat nätverk eller språk, försök till åtkomst formuläret riskfyllda enhetstyper och så vidare. Villkorad tillgång principer genomdrivs när den första autentiseringen är slutförd och signalerna från den första händelsen autentisering används för att bestämma om åtkomst försök bör godkännas, nekar eller f mer bevis (till exempel andra identifieringsmetod) är krävs.
+    
+## <a name="compliance-features"></a>Funktioner för regelefterlevnad
+
+Företaget Microsoft 365 prenumeration innehåller funktioner som gör att du upprätthåller kompatibilitet och standarder.
+
 - **[Översikt över data förlust förebyggande principer](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
     Du kan ställa in DLP automatiskt ska identifiera känslig information, som kreditkortsnummer, personnummer, etc. för att förhindra att deras oavsiktlig delning utanför företaget.
@@ -80,13 +90,9 @@ Avancerade funktioner i Microsoft 365 Business finns tillgängliga för att hjä
     
 - **[Azure informationsskydd](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    Information skydd kan du styra åtkomsten till känslig information i e-post och dokument med kontroller som ”inte framåt” och ”kopiera inte”. Du kan även klassificera känslig information som ”konfidentiellt” och anger hur sekretessbelagda uppgifter kan delas utanför och innanför verksamhet. Företagsverktyg kryptering är lätt att använda för e-post och dokument för att hålla din information privat. Microsoft 365 Business innehåller alla funktioner i [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Du kan också installera Azure informationsskydd klienten tillägget för Office-program. Mer information finns i [Azure informationsskydd klient admininstrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
-    
-- **[Alla funktioner i Intune i Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
-    
-    Komma åt Intune administratörscenter i Azure portal kan du konfigurera ytterligare säkerhetsfunktioner, till exempel hantering av MacOS-enheter, iPhone och Android-enheter med avancerad enhetshantering för Windows, som inte är tillgängliga via Microsoft 365 business administratörscenter.
-    
-I nästa avsnitt beskrivs hur du kan hantera dessa funktioner i säkerhet &amp; regelefterlevnadscentret och Intune administratörscenter. Förenklade kontroller kommer att läggas till Microsoft 365 Business administratörscenter över tiden.
+    Information skydd kan du styra åtkomsten till känslig information i e-post och dokument med kontroller som ”inte framåt” och ”kopiera inte”. Du kan även klassificera känslig information som ”konfidentiellt” och anger hur sekretessbelagda uppgifter kan delas utanför och innanför verksamhet. Företagsverktyg kryptering är lätt att använda för e-post och dokument för att hålla din information privat. Microsoft 365 Business innehåller alla funktioner i [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Du kan också installera Azure informationsskydd klienten tillägget för Office-program. Mer information finns i [administratörshandboken för informationsskydd i Azure-klienten](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+
+Du kan hantera dessa funktioner i säkerhet &amp; regelefterlevnadscentret och Intune administratörscenter. Förenklade kontroller kommer att läggas till Microsoft 365 Business administratörscenter över tiden.
   
     
 ## <a name="faq"></a>Vanliga frågor och svar

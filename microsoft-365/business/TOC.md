@@ -15,9 +15,10 @@
 ## Användarinställningar för enheten
 ### [Konfigurera mobila enheter](set-up-mobile-devices.md)
 ### [Ställ in Windows-enheter](set-up-windows-devices.md)
-## [Säker](security-features.md)
-### [Skydda ditt företag](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
-### [Ställ in avancerade säkerhetsfunktioner](set-up-advanced-security.md)
+## [Skydda ditt företag](security-features.md)
+### [Ökat skydd](increase-threat-protection.md)
+### [Komma igång med villkorad tillgång](set-up-conditional-access-policies.md)
+### [Ställa in funktioner för regelefterlevnad](set-up-compliance.md)
 ## Hantera användare
 ### [Add users](add-users-m365b.md)
 ### [Ta bort en medarbetare](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
