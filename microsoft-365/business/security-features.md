@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som medföljer Microsoft 365 Business.
-ms.openlocfilehash: 54bac38ca3a60f88f848ec3ab8bdd8a7c0fabd54
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780788"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017531"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 Business funktioner för säkerhet och efterlevnad
 
@@ -75,6 +75,19 @@ Avancerade funktioner i Microsoft 365 Business finns tillgängliga för att hjä
 - **Samma [Villkorad tillgång](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) som Azure AD P1 plan**
 
     Villkorad tillgång hjälper dig att skydda din organisation från logga in risk, tillgång till försök från ett oväntat nätverk eller språk, försök till åtkomst formuläret riskfyllda enhetstyper och så vidare. Villkorad tillgång principer genomdrivs när den första autentiseringen är slutförd och signalerna från den första händelsen autentisering används för att bestämma om åtkomst försök bör godkännas, nekar eller f mer bevis (till exempel andra identifieringsmetod) är krävs.
+
+    Villkorad tillgång funktionerna är:
+
+    - Åtkomst baserat på användarnamn, grupp och roll
+    - Åtkomst [baserat på en app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
+    - [Åtkomst baserat på plats](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration),  Tillåt endast tillgång från betrodda IP-områden eller specifika länder 
+    - Kräv MFA för åtkomst till
+    - Blockera åtkomst till program som använder [äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+    - Kräva apps tp [Intune app skydd](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - Anpassad autentisering som MFA med leverantörer från tredje part, till exempel DUO.
+   
+    Andra funktioner:
+    - [Återställning av lösenord för självbetjäning](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) för hybrid Azure AD
     
 ## <a name="compliance-features"></a>Funktioner för regelefterlevnad
 
