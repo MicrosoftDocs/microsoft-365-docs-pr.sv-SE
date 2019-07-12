@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Mer information om standard och andra inställningar som är tillgängliga i Microsoft 365 Business att skydda Windows 10 enheter.
-ms.openlocfilehash: 095aa2c2f32c3e7b5a5a4e560ea4bc7124d7146e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 844bddc4b93c7dc543ad6c6a79f5cf92c96ceff0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074519"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630618"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Ange inställningar för enhetsskydd för Windows 10
 
@@ -34,7 +34,7 @@ Titta på en video om hur du skyddar Windows 10-enheter med Microsoft 365 Busine
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. SGo till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. Välj **enheter** på vänster navigeringsfält \> **principer** \> **Lägg till**.
   
