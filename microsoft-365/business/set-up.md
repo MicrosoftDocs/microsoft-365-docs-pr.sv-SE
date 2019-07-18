@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Lär dig hur du konfigurerar Microsoft 365 Business.
-ms.openlocfilehash: 42a35810531b6abd5b22e5fdbce2c0cfea57b8d7
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ac9c8b828ff131a15bf057fa8bdc0bf56dd00987
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074599"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772576"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Ställ in Microsoft 365 Business i installationsguiden
 
@@ -123,4 +123,4 @@ De principer som angetts i guiden används automatiskt till en [säkerhetsgrupp]
 Om du väljer att automatiskt installera Office apps i under uppsättningen upp installera apparna på Windows 10-enheter, när användaren har loggat in på Azure AD från sina Windows-enheter med sina autentiseringsuppgifter för arbete.
 Om du vill installera Office på mobila iOS- eller Android-enheter finns i [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md).
 
-Du kan också installera Office individuellt. Se [installera Office på en PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc471665) för instruktioner.
+Du kan också installera Office individuellt. Se [installera Office på en PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) för instruktioner.
