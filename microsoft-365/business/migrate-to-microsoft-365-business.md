@@ -18,99 +18,99 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Lär dig hur du flyttar verksamheten till Microsoft 365 Business.
-ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Lär dig hur du flyttar ditt företag till Microsoft 365 Business.
+ms.openlocfilehash: a3f77bd18b9b900151c50f923b705e4ff0150519
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072749"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982450"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrera till Microsoft 365 Business från Office 365 Business Premium
 
-Om du redan har ett Office 365 business abonnemang, till exempel Office 365 Business Premium, kan du enkelt lägga till licenser för Microsoft 365 Business och tilldela dem till vissa eller alla användare.
+Om du redan har en Office 365 för Business-prenumeration, till exempel Office 365 Business Premium, kan du enkelt lägga till licenser till Microsoft 365 Business och tilldela dem till vissa eller alla användare.
   
 > [!NOTE]
-> Du kan inte använda knappen [Växla planer](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton) för att uppgradera till Microsoft 365 Business ännu. 
+> Du kan inte använda knappen [växla planer](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton) för att uppgradera till Microsoft 365 Business ännu. 
   
-## <a name="add-microsoft-365-business-licenses"></a>Lägga till licenser för Microsoft 365 Business
+## <a name="add-microsoft-365-business-licenses"></a>Lägg till Microsoft 365 Business-licenser
 
-Du har två sätt att få Microsoft 365 Business. Om du har en partner kan kan han eller hon köpa Microsoft 365 Business du från [Microsoft Partner Center](get-microsoft-365-business.md). Din partner kan du också övergången till Microsoft 365 Business.
+Du har två sätt att få Microsoft 365 Business. En partner kan köpa Microsoft 365 Business åt dig från [Microsoft Partner Center](get-microsoft-365-business.md). Din partner kan också hjälpa dig att övergå till Microsoft 365 Business.
   
-Om du hanterar din prenumeration kan du [Kontakta försäljningsavdelningen](https://www.microsoft.com/microsoft-365/business) att köpa Microsoft 365 Business licenser. 
+Om du hanterar din egen prenumeration kan du [Kontakta sales](https://www.microsoft.com/microsoft-365/business) för att köpa Microsoft 365 Business-licenser. 
   
-Se [lägga till, ändra eller ta bort en prenumeration klassificering av partner](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff) för att ta reda på hur du kan börja arbeta med en partner. 
+Se [lägga till, ändra eller ta bort en prenumeration Advisor-partner](https://support.office.com/article/f86e8177-936e-491e-9024-44dea2b296ff) för att ta reda på hur du kan börja arbeta med en partner. 
   
-Om du får en länk för att köpa dina licenser vägleder genom en guide som i exemplet nedan. Välj **Ja, lägga till mitt konto**. Du kan också välja antalet licenser och betalningsmetod.
+Om du får en länk för att köpa dina licenser, kommer du att gå igenom en guide som den nedan. Välj **Ja, Lägg till det i mitt konto**. Du kan också välja antalet licenser och betalningsmetoden.
   
-![Köp Microsoft 365 verksamhet direkt länk, välja att lägga till ditt nuvarande konto eller registrera dig för ett nytt konto.](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
+![På länken Microsoft 365 Business Direct-köp väljer du att lägga till ditt nuvarande konto eller registrerar dig för ett nytt konto.](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
   
-## <a name="assign-microsoft-365-licenses"></a>Tilldela licenser för Microsoft 365
+## <a name="assign-microsoft-365-licenses"></a>Tilldela Microsoft 365-licenser
 
-1. När du har köpt nya licenser och det är första gången du gjorde, visas banderollen installationsprogrammet för Microsoft 365 Business på administratörscenter.
+1. När du har köpt nya licenser, och detta är första gången du gjorde, visas den setup banner för Microsoft 365 företag på toppen av administratörscenter.
     
     > [!NOTE]
-    > Banderoll för installationsprogrammet är en möjlighet att lägga till nya användare, en ny domän och migrera e-post för nya användare. Om du inte tänker göra något ska fortfarande gå igenom guiden och välj alternativ så att det försvinner från sidan Hem. 
+    > Banner för inställningar är en möjlighet att lägga till nya användare, en ny domän och migrera e-post för nya användare. Om du inte planerar att göra något, bör du fortfarande gå igenom guiden och välja standardalternativ för att få det att försvinna från admin hemsida. 
   
-   ![Välj startar du installationsprogrammet på Microsoft 365 Business är redo att ställa in banderoll.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
+   ![Välj Starta installationen på den Microsoft 365 företag är redo att ställa in banner.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
   
     Välj **Gör inställningar**.
     
-2. Du kan lägga till en domän genom att välja **Anslut en domän du redan äger** om du vill använda den här möjligheten att lägga till en annan domän i din prenumeration på sidan **Anpassa din inloggning och e-post** . 
+2. På sidan **Anpassa din inloggning och e-post** kan du lägga till en domän genom att välja **Anslut en domän som du redan äger** om du vill använda den här möjligheten för att lägga till en annan domän i prenumerationen. 
     
-    Om du redan har registrerat en domän, det andra fältet visar som och säger **Fortsätt med** \< _domännamnet_ \> **för e-post och logga in**.   Om du inte har registrerat en domän med prenumeration du säger det **Fortsätt med** \< _företag-name.onmicrosoft.com_ \> **för e-post och logga in**.  
+    Om du redan har konfigurerat en domän, kommer det andra fältet att indikera det och kommer att **säga Fortsätt att använda** \< _ditt domännamn_ \> **för e-post och inloggning**.   Om du inte har konfigurerat en domän med din prenumeration, kommer det att **säga fortsätta att använda** \< _ditt företag Name.onmicrosoft.com_ \> **för e-post och logga in**.  
     
     Välj **Nästa**.
     
-    ![På Anpassa din inloggning och e-sida kan du antingen lägga till en domän eller använda den som du har använt.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
+    ![På sidan Anpassa din inloggning och e-post väljer du att antingen lägga till en domän eller använder den som du har använt.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
   
-3. Du kan lägga till nya användare, om du har nya medarbetare som du vill tilldela licenser till Microsoft 365 Business på sidan **Lägg till nya användare** . 
+3. På sidan **Lägg till nya användare** kan du lägga till nya användare om du har nya medarbetare som du vill tilldela Microsoft 365 Business-licenser till. 
     
-    Välj **Nästa**om du inte har nya medarbetare att lägga till och vill tilldela licenser till befintliga användare.
+    Om du inte har nya medarbetare att lägga till och vill tilldela licenser till befintliga användare väljer du **Nästa**.
     
-4. På den ** migrera e-postmeddelanden ** sidan som du kan välja att migrera e-post för alla nya användare som du lade till i steg 3. Du kan också hoppa över det här steget. Välj **Nästa**.
+4. På sidan * * migrera e-postmeddelanden * * kan du välja att migrera e-post för alla nya användare som du lade till i steg 3. Du kan hoppa över det här steget också. Välj **Nästa**.
     
-5. Välj **Gå till administratörscenter**på den sista sidan och fortsätta installationen där.
+5. På den sista sidan väljer **du gå till administratörscenter**och fortsätter installationen där.
     
-6. Gå till **användare** i administratörscenter, \> **aktiva användare**.
+6. Gå till **användare** \> **aktiva användare**i administratörscenter.
     
-7. Markera den användare du vill tilldela **Microsoft 365 Business** licens till och välj sedan **Redigera** bredvid **Produktlicenser**.
+7. Välj den användare som du vill tilldela **Microsoft 365 Business** -licensen till och välj sedan **Redigera** bredvid **produktlicenser**.
     
-    ![Välj Redigera bredvid produktlicenser i kortet användaren.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
+    ![I användarkortet väljer du Redigera bredvid produktlicenser.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. I **produktlicenser** bild **Microsoft 365 Business** **on** \> **Spara**och **Stäng**.
+8. I **produktlicenser** Slide **Microsoft 365 Business** till **på** \> **Spara**, och **Stäng**sedan.
     
-När du har köpt den första licensen för Microsoft 365 företag, du kan nu också lägga till mer i **Fakturering** \> **Inköp tjänster**. På sidan **köpa tjänster** kan du på punkter på **Microsoft 365** visitkort och välj **Ändra licensantal** att köpa mer. 
+När du har köpt den första licensen för Microsoft 365-företag kan du nu också lägga till mer i **fakturering** \> **inköpstjänster**. På sidan **Köp tjänster** kan du klicka på ellipserna på **Microsoft 365 visitkortet** och välja **ändra Licenskvantitet** för att köpa mer. 
   
-## <a name="protect-user-devices-and-files"></a>Skydda användare, enheter och filer
+## <a name="protect-user-devices-and-files"></a>Skydda användarenheter och filer
 
-När du har tilldelat Microsoft 365 Business licenser kan du börja med att skydda användarnas enheter och filer.
+När du har tilldelat licenser till Microsoft 365 Business kan du börja skydda användarnas enheter och filer.
   
-1. Gå till **enheter** i administratörscenter, i vänstra navigeringsfältet \> **principer**.
+1. I administratörscenter, i det vänstra navigeringsfältet, gå till **** \> **principer**för enheter.
     
-2. Välj **Lägg till**på sidan **principer för enheten** .
+2. På sidan **enhetsprinciper** väljer **du Lägg till**.
     
-3. Ge ett namn för principen i rutan **Lägg till principen** och välj en **typ** från nedrullningsbara. 
+3. I den **Lägg till princip** fönstret ge principen ett namn och välj sedan en **Principtyp** från listrutan. 
     
-    Du kan ställa in användningsprinciper för att skydda filer på Android och iPhone-enheter samt Windows 10 och du kan ställa in enhetens konfiguration principer för företag som ägs av Windows 10 enheter. Se följande länkar för mer information:
+    Du kan ställa in användningsprinciper för att skydda filer på Android-och iPhone-enheter, samt Windows 10, och du kan ställa in principer för enhetskonfiguration för företagsägda Windows 10-enheter. Se följande länkar för mer information:
     
   - [Ange inställningar för appskydd för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md)
     
   - [Ange programskyddsinställningar för Windows 10-enheter](protection-settings-for-windows-10-devices.md)
     
-  - [Ange inställningar för skydd för datorer med Windows 10](protection-settings-for-windows-10-pcs.md)
+  - [Ange inställningar för enhetsskydd för Windows 10-datorer](protection-settings-for-windows-10-pcs.md)
     
-   ![Ange ett namn för den i fönstret Lägg till principen och välja principtypen från den nedrullningsbara menyn.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
+   ![I den Lägg till princip rutan, ange ett namn för den och välj principtypen från den nedrullningsbara menyn.](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
-4. När du ställer in principerna kan kan du och dina anställda ställa in enheter:
+4. När du har konfigurerat policyer kan du och dina anställda ställa in enheter:
     
-  - Om Windows inte redan Pro Creator för Windows Update, behöver du [uppgradera dem till Windows Pro skapare Update](upgrade-to-windows-pro-creators-update.md).
+  - Om Windows inte redan finns på Windows Pro Creator Update måste du [uppgradera dem till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
     
-  - Steg för Windows-enheter finns i [ställa in Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md) . 
+  - Se [Konfigurera Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md) för steg för Windows-enheter. 
     
-  - Anvisningar för Android Telefoner och iPhones finns i [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) . 
+  - Se [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) för steg för Android-telefoner och iPhone. 
     
-5. Om du vill installera Office-klientprogram automatiskt finns i [förbereda för distribution av Office-klienten av Microsoft 365 Business](prepare-for-office-client-deployment.md) och [automatiskt installera eller avinstallera Office på Windows 10 enheter](auto-install-or-uninstall-office.md).
+5. Om du vill installera Office-klientappar automatiskt, se [Förbered för Office-klientdistribution av Microsoft 365 Business](prepare-for-office-client-deployment.md) och [Installera eller avinstallera Office på Windows 10-enheter automatiskt](auto-install-or-uninstall-office.md).
     
 
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurera principer för villkorlig åtkomst för Microsoft 365 kampanjer
+title: Ställ in principer för villkorlig åtkomst för Microsoft 365-kampanjer
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,42 +19,42 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du konfigurerar principer för villkorlig åtkomst för Microsoft 365 kampanjer.
-ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: Lär dig hur du ställer in principer för villkorlig åtkomst för Microsoft 365-kampanjer.
+ms.openlocfilehash: 614e3a6e13a14114f40ecf87bf936d4165744503
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35086405"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982390"
 ---
-# <a name="set-up-conditional-access-policies"></a>Konfigurera principer för villkorad tillgång
+# <a name="set-up-conditional-access-policies"></a>Ställ in principer för villkorlig åtkomst
 
-Principer för [villkorad tillgång](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) lägga substancial ytterligare säkerhet. Microsoft tillhandahåller en uppsättning principer för villkorad tillgång originalplan som rekommenderas för alla kunder. Principer för originalplan är en uppsättning fördefinierade principer som skyddar organisationer mot många vanliga attacker. Vanliga angrepp kan innehålla lösenord spray, replay och nätfiske.
+Principer för [villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) lägga till substancial ytterligare säkerhet. Microsoft tillhandahåller en uppsättning principer för villkorlig åtkomst Vidbaslinjen som rekommenderas för alla kunder. Baslinje principer är en uppsättning fördefinierade principer som hjälper till att skydda organisationer mot många vanliga attacker. Dessa vanliga attacker kan omfatta lösenord spray, Replay och phishing.
 
-Dessa principer kräver att administratörer och användare att ange en andra form av autentisering (kallas flerfunktionsautentisering eller MFA) när vissa villkor uppfylls. Om en användare loggar in från ett annat land kan logga in kan betraktas som riskfyllda och användaren måste ange en ytterligare form av autentisering. 
+Dessa principer kräver administratörer och användare att ange en andra form av autentisering (kallas multifaktorautentisering eller MFA) när vissa villkor uppfylls. Till exempel om en användare loggar in från ett annat land, kan inloggningen anses vara riskabelt och användaren måste tillhandahålla ytterligare en form av autentisering. 
 
-Originalplan principer är för närvarande följande:
-- **Kräver MFA för administratörer** , kräver autentisering på flera plan för de mest Privilegierade administratörsroller inklusive global administratör.
-- **Skydd för slutanvändaren** – kräver autentisering på flera plan för användarna endast när en inloggning är riskabelt. 
-- **Blockera äldre autentisering** – äldre klientprogram och vissa nya program som inte använder nyare, säkrare autentiseringsprotokoll. Dessa äldre apps kan kringgå principer för villkorad tillgång och få otillåten åtkomst till din miljö. Den här principen blockerar från klienter som inte stöder villkorlig åtkomst. 
-- **Kräver MFA för servicehantering** , kräver autentisering på flera plan för tillgång till verktyg, inklusive Azure portal (där du konfigurerar principer för originalplanen). 
+För närvarande omfattar baslinje principer följande:
+- **KRÄV MFA för administratörer** – kräver multifaktorautentisering för de mest privilegierade administratörsrollerna, inklusive global administratör.
+- **användarskydd** – kräver multifaktorautentisering för användare endast när en inloggning är riskabelt. 
+- **Blockera äldre autentisering** – äldre klientappar och vissa nya appar använder inte nyare, säkrare autentiseringsprotokoll. Dessa äldre appar kan kringgå principer för villkorlig åtkomst och få obehörig åtkomst till din miljö. Den här principen blockerar åtkomsten från klienter som inte stöder villkorlig åtkomst. 
+- **KRÄV MFA för service hantering** – kräver multifaktorautentisering för åtkomst till hanteringsverktyg, inklusive Azure Portal (där du konfigurerar principer för baslinje). 
 
-Microsoft rekommenderar att du aktiverar alla dessa principer för originalplan. När dessa principer är aktiverat kan uppmanas administratörer och användare att registrera för Azure Multii-faktor autentisering.
+Microsoft rekommenderar att du aktiverar alla dessa baslinje principer. När dessa principer har aktiverats uppmanas administratörer och användare att registrera för Azure Multii-Factor-autentisering.
 
-Mer information om dessa principer finns i [Vad är baslinjen principer](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
+Mer information om dessa principer finns i [Vad är baslinje principer](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 
 
-## <a name="set-up-baseline-policies"></a>Ställ in policyer för baslinje
+## <a name="set-up-baseline-policies"></a>Ställ in principer för originalplan
 
-1. Gå till [Azure portal](https://portal.azure.com)och navigera sedan till **Azure Active Directory** \> **Villkorad tillgång**.
+1. Gå till [Azure-portalen](https://portal.azure.com), och sedan gå **till Azure Active Directory** \> **villkorlig åtkomst**.
     
-    Principer för originalplan visas på sidan. <br/> <br/>
-    ![Sida med originalplan principer för villkorad tillgång.](media/baslinepolicies.png)
-1. Följande specifika instruktioner för varje princip finns:
+    Baslinje principerna visas på sidan. <br/> <br/>
+    ![Sida som listar baslinje principer för villkorlig åtkomst.](media/baslinepolicies.png)
+1. Se följande specifika instruktioner för varje princip:
 
   - [Kräv MFA för administratörer](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Reequire MFA för användare](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+- [Kräv MFA för användare](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
  - [Blockera äldre autentisering](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Kräv MFA för servicehantering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
-Du kan ställa in många ytterligare principer som kräver godkända klientprogram. Finns i [Dokumentationen för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/) för mer information.
+Du kan ställa in många ytterligare principer, till exempel kräver godkända klientappar. Mer information finns i [dokumentationen för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/) .
