@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: 3ab99b402bf440cd0c113a87dc453ff388a5befb
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e722cc117d967796f0063b20e3d117b36b179f3e
+ms.sourcegitcommit: 14624abb412b6a34138a6266c994bb9cae411ad9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982330"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37028416"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft 365 Business
 
@@ -24,7 +24,7 @@ ms.locfileid: "36982330"
 ### <a name="what-is-microsoft-365-business"></a>Vad är Microsoft 365 Business? 
 Microsoft 365 är en integrerad lösning som sammanför klassens bästa produktivitetsverktyg, säkerhet och Enhetshanteringsfunktioner för små och medelstoraföretag. 
 
-**En holistisk uppsättning verktyg för affärsproduktivitet och samarbete** 
+**En uppsättning verktyg för affärsproduktivitet och samarbete** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher och Access 
 * Exchange, OneDrive, Skype för företag, Microsoft Teams, SharePoint 
 * Företagsappar från Office (bokningar, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft-fakturering<sup>[1](#footnote1)</sup>) 
@@ -118,11 +118,11 @@ Kunder som vill uppleva de kompletta funktionerna i Microsoft 365 Business måst
 Den mest direkta vägen till en lyckad Microsoft 365-företagsdistribution är att engagera med en Microsoft-partner. De har omfattande utbildning och erfarenhet med en mängd olika kundscenarier och är bäst rustade för att förstå din miljö och dina behov. Kunder som har upplevt det på personal kan använda <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">microsoft 365 företag komma igång</a> för att hjälpa dem i deras Microsoft 365 företagsdistribution. 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>Omfattar Microsoft 365 Business alla funktioner i Microsoft Intune? 
-Ja, Microsoft 365 Business-prenumeranter är licensierade att använda fullständiga Intune-funktioner för iOS, Android, MacOS och andra plattformsoberoende enhetshantering. Funktioner som inte är tillgängliga i den förenklade hanteringskonsolen i Microsoft 365 Business, som 3: e parts Apphantering och konfiguration av WiFi-profiler, VPN-certifikat, etc, kan hanteras i full Intune-konsol. Du har behörighet att använda Configuration Manager för att hantera klienter som omfattas av EMS-licensen. För SCCM relaterade frågor, vänligen se <a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">SCCM FAQ</a>
+Ja, Microsoft 365 Business-prenumeranter är licensierade att använda fullständiga Intune-funktioner för iOS, Android, MacOS och andra plattformsoberoende enhetshantering. Funktioner som inte är tillgängliga i den förenklade hanteringskonsolen i Microsoft 365 Business, som 3: e parts Apphantering och konfiguration av WiFi-profiler, VPN-certifikat, etc, kan hanteras i full Intune-konsol. 
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Har Azure Active Directory Premium P1 Microsoft 365 Business? 
-Microsoft 365 Business bygger på teknik från hela Microsoft och medan den delar vissa funktioner med Azure Active Directory, är det inte en fullständig version. De säkerhets-och hanteringsprinciper som skapats i Microsoft 365 Business förlitar sig på vissa Azure-funktioner men inkluderar inte alla funktioner (t. ex. självbetjäningsfunktioner, funktioner för villkorlig åtkomst och rapportering). Kunder kan välja att köpa Azure Active Directory Premium P1 eller P2 som ett tillägg till Microsoft 365 Business. Mer information finns i [beskrivningen av Microsoft 365 Business Service](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) 
+Microsoft 365 Business innehåller Välj Azure AD Premium P1 (AADP P1) funktioner som Self Service lösenordsåterställning med AD Write-back, Azure MFA och villkorlig åtkomst. Det omfattar inte hela AADP P1. Se den [Beskrivning av Microsoft 365 Business Service](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) för mer information 
  
  
 ### <a name="does-microsoft-365-business-allow-customers-to-manage-macs"></a>Tillåter Microsoft 365 Business kunder att hantera Mac-datorer? 
