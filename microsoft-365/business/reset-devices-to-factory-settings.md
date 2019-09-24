@@ -18,27 +18,27 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 'Lär dig hur du använder Microsoft 365 Business till fabriken återställa Windows 10-enheter. '
-ms.openlocfilehash: 7cb7afdc947766598ef5385078a1b2cab87601dd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 'Lär dig hur du använder Microsoft 365 Business till fabriksåterställning dina Windows 10-enheter. '
+ms.openlocfilehash: 12e0bdbab430654fb80baa0313e63b2493e5077e
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074479"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121187"
 ---
-# <a name="reset-windows-10-devices-to-their-factory-settings"></a><span data-ttu-id="e0a43-103">Återställa Windows 10-enheter till fabriksinställningarna</span><span class="sxs-lookup"><span data-stu-id="e0a43-103">Reset Windows 10 devices to their factory settings</span></span>
+# <a name="reset-windows-10-devices-to-their-factory-settings"></a><span data-ttu-id="58d09-103">Återställa Windows 10-enheter till fabriksinställningarna</span><span class="sxs-lookup"><span data-stu-id="58d09-103">Reset Windows 10 devices to their factory settings</span></span>
 
-![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+<span data-ttu-id="58d09-104">[![Etiketten så att du vet att Admin Center förändras och du kan hitta mer information på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="58d09-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
 
-<span data-ttu-id="e0a43-p101">En fabriksinställning återställer en enhet till de ursprungliga inställningarna då enheten köptes. Data, och alla appar som installerats sedan dess tas bort. Du kan använda Microsoft 365 Business för att göra fabriksåterställning av de Windows 10-enheter du hanterar.</span><span class="sxs-lookup"><span data-stu-id="e0a43-p101">A factory reset reverts a device to the original settings it had when the device was purchased. All apps and data on the device that were installed after purchase are removed. You can use Microsoft 365 Business to factory reset Windows 10 devices you manage.</span></span>
+<span data-ttu-id="58d09-p101">En fabriksinställning återställer en enhet till de ursprungliga inställningarna då enheten köptes. Data, och alla appar som installerats sedan dess tas bort. Du kan använda Microsoft 365 Business för att göra fabriksåterställning av de Windows 10-enheter du hanterar.</span><span class="sxs-lookup"><span data-stu-id="58d09-p101">A factory reset reverts a device to the original settings it had when the device was purchased. All apps and data on the device that were installed after purchase are removed. You can use Microsoft 365 Business to factory reset Windows 10 devices you manage.</span></span>
   
-1. <span data-ttu-id="e0a43-108">Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>...</span><span class="sxs-lookup"><span data-stu-id="e0a43-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>..</span></span> 
+1. <span data-ttu-id="58d09-108">Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>..</span><span class="sxs-lookup"><span data-stu-id="58d09-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>..</span></span> 
     
-2. <span data-ttu-id="e0a43-109">Välj **enheter** i vänster navigeringsfält \> **Hantera**.</span><span class="sxs-lookup"><span data-stu-id="e0a43-109">In the left nav, choose **Devices** \> **Manage**.</span></span>
+2. <span data-ttu-id="58d09-109">Välj **enheter** \> **Hantera**i det vänstra navigeringsfältet.</span><span class="sxs-lookup"><span data-stu-id="58d09-109">In the left nav, choose **Devices** \> **Manage**.</span></span>
 
-3. <span data-ttu-id="e0a43-110">Markera kryssrutan bredvid den enhet som du vill ta bort data från och **Hantera** listrutan Välj i **Factory reset**på sidan **Hantera** .</span><span class="sxs-lookup"><span data-stu-id="e0a43-110">On the **Manage** page, check the checkbox next to the device you want to remove data from and then, in the **Manage** drop-down choose **Factory reset**.</span></span>
+3. <span data-ttu-id="58d09-110">På sidan **Hantera** markerar du kryssrutan bredvid den enhet som du vill ta bort data från och sedan väljer du **fabriksåterställning**i rullgardinsmenyn **Hantera** .</span><span class="sxs-lookup"><span data-stu-id="58d09-110">On the **Manage** page, check the checkbox next to the device you want to remove data from and then, in the **Manage** drop-down choose **Factory reset**.</span></span>
     
-4. <span data-ttu-id="e0a43-111">I fönstret **Är du säker på att du vill fabriksåterställa följande enheter** väljer du **Bekräfta** \> **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="e0a43-111">On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.</span></span>
+4. <span data-ttu-id="58d09-111">I fönstret **Är du säker på att du vill fabriksåterställa följande enheter** väljer du **Bekräfta** \> **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="58d09-111">On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.</span></span>
     
   
 
