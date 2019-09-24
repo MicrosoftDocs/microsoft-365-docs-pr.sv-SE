@@ -19,17 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: 'Installera eller avinstallera Office på Windows 10 enheter från Microsoft 365 Business administratörscenter. '
-ms.openlocfilehash: 1e962f51882ddfd97da566858a0a1e6fb56ecbb8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 'Installera eller avinstallera Office på Windows 10-enheter från Microsoft 365 Business Admin Center. '
+ms.openlocfilehash: 70fd2f1ded87e04f506b1ba415c820af5d535938
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071969"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121267"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>Installera och avinstallera Office automatiskt på Windows 10-enheter
 
-![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+[![Etiketten så att du vet att Admin Center förändras och du kan hitta mer information på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Du kan snabbt och enkelt installera Office på datorer med Windows 10 från Microsoft 365 Business Administrationscenter.
   
@@ -40,7 +40,7 @@ Om du vill veta mer om hur det fungerar med tidigare installerade Office-program
 1. Logga in på [Administrationscenter](https://aka.ms/bcsportal) som global administratör. 
     
 2. På kortet **Enheter** väljer du **Hantera Office-distribution**.
-      Om du inte ser **enheten åtgärder** -kort klickar du på **Lägg till** (+) om du vill lägga till den i hemmet admin admin center **Hem** på sidan.
+      Om **enhets åtgärds** kortet inte visas klickar du på **Lägg** till (+) på **Start** sidan för administratörscenter för att lägga till det i administratörs hemmet.
     
     ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
