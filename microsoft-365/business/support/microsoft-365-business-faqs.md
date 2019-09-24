@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: e722cc117d967796f0063b20e3d117b36b179f3e
-ms.sourcegitcommit: 14624abb412b6a34138a6266c994bb9cae411ad9
+ms.openlocfilehash: cc6cc924cf45fa19d7f91235515981b636abf77d
+ms.sourcegitcommit: bd17ee20da1685e5c660d5f99746c81c63a17b22
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028416"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37141518"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft 365 Business
 
@@ -43,6 +43,9 @@ Microsoft 365 är en integrerad lösning som sammanför klassens bästa produkti
 * Automatisk installation av Office-appar på Windows 10-datorer 
 * Alltid uppdaterat Office + Windows 10 
 * Strömlinjeformad distribution av datorer med Windows AutoPilot
+
+**Aktivera villkorlig åtkomst**
+- Microsoft 365 företagskunder kan aktivera villkorlig åtkomst via Azure Directory-inställningar i Azure Portal. Mer information om hur du konfigurerar principer för villkorlig åtkomst finns i artikeln [Vad är villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="who-should-consider-adopting-microsoft-365-business"></a>Vem bör överväga att införa Microsoft 365 Business? 
 Microsoft 365 Business byggdes för små och medelstora kunder som har liten eller ingen IT-resurser på personal och vill ha bäst i klassen produktivitet och samarbete funktioner i Office 365 tillsammans med enhetshantering och säkerhetslösningar som skydda affärsdata. Microsoft 365 Business Customer är redo att flytta sin IT-verksamhet till molnet och är intresserad av att upprätthålla en proaktiv hållning för att skydda data på både företag och medarbetare ägda enheter.
