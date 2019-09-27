@@ -10,107 +10,104 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Lär dig hur du ställer in Windows-enheter som kör Windows 10 Pro för Microsoft 365 företagsanvändare. '
-ms.openlocfilehash: 5efe3aa1e329e7a9edcfd49fcc1f1391f95fd97f
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 'Lär dig hur du konfigurerar Windows-enheter som kör Windows 10 Pro för Microsoft 365 företagsanvändare. '
+ms.openlocfilehash: c4edd09d952ed1c98be8f41f6bcbaff8a16319a7
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074559"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288484"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-users"></a><span data-ttu-id="b073a-103">Konfigurera Windows-enheter för Microsoft 365 Business-användare</span><span class="sxs-lookup"><span data-stu-id="b073a-103">Set up Windows devices for Microsoft 365 Business users</span></span>
+# <a name="set-up-windows-devices-for-microsoft-365-business-users"></a><span data-ttu-id="d5a36-103">Konfigurera Windows-enheter för Microsoft 365 Business-användare</span><span class="sxs-lookup"><span data-stu-id="d5a36-103">Set up Windows devices for Microsoft 365 Business users</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b073a-104">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="b073a-104">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d5a36-104">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="d5a36-104">Prerequisites</span></span>
 
-<span data-ttu-id="b073a-p101">Innan du kan konfigurera Windows-enheter för Microsoft 365 Business-användare ska du se till att alla Windows-enheter använder Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro är en förutsättning för att använda Windows 10 Business, vilket är en uppsättning molntjänster och funktioner för enhetshantering som kompletterar Windows 10 Pro och ger tillgång till centraliserad hantering och säkerhetskontroller i Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="b073a-p101">Before you can set up Windows devices for Microsoft 365 Business users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.</span></span>
+<span data-ttu-id="d5a36-p101">Innan du kan konfigurera Windows-enheter för Microsoft 365 Business-användare ska du se till att alla Windows-enheter använder Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro är en förutsättning för att använda Windows 10 Business, vilket är en uppsättning molntjänster och funktioner för enhetshantering som kompletterar Windows 10 Pro och ger tillgång till centraliserad hantering och säkerhetskontroller i Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="d5a36-p101">Before you can set up Windows devices for Microsoft 365 Business users, make sure all the Windows devices are running Windows 10 Pro, version 1703 (Creators Update). Windows 10 Pro is a prerequisite for deploying Windows 10 Business, which is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.</span></span>
   
-<span data-ttu-id="b073a-107">Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro ger Microsoft 365 Business-prenumerationen dig rätt att uppgradera till Windows 10.</span><span class="sxs-lookup"><span data-stu-id="b073a-107">If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows 10 upgrade.</span></span>
+<span data-ttu-id="d5a36-107">Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro ger Microsoft 365 Business-prenumerationen dig rätt att uppgradera till Windows 10.</span><span class="sxs-lookup"><span data-stu-id="d5a36-107">If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business subscription entitles you to a Windows 10 upgrade.</span></span>
   
-<span data-ttu-id="b073a-108">Följ stegen i det här avsnittet för att få mer information om hur du uppgraderar Windows-enheter till Windows 10 Pro Creators Update: [Uppgradera Windows-enheter till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).</span><span class="sxs-lookup"><span data-stu-id="b073a-108">For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).</span></span>
+<span data-ttu-id="d5a36-108">Följ stegen i det här avsnittet för att få mer information om hur du uppgraderar Windows-enheter till Windows 10 Pro Creators Update: [Uppgradera Windows-enheter till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).</span><span class="sxs-lookup"><span data-stu-id="d5a36-108">For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).</span></span>
   
-<span data-ttu-id="b073a-109">[Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad) kontrollerar du har uppgraderingen eller kontrollera att uppgraderingen har arbetat i avsnittet.</span><span class="sxs-lookup"><span data-stu-id="b073a-109">See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to verify you have the upgrade, or to make sure the upgrade worked.</span></span> 
+<span data-ttu-id="d5a36-109">Se [Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad) för att kontrollera att du har uppgraderingen eller för att se till att uppgraderingen fungerade.</span><span class="sxs-lookup"><span data-stu-id="d5a36-109">See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to verify you have the upgrade, or to make sure the upgrade worked.</span></span> 
   
-## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a><span data-ttu-id="b073a-110">Anslut Windows 10-enheter till organisationens Azure AD</span><span class="sxs-lookup"><span data-stu-id="b073a-110">Join Windows 10 devices to your organization's Azure AD</span></span>
+## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a><span data-ttu-id="d5a36-110">Anslut Windows 10-enheter till organisationens Azure AD</span><span class="sxs-lookup"><span data-stu-id="d5a36-110">Join Windows 10 devices to your organization's Azure AD</span></span>
 
-<span data-ttu-id="b073a-p102">När alla Windows-enheter i organisationen har uppgraderats till Windows 10 Pro Creators Update eller redan använder Windows 10 Pro Creators Update kan du lägga till enheterna i organisationens Azure Active Directory. När enheterna läggs till uppgraderas de automatiskt till Windows 10 Business som är en del av Microsoft 365 Business-prenumerationen.</span><span class="sxs-lookup"><span data-stu-id="b073a-p102">Once all Windows devices in your organization have either been upgraded to Windows 10 Pro Creators Update or are already running Windows 10 Pro Creators Update, you can join these devices to your organization's Azure Active Directory. Once the devices are joined, they will automatically be upgraded to Windows 10 Business, which is part of your Microsoft 365 Business subscription.</span></span>
+<span data-ttu-id="d5a36-p102">När alla Windows-enheter i organisationen har uppgraderats till Windows 10 Pro Creators Update eller redan använder Windows 10 Pro Creators Update kan du lägga till enheterna i organisationens Azure Active Directory. När enheterna läggs till uppgraderas de automatiskt till Windows 10 Business som är en del av Microsoft 365 Business-prenumerationen.</span><span class="sxs-lookup"><span data-stu-id="d5a36-p102">Once all Windows devices in your organization have either been upgraded to Windows 10 Pro Creators Update or are already running Windows 10 Pro Creators Update, you can join these devices to your organization's Azure Active Directory. Once the devices are joined, they will automatically be upgraded to Windows 10 Business, which is part of your Microsoft 365 Business subscription.</span></span>
   
-### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a><span data-ttu-id="b073a-113">En helt ny eller nyligen uppgraderad Windows 10 Pro-enhet</span><span class="sxs-lookup"><span data-stu-id="b073a-113">For a brand new, or newly upgraded, Windows 10 Pro device</span></span>
+### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a><span data-ttu-id="d5a36-113">En helt ny eller nyligen uppgraderad Windows 10 Pro-enhet</span><span class="sxs-lookup"><span data-stu-id="d5a36-113">For a brand new, or newly upgraded, Windows 10 Pro device</span></span>
 
-<span data-ttu-id="b073a-114">Följ de här stegen för helt nya enheter som kör Windows 10 Pro Creators Update eller för enheter som uppgraderats till Windows 10 Pro Creators Update men som inte utfört konfiguration för Windows 10-enheter.</span><span class="sxs-lookup"><span data-stu-id="b073a-114">For a brand new device running Windows 10 Pro Creators Update, or for a device that was upgraded to Windows 10 Pro Creators Update but has not gone through Windows 10 device setup, follow these steps.</span></span>
+<span data-ttu-id="d5a36-114">Följ de här stegen för helt nya enheter som kör Windows 10 Pro Creators Update eller för enheter som uppgraderats till Windows 10 Pro Creators Update men som inte utfört konfiguration för Windows 10-enheter.</span><span class="sxs-lookup"><span data-stu-id="d5a36-114">For a brand new device running Windows 10 Pro Creators Update, or for a device that was upgraded to Windows 10 Pro Creators Update but has not gone through Windows 10 device setup, follow these steps.</span></span>
   
-1. <span data-ttu-id="b073a-115">Gå igenom konfigurationen av Windows 10-enheter tills du kommer till sidan **Hur vill du konfigurera?**</span><span class="sxs-lookup"><span data-stu-id="b073a-115">Go through Windows 10 device setup until you get to the **How would you like to set up?** page.</span></span> 
+1. <span data-ttu-id="d5a36-115">Gå igenom konfigurationen av Windows 10-enheter tills du kommer till sidan **Hur vill du konfigurera?**</span><span class="sxs-lookup"><span data-stu-id="d5a36-115">Go through Windows 10 device setup until you get to the **How would you like to set up?** page.</span></span> 
     
     ![On the How would you like to set up page, choose Set up for an organization](media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. <span data-ttu-id="b073a-117">Välj **Konfigurera för en organisation** och ange användarnamn och lösenord för Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="b073a-117">Here, choose **Set up for an organization** and then enter your username and password for Microsoft 365 Business.</span></span> 
+2. <span data-ttu-id="d5a36-117">Välj **Konfigurera för en organisation** och ange användarnamn och lösenord för Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="d5a36-117">Here, choose **Set up for an organization** and then enter your username and password for Microsoft 365 Business.</span></span> 
     
-3. <span data-ttu-id="b073a-118">Slutför konfigurationen av Windows 10-enhet.</span><span class="sxs-lookup"><span data-stu-id="b073a-118">Finish Windows 10 device setup.</span></span>
+3. <span data-ttu-id="d5a36-118">Slutför konfigurationen av Windows 10-enhet.</span><span class="sxs-lookup"><span data-stu-id="d5a36-118">Finish Windows 10 device setup.</span></span>
     
-   <span data-ttu-id="b073a-p103">När du är klar är användaren ansluten till organisationens Azure AD. Kontrollera att allt är korrekt genom att läsa [Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad).</span><span class="sxs-lookup"><span data-stu-id="b073a-p103">Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure.</span></span> 
+   <span data-ttu-id="d5a36-p103">När du är klar är användaren ansluten till organisationens Azure AD. Kontrollera att allt är korrekt genom att läsa [Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad).</span><span class="sxs-lookup"><span data-stu-id="d5a36-p103">Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure.</span></span> 
   
-### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a><span data-ttu-id="b073a-121">Enheter som redan är konfigurerade och använder Windows 10 Pro</span><span class="sxs-lookup"><span data-stu-id="b073a-121">For a device already set up and running Windows 10 Pro</span></span>
+### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a><span data-ttu-id="d5a36-121">Enheter som redan är konfigurerade och använder Windows 10 Pro</span><span class="sxs-lookup"><span data-stu-id="d5a36-121">For a device already set up and running Windows 10 Pro</span></span>
 
- <span data-ttu-id="b073a-122">**Ansluta användare till Azure AD:**</span><span class="sxs-lookup"><span data-stu-id="b073a-122">**Connect users to Azure AD:**</span></span>
+ <span data-ttu-id="d5a36-122">**Ansluta användare till Azure AD:**</span><span class="sxs-lookup"><span data-stu-id="d5a36-122">**Connect users to Azure AD:**</span></span>
   
-1. <span data-ttu-id="b073a-123">Klicka på Windows-logotypen och sedan på inställningsikonen på användarens dator med Windows 10 Pro, version 1703 (Creators Update) (se [förutsättningar](pre-requisites-for-data-protection.md)).</span><span class="sxs-lookup"><span data-stu-id="b073a-123">In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](pre-requisites-for-data-protection.md)), click the Windows logo, and then the Settings icon.</span></span>
+1. <span data-ttu-id="d5a36-123">Klicka på Windows-logotypen och sedan på inställningsikonen på användarens dator med Windows 10 Pro, version 1703 (Creators Update) (se [förutsättningar](pre-requisites-for-data-protection.md)).</span><span class="sxs-lookup"><span data-stu-id="d5a36-123">In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](pre-requisites-for-data-protection.md)), click the Windows logo, and then the Settings icon.</span></span>
   
    ![In the Start menu, click Windows Settings icon](media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
-2. <span data-ttu-id="b073a-125">I **Inställningar** går du till **Konton**.</span><span class="sxs-lookup"><span data-stu-id="b073a-125">In **Settings**, go to **Accounts**.</span></span>
+2. <span data-ttu-id="d5a36-125">I **Inställningar** går du till **Konton**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-125">In **Settings**, go to **Accounts**.</span></span>
   
    ![In Windows Settings, go to Accounts](media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
-3. <span data-ttu-id="b073a-127">På sidan **Din information** klickar du på **Åtkomst till arbete eller skola** \> **Anslut**.</span><span class="sxs-lookup"><span data-stu-id="b073a-127">On **Your info** page, click **Access work or school** \> **Connect**.</span></span>
+3. <span data-ttu-id="d5a36-127">På sidan **Din information** klickar du på **Åtkomst till arbete eller skola** \> **Anslut**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-127">On **Your info** page, click **Access work or school** \> **Connect**.</span></span>
   
    ![Choose Connect under Access work or school](media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
-4. <span data-ttu-id="b073a-129">I dialogrutan **Konfigurera ett arbets- eller skolkonto** dialogrutan väljer du **Anslut den här enheten till Azure Active Directory** under **Alternativa åtgärder**.</span><span class="sxs-lookup"><span data-stu-id="b073a-129">On the **Set up a work or school account** dialog, under **Alternate actions**, choose **Join this device to Azure Active Directory**.</span></span>
+4. <span data-ttu-id="d5a36-129">I dialogrutan **Konfigurera ett arbets- eller skolkonto** dialogrutan väljer du **Anslut den här enheten till Azure Active Directory** under **Alternativa åtgärder**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-129">On the **Set up a work or school account** dialog, under **Alternate actions**, choose **Join this device to Azure Active Directory**.</span></span>
   
    ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. <span data-ttu-id="b073a-131">On the **Let's get you signed in** page, enter your work or school account \> **Next**.</span><span class="sxs-lookup"><span data-stu-id="b073a-131">On the **Let's get you signed in** page, enter your work or school account \> **Next**.</span></span>
+5. <span data-ttu-id="d5a36-131">On the **Let's get you signed in** page, enter your work or school account \> **Next**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-131">On the **Let's get you signed in** page, enter your work or school account \> **Next**.</span></span>
   
-   <span data-ttu-id="b073a-132">On the **Enter password** page, enter your password \> **Sign in**.</span><span class="sxs-lookup"><span data-stu-id="b073a-132">On the **Enter password** page, enter your password \> **Sign in**.</span></span>
+   <span data-ttu-id="d5a36-132">On the **Enter password** page, enter your password \> **Sign in**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-132">On the **Enter password** page, enter your password \> **Sign in**.</span></span>
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. <span data-ttu-id="b073a-134">Kontrollera att informationen är korrekt på sidan **kontrollerar du att det här är din organisation** och klicka på **Anslut till**.</span><span class="sxs-lookup"><span data-stu-id="b073a-134">On the **Make sure this is your organization** page, verify that the information is correct, and click **Join**.</span></span>
+6. <span data-ttu-id="d5a36-134">Kontrollera att informationen är korrekt på sidan **Kontrollera att det här är din organisation** och klicka på **Anslut**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-134">On the **Make sure this is your organization** page, verify that the information is correct, and click **Join**.</span></span>
   
-   <span data-ttu-id="b073a-p104">På sidan **Klart!** klickar du på **Klar**.</span><span class="sxs-lookup"><span data-stu-id="b073a-p104">On the **You're all set!** page, click **Done**.</span></span>
+   <span data-ttu-id="d5a36-p104">På sidan **Klart!** klickar du på **Klar**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-p104">On the **You're all set!** page, click **Done**.</span></span>
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-<span data-ttu-id="b073a-p105">Om du laddade upp filer till OneDrive för företag, synkroniserar du dem med datorn. Om du använde ett verktyg från tredje part för migrering av profil och filer, synkroniserar du även med den nya profilen.</span><span class="sxs-lookup"><span data-stu-id="b073a-p105">If you uploaded files to OneDrive for Business, sync them back down. If you used a third party tool to migrate profile and files, sync those also to the new profile.</span></span>
+<span data-ttu-id="d5a36-p105">Om du laddade upp filer till OneDrive för företag, synkroniserar du dem med datorn. Om du använde ett verktyg från tredje part för migrering av profil och filer, synkroniserar du även med den nya profilen.</span><span class="sxs-lookup"><span data-stu-id="d5a36-p105">If you uploaded files to OneDrive for Business, sync them back down. If you used a third party tool to migrate profile and files, sync those also to the new profile.</span></span>
   
-## <a name="verify-the-device-is-connected-to-azure-ad"></a><span data-ttu-id="b073a-140">Kontrollera att enheten är ansluten till Azure AD</span><span class="sxs-lookup"><span data-stu-id="b073a-140">Verify the device is connected to Azure AD</span></span>
+## <a name="verify-the-device-is-connected-to-azure-ad"></a><span data-ttu-id="d5a36-140">Kontrollera att enheten är ansluten till Azure AD</span><span class="sxs-lookup"><span data-stu-id="d5a36-140">Verify the device is connected to Azure AD</span></span>
 
-<span data-ttu-id="b073a-141">Om du vill kontrollera din synkroniseringsstatus på sidan **Access arbetet eller i skolan** i **inställningarna**klickar du på **ansluten till** _ \<organisationens namn\> _ område för att visa knapparna **Info** och **Koppla från**.</span><span class="sxs-lookup"><span data-stu-id="b073a-141">To verify your sync status, on the **Access work or school** page in **Settings**, click in the **Connected to** _ \<organization name\> _ area to expose the buttons **Info** and **Disconnect**.</span></span> <span data-ttu-id="b073a-142">Klicka på **Info** för att visa synkroniseringsstatus för.</span><span class="sxs-lookup"><span data-stu-id="b073a-142">Click on **Info** to get your synchronization status.</span></span> 
+<span data-ttu-id="d5a36-141">Om du vill kontrollera synkroniseringsstatusen går du till sidan **åtkomst arbete eller skola** i **Inställningar**och klickar i området **ansluten till** \<_\> organisationsnamn _ för att Visa knapparna **info** och **Koppla från**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-141">To verify your sync status, on the **Access work or school** page in **Settings**, click in the **Connected to** _ \<organization name\> _ area to expose the buttons **Info** and **Disconnect**.</span></span> <span data-ttu-id="d5a36-142">Klicka på **info** för att få din synkroniseringsstatus.</span><span class="sxs-lookup"><span data-stu-id="d5a36-142">Click on **Info** to get your synchronization status.</span></span> 
   
-<span data-ttu-id="b073a-143">Klicka på Synkronisera på sidan Synkroniseringsstatus synkronisering för att hämta de senaste hanteringsprinciperna för mobila enheter till datorn.</span><span class="sxs-lookup"><span data-stu-id="b073a-143">On the Sync status page, click Sync to get the latest mobile device management policies onto the PC.</span></span>
+<span data-ttu-id="d5a36-143">Klicka på Synkronisera på sidan Synkroniseringsstatus synkronisering för att hämta de senaste hanteringsprinciperna för mobila enheter till datorn.</span><span class="sxs-lookup"><span data-stu-id="d5a36-143">On the Sync status page, click Sync to get the latest mobile device management policies onto the PC.</span></span>
   
-<span data-ttu-id="b073a-p107">Om du vill börjar använda Microsoft 365 Business-kontot klickar du på **Start**-knappen i Windows, högerklickar på den aktuella kontobilden och klickar sedan på **Växla konto**. Logga in med din e-postadress och lösenord hos organisationen.</span><span class="sxs-lookup"><span data-stu-id="b073a-p107">To start using the Microsoft 365 Business account, go to the Windows **Start** button, right-click your current account picture and then **Switch account**. Sign in by using your organization email and password.</span></span>
+<span data-ttu-id="d5a36-p107">Om du vill börjar använda Microsoft 365 Business-kontot klickar du på **Start**-knappen i Windows, högerklickar på den aktuella kontobilden och klickar sedan på **Växla konto**. Logga in med din e-postadress och lösenord hos organisationen.</span><span class="sxs-lookup"><span data-stu-id="d5a36-p107">To start using the Microsoft 365 Business account, go to the Windows **Start** button, right-click your current account picture and then **Switch account**. Sign in by using your organization email and password.</span></span>
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a><span data-ttu-id="b073a-147">Kontrollera att enheten uppgraderats till Windows 10 Business</span><span class="sxs-lookup"><span data-stu-id="b073a-147">Verify the device is upgraded to Windows 10 Business</span></span>
+## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a><span data-ttu-id="d5a36-147">Kontrollera att enheten uppgraderats till Windows 10 Business</span><span class="sxs-lookup"><span data-stu-id="d5a36-147">Verify the device is upgraded to Windows 10 Business</span></span>
 
-<span data-ttu-id="b073a-148">Kontrollera att de Windows 10-enheter som anslöts till Azure AD uppgraderats till Windows 10 Business som en del av Microsoft 365 Business-prenumerationen.</span><span class="sxs-lookup"><span data-stu-id="b073a-148">Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 Business as part of your Microsoft 365 Business subscription.</span></span>
+<span data-ttu-id="d5a36-148">Kontrollera att de Windows 10-enheter som anslöts till Azure AD uppgraderats till Windows 10 Business som en del av Microsoft 365 Business-prenumerationen.</span><span class="sxs-lookup"><span data-stu-id="d5a36-148">Verify that your Azure AD joined Windows 10 devices were upgraded to Windows 10 Business as part of your Microsoft 365 Business subscription.</span></span>
   
-1. <span data-ttu-id="b073a-149">Gå till **Inställningar** \> **System** \> **Om**.</span><span class="sxs-lookup"><span data-stu-id="b073a-149">Go to **Settings** \> **System** \> **About**.</span></span>
+1. <span data-ttu-id="d5a36-149">Gå till **Inställningar** \> **System** \> **Om**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-149">Go to **Settings** \> **System** \> **About**.</span></span>
     
-2. <span data-ttu-id="b073a-150">Kontrollera att **Version** är **Windows 10 Business**.</span><span class="sxs-lookup"><span data-stu-id="b073a-150">Confirm that the **Edition** shows **Windows 10 Business**.</span></span>
+2. <span data-ttu-id="d5a36-150">Kontrollera att **Version** är **Windows 10 Business**.</span><span class="sxs-lookup"><span data-stu-id="d5a36-150">Confirm that the **Edition** shows **Windows 10 Business**.</span></span>
     
     ![Verify that Windows edition is Windows 10 Business.](media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a><span data-ttu-id="b073a-152">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="b073a-152">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="d5a36-152">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="d5a36-152">Next steps</span></span>
 
-<span data-ttu-id="b073a-153">Konfigurera mobila enheter med informationen i [Konfigurera mobila enheter för Microsoft 365 Business-användare](set-up-mobile-devices.md) och ställ in principer för enhetsskydd eller programskydd med informationen i [Hantera Microsoft 365 Business](manage.md).</span><span class="sxs-lookup"><span data-stu-id="b073a-153">To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 Business](manage.md).</span></span>
+<span data-ttu-id="d5a36-153">Konfigurera mobila enheter med informationen i [Konfigurera mobila enheter för Microsoft 365 Business-användare](set-up-mobile-devices.md) och ställ in principer för enhetsskydd eller programskydd med informationen i [Hantera Microsoft 365 Business](manage.md).</span><span class="sxs-lookup"><span data-stu-id="d5a36-153">To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 Business](manage.md).</span></span>
   
