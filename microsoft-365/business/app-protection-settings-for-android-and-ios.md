@@ -11,38 +11,34 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
-description: Lär dig skapa, redigera eller ta bort en princip för hantering av app och skydda arbete filer på Android eller iOS-enheter.
-ms.openlocfilehash: 21cc1d91c2952c6e9414d3742c26547fc36016a5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Lär dig hur du skapar, redigerar eller tar bort en apphanteringsprincip och skyddar arbetsfiler på Android-eller iOS-enheter.
+ms.openlocfilehash: 68a338ffb4f9b6cab16c677f80d27481ccec4bd8
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073519"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287704"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Ange inställningar för appskydd för Android- eller iOS-enheter
 
-![Banderoll som pekar på https://aka.ms/aboutM365preview.](media/m365admincenterchanging.png)
+![Banderoll som pekar https://aka.ms/aboutM365previewpå.](media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Skapa en princip för programhantering
 
 1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Välj **enheter** i vänster navigeringsfält \> **principer** \> **Lägg till**.
+2. I det vänstra navigeringsfältet väljer du **enhets** \> **principer** \> **Lägg till**.
   
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Under **Typ av princip** väljer du **Programhantering för Android** eller **Programhantering för iOS** beroende på vilken uppsättning principer du vill skapa. 
     
-5. Expandera **Skydda filer om enheter försvinner eller blir stulna** och **Hantera hur användare får åtkomst till Office-filer på mobila enheter** \> konfigurera inställningar efter eget önskemål. **Styr hur användare får åtkomst till Office-filer på mobila enheter** är **Av** som standard, men vi rekommenderar att du aktiverar det med **På** och godkänner standardvärdena. Mer information finns i [tillgängliga inställningar](#available-settings) . 
+5. Expandera **Skydda filer om enheter försvinner eller blir stulna** och **Hantera hur användare får åtkomst till Office-filer på mobila enheter** \> konfigurera inställningar efter eget önskemål. **Styr hur användare får åtkomst till Office-filer på mobila enheter** är **Av** som standard, men vi rekommenderar att du aktiverar det med **På** och godkänner standardvärdena. Se [tillgängliga inställningar](#available-settings) för mer information. 
     
     Du kan alltid använda länken **Återställ standardinställningar** för att återgå till standardinställningar. 
     
@@ -54,7 +50,7 @@ ms.locfileid: "34073519"
     
 ## <a name="edit-an-app-management-policy"></a>Redigera en princip för programhantering
 
-1. Välj **Redigera principen**på kortet **principer** .
+1. På kortet **principer** väljer du **Redigera princip**.
     
 2. I fönstret **Redigera princip** väljer du den princip som du vill ändra 
     
@@ -64,9 +60,9 @@ ms.locfileid: "34073519"
     
 ## <a name="delete-an-app-management-policy"></a>Ta bort en princip för programhantering
 
-1. Välj en princip och sedan **Ta bort**på sidan **principer** .
+1. På den **principer** sidan, Välj en princip och sedan **ta bort**.
     
-2. Välj **Bekräfta** ta bort principen eller principerna som du valde i fönstret **Ta bort principen** . 
+2. På den **ta bort princip** fönstret Välj **Bekräfta** att ta bort den princip eller principer som du har valt. 
     
 ## <a name="available-settings"></a>Tillgängliga inställningar
 

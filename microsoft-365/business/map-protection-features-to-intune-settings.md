@@ -12,22 +12,18 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: Lär dig hur funktioner i Microsoft 365 Business mappas till Intune-inställningar. Prenumerationen får du en licens för att ändra inställningarna för Intune.
-ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Läs om hur skyddsfunktioner i Microsoft 365 Business Map till Intune-inställningar. Prenumerationen ger dig en licens för att ändra Intune-inställningar.
+ms.openlocfilehash: 316dc8efbe69057f049bf8fadd3c3f41c358a33e
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074269"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287980"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Hur mappar skyddsfunktioner i Microsoft 365 Business till Intune-inställningarna
 
@@ -37,7 +33,7 @@ Följande tabell visar hur principinställningar för Android- och iOS-appar map
   
 Om du vill hitta Intune-inställningen loggar du in med ditt Microsoft 365 Business-administratörskonto och går till **administratörscenter** och sedan **Intune**.
   
- **Viktigt:** En Microsoft 365 Business-prenumeration får du en licens för att ändra inställningarna för Intune. Se [Introduktion till Intune för att komma igång.](https://docs.microsoft.com/intune/introduction-intune)
+ **Viktigt:** En Microsoft 365 Business-prenumeration ger dig en licens för att ändra alla Intune-inställningar. Se [Introduktion till Intune för att komma igång.](https://docs.microsoft.com/intune/introduction-intune)
   
 Klicka på det principnamn du vill markera, till exempel Programprincip för Android, och välj sedan **Principinställningar**.
   
@@ -68,7 +64,7 @@ Under **Hantera hur användare kommer åt Office-filer på mobila enheter**
 
 Följande tabell visar hur principinställningar för Windows 10-appar mappas till Intune-inställningar.
   
-För att hitta Intune inställningen loggat in med dina autentiseringsuppgifter för Microsoft 365 Business admin, gå till [Azure portal](https://portal.azure.com)och sedan markera **flera tjänster**och typ i Intune till **Filter**väljer du **Intune App skydd** \> ** App för**.
+Om du vill hitta Intune-inställningen, när du är inloggad med dina autentiseringsuppgifter för Microsoft 365 Business admin, gå till [Azure-portalen](https://portal.azure.com), välj sedan **fler tjänster**, och skriv in Intune i **filtret**, Välj **Intune App Protection** \> ** Appprincipen**.
   
  **Viktigt!** En Microsoft 365 Business-prenumeration ger dig en licens för att ändra endast de Intune-inställningar som mappas till inställningarna i Microsoft 365 Business. 
   
@@ -88,7 +84,7 @@ Klicka på det principnamn du vill markera och välj sedan **Allmänt, Tilldelni
 
 Följande tabell visar hur konfigurationsinställningar för Windows 10-enheter mappas till Intune-inställningar.
   
-För att hitta Intune inställningen loggat in med dina autentiseringsuppgifter för Microsoft 365 Business admin, gå till [Azure portal](https://portal.azure.com)och sedan markera **flera tjänster**och typ i Intune till **Filter**väljer du **Intune** \> **enhet konfiguration av** \> **profiler**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Om du vill hitta Intune-inställningen, när du är inloggad med dina autentiseringsuppgifter för Microsoft 365 Business admin, gå till [Azure-portalen](https://portal.azure.com), välj sedan **fler tjänster**, och skriv in Intune i **filtret**, Välj **Intune** \> - **enhet konfigurations** \> **profiler**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Principinställning för Windows 10-enhet**|**Intune-inställning(ar)**|
 |:-----|:-----|

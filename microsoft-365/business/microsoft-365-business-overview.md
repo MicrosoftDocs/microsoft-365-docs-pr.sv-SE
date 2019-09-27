@@ -1,5 +1,5 @@
 ---
-title: Översikt över Microsoft 365 Business
+title: Översikt Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -11,22 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig att konfigurera Microsoft 365 Business.
-ms.openlocfilehash: 64cfa460311af6cdafb637ceb3415511e003e394
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 8568232eb65485f1e016342bb13de9a07f706c00
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853158"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288544"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Översikt över Microsoft 365 Business
 
@@ -36,29 +32,29 @@ Microsoft 365 Business är en omfattande uppsättning produktivitets- och samarb
   
 Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser finns mer information i dokumentationen för [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986).
 
-Se [Microsoft 365 Business tjänstebeskrivning](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) för hela listan över funktioner.
+Se [Microsoft 365 Business servicebeskrivning](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) för hela listan över funktioner.
   
-## <a name="small-business-security-needs"></a>Säkerhetsbehov för småföretag
+## <a name="small-business-security-needs"></a>Säkerhetsbehov för små företag
 
-Affärsdata kan vara hotad på många olika sätt. Du och dina användare kan äventyra säkerheten för din organisation när du loggar in med avslöjade referenser eller organisation visa data på olika enheter och program. Organisationen är mer specifikt löper risk att:
+Dina affärsdata kan äventyras på många sätt. Du och dina användare kan äventyra organisationens säkerhet när du loggar in med komprometterade autentiseringsuppgifter eller Visa organisations data på olika enheter och program. Mer specifikt är din organisation i riskzonen från:
 
-1. Avslöjade eller svagt inloggningsuppgifter.
-2. Avslöjade enhet med en svag PIN-kod eller en användare som äger enheten.
-3. Användare kan kopiera/klistra in/spara dina organisationsdata till personliga appar.
-4. Användare som installerar och använder 3<sup>rd</sup> part appar med svag säkerhet.
-5. E-säkerhetsproblem, däribland dela känsliga data, försöker phishing, skadlig kod, etc.
-6. När personer inte bör kan komma åt dokument med känslig information.
+1. Komprometterade eller svaga inloggningsuppgifter.
+2. Komprometterad enhet med en svag PIN-kod eller en användarägd enhet.
+3. Användare som kan kopiera/klistra in/spara organisationens data till personliga appar.
+4. Användare som installerar och använder 3 program för<sup>RD</sup> -part med svag säkerhet.
+5. E-post sårbarheter inklusive dela känsliga data, phishing-försök, malware, etc.
+6. När personer som inte ska, kan komma åt dokument med känslig information.
 
-Microsoft 365 verksamhet hjälper till att skydda dina data i alla de här fallen. I följande bild beskrivs säkerhetsfunktioner som skyddar dina affärsdata.
+Microsoft 365 Business hjälper till att skydda dina data i var och en av dessa instanser. Säkerhets funktionerna som skyddar dina affärsdata beskrivs i följande bild.
 
-![En bild som visar hur M365B skyddar din verksamhet.](media/m365businessvalueadd.png)
+![En siffra som visar hur M365B skyddar ditt företag.](media/m365businessvalueadd.png)
 
-Om du vill se en fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business säkerhetsfunktioner](security-features.md). När du [ställer in Microsoft 365 Business](set-up.md)finns i [ställa in avancerade IPSec-principer](set-up-advanced-security.md) för att komma igång med säkerhetsfunktioner som inte ingår som en del av installationen. Läs också [Topp 10 sätt att skydda Office 365 och Microsoft 365 affärsplaner](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en bra översikt om hur du ställer in skydd mot cyber kriminella och hackare.
+En fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business Security-funktioner](security-features.md). När du har [konfigurerat Microsoft 365 Business](set-up.md), se [Konfigurera avancerade säkerhetsprinciper](set-up-advanced-security.md) för att komma igång med säkerhetsfunktioner som inte ingår som en del av installationen. Läs också [topp 10 sätt att säkra Office 365 och Microsoft 365 affärsplaner](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en bra överblick över hur man ställer in skydd mot cyberbrottslingar och hackare.
 
 ## <a name="get-microsoft-365-business"></a>Skaffa Microsoft 365 Business
 
 - Om du har en partner får denna Microsoft 365 Business: [Hämta Microsoft 365 Business från Microsoft-partnercenter](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
-- Om du inte har en partner och vill hämta Microsoft 365 Business, kan du [köpa den här](https://www.microsoft.com/microsoft-365/business) och följ instruktionerna [Logga](sign-up.md) .
+- Om du inte har en partner och vill skaffa Microsoft 365 Business kan du [köpa den här](https://www.microsoft.com/microsoft-365/business) och följa [registrerings](sign-up.md) anvisningarna.
 
-- Du kan även head över till [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) både köpa Microsoft 365 Business och få hjälp med installation.
+- Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.

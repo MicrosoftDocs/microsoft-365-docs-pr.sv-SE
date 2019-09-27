@@ -10,53 +10,50 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
-description: Lär dig mer om att köpa och registrera dig för Microsoft 365 Business.
-ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
-ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
+description: Läs om hur du köper och registrerar dig för Microsoft 365 Business.
+ms.openlocfilehash: bcdf0adc60c597a5eca485415f33662402d12cf4
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35114931"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288244"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrera dig för Microsoft 365 Business
 
-Om du är en partner finns i [Hämta Microsoft 365 Business från Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+Om du är partner läser du [Skaffa microsoft 365 Business från Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
-Att köpa Microsoft 365 Business online, gå till [Upptäck Microsoft 365 konkurrensfördelar](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop) och väljer **Köp nu** under Microsoft 365 Business.
+Om du vill köpa Microsoft 365 Business Online går du till [Upptäck Microsoft 365 Business Advantage](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop) och väljer **Köp nu** under Microsoft 365 Business.
 
-Du kan även head över till [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) både köpa Microsoft 365 Business och få hjälp med installation.
+Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.
 
-## <a name="complete-the-sign-up-steps"></a>Följ instruktionerna för anmälan
+## <a name="complete-the-sign-up-steps"></a>Slutför registreringsstegen
 
-Utför följande steg när du har köpt Microsoft 365 Business.
+Slutför följande steg när du har köpt Microsoft 365 Business.
 
-1. På sidan **Välkommen till dags att du** ange informationen som krävs. Observera:
+1. På **Välkommen, låt oss lära känna dig** sida ange den information som krävs. Observera att:
  
-    -  **Land eller regioner:** Detta anger den tjänst som du tar emot och kan inte ändras senare.
-    - **Business e-postadress:** Ange din aktuella e-postadress. Microsoft använder den här adressen för att kommunicera med dig om din prenumeration på Microsoft 365.
-    - **Företagets namn** Vi ska visa ditt företagsnamn i administratörscenter. Det är där du ska hantera Microsoft 365 användare, licenser och så vidare. Vi ska också inkludera den i SharePoint-webbplatsadresser.
+    -  **Land eller regioner:** Detta avgör vilken tjänst du får och kan inte ändras senare.
+    - **Företagets e-postadress:** Ange din nuvarande e-postadress. Microsoft använder den här adressen för att motsvara dig om din Microsoft 365-prenumeration.
+    - **Företagsnamn** Vi visar ditt företagsnamn i administratörscenter. Det är här du hanterar Microsoft 365-användare, licenser och så vidare. Vi kommer också att inkludera den i alla SharePoint-webbplatsadresser.
 
-2. På sidan **Skapa ditt användar-ID** :
+2. På sidan **skapa ditt användar-ID** :
 
-    - **Användarnamn**: Ange namnet (kallade alias) som du vill använda för din egen e-business. Robert Young kan till exempel använda RobY eller RobYoung som ett alias för arbete.
-    - **Företaget**: Ange företagets unika namn. Detta är namnet som används av ditt företags webbplats om du har en och är också det namn som du vill inkludera efter den @-tecknet när du får ett e-postmeddelande med business. En domän kallas detta namn. Om ditt företag kallas Contoso skidor, t.ex ContosoSkis efter den @-tecknet.
-    - **Välj en domän**: Om du redan äger ett domännamn kan du markera. onmicrosoft.com från nedrullningsbara menyn och ber vi dig att ställa in senare. Annars är det lätt att köpa ett domännamn som representerar ditt företag. Gör som Markera den domän som du vill använda i nedrullningsbara menyn. Din fullständiga e-postadress kan till exempel vara *Teresa@ContosoSkis.net*. Vi meddelar dig direkt om domännamnet är tillgängligt. Om det är vi till kostnaden för din domän och kostnaden för Microsoft 365 Business-prenumeration. Den nya domänen också sätts upp och redo för användning i Microsoft 365 om du köper här. Information om domäner finns i [Vanliga frågor om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq).
+    - **Användarnamn**: Ange namnet (kallas ett alias) som du använder för din egen e-post i företaget. Robert Young kan till exempel använda RobY eller RobYoung som ett arbets-alias.
+    - **Ditt företag**: Ange ditt unika företagsnamn. Detta är det namn som din företags webbplats använder om du har en, och är också det namn du vill inkludera efter @-tecknet när du får ett företags-e-postmeddelande. Namnet kallas för en domän. Till exempel om ditt företag kallas contoso skidor, ange ContosoSkis efter @-tecknet.
+    - **Välj en domän**: om du redan äger ditt domännamn väljer du. onmicrosoft.com i rullgardinsmenyn så ber vi dig att ställa in den senare. Annars är det enkelt att köpa ett domännamn som representerar ditt företag. För att göra det, Välj den domän du föredrar från rullgardinsmenyn. Din fullständiga e-postadress kan till exempel vara *Teresa@ContosoSkis.net*. Vi meddelar dig genast om domännamnet är tillgängligt. Om det är det lägger vi till kostnaden för din domän till kostnaden för din Microsoft 365 Business-prenumeration. Den nya domänen kommer också att ställas in och redo för användning i Microsoft 365 om du köper den här. Mer information om domäner finns i [vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq).
     
-        ![Skärmbild av skapa användar-ID-sidan.](media/signinuserid.png)
+        ![Skärmbild av skapa ditt användar-ID sida.](media/signinuserid.png)
 
-3. Fyll i resten av fälten och välj **Skapa mitt konto**.
-4. Styrka på **du är. Not.A.Robot.** sidan Ange ett telefonnummer till felkoden antingen via text eller ett samtal och välj **Text mig** eller **kontakta mig**och sedan ange koden kontroll \> **Nästa**.
-5. Ange din företagsadress på sidan **där du ska använda detta** . Den här informationen avgör vilka skatter du betalar och som prenumerationer är tillgängliga. Läs mer om skatter, [vilken moms ska jag debiteras?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
-1. Välj **Nästa**, granska din order och välj **Nästa** igen.
-1. Ange på sidan **hur vill du betala** din betalningsinformation och **Placera order**.
-    Du kan sedan gå till [administratörscentret](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) och slutför din [ställa in](set-up.md).
+3. Fyll i resten av fälten och välj **skapa mitt konto**.
+4. På **bevisa. you ' re. Inte. A. robot.** sida ange ett telefonnummer för att få en kod antingen via text eller ett samtal och välj **text mig** eller **Ring mig**, ange sedan verifieringskoden \> **Nästa**.
+5. På den **där kommer du att använda den här** sidan Ange din företagsadress. Den här informationen avgör vilka skatter du betalar och vilka prenumerationer som är tillgängliga. För mer information om skatter, se [vilken skatt kommer jag att debiteras?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+1. Välj **Nästa**, granska din beställning och välj **Nästa** igen.
+1. På sidan **Hur vill du betala anger du** dina betalningsuppgifter och **lägger sedan order**.
+    Du kan sedan gå till [administratörscenter](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) för att slutföra din [uppsättning](set-up.md).
 
     > [!NOTE]
-    > Om du väljer **Gå till administratörscentret**länken i slutet av installationen, tas du direkt till erfarenheten som [ställts in](set-up.md) .
+    > Om du i slutet av installationen väljer länken **gå till administratörscenter**, kommer du att tas direkt till den [Konfigurera](set-up.md) upplevelse.

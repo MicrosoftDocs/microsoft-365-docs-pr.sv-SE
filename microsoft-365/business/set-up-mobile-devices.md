@@ -10,21 +10,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Installera Office på en iPhone eller en Android telefon och arbete-filer i Office apps kommer att skyddas av Microsoft 365 Business.
-ms.openlocfilehash: 81ec7eb980cbe35ced37ab3b25d87d77d9e4390a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Installera Office på en iPhone eller en Android-telefon, och dina arbetsfiler i Office-appar kommer att skyddas av Microsoft 365 Business.
+ms.openlocfilehash: f5e1b16e3c95f6f44d2d294d74c166bf5d318dc4
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074699"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288774"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Konfigurera mobila enheter för Microsoft 365 företag-användare
 
@@ -35,9 +32,9 @@ Exemplet rör Outlook, men gäller även för alla andra Office-program du vill 
   
 ## <a name="set-up-mobile-devices"></a>Konfigurera mobila enheter
 
-## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
+## <a name="iphonetabiphone"></a>[Iphone](#tab/iPhone)
   
-Titta på en video om hur du konfigurerar Office-apparna på iOS-enheter med Microsoft 365 Business:
+Titta på en video om hur du konfigurerar Office-appar på iOS-enheter med Microsoft 365 Business:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -67,7 +64,7 @@ Leta upp Outlook på din iPhone och starta om. Ange och bekräfta PIN-koden när
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
-Gå till Play butik om du vill starta installationsprogrammet på din Android telefon.
+Om du vill börja konfigurera på din Android-telefon går du till Play Store.
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   

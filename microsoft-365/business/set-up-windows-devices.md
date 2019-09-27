@@ -10,21 +10,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Lär dig hur du ställer in Windows-enheter som kör Windows 10 Pro för Microsoft 365 företagsanvändare. '
-ms.openlocfilehash: 5efe3aa1e329e7a9edcfd49fcc1f1391f95fd97f
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 'Lär dig hur du konfigurerar Windows-enheter som kör Windows 10 Pro för Microsoft 365 företagsanvändare. '
+ms.openlocfilehash: c4edd09d952ed1c98be8f41f6bcbaff8a16319a7
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074559"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288484"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Konfigurera Windows-enheter för Microsoft 365 Business-användare
 
@@ -36,7 +33,7 @@ Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8.
   
 Följ stegen i det här avsnittet för att få mer information om hur du uppgraderar Windows-enheter till Windows 10 Pro Creators Update: [Uppgradera Windows-enheter till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
-[Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad) kontrollerar du har uppgraderingen eller kontrollera att uppgraderingen har arbetat i avsnittet. 
+Se [Kontrollera att enheten är ansluten till Azure AD](#verify-the-device-is-connected-to-azure-ad) för att kontrollera att du har uppgraderingen eller för att se till att uppgraderingen fungerade. 
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Anslut Windows 10-enheter till organisationens Azure AD
 
@@ -82,7 +79,7 @@ Följ de här stegen för helt nya enheter som kör Windows 10 Pro Creators Upda
   
    ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. Kontrollera att informationen är korrekt på sidan **kontrollerar du att det här är din organisation** och klicka på **Anslut till**.
+6. Kontrollera att informationen är korrekt på sidan **Kontrollera att det här är din organisation** och klicka på **Anslut**.
   
    På sidan **Klart!** klickar du på **Klar**.
   
@@ -92,7 +89,7 @@ Om du laddade upp filer till OneDrive för företag, synkroniserar du dem med da
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Kontrollera att enheten är ansluten till Azure AD
 
-Om du vill kontrollera din synkroniseringsstatus på sidan **Access arbetet eller i skolan** i **inställningarna**klickar du på **ansluten till** _ \<organisationens namn\> _ område för att visa knapparna **Info** och **Koppla från**. Klicka på **Info** för att visa synkroniseringsstatus för. 
+Om du vill kontrollera synkroniseringsstatusen går du till sidan **åtkomst arbete eller skola** i **Inställningar**och klickar i området **ansluten till** \<_\> organisationsnamn _ för att Visa knapparna **info** och **Koppla från**. Klicka på **info** för att få din synkroniseringsstatus. 
   
 Klicka på Synkronisera på sidan Synkroniseringsstatus synkronisering för att hämta de senaste hanteringsprinciperna för mobila enheter till datorn.
   

@@ -11,23 +11,19 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Lär dig att skapa, redigera, ta bort eller ta bort AutoPilot profiler. '
-ms.openlocfilehash: 7987cafb3ea234d81be72c79aee8e584a3770875
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 'Lär dig att skapa, redigera, ta bort eller ta bort AutoPilot-profiler. '
+ms.openlocfilehash: 8fae8af5e7aa7b866745d0b34a4fe11862de6e9d
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073499"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287784"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Skapa och redigera AutoPilot-profiler
 
@@ -35,9 +31,9 @@ ms.locfileid: "34073499"
 
 En profil gäller för en enhet eller en grupp enheter.
   
-1. Välj **enheter** i Microsoft 365 Business Admin center, \> **AutoPilot**.
+1. I Microsoft 365 Business administratörscenter väljer du **enheter** \> **autopilot**.
   
-2. Välj fliken **profiler** på sidan **AutoPilot** \> **Skapa profil**.
+2. På sidan **autopilot** väljer du \> fliken **profiler** **Skapa profil**.
     
 3. På sidan **Skapa profil** anger du ett namn för profilen som kan hjälpa dig att identifiera den, till exempel Marknadsföring. Aktivera inställningen som du vill använda (mer information finns i [Om AutoPilot-profilinställningar](autopilot-profile-settings.md)) och välj **Spara**.
     

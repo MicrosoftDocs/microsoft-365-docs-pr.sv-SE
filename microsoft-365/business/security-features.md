@@ -10,21 +10,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-security-compliance
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som följer med Microsoft 365 Business.
-ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37121167"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288464"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 funktioner för Företagssäkerhet och efterlevnad
 
@@ -93,7 +90,7 @@ Avancerade funktioner i Microsoft 365 Business är tillgängliga för att hjälp
 
 Din Microsoft 365 Business-prenumeration innehåller funktioner som hjälper dig att upprätthålla efterlevnad och lagstadgade standarder.
 
-- **[Översikt över policyer för dataförlustskydd](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
+- **[Översikt över principer för dataförlustskydd](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
     Du kan ställa in att DLP automatiskt ska identifiera känslig information, som kreditkortsnummer, personnummer etc. för att förhindra oavsiktlig delning utanför företaget.
     

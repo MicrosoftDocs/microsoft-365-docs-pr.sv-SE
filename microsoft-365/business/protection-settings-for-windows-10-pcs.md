@@ -10,21 +10,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Mer information om standard och andra inställningar som är tillgängliga i Microsoft 365 Business att skydda Windows 10 enheter.
-ms.openlocfilehash: 844bddc4b93c7dc543ad6c6a79f5cf92c96ceff0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+description: Lär dig mer om standardinställningar och andra inställningar som är tillgängliga i Microsoft 365 Business för att säkra Windows 10-enheter.
+ms.openlocfilehash: 11042a63c1c0938d73ee8c2ee4326430af31b92d
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630618"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288694"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Ange inställningar för enhetsskydd för Windows 10
 
@@ -36,7 +33,7 @@ Titta på en video om hur du skyddar Windows 10-enheter med Microsoft 365 Busine
   
 1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Välj **enheter** på vänster navigeringsfält \> **principer** \> **Lägg till**.
+2. I det vänstra navigeringsfältet väljer **du Lägg till** **enhets** \> **principer** \> .
   
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     

@@ -1,5 +1,5 @@
 ---
-title: Ökat skydd för Microsoft 365 Business
+title: Öka skyddet mot hot för Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -10,229 +10,227 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
-description: Konfigurera Office 365 Advanced Threat Protection och skydda känsliga data.
-ms.openlocfilehash: b6e9941eee9de4f295b0f8056c1c91b7076e530c
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
+ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "35086399"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288124"
 ---
-# <a name="increase-threat-protection"></a>Ökat skydd
+# <a name="increase-threat-protection"></a>Öka skyddet mot hot
 
-Den här artikeln hjälper dig att öka skyddet av din Microsoft 365 prenumeration skydd mot nätfiske, skadliga program och andra hot. Dessa rekommendationer är lämplig för organisationer med ett ökat behov av säkerhet som lag kontor och kliniker hälso-och sjukvård.
+Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeration för att skydda mot nätfiske, skadlig kod och andra hot. Dessa rekommendationer är lämpliga för organisationer med ett ökat behov av säkerhet, som advokatbyråer och vårdcentraler.
 
-Innan du börjar, kontrollera dina Office 365 säkra poäng. Office 365 säkra poäng analyserar organisationen Office 365 säkerhet utifrån dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja genom att ta del av dina aktuella poäng. Vidta lämpliga åtgärder i den här artikeln ökar dina poäng. Målet är inte att uppnå högsta poäng, utan att vara medveten om möjligheter att skydda miljön som inte negativt påverkar produktivitet för användarna. 
+Kontrollera din Office 365 Secure score innan du börjar. Office 365 Secure score analyserar din Office 365-organisations säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Vidtar de åtgärder som rekommenderas i den här artikeln ökar din poäng. Målet är inte att uppnå maxpoängen, men att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för dina användare. 
 
-Mer information finns i [Skydda Microsoft-poäng](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+Mer information finns i [Microsoft Secure score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
 
-## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höja skyddet mot skadlig kod i e-post
+## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höj skyddsnivån mot skadlig kod i Mail
 
-Din Office 365 eller Microsoft 365 miljö innehåller skydd mot skadlig kod, men du kan öka skyddet genom att blockera bilagor med filtyper som är vanliga för skadlig programvara. Att öka skydd mot skadlig kod i e-post:
+Din Office 365-eller Microsoft 365-miljö innehåller skydd mot skadlig kod, men du kan öka skyddet genom att blockera bilagor med filtyper som ofta används för skadlig kod. För att öka Malware Protection i e-post:
   
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med autentiseringsuppgifterna för kontot Administratör. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med autentiseringsuppgifterna för administratörskontot. 
     
-2. I Office 365 säkerhet &amp; regelefterlevnadscentret, i den vänstra navigeringsrutan under **Threat management**väljer **principen** \> **Mot skadlig kod**.
+2. I &amp; Office 365 Security Compliance Center, i det vänstra navigeringsfönstret, under **Threat Management**, väljer du **policy** \> **anti-malware**.
     
-3. Dubbelklicka på standardprincipen om du vill redigera den här principen för hela företaget.
+3. Dubbelklicka på standardprincipen om du vill redigera policyn för hela företaget.
     
 4. Klicka på **Inställningar**.
     
-5. Välj **på**under **Vanliga bifogade typer Filter**. Filtyper som blockeras visas i fönstret nedanför den här kontrollen.  Kontrollera att du lägger till dessa filetypes:
-   - ADE, adp, ani, bas, bat, chm, cmd, com, Kontrollpanelen, crt, hlp, ht, hta, inf, moduler, isp, jobb, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif  <br/> Du kan lägga till eller ta bort filtyper senare om det behövs.
+5. Under **vanliga bilage typer filter**väljer du **på**. De filtyper som blockeras visas i fönstret direkt under den här kontrollen.  Se till att du lägger till de här filetyperna:
+   - ade, ADP, Ani, bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, ISP, Job, js, jse, lnk, MDA, MDB, MDE, MDZ, MSC, MSI, msp, MST, PCD, REG, SCR, Sct, SHS, URL, VB, VBE, vbs, WSC, WSF, WSH, exe, PIF  <br/> Du kan lägga till eller ta bort filtyper senare om det behövs.
     
 6. Klicka på **Spara.**
     
 Mer information finns i [skydd mot skadlig kod](https://go.microsoft.com/fwlink/?linkid=2015692&amp;clcid=0x409).
   
-## <a name="protect-against-ransomware"></a>Skydda mot ransomware
+## <a name="protect-against-ransomware"></a>Skydda mot Ransomware
 
-Ransomware begränsar åtkomsten till data genom att kryptera filer eller låser datorskärmar. Sedan försöker extort pengar från offer som frågar efter ”ransom”, vanligtvis i form av cryptocurrencies som Bitcoin, i utbyte mot åtkomst till data. 
+Ransomware begränsar åtkomsten till data genom att kryptera filer eller låsa datorskärmar. Det försöker sedan pressa pengar från offren genom att be om "lösen", vanligtvis i form av kryptovalutor som Bitcoin, i utbyte mot tillgång till data. 
   
-Du kan skydda mot ransomware genom att skapa en eller flera e-post flöde regler att blockera filnamnstillägg används ofta för ransomware (dessa har lagts till i steg [höja nivån på det skydd mot skadlig kod i e-post](#raise-the-level-of-protection-against-malware-in-mail) ) eller för att varna användare som tar emot dessa bifogade filer i e-post.
+Du kan skydda mot Ransomware genom att skapa en eller flera e-postflödesregler för att blockera filtillägg som vanligtvis används för Ransomware (dessa har lagts till i [Höj nivån för skydd mot skadlig kod i Mail-](#raise-the-level-of-protection-against-malware-in-mail) steget), eller för att varna användare som tar emot dessa bifogade filer i e-post.
 
-Förutom de filer som du har blockerat i föregående steg, är det också bra att skapa en regel för att varna användare innan du öppnar bifogade filer Office som innehåller makron. Ransomware kan döljas inuti makron, så vi ska varna användare att inte öppna dessa filer från personer som de inte vet.
+Förutom de filer som du blockerade i föregående steg, är det också bra att skapa en regel för att varna användare innan du öppnar bilagor för Office-filer som innehåller makron. Ransomware kan döljas inuti makron, så vi varnar användare att inte öppna dessa filer från personer som de inte vet.
 
-Skapa en regel för transport av e-post:
+Så här skapar du en regel för e-transport:
   
-1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och välj **Admin Centrerar** \> **Exchange**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Gå till administratörscenter på och välj **admin Centers** \> **Exchange**.
     
 2. Klicka på **regler**i kategorin **e-postflöde** .
     
-3. Klicka på **+**, och klicka sedan på **Skapa en ny regel**.
+3. Klicka **+** på och sedan på **skapa en ny regel**.
     
 4. Klicka på **fler alternativ** längst ned i dialogrutan om du vill se en fullständig uppsättning alternativ. 
     
-5. Tillämpa inställningarna i följande tabell för regeln. Lämna resten av inställningarna på standard, om du inte vill ändra inställningarna.
+5. Tillämpa inställningarna i följande tabell för regeln. Lämna resten av inställningarna som standard, om du inte vill ändra dessa.
     
 6. Klicka på **Spara**.
     
-|**Inställning**|**Varna användarna innan du öppnar bifogade filer med Office-filer**||
+|**Inställning**|**Varna användare innan bilagor till Office-filer öppnas**||
 |:-----|:-----|:-----|
-|Namn  <br/> |Anti-ransomware regel: Varna användare  <br/>  |
-|Tillämpa den här regeln om. . .  <br/> |Inga bifogade filer. . . filtillägget överensstämmer. . .  <br/> |
-|Ange ord eller fraser  <br/> |Lägg till följande filtyper:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/>|
-|Gör på följande sätt. . .  <br/> |Meddela mottagare med ett meddelande  <br/> |
-|Ange meddelandetext  <br/> |Öppna inte dessa typ av filer från personer du inte känner, eftersom de kan innehålla makron med skadlig kod.  <br/> |
+|Namn  <br/> |Anti-Ransomware-regel: varna användare  <br/>  |
+|Tillämpa den här regeln om. . .  <br/> |Någon bifogad fil. . . filändelsen matchningar. . .  <br/> |
+|Ange ord eller fraser  <br/> |Lägg till följande filtyper:  <br/> dotm, DOCM, xlsm, sltm, xla, XLAM, XLL, PPTM, POTM, PPAM, PPSM, sldm  <br/>|
+|Gör följande. . .  <br/> |Meddela mottagaren med ett meddelande  <br/> |
+|Ange meddelandetext  <br/> |Öppna inte den här typen av filer från personer som du inte känner till eftersom de kan innehålla makron med skadlig kod.  <br/> |
    
 Mer information finns i:
   
-- [Hantera ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [Hur man handskas med Ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
-- [Återställa din OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Återskapa din OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
     
 
 
-## <a name="stop-auto-forwarding-for-email"></a>Stoppa automatisk vidarebefordring för e-post
+## <a name="stop-auto-forwarding-for-email"></a>Stoppa automatisk vidarebefordran för e-post
 
-Hackare som försöker komma åt en postlåda kan stjäla din e-post genom att ange postlådan att automatiskt vidarebefordra e-post. Detta kan inträffa även utan användarens medvetande. Du kan förhindra detta genom att konfigurera en regel för e-flöde. 
+Hackare som får åtkomst till en användares postlåda kan stjäla din e-post genom att ställa in brevlådan så att e-post automatiskt vidarebefordras. Detta kan inträffa även utan användarens medvetenhet. Du kan förhindra att detta händer genom att konfigurera en regel för e-postflöde. 
   
-Titta på [det här korta videoklippet](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller gör så här om du vill skapa en regel för transport av e-post:
+Om du vill skapa en regel för transport av e-post kan du titta på [den korta videon](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller följa dessa steg:
   
-1. Klicka på **Admin Centrerar** i Microsoft 365 administratörscenter, \> **Exchange**.
+1. I Microsoft 365 administratörscenter klickar du på **Exchange**för **Administrationscenter** \> .
     
 2. Klicka på **regler**i kategorin **e-postflöde** .
     
-3. Klicka på **+**, och klicka sedan på **Skapa en ny regel**.
+3. Klicka **+** på och sedan på **skapa en ny regel**.
     
 4. Klicka på **fler alternativ** längst ned i dialogrutan om du vill se en fullständig uppsättning alternativ. 
     
-5. Tillämpa inställningarna i följande tabell. Lämna resten av inställningarna på standard, om du inte vill ändra inställningarna.
+5. Använd inställningarna i följande tabell. Lämna resten av inställningarna som standard, om du inte vill ändra dessa.
     
 6. Klicka på **Spara**.
     
-|**Inställning**|**Varna användarna innan du öppnar bifogade filer med Office-filer**|
+|**Inställning**|**Varna användare innan bilagor till Office-filer öppnas**|
 |:-----|:-----|
-|Namn  <br/> |Förhindra automatisk vidarebefordring av e-post till externa domäner  <br/> |
-|Tillämpa den här regeln om...  <br/> |Avsändaren. . . är externa internt. . . Inom organisationen  <br/> |
-|Lägg till villkor  <br/> |Meddelandeegenskaper. . . Inkludera meddelandetypen. . . Automatisk vidarebefordring  <br/> |
-|Gör följande...  <br/> |Spärra meddelandet. . . avvisa meddelandet och innefatta en förklaring.  <br/> |
-|Ange meddelandetext  <br/> |Automatiskt vidarebefordra e-post utanför organisationen förhindras av säkerhetsskäl.  <br/> |
+|Namn  <br/> |Förhindra automatisk vidarebefordran av e-post till externa domäner  <br/> |
+|Använd den här regeln om...  <br/> |Avsändaren. . . är extern/intern. . . Inom organisationen  <br/> |
+|Lägg till villkor  <br/> |Meddelandeegenskaperna. . . inkludera meddelandetypen. . . Auto-Forward  <br/> |
+|Gör följande...  <br/> |Blockera meddelandet. . . avvisa meddelandet och inkludera en förklaring.  <br/> |
+|Ange meddelandetext  <br/> |Automatisk vidarebefordran av e-post utanför den här organisationen förhindras av säkerhetsskäl.  <br/> |
 
 
-## <a name="protect-your-email-from-phishing-attacks"></a>Skydda din e-post från nätfiskeattacker
+## <a name="protect-your-email-from-phishing-attacks"></a>Skydda din e-post mot phishing-attacker
 
-Om du har konfigurerat en eller flera anpassade domäner i Office 365 eller Microsoft 365-miljö kan konfigurera du skydd riktad mot nätfiske. Skydd mot nätfiske ATP, en del av Office 365 Advanced Threat Protection, kan du skydda din organisation från skadliga personifiering-baserade nätfiskeattacker och andra nätfiskeattacker. Om du inte har konfigurerat en anpassad domän, behöver du inte göra detta.
+Om du har konfigurerat en eller flera anpassade domäner för din Office 365-eller Microsoft 365-miljö kan du konfigurera riktat skydd mot nätfiske. ATP anti-phishing Protection, en del av Office 365 Advanced Threat Protection, kan hjälpa till att skydda din organisation från skadliga personifiering-baserade phishing-attacker och andra phishing-attacker. Om du inte har konfigurerat en anpassad domän behöver du inte göra detta.
   
-Vi rekommenderar att du börjar med detta skydd genom att skapa en princip för att skydda din viktigaste användare och din egen domän. 
+Vi rekommenderar att du börjar med det här skyddet genom att skapa en princip för att skydda dina viktigaste användare och din anpassade domän. 
 
   
-Titta på [den här korta videon utbildning](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)om du vill skapa en princip för anti-phishing ATP eller utför du följande steg:
+Om du vill skapa en anti-phishing-policy för ATP, titta på [den här korta utbildningsvideon](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)eller utför följande steg:
   
 1. Gå till [https://protection.office.com](https://protection.office.com). 
     
-2. I Office 365 säkerhet &amp; regelefterlevnadscentret, i den vänstra navigeringsrutan under **Threat management**väljer **principen**.
+2. I Office 365 Security &amp; regelefterlevnadscenter, i det vänstra navigeringsfönstret under **Threat Management**, Välj **princip**.
     
-3. Välj på sidan **principen** **ATP anti-phishing**.
+3. På sidan **princip** väljer du **ATP anti-phishing**.
     
-4. Välj **+ Skapa**på sidan **Anti-phishing** . Det startas en guide som vägleder dig genom att definiera anti-phishing-principen.
+4. På sidan **mot nätfiske** väljer du **+ skapa**. En guide startas som steg dig genom att definiera din anti-phishing-policy.
     
-5. Ange namn, beskrivning och inställningar för principen som rekommenderas i diagrammet nedan. Mer information finns i [Lär dig mer om ATP anti-phishing principalternativ](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
+5. Ange namn, beskrivning och inställningar för principen som rekommenderas i diagrammet nedan. Se [Lär dig mer om ATP anti-phishing principalternativ](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) för mer information. 
     
-6. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**efter behov.
+6. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**, efter behov.
     
 
-|**Inställningen eller alternativ**<br/>|**Rekommenderad inställning** <br/>|
+|**Inställning eller alternativ**<br/>|**Rekommenderad inställning** <br/>|
 |:-----|:-----|
 |Namn  <br/> |Domän och mest värdefulla kampanj personal  <br/> |
-|Beskrivning  <br/> |Kontrollera de viktigaste personal och vår domän inte är att personifiera.  <br/> |
-|Lägga till användare för att skydda  <br/> |Välj **Lägg till ett villkor mottagaren är +**. Skriv användarnamn eller ange e-postadressen kandidaten, chef för kampanjen och andra viktiga personalen. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda från personifiering.  <br/> |
-|Lägga till domäner för att skydda  <br/> |Välj **Lägg till ett villkor, mottagarens domän är +**. Ange anpassade domäner som är associerade med ditt Microsoft 365 abonnemang om du har definierat en. Du kan ange mer än en domän.  <br/> |
-|Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: Välj **omdirigera meddelandet till en annan e-postadress**och Skriv e-postadressen security administrator. till exempel *Alice<span><span>@contoso.com*.          Om e-post skickas av en personifierad domän: Välj **karantän meddelande**.  <br/> |
-|Postlåda intelligence  <br/> |Postlåda intelligence väljs som standard när du skapar en ny princip för anti-phishing. Lämna den här inställningen **på** för bästa resultat.  <br/> |
-|Lägga till betrodda avsändare och domäner  <br/> |Här kan du lägga till din egen domän eller i betrodda domäner.  <br/> |
-|Tillämpas på  <br/> |Välj **mottagarens domän är**. Markera **Välj**under **någon av dessa**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso.<span> <span>com*i listan och välj sedan **Lägg till**. Välj **klar**.  <br/> |
+|Beskrivning  <br/> |Se till att den viktigaste personalen och vår domän inte personieras.  <br/> |
+|Lägg till användare för att skydda  <br/> |Välj **+ Lägg till ett villkor, mottagaren är**. Skriv användarnamn eller ange e-postadressen till kandidaten, kampanj hanteraren och andra viktiga personal medlemmar. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> |
+|Lägg till domäner för att skydda  <br/> |Välj **+ Lägg till ett villkor, mottagar domänen är**. Ange den anpassade domänen som är associerad med din Microsoft 365-prenumeration, om du har definierat en. Du kan ange fler än en domän.  <br/> |
+|Välj åtgärder  <br/> |Om e-post skickas av en personiserad användare: Välj **omdirigera meddelande till en annan e-postadress**och skriv sedan e-postadressen till säkerhetsadministratören. till exempel *Alice<span><span>@contoso. com*.          Om e-post skickas av en personiserad domän: Välj **karantän meddelande**.  <br/> |
+|Postlåda intelligens  <br/> |Som standard väljs postlådeinformation när du skapar en ny policy mot nätfiske. Låt den här inställningen vara **på** för bästa resultat.  <br/> |
+|Lägga till betrodda avsändare och domäner  <br/> |Här kan du lägga till din egen domän eller andra betrodda domäner.  <br/> |
+|Tillämpas på  <br/> |Välj **mottagar domänen**. Välj **Välj**under **något av dessa**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso.<span> com <span>*, i listan och välj sedan **Lägg till**. Välj **klar**.  <br/> |
    
-Mer information finns i [Konfigurera Office 365 ATP anti-phishing principer](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Mer information finns [i ställa in Office 365 ATP anti-phishing principer](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
-## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Skydda dig mot skadliga bifogade filer och filer med ATP säkra bifogade filer
+## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Skydda mot skadliga bilagor och filer med ATP Safe bilagor
 
-Personer som regelbundet skicka ta emot och dela bifogade filer som dokument, presentationer, kalkylblad och mer. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig genom att bara titta på ett e-postmeddelande. Office 365 Advanced Threat Protection innehåller skydd för ATP säker bifogad fil, men detta skydd aktiveras inte som standard. Vi rekommenderar att du skapar en ny regel om du vill börja använda detta skydd. Detta skydd sträcker sig till filer i SharePoint, OneDrive och Microsoft-Teams.
+Personer skickar, tar emot och delar regelbundet bilagor, till exempel dokument, presentationer, kalkylark med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Office 365 Advanced Threat Protection innehåller skydd för ATP säker bifogad fil, men det här skyddet är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda det här skyddet. Det här skyddet omfattar filer i SharePoint, OneDrive och Microsoft Teams.
   
-Titta på [det här korta videoklippet](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)om du vill skapa en princip för säker bifogad fil ATP eller utför du följande steg:
+Om du vill skapa en säker bifogad princip för ATP, antingen titta på [den här korta videon](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller utför följande steg:
   
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. I Office 365 säkerhet &amp; regelefterlevnadscentret, i den vänstra navigeringsrutan under **Threat management**väljer **principen**.
+2. I Office 365 Security &amp; regelefterlevnadscenter, i det vänstra navigeringsfönstret under **Threat Management**, Välj **princip**.
     
-3. Välj på sidan principen **ATP säkra bifogade filer**.
+3. På sidan princip väljer du **ATP säkra bilagor**.
     
-4. På sidan säkra bifogade filer gäller detta skydd brett genom att markera kryssrutan **Aktivera ATP för SharePoint, OneDrive, och Microsoft team** . 
+4. På den säkra bilagor sidan, tillämpa det här skyddet i stort sett genom att markera kryssrutan **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** . 
     
-5. Välj **+** att skapa en ny princip. 
+5. Välj **+** om du vill skapa en ny princip. 
     
-6. Tillämpa inställningarna i följande tabell. 
+6. Använd inställningarna i följande tabell. 
     
-7. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**efter behov.
+7. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**, efter behov.
     
 
-|**Inställningen eller alternativ**|**Rekommenderad inställning** <br/>|
+|**Inställning eller alternativ**|**Rekommenderad inställning** <br/>|
 |:-----|:-----|
-|Namn  <br/> |Blockera aktuella och framtida e-postmeddelanden med identifierade skadlig programvara.  <br/> |
-|Beskrivning  <br/> |Blockera aktuella och framtida e-postmeddelanden och bifogade filer med identifierade skadlig programvara.  <br/> |
-|Spara bifogade filer malware okänt svar  <br/> |Välj **Block - Blockera aktuella och framtida meddelanden och bilagor med identifierade skadlig programvara**.  <br/> |
-|Dirigera om bilagan på identifiering  <br/> |Aktivera omdirigering (markerar du denna ruta) Ange administratörskontot eller en inställning av postlåda för karantän.          Gäller ovanstående urval om malware scanning för bifogade filer på grund av timeout eller fel uppstår (markerar du den här rutan).  <br/> |
-|Tillämpas på  <br/> |Den mottagande domänen är. . . Välj din domän.  <br/> |
+|Namn  <br/> |Blockera aktuella och framtida e-postmeddelanden med identifierad skadlig kod.  <br/> |
+|Beskrivning  <br/> |Blockera aktuella och framtida e-postmeddelanden och bilagor med identifierad skadlig kod.  <br/> |
+|Spara bilagor okänt malware svar  <br/> |Välj **blockera-blockera aktuella och framtida e-postmeddelanden och bilagor med identifierad skadlig kod**.  <br/> |
+|Omdirigera bifogad fil vid identifiering  <br/> |Aktivera omdirigering (Markera den här rutan) ange administratörskontot eller en postlådeinställning för karantän.          Tillämpa ovanstående val om malware skanning för bilagor timeout eller fel uppstår (Markera den här rutan).  <br/> |
+|Tillämpas på  <br/> |Mottagar domänen är. . . Välj din domän.  <br/> |
    
-Mer information finns i [Konfigurera Office 365 ATP anti-phishing principer](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Mer information finns [i ställa in Office 365 ATP anti-phishing principer](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
 
 
-## <a name="protect-against-phishing-attacks-with-atp-safe-links"></a>Skydda dig mot nätfiskeattacker med säkra ATP-länkar
+## <a name="protect-against-phishing-attacks-with-atp-safe-links"></a>Skydda mot phishing-attacker med ATP Safe Links
 
-Hackare dölja ibland skadliga webbplatser i länkar i e-post eller andra filer. Office 365 ATP Safe länkar (ATP Safe länkar), en del av Office 365 Advanced Threat Protection, hjälper dig att skydda din organisation genom att ge tid Klicka på kontroll av webbadresser (URL: er) i e-postmeddelanden och Office-dokument. Skydd definieras genom ATP Safe länkar principer.
+Hackare döljer ibland skadliga webbplatser i länkar i e-post eller andra filer. Office 365 ATP Safe länkar (ATP Safe Links), en del av Office 365 Advanced Threat Protection, kan hjälpa till att skydda din organisation genom att tillhandahålla tid-för-klick-verifiering av webbadresser (URL: er) i e-postmeddelanden och Office-dokument. Skydd definieras via ATP Safe Links-principer.
   
 Vi rekommenderar att du gör följande:
   
 - Ändra standardprincipen för att öka skyddet.
     
-- Lägga till en ny princip som riktar sig till alla mottagare i din domän.
+- Lägg till en ny princip riktad till alla mottagare i domänen.
     
-Titta på [den här korta videon utbildning](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)om du vill konfigurera ATP Safe länkar eller utför du följande steg:
+För att ställa in ATP Safe Links, titta på [denna korta utbildning video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), eller utföra följande steg:
   
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. I Office 365 säkerhet &amp; regelefterlevnadscentret, i den vänstra navigeringsrutan under **Threat management**väljer **principen**.
+2. I Office 365 Security &amp; regelefterlevnadscenter, i det vänstra navigeringsfönstret under **Threat Management**, Välj **princip**.
     
-3. Välj **Säker ATP-länkar**på sidan principen.
+3. På sidan princip väljer du **ATP Safe Links**.
     
 Så här ändrar du standardprincipen:
   
-1. Välj princip för **standard** på sidan säkra länkar under **principer som gäller för hela organisationen**. 
+1. Välj **standard** principen under **principer som gäller för hela organisationen**på sidan säkra länkar. 
     
-2. Markera **Office 365 ProPlus, Office för iOS och Android**under **inställningar som gäller för innehåll utom e-post**.
+2. Under **inställningar som gäller innehåll utom e-post**väljer du **Office 365 ProPlus, Office för iOS och Android**.
     
 3. Klicka på **Spara**. 
     
-Skapa en ny princip som riktar sig till alla mottagare i din domän:
+Så här skapar du en ny princip riktad till alla mottagare i domänen:
   
-1. På sidan säkra länkar under **principer som gäller för hela organisationen**, **+** att skapa en ny princip. 
+1. Klicka **+** på om du vill skapa en ny princip på sidan säkra länkar under **principer som gäller för hela organisationen**. 
     
-2. Tillämpa inställningarna som visas i följande tabell.
+2. Använd inställningarna som visas i följande tabell.
     
 3. Klicka på **Spara**. 
 
-|**Inställningen eller alternativ**|**Rekommenderad inställning** <br/>|
+|**Inställning eller alternativ**|**Rekommenderad inställning** <br/>|
 |:-----|:-----|
-|Namn  <br/> |Princip för säker länkar för alla mottagare i domänen  <br/> |
-|Välj åtgärden för okända skadliga URL: er i meddelanden  <br/> |Välj **på - URL: er ska skrivas om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken**.  <br/> |
-|Använd säkra bifogade filer ska sökas igenom nedladdningsbart innehåll  <br/> |Markera den här rutan.  <br/> |
-|Tillämpas på  <br/> |Den mottagande domänen är. . . Välj din domän.  <br/> |
+|Namn  <br/> |Princip för säkra Länkar för alla mottagare i domänen  <br/> |
+|Välj åtgärden för okända potentiellt skadliga webbadresser i meddelanden  <br/> |Välj **on-URLs kommer att skrivas om och kontrolleras mot en lista över kända skadliga länkar när användaren klickar på länken**.  <br/> |
+|Använd säkra bilagor för att skanna nedladdningsbart innehåll  <br/> |Markera den här rutan.  <br/> |
+|Tillämpas på  <br/> |Mottagar domänen är. . . Välj din domän.  <br/> |
    
-Mer information finns i [Office 365 ATP safe länkar](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).
+Mer information finns i [Office 365 ATP Safe Links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).
 
 ## <a name="go-to-intune-admin-center"></a>Gå till Intune administratörscenter
 
-1. Logga in på [Azure portal](https://portal.azure.com/).
+1. Logga in på [Azure Portal](https://portal.azure.com/).
 
-2. Markera **alla tjänster** och Skriv i *Intune* i **Sökrutan**.
+2. Välj **alla tjänster** och skriv i *Intune* i **sökrutan**.
 
-3. När resultatet visas klickar du på start nästa **Microsoft Intune** så att det blir en favorit och lätta att hitta senare.
+3. När resultatet visas klickar du på Start bredvid **Microsoft Intune** för att göra det till en favorit och lätt att hitta senare.
 
-Förutom administratörscenter, kan du använda Intune för att registrera och hantera enheter i din organisation. Mer information finns i [funktioner som metod för certifikatregistrering för Windows-enheter](https://docs.microsoft.com/intune/enrollment-method-capabs) och [registreringsalternativ för enheter som hanteras av Intune](https://docs.microsoft.com/intune/enrollment-options).
+Förutom administratörscenter kan du använda Intune för att registrera och hantera organisationens enheter. Mer information finns i [funktioner efter registreringsmetod för Windows-enheter](https://docs.microsoft.com/intune/enrollment-method-capabs) och [registreringsalternativ för enheter som hanteras av Intune](https://docs.microsoft.com/intune/enrollment-options).

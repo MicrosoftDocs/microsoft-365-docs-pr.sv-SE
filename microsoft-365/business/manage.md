@@ -8,34 +8,30 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Lär dig att hantera Microsoft 365 Business relaterade administrativa uppgifter, mobila enheter, Windows 10PCs och många aktiviteter.
-ms.openlocfilehash: 8cae8f580b8967eeafe8a22658fd95d41f22a43c
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Lär dig att hantera Microsoft 365 affärsrelaterade administratörsuppgifter, mobila enheter, Windows 10PCs och många sådana uppgifter.
+ms.openlocfilehash: 87ba4093a37c708fe405cd0876a53f8b9ae91567
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074249"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287984"
 ---
 # <a name="manage-microsoft-365-business"></a>Hantera Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Allmänna administrativa uppgifter i Microsoft 365 Business
 
-De flesta av [admin innehåll](/Office365/Admin/admin-home.md) för Office 365 för företag gäller även för Microsoft 365 Business.
+De flesta av [Administratörs innehållet](/Office365/Admin/admin-home.md) för Office 365 för företag gäller även för Microsoft 365 Business.
 
 - [Lägga till ytterligare användare i Microsoft 365 Business](add-users-m365b.md)
     
 - [Visa principer och enheter](view-policies-and-devices.md)
     
-- [Säkerhetsfunktionerna i Microsoft 365 Business](security-features.md)
+- [Säkerhets funktioner i Microsoft 365 Business](security-features.md)
     
 - [Hur mappar skyddsfunktioner i Microsoft 365 Business till Intune-inställningarna](map-protection-features-to-intune-settings.md)
     
@@ -47,7 +43,7 @@ I följande avsnitt finns information om hur du med hjälp av Microsoft 365 Busi
     
 - [Ange inställningar för appskydd för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md)
     
-    Se [Validera app skyddsinställningar på en Android- eller iOS-enhet](validate-settings-on-android-or-ios.md) så att det fungerade. 
+    Se [Validera inställningar för Appskydd på en Android-eller iOS-enhet](validate-settings-on-android-or-ios.md) för att kontrollera att detta fungerade. 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     

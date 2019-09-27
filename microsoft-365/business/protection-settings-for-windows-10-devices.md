@@ -14,22 +14,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Lär dig hur du skapar en princip för hantering av app och skydda arbete filer på Windows 10 enheter.
-ms.openlocfilehash: 670184a2e81721fb5cc063e854822e9b271164d9
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Lär dig hur du skapar en apphanteringsprincip och skyddar arbetsfiler på Windows 10-enheter.
+ms.openlocfilehash: 92cd3facbd3eabbfef674300abe0257c370294ea
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074619"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288424"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Ange programskyddsinställningar för Windows 10-enheter
 
@@ -39,13 +36,13 @@ Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter 
   
 1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Välj **enheter** på vänster navigeringsfält \> **principer** \> **Lägg till**.
+2. I det vänstra navigeringsfältet väljer **du Lägg till** **enhets** \> **principer** \> .
 
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Välj **Programhantering för Windows 10** under **Principtyp**.
     
-5. Välj **personlig** eller **Ägs av företaget**under **enhetstyp**.
+5. Välj antingen **personligt** eller **företagsägda**under **enhetstyp**.
     
 6. **Kryptera arbetsfiler** aktiveras automatiskt. 
     

@@ -1,5 +1,5 @@
 ---
-title: Översikt över ställs in
+title: Översikt över konfigurera
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -13,74 +13,71 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Översikt av stegen för Microsoft 365 Business.
-ms.openlocfilehash: ae7ed0aab36a6e759e0f0c1fbc3d3183273a284e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Översikt över konfigurera steg för Microsoft 365 Business.
+ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "35086396"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288584"
 ---
-# <a name="overview-of-setup"></a>Översikt över inställningar
+# <a name="overview-of-setup"></a>Översikt över installationsprogrammet
 
-Kan du göra de flesta av stegen i guiden, men andra alternativ finns.
+De flesta inställningsstegen kan göras i installationsguiden, men de andra alternativen visas också.
 
 
 ## <a name="step-1-add-your-domain-and-users"></a>Steg 1: Lägg till din domän och användare
 
-   - **[Lägg till din domän](set-up.md#add-your-domain-to-personalize-sign-in)** (om du har köpt din domän under [registrera](sign-up.md)görs redan det här steget.)
+   - **[Lägg till din domän](set-up.md#add-your-domain-to-personalize-sign-in)** (om du köpte domänen under [registreringen](sign-up.md)är det här steget redan gjort.)
 
-    - **Lägga till användare**. Du kan göra detta på något av tre sätt:
+    - **Lägg till användare**. Du kan göra detta på något av de tre sätten:
         - I [guiden](set-up.md#add-users-in-the-wizard).
-        - Använda katalogsynkronisering för att [lägga till användare med hjälp av Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) om du har en lokal Active directory.
+        - Använd katalogsynkronisering för att [lägga till användare med hjälp av Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) om du har en lokal Active Directory.
         - Du kan också [lägga till användare senare](add-users-m365b.md) i administratörscenter.
-## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Steg 2: Ställa in IPSec-principer och konfigurera enheter 
+## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Steg 2: Konfigurera säkerhetsprinciper och konfigurera enheter 
 
-  - Använd [installationsguiden för](set-up.md#set-up-security-policies-and-device-configurations) att konfigurera enheten och säkerhetsprinciper. 
-  - Du kan också lägga till fler eller redigera dem senare i [administratörscenter](view-policies-and-devices.md) och [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
-  - Förutom att säkerhetsinställningarna i installationsguiden kan du öka säkerheten genom att lägga till följande inställningar:
+  - Använd [installationsguiden](set-up.md#set-up-security-policies-and-device-configurations) för att konfigurera enhets-och säkerhetsprinciper. 
+  - Du kan också lägga till fler eller redigera dem senare i [administratörscenter](view-policies-and-devices.md) och i [Intune-portalen](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
+  - Förutom säkerhetsinställningarna i installationsguiden kan du öka säkerheten genom att lägga till följande inställningar:
 
-      - **Skydd mot skadlig programvara för e-post**
-      - **Avancerade hot skydd (ATP) Safe länkar**
-      - **ATP-säkra bifogade filer**
+      - **E-malware skydd**
+      - **Säkra Länkar för avancerade hot Protection (ATP)**
+      - **ATP Safe bilagor**
       - **ATP anti-phishing**
       - **Exchange Online - arkivering**
-      - **Förhindra dataförlust (DLP)**
-      - **Azure informationsskydd (Plan1**)
+      - **Skydd av data förlust (DLP)**
+      - **Azure information Protection (Plan1**)
 
-          Att komma igång finns i [ställa in avancerade IPSec-principer](set-up-advanced-security.md).
+          [Ställ in avancerade säkerhetsprinciper](set-up-advanced-security.md)för att komma igång.
 
-        Se även [top 10 sätt att skydda verksamheten Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en översikt av bästa säkerhetspraxis.
+        Se även [de tio bästa sätten att skydda din Microsoft 365-verksamhet](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en färdplan med de främsta säkerhetsmetoderna.
 
-## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Steg 3: Konfigurera och hantera Windows 10 enheter
+## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Steg 3: Konfigurera och hantera Windows 10-enheter
 
-   När du ansluter en enhet med Windows 10 till Azure AD tillämpas principer som angetts i [steg 2](#step-2-set-up-security-policies-and-configure-devices) till den.
+   När du ansluter en Windows 10-enhet till Azure AD, de principer som du ställer in i [steg 2](#step-2-set-up-security-policies-and-configure-devices) tillämpas på den.
 
-   - Windows 10 Pro är en [nödvändig förutsättning](pre-requisites-for-data-protection.md) för Microsoft 365 företag, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro din prenumeration ger dig rätt att [Uppgradera till Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Använd [installationsguiden för](set-up.md#set-up-security-policies-and-device-configurations) att konfigurera principer för Windows 10 enheter.
+   - Windows 10 Pro är en [förutsättning](pre-requisites-for-data-protection.md) för Microsoft 365 företag, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro, din prenumeration berättigar dig till en [uppgradering till Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+    - Använd [installationsguiden](set-up.md#set-up-security-policies-and-device-configurations) för att konfigurera principer för Windows 10-enheter.
 
-## <a name="stes-4-install-office-365-business"></a>Stes 4: Installera Office 365 Business
-- Du kan automatiskt installera Office i Windows-enheter med hjälp av [installationsguiden](set-up.md#deploy-office-365-client-apps).
-- Automatiskt [installera Office](auto-install-or-uninstall-office.md) admin Center.
-- Låt användarna [installera Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) för Windows och enheter.
+## <a name="stes-4-install-office-365-business"></a>Stes 4: installera Office 365 Business
+- Du kan installera Office automatiskt på Windows-enheter med hjälp av [installationsguiden](set-up.md#deploy-office-365-client-apps).
+- [Installera Office](auto-install-or-uninstall-office.md) automatiskt från administratörscenter.
+- Låt användarna [installera Office-appar](https://docs.microsoft.com/office365/admin/setup/install-applications) för Windows och enheter.
      
-## <a name="advanced"></a>Avancerad
-- **Använda Autopilot för att skapa nya enheter**
+## <a name="advanced"></a>Avancerade
+- **Använda autopilot för att ställa in nya enheter**
             
-     Du kan använda [Windows Autopilot](add-autopilot-devices-and-profile.md) före automatiskt konfigurera **nya** Windows 10-enheter för en användare, men kan det vara enklare att få en [partner](https://www.microsoft.com/solution-providers/search) som kan göra detta åt dig. Du kan också gå till [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) och be en expert moln teknik skapa nya enheter du köper du.
+     Du kan använda [Windows autopilot](add-autopilot-devices-and-profile.md) för att automatiskt förkonfigurera **nya** Windows 10-enheter för en användare, men det kan vara enklare att få en [partner](https://www.microsoft.com/solution-providers/search) som kan göra detta åt dig. Du kan också gå till [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598) och be en expert på molnteknik att ställa in nya enheter som du köper åt dig.
 
 - **Komma åt lokala resurser**
 
-     - Om organisationen använder Windows Server Active Directory på lokaler, kan du ställa in Microsoft 365 Business att skydda din Windows 10-enheter, men fortfarande åtkomst till lokala resurser som kräver autentisering med lokala. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business](manage-windows-devices.md) att ställa in. Detta är den bästa metoden och enheter i det här tillståndet kallas Hybrid Azure AD anslutna enheter.
+     - Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business](manage-windows-devices.md) för att konfigurera detta. Det här är den bästa metoden och enheter i det här tillståndet kallas hybrid Azure AD-anslutna enheter.
 
-    - Om ditt företag har en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare), du kan ge din Azure AD-anslutna enheter åtkomst till dessa resurser genom att följa instruktionerna här: [Access lokal resurser från en Azure AD-ansluten enhet i Microsoft 365 Business](access-resources.md).
+    - Om ditt företag har en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare), kan du ge dina Azure AD-anslutna enheter åtkomst till dessa resurser genom att följa stegen här: [åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business](access-resources.md).
 
   

@@ -10,22 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig att konfigurera Microsoft 365 Business.
-ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 52e3167986bb7ed835762540e8076a3b9b2a0b56
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074309"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287644"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Komma igång med Microsoft 365 Business
 
@@ -43,13 +39,13 @@ Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fle
     
 ## <a name="set-up-microsoft-365-business"></a>Konfigurera Microsoft 365 Business
 
- **Översikt över Microsoft 365 Business Suite ställa in**
+ **Översikt över Microsoft 365 Business Suite-uppsättningen**
   
-Följande diagram beskriver hur administratörer konfigurera Microsoft 365 Business. Dessutom beskrivs stegen för att förbereda Windows-datorer för Microsoft 365 Business. Du kan också lägga till nya enheter i administrationscentret för Microsoft 365 Business med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda AutoPilot för att installera och förkonfigurera nya enheter och på så sätt göra dem klara att användas i produktionen så snart en användare loggar in med sina Microsoft 365 Business-autentiseringsuppgifter.
+I följande diagram beskrivs hur administratörer har konfigurerat Microsoft 365 Business. Dessutom beskrivs stegen för att förbereda Windows-datorer för Microsoft 365 Business. Du kan också lägga till nya enheter i administrationscentret för Microsoft 365 Business med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda AutoPilot för att installera och förkonfigurera nya enheter och på så sätt göra dem klara att användas i produktionen så snart en användare loggar in med sina Microsoft 365 Business-autentiseringsuppgifter.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
   
-### <a name="1-set-up-microsoft-365-business-admin"></a>1: ställa in Microsoft 365 Business (Admin)
+### <a name="1-set-up-microsoft-365-business-admin"></a>1: Konfigurera Microsoft 365 Business (admin)
 
 Logga in på [administrationscentret för Microsoft 365 Business](https://portal.office.com/adminportal/home) med dina autentiseringsuppgifter som global administratör, och följ instruktionerna nedan för att konfigurera Microsoft 365 Business. 
   
@@ -59,27 +55,27 @@ Logga in på [administrationscentret för Microsoft 365 Business](https://portal
     
 2. [Konfigurera Microsoft 365 Business med hjälp av installationsguiden](set-up.md)
     
-    Om du **flyttar permanent från en lokal Active Directory till molnet**, du kan antingen lägga till användarna manuellt i Microsoft 365 Business administratörscenter med hjälp av guiden eller kan du göra en enstaka synkronisering med Azure AD Connect. Du kan göra det på två sätt: 
+    Om du **flyttar permanent från en lokal Active Directory till molnet**, kan du antingen lägga till dina användare manuellt i Microsoft 365 Business Admin Center med hjälp av installationsguiden eller du kan göra en engångs synkronisering med Azure AD Connect. Du kan göra det på två sätt: 
     
-  - Om du har en Exchange 2010, Exchange 2013 och 2016 för Exchange server, kan du [Använda Minimal Hybrid snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Stegen för minimal hybridkonfiguration omfattar en engångssynkronisering av användare till Azure AD samt e-postmigrering från lokala resurser till molnet. När e-postmigreringen är klar inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
+  - Om du också har en server med Exchange 2010, Exchange 2013 eller Exchange 2016 kan du [använda minimal hybrid för att snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Stegen för minimal hybridkonfiguration omfattar en engångssynkronisering av användare till Azure AD samt e-postmigrering från lokala resurser till molnet. När e-postmigreringen är klar inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
     
   - Använd Office 365-guiden för katalogsynkronisering för att synkronisera användarna till molnet. Följ stegen i [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) för att slutföra processen. När du har synkroniserat användarna med molnet måste du [Turn off directory synchronization for Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Du måste också ge var och en av användarna som har lagts till på det här sättet en licens för Microsoft 365 Business. Du kan göra detta i [installationsguiden](set-up.md)eller [tilldela licenser till användare i Office 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    Du måste också ge var och en av användarna som har lagts till på det här sättet en licens för Microsoft 365 Business. Du kan göra detta i [installationsguiden](set-up.md)eller i [tilldela licenser till användare i Office 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
     
-### <a name="2-prepare-mobile-devices"></a>2: förbereda för mobila enheter
+### <a name="2-prepare-mobile-devices"></a>2: Förbered mobila enheter
 
-Följ anvisningarna i[Konfigurera mobila enheter för Microsoft 365 Business användare](set-up-mobile-devices.md) att installera Office apps på enheter och se till att de är skyddade med Microsoft 365 Business. 
+Följ stegen i[Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) att installera Office-appar på enheter och se till att de skyddas av Microsoft 365 Business. 
   
-### <a name="3-prepare-pcs"></a>3: förbereda datorer
+### <a name="3-prepare-pcs"></a>3: Förbered datorer
 
-Administratörer kan före Välj inställningar för nya enheter Windows 10-datorer med hjälp av [Windows AutoPilot](add-autopilot-devices-and-profile.md). Användare kan ställa in sina befintliga eller nya Windows 10-enheter genom att följa instruktionerna i det här avsnittet: [Konfigurera Windows-datorer för Microsoft 365 företagsanvändare](set-up-windows-devices.md). För befintliga enheter kan användare också **Om du vill**[Flytta filerna till OneDrive för företag](move-files-to-onedrive.md). De kan också använda verktyg från tredje part för att flytta filer som hör till Windows-profil till OneDrive.
+Administratörer kan i förväg välja inställningar för nya enheter Windows 10-datorer med hjälp av [Windows autopilot](add-autopilot-devices-and-profile.md). Användare kan konfigurera sina befintliga eller nya Windows 10-enheter genom att följa stegen i det här avsnittet: [Konfigurera Windows-datorer för Microsoft 365 företagsanvändare](set-up-windows-devices.md). För befintliga enheter kan **användare också**[Flytta filer till OneDrive för företag](move-files-to-onedrive.md). De kan också använda verktyg från tredje part för att flytta filer som är associerade med Windows-profil till OneDrive.
   
-Om organisationen använder Windows Server Active Directory på lokaler, kan du ställa in Microsoft 365 Business att skydda din Windows 10-enheter, men fortfarande åtkomst till lokala resurser som kräver autentisering med lokala. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business](manage-windows-devices.md) att ställa in. Detta är den bästa metoden och enheter i det här tillståndet kallas **Hybrid Azure AD anslutna enheter**. 
+Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business](manage-windows-devices.md) för att konfigurera detta. Det här är den bästa metoden och enheter i det här tillståndet kallas **hybrid Azure AD-anslutna enheter**. 
   
-Om du behåller en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare), du kan ge din **Azure AD-anslutna enheter** åtkomst till dessa resurser genom att följa instruktionerna här: [Access lokal resurser från en Azure AD-ansluten enhet i Microsoft 365 Business](access-resources.md).
+Om du behåller en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare), kan du ge dina **Azure AD-anslutna enheter** åtkomst till dessa resurser genom att följa stegen här: [åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business](access-resources.md).
   
-När du har ställt in Windows 10-datorer kan du [installera Office automatiskt](auto-install-or-uninstall-office.md) till enheter. 
+När du har konfigurerat Windows 10-datorer kan du [automatiskt installera Office](auto-install-or-uninstall-office.md) på enheterna. 
   
 ## <a name="contact-support"></a>Kontakta supporten
 
@@ -87,9 +83,9 @@ När du har ställt in Windows 10-datorer kan du [installera Office automatiskt]
   
 - Kontakta din partner.
     
-- Som en Microsoft 365 Business-administratör har du åtkomst till supportteamet kunden ** [Kontakta support för business-produkter - Admin-hjälp](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Som Microsoft 365 Business admin har du tillgång till vårt kundsupportteam, ** [kontakta supporten för företags produkter-admin hjälp](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="related-topics"></a>Närliggande information
+## <a name="related-topics"></a>Närliggande ämnen
 [Microsoft 365 Business dokumentation och resurser](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [Hantera Microsoft 365 Business](manage.md)[Migrera till Microsoft 365 Business](migrate-to-microsoft-365-business.md)

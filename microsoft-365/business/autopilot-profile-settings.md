@@ -15,23 +15,19 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: AutoPilot profiler hjälper dig att styra hur Windows installeras på användarens enheter. Profilerna innehåller standard och valfria inställningar som att hoppa över installationen av Cortana.
-ms.openlocfilehash: adc8112861b67fd96a91ff24dc155aeb0c394532
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Autopilotprofiler hjälper dig att styra hur Windows installeras på användarenheter. Profilerna innehåller standardinställningar och valfria inställningar som hoppa över Cortana-installation.
+ms.openlocfilehash: cd66627943301f4a4f2410bafeff6074919ec29d
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071869"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287484"
 ---
 # <a name="about-autopilot-profile-settings"></a>Om AutoPilot-profilinställningar
 
@@ -44,7 +40,7 @@ Du kan styra hur Windows installeras på användarenheter med hjälp av AutoPilo
 |**Inställning**|**Beskrivning**|
 |:-----|:-----|
 |Hoppa över Cortana, OneDrive och OEM-registrering  <br/> |Hoppar över installationen av konsumentappar som Cortana och personliga OneDrive-konton. Enhetens användare kan installera dem senare om användaren är lokal administratör på enheten. OEM-registreringen hoppas över eftersom enheten hanteras av Microsoft 365 Business.  <br/> |
-|Inloggning med företagets varumärke  <br/> |Om ditt företag har en [Lägg till företagets varumärke till sidan Office 365 Logga In](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), få enhet användare som erfarenheter när du loggar in.  <br/> |
+|Inloggning med företagets varumärke  <br/> |Om ditt företag har en [Lägg till ditt företag branding till Office 365 Logga in sidan](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), användaren får den upplevelsen när du loggar in.  <br/> |
 |Automatisk MDM-registrering med konfigurerade AAD-konton  <br/> |Användaridentiteten hanteras av Azure Active Directory och användarna loggar in i Windows och Office 365 med sina autentiseringsuppgifter för Microsoft 365 Business.  <br/> |
    
  **Valfria inställningar**
