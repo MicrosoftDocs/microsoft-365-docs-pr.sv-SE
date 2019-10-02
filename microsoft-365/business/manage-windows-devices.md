@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Läs om hur du aktiverar Microsoft 365 för att skydda lokala AD-anslutna Windows 10-enheter.
-ms.openlocfilehash: d1dbfc6a35d54db653ae0f911fad05ac2ce0a993
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 452e884f952a4b2c2e87148bb7203ed48a48d944
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288044"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37376104"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Aktivera domänanslutna Windows 10-enheter för hantering i Microsoft 365 Business
 
@@ -37,9 +37,9 @@ I följande video beskrivs stegen för hur du ställer in detta för det vanliga
 
 Innan du synkroniserar dina användare och datorer från den lokala Active Directory-domänen, granska [Förbered för katalogsynkronisering till Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). I synnerhet:
 
-   - Se till att inga dubbletter finns i din katalog för följande attribut: **mail**, **proxyAddresses**och **userPrincipalName**. Dessa värden ska vara unika och eventuella dubbletter bör tas bort..
+   - Se till att inga dubbletter finns i din katalog för följande attribut: **mail**, **proxyAddresses**och **userPrincipalName**. Dessa värden ska vara unika och eventuella dubbletter ska tas bort.
    
-   - Vi rekommenderar att attributet **userPrincipalName** (UPN) för varje lokalt användarkonto har konfigurerats för att matcha den primära e-postadressen som motsvarar den licensierade Microsoft 365-användaren. Till exempel *Mary. Shelley @<span>contoso.<span> com* i stället för *Mary @ contoso. local*
+   - Vi rekommenderar att attributet **userPrincipalName** (UPN) för varje lokalt användarkonto har konfigurerats för att matcha den primära e-postadressen som motsvarar den licensierade Microsoft 365-användaren. Till exempel *Mary.Shelley@contoso.com* i stället för *Mary @ contoso. local*
    
    - Om Active Directory-domänen slutar i ett icke-dirigerbart suffix som *. local* eller *. LAN*, i stället för ett Internet dirigerbara suffix som *. com* eller *. org*, måste du justera UPN-suffixet för de lokala användarkontona först enligt beskrivningen i [Förbered en icke-dirigerbar domän för katalogsynkronisering](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
