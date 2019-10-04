@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
-ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 5009379d6a5d8c3a692799aa7c0f137dae1482fd
+ms.sourcegitcommit: 492f03a2c83e36846602fced396c8f8d32315c85
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288124"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37398918"
 ---
 # <a name="increase-threat-protection"></a>Öka skyddet mot hot
 
@@ -146,8 +146,6 @@ Om du vill skapa en anti-phishing-policy för ATP, titta på [den här korta utb
 |Postlåda intelligens  <br/> |Som standard väljs postlådeinformation när du skapar en ny policy mot nätfiske. Låt den här inställningen vara **på** för bästa resultat.  <br/> |
 |Lägga till betrodda avsändare och domäner  <br/> |Här kan du lägga till din egen domän eller andra betrodda domäner.  <br/> |
 |Tillämpas på  <br/> |Välj **mottagar domänen**. Välj **Välj**under **något av dessa**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso.<span> com <span>*, i listan och välj sedan **Lägg till**. Välj **klar**.  <br/> |
-   
-Mer information finns [i ställa in Office 365 ATP anti-phishing principer](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Skydda mot skadliga bilagor och filer med ATP Safe bilagor
 
