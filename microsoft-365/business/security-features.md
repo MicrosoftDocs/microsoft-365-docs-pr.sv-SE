@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som följer med Microsoft 365 Business.
-ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c0c37b09fd0bb0218864b6bc97aa127feae1ff16
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288464"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453985"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 funktioner för Företagssäkerhet och efterlevnad
 
@@ -98,9 +98,9 @@ Din Microsoft 365 Business-prenumeration innehåller funktioner som hjälper dig
     
     Med Exchange Online-Arkiveringslicens kan meddelanden enkelt arkiveras med kontinuerlig säkerhetskopiering. Den lagrar alla användares e-postmeddelanden, inklusive borttagna objekt, om de behövs senare för upptäckt eller återställning. Dessutom kan du använda olika bevarandeprinciper för att bevara e-data för rättstvister håller, eDiscovery eller för att uppfylla efterlevnadskrav.
     
-- **[Azure information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
-    
-    Informationsskydd hjälper dig att kontrollera åtkomsten till känslig information i e-post och dokument med kontroller som "vidarebefordra inte" och "Kopiera inte". Du kan också klassificera känslig information som "konfidentiell" och ange hur sekretessbelagd information kan delas utanför och inom företaget. Kryptering i företagsklass är lätt att använda för e-post och dokument för att hålla din information privat. Microsoft 365 Business innehåller alla funktioner i [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Du kan också installera Azure information Protection-klienttillägget för Office-appar. Mer information finns i [Azure information Protection-klientens Administratörsguide](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+- **[Markera som känsligt](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+
+   Microsoft 365 Business innehåller alla funktioner i [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Med den här planen kan du skapa **känslighets etiketter**som låter dig styra åtkomsten till känslig information i e-post och dokument med kontroller som "vidarebefordra inte" och "Kopiera inte". Du kan också klassificera känslig information som "konfidentiell" och ange hur sekretessbelagd information kan delas utanför och inom företaget. Kryptering i företagsklass är lätt att använda för e-post och dokument för att hålla din information privat. Du kan också installera Azure information Protection-klienttillägget för Office-appar. Mer information finns i [Azure information Protection Unified etikettering klienten](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). För känslighets etiketter installerar du **AzInfoProtection_UL. exe**.
 
 Du kan hantera dessa funktioner i säkerhets &amp; regelefterlevnadscenter och Intune administratörscenter. Med tiden kommer de förenklade kontrollerna att läggas till i Microsoft 365 Business Admin Center.
   

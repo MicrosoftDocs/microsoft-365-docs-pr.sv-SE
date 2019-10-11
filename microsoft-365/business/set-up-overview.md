@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Översikt över konfigurera steg för Microsoft 365 Business.
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288584"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440546"
 ---
 # <a name="overview-of-setup"></a>Översikt över installationsprogrammet
 
@@ -41,7 +41,7 @@ De flesta inställningsstegen kan göras i installationsguiden, men de andra alt
         - Du kan också [lägga till användare senare](add-users-m365b.md) i administratörscenter.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Steg 2: Konfigurera säkerhetsprinciper och konfigurera enheter 
 
-  - Använd [installationsguiden](set-up.md#set-up-security-policies-and-device-configurations) för att konfigurera enhets-och säkerhetsprinciper. 
+  - Använd [installationsguiden](set-up.md#protect-data-and-devices) för att konfigurera enhets-och säkerhetsprinciper. 
   - Du kan också lägga till fler eller redigera dem senare i [administratörscenter](view-policies-and-devices.md) och i [Intune-portalen](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - Förutom säkerhetsinställningarna i installationsguiden kan du öka säkerheten genom att lägga till följande inställningar:
 
@@ -62,7 +62,7 @@ De flesta inställningsstegen kan göras i installationsguiden, men de andra alt
    När du ansluter en Windows 10-enhet till Azure AD, de principer som du ställer in i [steg 2](#step-2-set-up-security-policies-and-configure-devices) tillämpas på den.
 
    - Windows 10 Pro är en [förutsättning](pre-requisites-for-data-protection.md) för Microsoft 365 företag, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro, din prenumeration berättigar dig till en [uppgradering till Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Använd [installationsguiden](set-up.md#set-up-security-policies-and-device-configurations) för att konfigurera principer för Windows 10-enheter.
+    - Använd [installationsguiden](set-up.md#protect-data-and-devices) för att konfigurera principer för Windows 10-enheter.
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: installera Office 365 Business
 - Du kan installera Office automatiskt på Windows-enheter med hjälp av [installationsguiden](set-up.md#deploy-office-365-client-apps).

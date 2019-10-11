@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Läs om hur du konfigurerar Microsoft 365 Business.
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288504"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440615"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business i installationsguiden
 
@@ -44,7 +44,7 @@ När du köper Microsoft 365 Business har du möjlighet att använda en domän s
     > [!IMPORTANT]
     > Om du har köpt en domän under registreringen kommer du inte att se **Lägg till ett domän** steg här. Gå till [Lägg till användare](#add-users-and-assign-licenses) i stället.
 
-    ![Välj Lägg till en domän.](media/addadomainadmincenter.png)
+    ![Välj Gå till inställningar.](media/gotosetupinadmincenter.png)
     
 3. I guiden anger du det domännamn du vill använda (som contoso.com).
 
@@ -70,7 +70,9 @@ Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 
 
 1. Om din Microsoft 365 Business-prenumeration har befintliga användare (till exempel om du har använt Azure AD Connect), får du ett alternativ för att tilldela licenser till dem nu. Lägg till licenser till dem också.
 
-3. När du har lagt till användarna får du också ett alternativ för att dela autentiseringsuppgifter med de nya användare som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
+2. När du har lagt till användarna får du också ett alternativ för att dela autentiseringsuppgifter med de nya användare som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
+
+3. På den skapa team för din organisation, kan du välja att lägga till team och lägga till användare till dem. Du kan också göra det senare. Mer information finns i [skapa ett team för hela företaget](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
 
 4. Hoppa över steget att föra över e-postmeddelanden och välj **Nästa** på sidan **Migrera e-postmeddelanden**. 
 
@@ -86,14 +88,14 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
   
 1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om den inte gör det [ändrar du namnservrar till konfigurera Office 365 med alla domänregistratorn](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - Om du har befintliga DNS-poster, till exempel en befintlig webbplats, men DNS-värden har aktiverats för [domänanslutning](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), väljer du **Lägg till poster åt mig**. 
+    - Om du har befintliga DNS-poster, till exempel en befintlig webbplats, men DNS-värden har aktiverats för [domänanslutning](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), väljer du **Lägg till poster åt mig**. Godkänn alla standardinställningar på sidan **Välj dina onlinetjänster** och välj **Nästa**och välj **auktorisera** på din DNS-värdens sida.
     - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverat för domänanslutning), kommer du att vilja hantera dina egna DNS-poster för att se till att de befintliga tjänsterna förblir anslutna. Mer information finns i [grunderna om domäner](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
 
         ![Anslut din domän sida med jag ska hantera mina egna DNS-poster.](media/connectyourdomainpage.png)
 
 2. Följ stegen i guiden och e-post och andra tjänster kommer att ställas in för dig.
 
-### <a name="set-up-security-policies-and-device-configurations"></a>Ställ in säkerhetsprinciper och enhetskonfigurationer 
+### <a name="protect-data-and-devices"></a>Skydda data och enheter 
 
 De principer som du ställer in i guiden tillämpas automatiskt på en [säkerhetsgrupp](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) som kallas *alla användare*. Du kan också skapa ytterligare grupper för att tilldela principer till i administratörscenter.
 
@@ -113,7 +115,6 @@ De principer som du ställer in i guiden tillämpas automatiskt på en [säkerhe
 3. Du kan också välja att [automatiskt installera Office](install-office-on-windows-10-during-setup.md) på Windows 10-enheter.
 
     ![Skärmbild av Ställ in konfigurationssidan för Windows 10-enhet.](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>Distribuera Office 365-klientappar
