@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.
-ms.openlocfilehash: 45203d9af73d6ad3c963bd7d1d130052c46bd27b
-ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
+ms.openlocfilehash: 309dbf5bdba81bbf8ad0a9707c136a03c4a28586
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37376174"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575537"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validera inställningar för Appskydd på Android-eller iOS-enheter
 

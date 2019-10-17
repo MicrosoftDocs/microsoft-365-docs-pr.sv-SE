@@ -10,17 +10,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
-ms.openlocfilehash: 5009379d6a5d8c3a692799aa7c0f137dae1482fd
-ms.sourcegitcommit: 492f03a2c83e36846602fced396c8f8d32315c85
+ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37398918"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576027"
 ---
 # <a name="increase-threat-protection"></a>Öka skyddet mot hot
 

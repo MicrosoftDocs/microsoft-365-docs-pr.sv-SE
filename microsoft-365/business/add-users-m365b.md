@@ -10,18 +10,23 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Lär dig hur du lägger till nya användare, skyddar deras enheter och tilldelar roller i Microsoft 365 Business.
-ms.openlocfilehash: 9451be8a13c78230d0314e6d4ac74a6c9d7564ae
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0ea3a4845e46ed1d13abf966eea895aa394aebca
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287444"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574767"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Lägga till ytterligare användare i Microsoft 365 Business
 

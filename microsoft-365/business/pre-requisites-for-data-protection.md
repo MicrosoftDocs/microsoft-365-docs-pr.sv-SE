@@ -8,18 +8,22 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 'Känn till förutsättningarna för att konfigurera din organisation med Microsoft 365 Business. '
-ms.openlocfilehash: e4ba83ff66aa5cd9ddd7096948b3c1d02bc89c6a
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288674"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575847"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Förutsättningar för att skydda data på enheter med Microsoft 365 Business
 

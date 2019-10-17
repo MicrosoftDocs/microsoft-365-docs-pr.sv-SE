@@ -9,18 +9,22 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Lär dig hur du automatiskt installerar 32-bitars Office-apparna på Windows 10-datorer och håller dem uppdaterade.
-ms.openlocfilehash: fe1f946e4a216050e533604afa7c6e74e7b5980f
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 5b28c1e62d813c52b41ce8e7619c865cdf7690e2
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288404"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575827"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Förbereda Office-distribution genom Microsoft 365 Business
 
@@ -54,10 +58,10 @@ Följande tabell visar, beroende på startstatus, de åtgärder som användaren 
   
 |**Status vid start av Office-installationen**|**Åtgärd att vidta före Microsoft 365 Business Office-installationen**|**Slutstatus**|
 |:-----|:-----|:-----|
-|Ingen Office-programsvit installerad  <br/> |Ingen  <br/> |32-bitarsversionen av Office 2016 installeras med Klicka-och-kör  <br/> |
-|Befintlig 32-bitars Klicka-och-kör-version av Office (2016 eller tidigare) och inga fristående program  <br/> |Ingen  <br/> |Uppgraderad till den senaste 32-bitars Klicka-och-kör-versionen av Office 2016, enligt behov **\*** <br/> |
-|Befintlig 32-bitars Klicka-och-kör-version av Office och 32-bitars eller 64-bitars Klicka-och-kör-versioner av fristående Office-program (till exempel Visio och Project)  <br/> |Ingen  <br/> |Fristående program påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> |
-|Befintlig 32-bitars Klicka-och-kör-version av Office och eventuella 32-bitars eller 64-bitars (med undantag av 2016) fristående MSI Office-program  <br/> |Ingen  <br/> |Fristående program påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> ||||
+|Ingen Office-programsvit installerad  <br/> |Inga  <br/> |32-bitarsversionen av Office 2016 installeras med Klicka-och-kör  <br/> |
+|Befintlig 32-bitars Klicka-och-kör-version av Office (2016 eller tidigare) och inga fristående program  <br/> |Inga  <br/> |Uppgraderad till den senaste 32-bitars Klicka-och-kör-versionen av Office 2016, enligt behov **\*** <br/> |
+|Befintlig 32-bitars Klicka-och-kör-version av Office och 32-bitars eller 64-bitars Klicka-och-kör-versioner av fristående Office-program (till exempel Visio och Project)  <br/> |Inga  <br/> |Fristående program påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> |
+|Befintlig 32-bitars Klicka-och-kör-version av Office och eventuella 32-bitars eller 64-bitars (med undantag av 2016) fristående MSI Office-program  <br/> |Inga  <br/> |Fristående program påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> ||||
 |Alla befintliga 64-bitars Klicka-och-kör-versioner av Office  <br/> |Avinstallera 64-bitars Office-program om det går bra att ersätta dem med 32-bitars Office-program  <br/> |Om 64-bitarsprogram tas bort installeras 32-bitars Klicka-och-kör-versionen av Office 2016  <br/> |
 |En befintlig MSI-installation av Office 2016 med eller utan fristående program  <br/> |Avinstallera MSI-versionen av Office 2016.  <br/> |32-bitars Klicka-och-kör-version av Office 2016 installeras. Inga ändringar av fristående program  <br/> |
 |En befintlig MSI-installation av Office 2013 (eller tidigare) och/eller fristående Office-program  <br/> |Ingen  <br/> |32-bitars Klicka-och-kör-versionen av Office 2016 kan installeras sida vid sida med befintlig MSI-installation av Office (och fristående program)  <br/> |

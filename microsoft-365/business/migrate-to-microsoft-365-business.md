@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig hur du flyttar ditt företag till Microsoft 365 Business.
-ms.openlocfilehash: 5d0f5efa561e61703bed4b3edb09e13ac7848e28
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: ae9ca0fe97916fdae6104a6edbb04efba5d9299e
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288794"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575887"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Migrera till Microsoft 365 Business från Office 365 Business Premium
 

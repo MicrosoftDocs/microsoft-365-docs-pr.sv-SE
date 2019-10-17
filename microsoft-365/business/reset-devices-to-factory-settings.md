@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Lär dig hur du använder Microsoft 365 Business till fabriksåterställning dina Windows 10-enheter. '
-ms.openlocfilehash: 38a754d6e55210d8a4189fde445481868621bb7a
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 70e4fac2112db177587c04f58fbe8f8d0247ffa9
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288714"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575727"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Återställa Windows 10-enheter till fabriksinställningarna
 
