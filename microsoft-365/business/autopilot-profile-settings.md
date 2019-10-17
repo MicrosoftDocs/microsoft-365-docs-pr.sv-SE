@@ -15,38 +15,43 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Autopilotprofiler hjälper dig att styra hur Windows installeras på användarenheter. Profilerna innehåller standardinställningar och valfria inställningar som hoppa över Cortana-installation.
-ms.openlocfilehash: cd66627943301f4a4f2410bafeff6074919ec29d
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: eb0d9a95c796909d024db1d061aaeace7d07ed1b
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287484"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574587"
 ---
-# <a name="about-autopilot-profile-settings"></a><span data-ttu-id="e3364-104">Om AutoPilot-profilinställningar</span><span class="sxs-lookup"><span data-stu-id="e3364-104">About AutoPilot Profile settings</span></span>
+# <a name="about-autopilot-profile-settings"></a><span data-ttu-id="3a707-104">Om AutoPilot-profilinställningar</span><span class="sxs-lookup"><span data-stu-id="3a707-104">About AutoPilot Profile settings</span></span>
 
-## <a name="autopilot-profile-settings"></a><span data-ttu-id="e3364-105">AutoPilot-profilinställningar</span><span class="sxs-lookup"><span data-stu-id="e3364-105">AutoPilot profile settings</span></span>
+## <a name="autopilot-profile-settings"></a><span data-ttu-id="3a707-105">AutoPilot-profilinställningar</span><span class="sxs-lookup"><span data-stu-id="3a707-105">AutoPilot profile settings</span></span>
 
-<span data-ttu-id="e3364-p102">Du kan styra hur Windows installeras på användarenheter med hjälp av AutoPilot-profiler. Profilerna innehåller följande inställningar.</span><span class="sxs-lookup"><span data-stu-id="e3364-p102">You can control how Windows gets installed on user devices by using the AutoPilot profiles. The profiles contain the following settings.</span></span>
+<span data-ttu-id="3a707-p102">Du kan styra hur Windows installeras på användarenheter med hjälp av AutoPilot-profiler. Profilerna innehåller följande inställningar.</span><span class="sxs-lookup"><span data-stu-id="3a707-p102">You can control how Windows gets installed on user devices by using the AutoPilot profiles. The profiles contain the following settings.</span></span>
   
- <span data-ttu-id="e3364-108">**Standardfunktioner för AutoPilot (obligatoriskt) som konfigureras automatiskt:**</span><span class="sxs-lookup"><span data-stu-id="e3364-108">**AutoPilot default features (required) that are set automatically:**</span></span>
+ <span data-ttu-id="3a707-108">**Standardfunktioner för AutoPilot (obligatoriskt) som konfigureras automatiskt:**</span><span class="sxs-lookup"><span data-stu-id="3a707-108">**AutoPilot default features (required) that are set automatically:**</span></span>
   
-|<span data-ttu-id="e3364-109">**Inställning**</span><span class="sxs-lookup"><span data-stu-id="e3364-109">**Setting**</span></span>|<span data-ttu-id="e3364-110">**Beskrivning**</span><span class="sxs-lookup"><span data-stu-id="e3364-110">**Description**</span></span>|
+|<span data-ttu-id="3a707-109">**Inställning**</span><span class="sxs-lookup"><span data-stu-id="3a707-109">**Setting**</span></span>|<span data-ttu-id="3a707-110">**Beskrivning**</span><span class="sxs-lookup"><span data-stu-id="3a707-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e3364-111">Hoppa över Cortana, OneDrive och OEM-registrering</span><span class="sxs-lookup"><span data-stu-id="e3364-111">Skip Cortana, OneDrive and OEM registration</span></span>  <br/> |<span data-ttu-id="e3364-p103">Hoppar över installationen av konsumentappar som Cortana och personliga OneDrive-konton. Enhetens användare kan installera dem senare om användaren är lokal administratör på enheten. OEM-registreringen hoppas över eftersom enheten hanteras av Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="e3364-p103">Skips the installation of consumer apps like Cortana and personal OneDrive. The device user can install these later as long as he or she is a local admin on the device. The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business.</span></span>  <br/> |
-|<span data-ttu-id="e3364-115">Inloggning med företagets varumärke</span><span class="sxs-lookup"><span data-stu-id="e3364-115">Sign in experience with your company brand</span></span>  <br/> |<span data-ttu-id="e3364-116">Om ditt företag har en [Lägg till ditt företag branding till Office 365 Logga in sidan](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), användaren får den upplevelsen när du loggar in.</span><span class="sxs-lookup"><span data-stu-id="e3364-116">If your company has a [Add your company branding to Office 365 Sign In page](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), the device user will get that experience when signing in.</span></span>  <br/> |
-|<span data-ttu-id="e3364-117">Automatisk MDM-registrering med konfigurerade AAD-konton</span><span class="sxs-lookup"><span data-stu-id="e3364-117">MDM auto-enrollment with configured AAD accounts.</span></span>  <br/> |<span data-ttu-id="e3364-118">Användaridentiteten hanteras av Azure Active Directory och användarna loggar in i Windows och Office 365 med sina autentiseringsuppgifter för Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="e3364-118">The user identity will be managed by Azure Active directory, and the users will sign into Windows and Office 365 with their Microsoft 365 Business credentials.</span></span>  <br/> |
+|<span data-ttu-id="3a707-111">Hoppa över Cortana, OneDrive och OEM-registrering</span><span class="sxs-lookup"><span data-stu-id="3a707-111">Skip Cortana, OneDrive and OEM registration</span></span>  <br/> |<span data-ttu-id="3a707-p103">Hoppar över installationen av konsumentappar som Cortana och personliga OneDrive-konton. Enhetens användare kan installera dem senare om användaren är lokal administratör på enheten. OEM-registreringen hoppas över eftersom enheten hanteras av Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="3a707-p103">Skips the installation of consumer apps like Cortana and personal OneDrive. The device user can install these later as long as he or she is a local admin on the device. The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business.</span></span>  <br/> |
+|<span data-ttu-id="3a707-115">Inloggning med företagets varumärke</span><span class="sxs-lookup"><span data-stu-id="3a707-115">Sign in experience with your company brand</span></span>  <br/> |<span data-ttu-id="3a707-116">Om ditt företag har en [Lägg till ditt företag branding till Office 365 Logga in sidan](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), användaren får den upplevelsen när du loggar in.</span><span class="sxs-lookup"><span data-stu-id="3a707-116">If your company has a [Add your company branding to Office 365 Sign In page](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), the device user will get that experience when signing in.</span></span>  <br/> |
+|<span data-ttu-id="3a707-117">Automatisk MDM-registrering med konfigurerade AAD-konton</span><span class="sxs-lookup"><span data-stu-id="3a707-117">MDM auto-enrollment with configured AAD accounts.</span></span>  <br/> |<span data-ttu-id="3a707-118">Användaridentiteten hanteras av Azure Active Directory och användarna loggar in i Windows och Office 365 med sina autentiseringsuppgifter för Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="3a707-118">The user identity will be managed by Azure Active directory, and the users will sign into Windows and Office 365 with their Microsoft 365 Business credentials.</span></span>  <br/> |
    
- <span data-ttu-id="e3364-119">**Valfria inställningar**</span><span class="sxs-lookup"><span data-stu-id="e3364-119">**Optional settings:**</span></span>
+ <span data-ttu-id="3a707-119">**Valfria inställningar**</span><span class="sxs-lookup"><span data-stu-id="3a707-119">**Optional settings:**</span></span>
   
-|<span data-ttu-id="e3364-120">**Inställning**</span><span class="sxs-lookup"><span data-stu-id="e3364-120">**Setting**</span></span>|<span data-ttu-id="e3364-121">**Beskrivning**</span><span class="sxs-lookup"><span data-stu-id="e3364-121">**Description**</span></span>|
+|<span data-ttu-id="3a707-120">**Inställning**</span><span class="sxs-lookup"><span data-stu-id="3a707-120">**Setting**</span></span>|<span data-ttu-id="3a707-121">**Beskrivning**</span><span class="sxs-lookup"><span data-stu-id="3a707-121">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e3364-122">Hoppa över sekretessinställningar (av som standard)</span><span class="sxs-lookup"><span data-stu-id="e3364-122">Skip privacy settings (Off by default)</span></span>  <br/> |<span data-ttu-id="e3364-123">Om alternativet **På** har valts ser enhetens användare inte licensavtalet för enheten och Windows när användaren loggar in första gången.</span><span class="sxs-lookup"><span data-stu-id="e3364-123">If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.</span></span>  <br/> |
-|<span data-ttu-id="e3364-124">Tillåt inte användaren att bli lokal administratör</span><span class="sxs-lookup"><span data-stu-id="e3364-124">Don't allow the user to become the local admin</span></span>  <br/> |<span data-ttu-id="e3364-125">Om alternativet **På** har valts kan enhetens användare inte installera personliga appar som till exempel Cortana.</span><span class="sxs-lookup"><span data-stu-id="e3364-125">If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.</span></span>  <br/> |
+|<span data-ttu-id="3a707-122">Hoppa över sekretessinställningar (av som standard)</span><span class="sxs-lookup"><span data-stu-id="3a707-122">Skip privacy settings (Off by default)</span></span>  <br/> |<span data-ttu-id="3a707-123">Om alternativet **På** har valts ser enhetens användare inte licensavtalet för enheten och Windows när användaren loggar in första gången.</span><span class="sxs-lookup"><span data-stu-id="3a707-123">If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.</span></span>  <br/> |
+|<span data-ttu-id="3a707-124">Tillåt inte användaren att bli lokal administratör</span><span class="sxs-lookup"><span data-stu-id="3a707-124">Don't allow the user to become the local admin</span></span>  <br/> |<span data-ttu-id="3a707-125">Om alternativet **På** har valts kan enhetens användare inte installera personliga appar som till exempel Cortana.</span><span class="sxs-lookup"><span data-stu-id="3a707-125">If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.</span></span>  <br/> |
    

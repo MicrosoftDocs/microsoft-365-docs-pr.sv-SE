@@ -10,44 +10,49 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Läs om hur du köper Microsoft 365 Business från Microsoft Partner Center.
-ms.openlocfilehash: 27f0b291861959c7fe925f5c72698895999d65f8
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: cd13db200292f84ea736bbd27af69608e576e586
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287804"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574917"
 ---
-# <a name="get-microsoft-365-business"></a><span data-ttu-id="69f66-103">Skaffa Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="69f66-103">Get Microsoft 365 Business</span></span>
+# <a name="get-microsoft-365-business"></a><span data-ttu-id="78093-103">Skaffa Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="78093-103">Get Microsoft 365 Business</span></span>
 
-## <a name="get-microsoft-365-business-from-microsoft"></a><span data-ttu-id="69f66-104">Skaffa Microsoft 365 Business från Microsoft</span><span class="sxs-lookup"><span data-stu-id="69f66-104">Get Microsoft 365 Business from Microsoft</span></span>
+## <a name="get-microsoft-365-business-from-microsoft"></a><span data-ttu-id="78093-104">Skaffa Microsoft 365 Business från Microsoft</span><span class="sxs-lookup"><span data-stu-id="78093-104">Get Microsoft 365 Business from Microsoft</span></span>
 
-<span data-ttu-id="69f66-105">Om du inte har en partner men vill skaffa Microsoft 365 Business, kan du [köpa det här](https://www.microsoft.com/en-US/microsoft-365/business).</span><span class="sxs-lookup"><span data-stu-id="69f66-105">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
+<span data-ttu-id="78093-105">Om du inte har en partner men vill skaffa Microsoft 365 Business, kan du [köpa det här](https://www.microsoft.com/en-US/microsoft-365/business).</span><span class="sxs-lookup"><span data-stu-id="78093-105">If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
 
-<span data-ttu-id="69f66-106">Se [Registrera dig för Microsoft 365 Business](sign-up.md) för detaljerade instruktioner.</span><span class="sxs-lookup"><span data-stu-id="69f66-106">See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.</span></span>
+<span data-ttu-id="78093-106">Se [Registrera dig för Microsoft 365 Business](sign-up.md) för detaljerade instruktioner.</span><span class="sxs-lookup"><span data-stu-id="78093-106">See [sign up for Microsoft 365 Business](sign-up.md) for detailed instructions.</span></span>
 
-<span data-ttu-id="69f66-107">Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.</span><span class="sxs-lookup"><span data-stu-id="69f66-107">You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) to both buy Microsoft 365 Business and get set-up help.</span></span>
+<span data-ttu-id="78093-107">Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.</span><span class="sxs-lookup"><span data-stu-id="78093-107">You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) to both buy Microsoft 365 Business and get set-up help.</span></span>
   
-## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a><span data-ttu-id="69f66-108">Hämta Microsoft 365 Business från Microsoft-partnercenter</span><span class="sxs-lookup"><span data-stu-id="69f66-108">Get Microsoft 365 Business from Microsoft Partner Center</span></span>
+## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a><span data-ttu-id="78093-108">Hämta Microsoft 365 Business från Microsoft-partnercenter</span><span class="sxs-lookup"><span data-stu-id="78093-108">Get Microsoft 365 Business from Microsoft Partner Center</span></span>
 
-1. <span data-ttu-id="69f66-109">Logga in på [Microsoft-partnercenter](https://go.microsoft.com/fwlink/p/?linkid=849910) med hjälp av autentiseringsuppgifter som du skapade när du registrerar sig för tjänsten Leverantör av Microsoft-molnlösningar (CSP).</span><span class="sxs-lookup"><span data-stu-id="69f66-109">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
+1. <span data-ttu-id="78093-109">Logga in på [Microsoft-partnercenter](https://go.microsoft.com/fwlink/p/?linkid=849910) med hjälp av autentiseringsuppgifter som du skapade när du registrerar sig för tjänsten Leverantör av Microsoft-molnlösningar (CSP).</span><span class="sxs-lookup"><span data-stu-id="78093-109">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
     
-2. <span data-ttu-id="69f66-110">Välj Kunder på Partner-instrumentpanelen och välj sedan din kund eller lägg till en ny kund innan du skaffar Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="69f66-110">On the Partner Dashboard, choose Customers, then select your customer or add a new customer before you get Microsoft 365 Business.</span></span>
+2. <span data-ttu-id="78093-110">Välj Kunder på Partner-instrumentpanelen och välj sedan din kund eller lägg till en ny kund innan du skaffar Microsoft 365 Business.</span><span class="sxs-lookup"><span data-stu-id="78093-110">On the Partner Dashboard, choose Customers, then select your customer or add a new customer before you get Microsoft 365 Business.</span></span>
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. <span data-ttu-id="69f66-112">Gå till sidan **Prenumeration** för kunden, välj Lägg till prenumeration, välj alternativet Småföretag under Katalog och välj sedan **Microsoft 365 Business**.</span><span class="sxs-lookup"><span data-stu-id="69f66-112">On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.</span></span>
+3. <span data-ttu-id="78093-112">Gå till sidan **Prenumeration** för kunden, välj Lägg till prenumeration, välj alternativet Småföretag under Katalog och välj sedan **Microsoft 365 Business**.</span><span class="sxs-lookup"><span data-stu-id="78093-112">On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.</span></span>
     
-    <span data-ttu-id="69f66-p101">Välj antalet licenser du behöver (upp till 300). Om du har fler än 300 användare går du till [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) i stället.</span><span class="sxs-lookup"><span data-stu-id="69f66-p101">Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
+    <span data-ttu-id="78093-p101">Välj antalet licenser du behöver (upp till 300). Om du har fler än 300 användare går du till [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) i stället.</span><span class="sxs-lookup"><span data-stu-id="78093-p101">Select the number of licenses you need (up to 300). If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
     
     ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    <span data-ttu-id="69f66-116">Utför resten av stegen för att lägga till en ny kund, inklusive företagets namn.</span><span class="sxs-lookup"><span data-stu-id="69f66-116">Complete the rest of the steps for adding a new customer including the business name.</span></span>
+    <span data-ttu-id="78093-116">Utför resten av stegen för att lägga till en ny kund, inklusive företagets namn.</span><span class="sxs-lookup"><span data-stu-id="78093-116">Complete the rest of the steps for adding a new customer including the business name.</span></span>
     
 
 
