@@ -11,10 +11,10 @@ audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, Business
 ms.date: 06/08/2018
 ms.openlocfilehash: cc6cc924cf45fa19d7f91235515981b636abf77d
-ms.sourcegitcommit: bd17ee20da1685e5c660d5f99746c81c63a17b22
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "37141518"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft 365 Business
