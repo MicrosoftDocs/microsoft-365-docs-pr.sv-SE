@@ -10,45 +10,51 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: cc6cc924cf45fa19d7f91235515981b636abf77d
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
+ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37141518"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37611430"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft 365 Business
 
 ## <a name="general"></a>Allmänt
 
 ### <a name="what-is-microsoft-365-business"></a>Vad är Microsoft 365 Business? 
-Microsoft 365 är en integrerad lösning som sammanför klassens bästa produktivitetsverktyg, säkerhet och Enhetshanteringsfunktioner för små och medelstoraföretag. 
+Microsoft 365 är en integrerad lösning som sammanför klassens bästa produktivitetsverktyg, säkerhet och Enhetshanteringsfunktioner för små och medelstoraföretag. Den innehåller:
 
 **En uppsättning verktyg för affärsproduktivitet och samarbete** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher och Access 
-* Exchange, OneDrive, Skype för företag, Microsoft Teams, SharePoint 
-* Företagsappar från Office (bokningar, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Microsoft-fakturering<sup>[1](#footnote1)</sup>) 
+* Exchange, OneDrive, Skype för företag, Microsoft Teams och SharePoint. 
+* Företagsappar från Office (bokningar, MileIQ<sup>[1](#footnote1)</sup>). 
  
 **Funktioner för enhetshantering och säkerhet i företagsklass** 
-- Hjälper till att ge skydd mot externa hot som nätfiske & sofistikerad skadlig kod med Office 365 Advanced Threat Protection och Windows Defender Exploit Guard 
--  Hjälper till att kontrollera & hantera hur känslig information används och överförs med Office 365 principer för data förlust skydd (för att vara tillgängliga i sommar, 2018) och Azure information Protection-Plan 1 
--  Hjälper till att skydda, bevara och säkerhetskopiera dina data med Exchange Online-arkivering  
--   Appskydd för Office & andra mobilappar med Intunes Appskydd 
--  Enhetshantering för Windows 10-datorer, MacOS & mobiler-enheter med Intune-enhetshantering 
--  Konsekvent säkerhetskonfiguration mellan enheter-skydd av företagsdata mellan enheter-Windows Defender, alltid-på och aktuell 
+- Hjälper till att ge skydd mot externa hot som nätfiske & sofistikerad skadlig kod med Office 365 Advanced Threat Protection Plan 1 och Windows Defender Exploit Guard. 
+-  Hjälper till att kontrollera & hantera hur känslig information nås och överförs med Office 365 principer för data förlust skydd och Azure information Protection Plan 1. 
+-  Hjälper till att skydda, bevara och säkerhetskopiera dina data med Exchange Online-arkivering.  
+-   Appskydd för Office & andra mobilappar med Intunes Appskydd. 
+-  Enhetshantering för Windows 10-datorer, MacOS & mobiler-enheter med Intune-enhetshantering. 
+-  Identitetsskydd med multifaktorautentisering, lösenordsåterställning för självbetjäning och villkorlig åtkomst.
+-  Konsekvent säkerhetskonfiguration mellan enheter-skydd av företagsdata mellan enheter-Windows Defender, alltid-på och aktuell. 
  
  
 **Förenklad enhetsdistribution och Användarkonfiguration** 
 * En enda administratörskonsol för att konfigurera och hantera användare och enheter 
-* Automatisk installation av Office-appar på Windows 10-datorer 
-* Alltid uppdaterat Office + Windows 10 
-* Strömlinjeformad distribution av datorer med Windows AutoPilot
+* Automatisk installation av Office-appar på Windows 10-datorer. 
+* Alltid uppdaterat Office + Windows 10. 
+* Strömlinjeformad distribution av datorer med Windows AutoPilot.
 
-**Aktivera villkorlig åtkomst**
-- Microsoft 365 företagskunder kan aktivera villkorlig åtkomst via Azure Directory-inställningar i Azure Portal. Mer information om hur du konfigurerar principer för villkorlig åtkomst finns i artikeln [Vad är villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+**Övriga rättigheter** 
+- Microsoft 365 företagskunder har också tillgång till Windows Virtual Desktop och Office delade dator aktiveringsfunktioner. Läs [Microsoft 365 Business-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) om du vill veta mer. Se även [beskrivningen av Microsoft 365 Business Service](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### <a name="who-should-consider-adopting-microsoft-365-business"></a>Vem bör överväga att införa Microsoft 365 Business? 
-Microsoft 365 Business byggdes för små och medelstora kunder som har liten eller ingen IT-resurser på personal och vill ha bäst i klassen produktivitet och samarbete funktioner i Office 365 tillsammans med enhetshantering och säkerhetslösningar som skydda affärsdata. Microsoft 365 Business Customer är redo att flytta sin IT-verksamhet till molnet och är intresserad av att upprätthålla en proaktiv hållning för att skydda data på både företag och medarbetare ägda enheter.
+Microsoft 365 Business är en heltäckande, molnbaserad säkerhetslösning som gör att du kan:  
+- Försvara ditt företag mot avancerade cyberhot med sofistikerade phishing och Ransomware skydd. 
+- Kontrollera åtkomsten till känslig information med hjälp av kryptering för att hålla data från att oavsiktligt delas med någon som inte har behörighet att se den. 
+- Skydda de enheter som ansluter till ditt företag och håll dina data på iOS-, Android-, Windows-och Mac-enheter säkra och dina Windows-enheter uppdaterade.
+
+Microsoft 365 Business är helt integrerat med Office 365 för att ge dig en välbekant plats för administration, fakturering och 24x7-support. Den består av företags-grade teknik byggd för företag med mindre än 300 anställda. 
 
 ### <a name="how-can-i-get-microsoft-365-business-for-my-business"></a>Hur kan jag få Microsoft 365 Business för mitt företag? 
 Microsoft 365 Business kan köpas via en <a href="https://www.microsoft.com/solution-providers/search" target="_blank">Microsoft-partner</a> eller direkt från <a href="https://www.microsoft.com//microsoft-365/business" target="_blank">Microsoft</a>. När du väljer om du vill köpa direkt från Microsoft eller via en Microsoft-partner bör du överväga din personal kapacitet och vilja att underhålla en IT-infrastruktur. En Microsoft-partner kan hjälpa dig att distribuera och hantera din IT-infrastruktur, inklusive Microsoft-lösningar.
@@ -75,7 +81,11 @@ Om maskinvaran du kör idag kör Windows 7 Pro eller senare, uppfyller det sanno
 Befintliga Desktop (Win32) programkompatibilitet är stark i Windows 10, med de flesta befintliga program fungerar utan några ändringar. Kunder och deras betrodda IT-rådgivare bör läsa den rekommenderade programtest processen för <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10-kompatibilitet</a> och granska <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office systemkraven</a> för att säkerställa en smidig övergång till Microsoft 365 Business. 
 
 ### <a name="what-is-windows-10-business"></a>Vad är Windows 10 Business? 
-Windows 10 Business är en uppsättning funktioner för molntjänster och enhetshantering som kompletterar Windows 10 Pro och möjliggör centraliserad hantering och säkerhetskontroller i Microsoft 365 Business. Windows 10 Business levereras också med Windows AutoPilot, en tjänst som effektiviserar distributionen av nya Windows 10-datorer. Om du har enheter som är licensierade för Windows 7, 8 och 8,1 Professional, Microsoft 365 Business ger en uppgradering till Windows 10 Pro som är förutsättningen för att distribuera Windows 10 Business.
+Windows 10 Business är en uppsättning funktioner för molntjänster och enhetshantering som kompletterar Windows 10 Pro och möjliggör centraliserad hantering och säkerhetskontroller i Microsoft 365 Business.
+
+Fönstren 10 affär också kommer med säker premien Mikroskop försvara dragen lik kontrollerat broschyren tillträde och nätverken säkringen för spindelväv baserat tråden. Den innehåller också Windows AutoPilot, en tjänst som effektiviserar distributionen av nya Windows 10-datorer.
+
+Om du har enheter som är licensierade för Windows 7, 8 och 8,1 Professional, Microsoft 365 Business ger en uppgradering till Windows 10 Pro som är förutsättningen för att distribuera Windows 10 Business.
 > [!IMPORTANT]
 > Du måste ange den ursprungliga produktnyckeln när du uppgraderar, annars fungerar inte uppgraderingen. 
 
@@ -99,7 +109,7 @@ Microsoft har en mängd olika produktivitets-och säkerhets hanterings erbjudand
 
 **Office 365 Business Premium** ger förstklassig produktivitet med Office 365-appar och-tjänster, men omfattar inte funktionerna för programskydd och enhetshantering i Microsoft 365 Business.
 
-**Microsoft 365 Business** kombinerar Office 365-appar och-tjänster med hantering av mobilprogram och Windows 10 Pro för att aktivera fjärrhantering och skydda enheter mot virus och skadlig kod. Den innehåller en förenklad hanteringskonsol genom vilken enhets-och dataprinciper kan administreras. Många små och medelstoraföretag kan bäst betjänas med Microsoft 365 Business. 
+**Microsoft 365 Business** kombinerar Office 365-appar och-tjänster med avancerade säkerhetsfunktioner som hjälper dig att skydda ditt företag mot avancerade cyberhot, skydda dina data och hantera dina enheter. Den innehåller en förenklad hanteringskonsol genom vilken enhets-och dataprinciper kan administreras. Många små och medelstoraföretag kan bäst betjänas med Microsoft 365 Business. 
  
 **Microsoft 365 Enterprise** är en uppsättning licens planer som erbjuder ökade nivåer av efterlevnad och säkerhetshantering över Microsoft 365 Business och är utformade för företagskunder och de kunder som har över 300 användare. Dessutom tillhandahåller Microsoft 365 Enterprise-abonnemang ytterligare funktioner, bland annat Business Intelligence och analysverktyg.
 
@@ -137,18 +147,13 @@ Windows AutoPilot är en tjänst som effektiviserar distributionen av nya Window
 ## <a name="compatibility"></a>Kompatibilitet
 
 ### <a name="can-i-add-office-365-add-ons-to-microsoft-365-business"></a>Kan jag lägga till Office 365-tillägg till Microsoft 365 Business? 
-Alla tillägg som kan läggas till i Office 365 Business Premium kan läggas till i Microsoft 365 Business. Det innebär att du kan köpa Avancerat skydd mot hot, Office 365 Cloud App Security, avancerad efterlevnad, Hot Intelligence, MyAnalytics, PowerBI Pro och ljudkonferenser. 
+Alla tillägg som kan läggas till i Office 365 Business Premium kan läggas till i Microsoft 365 Business. Det innebär att du kan köpa Office 365 Cloud App Security, avancerad efterlevnad, Hot Intelligence, MyAnalytics, PowerBI Pro och ljudkonferenser. 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business"></a>Kan jag lägga till telefon system och samtalsabonnemang för Microsoft 365 Business? 
 Nej, telefon system och samtals plan är reserverade för kunder som har mer avancerade behov. Kunder som behöver dessa funktioner bör titta på Microsoft 365 Enterprise-erbjudanden. 
  
 ### <a name="can-microsoft-365-business-customers-use-windows-defender-advanced-threat-protection"></a>Kan Microsoft 365 företagskunder använda Windows Defender Advanced Threat Protection? 
 Nej, kunder som kräver Windows Defender Advanced Threat Protection behöver antingen Windows 10 Enterprise E5 eller Microsoft 365 Enterprise E5. 
- 
-
-
-### <a name="can-customers-create-hosted-windows-10-vms-with-a-microsoft-365-business-subscription"></a>Kan kunder skapa värdbaserade Windows 10-datorer med en Microsoft 365 Business-prenumeration? 
-Nej, kunder som kräver virtualisering ska köpa Windows 10 Enterprise eller en Microsoft 365 Enterprise-prenumeration.
 
 ## <a name="partner-opportunity"></a>Partner möjlighet
 
@@ -180,20 +185,11 @@ En Microsoft Cloud Solution Provider bör alltid sälja den plan som bäst passa
  
 ### <a name="some-of-my-customers-have-devices-that-are-not-genuine-will-microsoft-365-business-make-these-devices-genuine"></a>Några av mina kunder har enheter som inte är äkta; kommer Microsoft 365 företag att göra dessa enheter äkta? 
 Microsoft 365 företag gör inte en annars icke-äkta version av Windows, äkta. Microsoft 365 Business ger en uppgraderings förmån som gör att de kunder som kör äkta Windows 7, 8 eller 8,1 Pro att uppgradera till den senaste, äkta versionen av Windows 10 Pro. 
- 
-### <a name="what-support-is-available-to-csp-partners-for-the-microsoft-365-business-preview"></a>Vilken support är tillgänglig för CSP-partner för Microsoft 365 Business Preview? 
-Samma supportkanaler som finns tillgängliga för CSP-partner idag (Premier Support och Advanced supportprogram) har tränats på Microsoft 365-företag och är redo att ge partner support. 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>Vad är GDPR och hur hjälper Microsoft 365 Business kunder med sina efterlevnadskrav?
-Den allmänna data Skyddsförordningen (GDPR) är en omfattande ny sekretess lag som ger invånarna i Europeiska unionen (EU) större kontroll över sina "personuppgifter" och kräver att organisationer upprätthåller integriteten för dessa personuppgifter. GDPR kräver att organisationer som kontrollerar eller behandlar personuppgifter som är knutna till EU-medborgare endast använder dataprocessorer från tredje part som uppfyller kraven i GDPR för behandling av personuppgifter. I mars 2017 gjorde Microsoft tillgängliga kontraktsenliga garantier som ger dessa försäkringar. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina ytterligare GDPR-skyldigheter bör lära sig om avancerade efterlevnadsfunktioner och säkerhetsfunktioner som är tillgängliga som tillägg (t. ex. Azure information Protection, skydd mot data förlust, avancerade Skydd mot hot osv.) och i andra sviter (t. ex. Microsoft 365 Enterprise E5). Om du vill veta mer, besök [www.Microsoft.com/GDPR](https://www.microsoft.com/gdpr).
-
-
+Den allmänna data Skyddsförordningen (GDPR) är en omfattande ny sekretess lag som ger invånarna i Europeiska unionen (EU) större kontroll över sina "personuppgifter" och kräver att organisationer upprätthåller integriteten för dessa personuppgifter. GDPR kräver att organisationer som kontrollerar eller behandlar personuppgifter som är knutna till EU-medborgare endast använder dataprocessorer från tredje part som uppfyller kraven i GDPR för behandling av personuppgifter. I mars 2017 gjorde Microsoft tillgängliga kontraktsenliga garantier som ger dessa försäkringar. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina ytterligare GDPR-skyldigheter bör lära sig om de avancerade efterlevnads-och säkerhetsfunktioner som finns i Microsoft 365 Business (t. ex. Azure information Protection, data förlust Förebyggande, Avancerat skydd mot hot, etc.) och i andra sviter (t. ex. Microsoft 365 Enterprise E5). Om du vill veta mer, besök [www.Microsoft.com/GDPR](https://www.microsoft.com/gdpr).
 
 
 ## <a name="footnotes"></a>Fotnoter
 <sup><a name="footnote1">**1**</a></sup> <small>finns i USA, Storbritannien och Kanada.</small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>enheter som kör windows 7 eller 8,1 Pro är berättigade till en uppgradering till Windows 10 pro i Microsoft 365 Business Preview.</small>
- 
-
-
-
