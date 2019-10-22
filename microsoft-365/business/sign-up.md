@@ -19,45 +19,64 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du köper och registrerar dig för Microsoft 365 Business.
-ms.openlocfilehash: bc9f8f7bc29d63feaa4eb63962eff12c963a63b2
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 6f8a3c328cd688d331482070eb4d2722529a54f6
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575517"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628333"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrera dig för Microsoft 365 Business
 
-Om du är partner läser du [Skaffa microsoft 365 Business från Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+Om du vill veta vad Microsoft 365 Business innehåller kan du titta på en [kort video](https://support.office.com/article/901e2522-c2cf-4b8c-894e-f482cda3347a) och se [översikten](microsoft-365-business-overview.md). 
 
-Om du vill köpa Microsoft 365 Business Online går du till [Upptäck Microsoft 365 Business Advantage](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop) och väljer **Köp nu** under Microsoft 365 Business.
+Det finns tre sätt att få Microsoft 365 Business:
+- **Köp microsoft 365 Business och slutför din egen installation**: om du vill köpa Microsoft 365 Business Online [följer du stegen nedan](#sign-up-steps).
+- **För Microsoft-partner**: om du är partner läser du [skaffa Microsoft 365 Business från Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- **Få hjälp i en Microsoft Store**: gå till en [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store). Microsoft Stores kan hjälpa dig med frågor om våra planer, hjälpa dig att köpa en plan som passar dina affärsbehov och hjälpa dig att slutföra din installation.
 
-Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.
-
-## <a name="complete-the-sign-up-steps"></a>Slutför registreringsstegen
-
-Slutför följande steg när du har köpt Microsoft 365 Business.
-
-1. På **Välkommen, låt oss lära känna dig** sida ange den information som krävs. Observera att:
+**Behöver du något annat?** Du kan:
+- [Uppgradera din Office 365-plan till Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+- [Skaffa en kostnadsfri utvärderingsversion](https://go.microsoft.com/fwlink/p/?linkid=2102309) av Microsoft 365 Business i en månad.
+- [Registrera dig för Office 365 Business Premium](https://go.microsoft.com/fwlink/p/?LinkID=510935) om du behöver en plan med färre funktioner. Ta reda på vad varje affärsplan innehåller på [Products.Office.com](https://products.office.com/compare-all-microsoft-office-products-4-column?&activetab=tab:primaryr1).
+- [Anmäl dig till en hem-eller familjeprenumeration](https://products.office.com/compare-all-microsoft-office-products-4-column?&activetab=tab:primaryr1) om du inte köper ett företag. 
  
-    -  **Land eller regioner:** Detta avgör vilken tjänst du får och kan inte ändras senare.
-    - **Företagets e-postadress:** Ange din nuvarande e-postadress. Microsoft använder den här adressen för att motsvara dig om din Microsoft 365-prenumeration.
-    - **Företagsnamn** Vi visar ditt företagsnamn i administratörscenter. Det är här du hanterar Microsoft 365-användare, licenser och så vidare. Vi kommer också att inkludera den i alla SharePoint-webbplatsadresser.
 
-2. På sidan **skapa ditt användar-ID** :
+## <a name="sign-up-steps"></a>Registrera dig steg
 
-    - **Användarnamn**: Ange namnet (kallas ett alias) som du använder för din egen e-post i företaget. Robert Young kan till exempel använda RobY eller RobYoung som ett arbets-alias.
-    - **Ditt företag**: Ange ditt unika företagsnamn. Detta är det namn som din företags webbplats använder om du har en, och är också det namn du vill inkludera efter @-tecknet när du får ett företags-e-postmeddelande. Namnet kallas för en domän. Till exempel om ditt företag kallas contoso skidor, ange ContosoSkis efter @-tecknet.
-    - **Välj en domän**: om du redan äger ditt domännamn väljer du. onmicrosoft.com i rullgardinsmenyn så ber vi dig att ställa in den senare. Annars är det enkelt att köpa ett domännamn som representerar ditt företag. För att göra det, Välj den domän du föredrar från rullgardinsmenyn. Din fullständiga e-postadress kan till exempel vara *Teresa@ContosoSkis.net*. Vi meddelar dig genast om domännamnet är tillgängligt. Om det är det lägger vi till kostnaden för din domän till kostnaden för din Microsoft 365 Business-prenumeration. Den nya domänen kommer också att ställas in och redo för användning i Microsoft 365 om du köper den här. Mer information om domäner finns i [vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq).
-    
-        ![Skärmbild av skapa ditt användar-ID sida.](media/signinuserid.png)
+För att registrera dig och köpa Microsoft 365 för ditt företag, utför följande steg:
 
-3. Fyll i resten av fälten och välj **skapa mitt konto**.
-4. På **bevisa. you ' re. Inte. A. robot.** sida ange ett telefonnummer för att få en kod antingen via text eller ett samtal och välj **text mig** eller **Ring mig**, ange sedan verifieringskoden \> **Nästa**.
-5. På den **där kommer du att använda den här** sidan Ange din företagsadress. Den här informationen avgör vilka skatter du betalar och vilka prenumerationer som är tillgängliga. För mer information om skatter, se [vilken skatt kommer jag att debiteras?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
-1. Välj **Nästa**, granska din beställning och välj **Nästa** igen.
-1. På sidan **Hur vill du betala anger du** dina betalningsuppgifter och **lägger sedan order**.
-    Du kan sedan gå till [administratörscenter](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) för att slutföra din [uppsättning](set-up.md).
-
+1. På [sidan Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/business)väljer du **Visa planer & prissättning**. 
+2. På nästa sida, ta reda på månadskostnaden och eventuellt bläddra ner på sidan för att ta reda på mer om vad som ingår i Microsoft 365 Business. Välj **Köp nu**Under Microsoft 365 Business.
+3. På **tack för att du väljer Microsoft 365 företags** sida ange din information för att komma igång
+4. I **steg 1**anger du en e-postadress som du redan använder. Detta kan vara din nuvarande e-postadress för arbete eller en adress som du vill att Microsoft ska använda för att kommunicera med dig under installationen och skicka information om din faktura och förnyelser. Välj sedan, **Ställ in konto**.
+5. I **steg 2**anger du ditt namn, telefonnummer, företagsnamn och plats. Observera att ditt land eller din region bestämmer exakt vilka tjänster du får från Microsoft och inte kan ändras när du har slutfört det här steget. Välj **Nästa**.
     > [!NOTE]
-    > Om du i slutet av installationen väljer länken **gå till administratörscenter**, kommer du att tas direkt till den [Konfigurera](set-up.md) upplevelse.
+    > Vi visar ditt företagsnamn i administratörscenter. Det är här du hanterar Microsoft 365-användare, licenser och så vidare. Vi kommer också att inkludera den i alla interna (SharePoint) webbplats-URL: er.
+6. I **steg 3**:
+
+    1. Bevisa att du inte är en robot! Välj antingen **text me** eller **Ring mig** och ange ett nummer där vi kan nå dig. Välj **Skicka verifieringskod** så får du en text eller ett samtal direkt. Ange din kod och välj **Verifiera**.
+    2. Därefter besluta om att köpa ett nytt domännamn eller få en tillfällig:
+
+        - **Jag äger inte ett domännamn** 
+        
+            Om din e-postadress inte innehåller ditt företagsnamn och om du inte har en webbplats som använder ditt företagsnamn kan du enkelt köpa en domän nu. Välj, **köp ett nytt domännamn** och ange namnet på ditt företag. Om ditt företag till exempel heter *Contososkis*kan du prova att ange Contosokis.com, Contososkis.org eller Contososkis.BIZ. Välj sedan **Kontrollera tillgänglighet** för att se om den valda domänen är tillgänglig. Du kan prova flera alternativ innan du fattar ett beslut. Om ditt domännamn är tillgängligt meddelar vi dig kostnaden och fakturerar dig direkt med ditt nya abonnemang. 
+       
+            > [!TIP]
+            > Om du inte är säker på vilket domän tillägg du ska välja för den nya domänen (till exempel. com eller. org), se [köpa ett domännamn](https://docs.microsoft.com/office365/admin/get-help-with-domains/buy-a-domain-name)
+        
+        - **Jag är inte säker, eller jag äger ett domännamn redan** 
+        
+             Välj **Skaffa en Microsoft-domän för tillfället**. Detta kostar ingenting, och senare kan du få ett eget namn för ditt företag, eller ansluta till en du redan äger-vi visar dig hur.
+
+    3. Välj **Nästa** för att skapa ditt användar-ID och företagets e-postadress. Ange namnet (kallas även alias) som du vill använda. Robert Young kan till exempel använda RobY eller RobYoung som ett arbets-alias. Lägg till ett lösenord och välj **Registrera dig**. Anteckna ditt lösenord. Vi skickar ett e-postmeddelande till den adress du angav i steg 1 för att påminna dig om ditt användar-ID.
+7. I **steg 4**: 
+
+    1. Bestäm hur många personer i ditt företag som behöver en Microsoft 365-licens, eller bara lämna **antalet användare** som har angetts till 1 för tillfället och lägga till fler personer senare. 
+    2. Välj månatlig eller årlig fakturering, kontrollera totalkostnaden och välj **Nästa**. 
+    3. Lägg till dina kreditkortsuppgifter. Om din företagsadress inte matchar din kreditkortsadress behöver vi även din företagsadress. Din företagsadress avgör vilka skatter du betalar och vilka tjänster som är tillgängliga. För mer information om skatter, se [vilken skatt kommer jag att debiteras?](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged).
+    4. Välj **Placera order**. Det tar en kort tid för Microsoft att slutföra inrättandet av en ny plan.
+
+## <a name="whats-next"></a>Hur går jag vidare?
+Välj **gå till installationsprogrammet** för att slutföra andra steg, till exempel lägga till mer säkerhet för att skydda ditt företag och hämta Office-appar som Word och Excel. För att få hjälp med installationen, se [Konfigurera](set-up.md).
+
