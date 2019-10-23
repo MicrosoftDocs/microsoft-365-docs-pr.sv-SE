@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
-ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576027"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636761"
 ---
 # <a name="increase-threat-protection"></a>Öka skyddet mot hot
 
@@ -134,7 +134,7 @@ Om du vill skapa en anti-phishing-policy för ATP, titta på [den här korta utb
     
 4. På sidan **mot nätfiske** väljer du **+ skapa**. En guide startas som steg dig genom att definiera din anti-phishing-policy.
     
-5. Ange namn, beskrivning och inställningar för principen som rekommenderas i diagrammet nedan. Se [Lär dig mer om ATP anti-phishing principalternativ](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) för mer information. 
+5. Ange namn, beskrivning och inställningar för principen som rekommenderas i diagrammet nedan. Se [Lär dig mer om ATP anti-phishing principalternativ](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options) för mer information. 
     
 6. När du har granskat dina inställningar väljer du **skapa den här principen** eller **Spara**, efter behov.
     
