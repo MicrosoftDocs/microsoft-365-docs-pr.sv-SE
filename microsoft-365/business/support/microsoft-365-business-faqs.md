@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
-ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
+ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37611430"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646394"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft 365 Business
 
@@ -164,7 +164,7 @@ IT-tjänstproviders som inte redan är Microsoft-partner kan läsa mer om Micros
 Partner som nu säljer Office 365 kan använda samma konsultativa försäljningsmetoder för att sälja Microsoft 365 Business. Dessutom introducerar vi mer resurser och utbildning för ditt säljteam för att förstå kundernas befintliga skrivbordsmiljö, Active Directory-tillit, mobilitet och säkerhetsbehov för att effektivt förmedla det fulla värdet av Microsoft 365 Business på ett sätt som är relevant för kunden. Hitta dessa resurser på Office Partner Portal på [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Hur kan Microsoft 365 Business Help partners öka lönsamheten? 
-Microsoft 365 Business hjälper partner att minska kostnaderna genom ökad effektivitet i verksamheten och öka intäkterna genom försäljning av ytterligare tjänster. Den Forrester Research, Microsoft 365 Business total Economic Impact (TEI) studie, juni 2017 (https://partners.office.com/TEIBusiness), visar att Microsoft 365 företag kommer att ha positiv inverkan på partner lönsamhet. 
+Microsoft 365 Business hjälper partner att minska kostnaderna genom ökad effektivitet i verksamheten och öka intäkterna genom försäljning av ytterligare tjänster. Den Forrester Research, Microsoft 365 Business total Economic Impact (TEI) studie, juni 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI), visar att Microsoft 365 företag kommer att ha positiv inverkan på partner lönsamhet. 
 
 I TEI studie partners rapporterade att med Microsoft 365 företag de förväntar sig: 
 
