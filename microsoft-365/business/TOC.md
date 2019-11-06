@@ -1,5 +1,5 @@
 # Microsoft 365 Business
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [Vad är Microsoft 365 Business?](microsoft-365-business-overview.md)
 ## [Skaffa Microsoft 365 Business](sign-up.md)
 ## [Förutsättningar för dataskydd](pre-requisites-for-data-protection.md)
@@ -20,7 +20,7 @@
 ### [Öka skyddet mot hot](increase-threat-protection.md)
 ### [Ställa in efterlevnadsfunktioner](set-up-compliance.md)
 ## Hantera användare
-### [Add users](add-users-m365b.md)
+### [Lägga till användare](add-users-m365b.md)
 ### [Ta bort en medarbetare](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ## Hantera enheter
 ### [Visa och redigera policyer och enheter](view-policies-and-devices.md)
@@ -32,7 +32,10 @@
 ### [Inställningar för enhetsskydd för Windows 10-datorer](protection-settings-for-windows-10-pcs.md)
 #### [Validera inställningar på Windows 10-datorer](validate-settings-on-windows-10-pcs.md)
 ### [Inställningar för Appskydd för Windows 10-datorer](protection-settings-for-windows-10-devices.md)
-## [Migrera till Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+## Migrera till Microsoft 365 Business
+### [Migrera från Office 365 Business Premium](migrate-to-microsoft-365-business.md)
+### [Migrera från Office 365 E3](migrate-from-e3.md)
+### [Migrera ro Microsoft 365 Enterprise](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## Fakturering
 ### [Din faktura](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Betala](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
