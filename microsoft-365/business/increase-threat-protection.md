@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
-ms.openlocfilehash: fb63ca7e3cf38ecf31aab98e425b02e8b9983bf8
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 1827b70f1e4d78a072753390c1a99d7cb4bd5cfd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636761"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030773"
 ---
 # <a name="increase-threat-protection"></a>Öka skyddet mot hot
 
@@ -31,7 +31,7 @@ Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeratio
 
 Kontrollera din Office 365 Secure score innan du börjar. Office 365 Secure score analyserar din Office 365-organisations säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Vidtar de åtgärder som rekommenderas i den här artikeln ökar din poäng. Målet är inte att uppnå maxpoängen, men att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för dina användare. 
 
-Mer information finns i [Microsoft Secure score](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-secure-score).
+Mer information finns i [Microsoft Secure score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höj skyddsnivån mot skadlig kod i Mail
 

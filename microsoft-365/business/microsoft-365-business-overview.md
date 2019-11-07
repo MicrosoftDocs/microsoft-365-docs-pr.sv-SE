@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig att konfigurera Microsoft 365 Business.
-ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: afc39ce57e63ad039780ad33e60fa81d8e8eec7a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697774"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031474"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Översikt över Microsoft 365 Business
 
@@ -98,4 +98,4 @@ En fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business
 
 - Om du inte har en partner och vill skaffa Microsoft 365 Business kan du [köpa den här](https://www.microsoft.com/microsoft-365/business) och följa [registrerings](sign-up.md) anvisningarna.
 
-- Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.
+- Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.

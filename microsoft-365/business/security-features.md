@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om säkerhetsfunktioner som följer med Microsoft 365 Business.
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: 5e295480b1a578ca26646a89d6a0a4183a15428d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636781"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031454"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 funktioner för Företagssäkerhet och efterlevnad
 
@@ -73,7 +73,7 @@ Avancerade funktioner i Microsoft 365 Business är tillgängliga för att hjälp
 - **[Alla funktioner i Intune i Azure Portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     Åtkomst till Intune administratörscenter i Azure-portalen kan du ställa in ytterligare säkerhetsfunktioner, till exempel hantering av MacOS-enheter, iPhone och Android-enheter tillsammans med avancerad enhetshantering för Windows, som inte är tillgängliga via Microsoft 365 Business administratörscenter.
-- **Samma [villkorlig åtkomst](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) som Azure AD P1-plan**
+- **Samma [villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) som Azure AD P1-plan**
 
     Villkorlig åtkomst kan bidra till att skydda din organisation från inloggningsrisk, åtkomstförsök från ett oväntat nätverk eller nationella inställningar, åtkomstförsök utgör riskfyllda enhetstyper och så vidare. Principer för villkorlig åtkomst tillämpas när den första autentiseringen har slutförts och använder signaler från den första autentiseringshändelsen för att avgöra om försök till åtkomst ska godkännas, neka eller f mer bevis (till exempel andra form av identifiering) är Krävs.
 

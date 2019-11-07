@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Läs om hur du köper Microsoft 365 Business från Microsoft Partner Center.
-ms.openlocfilehash: cd13db200292f84ea736bbd27af69608e576e586
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 168c68c7394ff736e9d94cb40872230a3f3b8894
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574917"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030823"
 ---
 # <a name="get-microsoft-365-business"></a>Skaffa Microsoft 365 Business
 
@@ -36,7 +36,7 @@ Om du inte har en partner men vill skaffa Microsoft 365 Business, kan du [köpa 
 
 Se [Registrera dig för Microsoft 365 Business](sign-up.md) för detaljerade instruktioner.
 
-Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.
+Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Hämta Microsoft 365 Business från Microsoft-partnercenter
 

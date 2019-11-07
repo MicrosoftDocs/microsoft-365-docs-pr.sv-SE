@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ställer in principer för villkorlig åtkomst för Microsoft 365-kampanjer.
-ms.openlocfilehash: 31f3b7f3678671af3b5ca3947dec37041b226fac
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3772aa0d505ef54a0587423e890ede519d571e0c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575647"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031404"
 ---
 # <a name="set-up-conditional-access-policies"></a>Ställ in principer för villkorlig åtkomst
 
@@ -53,9 +53,9 @@ Mer information om dessa principer finns i [Vad är baslinje principer](https://
     ![Sida som listar baslinje principer för villkorlig åtkomst.](media/baslinepolicies.png)
 1. Se följande specifika instruktioner för varje princip:
 
-  - [Kräv MFA för administratörer](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Kräv MFA för användare](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
- - [Blockera äldre autentisering](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Kräv MFA för användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Kräv MFA för servicehantering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 Du kan ställa in många ytterligare principer, till exempel kräver godkända klientappar. Mer information finns i [dokumentationen för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/) .

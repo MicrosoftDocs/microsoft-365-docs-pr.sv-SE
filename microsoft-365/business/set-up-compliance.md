@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Ställ in efterlevnadsfunktioner för att förhindra dataförlust och etikettkänsliga data.
-ms.openlocfilehash: 73709c1302a2e9e46eb2d54ea021438b5f1743c5
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5213c55f4a8ce0e223896f1b960847714d6d06cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575667"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031424"
 ---
 # <a name="set-up-compliance-features"></a>Ställa in efterlevnadsfunktioner
 
@@ -57,7 +57,7 @@ Om du vill placera en postlåda i rättstvist håller du i administratörscenter
 
 Känslighets etiketter levereras med Azure information Protection (AIP) plan 1 och hjälper dig att klassificera och eventuellt skydda dina dokument och e-postmeddelanden genom att använda etiketter. Etiketter kan användas automatiskt av administratörer som definierar regler och villkor, manuellt av användare eller genom att använda en kombination där användare ges rekommendationer.
 
-Om du vill ställa in känslighets etiketter, Visa [skapa och hantera känslighets etiketter](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+Om du vill ställa in känslighets etiketter, Visa [skapa och hantera känslighets etiketter](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
 
 
 
@@ -65,7 +65,7 @@ Om du vill ställa in känslighets etiketter, Visa [skapa och hantera känslighe
 
 Så här installerar du AIP-klienten manuellt:
 
-1. Data överför **AzinfoProtection_UL. exe** från [Mikroskop Data överför Centrerat](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Hämta **AzinfoProtection_UL. exe** från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
  
 2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och se till att alternativet **känslighet** är tillgängligt på fliken **Start** .
 <br/>![Fliken skydd i ett Word-dokument.](media/word-sensitivity.png)
