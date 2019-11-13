@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 'Känn till förutsättningarna för att konfigurera din organisation med Microsoft 365 Business. '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575847"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290539"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Förutsättningar för att skydda data på enheter med Microsoft 365 Business
 
@@ -34,6 +34,8 @@ Det första steget för att införa Microsoft 365 Business i din organisation ä
 - Windows-enheter måste köras med Windows 7 Professional, Windows 8 Pro eller Windows 8.1 Pro.
     
     [Uppgradera Windows-enheter till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
+    
+    Om du kör Windows 10 Home, måste du **köpa** Windows 10 Pro. Se [uppgradera Windows 10 Home till Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) för instruktioner. 
     
 - Ta bort enheter från mobila hanteringslösningar (Mobile Iron, AirWatch med mera). Alla personer i organisationen kommer att registreras för mobil hantering i Microsoft 365 Business.
     
