@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Läs om hur du köper Microsoft 365 Business från Microsoft Partner Center.
-ms.openlocfilehash: 09d2f24fba1725278b663d5c3159163a56dcdc59
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: be38ba6869ed9419b2c34e6b4f86ce4aad6a6c52
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038928"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320177"
 ---
 # <a name="get-microsoft-365-business"></a>Skaffa Microsoft 365 Business
 
@@ -36,23 +36,23 @@ Om du inte har en partner men vill skaffa Microsoft 365 Business, kan du [köpa 
 
 Se [Registrera dig för Microsoft 365 Business](sign-up.md) för detaljerade instruktioner.
 
-Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) för att både köpa Microsoft 365 Business och få hjälp med set-up.
+Du kan också bege dig till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) för att köpa Microsoft 365 Business och få installationshjälp.
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Hämta Microsoft 365 Business från Microsoft-partnercenter
 
 1. Logga in på [Microsoft-partnercenter](https://go.microsoft.com/fwlink/p/?linkid=849910) med hjälp av autentiseringsuppgifter som du skapade när du registrerar sig för tjänsten Leverantör av Microsoft-molnlösningar (CSP). 
     
-2. Välj Kunder på Partner-instrumentpanelen och välj sedan din kund eller lägg till en ny kund innan du skaffar Microsoft 365 Business.
+2. På den partner instrumentpanelen, Välj **kunder**, välj sedan din kund eller lägga till en ny kund innan du skaffar Microsoft 365 Business.
     
-    ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![I Microsoft Partner Center lägger du till en kund.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. På kundens **prenumerations** sida väljer du **Lägg till prenumeration**, väljer alternativet mindre företag underkatalog och väljer sedan **Microsoft 365 Business**.
     
     Välj antalet licenser du behöver (upp till 300). Om du har fler än 300 användare går du till [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) i stället. 
     
-    ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![På sidan ny prenumeration väljer du Small Business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    Utför resten av stegen för att lägga till en ny kund, inklusive företagets namn.
+    Slutför resten av stegen för att lägga till en ny kund, inklusive företagsnamnet.
     
 
 

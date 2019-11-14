@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Lär dig att skapa, redigera, ta bort eller ta bort AutoPilot-profiler.
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574727"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320247"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Skapa och redigera AutoPilot-profiler
 
@@ -40,17 +40,17 @@ En profil gäller för en enhet eller en grupp enheter.
   
 2. På sidan **autopilot** väljer du \> fliken **profiler** **Skapa profil**.
     
-3. På sidan **Skapa profil** anger du ett namn för profilen som kan hjälpa dig att identifiera den, till exempel Marknadsföring. Aktivera inställningen som du vill använda (mer information finns i [Om AutoPilot-profilinställningar](autopilot-profile-settings.md)) och välj **Spara**.
+3. På sidan **Skapa profil** anger du ett namn för den profil som hjälper dig att identifiera den, till exempel marknadsföring. Aktivera den inställning du vill ha och välj sedan **Spara**. Mer information om inställningar för AutoPilot-profil finns i [om inställningar för autopilot-profil](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Använda profil på en enhet
 
-När du har skapat en profil kan du använda den på en enhet eller en grupp av enheter. Du kan välja en befintlig profil i [guiden med stegvisa anvisningar](add-autopilot-devices-and-profile.md) och använda den på nya enheter, eller så kan du ersätta en befintlig profil för en enhet eller en grupp av enheter. 
+När du har skapat en profil kan du använda den på en enhet eller en grupp av enheter. Du kan välja en befintlig profil i [steg-för-steg-guiden](add-autopilot-devices-and-profile.md) och tillämpa den på nya enheter eller ersätta en befintlig profil för en enhet eller grupp av enheter. 
   
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Klicka på kryssrutan bredvid en enhets namn. På panelen **Enhet** väljer du sedan en profil i listrutan **Tilldelad profil** \> **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn och välj en profil \> i listrutan **tilldelad profil** på **enhets** **panelen.**
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Klicka på kryssrutan bredvid enhetens namn. På panelen **Profil** uppdaterar du någon av de tillgängliga inställningarna \> **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera alla \> **tillgängliga inställningar**på **profil** panelen.
     
     Om du gör detta innan någon användare ansluter enheten till internet används profilen för installationen.
     
@@ -70,7 +70,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Klicka på kryssrutan bredvid enhetens namn. På panelen **Profil** klickar du på **Ta bort profil** \> **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn och välj **ta bort profil** \> **Spara**på **profil** panelen.
     
     När du raderar en profil tas den bort från en enhet eller en grupp av enheter som den var tilldelad till.
     
@@ -78,5 +78,5 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Klicka på kryssrutan bredvid en enhets namn. På panelen **Enhet** väljer du sedan **Ingen** i listrutan **Tilldelad profil** \> **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn \> **och på** **enhets** panelen väljer du **ingen** i listrutan **tilldelad profil** .
     

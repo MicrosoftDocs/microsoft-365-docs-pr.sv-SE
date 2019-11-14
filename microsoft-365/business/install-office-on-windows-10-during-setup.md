@@ -22,19 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Lär dig nu att automatiskt distribuera Office till Windows 10-enheter under installationen.
-ms.openlocfilehash: 64585d0a34e409822959939d5ae40fac57ff943b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fbc11553452ae5068ad7013a409901dee5b3570d
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37576007"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320057"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installera Office vid Windows 10-installationen
 
 ![Banderoll som pekar https://aka.ms/aboutM365previewpå.](media/m365admincenterchanging.png)
 
-Den här inställningen är inaktiverad som standard. Du kan aktivera den så att användarna har den senaste versionen av Office installerad på sina Windows 10-enheter, men du bör först kontrollera att alla krav uppfylls. Användarna måste vara licensierade för Microsoft 365 Business för att den här inställningen ska överföra programvaran till enheten utöver andra krav som beskrivs i [Förbereda Office-distribution genom Microsoft 365 Business](prepare-for-office-client-deployment.md). 
+Den här inställningen är inaktiverad som standard. Du kan aktivera den för att se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla krav uppfylls. Användare måste vara licensierade för Microsoft 365 Business för den här inställningen för att skicka programvaran till enheten, förutom andra krav som beskrivs i [Förbered för Office-klientdistribution av microsoft 365 Business](prepare-for-office-client-deployment.md). 
   
-Vi rekommenderar att du godkänner standardinställningen under installationen. Om du vill ha olika inställningar för olika grupper av användare kan du hantera Office-distributionen grupp för grupp efter installationen. Gå till **Enheter** \> **Hantera Office-distribution** från startsidan i administrationscentret. Stegvisa instruktioner hittar du i [Installera och avinstallera Office automatiskt på Windows 10-enheter](auto-install-or-uninstall-office.md).
-  
-
+Vi rekommenderar att du accepterar standardinställningen under installationen. Om du vill ha olika inställningar för olika grupper av användare kan du hantera Office-distributionen grupp för grupp efter installationen. Gå till **Enheter** \> **Hantera Office-distribution** från startsidan i administrationscentret. Stegvisa instruktioner hittar du i [Installera och avinstallera Office automatiskt på Windows 10-enheter](auto-install-or-uninstall-office.md).

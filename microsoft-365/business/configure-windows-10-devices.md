@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: Läs mer om enhetspolicyer för Windows 10 som gäller för alla användare i din organisation.
-ms.openlocfilehash: 11c8f75f56a86895d7f81fc242490303c10ac24e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: ad092d2b2760a55e16c44a66350626c90c9ac7c5
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575437"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38321373"
 ---
 # <a name="configure-windows-10-devices"></a>Konfigurera Windows 10-enheter
 
-Vid installationen skapas en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på ett Office-program på sin Windows 10-enhet med sitt arbets- eller skolkonto, kommer de inställningar du konfigurerar automatiskt att användas för att säkerställa att användaren ansluter på ett säkert sätt.
+Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i din organisation. När en användare loggar in på en Office-app på sin Windows 10-enhet med sitt arbets-eller skolkonto, tillämpas de inställningar du konfigurerar automatiskt för att se till att användaren ansluter på ett säkert sätt.
   
-Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. Efter installationen kan du skapa fler principer och rikta dem mot specifika användargrupper.
+Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. Efter installationen kan du skapa fler policyer och inrikta dem på specifika grupper av användare.
   
 Mer information om hur du lägger till en princip för att hantera konfigurationer för Windows 10-enheter finns i [Ange enhetskonfigurationer för Windows 10-datorer](protection-settings-for-windows-10-pcs.md).
   
