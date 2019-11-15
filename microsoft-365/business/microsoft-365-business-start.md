@@ -21,24 +21,24 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig att konfigurera Microsoft 365 Business.
-ms.openlocfilehash: 4c744d6a900dba3c11ee51e75602a430268e15bb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029113"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633438"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Komma igång med Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Vad är Microsoft 365 Business
 
-Microsoft 365 Business är en omfattande uppsättning produktivitets- och samarbetsverktyg för företag. Outlook, Word, Excel och de andra Office-produkterna är alltid uppdaterade. Du kan skydda dina arbetsfiler på alla dina iOS-, Android- och Windows 10-enheter med säkerhet i företagsklass som är enkel att hantera.
+Microsoft 365 Business är en omfattande uppsättning verktyg för affärsproduktivitet och samarbete, till exempel Outlook, Word, Excel och andra Office-produkter, som alltid är uppdaterade. Du kan skydda dina arbetsfiler på alla dina iOS-, Android-och Windows 10-enheter med säkerhet i företagsklass som är enkel att hantera.
   
-Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser finns mer information i dokumentationen för [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986). 
+Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser, se [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) -dokumentationen för mer information. 
   
 ## <a name="get-microsoft-365-business"></a>Skaffa Microsoft 365 Business
 
-- Om du har en partner får denna Microsoft 365 Business: [Hämta Microsoft 365 Business från Microsoft-partnercenter](get-microsoft-365-business.md).
+- Om du har en partner får de Microsoft 365 Business: [Skaffa microsoft 365 Business från Microsoft Partner Center](get-microsoft-365-business.md).
     
 - Om du inte har en partner men vill skaffa Microsoft 365 Business, kan du [köpa det här](https://www.microsoft.com/microsoft-365/business).
     
@@ -46,37 +46,37 @@ Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fle
 
  **Översikt över Microsoft 365 Business Suite-uppsättningen**
   
-I följande diagram beskrivs hur administratörer har konfigurerat Microsoft 365 Business. Dessutom beskrivs stegen för att förbereda Windows-datorer för Microsoft 365 Business. Du kan också lägga till nya enheter i administrationscentret för Microsoft 365 Business med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda AutoPilot för att installera och förkonfigurera nya enheter och på så sätt göra dem klara att användas i produktionen så snart en användare loggar in med sina Microsoft 365 Business-autentiseringsuppgifter.
+I följande diagram beskrivs hur administratörer har konfigurerat Microsoft 365 Business. Dessutom beskrivs stegen för att förbereda Windows-datorer för Microsoft 365 Business. Du kan också lägga till nya enheter i Microsoft 365 Business Admin Center med [Windows autopilot](add-autopilot-devices-and-profile.md). Du kan använda AutoPilot för att ställa in och förkonfigurera nya enheter så att de är redo för produktiv användning så snart en användare loggar in med sina autentiseringsuppgifter för Microsoft 365 Business.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: Konfigurera Microsoft 365 Business (admin)
 
-Logga in på [administrationscentret för Microsoft 365 Business](https://portal.office.com/adminportal/home) med dina autentiseringsuppgifter som global administratör, och följ instruktionerna nedan för att konfigurera Microsoft 365 Business. 
+Logga in på [microsoft 365 Business Admin Center](https://portal.office.com/adminportal/home) med dina autentiseringsuppgifter för global administratör och Slutför följande steg för att konfigurera Microsoft 365 Business. 
   
 1. [Förutsättningar för att skydda data på enheter med Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
-    Läs först förutsättningarna för att kontrollera att dina enheter är redo för Microsoft 365 Business.
+    Läs förutsättningarna först för att se till att dina enheter är redo för Microsoft 365 Business.
     
-2. [Konfigurera Microsoft 365 Business med hjälp av installationsguiden](set-up.md)
+2. [Använd installationsguiden för att konfigurera Microsoft 365 Business](set-up.md)
     
-    Om du **flyttar permanent från en lokal Active Directory till molnet**, kan du antingen lägga till dina användare manuellt i Microsoft 365 Business Admin Center med hjälp av installationsguiden eller du kan göra en engångs synkronisering med Azure AD Connect. Du kan göra det på två sätt: 
+    Om du **flyttar permanent från en lokal Active Directory till molnet**, kan du gå till Microsoft 365 Business Admin Center och använda installationsguiden för att lägga till dina användare manuellt eller du kan göra en engångs synkronisering med Azure AD Connect. Du kan göra det på två sätt: 
     
-  - Om du också har en server med Exchange 2010, Exchange 2013 eller Exchange 2016 kan du [använda minimal hybrid för att snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Stegen för minimal hybridkonfiguration omfattar en engångssynkronisering av användare till Azure AD samt e-postmigrering från lokala resurser till molnet. När e-postmigreringen är klar inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
+    - Om du också har en server med Exchange 2010, Exchange 2013 eller Exchange 2016 kan du [använda minimal hybrid för att snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Minimal hybrid steg inkluderar en engångs synkronisering av användare till Azure AD och e-postmigrering från lokal till molnet. När e-postmigreringen är klar inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
     
-  - Använd Office 365-guiden för katalogsynkronisering för att synkronisera användarna till molnet. Följ stegen i [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) för att slutföra processen. När du har synkroniserat användarna med molnet måste du [Turn off directory synchronization for Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+    - Använd guiden Office 365 Directory Sync för att synkronisera dina användare till molnet. Följ stegen i [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) för att slutföra processen. När du synkroniserar dina användare till molnet, måste du [inaktivera katalogsynkronisering för Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Du måste också ge var och en av användarna som har lagts till på det här sättet en licens för Microsoft 365 Business. Du kan göra detta i [installationsguiden](set-up.md)eller i [tilldela licenser till användare i Office 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    Du måste också ge varje användare som har lagts till på detta sätt en licens för Microsoft 365 Business. Du kan göra detta i [installationsguiden](set-up.md) eller så kan du [tilldela licenser till användare i Office 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
     
 ### <a name="2-prepare-mobile-devices"></a>2: Förbered mobila enheter
 
-Följ stegen i[Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) att installera Office-appar på enheter och se till att de skyddas av Microsoft 365 Business. 
+Följ stegen i [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) att installera Office-appar på enheter och kontrollera att de är skyddade av Microsoft 365 Business. 
   
 ### <a name="3-prepare-pcs"></a>3: Förbered datorer
 
-Administratörer kan i förväg välja inställningar för nya enheter Windows 10-datorer med hjälp av [Windows autopilot](add-autopilot-devices-and-profile.md). Användare kan konfigurera sina befintliga eller nya Windows 10-enheter genom att följa stegen i det här avsnittet: [Konfigurera Windows-datorer för Microsoft 365 företagsanvändare](set-up-windows-devices.md). För befintliga enheter kan **användare också**[Flytta filer till OneDrive för företag](move-files-to-onedrive.md). De kan också använda verktyg från tredje part för att flytta filer som är associerade med Windows-profil till OneDrive.
+Administratörer kan i förväg välja inställningar för nya Windows 10-datorer med hjälp av [Windows autopilot](add-autopilot-devices-and-profile.md). Användare kan konfigurera sina befintliga eller nya Windows 10-enheter genom att följa stegen i det här avsnittet: [Konfigurera Windows-datorer för Microsoft 365 företagsanvändare](set-up-windows-devices.md). För befintliga enheter kan användare **eventuellt** [Flytta filer till OneDrive för företag](move-files-to-onedrive.md). De kan också använda verktyg från tredje part för att flytta filer som är associerade med Windows-profil till OneDrive.
   
-Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business](manage-windows-devices.md) för att konfigurera detta. Det här är den bästa metoden och enheter i det här tillståndet kallas **hybrid Azure AD-anslutna enheter**. 
+Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 Business för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business](manage-windows-devices.md) för att konfigurera detta. Den här metoden är att föredra och enheter i det här tillståndet kallas **hybrid Azure AD-anslutna enheter**. 
   
 Om du behåller en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare), kan du ge dina **Azure AD-anslutna enheter** åtkomst till dessa resurser genom att följa stegen här: [åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business](access-resources.md).
   
@@ -88,9 +88,9 @@ När du har konfigurerat Windows 10-datorer kan du [automatiskt installera Offic
   
 - Kontakta din partner.
     
-- Som Microsoft 365 Business admin har du tillgång till vårt kundsupportteam, ** [kontakta supporten för företags produkter-admin hjälp](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Som Microsoft 365 Business admin har du tillgång till vårt kundsupportteam: ** [kontakta supporten för företags produkter-administratör Hjälp](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="related-topics"></a>Närliggande ämnen
+## <a name="related-topics"></a>Relaterade ämnen
 [Microsoft 365 Business dokumentation och resurser](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [Hantera Microsoft 365 Business](manage.md)[Migrera till Microsoft 365 Business](migrate-to-microsoft-365-business.md)

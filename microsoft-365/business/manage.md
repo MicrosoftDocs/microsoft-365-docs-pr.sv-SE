@@ -18,21 +18,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Lär dig att hantera Microsoft 365 affärsrelaterade administratörsuppgifter, mobila enheter, Windows 10PCs och många sådana uppgifter.
-ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Lär dig att hantera Microsoft 365 affärsrelaterade administratörsuppgifter, mobila enheter, Windows 10-datorer och många sådana uppgifter.
+ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575967"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633318"
 ---
 # <a name="manage-microsoft-365-business"></a>Hantera Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Allmänna administrativa uppgifter i Microsoft 365 Business
 
-De flesta av [Administratörs innehållet](/Office365/Admin/admin-home.md) för Office 365 för företag gäller även för Microsoft 365 Business.
+Det mesta av [Administratörs innehållet](/Office365/Admin/admin-home.md) för Office 365 för företag gäller även Microsoft 365 Business.
 
-- [Lägga till ytterligare användare i Microsoft 365 Business](add-users-m365b.md)
+- [Lägg till fler användare i Microsoft 365 Business](add-users-m365b.md)
     
 - [Visa principer och enheter](view-policies-and-devices.md)
     
@@ -40,7 +40,7 @@ De flesta av [Administratörs innehållet](/Office365/Admin/admin-home.md) för 
     
 - [Hur mappar skyddsfunktioner i Microsoft 365 Business till Intune-inställningarna](map-protection-features-to-intune-settings.md)
     
-I följande avsnitt finns information om hur du med hjälp av Microsoft 365 Business kan skydda organisationens data på datorer och mobila enheter.
+Se följande avsnitt om hur du använder Microsoft 365 Business för att skydda organisationens data på datorer och mobila enheter.
   
 ## <a name="manage-mobile-devices"></a>Hantera mobila enheter
 
@@ -48,7 +48,7 @@ I följande avsnitt finns information om hur du med hjälp av Microsoft 365 Busi
     
 - [Ange inställningar för appskydd för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md)
     
-    Se [Validera inställningar för Appskydd på en Android-eller iOS-enhet](validate-settings-on-android-or-ios.md) för att kontrollera att detta fungerade. 
+    Se [Validera inställningar för Appskydd på en Android-eller iOS-enhet](validate-settings-on-android-or-ios.md)för att kontrollera att detta fungerade. 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     
@@ -62,11 +62,11 @@ I följande avsnitt finns information om hur du med hjälp av Microsoft 365 Busi
     
 - [Ange inställningar för enhetsskydd för Windows 10-enheter](protection-settings-for-windows-10-pcs.md)
     
-    Läs [Validera inställningar för enhetsskydd på Windows 10-enheter](validate-settings-on-windows-10-pcs.md) om du vill kontrollera att det fungerade. 
+    Kontrollera att detta fungerade, se [Validera inställningar för enhetsskydd på Windows 10-enheter](validate-settings-on-windows-10-pcs.md). 
     
 - [Ange programskyddsinställningar för Windows 10-enheter](protection-settings-for-windows-10-devices.md)
     
-    Läs [Bekräfta programskyddsinställningar på PC-datorer med Windows 10](validate-protection-settings-on-windows-10-pcs.md) om du vill kontrollera att det fungerade. 
+    Kontrollera att detta fungerade, se [Validera inställningar för Appskydd på Windows 10-datorer](validate-protection-settings-on-windows-10-pcs.md). 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     
@@ -88,7 +88,7 @@ I följande avsnitt beskrivs hur du kan använda Windows AutoPilot i Microsoft 3
     
 - [Om AutoPilot-profilinställningar](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>Konfiguration och förutsättningar
+## <a name="set-up-and-prerequisite-information"></a>Ställ in och nödvändig information
 
 - [Förutsättningar för att skydda data på enheter med Microsoft 365 Business](pre-requisites-for-data-protection.md)
     
@@ -98,8 +98,4 @@ I följande avsnitt beskrivs hur du kan använda Windows AutoPilot i Microsoft 3
     
 - [Aktivera domänanslutna Windows 10-enheter för hantering i Microsoft 365 Business](manage-windows-devices.md)
     
-[Ytterligare säkerhetsfunktioner](security-features.md#additional-security-features)
-    
-
-  
-
+- [Ytterligare säkerhetsfunktioner](security-features.md#additional-security-features)

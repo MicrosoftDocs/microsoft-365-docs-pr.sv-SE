@@ -1,5 +1,5 @@
 ---
-title: Översikt Microsoft 365 Business
+title: Översikt över Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Lär dig att konfigurera Microsoft 365 Business.
-ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+description: Läs mer om Microsoft 365 Business.
+ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038958"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633408"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Översikt över Microsoft 365 Business
 
 ## <a name="what-is-microsoft-365-business"></a>Vad är Microsoft 365 Business
 
-Microsoft 365 Business är en prenumerationstjänst som innehåller Office 365 produktivitetsverktyg plus avancerade funktioner för att skydda ditt företag mot cyberhot, skydda dina data och hantera enheterna.
+Microsoft 365 Business är en prenumerationstjänst som innehåller Office 365 produktivitetsverktyg plus avancerade funktioner som hjälper dig att skydda ditt företag mot cyberhot, skydda dina data och hantera enheter.
   
-Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser finns mer information i dokumentationen för [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986).
+Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser, se [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) -dokumentationen för mer information.
 
 Se [Microsoft 365 Business servicebeskrivning](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) för hela listan över funktioner.
   
@@ -43,12 +43,12 @@ Se [Microsoft 365 Business servicebeskrivning](https://docs.microsoft.com/office
 
 Dina affärsdata kan äventyras på många sätt. Du och dina användare kan äventyra organisationens säkerhet när du loggar in med komprometterade autentiseringsuppgifter eller Visa organisations data på olika enheter och program. Mer specifikt är din organisation i riskzonen från:
 
-1. Komprometterade eller svaga inloggningsuppgifter.
-2. Komprometterad enhet med en svag PIN-kod eller en användarägd enhet.
-3. Användare som kan kopiera/klistra in/spara organisationens data till personliga appar.
-4. Användare som installerar och använder 3 program för<sup>RD</sup> -part med svag säkerhet.
-5. E-post sårbarheter inklusive dela känsliga data, phishing-försök, malware, etc.
-6. När personer som inte ska, kan komma åt dokument med känslig information.
+- Komprometterade eller svaga inloggningsuppgifter.
+- Komprometterad enhet med en svag PIN-kod eller en användarägd enhet.
+- Användare som kan kopiera/klistra in/spara organisationens data till personliga appar.
+- Användare som installerar och använder appar från tredje part med svag säkerhet.
+- E-postsårbarheter, inklusive delning av känsliga data, phishing-försök, skadlig programvara och så vidare.
+- När personer som inte ska, kan komma åt dokument med känslig information.
 
 Microsoft 365 Business hjälper till att skydda dina data i var och en av dessa instanser. Säkerhets funktionerna som skyddar dina affärsdata beskrivs i följande bild.
 
@@ -58,7 +58,7 @@ Microsoft 365 Business hjälper till att skydda dina data i var och en av dessa 
 
 Microsoft 365 Business hjälper till att **försvara mot hot** genom att:
 
-Skanna alla länkar i e-post och dokument i realtid för att blockera osäkra webbplatser (ATP Safe Links).
+- Skanna länkar i e-postmeddelanden och dokument i realtid för att blockera osäkra webbplatser (ATP Safe Links).
 
 - Utföra avancerad analys av e-postbilagor i en sandbox-miljö för att upptäcka nyutvecklad skadlig kod (ATP Safe bilagor). 
 
@@ -66,23 +66,23 @@ Skanna alla länkar i e-post och dokument i realtid för att blockera osäkra we
 
 - Ställa in avancerade principer som inaktiverar åtkomst från ej betrodda platser eller kringgå multifaktorautentisering från betrodda platser som ditt Office-nätverk (Azure MFA inklusive betrodda IP-adresser och villkorlig åtkomst). 
 
-- Genomdriva malware skydd i alla företagets Windows 10 enheter och skydda filer i viktiga systemmappar från ändringar som gjorts av ransomware (Windows Defender)
+- Genomdriva skydd mot skadlig kod i alla organisationens Windows 10-enheter och skydda filer i viktiga systemmappar från ändringar som gjorts av ransomware (Windows Defender)
 
 Dina **affärsdata skyddas** av:
 
-- Använda automatisk identifiering för att förhindra att känslig information som personnummer eller kreditkort läcker utanför ditt företag (skydd mot data förlust). 
+- Använda automatisk identifiering för att förhindra att känslig information som personnummer eller kreditkort läcker utanför ditt företag (skydd mot dataförlust). 
 
-- Kryptera känsliga e-postmeddelanden så att du kan kommunicera säkert med kunder eller andra personer utanför företaget, se till att endast den avsedda mottagaren kan läsa meddelandet (Office 365 meddelandekryptering).
+- Kryptera känsliga e-postmeddelanden så att du kan kommunicera säkert med kunder eller andra personer utanför organisationen. Detta säkerställer att endast den avsedda mottagaren kan läsa meddelandet (Office 365 meddelandekryptering).
 
 - Styra vem som har åtkomst till företagsinformation genom att använda begränsningar som **Kopiera inte** och **Vidarebefordra inte** till e-post och dokument (Azure information Protection, plan 1).
 
-- Aktivera obegränsad molnarkivering så att du kan behålla alla dina företags e-post, inklusive postlådorna för tidigare anställda (Exchange Online-arkivering).
+- Aktivera obegränsad molnarkivering så att du kan behålla alla organisationens e-post, inklusive postlådorna för tidigare anställda (Exchange Online-arkivering).
 
 Dina **enheter är säkrade** genom att:
 
-- Styra vilka enheter och användare som kan komma åt dina Office 365-data; med alternativ för att blockera användare från att logga in från hemdatorer, un-godkända appar eller utanför arbetstid (villkorlig åtkomst).
+- Styra vilka enheter och användare som kan komma åt dina Office 365-data, med alternativ för att blockera användare från att logga in från hemdatorer, icke godkända appar eller utanför arbetstid (villkorlig åtkomst).
 
-- Tillämpa säkerhetsprinciper för att skydda affärsdata på iOS-och Android-enheter.  Du kan till exempel kräva att användarna anger en PIN-kod eller ett fingeravtryck för att komma åt affärsdata och kryptera data på mobila enheter (Appskydd för Office-mobilappar).
+- Tillämpa säkerhetsprinciper för att skydda affärsdata på iOS-och Android-enheter. Du kan till exempel kräva att användarna anger en PIN-kod eller ett fingeravtryck för att komma åt affärsdata och kryptera data på mobila enheter (Appskydd för Office-mobilappar).
 
 - Hålla affärsdokument, e-postmeddelanden och andra data i godkända Office-mobilappar och hindra anställda från att spara dessa till obehöriga appar och platser (Appskydd för Office-mobilappar).
 
@@ -94,7 +94,7 @@ En fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business
 
 ## <a name="get-microsoft-365-business"></a>Skaffa Microsoft 365 Business
 
-- Om du har en partner får denna Microsoft 365 Business: [Hämta Microsoft 365 Business från Microsoft-partnercenter](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- Om du har en partner får de Microsoft 365 Business: [Skaffa microsoft 365 Business från Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
 - Om du inte har en partner och vill skaffa Microsoft 365 Business kan du [köpa den här](https://www.microsoft.com/microsoft-365/business) och följa [registrerings](sign-up.md) anvisningarna.
 
