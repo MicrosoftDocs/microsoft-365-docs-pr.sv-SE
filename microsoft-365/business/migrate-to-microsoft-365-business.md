@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Steg som uppgraderar ditt företag från Office 365 Business Premium till Microsoft 365 Business.
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231420"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640570"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Uppgradera till Microsoft 365 Business från Office 365 Business Premium
 
@@ -36,12 +36,12 @@ Om du har en [office 365 för Business-prenumeration](https://products.office.co
 Läs mer om Microsoft 365 Business på [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
 
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Vad är skillnaden mellan Office 365 Business Premium och Microsoft 365 Business?
-Vi har lagt till en sida-vid-sida-jämförelse av dessa två planer till [Microsoft 365 Business servicebeskrivning](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
+Vi har lagt till en sida-vid-sida-jämförelse av dessa två planer till [Microsoft 365 Business Service Beskrivning](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
 ## <a name="before-you-get-started"></a>Innan du börjar
 
-- **När ska jag välja Upgrade?** Uppgraderingen är rätt val när du vill uppgradera **alla användare** som tilldelats en enda plan. När du väljer uppgradera får alla plan användare byta till en annan plan samtidigt. Om du inte vill uppgradera alla som är tilldelade till en enda plan, köpa licenser för den nya planen (i det här fallet Microsoft 365 företag) och [tilldela dessa licenser individuellt](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) till varje användare som du vill uppgradera. 
-- **Vissa tillägg kan förhindra uppgradering** Om du försöker starta en uppgradering och har ett tillägg som hindrar dig från att fortsätta kan du ta bort tillägget först och sedan lägga till det igen senare-om du fortfarande behöver det. 
+- **När ska jag välja att uppgradera?** Uppgraderingen är rätt val när du vill uppgradera **alla användare** som tilldelats en enda plan. När du väljer uppgradera får alla plan användare byta till en annan plan samtidigt. Om du inte vill uppgradera alla som är tilldelade till en enda plan, köpa licenser för den nya planen (i det här fallet Microsoft 365 företag) och [tilldela dessa licenser individuellt](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) till varje användare som du vill uppgradera. 
+- **Vissa tillägg kan förhindra uppgraderingen** Om du försöker starta en uppgradering och har ett tillägg som hindrar dig från att fortsätta kan du ta bort tillägget först och sedan lägga till det igen senare om du fortfarande behöver det. 
 - **Om du förbetalt din plan** Det finns inte en enkel uppgraderingsväg för förbetalda abonnemang. Du vet om du har en förutbetald plan eftersom du ställer in din plan med ett produkt-ID som du kan ha köpt i en butik. Kontakta en partner, gå till Microsoft Store eller vänta tills ditt förbetalda abonnemang går ut för att byta till ett nytt abonnemang.
 
 ## <a name="upgrade-to-microsoft-365-business"></a>Uppgradera till Microsoft 365 Business
@@ -56,12 +56,12 @@ Köp dina licenser genom att följa dessa steg i det [nya administratörscentret
       ![En skärmbild visar var du ska välja uppgradering i administratörscenter.](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > Om du ser ett meddelande som säger "uppgradera din prenumeration stöds inte med gruppbaserad licensiering i Azure Active Directory", kan du bortse från detta om du inte har en mycket stor organisation. Organisationer som har valt det här alternativet kommer att vara medveten om att de använder gruppbaserad licensiering.
+  > Om du ser ett meddelande om att **uppgradera din prenumeration inte stöds med gruppbaserad licensiering i Azure Active Directory**, kan du bortse från detta om du inte har en mycket stor organisation. Organisationer som har valt det här alternativet kommer att vara medveten om att de använder gruppbaserad licensiering.
 
 4. Därefter kan du Visa en lista över Office-planer som du kan uppgradera till. I det här fallet hittar du Microsoft 365 affärsplan. Du kan rulla nedåt om du vill se alla Office-appar och-tjänster som ingår i den här planen. Under **Microsoft 365 Business**väljer du **Uppgradera** för att lägga till Microsoft 365 Business i kundvagnen.
 5. I vagnen:
-    1. Vi inkluderar automatiskt licenser för alla dina nuvarande användare till kundvagnen. Om du behöver mer eller mindre licenser måste du [köpa och tilldela dessa licenser individuellt](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
-    2. Du kan justera hur du vill betala-månad eller år. Välj den nedrullningsbara menyn för att göra ditt val.
+    1. Vi inkluderar automatiskt licenser för alla dina nuvarande användare. Om du behöver fler eller färre licenser måste du [köpa och tilldela dessa licenser individuellt](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
+    2. Du kan justera hur du vill betala: månad eller år. Välj den nedrullningsbara menyn för att göra ditt val.
 6. Välj **gå till kassan** där du ser en sammanfattning av ditt köp, inklusive betalningsmetoden för det här kontot. Du kan också lägga till en kampanjkod här om du har en.
 7. Välj **Beställ** för att slutföra köpet.
 Det tar Microsoft några minuter att ställa in dina nya service planer. Om du vill kontrollera förloppet väljer du **Kontrollera uppgraderingsstatus**. 
@@ -72,13 +72,13 @@ Det tar Microsoft några minuter att ställa in dina nya service planer. Om du v
   
 ## <a name="protect-user-devices-and-files"></a>Skydda användarenheter och filer
 
-Nu när Microsoft 365-företagslicenser har tilldelats, slutför du stegen för att börja skydda enheter och filer. Du kommer att använda några nya alternativ som ingår i Administrationscenter navigeringsfönstret.
+Nu när Microsoft 365-företagslicenser har tilldelats, slutför du stegen för att börja skydda enheter och filer. Du använder några nya alternativ som ingår i navigeringsfönstret i administrationscentret.
   
 1. I administratörscenter, i navigeringsfönstret, gå till **principer**för **enheter** \> .
     
 2. På sidan **enhetsprinciper** väljer du **Lägg till**.
     
-3. I den **Lägg till princip** fönstret ge principen ett namn (till exempel skydda arbetsfiler), och välj sedan en **Principtyp** från listrutan. 
+3. I den **Lägg till princip** fönstret ge principen ett namn (till exempel skydda arbetsfiler), och välj sedan en **Principtyp** från den nedrullningsbara listan. 
     
     Du kan ställa in användningsprinciper för att skydda filer på Android-och iPhone-enheter, samt Windows 10, och du kan ställa in principer för enhetskonfiguration för företagsägda Windows 10-enheter. Se följande länkar för mer information:
     
@@ -96,6 +96,3 @@ Nu när Microsoft 365-företagslicenser har tilldelats, slutför du stegen för 
   - Se [Konfigurera Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md) för steg för Windows-enheter. 
     
   - Se [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) för steg för Android-telefoner och iPhone. 
-
-
-

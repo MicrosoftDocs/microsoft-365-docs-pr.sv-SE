@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Lär dig mer om vilka inställningar som är tillgängliga för att skydda filerna arbete om en användares enhet blir stulen eller.
-ms.openlocfilehash: 505b85dabfdd27a9da8b7bcfdf7741dbb22b0ba3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Läs om vilka inställningar som är tillgängliga för att skydda arbetsfilerna om en användares enhet tappas bort eller stjäls.
+ms.openlocfilehash: fe40f04f27b90f97a734e0a761cdbf0bba60ca2c
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074459"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640510"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Skydda arbetsfiler om en mobil enhet försvinner eller blir stulen
 
-Principinställningarna bestämmer vad som sker automatiskt för att skydda en enhet som försvinner eller blir stulen. Vi rekommenderar att du godkänner standardvärdena vid installationen för att skapa programprinciper för alla användare i Android, iOS och Windows 10. Du kan skapa fler principer när installationen har slutförts.
+Principinställningarna bestämmer vad som sker automatiskt för att skydda en enhet som försvinner eller blir stulen. Vi rekommenderar att du accepterar standardvärdena under installationen för att skapa användningsprinciper för Android, iOS och Windows 10 som gäller för alla användare. Du kan skapa fler principer när installationen har slutförts.
   
 ## <a name="settings-that-protect-work-files"></a>Inställningar som skyddar arbetsfiler
 
@@ -40,8 +40,8 @@ Följande inställningar är tillgängliga för att skydda arbetsfiler om en anv
 |||
 |:-----|:-----|
 |Inställning  <br/> |Beskrivning  <br/> |
-|Ta bort arbetsﬁler från en inaktiv enheten efter så många dagar  <br/> |Om en enhet inte används under så många dagar som du anger här raderas alla arbetsfiler från enheten automatiskt.  <br/> |
-|Tvinga användare att spara alla filer i OneDrive för företag  <br/> |Om den här inställningen är **På**, kommer filer bara att kunna sparas till OneDrive för företag.  <br/> |
-|Kryptera arbetsfiler  <br/> |Behåll den här inställningen **På** så att arbetsfiler skyddas av kryptering. Om enheten försvinner eller blir stulen kommer ingen att kunna läsa företagets data.  <br/> |
+|Ta bort arbetsﬁler från en inaktiv enheten efter så många dagar  <br/> |Om en enhet inte används för det antal dagar som du anger här raderas alla arbetsfiler som lagras på enheten automatiskt.  <br/> |
+|Tvinga användare att spara alla filer i OneDrive för företag  <br/> |Om den här inställningen är **på**är den enda tillgängliga spara plats för arbetsfiler OneDrive för företag.  <br/> |
+|Kryptera arbetsfiler  <br/> |Behåll den här inställningen **På** så att arbetsfiler skyddas av kryptering. Även om enheten tappas bort eller blir stulen kan ingen läsa dina företagsdata.  <br/> |
    
 
