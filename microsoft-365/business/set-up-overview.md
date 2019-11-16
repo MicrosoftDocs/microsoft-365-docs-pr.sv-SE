@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Översikt över konfigurera steg för Microsoft 365 Business.
-ms.openlocfilehash: 50f172c235aa06aa78fec60fc119ac7f568df308
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575597"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676037"
 ---
 # <a name="overview-of-setup"></a>Översikt över installationsprogrammet
 
@@ -70,7 +70,6 @@ De flesta inställningsstegen kan göras i installationsguiden, men de andra alt
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: installera Office 365 Business
 - Du kan installera Office automatiskt på Windows-enheter med hjälp av [installationsguiden](set-up.md#deploy-office-365-client-apps).
-- [Installera Office](auto-install-or-uninstall-office.md) automatiskt från administratörscenter.
 - Låt användarna [installera Office-appar](https://docs.microsoft.com/office365/admin/setup/install-applications) för Windows och enheter.
      
 ## <a name="advanced"></a>Avancerade

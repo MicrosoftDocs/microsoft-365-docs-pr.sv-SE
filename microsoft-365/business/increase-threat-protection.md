@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
-ms.openlocfilehash: 00a40ceb6d51add2ebe8cc7ca4c299fe07a10b89
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320117"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676017"
 ---
 # <a name="increase-threat-protection"></a>Öka skyddet mot hot
 
@@ -86,7 +86,7 @@ Så här skapar du en regel för e-transport:
    
 Mer information finns i:
   
-- [Hur man handskas med Ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [Hur man handskas med Ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
 - [Återskapa din OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
@@ -178,7 +178,7 @@ Om du vill skapa en säker bifogad princip för ATP, antingen titta på [den hä
 |Omdirigera bifogad fil vid identifiering  <br/> |Aktivera omdirigering (Markera den här rutan) ange administratörskontot eller en postlådeinställning för karantän.          Tillämpa ovanstående val om malware skanning för bilagor timeout eller fel uppstår (Markera den här rutan).  <br/> |
 |Tillämpas på  <br/> |Mottagar domänen är. . . Välj din domän.  <br/> |
    
-Mer information finns [i ställa in Office 365 ATP anti-phishing principer](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Mer information finns [i ställa in Office 365 ATP anti-phishing principer](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 
 
