@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Lär dig hur du använder Microsoft 365 Business för att ta bort företagsdata från användarenheter eller Windows-datorer. '
-ms.openlocfilehash: 169bc7d849bb934de2788daebb90308b1a086111
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59e94a08e149a5cb119aabbbe816ccd2f4a9f9fb
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575747"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715241"
 ---
 # <a name="remove-company-data-from-devices"></a>Ta bort företagsdata från enheter
 
-[![Etiketten så att du vet att Admin Center förändras och du kan hitta mer information på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Ta bort företagsdata
 
@@ -41,9 +41,9 @@ Du kan använda Microsoft 365 Business för att ta bort företagsdata som använ
   
 3. På sidan **Hantera** väljer eller söker du efter en användare som är data som du vill ta bort och väljer namnet. 
     
-4. I nästa fönster väljer du enheten eller enheterna i listan **enheter** och i enhetsfönstret som öppnas kan du välja att återställa enheten till fabriksinställningarna eller ta bort företagsdata beroende på enhetstyp. 
+4. Välj enheten eller enheterna i listan **enheter** i nästa fönster. På enhetspanelen som öppnas kan du välja att återställa enheten till fabriksinställningarna eller ta bort företagsdata, beroende på enhetstyp. 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
+    ![Välj den enhet som du vill ta bort data från i fönstret ta bort företagsdata.](media/resetorremove.png)
   
 5. I bekräftelsefönstret väljer du **Bekräfta** \> **stängning**.
     

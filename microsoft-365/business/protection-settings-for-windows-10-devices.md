@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Lär dig hur du skapar en apphanteringsprincip och skyddar arbetsfiler på Windows 10-enheter.
-ms.openlocfilehash: 0e1221e533418166b80afd94431414016774f247
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: ca6d789e0242975a0395e6cf5653d3f43f819801
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575787"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715261"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Ange programskyddsinställningar för Windows 10-enheter
 
@@ -52,15 +52,15 @@ Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter 
     
 7. Ange **Hindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler i OneDrive för företag** till **På** om du inte vill att användare ska kunna spara filer på sina datorer. 
     
-9. Expandera **Återställ data på Windows-enheter**. Vi rekommenderar att du anger den till **På**.
+9. Expandera **återskapa data på Windows-enheter**. Vi rekommenderar att du aktiverar den **.**
     
-    Innan du kan bläddra till certifikatet för dataåterställningsagenten måste du skapa ett. Anvisningar finns i [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://go.microsoft.com/fwlink/p/?linkid=853700) (skapa och verifiera ett certifikat för en dataåterställningsagent för kryptering av filsystem).
+    Innan du kan bläddra till certifikatet för dataåterställningsagenten måste du skapa ett. Instruktioner finns i [skapa och verifiera ett dra-certifikat (Encrypting File System) för Data Recovery agent (EFS)](https://go.microsoft.com/fwlink/p/?linkid=853700).
     
-    Som standard krypteras arbetsfiler med en hemlig nyckel som lagras på enheten och som är kopplad till användarens profil. Endast användaren kan öppna och dekryptera filen. Men om en enhet försvinner eller en användare tas bort kan en fil fastna i ett krypterat tillstånd. Certifikatet för dataåterställningsagenten kan användas av en administratör för att dekryptera filen.
+    Som standard krypteras arbetsfiler med en hemlig nyckel som lagras på enheten och som är kopplad till användarens profil. Endast användaren kan öppna och dekryptera filen. Men om en enhet försvinner eller en användare tas bort kan en fil fastna i ett krypterat tillstånd. En administratör kan använda DRA-certifikatet (Data Recovery agent) för att dekryptera filen.
     
     ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. Expandera **Skydda ytterligare nätverks- och molnplatser** om du vill lägga till ytterligare domäner och/eller SharePoint Online-webbplatser för att säkerställa att filerna i samtliga angivna program skyddas. Om du behöver ange mer än ett objekt i ett fält anger du ett semikolon (;) mellan objekten.
+10. Expandera **skydda ytterligare nätverk och moln platser** om du vill lägga till ytterligare domäner eller SharePoint Online-platser för att se till att filer i alla listade appar är skyddade. Om du behöver ange mer än ett objekt i ett fält anger du ett semikolon (;) mellan objekten.
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
