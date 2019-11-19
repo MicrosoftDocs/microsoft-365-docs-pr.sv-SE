@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Avancerat skydd mot hot och skydda känsliga data.
-ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676017"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704084"
 ---
 # <a name="increase-threat-protection"></a>Öka skyddet mot hot
 
@@ -233,4 +233,4 @@ Mer information finns i [Office 365 ATP Safe Links](https://go.microsoft.com/fwl
 
 3. När resultatet visas väljer du Start bredvid **Microsoft Intune** för att göra det till en favorit och lätt att hitta senare.
 
-Förutom administratörscenter kan du använda Intune för att registrera och hantera organisationens enheter. Mer information finns i [funktioner efter registreringsmetod för Windows-enheter](https://docs.microsoft.com/intune/enrollment-method-capabs) och [registreringsalternativ för enheter som hanteras av Intune](https://docs.microsoft.com/intune/enrollment-options).
+Förutom administratörscenter kan du använda Intune för att registrera och hantera organisationens enheter. Mer information finns i [funktioner efter registreringsmetod för Windows-enheter](https://docs.microsoft.com/intune/enrollment/enrollment-method-capab) och [registreringsalternativ för enheter som hanteras av Intune](https://docs.microsoft.com/intune/enrollment-options).
