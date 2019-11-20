@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Läs om hur du konfigurerar Microsoft 365 Business.
-ms.openlocfilehash: cd59570cbcb9b027780e160117b44be88770d6b9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f29dbdb61636fdfe573a1a6920d0aed963b737ad
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575557"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721498"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business i installationsguiden
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Lägg till din domän, användare och Ställ in policyer
 
-[![Etiketten så att du vet att Admin Center förändras och du kan hitta mer information på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 När du köper Microsoft 365 Business har du möjlighet att använda en domän som du äger eller köpa en under [registreringen](sign-up.md).
 
@@ -58,7 +58,7 @@ När du köper Microsoft 365 Business har du möjlighet att använda en domän s
     
 4. Följ stegen i guiden för att [Skapa DNS-poster hos valfri DNS-Värdleverantör för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) som verifierar att du äger domänen. Om du känner till din domänvärd, se även [värdspecifika instruktioner](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
-    Om din webbhotellsleverantör är GoDaddy, eller en annan värd som är aktiverad med [domänanslutning](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), är processen enkel och du kommer automatiskt att bli ombedd att logga in och låta Microsoft autentisera för din räkning:
+    Om din Värdleverantör är GoDaddy eller en annan värd som är aktiverad med [domänanslutning](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), är processen enkel och du kommer automatiskt att bli ombedd att logga in och låta Microsoft autentisera för din räkning.
 
     ![På GoDaddy bekräfta åtkomstsidan, Välj Auktorisera.](media/godaddyauth.png)
 
@@ -93,7 +93,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om den inte gör det [ändrar du namnservrar till konfigurera Office 365 med alla domänregistratorn](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
     - Om du har befintliga DNS-poster, till exempel en befintlig webbplats, men DNS-värden har aktiverats för [domänanslutning](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), väljer du **Lägg till poster åt mig**. Godkänn alla standardinställningar på sidan **Välj dina onlinetjänster** och välj **Nästa**och välj **auktorisera** på din DNS-värdens sida.
-    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverat för domänanslutning), kommer du att vilja hantera dina egna DNS-poster för att se till att de befintliga tjänsterna förblir anslutna. Mer information finns i [grunderna om domäner](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
+    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverat för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna är anslutna. Mer information finns i [grunderna om domäner](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
 
         ![Anslut din domän sida med jag ska hantera mina egna DNS-poster.](media/connectyourdomainpage.png)
 
@@ -103,7 +103,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 
 De principer som du ställer in i guiden tillämpas automatiskt på en [säkerhetsgrupp](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) som kallas *alla användare*. Du kan också skapa ytterligare grupper för att tilldela principer till i administratörscenter.
 
-1. På **skydda dina arbetsfiler på mobila enheter** alternativet **skydda arbetsfiler när enheter förloras eller stjäls** är markerad som standard. Du har möjlighet att aktivera **hantera hur användare får åtkomst till Office-filer på mobila enheter**, och detta rekommenderas.
+1. På **skydda dina arbetsfiler på mobila enheter**, alternativet **skydda arbetsfiler när enheter förloras eller stjäls** är markerad som standard. Du har möjlighet att aktivera **hantera hur användare får åtkomst till Office-filer på mobila enheter**, och detta rekommenderas.
 
     ![Skärmbild av skydda jobbfiler på sidan mobila enheter.](media/protectworkfilesondevices.png)
 
@@ -123,7 +123,8 @@ De principer som du ställer in i guiden tillämpas automatiskt på en [säkerhe
 
 ## <a name="deploy-office-365-client-apps"></a>Distribuera Office 365-klientappar
 
-Om du väljer att automatiskt installera Office-appar i under installationen installeras apparna på Windows 10-enheterna när användarna har loggat in på Azure AD från sina Windows-enheter med sina arbetsuppgifter.
+Om du väljer att automatiskt installera Office-appar under installationen kommer apparna att installeras på Windows 10-enheterna när användarna har loggat in på Azure AD från sina Windows-enheter med sina autentiseringsuppgifter för arbete.
+
 Om du vill installera Office på mobila iOS-eller Android-enheter läser [du konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md).
 
 Du kan också installera Office individuellt. Mer information finns i [installera Office på en PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) .

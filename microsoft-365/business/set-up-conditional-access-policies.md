@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ställer in principer för villkorlig åtkomst för Microsoft 365-kampanjer.
-ms.openlocfilehash: 0fccd103e3633c7fa5ac07c731341eee93059986
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: aebdb733c2dd9a05947335ad4f151104d801568e
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715091"
+ms.locfileid: "38718838"
 ---
 # <a name="set-up-conditional-access-policies"></a>Ställ in principer för villkorlig åtkomst
 
@@ -35,10 +35,10 @@ Principer för [villkorlig åtkomst](https://docs.microsoft.com/azure/active-dir
 Dessa principer kräver administratörer och användare att ange en andra form av autentisering (kallas multifaktorautentisering eller MFA) när vissa villkor uppfylls. Till exempel om en användare loggar in från ett annat land, kan inloggningen anses vara riskabelt och användaren måste tillhandahålla ytterligare en form av autentisering. 
 
 För närvarande omfattar baslinje principer följande:
-- **KRÄV MFA för administratörer** – kräver multifaktorautentisering för de mest privilegierade administratörsrollerna, inklusive global administratör.
-- **användarskydd** – kräver multifaktorautentisering för användare endast när en inloggning är riskabelt. 
-- **Blockera äldre autentisering** – äldre klientappar och vissa nya appar använder inte nyare, säkrare autentiseringsprotokoll. Dessa äldre appar kan kringgå principer för villkorlig åtkomst och få obehörig åtkomst till din miljö. Den här principen blockerar åtkomsten från klienter som inte stöder villkorlig åtkomst. 
-- **KRÄV MFA för service hantering** – kräver multifaktorautentisering för åtkomst till hanteringsverktyg, inklusive Azure Portal (där du konfigurerar principer för baslinje). 
+- **Kräv MFA för administratörer** &ndash; kräver multifaktorautentisering för de mest privilegierade administratörsrollerna, inklusive global administratör.
+- **användarskydd** &ndash; kräver multifaktorautentisering för användare endast när en inloggning är riskabelt. 
+- **Block äldre autentisering** &ndash; äldre klientappar och vissa nya appar använder inte nyare, säkrare autentiseringsprotokoll. Dessa äldre appar kan kringgå principer för villkorlig åtkomst och få obehörig åtkomst till din miljö. Den här principen blockerar åtkomsten från klienter som inte stöder villkorlig åtkomst. 
+- **Kräv MFA för Service Management** &ndash; kräver multifaktorautentisering för åtkomst till hanteringsverktyg, inklusive Azure Portal (där du konfigurerar principer för baslinje). 
 
 Microsoft rekommenderar att du aktiverar alla dessa baslinje principer. När dessa principer har aktiverats uppmanas administratörer och användare att registrera för Azure Multii-Factor-autentisering.
 

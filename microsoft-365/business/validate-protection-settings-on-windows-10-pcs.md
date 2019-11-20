@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Lär dig hur du validerar Microsoft 365 Business app inställningar i Windows 10 enheter.
-ms.openlocfilehash: 7710accf9a3cd1db788dd5215ab6d7bbb97e48a6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Lär dig hur du validerar Microsoft 365 Business app Protection-inställningar i Windows 10-enheter.
+ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074389"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721869"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Bekräfta programskyddsinställningar på PC-datorer med Windows 10
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Kontrollera att användarna inte kan kopiera företagsdata till personliga filer på företagets enheter
 
-När du [ställt in principer för programskydd](protection-settings-for-windows-10-devices.md) kan det ta några timmar innan principen börjar gälla på användarnas enheter. Om du ställde in alternativet **På** för inställningen **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** (hindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler på OneDrive för företag) för enheter som ägs av företaget kan du kontrollera det på användarnas enheter när de har anslutit till Azure AD och loggat in. 
+När du [ställt in principer för programskydd](protection-settings-for-windows-10-devices.md) kan det ta några timmar innan principen börjar gälla på användarnas enheter. Om du har **aktiverat** **förhindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler till OneDrive för företag** -inställningen för företagsägda enheter, kan du kontrollera detta på användarens enhet när de har anslutit till Azure AD och loggat in. 
   
  **Kontrollera anslutningsinställningar**
   
@@ -38,11 +38,11 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. På sidan **Hanteras av** \< innehavare namn \> kan du se den **anslutningsinformation** som innehåller en **hanteringsserveradress** som den som visas i följande bild. 
+2. På sidan **hanterad av** \<klientnamn\> kan du se **anslutningsinformationen** som innehåller en **hanterings server adress** som den som visas i följande bild. 
     
     ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- **Kontrollera att du inte kan klistra in företagsdata i ett program som inte hanteras**
+ **Kontrollera att du inte kan klistra in företagsdata i en icke-hanterad app**
   
 1. Öppna Outlook 2016 som installerades av Microsoft 365 Business.
     
@@ -50,7 +50,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
     Öppna Anteckningar och försök att klistra in innehållet där.
     
-    Du får ett felmeddelande om att programmet inte kan få åtkomst till innehållet.
+    Du får ett felmeddelande som säger att appen inte kan komma åt innehåll.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -60,7 +60,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
 
  **Kontrollera anslutningsinställningar**
   
-1. På din personliga enhet med Windows 10 där du är loggad som lokal användare går du till **Windows-inställningar** och klickar eller trycker på **Konton** \> **Åtkomst till arbete eller skola**.
+1. På din Windows 10 personlig enhet där du är inloggad som en lokal användare, gå till **Windows-inställningar**, och klicka eller tryck på **konton** \> **tillgång arbete eller skola**.
     
 2. Välj **Anslut** under **Åtkomst till arbete eller skola**.
     
@@ -68,13 +68,13 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
 4. På sidan **Åtkomst till arbetet eller skolan** väljer du **Arbets- eller skolkonto** och väljer sedan **Info**.
     
-    ![Click or tap Info on the Work or school account dalog.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Klicka eller tryck på info i arbets-eller skolkonto dialogen.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. På sidan **Åtkomst till arbete eller skola** kan du se den **anslutningsinformation** som innehåller en **hanteringsserveradress** som den som visas i följande bild och som innehåller orden  *wip*  och  *mam*  . 
+5. På sidan **åtkomst arbete eller skola** kan du se **anslutningsinformationen** som innehåller en **hanterings server adress** , som den som visas i följande bild, och innehåller orden *Pia* och *Mam* inom. 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- **Kontrollera att du inte kan klistra in företagsdata i ett program som inte hanteras**
+ **Kontrollera att du inte kan klistra in företagsdata i en icke-hanterad app**
   
 1. Öppna Outlook 2016 och lägg till ditt Microsoft 365 Business-konto om det behövs, och logga in med dina Microsoft 365 Business-autentiseringsuppgifter.
     
@@ -82,7 +82,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
     Öppna Anteckningar och försök att klistra in innehållet där.
     
-    Du får ett felmeddelande om att programmet inte kan få åtkomst till innehållet.
+    Du får ett felmeddelande om att appen inte kan komma åt innehåll.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   

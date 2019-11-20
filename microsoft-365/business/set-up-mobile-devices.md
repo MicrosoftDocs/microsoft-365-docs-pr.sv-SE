@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installera Office på en iPhone eller en Android-telefon, och dina arbetsfiler i Office-appar kommer att skyddas av Microsoft 365 Business.
-ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: e09db43705d601df0c0b30a46ee36cf0295ecae3
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575617"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718948"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Konfigurera mobila enheter för Microsoft 365 företag-användare
 
@@ -58,11 +58,11 @@ Ange e-postadressen till arbetet på skärmen **Lägg till e-postkonto** \> **L�
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-Om din organisation skyddar programfiler visas en dialogruta som säger att din organisation nu skyddar appens data och att du måste starta om appen om du vill fortsätta att använda den. Tryck på **OK** och Stäng Outlook. 
+Om din organisation skyddar filer i appar ser du en dialogruta som anger att din organisation nu skyddar data i appen och du måste starta om appen för att fortsätta använda den. Tryck på **OK** och Stäng Outlook. 
   
-![Screenshot that showa your organization is now protecting your Outlook app](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![Skärmbild som visar din organisation skyddar nu din Outlook-app](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-Leta upp Outlook på din iPhone och starta om. Ange och bekräfta PIN-koden när du blir uppmanad. Outlook på din iPhone är nu redo att användas.
+Leta upp Outlook på din iPhone och starta om. När du uppmanas till det anger du en PIN-kod och verifierar den. Outlook på din iPhone är nu redo att användas.
   
 ![Set a PIN to access your organization's data](media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
@@ -72,11 +72,11 @@ Om du vill börja konfigurera på din Android-telefon går du till Play Store.
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Ange Microsoft Outlook i sökrutan och tryck på **Installera**.Tryck på **Öppna** när installationen av Outlook är genomförd.
+Skriv Microsoft Outlook i sökrutan på Google Play och tryck på **Installera**. När installationen av Outlook är klar trycker du på **Öppna**.
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-I Outlook-appen trycker du på **Komma igång**, lägger till ditt Microsoft 365 Business e-postkonto \> **Fortsätt** och logga in med dina inloggningsuppgifter.
+I Outlook-appen trycker du på **Kom igång**och sedan lägger du till ditt Microsoft 365 \> Business-e-postkonto **fortsätter**och loggar in med organisationens autentiseringsuppgifter.
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -84,7 +84,7 @@ I dialogrutan som meddelar att du måste installera appen Intune-företagsportal
   
 ![Tap on Go to store to get Intune Company Portal app](media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-Installera Intune-företagsportal från Play Butik.
+Installera Intune-företagsportalen i Play butik.
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du köper och registrerar dig för Microsoft 365 Business.
-ms.openlocfilehash: ef34a3e2bc848ce98efb2218f7bdd9b2a186b6b2
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: 16953f7c752c3105af795e721332e2e6d6bdebe5
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968792"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718728"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Registrera dig för Microsoft 365 Business
 
@@ -46,10 +46,10 @@ Det finns tre sätt att få Microsoft 365 Business:
 För att registrera dig och köpa Microsoft 365 för ditt företag, utför följande steg:
 
 1. På [sidan Microsoft 365 för företag](https://go.microsoft.com/fwlink/?linkid=2109654)väljer du **Visa planer & prissättning**. 
-2. På nästa sida, ta reda på månadskostnaden och bläddra ned på sidan för att ta reda på mer om vad som ingår i Microsoft 365 Business. Välj **Köp nu**Under Microsoft 365 Business.
+2. På nästa sida, ta reda på månadskostnaden och bläddra sedan ned på sidan för att ta reda på mer om vad som ingår i Microsoft 365 Business. Välj **Köp nu**Under Microsoft 365 Business.
 3. På sidan **tack för att du väljer Microsoft 365-företag** anger du din information för att komma igång.
 4. I **steg 1**anger du en e-postadress som du redan använder. Detta kan vara din nuvarande e-postadress för arbete eller en adress som du vill att Microsoft ska använda för att kommunicera med dig under installationen. Det är också adressen där vi skickar dig information om din faktura och förnyelser. Välj sedan, **Ställ in konto**.
-5. I **steg 2**anger du ditt namn, telefonnummer, företagsnamn och plats. Observera att ditt land eller din region bestämmer de exakta tjänsterna du får från Microsoft och inte kan ändras när du har slutfört det här steget. Välj **Nästa**.
+5. I **steg 2**anger du ditt namn, telefonnummer, företagsnamn och plats. Ditt land eller din region bestämmer de exakta tjänster som du får från Microsoft och kan inte ändras när du har slutfört det här steget. Välj **Nästa**.
     > [!NOTE]
     > Vi visar ditt företagsnamn i administratörscenter; Det är här du hanterar Microsoft 365-användare, licenser och så vidare. Vi inkluderar även det i alla interna (SharePoint) webbplats-URL: er.
 6. I **steg 3**:
@@ -66,7 +66,7 @@ För att registrera dig och köpa Microsoft 365 för ditt företag, utför följ
         
         - **Jag är inte säker, eller jag äger ett domännamn redan** 
         
-             Välj **Skaffa en Microsoft-domän för tillfället**. Detta kostar ingenting, och senare kan du få ett eget namn för ditt företag, eller ansluta till en du redan äger&mdash;vi visar dig hur.
+             Välj **Skaffa en Microsoft-domän för tillfället**. Detta kostar ingenting, och senare kan du få ett eget namn för ditt företag, eller ansluta till en du redan äger. Vi visar dig hur.
 
     3. Välj **Nästa** för att skapa ditt användar-ID och företagets e-postadress. Ange namnet (kallas även alias) som du vill använda. Robert Young kan till exempel använda RobY eller RobYoung som ett arbets-alias. Lägg till ett lösenord och välj **Registrera dig**. Anteckna ditt lösenord. Vi skickar ett e-postmeddelande till den adress du angav i steg 1 för att påminna dig om ditt användar-ID.
 7. I **steg 4**: 
