@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, vanliga frågor, svar, Business
 ms.date: 06/08/2018
-ms.openlocfilehash: e4db583fa52807e27bb088083aae028e2e1c05ce
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38311073"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748380"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft 365 Business
 
@@ -36,7 +36,7 @@ Microsoft 365 är en integrerad lösning som sammanför klassens bästa produkti
 -   Appskydd för Office och andra mobilappar med Intunes Appskydd. 
 -  Enhetshantering för Windows 10-datorer, MacOS och mobila enheter med Intune-enhetshantering. 
 -  Identitetsskydd med multifaktorautentisering, lösenordsåterställning med självbetjäning och villkorlig åtkomst.
--  Konsekvent säkerhetskonfiguration mellan enheter&mdash;skydd av företagsdata mellan enheter; Windows Defender, som alltid är-på och aktuell. 
+-  Konsekvent säkerhetskonfiguration mellan enheter&mdash;skydd av företagsdata mellan enheter; Windows Defender, som alltid är på och aktuell. 
  
  
 **Förenklad enhetsdistribution och Användarkonfiguration** 
@@ -63,7 +63,7 @@ Microsoft 365 Business kan köpas via en <a href="https://www.microsoft.com/solu
 Microsoft 365 Business erbjuds på USD 20,00 användare/månad baserat på ett _årligt avtal_ om köpt direkt från Microsoft. Vid köp via en Microsoft-partner kan prissättningen variera beroende på vilka tjänster partnern tillhandahåller och deras prissättningsmodell för Microsoft 365-företag. 
 
 ### <a name="is-there-a-cap-to-how-many-microsoft-365-business-seats-a-customer-can-have"></a>Finns det ett tak för hur många Microsoft 365 Business säten en kund kan ha? 
-Microsoft 365 Business utformades för små och medelstoraföretag med låga till medelstora krav på IT-komplexitet. Kunder kan köpa upp till 300 Microsoft 365-företagslicenser för sin organisation. Kunder kan mixa och matcha moln prenumerationer; Därför kan kunder, beroende på sina IT-krav, lägga till Microsoft 365 Enterprise-licenser till samma konto. 
+Microsoft 365 Business utformades för små och medelstoraföretag med låga till medelstora krav på IT-komplexitet. Kunder kan köpa upp till 300 Microsoft 365-företagslicenser för sin organisation. Kunder kan mixa och matcha moln prenumerationer. Därför kan kunder, beroende på sina IT-krav, lägga till Microsoft 365 Enterprise-licenser till samma konto. 
  
 När kunder anser en miljö som består av flera prenumerationstyper, bör de arbeta med sina betrodda IT-rådgivare för att avgöra hur man bäst hanterar och säkrar de olika prenumerationerna som Microsoft 365 Business och Microsoft 365 Enterprise use olika funktioner för att skydda och hantera program och data.
 
@@ -135,7 +135,7 @@ Ja, Microsoft 365 Business-prenumeranter är licensierade att använda fullstän
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Har Azure Active Directory Premium P1 Microsoft 365 Business? 
-Microsoft 365 Business innehåller Välj Azure AD Premium P1 (AADP P1)-funktioner som självbetjäning för återställning av lösenord med AD Write-back, Azure MFA och villkorlig åtkomst. Det omfattar inte hela AADP P1. Mer information finns i [beskrivningen av Microsoft 365 Business Service](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148) . 
+Microsoft 365 Business innehåller Välj Azure AD Premium P1 (AADP P1)-funktioner som självbetjäning för återställning av lösenord med AD Write-back, Azure MFA och villkorlig åtkomst. Det omfattar inte hela AADP P1. Mer information finns i beskrivningen av [Microsoft 365 Business Service](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
  
  
 ### <a name="does-microsoft-365-business-allow-customers-to-manage-macs"></a>Tillåter Microsoft 365 Business kunder att hantera Mac-datorer? 
@@ -178,13 +178,13 @@ Microsoft tillhandahåller ett brett urval av resurser för CSP-partner för att
 ### <a name="what-up-sell-opportunities-does-microsoft-365-business-give-partners"></a>Vilka merförsäljning möjligheter ger Microsoft 365 Business partner? 
 Microsoft 365 Business gör det möjligt för partner att behålla sin betrodda rådgivare position med kunder genom att skapa en solid och säker plattform på vilken du kan sälja ytterligare tjänster och uppgradera befintliga produkter och tjänster. Microsoft 365 Business erbjuder en möjlighet att få en uppgraderings diskussion med kunder som nu använder Exchange Server, Exchange Online eller Office 365 Business Essentials. Partners kan också få mer intäkter från ökade Managed Services och/eller peruser supportavgifter. 
  
-Med den nya Windows AutoPilot-funktionen som ingår i Microsoft 365 Business, partner som har varit ovilliga att sälja nya Windows-enheter på grund av distribution logistik och kostnader kommer att finna denna möjlighet mycket mer attraktivt. Kunder som är övertygade om säkerheten för sina lokala och mobila enheter är också mer benägna att investera i fler tjänster, till exempel Dynamics 365. 
+Med den nya Windows AutoPilot-funktionen som ingår i Microsoft 365 Business, partner som har varit ovilliga att sälja nya Windows-enheter på grund av distribution logistik och kostnader kommer att hitta denna möjlighet mycket mer attraktivt. Kunder som är övertygade om säkerheten för sina lokala och mobila enheter är också mer benägna att investera i fler tjänster, till exempel Dynamics 365. 
  
 ### <a name="should-partners-sell-microsoft-365-business-over-other-plans-from-microsoft"></a>Bör partners sälja Microsoft 365 Business över andra planer från Microsoft? 
 En Microsoft Cloud Solution Provider bör alltid sälja den plan som bäst passar kundernas affärsbehov och budget. Om en kund till exempel måste följa sekretess-och säkerhetsföreskrifterna kan en CSP sälja Microsoft 365 Business plus eventuella tillägg som hjälper kunden att uppfylla sina krav eller som kan föreslå avancerad säkerhet och hantering som tillhandahålls av Microsoft 365 Business Företags-SKU: er. 
  
-### <a name="some-of-my-customers-have-devices-that-are-not-genuine-will-microsoft-365-business-make-these-devices-genuine"></a>Några av mina kunder har enheter som inte är äkta; kommer Microsoft 365 företag att göra dessa enheter äkta? 
-Microsoft 365 företag gör inte en annars icke-äkta version av Windows, äkta. Microsoft 365 Business tillhandahåller en uppgraderings förmån som gör att de kunder som kör äkta Windows 7, 8 eller 8,1 Pro kan uppgradera till den senaste, äkta versionen av Windows 10 Pro. 
+### <a name="some-of-my-customers-have-devices-that-arent-genuine-will-microsoft-365-business-make-these-devices-genuine"></a>Några av mina kunder har enheter som inte är äkta; kommer Microsoft 365 företag att göra dessa enheter äkta? 
+Mikroskop 365 affär icke ' göra en annars inte-äkta version av Fönstren, äkta. Microsoft 365 Business tillhandahåller en uppgraderings förmån som gör att de kunder som kör äkta Windows 7, 8 eller 8,1 Pro kan uppgradera till den senaste, äkta versionen av Windows 10 Pro. 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-help-customers-with-their-compliance-obligations"></a>Vad är GDPR och hur hjälper Microsoft 365 Business kunder med sina efterlevnadskrav?
 Den allmänna data Skyddsförordningen (GDPR) är en omfattande ny sekretess lag som ger invånarna i Europeiska unionen (EU) större kontroll över sina "personuppgifter" och kräver att organisationer upprätthåller integriteten för dessa personuppgifter. GDPR kräver att organisationer som kontrollerar eller behandlar personuppgifter som är knutna till EU-medborgare endast använder dataprocessorer från tredje part som uppfyller kraven i GDPR för behandling av personuppgifter. I mars 2017 gjorde Microsoft tillgängliga kontraktsenliga garantier som ger dessa försäkringar. Kunder som har frågor om hur Microsoft kan hjälpa dem att uppfylla sina ytterligare GDPR-skyldigheter bör lära sig om avancerade efterlevnadsfunktioner och säkerhetsfunktioner som är tillgängliga i Microsoft 365 Business (till exempel Azure information Protection, data förebyggande av förluster, Avancerat skydd mot hot och så vidare) och i andra sviter (till exempel Microsoft 365 Enterprise E5). Om du vill veta mer, besök [www.Microsoft.com/GDPR](https://www.microsoft.com/gdpr).
