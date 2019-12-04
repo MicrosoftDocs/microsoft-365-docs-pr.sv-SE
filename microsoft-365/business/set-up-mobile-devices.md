@@ -15,30 +15,31 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installera Office på en iPhone eller en Android-telefon, och dina arbetsfiler i Office-appar kommer att skyddas av Microsoft 365 Business.
-ms.openlocfilehash: e09db43705d601df0c0b30a46ee36cf0295ecae3
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: d87ea714f578130d05be57d1f66270b306f37c7c
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718948"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831392"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Konfigurera mobila enheter för Microsoft 365 företag-användare
 
 Följ instruktionerna på flikarna för att installera Office på en iPhone eller en Android-telefon. När du har utfört de här stegen skyddas arbetsfiler som skapats i Office-program av Microsoft 365 Business.
 
-  
 Exemplet rör Outlook, men gäller även för alla andra Office-program du vill installera.
   
 ## <a name="set-up-mobile-devices"></a>Konfigurera mobila enheter
 
 ## <a name="iphonetabiphone"></a>[Iphone](#tab/iPhone)
   
-Titta på en video om hur du konfigurerar Office-appar på iOS-enheter med Microsoft 365 Business:
+Titta på en video om hur du konfigurerar Office-appar på iOS-enheter med Microsoft 365 Business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
@@ -68,6 +69,12 @@ Leta upp Outlook på din iPhone och starta om. När du uppmanas till det anger d
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
+Titta på en video om hur du installerar Outlook och Office på Android-enheter.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
+
+Om du hittade den här videon till hjälp, kolla in den [kompletta tränings serien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+
 Om du vill börja konfigurera på din Android-telefon går du till Play Store.
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
@@ -91,7 +98,9 @@ Installera Intune-företagsportalen i Play butik.
 Öppna Outlook igen, och ange/bekräfta din PIN-kod. Outlook-appen är nu klar för användning.
   
 ![Set  PIN for Outlook app in Android](media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
-  
+
+## <a name="see-also"></a>Se även
+
+[Microsoft 365 Business utbildning videor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+
 ---
-
-
