@@ -6,10 +6,11 @@
 ## Installation
 ### [Översikt över installationsprogrammet](set-up-overview.md)
 ### [Konfigurera Microsoft 365 Business](set-up.md)
+### [Säkra Windows 10-datorer](secure-win-10-pcs.md)
 ### [Uppgradera till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Förbered för Office-klientdistribution](prepare-for-office-client-deployment.md)
 ### [Hjälp användarna att installera Office](help-users-install-office.md)
-### [Komma åt lokala resurser]()
+### [Åtkomst till lokala resurser]
 #### [Aktivera domänanslutna Windows 10-enheter som ska hanteras](manage-windows-devices.md)
 #### [Komma åt resurser från en Azure AD-ansluten enhet](access-resources.md)
 ## Inställning av användar enhet

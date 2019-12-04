@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Översikt över installationsstegen för Microsoft 365 Business.
-ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721568"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812787"
 ---
 # <a name="overview-of-setup"></a>Översikt över installationsprogrammet
 
@@ -44,16 +44,15 @@ De flesta av konfigurationsstegen kan göras i installationsguiden, men de andra
         - Du kan också [lägga till användare senare](add-users-m365b.md) i administratörscenter.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Steg 2: Konfigurera säkerhetsprinciper och konfigurera enheter 
 
-  - Använd [installationsguiden](set-up.md#protect-data-and-devices) för att konfigurera enhets-och säkerhetsprinciper. 
+  - Konfigurera enhetspolicyer med hjälp av [installationsguiden](set-up.md#protect-your-organization) . 
   - Du kan också lägga till fler eller redigera dem senare i [administratörscenter](view-policies-and-devices.md) och i [Intune-portalen](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
-  - Förutom säkerhetsinställningarna i installationsguiden kan du öka säkerheten genom att lägga till följande inställningar:
+  - Installationsguiden kommer också att ställa in grundläggande skydd mot hot och dataförlust förebyggande inställningar.
+  
+  Förutom säkerhetsinställningarna i installationsguiden kan du öka säkerheten genom att lägga till följande inställningar:
 
       - **E-malware skydd**
-      - **Säkra Länkar för avancerade hot Protection (ATP)**
-      - **ATP Safe bilagor**
       - **ATP anti-phishing**
       - **Exchange Online - arkivering**
-      - **Skydd av data förlust (DLP)**
       - **Azure information Protection (Plan1**)
 
           [Ställ in avancerade säkerhetsprinciper](set-up-advanced-security.md)för att komma igång.
@@ -62,10 +61,12 @@ De flesta av konfigurationsstegen kan göras i installationsguiden, men de andra
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Steg 3: Konfigurera och hantera Windows 10-enheter
 
-   När du ansluter en Windows 10-enhet till Azure AD, de principer som du ställer in i [steg 2](#step-2-set-up-security-policies-and-configure-devices) tillämpas på den.
+När du har kört guiden Konfigurera kommer du att vilja proctect alla Windwos 10 datorer i din organisation.
+  
+- Windows 10 Pro är en [förutsättning](pre-requisites-for-data-protection.md) för Microsoft 365-företag, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro berättigar din prenumeration till en [uppgradering till Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Följ stegen i [säkra Windows 10-datorer](secure-win-10-pcs.md) för att ställa in policyer för Windows 10-enheter.
 
-   - Windows 10 Pro är en [förutsättning](pre-requisites-for-data-protection.md) för Microsoft 365-företag, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro berättigar din prenumeration till en [uppgradering till Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Använd [installationsguiden](set-up.md#protect-data-and-devices) för att konfigurera principer för Windows 10-enheter.
+När du ansluter en Windows 10-enhet till Azure AD, tillämpas de principer som du anger för Windows 10-datorer på den. Mer information finns [i Konfigurera Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md).
 
 ## <a name="step-4-install-office-365-business"></a>Steg 4: installera Office 365 Business
 - Du kan installera Office automatiskt på Windows-enheter med hjälp av [installationsguiden](set-up.md#deploy-office-365-client-apps).
@@ -82,4 +83,6 @@ De flesta av konfigurationsstegen kan göras i installationsguiden, men de andra
 
     - Om ditt företag har en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare), kan du ge dina Azure AD-anslutna enheter åtkomst till dessa resurser genom att följa stegen här: [åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business](access-resources.md).
 
-  
+## <a name="see-also"></a>Se även
+
+[Microsoft 365 Business utbildning videor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
