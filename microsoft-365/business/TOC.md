@@ -10,7 +10,7 @@
 ### [Uppgradera till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Förbered för Office-klientdistribution](prepare-for-office-client-deployment.md)
 ### [Hjälp användarna att installera Office](help-users-install-office.md)
-### [Åtkomst till lokala resurser]
+### Komma åt lokala resurser
 #### [Aktivera domänanslutna Windows 10-enheter som ska hanteras](manage-windows-devices.md)
 #### [Komma åt resurser från en Azure AD-ansluten enhet](access-resources.md)
 ## Inställning av användar enhet
