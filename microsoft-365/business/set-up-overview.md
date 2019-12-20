@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Översikt över installationsstegen för Microsoft 365 Business.
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812787"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967632"
 ---
 # <a name="overview-of-setup"></a>Översikt över installationsprogrammet
 
@@ -50,14 +50,16 @@ De flesta av konfigurationsstegen kan göras i installationsguiden, men de andra
   
   Förutom säkerhetsinställningarna i installationsguiden kan du öka säkerheten genom att lägga till följande inställningar:
 
-      - **E-malware skydd**
-      - **ATP anti-phishing**
-      - **Exchange Online - arkivering**
-      - **Azure information Protection (Plan1**)
 
-          [Ställ in avancerade säkerhetsprinciper](set-up-advanced-security.md)för att komma igång.
+- **E-malware skydd**
+- **ATP anti-phishing**
+- **Exchange Online - arkivering**
+- **Azure information Protection (Plan1**)
 
-        Se även [de tio bästa sätten att skydda din Microsoft 365-verksamhet](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en färdplan med de främsta säkerhetsmetoderna.
+
+[Ställ in avancerade säkerhetsprinciper](set-up-advanced-security.md)för att komma igång.
+
+Se även [de tio bästa sätten att skydda din Microsoft 365-verksamhet](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en färdplan med de främsta säkerhetsmetoderna.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Steg 3: Konfigurera och hantera Windows 10-enheter
 

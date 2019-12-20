@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig hur du får tillgång till lokala resurser som line of Business-appar, filresurser och skrivare från en Azure Active Directory-ansluten Windows 10-enhet.
-ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668797"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967172"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Få åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business
 
@@ -47,7 +47,7 @@ Slutför följande steg för att aktivera organisationens Azure AD-anslutna enhe
     
 Inga ytterligare steg krävs för att få åtkomst till lokala resurser för Azure AD-anslutna enheter. Den här funktionen är inbyggd i Windows 10. 
 
-Om du har planer på att logga in på AADJ enheten annat än lösenord metod som PIN/bio-Metric via WHFB autentiseringsuppgifter inloggning och sedan komma åt lokala resurser (aktier, skrivare.. etc), vänligen följhttps://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+Om du har planer på att logga in på AADJ enheten annat än lösenord metod som PIN/bio-Metric via WHFB autentiseringsuppgifter inloggning och sedan komma åt lokala resurser (aktier, skrivare.. etc), vänligen följhttps://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 Om din organisation inte är redo att distribuera i Azure AD-anslutna enhetskonfigurationen som beskrivs ovan, Överväg att konfigurera [hybrid Azure AD-ansluten enhetskonfiguration](manage-windows-devices.md).
   
