@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer om Microsoft 365 Business.
-ms.openlocfilehash: 1d4eb62a31cc44ab8dc75964c038f0a3deef4005
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: eafd03be90c128051c8c91bc339af69a0a613136
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831442"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999563"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Översikt över Microsoft 365 Business
 
@@ -42,7 +42,7 @@ Titta på den här videon för en snabb överblick över Microsoft 365 Business.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Om du hittade den här videon till hjälp, kolla in den [kompletta tränings serien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
 Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser, se [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) -dokumentationen för mer information.
 
@@ -99,7 +99,7 @@ Dina **enheter är säkrade** genom att:
 
 - Använda förenklade kontroller för att hantera principer för alla Windows 10-datorer i företaget, framtvinga BitLocker-kryptering och installera viktiga Windows-uppdateringar automatiskt (tillämpa Windows Update-principer).
 
-En fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business Security-funktioner](security-features.md). När du har [konfigurerat Microsoft 365 Business](set-up.md), se [Konfigurera avancerade säkerhetsprinciper](set-up-advanced-security.md) för att komma igång med säkerhetsfunktioner som inte ingår som en del av den guidade installationen. Läs också [topp 10 sätt att säkra Office 365 och Microsoft 365 affärsplaner](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en bra överblick över hur man ställer in skydd mot cyberbrottslingar och hackare.
+En fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business Security-funktioner](security-features.md). När du har [konfigurerat Microsoft 365 Business](set-up.md)kan du läsa [öka skyddet mot hot](increase-threat-protection.md) och [ställa in efterlevnadsfunktioner](set-up-compliance.md) för att komma igång med de säkerhetsfunktioner som inte ingår som en del av den guidade installationen. Läs också [topp 10 sätt att säkra Office 365 och Microsoft 365 affärsplaner](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en bra överblick över hur man ställer in skydd mot cyberbrottslingar och hackare.
 
 ## <a name="get-microsoft-365-business"></a>Skaffa Microsoft 365 Business
 
@@ -114,4 +114,4 @@ En fullständig lista över säkerhetsfunktioner finns i [Microsoft 365 Business
 
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365 Business utbildning videor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
