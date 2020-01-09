@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Översikt över installationsstegen för Microsoft 365 Business.
-ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850813"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995259"
 ---
 # <a name="overview-of-setup"></a>Översikt över installationsprogrammet
 
@@ -36,7 +36,7 @@ Titta på en kort video om Microsoft 365 Business setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Om du hittade den här videon till hjälp, kolla in den [kompletta tränings serien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 De flesta av konfigurationsstegen kan göras i installationsguiden, men de andra alternativen visas också.
 
@@ -61,7 +61,7 @@ De flesta av konfigurationsstegen kan göras i installationsguiden, men de andra
 - **Exchange Online - arkivering**
 - **Azure information Protection (Plan1**)
 
-Kom igång genom att läsa [Konfigurera avancerade säkerhetsprinciper](set-up-advanced-security.md).
+Kom igång genom att se [öka skyddet mot hot](increase-threat-protection.md) och [ställa in efterlevnadsfunktioner](set-up-compliance.md).
 
 Se även [de tio bästa sätten att skydda din Microsoft 365-verksamhet](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) för en färdplan med de främsta säkerhetsmetoderna.
 
@@ -91,4 +91,4 @@ När du ansluter en Windows 10-enhet till Azure AD, tillämpas de principer som 
 
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365 Business utbildning videor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

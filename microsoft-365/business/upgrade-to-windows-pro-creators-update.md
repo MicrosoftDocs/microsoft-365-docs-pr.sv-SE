@@ -1,5 +1,5 @@
 ---
-title: Uppgradera Windows-enheter till Windows Pro Creators Update
+title: Uppgradera Windows-enheter till Windows 10 Pro
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: 'Lär dig hur du uppgraderar Windows-enheter till Windows 10 Pro Creators Update. '
-ms.openlocfilehash: e8399ad94ef58ad8fa5386d4ab0ed7fa4b8627a0
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: 'Läs om hur du uppgraderar Windows-enheter till Windows 10 Pro. '
+ms.openlocfilehash: acad4a393e0870299df768fd4c821d9c1e83ecac
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831202"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995279"
 ---
-# <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Uppgradera Windows-enheter till Windows Pro Creators Update
+# <a name="upgrade-windows-devices-to-windows-10-pro"></a>Uppgradera Windows-enheter till Windows 10 Pro
 
 Titta på en kort video om hur du uppgraderar Windows-enheter till Windows 10 Pro.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-Om du hittade den här videon till hjälp, kolla in den [kompletta tränings serien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="upgrade-to-windows-10-pro-creators-update"></a>Uppgradera till Windows 10 Pro Creators Update
+## <a name="upgrade-to-windows-10-pro"></a>Uppgradera till Windows 10 Pro
   
-Om du vill uppgradera till Windows 10 Pro Creators Update har du flera alternativ. Du kan:
+Om du vill uppgradera till Windows 10 Pro har du flera alternativ. Du kan:
     
 - Installera uppgraderingen från [webbplatsen](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; för hämtning av Microsoft-programvara Välj det här alternativet om den enhet som du är inloggad på är på samma enhet som den du vill uppdatera. 
 
@@ -50,7 +50,7 @@ Om du vill uppgradera till Windows 10 Pro Creators Update har du flera alternati
     - Läs instruktionerna om hur du använder verktyget och skapar installationsmediet. 
 
 > [!NOTE]
-> Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro ger din Microsoft 365 Business-prenumeration dig rätt till en Windows 10-uppgradering. du behöver inte en produkt nyckel.
+> Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro ger din Microsoft 365 Business-prenumeration dig rätt till en Windows Pro 10-uppgradering. du behöver inte en produkt nyckel.
     
 Se [Konfigurera Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md) att slutföra inställningen av Windows 10-enheter. 
   
@@ -58,4 +58,4 @@ Se [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mo
   
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365 Business utbildning videor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
