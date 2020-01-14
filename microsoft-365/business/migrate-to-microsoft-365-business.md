@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Steg som uppgraderar ditt företag från Office 365 Business Premium till Microsoft 365 Business.
-ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640570"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120150"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Uppgradera till Microsoft 365 Business från Office 365 Business Premium
 
@@ -68,7 +68,7 @@ Det tar Microsoft några minuter att ställa in dina nya service planer. Om du v
 1. När planen är klar kan du behöva utföra några ytterligare konfigurationssteg i administratörscenter. I navigeringsfönstret väljer du **hem** för att slutföra eventuella ytterligare inställningssteg.
 
 > [!NOTE]
-> Du får en proportionell återbetalning för Ofifce 365-licenser som du inte längre behöver. Ditt bankkonto eller kreditkort debiteras ungefär två dagar efter att du har ställt in den nya planen.
+> Du får en proportionell återbetalning för Office 365-licenser som du inte längre behöver. Ditt bankkonto eller kreditkort debiteras ungefär två dagar efter att du har ställt in den nya planen.
   
 ## <a name="protect-user-devices-and-files"></a>Skydda användarenheter och filer
 
