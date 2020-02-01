@@ -1,5 +1,7 @@
 ---
 title: Hantera Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,25 +20,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Lär dig att hantera Microsoft 365 affärsrelaterade administratörsuppgifter, mobila enheter, Windows 10-datorer och många sådana uppgifter.
-ms.openlocfilehash: 77b8757d9e6ab644b16e97ff20f50c0ce3123088
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+description: Lär dig att hantera Microsoft 365 Business-relaterade administratörsuppgifter, mobila enheter, Windows 10-datorer och många sådana uppgifter.
+ms.openlocfilehash: 41b627b0bb7cbb009832d3e7c45e44ceb8a8fdcd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38675977"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593790"
 ---
 # <a name="manage-microsoft-365-business"></a>Hantera Microsoft 365 Business
 
 ## <a name="general-microsoft-365-business-admin-tasks"></a>Allmänna administrativa uppgifter i Microsoft 365 Business
 
-Det mesta av [Administratörs innehållet](https://docs.microsoft.com/office365/admin/admin-home) för Office 365 för företag gäller även Microsoft 365 Business.
+Det mesta av [administratörsinnehållet](https://docs.microsoft.com/office365/admin/admin-home) för Office 365 för företag gäller även Microsoft 365 Business.
 
-- [Lägg till fler användare i Microsoft 365 Business](add-users-m365b.md)
+- [Lägga till fler användare i Microsoft 365 Business](add-users-m365b.md)
     
 - [Visa principer och enheter](view-policies-and-devices.md)
     
-- [Säkerhets funktioner i Microsoft 365 Business](security-features.md)
+- [Säkerhetsfunktioner för Microsoft 365 Business](security-features.md)
     
 - [Hur mappar skyddsfunktioner i Microsoft 365 Business till Intune-inställningarna](map-protection-features-to-intune-settings.md)
     
@@ -48,7 +50,7 @@ Se följande avsnitt om hur du använder Microsoft 365 Business för att skydda 
     
 - [Ange inställningar för appskydd för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md)
     
-    Se [Validera inställningar för Appskydd på en Android-eller iOS-enhet](validate-settings-on-android-or-ios.md)för att kontrollera att detta fungerade. 
+    Information om hur du ser till att detta fungerade finns [i Verifiera appskyddsinställningar på en Android- eller iOS-enhet](validate-settings-on-android-or-ios.md). 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     
@@ -60,11 +62,11 @@ Se följande avsnitt om hur du använder Microsoft 365 Business för att skydda 
     
 - [Ange inställningar för enhetsskydd för Windows 10-enheter](protection-settings-for-windows-10-pcs.md)
     
-    Kontrollera att detta fungerade, se [Validera inställningar för enhetsskydd på Windows 10-enheter](validate-settings-on-windows-10-pcs.md). 
+    Information om hur du kontrollerar att detta fungerade finns [i Verifiera enhetsskyddsinställningar på Windows 10-enheter](validate-settings-on-windows-10-pcs.md). 
     
 - [Ange programskyddsinställningar för Windows 10-enheter](protection-settings-for-windows-10-devices.md)
     
-    Kontrollera att detta fungerade, se [Validera inställningar för Appskydd på Windows 10-datorer](validate-protection-settings-on-windows-10-pcs.md). 
+    Information om hur du ser till att detta fungerade finns [i Verifiera appskyddsinställningar på Windows 10-datorer](validate-protection-settings-on-windows-10-pcs.md). 
     
 - [Ta bort företagsdata från enheter](remove-company-data.md)
     

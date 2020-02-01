@@ -1,5 +1,7 @@
 ---
 title: Använda stegvisa anvisningar för att lägga till AutoPilot-enheter och -profiler
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,42 +23,42 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Lär dig hur du använder Windows AutoPilot för att konfigurera nya Windows 10-enheter för ditt företag.
-ms.openlocfilehash: 5f40dac57285b83da57d4506bac58e562475522c
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 1fd0abb76d16b79dd11ef27b6b27a87894d89ef9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323104"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593282"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Använda stegvisa anvisningar för att lägga till AutoPilot-enheter och -profiler
 
-Du kan använda Windows AutoPilot för att konfigurera **nya** Windows 10-enheter för ditt företag så att de är klara att användas när du ger dem till dina anställda.
+Du kan använda Windows AutoPilot för att konfigurera **nya** Windows 10-enheter för ditt företag så att de är redo att användas när du ger dem till dina anställda.
   
 ## <a name="device-requirements"></a>Enhetskrav
 
-Enheter måste uppfylla följande krav:
+Anordningar måste uppfylla dessa krav:
   
 - Windows 10, version 1703 eller senare
     
-- Nya enheter som inte har gått igenom Windows out-of-Box-upplevelse
+- Nya enheter som inte har gått igenom Windows out-of-box-upplevelse
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Använda installationsguiden för att skapa enheter och profiler
 
 [![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Om du inte har skapat enhetsgrupper eller profiler ännu, är det bästa sättet att komma igång med hjälp av steg-för-steg-guide. Du kan också [lägga till enheter](create-and-edit-autopilot-devices.md) och [tilldela profiler](create-and-edit-autopilot-profiles.md) till dem utan att använda guiden. 
+Om du inte har skapat enhetsgrupper eller profiler ännu är det bästa sättet att komma igång genom att använda steg-för-steg-guiden. Du kan också [lägga till enheter](create-and-edit-autopilot-devices.md) och tilldela [profiler](create-and-edit-autopilot-profiles.md) till dem utan att använda guiden. 
   
-1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Gå till admin <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>center på .
 
-2. I det vänstra navigeringsfönstret väljer du **enheter** \> **autopilot**.
+2. Välj **Devices** \> **AutoPilot**i det vänstra navigeringsfönstret .
 
-    ![I administratörscenter väljer du enheter och sedan AutoPilot.](media/AutoPilot.png)
+    ![Välj enheter i administrationscentret och sedan AutoPilot.](media/AutoPilot.png)
   
-2. På **Autopilotsidan** klickar eller knackar du på **Start Guide**.
+2. Klicka eller tryck på **Startguide**på sidan **AutoPilot** .
     
     ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. På sidan **överför. csv-fil med listan över enheter** bläddrar du till en plats där du har den förberedd. CSV-fil och sedan **Öppna** \> **Nästa**. Filen måste ha tre rubriker:
+3. Bläddra till en plats där du har förberett på **sidan Ladda upp CSV med listan över enheter.** CSV-fil och **öppna** \> **nästa**. Filen måste ha tre rubriker:
     
     - Kolumn A: Enhetsserienummer
     
@@ -64,27 +66,27 @@ Om du inte har skapat enhetsgrupper eller profiler ännu, är det bästa sättet
     
     - Kolumn C: Maskinvaruhash
     
-    Du kan hämta den här informationen från maskinvaruleverantören, eller så kan du använda [PowerShell-skriptet get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) för att generera en CSV-fil. 
+    Du kan hämta den här informationen från maskinvaruleverantören eller använda [PowerShell-skriptet Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) för att generera en CSV-fil. 
     
     Mer information finns i [CSV-filen med enhetslistan](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e). Du kan också ladda ned en exempelfil på sidan för **uppladdning av CSV-fil med lista över enheter**. 
     
-4. På sidan **tilldela en profil** kan du antingen välja en befintlig profil eller skapa en ny. Om du inte har en ännu, uppmanas du att skapa en. 
+4. På sidan **Tilldela en profil** kan du antingen välja en befintlig profil eller skapa en ny. Om du inte har en ännu uppmanas du att skapa en. 
     
     En proﬁl är en samling inställningar som kan tillämpas på en enskild enhet eller en grupp av enheter.
     
-    Standardfunktionerna är obligatoriska och ställs in automatiskt. Standardfunktionerna är följande:
+    Standardfunktionerna krävs och ställs in automatiskt. Standardfunktionerna är följande:
     
-    - Hoppa över Cortana, OneDrive och OEM-registrering.
+    - Hoppa över Cortana-, OneDrive- och OEM-registrering.
     
     - Skapa inloggning med företagets varumärke.
     
     - Anslut dina enheter till Azure Active Directory-konton och registrera dem automatiskt för att hanteras av Microsoft 365 Business.
     
-    Mer information finns i [om inställningar för autopilot-profil](autopilot-profile-settings.md). 
+    Mer information finns i [Om Inställningar för AutoPilot-profil](autopilot-profile-settings.md). 
     
 5. Andra inställningar som används **Skip privacy settings** (Hoppa över sekretessinställningar) och **Don't allow user to become the local admin** (Tillåt inte användare att bli lokal administratör). Båda är inställda på **Av** som standard. 
     
     Välj **Nästa**.
     
-6. **Du är klar** anger att profilen som du skapade (eller valde) kommer att tillämpas på enhetsgruppen som du skapade genom att ladda upp listan över enheter. Inställningarna träder i kraft när enhetsanvändarna loggar in härnäst. Välj **Stäng**.
+6. **Du är klar** anger att profilen du skapade (eller valde) kommer att tillämpas på den enhetsgrupp som du skapade genom att ladda upp listan över enheter. Inställningarna gäller när enhetsanvändarna loggar in nästa. Välj **Stäng**.
     

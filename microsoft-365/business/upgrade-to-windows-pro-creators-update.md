@@ -1,5 +1,7 @@
 ---
 title: Uppgradera Windows-enheter till Windows 10 Pro
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 'Läs om hur du uppgraderar Windows-enheter till Windows 10 Pro. '
-ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 60ffb507e2a572d0ca52d7adf2db70ea6cb446f2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265867"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594197"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Uppgradera Windows-enheter till Windows 10 Pro
 
@@ -41,20 +43,20 @@ Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbild
   
 Om du vill uppgradera till Windows 10 Pro har du flera alternativ. Du kan:
     
-- Installera uppgraderingen från [webbplatsen](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; för hämtning av Microsoft-programvara Välj det här alternativet om den enhet som du är inloggad på är på samma enhet som den du vill uppdatera. 
+- Installera uppgraderingen från [webbplatsen Microsoft Software Download](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Välj det här alternativet om enheten som du är inloggad finns på samma enhet som den som du vill uppdatera. 
 
-    - Från webbplatsen för hämtning av programvara klickar du på **Uppdatera nu** för att börja uppgradera enheten till Windows 10 Pro Creators Update. 
+    - På webbplatsen för hämtning av programvara klickar du på **Uppdatera nu** för att börja uppgradera enheten till Windows 10 Pro Creators Update. 
     
-- Skapa ett installationsmedium med hjälp av [verktyget](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; för att skapa media Välj det här alternativet om du vill använda Windows 10 Pro Creators Update-installationsmedia (USB-flashminne eller ISO-fil) för att installera Windows 10 på en dator som skiljer sig från den du använder.
+- Skapa ett installationsmedium med [verktyget För att](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; skapa media Välj det här alternativet om du vill skapa ett installationsmedium för Windows 10 Pro Creators Update (USB-flashminne eller ISO-fil) för att installera Windows 10 på en dator som skiljer sig från det du använder.
 
     - Läs instruktionerna om hur du använder verktyget och skapar installationsmediet. 
 
 > [!NOTE]
-> Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8,1 Pro ger din Microsoft 365 Business-prenumeration dig rätt till en Windows Pro 10-uppgradering.
+> Om du har Windows-enheter som kör Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro berättigar din Microsoft 365 Business-prenumeration dig till en Uppgradering av Windows Pro 10.
     
-Se [Konfigurera Windows-enheter för Microsoft 365 företagsanvändare](set-up-windows-devices.md) att slutföra inställningen av Windows 10-enheter. 
+Se [Konfigurera Windows-enheter för Microsoft 365 Business-användare](set-up-windows-devices.md) för att slutföra konfigurationen av Windows 10-enheter. 
   
-Se [Konfigurera mobila enheter för Microsoft 365 företagsanvändare](set-up-mobile-devices.md) att slutföra inställningen av Android-och iOS-enheter. 
+Se [Konfigurera mobila enheter för Microsoft 365 Business-användare](set-up-mobile-devices.md) för att slutföra konfigurationen av Android- och iOS-enheter. 
   
 ## <a name="see-also"></a>Se även
 

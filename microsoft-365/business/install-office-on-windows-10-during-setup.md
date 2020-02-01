@@ -1,5 +1,7 @@
 ---
 title: Installera Office vid Windows 10-installationen
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -22,17 +24,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Lär dig nu att automatiskt distribuera Office till Windows 10-enheter under installationen.
-ms.openlocfilehash: 7b58fd3db6c6f15effe2bc4876903a9f480366b1
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 8a631d3976ae3bce82d59d84e38a14405010ab02
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831632"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593870"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installera Office vid Windows 10-installationen
 
-![Banderoll som pekar https://aka.ms/aboutM365previewpå.](media/m365admincenterchanging.png)
+![Banner som https://aka.ms/aboutM365previewpekar på .](media/m365admincenterchanging.png)
 
-Den här inställningen är inaktiverad som standard. Du kan aktivera den för att se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla krav uppfylls. Användare måste vara licensierade för Microsoft 365 Business för den här inställningen för att skicka programvaran till enheten, förutom andra krav som beskrivs i [Förbered för Office-klientdistribution av microsoft 365 Business](prepare-for-office-client-deployment.md).
+Den här inställningen är inaktiverad som standard. Du kan aktivera den för att se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla förutsättningar uppfylls. Användare måste vara licensierade för Microsoft 365 Business för den här inställningen för att kunna skicka programvaran till enheten, förutom andra krav som beskrivs i [Förbereda för Office-klientdistribution av Microsoft 365 Business](prepare-for-office-client-deployment.md).
   
 Vi rekommenderar att du accepterar standardinställningen under installationen.

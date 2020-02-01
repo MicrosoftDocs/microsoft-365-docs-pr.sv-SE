@@ -1,5 +1,7 @@
 ---
 title: Hur principer i Microsoft 365 Business skyddar företagsdata
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -23,19 +25,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: Använd principer som riktar sig till specifika enheter och säkerhetsgrupper för att skydda företagets data på användarnas personliga enheter.
-ms.openlocfilehash: 225dbadf599d5287a706ce50ec2b3cc9dd27c996
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: Om du vill skydda företagsdata på användarnas personliga enheter använder du principer som riktar sig till specifika enheter och säkerhetsgrupper.
+ms.openlocfilehash: c33d228fef5e138f94810faf1174ea3243277f4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320137"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593910"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Hur principer i Microsoft 365 Business skyddar företagsdata
 
 Principerna du skapar är specifika för enhetstyper och kan tillämpas för särskilda användargrupper. Det innebär att du kan skapa en princip som gäller för ledningsgruppen och en annan som gäller för alla andra.
   
-För Android- och iOS-enheter kan du lägga till eller redigera programprinciper som skyddar Office-appar och filer som används av Office-appar. Vi har möjlighet att styra Windows 10-enheter lite mer, så användningsprinciper kan innehålla fler inställningar, till exempel kryptering och skydd för nätverks-och moln platser. Du kan också skapa enhetsprinciper för Windows 10-enheter som framtvingar inställningar som till exempel virusskydd och automatiska uppdateringar. Vi rekommenderar att du håller dig till principerna som skapades under installationen, men om du vill finjustera dina policyer eller lägga till fler läser du följande artiklar:
+För Android- och iOS-enheter kan du lägga till eller redigera programprinciper som skyddar Office-appar och filer som används av Office-appar. Vi kan styra Windows 10-enheter lite mer, så programprinciper kan innehålla fler inställningar, till exempel kryptering och skydd för nätverks- och molnplatser. Du kan också skapa enhetsprinciper för Windows 10-enheter som framtvingar inställningar som till exempel virusskydd och automatiska uppdateringar. Vi rekommenderar att du håller dig till de principer som skapats under installationen, men om du vill finjustera dina policyer eller lägga till fler läser du följande artiklar:
   
 [Ställ in appkonfigurationer för Android- och iOS-enheter](app-protection-settings-for-android-and-ios.md)
   

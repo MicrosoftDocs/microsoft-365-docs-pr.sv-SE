@@ -1,5 +1,7 @@
 ---
 title: Återställa Windows 10-enheter till fabriksinställningarna
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 'Lär dig hur du använder Microsoft 365 Business till fabriksåterställning dina Windows 10-enheter. '
-ms.openlocfilehash: 867b87b488ec13c7b84a9eb810a076fbb6da545d
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+description: 'Lär dig hur du använder Microsoft 365 Business för att fabriksåterställa dina Windows 10-enheter. '
+ms.openlocfilehash: b5039693640a17e531296d019117a9f40bf98a7f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715171"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593485"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Återställa Windows 10-enheter till fabriksinställningarna
 
@@ -33,11 +35,11 @@ ms.locfileid: "38715171"
 
 En fabriksinställning återställer en enhet till de ursprungliga inställningarna då enheten köptes. Data, och alla appar som installerats sedan dess tas bort. Du kan använda Microsoft 365 Business för att göra fabriksåterställning av de Windows 10-enheter du hanterar.
   
-1. Gå till administratörscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Gå till admin <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>center på .
     
-2. Välj **enheter** \> **Hantera**i det vänstra navigeringsfältet.
+2. Välj **Enheter** \> **hantera**i den vänstra naven .
 
-3. På sidan **Hantera** markerar du kryssrutan bredvid den enhet som du vill ta bort data från och sedan väljer du **fabriksåterställning**i rullgardinsmenyn **Hantera** .
+3. Markera **** kryssrutan bredvid den enhet som du vill ta bort data från och välj sedan Fabriksåterställning i listrutan **Hantera.** ****
     
 4. I fönstret **Är du säker på att du vill fabriksåterställa följande enheter** väljer du **Bekräfta** \> **Stäng**.
     

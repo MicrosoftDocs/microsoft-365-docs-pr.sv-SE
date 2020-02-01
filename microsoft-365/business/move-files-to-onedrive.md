@@ -1,5 +1,7 @@
 ---
 title: Flytta filer till OneDrive för företag
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Lär dig att flytta dina filer till OneDrive.
-ms.openlocfilehash: 597192a352009abf93b507a82f800d56f20c84e8
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: Lär dig flytta dina filer till OneDrive.
+ms.openlocfilehash: 0417325f93582ac5445cb739f9ca877a34f1d1c4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831332"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593668"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 
@@ -33,7 +35,7 @@ Titta på en kort video om hur du flyttar filer till OneDrive för företag.<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Om du hittade den här videon till hjälp, kolla in den [kompletta tränings serien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
@@ -48,6 +50,6 @@ Om en användare har en dator som innehåller många personliga filer, bör du f
     
 Du kan även använda ett tredjepartsverktyg, till exempel ForensiT, för att föra över användarprofilen och viktiga filer. Du bör föra över dessa filer i OneDrive för företag också.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Se även
 
-[Microsoft 365 Business utbildning videor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

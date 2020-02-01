@@ -1,5 +1,7 @@
 ---
 title: Hjälpa användare att ansluta till Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -23,17 +25,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: Läs om vad du kan förvänta dig efter att installationen av Business Cloud Suite är slutförd.
-ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: Läs om vad du kan förvänta dig när installationen av Business Cloud Suite är klar.
+ms.openlocfilehash: 41055b02f0ca62aad27c2fd1838abac5f58832f4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320197"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593940"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>Hjälpa användare att ansluta till Microsoft 365 Business
 
-När du har slutfört installationen är standardenhets principerna på plats och redo att användas. På mobila enheter hämtar användare Office-appar. Principer tillämpas sedan när användaren loggar in med sitt arbets-eller skolkonto. Det återstår en del arbete, exempelvis uppgradering under drift, innan principerna kan användas på Windows-datorer. Se och dela följande avsnitt för att hjälpa användarna att konfigurera och ansluta:
+När du har konfigurerat klart är standardenhetsprinciperna på plats och redo att gälla. På mobila enheter hämtar användarna Office-appar. Principer tillämpas sedan när användaren loggar in med sitt arbets- eller skolkonto. Det återstår en del arbete, exempelvis uppgradering under drift, innan principerna kan användas på Windows-datorer. Se och dela följande avsnitt för att hjälpa användare att konfigurera och ansluta:
   
 [Konfigurera Windows-enheter för Microsoft 365 Business-användare](set-up-windows-devices.md)
   

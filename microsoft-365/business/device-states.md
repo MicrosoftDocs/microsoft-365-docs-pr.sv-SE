@@ -1,5 +1,7 @@
 ---
 title: Statusvärden för enheter
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Lär dig mer om enhetstillstånd i Microsoft 365 Business.
-ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 02b4eebac62a48e3ddd53d362db2d60067ac05eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320217"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593980"
 ---
 # <a name="device-states"></a>Statusvärden för enheter
 
@@ -41,12 +43,12 @@ Enheter i listan **Enhetsåtgärder** (Administratörshemsida \> **Enhetsåtgär
 |Retire pending (Väntar på att tas ur bruk)  <br/> |Microsoft 365 Business förbereds för att ta bort företagsdata från enheten.  <br/> |
 |Retire in progress (Tas nu ur bruk)  <br/> |Microsoft 365 Business tar för närvarande bort företagsdata från enheten.  <br/> |
 |Retire failed (Det gick inte att ta ur bruk)  <br/> | Åtgärden att ta bort företagsdata misslyckades.  <br/> |
-|Pensionerad annullerad  <br/> |Tillbakadragen åtgärd avbröts.  <br/> |
+|Pension en inställd  <br/> |Indraget avbröts.  <br/> |
 |Wipe pending (Rensning väntar)  <br/> |Väntar på att fabriksåterställning ska starta.  <br/> |
 |Wipe in progress (Rensning pågår)  <br/> |Fabriksinställning har skickats.  <br/> |
-|Wipe failed (Det gick inte att rensa)  <br/> |Det gick inte att återställa standardinställningarna.  <br/> |
-|Rensa annullerad  <br/> |Fabriks rensning avbröts.  <br/> |
-|Unhealthy (Ej felfri)  <br/> |En åtgärd pågår (eller pågår), men enheten har inte checkats in i 30 + dagar.  <br/> |
+|Wipe failed (Det gick inte att rensa)  <br/> |Kunde inte göra fabriksåterställning.  <br/> |
+|Torka avbruten  <br/> |Fabriksservett avbröts.  <br/> |
+|Unhealthy (Ej felfri)  <br/> |En åtgärd pågår (eller pågår), men enheten har inte checkat in på 30 dagar.  <br/> |
 |Delete pending (Väntar på att tas bort)  <br/> |Ta bort-åtgärd som väntar.  <br/> |
 |Discovered (Identifierad)  <br/> |Microsoft 365 Business har upptäckt enheten.  <br/> |
    

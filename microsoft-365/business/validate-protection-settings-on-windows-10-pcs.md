@@ -1,5 +1,7 @@
 ---
 title: Bekräfta programskyddsinställningar på PC-datorer med Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,19 +20,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Lär dig hur du validerar Microsoft 365 Business app Protection-inställningar i Windows 10-enheter.
-ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+description: Lär dig hur du validerar Microsoft 365 Business app skyddsinställningar i Windows 10-enheter.
+ms.openlocfilehash: 6573519ee2fe2d1eb82545755fa98b8c018e08ff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721869"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595004"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Bekräfta programskyddsinställningar på PC-datorer med Windows 10
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Kontrollera att användarna inte kan kopiera företagsdata till personliga filer på företagets enheter
 
-När du [ställt in principer för programskydd](protection-settings-for-windows-10-devices.md) kan det ta några timmar innan principen börjar gälla på användarnas enheter. Om du har **aktiverat** **förhindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler till OneDrive för företag** -inställningen för företagsägda enheter, kan du kontrollera detta på användarens enhet när de har anslutit till Azure AD och loggat in. 
+När du [ställt in principer för programskydd](protection-settings-for-windows-10-devices.md) kan det ta några timmar innan principen börjar gälla på användarnas enheter. Om du **har** aktiverat **inställningen Hindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler i OneDrive för företag-inställningen** för företagsägda enheter kan du kontrollera detta på användarens enhet när de har anslutit till Azure AD och loggat in. 
   
  **Kontrollera anslutningsinställningar**
   
@@ -38,7 +40,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. På sidan **hanterad av** \<klientnamn\> kan du se **anslutningsinformationen** som innehåller en **hanterings server adress** som den som visas i följande bild. 
+2. På sidan **Hanterad av** \<\> klientnamn kan du se **anslutningsinformationen** som innehåller en **hanteringsserveradress** som den som visas i följande bild. 
     
     ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -50,7 +52,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
     Öppna Anteckningar och försök att klistra in innehållet där.
     
-    Du får ett felmeddelande som säger att appen inte kan komma åt innehåll.
+    Du får ett felmeddelande om att appen inte kan komma åt innehåll.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -60,7 +62,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
 
  **Kontrollera anslutningsinställningar**
   
-1. På din Windows 10 personlig enhet där du är inloggad som en lokal användare, gå till **Windows-inställningar**, och klicka eller tryck på **konton** \> **tillgång arbete eller skola**.
+1. Gå till **Windows-inställningar**på den personliga Windows 10-enheten där du är inloggad som lokal användare och klickar eller trycker på **Konton** \> **åtkomst till arbete eller skola**.
     
 2. Välj **Anslut** under **Åtkomst till arbete eller skola**.
     
@@ -68,9 +70,9 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
 4. På sidan **Åtkomst till arbetet eller skolan** väljer du **Arbets- eller skolkonto** och väljer sedan **Info**.
     
-    ![Klicka eller tryck på info i arbets-eller skolkonto dialogen.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Klicka eller tryck på Info i dialogrutan Arbete eller skolkonto.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. På sidan **åtkomst arbete eller skola** kan du se **anslutningsinformationen** som innehåller en **hanterings server adress** , som den som visas i följande bild, och innehåller orden *Pia* och *Mam* inom. 
+5. På sidan **Access-arbete eller skola** kan du se **anslutningsinformationen** som innehåller en **hanteringsserveradress** som den som visas i följande bild och innehåller orden *wip* och *mam* inom. 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
@@ -82,7 +84,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
     Öppna Anteckningar och försök att klistra in innehållet där.
     
-    Du får ett felmeddelande om att appen inte kan komma åt innehåll.
+    Du får ett felmeddelande om att App inte kan komma åt innehåll.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   

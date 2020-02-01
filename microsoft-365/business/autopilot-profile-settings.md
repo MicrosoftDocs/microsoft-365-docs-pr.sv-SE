@@ -1,5 +1,7 @@
 ---
 title: Om AutoPilot-profilinställningar
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -26,13 +28,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Autopilotprofiler hjälper dig att styra hur Windows installeras på användarenheter. Profilerna innehåller standardinställningar och valfria inställningar som hoppa över Cortana-installation.
-ms.openlocfilehash: 912a24e3d458986a4bcf7dcf903f80211996aca2
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+description: AutoPilot-profiler hjälper dig att styra hur Windows installeras på användarenheter. Profilerna innehåller standardinställningar och valfria inställningar som hoppa över Cortana-installationen.
+ms.openlocfilehash: 1cc8a3171bbc4a1e5cb531b9364c7791586fc339
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38321794"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593342"
 ---
 # <a name="about-autopilot-profile-settings"></a>Om AutoPilot-profilinställningar
 
@@ -44,9 +46,9 @@ Du kan använda AutoPilot-profiler för att styra hur Windows är installerat p�
   
 |**Inställning**|**Beskrivning**|
 |:-----|:-----|
-|Hoppa över Cortana, OneDrive och OEM-registrering  <br/> |Hoppar över installationen av konsumentappar som Cortana och personliga OneDrive-konton. Enhetsanvändaren kan installera dessa senare så länge som användaren är en lokal administratör på enheten. OEM-registreringen hoppas över eftersom enheten hanteras av Microsoft 365 Business.  <br/> |
-|Inloggning med företagets varumärke  <br/> |Om ditt företag har en [Lägg till ditt företag branding till Office 365 Logga in sidan](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), användaren får den upplevelsen när du loggar in.  <br/> |
-|Automatisk MDM-registrering med konfigurerade AAD-konton  <br/> |Användaridentiteten hanteras av Azure Active Directory och användarna kommer att logga in på Windows och Office 365 med sina Microsoft 365 Business-autentiseringsuppgifter.  <br/> |
+|Hoppa över Cortana-, OneDrive- och OEM-registrering  <br/> |Hoppar över installationen av konsumentappar som Cortana och personliga OneDrive-konton. Enhetsanvändaren kan installera dessa senare så länge användaren är en lokal administratör på enheten. OEM-registreringen hoppas över eftersom enheten hanteras av Microsoft 365 Business.  <br/> |
+|Inloggning med företagets varumärke  <br/> |Om ditt företag har en [Lägg till ditt företags varumärke på inloggningssidan för Office 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)får enhetsanvändaren den upplevelsen när du loggar in.  <br/> |
+|Automatisk MDM-registrering med konfigurerade AAD-konton  <br/> |Användaridentiteten hanteras av Azure Active Directory och användare loggar in på Windows och Office 365 med sina Microsoft 365 Business-autentiseringsuppgifter.  <br/> |
    
  **Valfria inställningar**
   

@@ -1,5 +1,7 @@
 ---
 title: Hantera skyddade enheter med Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -24,18 +26,18 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Lär dig att återställa eller rensa en enhet som hanteras via skyddsprinciper.
-ms.openlocfilehash: ef3b8ed0e3b3f8b9136d3929bce1b835309498c7
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: b022d9076b60b0d29771b2ba8f7afc0435bda096
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633338"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593850"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>Hantera skyddade enheter med Microsoft 365 Business
 
-När en användare ansluter sin enhet till din organisation genom att logga in med sitt arbetskonto till enheten eller till Office-appar på enheten, kan du skydda enheten med de principer som du har konfigurerat. Anslutna enheter listas på sidan **enheter** . Om en enhet försvinner eller blir stulen kan du ta bort företagsdata från den här sidan. Du kan även återställa Windows 10-enheter till deras fabriksinställning för att ta bort alla anpassade inställningar. 
+När en användare har anslutit sin enhet till organisationen genom att logga in med sitt arbetskonto till enheten eller till Office-appar på enheten kan du skydda enheten med de principer du har konfigurerat. Anslutna enheter visas på sidan **Enheter.** Om en enhet försvinner eller blir stulen kan du ta bort företagsdata från den här sidan. Du kan även återställa Windows 10-enheter till deras fabriksinställning för att ta bort alla anpassade inställningar. 
 
-Mer information om vilka uppgifter du kan använda för att hantera enheter finns i följande artiklar: 
+Mer information om de uppgifter som du kan använda för att hantera enheter finns i följande artiklar: 
   
 [Ta bort företagsdata från enheter](remove-company-data.md)
   

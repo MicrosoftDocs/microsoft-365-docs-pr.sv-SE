@@ -1,5 +1,7 @@
 ---
 title: Vilken prenumeration är rätt för ditt företag?
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,14 +17,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Bestäm om Office 365 E3, Office 365 Business Premium eller Microsoft 365 Business är rätt för ditt företag.
-ms.openlocfilehash: f3adf67cf164b14596bc0cedf1cacd7dec41955e
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+description: Ta reda på om Office 365 E3, Office 365 Business Premium eller Microsoft 365 Business är rätt för ditt företag.
+ms.openlocfilehash: 44d8b6c64882b0357674793e8430423802b0fc1a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748330"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594944"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>Vilken prenumeration är rätt för ditt småföretag?
 
-Microsoft erbjuder flera planer för små företag. De rekommenderade prenumerationerna är antingen Office 365 Business Premium eller Microsoft 365 Business med upp till 300 användare. Microsoft 365 Business erbjuder fler säkerhetsfunktioner än Office 365 Business Premium för en extra kostnad.
+Microsoft erbjuder flera planer för småföretag. De rekommenderade prenumerationerna är antingen Office 365 Business Premium eller Microsoft 365 Business med upp till 300 användare. Microsoft 365 Business erbjuder fler säkerhetsfunktioner än Office 365 Business Premium för en extra kostnad.
