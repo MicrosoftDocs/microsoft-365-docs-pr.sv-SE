@@ -22,31 +22,31 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visa enhetsprinciper och åtgärder genom att logga in på Microsoft 365-företag med globala administratörsautentiseringsuppgifter.
-ms.openlocfilehash: 9664a72d85cf6eed9993937299d38a84b9a8f0d2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac8ea8a5b484fe6401e72fd0eaab4d79515f3aac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056614"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visa och hantera principer och enheter
 
-[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="view-and-edit-device-policies"></a>Visa och redigera enhetsprinciper
 
-1.  Gå till admin <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>center på .
-2. Välj \> **Enhetsprinciper**på **** vänster nav.
+1.  Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+2. Välj \> **Enhetsprinciper**till **** vänster.
 
     På den här sidan kan du skapa, redigera, ändra målgrupp eller ta bort en princip.
 
-    ![Screenshot of the Policies page](media/devicepolicies.png)
+    ![Screenshot of the Policies page](../media/devicepolicies.png)
   
 ## <a name="view-and-manage-devices"></a>Visa och hantera enheter
 
-1. Välj **Enheter** \> **hantera**på den vänstra naven. 
+1. Välj \> **Enhetshantera**till **** vänster. 
     
     På den här sidan kan du välja en eller flera enheter och ta bort företagsdata. För Windows 10-enheter som du har angett skyddsinställningar för kan du också välja att återställa enheten till fabriksinställningarna.
   
-   ![Sidan Hantera enheter](media/devicesmanage.png)
+   ![Hantera sidan enheter](../media/devicesmanage.png)
 

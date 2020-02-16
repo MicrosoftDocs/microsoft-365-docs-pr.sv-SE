@@ -21,33 +21,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: 'Lär dig hur du använder Microsoft 365 Business för att ta bort företagsdata från användarenheter eller Windows-datorer. '
-ms.openlocfilehash: ff0ad9d7f22f9bb1b21ee15fe383c6994896a9a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 'Läs om hur du använder Microsoft 365 Business för att ta bort företagsdata från användarenheter eller Windows-datorer. '
+ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593505"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064922"
 ---
 # <a name="remove-company-data-from-devices"></a>Ta bort företagsdata från enheter
 
-[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Ta bort företagsdata
 
 Du kan använda Microsoft 365 Business för att ta bort företagsdata som användarna har på sina [enheter](app-protection-settings-for-android-and-ios.md) eller [Windows-datorer](protection-settings-for-windows-10-devices.md) som skyddas av Microsoft 365. **Företagsdata som tas bort från en enhet kan inte återställas**. 
   
-1. Gå till admin <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>center på .
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. Välj **Enheter** \> **hantera**på den vänstra naven.  
+2. Välj\> **Enhetshantera**till **** vänster.  
   
-3. På sidan **Hantera** väljer eller söker efter en användare som är data som du vill ta bort och väljer namnet. 
+3. På sidan **Hantera** väljer eller söker efter en användare som vill ta bort och väljer namnet. 
     
-4. Välj enheten eller enheterna i listan **Enheter** i nästa fönster. I enhetsfönstret som öppnas kan du välja att återställa enheten till fabriksinställningarna eller ta bort företagsdata, beroende på enhetstypen. 
+4. I nästa ruta väljer du enheten eller enheterna i listan **Enheter.** I enhetsfönstret som öppnas kan du välja att återställa enheten till fabriksinställningarna eller ta bort företagsdata, beroende på enhetstypen. 
     
-    ![I fönstret Ta bort företagsdata väljer du den enhet som du vill ta bort data från.](media/resetorremove.png)
+    ![Markera den enhet som du vill ta bort data från i fönstret Ta bort.](../media/resetorremove.png)
   
-5. I bekräftelsefönstret väljer du **Bekräfta** \> **Stäng**.
+5. Välj **Bekräfta** \> **stäng**i bekräftelsefönstret .
     
 
 

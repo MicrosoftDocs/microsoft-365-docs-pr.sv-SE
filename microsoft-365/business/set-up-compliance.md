@@ -19,57 +19,57 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Ställ in kompatibilitetsfunktioner för att förhindra dataförlust och etikettkänsliga data.
-ms.openlocfilehash: 09619de03aafde37106fb3942890b457c488ad43
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Ställ in efterlevnadsfunktioner för att förhindra dataförlust och etikettkänsliga data.
+ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593414"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064723"
 ---
-# <a name="set-up-compliance-features"></a>Ställ in kompatibilitetsfunktioner
+# <a name="set-up-compliance-features"></a>Konfigurera efterlevnadsfunktioner
 
-Microsoft 365 Business har funktioner för att skydda dina data och enheter och hjälpa dig att skydda dina och dina kunders känsliga information.
+Ditt Microsoft 365 Business levereras med funktioner för att skydda dina data och enheter och hjälper dig att skydda dina och dina kunders känsliga information.
 
 ## <a name="set-up-dlp-features"></a>Konfigurera DLP-funktioner
 
-Se [Skapa en DLP-princip från en mall](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) för ett exempel på hur du ställer in en princip för att skydda mot personligt identifierbar information (PII). 
+Se [Skapa en DLP-princip från en mall,](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) till exempel om hur du skapar en princip för att skydda mot personligt identifierbar information (PII). 
   
-DLP levereras med många färdiga principmallar för många olika språk. Till exempel Australien Financial Data, Kanada Personal Information Act, US Financial Data, och så vidare. Se [Vad DLP-principmallarna innehåller](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) för en fullständig lista. Alla dessa mallar kan aktiveras som liknar pici-mallexemplet. 
+DLP levereras med många färdiga policymallar för många olika språk. Till exempel Australien Financial Data, Canada Personal Information Act, AMERIKANSKA finansiella data, och så vidare. Se [Vad DLP-principmallarna innehåller](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) för en fullständig lista. Alla dessa mallar kan aktiveras som liknar pii-mallexemplet. 
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Konfigurera e-postlagring med Exchange Online-arkivering
 
- **Licensfunktioner för Exchange Online-arkivering** hjälper till att upprätthålla efterlevnads- och regelstandarder genom att bevara e-postinnehåll för eDiscovery. Det bidrar också till att minska risken om det finns en rättegång, och ger ett sätt att återställa data efter en säkerhetsöverträdelse eller när du behöver återställa borttagna objekt. Du kan använda rättstvist för att bevara allt innehåll för en användare eller använda bevarandeprinciper för att anpassa det du vill bevara.
+ **Exchange Online Arkivering licensfunktioner** hjälper till att upprätthålla efterlevnad och regelstandarder genom att bevara e-postinnehåll för eDiscovery. Det bidrar också till att minska risken om det finns en rättegång, och ger ett sätt att återställa data efter ett säkerhetsintrång eller när du behöver återställa borttagna objekt. Du kan använda processspärr för att bevara alla en användares innehåll eller använda bevarandeprinciper för att anpassa det du vill bevara.
   
-**Rättstvister håll:** Du kan bevara allt postlådeinnehåll, inklusive borttagna objekt genom att placera en användares hela postlåda på rättstvister. 
+**Rättstvister håller:** Du kan bevara allt postlådeinnehåll, inklusive borttagna objekt genom att placera en användares hela postlåda på rättsspärr. 
     
-Så här placerar du en postlåda på rättstvist i administrationscentret:
+Så här placerar du en postlåda på rättsspärr i administrationscentret:
     
-1. I den vänstra naven går du till **Användare** \> **Aktiva användare**.
+1. Gå till **Användare** \> **aktiva användare**i den vänstra navigatorn.
     
-2. Välj en användare vars postlåda du vill placera på rättstvist. Expandera **E-postinställningar**i användarfönstret och välj **Redigera Exchange-egenskaper**bredvid **Fler inställningar**.
+2. Välj en användare vars postlåda du vill spärra på rättstvister. Expandera **e-postinställningar**i användarfönstret och bredvid **Fler inställningar**väljer du **Redigera exchange-egenskaper**.
     
-3. På postlådesidan för användaren väljer du ** postlådefunktioner ** till vänster nav och väljer sedan länken **Aktivera** under **Rättstvister.**
+3. På postlådan ssida för användaren, välj ** postlåda funktioner ** till vänster nav, och välj sedan **länken Aktivera** under **Rättstvister håll**.
     
-4. I dialogrutan **för tvisthållning** kan du ange den rättstvist som har varaktighet i fältet **Rättstvister håll varaktighet.** Lämna fältet tomt om du vill placera ett oändligt grepp. Du kan också lägga till anteckningar och dirigera postlådeägaren till en webbplats som du kanske måste förklara mer om rättstvister. \>**Spara**.
+4. I dialogrutan **för tvistebås** kan du ange varaktigheten för rättstvister i fältet Varaktighet för **rättstvister.** Lämna fältet tomt om du vill placera en oändlig stadga. Du kan också lägga till anteckningar och dirigera postlådeägaren till en webbplats som du kanske måste förklara mer om rättstvistspärren. \>**Spara**.
     
-**Kvarhållande:** Du kan aktivera anpassade bevarandeprinciper, till exempel för att bevara under en viss tid eller ta bort innehåll permanent i slutet av kvarhållningsperioden. Mer information finns i [Översikt över bevarandeprinciper](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+**Kvarhållning:** Du kan aktivera anpassade bevarandeprinciper, till exempel för att bevara under en viss tid eller ta bort innehåll permanent i slutet av kvarhållningsperioden. Mer information finns i [Översikt över bevarandeprinciper](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
 
-## <a name="set-up-sensitivity-labels"></a>Ställ in Känslighetsetiketter
+## <a name="set-up-sensitivity-labels"></a>Ställ in känslighetsetiketter
 
-Känslighetsetiketter levereras med Azure Information Protection (AIP) Plan 1 och hjälper dig att klassificera och eventuellt skydda dina dokument och e-postmeddelanden genom att använda etiketter. Etiketter kan tillämpas automatiskt av administratörer som definierar regler och villkor, manuellt av användare eller genom att använda en kombination där användarna får rekommendationer.
+Känslighetsetiketter levereras med Azure Information Protection (AIP) Plan 1 och hjälper dig att klassificera och eventuellt skydda dina dokument och e-postmeddelanden, genom att använda etiketter. Etiketter kan tillämpas automatiskt av administratörer som definierar regler och villkor, manuellt av användare eller genom att använda en kombination där användarna får rekommendationer.
 
-Om du vill ställa in Känslighetsetiketter visar du [skapa och hantera känslighetsetiketter](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+Om du vill ställa in känslighetsetiketter visar du [skapa och hantera känslighetsetiketter](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
 
 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Installera Azure Information Protection-klienten manuelltInstall the Azure Information Protection client manually
+### <a name="install-the-azure-information-protection-client-manually"></a>Installera Azure Information Protection-klienten manuellt
 
 Så här installerar du AIP-klienten manuellt:
 
-1. Ladda ner **AzinfoProtection_UL.exe** från [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Ladda ned **AzinfoProtection_UL.exe** från [Microsofts nedladdningscenter](https://www.microsoft.com/download/details.aspx?id=53018).
  
-2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och se till att alternativet **Känslighet** är tillgängligt på fliken **Start.**
-<br/>![Listrutan Skyddflik i ett Word-dokument.](media/word-sensitivity.png)
+2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och se till att **alternativet Känslighet** är tillgängligt på fliken **Start.**
+<br/>![Listrutan Skydd fliken i ett Word-dokument.](../media/word-sensitivity.png)
 
 Mer information finns [i Installera klienten](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).
