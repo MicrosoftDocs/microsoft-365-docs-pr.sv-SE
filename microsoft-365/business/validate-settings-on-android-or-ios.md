@@ -1,5 +1,5 @@
 ---
-title: Verifiera appskyddsinställningar på Android- eller iOS-enheter
+title: Validera appskyddsinställningar på Android- eller iOS-enheter
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.
-ms.openlocfilehash: 47ce137f785c595992886c756ad85b80957272fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f37bc262b3a80f4acb7113829e3d809ee16d41d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594984"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091219"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Verifiera appskyddsinställningar på Android- eller iOS-enheter
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validera appskyddsinställningar på Android- eller iOS-enheter
 
-Följ instruktionerna i följande avsnitt för att verifiera appskyddsinställningar på Android- eller iOS-enheter.
+Följ instruktionerna i följande avsnitt för att validera appskyddsinställningar på Android- eller iOS-enheter.
   
 ## <a name="android"></a>Android
   
@@ -39,68 +39,68 @@ Följ instruktionerna i följande avsnitt för att verifiera appskyddsinställni
 
 När du har [angett appkonfigurationer för Android-enheter](app-protection-settings-for-android-and-ios.md) för att skydda apparna kan du utföra stegen nedan för att verifiera att de inställningar du valde fungerar som de ska. 
   
-Kontrollera först att principen gäller för den app där du ska validera den.
+Kontrollera först att principen gäller för appen där du ska validera den.
   
 1. I Microsoft 365 Business-[administrationscentret](https://portal.office.com) går du till **Principer** \> **Redigera princip**.
     
-2. Välj **Programprincip för Android** för de inställningar som du skapade vid installationen eller en annan princip som du skapade och kontrollera att den till exempel tillämpas för Outlook. 
+2. Välj **Programprincip för Android** för de inställningar som du skapade vid installationen eller en annan princip som du skapade och kontrollera att den tillämpas för Outlook, till exempel. 
     
-    ![Shows all the apps for which this policy protects files.](media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
+    ![Shows all the apps for which this policy protects files.](../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### <a name="validate-require-a-pin-or-a-fingerprint-to-access-office-apps"></a>Verifiera Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program
 
 Välj **Redigera** bredvid **Åtkomstkontroll för Office-dokument** i fönstret **Redigera princip**, expandera **Hantera hur användare kommer åt Office-filer på mobila enheter** och se till att **Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program** är angiven till **På**.
   
-![Kontrollera att kräv en PIN-kod eller ett fingeravtryck för att komma åt Office-appar är inställt på På.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Kontrollera att KRäv en PIN-kod eller ett fingeravtryck för att komma åt Office-appar är inställd på On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. Öppna Outlook på användarens Android-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter.
     
 2. Du uppmanas också att ange en PIN-kod eller använda ett fingeravtryck.
     
-    ![Enter a PIN on your Android device to access Office apps.](media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
+    ![Enter a PIN on your Android device to access Office apps.](../media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Verifiera Återställ PIN-kod efter antal misslyckade försök
 
-I fönstret **Redigera princip** väljer du **Redigera** bredvid **Åtkomstkontroll för Office-dokument,** expanderar **Hantera hur användare kommer åt Office-filer på mobila enheter**och kontrollerar att Återställ **PIN-kod efter att antalet misslyckade försök** har angetts till något antal. Detta är som standard 5. 
+I **åtgärdsprincipfönstret Redigera** väljer du **Redigera** bredvid Åtkomstkontroll för **Office-dokument,** expanderar **Hantera hur användare får åtkomst till Office-filer på mobila enheter**och kontrollerar att Återställning av **PIN-koden efter att antalet misslyckade försök** har angetts till ett visst antal. Detta är 5 som standard. 
   
 1. Öppna Outlook på användarens Android-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter.
     
-2. Ange en felaktig PIN-kod så många gånger som anges i principen. Du ser en uppmaning om att **anger PIN-försöksgräns som nåtts** för att återställa PIN-koden. 
+2. Ange en felaktig PIN-kod så många gånger som anges i principen. Du ser en uppmaning om att det anges att **PIN-försöksgränsen har nåtts** för att återställa PIN-koden. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
+    ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. Tryck på **Återställ PIN-kod**. Du uppmanas att logga in med användarens Microsoft 365 Business-autentiseringsuppgifter och sedan behöva ange en ny PIN-kod.
+3. Tryck på **Återställ PIN-kod**. Du uppmanas att logga in med användarens Microsoft 365 Business-autentiseringsuppgifter och sedan måste ange en ny PIN-kod.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Verifiera Tvinga användare att spara alla filer i OneDrive för företag
 
 Välj **Redigera** bredvid **Skydd mot förlorade eller stulna enheter** i fönstret **Redigera princip**, expandera **Skydda arbetsfiler om enheter försvinner eller blir stulna** och se till att **Tvinga användare att spara alla filer i OneDrive för företag** är angiven till **På**.
   
-![Verify that Force users to save all work files to OneDrive for Business is set to On.](media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
+![Verify that Force users to save all work files to OneDrive for Business is set to On.](../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
 1. Öppna Outlook på användarens Android-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter. Ange en PIN-kod om du uppmanas att göra det.
     
 2. Öppna ett e-postmeddelande som innehåller en bifogad fil och tryck på nedåtpilikonen bredvid den bifogade filens information.
     
-    ![Tap the down arrow next to an attachment to try to save it.](media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
+    ![Tap the down arrow next to an attachment to try to save it.](../media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
   
-    Det går **inte att spara på enheten** längst ned på skärmen. 
+    Du ser **Det går inte att spara till enheten** längst ned på skärmen. 
     
-    ![Warning text that indicates cannot save a file locally to an Android.](media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
+    ![Warning text that indicates cannot save a file locally to an Android.](../media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
   
     > [!NOTE]
     > Det går inte att spara till OneDrive för företag från Android för närvarande. Du kan bara se att funktionen för att spara lokalt är blockerad. 
   
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Verifiera Kräv att användare loggar in igen efter att Office-appar har varit inaktiva under en angiven tid
 
-I fönstret **Redigera princip** väljer du **Redigera** bredvid **Åtkomstkontroll för Office-dokument,** expanderar **Hantera hur användare kommer åt Office-filer på mobila enheter**och kontrollerar att **Kräv att användarna loggar in igen när Office-appar har varit inaktiva i** vissa minuter. Detta är 30 minuter som standard. 
+I **åtgärdsprincipfönstret Redigera** väljer du **Redigera** bredvid Åtkomstkontroll för **Office-dokument,** expanderar **Hantera hur användare får åtkomst till Office-filer på mobila enheter**och kontrollerar att Kräv att användare loggar in igen efter att **Office-appar har inaktiv för** är inaktiv på ett antal minuter. Detta är 30 minuter som standard. 
   
 1. Öppna Outlook på användarens Android-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter. Ange en PIN-kod om du uppmanas att göra det.
     
 2. Du bör nu se Inkorgen i Outlook. Låt Android-enheten stå oanvänd i minst 30 minuter (eller annan tidsrymd som är längre än vad du angav i principen). Enhetens bildskärm kommer sannolikt att tonas ned.
     
-3. Få åtkomst till Outlook på Android-enheten igen.
+3. Öppna Outlook på Android-enheten igen.
     
-4. Du uppmanas att ange din PIN-kod innan du kan komma åt Outlook igen.
+4. Du uppmanas att ange pinkoden innan du kan komma åt Outlook igen.
     
 ### <a name="validate-protect-work-files-with-encryption"></a>Verifiera Skydda arbetsfiler med kryptering
 
@@ -108,11 +108,11 @@ Välj **Redigera** bredvid **Skydd mot förlorade eller stulna enheter** i föns
   
 1. Öppna Outlook på användarens Android-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter. Ange en PIN-kod om du uppmanas att göra det.
     
-2. Öppna ett e-postmeddelande som innehåller några bifogade filer för bildfiler.
+2. Öppna ett e-postmeddelande som innehåller några bifogade bildfiler.
     
 3. Tryck på nedåtpilikonen bredvid den bifogade filen om du vill spara den.
     
-    ![Tap the down arrow to save the figure file to the Android device.](media/08a9e21e-4022-45d5-acff-59cface651e7.png)
+    ![Tap the down arrow to save the figure file to the Android device.](../media/08a9e21e-4022-45d5-acff-59cface651e7.png)
   
 4. Det kan hända att du uppmanas att tillåta Outlook att komma åt foton, media och filer på din enhet. Tryck på **Tillåt**.
     
@@ -120,7 +120,7 @@ Välj **Redigera** bredvid **Skydd mot förlorade eller stulna enheter** i föns
     
 6. Du bör nu se ett sparat, krypterat foto (eller flera, om du sparade flera bifogade bildfiler) i listan. Det kan hända att fotot visas i listan Bilder som en grå ruta med ett vitt utropstecken i en vit cirkel i mitten av den gråa rutan.
     
-    ![An encrypted image file in the Gallery app.](media/25936414-bd7e-421d-824e-6e59b877722d.png)
+    ![An encrypted image file in the Gallery app.](../media/25936414-bd7e-421d-824e-6e59b877722d.png)
   
 ## <a name="ios"></a>Ios
   
@@ -128,65 +128,65 @@ Välj **Redigera** bredvid **Skydd mot förlorade eller stulna enheter** i föns
 
 När du har [angett appkonfigurationer för iOS-enheter](app-protection-settings-for-android-and-ios.md) för att skydda appar kan du utföra stegen nedan för att verifiera att de inställningar du valde fungerar som de ska. 
   
-Kontrollera först att principen gäller för den app där du ska validera den.
+Kontrollera först att principen gäller för appen där du ska validera den.
   
 1. I Microsoft 365 Business-[administrationscentret](https://portal.office.com) går du till **Principer** \> **Redigera princip**.
     
-2. Välj **Programprincip för iOS** för de inställningar som du skapade vid installationen eller en annan princip som du skapade och kontrollera att den till exempel tillämpas för Outlook. 
+2. Välj **Programprincip för iOS** för de inställningar som du skapade vid installationen eller en annan princip som du skapade och kontrollera att den tillämpas för Outlook till exempel. 
     
-    ![Shows all the apps for which this policy protects files.](media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
+    ![Shows all the apps for which this policy protects files.](../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### <a name="validate-require-a-pin-to-access-office-apps"></a>Verifiera Kräv PIN-kod för åtkomst till Office-program
 
 Välj **Redigera** bredvid **Åtkomstkontroll för Office-dokument** i fönstret **Redigera princip**, expandera **Hantera hur användare kommer åt Office-filer på mobila enheter** och se till att **Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program** är angiven till **På**.
   
-![Kontrollera att kräv en PIN-kod eller ett fingeravtryck för att komma åt Office-appar är inställt på På.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Kontrollera att KRäv en PIN-kod eller ett fingeravtryck för att komma åt Office-appar är inställd på On.](../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. Öppna Outlook på användarens iOS-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter.
     
 2. Du uppmanas också att ange en PIN-kod eller använda ett fingeravtryck.
     
-    ![Enter a PIN on your IOS device to access Office apps.](media/06fc5cf3-9f19-4090-b23c-14bb59805b7a.png)
+    ![Enter a PIN on your IOS device to access Office apps.](../media/06fc5cf3-9f19-4090-b23c-14bb59805b7a.png)
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Verifiera Återställ PIN-kod efter antal misslyckade försök
 
-I fönstret **Redigera princip** väljer du **Redigera** bredvid **Åtkomstkontroll för Office-dokument,** expanderar **Hantera hur användare kommer åt Office-filer på mobila enheter**och kontrollerar att Återställ **PIN-kod efter att antalet misslyckade försök** har angetts till något antal. Detta är som standard 5. 
+I **åtgärdsprincipfönstret Redigera** väljer du **Redigera** bredvid Åtkomstkontroll för **Office-dokument,** expanderar **Hantera hur användare får åtkomst till Office-filer på mobila enheter**och kontrollerar att Återställning av **PIN-koden efter att antalet misslyckade försök** har angetts till ett visst antal. Detta är 5 som standard. 
   
 1. Öppna Outlook på användarens iOS-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter.
     
-2. Ange en felaktig PIN-kod så många gånger som anges i principen. Du ser en uppmaning om att **anger PIN-försöksgräns som nåtts** för att återställa PIN-koden. 
+2. Ange en felaktig PIN-kod så många gånger som anges i principen. Du ser en uppmaning om att det anges att **PIN-försöksgränsen har nåtts** för att återställa PIN-koden. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
+    ![After too many incorrect PIN attempts, you need to reset your PIN.](../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-3. Tryck på **OK**. Du uppmanas att logga in med användarens Microsoft 365 Business-autentiseringsuppgifter och sedan behöva ange en ny PIN-kod.
+3. Tryck på **OK**. Du uppmanas att logga in med användarens Microsoft 365 Business-autentiseringsuppgifter och sedan måste ange en ny PIN-kod.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Verifiera Tvinga användare att spara alla filer i OneDrive för företag
 
 Välj **Redigera** bredvid **Skydd mot förlorade eller stulna enheter** i fönstret **Redigera princip**, expandera **Skydda arbetsfiler om enheter försvinner eller blir stulna** och se till att **Tvinga användare att spara alla filer i OneDrive för företag** är angiven till **På**.
   
-![Verify that Force users to save all work files to OneDrive for Business is set to On.](media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
+![Verify that Force users to save all work files to OneDrive for Business is set to On.](../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
 1. Öppna Outlook på användarens iOS-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter. Ange en PIN-kod om du uppmanas att göra det.
     
 2. Öppna ett e-postmeddelande som innehåller en bifogad fil, öppna den bifogade filen och välj **Spara** längst ned på skärmen. 
     
-    ![Tap the Save option after you open an attachment to try to save it.](media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
+    ![Tap the Save option after you open an attachment to try to save it.](../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. Du bör se endast ett alternativ för OneDrive för företag. Om inte trycker du på **Lägg till konto** och väljer **OneDrive för företag** på skärmen Lägg till **lagringskonto.** Ange användarens Microsoft 365 Business för att logga in när du uppmanas att göra det. 
+3. Du bör se endast ett alternativ för OneDrive för företag. Om inte, tryck på **Lägg till konto** och väljer **OneDrive för företag** på skärmen Lägg till **lagringskonto.** Ange användarens Microsoft 365 Business för att logga in när du uppmanas att göra det. 
     
     Tryck på **Spara** och välj **OneDrive för företag**.
     
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Verifiera Kräv att användare loggar in igen efter att Office-appar har varit inaktiva under en angiven tid
 
-I fönstret **Redigera princip** väljer du **Redigera** bredvid **Åtkomstkontroll för Office-dokument,** expanderar **Hantera hur användare kommer åt Office-filer på mobila enheter**och kontrollerar att **Kräv att användarna loggar in igen när Office-appar har varit inaktiva i** vissa minuter. Detta är 30 minuter som standard. 
+I **åtgärdsprincipfönstret Redigera** väljer du **Redigera** bredvid Åtkomstkontroll för **Office-dokument,** expanderar **Hantera hur användare får åtkomst till Office-filer på mobila enheter**och kontrollerar att Kräv att användare loggar in igen efter att **Office-appar har inaktiv för** är inaktiv på ett antal minuter. Detta är 30 minuter som standard. 
   
 1. Öppna Outlook på användarens iOS-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter. Ange en PIN-kod om du uppmanas att göra det.
     
 2. Du bör nu se Inkorgen i Outlook. Låt iOS-enheten stå oanvänd i minst 30 minuter (eller annan tidsrymd som är längre än vad du angav i principen). Enhetens bildskärm kommer sannolikt att tonas ned.
     
-3. Få åtkomst till Outlook på iOS-enheten igen.
+3. Öppna Outlook på iOS-enheten igen.
     
-4. Du uppmanas att ange din PIN-kod innan du kan komma åt Outlook igen.
+4. Du uppmanas att ange pinkoden innan du kan komma åt Outlook igen.
     
 ### <a name="validate-protect-work-files-with-encryption"></a>Verifiera Skydda arbetsfiler med kryptering
 
@@ -194,7 +194,7 @@ Välj **Redigera** bredvid **Skydd mot förlorade eller stulna enheter** i föns
   
 1. Öppna Outlook på användarens iOS-enhet och logga in med användarens Microsoft 365 Business-autentiseringsuppgifter. Ange en PIN-kod om du uppmanas att göra det.
     
-2. Öppna ett e-postmeddelande som innehåller några bifogade filer för bildfiler.
+2. Öppna ett e-postmeddelande som innehåller några bifogade bildfiler.
     
 3. Tryck på den bifogade filen och tryck sedan på alternativet **Spara** under den. 
     
