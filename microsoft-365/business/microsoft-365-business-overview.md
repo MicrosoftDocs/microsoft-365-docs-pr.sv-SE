@@ -44,7 +44,7 @@ Titta på det här videoklippet för en snabb översikt över Microsoft 365 Busi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
 Microsoft 365 Business är avsett för upp till 300 licenser. Om du behöver fler licenser läser du Dokumentation en [Microsoft 365 Enterprise-dokumentation](https://go.microsoft.com/fwlink/p/?linkid=860986) för mer information.
 

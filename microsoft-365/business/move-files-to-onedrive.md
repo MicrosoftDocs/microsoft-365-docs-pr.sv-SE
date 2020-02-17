@@ -35,7 +35,7 @@ Titta på en kort video om att flytta filer till OneDrive för företag.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag

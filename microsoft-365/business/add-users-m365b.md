@@ -40,7 +40,7 @@ Titta på en kort video om att lägga till en användare. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
-Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Så här lägger du till en användare:
 
