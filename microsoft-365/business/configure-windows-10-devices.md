@@ -25,19 +25,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Lär dig mer om enhetsprinciper för Windows 10 som gäller för alla användare i organisationen.
-ms.openlocfilehash: ef4d4cc64438c6cf3f1a2fec6e22ac679b4ffe10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Läs mer om hur du konfigurerar enhetsprinciper för Windows 10 som gäller för alla användare i organisationen, vilket säkerställer att de ansluter på ett säkert sätt.
+ms.openlocfilehash: c6fd2aa76dd7af570bd5d78c6c457041e6a8d605
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593363"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415594"
 ---
 # <a name="configure-windows-10-devices"></a>Konfigurera Windows 10-enheter
 
-Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på en Office-app på sin Windows 10-enhet med sitt arbets- eller skolkonto tillämpas de inställningar du konfigurerar automatiskt för att se till att användaren ansluter på ett säkert sätt.
+Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på en Office-app på sin Windows 10-enhet med sitt arbets- eller skolkonto tillämpas de inställningar som du konfigurerar automatiskt för att se till att användaren ansluter på ett säkert sätt.
   
-Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. När du har konfigurerat det kan du skapa fler principer och rikta dem till specifika användargrupper.
+Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. När du har konfigurerat kan du skapa fler principer och rikta dem till specifika grupper av användare.
   
 Mer information om hur du lägger till en princip för att hantera konfigurationer för Windows 10-enheter finns i [Ange enhetskonfigurationer för Windows 10-datorer](protection-settings-for-windows-10-pcs.md).
   

@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Läs mer om enhetstillstånd i Microsoft 365 Business.
-ms.openlocfilehash: 26b218cb7b6a14f17e33d34a2e712b06ac814c0c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Lär dig mer om de olika enhetstillstånden i listan Enhetsåtgärder i Admin home i Microsoft 365 Business.
+ms.openlocfilehash: 878050fbe11acca1d5d434a5d2ab0b5b48510e45
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065784"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415674"
 ---
 # <a name="device-states"></a>Statusvärden för enheter
 
@@ -43,12 +43,12 @@ Enheter i listan **Enhetsåtgärder** (Administratörshemsida \> **Enhetsåtgär
 |Retire pending (Väntar på att tas ur bruk)  <br/> |Microsoft 365 Business förbereds för att ta bort företagsdata från enheten.  <br/> |
 |Retire in progress (Tas nu ur bruk)  <br/> |Microsoft 365 Business tar för närvarande bort företagsdata från enheten.  <br/> |
 |Retire failed (Det gick inte att ta ur bruk)  <br/> | Åtgärden att ta bort företagsdata misslyckades.  <br/> |
-|Pensionerad avbruten  <br/> |Åtgärden för pensionering avbröts.  <br/> |
+|Dra tillbaka avbruten  <br/> |Åtgärden Dra tillbaka avbröts.  <br/> |
 |Wipe pending (Rensning väntar)  <br/> |Väntar på att fabriksåterställning ska starta.  <br/> |
 |Wipe in progress (Rensning pågår)  <br/> |Fabriksinställning har skickats.  <br/> |
 |Wipe failed (Det gick inte att rensa)  <br/> |Det gick inte att återställa fabriksåterställningen.  <br/> |
-|Wipe avbröts  <br/> |Fabriksrensningen avbröts.  <br/> |
-|Unhealthy (Ej felfri)  <br/> |En åtgärd väntar (eller pågår), men enheten har inte checkat in på 30 dagar.  <br/> |
+|Rensa avbruten  <br/> |Fabriksrensning en inställd.  <br/> |
+|Unhealthy (Ej felfri)  <br/> |En åtgärd väntar (eller pågår), men enheten har inte checkat in på 30+ dagar.  <br/> |
 |Delete pending (Väntar på att tas bort)  <br/> |Ta bort-åtgärd som väntar.  <br/> |
 |Discovered (Identifierad)  <br/> |Microsoft 365 Business har upptäckt enheten.  <br/> |
    
