@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Läs om hur du kan flytta dina personliga arbetsfiler och känsliga företagsfiler till OneDrive för företag i bara några enkla steg.
-ms.openlocfilehash: 2f4e21096570e1b830a7a8ceee87d652abb9448f
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 837ec8bb01ed78e7a13ee802afaf845c80544f5d
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547760"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550276"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 
@@ -51,6 +51,6 @@ Om en användare har en dator som innehåller många personliga filer, bör du f
     
 Du kan även använda ett tredjepartsverktyg, till exempel ForensiT, för att föra över användarprofilen och viktiga filer. Du bör föra över dessa filer i OneDrive för företag också.
   
-## <a name="see-also"></a>Se även
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Mer information om hur du konfigurerar och använder Microsoft 365 Business
 
 [Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -21,18 +21,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Läs om hur du skapar en apphanteringsprincip och skyddar arbetsfiler på Windows 10-enheter.
-ms.openlocfilehash: eb9c5465bf7376efa95162cd39be3f1c6840a3e4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Lär dig hur du skapar en apphanteringsprincip och skyddar arbetsfiler på användarnas personliga Windows 10-enheter.
+ms.openlocfilehash: ce389980ceb8bd889214404b0c48769380044bcf
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065041"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550216"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Ange programskyddsinställningar för Windows 10-enheter
 
@@ -42,27 +43,27 @@ Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter 
   
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. On the left nav, choose **Devices** \> **Policies** \> **Add**.
+2. Välj \> **Enhetsprinciper** \> lägg **** **till**på vänster navigator.
 
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Välj **Programhantering för Windows 10** under **Principtyp**.
     
-5. Välj antingen **Personligt** eller **företagsägt**under **Enhetstyp**.
+5. Under **Enhetstyp**väljer du antingen **Personligt** eller **företagsägt**.
     
 6. **Kryptera arbetsfiler** aktiveras automatiskt. 
     
 7. Ange **Hindra användare från att kopiera företagsdata till personliga filer och tvinga dem att spara arbetsfiler i OneDrive för företag** till **På** om du inte vill att användare ska kunna spara filer på sina datorer. 
     
-9. Expandera **Återställ data på Windows-enheter**. Vi rekommenderar att du aktiverar **den**.
+9. Expandera **Återställ data på Windows-enheter**. Vi rekommenderar att du slår **på**den .
     
-    Innan du kan bläddra till certifikatet för dataåterställningsagenten måste du skapa ett. Instruktioner finns [i Skapa och verifiera ett EFS-certifikat (Encrypting File System) .](https://go.microsoft.com/fwlink/p/?linkid=853700)
+    Innan du kan bläddra till certifikatet för dataåterställningsagenten måste du skapa ett. Instruktioner finns i [Skapa och verifiera ett EFS-certifikat (Encrypting File System) Data Recovery Agent (D).](https://go.microsoft.com/fwlink/p/?linkid=853700)
     
-    Som standard krypteras arbetsfiler med en hemlig nyckel som lagras på enheten och som är kopplad till användarens profil. Endast användaren kan öppna och dekryptera filen. Men om en enhet försvinner eller en användare tas bort kan en fil fastna i ett krypterat tillstånd. En administratör kan använda D-certifikatet (Data Recovery Agent) för att dekryptera filen.
+    Som standard krypteras arbetsfiler med en hemlig nyckel som lagras på enheten och som är kopplad till användarens profil. Endast användaren kan öppna och dekryptera filen. Men om en enhet försvinner eller en användare tas bort kan en fil fastna i ett krypterat tillstånd. En administratör kan använda DRA-certifikatet (Data Recovery Agent) för att dekryptera filen.
     
     ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. Expandera **Skydda ytterligare nätverks- och molnplatser** om du vill lägga till ytterligare domäner eller SharePoint Online-platser för att se till att filer i alla listade appar är skyddade. Om du behöver ange mer än ett objekt i ett fält anger du ett semikolon (;) mellan objekten.
+10. Expandera **Skydda ytterligare nätverks- och molnplatser** om du vill lägga till ytterligare domäner eller SharePoint Online-platser för att se till att filerna i alla appar i listan är skyddade. Om du behöver ange mer än ett objekt i ett fält anger du ett semikolon (;) mellan objekten.
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
