@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 'Läs om hur du använder Microsoft 365 Business för att återställa windows 10-enheter. '
-ms.openlocfilehash: 4350b208341a51447153b415d2cb225697a11e1b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Lär dig hur du använder Microsoft 365 Business för att fabriksåterställa Windows 10-enheter som du hanterar och återställdem till de ursprungliga inställningarna vid köpet.
+ms.openlocfilehash: bbdd5c4a4ba2d7deb11c4171db68bdb052546a17
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064841"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547800"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Återställa Windows 10-enheter till fabriksinställningarna
 
@@ -37,9 +38,9 @@ En fabriksinställning återställer en enhet till de ursprungliga inställninga
   
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. Välj \> **Enhetshantera**i **** den vänstra navigatorn.
+2. Välj **Enheter** \> **hantera**i vänster nav.
 
-3. Markera **** kryssrutan bredvid den enhet du vill ta bort data från och välj sedan **Fabriksåterställning**i listrutan **Hantera** .
+3. På sidan **Hantera** markerar du kryssrutan bredvid den enhet som du vill ta bort data från och väljer sedan **Fabriksåterställning**i listrutan **Hantera** .
     
 4. I fönstret **Är du säker på att du vill fabriksåterställa följande enheter** väljer du **Bekräfta** \> **Stäng**.
     

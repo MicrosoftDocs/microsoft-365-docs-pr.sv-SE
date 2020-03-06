@@ -17,21 +17,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Lär dig att flytta dina filer till OneDrive.
-ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Läs om hur du kan flytta dina personliga arbetsfiler och känsliga företagsfiler till OneDrive för företag i bara några enkla steg.
+ms.openlocfilehash: 2f4e21096570e1b830a7a8ceee87d652abb9448f
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547760"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Flytta filer till OneDrive för företag
 
-Titta på en kort video om att flytta filer till OneDrive för företag.<br><br>
+Titta på en kort video om hur du flyttar filer till OneDrive för företag.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 

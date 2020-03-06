@@ -20,30 +20,31 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: Läs om hur du felsöker filfel för AutoPilot-enheter.
-ms.openlocfilehash: 8390f695a3e11386ae2617da4061bed1d8214375
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Läs om hur du felsöker fel som kan visas när du arbetar med AutoPilot-enhetsfiler i Microsoft 365 Business.
+ms.openlocfilehash: 7569f18097a1f5959b3dd491958c78886e1e05d6
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594217"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547480"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Felsöka AutoPilot-enhetsfel
 
-## <a name="device-file-error-messages"></a>Felmeddelanden om enhetsfil
+## <a name="device-file-error-messages"></a>Felmeddelanden i enhetsfiler
 
-Här är information om några av de fel som visas när du arbetar med AutoPilot-enhetsfiler i Microsoft 365 Business. 
+Här är information om några av de fel du kan se när du arbetar med AutoPilot-enhetsfiler i Microsoft 365 Business. 
   
-|**Felkod**|**Fix att prova**|
+|**Felkod**|**Fix för att prova**|
 |:-----|:-----|
-|Ogiltig begärandetext  <br/> |Det här felet bör hända sällan, om du ser det här felet, försök åtgärden igen.  <br/> |
-|Maskinvaruhashvärdet för en enhet är inte korrekt.  <br/> |Om det här felet visas betyder det att värdet du angav i CSV-filen för maskinvaruhashen för en enhet inte är korrekt. Kontrollera först att värdet har skrivits korrekt. Om du tror att värdet är korrekt, men det här felet fortfarande händer, be maskinvaruleverantören om hjälp.  <br/> |
-|Enhet som tilldelats en annan klientDevice assigned to another tenant  <br/> |Om det här felet visas betyder det att värdet du angav i CSV-filen för antingen serienumret eller produktnyckeln för en eller flera enheter inte är korrekt. Kontrollera först att värdet har skrivits korrekt. Om du tror att värdet är korrekt, men det här felet fortfarande händer, be maskinvaruleverantören om hjälp.  <br/> |
-|CSV-filen innehåller ett ogiltigt serienummer eller en produktnyckel  <br/> |Om det här felet visas betyder det att enheten som du försöker registrera redan är registrerad av en annan organisation. Åtgärda det här felet genom att be maskinvaruleverantören om hjälp.  <br/> |
-|Den här enheten stöds inte för installation med hjälp av AutoPilot  <br/> | Det här felet innebär att enheten inte uppfyller kraven för Automatisk pilotdistribution. Enheter måste uppfylla följande krav:  <br/>  Windows 10, version 1703 eller senare.  <br/>  Nya enheter som inte har gått igenom Windows out-of-box-upplevelse.  <br/> |
-|Enheten hittades inte  <br/> |Det här felet innebär att en eller flera enheter i CSV-filen inte är registrerade i din organisation. Åtgärda detta genom att be maskinvaruleverantören om hjälp.  <br/> |
+|Ogiltigt begärandeorgan  <br/> |Det här felet bör inträffa sällan, om du ser det här felet, försök åtgärden igen.  <br/> |
+|Maskinvaruhash-värdet för en enhet är inte korrekt.  <br/> |Om det här felet visas betyder det att värdet du angav i CSV-filen för maskinvaruhash för en enhet inte är korrekt. Kontrollera först att värdet har skrivits korrekt. Om du tror att värdet är korrekt, men det här felet fortfarande pågår, ber du maskinvaruleverantören om hjälp.  <br/> |
+|Enhet som tilldelats en annan klient  <br/> |Om det här felet visas betyder det att värdet du angav i CSV-filen för antingen serienumret eller produktnyckeln för en eller flera enheter inte är korrekt. Kontrollera först att värdet har skrivits korrekt. Om du tror att värdet är korrekt, men det här felet fortfarande pågår, ber du maskinvaruleverantören om hjälp.  <br/> |
+|CSV-filen innehåller ett ogiltigt serienummer eller produktnyckel  <br/> |Om felet visas betyder det att enheten som du försöker registrera redan är registrerad av en annan organisation. Om du vill åtgärda det här felet ber du maskinvaruleverantören om hjälp.  <br/> |
+|Den här enheten stöds inte för installation med hjälp av AutoPilot  <br/> | Det här felet innebär att enheten inte uppfyller AutoPilot-distributionskraven. Enheter måste uppfylla följande krav:  <br/>  Windows 10, version 1703 eller senare.  <br/>  Nya enheter som inte har gått igenom Windows out-of-box-upplevelse.  <br/> |
+|Enheten hittades inte  <br/> |Det här felet innebär att en eller flera enheter i CSV-filen inte är registrerad i din organisation. Om du vill åtgärda detta ber du maskinvaruleverantören om hjälp.  <br/> |
