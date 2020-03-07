@@ -19,19 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: Lär dig att skapa en AutoPilot-profil och använda den på en enhet, samt redigera eller ta bort en profil eller ta bort en profil från en enhet.
-ms.openlocfilehash: 6a8057969242d839ebbb4cbef8d26dd3f1858c59
-ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
+description: Lär dig att skapa en AutoPilot-profil och tillämpa den på en enhet, samt redigera eller ta bort en profil eller ta bort en profil från en enhet.
+ms.openlocfilehash: 58c16b68c66dce7541a02ecd0d2466babe8cc338
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417345"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560729"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Skapa och redigera AutoPilot-profiler
 
@@ -39,11 +39,11 @@ ms.locfileid: "42417345"
 
 En profil gäller för en enhet eller en grupp enheter.
   
-1. Välj **Autopilot**för **enheter** \> i Administrationscentret för Microsoft 365 Business.
+1. I Microsoft 365 Business Admin Center väljer du Automatisk **apilot** **för enheter** \> .
   
-2. På sidan **AutoPilot** väljer **** du \> fliken **Profiler Skapa profil**.
+2. På sidan **AutoPilot** väljer **** du \> fliken Profiler **Skapa**.
     
-3. Ange ett namn på profilen som hjälper dig att identifiera den på **sidan Skapa profil.** Aktivera den inställning du vill använda och välj sedan **Spara**. Mer information om AutoPilot-profilinställningar finns [i Om autopilotprofilinställningar](autopilot-profile-settings.md).
+3. På sidan **Skapa profil** anger du ett namn för profilen som hjälper dig att identifiera den, till exempel Marknadsföring. Aktivera den inställning du vill använda och välj sedan **Spara**. Mer information om profilinställningar för AutoPilot finns i [Om inställningar för AutoPilot-profil](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
@@ -53,7 +53,7 @@ När du har skapat en profil kan du använda den på en enhet eller en grupp enh
   
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och **** välj en profil i listrutan \> **Tilldelad profil** **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn och välj en profil i **listrutan** \> **Spara**på **enhetspanelen.**
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +65,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera alla tillgängliga inställningar \> **Spara**på **profilpanelen.**
+2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de \> tillgängliga inställningarna **Spara**på **profilpanelen.**
     
     Om du gör detta innan någon användare ansluter enheten till internet används profilen för installationen.
     
@@ -73,7 +73,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profilspara** \> **** på **profilpanelen.**
+2. Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** \> **Spara**på **profilpanelen.**
     
     När du raderar en profil tas den bort från en enhet eller en grupp av enheter som den var tilldelad till.
     
