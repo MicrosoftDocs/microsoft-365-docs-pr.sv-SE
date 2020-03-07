@@ -20,43 +20,43 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Lär dig stegen för att enkelt lägga till nya användare, skydda deras enheter och tilldela roller i Microsoft 365 Business.
-ms.openlocfilehash: 574adbc6ae936d611c185681e99a3e9a516962aa
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547780"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561569"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a><span data-ttu-id="a7c31-103">Lägga till fler användare i Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="a7c31-103">Add more users to Microsoft 365 Business</span></span>
+# <a name="add-more-users-to-microsoft-365-business"></a><span data-ttu-id="2e996-103">Lägga till fler användare i Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="2e996-103">Add more users to Microsoft 365 Business</span></span>
 
-## <a name="add-new-users"></a><span data-ttu-id="a7c31-104">Lägg till nya användare</span><span class="sxs-lookup"><span data-stu-id="a7c31-104">Add new users</span></span>
+## <a name="add-new-users"></a><span data-ttu-id="2e996-104">Lägg till nya användare</span><span class="sxs-lookup"><span data-stu-id="2e996-104">Add new users</span></span>
 
-<span data-ttu-id="a7c31-105">Titta på en kort video om hur du lägger till en användare.</span><span class="sxs-lookup"><span data-stu-id="a7c31-105">Watch a short video about adding a user.</span></span> <br><br>
+<span data-ttu-id="2e996-105">Titta på en kort video om hur du lägger till en användare.</span><span class="sxs-lookup"><span data-stu-id="2e996-105">Watch a short video about adding a user.</span></span> <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
-<span data-ttu-id="a7c31-106">Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="a7c31-106">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="2e996-106">Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="2e996-106">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-<span data-ttu-id="a7c31-107">Så här lägger du till en användare:</span><span class="sxs-lookup"><span data-stu-id="a7c31-107">To add a user:</span></span>
+<span data-ttu-id="2e996-107">Så här lägger du till en användare:</span><span class="sxs-lookup"><span data-stu-id="2e996-107">To add a user:</span></span>
 
-1. <span data-ttu-id="a7c31-108">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="a7c31-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span> 
-2. <span data-ttu-id="a7c31-109">Välj **Användare** \> **Aktiva användare**i det vänstra navigeringsfönstret .</span><span class="sxs-lookup"><span data-stu-id="a7c31-109">In the left navigation pane, choose **Users** \> **Active users**.</span></span>
-3. <span data-ttu-id="a7c31-110">På sidan **Aktiva användare** väljer du Lägg till **en användare**.</span><span class="sxs-lookup"><span data-stu-id="a7c31-110">On the **Active users** page, choose **Add a user**.</span></span>
-4. <span data-ttu-id="a7c31-111">Skriv den information som krävs på panelen **Ny användare.**</span><span class="sxs-lookup"><span data-stu-id="a7c31-111">In the **New user** panel, type the required information.</span></span> 
+1. <span data-ttu-id="2e996-108">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="2e996-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span> 
+2. <span data-ttu-id="2e996-109">Välj **Användare** \> **Aktiva användare**i det vänstra navigeringsfönstret .</span><span class="sxs-lookup"><span data-stu-id="2e996-109">In the left navigation pane, choose **Users** \> **Active users**.</span></span>
+3. <span data-ttu-id="2e996-110">På sidan **Aktiva användare** väljer du Lägg till **en användare**.</span><span class="sxs-lookup"><span data-stu-id="2e996-110">On the **Active users** page, choose **Add a user**.</span></span>
+4. <span data-ttu-id="2e996-111">Skriv den information som krävs på panelen **Ny användare.**</span><span class="sxs-lookup"><span data-stu-id="2e996-111">In the **New user** panel, type the required information.</span></span> 
   
-    <span data-ttu-id="a7c31-112">Du kan ange mer information under **Kontaktinformation,** välja hur du anger lösenordet under **Lösenordsinställning** och tilldela roller under **Roller**.</span><span class="sxs-lookup"><span data-stu-id="a7c31-112">You can enter more information under **Contact information**, choose how you set the password under **Password** setting, and assign roles under **Roles**.</span></span>
+    <span data-ttu-id="2e996-112">Du kan ange mer information under **Kontaktinformation,** välja hur du anger lösenordet under **Lösenordsinställning** och tilldela roller under **Roller**.</span><span class="sxs-lookup"><span data-stu-id="2e996-112">You can enter more information under **Contact information**, choose how you set the password under **Password** setting, and assign roles under **Roles**.</span></span>
       
     ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    <span data-ttu-id="a7c31-114">I avsnittet Produktlicenser anger du produktlicensinställningen microsoft **365 Business** på **På**.</span><span class="sxs-lookup"><span data-stu-id="a7c31-114">In the Product licenses section, set the **Microsoft 365 Business** product license setting to **On**.</span></span>
+    <span data-ttu-id="2e996-114">I avsnittet Produktlicenser anger du produktlicensinställningen microsoft **365 Business** på **På**.</span><span class="sxs-lookup"><span data-stu-id="2e996-114">In the Product licenses section, set the **Microsoft 365 Business** product license setting to **On**.</span></span>
       
     ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
-<span data-ttu-id="a7c31-116">Mer information om hur du lägger till användare finns [i Lägga till användare individuellt eller i grupp](https://docs.microsoft.com/office365/admin/add-users/add-users).</span><span class="sxs-lookup"><span data-stu-id="a7c31-116">For  more information about adding users, see [Add users individually or in bulk](https://docs.microsoft.com/office365/admin/add-users/add-users).</span></span>
+<span data-ttu-id="2e996-116">Mer information om hur du lägger till användare finns [i Lägga till användare individuellt eller i grupp](https://docs.microsoft.com/office365/admin/add-users/add-users).</span><span class="sxs-lookup"><span data-stu-id="2e996-116">For  more information about adding users, see [Add users individually or in bulk](https://docs.microsoft.com/office365/admin/add-users/add-users).</span></span>
   
