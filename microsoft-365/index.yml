@@ -1,0 +1,70 @@
+### YamlMime:Hub
+title: Hjälpcenter för Microsoft 365 för administratörer och IT-proffs
+summary: Utforska hjälp- och utbildningsresurser för Microsoft 365.
+brand: m365
+metadata:
+  title: Hjälpcenter för Microsoft 365 för administratörer och IT-proffs
+  description: Konfigurera, distribuera och hantera Microsoft 365 för att stödja din organisation, småföretag, kampanj eller lärare och studenter
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857327"
+highlightedContent:
+  items:
+  - title: Utbildning för administratörer och IT-proffs
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+  - title: Utbildning för slutanvändare
+    itemType: learn
+    url: https://support.office.com/modernworkplace
+  - title: Konfigurera ditt företag i molnet
+    itemType: learn
+    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+  - title: Test Lab Guider för IT-proffs
+    itemType: how-to-guide
+    url: ./enterprise/m365-enterprise-test-lab-guides.md
+  - title: Microsoft 365 tech community
+    itemType: get-started
+    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+  - title: Resurser för utvecklare
+    itemType: reference
+    url: https://developer.microsoft.com/microsoft-365
+additionalContent:
+  sections:
+  - title: Få hjälp med Microsoft 365
+    summary: Välj ett kort om du vill veta mer om Microsoft 365.
+    items:
+    - title: Administrationscenter för Microsoft 365
+      summary: Konfigurera och hantera Office 365- och Microsoft 365-tjänster för din organisation.
+      url: ./admin/admin-home.yml
+    - title: Microsoft 365 Företag
+      summary: Designad för små och medelstora företag. Kör ditt företag med den senaste versionen av Windows- och Office-appar som Excel och Outlook. Dra nytta av dataskydd och säkerhet som sträcker sig till alla dina företagsenheter.
+      url: ./business/index.yml
+    - title: Microsoft 365 Företag
+      summary: Designad för stora organisationer. Skydda ditt företag och omvandla ditt sätt att arbeta med Office-appar, Windows 10 och Enterprise Mobility + Security.
+      url: ./enterprise/index.yml
+    - title: Microsoft 365 Utbildning
+      summary: Utformad för lärare för att låsa upp kreativitet, främja lagarbete och ge en enkel och säker upplevelse i en enda, prisvärd lösning byggd för utbildning.
+      url: https://docs.microsoft.com/education/
+    - title: Microsoft 365-efterlevnad
+      summary: Hjälp din organisation att styra information, skydda mot risker och följa juridiska eller regulatoriska standarder.
+      url: ./compliance/index.yml
+    - title: Microsoft 365-säkerhet
+      summary: Lär dig mer om de robusta säkerhetslösningarna och tjänsterna i Microsoft 365 Security så att du bättre kan skydda din organisation över attackytor.
+      url: ./security/index.yml
+    - title: Microsoft 365 för kampanjer
+      summary: Skydda kampanj- eller affärsdata och kommunikation med den här rekommenderade konfigurationen för Microsoft 365 Business.
+      url: ./campaigns/index.md
+    - title: Microsoft-hanterat skrivbord
+      summary: Microsoft Managed Desktop samlar Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning, så att du kan frigöra IT-teamen för att fokusera på kärnverksamhetens behov.
+      url: ./managed-desktop/index.yml

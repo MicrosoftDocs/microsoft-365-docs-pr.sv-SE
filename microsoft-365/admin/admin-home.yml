@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Microsoft 365 administratördocumation
+summary: Läs mer om tillgängliga resurser för Microsoft 365-administratörer.
+metadata:
+  title: Microsoft 365 administratördocumation
+  description: Läs mer om tillgängliga resurser för Microsoft 365-administratörer.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/05/2020
+  ms.openlocfilehash: 9baffa7688223c57c5ef863d9d39beed7bc38f62
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857634"
+landingContent:
+- title: Om administrationscenter
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är admin center
+      url: admin-overview/admin-overview.md
+  - linkListType: whats-new
+    links:
+    - text: Skaffa nya funktioner
+      url: manage/stay-on-top-of-updates.md
+- title: Komma igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Planera konfigurationen
+      url: setup/plan-your-setup.md
+    - text: Konfigurera Office 365
+      url: setup/setup.md
+    - text: Lägga till en domän i Office 365
+      url: setup/add-domain.md
+    - text: Migrera e-post och kontakter till Office 365
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: Konfigurera fillagring och fildelning i Office 365
+      url: setup/set-up-file-storage-and-sharing.md
+    - text: Add users
+      url: add-users/add-users.md
+    - text: Konfigurera multifaktorautentisering
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+- title: Felsökning
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Åtgärda problem med Office-installationen
+      url: https://support.office.com/article/troubleshoot-installing-office-35ff2def-e0b2-4dac-9784-4cf212c1f6c2
+    - text: Åtgärda problem med Outlook och Office 365 med Support- och återställningsassistenten för Microsoft
+      url: https://support.office.com/article/about-the-microsoft-support-and-recovery-assistant-e90bb691-c2a7-4697-a94f-88836856c72f
+    - text: Åtgärda problem med e-post
+      url: https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues
+    - text: Åtgärda synkroniseringsproblem med OneDrive för företag
+      url: https://go.microsoft.com/fwlink/?linkid=866431
+- title: Prenumerera
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Köpa en prenumeration från din kostnadsfria utvärderingsversion
+      url: https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial
+    - text: Avbryt prenumerationen
+      url: https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription?
+- title: Mer information
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Dokumentation om Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Dokumentation för Office 365 Enterprise
+      url: https://docs.microsoft.com/Office365/Enterprise
+    - text: Utbildningscenter för Office 365
+      url: https://support.office.com/office-training-center
+    - text: Komma igång med Microsoft 365
+      url: https://docs.microsoft.com/en-us/learn/m365/
