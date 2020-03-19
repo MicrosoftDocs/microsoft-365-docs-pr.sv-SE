@@ -1,0 +1,106 @@
+### YamlMime:Hub
+title: Microsoft 365 för företagsdokumentation och resurser
+summary: Förstklassiga produktivitetsappar med intelligenta molntjänster som förändrar hur du arbetar.
+brand: m365
+metadata:
+  title: Microsoft 365 för företagsdokumentation och resurser
+  description: Lär dig mer om den produktdokumentation och de resurser som är tillgängliga för Microsoft 365 för företag för IT-proffs, informationsarbetare och partner.
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: M365-subscription-management
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/29/2019
+  ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
+  ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 12/19/2019
+  ms.locfileid: "42808277"
+highlightedContent:
+  items:
+  - title: Läs mer om Microsoft 365 för företag
+    itemType: get-started
+    url: microsoft-365-overview.md
+  - title: Påskynda distributionen med FastTrack
+    itemType: quickstart
+    url: https://www.microsoft.com/fasttrack/microsoft-365
+  - title: Träna dina IT-proffs och administratörer
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+conceptualContent:
+  title: Få hjälp med Microsoft 365 för företag och andra resurser
+  summary: Utforska Microsoft 365 för vägledning, funktioner och tjänster för företagsdistribution.
+  items:
+  - title: Följ översikten över distributionen
+    links:
+    - url: deploy-microsoft-365-enterprise.md
+      itemType: deploy
+      text: Översikt över distribution
+    - url: deploy-foundation-infrastructure.md
+      itemType: how-to-guide
+      text: Stiftelsens infrastruktur
+    - url: deploy-workloads.md
+      itemType: how-to-guide
+      text: Arbetsbelastningar och scenarier
+    - url: desktop-deployment-center-home.md
+      itemType: get-started
+      text: Distributionscenter för skrivbord
+  - title: Distribuera nyckelelement
+    links:
+    - url: identity-infrastructure.md
+      itemType: how-to-guide
+      text: Identitetsinfrastruktur
+    - url: https://docs.microsoft.com/windows/deployment/
+      itemType: get-started
+      text: Windows 10 Företag
+    - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+      itemType: deploy
+      text: Office 365 ProPlus
+    - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+      itemType: deploy
+      text: Microsoft Intune
+  - title: Distribuera viktiga scenarier
+    links:
+    - url: secure-teams-highly-regulated-data-scenario.md
+      itemType: how-to-guide
+      text: Microsoft Teams för starkt reglerade data
+    - url: teams-sharepoint-online-sites-highly-regulated-data.md
+      itemType: how-to-guide
+      text: SharePoint-webbplatser för starkt reglerade data
+    - url: empower-people-to-work-remotely.md
+      itemType: how-to-guide
+      text: Distansarbetare
+    - url: migration-microsoft-365-enterprise-workload.md
+      itemType: deploy
+      text: Office-klient och server och Windows-migrering
+  - title: Hantera Microsoft 365 för företag
+    links:
+    - url: https://docs.microsoft.com/windows/deployment/update/
+      itemType: how-to-guide
+      text: Windows 10 Företag
+    - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+      itemType: concept
+      text: Office 365 ProPlus
+    - url: https://docs.microsoft.com/intune/apps/app-management
+      itemType: get-started
+      text: Appar med Intune
+    - url: https://docs.microsoft.com/office365/
+      itemType: get-started
+      text: Office 365-tjänster
+additionalContent:
+  sections:
+  - title: Ytterligare resurser
+    summary: Läs mer om andra Microsoft 365-funktioner och resurser.
+    items:
+    - title: Microsoft 365-efterlevnad
+      summary: Hjälp din organisation att styra information, skydda mot risker och följa juridiska eller regulatoriska standarder.
+      url: https://docs.microsoft.com/microsoft-365/compliance/index
+    - title: Microsoft 365-säkerhet
+      summary: Skydda din organisation över attackytor med robusta säkerhetstjänster och lösningar.
+      url: https://docs.microsoft.com/microsoft-365/security/index
+    - title: Microsoft 365 tekniska community
+      summary: Anslut och samarbeta med kollegor och experter i Microsoft Tech Community och dela med dig av bästa metoder för Microsoft 365.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

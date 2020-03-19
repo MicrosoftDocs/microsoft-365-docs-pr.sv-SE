@@ -1,0 +1,73 @@
+### YamlMime:Landing
+title: Företagsprenumerationer och faktureringsdokumentation
+summary: Lär dig hur du köper och hanterar företagsprenumerationer, utför licenshanteringsuppgifter och hanterar fakturering och betalningar för dina företagskonton med Microsoft.
+metadata:
+  title: Företagsprenumerationer och faktureringsdokumentation
+  description: Lär dig hur du köper och hanterar företagsprenumerationer, utför licenshanteringsuppgifter och hanterar fakturering och betalningar för dina företagskonton med Microsoft.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection: commerce
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  ms.date: 02/27/2020
+  localization_priority: Normal
+  search.appverid: MET150
+  ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
+  ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 02/29/2020
+  ms.locfileid: "42809100"
+landingContent:
+- title: Hantera räkningar och betalningar
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Visa din faktura
+      url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: Hantera betalningsmetoder
+      url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - text: Förstå din faktura
+      url: billing-and-payments/understand-your-invoice.md
+    - text: Hantera faktureringsprofiler
+      url: billing-and-payments/manage-billing-profiles.md
+    - text: Hantera faktureringskonton
+      url: manage-billing-accounts.md
+- title: Hantera licenser
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Tilldela licenser till användare
+      url: ../admin/manage/assign-licenses-to-users.md
+    - text: Allmänt om prenumerationer och licenser
+      url: licenses/subscriptions-and-licenses.md
+    - text: Köpa licenser för prenumerationen
+      url: licenses/buy-licenses.md
+    - text: Ta bort licenser från prenumerationen
+      url: licenses/remove-licenses-from-subscription.md
+- title: Uppgradera, förnya eller avbryta
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Uppgradera till ett annat abonnemang
+      url: subscriptions/upgrade-to-different-plan.md
+    - text: Förnya prenumerationen
+      url: subscriptions/renew-your-subscription.md
+    - text: Avbryt prenumerationen
+      url: subscriptions/cancel-your-subscription.md
+    - text: Återaktivera prenumerationen
+      url: subscriptions/reactivate-your-subscription.md
+    - text: Stäng ditt konto
+      url: close-your-account.md
+- title: Prova eller köp
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Prova eller köp Microsoft 365
+      url: try-or-buy-microsoft-365.md
+    - text: Köp en prenumeration från din kostnadsfria provperiod
+      url: buy-a-subscription-from-your-free-trial.md
+    - text: 'Förlänga utvärderingen '
+      url: extend-your-trial.md
+    - text: Köpa ett domännamn
+      url: ../admin/get-help-with-domains/buy-a-domain-name.md
