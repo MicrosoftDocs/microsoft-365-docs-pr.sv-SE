@@ -1,0 +1,104 @@
+### YamlMime:Landing
+title: Documation av Office 365-domäner
+summary: Använd de här resurserna när du vill komma igång med din egen domän för e-post, webbplatser och konton i Office 365.
+metadata:
+  title: Documation av Office 365-domäner
+  description: Använd de här resurserna när du vill komma igång med din egen domän för e-post, webbplatser och konton i Office 365.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/06/2020
+  ms.openlocfilehash: 572cc546b73612880169c151783f297cc72077cc
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857654"
+landingContent:
+- title: Förstå domäner
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Vad är en domän
+      url: what-is-a-domain.md
+    - text: Grundläggande om DNS
+      url: dns-basics.md
+    - text: Lära dig mer om den ursprungliga onmicrosoft-domänen
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain
+    - text: Hur DNS-hantering fungerar i Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+    - text: Läs tjänstbeskrivningen för Office 365 för domäner
+      url: https://go.microsoft.com/fwlink/p/?LinkId=402693
+  - linkListType: how-to-guide
+    links:
+    - text: Hur nuvarande e-post påverkas om du lägger till en domän eller ändrar DNS-poster
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+- title: Komma igång
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Verifiera din domän (bevisa att du äger domänen)
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - text: Samla in den information du behöver för att skapa DNS-poster
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records
+    - text: Hitta domänens registrator
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar
+    - text: Köpa ett domännamn
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+    - text: Konfigurera ett pilottest med din egen domän för ett fåtal personer i företaget
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-to-set-up-an-office-365-pilot
+    - text: Lägga till en GoDaddy-domän i Office 365 snabbt
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/domain-connect
+    - text: Lägga till de DNS-poster som krävs för Office 365-tjänster
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+    - text: How to prepare a non-routable domain for directory synchronization
+      url: https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization
+    - text: Vanliga frågor och svar om domäner
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+- title: Skapa DNS-poster för Office 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa DNS-poster på GoDaddy
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-godaddy
+    - text: Skapa DNS-poster med 1&1 IONOS
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet
+    - text: Skapa DNS-poster på Network Solutions
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-network-solutions
+    - text: Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+- title: Ändra namnservrar till Office 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ändra namnservrar för att konfigurera Office 365 med 1&1 IONOS
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/change-nameservers-at-1-1-internet
+    - text: Ändra namnservrar för att konfigurera Office 365 med Network Solutions
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/change-nameservers-at-network-solutions
+    - text: Lägga till en GoDaddy-domän i Office 365 snabbt
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/domain-connect
+    - text: Ändra namnservrar till Office 365 så att poster konfigureras åt dig
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions
+- title: Göra ändringar
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 'Hitta och åtgärda problem när du har ändrat ditt domännamn eller DNS-poster '
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues
+    - text: Lägga till eller redigera anpassade DNS-poster i Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/add-or-edit-custom-dns-records
+    - text: Lägga till egna underdomäner eller flera domäner i Office 365
+      url: hhttps://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-office-365
+    - text: Ändra hur Office 365 hanterar DNS för din domän
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-do-i-change-how-my-dns-records-are-managed-in-office-365
+    - text: Ta bort en domän
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+    - text: Office 365 integration with on-premises environments
+      url: https://docs.microsoft.com/office365/enterprise/office-365-integration
+    - text: Kontakta supporten för företagsprodukter
+      url: https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products
