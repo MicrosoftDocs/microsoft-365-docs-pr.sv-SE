@@ -1,0 +1,84 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Dokumentation och resurser för Microsoft Managed Desktop
+metadata:
+  title: Dokumentation för Microsoft Managed Desktop
+  description: null
+  keywords: 'enhet, app, hantering'
+  author: jaimeo
+  ms.author: jaimeo
+  ms.topic: landing-page
+  ms.devlang: na
+  ms.service: m365-md
+sections:
+  - items:
+      - type: markdown
+        text: 'Microsoft Managed Desktop samlar Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning, så att du kan frigöra IT-teamen för att fokusera på kärnverksamhetens behov.'
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: intro/index.md
+            html: '<p>Introduktion till Microsoft Managed Desktop för beslutsfattare – vad det är, hur det fungerar och vad det kan göra för dig</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+              alt: ''
+            title: Vad är Microsoft Managed Desktop?
+          - href: service-description/index.md
+            html: <p>Detaljerad beskrivning av alla delar av Microsoft Managed Desktop</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+              alt: ''
+            title: Beskrivning av tjänsten
+          - href: get-ready/index.md
+            html: <p>Alla steg för att få din miljö och organisation redo att arbeta med tjänsten</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
+              alt: ''
+            title: Gör dig redo
+          - href: get-started/index.md
+            html: '<p>Få din organisation ombord på Microsoft Managed Desktop, inklusive att konfigurera enheter och distribuera appar</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              alt: ''
+            title: Komma igång
+          - href: working-with-managed-desktop/index.md
+            html: <p>Allt om din dagliga verksamhet med tjänsten</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+              alt: ''
+            title: Arbeta med Microsoft Managed Desktop
+  - title: Nya artiklar och blogginlägg
+    items:
+      - type: paragraph
+        text: Läs den senaste och bästa informationen du behöver veta.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
+            title: '- Jag vet inte vad du ska. Din fullständiga översikt till Microsoft Managed Desktop'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
+            title: '- Jag vet inte vad du vill. Studie: Ökande efterfrågan på managed desktop-tjänster'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
+            title: '- Jag vet inte vad du ska. Njut av ditt företag med en modern arbetsplats'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
+  - title: Videor
+    items:
+      - type: paragraph
+        text: Lär dig mer om fördelarna med Microsoft Managed Desktop från VP of Technology på Indiana Pacers.
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: General Manager för Microsoft Managed Desktop delar alla höjdpunkter i tjänsten vid den årliga Ignite-konferensen.
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
