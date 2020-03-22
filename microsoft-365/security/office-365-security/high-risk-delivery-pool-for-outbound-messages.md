@@ -1,11 +1,11 @@
 ---
-title: Högriskleveranspool för utgående meddelanden
+title: Pool med hög riskleverans för utgående meddelanden
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,42 +15,41 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: När en kunds e-postsystem har komprometterats av skadlig kod eller en skadlig skräppostattack, och den skickar utgående skräppost via den värdbaserade filtreringstjänsten, kan detta leda till att IP-adresserna till Office 365-datacenterservrarna visas på block från tredje part Listor.
-ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Lär dig hur högriskleveranspoolen används för att skydda ryktet för e-postservrar i Office 365-datacenter.
+ms.openlocfilehash: 5d1bd2b14eb17ed74ee1cf1e44967f660f4595b8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42808608"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895365"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a><span data-ttu-id="48fad-103">Högriskleveranspool för utgående meddelanden</span><span class="sxs-lookup"><span data-stu-id="48fad-103">High-risk delivery pool for outbound messages</span></span>
+# <a name="high-risk-delivery-pool-for-outbound-messages-in-office-365"></a><span data-ttu-id="1f492-103">Högriskleveranspool för utgående meddelanden i Office 365</span><span class="sxs-lookup"><span data-stu-id="1f492-103">High-risk delivery pool for outbound messages in Office 365</span></span>
 
-<span data-ttu-id="48fad-104">När en kunds e-postsystem har komprometterats av skadlig kod eller en skadlig skräppostattack, och den skickar utgående skräppost via den värdbaserade filtreringstjänsten, kan detta leda till att IP-adresserna till Office 365-datacenterservrarna visas på block från tredje part Listor.</span><span class="sxs-lookup"><span data-stu-id="48fad-104">When a customer's email system has been compromised by malware or a malicious spam attack, and it's sending outbound spam through the hosted filtering service, this can result in the IP addresses of the Office 365 data center servers being listed on third-party block lists.</span></span> <span data-ttu-id="48fad-105">Målservrar som inte använder den värdbaserade filtreringstjänsten, men som använder dessa blockeringslistor, avvisar alla e-postmeddelanden som skickas från någon av de värdbaserade filtrerings-IP-adresserna som har lagts till i dessa listor.</span><span class="sxs-lookup"><span data-stu-id="48fad-105">Destination servers that do not use the hosted filtering service, but do use these block lists, reject all email sent from any of the hosted filtering IP addresses that have been added to those lists.</span></span> <span data-ttu-id="48fad-106">För att förhindra detta skickas alla utgående meddelanden som överskrider skräpposttröskeln via en leveranspool med hög risk.</span><span class="sxs-lookup"><span data-stu-id="48fad-106">To prevent this, all outbound messages that exceed the spam threshold are sent through a high-risk delivery pool.</span></span> <span data-ttu-id="48fad-107">Den här sekundära utgående e-postpoolen används endast för att skicka meddelanden som kan vara av låg kvalitet.</span><span class="sxs-lookup"><span data-stu-id="48fad-107">This secondary outbound email pool is only used to send messages that may be of low quality.</span></span> <span data-ttu-id="48fad-108">Detta hjälper till att skydda resten av nätverket från att skicka meddelanden som är mer benägna att resultera i att den sändande IP-adressen blockeras.</span><span class="sxs-lookup"><span data-stu-id="48fad-108">This helps to protect the rest of the network from sending messages that are more likely to result in the sending IP address being blocked.</span></span>
-  
-<span data-ttu-id="48fad-109">Användningen av en särskild högriskleveranspool säkerställer att den normala utgående poolen bara skickar meddelanden som är kända för att vara av hög kvalitet.</span><span class="sxs-lookup"><span data-stu-id="48fad-109">The use of a dedicated high-risk delivery pool helps ensure that the normal outbound pool is only sending messages that are known to be of a high-quality.</span></span> <span data-ttu-id="48fad-110">Med den här sekundära IP-poolen kan du minska sannolikheten för att den normala utgående IP-poolen läggs till i en blockerad lista.</span><span class="sxs-lookup"><span data-stu-id="48fad-110">Using this secondary IP pool helps to reduce the probability of the normal outbound-IP pool being added to a blocked list.</span></span> <span data-ttu-id="48fad-111">Möjligheten att högriskpoolen placeras på en blockerad lista är fortfarande en risk.</span><span class="sxs-lookup"><span data-stu-id="48fad-111">The possibility of the high-risk delivery pool being placed on a blocked list remains a risk.</span></span> <span data-ttu-id="48fad-112">Detta är avsiktligt.</span><span class="sxs-lookup"><span data-stu-id="48fad-112">This is by design.</span></span>
-  
-<span data-ttu-id="48fad-113">Meddelanden där den sändande domänen inte har någon adresspost (A-post), som ger dig domänens IP-adress, och ingen MX-post, som hjälper direktreklam till de servrar som ska ta emot e-post för en viss domän i DNS, dirigeras alltid genom högriskleveranspool oavsett deras spamdisposition.</span><span class="sxs-lookup"><span data-stu-id="48fad-113">Messages where the sending domain has no address record (A record), which gives you the IP address of the domain, and no MX record, which helps direct mail to the servers that should receive the mail for a particular domain in the DNS, are always routed through the high-risk delivery pool regardless of their spam disposition.</span></span>
-  
-## <a name="understanding-delivery-status-notification-dsn-messages"></a><span data-ttu-id="48fad-114">Förstå DSN-meddelanden (Delivery Status Message)</span><span class="sxs-lookup"><span data-stu-id="48fad-114">Understanding Delivery Status Notification (DSN) messages</span></span>
+<span data-ttu-id="1f492-104">E-postservrar i Office 365-datacenter kan vara tillfälligt skyldiga till att skicka skräppost.</span><span class="sxs-lookup"><span data-stu-id="1f492-104">Email servers in the Office 365 datacenters might be temporarily guilty of sending spam.</span></span> <span data-ttu-id="1f492-105">Till exempel en skadlig kod eller skadlig skräppostattack i en lokal e-postorganisation som skickar utgående e-post via Office 365 eller komprometterade Office 365-konton.</span><span class="sxs-lookup"><span data-stu-id="1f492-105">For example, a malware or malicious spam attack in an on-premises email organization that sends outbound mail through Office 365, or compromised Office 365 accounts.</span></span> <span data-ttu-id="1f492-106">Dessa scenarier kan resultera i IP-adressen för de berörda Office 365-datacenterservrarna som visas i blocklistor från tredje part.</span><span class="sxs-lookup"><span data-stu-id="1f492-106">These scenarios can result in the IP address of the affected Office 365 datacenter servers appearing on third-party block lists.</span></span> <span data-ttu-id="1f492-107">Mål e-postorganisationer som använder dessa blocklistor kommer att avvisa e-post från dessa meddelanden källor.</span><span class="sxs-lookup"><span data-stu-id="1f492-107">Destination email organizations that use these block lists will reject email from those messages sources.</span></span>
 
-<span data-ttu-id="48fad-115">Den utgående högriskleveranspoolen hanterar leveransen för alla "studsade" eller "misslyckade" (DSN) meddelanden.</span><span class="sxs-lookup"><span data-stu-id="48fad-115">The outbound high-risk delivery pool manages the delivery for all "bounced" or "failed" (DSN) messages.</span></span>
-  
-<span data-ttu-id="48fad-116">Möjliga orsaker till en ökning av DSN-meddelanden är följande:</span><span class="sxs-lookup"><span data-stu-id="48fad-116">Possible causes for a surge in DSN messages include the following:</span></span>
-  
-- <span data-ttu-id="48fad-117">En förfalskningskampanj som påverkar en av kunderna som använder tjänsten</span><span class="sxs-lookup"><span data-stu-id="48fad-117">A spoofing campaign affecting one of the customers using the service</span></span>
-    
-- <span data-ttu-id="48fad-118">En katalog skörd attack</span><span class="sxs-lookup"><span data-stu-id="48fad-118">A directory harvest attack</span></span>
-    
-- <span data-ttu-id="48fad-119">En spamattack</span><span class="sxs-lookup"><span data-stu-id="48fad-119">A spam attack</span></span>
-    
-- <span data-ttu-id="48fad-120">En oseriös SMTP-server</span><span class="sxs-lookup"><span data-stu-id="48fad-120">A rogue SMTP server</span></span>
-    
-<span data-ttu-id="48fad-121">Alla dessa problem kan resultera i en plötslig ökning av antalet DSN-meddelanden som bearbetas av tjänsten.</span><span class="sxs-lookup"><span data-stu-id="48fad-121">All of these issues can result in a sudden increase in the number of DSN messages being processed by the service.</span></span> <span data-ttu-id="48fad-122">Många gånger verkar dessa DSN-meddelanden vara skräppost till andra e-postservrar och -tjänster.</span><span class="sxs-lookup"><span data-stu-id="48fad-122">Many times, these DSN messages appear to be spam to other email servers and services.</span></span>
-  
-## <a name="for-more-information"></a><span data-ttu-id="48fad-123">Mer information</span><span class="sxs-lookup"><span data-stu-id="48fad-123">For more information</span></span>
+<span data-ttu-id="1f492-108">För att förhindra detta skickas alla utgående meddelanden från Office 365-datacenterservrar som är fast beslutna att vara skräppost eller som överskrider sändningsgränserna för [tjänsten](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller [utgående skräppostprinciper](configure-the-outbound-spam-policy.md) via _högriskleveranspoolen_.</span><span class="sxs-lookup"><span data-stu-id="1f492-108">To prevent this, all outbound messages from Office 365 datacenter servers that's determined to be spam or that exceeds the sending limits of [the service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or [outbound spam policies](configure-the-outbound-spam-policy.md) are sent through the _high-risk delivery pool_.</span></span>
 
-[<span data-ttu-id="48fad-124">Konfigurera principen för skräppost för utgående</span><span class="sxs-lookup"><span data-stu-id="48fad-124">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
-  
-[<span data-ttu-id="48fad-125">Vanliga frågor om skydd mot skräppost</span><span class="sxs-lookup"><span data-stu-id="48fad-125">Anti-spam protection FAQ</span></span>](anti-spam-protection-faq.md)
-  
+<span data-ttu-id="1f492-109">Högriskleveranspoolen är en sekundär IP-adresspool för utgående e-post som endast används för att skicka meddelanden av "låg kvalitet" (till exempel skräppost och [backscatter).](backscatter-messages-and-eop.md)</span><span class="sxs-lookup"><span data-stu-id="1f492-109">The high risk delivery pool is a secondary IP address pool for outbound email that's only used to send "low quality" messages (for example, spam and [backscatter](backscatter-messages-and-eop.md)).</span></span> <span data-ttu-id="1f492-110">Med hjälp av hög risk leveranspoolen hjälper till att förhindra den normala IP-adresspoolen för utgående e-post från att skicka skräppost.</span><span class="sxs-lookup"><span data-stu-id="1f492-110">Using the high risk delivery pool helps prevent the normal IP address pool for outbound email from sending spam.</span></span> <span data-ttu-id="1f492-111">Den normala IP-adresspoolen för utgående e-post upprätthåller ryktet att skicka "högkvalitativa" meddelanden, vilket minskar sannolikheten för att dessa IP-adresser visas på IP-blockeringslistor.</span><span class="sxs-lookup"><span data-stu-id="1f492-111">The normal IP address pool for outbound email maintains the reputation sending "high quality" messages, which reduces the likelihood that these IP address will appear on IP block lists.</span></span>
 
+<span data-ttu-id="1f492-112">Den mycket verkliga möjligheten att IP-adresser i högriskleveranspoolen kommer att placeras på IP-blocklistor kvarstår, men detta är avsiktligt.</span><span class="sxs-lookup"><span data-stu-id="1f492-112">The very real possibility that IP addresses in the high-risk delivery pool will be placed on IP block lists remains, but this is by design.</span></span> <span data-ttu-id="1f492-113">Leverans till de avsedda mottagarna är inte garanterad, eftersom många e-postorganisationer inte accepterar meddelanden från högriskleveranspoolen.</span><span class="sxs-lookup"><span data-stu-id="1f492-113">Delivery to the intended recipients isn't guaranteed, because many email organizations won't accept messages from the high risk delivery pool.</span></span>
+
+<span data-ttu-id="1f492-114">Mer information finns [i Kontrollera utgående skräppost i Office 365](outbound-spam-controls.md).</span><span class="sxs-lookup"><span data-stu-id="1f492-114">For more information, see [Control outbound spam in Office 365](outbound-spam-controls.md).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="1f492-115">Meddelanden där källe-domänen inte har någon A-post och ingen MX-post som definieras i offentlig DNS dirigeras alltid genom högriskleveranspoolen, oavsett deras spam eller skicka gränsdisposition.</span><span class="sxs-lookup"><span data-stu-id="1f492-115">Messages where the source email domain has no A record and no MX record defined in public DNS are always routed through the high-risk delivery pool, regardless of their spam or sending limit disposition.</span></span>
+
+## <a name="bounce-messages"></a><span data-ttu-id="1f492-116">Studsa meddelanden</span><span class="sxs-lookup"><span data-stu-id="1f492-116">Bounce messages</span></span>
+
+<span data-ttu-id="1f492-117">Den utgående högriskleveranspoolen hanterar leveransen för alla rapporter som inte levereras (kallas även NDRs, avstudsmeddelanden, leveransstatusmeddelanden eller DSN-nätverk).</span><span class="sxs-lookup"><span data-stu-id="1f492-117">The outbound high-risk delivery pool manages the delivery for all non-delivery reports (also known as NDRs, bounce messages, delivery status notifications, or DSNs).</span></span>
+
+<span data-ttu-id="1f492-118">Möjliga orsaker till en ökning av NDR inkluderar:</span><span class="sxs-lookup"><span data-stu-id="1f492-118">Possible causes for a surge in NDRs include:</span></span>
+
+- <span data-ttu-id="1f492-119">En förfalskningskampanj som påverkar en av kunderna som använder tjänsten.</span><span class="sxs-lookup"><span data-stu-id="1f492-119">A spoofing campaign that affects one of the customers using the service.</span></span>
+
+- <span data-ttu-id="1f492-120">En katalog skörd attack.</span><span class="sxs-lookup"><span data-stu-id="1f492-120">A directory harvest attack.</span></span>
+
+- <span data-ttu-id="1f492-121">En spamattack.</span><span class="sxs-lookup"><span data-stu-id="1f492-121">A spam attack.</span></span>
+
+- <span data-ttu-id="1f492-122">En oseriös e-postserver.</span><span class="sxs-lookup"><span data-stu-id="1f492-122">A rogue email server.</span></span>
+
+<span data-ttu-id="1f492-123">Alla dessa problem kan resultera i en plötslig ökning av antalet NDR som behandlas av tjänsten.</span><span class="sxs-lookup"><span data-stu-id="1f492-123">All of these issues can result in a sudden increase in the number of NDRs being processed by the service.</span></span> <span data-ttu-id="1f492-124">Många gånger, dessa NDRs verkar vara spam till andra e-postservrar och tjänster (även känd som _[backscatter).](backscatter-messages-and-eop.md)_</span><span class="sxs-lookup"><span data-stu-id="1f492-124">Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).</span></span>

@@ -16,19 +16,17 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: Som Exchange Online- eller Exchange Online Protection-administratör (EOP) kan du se till att ett e-postmeddelande som reser via tjänsten inte markeras som skräppost. Se den uppdaterade versionen av tips och procedurer för att åstadkomma detta i Förhindra falsk positiv e-post markerad som skräppost med en safelist eller andra tekniker.
-ms.openlocfilehash: cb84df8eddc8914c562118166294e8a8f4aac714
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7ff5c7d027a4caabaaadc8169d6afab5698a50bb
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42811120"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893640"
 ---
-# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a><span data-ttu-id="73a0d-104">Så här säkerställer du att ett meddelande inte markeras som skräppost</span><span class="sxs-lookup"><span data-stu-id="73a0d-104">How to help ensure that a message isn't marked as spam</span></span>
+# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a><span data-ttu-id="a893e-104">Så här säkerställer du att ett meddelande inte markeras som skräppost</span><span class="sxs-lookup"><span data-stu-id="a893e-104">How to help ensure that a message isn't marked as spam</span></span>
 
-<span data-ttu-id="73a0d-105">Som Exchange Online- eller Exchange Online Protection-administratör (EOP) kan du se till att ett e-postmeddelande som reser via tjänsten inte markeras som skräppost.</span><span class="sxs-lookup"><span data-stu-id="73a0d-105">As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam.</span></span> <span data-ttu-id="73a0d-106">Se den uppdaterade versionen av tips och procedurer för att åstadkomma detta i [Så här förhindrar du att bra e-post markeras som skräppost i Office 365](prevent-email-from-being-marked-as-spam.md).</span><span class="sxs-lookup"><span data-stu-id="73a0d-106">See the updated version of the tips and procedures to accomplish this in [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md).</span></span>
+<span data-ttu-id="a893e-105">Som Exchange Online- eller Exchange Online Protection-administratör (EOP) kan du se till att ett e-postmeddelande som reser via tjänsten inte markeras som skräppost.</span><span class="sxs-lookup"><span data-stu-id="a893e-105">As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam.</span></span> <span data-ttu-id="a893e-106">Se den uppdaterade versionen av tips och procedurer för att åstadkomma detta i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="a893e-106">See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="73a0d-107">Se även</span><span class="sxs-lookup"><span data-stu-id="73a0d-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a893e-107">Se även</span><span class="sxs-lookup"><span data-stu-id="a893e-107">See also</span></span>
 
-[<span data-ttu-id="73a0d-108">Säkra avsändare- och blockerade avsändarelistor i Exchange Online</span><span class="sxs-lookup"><span data-stu-id="73a0d-108">Safe sender and blocked sender lists in Exchange Online</span></span>](safe-sender-and-blocked-sender-lists-faq.md)
-
-[<span data-ttu-id="73a0d-109">Office 365 email anti-spam protection</span><span class="sxs-lookup"><span data-stu-id="73a0d-109">Office 365 email anti-spam protection</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="a893e-108">Skydd mot skräppost i Office 365</span><span class="sxs-lookup"><span data-stu-id="a893e-108">Anti-spam protection in Office 365</span></span>](anti-spam-protection.md)

@@ -1,9 +1,9 @@
 ---
-title: Använd e-postflödesregler för att konfigurera massfiltrering av e-post i Exchange Online Protection
+title: Använda regler för e-postflöde för att filtrera massutskick av e-post i Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -15,133 +15,161 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du använder regler för e-postflöde i Exchange Online Protection för massfiltrering av e-post.
-ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809355"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895053"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a><span data-ttu-id="4d2c4-103">Använd e-postflödesregler för att konfigurera massfiltrering av e-post i Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="4d2c4-103">Use mail flow rules to configure bulk email filtering in Exchange Online Protection</span></span>
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a><span data-ttu-id="43522-103">Använda regler för e-postflöde för att filtrera massutskick av e-post i Office 365</span><span class="sxs-lookup"><span data-stu-id="43522-103">Use mail flow rules to filter bulk email in Office 365</span></span>
 
-<span data-ttu-id="4d2c4-104">Du kan ange innehållsfilter för skräppost och masse-e-post med hjälp av standardprinciperna för skräppostinnehåll.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-104">You can set company-wide content filters for spam and bulk email using the default spam content-filter policies.</span></span> <span data-ttu-id="4d2c4-105">Kolla [Konfigurera principer för skräppostfilter](configure-your-spam-filter-policies.md) och [Ange ContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) om hur du ställer in principer för innehållsfilter.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-105">Check out [Configure your spam filter policies](configure-your-spam-filter-policies.md) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) on how to set the content filter policies.</span></span>
+<span data-ttu-id="43522-104">Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att skanna inkommande meddelanden för skräppost och massutskick (kallas även grå e-post).</span><span class="sxs-lookup"><span data-stu-id="43522-104">If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam and bulk mail (also known as gray mail).</span></span> <span data-ttu-id="43522-105">Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="43522-105">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="4d2c4-106">Om du vill ha fler alternativ för att filtrera massmeddelanden kan du skapa regler för e-postflöde (kallas även transportregler) för att söka efter textmönster eller fraser som ofta finns i massmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-106">If you want to more options to filter bulk messages, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases frequently found in bulk emails.</span></span> <span data-ttu-id="4d2c4-107">Alla meddelanden som innehåller dessa egenskaper markeras som skräppost.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-107">Any message containing these characteristics will be marked as spam.</span></span> <span data-ttu-id="4d2c4-108">Om du använder dessa regler kan mängden oönskad masse-e-post som organisationen tar emot minskas.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-108">Using these rules can help reduce the amount of unwanted bulk email your organization receives.</span></span>
+<span data-ttu-id="43522-106">Om du vill att fler alternativ ska filtrera massutskick kan du skapa regler för e-postflöde (kallas även transportregler) för att söka efter textmönster eller fraser som ofta finns i massutskick och markera dessa meddelanden som skräppost.</span><span class="sxs-lookup"><span data-stu-id="43522-106">If you want more options to filter bulk mail, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases that are frequently found in bulk mail, and mark those messages as spam.</span></span> <span data-ttu-id="43522-107">Mer information om massutskick finns i Vad är skillnaden mellan [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md)skräppost [och massmeddelande?](what-s-the-difference-between-junk-email-and-bulk-email.md)</span><span class="sxs-lookup"><span data-stu-id="43522-107">For more information about bulk mail, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="4d2c4-109">Innan du skapar reglerna för e-postflöde dokumenteras det här avsnittet, rekommenderar vi att du först läsa [Vad är skillnaden mellan skräppost och mass-e-post?](what-s-the-difference-between-junk-email-and-bulk-email.md) och Bulk [klagomålnivå värden](bulk-complaint-level-values.md).</span><span class="sxs-lookup"><span data-stu-id="4d2c4-109">Before creating the mail flow rules documented this topic, we recommend that you first read [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk Complaint Level values](bulk-complaint-level-values.md).</span></span><br>
-> <span data-ttu-id="4d2c4-110">Följande procedurer markerar ett meddelande som skräppost för hela organisationen.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-110">The following procedures mark a message as spam for your entire organization.</span></span> <span data-ttu-id="4d2c4-111">Du kan dock lägga till ett annat villkor om du bara vill tillämpa dessa regler på specifika mottagare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-111">However, you can add another condition to apply these rules only to specific recipients in your organization.</span></span> <span data-ttu-id="4d2c4-112">På så sätt kan de aggressiva massinställningarna för filtrering av e-post tillämpas på ett fåtal användare som är mycket målinriktade, medan resten av användarna (som oftast får massmeddelandet de registrerat sig för) inte påverkas.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-112">This way, the aggressive bulk email filtering settings can apply to a few users who are highly targeted, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.</span></span>
+<span data-ttu-id="43522-108">I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Administrationscenter för Exchange (EAC) och PowerShell (Exchange Online PowerShell för Office 365-kunder. Exchange Online Protection PowerShell för fristående EOP-kunder).</span><span class="sxs-lookup"><span data-stu-id="43522-108">This topic explains how create these mail flow rules in the Exchange admin center (EAC) and PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).</span></span>
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a><span data-ttu-id="4d2c4-113">Skapa en regel för e-postflöde för att filtrera massmeddelanden baserat på textmönster</span><span class="sxs-lookup"><span data-stu-id="4d2c4-113">Create a mail flow rule to filter bulk email messages based on text patterns</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="43522-109">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="43522-109">What do you need to know before you begin?</span></span>
 
-1. <span data-ttu-id="4d2c4-114">Gå till Regler för **e-postflöde** \> **i**administrationscentret för Exchange (EAC).</span><span class="sxs-lookup"><span data-stu-id="4d2c4-114">In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.</span></span>
+- <span data-ttu-id="43522-110">Du måste tilldelas behörigheter i Exchange Online innan du kan göra dessa procedurer.</span><span class="sxs-lookup"><span data-stu-id="43522-110">You need to be assigned permissions in Exchange Online before you can do these procedures.</span></span> <span data-ttu-id="43522-111">Du måste ha tilldelats rollen **Transportregler,** som tilldelas rollerna **Organisationshantering,** **Efterlevnadshantering**och **Arkivhandling** som standard.</span><span class="sxs-lookup"><span data-stu-id="43522-111">Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default.</span></span> <span data-ttu-id="43522-112">Mer information finns [i Hantera rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).</span><span class="sxs-lookup"><span data-stu-id="43522-112">For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).</span></span>
 
-2. <span data-ttu-id="4d2c4-115">Klicka på](../../media/ITPro-EAC-AddIcon.gif) Lägg **till** ![ikonen och välj sedan Skapa en ny **regel**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-115">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.</span></span>
+- <span data-ttu-id="43522-113">Information om hur du öppnar EAC i Exchange Online finns [i Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).</span><span class="sxs-lookup"><span data-stu-id="43522-113">To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).</span></span>
 
-3. <span data-ttu-id="4d2c4-116">Ange ett namn på regeln.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-116">Specify a name for the rule.</span></span>
+- <span data-ttu-id="43522-114">Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="43522-114">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="43522-115">Information om hur du ansluter till fristående Exchange Online Protection PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span><span class="sxs-lookup"><span data-stu-id="43522-115">To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-4. <span data-ttu-id="4d2c4-117">Klicka på **Fler** ![](../../media/ITPro-EAC-MoreOptionsIcon.png)alternativ Fler alternativ ikon .</span><span class="sxs-lookup"><span data-stu-id="4d2c4-117">Click **More options** ![More options icon](../../media/ITPro-EAC-MoreOptionsIcon.png).</span></span> <span data-ttu-id="4d2c4-118">Under **Använd den här regeln om**du väljer **Ämnes- eller brödtexteller** \> **brödtext matchar dessa textmönster**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-118">Under **Apply this rule if**, select **The subject or body** \> **subject or body matches these text patterns**.</span></span>
+- <span data-ttu-id="43522-116">Mer information om regler för e-postflöde i Exchange Online och fristående EOP finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="43522-116">For more information about mail flow rules in Exchange Online and standalone EOP, see the following topics:</span></span>
 
-5. <span data-ttu-id="4d2c4-119">I dialogrutan **Ange ord eller fraser** lägger du till följande reguljära uttryck som vanligen finns i massmeddelanden, en i taget och klickar på **OK** när du är klar:</span><span class="sxs-lookup"><span data-stu-id="4d2c4-119">In the **specify words or phrases** dialog box, add the following regular expressions commonly found in bulk emails, one at a time, and click **OK** when you're done:</span></span>
+  - [<span data-ttu-id="43522-117">Regler för e-postflöde (transportregler) i Exchange Online</span><span class="sxs-lookup"><span data-stu-id="43522-117">Mail flow rules (transport rules) in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-   - `If you are unable to view the content of this email\, please`
+  - [<span data-ttu-id="43522-118">Villkor och undantag för e-postflödesregel (predikat) i Exchange Online</span><span class="sxs-lookup"><span data-stu-id="43522-118">Mail flow rule conditions and exceptions (predicates) in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-   - `\>(safe )?unsubscribe( here)?\</a\>`
+  - [<span data-ttu-id="43522-119">Regelåtgärder för e-postflöde i Exchange Online</span><span class="sxs-lookup"><span data-stu-id="43522-119">Mail flow rule actions in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-   - `If you do not wish to receive further communications like this\, please`
+- <span data-ttu-id="43522-120">Listan över ord och textmönster som används för att identifiera massutskick i exemplen är inte uttömmande. Du kan lägga till och ta bort poster efter behov.</span><span class="sxs-lookup"><span data-stu-id="43522-120">The list of words and text patterns that are used to identify bulk mail in the examples aren't exhaustive; you can add and remove entries as necessary.</span></span> <span data-ttu-id="43522-121">Men de är en bra utgångspunkt.</span><span class="sxs-lookup"><span data-stu-id="43522-121">However, they are a good starting point.</span></span>
 
-   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+- <span data-ttu-id="43522-122">Sökningen efter ord eller textmönster i ämnet eller andra rubrikfält i meddelandet sker *efter* att meddelandet har avkodats från MIME-innehållsöverföringskodningsmetoden som användes för att överföra det binära meddelandet mellan SMTP-servrar i ASCII-text.</span><span class="sxs-lookup"><span data-stu-id="43522-122">The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text.</span></span> <span data-ttu-id="43522-123">Du kan inte använda villkor eller undantag för att söka efter de råa (vanligtvis Base64) kodade värdena för ämnet eller andra rubrikfält i meddelanden.</span><span class="sxs-lookup"><span data-stu-id="43522-123">You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.</span></span>
 
-   - `To stop receiving these+emails\:http\://`
+- <span data-ttu-id="43522-124">Följande procedurer markerar ett massmeddelande som skräppost för hela organisationen.</span><span class="sxs-lookup"><span data-stu-id="43522-124">The following procedures mark a bulk message as spam for your entire organization.</span></span> <span data-ttu-id="43522-125">Du kan dock lägga till ett annat villkor för att tillämpa dessa regler endast för specifika mottagare, så att du kan använda aggressiv filtrering på ett fåtal, mycket riktade användare, medan resten av användarna (som oftast får den mass-e-post de registrerat sig för) inte påverkas.</span><span class="sxs-lookup"><span data-stu-id="43522-125">However, you can add another condition to apply these rules only to specific recipients, so you can use aggressive filtering on a few, highly targeted users, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.</span></span>
 
-   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a><span data-ttu-id="43522-126">Använd EAC för att skapa regler för e-postflöde som filtrerar massutskick av e-post</span><span class="sxs-lookup"><span data-stu-id="43522-126">Use the EAC to create mail flow rules that filter bulk email</span></span>
 
-   - `no longer (wish )?(to )?(be sent|receive) w+ email`
+1. <span data-ttu-id="43522-127">Gå till **Regler för** **e-postflöde** \> i EAC .</span><span class="sxs-lookup"><span data-stu-id="43522-127">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
 
-   - `If you are unable to view the content of this email\, please click here`
+2. <span data-ttu-id="43522-128">Klicka på](../../media/ITPro-EAC-AddIcon.png) Ikonen Lägg **till** ![och välj sedan Skapa en ny **regel**.</span><span class="sxs-lookup"><span data-stu-id="43522-128">Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.</span></span>
 
-   - `To ensure you receive (your daily deals|our e-?mails)\, add`
+3. <span data-ttu-id="43522-129">Konfigurera följande inställningar på sidan **Ny regel** som öppnas:</span><span class="sxs-lookup"><span data-stu-id="43522-129">In the **New rule** page that opens, configure the following settings:</span></span>
 
-   - `If you no longer wish to receive these emails`
+   - <span data-ttu-id="43522-130">**Namn**: Ange ett unikt, beskrivande namn för regeln.</span><span class="sxs-lookup"><span data-stu-id="43522-130">**Name**: Enter a unique, descriptive name for the rule.</span></span>
 
-   - `to change your (subscription preferences|preferences or unsubscribe)`
+   - <span data-ttu-id="43522-131">Klicka på **Fler alternativ**.</span><span class="sxs-lookup"><span data-stu-id="43522-131">Click **More Options**.</span></span>
 
-   - `click (here to|the) unsubscribe`
+   - <span data-ttu-id="43522-132">**Använd den här regeln om:** Konfigurera någon av följande inställningar för att söka efter innehåll i meddelanden med reguljära uttryck (RegEx) eller ord eller fraser:</span><span class="sxs-lookup"><span data-stu-id="43522-132">**Apply this rule if**: Configure one of the following settings to look for content in messages using regular expressions (RegEx) or words or phrases:</span></span>
 
-   <span data-ttu-id="4d2c4-120">Listan ovan är inte en uttömmande uppsättning reguljära uttryck som finns i masse-e-postmeddelanden. mer kan läggas till eller tas bort efter behov.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-120">The above list isn't an exhaustive set of regular expressions found in bulk emails; more can be added or removed as needed.</span></span> <span data-ttu-id="4d2c4-121">Men det är en bra utgångspunkt.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-121">However, it's a good starting point.</span></span>
+     - <span data-ttu-id="43522-133">**Ämnet eller** \> **brödtexten eller brödtexten matchar dessa textmönster**: Ange ord eller **fraser** som visas anger du ett av följande värden, klickar på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepar så många gånger som behövs.</span><span class="sxs-lookup"><span data-stu-id="43522-133">**The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.</span></span>
 
-   <span data-ttu-id="4d2c4-122">Sökningen efter ord eller textmönster i ämnes- eller andra rubrikfält en i meddelandet inträffar *efter* att meddelandet har avkodats från MIME-kodningsmetoden för innehållsöverföring som användes för att överföra det binära meddelandet mellan SMTP-servrar i ASCII-text.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-122">The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text.</span></span> <span data-ttu-id="4d2c4-123">Du kan inte använda villkor eller undantag för att söka efter de råa (vanligtvis Base64) kodade värdena för ämnes- eller andra rubrikfält i meddelanden.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-123">You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.</span></span>
+       - `If you are unable to view the content of this email\, please`
 
-6. <span data-ttu-id="4d2c4-124">Under **Gör följande**väljer du Ändra **meddelandeegenskaperna** \> som anges på **förtroendenivån för skräppost (SCL).**</span><span class="sxs-lookup"><span data-stu-id="4d2c4-124">Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span>
+       - `\>(safe )?unsubscribe( here)?\</a\>`
 
-7. <span data-ttu-id="4d2c4-125">I dialogrutan **Ange SCL** ställer du in SCL till **5,** **6**eller **9**och klickar på **ok**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-125">In the **specify SCL** dialog box, set the SCL to **5**, **6**, or **9**, and click **ok**.</span></span>
+       - `If you do not wish to receive further communications like this\, please`
 
-   <span data-ttu-id="4d2c4-126">Om du ställer in SCL till 5 eller 6 krävs **åtgärden Skräppost,** samtidigt som scl-värdet ställs in på 9, vilket är **skräpet på skräpposten,** som konfigurerats i innehållsfilterprincipen.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-126">Setting the SCL to 5 or 6 takes the **Spam** action, while setting the SCL to 9 takes the **High confidence spam** action, as configured in the content filter policy.</span></span> <span data-ttu-id="4d2c4-127">Tjänsten utför åtgärden i innehållsfilterprincipen.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-127">The service will perform the action set in the content filter policy.</span></span> <span data-ttu-id="4d2c4-128">Standardåtgärden är att leverera meddelandet till mottagarnas skräppostmapp, men olika åtgärder kan konfigureras enligt beskrivningen i [Konfigurera principer för skräppostfilter](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="4d2c4-128">The default action is to deliver the message to the recipients' Junk Email folder, but different actions can be configured as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span>
+       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
 
-   <span data-ttu-id="4d2c4-129">Om den konfigurerade åtgärden är att sätta meddelandet i karantän i stället för att skicka det till mottagarens skräppostmapp skickas meddelandet till administratörskarantänen som en regel match för e-postflödet, och det kommer inte att vara tillgängligt i slutanvändarens skräppostkarantän eller via slutanvändaren spam-meddelanden.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-129">If your configured action is to quarantine the message rather than send it to the recipients' Junk Email folder, the message will be sent to the administrator quarantine as a mail flow rule match, and it will not be available in the end user spam quarantine or via end-user spam notifications.</span></span>
+       - `To stop receiving these+emails\:http\://`
 
-   <span data-ttu-id="4d2c4-130">Mer information om SCL-värden i tjänsten finns i [Förtroendenivåer för skräppost](spam-confidence-levels.md).</span><span class="sxs-lookup"><span data-stu-id="4d2c4-130">For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).</span></span>
+       - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
 
-8. <span data-ttu-id="4d2c4-131">Spara regeln.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-131">Save the rule.</span></span>
+       - `no longer (wish )?(to )?(be sent|receive) w+ email`
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a><span data-ttu-id="4d2c4-132">Skapa en regel för e-postflöde för att filtrera massmeddelanden baserat på fraser</span><span class="sxs-lookup"><span data-stu-id="4d2c4-132">Create a mail flow rule to filter bulk email messages based on phrases</span></span>
+       - `If you are unable to view the content of this email\, please click here`
 
-1. <span data-ttu-id="4d2c4-133">I EAC går du till **regler för e-postflöde** \> **.**</span><span class="sxs-lookup"><span data-stu-id="4d2c4-133">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
+       - `To ensure you receive (your daily deals|our e-?mails)\, add`
 
-2. <span data-ttu-id="4d2c4-134">Klicka på](../../media/ITPro-EAC-AddIcon.gif) Lägg **till** ![ikonen och välj sedan Skapa en ny **regel**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-134">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.</span></span>
+       - `If you no longer wish to receive these emails`
 
-3. <span data-ttu-id="4d2c4-135">Ange ett namn på regeln.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-135">Specify a name for the rule.</span></span>
+       - `to change your (subscription preferences|preferences or unsubscribe)`
 
-4. <span data-ttu-id="4d2c4-136">Klicka på **Fler alternativ**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-136">Click **More options**.</span></span> <span data-ttu-id="4d2c4-137">Under **Använd den här regeln om**du väljer Ämnet eller **brödtexten** \> eller **brödtexten innehåller något av dessa ord**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-137">Under **Apply this rule if**, select **The subject or body** \> **subject or body includes any of these words**.</span></span>
+       - `click (here to|the) unsubscribe`
 
-5. <span data-ttu-id="4d2c4-138">I dialogrutan **Ange ord eller fraser** lägger du till följande fraser som vanligen finns i massmeddelanden, en i taget och klickar på **ok** när du är klar:</span><span class="sxs-lookup"><span data-stu-id="4d2c4-138">In the **specify words or phrases** dialog box, add the following phrases commonly found in bulk emails, one at a time, and click **ok** when you're done:</span></span>
+      <span data-ttu-id="43522-134">Om du vill redigera en post](../../media/ITPro-EAC-EditIcon.png)markerar du den och klickar på **Ikonen Redigera** ![redigering .</span><span class="sxs-lookup"><span data-stu-id="43522-134">To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span> <span data-ttu-id="43522-135">Om du vill ta bort en](../../media/ITPro-EAC-DeleteIcon.png)post markerar du den och klickar på Ikonen Ta bort ta **bort** ![.</span><span class="sxs-lookup"><span data-stu-id="43522-135">To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-   - `to change your preferences or unsubscribe`
+       <span data-ttu-id="43522-136">När du är klar klickar du på **OK**.</span><span class="sxs-lookup"><span data-stu-id="43522-136">When you're finished, click **OK**.</span></span>
 
-   - `Modify email preferences or unsubscribe`
+     - <span data-ttu-id="43522-137">**Ämnet eller brödtexten** \> **eller brödtexten innehåller något av dessa ord:** Ange **ord eller fraser** som visas, ange något av följande värden, klicka på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepa så många gånger som behövs.</span><span class="sxs-lookup"><span data-stu-id="43522-137">**The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.</span></span>
 
-   - `This is a promotional email`
+       - `to change your preferences or unsubscribe`
 
-   - `You are receiving this email because you requested a subscription`
+       - `Modify email preferences or unsubscribe`
 
-   - `click here to unsubscribe`
+       - `This is a promotional email`
 
-   - `You have received this email because you are subscribed`
+       - `You are receiving this email because you requested a subscription`
 
-   - `If you no longer wish to receive our email newsletter`
+       - `click here to unsubscribe`
 
-   - `to unsubscribe from this newsletter`
+       - `You have received this email because you are subscribed`
 
-   - `If you have trouble viewing this email`
+       - `If you no longer wish to receive our email newsletter`
 
-   - `This is an advertisement`
+       - `to unsubscribe from this newsletter`
 
-   - `you would like to unsubscribe or change your`
+       - `If you have trouble viewing this email`
 
-   - `view this email as a webpage`
+       - `This is an advertisement`
 
-   - `You are receiving this email because you are subscribed`
+       - `you would like to unsubscribe or change your`
 
-   <span data-ttu-id="4d2c4-139">Den här listan är inte en uttömmande uppsättning fraser som finns i bulk e-postmeddelanden; mer kan läggas till eller tas bort efter behov.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-139">This list isn't an exhaustive set of phrases found in bulk emails; more can be added or removed as needed.</span></span> <span data-ttu-id="4d2c4-140">Men det är en bra utgångspunkt.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-140">However, it's a good starting point.</span></span>
+       - `view this email as a webpage`
 
-6. <span data-ttu-id="4d2c4-141">Under **Gör följande**väljer du Ändra **meddelandeegenskaperna** \> som anges på **förtroendenivån för skräppost (SCL).**</span><span class="sxs-lookup"><span data-stu-id="4d2c4-141">Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span>
+       - `You are receiving this email because you are subscribed`
 
-7. <span data-ttu-id="4d2c4-142">I dialogrutan **Ange SCL** ställer du in SCL till **5,** **6**eller **9**och klickar på **ok**.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-142">In the **specify SCL** dialog box, set the SCL to **5**, **6**, or **9**, and click **ok**.</span></span>
+      <span data-ttu-id="43522-138">Om du vill redigera en post](../../media/ITPro-EAC-EditIcon.png)markerar du den och klickar på **Ikonen Redigera** ![redigering .</span><span class="sxs-lookup"><span data-stu-id="43522-138">To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span> <span data-ttu-id="43522-139">Om du vill ta bort en](../../media/ITPro-EAC-DeleteIcon.png)post markerar du den och klickar på Ikonen Ta bort ta **bort** ![.</span><span class="sxs-lookup"><span data-stu-id="43522-139">To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-   <span data-ttu-id="4d2c4-143">Om du ställer in SCL till 5 eller 6 krävs **åtgärden Skräppost,** samtidigt som scl-värdet ställs in på 9, vilket är **skräpet på skräpposten,** som konfigurerats i innehållsfilterprincipen.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-143">Setting the SCL to 5 or 6 takes the **Spam** action, while setting the SCL to 9 takes the **High confidence spam** action, as configured in the content filter policy.</span></span> <span data-ttu-id="4d2c4-144">Tjänsten utför åtgärden i innehållsfilterprincipen.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-144">The service will perform the action set in the content filter policy.</span></span> <span data-ttu-id="4d2c4-145">Standardåtgärden är att leverera meddelandet till mottagarnas skräppostmapp, men olika åtgärder kan konfigureras enligt beskrivningen i [Konfigurera principer för skräppostfilter](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="4d2c4-145">The default action is to deliver the message to the recipients' Junk Email folder, but different actions can be configured as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span>
+       <span data-ttu-id="43522-140">När du är klar klickar du på **OK**.</span><span class="sxs-lookup"><span data-stu-id="43522-140">When you're finished, click **OK**.</span></span>
 
-   <span data-ttu-id="4d2c4-146">Om den konfigurerade åtgärden är att sätta meddelandet i karantän i stället för att skicka det till mottagarens skräppostmapp skickas meddelandet till administratörskarantänen som en regel match för e-postflödet, och det kommer inte att vara tillgängligt i slutanvändarens skräppostkarantän eller via slutanvändaren spam-meddelanden.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-146">If your configured action is to quarantine the message rather than send it to the recipients' Junk Email folder, the message will be sent to the administrator quarantine as a mail flow rule match, and it will not be available in the end user spam quarantine or via end-user spam notifications.</span></span>
+   - <span data-ttu-id="43522-141">**Gör följande:** Välj **Ändra meddelandeegenskaperna** \> **ange scl (Spam Confidence Level)**.</span><span class="sxs-lookup"><span data-stu-id="43522-141">**Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span> <span data-ttu-id="43522-142">Konfigurera någon av följande inställningar i dialogrutan **Ange SCL:**</span><span class="sxs-lookup"><span data-stu-id="43522-142">In the **Specify SCL** dialog that appears, configure one of the following settings:</span></span>
 
-   <span data-ttu-id="4d2c4-147">Mer information om SCL-värden i tjänsten finns i [Förtroendenivåer för skräppost](spam-confidence-levels.md).</span><span class="sxs-lookup"><span data-stu-id="4d2c4-147">For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).</span></span>
+     - <span data-ttu-id="43522-143">Om du vill markera meddelanden som **skräppost**väljer du **6**.</span><span class="sxs-lookup"><span data-stu-id="43522-143">To mark messages as **Spam**, select **6**.</span></span> <span data-ttu-id="43522-144">Åtgärden som du har konfigurerat för skräppostfiltreringsutslag i dina anti-spam-principer tillämpas på meddelandena (standardvärdet är **Flytta meddelande till mappen Skräppost**). **Spam**</span><span class="sxs-lookup"><span data-stu-id="43522-144">The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).</span></span>
 
-8. <span data-ttu-id="4d2c4-148">Spara regeln.</span><span class="sxs-lookup"><span data-stu-id="4d2c4-148">Save the rule.</span></span>
+     - <span data-ttu-id="43522-145">Om du vill markera meddelanden som **skräppost med högt förtroende** väljer du **9**.</span><span class="sxs-lookup"><span data-stu-id="43522-145">To mark messages as **High confidence spam** select **9**.</span></span> <span data-ttu-id="43522-146">Åtgärden som du har konfigurerat för skräppostfiltreringsdomar med **högt förtroende** i dina anti-spam-principer tillämpas på meddelandena (standardvärdet är **Flytta meddelande till mappen Skräppost**).</span><span class="sxs-lookup"><span data-stu-id="43522-146">The action that you've configured for **High confidence spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="4d2c4-149">Mer information</span><span class="sxs-lookup"><span data-stu-id="4d2c4-149">For more information</span></span>
+    <span data-ttu-id="43522-147">Mer information om SCL-värden finns [i SCL (Spam Confidence Level) i Office 365](spam-confidence-levels.md).</span><span class="sxs-lookup"><span data-stu-id="43522-147">For more information about SCL values, see [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md).</span></span>
 
-[<span data-ttu-id="4d2c4-150">Vad är skillnaden mellan skräppost och masse-e-post?</span><span class="sxs-lookup"><span data-stu-id="4d2c4-150">What's the difference between junk email and bulk email?</span></span>](what-s-the-difference-between-junk-email-and-bulk-email.md)
+   <span data-ttu-id="43522-148">När du är klar klickar du på **Spara**</span><span class="sxs-lookup"><span data-stu-id="43522-148">When you're finished, click **Save**</span></span>
 
-[<span data-ttu-id="4d2c4-151">Värden på massklagomålsnivå</span><span class="sxs-lookup"><span data-stu-id="4d2c4-151">Bulk Complaint Level values</span></span>](bulk-complaint-level-values.md)
+## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a><span data-ttu-id="43522-149">Använda PowerShell för att skapa regler för e-postflöde som filtrerar massutskick av e-post</span><span class="sxs-lookup"><span data-stu-id="43522-149">Use PowerShell to create a mail flow rules that filter bulk email</span></span>
 
-[<span data-ttu-id="4d2c4-152">Konfigurera principer för skräppostfilter</span><span class="sxs-lookup"><span data-stu-id="4d2c4-152">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
+<span data-ttu-id="43522-150">Använd följande syntax för att skapa en eller båda av reglerna för e-postflöde (reguljära uttryck kontra ord):</span><span class="sxs-lookup"><span data-stu-id="43522-150">Use the following syntax to create one or both of the mail flow rules (regular expressions vs. words):</span></span>
 
-[<span data-ttu-id="4d2c4-153">Avancerade alternativ för skräppostfiltrering</span><span class="sxs-lookup"><span data-stu-id="4d2c4-153">Advanced spam filtering  options</span></span>](advanced-spam-filtering-asf-options.md)
+```powershell
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+```
+
+<span data-ttu-id="43522-151">I det här exemplet skapas en ny regel med namnet "Massfiltrering av e-post - RegEx" som använder samma lista med reguljära uttryck från tidigare i avsnittet för att ange meddelanden som **skräppost**.</span><span class="sxs-lookup"><span data-stu-id="43522-151">This example creates a new rule named "Bulk email filtering - RegEx" that uses the same list of regular expressions from earlier in the topic to set messages as **Spam**.</span></span>
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+```
+
+<span data-ttu-id="43522-152">Det här exemplet skapar en ny regel med namnet "Mass-e-filtrering - Ord" som använder samma lista med ord från tidigare i avsnittet för att ange meddelanden som **skräppost med högt förtroende**.</span><span class="sxs-lookup"><span data-stu-id="43522-152">This example creates a new rule named "Bulk email filtering - Words" that uses the same list of words from earlier in the topic to set messages as **High confidence spam**.</span></span>
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
+```
+
+<span data-ttu-id="43522-153">Detaljerad information om syntax och parametrar finns i [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span><span class="sxs-lookup"><span data-stu-id="43522-153">For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span></span>
+
+## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="43522-154">Hur vet du att det fungerade?</span><span class="sxs-lookup"><span data-stu-id="43522-154">How do you know this worked?</span></span>
+
+<span data-ttu-id="43522-155">Så här kontrollerar du att du har konfigurerat regler för e-postflöde för att filtrera massutskick av e-post:</span><span class="sxs-lookup"><span data-stu-id="43522-155">To verify that you've configured mail flow rules to filter bulk email, do any of the following steps:</span></span>
+
+- <span data-ttu-id="43522-156">Gå till EAC-regler för att skicka **Edit** ![till](../../media/ITPro-EAC-EditIcon.png) **E-postflödesregler** \> **Rules** \> och markera regeln \> klicka på Redigera redigera ikon och kontrollera inställningarna.</span><span class="sxs-lookup"><span data-stu-id="43522-156">In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.</span></span>
+
+- <span data-ttu-id="43522-157">I PowerShell \<ersätter\> du Regelnamn med namnet på regeln och kör följande kommando för att verifiera inställningarna:</span><span class="sxs-lookup"><span data-stu-id="43522-157">In PowerShell, replace \<Rule Name\> with the name of the rule, and run the following command to verify the settings:</span></span>
+
+  ```powershell
+  Get-TransportRule -Identity "<Rule Name>" | Format-List
+  ```
+
+- <span data-ttu-id="43522-158">Från ett externt konto skickar du ett testmeddelanden till en berörd mottagare som innehåller en av fraserna eller textmönstren och verifierar resultaten.</span><span class="sxs-lookup"><span data-stu-id="43522-158">From an external account, send a test messages to an affected recipient that contains one of the phrases or text patterns, and verify the results.</span></span>
