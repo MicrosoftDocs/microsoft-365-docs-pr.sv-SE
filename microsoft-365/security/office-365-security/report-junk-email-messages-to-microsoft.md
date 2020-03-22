@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'Microsofts tillägg för skräppostrapportering för Microsoft Office Outlook innehåller flera sätt att rapportera skräppostmeddelanden:'
-ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42808992"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895185"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Rapportera skräppostmeddelanden till Microsoft
 
@@ -33,7 +33,7 @@ Microsofts tillägg för skräppostrapportering för Microsoft Office Outlook in
 
 - Inifrån ett öppnat e-postmeddelande
 
-Tillägget Rapportering av skräppost hjälper dig att skicka rapporter till Tjänsten Microsoft Exchange Online Protection (EOP). Om postlådan inte skyddas av tjänsten påverkar inte överföringen av skräppostrapporten dina skräppostfilter skräppostfiltren. Administratörer kan lära sig mer om fler skräppostinställningar som gäller för en hel organisation på [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md) or [How to reduce spam email in Office 365](reduce-spam-email.md). Dessa är användbara om du har kontroll på administratörsnivå och du vill förhindra falska positiva eller falska negativ.
+Tillägget Rapportering av skräppost hjälper dig att skicka rapporter till Tjänsten Microsoft Exchange Online Protection (EOP). Om postlådan inte skyddas av tjänsten påverkar inte överföringen av skräppostrapporten dina skräppostfilter skräppostfiltren. Administratörer kan läsa mer om fler skräppostinställningar som gäller för en hel organisation på [Skapa listor över säkra avsändare i Office 365](create-safe-sender-lists-in-office-365.md) och Skapa blockerade [avsändarelistor i Office 365](create-block-sender-lists-in-office-365.md). Dessa är användbara om du har kontroll på administratörsnivå och du vill förhindra falska positiva eller falska negativ.
 
 > [!TIP]
 > Du kan också skicka skräppostmeddelanden direkt till Microsoft med hjälp av [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) e-postadress och falska positiva meddelanden (icke-skräppost) med hjälp av [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) e-postadress. Mer information finns i [Skicka meddelanden om skräppost, skräppost och nätfiske till Microsoft för analys](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
@@ -68,13 +68,3 @@ De valda meddelandena skickas till Microsoft för analys och flyttas till mappen
     > Om du inte vill få det här bekräftelsemeddelandet när du skickar skräppost markerar du **Visa inte det här meddelandet igen**.
 
 Det valda meddelandet skickas till Microsoft för analys och flyttas till mappen Skräppost. Om du vill bekräfta att meddelandet har skickats öppnar du mappen **Skickat för** att visa det skickade meddelandet.
-
-## <a name="for-more-information"></a>Mer information
-
-[Aktivera tillägget Rapportmeddelande](enable-the-report-message-add-in.md)
-
-[Felsöknings- och supportinformation](troubleshooting-and-support-information.md)
-
-[Så här förhindrar du att bra e-post markeras som skräppost i Office 365](prevent-email-from-being-marked-as-spam.md)
-
-[Så här minskar du skräppost i Office 365](reduce-spam-email.md)

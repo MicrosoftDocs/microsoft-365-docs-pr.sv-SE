@@ -1,5 +1,5 @@
 ---
-title: Karantänmeddelanden i Office 365
+title: Karantän i Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Karantän i Office 365 innehåller potentiellt farliga eller oönskade meddelanden. Administratörer och slutanvändare kan komma åt karantän.
-ms.openlocfilehash: 9c82ba9821c42fe6c3dd78dbcecf63327d176e93
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 29f9fcbed83e9019118bb8b37c19cad1199c4c45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857315"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895305"
 ---
 # <a name="quarantine-in-office-365"></a>Karantän i Office 365
 

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar tillägget Report Message för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810392"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893760"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget Rapportmeddelande
 
@@ -32,20 +32,20 @@ ms.locfileid: "42810392"
 
 Tillägget Report Message för Outlook och Outlook på webben (tidigare kallat Outlook Web App) gör det möjligt för personer att enkelt rapportera felklassificerad e-post, oavsett om den är säker eller skadlig, till Microsoft och dess dotterbolag för analys. Microsoft använder dessa inlämningar för att förbättra effektiviteten i e-postskyddstekniker. Om din organisation använder [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) eller [Plan 2](office-365-ti.md)ger tillägget Rapportmeddelande dessutom organisationens säkerhetsteam användbar information som de kan använda för att granska och uppdatera säkerhetsprinciper.
 
-Anta till exempel att andra rapporterar många meddelanden som nätfiske. Den här informationen visas i [säkerhetsinstrumentpanelen](security-dashboard.md) och andra rapporter. Organisationens säkerhetsteam kan använda den här informationen som en indikation på att anti-phishing-principer kan behöva uppdateras. Om personer rapporterar många meddelanden som har flaggats som skräppost som Inte skräppost med tillägget Rapportera meddelande kan organisationens säkerhetsteam behöva justera [principer mot skräppost.](configure-the-anti-spam-policies.md)
+Anta till exempel att andra rapporterar många meddelanden som nätfiske. Den här informationen visas i [säkerhetsinstrumentpanelen](security-dashboard.md) och andra rapporter. Organisationens säkerhetsteam kan använda den här informationen som en indikation på att anti-phishing-principer kan behöva uppdateras. Om personer rapporterar många meddelanden som har flaggats som skräppost som Inte skräppost med tillägget Rapportera meddelande kan organisationens säkerhetsteam behöva justera [principer mot skräppost.](configure-your-spam-filter-policies.md)
 
 Tillägget Rapportmeddelande fungerar med de flesta Office 365-prenumerationer och följande produkter:
 
- - Outlook på webben
- - Outlook 2013 SP1
- - Utsikter 2016
- - Outlook 2016 för Mac
- - Outlook ingår i Office 365 ProPlus
+- Outlook på webben
+- Outlook 2013 SP1
+- Utsikter 2016
+- Outlook 2016 för Mac
+- Outlook ingår i Office 365 ProPlus
 
 Tillägget Rapportmeddelande är inte tillgängligt för:
 
- - Postlådor i lokala Exchange-organisationer
- - GCC-, GCC HIGH- eller DoD-prenumerationer
+- Postlådor i lokala Exchange-organisationer
+- GCC-, GCC HIGH- eller DoD-prenumerationer
 
 Din befintliga webbläsare bör räcka för att tillägget Rapportmeddelande ska fungera. Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat provar du en annan webbläsare.
 

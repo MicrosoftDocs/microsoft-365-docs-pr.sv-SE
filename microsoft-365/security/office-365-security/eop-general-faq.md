@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Här svarar vi på de vanligaste allmänna frågorna om Microsoft Exchange Online Protection (EOP) molnbaserade e-postfiltreringstjänst. Mer information om vanliga frågor och svar finns i följande länkar:'
-ms.openlocfilehash: 03fb070b2a40ad1e363138124eb0225e64fd5702
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42805863"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893688"
 ---
 # <a name="eop-general-faq"></a>Vanliga frågor och svar om EOP:s allmänna
 
@@ -28,8 +28,6 @@ Här svarar vi på de vanligaste allmänna frågorna om Microsoft Exchange Onlin
 - [Vanliga frågor och svar om delegerad administration](delegated-administration-faq.md)
 
 - [Vanliga frågor om skydd mot skräppost](anti-spam-protection-faq.md)
-
-- [Säkra avsändare- och blockerade avsändarelistor i Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 - [Vanliga frågor om karantän](quarantine-faq.md)
 

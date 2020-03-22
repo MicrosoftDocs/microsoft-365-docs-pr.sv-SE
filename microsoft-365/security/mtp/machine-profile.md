@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857700"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895469"
 ---
 # <a name="machine-profile-page"></a>Sidan Maskinprofil
 
@@ -29,9 +29,7 @@ Du kan också använda datorprofilen för att utföra vanliga säkerhetsrelatera
 
 ## <a name="navigating-the-machine-profile-page"></a>Navigera på profilsidan För maskin
 
-Sidan Maskinprofil kan nås genom att direkt välja ett enhetsnamn i listan Maskiner eller genom att välja **sidan Öppna dator** i listan Maskiner utfällbart.
-
-När du har sidan öppen, kommer du att upptäcka att den är uppdelad i tre avsnitt.
+Maskinprofilsidan är uppdelad i tre sektioner.
 
 ![Bild av maskinprofilsida med (1) Tabbområde (2) Sidofält och (3) Åtgärder markerade i rött](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

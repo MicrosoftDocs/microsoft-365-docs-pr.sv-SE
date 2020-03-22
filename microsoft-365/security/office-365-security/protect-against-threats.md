@@ -17,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Använd den här artikeln som en guide för att konfigurera dina hotskyddsfunktioner nu.
-ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: da920083b521e905633473efbabc5930ad7a6770
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812254"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895317"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Skydda mot hot i Office 365
 
@@ -189,7 +189,7 @@ Mer information om dina policyalternativ mot nätfiske finns i [Konfigurera poli
 
 4. Klicka på **Spara**.
 
-Mer information om dina policyalternativ mot skräppost finns i [Konfigurera policyerna mot skräppost](configure-the-anti-spam-policies.md).
+Mer information om alternativ för anti-spam finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Del 5 - Ytterligare inställningar för att konfigurera
 

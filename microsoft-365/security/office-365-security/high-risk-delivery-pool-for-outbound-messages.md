@@ -1,11 +1,11 @@
 ---
-title: Högriskleveranspool för utgående meddelanden
+title: Pool med hög riskleverans för utgående meddelanden
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,42 +15,41 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: När en kunds e-postsystem har komprometterats av skadlig kod eller en skadlig skräppostattack, och den skickar utgående skräppost via den värdbaserade filtreringstjänsten, kan detta leda till att IP-adresserna till Office 365-datacenterservrarna visas på block från tredje part Listor.
-ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Lär dig hur högriskleveranspoolen används för att skydda ryktet för e-postservrar i Office 365-datacenter.
+ms.openlocfilehash: 5d1bd2b14eb17ed74ee1cf1e44967f660f4595b8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42808608"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895365"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a>Högriskleveranspool för utgående meddelanden
+# <a name="high-risk-delivery-pool-for-outbound-messages-in-office-365"></a>Högriskleveranspool för utgående meddelanden i Office 365
 
-När en kunds e-postsystem har komprometterats av skadlig kod eller en skadlig skräppostattack, och den skickar utgående skräppost via den värdbaserade filtreringstjänsten, kan detta leda till att IP-adresserna till Office 365-datacenterservrarna visas på block från tredje part Listor. Målservrar som inte använder den värdbaserade filtreringstjänsten, men som använder dessa blockeringslistor, avvisar alla e-postmeddelanden som skickas från någon av de värdbaserade filtrerings-IP-adresserna som har lagts till i dessa listor. För att förhindra detta skickas alla utgående meddelanden som överskrider skräpposttröskeln via en leveranspool med hög risk. Den här sekundära utgående e-postpoolen används endast för att skicka meddelanden som kan vara av låg kvalitet. Detta hjälper till att skydda resten av nätverket från att skicka meddelanden som är mer benägna att resultera i att den sändande IP-adressen blockeras.
-  
-Användningen av en särskild högriskleveranspool säkerställer att den normala utgående poolen bara skickar meddelanden som är kända för att vara av hög kvalitet. Med den här sekundära IP-poolen kan du minska sannolikheten för att den normala utgående IP-poolen läggs till i en blockerad lista. Möjligheten att högriskpoolen placeras på en blockerad lista är fortfarande en risk. Detta är avsiktligt.
-  
-Meddelanden där den sändande domänen inte har någon adresspost (A-post), som ger dig domänens IP-adress, och ingen MX-post, som hjälper direktreklam till de servrar som ska ta emot e-post för en viss domän i DNS, dirigeras alltid genom högriskleveranspool oavsett deras spamdisposition.
-  
-## <a name="understanding-delivery-status-notification-dsn-messages"></a>Förstå DSN-meddelanden (Delivery Status Message)
+E-postservrar i Office 365-datacenter kan vara tillfälligt skyldiga till att skicka skräppost. Till exempel en skadlig kod eller skadlig skräppostattack i en lokal e-postorganisation som skickar utgående e-post via Office 365 eller komprometterade Office 365-konton. Dessa scenarier kan resultera i IP-adressen för de berörda Office 365-datacenterservrarna som visas i blocklistor från tredje part. Mål e-postorganisationer som använder dessa blocklistor kommer att avvisa e-post från dessa meddelanden källor.
 
-Den utgående högriskleveranspoolen hanterar leveransen för alla "studsade" eller "misslyckade" (DSN) meddelanden.
-  
-Möjliga orsaker till en ökning av DSN-meddelanden är följande:
-  
-- En förfalskningskampanj som påverkar en av kunderna som använder tjänsten
-    
-- En katalog skörd attack
-    
-- En spamattack
-    
-- En oseriös SMTP-server
-    
-Alla dessa problem kan resultera i en plötslig ökning av antalet DSN-meddelanden som bearbetas av tjänsten. Många gånger verkar dessa DSN-meddelanden vara skräppost till andra e-postservrar och -tjänster.
-  
-## <a name="for-more-information"></a>Mer information
+För att förhindra detta skickas alla utgående meddelanden från Office 365-datacenterservrar som är fast beslutna att vara skräppost eller som överskrider sändningsgränserna för [tjänsten](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller [utgående skräppostprinciper](configure-the-outbound-spam-policy.md) via _högriskleveranspoolen_.
 
-[Konfigurera principen för skräppost för utgående](configure-the-outbound-spam-policy.md)
-  
-[Vanliga frågor om skydd mot skräppost](anti-spam-protection-faq.md)
-  
+Högriskleveranspoolen är en sekundär IP-adresspool för utgående e-post som endast används för att skicka meddelanden av "låg kvalitet" (till exempel skräppost och [backscatter).](backscatter-messages-and-eop.md) Med hjälp av hög risk leveranspoolen hjälper till att förhindra den normala IP-adresspoolen för utgående e-post från att skicka skräppost. Den normala IP-adresspoolen för utgående e-post upprätthåller ryktet att skicka "högkvalitativa" meddelanden, vilket minskar sannolikheten för att dessa IP-adresser visas på IP-blockeringslistor.
 
+Den mycket verkliga möjligheten att IP-adresser i högriskleveranspoolen kommer att placeras på IP-blocklistor kvarstår, men detta är avsiktligt. Leverans till de avsedda mottagarna är inte garanterad, eftersom många e-postorganisationer inte accepterar meddelanden från högriskleveranspoolen.
+
+Mer information finns [i Kontrollera utgående skräppost i Office 365](outbound-spam-controls.md).
+
+> [!NOTE]
+> Meddelanden där källe-domänen inte har någon A-post och ingen MX-post som definieras i offentlig DNS dirigeras alltid genom högriskleveranspoolen, oavsett deras spam eller skicka gränsdisposition.
+
+## <a name="bounce-messages"></a>Studsa meddelanden
+
+Den utgående högriskleveranspoolen hanterar leveransen för alla rapporter som inte levereras (kallas även NDRs, avstudsmeddelanden, leveransstatusmeddelanden eller DSN-nätverk).
+
+Möjliga orsaker till en ökning av NDR inkluderar:
+
+- En förfalskningskampanj som påverkar en av kunderna som använder tjänsten.
+
+- En katalog skörd attack.
+
+- En spamattack.
+
+- En oseriös e-postserver.
+
+Alla dessa problem kan resultera i en plötslig ökning av antalet NDR som behandlas av tjänsten. Många gånger, dessa NDRs verkar vara spam till andra e-postservrar och tjänster (även känd som _[backscatter).](backscatter-messages-and-eop.md)_

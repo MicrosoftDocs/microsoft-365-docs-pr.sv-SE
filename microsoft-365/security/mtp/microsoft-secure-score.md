@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure-poäng
+title: Microsoft Secure Score
 description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur information beräknas och vilka säkerhetsadministratörer som kan förvänta sig.
 keywords: säkerhet, malware, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
 ms.prod: microsoft-365-enterprise
@@ -17,14 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42809698"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895435"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft Secure-poäng
+# <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
 Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Om du följer rekommendationerna om säkerhetsresultat kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
 
@@ -140,13 +140,41 @@ För att göra Microsoft Secure Score till en bättre representant för din säk
 
 Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>Borttagna förbättringsåtgärder som inte gjorts
+### <a name="march-2020"></a>Mars 2020
+
+#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Stöd för säkerhetsstandarder för Azure AD-förbättringsåtgärder
+
+Microsoft Secure Score uppdaterar förbättringsåtgärder för att stödja [säkerhetsstandarder i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), vilket gör det enklare att skydda din organisation med förkonfigurerade säkerhetsinställningar för vanliga attacker.
+
+Det kommer att påverka följande förbättringsåtgärder:
+
+- Se till att alla användare kan slutföra multifaktorautentisering för säker åtkomst
+- Kräv MFA för administrativa roller
+- Aktivera princip för att blockera äldre autentisering
+
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Borttagna förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetsposition
+
+För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig tar vi bort följande förbättringsåtgärder.
+
+- Lagra användardokument i OneDrive för företag
+- Konfigurera principer för säker bilaga till Office 365 ATP
+- Konfigurera säkra Office 365-länkar för att verifiera webbadresser
+- Tillåt inte postlådedelegering
+- Tillåt anonyma gästdelningslänkar för webbplatser och dokument
+- Aktivera Säkerhetskonsolen för Molnappar
+- Konfigurera förfallotid för externa delningslänkar
+- Aktivera registrering av granskningsdata
+- Upptäck riskfyllda och icke-kompatibla skugg-IT-program
+- Granska behörigheter & blockera riskfyllda OAuth-program som är anslutna till din miljö
+- Konfigurera versionshantering på SharePoint onlinedokumentbibliotek
+
+#### <a name="removed-not-scored-improvement-actions"></a>Borttagna förbättringsåtgärder som inte gjorts
 
 En av principerna för Secure Score är att poängen ska vara standardiserade och lätta att relatera till. Att ha förbättringsåtgärder som inte är mätbara eller genomförbara har orsakat förvirring. Microsoft Secure Score är bara meningsfullt när varje rekommendation kan ha en tydlig effekt på poängen. Inte poängsatt förbättringsåtgärder är inte mätbara.  
 
 Av dessa skäl har alla förbättringsåtgärder som inte har gjorts tagits bort. Inga åtgärder behövs från din sida.
 
-### <a name="removed-device-improvement-actions"></a>Åtgärder för att förbättra enheten har tagits bort
+#### <a name="removed-device-improvement-actions"></a>Åtgärder för att förbättra enheten har tagits bort
 
 Efter en utvärdering av microsoft secure score-enhetskategorin för förbättringsåtgärder fastställdes att dessa åtgärder för närvarande utvärderar principtillståndet och inte konfigurationstillståndet för enheter. Eftersom konfigurationen är direkt knuten till säkerhetspositionen, var de befintliga enhetsåtgärderna fast beslutna att inte helt representera organisationshållning.  Vi kommer att ta bort de aktuella åtgärderna i enhetskategorin när vi arbetar med att tillhandahålla en uppsättning rekommendationer som direkt använder diagnostikdata för att mer fullständigt representera enhetens säkerhetshållning.
 
@@ -173,16 +201,7 @@ Följande förbättringsåtgärder har tagits bort:
 - Kräv att alla enheter har avancerade säkerhetskonfigurationer
 - Granska rapporter om blockerade enheter varje vecka
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Borttagna förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning
-
-För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig har vi tagit bort följande förbättringsåtgärder:
-
-- Aktivera registrering av granskningsdata
-- Upptäck riskfyllda och icke-kompatibla skugg-IT-program
-- Granska behörigheter & blockera riskfyllda OAuth-program som är anslutna till din miljö
-- Konfigurera versionshantering på SharePoint onlinedokumentbibliotek
-
-### <a name="mfa-improvement-action-updates"></a>Uppdateringar av förbättringsåtgärder för MFA
+#### <a name="mfa-improvement-action-updates"></a>Uppdateringar av förbättringsåtgärder för MFA
 
 För att återspegla behovet av företag att säkerställa den högsta säkerheten när de tillämpar principer som fungerar med deras verksamhet, har Microsoft Secure Score tagit bort tre förbättringsåtgärder centrerade kring multifaktorautentisering och lagt till två.
 
@@ -199,7 +218,7 @@ Lade till förbättringsåtgärder:
 
  Dessa nya förbättringsåtgärder kräver registrering av användare eller administratörer för MFA (Multi factor Authentication) i katalogen och upprätta rätt uppsättning principer som passar dina organisationsbehov. Huvudmålet är att ha flexibilitet samtidigt som alla användare och administratörer kan autentisera med flera faktorer eller riskbaserade uppmaningar om identitetsverifiering. Det kan ta formen av flera principer som tillämpar begränsade beslut eller anger säkerhetsstandarder (som kommer den 16 mars) som låter Microsoft bestämma när användare ska utmanas för MFA.
 
-### <a name="removed-review-improvement-actions"></a>Borttagna "granska" förbättringsåtgärder
+#### <a name="removed-review-improvement-actions"></a>Borttagna "granska" förbättringsåtgärder
 
 En av principerna för Secure Score är att poängen ska vara standardiserade och lätta att relatera till. Att ha förbättringsåtgärder som inte är mätbara eller genomförbara har orsakat förvirring. En Microsoft Secure Score är bara meningsfullt när varje rekommendation kan ha en tydlig effekt på poängen. Granskningsåtgärder mäts inte enligt samma standard som andra förbättringsåtgärder.  
 

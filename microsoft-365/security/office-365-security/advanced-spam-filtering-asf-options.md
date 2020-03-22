@@ -1,11 +1,11 @@
 ---
-title: Avancerade alternativ för skräppostfiltrering
+title: ASF-inställningar i Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,46 +15,83 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: Avancerade alternativ för skräppostfiltrering ger administratörer möjlighet att granska olika innehållsattribut för ett meddelande. Förekomsten av dessa attribut i ett meddelande antingen ökar spam poäng av meddelandet (vilket ökar risken för att det ska identifieras som spam) eller markerar meddelandet som spam. ASF-alternativen är inriktade på specifika meddelandeegenskaper, till exempel HTML-taggar och URL-omdirigering, som ofta finns i skräppostmeddelanden.
-ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kallas även principer för skräppostfilter eller innehållsfilter) kan administratörer identifiera meddelanden som innehåller specifika meddelandeegenskaper som ofta används i skräppost. Beroende på egenskapen markerar ASF-identifieringar antingen meddelandet som skräppost eller skräppost med högt förtroende.
+ms.openlocfilehash: e35279092e9d77b18eadd2af33909eda90bdd80b
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812252"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894258"
 ---
-# <a name="advanced-spam-filtering-options"></a>Avancerade alternativ för skräppostfiltrering
+# <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Avancerade asf-inställningar (Spam Filter) i Office 365
 
 > [!NOTE]
-> Inställningarna för avancerat skräppostfilter i anti-spam-policyn är för närvarande inaktuella. Våra rekommenderade inställningar för dessa är att stänga **av**dem. De funktioner som var tillgängliga i filtret Avancerat skräppost införlivas i andra delar av filtreringstacken.
+> ASF-inställningar som för närvarande är tillgängliga i anti-spam-policyer håller på att vara inaktuella. Vi rekommenderar att du inte använder dessa inställningar i anti-spam-policyer. Funktionerna i dessa ASF-inställningar införlivas i andra delar av filtreringstacken. Mer information finns i [EOP:s policyinställningar för skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-Avancerade alternativ för skräppostfiltrering ger administratörer möjlighet att granska olika innehållsattribut för ett meddelande. Förekomsten av dessa attribut i ett meddelande antingen ökar spam poäng av meddelandet (vilket ökar risken för att det ska identifieras som spam) eller markerar meddelandet som spam. ASF-alternativen är inriktade på specifika meddelandeegenskaper, till exempel HTML-taggar och URL-omdirigering, som ofta finns i skräppostmeddelanden.
-  
-Aktivera ASF-alternativ är en aggressiv metod för skräppostfiltrering, och alla meddelanden som filtreras efter dessa alternativ kan inte rapporteras som falska positiva. Dessa meddelanden kan identifieras genom periodiska skräppostmeddelanden för slutanvändare och räddas från skräppostkarantänen. De kan också identifieras via X-header-texten som är specifik för varje ASF-alternativ och som visas i Internet-huvudet på meddelanden där ett ASF-alternativ har matchats. Mer information finns i [Rubriker för skräppostmeddelande](anti-spam-message-headers.md).
-  
-ASF-alternativ kan ställas in på, stängas av eller testläge när du redigerar innehållsfilterprinciper. Mer information finns i [Konfigurera principer för skräppostfilter](configure-your-spam-filter-policies.md). Testläget är inte tillgängligt för **NDR-backscatter**, **SPF-post: hårddisk misslyckas**, **Villkorlig avsändande ID-filtrering: hårddisk misslyckas**och **Massutskicksalternativ.** 
-  
-I följande tabell beskrivs varje avancerat skräppostfiltreringsalternativ.
-  
+Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kallas även principer för skräppostfilter eller innehållsfilter) kan administratörer markera meddelanden som skräppost baserat på specifika meddelandeegenskaper. ASF riktar sig specifikt till dessa egenskaper eftersom de är vanligt förekommande i skräppost. Beroende på egenskapen, ASF upptäckter kommer antingen markera meddelandet som **spam** eller **hög förtroende spam**.
+
+> [!NOTE]
+> Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva identifieringar. Du kan identifiera meddelanden som filtrerats efter ASF genom att: <ul><li>Periodiska meddelanden om skräppost för slutanvändare.</li><li>Förekomsten av filtrerade meddelanden i karantän.</li><li>De `X-CustomSpam:` specifika X-header-fält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.</li></ul>
+
+I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Office 365 Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+
+## <a name="enable-disable-or-test-asf-settings"></a>Aktivera, inaktivera eller testa ASF-inställningar
+
+För varje ASF-inställning finns följande alternativ i policyer mot skräppost:
+
+- **På**: ASF lägger till motsvarande X-header-fält i meddelandet, och antingen markerar meddelandet som **spam** (SCL 5 eller 6 för [Öka spam poäng inställningar)](#increase-spam-score-settings)eller **Hög förtroende spam** (SCL 9 för Mark som [spam inställningar](#mark-as-spam-settings)).
+
+- **Av**: ASF-inställningen är inaktiverad. Detta är standardvärdet och vi rekommenderar att du inte ändrar det.
+
+- **Test**: ASF lägger till motsvarande X-header-fält i meddelandet. Vad som händer med meddelandet bestäms av värdet **testläge** (*TestModeAction)*
+
+  - **Ingen**: Meddelanderoutning och leverans påverkas inte av ASF-identifieringen. Meddelandet är fortfarande föremål för andra typer av filtrering och regler i EOP.
+
+  - **Lägg till standardtext för X-header *(AddXHeader)***: X-header-värdet `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i inkorgsregler eller regler för e-postflöde (kallas även transportregler) för att påverka flödet och leveransen av meddelandet.
+
+  - **Skicka hemligt meddelande *(Hemlig kopia)***: De angivna e-postadresserna (parametervärdet *TestModeBccToRecipients* i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet levereras till mottagarna av hemlig kopia. I Säkerhetsorganisationscenter för Office 365 &-efterlevnadscenter separerar du flera e-postadresser efter semikolon ( ; ). I PowerShell separerar du flera e-postadresser med kommatecken.
+
+  **Anmärkningar:**
+
+  - Testläget är inte tillgängligt för följande ASF-inställningar:
+
+    - **Filtrering av villkorlig avsändare: hårddiskmisslykning** (*MarkAsSpamFromAddressAuthFail*)
+
+    - **NDR backscatter**(*MarkAsSpamNdrBackscatter*)
+
+    - **SPF-post: hårt fel** *(MarkAsSpamSpfRecordHardFail)*
+
+  - Samma testlägesåtgärd tillämpas på *alla* ASF-inställningar som är inställda på **Test**. Du kan inte konfigurera olika testlägesåtgärder för olika ASF-inställningar.
+
+## <a name="increase-spam-score-settings"></a>Öka inställningarna för skräppostpoäng
+
+Följande ASF-inställningar ställer in säkerhetsnivån för skräppost (SCL) för upptäckta meddelanden **Spam** till 5 eller 6, vilket motsvarar spam-filterdomen och motsvarande åtgärder i anti-spam-policyer.
+
 ||||
 |:-----|:-----|:-----|
-|**Alternativ för avancerat skräppostfiltrering** <br/> |**Beskrivning** <br/> |**X-sidhuvudstext** <br/> |
-|**Avsnittet Öka avsnittet Om resultat av skräppost** <br/> |När det är aktiverat anger dessa alternativ åtkomstnivån för skräppost (SCL) för ett matchat meddelande till 5 eller 6, vilket anses vara misstänkt skräppost. Åtgärden som utförs i meddelandet matchar inställningen **Skräppost** i innehållsfilterprincipen.  <br/> ||
-|Bildlänkar till fjärrplatser  <br/> |När den här inställningen är aktiverad får alla meddelanden med HTML-innehåll som har en IMG-tagg som länkar på distans (till exempel med http) en ökad spampoäng.  <br/> |X-CustomSpam: Bildlänkar till fjärrplatser  <br/> |
-|Numerisk IP-adress i URL  <br/> |När den här inställningen är aktiverad får alla meddelanden som har numeriska webbadresser (oftast i form av en IP-adress) en ökad spampoäng.  <br/> |X-CustomSpam: Numerisk IP i URL  <br/> |
-|URL-omdirigering till annan port  <br/> |När den här inställningen är aktiverad får alla meddelanden som innehåller en hyperlänk som omdirigerar användaren till andra portar än port 80 (vanlig HTTP-protokollport), 8080 (ALTERNATIV HTTP-port) eller 443 (HTTPS-port) en ökad spampoäng.  <br/> |X-CustomSpam: URL omdirigera till andra portar  <br/> |
-|URL till .biz- eller .info-webbplatser  <br/> |När den här inställningen är aktiverad får alla meddelanden som innehåller ett .biz- eller .info-tillägg i brödtexten i ett meddelande en ökad skräppostpoäng.  <br/> |X-CustomSpam: URL till .biz- eller .info-webbplatser  <br/> |
-|**Markera som skräppostavsnitt** <br/> |När det är aktiverat anger dessa alternativ spam-konfidensnivån (SCL) för ett matchat meddelande till 9, vilket anses vara säkert skräppost. Åtgärden som utförs i meddelandet matchar inställningen **Skräppost med högt förtroende** i innehållsfilterprincipen.  <br/> ||
-|Tomma meddelanden  <br/> |När den här inställningen är aktiverad markeras alla meddelanden där både brödtexten och ämnesraden är tomma och som inte heller har någon bifogad fil som skräppost.  <br/> |X-CustomSpam: Tomt meddelande  <br/> |
-|JavaScript eller VBScript i HTML  <br/> |När den här inställningen är aktiverad markeras alla meddelanden som använder JavaScript eller Visual Basic Script Edition i HTML som skräppost. Båda dessa skriptspråk används i ett HTML-meddelande för att automatiskt orsaka att en viss åtgärd inträffar. Webbläsaren tolkar och bearbetar skriptet tillsammans med resten av dokumentet.  <br/> |X-CustomSpam: Javascript- eller VBscript-taggar i HTML  <br/> |
-|Frame- eller IFrame-taggar i HTML  <br/> |När den här inställningen är aktiverad \<markeras \<alla\> meddelanden som innehåller HTML-taggen Frame\> eller IFrame som skräppost. Dessa taggar används på webbplatser eller i HTML-meddelanden för att formatera sidan för att visa text eller grafik.  <br/> |X-CustomSpam: IFRAME eller FRAME i HTML  <br/> |
-|Objekttaggar i HTML  <br/> |När den här inställningen är aktiverad \<markeras alla meddelanden som innehåller HTML-taggen Object\> som skräppost. Med den här HTML-taggen kan plugin-program eller program köras i ett HTML-fönster.  <br/> |X-CustomSpam: Objekttagg i html  <br/> |
-|Bädda in taggar i HTML  <br/> |När den här inställningen är aktiverad \<markeras alla meddelanden som innehåller HTML-taggen Bädda in\> som skräppost. Med den här HTML-taggen kan olika typer av dokument av olika datatyper bäddas in i ett HTML-dokument. Exempel är ljud, filmer eller bilder.  <br/> |X-CustomSpam: Bädda in taggen i html  <br/> |
-|Formulärtaggar i HTML  <br/> |När den här inställningen är aktiverad \<markeras alla meddelanden som innehåller HTML-taggen Formulär\> som skräppost. Den här HTML-taggen används för att skapa webbplatsformulär. E-postannonser innehåller ofta den här taggen för att begära information från mottagaren.  <br/> |X-CustomSpam: Form tagg i html  <br/> |
-|Webbfel i HTML  <br/> |När den här inställningen är aktiverad markeras alla meddelanden som innehåller ett webbfel som skräppost. Ett webbfel är en bild som är utformad för att avgöra om en webbsida eller ett e-postmeddelande har lästs. Webbbuggar är ofta osynliga för mottagaren eftersom de vanligtvis läggs till i ett meddelande som en bild som är så liten som en pixel med en pixel. Legitima nyhetsbrev kan också använda denna teknik, även om många anser att detta är en kränkning av privatlivet.  <br/> |X-CustomSpam: Webb bugg  <br/> |
-|Använda känslig ordlista  <br/> |När den här inställningen är aktiverad markeras alla meddelanden som innehåller ett ord från den känsliga ordlistan som skräppost. Med hjälp av den känsliga ordlistan kan enkelt blockera ord som är associerade med potentiellt stötande meddelanden. Några av dessa ord är skiftlägeskänsliga. Som administratör kan du inte redigera den här listan. Filtrering mot den känsliga ordlistan används både på ett meddelandes ämne och meddelande.  <br/> |X-CustomSpam: Känsligt ord i ämne/kropp  <br/> |
-|SPF-rekord: hårt misslyckas|När den här inställningen är aktiverad markeras meddelanden som misslyckas med en SPF-kontroll (vilket innebär att de skickades från en IP-adress som inte har angetts i SPF-posten) som skräppost. Om du aktiverar den här inställningen rekommenderas för organisationer som är oroliga för att ta emot nätfiskemeddelanden.  <br/> <br/> Testläget är inte tillgängligt för det här alternativet.  <br/> |X-CustomSpam: SPF-post misslyckas  <br/> |
-|Filtrering av villkorlig avsändare: hårddisk utan fel  <br/> |När den här inställningen är aktiverad markeras alla meddelanden som misslyckas med ett villkorligt avsänar-ID som skräppost. Det här alternativet kombinerar en SPF-kontroll med en avsänd-ID-kontroll för att skydda mot meddelandehuvuden som innehåller förfalskade avsändare.  <br/> <br/> Testläget är inte tillgängligt för det här alternativet.  <br/> |X-CustomSpam: SPF från record fail  <br/> |
-|NDR backscatter  <br/> |Om du använder EOP för att skydda lokala postlådor, när den här inställningen är aktiverad, levereras alla legitima NDR-meddelanden (non-delivery report) till den ursprungliga avsändaren och alla meddelanden från bakåtsträvande (illegitima NDR) markeras som skräppost. Om du inte aktiverar den här inställningen går alla NDR fortfarande igenom skräppostfiltrering. I det här fallet kommer de flesta legitima meddelanden att levereras till den ursprungliga avsändaren medan vissa, men inte alla, backscatter meddelanden kommer att få markeras som spam. Backscatter-meddelanden som inte är markerade som skräppost går dock inte till den ursprungliga avsändaren eftersom de kommer att gå till den falska avsändaren. <br/> <br/> Om du använder tjänsten för att skydda Exchange Online-molnbaserade postlådor behöver du inte konfigurera den här inställningen.  <br/><br/> För båda scenarierna (lokala och molnbaserade postlådor) är det inte heller nödvändigt att aktivera den här inställningen för utgående e-post som skickas via tjänsten, eftersom NDR:er som är legitima avvisningsmeddelanden automatiskt identifieras och levereras till den ursprungliga avsändaren . > testläge är inte tillgängligt för det här alternativet.           <br/><br/>TIPS: Mer information om backscatter-meddelanden och EOP finns i [Backscatter-meddelanden och EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Backscatter NDR  <br/> |
-|Massutskick|Filtrering av massutskick av skräppost har dragits tillbaka och ersatts med tröskelinställningarna för bulk och e-post. Kolla in Vad är skillnaden mellan skräppost och [Configure your spam filter policies](configure-your-spam-filter-policies.md) [massutskick av e-post?](what-s-the-difference-between-junk-email-and-bulk-email.md)|X-CustomSpam: Massutskick | Massutskick av e-post  <br/> |
+|**Inställning av policy för skräppost**|**Beskrivning**|**X-header har lagts till**|
+|**Bildlänkar till fjärrplatser** <br/><br/> *ÖkaScoreWithImageLinks*|Meddelanden som `<Img>` innehåller HTML-tagglänkar till fjärrplatser (till exempel med http) markeras som skräppost.|`X-CustomSpam: Image links to remote sites`|
+|**URL-omdirigering till annan port** <br/><br/> *ÖkascoreMedRedirectTootherPort*|Meddelande som innehåller hyperlänkar som omdirigerar till andra TCP-portar än 80 (HTTP), 8080 (alternativ HTTP) eller 443 (HTTPS) markeras som skräppost.|`X-CustomSpam: URL redirect to other port`|
+|**Numerisk IP-adress i URL** <br/><br/> *ÖkaScoreWithNumericIps*|Meddelanden som innehåller numeriska webbadresser (vanligtvis IP-adresser) markeras som skräppost.|`X-CustomSpam: Numeric IP in URL`|
+|**URL till .biz- eller .info-webbplatser** <br/><br/> *ÖkaScoreMedBizOrInfoUrls*|Meddelanden som innehåller .biz- eller .info-länkar i meddelandets brödtext markeras som skräppost.|`X-CustomSpam: URL to .biz or .info websites`|
+|
+
+## <a name="mark-as-spam-settings"></a>Markera som skräppostinställningar
+
+Följande ASF-inställningar ställer in SCL för upptäckta meddelanden till 9, vilket motsvarar **hög förtroende spam** filter dom och motsvarande åtgärder i anti-spam politik.
+
+||||
+|:-----|:-----|:-----|
+|**Inställning av policy för skräppost**|**Beskrivning**|**X-header har lagts till**|
+|**Tomma meddelanden** <br/><br/> *MarkAsSpamEmptyMessages*|Meddelanden utan ämne, inget innehåll i meddelandetexten och inga bilagor markeras som skräppost med högt förtroende.|`X-CustomSpam: Empty Message`|
+|**JavaScript eller VBScript i HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Meddelanden som använder JavaScript eller Visual Basic Script Edition i HTML markeras som skräppost med högt förtroende. <br/><br/> Dessa skriptspråk används i e-postmeddelanden för att orsaka att specifika åtgärder automatiskt utförs.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
+|**Frame- eller IFrame-taggar i HTML** <br><br/> *MarkAsSpamFramesInHtml*|Meddelanden som `<frame>` innehåller `<iframe>` eller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Dessa taggar används i e-postmeddelanden för att formatera sidan för att visa text eller grafik.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Objekttaggar i HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Meddelanden som `<object>` innehåller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Med den här taggen kan plugin-program eller program köras i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
+|**Bädda in taggar i HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Meddelande som `<embed>` innehåller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Med den här taggen kan du bädda in olika typer av dokument av olika datatyper i ett HTML-dokument (till exempel ljud, filmer eller bilder).|`X-CustomSpam: Embed tag in html`|
+|**Formulärtaggar i HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Meddelanden som `<form>` innehåller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Den här taggen används för att skapa webbplatsformulär. E-postannonser innehåller ofta den här taggen för att begära information från mottagaren.|`X-CustomSpam: Form tag in html`|
+|**Webbfel i HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Ett *webbfel* (kallas även *en webbfyr)* är ett grafiskt element (ofta så litet som en pixel med en pixel) som används i e-postmeddelanden för att avgöra om meddelandet lästes. <br/><br/> Meddelanden som innehåller webbbuggar markeras som skräppost med högt förtroende. <br/><br/> Legitima nyhetsbrev kan använda webbbuggar, även om många anser att detta är en integritetskränkning. |`X-CustomSpam: Web bug`|
+|**Använda känslig ordlista** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft har en dynamisk men icke-redigerbar lista med ord som är associerade med potentiellt stötande meddelanden. <br/><br/> Meddelanden som innehåller ord från den känsliga ordlistan i ämnes- eller meddelandetexten markeras som skräppost med högt förtroende.|`X-CustomSpam: Sensitive word in subject/body`|
+|**SPF-rekord: hårt misslyckas** <br><br/> *MarkAsSpamSpfRecordHardFail*|Meddelanden som skickas från en IP-adress som inte anges i SPF Sender Policy Framework (SPF) i DNS för käll-e-postdomänen markeras som skräppost med högt förtroende. <br/><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF Record Fail`|
+|**Filtrering av villkorlig avsändare: hårddisk utan fel** <br><br/> *MarkAsSpamFrånAdressAuthFail*|Meddelanden om att det inte fungerar som ett villkorligt avsänar-ID markeras som skräppost. <br/><br/> Den här inställningen kombinerar en SPF-kontroll med en avsänd-ID-kontroll för att skydda mot meddelandehuvuden som innehåller förfalskade avsändare. <br/><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF From Record Fail`|
+|**NDR backscatter** <br><br/> *MarkAsSpamNdrBackscatter*|*Backscatter* är värdelös icke-leverans rapporter (även känd som NDRs eller studsa meddelanden) som orsakas av förfalskade avsändare i e-postmeddelanden. Mer information finns i [Backscatter-meddelanden och EOP](backscatter-messages-and-eop.md). <br/><br/> Du behöver inte konfigurera den här inställningen i följande miljöer, eftersom legitima NDR levereras och backscatter markeras som skräppost: <ul><li>Office 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående* e-post via EOP.</li></ul><br/> I fristående EOP-miljöer som skyddar inkommande e-post till lokala postlådor har du följande resultat om du aktiverar eller inaktiverar den här inställningen: <ul><li> **På**: Legitima NDR levereras och backscatter är markerad som skräppost.</li><li>**Av:** Legitima NDRs och backscatter gå igenom normal spam filtrering. De flesta legitima NDR kommer att levereras till den ursprungliga meddelandet avsändaren. Vissa, men inte alla, backscatter är markerade som hög förtroende spam. Per definition kan backscatter endast levereras till förfalskad avsändare, inte till den ursprungliga avsändaren.</li></ul><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
 |

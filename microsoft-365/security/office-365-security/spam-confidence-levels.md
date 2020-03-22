@@ -1,11 +1,11 @@
 ---
-title: Nivåer för förtroende för skräppost
+title: Förtroendenivå för skräppost
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,30 +15,35 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: När ett e-postmeddelande går igenom skräppostfiltrering tilldelas det en spam-poäng. Den poängen mappas till en individuell SCL-klassificering (Spam Confidence Level) och stämplas i en X-header. Tjänsten vidtar åtgärder på meddelandena beroende på spam förtroende tolkning av SCL rating. I följande tabell visas hur de olika SCL-klassificeringarna tolkas av filtren och standardåtgärden som vidtas för inkommande meddelanden för varje klassificering.
-ms.openlocfilehash: 65b6f51199e6d8f6ce17a05b28c5bad15d9d1760
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Administratörer kan lära sig om hur scl (Spam Confidence Level) avgör hur troligt eller osannolikt ett meddelande är skräppost och de standardåtgärder som skräppostfiltrering vidtar på meddelanden som baseras på SCL.
+ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806473"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893700"
 ---
-# <a name="spam-confidence-levels"></a>Nivåer för förtroende för skräppost
+# <a name="spam-confidence-level-scl-in-office-365"></a>Säkerhetsnivå för skräppost (SCL) i Office 365
 
-När ett e-postmeddelande går igenom skräppostfiltrering tilldelas det en spam-poäng. Den poängen mappas till en individuell SCL-klassificering (Spam Confidence Level) och stämplas i en X-header. Tjänsten vidtar åtgärder på meddelandena beroende på spam förtroende tolkning av SCL rating. I följande tabell visas hur de olika SCL-klassificeringarna tolkas av filtren och standardåtgärden som vidtas för inkommande meddelanden för varje klassificering.
-  
-|**SCL-klassificering**|**Tolkning av spamförtroende**|**Standardåtgärd**|
-|:-----|:-----|:-----|
-|-1|Icke-spam som kommer från en säker avsändare, säker mottagare eller säker IP-adress (betrodd partner).|Leverera meddelandet till mottagarnas inkorg.|
-|0, 1|Icke-spam eftersom meddelandet skannades och bestämdes vara ren.|Leverera meddelandet till mottagarnas inkorg.|
-|5, 6|Spam|Leverera meddelandet till mottagarnas skräppostmapp.|
-|7, 8, 9|Högt förtroende spam|Leverera meddelandet till mottagarnas skräppostmapp.|
-   
-> [!TIP]
-> SCL-klassificeringar på 2, 3, 4, 7 och 8 ställs inte in av tjänsten. En SCL rating på 5 eller 6 anses misstänkt spam, vilket är mindre säkert att vara spam än en SCL rating 9, som anses vara vissa spam. Olika åtgärder för skräppost och skräppost med hög säkerhet kan konfigureras via dina innehållsfilterprinciper i administrationscentret för Exchange. Mer information finns i [Konfigurera principer för skräppostfilter](configure-your-spam-filter-policies.md). Du kan också ange SCL-klassificering för meddelanden som matchar specifika villkor med hjälp av regler för e-postflöde (kallas även transportregler), enligt beskrivningen i [Använd regler för e-postflöde för att ställa in förtroendenivån för skräppost i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). Om du använder en e-postflödesregel för att ställa in SCL på 7, 8 eller 9 kommer meddelandet att behandlas som skräppost med högt förtroende. 
-  
+När Office 365 (Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor) tar emot ett inkommande e-postmeddelande går meddelandet via skräppostfiltrering och tilldelas en spampoäng. Den poängen mappas till en enskild scl -nivå (Spam Confidence Level) som läggs till i meddelandet i ett X-header. En högre SCL anger ett meddelande är mer sannolikt att vara spam. Tjänsten vidtar åtgärder för meddelandet baserat på SCL.
+
+Vad SCL innebär och standardåtgärder som vidtas på meddelanden beskrivs i följande tabell. Mer information om åtgärder du kan vidta för meddelanden baserat på domslutet för skräppostfiltrering finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+
+||||
+|:---:|---|---|
+|**SCL**|**Definition**|**Standardåtgärd**|
+|-1|Meddelandet hoppade över skräppostfiltrering. Meddelandet kommer till exempel från en säker avsändare, skickades till en säker mottagare eller kommer från en e-postkällserver i listan TILLÅT IP. Mer information finns [i Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).|Leverera meddelandet till mottagarnas inkorg.|
+|0, 1|Skräppostfiltrering fastställde att meddelandet inte var skräppost.|Leverera meddelandet till mottagarnas inkorg.|
+|5, 6|Skräppostfiltrering markerade meddelandet som **skräppost**|Leverera meddelandet till mottagarnas skräppostmapp.|
+|9|Skräppostfiltrering markerade meddelandet som **skräppost med högt förtroende**|Leverera meddelandet till mottagarnas skräppostmapp.|
+|
+
+Du kommer att märka att SCL 2, 3, 4, 7 och 8 inte används av skräppostfiltrering.
+
+Du kan använda regler för e-postflöde (kallas även transportregler) för att stämpla SCL på meddelanden. Om du använder en regel för e-postflöde för att ställa in SCL utlöser värdena 5 eller 6 skräppostfiltreringsåtgärden för **skräppost**och värdena 7, 8 eller 9 utlöser skräppostfiltreringsåtgärden för skräppost med **högt förtroende**. Mer information finns i [Använda regler för e-postflöde för att ange scl (Spam Confidence Level) i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+
+I likhet med SCL identifierar massklagomålsnivån (BCL) felaktig massmeddelande (kallas även _grå e-post)._ En högre BCL indikerar att ett massmeddelande är mer sannolikt att generera klagomål (och är därför mer sannolikt att vara spam). Du konfigurerar BCL-tröskelvärdet i anti-spam-principer. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md), [BCL (Bulk complaint level) i Office 365)](bulk-complaint-level-values.md)och [Vad är skillnaden mellan skräppost och massutskick av e-post?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+
 ||
 |:-----|
-|![Den korta ikonen för](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) LinkedIn Learning **New till Office 365?**         Upptäck kostnadsfria videokurser för **Office 365-administratörer och IT-proffs**som kommer till dig genom LinkedIn Learning.|
-   
-
+|![Den korta ikonen för](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) LinkedIn Learning **New till Office 365?**         Upptäck kostnadsfria videokurser för **Office 365-administratörer och IT-proffs**, som du får av LinkedIn Learning.|

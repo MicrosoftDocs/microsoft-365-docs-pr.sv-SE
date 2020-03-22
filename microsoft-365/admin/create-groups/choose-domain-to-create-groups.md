@@ -1,8 +1,7 @@
 ---
 title: Välja domän som ska användas för att skapa Office 365-grupper
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'Lär dig att välja vilken domän du vill använda när du skapar Office 365-grupper genom att konfigurera e-postadressprinciper med PowerShell. '
-ms.openlocfilehash: 55fc99cd201e66166e7da164777cfba2f763609c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808167"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894651"
 ---
 # <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Välja domän som ska användas för att skapa Office 365-grupper
 
@@ -113,7 +112,7 @@ Det finns några fler saker att veta:
     
 - Administratörer och användare kan också ändra domäner när de skapar grupper.
     
-- Grupper av användare bestäms med standardfrågorna (Användaregenskaper) som redan finns tillgängliga. Information om filtrerbara egenskaper som stöds finns i [Filtrerbara egenskaper för parametern -RecipientFilter](https://go.microsoft.com/fwlink/p/?LinkId=785918). 
+- Grupper av användare bestäms med standardfrågorna (Användaregenskaper) som redan finns tillgängliga. [Incheckning filterbara egenskaper för parametern -RecipientFilter](https://go.microsoft.com/fwlink/p/?LinkId=785918) för filterbara egenskaper som stöds. 
     
 - Om du inte konfigurerar några principer för e-postadresser för grupper väljs den godkända standarddomänen när en grupp skapas.
     

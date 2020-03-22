@@ -10,14 +10,23 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar Microsoft 365 för samarbete med personer utanför organisationen.
-ms.openlocfilehash: eb6bbdc4dd0520f240edbdebde6851ec917cd0d9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42807289"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894959"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Samarbeta med personer utanför organisationen
+
+Funktionerna för extern delning i Microsoft 365 ger personer i organisationen möjlighet att samarbeta med partner, leverantörer, kunder och andra som inte har ett konto i katalogen. Du kan dela hela team eller webbplatser med personer utanför organisationen eller bara enskilda filer.
+
+Att samarbeta med personer utanför organisationen består av två huvudkomponenter:
+
+- **Aktivera delning** – Konfigurera delningskontrollerna i Azure Active Directory, Teams, Office 365-grupper och SharePoint så att den delningsnivå som du vill ha för din organisation.
+- **Aktivera ytterligare säkerhet** – Även om de grundläggande delningsfunktionerna kan konfigureras så att personer utanför organisationen autentiseras, innehåller Microsoft 365 många ytterligare säkerhets- och efterlevnadsfunktioner som hjälper dig att skydda dina data och underhålla dina styrningsprinciper samtidigt som du delar externt.
+
+## <a name="enable-sharing"></a>Aktivera delning
 
 I Microsoft 365 är som standard delning med personer utanför organisationen aktiverad för SharePoint och OneDrive, men inaktiverad för Teams. Många externa delningsscenarier i SharePoint och OneDrive fungerar utan ytterligare konfiguration. Så här bekräftar du inställningarna för ett scenario som du använder eller aktiverar ett nytt alternativ:
 
@@ -27,7 +36,7 @@ I Microsoft 365 är som standard delning med personer utanför organisationen ak
 
 En omfattande titt på de inställningar för gästdelning som finns tillgängliga i Microsoft 365 finns i [Microsoft 365-referens för gästdelningsinställningar](microsoft-365-guest-settings.md).
 
-## <a name="secure-your-environment"></a>Skydda din miljö
+## <a name="enable-additional-security"></a>Aktivera ytterligare säkerhet
 
 När du har aktiverat det scenario som du vill använda för att dela med personer utanför organisationen bör du överväga ytterligare skyddsåtgärder för att skydda ditt innehåll från oavsiktlig eller avsiktlig olämplig delning.
 

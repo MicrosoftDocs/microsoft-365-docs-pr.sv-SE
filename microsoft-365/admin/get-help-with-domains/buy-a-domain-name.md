@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Läs om hur du köper ett domännamn i Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 5ffb5f9268dcd8b38245e0b85c7d790b46628766
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857445"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894473"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>Köpa ett domännamn i Office 365
 
- *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller ett [företagsabonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
+ *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller en [företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
@@ -45,17 +45,17 @@ Du kan välja bland följande toppnivådomän för din domän.
   
 - .biz (biz)
     
-- .com (com)
+- .com (på marknaden)
     
-- .info
+- .info (info)
     
 - .me
     
-- .mobi (på 80 000)
+- .mobi (mobi)
     
-- .netto
+- .net (netto)
     
-- .org (på 80 00
+- .org (på andra)
     
 - .tv
     
@@ -65,10 +65,10 @@ Du kan välja bland följande toppnivådomän för din domän.
     
 
 > [!NOTE]
-> När du väljer **Köpdomän**kan du omdirigeras till microsoft-partnerns webbplats om klienten köps/hanteras via en Microsoft-partner.
+> När du väljer **Köp domän**kan du omdirigeras till din Microsoft-partners webbplats om klienten köps/hanteras via en Microsoft-partner.
 
-### <a name="domain-privacy"></a>Domänsekretess
-Vi erbjuder en gratis domain privacy-prenumeration vid köp av en domän. Detta håller dina kontaktuppgifter kopplade till registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
+### <a name="domain-privacy"></a>Domän sekretess
+Vi erbjuder en gratis Prenumeration på domänsekretess vid köp av en domän. Detta håller dina kontaktuppgifter kopplade till registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Köpa en domän från en annan domänregistrator
 Om du vill köpa en domän från en annan domänregistrator än [GoDaddy](https://www.godaddy.com)rekommenderar vi att du använder en nedan som stöder automatisk installation (Domain Connect). 
@@ -107,7 +107,7 @@ När du har registrerat din domän (hos en domänregistrator) kan du logga in p�
 
 - [Oray](https://oray.com/)
     
-- [HejKina (på)](https://www.hichina.com/)
+- [HejKina](https://www.hichina.com/)
     
 - [east.net](http://www.east.net/)
     
@@ -121,4 +121,6 @@ När du har registrerat din domän (hos en domänregistrator) kan du logga in p�
 
 [Vanliga frågor och svar om domäner](../setup/domains-faq.md)
 
-[Få hjälp med Office 365-domäner](get-help-with-domains.yml)
+[Få hjälp med Office 365-domäner](get-help-with-domains.md)
+
+[Uppdatera DNS-poster för att hålla din webbplats med din nuvarande värdleverantör](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 

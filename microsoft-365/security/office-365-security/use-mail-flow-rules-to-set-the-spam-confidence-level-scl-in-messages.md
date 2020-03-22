@@ -1,11 +1,11 @@
 ---
-title: Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden
+title: Använda regler för e-postflöde till SCL i meddelanden
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,56 +16,55 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du ställer in SCL för meddelanden i Exchange Online Protection.
-ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806467"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895101"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden
 
-Du kan skapa en regel för e-postflöde (kallas även en transportregel) som anger åtkomstnivån för skräppost (SCL) för ett e-postmeddelande. SCL är ett mått på hur sannolikt ett meddelande är att vara spam. Skräppost är oönskade (och vanligtvis oönskade) e-postmeddelanden. Tjänsten vidtar olika åtgärder på ett meddelande beroende på dess SCL-klassificering. Du kanske till exempel vill kringgå filtrering av skräppostinnehåll för meddelanden som skickas från personer i organisationen eftersom du litar på att ett meddelande som skickas internt från en kollega inte är skräppost. Genom att använda regler för e-postflöde för att ange SCL-värdet för ett meddelande får du ökad kontroll över hanteringen av skräppost.
+Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att skanna inkommande meddelanden för skräppost. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 
- **Vad behöver du veta innan du börjar?**
+Om du vill markera specifika meddelanden som skräppost innan de ens skannas av skräppostfiltrering eller markera meddelanden så att de hoppar över skräppostfiltrering kan du skapa regler för e-postflöde (kallas även transportregler) för att identifiera meddelandena och ställa in säkerhetsnivån för skräppost (SCL). Mer information om SCL finns [i SCL (Spam Confidence Level) i Office 365](spam-confidence-levels.md).
 
-- Beräknad tid för att slutföra denna procedur: 10 minuter.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Information om vilka behörigheter du behöver finns i posten "E-postflödesregler" i [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) eller [Funktionsbehörigheter i EOP](feature-permissions-in-eop.md).
+- Du måste tilldelas behörigheter i Exchange Online innan du kan göra dessa procedurer. Du måste ha tilldelats rollen **Transportregler,** som tilldelas rollerna **Organisationshantering,** **Efterlevnadshantering**och **Arkivhandling** som standard. Mer information finns [i Hantera rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Information om kortkommandon som kan gälla för procedurerna i det här avsnittet finns [i Kortkommandon för administrationscentret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om hur du öppnar EAC i Exchange Online finns [i Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Så här skapar du en regel för e-postflöde som anger SCL för ett meddelande
+- Mer information om regler för e-postflöde i Exchange Online finns [i Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-1. Välj Regler för **e-postflöde** \> i Administrationscentret för Exchange **.**
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Använda EAC för att skapa en regel för e-postflöde som anger SCL för ett meddelande
 
-2. Välj **Ny**![](../../media/ITPro-EAC-AddIcon.gif)lägg till ikon och välj sedan **Skapa en ny regel**.
+1. Gå till **Regler för** **e-postflöde** \> i EAC .
 
-3. Ange ett namn för regeln.
+2. Klicka på](../../media/ITPro-EAC-AddIcon.png) Ikonen Lägg **till** ![och välj sedan Skapa en ny **regel**.
 
-4. Välj **Fler alternativ**och ange sedan ett villkor som utlöser åtgärden som du ska ange för den här regeln (som ska anges i SCL-värdet) under Använd den här **regeln**om du anger ett villkor som utlöser den åtgärd som ska utlösas för den här regeln (som ska anges i SCL-värdet).
+3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
 
-   Du kan till exempel ange **att avsändaren** \> **är intern/extern**och sedan väljer **du Inuti organisationen**i dialogrutan Välj **avsänaresplats** och väljer **ok**.<br/>
-   ![Välj avsändningsplats](../../media/EOP-ETR-SetSCL-1.jpg)
+   - **Namn**: Ange ett unikt, beskrivande namn för regeln.
 
-5. Under **Gör följande**väljer du Ändra **meddelandeegenskaperna** \> som **säkerhetsnivå för skräppost (SCL)**.
+   - Klicka på **Fler alternativ**.
 
-6. Markera ett av följande värden i rutan **Ange SCL** och välj **OK:**
+   - **Använd den här regeln om**: Välj ett eller flera villkor för att identifiera meddelanden. Mer information finns i [Villkor och undantag för regel för e-postflöde (predikat) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-   - **Bypass spam filtrering:** Detta ställer in SCL till -1, vilket innebär att innehållsfiltrering inte kommer att utföras.
+   - **Gör följande:** Välj **Ändra meddelandeegenskaperna** \> **ange scl (Spam Confidence Level)**. Konfigurera ett av följande värden i dialogrutan **Ange SCL** som visas:
 
-   - **0-4**: Meddelandet skickas vidare till innehållsfiltret för ytterligare bearbetning.
+   - **Bypass spam filtrering:** Detta ställer in SCL till -1, vilket innebär att meddelandena kommer att hoppa över spam filtrering.
 
-   - **5-6**: Åtgärden som anges för **skräppost** i tillämpliga innehållsfilterpolicyer kommer att tillämpas. Som standard är åtgärden att skicka meddelandet till mottagarens skräppostmapp.
+     > [!CAUTION]
+     > Var mycket försiktig med att tillåta meddelanden att hoppa över skräppostfiltrering. Angripare kan använda det här säkerhetsproblemet för att skicka nätfiske och andra skadliga meddelanden till din organisation. Reglerna för e-postflöde kräver mer än bara avsändarens e-postadress eller domän. Mer information finns [i Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
 
-   - **7-9**: Åtgärden som anges för **Skräppost med högt förtroende** i tillämpliga innehållsfilterpolicyer kommer att tillämpas. Som standard är åtgärden att skicka meddelandet till mottagarens skräppostmapp.
+   - **0 till 4**: Meddelandet skickas via skräppostfiltrering för ytterligare bearbetning.
 
-   Mer information om hur du konfigurerar innehållsfilterprinciper finns i [Konfigurera principer för skräppostfilter](configure-your-spam-filter-policies.md). Mer information om SCL-värden i tjänsten finns i [Säkerhetsnivåer för skräppost](spam-confidence-levels.md).
+   - **5 eller 6**: Meddelandet är markerat som **spam**. Åtgärden som du har konfigurerat för skräppostfiltreringsutslag i dina anti-spam-principer tillämpas på meddelandet (standardvärdet är **Flytta meddelande till mappen Skräppost**). **Spam**
 
-7. Ange ytterligare egenskaper för regeln och välj **spara**.
+   - **7 till 9:** Meddelandet är markerat som **Hög förtroende spam**. Åtgärden som du har konfigurerat för skräppostfiltreringsdomar med **högt förtroende** i dina anti-spam-principer tillämpas på meddelandet (standardvärdet är **Flytta meddelande till mappen Skräppost).**
 
-   > [!TIP]
-   > Mer information om de ytterligare egenskaper som du kan välja eller ange för den här regeln finns i [Använda EAC för att skapa regler för e-postflöde](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules).
+4. Ange eventuella ytterligare egenskaper som du vill ha för regeln. Klicka på **Spara** när du är klar.
 
 ## <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 

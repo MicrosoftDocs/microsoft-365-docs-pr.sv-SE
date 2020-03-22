@@ -1,8 +1,7 @@
 ---
 title: Skapa en Office 365-grupp i administrationscentret
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att skapa och ta bort Office 365-grupper, lägga till och ta bort gruppmedlemmar och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 169eef8121471c4268c652c942ce5788feb08e52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42812306"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894617"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Skapa en Office 365-grupp i administrationscentret för Microsoft 365
   
@@ -34,32 +33,9 @@ Användare kan skapa en Office 365-grupp från Outlook eller andra appar, men so
 > [!TIP]
 > Office 365-anslutna Yammer-grupper måste skapas i Yammer, men kan hanteras i Microsoft 365-administrationscentret som andra Office 365-grupper. Mer information finns i [Yammer- och Office 365-grupper](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
-
 ## <a name="create-an-office-365-group"></a>Skapa en Office 365-grupp
 
-::: moniker range="o365-worldwide"
-
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Gå till sidan **Gruppergrupper** > **i** [administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=848041) 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Gå till sidan **Gruppergrupper** > **i** [administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=850627) 
-
-::: moniker-end
+1. Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.
 
 2. Välj **Lägg till en grupp**.
   
@@ -80,11 +56,10 @@ Användare kan skapa en Office 365-grupp från Outlook eller andra appar, men so
 När gruppen har skapats kan du lägga till medlemmar och konfigurera ytterligare inställningar.
 
 ::: moniker range="o365-worldwide"
-  
+
 Användare kan [lägga till sig själva eller begära godkännande](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
 
-
-1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas, väljer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper</a>och väljer sedan namnet på den grupp som du vill lägga till medlemmar i. **Groups**
+1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas och väljer sedan namnet på den grupp som du vill lägga till medlemmar i.
     
 2. På fliken **Medlemmar** väljer du **Visa alla och hanterar medlemmar**.
 
@@ -101,11 +76,9 @@ Gruppen visas i Outlook med medlemmar som har tilldelats den.
 ::: moniker range="o365-germany"
 
 Användare kan [lägga till sig själva eller begära godkännande](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
-
 1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas, väljer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper</a>och väljer sedan den grupp som du vill lägga till medlemmar i. **Groups**
     
 2. Välj Redigera **bredvid** **Medlemmar**.
-
 3. Välj **Lägg till medlemmar**.
     
 4. Markera de användare som du vill lägga till och välj sedan **Spara**.
@@ -119,11 +92,9 @@ Gruppen visas i Outlook med medlemmar som har tilldelats den.
 ::: moniker range="o365-21vianet"
 
 Användare kan [lägga till sig själva eller begära godkännande](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
-
 1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas, väljer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper</a>och väljer sedan den grupp som du vill lägga till medlemmar i. **Groups**
     
 2. Välj Redigera **bredvid** **Medlemmar**.
-
 3. Välj **Lägg till medlemmar**.
     
 4. Markera de användare som du vill lägga till och välj sedan **Spara**.
@@ -134,9 +105,7 @@ Gruppen visas i Outlook med medlemmar som har tilldelats den.
   
 ::: moniker-end
 
-
-
-## <a name="who-can-delete-email-from-the-group-inbox"></a>Vem kan ta bort e-postmeddelanden från gruppinkorgen?
+## <a name="who-can-delete-email-from-the-group-inbox"></a>Vem kan ta bort e-post från grupp inkorgen?
 
 Gruppägare kan ta bort alla e-postmeddelanden från gruppinkorgen, oavsett om de var den ursprungliga avsändaren.
   
@@ -146,15 +115,12 @@ När ett e-postmeddelande tas bort från grupppostlådan tas det inte bort från
 
 ## <a name="next-step-manage-your-group"></a>Nästa steg: hantera din grupp
 
-När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, ändra ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppen samtal till medlemmarna. Se [Hantera en Office 365-grupp](manage-groups.md).
+När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, ändra ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppen samtal till medlemmarna. Mer information finns i [Hantera en Office 365-grupp.](manage-groups.md)
 
 ## <a name="related-articles"></a>Relaterade artiklar
-
-[Hantera en Office 365-grupp](manage-groups.md)
 
 [Hantera gäståtkomst till Office 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
 [Välj vilken domän som ska användas när Office 365-grupper skapas](choose-domain-to-create-groups.md)
 
 [Uppgradera distributionslistor till Office 365-grupper](../manage/upgrade-distribution-lists.md)
-
