@@ -1,11 +1,11 @@
 ---
-title: Ta bort en användare från portalen med åtkomstbegränsade användare efter att användaren har skickat skräppost
+title: Ta bort blockerade användare från portalen med åtkomstbegränsade användare
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/10/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -17,39 +17,39 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
-description: Om en användare kontinuerligt skickar e-postmeddelanden från Office 365 som klassificeras som skräppost, begränsas de från att skicka fler meddelanden.
-ms.openlocfilehash: 6fad4b9d3554228bdbf474bce2b4b2d0f29f7e2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
+ms.openlocfilehash: f1f869a81ef5b01733bf9060117cf3706094b961
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812251"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895209"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Ta bort en användare från portalen med åtkomstbegränsade användare efter att användaren har skickat skräppost
+# <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
-Om en användare regelbundet skickar e-postmeddelanden som klassificeras som skräppost från Office 365, kommer de att begränsas från att skicka e-post, men de kan fortfarande ta emot e-post. Användaren visas i tjänsten som olämplig utgående avsändare och får en rapport om utebliven leverans (NDR) som anger:
+Om en användare överskrider någon av de utgående sändningsgränserna som anges i [tjänstbegränsningarna](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) eller i [utgående skräppostprinciper](configure-the-outbound-spam-policy.md), begränsas användaren från att skicka e-post, men de kan fortfarande ta emot e-post.
+
+Användaren läggs till i portalen med åtkomstbegränsade användare i säkerhets- och efterlevnadscentret i Office 365. När de försöker skicka e-post returneras meddelandet i en rapport om utebliven leverans (kallas även för ett NDR eller icke-leveranskvitto) med felkoden [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) och följande text:
 
 > “Det gick inte att leverera meddelandet eftersom du inte godkändes som en giltig avsändare. Vanligtvis beror detta på att din e-postadress är misstänkt för att skicka skräppost och det är inte längre tillåten att skicka e-post.  Kontakta e-postadministratören om du behöver hjälp. Fjärrservern returnerade '550 5.1.8 åtkomst nekad, felaktig utgående avsändare”.
 
+Administratörer kan ta bort användare från portalen med åtkomstbegränsade avsändare i säkerhets- och efterlevnadscentret eller i Exchange Online PowerShell.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
-<a name="sectionSection0"> </a>
 
-Beräknad tid: 5 minuter
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd <https://protection.office.com/restrictedusers> för att gå direkt till sidan med **åtkomstbegränsade användare**.
 
-Du måste ha tilldelats behörigheter för att kunna utföra den här proceduren eller procedurerna. Om du vill se vilka behörigheter du behöver kan du läsa avsnittet “Skydd mot skräppost i [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-Följande procedur kan även utföras via fjärransluten PowerShell. Använd cmdleten Get-BlockedSenderAddress för att få listan med begränsade användare och Remove-BlockedSenderAddress för att ta bort begränsningen. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill ta bort användare från portalen för åtkomstbegränsade användare måste du vara medlem i rollgrupperna **Organisationsledning** eller **Säkerhetsadministratörer**. För skrivskyddad behörighet till portalen för åtkomstbegränsade användare måste du vara medlem i rollgruppen **Säkerhetsläsare**. Mer information om rollgrupper i Säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscentret för Office 365](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Ta bort begränsningar för ett blockerat Office 365-e-postkonto
+- En avsändare som överskrider gränsen för utgående e-post är ett bevis på ett komprometterat konto. Innan du tar bort användaren från portalen för åtkomstbegränsade användare måste du följa de nödvändiga stegen för att återfå kontroll över kontot. Mer information finns i [Svara på ett komprometterat e-postkonto i Office 365](responding-to-a-compromised-email-account.md).
 
-Du slutför den här uppgiften i Säkerhets- och efterlevnadscentret (SCC). [Gå till Säkerhets- och efterlevnadscentret](../../compliance/go-to-the-securitycompliance-center.md) om du vill ha mer information om SCC. Du måste vara med i rollgrupperna**Organisationshantering** eller **Säkerhetsadministratör** för att kunna utföra de här funktionerna. [Gå till Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md) om du vill ha mer information om SCC-rollgrupper.
+## <a name="use-the-security--compliance-center-to-remove-a-user-from-the-restricted-users-list"></a>Använda Säkerhets- och efterlevnadscentret för att ta bort en användare från listan med begränsade användare
 
-1. Använd ett arbets- eller skolkonto som har globala åtkomstbehörigheter för administratörer i Office 365, logga in i Säkerhets- och efterlevnadscentret i Office 365 och visa **Hothantering** i listan till vänster, välj **Granska**och välj sedan **Begränsade användare**.
+1. I Säkerhets- och efterlevnadscentret går du till **Hothantering** \> **Granska** \> **Begränsade användare**.
 
-    > [!TIP]
-    > Om du vill gå direkt till sidan **Begränsad användare** (tidigare kallat Aktivitetscentret) i Säkerhets-&amp; och efterlevnadscentret använder du följande URL: [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
-
-2. Den här sidan innehåller en lista med användare som har blockerats från att skicka e-post.  Leta rätt på den användare som du vill ta bort restriktioner från och välj **Avblockera**.
+2. Leta rätt på och markera den användare som du vill avblockera. I kolumnen **Åtgärder** klickar du på **Avblockera**.
 
 3. En utfällbar meny kommer att visa information om det konto vars sändning är begränsad. Vi rekommenderar att du går igenom rekommendationerna för att se till att du vidtar lämpliga åtgärder om kontot faktiskt är komprometterat. Välj **Nästa** när du är klar.
 
@@ -57,36 +57,56 @@ Du slutför den här uppgiften i Säkerhets- och efterlevnadscentret (SCC). [Gå
 
 5. Bekräfta ändringen genom att klicka på **Ja**.
 
-    > [!NOTE]
-    > Det kan ta 30 minuter eller mer innan restriktioner tas bort.
+   > [!NOTE]
+   > Det kan ta 30 minuter eller mer innan restriktioner tas bort.
 
-## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Att se till att administratörer varnas när detta händer
+## <a name="verify-the-alert-settings-for-restricted-users"></a>Verifiera aviseringsinställningarna för begränsade användare
 
-Varningen "Användare begränsas från att skicka e-post" är tillgänglig som policy på sidan med säkerhets- och aviseringsprinciper för Office 365. Detta var tidigare den utgående skräppostprincipen, men är nu inbyggd i varningsplattformen i Office 365. Gå till [Varningsregler i Säkerhets- och efterlevnadscentret](../../compliance/alert-policies.md) om du vill ha mer information om varningar.
+Standardaviseringsprincipen med namnet **Användare med restriktioner för att skicka e-post** meddelar automatiskt administratörer när användare hindras från att skicka utgående e-post. Du kan kontrollera inställningarna och lägga till fler användare som ska meddelas. Gå till [Varningsregler i Säkerhets- och efterlevnadscentret](../../compliance/alert-policies.md) om du vill ha mer information om varningsprinciper.
 
 > [!IMPORTANT]
-> För att varningar ska fungera måste Granskningsloggsökning aktiveras. Du kan läsa hur man gör i [Aktivera och inaktivera granskningsloggsökning för Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+> För att varningar ska fungera måste Granskningsloggsökning aktiveras. Du kan läsa mer i [Aktivera och inaktivera granskningsloggsökning för Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
 
-Principen för den här varningen är en standardprincip och medföljer alla Office 365-klientorganisationer och behöver inte konfigureras. Det anses vara ett varningsmeddelande med hög allvarlighetsgrad och kommer att skickas till den konfigurerade TenantAdmins-gruppen när meddelandet skickas då en användare har begränsats från att skicka e-post. Administratörer kan uppdatera den grupp som meddelas när denna varning görs genom att gå till varningen under SCC-portalen > Varningar > Varningsregler > Användare som begränsats från att skicka e-post.
+1. Gå till **Aviseringar** \> **Aviseringsprinciper** i Säkerhets- och efterlevnadscentret.
 
-Du kan redigera varningen på följande sätt:
-- Aktivera/inaktivera e-postaviseringar
-- Skicka e-post till nödvändiga mottagare
-- Begränsa antalet dagliga aviseringar du tar emot
+2. Sök efter och välj principen **Användare som begränsas från att skicka e-postavisering**.
 
-## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Söka efter och ta bort restriktioner med PowerShell
-PowerShell-kommandon för begränsade användare är:
-- `Get-BlockedSenderAddress`: Kör för att hämta listan över användare som begränsas från att skicka e-post
-- `Remove-BlockedSenderAddress`: Kör för att ta bort användare från att begränsas
+3. I den utfällbara meny som visas kan du verifiera eller konfigurera följande inställningar:
 
-## <a name="for-more-information"></a>Mer information
+   - **Status**: verifiera att meddelandet är aktiverat ![Aktivera](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
 
-[Svara på ett komprometterat e-postkonto](responding-to-a-compromised-email-account.md)
+   - **E-postmottagare**: Klicka på **Redigera** och verifiera eller konfigurera följande inställningar i den utfällbara menyn **Redigera mottagare** som visas:
 
-[Information om användaren som begränsas från att skicka e-postavisering](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+     - **Skicka e-postmeddelanden**: kontrollera att kryssrutan är markerad (**På**).
 
-[Pool med hög riskleverans för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md)
+     - **E-postmottagare**: standardvärdet är **TenantAdmins** (d.v.s. **Globala administratör**medlemmar). Klicka i ett tomt område i rutan om du vill lägga till fler mottagare. En lista med mottagare visas, och du kan börja skriva ett namn för att filtrera och välja en mottagare. Du kan ta bort en befintlig mottagare från rutan genom att klicka på ![Ta bort ikon](../../media/scc-remove-icon.png) bredvid namnet.
 
-[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
+     - **Daglig aviseringsgräns**: standardvärdet är **Ingen gräns**, men du kan välja en gräns för max antal aviseringar per dag.
 
-[Aviseringsregler i Säkerhets- och efterlevnadscentret](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+     Klicka på **Spara** när du är klar.
+
+4. När du är tillbaka vid den utfällbara menyn **Användare som begränsats från att skicka e-post** klickar du på **Stäng**.
+
+## <a name="use-exchange-online-powershell-to-view-and-remove-users-from-the-restricted-users-list"></a>Använd Exchange Online PowerShell för att visa och ta bort användare från listan med åtkomstbegränsade användare
+
+Om du vill visa en lista med användare som begränsas från att skicka e-post kör du följande kommando:
+
+```powershell
+Get-BlockedSenderAddress
+```
+
+Om du vill visa information om särskilda användare ersätter du \<E-postadress\> med deras e-postadress och kör följande kommando:
+
+```powershell
+Get-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+Se [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress) för detaljerad information om syntax och parametrar.
+
+Om du vill ta bort användare från listan med åtkomstbegränsade användare ersätter du \<E-postadress\> med deras e-postadress och kör följande kommando:
+
+```powershell
+Remove-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+Se [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress) för detaljerad information om syntax och parametrar.
