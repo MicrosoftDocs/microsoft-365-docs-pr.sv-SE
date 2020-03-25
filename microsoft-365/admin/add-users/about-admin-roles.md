@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857197"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929556"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -119,6 +119,7 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Om du le
 |Power BI-administratör    |   Fullständig åtkomst till Power BI-hanteringsuppgifter, hanterar tjänsteförfrågningar och övervakar tjänstens status.   |
 |Administratör för Power Platform     |    Full tillgång till Microsoft Dynamics 365, PowerApps, principer för dataförlustskydd och Microsoft Flow.     |
 |Administratör för privilegierad roll     |    Hanterar rolltilldelningar och alla funktioner för åtkomstbehörighet för privilegierad identitetshantering.     |
+|Autentiseringsadministratör med privilegier     |    Återställer lösenord, uppdaterar autentiseringsuppgifter andra än lösenord, tvingar användare att logga ut och övervakar tjänstens status samt hanterar tjänstförfrågningar.     |
 |Rapportläsare     |   Läser användningsrapporter från rapportkontrollpanelen, PowerBI-innehållspaketet, inloggningsrapporter och rapporterings-API för Microsoft Graph.      |
 |Sökadministratör     |    Full tillgång till Microsoft Search, tilldelar rollerna sökadministratör och sökredigerare, hanterar redaktionellt innehåll, övervakar tjänstens status och skapar tjänsteförfrågningar.     |
 |Sökredigerare     |    Kan bara skapa, redigera och ta bort innehåll för Microsoft Search som bokmärken, frågor och svar samt platser.     |
