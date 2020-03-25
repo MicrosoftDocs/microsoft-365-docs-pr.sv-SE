@@ -1,7 +1,7 @@
 ---
-title: Datatabeller i Microsoft Threat Protection avancerade jaktschema
-description: Läs mer om tabellerna i det avancerade jaktschemat för att förstå de data du kan köra hotjaktsfrågor på
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetri, schemareferens, kusto, tabell, data
+title: Datatabeller i microsofts avancerade jaktschema för skydd mot hotskydd
+description: Lär dig mer om tabellerna i det avancerade jaktschemat för att förstå de data du kan köra frågor om hotjakt på
+keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,49 +17,57 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bb3eae9fff658ee1cbb7f80fa3ff15f2335a9a3a
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 0b28cf2ce96e4c040fac0999d669623cef066fe4
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42809004"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929498"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jaktschemat
 
 **Gäller:**
-- Skydd av Hot mot Microsoft
+- Microsofts hotskydd
 
 
 
-Det [avancerade jaktschemat](advanced-hunting-overview.md) består av flera tabeller som tillhandahåller antingen händelseinformation eller information om datorer och entiteter. Om du vill skapa frågor som sträcker sig över flera tabeller måste du förstå tabellerna och kolumnerna i det avancerade jaktschemat.
+Det [avancerade jaktschemat](advanced-hunting-overview.md) består av flera tabeller som ger antingen händelseinformation eller information om datorer och entiteter. Om du effektivt vill skapa frågor som sträcker sig över flera tabeller måste du förstå tabellerna och kolumnerna i det avancerade jaktschemat.
 
 ## <a name="schema-tables"></a>Schematabeller
 
-Följande referens visar alla tabeller i schemat. Varje tabellnamn länkar till en sida som beskriver kolumnnamnen för den tabellen. Tabell- och kolumnnamn visas också i säkerhetscentret som en del av schemarepresentationen på den avancerade jaktskärmen.
+Följande referens listar alla tabeller i schemat. Varje tabellnamn länkar till en sida som beskriver kolumnnamnen för den tabellen. Tabell- och kolumnnamn visas också i säkerhetscentret som en del av schemarepresentationen på den avancerade jaktskärmen.
 
 | Tabellnamn | Beskrivning |
 |------------|-------------|
-| **[DeviceInfo (på plats)](advanced-hunting-deviceinfo-table.md)** | Maskininformation, inklusive OS-information |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Nätverksegenskaper för datorer, inklusive kort, IP- och MAC-adresser, samt anslutna nätverk och domäner |
-| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Skapa processer och relaterade händelser |
-| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Nätverksanslutning och relaterade händelser |
-| **[DeviceFileEvents (På video)](advanced-hunting-devicefileevents-table.md)** | Filskapande, ändring och andra filsystemhändelser |
-| **[EnhetsregisterHändelser](advanced-hunting-deviceregistryevents-table.md)** | Skapande och ändring av registerposter |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inloggningar och andra autentiseringshändelser |
-| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-inläsningshändelser |
-| **[Enhetshändelser](advanced-hunting-deviceevents-table.md)** | Flera händelsetyper, inklusive händelser som utlöses av säkerhetskontroller som Windows Defender Antivirus och utnyttja skydd |
-| **[DeviceFileCertificateInfoBeta](advanced-hunting-devicefilecertificateinfobeta-table.md)** | Certifikatinformation om signerade filer som erhållits från certifikatverifieringshändelser på slutpunkter |
-| **[E-postHändelser](advanced-hunting-emailevents-table.md)** | Office 365-e-posthändelser, inklusive e-postleverans och blockering av händelser |
+| **[AlertInfo (varningInfo)](advanced-hunting-alertinfo-table.md)** | Aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP, inklusive allvarlighetsgradinformation och hotkategorisering  |
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Filer, IP-adresser, webbadresser, användare eller enheter som är associerade med aviseringar |
+| **[KontoInfo](advanced-hunting-accountinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
+| **[E-postEvenemang](advanced-hunting-emailevents-table.md)** | E-posthändelser i Office 365, inklusive e-postleverans och blockering av händelser |
 | **[E-postAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om filer som är kopplade till Office 365-e-postmeddelanden |
 | **[E-postUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i Office 365-e-postmeddelanden |
-| **[DeviceTvmSoftwareInventorySårbarheter](advanced-hunting-tvm-softwareinventory-table.md)** | Inventering av programvara på enheter samt alla kända sårbarheter i dessa programvaruprodukter |
-| **[DeviceTvmSoftwareSårbarheterKB](advanced-hunting-tvm-softwarevulnerability-table.md)** | Kunskapsbas för offentligt avslöjade sårbarheter, inklusive om exploaterar kod är allmänt tillgänglig |
-| **[DeviceTvmSecureConfigurationBedömning](advanced-hunting-tvm-configassessment-table.md)** | Hot & sårbarhetshanteringsbedömningshändelser, som anger status för olika säkerhetskonfigurationer på enheter |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Kunskapsbas för olika säkerhetskonfigurationer som används av Threat & Sårbarhetshantering för att bedöma enheter. omfattar kartläggningar till olika standarder och riktmärken  |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Maskininformation, inklusive OS-information |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Nätverksegenskaper för datorer, inklusive kort, IP- och MAC-adresser, samt anslutna nätverk och domäner |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Processskapande och relaterade händelser |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Nätverksanslutning och relaterade händelser |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Filskapande, ändring och andra filsystemhändelser |
+| **[EnhetsregisterEvents](advanced-hunting-deviceregistryevents-table.md)** | Skapande och ändring av registerposter |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inloggningar och andra autentiseringshändelser |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-inläsning av händelser |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Flera händelsetyper, inklusive händelser som utlöses av säkerhetskontroller som Windows Defender Antivirus och utnyttja skydd |
+| **[DeviceFileCertificateInfoBeta](advanced-hunting-devicefilecertificateinfobeta-table.md)** | Certifikatinformation för signerade filer som erhållits från certifikatverifieringshändelser på slutpunkter |
+| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Inventering av programvara på enheter samt alla kända sårbarheter i dessa programvaruprodukter |
+| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-tvm-softwarevulnerability-table.md)** | Kunskapsbas för offentliggjorda sårbarheter, inklusive om det är allmänt tillgängligt för att utnyttja kod |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Hot & bedömningshändelser för sårbarhetshantering, som anger status för olika säkerhetskonfigurationer på enheter |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Kunskapsbas för olika säkerhetskonfigurationer som används av Threat & Vulnerability Management för att bedöma enheter. omfattar kartläggningar till olika standarder och riktmärken  |
+| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Filrelaterade aktiviteter i molnappar och molntjänster |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringshändelser som registrerats av Active Directory och andra Microsoft-onlinetjänster |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Frågeaktiviteter som utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
+
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Avancerad jaktöversikt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
+- [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jaga hot mellan enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
-- [Använda metodtips för frågor](advanced-hunting-best-practices.md)
+- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)

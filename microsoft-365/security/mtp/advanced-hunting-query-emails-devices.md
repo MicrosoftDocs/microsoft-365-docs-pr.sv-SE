@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808132"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928990"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Jakten på hot på olika enheter och e-postmeddelanden
 
@@ -94,8 +94,9 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Avancerad jaktöversikt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
+- [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
