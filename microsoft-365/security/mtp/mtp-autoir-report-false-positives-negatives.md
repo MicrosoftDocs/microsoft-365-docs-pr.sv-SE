@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808282"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955667"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Hantera falska positiva identifieringar/negativ i automatiserade undersöknings- och svarsfunktioner
 
@@ -58,7 +58,7 @@ Använd den här artikeln som vägledning.
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Ångra en åtgärd som har vidtagits på en enhet
 
-Om en reparationsåtgärd har vidtagits på en enhet (till exempel en Windows 10-enhet) och objektet faktiskt är rent, kan säkerhetsoperationsgruppen ångra reparationsåtgärden i [Åtgärdscenter](mtp-action-center.md).
+Om en reparationsåtgärd har vidtagits på en enhet (till exempel en Windows 10-enhet) och objektet faktiskt inte är ett hot, kan säkerhetsoperationsgruppen ångra reparationsåtgärden i [Åtgärdscenter](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Kontrollera att du har de [behörigheter som krävs](mtp-action-center.md#required-permissions-for-action-center-tasks) innan du försöker utföra följande uppgift.

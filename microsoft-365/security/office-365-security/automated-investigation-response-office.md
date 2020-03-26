@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826409"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955583"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatisk undersökning och svar (AIR) i Office 365
 
@@ -92,7 +92,7 @@ Varje steg på hög nivå innehåller ett antal understeg som utförs för att g
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: Ett användarrapporterat phish-meddelande startar en undersökningsspelbok
 
-När en användare i organisationen skickar ett e-postmeddelande och rapporterar det till Microsoft med hjälp av [tillägget Report Message för Outlook eller Outlook Web App](enable-the-report-message-add-in.md)skickas rapporten också till ditt system och visas i Utforskaren i den användarrapporterade vyn. Det här användarrapporterade meddelandet utlöser nu en systembaserad informationsavisering som automatiskt startar uppspelningsboken för undersökningen.
+Anta att en användare i organisationen får ett e-postmeddelande som de tror är ett nätfiskeförsök. Användaren, som är tränad att rapportera sådana meddelanden, använder [tillägget Rapportmeddelande för Outlook eller Outlook Web App för](enable-the-report-message-add-in.md) att skicka det till Microsoft för analys. Inlämningen skickas också till ditt system och visas i Utforskaren i **vyn Inlämningar** (tidigare kallad **användarrapporterad** vy). Dessutom utlöser det användarrapporterade meddelandet nu en systembaserad informationsavisering, som automatiskt startar undersökningsuppspelningsboken.
 
 Under rotutredningsfasen bedöms olika aspekter av e-postmeddelandet. Dessa inkluderar:
 - En bestämning om vilken typ av hot det kan vara;
@@ -121,13 +121,13 @@ Reparation är den sista fasen av spelboken. Under denna fas vidtas saneringsåt
 
 Förutom automatiska undersökningar som utlöses av en avisering kan organisationens säkerhetsoperationsteam utlösa en automatisk undersökning från en vy i [Threat Explorer](threat-explorer.md).
 
-Anta till exempel att du visar data i Explorer om användarrapporterade meddelanden. Du kan välja ett objekt i resultatlistan och sedan klicka på **Undersök** på åtgärdsmenyn (förutsatt att du har lämpliga behörigheter för reparation).
+Anta till exempel att du använder vyn **Skadlig kod** i Threat Explorer. Med hjälp av flikarna under diagrammet väljer du fliken **E-post.** Om du markerar ett eller flera objekt i listan aktiveras knappen **+ Åtgärder.** 
 
-![Användarens rapporterade meddelanden i explorer med knappen Undersök](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorer med markerade meddelanden":::
 
-Anta att du visar data om e-postmeddelanden som identifierats som innehållande skadlig kod, och det finns flera e-postmeddelanden som har identifierats som innehållande skadlig kod. Du kan välja fliken **E-post,** välja ett eller flera e-postmeddelanden och sedan välja **Undersök**på **Menyn Åtgärder** . 
+Med hjälp av menyn **Åtgärder** kan du välja **Utlösarundersökning**.
 
-![Starta en undersökning för skadlig kod i Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Åtgärdsmenyn för markerade meddelanden":::
 
 I likhet med spelböcker som utlöses av en avisering innehåller automatiska undersökningar som utlöses från en vy i Explorer en rotundersökning, steg för att identifiera och korrelera hot och rekommenderade åtgärder för att minska dessa hot.
 

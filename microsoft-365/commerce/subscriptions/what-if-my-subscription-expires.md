@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när din Office 365 för företag-prenumeration går ut, är inaktiverad eller om du avbryter.
-ms.openlocfilehash: 717beff94255fe669f9ce9bc733300679ffc3d53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808361"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955679"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Office 365 för företag-prenumeration avslutas?
 
@@ -44,7 +44,7 @@ I följande tabell förklaras vad du kan förvänta dig när en betald Office 36
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data som är tillgängliga för alla*                                               | *Data som är tillgängliga för alla*                                                     | *Data som endast är tillgängliga för administratörer*                                             | **Data<br/>borttagna Azure Active Directory tas bort, om den inte används av andra tjänster** |
 | Användare har normal åtkomst till Office 365-, data- och Office-program  | Användare har normal åtkomst till Office 365, filer och program              | Användare kan inte komma åt Office 365, filer eller program                        | Användare kan inte komma åt Office 365, filer eller program                                     |
-| Administratörer har normal åtkomst till Office 365-, data- och Office-program | Administratörer kan komma åt administrationscentret                                           | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare       | Administratörer kan komma åt administrationscentret för att köpa och hantera andra prenumerationer             |
+| Administratörer har normal åtkomst till Office 365-, data- och Office-program | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare   | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare       | Administratörer kan komma åt administrationscentret för att köpa och hantera andra prenumerationer             |
 |                                                                        | Globala administratörer eller faktureringsadministratörer kan återaktivera prenumerationen i administrationscentret | Globala administratörer eller faktureringsadministratörer kan återaktivera prenumerationen i administrationscentret |                                                                                           |
 
 *För de flesta erbjudanden, i de flesta länder och regioner.
@@ -66,7 +66,7 @@ Innan prenumerationen faktiskt når sitt utgångsdatum har du några alternativ:
 
   - Om du har köpt Office 365 Business med ett förbetalt kort kan du [aktivera Återkommande fakturering](renew-your-subscription.md) för din prenumeration.
 
-  - Om du är en open volume licensing-kund med en förbetald, ettårig prenumeration kontaktar du din partner för att köpa en ny produktnyckel. Du får instruktioner via e-post för att aktivera din nyckel i [Servicecenter för volymlicensiering](https://go.microsoft.com/fwlink/p/?LinkID=282016). Mer information om hur du hittar en ny partner eller den partner du har arbetat med tidigare finns i [Hitta din Office 365-partner eller återförsäljare](../../admin/manage/find-your-partner-or-reseller.md).
+  - Om du är en open volume licensing-kund med en förbetald, ettårig prenumeration kontaktar du din partner för att köpa en ny produktnyckel. Du får instruktioner via e-post för att aktivera din nyckel i [Servicecenter för volymlicensiering](https://go.microsoft.com/fwlink/p/?LinkID=282016). Mer information om hur du hittar en ny partner eller den partner du har arbetat med tidigare finns i [Hitta din partner eller återförsäljare.](../../admin/manage/find-your-partner-or-reseller.md)
 
   - Om du har Office 365 Business läser du [Hantera återkommande fakturering för din prenumeration](renew-your-subscription.md).
 
@@ -90,9 +90,9 @@ Innan prenumerationen faktiskt når sitt utgångsdatum har du några alternativ:
 
   - Om du har köpt Office 365 Business med ett förbetalt kort kan du [aktivera Återkommande fakturering](renew-your-subscription.md) för din prenumeration.
 
-  - Om du är en open volume licensing-kund med en förbetald, ettårig prenumeration kontaktar du din partner för att köpa en ny produktnyckel. Du får instruktioner via e-post för att aktivera din nyckel i [Servicecenter för volymlicensiering](https://go.microsoft.com/fwlink/p/?LinkID=282016). Mer information om hur du hittar en ny partner eller den partner du har arbetat med tidigare finns i [Hitta din Office 365-partner eller återförsäljare](../../admin/manage/find-your-partner-or-reseller.md).
+  - Om du är en open volume licensing-kund med en förbetald, ettårig prenumeration kontaktar du din partner för att köpa en ny produktnyckel. Du får instruktioner via e-post för att aktivera din nyckel i [Servicecenter för volymlicensiering](https://go.microsoft.com/fwlink/p/?LinkID=282016). Mer information om hur du hittar en ny partner eller den partner du har arbetat med tidigare finns i [Hitta din partner eller återförsäljare.](../../admin/manage/find-your-partner-or-reseller.md)
 
-  - Om du har Office 365 Business läser du [Förnya Office 365 för företag](renew-your-subscription.md).
+  - Om du har Office 365 Business läser du [Förnya din prenumeration](renew-your-subscription.md).
 
 - **Låt prenumerationen löpa ut.**
 
@@ -143,7 +143,7 @@ Det här kan du förvänta dig när din prenumeration är i varje delstat.
 
 I det här läget har användarna normal åtkomst till Office 365-portalen, Office-program och tjänster som e-post och SharePoint Online.
   
-Som administratör har du fortfarande tillgång till administrationscentret. Oroa dig inte – globala administratörer eller faktureringsadministratörer kan [återaktivera prenumerationen](reactivate-your-subscription.md) och fortsätta använda Office 365. Om du inte återaktiverar måste du [säkerhetskopiera dina data](back-up-data-before-switching-plans.md).
+Som administratör har du fortfarande åtkomst till administrationscentret, men kan inte tilldela licenser till användare. Globala administratörer eller faktureringsadministratörer kan [återaktivera prenumerationen](reactivate-your-subscription.md) och fortsätta använda Office 365. Om du inte återaktiverar måste du [säkerhetskopiera dina data](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Tillstånd: Inaktiverat
   

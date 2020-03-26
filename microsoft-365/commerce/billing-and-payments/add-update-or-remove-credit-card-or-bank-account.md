@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Läs om hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42809745"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952012"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Lägga till, uppdatera eller ta bort dina betalningsmetoder
 
@@ -158,9 +158,7 @@ Om din betalningsmetod är kopplad till en faktureringsprofil och även används
 Du måste vara global administratör eller faktureringsadministratörer för att kunna utföra åtgärder som beskrivs i den här artikeln.
   
  **Är du inte administratör?** Kontakta IT-administratören för hjälp. [Vem har administratörsbehörighet i mitt företag?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **För Office 365 Home eller Personal**finns i [Ändra betalningsmetod eller kreditkort som är kopplat till ditt Microsoft-konto](https://support.microsoft.com/help/4026594).
-  
+
 > [!NOTE]
 > Alternativet att betala med ett bankkonto är inte tillgängligt i vissa länder eller regioner.
 >
@@ -181,7 +179,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 4. Ange informationen för det nya kreditkortet eller bankkontot och välj sedan **Skicka**.
 
     > [!NOTE]
-    > Det nya kreditkortet eller bankkontot används bara för den Office 365-prenumeration som du valde i steg 2. Om du vill använda det nya kreditkortet eller bankkontot för andra prenumerationer följer du stegen i den här artikeln och ändrar kreditkort eller bankkonto för betalning för varje prenumeration.
+    > Det nya kreditkortet eller bankkontot används endast för den prenumeration du valde i steg 2. Om du vill använda det nya kreditkortet eller bankkontot för andra prenumerationer följer du stegen i den här artikeln och ändrar kreditkort eller bankkonto för betalning för varje prenumeration.
 
 ::: moniker-end
 
@@ -191,8 +189,6 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 Du måste vara global administratör eller faktureringsadministratörer för att kunna utföra åtgärder som beskrivs i den här artikeln.
   
  **Är du inte administratör?** Kontakta IT-administratören om hjälp. [Vem har administratörsbehörigheter i min verksamhet?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **För Office 365 Home eller Personal**finns i [Ändra betalningsmetod eller kreditkort som är kopplat till ditt Microsoft-konto](https://support.microsoft.com/help/4026594).
   
 > [!NOTE]
 > Alternativet att betala med ett bankkonto är inte tillgängligt i vissa länder eller regioner.
@@ -212,7 +208,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 4. Ange informationen för det nya kreditkortet eller bankkontot och välj sedan **Skicka**.
 
     > [!NOTE]
-    > Det nya kreditkortet eller bankkontot används bara för den Office 365-prenumeration som du valde i steg 2. Om du vill använda det nya kreditkortet eller bankkontot för andra prenumerationer följer du stegen i den här artikeln och ändrar kreditkort eller bankkonto för betalning för varje prenumeration.
+    > Det nya kreditkortet eller bankkontot används endast för den prenumeration du valde i steg 2. Om du vill använda det nya kreditkortet eller bankkontot för andra prenumerationer följer du stegen i den här artikeln och ändrar kreditkort eller bankkonto för betalning för varje prenumeration.
 
 ::: moniker-end
 

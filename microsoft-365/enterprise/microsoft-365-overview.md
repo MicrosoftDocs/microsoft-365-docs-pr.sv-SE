@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Innehåller en introduktion till komponenter, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42808597"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952000"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -69,7 +69,7 @@ Mer information finns i [Funktioner och funktioner för varje plan](https://www.
 
 [![Bild för Microsoft 365 för företagsaffisch](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
-För att ladda ner en kopia av affischen, klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
+För att ladda ner en kopia av affischen, klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Ändra hela organisationen
@@ -80,7 +80,7 @@ Om du vill få en bättre bild av hur du flyttar hela organisationen till produk
 
 Den här tvåsidiga affischen är ett snabbt sätt att inventera din befintliga infrastruktur och komma åt vägledningen för att flytta till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter och andra infrastruktur- och säkerhetselement som enhetshantering, identitet och informations- och hotskydd.
 
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) och skriva ut den i brev, juridiska eller tabloid (11 x 17) format.
+Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) och skriva ut den i brev, juridiska eller tabloid (11 x 17) format.
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Undvik att supporten för Windows 7 och Office 2010 ska sluta
 
@@ -100,7 +100,7 @@ En visuell sammanfattning av alternativen för uppgradering, migrera och flytta 
 
 Den här ensidiga affischen är ett snabbt sätt att förstå de olika vägar du kan ta för att förhindra att Klient- och serverprodukter för Windows 7 och Office 2010 når slutet av supporten, med önskade sökvägar och support i Microsoft 365 för företag markerat.
 
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) och skriva ut den i brev, juridiska eller tabloid (11 x 17) format.
+Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) och skriva ut den i brev, juridiska eller tabloid (11 x 17) format.
 
 ## <a name="deploy"></a>Distribuera
 

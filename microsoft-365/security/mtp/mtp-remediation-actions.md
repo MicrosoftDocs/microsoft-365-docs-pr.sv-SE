@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42808677"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955597"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Reparationsåtgärder efter automatiserade undersökningar i Microsoft Threat Protection
 
@@ -43,16 +43,16 @@ I följande tabell sammanfattas åtgärder för reparation som för närvarande 
 
 Reparationsåtgärder, oavsett om de väntar på godkännande eller redan är slutförda, kan visas i [Åtgärdscenter](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
-## <a name="verdicts-and-outcomes-following-automated-investigations"></a>Domar och resultat efter automatiserade utredningar
+## <a name="remediation-actions-follow-automated-investigations"></a>Saneringsåtgärder följer på automatiserade utredningar
 
 När en automatiserad undersökning är klar, en dom nås för varje del av bevis inblandade, och saneringsåtgärder identifieras. I vissa fall vidtas åtgärder för att åtgärda dem automatiskt. I andra fall väntar saneringsåtgärder på godkännande. I följande tabell listas möjliga domar och resultat:
 
-|Dom    |Området   |Resultat|
+|Dom    |Området    |Resultat|
 |------|------|------|
-|Skadlig  |Enheter (slutpunkter)    |Reparationsåtgärder vidtas automatiskt|
-|Skadlig  |E-postinnehåll (webbadresser eller bilagor) | Rekommenderade åtgärder väntar på godkännande|
-|Misstänkta |Enheter eller e-postinnehåll |Rekommenderade åtgärder väntar på godkännande|
-|Ren  |Enheter eller e-postinnehåll   |Inga saneringsåtgärder behövs|
+|Skadlig    |Enheter (slutpunkter)    |Reparationsåtgärder vidtas automatiskt|
+|Skadlig    |E-postinnehåll (webbadresser eller bilagor) | Rekommenderade åtgärder väntar på godkännande|
+|Misstänkta    |Enheter eller e-postinnehåll |Rekommenderade åtgärder väntar på godkännande|
+|Inga hot hittades    |Enheter eller e-postinnehåll    |Inga saneringsåtgärder behövs|
 
 [Granska en väntande åtgärd i åtgärdscentret](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 

@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Läs om hur du förnyar din Office 365 för företag-prenumeration med hjälp av en produktnyckel och aktiverar eller inaktiverar den återkommande faktureringen. '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42811977"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959222"
 ---
 # <a name="renew-office-365-for-business"></a>Förnya Office 365 för företag
 
 Den här artikeln gäller för de flesta betalda Office 365 för företag-prenumerationer.
   
-Om du vill förnya med hjälp av en produktnyckel som du har köpt från en butik eller Office 365-partner läser du [EFind och anger produktnyckeln](../enter-your-product-key.md).
+Information om hur du förnyar med hjälp av en produktnyckel som du har köpt från en butik eller Office 365-partner finns i [Hitta och ange produktnyckeln](../enter-your-product-key.md).
 
 > [!NOTE]
 > Att betala med bankkonto är inte tillgängligt i vissa länder eller regioner.
@@ -109,7 +109,7 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 
     > [!NOTE]
     > - Du kan bara ändra inställningen **Återkommande fakturering** för aktiva prenumerationer. Om din prenumeration redan har upphört att gälla eller är inaktiverad måste du [återaktivera den](reactivate-your-subscription.md) innan du kan aktivera eller inaktivera **Återkommande fakturering.**
-    > - När **Återkommande fakturering** är inaktiverad avbryts inte prenumerationen direkt. Den förblir aktiv tills den löper ut. Du kan visa utgångsdatumet på prenumerationskortet
+    > - När **Återkommande fakturering** är inaktiverad avbryts inte prenumerationen direkt. Den förblir aktiv tills den löper ut. Du kan visa utgångsdatumet på prenumerationskortet.
     > - Mer information om hur du avbryter prenumerationen direkt finns i [Avbryt min prenumeration](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -120,7 +120,7 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
   
 [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[Vad händer med mina data och åtkomst när min prenumeration slutar?](what-if-my-subscription-expires.md)
+[Vad händer med mina data och åtkomst när prenumerationen går ut?](what-if-my-subscription-expires.md)
 
 [Lägga till, uppdatera eller ta bort dina betalningsmetoder](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

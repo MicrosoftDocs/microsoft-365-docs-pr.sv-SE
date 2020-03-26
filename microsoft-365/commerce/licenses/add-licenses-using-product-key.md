@@ -23,20 +23,20 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Läs om hur du lägger till licenser i din Office 365-prenumeration.
-ms.openlocfilehash: 93c2929ae575282716cad7b6f64519f5974e3158
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Läs om hur du lägger till licenser i din prenumeration.
+ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42810115"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951952"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Lägga till licenser i eller utöka en prenumeration som betalats för att använda en produktnyckel
 
 Förbetalda användarlicenser utfärdas till dig som en alfanumerisk kod med 25 tecken. När du har köpt de licenser du behöver kan du lägga till dem i din prenumeration. Du kan också använda en produktnyckel för att förlänga prenumerationens utgångsdatum.
 
 > [!NOTE]
-> Om du inte vill köpa en ny produktnyckel kan du alltid välja att lägga till ett kreditkort eller bankkonto i prenumerationen för att betala för fler licenser eller förlänga prenumerationens utgångsdatum. Mer information finns i [Förnya Office 365 för företag](../subscriptions/renew-your-subscription.md).
+> Om du inte vill köpa en ny produktnyckel kan du alltid välja att lägga till ett kreditkort eller bankkonto i prenumerationen för att betala för fler licenser eller förlänga prenumerationens utgångsdatum. Mer information finns i [Förnya din prenumeration](../subscriptions/renew-your-subscription.md).
   
 ## <a name="add-licenses-to-your-subscription"></a>Lägga till licenser i din prenumeration
 

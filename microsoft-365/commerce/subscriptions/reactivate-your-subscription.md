@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: Lär dig hur du återaktiverar din Office 365-prenumeration när den går ut, eller om Microsoft inaktiverar den, eller om du avbryter den i mitten.
-ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Läs om hur du återaktiverar prenumerationen när den går ut, eller om Microsoft inaktiverar den, eller om du avbryter den i mitten.
+ms.openlocfilehash: 6126c9ccc05a1ee0927f928b045bd1c383479893
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807188"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952048"
 ---
 # <a name="reactivate-your-subscription"></a>Återaktivera prenumerationen
 
