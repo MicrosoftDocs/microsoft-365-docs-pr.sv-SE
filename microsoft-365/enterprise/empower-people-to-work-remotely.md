@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Konfigurera infrastrukturen och säkerheten som gör att dina anställda kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: b86071b7e5a6101c328b43177e965856f74995d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cfbabfbe0c239ca837356b585171778d40daaa93
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809701"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952060"
 ---
 # <a name="empower-remote-workers"></a>Ge distansarbetare goda förutsättningar
 
-*Det här scenariot är obligatoriskt och gäller både E3- och E5-versionerna av Microsoft 365 Enterprise*
+*Det här scenariot gäller både E3- och E5-versionerna av Microsoft 365 Enterprise*
 
-Att göra det möjligt för personalen att jobba på distans på ett smidigt och säkert sätt är viktigt för många organisationer för att spara på kontorsyta, rekrytera och behålla personal som inte kan eller vill flytta och minska personalen pendling, vilket ger de anställda mer tid att vara produktiva och till stressminskade aktiviteter utanför arbetet.
+Att göra det möjligt för personalen att jobba på distans på ett smidigt och säkert sätt är viktigt för många organisationer för att spara på kontorsyta, rekrytera och behålla personal som inte kan eller vill flytta och minska pendling och det ger de anställda mer tid att vara produktiva och utföra aktiviteter som minskar stressen utanför arbetet.
 
 Distansarbete kan betyda flera olika saker, till exempel:
 
@@ -40,7 +40,7 @@ En kombination av funktioner i Microsoft 365 Enterprise ger dina distansarbetare
 - Delade arbetsytor för molnbaserad fillagring med global tillgänglighet och samarbete i realtid.
 - Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda.
 
-Microsoft 365 Enterprise innehåller följande starka säkerhetsfunktioner:
+Microsoft 365 Enterprise har följande starka säkerhetsfunktioner:
 
 - Tvingande autentiseringskrav, identifiera och svara på högriskinloggningar och blockera valda appar och icke-kompatibla enheter.
 - Krypterade anslutningar och digitala tillgångar i molnet.
@@ -50,7 +50,7 @@ Microsoft 365 Enterprise innehåller följande starka säkerhetsfunktioner:
 För att möta dessa kriterier för distanspersonal använder du följande Microsoft 365 Enterprise-funktioner:
 
 - Användaridentitet och inloggningssäkerhet
-  - Användarkonton i Azure Active Directory (Azure AD) med multifaktorautentiering (MFA)
+  - Användarkonton i Azure Active Directory (Azure AD) med multifaktorautentisering (MFA)
   - Principer för villkorsstyrd åtkomst för att kräva MFA för riskfyllda inloggningar
 - Samarbetsplattformar
   - Microsoft Teams, SharePoint och OneDrive, med vilka distansarbetare kan schemalägga och delta i videobaserade onlinemöten och arbeta med samma dokument samtidigt
@@ -60,23 +60,23 @@ För att möta dessa kriterier för distanspersonal använder du följande Micro
   - Office 365 DLP-principer
   - Känslighetsetiketter för kryptering och behörigheter som följer med filer
 - Enhetshantering och säkerhet med Microsoft Intune
-  - Registrering för hanterade enheter
+  - Registrering av hanterade enheter
   - Appinställningar för personliga enheter
   - Enhets- och apprinciper
 - Produktivitetsappar för enheter
-  - Office 365 ProPlus-appar för samarbetsupplevelser med Teams, SharePoint och OneDrive 
+  - Office 365 ProPlus-appar för samarbete med Teams, SharePoint och OneDrive 
 - Windows 10 Enterprise
   - Omfattande säkerhetsfunktioner för att skydda mot cyberattacker och förhindra dataläckage
-- Åtkomst till onlineappar
+- Åtkomst till lokala appar
   - Organisationer som har hybrididentitet kan använda Azure AD-programproxy istället för VPN-anslutningar (virtuellt privat nätverk)
 
-I följande faser får du stegvisa anvisningar om hur du distribuerar funktionen för Microsoft 365 Enterprise för fjärråtkomst och inför funktionen för distansarbetare. Om du redan har distribuerade element för dessa faser ser du till de uppfyller de angivna kraven innan du går vidare till nästa del.
+I följande faser får du stegvisa anvisningar om hur du distribuerar funktionen för fjärråtkomst i Microsoft 365 Enterprise och inför funktionen för distansarbetare. Om du redan har distribuerade element för dessa faser ser du till de uppfyller de angivna kraven innan du går vidare till nästa del.
 
-<a name="poster"></a> En sammanfattning på sida av det här scenariot finns i [affischen Ge distansarbetare goda förutsättningar](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+<a name="poster"></a> En sammanfattning på en sida av det här scenariot finns på affischen [Ge distansarbetare goda förutsättningar](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
 
 [![Ge distansarbetare goda förutsättningar (affisch)](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)- eller [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
+Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)- eller [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Fas 1: Distribuera Microsoft 365-funktioner för distansarbetare
@@ -85,9 +85,9 @@ På grund av bredden och antalet funktioner som krävs för det här scenariot g
 
 ### <a name="step-1-foundation-infrastructure-requirements-for-remote-workers"></a>Steg 1: Krav på grundinfrastrukturen för distansarbetare
 
-I det här steget går vi igenom faserna för [grundinfrastrukturen](deploy-foundation-infrastructure.md) och listar de element som krävs för att möjliggöra distansarbetare.
+I det här steget går vi igenom faserna för [grundinfrastrukturen](deploy-foundation-infrastructure.md) och listar de element som krävs för att möjliggöra distansarbete.
 
-För [Fas 2: identitet](identity-infrastructure.md) distribuerar du följande användaridentitet:
+För [Fas 2: identitet](identity-infrastructure.md) distribuerar du följande användaridentitet och inloggningssäkerhet:
 
 - För hybrididentitet, användarkonton och grupper synkroniserade från lokal Active Directory Domain Services (AD DS).
 - För tilldelning av behörigheter, synkroniserade grupper eller Azure AD-grupper med rätt medlemmar.
@@ -123,12 +123,12 @@ Här är konfigurationsresultatet med Intune-registrerade enheter och principer 
 
 ![Element för hantering av mobila enheter för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
  
-För [Fas 6: Informationsskydd](infoprotect-infrastructure.md) utformat och konfigurera skydd för dina digitala enheter med:
+För [Fas 6: Informationsskydd](infoprotect-infrastructure.md), utforma och konfigurera skydd för dina digitala tillgångar med:
 
 - Office 365 DLP-principer.
 - Office 365-känslighetsetiketter för kryptering och behörigheter som följer med filer.
 
-Här är konfigurationsresultatet DLP-principer och känslighetsetiketter markerade.
+Här är konfigurationsresultatet med DLP-principer och känslighetsetiketter markerade.
 
 ![Informationsskyddselement för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
  
@@ -152,11 +152,11 @@ Här är konfigurationsresultatet med arbetsbelastningar markerade.
  
 ### <a name="deployment-results"></a>Distributionsresultat
 
-Efter distribution av grundinfrastrukturen och arbetsbelastningar och rullat ut Windows 10 Enterprise och Office 365 ProPlus gäller följande för distansarbetare:
+Efter distribution av grundinfrastrukturen och arbetsbelastningar och lansering av Windows 10 Enterprise och Office 365 ProPlus gäller följande för distansarbetare:
 
 - De omfattas av starkt autentiserings- och identitetsskydd.
-- De har de senaste och säkraste versionen av Windows på sina Windows-enheter.
-- De har den senaste produktversionen av Office-paketet på sina enheter.
+- De har den senaste och säkraste versionen av Windows på sina Windows-enheter.
+- De har den senaste och med produktiva versionen av Office-paketet på sina enheter.
 - De omfattas av principer för apphantering och enhetsefterlevnad.
 - De omfattas av DLP-principer och begränsningar.
 - De kan tilldela känslighetsetiketter för kryptering och behörigheter som följer med filer och e-post.
@@ -171,7 +171,7 @@ Här är konfigurationsresultatet för distansarbetare i organisationen om du an
  
 Här är konfigurationsresultatet för distansarbetare i organisationen om du använder helt molnbaserad identitet.
 
-![Konfiguration för distansarbetare i en organisation med helt molnbaserad identitet](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![Slutlig konfiguration för distansarbetare i en organisation med helt molnbaserad identitet](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## <a name="phase-2-drive-user-adoption-for-remote-workers"></a>Fas 2: Driva på distansarbetares användning
 
@@ -185,26 +185,26 @@ Utbilda distansarbetare i följande:
 - Användningen av enheter och hur principer kan användas för att blockera åtkomsten för enheter som inte följer standard.
 - Användningen av tillåtna appar och hur Intune-apprinciper kan användas för att blockera appar.
 - Windows 10 Enterprise-säkerhetsfunktioner.
-- Hur Outlook ska användas för e-post och kalenderfunktioner.
-- Hur [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) ska användas för chatt, videobaserade konferenser, dokumentdelning och trådade konversationer.
-- Hur SharePoint-gruppwebbplatser eller -kommunikationswebbplatser och OneDrive-mappar ska användas för att bläddra bland filer i en användares bibliotek och sådana som tillhör en grupp.
-- Hur känslighetsetiketter ska användas och tillämpas för filer som innehåller känsliga eller strikt reglerade data, för båda lokala och onlineversioner av filer.
+- Använda Outlook för e-post och kalenderfunktioner.
+- Använda [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) för chatt, videobaserade konferenser, dokumentdelning och trådade konversationer.
+- Använda SharePoint-gruppwebbplatser eller -kommunikationswebbplatser och OneDrive-mappar för att bläddra bland filer i en användares bibliotek och sådana som tillhör en grupp.
+- Använda och tillämpa känslighetsetiketter för filer som innehåller känsliga eller strikt reglerade data, för både lokala och onlineversioner av filer.
 
-I den här utbildningen ska det ingå praktiska övningar så att dina elever kan uppleva funktionerna och deras resultat.
+I den här utbildningen ska det ingå praktiska övningar så att dina elever kan prova funktionerna och se deras resultat.
 
 ### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-worker-feedback"></a>Steg 2: Utföra regelbundna granskningar av användning och hantera feedback för medarbetare
 
 I veckorna efter utbildningen:
 
-- Snabbt hantera feedback för distansarbetare och finjustera principer och konfigurationer.
-- Analysera användning för team, SharePoint-webbplatser, och OneDrive-mappar och jämföra den med användarförväntningar.
+- Snabbt hantera feedback från distansarbetare och finjustera principer och konfigurationer.
+- Analysera användning av Teams, SharePoint-webbplatser och OneDrive-mappar samt jämföra med förväntad användning.
 - Kontrollera att känsliga eller strikt reglerade filer har etiketterats korrekt med lämplig känslighetsetikett.
 
-Utbilda dina användare efter behov.
+Vidareutbilda dina användare efter behov.
 
 ### <a name="user-adoption-results"></a>Användningsresultat
 
-Dina distansarbetare kan använda sina Windows 10 Enterprise-enheter eller andra enheter och Office 365 ProPlus för att komma åt och arbeta med delade Microsoft 365 Enterprise-molntjänster och -resurser i en säker miljö, där de möts, skapar och samarbetar i realtid.
+Dina distansarbetare kan använda sina Windows 10 Enterprise-enheter eller andra enheter och Office 365 ProPlus för att komma åt och arbeta med delade Microsoft 365 Enterprise-molntjänster och -resurser i en säker miljö där de möts, skapar och samarbetar i realtid.
 
 ## <a name="see-also"></a>Se även
 
