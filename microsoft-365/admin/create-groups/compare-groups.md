@@ -1,8 +1,7 @@
 ---
 title: Jämföra grupper i Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Lär dig mer om de typer av grupper som du kan använda i Office 365.
-ms.openlocfilehash: 5b8a3a7859a510a07b579f3b1da255e555d6ae1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42811912"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894605"
 ---
 # <a name="compare-groups"></a>Jämföra grupper
 
@@ -33,15 +32,15 @@ I avsnittet **Grupper** i administrationscentret för Office 365 kan du skapa oc
 
 - **Office 365-grupper** används för samarbete mellan användare, både inom och utanför företaget.
 - **Distributionsgrupper** används för att skicka aviseringar till en grupp användare.
-- **Säkerhetsgrupper** används för att bevilja åtkomst till SharePoint-resurser.
-- **E-postaktiverade säkerhetsgrupper** används för att bevilja åtkomst till SharePoint-resurser och skicka e-postmeddelanden till dessa användare.
+- **Säkerhetsgrupper** används för att bevilja åtkomst till resurser som SharePoint-webbplatser.
+- **E-postaktiverade säkerhetsgrupper** används för att bevilja åtkomst till resurser som SharePoint och för att skicka e-postmeddelanden till dessa användare.
 - **Delade postlådor** används när flera personer behöver åtkomst till samma postlåda, t. ex. företagsinformation och supportens e-postadress.
 
 ## <a name="office-365-groups"></a>Office 365-grupper
 
 Office 365-grupper används för samarbete mellan användare, både inom och utanför företaget. Med varje Office 365-grupp får medlemmarna en grupp e-post och en delad arbetsyta för konversationer, filer och kalenderhändelser samt en planerare.
 
-Du kan lägga till användare utanför företaget i en grupp så länge som denna har [Aktiverats av administratören](manage-guest-access-in-groups.md). Du kan också tillåta externa avsändare att skicka e-post till gruppens e-postadress.
+Du kan lägga till personer utanför organisationen i en grupp så länge som detta har [aktiverats av administratören](manage-guest-access-in-groups.md). Du kan också tillåta externa avsändare att skicka e-post till gruppens e-postadress.
 
 Office 365-grupper kan vara [konfigurerade för dynamiskt medlemskap i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), så att gruppmedlemmarna kan läggas till eller tas bort automatiskt utifrån användarattribut, till exempel avdelning, plats, befattning osv.
 
@@ -77,7 +76,7 @@ Delade postlådor kan ta emot externa e-postmeddelanden om administratören har 
 
 Användare som har behörighet till gruppens postlåda kan skicka som eller skicka för postlådans e-postadress om administratören har gett dig behörighet att göra det. Det här är särskilt användbart för postlådor i hjälp och support eftersom användare kan skicka e-post från "contoso support" eller "Byggnad As reception".
 
-Det är för närvarande inte möjligt att migrera en delad postlåda till en Office 365-grupp. Finns det något du önskar? Berätta för oss. **[Rösta här](https://go.microsoft.com/fwlink/?linkid=871518)**
+Det är för närvarande inte möjligt att migrera en delad postlåda till en Office 365-grupp. Finns det något du önskar? Berätta för oss. **[Rösta här](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
