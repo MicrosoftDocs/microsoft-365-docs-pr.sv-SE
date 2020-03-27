@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959234"
+ms.locfileid: "42978272"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs de vanliga rekommenderade principerna för att skydda åtkomsten till molntjänster, inklusive lokala program som publiceras med Azure AD Application Proxy. 
@@ -41,7 +41,7 @@ Användning av multifaktorautentisering rekommenderas innan du registrerar enhet
 För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implementerar originalprinciperna i den ordning som anges i den här tabellen. MFA:s politik för känsligt och starkt reglerat skydd kan dock genomföras när som helst.
 
 
-|Skyddsnivå|Politik|Mer information|
+|Skyddsnivå|Politik|Läs mer|
 |:---------------|:-------|:----------------|
 |**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Blockera klienter som inte stöder modern autentisering](#block-clients-that-dont-support-modern-authentication)|Klienter som inte använder modern autentisering kan kringgå regler för villkorlig åtkomst, så det är viktigt att blockera dessa|
@@ -90,7 +90,7 @@ Så här skapar du en ny princip för villkorlig åtkomst:
 
 **Uppdrag**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Användare och grupper|Inkluderar|Välj användare och grupper – Välj specifik säkerhetsgrupp som innehåller riktade användare|Börja med säkerhetsgrupp inklusive pilotanvändare|
 ||Utesluta|Säkerhetsgrupp för undantag. tjänstkonton (appidentiteter)|Medlemskapet ändras vid behov tillfälligt|
@@ -102,7 +102,7 @@ Så här skapar du en ny princip för villkorlig åtkomst:
 
 Använd inställningarna baserat på den skyddsnivå du riktar dig till.
 
-|Egenskap|Skyddsnivå|Värden|Kommentar|
+|Egenskap|Skyddsnivå|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Risknivå|Baslinje|Hög, medelhög|Kontrollera båda|
 | |Känslig|Hög, medelhög, låg|Kontrollera alla tre|
@@ -110,7 +110,7 @@ Använd inställningarna baserat på den skyddsnivå du riktar dig till.
 
 **Åtkomstkontroller**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Bevilja|Bevilja åtkomst|Sant|Markerade|
 ||Kräv MFA|Sant|Check|
@@ -137,7 +137,7 @@ I följande tabeller beskrivs de principinställningar för villkorlig åtkomst 
 
 **Uppdrag**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Användare och grupper|Inkluderar|Välj användare och grupper – Välj specifik säkerhetsgrupp som innehåller riktade användare|Börja med säkerhetsgrupp inklusive pilotanvändare|
 ||Utesluta|Säkerhetsgrupp för undantag. tjänstkonton (appidentiteter)|Medlemskap ändrat vid behov tillfälligt|
@@ -147,7 +147,7 @@ I följande tabeller beskrivs de principinställningar för villkorlig åtkomst 
 
 **Åtkomstkontroller**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Bevilja|Blockera åtkomst|Sant|Markerade|
 ||Kräv MFA|Falska||
@@ -168,15 +168,15 @@ Logga in på [Microsofthttps://portal.azure.com) Azure-portalen (](https://porta
 
 **Uppdrag**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Användare|Inkluderar|Alla användare|Markerade|
 ||Utesluta|Ingen||
-|Villkor|Användarrisk|High|Markerade|
+|Villkor|Användarrisk|Högsta|Markerade|
 
 **Kontroller**
 
-| Type (Typ) | Egenskaper | Värden                  | Kommentar |
+| Type (Typ) | Egenskaper | Värden                  | Anteckningar |
 |:-----|:-----------|:------------------------|:------|
 |      | Access     | Tillåt åtkomst            | Sant  |
 |      | Access     | Kräv lösenordsändring | Sant  |
@@ -199,7 +199,7 @@ Om du vill se de specifika rekommendationerna för varje konfigurationsnivå och
 
 Med hjälp av principerna i konfigurationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md)mappas nivåerna För baslinje och känsligt skydd noggrant med de förbättrade dataskyddsinställningarna på nivå 2. Den starkt reglerade skyddsnivån mappar nära till nivå 3-inställningarna för högt dataskydd på nivå 3.
 
-|Skyddsnivå |Princip för appskydd  |Mer information  |
+|Skyddsnivå |Princip för appskydd  |Läs mer  |
 |---------|---------|---------|
 |Baslinje     | [Förbättrad dataskydd på nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | De principinställningar som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 1.         |
 |Känslig     | [Förbättrad dataskydd på nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | De principinställningar som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 1.        |
@@ -217,7 +217,7 @@ Med villkorlig åtkomst kan organisationer begränsa åtkomsten till godkända (
    > [!NOTE]
    > Den här principen säkerställer att mobila användare kan komma åt alla Office-slutpunkter med hjälp av tillämpliga appar.
 
-2. Om du aktiverar mobil åtkomst till Exchange Online implementerar du [Block ActiveSync-klienter] (secure-email-recommended-policies.md#block-activesync-clients), vilket förhindrar att Exchange ActiveSync-klienter utnyttjar grundläggande autentisering från att ansluta till Exchange Online.
+2. Om du aktiverar mobil åtkomst till Exchange Online implementerar du [Block ActiveSync-klienter](secure-email-recommended-policies.md#block-activesync-clients), vilket förhindrar att Exchange ActiveSync-klienter utnyttjar grundläggande autentisering från att ansluta till Exchange Online.
 
    Ovanstående principer utnyttjar bidragskontrollerna [Kräv godkänd klientapp](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) och [Kräv appskyddsprincip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
@@ -242,7 +242,7 @@ Följande inställningar rekommenderas för Windows 10.
 
 **Enhetens hälsa: Utvärderingsregler för Windows Health Attestation Service**
 
-|Egenskaper|Värden|Kommentar|
+|Egenskaper|Värden|Anteckningar|
 |:---------|:-----|:----|
 |Kräv BitLocker|Kräver||
 |Kräv säker start aktiveras på enheten|Kräver||
@@ -251,7 +251,7 @@ Följande inställningar rekommenderas för Windows 10.
 
 **Enhetsegenskaper**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Version av operativsystemet|Alla|Inte konfigurerad||
 
@@ -259,7 +259,7 @@ För att alla ovanstående principer ska anses distribuerade måste de vara inri
 
 **Systemsäkerhet**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Lösenord|Kräv ett lösenord för att låsa upp mobila enheter|Kräver||
 ||Enkla lösenord|Blockera||
@@ -280,7 +280,7 @@ För att alla ovanstående principer ska anses distribuerade måste de vara inri
 
 **Microsoft Defender ATP**
 
-|Type (Typ)|Egenskaper|Värden|Kommentar|
+|Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Regler för avancerat hotskydd i Microsoft Defender|Kräv att enheten är på eller under maskinriskpoängen|Medium||
 

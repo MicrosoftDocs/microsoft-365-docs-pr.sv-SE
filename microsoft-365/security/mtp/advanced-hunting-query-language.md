@@ -17,17 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929002"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982017"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig det avancerade jaktfrågespråket
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 Avancerad jakt baseras på [Kusto-frågespråket](https://docs.microsoft.com/azure/kusto/query/). Du kan använda Kusto-syntax och operatorer för att konstruera frågor som hittar information i [schemat](advanced-hunting-schema-tables.md) som är särskilt strukturerat för avancerad jakt. Om du vill förstå dessa begrepp bättre kör du din första fråga.
 
@@ -57,8 +57,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 Så här kommer det att se ut i avancerad jakt.
 
-![Bild av avancerad jaktfråga för Microsoft Threat Protection](../../media/advanced-hunting-query-example.png)
+![Bild av avancerad jaktfråga för Microsoft Threat Protection](../../media/advanced-hunting-query-example-2.png)
 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Beskriv frågan och ange vilka tabeller som ska sökas
 En kort kommentar har lagts till i början av frågan för att beskriva vad den är till för. Detta hjälper om du senare bestämmer dig för att spara frågan och dela den med andra i organisationen. 
 
 ```kusto
@@ -70,12 +71,14 @@ Själva frågan börjar vanligtvis med ett tabellnamn följt av en`|`serie eleme
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+### <a name="set-the-time-range"></a>Ange tidsintervall
 Det första rörelementet är ett tidsfilter som har scopets till de föregående sju dagarna. Om du håller tidsintervallet så smalt som möjligt säkerställer du att frågor presterar bra, returnerar hanterbara resultat och inte time out.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
+### <a name="check-specific-processes"></a>Kontrollera specifika processer
 Tidsintervallet följs omedelbart av en sökning efter processfilnamn som representerar PowerShell-programmet.
 
 ```
@@ -83,20 +86,23 @@ Tidsintervallet följs omedelbart av en sökning efter processfilnamn som repres
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
+### <a name="search-for-specific-command-strings"></a>Sök efter specifika kommandosträngar
 Därefter söker frågan efter strängar på kommandorader som vanligtvis används för att hämta filer med PowerShell.
 
 ```kusto
 // Suspicious commands
 | where ProcessCommandLine has_any("WebClient",
- "DownloadFile",
- "DownloadData",
- "DownloadString",
-"WebRequest",
-"Shellcode",
-"http",
-"https")
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
 ```
-Nu när frågan tydligt identifierar de data du vill hitta kan du lägga till element som definierar hur resultaten ser ut. `project`returnerar specifika `top` kolumner och begränsar antalet resultat, vilket säkerställer att resultaten är välformaterade och någorlunda stora och lätta att bearbeta.
+
+### <a name="customize-result-columns-and-length"></a>Anpassa resultatkolumner och längd 
+Nu när frågan tydligt identifierar de data du vill hitta kan du lägga till element som definierar hur resultaten ser ut. `project`returnerar specifika `top` kolumner och begränsar antalet resultat. Dessa operatörer hjälper till att säkerställa att resultaten är välformaterade och någorlunda stora och lätta att bearbeta.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -104,9 +110,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Klicka på **Kör fråga** om du vill se resultatet. Välj ikonen expandera längst upp till höger i frågeredigeraren för att fokusera på jaktfrågan och resultaten.
+Klicka på **Kör fråga** om du vill se resultatet. Välj ikonen expandera längst upp till höger i frågeredigeraren för att fokusera på jaktfrågan och resultaten. 
 
 ![Bild av utöka kontrollen i den avancerade jaktfråge redigeraren](../../media/advanced-hunting-expand.png)
+
+>[!TIP]
+>Du kan visa frågeresultat som diagram och snabbt justera filter. Om du vill ha vägledning [kan du läsa om hur du arbetar med frågeresultat](advanced-hunting-query-results.md)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>Lär dig vanliga frågeoperatorer för avancerad jakt
 
