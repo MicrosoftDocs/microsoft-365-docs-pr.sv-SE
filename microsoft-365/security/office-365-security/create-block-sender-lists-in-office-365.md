@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Administratörer kan lära sig mer om de tillgängliga alternativen i Office 365 och EOP för att blockera inkommande meddelanden.
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893868"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033428"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Skapa blockerade avsändningslistor i Office 365
 
@@ -30,12 +30,12 @@ Den bästa metoden för att blockera avsändare varierar beroende på omfattning
 
 2. Blockerade avsändande listor eller blockerade domänlistor (policyer mot skräppost)
 
-3. Mai flödesregler
+3. Regler för e-postflöde
 
 4. IP-blockeringslistan (anslutningsfiltrering)
 
 > [!NOTE]
-> Även om du kan använda organisationsomfattande blockinställningar för att åtgärda falska negativ (missat skräppost), bör du också skicka dessa meddelanden till Microsoft för analys. Om du hanterar falska negativ genom att använda blockeringslistor ökar dina administrativa kostnader avsevärt. Om du använder blockeringslistor för att avleda missade skräppost måste du behålla avsnittet för att [skicka in skräppost-, icke-skräppost- och nätfiskebedrägerimeddelanden till Microsoft för analys](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), redo.
+> Även om du kan använda organisationsomfattande blockinställningar för att åtgärda falska negativ (missat skräppost), bör du också skicka dessa meddelanden till Microsoft för analys. Om du hanterar falska negativ genom att använda blockeringslistor ökar dina administrativa kostnader avsevärt. Om du använder blockeringslistor för att avleda missade skräppost måste du hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) redo.
 
 Däremot har du också flera alternativ för att alltid tillåta e-post från specifika källor med hjälp av _säkra avsändarelistor_. Mer information finns [i Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
 
@@ -50,7 +50,7 @@ När meddelanden har blockerats på grund av en användares lista Blockerade avs
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Använda blockerade avsändarelistor eller blockerade domänlistor
 
-När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 Den maximala gränsen för dessa listor är cirka 1000 poster. även om du bara kan ange 30 poster i portalen. Du måste använda PowerShell för att lägga till fler än 30 poster.
 

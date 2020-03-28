@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978272"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022927"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs de vanliga rekommenderade principerna för att skydda åtkomsten till molntjänster, inklusive lokala program som publiceras med Azure AD Application Proxy. 
@@ -225,18 +225,22 @@ Med villkorlig åtkomst kan organisationer begränsa åtkomsten till godkända (
 
 ## <a name="define-device-compliance-policies"></a>Definiera principer för enhetsefterlevnad
 
-Principer för enhetsefterlevnad definierar de krav som enheter måste följa för att markeras som kompatibla. Skapa Intune-principer för enhetsefterlevnad från Azure-portalen. 
+Principer för enhetsefterlevnad definierar de krav som enheter måste följa för att markeras som kompatibla. Skapa Intune-principer för enhetsefterlevnad från administrationscentret för Microsoft Slutpunktshanteraren.
 
 Skapa en princip för varje plattform:
-- Android
-- Android-företag
-- Ios
+- Administratör för Android-enheter
+- Android Företag
+- iOS/iPadOS
 - Macos
 - Windows Phone 8.1
 - Windows 8.1 och senare
 - Windows 10 och senare
 
-Om du vill skapa principer för enhetsefterlevnad loggar du in på Microsoft Azure-portalen med dina administrationsuppgifter och navigerar sedan till **Intune > Enhetsefterlevnad**. Välj **Skapa princip**.
+Om du vill skapa principer för enhetsefterlevnad loggar du in på [Administrationscentret för Microsoft Slutpunktshanteraren](https://go.microsoft.com/fwlink/?linkid=2109431) med dina administratörsautentiseringsuppgifter och navigerar sedan till principer för**Policies** > **enhetsefterlevnad** > . **Devices** Välj **Skapa princip**.
+
+För att enhetsefterlevnadsprinciper ska kunna distribueras måste de tilldelas användargrupper. Du tilldelar en princip när du har skapat och sparat den. Välj principen i administrationscentret och välj sedan **Tilldelningar**. När du har valt de grupper som du vill ta emot principen väljer du **Spara** för att spara grupptilldelningen och distribuera principen.
+
+Stegvis vägledning om hur du skapar efterlevnadsprinciper i Intune finns [i Skapa en efterlevnadsprincip i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) i Intune-dokumentationen.
 
 Följande inställningar rekommenderas för Windows 10.
 
@@ -255,8 +259,6 @@ Följande inställningar rekommenderas för Windows 10.
 |:---|:---------|:-----|:----|
 |Version av operativsystemet|Alla|Inte konfigurerad||
 
-För att alla ovanstående principer ska anses distribuerade måste de vara inriktade på användargrupper. Du kan göra detta genom att skapa principen (på Spara) eller senare genom att välja **Hantera distribution** i avsnittet **Princip** (samma nivå som Lägg till).
-
 **Systemsäkerhet**
 
 |Type (Typ)|Egenskaper|Värden|Anteckningar|
@@ -273,9 +275,9 @@ För att alla ovanstående principer ska anses distribuerade måste de vara inri
 |Enhetssäkerhet|Brandvägg|Kräver||
 ||Antivirus|Kräver||
 ||Antispyware|Kräver|Den här inställningen kräver en antispionlösning som är registrerad hos Windows Security Center|
-|Försvarare|Windows Defender Antimalware|Kräver||
-||Minsta version för Windows Defender Antimalware||Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar versioner högst fem bakom från den senaste versionen|
-||Windows Defender Antimalware-signatur uppdaterad|Kräver||
+|Försvarare|Microsoft Defender Antimalware|Kräver||
+||Microsoft Defender Antimalware minsta version||Stöds endast för Windows 10-skrivbordet. Microsoft rekommenderar versioner högst fem bakom från den senaste versionen|
+||Microsoft Defender Antimalware signatur uppdaterad|Kräver||
 ||Realtidsskydd|Kräver|Stöds endast för Windows 10-skrivbordet|
 
 **Microsoft Defender ATP**
@@ -283,6 +285,7 @@ För att alla ovanstående principer ska anses distribuerade måste de vara inri
 |Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
 |Regler för avancerat hotskydd i Microsoft Defender|Kräv att enheten är på eller under maskinriskpoängen|Medium||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Kräv kompatibla datorer (men inte kompatibla telefoner och surfplattor)
 Innan du lägger till en princip för att kräva kompatibla datorer måste du registrera enheter för hantering i Intune. Användning av multifaktorautentisering rekommenderas innan du registrerar enheter i Intune för att garantera att enheten är i den avsedda användarens ägo. 

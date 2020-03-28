@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Introducerar säkerhetstips för e-postmeddelanden som filtrerats av skräppostfiltret EOP och Office 365.
-ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895197"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032822"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Säkerhetstips i e-postmeddelanden i Office 365
 
@@ -58,6 +58,6 @@ Säkerhetstipset – ett färgkodat meddelande – varnar dig om potentiellt ska
 
 ## <a name="working-with-safety-tips"></a>Arbeta med säkerhetstips
 
-Säkerhetstips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden kommer att få ett. Office 365-administratörer kan inaktivera säkerhetstips för andra e-postklienter, till exempel Outlook. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+Säkerhetstips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden kommer att få ett. Office 365-administratörer kan inaktivera säkerhetstips för andra e-postklienter, till exempel Outlook. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
-Om du inte håller med om hur Office 365 och EOP kategoriserade ett meddelande (det vill säga det är inte skräppost eller inte legitimt) kan du skicka meddelandena för analys för att göra din upplevelse bättre. Mer information finns [i Rapportera skräppost och nätfiskebedrägerier i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Du kan också klicka på länken Feedback i säkerhetstipset för att skicka kommentarer direkt till Microsoft för att hjälpa oss att förbättra.
+Om du inte håller med om hur EOP kategoriserade ett meddelande (det vill säga meddelandet är inte skräppost eller om det borde ha markerats som skräppost) kan du skicka meddelandena till Microsoft för analys för att göra din upplevelse bättre. Instruktioner finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md). Du kan också klicka på länken Feedback i säkerhetstipset för att skicka kommentarer direkt till Microsoft för att hjälpa oss att förbättra.

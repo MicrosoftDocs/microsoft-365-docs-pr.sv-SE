@@ -1,5 +1,5 @@
 ---
-title: Referensprinciper, praxis och riktlinjer
+title: Referenspolicyer, praxis och riktlinjer
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,82 +15,82 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft har utvecklat olika policyer, procedurer och antagit flera branschbästa metoder för att skydda våra användare från kränkande, oönskade eller skadliga e-postmeddelanden.
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Microsoft har utvecklat olika policyer, procedurer och antagit flera metodtips för branschen för att skydda våra användare från stötande, oönskad eller skadlig e-post.
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42807941"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033752"
 ---
-# <a name="reference-policies-practices-and-guidelines"></a>Referens: Principer, praxis och riktlinjer
+# <a name="reference-policies-practices-and-guidelines"></a>Referens: Policyer, praxis och riktlinjer
 
-Microsoft är dedikerade till att ge den mest betrodda användarupplevelsen på webben. Därför har Microsoft utvecklat olika policyer, procedurer och antagit flera branschbästa metoder för att skydda våra användare från kränkande, oönskade eller skadliga e-postmeddelanden. Avsändare som försöker skicka e-post till Office 365-användare bör se till att de förstår och följer vägledningen i den här artikeln för att hjälpa till i den här insatsen och för att undvika potentiella leveransproblem.
+Microsoft är dedikerade till att ge den mest betrodda användarupplevelsen på webben. Därför har Microsoft utvecklat olika policyer, procedurer och antagit flera branschtips för att skydda våra användare från stötande, oönskade eller skadliga e-postmeddelanden. Avsändare som försöker skicka e-post till Office 365-användare bör se till att de är helt förstå och följer vägledningen i den här artikeln för att hjälpa till i den här insatsen och för att undvika potentiella leveransproblem.
 
-Om du inte följer dessa policyer och riktlinjer kanske det inte är möjligt för vårt supportteam att hjälpa dig. Om du följer de riktlinjer, metoder och policyer som presenteras i den här artikeln och fortfarande har leveransproblem baserat på din sändande IP-adress följer du stegen för att skicka en begäran om avnotering. Instruktioner finns i [Använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Om du inte följer dessa policyer och riktlinjer kanske det inte är möjligt för vårt supportteam att hjälpa dig. Om du följer riktlinjerna, metoderna och policyerna som presenteras i den här artikeln och fortfarande har leveransproblem baserat på din sändande IP-adress följer du stegen för att skicka en begäran om avnotering. Instruktioner finns i [Använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-## <a name="general-microsoft-policies"></a>Allmänna Microsoft-principer
+## <a name="general-microsoft-policies"></a>Allmänna Microsoft-policyer
 
-E-post som skickas till Office 365-användare måste följa alla Microsoft-policyer som styr överföring och användning av Office 365.
+E-post som skickas till Office 365-användare måste följa alla Microsoft-policyer som styr e-postöverföring och användning av Office 365.
 
-- Användarvillkor som gäller för Office 365; i synnerhet förbudet mot att använda tjänsten för att spamma eller distribuera
+- Villkor för tjänster som gäller för Office 365; i synnerhet förbudet mot att använda tjänsten för att spamma eller distribuera skadlig kod
 
-- [Microsoft-tjänsteavtal](https://www.microsoft.com/servicesagreement/)
+- [Avtal om Microsoft-tjänster](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Statliga föreskrifter
 
 E-post som skickas till Office 365-användare måste följa alla tillämpliga lagar och förordningar som styr e-postkommunikation i tillämplig jurisdiktion.
 
-- [CAN-SPAM Act: En efterlevnadguide för företag](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
+- [CAN-SPAM Act: En efterlevnadsguide för företag](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
-- ["Ta bort mig" Svar och ansvar: E Marknadsförare måste hedra "Unsubscribe" Fordringar](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
+- ["Ta bort mig" Svar och ansvar: E Marknadsförare måste Honor "Avsluta prenumerationen" Fordringar](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
 
 ## <a name="technical-guidelines"></a>Tekniska riktlinjer
 
-E-post som skickas till Office 365 bör följa de tillämpliga rekommendationerna i dokumenten nedan (vissa länkar är endast tillgängliga på engelska).
+E-post som skickas till Office 365 bör följa de tillämpliga rekommendationerna i dokumenten nedan (vissa länkar finns endast på engelska).
 
 - [RFC 2505: Anti-Spam rekommendationer för SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
-- [RFC 2920: SMTP-servicetillägg för kommandopipelining](https://www.ietf.org/rfc/rfc2920.txt)
+- [RFC 2920: SMTP-tjänsttillägg för kommando pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-Dessutom måste e-postservrar som ansluter till Office 365 följa följande krav:
+Dessutom måste e-postservrar som ansluter till Office 365 uppfylla följande krav:
 
-- Avsändaren förväntas uppfylla alla tekniska standarder för överföring av E-post på Internet, som publiceras av Internet Society's Internet Engineering Task Force (IETF), inklusive RFC 5321, RFC 5322 och andra.
+- Avsändaren förväntas uppfylla alla tekniska standarder för överföring av e-post på Internet, som publiceras av The Internet Society's Internet Engineering Task Force (IETF), inklusive RFC 5321, RFC 5322 och andra.
 
-- Efter att ha fått en numerisk SMTP-felsvarskod mellan 500 och 599 (även känd som ett permanent svar utan leverans eller NDR) får avsändaren inte försöka överföra meddelandet till mottagaren igen.
+- Efter att ha gett en numerisk SMTP-felsvarskod mellan 500 och 599 (kallas även ett permanent svar än leverans eller NDR) får avsändaren inte försöka skicka meddelandet vidare till mottagaren.
 
-- Efter flera svar som inte har skickats måste avsändaren upphöra med ytterligare försök att skicka e-post till mottagaren.
+- Efter flera svar som inte har levererats måste avsändaren upphöra med ytterligare försök att skicka e-post till mottagaren.
 
 - Meddelanden får inte överföras via osäkra e-postrelä- eller proxyservrar.
 
-- Mekanismen för att avprenumerera, antingen från enskilda listor eller alla listor som finns av avsändaren, måste dokumenteras tydligt och vara lätt för mottagarna att hitta och använda.
+- Mekanismen för avskrivning, antingen från enskilda listor eller alla listor som avsändaren hyser, måste vara tydligt dokumenterad och enkel för mottagarna att hitta och använda.
 
 - Anslutningar från dynamiskt IP-utrymme kanske inte accepteras.
 
-- E-postservrar måste ha giltiga omvänd DNS-poster.
+- E-postservrar måste ha giltiga omvända DNS-poster.
 
-## <a name="reputation-management"></a>Rykte förvaltning
+## <a name="reputation-management"></a>Hantering av anseende
 
-Avsändare, Internetleverantörer och andra tjänsteleverantörer bör aktivt hantera ryktet om dina utgående IP-adresser.
+Avsändare, Internet-leverantörer och andra tjänsteleverantörer bör aktivt hantera ryktet för dina utgående IP-adresser.
 
-## <a name="office-365-limits"></a>Office 365-gränser
+## <a name="office-365-limits"></a>Office 365-begränsningar
 
-Avsändare måste följa Office 365-gränser som anges i [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Avsändare måste följa Office 365-begränsningar som anges i [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
-## <a name="email-delivery-resources-and-organizations"></a>E-postleveransresurser och organisationer
+## <a name="email-delivery-resources-and-organizations"></a>Resurser och organisationer för e-postleverans
 
-Microsoft samarbetar aktivt med branschorganisationer och tjänsteleverantörer för att förbättra internet- och e-postekosystemet. Dessa organisationer har publicerat dokument för bästa praxis som vi stöder och rekommenderar avsändare följer. Detta förbättrar din förmåga att leverera e-post bland flera e-postleverantörer runt om i världen.
+Microsoft arbetar aktivt med branschorgan och tjänsteleverantörer för att förbättra internet- och e-postekosystemet. Dessa organisationer har publicerat dokument med bästa praxis som vi stöder och rekommenderar avsändare att följa. Detta förbättrar din förmåga att leverera e-post bland flera e-postleverantörer runt om i världen.
 
-- [Meddelande Malware Mobile Anti-Abuse Arbetsgrupp](https://www.m3aawg.org/)
+- [Messaging Malware Mobile Anti-Abuse Arbetsgrupp](https://www.m3aawg.org/)
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Koalitionen för &amp; e-postavsändare](https://www.espcoalition.org/)
+- [Koalitionen av &amp; e-postavsändare](https://www.espcoalition.org/)
 
-## <a name="abuse-and-spam-reporting"></a>Missbruk och rapportering av skräppost
+## <a name="abuse-and-spam-reporting"></a>Rapportering av missbruk och skräppost
 
-Om du vill anmäla olaglig, stötande, oönskad e-post eller skadlig e-post kan du [rapportera skräppost och nätfiskebedrägerier i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Att skicka dessa typer av kommunikation är ett brott mot Microsofts policy och lämpliga åtgärder kommer att vidtas i bekräftade rapporter.
+Om du vill rapportera olaglig, stötande, oönskad eller skadlig e-post läser du [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md). Att skicka dessa typer av kommunikation är ett brott mot Microsofts policy, och lämpliga åtgärder kommer att vidtas på bekräftade rapporter.
 
 ## <a name="law-enforcement"></a>Brottsbekämpande
 
-Om du är medlem i brottsbekämpande myndigheter och vill tjäna Microsoft Corporation med juridisk dokumentation om Office 365, eller om du har frågor om juridisk dokumentation som du har skickat till Microsoft, ring (1) (425) 722-1299.
+Om du är medlem i polisen och vill betjäna Microsoft Corporation med juridisk dokumentation om Office 365, eller om du har frågor om juridisk dokumentation som du har skickat till Microsoft, ring (1) (425) 722-1299.

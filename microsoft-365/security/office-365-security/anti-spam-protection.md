@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om inställningarna och filtren mot skräppost som hjälper dig att förhindra skräppost i Exchange Online och Office 365. Får du för mycket skräppost i Office 365? Du kan anpassa dina skräppostfilter och inställningar för skräppost.
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894076"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033476"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Skydd mot skräppost i Office 365
 
@@ -46,7 +46,7 @@ Anti-spam-inställningarna i EOP är gjorda av följande tekniker:
   > [!NOTE]
   > Spoof intelligence använder anslutningsfiltrering för att skapa tillåta och blockera listor över avsändare som förfalskar din e-postdomän. Mer information finns [i Läs mer om falska underrättelser i Office 365](learn-about-spoof-intelligence.md).
 
-- **Skräppostfiltrering (innehållsfiltrering)**: EOP använder spamfiltreringsutslag **Skräppost,** Skräppost med **högt förtroende,** **Massmeddelande,** **Nätfiske e-post** och **nätfiske-e-post med högt förtroende** för att klassificera meddelanden. Du kan konfigurera åtgärderna som ska vidtas baserat på dessa domar och du kan konfigurera meddelandealternativen för slutanvändare för meddelanden som har satts i karantän i stället för levererade. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+- **Skräppostfiltrering (innehållsfiltrering)**: EOP använder spamfiltreringsutslag **Skräppost,** Skräppost med **högt förtroende,** **Massmeddelande,** **Nätfiske e-post** och **nätfiske-e-post med högt förtroende** för att klassificera meddelanden. Du kan konfigurera åtgärderna som ska vidtas baserat på dessa domar och du kan konfigurera meddelandealternativen för slutanvändare för meddelanden som har satts i karantän i stället för levererade. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
   > Som standard är skräppostfiltrering konfigurerad för att skicka meddelanden som har markerats som skräppost till mottagarens skräppostmapp. I hybridmiljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera två regler för e-postflöde (kallas även transportregler) i din lokala Exchange-organisation för att känna igen EOP-skräppostrubrikerna som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -61,7 +61,7 @@ Det är möjligt att bra meddelanden kan identifieras som skräppost (kallas äv
 
 Här är några metodtips som gäller för båda scenarierna:
 
-- Skicka alltid felklassificerade meddelanden till Microsoft. Administratörer kan använda [Submissions Explorer](admin-submission.md)eller så kan användare rapportera meddelanden med hjälp av [tillägget Använd rapportmeddelande](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Skicka alltid felklassificerade meddelanden till Microsoft. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Undersök rubrikerna mot skräppost:** Dessa värden kommer att berätta varför ett meddelande har markerats som skräppost, eller varför det hoppade över skräppostfiltrering. Mer information finns i [Rubriker för skräppostmeddelande](anti-spam-message-headers.md).
 
@@ -71,19 +71,19 @@ Här är några metodtips som gäller för båda scenarierna:
 
 - **Använd e-postautentisering**: Om du äger en e-postdomän kan du använda DNS för att försäkra att meddelanden från avsändare i den domänen är legitima. Använd alla följande metoder för e-postautentisering för att förhindra skräppost och oönskad förfalskning i EOP:
 
-  - **SPF**: Avsändarprincipram verifierar meddelandets käll-IP-adress mot ägaren till den sändande domänen. En snabb introduktion till SPF och snabbt konfigurera den finns [i Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Om du vill ha en mer ingående förståelse för hur SPF används i Office 365 eller för felsökning eller icke-standarddistributioner, till exempel hybriddistributioner, börjar du med [Hur Office 365 använder SPF (Sender Policy Framework) för att förhindra förfalskning](how-office-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: Avsändarprincipram verifierar meddelandets käll-IP-adress mot ägaren till den sändande domänen. En introduktion till SPF finns i [Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md), där du även kan konfigurera det snabbt. För att få en djupare förståelse av hur Office 365 använder SPF, eller om du vill veta hur du felsöker eller göra icke-standarddistributioner (t.ex. hybriddistributioner), kan du börja med att läsa [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing (Så här använder Office 365 SPF för att förhindra förfalskning)](how-office-365-uses-spf-to-prevent-spoofing.md).
 
   - **DKIM**: DomainKeys Identified Mail lägger till en digital signatur i meddelandehuvudet för meddelanden som skickas från domänen. Information finns i [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Office 365](use-dkim-to-validate-outbound-email.md).
 
   - **DMARC**: Domänbaserad meddelandeautentisering, rapportering och konformance hjälper målej.e-postsystem att avgöra vad du ska göra med meddelanden som misslyckas med SPF- eller DKIM-kontroller och ger en annan förtroendenivå för dina e-postpartner. Mer information finns i [Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md).
 
-- **Kontrollera dina massinställningar för e-post**: Tröskelvärdet för masskompatibla nivåer (BCL) som du konfigurerar i anti-spam-principer avgör om massutskick av e-post (kallas även _grå e-post)_ är markerat som skräppost. PowerShell-inställningen _MarkAsSpamBulkMail_ som som standard bidrar också till resultatet. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+- **Kontrollera dina massinställningar för e-post**: Tröskelvärdet för masskompatibla nivåer (BCL) som du konfigurerar i anti-spam-principer avgör om massutskick av e-post (kallas även _grå e-post)_ är markerat som skräppost. PowerShell-inställningen _MarkAsSpamBulkMail_ som som standard bidrar också till resultatet. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Förhindra leverans av skräppost till Inkorgen
 
 - **Verifiera organisationens inställningar**: Se upp för inställningar som gör att meddelanden kan hoppa över skräppostfiltrering (till exempel om du lägger till din egen domän i listan över tillåtna domäner i anti-spam-principer). Våra rekommenderade inställningar finns i [Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet](recommended-settings-for-eop-and-office365-atp.md) och [Skapa listor över säkra avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
 
-- **Kontrollera att skräppostregeln är aktiverad i användarens postlåda**: Den är aktiverad som standard, men om det inte är meddelanden som markerats som skräppost kan inte flyttas till mappen Skräppost. Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Kontrollera att skräppostregeln är aktiverad i användarens postlåda**: Den är aktiverad som standard, men om det inte är meddelanden som markerats som skräppost kan inte flyttas till mappen Skräppost. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Använd de tillgängliga spärrade avsändarna:** Mer information finns [i Skapa blockerade avsändarelistor i Office 365](create-block-sender-lists-in-office-365.md).
 

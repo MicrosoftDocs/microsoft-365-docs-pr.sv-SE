@@ -2,10 +2,10 @@
 title: Administratörsinlämningar i Office 365, O365-inlagor, office 365-skräppostproblem, O365 falskt negativt, skicka in phish i Office 365, skicka e-post för skanning, misstänkt e-post i Office 365, skanna ett e-postmeddelande, låta Microsoft söka efter phish, låta Microsoft söka efter skräppost, skicka in e-post, skicka e-post, skumma e-post, dålig skådespelare post, misstänkt, opålitlig e-post, rapportera phish e-post till Microsoft, rapportera phish e-post till Microsoft, rapportera skadlig e-post till Microsoft, rapportera bluff e-post till Microsoft, rapportera skadlig kod i e-post till Microsoft, spam e-post i inkorgskontoret 365, virus i e-postkonto 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 08/06/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,19 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Läs om hur du skickar misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, webbadresser och filer från office 365-klienten till Microsoft för skanning.
-ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 539d09f03a8a9c5956f2d1e3584f893b0e4ffbb4
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812261"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033620"
 ---
-# <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Så här skickar du in misstänkt skräppost, phish, URL:er och filer till Microsoft för Office 365-skanning
+# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörsöverföring för att skicka misstänkt skräppost, phish, webbadresser och filer till Microsoft
 
-Administratörer kan skicka e-postmeddelanden med hjälp av fil- eller nätverksmeddelande-ID, webbadresser och filer för skanning av Microsoft i Office 365.
-Avsnittet uppdaterade inlämningar innehåller fortfarande användarrapporterade meddelanden och tillgängliga för alla kunder som använder EOP.
+Om du är administratör i en Office 365-organisation med postlådor i Exchange Online kan du använda portalen Inlämningar i Office 365 Security & Compliance Center för att skicka e-postmeddelanden, webbadresser och bilagor till Microsoft för skanning.
 
 När du skickar ett e-postmeddelande får du information om alla policyer som kan ha tillåtit inkommande e-post till din klientorganisation, samt granskning av eventuella webbadresser och bilagor med posten. Principer som kan ha tillåtit ett e-postmeddelande inkluderar en enskild användares säkra avsänningslista samt principer på klientnivå, till exempel regler för Exchange-e-postflöde (kallas även transportregler).
+
+Andra sätt att skicka e-postmeddelanden, webbadresser och bilagor till Microsoft finns i 
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
+
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill **Submission** gå direkt <https://protection.office.com/reportsubmission>till sidan Inlämning använder du .
+
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering,** **Säkerhetsadministratör**eller **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
+
+- Mer information om hur användare kan skicka meddelanden och filer till Microsoft finns [i Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Så här dirigerar du misstänkt innehåll till Microsoft för Office 365-skanning
 
@@ -66,11 +77,3 @@ Om du vill skicka innehåll till Microsoft klickar du på knappen **Ny inlämnin
 1. Om du vill skicka en fil väljer du **Arkiv** från det utfällbara fönstret och överför filen som du vill skanna.
 
 2. Klicka på knappen **Skicka.**
-
-## <a name="related-topics"></a>Relaterade ämnen
-
-[Office 365 Avancerat hotskyddsplan 2](office-365-ti.md)
-
-[Skydda mot hot i Office 365](protect-against-threats.md)
-
-[Visa rapporter för avancerat hotskydd för Office 365](view-reports-for-atp.md)

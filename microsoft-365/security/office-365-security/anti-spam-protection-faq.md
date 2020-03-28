@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Det här avsnittet innehåller vanliga frågor och svar om skydd mot skräppost. Svar gäller för Microsoft Exchange Online- och Exchange Online Protection (EOP)-kunder.
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894064"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033500"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Skydd mot skräppost i Vanliga frågor om Office 365
 
@@ -42,7 +42,9 @@ A. **För inkommande meddelanden:** Majoriteten av spam raderas via anslutningsf
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>F. Vad är en zero-day spam variant och hur hanteras den av tjänsten?
 
-A. En zero-day spam variant är en första generation, tidigare okänd variant av spam som aldrig har fångats eller analyserats, så våra anti-spam filter ännu inte har någon information tillgänglig för att upptäcka det. Efter att ett zero-day spam-exempel fångas in och analyseras av våra spamanalytiker, om det uppfyller kriterierna för spamklassificering, uppdateras våra anti-spamfilter för att upptäcka det, och det anses inte längre vara "zero-day". **(Obs:** Om du får ett meddelande som kan vara en nolldagsrovariant, för att hjälpa oss att förbättra tjänsten, skicka meddelandet till Microsoft med någon av de metoder som beskrivs i [Skicka spam, icke-spam och phishing-meddelanden till Microsoft för analys](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+A. En zero-day spam variant är en första generation, tidigare okänd variant av spam som aldrig har fångats eller analyserats, så våra anti-spam filter ännu inte har någon information tillgänglig för att upptäcka det. Efter att ett zero-day spam-exempel fångas in och analyseras av våra spamanalytiker, om det uppfyller kriterierna för spamklassificering, uppdateras våra anti-spamfilter för att upptäcka det, och det anses inte längre vara "zero-day".
+
+**Anm.:** Om du får ett meddelande som kan vara en nolldagsrovariant skickar du meddelandet till Microsoft med någon av de metoder som beskrivs i [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>F. Måste jag konfigurera tjänsten för att ge skydd mot skräppost?
 
@@ -54,7 +56,7 @@ Mer information finns i följande avsnitt:
 
 [Konfigurera anti-princip](configure-the-connection-filter-policy.md)
 
-[Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md)
+[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)
 
 [Konfigurera principen för skräppost för utgående](configure-the-outbound-spam-policy.md)
 
@@ -72,7 +74,7 @@ A. Ja, tjänsten har ett URL-filter som söker efter webbadresser i meddelanden.
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>F. Hur kan kunder som använder tjänsten skicka falska negativa (skräppost) och falska positiva (icke-spam) meddelanden till Microsoft?
 
-A. Skräppost och icke-skräppostmeddelanden kan skickas till Microsoft för analys på flera sätt. Mer information finns i [Skicka meddelanden om skräppost, skräppost och nätfiske till Microsoft för analys](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+A. Skräppost och icke-skräppostmeddelanden kan skickas till Microsoft för analys på flera sätt. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>F. Kan jag få skräppostrapporter?
 

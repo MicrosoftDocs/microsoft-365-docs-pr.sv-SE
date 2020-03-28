@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Administratörer kan lära sig mer om tillgängliga alternativ i Office 365 och EOP som gör att inkommande meddelanden kan hoppa över skräppostfiltrering.
-ms.openlocfilehash: 2b7463165bb376655fd7f63ac0bdd79a8eccb617
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f9178dae93f8eb33996d05034d27fceed66edd39
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893856"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033416"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Skapa listor över betrodda avsändare i Office 365
 
@@ -38,9 +38,9 @@ De tillgängliga listorna för säkra avsändare beskrivs i följande lista för
 Regler för e-postflöde ger mest flexibilitet för att säkerställa att endast rätt meddelanden tillåts. Tillåtna avsändare och tillåtna domänlistor i anti-spam-principer är inte lika säkra som IP-listan, eftersom avsändarens e-postdomän enkelt förfalskas. Men IP Allow List utgör också en risk, eftersom e-post från _en_ domän som skickas från den IP-adressen kommer att kringgå skräppostfiltrering.
 
 > [!IMPORTANT]
-> <ul><li>Var försiktig och övervaka *eventuella* undantag som du spam filtrering med hjälp av säkra avsändande listor.</li><li>Även om du kan använda säkra avsänningslistor för att hjälpa till med falska positiva identifieringar (bra e-post markerad som skräppost), bör du betrakta användningen av säkra avsändarelistor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falska positiva identifieringar med hjälp av säkra avsänningslistor, eftersom undantag från skräppostfiltrering kan öppna din organisation för förfalskning och andra attacker. Om du insisterar på att använda säkra avsändande listor för att hantera falska positiva identifieringar måste du vara vaksam och behålla ämnet för att [skicka skräppost, icke-skräppost och nätfiskemeddelanden till Microsoft för analys](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) i klar ordning.</li><li>Om du vill att en domän ska kunna skicka oautentiserade e-postmeddelanden (kringgå skydd mot förfalskning) men inte kringgå kontroller av skräppost och skadlig kod kan du lägga till den i [listan Tillåtentillbehållsbehåll för säker avsändare](walkthrough-spoof-intelligence-insight.md)</li><li>EOP och Outlook granskar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet [Överväganden för massutskick av e-post](#considerations-for-bulk-email) senare i det här avsnittet.</li></ul>
+> <ul><li>Var försiktig och övervaka *eventuella* undantag som du spam filtrering med hjälp av säkra avsändande listor.</li><li>Även om du kan använda säkra avsänningslistor för att hjälpa till med falska positiva identifieringar (bra e-post markerad som skräppost), bör du betrakta användningen av säkra avsändarelistor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falska positiva identifieringar med hjälp av säkra avsänningslistor, eftersom undantag från skräppostfiltrering kan öppna din organisation för förfalskning och andra attacker. Om du insisterar på att använda listor med betrodda avsändare för att hantera falska positiva identifieringar måste du vara vaksam och hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) i redo.</li><li>Om du vill att en domän ska kunna skicka oautentiserade e-postmeddelanden (kringgå skydd mot förfalskning) men inte kringgå kontroller av skräppost och skadlig kod kan du lägga till den i [listan Tillåtentillbehållsbehåll för säker avsändare](walkthrough-spoof-intelligence-insight.md)</li><li>EOP och Outlook granskar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet [Överväganden för massutskick av e-post](#considerations-for-bulk-email) senare i det här avsnittet.</li></ul>
 
-Däremot har du också flera alternativ för att blockera e-post från specifika källor med hjälp av _blockerade avsändarelistor_. Mer information finns [i Skapa blockeringsavsänningslistor i Office 365](create-block-sender-lists-in-office-365.md).
+Däremot har du också flera alternativ för att blockera e-post från specifika källor med hjälp av _blockerade avsändarelistor_. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i Office 365](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Rekommenderas) Använda regler för e-postflöde
 
@@ -71,9 +71,9 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
 
 4. **Åtgärd**: Konfigurera båda dessa åtgärder i regeln:
 
-   A. **Ändra meddelandeegenskaperna** \> **ange skräppostförtroendenivå (SCL)** \> **Bypass-skräppostfiltrering**.
+   a. **Ändra meddelandeegenskaperna** \> **ange skräppostförtroendenivå (SCL)** \> **Bypass-skräppostfiltrering**.
 
-   B. **Ett meddelandehuvud** \> innehåller något av \<dessa **ord** \> \> **Rubriknamn:** CustomHeaderName Header **värde:** \<CustomHeaderValue\>.
+   b. **Ett meddelandehuvud** \> innehåller något av \<dessa **ord** \> \> **Rubriknamn:** CustomHeaderName Header **värde:** \<CustomHeaderValue\>.
 
       Till exempel `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Om du har mer än en domän i regeln kan du anpassa rubriktexten efter behov.
 
@@ -91,7 +91,7 @@ När meddelanden hoppar över skräppostfiltrering på grund av en användares l
 
 Om du inte kan använda e-postflödesregler som tidigare beskrivits är det näst bästa alternativet att lägga till källmeddelandeservern eller källservrarna i IP-listan tillåt i anslutningsfilterprincipen. Mer information finns [i Konfigurera anslutningsfiltrering i Office 365](configure-the-connection-filter-policy.md).
 
-**Anmärkningar:**
+**Anmärkningar**:
 
 - Det är viktigt att du håller antalet tillåtna IP-adresser till ett minimum, så undvik att använda hela IP-adressintervall när det är möjligt.
 

@@ -1,5 +1,5 @@
 ---
-title: Metodtips för konfigurera EOP och Office 365 ATP
+title: Metodtips för att konfigurera EOP och Office 365 ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -11,68 +11,66 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: Följ dessa rekommendationer för bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel.
-ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+description: Följ de här rekommendationerna om bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel.
+ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "42805867"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033440"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Metodtips för konfigurera EOP och Office 365 ATP
+# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Metodtips för att konfigurera EOP och Office 365 ATP
 
-Följ dessa rekommendationer för bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel. Det här avsnittet förutsätter att du redan har slutfört installationen. Om du inte har slutfört EOP-installationen läser du [Konfigurera eOP-tjänsten](set-up-your-eop-service.md).
+Följ de här rekommendationerna om bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel. Det här avsnittet förutsätter att du redan har slutfört installationsprocessen. Om du inte har slutfört EOP-installationen läser du [Konfigurera din EOP-tjänst](set-up-your-eop-service.md).
 
 ## <a name="use-a-test-domain"></a>Använda en testdomän
 
-Vi rekommenderar att du använder en testdomän, underdomän eller lågvolymdomän för att prova servicefunktioner innan du implementerar dem på dina produktionsdomäner med högre volym.
+Vi rekommenderar att du använder en testdomän, underdomän eller lågvolymdomän för att prova tjänstfunktioner innan du implementerar dem på dina produktionsdomäner med högre volym.
 
 ## <a name="synchronize-recipients"></a>Synkronisera mottagare
 
-Om din organisation har befintliga användarkonton i en lokal Active Directory-miljö kan du synkronisera dessa konton till Azure Active Directory i molnet. Användning av katalogsynkronisering rekommenderas. Mer information om fördelarna med att använda katalogsynkronisering och stegen för att konfigurera den finns i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).
+Om din organisation har befintliga användarkonton i en lokal Active Directory-miljö kan du synkronisera dessa konton till Azure Active Directory i molnet. Användning av katalogsynkronisering rekommenderas. Mer information om fördelarna med att använda katalogsynkronisering och stegen för att konfigurera den finns [i Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).
 
 ## <a name="recommended-settings"></a>Rekommenderade inställningar
 
-Vi ger säkerhetsadministratörer möjlighet att anpassa sina säkerhetsinställningar för att tillgodose organisationens behov. Även om det i allmänhet finns två säkerhetsnivåer i EOP och Office 365 ATP som vi rekommenderar: Standard och Strikt. De här inställningarna visas i de [rekommenderade inställningarna för EOP- och Office 365 ATP-säkerhet](recommended-settings-for-eop-and-office365-atp.md).
+Vi ger säkerhetsadministratörer möjlighet att anpassa sina säkerhetsinställningar för att tillgodose organisationens behov. Även om det i regel finns två säkerhetsnivåer i EOP och Office 365 ATP som vi rekommenderar: Standard och Strikt. De här inställningarna visas i [de rekommenderade inställningarna för EOP- och Office 365 ATP-säkerhet](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="miscellaneousnon-policy-settings"></a>Inställningar för diverse/icke-princip
 
 De här inställningarna täcker en rad funktioner som ligger utanför säkerhetsprinciper.
 
-|Namn på säkerhetsfunktioner|Standard|Strikt|Kommentar|
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---------|---------|---------|---------|
 |[Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Ja|Ja||
-|[Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Office 365](use-dkim-to-validate-outbound-email.md)|Ja|Ja||
-|[Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md)|Ja|Ja|Använd action=quarantine för Standard och action=avvisa för Strikt.|
-|Distribuera rapportmeddelandetillägg för att förbättra slutanvändarrapporteringen för misstänkta e-postmeddelanden|Ja|Ja||
-|Schemalägg rapporter om skadlig programvara och skräppost|Ja|Ja||
+|[Använd DKIM för att validera utgående e-post som skickas från din egna domän i Office 365](use-dkim-to-validate-outbound-email.md)|Ja|Ja||
+|[Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md)|Ja|Ja|Använd action=karantän för Standard och action=reject för Strict.|
+|Distribuera tillägg till rapportmeddelande för att förbättra slutanvändarens rapportering av misstänkta e-postmeddelanden|Ja|Ja||
+|Schemalägg rapporter om skadlig kod och skräppost|Ja|Ja||
 |Automatisk vidarebefordran till externa domäner bör inte tillåtas eller övervakas|Ja|Ja||
-|Enhetlig revision bör aktiveras|Ja|Ja||
+|Enhetlig granskning bör aktiveras|Ja|Ja||
 |[IMAP-anslutning till postlåda](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
 |[POP-anslutning till postlåda](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
-|SMTP Autentiserad inlämning till postlåda|Inaktiverad|Inaktiverad||
+|SMTP-autentiserade inlämning till postlåda|Inaktiverad|Inaktiverad||
 |EWS-anslutning till postlåda|Inaktiverad|Inaktiverad||
-|[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgänglig för postlådeanvändare eller e-postanvändare (användarobjekt som returneras av Cmdlet en [get-användare).](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)|
+|[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgänglig för postlådeanvändare eller [e-postanvändare](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) (användarobjekt som returneras av cmdleten Hämta användare).|
 |Använd Spoof Intelligence för att vitlista avsändare när det är möjligt|Ja|Ja||
 |Katalogbaserad kantblockering (DBEB)|Aktiverat|Aktiverat|Domäntyp = Auktoritär|
 |[Konfigurera multifaktorautentisering för alla administratörskonton](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiverat|Aktiverat||
 
 ## <a name="troubleshooting"></a>Felsökning
 
-Felsöka allmänna problem och trender med hjälp av rapporterna i administrationscentret. Hitta enstaka punktspecifika data om ett meddelande med hjälp av meddelandespårningsverktyget. Läs mer om rapportering på [Rapportering och meddelandespårning i Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Läs mer om meddelandespårningsverktyget på [Meddelandespårning i Security & Compliance Center](message-trace-scc.md).
+Felsöka allmänna problem och trender med hjälp av rapporterna i administrationscentret. Hitta en punktspecifika data om ett meddelande med hjälp av meddelandespårningsverktyget. Läs mer om rapportering vid [rapportering och meddelandespårning i Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Läs mer om meddelandespårningsverktyget vid [meddelandespårning i Security & Compliance Center](message-trace-scc.md).
 
-## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>Rapportera falska positiva och falska negativ till Microsoft
+## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Rapportera falska positiva och falska negativ till Microsoft
 
-Administratörer bör skicka falska negativ (spam) och falska positiva (icke-spam) till Microsoft via vår administratör inlagor portal. E-postmeddelanden, filer och webbadresser kan skickas in för att hjälpa administratörer att avgöra varför vi levererade eller inte levererade meddelanden till slutanvändare. Mer information finns i Så här skickar du [misstänkt skräppost, phish, webbadresser och filer till Microsoft för Office 365-skanning](admin-submission.md).
-
-Slutanvändare kan också direkt rapportera falska negativ (spam) och falska positiva (icke-spam) till Microsoft för analys när de inte håller med domar som ges. Mer information finns i [Skicka in meddelanden om skräppost, icke-skräppost och nätfiske till Microsoft för analys](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+För att förbättra skräppostfiltrering i tjänsten för alla, bör du rapportera falska positiva (bra e-post markerad som dålig) och falska negativ (dålig e-post tillåten) till Microsoft för analys. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Skapa regler för e-postflöde
 
-Skapa regler för e-postflöde eller anpassade filter för att uppfylla dina affärsbehov.
+Skapa regler för e-postflöde eller anpassade filter som uppfyller dina affärsbehov.
 
-När du distribuerar en ny regel till produktion väljer du ett av testlägena först för att se regelns effekt. När du är övertygad om att regeln fungerar på det sätt som är avsett ändrar du regelläget för att **framtvinga**.
+När du distribuerar en ny regel till produktion väljer du ett av testlägena först för att se effekten av regeln. När du är övertygad om att regeln fungerar på det sätt som är avsett ändrar du regelläget så att **det framtvingar**.
 
-När du distribuerar nya regler bör du överväga att lägga till ytterligare åtgärd för **generera incidentrapport** för att övervaka regeln i aktion.
+När du distribuerar nya regler bör du överväga att lägga till ytterligare åtgärder **i generera incidentrapport** för att övervaka regeln i praktiken.
 
-I hybridmiljöer där din organisation innehåller både lokalt Exchange och Office 365 bör du tänka på de villkor som du använder i regler för e-postflöde. Om du vill att reglerna ska gälla för hela organisationen måste du använda villkor som är tillgängliga i både lokalt Exchange och Office 365. Även om de flesta förhållanden är tillgängliga i båda miljöerna finns det några som bara är tillgängliga i en eller annan miljö. Läs mer på [Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+I hybridmiljöer där din organisation innehåller både lokala Exchange och Office 365 bör du tänka på de villkor som du använder i reglerna för e-postflöde. Om du vill att reglerna ska gälla för hela organisationen måste du använda villkor som är tillgängliga både i lokala Exchange och i Office 365. De flesta villkor är tillgängliga i båda miljöerna, men det finns några som bara är tillgängliga i den ena eller den andra miljön. Läs mer på [Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).

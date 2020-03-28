@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955583"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033452"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatisk undersökning och svar (AIR) i Office 365
 
@@ -92,9 +92,9 @@ Varje steg på hög nivå innehåller ett antal understeg som utförs för att g
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: Ett användarrapporterat phish-meddelande startar en undersökningsspelbok
 
-Anta att en användare i organisationen får ett e-postmeddelande som de tror är ett nätfiskeförsök. Användaren, som är tränad att rapportera sådana meddelanden, använder [tillägget Rapportmeddelande för Outlook eller Outlook Web App för](enable-the-report-message-add-in.md) att skicka det till Microsoft för analys. Inlämningen skickas också till ditt system och visas i Utforskaren i **vyn Inlämningar** (tidigare kallad **användarrapporterad** vy). Dessutom utlöser det användarrapporterade meddelandet nu en systembaserad informationsavisering, som automatiskt startar undersökningsuppspelningsboken.
+Anta att en användare i organisationen får ett e-postmeddelande som de tror är ett nätfiskeförsök. Användaren, som är tränad att rapportera sådana meddelanden, använder [tillägget Rapportmeddelande](enable-the-report-message-add-in.md) för att skicka det till Microsoft för analys. Inlämningen skickas också till ditt system och visas i Utforskaren i **vyn Inlämningar** (tidigare kallad **användarrapporterad** vy). Dessutom utlöser det användarrapporterade meddelandet nu en systembaserad informationsavisering, som automatiskt startar undersökningsuppspelningsboken.
 
-Under rotutredningsfasen bedöms olika aspekter av e-postmeddelandet. Dessa inkluderar:
+Under rotutredningsfasen bedöms olika aspekter av e-postmeddelandet. De omfattar:
 - En bestämning om vilken typ av hot det kan vara;
 - Vem sände den;
 - Var e-postmeddelandet skickades från (skicka infrastruktur);

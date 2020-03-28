@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365-administratörer kan lära sig att återställa från en ransomware-attack.
-ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42809376"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032882"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Återställ från en ransomware-attack i Office 365
 
@@ -66,7 +66,7 @@ Om de här alternativen inte fungerar kan du prova [Windows Defender Offline](ht
 
 När du har slutfört föregående steg för att ta bort ransomware nyttolasten från din miljö (vilket kommer att hindra ransomware från att kryptera eller ta bort dina filer), kan du använda [Filhistorik](https://support.microsoft.com/help/17128/windows-8-file-history) i Windows 10 och Windows 8.1 eller Systemskydd i Windows 7 för att försöka återställa dina lokala filer och mappar.
 
-**Anmärkningar:**
+**Anmärkningar**:
 
 - Vissa ransomware krypterar eller tar bort de säkerhetskopierade versionerna, så du kan inte använda Filhistorik eller Systemskydd för att återställa filer. Om det händer måste du använda säkerhetskopior på externa enheter eller enheter som inte påverkades av ransomware eller OneDrive enligt beskrivningen i nästa avsnitt.
 
@@ -122,7 +122,7 @@ Om ditt land inte finns med i listan frågar du dina lokala eller federala brott
 
 ### <a name="submit-email-messages-to-microsoft"></a>Skicka e-postmeddelanden till Microsoft
 
-Du kan rapportera nätfiskemeddelanden som innehåller utpressningsartiklar genom att följa instruktionerna i [Skicka skräppost, icke-skräppost och meddelanden om nätfiske till Microsoft för analys](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+Du kan rapportera nätfiskemeddelanden som innehåller utpressningsartiklar med hjälp av någon av flera metoder. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Se även
 

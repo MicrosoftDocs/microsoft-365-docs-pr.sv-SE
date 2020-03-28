@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Vilka är bästa metoderna för säkerhetsinställningar för Exchange Online Protection (EOP) och Advanced Threat Protection (ATP). Vilka är de nuvarande rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vilka extrafunktioner får du om du också använder Advanced Threat Protection (ATP)?
-ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895233"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032858"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet
 
@@ -30,7 +30,7 @@ ms.locfileid: "42895233"
 Även om vi ger säkerhetsadministratörer möjlighet att anpassa sina säkerhetsinställningar finns det två säkerhetsnivåer i EOP och Office 365 ATP som vi rekommenderar: **Standard** och **Strikt**. Varje kunds miljö och behov är olika, men vi tror att dessa nivåer av e-postfiltrering konfigurationer kommer att bidra till att förhindra oönskad e-post från att nå dina anställdas inkorg i de flesta situationer.
 
 > [!IMPORTANT]
-> Skräppostregeln måste aktiveras på en postlåda för att filtrering ska fungera korrekt. Det är aktiverat som standard, men du bör kontrollera det om filtrrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> Skräppostregeln måste aktiveras på en postlåda för att filtrering ska fungera korrekt. Det är aktiverat som standard, men du bör kontrollera det om filtrrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 I det här avsnittet beskrivs de här Microsoft-rekommenderade inställningarna för att skydda dina Office 365-användare.
 
@@ -181,7 +181,7 @@ Spåra inte när användare klickar på säkra länkar|Inaktiverad|Inaktiverad|D
 |Vänta tills URL-skanningen har slutförts innan meddelandet levereras|Aktiverat|Aktiverat||
 |Använda säkra länkar till e-postmeddelanden som skickas inom organisationen|Aktiverat|Aktiverat||
 
-### <a name="safe-attachments"></a>Säkra bilagor
+### <a name="safe-attachments"></a>Säkra bifogade filer
 
 |Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---------|---------|---------|---------|
@@ -190,12 +190,11 @@ Spåra inte när användare klickar på säkra länkar|Inaktiverad|Inaktiverad|D
 |Omdirigera bifogad fil vid identifiering|Aktiverat|Aktiverat|Omdirigera till e-postadress för en säkerhetsadministratör som vet hur man tar reda på om den bifogade filen är skadlig eller inte|
 |ATP Säkra bilagor svar om malware skanning efter bilagor time out eller fel inträffar|Aktiverat|Aktiverat||
 
-
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - Letar du efter metodtips med **Exchange Mail Flow / Exchange Transport Regler?** Se [den här artikeln](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) för mer information.
 
-- Skicka misstänkta e-postmeddelanden, misstänkt skräppost, phish eller webbadresser till Microsoft för sökning. Använd anvisningarna **för administratörsbidrag** i [den här artikeln](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+- Administratörer och användare kan skicka falska positiva identifieringar (bra e-post markerad som dålig) och falska negativ (dålig e-post tillåten) till Microsoft för analys. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Använd de här länkarna för information om hur **du konfigurerar** [eOP-tjänsten](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)och **konfigurerar** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (Glöm inte att se de användbara anvisningarna i '[Skydda mot hot i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)'.)
 

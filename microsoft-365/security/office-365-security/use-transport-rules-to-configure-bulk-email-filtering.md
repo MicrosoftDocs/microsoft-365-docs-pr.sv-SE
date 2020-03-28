@@ -15,16 +15,16 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du använder regler för e-postflöde i Exchange Online Protection för massfiltrering av e-post.
-ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895053"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033644"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Använda regler för e-postflöde för att filtrera massutskick av e-post i Office 365
 
-Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att skanna inkommande meddelanden för skräppost och massutskick (kallas även grå e-post). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att skanna inkommande meddelanden för skräppost och massutskick (kallas även grå e-post). Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 Om du vill att fler alternativ ska filtrera massutskick kan du skapa regler för e-postflöde (kallas även transportregler) för att söka efter textmönster eller fraser som ofta finns i massutskick och markera dessa meddelanden som skräppost. Mer information om massutskick finns i Vad är skillnaden mellan [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md)skräppost [och massmeddelande?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
@@ -36,7 +36,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
 - Information om hur du öppnar EAC i Exchange Online finns [i Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående Exchange Online Protection PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Mer information om regler för e-postflöde i Exchange Online och fristående EOP finns i följande avsnitt:
 
@@ -66,7 +66,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
    - **Använd den här regeln om:** Konfigurera någon av följande inställningar för att söka efter innehåll i meddelanden med reguljära uttryck (RegEx) eller ord eller fraser:
 
-     - **Ämnet eller** \> **brödtexten eller brödtexten matchar dessa textmönster**: Ange ord eller **fraser** som visas anger du ett av följande värden, klickar på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepar så många gånger som behövs.
+     - **Ämnet eller** \> **brödtexten eller brödtexten matchar dessa textmönster:** Ange ett av följande värden i dialogrutan Ange ord eller **fraser** som visas, klicka på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepa tills du har angett alla värden.
 
        - `If you are unable to view the content of this email\, please`
 
@@ -96,7 +96,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
        När du är klar klickar du på **OK**.
 
-     - **Ämnet eller brödtexten** \> **eller brödtexten innehåller något av dessa ord:** Ange **ord eller fraser** som visas, ange något av följande värden, klicka på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepa så många gånger som behövs.
+     - **Ämnet eller** \> **brödtexten eller brödtexten innehåller något av dessa ord:** Ange ett av följande värden i dialogrutan Ange ord eller **fraser** som visas, klicka på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepa tills du har angett alla värden.
 
        - `to change your preferences or unsubscribe`
 
@@ -138,7 +138,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
    När du är klar klickar du på **Spara**
 
-## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>Använda PowerShell för att skapa regler för e-postflöde som filtrerar massutskick av e-post
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>Använda PowerShell för att skapa regler för e-postflöde som filtrerar massutskick av e-post
 
 Använd följande syntax för att skapa en eller båda av reglerna för e-postflöde (reguljära uttryck kontra ord):
 
