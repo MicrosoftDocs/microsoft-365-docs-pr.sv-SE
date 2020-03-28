@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
-ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
+ms.openlocfilehash: eb06db140e4e3c9c245b7689edecf4b0cb86b674
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43022927"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035148"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs de vanliga rekommenderade principerna för att skydda åtkomsten till molntjänster, inklusive lokala program som publiceras med Azure AD Application Proxy. 
@@ -31,8 +31,8 @@ I den här vägledningen beskrivs hur du distribuerar de rekommenderade principe
 
 Följande diagram illustrerar den rekommenderade uppsättningen principer. Den visar vilken skyddsnivå varje princip gäller för och om principerna gäller för datorer eller telefoner och surfplattor, eller båda kategorierna av enheter. Den anger också var dessa principer är konfigurerade.
 
-![Vanliga principer för att konfigurera identitets- och enhetsåtkomst](../media/Identity_device_access_policies_byplan.png)
-
+[![Vanliga principer för att konfigurera identitets- och enhetsåtkomst](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[Se en större version av den här avbildningen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 I resten av den här artikeln beskrivs hur du konfigurerar dessa principer. 
 
@@ -46,8 +46,8 @@ För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implemen
 |**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Blockera klienter som inte stöder modern autentisering](#block-clients-that-dont-support-modern-authentication)|Klienter som inte använder modern autentisering kan kringgå regler för villkorlig åtkomst, så det är viktigt att blockera dessa|
 |        |[Högriskanvändare måste ändra lösenord](#high-risk-users-must-change-password)|Tvingar användare att ändra sitt lösenord när de loggar in om högriskaktivitet upptäcks för deras konto|
-|        |[Definiera principer för appskydd](#define-app-protection-policies)|En princip per plattform (iOS, Android, Windows).|
-|        |[Kräv appar som stöder Intune-appskyddsprinciper](#require-apps-that-support-intune-app-protection-policies)|Tillämpar skydd av mobilappar för telefoner och surfplattor|
+|        |[Tillämpa APP-dataskyddsprinciper](#apply-app-data-protection-policies)|En princip per plattform (iOS, Android, Windows). Intune App Protection Policies (APP) är fördefinierade uppsättningar av skydd, från nivå 1 till nivå 3.|
+|        |[Kräv godkända appar och APP-skydd](#require-approved-apps-and-app-protection)|Tillämpar skydd av mobilappar för telefoner och surfplattor|
 |        |[Definiera principer för enhetsefterlevnad](#define-device-compliance-policies)|En policy för varje plattform|
 |        |[Kräv kompatibla datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Tillämpar Intune-hantering av datorer|
 |**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
@@ -186,14 +186,14 @@ Logga in på [Microsofthttps://portal.azure.com) Azure-portalen (](https://porta
 > [!NOTE]
 > Var noga med att aktivera den här principen genom att välja **På**. Överväg också att använda verktyget [Vad händer om](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) för att testa principen
 
-## <a name="define-app-protection-policies"></a>Definiera principer för appskydd
+## <a name="apply-app-data-protection-policies"></a>Tillämpa APP-dataskyddsprinciper
 App-principer (APP) definierar vilka appar som är tillåtna och vilka åtgärder de kan vidta med organisationens data. De val som finns i APP gör det möjligt för organisationer att skräddarsy skyddet efter sina specifika behov. För vissa kanske det inte är uppenbart vilka principinställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera härdning av mobila klientslutpunkter har Microsoft infört taxonomi för sitt APP-dataskyddsramverk för iOS- och Android-hantering av mobilappar. 
 
 APP-ramverket för dataskydd är indelat i tre olika konfigurationsnivåer, där varje nivå bygger ut den tidigare nivån: 
 
-- Enterprise grundläggande dataskydd säkerställer att appar skyddas med en PIN-kod och krypteras och utför selektiva rensningsåtgärder. För Android-enheter validerar den här nivån Android-enhetsintyg. Det här är en konfiguration på ingångsnivå som ger liknande dataskyddskontroll i Exchange Online-postlådeprinciper och introducerar IT och användarpopulationen till APP. 
-- Enterprise förbättrad dataskydd introducerar APP dataläckage förebyggande mekanismer och minimikrav os. Det här är den konfiguration som gäller för de flesta mobila användare som använder arbets- eller skoldata. 
-- Enterprise high data protection introducerar avancerade dataskyddsmekanismer, förbättrad PIN-konfiguration och APP Mobile Threat Defense. Den här konfigurationen är önskvärd för användare som har åtkomst till högriskdata. 
+- **Enterprise basic data protection** (Nivå 1) säkerställer att appar skyddas med en PIN-kod och krypteras och utför selektiva rensningsåtgärder. För Android-enheter validerar den här nivån Android-enhetsintyg. Det här är en konfiguration på ingångsnivå som ger liknande dataskyddskontroll i Exchange Online-postlådeprinciper och introducerar IT och användarpopulationen till APP. 
+- **Enterprise enhanced data protection** (Level 2) introducerar APP-mekanismer för förebyggande av dataläckage och minimikrav på operativsystem. Det här är den konfiguration som gäller för de flesta mobila användare som använder arbets- eller skoldata. 
+- **Enterprise high data protection** (Level 3) introducerar avancerade dataskyddsmekanismer, förbättrad PIN-konfiguration och APP Mobile Threat Defense. Den här konfigurationen är önskvärd för användare som har åtkomst till högriskdata. 
 
 Om du vill se de specifika rekommendationerna för varje konfigurationsnivå och de minsta appar som måste skyddas läser du [Ramverket för dataskydd med hjälp av appskyddsprinciper](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
 
@@ -206,22 +206,39 @@ Med hjälp av principerna i konfigurationer för [identitets- och enhetsåtkomst
 |Mycket reglerad     | [Företagsnivå 3 högt dataskydd](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | De principinställningar som tillämpas på nivå 3 innehåller alla principinställningar som rekommenderas för nivå 1 och 2 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 2.        |
 
 Om du vill skapa en ny appskyddsprincip för varje plattform (iOS och Android) i Microsoft Endpoint Manager med hjälp av raminställningarna för dataskydd kan administratörer:
-1. Skapa principer manuellt genom att följa stegen i [Hur du skapar och distribuerar appskyddsprinciper med Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
+1. Skapa principer manuellt genom att följa stegen i [Hur du skapar och distribuerar appskyddsprinciper med Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies). 
 2. Importera exempelramverket [För konfiguration av appskyddsprincip JSON](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) med [Intunes PowerShell-skript](https://github.com/microsoftgraph/powershell-intune-samples).
 
-## <a name="require-apps-that-support-intune-app-protection-policies"></a>Kräv appar som stöder Intune-appskyddsprinciper
-Med villkorlig åtkomst kan organisationer begränsa åtkomsten till godkända (moderna autentiseringskompatibla) iOS- och Android-klientappar med Intune-appskyddsprinciper som tillämpas på dem. Flera principer för villkorlig åtkomst krävs, där varje princip riktar sig till alla potentiella användare. Information om hur du skapar dessa principer finns i [Kräv appskyddsprincip för molnappåtkomst med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+## <a name="require-approved-apps-and-app-protection"></a>Kräv godkända appar och APP-skydd
+Om du vill tillämpa appskyddsprinciperna som du har tillämpat i Intune måste du skapa en regel för villkorlig åtkomst för att kräva godkända klientappar och villkoren i APP-skyddsprinciperna. 
 
-1. Följ "Steg 1: Konfigurera en Azure AD-princip för villkorlig åtkomst för Office 365" i [Scenario 1: Office 365-appar kräver godkända appar med appskyddsprinciper](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), vilket gör att Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
+Tillämpa APP-skyddsprinciper kräver en uppsättning principer som beskrivs i i [Kräv appskyddsprincip för molnappåtkomst med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Dessa principer ingår alla i den här rekommenderade uppsättningen konfigurationsprinciper för identitet och åtkomst.
+
+Om du vill skapa regeln för villkorlig åtkomst som kräver godkända appar och APP-skydd följer du "Steg 1: Konfigurera en Azure AD-princip för villkorlig åtkomst för Office 365" i [Scenario 1: Office 365-appar kräver godkända appar med appskyddsprinciper](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), vilket tillåter Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
 
    > [!NOTE]
    > Den här principen säkerställer att mobila användare kan komma åt alla Office-slutpunkter med hjälp av tillämpliga appar.
 
-2. Om du aktiverar mobil åtkomst till Exchange Online implementerar du [Block ActiveSync-klienter](secure-email-recommended-policies.md#block-activesync-clients), vilket förhindrar att Exchange ActiveSync-klienter utnyttjar grundläggande autentisering från att ansluta till Exchange Online.
+Om du aktiverar mobil åtkomst till Exchange Online implementerar du [Block ActiveSync-klienter](secure-email-recommended-policies.md#block-activesync-clients), vilket förhindrar att Exchange ActiveSync-klienter utnyttjar grundläggande autentisering från att ansluta till Exchange Online. Den här principen visas inte i bilden högst upp i den här artikeln. Det beskrivs och avbildas i [Policy rekommendationer för att säkra e-post](secure-email-recommended-policies.md).
 
-   Ovanstående principer utnyttjar bidragskontrollerna [Kräv godkänd klientapp](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) och [Kräv appskyddsprincip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+ Dessa principer utnyttjar bidragskontrollerna [Kräv godkänd klientapp](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) och [Kräv appskyddsprincip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-3. Inaktivera äldre autentisering för andra klientappar på iOS- och Android-enheter. Mer information finns i [Blockera klienter som inte stöder modern autentisering](#block-clients-that-dont-support-modern-authentication).
+Slutligen säkerställer blockering av äldre autentisering för andra klientappar på iOS- och Android-enheter att dessa klienter inte kan kringgå regler för villkorlig åtkomst. Om du följer vägledningen i den här artikeln har du redan konfigurerat [Blockera klienter som inte stöder modern autentisering](#block-clients-that-dont-support-modern-authentication).
+
+<!---
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+
+   > [!NOTE]
+   > This policy ensures mobile users can access all Office endpoints using the applicable apps.
+
+2. If enabling mobile access to Exchange Online, implement [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online.
+
+   The above policies leverage the grant controls [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+
+3. Disable legacy authentication for other client apps on iOS and Android devices. For more information, see [Block clients that don't support modern authentication](#block-clients-that-dont-support-modern-authentication).
+-->
 
 ## <a name="define-device-compliance-policies"></a>Definiera principer för enhetsefterlevnad
 

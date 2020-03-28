@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 052edafa64f2704fb5a6df525b0ad5609ddc72b9
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959200"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035105"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Principrekommendationer för att skydda Teams-chattar, grupper och filer
 
@@ -63,8 +63,8 @@ I den här tabellen visas de principer som måste ses över och länkar till var
 |**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Se till att Teams och beroende tjänster ingår i listan över appar. Team har regler för gäståtkomst och extern åtkomst att ta hänsyn till också, du lär dig mer om dessa senare i den här artikeln.|
 |        |[Blockera klienter som inte stöder modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Teams och beroende tjänster i tilldelningen av molnappar.|
 |        |[Högriskanvändare måste ändra lösenord](identity-access-policies.md#high-risk-users-must-change-password)|Tvingar Teams-användare att ändra sitt lösenord när de loggar in om högriskaktivitet upptäcks för deras konto. Se till att Teams och beroende tjänster ingår i listan över appar.|
-|        |[Definiera principer för appskydd](identity-access-policies.md#define-app-protection-policies)|Se till att Teams och beroende tjänster ingår i listan över appar. Uppdatera principen för varje plattform (iOS, Android, Windows).|
-|        |[Kräv appar som stöder Intune-appskyddsprinciper](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Inkludera teams och beroende tjänster i den här principen.|
+|        |[Tillämpa APP-dataskyddsprinciper](identity-access-policies.md#apply-app-data-protection-policies)|Se till att Teams och beroende tjänster ingår i listan över appar. Uppdatera principen för varje plattform (iOS, Android, Windows).|
+|        |[Kräv godkända appar och APP-skydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Inkludera teams och beroende tjänster i den här principen.|
 |        |[Definiera principer för enhetsefterlevnad](identity-access-policies.md#define-device-compliance-policies)|Inkludera teams och beroende tjänster i den här principen.|
 |        |[Kräv kompatibla datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera teams och beroende tjänster i den här principen.|
 |**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Team har regler för gäståtkomst och extern åtkomst att ta hänsyn till också, du lär dig mer om dessa senare i den här artikeln. Inkludera teams och beroende tjänster i den här principen.|

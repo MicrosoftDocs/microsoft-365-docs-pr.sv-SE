@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811103"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035129"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Principrekommendationer för att skydda SharePoint-webbplatser och -filer
 
@@ -43,17 +43,17 @@ De nya principerna implementerar enhetsskydd för känsligt och starkt reglerat 
 
 I följande tabell visas de principer som du antingen behöver granska och uppdatera eller skapa nya för SharePoint Online. De vanliga principerna länkar till tillhörande konfigurationsinstruktioner i artikeln [Gemensamma identitets- och enhetsåtkomstprinciper.](identity-access-policies.md)
 
-|Skyddsnivå|Politik|Mer information|
+|Skyddsnivå|Politik|Läs mer|
 |:---------------|:-------|:----------------|
-|**Originalplan**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningen av molnappar|
+|**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningen av molnappar|
 |        |[Blockera klienter som inte stöder modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera SharePoint Online i tilldelningen av molnappar|
-|        |[Definiera principer för appskydd](identity-access-policies.md#define-app-protection-policies)|Se till att alla rekommenderade appar ingår i listan över appar. Var noga med att uppdatera principen för varje plattform (iOS, Android, Windows)|
+|        |[Tillämpa APP-dataskyddsprinciper](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar ingår i listan över appar. Var noga med att uppdatera principen för varje plattform (iOS, Android, Windows)|
 |        |[Kräv kompatibla datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera SharePoint Online i listan över molnappar|
 |        |[Använda begränsningar för apppåstvingade i SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Lägg till den här nya principen. Detta talar om för Azure AD att använda de inställningar som anges i SharePoint Online. Den här regeln gäller för alla användare, men påverkar bara åtkomsten till webbplatser som ingår i SharePoint Online-åtkomstprinciper|
-|**Känsliga**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningar av molnappar|
+|**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningar av molnappar|
 |         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inkludera SharePoint Online i listan över molnappar|
 ||[Åtkomstkontrollprincip för SharePoint Online:](#sharepoint-online-access-control-policies)Tillåt åtkomst endast för webbläsare till specifika SharePoint-webbplatser från ohanterade enheter|Detta förhindrar redigering och hämtning av filer. Använda PowerShell för att ange platser|
-|**Starkt reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningen av molnappar|
+|**Mycket reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningen av molnappar|
 ||[Åtkomstkontrollprincip för SharePoint Online:](#use-app-enforced-restrictions-in-sharepoint-online)Blockera åtkomst till specifika SharePoint-webbplatser från ohanterade enheter|Använda PowerShell för att ange platser|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Använda begränsningar för appadvingande i SharePoint Online
@@ -79,7 +79,7 @@ Följande bild är ett exempel på hur åtkomstprinciper för SharePoint-enheter
 
 ![Så här skyddar SharePoint-principer för enhetsåtkomstwebbplatser webbplatser](../media/SharePoint-rules-scenario.png)
 
-I bilden:
+På bilden:
 
 - James tilldelas principer för villkorlig åtkomst som är associerade med baslinjeskydd, men han kan få åtkomst till SharePoint-webbplatser som är associerade med känsligt eller starkt reglerat skydd.
 - Om James kommer åt en känslig eller starkt reglerad webbplats han är medlem i att använda sin dator, är hans tillgång beviljas så länge hans dator är kompatibel.
