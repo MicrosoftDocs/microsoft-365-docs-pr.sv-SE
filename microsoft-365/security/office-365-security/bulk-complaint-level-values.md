@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/23/2019
 audience: ITPro
 ms.topic: article
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om BCL-värden (Bulk bomplain level) i Office 365.
-ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Lär dig mer om BCL-värden (Bulk Compliance Level) i Office 365.
+ms.openlocfilehash: aa839fc1bcab141fe71c76e7f27b4f6bb23048b2
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895399"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030158"
 ---
 # <a name="bulk-complaint-level-bcl-in-office-365"></a>Massklagomålsnivå (BCL) i Office 365
 
@@ -29,7 +29,7 @@ Massutskicksutskick varierar i sina sändningsmönster, skapande av innehåll oc
 
 Om du vill skilja meddelanden från olika typer av massutskick tilldelas inkommande e-post från massutskick till Office 365 (Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor) en massklagomålsnivå (BCL) som läggs till i meddelandet i ett X-header. BCL liknar den nivå för [misstroendevotum (SCL)](spam-confidence-levels.md) som används för att identifiera meddelanden som skräppost. En högre BCL indikerar att ett massmeddelande är mer sannolikt att generera klagomål (och är därför mer sannolikt att vara spam). Microsoft använder både interna och tredje parts källor för att identifiera massutskick och fastställa lämplig BCL.
 
- Skräppostfiltrering markerar meddelanden som **massmeddelande** baserat på BCL-tröskelvärdet (standardvärdet eller ett värde som du anger) och vidtar den angivna åtgärden i meddelandet (standardåtgärden levereras till mottagarens skräppostmapp). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md) och Vad är skillnaden mellan skräppost och [massutskick av e-post?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+ Skräppostfiltrering markerar meddelanden som **massmeddelande** baserat på BCL-tröskelvärdet (standardvärdet eller ett värde som du anger) och vidtar den angivna åtgärden i meddelandet (standardåtgärden levereras till mottagarens skräppostmapp). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md) och Vad är skillnaden mellan skräppost och [massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 BCL-tröskelvärdena beskrivs i följande tabell.
 

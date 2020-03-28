@@ -2,7 +2,7 @@
 title: Office 365 ATP Safe Links for Teams, safelinks, safe links, block malicious links, office 365 atp, Teams safe links, stop users from clicking bad links, malicious links, malicious links, office 365 atp, Teams safe links, stop users from clicking bad links, malicious links,
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 02/28/2020
 ms.topic: overview
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Team kommer nu att ha tillgång till säkra länkar vid tidpunkten för ditt klick. Oavsett om du använder chattar 1-mot-1-chattar, mellan grupper eller i kanaler och flikar, om du har en prenumeration på Office 365 ATP, har du möjlighet att aktivera och använda den här säkerhetsfunktionen.
-ms.openlocfilehash: ba7ef2ae63b788ec94fbbb15c3c00312177a59d5
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42812375"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030151"
 ---
 <!--06/21/2019-->
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d8de760fb4690af6675b67678b2441773993a8e5
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "42806279"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029834"
 ---
 # <a name="device-configuration"></a>Enhetskonfiguration
 
@@ -36,11 +36,14 @@ Politik | Beskrivning
 Säkerhetsbaslinje | [Microsofts säkerhetsbaslinje](https://docs.microsoft.com/windows/device-security/windows-security-baselines) för MDM är konfigurerad för alla Microsoft Managed Desktop-enheter. Den här baslinjen är konfigurationen av branschstandard. Det är offentligt släppt, väl testat och har granskats av Microsofts säkerhetsexperter för att hålla Microsoft Managed Desktop-enheter och appar säkra på den moderna arbetsplatsen. <br><br>För att minska hoten i det ständigt föränderliga säkerhetshotlandskapet uppdateras och distribueras Microsofts säkerhetsbaslinje till Microsoft Hanterade stationära enheter med varje Windows 10-funktionsuppdatering.<br><br>Mer information finns i [Säkerhetsbaslinje för Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
 Säkerhetsmall för Microsoft Managed Desktop rekommenderas | En uppsättning rekommenderade ändringar av säkerhetsbaslinjen som optimerar användarupplevelsen.  Dessa ändringar dokumenteras i [säkerhetstillägget](#security-addendum). Uppdateringar av principtillägget sker efter behov.  
 Uppdatera distribution | Använd Windows Update för företag för att utföra gradvis distribution av programuppdateringar. IT-administratörer kan inte ändra inställningarna för distributionsgruppsprinciperna. Mer information om gruppbaserad distribution finns i Så här [hanteras uppdateringar i Microsoft Managed Desktop](updates.md).
-Diagnostikdata | Enheter kommer att ställas in för att ge förbättrade diagnostikdata till Microsoft under en känd kommersiell identifierare. Som en del av Microsoft Managed Desktop kan IT-administratörer inte ändra dessa inställningar. För kunder i allmänna dataskyddsförordningen (GDPR) regioner, slutanvändare kan minska nivån på diagnostiska data som tillhandahålls, men det kommer att bli en minskning av tjänsten. Microsoft Managed Desktop kan till exempel inte samla in de data som krävs för att iterera om inställningar och principer för att bäst tillgodose prestanda- och säkerhetsbehov. Mer information finns i [Konfigurera Windows-diagnostikdata i organisationen.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 Anslutningar med datapriser | Som standard inaktiveras uppdateringar över anslutningar med datapriser (till exempel LTE-nätverk), även om varje användare självständigt kan aktivera den här funktionen i **Inställningar > Uppdateringar > Avancerade alternativ**. Om du vill tillåta alla användare att aktivera uppdateringar via anslutningar med datapriser [skickar du en ändringsbegäran](../working-with-managed-desktop/admin-support.md)som aktiverar den här inställningen för alla enheter.
 | Enhetsefterlevnad | Dessa principer är konfigurerade för alla Microsoft-hanterade skrivbordsenheter. En enhet rapporteras som icke-kompatibel när den driver från vår nödvändiga säkerhetskonfiguration.
 
- ## <a name="security-addendum"></a>Säkerhetstillägg
+## <a name="diagnostic-data"></a>Diagnostikdata
+
+ Enheter kommer att ställas in för att ge förbättrade diagnostikdata till Microsoft under en känd kommersiell identifierare. Som en del av Microsoft Managed Desktop kan IT-administratörer inte ändra dessa inställningar. För kunder i allmänna dataskyddsförordningen (GDPR) regioner, slutanvändare kan minska nivån på diagnostiska data som tillhandahålls, men det kommer att bli en minskning av tjänsten. Microsoft Managed Desktop kan till exempel inte samla in de data som krävs för att iterera om inställningar och principer för att bäst tillgodose prestanda- och säkerhetsbehov. Mer information finns i [Konfigurera Windows-diagnostikdata i organisationen.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+
+## <a name="security-addendum"></a>Säkerhetstillägg
 
  I det här avsnittet beskrivs de principer som ska distribueras utöver standardprinciperna för Microsoft Managed Desktop som anges i [standardprinciper](#default-policies). Den här konfigurationen är utformad med finansiella tjänster och högt reglerade branscher i åtanke, optimera för högsta säkerhet samtidigt som användarnas produktivitet bibehålls.
 
