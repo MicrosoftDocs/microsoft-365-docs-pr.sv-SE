@@ -2,10 +2,10 @@
 title: 'Rapportera skräppost och nätfiskebedrägerier i Outlook på webben '
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,64 +15,106 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Microsoft Outlook på webben användare kan rapportera skräp (spam) och phishing bedrägerier med hjälp av inbyggda e-postrapportering alternativ. Du kan också meddela Microsoft om ett e-postmeddelande har identifierats felaktigt som skräppost (skräppost).
-ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Office 365-användare med Exchange Online-postlådor kan använda Outlook på webben (Outlook Web App) för att skicka skräppost, icke-skräppost och nätfiskemeddelanden till Microsoft för analys.
+ms.openlocfilehash: c6aba9a701b23be4bbbe508825a55c6438461928
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810046"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033710"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a><span data-ttu-id="bcb23-104">Rapportera skräppost och nätfiskebedrägerier i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="bcb23-104">Report junk email and phishing scams in Outlook on the web</span></span>
+# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a><span data-ttu-id="867f6-103">Rapportera skräppost och nätfiskemeddelanden i Outlook på webben i Office 365</span><span class="sxs-lookup"><span data-stu-id="867f6-103">Report junk and phishing email in Outlook on the web in Office 365</span></span>
 
-<span data-ttu-id="bcb23-105">Det kan vara frustrerande när användare i organisationen får skräppost eller missar ett viktigt e-postmeddelande eftersom det var felidentifierat som skräppost.</span><span class="sxs-lookup"><span data-stu-id="bcb23-105">It can be frustrating when users in your organization receive junk email or miss an important email because it was misidentified as spam.</span></span> <span data-ttu-id="bcb23-106">Vi finjusterar ständigt skräppostfiltren (Exchange Online Protection) för att vara mer exakta, och du och dina slutanvändare kan hjälpa till med den här processen. Microsoft Outlook på webben användare kan rapportera skräp (spam) och phishing bedrägerier med hjälp av inbyggda e-postrapportering alternativ.</span><span class="sxs-lookup"><span data-stu-id="bcb23-106">We're constantly fine-tuning the Exchange Online Protection (EOP) spam filters to be more accurate, and you and your end users can help with this process; Microsoft Outlook on the web users can report junk (spam) and phishing scams by using built-in email reporting options.</span></span> <span data-ttu-id="bcb23-107">Du kan också meddela Microsoft om ett e-postmeddelande har identifierats felaktigt som skräppost (skräppost).</span><span class="sxs-lookup"><span data-stu-id="bcb23-107">You can also let Microsoft know if an email was incorrectly identified as junk (spam).</span></span>
+<span data-ttu-id="867f6-104">Om du är Office 365-kund med Exchange Online-postlådor kan du använda de inbyggda rapporteringsalternativen i Outlook på webben (tidigare kallat Outlook Web App) för att skicka in falska positiva identifieringar (bra e-post markerat som skräppost), falska negativ (felaktig e-post tillåten) och nätfiskemeddelanden till Exchange Online Protection (EOP).</span><span class="sxs-lookup"><span data-stu-id="867f6-104">If you're an Office 365 customer with Exchange Online mailboxes, you can use the built-in reporting options in Outlook on the web (formerly known as Outlook Web App) to submit false positives (good email marked as spam), false negatives (bad email allowed) and phishing messages to Exchange Online Protection (EOP).</span></span>
 
-## <a name="submit-junk-messages-in-outlook-on-the-web"></a><span data-ttu-id="bcb23-108">Skicka skräpmeddelanden i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="bcb23-108">Submit junk messages in Outlook on the web</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="867f6-105">Vad behöver jag veta innan jag börjar?</span><span class="sxs-lookup"><span data-stu-id="867f6-105">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="bcb23-109">Så här skickar du ett skräppostmeddelande till Microsoft:</span><span class="sxs-lookup"><span data-stu-id="bcb23-109">To submit a junk mail message to Microsoft:</span></span>
+- <span data-ttu-id="867f6-106">Om du är administratör i en Office 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Office 365 Security & Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="867f6-106">If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center.</span></span> <span data-ttu-id="867f6-107">Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).</span><span class="sxs-lookup"><span data-stu-id="867f6-107">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
 
-1. <span data-ttu-id="bcb23-110">Klicka på skräpmeddelandet och klicka sedan på **Skräppost** i verktygsfältet.</span><span class="sxs-lookup"><span data-stu-id="bcb23-110">Click on the junk message and then click **Junk** on the toolbar.</span></span> <span data-ttu-id="bcb23-111">Då flyttas meddelandet till skräppostmappen och avsändaren läggs till i listan över blockerade avsändare.</span><span class="sxs-lookup"><span data-stu-id="bcb23-111">This moves the message to your Junk email folder and adds the sender to your blocked sender list.</span></span>
+- <span data-ttu-id="867f6-108">Administratörer kan inaktivera eller aktivera möjligheten för användare att rapportera meddelanden till Microsoft i Outlook på webben.</span><span class="sxs-lookup"><span data-stu-id="867f6-108">Admins can disable or enable the ability for users to report messages to Microsoft in Outlook on the web.</span></span> <span data-ttu-id="867f6-109">Mer information finns i [avsnittet Inaktivera eller aktivera skräppostrapportering i Outlook på webben](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) senare i det här avsnittet.</span><span class="sxs-lookup"><span data-stu-id="867f6-109">For details, see the [Disable or enable junk email reporting in Outlook on the web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) section later in this topic.</span></span>
 
-   ![Ange att e-post är skräppost från Outlook på webben](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+- <span data-ttu-id="867f6-110">Mer information om hur du anmäler meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft i Office 365](report-junk-email-messages-to-microsoft.md).</span><span class="sxs-lookup"><span data-stu-id="867f6-110">For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft in Office 365](report-junk-email-messages-to-microsoft.md).</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="bcb23-113">Du kan också högerklicka på ett meddelande om du vill visa en meny och klicka på **Markera som skräppost**.</span><span class="sxs-lookup"><span data-stu-id="bcb23-113">Alternatively, right-click a message to display a menu, and click **Mark as junk**.</span></span>
+## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a><span data-ttu-id="867f6-111">Rapportera skräppost och nätfiskemeddelanden i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="867f6-111">Report spam and phishing messages in Outlook on the web</span></span>
 
-   <span data-ttu-id="bcb23-114">Du kan rapportera ett skräpmeddelande från mappen **Inkorgen** eller **Borttaget.**</span><span class="sxs-lookup"><span data-stu-id="bcb23-114">You can report a junk message from your **Inbox** or **Deleted Items** folder.</span></span>
+1. <span data-ttu-id="867f6-112">För meddelanden i Inkorgen eller någon annan e-postmapp utom skräppost använder du någon av följande metoder för att rapportera skräppost och nätfiskemeddelanden:</span><span class="sxs-lookup"><span data-stu-id="867f6-112">For messages in the Inbox or any other email folder except Junk Email, use either of the following methods to report spam and phishing messages:</span></span>
 
-2. <span data-ttu-id="bcb23-115">En dialogruta öppnas och frågar om du vill skicka en kopia av skräppostmeddelandet till Microsoft för analys.</span><span class="sxs-lookup"><span data-stu-id="bcb23-115">A dialog box opens asking if you want to send a copy of the junk email message to Microsoft for analysis.</span></span> <span data-ttu-id="bcb23-116">Klicka **på rapporten** om du vill skicka meddelandet till Microsoft Spam Analysis Team.</span><span class="sxs-lookup"><span data-stu-id="bcb23-116">Click **report** to send the message to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="bcb23-117">Du kan också markera kryssrutan **Visa inte det här meddelandet igen** om du vill skicka framtida skräpmeddelanden automatiskt till Microsoft utan att bli tillfrågad.</span><span class="sxs-lookup"><span data-stu-id="bcb23-117">Optionally, select the **Don't show me this message again** check box if you want to automatically submit future junk messages to Microsoft without being prompted.</span></span>
+   - <span data-ttu-id="867f6-113">Markera meddelandet, klicka på **Skräppost** i verktygsfältet och välj sedan **Skräppost** eller **Nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="867f6-113">Select the message, click **Junk** on the toolbar, and then select **Junk** or **Phishing**.</span></span>
 
-   ![Rapportera skräppost till Microsoft från Outlook på webben](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+     ![Rapportera skräppost eller nätfiskemeddelande från menyfliksområdet](../../media/owa-report-junk.png)
 
-   > [!TIP]
-   > <span data-ttu-id="bcb23-119">Även om du markerar kryssrutan **Visa inte det här meddelandet igen** kan du senare ändra dina inställningar för att rapportera skräppost genom att komma åt visningsinställningarna i Outlook på webben.</span><span class="sxs-lookup"><span data-stu-id="bcb23-119">Even if you select the **Don't show me this message again** check box, you can later change your preferences for reporting junk email by accessing the display settings in Outlook on the web.</span></span> <span data-ttu-id="bcb23-120">(Du kan komma åt dessa inställningar via snabbmenyn bredvid inloggningsnamnet.)</span><span class="sxs-lookup"><span data-stu-id="bcb23-120">(You can access these settings through the gear menu next to your sign in name.)</span></span>
+   - <span data-ttu-id="867f6-115">Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som skräppost**.</span><span class="sxs-lookup"><span data-stu-id="867f6-115">Select one or more messages, right-click, and then select **Mark as junk**.</span></span>
 
-## <a name="submit-phishing-scam-messages-in-outlook-on-the-web"></a><span data-ttu-id="bcb23-121">Skicka meddelanden om nätfiskebedrägerier i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="bcb23-121">Submit phishing scam messages in Outlook on the web</span></span>
+2. <span data-ttu-id="867f6-116">Klicka på **Rapportera**i dialogrutan som visas.</span><span class="sxs-lookup"><span data-stu-id="867f6-116">In the dialog that appears, click **Report**.</span></span> <span data-ttu-id="867f6-117">Om du ändrar dig klickar du på **Rapportera inte**.</span><span class="sxs-lookup"><span data-stu-id="867f6-117">If you change your mind, click **Don't Report**.</span></span>
 
-<span data-ttu-id="bcb23-122">Så här skickar du ett meddelande om nätfiskebedrägeri till Microsoft:</span><span class="sxs-lookup"><span data-stu-id="bcb23-122">To submit a phishing scam message to Microsoft:</span></span>
+   ![Rapport som skräppostdialogruta](../../media/owa-report-as-junk-dialog.png)
 
-1. <span data-ttu-id="bcb23-123">Klicka på meddelandet om nätfiskebedrägeri, klicka på nedpilen **bredvid Skräppost**och klicka sedan på **Nätfiske** i verktygsfältet.</span><span class="sxs-lookup"><span data-stu-id="bcb23-123">Click on the phishing scam message, click the down arrow next to **Junk**, and then click **Phishing** on the toolbar.</span></span> <span data-ttu-id="bcb23-124">Office 365 blockerar inte avsändaren eftersom avsändare av nätfiskebluffmeddelanden vanligtvis utger sig för att vara legitima avsändare.</span><span class="sxs-lookup"><span data-stu-id="bcb23-124">Office 365 does not block the sender because senders of phishing scam messages typically impersonate legitimate senders.</span></span> <span data-ttu-id="bcb23-125">Om du vill lägger du till avsändaren i listan med blockerade avsändare genom att följa instruktionerna i avsnittet [Filtrera skräppost och skräppost i Outlook på webben](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d).</span><span class="sxs-lookup"><span data-stu-id="bcb23-125">If you prefer, add the sender to your blocked senders list by following the instructions in the topic [Filter junk email and spam in Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d).</span></span>
+   ![Dialogrutan Rapportera som nätfiske](../../media/owa-report-as-phishing-dialog.png)
 
-   ![Ange att ett e-postmeddelande är ett nätfiskebedrägeri i Outlook på webben](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+3. <span data-ttu-id="867f6-120">De valda meddelandena skickas till Microsoft för analys.</span><span class="sxs-lookup"><span data-stu-id="867f6-120">The selected messages will be sent to Microsoft for analysis.</span></span> <span data-ttu-id="867f6-121">Om du vill bekräfta att meddelandena har skickats öppnar du mappen **Skickat för** att visa de skickade meddelandena.</span><span class="sxs-lookup"><span data-stu-id="867f6-121">To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
 
-   <span data-ttu-id="bcb23-127">Du kan också högerklicka på ett meddelande om du vill visa en meny och klicka på **Markera som nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="bcb23-127">Alternatively, right-click a message to display a menu, and click **Mark as Phishing**.</span></span>
+## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a><span data-ttu-id="867f6-122">Rapportera meddelanden som inte är skräppost och nätfiske från mappen Skräppost i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="867f6-122">Report non-spam and phishing messages from the Junk Email folder in Outlook on the web</span></span>
 
-   <span data-ttu-id="bcb23-128">Du kan anmäla ett meddelande om nätfiskebedrägeri från mappen **Inkorgen** eller **Borttaget.**</span><span class="sxs-lookup"><span data-stu-id="bcb23-128">You can report a phishing scam message from your **Inbox** or **Deleted Items** folder.</span></span>
+1. <span data-ttu-id="867f6-123">I mappen Skräppost använder du någon av följande metoder för att rapportera falska positiva skräppost eller nätfiskemeddelanden:</span><span class="sxs-lookup"><span data-stu-id="867f6-123">In the Junk Email folder, use either of the following methods to report spam false positives or phishing messages:</span></span>
 
-2. <span data-ttu-id="bcb23-129">För vissa organisationer öppnas en dialogruta där du frågar om du vill skicka en kopia av e-postmeddelandet med nätfiskebedrägerier till Microsoft för analys.</span><span class="sxs-lookup"><span data-stu-id="bcb23-129">For some organizations, a dialog box opens asking if you want to send a copy of the phishing scam email to Microsoft for analysis.</span></span> <span data-ttu-id="bcb23-130">Klicka **på rapporten** om du vill skicka meddelandet till Microsoft Spam Analysis Team.</span><span class="sxs-lookup"><span data-stu-id="bcb23-130">Click **report** to send the message to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="bcb23-131">Det här rapporteringsalternativet är för närvarande tillgängligt för ett begränsat antal organisationer. Du kanske inte blir ombedd att rapportera ett nätfiskebedrägeri till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="bcb23-131">This reporting option is currently available to a limited number of organizations; you might not be asked to report a phishing scam to Microsoft.</span></span>
+   - <span data-ttu-id="867f6-124">Markera meddelandet, klicka på **Inte skräppost** i verktygsfältet och välj sedan **Inte skräppost** eller **nätfiske**.</span><span class="sxs-lookup"><span data-stu-id="867f6-124">Select the message, click **Not Junk** on the toolbar, and then select **Not Junk** or **Phishing**.</span></span>
 
-## <a name="submit-not-junk-messages-in-outlook-on-the-web"></a><span data-ttu-id="bcb23-132">Skicka "inte skräppost" meddelanden i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="bcb23-132">Submit "not junk" messages in Outlook on the web</span></span>
+     ![Rapportera skräppost eller nätfiskemeddelande från menyfliksområdet](../../media/owa-report-not-junk.png)
 
-<span data-ttu-id="bcb23-133">När ett meddelande identifieras felaktigt som skräppost av Office 365 skickar du ett meddelande som "inte skräppost" till Microsoft:</span><span class="sxs-lookup"><span data-stu-id="bcb23-133">When a message is incorrectly identified as junk by Office 365, submit a message as "not junk" to Microsoft:</span></span>
+   - <span data-ttu-id="867f6-126">Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som inte skräppost**.</span><span class="sxs-lookup"><span data-stu-id="867f6-126">Select one or more messages, right-click, and then select **Mark as not junk**.</span></span>
 
-1. <span data-ttu-id="bcb23-134">Klicka på meddelandet i mappen Skräppost och klicka sedan på **Inte skräppost** i verktygsfältet.</span><span class="sxs-lookup"><span data-stu-id="bcb23-134">In your Junk email folder, click on the message and then click **Not Junk** on the toolbar.</span></span> <span data-ttu-id="bcb23-135">Då flyttas meddelandet till **inkorgen** och avsändaren läggs till i listan över säkra avsändare.</span><span class="sxs-lookup"><span data-stu-id="bcb23-135">This moves the message to your **Inbox** and adds the sender to your safe senders list.</span></span>
+2. <span data-ttu-id="867f6-127">Läs informationen i dialogrutan som visas och klicka på **Rapportera**.</span><span class="sxs-lookup"><span data-stu-id="867f6-127">In the dialog that appears, read the information and click **Report**.</span></span> <span data-ttu-id="867f6-128">Om du ändrar dig klickar du på **Rapportera inte**.</span><span class="sxs-lookup"><span data-stu-id="867f6-128">If you change your mind, click **Don't Report**.</span></span>
 
-   <span data-ttu-id="bcb23-136">Du kan också högerklicka på ett meddelande i skräppostmappen för att visa en meny och klicka på **Markera som inte skräppost**.</span><span class="sxs-lookup"><span data-stu-id="bcb23-136">You can also right-click on a message in your Junk mail folder to display a menu and click **Mark as not junk**.</span></span>
+   ![Rapportera som inte skräppostdialogruta](../../media/owa-report-as-not-junk-dialog.png)
 
-2. <span data-ttu-id="bcb23-137">En dialogruta öppnas och frågar om du vill skicka en kopia av inte skräppostmeddelandet till Microsoft för analys.</span><span class="sxs-lookup"><span data-stu-id="bcb23-137">A dialog box opens asking if you want to send a copy of the not junk email message to Microsoft for analysis.</span></span> <span data-ttu-id="bcb23-138">Klicka **på rapporten** om du vill skicka meddelandet till Microsoft Spam Analysis Team..</span><span class="sxs-lookup"><span data-stu-id="bcb23-138">Click **report** to send the message to the Microsoft Spam Analysis Team..</span></span>
+   ![Dialogrutan Rapportera som nätfiske](../../media/owa-report-as-phishing-dialog.png)
 
-## <a name="for-more-information"></a><span data-ttu-id="bcb23-139">Mer information</span><span class="sxs-lookup"><span data-stu-id="bcb23-139">For more information</span></span>
+3. <span data-ttu-id="867f6-131">De valda meddelandena skickas till Microsoft för analys.</span><span class="sxs-lookup"><span data-stu-id="867f6-131">The selected messages will be sent to Microsoft for analysis.</span></span> <span data-ttu-id="867f6-132">Om du vill bekräfta att meddelandena har skickats öppnar du mappen **Skickat för** att visa de skickade meddelandena.</span><span class="sxs-lookup"><span data-stu-id="867f6-132">To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.</span></span>
 
-[<span data-ttu-id="bcb23-140">Läs mer om skräppost och nätfiske</span><span class="sxs-lookup"><span data-stu-id="bcb23-140">Learn about junk email and phishing</span></span>](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)
+## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a><span data-ttu-id="867f6-133">Inaktivera eller aktivera skräppostrapportering i Outlook på webben</span><span class="sxs-lookup"><span data-stu-id="867f6-133">Disable or enable junk email reporting in Outlook on the web</span></span>
 
-[<span data-ttu-id="bcb23-141">Tillägg för skräppostrapportering för Microsoft Outlook</span><span class="sxs-lookup"><span data-stu-id="bcb23-141">Junk email reporting add-in for Microsoft Outlook</span></span>](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+<span data-ttu-id="867f6-134">Som standard kan användare rapportera falska positiva skräpposter, falska negativ och nätfiskemeddelanden till Microsoft för analys i Outlook på webben.</span><span class="sxs-lookup"><span data-stu-id="867f6-134">By default, users can report spam false positives, false negatives, and phishing messages to Microsoft for analysis in Outlook on the web.</span></span> <span data-ttu-id="867f6-135">Administratörer kan använda Outlook på webbpostlådeprinciperna i Exchange Online för att inaktivera eller aktivera den här möjligheten, men bara i Exchange Online PowerShell.</span><span class="sxs-lookup"><span data-stu-id="867f6-135">Admins can use Outlook on the web mailbox policies in Exchange Online to disable or enable this ability, but only in Exchange Online PowerShell.</span></span>
+
+- <span data-ttu-id="867f6-136">Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="867f6-136">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+
+- <span data-ttu-id="867f6-137">Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna.</span><span class="sxs-lookup"><span data-stu-id="867f6-137">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="867f6-138">Du behöver som standard rollerna **Mottagare eller** **E-postmottagare** i Exchange Online, som tilldelas rollgrupperna **Organisationshantering** och **Mottagarhantering** som standard.</span><span class="sxs-lookup"><span data-stu-id="867f6-138">Specifically you need the **Recipient Policies** or **Mail Recipients** roles in Exchange Online, which are assigned to the **Organization Management** and **Recipient Management** role groups by default.</span></span> <span data-ttu-id="867f6-139">Mer information om rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).</span><span class="sxs-lookup"><span data-stu-id="867f6-139">For more information about role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).</span></span>
+
+- <span data-ttu-id="867f6-140">Varje organisation har en standardprincip med namnet OwaMailboxPolicy-Default, men du kan skapa anpassade principer.</span><span class="sxs-lookup"><span data-stu-id="867f6-140">Every organization has a default policy named OwaMailboxPolicy-Default, but you can create custom policies.</span></span> <span data-ttu-id="867f6-141">Anpassade principer tillämpas på begränsade användare före standardprincipen.</span><span class="sxs-lookup"><span data-stu-id="867f6-141">Custom policies are applied to scoped users before the default policy.</span></span> <span data-ttu-id="867f6-142">Mer information om Outlook i principerna för webbpostlåda finns i Outlook i principerna för [webbpostlådan i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).</span><span class="sxs-lookup"><span data-stu-id="867f6-142">For more information about Outlook on the web mailbox policies, see [Outlook on the web mailbox policies in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).</span></span>
+
+1. <span data-ttu-id="867f6-143">Om du vill hitta dina befintliga Outlook på webbpostlådeprinciperna och statusen för skräppostrapportering kör du följande kommando:</span><span class="sxs-lookup"><span data-stu-id="867f6-143">To find your existing Outlook on the web mailbox policies and the status of junk email reporting, run the following command:</span></span>
+
+   ```powershell
+   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
+   ```
+
+2. <span data-ttu-id="867f6-144">Om du vill inaktivera eller aktivera skräppostrapportering i Outlook på webben använder du följande syntax:</span><span class="sxs-lookup"><span data-stu-id="867f6-144">To disable or enable junk email reporting in Outlook on the web, use the following syntax:</span></span>
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
+   ```
+
+   <span data-ttu-id="867f6-145">I det här exemplet inaktiveras skräppostrapportering i standardprincipen.</span><span class="sxs-lookup"><span data-stu-id="867f6-145">This example disables junk email reporting in the default policy.</span></span>
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
+   ```
+
+   <span data-ttu-id="867f6-146">Det här exemplet aktiverade skräppostrapportering i den anpassade principen Contoso Managers.</span><span class="sxs-lookup"><span data-stu-id="867f6-146">This example enabled junk email reporting in the custom policy named Contoso Managers.</span></span>
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
+   ```
+
+<span data-ttu-id="867f6-147">Detaljerad syntax- och parameterinformation finns i [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy) och [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).</span><span class="sxs-lookup"><span data-stu-id="867f6-147">For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy) and [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).</span></span>
+
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="867f6-148">Hur vet du att det fungerade?</span><span class="sxs-lookup"><span data-stu-id="867f6-148">How do you know this worked?</span></span>
+
+<span data-ttu-id="867f6-149">Om du vill kontrollera att du har aktiverat eller inaktiverat skräppostrapportering i Outlook på webben använder du något av följande:</span><span class="sxs-lookup"><span data-stu-id="867f6-149">To verify that you've successfully enabled or disabled junk email reporting in Outlook on the web, use any of the following steps:</span></span>
+
+- <span data-ttu-id="867f6-150">I Exchange Online PowerShell kör du följande kommando och verifierar egenskapsvärdet **ReportJunkEmailEnabled:**</span><span class="sxs-lookup"><span data-stu-id="867f6-150">In Exchange Online PowerShell, run the following command and verify the **ReportJunkEmailEnabled** property value:</span></span>
+
+  ```powershell
+  Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
+  ```
+
+- <span data-ttu-id="867f6-151">Öppna en berörd användares postlåda i Outlook på webben och kontrollera alternativen för att rapportera skräppost, inte skräppost och nätfiskemeddelanden är tillgängliga eller inte tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="867f6-151">Open an affected user's mailbox in Outlook on the web, and verify the options to report junk, not junk, and phishing messages are available or not available.</span></span> <span data-ttu-id="867f6-152">Observera att användaren fortfarande kan markera meddelanden som skräppost, nätfiske och inte skräppost, men användaren kan inte rapportera dem till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="867f6-152">Note that the user can still mark messages as junk, phishing, and not junk, but the user can't report them to Microsoft.</span></span>
