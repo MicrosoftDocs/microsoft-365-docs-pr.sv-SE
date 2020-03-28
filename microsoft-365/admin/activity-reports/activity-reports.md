@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Office 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42810100"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029866"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitetsrapporter i administrationscentret för Microsoft 365
 
@@ -75,6 +75,10 @@ Personer som har följande behörigheter:
 - Global läsare
     
 - Rapportläsare
+
+- Administratör för Teams-tjänst
+
+- Administratör för Teams-kommunikation
     
 Mer information finns i [Om administratörsroller](../add-users/about-admin-roles.md) och [Tilldela administratörsroller](../add-users/assign-admin-roles.md).
   
