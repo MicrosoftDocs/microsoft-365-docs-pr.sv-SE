@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: eb06db140e4e3c9c245b7689edecf4b0cb86b674
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 803edd6fdf3d711a67b2ba4ff2e35f15c683c414
+ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035148"
+ms.lasthandoff: 03/29/2020
+ms.locfileid: "43036355"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs de vanliga rekommenderade principerna för att skydda åtkomsten till molntjänster, inklusive lokala program som publiceras med Azure AD Application Proxy. 
@@ -187,7 +187,7 @@ Logga in på [Microsofthttps://portal.azure.com) Azure-portalen (](https://porta
 > Var noga med att aktivera den här principen genom att välja **På**. Överväg också att använda verktyget [Vad händer om](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) för att testa principen
 
 ## <a name="apply-app-data-protection-policies"></a>Tillämpa APP-dataskyddsprinciper
-App-principer (APP) definierar vilka appar som är tillåtna och vilka åtgärder de kan vidta med organisationens data. De val som finns i APP gör det möjligt för organisationer att skräddarsy skyddet efter sina specifika behov. För vissa kanske det inte är uppenbart vilka principinställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera härdning av mobila klientslutpunkter har Microsoft infört taxonomi för sitt APP-dataskyddsramverk för iOS- och Android-hantering av mobilappar. 
+App Protection Policies (APP) definierar vilka appar som är tillåtna och vilka åtgärder de kan vidta med organisationens data. De val som finns i APP gör det möjligt för organisationer att skräddarsy skyddet efter sina specifika behov. För vissa kanske det inte är uppenbart vilka principinställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera härdning av mobila klientslutpunkter har Microsoft infört taxonomi för sitt APP-dataskyddsramverk för iOS- och Android-hantering av mobilappar. 
 
 APP-ramverket för dataskydd är indelat i tre olika konfigurationsnivåer, där varje nivå bygger ut den tidigare nivån: 
 
