@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 94dd92ec-ea73-43c6-b51f-2a11fd78aa31
 description: Få aktivitetsrapporten för Yammer-grupper om du vill veta hur många Yammer-grupper som skapas och används i organisationen och deras aktivitet.
-ms.openlocfilehash: 69b9be1b6f632f0e6fa212e5be6209097ccb6669
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 117217f8dd275432342afd0381b39e93de23b92f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807840"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047077"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Aktivitetsrapport för Office 365-rapporter i administrationscentret – Aktivitetsrapport för Yammer-grupper
 
 Instrumentpanelen Office 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md). I rapporten Aktivitet i Yammer-grupper får du inblick i aktiviteten i Yammer-grupperna i organisationen och du kan se hur många Yammer-grupper som används.
   
 > [!NOTE]
-> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter. 
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter.  
 
 ## <a name="how-to-get-to-the-yammer-groups-activity-report"></a>Komma åt rapporten Aktivitet i Yammer-grupper
 

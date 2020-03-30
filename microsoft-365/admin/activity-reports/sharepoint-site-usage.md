@@ -20,18 +20,19 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Hämta sharepoint-webbplatsanvändningsrapporten för att veta hur många filer användare lagrar på SharePoint-webbplatser, hur många som används aktivt och det totala lagringsutrymmet som förbrukas. '
-ms.openlocfilehash: c60d33ce299d63edafc4ce996bb4ba07ce9b7fa0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 92ff9c4dbfcc7fcd9f9fdc511584400273030f21
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808170"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047125"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-rapporter i administrationscentret – Användning av SharePoint-webbplatser
 
 Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** aktivitetsöversikten för olika produkter i organisationen. Där kan du öka detaljnivån för att få bättre inblick i de aktiviteter som är specifika för varje produkt. Du kan till exempel få en överblick på hög nivå av det värde som du får från SharePoint som det totala antalet filer som användare lagrar på SharePoint-webbplatser, hur många filer som används aktivt och hur mycket lagring som används på alla dessa webbplatser. Du kan sedan öka detaljnivån på rapporten om SharePoint-webbplatsanvändningen för att förstå trenderna och information per webbplatsnivå för alla webbplatser. 
   
-> Du måste vara en global administratör, global läsare eller rapportläsare i Microsoft 365 eller en Exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter. 
+> [!NOTE]
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter. 
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Så här kommer du till rapporten om SharePoint-webbplatsanvändning
 

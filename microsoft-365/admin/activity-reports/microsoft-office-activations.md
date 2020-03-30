@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Lär dig hur du får en Office-aktiveringsrapport för att veta vilka användare som har aktiverat sin Office-prenumeration och identifiera användare som kan behöva ytterligare hjälp.
-ms.openlocfilehash: de558c75009007bbc02a1c5ca51bb7c86a97c47a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811919"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046981"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-rapporter i administrationscentret – Microsoft Office-aktiveringar
 
@@ -32,7 +32,7 @@ Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för pro
 I rapporten Office-aktivering får du en översikt över vilka användare som har aktiverat Office-prenumerationen på minst en enhet. Du får uppgifter på detaljnivå om prenumerationsaktiveringar för Office 365 Proplus, Project och Visio Pro för Office 365 samt detaljerad information om aktiveringar på olika datorer och andra enheter. Den här rapporten kan vara användbar när du vill identifiera användare som kan behöva extra hjälp och stöd för att aktivera Office-prenumerationen.
   
 > [!NOTE]
-> Du måste vara global administratör i Microsoft 365 eller exchange-, SharePoint-, Skype för företag-administratör eller rapportläsare för att kunna se rapporter. 
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter.  
   
 ## <a name="how-to-get-to-the-office-activations-report"></a>Så här kommer du åt rapporten över Office-aktiveringar
 

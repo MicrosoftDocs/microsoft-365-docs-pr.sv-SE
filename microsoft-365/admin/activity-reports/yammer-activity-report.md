@@ -1,5 +1,5 @@
 ---
-title: Office 365-rapporter i administrationscentret – Yammer-aktivitetsrapport
+title: Office 365-rapporter i administrationscentret – Aktivitetsrapport för Yammer
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
-description: Hämta rapporten Yammer Activity och veta mer om antalet användare som använder Yammer för att publicera, gilla eller läsa ett meddelande.
-ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Hämta Yammer Activity-rapporten och veta mer om hur många användare som använder Yammer för att publicera, gilla eller läsa ett meddelande.
+ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811188"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047029"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365-rapporter i administrationscentret – Yammer-aktivitetsrapport
+# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365-rapporter i administrationscentret – Aktivitetsrapport för Yammer
 
-Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** data om användningen av produkterna i organisationen. Kolla in [aktivitetsrapporter i administrationscentret](activity-reports.md). Med **Yammer-aktivitetsrapporten** får du förståelse för användningen av Yammer i organisationen genom att titta på antalet unika användare som använder Yammer för att publicera, gilla eller läsa ett meddelande och graden av aktivitet som skapas i organisationen. 
+Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** data om användningen av produkterna inom organisationen. Kolla in [aktivitetsrapporter i administrationscentret](activity-reports.md). Med **Yammer-aktivitetsrapporten** får du förståelse för användningen av Yammer i organisationen genom att titta på antalet unika användare som använder Yammer för att publicera, gilla eller läsa ett meddelande och graden av aktivitet som skapas i organisationen. 
   
 > [!NOTE]
-> Du måste vara en global administratör, global läsare eller rapporterar läsare i Microsoft 365 eller en Exchange-, SharePoint- eller Skype förföretag-administratör för att kunna se rapporter. 
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter. 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>Komma åt Yammer-aktivitetsrapporten
 
@@ -44,11 +44,11 @@ Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** data om a
 
 Du kan få inblick i användarnas Yammer-aktivitet genom att titta på diagrammen Aktivitet och Användare.
   
-![Rapport över Yammer-aktivitet](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
+![Yammer-aktivitetsrapport](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
   
 Aktivitetsrapporten innehåller följande information.
   
-- Använd dagflikarna för att visa **Yammer-aktivitetstrenderna** under de senaste 7, 30, 90 eller 180 dagarna. Om du väljer en viss dag i rapporten visas dock data i upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades). 
+- Använd dagflikarna för att visa **Yammer-aktivitetstrenderna** under de senaste 7, 30, 90 eller 180 dagarna. Om du väljer en viss dag i rapporten visas data i upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades). 
     
 - Varje rapport har ett datum för när rapporten skapades. Rapporterna visar normalt 24 till 48 timmars fördröjning från aktivitetstiden.
     
@@ -60,15 +60,15 @@ Aktivitetsrapporten innehåller följande information.
     
 - Du kan visa diagrammet **Användare** för att bättre förstå trenden med mängden unika användare som skapar Yammer-aktiviteter. Du kan titta på trenden av användare som publicerar, läser eller gillar Yammer-meddelanden. 
     
-    ![Vyn Användare i yammer-aktivitetsrapporten](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
+    ![Användarvyn i yammeraktivitetsrapporten](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
   
   - I diagrammet **Användare** visar Y-axeln användare som publicerat, läst eller gillat Yammer-meddelanden. 
     
   - X-axeln i båda diagrammen är det valda datumintervallet för den här specifika rapporten.
     
-- Du kan filtrera serien som visas i diagrammet genom att markera ett objekt i förklaringen. I **aktivitetsdiagrammet** väljer du till exempel **Bokförd,** **Läsa**eller **Gillad** om du bara vill se informationen som är relaterad till var och en. 
+- Du kan filtrera serien som visas i diagrammet genom att markera ett objekt i förklaringen. I **aktivitetsdiagrammet** väljer du till exempel **Bokförd,** **Läst**eller **Om du** bara vill se den information som är relaterad till var och en. 
     
-    ![Alternativ för bokförda, lästa och gillade](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Inlagda, lästa och gillade alternativ](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     När du ändrar det här valet ändras inte informationen i rutnätstabellen.
     
@@ -100,11 +100,11 @@ Aktivitetsrapporten innehåller följande information.
     
   - **Gillat** är antalet meddelanden som användaren gillat under den angivna tidsperioden. 
     
-  - **Produkten tilldelas** är de produkter som har tilldelats den här användaren. 
+  - **Produkt som tilldelats** är de produkter som har tilldelats den här användaren. 
     
-    Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Kolla in avsnittet **Hur döljer jag information på användarnivå i** [Aktivitetsrapporter i administrationscentret för Microsoft 365](activity-reports.md).
+    Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Kolla in avsnittet **Hur döljer jag information på användarnivå?** [Activity reports in the Microsoft 365 admin center](activity-reports.md)
     
-- Du kan också exportera rapportdata till en CSV-fil i Excel genom att välja **länken Exportera.** Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
+- Du kan också exportera rapportdata till en CSV-fil i Excel genom att välja länken **Exportera.** Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera. 
     
 ## <a name="what-data-is-in-these-reports"></a>Vilka data ingår i de här rapporterna?
 

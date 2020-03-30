@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Läs om hur du får användningsrapport för postlåda för att få information om aktiviteter för användare med en användarpostlåda.
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807996"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046933"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av postlåda
 
 **Användningsrapporten för postlådan** innehåller information om användare med en användarpostlåda och aktivitetsnivån för var och en baserat på e-postöverföring, läsa, skapa avtalad tid, skicka möte, acceptera möte, avböja möte och avbryta mötesaktivitet. Du får även information om hur mycket lagringsutrymme som har förbrukats av varje användarpostlåda och hur många av dem som närmar sig lagringskvotens gräns. 
   
 > [!NOTE]
-> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter. 
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Så här kommer du åt rapporten om postlådeanvändning
 
