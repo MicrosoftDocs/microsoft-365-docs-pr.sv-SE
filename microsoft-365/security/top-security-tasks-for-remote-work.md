@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036394"
+ms.locfileid: "43037482"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
@@ -116,7 +116,7 @@ Du måste arbeta med Exchange Online-administratören och SharePoint Online-admi
 Nu när du har konfigurerat Office 365 ATP och Azure ATP kan du visa de kombinerade signalerna från dessa funktioner på en instrumentpanel. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) samlar aviseringar, incidenter, automatisk undersökning och svar och avancerad jakt över arbetsbelastningar (Azure ATP, Office 365 ATP, Microsoft Defender ATP och Microsoft Cloud App Security) i en enda ruta [security.microsoft.com](https://security.microsoft.com). 
 <br>
 
-![Bild av MTP-instrumentpanelen](../media/top-10-security-remote-work-mtp-dashboard.png)
+![Bild av MTP-instrumentpanelen](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 När du har konfigurerat en eller flera av dina avancerade hotskyddstjänster aktiverar du MTP. Nya funktioner läggs kontinuerligt till MTP; överväga att anmäla sig för att ta emot förhandsgranskningsfunktioner.
 
@@ -128,7 +128,7 @@ När du har konfigurerat en eller flera av dina avancerade hotskyddstjänster ak
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: Konfigurera Intune-skydd för mobilappar för telefoner och surfplattor
 
 Med Microsoft Intune Mobile Application Management (MAM) kan du hantera och skydda organisationens data på telefoner och surfplattor utan att hantera dessa enheter. Så här fungerar det:
-- Du skapar en APP (App) som avgör vilka appar på en enhet som hanteras och vilka beteenden som tillåts (t.ex. förhindra att data från en hanterad app kopieras till en ohanterad app). Du skapar en princip för varje platorm (iOS, Android).
+- Du skapar en APP (App) som avgör vilka appar på en enhet som hanteras och vilka beteenden som tillåts (till exempel förhindra att data från en hanterad app kopieras till en ohanterad app). Du skapar en princip för varje platorm (iOS, Android).
 - När du har skapat appskyddsprinciperna tillämpar du dessa genom att skapa en regel för villkorlig åtkomst i Azure AD för att kräva godkända appar och APP-dataskydd.
 
 APP-skyddsprinciper innehåller många inställningar. Lyckligtvis behöver du inte lära dig om varje inställning och väga alternativen. Microsoft gör det enkelt att tillämpa en konfiguration av inställningar genom att rekommendera startpunkter. [Ramverket för dataskydd med hjälp av appskyddsprinciper](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) innehåller tre nivåer du kan välja mellan. 
