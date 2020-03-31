@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Innehåller en introduktion till komponenter, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952000"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053101"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -33,7 +33,7 @@ Microsoft 365 för företag består av:
 |||
 |:-------|:-----|
 | Lokala och molnbaserade appar och produktivitetstjänster | Innehåller både Office 365 ProPlus, de senaste Office-programmen för din PC och Mac (till exempel Word, Excel, PowerPoint, Outlook och andra) och en komplett uppsättning onlinetjänster för e-post, fillagring och samarbete, möten med mera. |
-| Windows 10 Företag | Tillgodoser behoven hos både stora och medelstora organisationer och ger användarna den mest produktiva och säkra versionen av Windows- och IT-proffs omfattande distribution, enhet och apphantering. |
+| Windows 10 Enterprise | Tillgodoser behoven hos både stora och medelstora organisationer och ger användarna den mest produktiva och säkra versionen av Windows- och IT-proffs omfattande distribution, enhet och apphantering. |
 | Enhetshantering och avancerade säkerhetstjänster | Inkluderar Microsoft Intune, som är en molnbaserad EMM-tjänst (Enterprise Mobility Management) som gör det möjligt för din personal att vara produktiv samtidigt som företagets data skyddas. |
 |||
 
@@ -67,40 +67,40 @@ Mer information finns i [Funktioner och funktioner för varje plan](https://www.
 - [Microsoft 365 Produktivitetsbibliotek och](https://www.microsoft.com/microsoft-365/success/) representativa scenarier för vissa vanliga organisationsavdelningar
 - Den införandeöversikt som belyser Microsoft 365 för [företagsdistributionsguide](deploy-microsoft-365-enterprise.md)
 
-[![Bild för Microsoft 365 för företagsaffisch](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
+[![Bild för Microsoft 365 Enterprise (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
-För att ladda ner en kopia av affischen, klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
+Klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf) om du vill ladda ned en kopia av affischen.
 
 
-## <a name="transition-your-entire-organization"></a>Ändra hela organisationen
+## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
 
 Om du vill få en bättre bild av hur du flyttar hela organisationen till produkterna och tjänsterna i Microsoft 365 för företag laddar du ned [övergångsaffischen](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Bild för affischen Övergång till Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Bild på affischen för övergång till Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-Den här tvåsidiga affischen är ett snabbt sätt att inventera din befintliga infrastruktur och komma åt vägledningen för att flytta till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter och andra infrastruktur- och säkerhetselement som enhetshantering, identitet och informations- och hotskydd.
+Med den här affischen på två sidor kan du snabbt inventera din befintliga infrastruktur och få vägledning i hur du flyttar till motsvarande produkt eller tjänst i Microsoft 365 för företag. Den innehåller Windows- och Office-produkter samt andra infrastruktur- och säkerhetselement, som exempelvis enhetshantering, identitet, information och skydd mot hot.
 
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) och skriva ut den i brev, juridiska eller tabloid (11 x 17) format.
+Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) och skriva ut den i formaten Letter, Legal och tabloid (11 x 17).
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Undvik att supporten för Windows 7 och Office 2010 ska sluta
 
-Följande produkter når slutet av supporten **den 14 januari 2020:**
+Följande produkter upphörde med supporten **den 14 januari 2020:**
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-Följande produkter når slutet av supporten **den 13 oktober 2020:**
+Följande produkter kommer att nå slutet av supporten **den 13 oktober 2020:**
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-En visuell sammanfattning av alternativen för uppgradering, migrera och flytta till molnet för dessa produkter finns i [slutet av supportaffischen](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+En visuell sammanfattning av alternativen att uppgradera, migrera och flytta till molnet för dessa produkter finns på [affischen supportens upphörande](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
-[![Bild för slutet av supporten för Office 2010-klienter och -servrar och Windows 7-affisch](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Bild på affischen för supportens upphörande för Office 2010-klienter/servrar och Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Den här ensidiga affischen är ett snabbt sätt att förstå de olika vägar du kan ta för att förhindra att Klient- och serverprodukter för Windows 7 och Office 2010 når slutet av supporten, med önskade sökvägar och support i Microsoft 365 för företag markerat.
 
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) och skriva ut den i brev, juridiska eller tabloid (11 x 17) format.
+Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) och skriva ut den i formaten Letter, Legal och tabloid (11 x 17).
 
 ## <a name="deploy"></a>Distribuera
 
