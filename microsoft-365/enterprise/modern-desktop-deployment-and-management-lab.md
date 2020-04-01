@@ -15,138 +15,128 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 44335889432d1c5998b76836c9d8f0201a62dc67
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e0942f88605e1b11cdbc83155ebc43b5fdb1bea1
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810031"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081286"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a><span data-ttu-id="4a5db-103">Deployment Lab Kit för Windows och Office</span><span class="sxs-lookup"><span data-stu-id="4a5db-103">Windows and Office Deployment Lab Kit</span></span>
+# <a name="windows-and-office-deployment-lab-kit"></a><span data-ttu-id="66372-103">Deployment Lab Kit för Windows och Office</span><span class="sxs-lookup"><span data-stu-id="66372-103">Windows and Office Deployment Lab Kit</span></span>
 
-<span data-ttu-id="4a5db-104">I dessa nedladdningsbara labbar ligger fokus på distribution av Windows 10 och Office 365, samt överväganden kring konfiguration och hantering efter distributionen.</span><span class="sxs-lookup"><span data-stu-id="4a5db-104">These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment.</span></span> <span data-ttu-id="4a5db-105">Den här utbildningen rekommenderas starkt för organisationer som behöver migrera från Windows 7 eftersom supporten upphört, men gäller även för dig som har Windows 10 och Office 365 plus eller Office 2019.</span><span class="sxs-lookup"><span data-stu-id="4a5db-105">This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019.</span></span> <span data-ttu-id="4a5db-106">I utbildningen ingår guider för Windows 10, Office 365 ProPlus, Enterprise Mobility + Security och relaterade produkter och tjänster.</span><span class="sxs-lookup"><span data-stu-id="4a5db-106">Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.</span></span>
+<span data-ttu-id="66372-104">Dessa labbar är utformade för att hjälpa dig att planera, testa och verifiera din distribution och hantering av datorer med Windows 10 Enterprise och Office 365 ProPlus.</span><span class="sxs-lookup"><span data-stu-id="66372-104">These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus.</span></span> <span data-ttu-id="66372-105">Labbarna omfattar de steg och verktyg som beskrivs i skrivbordsdistributionshjulet, bland annat Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive och Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="66372-105">The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.</span></span>
 
-<span data-ttu-id="4a5db-107">Dessa labbar är utformade för att hjälpa dig att planera, testa och verifiera din distribution och hantering av datorer med Windows 10 Enterprise och Office 365 ProPlus.</span><span class="sxs-lookup"><span data-stu-id="4a5db-107">These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus.</span></span> <span data-ttu-id="4a5db-108">Labbarna omfattar de steg och verktyg som beskrivs i skrivbordsdistributionshjulet, bland annat Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive och Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="4a5db-108">The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.</span></span>
+<span data-ttu-id="66372-106">Den här utbildningen rekommenderas starkt för organisationer som behöver migrera från Windows 7 eftersom supporten upphört, men gäller även för dig som har Windows 10 och Office 365 plus eller Office 2019.</span><span class="sxs-lookup"><span data-stu-id="66372-106">This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019.</span></span> <span data-ttu-id="66372-107">Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.</span><span class="sxs-lookup"><span data-stu-id="66372-107">Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.</span></span>
 
-<span data-ttu-id="4a5db-109">Vi rekommenderar att du börjar med att skapa en sandbox-miljö eller isolerad labbmiljö som en del i [skrivbordsdistributionsprocessen](https://www.aka.ms/howtoshift) för Windows 10 och Office 365 ProPlus när du börjar utforska uppdateringarna i distributionsverktygen och testa distributionsrelaterad automatisering.</span><span class="sxs-lookup"><span data-stu-id="4a5db-109">As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.</span></span>
+<span data-ttu-id="66372-108">[Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).</span><span class="sxs-lookup"><span data-stu-id="66372-108">[Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).</span></span>
 
-<span data-ttu-id="4a5db-110">Labbpaketet är kostnadsfritt att ladda ned och innefattar utvärderingsversioner av programvara.</span><span class="sxs-lookup"><span data-stu-id="4a5db-110">The lab kit is free to download and uses trial software.</span></span>
+## <a name="a-complete-lab-environment"></a><span data-ttu-id="66372-109">En komplett labbmiljö</span><span class="sxs-lookup"><span data-stu-id="66372-109">A complete lab environment</span></span>
 
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>[<span data-ttu-id="4a5db-111">**Ladda ned Windows and Office Deployment Lab Kit**</span><span class="sxs-lookup"><span data-stu-id="4a5db-111">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+<span data-ttu-id="66372-110">Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslutna skrivbordsklienter, domänkontrollant, Internetgateway och en helt konfigurerad Konfigurationshanterare-instans.</span><span class="sxs-lookup"><span data-stu-id="66372-110">The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured Configuration Manager instance.</span></span> <span data-ttu-id="66372-111">Labbet innehåller den senaste utvärderingsversioner av följande produkter:</span><span class="sxs-lookup"><span data-stu-id="66372-111">The lab contains the latest Evaluation Versions of the following products:</span></span>
 
-## <a name="a-complete-lab-environment"></a><span data-ttu-id="4a5db-112">**En komplett labbmiljö**</span><span class="sxs-lookup"><span data-stu-id="4a5db-112">**A complete lab environment**</span></span>
+  - <span data-ttu-id="66372-112">Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="66372-112">Windows 10 Enterprise</span></span>
+  - <span data-ttu-id="66372-113">Windows 7 Enterprise</span><span class="sxs-lookup"><span data-stu-id="66372-113">Windows 7 Enterprise</span></span>
+  - <span data-ttu-id="66372-114">Microsoft konfigurationshanterare för slutpunkt</span><span class="sxs-lookup"><span data-stu-id="66372-114">Microsoft Endpoint Configuration Manager</span></span>
+  - <span data-ttu-id="66372-115">Windows Assessment and Deployment Kit för Windows 10</span><span class="sxs-lookup"><span data-stu-id="66372-115">Windows Assessment and Deployment Kit for Windows 10</span></span>
+  - <span data-ttu-id="66372-116">Microsoft Deployment Toolkit</span><span class="sxs-lookup"><span data-stu-id="66372-116">Microsoft Deployment Toolkit</span></span>
+  - <span data-ttu-id="66372-117">Microsoft Application Virtualization (App-V)</span><span class="sxs-lookup"><span data-stu-id="66372-117">Microsoft Application Virtualization (App-V)</span></span>
+  - <span data-ttu-id="66372-118">Microsoft BitLocker Administration och övervakning</span><span class="sxs-lookup"><span data-stu-id="66372-118">Microsoft BitLocker Administration and Monitoring</span></span> 
+  - <span data-ttu-id="66372-119">Windows Server</span><span class="sxs-lookup"><span data-stu-id="66372-119">Windows Server</span></span> 
+  - <span data-ttu-id="66372-120">Microsoft SQL Server</span><span class="sxs-lookup"><span data-stu-id="66372-120">Microsoft SQL Server</span></span> 
 
-<span data-ttu-id="4a5db-113">Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslutna skrivbordsklienter, domänkontrollant, Internetgateway och en helt konfigurerad ConfigMgr-instans.</span><span class="sxs-lookup"><span data-stu-id="4a5db-113">The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance.</span></span> <span data-ttu-id="4a5db-114">Utvärderingsversioner av följande produkter ingår:</span><span class="sxs-lookup"><span data-stu-id="4a5db-114">The lab contains Evaluation Versions of the following products:</span></span>
+<span data-ttu-id="66372-121">Dessutom är labbet utformat för anslutning till utvärderingsversioner av:</span><span class="sxs-lookup"><span data-stu-id="66372-121">PLUS, the lab is designed to be connected to trials for:</span></span> 
 
-  - <span data-ttu-id="4a5db-115">Windows 10 Enterprise, version 1909</span><span class="sxs-lookup"><span data-stu-id="4a5db-115">Windows 10 Enterprise, Version 1909</span></span>
-  - <span data-ttu-id="4a5db-116">Windows 7 Enterprise</span><span class="sxs-lookup"><span data-stu-id="4a5db-116">Windows 7 Enterprise</span></span>
-  - <span data-ttu-id="4a5db-117">Microsoft Endpoint Configuration Manager, version 1902</span><span class="sxs-lookup"><span data-stu-id="4a5db-117">Microsoft Endpoint Configuration Manager, Version 1902</span></span>
-  - <span data-ttu-id="4a5db-118">Windows Assessment and Deployment Kit för Windows 10, version 1903</span><span class="sxs-lookup"><span data-stu-id="4a5db-118">Windows Assessment and Deployment Kit for Windows 10, Version 1903</span></span>
-  - <span data-ttu-id="4a5db-119">Microsoft Deployment Toolkit</span><span class="sxs-lookup"><span data-stu-id="4a5db-119">Microsoft Deployment Toolkit</span></span>
-  - <span data-ttu-id="4a5db-120">Microsoft Application Virtualization (App-V) 5.1</span><span class="sxs-lookup"><span data-stu-id="4a5db-120">Microsoft Application Virtualization (App-V) 5.1</span></span>
-  - <span data-ttu-id="4a5db-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span><span class="sxs-lookup"><span data-stu-id="4a5db-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span></span>
-  - <span data-ttu-id="4a5db-122">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="4a5db-122">Windows Server 2019</span></span>
-  - <span data-ttu-id="4a5db-123">Microsoft SQL Server 2017</span><span class="sxs-lookup"><span data-stu-id="4a5db-123">Microsoft SQL Server 2017</span></span>
+  - <span data-ttu-id="66372-122">Microsoft 365 E5 eller</span><span class="sxs-lookup"><span data-stu-id="66372-122">Microsoft 365 E5, or</span></span>
+  - <span data-ttu-id="66372-123">Office 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="66372-123">Office 365 Enterprise E5</span></span>
+  - <span data-ttu-id="66372-124">Enterprise Mobility + Security</span><span class="sxs-lookup"><span data-stu-id="66372-124">Enterprise Mobility + Security</span></span>
 
-<span data-ttu-id="4a5db-124">Dessutom är labben utformad för anslutning till utvärderingsversioner av:</span><span class="sxs-lookup"><span data-stu-id="4a5db-124">PLUS, the lab is designed to be connected to trials for:</span></span> 
+## <a name="step-by-step-labs"></a><span data-ttu-id="66372-125">Stegvisa labbuppgifter</span><span class="sxs-lookup"><span data-stu-id="66372-125">Step-by-step labs</span></span>
 
-  - <span data-ttu-id="4a5db-125">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="4a5db-125">Microsoft 365 E5</span></span>
+<span data-ttu-id="66372-126">Du får utföra flera labbuppgifter för olika distributions- och hanteringsscenarier med detaljerad vägledning.</span><span class="sxs-lookup"><span data-stu-id="66372-126">Detailed lab guides take you through multiple deployment and management scenarios.</span></span> <span data-ttu-id="66372-127">Labbuppgifterna har uppdaterats för de senaste versionerna av Intune och Configuration Manager (version 1910).</span><span class="sxs-lookup"><span data-stu-id="66372-127">The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910).</span></span> 
 
-<span data-ttu-id="4a5db-126">Eller</span><span class="sxs-lookup"><span data-stu-id="4a5db-126">Or</span></span>
-  - <span data-ttu-id="4a5db-127">Office 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="4a5db-127">Office 365 Enterprise E5</span></span>
-  - <span data-ttu-id="4a5db-128">Enterprise Mobility + Security</span><span class="sxs-lookup"><span data-stu-id="4a5db-128">Enterprise Mobility + Security</span></span>
+### <a name="device-and-app-readiness"></a><span data-ttu-id="66372-128">Beredskap för enheter och appar</span><span class="sxs-lookup"><span data-stu-id="66372-128">Device and App Readiness</span></span>
 
-## <a name="step-by-step-labs"></a><span data-ttu-id="4a5db-129">**Stegvisa labbuppgifter**</span><span class="sxs-lookup"><span data-stu-id="4a5db-129">**Step-by-step labs**</span></span>
+  - <span data-ttu-id="66372-129">Desktop Analytics</span><span class="sxs-lookup"><span data-stu-id="66372-129">Desktop Analytics</span></span>
+  - <span data-ttu-id="66372-130">NYHET!</span><span class="sxs-lookup"><span data-stu-id="66372-130">NEW!</span></span> <span data-ttu-id="66372-131">Distribuera och uppdatera nya Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="66372-131">Deploy and update the new Microsoft Edge</span></span> 
+  - <span data-ttu-id="66372-132">Internet Explorer-läge</span><span class="sxs-lookup"><span data-stu-id="66372-132">Internet Explorer Mode</span></span> 
+  - <span data-ttu-id="66372-133">Programskydd som</span><span class="sxs-lookup"><span data-stu-id="66372-133">Application Guard</span></span> 
 
-<span data-ttu-id="4a5db-130">Du får utföra flera labbuppgifter för olika distributions- och hanteringsscenarier med detaljerad vägledning.</span><span class="sxs-lookup"><span data-stu-id="4a5db-130">Detailed lab guides take you through multiple deployment and management scenarios.</span></span> <span data-ttu-id="4a5db-131">Labbuppgifterna har uppdaterats för de senaste versionerna av Intune och Configuration Manager (version 1910).</span><span class="sxs-lookup"><span data-stu-id="4a5db-131">The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910).</span></span>  
+### <a name="directory-and-network-readiness"></a><span data-ttu-id="66372-134">Beredskap för Katalog- och nätverks</span><span class="sxs-lookup"><span data-stu-id="66372-134">Directory and Network Readiness</span></span>
 
-### <a name="device-and-app-readiness"></a><span data-ttu-id="4a5db-132">**Beredskap för enheter och appar**</span><span class="sxs-lookup"><span data-stu-id="4a5db-132">**Device and App Readiness**</span></span>
+  - <span data-ttu-id="66372-135">NYHET!</span><span class="sxs-lookup"><span data-stu-id="66372-135">NEW!</span></span> <span data-ttu-id="66372-136">Optimera Windows 10 uppdateringsleverans</span><span class="sxs-lookup"><span data-stu-id="66372-136">Optimize Windows 10 Update Delivery</span></span> 
+  - <span data-ttu-id="66372-137">Konfigurationshanteraren och samhantering av Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="66372-137">Configuration Manager and Microsoft Intune Co-Management</span></span>
+  - <span data-ttu-id="66372-138">Fjärråtkomst (VPN)</span><span class="sxs-lookup"><span data-stu-id="66372-138">Remote Access (VPN)</span></span>
 
-  - <span data-ttu-id="4a5db-133">Desktop Analytics</span><span class="sxs-lookup"><span data-stu-id="4a5db-133">Desktop Analytics</span></span>
-  - <span data-ttu-id="4a5db-134">Företagsläge och webbplatslista för företagsläge för Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="4a5db-134">Enterprise Mode and the Enterprise Mode Site List for Internet Explorer</span></span>
+### <a name="office-and-lob-app-delivery"></a><span data-ttu-id="66372-139">Leverans av Office- och LOB-appar</span><span class="sxs-lookup"><span data-stu-id="66372-139">Office and LOB App Delivery</span></span>
 
-### <a name="directory-and-network-readiness"></a><span data-ttu-id="4a5db-135">**Katalog- och nätverksberedskap**</span><span class="sxs-lookup"><span data-stu-id="4a5db-135">**Directory and Network Readiness**</span></span>
+  - <span data-ttu-id="66372-140">Distribution för Office 365 ProPlus:</span><span class="sxs-lookup"><span data-stu-id="66372-140">Office 365 ProPlus deployment</span></span> 
+  - <span data-ttu-id="66372-141">Hanterad distribution med Konfigurationshanteraren och Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="66372-141">Enterprise Managed Deployment using Configuration Manager and Microsoft Intune</span></span>
+  - <span data-ttu-id="66372-142">Distribution och hantering av appar med Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="66372-142">Application deployment and management using Microsoft Intune</span></span>
+  - <span data-ttu-id="66372-143">Distribution och egen installation av appar med Microsoft Store för företag</span><span class="sxs-lookup"><span data-stu-id="66372-143">App deployment and self-service installation using Microsoft Store for Business</span></span>
 
-  - <span data-ttu-id="4a5db-136">Grundläggande konfiguration för Azure Active Directory och Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4a5db-136">Basic setup for Azure Active Directory and Microsoft 365</span></span>
-  - <span data-ttu-id="4a5db-137">Nätverksoptimering med hjälp av leveransoptimering, peer-cachelagring i ConfigMgr och LEDBAT</span><span class="sxs-lookup"><span data-stu-id="4a5db-137">Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT</span></span>
-  - <span data-ttu-id="4a5db-138">Samhantering av ConfigMgr och Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="4a5db-138">ConfigMgr and Microsoft Intune Co-Management</span></span>
-  - <span data-ttu-id="4a5db-139">Fjärråtkomst (VPN)</span><span class="sxs-lookup"><span data-stu-id="4a5db-139">Remote Access (VPN)</span></span>
+### <a name="user-file-and-settings-migration"></a><span data-ttu-id="66372-144">Migrering av användares filer och inställningar</span><span class="sxs-lookup"><span data-stu-id="66372-144">User File and Settings Migration</span></span>
 
-### <a name="office-and-lob-app-delivery"></a><span data-ttu-id="4a5db-140">**Leverans av Office- och LOB-appar**</span><span class="sxs-lookup"><span data-stu-id="4a5db-140">**Office and LOB App Delivery**</span></span>
+  - <span data-ttu-id="66372-145">Migrering av filer i kända mappar</span><span class="sxs-lookup"><span data-stu-id="66372-145">Known Folder File Migration</span></span> 
+  - <span data-ttu-id="66372-146">Verktyg för migrering av användartillstånd</span><span class="sxs-lookup"><span data-stu-id="66372-146">User State Migration Tool</span></span> 
+  - <span data-ttu-id="66372-147">Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="66372-147">Enterprise State Roaming</span></span>
+  - <span data-ttu-id="66372-148">Anpassning av Start-menyn och borttagning UWP-app</span><span class="sxs-lookup"><span data-stu-id="66372-148">Start Menu Customization and UWP App Removal</span></span> 
+  - <span data-ttu-id="66372-149">Virtualisering av användargränssnitt (UE-V)</span><span class="sxs-lookup"><span data-stu-id="66372-149">User Experience Virtualization (UE-V)</span></span> 
 
-  - <span data-ttu-id="4a5db-141">Office 365 ProPlus-distribution med Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="4a5db-141">Office 365 ProPlus deployment using Microsoft Endpoint Configuration Manager</span></span>
-  - <span data-ttu-id="4a5db-142">Office 365 ProPlus-distribution med Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="4a5db-142">Office 365 ProPlus deployment using Microsoft Intune</span></span>
-  - <span data-ttu-id="4a5db-143">Distribution och hantering av appar med Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="4a5db-143">App deployment and management using Microsoft Intune</span></span>
-  - <span data-ttu-id="4a5db-144">Distribution och egen installation av appar med Microsoft Store för företag</span><span class="sxs-lookup"><span data-stu-id="4a5db-144">App deployment and self-service installation using Microsoft Store for Business</span></span>
-  - <span data-ttu-id="4a5db-145">Programkonvertering till UWP med Brygga för skrivbordsversion</span><span class="sxs-lookup"><span data-stu-id="4a5db-145">Desktop Bridge application conversion to UWP</span></span>
-  - <span data-ttu-id="4a5db-146">Windows App Certification Kit</span><span class="sxs-lookup"><span data-stu-id="4a5db-146">Windows App Certification Kit</span></span>
-  - <span data-ttu-id="4a5db-147">Åtgärder för webbläsarkompatibilitet med företagsläge för IE</span><span class="sxs-lookup"><span data-stu-id="4a5db-147">Browser compatibility remediation using Enterprise Mode for IE</span></span>
+### <a name="security-and-compliance"></a><span data-ttu-id="66372-150">Säkerhet och efterlevnad</span><span class="sxs-lookup"><span data-stu-id="66372-150">Security and Compliance</span></span>
 
-### <a name="user-file-and-settings-migration"></a><span data-ttu-id="4a5db-148">**Migrering av användares filer och inställningar**</span><span class="sxs-lookup"><span data-stu-id="4a5db-148">**User File and Settings Migration**</span></span>
+  - <span data-ttu-id="66372-151">BitLocker-diskkryptering</span><span class="sxs-lookup"><span data-stu-id="66372-151">BitLocker device encryption</span></span>
+  - <span data-ttu-id="66372-152">Windows Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="66372-152">Windows Defender Antivirus</span></span>
+  - <span data-ttu-id="66372-153">Windows Hello för företag</span><span class="sxs-lookup"><span data-stu-id="66372-153">Windows Hello for Business</span></span>
+  - <span data-ttu-id="66372-154">BIOS för UEFI-konvertering</span><span class="sxs-lookup"><span data-stu-id="66372-154">BIOS to UEFI Conversion</span></span>
+  - <span data-ttu-id="66372-155">Windows Defender Application Guard</span><span class="sxs-lookup"><span data-stu-id="66372-155">Windows Defender Application Guard</span></span>
+  - <span data-ttu-id="66372-156">Windows Defender Exploit Guard</span><span class="sxs-lookup"><span data-stu-id="66372-156">Windows Defender Exploit Guard</span></span>
+  - <span data-ttu-id="66372-157">Windows Defender-programreglering</span><span class="sxs-lookup"><span data-stu-id="66372-157">Windows Defender Application Control</span></span>
+  - <span data-ttu-id="66372-158">Windows Defender – avancerat skydd mot hot</span><span class="sxs-lookup"><span data-stu-id="66372-158">Windows Defender Advanced Threat Protection</span></span>
 
-  - <span data-ttu-id="4a5db-149">User State Migration Tool i aktivitetssekvenser för datoråterställning och -ersättning i ConfigMgr och MDT</span><span class="sxs-lookup"><span data-stu-id="4a5db-149">User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT</span></span>
-  - <span data-ttu-id="4a5db-150">Flytt av känd mapp i OneDrive</span><span class="sxs-lookup"><span data-stu-id="4a5db-150">OneDrive Known Folder Move</span></span>
-  - <span data-ttu-id="4a5db-151">Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="4a5db-151">Enterprise State Roaming</span></span>
+### <a name="os-deployment-and-feature-updates"></a><span data-ttu-id="66372-159">Distribution av operativsystem och uppdateringar av funktioner </span><span class="sxs-lookup"><span data-stu-id="66372-159">OS Deployment and Feature Updates</span></span>
 
-### <a name="security-and-compliance"></a><span data-ttu-id="4a5db-152">**Säkerhet och efterlevnad**</span><span class="sxs-lookup"><span data-stu-id="4a5db-152">**Security and Compliance**</span></span>
+  - <span data-ttu-id="66372-160">Skapa operativsystemavbildning</span><span class="sxs-lookup"><span data-stu-id="66372-160">OS Image Creation</span></span>
+  - <span data-ttu-id="66372-161">Aktivitetssekvenser för OS-distribution i konfigurationshanterare</span><span class="sxs-lookup"><span data-stu-id="66372-161">OS Deployment Task Sequences in Configuration Manager</span></span> 
+  - <span data-ttu-id="66372-162">Aktivitetssekvenser för OS-distribution i MDT</span><span class="sxs-lookup"><span data-stu-id="66372-162">OS Deployment Task Sequences in MDT</span></span>
+  - <span data-ttu-id="66372-163">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="66372-163">Windows Autopilot</span></span>
+  - <span data-ttu-id="66372-164">Konfigurera paket</span><span class="sxs-lookup"><span data-stu-id="66372-164">Provisioning Packages</span></span> 
 
-  - <span data-ttu-id="4a5db-153">BitLocker-diskkryptering</span><span class="sxs-lookup"><span data-stu-id="4a5db-153">BitLocker device encryption</span></span>
-  - <span data-ttu-id="4a5db-154">Windows Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="4a5db-154">Windows Defender Antivirus</span></span>
-  - <span data-ttu-id="4a5db-155">Windows Hello för företag</span><span class="sxs-lookup"><span data-stu-id="4a5db-155">Windows Hello for Business</span></span>
-  - <span data-ttu-id="4a5db-156">Konvertering från BIOS till UEFI för att möjliggöra virtualiseringsbaserad säkerhet</span><span class="sxs-lookup"><span data-stu-id="4a5db-156">BIOS to UEFI conversion as an enabler for virtualization-based security</span></span>
-  - <span data-ttu-id="4a5db-157">Windows Defender Credential Guard</span><span class="sxs-lookup"><span data-stu-id="4a5db-157">Windows Defender Credential Guard</span></span>
-  - <span data-ttu-id="4a5db-158">Windows Defender Application Guard</span><span class="sxs-lookup"><span data-stu-id="4a5db-158">Windows Defender Application Guard</span></span>
-  - <span data-ttu-id="4a5db-159">Windows Defender Exploit Guard</span><span class="sxs-lookup"><span data-stu-id="4a5db-159">Windows Defender Exploit Guard</span></span>
-  - <span data-ttu-id="4a5db-160">Windows Defender-programreglering</span><span class="sxs-lookup"><span data-stu-id="4a5db-160">Windows Defender Application Control</span></span>
-  - <span data-ttu-id="4a5db-161">Microsoft Defender Avancerat skydd</span><span class="sxs-lookup"><span data-stu-id="4a5db-161">Microsoft Defender Advanced Threat Protection</span></span>
+### <a name="windows-and-office-as-a-service"></a><span data-ttu-id="66372-165">Windows och Office som tjänst</span><span class="sxs-lookup"><span data-stu-id="66372-165">Windows and Office as a Service</span></span>
+  - <span data-ttu-id="66372-166">Hantera Windows-uppdateringar med grupprinciper</span><span class="sxs-lookup"><span data-stu-id="66372-166">Manage Windows Updates using Group Policy</span></span>
+  - <span data-ttu-id="66372-167">Underhålla Windows 10 med Konfigurationshanteraren och Intune</span><span class="sxs-lookup"><span data-stu-id="66372-167">Servicing Windows 10 with Configuration Manager and Intune</span></span>
+  - <span data-ttu-id="66372-168">Hantera Office 365 ProPlus med Konfigurationshanteraren</span><span class="sxs-lookup"><span data-stu-id="66372-168">Servicing Office 365 ProPlus with Configuration Manager</span></span>
 
-### <a name="os-deployment-and-feature-updates"></a><span data-ttu-id="4a5db-162">**Distribution av operativsystem och uppdateringar av funktioner**</span><span class="sxs-lookup"><span data-stu-id="4a5db-162">**OS Deployment and Feature Updates**</span></span>
+### <a name="new-windows-virtual-desktop"></a><span data-ttu-id="66372-169">NYHET!</span><span class="sxs-lookup"><span data-stu-id="66372-169">NEW!</span></span> <span data-ttu-id="66372-170">Windows Virtual Desktop</span><span class="sxs-lookup"><span data-stu-id="66372-170">Windows Virtual Desktop</span></span>
+  - <span data-ttu-id="66372-171">Windows Virtual Desktop: förbereda, distribuera, optimera</span><span class="sxs-lookup"><span data-stu-id="66372-171">Windows Virtual Desktop: Prepare, Deploy, Optimize</span></span> 
 
-  - <span data-ttu-id="4a5db-163">Skapa operativsystemavbildning</span><span class="sxs-lookup"><span data-stu-id="4a5db-163">OS image creation</span></span>
-  - <span data-ttu-id="4a5db-164">Aktivitetssekvenser för OS-distribution i ConfigMgr</span><span class="sxs-lookup"><span data-stu-id="4a5db-164">OS Deployment Task Sequences in ConfigMgr</span></span>
-      - <span data-ttu-id="4a5db-165">Bare Metal</span><span class="sxs-lookup"><span data-stu-id="4a5db-165">Bare Metal</span></span>
-      - <span data-ttu-id="4a5db-166">Återställning</span><span class="sxs-lookup"><span data-stu-id="4a5db-166">Refresh</span></span>
-      - <span data-ttu-id="4a5db-167">Ersättning</span><span class="sxs-lookup"><span data-stu-id="4a5db-167">Replacement</span></span>
-      - <span data-ttu-id="4a5db-168">Uppgradering</span><span class="sxs-lookup"><span data-stu-id="4a5db-168">Upgrade</span></span>
-  - <span data-ttu-id="4a5db-169">Aktivitetssekvenser för OS-distribution i MDT</span><span class="sxs-lookup"><span data-stu-id="4a5db-169">OS Deployment Task Sequences in MDT</span></span>
-  - <span data-ttu-id="4a5db-170">Funktionsuppdateringar med hjälp av aktivitetssekvenser för uppgradering i ConfigMgr</span><span class="sxs-lookup"><span data-stu-id="4a5db-170">Feature Updates using Upgrade Task Sequences in ConfigMgr</span></span>
-  - <span data-ttu-id="4a5db-171">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="4a5db-171">Windows Autopilot</span></span>
+### <a name="download-the-windows-and-office-deployment-lab-kit"></a><span data-ttu-id="66372-172">Ladda ned Windows and Office Deployment Lab Kit</span><span class="sxs-lookup"><span data-stu-id="66372-172">Download the Windows and Office Deployment Lab Kit</span></span>
 
-### <a name="windows-and-office-servicing"></a><span data-ttu-id="4a5db-172">**Underhåll av Windows och Office**</span><span class="sxs-lookup"><span data-stu-id="4a5db-172">**Windows and Office Servicing**</span></span>
+<span data-ttu-id="66372-173">[Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).</span><span class="sxs-lookup"><span data-stu-id="66372-173">[Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).</span></span>
 
-  - <span data-ttu-id="4a5db-173">Hantering av programuppdateringar med Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="4a5db-173">Software update management using Configuration Manager</span></span>
-  - <span data-ttu-id="4a5db-174">Uppdateringshantering för Office 365 ProPlus i Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="4a5db-174">Office 365 ProPlus update management in Configuration Manager</span></span>
-  - <span data-ttu-id="4a5db-175">Hantering av mobila enheter för Windows 10 med Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="4a5db-175">Mobile Device Management applied to Windows 10 using Microsoft Intune</span></span>
+<span data-ttu-id="66372-174">*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labben utgår 18 april 2020. En ny version kommer att publiceras före detta utgångsdatum.*</span><span class="sxs-lookup"><span data-stu-id="66372-174">*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*</span></span>
 
-### <a name="new-windows-virtual-desktop"></a><span data-ttu-id="4a5db-176">**NYTT! Windows Virtual Desktop**</span><span class="sxs-lookup"><span data-stu-id="4a5db-176">**NEW! Windows Virtual Desktop**</span></span>
-  - <span data-ttu-id="4a5db-177">Windows Virtual Desktop: förbereda, distribuera, optimera</span><span class="sxs-lookup"><span data-stu-id="4a5db-177">Windows Virtual Desktop: prepare, deploy, optimze</span></span> 
+## <a name="additional-guidance"></a><span data-ttu-id="66372-175">Ytterligare vägledning</span><span class="sxs-lookup"><span data-stu-id="66372-175">Additional guidance</span></span>
 
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>[<span data-ttu-id="4a5db-178">**Ladda ned Windows and Office Deployment Lab Kit**</span><span class="sxs-lookup"><span data-stu-id="4a5db-178">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+  - [<span data-ttu-id="66372-176">Center för skrivbordsdistribution</span><span class="sxs-lookup"><span data-stu-id="66372-176">Desktop Deployment Center</span></span>](https://www.aka.ms/howtoshift)
 
-<span data-ttu-id="4a5db-179">*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labben utgår 18 april 2020. En ny version kommer att publiceras före detta utgångsdatum.*</span><span class="sxs-lookup"><span data-stu-id="4a5db-179">*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*</span></span>
+  - [<span data-ttu-id="66372-177">Videor i skrivbordsdistributionsserien från Microsoft Mechanics</span><span class="sxs-lookup"><span data-stu-id="66372-177">Desktop Deployment series videos from Microsoft Mechanics</span></span>](https://www.aka.ms/watchhowtoshift)
 
-## <a name="additional-guidance"></a><span data-ttu-id="4a5db-180">**Ytterligare vägledning**</span><span class="sxs-lookup"><span data-stu-id="4a5db-180">**Additional guidance**</span></span>
+  - [<span data-ttu-id="66372-178">Operativsystemdistribution med Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="66372-178">Microsoft Endpoint Configuration Manager OS Deployment</span></span>](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [<span data-ttu-id="4a5db-181">Center för skrivbordsdistribution</span><span class="sxs-lookup"><span data-stu-id="4a5db-181">Desktop Deployment Center</span></span>](https://www.aka.ms/howtoshift)
+  - [<span data-ttu-id="66372-179"><span class="underline">Planera för distribution av Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="66372-179"><span class="underline">Plan for Windows 10 deployment</span></span></span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span data-ttu-id="4a5db-182">Videor i skrivbordsdistributionsserien från Microsoft Mechanics</span><span class="sxs-lookup"><span data-stu-id="4a5db-182">Desktop Deployment series videos from Microsoft Mechanics</span></span>](https://www.aka.ms/watchhowtoshift)
+  - [<span data-ttu-id="66372-180"><span class="underline">Distributionsguide för Office 365 ProPlus</span></span><span class="sxs-lookup"><span data-stu-id="66372-180"><span class="underline">Deployment guide for Office 365 ProPlus</span></span></span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-  - [<span data-ttu-id="4a5db-183">Operativsystemdistribution med Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="4a5db-183">Microsoft Endpoint Configuration Manager OS Deployment</span></span>](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [<span data-ttu-id="66372-181"><span class="underline">Komma igång med Intune</span></span><span class="sxs-lookup"><span data-stu-id="66372-181"><span class="underline">Getting Started with Intune</span></span></span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-  - [<span data-ttu-id="4a5db-184"><span class="underline">Planera för distribution av Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-184"><span class="underline">Plan for Windows 10 deployment</span></span></span>](https://docs.microsoft.com/windows/deployment/planning/index)
+## <a name="related-resources"></a><span data-ttu-id="66372-182">Relaterade resurser</span><span class="sxs-lookup"><span data-stu-id="66372-182">Related resources</span></span>
 
-  - [<span data-ttu-id="4a5db-185"><span class="underline">Distributionsguide för Office 365 ProPlus</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-185"><span class="underline">Deployment guide for Office 365 ProPlus</span></span></span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span data-ttu-id="66372-183"><span class="underline">Introduktion till Microsoft 365</span></span><span class="sxs-lookup"><span data-stu-id="66372-183"><span class="underline">Introducing Microsoft 365</span></span></span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
-  - [<span data-ttu-id="4a5db-186"><span class="underline">Komma igång med Intune</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-186"><span class="underline">Getting Started with Intune</span></span></span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [<span data-ttu-id="66372-184"><span class="underline">Office 365 för företag</span></span><span class="sxs-lookup"><span data-stu-id="66372-184"><span class="underline">Office 365 for business</span></span></span>](https://products.office.com/business/office)
 
-## <a name="related-resources"></a><span data-ttu-id="4a5db-187">**Relaterade resurser**</span><span class="sxs-lookup"><span data-stu-id="4a5db-187">**Related resources**</span></span>
+  - [<span data-ttu-id="66372-185"><span class="underline">Introduktion till Enterprise Mobility + Security</span></span><span class="sxs-lookup"><span data-stu-id="66372-185"><span class="underline">Introducing Enterprise Mobility + Security</span></span></span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - [<span data-ttu-id="4a5db-188"><span class="underline">Introduktion till Microsoft 365</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-188"><span class="underline">Introducing Microsoft 365</span></span></span>](https://www.microsoft.com/microsoft-365/default.aspx)
+  - [<span data-ttu-id="66372-186"><span class="underline">Windows 10 för företag</span></span><span class="sxs-lookup"><span data-stu-id="66372-186"><span class="underline">Windows 10 for enterprise</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - [<span data-ttu-id="4a5db-189"><span class="underline">Office 365 för företag</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-189"><span class="underline">Office 365 for business</span></span></span>](https://products.office.com/business/office)
-
-  - [<span data-ttu-id="4a5db-190"><span class="underline">Introduktion till Enterprise Mobility + Security</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-190"><span class="underline">Introducing Enterprise Mobility + Security</span></span></span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
-  - [<span data-ttu-id="4a5db-191"><span class="underline">Windows 10 för företag</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-191"><span class="underline">Windows 10 for enterprise</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
-  - [<span data-ttu-id="4a5db-192"><span class="underline">Windows 10 för små och medelstora företag</span></span><span class="sxs-lookup"><span data-stu-id="4a5db-192"><span class="underline">Windows 10 for small and medium business</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [<span data-ttu-id="66372-187"><span class="underline">Windows 10 för små och medelstora företag</span></span><span class="sxs-lookup"><span data-stu-id="66372-187"><span class="underline">Windows 10 for small and medium business</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
