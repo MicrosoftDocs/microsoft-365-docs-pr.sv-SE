@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom processen att migrera versioner av Microsoft Office, Office-servrar och Windows till Microsoft 365 Enterprise för hela organisationen.
-ms.openlocfilehash: 3a501ec7919972e5b8b289bbddb3bf7e6ae9a8f0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952024"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053089"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrering till Microsoft 365 Enterprise
 
@@ -46,7 +46,7 @@ Information om hur du migrerar användare och data för vissa Office 365-arbetsb
 Oavsett om din organisation är stor eller liten, kanske du använder en kombination av äldre versioner av Office-klientprodukter, t.ex. Word, Excel och PowerPoint. Dessa äldre versioner:
 
 - Kan [uppdateras](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) med de senaste säkerhetsuppdateringarna och supportkorrigeringarna, men processen är ibland manuell och kan kanske inte skalas i hela organisationen.
-- Har inte aktiverats optimalt till att använda Microsofts molnteknik och hjälpa dig att transformera ditt företag digitalt.
+- Har inte anpassats optimalt till att använda Microsofts molntekniker som hjälper dig att transformera din verksamhet digitalt.
 - Innehåller inga nya funktioner.
  
 Microsoft 365 Enterprise innehåller Office 365 ProPlus, en version av Office-klientprodukter som är tillgängliga med en Microsoft 365 Enterprise-licens och installeras och uppdateras från Microsoft Cloud. Office 365 ProPlus innehåller säkerhetsuppdateringar och de senaste funktionerna. Se [Om Office 365 ProPlus i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) för mer information.
@@ -92,7 +92,7 @@ Office 365 ProPlus installerar både säkerhetsuppdateringar och nya funktionsup
 Oavsett om din organisation är stor eller liten, kanske du använder en kombination av äldre versioner av Office-serverprodukter, t.ex. Exchange Server och SharePoint Server. Dessa äldre versioner:
 
 - Bör uppdateras med de senaste säkerhetsuppdateringarna och supportkorrigeringarna. I vissa fall släpps sådana uppdateringar varje månad.
-- Har inte aktiverats optimalt till att använda Microsofts molnteknik och hjälpa dig att transformera ditt företag digitalt.
+- Har inte anpassats optimalt till att använda Microsofts molntekniker som hjälper dig att transformera din verksamhet digitalt.
 - Innehåller inte nya produktivitetsprogram, t.ex. Microsoft Teams.
 - Innehåller inte de senaste säkerhetsfunktionerna, till exempel Advanced Threat Protection i Exchange.
 
