@@ -36,7 +36,7 @@ Microsoft rekommenderar att du slutför uppgifterna i följande tabell som gäll
 ||**Uppgift**|**Office 365 Business Premium**|**Microsoft 365 Företag**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |[Konfigurera multifaktorautentisering](secure-your-business-data.md#setup) <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2  <br/> |[Träna dina användare](secure-your-business-data.md#train) <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2  <br/> |[Utbilda dina användare](secure-your-business-data.md#train) <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |3  <br/> |[Använda dedikerade administratörskonton](secure-your-business-data.md#admin) <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4  <br/> |[Höj skyddsnivån mot skadlig kod i post](secure-your-business-data.md#malware) <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5  <br/> |[Skydda mot ransomware](secure-your-business-data.md#ransomware) <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
