@@ -16,22 +16,22 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Skräppostfiltrering är alltid aktiverat om du använder tjänsten för att skicka utgående e-post, vilket skyddar organisationer som använder tjänsten och deras avsedda mottagare.
-ms.openlocfilehash: e788310ae8fd3c0da7f1a39fbba2dc0d6e369d30
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3800134855d42870992105e66313100ee0d77cd5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893959"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081478"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>Konfigurera skräppostfiltrering utanför mängden i Office 365
 
-Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection -kund (EOP) utan Exchange Online-postlådor kontrolleras utgående e-postmeddelanden som skickas via EOP automatiskt efter skräppost och ovanliga skicka aktivitet.
+Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor kontrolleras utgående e-postmeddelanden som skickas via EOP automatiskt efter skräppost och ovanlig sändningsaktivitet.
 
 Utgående skräppost från en användare i organisationen anger vanligtvis ett komprometterat konto. Misstänkta utgående meddelanden markeras som skräppost (oavsett skräppostförtroendenivå eller SCL) och dirigeras genom [högriskleveranspoolen](high-risk-delivery-pool-for-outbound-messages.md) för att skydda tjänstens rykte (det vill än att hålla e-postservrar för Office 365 borta från IP-blockeringslistor). Administratörer meddelas automatiskt om misstänkt utgående e-postaktivitet och blockerade användare via [varningsprinciper](../../compliance/alert-policies.md).
 
-EOP använder utgående skräppostpolicyer som en del av organisationens övergripande försvar mot skräppost. Mer information finns [i Skydd mot skräppost i Office 365](anti-spam-protection.md).
+EOP använder utgående skräppostpolicyer som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost i Office 365](anti-spam-protection.md).
 
-Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för utgående skräppost. För större granularitet kan du också skapa anpassade principer för skräppost som är tillämpliga på specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (körordningen) för dina anpassade principer.
+Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för utgående skräppost. För större granularitet kan du också skapa anpassade principer för skräppost som är tillämpliga på specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
 Du kan konfigurera principer för skräppost från utgående företag i Office 365 Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Office 365-kunder. Exchange Online Protection PowerShell för fristående EOP-kunder).
 
@@ -65,19 +65,19 @@ Varje organisation har en inbyggd utgående skräppostprincip med namnet Standar
 
 - Den utgående skräppostfilterprincipen Standard tillämpas på alla mottagare i organisationen, även om det inte finns någon regel för utgående skräppostfilter (mottagarfilter) som är associerad med principen.
 
-- Principen Standard har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (principen tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen Standard.
+- Principen med namnet Standard har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (principen tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen som heter Standard.
 
-- Principen Standard är standardprincipen (egenskapen **IsDefault** har värdet) `True`och du kan inte ta bort standardprincipen.
+- Principen som heter Standard är standardprincipen (egenskapen **IsDefault** har värdet `True`), och du kan inte ta bort standardprincipen.
 
 Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade principer för skräppost med striktare inställningar som tillämpas på specifika användare eller grupper av användare.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Security & Compliance Center <https://protection.office.com/>på . Om du vill gå direkt till <https://protection.office.com/antispam>sidan Inställningar för **skräppost** använder du .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående Exchange Online Protection PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter innan du kan utföra dessa procedurer. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
 
 - Våra rekommenderade inställningar för utgående skräppostpolicyer finns i [EOP:s policyinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)för skräppostfilter .
 
@@ -87,13 +87,13 @@ Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade pri
 
 Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Center skapas skräppostfilterregeln och den tillhörande skräppostfilterprincipen samtidigt med samma namn för båda.
 
-1. Gå till **Policy** \> **Policy** \> **anti-spam**i Security & Compliance Center .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. Klicka på **Skapa en utgående princip**på sidan Inställningar för **skräppost.**
 
 3. Konfigurera följande inställningar i **principen För skräppostutgående skräppost** som öppnas:
 
-   - **Namn**: Ange ett unikt, beskrivande namn för principen.
+   - **Namn**: Ange ett unikt, beskrivande namn på principen.
 
    - **Beskrivning**: Ange en valfri beskrivning av principen.
 
@@ -101,15 +101,15 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
    - **Skicka en kopia av misstänkta utgående e-postmeddelanden till specifika personer:** Den här inställningen lägger till de angivna användarna som mottagare av hemlig kopia i de misstänkta utgående meddelandena. Så här aktiverar du den här inställningen:
 
-     A. Markera kryssrutan om du vill aktivera inställningen.
+     a. Markera kryssrutan om du vill aktivera inställningen.
 
-     B. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
+     b. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
 
      C. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
 
-     D. Klicka ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
+     D. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
 
-        Upprepa dessa steg så många gånger som behövs.
+        Upprepa de här stegen så många gånger det behövs.
 
         Mottagarna som du har lagt till visas i avsnittet **Mottagarlista** i det utfällbara fältet. Om du vill ![ta](../../media/scc-remove-icon.png)bort en mottagare klickar du på Knappen Ta bort .
 
@@ -124,15 +124,15 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
      Så här aktiverar du den här inställningen:
 
-     A. Markera kryssrutan om du vill aktivera inställningen.
+     a. Markera kryssrutan om du vill aktivera inställningen.
 
-     B. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
+     b. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
 
      C. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
 
-     D. Klicka ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
+     D. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
 
-        Upprepa dessa steg så många gånger som behövs.
+        Upprepa de här stegen så många gånger det behövs.
 
         Mottagarna som du har lagt till visas i avsnittet **Mottagarlista** i det utfällbara fältet. Om du vill ![ta](../../media/scc-remove-icon.png)bort en mottagare klickar du på Knappen Ta bort .
 
@@ -167,23 +167,23 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
 6. (Obligatoriskt) Expandera avsnittet **Tillämpat på** för att identifiera de interna avsändare som principen gäller för.
 
-    Du kan bara använda ett villkor eller ett undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden med samma villkor eller undantag använder ELLER-logik (till exempel _ \<sender1\> _ eller _ \<sender2\>_). Olika villkor eller undantag använder AND-logik (till exempel _ \<sender1\> _ och _ \<medlem i grupp 1\>_).
+    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden med samma villkor eller undantag använder ELLER-logik (till exempel _ \<sender1\> _ eller _ \<sender2\>_). Olika villkor eller undantag använder AND-logik (till exempel _ \<sender1\> _ och _ \<medlem i grupp 1\>_).
 
-    Det är enklast att klicka på **Lägg till ett villkor** tre gånger för att se alla tillgängliga villkor. Du kan ![klicka](../../media/scc-remove-icon.png) på Knappen Ta bort om du vill ta bort villkor som du inte vill konfigurera.
+    Det är enklast att klicka på **Lägg till ett villkor** tre gånger för att visa alla tillgängliga villkor. Om du vill ta bort villkor som du inte vill konfigurera kan du klicka på ![knappen Ta bort](../../media/scc-remove-icon.png).
 
-    - **Avsändarendomänen är**: Anger avsändare i en eller flera av de konfigurerade accepterade domänerna i Office 365. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** om du vill välja ytterligare domäner om mer än en domän är tillgänglig.
+    - **Avsändarendomänen är**: Anger avsändare i en eller flera av de konfigurerade accepterade domänerna i Office 365. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
 
-    - **Avsändaren är**: Anger en eller flera användare i organisationen. Klicka i **lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill markera ytterligare avsändare.
+    - **Avsändaren är**: Anger en eller flera användare i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill markera ytterligare avsändare.
 
-    - **Avsändaren är medlem i**: Anger en eller flera grupper i organisationen. Klicka i **lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill markera ytterligare avsändare.
+    - **Avsändaren är medlem i**: Anger en eller flera grupper i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill markera ytterligare avsändare.
 
-    - **Förutom om**: Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger för att se alla tillgängliga undantag. Inställningarna och beteendet är precis som villkoren.
+    - **Förutom om**: Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger, så visas alla tillgängliga undantag. Inställningarna och beteendet är likadana som villkoren.
 
 7. Klicka på **Spara** när du är klar.
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Använda Security & Compliance Center för att visa principer för skräppost från utgående
 
-1. Gå till **Policy** \> **Policy** \> **anti-spam**i Security & Compliance Center .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. På sidan **Inställningar för** skräppost ![kan](../../media/scc-expand-icon.png) du klicka på Expandera ikonen för att expandera en utgående skräppostpolicy:
 
@@ -195,7 +195,7 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
 ## <a name="use-the-security--compliance-center-to-modify-outbound-spam-policies"></a>Använda Security & Compliance Center för att ändra principer för skräppost för utgående
 
-1. Gå till **Policy** \> **Policy** \> **anti-spam**i Security & Compliance Center .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. På sidan **Inställningar för** skräppost ![kan](../../media/scc-expand-icon.png) du klicka på Expandera ikonen för att expandera en utgående skräppostpolicy:
 
@@ -209,33 +209,33 @@ För anpassade principer för utgående skräppost är de tillgängliga inställ
 
 För standardprincipen för utgående skräppost med namnet **Utgående skräppostfilterprincip**är avsnittet **Tillämpad** på inte tillgängligt (principen gäller för alla) och du kan inte byta namn på principen.
 
-Information om hur du aktiverar eller inaktiverar en princip anger du principprioritetsordningen eller konfigurerar karantänmeddelanden för slutanvändaren finns i följande avsnitt.
+Läs mer i följande avsnitt om du vill aktivera eller inaktivera en princip, ange prioritetsordningen för principerna eller konfigurera karantänaviseringar för slutanvändare.
 
 ### <a name="enable-or-disable-outbound-spam-policies"></a>Aktivera eller inaktivera principer för skräppost från utgående
 
-1. Gå till **Policy** \> **Policy** \> **anti-spam**i Security & Compliance Center .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. På sidan **Inställningar för** skräppost ![klickar](../../media/scc-expand-icon.png) du på Expandera ikonen för att expandera en anpassad princip som du har skapat (värdet i kolumnen **Typ** är **principen Anpassad utgående skräppost**).
 
-3. Lägg märke till värdet i kolumnen **På** i den utökade principinformationen som visas.
+3. Kontrollera värdet i kolumnen **På** i den utökade principinformationen som visas.
 
-   Flytta växlingsknappen åt vänster för att inaktivera principen: ![Växla av](../../media/scc-toggle-off.png)
+   Flytta växlingsknappen åt vänster om du vill inaktivera principen: ![Växlingsknapp inaktiverad](../../media/scc-toggle-off.png)
 
-   Flytta växlingsknappen åt höger för att aktivera principen: ![Växla på](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Flytta växlingsknappen åt höger om du vill aktivera principen: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
 
 Du kan inte inaktivera standardpolicyn för utgående skräppost.
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>Ange prioritet för anpassade principer för skräppost från utgående
 
-Som standard prioriteras principer för utgående skräppost som baseras på den ordning de skapades i (nyare principer har lägre prioritet än äldre principer). Ett högre prioritetsnummer anger en högre prioritet för principen (0 är högst) och principer bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två principer kan ha samma prioritet.
+Som standard prioriteras principer för utgående skräppost som baseras på den ordning de skapades i (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Två principer kan inte ha samma prioritet.
 
 Principer för anpassad skräppost visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen för utgående skräppost med namnet **Utgående skräppostfilterprincip** har **prioritetsvärdet Lägsta**och du kan inte ändra det.
 
-Om du vill ändra prioriteten för en princip flyttar du principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i säkerhets- & compliance center).
+Du ändrar prioriteten för en princip genom att flytta principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i Säkerhets- och efterlevnadscenter).
 
-1. Gå till **Policy** \> **Policy** \> **anti-spam**i Security & Compliance Center .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-2. På sidan **Inställningar för skräppost** hittar du de principer där värdet i kolumnen **Typ** är policy för **anpassad utgående skräppost**. Lägg märke till värdena i kolumnen **Prioritet:**
+2. På sidan **Inställningar för skräppost** hittar du de principer där värdet i kolumnen **Typ** är policy för **anpassad utgående skräppost**. Kontrollera värdena i kolumnen **Prioritet**:
 
    - Den anpassade utgående skräppostprincipen med ![högst prioritet](../../media/ITPro-EAC-DownArrowIcon.png) har värde nedåtpilen **ikon 0**.
 
@@ -243,17 +243,17 @@ Om du vill ändra prioriteten för en princip flyttar du principen uppåt eller 
 
    - Om du har tre eller flera anpassade utgående skräppostprinciper har ![principerna](../../media/ITPro-EAC-UpArrowIcon.png)![mellan högsta](../../media/ITPro-EAC-DownArrowIcon.png) och lägsta prioritet värden ikon](../../media/ITPro-EAC-DownArrowIcon.png) nedåtpilen **ikon n** (till exempel ![nedåtpilens nedåtpil ikon](../../media/ITPro-EAC-UpArrowIcon.png)![ **2**).
 
-3. Klicka ![Ikon för Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) eller ![Ikon för Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) om du vill flytta den anpassade principen för utgående skräppost uppåt eller nedåt i prioritetslistan.
+3. Klicka på ![ikonen Uppåtpil](../../media/ITPro-EAC-UpArrowIcon.png) eller ![ikonen Nedåtpil](../../media/ITPro-EAC-DownArrowIcon.png) om du vill flytta den anpassade principen för utgående skräppost uppåt eller nedåt i prioritetslistan.
 
 ## <a name="use-the-security--compliance-center-to-remove-outbound-spam-policies"></a>Använd Security & Compliance Center för att ta bort principer för skräppost från utgående
 
-1. Gå till **Policy** \> **Policy** \> **anti-spam**i Security & Compliance Center .
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
 2. På sidan **Inställningar för** skräppost ![klickar](../../media/scc-expand-icon.png) du på Ikonen Expandera för att expandera den anpassade principen som du vill ta bort (kolumnen **Typ** är **principen Anpassad utgående skräppost**).
 
-3. Klicka på **Ta bort princip**i den utökade principinformationen.
+3. I den utökade principinformationen som visas klickar du på **Ta bort princip**.
 
-4. Klicka på **Ja** i varningsdialogrutan som visas.
+4. Klicka på **Ja** i varningsrutan som visas.
 
 Du kan inte ta bort standardprincipen.
 
@@ -267,7 +267,7 @@ Att skapa en utgående skräppostprincip i PowerShell är en tvåstegsprocess:
 
 2. Skapa den utgående skräppostfilterregeln som anger den utgående skräppostfilterprincip som regeln gäller för.
 
- **Anmärkningar:**
+ **Anmärkningar**:
 
 - Du kan skapa en ny regel för skräppostfilter och tilldela den en befintlig, oassocierad utgående skräppostfilterprincip. En regel för skräppostfilter kan inte associeras med mer än en utgående skräppostfilterprincip.
 
@@ -311,7 +311,7 @@ I det här exemplet skapas en ny regel för skräppostfilter med namnet Contoso 
 
 - Den utgående skräppostfilterprincipen Contoso Executives är associerad med regeln.
 
-- Regeln gäller för medlemmar i gruppen Contoso Executives Group.
+- Regeln gäller alla medlemmar i gruppen med namnet Contoso Executives Group.
 
 ```PowerShell
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
@@ -423,7 +423,7 @@ I det här exemplet inaktiveras den utgående skräppostfilterregeln med namnet 
 Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Det här exemplet aktiverar samma regel.
+I det här exemplet aktiveras samma regel.
 
 ```PowerShell
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
@@ -433,7 +433,7 @@ Detaljerad syntax- och parameterinformation finns i [Aktivera-HostedOutboundSpam
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Använda PowerShell för att ange prioritet för regler för skräppostfilter
 
-Det högsta prioritetsvärdet som du kan ange för en regel är 0. Det lägsta värdet du kan ange beror på antalet regler. Om du till exempel har fem regler kan du använda prioritetsvärdena 0 till och med 4. Om du ändrar prioriteten för en befintlig regel kan det ha en kaskadeffekt på andra regler. Om du till exempel har fem anpassade regler (prioritet 0 till 4) och du ändrar prioriteten för en regel till 2, ändras den befintliga regeln med prioritet 2 till prioritet 3 och regeln med prioritet 3 ändras till prioritet 4.
+Det högsta prioritetsvärde du kan ange för en regel är 0. Det lägsta värde du kan ange beror på antalet regler. Om du till exempel har fem regler kan du använda prioritetsvärden från 0 till 4. Om du ändrar prioriteten för en befintlig regel kan det ha en dominoeffekt på andra regler. Om du till exempel har fem anpassade regler (prioriteterna 0 till 4) och du ändrar prioriteten för en regel till 2 ändras den befintliga regeln med prioritet 2 till prioritet 3, och regeln med prioritet 3 ändras till prioritet 4.
 
 Om du vill ange prioritet för en utgående skräppostfilterregel i PowerShell använder du följande syntax:
 
@@ -441,13 +441,13 @@ Om du vill ange prioritet för en utgående skräppostfilterregel i PowerShell a
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-I det här exemplet anges prioriteten för regeln Marknadsavdelningen till 2. Alla befintliga regler som har en prioritet som är mindre än eller lika med 2 minskas med 1 (deras prioritetsnummer ökas med 1).
+I det här exemplet anges prioriteten för regeln med namnet Marketing Department till 2. Alla befintliga regler som har en prioritet som är mindre än eller lika med 2 minskas med 1 (deras prioritetsnummer ökas med 1).’
 
 ```PowerShell
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Anmärkningar:**
+**Anmärkningar**:
 
 - Om du vill ange prioritet för en ny regel när du skapar den använder du parametern _Prioritet_ på cmdleten **New-HostedOutboundSpamFilterRule** i stället.
 
@@ -489,10 +489,9 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 Detaljerad syntax- och parameterinformation finns i [Ta bort värddyreradOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).
 
-
 ## <a name="for-more-information"></a>Mer information
 
-[Ta bort en användare från portalen med åtkomstbegränsade användare efter att användaren har skickat skräppost](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
+[Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Pool med hög riskleverans för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md)
 

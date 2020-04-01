@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: I följande tabell finns en lista över funktioner som är tillgängliga i EOP-tjänsten (Exchange Online Protection).
-ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032894"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081454"
 ---
 # <a name="eop-features"></a>EOP-funktioner
 
@@ -91,4 +91,4 @@ I följande tabell finns en lista över funktioner som är tillgängliga i EOP-t
 |**Andra funktioner**||
 |Ett geouppsagt globalt nätverk av servrar|EOP körs på ett världsomspännande nätverk av datacenter som är utformade för att ge bästa möjliga tillgänglighet. Mer information finns i avsnittet "EOP-datacenter" i [översikten över Exchange Online Protection](exchange-online-protection-overview.md).|
 |Meddelandeköer när den lokala servern inte kan ta emot e-post|Meddelanden i uppskov kvar i våra köer för en dag. Försök att skicka meddelanden baseras på felet vi får tillbaka från mottagarens e-postsystem. I genomsnitt görs ett nytt försök var femte minut. Mer information finns i Vanliga frågor och [svar om EOP i kö, uppskjutna och studsade meddelanden](eop-queued-deferred-and-bounced-messages-faq.md).|
-|Office 365-meddelandekryptering tillgänglig som tilläggstjänst|Mer information finns [i Kryptering i Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
+|Office 365-meddelandekryptering tillgänglig som tilläggstjänst|Mer information finns [i Kryptering i Office 365](../../compliance/encryption.md).|

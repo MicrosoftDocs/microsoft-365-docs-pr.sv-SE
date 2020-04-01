@@ -15,12 +15,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 803edd6fdf3d711a67b2ba4ff2e35f15c683c414
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+- remotework
+ms.openlocfilehash: 8b5cb7d8d8b16fea1c1bef44e477dfd43a79a3d8
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036355"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081332"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs de vanliga rekommenderade principerna för att skydda åtkomsten till molntjänster, inklusive lokala program som publiceras med Azure AD Application Proxy. 
@@ -41,18 +42,18 @@ Användning av multifaktorautentisering rekommenderas innan du registrerar enhet
 För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implementerar originalprinciperna i den ordning som anges i den här tabellen. MFA:s politik för känsligt och starkt reglerat skydd kan dock genomföras när som helst.
 
 
-|Skyddsnivå|Politik|Läs mer|
+|Skyddsnivå|Politik|Mer information|
 |:---------------|:-------|:----------------|
-|**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Blockera klienter som inte stöder modern autentisering](#block-clients-that-dont-support-modern-authentication)|Klienter som inte använder modern autentisering kan kringgå regler för villkorlig åtkomst, så det är viktigt att blockera dessa|
+|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
+|        |[Blockera klienter som inte har stöd för modern autentisering](#block-clients-that-dont-support-modern-authentication)|Klienter som inte använder modern autentisering kan kringgå regler för villkorlig åtkomst, så det är viktigt att blockera dessa|
 |        |[Högriskanvändare måste ändra lösenord](#high-risk-users-must-change-password)|Tvingar användare att ändra sitt lösenord när de loggar in om högriskaktivitet upptäcks för deras konto|
 |        |[Tillämpa APP-dataskyddsprinciper](#apply-app-data-protection-policies)|En princip per plattform (iOS, Android, Windows). Intune App Protection Policies (APP) är fördefinierade uppsättningar av skydd, från nivå 1 till nivå 3.|
 |        |[Kräv godkända appar och APP-skydd](#require-approved-apps-and-app-protection)|Tillämpar skydd av mobilappar för telefoner och surfplattor|
 |        |[Definiera principer för enhetsefterlevnad](#define-device-compliance-policies)|En policy för varje plattform|
-|        |[Kräv kompatibla datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Tillämpar Intune-hantering av datorer|
+|        |[Kräv kompatibla PC-datorer](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Tillämpar Intune-hantering av datorer|
 |**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Kräv kompatibla datorer *och* mobila enheter](#require-compliant-pcs-and-mobile-devices)|Tillämpar Intune-hantering för datorer och telefon/surfplattor|
-|**Mycket reglerad**|[*Kräver alltid* MFA](#require-mfa-based-on-sign-in-risk)|
+|**Strikt reglerad**|[*Kräver alltid* MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Tilldela principer till användare
@@ -104,9 +105,9 @@ Använd inställningarna baserat på den skyddsnivå du riktar dig till.
 
 |Egenskap|Skyddsnivå|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
-|Risknivå|Baslinje|Hög, medelhög|Kontrollera båda|
+|Risknivå|Grundläggande|Hög, medelhög|Kontrollera båda|
 | |Känslig|Hög, medelhög, låg|Kontrollera alla tre|
-| |Mycket reglerad| |Lämna alla alternativ avmarkerade för att alltid framtvinga MFA|
+| |Strikt reglerad| |Lämna alla alternativ avmarkerade för att alltid framtvinga MFA|
 
 **Åtkomstkontroller**
 
@@ -124,7 +125,7 @@ Använd inställningarna baserat på den skyddsnivå du riktar dig till.
 
 
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Blockera klienter som inte stöder modern autentisering
+## <a name="block-clients-that-dont-support-modern-authentication"></a>Blockera klienter som inte har stöd för modern autentisering
 1. Gå till [Azure-portalen](https://portal.azure.com)och logga in med dina autentiseringsuppgifter. När du har loggat in visas Azure-instrumentpanelen.
 
 2. Välj **Azure Active Directory** på den vänstra menyn.
@@ -178,8 +179,8 @@ Logga in på [Microsofthttps://portal.azure.com) Azure-portalen (](https://porta
 
 | Type (Typ) | Egenskaper | Värden                  | Anteckningar |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Tillåt åtkomst            | Sant  |
-|      | Access     | Kräv lösenordsändring | Sant  |
+|      | Åtkomst     | Tillåt åtkomst            | Sant  |
+|      | Åtkomst     | Kräv lösenordsändring | Sant  |
 
 **Recension:** ej tillämpligt
 
@@ -199,9 +200,9 @@ Om du vill se de specifika rekommendationerna för varje konfigurationsnivå och
 
 Med hjälp av principerna i konfigurationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md)mappas nivåerna För baslinje och känsligt skydd noggrant med de förbättrade dataskyddsinställningarna på nivå 2. Den starkt reglerade skyddsnivån mappar nära till nivå 3-inställningarna för högt dataskydd på nivå 3.
 
-|Skyddsnivå |Princip för appskydd  |Läs mer  |
+|Skyddsnivå |Princip för appskydd  |Mer information  |
 |---------|---------|---------|
-|Baslinje     | [Förbättrad dataskydd på nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | De principinställningar som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 1.         |
+|Grundläggande     | [Förbättrad dataskydd på nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | De principinställningar som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 1.         |
 |Känslig     | [Förbättrad dataskydd på nivå 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | De principinställningar som tillämpas på nivå 2 innehåller alla principinställningar som rekommenderas för nivå 1 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 1.        |
 |Mycket reglerad     | [Företagsnivå 3 högt dataskydd](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | De principinställningar som tillämpas på nivå 3 innehåller alla principinställningar som rekommenderas för nivå 1 och 2 och lägger bara till eller uppdaterar de principinställningar som finns under för att implementera fler kontroller och en mer sofistikerad konfiguration än nivå 2.        |
 

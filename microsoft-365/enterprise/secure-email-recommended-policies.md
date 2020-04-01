@@ -15,12 +15,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dd35bf0d7439a19d7b1562e7a0d0681679b34c36
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+- remotework
+ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035117"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081298"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policyrekommendationer för att skydda e-post
 
@@ -38,17 +39,17 @@ Följande diagram illustrerar de gemensamma principerna för identitet och enhet
 
 Om du inkluderade Exchange Online och Outlook i principernas omfattning när du konfigurerar dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska principerna i följande tabell och gör antingen de rekommenderade tilläggen eller bekräfta att dessa redan ingår. Varje regel länkar till tillhörande konfigurationsinstruktioner i artikeln [Gemensamma identitets- och enhetsåtkomstprinciper.](identity-access-policies.md)
 
-|Skyddsnivå|Politik|Läs mer|
+|Skyddsnivå|Politik|Mer information|
 |:---------------|:-------|:----------------|
-|**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelningen av molnappar|
-|        |[Blockera klienter som inte stöder modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Exchange Online i tilldelningen av molnappar|
+|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelningen av molnappar|
+|        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Exchange Online i tilldelningen av molnappar|
 |        |[Tillämpa APP-dataskyddsprinciper](identity-access-policies.md#apply-app-data-protection-policies)|Se till att Outlook ingår i listan över appar. Var noga med att uppdatera principen för varje plattform (iOS, Android, Windows)|
 |        |[Kräv godkända appar och APP-skydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Inkludera Exchange Online i listan över molnappar|
-|        |[Kräv kompatibla datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera Exchange Online i listan över molnappar|
+|        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera Exchange Online i listan över molnappar|
 |        |[Blockera ActiveSync-klienter](#block-activesync-clients)|Lägg till den här nya principen| 
 |**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Inkludera Exchange Online i tilldelningen av molnappar|
 |         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inkludera Exchange Online i listan över molnappar|
-|**Mycket reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelningen av molnappar|
+|**Strikt reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera Exchange Online i tilldelningen av molnappar|
 
 ## <a name="block-activesync-clients"></a>Blockera ActiveSync-klienter
 

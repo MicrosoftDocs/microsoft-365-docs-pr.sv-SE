@@ -16,14 +16,14 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: Få en översikt över SIEM-serverintegrering (Security Information and Event Management) med dina Microsoft 365-molntjänster och -program
-ms.openlocfilehash: d5adf0a72ac78475cb47f06732375ce01c0d72be
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a4ef144d02ebf0481481861c3dfa60a43b4f3ace
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807956"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081226"
 ---
-#  <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Siem-serverintegration (Security Information and Event Management) med Microsoft 365-tjänster och -program
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Siem-serverintegration (Security Information and Event Management) med Microsoft 365-tjänster och -program
 
 ## <a name="summary"></a>Sammanfattning
 
@@ -36,31 +36,33 @@ Använder eller planerar din organisation att skaffa en SIEM-server (Security In
 
 Om du behöver en SIEM-server beror på många faktorer, till exempel organisationens säkerhetskrav och var dina data finns. Microsoft 365 innehåller en mängd olika säkerhetsfunktioner som uppfyller många organisationers säkerhetsbehov utan ytterligare servrar, till exempel en SIEM-server. Vissa organisationer har särskilda omständigheter som kräver användning av en SIEM-server. Här är några exempel:
 
-- *Fabrikam* har visst innehåll och program lokalt, och vissa i molnet (de har en hybridmolndistribution). För att få säkerhetsrapporter över allt innehåll och alla program har Fabrikam implementerat en SIEM-server. 
+- *Fabrikam* har visst innehåll och program lokalt, och vissa i molnet (de har en hybridmolndistribution). För att få säkerhetsrapporter över allt innehåll och alla program har Fabrikam implementerat en SIEM-server.
 
 - *Contoso* är en organisation för finansiella tjänster som har särskilt stränga säkerhetskrav. De har lagt till en SIEM-server i sin miljö för att dra nytta av det extra säkerhetsskydd de behöver.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM-serverintegrering med Microsoft 365
 
-En SIEM-server kan ta emot data från en mängd olika Microsoft 365-tjänster och -program. I följande tabell visas flera Microsoft 365-tjänster och -program, tillsammans med SIEM-serverindata och resurser för att lära dig mer. 
+En SIEM-server kan ta emot data från en mängd olika Microsoft 365-tjänster och -program. I följande tabell visas flera Microsoft 365-tjänster och -program, tillsammans med SIEM-serverindata och resurser för att lära dig mer.
 
-| Microsoft 365-tjänst eller program | SIEM-serveringångar/metoder | Resurser för att lära dig mer |
-| --- | --- | --- |
-| [Avancerat hotskydd i Office 365](office-365-atp.md)  | Granskningsloggar | [SIEM-integrering med avancerat hotskydd i Office 365](siem-integration-with-office-365-ti.md) |
-| [Avancerat hotskydd för Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/) | HTTPS-slutpunkt som finns i Azure <br/>REST API| [Dra varningar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
-| [Säkerhet i Microsoft Cloud-appar](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Loggintegrering | [SIEM-integrering med Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
+||||
+|---|---|---|
+|**Microsoft 365-tjänst eller program**|**SIEM-serveringångar/metoder**|**Resurser för att få mer information**|
+|[Office 365 Avancerat skydd](office-365-atp.md)|Granskningsloggar|[SIEM-integrering med avancerat hotskydd i Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt som finns i Azure <br/>REST API|[Dra varningar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Loggintegrering|[SIEM-integrering med Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem)|
+|
 
 > [!TIP]
 > Ta en titt på [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel levereras med kopplingar för Microsoft-lösningar. Dessa kopplingar är tillgängliga "out of the box" och ger för integration i realtid. Du kan använda Azure Sentinel med dina Microsoft Threat Protection-lösningar och Microsoft 365-tjänster, inklusive Office 365, Azure AD, Azure ATP, Microsoft Cloud App Security med mera.
 
 ### <a name="audit-logging-must-be-turned-on"></a>Granskningsloggning måste vara aktiverat
 
-Kontrollera att granskningsloggning är aktiverat innan du konfigurerar INTEGRERING av SIEM-servrar. 
+Kontrollera att granskningsloggning är aktiverat innan du konfigurerar INTEGRERING av SIEM-servrar.
 
-- För SharePoint Online, OneDrive för företag och Azure Active Directory [aktiveras granskningsloggning i Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- För SharePoint Online, OneDrive för företag och Azure Active Directory [aktiveras granskningsloggning i Security & Compliance Center](../../compliance/turn-audit-log-search-on-or-off.md).
 
-- För Exchange Online [aktiveras granskningsloggning med Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
- 
+- För Exchange Online finns i [Hantera granskning av postlådan](../../compliance/enable-mailbox-auditing.md).
+
 ## <a name="more-resources"></a>Fler resurser
 
 [Integrera säkerhetslösningar i Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)

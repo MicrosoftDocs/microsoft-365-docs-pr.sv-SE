@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att identifiera orsakerna till och hur ett nätfiskemeddelanden kom fram och vad de ska göra för att förhindra fler nätfiskemeddelanden i framtiden.
-ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033656"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081214"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Justera skydd mot nätfiske i Office 365
 
@@ -45,7 +45,7 @@ Att rapportera nätfiskemeddelanden är användbart när du justerar de filter s
 
 Du kan undersöka rubrikerna i nätfiskemeddelandet för att se om det finns något du kan göra själv för att förhindra att fler nätfiskemeddelanden kommer fram. Med andra ord kan granskningen av meddelandenrubrikerna hjälpa dig att identifiera alla inställningar i organisationen som var ansvariga för att tillåta nätfiskemeddelandena.
 
-Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i meddelanderubrikerna för indikationer på överhoppad skräppost eller phish-filtrering i värdet För skräppostfiltrering (SFV). Meddelanden som hoppar över filtrering `SCL:-1`kommer att ha en post i , vilket innebär att en av dina inställningar tillåts detta meddelande genom att åsidosätta spam eller phish domar som bestämdes av tjänsten. Mer information om hur du får meddelanderubriker och en fullständig lista över alla tillgängliga rubriker mot skräppost och anti-phish finns i [Rubriker för skräppostmeddelanden](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers).
+Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i meddelanderubrikerna för indikationer på överhoppad skräppost eller phish-filtrering i värdet För skräppostfiltrering (SFV). Meddelanden som hoppar över filtrering `SCL:-1`kommer att ha en post i , vilket innebär att en av dina inställningar tillåts detta meddelande genom att åsidosätta spam eller phish domar som bestämdes av tjänsten. Mer information om hur du får meddelanderubriker och en fullständig lista över alla tillgängliga rubriker mot skräppost och anti-phish finns [i Rubriker för skräppostmeddelanden i Office 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Bästa praxis för att skydda
 
@@ -61,7 +61,7 @@ Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i me
 
   - Kontrollera att SPF-posten identifierar _alla_ e-postkällor för avsändare på domänen (glöm inte tjänster från tredje part!).
 
-  - Använd hårddisken\-( ) för att säkerställa att obehöriga avsändare avvisas av e-postsystem som är konfigurerade för att göra det. Du kan använda [falska underrättelser](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence) för att identifiera avsändare som använder din domän så att du kan inkludera auktoriserade avsändare från tredje part i SPF-posten.
+  - Använd hårddisken\-( ) för att säkerställa att obehöriga avsändare avvisas av e-postsystem som är konfigurerade för att göra det. Du kan använda [falska underrättelser](learn-about-spoof-intelligence.md) för att identifiera avsändare som använder din domän så att du kan inkludera auktoriserade avsändare från tredje part i SPF-posten.
 
   Instruktioner för konfiguration finns i:
   
@@ -71,8 +71,8 @@ Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i me
 
   - [Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md)
 
-- När det är möjligt rekommenderar vi att du levererar e-post till din domän direkt till Office 365. Med andra ord pekar du din Office 365-domäns MX-post till Office 365. Exchange Online Protection (EOP) kan ge det bästa skyddet för dina molnanvändare när deras e-post levereras direkt till Office 365. Om du måste använda ett e-posthygiensystem från tredje part framför EOP, se till att du har följt vägledningen [här](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
+- När det är möjligt rekommenderar vi att du levererar e-post till din domän direkt till Office 365. Med andra ord pekar du din Office 365-domäns MX-post till Office 365. Exchange Online Protection (EOP) kan ge det bästa skyddet för dina molnanvändare när deras e-post levereras direkt till Office 365. Om du måste använda ett e-posthygiensystem från tredje part framför EOP använder du Förbättrad filtrering för kontakter. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Multifaktorautentisering (MFA) är ett riktigt bra sätt att förhindra komprometterade konton. Du bör starkt överväga att aktivera MFA för alla dina användare. För en stegvis metod, börja med att aktivera MFA för dina mest känsliga användare (administratörer, chefer, etc.) innan du aktiverar MFA för alla. Instruktioner finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Multifaktorautentisering (MFA) är ett riktigt bra sätt att förhindra komprometterade konton. Du bör starkt överväga att aktivera MFA för alla dina användare. För en stegvis metod, börja med att aktivera MFA för dina mest känsliga användare (administratörer, chefer, etc.) innan du aktiverar MFA för alla. Instruktioner finns i [Konfigurera multifaktorautentisering](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Vidarebefordringsregler till externa mottagare används ofta av angripare för att extrahera data. Använd informationen **om vidarebefordrade postlåda** i [Microsoft Secure Score](../mtp/microsoft-secure-score.md) för att hitta och till och med förhindra vidarekopplingsregler till externa mottagare. Mer information finns i [Förmildrande regler](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)för extern vidarebefordran av klienter med säker poäng .

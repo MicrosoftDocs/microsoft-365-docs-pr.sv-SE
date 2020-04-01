@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan lära sig mer om instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807638"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081442"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Insikter om e-postflöde i Security & Compliance Center
 
@@ -64,7 +64,7 @@ Instrumentpanelen för e-postflödet är tillgänglig för:
 
 Mer information om den globala administratörsrollen för Office 365 finns i [Om office 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Var du hittar instrumentpanelen för e-postflödet
 

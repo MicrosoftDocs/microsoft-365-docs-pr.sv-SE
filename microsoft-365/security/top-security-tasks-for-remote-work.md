@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037482"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081310"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
@@ -62,7 +63,7 @@ Normalt rekommenderar Microsoft att du ger användarna 14 dagar på dig att regi
 Det tar bara några minuter att tillämpa dessa principer, men var beredd att stödja användarna under de närmaste dagarna.  
 
 
-|Plan  |Rekommendation  |
+|Planera  |Rekommendation  |
 |---------|---------|
 |Office 365-abonnemang (utan Azure AD P1 eller P2)     |[Aktivera säkerhetsstandarder i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Som standard i Azure AD ingår MFA för användare och administratörer.   |
 |Microsoft 365 E3 (med Azure AD P1)     | Använd [vanliga principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
@@ -165,8 +166,8 @@ Du kan också dra nytta av dessa tutorials:
 - [Använda Apples registreringsfunktioner för företagsenhet i Apple Business Manager (ABM) för att registrera iOS/iPadOS-enheter i Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 När du har registrerat enheter använder du vägledningen i principer för [gemensam identitet och enhetsåtkomst](../enterprise/identity-access-policies.md) för att skapa följande principer:
-- [Definiera principer för enhetsefterlevnad](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [Kräv kompatibla datorer](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) (regel för villkorlig åtkomst)
+- Definiera principer för [enhetsefterlevnad](../enterprise/identity-access-policies.md#define-device-compliance-policies) – De rekommenderade inställningarna för Windows 10 omfattar krav på antivirusskydd. Om du har Microsoft 365 E5 använder du Microsoft Defender Advanced Threat Protection för att övervaka hälsotillståndet för medarbetarenheter. Se till att efterlevnadsprinciper för andra operativsystem omfattar antivirusskydd och slutpunktsskydd. 
+- [Kräv kompatibla datorer](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) – Det här är regeln om villkorlig åtkomst i Azure AD som tillämpar principerna för enhetsefterlevnad.
 
 Endast en organisation kan hantera en enhet, så se till att utesluta gästkonton från regeln om villkorlig åtkomst i Azure AD. Om du inte utesluter gästanvändare och externa användare från principer som kräver enhetsefterlevnad blockerar dessa principer dessa användare. Mer information finns i [Uppdatera de gemensamma principerna för att tillåta och skydda gäståtkomst och extern åtkomst](../enterprise/identity-access-policies-guest-access.md).
 
@@ -174,7 +175,7 @@ Endast en organisation kan hantera en enhet, så se till att utesluta gästkonto
 
 Om du snabbt gör det möjligt för huvuddelen av dina anställda att arbeta hemifrån kan den här plötsliga växeln av anslutningsmönster ha en betydande inverkan på företagets nätverksinfrastruktur. Många nätverk skalades och utformades innan molntjänster antogs. I många fall är nätverk toleranta mot distansarbetare, men har inte utformats för att användas på distans av alla användare samtidigt.
 
-Nätverkselement som VPN-koncentratorer, central nätverksutgångsutrustning (t.ex. proxyservrar och dataförlustskydd), central internetbandbredd, backhaul MPLS-kretsar, NAT-kapacitet och så vidare utsätts plötsligt för enorma påfrestningar på grund av belastningen på hela verksamheten som använder dem. Slutresultatet är dålig prestanda och produktivitet i kombination med en dålig användarupplevelse för användare som anpassar sig till att arbeta hemifrån.
+Nätverkselement som VPN-koncentratorer, central nätverksutgående utrustning (t.ex. proxyservrar och dataförlustskydd), central internetbandbredd, backhaul MPLS-kretsar, NAT-kapacitet och så vidare utsätts plötsligt för enorma påfrestningar på grund av belastningen på hela verksamheten som använder dem. Slutresultatet är dålig prestanda och produktivitet i kombination med en dålig användarupplevelse för användare som anpassar sig till att arbeta hemifrån.
 
 Vissa av de skydd som traditionellt har tillhandahållits genom att dirigera trafik tillbaka via ett företagsnätverk tillhandahålls av molnapparna som användarna har åtkomst till. Om du har nått det här steget i den här artikeln har du implementerat en uppsättning avancerade molnsäkerhetskontroller för Microsoft 365-tjänster och data. Med dessa kontroller på plats kan du vara redo att dirigera fjärranvändares trafik direkt till Office 365. Om du fortfarande behöver en VPN-länk för åtkomst till andra program kan du avsevärt förbättra din prestanda och användarupplevelse genom att implementera delad tunnel. När du uppnår enighet i din oganization, kan detta ske inom en dag av en väl samordnad nätverk team.
 

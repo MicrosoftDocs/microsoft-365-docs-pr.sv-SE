@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: I det här avsnittet beskrivs hur du konfigurerar Microsoft Exchange Online Protection (EOP). Om du landade här från guiden Office 365-domäner går du tillbaka till office 365-domänguiden om du inte vill använda Exchange Online Protection. Om du letar efter mer information om hur du konfigurerar kopplingar läser du Konfigurera e-postflöde med kopplingar i Office 365.
-ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895149"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081238"
 ---
 # <a name="set-up-your-eop-service"></a>Konfigurera din EOP-tjänst
 
@@ -62,8 +62,7 @@ Kontrollera e-postflödet mellan tjänsten och din miljö. Mer information finns
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Steg 4: Tillåt inkommande port 25 SMTP-åtkomst
 
-När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridning av DNS-postuppdateringar. Därefter begränsar du inkommande port-25 SMTP-trafik på brandväggen eller e-postservrarna så att den endast tar emot e-post från EOP-datacenter, särskilt från IP-adresserna som anges på [Exchange Online Protection IP-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
-). Detta skyddar din lokala miljö genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på e-postservern som styr de IP-adresser som tillåts ansluta för e-postrelä uppdaterar du dessutom dessa inställningar.
+När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridning av DNS-postuppdateringar. Därefter begränsar du inkommande port-25 SMTP-trafik på brandväggen eller e-postservrarna så att den endast tar emot e-post från EOP-datacenter, särskilt från IP-adresserna som anges på [Exchange Online Protection IP-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Detta skyddar din lokala miljö genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på e-postservern som styr de IP-adresser som tillåts ansluta för e-postrelä uppdaterar du dessutom dessa inställningar.
 
 > [!TIP]
 > Konfigurera inställningar på SMTP-servern med en anslutningstid på 60 sekunder. Den här inställningen är godtagbar för de flesta situationer, vilket möjliggör viss fördröjning när det gäller ett meddelande som skickas med en stor bilaga, till exempel.
@@ -72,7 +71,7 @@ När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridn
 
 Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje användares skräppostmapp måste du utföra ett par konfigurationssteg. Stegen finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
 

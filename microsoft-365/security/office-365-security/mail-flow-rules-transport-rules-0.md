@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Du kan använda regler för e-postflöde (transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom din Office 365-organisation.
-ms.openlocfilehash: 42b55893a9884b547a0d2d36e901169153d290d7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42809352"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081430"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regler för e-postflöde (transportregler) i Exchange Online Protection
 
@@ -84,7 +84,7 @@ I följande tabell beskrivs de regelegenskaper som är tillgängliga i regler f�
 
 |**Egenskapsnamn i EAC**|**Parameternamn i PowerShell**|**Beskrivning**|
 |:-----|:-----|:-----|
-|**Priority (prioritet)**|_Priority (prioritet)_|Anger den ordning som reglerna tillämpas på meddelanden. Standardprioriteten baseras på när regeln skapas (äldre regler har högre prioritet än nyare regler och regler med högre prioritet bearbetas före regler med lägre prioritet). <br/><br/> Du ändrar regelprioriteten i EAC genom att flytta regeln uppåt eller nedåt i regellistan. I PowerShell anger du prioritetsnumret (0 har högsta prioritet). <br/><br/> Om du till exempel har en regel för att avvisa meddelanden som innehåller ett kreditkortsnummer och en annan som kräver godkännande, vill du att avvisningsregeln ska ske först och sluta tillämpa andra regler.  |
+|**Prioritet**|_Prioritet_|Anger den ordning som reglerna tillämpas på meddelanden. Standardprioriteten baseras på när regeln skapas (äldre regler har högre prioritet än nyare regler och regler med högre prioritet bearbetas före regler med lägre prioritet). <br/><br/> Du ändrar regelprioriteten i EAC genom att flytta regeln uppåt eller nedåt i regellistan. I PowerShell anger du prioritetsnumret (0 har högsta prioritet). <br/><br/> Om du till exempel har en regel för att avvisa meddelanden som innehåller ett kreditkortsnummer och en annan som kräver godkännande, vill du att avvisningsregeln ska ske först och sluta tillämpa andra regler.  |
 |**Läge**|_Läge_|Du kan ange om du vill att regeln ska börja bearbeta meddelanden omedelbart eller om du vill testa regler utan att påverka leveransen av meddelandet (med eller utan dataförlustskydd eller DLP-principtips). <br/><br/> Principtipsen visar en kort anteckning i Outlook eller Outlook på webben som innehåller information om möjliga policyöverträdelser till den person som skapar meddelandet. Mer information finns i **Policytips**. <br/><br/> Mer information om lägena finns i **Testa en regel för e-postflöde**.|
 |**Aktivera den här regeln på följande datum** <br/><br/> **Inaktivera den här regeln på följande datum**|_ActivationDate_ <br/> _UtgångsdatumDatum_|Anger datumintervallet när regeln är aktiv.|
 |**Markerad** eller inte markerad i kryssrutan markerad eller inte markerad|Nya regler: _Aktiverad_ parameter på cmdleten **New-TransportRule.** <br/><br/> Befintliga regler: Använd cmdlets **enable-transportRule** eller **Disable-TransportRule.** <br/><br/> Värdet visas i egenskapen **State** för regeln.|Du kan skapa en inaktiverad regel och aktivera den när du är redo att testa den. Du kan också inaktivera en regel utan att ta bort den för att bevara inställningarna.|
@@ -126,6 +126,6 @@ Det finns flera typer av meddelanden som passerar genom en organisation. I följ
 
 [Använda regler för e-postflöde för att granska bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[Kryptering av e-post i Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
+[Kryptering av e-post i Office 365](../../compliance/email-encryption.md)
 
 [Regelgränser för journal, transport och inkorg](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
