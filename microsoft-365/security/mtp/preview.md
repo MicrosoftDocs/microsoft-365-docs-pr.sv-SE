@@ -19,17 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42807585"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100905"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 Microsoft Threat Protection-tjänsten uppdateras ständigt för att inkludera nya funktionsförbättringar och funktioner.
@@ -43,12 +43,16 @@ Du får tillgång till kommande funktioner som du kan ge feedback på för att f
 
 Aktivera inställningen för förhandsgranskningsupplevelsen så att den är bland de första som kan prova kommande funktioner.
 
-1. Välj Inställningar**förhandsgranskningsfunktioner**i **navigeringsfönstret** > .
+1. Välj **Inställningar**i navigeringsfönstret .
 
-2. Välj **Aktivera förhandsgranskningsfunktioner**. 
+2. Välj **Microsoft Threat Protection**.
+
+
+3. Välj **Förhandsgranskningsfunktioner** > **Aktivera förhandsgranskningsfunktioner**. 
 
 3. Välj **Spara**.
 
 
 ## <a name="preview-features"></a>Förhandsgranska funktioner
 Det här avsnittet uppdateras med en lista över funktioner som förhandsgranskas när de blir tillgängliga för dig att prova. 
+
