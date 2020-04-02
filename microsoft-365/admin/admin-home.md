@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Få mer information om resurser som är tillgängliga för Microsoft 365-administratörer.
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: e38c15d0e68e908bada941443b019e9f243c7f11
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046921"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075602"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Hjälpcenter för Microsoft 365-administratörer
 
@@ -39,13 +39,13 @@ Få mer information om resurser som är tillgängliga för administratörer.
                     </div>
                     <div class="cardText">
                         <h3>Office 365 blir Microsoft 365</h3>
-                        <p>Vi ändrar namn på några av våra Office 365-och Microsoft 365-prenumerationer. Du behöver inte göra något. Tjänsterna, programmen och funktionerna är desamma, tillsammans med priset på din prenumeration. Namnet på din prenumerations uppdateras automatiskt i administrationscentret för Microsoft 365 och faktureringsuppgifterna kommer att uppdateras den 21 april 2020</p>
+                        <p>Vi ändrar namn på några av våra Office 365-och Microsoft 365-prenumerationer. Du behöver inte göra något. Tjänsterna, programmen och funktionerna är desamma, tillsammans med priset på din prenumeration. Namnet på din prenumeration uppdateras automatiskt i administrationscentret för Microsoft 365 och faktureringsuppgifterna kommer att uppdateras tidigast den 21 april 2020.</p>
                         <ul>
-                            <li><p>Office 365 Business Essentials är nu Microsoft 365 Business Basic</p></li>
-                            <li><p>Office 365 Business Premium är nu Microsoft 365 Business Standard</p></li>
-                            <li><p>Office 365 Business är nu Microsoft 365 Business Premium</p></li>
-                            <li><p>Office 365 Business är nu Microsoft 365-appar för företag</p></li>
-                            <li><p>Office 365 ProPlus är nu Microsoft 365-appar för enterprise</p></li>
+                            <li><p><b>Office 365 Business Essentials</b> är nu <b>Microsoft 365 Business Basic</b>.</p></li>
+                            <li><p><b>Office 365 Business Premium</b> är nu <b>Microsoft 365 Business Standard</b>.</p></li>
+                            <li><p><b>Office 365 Business</b> är nu <b>Microsoft 365 Business Premium</b>.</p></li>
+                            <li><p><b>Office 365 Business</b> är nu <b>Microsoft 365-applikationer för affärsverksamhet</b>.</p></li>
+                            <li><p><b>Office 365 ProPlus</b> är nu <b>Microsoft 365-appar för företag</b>.</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">Läs mer</a></p>
                     </div>
