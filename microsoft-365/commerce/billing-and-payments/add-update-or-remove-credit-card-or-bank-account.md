@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Läs om hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952012"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106054"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Lägga till, uppdatera eller ta bort dina betalningsmetoder
 
@@ -234,7 +234,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
   
 4. Uppdatera dina kreditkorts- eller bankkontouppgifter (namn på kreditkortet eller bankkontot, faktureringsadress. telefonnummer eller utgångsdatum) efter behov och välj sedan **Skicka**.
 
-5. Ett bekräftelsemeddelande visas. Om det inte gör det läser du [Felsökning av kreditkort och bankkonton](#troubleshooting-credit-cards-and-bank-accounts).
+5. Ett bekräftelsemeddelande visas. Om den inte gör det läser du Felsöka kreditkort och bankkonton senare i den här artikeln.
 
     ![Bekräftelsemeddelandet: "Din betalningsmetod har uppdaterats."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
   
 4. Uppdatera dina kreditkorts- eller bankkontouppgifter (namn på kreditkortet eller bankkontot, faktureringsadress. telefonnummer eller utgångsdatum) efter behov och välj sedan **Skicka**.
 
-5. Ett bekräftelsemeddelande visas. Om det inte gör det läser du [Felsökning av kreditkort och bankkonton](#troubleshooting-credit-cards-and-bank-accounts).
+5. Ett bekräftelsemeddelande visas. Om den inte gör det läser du Felsöka kreditkort och bankkonton senare i den här artikeln.
 
     ![Bekräftelsemeddelandet: "Din betalningsmetod har uppdaterats."](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 

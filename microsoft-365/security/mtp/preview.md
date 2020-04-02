@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
-ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
+ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100905"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113465"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
 
@@ -51,6 +51,9 @@ Aktivera inställningen för förhandsgranskningsupplevelsen så att den är bla
 3. Välj **Förhandsgranskningsfunktioner** > **Aktivera förhandsgranskningsfunktioner**. 
 
 3. Välj **Spara**.
+
+Du vet att du har aktiverat förhandsgranskningsfunktioner när du ser att kryssrutan **Aktivera förhandsgranskningsfunktioner** är markerad. 
+
 
 
 ## <a name="preview-features"></a>Förhandsgranska funktioner

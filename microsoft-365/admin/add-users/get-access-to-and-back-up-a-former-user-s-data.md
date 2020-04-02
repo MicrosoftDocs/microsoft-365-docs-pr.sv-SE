@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Läs om hur du bevarar en medarbetares filer och e-postmeddelanden när personen lämnar organisationen.
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809044"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105765"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
 
@@ -102,11 +102,15 @@ Som global administratör kan du ge dig själv tillgång till innehållet på en
 
 1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a> som global administratör eller SharePoint-administratör. 
 
+    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i organisationen.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a> som global administratör eller SharePoint-administratör.
+
+    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i organisationen.
 
 ::: moniker-end
 
@@ -114,9 +118,9 @@ Som global administratör kan du ge dig själv tillgång till innehållet på en
 
 1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a> som global administratör eller SharePoint-administratör.
 
-::: moniker-end
+    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i organisationen.
 
-   Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i organisationen.
+::: moniker-end
 
 2. Välj **Administrationscenter** \> **SharePoint**i den vänstra rutan . (Du kan behöva välja **Visa alla** för att se listan över administrationscenter.)
 
@@ -181,6 +185,10 @@ Outlook påbörjar exporten direkt om du inte skapar en ny Outlook-datafil (.pst
     
 Lär dig hur du [exporterar eller säkerhetskopierar e-post, kontakter och kalender till en PST-fil](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) i Outlook 2010. 
   
+  
+  > [!NOTE]
+  > Som standard är din e-post tillgänglig offline under en period av 12 månader. Om det behövs kan du se hur du [ökar tillgängliga data offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>Ge en annan användare åtkomst till en tidigare användares e-post 
 
 Om du vill ge åtkomst till den tidigare medarbetarens e-postmeddelanden, kalender, uppgifter och kontakter till en annan anställd importerar du informationen till en annan medarbetares Outlook-inkorg.
@@ -210,6 +218,9 @@ Om du vill ge åtkomst till den tidigare medarbetarens e-postmeddelanden, kalend
 8. Ange alternativen för importen av objekten. Vanligtvis behöver du inte ändra standardinställningarna.
     
 9. Välj **Slutför**.
+
+> [!NOTE]
+> Stegen förblir desamma för åtkomst till en befintlig användares OneDrive- och e-postdata.
     
 > [!TIP]
 > Om du bara vill importera eller återställa ett fåtal objekt från en Outlook-datafil (.pst) kan du öppna Outlook-datafilen. Dra sedan objekten från Outlook-datafilsmappar till befintliga Outlook-mappar i navigeringsfönstret. 
@@ -224,4 +235,3 @@ Om du vill ge åtkomst till den tidigare medarbetarens e-postmeddelanden, kalend
   
 [Bevarande och borttagning av OneDrive](/onedrive/retention-and-deletion)
   
-
