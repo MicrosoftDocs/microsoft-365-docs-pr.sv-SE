@@ -24,19 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Lägg till din domän i Office 365 i administrationscentret för Microsoft 365 genom att lägga till en DNS-post hos DNS-värden. Installationsguiden går igenom processen.
-ms.openlocfilehash: 86ca8f986624ad37f780961cb58923ea0a1b2308
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+description: Lägg till din domän i Office 365 i Microsoft 365-administrationscentret genom att lägga till en DNS-post hos din DNS-värd. Installationsguiden går igenom processen.
+ms.openlocfilehash: a6ef611ec210bbfb2299b6d41edb7d6410d50073
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857385"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116020"
 ---
 # <a name="add-a-domain-to-office-365"></a>Lägga till en domän i Office 365
 
  **[Läs frågor och svar om domäner](domains-faq.md)** om du inte hittar det du letar efter. 
   
- *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller ett [företagsabonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
+ *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller en [företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
 
  Följ dessa steg för att lägga till, konfigurera eller fortsätta konfigurera en domän. 
 
@@ -67,7 +67,7 @@ ms.locfileid: "42857385"
 
 ::: moniker-end
     
-2. Gå till sidan **Inställningar** > **domäner.** 
+2. Gå till sidan > **Installationsdomäner.** **Setup** 
 
 3. Välj **Lägg till domän**.
     
@@ -75,20 +75,20 @@ ms.locfileid: "42857385"
     
 5. Välj hur du vill verifiera att du äger domänen.
     
-    1. Om domänen är registrerad hos&amp;GoDaddy eller 1 1 väljer du **Logga in** > **Nästa** och Office 365 [konfigurerar dina poster automatiskt](../get-help-with-domains/domain-connect.md).
+    1. Om din domän är registrerad på&amp;GoDaddy eller 1 1 väljer du **Logga in** > **nästa** så [konfigurerar](../get-help-with-domains/domain-connect.md)Office 365 dina poster automatiskt .
     
-    2. Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod. Om du inte känner igen eller har tillgång till den registrerade e-postmeddelandet kan du använda det tredje alternativet.
+    2. Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod. Om du inte känner igen eller har tillgång till e-postmeddelandet kan du använda det tredje alternativet.
     
-    3. Du kan använda en TXT-post för att verifiera din domän. Välj detta och välj **Nästa** om du vill se instruktioner för hur du lägger till den här DNS-posten på registratorns webbplats. Det kan ta upp till 30 minuter att verifiera när du har lagt till posten. 
+    3. Du kan använda en TXT-post för att verifiera din domän. Välj det här och välj **Nästa** om du vill se instruktioner för hur du lägger till den här DNS-posten på registratorns webbplats. Det kan ta upp till 30 minuter att verifiera när du har lagt till posten. 
     
 6. Välj hur du vill göra de DNS-ändringar som krävs för att Office ska kunna använda domänen.
     
-    1. Välj **Lägg till DNS-posterna åt mig** om du vill att DNS ska konfigureras automatiskt. 
+    1. Välj **Lägg till DNS-posterna åt mig** om du vill att Dns ska konfigureras automatiskt. 
     
   
-    2. **Välj Jag lägger till DNS-posterna själv** om du bara vill koppla specifika Office 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och göra detta senare. **Välj det här alternativet om du vet exakt vad du gör.**
+    2. Välj **Jag lägger till DNS-posterna själv** om du bara vill koppla specifika Office 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och göra detta senare. **Välj det här alternativet om du vet exakt vad du gör.**
     
-7. Om du själv väljer att lägga till *DNS-poster* väljer du **Nästa** så visas en sida med alla poster som du behöver lägga till på din registratorwebbplats för att konfigurera domänen. 
+7. Om du själv väljer att lägga till *DNS-poster* väljer du **Nästa** och du ser en sida med alla poster som du behöver lägga till på registrarernas webbplats för att konfigurera domänen. 
     
   
   
@@ -98,9 +98,9 @@ ms.locfileid: "42857385"
     
     Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Om du vill vänta till senare bläddrar du till botten och väljer **Hoppa över det här steget**.
+    Om du vill vänta till senare bläddrar du längst ned och väljer **Hoppa över det här steget**.
     
-8. Välj **Slut -** du är klar! 
+8. Välj **Slutför** - du är klar! 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
@@ -112,4 +112,4 @@ ms.locfileid: "42857385"
 
 [Konfigurera din domän (tjänstspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Få hjälp med Office 365-domäner](../get-help-with-domains/get-help-with-domains.yml)
+[Få hjälp med Office 365-domäner](../get-help-with-domains/get-help-with-domains.md)

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Lär dig att spåra eventuella problem som du stöter på när du konfigurerar en anpassad domän genom att se till att DNS-posterna är korrekt konfigurerade.
-ms.openlocfilehash: 277e87ad6b06db0b1ef3b3cb5eaaa45a2e77ed6f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a93318d54b950b908319fe50a0cfedefe8586036
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42806554"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115985"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records-in-office-365"></a>Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "42806554"
 Det kan vara svårt att konfigurera din domän så att den fungerar med Office 365. DNS-systemet är omständigt att arbeta med, och DNS-konfigurationen för din domän påverkar viktiga företagsfunktioner som e-post!
 
 > [!NOTE]
-> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå till **Inställningar** > **domäner** och visa meddelanden i kolumnen **Status.** Om du ser ett problem väljer du Fler åtgärder (tre punkter) och väljer sedan **Kontrollera hälsotillstånd**. Fönstret som öppnas beskriver eventuella problem med domänen.
+> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå till > **installationsdomäner** och visa meddelandena i kolumnen **Status.** **Setup** Om du ser ett problem väljer du Fler åtgärder (tre punkter) och väljer sedan **Kontrollera hälsotillstånd**. Fönstret som öppnas beskriver eventuella problem med domänen.
   
 ## <a name="whats-going-on"></a>Vad är det som händer?
 
