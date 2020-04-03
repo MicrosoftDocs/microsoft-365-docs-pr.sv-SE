@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatiserade uppgraderingar av Windows 7 till Windows 10 för stora organisationer
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811840"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113487"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Automatiserade på plats-uppgraderingar av Windows 7 till Windows 10 för stora organisationer
 
-Från den 14 januari 2020 tillhandahålls inte längre säkerhetsuppdateringar eller support för datorer med Windows 7. Med bara några månader kvar att byta från Windows 7 till Windows 10 och flera alternativ att distribuera är en vanlig fråga i IT-communityn ”Vilket är det snabbaste sättet att gå över från Windows 7 till Windows 10?” Det korta svaret är att göra på plats-uppgraderingar för befintliga datorer och därefter minska fokus på flera aspekter av datordistributionsprocessen.
+Från den 14 januari 2020 tillhandahålls inte längre säkerhetsuppdateringar eller support för datorer med Windows 7. Eftersom det finns många distributionsalternativ för att byta från Windows 7 till Windows 10 är en vanlig fråga i IT-communityn vilket som är det snabbaste sättet att gå över från Windows 7 till Windows 10. Det korta svaret är att göra på plats-uppgraderingar för befintliga datorer och därefter minska fokus på flera aspekter av datordistributionsprocessen.
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ De nedtonade uppgifterna i distributionsprocessen är inte objekt som du kan ign
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>Tillförlitlighet, skydd och skalning för på plats-uppgraderingar
 
-På plats-uppgraderingar till Windows 10 är en tillförlitlig metod för att flytta en befintlig enhet med Windows 7 eller senare till Windows 10, utan att kräva filmigrering eller ominstallation av program. Efter en på plats-uppgradering är användarens filer, inställningar och tillgängliga appar är konsekventa med deras tidigare Windows 7-installation. Du kanske vill ta den här möjligheten att rensa befintliga appar eller inställningar men realistiskt sett håller tiden på att rinna ut för andra alternativ, när datumet då supporten upphör för Windows 7 i januari 2020 närmar sig. Uppgraderingar fungerar även när du flyttar från och till samma slags arkitektur (32-bitars till 32-bitars eller 64-bitars till 64-bitars) och från och till samma slags versioner av Windows (Professional till Pro eller Enterprise to Enterprise).
+På plats-uppgraderingar till Windows 10 är en tillförlitlig metod för att flytta en befintlig enhet med Windows 7 eller senare till Windows 10, utan att kräva filmigrering eller ominstallation av program. Efter en på plats-uppgradering är användarens filer, inställningar och tillgängliga appar är konsekventa med deras tidigare Windows 7-installation. Uppgraderingar fungerar även när du flyttar från och till samma slags arkitektur (32-bitars till 32-bitars eller 64-bitars till 64-bitars) och från och till samma slags versioner av Windows (Professional till Pro eller Enterprise to Enterprise).
 
 Uppgraderingsprocessen säkerhetskopierar som standard din tidigare Windows-installation som en del av uppgraderingen, så att vid ett uppgraderingsfel eller om en enhet eller ett program inte fungerar på rätt sätt efter uppgraderingen kan datorn återställas till Windows 7. Uppgraderade datorer har som standard 10 dagar, så du kan manuellt starta en återställning till Windows 7 om det behövs.
 

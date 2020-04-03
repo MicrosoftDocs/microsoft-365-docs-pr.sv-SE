@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs hur du migrerar användarnas filer och inställningar.
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811107"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113547"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Steg 4: Migrering av användares filer och inställningar
 
@@ -49,7 +49,7 @@ När det gäller att bestämma vad som ska behållas vid en flytt till en ny dat
 
 Om det här är ett alternativ för din organisation beror på vilken skala på migreringen du planerar. Det begränsas förstås av den tid och insats som behövs för att arbeta direkt med användarna, att förstå deras behov och kopiera filer till en ny eller uppdaterad dator.
 
-Om du väljer en manuell migrering kan du behöva göra en bedömning av om du kan utföra uppgiften senast i januari 2020 när stödet för Windows 7 går ut. Om det verkar tveksamt kan du fundera på att använda något av de automatiserade alternativen nedan eller begära fler personer som hjälper till.
+Om du väljer en manuell migrering kan du överväga att använda ett av alternativen nedan eller be om hjälp.
 
 ## <a name="automated-migration-using-usmt"></a>Automatiserad migrering med USMT 
 

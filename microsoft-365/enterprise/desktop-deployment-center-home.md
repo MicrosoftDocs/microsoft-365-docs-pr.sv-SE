@@ -16,17 +16,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Översikt över centret för skrivbordsdistribution.
-ms.openlocfilehash: 8e5c76595bb5f2f00e5a167be5a88bfbbd70d740
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 540f0d50ef8adc292fc1fbd4ef13bb12556d596c
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42808591"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113535"
 ---
 # <a name="desktop-deployment-center"></a>Center för skrivbordsdistribution
 
 <strong>Uppgradera från Windows 7 till Windows 10</strong>
-<p>Den utökade supporten för Windows 7 upphör 14 januari 2020. Uppgradering på plats från Windows 7 till Windows 10 är den snabbaste metoden för distribution. Du kan <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">uppgradera en enda dator</a> eller <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">uppgradera tusentals datorer med Microsofts verktyg Endpoint Configuration Manager</a>. Du behöver inte fokusera på appleverans, filmigrering, anpassad avbildning eller aktivering av molnbaserade tjänster med uppgraderingar på plats. Du kan använda verktyg som du redan har för att uppgradera befintliga datorer och fokusera på följande distributionssteg för uppgraderingar: </p>
+<p>Den utökade supporten för Windows 7 upphörde 14 januari 2020. Uppgradering på plats från Windows 7 till Windows 10 är den snabbaste metoden för distribution. Du kan <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">uppgradera en enda dator</a> eller <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">uppgradera tusentals datorer med Microsofts verktyg Endpoint Configuration Manager</a>. Du behöver inte fokusera på appleverans, filmigrering, anpassad avbildning eller aktivering av molnbaserade tjänster med uppgraderingar på plats. Du kan använda verktyg som du redan har för att uppgradera befintliga datorer och fokusera på följande distributionssteg för uppgraderingar: </p>
 
 <p>
 </p>
@@ -115,7 +115,7 @@ Följ stegen nedan för att planera och utföra din storskaliga distribution av 
 <tr class="even">
 <td><a href="https://aka.ms/mdd2"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd2">Steg 2: Katalog- och nätverksberedskap</a></strong></p>
-<p>Molnanslutna tjänster i Office 365 ProPlus och nya distributionsalternativ som Windows Autopilot kräver Azure Active Directory. Din nätverks- och anslutningsbarhet är också viktig att planera vid förflyttning av Windows-bilder, appar, drivrutiner och relaterade filer till datorerna. Lär dig hur nya verktyg och alternativ för distribution minskar och strömlinjeformar nätverkstrafiken.</p></td>
+<p>Molnanslutna tjänster i Office 365 ProPlus och nya distributionsalternativ som Windows Autopilot kräver Azure Active Directory. Ditt nätverk och dina anslutningar är också viktiga när du planerar att flytta Windows-avbildningar, appar, drivrutiner och relaterade filer till datorerna. Lär dig hur nya verktyg och alternativ för distribution minskar och strömlinjeformar nätverkstrafiken.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom processen att migrera versioner av Microsoft Office, Office-servrar och Windows till Microsoft 365 Enterprise för hela organisationen.
-ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053089"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113510"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrering till Microsoft 365 Enterprise
 
@@ -171,7 +171,7 @@ Se hur IT-experter på Microsoft migrerade företaget till Microsoft 365 Enterpr
 
 ## <a name="transition-your-entire-organization"></a>En övergång för hela organisationen
 
-Om du vill få en bättre bild av hur du kan flytta hela organisationen till produkterna och tjänsterna i Microsoft 365 Enterprise, kan du ladda ner [övergångsaffischen](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Om du vill få en bättre bild av hur du kan flytta hela organisationen till produkterna och tjänsterna i Microsoft 365 Enterprise kan du studera [övergångsaffischen](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Bild på affischen för övergång till Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
