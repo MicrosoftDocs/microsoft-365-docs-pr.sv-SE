@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Läs om hur du avbryter utvärderingsversionen av Office 365 för företag eller Microsoft 365 eller betald prenumeration.
-ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
+ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42812308"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117950"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
@@ -94,13 +94,14 @@ Om du avbryter en prenumeration före terminens flyttas prenumerationen direkt t
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Det här kan du förvänta dig för dig själv och dina användare om du avbryter en prenumeration
   
-- **Åtkomst till administratör** Administratörer kan fortfarande logga in och komma åt administrationscentret och köpa andra prenumerationer efter behov. Som global administratör eller faktureringsadministratör har du 90 dagar på dig att [återaktivera prenumerationen](reactivate-your-subscription.md) med alla data intakta. 
-    
+- **Åtkomst till administratör** Administratörer kan fortfarande logga in och komma åt administrationscentret och köpa andra prenumerationer efter behov. Som global administratör eller faktureringsadministratör har du 90 dagar på dig att [återaktivera prenumerationen](reactivate-your-subscription.md) med alla data intakta.
+
 - **Användaråtkomst** Användarna kan inte använda tjänster som OneDrive för företag eller komma åt kunddata som e-post eller dokument på gruppwebbplatser. Office-program, som Word och Excel, flyttas så småningom till ett skrivskyddat läge med nedsatt funktionalitet och [meddelanden om ej licensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) visas.
-    
- **Viktigt** Om du vill att dina prenumerationsdata ska tas bort innan den typiska inaktiverade perioden är över kan du begära snabb avetablering. När du begär snabb avetablering raderas dina prenumerationsuppgifter inom 3 dagar efter uppsägningen. Om du vill använda snabb avetablering [ringer du support](../../admin/contact-support-for-business-products.md).
-  
+
 Mer information finns i [Vad händer med mina data och åtkomst när min prenumeration avslutas?](what-if-my-subscription-expires.md)
+
+> [!IMPORTANT]
+> Om du vill att dina prenumerationsdata ska tas bort innan den vanliga inaktiverade perioden är över kan du [stänga kontot](../close-your-account.md).
 
 ## <a name="other-steps-you-might-have-to-take"></a>Andra åtgärder du kanske måste vidta
 
