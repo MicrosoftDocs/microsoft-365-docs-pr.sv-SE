@@ -15,12 +15,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
 description: Snabblänkar för de vanligaste administrativa uppgifterna i Office 365.
-ms.openlocfilehash: 06d745bc4b3487ca05888e390b7100596bced6c9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897077"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126005"
 ---
 # <a name="manage"></a>Hantera
 
@@ -132,7 +132,7 @@ Snabblänkar för de vanligaste administrativa uppgifterna i Office 365.
                     <div class="cardText">
                         <h3>Microsoft Teams</h3>
                             <p><a href="https://go.microsoft.com/fwlink/p/?linkid=863169">Översikt över Microsoft Teams</a></p>
-                            <p><a href="https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams">Microsoft-team</a></p>
+                            <p><a href="https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams">Microsoft Teams</a></p>
                             <p><a href="https://docs.microsoft.com/SkypeForBusiness/set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users">Tillåta att användarna kan kontakta externa användare</a></p>
                             <p><a href="https://docs.microsoft.com/SkypeForBusiness/set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts">Tillåta att användarna kan kontakta Skype-användare</a></p>
                             <p><a href="https://docs.microsoft.com/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online">Konfigurera Skype för företag - online</a></p>
@@ -152,7 +152,6 @@ Snabblänkar för de vanligaste administrativa uppgifterna i Office 365.
                         <h3>E-post</h3>
                             <p><a href="../add-users/add-users.md">Lägga till en ny medarbetare</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">Åtgärder när e-postmeddelanden inte skickas</a></p>
-                            <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Felsöka e-postproblem</a></p>
                             <p><b>Fler uppgifter:</b> <a href="../email/email.md">E-post i Office 365 för företag</a></p>
                     </div>
                 </div>
@@ -170,7 +169,7 @@ Snabblänkar för de vanligaste administrativa uppgifterna i Office 365.
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">Hantera delning i OneDrive och SharePoint</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">Ange standardlagringsutrymme för OneDrive-användare</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">Åtgärda OneDrive-synkroniseringsproblem</a></p>
-                            <p><b>Fler uppgifter:</b> <a href="https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb">OneDrive i Office 365</a></p>
+                            <p><b>Fler uppgifter:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive i Office 365</a></p>
                     </div>
                 </div>
             </div>
@@ -181,7 +180,7 @@ Snabblänkar för de vanligaste administrativa uppgifterna i Office 365.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Sharepoint</h3>
+                        <h3>SharePoint</h3>
                             <p><a href="https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off">Aktivera eller inaktivera extern delning för SharePoint Online</a></p>
                             <p><a href="https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center">Skapa och hantera webbplatser</a></p>
                             <p><a href="https://docs.microsoft.com/sharepoint/planning-hub-sites">Planeringsguide för intranät</a></p>
