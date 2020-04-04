@@ -1,5 +1,5 @@
 - name: Administrationsstart
-  href: admin-home.yml
+  href: admin-home.md
   items:
     - name: Översikt
       items:
@@ -86,8 +86,8 @@
     - name: E-post
       items:
         - name: Skicka i Office 365
-          href: email/email.yml
-        - name: E-postinställningar för användare av Office 365
+          href: email/email.md
+        - name: E-postinställningar för Office 365-användare
           href: email/office-365-user-email-settings.md
         - name: Lägga till ytterligare ett e-postalias för en användare
           href: email/add-another-email-alias-for-a-user.md
@@ -154,7 +154,7 @@
     - name: Hantera
       items:
         - name: Hantera Office 365
-          href: manage/manage.yml
+          href: manage/manage.md
         - name: Ändra kontaktinställningar
           href: manage/change-contact-preferences.md
         - name: 'Ändra adress, kontakt med mera'
@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Lösa licenskonflikter
           href: manage/resolve-license-conflicts.md
-        - name: Hantera meddelanden i meddelandecentret
-          href: manage/manage-messages.md
+        - name: Visa eller dölja nya funktioner med hjälp av Nyheter
+          href: manage/show-hide-new-features.md
     - name: Prenumerationer och fakturering
       items:
         - name: Hantera dina abonnemang
@@ -202,7 +202,7 @@
     - name: Domäner
       items:
         - name: Domäner i Office 365
-          href: get-help-with-domains/get-help-with-domains.yml
+          href: get-help-with-domains/get-help-with-domains.md
         - name: Vad är en domän?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Köpa ett domännamn
