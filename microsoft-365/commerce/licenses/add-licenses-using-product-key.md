@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Läs om hur du lägger till licenser i din prenumeration.
-ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: aa924c3c485f33fa831d140413ebfd2d872f30ff
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951952"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142245"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Lägga till licenser i eller utöka en prenumeration som betalats för att använda en produktnyckel
 
@@ -41,9 +41,6 @@ Förbetalda användarlicenser utfärdas till dig som en alfanumerisk kod med 25 
 ## <a name="add-licenses-to-your-subscription"></a>Lägga till licenser i din prenumeration
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
@@ -101,9 +98,6 @@ Förbetalda användarlicenser utfärdas till dig som en alfanumerisk kod med 25 
 ## <a name="extend-the-expiration-date-of-your-subscription"></a>Förläng prenumerationens utgångsdatum
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 

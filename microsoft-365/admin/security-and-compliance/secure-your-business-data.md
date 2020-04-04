@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 68e5061b7238d456ee0397a50eff37f07214d13f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808185"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142521"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>De 10 bästa sätten att skydda Office 365 och Microsoft 365 Business-abonnemang
 
@@ -155,7 +155,8 @@ Om du vill skapa en regel för e-posttransport kan du visa en [kort träningsvid
 |Använd den här regeln om . . .  <br/> |Alla bifogade filer . . . filändelsen matchar . . .  <br/> |Alla bifogade filer . . . filändelsen matchar . . .  <br/> |
 |Ange ord eller fraser  <br/> |Lägg till följande filtyper:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Lägg till följande filtyper:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif  <br/> |
 |Gör följande . . .  <br/> |Meddela mottagaren med ett meddelande  <br/> |Blockera meddelandet . . . avvisa meddelandet och inkludera en förklaring  <br/> |
-|Ange meddelandetext  <br/> |Öppna inte dessa typer av filer , om du inte förväntade dig dem, eftersom filerna kan innehålla skadlig kod och veta avsändaren är inte en garanti för säkerhet.  <br/> ||
+|Ange meddelandetext  <br/> |Öppna inte dessa typer av filer , om du inte förväntade dig dem, eftersom filerna kan innehålla skadlig kod och veta avsändaren är inte en garanti för säkerhet.  <br/>|
+|
    
 > [!TIP]
 > Du kan också lägga till de filer som du vill blockera i listan Mot skadlig kod i [steg 4](#4-raise-the-level-of-protection-against-malware-in-mail).
@@ -247,8 +248,16 @@ Om du vill skapa en ATP-policy mot nätfiske kan du visa en [kort träningsvideo
     
 6. När du har granskat inställningarna väljer du **Skapa den här principen** eller **Spara**, beroende på vad som är lämpligt.
     
-| | | **Inställning eller alternativ**|**Rekommenderad inställning** <br/>
-| Namn  <br/> | Domän och mest värdefull kampanjpersonal  <br/> | | Beskrivning  <br/> | Se till att den viktigaste personalen och vår domän inte personifieras.  <br/> | | Lägga till användare som ska skyddas  <br/> | Välj **+ Lägg till ett villkor, Mottagaren är**. Skriv användarnamn eller ange kandidatens, kampanjchefens och andra viktiga medarbetares e-postadress. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> | | Lägga till domäner som ska skyddas  <br/> | Välj **+ Lägg till ett villkor, Mottagarens domän är**. Ange den anpassade domän som är kopplad till din Microsoft 365-prenumeration, om du har definierat en sådan. Du kan ange mer än en domän.  <br/> | | Välj åtgärder  <br/> | Om e-post skickas av en personifierad användare: välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. till exempel securityadmin@contoso.com.          Om e-post skickas av en personifierad domän väljer du **Karantänmeddelande**.  <br/> | | Information om brevlåda  <br/> | Som standard väljs postlådeinformation när du skapar en ny anti-phishing-princip. Lämna den här inställningen **På** för bästa resultat.  <br/> | | Lägga till betrodda avsändare och domäner  <br/> | I det här exemplet definierar du inte några åsidosättningar.  <br/> | | Tillämpas på  <br/> | Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel contoso.com i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
+|**Inställning eller alternativ**|**Rekommenderad inställning** <br/>|
+| :-------| :-----|
+|Namn  <br/> |Domän och mest värdefull kampanjpersonal  <br/> |
+|Beskrivning  <br/> |Se till att den viktigaste personalen och vår domän inte personifieras.  <br/> |
+|Lägga till användare som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagaren är**. Skriv användarnamn eller ange kandidatens, kampanjchefens och andra viktiga medarbetares e-postadress. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> |
+|Lägga till domäner som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagarens domän är**. Ange den anpassade domän som är kopplad till din Microsoft 365-prenumeration, om du har definierat en sådan. Du kan ange mer än en domän.  <br/> |
+|Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. till exempel securityadmin@contoso.com.          Om e-post skickas av en personifierad domän väljer du **Karantänmeddelande**.  <br/> |
+|Information om brevlåda  <br/> |Som standard väljs postlådeinformation när du skapar en ny anti-phishing-princip. Lämna den här inställningen **På** för bästa resultat.  <br/> |
+|Lägga till betrodda avsändare och domäner  <br/> |I det här exemplet definierar du inte några åsidosättningar.  <br/> |
+|Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel contoso.com i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
    
 Mer information finns i [Konfigurera Office 365 ATP-principer mot nätfiske](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -272,8 +281,15 @@ Om du vill skapa en ATP-princip för säker bifogad fil kan du visa en [kort tr�
 6. Använd inställningarna i följande tabell. 
     
 7. När du har granskat inställningarna väljer du **Skapa den här principen** eller **Spara**, beroende på vad som är lämpligt.
-    
-| | | **Inställning eller alternativ**|**Rekommenderad inställning** <br/>| | Namn  <br/> | Blockera nuvarande och framtida e-postmeddelanden med upptäckt skadlig kod.  <br/> | | Beskrivning  <br/> | Blockera aktuella och framtida e-postmeddelanden och bilagor med upptäckt skadlig kod.  <br/> | | Spara okända skadliga filer för okänd skadlig kod  <br/> | Välj **Blockera - Blockera aktuella och framtida e-postmeddelanden och bilagor med upptäckt skadlig kod**.  <br/> | | Omdirigera bifogad fil vid identifiering  <br/> | Aktivera omdirigering (välj den här rutan) Ange administratörskontot eller en postlåda för karantän.          Använd markeringen ovan om du söker efter bilagor eller fel uppstår (markera den här rutan).  <br/> | | Tillämpas på  <br/> | Mottagardomänen är . . . välj domän.  <br/> |
+
+|**Inställning eller alternativ**|**Rekommenderad inställning** <br/>|
+| :-------| :-----|
+|Namn  <br/> |Blockera nuvarande och framtida e-postmeddelanden med upptäckt skadlig kod.  <br/> |
+|Beskrivning  <br/> |Blockera aktuella och framtida e-postmeddelanden och bilagor med upptäckt skadlig kod.  <br/> |
+|Spara okända skadliga filer för okänd skadlig kod  <br/> |Välj **Blockera - Blockera aktuella och framtida e-postmeddelanden och bilagor med upptäckt skadlig kod**.  <br/> |
+|Omdirigera bifogad fil vid identifiering  <br/> |Aktivera omdirigering (välj den här rutan) Ange administratörskontot eller en postlåda för karantän.          Använd markeringen ovan om du söker efter bilagor eller fel uppstår (markera den här rutan).  <br/> |
+|Tillämpas på  <br/> |Mottagardomänen är . . . välj domän.  <br/> |
+|
    
 Mer information finns i [Konfigurera Office 365 ATP-principer mot nätfiske](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -312,6 +328,12 @@ Så här skapar du en ny princip som riktar sig till alla mottagare på domänen
     
 3. Välj **Spara**. 
     
-| | | **Inställning eller alternativ**|**Rekommenderad inställning** <br/>| | Namn  <br/> | Princip för säkra länkar för alla mottagare i domänen  <br/> | | Välj åtgärden för okända potentiellt skadliga url:er i meddelanden  <br/> | Välj **På - webbadresser skrivs om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken**.  <br/> | | Använd säkra bilagor för att skanna nedladdningsbart innehåll  <br/> | Markera den här rutan.  <br/> | | Tillämpas på  <br/> | Mottagardomänen är . . . välj domän.  <br/> |
+**Inställning eller alternativ**|**Rekommenderad inställning** <br/>|
+| :-------| :-----|
+|Namn  <br/> |Princip för säkra länkar för alla mottagare i domänen  <br/> |
+|Välj åtgärden för okända potentiellt skadliga url:er i meddelanden  <br/> |Välj **På - webbadresser skrivs om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken**.  <br/> |
+|Använd säkra bilagor för att skanna nedladdningsbart innehåll  <br/> |Markera den här rutan.  <br/> |
+|Tillämpas på  <br/> |Mottagardomänen är . . . välj domän.  <br/> |
+|
    
 Mer information finns i [säkra länkar till Office 365 ATP](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

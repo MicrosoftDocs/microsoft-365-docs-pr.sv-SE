@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Läs om hur du lägger till och tar bort licenser för din Office 365 för företag-prenumeration.
-ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42809404"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142181"
 ---
 # <a name="manage-subscription-licenses"></a>Hantera prenumerationslicenser
 
@@ -39,9 +39,6 @@ Du kan lägga till eller ta bort licenser från dina prenumerationer med hjälp 
 Du kan inte ta bort en licens från en prenumeration om den är tilldelad till en användare. Om du vill ta bort en licens som för närvarande har tilldelats någon måste du [ta bort licenser från användare](../../admin/manage/remove-licenses-from-users.md) innan du kan ta bort licensen från prenumerationen.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Vad du behöver veta om att köpa licenser för din företagsprenumeration
 
@@ -87,9 +84,9 @@ När du har köpt nya licenser måste du [tilldela licenserna till användarna](
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?
 
-I den här tabellen beskrivs varför länken **Lägg till/ta bort licenser** kanske inte är tillgänglig och vad du kan göra åt den. 
+I den här tabellen beskrivs varför länken **Lägg till/ta bort licenser** kanske inte är tillgänglig och vad du kan göra åt den.
 
-|Anledning  |Beskrivning  |Lösning  |
+|Orsak  |Beskrivning  |Lösning  |
 |---------|---------|---------|
 |En kreditkontroll väntar. |Om det finns en kreditkontroll som väntar visas ett meddelande om väntande kreditkontroll och du kan inte köpa licenser förrän kreditkontrollen är klar.  | Kom tillbaka senare för att se om kreditkontrollen har slutförts. Kreditkontroller tar vanligtvis upp till två arbetsdagar.<br>När kreditkontrollen är klar bör länken **Lägg till/ta bort licenser** visas i avsnittet **Användare**. Om så är fallet går du till [Hantera prenumerationslicenser](#manage-subscription-licenses). |
 |Du aktiverade prenumerationen med hjälp av en produktnyckel.| Om prenumerationen har köpts och aktiverats med en 25 tecken lång produktnyckel visas texten "Förbetald".  |Se [Lägga till licenser i en prenumeration som betalats för att använda en produktnyckel](add-licenses-using-product-key.md). |

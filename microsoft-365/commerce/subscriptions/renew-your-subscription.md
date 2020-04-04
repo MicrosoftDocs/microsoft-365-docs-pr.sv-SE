@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Läs om hur du förnyar din Office 365 för företag-prenumeration med hjälp av en produktnyckel och aktiverar eller inaktiverar den återkommande faktureringen. '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959222"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142121"
 ---
 # <a name="renew-office-365-for-business"></a>Förnya Office 365 för företag
 
@@ -47,9 +47,6 @@ Om du betalar med kreditkort eller bankkonto aktiveras **återkommande faktureri
 Om du har betalat för prenumerationen med en produktnyckel upphör prenumerationen att gälla i slutet av prenumerationsperioden. Du kan aktivera **Återkommande fakturering** och ange kreditkorts- eller bankkontoinformation så att din prenumeration fortsätter att faktureras varje år den dag du prenumererar. Du har också möjlighet att betala varje månad, eller att betala för hela året i förskott. Ditt kreditkort eller bankkonto debiteras inte förrän din första prenumerationsperiod har löpt ut.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
@@ -117,9 +114,7 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Återaktivera prenumerationen](reactivate-your-subscription.md)
-  
-[Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [Vad händer med mina data och åtkomst när prenumerationen går ut?](what-if-my-subscription-expires.md)
 
 [Lägga till, uppdatera eller ta bort dina betalningsmetoder](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42806524"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142157"
 ---
 # <a name="change-plans-manually"></a>Ändra planer manuellt
-
-> [!NOTE]
-> Den här artikeln gäller det nya administrationscentret. Det nya administrationscentret är tillgängligt för alla Microsoft 365-administratörer och du kan anmäla dig genom att välja Växla till **det nya administrationscentret** högst upp på startsidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md). En vy av artikeln om det gamla administrationscentret finns i [Byta Office 365 för företag-abonnemang manuellt](switch-plans-manually.md).
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Steg 1: Bestäm hur du ändrar planer
 
@@ -117,4 +114,5 @@ Om du har flyttat alla användare från ett abonnemang till ett annat och du int
 Om du bara har flyttat vissa användare till en annan prenumeration kan du [ta bort licenser](../licenses/remove-licenses-from-subscription.md) som du inte längre behöver.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Ring support som hjälper dig att ändra abonnemang
+
 [Ring Microsoft-support](../../admin/contact-support-for-business-products.md)

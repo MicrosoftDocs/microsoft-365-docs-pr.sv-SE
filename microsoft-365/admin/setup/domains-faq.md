@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner i Office 365 genom att hitta svar på dina frågor i vanliga frågor och svar.
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42806564"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142509"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -107,7 +107,7 @@ Observera att en *Whois-fråga* visar en Office 365-köpt domänregistrare som W
   
 Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan till den andra domänregistratorns webbplats för att överföra domännamnet till den registratorn.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
     Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
     
@@ -137,7 +137,7 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
     
 3. Följ en länk för att gå till installationsguiden för domäner:
     
-4. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+4. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
     Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
     
@@ -154,7 +154,7 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
 
 ### <a name="change-dns-management-to-office-365"></a>Ändra DNS-hanteringen till Office 365
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
     Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
     
@@ -222,7 +222,7 @@ Värdar som har stöd för alla DNS-poster som krävs:
 
 Du måste ha minst en egen domän som du har lagt till i Office 365 innan du kan välja en standarddomän.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
     Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
     
@@ -285,9 +285,9 @@ När du lägger till flera domäner i Office 365 kan du välja att ha valfri tj�
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Varför har jag en onmicrosoft.com-domän?
 
-Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.com*. 
+Office 365 skapar en domän åt dig, till exempel _contoso.onmicrosoft.com_när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till _exempel alan\@contoso.onmicrosoft.com_. 
   
- **Om du vill att din e-post ska se ut som *\@alan contoso.com:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
+ __Om du vill att din e-post ska se ut som _\@alan contoso.com:___ [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den initiala domänen du valde till exempel var fourthcoffee.onmicrosoft.com, kan du inte ändra den till fabrikam.onmicrosoft.com. Om du vill använda en annan onmicrosoft.com-domän måste du påbörja en ny prenumeration med Office 365. 
     
@@ -300,11 +300,12 @@ Du kan emellertid fortsätta använda den första onmicrosoft.com-domänen, äve
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Varför har jag en "onmicrosoft.de"-domän?
 
-Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.de*. 
+Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel "alan@contoso.onmicrosoft.de". 
   
- **Om du vill att din e-post ska se ut *alan@contoso.de:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till användare och domän i Office 365](add-domain.md) om du redan äger den. 
+Om du vill att din e-post ska se ut som "alan@contoso.de": [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till användare och domän i Office 365](add-domain.md) om du äger den redan 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den ursprungliga domänen du valde till exempel var fourthcoffee.onmicrosoft.de kan du inte ändra den till fabrikam.onmicrosoft.de. Om du vill använda en annan onmicrosoft.de domän måste du starta en ny prenumeration med Office 365. 
     
@@ -426,7 +427,7 @@ Du kan, men det finns begränsningar:
         
     5. All e-post som skickas till usera@yourcompany.com och userb@yourcompany.com är tillgänglig i Office 365.
     
-    6. Anteckningar:
+    6. Kommentarer:
         
         - Kontakta din nuvarande e-postleverantör för de exakta stegen för att konfigurera vidarebefordran.
             
@@ -444,7 +445,7 @@ Du kan, men det finns begränsningar:
         
     4. Testa e-post till någon som är på det andra e-postsystemet. Skicka till exempel ett e-postmeddelande till användare C. Det här e-postmeddelandet ska levereras till användare C:s postlåda på den ursprungliga e-postservern.
         
-    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s origninalserverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att det kommer till Användare A:s Office 365-postlåda.
+    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s ursprungliga serverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att den anländer till Office 365-postlådan för användare A.
         
 9. Flytta postlådeinnehåll
     

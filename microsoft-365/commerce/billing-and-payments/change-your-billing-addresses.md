@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Läs om hur du uppdaterar dina faktureringsadresser för Office 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
 ms.custom: okr_SMB
-ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42808328"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142317"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Ändra dina faktureringsadresser för Office 365 för företag
 
@@ -61,9 +61,6 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 ::: moniker-end
 
@@ -176,12 +173,24 @@ Din organisations faktureringsaviseringar skickas som standard till e-postadress
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändra den alternativa e-postadressen för en annan administratör
 
 Du kan även ändra den alternativa e-postadressen till andra globala administratörer och faktureringsadministratörer i organisationen.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsanvisningar</a>.
+::: moniker-end
 
-    Om du använder Office 365 som drivs av 21Vianet går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden.</a>
+::: moniker range="o365-germany"
+
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+
+::: moniker-end
 
 2. På sidan **Faktureringsaviseringar** väljer du den administratör som du vill ändra.
 
@@ -193,6 +202,4 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 
 [Förstå din faktura](understand-your-invoice2.md)
 
-[Betala för dinteckning](pay-for-your-subscription.md)
-
-[Prenumerationer och fakturering – hjälp för administratörer](../index.yml)
+[Betala för prenumerationen](pay-for-your-subscription.md)

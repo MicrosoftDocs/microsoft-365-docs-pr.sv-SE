@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Byt Office 365 för företag-prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42810862"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142109"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Byta till ett annat abonnemang på Office 365 för företag manuellt
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Den här artikeln gäller det gamla administrationscentret. En vy av artikeln om det nya administrationscentret finns i [Ändra planer manuellt](change-plans-manually.md). Det nya administrationscentret är tillgängligt för alla Microsoft 365-administratörer och du kan anmäla dig genom att välja **Växlingsknappen Prova det nya administrationscentret** högst upp på startsidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Den här artikeln gäller det gamla administrationscentret. En vy av artikeln om det nya administrationscentret finns i [Ändra planer manuellt](change-plans-manually.md). Det nya administrationscentret är tillgängligt för alla Microsoft 365-administratörer. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Steg 1: Bestäm hur du vill byta abonnemang

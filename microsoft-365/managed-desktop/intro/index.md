@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "42809677"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142689"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Managed Desktop?
 
@@ -74,6 +74,7 @@ Om Microsoft Managed Desktop verkar vara rätt för din organisation kan du grä
 - [Microsoft hanterade skrivbordsroller och ansvarsområden](roles-and-responsibilities.md)
 - [Microsoft-teknik för hanterade skrivbord](technologies.md)
 - [Microsoft Managed Desktop och ITIL](../MMD-and-ITSM.md)
+- [Efterlevnad](compliance.md)
 - [Tjänstbeskrivning för Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Gör dig redo för registrering** I de här avsnitten beskrivs de steg du måste vidta i organisationen för att förbereda för registrering, inklusive att kontrollera att din miljö uppfyller viktiga förutsättningar, konfigurera nätverk, konfigurera certifikat och förbereda dina appar.
