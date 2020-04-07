@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du flyttar ditt företag till Microsoft 365 Business från Office 365 E3.
-ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42810760"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153538"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrera från Office 365 E3 till Microsoft 365 Business 
 
@@ -44,7 +44,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business och Office 
 | Office-appar<sup>1</sup>    | Office 365 Business    | Office 365 ProPlus | 
 | **Molnproduktivitetsappar**        | | | 
 | Exchange Online och Outlook    | Lagringsgräns på 50 GB per postlåda och obegränsad Exchange Online-arkivering    | Lagringsgräns på 100 GB per postlåda och obegränsad Exchange Online-arkivering | 
-| Lag    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
+| Teams    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
 | OneDrive för företag    | 1 TB lagringsgräns per användare    | Obegränsad | 
 | Yammer, SharePoint Online, Planerare, Stream    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
@@ -52,7 +52,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business och Office 
 | **Skydd mot hot**        | | | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitetshantering**        | | | 
-| Återställning av lösenord för självbetjäning för hybridkonton i Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), Villkorlig åtkomst, återställning av lösenord för lokala identiteter|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    |  | 
+| Återställning av lösenord för självbetjäning för hybridkonton i Azure Active Directory (Azure AD), Azure Multi-Factor Authentication, Villkorlig åtkomst, återställning av lösenord för lokala identiteter|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    |  | 
 | **Enhets- och apphantering**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    |  |
 | Aktivering av delad dator|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png)| 
@@ -117,6 +117,6 @@ Du kan också utföra de här stegen på sidan Enheter:
 
 När du har migrerat till Microsoft 365 Business har du Office 365 ATP. Mer om du vill ha en översikt i [Office 365 ATP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) Information om hur du konfigurerar finns [i konfigurera ATP-säkra länkar,](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa) [konfigurera ATP-säkra bilagor](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)och konfigurera [ATP-anti-nätfiske](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
-### <a name="sensitivity-labels"></a>Markera som känsligt
+### <a name="sensitivity-labels"></a>Känslighetsetiketter
 
 Om du vill börja använda känslighetsetiketter läser du [Översikt över känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) och [skapar och hanterar video för känslighetsetiketter.](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)

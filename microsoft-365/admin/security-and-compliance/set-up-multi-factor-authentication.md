@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du använder säkerhetsstandarder för att konfigurera multifaktorautentisering för Office 365-användare.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 914d01bf2f045c6752aba4f2df3a204c6a21d09c
-ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
+ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43075614"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153562"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
 > [!IMPORTANT]
-> Om du har köpt din prenumeration eller utvärderingsversion efter den 21 oktober 2019 och du oväntat uppmanas att ange MFA har [säkerhetsinställningarna aktiverats](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) automatiskt för din prenumeration.
+> Om du har köpt din prenumeration eller utvärderingsversion efter den 21 oktober 2019 och du oväntat uppmanas att korrigera flera faktorer har [säkerhetsinställningarna aktiverats](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) automatiskt för din prenumeration.
 
-Alla nya Office 365 för företag- och Microsoft 365 Business-prenumerationer har automatiskt säkerhetsstandarder aktiverade. Det innebär att alla användare måste konfigurera multifaktorautentisering (MFA) och installera Authenticator-appen på en mobil enhet. Mer information finns i [Konfigurera tvåstegsverifiering för Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
+Alla nya Office 365 för företag- och Microsoft 365 Business-prenumerationer har automatiskt säkerhetsstandarder aktiverade. Det innebär att alla användare måste konfigurera MFA och installera Microsoft Authenticator-appen på sin mobila enhet. Mer information finns i [Konfigurera tvåstegsverifiering för Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 Följande nio administratörsroller måste utföra ytterligare autentisering varje gång de loggar in:
 - Global administratör
@@ -50,10 +50,10 @@ Följande nio administratörsroller måste utföra ytterligare autentisering var
 Alla andra användare kommer att ombes utföra ytterligare autentisering när det behövs. Mer information finns i [Vad är säkerhetsstandarder?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 > [!NOTE]
-> Du måste vara global Office 365-administratör för att konfigurera eller ändra multifaktorautentisering. <br><br>
+> Du måste vara en global Office 365-administratör för att kunna konfigurera eller ändra MFA. <br><br>
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-Om du tidigare har konfigurerat MFA med riktlinjer [måste du inaktivera och aktivera säkerhetsstandarder](#move-from-baseline-policies-to-security-defaults). Men om du har Microsoft 365 Business eller om din prenumeration omfattar [Azure Active Directory Premium 1 eller Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/)kan du även konfigurera riktlinjerna [villkorad åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Om du vill använda principer för villkorlig åtkomst måste du se till att [modern autentisering](#enable-modern-authentication-for-your-organization) är aktiverad.
+Om du tidigare har konfigurerat MFA med riktlinjer [måste du inaktivera och aktivera säkerhetsstandarder](#move-from-baseline-policies-to-security-defaults). Men om du har Microsoft 365 Business eller din prenumeration innehåller [Azure Active Directory Premium P1 eller Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)kan du också ställa in principer för villkorlig [åtkomst.](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) Om du vill använda principer för villkorlig åtkomst måste du se till att [modern autentisering](#enable-modern-authentication-for-your-organization) är aktiverad.
 
 > [!TIP]
 > För att kunna förklara för användarna hur de konfigurerar Authenticator-appen kan du besöka [Använd Microsoft Authenticator med Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
@@ -64,7 +64,7 @@ Om du tidigare har konfigurerat MFA med riktlinjer [måste du inaktivera och akt
 2. Gå till [Azure Active Directory egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 
 3. Längst ner på sidan väljer du **Hantera säkerhetsstandarder**.
-4. Välj **Ja** för att aktivera säkerhetsstandardinställningar och **Nej** för att inaktivera dem.
+4. Välj **Ja** om du vill aktivera standardinställningar för säkerhet eller **Nej** om du vill inaktivera standardvärden för säkerhet och välj sedan **Spara**.
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>Flytta från baslinje riktlinjer till säkerhetsstandarder
 

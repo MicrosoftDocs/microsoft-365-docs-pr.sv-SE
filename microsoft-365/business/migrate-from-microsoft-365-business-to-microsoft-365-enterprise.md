@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Läs om hur du flyttar ditt företag från Microsoft 365 Business till Microsoft 365 E3.
-ms.openlocfilehash: 9e9cfcf2212faa69f600267e4f9bfd2391e3f4e5
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 0d636c0572850a53612bf756508c4b57f1b3e4eb
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42808126"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153526"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business till Microsoft 365 E3
 
@@ -53,7 +53,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business och Microso
 | Office-appar*    | [Office 365 Business](#office-365-business)    | Office 365 ProPlus | 
 | **Molnproduktivitetsappar**        | | | 
 | Exchange Online och Outlook    | Lagringsgräns på 50 GB per postlåda och obegränsad Exchange Online-arkivering    | Lagringsgräns på 100 GB per postlåda och obegränsad Exchange Online-arkivering | 
-| Lag    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Teams    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | OneDrive för företag    | 1 TB lagringsgräns per användare    | Obegränsad | 
 | Yammer, SharePoint Online, Planerare, Stream    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Outlook kundansvarig, MileIQ    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | | 
@@ -61,10 +61,10 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business och Microso
 | Angripa ytreduceringsfunktioner    | [Se den här listan](#threat-protection) | Företagshantering av maskinvarubaserad isolering för Microsoft Edge | 
 | Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitetshantering**        | | | 
-| Återställning av lösenord för självbetjäning för hybridkonton i Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), Villkorlig åtkomst, återställning av lösenord för lokala identiteter|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Återställning av lösenord för självbetjäning för hybridkonton i Azure Active Directory (Azure AD), Azure Multi-Factor Authentication, Villkorlig åtkomst, återställning av lösenord för lokala identiteter|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Identifiering av molnapp, Azure AD Connect-hälsotillstånd    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365-appar Enkel inloggning (SSO): 10 appar per användare (Galleri SaaS-appar som Salesforce)* | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| SSO för Azure AD Premium 1: ingen gräns (Lokala appar via Azure AD Application Proxy och appar som inte är gallerier med självbetjäningsmallar för appintegrering)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium P1 SSO: ingen gräns (Lokala appar via Azure AD Application Proxy och appar som inte är gallerier med självbetjäningsmallar för appintegrering)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Enhets- och apphantering**        | | | 
 | Microsoft Intune, Windows Autopilot|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 |Virtuell skrivbordsåtkomst (VDA)    |  |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
@@ -76,7 +76,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business och Microso
 | Windows-informationsskydd för slutpunktS-DLP    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Licens för klientåtkomst (CAL-rättigheter)**    | | |     
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| **Överensstämmelse**        | | | 
+| **Efterlevnad**        | | | 
 | Obegränsad e-postarkivering    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Efterlevnadspoäng/efterlevnadshanterare    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Ediscovery    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 

@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att skapa och ta bort Office 365-grupper, lägga till och ta bort gruppmedlemmar och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894617"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153550"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Skapa en Office 365-grupp i administrationscentret för Microsoft 365
   
-Användare kan skapa en Office 365-grupp från Outlook eller andra appar, men som administratör kan du behöva skapa eller ta bort grupper, lägga till eller ta bort medlemmar och anpassa hur de fungerar. Microsoft 365 admin center är platsen att göra detta. 
+Användare kan skapa en Office 365-grupp från Outlook eller andra appar, men som administratör kan du behöva skapa eller ta bort grupper, lägga till eller ta bort medlemmar och anpassa hur de fungerar. Du kan göra detta i Administrationscentret för Microsoft 365 om du är global administratör eller gruppadministratör. 
 
 > [!TIP]
 > Office 365-anslutna Yammer-grupper måste skapas i Yammer, men kan hanteras i Microsoft 365-administrationscentret som andra Office 365-grupper. Mer information finns i [Yammer- och Office 365-grupper](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
@@ -115,7 +115,7 @@ När ett e-postmeddelande tas bort från grupppostlådan tas det inte bort från
 
 ## <a name="next-step-manage-your-group"></a>Nästa steg: hantera din grupp
 
-När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, ändra ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppen samtal till medlemmarna. Mer information finns i [Hantera en Office 365-grupp.](manage-groups.md)
+När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, byta ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar. Mer information finns i [Hantera en Office 365-grupp.](manage-groups.md)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

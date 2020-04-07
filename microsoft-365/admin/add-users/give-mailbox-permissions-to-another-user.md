@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Lär dig hur du ger en användare rätt att komma åt en annan användares postlåda. Då kan användaren läsa e-postmeddelanden och skicka e-postmeddelanden från den andra användarens postlåda. '
-ms.openlocfilehash: 8c3572cf543545de4a2825012f6c2e8e906cd8dd
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808317"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151353"
 ---
 # <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Ge behörigheter till postlådor till en annan användare i Office 365 – hjälp för administratörer
 
@@ -51,9 +51,9 @@ Det första steget för att ställa in behörigheter är att bestämma vilka åt
   
 - [Läsa e-post från en annan användares postlåda](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
     
-- [Skicka e-post från en annan användares postlåda](https://support.office.com/article/Send-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E?#bkmk_sendemailanotheruser)
+- [Skicka e-post från en annan användares postlåda](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
     
-- [Skicka e-post för en annan användare](https://support.office.com/article/Send-email-on-behalf-of-another-user-in-Office-365-C5E7749D-244E-477F-998E-55D3876C22EC?#bkmk_sendbehalflanotheruser)
+- [Skicka e-post för en annan användare](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
     
  **Spridning av ändringar:**
   

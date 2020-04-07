@@ -15,30 +15,30 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Så här skyddar du globala administratörskonton i microsoft 365 Enterprise-testmiljön.
-ms.openlocfilehash: 9452ac7bafec416833ece9cbcb645bd7eeee21cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e6b93e3888873b6d78fec1802d179ed9624ffa63
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811447"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153874"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Skydda globala administratörskonton i testmiljön för Microsoft 365 Enterprise
 
-*Den här testlabbet-guiden kan endast användas för Microsoft 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan bara användas i Microsoft 365 Enterprise-testmiljöer.*
 
-Du kan förhindra digitala attacker mot din organisation genom att se till att administratörskontona är så säkra som möjligt. I den här artikeln beskrivs hur du använder principer för villkorlig åtkomst i Azure Active Directory (Azure AD) för att skydda globala administratörskonton.
+Du kan förhindra digitala attacker mot din organisation genom att se till att administratörskontona är så säkra som möjligt. I den här artikeln beskrivs hur du använder Azure Active Directory (Azure AD) principer för villkorlig åtkomst för att skydda globala administratörskonton.
 
 Det finns två faser för att skydda globala administratörskonton i microsoft 365 Enterprise-testmiljön:
 
 1.  Skapa testmiljön för Microsoft 365 Enterprise.
 2.  Skydda ditt dedikerade globala administratörskonto.
 
-![Testlabbguider för Microsoft-molnet](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill ha en visuell karta till alla artiklar i Microsoft 365 Enterprise Test Lab Guide-stacken.
+> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygg ut testmiljön för Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygga ut testmiljön i Microsoft 365 Enterprise
 
 Om du bara vill testa globalt administratörskontoskydd på ett lättviktssätt med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -100,14 +100,14 @@ Se steget [Skydda globala administratörskonton](identity-create-protect-global-
 
 ## <a name="next-step"></a>Nästa steg
 
-Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#identity) och funktioner i testmiljön.
+Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#identity) i testmiljön.
 
 ## <a name="see-also"></a>Se även
 
 [Fas 2: Identitet](identity-infrastructure.md)
 
-[Testlaboratorikguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 
 [Distribution av Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
-[Dokumentation från Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)

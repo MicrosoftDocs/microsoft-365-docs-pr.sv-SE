@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6ffe912cd9926585181af54cc85c144aef4ce866
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f44d7cd5b919fb06ffb10c39e632956005231e01
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142677"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153756"
 ---
 # <a name="compliance"></a>Efterlevnad
 
@@ -33,7 +33,7 @@ Microsoft Managed Desktop har uppnått följande certifieringar:
 - [Kontroller av serviceorganisation (SOC) 1, 2, 3](../../compliance/offering-SOC.md)
 - [DSS (Payment Card Industry) Data Security Standard (DSS)](../../compliance/offering-PCI-DSS.md)
 
-## <a name="auditor-reports-and-client-certificates"></a>Revisorrapporter och kundcertifikat
+## <a name="auditor-reports-and-compliance-certificates"></a>Revisionsrapporter och efterlevnadsintyg
 
 Du hittar relevant information, inklusive kontroll och tekniska krav, i [SERVICE Trust Portal (STP)](https://servicetrust.microsoft.com/), den centrala databasen för sådan information om Microsoft Cloud Service-erbjudanden. Du kan hämta granskningsrapporter, efterlevnadscertifikat med mera från avsnittet [Revisionsrapporter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) i STP.
 

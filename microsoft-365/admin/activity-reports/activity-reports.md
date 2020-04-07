@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Office 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029866"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151435"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitetsrapporter i administrationscentret för Microsoft 365
 
@@ -180,6 +180,6 @@ När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dag
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Rapporter i Säkerhets- och efterlevnadscenter](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
+[Rapporter i Säkerhets- och efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
 

@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Lär dig hur du skaffar en aktivitetsrapport för Microsoft Forms med instrumentpanelen Microsoft 365 Reports i administrationscentret för Microsoft 365.
-ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 28520bf931df9f909a933be19800ee45fd863cd6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151423"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-rapporter i administrationscentret – formuläraktivitet
 
@@ -41,9 +41,9 @@ Du kan till exempel förstå aktiviteten hos alla användare som licensieras fö
     
 2. \> Välj **Formuläraktivitet**i listrutan **Forms** **Välj en rapport** .
 
-## <a name="interpret-the-email-activity-report"></a>Tolka e-postaktivitetsrapporten
+## <a name="interpret-the-forms-activity-report"></a>Tolka formuläraktivitetsrapporten
 
-Du kan få inblick i användarnas e-postaktivitet genom att titta på diagrammen **Aktivitet** och **Användare**. 
+Du kan få en vy över användarens formuläraktivitet genom att titta på diagrammen **Aktivitet** **och Användare.** 
 
 ![Aktivitetsrapport för formulär](../../media/adminformsactivity.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Fas 5 - Hantering av mobila enheter
-description: Microsoft 365 Enterprise inkluderar hantering av mobila enheter med Microsoft Intune. Granska kraven och förutsättningarna, konfigurera Intune med din Azure Active Directory-resurs, registrera iOS-, macOS-, Android- och Windows-enheter, distribuera appar, skapa en konfigurera profil, använda en efterlevnadsprincip och aktivera villkorlig åtkomst för mobila enheter enhetshantering med Microsoft 365 Enterprise.
+description: Microsoft 365 Enterprise inkluderar hantering av mobila enheter med Microsoft Intune. Granska kraven och förutsättningarna, konfigurera Intune med din Azure Active Directory-resurs, registrera iOS-, macOS-, Android- och Windows-enheter, distribuera appar, skapa en konfigurera profil, använda en efterlevnadsprincip och aktivera villkorad åtkomst för hantering av mobila enheter med Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-dokumentation, hantering av mobila enheter, Intune
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42808099"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153898"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fas 5: Hantering av mobila enheter för Microsoft 365 Enterprise
 
-![Fas 5: Hantering av mobila enheter](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Fas 5: Hantering av mobilenheter](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Den här funktionen gäller E3- och E5-versionerna av Microsoft 365 Enterprise*
 
@@ -84,7 +84,7 @@ Registrering är ett viktigt steg när du använder Intune. [Registrera enheter]
 
 |||
 |:-------|:-----|
-|![Testlabbguider för Microsoft-molnet](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testlabbguide: registrering av iOS- och Android-enheter](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testlabbguide: registrering av iOS- och Android-enheter](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,14 +102,14 @@ I artikeln [Lägg till appar](https://docs.microsoft.com/intune/apps/apps-add) v
 
 |||
 |:-------|:-----|
-|![Testlabbguider för Microsoft-molnet](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testlabbguide: Policyer för enhetsefterlevnad](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testlabbguide: Policyer för enhetsefterlevnad](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Steg 6: Aktivera efterlevnad och villkorlig åtkomst
 
 I föregående steg konfigurerar du din miljö och aktiverade Intune. Nu är du redo att skapa vissa principer med efterlevnad och villkorlig åtkomst.
 
-Efterlevnad och villkorlig åtkomst är viktiga för hantering av enheter. [Efterlevnadsprinciper](https://docs.microsoft.com/intune/device-compliance-get-started) skapas för att skydda organisationens resurser. När du skapar en efterlevnadsprincip definierar du standarden eller "baslinjen" för vad en enhet måste ha. Du kan till exempel välja en acceptabel (eller oacceptabel) hotnivå, blockera jailbroken enheter, kräva en lösenordslängd med mera. Om dessa enheter inte uppfyller dina regler, vilket innebär att de inte är kompatibla, kan du blockera åtkomst till dina resurser.
+Efterlevnad och villkorlig åtkomst är viktiga för att hantera enheter. [Efterlevnadsprinciper](https://docs.microsoft.com/intune/device-compliance-get-started) skapas för att skydda organisationens resurser. När du skapar en efterlevnadsprincip definierar du standarden eller "baslinjen" för vad en enhet måste ha. Du kan till exempel välja en acceptabel (eller oacceptabel) hotnivå, blockera jailbroken enheter, kräva en lösenordslängd med mera. Om dessa enheter inte uppfyller dina regler, vilket innebär att de inte är kompatibla, kan du blockera åtkomst till dina resurser.
 
 Den här "blockeringen" introducerar [villkorlig åtkomst](https://docs.microsoft.com/intune/conditional-access). Om en enhet anses inte vara kompatibel kan du blockera åtkomst till e-post, SharePoint med mera.
 
@@ -144,22 +144,22 @@ Intune är en kraftfull tjänst och innehåller många funktioner. Här är någ
 - Övervaka [appar](https://docs.microsoft.com/intune/apps-monitor) och [enhetsefterlevnad och konfigurationsprofiler](https://docs.microsoft.com/intune/compliance-policy-monitor)och mer telemetri med hjälp av granskningsloggarna. Du kan också ansluta till [Intune Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) och använda Power BI för ännu fler rapporteringsbehov.
 
 
-## <a name="identity-and-device-access-recommendations"></a>Rekommendationer för åtkomst till identitet och enhet
+## <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
 Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. För enhetsåtkomst använder du rekommendationerna och inställningarna i följande artiklar tillsammans med stegen i den här fasen:
 
-- [Förutsättningar](identity-access-prerequisites.md)
+- [Krav](identity-access-prerequisites.md)
 - [Vanliga principer för identitets- och enhetsåtkomst](identity-access-policies.md)
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Så här gör Microsoft Microsoft 365 Enterprise
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Så här används Microsoft 365 Enterprise på Microsoft
 
 Lär dig hur IT-experter på Microsoft [hanterar enheter med EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
-## <a name="how-contoso-did-microsoft-365-enterprise"></a>Hur Contoso gjorde Microsoft 365 Enterprise
+## <a name="how-contoso-did-microsoft-365-enterprise"></a>Så här använder Contoso Microsoft 365 Enterprise
 
 Se hur Contoso Corporation, ett fiktivt men representativt multinationellt företag, [distribuerade sin infrastruktur för hantering](contoso-mdm.md) av mobila enheter med Microsoft 365-molntjänster.
 
-![Den Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Nästa steg
 
