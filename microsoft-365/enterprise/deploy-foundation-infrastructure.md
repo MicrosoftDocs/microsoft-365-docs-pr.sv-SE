@@ -1,5 +1,5 @@
 ---
-title: Grundläggande infrastruktur för Microsoft 365 Enterprise
+title: Grundläggande infrastruktur för Microsoft 365 för företag
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå huvudfaserna för distribution av den grundläggande infrastrukturen för Microsoft 365 Enterprise i din organisation.
-ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+description: Förstå huvudfaserna i distributionen av en grundläggande infrastruktur för Microsoft 365 för företag i din organisation.
+ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951964"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153850"
 ---
-# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Grundläggande infrastruktur för Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Grundläggande infrastruktur för Microsoft 365 för företag
 
-Om du utför distribution från slutpunkt till slutpunkt av Microsoft 365 Enterprise på egen hand måste du först bygga upp en stabil grund där program och tjänster sedan kan möjliggöra kreativitet och samarbete i en säker miljö. Den här grunden kallas ibland för *core deployment*.
+Om du utför distributionen från slutpunkt till slutpunkt av Microsoft 365 för företag på egen hand måste du först bygga upp en stabil grund så att program och tjänster kan främja kreativitet och samarbete i en säker miljö. Den här grunden kallas ibland för *core deployment*.
 
-Du kan använda de här faserna för att planera för och distribuera en grundläggande infrastruktur för Microsoft 365 Enterprise:
+Du kan använda de här faserna när du planerar för och distribuerar en grundläggande infrastruktur för Microsoft 365 för företag:
 
 | | Fas | Resultat |
 |:-------|:-----|:-----|
@@ -50,19 +50,19 @@ Du har dock flexibiliteten att konfigurera och distribuera faserna, eller stegen
 
 -  **Om du representerar ett större företag eller en organisation** ska du betrakta dessa faser som lager i IT-infrastrukturen snarare än en färdig väg, och avgöra hur du på bästa sätt kan uppfylla eventuella krav för varje lager i din organisation.
 
-I slutet av varje fas undersöker du *avslutsvillkoren* som innefattar nödvändiga villkor som du måste uppfylla och valfria villkor att överväga. Avslutsvillkoren för varje fas säkerställer att din lokala infrastruktur och molninfrastruktur och resulterande konfiguration från slutpunkt till slutpunkt uppfyller kraven för en distribution av Microsoft 365 Enterprise.
+I slutet av varje fas undersöker du *avslutsvillkoren* som innefattar nödvändiga villkor som du måste uppfylla och valfria villkor att överväga. Avslutsvillkoren för varje fas säkerställer att din lokala infrastruktur och molninfrastruktur samt resulterande konfiguration från slutpunkt till slutpunkt uppfyller kraven för en distribution av Microsoft 365 för företag.
 
 I den här korta videon kan du se hur innehållet är strukturerat.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-Det här är den grundläggande infrastrukturen i den övergripande distributionsguiden för Microsoft 365 Enterprise:
+Det här är den grundläggande infrastrukturen i den övergripande distributionsguiden för Microsoft 365 för företag:
 
-![Den grundläggande infrastrukturen i den övergripande distributionsguiden för Microsoft 365 Enterprise](../media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Grundläggande infrastruktur i den övergripande distributionsguiden för Microsoft 365 för företag](../media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>Översikt
 
-[Affischen över den grundläggande infrastrukturen för Microsoft 365 Enterprise](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) är en central plats där du kan se följande för varje fas:
+[Affischen som visar den grundläggande infrastrukturen för Microsoft 365 för företag](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) är en central plats där du kan se följande för varje fas:
 
 - Det övergripande syftet med fasen för administratörer och användare
 - Tjänsterna, funktionerna och verktygen
@@ -71,16 +71,16 @@ Det här är den grundläggande infrastrukturen i den övergripande distribution
 - Processen för att registrera en ny användare
 - Övervaka och uppdatera
 
-[![Bild på den grundläggande infrastrukturen för Microsoft 365 Enterprise (affisch)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Bild på den grundläggande infrastrukturen för Microsoft 365 för företag (affisch)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) om du vill ladda ned en kopia av affischen.
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Infrastrukturkonfiguration jämfört med användardistribution
 
-Den grundläggande infrastrukturen består av en uppsättning konfigurerade program och tjänster. När dessa kombineras kan en användare utnyttja samtliga funktioner och skydd som Microsoft 365 Enterprise erbjuder. Det ultimata målet för din distribution från slutpunkt till slutpunkt är att den här infrastrukturen gäller för alla dina användare och deras Windows-baserade enheter.  
+Den grundläggande infrastrukturen består av en uppsättning konfigurerade program och tjänster. När dessa kombineras för en användare kan användaren utnyttja samtliga funktioner och skydd som Microsoft 365 för företag erbjuder. Det ultimata målet för din distribution från slutpunkt till slutpunkt är att den här infrastrukturen gäller för alla dina användare och deras Windows-baserade enheter.  
 
-Men det är viktigt att notera att den grundläggande infrastrukturen för Microsoft 365 Enterprise är oberoende av distributionen av programvara och tjänster till dina användare. ***Du kan konfigurera lager i den grundläggande infrastrukturen utan att du behöver distribuera dessa lager till alla dina användare.***
+Men det är viktigt att notera att den grundläggande infrastrukturen för Microsoft 365 för företag är oberoende av distributionen av programvara och tjänster till dina användare. ***Du kan konfigurera lager i den grundläggande infrastrukturen utan att du behöver distribuera dessa lager till alla dina användare.***
 
 Det går att konfigurera, testa och pilottesta de olika delarna i den grundläggande infrastrukturen innan de distribueras till alla användare i alla kontor, regioner eller avdelningar i organisationen.
 
@@ -101,7 +101,7 @@ När du är redo att distribuera de olika delarna av infrastrukturen till använ
 | Identitet | Lägga till användarkonton i grupper för identitetsbaserade principer för villkorsstyrd åtkomst. |
 | Windows 10 Enterprise | Lägga till konton i grupper för att automatiskt distribuera Windows 10 Enterprise till användare med Windows 7 eller Windows 8.1. |
 | Office 365 ProPlus | Lägga till användarkonton i grupper för att automatiskt distribuera Office 365 ProPlus till användare med Office 2010, Office 2013 eller Office 2016. |
-| Hantering av mobila enheter | Lägga till konton i grupper för registrering av enheter och enhetsbaserade principer för villkorsstyrd åtkomst. |
+| Hantering av mobila enheter | Lägga till konton i grupper för enhetsregistrering och enhetsbaserade principer för villkorsstyrd åtkomst. |
 | Informationsskydd | Lägga till användarkonton i grupper för känslighetsetiketter. |
 
 När faserna eller delarna av den grundläggande infrastrukturen är klara, testade och pilottestade kan du distribuera installerad programvara, till exempel Windows 10 Enterprise och Office 365 ProPlus, samt molnbaserade tjänster och skydd som enhetsregistrering och principer för villkorsstyrd åtkomst till användarna på det sätt som passar bäst för dina affärsmål och IT-resurser.

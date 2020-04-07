@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Skapa en Microsoft 365-miljö för att testa identitets- och enhetsåtkomst med kraven för autentisering av synkronisering av lösenordshash.
-ms.openlocfilehash: 125d8c6e1e954a05edd630c8f4d55848fa3314b3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ae9f8545c20a169578d49b00bcee214526cc539a
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807632"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153910"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Krav för identitets- och enhetsåtkomst för synkronisering av lösenordshash i din Microsoft 365-testmiljö
 
@@ -66,7 +66,7 @@ Följ anvisningarna i [fas 2 i testlabbguiden för tillbakaskrivning av lösenor
 
 Följ anvisningarna i [fas 3 i testlabbguiden för återställning av lösenord](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
-När du aktiverar återställning av lösenord för kontona i en särskild Azure AD-grupp lägger du till de här kontona i gruppen för**lösenordsåterställning**:
+När du aktiverar återställning av lösenord för kontona i en särskild Azure AD-grupp lägger du till de här kontona i gruppen för **lösenordsåterställning**:
 
 - Användare 2
 - Användare 3
@@ -96,7 +96,7 @@ Följ [dessa anvisningar](https://docs.microsoft.com/Exchange/clients-and-mobile
 
 För Skype för företag – Online:
 
-1. Ansluta till [Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+1. Anslut till [Skype för företag – Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
 
 2. Kör det här kommandot.
 
@@ -116,11 +116,11 @@ Resultatet är en testmiljö som uppfyller kraven för [konfiguration av Active 
 
 Använd [vanliga identitets- och enhetsprinciper](identity-access-policies.md) när du vill konfigurera de principer som bygger på kraven och skyddar identiteter och enheter.
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Fler testlabbguider för identitet](m365-enterprise-test-lab-guides.md#identity)
 
-[Fas 2: identitet](identity-infrastructure.md)
+[Fas 2: Identitet](identity-infrastructure.md)
 
 [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 

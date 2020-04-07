@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Skapa en Microsoft 365-miljö för att testa identitets- och enhetsåtkomst med kraven för direktautentisering.
-ms.openlocfilehash: f9f5fd8f235787512d59b29dc06b080bc9cfa0ff
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 91b773b1ef2588490cf0434517a883ef447cd55d
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810036"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153862"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Krav för identitets- och enhetsåtkomst för direktautentisering i din Microsoft 365-testmiljö
 
@@ -55,7 +55,7 @@ Följ anvisningarna i [fas 2 i testlabbguiden för enkel inloggning med Azure AD
 
 ## <a name="phase-3-configure-named-locations"></a>Fas 3: Konfigurera namngivna platser
 
-Ta först reda på vilka offentliga IP-adresser eller adressintervall som används i din organisation.
+Bestäm först de offentliga IP-adresser eller adress intervall som används av din organisation.
 
 Följ sedan anvisningarna i [Konfigurera namngivna platser i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) för att lägga till adresserna eller adressintervallen som namngivna platser. 
 
@@ -74,7 +74,7 @@ När du aktiverar återställning av lösenord för kontona i en särskild Azure
 - Användare 4
 - Användare 5
 
-Testa endast lösenordet för kontot Användare 2.
+Testa lösen ordet bara för användar 2-konto.
 
 ## <a name="phase-6-configure-multi-factor-authentication"></a>Fas 6: Konfigurera multifaktorautentisering
 
