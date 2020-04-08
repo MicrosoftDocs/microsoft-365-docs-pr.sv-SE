@@ -6,10 +6,10 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42805437"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Tjänstbeskrivning för Microsoft Managed Desktop

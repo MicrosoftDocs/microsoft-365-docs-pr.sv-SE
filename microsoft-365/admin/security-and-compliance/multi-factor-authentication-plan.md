@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig mer om multifaktorautentisering i Office 365 och de steg du behöver följa för att konfigurera den.
-ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153574"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170946"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Planera för multifaktorautentisering för Office 365-distributioner
 
@@ -65,7 +65,7 @@ Du får en annan delmängd av funktionerna beroende på om du har en Endast moln
 |Hybridkonfiguration som hanteras lokalt  <br/> | Om du hanterar användaridentitet lokalt har du följande alternativ:  <br/>  Fysiskt eller virtuellt smartkort (när AD FS-  <br/> [Azure Multifaktorautentisering](https://go.microsoft.com/fwlink/p/?LinkId=526677) (modul för AD FS)  <br/>  Azure Active Directory (Azure AD) multifaktorautentisering  <br/> |
    
   
-Följande bild visar hur de uppdaterade Office 2013-enhetsapparna (i Windows) gör det möjligt för användare att logga in med MFA. Office 2013-enhetsapparna har stöd för multifaktorautentisering genom användning av [ADAL (Active Directory Authentication Library)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD är värd för en webbsida där användarna kan logga in. Identitetsleverantören kan vara Azure AD eller en federerad identitetsleverantör som AD FS. Autentiseringen av federerade användare består av följande steg:
+Följande bild visar hur de uppdaterade Office 2013-enhetsapparna (i Windows) gör det möjligt för användare att logga in med MFA. Office 2013-enhetsapparna stöder multifaktorautentisering med hjälp av [Active Directory Authentication Library (ADAL).](https://go.microsoft.com/fwlink/p/?LinkId=526684) Azure AD är värd för en webbsida där användarna kan logga in. Identitetsleverantören kan vara Azure AD eller en federerad identitetsleverantör som AD FS. Autentiseringen av federerade användare består av följande steg:
   
 1. Azure AD omdirigerar användaren till den inloggningswebbsida som identitetsleverantören för Office 365-klientorganisationen är värd för. Identitetsleverantören fastställs av den domän som anges i användarens inloggningsnamn.
     

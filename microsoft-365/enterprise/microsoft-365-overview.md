@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Innehåller en introduktion till komponenter, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113523"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175196"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -45,7 +45,7 @@ Microsoft 365 för företag finns i tre abonnemang.
 |:-------|:-----|
 | E3 (på andra sätt) | Få tillgång till kärnprodukter och funktioner i Microsoft 365 för att öka produktiviteten på arbetsplatsen och driva innovation på ett säkert sätt. |
 | E5 | Få tillgång till de senaste produkterna och funktionerna i Microsoft 365, inklusive avancerade verktyg för skydd mot hot, säkerhet och samarbete.. Innehåller alla E3:s funktioner samt avancerade verktyg för säkerhet, röst och dataanalys. |
-| F1 (andra) | Ta kontakt med dina Firstline-arbetare genom specialbyggda verktyg och resurser som gör det möjligt för dem att göra sitt bästa arbete. |
+| F3 (andra) | Ta kontakt med dina Firstline-arbetare genom specialbyggda verktyg och resurser som gör det möjligt för dem att göra sitt bästa arbete. |
 |||
 
 Om du har Microsoft 365 E3 kan du även få dessa [erbjudanden:](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)
@@ -55,7 +55,7 @@ Om du har Microsoft 365 E3 kan du även få dessa [erbjudanden:](https://www.mic
 
 Dessa erbjudanden innehåller ytterligare funktioner som ingår i Microsoft 365 E5.
 
-Mer information finns i [Funktioner och funktioner för varje plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Mer information om vad som ingår i varje abonnemang finns i [Omvandla ditt företag med Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
 ## <a name="get-the-big-picture"></a>Få helheten
 

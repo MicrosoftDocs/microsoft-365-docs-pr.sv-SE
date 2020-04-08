@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Få en översikt över hur din organisation använder Microsoft 365-tjänster för att kommunicera och samarbeta.
-ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: c9e2b9e6b814ac9245222f5da670862e308d1ab4
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826387"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170924"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
----
-Microsoft 365-användningsanalys är ännu inte tillgängligt för Microsoft 365 US Government Community.
+
+Microsoft 365-användningsanalys är för närvarande inte tillgängligt för Power BI Government-kunder.
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Översikt över Microsoft 365 användningsanalyser
 

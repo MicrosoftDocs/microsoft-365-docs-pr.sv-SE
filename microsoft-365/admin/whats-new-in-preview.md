@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 8bd1c5b38ef2f2bf7f208b5efb0dadb124211e2c
-ms.sourcegitcommit: 2b00fed90a6588c3f8d773bc50a346b9cccd5750
+ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42810126"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43171018"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -36,10 +36,59 @@ Vi lägger kontinuerligt till nya funktioner [i Microsoft 365-administrationscen
 > **"Classic" admin center pensionering med början i mars**<br><br>
 När du loggar in på admin.microsoft.com går du nu till det nya administrationscentret varje gång. Och i mars kommer vi att börja inaktivera möjligheten att byta tillbaka till det klassiska administrationscentret. För nu kan du fortfarande växla tillbaka, men som det nya admin-centret kommer till paritet (och överstiger det) kommer vi att stänga av växeln för alla organisationer. <br><br> *Senast uppdaterad: 2 mars 2020*
 
-Och om du är intresserad av vad som är nytt i andra admin centers:
+Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
 
+- [Nyheter i Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Nyheter i Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Nyheter i Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>Mars 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Dagens Feedback Fix: Förbättra "lägg till användare" tillförlitlighet för licensiering
+
+Vi fick mycket feedback från administratörer om hur svårt det är att tilldela licenser när du lägger till användare. Vi har gjort den första uppdateringen av den här korrigeringsfilen och vi har migrerat till en mer tillförlitlig tjänst bakom kulisserna för att bearbeta dessa begäranden. Och om något går fel får du nu ett felmeddelande som gör att du kan försöka igen.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Lägg till sidan med användarbekräftelse med felet.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Startsidakort för Microsoft Teams
+
+Med uptick i Teams användning, vissa organisationer kommer att få en fäst instrumentpanel kort som gör att slå teams på mer upptäckbara. Kortet har också länkar till utbildning och dokument för att hjälpa din organisation övergången till fjärrarbete. Gå bara till **hemsidan** för att se det nya kortet.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Startsidakort för Microsoft Teams":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassa organisationens SharePoint-mobilapptema
+
+Med hjälp av administrationscentret för Microsoft 365 kan du nu anpassa organisationens tema i SharePoint-mobilappen för iOS och SharePoint-mobilappen för Android. Den här funktionen ger en mobil intranätappupplevelse som kan matcha din SharePoint Online för anställda när de är på språng. Temaanpassning omfattar logotypbilden, navigeringsfältets färg, text- och ikonfärger samt accentfärger, vilket gör det enkelt att igenkänna.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram som mappar administratörscenterinställningarna till mobilappen.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Förbättringar av guiden "Lägg till en grupp"
+
+När administratörer skapade en ny grupp – och gjorde den till ett team samtidigt, kan de tilldela ägare som inte har en licens som innehåller Teams. Och det skapade lite huvudvärk. Vi har uppdaterat guideflödet för att verifiera att ägare har en Teams-licens och om de inte gör det för att göra gruppen till ett team är inaktiverat.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365-erbjudanden för små och medelstora företag
+
+Vi vet att detta är ett tillkännagivande för nästa månad, men vi vill se till att du är förberedd.
+
+Från och med den 21 april gör vi ändringar relaterade till våra Office 365-prenumerationer för små och medelstora företag – och till Office 365 ProPlus. Dessa produkter kommer nu att använda microsoft 365-varumärket.
+
+De nya produktnamnen träder i kraft den 21 april 2020. Detta är en ändring av produktnamnet bara, och det finns inga pris- eller funktionsändringar just nu.
+
+|Aktuellt namn |Nytt namn  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Företag     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    Microsoft 365-appar för företag       | 
+|Office 365 ProPlus    |   Microsoft 365-appar för företag      |
+
+### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
+
+[Nyheter i Microsoft 365 webbserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)I den här månadens avsnitt lyfter vi fram 3-årsjubileet av Microsoft Teams och täcker nya funktioner, inklusive förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för handlinjechefer med Shifts-appen, Teams och Skypes konsumentinteroperabilabilabilabila sig med mera.
 
 ## <a name="february-2020"></a>Februari 2020
 
@@ -407,64 +456,3 @@ Den här månaden kommer vi att fokusera på alla förbättringar vi har gjort p
 Vi kombinerade om **licenser och appar** i fönstret användarinformation baserat på din feedback. Vi separerade inledningsvis de två funktionerna för att ge utrymme för detaljer om alla licens och alla appmöjligheter. Vi hörde från dig att separera licenser och appar i två fönster rutor lagt förvirring. Vi lyssnade och förde licenser och appar ihop till en flik igen. Nu kan du se till att en app är inaktiverad i alla licenser som tilldelats en användare i en ruta. Mjölk och kakor. Licenser och appar. Vi fattar nu.
 
 Kolla in det: **Användare > aktiva användare > redigera** eller lägga till användare > licenser och **appar**
-
-## <a name="december-2018"></a>I december 2018
-
-- Tjänster & tillägg - I oktober uppdaterade vi **Settings** \> Services & tillägg med vår nya designstil, men alla **inställningssidor** var fortfarande i klassisk stil. **Services & add-ins** Den här månaden har vi börjat uppdatera de faktiska inställningarna till den nya designen. Kolla in **Bokningar** för att se det nya utseendet.
-- **Användarhantering** - Hantera användarnamn, alias, primär e-postadress.
-- Vi har lagt till två hemkort i biblioteket. Du kan läsa deras fullständiga beskrivningar i biblioteket.
-  - **Registrering av Intune-enhet**
-  - **Domäner**
-- **Rekommendationer** – Du kan se ett nytt rekommendationspop-up i administrationscentret. Naturligtvis ser du bara rekommendationer om vi tror att det kommer att gynna din organisation. Men vänta inte tills vi visar dig rekommendationen - du kan lägga till den från kortbiblioteket.
-  - **Skydda känslig information** – Vi rekommenderar att du skapar en DLP-princip (Data Loss Prevention) för att identifiera när objekt som innehåller känslig information delas med personer utanför organisationen.
-
-## <a name="november-2018"></a>I november 2018
-
-- Sökrutan är tillbaka! Och vi flyttade den lite. Det är fortfarande högst upp på startsidan, men det är nu till höger på sidan nära **knappen Lägg till kort.** <br> ![Skärminspelning som förklarar att sökrutan finns längst upp till höger på startsidan.](../media/M365PreviewSearchBox.png)
-
-- Vi har lagt till kort för instrumentpanelen. Gå bara till administrationscentret och välj **Lägg till kort** för att se de nya korten:
-  - **Office 365 Active-användare rapporterar** – Övervaka användningen av de Office 365-tjänster som du har köpt.
-  - **Office 365-programvara** – Installera eller distribuera Office 365 ProPlus-programvara och se hur många licensierade användare som har aktiverat den.
-  - **Azure Active Directory** - Ger dig snabb åtkomst till vanliga Azure AD-uppgifter som återställning av lösenord för självbetjäning, anpassning av inloggning och tillägg av appar.
-- Snabbuppgiften **Exportera användare** har lagts till i kommandofältet på sidan Aktiva användare. ![Skärminfångning som visar Exportera användare i kommandofältet bredvid Uppdatera.](../media/M365PreviewExportUsersQT.png)
-- Köptjänster har ytterligare förbättringar för november. Och de är alla bra! För att komma dit, gå till Fakturering > Köp tjänster. <br>![Skärminspelning som visar sidan köptjänster med 3 nya förbättringar.](../media/M365PreviewBillingPurchasServices.png)
-
-  > 1. Högst upp på sidan kan du svänga mellan affärs- och utbildningsplaner. Det hjälper dig att hitta det du letar efter.
-  > 2. Vi har lagt till en sökruta så att du inte behöver bläddra i all oändlighet för att hitta det du letar efter.
-  > 3. Slutligen sorterade vi logiskt de planer du kan köpa i avsnitt som du kan expandera och komprimera. Behöver du inte köpa någon av **Office-programmen och -tjänsterna?** Komprimera det avsnittet och fokusera på Microsoft 365-abonnemang.
-
-## <a name="october-2018"></a>Oktober 2018
-
-- Det finns ett nytt sätt att köpa prenumerationer i Microsoft 365 admin center. Gå till **Köp-tjänster** för att se den helt omdesignade shoppingupplevelsen som gör det enkelt att söka, jämföra planer och andra nya fantastiska funktioner som gör det enklare att köpa en prenumeration. <br/>![Jämförelse av köptjänster i förhandsversionen av Microsoft 365 admin center](../media/0ad5acf1-8ffc-44bf-aac2-c21269910e65.png)
-
-- Sidan Tjänster och tillägg har **uppdaterats** till det nya utseendet och känslan, men allt annat fungerar exakt likadant. Naturligtvis bör du kolla in kommandofältet för att se vilka nya saker du kan göra, som att filtrera och ändra listan till kompakt vy. I navigeringsfönstret går du till Tillägg till **Inställningarstjänster** \> ** &amp; ** för att checka ut det. <br/>![Sidan Inställningar och tillägg i förhandsversionen av administrationscentret för Microsoft 365](../media/af9a3ed3-bfe6-438b-b4b5-2ca4164f8e3f.png)
-
-## <a name="september-2018"></a>I september 2018
-
-- **Hem förbättringar** Hemsidan har helt gjorts om och vi kan inte vänta på att du ska prova det och se vad du tycker. Det här är din personliga startsida och du påverkar inte startsidorna för andra administratörer i organisationen. <br/>![Skärminspelning: Startsida för förhandsversionen av Administrationscenter i Microsoft 365.](../media/d1a497f1-30e6-4c1a-9bb2-d4d7895906da.png)
-
-  - Du kan lägga till, ta bort och flytta startsideskort runt startsidan. Välj **+ Lägg till kort** i det övre högra hörnet för att se vilka kort som är tillgängliga i kortbiblioteket och dra dem sedan var som helst på startsidan. Gillar du inte var den landade? Dra den dit du vill ha den. Du behöver inte ens spara mer.
-
-  - Ta organisationen till nästa nivå genom att gruppera kort i avsnitt. Vi har skapat två standardavsnitt för dig: **Grunderna** och **enheter och uppdateringar.** Mycket snart kan du lägga till, ta bort och byta namn på avsnitt för att utforma en startsida som fungerar för dig.
-
-  - De flesta korten är informativa och användbara, vilket innebär att du kommer att få just-in-time-information som hjälper dig att utföra dina dagliga uppgifter snabbare och smartare.
-
-  - Navigeringsfönstret har ordnats om och du kan anpassa det för dina snabba uppgifter. Välj bara **Redigera** längst ned i navigeringsfönstret för att börja anpassa. <br/>![Navigeringsfönstret för förhandsversionen av Administrationscenter i Microsoft 365](../media/7d5568cc-9ce8-40b2-aa87-e777fcd455e3.png)
-
-- **Fakturering** Du kommer förmodligen att märka några av de största ändringarna i Microsoft 365-administrationscentret i avsnittet Fakturering. Du kan hantera prenumerationer och appar som du har köpt från Microsoft eller en annan leverantör, inklusive nya upplevelser för lagerhantering, orderhistorik, betalningsmetoder och fakturering.
-
-  - Prenumerationshantering har gjorts om för att ge dig en ny lagerhanteringsupplevelse för fler produkttyper, inklusive appar, programvara och tillägg. Det kallas nu ** &amp; produkter tjänster** för att bättre återspegla stödet för nya produkttyper som läggs till. Du kan nu välja att ha en kort- eller tabellvy över produkterna och tjänsterna, och du kan söka och filtrera för att snabbt hitta det du letar efter. <br/>![Produkter och tjänster i förhandsversionen av Microsoft 365-administrationscentret](../media/f1bba7dc-2034-4a53-b4ad-b7fbef3fb442.png)
-
-  - Det är nu enklare än någonsin att tilldela användarna en produktlicens. Välj den köpta produkten och sedan kan du tilldela produkten. Du kan också se vilka användare som redan har tilldelats en viss produkt. <br/>![Produktinformation från fakturering i förhandsversionen av microsoft 365-administrationscentret](../media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
-
-  - **Switch-abonnemang** kallas nu **Uppgraderingar** och slutligen prenumerationsuppgraderingar hända bakom kulisserna så att du inte behöver titta på uppgraderingen klar. Slutligen finns det inte längre någon licensbegränsning för uppgraderingar.
-
-- **Användarhantering** Vi har gjort många ändringar i användarhanteringen för att hjälpa dig att få ditt arbete gjort snabbare. Vi har uppdaterat sidan **Aktiva användare** och användarens informationsfönster. Här är några av de mer fantastiska förändringar:
-
-  - Det finns en ny design och ny layout på sidan **Aktiva användare.** Gillar du inte hur listan ser ut? Välj **Ändra vy** (bredvid **Filter)** och du kan ändra listan från **normallista** till **lista Komprimera**. Kompakt lista är särskilt användbart om du har många användare i organisationen. <br/>![Sidan Aktiva användare i förhandsgranskningen](../media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
-
-  - Kommandofältet (där **Sök** bor) är dynamiskt och listan över åtgärder ändras beroende på antalet användare du har valt: inga användare, en användare eller flera användare. Du ser också hur många användare du har valt bredvid **Sök**. <br/>![Kommandofältet Förhandsgranskning av Aktiva användare i Microsoft 365.](../media/9576bd19-31a5-4e59-a8dd-0663a833def0.png)
-
-  - Du kan utföra snabba uppgifter som att återställa lösenord för enskilda eller flera användare direkt från listvyn.
-
-  - Användarens information och inställningar ordnas nu efter följande flikar: **Konto,** **Enheter**, **Licenser**, **Appar**, **E-post**och **OneDrive**. Tidigare fanns många av dessa inställningar på flera skärmar. <br/>![Informationsfönstret användare i förhandsversionen av administrationscentret.](../media/60c6b9d3-d62f-4b8d-97db-41ff247b1bf0.png)<br/>

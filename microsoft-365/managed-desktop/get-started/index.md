@@ -6,10 +6,10 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42805431"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Komma igång med Microsoft Managed Desktop

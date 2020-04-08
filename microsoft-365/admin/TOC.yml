@@ -169,6 +169,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Använd centraliserad distribution för att distribuera tillägg
           href: manage/manage-deployment-of-add-ins.md
+        - name: Vanliga frågor och svar om centraliserad distribution
+          href: manage/centralized-deployment-FAQ.md
         - name: Hitta din partner eller återförsäljare
           href: manage/find-your-partner-or-reseller.md
         - name: Postlådor för rum och utrustning

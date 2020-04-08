@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033452"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170958"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Automatisk undersökning och svar (AIR) i Office 365
 
@@ -75,7 +75,7 @@ Som en del av AIR, säkerhet spelböcker rullas ut i faser. Fas 1 är nu allmän
 
 Fas 1 innehåller även stöd för administratörsutlösta e-postundersökningar (med [Threat Explorer).](threat-explorer.md)
 
-Fas 2 går nu vidare med följande spelböcker i **den offentliga förhandsversionen,** ger rekommendationer för åtgärder och hjälper säkerhetsadministratörer att undersöka problem:
+Fas 2 pågår nu med följande spelböcker i **den offentliga förhandsversionen,** med rekommendationer för åtgärder och hjälp med säkerhetsadministratörer att undersöka problem:
 - Användare som rapporterats som komprometterade (offentlig förhandsversion)
 
 Ytterligare spelböcker kommer att släppas när de är klara. Besök [Översikten över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) för att se vad som planeras och kommer snart.

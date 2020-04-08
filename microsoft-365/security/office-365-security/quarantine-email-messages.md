@@ -2,8 +2,8 @@
 title: Karantän i Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Karantän i Office 365 innehåller potentiellt farliga eller oönskade meddelanden. Administratörer och slutanvändare kan komma åt karantän.
-ms.openlocfilehash: 29f9fcbed83e9019118bb8b37c19cad1199c4c45
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: a11b4a0d86cfc5f74636d3a9f89cf598320d1ebf
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895305"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42940963"
 ---
 # <a name="quarantine-in-office-365"></a>Karantän i Office 365
 
@@ -31,7 +31,7 @@ Om du är en Office 365-kund med postlådor i Exchange Online eller en friståen
 
 Policyer mot skadlig kod sätter automatiskt ett meddelande i karantän om *någon* bifogad fil visar sig innehålla skadlig kod. Mer information finns [i Konfigurera principer mot skadlig kod i Office 365](configure-anti-malware-policies.md).
 
-Som standard, anti-spam polisen karantän phishing-meddelanden, och leverera skräppost och bulk e-postmeddelanden till användarens skräppostmapp. Men du kan också skapa och anpassa anti-spam-policyer för att sätta skräppost och massmeddelanden i karantän. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+Som standard, anti-spam polisen karantän phishing-meddelanden, och leverera skräppost och bulk e-postmeddelanden till användarens skräppostmapp. Men du kan också skapa och anpassa anti-spam-policyer för att sätta skräppost och massmeddelanden i karantän. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 Både användare och administratörer kan arbeta med meddelanden i karantän:
 
@@ -39,7 +39,7 @@ Både användare och administratörer kan arbeta med meddelanden i karantän:
 
 - Användare kan arbeta med meddelanden i karantän där de är mottagare om meddelandet har satts i karantän som skräppost, massmeddelande eller (från och med april 2020) nätfiske. Mer information finns i [Hitta och släppa meddelanden i karantän som användare i Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
-  För att förhindra att användare hanterar sina egna nätfiskemeddelanden i karantän kan administratörer konfigurera en annan åtgärd för **e-nätfiskefiltreringsdomen** i policyer för skräppostskydd. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+  För att förhindra att användare hanterar sina egna nätfiskemeddelanden i karantän kan administratörer konfigurera en annan åtgärd för **e-nätfiskefiltreringsdomen** i policyer för skräppostskydd. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 - Administratörer och användare kan rapportera falska positiva identifieringar till Microsoft i karantän.
 

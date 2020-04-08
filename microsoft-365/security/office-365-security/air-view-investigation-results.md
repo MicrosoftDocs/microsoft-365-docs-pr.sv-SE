@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Under och efter en automatisk undersökning i Office 365 kan du visa resultat och viktiga resultat.
-ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894234"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163916"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Information och resultat av en automatiserad undersökning i Office 365
 
@@ -87,18 +87,16 @@ Undersökningsstatusen visar hur analysen och åtgärderna fortskrider. När und
 
 |Status  |Vad det innebär  |
 |---------|---------|
-|Startar | Utredningen står i kö för att påbörjas inom kort |
-|Kör | Utredningen har inletts och genomför sin analys |
-|Inga hot hittades | Utredningen har avslutat sin analys och inga hot hittades |
-|Avslutas av systemet | Utredningen lades inte ner och löpte ut efter 7 dagar |
-|Väntande åtgärd | Undersökningen fann hot med åtgärder rekommenderas.  Undersökningen fortsätter att köras efter att den hittat initiala hot och rekommenderade åtgärder, så du bör kontrollera loggen innan du godkänner åtgärder för att se om analysatorer fortfarande pågår. |
-|Hot hittades | Utredningen fann hot, men hoten har inte åtgärder tillgängliga inom AIR.  Det här är användaråtgärder där det inte finns någon riktning AIR-åtgärd ännu. |
-|Åtgärdad | Undersökningen avslutades och åtgärdades helt (alla åtgärder godkändes) |
-|Delvis åtgärdad | Undersökningen avslutades och några av de rekommenderade åtgärderna godkändes |
-|Avslutad av användare | En administratör avslutade undersökningen |
-|Misslyckades | Ett fel uppstod under undersökningen som hindrade den från att dra en slutsats om hot |
-|Köade genom begränsning | Undersökningen väntar på analys på grund av begränsningar för systembearbetning (för att skydda tjänstens prestanda) |
-|Avslutad med begränsning | Undersökningen kunde inte slutföras i tillräckligt god tid på grund av begränsningar av utredningsvolymen och systembearbetningen. Du kan återtrigga undersökningen genom att välja e-postmeddelandet i Explorer och välja åtgärden Undersök. |
+|Startar | Utredningen har utlösts och väntar på att börja köras. Detta är det första steget. |
+|Kör | Utredningsprocessen har inletts och pågår. Det här tillståndet inträffar också när [väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) godkänns. |
+|Inga hot hittades | Undersökningen är klar och inga hot (användarkonto, e-postmeddelande, URL eller fil) har identifierats. <br/><br/>**TIPS:** Om du misstänker att något har missats (t.ex. en falsk negativ) kan du vidta åtgärder med [Hot Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Avslutas av systemet | Utredningen avbröts. Detta kan hända av flera skäl. Här är de två vanligaste orsakerna:<br/>- Utredningens pågående åtgärder har gått ut. Väntande åtgärder time out efter att ha väntat på godkännande för en vecka. <br/>- Det är för många handlingar. Om det till exempel finns för många användare som klickar på skadliga webbadresser kan det överskrida undersökningens förmåga att köra alla analysatorer, så undersökningen stoppas. <br/><br/>**TIPS:** Om en undersökning avbryts innan åtgärder vidtogs kan du prova att använda [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) för att hitta och åtgärda hot.  |
+|Väntande åtgärd | Undersökningen har hittat ett hot, till exempel ett skadligt e-postmeddelande, en skadlig URL eller en riskfylld postlådeinställning, och en åtgärd för att åtgärda det hotet väntar på [godkännande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Tillståndet Väntande åtgärd utlöses när ett hot med en motsvarande åtgärd hittas. Observera dock att undersökningen kanske inte är helt fullständig ännu.  Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) för att se om andra objekt fortfarande väntar på att slutföras. |
+|Åtgärdad | Undersökningen avslutades och alla åtgärder godkändes (fullständigt åtgärdade).<br/><br/>**OBS:** Godkända reparationsåtgärder kan ha fel som förhindrar att åtgärder vidtas. Detta ändrar inte undersökningsstatus. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) för detaljerade resultat. |
+|Delvis åtgärdad | Undersökningen resulterade i saneringsåtgärder och vissa godkändes och slutfördes. Andra åtgärder pågår [fortfarande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Misslyckades | Minst en undersökning analysator stötte på ett problem där det inte kunde slutföras på rätt sätt. <br/><br/>**OBS:** Om en undersökning misslyckas efter att reparationsåtgärder har godkänts kan reparationsåtgärderna fortfarande ha lyckats. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) för detaljerade resultat. |
+|Köade genom begränsning | En utredning hålls i kö. När andra utredningar är klara inleds köutredningar. Detta hjälper till att undvika dålig serviceprestanda. <br/><br/>**TIPS:** Väntande åtgärder kan begränsa hur många nya undersökningar som kan köras. Se till att [godkänna (eller avvisa) väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Avslutad med begränsning | Om en utredning hålls i kön för länge stoppas den. <br/><br/>**TIPS:** Du kan [starta en undersökning från Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Undersökning diagram
 
