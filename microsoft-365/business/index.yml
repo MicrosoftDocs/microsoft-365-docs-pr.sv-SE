@@ -4,19 +4,34 @@ summary: Microsoft 365 Business är en prenumerationstjänst som innehåller pro
 brand: m365
 metadata:
   title: Microsoft 365 Affärsresurser
-  description: Beskrivning
+  description: beskrivning
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 238c4cd0c74854def600af876f93c52e6480ebb5
-  ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
+  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 01/18/2020
-  ms.locfileid: "42809001"
+  ms.lasthandoff: 04/07/2020
+  ms.locfileid: "43165917"
+productDirectory:
+  title: Säkert fjärrarbete med Microsoft 365 Business
+  items:
+  - title: Vad är det senaste?
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 kommer till Microsoft 365 Business!
+    url: https://aka.ms/aadp1smbblog
+  - title: Titta på webinar
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Säkra dina SMB-kunder när de klarar COVID-19.
+    url: https://aka.ms/M365v253PAL-Register
+  - title: Köpa
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Klicka på länken för att köpa eller kontakta din partner.
+    url: https://aka.ms/m365bweb
 conceptualContent:
   items:
   - title: Vad är Microsoft 365 Business?
@@ -54,7 +69,7 @@ conceptualContent:
     links:
     - url: https://www.microsoft.com/microsoft-365/partners/business
       itemType: overview
-      text: Partnersida
+      text: Sidan Partner
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
       itemType: download
       text: Pitch däck (kundfokus)
@@ -82,7 +97,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
       itemType: overview
-      text: Office 365 Avancerat hotskydd
+      text: Office 365 Avancerat skydd
     - url: set-up-mfa.md
       itemType: how-to-guide
       text: Konfigurera MFA
@@ -91,7 +106,7 @@ conceptualContent:
       text: Skydda mot ransomware
     - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
       itemType: overview
-      text: Villkorlig åtkomst
+      text: Med villkorsstyrd åtkomst
     footerLink:
       url: https://docs.microsoft.com/office365/admin/admin-home
       text: Läs mer
@@ -116,7 +131,7 @@ conceptualContent:
     links:
     - url: view-policies-and-devices.md
       itemType: how-to-guide
-      text: PC & Mobila enheter
+      text: PC & mobila enheter
     - url: remove-company-data.md
       itemType: how-to-guide
       text: Ta bort företagsdata
@@ -128,7 +143,7 @@ conceptualContent:
       text: Intune
     - url: manage-windows-devices.md
       itemType: how-to-guide
-      text: Konfigurera hybrid Azure AD-koppling
+      text: Konfigurera hybrid-Azure AD-koppling
     - url: access-resources.md
       itemType: how-to-guide
       text: Konfigurera Azure AD-koppling
@@ -145,10 +160,10 @@ conceptualContent:
       text: Säker poäng
     - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
       itemType: overview
-      text: Rapport om intune-appskyddsprinciper
+      text: Rapport över Intune-appskyddsprinciper
     - url: https://docs.microsoft.com/office365/enterprise/view-service-health
       itemType: how-to-guide
-      text: Hälsoövervakningsvarningar
+      text: Varningar för hälsoövervakning
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/security/
       text: Läs mer
@@ -165,7 +180,7 @@ conceptualContent:
       text: Skicka feedback
     - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
       itemType: overview
-      text: Små och medelstora företag tech gemenskap
+      text: Teknikgemenskap för små och medelstora företag
   - title: Hur gör jag...
     links:
     - url: sign-up.md
