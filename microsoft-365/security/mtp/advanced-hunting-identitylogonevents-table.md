@@ -18,16 +18,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.openlocfilehash: 754c9476e81dd84e2140e18b8684061f52c287ba
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42929332"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 Tabellen `IdentityLogonEvents` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om autentiseringsaktiviteter som registrerats av Azure Active Directory och andra Microsoft-molnappar och -tjänster. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
 

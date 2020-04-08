@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 938a6d58c8781fcc04f6b86e15db88b5de523cdf
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: d271e0351f784e1616e81e0f0124e65c3526ab91
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142521"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170970"
 ---
 # <a name="top-10-ways-to-secure-office-365-and-microsoft-365-business-plans"></a>De 10 bästa sätten att skydda Office 365 och Microsoft 365 Business-abonnemang
 
@@ -190,6 +190,7 @@ Så här skapar du en regel för e-posttransport:
 |:-----|:-----|
 |Namn  <br/> |Förhindra automatisk vidarebefordran av e-post till externa domäner  <br/> |
 |Tillämpa den här regeln om ...  <br/> |Avsändaren . . . är extern/intern . . . Inne i organisationen  <br/> |
+|Lägg till villkor  <br/> |Mottagaren . . . är extern/intern . . . Utanför organisationen  <br/> |
 |Lägg till villkor  <br/> |Meddelandeegenskaperna . . . inkludera meddelandetypen . . . Auto-framåt  <br/> |
 |Gör följande ...  <br/> |Blockera meddelandet . . . avvisa meddelandet och inkludera en förklaring.  <br/> |
 |Ange meddelandetext  <br/> |Automatisk vidarebefordran av e-post utanför den här organisationen förhindras av säkerhetsskäl.  <br/> |
