@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 74c1ceb8e9d2193e7ad7afd2b339d29d54780517
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165929"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189013"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av Office 365-tillägg i administrationscentret för Microsoft 365
 
@@ -75,7 +75,7 @@ Innan du börjar läser du [Ta reda på om centraliserad distribution av tilläg
 7. En grön bock visas när tillägget har distribuerats. Du kan följa instruktionerna på sidan för att testa att tillägget har distribuerats.
 
 > [!NOTE]
-> Användare kan behöva starta om Office för att se att tilläggsikonen visas i menyfliksområdet i appen. Det kan ta upp till 12 timmar innan Outlook-tillägg visas i användarnas menyfliksområdet.
+> Användare kan behöva starta om Office för att se att tilläggsikonen visas i menyfliksområdet i appen. Det kan ta upp till 24 timmar innan Outlook-tillägg visas i användarnas menyfliksområdet.
     
 8. När du är klar väljer du **Nästa**. Om du har distribuerat till bara dig själv kan du välja **Ändra vem som har åtkomst till tillägget** för att distribuera till fler användare.
 

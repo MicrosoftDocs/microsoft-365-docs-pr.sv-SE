@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Granska svaren på vanliga frågor om centraliserad distribution från microsoft 365-administrationscentret.
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166499"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188961"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
@@ -33,7 +33,7 @@ Centraliserad distribution är det rekommenderade sättet för en Office 365-adm
 
 Centraliserad distribution av tillägg kräver att användare använder Office 365 ProPlus (och är inloggade på Office med sina organisationsloggningsuppgifter) och har Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federerade till Azure Active Directory.  
  
-Centraliserad distribution stöds bara för en Outlook Online-postlådor. Det stöder inte distribution till lokala Exchange-postlådor.
+Centraliserad distribution stöds endast för onlinepostlådor. Det stöder inte distribution till lokala Exchange-postlådor.
  
 Du kan använda [kompatibilitetskontrollen för centraliserad distribution i Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) för att avgöra om din prenumeration är kvalificerad. 
   
@@ -47,7 +47,7 @@ Mer information finns i [Användar- och grupptilldelningar](https://docs.microso
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Hur lång tid tar det för tillägg att visas för alla användare?  
 
-Det kan ta upp till 12 timmar innan ett tillägg visas för alla användare. Det kan ta lika lång tid för tilläggsuppdateringar, ändringar från aktivera eller inaktivera eller tilläggsborttagningar. 
+Det kan ta upp till 24 timmar innan ett tillägg visas för alla användare. Det kan ta lika lång tid för tilläggsuppdateringar, ändringar från aktivera eller inaktivera eller tilläggsborttagningar. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>Hur hanterar jag användaråtkomst till tillägg för min organisation som administratör?
 

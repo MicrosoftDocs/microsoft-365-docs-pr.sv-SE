@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ta reda på om din Office 365-klientorganisation och -användare uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811955"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189017"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ta reda på om centraliserad distribution av tillägg fungerar för din organisation
 
 Centraliserad distribution är den rekommenderade och mest funktionsrika metoden för de flesta kunder att distribuera Office-tillägg till användare och grupper inom Office 365-organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din klient och dina användare uppfyller kraven så att du kan använda centraliserad distribution.
 Centraliserad distribution stöder Windows-, Mac-, iOS-, Android- och Online Office-appar.
-Det kan ta upp till 12 timmar innan ett tillägg visas för klienten för alla användare.
+Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla användare.
   
 ## <a name="requirements"></a>Krav
 
@@ -56,7 +56,7 @@ Centraliserad distribution stöder inte följande:
 - För Word-, Excel- och PowerPoint-tillägg måste användarna använda något av följande:
   - På en Windows-enhet, version 1704 eller senare av Office 365 ProPlus.
   - På en Mac, version 15.34 eller senare.
-      - På iOS (endast iPad), version 2.9.18010804 eller senare.
+
 - För Outlook måste användarna använda något av följande: 
   - Version 1701 eller senare av Office 365 ProPlus.
   - Version 1808 eller senare av Office Professional Plus 2019 eller Office Standard 2019.
