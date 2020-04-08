@@ -1,5 +1,5 @@
 ---
-title: Hitta och släppa meddelanden i karantän som användare i Office 365
+title: Hitta och släppa meddelanden i karantän som Office 365-användare
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,20 +17,18 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Som Office 365-användare kan du visa, släppa och ta bort dina meddelanden i karantän (meddelanden där du är mottagare och skräppostfiltreringen har satt meddelandet i karantän som skräppost eller massutskick). Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevnadscenter.
-ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893676"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941411"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Hitta och släppa meddelanden i karantän som användare i Office 365
 
 Karantänen lagrar potentiellt farliga eller oönskade meddelanden i Office 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor. Mer information finns i [Karantän i Office 365](quarantine-email-messages.md).
 
-Som användare kan du visa, släppa och ta bort dina meddelanden i karantän där du är mottagare, och där meddelandet har satts i karantän som skräppost, massutskick eller (från och med april 2020) nätfiske. Du kan även rapportera falska positiva identifieringar till Microsoft.
-
-Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevnadscenter.
+Som användare kan du visa, släppa och ta bort dina meddelanden i karantän där du är mottagare, och där meddelandet har satts i karantän som skräppost, massutskick eller (från och med april 2020) nätfiske. Du visar och hanterar dina meddelanden i karantän i Säkerhets- och efterlevnadscenter eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostmeddelanden](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -38,7 +36,7 @@ Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevn
 
 - Administratörer kan konfigurera hur länge meddelanden behålls i karantän innan de tas bort permanent (principer för skräppostskydd). Meddelanden som har upphört att gälla och tas bort från karantänen går inte att återställa. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
-- Administratörer kan även [aktivera skräppostaviseringar för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) i principer för skräppostskydd. Från och med oktober 2019 kan du inte längre släppa meddelanden i karantän direkt från dessa aviseringar. Du kan klicka på **Granska** i aviseringen, vilket tar dig till Säkerhets- och efterlevnadscenter. Mer information om aviseringarna finns i artikeln om [skräppostaviseringar för slutanvändare i Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Administratörer kan även [aktivera skräppostaviseringar för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) i principer för skräppostskydd. Användare kan släppa skräppostmeddelanden i karantän men inte nätfiskemeddelanden i karantän direkt från dessa aviseringar. Mer information finns i artikeln om [skräppostaviseringar för slutanvändare i Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - Meddelanden som har satts i karantän för nätfiske via e-post med hög konfidens, skadlig kod eller via e-postflödesregler (kallas även transportregler) är endast tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md).
 
@@ -142,7 +140,7 @@ När du väljer ett e-postmeddelande i listan visas följande meddelandeinformat
 
 - **Släppt till**: Alla e-postadresser som meddelandet har släppts till.
 
-- **Inte släppt än till**: Alla e-postadresser som meddelandet ännu inte har släppts till.
+- **Släppt till**: Alla e-postadresser som meddelandet har släppts till.
 
 ### <a name="take-action-on-quarantined-email"></a>Vidta åtgärder för e-post i karantän
 
