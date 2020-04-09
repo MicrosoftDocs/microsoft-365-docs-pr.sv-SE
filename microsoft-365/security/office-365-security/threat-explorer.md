@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om explorer och &amp; realtidsidentifieringar i Security Compliance Center.
-ms.openlocfilehash: 2db16773b305e2e5f929e96fb3ca0e7bfe541990
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081274"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198389"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
 
@@ -173,7 +173,7 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md)som 
 
 1. I Security & Compliance Center[https://protection.office.com](https://protection.office.com)( väljer du **Explorer för hothantering** > **(eller** **Identifiering i realtid).** (I det här exemplet används Explorer.)
 
-2. Välj **Skicka e-post** > **på** **Visa-menyn** .
+2. Välj **Skicka e-post** > **på** **Visa-menyn** . (Detta kallades tidigare **Användarrapporterat**.)
 
    ![Visa-menyn för Explorer](../../media/ExplorerViewMenuEmailUserReported.png)
 
@@ -234,3 +234,7 @@ Mer information om roller och behörigheter finns i följande resurser:
 
 - Identifieringsrapporten **för realtid** är tillgänglig i Office 365 ATP Plan 1, medan **Threat Explorer** är tillgängligt i Office 365 ATP-abonnemang 2.
 - I rapporten **Identifiering i realtid** kan du visa identifieringar i realtid. **Threat Explorer** gör detta också, men låter dig också visa ytterligare information för en viss attack.
+- En **e-postvy** är tillgänglig i **Threat Explorer** (och finns inte i rapporten identifiering i **realtid).**
+- Fler filtreringsfunktioner och tillgängliga åtgärder ingår i **Threat Explorer**.
+
+Mer information finns i [Office 365 ATP Service Description: Funktionstillgänglighet i atp-abonnemang (Advanced Threat Protection)](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)

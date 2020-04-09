@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c781d86c13165ac51dfee57b1c2cf3e9e536d3d5
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42805844"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198367"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterade skrivbordsenheter 
 
@@ -46,10 +46,11 @@ Länkarna till enheter här är endast för din referens. Om du vill beställa e
 | [HP EliteBook x360 830 G6 bärbar dator](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtryckssensor krävs | Den 30 november 2020 | den 30 november 2023 |
 | **\*[HP Elite x2 G4 Tablett](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS03AV | den 31 juli 2021 | den 31 juli 2024 |
 | **\*[HP EliteBook x360 1030 G4 bärbar dator](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV | Den 28 februari 2021 | Den 28 februari 2024 |
-| **\*[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040)** | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | Den 30 november 2020 | den 30 november 2023 |
+|[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV| Den 30 november 2020 | den 30 november 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | den 18 juli 2020 | den 18 juli 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | den 18 juli 2020 | den 18 juli 2023 |
 | [HP EliteOne 800 G4 23.8in AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | den 18 juli 2020 | den 18 juli 2023 |
+| **\*[HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html--1#!&tab=features)** | 256 GB / Intel i5 / 8 GB RAM | SKU med 9MZ21AV | Den 31 december 2020 | den 31 december 2023 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV, IR-kamera eller fingeravtrycksläsare krävs | den 6 juni 2020 | den 6 juni 2023 |
 | [HP Z2 Mini G4 Arbetsstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU med 8QR48AV| den 31 januari 2021 | den 31 januari 2024 |
 |[HP ZBook 14u/15u G6 Mobil arbetsstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS02AV, IR-kamera krävs | Den 30 november 2020 | den 30 november 2023 |
