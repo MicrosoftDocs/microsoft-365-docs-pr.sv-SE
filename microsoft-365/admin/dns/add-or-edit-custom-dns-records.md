@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,35 +21,35 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: 'Lär dig hur du redigerar eller lägger till en anpassad DNS-post i Office 365. '
-ms.openlocfilehash: 4cdfe98a38dd870dcf5d745438e8d81afa1fc934
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857113"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212527"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a><span data-ttu-id="2f256-103">Lägga till eller redigera anpassade DNS-poster i Office 365</span><span class="sxs-lookup"><span data-stu-id="2f256-103">Add or edit custom DNS records in Office 365</span></span>
+# <a name="add-or-edit-custom-dns-records-in-office-365"></a><span data-ttu-id="7ccf7-103">Lägga till eller redigera anpassade DNS-poster i Office 365</span><span class="sxs-lookup"><span data-stu-id="7ccf7-103">Add or edit custom DNS records in Office 365</span></span>
 
- <span data-ttu-id="2f256-104">**[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="2f256-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="7ccf7-104">**[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="7ccf7-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
 
-1. <span data-ttu-id="2f256-105">Logga in på administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="2f256-105">Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>   
+1. <span data-ttu-id="7ccf7-105">Logga in på administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="7ccf7-105">Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>   
 
-2. <span data-ttu-id="2f256-106">Gå till sidan **Inställningar** \> **domäner.**</span><span class="sxs-lookup"><span data-stu-id="2f256-106">Go to the **Settings** \> **Domains** page.</span></span>
+2. <span data-ttu-id="7ccf7-106">Gå till sidan **Inställningar** \> **domäner.**</span><span class="sxs-lookup"><span data-stu-id="7ccf7-106">Go to the **Settings** \> **Domains** page.</span></span>
 
-3. <span data-ttu-id="2f256-107">Välj en domän på sidan **Domäner**.</span><span class="sxs-lookup"><span data-stu-id="2f256-107">On the **Domains** page, select a domain.</span></span> 
+3. <span data-ttu-id="7ccf7-107">Välj en domän på sidan **Domäner**.</span><span class="sxs-lookup"><span data-stu-id="7ccf7-107">On the **Domains** page, select a domain.</span></span> 
     
-4. <span data-ttu-id="2f256-108">Under **DNS-inställningar**väljer du **Anpassade poster.** välj sedan **Ny anpassad post**.</span><span class="sxs-lookup"><span data-stu-id="2f256-108">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
+4. <span data-ttu-id="7ccf7-108">Under **DNS-inställningar**väljer du **Anpassade poster.** välj sedan **Ny anpassad post**.</span><span class="sxs-lookup"><span data-stu-id="7ccf7-108">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
 
-5. <span data-ttu-id="2f256-109">Välj den typ av DNS-post som du vill lägga till och skriv informationen för den nya posten.</span><span class="sxs-lookup"><span data-stu-id="2f256-109">Select the type of DNS record you want to add and type the information for the new record.</span></span>
+5. <span data-ttu-id="7ccf7-109">Välj den typ av DNS-post som du vill lägga till och skriv informationen för den nya posten.</span><span class="sxs-lookup"><span data-stu-id="7ccf7-109">Select the type of DNS record you want to add and type the information for the new record.</span></span>
     
-6. <span data-ttu-id="2f256-110">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="2f256-110">Select **Save**.</span></span>
+6. <span data-ttu-id="7ccf7-110">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="7ccf7-110">Select **Save**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="2f256-111">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="2f256-111">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="7ccf7-111">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="7ccf7-111">Related articles</span></span>
 
-[<span data-ttu-id="2f256-112">Samla den information du behöver för att skapa DNS-poster i Office 365</span><span class="sxs-lookup"><span data-stu-id="2f256-112">Gather the information you need to create Office 365 DNS records</span></span>](../get-help-with-domains/information-for-dns-records.md)
+[<span data-ttu-id="7ccf7-112">Samla den information du behöver för att skapa DNS-poster i Office 365</span><span class="sxs-lookup"><span data-stu-id="7ccf7-112">Gather the information you need to create Office 365 DNS records</span></span>](../get-help-with-domains/information-for-dns-records.md)
 
-[<span data-ttu-id="2f256-113">DNS-grundkunskaper</span><span class="sxs-lookup"><span data-stu-id="2f256-113">DNS basics</span></span>](../get-help-with-domains/dns-basics.md)
+[<span data-ttu-id="7ccf7-113">DNS-grundkunskaper</span><span class="sxs-lookup"><span data-stu-id="7ccf7-113">DNS basics</span></span>](../get-help-with-domains/dns-basics.md)
 
-[<span data-ttu-id="2f256-114">Få hjälp med Office 365-domäner</span><span class="sxs-lookup"><span data-stu-id="2f256-114">Get help with Office 365 domains</span></span>](../get-help-with-domains/get-help-with-domains.yml)
+[<span data-ttu-id="7ccf7-114">Få hjälp med Office 365-domäner</span><span class="sxs-lookup"><span data-stu-id="7ccf7-114">Get help with Office 365 domains</span></span>](../get-help-with-domains/get-help-with-domains.md)
 
 
