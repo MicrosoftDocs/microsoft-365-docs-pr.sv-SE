@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Cloudflare för Office 365.
-ms.openlocfilehash: efd7a4a41a0cc27c2a50da732d648c87c79c6ff7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8d64824f880bab9e6691ebf47c9508c555562fe4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42810824"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211817"
 ---
 # <a name="create-dns-records-at-cloudflare-for-office-365"></a>Skapa DNS-poster för Office 365 hos Cloudfare
 
@@ -72,21 +72,21 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
   
-2. På **startsidan** väljer du den domän som du vill uppdatera. 
+2. Välj den domän som du vill uppdatera på **startsidan.** 
   
-3. Välj **DNS**på sidan **Översikt** för domänen.
+3. Välj **DNS**på sidan **Översikt** för din domän .
 
   
 4. Klicka på **Lägg till post**på sidan **DNS-hantering** och välj sedan värdena i följande tabell. 
     
-    |**Type (typ)**|**Name (namn)**|**Automatic TTL (automatisk TTL)**|**Innehåll**|
+    |**Typ**|**Name (namn)**|**Automatic TTL (automatisk TTL)**|**Innehåll**|
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 minuter  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)    |
   
@@ -96,22 +96,22 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
   
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -123,16 +123,16 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
   
-2. På **startsidan** väljer du den domän som du vill uppdatera. 
+2. Välj den domän som du vill uppdatera på **startsidan.** 
   
-3. Välj **DNS**på sidan **Översikt** för domänen.
+3. Välj **DNS**på sidan **Översikt** för din domän .
 
   
 4. Klicka på **Lägg till post**på sidan **DNS-hantering** och välj sedan värdena i följande tabell. 
     
-    |**Type (typ)**|**Namn**|**Mail server (postserver)**|**Priority (prioritet)**|**TTL**|
+    |**Typ**|**Namn**|**Mail server (postserver)**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> [Mer information om prioritet finns i ](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
+    |MX  <br/> |@  <br/> |*\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> [Mer information om prioritet finns i ](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
    
 
   
@@ -140,7 +140,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 9. Om det finns andra MX-poster som i avsnittet **MX Records** (MX-poster) ska du ta bort alla genom att välja ikonen **Delete (X)** (ta bort (X)). 
   
-10. Välj **Ta bort** i bekräftelsedialogrutan för att bekräfta ändringarna. 
+10. Välj Ta bort i **bekräftelsedialogrutan** för att bekräfta ändringarna. 
 
   
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Lägga till de sex CNAME-poster som krävs för Office 365
@@ -149,9 +149,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
     
   
-2. På **startsidan** väljer du den domän som du vill uppdatera. 
+2. Välj den domän som du vill uppdatera på **startsidan.** 
   
-3. Välj **DNS**på sidan **Översikt** för domänen.
+3. Välj **DNS**på sidan **Översikt** för din domän .
 
   
 4. Lägg till den första av de fem CNAME-posterna.
@@ -159,7 +159,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     Klicka på **Lägg till post**på sidan **DNS-hantering** och välj sedan värdena i följande tabell.
     
     
-    |**Type (typ)**|**Namn**|**Target (mål)**|**TTL**|
+    |**Typ**|**Namn**|**Mål**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minuter  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minuter  <br/> |
@@ -169,7 +169,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minuter  <br/> |
     
   
-5. Välj **ikonen DNS Traffic** (orange moln) för att kringgå Cloudflare-servrarna.
+5. Välj **DNS Traffic-ikonen** (orange moln) för att kringgå Cloudflare-servrarna.
   
 6. Välj **Spara**.
   
@@ -185,9 +185,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
     
   
-2. På **startsidan** väljer du den domän som du vill uppdatera. 
+2. Välj den domän som du vill uppdatera på **startsidan.** 
   
-3. Välj **DNS**på sidan **Översikt** för domänen.
+3. Välj **DNS**på sidan **Översikt** för din domän .
 
   
 4. Klicka på **Lägg till post**på sidan **DNS-hantering** och välj sedan värdena i följande tabell.  
@@ -205,19 +205,19 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Tänk på att Cloudflare ansvarar för att göra den här funktionen tillgänglig. Om du ser avvikelser mellan stegen nedan och det aktuella Cloudflare GUI(Graphical User Interface) kan du utnyttja [Cloudflare-communityn](https://community.cloudflare.com/). 
+> Tänk på att Cloudflare är ansvarigt för att göra den här funktionen tillgänglig. Om du ser avvikelser mellan stegen nedan och det aktuella Cloudflare GUI(Grafiskt användargränssnitt), vänligen utnyttja [Cloudflare-communityn](https://community.cloudflare.com/). 
 
 1. Kom igång genom att gå till domänsidan på Cloudflare genom att klicka på [den här länken](https://www.cloudflare.com/a/login). Du uppmanas att logga in först.
       
-2. På **startsidan** väljer du den domän som du vill uppdatera. 
+2. Välj den domän som du vill uppdatera på **startsidan.** 
   
-3. Välj **DNS**på sidan **Översikt** för domänen.
+3. Välj **DNS**på sidan **Översikt** för din domän .
   
 4. Lägg till den första av de två SRV-posterna.
 
     Klicka på **Lägg till post**på sidan **DNS-hantering** och välj sedan värdena från den första raden i följande tabell.
         
-    |**Type (typ)**|**Service (tjänst)**|**Protocol (protokoll)**|**Namn**|**TTL**|**Priority**|**Weight**|**Port**|**Target (mål)**|
+    |**Type (typ)**|**Service (tjänst)**|**Protocol (protokoll)**|**Namn**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target (mål)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Använd din *domain_name;* till exempel contoso.com  |30 minuter | 100|1 |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Använd din *domain_name;* till exempel contoso.com   |30 minuter |100 |1 |5061 | sipfed.online.lync.com |

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på OVH för Office 365.
-ms.openlocfilehash: 4857addd7dfd096c1ddd6e59f1f17ace76b75a9e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809070"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211116"
 ---
 # <a name="create-dns-records-at-ovh-for-office-365"></a>Skapa DNS-poster för Office 365 hos OVH
 
@@ -55,7 +55,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="bkmk_txt"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -80,7 +80,7 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     
     ![OVH välj TXT-post](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
+6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
     
     |**Record type**|**Underdomän**|**TTL**|**Värde**|
     |:-----|:-----|:-----|:-----|
@@ -92,21 +92,21 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
   
 8. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
-    
-    
-  
-3. Välj **Starta inställningar**på sidan **Inställningar** .
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-4. På sidan **Verifiera domän** väljer du **Verifiera**.
+3. På sidan **Setup** väljer du **Start setup**.
+    
+    
+  
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -143,7 +143,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
     |**Record type**|**Underdomän**|**TTL**|**Priority**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<domännyckel\>.mail.protection.outlook.com.  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<domännyckel\>.mail.protection.outlook.com.  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH MX rekord för post](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -161,7 +161,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 10. Välj **Bekräfta**.
     
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="bkmk_cname"> </a>
 
 1. Kom igång genom att gå till domänsidan på OVH med [den här länken](https://www.ovh.com/manager/). Du uppmanas att logga in först.
@@ -275,7 +275,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell. Om du vill tilldela ett TTL-värde väljer du **Anpassad** i listrutan och skriver sedan värdet i textrutan. 
     
-    |**Record type**|**Sub-domain (Underdomän)**|**Priority**|**Weight**|**Port**|**TTL**|**Target**|
+    |**Record type**|**Sub-domain (Underdomän)**|**Prioritet**|**Vikt**|**Port**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (Service)  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (sekunder)  <br/> |sipdir.online.lync.com.  <br/> |
     |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (sekunder)  <br/> |sipfed.online.lync.com.  <br/> |

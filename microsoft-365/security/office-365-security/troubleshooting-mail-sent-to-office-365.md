@@ -16,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Office 365 och metodtips för massutskick till Office 365-kunder.
-ms.openlocfilehash: 72dd0360038e58c2501728d9032fef95f81d90c2
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42807651"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211913"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Felsöka e-post som skickas till Office 365
 
@@ -136,7 +136,7 @@ Marknadsföring e-post, särskilt nyhetsbrev, bör alltid innehålla ett sätt a
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
- `Update Profile/Email Address | Instant removal with SafeUnsubscribe™ | Privacy Policy`
+ `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
 Vissa avsändare inkluderar det här alternativet genom att kräva att mottagarna skickar ett e-postmeddelande till ett visst alias med "Avsluta prenumeration" i ämnet. Detta är inte att föredra framför ett klick exempel ovan. Om du väljer att kräva att mottagarna skickar ett e-postmeddelande kontrollerar du att alla obligatoriska fält är förifyllda när de klickar på länken.
 
@@ -144,7 +144,7 @@ Vissa avsändare inkluderar det här alternativet genom att kräva att mottagarn
 
 Den här bästa branschen rekommenderas om ditt företag kräver eller uppmuntrar användare att registrera sina kontaktuppgifter för att få tillgång till din produkt eller dina tjänster. Vissa företag gör det till en praxis att automatiskt registrera sina användare för marknadsföring e-post eller e-nyhetsbrev under registreringsprocessen, men detta anses vara en tvivelaktig marknadsföring praxis i en värld av e-filtrering.
 
-Under registreringsprocessen, om "Ja, skicka mig ditt nyhetsbrev" eller "Ja, skicka mig specialerbjudanden" kryssrutan är vald som standard, användare som inte betalar stor uppmärksamhet kan oavsiktligt registrera dig för marknadsföring e-post eller nyhetsbrev som de inte vill ta emot.
+Under registreringsprocessen, om "Ja, skicka mig ditt nyhetsbrev" eller "Ja, skicka mig specialerbjudanden" kryssrutan väljs som standard, användare som inte betalar stor uppmärksamhet kan oavsiktligt registrera dig för marknadsföring e-post eller nyhetsbrev som de inte vill få.
 
  Vi rekommenderar alternativet dubbel opt-in i stället, vilket innebär att kryssrutan för marknadsföring av e-postmeddelanden eller nyhetsbrev är avmarkerad som standard. Dessutom, när registreringsformuläret har skickats, en verifiering e-post skickas till användaren med en webbadress som tillåter dem att bekräfta sitt beslut att ta emot marknadsföring e-post.
 

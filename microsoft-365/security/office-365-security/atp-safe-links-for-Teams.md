@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Team kommer nu att ha tillgång till säkra länkar vid tidpunkten för ditt klick. Oavsett om du använder chattar 1-mot-1-chattar, mellan grupper eller i kanaler och flikar, om du har en prenumeration på Office 365 ATP, har du möjlighet att aktivera och använda den här säkerhetsfunktionen.
-ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030151"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212551"
 ---
 <!--06/21/2019-->
 
@@ -35,6 +35,9 @@ Så här fungerar det:
 1. När du startar Teams-programmet kontrollerar Office 365 att användaren tillhör en organisation som har Office 365 ATP och att användaren ingår i en aktiv princip för säkra länkar med dess skydd aktiverat för Microsoft Teams.
 
 2. Om ovanstående är sant valideras webbadresser vid klicktillfället i Chattar, Gruppchattar, Kanaler och i flikar för den användaren.
+
+> [!NOTE]
+> Säkra länkar skyddar användare från länkar som skickas av gästanvändare, Federerade användare, klientanvändare. Om användaren som är inloggad har säkra länkar för Teams aktiverade gäller skydd för säkra länkar.
  
 ## <a name="what-will-users-experience"></a>Vad kommer användarna att uppleva? 
 

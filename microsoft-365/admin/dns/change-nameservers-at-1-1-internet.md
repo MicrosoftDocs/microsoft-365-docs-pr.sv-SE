@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,41 +19,41 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
-description: Läs om hur du kan konfigurera Office 365 som drivs av 21Vianet för att hantera dina DNS-poster, när 1&1 Internet är DNS-värdleverantören.
-ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du kan konfigurera Office 365 som drivs av 21Vianet för att hantera dina DNS-poster, när 1&1 Internet är DNS-värd.
+ms.openlocfilehash: bda6a19ba7bfca20bc1764187f429e13900d8460
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809056"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212371"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Ändra namnservrar för att konfigurera Office 365 med 1&1 IONOS
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-Följ instruktionerna nedan om du vill att Office 365-DNS-posterna ska hanteras i Office 365. (Om du vill kan du [hantera alla dina Office 365 DNS-poster på 1&1 IONOS](create-dns-records-at-1-1-internet.md).) 
+Följ instruktionerna nedan om du vill att Office 365-DNS-posterna ska hanteras i Office 365. (Om du vill kan du [hantera alla dina Office 365 DNS-poster med 1&1 IONOS](create-dns-records-at-1-1-internet.md).) 
   
 
     
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
 Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
   
-1. För att komma igång, gå till din domän sida på 1&1 IONOS via [denna länk](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). Du uppmanas att logga in. 
+1. För att komma igång, gå till din domänsida på 1&1 IONOS via [denna länk](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). Du uppmanas att logga in. 
     
 2. Under **MY DOMAINS** väljer du **Manage Domains**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center.** Välj sedan panelen **(v)** för den domänen. **Panel**
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center.** Välj sedan **kontrollen Panel** **(v)** för den domänen.
     
-4. Välj **Redigera DNS-inställningar i**området **Domäninställningar** .
+4. Välj **Redigera DNS-inställningar**i området **Domäninställningar** .
     
-5. Välj **Lägg till post**i avsnittet **TXT- och SRV Records.**
+5. I avsnittet **TXT- och SRV-poster** väljer du **Lägg till post**.
     
     (Du kan behöva rulla nedåt.) 
     
@@ -62,26 +62,26 @@ Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.of
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs:** Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Välj **Spara**och **spara** sedan igen. 
     
-8. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**
+8. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .
     
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -98,13 +98,13 @@ Vill du ändra namnserverposterna så att du kan konfigurera din domän i Office
 > [!IMPORTANT]
 >  Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. >  När du har utfört stegen i det här avsnittet är de enda namnservrarna som bör finnas i listan dessa fyra: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com 
   
-1. För att komma igång går du till domänsidan klockan 1&1 IONOS med hjälp av [den här länken](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). Du uppmanas att logga in. 
+1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). Du uppmanas att logga in. 
     
 2. Under **MY DOMAINS** väljer du **Manage Domains**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan panelen **(v)** för den domänen. **Panel**
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan kontrollen **Panel** **(v)** för den domänen.
     
-4. Välj **Redigera DNS-inställningar i**området **Domäninställningar** .
+4. Välj **Redigera DNS-inställningar**i området **Domäninställningar** .
     
 5. I avsnittet **Name Server Settings** väljer du **Other name servers**.
     
@@ -144,7 +144,7 @@ Vill du ändra namnserverposterna så att du kan konfigurera din domän i Office
     
     ![Välja Spara på sidan Inställningar för namnserver](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
-5. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**
+5. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .
     
     ![Välja Spara i dialogrutan Redigera DNS-inställningar](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
@@ -175,7 +175,7 @@ Vill du ändra namnserverposterna så att du kan konfigurera din domän i Office
     
     ![Välja Spara på sidan Inställningar för namnserver](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
-4. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**
+4. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .
     
     ![Välja Spara i dialogrutan Redigera DNS-inställningar](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Lär dig att komma åt eNom och skapa DNS via sidan Google Domains.
-ms.openlocfilehash: 566b3990c6cc3080eac9d1367531eea42ab135d1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8fc13ea2ccc7dfee510ef7abb72f88030d048943
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807701"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210664"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Skapa DNS-poster när din domän hanteras av Google (eNom)
 
@@ -82,16 +82,16 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domäner.** Följ bara an
     
     ![Google-Apps-eNom-Konfigurera-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
   
-11. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+11. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
     |**HOST (värd)**|**TXT VALUE**|**POSTTYP**|
     |:-----|:-----|:-----|
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. 
+    > Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. 
   
-    [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)
+    [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)
   
 12. Välj **Spara**.
     

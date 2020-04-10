@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Freenom för Office 365.
-ms.openlocfilehash: 16348eb03a6507e15d31d5c183bd91125d0236f6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d8c33df611a0ef1be95d32026f5d6b99808258f6
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808710"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211757"
 ---
 # <a name="create-dns-records-at-freenom-for-office-365"></a>Skapa DNS-poster på Freenom för Office 365
 
@@ -44,12 +44,12 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="bkmk_txt"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. För att komma igång, gå till din domän sida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
+1. För att komma igång, gå till din domänsida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -83,22 +83,22 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
   
 8. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -108,7 +108,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Lägga till en MX-post så att e-post för din domän kommer till Office 365
 <a name="bkmk_mx"> </a>
 
-1. För att komma igång, gå till din domän sida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
+1. För att komma igång, gå till din domänsida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -120,7 +120,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Ange namnet som fungerar för din domän till standardservrarna för Freenom-namn. Välj **Hanteringsverktyg**och välj sedan **Namnservrar**.
+4. Ange namnet för din domän till standard freenom namnservrar. Välj **Hanteringsverktyg**och välj sedan **Namnservrar**.
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
@@ -130,7 +130,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 6. Välj **Hantera Freenom DNS**.
     
-    ![Freenom väljer Hantera Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
+    ![Freenom välj Hantera Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
 7. Under **Add Record** går du till kolumnen **Type** och väljer **MX** på menyn. 
     
@@ -140,7 +140,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Name**|**Type (typ)**|**TTL**|**Target (mål)**|**Priority (prioritet)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |MX (Mail Exchanger)  <br/> |3600 (sekunder)  <br/> |\<domännyckel\>.mail.protection.outlook.com  <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [What is MX priority?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |(lämna tomt)  <br/> |MX (Mail Exchanger)  <br/> |3600 (sekunder)  <br/> |\<domännyckeln\>.mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [What is MX priority?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -150,10 +150,10 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 10. Om det finns några andra MX-poster tar du bort dem alla. För varje post väljer du **Ta bort**. När meddelandet Vill du verkligen ta bort den **OK** **här posten?**
     
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="bkmk_cname"> </a>
 
-1. För att komma igång, gå till din domän sida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
+1. För att komma igång, gå till din domänsida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -167,7 +167,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 4. Välj **Hantera Freenom DNS**.
     
-    ![Freenom väljer Hantera Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
+    ![Freenom välj Hantera Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
 5. Under **Add Record** går du till kolumnen **Type** och väljer **CNAME** på menyn. 
     
@@ -199,7 +199,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 > [!IMPORTANT]
 > Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. 
 
-1. För att komma igång, gå till din domän sida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
+1. För att komma igång, gå till din domänsida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
@@ -213,7 +213,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 4. Välj **Hantera Freenom DNS**.
     
-    ![Freenom väljer Hantera Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
+    ![Freenom välj Hantera Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
 5. Under **Add Record** går du till kolumnen **Type** och väljer **TXT** på menyn. 
     

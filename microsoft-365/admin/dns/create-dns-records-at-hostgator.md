@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster hos Hostgator för Office 365.
-ms.openlocfilehash: cb0b26081e5946ed2558d090c976847197ed7eb8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807556"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211721"
 ---
 # <a name="create-dns-records-at-hostgator-for-office-365"></a>Skapa DNS-poster på Hostgator för Office 365
 
@@ -70,7 +70,7 @@ Följ dessa steg för att associera domänen med värdkontona.
 > [!IMPORTANT]
 > Innan du utför den här proceduren måste du först utföra proceduren i det första avsnittet i den här artikeln, [Ange att domänen ska peka på värdkontot](#point-your-domain-to-your-hosting-account). 
   
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -91,23 +91,23 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Använd din *domain_name*. (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Anm.:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |Använd din *domain_name*. (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Välj **Lägg till post**.
     
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. Välj **Starta inställningar**på sidan **Inställningar** .
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. På sidan **Verifiera domän** väljer du **Verifiera**.
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -136,7 +136,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta \< *domännyckeln* \> från ditt Office 365-konto.    [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta \< *domännyckeln* \> från ditt Office 365-konto.    [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Välj **Lägg till ny post**.
    
@@ -186,7 +186,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Kolla in dessa [externa domännamnssystemposter för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Innan du utför den här proceduren måste du först utföra proceduren i det första avsnittet i den här artikeln, [Ange att domänen ska peka på värdkontot](#point-your-domain-to-your-hosting-account). 
@@ -232,7 +232,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    |**Name**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**Target**|
+    |**Name**|**TTL**|**Type**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip._tls. *domain_name*. (Till exempel _sip._tls.fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp. *domain_name*. (Till exempel _sipfederationtls._tcp.fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |

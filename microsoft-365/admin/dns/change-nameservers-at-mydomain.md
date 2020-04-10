@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
-description: Läs om hur du kan konfigurera Office 365 för att hantera DNS-posterna för din anpassade domän på MyDomain.
-ms.openlocfilehash: 90f1469bdf2f281be14e2a9e15a9fe7ac4a8cbee
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du kan konfigurera Office 365 för att hantera DNS-posterna för din anpassade domän på MyDomain.
+ms.openlocfilehash: f88f0528caf2229441fd3e5364b53864b923099f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42806527"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212051"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-mydomain"></a>Ändra namnservrar för att konfigurera Office 365 med MyDomain
 
@@ -35,44 +35,44 @@ Följ instruktionerna nedan om du vill att Office 365-DNS-posterna ska hanteras 
   
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
 1. Kom igång genom att gå till domänsidan på MyDomain genom att klicka på [den här länken](https://www.mydomain.com/controlpanel). Du uppmanas att logga in först.
     
-2. Välj **Domain Central**i avsnittet **Mina favoriter** .
+2. Välj **Domain Central** under **My Favorites**.
     
-3. Under **Domän**väljer du namnet på den domän som du vill redigera.
+3. Under **Domain** väljer du namnet på den domän som du vill redigera.
     
-4. Välj **DNS**på raden **Översikt.**
+4. På raden **Overview** väljer du **DNS**.
     
 5. I listrutan **Modify** väljer du **TXT/SPF Record**.
     
-6. Under **Content**, i rutan för den nya posten, skriver du in eller kopierar och klistrar in värdet från följande tabell.
+6. Under **Content**, i rutan för den nya posten, skriver du in, eller kopierar och klistrar in, värdet från följande tabell.
     
 ||
 |:-----|
-|**Innehåll** <br/> |
-|MS=ms *XXXXXXXX*  <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+|**Content** <br/> |
+|MS=ms *XXXXXXXX*  <br/> **Obs:** Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Välj **Lägg till**.
     
 8. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -82,16 +82,16 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra domänens NS-poster hos domänregistratorn så att de pekar på de primära och sekundära namnservrarna i Office 365. Då ställs Office 365 in så att domänens DNS-poster uppdateras. Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.
   
 > [!CAUTION]
-> Om du ändrar domänens NS-poster så att de pekar på Office 365-namnservrarna påverkas alla tjänster som är kopplade till domänen. Till exempel alla e-postmeddelanden som skickas till din domän (som rob@ *your_domain.* com) börjar komma till Office 365 när du har gjort den här ändringen. 
+> Om du ändrar domänens NS-poster så att de pekar på Office 365-namnservrarna påverkas alla tjänster som är kopplade till domänen. Till exempel alla e-postmeddelanden som skickas till din domän (t.ex. *rob@ your_domain.* com) börjar komma till Office 365 när du har gjort den här ändringen. 
   
 > [!IMPORTANT]
-> Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan.<br/> När du har slutfört stegen i det här avsnittet är de enda namnservrar na som ska visas dessa fyra:
+> Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan.<br/> När du har slutfört stegen i det här avsnittet är de enda namnservrarna som ska visas dessa fyra:
   
 1. Kom igång genom att gå till domänsidan på MyDomain genom att klicka på [den här länken](https://www.mydomain.com/controlpanel). Du uppmanas att logga in först.
     
-2. Välj **Domain Central**i avsnittet **Mina favoriter** .
+2. Välj **Domain Central** under **My Favorites**.
     
-3. Under **Domän**väljer du namnet på den domän som du vill redigera.
+3. Under **Domain** väljer du namnet på den domän som du vill redigera.
     
 4. Välj **Namnservrar**på raden **Översikt** .
     
@@ -101,7 +101,7 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
     
     ![MyDomain-BP-Redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
-6. Beroende på om det redan finns namnservrar som visas på sidan som visas nu, fortsätter du till något av följande två procedurer.
+6. Beroende på om det redan finns namnservrar listade på sidan som visas nu fortsätter du till någon av följande två procedurer.
     
 ### <a name="if-the-correct-nameservers-are-already-listed"></a>Om rätt namnservrar REDAN LISTAS
 
@@ -112,13 +112,13 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>Om rätt namnservrar INTE LISTAS
 
 > [!CAUTION]
-> Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill vill et, ta bara bort alla aktuella namnservrar som *inte* har namnet **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.) 
+> Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill an, ta bara bort alla aktuella namnservrar som *inte* namnges **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.) 
   
 1. Ta bort befintliga namnservrar genom att markera varje post i fältet **Namnserver:** och sedan tryck på **Delete** på tangentbordet. 
     
     ![MyDomain-BP-Redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
-2. Välj **Lägg till fler** två gånger om du vill lägga till två nya Nameserver-rader. 
+2. Välj **Lägg till fler** två gånger om du vill lägga till två nya namnserverrader. 
     
     ![MyDomain-BP-Redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   

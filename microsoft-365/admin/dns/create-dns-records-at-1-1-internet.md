@@ -1,12 +1,12 @@
 ---
-title: Skapa DNS-poster på 1&1 IONOS för Office 365
+title: Skapa DNS-poster med 1&1 IONOS för Office 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster vid 1&1 IONOS för Office 365.
-ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på 1&1 IONOS för Office 365.
+ms.openlocfilehash: e31c9d9d08e29156ff6197c030de6b0f4169b5f4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809749"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211877"
 ---
-# <a name="create-dns-records-at-11-ionos-for-office-365"></a>Skapa DNS-poster på 1&1 IONOS för Office 365
+# <a name="create-dns-records-at-11-ionos-for-office-365"></a>Skapa DNS-poster med 1&1 IONOS för Office 365
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
 > [!CAUTION]
-> Observera att 1&1 IONOS inte tillåter att en domän har både en MX-post och en CNAME-post på toppnivå. Det begränsar hur du kan konfigurera Exchange Online för Office 365. Det finns en lösning, men vi rekommenderar att du använder den **endast** om du redan har erfarenhet av att skapa underdomäner på 1&1 IONOS. > Om du trots den här [tjänstbegränsningen](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) väljer att hantera dina egna Office 365 DNS-poster på 1&1 IONOS följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag och så vidare. 
+> Observera att 1&1 IONOS inte tillåter att en domän har både en MX-post och en CNAME-post på den högsta nivån. Det begränsar hur du kan konfigurera Exchange Online för Office 365. Det finns en lösning, men vi rekommenderar att du använder den **endast** om du redan har erfarenhet av att skapa underdomäner vid 1&1 IONOS. > Om du trots den här [tjänstbegränsningen](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) väljer att hantera dina egna Office 365 DNS-poster med 1&1 IONOS följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare. 
   
-När du har lagt till dessa poster klockan 1&1 IONOS konfigureras domänen så att den fungerar med Office 365-tjänster.
+När du har lagt till dessa poster på 1&1 IONOS konfigureras domänen så att den fungerar med Office 365-tjänster.
   
 Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finns i [Använda en offentlig webbplats med Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
@@ -43,22 +43,22 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
   
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
 Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
   
-1. För att komma igång går du till domänsidan klockan 1&1 IONOS med hjälp av [den här länken](https://my.1and1.com/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://my.1and1.com/). Du uppmanas att logga in.
     
 2. Välj **Hantera domäner**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan panelen **(v)** för den domänen. **Panel**
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan kontrollen **Panel** **(v)** för den domänen.
     
-4. Välj **Redigera DNS-inställningar i**området **Domäninställningar** .
+4. Välj **Redigera DNS-inställningar**i området **Domäninställningar** .
     
-5. Välj **Lägg till post**i avsnittet **TXT- och SRV Records.**
+5. I avsnittet **TXT- och SRV-poster** väljer du **Lägg till post**.
     
 6. Gå till **Add Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -67,28 +67,28 @@ Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.of
     ||||
     |:-----|:-----|:-----|
     |**Typ** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-    |TXT  <br/> |(Lämna det här fältet tomt)  <br/> |MS=ms *XXXXXXXX*  <br/> Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(Lämna det här fältet tomt)  <br/> |MS=ms *XXXXXXXX*  <br/> Obs: Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Välj **Spara**.
     
 8. Välj **Spara** igen. 
     
-9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**
+9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .
     
 10. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -99,15 +99,15 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 Följ stegen nedan eller [titta på videon (börja vid 3:22)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 > [!NOTE]
-> Om du har registrerat dig hos 1und1.de [loggar du in här.](https://go.microsoft.com/fwlink/?linkid=859152) 
+> Om du har registrerat dig hos 1und1.de [loggar du in här](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. För att komma igång går du till domänsidan klockan 1&1 IONOS med hjälp av [den här länken](https://my.1and1.com/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://my.1and1.com/). Du uppmanas att logga in.
     
 2. Välj **Hantera domäner**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan panelen **(v)** för den domänen. **Panel**
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan kontrollen **Panel** **(v)** för den domänen.
     
-4. Välj **Redigera DNS-inställningar i**området **Domäninställningar** .
+4. Välj **Redigera DNS-inställningar**i området **Domäninställningar** .
     
 5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(Du kan behöva rulla nedåt.)<br/>![1&amp;1-BP-Konfigurera-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
@@ -117,36 +117,36 @@ Följ stegen nedan eller [titta på videon (börja vid 3:22)](https://support.of
     
     |**MX 1**|**Priority (prioritet)**|
     |:-----|:-----|
-    | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>  Hämta domännyckeln \<\> från ditt Office 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | 
+    | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>  Skaffa domännyckeln \<\> från ditt Office 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | 
     
     ![1 och 1 - konfigurera 2 och 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
 8. Välj **Spara**.<br/>(Du kan behöva rulla nedåt.)<br/>![1&amp;1-BP-Konfigurera-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
-9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**<br/>![Välja Ja i dialogrutan Redigera DNS-inställningar](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .<br/>![Välja Ja i dialogrutan Redigera DNS-inställningar](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Lägg till de sex CNAME-posterna som krävs för Office 365
 <a name="BKMK_add_CNAME"> </a>
 
-1&1 IONOS kräver en lösning så att du kan använda en MX-post tillsammans med CNAME-posterna som krävs för Office 365-e-posttjänster. Den här lösningen kräver att du skapar en uppsättning underdomäner på 1&1 IONOS och att tilldela dem till CNAME-poster.
+1&1 IONOS kräver en lösning så att du kan använda en MX-post tillsammans med CNAME-posterna som krävs för Office 365-e-posttjänster. Den här lösningen kräver att du skapar en uppsättning underdomäner vid 1&1 IONOS och tilldela dem till CNAME-poster.
   
 > [!IMPORTANT]
-> Kontrollera att du har minst två tillgängliga underdomäner innan du startar den här proceduren. Vi rekommenderar den här lösningen endast om du redan har erfarenhet av att skapa underdomäner på 1&1 IONOS. 
+> Kontrollera att du har minst två tillgängliga underdomäner innan du startar den här proceduren. Vi rekommenderar den här lösningen endast om du redan har erfarenhet av att skapa underdomäner vid 1&1 IONOS. 
   
 ### <a name="basic-cname-records"></a>Grundläggande CNAME-poster
 
 Följ stegen nedan eller [titta på videon (börja vid 3:57)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 > [!NOTE]
-> Om du har registrerat dig hos 1und1.de [loggar du in här.](https://go.microsoft.com/fwlink/?linkid=859152) 
+> Om du har registrerat dig hos 1und1.de [loggar du in här](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. För att komma igång går du till domänsidan klockan 1&1 IONOS med hjälp av [den här länken](https://my.1and1.com/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://my.1and1.com/). Du uppmanas att logga in.
     
 2. Välj **Hantera domäner**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan **Hantera underdomäner**.<br/>![1&amp;1-BP-Konfigurera-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Nu ska du skapa du två underdomäner och ange ett värde för **Alias** för var och en av dem.<br/>(Detta krävs eftersom 1&1 IONOS endast stöder en CNAME-post på toppnivå, men Office 365 kräver flera CNAME-poster.)<br/>Först måste du skapa Autodiscover-underdomänen.
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan **Hantera underdomäner**.<br/>![1&amp;1-BP-Konfigurera-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Nu ska du skapa du två underdomäner och ange ett värde för **Alias** för var och en av dem.<br/>(Detta krävs eftersom 1&1 IONOS endast stöder en CNAME-post på högsta nivå, men Office 365 kräver flera CNAME-poster.)<br/>Först måste du skapa Autodiscover-underdomänen.
     
-4. Välj **Skapa underdomän i**avsnittet **Översikt för underdomän** .
+4. I avsnittet **Underdomänöversikt** väljer du **Skapa underdomän .**
     
     ![1&amp;1-BP-Configure-3-1](../../media/95c63639-eb80-443d-8951-98e8b6cdcc4f.png)
   
@@ -160,11 +160,11 @@ Följ stegen nedan eller [titta på videon (börja vid 3:57)](https://support.of
   
 6. Välj **Skapa underdomän**.<br/>![1&amp;1-BP-Konfigurera-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. Leta reda på underdomänens översikt i avsnittet **Översikt för underdomänen** och välj sedan panelen **autodiscover** **(v)** för underdomänen. <br/>![1&amp;1-BP-Konfigurera-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. Leta reda på underdomänen **autodiscover** i **underdomänen i översikten** och välj sedan **panelkontrollen (v)** för underdomänen. <br/>![1&amp;1-BP-Konfigurera-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
-8. Välj **Redigera DNS-inställningar**i området **Inställningar för underdomän** . <br/>![1&amp;1-BP-Konfigurera-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
+8. I området **Inställningar för underdomäner** väljer du **Redigera DNS-inställningar**. <br/>![1&amp;1-BP-Konfigurera-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
-9. Välj **CNAME**i avsnittet **A/AAAA Records (IP-adresser)** i området **IP-adress (A Record).**<br/>![1&amp;1-BP-Konfigurera-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
+9. Välj **CNAME i området IP-adress (AAAA Records)** i området **IP-adress (A Record).** **CNAME**<br/>![1&amp;1-BP-Konfigurera-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
 10. I rutan **Alias:** skriver du in, eller kopierar och klistrar in, värdet i **Alias** från tabellen nedan.<br/> 
     
@@ -183,7 +183,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:57)](https://support.of
 
 De ytterligare CNAME-poster som skapas i följande proceduren aktiverar Skype för företag - Online-tjänster. Du kan utföra samma steg som du använde för att skapa de två CNAME-poster som du redan har skapat.
   
-1. Skapa den tredje underdomänen (Lyncdiscover).<br/>Välj **Skapa underdomän i**avsnittet **Översikt för underdomänen** .
+1. Skapa den tredje underdomänen (Lyncdiscover).<br/>I avsnittet **Underdomänöversikt** väljer du **Skapa underdomän .**
     
 2. I rutan **Create Subdomain** (skapa underdomän) för den nya underdomänen skriver du in, eller kopierar och klistrar in, endast värdet i **Skapa underdomän** från tabellen nedan. (Du kommer att lägga till värdet för **Alias** i ett senare steg.)<br/> 
     
@@ -195,7 +195,7 @@ De ytterligare CNAME-poster som skapas i följande proceduren aktiverar Skype f�
     
 4. På sidan **Domain Center** väljer du **Hantera underdomäner**.
     
-5. Leta reda på underdomänens översikt i avsnittet **Översikt för underdomänen** och välj sedan panelen **lyncdiscover** **(v)** för underdomänen. <br/>Välj **Redigera DNS-inställningar**i området **Inställningar för underdomän** .
+5. Leta reda på **lyncdiscover** underdomänunderdomänen som du just skapade i avsnittet **Underdomänöver** och välj sedan **panelkontrollen (v)** för underdomänen. <br/>I området **Inställningar för underdomäner** väljer du **Redigera DNS-inställningar**.
     
 6. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
     
@@ -205,11 +205,11 @@ De ytterligare CNAME-poster som skapas i följande proceduren aktiverar Skype f�
     |:-----|:-----|
     |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |
    
-8. Markera kryssrutan för den **jag känner** till friskrivning och välj sedan **Spara**.
+8. Markera kryssrutan för **ansvarsfriskrivningen Jag är medveten** om och välj sedan **Spara**.
     
-9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**
+9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .
     
-10. Skapa den fjärde underdomänen (SIP): <br/>Välj **Skapa underdomän i**avsnittet **Översikt för underdomän** .
+10. Skapa den fjärde underdomänen (SIP): <br/>I avsnittet **Underdomänöversikt** väljer du **Skapa underdomän .**
     
 11. I rutan **Create Subdomain** (skapa underdomän) för den nya underdomänen skriver du in, eller kopierar och klistrar in, endast värdet i **Skapa underdomän** från tabellen nedan. (Du kommer att lägga till värdet för **Alias** i ett senare steg.)<br/>
     
@@ -221,7 +221,7 @@ De ytterligare CNAME-poster som skapas i följande proceduren aktiverar Skype f�
     
 13. På sidan **Domain Center** väljer du **Hantera underdomäner**.
     
-14. Leta reda på underdomänen **sip** som du just skapade i avsnittet Översikt för **underdomänen** och välj sedan panelen **(v)** för underdomänen. <br/>Välj **Redigera DNS-inställningar**i området **Inställningar för underdomän** .
+14. Leta reda på den **sip-underdomän** som du just skapade i avsnittet **Underdomänöversikt** och välj sedan **panelkontrollen (v)** för underdomänen. <br/>I området **Inställningar för underdomäner** väljer du **Redigera DNS-inställningar**.
     
 15. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
     
@@ -231,9 +231,9 @@ De ytterligare CNAME-poster som skapas i följande proceduren aktiverar Skype f�
     |:-----|:-----|
     |sip  <br/> |sipdir.online.lync.com  <br/> |
    
-17. Markera kryssrutan för den **jag känner** till friskrivning och välj sedan **Spara**.
+17. Markera kryssrutan för **ansvarsfriskrivningen Jag är medveten** om och välj sedan **Spara**.
     
-18. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**
+18. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .
     
 ### <a name="cname-records-needed-for-mdm"></a>CNAME-poster som krävs för MDM
 
@@ -248,22 +248,22 @@ De ytterligare CNAME-poster som skapas i följande proceduren aktiverar Skype f�
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Kolla in dessa [externa domännamnssystemposter för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Om du vill validera din SPF-post kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Om du vill validera SPF-posten kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 Följ stegen nedan eller [titta på videon (börja vid 5:09)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 > [!NOTE]
-> Om du har registrerat dig hos 1und1.de [loggar du in här.](https://go.microsoft.com/fwlink/?linkid=859152) 
+> Om du har registrerat dig hos 1und1.de [loggar du in här](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. För att komma igång går du till domänsidan klockan 1&1 IONOS med hjälp av [den här länken](https://my.1and1.com/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://my.1and1.com/). Du uppmanas att logga in.
     
 2. Välj **Hantera domäner**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan panelen **(v)** för den domänen. **Panel**
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan kontrollen **Panel** **(v)** för den domänen.
     
-4. Välj **Redigera DNS-inställningar i**området **Domäninställningar** .
+4. Välj **Redigera DNS-inställningar**i området **Domäninställningar** .
     
-5. Välj **Lägg till post**i avsnittet **TXT- och SRV Records.** <br/>(Du kan behöva rulla nedåt.)
+5. I avsnittet **TXT- och SRV-poster** väljer du **Lägg till post**. <br/>(Du kan behöva rulla nedåt.)
     
 6. Gå till **Add Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. <br/>(Välj värdet för **Type** i listrutan.) <br/>
     
@@ -277,28 +277,28 @@ Följ stegen nedan eller [titta på videon (börja vid 5:09)](https://support.of
   
 8. Välj **Spara**.<br/>![Spara post](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
-9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.**<br/>![Välja Ja i dialogrutan Redigera DNS-inställningar](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** .<br/>![Välja Ja i dialogrutan Redigera DNS-inställningar](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Lägga till de två SRV-posterna som krävs för Office 365
 
 Följ stegen nedan eller [titta på videon (börja vid 5:51)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 > [!NOTE]
-> Om du har registrerat dig hos 1und1.de [loggar du in här.](https://go.microsoft.com/fwlink/?linkid=859152) 
+> Om du har registrerat dig hos 1und1.de [loggar du in här](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. För att komma igång går du till domänsidan klockan 1&1 IONOS med hjälp av [den här länken](https://my.1and1.com/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://my.1and1.com/). Du uppmanas att logga in.
     
 2. Välj **Hantera domäner**.
     
-3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan panelen **(v)** för den domänen. **Panel**
+3. Leta reda på den domän som du vill uppdatera på sidan **Domain Center** och välj sedan kontrollen **Panel** **(v)** för den domänen.
     
-4. Välj **Redigera DNS-inställningar i**området **Domäninställningar** .
+4. Välj **Redigera DNS-inställningar**i området **Domäninställningar** .
     
-5. Välj **Lägg till post**i avsnittet **TXT- och SRV Records.**
+5. I avsnittet **TXT- och SRV-poster** väljer du **Lägg till post**.
     
 6. Lägg till den första av de två SRV-posterna.<br/>I den nya postens rutor i området **Add Record** (lägg till post) skriver du in, eller kopierar och klistrar in, värdena från den första raden i tabellen nedan. <br/>(Välj **typ-** och **TTL-värden** i listrutan.) 
     
-    |**Type (typ)**|**Service (tjänst)**|**Protocol (protokoll)**|**Name (namn)**|**Host (värd)**|**Priority (prioritet)**|**Weight**|**Port**|**TTL**|
+    |**Type (typ)**|**Service (tjänst)**|**Protocol (protokoll)**|**Name (namn)**|**Host (värd)**|**Prioritet**|**Vikt**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV  <br/> |sip  <br/> |tls  <br/> |(Lämna det här fältet tomt.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 h)  <br/> |
     |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Lämna det här fältet tomt.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
@@ -309,9 +309,9 @@ Följ stegen nedan eller [titta på videon (börja vid 5:51)](https://support.of
   
 8. Välj **Spara**. <br/>![1&amp;1-BP-Konfigurera-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
-9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar.** <br/>![Välja Ja i dialogrutan Redigera DNS-inställningar](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. Välj **Ja**i dialogrutan **Redigera DNS-inställningar** . <br/>![Välja Ja i dialogrutan Redigera DNS-inställningar](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
-10. Lägg till den andra SRV-posten. <br/>Välj **Lägg till post**i avsnittet **TXT- och SRV Records.** <br/>Skapa en post med värdena från den andra raden i tabellen i området **Lägg till post** och välj sedan lägg **till,** **spara**och **ja** för att slutföra posten. 
+10. Lägg till den andra SRV-posten. <br/>I avsnittet **TXT- och SRV-poster** väljer du **Lägg till post**. <br/>Skapa en post med värdena från den andra raden i tabellen i området **Lägg till post** och välj sedan Lägg **till**, **Spara**och **Ja** igen för att slutföra posten. 
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 

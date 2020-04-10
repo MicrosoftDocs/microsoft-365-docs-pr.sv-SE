@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
-description: Läs om hur du kan konfigurera Office 365 för att hantera DNS-posterna för din anpassade domän på Google Domains.
-ms.openlocfilehash: f6faaa4a7b6540086752e88da2051a73450f4455
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du kan konfigurera Office 365 för att hantera DNS-posterna för din anpassade domän på Google Domains.
+ms.openlocfilehash: 86dd1745fdc85c9837e5c20844427768d4c74a81
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813016"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211937"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-google-domains"></a>Ändra namnservrar för att konfigurera Office 365 med Google Domains
 
@@ -36,18 +36,18 @@ Följ instruktionerna nedan om du vill att Office 365-DNS-posterna ska hanteras 
     
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 >  Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. För att komma igång går du till din domänsida på Google Domains via [den här länken](https://domains.google.com/registrar). Du uppmanas att logga in. Gör så här:
+1. För att komma igång, gå till din domänsida på Google Domains via [denna länk](https://domains.google.com/registrar). Du uppmanas att logga in. Gör så här:
     
 1. Välj **Logga in**.
     
-2. Ange dina inloggningsuppgifter och välj **logga in**igen .
+2. Ange dina inloggningsuppgifter och välj **logga in igen**.
     
-2. På sidan **Domäner** väljer du Konfigurera **DNS** för den domän som du vill redigera i avsnittet **Domän.** 
+2. På sidan **Domäner** i avsnittet **Domän** väljer du **Konfigurera DNS** för den domän som du vill redigera. 
     
 3. Gå till avsnittet **Custom resource records**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -58,24 +58,24 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**Type (typ)** <br/> |**TTL** <br/> |**Data** <br/> |
-|@  <br/> |TXT  <br/> |1H (1H)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|@  <br/> |TXT  <br/> |1H (1H)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. Välj **Lägg till**.
     
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -85,7 +85,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra domänens NS-poster hos domänregistratorn så att de pekar på de primära och sekundära namnservrarna i Office 365. Då ställs Office 365 in så att domänens DNS-poster uppdateras. Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.
   
 > [!CAUTION]
-> Om du ändrar domänens NS-poster så att de pekar på Office 365-namnservrarna påverkas alla tjänster som är kopplade till domänen. Till exempel alla e-postmeddelanden som skickas till din domän (som rob@ *your_domain.*  com) börjar komma till Office 365 när du har gjort den här ändringen. 
+> Om du ändrar domänens NS-poster så att de pekar på Office 365-namnservrarna påverkas alla tjänster som är kopplade till domänen. Till exempel alla e-postmeddelanden som skickas till din domän (t.ex. *rob@ your_domain.*  com) börjar komma till Office 365 när du har gjort den här ändringen. 
   
 > [!IMPORTANT]
 > Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. > När du har utfört stegen i det här avsnittet är de enda namnservrarna som bör finnas i listan dessa fyra: 
@@ -96,7 +96,7 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
     
 2. Ange dina inloggningsuppgifter och välj sedan **logga in**igen .
     
-2. På sidan **Domäner** väljer du Konfigurera **DNS** för den domän som du vill redigera i avsnittet **Domän.** 
+2. På sidan **Domäner** i avsnittet **Domän** väljer du **Konfigurera DNS** för den domän som du vill redigera. 
     
 3. Välj **Use custom name servers** (använd anpassade namnservrar) i området **Name servers** (namnservrar) på sidan **Domains** (domäner).
     
@@ -123,13 +123,13 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
    
    ![Google-Domäner-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. Markera **+ (lägg till)** kontroll för att skapa en tom rad. 
+2. Markera kontrollen **+ (lägg till)** om du vill skapa en tom rad. 
     
     ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. Lägg till de andra tre namnserverposterna.
     
-    Skapa en post i avsnittet **Använd anpassade namnservrar** med hjälp av värdena från nästa rad i tabellen och markera sedan **+(lägg till)** för att lägga till en annan rad. 
+    Skapa en post i avsnittet **Använd anpassade namnservrar** med hjälp av värdena från nästa rad i tabellen och välj sedan kontrollen **+ (lägg till)** för att lägga till en annan rad. 
     
     Upprepa proceduren tills du har skapat alla fyra namnserverposterna.
     
@@ -145,7 +145,7 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
 1. Om det finns några andra namnservrar i listan väljer du **Redigera**.
     
     > [!CAUTION]
-    > Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill vill et, ta bara bort alla aktuella namnservrar som *inte* har namnet **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.) 
+    > Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill an, ta bara bort alla aktuella namnservrar som *inte* namnges **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.) 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -164,13 +164,13 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
    
    ![Google-Domäner-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. Markera **+(lägg till)** kontroll för att skapa en tom rad. 
+4. Markera kontrollen **+(add)** om du vill skapa en tom rad. 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. Lägg till de andra två namnserverposterna.
     
-    Skapa en post med värdena från nästa rad i tabellen i avsnittet **Använd anpassade namnservrar** och markera sedan **+(lägg till)** för att lägga till en annan rad. 
+    Skapa en post i avsnittet **Använd anpassade namnservrar** med hjälp av värdena från nästa rad i tabellen och välj sedan kontrollen **+(add)** för att lägga till en annan rad. 
     
     Upprepa proceduren tills du har skapat alla fyra namnserverposterna.
     

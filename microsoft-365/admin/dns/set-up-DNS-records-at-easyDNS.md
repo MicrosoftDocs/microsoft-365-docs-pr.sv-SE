@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på easyDNS för Office 365.
-ms.openlocfilehash: f55f39f36b8abaee2d500c87ccf1e0089caecc9d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42810142"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210558"
 ---
 # <a name="create-dns-records-at-easydns-for-office-365"></a>Skapa DNS-poster på easyDNS för Office 365
 
@@ -44,7 +44,7 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 4. Ange följande poster i textfälten:
     
-    |**Host (värd)**|**Text**|
+    |**Värd**|**Text**|
     |:-----|:-----|
     |@  <br/> |MS=msXXXXXXXX (Använd det värde som du har angett på sidan Domäner för administrationscenter)  <br/> |
    
@@ -54,15 +54,15 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 7. Vänta några minuter innan du fortsätter, så att posten som du just skapade kan spridas över Internet och identifieras av Office 365.
     
-8. Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+8. Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
     
-9. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+9. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-10. På sidan **Domäner** väljer du den domän som du verifierar. 
+10. På sidan **Domains** väljer du den domän du verifierar. 
     
 11. Välj **Starta inställningar** på sidan **Installationsprogrammet.**
     
-12. På sidan **Verifiera domän** väljer du **Verifiera**. 
+12. På sidan **Verify domain** väljer du **Verify**. 
     
 ## <a name="add-an-mx-record-to-route-email-to-office-365"></a>Lägga till en MX-post för att dirigera e-post till Office 365
 
@@ -117,7 +117,7 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 4. Ange följande poster i textfälten:
     
-    |**Host (värd)**|**Text**|
+    |**Värd**|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    

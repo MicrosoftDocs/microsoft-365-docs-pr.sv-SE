@@ -1,12 +1,12 @@
 ---
-title: ICANN-verifiering av kontaktinformation
+title: ICANN Verifiering av kontaktuppgifter
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
-description: Läs om hur du validerar dina kontaktuppgifter för att följa ICANN-reglerna.
-ms.openlocfilehash: 1173806aee452f8ca698702a67d3c89b575e6418
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Läs om hur du validerar dina kontaktuppgifter för att följa ICANN:s regler.
+ms.openlocfilehash: c9a663a5795a542dfac01f7d4d29e7a3e76d16c9
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812329"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212239"
 ---
-# <a name="icann-verification-of-contact-information"></a>ICANN-verifiering av kontaktinformation
+# <a name="icann-verification-of-contact-information"></a>ICANN Verifiering av kontaktuppgifter
 
-När du köper en domän eller gör ändringar i kontaktinformationen för en domän måste registratorn validera dina kontaktuppgifter för att följa ICANN-reglerna.
+När du köper en domän eller gör ändringar i kontaktinformationen för en domän måste registratorn validera dina kontaktuppgifter för att följa ICANN:s regler.
 
 För validering skickas ett e-postmeddelande till registrantens adress.
 

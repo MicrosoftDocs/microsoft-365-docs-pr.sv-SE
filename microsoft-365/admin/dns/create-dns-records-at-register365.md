@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register365 för Office 365.
-ms.openlocfilehash: 7f9398e14ea5280948829b263d4cd66d61fab682
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 66c5c29d533b6897280ff99c449988c160022cf8
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808711"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211092"
 ---
 # <a name="create-dns-records-at-register365-for-office-365"></a>Skapa DNS-poster på Register365 för Office 365
 
@@ -55,7 +55,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -74,7 +74,7 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME RECORDS (+)**.)
+    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME-POSTER (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
@@ -92,21 +92,21 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
   
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
-    
-    
-  
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+3. På sidan **Setup** väljer du **Start setup**.
+    
+    
+  
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -132,7 +132,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Värdnamn**|**Priority**|**Resultat**|
     |:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |1  <br/> [Mer information om prioritet finns i ](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)Vad är MX-prioritet? <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)     |
+    |(Lämna det här fältet tomt.)  <br/> |1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![Ange värden på sidan Lägg till/ändra DNS-zon](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
@@ -169,7 +169,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME RECORDS (+)**.)
+    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME-POSTER (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
@@ -207,7 +207,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME RECORDS (+)**.)
+    (Om du behöver lägga till en rad väljer du **LÄGG TILL A/CNAME-POSTER (+)**.)
     
     (Du kan behöva rulla nedåt.)
     
@@ -240,7 +240,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-    |**Name**|**Priority**|**Weight**|**Port**|**Result**|
+    |**Name**|**Prioritet**|**Vikt**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
     |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |

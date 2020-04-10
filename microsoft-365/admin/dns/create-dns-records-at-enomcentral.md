@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på eNomCentral för Office 365.
-ms.openlocfilehash: dec76e0dde2775851ff464e3b8765f82dfb57625
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fb10c5bc10e9e4bb231e90148dd5d5c742ff169d
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809396"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211769"
 ---
 # <a name="create-dns-records-at-enomcentral-for-office-365"></a>Skapa DNS-poster på eNomCentral för Office 365
 
@@ -43,7 +43,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -62,7 +62,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.of
     
     ![eNom-BP-Verifiera-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
   
-4. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+4. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
     (Välj värdet **Posttyp** i listrutan.) 
     
@@ -79,22 +79,22 @@ Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.of
   
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -126,7 +126,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.of
     
     |**Värdnamn**|**Address (adress)**|**Pref**|
     |:-----|:-----|:-----|
-    |@  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |@  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
        
    ![eNom-BP-Konfigurera-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
   
@@ -138,11 +138,11 @@ Följ stegen nedan eller [titta på videon (börja vid 3:40)](https://support.of
     
     ![eNom-BP-Konfigurera-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
   
-8. Välj **ta bort markerat**.
+8. Markera **ta bort markerat**.
     
     ![eNom-BP-Konfigurera-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="BKMK_add_CNAME"> </a>
 
 Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.office.com/article/Video-Create-DNS-records-at-eNomCentral-for-Office-365-3766a9e8-77dd-4a42-908d-89b076143e7d?ui=en-US&amp;rs=en-US&amp;ad=US).
@@ -205,7 +205,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.of
     
     (Välj värdet **Posttyp** i listrutan.) 
     
-    |**Host Name**|**Record Type**|**Address**|
+    |**Host Name**|**Record Type**|**Adress**|
     |:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
@@ -238,7 +238,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:50)](https://support.of
   
 5. I rutorna för de två nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.
     
-    |**Service**|**Protocol**|**Priority**|**Weight**|**Port**|**Target          (Hostname)**|
+    |**Service**|**Protocol**|**Prioritet**|**Vikt**|**Port**|**Target          (Hostname)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |

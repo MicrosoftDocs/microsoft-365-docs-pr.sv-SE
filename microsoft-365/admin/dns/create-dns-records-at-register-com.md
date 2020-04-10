@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register.com för Office 365.
-ms.openlocfilehash: 0210c03a48112d9cc517ae15f879db3b40eb8c94
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d89e1843a7c914843c7e9d5c41582878e138473a
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807221"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211104"
 ---
 # <a name="create-dns-records-at-registercom-for-office-365"></a>Skapa DNS-poster på Register.com för Office 365
 
@@ -55,7 +55,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>Lägga till en TXT-post på Register.com för att verifiera att det är din domän
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -68,34 +68,34 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
     
-5. Bläddra ned till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **TXT Records (SPF).**
+5. Bläddra ned till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **TXT Records (SPF)**.
     
 6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
     |||
     |:-----|:-----|
     |**Värdnamn** <br/> |**TXT Record** <br/> |
-    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Välj **Fortsätt**.
     
-8. På nästa sida väljer du **Fortsätt** igen för att bekräfta ändringarna. 
+8. På nästa sida väljer du **Fortsätt** igen för att bekräfta dina ändringar. 
     
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -111,19 +111,19 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
     
-5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **e-postväxlarposter**.
+5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **e-postutväxlingsposter**.
     
-    ![Välj Redigera e-postväxlare](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+    ![Välj Redigera e-postväxlarposter](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
-6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
     (Välj **prioritetsvärdet** i listrutan.) 
     
-    |****Host Name****|****Priority****|****E-postserver****|
+    |****Host Name****|****Priority** (prioritet)**|****E-postserver****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>  <br/>**Obs:** Hämta \<din domännyckel\> från ditt Office 365-konto. *domain-key* <br> [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>  <br/>**Obs!** Hämta din \<*domännyckel*\> från ditt Office 365-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Kopiera och klistra in värdet från tabellen](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -139,7 +139,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.of
     
     ![Välj Fortsätt](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="BKMK_add_CNAME"> </a>
 
 Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
@@ -150,7 +150,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
     
 5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **domänaliasposter**.
     
@@ -158,7 +158,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.of
   
 6. Välj **Lägg till fler domänalias**.
     
-    ![Välj Lägga till fler domänalias](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![Välj Lägg till fler domänalias](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. Lägg till nödvändiga CNAME-poster.
     
@@ -196,13 +196,13 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
     
-5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **TXT Records (SPF).**
+5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **TXT Records (SPF)**.
     
-    ![Välj Redigera TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![Välj Redigera TXT-poster (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
-6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
     |****Hostname****|****TXT-post****|
     |:-----|:-----|
@@ -229,7 +229,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
     
 5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **SRV-poster**.
     

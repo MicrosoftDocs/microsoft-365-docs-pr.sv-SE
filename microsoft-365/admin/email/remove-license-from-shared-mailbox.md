@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: 90ec29681aa5b15dd04895df2b48b2b1619b521d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807558"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210534"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
-Delade postlådor behöver ingen licens om inte postlådan har över 50 GB data. Följ dessa instruktioner för att ta bort en licens från en delad postlåda så att du antingen kan tilldela den till en användare eller returnera licensen så att du inte betalar för en licens som du inte behöver.
+Delade postlådor behöver ingen licens om inte postlådan har över 50 GB data. Följ dessa instruktioner om du vill ta bort en licens från en delad postlåda så att du antingen kan tilldela den till en användare eller returnera licensen så att du inte betalar för en licens som du inte behöver.
   
 ## <a name="remove-the-license"></a>Ta bort licensen
 
@@ -46,13 +46,13 @@ Delade postlådor behöver ingen licens om inte postlådan har över 50 GB data.
   
 2. Markera den delade postlådan.
 
-3. En fliken **Licenser och appar,** expandera **licenser** och avmarkera rutan för den licens du vill ta bort.
+3. En av fliken **Licenser och appar,** expandera **Licenser** och avmarkera rutan för den licens du vill ta bort.
 
 4. Välj **Spara ändringar**.
 
-5. När du återvänder till sidan **Aktiva användare** kommer statusen för den delade postlådan att **vara olicensierad**.
+5. När du går tillbaka till sidan **Aktiva användare** kommer statusen för den delade postlådan att vara **Olicensierad**.
 
-6. Du betalar fortfarande för licensen. Om du vill sluta betala för den [tar du bort licensen från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Du betalar fortfarande för licensen. Om du vill sluta betala för [den tar du bort licensen från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end
 
@@ -65,13 +65,13 @@ Delade postlådor behöver ingen licens om inte postlådan har över 50 GB data.
 
 2. Markera den delade postlådan och välj sedan **Redigera bredvid** **Produktlicenser**.
 
-3. En sidan **Produktlicenser** ställer du in växlingsknappen **för** den licens du vill ta bort.
+3. En av sidan **Produktlicenser** anger du växlingsknappen till **Av** för den licens som du vill ta bort.
 
 4. Välj **Spara**.
 
-5. När du återvänder till sidan **Aktiva användare** kommer statusen för den delade postlådan att **vara olicensierad**.
+5. När du går tillbaka till sidan **Aktiva användare** kommer statusen för den delade postlådan att vara **Olicensierad**.
 
-6. Du betalar fortfarande för licensen. Om du vill sluta betala för den [tar du bort licensen från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Du betalar fortfarande för licensen. Om du vill sluta betala för [den tar du bort licensen från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end
 
@@ -84,13 +84,13 @@ Delade postlådor behöver ingen licens om inte postlådan har över 50 GB data.
 
 2. Markera den delade postlådan och välj sedan **Redigera bredvid** **Produktlicenser**.
 
-3. En sidan **Produktlicenser** ställer du in växlingsknappen **för** den licens du vill ta bort.
+3. En av sidan **Produktlicenser** anger du växlingsknappen till **Av** för den licens som du vill ta bort.
 
 4. Välj **Spara**.
 
-5. När du återvänder till sidan **Aktiva användare** kommer statusen för den delade postlådan att **vara olicensierad**.
+5. När du går tillbaka till sidan **Aktiva användare** kommer statusen för den delade postlådan att vara **Olicensierad**.
 
-6. Du betalar fortfarande för licensen. Om du vill sluta betala för den [tar du bort licensen från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Du betalar fortfarande för licensen. Om du vill sluta betala för [den tar du bort licensen från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end 
 

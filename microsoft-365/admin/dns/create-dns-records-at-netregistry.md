@@ -1,12 +1,12 @@
 ---
-title: Skapa DNS-poster på Netregistry för Office 365
+title: Skapa DNS-poster i Netregistry för Office 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Netregistry för Office 365.
-ms.openlocfilehash: 91f802afccd337a97b23ca514c9d9921595abcd1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Netregistry för Office 365.
+ms.openlocfilehash: e1f2414817357b8435bc002860a35c6e76d4314e
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808342"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211140"
 ---
-# <a name="create-dns-records-at-netregistry-for-office-365"></a>Skapa DNS-poster på Netregistry för Office 365
+# <a name="create-dns-records-at-netregistry-for-office-365"></a>Skapa DNS-poster i Netregistry för Office 365
 
 [Läs frågor och svar om domäner](../setup/domains-faq.md) om du inte hittar det du letar efter. 
   
-Om Netregistry är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag och så vidare.
+Om Netregistry är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare.
   
 Det här är de viktigaste posterna att lägga till:
   
@@ -56,12 +56,12 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="bkmk_txt"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-1. Gå till domänsidan i Netregistry genom att använda [den här länken](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida i Netregistry med hjälp av [denna länk](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
     
     ![Netregistry_login](../../media/ed3c785f-01c3-49e7-affd-c04637c0ffe9.png)
   
@@ -80,31 +80,31 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     > [!NOTE]
     > Du måste använda citattecken före och efter posten i rutan TXT. 
   
-    Skriv eller kopiera och klistra in värdena i följande tabell i formuläret **Ny TXT-post.** 
+    Skriv eller kopiera och klistra in värdena från följande tabell i formuläret **Ny TXT-post.** 
     
     |**Namn**|**TTL (SEK)**|**TXT (Pekar på adress eller värde)**|
     |:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |"MS=msXXXXXXXX"  <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |"MS=msXXXXXXXX"  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
 6. Välj **Lägg till post**.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
-    
-    
-  
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+3. På sidan **Setup** väljer du **Start setup**.
+    
+    
+  
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -114,7 +114,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Lägga till en MX-post så att e-post för din domän kommer till Office 365
 <a name="bkmk_mx"> </a>
 
-1. Gå till domänsidan i Netregistry genom att använda [den här länken](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida i Netregistry med hjälp av [denna länk](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
     
     ![Netregistry_login](../../media/80277b0e-547e-4635-aa6a-5d8ebe3fba85.png)
   
@@ -126,19 +126,19 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. Ta bort standardMX-posterna under **Aktuella zonposter**genom att välja **Ta bort bredvid** varje MX-post i listan. 
+4. Under **Aktuella zonposter**tar du bort standard-MX-posterna genom att välja **Ta bort** bredvid varje MX-post i listan. 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. Under **Lägg till en zonpost**väljer du **MX-post** i listan och väljer sedan **Skapa ny post**.
+5. Under **Lägg till en zonpost**väljer du **MX Record** i listan och väljer sedan Skapa ny **post**.
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
-6. Skriv eller kopiera och klistra in värdena i följande tabell i formuläret **Ny MX-post.** 
+6. Skriv eller kopiera och klistra in värdena från följande tabell i formuläret **Ny MX-post.** 
     
     |**Namn**|**TTL (SEK)**|**Exchange (Pekar på adress eller värde)**|**Är värden fullt kvalificerad?**|**Preferens (prioritet)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)      |(markera kryssrutan)  <br/> |10  <br/> Mer information om prioritet finns i Vad är MX-prioritet?  <br/> |
+    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)      |(markera kryssrutan)  <br/> |10  <br/> Mer information om prioritet finns i Vad är MX-prioritet?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -146,10 +146,10 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_MX_values_AddRecord](../../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="bkmk_cname"> </a>
 
-1. Gå till domänsidan i Netregistry genom att använda [den här länken](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida i Netregistry med hjälp av [denna länk](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
     
     ![Netregistry_login](../../media/cbf83dce-86d2-4008-9400-56def4b6fcd7.png)
   
@@ -167,7 +167,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 5. I rutorna för den nya posten skriver du in eller kopierar och klistrar in värdena från följande tabell.
     
-    |**Name (namn)**|**Type (typ)**|**TTL**|**HOST (Poäng till eller adressvärde)**|
+    |**Name (namn)**|**Type (typ)**|**TTL**|**HOST (Pekar på eller adressvärde)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (sekunder)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (sekunder)  <br/> |sipdir.online.lync.com  <br/> |
@@ -191,7 +191,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 > [!IMPORTANT]
 > Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden.
   
-1. Gå till domänsidan i Netregistry genom att använda [den här länken](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida i Netregistry med hjälp av [denna länk](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
     
     ![Netregistry_login](../../media/a841f11f-1c0f-4926-acea-a2b8bb083984.png)
   
@@ -207,7 +207,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
-5. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
+5. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
     > [!NOTE]
     > Du måste använda citattecken före och efter posten i rutan TXT. 
@@ -225,7 +225,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Lägga till de två SRV-posterna som krävs för Office 365
 <a name="bkmk_srv"> </a>
 
-1. Gå till domänsidan i Netregistry genom att använda [den här länken](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
+1. För att komma igång, gå till din domänsida i Netregistry med hjälp av [denna länk](https://theconsole.netregistry.com.au/). Du uppmanas att logga in.
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
@@ -241,12 +241,12 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
-5. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+5. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
     > [!NOTE]
     > Fältet Namn är en kombination av tjänsten (till exempel _sip) och protokoll (till exempel _tls). 
   
-    |**Type (typ)**|**Namn**|**TTL (SEK)**|**Priority (prioritet)**|**Weight**|**Port**|**Target (mål)**|
+    |**Type (typ)**|**Namn**|**TTL (SEK)**|**Prioritet**|**Vikt**|**Port**|**Target (mål)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (tjänst)  <br/> |_sip._tls  <br/> |3600 (sekunder)  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |SRV (tjänst)  <br/> |_sipfederationtls._tcp  <br/> |3600 (sekunder)  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |

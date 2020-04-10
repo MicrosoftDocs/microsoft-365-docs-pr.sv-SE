@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Crazy Domains för Office 365.
-ms.openlocfilehash: 157c33a52403efbefe673bf11465de525ffb4f33
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 74c9a940f8d6f52c31712357557ea8cfda76e6bb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813031"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211829"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-office-365"></a>Skapa DNS-poster på Crazy Domains för Office 365
 
@@ -43,7 +43,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -56,7 +56,7 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     
     ![CrazyDomains-BP-Konfigurera-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. På sidan **Domännamn** väljer du namnet på den domän som du uppdaterar i avsnittet **Domän.** 
+3. Välj namnet på den domän som du uppdaterar i avsnittet **Domän** på sidan **Domännamn.** 
     
     ![CrazyDomains-BP-Konfigurera-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
@@ -90,22 +90,22 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
   
 10. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -123,7 +123,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Konfigurera-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. På sidan **Domännamn** väljer du namnet på den domän som du uppdaterar i avsnittet **Domän.** 
+3. Välj namnet på den domän som du uppdaterar i avsnittet **Domän** på sidan **Domännamn.** 
     
     ![CrazyDomains-BP-Konfigurera-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
@@ -149,7 +149,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Mail for Zone**|**Priority**|**Assigned To Server**|
     |:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |1  <br/> [Mer information om prioritet finns i ](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)Vad är MX-prioritet? <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Lämna det här fältet tomt.)  <br/> |1  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-BP-Konfigurera-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
@@ -157,7 +157,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Konfigurera-2-4](../../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
   
-10. Om det finns några andra MX-poster i avsnittet **MX Record** väljer du **Ändra** för en av dessa poster. 
+10. Om det finns några andra MX-poster i avsnittet **MX-post** väljer du **Ändra** för en av dessa poster. 
     
     ![CrazyDomains-BP-Konfigurera-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
@@ -165,7 +165,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Konfigurera-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   
-12. Välj **Uppdatera för** att bekräfta borttagningen. 
+12. Välj **Uppdatera** för att bekräfta borttagningen. 
     
     ![CrazyDomains-BP-Konfigurera-2-7](../../media/db751bfe-31c2-4632-a491-6893eda38a51.png)
   
@@ -182,7 +182,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Konfigurera-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. På sidan **Domännamn** väljer du namnet på den domän som du uppdaterar i avsnittet **Domän.** 
+3. Välj namnet på den domän som du uppdaterar i avsnittet **Domän** på sidan **Domännamn.** 
     
     ![CrazyDomains-BP-Konfigurera-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
@@ -222,11 +222,11 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 10. Lägg till den andra CNAME-posten.
     
-    I rutorna för den nya posten använder du värdena från nästa rad i tabellen och väljer sedan **lägg till CNAME-post**igen .
+    I rutorna för den nya posten använder du värdena från nästa rad i tabellen och väljer sedan **Lägg till CNAME-post**igen .
     
     Upprepa proceduren tills du har skapat alla sex CNAME-posterna.
     
-11. Välj **Uppdatera om** du vill spara ändringarna. 
+11. Välj **Uppdatera** om du vill spara ändringarna. 
     
     ![CrazyDomains-BP-Konfigurera-3-5](../../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
   
@@ -244,7 +244,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Konfigurera-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. På sidan **Domännamn** väljer du namnet på den domän som du uppdaterar i avsnittet **Domän.** 
+3. Välj namnet på den domän som du uppdaterar i avsnittet **Domän** på sidan **Domännamn.** 
     
     ![CrazyDomains-BP-Konfigurera-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
@@ -287,7 +287,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![CrazyDomains-BP-Konfigurera-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. På sidan **Domännamn** väljer du namnet på den domän som du uppdaterar i avsnittet **Domän.** 
+3. Välj namnet på den domän som du uppdaterar i avsnittet **Domän** på sidan **Domännamn.** 
     
     ![CrazyDomains-BP-Konfigurera-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
@@ -311,7 +311,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
     
-    |**Record Type**|**Underdomän**|**Priority**|**Weight**|**Port**|**Target**|
+    |**Record Type**|**Underdomän**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV Record  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |SRV Record  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
@@ -326,7 +326,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     I rutorna för den nya posten använder du värdena från den andra raden i tabellen.
     
-11. Välj **Uppdatera om** du vill spara ändringarna. 
+11. Välj **Uppdatera** om du vill spara ändringarna. 
     
     ![CrazyDomains-BP-Konfigurera-5-5](../../media/f0bb1dd6-3772-4293-bf74-710f635e0658.png)
   

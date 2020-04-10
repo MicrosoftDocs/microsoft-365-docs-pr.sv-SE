@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på GoDaddy för Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: e037e989a51a95b16077d1edfcdff4b341ee3b80
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: eceab4659dfc01d6a731c4ed07f27bb29214e5fb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813003"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211745"
 ---
 # <a name="create-dns-records-at-godaddy-for-office-365"></a>Skapa DNS-poster på GoDaddy för Office 365
 
@@ -44,7 +44,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
 
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill.
@@ -63,11 +63,11 @@ Följ stegen nedan.
 
     ![GoDaddy-BP-Konfigurera-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. Välj **TXT (Text)** i listrutan. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+4. Välj **TXT (Text)** i listrutan. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
 
-    |**Record type** |**Host**|**TXT Value**|**TTL** |
+    |**Record type** |**Värd**|**TXT Value**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag detta?](../get-help-with-domains/information-for-dns-records.md)|1 timme  <br>(Välj ett värde i listrutan.)|
+    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Obs:** Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|1 timme  <br>(Välj ett värde i listrutan.)|
 
       ![GoDaddy-BP-Verifiera-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -75,22 +75,22 @@ Följ stegen nedan.
 
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
 
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
 
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
 
 
 
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
 
 
 
@@ -122,13 +122,13 @@ Följ stegen nedan.
 
     (Välj **TTL-värdet** i listrutan.)
 
-    |**Record type**|**Host (värd)**|**Points to (pekar på)**|**Priority**|**TTL**|
+    |**Record type**|**Host (värd)**|**Pekar på**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1 timme  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.           [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1 timme  <br/> |
 
 6. Välj **Spara**.
 
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="BKMK_add_CNAME"> </a>
 
 Följ stegen nedan.
@@ -152,11 +152,11 @@ Följ stegen nedan.
 
 5. Skapa den första CNAME-posten.
 
-    I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
+    I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från den första raden i tabellen nedan.
 
     (Välj **TTL-värdet** i listrutan.)
 
-    |**Record type**|**Host (värd)**|**Points to (pekar på)**|**TTL**|
+    |**Record type**|**Host (värd)**|**Pekar på**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 timme  <br/> |
     |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 timme  <br/> |
@@ -166,7 +166,7 @@ Följ stegen nedan.
 
 
 
-6. Upprepa dessa steg om du vill lägga till nästa CNAME-post tills du har skapat alla sex CNAME-posterna.
+6. Upprepa dessa steg för att lägga till nästa CNAME-post tills du har skapat alla sex CNAME-posterna.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
@@ -194,9 +194,9 @@ Följ stegen nedan.
 
 5. I rutorna för den nya posten skriver du in eller kopierar och klistrar in följande värden.
 
-    (Välj **TTL-värdet** i listrutan.)
+    (Välj **TTL-värdet** i listrutorna.)
 
-    |**Record type**|**Host**|**TXT Value**|**TTL**|
+    |**Record type**|**Värd**|**TXT Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT (Text)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |1 timme  <br/> |
 
@@ -230,9 +230,9 @@ Följ stegen nedan.
 
     I rutorna för den nya posten anger du eller kopierar och klistrar in värdena från den första raden i följande tabell.
 
-    (Välj **posttyp** och **TTL-värden** i listrutan.)
+    (Välj **värden för posttyp** och **TTL** i listrutorna.)
 
-    |**Record type**|**Namn**|**Target (mål)**|**Protocol**|**Tjänst**|**Priority (prioritet)**|**Weight**|**Port**|**TTL**|
+    |**Record type**|**Namn**|**Mål**|**Protokoll**|**Tjänst**|**Prioritet**|**Vikt**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
     |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |

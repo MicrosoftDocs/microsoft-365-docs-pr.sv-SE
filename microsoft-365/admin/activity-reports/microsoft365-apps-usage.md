@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-rapporter i administrationscentret – användning av Microsoft 365-appar
+title: Microsoft 365 Rapporter i administrationscentret - ProPlus-användning
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -17,44 +17,44 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
-description: Lär dig hur du skaffar en Microsoft 365 Apps for usage-rapport med instrumentpanelen Microsoft 365 Reports i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 9086f9a29911ef4947f6b0efe86d0118303b9915
-ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
+description: Lär dig hur du skaffar en ProPlus-rapport för användning med instrumentpanelen Microsoft 365 Reports i administrationscentret för Microsoft 365.
+ms.openlocfilehash: f697b6bcf0ae53c028ce2f13a97b1e11134a6112
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43158460"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204084"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av Microsoft 365-appar
+# <a name="microsoft-365-reports-in-the-admin-center---proplus-usage"></a>Microsoft 365 Rapporter i administrationscentret - ProPlus-användning
 
 Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md).
   
-Du kan till exempel förstå aktiviteten hos varje användare som licensieras för att använda Microsoft 365 Apps-appar genom att titta på deras aktivitet i apparna och hur de används på olika plattformar.  
+Du kan till exempel förstå aktiviteten hos varje användare som licensieras för att använda ProPlus-appar genom att titta på deras aktivitet i apparna och hur de används på olika plattformar.  
   
 > [!NOTE]
 > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint- eller Skype för företag-administratör för att kunna se rapporter. 
 
-## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Så här kommer du till användningsrapporten för Microsoft 365 Apps
+## <a name="how-to-get-to-the-proplus-usage-report"></a>Så här kommer du till ProPlus-användningsrapporten
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. Välj användning av **Office 365**Microsoft \> **365 Apps** i listrutan **Välj en rapport** .
+2. Välj **Office 365** \> **ProPlus-användning** i listrutan **Välj en rapport** .
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Använda användningsrapporten för Microsoft 365 Apps
+## <a name="interpret-the-proplus-usage-report"></a>Tolka Användningsrapporten för ProPlus
 
-Du kan få en vy över användarens aktivitet för Microsoft 365-appar genom att titta på **diagrammen Användare** och **plattform.** 
+Du kan få en vy över din användares ProPlus-aktivitet genom att titta på **diagrammen Användare** och **plattform.** 
 
-![Användningsrapport för Microsoft 365-appar](../../media/proplususagenumbers.png)
+![Användningsrapport för ProPlus](../../media/proplususagenumbers.png)
 
 |||
 |:-----|:-----|
-|1.  <br/> |Användningsrapporten för **Microsoft 365 Apps** kan visas för trender under de senaste 7 dagarna, 30 dagarna, 90 dagarna eller 180 dagarna. Om du väljer en viss dag i rapporten visas data i tabellen (7) i upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades).  <br/> |
+|1.  <br/> |**ProPlus-användningsrapporten** kan visas för trender under de senaste 7 dagarna, 30 dagarna, 90 dagarna eller 180 dagarna. Om du väljer en viss dag i rapporten visas data i tabellen (7) i upp till 28 dagar från det aktuella datumet (inte det datum då rapporten genererades).  <br/> |
 |2.  <br/> |Uppgifterna i varje rapport omfattar vanligtvis upp till de senaste 24 till 48 timmarna.  <br/> |
 |3.  <br/> |Vyn **Användare** visar trenden i antalet aktiva användare för varje app – Outlook, Word, Excel, PowerPoint, OneNote och Teams. "Aktiva användare" är de som utför avsiktliga åtgärder i dessa appar.  <br/> |
 |4.  <br/> |Vyn **Plattformar** visar trenden för aktiva användare i alla appar för varje plattform – Windows, Mac, Webb och Mobil. <br/> |
 |5.<br/>|I diagrammet **Användare** är Y-axeln antalet unika aktiva användare för respektive app. I **diagrammet Plattformar** är Y-axeln antalet unika användare för respektive plattform. X-axeln på båda diagrammen är det datum då en app användes på en viss platform.rm.<br/>|
 |6.<br/>|Du kan filtrera serien som visas i diagrammet genom att markera ett objekt i förklaringen. I diagrammet **Användare** väljer du till exempel Outlook, Word, Excel, PowerPoint, OneDrive eller Teams om du bara vill visa information som är relaterad till var och en. Om du ändrar det här valet ändras inte informationen i rutnätstabellen under den.|
-|7.<br/>|I tabellen visas en uppdelning av data per användare. Du kan lägga till eller ta bort kolumner i tabellen. <br/><br/>**Användarnamn** är e-postadressen till den användare som utförde aktiviteten på Microsoft Apps.<br><br/>**Senaste aktiveringsdatum (UTC)** är det senaste datum då användaren aktiverade sin Microsoft 365 Apps-prenumeration.<br/><br/>**Senaste aktivitetsdatum (UTC)** är det senaste datumet då en avsiktlig aktivitet utfördes av användaren. Om du vill se aktivitet som inträffat på ett visst datum markerar du datumet direkt i diagrammet.<br/><br/>Följande kolumner som motsvarar varje app som identifierar om användaren var aktiv i appen under den valda perioden:<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> Följande kolumner som motsvarar varje plattform som identifierar om användaren var aktiv på den plattformen för en app (inom Microsoft 365 Apps) under den valda perioden:<br><br>**Outlook (Windows)**<br>**Outlook (Mac)**<br>**Outlook (webb)** <br>**Outlook (mobil)**<br> **Word (Windows)**<br> **Ord (Mac)**<br> **Word (webb)**<br> **Word (mobil)**<br> **Excel (Windows)**<br> **Excel (Mac)**<br> **Excel (webb)**<br> **Excel (mobil)**<br> **PowerPoint (Windows)**<br> **PowerPoint (Mac)**<br>**PowerPoint (webb)**<br> **PowerPoint (mobil)**<br> **OneNote (Windows)**<br> **OneNote (Mac)**<br> **OneNote (webb)**<br>**OneNote (mobil)**<br> **Lag (Windows)**<br> **Lag (Mac)**<br> **Lag (webb)**<br>**Lag (mobil)** |
+|7.<br/>|I tabellen visas en uppdelning av data per användare. Du kan lägga till eller ta bort kolumner i tabellen. <br/><br/>**Användarnamn** är e-postadressen till den användare som utförde aktiviteten på Microsoft Apps.<br><br/>**Senaste aktiveringsdatum (UTC)** är det senaste datum då användaren aktiverade sin ProPlus-prenumeration.<br/><br/>**Senaste aktivitetsdatum (UTC)** är det senaste datumet då en avsiktlig aktivitet utfördes av användaren. Om du vill se aktivitet som inträffat på ett visst datum markerar du datumet direkt i diagrammet.<br/><br/>Följande kolumner som motsvarar varje app som identifierar om användaren var aktiv i appen under den valda perioden:<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> Följande kolumner som motsvarar varje plattform som identifierar om användaren var aktiv på den plattformen för en app (inom ProPlus) under den valda perioden:<br><br>**Outlook (Windows)**<br>**Outlook (Mac)**<br>**Outlook (webb)** <br>**Outlook (mobil)**<br> **Word (Windows)**<br> **Ord (Mac)**<br> **Word (webb)**<br> **Word (mobil)**<br> **Excel (Windows)**<br> **Excel (Mac)**<br> **Excel (webb)**<br> **Excel (mobil)**<br> **PowerPoint (Windows)**<br> **PowerPoint (Mac)**<br>**PowerPoint (webb)**<br> **PowerPoint (mobil)**<br> **OneNote (Windows)**<br> **OneNote (Mac)**<br> **OneNote (webb)**<br>**OneNote (mobil)**<br> **Lag (Windows)**<br> **Lag (Mac)**<br> **Lag (webb)**<br>**Lag (mobil)** |
 |8.<br/>|Markera ikonen **Hantera kolumner** om du vill lägga till eller ta bort kolumner från rapporten.|
 |9.<br/>|Du kan också exportera rapportdata till en CSV-fil i Excel genom att välja länken **Exportera.** Detta exporterar data för alla användare och gör att du kan göra enkel aggregering, sortering och filtrering för vidare analys. Om du har färre än 100 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 100 användare måste du exportera data för att kunna filtrera och sortera.|

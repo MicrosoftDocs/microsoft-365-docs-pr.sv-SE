@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Dyn.com för Office 365.
-ms.openlocfilehash: a09ba409b1788432c5cd5c060252bb76b6903342
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d25d4d9712dcd2e2a171c6ad0eac70b8c01e75ab
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808023"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211781"
 ---
 # <a name="create-dns-records-at-dyncom-for-office-365"></a>Skapa DNS-poster på Dyn.com för Office 365
 
@@ -67,22 +67,22 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
   
 7. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-3. Välj **Starta inställningar**på sidan **Inställningar** .
+3. På sidan **Setup** väljer du **Start setup**.
     
     
   
-4. På sidan **Verifiera domän** väljer du **Verifiera**.
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   

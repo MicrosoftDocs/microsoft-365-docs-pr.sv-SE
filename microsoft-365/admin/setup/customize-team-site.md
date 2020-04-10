@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Lär dig att anpassa, organisera och hantera gruppwebbplatsen.
-ms.openlocfilehash: 8b399caf0724b0aa01ee18faa0e743df1d1073ef
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42813055"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212215"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassa din gruppwebbplats för fillagring och delning
 
@@ -42,25 +42,25 @@ Här följer några idéer och länkar som hjälper dig att anpassa, organisera 
  
 ## <a name="customize-your-team-site"></a>Anpassa en gruppwebbplats
 
-Om du vill ge mer synlighet åt data på en gruppwebbplats kan du anpassa Startsidan för SharePoint så att du och dina anställda snabbt får den information du behöver. Du kan till exempel ha länkar till medarbetar-OneDrive-mappar och länkar till dokument, kontakter, uppgifter, kalendrar och en OneNote-anteckningsbok där du lagrar mötesdagordningar och anteckningar.
+Om du vill ge mer insyn i data på en gruppwebbplats kan du anpassa Startsidan för SharePoint så att du och dina anställda snabbt kommer åt den information du behöver. Du kan till exempel ha länkar till medarbetarmappar med OneDrive och länkar till dokument, kontakter, uppgifter, kalendrar och en OneNote-anteckningsbok där du lagrar dagordningar och anteckningar för möten.
   
-Information om hur du anpassar utseendet på startsidan finns [i Ändra utseendet på din SharePoint-webbplats](https://support.office.com/article/06bbadc3-6b04-4a60-9d14-894f6a170818.aspx).
+Information om hur du anpassar utseendet på startsidan finns i Ändra utseendet på [din SharePoint-webbplats](https://support.office.com/article/06bbadc3-6b04-4a60-9d14-894f6a170818.aspx).
   
 Förbättra navigeringen på din webbplats med [Anpassa navigeringen på din SharePoint-webbplats](https://support.office.com/article/3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca.aspx).
   
-Om du vill förbättra upptäckbarheten för en webbplats lägger du till den som en aktuell länk på Startsidan för SharePoint. Mer information finns i [Lägg till aktuella länkar till Startsidan för SharePoint](/sharepoint/change-links-list-on-sharepoint-home-page).
+Om du vill förbättra upptäckbarheten för en webbplats lägger du till den som en länk på Startsidan för SharePoint. Mer information finns i [Lägga till utvalda länkar på Startsidan för SharePoint](/sharepoint/change-links-list-on-sharepoint-home-page).
   
-Om du vill lägga till en bild på en startsida för gruppwebbplatsen läser du [Lägga till en bild- eller bildfil på en SharePoint-sida](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
+Om du vill lägga till en bild på en gruppwebbplatss startsida finns i [Lägga till en bild- eller bildfil på en SharePoint-sida](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
   
-Om du vill lägga till sidor på webbplatsen läser du [Lägga till en sida på en webbplats](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
+Om du vill lägga till sidor på webbplatsen finns i [Lägga till en sida på en webbplats](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
   
 Mer information om inställningar för gruppwebbplats finns i [Hantera inställningar för din SharePoint-gruppwebbplats](https://support.office.com/article/8376034D-D0C7-446E-9178-6AB51C58DF42.aspx).
   
 ## <a name="work-with-document-libraries"></a>Arbeta med dokumentbibliotek
 
-En gruppwebbplats innehåller ett dokumentbibliotek som du kan börja använda omedelbart. 
+En gruppwebbplats innehåller ett dokumentbibliotek som du kan börja använda direkt. 
 
-Information om hur du börjar ladda upp läser du [Ladda upp en eller flera filer till ett dokumentbibliotek](https://support.office.com/article/eb18fcba-c953-4d45-8d90-8da66edeacdb)
+Börja ladda upp, se [Ladda upp en mapp eller filer till ett dokumentbibliotek](https://support.office.com/article/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
 Lär dig hur du redigerar, tar bort, checkar ut filer och mycket mer. Mer information finns [i Arbeta med filer i ett dokumentbibliotek](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx).
   
@@ -78,7 +78,7 @@ Om du lagrar mycket data i en lista läser du [Hantera stora listor och bibliote
   
 För att se en video om att lägga till kalendrar på din webbplats se [Skapa en delad kalender i Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
 
-## <a name="organize-sites-into-hubs"></a>Ordna webbplatser i nav
+## <a name="organize-sites-into-hubs"></a>Ordna webbplatser i hubbar
 
 Gruppwebbplatsen delar nästan allt med alla medlemmar i gruppen som är kopplade till webbplatsen. Om du vill ha en separat webbplats för vissa kunder kan du skapa ytterligare gruppwebbplatser och hantera dem med hjälp av SharePoint hubb-webbplatser. Mer information 
   
@@ -104,7 +104,7 @@ Visa en video om grupper med [Förstå och hantera grupper](https://support.offi
   
 För att lägga till användare till en Office 365-grupp se [Lägga till användare individuellt eller flera samtidigt i Office 365 - administratörshjälp](../add-users/add-users.md).
   
-Läs om hur du hanterar åtkomstbegäranden med [Konfigurera och hantera åtkomstbegäranden](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
+Lär dig hur du hanterar åtkomstbegäranden med [Konfigurera och hantera åtkomstbegäranden](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>Här är fler ämnen du kan vara intresserad av
 

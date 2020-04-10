@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Network Solutions för Office 365.
-ms.openlocfilehash: f94ad49f443e609aa28d634d05604601c7d5e576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6bbe954f763e0cb06e9bf32b991e60da34393c57
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808195"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211128"
 ---
 # <a name="create-dns-records-at-network-solutions-for-office-365"></a>Skapa DNS-poster på Network Solutions för Office 365
 
@@ -55,7 +55,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -65,7 +65,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.of
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i listrutan Logga **in till:** . 
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -91,7 +91,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.of
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
-    |@  <br/> (Värdet ändras till **@ (None)** när du sparar posten.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)   |
+    |@  <br/> (Värdet ändras till **@ (None)** när du sparar posten.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)   |
        
     ![Skriva eller klistra in värden i rutorna för den nya posten](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
@@ -105,21 +105,21 @@ Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.of
   
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
 
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
-    
-    
-  
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+3. På sidan **Setup** väljer du **Start setup**.
+    
+    
+  
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -134,7 +134,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:51)](https://support.of
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i listrutan Logga **in till:** . 
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -152,15 +152,15 @@ Följ stegen nedan eller [titta på videon (börja vid 3:51)](https://support.of
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **MX Records (Mail Servers)** och välj sedan **Redigera MX-poster**.
+5. Bläddra ned till avsnittet **E-postservrar (MX Records)** och välj sedan **Redigera MX-poster**.
     
     ![Välj Redigera MX-poster](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
-6. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
+6. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
-    |**Priority**|**TTL**|**Mail Server**|
+    |**Prioritet**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs:** Hämta din * \<domännyckel\> * från ditt Office 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Skriva eller klistra in värden i rutorna för den nya posten](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -184,7 +184,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:51)](https://support.of
     
     ![Välj Spara ändringar](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägg till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
 <a name="BKMK_add_CNAME"> </a>
 
 Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US).
@@ -192,7 +192,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.of
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i listrutan Logga **in till:** . 
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -212,7 +212,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:43)](https://support.of
   
 5. Bläddra ned till avsnittet **Värdalias (CNAME Records)** och välj sedan **Redigera CNAME-poster**.
     
-    ![Välj Redigera CNAME-poster under värdalias](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![Välj Redigera CNAME-poster under Värdalias](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. I rutorna för de fyra nya posterna skriver du, eller kopierar och klistrar in, värdena från följande tabell.
     
@@ -245,7 +245,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:35)](https://support.of
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i listrutan Logga **in till:** . 
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -265,7 +265,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:35)](https://support.of
   
 5. Bläddra ned till avsnittet **Text (TXT Records)** och välj sedan **Redigera TXT-poster**.
     
-    ![Välj Redigera TXT-poster under Text](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
+    ![Välj Redigera TXT-poster under text](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
 6. I rutorna för den nya posten skriver du in eller kopierar och klistrar in följande värden.
     
@@ -291,7 +291,7 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.of
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i listrutan Logga **in till:** . 
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -309,7 +309,7 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.of
     
     ![Välj Hantera avancerade DNS-poster](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Bläddra ned till avsnittet **Service (SRV Records)** och välj sedan **Redigera SRV Records**.
+5. Bläddra ned till avsnittet **Service (SRV Records)** och välj sedan **Redigera SRV-poster**.
     
     ![Välj Redigera SRV-poster under Tjänst](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
@@ -317,7 +317,7 @@ Följ stegen nedan eller [titta på videon (börja vid 6:18)](https://support.of
     
     (Välj värdena för **Service** och **Protocol** i listrutorna.) 
     
-    |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
+    |**Service**|**Protocol**|**TTL**|**Prioritet**|**Vikt**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |

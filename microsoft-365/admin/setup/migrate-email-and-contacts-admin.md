@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Lär dig att importera kontakter, kalendrar, e-postmeddelanden från Gmail eller en annan e-postleverantör till Office 365. '
-ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6decee3fd45d11ed1e71e71e0cf7191ccec6aa3d
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811207"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212191"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>Migrera e-post och kontakter till Office 365
 
@@ -53,9 +53,9 @@ Så här importerar du e-post, kontakter och kalender från Gmail till Outlook m
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>Importera från Outlook (skrivbord)
+### <a name="import-from-outlook-desktop"></a>Importera från Outlook (skrivbord)''
 
-Följ dessa steg för att exportera e-post, kontakter och kalendrar från Outlook till en PST-fil och sedan importera filen till Outlook med Office 365:
+Följ de här stegen för att exportera e-post, kontakter och kalendrar från Outlook till en PST-fil och sedan importera filen till Outlook med Office 365:
   
 1. [Exportera e-post, kontakter och kalender](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     

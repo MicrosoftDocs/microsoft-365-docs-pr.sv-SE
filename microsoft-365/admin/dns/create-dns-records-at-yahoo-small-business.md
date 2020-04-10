@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag online och andra tjänster på Yahoo! Small Business för Office 365.
-ms.openlocfilehash: c178afeb309fba9515e01155a43d5e6b97d1136f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Yahoo! Small Business för Office 365.
+ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812336"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211044"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>Skapa DNS-poster på Yahoo! Small Business för Office 365
 
@@ -40,11 +40,11 @@ Du måste skapa ditt Aabaco-konto innan du kan [skapa DNS-poster](../get-help-wi
   
 ## <a name="create-an-aabaco-small-business-account"></a>Skapa ett Aabaco Small Business-konto
 
-1. Om du vill komma igång går du till domänsidan på Aabaco med hjälp av [den här länken](https://www.luminate.com/services/)och väljer Konfigurera ditt **Aabaco Small Business-konto**.
+1. För att komma igång, gå till din domänsida på Aabaco med hjälp av [den här länken](https://www.luminate.com/services/)och välj Konfigurera ditt **Aabaco Small Business-konto**.
     
     ![Välj Konfigurera ditt Aabaco Small Business-konto](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
   
-2. Ange ditt Yahoo! Small Business **E-post / Yahoo ID,** och välj sedan **jag är inte en robot**.
+2. Ange ditt Yahoo! Small Business **E /Yahoo ID**, och välj sedan **Jag är inte en robot**.
     
     ![Select I am not a robot](../../media/ded4b5dd-4e04-4baa-ae31-8426b5799151.png)
   
@@ -59,7 +59,7 @@ Du måste skapa ditt Aabaco-konto innan du kan [skapa DNS-poster](../get-help-wi
   
     ![The You've got mail page](../../media/2e02fc30-6cca-40d6-bb64-131a41b4a369.png)
   
-5. Välj Bekräfta e-postionen i Aabaco **Bekräfta din e-postadress för att fortsätta installationen** av **e-post.**
+5. Välj Bekräfta e-post i Aabaco **Bekräfta din e-postadress för att fortsätta konfigurera** **e-postmeddelandet**.
     
     ![Välj Bekräfta e-post](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
   
@@ -81,7 +81,7 @@ Du måste skapa ditt Aabaco-konto innan du kan [skapa DNS-poster](../get-help-wi
   
     ![The You're almost done page](../../media/1a4142a3-e140-48a8-9c80-aa126ff08179.png)
   
-9. I Aabaco **You're almost there** email message väljer du Aktivera mitt **konto**.
+9. I Aabaco **Du är nästan där** e-postmeddelande, välj Aktivera mitt **konto**.
     
     ![Välj Aktivera min acount](../../media/e76d5edc-d8ba-4d8d-872d-d916716c3618.png)
   

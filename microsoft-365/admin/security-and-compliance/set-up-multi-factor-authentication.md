@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du använder säkerhetsstandarder för att konfigurera multifaktorautentisering för Office 365-användare.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153562"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204028"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -68,11 +68,11 @@ Om du tidigare har konfigurerat MFA med riktlinjer [måste du inaktivera och akt
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>Flytta från baslinje riktlinjer till säkerhetsstandarder
 
-1. I [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=834822) väljer du **Inställningar**.
+1. I [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=834822)väljer du **Visa alla**och sedan Azure **Active Directory** under **Administrationscenter**.
 
-2. Bredvid **Inloggning och säkerhet** väljer du **Visa** för **Gör inloggningen säkrare**.
+2. Välj **Azure Active Directory** > **Security**i **Administrationscentret för Azure** Active Directory .
 
-3. Under **Gör inloggningen säkrare** väljer du **Hantera**. 
+3. Om **säkerheten | Komma** igång-sidan, välj **Villkorlig åtkomst**. 
 
 4. På sidan **Villkorad åtkomst till Azure portal – riktlinjer** väljer du varje baslinje-policy som är **På** och ställ dem på **Av**.
 5. Gå till sidan [Azure Active Directory egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
-description: Läs om hur du kan konfigurera Office 365 för att hantera DNS-posterna för din anpassade domän på Hostgator.
-ms.openlocfilehash: 95131e258482fdb0ff9aa7f00b3339e1c6f9509d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du kan konfigurera Office 365 för att hantera DNS-posterna för din anpassade domän hos Hostgator.
+ms.openlocfilehash: d592fc77513107679206a4ac187116c7d6fb794f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808007"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212335"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-hostgator"></a>Ändra namnservrar för att konfigurera Office 365 med Hostgator
 
@@ -49,15 +49,15 @@ Följ dessa steg för att associera domänen med värdkontona.
     
     ![Hostgator-BP - Omdelegera-1-1](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
-3. På sidan **Hantera domäner** väljer du den domän som du vill uppdatera i området **Mina domäner.**
+3. Välj den domän som du vill uppdatera i området **Mina domäner** på sidan Hantera **domäner.**
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. Välj **Ändra**i området **Namnservrar** på sidan **Översikt för domäner.**
+4. Välj **Ändra**i området **Namnservrar** på sidan **Domains Overview** .
     
     ![Hostgator-BP - Omdelegera-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
-5. På sidan **Namnservrar** för din domän väljer du det **värdkonto** som är kopplat till domänen i listrutan **Välj värdkonto.**
+5. På sidan **Namnservrar** för din domän väljer du det värdkonto som är kopplat till domänen i listrutan **Välj värdkonto.** **hosting account**
     
     ![Hostgator-BP - Omdelegera-1-4](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
@@ -68,9 +68,9 @@ Följ dessa steg för att associera domänen med värdkontona.
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
 > [!IMPORTANT]
-> Innan du utför den här proceduren måste du först utföra proceduren i det första avsnittet i den här artikeln, [Peka domänen till ditt värdkonto.](#point-your-domain-to-your-hosting-account). .
+> Innan du utför den här proceduren måste du först utföra proceduren i det första avsnittet i den här artikeln, [Peka din domän till ditt värdkonto.](#point-your-domain-to-your-hosting-account).
   
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill.
@@ -80,9 +80,9 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     (Varje konto på Hostgator har tilldelats en unik cPanel-adress. cPanel-adressen bör se ut ungefär så här: https://YourSiteAddress:secure-port-number. E-postmeddelandet du fick från Hostgator vid registreringen anger adressen.)
     
     > [!IMPORTANT]
-    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. Om du vill komma igång med Office 365 kan du antingen köpa ett värdkonto från Hostgator eller [ändra domänens Namnserver (NS) poster](#change-your-domains-nameserver-ns-records) så att de pekar på Office 365. 
+    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. Om du vill komma igång med Office 365 kan du antingen köpa ett värdkonto från Hostgator eller [ändra domänens namnserverposter (NS)](#change-your-domains-nameserver-ns-records) så att de pekar på Office 365. 
   
-2. Välj **Avancerad DNS-zonredigerare**i området **Domäner** på sidan **Kontrollpanelen.**
+2. Välj **Avancerad DNS Zone Editor**i området **Domäner** på sidan **Kontrollpanelen** .
     
     (Du kan behöva rulla nedåt.) 
     
@@ -93,24 +93,24 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-|Använd ditt  *domännamn*  . (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Använd ditt  *domännamn*  . (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Välj **Lägg till post**.
     
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -123,7 +123,7 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
 > Om du ändrar domänens NS-poster så att de pekar på Office 365-namnservrarna påverkas alla tjänster som är kopplade till domänen. Till exempel kommer all e-post som skickas till din domän (till exempel rob@ *your_domain*  .com) till Office 365 när du har gjort den här ändringen.
   
 > [!IMPORTANT]
-> Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. När du har slutfört stegen i det här avsnittet är de enda namnservrar na som ska visas dessa fyra: **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com**och **ns4.bdm.microsoftonline.com**.
+> Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. När du har slutfört stegen i det här avsnittet är de enda namnservrarna som ska visas dessa fyra: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**och **ns4.bdm.microsoftonline.com**.
   
 1. Kom igång genom att gå till kundportalen på Hostgator genom att klicka på [den här länken](https://portal.hostgator.com/domain/manage). Du uppmanas att logga in.
     
@@ -133,23 +133,23 @@ Om du vill slutföra konfigurationen av domänen med Office 365 kan du ändra do
     
     ![Hostgator-BP - Omdelegera-1-1](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
-3. På sidan **Hantera domäner** väljer du den domän som du vill uppdatera i området **Mina domäner.** 
+3. Välj den domän som du vill uppdatera i området **Mina domäner** på sidan Hantera **domäner.** 
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. Välj **Ändra**i området **Namnservrar** på sidan **Domänöversikt.**
+4. Välj **Ändra**i området **Namnservrar** på sidan **Domain Overview** .
     
     ![Hostgator-BP - Omdelegera-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
-5. På sidan **Namnservrar** för din domän väljer du det **värdkonto** som är kopplat till domänen i listrutan **Välj värdkonto.** 
+5. På sidan **Namnservrar** för din domän väljer du det värdkonto som är kopplat till domänen i listrutan **Välj värdkonto.** **hosting account** 
     
     ![Hostgator-BP - Omdelegera-1-4](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
-6. Välj **Ange namnservrar manuellt**.
+6. Välj **Ange manuellt mina namnservrar**.
     
     ![Hostgator-BP - Omdelegera-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **VARNING**: Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill vill et, ta bara bort alla aktuella namnservrar som *inte* har namnet **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.)
+7.   **VARNING**: Följ bara dessa steg om du har andra befintliga namnservrar än de fyra korrekta namnservrarna. (Det vill an, ta bara bort alla aktuella namnservrar som *inte* namnges **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**eller **ns4.bdm.microsoftonline.com**.)
   
         Fortfarande på sidan **Name Servers** för din domän tar du bort varje namnserver i listan genom att markera den och sedan trycka på **Delete** på tangentbordet. 
     

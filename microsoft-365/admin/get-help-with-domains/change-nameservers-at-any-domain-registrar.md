@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,20 +23,20 @@ search.appverid:
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Läs om hur du lägger till och konfigurerar din domän i Office 365 så att dina tjänster som e-post och Skype för företag – Online använder ditt eget domännamn.
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42810834"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210498"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Office 365 med valfri domänregistrator
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-Kontrollera [Ställ in din domän (värdspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) först för att se om vi har instruktioner för din registrator. 
+Kontrollera [Konfigurera din domän (värdspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) först för att se om vi har instruktioner för din registrator. 
   
-Följ de här anvisningarna om du vill lägga till och konfigurera din domän i Office 365 så att ditt eget domännamn används för tjänster som e-post och Skype för företag - Online. För att göra det måste du verifiera din domän och sedan ändra domänens namnservrar till Office 365, så att rätt DNS-poster kan ställas in åt dig. Följ dessa steg om följande uttalanden beskriver din situation:
+Följ de här anvisningarna om du vill lägga till och konfigurera din domän i Office 365 så att ditt eget domännamn används för tjänster som e-post och Skype för företag - Online. För att göra det måste du verifiera din domän och sedan ändra domänens namnservrar till Office 365, så att rätt DNS-poster kan ställas in åt dig. Följ dessa steg om följande påståenden beskriver din situation:
   
 - Du har en egen domän och vill konfigurera den så att den fungerar tillsammans med Office 365.
     
@@ -48,12 +48,12 @@ Följ de här anvisningarna om du vill lägga till och konfigurera din domän i 
 > [!NOTE]
 > Du skapar bara en av dessa poster. TXT är den vanligaste posttypen, men den stöds inte av vissa DNS-värdar. I sådana fall skapar du en MX-post istället. 
   
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
-### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>Hitta området på din DNS-värdleverantörs webbplats där du kan skapa en ny post
+### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>Hitta området på din DNS-värds webbplats där du kan skapa en ny post
 
 1. Logga in på din DNS-värds webbplats.
     
@@ -77,26 +77,26 @@ Beroende på om du skapar en TXT-post eller en MX-post gör du något av följan
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** eller **Host Name**|**Värde**|**Priority**|**TTL**|
-|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* > [!NOTE]> Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365.          [Hur hittar jag detta?](../get-help-with-domains/information-for-dns-records.md)          |För **Prioritet**, för att undvika konflikter med MX-posten som används för e-postflöde, använder en lägre prioritet än prioritet för befintliga MX-poster. Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.md#what-is-mx-priority) |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
+|**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
+|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* > [!NOTE]> Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365.          [Hur hittar jag detta?](../get-help-with-domains/information-for-dns-records.md)          |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.md#what-is-mx-priority) |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
    
 ### <a name="save-the-record"></a>Spara posten
 
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
   
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
  
     
   
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -122,7 +122,7 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 |Andra namnservern  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > Du bör använda minst två namnserverposter. Om det finns några andra namnservrar i listan kan du antingen ta bort dem eller ändra dem till **ns3.bdm.microsoftonline.com** och **ns4.bdm.microsoftonline.com**. 
+   > Du bör använda minst två namnserverposter. Om det finns andra namnservrar i listan kan du antingen ta bort dem eller ändra dem till **ns3.bdm.microsoftonline.com** och **ns4.bdm.microsoftonline.com**. 
   
 3. Spara ändringarna.
     
@@ -143,7 +143,7 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 |Andra namnservern  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > Du bör använda minst två namnserverposter. Om det finns några andra namnservrar i listan kan du antingen ta bort dem eller ändra dem till **ns3.dns.partner.microsoftonline.cn** och **ns4.dns.partner.microsoftonline.cn**. 
+   > Du bör använda minst två namnserverposter. Om det finns andra namnservrar i listan kan du antingen ta bort dem eller ändra dem till **ns3.dns.partner.microsoftonline.cn** och **ns4.dns.partner.microsoftonline.cn**. 
   
 3. Spara ändringarna.
     
@@ -156,9 +156,9 @@ Här följer exempel på några åtgärder som krävs för e-post och webbplatse
   
 - Flytta alla e-postadresser som använder din domän till Office 365 innan du ändrar NS-posterna.
     
-- Vill du lägga till en domän som för tillfället används med en webbadress som www.fourthcoffee.com? Du kan göra nedan åtgärder medan du lägger till domänen för att hålla sin webbplats värd där webbplatsen är värd nu så att andra fortfarande kan komma till webbplatsen när du har ändrat domänens NS-poster för att peka på Office 365.
+- Vill du lägga till en domän som för tillfället används med en webbadress som www.fourthcoffee.com? Du kan vidta följande åtgärder medan du lägger till domänen för att hålla sin webbplats värd där webbplatsen finns nu så att andra fortfarande kan komma till webbplatsen när du har ändrat domänens NS-poster så att den pekar på Office 365.
 
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
 3. Välj en domän på sidan Domäner.
 

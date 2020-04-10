@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Amazon Web Services (AWS) för Office 365.
-ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813018"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211853"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>Skapa DNS-poster på Amazon Web Services (AWS) för Office 365
 
@@ -43,16 +43,16 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
   
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. Välj **Värdbaserade zoner**på sidan **Resurser** .
+2. På sidan **Resurser** väljer du **Värdzoner**.
     
-3. Markera namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan ** Värdbaserade zoner ** . 
+3. Välj namnet på den domän som du vill redigera i kolumnen Domännamn på sidan ** Värdbaserade zoner ** i kolumnen **Domännamn.** 
     
 4. Välj **Skapa postuppsättning**.
     
@@ -66,24 +66,24 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |**Name** <br/> |**Type (Typ)** <br/> |**Alias** <br/> |**TTL (sekunder)** <br/> |**Värde** <br/> |**Routing Policy (Routningsprincip)** <br/> |
-    |(Lämna det här fältet tomt.)  <br/> |TXT - text  <br/> |Nej  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
+    |(Lämna det här fältet tomt.)  <br/> |TXT - text  <br/> |Nej  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
    
 6. Välj **Skapa**.
     
 7. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -93,9 +93,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. Välj **Värdbaserade zoner**på sidan **Resurser** .
+2. På sidan **Resurser** väljer du **Värdzoner**.
     
-3. Markera namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdbaserade zoner.** 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdzoner.** 
     
 4. Välj **Skapa postuppsättning**.
     
@@ -105,7 +105,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Name (Namn)**|**Type (Typ)**|**Alias**|**TTL (sekunder)**|**Värde**|**Routing Policy (Routningsprincip)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(Lämna det här fältet tomt.)  <br/> |MX - Mail exchange  <br/> |Nej  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 motsvarar MX-prioritetsvärdet. Skriv 0 i början av MX-värdet och infoga ett blanksteg före resten av värdet.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs:** Hämta \<din domännyckel\> från ditt Office 365-konto. *domain-key* [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
+    |(Lämna det här fältet tomt.)  <br/> |MX - Mail exchange  <br/> |Nej  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 motsvarar MX-prioritetsvärdet. Skriv 0 i början av MX-värdet och infoga ett blanksteg före resten av värdet.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Hämta din \<*domännyckel*\> från ditt Office 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |Enkelt  <br/> |
        
     ![AWS-BP-Konfigurera-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -116,7 +116,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 7. Om det finns andra MX-poster tar du bort dem.
     
     > [!IMPORTANT]
-    > AWS lagrar MX-poster som en uppsättning som kan innehålla flera poster. **Välj INTE** **Ta bort postuppsättning,** eftersom det tar bort alla MX-poster, inklusive den du just lagt till. Använd följande instruktioner i stället. 
+    > AWS lagrar MX-poster som en uppsättning som kan innehålla flera poster. Välj **INTE** **Ta bort postuppsättning,** eftersom det kommer att ta bort alla dina MX-poster, inklusive den du just lagt till. Använd följande instruktioner i stället. 
   
     Välj först MX-postuppsättningen.
     
@@ -135,9 +135,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. Välj **Värdbaserade zoner**på sidan **Resurser** .
+2. På sidan **Resurser** väljer du **Värdzoner**.
     
-3. Markera namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdbaserade zoner.** 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdzoner.** 
     
 4. Välj **Skapa postuppsättning**.
     
@@ -150,9 +150,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     |**Name (Namn)**|**Type (Typ)**|**Alias**|**TTL (sekunder)**|**Värde**|**Routing Policy (Routningsprincip)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Enkelt  <br/> |
-    |sip  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Simple  <br/> |
-    |lyncdiscover  <br/> |CNAME - Canonical name  <br/> |Nej  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Enkelt  <br/> |
-    |enterpriseregistration  <br/> |CNAME - Canonical name  <br/> |Nej  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Simple  <br/> |
+    |sip  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Enkelt  <br/> |
+    |lyncdiscover  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Enkelt  <br/> |
+    |enterpriseregistration  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Simple  <br/> |
     |enterpriseenrollment  <br/> |CNAME - Canonical name  <br/> |Nej  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |Enkelt  <br/> |
    
     ![AWS-BP-Konfigurera-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
@@ -163,23 +163,23 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 7. Lägg till de andra fyra CNAME-posterna.
     
-    På sidan **Värdbaserade zoner** väljer du **Skapa postuppsättning,** skapar en post med värdena från nästa rad i tabellen och väljer sedan igen **Skapa** för att slutföra posten. 
+    På sidan **Värdzoner** väljer du **Skapa postuppsättning,** skapar en post med värdena från nästa rad i tabellen och väljer sedan **Skapa** igen för att slutföra posten. 
     
-    Upprepa den här processen tills du har skapat alla fem CNAME-posterna.
+    Upprepa den här processen tills du har skapat alla fem CNAME-poster.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Lägga till en TXT-post för SPF för att förhindra skräppost
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Kolla in dessa [externa domännamnssystemposter för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Om du vill validera din SPF-post kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Om du vill validera SPF-posten kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. Välj **Värdbaserade zoner**på sidan **Resurser** .
+2. På sidan **Resurser** väljer du **Värdzoner**.
     
-3. Markera namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdbaserade zoner.** 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdzoner.** 
     
-4. Markera **TXT-postuppsättningen.** 
+4. Välj **TXT-postuppsättningen.** 
     
     ![AWS-BP-Configure-4-1](../../media/0310fa66-c016-4987-80df-930f1c8f3c39.png)
   
@@ -200,9 +200,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 
 1. Kom igång genom att gå till domänsidan på AWS genom att klicka på [den här länken](https://console.aws.amazon.com/route53/home). Du uppmanas att logga in först.
     
-2. Välj **Värdbaserade zoner**på sidan **Resurser** .
+2. På sidan **Resurser** väljer du **Värdzoner**.
     
-3. Markera namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdbaserade zoner.** 
+3. Välj namnet på den domän som du vill redigera i kolumnen **Domännamn** på sidan **Värdzoner.** 
     
 4. Välj **Skapa postuppsättning**.
     
@@ -225,7 +225,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 7. Lägg till den andra SRV-posten:
     
-    På sidan **Värdbaserade zoner** väljer du **Skapa postuppsättning,** skapar en post med värdena från nästa rad i tabellen och väljer sedan igen **Skapa** för att slutföra posten. 
+    På sidan **Värdzoner** väljer du **Skapa postuppsättning,** skapar en post med värdena från nästa rad i tabellen och väljer sedan **Skapa** igen för att slutföra posten. 
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 

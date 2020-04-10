@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Namecheap för Office 365.
-ms.openlocfilehash: 26b8b6586c71636d97c423106e4799105a076a54
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 29b1130b75af592594e2a963dbb6fa8d3f08ab30
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812314"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211685"
 ---
 # <a name="create-dns-records-at-namecheap-for-office-365"></a>Skapa DNS-poster för Office 365 på Namecheap
 
@@ -41,7 +41,7 @@ När du har lagt till dessa poster på Namecheap är din domän konfigurerad fö
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -79,9 +79,9 @@ Följ stegen nedan.
     
     (Välj **TTL-värdet** i listrutan.) 
     
-    |**Typ**|**Host**|**Value (Värde)**|**TTL**|
+    |**Typ**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Anm.:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365.  [Hur hittar jag detta?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
        
     ![Namecheap-BP-Verifiera-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -91,21 +91,21 @@ Följ stegen nedan.
   
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
-    
-    
-  
-3. Välj **Starta inställningar**på sidan **Inställningar** .
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
     
   
-4. På sidan **Verifiera domän** väljer du **Verifiera**.
+3. På sidan **Setup** väljer du **Start setup**.
+    
+    
+  
+4. På sidan **Verify domain** väljer du **Verify**.
     
     
   
@@ -148,9 +148,9 @@ Följ stegen nedan.
     
     (Rutan **Priority** är rutan utan namn till höger om rutan **Värde**. Välj **TTL-värdet** i listrutan.) 
     
-    |**Typ**|**Host**|**Value**|**Priority**|**TTL**|
+    |**Typ**|**Host**|**Värde**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX Record (MX-post)  <br/> |@  <br/> |\<*domännyckeln*\>.mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> [Mer information om prioritet finns i ](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)Vad är MX-prioritet? <br/> |30 min  <br/> |
+    |MX Record (MX-post)  <br/> |@  <br/> |\<*domännyckeln*\>.mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |30 min  <br/> |
        
     ![Namecheap-BP-Konfigurera-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -205,7 +205,7 @@ Följ stegen nedan.
   
 7. I de tomma rutorna för den nya posten väljer du **CNAME** för **Record Type** och skriver sedan in, eller kopierar och klistrar in, värdena från den första raden i följande tabell.
     
-    |**Type**|**Host**|**Value (Värde)**|**TTL**|
+    |**Type**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |3600  <br/> |
@@ -259,7 +259,7 @@ Följ stegen nedan.
     
     (Välj **TTL-värdet** i listrutan.) 
     
-    |**Typ**|**Host**|**Value**|**TTL**|
+    |**Typ**|**Host**|**Värde**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |30 min  <br/> |
        
@@ -301,7 +301,7 @@ Följ stegen nedan.
   
 7. I de tomma rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från den första raden i tabellen nedan.
     
-    |**Service**|**Protocol**|**Priority**|**Weight**|**Port**|**Target (mål)**|**TTL**|
+    |**Service**|**Protocol**|**Prioritet**|**Vikt**|**Port**|**Target (mål)**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |30 min  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |30 min  <br/> |

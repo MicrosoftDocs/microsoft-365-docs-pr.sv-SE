@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Bluehost för Office 365.
-ms.openlocfilehash: 0e64ed8787dca9822e71a63c57de7a7a3e2b3fe4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8d8217aa3b87e103f37063248899467d79b6cf18
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807853"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211841"
 ---
 # <a name="create-dns-records-at-bluehost-for-office-365"></a>Skapa DNS-poster hos Bluehost för Office 365
 
@@ -43,7 +43,7 @@ Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finn
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365 vill vi vara säkra på att det är du som äger den. Att du kan logga in på kontot hos domänregistratorn och skapa en DNS-post bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -54,33 +54,33 @@ Innan du använder din domän med Office 365 vill vi vara säkra på att det är
     
     (Du kan behöva rulla nedåt.)
     
-3. ***domain_name*** Välj **Hantera DNS-poster**på raden DNS Zone Editor på raden **DNS Zone Editor.**
+3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
     
-4. I fältet Lägg till DNS-post i rutorna för den nya posten skriver eller kopierar och klistrar in värdena från följande tabell i området **Lägg till DNS-post.** 
+4. På sidan ** DNS Zone Editor ** i området **Lägg till DNS-post,** skriver eller kopierar eller klistrar du in värdena från följande tabell i rutorna för den nya posten. 
     
     (Välj värdet för **Type** i listrutan.) 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
-    |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress**-värde här, från tabellen i Office 365. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 5. Välj **lägg till post**.
     
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Office 365 och begära att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
   
 När Office 365 hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
     
-2. På sidan **Domäner** väljer du den domän som du verifierar. 
+2. På sidan **Domains** väljer du den domän du verifierar. 
     
-3. På **sidan Inställningar** väljer du **Starta installationsprogrammet**.
+3. På sidan **Setup** väljer du **Start setup**.
     
-4. Välj **Verifiera**på **sidan Verifiera domän.**
+4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
@@ -94,7 +94,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. ***domain_name*** Välj **Hantera DNS-poster**på raden DNS Zone Editor på raden **DNS Zone Editor.**
+3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -102,7 +102,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Host Record**|**TTL**|**Type**|**Points To**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>**Obs:** Hämta \<din domännyckel\> från ditt Office 365-konto. *domain-key* [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>**Obs!** Hämta din \<*domännyckel*\> från ditt Office 365-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
    ![Välj Typ i listrutan](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
@@ -116,7 +116,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![Välj Ta bort för varje ytterligare MX-post](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
-7. Välj **OK**i dialogrutan bekräftelse.
+7. Välj **OK**i bekräftelsedialogrutan .
     
     ![Välj OK](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
@@ -131,9 +131,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. ***domain_name*** Välj **Hantera DNS-poster**på raden DNS Zone Editor på raden **DNS Zone Editor.**
+3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
     
-4. Leta reda på raden för posten för **automatisk upptäckt** i avsnittet **A (host)** och välj sedan **ta bort** för den raden. 
+4. Leta reda på raden för posten för **automatisk upptäckt** i avsnittet **A (Värd)** och välj sedan **ta bort** för den raden. 
     
     > [!IMPORTANT]
     > Du måste ta bort den befintliga **autodiscover** -posten  *innan*  du kan lägga till den **autodiscover** -post som krävs av Office 365. Bluehost tillåter inte att du har två **autodiscover** -poster samtidigt. 
@@ -166,7 +166,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 8. Lägg till de andra fem CNAME-posterna var för sig.
     
-    Fortfarande i avsnittet **Lägg till DNS-post** skapar du en post med värdena från nästa rad i tabellen och väljer sedan återigen **lägga till post** för att slutföra posten. 
+    I avsnittet **Lägg till DNS-post** skapar du en post med hjälp av värdena från nästa rad i tabellen och väljer sedan **lägga till post** igen för att slutföra posten. 
     
     Upprepa proceduren tills du har skapat alla sex CNAME-posterna.
     
@@ -174,7 +174,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Kolla in dessa [externa domännamnssystemposter för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Om du vill validera din SPF-post kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Om du vill validera SPF-posten kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 1. Kom igång genom att gå till domänsidan på Bluehost genom att klicka på [den här länken](https://my.bluehost.com/cgi/dm). Du uppmanas att logga in först.
     
@@ -182,7 +182,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. ***domain_name*** Välj **Hantera DNS-poster**på raden DNS Zone Editor på raden **DNS Zone Editor.**
+3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -207,7 +207,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. ***domain_name*** Välj **Hantera DNS-poster**på raden DNS Zone Editor på raden **DNS Zone Editor.**
+3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
     
 4. Skapa den första av de två SRV-posterna.
     
@@ -215,7 +215,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    |**Service**|**Protocol**|**Host**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**Points To**|
+    |**Service**|**Protocol**|**Host**|**TTL**|**Type**|**Prioritet**|**Vikt**|**Port**|**Points To**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
@@ -228,7 +228,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 6. Lägg till den andra SRV-posten.
     
-    Fortfarande i avsnittet **Lägg till DNS-post** skapar du en post med hjälp av värdena från den andra raden i tabellen och väljer sedan återigen **lägga till post** för att slutföra posten. 
+    I avsnittet **Lägg till DNS-post** skapar du en post med hjälp av värdena från den andra raden i tabellen och väljer sedan **lägga till post** igen för att slutföra posten. 
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
