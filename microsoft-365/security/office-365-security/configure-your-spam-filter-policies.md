@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: I de grundläggande inställningarna för skräppostfilter kan du till exempel välja vilken åtgärd du ska vidta för meddelanden som identifieras som skräppost.
-ms.openlocfilehash: a497dc4cbce877c0aa6113e32223235ffebbfd41
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894212"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216929"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Konfigurera principer för skräppostskydd i Office 365
 
@@ -75,7 +75,7 @@ Om du vill öka effektiviteten för filtrering av skräppost kan du skapa anpass
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppostskydd måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör**. För skrivskyddad behörighet till principer för skräppostskydd måste du vara medlem i rollgruppen **Säkerhetsläsare**. Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
 
-- De rekommenderade inställningarna för principer för program mot skadlig kod finns i avsnittet om [EOP-principer för skräppostskydd](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- De rekommenderade inställningarna för skräppostprinciper finns i avsnittet om [EOP-principer för skräppostskydd](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd
 
@@ -280,7 +280,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
 3. Klicka på **Redigera princip**.
 
-För anpassade principer för skräppostskydd är de tillgängliga inställningarna i den utfällbara rutan som visas identiska med de som beskrivs i avsnittet [Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd](#use-the-security--compliance-center-to-create-anti-spam-policies).
+Inställningarna i den utfällbara rutan som visas är identiska med de i avsnittet [Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd](#use-the-security--compliance-center-to-create-anti-spam-policies).
 
 För standardprincipen för skräppostskydd med namnet **Standardprincip för skräppostfilter** är avsnittet **Tillämpas på** inte tillgängligt (principen tillämpas på alla), och du kan inte byta namn på principen.
 
@@ -460,7 +460,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 Om du vill visa befintliga regler för skräppostfilter använder du följande syntax:
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 Om du vill returnera en sammanfattningslista över alla regler för skräppostfilter kör du följande kommando:

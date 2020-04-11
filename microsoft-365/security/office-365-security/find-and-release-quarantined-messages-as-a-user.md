@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Som Office 365-användare kan du visa, släppa och ta bort dina meddelanden i karantän (meddelanden där du är mottagare och skräppostfiltreringen har satt meddelandet i karantän som skräppost eller massutskick). Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevnadscenter.
-ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941411"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216910"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Hitta och släppa meddelanden i karantän som användare i Office 365
 
@@ -66,7 +66,7 @@ Som användare kan du visa, släppa och ta bort dina meddelanden i karantän dä
 
    - **Meddelande-ID**
 
-   - **Principnamn**
+   - **Principnamn**: denna egenskap visar principen som gjorde att meddelandet placerades i karantän. Du kan ge en administratör den här informationen.
 
    - **Storlek**
 

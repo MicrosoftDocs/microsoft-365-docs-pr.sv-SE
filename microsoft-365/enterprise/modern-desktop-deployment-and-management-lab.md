@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: e0942f88605e1b11cdbc83155ebc43b5fdb1bea1
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081286"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225937"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
@@ -113,7 +113,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labben utgår 18 april 2020. En ny version kommer att publiceras före detta utgångsdatum.*
+*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labbet utgår 5 juli 2020. En ny version kommer att publiceras före detta utgångsdatum.*
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 
