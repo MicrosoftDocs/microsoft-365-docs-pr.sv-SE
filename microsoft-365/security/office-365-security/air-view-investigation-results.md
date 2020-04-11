@@ -15,20 +15,38 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Under och efter en automatisk undersökning i Office 365 kan du visa resultat och viktiga resultat.
-ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163916"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225981"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Information och resultat av en automatiserad undersökning i Office 365
 
 När en [automatiserad undersökning](office-365-air.md) inträffar i [Office 365 Advanced Threat Protection](office-365-atp.md)finns information om den undersökningen tillgänglig under och efter den automatiska granskningsprocessen. Om du har de behörigheter som krävs kan du visa dessa uppgifter i en undersökningsinformationsvy. Vyn Undersökningsinformation ger dig aktuell status och möjlighet att godkänna väntande åtgärder. 
 
+## <a name="investigation-status"></a>Utredningsstatus
+
+Undersökningsstatusen visar hur analysen och åtgärderna fortskrider. När undersökningen pågår ändras statusen för att ange om hot har hittats och om åtgärder har godkänts. 
+
+|Status  |Vad det innebär  |
+|---------|---------|
+|Startar | Utredningen har utlösts och väntar på att börja köras.  |
+|Kör | Utredningsprocessen har inletts och pågår. Det här tillståndet inträffar också när [väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) godkänns. |
+|Inga hot hittades | Undersökningen är klar och inga hot (användarkonto, e-postmeddelande, URL eller fil) har identifierats. <br/><br/>**TIPS:** Om du misstänker att något har missats (t.ex. en falsk negativ) kan du vidta åtgärder med [Hot Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Hot hittades |Den automatiska undersökningen hittade problem, men det finns inga specifika åtgärder för att lösa dessa problem.<br/><br/> Statusen Hittade hot kan uppstå när någon typ av användaraktivitet identifierades men inga rensningsåtgärder är tillgängliga. Exempel på detta är någon av följande användaraktiviteter: <br/>- En [händelse för att förhindra dataförlust](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>- Ett e-postmeddelande som skickar anomali <br/>- Skickade skadlig kod <br/>- Skickade phish<br/>Undersökningen hittade inga skadliga url:er, filer eller e-postmeddelanden att åtgärda och ingen postlådeaktivitet att åtgärda, till exempel att inaktivera regler för vidarebefordran eller delegering. <br/><br/>**TIPS:** Om du misstänker att något har missats (t.ex. en falsk negativ), kan du undersöka och vidta åtgärder med [Hot Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Avslutas av systemet | Utredningen avbröts. En utredning kan stoppas av flera skäl:<br/>- Utredningens pågående åtgärder har gått ut. Väntande åtgärder time out efter att ha väntat på godkännande för en vecka. <br/>- Det är för många handlingar. Om det till exempel finns för många användare som klickar på skadliga webbadresser kan det överskrida undersökningens förmåga att köra alla analysatorer, så undersökningen stoppas. <br/><br/>**TIPS:** Om en undersökning avbryts innan åtgärder vidtogs kan du prova att använda [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) för att hitta och åtgärda hot.  |
+|Väntande åtgärd | Undersökningen har hittat ett hot, till exempel ett skadligt e-postmeddelande, en skadlig URL eller en riskfylld postlådeinställning, och en åtgärd för att åtgärda det hotet väntar på [godkännande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Tillståndet Väntande åtgärd utlöses när ett hot med en motsvarande åtgärd hittas. Listan över väntande åtgärder kan dock öka när en undersökning körs. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) för att se om andra objekt fortfarande väntar på att slutföras. |
+|Åtgärdad | Undersökningen avslutades och alla åtgärder godkändes (fullständigt åtgärdade).<br/><br/>**OBS:** Godkända reparationsåtgärder kan ha fel som förhindrar att åtgärder vidtas. Oavsett om reparationsåtgärder har slutförts ändras inte undersökningsstatusen. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) för detaljerade resultat. |
+|Delvis åtgärdad | Undersökningen resulterade i saneringsåtgärder och vissa godkändes och slutfördes. Andra åtgärder pågår [fortfarande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Misslyckades | Minst en undersökning analysator stötte på ett problem där det inte kunde slutföras på rätt sätt. <br/><br/>**OBS:** Om en undersökning misslyckas efter att reparationsåtgärder har godkänts kan reparationsåtgärderna fortfarande ha lyckats. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) för detaljerade resultat. |
+|Köade genom begränsning | En utredning hålls i kö. När andra utredningar är klara inleds köutredningar. Begränsning hjälper till att undvika dålig serviceprestanda. <br/><br/>**TIPS:** Väntande åtgärder kan begränsa hur många nya undersökningar som kan köras. Se till att [godkänna (eller avvisa) väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Avslutad med begränsning | Om en utredning hålls i kön för länge, stoppas den. <br/><br/>**TIPS:** Du kan [starta en undersökning från Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
+
 ## <a name="view-details-of-an-investigation"></a>Visa detaljer om en undersökning
 
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in. Detta tar dig till Security & Compliance Center.
+1. Gå till Office 365 Security & Compliance[https://protection.office.com](https://protection.office.com)Center ( ) och logga in.
 
 2. Välj ett av följande alternativ:
 
@@ -50,7 +68,7 @@ När en [automatiserad undersökning](office-365-air.md) inträffar i [Office 36
 
 Vissa typer av aviseringar utlöser automatisk undersökning i Office 365. Mer information finns i [Aviseringar](automated-investigation-response-office.md#alerts). Använd följande procedur för att visa information om en avisering som är associerad med en automatisk undersökning.
 
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in. Detta tar dig till Security & Compliance Center.
+1. Gå till Office 365 Security & Compliance[https://protection.office.com](https://protection.office.com)Center ( ) och logga in. 
 
 2. Gå till **Hot management** > **Undersökningar**.
 
@@ -83,20 +101,6 @@ Du kan:
 - Använd filter. Välj mellan **undersökningstyp,** **Tidsintervall**, **Status**eller en kombination av dessa.
 - Exportera data till en CSV-fil.
 
-Undersökningsstatusen visar hur analysen och åtgärderna fortskrider. När undersökningen pågår ändras statusen för att ange om hot har hittats och om åtgärder har godkänts. 
-
-|Status  |Vad det innebär  |
-|---------|---------|
-|Startar | Utredningen har utlösts och väntar på att börja köras. Detta är det första steget. |
-|Kör | Utredningsprocessen har inletts och pågår. Det här tillståndet inträffar också när [väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) godkänns. |
-|Inga hot hittades | Undersökningen är klar och inga hot (användarkonto, e-postmeddelande, URL eller fil) har identifierats. <br/><br/>**TIPS:** Om du misstänker att något har missats (t.ex. en falsk negativ) kan du vidta åtgärder med [Hot Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
-|Avslutas av systemet | Utredningen avbröts. Detta kan hända av flera skäl. Här är de två vanligaste orsakerna:<br/>- Utredningens pågående åtgärder har gått ut. Väntande åtgärder time out efter att ha väntat på godkännande för en vecka. <br/>- Det är för många handlingar. Om det till exempel finns för många användare som klickar på skadliga webbadresser kan det överskrida undersökningens förmåga att köra alla analysatorer, så undersökningen stoppas. <br/><br/>**TIPS:** Om en undersökning avbryts innan åtgärder vidtogs kan du prova att använda [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) för att hitta och åtgärda hot.  |
-|Väntande åtgärd | Undersökningen har hittat ett hot, till exempel ett skadligt e-postmeddelande, en skadlig URL eller en riskfylld postlådeinställning, och en åtgärd för att åtgärda det hotet väntar på [godkännande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Tillståndet Väntande åtgärd utlöses när ett hot med en motsvarande åtgärd hittas. Observera dock att undersökningen kanske inte är helt fullständig ännu.  Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) för att se om andra objekt fortfarande väntar på att slutföras. |
-|Åtgärdad | Undersökningen avslutades och alla åtgärder godkändes (fullständigt åtgärdade).<br/><br/>**OBS:** Godkända reparationsåtgärder kan ha fel som förhindrar att åtgärder vidtas. Detta ändrar inte undersökningsstatus. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) för detaljerade resultat. |
-|Delvis åtgärdad | Undersökningen resulterade i saneringsåtgärder och vissa godkändes och slutfördes. Andra åtgärder pågår [fortfarande](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Misslyckades | Minst en undersökning analysator stötte på ett problem där det inte kunde slutföras på rätt sätt. <br/><br/>**OBS:** Om en undersökning misslyckas efter att reparationsåtgärder har godkänts kan reparationsåtgärderna fortfarande ha lyckats. Kontrollera [undersökningsloggen](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) för detaljerade resultat. |
-|Köade genom begränsning | En utredning hålls i kö. När andra utredningar är klara inleds köutredningar. Detta hjälper till att undvika dålig serviceprestanda. <br/><br/>**TIPS:** Väntande åtgärder kan begränsa hur många nya undersökningar som kan köras. Se till att [godkänna (eller avvisa) väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
-|Avslutad med begränsning | Om en utredning hålls i kön för länge stoppas den. <br/><br/>**TIPS:** Du kan [starta en undersökning från Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Undersökning diagram
 
@@ -112,7 +116,7 @@ Du kan:
 
 ### <a name="alert-investigation"></a>Utredning av varning
 
-På fliken **Aviseringar** för en undersökning kan du se aviseringar som är relevanta för undersökningen. Information inkluderar den varning som utlöste undersökningen och andra korrelerade aviseringar, till exempel riskfylld inloggning, DLP-policyöverträdelser osv. Från den här sidan kan en säkerhetsanalytiker också visa ytterligare information om enskilda aviseringar.
+På fliken **Aviseringar** för en undersökning kan du se aviseringar som är relevanta för undersökningen. Information inkluderar den varning som utlöste undersökningen och andra korrelerade aviseringar, till exempel riskfylld inloggning, [DLP-policyöverträdelser](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) osv. Från den här sidan kan en säkerhetsanalytiker också visa ytterligare information om enskilda aviseringar.
 
 ![SIDAN AIR-varningar](../../media/air-investigationalertspage.png)
 
@@ -135,7 +139,7 @@ Två olika typer av e-postkluster kan identifieras under e-postanalyssteget: lik
 - Likhetskluster är e-postmeddelanden som identifieras genom att jaga e-postmeddelanden med liknande avsändare och innehållsattribut. Dessa kluster utvärderas för skadligt innehåll baserat på de ursprungliga identifieringsresultaten. E-postkluster som innehåller tillräckligt många identifieringar av skadlig e-post anses vara skadliga.
 - Indikatorkluster är e-postmeddelanden som identifieras genom att jaga samma indikatorentitet (filhage eller URL) från det ursprungliga e-postmeddelandet. När den ursprungliga filen/URL-entiteten identifieras som skadlig tillämpar AIR indikatorutlåtandet på hela klustret med e-postmeddelanden som innehåller den entiteten. En fil som identifieras som skadlig kod innebär att klustret av e-postmeddelanden som innehåller filen behandlas som e-postmeddelanden om skadlig kod.
 
-Målet med klustring är att jaga och hitta andra relaterade e-postmeddelanden som skickas av samma avsändare som en del av en attack eller en kampanj.  I vissa fall kan legitim e-post utlösa en undersökning (t.ex. en användare rapporterar ett marknadsföringsmeddelande).  I dessa scenarier bör e-kluster identifiera att e-kluster inte är skadliga - när det på rätt sätt gör det, kommer det **inte** att indikera ett hot och inte heller kommer det att rekommendera borttagning av e-post.
+Målet med klustring är att jaga och hitta andra relaterade e-postmeddelanden som skickas av samma avsändare som en del av en attack eller en kampanj.  I vissa fall kan legitim e-post utlösa en undersökning (till exempel rapporterar en användare ett marknadsföringsmeddelande).  I dessa scenarier bör e-kluster identifiera att e-kluster inte är skadliga - när det på rätt sätt gör det, kommer det **inte** att indikera ett hot och inte heller kommer det att rekommendera borttagning av e-post.
 
 **Fliken E-post** visar också e-postobjekt relaterade till undersökningen, till exempel användarrapporterade e-postuppgifter, det ursprungliga e-postmeddelandet rapporterade, e-postmeddelandena zappade på grund av skadlig kod / phish, etc.
 

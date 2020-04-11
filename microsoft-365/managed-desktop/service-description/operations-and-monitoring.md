@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1cd620206f559e6870c6706fc0e40f4b7e45bc84
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42811818"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225903"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft Managed Desktop-drift och övervakning
 
@@ -67,7 +67,7 @@ Alla ändringar har inte samma inverkan på användarna eller kräver åtgärder
 **Typ av ändring** | - Funktionsuppdateringar<br>- Nya funktioner eller applikationer<br>- Föråldrade funktioner | Snabbkorrigeringar för klienter för problem | Säkerhetskorrigeringar
 **Varsel** | 5 dagars varsel för ändringar som kräver åtgärder |    Nej, dessa ingår i månadsversionen   | Nej, dessa ingår i månadsversionen 
 **Kommunikationskanal** | - Meddelandecenter<br>- E-postvarning | - Meddelandecenter<br>- E-postvarning | - Meddelandecenter<br>- E-postvarning
-**Kräver klientadministratörsåtgärd** | Ibland |  Sällan |    Sällan 
+**Kräver global administratörsåtgärd** | Ibland |  Sällan |    Sällan 
 **Typ av åtgärd** | Ändra inställningar | Kommunicera ändringar till användare | Ändra administratörsinställningar     
 **Kräver testning** | Kontrollera affärsprogram, inklusive fjärråtkomsttjänster |  Ibland - testa korrigeringen mot processer eller anpassningar |   Sällan 
 **Exempel på förändring** | - Funktionsuppdateringar: IT Admin Portal förenklad support biljett inlämning och översyn<br>- Nya funktioner eller program: Halvårsvis lansering av en Windows 10-funktionsuppdatering | Snabbkorrigeringar baserat på kundrapporterade fel |  
@@ -85,7 +85,7 @@ Nätverk (proxy, paketinspektion, VPN)  | Ge råd och planera med kunder för at
 Tjänstkonton |- Implementera, säkert lagra och hantera autentiseringsuppgifterna.<br> - Meddela obehörig åtkomst eller användning av dessa autentiseringsuppgifter till ditt säkerhetsoperationsteam. | - Skapa en supportbegäran som begär information för en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har utvärderat och rekommenderat.<br>- Inte tilldela princip, multifaktorautentisering, villkorlig åtkomst eller programdistribution till Microsoft Managed Desktop Service-konton.<br>- Inte återställa lösenordet eller använda autentiseringsuppgifterna.<br>- Öppna en Sev C-supportbegäran till Microsoft Managed Desktop Operations om misstänkt aktivitet observeras i Intune- eller Azure-granskningsloggar, relaterade till dessa tjänstkonton.
 Enhetsgrupper | - Implementera och hantera medlemskap i enheter i Microsoft Managed Desktop-grupper.<br>- Använd Microsoft Managed Desktop-grupperna för att hantera tilldelning och utgivning av konfiguration och uppdateringar till enheter. | - Skapa en supportbegäran som begär information för en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har utvärderat och rekommenderat.<br>- Inte ändra medlemskap i någon Microsoft Managed Desktop grupp.<br>- Använd endast grupperna för att tilldela företagscertifikat för tjänster som VPN, Windows Hello for Business eller e-postkryptering eller konfiguration av företagswi-fi-profil.<br>- Där samhantering finns utesluter du uttryckligen alla Microsoft Managed Desktop-grupper när Configuration Manager-klienten distribueras.
 Politik |  - Implementera och hantera Microsoft Managed Desktop-principer som styr konfigurationstillståndet för enheter inom tjänsten.<br>- Distribuera uppdateringar, till princip eller Windows, stegvis med hjälp av enhetsgrupper.<br> - Uttryckligen utesluta inriktning icke-Microsoft Managed Desktop grupper. | - Skapa en supportbegäran som begär information för en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har utvärderat och rekommenderat.<br>- Inte redigera eller tilldela Microsoft Managed Desktop-principer till enheter eller användare som inte hanteras av Tjänsten Microsoft Managed Desktop.
-Avancerat hotskydd för Microsoft Defender   | Övervaka och undersöka enheter inom ramen för Microsoft Managed Desktop-tjänsten. | - Skapa en supportbegäran som begär information för en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har bedömt och rekommenderat
+Microsoft Defender Avancerat skydd   | Övervaka och undersöka enheter inom ramen för Microsoft Managed Desktop-tjänsten. | - Skapa en supportbegäran som begär information för en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har bedömt och rekommenderat
 Microsoft Store för företag |  Konfigurera och underhåll Windows Autopilot-profilen för Tjänsten Microsoft Managed Desktop. | - Skapa en supportbegäran som begär information för en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har utvärderat och rekommenderat.<br>- Inte ändra konfigurationen av Microsoft Managed Desktop Windows Autopilot-profilen eller lägga till/ta bort tilldelade enheter.
 Certifikat | | - Skapa en supportbegäran 60 dagar innan ett certifikat löper ut och begär information om en planerad konfigurationsändring, inklusive konfigurationsinformation, omfattning, tidslinje och annan relevant information för Microsoft att granska.<br>- Tillämpa endast en ändring när Microsoft Managed Desktop Operations har utvärderat och rekommenderat.<br>- Uppdatera alla certifikat som krävs för att konfigurera certifikatprofiler, VPN-profiler och Wi-Fi-profiler.
 
@@ -98,22 +98,22 @@ Microsoft Managed Desktop Operations Team kan utföra en fabriksåterställning 
 
 Det finns några krav:
 
-- Kundens klientadministratör måste skicka en servicebegäran
-- Vi behöver enhetens datornamn
-- Användarkontot måste finnas i Azure AD innan vi gör återställningen
+- Den globala administratören måste skicka en tjänstbegäran.
+- Inkludera enhetens datornamn i begäran.
+- Användarkontot måste finnas i Azure AD innan vi återställer enheten.
 
-Managed Desktop Operations Team kommer att:
+Managed Desktop Operations-teamet gör följande:
 
 - Slå upp enhetsnamnet i Intune
 - Skicka kommandot fabriksåterställning till enheten
 
 >[!NOTE]
->Ta inte bort användarkontot från Azure AD innan fabriksåterställningen. Om användaren inte finns i Azure AD kan Intune inte skicka kommandot fabriksåterställning till enheten. 
+>Ta inte bort användarkontot från Azure AD innan enheten återställs. Om användaren inte finns i Azure AD kan Intune inte skicka kommandot fabriksåterställning till enheten. 
 
-Enheten startar i OOBE och alla förinstallerade program och inställningar kommer att tillämpas igen. Enhetens användare måste ange inledande inmatningsinformation igen. 
+Enheten startar i "out of box-upplevelsen" och alla förinstallerade program och inställningar kommer att tillämpas igen. Användaren av enheten måste ange inledande installationsinformation igen. 
 
 När enheten har återställts kan du ge den till en annan person i organisationen. Ingen av den tidigare användarens data eller företagsdata kommer att finnas på enheten. Nästa användare kommer att gå igenom samma process som den tidigare personen gjorde med en ny Microsoft Managed Desktop-enhet.
 
-BitLocker är en viktig komponent för datasäkerhet i den här processen. Med BitLocker-kryptering på Microsoft Managed Desktop-enheter förblir data på enheten säkra även efter att fabriksåterställning har tillämpats på enheten. Data som fanns på enheten kommer inte att vara tillgängliga för nästa användare av enheten. Mer information finns i [BitLocker översikt](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker är en viktig komponent för datasäkerhet i den här processen. Med BitLocker-kryptering på Microsoft Managed Desktop-enheter förblir data på enheten säkra även efter att enheten har fabriksåterställts. Data som fanns på enheten kommer inte att vara tillgängliga för nästa användare av enheten. Mer information finns i [BitLocker översikt](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 Mer information finns i [Fabriksåterställning av en enhet](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 
