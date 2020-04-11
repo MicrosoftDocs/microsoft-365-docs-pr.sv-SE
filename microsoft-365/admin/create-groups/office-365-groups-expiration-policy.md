@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om principer för förfallodatum för Office 365-grupper.
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212063"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225925"
 ---
 # <a name="office-365-group-expiration-policy"></a>Princip för förfallodatum för Office 365-grupp
 
@@ -38,7 +38,7 @@ Administratörer kan ange en förfalloperiod och alla inaktiva grupper som når 
 Grupper som används aktivt förnyas automatiskt. Någon av följande åtgärder förnyar automatiskt en grupp:
 - SharePoint - visa, redigera, ladda ned, flytta, dela eller ladda upp filer.
 - Outlook – gå med i grupp-, läs- eller skrivgruppsmeddelande från gruppen och som ett meddelande (Outlook på webben).
-- Lag - besöker ett lag channe'.
+- Lag - besöker en lagkanal.
 
 > [!IMPORTANT]
 > När du ändrar förfalloprincipen beräknas tjänsten om förfallodatumet för varje grupp. Den börjar alltid räkna från det datum då gruppen skapades och tillämpar sedan den nya förfalloprincipen.
