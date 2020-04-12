@@ -16,12 +16,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: I det här avsnittet beskrivs skillnaden mellan skräppost (skräppost) och massutskick av e-post och relaterade kontroller i Office 365.
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033632"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230962"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Vad är skillnaden mellan skräppost och massutskick av e-post?
 
@@ -41,7 +41,7 @@ Office 365-kunder med postlådor i Exchange Online eller fristående Exchange On
 
 På grund av den blandade reaktionen på massutskick av e-post finns det inte universell vägledning som gäller för varje organisation.
 
-Anti-spam-polisen har en standard BCL tröskel som används för att identifiera mass-e-post som skräppost. Administratörer kan öka eller sänka tröskelvärdet. Mer information finns i följande avsnitt:
+Anti-spam-policyer har en standard-BCL-tröskel som används för att identifiera massutskick av e-post som skräppost. Administratörer kan öka eller sänka tröskelvärdet. Mer information finns i följande avsnitt:
 
 - [Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 

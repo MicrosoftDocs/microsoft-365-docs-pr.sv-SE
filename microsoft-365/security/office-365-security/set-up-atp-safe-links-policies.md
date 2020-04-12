@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint- och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193488"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230986"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera Office 365 ATP-principer för säkra länkar
 
@@ -116,7 +116,7 @@ När du har granskat (eller redigerat) standardprincipen för betrodda länkar t
 6. Välj **Save**.
 
 > [!NOTE]
-> ATP Safe Links-principer med högre prioritet har företräde. Om en användare är föremål för två eller flera politikområden kommer endast principen med högre prioritet att träda i kraft.
+> ATP Safe Links-principer med högre prioritet har företräde. Om en användare omfattas av två eller flera principer börjar endast principen med högre prioritet gälla.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Steg 4: Lär dig mer om atp safe links-principalternativ
 
