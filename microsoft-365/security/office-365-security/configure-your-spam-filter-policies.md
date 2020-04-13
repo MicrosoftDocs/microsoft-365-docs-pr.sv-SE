@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: I de grundläggande inställningarna för skräppostfilter kan du till exempel välja vilken åtgärd du ska vidta för meddelanden som identifieras som skräppost.
-ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Administratörer kan läsa om hur de kan skapa, ändra och ta bort principer för skräppostskydd i Exchange Online Protection (EOP).
+ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216929"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43231022"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Konfigurera principer för skräppostskydd i Office 365
 
@@ -495,7 +495,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Använda PowerShell för att ändra principer för skräppostfilter
 
-Förutom följande objekt är samma inställningar tillgängliga när du ändrar en princip för filter mot skadlig kod i PowerShell som när du skapar principen enligt beskrivningen i avsnittet [Steg 1: Använd PowerShell för att skapa en princip för skräppostfilter](#step-1-use-powershell-to-create-a-spam-filter-policy) tidigare i den här artikeln.
+Förutom följande objekt är samma inställningar tillgängliga när du ändrar en princip för skräppostfilter i PowerShell som när du skapar principen enligt beskrivningen i avsnittet [Steg 1: Använd PowerShell för att skapa en princip för skräppostfilter](#step-1-use-powershell-to-create-a-spam-filter-policy) tidigare i den här artikeln.
 
 - Switchparametern _MakeDefault_ som omvandlar den angivna principen till standardprincipen (tillämpas på alla, alltid prioriteten **Lägsta** och du kan inte ta bort den) är endast tillgänglig när du ändrar en princip för skräppostfilter i PowerShell.
 
