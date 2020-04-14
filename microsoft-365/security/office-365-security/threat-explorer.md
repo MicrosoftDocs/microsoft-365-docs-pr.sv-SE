@@ -16,16 +16,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om explorer och &amp; realtidsidentifieringar i Security Compliance Center.
-ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198389"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284260"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
 
-Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) och du har de [behörigheter som krävs](#required-licenses-and-permissions)har du antingen **Explorer** eller **realtidsidentifieringar** (tidigare *realtidsrapporter* – [se vad som är nytt](#new-features-in-threat-explorer-and-real-time-detections)!). Gå till **Hothantering**i Säkerhets- & Compliance Center och välj sedan **Explorer** eller **realtidsidentifieringar**.
+Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) och du har de [behörigheter som krävs](#required-licenses-and-permissions)har du antingen **Explorer** eller **realtidsidentifieringar** (tidigare *realtidsrapporter* – [se vad som är nytt](#new-features-in-threat-explorer-and-real-time-detections)!). Gå till **Hothantering**i Säkerhets- & Compliance Center och välj sedan **Explorer-** _eller_ **Realtidsidentifieringar**.
 
 |||
 |---|---|
@@ -157,7 +157,7 @@ Om du vill granska phish-url:er i meddelanden och klick på webbadresser i phish
 
     Rapporten uppdateras så att två olika URL-tabeller visas på fliken URL under rapporten:
 
-   - **De vanligaste webbadresserna** är webbadresserna i de meddelanden som du har filtrerat ned till, och åtgärden för e-postleverans räknas för varje webbadress. I phish-e-postvyn innehåller den här listan vanligtvis legitima webbadresser. Angripare inkluderar en blandning av bra och dåliga webbadresser i sina meddelanden för att försöka få dem levererade, men de kommer att göra de skadliga länkarna mer intressanta för användaren att klicka. Tabellen med webbadresser sorteras efter totalt antal e-postmeddelanden (OBS: Den här kolumnen visas inte för att förenkla vyn).
+   - **De vanligaste webbadresserna** är webbadresserna i de meddelanden som du har filtrerat ned till, och åtgärden för e-postleverans räknas för varje webbadress. I phish-e-postvyn innehåller den här listan vanligtvis legitima webbadresser. Angripare inkluderar en blandning av bra och dåliga webbadresser i sina meddelanden för att försöka få dem levererade, men de kommer att göra de skadliga länkarna mer intressanta för användaren att klicka. Tabellen med webbadresser sorteras efter totalt antal e-postmeddelanden (men observera att den här kolumnen är dold för att förenkla vyn).
 
    - **De vanligaste klicken** är de infogade url:erna för säkra länkar som klickades, sorterade efter totalt antal klick (den här kolumnen visas inte heller för att förenkla vyn). Totalt antal per kolumn anger antalet säkra länkar klicka på domslut för varje klickad webbadress. I phish e-postvyn är dessa oftare misstänkta eller skadliga webbadresser, men kan innehålla webbadresser som inte är hot men som finns i phish-meddelanden. URL-klick på oförpackade länkar visas inte här.
 
@@ -165,7 +165,10 @@ Om du vill granska phish-url:er i meddelanden och klick på webbadresser i phish
 
    ![Explorer-url:er som har blockerats](../../media/ExplorerPhishClickVerdictURLs.png)
 
-   Välj en URL om du vill visa mer detaljerad information. **I**dialogrutan Utfällbara webbadresser tas filtreringen på e-postmeddelanden bort för att visa dig en fullständig vy över webbadressens exponering i din miljö. På så sätt kan du filtrera bort e-postmeddelanden i Explorer till de som du är orolig för, hitta specifika webbadresser som är potentiella hot och sedan utöka din förståelse av URL-exponeringen i din miljö (via dialogrutan URL-information) utan att behöva lägga till URL-filter i själva Utforskarvyn.
+   Välj en URL om du vill visa mer detaljerad information.
+   
+   > [!NOTE]
+   > I dialogrutan Utfällbara webbadresser tas filtrningen på e-postmeddelanden bort för att visa dig en fullständig vy över webbadressens exponering i din miljö. På så sätt kan du filtrera bort e-postmeddelanden i Explorer till de som du är orolig för, hitta specifika webbadresser som är potentiella hot och sedan utöka din förståelse av URL-exponeringen i din miljö (via dialogrutan URL-information) utan att behöva lägga till URL-filter i själva Utforskarvyn.
 
 ## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporterats av användare
 
@@ -175,7 +178,7 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md)som 
 
 2. Välj **Skicka e-post** > **på** **Visa-menyn** . (Detta kallades tidigare **Användarrapporterat**.)
 
-   ![Visa-menyn för Explorer](../../media/ExplorerViewMenuEmailUserReported.png)
+   ![Visa-menyn för Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Klicka på **Avsändare**och välj sedan **Grundläggande** > **rapporttyp**.
 
@@ -237,4 +240,4 @@ Mer information om roller och behörigheter finns i följande resurser:
 - En **e-postvy** är tillgänglig i **Threat Explorer** (och finns inte i rapporten identifiering i **realtid).**
 - Fler filtreringsfunktioner och tillgängliga åtgärder ingår i **Threat Explorer**.
 
-Mer information finns i [Office 365 ATP Service Description: Funktionstillgänglighet i atp-abonnemang (Advanced Threat Protection)](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+Mer information finns i [Office 365 ATP Service Description: Funktionstillgänglighet i atp-abonnemang (Advanced Threat Protection).](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
