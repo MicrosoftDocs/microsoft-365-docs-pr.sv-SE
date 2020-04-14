@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: Priority
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: I den här artikeln finns information om hur du hanterar inställningar för dina användare.
-ms.openlocfilehash: 7f79f90c9fe94596a5901d8ce9e6b31ba0af881e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f746ce5119dbd26ff05e3a3008e91cc1e3141e95
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42810687"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240197"
 ---
 # <a name="office-365-user-email-settings"></a>E-postinställningar för Office 365-användare
 
@@ -33,8 +33,12 @@ I den här tabellen beskrivs olika e-postinställningar som du kan ändra för e
 |E-postinställning|Beskrivning  |
 |---------|---------|
 |Postlådebehörigheter| I **Läs och hantera** kan du ange om man ska kunna läsa och hantera andra personers postlådor. Du kan också ange behörigheter för **Skicka som** och **Skicka för** åt en person. Läs [Ge postlådebehörigheter till en annan användare i Office 365 – Administratörshjälp](../add-users/give-mailbox-permissions-to-another-user.md) för mer information. |
-|E-postappar| I E-postappar kan du välja vilka appar som användaren ska kunna använda för att komma åt sin e-post i Office 365. |
+|E-postappar<sup>1</sup>| I E-postappar kan du välja vilka appar som användaren ska kunna använda för att komma åt sin e-post i Office 365. |
 |Visa i global adresslista| I Visa i global adresslista kan du aktivera eller inaktivera synligheten för användarens postlåda i organisationens adresslista. |
 |Vidarebefordran av e-post|I Vidarebefordran av e-post kan du lägga till en e-postadress för vidarebefordran till en användare. Detta kan vara bra om personen har flera e-postadresser och vill ta emot e-post till alla sina e-postadresser. Mer information finns i [Konfigurera vidarebefordran av e-post i Office 365](configure-email-forwarding.md). |
 |Automatiska svar|I Automatiska svar kan du ställa in ett automatiskt svar när någon skickar ett e-postmeddelande till personens e-postadress. Detta kan vara bra om en anställd lämnar företaget och du vill låta e-postavsändaren veta detta.|
 |Fler åtgärder| I **Konvertera till delad postlåda** kan du konvertera användarens postlåda till en delad postlåda. Detta kan du göra om personen lämnar organisationen och du vill låta postlådan vara igång ett tag. Läs mer i [Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) och [Öppna och använda en delad postlåda](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>I **Redigera egenskaper för Exchange** kan du hantera fler Exchange Online-uppgifter med administrationscentret för Exchange. Läs om att [hantera användarpostlådor i Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+
+> [!NOTE]
+>
+> <sup>1</sup> Du kan bara hantera e-postappar för postlådor som är helt värdbaserade i Office 365. Du kan inte använda den här funktionen för att hantera e-postappar för postlådor som finns lokalt.
