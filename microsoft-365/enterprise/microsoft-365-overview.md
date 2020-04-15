@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Innehåller en introduktion till komponenter, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175196"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504097"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -84,15 +84,14 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Undvik att supporten för Windows 7 och Office 2010 ska sluta
 
-Följande produkter upphörde med supporten **den 14 januari 2020:**
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade) nådde slutet av **supporten den 14 januari 2020**.
 
 Följande produkter kommer att nå slutet av supporten **den 13 oktober 2020:**
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) kommer att nå slutet av supporten **den 13 april 2021**.
 
 En visuell sammanfattning av alternativen att uppgradera, migrera och flytta till molnet för dessa produkter finns på [affischen supportens upphörande](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
@@ -150,6 +149,6 @@ Mer distributionsinformation finns i så här:
 
 Om du gör distributionen själv startar du [microsoft 365 för företagsdistributionsresa](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 [Microsoft 365 för företagets produktsida](https://www.microsoft.com/microsoft-365/enterprise)

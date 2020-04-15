@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du använder säkerhetsstandarder för att konfigurera multifaktorautentisering för Office 365-användare.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 7e48f72f2fd8cfc5042bd15f994cc98bfa5fca8c
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204028"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503977"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -37,6 +37,7 @@ ms.locfileid: "43204028"
 Alla nya Office 365 för företag- och Microsoft 365 Business-prenumerationer har automatiskt säkerhetsstandarder aktiverade. Det innebär att alla användare måste konfigurera MFA och installera Microsoft Authenticator-appen på sin mobila enhet. Mer information finns i [Konfigurera tvåstegsverifiering för Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 Följande nio administratörsroller måste utföra ytterligare autentisering varje gång de loggar in:
+
 - Global administratör
 - SharePoint-administratör
 - Exchange-administratör
@@ -47,7 +48,7 @@ Följande nio administratörsroller måste utföra ytterligare autentisering var
 - Användaradministratör
 - Administratör av autentisering
 
-Alla andra användare kommer att ombes utföra ytterligare autentisering när det behövs. Mer information finns i [Vad är säkerhetsstandarder?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Alla andra användare kommer att ombes utföra ytterligare autentisering när det behövs. Mer information finns i [Vad är standardinställningar för säkerhet?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 > [!NOTE]
 > Du måste vara en global Office 365-administratör för att kunna konfigurera eller ändra MFA. <br><br>
@@ -61,8 +62,7 @@ Om du tidigare har konfigurerat MFA med riktlinjer [måste du inaktivera och akt
 ## <a name="manage-security-defaults"></a>Hantera säkerhetsstandarder
 
 1. Logga in på [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=834822) som global administratör.
-2. Gå till [Azure Active Directory egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-
+2. Gå till [egenskaper för Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 3. Längst ner på sidan väljer du **Hantera säkerhetsstandarder**.
 4. Välj **Ja** om du vill aktivera standardinställningar för säkerhet eller **Nej** om du vill inaktivera standardvärden för säkerhet och välj sedan **Spara**.
 
@@ -74,9 +74,9 @@ Om du tidigare har konfigurerat MFA med riktlinjer [måste du inaktivera och akt
 
 3. Om **säkerheten | Komma** igång-sidan, välj **Villkorlig åtkomst**. 
 
-4. På sidan **Villkorad åtkomst till Azure portal – riktlinjer** väljer du varje baslinje-policy som är **På** och ställ dem på **Av**.
+4. På sidan **Villkorlig åtkomst - Principer** väljer du varje originalprincip som är **På**och ställer in dem på **Av**.
 5. Gå till sidan [Azure Active Directory egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-6. Gå till slutet av sidan och välj **Hantera säkerhetsstandarder**och i fönstret **Aktivera säkerhetsstandarder** och ställer**Aktiverar säkerhetsstandarder** till **Ja**. 
+6. Längst ned på sidan väljer du **Hantera standardvärden för säkerhet**och i fönstret Aktivera säkerhet som **standard** anger du Växla till **Ja**för **säkerhet** och väljer sedan **Spara**. 
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Aktivera modern autentisering för din organisation
 
@@ -84,12 +84,13 @@ Alla Office 2016-klientprogrammen har stöd för MFA genom användning av ADAL (
 
 1. Om du vill aktivera modern autentisering väljer du **Inställningar** \> **Inställningar** i [administrationscentrat](https://go.microsoft.com/fwlink/p/?linkid=834822) och **Modern autentisering** i listan på fliken **Tjänster**.
 
-2. Markera rutan **Aktivera modern autentisering** i panelen **Modern autentisering**. 
+2. Markera rutan **Aktivera modern autentisering (rekommenderas)** på panelen **Modern autentisering** och välj sedan **Spara ändringar**. 
 
     ![Panelen Modern autentisering med kryssrutan Aktivera markerad.](../../media/enablemodernauth.png)
     
 > [!IMPORTANT]
 > Från och med augusti 2017 är modern autentisering aktiverat som standard för alla nya Office 365-klientorganisationer som inkluderar Skype för företag – Online och Exchange Online. Om du vill kontrollera status för modern autentisering i Skype för företag – Online kan du använda Skype för företag – Online PowerShell med globala administratörsuppgifter. Kör Get-CsOAuthConfiguration när du vill kontrollera utdata för -ClientADALAuthOverride. Om -ClientADALAuthOverride är Allowed är modern autentisering aktiverat.
+
 Om du vill kontrollera MA-status för Exchange Online går du till [Aktivera modern autentisering i Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 ## <a name="related-articles"></a>Relaterade artiklar
