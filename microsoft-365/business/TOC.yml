@@ -1,0 +1,107 @@
+- name: Microsoft 365 Business
+  items:
+    - name: Microsoft 365
+      href: index.yml
+    - name: Vad är Microsoft 365 Business?
+      href: microsoft-365-business-overview.md
+    - name: Skaffa Microsoft 365 Business
+      href: sign-up.md
+    - name: Förutsättningar för dataskydd
+      href: pre-requisites-for-data-protection.md
+    - name: Konfiguration
+      items:
+        - name: Översikt över konfiguration
+          href: set-up-overview.md
+        - name: Konfigurera Microsoft 365 Business
+          href: set-up.md
+        - name: Skydda Windows 10-datorer
+          href: secure-win-10-pcs.md
+        - name: Uppgradera till Windows Pro Creators Update
+          href: upgrade-to-windows-pro-creators-update.md
+        - name: Förbereda Office-distribution
+          href: prepare-for-office-client-deployment.md
+        - name: Hjälpa användare att installera Office
+          href: help-users-install-office.md
+        - name: Åtkomst till lokala resurser
+          items:
+            - name: Aktivera domänanslutna Windows 10-enheter för hantering
+              href: manage-windows-devices.md
+            - name: Åtkomst till resurser från en Azure AD-ansluten enhet
+              href: access-resources.md
+    - name: Konfigurera enheter för användare
+      items:
+        - name: Konfigurera mobila enheter
+          href: set-up-mobile-devices.md
+        - name: Konfigurera Windows-enheter
+          href: set-up-windows-devices.md
+    - name: Skydda ditt företag
+      href: security-features.md
+      items:
+        - name: Konfigurera MFA
+          href: /Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
+        - name: Öka hotskyddet
+          href: increase-threat-protection.md
+        - name: Konfigurera funktioner för efterlevnad
+          href: set-up-compliance.md
+    - name: Hantera användare
+      items:
+        - name: Lägga till användare
+          href: add-users-m365b.md
+        - name: Ta bort en medarbetare
+          href: /Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
+    - name: Hantera enheter
+      items:
+        - name: Visa och redigera principer och enheter
+          href: view-policies-and-devices.md
+        - name: Ta bort företagsdata
+          href: remove-company-data.md
+        - name: Återställa enheter till fabriksinställningar
+          href: reset-devices-to-factory-settings.md
+        - name: Mappa skyddsfunktioner till Intune-inställningar
+          href: map-protection-features-to-intune-settings.md
+        - name: Inställningar för appskydd för Android och iOS
+          href: app-protection-settings-for-android-and-ios.md
+          items:
+            - name: Validera inställningar på Android eller iOS
+              href: validate-settings-on-android-or-ios.md
+        - name: Inställningar för enhetsskydd för Windows 10-datorer
+          href: protection-settings-for-windows-10-pcs.md
+          items:
+            - name: Validera inställningar på Windows 10-datorer
+              href: validate-settings-on-windows-10-pcs.md
+        - name: Programskyddsinställningar för Windows 10-enheter
+          href: protection-settings-for-windows-10-devices.md
+    - name: Migrera till Microsoft 365 Business
+      items:
+        - name: Migrera från Office 365 Business Premium
+          href: migrate-to-microsoft-365-business.md
+        - name: Migrera från Office 365 E3
+          href: migrate-from-e3.md
+        - name: Migrera till Microsoft 365 Enterprise
+          href: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
+    - name: Fakturering
+      items:
+        - name: Din faktura
+          href: /Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
+        - name: Betala
+          href: /Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
+        - name: Avbryt
+          href: /Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
+    - name: Autopilot
+      items:
+        - name: Lägga till Autopilot-enheter och -profiler
+          href: add-autopilot-devices-and-profile.md
+        - name: Skapa och redigera AutoPilot-profiler
+          href: create-and-edit-autopilot-profiles.md
+        - name: Skapa och redigera AutoPilot-enheter
+          href: create-and-edit-autopilot-devices.md
+        - name: AutoPilot-profilinställningar
+          href: autopilot-profile-settings.md
+        - name: Statusvärden för enheter
+          href: device-states.md
+    - name: Vanliga frågor och svar om Microsoft 365 Business
+      href: support/microsoft-365-business-faqs.md
+- name: Office 365 Enterprise
+  href: 'https://docs.microsoft.com/office365/enterprise'
+- name: Dokumentation om Microsoft 365
+  href: 'https://docs.microsoft.com/microsoft-365'
