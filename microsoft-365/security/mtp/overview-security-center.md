@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058911"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516917"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Översikt över säkerhetscentret microsoft 365
 
@@ -60,6 +60,7 @@ Utforska de här avsnitten om övervakning, granskning och svara på dina säker
 - Koppla ihop punkterna på aviseringar via [incidenter](incident-queue.md)
 - Åtgärda automatiskt hot med hjälp av [automatisk undersökning och reparation](mtp-autoir.md)
 - Granska och förbättra din säkerhetsposition holistiskt med [Microsoft Secure Score](microsoft-secure-score.md)
+- Visa [enheter](device-profile.md) i nätverket
 - [Rapportera](monitoring-and-reporting.md) status för dina identiteter, data, enheter, appar och infrastruktur
 - [Proaktivt jakt efter hot för intrångsförsök](advanced-hunting-overview.md) och intrångsaktivitet som påverkar din e-post, data, enheter och konton
 - [Förstå de senaste attackkampanjerna](latest-attack-campaigns.md) och -teknikerna med hotanalys

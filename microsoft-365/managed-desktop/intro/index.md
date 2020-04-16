@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142689"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516815"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Managed Desktop?
 
@@ -65,7 +65,7 @@ Vi övervakar även enhetens hälsa och ger dig insikter om enhetens prestanda. 
 
 
 ## <a name="need-more-details"></a>Behöver du mer information?
-Mer information om värdet för Microsoft Managed-skrivbordet, inklusive kundberättelser, finns i [Microsoft Managed Desktop](https://aka.ms/mmd). Bra ställen att komma igång med mer är [färdplanen](https://aka.ms/AA6jiam) och en nedladdningsbar [ensidig sammanfattning](https://aka.ms/AA6ob3h). Du hittar de senaste nyheterna på Microsoft Managed [Desktop-bloggen](https://aka.ms/AA6l2dd).
+Mer information om värdet för Microsoft Managed-skrivbordet, inklusive kundberättelser, finns i [Microsoft Managed Desktop](https://aka.ms/mmd). Bra ställen att komma igång med mer är [färdplanen](https://aka.ms/AA6jiam), en [Forrester Total Economic Impact fallstudie,](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)och en nedladdningsbar [ensidig sammanfattning](https://aka.ms/AA6ob3h). Du hittar de senaste nyheterna på Microsoft Managed [Desktop-bloggen](https://aka.ms/AA6l2dd).
 
 Om Microsoft Managed Desktop verkar vara rätt för din organisation kan du gräva i ytterligare dokumentation som förklarar mer om tjänsten, hur du förbereder din organisation för att registrera dig, hur du kommer igång med tjänsten och löpande åtgärder därefter, inklusive hur du och dina slutanvändare enkelt kan få hjälp om det behövs. Om du redan är redo att komma ombord börjar du kontakta ditt [lokala kontoteam.](https://pages.email.office.com/contactmmd/)
 

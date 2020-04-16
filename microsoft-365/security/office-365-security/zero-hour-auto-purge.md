@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto purge (ZAP) är en e-postskyddsfunktion i Office 365 som identifierar skräppost, skadlig kod eller nätfiskemeddelanden som redan har levererats till Exchange Online. Hur ZAP gör detta beror på vilken typ av skadligt innehåll som upptäcks.
-ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895017"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516779"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Zero-hour auto purge (ZAP) - skydd mot skräppost och skadlig kod i Office 365
 
@@ -54,7 +54,7 @@ För **lästa eller olästa meddelanden** som identifieras som phish efter lever
 
 - **Lägg till X-Header**, **Prepend ämnesrad med text:** ZAP vidtar ingen åtgärd på meddelandet.
 
-- **Flytta meddelande till skräppost:** ZAP flyttar meddelandet till mappen Skräppost, så länge skräppostregeln är aktiverad i postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Flytta meddelande till skräppost:** ZAP flyttar meddelandet till mappen Skräppost, så länge skräppostregeln är aktiverad i postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Omdirigera meddelande till e-postadress**, **Ta bort meddelande**, Karantän **meddelande:** ZAP karantän meddelandet. Endast administratörer kan visa och hantera phish karantän meddelanden.
 
@@ -68,7 +68,7 @@ För **olästa meddelanden** som identifieras som skräppost efter leverans bero
 
 - **Lägg till X-Header**, **Prepend ämnesrad med text:** ZAP vidtar ingen åtgärd på meddelandet.
 
-- **Flytta meddelande till skräppost:** ZAP flyttar meddelandet till mappen Skräppost, så länge skräppostregeln är aktiverad i postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Flytta meddelande till skräppost:** ZAP flyttar meddelandet till mappen Skräppost, så länge skräppostregeln är aktiverad i postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Omdirigera meddelande till e-postadress**, **Ta bort meddelande**, Karantän **meddelande:** ZAP karantän meddelandet. Slutanvändare kan visa och hantera sina egna meddelanden i karantän.
 
@@ -100,7 +100,7 @@ S: Regler för e-postflöde eller blockera och tillåta organisationsinställnin
 
 ### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>F: Vad händer om ett meddelande flyttas till en annan mapp (t.ex. inkorgsregler)?
 
-S: ZAP fungerar fortfarande så länge meddelandet inte har tagits bort eller flyttats till mappen Skräppost.
+S: ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge som samma, eller starkare, åtgärder inte redan har tillämpats. Om phish-principen till exempel är inställd på karantän och användaren eller administratören redan har skräppost, kommer karantän att vidta åtgärder för att sätta filen i karantän.
 
 ### <a name="q-does-zap-change-the-message-header"></a>F: Har ZAP ändra meddelanderubriken?
 
