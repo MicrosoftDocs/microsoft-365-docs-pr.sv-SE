@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom processen att migrera versioner av Microsoft Office, Office-servrar och Windows till Microsoft 365 Enterprise för hela organisationen.
-ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 9fd35e4595b19d5ddd3db0f64ea7dedf303d6818
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113510"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504059"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrering till Microsoft 365 Enterprise
 
@@ -116,10 +116,9 @@ I stället för att uppgradera dina serverprodukter i Office 2007-versionen med 
 
 ### <a name="office-server-2010"></a>Office-server 2010
 
-För serverprodukter i Office 2010-versionen upphör supporten den **13 oktober 2020** för följande:
+Upphörande av support för [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) är **13 oktober 2020**.
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+Upphörande av support för [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) är **13 april 2021**.
 
 I stället för att uppgradera dessa serverprodukter i Office 2010-versionen med serverprodukter i Office 2013 eller Office 2016, kan du:
 

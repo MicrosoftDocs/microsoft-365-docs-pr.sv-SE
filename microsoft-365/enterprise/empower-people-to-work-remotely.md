@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Konfigurera infrastrukturen och säkerheten som gör att dina anställda kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053113"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504129"
 ---
 # <a name="empower-remote-workers"></a>Ge distansarbetare goda förutsättningar
 
@@ -99,9 +99,9 @@ Här är konfigurationsresultatet med de nya identitetselementen markerade.
 
 ![Identitetselement för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-Distribuera följande för [Fas 3: Windows 10 Enterprise](windows10-infrastructure.md):
+För [Fas 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
-- Infrastrukturen för att distribuera nya enheter med Windows 10 Enterprise och för att uppgradera dina Windows 7- eller Windows 8.1-enheter till Windows 10 Enterprise
+- Distribuera Infrastrukturen för att distribuera nya enheter med Windows 10 Enterprise och för att uppgradera dina Windows 7- eller Windows 8.1-enheter till Windows 10 Enterprise
 - Aktivera omfattande säkerhetsfunktioner för identitet, hot och informationsskydd
 
 Här är konfigurationsresultatet med Windows 10 Enterprise-enheter.
@@ -206,6 +206,12 @@ Vidareutbilda dina användare efter behov.
 ### <a name="user-adoption-results"></a>Användningsresultat
 
 Dina distansarbetare kan använda sina Windows 10 Enterprise-enheter eller andra enheter och Office 365 ProPlus för att komma åt och arbeta med delade Microsoft 365 Enterprise-molntjänster och -resurser i en säker miljö där de möts, skapar och samarbetar i realtid.
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>Fler Microsoft-funktioner som har stöd för distansarbetare
+
+Du kan använda [Azure Point-to-Site VPN-anslutningar](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) om du vill ansluta distansarbetare till servrar som körs i ett virtuellt Azure-nätverk.
+
+Du kan använda [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) för stationär och app-virtualisering som tillhandahålls av Azure.
 
 ## <a name="see-also"></a>Se även
 
