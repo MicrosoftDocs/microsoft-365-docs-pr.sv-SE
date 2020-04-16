@@ -1,0 +1,123 @@
+- name: Microsoft Hanterat skrivbord
+  href: index.yml
+  items:
+    - name: Vad är Microsoft Hanterat skrivbord?
+      href: intro/index.md
+      items:
+        - name: Roller och ansvar
+          href: intro/roles-and-responsibilities.md
+        - name: Teknik i Microsoft Hanterat skrivbord
+          href: intro/technologies.md
+        - name: Microsoft Hanterat skrivbord och ITIL
+          href: MMD-and-ITSM.md
+        - name: Efterlevnad
+          href: intro/compliance.md
+    - name: Tjänstbeskrivning av Microsoft Hanterat skrivbord
+      href: service-description/index.md
+      items:
+        - name: Regioner och språk som stöds
+          href: service-description/regions-languages.md
+        - name: Produktens livscykel
+          href: service-description/device-lifecycle.md
+        - name: Programenheter
+          href: service-description/device-list.md
+          items:
+            - name: Arkiverade programenheter
+              href: service-description/archived-device-list.md
+        - name: Enhetstjänster
+          href: service-description/device-services.md
+        - name: Enhetskonfiguration
+          href: service-description/device-policies.md
+        - name: Säkerhet
+          href: service-description/security.md
+        - name: Uppdateringar
+          href: service-description/updates.md
+        - name: Support
+          href: service-description/support.md
+        - name: Drift och övervakning
+          href: service-description/operations-and-monitoring.md
+        - name: Programkrav
+          href: service-description/mmd-app-requirements.md
+        - name: Tjänständringar och kommunikation
+          href: service-description/servicechanges.md
+        - name: Undantag från tjänstplanen
+          href: service-description/customizing.md
+    - name: Förberedelser för att registrera dig för Microsoft Hanterat skrivbord
+      href: get-ready/index.md
+      items:
+        - name: Förutsättningar för Microsoft Hanterat skrivbord
+          href: get-ready/prerequisites.md
+        - name: Förbereda nätverket
+          href: get-ready/network.md
+        - name: Förbereda lokal resursåtkomst
+          href: get-ready/authentication.md
+        - name: Förbereda mappade enheter
+          href: get-ready/mapped-drives.md
+        - name: Förbereda certifikat och nätverksprofiler
+          href: get-ready/certs-wifi-lan.md
+        - name: Förbereda utskriftsresurser
+          href: get-ready/printing.md
+        - name: Förbereda appar
+          href: get-ready/apps.md
+          items:
+            - name: Arbeta med Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+    - name: Komma igång med Microsoft Hanterat skrivbord
+      href: get-started/index.md
+      items:
+        - name: Lägga till och verifiera administratörskontakter i administratörsportalen
+          href: get-started/add-admin-contacts.md
+        - name: Justera villkorsstyrd åtkomst
+          href: get-started/conditional-access.md
+        - name: Tilldela licenser
+          href: get-started/assign-licenses.md
+        - name: Distribuera Intune-företagsportalen
+          href: get-started/company-portal.md
+        - name: Aktivera Enterprise State Roaming
+          href: get-started/enterprise-state-roaming.md
+        - name: Konfigurera enheter
+          href: get-started/set-up-devices.md
+          items:
+            - name: Registrera nya enheter själv
+              href: get-started/register-devices-self.md
+              items:
+                - name: Steg för partner för att registrera enheter
+                  href: get-started/register-devices-partner.md
+            - name: Registrera befintliga enheter själv
+              href: get-started/register-reused-devices-self.md
+        - name: Gör användarna redo att använda enheter
+          href: get-started/get-started-devices.md
+        - name: Distribuera appar
+          href: get-started/deploy-apps.md
+          items:
+            - name: Microsoft Project och Microsoft Visio
+              href: get-started/project-visio.md
+    - name: Arbeta med Microsoft Hanterat skrivbord
+      href: working-with-managed-desktop/index.md
+      items:
+        - name: Arbeta med insikter
+          href: working-with-managed-desktop/insights.md
+          items:
+            - name: Användningsinsikter
+              href: working-with-managed-desktop/usage-insights.md
+            - name: Tillförlitlighetsinsikter
+              href: working-with-managed-desktop/reliability-insights.md
+            - name: Batteriinsikter
+              href: working-with-managed-desktop/battery-insights.md
+            - name: Insikter om Windows-säkerhetsuppdateringar
+              href: working-with-managed-desktop/security-update-insights.md
+        - name: Support för administratörer
+          href: working-with-managed-desktop/admin-support.md
+        - name: Support för slutanvändare
+          href: working-with-managed-desktop/end-user-support.md
+        - name: Hantera appar
+          href: working-with-managed-desktop/manage-apps.md
+        - name: Inställningar som kan konfigureras
+          href: working-with-managed-desktop/config-setting-overview.md
+          items:
+            - name: Referens för inställningar som kan konfigureras
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: Distribuera inställningar som kan konfigureras
+              href: working-with-managed-desktop/config-setting-deploy.md
+    - name: Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
+      href: change-history-managed-desktop.md

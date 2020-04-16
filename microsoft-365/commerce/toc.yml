@@ -1,0 +1,80 @@
+- name: Hantera företagsprenumerationer
+  href: index.yml
+- name: Hjälpcenter för Microsoft 365-administratörer
+  href: ../admin/admin-home.md
+- name: Prova eller köp
+  items:
+    - name: Registrera dig för en utvärderingsversion av Office 365
+      href: sign-up-for-office-365-trial.md
+    - name: Prova eller köp Microsoft 365
+      href: try-or-buy-microsoft-365.md
+    - name: Förlänga utvärderingen
+      href: extend-your-trial.md
+    - name: Köpa en annan prenumeration
+      href: buy-another-subscription.md
+    - name: Köpa eller redigera ett tillägg
+      href: buy-or-edit-an-add-on.md
+    - name: Lägga till lagringsutrymme
+      href: add-storage-space.md
+- name: Hantera prenumerationer
+  items:
+    - name: Uppgradera prenumerationer
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: Förnya prenumerationen
+      href: subscriptions/renew-your-subscription.md
+    - name: Återaktivera prenumerationen
+      href: subscriptions/reactivate-your-subscription.md
+    - name: Avbryt prenumerationen
+      href: subscriptions/cancel-your-subscription.md
+    - name: Vad händer om min prenumeration går ut?
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: Hantera appar från tredje part
+      href: manage-saas-apps.md
+    - name: Hantera självbetjäningsköp (användare)
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: Hantera självbetjäningsköp (administratörer)
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: Hantera licenser
+  items:
+    - name: Hantera prenumerationslicenser
+      href: licenses/buy-licenses.md
+    - name: Tilldela licenser till användare
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: Ta bort tilldelningen av licenser från användare
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: Allmänt om prenumerationer och licenser
+      href: licenses/subscriptions-and-licenses.md
+- name: Fakturor och betalningar
+  items:
+    - name: Visa din faktura
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: Förstå din faktura
+      href: billing-and-payments/understand-your-invoice.md
+    - name: Hantera betalningsmetoder
+      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+    - name: Betala för prenumerationen
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: Ändra hur du betalar
+      href: billing-and-payments/change-payment-method.md
+    - name: Ändra betalningsfrekvens
+      href: billing-and-payments/change-payment-frequency.md
+    - name: Hantera faktureringsprofiler
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: Ändra dina faktureringsadresser
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: Andra betaltjänstdirektivet och stark kundautentisering
+      href: billing-and-payments/psd2.md
+    - name: Momsinformation
+      href: billing-and-payments/tax-information.md
+- name: Faktureringskonton
+  items:
+    - name: Hantera faktureringskonton
+      href: manage-billing-accounts.md
+    - name: Koppla en klientorganisation till mitt faktureringskonto
+      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+- name: Hantera relationer med mina partner
+  href: manage-partners.md
+- name: Avsluta ditt konto
+  href: close-your-account.md
+- name: Kontakta support
+  href: ../admin/contact-support-for-business-products.md

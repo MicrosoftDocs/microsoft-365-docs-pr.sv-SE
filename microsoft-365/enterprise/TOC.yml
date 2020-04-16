@@ -1,0 +1,234 @@
+- name: Dokumentation och resurser för Microsoft 365 för företag
+  href: index.yml
+- name: Översikt över Microsoft 365 för företag
+  href: microsoft-365-overview.md
+- name: Distribuera Microsoft 365 för företag
+  href: deploy-microsoft-365-enterprise.md
+  items:
+    - name: Distribuera grundläggande infrastruktur
+      href: deploy-foundation-infrastructure.md
+      items:
+        - name: Fas 1 – Nätverk
+          href: networking-infrastructure.md
+          items:
+            - name: Steg 1 – Förbereda nätverket för Microsoft 365
+              href: networking-provide-bandwidth-cloud-services.md
+            - name: Steg 2 – Konfigurera lokala Internetanslutningar för varje kontor
+              href: networking-dns-resolution-same-location.md
+            - name: Steg 3 – Undvika nätverkshairpins
+              href: networking-avoid-network-hairpins.md
+            - name: Steg 4 – Konfigurera förbikoppling av trafik
+              href: networking-configure-proxies-firewalls.md
+            - name: Steg 5 – Optimera prestanda för klienten och Office 365-tjänsten
+              href: networking-optimize-tcp-performance.md
+            - name: Avslutsvillkor för nätverk
+              href: networking-exit-criteria.md
+        - name: Fas 2 – Identitet
+          href: identity-infrastructure.md
+          items:
+            - name: Steg 1 – Skapa och skydda dina globala administratörskonton
+              href: identity-create-protect-global-admins.md
+            - name: Steg 2 – Skydda dina lösenord
+              href: identity-secure-your-passwords.md
+            - name: Steg 3 – Skydda och hantera användarinloggningar
+              href: identity-secure-user-sign-ins.md
+            - name: Steg 4 – Lägga till användarkonton
+              href: identity-add-user-accounts.md
+            - name: Steg 5 – Använda grupper för hantering
+              href: identity-use-group-management.md
+            - name: Step 6 – Konfigurera identitetsstyrning
+              href: identity-configure-identity-governance.md
+            - name: Avslutsvillkor för identitet
+              href: identity-exit-criteria.md
+        - name: Fas 3 – Windows 10 Enterprise
+          href: windows10-infrastructure.md
+          items:
+            - name: Steg 1 – Förbereda din organisation
+              href: windows10-prepare-your-org.md
+            - name: Steg 2 – Distribuera som en uppgradering på plats
+              href: windows10-deploy-inplaceupgrade.md
+            - name: Steg 3 – Distribuera för nya enheter
+              href: windows10-deploy-autopilot.md
+            - name: Steg 4 – Övervaka enhetens hälsotillstånd och efterlevnad
+              href: windows10-enable-windows-analytics.md
+            - name: Steg 5 – Distribuera säkerhetsfunktioner
+              href: windows10-enable-security-features.md
+            - name: Avslutsvillkor för Windows 10 Enterprise
+              href: windows10-exit-criteria.md
+        - name: Fas 4 – Office 365 ProPlus
+          href: office365proplus-infrastructure.md
+          items:
+            - name: Avslutsvillkor för Office 365 ProPlus
+              href: office365proplus-exit-criteria.md
+        - name: Fas 5 – Hantering av mobilenheter
+          href: mobility-infrastructure.md
+          items:
+            - name: Avslutsvillkor för hantering av mobilenheter
+              href: mobility-infrastructure-exit-criteria.md
+        - name: Fas 6 – Informationsskydd
+          href: infoprotect-infrastructure.md
+          items:
+            - name: Steg 1 – Definiera säkerhets- och informationsskyddsnivåer
+              href: infoprotect-define-sec-infoprotect-levels.md
+            - name: Steg 2 – Konfigurera klassificering för din miljö
+              href: infoprotect-configure-classification.md
+            - name: Steg 3 – Konfigurera ökad säkerhet för Microsoft 365
+              href: infoprotect-configure-increased-security-office-365.md
+            - name: Steg 4 – Konfigurera Windows informationsskydd
+              href: infoprotect-deploy-windows-information-protection.md
+            - name: Steg 5 – Konfigurera dataförlustskydd i Office 365
+              href: infoprotect-data-loss-prevention.md
+            - name: Steg 6 – Konfigurera e-postkryptering
+              href: infoprotect-email-encryption.md
+            - name: Steg 7 – Konfigurera Privileged Access Management i Office 365
+              href: infoprotect-configure-privileged-access-management.md
+            - name: Avslutsvillkor för informationsskydd
+              href: infoprotect-exit-criteria.md
+        - name: Distributionsstrategier
+          href: deployment-strategies-microsoft-365-enterprise.md
+        - name: Distribuera med befintlig infrastruktur
+          href: deploy-with-existing-infrastructure.md
+        - name: Distribuera för andra än stora företag
+          href: deploy-foundation-infrastructure-non-enterprises.md
+    - name: Distribuera arbetsbelastningar och scenarier
+      href: deploy-workloads.md
+      items:
+        - name: Microsoft Teams
+          href: teams-workload.md
+        - name: Exchange Online
+          href: exchangeonline-workload.md
+        - name: SharePoint och OneDrive för företag
+          href: sharepoint-online-onedrive-workload.md
+        - name: Migrering
+          href: migration-microsoft-365-enterprise-workload.md
+        - name: Ge distansarbetare goda förutsättningar
+          href: empower-people-to-work-remotely.md
+        - name: Teams för strikt reglerade data
+          href: secure-teams-highly-regulated-data-scenario.md
+        - name: SharePoint-webbplatser för strikt reglerade data
+          href: teams-sharepoint-online-sites-highly-regulated-data.md
+    - name: Testlabbguider
+      href: m365-enterprise-test-lab-guides.md
+      items:
+        - name: Grundläggande konfiguration
+          items:
+            - name: Enkel
+              href: lightweight-base-configuration-microsoft-365-enterprise.md
+            - name: Simulerat företag
+              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+        - name: Identitet
+          items:
+            - name: Synkronisering av lösenordshash
+              href: password-hash-sync-m365-ent-test-environment.md
+            - name: Direktautentisering
+              href: pass-through-auth-m365-ent-test-environment.md
+            - name: Federerad autentisering
+              href: federated-identity-for-your-office-365-dev-test-environment.md
+            - name: Enkel inloggning med Azure AD
+              href: single-sign-on-m365-ent-test-environment.md
+            - name: Multifaktorautentisering
+              href: multi-factor-authentication-microsoft-365-test-environment.md
+            - name: Skydda globala administratörskonton
+              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+            - name: Tillbakaskrivning av lösenord
+              href: password-writeback-m365-ent-test-environment.md
+            - name: Återställning av lösenord
+              href: password-reset-m365-ent-test-environment.md
+            - name: Automatisk licensiering och gruppmedlemskap
+              href: automate-licenses-group-membership-microsoft-365-test-environment.md
+            - name: Azure AD Identity Protection
+              href: azure-ad-identity-protection-microsoft-365-test-environment.md
+            - name: Identitets- och enhetsåtkomst
+              href: identity-device-access-m365-test-environment.md
+              items:
+                - name: Endast molnet
+                  href: cloud-only-prereqs-m365-test-environment.md
+                - name: Synkronisering av lösenordshash
+                  href: phs-prereqs-m365-test-environment.md
+                - name: Direktautentisering
+                  href: pta-prereqs-m365-test-environment.md
+        - name: Hantering av mobilenheter
+          items:
+            - name: Registrera iOS- och Android-enheter
+              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+            - name: Principer för enhetsefterlevnad
+              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+        - name: Informationsskydd
+          items:
+            - name: Ökad Microsoft 365-säkerhet
+              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+            - name: Dataklassificering
+              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+            - name: Privileged Access Management
+              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+    - name: Contoso-fallstudie
+      href: contoso-case-study.md
+      items:
+        - name: Översikt
+          href: contoso-overview.md
+        - name: Contosos IT-infrastruktur och behov
+          href: contoso-infra-needs.md
+        - name: Nätverk
+          href: contoso-networking.md
+        - name: Identitet
+          href: contoso-identity.md
+        - name: Windows 10 Enterprise
+          href: contoso-win10.md
+        - name: Office 365 ProPlus
+          href: contoso-o365pp.md
+        - name: Hantering av mobilenheter
+          href: contoso-mdm.md
+        - name: Informationsskydd
+          href: contoso-info-protect.md
+        - name: Sammanfattning av säkerhet
+          href: contoso-security-summary.md
+        - name: Team för ett topphemligt projekt
+          href: contoso-team-for-top-secret-project.md
+        - name: SharePoint-webbplats för strikt reglerade data
+          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
+    - name: Ändringar i distributionsinnehåll för Microsoft 365 för företag
+      href: microsoft-365-deploment-guide-changes.md
+- name: Center för skrivbordsdistribution
+  href: desktop-deployment-center-home.md
+  items:
+    - name: 'Komma igång – Vägledning om användning, process och teknik'
+      href: getting-started.md
+    - name: Steg 1 – Beredskap för enheter och appar
+      href: step-1-device-and-app-readiness.md
+    - name: Steg 2 – Katalog- och nätverksberedskap
+      href: step-2-directory-and-network-readiness.md
+    - name: Steg 3 – Leverans av Office och verksamhetsspecifika appar
+      href: step-3-office-and-lob-app-delivery.md
+    - name: Steg 4 – Migrering av användares filer och inställningar
+      href: step-4-user-files-and-settings-migration.md
+    - name: Steg 5 – Överväganden för säkerhet och efterlevnad
+      href: step-5-security-and-compliance.md
+    - name: Steg 6 – Distribution av operativsystem och uppdateringar av funktioner
+      href: step-6-os-deployment-and-feature-updates.md
+    - name: Steg 7 – Underhåll av Windows och Office
+      href: step-7-windows-and-office-as-a-service.md
+    - name: Steg 8 – Kommunikation och utbildning för användare
+      href: step-8-user-communications-and-training.md
+    - name: Manuell uppgradering av Windows 7 till Windows 10
+      href: windows-7-to-windows-10-upgrade-manual.md
+    - name: Automatiserade uppgraderingar av Windows 7 till Windows 10
+      href: windows-7-to-windows-10-upgrade-automated.md
+    - name: Deployment Lab Kit för Windows och Office
+      href: modern-desktop-deployment-and-management-lab.md
+    - name: Hitta hjälp för din distribution
+      href: find-help-for-modern-desktop-deployment.md
+- name: Microsoft 365 Efterlevnad
+  href: ../compliance/index.yml
+- name: Microsoft 365 Säkerhet
+  href: ../security/index.yml
+- name: Hantera affärskontinuitet (EBCM) med molntjänster
+  href: ebcm-understanding-ebcm-with-cloud-services.md
+  items:
+    - name: Kundens och molnpartnerns EBCM-ansvar
+      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+    - name: Återhämtning för Microsoft 365-molntjänster
+      href: ebcm-m365-service-resiliency.md
+    - name: Utveckla en kontinuitetsplan
+      href: ebcm-developing-your-ebcm-plan.md
+    - name: Scenarier för att minimera incidenter i tjänsten
+      href: ebcm-microsoft-365-mitigations.md
