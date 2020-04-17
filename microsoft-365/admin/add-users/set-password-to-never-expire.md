@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Lär dig hur du anger att vissa enskilda användarlösenord aldrig upphör att gälla med Windows PowerShell.
-ms.openlocfilehash: 04fb2b0c17f695c41df2f8b1277c7918054ae9fe
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 2645e6d5f307a5e5ce8fab5f3a848bf4a539b031
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240241"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540897"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
@@ -38,7 +38,7 @@ ms.locfileid: "43240241"
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Ange principen för förfallodatum för lösenord för enskilda användare
 
-En global administratör för en Microsoft-molntjänst kan använda Azure Active Directory PowerShell for Graph för att ange lösenord som inte upphör att gälla för specifika användare. Du kan också använda AzureAD-cmdlets för att ta bort konfigurationen för aldrig upphör att gälla eller för att se vilka användarlösenord som aldrig upphör att gälla.
+En global administratör för en Microsoft-molntjänst kan använda [Azure Active Directory PowerShell for Graph för](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) att ange lösenord som inte upphör att gälla för specifika användare. Du kan [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) också använda AzureAD-cmdlets för att ta bort konfigurationen för aldrig upphör att gälla eller för att se vilka användarlösenord som aldrig upphör att gälla.
 
 Den här guiden gäller för andra leverantörer, till exempel Intune och Office 365, som också är beroende av Azure AD för identitets- och katalogtjänster. Lösenordsförfallodatum är den enda delen av principen som kan ändras.
 

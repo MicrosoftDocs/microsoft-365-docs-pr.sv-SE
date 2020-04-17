@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Läs om hur du byter till en ny Office 365 för företag-prenumeration.
-ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 5f399cf222654a34006e95f3ab40bf48eeec751f
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142097"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540827"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>Byta till ett annat Office 365 för företag-abonnemang
 
@@ -53,12 +53,24 @@ Det enklaste sättet att byta abonnemang är att använda knappen **Byt abonnema
 ## <a name="use-the-switch-plans-button"></a>Använd knappen Växla abonnemang
 
 När du använder knappen **Byt abonnemang** leds du genom processen att köpa ett nytt abonnemang som du kan byta ditt nuvarande abonnemang till, alla användare tilldelas automatiskt licenser i det nya abonnemanget och din gamla plan avbryts åt dig.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prenumerationer</a> i administrationscentret.
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a>.
+::: moniker-end
 
-    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a>.
+::: moniker range="o365-germany"
+
+1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
+
+::: moniker-end
 
 2. Välj **Växla abonnemang** om du vill visa listan över nya abonnemang som är tillgängliga.
 

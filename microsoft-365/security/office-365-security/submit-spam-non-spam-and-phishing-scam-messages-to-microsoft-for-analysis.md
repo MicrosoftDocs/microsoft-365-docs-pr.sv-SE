@@ -2,8 +2,8 @@
 title: Skicka meddelanden manuellt till Microsoft för analys
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Du och dina användare kan skicka falska negativa och falska positiva skräppostmeddelanden till Microsoft för analys. '
-ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032810"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529055"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden manuellt till Microsoft för analys
 
@@ -51,7 +51,7 @@ Om du får ett meddelande som skickades genom skräppostfiltrering som borde ha 
 2. Dra och släpp skräppost- eller nätfiskemeddelandet i det nya meddelandet. Detta sparar skräppost- eller nätfiskemeddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra meddelandet (vi behöver det ursprungliga meddelandet så att vi kan inspektera meddelanderubrikerna).
 
    > [!NOTE]
-   > <ul><li>Du kan bifoga flera meddelanden i det nya meddelandet. Kontrollera att alla meddelanden är av samma typ: antingen meddelanden om nätfiske eller skräppost.</li><li>Lämna brödtexten i det nya meddelandet tom.<li></li>Använd antingen MSG-format (standardformatet Outlook) eller .eml (standardformatet Outlook på webben) för de bifogade meddelandena.</li></ul>
+   > <ul><li>Du kan bifoga flera meddelanden i det nya meddelandet. Kontrollera att alla meddelanden är av samma typ: antingen meddelanden om nätfiske eller skräppost.</li><li>Lämna brödtexten i det nya meddelandet tom.</li><li>Använd antingen MSG-format (standardformatet Outlook) eller .eml (standardformatet Outlook på webben) för de bifogade meddelandena.</li></ul>
 
 3. När du är klar klickar du på **Skicka**.
 
@@ -70,7 +70,7 @@ Om ett meddelande har identifierats felaktigt som skräppost kan du skicka medde
 2. Dra och släpp det felidentifierade meddelandet i det nya meddelandet. Då sparas det felidentifierade meddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra meddelandet (vi behöver det ursprungliga meddelandet så att vi kan inspektera meddelanderubrikerna).
 
    > [!NOTE]
-   > <ul><li>Du kan bifoga flera meddelanden i det nya meddelandet. Kontrollera att alla meddelanden är av samma typ: antingen meddelanden om nätfiske eller skräppost.</li><li>Lämna brödtexten i det nya meddelandet tom.<li></li>Använd antingen MSG-format (standardformatet Outlook) eller .eml (standardformatet Outlook på webben) för de bifogade meddelandena.</li></ul>
+   > <ul><li>Du kan bifoga flera meddelanden i det nya meddelandet. Kontrollera att alla meddelanden är av samma typ: antingen nätfiskemeddelanden eller skräppostmeddelanden.</li><li>Lämna brödtexten i det nya meddelandet tom.</li><li>Använd antingen MSG-format (standardformatet Outlook) eller .eml (standardformatet Outlook på webben) för de bifogade meddelandena.</li></ul>
 
 3. När du är klar klickar du på **Skicka**.
 

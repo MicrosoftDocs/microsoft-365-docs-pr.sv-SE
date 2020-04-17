@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Byt Office 365 för företag-prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142109"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540849"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Byta till ett annat abonnemang på Office 365 för företag manuellt
 
@@ -64,11 +64,23 @@ Se till att du köper en prenumeration för samma organisation som användarna f
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Steg 3: Kontrollera din nya prenumeration och dina nya licenser
 
+::: moniker range="o365-worldwide"
+
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prenumerationer</a> i administrationscentret.
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a>.
+::: moniker-end
 
-    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a>.
+::: moniker range="o365-germany"
+
+1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
+
+::: moniker-end
 
 2. **Kontrollera att båda prenumerationerna visas och är aktiva**
 
@@ -102,11 +114,23 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
 
 ### <a name="reassign-a-license-for-one-user"></a>Fördela om en licens för en användare
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+::: moniker-end
 
-    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
 
 2. På sidan **Aktiva användare** markerar du rutan bredvid namnet på den användare som du vill tilldela en licens till.
 
@@ -125,11 +149,23 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Tilldela om licenser för flera användare samtidigt
 
+::: moniker range="o365-worldwide"
+
 1. Gå till sidan Aktiva <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">användare</a> i administrationscentret eller välj **Aktiva användare.** \> **Active users**
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
+::: moniker-end
 
-    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+::: moniker range="o365-germany"
+
+1. Gå till sidan Aktiva <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">användare</a> **i administrationscentret.** >
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+
+::: moniker-end
 
 2. Markera kryssrutorna för de användare som du vill lägga till befintliga licenser för.
 

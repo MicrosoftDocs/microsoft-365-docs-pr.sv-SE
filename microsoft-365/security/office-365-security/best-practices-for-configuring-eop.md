@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna om bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel.
-ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033440"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528623"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Metodtips för att konfigurera EOP och Office 365 ATP
 
@@ -53,7 +53,7 @@ De här inställningarna täcker en rad funktioner som ligger utanför säkerhet
 |SMTP-autentiserade inlämning till postlåda|Inaktiverad|Inaktiverad||
 |EWS-anslutning till postlåda|Inaktiverad|Inaktiverad||
 |[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgänglig för postlådeanvändare eller [e-postanvändare](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) (användarobjekt som returneras av cmdleten Hämta användare).|
-|Använd Spoof Intelligence för att vitlista avsändare när det är möjligt|Ja|Ja||
+|Använd [falska underrättelser](learn-about-spoof-intelligence.md) för att vitlista avsändare när det är möjligt|Ja|Ja||
 |Katalogbaserad kantblockering (DBEB)|Aktiverat|Aktiverat|Domäntyp = Auktoritär|
 |[Konfigurera multifaktorautentisering för alla administratörskonton](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiverat|Aktiverat||
 

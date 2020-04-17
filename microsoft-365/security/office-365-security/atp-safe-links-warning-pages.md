@@ -16,22 +16,22 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Få en översikt över varningssidor som kan visas när Det finns ett avancerat skydd mot office 365 på jobbet.
-ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812949"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528863"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Varningssidor för Office 365 ATP-säkra länkar
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Advanced Threat Protection](office-365-atp.md). Om du använder Outlook.com, Office 365 Home eller Office 365 Personal och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du använder Outlook.com, Office 365 Home eller Office 365 Personal och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hjälper till att skydda din organisation från nätfiskeförsök och skadlig kod genom funktioner, till exempel [ATP Safe Links,](atp-safe-links.md) [ATP Safe Attachments](atp-safe-attachments.md)och [anti-phishing protection](anti-phishing-protection.md). När skydd är på plats kontrolleras länkar (URL:er) i e-postmeddelanden och Office-dokument. Om en webbadress identifieras som misstänkt eller skadlig kan du blockeras från att öppna webbadressen när du klickar på den. I stället för att gå direkt till webbplatsen kan du se en varningssida i stället. 
-  
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hjälper till att skydda din organisation från nätfiskeförsök och skadlig kod genom funktioner, till exempel [ATP Safe Links,](atp-safe-links.md) [ATP Safe Attachments](atp-safe-attachments.md)och [anti-phishing protection](anti-phishing-protection.md). När skydd är på plats kontrolleras länkar (URL:er) i e-postmeddelanden och Office-dokument. Om en webbadress identifieras som misstänkt eller skadlig kan du blockeras från att öppna webbadressen när du klickar på den. I stället för att gå direkt till webbplatsen kan du se en varningssida i stället.
+
 Läs den här artikeln om du vill se exempel på varningssidor som kan visas, tillsammans med de senaste uppdateringarna av varningssidor.
-  
+
 ## <a name="examples-of-warning-pages"></a>Exempel på varningssidor
 
 ### <a name="atp-is-scanning-the-link"></a>ATP skannar länken
@@ -113,4 +113,3 @@ Ursprunglig varningssida:
 Uppdaterad varningssida:
 
 ![Ett fel har inträffat](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-   

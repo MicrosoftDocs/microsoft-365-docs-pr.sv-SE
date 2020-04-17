@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner i Office 365 genom att hitta svar på dina frågor i vanliga frågor och svar.
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212203"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540873"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -106,12 +106,24 @@ Ja, men du kan inte överföra en Office 365-domän till en annan registrator f�
 Observera att en *Whois-fråga* visar en Office 365-köpt domänregistrare som Wild West Domains LLC. Endast Office 365 bör dock kontaktas angående din köpta Office 365-domän.
   
 Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan till den andra domänregistratorns webbplats för att överföra domännamnet till den registratorn.
-  
+
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
-    
-    Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
-    
-    Om du använder Office 365 som drivs av 21Vianet går du till den här <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">sidan Domäner.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gå till sidan **Inställningars** > licenser i <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">administrationscentret.</a>
+
+::: moniker-end
     
 2. På sidan **Domäner** väljer du den Office 365-domän som du vill överföra till en annan domänregistratorer och väljer sedan **Domänöverföring** > **aktivera domänöverföring**.
        
@@ -136,12 +148,24 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
 2. Leta reda på var du uppdaterar namnserverposterna på registratorns webbplats och uppdatera namnservrarna så att de pekar på domänens DNS-värd. (DNS-värden är ofta domänregistratorn.)
     
 3. Följ en länk för att gå till installationsguiden för domäner:
-    
+
+::: moniker range="o365-worldwide"
+
 4. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
-    
-    Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
-    
-    Om du använder Office 365 som drivs av 21Vianet går du till den här <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">sidan Domäner.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a>.
+
+::: moniker-end
     
 5. På sidan **Domäner** väljer du den domän du byter och väljer **DNS-hantering**.
     
@@ -153,12 +177,24 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
     
 
 ### <a name="change-dns-management-to-office-365"></a>Ändra DNS-hanteringen till Office 365
-  
-1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
-    
-    Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
-    
-    Om du använder Office 365 som drivs av 21Vianet går du till den här <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">sidan Domäner.</a>
+
+::: moniker range="o365-worldwide"
+
+1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret..</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a>.
+
+::: moniker-end
     
 2. På sidan **Domäner** väljer du den domän du byter och väljer **DNS-hantering**.
     
@@ -221,12 +257,24 @@ Värdar som har stöd för alla DNS-poster som krävs:
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Hur anger eller ändrar jag standarddomänen i Office 365?
 
 Du måste ha minst en egen domän som du har lagt till i Office 365 innan du kan välja en standarddomän.
-  
+
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
-    
-    Om du använder Office 365 Tyskland går du till den här sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domäner.</a> 
-    
-    Om du använder Office 365 som drivs av 21Vianet går du till den här <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">sidan Domäner.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till **Inställningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a>.
+
+::: moniker-end
     
 2. På sidan **Domäner** väljer du den domän som du vill ange som standard för nya e-postadresser. 
     

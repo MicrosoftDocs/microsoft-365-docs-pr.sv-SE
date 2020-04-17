@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895447"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541113"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Vad kommer i Microsoft Secure Score?
 
@@ -36,15 +36,15 @@ Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Sec
 
 För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig tar vi bort följande förbättringsåtgärder.
 
-- Ta bort/blockera konton som inte använts under de senaste 30 dagarna
-- Utse färre än 5 globala administratörer
 - Använda IRM-skydd på dokument
 - Tillämpa principer för förebyggande av dataförlust
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>Lägga till ytterligare kontrollstöd i förhandsversionen
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Lägga till Azure AD-förbättringsåtgärd i förhandsversionen
+
 - Tillåt inte användare att bevilja samtycke till ohanterada program (finns för närvarande i släppt version)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Stöd för ytterligare åtgärder för förbättring av Microsoft Cloud App Security
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Lägga till Azure ATP-förbättringsåtgärder i förhandsversionen
+
 - Inaktivera tjänsten Utskriftshanteraren på domänkontrollanter
 - Ändra osäkra Kerberos-delegationer för att förhindra personifiering
 - Skydda och hantera lokala administratörslösenord med Microsoft LAPS
@@ -56,5 +56,6 @@ För att säkerställa att Microsoft Secure Score är meningsfull och att varje 
 - Stoppa äldre protokollkommunikation
 - Stoppa svag chifferanvändning
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Stöd för säkerhetsrekommendationer för Microsoft Defender ATP Threat & Vulnerability Management (TVM)
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Stöd för säkerhetsrekommendationer för Microsoft Defender ATP Threat & Vulnerability Management (TVM) i förhandsversionen
+
 - Alla utgivna säkerhetsrekommendationer från TVM kommer nu också att finnas tillgängliga i Microsoft Secure Score

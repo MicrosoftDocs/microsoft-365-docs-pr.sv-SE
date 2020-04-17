@@ -24,12 +24,12 @@ description: Läs om vilka betalningsalternativ som är tillgängliga för att b
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42807709"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540909"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Betala för din prenumeration på Office 365 för företag
 
@@ -159,7 +159,7 @@ Om du är osäker på hur mycket du är skyldig kan du [kontrollera din faktura 
 > - [Etiopien](../pay/ethiopia.md)
 > - [Färöarna](../pay/faroe-islands.md)
 > - [Fiji](../pay/fiji.md)
-> - [Finland ](../pay/finland.md)
+> - [Finland](../pay/finland.md)
 > - [Frankrike](../pay/france.md)
 > - [Franska Guyana](../pay/french-guiana.md)
 > - [Georgien](../pay/georgia.md)
@@ -184,7 +184,7 @@ Om du är osäker på hur mycket du är skyldig kan du [kontrollera din faktura 
 > - [Italien](../pay/italy.md)
 > - [Jamaica](../pay/jamaica.md)
 > - [Japan ](../pay/japan.md)
-> - [Jordanien ](../pay/jordan.md)
+> - [Jordanien](../pay/jordan.md)
 > - [Kazakstan](../pay/kazakhstan.md)
 > - [Kenya](../pay/kenya.md)
 > - [Korea ](../pay/korea.md)
@@ -213,7 +213,7 @@ Om du är osäker på hur mycket du är skyldig kan du [kontrollera din faktura 
 > - [Nya Zeeland](../pay/new-zealand.md)
 > - [Nicaragua ](../pay/nicaragua.md)
 > - [Nigeria ](../pay/nigeria.md)
-> - [Norge ](../pay/norway.md)
+> - [Norge](../pay/norway.md)
 > - [Oman](../pay/oman.md)
 > - [Pakistan](../pay/pakistan.md)
 > - [Palestinska myndigheten](../pay/palestinian-authority.md)
@@ -241,7 +241,7 @@ Om du är osäker på hur mycket du är skyldig kan du [kontrollera din faktura 
 > - [Spanien](../pay/spain.md)
 > - [Sri Lanka](../pay/sri-lanka.md)
 > - [Surinam](../pay/suriname.md)
-> - [Sverige ](../pay/sweden.md)
+> - [Sverige](../pay/sweden.md)
 > - [Schweiz](../pay/switzerland.md)
 > - [Taiwan](../pay/taiwan.md)
 > - [Tadzjikistan](../pay/tajikistan.md)
@@ -275,9 +275,23 @@ Du kan välja att få en kopia av faktureringsutdraget som en e-postbilaga. Om d
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Få faktureringsutdraget via e-post
 
+::: moniker range="o365-worldwide"
+
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsanvisningar</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+
+::: moniker-end
 
 2. Under **Ta emot faktureringsutdrag som e-postbilaga?** **On**
 

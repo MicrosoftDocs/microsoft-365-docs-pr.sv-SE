@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Administratörer kan lära sig mer om tillgängliga alternativ i Office 365 och EOP som gör att inkommande meddelanden kan hoppa över skräppostfiltrering.
-ms.openlocfilehash: f9178dae93f8eb33996d05034d27fceed66edd39
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033416"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528635"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Skapa listor över betrodda avsändare i Office 365
 
@@ -38,7 +38,7 @@ De tillgängliga listorna för säkra avsändare beskrivs i följande lista för
 Regler för e-postflöde ger mest flexibilitet för att säkerställa att endast rätt meddelanden tillåts. Tillåtna avsändare och tillåtna domänlistor i anti-spam-principer är inte lika säkra som IP-listan, eftersom avsändarens e-postdomän enkelt förfalskas. Men IP Allow List utgör också en risk, eftersom e-post från _en_ domän som skickas från den IP-adressen kommer att kringgå skräppostfiltrering.
 
 > [!IMPORTANT]
-> <ul><li>Var försiktig och övervaka *eventuella* undantag som du spam filtrering med hjälp av säkra avsändande listor.</li><li>Även om du kan använda säkra avsänningslistor för att hjälpa till med falska positiva identifieringar (bra e-post markerad som skräppost), bör du betrakta användningen av säkra avsändarelistor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falska positiva identifieringar med hjälp av säkra avsänningslistor, eftersom undantag från skräppostfiltrering kan öppna din organisation för förfalskning och andra attacker. Om du insisterar på att använda listor med betrodda avsändare för att hantera falska positiva identifieringar måste du vara vaksam och hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) i redo.</li><li>Om du vill att en domän ska kunna skicka oautentiserade e-postmeddelanden (kringgå skydd mot förfalskning) men inte kringgå kontroller av skräppost och skadlig kod kan du lägga till den i [listan Tillåtentillbehållsbehåll för säker avsändare](walkthrough-spoof-intelligence-insight.md)</li><li>EOP och Outlook granskar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet [Överväganden för massutskick av e-post](#considerations-for-bulk-email) senare i det här avsnittet.</li></ul>
+> <ul><li>Var noga med att noga övervaka *eventuella* undantag som du till skräppostfiltrering med hjälp av säkra avsändande listor.</li><li>Även om du kan använda säkra avsänningslistor för att hjälpa till med falska positiva identifieringar (bra e-post markerad som skräppost), bör du betrakta användningen av säkra avsändarelistor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falska positiva identifieringar med hjälp av säkra avsänningslistor, eftersom undantag från skräppostfiltrering kan öppna din organisation för förfalskning och andra attacker. Om du insisterar på att använda listor med betrodda avsändare för att hantera falska positiva identifieringar måste du vara vaksam och hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) i redo.</li><li>Om du vill att en domän ska kunna skicka oautentiserade e-postmeddelanden (kringgå skydd mot förfalskning) men inte kringgå kontroller av skräppost och skadlig kod kan du lägga till den i [listan Tillåtentillbehållsbehåll för säker avsändare](walkthrough-spoof-intelligence-insight.md)</li><li>EOP och Outlook granskar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet [Överväganden för massutskick av e-post](#considerations-for-bulk-email) senare i det här avsnittet.</li></ul>
 
 Däremot har du också flera alternativ för att blockera e-post från specifika källor med hjälp av _blockerade avsändarelistor_. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i Office 365](create-block-sender-lists-in-office-365.md).
 
@@ -115,7 +115,7 @@ Den maximala gränsen för dessa listor är cirka 1000 poster. även om du bara 
 
 Ett standardmeddelande för SMTP-meddelanden består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som krävs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelandehuvud (kallas gemensamt *meddelandehuvudet)* och meddelandetexten. Meddelandekuvertet beskrivs i RFC 5321 och meddelandehuvudet beskrivs i RFC 5322. Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
 
-- Adressen `5321.MailFrom` (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).** Den här e-postadressen används för autentiseringskontroller av avsändare (SPF, DKIM, DMARC), och om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR eller avvisningsmeddelande). 
+- Adressen `5321.MailFrom` (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).** Om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR eller avvisningsmeddelande).
 
 - (även `5322.From` känd som **Från-adressen** eller P2-avsändaren) är e-postadressen i fältet **Från-huvud** och är avsändarens e-postadress som visas i e-postklienter.
 

@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om explorer och &amp; realtidsidentifieringar i Security Compliance Center.
-ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284260"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537515"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
 
@@ -186,7 +186,7 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md)som 
 
    ![Användarrapporterad phish](../../media/EmailUserReportedReportType.png)
 
-Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som ett nätfiskeförsök. Du kan använda den här informationen för att göra ytterligare analyser och vid behov justera dina [ATP-principer för nätfiske](set-up-anti-phishing-policies.md).
+Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som ett nätfiskeförsök. Du kan använda den här informationen för att göra ytterligare analyser och vid behov justera dina [ATP-principer för nätfiske](configure-atp-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och respons
 

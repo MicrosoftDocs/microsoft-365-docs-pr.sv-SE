@@ -1,11 +1,10 @@
 ---
-title: Skydd mot skräppost i Vanliga frågor om Office 365
+title: Vanliga frågor om skydd mot skräppost
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,15 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: Det här avsnittet innehåller vanliga frågor och svar om skydd mot skräppost. Svar gäller för Microsoft Exchange Online- och Exchange Online Protection (EOP)-kunder.
-ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Vanliga frågor och svar för administratörer om skydd mot skräppost i Exchange Online och fristående Exchange Online Protection (EOP).
+ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033500"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528319"
 ---
-# <a name="anti-spam-protection-in-office-365-faq"></a>Skydd mot skräppost i Vanliga frågor om Office 365
+# <a name="anti-spam-protection-faq-in-office-365"></a>Vanliga frågor om skydd mot skräppost i Office 365
 
 Det här avsnittet innehåller vanliga frågor och svar om skydd mot skräppost för Office 365-kunder med postlådor i Exchange Online- eller fristående Exchange Online Protection-kunder (EOP) utan Exchange Online-postlådor.
 
@@ -31,9 +30,11 @@ Frågor och svar om karantänen finns i [Vanliga frågor om karantän](quarantin
 
 Frågor och svar om skydd mot skadlig kod finns i [Vanliga frågor om skydd mot skadlig kod](anti-malware-protection-faq-eop.md).
 
+För frågor och svar om anti-spoofing skydd, se [Anti-spoofing skydd FAQ](anti-spoofing-protection-faq.md).
+
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>F. Vad händer som standard med ett meddelande som har upptäckts av skräppost?
 
-A. **För inkommande meddelanden:** Majoriteten av spam raderas via anslutningsfiltrering, som baseras på IP-adressen för käll-e-postservern. Policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterregler) inspekterar och klassificerar meddelanden som skräppost, bulk eller nätfiske. Som standard levereras meddelanden som klassificeras som skräppost eller bulk till mottagarens skräppostmapp, medan meddelanden som klassificeras som nätfiske sätts i karantän. Du kan ändra standardpolicyn mot skräppost (gäller alla mottagare) eller skapa anpassade policyer mot skräppost med striktare inställningar för specifika användargrupper (du kan till exempel sätta skräppost i karantän som skickas till chefer). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md) och Rekommenderade [principinställningar för skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+A. **För inkommande meddelanden:** Majoriteten av spam tas bort via anslutningsfiltrering, som baseras på IP-adressen för källan e-postserver. Policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterregler) inspekterar och klassificerar meddelanden som skräppost, bulk eller nätfiske. Som standard levereras meddelanden som klassificeras som skräppost eller bulk till mottagarens skräppostmapp, medan meddelanden som klassificeras som nätfiske sätts i karantän. Du kan ändra standardpolicyn mot skräppost (gäller alla mottagare) eller skapa anpassade policyer mot skräppost med striktare inställningar för specifika användargrupper (du kan till exempel sätta skräppost i karantän som skickas till chefer). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md) och Rekommenderade [principinställningar för skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
 > I hybriddistributioner där EOP skyddar lokala postlådor måste du konfigurera två Exchange-regler för e-postflöde (kallas även transportregler) i din lokala Exchange-organisation för att identifiera EOP-skräppostfiltreringshuvuden som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).

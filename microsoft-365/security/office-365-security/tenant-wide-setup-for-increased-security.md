@@ -1,5 +1,5 @@
 ---
-title: Konfigurera din Office 365-klient för ökad säkerhet
+title: Konfigurera Office 365-klientorganisationen för ökad säkerhet
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,14 +17,14 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Väg dig igenom rekommenderad konfiguration för klientomfattande inställningar som påverkar säkerheten i office 365-miljön. Dina säkerhetsbehov kan kräva mer eller mindre säkerhet. Använd dessa rekommendationer som utgångspunkt.
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081262"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529019"
 ---
-# <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurera din Office 365-klient för ökad säkerhet
+# <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurera Office 365-klientorganisationen för ökad säkerhet
 
 I det här avsnittet får du hjälp med rekommenderad konfiguration för klientomfattande inställningar som påverkar säkerheten i Office 365-miljön. Dina säkerhetsbehov kan kräva mer eller mindre säkerhet. Använd dessa rekommendationer som utgångspunkt.
 
@@ -39,7 +39,7 @@ Microsoft 365-säkerhetscentret innehåller funktioner som skyddar din miljö. D
 ||||
 |---|---|---|
 |**Området**|**Innehåller en standardprincip**|**Rekommendation**|
-|**Anti-phishing**|Ja| Om du har en anpassad domän skapar du en policy mot nätfiske för att skydda dina mest värdefulla användares e-postkonton, till exempel din VD, och för att skydda din domän. Granska [Konfigurera en anti-phishing-policy](set-up-anti-phishing-policies.md) och skapa en princip med hjälp av exemplet som vägledning: "Exempel: Policy Anti-phishing för att skydda en användare och en domän."|
+|**Anti-phishing**|Ja|Om du har en anpassad domän konfigurerar du standardpolicyn mot nätfiske för att skydda e-postkonton för dina mest värdefulla användare, till exempel din VD, och för att skydda din domän. Granska [principer för nätfiske mot nätfiske i Office 365](set-up-anti-phishing-policies.md) och se [Konfigurera standardprincipen mot nätfiske i EOP](configure-anti-phishing-policies-eop.md) eller [Konfigurera ATP-principer för phishing i Office 365](configure-atp-anti-phishing-policies.md).|
 |**Anti-Malware Motor**|Ja| Redigera standardprincipen: <br/> &ensp;&ensp;* Filter för vanliga typer av bifogade filer – Välj på <br/><br/> Du kan också skapa anpassade filterprinciper för skadlig kod och tillämpa dem på angivna användare, grupper eller domäner i organisationen. <br/><br/> Mer information: <br/> &ensp;&ensp;* [Skydd mot skadlig kod](anti-malware-protection.md) <br/> &ensp;&ensp;* [Konfigurera policyer mot skadlig kod](configure-anti-malware-policies.md)|
 |**ATP säkra bilagor**|Nej| Skydda filer i SharePoint, OneDrive och Microsoft Teams på huvudsidan för säkra bifogade filer genom att markera den här rutan: <br/> &ensp;&ensp;* Aktivera ATP för SharePoint, OneDrive och Microsoft Teams <br/><br/> Lägg till en ny princip för säker bifogade filer med följande inställningar: <br/> &ensp;&ensp;* Blockera - Blockera nuvarande och framtida e-post och bilagor med upptäckt skadlig kod (välj det här alternativet) <br/> &ensp;&ensp;* Aktivera omdirigering – (Markera den här rutan och ange en e-postadress, till exempel ett administratörs- eller karantänkonto) <br/> &ensp;&ensp;* Använd ovanstående val om malware skanning för bilagor time out eller fel inträffar (markera den här rutan) <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän) <br/><br/>Mer information: [Konfigurera principer för betrodda bilagor i Office 365](set-up-atp-safe-attachments-policies.md)|
 |**ATP säkra länkar**|Ja| Lägg till den här inställningen i standardprincipen för hela organisationen: <br/> &ensp;&ensp;* Använd säkra länkar i: Office 365 ProPlus, Office för iOS och Android (välj det här alternativet). <br/><br/>Rekommenderad princip för specifika mottagare: <br/> &ensp;&ensp;* Webbadresser kommer att skrivas om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken (välj det här alternativet). <br/> &ensp;&ensp;* Använd säkra bilagor för att skanna nedladdningsbart innehåll (markera den här rutan). <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän). <br/><br/> Mer information: [Safe Links för Office 365 ATP](atp-safe-links.md).|

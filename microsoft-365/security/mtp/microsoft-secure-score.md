@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163904"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541101"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -168,6 +168,8 @@ För att säkerställa att Microsoft Secure Score är meningsfull och att varje 
 - Upptäck riskfyllda och icke-kompatibla skugg-IT-program
 - Granska behörigheter & blockera riskfyllda OAuth-program som är anslutna till din miljö
 - Konfigurera versionshantering på SharePoint onlinedokumentbibliotek
+- Ta bort/blockera konton som inte använts under de senaste 30 dagarna
+- Utse färre än 5 globala administratörer
 
 #### <a name="removed-not-scored-improvement-actions"></a>Borttagna förbättringsåtgärder som inte gjorts
 
@@ -225,7 +227,7 @@ En av principerna för Secure Score är att poängen ska vara standardiserade oc
 
 Av dessa skäl har alla förbättringsåtgärder som krävde en granskningskadens tillfälligt tagits bort. Inga åtgärder behövs från din sida.
 
-### <a name="preview-features"></a>Förhandsgranska funktioner
+### <a name="preview-features"></a>Förhandsgranskningsfunktioner
 
 Följande funktioner kommer att ingå i [förhandsversionen:](microsoft-secure-score-preview.md)
 

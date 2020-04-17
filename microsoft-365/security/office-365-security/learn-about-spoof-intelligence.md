@@ -1,11 +1,11 @@
 ---
-title: Läs mer om falska underrättelser
+title: Konfigurera falska underrättelser
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/22/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,135 +16,216 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: Använd falska underrättelser i &amp; Security Compliance Center på sidan Inställningar för skräppost för att granska alla avsändare som förfalskar antingen domäner som ingår i din organisation eller förfalskar externa domäner. Falska underrättelser är tillgängliga som en del av Office 365 Enterprise E5 eller separat som en del av Avancerat skydd mot hot och Exchange Online Protection.
-ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: Administratörer kan lära sig hur du konfigurerar förfalskade avsändare så att de tillåter eller inte tillåter, och andra falska intelligensinställningar i Exchange Online och Exchange Online Protection (EOP).
+ms.openlocfilehash: 96a1442c893444108aaf6814484bc4e4d55aa731
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081466"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528743"
 ---
-# <a name="learn-more-about-spoof-intelligence"></a>Läs mer om falska underrättelser
+# <a name="configure-spoof-intelligence-in-office-365"></a>Konfigurera falska underrättelser i Office 365
 
-Använd falska underrättelser i &amp; Security Compliance Center på **sidan Inställningar** för skräppost för att granska alla avsändare som förfalskar antingen domäner som ingår i din organisation eller förfalskar externa domäner. Falska underrättelser finns tillgängliga som en del av Office 365 Enterprise E5 eller separat som en del av Advanced Threat Protection (ATP) och från och med oktober 2018 Exchange Online Protection (EOP).
+Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection -kund (EOP) utan Exchange Online-postlådor skyddas inkommande e-postmeddelanden automatiskt mot förfalskning av EOP från och med oktober 2018. EOP använder falska underrättelser som en del av organisationens övergripande försvar mot nätfiske. Mer information finns [i Skydd mot förfalskning i Office 365](anti-spoofing-protection.md).
 
-## <a name="what-types-of-email-spoofing-can-i-review-and-which-should-i-protect-against-with-spoof-intelligence"></a>Vilka typer av e-post förfalskning kan jag granska och som ska jag skydda mot med falska intelligens?
+När en avsändare förfalskar en e-postadress verkar de vara en användare i en av organisationens domäner eller en användare i en extern domän som skickar e-post till din organisation. Angripare som förfalskar avsändare för att skicka skräppost eller nätfiske e-post måste blockeras. Men det finns scenarier där legitima avsändare är förfalskning. Till exempel:
 
-För domäner som du äger kan du granska avsändare som förfalskar din domän och sedan välja att låta avsändaren fortsätta eller blockera avsändaren. För externa domäner kan du tillåta avsändardomänen i kombination med den sändande infrastrukturen, men inte en person som skickar e-postadress.
+- Legitima scenarier för förfalskning av interna domäner:
 
-När en avsändare förfalskar en e-postadress verkar de skicka e-post för ett eller flera användarkonton inom en av organisationens domäner eller en extern domän som skickar till din organisation. Överraskande nog finns det några legitima affärsmässiga skäl för förfalskning. I dessa fall skulle du till exempel inte blockera avsändaren från att förfalska domänen:
+  - Avsändare från tredje part använder domänen för att skicka massutskick till dina egna anställda för företagsavundersökningar.
 
-- Du har avsändare från tredje part som använder domänen för att skicka massutskick till dina egna anställda för företagsavundersökningar.
+  - Ett externt företag genererar och skickar reklam- eller produktuppdateringar för din räkning.
 
-- Du har anlitat ett externt företag för att generera och skicka ut reklam- eller produktuppdateringar för din räkning.
+  - En assistent måste regelbundet skicka e-post till en annan person inom organisationen.
 
-- En assistent som regelbundet behöver skicka e-post till en annan person inom organisationen.
+  - Ett internt program skickar e-postmeddelanden.
 
-- Ett program som är konfigurerat för att förfalska sin egen organisation för att skicka interna meddelanden via e-post.
+- Legitima scenarier för förfalskning av externa domäner:
 
-Externa domäner skickar ofta förfalskad e-post, och många av dessa skäl är legitima. Här är till exempel några legitima fall när externa avsändare skickar förfalskad e-post:
+  - Avsändaren finns i en e-postlista (kallas även diskussionslista) och e-postlistan vidarebefordrar e-post från den ursprungliga avsändaren till alla deltagare i e-postlistan.
 
-- Avsändaren finns med i en diskussionssändlista och e-postlistan vidarebefordrar e-postmeddelandet från den ursprungliga avsändaren till alla deltagare i e-postlistan.
+  - Ett externt företag skickar e-post på uppdrag av ett annat företag (till exempel en automatiserad rapport eller ett program-som-en-tjänst företag).
 
-- Ett externt företag skickar e-post på uppdrag av ett annat företag (till exempel en automatisk rapport eller ett program-som-en-tjänst-företag).
+Falska underrättelser, och särskilt standardprincipen (och endast) falska underrättelser, hjälper till att säkerställa att falska e-postmeddelanden som skickas av legitima avsändare inte fastnar i skräppostfilter i Office 365 eller externa e-postsystem, samtidigt som användarna skyddas från skräppost- eller nätfiskeattacker.
 
-Du behöver ett sätt att se till att e-postmeddelandet som skickas av legitima förfalskare inte fastnar i skräppostfilter i Office 365 eller externa e-postsystem. Normalt behandlar Office 365 dessa e-postmeddelanden som skräppost. Som Office 365-administratör kan du förhindra detta genom att konfigurera falska &amp; filter i Säkerhetsefterlevnadscenter. Om du äger domänen kan du konfigurera SPF, DKIM och DMARC så att dessa avsändare tillåts.
+Du kan hantera falska underrättelser i Office 365 Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Office 365-kunder; Exchange Online Protection PowerShell för fristående EOP-kunder).
 
-Å andra sidan måste illvilliga spoofers, de avsändare som förfalskar din domän, eller externa domäner, för att skicka skräppost eller nätfiske e-post, blockeras. Spoofing är också ett vanligt sätt för phishers att få användaruppgifter. Office 365 har inbyggt förfalskningsskydd för att skydda din organisation från avsändare av dessa skadliga e-postmeddelanden. Förfalskningsskydd för organisationens domäner är alltid aktiverat för alla Office 365-kunder, och det externa domänskyddet gäller som standard för avancerade hotskyddskunder och från och med oktober 2018 eop-kunder. För att ytterligare stärka detta skydd, tala om för oss vilka avsändare som har behörighet att förfalska din organisations domäner och skicka e-post för din räkning, och om några externa domäner tillåts förfalska. Alla e-postmeddelanden som skickas från en avsändare som du inte godkänner behandlas som skräppost eller förfalskning av Office 365. Håll ett öga på avsändarna som förfalskar din domän och hjälp &amp; oss att förbättra falska underrättelser med hjälp av Security Compliance Center.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-## <a name="managing-spoof-intelligence-in-the-security-amp-compliance-center"></a>Hantera falska underrättelser i &amp; Security Compliance Center
-<a name="Managespooflist"> </a>
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>. Om du vill gå direkt till <https://protection.office.com/antiphishing>sidan **Mot nätfiske** använder du .
 
-Den falska underrättelseprincip som du har konfigurerat tillämpas alltid av Office 365. Du kan inte inaktivera den, men du kan välja hur mycket du vill aktivt hantera den.
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-Du kan granska avsändare som förfalskar din domän eller externa domäner och sedan bestämma om varje avsändare &amp; ska tillåtas göra det med hjälp av Säkerhetsefterlevnadscenter. För varje förfalskat användarkonto som en avsändare förfalskar från din domän eller en extern domän kan du visa informationen i följande tabell.
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill ändra informationsprincipen eller aktivera eller inaktivera falska underrättelser måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till den falska underrättelsepolicyn måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
 
-|**Parametern**|**Beskrivning**|
-|:-----|:-----|
-|Avsändare  <br/> |Kallas även den sanna avsändaren. Detta är vanligtvis den domän från vilken falska e-post kommer. Office 365 bestämmer domänen för pekaren (PTR) DNS-posten för den sändande IP-adressen som förfalskar din organisation. Om ingen domän hittas visas avsändarens IP-adress i stället i rapporten.  <br/> |
-|Förfalskad användare  <br/> |Användarkontot som förfalskas av avsändaren.  <br/> **Endast** internfliken. Det här fältet innehåller en enda e-postadress, eller om avsändaren förfalskar flera användarkonton innehåller det **mer än en**.  <br/> **Endast extern** flik. Externa domäner innehåller bara en sändande domän och innehåller ingen fullständig e-postadress.  <br/> **Tips! För avancerade administratörer.** Den förfalskade användaren är från-adressen (5322.From) som också är den adress som visas som Från-adressen av e-postklienten. Detta kallas ibland adressen header.from. Adressens giltighet kontrolleras inte av SPF.           |
-|Antal meddelanden  <br/> |Antalet e-postmeddelanden som avsändaren har skickat till din organisation för den identifierade förfalskade avsändarens eller avsändares räkning inom de senaste 30 dagarna.  <br/> |
-|Antal klagomål från användare  <br/> |Klagomål som lämnats in av användare mot denna avsändare av dina användare inom de senaste 30 dagarna. Klagomål är vanligtvis i form av skräp inlagor till Microsoft.  <br/> |
-|Autentiseringsresultat  <br/> |Det här värdet **skickas** om avsändaren har skickat autentiseringskontroller för Exchange Online Protection (EOP), till exempel SPF eller DKIM, **Misslyckades** om avsändaren misslyckades med EOP-avsändarens autentiseringskontroller eller **Okänd** om resultatet av dessa kontroller inte är känt.  <br/> |
-|Beslut som fastställts av  <br/> |Visar om Office 365-administratören eller den falska underrättelseprincipen avgör om avsändaren tillåts förfalska användaren eller inte.  <br/> |
-|Senast sedd  <br/> |Det sista datum då ett meddelande togs emot av den här avsändaren för den här förfalskade användarens räkning.  <br/> |
-|Får du förfalska?  <br/> | Visar om den här avsändaren tillåts skicka e-post för den falska användarens räkning. Möjliga värden inkluderar:  <br/> **Ja, det är det** Alla falska adresser från den här förfalskaren kommer att tillåtas att förfalska din organisation.  <br/> **Nej, det finns ingen** Falska adresser från den här förfalskande avsändaren kommer inte att tillåtas att förfalska din organisation. I stället markeras meddelanden från den här avsändaren som skräppost av Office 365.  <br/> **Vissa användare** Om en avsändare förfalskar flera användare tillåts vissa falska adresser från den här avsändaren att förfalska din organisation, resten markeras som skräppost. Använd fliken **Detaljerad** om du vill visa de specifika adresserna.  <br/> |
-|Spoof Typ  <br/> |Det här värdet är **Internt** om domänen är en av organisationens etablerade domäner, annars är värdet **externt**.  <br/> |
+- För våra rekommenderade inställningar för falska underrättelser, [EOP standard anti-phishing-principinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
- **Så här hanterar du avsändare som förfalskar &amp; din domän med hjälp av Security Compliance Center**
+## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Använd Security & Compliance Center för att hantera förfalskade avsändare
 
-1. Gå till [ &amp; Security Compliance Center](https://protection.office.com).
+> [!NOTE]
+> Om du har en Office 365 Enterprise E5-prenumeration eller har köpt och ATP-tillägg (Advanced Threat Protection) separat kan du även hantera avsändare som förfalskar din domän via [Spoof Intelligence-insikten](walkthrough-spoof-intelligence-insight.md).
 
-2. Logga in på Office 365 med ditt arbets- eller skolkonto. Ditt konto måste ha administratörsuppgifter i office 365-organisationen.
+1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
-3. Expandera **anti-skräppost** **för hothanteringspolicy** \> **Policy** \> i Security &amp; Compliance Center .
+2. På sidan **Inställningar för** skräppost ![klickar](../../media/scc-expand-icon.png) du på Ikonen Expandera för att expandera **Spoof intelligence policy**.
 
-    ![Skärmbild som visar åtkomst till skräppostsidan](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+   ![Välj informationspolicy för falska underrättelser](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
-4. På sidan **Inställningar för skräppostskydd** i den högra rutan bläddrar du nedåt och expanderar **Spoof intelligence policy**.
+3. Gör något av följande val:
 
-    ![Spolat](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
+   - **Granska nya avsändare**
+   - **Visa mig avsändare som jag redan har granskat**
 
-5. Om du vill visa listan över avsändare som förfalskar domänen väljer du **Granska nya avsändare** och väljer fliken **Dina domäner.**
+4. I **Bestäm om dessa avsändare tillåts förfalska användarnas** utfällbara alternativ som visas väljer du en av följande flikar:
 
-    Om du redan har granskat avsändare och vill ändra några av dina tidigare val kan du välja **Visa avsändare som jag redan har granskat** i stället. I båda fallen visas följande panel.
+   - **Dina domäner:** Avsändare som förfalskar användare i dina interna domäner.
+   - **Externa domäner**: Avsändare som förfalskar användare i externa domäner.
 
-    ![Skärmbild som visar åtkomst till fliken förfalskade avsändare](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+5. Klicka ![på](../../media/scc-expand-icon.png) Ikonen Expandera i kolumnen **Tillåtet att förfalska?** Välj **Ja** om du vill tillåta förfalskad avsändare eller välj **Nej** för att markera meddelandet som förfalskat. Åtgärden styrs av standardpolicyn mot nätfiske eller anpassade ATP-principer för nätfiske (standardvärdet är **Flytta meddelande till mappen Skräppost**). Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).
 
-    Varje förfalskad användare visas på en separat rad så att du kan välja om du vill tillåta eller blockera avsändaren från att förfalska varje användare individuellt.
+   ![Skärmbild som visar de utfällda utfällbara avsändare som spoofed och om avsändaren tillåts förfalska](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
-    Om du vill lägga till en avsändare i listan tillåt för en användare väljer du **Ja** i kolumnen **Tillåten att förfalska.** Om du vill lägga till en avsändare i blockeringslistan för en användare väljer du **Nej**.
+   Kolumnerna och värdena som visas förklaras i följande lista:
 
-    Om du vill ange principen för domäner som du inte äger väljer **Yes** du **Allowed to Spoof** fliken **Externa domäner.** Alternativt, om du tror att Office 365 har gjort ett misstag genom att tillåta avsändaren att skicka falska e-postmeddelanden, ändra **kolumnen Tillåtet att förfalska** till **Nej**.
+   - **Förfalskad användare**: Användarkontot som förfalskas. Det här är meddelandeavsändaren i från-adressen (kallas även `5322.From` adressen) som visas i e-postklienter. Adressens giltighet kontrolleras inte av SPF.
 
-    ![Skärmbild som visar om en avsändare får förfalska](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+     - På fliken **Dina domäner** innehåller värdet en enda e-postadress, eller om käll-e-postservern förfalskar flera användarkonton innehåller det **mer än en**.
 
-6. Välj **Spara** för att spara eventuella ändringar.
+     - På fliken **Externa domäner** innehåller värdet domänen för den förfalskade användaren, inte den fullständiga e-postadressen.
 
-Om du har en Office 365 Enterprise E5-prenumeration eller separat har köpt Avancerat skydd mot hot som tillägg kan du även hantera avsändare som förfalskar din domän via [Spoof Intelligence-insikten](walkthrough-spoof-intelligence-insight.md).
+   - **Skicka infrastruktur:** Domänen som hittades i en omvänd DNS-sökning (PTR-post) av käll-e-postserverns IP-adress, eller IP-adressen om källan inte har någon PTR-post.
 
-## <a name="configuring-the-anti-spoofing-policy"></a>Konfigurera anti-spoofing-policyn
-<a name="Managespooflist"> </a>
+     Mer information om meddelandekällor och meddelandeavsändare finns i [En översikt över e-postmeddelandenstandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Förutom att tillåta eller blockera en viss avsändare från att skicka förfalskad e-post till din organisation kan du också konfigurera hur strikt du vill att filtret ska vara och åtgärden ska vidtas när ett förfalskningsmeddelande hittas.
+   - **Antal meddelanden**: Antalet meddelanden från den sändande infrastrukturen till din organisation som innehåller den angivna förfalskade avsändaren eller avsändare inom de senaste 30 dagarna.
 
-Skydd mot förfalskning tillämpas på e-post från avsändare från domäner som är externa till din Office 365-organisation. Du kan tillämpa principen på mottagare vars postlådor är licensierade för Office 365 Enterprise E5, Avancerat skydd mot hot och från och med oktober 2018 eop-kunder. Du hanterar anti-spoofing-principen tillsammans med de andra anti-phishing-inställningarna. Mer information om inställningar mot nätfiske finns i [Konfigurera Office 365 ATP:s principer för phishing och anti-nätfiske](set-up-anti-phishing-policies.md).
+   - **Antal klagomål från användare:** Klagomål som lämnats in av dina användare mot denna avsändare inom de senaste 30 dagarna. Klagomål är vanligtvis i form av skräp inlagor till Microsoft.
 
-Office 365 innehåller standardskydd mot förfalskning som alltid körs. Det här standardskyddet visas &amp; inte i Säkerhetsefterlevnadscenter eller kan hämtas via Windows PowerShell-cmdletar. Du kan inte ändra standardskyddet mot förfalskning. I stället kan du konfigurera hur strikt Office 365 tillämpar skyddet mot förfalskning i varje antivirusprincip som du skapar.
+   - **Autentiseringsresultat**: Ett av följande värden:
 
-Även om principen mot förfalskning visas under anti-phishing-principen &amp; i Security Compliance Center, ärver den inte standardbeteendet från den befintliga nätfiskeinställningen under konfigurationen mot skräppost. Om du har inställningar under **Anti-spam** \> **Phishing** som du vill replikera för anti-spoofing, måste du skapa en anti-phishing-policy och sedan redigera parodidelen av anti-phishing-principen för att återspegla dina falska inställningar som beskrivs i följande avsnitt, i stället för att acceptera standardinställningarna som körs i bakgrunden.
+      - **Godkänd**: Avsändaren skickade avsändare e-postautentiseringskontroller (SPF eller DKIM).
+      - **Misslyckades**: Avsändaren misslyckades EOP-avsänaren autentiseringskontroller.
+      - **Okänd**: Resultatet av dessa kontroller är inte känt.
 
- **Så här konfigurerar du skydd mot förfalskning inom en anti-phishing-princip med hjälp av Security &amp; Compliance Center**
+   - **Beslut som fastställts av**: Visar vem som fastställt om den sändande infrastrukturen tillåts förfalska användaren:
 
-1. Gå till [ &amp; Security Compliance Center](https://protection.office.com).
+       - **Spoof intelligens politik** (automatisk)
+       - **Admin** (manuell)
 
-2. Logga in på Office 365 med ditt arbets- eller skolkonto. Ditt konto måste ha administratörsuppgifter i office 365-organisationen.
+   - **Senast sedd**: Det sista datumet då ett meddelande togs emot från den sändande infrastrukturen som innehåller den falska användaren.
 
-3. &amp; Expandera **Policy** \> **anti-nätfiske** **Threat Management** \> i Säkerhetsefterlevnadscenter .
+   - **Tillåtet att förfalska?**: De värden som du ser här är:
 
-4. På sidan **Nätfiskeskydd** i den högra rutan väljer du den anti-phishing-princip som du vill konfigurera.
+     - **Ja**: Meddelanden från kombinationen av förfalskad användare och skicka infrastruktur är tillåtna och behandlas inte som förfalskad e-post.
 
-5. På sidan som visas i raden **Spoof** väljer du **Redigera**.
+     - **Nej**: Meddelanden från kombinationen av förfalskad användare och skickad infrastruktur markeras som förfalskade. Åtgärden styrs av standardpolicyn mot nätfiske eller anpassade ATP-principer för nätfiske (standardvärdet är **Flytta meddelande till mappen Skräppost**). Mer information finns i nästa avsnitt.
 
-6. Konfigurera sedan åtgärderna så att de ska vidtas när ett meddelande identifieras som en förfalskning mellan domäner. Standardbeteendet är att flytta meddelandet till mottagarens skräppostmapp. Det andra alternativet är att skicka meddelandet till karantänen. Mer information om hur du hanterar meddelanden som skickas till karantän finns [i e-postmeddelanden i karantän i Office 365](quarantine-email-messages.md).
+     - **Vissa användare** ( fliken**Domäner** endast): En skickande infrastruktur förfalskar flera användare, där vissa falska användare är tillåtna och andra inte är det. Använd fliken **Detaljerad** om du vill visa de specifika adresserna.
 
-    ![Skärmbild som visar alternativ för redigering av principering](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+6. Klicka på **Spara**längst ned på sidan .
 
-7. Gör ditt val och välj sedan **Spara**.
+## <a name="use-powershell-to-manage-spoofed-senders"></a>Använda PowerShell för att hantera förfalskade avsändare
 
-## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Andra sätt att hantera förfalskning och nätfiske med Office 365
-<a name="Managespooflist"> </a>
+Om du vill visa tillåtna och blockerade avsändare i falska underrättelser använder du följande syntax:
+
+```powershell
+Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <Low | High>] [-DecisionBy <Admin | SpoofProtection>] [-Detailed] [-SpoofType <Internal | External>]
+```
+
+I det här exemplet returneras detaljerad information om alla avsändare som tillåts förfalska användare i dina domäner.
+
+```powershell
+Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
+```
+
+Detaljerad syntax- och parameterinformation finns i [Hämta-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy).
+
+Så här konfigurerar du tillåtna och blockerade avsändare i falska underrättelser:
+
+1. Fånga den aktuella listan över upptäckta förfalskade avsändare genom att skriva utdata från cmdleten **Get-PhishFilterPolicy** till en CSV-fil:
+
+   ```powershell
+   Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
+   ```
+
+2. Redigera CSV-filen för att lägga till eller ändra värdena **SpoofedUser** (e-postadress) och **AllowedToSpoof** (Ja eller Nej). Spara filen, läs filen och lagra innehållet som `$UpdateSpoofedSenders`en variabel med namnet :
+
+   ```powershell
+   $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
+   ```
+
+3. Använd `$UpdateSpoofedSenders` variabeln för att konfigurera principen för falska underrättelser:
+
+   ```powershell
+   Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
+   ```
+
+Detaljerad syntax- och parameterinformation finns i [Ange-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy).
+
+## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>Använd Security & Compliance Center för att konfigurera falska underrättelser
+
+Konfigurationsalternativen för falska underrättelser beskrivs i [Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).
+
+Vilka alternativ du har tillgång till beror på din prenumeration:
+
+- Fristående EOP-organisationer utan Exchange Online-postlådor kan inte konfigurera falska intelligensinställningar.
+
+- Office 365-organisationer med Exchange Online-postlådor kan konfigurera falska intelligensinställningar i standardprincipen (och endast) anti-phishing-principen. Instruktioner finns [i Konfigurera standardprincipen mot nätfiske i EOP](configure-anti-phishing-policies-eop.md).
+
+- Office 365-organisationer med ATP kan konfigurera falska intelligensinställningar i atp-principen mot nätfiske, och även i anpassade ATP-principer mot nätfiske. Instruktioner finns [i Konfigurera ATP-principer för nätfiske i Office 365](configure-atp-anti-phishing-policies.md).
+
+## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
+
+Om du vill kontrollera att du har konfigurerat falska underrättelser med avsändare som är tillåtna och inte får förfalska och att du har konfigurerat falska intelligensinställningar använder du något av följande steg:
+
+- Gå till **Policy** \> **Policy** \> för skräppostutredning av **skräppost** \> för **Spoof intelligence policy** \> & som du redan **har granskat** \> fliken Säkerhet **Your Domains** & **efterlevnadscenter** och verifiera värdet **tillåten att förfalska?**
+
+- I PowerShell kör du följande kommandon för att visa de avsändare som är tillåtna och inte får förfalska:
+
+  ```powershell
+  Get-PhishFilter -AllowedToSpoof Yes -SpoofType Internal
+  Get-PhishFilter -AllowedToSpoof No -SpoofType Internal
+  Get-PhishFilter -AllowedToSpoof Yes -SpoofType External
+  Get-PhishFilter -AllowedToSpoof No -SpoofType External
+  ```
+
+- I PowerShell kör du följande kommando för att exportera listan över alla falska avsändare till en CSV-fil:
+
+   ```powershell
+   Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
+   ```
+
+- Gör något av följande i Office 365-organisationer med Exchange Online-postlådor:
+
+  - Gå till **Policy** \> **Anti-phishing-principen** \> mot **nätfiske** \> **i** Security & Compliance Center och visa information i det utfällbara utfällbara energiläget.
+
+  - I Exchange Online PowerShell kör du följande kommando och verifierar inställningarna:
+
+    ```PowerShell
+    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
+    ```
+
+- Gör något av följande i Office 365 ATP-organisationer:
+
+  - I Security & Compliance Center går du till **ATP-principen** **mot hothanteringspolicy** \> **Policy** \> och gör något av följande:
+
+    - Välj en princip i listan. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
+    - Klicka på **Standardprincip**. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
+
+  - I Exchange Online PowerShell ersätter du \<Namn\> med Office365 AntiPhish Standard eller namnet på en anpassad ATP-anti-phishing-princip och kör följande kommando och verifiera inställningarna:
+
+    ```PowerShell
+    Get-AntiPhishPolicy -Identity "<Name>"
+    ```
+
+## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Andra sätt att hantera förfalskning och nätfiske
 
 Var flitig om förfalskning och nätfiske skydd. Här är relaterade sätt att kontrollera avsändare som förfalskar din domän och hjälper till att förhindra att de skadar din organisation:
 
-- Kontrollera rapporten För förfalskning av e-post för Exchange Online som en del av din rutin. Du kan ofta använda den här rapporten för att visa och hantera förfalskade avsändare. Information finns i **Spoof-e-postrapport** i [Använd e-postskyddsrapporter i Office 365 för att visa data om skadlig kod, skräppost och regelidentifieringar](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
-
-För mer avancerade Office 365-administratörer kan du även utföra följande kontroller:
+- Kontrollera **spoof-e-postrapporten**. Du kan ofta använda den här rapporten för att visa och hantera förfalskade avsändare. Information finns i [rapporten Spoof Detections](view-email-security-reports.md#spoof-detections-report).
 
 - Granska konfigurationen av avsändbara principramar (SPF). En introduktion till SPF finns i [Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md), där du även kan konfigurera det snabbt. För att få en djupare förståelse av hur Office 365 använder SPF, eller om du vill veta hur du felsöker eller göra icke-standarddistributioner (t.ex. hybriddistributioner), kan du börja med att läsa [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing (Så här använder Office 365 SPF för att förhindra förfalskning)](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-- Granska konfigurationen av identifierade e-postmeddelanden (DomainKeys Identified Mail). Du bör använda DKIM tillsammans med SPF och DMARC för att förhindra att förfalskare skickar meddelanden som ser ut som att de kommer från din domän. Med DKIM kan du lägga till en digital signatur i e-postmeddelanden i meddelandehuvudet. Information finns i [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Office 365](use-dkim-to-validate-outbound-email.md).
+- Granska konfigurationen av identifierade e-postmeddelanden (DomainKeys Identified Mail). Du bör använda DKIM utöver SPF och DMARC för att förhindra att angripare skickar meddelanden som ser ut som om de kommer från domänen. Med DKIM kan du lägga till en digital signatur i e-postmeddelanden i meddelandehuvudet. Information finns i [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Office 365](use-dkim-to-validate-outbound-email.md).
 
 - Granska konfigurationen för domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMARC). Implementering av DMARC med SPF och DKIM ger ytterligare skydd mot förfalsknings- och nätfiske-e-post. DMARC gör så att mottagande e-postsystem kan bestämma vad som ska göras med meddelanden som skickats från din domän som misslyckas i SPF- eller DKIM-kontroller. Information finns i [Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md).
-
-- Använd cmdleten [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy) i Exchange Online PowerShell eller Exchange Online Protection PowerShell för att samla in detaljerade data om förfalskade avsändare, generera tillåta- och blockeringslistor och hjälpa dig att avgöra hur du skapar mer omfattande SPF-, DKIM- och DMARC DNS-poster utan att din legitima e-post fastnar i externa skräppostfilter. Mer information finns i Så här [fungerar skydd mot förfalskning i Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
