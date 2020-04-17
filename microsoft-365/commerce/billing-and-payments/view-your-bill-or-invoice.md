@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42806557"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540861"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -50,10 +50,23 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
   
 ## <a name="view-a-bill-or-invoice"></a>Visa en faktura
 
+::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fakturor och betalningar</a>.
 
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturor och betalningar</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturor och betalningar</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fakturor och betalningar</a>.
+
+::: moniker-end
 
 2. Välj ett datumintervall i listrutan och välj sedan den beställning du vill visa.
 

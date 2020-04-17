@@ -1,11 +1,11 @@
-- name: Microsoft 365 Säkerhet
+- name: Microsoft 365-säkerhet
   href: index.yml
   items:
     - name: Komma igång
       items:
         - name: Viktigaste åtgärderna för att kunna arbeta hemifrån
           href: top-security-tasks-for-remote-work.md
-        - name: Microsoft 365 Säkerhet för beslutsfattare
+        - name: Microsoft 365-säkerhet för beslutsfattare
           href: Microsoft-365-security-for-bdm.md
         - name: Workshop för utbildning av IT-säkerhetsdirektörer (CISO)
           href: ./office-365-security/ciso-workshop.md
@@ -14,11 +14,11 @@
               href: ./office-365-security/ciso-workshop-module-1.md
             - name: Modul 2 – Säkerhetshantering
               href: ./office-365-security/ciso-workshop-module-2.md
-            - name: Modul 3 – Identitet och användaråtkomst med noll förtroende
+            - name: Modul 3 – Identitet och behörighet för användare med noll förtroende (Zero Trust)
               href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'Modul 4a – Strategi för hotskydd, del I'
+            - name: 'Modul 4a – Strategier för hotskydd, del I'
               href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'Modul 4b – Strategi för hotskydd, del II'
+            - name: 'Modul 4b – Strategier för hotskydd, del II'
               href: ./office-365-security/ciso-workshop-module-4b.md
             - name: Modul 5 – Informationsskydd
               href: ./office-365-security/ciso-workshop-module-5.md
@@ -53,11 +53,11 @@
               href: mtp/prerequisites.md
             - name: Datasäkerhet och sekretess
               href: mtp/data-privacy.md
-            - name: Microsoft-säkerhetsportaler
+            - name: Microsoft säkerhetsportaler
               href: mtp/portals.md
             - name: Felsöka problem
               href: ./mtp/troubleshoot.md
-        - name: Guider med anvisningar
+        - name: Guide med anvisningar
           items:
             - name: Distribuera tjänster som stöds
               href: mtp/deploy-supported-services.md
@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: Ange tidszon
                   href: mtp/mtp-time-zone.md
+            - name: Visa enhetsprofiler
+              href: 'mtp:/device-profile.md'
             - name: Ge feedback
               href: mtp/feedback.md
             - name: Hantera ärenden via ServiceNow
@@ -201,7 +203,7 @@
               href: ./mtp/overview-security-center.md
             - name: Behörigheter i Säkerhets- och efterlevnadscenter för Office 365
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Behörigheter i Microsoft 365 Efterlevnadscenter och Microsoft 365 Säkerhetscenter
+            - name: Behörigheter i efterlevnadscenter i Microsoft 365 och säkerhetscentret i Microsoft 365
               href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: Ge användare åtkomst till säkerhetscentret
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
@@ -220,18 +222,18 @@
                       href: ./office-365-security/configure-anti-malware-policies.md
                     - name: Återställa efter utpressningstrojanattack
                       href: ./office-365-security/recover-from-ransomware.md
-                    - name: Virusidentifiering i SharePoint Online
+                    - name: Virusskydd i SharePoint Online
                       href: ./office-365-security/virus-detection-in-spo.md
                 - name: Skydd mot skräppost
                   href: ./office-365-security/anti-spam-protection.md
                   items:
-                    - name: Vanliga frågor om skydd mot skräppost
+                    - name: Vanliga frågor och svar om skydd mot skräppost
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: Konfigurera principer för skräppostskydd
                       href: ./office-365-security/configure-your-spam-filter-policies.md
                     - name: Konfigurera principen för anslutningsfilter
                       href: ./office-365-security/configure-the-connection-filter-policy.md
-                    - name: Skapa listor med spärrade avsändare
+                    - name: Skapa listor för spärrade avsändare
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
                     - name: Skapa listor för betrodda avsändare
                       href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
@@ -252,7 +254,7 @@
                   items:
                     - name: Konfigurera utgående skräppostfiltrering
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: Leveranspool med hög risk för utgående meddelanden
+                    - name: Pool med hög riskleverans för utgående meddelanden
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Ta bort blockerade användare från portalen med åtkomstbegränsade användare
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
@@ -261,17 +263,17 @@
                   items:
                     - name: Använda administratörsinsändning
                       href: ./office-365-security/admin-submission.md
-                    - name: Aktivera tillägget för att rapportera meddelande
+                    - name: Aktivera tillägget Rapportera meddelande
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Installera och använda tillägget för rapportering av skräppost
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: Rapportera skräppost och nätfiske i Outlook på webben
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-                    - name: Skicka in meddelanden till Microsoft manuellt
+                    - name: Skicka meddelanden till Microsoft manuellt
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Skicka in skadlig kod och icke-skadlig kod till Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-                - name: Meddelandehuvuden för antiskräppost
+                - name: Meddelanderubriker för antiskräppost
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Så kombineras principer och skydd
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
@@ -355,7 +357,7 @@
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
                 - name: Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
-        - name: Advanced Threat Protection
+        - name: Avancerat hotskydd
           href: ./office-365-security/office-365-atp.md
           items:
             - name: Se vad som är nytt
@@ -415,7 +417,7 @@
                   href: ./office-365-security/threat-explorer-views.md
             - name: Integrering för bättre säkerhet
               items:
-                - name: Integrera Office 365 ATP med Microsoft Defender Avancerat skydd
+                - name: Integrera Office 365 ATP med Microsoft Defender ATP
                   href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
                 - name: SIEM-integrering med Office 365 ATP
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
@@ -560,7 +562,7 @@
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
                 - name: Felsökning och support för EOP
                   items:
-                    - name: Felsöka e-post som skickas till Office 365
+                    - name: Felsökning för e-post som skickas till Office
                       href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
                     - name: Hjälp och support för EOP
                       href: ./office-365-security/help-and-support-for-eop.md
