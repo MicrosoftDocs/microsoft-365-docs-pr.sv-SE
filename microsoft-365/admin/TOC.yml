@@ -15,15 +15,15 @@
           href: admin-overview/what-subscription-do-i-have.md
         - name: Läs om Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
-        - name: Admin-mobilapp
+        - name: Admin Mobile-app
           href: admin-overview/admin-mobile-app.md
-    - name: Installation
+    - name: Konfiguration
       items:
         - name: Planera konfigurationen
           href: setup/plan-your-setup.md
         - name: Konfigurera Office 365
           href: setup/setup.md
-        - name: Skillnader mellan inställnings guiden och sidan konfiguration
+        - name: Skillnader mellan inställningsguiden och konfigurationssidan
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Lägga till domän
           href: setup/add-domain.md
@@ -49,7 +49,7 @@
           href: setup/customize-your-organization-theme.md
     - name: Användare och roller
       items:
-        - name: Add users
+        - name: Lägga till användare
           href: add-users/add-users.md
         - name: Skapa och använda en mall för att lägga till användare
           href: add-users/create-and-use-a-template-to-add-users.md
@@ -127,7 +127,7 @@
           href: security-and-compliance/secure-your-business-data.md
         - name: Konfigurera multifaktorautentisering
           href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: Konfigurera multifaktorautentisering (med Office 2013
+        - name: Konfigurera multifaktorautentisering (med Office 2013)
           href: security-and-compliance/enable-modern-authentication.md
         - name: GDPR-efterlevnad
           href: security-and-compliance/gdpr-compliance.md
@@ -189,13 +189,13 @@
           href: manage/remove-licenses-from-users.md
         - name: Lösa licenskonflikter
           href: manage/resolve-license-conflicts.md
-        - name: Visa eller dölja nya funktioner med hjälp av Nyheter
+        - name: Visa eller dölja nya funktioner med den nya hanteringen
           href: manage/show-hide-new-features.md
     - name: Prenumerationer och fakturering
       items:
         - name: Hantera dina abonnemang
           href: ../commerce/index.yml
-        - name: Visa fakturan
+        - name: Visa din faktura
           href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
         - name: Hantera betalningsmetoder
           href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
@@ -239,7 +239,7 @@
           href: create-groups/create-groups.md
         - name: Hantera en Office 365-grupp
           href: create-groups/manage-groups.md
-        - name: Planera för styrning i Office 365-grupper
+        - name: Planera för styrning i Office 365 Grupper
           href: create-groups/plan-for-groups-governance.md
         - name: Hantera skapande av grupper
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +251,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Lägga till eller ta bort medlemmar från grupper
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Förfalloprincip för Office 365-grupper
+        - name: Förfalloprincip för Office 365 Grupper
           href: create-groups/office-365-groups-expiration-policy.md
         - name: Återställa borttagen grupp
           href: create-groups/restore-deleted-group.md
