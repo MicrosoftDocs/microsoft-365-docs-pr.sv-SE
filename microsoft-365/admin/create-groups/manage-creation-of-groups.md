@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Office 365-grupper.
-ms.openlocfilehash: 9016b96821dd9d40a0fb65574ce96d7badd0c2bd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212087"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547592"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Hantera vilka som kan skapa Office 365 Grupper
 
@@ -79,6 +79,9 @@ För att hantera vem som skapar grupper behöver följande personer Azure AD Pre
 
 - Administratören som konfigurerar inställningarna för gruppskapande
 - Medlemmarna i säkerhetsgruppen som får skapa grupper
+
+> [!NOTE]
+> Mer information om hur du tilldelar Azure-licenser finns [i Tilldela eller ta bort licenser i Azure Active Directory-portalen.](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)
 
 Följande personer behöver inte Azure AD Premium- eller Azure AD Basic EDU-licenser som tilldelats dem:
 

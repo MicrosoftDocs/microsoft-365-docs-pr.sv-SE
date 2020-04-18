@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Vilka är bästa metoderna för säkerhetsinställningar för Exchange Online Protection (EOP) och Advanced Threat Protection (ATP). Vilka är de nuvarande rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vilka extrafunktioner får du om du också använder Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 0d5d626da8f8bdcdc234f578145db0dfde2c06a5
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537443"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547614"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet
 
@@ -45,9 +45,8 @@ Anti-spam, anti-malware och anti-phishing är funktioner i EOP som kan konfigure
 
 Om du vill skapa och konfigurera principer mot skräppost finns i [Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 
-|||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |**Åtgärder** för identifiering av skräppost <br/><br/> _SpamAction (Skräppost)_|**Flytta meddelande till mappen Skräppost** <br/><br/> `MoveToJmf`|**Karantänmeddelande** <br/><br/> `Quarantine`||
 |**Åtgärder för** att upptäcka skräppost med högt förtroende <br/><br/> _HögtrohetSpamAction_|**Karantänmeddelande** <br/><br/> `Quarantine`|**Karantänmeddelande** <br/><br/> `Quarantine`||
 |Identifiering av **nätfiske e-post** <br/><br/> _PhishSpamAction (PhishSpamAction)_|**Karantänmeddelande** <br/><br/> `Quarantine`|**Karantänmeddelande** <br/><br/> `Quarantine`||
@@ -65,15 +64,13 @@ Om du vill skapa och konfigurera principer mot skräppost finns i [Konfigurera p
 |**Spam ZAP** <br/><br/> _SpamZapEnabled_|Aktiverat <br/><br/> `$true`|Aktiverat <br/><br/> `$true`||
 |**Phish ZAP** <br/><br/> _PhishZapEnabled_|Aktiverat <br/><br/> `$true`|Aktiverat <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|På|På|Den här inställningen är endast tillgänglig i PowerShell.|
-|
 
 Det finns flera andra asf-inställningar (Advanced Spam Filter) i anti-spam-policyer som håller på att vara inaktuella. Mer information om tidslinjerna för avskrivning av dessa funktioner kommer att meddelas utanför det här avsnittet.
 
 Vi rekommenderar att du inaktiverar dessa ASF-inställningar **Off** för både **standard-** och **strikta** nivåer. Mer information om ASF-inställningar finns [i ASF-inställningar (Advanced Spam Filter) i Office 365](advanced-spam-filtering-asf-options.md).
 
-|||
+| Namn på säkerhetsfunktionen | Kommentarer |
 |----|---|
-|**Namn på säkerhetsfunktionen**|**Kommentarer**|
 |**Bildlänkar till fjärrplatser** _(IncreaseScoreWithImageLinks)_||
 |**Numerisk IP-adress i URL** _(IncreaseScoreWithNumericIps_)||
 |**UL omdirigera till annan port** _(IncreaseScoreWithRedirectToOtherPort)_||
@@ -89,46 +86,39 @@ Vi rekommenderar att du inaktiverar dessa ASF-inställningar **Off** för både 
 |**SPF-post: hårt fel** _(MarkAsSpamSpfRecordHardFail)_||
 |**Filtrering av villkorlig avsändare: hårddiskmisslykning** (_MarkAsSpamFromAddressAuthFail_)||
 |**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
-|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP-utgående skräppostprincipinställningar
 
 Om du vill skapa och konfigurera principer för skräppost för utgående skräppost finns [i Konfigurera skräppostfiltrering i Office 365](configure-the-outbound-spam-policy.md).
 
-||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |**Maximalt antal mottagare per användare: Gräns för extern timme** <br/><br/> _MottagareLimitExternalPerHour_|500|400||
 |**Maximalt antal mottagare per användare: Gräns för intern timme** <br/><br/> _MottagareLimitInternalPerHour_|1000|800||
 |**Maximalt antal mottagare per användare: Daglig gräns** <br/><br/> _MottagareLimitPerDay_|1000|800||
 |**Åtgärd när en användare överskrider gränserna** <br/><br/> _ÅtgärdNärDessholdReached_|**Hindra användaren från att skicka e-post** <br/><br/> `BlockUser`|**Hindra användaren från att skicka e-post** <br/><br/> `BlockUser`||
-|
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP-principinställningar för skadlig kod
 
 Om du vill skapa och konfigurera principer mot skadlig kod finns [i Konfigurera principer mot skadlig kod i Office 365](configure-anti-malware-policies.md).
 
-|||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |**Vill du meddela mottagarna om deras meddelanden sätts i karantän?** <br/><br/> _Åtgärder_|Nej <br/><br/> _Ta bortMessage_|Nej <br/><br/> _Ta bortMessage_|Om skadlig kod upptäcks i en bifogad fil i ett e-postmeddelande sätts meddelandet i karantän och kan endast släppas av en administratör.|
 |**Filter för vanliga typer av bifogade filer** <br/><br/> _EnableFileFilter_|På <br/><br/> `$true`|På <br/><br/> `$true`|Den här inställningen sätter meddelanden i karantän som innehåller körbara bilagor baserat på filtyp, oavsett innehållet i bifogade filer.|
 |**Automatisk rensning av skadlig kod noll timmar** <br/><br/> _ZapEnabled (påförande)_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Meddela interna avsändare** av det olevererade meddelandet <br/><br/> _AktiveraInternalSenderAnmälningar_|Inaktiverad <br/><br/> `$false`|Inaktiverad <br/><br/> `$false`||
 |**Meddela externa avsändare** av det olevererade meddelandet <br/><br/> _AktiveraExternalSenderAnmälningar_|Inaktiverad <br/><br/> `$false`|Inaktiverad <br/><br/> `$false`||
-|
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP:s standardinställningar för principen mot nätfiske
 
 Du kan bara konfigurera dessa inställningar i Office 365-organisationer med Exchange Online-postlådor. Hur du konfigurerar dessa inställningar finns i [Konfigurera standardprincipen mot nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
-|||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |**Aktivera skydd mot förfalskning** <br/><br/> _AktiveraAntispoofEnforcement_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).|
 |**Om e-post skickas av någon som inte får förfalska din domän** <br/><br/> _AutentiseringFailAction_|**Flytta meddelande till mottagarnas skräppostmappar** <br/><br/> `MoveToJmf`|**Karantän meddelandet** <br/><br/> `Quarantine`|Detta gäller blockerade avsändare i [falska underrättelser](learn-about-spoof-intelligence.md).|
-|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Säkerhet för avancerat skydd mot skydd i Office 365
 
@@ -145,11 +135,31 @@ Om du har lagt till en Office 365 ATP-prenumeration i EOP anger du följande kon
 
 EOP-kunder får grundläggande nätfiske som tidigare beskrivits, men Office 365 ATP innehåller fler funktioner och kontroll för att förebygga, upptäcka och åtgärda mot attacker. Om du vill skapa och konfigurera dessa principer finns i [Konfigurera ATP-principer för nätfiske i Office 365](configure-atp-anti-phishing-policies.md).
 
+|Namn på personifieringssäkerhet|Standard|Strikt|Kommentar|
+|---------|---------|---------|---------|
+|(Redigera personifieringsprincip) Lägga till användare som ska skyddas|På|På|Beror på din organisation, men vi rekommenderar att du lägger till användare i viktiga roller. Internt kan dessa vara din VD, CFO och andra ledande befattningshavare. Externt kan dessa omfatta rådsmedlemmar eller din styrelse.|
+|(Redigera personifieringsprincip) Inkludera automatiskt de domäner jag äger|På|På||
+|(Redigera personifieringsprincip) Inkludera anpassade domäner|På|På|Beror på din organisation, men vi rekommenderar att du lägger till domäner som du interagerar med de flesta som du inte äger.|
+|Om e-post skickas av en personifierad användare som du har angett|Karantän meddelandet|Karantän meddelandet||
+|Om e-post skickas av en personifierad domän som du har angett|Karantän meddelandet|Karantän meddelandet||
+|Visa tips för användare som är utgav sig för att vara personifierade|På|På||
+|Visa tips för personifierade domäner|På|På||
+|Visa tips för ovanliga tecken|På|På||
+|Aktivera postlådeinformation|På|På||
+|Aktivera intelligensbaserat personifieringsskydd för postlåda|På|På||
+|Om e-post skickas av en personifierad användare som skyddas av postlådeinformation|Flytta meddelande till mottagarnas skräppostmappar|Karantän meddelandet||
+|(Redigera personifieringsprincip) Lägga till betrodda avsändare och domäner|Ingen|Ingen|Beror på din organisation, men vi rekommenderar att du lägger till användare eller domäner som felaktigt markeras som phish på grund av personifiering och inte andra filter.|
+
+|Namn på falska säkerhetsfunktioner|Standard|Strikt|Kommentar|
+|---------|---------|---------|---------|
+|Aktivera skydd mot förfalskning|På|På||
+|Aktivera oautentiserade avsändare (taggning)|På|På||
+|Om e-post skickas av någon som inte får förfalska din domän|Flytta meddelande till mottagarnas skräppostmappar|Karantän meddelandet||
+
 #### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Inställningar för personifiering i ATP:s principer för phishing-phishing
 
-|||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |Skyddade användare: **Lägg till användare för att skydda** <br/><br/> _AktiveraMålsbegäraSkydd_ <br/><br/> _TargetedAnvändare TillSkydd_|På <br/><br/> `$true` <br/><br/> \<lista över användare\>|På <br/><br/> `$true` <br/><br/> \<lista över användare\>|Beror på din organisation, men vi rekommenderar att du lägger till användare i viktiga roller. Internt kan dessa vara din VD, CFO och andra ledande befattningshavare. Externt kan dessa omfatta rådsmedlemmar eller din styrelse.|
 |Skyddade domäner: **Inkludera automatiskt de domäner jag äger** <br/><br/> _AktiveraOrganisationDomainsSkydd_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |Skyddade domäner: **Inkludera anpassade domäner** <br/><br/> _AktiveraMålsbeställddomSkydd_ <br/><br/> _TargetedDomainsToProtect_|På <br/><br/> `$true` <br/><br/> \<lista över domäner\>|På <br/><br/> `$true` <br/><br/> \<lista över domäner\>|Beror på din organisation, men vi rekommenderar att du lägger till domäner som du ofta interagerar med som du inte äger.|
@@ -163,27 +173,22 @@ EOP-kunder får grundläggande nätfiske som tidigare beskrivits, men Office 365
 |**Om e-post skickas av en personifierad användare som skyddas av postlådeinformation** <br/><br/> _MailboxIntelligenceProtectionAction_|**Flytta meddelande till mottagarnas skräppostmappar** <br/><br/> `MoveToJmf`|**Karantän meddelandet** <br/><br/> `Quarantine`||
 |**Betrodda avsändare** <br/><br/> _UteslutnaSenders_|Ingen|Ingen|Beror på din organisation, men vi rekommenderar att du lägger till användare som felaktigt markeras som phish på grund av personifiering och inte andra filter.|
 |**Betrodda domäner** <br/><br/> _UteslutnaDomäner_|Ingen|Ingen|Beror på din organisation, men vi rekommenderar att du lägger till domäner som felaktigt markeras som phish på grund av personifiering och inte andra filter.|
-|
 
 #### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>Falska inställningar i ATP:s principer för phishing-phishing
 
 Observera att det är samma inställningar som är tillgängliga i [principinställningarna mot skräppost i EOP](#eop-anti-spam-policy-settings).
 
-|||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |**Aktivera skydd mot förfalskning** <br/><br/> _AktiveraAntispoofEnforcement_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).|
 |**Om e-post skickas av någon som inte får förfalska din domän** <br/><br/> _AutentiseringFailAction_|**Flytta meddelande till mottagarnas skräppostmappar** <br/><br/> `MoveToJmf`|**Karantän meddelandet** <br/><br/> `Quarantine`|Detta gäller blockerade avsändare i [falska underrättelser](learn-about-spoof-intelligence.md).|
-|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Avancerade inställningar i ATP:s principer för phishing-phishing
 
-|||||
+| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
-|**Namn på säkerhetsfunktionen**|**Standard**|**Strikt**|**Kommentar**|
 |**Avancerade tröskelvärden för nätfiske** <br/><br/> _PhishThresholdLevel_|**2 - Aggressiv** <br/><br/> `2`|**3 - Mer aggressiv** <br/><br/> `3`||
-|
 
 ### <a name="safe-links-settings"></a>Inställningar för säkra länkar
 
