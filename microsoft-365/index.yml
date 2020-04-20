@@ -46,7 +46,7 @@ additionalContent:
     items:
     - title: Administrationscenter för Microsoft 365
       summary: Konfigurera och hantera Office 365- och Microsoft 365-tjänster för din organisation.
-      url: ./admin/admin-home.yml
+      url: ./admin/admin-home.md
     - title: Microsoft 365 för företag
       summary: Utformad för små och medelstora företag. Driv verksamheten med de senaste versionerna av Windows- och Office-appar som Excel och Outlook. Dra nytta av dataskydd och säkerhet som täcker alla dina företagsenheter.
       url: ./business/index.yml
