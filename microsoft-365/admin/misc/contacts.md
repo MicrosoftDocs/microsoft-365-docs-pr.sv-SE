@@ -61,4 +61,4 @@ ms.locfileid: "42857397"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a><span data-ttu-id="944f0-126">Vad gör jag om jag inte lyckas hitta något svar på min fråga?</span><span class="sxs-lookup"><span data-stu-id="944f0-126">What if my question still hasn't been answered?</span></span>
 
-<span data-ttu-id="944f0-127">Ta en titt i resten av vår [administratörshjälp](../admin-home.yml) eller lämna feedback till oss nedan.</span><span class="sxs-lookup"><span data-stu-id="944f0-127">Visit the rest of our [admin help](../admin-home.yml) or give us your feedback below.</span></span>
+<span data-ttu-id="944f0-127">Ta en titt i resten av vår [administratörshjälp](../admin-home.md) eller lämna feedback till oss nedan.</span><span class="sxs-lookup"><span data-stu-id="944f0-127">Visit the rest of our [admin help](../admin-home.md) or give us your feedback below.</span></span>
