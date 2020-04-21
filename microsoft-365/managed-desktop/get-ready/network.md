@@ -1,7 +1,7 @@
 ---
 title: Nätverkskonfiguration för Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42811827"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583339"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Nätverkskonfiguration för Microsoft Managed Desktop
 
@@ -25,40 +25,40 @@ ms.locfileid: "42811827"
 
 Microsoft Managed Desktop är en molnhanterad tjänst. Det finns en uppsättning slutpunkter som Microsoft Managed Desktop-tjänsterna måste kunna nå. I det här avsnittet visas de slutpunkter som måste tillåtas för de olika aspekterna av Tjänsten Microsoft Managed Desktop. 
 
-Kunderna kan optimera sitt nätverk genom att skicka alla betrodda Microsoft 365-nätverksbegäranden direkt via sin brandvägg eller proxy, kringgå autentisering och all ytterligare inspektion eller bearbetning på paketnivå. Detta minskar svarstiden och dina perimeterkapacitetskrav. 
+Kunder kan optimera sitt nätverk genom att skicka alla betrodda Microsoft 365-nätverksbegäranden direkt via brandväggen eller proxyn, kringgå autentisering och alla ytterligare inspektioner eller bearbetning på paketnivå. Detta minskar svarstiden och dina krav på omkretskapacitet. 
 
-För att optimera prestanda för Microsoft Managed Desktop-molnbaserade tjänster behöver dessa slutpunkter också särskild hantering av kundklientwebbläsare och enheterna i deras kantnätverk. Dessa enheter omfattar brandväggar, SSL Break and Inspect, paketinspektionsenheter och system för förebyggande av dataförluster.
+För att optimera prestanda för Microsoft Managed Desktop molnbaserade tjänster behöver dessa slutpunkter också hantering av kundklientwebbläsare och enheterna i deras edge-nätverk. Dessa enheter omfattar brandväggar, SSL Break and Inspect, paketinspektionsenheter och dataförlustskyddssystem.
 
 ### <a name="proxy-requirement"></a>Proxykrav
 
-Proxyn eller brandväggen måste ha stöd för TLS 1.2. Annars kan du behöva inaktivera protokollidentifiering.
+Proxyn eller brandväggen måste ha stöd för TLS 1.2. Annars kanske du måste inaktivera protokollidentifiering.
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Tillåtna slutpunkter – specifika för Microsoft Managed Desktop
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Tillåtna slutpunkter – specifikt för Microsoft Managed Desktop
 
-Microsoft Managed Desktop använder Azure Portal för att vara värd för sin webbkonsol. Följande webbadresser i tabellen nedan måste finnas med i listan över proxy och brandvägg så att Microsoft Managed Desktop-enheter kan kommunicera med Microsoft Services.  
+Microsoft Managed Desktop använder Azure Portal för att vara värd för sin webbkonsol. Följande webbadresser i tabellen nedan måste finnas med i listan över proxy- och brandväggar så att Microsoft Hanterade skrivbordsenheter kan kommunicera med Microsoft Services.  
 
-Observera att Microsoft Managed Desktop-url:en nedan används för allt som vår tjänst körs på kund-API:et. Du måste se till att webbadressen alltid är tillgänglig i företagets nätverk.
+Observera att Microsofts hanterade skrivbords-URL nedan används för allt som vår tjänst körs på kundens API. Du måste se till att den här webbadressen alltid är tillgänglig i företagets nätverk.
 
-Microsoft-tjänst  | Webbadresser som krävs i listan tillåts 
+Microsoft-tjänst  | Webbadresser som krävs i listan tillåt 
 --- | --- | ---
-Microsoft-hanterat skrivbord | prod-mwaas-services-customerapi.azurewebsites.net
+Microsoft Hanterat skrivbord | prod-mwaas-services-customerapi.azurewebsites.net
 Få hjälp | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
-Snabbhjälp | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
-Microsoftsupport och återställningsassistent för Office 365 | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
+Snabb assista | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
+Microsofts support- och återställningsassistent för Office 365 | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>Tillåtna slutpunkter – andra Microsoft-produkter
 
-Det finns webbadresser från flera Microsoft-produkter som måste finnas i listan tillåtna så att Microsoft Managed Desktop-enheter kan kommunicera med dessa Microsoft-tjänster. Använd länkarna för att se hela listan för varje produkt. 
+Det finns webbadresser från flera Microsoft-produkter som måste finnas i listan över tillåtna enheter så att Microsoft Hanterade stationära enheter kan kommunicera med dessa Microsoft-tjänster. Använd länkarna för att se hela listan för varje produkt. 
 
-Microsoft-tjänst | Dokumentationskälla - URL:er som krävs i listan över tillåtna filer
+Microsoft-tjänst | Dokumentationskälla - webbadresser som krävs i listan över tillåt
 --- | ---
 Windows 10 Enterprise inklusive Windows Update för företag | [Hantera anslutningsslutpunkter för Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
-Leveransoptimering | [Konfigurera leveransoptimering för Windows 10-uppdateringar](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
-Office 365 | [Url- och IP-adressintervall för Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [Hybrididentitet krävs portar och protokoll](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) och Active Directory och Active Directory Domain Services Port [Krav](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Krav på konfiguration av Intune-nätverk](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender Avancerat hotskydd (ATP) | [Slutpunkter för Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Optimering av leverans | [Konfigurera leveransoptimering för Windows 10-uppdateringar](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [URL- och IP-adressintervall för Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | [Hybrididentitet krävs portar och protokoll](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) samt [Portkrav för Active Directory och Active Directory Domain Services](https://aka.ms/AA26ygm) 
+Microsoft Intune | [Intune-krav för nätverkskonfiguration](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Nätverksslutpunkter för Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
+Microsoft Defender avancerat skydd mot hot (ATP) | [Microsoft Defender ATP-slutpunkter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

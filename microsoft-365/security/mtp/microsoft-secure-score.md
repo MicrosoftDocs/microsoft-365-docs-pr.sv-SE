@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541101"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583387"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -137,11 +137,9 @@ Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition 
 
 ## <a name="whats-new"></a>Vad är det senaste?
 
-För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar.
+För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
-
-### <a name="march-2020"></a>Mars 2020
+### <a name="january---march-2020"></a>Januari - mars 2020
 
 #### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Stöd för säkerhetsstandarder för Azure AD-förbättringsåtgärder
 

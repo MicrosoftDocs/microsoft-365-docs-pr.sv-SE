@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d4c71b2f3c575f21ee2693c3d371c263813c2324
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8319dcabe6032228e2124b68f9f7d8f237ff34de
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42808130"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583375"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (förhandsgranskning)
 
@@ -151,26 +151,9 @@ På fliken **Mått & trender** finns det flera diagram och diagram som ger dig s
 
 Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition baserat på systemkonfigurationer, användarbeteende och andra säkerhetsrelaterade mätningar. Det är inte ett absolut mått på hur sannolikt ditt system eller data kommer att brytas. Snarare är det i vilken utsträckning du har antagit säkerhetskontroller i din Microsoft-miljö som kan bidra till att kompensera risken för att brytas. Ingen onlinetjänst är helt immun mot säkerhetsöverträdelser, och säker poäng bör inte tolkas som en garanti mot säkerhetsöverträdelse på något sätt.
 
-## <a name="whats-coming"></a>Vad är det som händer?
-
-### <a name="mfa-improvement-action-updates"></a>Uppdateringar av förbättringsåtgärder för MFA
-
-För att återspegla behovet av företag att säkerställa den högsta säkerheten när de tillämpar principer som fungerar med deras verksamhet, tar Microsoft Secure Score bort tre förbättringsåtgärder centrerade kring multifaktorautentisering och lägger till två.
-
-De tre som kommer att tas bort:
-- Registrera alla användare för multifaktorautentisering
-- Kräv MFA för alla användare
-- Kräv MFA för Azure AD-privilegierade roller
-
-Nya förbättringsåtgärder:
-- Se till att alla användare kan slutföra multifaktorautentisering för säker åtkomst
-- Kräv MFA för administrativa roller
-
- Dessa nya förbättringsåtgärder kräver registrering av användare eller administratörer för MFA (Multifaktor authentication) i katalogen och upprätta rätt uppsättning principer som passar dina organisationsbehov. Huvudmålet är att ha flexibilitet samtidigt som alla användare och administratörer kan autentisera med flera faktorer eller riskbaserade uppmaningar om identitetsverifiering. Det kan ske i form av att ange säkerhetsstandarder som låter Microsoft bestämma när användare ska utmanas för MFA eller ha flera principer som tillämpar begränsade beslut.
-
 ## <a name="whats-new"></a>Vad är det senaste? 
 
-För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition och förbättra användbarheten har vi gjort vissa ändringar. Din poäng och högsta möjliga poäng har ändrats. Detta innebär dock inte en förändring i din säkerhetsposition.
+För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 ### <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
 
