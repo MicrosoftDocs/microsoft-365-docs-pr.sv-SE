@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Säkerhetsdokumentation för Microsoft 365
-summary: Lär dig mer om de robusta säkerhetslösningarna och tjänsterna i Microsoft 365 Security så att du bättre kan skydda ditt företag över angreppsytor.
+title: Dokumentation för Microsoft 365 Säkerhetscenter
+summary: Läs mer om robusta säkerhetslösningar och tjänster i Microsoft 365 Security, så att du kan skydda din organisation bättre från en mängd olika attacker.
 metadata:
-  title: Säkerhetsdokumentation för Microsoft 365
-  description: Lär dig mer om robusta säkerhetslösningar och tjänster i Microsoft 365 Security så att du bättre kan skydda ditt företag över angreppsytor
+  title: Dokumentation för Microsoft 365 Säkerhetscenter
+  description: Läs mer om robusta säkerhetslösningar och tjänster i Microsoft 365 Security, så att du kan skydda din organisation bättre från en mängd olika attacker.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
   ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 04/09/2020
   ms.locfileid: "43198355"
@@ -24,25 +24,25 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Vad är Microsofts hotskydd?
+    - text: Vad är Microsoft Hotskydd?
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 Säkerhetscenter
       url: mtp/overview-security-center.md
-- title: Microsoft Defender ATP
+- title: Microsoft Defender Avancerat skydd.
   linkLists:
   - linkListType: overview
     links:
-    - text: Vad är Microsoft Defender ATP?
+    - text: Vad är Microsoft Defender Avancerat skydd?
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
     - text: Översikt över funktioner
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
-- title: Office 365 ATP
+- title: Skaffa Office 365 ATP
   linkLists:
   - linkListType: overview
     links:
     - text: Vad är Office 365 ATP?
       url: office-365-security/office-365-atp.md
-    - text: Beskrivning av Office 365 ATP-tjänst
+    - text: Tjänstbeskrivning för Office 365 ATP
       url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Azure ATP
   linkLists:
@@ -64,7 +64,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Vad är Security för Microsoft Cloud App?
+    - text: Vad är Microsoft Cloud App Security?
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
     - text: Komma igång med Microsoft Cloud App Security
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
@@ -78,5 +78,5 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Säker poäng
+    - text: Säkerhetspoäng
       url: mtp/microsoft-secure-score.md
