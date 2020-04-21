@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Microsoft 365 Affärsresurser
-summary: Microsoft 365 Business är en prenumerationstjänst som innehåller produktivitetsverktyg för Office 365 samt avancerade funktioner för att skydda ditt företag mot cyberhot, skydda dina data och hantera enheterna.
+title: Microsoft 365 företagsresurser
+summary: Microsoft 365 Business är en prenumerationstjänst som innehåller produktivitetsverktyg för Office 365 och avancerade funktioner för att skydda ditt företag mot cyberhot, skydda dina data och hantera enheterna.
 brand: m365
 metadata:
-  title: Microsoft 365 Affärsresurser
+  title: Microsoft 365 företagsresurser
   description: beskrivning
   ms.service: o365-administration
   ms.topic: hub-page
@@ -13,24 +13,24 @@ metadata:
   ms.date: 10/01/2019
   ms.openlocfilehash: bf50c985029587ec063e2933d137d6a9b115fa6c
   ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 04/15/2020
   ms.locfileid: "43516847"
 productDirectory:
-  title: Säkert fjärrarbete med Microsoft 365 Business
+  title: Säkert distansarbete med Microsoft 365 Business
   items:
-  - title: Vad är det senaste?
+  - title: Vad är nytt?
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 kommer till Microsoft 365 Business!
+    summary: Azure Active Directory Premium P1 kommer till Microsoft 365 Business!
     url: https://aka.ms/aadp1smbblog
-  - title: Titta på webinar
+  - title: Se webbseminarium från vår partner
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Säkra dina SMB-kunder när de klarar COVID-19.
+    summary: Skydda dina SMB-kunder medans de hanterar COVID-19.
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Läsa
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Bästa sätten att aktivera säkert fjärrarbete med Microsoft 365 Business.
+    summary: Bästa sätt att aktivera säkert distansarbete med Microsoft 365 Business.
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
@@ -41,13 +41,13 @@ conceptualContent:
       text: Översikt
     - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 Företagsutbildning
+      text: Utbildning för Microsoft 365 Business
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
-      text: Jämför planer
+      text: Jämför abonnemang
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
       itemType: reference
-      text: Beskrivning av tjänsten
+      text: Tjänstbeskrivning
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: Vanliga frågor och svar
@@ -55,30 +55,30 @@ conceptualContent:
     links:
     - url: set-up.md
       itemType: how-to-guide
-      text: 1. Kör installationsguiden
+      text: 1. Starta installationsguiden
     - url: secure-win-10-pcs.md
       itemType: how-to-guide
-      text: 2. Säkra dina datorer
+      text: 2. Skydda datorerna
     - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
       itemType: video
-      text: 3. Konfigurera team
+      text: 3. Konfigurera Teams
     - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
       itemType: get-started
       text: 4. Installera Office
-  - title: Resurser för partners (endast engelska)
+  - title: Resurser för partner (endast på engelska)
     links:
     - url: https://www.microsoft.com/microsoft-365/partners/business
       itemType: overview
-      text: Sidan Partner
+      text: Partnersidan
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
       itemType: download
-      text: Pitch däck (kundfokus)
+      text: Presentationssammanfattning (kundfokus)
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
-      text: Pitch däck (partner fokus)
+      text: Presentationssammanfattning (partnerfokus)
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
-      text: Tekniska fundamenta
+      text: Tekniska grunder
   - title: Hantera användare
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
@@ -92,82 +92,82 @@ conceptualContent:
       text: Återställa någons lösenord
     footerLink:
       url: https://docs.microsoft.com/office365/admin/admin-home
-      text: Läs mer
+      text: Visa mer
   - title: Hantera hot
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
       itemType: overview
-      text: Office 365 Avancerat skydd
+      text: Office 365 ATP
     - url: set-up-mfa.md
       itemType: how-to-guide
       text: Konfigurera MFA
     - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
       itemType: how-to-guide
-      text: Skydda mot ransomware
+      text: Skydda mot utpressningstrojaner
     - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
       itemType: overview
       text: Med villkorsstyrd åtkomst
     footerLink:
       url: https://docs.microsoft.com/office365/admin/admin-home
-      text: Läs mer
+      text: Visa mer
   - title: Hantera data
     links:
     - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
       itemType: overview
-      text: Förebyggande av dataförlust
+      text: Dataförlustskydd
     - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: Skicka krypterad e-post
     - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
       itemType: how-to-guide
-      text: Konfigurera lagring av e-post
+      text: Konfigurera e-postbevarande
     - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
       itemType: video
-      text: Skapa och använda känslighetsetiketter
+      text: Skapa och hantera känslighetsetiketter
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/compliance/
-      text: Läs mer
+      text: Visa mer
   - title: Hantera enheter
     links:
     - url: view-policies-and-devices.md
       itemType: how-to-guide
-      text: PC & mobila enheter
+      text: Dator- och mobila enheter
     - url: remove-company-data.md
       itemType: how-to-guide
       text: Ta bort företagsdata
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
-      text: Torka och återställa
+      text: Rensa och återställa
     - url: https://docs.microsoft.com/intune/index
       itemType: overview
       text: Intune
     - url: manage-windows-devices.md
       itemType: how-to-guide
-      text: Konfigurera hybrid-Azure AD-koppling
+      text: Konfigurera hybrid Azure Active Directory-anslutning
     - url: access-resources.md
       itemType: how-to-guide
-      text: Konfigurera Azure AD-koppling
+      text: Konfigurera Azure Active Directory-anslutning
     - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
       text: Windows Autopilot
       itemType: overview
     footerLink:
       url: manage-windows-devices.md
-      text: Läs mer
-  - title: Övervaka säkerheten
+      text: Visa mer
+  - title: Övervaka säkerhet
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
       itemType: how-to-guide
-      text: Säker poäng
+      text: Säkerhetspoäng
     - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
       itemType: overview
-      text: Rapport över Intune-appskyddsprinciper
+      text: Skyddsprinciper för Intune-appar
     - url: https://docs.microsoft.com/office365/enterprise/view-service-health
       itemType: how-to-guide
-      text: Varningar för hälsoövervakning
+      text: Hälsoövervakningsvarningar
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/security/
-      text: Läs mer
-  - title: Stöd och gemenskap
+      text: Visa mer
+  - title: Support och community
     links:
     - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
       itemType: whats-new
@@ -180,8 +180,8 @@ conceptualContent:
       text: Skicka feedback
     - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
       itemType: overview
-      text: Teknikgemenskap för små och medelstora företag
-  - title: Hur gör jag...
+      text: Techcommunity för Små och medelstora företag
+  - title: Hur ska jag...
     links:
     - url: sign-up.md
       itemType: get-started
@@ -197,4 +197,4 @@ conceptualContent:
       text: Migrera till Microsoft 365 Enterprise E3
     footerLink:
       url: microsoft-365-business-overview.md
-      text: Läs mer
+      text: Visa mer
