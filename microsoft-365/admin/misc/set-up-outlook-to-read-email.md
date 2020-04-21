@@ -18,41 +18,41 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
-description: Läs om hur du konfigurerar ett e-postkonto i Outlook för både Windows och Mac och om hur du installerar Office-appar och öppnar e-post online.
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du konfigurerar ett e-postkonto i Outlook för både Windows och Mac och om hur du installerar Office-appar och använder e-post online.
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807244"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627794"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Konfigurera Outlook för att läsa e-post
 
-Din Office 365-prenumeration medföljer en webbaserad Outlook, men om din prenumeration innehåller Office-klientappar får du också Outlook som du kan installera på din dator eller dina enheter.
+Din Microsoft 365-prenumeration levereras med ett webbaserat Outlook, men om din prenumeration innehåller Office-klientappar får du också Outlook som du kan installera på din dator eller dina enheter.
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Konfigurera ett e-postkonto i Outlook
 
-Första gången du öppnar Outlook öppnas en guiden Automatiskt konto. Om inte, välj **Arkiv** sedan **Lägg till konto**.
+Första gången du öppnar Outlook öppnas en guiden Automatiskt konto. Om inte väljer du **Arkiv** och sedan **Lägg till konto**.
   
-1. På sidan **E-postkonton** väljer du **Nästa** \> **lägg till konto**.
+1. På sidan **E-postkonton** väljer du **Nästa** \> **Lägg till konto**.
     
-2. På sidan **Konfigurera automatiskt konto** anger du ditt namn, din e-postadress och ditt lösenord och väljer sedan **Nästa** \> **slut**.
+2. På sidan **Konfigurera automatiskt konto** anger du namn, e-postadress och lösenord och väljer sedan **Nästa** \> **slut**.
     
 Läs [hela artikeln](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
   
-## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Hur installerar jag Office-apparna, inklusive Outlook?
+## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Hur installerar jag Office-programmen, inklusive Outlook?
 
 1. Gå till [admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).
     
-2. Logga in med ditt jobb- eller skolkonto
+2. Logga in med ditt arbets- eller skolkonto.
     
-3. Välj **Installera**på Hantera installationer.
+3. På Hantera installationer väljer du **Installera**.
     
 ## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a>Konfigurera ett e-postkonto i Outlook 2016 för Mac
 
 Första gången du öppnar Outlook-appen öppnas guiden Konfigurera min inkorg. I guiden: 
   
-1. Välj **Lägg till konto**på sidan Konfigurera min **Inkorg.**
+1. På sidan **Konfigurera min inkorg** väljer du **Lägg till konto**.
     
 2. På sidan **Konton** väljer du **Exchange eller Office 365**.
     
@@ -60,20 +60,20 @@ Första gången du öppnar Outlook-appen öppnas guiden Konfigurera min inkorg. 
     
 Läs [hela artikeln](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac). 
   
-## <a name="how-do-i-access-my-mail-online"></a>Hur öppnar jag min e-post online?
+## <a name="how-do-i-access-my-mail-online"></a>Hur kommer jag åt min e-post online?
 
-När du har loggat in på Office 365 väljer du **Outlook**.
+När du har loggat in på Microsoft 365 väljer du **Outlook**.
   
-![Startsidan för Office 365 med Outlook-appen markerad](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Startsidan för Microsoft 365 med Outlook-appen markerad](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-Hittar du inte appen du söker? Från appfönstret kan du välja **Alla appar** för att se en alfabetisk lista över tillgängliga Office 365-appar. Därifrån kan du söka efter en specifik app. 
+Hittar du inte appen du söker? I startprogrammet väljer du **Alla appar** för att se en alfabetisk lista över de Microsoft 365-appar som är tillgängliga för dig. Därifrån kan du söka efter en specifik app. 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Hur vet jag om min prenumeration innehåller Office-appar?
 
-Office 365 Business Premium och Office 365 Business inkluderar Office-appar. Mer information finns i [Office 365 Business-abonnemang](https://go.microsoft.com/fwlink/p/?LinkId=723731)eller [Office 365 Enterprise-abonnemang](https://go.microsoft.com/fwlink/p/?LinkId=800029).
+Microsoft 365 Business Standard och Microsoft 365 Apps för företag inkluderar Office-appar. Mer information finns i [Microsoft 365 för företag-abonnemang](https://go.microsoft.com/fwlink/p/?LinkId=723731)eller [Office 365 Enterprise-abonnemang](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Hur avgör jag vilken prenumeration jag har?
 
-Information om hur du tar reda på din prenumeration finns i [Vilken prenumeration har jag?](../admin-overview/what-subscription-do-i-have.md)
+Information om hur du bestämmer din prenumeration finns i [Vilken prenumeration har jag?](../admin-overview/what-subscription-do-i-have.md)
   
 

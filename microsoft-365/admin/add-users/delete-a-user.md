@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär hur du tar bort ett användarkonto. Bestäm vad du ska göra med användarens e-postadress, OneDrive-innehåll och om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608132"
+ms.locfileid: "43617254"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
 ||
 |:-----|
-|**Letar du efter information om hur du tar bort ditt *eget* Office 365-användarkonto på jobbet eller skolan? Kontakta den tekniska supporten på ditt arbete eller universitet som kan utföra de här stegen åt dig.**|
+|**Letar du efter hur du tar bort ditt *eget* Microsoft 365-användarkonto som du använder på jobbet eller i skolan? Kontakta den tekniska supporten på ditt arbete eller på universitetet för att göra dessa steg åt dig.**|
    
 ## <a name="what-you-need-to-know-about-deleting-users"></a>Allt du behöver veta om att ta bort användare
 
-- Bara personer som har [globala Office 365-administratörsbehörigheter](about-admin-roles.md) eller behörighet att hantera användare för företaget eller skolan kan ta bort användarkonton. 
+- Endast personer som har [microsoft 365 globala administratörs-](about-admin-roles.md) eller användarhanteringsbehörigheter för företaget eller skolan kan ta bort användarkonton. 
     
 - Du har 30 dagar på dig att [återställa](restore-user.md) kontot innan användarens data tas bort permanent. 
     
@@ -46,7 +46,7 @@ ms.locfileid: "43608132"
     
 - Om du vill behålla användarens e-post flyttar du den till en annan plats **INNAN** du tar bort kontot. Om du redan har tagit bort kontot kan du återställa det inom 30 dagar. Flytta sedan e-postdata och ta bort kontot. Se [Få åtkomst till och säkerhetskopiera en tidigare anställds användardata](get-access-to-and-back-up-a-former-user-s-data.md).
     
-- Om du har ett Enterprise-abonnemang, t.ex. Office 365 Enterprise E3, kan du bevara e-postdata för ett borttaget Office 365-användarkonto genom att omvandla det till en *inaktiv postlåda*. Lär dig mer i [Hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- Om du har en Enterprise-prenumeration som Office 365 Enterprise E3 kan du bevara postlådedata för ett borttaget användarkonto genom att omvandla dem till en *inaktiv postlåda*. Lär dig mer i [Hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Global administratör: Ta bort medarbetare, sluta betala för deras licens och välj vad du vill göra med deras e-postadress och OneDrive-innehåll
@@ -62,7 +62,7 @@ Innan du börjar ska du bestämma dig för vad du vill göra med användarens e-
 |:-----|:-----|
 |Produktlicenser  <br/> |Du kan ta bort licensen från användaren och ta bort den från dina prenumerationer om du vill sluta betala för den licensen. Om du väljer det här alternativet kommer licensen att tas bort automatiskt från dina prenumerationer.  <br/><br/> **Du kan inte ta bort licensen** om du har köpt den via en partner eller via volymlicensiering. Om du betalar för ett årsabonnemang eller om du är mitt i en faktureringsperiod kan du inte ta bort licensen från din prenumeration förrän abonnemanget har gått ut.  <br/> |
 |OneDrive-innehåll  <br/> |Om användaren har sparat sina filer i OneDrive kan du ge en annan användare tillgång till filerna.  <br/><br/> Du måste flytta filerna som du vill behålla inom den kvarhållningstid som har angetts för OneDrive-filer. **Kvarhållningstiden är som standard 30 dagar.** Om du inte flyttar filerna inom kvarhållningstiden efter att du har tagit bort användaren tas OneDrive-innehållet bort permanent. Om du vill öka antalet dagar som du kvarhåller OneDrive-filer för borttagna konton kan du läsa mer i [Ange OneDrive-kvarhållning för borttagna användare](https://support.office.com/article/fa1641ea-9f03-4f34-a826-dbd8697e76fe.aspx).  <br/><br/> **Viktigt!** Om den borttagna användaren använde en personlig dator när denna ladda ned filer från SharePoint och OneDrive är det omöjligt för dig att rensa filerna som de har lagrat på datorn. Användaren har fortfarande åtkomst till alla filer som har synkroniserats från OneDrive.           |
-|E-post  <br/> | Om du ger en annan användare tillgång till den borttagna användarens e-post konverteras den borttagna användarens postlåda till en delad postlåda. Då har den nya ägaren till postlådan tillgång till den och kan kontrollera nya e-postmeddelanden. Du har även följande alternativ:  <br/>  <br/>Ändra visningsnamnet – Vi rekommenderar att du ändrar visningsnamnet så att det blir enklare att identifiera den delade postlådan i listan över aktiva användare.  <br/>  Aktivera automatiska svar – Det finns redan ett färdigt, artigt automatiskt svar skrivet. Du kan skicka olika automatiska svar till personer inom organisationen och till personer utanför organisationen.  <br/> <br/> Rensa alias-adresser – Ytterligare e-postadresser för användare kallas alias. De används inte i en del organisationer, så om du inte har några behöver du inte göra något mera här. Om användaren har ett eller flera alias rekommenderar vi att du tar bort dem så att du kan använda de e-postadresserna igen. Annars kan du inte använda de e-postadresserna förrän kvarhållningstiden för e-postadressen har gått ut. Som standard är en borttagen postlåda möjlig att återskapa i 30 dagar. Mer information finns i [ta bort eller återställa användarpostlådor i Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
+|E-post  <br/> | Om du ger en annan användare tillgång till den borttagna användarens e-post konverteras den borttagna användarens postlåda till en delad postlåda. Då har den nya ägaren till postlådan tillgång till den och kan kontrollera nya e-postmeddelanden. Du har även följande alternativ:  <br/>  <br/>Ändra visningsnamnet – Vi rekommenderar att du ändrar visningsnamnet så att det blir enklare att identifiera den delade postlådan i listan över aktiva användare.  <br/>  Aktivera automatiska svar – Det finns redan ett färdigt, artigt automatiskt svar skrivet. Du kan skicka olika automatiska svar till personer inom organisationen och till personer utanför organisationen.  <br/> <br/> Rensa alias-adresser – Ytterligare e-postadresser för användare kallas alias. De används inte i en del organisationer, så om du inte har några behöver du inte göra något mera här. Om användaren har ett eller flera alias rekommenderar vi att du tar bort dem så att du kan använda de e-postadresserna igen. Annars kan du inte återanvända dessa e-postadresser förrän kvarhållningsperioden för borttagna postlådor har passerats. Som standard är en borttagen postlåda möjlig att återskapa i 30 dagar. Mer information finns i [ta bort eller återställa användarpostlådor i Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Om ditt företag använder **Active Directory** som synkroniseras med Azure AD måste du ta bort användarkontot från Active Directory. Du kan inte göra det via Office 365. Anvisningar finns i[Ta bort ett användarkonto](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
    
 ### <a name="get-started"></a>Komma igång
@@ -176,13 +176,13 @@ Här är de vanligaste problemen som uppstår när du tar bort en användare:
   
 - **Du får ett felmeddelande i stil med "Användare kan inte tas bort. Försök igen senare."** Kontrollera om kontot är inställt att vidarebefordra e-post eller om det har konverterats till en delad postlåda. Båda dessa kan orsaka felet. Ta inte bort ett konto som vidarebefordrar e-postmeddelanden eller har konverterats till en delad postlåda.
 
-- **Du har inte tillräckliga behörigheter för att ta bort en användare**. Bara personer som är [globala Office 365-administratörer eller användarhanteringsadministratörer](about-admin-roles.md) kan ta bort användare. Det är i regel skolans eller företagets tekniska support.
+- **Du har inte tillräckliga behörigheter för att ta bort en användare**. Endast personer som är [globala administratörer för Microsoft 365 eller användarhanteringsadministratörer](about-admin-roles.md) kan ta bort användare. Det är i regel skolans eller företagets tekniska support.
 
 - **Du kan ta bort användaren, men hans eller hennes namn fortsätter visas i den globala adressboken**. Detta inträffar när ett företag använder Active Directory. Du måste ta bort användarkontot från Active Directory. Anvisningar finns i den här TechNet-artikeln: [Delete a User Account](https://go.microsoft.com/fwlink/p/?linkid=841808) (Ta bort ett användarkonto).
 
 ||
 |:-----|
-|**Vill du ta bort Office 365 från datorn? Gå till [avsluta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).**|
+|**Vill du ta bort Microsoft 365 från datorn? Gå till [Avsluta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).**|
    
 ## <a name="related-articles"></a>Relaterade artiklar
 

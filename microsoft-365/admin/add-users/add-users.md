@@ -1,5 +1,5 @@
 ---
-title: Lägga till användare individuellt eller i grupp i Office 365
+title: Lägga till användare individuellt eller i grupp
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
-description: Lär dig hur du lägger till användare i Office 365, en i taget eller flera användare samtidigt från en CSV-fil.
-ms.openlocfilehash: 708bce2cb5a2c1b6a621bffc3ce56a2744bb518d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Lär dig hur du lägger till användare i Microsoft 365, en i taget eller flera användare samtidigt från en CSV-fil.
+ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807529"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618866"
 ---
-# <a name="add-users-individually-or-in-bulk-to-office-365"></a>Lägga till användare individuellt eller i grupp i Office 365
+# <a name="add-users-individually-or-in-bulk"></a>Lägga till användare individuellt eller i grupp
 
-Alla i din grupp behöver varsitt användarkonto innan de kan logga in och använda [Office 365 för företag](https://go.microsoft.com/fwlink/?LinkID=519395). Det enklaste sättet att lägga till användarkonton är att lägga till dem en i taget i Microsoft 365 administrationscenter. När du har gjort det här steget har användarna Office 365-licenser, inloggningsuppgifter och Office 365-postlådor.
+Personerna i teamet behöver var och en ett användarkonto innan de kan logga in och komma åt [Microsoft 365 för företag.](https://go.microsoft.com/fwlink/?LinkID=519395) Det enklaste sättet att lägga till användarkonton är att lägga till dem en i taget i Microsoft 365 administrationscenter. När du har gjort det här steget har användarna Microsoft 365-licenser, inloggningsuppgifter och Microsoft 365-postlådor.
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Alla i din grupp behöver varsitt användarkonto innan de kan logga in och anvä
   
 - **Namn** Fyll i först, sist, visningsnamn och användarnamn. 
     
-- **Domän** Om användarens användarnamn till exempel är Jakob och hans domän är contoso.com loggar han in på Office 365 genom att skriva jakob@contoso.com. 
+- **Domän** Om användarens användarnamn till exempel är Jakob och hans domän är contoso.com loggar han in på genom att skriva jakob@contoso.com. 
     
 - **Inställningar för lösenord** Välj att använda automatiskt genererat lösenord eller skapa ditt eget starka lösenord för användaren. 
     
@@ -76,7 +76,7 @@ Alla i din grupp behöver varsitt användarkonto innan de kan logga in och anvä
   
 - **Namn** Fylla i förnamn, efternamn, visningsnamn och användarnamn. 
     
-- **Domän** Om användarens användarnamn till exempel är Jakob och hans domän är contoso.com loggar han in på Office 365 genom att skriva jakob@contoso.com. 
+- **Domän** Om användarens användarnamn till exempel är Jakob och hans domän är contoso.com loggar han in på genom att skriva jakob@contoso.com. 
     
 - **Kontaktinformation** Expandera det här avsnittet för att fylla i mobiltelefonnummer, adress och så vidare. 
     
@@ -101,7 +101,7 @@ Alla i din grupp behöver varsitt användarkonto innan de kan logga in och anvä
   
 - **Namn** Fylla i förnamn, efternamn, visningsnamn och användarnamn. 
     
-- **Domän** Om användarens användarnamn till exempel är Jakob och hans domän är contoso.com loggar han in på Office 365 genom att skriva jakob@contoso.com. 
+- **Domän** Om användarens användarnamn till exempel är Jakob och hans domän är contoso.com loggar han in på genom att skriva jakob@contoso.com. 
     
 - **Kontaktinformation** Expandera det här avsnittet för att fylla i mobiltelefonnummer, adress och så vidare. 
     
@@ -115,10 +115,10 @@ Alla i din grupp behöver varsitt användarkonto innan de kan logga in och anvä
 
 ::: moniker-end 
   
-När du lägger till en användare får du ett e-postmeddelande från Microsoft Online Services-teamet. E-postmeddelandet innehåller personens användar-ID och lösenord för Office 365 så att han eller hon kan logga in på Office 365. Du får själv informera användaren om hans eller hennes inloggningsuppgifter till Office 365. Använd din vanliga process för att förmedla nya lösenord.
+När du lägger till en användare får du ett e-postmeddelande från Microsoft Online Services-teamet. E-postmeddelandet innehåller personens användar-ID och lösenord så att de kan logga in på Microsoft 365. Du måste berätta för din nya användare om deras inloggningsinformation för Microsoft 365. Använd din vanliga process för att förmedla nya lösenord.
 
 > [!NOTE]
->Om du skapar användare genom att migrera e-postlådor måste du aktivera Office 365-användarkonton genom att tilldela licenser. Om du inte tilldelar en licens till en användare inaktiveras postlådan efter en respitperiod på 30 dagar. Se hur du [tilldelar licenser till användare](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) med hjälp av Microsoft 365 administrationscenter.
+>Om du skapar användare genom att migrera e-postlådor måste du aktivera användarkonton genom att tilldela licenser. Om du inte tilldelar en licens till en användare inaktiveras postlådan efter en respitperiod på 30 dagar. Se hur du [tilldelar licenser till användare](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) med hjälp av Microsoft 365 administrationscenter.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Video: Lägga till och hantera användare i administrationscentret
 
@@ -130,7 +130,7 @@ Dela [snabbstartsguiden för anställda](https://support.office.com/article/b970
   
 ## <a name="need-help"></a>Behöver du hjälp?
 
-[Kontakta Support för Office 365 för företag](../contact-support-for-business-products.md).  
+[Kontakta Microsoft 365 för företagssupport](../contact-support-for-business-products.md).  
 
 ## <a name="have-hundreds-or-thousands-of-users-to-add"></a>Har du hundratals eller tusentals användare som ska läggas till?
 
@@ -143,16 +143,15 @@ Använd följande steg om du vill lägga till flera användare samtidigt:
     
 - **Använder du ActiveDirectory?** [Konfigurera katalogsynkronisering för Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Använd verktyget Azure AD Connect för att kopiera Active Directory-användarkonton (och andra Active Directory-objekt) i Office 365. Synkroniseringen lägger bara till användarkonton. Du behöver tilldela licenser till de synkroniserade användarna för att de ska kunna använda e-post och andra Office-program.
     
-- **Migrera från Exchange?** [Olika sätt att migrera flera e-postkonton till Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Om du migrerar flera postlådor till Office 365 med hjälp av snabbmigrering, stegvis migrering eller en hybrid-Exchange-metod kommer du att lägga till användare automatiskt som en del av migreringen. Migreringen lägger bara till användarkonton. Du behöver tilldela licenser till användarna för att de ska kunna använda e-post och andra Office-program.
+- **Migrera från Exchange?** [Olika sätt att migrera flera e-postkonton till Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). När du migrerar flera postlådor till Microsoft 365 med hjälp av antingen cutover, staged eller en hybrid Exchange-metod, lägger du till användare automatiskt som en del av migreringen. Migreringen lägger bara till användarkonton. Du behöver tilldela licenser till användarna för att de ska kunna använda e-post och andra Office-program.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till en ny anställd i Office 365](add-new-employee.md)
+[Lägga till en ny anställd i Microsoft 365](add-new-employee.md)
 
 [Ta bort en användare från organisationen](delete-a-user.md)
 
-[Återställa en användare i Office 365](restore-user.md)
+[Återställa en användare i Microsoft 365](restore-user.md)
 
-[Lägga till flera användare samtidigt i Office 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
-
+[Lägg till flera användare samtidigt i Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
 

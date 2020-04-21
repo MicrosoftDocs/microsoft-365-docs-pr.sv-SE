@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 23242f5f2d7e1a0774c83359159588f9fef34f64
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608168"
+ms.locfileid: "43615924"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (förhandsgranskning)
 
@@ -55,7 +55,7 @@ Varje förbättringsåtgärd är värd 10 poäng eller mindre. De flesta görs p
 
 ### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
 
-För närvarande finns det rekommendationer för Office 365 (inklusive SharePoint Online, Exchange Online, OneDrive för företag, Microsoft Information Protection med mera), Azure AD, Microsoft Defender ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
+För närvarande finns det rekommendationer för Microsoft 365 (inklusive SharePoint Online, Exchange Online, OneDrive för företag, Microsoft Information Protection med mera), Azure AD, Microsoft Defender ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 

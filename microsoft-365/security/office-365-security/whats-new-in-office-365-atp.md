@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106190"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630827"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -44,9 +44,9 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
     - Avancerade NOT-filter (dessa är avancerade filtreringsalternativ som inte innehåller, inkluderar inte osv.)
     - Detaljerade tidsfilter (dag, timme, halvtimme) 
 
-- Widgeten **Incidenter** är nu widgeten **Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du till Granskning av **& efterlevnad** > i Office 365**i**Office 365 Security Center.)
+- Widgeten **Incidenter** är nu widgeten **Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du till Granskning av **&-efterlevnad** > i Säkerhets- & Compliance Center **.)**
 
-- [Säkra dokument i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(förhandsversion)**
+- [Säkra dokument i Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(förhandsgranskning)**
 
 ## <a name="december-2019"></a>December 2019
 
@@ -60,7 +60,7 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 
 ## <a name="september-2019"></a>September 2019
 
-- [Använda automatiska funktioner för undersökningar och svar i Office 365](automated-investigation-response-office.md) (Office 365 ATP-abonnemang 2)
+- [Använda automatiska funktioner för undersökningar och svar](automated-investigation-response-office.md) (Office 365 ATP-abonnemang 2)
 
 - [Integrera med office 365 ATP-automatiska undersöknings- och svarshändelser med office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
 
@@ -82,7 +82,7 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 
 Visste du att Office 365 ATP är tillgängligt i två abonnemang? [Läs mer om vad varje plan innehåller](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

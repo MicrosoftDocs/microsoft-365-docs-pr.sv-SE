@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster för Office 365 på Wix
+title: Skapa DNS-poster på Wix för Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Wix för Office 365.
-ms.openlocfilehash: 8487c49e989bf2db345ae9e6d0e2970c5eb40cb6
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Wix för Microsoft.
+ms.openlocfilehash: 2cbc4887f276e63f09b433225e09315c227c961c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211068"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629245"
 ---
-# <a name="create-dns-records-at-wix-for-office-365"></a>Skapa DNS-poster för Office 365 på Wix
+# <a name="create-dns-records-at-wix-for-microsoft"></a>Skapa DNS-poster på Wix för Microsoft
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
@@ -37,15 +37,15 @@ Det här är de viktigaste posterna att lägga till.
   
 - [Lägga till en TXT-post för verifiering](#add-a-txt-record-for-verification)
     
-- [Lägga till en MX-post så att e-post för din domän kommer till Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365).
+- [Lägg till en MX-post så att e-post för din domän kommer till Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft).
     
-- [Lägg till de fem CNAME-poster som krävs för Office 365](#add-the-five-cname-records-that-are-required-for-office-365).
+- [Lägg till de fem CNAME-poster som krävs för Microsoft](#add-the-five-cname-records-that-are-required-for-microsoft).
     
 - [Lägga till en TXT-post för SPF för att förhindra skräppost](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Lägga till de två SRV-posterna som krävs för Office 365](#add-the-two-srv-records-that-are-required-for-office-365).
+- [Lägg till de två SRV-poster som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft).
     
-När du har lagt till dessa poster på Wix är din domän konfigurerad för att fungera med Office 365-tjänster.
+När du har lagt till dessa poster på Wix konfigureras domänen så att den fungerar med Microsoft-tjänster.
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -53,7 +53,7 @@ När du har lagt till dessa poster på Wix är din domän konfigurerad för att 
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_txt"> </a>
 
-Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
+Innan du använder domänen med Microsoft måste vi se till att du äger den. Din förmåga att logga in på ditt konto hos domänregistratorer och skapa DNS-posten bevisar för Microsoft att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -69,15 +69,15 @@ Innan du använder din domän med Office 365, vill vi vara säkra på att det ä
 ||||
 |:-----|:-----|:-----|
 |**Värdnamn** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-|Fylls i automatiskt  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)|1 timme <br/> |          |
+|Fylls i automatiskt  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet.  [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)|1 timme <br/> |          |
    
 5. Välj knappen **Spara DNS** högst upp i DNS-redigeraren. 
     
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär posten.
   
-När Office 365 hittar rätt TXT-post är din domän verifierad.
+När Microsoft hittar rätt TXT-post verifieras domänen.
   
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
@@ -94,7 +94,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Lägga till en MX-post så att e-post för din domän kommer till Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägg till en MX-post så att e-post för din domän kommer till Microsoft
 <a name="BKMK_mx"> </a>
 
 1. Kom igång genom att gå till domänsidan på Wix genom att klicka på [den här länken](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Du uppmanas att logga in först.
@@ -109,7 +109,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
 |**Värdnamn**|**Points to (pekar på)**|**Prioritet**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|Fylls i automatiskt <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Office 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/What-is-MX-priority-2784cc4d-95be-443d-b5f7-bb5dd867ba83) | 1 timme|
+|Fylls i automatiskt <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Microsoft-konto.   [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/What-is-MX-priority-2784cc4d-95be-443d-b5f7-bb5dd867ba83) | 1 timme|
    
 6. Om det finns några andra MX-poster i listan tar du bort var och en av dem. 
     
@@ -117,7 +117,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
 8. Välj **OK**i bekräftelsedialogrutan .
     
-## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>Lägga till de fem CNAME-poster som krävs för Office 365
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Lägga till de fem CNAME-poster som krävs för Microsoft
 <a name="BKMK_cname"> </a>
 
 1. Kom igång genom att gå till domänsidan på Wix genom att klicka på [den här länken](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Du uppmanas att logga in först.
@@ -144,7 +144,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden.  
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden.  
   
 1. Kom igång genom att gå till domänsidan på Wix genom att klicka på [den här länken](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Du uppmanas att logga in först.
     
@@ -162,7 +162,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Lägga till de två SRV-posterna som krävs för Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägg till de två SRV-poster som krävs för Microsoft
 <a name="BKMK_srv"> </a>
 
 1. Kom igång genom att gå till domänsidan på Wix genom att klicka på [den här länken](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Du uppmanas att logga in först.

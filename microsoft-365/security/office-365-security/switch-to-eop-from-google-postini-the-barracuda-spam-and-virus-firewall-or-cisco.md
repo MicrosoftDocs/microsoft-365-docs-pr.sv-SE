@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Syftet med det här avsnittet är att hjälpa dig att förstå processen för att byta till Exchange Online Protection (EOP) från en lokal e-posthygieninstallation eller molnbaserad skyddstjänst och sedan ge dig hjälpresurser för att komma igång.
-ms.openlocfilehash: e3877f8093f56a0f978ad915769334678afe26e3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812258"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631199"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Byt till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
 
@@ -39,9 +39,9 @@ Om du för närvarande är värd för dina postlådor lokalt och använder en lo
 
 ## <a name="switch-to-exchange-online"></a>Växla till Exchange Online
 
-Kanske har du lokala postlådor som skyddas av en lokal installation och du vill hoppa till Exchange Online-molnbaserade postlådor och EOP-skydd för att dra nytta av Office 365-molnmeddelande- och skyddsfunktioner. För att komma igång kan du registrera dig för Office 365 och lägga till din domän. Det här scenariot kräver inte att du konfigurerar kopplingar, eftersom det inte finns någon routning till lokala postlådor. Börja på [Få de senaste avancerade funktionerna med Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) för att registrera dig och bekanta dig med dess funktioner.
+Kanske har du lokala postlådor som skyddas av en lokal installation och du vill hoppa till Exchange Online-molnbaserade postlådor och EOP-skydd för att dra nytta av Microsoft 365 molnmeddelande- och skyddsfunktioner. För att komma igång kan du registrera dig för Microsoft 365 och lägga till din domän. Det här scenariot kräver inte att du konfigurerar kopplingar, eftersom det inte finns någon routning till lokala postlådor. Börja på [Få de senaste avancerade funktionerna med Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) för att registrera dig och bekanta dig med dess funktioner.
 
-Under installationen av Office 365 skapar du dina molnbaserade postlådeanvändare.
+Under installationsprocessen för Microsoft 365 skapar du dina molnbaserade postlådeanvändare.
 
 ## <a name="switch-to-a-hybrid-solution"></a>Växla till en hybridlösning
 

@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster på Hostgator för Office 365
+title: Skapa DNS-poster hos Hostgator för Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster hos Hostgator för Office 365.
-ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster hos Hostgator för Microsoft.
+ms.openlocfilehash: 9ac14d516dff6e84dd0fb06a6632376d475689fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211721"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629533"
 ---
-# <a name="create-dns-records-at-hostgator-for-office-365"></a>Skapa DNS-poster på Hostgator för Office 365
+# <a name="create-dns-records-at-hostgator-for-microsoft"></a>Skapa DNS-poster hos Hostgator för Microsoft
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
@@ -36,12 +36,12 @@ Om Hostgator är din DNS-värd följer du stegen i den här artikeln för att ve
 > [!IMPORTANT]
 > Du måste utföra den första proceduren nedan, [Peka din domän till ditt webbhotell](#point-your-domain-to-your-hosting-account), innan du lägger till DNS-poster med hjälp av någon av de andra procedurerna i den här artikeln. 
 
-När du har gjort alla ändringarna på Hostgator, konfigureras din domän så att den fungerar med Office 365-tjänster.
+När du har gjort alla dessa ändringar hos Hostgator konfigureras domänen så att den fungerar med Microsoft-tjänster.
   
-Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finns i [Använda en offentlig webbplats med Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+Mer information om webbhotell och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du har problem med e-postflödet eller andra problem när du har lagt till DNS-poster läser du [Hitta och åtgärda problem när du har lagt till domänen eller DNS-posterna](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="point-your-domain-to-your-hosting-account"></a>Ange att domänen ska peka på värdkontot
 <a name="BKMK_PointDomain"> </a>
@@ -70,7 +70,7 @@ Följ dessa steg för att associera domänen med värdkontona.
 > [!IMPORTANT]
 > Innan du utför den här proceduren måste du först utföra proceduren i det första avsnittet i den här artikeln, [Ange att domänen ska peka på värdkontot](#point-your-domain-to-your-hosting-account). 
   
-Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
+Innan du använder domänen med Microsoft måste vi se till att du äger den. Din förmåga att logga in på ditt konto hos domänregistratorer och skapa DNS-posten bevisar för Microsoft att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -80,7 +80,7 @@ Innan du använder din domän med Office 365, vill vi vara säkra på att det ä
     (Varje konto på Hostgator har tilldelats en unik cPanel-adress. cPanel-adressen bör se ut ungefär så här: https://YourSiteAddress:secure-port-number. Registreringsmeddelandet du fick från Hostgator anger den adressen, och en **Hosting** cPanel-länk finns också tillgänglig på värdsidan.)
     
     > [!IMPORTANT]
-    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Office 365 kan du antingen köpa ett konto från Hostgator eller [delegera om namnservrarna så att de pekar på Office 365](change-nameservers-at-hostgator.md). 
+    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Microsoft kan du antingen köpa ett värdkonto från Hostgator eller [redigera om dina namnservrar för att peka på Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Välj **Avancerad zonredigerare**i området **Domäner** på sidan **Kontrollpanelen** .
     
@@ -91,15 +91,15 @@ Innan du använder din domän med Office 365, vill vi vara säkra på att det ä
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Använd din *domain_name*. (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |Använd din *domain_name*. (Till exempel fourthcoffee.com.)  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Välj **Lägg till post**.
     
 5. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär posten.
   
-När Office 365 hittar rätt TXT-post är din domän verifierad.
+När Microsoft hittar rätt TXT-post verifieras domänen.
   
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
@@ -110,9 +110,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du har problem med e-postflödet eller andra problem när du har lagt till DNS-poster läser du [Hitta och åtgärda problem när du har lagt till domänen eller DNS-posterna](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Lägga till en MX-post så att e-post för din domän kommer till Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägg till en MX-post så att e-post för din domän kommer till Microsoft
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     (Varje konto på Hostgator har tilldelats en unik cPanel-adress. cPanel-adressen bör se ut ungefär så här: https://YourSiteAddress:secure-port-number. Registreringsmeddelandet du fick från Hostgator anger den adressen, och en **Hosting** cPanel-länk finns också tillgänglig på värdsidan.)
     
     > [!IMPORTANT]
-    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Office 365 kan du antingen köpa ett konto från Hostgator eller [delegera om namnservrarna så att de pekar på Office 365](change-nameservers-at-hostgator.md). 
+    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Microsoft kan du antingen köpa ett värdkonto från Hostgator eller [redigera om dina namnservrar för att peka på Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Välj **MX Entry**i området **E-post** på sidan **Kontrollpanelen** .
     
@@ -136,7 +136,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta \< *domännyckeln* \> från ditt Office 365-konto.    [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta \< *domännyckeln* \> från ditt Microsoft-konto.    [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Välj **Lägg till ny post**.
    
@@ -144,7 +144,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 7. Om det finns andra MX-poster i avsnittet **MX Records** (MX-poster) tar du bort dem. 
 
     
-## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Lägg till de sex CNAME-posterna som krävs för Office 365
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-poster som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 > [!IMPORTANT]
@@ -155,7 +155,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     (Varje konto på Hostgator har tilldelats en unik cPanel-adress. cPanel-adressen bör se ut ungefär så här: https://YourSiteAddress:secure-port-number. Registreringsmeddelandet du fick från Hostgator anger den adressen, och en **Hosting** cPanel-länk finns också tillgänglig på värdsidan.)
     
     > [!IMPORTANT]
-    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Office 365 kan du antingen köpa ett konto från Hostgator eller [delegera om namnservrarna så att de pekar på Office 365](change-nameservers-at-hostgator.md). 
+    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Microsoft kan du antingen köpa ett värdkonto från Hostgator eller [redigera om dina namnservrar för att peka på Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Välj **Avancerad zonredigerare**i området **Domäner** på sidan **Kontrollpanelen** .
     
@@ -186,7 +186,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en enda SPF-post som innehåller båda uppsättningarna värden. Behöver du exempel? Kolla in dessa [externa domännamnssystemposter för Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Innan du utför den här proceduren måste du först utföra proceduren i det första avsnittet i den här artikeln, [Ange att domänen ska peka på värdkontot](#point-your-domain-to-your-hosting-account). 
@@ -196,7 +196,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     (Varje konto på Hostgator har tilldelats en unik cPanel-adress. cPanel-adressen bör se ut ungefär så här: https://YourSiteAddress:secure-port-number. Registreringsmeddelandet du fick från Hostgator anger den adressen, och en **Hosting** cPanel-länk finns också tillgänglig på värdsidan.)
     
     > [!IMPORTANT]
-    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Office 365 kan du antingen köpa ett konto från Hostgator eller [delegera om namnservrarna så att de pekar på Office 365](change-nameservers-at-hostgator.md). 
+    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Microsoft kan du antingen köpa ett värdkonto från Hostgator eller [redigera om dina namnservrar för att peka på Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Välj **Avancerad zonredigerare**i området **Domäner** på sidan **Kontrollpanelen** .
     
@@ -210,7 +210,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
   
 4. Välj **Lägg till post**.
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Lägga till de två SRV-posterna som krävs för Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägg till de två SRV-poster som krävs för Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -221,7 +221,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     (Varje konto på Hostgator har tilldelats en unik cPanel-adress. cPanel-adressen bör se ut ungefär så här: https://YourSiteAddress:secure-port-number. Registreringsmeddelandet du fick från Hostgator anger den adressen, och en **Hosting** cPanel-länk finns också tillgänglig på värdsidan.)
     
     > [!IMPORTANT]
-    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Office 365 kan du antingen köpa ett konto från Hostgator eller [delegera om namnservrarna så att de pekar på Office 365](change-nameservers-at-hostgator.md). 
+    > Du måste ha ett konto på Hostgator för att associera en cPanel med domänen. För att komma igång med Microsoft kan du antingen köpa ett värdkonto från Hostgator eller [redigera om dina namnservrar för att peka på Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Välj **Avancerad zonredigerare**i området **Domäner** på sidan **Kontrollpanelen** .
 
@@ -246,4 +246,4 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     Skapa **en** post i avsnittet Lägg till en post med hjälp av värdena från nästa rad i tabellen och välj sedan **Lägg till post** igen för att slutföra posten. 
     
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du har problem med e-postflödet eller andra problem när du har lagt till DNS-poster läser du [Hitta och åtgärda problem när du har lagt till domänen eller DNS-posterna](../get-help-with-domains/find-and-fix-issues.md). 

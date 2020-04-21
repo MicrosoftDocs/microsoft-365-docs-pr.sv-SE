@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Lär dig att komma åt eNom och skapa DNS via sidan Google Domains.
-ms.openlocfilehash: 8fc13ea2ccc7dfee510ef7abb72f88030d048943
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629137"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Skapa DNS-poster när din domän hanteras av Google (eNom)
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-För att kunna migrera e-postkonton till Office 365 måste du skapa en DNS-post hos din domänregistrator.
+Om du vill migrera dina e-postkonton till Microsoft måste du skapa en DNS-post hos domänregistraren.
   
 Om du köpte domänen via Google när du registrerade dig för ditt **Google Apps for Work-konto** hanteras dina DNS-poster av Google men registreras hos eNom. 
   
@@ -89,7 +89,7 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domäner.** Följ bara an
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. 
+    > Detta är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet. 
   
     [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)
   

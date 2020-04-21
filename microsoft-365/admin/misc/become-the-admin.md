@@ -1,5 +1,5 @@
 ---
-title: Utföra ett internt administrationsövertagande i Office 365
+title: Utför ett internt administrationsövertagande
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Läs om hur du verifierar din e-post och domänägarskap för att ta över en ohanterat klientorganisation i Office 365
-ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Läs om hur du verifierar din e-post och domänägarskap för att ta över en ohanterat klientorganisation i Microsoft 365
+ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212251"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627950"
 ---
-# <a name="perform-an-internal-admin-takeover-in-office-365"></a>Utföra ett internt administrationsövertagande i Office 365
+# <a name="perform-an-internal-admin-takeover"></a>Utför ett internt administrationsövertagande
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
 
@@ -67,11 +67,11 @@ Om du är administratör och vill ta över en ohanterlig klient som skapats av e
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Office 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 steg för att göra en IT-administratör Takeover för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Admin övertagande i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Få hjälp med Office 365-domäner](../get-help-with-domains/get-help-with-domains.md)
+[Få hjälp med domäner](../get-help-with-domains/get-help-with-domains.md)
 
 [Använda självbetjäningsanmäla i din organisation](self-service-sign-up.md)
   

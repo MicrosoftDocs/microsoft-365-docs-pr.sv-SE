@@ -1,5 +1,5 @@
 ---
-title: Ta bort en domän från Office 365
+title: Ta bort en domän
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Lär dig hur du tar bort en gammal domän från Office 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210374"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628440"
 ---
-# <a name="remove-a-domain-from-office-365"></a>Ta bort en domän från Office 365
+# <a name="remove-a-domain"></a>Ta bort en domän
 
 Deltagare: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-Tar du bort en domän på grund av att du vill lägga till den i ett annat Office 365-abonnemang? Eller vill du avbryta din prenumeration? Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).
+Tar du bort domänen för att du vill lägga till den i ett annat Microsoft 365-prenumerationsabonnemang? Eller vill du avbryta din prenumeration? Du kan [ändra ditt abonnemang eller din prenumeration](../../commerce/subscriptions/switch-to-a-different-plan.md) eller [avbryta prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Steg 1: Flytta användare till en annan domän
 
@@ -210,7 +210,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Hur länge dröjer det innan en domän tas bort?
 
-Det kan ta så lite som 5 minuter innan Office 365 tar bort en domän om den inte refereras på många platser, till exempel säkerhetsgrupper, distributionslistor, användare och Office 365-grupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
+Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte refereras på många platser som säkerhetsgrupper, distributionslistor, användare och Microsoft 365-grupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
   
 Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -231,6 +231,6 @@ Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss
 
 [Få hjälp med Office 365-domäner](get-help-with-domains.md)
 
-[Byta till ett annat Office 365 för företag-abonnemang](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Växla till ett annat Microsoft 365 för affärsplan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Avbryt prenumerationen](../../commerce/subscriptions/cancel-your-subscription.md)

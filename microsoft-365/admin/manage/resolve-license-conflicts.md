@@ -1,5 +1,5 @@
 ---
-title: Lösa licenskonflikter i Office 365 för företag
+title: Lösa licenskonflikter
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Läs om hur du löser licenskonflikter med din Office 365 för företag-prenumeration.
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Läs om hur du löser licenskonflikter med din Microsoft 365 för företag-prenumeration.
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540921"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628094"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>Lösa licenskonflikter i Office 365 för företag
+# <a name="resolve-license-conflicts"></a>Lösa licenskonflikter
 
 Vi rekommenderar att du köper de licenser som du behöver för din prenumeration innan du skapar nya användare. Då kan en licens tilldelas till nya användare när användarkonton skapas. Det uppstår licenskonflikter om du redan har tilldelat alla dina licenser till användare, men vissa licenser har gått ut, eller om du försöker ta bort en licens som redan är tilldelad till en användare. Mer information finns i [Ta bort licenser från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md).
   

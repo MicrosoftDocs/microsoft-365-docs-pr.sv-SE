@@ -1,5 +1,5 @@
 ---
-title: Välja domän som ska användas för att skapa Office 365-grupper
+title: Välj vilken domän som ska användas när Microsoft 365-grupper skapas
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: 'Lär dig att välja vilken domän du vill använda när du skapar Office 365-grupper genom att konfigurera e-postadressprinciper med PowerShell. '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 'Lär dig att välja vilken domän du vill använda när du skapar Microsoft 365-grupper genom att konfigurera e-postadressprinciper med PowerShell. '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894651"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630629"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Välja domän som ska användas för att skapa Office 365-grupper
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Välj vilken domän som ska användas när Microsoft 365-grupper skapas
 
- Vissa organisationer använder separata e-postdomäner för att dela upp olika delar av verksamheten. Du kan ange vilken domän som ska användas när användarna skapar Office 365-grupper.
+ Vissa organisationer använder separata e-postdomäner för att dela upp olika delar av verksamheten. Du kan ange vilken domän som ska användas när användarna skapar Microsoft 365-grupper.
   
 Om din organisation behöver användare för att skapa sina grupper i andra domäner än företagets standard accepterade domän kan du tillåta detta genom att konfigurera EPP-adresser (EAPs) med PowerShell.
   
-Innan du kan köra PowerShell-cmdlets kan du hämta och installera en modul där du kan prata med din Office 365-organisation. Läs [Anslut till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Innan du kan köra PowerShell-cmdlets hämtar och installerar du en modul som låter dig prata med din organisation. Läs [Anslut till Exchange Online med fjärr-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
   
 ## <a name="example-scenarios"></a>Exempel på scenarier
 
@@ -51,7 +51,7 @@ Följande två scenarier förklarar hur du skulle åstadkomma detta.
   
 ### <a name="scenario-1"></a>Scenario 1
 
-Följande exempel visar hur du etablerar alla Office 365-grupper i organisationen i domänen groups.contoso.com.
+I följande exempel visas hur du etablerar alla Microsoft 365-grupper i organisationen i domänen groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,7 +59,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scenario 2
 
-Anta att du vill styra vilka underdomäner som Office 365-grupper skapas i. Du vill ha:
+Anta att du vill styra vilka underdomäner som Microsoft 365-grupper skapas i. Du vill ha:
   
 - Grupper som skapats av studenter (användare som har **institutionen** inställd **på Studenter)** i domänen students.groups.contoso.com. Använd det här kommandot:
     
@@ -102,7 +102,7 @@ Om en princip för e-postadresser ändras påverkar det inte de grupper som reda
   
 ## <a name="hybrid-requirements"></a>Hybridkrav
 
-Om din organisation är konfigurerad i ett hybridscenario läser du [Konfigurera Office 365-grupper med lokal Exchange-hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) för att se till att organisationen uppfyller kraven för att skapa Office 365-grupper. 
+Om din organisation är konfigurerad i ett hybridscenario kan du läsa [Konfigurera Microsoft 365-grupper med lokal Exchange-hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) för att se till att din organisation uppfyller kraven för att skapa Microsoft 365-grupper. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Ytterligare information om hur du använder e-postadressprincipgrupper:
 
@@ -122,4 +122,4 @@ Det finns några fler saker att veta:
     
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Skapa en Office 365-grupp i administrationscentret](create-groups.md)
+[Skapa en Microsoft 365-grupp i administrationscentret](create-groups.md)

@@ -19,27 +19,27 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Lär dig att skapa, redigera eller ta bort en säkerhetsgrupp.
-ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808033"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628885"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365
 
-På sidan Grupper **i** Office 365 kan du skapa grupper av användarkonton som du kan använda för att tilldela samma behörigheter till i SharePoint Online och CRM Online. En administratör kan till exempel skapa en säkerhetsgrupp för att ge en viss grupp personer åtkomst till en SharePoint-webbplats. Endast globala administratörer och användarhanteringsadministratörer har behörighet att skapa, redigera eller ta bort säkerhetsgrupper. Mer information om administratörsroller finns i [Tilldela administratörsroller](../add-users/assign-admin-roles.md). 
+På sidan Microsoft 365 **Groups** kan du skapa grupper av användarkonton som du kan använda för att tilldela samma behörigheter till i SharePoint Online och CRM Online. En administratör kan till exempel skapa en säkerhetsgrupp för att ge en viss grupp personer åtkomst till en SharePoint-webbplats. Endast globala administratörer och användarhanteringsadministratörer har behörighet att skapa, redigera eller ta bort säkerhetsgrupper. Mer information om administratörsroller finns i [Tilldela administratörsroller](../add-users/assign-admin-roles.md). 
   
 Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) som du kan använda för att skicka e-post eller tilldela behörighet till en grupp användare, samt [Grupper i Exchange Online och SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) som används för att bevilja användare behörighet och åtkomst till webbplatser och webbplatssamlingar. 
   
 > [!IMPORTANT]
->  Planerar du att använda webbplatspostlådor? Alla användare som läggs till på en SharePoint-webbplats via en säkerhetsgrupp i stället för att läggas till individuellt kan bara använda webbplatspostlådan från SharePoint. Dessa användare kan inte komma åt webbplatspostlådan från Outlook. Mer information finns i [Använda Office 365-grupper i stället för Webbplatspostlådor](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
+>  Planerar du att använda webbplatspostlådor? Alla användare som läggs till på en SharePoint-webbplats via en säkerhetsgrupp i stället för att läggas till individuellt kan bara använda webbplatspostlådan från SharePoint. Dessa användare kan inte komma åt webbplatspostlådan från Outlook. Mer information finns i [Använda Microsoft 365-grupper i stället för Webbplatspostlådor](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>Hantera säkerhetsgrupper i administrationscentret
 
 ### <a name="add-a-security-group"></a>Lägga till en säkerhetsgrupp
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> **administrationscentret för** > Microsoft 365.
   
 2. På sidan **Grupper** väljer du **Lägg till en grupp**.
     
@@ -118,14 +118,14 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
     
 3. I säkerhetsgruppsfönstret väljer du **Redigera bredvid** fliken **Namn** eller **Medlemmar** om du vill redigera gruppinformation eller medlemmar.
     
-4. När du har gjort ändringar väljer du **Spara** \> **nära**.
+4. När du har gjort ändringar väljer du **Spara** > **nära**.
 
 ::: moniker-end
 
 
 ### <a name="delete-a-security-group"></a>Ta bort en säkerhetsgrupp
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Gruppergrupper** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
     
 2. Välj gruppens namn på sidan **Grupper.** 
     
@@ -137,13 +137,13 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
 
 Om du vill skapa grupper av användare så att du kan skicka e-post till dem alla samtidigt kan du göra det i administrationscentret för Exchange genom att \> gå till **Admin** \> **Administratörsutbytesmottagare** \> **Recipients** grupper . **Groups** Välj sedan **New**![Nytt](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)lägg till och välj den typ av grupp som du vill skapa: 
   
-- **Distributionsgrupp**: Används för att distribuera meddelanden till en grupp användare. Det kallas också en *e-postaktiverad distributionsgrupp*eller, i Office 365, en *distributionslista*. Mer information finns i [Hantera distributionsgrupper](https://technet.microsoft.com/library/bb124513.aspx).
+- **Distributionsgrupp**: Används för att distribuera meddelanden till en grupp användare. Det kallas också en *e-postaktiverad distributionsgrupp*eller en *distributionslista*. Mer information finns i [Hantera distributionsgrupper](https://technet.microsoft.com/library/bb124513.aspx).
     
 - **Säkerhetsgrupp**: Kan användas för att distribuera meddelanden till en grupp användare och för att bevilja behörighet till resurser. Den här gruppen kallas också för en *e-postaktiverad säkerhetsgrupp*. Mer information finns i [Hantera e-postaktiverade säkerhetsgrupper](https://technet.microsoft.com/library/bb123521.aspx).
     
 - **Dynamisk distributionsgrupp**: En typ av distributionsgrupp vars lista över mottagare beräknas om varje gång du skickar ett meddelande baserat på filter och villkor som du definierar. Mer information finns i [Hantera dynamiska distributionsgrupper](https://technet.microsoft.com/library/bb123722.aspx).
     
-När du har skapat distributionsgrupper och e-postaktiverade säkerhetsgrupper i administrationscentret för Exchange visas gruppnamnen och användarlistorna på sidan **Säkerhetsgrupper** i Office 365. Grupperna kan tas bort på båda platserna, men endast redigeras i administrationscentret för Exchange. Dynamiska distributionslistor visas inte på sidan **Säkerhetsgrupper** i Office 365. 
+När du har skapat distributionsgrupper och e-postaktiverade säkerhetsgrupper i administrationscentret för Exchange visas deras namn och användarlistor på sidan **Säkerhetsgrupper.** Grupperna kan tas bort på båda platserna, men endast redigeras i administrationscentret för Exchange. Dynamiska distributionsgrupper visas inte på sidan **Säkerhetsgrupper.** 
   
  SharePoint-grupper skapas automatiskt när du skapar en webbplatssamling. De förinställda grupperna har standardbehörighetsnivåerna för användarnas behörighet och åtkomst i SharePoint - de här nivåerna kallas ibland SharePoint-roller. Mer information finns [i Standard-SharePoint-grupper i SharePoint Online](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx).
   
@@ -157,5 +157,5 @@ Nej. Det här är ett annat sätt som du kan hantera säkerhet för din organisa
   
 ## <a name="can-i-send-email-to-a-security-group"></a>Kan jag skicka e-post till en säkerhetsgrupp?
 
-Ja. Men om du vill använda grupper för e-post och samarbete rekommenderar vi att du [skapar en Office 365-grupp](../create-groups/create-groups.md) i stället. 
+Ja. Men om du vill använda grupper för e-post och samarbete rekommenderar vi att du [skapar en Microsoft 365-grupp](../create-groups/create-groups.md) i stället. 
   

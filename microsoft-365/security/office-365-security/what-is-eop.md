@@ -15,28 +15,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: Detta inledande dokument hjälper dig att förstå Exchange Online Protection (EOP) och några viktiga terminologi. Detta gäller för Office 365-kunder som skyddar Exchange Online-molnbaserade postlådor och EOP-fristående kunder som skyddar lokala postlådor som Exchange Server 2016.
-ms.openlocfilehash: b1a8e9360005b31cf03c5e9921e3285ff7119926
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Detta inledande dokument hjälper dig att förstå Exchange Online Protection (EOP) och några viktiga terminologi. Detta gäller för kunder som skyddar Exchange Online-molnbaserade postlådor och EOP-fristående kunder som skyddar lokala postlådor som Exchange Server 2016.
+ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42811124"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630923"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>Vad är Exchange Online Protection (EOP)
 
-Exchange Online Protection (EOP) är en molnbaserad e-postfiltreringstjänst som hjälper till att skydda din organisation mot skräppost och skadlig kod. Om du har postlådor i Office 365 skyddas de automatiskt av EOP eftersom det är en del av tjänsten. Detta inkluderar organisationer som har postlådor i både Office 365 och lokalt, vilket brukar kallas ett hybridscenario. EOP fristående är också tillgängligt för kunder som inte har postlådor i molnet men vill skydda sina lokala postlådor.
+Exchange Online Protection (EOP) är en molnbaserad e-postfiltreringstjänst som hjälper till att skydda din organisation mot skräppost och skadlig kod. Om du har postlådor i Microsoft 365 skyddas de automatiskt av EOP eftersom det är en del av tjänsten. Detta inkluderar organisationer som har postlådor i både Microsoft 365 och lokalt, vilket brukar kallas ett hybridscenario. EOP fristående är också tillgängligt för kunder som inte har postlådor i molnet men vill skydda sina lokala postlådor.
 
 EOP försöker filtrera bort skräp, hålla inkorgen borta från innehåll som användarna inte vill se. Normalt levereras skräppost till mappen Skräppost. Vissa användare gillar att kontrollera att filtrering gör vad de vill så skräppost mappen är ett enkelt sätt för användare att kontrollera på egen hand.  
 
 > [!TIP]
-> Det är en bra sak när skräp eller på annat sätt dålig e-post går in i skräppostmappen automatiskt. Tjänsten kommer att göra vad som är nödvändigt baserat på vad standard- eller anpassade administratörsinställningarna anger. Med andra ord bör användarna inte oroa sig för att se en hel del skräppost i skräppostmappen. Om administratörer föredrar att flytta allt skräp utom synhåll, bör karantänen konfigureras. Mer information finns [i e-postmeddelandena karantän i Office 365.](quarantine-email-messages.md)
+> Det är en bra sak när skräp eller på annat sätt dålig e-post går in i skräppostmappen automatiskt. Tjänsten kommer att göra vad som är nödvändigt baserat på vad standard- eller anpassade administratörsinställningarna anger. Med andra ord bör användarna inte oroa sig för att se en hel del skräppost i skräppostmappen. Om administratörer föredrar att flytta allt skräp utom synhåll, bör karantänen konfigureras. Mer information finns i artikeln [Karantänmeddelanden.](quarantine-email-messages.md)
 
 ## <a name="important-terms"></a>Viktiga termer
 
-**Inkommande**: Meddelanden som kommer till Office 365.
+**Inkommande**: Meddelanden som kommer till Microsoft 365.
 
-**Utgående**: Meddelanden som kommer ut från Office 365.
+**Utgående**: Meddelanden som kommer från Microsoft 365.
 
 **Internt**: Meddelanden som kommer från någon inom organisationen till någon inom organisationen. Detta inkluderar kunder som är i hybridscenarier och en postlåda kan vara lokalt och den andra postlådan finns i molnet.
 

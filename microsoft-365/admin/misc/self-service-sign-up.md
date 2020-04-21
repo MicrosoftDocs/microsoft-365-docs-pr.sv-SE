@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Lär dig mer om registreringen av självbetjäning i Office 365 och tillgängliga självbetjäningsprogram som Microsoft Power Apps, Microsoft Flow och Dynamics 365 for Financials.
+description: Lär dig mer om registreringen av självbetjäningstjänsten för Microsoft 365 och tillgängliga självbetjäningsprogram som Microsoft Power Apps, Microsoft Flow och Dynamics 365 for Financials.
 ms.custom: okr_SMB
-ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106118"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627806"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Använda självbetjäningsanmäla i din organisation
 
@@ -38,9 +38,9 @@ I följande exempel beskrivs hur självanmälning fungerar för en skola. Samma 
   
 1. Elever och fakultetsmedlemmar har e-postadresser till skolan som anger att de är kopplade till din institution. Till exempel kan e-postadressen jakob@uw.edu ange en student från University of Washington.
 
-2. Studenter och lärare går till [vår webbplats](https://go.microsoft.com/fwlink/p/?LinkId=536628)och använder sin e-postadress för att registrera dig för de tjänster som din organisation erbjuder, till exempel Office 365 ProPlus. De kan också registrera dig för andra gratis tjänster som vi erbjuder.
+2. Studenter och lärare går till [vår webbplats](https://go.microsoft.com/fwlink/p/?LinkId=536628)och använder sin e-postadress för att registrera dig för de tjänster som din organisation erbjuder, till exempel Microsoft 365 Apps for Enterprise. De kan också registrera dig för andra gratis tjänster som vi erbjuder.
 
-3. Vi validerar deras e-postadress och sedan kan de börja använda Office 365, Power BI eller andra tjänster direkt.
+3. Vi validerar deras e-postadress och sedan kan de börja använda Microsoft 365, Power BI eller andra tjänster direkt.
 
 4. Som företagsadministratör ser du vem som har registrerat sig för en prenumeration genom att visa sidan **Produkter & tjänster** i administrationscentret. På så sätt kan du se när det finns nya eller okända licenser för tjänster i din klient. Om du vill styra om användare kan registrera sig för självbetjäningsprenumerationer använder du cmdleten [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell med parametern **AllowAdHocSubscriptions.** Mer information finns i [Hur kontrollerar jag självbetjäningsinställningarna?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
@@ -52,8 +52,8 @@ Följande är de för närvarande tillgängliga självbetjäningsprogram. Den h�
 |:-----|:-----|:-----|:-----|
 |**Program** <br/> |**Beskrivning** <br/> |**Ytterligare information** <br/> |Webbplats för självbetjäning registrera dig **** <br/> |
 |Office 365 A1**** <br/> |Alla elever eller lärare kan använda en e-postadress till skolan för att registrera dig för kostnadsfria Office 365 och hämta Office-appar för webben, 1 TB OneDrive-molnlagring och SharePoint Online för klass-, grupp- och projektwebbplatser.  <br/> |[Tekniska frågor om Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Utbildning](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 A1 Plus** <br/> |Behöriga elever och lärare kan registrera sig för Office 365 A1 Plus, som innehåller allt som nämns ovan plus Office 365 ProPlus. Office 365 ProPlus är produktivitetsprogram, inklusive Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access och Skype för företag, som är installerat på din stationära eller bärbara dator.  <br/> |[Tekniska frågor om Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Utbildning](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Power BI** <br/> |Power BI gör det möjligt för användare att visualisera data, dela upptäckter och samarbeta på nya intuitiva sätt. <br/> Om din organisation redan prenumererar på Office 365 kan du dessutom se licenser för "Power BI Pro Individual User Trial", som ger användarna begränsad, fri tillgång till avancerade funktioner.  <br/> |[Power BI i din organisation](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
+|**Office 365 A1 Plus** <br/> |Behöriga elever och lärare kan registrera sig för Office 365 A1 Plus, som innehåller allt som nämns ovan plus Microsoft 365 Apps för företag. Microsoft 365 Apps for enterprise är produktivitetsprogram, inklusive Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access och Skype för företag, som är installerat på din stationära eller bärbara dator.  <br/> |[Tekniska frågor om Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Utbildning](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Power BI** <br/> |Power BI gör det möjligt för användare att visualisera data, dela upptäckter och samarbeta på nya intuitiva sätt. <br/> Om din organisation redan prenumererar kan du dessutom se licenser för "Power BI Pro Individual User Trial", som erbjuder användarna begränsad, fri tillgång till avancerade funktioner.  <br/> |[Power BI i din organisation](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Rights Management Services (RMS)** <br/> |RMS för enskilda personer är en kostnadsfri självbetjäningsprenumeration för användare i en organisation som har skickats känsliga filer som har skyddats av Azure Rights Management (Azure RMS), men deras IT-avdelning har inte implementerat Azure Rights Management (Azure RMS) eller Active Directory Rights Management Services (AD RMS).  <br/> |[RMS för enskilda personer och Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management-portalen](https://portal.azure.com/) så att du kan kontrollera om du kan öppna ett visst rättighetsskyddat dokument.  <br/> |
 |**Microsoft Power-appar** <br/> |I PowerApps kan du hantera organisationsdata genom att köra en app som du har skapat eller som någon annan har skapat och delat med dig. Appar körs på mobila enheter som telefoner, eller så kan du köra dem i en webbläsare genom att öppna Dynamics 365. Du kan skapa ett oändligt utbud av appar – allt utan att lära dig ett programmeringsspråk som C#.  <br/> |[Självbetjäningsanmälan för PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power-appar](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 för ekonomi** <br/> |Få en komplett lösning för företag och ekonomi för små och medelstora företag. Dynamics 365 for Financials gör det enklare att beställa, sälja, fakturera och rapportera – från och med dag ett.  <br/> |[Microsoft Dynamics 365 för ekonomi](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 för ekonomi](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |

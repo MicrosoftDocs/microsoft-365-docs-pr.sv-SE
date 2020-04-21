@@ -1,5 +1,5 @@
 ---
-title: Office 365-rapporter i administrationscentret – användning av Microsoft Teams-enheter
+title: Microsoft 365-rapporter i administrationscentret – användning av Microsoft Teams-enheter
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
-description: Få insikter om de Microsoft Teams-appar som används i organisationen genom att hämta användningsrapporten för Microsoft Teams-appen från Office 365 Reports.
-ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Få insikter om de Microsoft Teams-appar som används i organisationen genom att hämta användningsrapporten för Microsoft Teams-appen från Microsoft 365 Reports.
+ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046969"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621216"
 ---
-# <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Office 365-rapporter i administrationscentret – användning av Microsoft Teams-enheter
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av Microsoft Teams-enheter
 
-Instrumentpanelen Office 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Läs [översiktsavsnittet om rapporter](activity-reports.md). I appanvändningsrapporten för Microsoft Teams får du inblick i vilka Microsoft Teams-appar som används inom organisationen.
+Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Läs [översiktsavsnittet om rapporter](activity-reports.md). I appanvändningsrapporten för Microsoft Teams får du inblick i vilka Microsoft Teams-appar som används inom organisationen.
   
 > [!NOTE]
 > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter.  
@@ -45,7 +45,7 @@ Instrumentpanelen Office 365 **Reports** visar aktivitetsöversikten för produk
 
 Genom att titta på diagrammen **Användare** och **Fördelning** kan du få insyn i användarnas användning av Microsoft Teams-appar. 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Microsoft 365-rapporter – användning av Microsoft Teams-appar](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

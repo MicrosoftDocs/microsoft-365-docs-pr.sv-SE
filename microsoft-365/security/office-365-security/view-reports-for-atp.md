@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Hitta och använd rapporter för avancerat skydd mot &amp; office 365 i Säkerhetsefterlevnadscenter.
-ms.openlocfilehash: b91fb8d000b610439618be687e36dabc787ebb58
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528983"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631067"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -107,9 +107,9 @@ I **atp-filtyper** visas vilken typ av filer som har identifierats som skadliga 
 Om du vill visa [ &amp; den](https://protection.office.com)här rapporten går du till **Rapporter** \> \> **instrumentpanels-ATP-filtyper**. **Dashboard**
 
 ![Rapporten för ATP-filtyper](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-
-När du hovrar över en viss dag kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Safe Attachments](atp-safe-attachments.md) och [skydd mot skräppost mot &amp; skadlig kod i Office 365](anti-spam-and-anti-malware-protection.md).
-
+  
+När du hovrar över en viss dag kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Safe Bilagor](atp-safe-attachments.md) och [anti-spam &amp; anti-malware skydd](anti-spam-and-anti-malware-protection.md).
+  
 ![ATP-filtyper rapportdata för en dag](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
 ## <a name="atp-message-disposition-report"></a>Rapport om ATP-meddelandedisposition
@@ -158,7 +158,7 @@ Om du vill visa och använda de rapporter som beskrivs i den här artikeln **må
 
 Mer information finns i följande resurser:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md)
 
 - [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -168,8 +168,8 @@ Om du inte ser data i ATP-rapporterna dubbelkollar du att dina principer är kor
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Rapporter och insikter i Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
+[Rapporter och insikter i &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
+  
 [Skapa ett schema för en &amp; rapport i Säkerhetsefterlevnadscenter](create-a-schedule-for-a-report.md)
 
 [Konfigurera och hämta en anpassad &amp; rapport i Security Compliance Center](set-up-and-download-a-custom-report.md)

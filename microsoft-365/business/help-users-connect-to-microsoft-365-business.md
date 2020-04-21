@@ -1,5 +1,5 @@
 ---
-title: Hjälpa användare att ansluta till Microsoft 365 Business
+title: Hjälp användare att ansluta till Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -26,22 +26,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: Läs om vad du kan förvänta dig när installationen av Business Cloud Suite är klar och standardenhetspolicyerna är på plats och redo att tillämpas.
-ms.openlocfilehash: 450d91686420c11bf696e70a993354c57f0602a3
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Läs om vad du kan förvänta dig när installationen av Business Cloud Suite är klar och standardenhetens principer är på plats och är redo att tillämpas.
+ms.openlocfilehash: 375a46fd946b42dc391ff6e4dabe98a435074377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560429"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627223"
 ---
-# <a name="help-users-connect-to-microsoft-365-business"></a>Hjälpa användare att ansluta till Microsoft 365 Business
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Hjälp användare att ansluta till Microsoft 365 Business Premium
 
-När du har konfigurerat installationen är standardenhetsprinciperna på plats och är redo att tillämpas. På mobila enheter laddar användarna ned Office-appar. Principer tillämpas sedan när användaren loggar in med sitt arbets- eller skolkonto. Det återstår en del arbete, exempelvis uppgradering under drift, innan principerna kan användas på Windows-datorer. Se och dela följande avsnitt som hjälper användarna att konfigurera och ansluta:
+När du har slutfört installationen är standardenhetens principer på plats och är redo att tillämpas. På mobila enheter laddar användarna ned Office-appar. Principer tillämpas sedan när användaren loggar in med sitt arbets- eller skolkonto. Det återstår en del arbete, exempelvis uppgradering under drift, innan principerna kan användas på Windows-datorer. Se och dela följande avsnitt för att hjälpa användarna att konfigurera och ansluta:
   
-[Konfigurera Windows-enheter för Microsoft 365 Business-användare](set-up-windows-devices.md)
+[Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare](set-up-windows-devices.md)
   
 [Använda stegvisa anvisningar för att lägga till AutoPilot-enheter och -profiler](add-autopilot-devices-and-profile.md)
   
-[Konfigurera mobila enheter för Microsoft 365 företag-användare](set-up-mobile-devices.md)
+[Konfigurera mobila enheter för Microsoft 365 Business Premium-användare](set-up-mobile-devices.md)
   
 

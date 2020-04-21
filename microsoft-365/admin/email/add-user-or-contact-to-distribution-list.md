@@ -1,5 +1,5 @@
 ---
-title: Lägga till en användare eller kontakt i en Distributionsgrupp för Office 365
+title: Lägga till en användare eller kontakt i en distributionsgrupp
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: Läs om hur du lägger till en Office 365-användare eller kontaktar en distributionsgrupp. Du kan till exempel lägga till en medarbetare, partner eller en leverantör i din e-postdistributionsgrupp.
-ms.openlocfilehash: 2a6ee1336f738b57740469d6d74b461a69d7fc8c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Läs om hur du lägger till en Microsoft 365-användare eller kontaktar en distributionsgrupp. Du kan till exempel lägga till en medarbetare, partner eller en leverantör i din e-postdistributionsgrupp.
+ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42810141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629077"
 ---
-# <a name="add-a-user-or-contact-to-an-office-365-distribution-group"></a>Lägga till en användare eller kontakt i en Distributionsgrupp för Office 365
+# <a name="add-a-user-or-contact-to-a-distribution-group"></a>Lägga till en användare eller kontakt i en distributionsgrupp
 
-Som administratör för en Office 365-organisation kan du behöva lägga till en av dina användare eller kontakter i en distributionsgrupp (se [Skapa distributionsgrupper i Office 365](../setup/create-distribution-lists.md).) Du kan till exempel lägga till medarbetare eller externa partner eller leverantörer i en e-postdistributionsgrupp.
+Som administratör för en organisation kan du behöva lägga till en av dina användare eller kontakter i en distributionsgrupp (se [Skapa distributionsgrupper i Microsoft 365](../setup/create-distribution-lists.md).) Du kan till exempel lägga till medarbetare eller externa partner eller leverantörer i en e-postdistributionsgrupp.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Lägga till en användare eller kontakt i en distributionsgrupp
 
@@ -92,6 +92,6 @@ Om du inte ännu har skapat [kontakten](../misc/contacts.md) gör du det först 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-Lär dig hur du [skickar e-post som en distributionsgrupp i Office 365](../manage/send-email-as-distribution-list.md).
+Läs om hur du [skickar e-post som distributionsgrupp i Microsoft 365](../manage/send-email-as-distribution-list.md).
   
 

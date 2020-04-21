@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Lär dig hur du dirigerar trafik till en befintlig offentlig webbplats som finns utanför Office 365 om du har angett att Office 365 ska hantera DNS-poster för din anpassade domän.
-ms.openlocfilehash: 3e71925f9b50e5520bd383aa5318db513202f6ec
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Lär dig hur du dirigerar trafik till en befintlig offentlig webbplats som finns utanför Microsoft om du har angett att Microsoft ska hantera DNS-poster för din anpassade domän.
+ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142545"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629125"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Uppdatera DNS-poster för att behålla din webbplats hos ditt nuvarande webbhotell
 
- **Om du hanterar din domäns Office 365-poster hos din DNS-värd** behöver du inte bry dig om anvisningarna i det här avsnittet. Din webbplats finns kvar på samma plats och användarna kan fortfarande komma åt den. 
+ **Om du hanterar domänens Microsoft-poster hos din DNS-värd**behöver du inte oroa dig för stegen i det här avsnittet. Din webbplats finns kvar på samma plats och användarna kan fortfarande komma åt den. 
   
- **Om Office 365 hanterar dina DNS-poster** och du vill dirigera trafik till en befintlig offentlig webbplats som inte ligger i Office 365, gör du följande när du har lagt till din domän i Office 365: 
+ **Om Microsoft hanterar dina DNS-poster**gör du följande när du har lagt till din domän i Microsoft: 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Uppdatera DNS-poster i microsoft 365-administrationscentret
-1. Gå till sidan **Installationsdomäner** \> i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
 2. På sidan **Domäner**, i listan över domäner, väljer du den domän du använder för webbplatsen och väljer sedan **DNS-inställningar** i hanteringsfönstret. 
     
@@ -64,7 +64,7 @@ Du kan dessutom skapa en CNAME-post för att kunderna lättare ska kunna hitta t
     
 Gör sedan följande:
   
-[Uppdatera domänens NS-poster](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) så att de pekar på Office 365. 
+[Uppdatera domänens NS-poster](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) så att de pekar på Microsoft. 
   
-När du har uppdaterat NS-posterna så att de pekar på Office 365 är domänen färdigkonfigurerad. All e-post kommer hädanefter att dirigeras till Office 365, och trafiken till webbadressen kommer att fortsätta att gå till det nuvarande webbhotellet.
+När NS-posterna har uppdaterats så att de pekar på Microsoft är domänen konfigurerad. E-post dirigeras till Microsoft och trafiken till din webbadress fortsätter att gå till din nuvarande webbplatsvärd.
  

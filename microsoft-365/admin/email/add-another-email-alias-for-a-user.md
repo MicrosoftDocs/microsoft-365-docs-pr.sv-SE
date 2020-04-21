@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Office 365 för företag-konto. '
-ms.openlocfilehash: 10f219f380d30a5ee8e9822e7a35ee533d165c33
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företagskonto. '
+ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807874"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629089"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
   
-Den här artikeln är avsedd för Office 365-administratörer som har företagsprenumerationer. Den är inte avsedd för hemanvändare.
+Den här artikeln är avsedd för Microsoft 365-administratörer som har företagsprenumerationer. Den är inte avsedd för hemanvändare.
   
-En primär e-postadress i Office 365 är vanligtvis den e-postadress som en användare tilldelades när deras konto skapades. När användaren skickar e-post till någon annan är det vanligtvis den primära e-postadressen som visas i fältet  *Från*  i e-postappar. Användaren kan också ha mer än en e-postadress kopplad till sitt Office 365 för företag-konto. Dessa ytterligare adresser kallas alias. 
+En primär e-postadress i Microsoft 365 är vanligtvis den e-postadress som en användare tilldelades när deras konto skapades. När användaren skickar e-post till någon annan är det vanligtvis den primära e-postadressen som visas i fältet  *Från*  i e-postappar. De kan också ha mer än en e-postadress kopplad till sitt Microsoft 365 för företag-konto. Dessa ytterligare adresser kallas alias. 
   
 Anta till exempel att Jenna har e-postadressen jenna@contosoco.com, men hon vill också få e-post på jen@contosoco.com eftersom vissa personer hänvisar till henne med det namnet. Du kan skapa alias för henne så att båda e-postadresserna går till Jennas inkorg.
 <br><br>  

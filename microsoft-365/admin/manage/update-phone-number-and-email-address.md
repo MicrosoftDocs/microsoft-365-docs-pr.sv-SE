@@ -1,5 +1,5 @@
 ---
-title: Uppdatera administratörstelefonnumret och -e-postadressen i Office 365
+title: Uppdatera ditt telefonnummer och din e-postadress
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,36 +19,36 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Uppdatera administratörens telefonnummer och e-postadress i administrationscentret. Du behöver den här informationen om du vill återställa ditt eget administratörslösenord.
-ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811559"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628010"
 ---
-# <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>Uppdatera administratörstelefonnumret och -e-postadressen i Office 365
+# <a name="update-your-admin-phone-number-and-email-address"></a>Uppdatera ditt telefonnummer och din e-postadress
 
-I den här artikeln beskrivs hur du som administratör kan ändra telefonnumret och e-postadressen för företaget i Office 365.
+I den här artikeln beskrivs hur du som administratör kan ändra din företagstelefon och e-postadress i Microsoft 365.
   
 Om du vill veta hur du ändrar företagets profilinformation, till exempel företagsnamn och -adress, företagstelefonnummer och teknisk kontaktinformation läser du [Ändra adress, e-postadress och annan information för organisationen](change-address-contact-and-more.md).
   
 ## <a name="to-update-your-name-phone-number-and-email-address"></a>Så här uppdaterar du namn, telefonnummer och e-postadress
 
-På sidan **Personlig information** kan du ändra namn, mobiltelefonnummer och alternativ e-postadress. Den alternativa e-postadressen används för viktiga meddelanden, till exempel återställa ditt administratörslösenord (inte lösenordet för datoradministratören). 
+På sidan **Personlig information** kan du ändra namn, mobiltelefonnummer och alternativ e-postadress. Den alternativa e-postadressen används för viktiga meddelanden, till exempel återställa admin lösenord (inte din dator admin lösenord). 
   
 1. Bläddra till administrationscentret för Microsoft 365.
 
-2. \> Välj din profilikon Mitt **konto** \> Personlig information **i**sidhuvudet .
+2. I sidhuvudet väljer \> du din profilikon **Min personliga** \> **information**.
 
-3. Välj Redigera i avsnittet **Kontaktuppgifter.** Uppdatera din mobil, telefon och alternativa e-postadress. Se till använda en annan e-postadress än den för Office 365 som alternativ e-postadress.
+3. Välj Redigera i avsnittet **Kontaktuppgifter.** Uppdatera din mobil, telefon och alternativa e-postadress. Se till att du använder något annat än din Microsoft-e-postadress för din alternativa e-postadress.
 
     > [!IMPORTANT]
-    > Den alternativa e-postadressen och mobiltelefonnumret behövs för att återställa administratörslösenordet (inte lösenordet för datoradministratören).
+    > Den alternativa e-postadressen och mobiltelefonnumret behövs för att återställa administratörslösenordet (inte lösenordet för datorns administratör).
 
 4. När du är klar väljer du **Spara**.
   
 Svar på faktureringsfrågor finns här:
   
-- [Ändra dina faktureringsadresser för Office 365 för företag](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Ändra dina faktureringsadresser för Microsoft 365 för företag](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto i Office 365 för företag](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto i Microsoft 365 för företag](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

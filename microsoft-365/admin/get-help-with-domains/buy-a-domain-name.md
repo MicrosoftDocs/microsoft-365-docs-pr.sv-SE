@@ -1,5 +1,5 @@
 ---
-title: Köpa ett domännamn i Office 365
+title: Köpa ett domännamn
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Läs om hur du köper ett domännamn i Office 365.
+description: Läs om hur du köper ett domännamn i Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 89bc24683cd98d2c9f420d1470a864eef857c9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211152"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628596"
 ---
-# <a name="buy-a-domain-name-in-office-365"></a>Köpa ett domännamn i Office 365
+# <a name="buy-a-domain-name"></a>Köpa ett domännamn
 
  *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller en [företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
 
@@ -93,17 +93,17 @@ Begär överföringen hos registratorn du vill flytta din domän till. Titta eft
 
 Om du inte redan har en egen domän kan du enkelt köpa en online hos en domännamnsregistrator, en domänåterförsäljare eller hos din nuvarande Internetleverantör. Du får ett domännamn när du registrerar dig för Office 365 med 21Vianet, till exempel contoso.partner.onmschina.cn. Men du kanske vill använda ett eget domännamn, till exempel fourthcoffee.com.
   
-Om du vill konfigurera en domän i Office 365 måste du äga domänen och ändra vissa av domänens DNS-poster.
+Om du vill konfigurera en domän i Microsoft 365 måste du äga en domän och ändra några av DNS-posterna för domänen.
   
 > [!CAUTION]
-> Vissa domänregistratorer eller DNS-värdtjänster tillåter inte att alla DNS-poster som krävs för Office 365 skapas. Följande lista med värdtjänster stöder alla nödvändiga poster. Om du funderar på att använda en annan värdtjänst bör du [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Vissa domänregistratorer eller DNS-värdleverantörer tillåter inte att du skapar alla DNS-poster som krävs av Microsoft 365. Följande lista med värdtjänster stöder alla nödvändiga poster. Om du funderar på att använda en annan värdtjänst bör du [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-När du har registrerat din domän (hos en domänregistrator) kan du logga in på Office 365 som administratör och konfigurera domänen så att du kan använda den med din e-postadress och andra tjänster.
+När du har registrerat domänen (hos en domänregistrare) loggar du in på Microsoft 365 som administratör och konfigurerar domänen så att du kan använda den med din e-postadress och andra tjänster..
   
 > [!NOTE]
-> Informationen om den offentliga SharePoint Online-webbplatsen i den här artikeln gäller endast om organisationen har köpt Office 365 före den 9 mars 2015. 
+> Informationen om den offentliga sharepoint-webbplatsen i SharePoint Online i den här artikeln gäller endast om din organisation köpte Microsoft 365 före den 9 mars 2015. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-office-365"></a>Domänregistratorer som stöder alla DNS-poster som krävs för Office 365
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänregistratorer som stöder alla DNS-poster som krävs för Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,10 @@ När du har registrerat din domän (hos en domänregistrator) kan du logga in p�
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till en domän i Office 365](../setup/add-domain.md)
+[Lägga till en domän i Microsoft 365](../setup/add-domain.md)
 
 [Vanliga frågor och svar om domäner](../setup/domains-faq.md)
 
-[Få hjälp med Office 365-domäner](get-help-with-domains.md)
+[Få hjälp med domäner](get-help-with-domains.md)
 
-[Uppdatera DNS-poster för att hålla din webbplats med din nuvarande värdleverantör](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 
+[Uppdatera DNS-poster för att hålla din webbplats med din nuvarande webbhotell](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

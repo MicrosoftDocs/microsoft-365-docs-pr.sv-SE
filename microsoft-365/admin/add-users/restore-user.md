@@ -1,5 +1,5 @@
 ---
-title: Återställa en användare i Office 365
+title: Återställa en användare
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,27 +21,27 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Lär dig hur du återställer borttagna Office 365-användarkonton och alla associerade data.
-ms.openlocfilehash: 385f7938f5e0ce1f3a580d40830124f77454f64d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Lär dig hur du återställer borttagna användarkonton och alla associerade data.
+ms.openlocfilehash: 78766f1f6708665271361d542372aa945b0a7e29
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808681"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624064"
 ---
-# <a name="restore-a-user-in-office-365"></a>Återställa en användare i Office 365
+# <a name="restore-a-user"></a>Återställa en användare
    
 Om du återställer ett användarkonto inom 30 dagar från det att det togs bort, återställs kontot och alla associerade data. Användaren kan logga in med samma arbets- eller skolkonto. Postlådan återställs i sin helhet. Om du vill ta reda på hur mycket tid som återstår innan ett visst användarkonto inte längre kan återställas [kontaktar du oss](../contact-support-for-business-products.md).
   
 Här är några tips:
   
-- Se till att det finns tillgängliga Office 365-licenser som du kan tilldela kontot.
+- Kontrollera att licenser är tillgängliga för att tilldela kontot.
     
 - Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](https://support.microsoft.com/kb/2619308) för instruktioner om återställning av användarkonton. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Återställa ett eller flera användarkonton
 
-Du måste vara global administratör eller användarhanteringsadministratör i Office 365 för att kunna göra så här. 
+Du måste vara global administratör för Microsoft 365 eller användarhantering för att kunna utföra dessa steg. 
   
  
 ::: moniker range="o365-worldwide"
@@ -117,7 +117,7 @@ Om du vill lösa detta ersätter du det aktiva användarkontot med det konto som
 
 En proxyadresskonflikt inträffar när du tar bort ett användarkonto som innehåller en proxyadress, tilldelar ett annat konto samma proxyadress och sedan försöker återställa det borttagna kontot. Så här löser du problemet:
   
-Du måste ha [administratörsbehörigheter](about-admin-roles.md) i Office 365 för att göra detta. 
+Du måste ha [administratörsbehörighet](about-admin-roles.md) i Microsoft 365 för att kunna göra detta. 
   
 
 ::: moniker range="o365-worldwide"
@@ -148,4 +148,3 @@ Gå till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=8480
 
 [Ta bort en användare](delete-a-user.md)
   
-

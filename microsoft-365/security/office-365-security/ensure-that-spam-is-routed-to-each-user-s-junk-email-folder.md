@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar sin lokala Exchange-miljö för att dirigera skräppost till lokala användares skräppostmappar om de använder fristående Exchange Online Protection (EOP) i hybridmiljöer.
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893724"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621288"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer
 
 > [!IMPORTANT]
-> Det här avsnittet är endast för fristående EOP-kunder i hybridmiljöer. Det här avsnittet gäller inte Office 365-kunder med Exchange Online-postlådor.
+> Det här avsnittet är endast för fristående EOP-kunder i hybridmiljöer. Det här avsnittet gäller inte Microsoft 365-kunder med Exchange Online-postlådor.
 
-Om du är en fristående Exchange Online Protection (EOP) kund i en hybridmiljö, måste du konfigurera din lokala Exchange organisation för att känna igen och översätta spam filtrering domar av EOP, så skräppost regeln i den lokala postlådan kan flytta meddelanden till mappen Skräppost.
+Om du är en fristående Exchange Online Protection (EOP) kund i en hybridmiljö, måste du konfigurera din lokala Exchange-organisation för att känna igen och översätta spam filtrering domar av EOP, så att skräppost regeln i den lokala postlådan kan flytta meddelanden till skräppostmappen.
 
-Specifikt måste du skapa regler för e-postflöde (kallas även transportregler) i din lokala Exchange-organisation med villkor som hittar meddelanden med någon av följande EOP-rubriker och värden mot skräppost och åtgärder som anger nivån för skräppostförtroende ( SCL) av dessa meddelanden till 6:
+Specifikt måste du skapa regler för e-postflöde (kallas även transportregler) i din lokala Exchange-organisation med villkor som hittar meddelanden med någon av följande EOP-rubriker och värden mot skräppost och åtgärder som anger att skräppostförtroendenivån (SCL) för dessa meddelanden ska vara 6:
 
 - `X-Forefront-Antispam-Report: SFV:SPM`(meddelande markerat som skräppost genom skräppostfiltrering)
 
@@ -43,7 +43,7 @@ Mer information om dessa rubrikvärden finns i [Rubriker för skräppostmeddelan
 I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC) och Exchange Management Shell (Exchange PowerShell) i den lokala Exchange-organisationen.
 
 > [!TIP]
-> I stället för att leverera meddelandena till den lokala användarens skräppostmapp kan du konfigurera anti-spam-principer i EOP för att sätta skräppostmeddelanden i karantän i EOP. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+> I stället för att leverera meddelandena till den lokala användarens skräppostmapp kan du konfigurera anti-spam-principer i EOP för att sätta skräppostmeddelanden i karantän i EOP. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -139,7 +139,7 @@ Så här kontrollerar du att du har konfigurerat fristående EOP för att levere
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- I ett externt e-postsystem **som inte skannar utgående meddelanden efter skräppost**skickar du ett allmänt test för oönskat massmeddelande (GTUBE) till en berörd mottagare och bekräftar att det levereras till mappen Skräppost. Ett GTUBE-meddelande liknar European Institute for Computer Antivirus Research (EICAR) textfil för testning av inställningar för skadlig kod.
+- I ett externt e-postsystem **som inte skannar utgående meddelanden efter skräppost**skickar du ett allmänt test för oönskat massmeddelande (GTUBE) till en berörd mottagare och bekräftar att det levereras till mappen Skräppost. Ett GTUBE-meddelande liknar EICAR-textfilen (European Institute for Computer Antivirus Research) för att testa inställningar för skadlig kod.
 
   Om du vill skicka ett GTUBE-meddelande tar du med följande text i brödtexten i ett e-postmeddelande på en enda rad, utan blanksteg eller radbrytningar:
 

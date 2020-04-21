@@ -1,5 +1,5 @@
 ---
-title: Lägga till fler användare i Microsoft 365 Business
+title: Lägga till fler användare
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,19 +25,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: Lär dig stegen för att enkelt lägga till nya användare, skydda deras enheter och tilldela roller i Microsoft 365 Business.
-ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Lär dig stegen för att enkelt lägga till nya användare, skydda deras enheter och tilldela roller i Microsoft 365 Business Premium.
+ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561569"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627483"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a>Lägga till fler användare i Microsoft 365 Business
+# <a name="add-more-users"></a>Lägga till fler användare
 
 ## <a name="add-new-users"></a>Lägg till nya användare
 
-Titta på en kort video om hur du lägger till en användare. <br><br>
+Titta på en kort video om att lägga till en användare. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
@@ -46,17 +46,17 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 Så här lägger du till en användare:
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-2. Välj **Användare** \> **Aktiva användare**i det vänstra navigeringsfönstret .
+2. I det vänstra navigeringsfönstret väljer du **Aktiva användare** **.** \>
 3. På sidan **Aktiva användare** väljer du Lägg till **en användare**.
-4. Skriv den information som krävs på panelen **Ny användare.** 
+4. Skriv den information som krävs på den **nya användarpanelen.** 
   
     Du kan ange mer information under **Kontaktinformation,** välja hur du anger lösenordet under **Lösenordsinställning** och tilldela roller under **Roller**.
       
     ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    I avsnittet Produktlicenser anger du produktlicensinställningen microsoft **365 Business** på **På**.
+    I avsnittet Produktlicenser anger du inställningen för **Microsoft 365 Business** Premium-produktlicens till **På**.
       
     ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
-Mer information om hur du lägger till användare finns [i Lägga till användare individuellt eller i grupp](https://docs.microsoft.com/office365/admin/add-users/add-users).
+Mer information om hur du lägger till användare finns i [Lägga till användare individuellt eller i grupp](https://docs.microsoft.com/office365/admin/add-users/add-users).
   

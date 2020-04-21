@@ -1,5 +1,5 @@
 ---
-title: Vilket abonnemang på Office 365 för företag har jag?
+title: Vilken prenumeration har jag?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Lär dig att verifiera vilka prenumerationer din organisation har genom att gå till sidan Prenumerationer.
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42813006"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621436"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 
 Om du är administratör kan du verifiera vilka prenumerationer din organisation har genom att gå till administrationscentret.
   
- **Är du inte administratör?** Se [Vilken Office 365-företagsprodukt eller -licens har jag?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Är du inte administratör?** Se [Vilken Microsoft 365 för företag produkt eller licens har jag?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
 
@@ -50,7 +50,7 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
 
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**  
 
-2. Om du bara har en prenumeration visas den på sidan **Prenumerationer** tillsammans med namnet på prenumerationen, information om prenumerationen och dess status. På följande skärmbild ser du att jag har en Office 365 Business-prenumeration.
+2. Om du bara har en prenumeration visas den på sidan **Prenumerationer** tillsammans med namnet på prenumerationen, information om prenumerationen och dess status. I följande skärmbild kan du se att jag har en Prenumeration på Microsoft 365 Apps for business.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -69,7 +69,7 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
 
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**  
 
-2. Om du bara har en prenumeration visas den på sidan **Prenumerationer** tillsammans med namnet på prenumerationen, information om prenumerationen och dess status. På följande skärmbild ser du att jag har en Office 365 Business-prenumeration.
+2. Om du bara har en prenumeration visas den på sidan **Prenumerationer** tillsammans med namnet på prenumerationen, information om prenumerationen och dess status. I följande skärmbild kan du se att jag har en Prenumeration på Microsoft 365 Apps for business.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

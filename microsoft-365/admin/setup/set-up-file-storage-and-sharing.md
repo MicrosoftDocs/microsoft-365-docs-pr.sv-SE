@@ -1,5 +1,5 @@
 ---
-title: Konfigurera fillagring och fildelning i Office 365
+title: Konfigurera fillagring och fildelning
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,24 +27,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Läs om hur du använder OneDrive och en gruppwebbplats för fillagring och fildelning.
-ms.openlocfilehash: 6494207518f919a3d984be7e7932740d82e9ea11
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209742"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627564"
 ---
-# <a name="set-up-office-365-file-storage-and-sharing"></a>Konfigurera fillagring och fildelning i Office 365
+# <a name="set-up-file-storage-and-sharing"></a>Konfigurera fillagring och fildelning
 
 Ett av de bästa sätten att konfigurera fillagring och fildelning för ditt företag är att använda OneDrive och en gruppwebbplats tillsammans. Det här är bra om du har ett litet företag med några få anställda.
 
-Titta på ett kort videoklipp om var filer ska lagras i Office 365.<br><br>
+Titta på en kort video om var filer ska lagras i Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="where-you-can-store-documents-in-office-365"></a>Var du kan lagra dokument i Office 365
+## <a name="where-you-can-store-documents-in-microsoft-365"></a>Var du kan lagra dokument i Microsoft 365
 
 - OneDrive är utformat för individuell användning, med tillfällig delning av filer. 
 
@@ -52,7 +52,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 Både OneDrive och gruppwebbplatser ger åtkomst överallt för dig och dina anställda.
   
-![Ett diagram som visar hur Office 365-produkter kan använda OneDrive- eller Team-webbplatser](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Ett diagram som visar hur Microsoft 365-produkter kan använda OneDrive- eller Team-webbplatser](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Här är rekommendationer för vad du ska lagra på varje plats när du använder OneDrive och gruppwebbplatser tillsammans:
   
@@ -60,7 +60,7 @@ Här är rekommendationer för vad du ska lagra på varje plats när du använde
 |:-----|:-----|:-----|
 |**Lagringsplats** <br/> |**Vad det används till** <br/> |**Vad jag kan lagra här** <br/> |
 |**OneDrive** <br/> |Att lagra innehåll i OneDrive är som att lagra filer på datorn. ingen annan kan lätt komma åt dem.  <br/> Mer information finns i [Vad är OneDrive för företag?](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) <br/> |Företagsfiler som andra gruppmedlemmar inte behöver samarbeta i eller ha tillgång till regelbundet.  <br/> |
-|**SharePoint-gruppwebbplatser** <br/> |Samarbete. När du skapar en Office 365-grupp (till exempel i Microsoft 365-administrationscentret, i Outlook eller genom att skapa ett team i Microsoft Teams) skapas en SharePoint-gruppwebbplats för den gruppen. När du skapar en ny SharePoint-gruppwebbplats från Startsidan för SharePoint eller det nya Administrationscentret för SharePoint skapas också en Office 365-grupp när du skapar en ny SharePoint-gruppwebbplats från SharePoint-startsidan eller det nya Administrationscentret för SharePoint. Mer information finns på Vad är en [Create a team site in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx) [SharePoint-gruppwebbplats?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)  <br/> |Filer som har delat ägarskap. Vi rekommenderar separata gruppwebbplatser för varje arbetsenhet i organisationen. Om du till exempel vill hålla personal och ekonomiska dokument privata för ett litet team skapar du en separat gruppwebbplats.  <br/> |
+|**SharePoint-gruppwebbplatser** <br/> |Samarbete. När du skapar en Microsoft 365-grupp (till exempel i Microsoft 365-administrationscentret, i Outlook eller genom att skapa ett team i Microsoft Teams) skapas en SharePoint-gruppwebbplats för den gruppen. När du skapar en ny SharePoint-gruppwebbplats från SharePoint-startsidan eller från det nya Administrationscentret för SharePoint skapas också en Microsoft 365-grupp. Mer information finns på Vad är en [Create a team site in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx) [SharePoint-gruppwebbplats?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)  <br/> |Filer som har delat ägarskap. Vi rekommenderar separata gruppwebbplatser för varje arbetsenhet i organisationen. Om du till exempel vill hålla personal och ekonomiska dokument privata för ett litet team skapar du en separat gruppwebbplats.  <br/> |
 
 > [!NOTE]
 > SharePoint har även andra typer av webbplatser som du kan använda för ditt företag. Du kan använda [kommunikationswebbplatser](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx) i intranätet för att publicera information för en bred målgrupp. Och du kan använda [hubbplatser](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) för att ansluta webbplatser i intranätet.
@@ -69,13 +69,13 @@ Här är rekommendationer för vad du ska lagra på varje plats när du använde
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>Gruppmedlemmar kan lagra sina egna filer i OneDrive
 
-Varje person i ditt företag som har tilldelats en Office 365-licens (och SharePoint Online vald) får OneDrive-molnlagring. De kan lagra affärsrelaterade filer här för åtkomst från vilken enhet som helst, och de är bara tillgängliga för den användaren. De kan till exempel lagra utkast, mötesanteckningar eller manuskriptet till en demo som de ska leverera.
+Varje person i ditt företag som har en Microsoft 365-licens tilldelad (och SharePoint Online vald) får OneDrive-molnlagring. De kan lagra affärsrelaterade filer här för åtkomst från vilken enhet som helst, och de är bara tillgängliga för den användaren. De kan till exempel lagra utkast, mötesanteckningar eller manuskriptet till en demo som de ska leverera.
   
 Anställda kan också dela OneDrive-filer och -mappar. Om en anställd är borta eller lämnar företaget kan andra komma åt delade filer som lagras i OneDrive.
   
 Så här kan varje person i teamet konfigurera OneDrive och dela filer.
 
-1. Gå till <a href="https://portal.office.com/ " target="_blank">Office 365 Portal</a>och logga in med ditt användarnamn och lösenord.
+1. Gå till <a href="https://portal.office.com/ " target="_blank">Microsoft 365 Portal</a>och logga in med ditt användarnamn och lösenord.
 
 2. Välj **OneDrive**i startprogrammet .
 
@@ -107,7 +107,7 @@ Här är stegen för att lägga till filer:
   
 1. På gruppwebbplatsens startsida väljer du **Dokument** på navigeringsmenyn till vänster. Då kommer du till ditt **Dokumentbibliotek**.
   
-2. När du fortfarande är inloggad på Office 365 öppnar du **Utforskaren** från Aktivitetsfältet eller någon annan plats. Gå till de filer du vill ladda upp till gruppwebbplatsen.
+2. När du fortfarande är inloggad på Microsoft 365 öppnar du **Utforskaren** från Aktivitetsfältet eller någon annan plats. Gå till de filer du vill ladda upp till gruppwebbplatsen.
 
 3. Markera de filer som du vill överföra till gruppwebbplatsen och dra dem sedan till **dokumentbiblioteket**.
   
@@ -166,7 +166,7 @@ Här är några tips om hur du får ut det mesta av OneDrive eller din SharePoin
 
 När du lagrar en fil i OneDrive är den bara tillgänglig för dig, såvida du inte delar den med andra. När du delar filer kan du välja att skapa en länk som kan vidarebefordras eller att dela med endast specifika personer. Du kan även skapa separata mappar i OneDrive för olika ändamål, till exempel offentliga, personliga eller för enskilda projekt. Varje mapp kan delas med en annan person eller grupp eller inte delas alls.
   
-Mer information om delning finns också i [Dela filer och mappar med Office 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
+Mer information om delning finns också i [Dela filer och mappar med Microsoft 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
   
 ### <a name="track-how-much-space-you-have-left"></a>Spåra hur mycket lagringsutrymme du har kvar
 
@@ -178,7 +178,7 @@ Du kan ladda upp nästan alla typer av filer, men vissa filnamn och tecken i fil
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>Aktivera eller inaktivera lagringstjänster från tredje part
 
-Du kan aktivera lagringsutrymme från tredje part för användarna i Office 365 så att de kan lagra och dela dokument med hjälp av tjänster som Dropbox utöver OneDrive och gruppwebbplatser. Det kan vara ett bra sätt att erbjuda tjänster som användarna kanske redan använder eller föredrar att använda för olika projekt. Om du inte vill att personer i organisationen som använder Office ska öppna filer i en tjänst från tredje part följer du de här stegen för att inaktivera den.
+Du kan aktivera lagringsutrymme från tredje part för dina användare i Microsoft 365 så att de kan lagra och dela dokument med hjälp av tjänster som Dropbox utöver OneDrive och gruppwebbplatser. Det kan vara ett bra sätt att erbjuda tjänster som användarna kanske redan använder eller föredrar att använda för olika projekt. Om du inte vill att personer i organisationen som använder Office ska öppna filer i en tjänst från tredje part följer du de här stegen för att inaktivera den.
   
 > [!IMPORTANT]
 > Lagring från tredje part är aktiverat som standard så du måste utföra dessa steg direkt om du inte vill att den ska vara tillgänglig för användarna.
@@ -197,8 +197,8 @@ Du kan aktivera lagringsutrymme från tredje part för användarna i Office 365 
 
 - **Konfigurera Office-appar på surfplattor och telefoner**. Du måste göra detta så att du kan **redigera** filer som lagras i OneDrive och på gruppwebbplatser från din surfplatta eller telefon. Om du inte installerar Office-programmen för din surfplatta eller telefon kan du visa filerna men inte redigera dem.
 
-  - [Installera och konfigurera Office på en Android-enhet med Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Installera och konfigurera Office på en Android med Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
 
-  - [Installera och konfigurera Office på en iPhone eller iPad med Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Installera och konfigurera Office på en iPhone eller iPad med Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Konfigurera Office på en Windows Phone med Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Konfigurera Office på Windows Phone med Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)

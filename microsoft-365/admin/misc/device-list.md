@@ -21,37 +21,37 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Läs om hur du gör en CSV-fil för AutoPilo-tenn Microsoft 365 Business.
-ms.openlocfilehash: 56d8fb234a1b526192468309c93c638694b92c6e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du gör en CSV-fil för Autopilot i Microsoft 365 för företag.
+ms.openlocfilehash: b1154d639ba23180f637520750d94f00e997cfc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42806566"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627866"
 ---
 # <a name="device-list-csv-file"></a>CSV-fil för enhetslista
 
-## <a name="device-list-csv-file-format"></a>Filformatet Enhetslista .csv
+## <a name="device-list-csv-file-format"></a>Enhetslista .csv-filformat
 
 Om du vill hantera och distribuera enheter via Windows Autopilot behöver du en CSV-fil som innehåller specifik information om enheterna.
   
-Kolumner i enhetslistefilen måste ha följande rubriker i angiven ordning:
+Kolumnerna i enhetslistefilen måste ha följande rubriker i angiven ordning:
   
 - Kolumn A: Enhetsserienummer
 
-- Kolumn B: lämna tomt
+- Kolumn B: Lämna tomt
 
 - Kolumn C: Maskinvaruhash
 
 Du kan få den här informationen från din maskinvaruleverantör eller använda [PowerShell-skriptet Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) som skapar en CSV-fil. 
 
-När du lägger till enheter måste du också lägga till dem i en profil. En profil används för att tillämpa AutoPilot-distributionsprofiler på en enhet eller en grupp enheter.
+När du lägger till enheter måste du också lägga till dem i en profil. En profil används för att tillämpa automatiska distributionsprofiler på en enhet eller en grupp enheter.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Dokumentation och resurser för Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 för affärsdokumentation och resurser](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Komma igång med Microsoft 365 Business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Komma igång med Microsoft 365 för företag](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
   
-[Hantera Microsoft 365 Business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Hantera Microsoft 365 för företag](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
   

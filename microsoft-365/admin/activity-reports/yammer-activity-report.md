@@ -1,5 +1,5 @@
 ---
-title: Office 365-rapporter i administrationscentret – Aktivitetsrapport för Yammer
+title: Microsoft 365 Rapporter i administrationscentret - Aktivitetsrapport för Yammer
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Hämta Yammer Activity-rapporten och veta mer om hur många användare som använder Yammer för att publicera, gilla eller läsa ett meddelande.
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047029"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618962"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365-rapporter i administrationscentret – Aktivitetsrapport för Yammer
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Rapporter i administrationscentret - Aktivitetsrapport för Yammer
 
 Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** data om användningen av produkterna inom organisationen. Kolla in [aktivitetsrapporter i administrationscentret](activity-reports.md). Med **Yammer-aktivitetsrapporten** får du förståelse för användningen av Yammer i organisationen genom att titta på antalet unika användare som använder Yammer för att publicera, gilla eller läsa ett meddelande och graden av aktivitet som skapas i organisationen. 
   
@@ -82,7 +82,7 @@ Aktivitetsrapporten innehåller följande information.
     
   - **Användarnamn** är användarens e-postadress. Du kan visa den faktiska e-postadressen eller göra fältet anonymt. 
     
-    I det här rutnätet visas användare som loggat in på Yammer med Office 365-kontot eller som loggat in på nätverket med enkel inloggning.
+    Det här rutnätet visar användare som har loggat in på Yammer med Microsoft 365-kontot eller som loggat in på nätverket med enkel inloggning.
     
   - **Visningsnamn** är användarens fullständiga namn. Du kan visa den faktiska e-postadressen eller göra fältet anonymt. 
     
@@ -112,6 +112,6 @@ Aktivitetsrapporten innehåller följande information.
     
 - **Inga externa nätverksdata** Externa nätverksdata tas inte med i rapporterna. 
     
-- **Aktiverade nätverk** I de här rapporterna visas data för Yammer-nätverket som hör till Office 365-prenumerationen. Diagrammet sammanställer användningen för alla användare som loggat in på Yammer-nätverket, oavsett om de använde Office 365 eller Yammer när de loggade in. 
+- **Aktiverade nätverk** Dessa rapporter visar data för Yammer-nätverket som ingår i din Microsoft 365-prenumeration. Diagrammet sammanställer användningen av alla användare som loggat in i Yammer-nätverket, oavsett om de använde Microsoft 365 eller Yammer för att logga in. 
     
 

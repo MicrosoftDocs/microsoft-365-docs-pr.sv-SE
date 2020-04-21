@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,31 +19,31 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Lär dig hur du lägger till en prenumerationsrådgivare som partner för posten vid tidpunkten för Köpet i Office 365, ändrar partnern eller tar bort en partner från en prenumeration.
-ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Lär dig hur du lägger till en partner för prenumerationsrådgivare som postpartner vid tidpunkten för Köpet av Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
+ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807209"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627974"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Lägga till, ändra eller ta bort en partner för abonnemangsrådgivning
 
 ::: moniker range="o365-21vianet"
 
- **Anmärkning** Den här artikeln gäller Office 365 som drivs av 21Vianet i Kina. Det är upp till organisationer som vill tillåta en 21Vianet-partner att administrera sin Office 365-prenumeration för dem. 
+ **Anm.)** Den här artikeln gäller Office 365 som drivs av 21Vianet i Kina. Det är upp till organisationer som vill tillåta en 21Vianet-partner att administrera sin Office 365-prenumeration för dem. 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en auktoriserad partner när du köper Office 365, eller vid en senare tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com). 
+En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en partner för prenumerationsrådgivare som en postpartner när du köper Microsoft 365 eller vid ett annat tillfälle. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com). 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Vilken partner du väljer beror på vilka Office 365-tjänster du använder och var någonstans du kommer att använda tjänsterna. Om du lägger till eller ändrar en partner för ditt abonnemang behöver du först be om partnerns Microsoft partner-ID.
+Vilken partner du väljer beror på vilka Microsoft-tjänster du använder och i vilket land eller vilken region du ska använda tjänsterna. Om du lägger till eller ändrar en partner för ditt abonnemang behöver du först be om partnerns Microsoft partner-ID.
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Vilken partner du väljer beror på vilka Office 365-tjänster du använder och 
 
 ::: moniker range="o365-21vianet"
 
-Som administratör för Office 365 kan du skapa eller redigera användare, återställa användarlösenord, hantera användarlicenser, hantera domäner och tilldela administratörsbehörigheter till andra användare i organisationen, bland annat. Men om du vill att någon annan ska utföra dessa administrativa uppgifter kan du delegera den här rollen till en auktoriserad partner till 21Vianet genom att skapa en partnerrelation.
+Som administratör för Office 365 kan du skapa eller redigera användare, återställa användarlösenord, hantera användarlicenser, hantera domäner och tilldela administratörsbehörighet till andra användare i organisationen, bland annat. Men om du vill att någon annan ska utföra dessa administrativa uppgifter kan du delegera den här rollen till en auktoriserad partner till 21Vianet genom att skapa en partnerrelation.
 
 ::: moniker-end
 
@@ -72,14 +72,14 @@ Som administratör för Office 365 kan du skapa eller redigera användare, åter
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i **administrationscentret.** \>
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
     
 2. Välj den produkt du vill köpa och välj sedan **Köp**.
   
-3. Om du vill lägga till en ny partner **Get assistance from a Microsoft Partner**expanderar du **Behöver du hjälp med din beställning?**<br>
+3. Om du vill lägga till en ny partner **Get assistance from a Microsoft Partner**expanderar **du Behöver du hjälp med din beställning?**<br>
 Följ stegen på leverantörssidan för att antingen söka efter eller för att matchas med en partner.
     
-4. Om du redan har en partner väljer du **Lägg till**i det andra steget i utcheckningsguiden.
+4. Om du redan har en partner väljer du **Lägg till**i det andra steget i kassaguiden i den högra rutan under Partnerinformation .
 
 5. Skriv Microsoft partner-ID för partnern du vill lägga till. Microsoft partner-ID får du reda på genom att fråga partnern.
 
@@ -95,10 +95,10 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
     
 2. Välj den produkt du vill köpa och välj sedan **Köp**.
   
-3. Om du vill lägga till en ny partner **Get assistance from a Microsoft Partner**expanderar du **Behöver du hjälp med din beställning?**<br>
+3. Om du vill lägga till en ny partner **Get assistance from a Microsoft Partner**expanderar **du Behöver du hjälp med din beställning?**<br>
 Följ stegen på leverantörssidan för att antingen söka efter eller för att matchas med en partner.
     
-4. Om du redan har en partner väljer du **Lägg till**i det andra steget i utcheckningsguiden.
+4. Om du redan har en partner väljer du **Lägg till**i det andra steget i kassaguiden i den högra rutan under Partnerinformation .
 
 5. Skriv Microsoft partner-ID för partnern du vill lägga till. Microsoft partner-ID får du reda på genom att fråga partnern.
 
@@ -118,7 +118,7 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
     
 2. Om du har mer än en prenumeration väljer du den prenumeration som du vill redigera.
   
-3. På prenumerationssidan väljer du fliken **Partner** och skriver sedan partnernätverks-ID för den partner du lägger till Du kan hämta partnerns Microsoft Partner-ID genom att be partnern om det.
+3. På prenumerationssidan väljer du fliken **Partner** och skriver sedan partnernätverks-ID för den partner du lägger till Du kan få partnerns Microsoft Partner-ID genom att be partnern om det.
     
 4. Välj **Lägg till**.
 
@@ -130,7 +130,7 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
     
 2. Om du har mer än en prenumeration väljer du den prenumeration som du vill redigera.
   
-3. Till höger, under prenumerationskostnaden, välj **Fler åtgärder** > **Lägg till partner för post**.
+3. Till höger, under prenumerationskostnaden, väljer **du Fler åtgärder** > **Lägg till partner till posten**.
 
 4. Skriv Microsoft partner-ID för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.
 
@@ -140,17 +140,17 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
 
 ::: moniker range="o365-21vianet"
 
-Den här processen initieras av din auktoriserade partner. Partnern skickar ett e-postmeddelande för att fråga dig om du vill ge dem behörighet att fungera som en partner för posten. 
+Den här processen initieras av din auktoriserade partner. Partnern skickar ett e-postmeddelande till dig för att fråga dig om du vill ge dem tillåtelse att agera som en partner till posten. 
   
-För att acceptera detta erbjudande
+Så här accepterar du detta erbjudande
   
 1. Läs partnerns villkor i e-postmeddelandet.
     
-2. Om du vill auktorisera avtalet väljer du länken, som går till en auktoriseringssida i Office 365.
+2. Om du vill auktorisera avtalet väljer du länken som går till en auktoriseringssida i Office 365.
     
-3. Under **Partnerrelationer**väljer du **Ja** för att auktorisera partnern att vara delegerad administratör och välj sedan **Nästa**.
+3. Under **Partnerrelationer**väljer du **Ja** för att auktorisera partnern att vara din delegerade administratör och välj sedan **Nästa**.
     
-4. Om erbjudandet för partnerrelation kom med en utvärderingsprenumeration eller ett köperbjudande skapar du utvärderings- eller prenumerationskontot.
+4. Om erbjudandet om partnerrelation kom med en provprenumeration eller ett köperbjudande skapar du ditt utvärderings- eller prenumerationskonto.
     
 ::: moniker-end
 
@@ -198,9 +198,9 @@ För att acceptera detta erbjudande
 
 ## <a name="view-your-partner-relationships"></a>Visa dina partnerrelationer
 
-- Gå till sidan Relationer med inställningar<a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partner</a> i **administrationscentret.** >  Dina partner finns med på den här sidan. 
+- Gå till sidan Inställningar<a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partnerrelationer</a> i **administrationscentret.** >  Dina partner finns med på den här sidan. 
   
-  Om du inte har en partner visas ett meddelande med texten "Det finns inget här".
+  Om du inte har en partner visas ett meddelande där det står "Det finns inget här".
   
 ## <a name="delete-a-partner-from-a-subscription"></a>Ta bort en partner från ett abonnemang
 
@@ -272,4 +272,4 @@ Om du tar bort en återförsäljarrelation är alternativet **Ta bort** nedtonat
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Hitta din Office 365-partner eller återförsäljare](../manage/find-your-partner-or-reseller.md)
+[Hitta din Microsoft 365-partner eller återförsäljare](../manage/find-your-partner-or-reseller.md)

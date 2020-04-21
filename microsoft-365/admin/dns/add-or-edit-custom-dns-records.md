@@ -1,5 +1,5 @@
 ---
-title: Lägga till eller redigera anpassade DNS-poster i Office 365
+title: Lägga till eller redigera anpassade DNS-poster i Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: 'Lär dig hur du redigerar eller lägger till en anpassad DNS-post i Office 365. '
-ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Lär dig hur du redigerar eller lägger till en anpassad DNS-post i Microsoft. '
+ms.openlocfilehash: d7084913e2439b126232735fe2e6abe853c03ddf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212527"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630025"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a>Lägga till eller redigera anpassade DNS-poster i Office 365
+# <a name="add-or-edit-custom-dns-records-in-microsoft"></a>Lägga till eller redigera anpassade DNS-poster i Microsoft
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
 
-1. Logga in på administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
+1. Logga in på Microsofts <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>administrationscenter på .   
 
-2. Gå till sidan **Inställningar** \> **domäner.**
+2. Gå till sidan **Inställningar**  > **domäner.**
 
 3. Välj en domän på sidan **Domäner**. 
     
@@ -46,10 +46,10 @@ ms.locfileid: "43212527"
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Samla den information du behöver för att skapa DNS-poster i Office 365](../get-help-with-domains/information-for-dns-records.md)
+[Samla in den information du behöver för att skapa Microsoft DNS-poster](../get-help-with-domains/information-for-dns-records.md)
 
 [DNS-grundkunskaper](../get-help-with-domains/dns-basics.md)
 
-[Få hjälp med Office 365-domäner](../get-help-with-domains/get-help-with-domains.md)
+[Få hjälp med domäner](../get-help-with-domains/get-help-with-domains.md)
 
 

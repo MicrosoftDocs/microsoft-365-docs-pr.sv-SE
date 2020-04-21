@@ -1,5 +1,5 @@
 ---
-title: Lägga till eller ta bort medlemmar från Office 365-grupper
+title: Lägga till eller ta bort medlemmar från Microsoft 365-grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlem från grupp och hanterar gruppägarstatus i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631319"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Office 365-grupper med hjälp av administrationscentret
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med hjälp av administrationscentret
 
-I Office 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till sig i grupper som de vill gå med i eller är inbjudna av gruppägare. Om gruppägarskapet ändras, eller om du bestämmer dig för att en medlem ska läggas till eller tas bort, som administratör kan du också göra den ändringen. Endast en global administratör, Exchange-administratör, gruppadministratör eller användaradministratör kan göra dessa ändringar. [Vad är en Office 365-grupp?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till sig i grupper som de vill gå med i eller är inbjudna av gruppägare. Om gruppägarskapet ändras, eller om du bestämmer dig för att en medlem ska läggas till eller tas bort, som administratör kan du också göra den ändringen. Endast en global administratör, Exchange-administratör, gruppadministratör eller användaradministratör kan göra dessa ändringar. [Vad är en Microsoft 365-grupp?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > Om du inte är administratör kan du [lägga till eller ta bort medlemmar med hjälp av Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
@@ -280,12 +280,12 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
     
 ## <a name="articles-about-managing-groups"></a>Artiklar om att hantera grupper
     
-- [Uppgradera distributionslistor till Office 365-grupper i Outlook](../manage/upgrade-distribution-lists.md)
+- [Uppgradera distributionslistor till Microsoft 365-grupper i Outlook](../manage/upgrade-distribution-lists.md)
     
 - [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[Hantera gäståtkomst i Office 365-grupper](manage-guest-access-in-groups.md)    
+- [Hantera gäståtkomst i Microsoft 365-grupper](manage-guest-access-in-groups.md)    
     
-- [Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): i den här artikeln ges en introduktion till viktiga cmdletar med exempel
+- [Hantera Microsoft 365-grupper med PowerShell:](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)den här artikeln introducerar dig till viktiga cmdlets och ger exempel
     
-- [Namngivningsprincipen för Office 365-grupper](groups-naming-policy.md)
+- [Namngivningsprincip för Microsoft 365-grupper](groups-naming-policy.md)

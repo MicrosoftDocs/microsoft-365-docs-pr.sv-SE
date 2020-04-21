@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: När du har skapat en delad postlåda bör du konfigurera vissa inställningar för användarna, till exempel vidarebefordran av e-post och autosvar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212027"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629053"
 ---
 # <a name="configure-a-shared-mailbox"></a>Konfigurera en delad postlåda
 
@@ -122,7 +122,7 @@ Standardinställningen är att e-post skickad från den delade postlådan inte s
 Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du inställningarna för den delade postlådan i administrationscentret och väljer **Redigera skickade** **objekt** \> .
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>Välj de appar som en delad postlåda kan använda för att komma åt Office 365-e-post
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Välj de appar som en delad postlåda kan använda för att komma åt Microsoft-e-post
 
 ::: moniker range="o365-worldwide"
 

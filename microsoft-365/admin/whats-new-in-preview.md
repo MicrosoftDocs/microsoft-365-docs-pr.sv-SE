@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43171018"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627528"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -36,59 +36,10 @@ Vi lägger kontinuerligt till nya funktioner [i Microsoft 365-administrationscen
 > **"Classic" admin center pensionering med början i mars**<br><br>
 När du loggar in på admin.microsoft.com går du nu till det nya administrationscentret varje gång. Och i mars kommer vi att börja inaktivera möjligheten att byta tillbaka till det klassiska administrationscentret. För nu kan du fortfarande växla tillbaka, men som det nya admin-centret kommer till paritet (och överstiger det) kommer vi att stänga av växeln för alla organisationer. <br><br> *Senast uppdaterad: 2 mars 2020*
 
-Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
+Och om du är intresserad av vad som är nytt i andra admin centers:
 
-- [Nyheter i Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Nyheter i Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Nyheter i Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
-
-## <a name="march-2020"></a>Mars 2020
-
-### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Dagens Feedback Fix: Förbättra "lägg till användare" tillförlitlighet för licensiering
-
-Vi fick mycket feedback från administratörer om hur svårt det är att tilldela licenser när du lägger till användare. Vi har gjort den första uppdateringen av den här korrigeringsfilen och vi har migrerat till en mer tillförlitlig tjänst bakom kulisserna för att bearbeta dessa begäranden. Och om något går fel får du nu ett felmeddelande som gör att du kan försöka igen.
-
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Lägg till sidan med användarbekräftelse med felet.":::
-
-### <a name="microsoft-teams-home-page-card"></a>Startsidakort för Microsoft Teams
-
-Med uptick i Teams användning, vissa organisationer kommer att få en fäst instrumentpanel kort som gör att slå teams på mer upptäckbara. Kortet har också länkar till utbildning och dokument för att hjälpa din organisation övergången till fjärrarbete. Gå bara till **hemsidan** för att se det nya kortet.
-
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Startsidakort för Microsoft Teams":::
-
-### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassa organisationens SharePoint-mobilapptema
-
-Med hjälp av administrationscentret för Microsoft 365 kan du nu anpassa organisationens tema i SharePoint-mobilappen för iOS och SharePoint-mobilappen för Android. Den här funktionen ger en mobil intranätappupplevelse som kan matcha din SharePoint Online för anställda när de är på språng. Temaanpassning omfattar logotypbilden, navigeringsfältets färg, text- och ikonfärger samt accentfärger, vilket gör det enkelt att igenkänna.
-
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram som mappar administratörscenterinställningarna till mobilappen.":::
-
-:::image-end:::
-
-### <a name="improvements-to-the-add-a-group-wizard"></a>Förbättringar av guiden "Lägg till en grupp"
-
-När administratörer skapade en ny grupp – och gjorde den till ett team samtidigt, kan de tilldela ägare som inte har en licens som innehåller Teams. Och det skapade lite huvudvärk. Vi har uppdaterat guideflödet för att verifiera att ägare har en Teams-licens och om de inte gör det för att göra gruppen till ett team är inaktiverat.
-
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365-erbjudanden för små och medelstora företag
-
-Vi vet att detta är ett tillkännagivande för nästa månad, men vi vill se till att du är förberedd.
-
-Från och med den 21 april gör vi ändringar relaterade till våra Office 365-prenumerationer för små och medelstora företag – och till Office 365 ProPlus. Dessa produkter kommer nu att använda microsoft 365-varumärket.
-
-De nya produktnamnen träder i kraft den 21 april 2020. Detta är en ändring av produktnamnet bara, och det finns inga pris- eller funktionsändringar just nu.
-
-|Aktuellt namn |Nytt namn  |
-|---------|---------|
-|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
-|Microsoft 365 Företag     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365-appar för företag       | 
-|Office 365 ProPlus    |   Microsoft 365-appar för företag      |
-
-### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
-
-[Nyheter i Microsoft 365 webbserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)I den här månadens avsnitt lyfter vi fram 3-årsjubileet av Microsoft Teams och täcker nya funktioner, inklusive förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för handlinjechefer med Shifts-appen, Teams och Skypes konsumentinteroperabilabilabilabila sig med mera.
 
 ## <a name="february-2020"></a>Februari 2020
 
@@ -111,7 +62,7 @@ Det är bokstavligen det!!!
 Ett par förändringar i gruppen området denna månad:
 
 - **Sortera efter gruppnamn**: Du kan sortera grupplistan alfabetiskt genom att välja kolumnen **Gruppnamn.**
-- **Återställ borttagna Office 365-grupper**: Du behöver inte längre gå till administrationscentret för Exchange för att återställa borttagna Office 365-grupper. Gå till **Microsoft 365 administrationscenter** \> **Grupper** \> **borttagna grupper** \> (välj en grupp i listan) \> Återställ **grupp**. Gruppen återställs till listan **Grupper** och återställer gruppens e-post, konversationer, anteckningsbok, filer och kalender.
+- **Återställ borttagna Microsoft 365-grupper**: Du behöver inte längre gå till Administrationscentret för Exchange för att återställa borttagna Microsoft 365-grupper. Gå till **Microsoft 365 administrationscenter** \> **Grupper** \> **borttagna grupper** \> (välj en grupp i listan) \> Återställ **grupp**. Gruppen återställs till listan **Grupper** och återställer gruppens e-post, konversationer, anteckningsbok, filer och kalender.
 
 ### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
 
@@ -160,7 +111,7 @@ Kolla in small business admin utbildning som vi släppte i januari:
 - [Få hjälp eller support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Ta bort en användare](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Välj en Microsoft-prenumeration](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Översikt över Microsoft 365 Business-säkerhet](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Översikt över Microsoft 365 för företagssäkerhet](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>November och december 2019
 
@@ -199,7 +150,7 @@ I november släppte vi en hel del utbildningsvägar till [Microsoft Learn](https
 
 - [Grunderna i Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Utöka grunderna i Office](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 – Modernisera företagsdistributionen med Windows 10 och Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365 – Modernisera företagsdistributionen med Windows 10 och Microsoft 365 Apps för företag](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Hantera företagsdistributionen med Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Uppgradera Microsoft Office för IT i stor skala](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Leverera fjärrskrivbord och appar från Azure med Windows Virtual Desktop](https://docs.microsoft.com/learn/paths/m365-wvd/)
@@ -320,7 +271,7 @@ Message center har uppdaterats till den nya designen och det ser fantastiskt!
 
 Vi har några spännande förändringar som hjälper dig att konfigurera din organisation. Först och främst, låt oss diskutera skillnaden mellan **inställning** och **inställningssidan**. **I installationsprogrammet** hänvisas till den första installationsguiden som du använde för att läsa in dem i Microsofts onlinetjänster. Det innehåller vanligtvis tre specifika steg: **Anslut en domän,** **Lägg till användare**och Ladda ned **Office-programmen**. **Inställningssidan** är den sida i administrationscentret som har rekommenderat att konfigurera uppgifter för att säkerställa att du får ut mesta av dina prenumerationer, som att aktivera funktioner som du har köpt licenser för.
 
-- **Installationsprogrammet** – Den första installationsguiden har uppdaterats för **Office 365 för företag-prenumerationer.** Den här nya designen hjälper nya organisationer att ta sig igenom guiden snabbare och med större framgång.
+- **Installationsprogrammet** – Den första installationsguiden har uppdaterats för **Microsoft 365 för** företagsprenumerationer. Den här nya designen hjälper nya organisationer att ta sig igenom guiden snabbare och med större framgång.
 - **Inställningssida** - På **inställningssidan** kan du slutföra konfigurationen och säkra de tjänster som med sig med dina prenumerationer. Du kan också se avvisade rekommendationer på **inställningssidan.** Om du vill se om den är tillgänglig för dina prenumerationer ännu går du till**installationsprogrammet**för **Microsoft 365 admin center** > .
 
 ### <a name="billing--subscriptions"></a>Fakturering & prenumerationer
@@ -414,7 +365,7 @@ Vi har gjort några fler ändringar i **användarhantering,** här är en snabb 
 
 - Det finns en ny inställningsbanner på **startsidan** som du ser om du inte har slutfört konfigurationsstegen, till exempel lägga till en domän, lägga till användare och hämta Office-programmen.
 - **Fönstret Grupplista** och information har uppdaterats till det nya formatet. Gå till **Grupper** > **grupper** om du vill visa ändringarna.
-  - På tal om grupper har vi också lagt till en **Microsoft Teams-flik** i informationsfönstret för grupper där du kan förvandla en Office 365-grupp till ett team. Om du vill "teamifiera" en grupp väljer du en Office 365-grupp i listan väljer du fliken **Microsoft Teams** och sedan **skapa team**. Om gruppen redan är ett team får du en länk för att hantera den från **administrationscentret för Teams**.
+  - På tal om grupper har vi också lagt till en **Microsoft Teams-flik** i informationsfönstret för grupper där du kan förvandla en Microsoft 365-grupp till ett team. Om du vill "teamifiera" en grupp väljer du en Microsoft 365-grupp i listan väljer du fliken **Microsoft Teams** och sedan **skapa team**. Om gruppen redan är ett team får du en länk för att hantera den från **administrationscentret för Teams**.
   - Slutligen kan du lägga till **Teams-statusen** i **grupplistan.** Välj kolumner**Status** >  **Choose columns** > **Spara**i kolumnrubriken .
 - **Nya begränsade administratörsroller** – Vi har släppt några nya administratörsroller så att du bara kan ge användarna den åtkomst de behöver.
   - **Kaizala admin**: Användare i den här rollen har behörighet att utföra alla hanteringsuppgifter inom Microsoft Kaizala, inklusive att skapa och hantera användare i Kaizala-katalogen, hantera Kaizala-grupper, hantera åtgärdskort och anslutningsappar och skapa tjänstförfrågningar.

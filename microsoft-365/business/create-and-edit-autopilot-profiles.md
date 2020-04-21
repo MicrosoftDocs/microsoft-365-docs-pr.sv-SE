@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Lär dig att skapa en AutoPilot-profil och tillämpa den på en enhet, samt redigera eller ta bort en profil eller ta bort en profil från en enhet.
-ms.openlocfilehash: 58c16b68c66dce7541a02ecd0d2466babe8cc338
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560729"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627383"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Skapa och redigera AutoPilot-profiler
 
@@ -39,21 +39,21 @@ ms.locfileid: "42560729"
 
 En profil gäller för en enhet eller en grupp enheter.
   
-1. I Microsoft 365 Business Admin Center väljer du Automatisk **apilot** **för enheter** \> .
+1. I administrationscentret för Microsoft 365 väljer du **Autopilot för** **enheter** \> .
   
-2. På sidan **AutoPilot** väljer **** du \> fliken Profiler **Skapa**.
+2. På sidan **Autopilot** väljer du \> fliken **Profiler** **Skapa profil**.
     
-3. På sidan **Skapa profil** anger du ett namn för profilen som hjälper dig att identifiera den, till exempel Marknadsföring. Aktivera den inställning du vill använda och välj sedan **Spara**. Mer information om profilinställningar för AutoPilot finns i [Om inställningar för AutoPilot-profil](autopilot-profile-settings.md).
+3. På sidan **Skapa profil** anger du ett namn på profilen som hjälper dig att identifiera den, till exempel Marknadsföring. Aktivera den inställning du vill använda och välj sedan **Spara**. Mer information om profilerinställningar för Autopilot finns i [Om inställningar för autopilotprofil](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Använda profil på en enhet
 
-När du har skapat en profil kan du använda den på en enhet eller en grupp enheter. Du kan välja en befintlig profil i [steg-för-steg-guiden](add-autopilot-devices-and-profile.md) och använda den på nya enheter eller ersätta en befintlig profil för en enhet eller grupp av enheter. 
+När du har skapat en profil kan du använda den på en enhet eller en grupp enheter. Du kan välja en befintlig profil i [steg-för-steg-guiden](add-autopilot-devices-and-profile.md) och använda den på nya enheter, eller ersätta en befintlig profil för en enhet eller grupp av enheter. 
   
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och välj en profil i **listrutan** \> **Spara**på **enhetspanelen.**
+2. Markera kryssrutan bredvid ett enhetsnamn **Device** och välj en profil i listrutan \> **Tilldelad profil** **Spara**.
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +65,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de \> tillgängliga inställningarna **Spara**på **profilpanelen.**
+2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de \> tillgängliga inställningarna **Spara**på **profilpanelen** .
     
     Om du gör detta innan någon användare ansluter enheten till internet används profilen för installationen.
     
@@ -73,7 +73,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** \> **Spara**på **profilpanelen.**
+2. Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** \> **Spara**på **profilpanelen** .
     
     När du raderar en profil tas den bort från en enhet eller en grupp av enheter som den var tilldelad till.
     
@@ -81,5 +81,5 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och **** välj **Ingen** i listrutan \> **Tilldelad profil** **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn **Device** och välj **Ingen** i listrutan \> **Tilldelad profil** **Spara**.
     

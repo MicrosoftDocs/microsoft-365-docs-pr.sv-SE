@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225959"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630803"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
 Om du är som [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) och plötsligt får stöd för en i första hand hembaserad arbetsstyrka vill vi hjälpa dig att se till att din organisation arbetar så säkert som möjligt. Den här artikeln prioriterar uppgifter för att hjälpa säkerhetsteam att implementera de viktigaste säkerhetsfunktionerna så snabbt som möjligt. 
 
 Om du är en liten eller medelstor organisation som använder någon av Microsofts affärsplaner läser du dessa resurser i stället:
-- [De 10 bästa sätten att skydda Office 365 och Microsoft 365 Business-abonnemang](../admin/security-and-compliance/secure-your-business-data.md) 
+- [De 10 bästa sätten att skydda Office 365- och Microsoft 365 för företag-abonnemang](../admin/security-and-compliance/secure-your-business-data.md) 
 - [Microsoft 365 for Campaigns](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) (innehåller en rekommenderad säkerhetskonfiguration för Microsoft 365 Business)
 
   
@@ -36,7 +36,7 @@ För kunder som använder våra företagsplaner rekommenderar Microsoft att du s
 ||**Uppgift**| Alla Office 365 Enterprise-abonnemang|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1      |[Aktivera MFA (Azure Multi Factor Authentication)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2     | [Skydda mot hot i Office 365](#2-protect-against-threats-in-office-365) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|2     | [Skydda mot hot](#2-protect-against-threats) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  [Konfigurera avancerat hotskydd för Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4      | [Konfigurera Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5     |   [Aktivera Microsoft Advanced Threat Protection](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -45,7 +45,7 @@ För kunder som använder våra företagsplaner rekommenderar Microsoft att du s
 |8      |  [Registrera datorer i enhetshantering och kräver kompatibla datorer](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9      | [Optimera nätverket för molnanslutning](#9-optimize-your-network-for-cloud-connectivity)  |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10   | [Utbilda användare](#10-train-users) |    ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11 |[Komma igång med Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11 |[Komma igång med Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12 |[Övervaka hot och vidta åtgärder](#12-monitor-for-threats-and-take-action) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -65,16 +65,16 @@ Det tar bara några minuter att tillämpa dessa principer, men var beredd att st
 
 |Planera  |Rekommendation  |
 |---------|---------|
-|Office 365-abonnemang (utan Azure AD P1 eller P2)     |[Aktivera säkerhetsstandarder i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Som standard i Azure AD ingår MFA för användare och administratörer.   |
+|Microsoft 365-abonnemang (utan Azure AD P1 eller P2)     |[Aktivera säkerhetsstandarder i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Som standard i Azure AD ingår MFA för användare och administratörer.   |
 |Microsoft 365 E3 (med Azure AD P1)     | Använd [vanliga principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (med Azure AD P2)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning principer för villkorlig åtkomst och relaterade principer](../enterprise/identity-access-policies.md) genom att skapa följande två principer:<br> - [Kräv MFA när inloggningsrisken är medelhög eller hög](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte stöder modern autentisering](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Högriskanvändare måste ändra lösenord](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## <a name="2-protect-against-threats-in-office-365"></a>2: Skydda mot hot i Office 365
+## <a name="2-protect-against-threats"></a>2: Skydda mot hot
 
-Alla Office 365-abonnemang innehåller en mängd olika hotskyddsfunktioner. Att stöta upp skyddet för dessa funktioner tar bara några minuter.
+Alla Microsoft 365-abonnemang innehåller en mängd olika hotskyddsfunktioner. Att stöta upp skyddet för dessa funktioner tar bara några minuter.
 - Skydd mot skadlig kod
 - Skydd mot skadliga webbadresser och filer
 - Skydd mot nätfiske
@@ -96,9 +96,9 @@ En översikt, inklusive en sammanfattning av abonnemang, finns i [Office 365 Adv
 
 Den globala administratören kan konfigurera följande skydd:
 - [Konfigurera ATP-säkra länkar](office-365-security/set-up-atp-safe-links-policies.md)
-- [Konfigurera principer för betrodda bilagor vid ATP](office-365-security/set-up-atp-safe-attachments-policies.md)
-- [Konfigurera en anpassad url-lista för "skriv inte om"](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Konfigurera en lista med anpassade blockerade webbadresser](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Konfigurera ATP-principer för säkra bifogade filer](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Konfigurera en anpassad lista med URL-adresser som inte ska skrivas om](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+- [Konfigurera en anpassad lista med blockerade URL-adresser](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
 
 Du måste arbeta med Exchange Online-administratören och SharePoint Online-administratören för att konfigurera ATP för dessa arbetsbelastningar:
 - [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -181,11 +181,11 @@ Vissa av de skydd som traditionellt har tillhandahållits genom att dirigera tra
 
 
 Mer information finns i de här resurserna för dokument:
-- [Översikt: Optimera Office 365-anslutningen för fjärranvändare med HJÄLP AV DELAD VPN-tunnel](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Översikt: Optimera anslutningen för fjärranvändare med VPN-delad tunnel](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [Implementera DELAD VPN-tunnel för Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Senaste blogg artiklar om detta ämne:
-- [Så här optimerar du snabbt Office 365-trafik för fjärrpersonal & minskar belastningen på infrastrukturen](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [Så här optimerar du snabbt trafiken för fjärrpersonal & minskar belastningen på infrastrukturen](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [Alternativa sätt för säkerhetspersonal och IT att uppnå moderna säkerhetskontroller i dagens unika fjärrarbetsscenarier](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 
@@ -200,7 +200,7 @@ Microsoft 365 innehåller följande resurser för att informera användare i org
 |Koncept  |Resurser  |
 |---------|---------|
 |Microsoft 365     |[Anpassningsbara utbildningsvägar](https://docs.microsoft.com/office365/customlearning/) <p>Dessa resurser kan hjälpa dig att sätta ihop utbildning för slutanvändare i din organisation        |
-|Microsoft 365-säkerhet |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
+|Microsoft 365 Säkerhetscenter |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
 |Multifaktorautentisering     | [Tvåstegsverifiering: Vad är den ytterligare verifieringssidan?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.    |
 | | |
 

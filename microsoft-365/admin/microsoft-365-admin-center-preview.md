@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Läs mer om det nya administrationscentret för Microsoft 365.
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809788"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627986"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Om det nya administrationscentret för Microsoft 365
 
-Det nya administrationscentret för Microsoft 365 är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365- och Office 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
+Det nya administrationscentret för Microsoft 365 är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
   
 Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialiserade arbetsytor, som säkerhet eller enhetshantering, möjliggör mer detaljerad kontroll. Mer information om hur administrationsenheterna ska fungera tillsammans finns i Hur är [det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange senare](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) i den här artikeln. 
   
@@ -75,7 +75,7 @@ Ja. Det nya administrationscentret är fullt fungerande och har alla funktioner 
 
 Microsoft 365 är en komplett, intelligent lösning som inkluderar Office 365, Windows 10 och Enterprise Mobility + Security som gör det möjligt för alla att vara kreativa och arbeta tillsammans, säkert. Följande Microsoft 365-prenumerationer finns i administrationscentret som du kan prova eller köpa nu:
   
-- Microsoft 365 Företag
+- Microsoft 365 för företag
 - Microsoft 365 Företag E3
 - Microsoft 365 Företag E5
     

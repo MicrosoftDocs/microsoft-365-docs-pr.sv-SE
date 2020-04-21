@@ -1,5 +1,5 @@
 ---
-title: Anpassa Office 365-temat för din organisation
+title: Anpassa temat för din organisation
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,81 +18,81 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Lär dig att ändra standardtemat i Office 365 och anpassa det så att det matchar företagets logotyp eller färg. '
-ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'Lär dig att ändra standardtemat i Microsoft 365 och anpassa det så att det matchar företagets logotyp eller färg. '
+ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826338"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627612"
 ---
-# <a name="customize-the-office-365-theme-for-your-organization"></a>Anpassa Office 365-temat för din organisation
+# <a name="customize-the-theme-for-your-organization"></a>Anpassa temat för din organisation
 
-Läs om hur du anpassar temat i administrationscentret för Microsoft 365. Som administratör för Office 365 för företag-prenumerationen kan du ändra standardtemat som visas i det övre navigationsfältet och som alla i organisationen ser. Du kan lägga till företagets logotyp och ändra färgerna så att de matchar resten av ditt varumärke. Du kan till och med lägga till en mållänk som användarna kan navigera till när de väljer din logotyp. Här kan du se resultatet av standardtemat och det anpassade temat i Office 365.
+Läs om hur du anpassar ditt tema i administrationscentret för Microsoft 365. Som administratör för din Microsoft 365 för företag-prenumeration kan du ändra standardtemat som visas i det övre navigeringsfältet för alla i organisationen. Du kan lägga till företagets logotyp och ändra färgerna så att de matchar resten av ditt varumärke. Du kan till och med lägga till en mållänk som användarna kan navigera till när de väljer din logotyp. Här kan du se standardtemat och det anpassade temat i Microsoft 365.
   
-![Default Office 365 theme and Custom Office 365 theme](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Standardt Microsoft 365-tema och anpassat Microsoft 365-tema](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
-## <a name="customize-your-theme-in-the-admin-center"></a>Anpassa temat i administrationscentret
+## <a name="customize-your-theme-in-the-admin-center"></a>Anpassa ditt tema i administrationscentret
 
-1. I administrationscentret går du till \> **inställningsinställningarna**och väljer sedan fliken **Organisationsprofil.** **Settings**
+1. Gå till inställningar i **administrationscentret** \> **Settings**och välj sedan fliken **Organisationsprofil.**
 
-2. Välj **Anpassade teman**på fliken **Organisationsprofil.**
+2. Välj **Anpassade teman**på fliken **Organisationsprofil** .
 
-3. Ändra de temaelement du vill använda för din organisation på panelen **Tullteman:**
+3. På panelen **Tullteman** ändrar du de temaelement du vill ha för din organisation:
     
-    - **Använd en anpassad logotypbild:** Välj om du vill använda en bild från en WEBBADRESS eller ladda upp en bild. Om du använder en URL, se till att webbadressen använder HTTPS och är 200 x 30 pixlar av alla format av valfri storlek. Du kan ladda upp en logotyp under 10 KK som är 200 x 30 pixlar i JPG-, PNG-, GIF- eller SVG-format.
+    - **Använd en anpassad logotypbild:** Välj om du vill använda en bild från en WEBBADRESS eller ladda upp en bild. Om du använder en URL ska du se till att webbadressen använder HTTPS och är 200 x 30 pixlar av alla format av valfri storlek. Du kan ladda upp en logotyp under 10 KB som är 200 x 30 pixlar i JPG-, PNG-, GIF- eller SVG-format.
 
       > [!NOTE]
       > Om logotypen ska visas i SharePoint-mobilappen använder du bara SVG-bilder. Bilder som laddas upp i något annat format visas inte i appen. Logotyper kan inte klickas i SharePoint Mobile-appen.
 
-    - **Gör logotypen klickbar:** Du kan använda logotypen i navigeringsfältet som en länk till alla företagsresurser. Du kan ange webbadressen för logotypen här, med början http:// eller https://. Det här är valfritt.
+    - **Gör logotypen klickbar:** Du kan använda din logotyp i navigeringsfältet som en länk till alla företagsresurser. Du kan ange webbadressen för logotypen här, med början http:// eller https://. Det här är valfritt.
 
-    - **Välj bakgrundsbild:** Välj bilden och ladda upp din egen JPG, PNG eller GIF med en upplösning på 1366 x 50 pixlar, inte större än 15 kB. Bakgrundsbilden visas i det övre navigeringsfältet på varje sida.
+    - **Välj bakgrundsbild:** Välj bilden och ladda upp din egen JPG, PNG eller GIF med en upplösning på 1366 x 50 pixlar, inte större än 15 KB. Bakgrundsbilden visas i det övre navigeringsfältet på varje sida.
 
       > [!NOTE]
       > Bilder som innehåller text visas kanske inte som förväntat. Fördefinierade element som visas på vänster och höger sida i navigeringsfältet kan variera mellan de olika tjänsterna och texten kan döljas bakom elementen. Navigeringsfältets dynamik gör så att vi i nuläget inte kan ge vägledning för utfyllnad för som ger en enhetlig upplevelse. 
 
-    - **Navigeringsfältfärg:** Välj en färg som ska användas för navigeringsfältets bakgrund. Det visas längst upp på varje sida.
+    - **Navigeringsfältsfärg:** Välj en färg som ska användas för navigeringsfältets bakgrund. Det visas längst upp på varje sida.
 
     - **Text and ikoner**: Välj en färg som ska användas för text och ikoner i det övre navigeringsfältet.
 
-    - **Accentfärg:** Välj en färg som ska användas för att hovra färg och sidaccenter med navigeringsfältet som knappar och text i vissa program.
+    - **Accentfärg:** Välj en färg som ska användas för knappen hovringningsfärg och sidaccenter för navigeringsfältet, till exempel knappar och text i vissa program.
 
-     - **Förhindra att användare åsidosätter temat**: Vänd den här växlingsknappen för att förhindra att användarna väljer sitt eget tema från vårt temaval. Detta hindrar inte användare från att kunna ställa in ett tema med hög kontrast.
+     - **Förhindra att användare åsidosätter temat:** Vänd på den här växlingsknappen för att förhindra att användarna väljer sitt eget tema från vårt temaval. Detta hindrar inte användare från att kunna ställa in ett tema med hög kontrast.
 
-    - **Visa användarnamnet**: Välj om du vill visa en användares fullständiga namn vid startpunkten till kontohanteraren längst upp till höger på sidan när användaren är inloggad. Som standard ser användarna sitt foto eller sina initialer om ett foto inte har laddats upp.
+    - **Visa användarnamnet**: Välj om du vill visa en användares fullständiga namn vid startpunkten för kontohanteraren längst upp till höger på sidan när användaren är inloggad. Som standard ser användarna sitt foto eller sina initialer om ett foto inte har laddats upp.
     
 4. Välj **Spara ändringar**.
     
-Du ser det nya temat i administrationscentret direkt och efter en kort fördröjning ser du det i hela Office 365, inklusive sidor i Outlook, SharePoint, [SharePoint-mobilapp för iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)och [SharePoint-mobilapp för Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Se följande bild för ett exempel på var du ett anpassat temaändringar från administrationscentret.
+Du ser ditt nya tema i administrationscentret direkt och efter en kort fördröjning visas det i hela Microsoft 365, inklusive sidor i Outlook, SharePoint, [SharePoint-mobilappen för iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)och [SharePoint-mobilapp för Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Se följande bild för ett exempel på var du kan anpassa temaändringar från administrationscentret.
 
-![m365-admin-tenant-tema-konceptuella](../../media/m365-admin-tenant-theme-conceptual.png)
+![m365-admin-tenant-tema-konceptuell](../../media/m365-admin-tenant-theme-conceptual.png)
 
-Du kan ta bort den anpassade ikonen eller de anpassade färgerna när som helst. Gå bara tillbaka till temasidan och välj **Ta bort anpassade teman**.
+Du kan ta bort den anpassade ikonen eller de anpassade färgerna när som helst. Gå bara tillbaka till temasidan och välj **Ta bort anpassad teman**.
   
 ## <a name="best-practices"></a>Metodtips
 
-När du väljer en **logotypbild**rekommenderar vi att du använder en SVG-filtyp, där så är möjligt, så att din logotyp får ett högupplöst utseende på alla skärmar och på alla zoomnivåer.
+När du väljer en **logotypbild**rekommenderar vi att du använder en SVG-filtyp, där det är möjligt, så att din logotyp får ett högupplöst utseende på alla skärmar och på alla zoomnivåer.
 
-När du väljer anpassade färger väljer du en bakgrundsfärg i **Nav-fältet** som har ett högt kontrastförhållande med **logotypbilden** som du valde. Välj också en färg för **text och ikoner** med ett högt kontrastförhållande till **Nav-stångens bakgrundsfärg** för att säkerställa att all text och alla ikoner är väl synliga.
+När du väljer anpassade färger väljer du en **bakgrundsfärg i navigeringsfältet** som har ett högt kontrastförhållande med den **logotypbild** som du har valt. Välj också en **text- och ikonerfärg** med ett högt kontrastförhållande till **bakgrundsfärgen i navigeringsfältet** för att säkerställa att all text och alla ikoner är väl synliga.
 
-Välj en **accentfärg** som syns bra mot en vit eller ljus bakgrund när du väljer anpassade färger. **Accentfärgen** används som färg på vissa länkar och knappar som visas mot en vit eller ljus bakgrund. **Accent-färgen** används till exempel för att färga element i en användares inkorg och på deras Office.com portalsida. 
+Välj en **accentfärg** som syns bra mot en vit eller ljus bakgrund när du väljer anpassade färger. **Accentfärgen** används som färg på vissa länkar och knappar som visas mot en vit eller ljus bakgrund. **Accentfärgen** används till exempel för att färglägga element i en användares inkorg och på deras Office.com portalsida. 
   
 Det rekommenderade kontrastförhållandet för text, ikon eller knappfärg och bakgrundsfärg är 4,5:1.
 
-Här är ett enkelt flödesschema som hjälper dig att snabbt konfigurera med ett visuellt tilltalande anpassat Office 365-tema för din organisation:
+Här är ett enkelt flödesschema som hjälper dig att snabbt konfigurera med ett visuellt tilltalande anpassat Microsoft 365-tema för din organisation:
   - Jag skulle vilja använda en färgstark version av vår logotyp.
     - Vi rekommenderar följande inställningar:
-      - **Logotypbild:** Organisationens färgglada logotyp.
-      - **Navigeringsfält färg:** en neutral färg. Vi rekommenderar #FAF9F7 för en ljus färg och #252423 för en mörk färg.
-      - **Text- och ikonfärg:** En färg som kontrasterar färg i **navigeringsfältet**. Vi rekommenderar #FAF9F7 för en ljus färg och #252423 för en mörk färg.
-      - **Accent färg:** en mörk varumärke färg. Med vissa program måste den här färgen vara synlig på en ljusbakgrund.
+      - **Logotypbild**: Organisationens färgstarka logotyp.
+      - **Navigeringsfält färg:** En neutral färg. Vi rekommenderar #FAF9F7 för en ljus färg och #252423 för en mörk färg.
+      - **Text och ikonfärg**: En färg som **kontrasterar färgen i navigeringsfältet**. Vi rekommenderar #FAF9F7 för en ljus färg och #252423 för en mörk färg.
+      - **Accent färg:** En mörk märkesfärg. Med vissa program måste den här färgen vara synlig på en ljus bakgrund.
   - Jag skulle vilja använda en neutral version av vår logotyp och representera färg i navigeringsfältet.
     - Vi rekommenderar följande inställningar:
       - **Logotypbild**: Organisationens neutrala logotyp.
-      - **Navigeringsfältfärg:** En varumärkesfärg som kontrasterar mot din logotyp.
-      - **Text- och ikonfärg:** Välj en färg som kontrasterar mot den varumärkesfärg du valde för **navigeringsfältets färg.** Vi rekommenderar #252423 för en mörk färg och #FAF9F7 för en ljus färg.
-      - **Accent färg:** en mörk varumärke färg. Med vissa program måste den här färgen vara synlig på en ljusbakgrund.
+      - **Navigeringsfält färg:** En varumärkesfärg som kontrasterar mot din logotyp.
+      - **Text och ikonfärg:** Välj en färg som kontrasterar mot den märkesfärg du valde för **navigeringsfältets färg.** Vi rekommenderar #252423 för en mörk färg och #FAF9F7 för en ljus färg.
+      - **Accent färg:** En mörk märkesfärg. Med vissa program måste den här färgen vara synlig på en ljus bakgrund.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Läs mer om olika typer av användare i administrationscentret. '
 ms.custom: okr_smb
-ms.openlocfilehash: d014e4d3d65b3f721e7a7fb3751354027d2c6f02
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42812366"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627770"
 ---
 # <a name="quick-help-types-of-users"></a>Snabbhjälp: Typer av användare
 
@@ -35,26 +35,26 @@ På sidan **Aktiva användare** i administrationscentret för Microsoft 365 kan 
 |||
 |:-----|:-----|
 |**Typ av användare** <br/> |**Definition** <br/> |
-|Licensierade användare  <br/> |Dessa användare har tilldelats en Office 365-licens, till exempel Office 365 Business Premium eller Office 365 Enterprise E3, så att de kan använda Office 365-tjänster.  <br/> |
-|Inloggning tillåten  <br/> |De här användarna kan logga in i Office 365 för att skapa dokument, kontrollera e-post och så vidare. De flesta användare bör kunna logga in när som helst.  <br/> |
-|Inloggning blockerad  <br/> |De här användarna kan inte logga in på Office 365. Ett exempel är en användare som har lämnat företaget och vars åtkomst till Office 365 har blockerats.  <br/> |
-|Olicensierade användare  <br/> |De här användarna har ingen licens för Office 365, till exempel Office 365 Business Premium eller Office 365 Enterprise E3, och kan därför inte använda Office 365-funktioner. Några exempel är administratörer som bara behöver hantera Office 365, anställda som har lämnat företaget och delade postlådor och resurspostlådor som inte är kopplade till personer.  <br/> |
+|Licensierade användare  <br/> |Dessa användare har tilldelats en Microsoft 365-licens, till exempel Microsoft 365 Business Standard eller Office 365 Enterprise E3, så att de kan använda Microsoft 365-tjänster.  <br/> |
+|Inloggning tillåten  <br/> |Dessa användare kan logga in på Microsoft 365 för att skapa dokument, kontrollera e-post och så vidare. De flesta användare bör kunna logga in när som helst.  <br/> |
+|Inloggning blockerad  <br/> |Dessa användare kan inte logga in på Microsoft 365. Ett exempel på detta är en användare som lämnade företaget och du blockerade deras åtkomst till Microsoft 365.  <br/> |
+|Olicensierade användare  <br/> |Dessa användare har ingen Microsoft 365-licens, till exempel Microsoft 365 Business Standard eller Office 365 Enterprise E3, så de kan inte använda Microsoft 365-funktioner. Exempel är administratörer som bara behöver hantera Microsoft 365, anställda som har lämnat företaget eller delade postlådor och resurspostlådor som inte är associerade med personer.  <br/> |
 |Användare med fel  <br/> |De här användarnas konton har felaktigheter som måste åtgärdas.  <br/> |
 |Faktureringsadministratörer  <br/> |De här användarna kan göra inköp, hantera prenumerationer, hantera supportärenden och övervaka tjänstens status för din räkning.  <br/> |
-|Globala administratörer  <br/> |De här användarna har åtkomst till alla administrativa funktioner. Den person som registrerar sig för Office 365 blir global administratör, men du kan ha fler än en om du vill. Globala administratörer är de enda som kan tilldela andra administratörsroller.  <br/> |
+|Globala administratörer  <br/> |De här användarna har åtkomst till alla administrativa funktioner. Den person som registrerar sig för Microsoft 365 blir en global administratör men du kan ha mer än en om du vill. Globala administratörer är de enda som kan tilldela andra administratörsroller.  <br/> |
 |Lösenordsadministratörer  <br/> |De här användarna kan återställa lösenord, hantera tjänstförfrågningar och övervaka tjänstens status för din räkning.  <br/> |
 |Tjänstadministratörer  <br/> |De här användarna kan hantera tjänstförfrågningar och övervaka tjänstens status för din räkning.  <br/> |
 |Användarhanteringsadministratörer  <br/> |De här användarna kan återställa lösenord, övervaka tjänstens status och hantera användarkonton, användargrupper och tjänstförfrågningar. Användarhanteringsadministratörer kan inte ta bort en global administratör, skapa andra administratörsroller eller återställa lösenord för faktureringsadministratörer, globala administratörer eller tjänstadministratörer.  <br/> |
-|Lägg till ett anpassat filter  <br/> |Med det här alternativet kan du skapa ett anpassat filter för att visa endast vissa typer av användare, till exempel vilka användare som finns i Office 365 Business-abonnemanget. [Snabbhjälp: Filtrera användare](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Lägg till ett anpassat filter  <br/> |Med det här alternativet kan du skapa ett anpassat filter för att bara visa vissa typer av användare med dina önskemål, till exempel vilka användare som finns i Microsoft 365 Apps for Business-planen. [Snabbhjälp: Filtrera användare](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
    
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till användare i Office 365](../add-users/add-users.md)
+[Lägga till användare i Microsoft 365](../add-users/add-users.md)
     
-[Tilldela användare licenser i Office 365 för företag](../manage/assign-licenses-to-users.md)
+[Tilldela licenser till användare i Microsoft 365 för företag](../manage/assign-licenses-to-users.md)
     
-[Ta bort licenser från användare i Office 365 för företag](../manage/remove-licenses-from-users.md)
+[Ta bort licenser från användare i Microsoft 365 för företag](../manage/remove-licenses-from-users.md)
     
-[Tilldela administratörsroller i Office 365](../add-users/assign-admin-roles.md)
+[Tilldela administratörsroller i Microsoft 365](../add-users/assign-admin-roles.md)
     
 

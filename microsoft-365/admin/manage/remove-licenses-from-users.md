@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Läs om hur du tar bort licenser från användarkonton.
-ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42810137"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628106"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
@@ -142,7 +142,7 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Vad du behöver veta om att ta bort licenser för användare
 
-- Du måste vara global administratör, faktureringsadministratör, licensadministratör eller administratör för användarhantering. Mer information finns i [Om Office 365-administratörsroller](../add-users/about-admin-roles.md).
+- Du måste vara global administratör, faktureringsadministratör, licensadministratör eller administratör för användarhantering. Mer information finns i [Om Microsoft 365-administratörsroller](../add-users/about-admin-roles.md).
 
 - Du kan [ta bort licenser från användarkonton med Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
@@ -152,17 +152,17 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 - Observera att filer som sparats i OneDrive för företag inte tas bort om inte användaren tas bort från Microsoft 365-administrationscentret eller tas bort via Active Directory-synkronisering. Mer information finns i [OneDrive-lagring och borttagning](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Dessutom är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Content Search eller Advanced eDiscovery när licensen tas bort. Mer information finns i avsnittet "Söka frånkopplade eller avlicensierade postlådor" [i Innehållssökning i Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Dessutom är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Content Search eller Advanced eDiscovery när licensen tas bort. Mer information finns i avsnittet "Söka frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du bevara postlådedata för ett borttaget användarkonto med hjälp av [inaktiva postlådor.](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365) Mer information finns i [Skapa och hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 
-- Information om hur du blockerar en användares åtkomst till Office 365-data efter att licensen har tagits bort och hur du får åtkomst till data efteråt finns i [Ta bort en tidigare anställd](../add-users/remove-former-employee.md).
+- Information om hur du blockerar en användares åtkomst till Microsoft 365-data efter att licensen har tagits bort och hur du får åtkomst till data efteråt finns i [Ta bort en tidigare anställd](../add-users/remove-former-employee.md).
 
 - Om du tar bort en användares licens och de fortfarande har Office installerat visas [meddelanden om olicensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) när de använder Office.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Allmänt om prenumerationer och licenser i Office 365 för företag](../../commerce/licenses/subscriptions-and-licenses.md)
+[Förstå prenumerationer och licenser i Microsoft 365 för företag](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [Ta bort licenser från prenumerationen](../../commerce/licenses/remove-licenses-from-subscription.md)
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Microsofts produktivitetspoäng.
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516871"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627758"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsofts produktivitetspoäng (förhandsversion)
 
@@ -64,7 +64,7 @@ Din poäng uppdateras dagligen och återspeglar användaråtgärder som slutför
 
 ## <a name="access-and-required-permissions"></a>Åtkomst och nödvändiga behörigheter 
 
-För medarbetarupplevelsen måste du ha en prenumeration på ett Office 365 för företag-abonnemang eller ett Microsoft 365 Business-abonnemang med flera användare. 
+För medarbetarupplevelsen måste du ha en prenumeration på ett Microsoft 365 för affärsabonnemang med flera användare. 
 
 Om du vill ha behörighet att komma åt Microsofts produktivitetspoäng måste du ha följande roller: 
 
@@ -136,7 +136,7 @@ De filtyper som övervägs för samarbete är Word/Excel/PowerPoint/OneNote/PDF.
 
 ![Arbeta var som helst sida.](../../media/psflexibility.png)
 
-På sidan Arbeta var som helst kvantifieras de användare (i procent och absolut värde) som har använt minst en produktivitetsapp på två eller flera plattformar, som är stationära, mobila och webb. Användarna får högre poäng för att använda fler appar och plattformar. De appar som övervägs är Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. Basen för insikten är användare som är aktiverade för Office 365 ProPlus, Exchange, Yammer, Skype eller Teams.
+På sidan Arbeta var som helst kvantifieras de användare (i procent och absolut värde) som har använt minst en produktivitetsapp på två eller flera plattformar, som är stationära, mobila och webb. Användarna får högre poäng för att använda fler appar och plattformar. De appar som övervägs är Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. Basen för insikten är användare som är aktiverade för Microsoft 365 Apps för företag, Exchange, Yammer, Skype eller Teams.
 
 1. **Varför det spelar roll** ger en sammanfattning från forskning som kopplar användningen av flera plattformar till högre produktivitet. **Läs forskningen från Forrester** går till en forskningsartikel som ger mer sammanhang om hur arbetet i hela bidrar till ökad produktivitet.
 1. Med hjälp av insikt om **e-post var som helst** kvantifieras antalet användare i organisationen som använder Outlook på olika plattformar inom bas av användare som är aktiva i Outlook.

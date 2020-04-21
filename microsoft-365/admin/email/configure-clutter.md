@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Lär dig att aktivera eller inaktivera övrig e-post för alla eller specifika användare i organisationen med Hjälp av Exchange PowerShell. '
-ms.openlocfilehash: 65aa614095ecbebaad3d7eb38af1e74166ce20ac
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628933"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Konfigurera Övrig e-post för organisationen
 
 > [!TIP]
 > [Prioriterad inkorg](../setup/configure-focused-inbox.md) kommer att ersätta Övrig e-post. Läs mer: [Uppdatera om fokuserad inkorg och våra planer för Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Som administratör kan du behöva hantera övrig övrig övrig e-post i Office 365. Om du vill aktivera/inaktivera funktionen Övrig e-post för användare i organisationen måste du använda Exchange PowerShell. (Enskilda användare kan aktivera/inaktivera med hjälp av de här anvisningarna: [Aktivera/inaktivera Övrig e-post i Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
+Som administratör kan du behöva hantera övrig övrig övrig e-post i Microsoft 365. Om du vill aktivera/inaktivera funktionen Övrig e-post för användare i organisationen måste du använda Exchange PowerShell. (Enskilda användare kan aktivera/inaktivera med hjälp av de här anvisningarna: [Aktivera/inaktivera Övrig e-post i Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
   
 Läs artikeln [Använd PowerShell med Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) och [Ansluta till Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) för information om hur du använder Exchange PowerShell. Du måste ha ett konto som har minst rollen Exchange Service-administratör och möjligheten att ansluta till Exchange Online med PowerShell. 
   
@@ -59,7 +59,7 @@ Om du använder PowerShell för att skapa flera användare samtidigt måste du k
 
 Som administratör kan du återaktivera övrig e-post med Exchange PowerShell. När du gjort detta inaktiveras Prioriterad inkorg och Övrig e-post aktiveras igen. 
   
- **Om du använder Outlook på webben med Office 365 Business-abonnemang:**
+ **Om du använder Outlook på webben med en Microsoft 365 Business Premium-prenumeration:**
   
 - Om användaren har aktiverat Övrig e-post: 
     

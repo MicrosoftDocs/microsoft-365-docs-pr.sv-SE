@@ -1,5 +1,5 @@
 ---
-title: Hantera distribution av Office 365-tillägg i administrationscentret
+title: Hantera distribution av tillägg i administrationscentret
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212015"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628166"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av Office 365-tillägg i administrationscentret för Microsoft 365
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av tillägg i Microsoft 365-administrationscentret
 
 Office-tillägg hjälper dig att anpassa dina dokument och effektivisera ditt sätt att komma åt information på webben (se [Börja använda Office-tillägget](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Som administratör kan du distribuera Office-tillägg för användarna i organisationen. Du kan göra detta med hjälp av funktionen Centraliserad distribution i Microsoft 365 administrationscenter.
   
-Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta administratörer att distribuera tillägg till användare och grupper inom en organisation. Mer information om hur du tar reda på om din organisation kan stödja centraliserad distribution finns [i Avgöra om centraliserad distribution av tillägg fungerar för din Office 365-organisation](centralized-deployment-of-add-ins.md).
+Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta administratörer att distribuera tillägg till användare och grupper inom en organisation. Mer information om hur du tar reda på om din organisation kan stödja centraliserad distribution finns [i Avgöra om centraliserad distribution av tillägg fungerar för din organisation](centralized-deployment-of-add-ins.md).
   
 Centraliserad distribution ger följande fördelar:
   
@@ -41,7 +41,7 @@ Centraliserad distribution ger följande fördelar:
 - Tillägg visas inte längre för användare om administratören inaktiverar eller tar bort tillägget, eller om användaren tas bort från Azure Active Directory eller från en grupp som tillägget har tilldelats.
     
 > [!NOTE]
->  För Word, Excel och PowerPoint används en [SharePoint-appkatalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Office 365 och/eller stöd för SharePoint-tillägg som krävs. > För Outlook använder Exchange-kontrollpanelen för att distribuera i en lokal miljö utan anslutning till Office 365. > 
+>  För Word, Excel och PowerPoint används en [SharePoint-appkatalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Microsoft 365 och/eller stöd för SharePoint-tillägg som krävs. > För Outlook använder Exchange-kontrollpanelen för att distribuera i en lokal miljö utan anslutning till Microsoft 365. > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Rekommenderad metod för distribution av Office-tillägg
 
@@ -57,10 +57,10 @@ Beroende på målgruppens storlek kanske du vill lägga till eller ta bort utrul
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Distribuera ett Office-tillägg med administrationscentret
 
-Innan du börjar läser du [Ta reda på om centraliserad distribution av tillägg fungerar för din Office 365-organisation](centralized-deployment-of-add-ins.md).
+Innan du börjar läser du [Ta reda på om centraliserad distribution av tillägg fungerar för din organisation](centralized-deployment-of-add-ins.md).
 
   
-1. Gå till sidan Inställningar**i administrationscentret** **för** > Microsoft 365.
+1. Gå till sidan **Inställningar** \> **i administrationscentret.**
     
 2. Välj **Distribuera tillägg** högst upp på sidan. På översiktssidan väljer du **Nästa**.
     
@@ -75,13 +75,13 @@ Innan du börjar läser du [Ta reda på om centraliserad distribution av tilläg
 7. En grön bock visas när tillägget har distribuerats. Du kan följa instruktionerna på sidan för att testa att tillägget har distribuerats.
 
 > [!NOTE]
-> Användare kan behöva starta om Office för att se att tilläggsikonen visas i menyfliksområdet i appen. Det kan ta upp till 24 timmar innan Outlook-tillägg visas i användarnas menyfliksområdet.
+> Användare kan behöva starta om Office för att se att tilläggsikonen visas i menyfliksområdet i appen. Det kan ta upp till 12 timmar innan Outlook-tillägg visas i användarnas menyfliksområdet.
     
 8. När du är klar väljer du **Nästa**. Om du har distribuerat till bara dig själv kan du välja **Ändra vem som har åtkomst till tillägget** för att distribuera till fler användare.
 
 
 
-Om du har distribuerat tillägget till andra medlemmar i organisationen följer du instruktionerna som visas för att effektivt meddela distributionen av tillägget. <br/>Nu visas ditt tillägg tillsammans med andra appar i Office 365.
+Om du har distribuerat tillägget till andra medlemmar i organisationen följer du instruktionerna som visas för att effektivt meddela distributionen av tillägget. <br/>Nu visas ditt tillägg tillsammans med andra appar i Microsoft 365.
   
 Det är en bra idé att informera de användare och grupper som du distribuerade tillägget till så att de vet att det är tillgängligt. Överväg att skicka ett e-postmeddelande till dem som beskriver när och hur du använder tillägget och förklarar hur tillägget kan hjälpa dem att göra sitt jobb bättre. Inkludera eller länka till relevant hjälpinnehåll eller vanliga frågor som kan hjälpa till om användarna har problem med tillägget.
   
@@ -101,19 +101,12 @@ Vilket alternativ som är rätt för din organisation beror på din konfiguratio
   
 ### <a name="add-in-states"></a>Tilläggstillstånd
 
-Administratörer kan aktivera eller inaktivera de tillägg som de distribuerar för alla användare från Administrationscentret för Microsoft 365.
-
-1.    Gå till sidan **Inställningar** > **i administrationscentret.** 
-2.    Välj det distribuerade tillägget. 
-3.    Klicka på **växlingsknappen Status** om du vill aktivera **eller** **inaktivera**tillägget . 
-4.    Spara ändringarna.  
-
-En av tre tilläggstillstånd finns också.
- 
+Ett tillägg kan antingen vara i läget **På** eller **Av.**
+  
 |**Statligt**|**Hur tillståndet inträffar**|**Effekt**|
 |:-----|:-----|:-----|
 |**Aktiva**  <br/> |Admin laddade upp tillägget och tilldelade det till användare eller grupper.  <br/> |Användare och grupper som tilldelats tillägget ser det i relevanta klienter.  <br/> |
-|**Avstängd**  <br/> |Admin har inaktiverat tillägget.  <br/> |Användare och grupper som tilldelats tillägget har inte längre åtkomst till det.  <br/> Om tilläggstillståndet ändras till **Aktiv**har användarna och grupperna åtkomst till det igen.  <br/> |
+|**Avstängd**  <br/> |Admin har inaktiverat tillägget.  <br/> |Användare och grupper som tilldelats tillägget har inte längre åtkomst till det.  <br/> Om tilläggstillståndet ändras till Aktiv har användarna och grupperna åtkomst till det igen.  <br/> |
 |**Deleted**  <br/> |Admin har tagit bort tillägget.  <br/> |Användare och grupper som tilldelats tillägget har inte längre åtkomst till det.  <br/> |
    
 Överväg att ta bort ett tillägg om ingen längre använder det. Det kan vara logiskt att stänga av ett tillägg om ett tillägg endast används under vissa tider på året.
@@ -182,9 +175,9 @@ Detta förhindrar att alla användare hämtar följande tillägg från butiken.
     
 - Förvärv som startar inom **AppSource**
     
-- Tillägg i Office 365
+- Tillägg i Microsoft 365
     
-En användare som försöker komma åt arkivet ser följande meddelande: **Tyvärr har Office 365 konfigurerats för att förhindra individuellt förvärv av Office Store-tillägg.**
+En användare som försöker komma åt arkivet ser följande meddelande: **Tyvärr har Microsoft 365 konfigurerats för att förhindra individuellt förvärv av Office Store-tillägg.**
   
 Stöd för att stänga av Office Store finns i följande versioner:
   
@@ -241,7 +234,7 @@ För att vara GDPR-kompatibel för minderåriga måste du se till att en av föl
   
 Word, Excel och PowerPoint 2013 för Windows stöder samma mindre kontroller om Active Directory Authentication Library (ADAL) är aktiverat. Det finns två alternativ för efterlevnad, som förklaras härnäst.
   
-- **Aktivera ADAL**. I den här artikeln beskrivs hur du aktiverar ADAL för Office 2013: [Använda modern Office 365-autentisering med Office-klienter](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Du måste också ange registernycklarna så att de aktiverar ADAL enligt beskrivningen i [Aktivera modern autentisering för Office 2013 på Windows-enheter](../security-and-compliance/enable-modern-authentication.md).<br/>Dessutom måste du installera följande apriluppdateringar för Office 2013:
+- **Aktivera ADAL**. I den hÃ¤r artikeln beskrivs hur du aktiverar ADAL för Office 2013: [HÃ¤r Ã¤ger microsoft 365 modern autentisering med Office-klienter](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Du måste också ange registernycklarna så att de aktiverar ADAL enligt beskrivningen i [Aktivera modern autentisering för Office 2013 på Windows-enheter](../security-and-compliance/enable-modern-authentication.md).<br/>Dessutom måste du installera följande apriluppdateringar för Office 2013:
     
   - [Beskrivning av säkerhetsuppdateringen för Office 2013: 10 april 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

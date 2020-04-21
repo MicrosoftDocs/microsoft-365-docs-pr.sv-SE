@@ -1,5 +1,5 @@
 ---
-title: Låt användare återställa sina egna lösenord i Office 365
+title: Låt användare återställa sina egna lösenord
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan återställa dina lösenord med hjälp av verktyget för återställning av lösenord med självbetjäning.
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211901"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617152"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -36,7 +36,7 @@ Står folk i kö och ber dig återställa deras lösenord? Som Microsoft 365-adm
   
 Här är några saker du kan behöva veta:
   
-- Självbetjäning för återställning av lösenord för molnanvändare ingår **kostnadsfritt** i alla betalabonnemang för Office 365 Business, Education eller Office 365 för ideella föreningar. Det fungerar inte med utvärderingsversioner av Office 365. 
+- Du får lösenordsåterställning med självbetjäning för molnanvändare **gratis** med alla Microsoft 365-företag, utbildningar eller avgiftsbetalda organisationer. Det fungerar inte med Microsoft 365 rättegång. 
     
 - Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner. 
     

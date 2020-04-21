@@ -1,5 +1,5 @@
 ---
-title: Återställa lösenord för Office 365-företag
+title: Återställ lösenord
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,15 +25,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 'Läs om hur du återställer lösenord för en användare i Office 365 företagsprenumeration. '
-ms.openlocfilehash: a19999ceffa140343c079c6758cc831175c09ab1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
+ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42811535"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626952"
 ---
-# <a name="reset-office-365-business-passwords"></a>Återställa lösenord för Office 365-företag
+# <a name="reset-passwords"></a>Återställ lösenord
 
 Titta på en kort video om hur du återställer användarlösenord.<br><br>
 
@@ -45,9 +45,9 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 Vi rekommenderar att du konfigurerar återställning av egna lösenord. På så vis behöver du inte manuellt återställa lösenord för användarna. Läs i så fall [Låt användare återställa sina egna lösenord i Office 365](let-users-reset-passwords.md).
   
-## <a name="reset-an-office-365-business-password-for-someone-else"></a>Återställa ett Office 365 Business-lösenord för någon annan
+## <a name="reset-a-business-password-for-someone-else"></a>Återställa ett företagslösenord för någon annan
 
-De här anvisningarna gäller endast Office 365 Business-prenumeranter. För att kunna göra dem måste du logga in med ditt Microsoft 365-administratörskonto. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md)
+De här stegen är endast avsedda för personer som använder en Microsoft 365 för affärsplan. För att kunna göra dem måste du logga in med ditt Microsoft 365-administratörskonto. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md)
 
  
 ::: moniker range="o365-worldwide"
@@ -75,11 +75,11 @@ De här anvisningarna gäller endast Office 365 Business-prenumeranter. För att
 4. Ange en e-postadress som användaren kan komma åt så att de får det nya lösenordet och följ upp med dem för att se till att de fick det.
  
   
-## <a name="reset-my-office-365-tenant-admin-password"></a>Återställa administratörslösenordet för Office 365-klient
+## <a name="reset-my-admin-password"></a>Återställa mitt administratörslösenord
 
-Använd de här stegen om du har glömt ditt lösenord men ändå kan logga in på Office 365 eftersom lösenordet till exempel har sparats i din webbläsare: 
+Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365 eftersom ditt lösenord till exempel sparas i webbläsaren: 
     
-1. I Office 365 väljer du **Inställningar för** \> **Office 365** \> **Personlig information**. 
+1. I Microsoft 365 väljer du **Inställningar för** \> **Office 365** \> **Personlig information**. 
           
 2. Kontrollera att **Kontaktinformation**och **Alternativ e-postadress** stämmer. Ändra dem annars nu. 
         
@@ -95,7 +95,7 @@ Om du har glömt ditt lösenord och inte kan logga in:
     
 - Du kan också [kontakta Microsoft Support](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
     
-## <a name="reset-all-office-365-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Återställa alla Office 365 Business-lösenord för alla i organisationen samtidigt
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Återställa alla företagslösenord för alla i organisationen samtidigt
 <a name="bkmk_forgot"> </a>
 
 Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du har tusentals användare kan du läsa mer om hur du återställer flera lösenord samtidigt i nästa avsnitt.
@@ -112,14 +112,14 @@ Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du ha
     
 
   
-## <a name="reset-office-365-business-passwords-in-bulk"></a>Återställa Office 365 Business-lösenord i grupp
+## <a name="reset-business-passwords-in-bulk"></a>Återställa företagslösenord i grupp
 <a name="bkmk_forgot"> </a>
 
 Använd PowerShell! Kolla in det här inlägget av Eyal Doron: [Hantera lösenord med PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
   
-Mer information finns i [PowerShell för Office 365-administratörer](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Tvinga fram ändring av lösenord för alla i företaget
 <a name="bkmk_forgot"> </a>
@@ -134,14 +134,14 @@ Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet 
 ## <a name="related-articles"></a>Relaterade artiklar
 <a name="bkmk_forgot"> </a>
   
-[Låta användare återställa sina egna lösenord i Office 365](let-users-reset-passwords.md)
+[Låt användare återställa sina egna lösenord](let-users-reset-passwords.md)
 
 [Ange att en enskild användares lösenord aldrig ska förfalla](set-password-to-never-expire.md)
 
 [Ange förfalloprincip för lösenord i organisationen](../manage/set-password-expiration-policy.md)
 
-[Återställa en användare i Office 365](restore-user.md)
+[Återställa en användare](restore-user.md)
 
-[Ta bort en tidigare anställd från Office 365](remove-former-employee.md)
+[Ta bort en tidigare anställd](remove-former-employee.md)
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

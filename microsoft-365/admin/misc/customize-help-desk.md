@@ -1,5 +1,5 @@
 ---
-title: Lägga till egen information om support i hjälpfönstret i Office 365
+title: Lägga till anpassad information om supportavdelningen i hjälpfönstret
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,41 +20,41 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Skapa anpassat supportkort i administrationscentret och lägg till anpassad supportkontaktinformation i hjälpfönstret.
-ms.openlocfilehash: af1000be1f8b26e79097f8b686aafc37da6e9366
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807550"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627902"
 ---
-# <a name="add-customized-help-desk-info-to-the-office-365-help-pane"></a>Lägga till egen information om support i hjälpfönstret i Office 365
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>Lägga till anpassad information om supportavdelningen i hjälpfönstret
 
-Som administratör kan du effektivisera användarsupporten genom att lägga till anpassad kontaktinformation i hjälpfönstret. Användare i behov av hjälp kan komma åt organisationens anpassade supportkontaktinformation med hjälpikonen.
+Som administratör kan du effektivisera användarsupporten genom att lägga till anpassad kontaktinformation i hjälpfönstret. Användare som behöver hjälp kan komma åt organisationens anpassade supportkontaktinformation med hjälpikonen.
   
-Om du vill skapa ett anpassat kontaktkort måste du vara global administratör för Office 365 och ha en licens till Exchange Online. Lär dig hur du kan [tilldela licenser i Office 365 för företag](../manage/assign-licenses-to-users.md).
+Om du vill skapa ett anpassat supportkort måste du vara global administratör för Microsoft 365 och ha en licens till Exchange Online. Lär dig hur du [tilldelar licenser i Microsoft 365 för företag](../manage/assign-licenses-to-users.md).
 
 > [!NOTE]
-> Om du är administratör som söker teknisk support eller faktureringssupport från Microsoft läser du [Kontakta Office 365 för företag-support](../contact-support-for-business-products.md). 
+> Om du är administratör och söker teknisk support eller faktureringssupport från Microsoft läser du [Kontakta Microsoft 365 för företagssupport](../contact-support-for-business-products.md). 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Skapa ett anpassat kontaktkort för supporten i administrationscentret
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. Gå till fliken Inställningar **i** > administrationscentret**och** välj **information om hjälpskrivbordsinformation.**
+1. Gå till fliken Inställningar i **administrationscentret** > **och** välj **informationsfliken Hjälpskrivbord.**
     
-2. Välj Paneler för **anpassad startprogram**på fliken **Organisationsprofil** .
+2. På fliken **Organisationsprofil** väljer du **Anpassade startpaneler**för startprogram .
   
-3. Aktivera **kontaktinformationen för lägg till i supportavdelningen**.
+3. Aktivera **kontaktinformationen för Lägg till supportavdelningen.**
     
 4. Som administratör bestämmer vilken typ av kontaktinformation som du vill ge användarna. Du måste ange åtminstone en rubrik och en typ av kontaktinformation. Välj vad du vill visa och fyll i informationen.
     
-  - **Titel**: Ange en titel som tydligt anger din avsikt, som "Contoso help desk" eller "Behöver hjälp?"
+  - **Titel**: Ange en rubrik som tydligt anger din avsikt, till exempel "Contoso help desk" eller "Behöver du hjälp?"
     
-  - **Telefon:** Ange telefonnumret användare bör ringa för att prata med en teknisk support agent på din organisation. Se till att ta med eventuella lands- och riktnummer.
+  - **Telefon**: Ange det telefonnummer som användarna ska ringa för att prata med en teknisk supportagent i organisationen. Se till att ta med eventuella lands- och riktnummer.
     
-  - **E-post:** Ange e-postadressen för supportavdelningen.
+  - **E-post:** Ange e-postadressen för din supportavdelning.
     
-  - **URL:** Om supportavdelningen har en intern eller offentlig webbplats med användbara verktyg och resurser anger du dess namn och tillhörande URL.
+  - **URL**: Om supportavdelningen har en intern eller offentlig webbplats med användbara verktyg och resurser anger du dess namn och tillhörande WEBBADRESS.
     
 5. Välj **Spara ändringar**.
     

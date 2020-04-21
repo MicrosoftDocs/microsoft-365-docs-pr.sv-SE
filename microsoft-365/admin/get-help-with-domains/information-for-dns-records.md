@@ -1,5 +1,5 @@
 ---
-title: Samla den information du behöver för att skapa DNS-poster i Office 365
+title: Samla in den information du behöver för att skapa DNS-poster
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Lär dig att hitta de värden/den information du behöver för att skapa DNS-poster för Office 365. '
+description: 'Lär dig att hitta de värden/den information du behöver för att skapa DNS-poster för Microsoft 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540885"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628452"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Samla den information du behöver för att skapa DNS-poster i Office 365
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Samla in den information du behöver för att skapa DNS-poster
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540885"
     
 5. Gå till [Skapa DNS-poster hos alla DNS-värdleverantörer](create-dns-records-at-any-dns-hosting-provider.md)och välj din DNS-värd i listan över registratorer för att se steg-för-steg-instruktioner.
     
-6. Följ stegen för att skapa TXT-posten (eller MX-posten) hos din DNS-värd och verifiera sedan domänen i Office 365.
+6. Följ stegen för att skapa TXT-posten (eller MX-posten) på DNS-värden och verifiera sedan domänen i Microsoft 365.
 
-7. Ta bort TXT-posten (eller MX-posten) från DNS-värden när domänen har verifierats i Office 365.
+7. Ta bort TXT-posten (eller MX-posten) från DNS-värden när domänen har verifierats i Microsoft 365.
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Steg 2: Hitta MX-postvärdet för e-post med mera
 

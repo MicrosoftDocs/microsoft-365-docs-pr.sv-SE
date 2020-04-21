@@ -1,5 +1,5 @@
 ---
-title: Hitta en Office 365-partner eller återförsäljare
+title: Hitta din partner eller återförsäljare
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,23 +21,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Läs om hur du hittar en ny Office 365-partner eller får kontaktinformation för en partner som du har arbetat med tidigare. '
-ms.openlocfilehash: 86c61b6217a1be6106334cb1378a23d8cbd8c2b8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Läs om hur du hittar en ny Microsoft 365-partner eller får kontaktinformation för en partner som du har arbetat med tidigare. '
+ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628190"
 ---
-# <a name="find-your-office-365-partner-or-reseller"></a>Hitta en Office 365-partner eller återförsäljare
+# <a name="find-your-partner-or-reseller"></a>Hitta din partner eller återförsäljare
 
-Som administratör kan du arbeta med en partner för att köpa, aktivera och förnya Office 365-prenumerationer via ett Microsoft Open-volymlicensieringsprogram. 
+Som administratör kan du arbeta med en partner för att köpa, aktivera och förnya Microsoft 365-prenumerationer via ett Microsoft Open-volymlicensieringsprogram. 
   
  **Är du osäker på om det öppna volymlicensieringsprogrammet (Open) passar dig?** Läs mer i [Översikt av Microsofts Open-program](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## <a name="find-a-new-partner-or-reseller"></a>Hitta en ny partner eller återförsäljare
 
-Om du är redo att köpa eller förnya Office 365 via Open Volume Licensing, eller om du bara vill ha mer information om hur du arbetar med en partner, väljer du ett alternativ nedan. 
+Om du är redo att köpa eller förnya Microsoft 365 via Open Volume Licensing, eller om du helt enkelt vill ha mer information om hur du arbetar med en partner, väljer du ett alternativ nedan. 
   
 - [Söka efter en partner med Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     

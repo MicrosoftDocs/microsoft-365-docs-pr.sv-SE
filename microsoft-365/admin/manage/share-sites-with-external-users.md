@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Läs om hur du delar webbplatser och filer med personer utanför organisationen. '
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42811954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628034"
 ---
 # <a name="share-sites-and-files-externally"></a>Dela webbplatser och filer externt
 
@@ -54,7 +54,7 @@ Svaren på dessa frågor hjälper dig att planera en strategi för innehållsdel
 |Dela ett dokument, men kräver inte autentisering.  <br/> |Dela en länk till ett dokument som inte innehåller känslig eller konfidentiell information med personer utanför organisationen så att de kan visa eller uppdatera det med feedback. Dessa personer behöver inte tillgång till innehåll på webbplatsen.  <br/> |
    
 > [!IMPORTANT]
-> När du inaktiverar extern delning har personer utanför organisationen som för närvarande har åtkomst inte längre åtkomst. Om du senare aktiverar extern delning igen återställs åtkomsten för dessa personer. Om du vill hindra en användare från att komma åt ett delat innehåll [tar du bort dem från Office 365-gruppen,](/office365/admin/create-groups/add-or-remove-members-from-groups)tar bort deras behörigheter från webbplatsen eller slutar dela filen eller mappen med [dem](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> När du inaktiverar extern delning har personer utanför organisationen som för närvarande har åtkomst inte längre åtkomst. Om du senare aktiverar extern delning igen återställs åtkomsten för dessa personer. Om du vill förhindra att en användare kommer åt ett delat innehåll [tar du bort dem från Microsoft 365-gruppen,](/office365/admin/create-groups/add-or-remove-members-from-groups)tar bort deras behörigheter från webbplatsen eller slutar dela filen eller mappen med [dem](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Aktivera extern delning på organisationsnivå
 

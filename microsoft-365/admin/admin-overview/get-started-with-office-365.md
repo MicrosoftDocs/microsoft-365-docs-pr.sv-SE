@@ -1,5 +1,5 @@
 ---
-title: Komma igång med Office 365 för företag
+title: Komma igång med Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: Lär dig hur man konfigurerar och använder Office 365 på en dator, telefon eller surfplatta.
-ms.openlocfilehash: 695bf6ef3acd6d9f9c4b1a5252172258b0af5a2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Lär dig hur du konfigurerar och använder Microsoft 365 på datorn, telefonen och surfplattan.
+ms.openlocfilehash: fd52b12ab008e2c8d7b7a4476ae2212e01e1bb10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807184"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623924"
 ---
 # <a name="get-started"></a>Komma igång
 
-Din organisation fick nyligen Office 365, och nu måste du använda den så att du kan börja läsa e-post, dela dokument med mera. Lär dig hur man konfigurerar och använder Office 365 på en dator, telefon eller surfplatta.
+Din organisation fick nyligen Microsoft 365, och nu måste du använda den så att du kan börja läsa e-post, dela dokument med mera. Lär dig hur du konfigurerar och använder Microsoft 365 på datorn, telefonen och surfplattan.
   
 ::: moniker range="o365-worldwide"
 
@@ -66,5 +66,5 @@ Här är några resurser som hjälper dig att komma igång.
     
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Konfigurera Office 365 för företag - hjälp för administratörer](../setup/setup.md)
+[Konfigurera Microsoft 365 för företag – hjälp om administratörer](../setup/setup.md)
 

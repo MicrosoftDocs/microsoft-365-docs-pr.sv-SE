@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8b5cb7d8d8b16fea1c1bef44e477dfd43a79a3d8
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081332"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625272"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs de vanliga rekommenderade principerna för att skydda åtkomsten till molntjänster, inklusive lokala program som publiceras med Azure AD Application Proxy. 
@@ -67,9 +67,9 @@ Följande diagram är ett exempel på användartilldelning och undantag.
 
 I bilden tilldelas "Topphemligt projekt X-team" en princip för villkorlig åtkomst som kräver MFA *alltid*. Var omdömesgill när du tillämpar högre skyddsnivåer för användare. Medlemmar i den här projektgruppen måste tillhandahålla två former av autentisering varje gång de loggar in, även om de inte visar starkt reglerat innehåll.  
 
-Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Office 365-grupper. Detta är särskilt viktigt för distributionen av Azure Information Protection (AIP) när du skyddar dokument i SharePoint Online.
+Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Detta är särskilt viktigt för distributionen av Azure Information Protection (AIP) när du skyddar dokument i SharePoint Online.
 
-![Skärminsamling för att skapa Office 365-grupper](../media/identity-device-AAD-groups.png)
+![Skärminspelning för att skapa Microsoft 365-grupper](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Kräv MFA baserat på inloggningsrisk
@@ -95,7 +95,7 @@ Så här skapar du en ny princip för villkorlig åtkomst:
 |:---|:---------|:-----|:----|
 |Användare och grupper|Inkluderar|Välj användare och grupper – Välj specifik säkerhetsgrupp som innehåller riktade användare|Börja med säkerhetsgrupp inklusive pilotanvändare|
 ||Utesluta|Säkerhetsgrupp för undantag. tjänstkonton (appidentiteter)|Medlemskapet ändras vid behov tillfälligt|
-|Molnappar|Inkluderar|Markera de appar som du vill att den här regeln ska gälla för. Välj till exempel Office 365 Exchange Online||
+|Molnappar|Inkluderar|Markera de appar som du vill att den här regeln ska gälla för. Välj till exempel Exchange Online||
 |Villkor|Konfigurerad|Ja|Konfigurera specifik för din miljö och dina behov|
 |Inanmälningsrisk|Risknivå||Se vägledningen i följande tabell|
 
@@ -142,7 +142,7 @@ I följande tabeller beskrivs de principinställningar för villkorlig åtkomst 
 |:---|:---------|:-----|:----|
 |Användare och grupper|Inkluderar|Välj användare och grupper – Välj specifik säkerhetsgrupp som innehåller riktade användare|Börja med säkerhetsgrupp inklusive pilotanvändare|
 ||Utesluta|Säkerhetsgrupp för undantag. tjänstkonton (appidentiteter)|Medlemskap ändrat vid behov tillfälligt|
-|Molnappar|Inkluderar|Markera de appar som du vill att den här regeln ska gälla för. Välj till exempel Office 365 Exchange Online||
+|Molnappar|Inkluderar|Markera de appar som du vill att den här regeln ska gälla för. Välj till exempel Exchange Online||
 |Villkor|Konfigurerad|Ja|Konfigurera klientappar|
 |Klientappar|Konfigurerad|Ja|Mobilappar och skrivbordsklienter, Andra klienter (välj båda)|
 
@@ -215,7 +215,7 @@ Om du vill tillämpa appskyddsprinciperna som du har tillämpat i Intune måste 
 
 Tillämpa APP-skyddsprinciper kräver en uppsättning principer som beskrivs i i [Kräv appskyddsprincip för molnappåtkomst med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Dessa principer ingår alla i den här rekommenderade uppsättningen konfigurationsprinciper för identitet och åtkomst.
 
-Om du vill skapa regeln för villkorlig åtkomst som kräver godkända appar och APP-skydd följer du "Steg 1: Konfigurera en Azure AD-princip för villkorlig åtkomst för Office 365" i [Scenario 1: Office 365-appar kräver godkända appar med appskyddsprinciper](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), vilket tillåter Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
+Om du vill skapa regeln för villkorlig åtkomst som kräver godkända appar och APP-skydd följer du "Steg 1: Konfigurera en Azure AD-princip för villkorlig åtkomst för Microsoft 365" i [Scenario 1: Microsoft 365-appar kräver godkända appar med appskyddsprinciper](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), vilket tillåter Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
 
    > [!NOTE]
    > Den här principen säkerställer att mobila användare kan komma åt alla Office-slutpunkter med hjälp av tillämpliga appar.
@@ -229,7 +229,7 @@ Slutligen säkerställer blockering av äldre autentisering för andra klientapp
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
@@ -298,7 +298,7 @@ Följande inställningar rekommenderas för Windows 10.
 ||Microsoft Defender Antimalware signatur uppdaterad|Kräver||
 ||Realtidsskydd|Kräver|Stöds endast för Windows 10-skrivbordet|
 
-**Microsoft Defender ATP**
+**Microsoft Defender Avancerat skydd.**
 
 |Type (Typ)|Egenskaper|Värden|Anteckningar|
 |:---|:---------|:-----|:----|
@@ -322,7 +322,7 @@ Så här kräver du kompatibla datorer:
 
 6. Välj **Molnappar**.
 
-7. Välj **Välj appar**, välj önskade appar i listan **Molnappar.** Välj till exempel Office 365 Exchange Online. Välj **Välj** och **gjort**.
+7. Välj **Välj appar**, välj önskade appar i listan **Molnappar.** Välj till exempel Exchange Online. Välj **Välj** och **gjort**.
 
 8. Om du vill kräva kompatibla datorer, men inte kompatibla telefoner och surfplattor, väljer du **Villkor** och **Enhetsplattformar**. Välj **Välj enhetsplattformar** och välj **Windows** och **macOS**.
 
@@ -350,7 +350,7 @@ Så här kräver du efterlevnad för alla enheter:
 
 6. Välj **Molnappar**.
 
-7. Välj **Välj appar**, välj önskade appar i listan **Molnappar.** Välj till exempel Office 365 Exchange Online. Välj **Välj** och **gjort**.
+7. Välj **Välj appar**, välj önskade appar i listan **Molnappar.** Välj till exempel Exchange Online. Välj **Välj** och **gjort**.
 
 8. Välj **Bevilja** i avsnittet **Access-kontroller.**
 

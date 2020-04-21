@@ -1,5 +1,5 @@
 ---
-title: Insikter om e-postflöde i Security & Compliance Center
+title: E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,48 +11,48 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan lära sig mer om instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081442"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630473"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Insikter om e-postflöde i Security & Compliance Center
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
-Administratörer kan använda instrumentpanelen för e-postflödet i Security & Compliance Center för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem som rör e-postflödet i office 365-organisationen.
+Administratörer kan använda instrumentpanelen för e-postflödet i Security & Compliance Center för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem som rör e-postflödet i organisationen.
 
 De insikter, rapporter och widgetar som är tillgängliga i instrumentpanelen för e-postflödet är:
 
-- [Kartasrapport för e-postflöde](mfi-mail-flow-map-report.md)
+- [Rapport om e-postflödeskarta](mfi-mail-flow-map-report.md)
 
 - [Statusinsikt för domänmeddelandeflöde](mfi-domain-mail-flow-status-insight.md)
 
-- [SMTP-autentiseringsklienter rapport](mfi-smtp-auth-clients-report.md)
+- [Rapporten SMTP Auth-klienter](mfi-smtp-auth-clients-report.md)
 
 - [Statistik över avsändaredomän](mfi-sender-domain-insight.md)
 
-- [Rapport om utebliven leverans](mfi-non-delivery-report.md)
+- [Rapport om misslyckad leverans](mfi-non-delivery-report.md)
 
-- [Domänrapport som inte har godkänts](mfi-non-accepted-domain-report.md)
+- [Rapport om icke godkänd domän](mfi-non-accepted-domain-report.md)
 
 - [Utgående och inkommande e-postflöde](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Kövarningar och köer](mfi-queue-alerts-and-queues.md)
+- [Köaviseringar och köer](mfi-queue-alerts-and-queues.md)
 
-- [Rapport över vidarebefordrade meddelanden automatiskt](mfi-auto-forwarded-messages-report.md)
+- [Rapporten Automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md)
 
 - [Insikt om e-postloop](mfi-mail-loop-insight.md)
 
-- [Insikt om långsamma regler för e-postflöde](mfi-slow-mail-flow-rules-insight.md)
+- [Insikt om långsamma e-postflödesregler](mfi-slow-mail-flow-rules-insight.md)
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Behörigheter som krävs för att visa instrumentpanelen för e-postflödet
 
 Instrumentpanelen för e-postflödet är tillgänglig för:
 
-- Medlemmar i **den globala administratörsrollen för Office 365.**
+- Medlemmar i den **globala administratörsrollen.**
 
-- Medlemmar i **office 365 Exchange-administratörsrollen.**
+- Medlemmar i **Exchange-administratörsrollen.**
 
 - Medlemmar i **administratörsrollen E-postflöde** i Security & Compliance Center. Om den här rollen uttryckligen tilldelas en användare som inte är medlem i den globala administratören eller Exchange-administratörsrollerna:
 
@@ -60,11 +60,11 @@ Instrumentpanelen för e-postflödet är tillgänglig för:
 
   - Användaren har endast skrivskyddad behörighet till instrumentpanelen för e-postflödet.
 
-  - Användaren har inte åtkomst till administrationsportalen för Office 365.
+  - Användaren har inte tillgång till Microsoft 365-administrationscentret.
 
-Mer information om den globala administratörsrollen för Office 365 finns i [Om office 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Mer information om den globala administratörsrollen finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Var du hittar instrumentpanelen för e-postflödet
 
@@ -72,4 +72,4 @@ Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till anvä
 
 2. Expandera **e-postflödet** och välj sedan **Instrumentpanel**.
 
-   ![Instrumentpanelen för e-postflödet i Office 365 Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+   ![Instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center](../../media/mail-flow-dashboard-v2.png)

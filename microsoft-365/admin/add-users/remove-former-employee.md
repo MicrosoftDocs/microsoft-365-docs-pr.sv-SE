@@ -1,5 +1,5 @@
 ---
-title: Ta bort en tidigare anställd från Office 365
+title: Ta bort en tidigare anställd
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,15 +23,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
-description: 'Följ den här checklistan om du vill ta bort en medarbetare från Office 365 och säkra data. '
-ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 'Följ den här checklistan om du vill ta bort en anställd från Microsoft 365 och säkra data. '
+ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813007"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617128"
 ---
-# <a name="remove-a-former-employee-from-office-365"></a>Ta bort en tidigare anställd från Office 365
+# <a name="remove-a-former-employee"></a>Ta bort en tidigare anställd
   
 ## <a name="sign-out-now"></a>Logga ut nu!
 
@@ -83,7 +83,7 @@ Så här tar du bort en medarbetare:
 ::: moniker-end
 
     
-Inom en timme - eller efter att de lämnar den aktuella Office 365-sidan de är på - uppmanas de att logga in igen. (En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som finns kvar på den token och om de navigerar från sin nuvarande webbsida.)
+Inom en timme - eller efter att de lämnar den aktuella Microsoft 365-sidan de är på - kommer de att uppmanas att logga in igen. (En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som finns kvar på den token och om de navigerar från sin nuvarande webbsida.)
   
  **VARNING**: Om användaren är inne på Outlook på webben och bara klickar runt i postlådan, kanske han/hon inte kastas ut direkt. Så fort de väljer en annan panel, till exempel OneDrive, eller uppdaterar webbläsaren initieras ut logga ut. 
   
@@ -94,7 +94,7 @@ Mer information om hur lång tid det tar att avsluta en persons e-post finns i [
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>Översikt över alla steg för att ta bort en anställd och säkra data
 <a name="bkmk_now"> </a>
 
-En fråga vi ofta får är "Vad ska jag göra för att skydda data när en anställd lämnar organisationen?" Den här artikeln förklarar hur du kan blockera åtkomst till Office 365 och de steg du bör vidta för att skydda dina data.
+En fråga vi ofta får är: "Vad ska jag göra för att skydda data när en anställd lämnar organisationen?" I den här artikeln beskrivs hur du blockerar åtkomsten till Microsoft 365 och de åtgärder du bör vidta för att skydda dina data.
   
 > [!NOTE]
 > Om du är global administratör kan du ta bort medarbetaren, vidarebefordra deras e-post, välja vad de ska göra med deras OneDrive-innehåll med hjälp av den nya guidade upplevelsen. Mer information finns i [Global admin: Ta bort en användare](remove-former-employee.md). Vi rekommenderar dock att du slutför alla ytterligare steg som anges här för att säkerställa att medarbetaren inte har åtkomst till företagets data. 
@@ -107,10 +107,10 @@ Här följer en snabb översikt: Varje steg beskrivs i detalj i den här artikel
 |1. [Spara innehållet i en tidigare anställds postlåda](#save-the-contents-of-a-former-employees-mailbox) <br/> |Det är användbart för den som ska ta över den anställdas arbete, samt i händelse av tvist.  <br/> |
 |2. [Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Då kan du hålla den före detta anställdas e-postadress aktiv. Om du har kunder eller partners som fortfarande skickar e-post till den före detta anställdas e-postadress hamnar den hos den person som har tagit över arbetet.  <br/> |
 |3. [Rensa och blockera en tidigare anställds mobil enhet](#wipe-and-block-a-former-employees-mobile-device) <br/> |Tar bort affärsdata från telefonen eller surfplattan.  <br/> |
-|4. [Spärra en tidigare anställds åtkomst till Office 365-data](#block-a-former-employees-access-to-office-365-data)<br/> |Det hindrar personen från att komma åt sin gamla Office 365-postlåda och data.  <br/><br/> **Tips:** När du blockerar en användares åtkomst betalar du fortfarande för deras licens. Du måste ta bort licensen från prenumerationen för att slippa betala för den (steg 5).           |
+|4. [Blockera en tidigare anställds åtkomst till Microsoft 365-data](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Det hindrar personen från att komma åt sin gamla Microsoft 365-postlåda och data.  <br/><br/> **Tips:** När du blockerar en användares åtkomst betalar du fortfarande för deras licens. Du måste ta bort licensen från prenumerationen för att slippa betala för den (steg 5).           |
 |5. [Flytta medarbetarens OneDrive-innehåll](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Om du bara tar bort en användares licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/><br/> Innan du tar bort kontot bör du flytta innehållet på deras OneDrive till en annan plats som är enkel att komma åt. Efter att du tagit bort en anställds konto bevaras innehållet på deras OneDrive under **30** dagar. Under de 30 dagarna kan du dock återställa användarens konto och få åtkomst till deras OneDrive-innehåll. Om du återskapar användarens konto kommer OneDrive-innehållet att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
 |5a. Vad kan jag göra om personen använt sin egen dator för att komma åt OneDrive och SharePoint?  <br/> |Om en personlig dator använts för att ladda ned filer från OneDrive och SharePoint, i stället för en företagsdator, går det inte att rensa dessa filer.  <br/><br/> Åtkomst kvarstår till alla filer som har synkroniserats till datorn.  <br/> |
-|6. [Ta bort och radera Office 365-licensen från en tidigare anställd](#remove-and-delete-the-office-365-license-from-a-former-employee)<br/> |När du tar bort en licens kan du tilldela någon annan den. Du kan också radera licensen så att du inte behöver betala för den förrän du anställer någon ny.  <br/><br/> När du tar bort eller raderar en licens sparas användarens gamla e-post, kontakter och kalender i **30 dagar**, och tas sedan bort permanent. Om du tar bort eller raderar en licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
+|6. [Ta bort och ta bort Microsoft 365-licensen från en tidigare anställd](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |När du tar bort en licens kan du tilldela någon annan den. Du kan också radera licensen så att du inte behöver betala för den förrän du anställer någon ny.  <br/><br/> När du tar bort eller raderar en licens sparas användarens gamla e-post, kontakter och kalender i **30 dagar**, och tas sedan bort permanent. Om du tar bort eller raderar en licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
 |7. [Ta bort en tidigare anställds användarkonto](#delete-a-former-employees-user-account)<br/> |Då tas kontot bort från administrationscentret. Hjälper dig att hålla ordning och reda.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Spara innehållet i en tidigare anställds postlåda
@@ -217,11 +217,11 @@ Om den tidigare anställde hade en företagstelefon kan du använda Administrati
     
     **Tips**: Kontrollera att du tar bort eller inaktiverar användaren från din lokala Blackberry Enterprise Service. Du bör dessutom inaktivera alla Blackberry-enheter för användaren. Läs i Blackberry Business Cloud Services Administration Guide om du behöver specifika anvisningar om hur du inaktiverar användaren. 
     
-## <a name="block-a-former-employees-access-to-office-365-data"></a>Spärra en tidigare anställds åtkomst till Office 365-data
+## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockera en tidigare anställds åtkomst till Microsoft 365-data
 <a name="bkmk_block"> </a>
 
  > [!IMPORTANT] 
- > Det kan ta upp till 24 timmar att blockera ett konto. Om du omedelbart behöver förhindra att en användare har inloggning bör du [återställa lösenordet](reset-passwords.md) och sedan initiera en engångshändelse som loggar ut dem från Office 365-sessioner på alla enheter. Se [Logga ut nu!](#sign-out-now)
+ > Det kan ta upp till 24 timmar att blockera ett konto. Om du omedelbart behöver förhindra att en användare har inloggning bör du [återställa lösenordet](reset-passwords.md) och sedan initiera en engångshändelse som loggar ut dem från Microsoft 365-sessioner på alla enheter. Se [Logga ut nu!](#sign-out-now)
  
 
 ::: moniker range="o365-worldwide"
@@ -260,7 +260,7 @@ Om den tidigare anställde hade en företagstelefon kan du använda Administrati
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Blockera en tidigare anställds åtkomst till e-post (Exchange Online)
 <a name="bkmk_block_email"> </a>
 
-Om du har Office 365-e-post som en del av din Office 365-prenumeration måste du logga in på Administrationscenter för Exchange och följa de här stegen för att blockera den tidigare anställde från att komma åt sin e-post.
+Om du har e-post som en del av din Microsoft 365-prenumeration måste du logga in på administrationscentret för Exchange för att följa dessa steg för att blockera din tidigare medarbetare från att komma åt deras e-post.
   
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
@@ -271,12 +271,12 @@ Om du har Office 365-e-post som en del av din Office 365-prenumeration måste du
     
 4. Under **E-postanslutning**väljer du **Inaktivera** och svarar **Ja** när du uppmanas att göra det. 
     
-## <a name="remove-and-delete-the-office-365-license-from-a-former-employee"></a>Ta bort och radera Office 365-licensen från en tidigare anställd
+## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Ta bort och ta bort Microsoft 365-licensen från en tidigare anställd
 <a name="bkmk_remove"> </a>
 
-När någon lämnar organisationen måste du ta bort hans eller hennes Office 365-licens och radera den så att du inte fortsätter betala för den. Om du väljer att inte radera licensen från prenumerationen kan du tilldela den till en annan användare.
+Så du fortsätter inte att betala för en licens efter att någon har lämnat organisationen, du måste ta bort deras Microsoft 365-licens och sedan ta bort den från din prenumeration. Om du väljer att inte radera licensen från prenumerationen kan du tilldela den till en annan användare.
   
-När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [komma åt](get-access-to-and-back-up-a-former-user-s-data.md) alla data, eller [återställa](restore-user.md) kontot om användaren kommer tillbaka. Efter 30 dagar tas alla användarens data (utom dokument som lagras på SharePoint Online) permanent bort från Office 365 och kan inte längre återställas. 
+När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [komma åt](get-access-to-and-back-up-a-former-user-s-data.md) alla data, eller [återställa](restore-user.md) kontot om användaren kommer tillbaka. Efter 30 dagar raderas alla användares data (förutom dokument som lagras på SharePoint Online) permanent från Microsoft 365 och kan inte återställas. 
 
 ::: moniker range="o365-worldwide"
 
@@ -339,7 +339,7 @@ När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [kom
 
 När du [lägger till](add-users.md) en annan person i ditt företag uppmanas du att köpa en licens samtidigt, med bara ett steg!
     
-Läs mer om hur du hanterar användarlicenser för Office 365 för företag i artikeln om att [tilldela licenser till användare i Office 365 för företag](../manage/assign-licenses-to-users.md) och artikeln om att [ta bort licenser från användare i Office 365 för företag](../manage/remove-licenses-from-users.md).
+Mer information om hur du hanterar användarlicenser för Microsoft 365 för företag finns [i Tilldela licenser till användare i Microsoft 365 för företag](../manage/assign-licenses-to-users.md)och Ta bort licenser från användare i Microsoft [365 för företag](../manage/remove-licenses-from-users.md).
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Så här påverkas Skype för företag när en anställds konto tas bort
 <a name="bkmk_remove"> </a>
@@ -392,7 +392,7 @@ När du tar bort en användare blir dennes konto inaktivt i ca 30 dagar. Du har 
   
 ### <a name="does-your-organization-use-active-directory"></a>Använder ni Active Directory i organisationen?
 
-Om din organisation synkroniserar användarkonton till Office 365 från en lokal Active Directory-miljö, måste du ta bort och återställa dessa användarkonton i din lokala Active Directory-tjänst. Du kan inte ta bort eller återställa dem i Office 365.
+Om din organisation synkroniserar användarkonton till Microsoft 365 från en lokal Active Directory-miljö måste du ta bort och återställa dessa användarkonton i den lokala Active Directory-tjänsten. Du kan inte ta bort eller återställa dem i Office 365.
   
 Anvisningar finns i artikeln: [Ta bort ett användarkonto](https://go.microsoft.com/fwlink/?linkid=841808).
   

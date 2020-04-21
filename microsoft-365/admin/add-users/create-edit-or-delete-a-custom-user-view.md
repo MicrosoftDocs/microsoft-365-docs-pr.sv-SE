@@ -1,5 +1,5 @@
 ---
-title: Skapa, redigera eller ta bort en anpassad användarvy i Office 365
+title: Skapa, redigera eller ta bort en anpassad användarvy
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Lär dig att använda filter för att skapa, redigera eller ta bort anpassad användarvy i Office 365.
-ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Lär dig att använda filter för att skapa, redigera eller ta bort anpassad användarvy i Microsoft 365.
+ms.openlocfilehash: 94a9ad7de8bc8e0692d97fda56200cf668b1e5f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047065"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617266"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Skapa, redigera eller ta bort en anpassad användarvy i Office 365
 
@@ -63,7 +63,7 @@ När du skapar, redigerar eller tar bort en anpassad användarvy visas ändringa
 Några saker att notera om standardvyer: 
 
 - Vissa standardvyer visar en osorterad lista om det finns fler än 2 000 användare i listan. Om du vill hitta specifika användare i den här listan använder du sökrutan. 
-- Om du inte köpte Office 365 från Microsoft visas inte **faktureringsadministratörer** i standardvylistan. Mer information finns i [Tilldela administratörsroller](assign-admin-roles.md). 
+- Om du inte köpte Microsoft 365 från Microsoft visas inte **faktureringsadministratörer** i standardvylistan. Mer information finns i [Tilldela administratörsroller](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Välj filter för din anpassade användarvy
 
@@ -88,12 +88,12 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
     
 - **Olicensierade användare** Markera den här rutan om du vill söka efter alla användare som inte har tilldelats en licens. Resultaten för den här vyn kan också omfatta användare som har en Exchange-postlåda men inte har någon licens. Om du vill spåra dessa användare specifikt använder du filtret **Olicensierade användare med Exchange-postlådor eller arkiv**. Resultaten för den här vyn kan också omfatta användare som har ett Exchange-arkiv, men som inte har någon licens.
     
-- **Olicensierade användare med Exchange-postlådor eller arkiv** Markera den här rutan om du vill visa användarkonton som har skapats i Exchange Online och har en Exchange-postlåda, men som inte har tilldelats en Office 365-licens. Resultatet av det här filtret omfattar användare som har eller har tilldelats ett Exchange-arkiv. 
+- **Olicensierade användare med Exchange-postlådor eller arkiv** Markera den här rutan om du vill visa användarkonton som har skapats i Exchange Online och har en Exchange-postlåda, men som inte har tilldelats en Microsoft 365-licens. Resultatet av det här filtret omfattar användare som har eller har tilldelats ett Exchange-arkiv. 
 
 > [!NOTE]
 > Filtret **Olicensierade användare med Exchange-postlådor** fungerar när:
 1. Postlådan har nyligen konverterats från **delad** till **användare** och den har ingen licens.
-2. Postlådan har nyligen migrerats till Office 365 men en licens har inte tilldelats.
+2. Postlådan har nyligen migrerats till Microsoft 365 men en licens har inte tilldelats.
 3. Postlådan har skapats med PowerShell och en licens har inte tilldelats.
 4. En ny postlåda som har skapats lokalt med en Cmdlet New-RemoteMailbox etableras för användaren.
     

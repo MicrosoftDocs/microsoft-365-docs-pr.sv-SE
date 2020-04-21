@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: Förstå vad en domän är och hur du kan köpa en domän eller använda ditt företags standarddomän.
 ms.custom: okr_smb
-ms.openlocfilehash: 65eae949ccc29e92821afc75e90781f7827442dd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 1e92247deaabf292fa82024d6654aefda7a73f6e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209730"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628262"
 ---
 # <a name="what-is-a-domain"></a>Vad är en domän?
 
@@ -33,17 +33,17 @@ ms.locfileid: "43209730"
   
 En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det sker vanligtvis i form av organisationens namn och ett standard-internetsuffix, till exempel *ditt företag.<span> eller* *statsuniversitet.<span> edu*. 
   
-Använda en anpassad domän som *rob@contoso.<span> med* Office 365 kan du skapa trovärdighet och erkännande för ditt varumärke. 
+Använda en anpassad domän som *rob@contoso.<span> com* med Microsoft 365 kan bidra till att bygga trovärdighet och erkännande för ditt varumärke. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Välj det alternativ som passar bäst för dig:
 
  **Köp en ny domän:**
   
-Använd Office 365 för att köpa en ny domän – vi konfigurerar allt. [Lära sig mer.](buy-a-domain-name.md)
+Använd Microsoft 365 för att köpa en ny domän - vi ställer in allt. [Lära sig mer.](buy-a-domain-name.md)
   
  **Använd en domän som du redan äger:**
   
-Om du redan äger en domän som *you@yourcompany.<span> com* kan du lägga till den och börja använda OneDrive- och Office-appar direkt. Det tar några minuter att konfigurera e-post och Skype för företag. 
+Om du redan äger en domän som *you@yourcompany.<span> com* kan du lägga till den och börja använda OneDrive och Microsoft-appar direkt. Det tar några minuter att konfigurera e-post och Skype för företag. 
   
 > [!TIP]
 > Vet du inte var din domän är registrerad? - [Få hjälp att hitta din domänregistrator](find-your-domain-registrar.md)
@@ -54,6 +54,6 @@ Du kan använda en standarddomän som *dittföretag.onmicrosoft.<span> com* att 
   
 ## <a name="feeling-stuck"></a>Har du kört fast?
 
-Ring supporten för Office 365 - [Få hjälp med att konfigurera en domän med Office 365](../contact-support-for-business-products.md)
+Ring Microsoft Support - [Få hjälp med att konfigurera en domän](../contact-support-for-business-products.md)
   
 

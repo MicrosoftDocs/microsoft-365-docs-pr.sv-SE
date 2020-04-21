@@ -1,5 +1,5 @@
 ---
-title: Skicka lösenordet för en användare igen i Office 365 – hjälp för administratörer
+title: Skicka en användares lösenord igen – hjälp om administratörer
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 'Läs om hur du återställer lösenord och skickar ett e-postmeddelande till en ny Office 365-användare. '
-ms.openlocfilehash: 64b3b4c805cfc81b10050e2e2e5c74290c68d760
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Läs om hur du återställer lösenord och skickar ett e-postmeddelande till en ny Microsoft 365-användare. '
+ms.openlocfilehash: fcf5fb53c2468930e68929a9bf38b634d7e67404
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807044"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624118"
 ---
-# <a name="resend-a-users-password-in-office-365---admin-help"></a>Skicka lösenordet för en användare igen i Office 365 – hjälp för administratörer
+# <a name="resend-a-users-password---admin-help"></a>Skicka en användares lösenord igen – hjälp om administratörer
 
 I den här artikeln beskrivs hur du skickar e-postmeddelandet till en ny användare i Office 365 igen. Du gör detta genom att återställa användarens lösenord.
   
@@ -57,4 +57,3 @@ Du måste vara [administratör eller lösenordsadministratör](about-admin-roles
 4. Ange en e-postadress som användaren kan komma åt så att de får det nya lösenordet och följ upp med dem för att se till att de fick det.
     
   
-

@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
-description: Uppdatera organisationens kontaktinformation och välj vilken typ av Office 365-produktrelaterad kommunikation du vill ta emot.
-ms.openlocfilehash: 435848f1a5d594dc5cf2f1658ac4f6f89dc7af44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Uppdatera organisationens kontaktinformation och välj den produktrelaterad kommunikation från Microsoft 365 som du vill ta emot.
+ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809770"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628214"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Ändra dina kontaktinställningar för kommunikation från Microsoft
 
-Använd sidan **Kontaktinställningar** för att uppdatera din organisations kontaktinformation och välj den typ av Office 365-produktrelaterad kommunikation som du vill ta emot.
+Använd sidan **Kontaktinställningar** för att uppdatera organisationens kontaktinformation och välj den produktrelaterad kommunikation från Microsoft 365 som du vill ta emot.
   
-Information om hur du ändrar administratörens mobiltelefonnummer och e-postadress finns i [Uppdatera administratörstelefonnumret och e-postadressen i Office 365](update-phone-number-and-email-address.md).
+Läs [Uppdatera ditt administratörstelefonnummer och e-postadress i Microsoft 365](update-phone-number-and-email-address.md) för information om hur du ändrar ditt telefonnummer och din e-postadress för administratörer.
   
 Information om hur du ändrar företagets profilinformation, till exempel organisationens namn och adress, företagstelefonnummer och teknisk kontaktinformation finns i [Ändra adress, e-postadress och annan information för organisationen](change-address-contact-and-more.md).
   
@@ -40,16 +40,14 @@ Information om hur du ändrar företagets profilinformation, till exempel organi
 3. Välj de typer av produktrelaterad kommunikation som du vill ta emot.
 
 4. Ange det företagstelefonnummer, företagsmobilnummer eller den företagsadress du vill bli kontaktad på för produktrelaterad kommunikation.
-    Du kan använda valfri e-postadress, inklusive din e-postadress för Office 365 för att ta emot dessa meddelanden. Om du inte lägger till någon e-postadress för kontaktinställningar används din alternativa e-postadress (på sidan **Personlig information**).
+    Du kan använda vilken e-postadress som helst, inklusive din Microsoft-e-postadress, för att ta emot dessa meddelanden. Om du inte lägger till någon e-postadress för kontaktinställningar används din alternativa e-postadress (på sidan **Personlig information**).
 
 5. Välj **Save**.
   
-För Office 365 Enterprise, Office 365 Business Premium och Office 365 Business Essentials kan användarna automatiskt registrera sig för att ta emot office 365 när du först registrerade dig som administratör för Office 365, beroende på vilket land eller region användarna i organisationen är i organisationen, automatiskt för att ta emot produktrelaterad kommunikation.
-  
-För Office 365 Small Business: Beroende på land och region kan du ha blivit automatiskt registrerad för att ta emot produktrelaterad information.
+För Office 365 Enterprise, Microsoft 365 Business Standard och Microsoft 365 Business Basic kan användarna automatiskt registrera sig för att ta emot produktrelaterad kommunikation när du först registrerade dig som administratör för Microsoft 365, beroende på vilket land eller region användarna i organisationen är.
   
 Svar på faktureringsfrågor finns här:
   
-- [Ändra dina faktureringsadresser för Office 365 för företag](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Ändra dina faktureringsadresser för Microsoft 365 för företag](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto i Office 365 för företag](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto i Microsoft 365 för företag](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

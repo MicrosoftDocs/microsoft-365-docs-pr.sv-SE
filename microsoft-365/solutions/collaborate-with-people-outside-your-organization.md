@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar Microsoft 365 för samarbete med personer utanför organisationen.
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894959"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630731"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Samarbeta med personer utanför organisationen
 
@@ -23,7 +23,7 @@ Funktionerna för extern delning i Microsoft 365 ger personer i organisationen m
 
 Att samarbeta med personer utanför organisationen består av två huvudkomponenter:
 
-- **Aktivera delning** – Konfigurera delningskontrollerna i Azure Active Directory, Teams, Office 365-grupper och SharePoint så att den delningsnivå som du vill ha för din organisation.
+- **Aktivera delning** – Konfigurera delningskontrollerna i Azure Active Directory, Teams, Microsoft 365 Groups och SharePoint så att den delningsnivå som du vill ha för din organisation kan tillåtas.
 - **Aktivera ytterligare säkerhet** – Även om de grundläggande delningsfunktionerna kan konfigureras så att personer utanför organisationen autentiseras, innehåller Microsoft 365 många ytterligare säkerhets- och efterlevnadsfunktioner som hjälper dig att skydda dina data och underhålla dina styrningsprinciper samtidigt som du delar externt.
 
 ## <a name="enable-sharing"></a>Aktivera delning
@@ -46,7 +46,7 @@ När du har aktiverat det scenario som du vill använda för att dela med person
 
 ## <a name="collaborate-with-partner-companies"></a>Samarbeta med partnerföretag
 
-När du arbetar med ett stort projekt som involverar många gäster från en annan organisation, eller om du har en pågående leverantörsrelation där gäster ofta förändras, kan du använda berättigandehantering i Azure Active Directory för att förenkla gästhantering och låta partnerföretaget dela på det ansvaret. Mer information finns i [Skapa ett B2B-extranät med hanterade gäster.](b2b-extranet.md)
+När du arbetar med ett stort projekt som involverar många gäster från en annan organisation, eller om du har en pågående leverantörsrelation där gäster ofta förändras, kan du använda berättigandehantering i Azure Active Directory för att förenkla gästhantering och låta partnerföretaget dela det ansvaret. Mer information finns i [Skapa ett B2B-extranät med hanterade gäster.](b2b-extranet.md)
 
 ## <a name="limit-sharing"></a>Begränsa delning
 

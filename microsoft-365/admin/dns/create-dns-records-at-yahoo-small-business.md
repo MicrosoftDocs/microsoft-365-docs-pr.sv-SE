@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster på Yahoo! Small Business för Office 365
+title: Skapa DNS-poster på Yahoo! Small Business för Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Yahoo! Small Business för Office 365.
-ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Yahoo! Small Business för Microsoft.
+ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211044"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629161"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>Skapa DNS-poster på Yahoo! Small Business för Office 365
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Skapa DNS-poster på Yahoo! Small Business för Microsoft
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
@@ -89,5 +89,5 @@ Du måste skapa ditt Aabaco-konto innan du kan [skapa DNS-poster](../get-help-wi
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-När du skapat ditt Aabaco-konto kan du [Skapa DNS-poster på Aabaco Small Business för Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Nu när du har skapat ditt Aabaco-konto kan du [skapa DNS-poster på Aabaco Small Business för Microsoft](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   

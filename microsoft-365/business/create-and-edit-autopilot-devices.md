@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Läs om hur du laddar upp enheter med AutoPilot i Microsoft 365 Business. Du kan tilldela en profil till en enhet eller en grupp enheter.
-ms.openlocfilehash: 640e4af7cccde83c87d90a875c1d44dead7255ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Lär dig hur du laddar upp enheter med AutoPilot i Microsoft 365 Business Premium. Du kan tilldela en profil till en enhet eller en grupp enheter.
+ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066000"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627403"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Skapa och redigera AutoPilot-enheter
 
@@ -38,21 +38,21 @@ ms.locfileid: "42066000"
 
 Du kan använda [steg-för-steg-guiden](add-autopilot-devices-and-profile.md) för att ladda upp enheter, men du kan också ladda upp enheter på fliken **Enheter.** 
   
-Enheterna måste uppfylla dessa krav:
+Produkterna måste uppfylla dessa krav:
   
 - Windows 10, version 1703 eller senare
     
-- Nya enheter som inte har gått igenom Windows out-of-box-upplevelse
+- Nya enheter som inte har gått via Windows-direktupplevelse
 
-1. Välj **Autopilot**för **enheter** \> i Administrationscentret för Microsoft 365 Business.
+1. I administrationscentret för Microsoft 365 väljer du **Autopilot för** **enheter** \> .
   
-2. På sidan **AutoPilot** väljer **** du \> fliken Enheter **Lägg till enheter**.
+2. På sidan **Autopilot** väljer du \> fliken **Enheter** **Lägg till enheter**.
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Bläddra till en [CSV-fil](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) i listan lägg \> till på panelen Lägg till **enheter** som du har förberett **Spara** \> **nära**.
+3. På panelen **Lägg** till enheter bläddrar du till en [CSV-fil för enhetslistan](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) som du har förberett \> **Spara** \> **stäng**.
     
-    Du kan få den här informationen från maskinvaruleverantören eller använda [skriptet Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) för att generera en CSV-fil. 
+    Du kan hämta den här informationen från maskinvaruleverantören eller använda [Get-WindowsAutoPilotInfo PowerShell-skriptet](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) för att generera en CSV-fil. 
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Tilldela en profil till en enhet eller en grupp enheter
 

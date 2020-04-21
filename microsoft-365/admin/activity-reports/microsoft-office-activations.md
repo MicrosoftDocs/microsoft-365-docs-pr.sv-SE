@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Lär dig hur du får en Office-aktiveringsrapport för att veta vilka användare som har aktiverat sin Office-prenumeration och identifiera användare som kan behöva ytterligare hjälp.
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046981"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621228"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-rapporter i administrationscentret – Microsoft Office-aktiveringar
 
 Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md).
   
-I rapporten Office-aktivering får du en översikt över vilka användare som har aktiverat Office-prenumerationen på minst en enhet. Du får uppgifter på detaljnivå om prenumerationsaktiveringar för Office 365 Proplus, Project och Visio Pro för Office 365 samt detaljerad information om aktiveringar på olika datorer och andra enheter. Den här rapporten kan vara användbar när du vill identifiera användare som kan behöva extra hjälp och stöd för att aktivera Office-prenumerationen.
+I rapporten Office-aktivering får du en översikt över vilka användare som har aktiverat Office-prenumerationen på minst en enhet. Det ger en översikt över Microsoft 365 Apps för företag, Projekt och Visio Pro för Office 365 aktiveringar prenumeration, samt uppdelningen av aktiveringar över skrivbordet och enheter. Den här rapporten kan vara användbar när du vill identifiera användare som kan behöva extra hjälp och stöd för att aktivera Office-prenumerationen.
   
 > [!NOTE]
 > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter.  

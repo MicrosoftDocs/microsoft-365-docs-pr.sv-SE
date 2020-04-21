@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Skaffa Microsoft 365 Admin-appen och lär dig att hantera din onlineorganisation från din telefon eller surfplatta.
-ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807839"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623994"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Om mobilappen Microsoft 365 admin
 
@@ -42,7 +42,7 @@ Administratörsappen är en funktionsrik app som har över 80 funktioner som hj�
 - Återställa en användares lösenord
 - Tilldela licenser
 - Lägga till eller ta bort gruppmedlemskap
-- Add users 
+- Lägga till användare 
 
 Och om du är någon som är ansvarig för mer än en online-organisation loggar du in på flera organisationer och växlar snabbt mellan dem. 
   
@@ -66,11 +66,11 @@ Nedan finns svar på några vanliga frågor om appen.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Vad behöver jag göra för att kunna använda appen?
 
-Du måste ha en giltig Office 365 för företag- eller Microsoft 365 Business-prenumeration med administratörsbehörighet för att logga in och använda appen. Appen Admin är inte en e-postklient. Det är en rik administrativ app med över 80 funktioner som hjälper dig att stödja din organisation när du är på språng.
+Du måste ha en giltig Microsoft 365 Apps för företag eller Microsoft 365 Business Premium-prenumeration med administratörsbehörighet för att logga in och använda appen. Appen Admin är inte en e-postklient. Det är en rik administrativ app med över 80 funktioner som hjälper dig att stödja din organisation när du är på språng.
   
-### <a name="can-i-use-the-app-with-my-office-365-for-home-subscription"></a>Kan jag använda appen med min Prenumeration på Office 365 för hemmet?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kan jag använda appen med min Microsoft 365 Family-prenumeration?
 
-Nej, appen fungerar bara med Office 365 för företag och Microsoft 365 Business-prenumerationer. 
+Nej, appen fungerar bara med Microsoft 365 Apps for business och Microsoft 365 Business Premium-prenumerationer. 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>Fungerar appen om organisationen har aktiverat katalogsynkronisering?
 
@@ -102,6 +102,6 @@ Du kan prova några vanliga felsökningssteg för mobilappar:
 
 Skicka [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ett e-postmeddelande om att rapportera ett problem med appen. Eller så kan du ge feedback längst ner i den här artikeln. 
   
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

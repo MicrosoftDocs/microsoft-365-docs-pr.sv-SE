@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Ta reda på om din Office 365-klientorganisation och -användare uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: a3005d02522d0a2b22b1ca337d8f49ce7fa20fb3
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Ta reda på om din klient och dina användare uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
+ms.openlocfilehash: 10dd97adf67cf3aeb91337fb251e7cebffdce56c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209754"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628238"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ta reda på om centraliserad distribution av tillägg fungerar för din organisation
 
-Centraliserad distribution är den rekommenderade och mest funktionsrika metoden för de flesta kunder att distribuera Office-tillägg till användare och grupper inom Office 365-organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din klient och dina användare uppfyller kraven så att du kan använda centraliserad distribution.
+Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta kunder att distribuera Office-tillägg till användare och grupper inom organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din klient och dina användare uppfyller kraven så att du kan använda centraliserad distribution.
 Centraliserad distribution stöder Windows-, Mac-, iOS-, Android- och Online Office-appar.
-Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla användare.
+Det kan ta upp till 12 timmar innan ett tillägg visas för klienten för alla användare.
   
 ## <a name="requirements"></a>Krav
 
-Centraliserad distribution av tillägg kräver att användarna använder Office 365 ProPlus (och är inloggade på Office med sitt organisations-ID) och har Exchange Online- och active Exchange Online-postlådor. Din subscription'd-katalog måste antingen vara i eller federeras med Azure Active Directory.
-Du kan visa specifika krav för Office och Exchange nedan eller använda [kompatibilitetskontrollen för centraliserad distribution i Office 365](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
+Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365 Apps for Enterprise (och är inloggade på Office med sitt organisations-ID) och har Exchange Online- och aktiva Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federeras med Azure Active Directory.
+Du kan visa specifika krav för Office och Exchange nedan eller använda den [centraliserade kompatibilitetskontrollen för distribution](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
 
 Centraliserad distribution stöder inte följande:
   
@@ -49,16 +49,16 @@ Centraliserad distribution stöder inte följande:
    
 - Distribution av COM- (Component Object Model) och VSTO-tilläggen (Visual Studio Tools for Office)
     
-- Distributioner av Office 365 som inte inkluderar Exchange, till exempel Office 365 Business
+- Distributioner av Microsoft 365 som inte inkluderar Exchange, till exempel Microsoft 365 Apps for business
 
 ### <a name="office-requirements"></a>Office-krav
 
 - För Word-, Excel- och PowerPoint-tillägg måste användarna använda något av följande:
-  - På en Windows-enhet, version 1704 eller senare av Office 365 ProPlus.
+  - På en Windows-enhet, version 1704 eller senare av Microsoft 365 Apps för företag.
   - På en Mac, version 15.34 eller senare.
 
 - För Outlook måste användarna använda något av följande: 
-  - Version 1701 eller senare av Office 365 ProPlus.
+  - Version 1701 eller senare av Microsoft 365 Apps för företag.
   - Version 1808 eller senare av Office Professional Plus 2019 eller Office Standard 2019.
   - Version 16.0.4494.1000 eller senare av Office Professional Plus 2016 (MSI) eller Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 eller senare av Office Professional Plus 2013 (MSI) eller Office Standard 2013 (MSI)\*
@@ -69,17 +69,17 @@ Centraliserad distribution stöder inte följande:
     *MSI-versioner av Outlook visar administratörsinstallerade tillägg i lämpligt menyfliksområdet i Outlook, inte avsnittet "Mina tillägg".
     
 
-#### <a name="find-out-if-office-365-proplus-is-installed"></a>Ta reda på om Office 365 ProPlus är installerat
+#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Ta reda på om Microsoft 365 Apps for Enterprise är installerat
 
-Om du vill använda Office 365 ProPlus måste en användare ha ett Office 365-konto och ha tilldelats en licens. Mer information finns i [Översikt över Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846328).
+Om du vill använda Microsoft 365 Apps för företag måste en användare ha ett Microsoft 365-konto och ha tilldelats en licens. Mer information finns i [Översikt över Microsoft 365 Apps för företag](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-Det enklaste sättet att identifiera om en användare har Office 365 ProPlus installerat och har använt det nyligen är att använda Microsoft Office Aktiveringsrapporten, som finns i Microsoft 365 admin center. Rapporten innehåller en lista med alla användare som har aktiverat Office 365 ProPlus inom de senaste 7 dagarna, 30 dagarna, 90 dagarna eller 180 dagarna. De kolumner i rapporten som är viktiga för centraliserad distribution är de för datoraktiveringar för Windows och Mac. Du kan exportera rapporten till Excel. Mer information om rapporten finns i [Office 365-rapporter i administrationscenter - Microsoft Office-aktiveringar](../activity-reports/microsoft-office-activations.md).
+Det enklaste sättet att upptäcka om en användare har Microsoft 365 ProPlus installerat och har använt det nyligen är att använda Microsoft Office Aktiveringsrapporten, som finns i Microsoft 365 admin center. Rapporten innehåller en lista över alla användare som har aktiverat Microsoft 365 Apps för företag under de senaste 7 dagarna, 30 dagarna, 90 dagarna eller 180 dagarna. De kolumner i rapporten som är viktiga för centraliserad distribution är de för datoraktiveringar för Windows och Mac. Du kan exportera rapporten till Excel. Mer information om rapporten finns [i Microsoft 365 Reports i Administrationscenter – Microsoft Office-aktiveringar](../activity-reports/microsoft-office-activations.md).
   
-Om du inte vill använda rapporten Aktiveringar kan du be en användare att öppna ett Office-program som Word på datorn och sedan välja \> **Arkivkonto**. **File** Under **Produktinformation** bör du se **Prenumerationsprodukt** och **Microsoft Office 365 ProPlus** som på bilden nedan.
+Om du inte vill använda rapporten Aktiveringar kan du be en användare att öppna ett Office-program som Word på datorn och sedan välja \> **Arkivkonto**. **File** Under **Produktinformation**bör du se **Prenumerationsprodukt** och **Microsoft Microsoft 365 Apps för företag**, vilket visas i följande bild.
 
 ![Produktinformation i ett Office-program](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
-Om du behöver hjälp med Office 365 ProPlus kan du läsa [Felsökningstips för Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
+Mer information om Microsoft 365 Apps for enterprise finns i [Felsökningstips för Microsoft 365 Apps for enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
 ### <a name="exchange-online-requirements"></a>Exchange Online-krav
@@ -89,9 +89,9 @@ Microsoft Exchange lagrar tilläggsmanifesten i organisationens klientorganisati
 Fråga organisationens Exchange-administratör om vilken konfiguration som används. OAuth-anslutning per användare kan verifieras med hjälp av PowerShell-cmdleten [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 
 
-### <a name="office-365-centralized-deployment-compatibility-checker"></a>Kompatibilitetskontroll för centraliserad distribution av Office 365
+### <a name="centralized-deployment-compatibility-checker"></a>Centraliserad kompatibilitetskontroll för distribution
 
-Med hjälp av kompatibilitetskontrollen för centraliserad distribution av Office 365 kan du kontrollera om användarna i klientorganisationen har konfigurerats för användning av centraliserad distribution för Word, Excel och PowerPoint. Kompatibilitetskontrollen krävs inte för Outlook-stöd. Ladda ned kompatibilitetskontrollen [här](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Med hjälp av den centraliserade kompatibilitetskontrollen för distribution kan du kontrollera om användarna på klienten är konfigurerade för att använda centraliserad distribution för Word, Excel och PowerPoint. Kompatibilitetskontrollen krävs inte för Outlook-stöd. Ladda ned kompatibilitetskontrollen [här](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Kör kompatibilitetskontrollen
   
@@ -131,7 +131,7 @@ När verktyget körts klart har en utdatafil i kommaavgränsat format (.csv) gen
   
 ## <a name="user-and-group-assignments"></a>Användar- och grupptilldelningar
 
-Funktionen för centraliserad distribution har för närvarande stöd för de flesta grupper som stöds av Azure Active Directory, inklusive grupper, distributionslistor och säkerhetsgrupper för Office 365.
+Funktionen Centraliserad distribution stöder för närvarande de flesta grupper som stöds av Azure Active Directory, inklusive Microsoft 365-grupper, distributionslistor och säkerhetsgrupper.
   
 > [!NOTE]
 > Säkerhetsgrupper utan e-postaktivering stöds inte för närvarande. 
@@ -157,7 +157,7 @@ Du kan också använda Azure Active Directory Graph API till att köra frågor f
   
 ### <a name="contacting-microsoft-for-support"></a>Kontakta Microsoft om du behöver support
 
-Om du eller dina användare stöter på problem med att läsa in tillägget när du använder Office-appar för webben (Word, Excel osv.), som har distribuerats centralt, kan du behöva kontakta Microsoft-supporten ([läs mer](../contact-support-for-business-products.md)). Ange följande information om din Office 365-miljö i supportärendet.
+Om du eller dina användare stöter på problem med att läsa in tillägget när du använder Office-appar för webben (Word, Excel osv.), som har distribuerats centralt, kan du behöva kontakta Microsoft-supporten ([läs mer](../contact-support-for-business-products.md)). Ange följande information om din Microsoft 365-miljö i supportbiljetten.
   
 |**Plattform**|**Felsökningsinformation**|
 |:-----|:-----|

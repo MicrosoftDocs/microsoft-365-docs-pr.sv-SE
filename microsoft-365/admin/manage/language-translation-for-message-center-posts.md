@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Lär dig att ställa in önskad launguage i Message Center för att automatiskt översätta inlägg.
-ms.openlocfilehash: 795907354f0128bd82d6305dc72b1dc31233bbc4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 27391ca133eda39f533863452e87649c36ac0a7d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808028"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628178"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Översättningar för inlägg i Meddelandecenter
 
-Inlägg i meddelandecentret är skrivna på engelska på grund av tidsaspekten för informationen vi publicerar, men de kan visas automatiskt på det språk som anges i dina personliga språkinställningar för Office 365. Om du anger ett annat språk än engelska ser du ett alternativ för automatisk översättning av inlägg i meddelandecentret. Meddelandena maskinöversätts till det valda språket, vilket innebär att en dator gör översättningen. Det här alternativet styr standardvyn, men du kan också använda den nedrullningsbara menyn om du vill översätta och visa inlägg på de språk som stöds för översättning. Om du väljer engelska återställs meddelandet till den ursprungliga engelska versionen.
+Inlägg i meddelandecenter skrivs endast på engelska på grund av aktualiteten i den information vi publicerar, men kan automatiskt visas på det språk som anges av dina personliga språkinställningar för Microsoft 365. Om du anger ett annat språk än engelska ser du ett alternativ för automatisk översättning av inlägg i meddelandecentret. Meddelandena maskinöversätts till det valda språket, vilket innebär att en dator gör översättningen. Det här alternativet styr standardvyn, men du kan också använda den nedrullningsbara menyn om du vill översätta och visa inlägg på de språk som stöds för översättning. Om du väljer engelska återställs meddelandet till den ursprungliga engelska versionen.
   
 > [!IMPORTANT]
-> Du måste ange ett språk för Office 365 innan du kan ställa in språkinställningarna för meddelandecentret. Inga översättningsalternativ visas om språket är inställt på engelska. Du kan inte ange ett språk för andra personer, varje person måste ändra inställningen själv. 
+> Innan du kan välja språkinställningar för Message center måste du ange önskat språk. Inga översättningsalternativ visas om språket är inställt på engelska. Du kan inte ange ett språk för andra personer, varje person måste ändra inställningen själv. 
   
 ## <a name="set-your-preferred-language"></a>Ange språk
 
 1. Välj inställningsikonen i det övre högra hörnet av fönstret på administrationscentret för Microsoft 365 eller startsidan.
   
-2. Under **Språk och tidszon**väljer du Visa **alla** för att visa tillgängliga alternativ. Välj önskat språk på den nedrullningsbara menyn och välj sedan **Spara**. Office 365 försöker uppdatera och visa det nya språket. Om det inte sker omedelbart, eller om det verkar som att det tar för lång tid, kan du antingen uppdatera webbläsaren eller logga ut och sedan logga in igen.
+2. Under **Språk och tidszon**väljer du Visa **alla** för att visa tillgängliga alternativ. Välj önskat språk på den nedrullningsbara menyn och välj sedan **Spara**. Microsoft 365 kommer att försöka uppdatera och visa det nya språket. Om det inte sker omedelbart, eller om det verkar som att det tar för lång tid, kan du antingen uppdatera webbläsaren eller logga ut och sedan logga in igen.
   
 ## <a name="machine-translation-in-message-center"></a>Maskinöversättning i Meddelandecenter
 

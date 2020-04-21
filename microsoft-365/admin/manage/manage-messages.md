@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Lär dig att hantera meddelanden i Message Center för att hjälpa till med ändringshantering.
-ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811560"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628154"
 ---
 # <a name="manage-messages-in-message-center"></a>Hantera meddelanden i Meddelandecenter
 
@@ -87,13 +87,13 @@ Ser du ett meddelande som någon annan måste göra något åt? Du kan dela inne
   
 1. Markera meddelandet för att öppna det och välj sedan **Dela**.
   
-2. Om du vill dela meddelandet anger du upp till två e-postadresser avgränsade med ett kolon. Du kan skicka till enskilda och gruppera e-postadresser. Du kan också välja att ta emot en kopia av meddelandet i e-postmeddelandet (meddelandet går till din primära e-postadress i Office 365) eller lägger till ett personligt meddelande för att ge mottagarna mer kontext.
+2. Om du vill dela meddelandet anger du upp till två e-postadresser avgränsade med ett kolon. Du kan skicka till enskilda och gruppera e-postadresser. Du kan också välja att ta emot en kopia av meddelandet i e-postmeddelandet (meddelandet går till din primära e-postadress) eller lägger till ett personligt meddelande för att ge mottagarna mer kontext.
   
 3. Välj **Dela** om du vill skicka e-postmeddelandet.
     
 ## <a name="get-a-link"></a>Hämta en länk
 
-Behöver du följa upp med en annan administratör för att se till att han/hon är medveten om ändringen och vidtar en åtgärd. Du kan skapa en länk att dela i till exempel e-post eller snabbmeddelanden som kopplar användaren direkt till det meddelandet. Personen du delar länken med måste vara administratör i Office 365 för din organisation. Annars har personen inte åtkomst till det länkade meddelandet.
+Behöver du följa upp med en annan administratör för att se till att de är medvetna om en förändring och vidta åtgärder? Du kan skapa en länk för att dela i e-post eller snabbmeddelanden, till exempel, som ansluter användaren direkt till det meddelandet. Personen du delar länken med måste vara administratör i Microsoft 365 för din organisation eller så har de inte åtkomst till det länkade meddelandet.
 
 ::: moniker range="o365-worldwide"
 
@@ -213,5 +213,5 @@ Behöver du få tillbaka ett stängt meddelande? Inga problem.
 
 ::: moniker-end
 
-En översikt över Meddelandecenter finns i [Meddelandecenter i Office 365](message-center.md). Du kan också läsa inlägg i [Språköversättning för inlägg i Message center.](language-translation-for-message-center-posts.md) Om du vill programmera ett alternativt sätt att få statusinformation för tjänsten i realtid och kommunikation via Meddelandecenter läser du [Office 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507) (Översikt över kommunikations-API för Office 365-tjänsten).
+En översikt över Meddelandecenter finns [i Meddelandecenter i Microsoft 365](message-center.md). Du kan också läsa inlägg i [Språköversättning för inlägg i Message center.](language-translation-for-message-center-posts.md) Om du vill programmera ett alternativt sätt att få hälsoinformation för tjänster i realtid och Kommunikation i Message Center hänvisar du till [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

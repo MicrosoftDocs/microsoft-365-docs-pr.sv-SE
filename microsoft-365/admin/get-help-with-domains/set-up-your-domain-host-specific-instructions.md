@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: Lär dig hur du hanterar dina egna DNS-poster eller låter Office 365 hantera dina DNS-poster åt dig.
+description: Lär dig hur du hanterar dina egna DNS-poster eller låter Microsoft hantera dina DNS-poster åt dig.
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210362"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628428"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Konfigurera din domän (tjänstspecifika instruktioner)
 
 Om du vill börja använda en anpassad domän (contoso.com) med Office 365 måste du verifiera domänen och konfigurera domänens DNS-poster. 
   
-Du kan lägga till och hantera DNS-poster med hjälp av administrationsverktygen på domänvärden eller ge Office 365 kontroll över dina domänposter så konfigurerar vi dem åt dig.
+Du kan lägga till och hantera DNS-poster med hjälp av administrationsverktygen på domänvärden, eller ge Microsoft kontroll över dina domänposter så konfigurerar vi dem åt dig.
   
 Välj din domänvärd nedan för de exakta stegen. Om du är osäker på vem din värd är läser [du Hitta din domänregistrator](find-your-domain-registrar.md).
   

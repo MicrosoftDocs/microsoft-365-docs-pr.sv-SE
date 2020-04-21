@@ -1,5 +1,5 @@
 ---
-title: Vad är skillnaden mellan skräppost och massutskick av e-post?
+title: Vad är skillnaden mellan skräppost och massutskick?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: I det här avsnittet beskrivs skillnaden mellan skräppost (skräppost) och massutskick av e-post och relaterade kontroller i Office 365.
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230962"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630839"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Vad är skillnaden mellan skräppost och massutskick av e-post?
+# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Vad är skillnaden mellan skräppost och massutskick?
 
-Office 365-kunder med postlådor i Exchange Online eller fristående Exchange Online Protection -kunder utan Exchange Online-postlådor frågar ibland: "Vad är skillnaden mellan skräppost och massutskick av e-post?" Det här avsnittet förklarar skillnaden och beskriver de kontroller som är tillgängliga i EOP.
+Microsoft 365-kunder med postlådor i Exchange Online eller fristående Exchange Online Protection -kunder utan Exchange Online-postlådor frågar ibland: "Vad är skillnaden mellan skräppost och massutskick av e-post?" Det här avsnittet förklarar skillnaden och beskriver de kontroller som är tillgängliga i EOP.
 
 - **Skräppost** är skräppost, som är oönskade och allmänt oönskade meddelanden (när de identifieras korrekt). Som standard avvisar EOP skräppost baserat på ryktet för käll-e-postservern. Om ett meddelande skickas källa IP-inspektion, det skickas till spam filtrering. Om meddelandet klassificeras som skräppost genom skräppostfiltrering levereras meddelandet (som standard) till de avsedda mottagarna och flyttas till mappen Skräppost.
 
@@ -41,7 +41,7 @@ Office 365-kunder med postlådor i Exchange Online eller fristående Exchange On
 
 På grund av den blandade reaktionen på massutskick av e-post finns det inte universell vägledning som gäller för varje organisation.
 
-Anti-spam-policyer har en standard-BCL-tröskel som används för att identifiera massutskick av e-post som skräppost. Administratörer kan öka eller sänka tröskelvärdet. Mer information finns i följande avsnitt:
+Anti-spam-polisen har en standard BCL tröskel som används för att identifiera mass-e-post som skräppost. Administratörer kan öka eller sänka tröskelvärdet. Mer information finns i följande avsnitt:
 
 - [Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Virus detection in SharePoint Online
+title: Virusskydd i SharePoint Online
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,23 +18,23 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om antivirusskydd i SharePoint Online.
-ms.openlocfilehash: f22c2a3280148eb23f4ba53ff467a533186ed791
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: f04cd18bb4880ab631816c90b4976beada436225
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "42805456"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630947"
 ---
-# <a name="virus-detection-in-sharepoint-online"></a>Virus detection in SharePoint Online
+# <a name="virus-detection-in-sharepoint-online"></a>Virusskydd i SharePoint Online
 
-Office 365 kan skydda din miljö från skadlig kod genom att identifiera virus i filer som användare laddar upp till SharePoint Online. Filer kan genomsökas efter virus när de har laddats upp. Om det visar sig att en fil är infekterad anges en egenskap så att användarna inte kan hämta eller synkronisera filen.
+Microsoft 365 kan skydda din miljö från skadlig kod genom att upptäcka virus i filer som användare laddar upp till SharePoint Online. Filer kan genomsökas efter virus när de har laddats upp. Om det visar sig att en fil är infekterad anges en egenskap så att användarna inte kan hämta eller synkronisera filen.
 
 > [!IMPORTANT]
 > Dessa antivirusfunktioner i SharePoint Online är ett sätt att innehålla virus. De är inte avsedda som en enda försvarspunkt mot skadlig kod för din miljö. Vi uppmuntrar alla kunder att bedöma och implementera skydd mot skadlig kod på olika lager och tillämpa bästa praxis för att skydda företagets infrastruktur. Mer information om strategier och metodtips finns i [Översikt över säkerhet](security-roadmap.md).
 
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>Vad händer när en infekterad fil överförs till SharePoint Online?
 
-Office 365 använder en vanlig virusidentifieringsmotor. Motorn körs asynkront i SharePoint Online och söker igenom vissa filer när de har laddats upp. Heuristik används för att avgöra vilka filer som skannas. När en fil visar sig innehålla ett virus flaggas den så att den inte kan hämtas igen. I april 2018 tog vi bort gränsen på 25 MB för skannade filer.
+Microsoft 365 använder en vanlig virusdetekteringsmotor. Motorn körs asynkront i SharePoint Online och söker igenom vissa filer när de har laddats upp. Heuristik används för att avgöra vilka filer som skannas. När en fil visar sig innehålla ett virus flaggas den så att den inte kan hämtas igen. I april 2018 tog vi bort gränsen på 25 MB för skannade filer.
 
 Så här går det till:
 

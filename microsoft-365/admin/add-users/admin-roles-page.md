@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 85952f1f64db0e1ae94d9c5f69e5c95f7f9c2dab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811187"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618878"
 ---
-# <a name="get-started-with-the-roles-page"></a>Kom igång med rollsidan
+# <a name="get-started-with-the-roles-page"></a>Komma igång med sidan roller
 
-På sidan Roller kan du ge användarna behörighet att utföra uppgifter i administrationscenter. Detta hjälper din organisation att sprida uppgifter till lämpliga personer och hjälper till att skydda dina data.
+På sidan Roller kan du ge användarna behörighet att utföra uppgifter i administrationscentren. Detta hjälper din organisation att sprida uppgifter till rätt personer och hjälper till att skydda dina data.
 
 :::image type="content" source="../../media/roles-main-page.png" alt-text="En figur som visar administratörsroller":::
 
 > [!TIP]
-> Letar du efter de detaljerade rollbeskrivningarna? Kolla [in administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) och Om [administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+> Letar du efter de detaljerade rollbeskrivningarna? Kontrollera [administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) och Om [administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 ## <a name="about-the-admin-roles-page"></a>Om sidan administratörsroller
 
@@ -42,11 +42,11 @@ Du kan exportera administratörslistan samt söka och filtrera efter roll.
 
 |||
 |:-----|:-----|
-|  <br/> |Använd **Exportera administratörslista** för att få en fullständig lista över alla administratörsanvändare i organisationen. Listan lagras i en CSV-fil i Excel.   <br/> |
-|  <br/> |Använd **Sök** för att söka efter en administratörsroll och se dina användare som har tilldelats den rollen.   <br/> |
-|  <br/> |Använd **Filter** om du vill ändra vyn för visade administratörsroller.   <br/> |
+|  <br/> |Använd **exportadministratörslista** för att få en fullständig lista över alla administratörsanvändare i organisationen. Listan lagras i en Csv-excel-fil.   <br/> |
+|  <br/> |Använd **Sök** för att söka efter en administratörsroll och se dina användare som är tilldelade till den rollen.   <br/> |
+|  <br/> |Använd **Filter** för att ändra vyn för visade administratörsroller.   <br/> |
 
-## <a name="get-the-most-out-of-the-roles"></a>Få ut det mesta av rollerna
+## <a name="get-the-most-out-of-the-roles"></a>Få ut mesta av rollerna
 
 Läs innehållet nedan om du vill veta mer om de olika administratörsrollerna och vilka uppgifter rollerna kan utföra i organisationen.
 
@@ -55,35 +55,35 @@ Detta är inte en uttömmande lista över alla behörigheter som dessa roller ha
 
 ### <a name="exchange-admin"></a>Exchange-administratör
 
-Tilldela rollen som Exchange-administratör till användare som behöver visa och hantera postlådor, Office 365-grupper och Exchange Online som tillhör din användare. De kan också öppna och hantera serviceförfrågningar till Microsoft-supporten. [Mer information](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Tilldela rollen Exchange-administratör till användare som behöver visa och hantera användarens e-postpostlådor, Microsoft 365-grupper och Exchange Online. De kan också öppna och hantera tjänstförfrågningar till Microsoft-support. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Global administratör
 
-Tilldela den globala administratörsrollen till användare som behöver global åtkomst till de flesta hanteringsfunktioner och data i Microsofts onlinetjänster. Att ge för många användare global åtkomst är en säkerhetsrisk och vi rekommenderar att du har mellan två och fyra globala administratörer. Endast globala administratörer kan återställa lösenord för alla användare och lägga till och hantera domäner. De kan också öppna och hantera serviceförfrågningar till Microsoft-supporten . Personen som registrerade sig för Microsofts onlinetjänster blir automatiskt en global administratör. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Tilldela den globala administratörsrollen till användare som behöver global åtkomst till de flesta hanteringsfunktioner och data i Microsofts onlinetjänster. Att ge för många användare global åtkomst är en säkerhetsrisk och vi rekommenderar att du har mellan två och fyra globala administratörer. Endast globala administratörer kan återställa lösenord för alla användare och lägga till och hantera domäner. De kan också öppna och hantera tjänstförfrågningar till Microsoft-support . Den person som registrerade sig för Microsofts onlinetjänster blir automatiskt global administratör. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="global-reader"></a>Global läsare
 
-Tilldela den globala administratörsrollen för läsare till användare som behöver visa administratörsfunktioner och inställningar i alla administratörscenter som den globala administratören kan visa. Rollen för den globala administratörsrollen för läsare kan inte redigera några inställningar. [Mer information](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Tilldela den globala administratörsrollen för läsare till användare som behöver visa administratörsfunktioner och inställningar i alla administrationscenter som den globala administratören kan visa. Den globala roll för läsarens administratör kan inte redigera några inställningar. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>Supportadministratör
 
-Tilldela rollen Helpdesk-administratör till användare som vill återställa lösenord, tvinga användare att logga ut för eventuella säkerhetsproblem. De kan också öppna och hantera serviceförfrågningar till Microsoft-supporten. Helpdesk-administratören kan bara hjälpa användare och användare som tilldelats dessa roller som inte administreras: Katalogläsare, Gästinbjudare, Helpdesk-administratör, meddelandecenterläsare och rapportläsare. [Mer information](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Tilldela administratörsrollen Helpdesk till användare som vill återställa lösenord, tvinga användare att logga ut för eventuella säkerhetsproblem. De kan också öppna och hantera tjänstförfrågningar till Microsoft-support. Helpdesk-administratören kan bara hjälpa användare och användare som inte har administratörsbe tilldelats dessa roller: katalogläsare, gäst inbjudna, Helpdesk-administratör, Message center-läsare och Rapportläsare. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>Tjänstadministratör
 
-Tilldela tjänstadministratörsrollen till användare som behöver skapa tjänstbegäranden för Azure-, Microsoft 365- och Office 365-tjänster. [Mer information](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Tilldela rollen tjänstadministratör till användare som behöver skapa tjänstbegäranden för Azure-, Microsoft 365- och Office 365-tjänster. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint-administratör
 
-När du köper en Microsoft 365- eller Office 365-prenumeration skapas en gruppwebbplats automatiskt och den globala administratören anges som den primära webbplatssamlingsadministratören. Tilldela SharePoint-administratörsrollen till användare som du vill komma åt administrationscentret för SharePoint. Användare med rollen SharePoint-administratör kan skapa och hantera webbplatssamlingar, utse administratörer för webbplatssamlingar och hantera användarprofiler. Användare med sharepoint-administratörsrollen kan också hantera Office 365-grupper och öppna tjänstförfrågningar via Microsoft-support. [Mer information](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+När du köper en Microsoft 365-prenumeration skapas en gruppwebbplats automatiskt och den globala administratören anges som den primära webbplatssamlingsadministratören. Tilldela SharePoint-administratörsrollen till användare som du vill komma åt i Administrationscentret för SharePoint. Användare med sharepoint-administratörsrollen kan skapa och hantera webbplatssamlingar, utse administratörer för webbplatssamlingar och hantera användarprofiler. Användare med sharepoint-administratörsrollen kan också hantera Microsoft 365-grupper och öppna tjänstförfrågningar via Microsoft-support. [Läs mer](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams-tjänstadministratör
 
-Tilldela rollen Teams-administratör till användare som du vill komma åt och hantera teamen & Skype-administrationscenter. Användare med rollen Teams-administratör kan också hantera Office 365-grupper och öppna tjänstförfrågningar via Microsoft-support. [Mer information](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Tilldela administratörsrollen Teams till användare som du vill komma åt och hantera teams & Administrationscenter för Skype. Användare med administratörsrollen Teams kan också hantera Microsoft 365-grupper och öppna tjänstförfrågningar via Microsoft-support. [Läs mer](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Användaradministratör
 
-Tilldela användaradministratörsrollen till användare som du vill komma åt och hantera återställningar av användarlösenord och hantera Office 365-användare och grupper. De kan också öppna och hantera serviceförfrågningar till Microsoft-supporten. [Mer information](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Tilldela rollen användaradministratör till användare som du vill komma åt och hantera återställning av användarlösenord och hantera användare och grupper. De kan också öppna och hantera tjänstförfrågningar till Microsoft-support. [Läs mer](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 
@@ -93,7 +93,7 @@ Du kan nu jämföra behörigheter för upp till tre roller åt gången så att d
 
 I administrationscentret:
 
-- Välj upp till 3 roller och välj **Jämför roller** för att se de behörigheter varje roll har.
+- Välj upp till tre roller och välj **Jämför roller** för att se vilka behörigheter varje roll har.
 
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="En siffra som visar en jämförelse av administratörsroller":::
 

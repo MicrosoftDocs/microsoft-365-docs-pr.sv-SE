@@ -20,14 +20,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Läs mer om domäner i Office 365 genom att hitta svar på dina frågor i vanliga frågor och svar.
+description: Läs mer om domäner genom att hitta svar på dina frågor i vanliga frågor.
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540873"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627600"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -51,7 +51,7 @@ E-post levereras till Exchange-servern med lägst företrädesnummer (högst pri
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Hur validerar jag SPF-poster för min domän?
 
-Det är viktigt att du har eller skapar **endast en TXT-post för SPF**. Om du redan har en SPF-post ska du lägga till nya Office 365-värden till den istället för att skapa en ny. När du har lagt till eller uppdaterat SPF-posten för Office 365-e-post, bör du kontrollera att syntaxen är korrekt med ett av följande verktyg: 
+Det är viktigt att du har eller skapar **endast en TXT-post för SPF**. Om du redan har en SPF-post ska du lägga till nya Office 365-värden till den istället för att skapa en ny. När du har lagt till eller uppdaterat SPF-posten för Microsoft-e-post bör du kontrollera att syntaxen är korrekt med något av följande verktyg: 
   
 - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +63,7 @@ Det är viktigt att du har eller skapar **endast en TXT-post för SPF**. Om du r
 
 Det finns två alternativ för DNS-hantering med Office 365:
   
-1. Du ändrar NS-posterna (namnserverposterna) medan Office 365 tar hand om alla tjänstspecifika poster, t.ex. att konfigurera MX-posterna för e-post. **(Rekommenderas)**
+1. Du ändrar dina NS-poster (Nameserver) och sedan tar Microsoft hand om alla tjänstspecifika poster, till exempel konfigurera din MX-post för e-post. **(Rekommenderas)**
     
 2. Du lägger själv till DNS-poster för e-post och andra Office 365-tjänster hos din DNS-värd. **(Endast experter)**
     
@@ -87,7 +87,7 @@ Det finns två alternativ för DNS-hantering med Office 365:
  
 #### <a name="disadvantages"></a>Nackdelar
 Du måste konfigurera DNS-posterna för Office 365-tjänsterna själv (om du inte har en GoDaddy-domän). 
--  Om din nuvarande DNS-värd inte stöder alla nödvändiga posttyper för Office 365 är vissa Office 365-funktioner inte tillgängliga och du kan behöva byta DNS-värd. 
+-  Om din nuvarande DNS-värd inte stöder alla nödvändiga posttyper för Microsoft 365 är vissa funktioner inte tillgängliga och du kan behöva byta till en annan DNS-värd. 
 - När Office 365 ändrar krav för DNS-poster eller lägger till nya tjänster måste du själv göra uppdateringar hos din DNS-värd. 
    
 ## <a name="what-is-a-domain-name"></a>Vad är ett domännamn?
@@ -333,9 +333,9 @@ När du lägger till flera domäner i Office 365 kan du välja att ha valfri tj�
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Varför har jag en onmicrosoft.com-domän?
 
-Office 365 skapar en domän åt dig, till exempel _contoso.onmicrosoft.com_när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till _exempel alan\@contoso.onmicrosoft.com_. 
+Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.com*. 
   
- __Om du vill att din e-post ska se ut som _\@alan contoso.com:___ [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
+ **Om du vill att din e-post ska se ut som *\@alan contoso.com:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den initiala domänen du valde till exempel var fourthcoffee.onmicrosoft.com, kan du inte ändra den till fabrikam.onmicrosoft.com. Om du vill använda en annan onmicrosoft.com-domän måste du påbörja en ny prenumeration med Office 365. 
     
@@ -348,12 +348,11 @@ Du kan emellertid fortsätta använda den första onmicrosoft.com-domänen, äve
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Varför har jag en "onmicrosoft.de"-domän?
 
-Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel "alan@contoso.onmicrosoft.de". 
+Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.de*. 
   
-Om du vill att din e-post ska se ut som "alan@contoso.de": [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till användare och domän i Office 365](add-domain.md) om du äger den redan 
+ **Om du vill att din e-post ska se ut *alan@contoso.de:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till användare och domän i Office 365](add-domain.md) om du redan äger den. 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den ursprungliga domänen du valde till exempel var fourthcoffee.onmicrosoft.de kan du inte ändra den till fabrikam.onmicrosoft.de. Om du vill använda en annan onmicrosoft.de domän måste du starta en ny prenumeration med Office 365. 
     
@@ -489,11 +488,11 @@ Du kan, men det finns begränsningar:
         
     2. Utför följande tester:
         
-    3. Testa lokala Office 365-e-postmeddelanden. Skicka till exempel ett e-postmeddelande till användare B. Detta e-postmeddelande bör levereras omedelbart. I det här fallet dirigeras meddelandet inte till användare B-postlådan på den ursprungliga servern eftersom Office 365 ser postlådan som lokal.
+    3. Testa lokal Microsoft-e-post. Skicka till exempel ett e-postmeddelande till användare B. Detta e-postmeddelande bör levereras omedelbart. I det här fallet dirigeras meddelandet inte till användare B-postlådan på den ursprungliga servern eftersom Office 365 ser postlådan som lokal.
         
     4. Testa e-post till någon som är på det andra e-postsystemet. Skicka till exempel ett e-postmeddelande till användare C. Det här e-postmeddelandet ska levereras till användare C:s postlåda på den ursprungliga e-postservern.
         
-    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s ursprungliga serverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att den anländer till Office 365-postlådan för användare A.
+    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s origninalserverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att det kommer till Användare A:s Office 365-postlåda.
         
 9. Flytta postlådeinnehåll
     

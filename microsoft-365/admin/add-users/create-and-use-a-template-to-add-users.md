@@ -18,27 +18,27 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Du kan skapa och använda en mall för att spara tid och standardisera inställningarna när du lägger till flera användare.
-ms.openlocfilehash: 340d0ae3329b441c2b9773ba06e4f9e69be88526
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare.
+ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42810804"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617278"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Skapa och använda en mall för att lägga till användare
 
-Du kan skapa och använda en mall för att spara tid och standardisera inställningarna när du lägger till flera användare. Mallar är särskilt användbara om du har användare som delar många gemensamma egenskaper, som de som har samma roll och arbetar på samma plats och de som behöver samma programvara. Du kan till exempel ha ett team av supporttekniker som arbetar på samma kontor.  
+Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare. Mallar är särskilt användbara om du har användare som delar många vanliga egenskaper, som de som har samma roll och arbetar på samma plats och de som behöver samma programvara. Du kan till exempel ha ett team med supporttekniker som arbetar på samma kontor.  
 
 ## <a name="create-a-template"></a>Skapa en mall
 
-Mallar är enkla&mdash;att skapa kan du välja **Användare** > **Aktiva användare** > **Användarmallar**och sedan välja Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som mall.
+Mallar är enkla&mdash;att skapa, du kan välja **Användare** > **Aktiva användare** > **Användarmallar**, och välj sedan Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
 
 När du skapar en mall när du har lagt till en användare sparas de värden du väljer för följande inställningar i mallen:
 
 - Domännamn
-- Alternativ för lösenordsinställningar: du kan välja att skapa lösenord eller låta dem genereras automatiskt
-- Ett engångslösenord val: du kan kräva att användaren skapar ett nytt lösenord efter första inloggning
+- Val av lösenordsinställningar: du kan välja att skapa lösenord eller låta dem genereras automatiskt
+- Engångslösenord: du kan kräva att användaren skapar ett nytt lösenord efter första inloggningen
 - Licensplats
 - Licensval
 - Val av program
@@ -50,34 +50,34 @@ Följande information är användarspecifik och sparas inte i mallen:
 - För- och efternamn
 - Visningsnamn
 - Användarnamn
-- Val att skicka lösenordet via e-post och vem lösenordet skickas till
+- Val att skicka lösenordet via e-post och vem lösenordet e-postmeddelandet skickas till
 - Mobiltelefonnummer
 
-Om du väljer att inte ange information för en inställning i ett avsnitt är det värdet tomt och den inställningen visas inte i mallen. Om du till exempel lämnar **Jobbtiteln** tom visas inte **befattning** alls när du granskar mallen och när du använder mallen. Om du lämnar alla **profilavsnittsinställningar** tomma visas Ingen **i** den slutliga mallen i avsnittet **Profil.**
+Om du väljer att inte ange information för en inställning i ett avsnitt är det värdet tomt och den inställningen visas inte i mallen. Om du till exempel lämnar **befattningen** tom visas inte **befattningen jobbtitel** alls när du granskar mallen och när du använder mallen. Om du lämnar alla inställningar för **profilavsnittet** tomma visas **Ingen** i den slutliga mallen i avsnittet **Profil.**
 
-När du skapar en mall genom att välja alternativet **Lägg till en mall** kan du välja vilka värden som ska fyllas i. Allt som lämnas tomt visas som **Ingen som finns** i mallen.
+När du skapar en mall genom att välja alternativet **Lägg till en mall** kan du välja vilka värden som ska slutföras. Allt som lämnas tomt visas som **Ingen i** mallen.
 
 ## <a name="use-a-template-to-add-a-user"></a>Använda en mall för att lägga till en användare
 
 Så här använder du en befintlig mall för att lägga till en användare:
 
-1. Välj **Användare** > **Aktiva användare**i administrationscentret.
+1. I administrationscentret väljer du**Aktiva användare** **.** > 
 
 2. Välj **Användarmallar**och välj sedan en mall i listrutan. (Listan innehåller bara de mallar som du har skapat, inte de som skapats av andra administratörer.)
 
  > [!NOTE]
  > Du kan också använda en mall för att lägga till en användare genom att välja **Användarmallar** > **Hantera mallar,** välja en mall och sedan välja **Använd mall**.
 
-3. Följ stegen för att skapa en användare från mallen du valde.
+3. Följ stegen för att skapa en användare från den mall du valde.
 
 > [!NOTE]
-> Om du inte har tillräckligt med licenser för en användare som du lägger till och din betalningsinformation är tillgänglig, försöker vi köpa en annan licens med hjälp av din befintliga betalningsinformation. Om betalningsinformationen inte är tillgänglig skapas användaren som en olicensierad användare.
+> Om du inte har tillräckliga licenser tillgängliga för en användare som du lägger till och din betalningsinformation är tillgänglig försöker vi köpa en annan licens med din befintliga betalningsinformation. Om din betalningsinformation inte är tillgänglig skapas användaren som en olicensierad användare.
 
 ## <a name="manage-templates"></a>Hantera mallar
 
 Du kan enkelt ta bort mallar som du inte längre behöver och lägga till nya. Så här tar du bort en mall:
 
-1. Välj **Användare** > **Aktiva användare**i administrationscentret.
+1. I administrationscentret väljer du**Aktiva användare** **.** > 
 
 2. Välj **Mallar**och välj sedan **Hantera mallar** i listrutan.
 
@@ -88,7 +88,7 @@ Du kan enkelt ta bort mallar som du inte längre behöver och lägga till nya. S
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till användare individuellt eller i grupp i Office 365](add-users.md)
+[Lägga till användare individuellt eller i grupp i Microsoft 365](add-users.md)
 
-[Ta bort en tidigare anställd från Office 365](remove-former-employee.md)
+[Ta bort en tidigare anställd från Microsoft 365](remove-former-employee.md)
   
