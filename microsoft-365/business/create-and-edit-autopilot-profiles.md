@@ -26,60 +26,60 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Lär dig att skapa en AutoPilot-profil och tillämpa den på en enhet, samt redigera eller ta bort en profil eller ta bort en profil från en enhet.
-ms.openlocfilehash: 58c16b68c66dce7541a02ecd0d2466babe8cc338
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560729"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627383"
 ---
-# <a name="create-and-edit-autopilot-profiles"></a><span data-ttu-id="9f2fc-103">Skapa och redigera AutoPilot-profiler</span><span class="sxs-lookup"><span data-stu-id="9f2fc-103">Create and edit AutoPilot profiles</span></span>
+# <a name="create-and-edit-autopilot-profiles"></a><span data-ttu-id="3112b-103">Skapa och redigera AutoPilot-profiler</span><span class="sxs-lookup"><span data-stu-id="3112b-103">Create and edit AutoPilot profiles</span></span>
 
-## <a name="create-a-profile"></a><span data-ttu-id="9f2fc-104">Skapa en profil</span><span class="sxs-lookup"><span data-stu-id="9f2fc-104">Create a profile</span></span>
+## <a name="create-a-profile"></a><span data-ttu-id="3112b-104">Skapa en profil</span><span class="sxs-lookup"><span data-stu-id="3112b-104">Create a profile</span></span>
 
-<span data-ttu-id="9f2fc-105">En profil gäller för en enhet eller en grupp enheter.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-105">A profile applies to a device, or a group of devices,</span></span>
+<span data-ttu-id="3112b-105">En profil gäller för en enhet eller en grupp enheter.</span><span class="sxs-lookup"><span data-stu-id="3112b-105">A profile applies to a device, or a group of devices,</span></span>
   
-1. <span data-ttu-id="9f2fc-106">I Microsoft 365 Business Admin Center väljer du Automatisk **apilot** **för enheter** \> .</span><span class="sxs-lookup"><span data-stu-id="9f2fc-106">In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.</span></span>
+1. <span data-ttu-id="3112b-106">I administrationscentret för Microsoft 365 väljer du **Autopilot för** **enheter** \> .</span><span class="sxs-lookup"><span data-stu-id="3112b-106">In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.</span></span>
   
-2. <span data-ttu-id="9f2fc-107">På sidan **AutoPilot** väljer \*\*\*\* du \> fliken Profiler **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-107">On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.</span></span>
+2. <span data-ttu-id="3112b-107">På sidan **Autopilot** väljer du \> fliken **Profiler** **Skapa profil**.</span><span class="sxs-lookup"><span data-stu-id="3112b-107">On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.</span></span>
     
-3. <span data-ttu-id="9f2fc-108">På sidan **Skapa profil** anger du ett namn för profilen som hjälper dig att identifiera den, till exempel Marknadsföring.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-108">On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing.</span></span> <span data-ttu-id="9f2fc-109">Aktivera den inställning du vill använda och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-109">Turn on the setting you want, and then choose **Save**.</span></span> <span data-ttu-id="9f2fc-110">Mer information om profilinställningar för AutoPilot finns i [Om inställningar för AutoPilot-profil](autopilot-profile-settings.md).</span><span class="sxs-lookup"><span data-stu-id="9f2fc-110">For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span>
+3. <span data-ttu-id="3112b-108">På sidan **Skapa profil** anger du ett namn på profilen som hjälper dig att identifiera den, till exempel Marknadsföring.</span><span class="sxs-lookup"><span data-stu-id="3112b-108">On the **Create profile** page, enter a name for the profile that helps you identify it, for example Marketing.</span></span> <span data-ttu-id="3112b-109">Aktivera den inställning du vill använda och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3112b-109">Turn on the setting you want, and then choose **Save**.</span></span> <span data-ttu-id="3112b-110">Mer information om profilerinställningar för Autopilot finns i [Om inställningar för autopilotprofil](autopilot-profile-settings.md).</span><span class="sxs-lookup"><span data-stu-id="3112b-110">For more information about AutoPilot profile settings, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span>
     
     ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
-### <a name="apply-profile-to-a-device"></a><span data-ttu-id="9f2fc-112">Använda profil på en enhet</span><span class="sxs-lookup"><span data-stu-id="9f2fc-112">Apply profile to a device</span></span>
+### <a name="apply-profile-to-a-device"></a><span data-ttu-id="3112b-112">Använda profil på en enhet</span><span class="sxs-lookup"><span data-stu-id="3112b-112">Apply profile to a device</span></span>
 
-<span data-ttu-id="9f2fc-113">När du har skapat en profil kan du använda den på en enhet eller en grupp enheter.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-113">After you create a profile, you can apply it to a device or a group of devices.</span></span> <span data-ttu-id="9f2fc-114">Du kan välja en befintlig profil i [steg-för-steg-guiden](add-autopilot-devices-and-profile.md) och använda den på nya enheter eller ersätta en befintlig profil för en enhet eller grupp av enheter.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-114">You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.</span></span> 
+<span data-ttu-id="3112b-113">När du har skapat en profil kan du använda den på en enhet eller en grupp enheter.</span><span class="sxs-lookup"><span data-stu-id="3112b-113">After you create a profile, you can apply it to a device or a group of devices.</span></span> <span data-ttu-id="3112b-114">Du kan välja en befintlig profil i [steg-för-steg-guiden](add-autopilot-devices-and-profile.md) och använda den på nya enheter, eller ersätta en befintlig profil för en enhet eller grupp av enheter.</span><span class="sxs-lookup"><span data-stu-id="3112b-114">You can pick an existing profile in the [step-by-step guide](add-autopilot-devices-and-profile.md) and apply it to new devices, or replace an existing profile for a device or group of devices.</span></span> 
   
-1. <span data-ttu-id="9f2fc-115">På sidan för att **förbereda Windows** väljer du fliken **Enheter**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-115">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
+1. <span data-ttu-id="3112b-115">På sidan för att **förbereda Windows** väljer du fliken **Enheter**.</span><span class="sxs-lookup"><span data-stu-id="3112b-115">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
     
-2. <span data-ttu-id="9f2fc-116">Markera kryssrutan bredvid ett enhetsnamn och välj en profil i **listrutan** \> **Spara**på **enhetspanelen.**</span><span class="sxs-lookup"><span data-stu-id="9f2fc-116">Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.</span></span>
+2. <span data-ttu-id="3112b-116">Markera kryssrutan bredvid ett enhetsnamn **Device** och välj en profil i listrutan \> **Tilldelad profil** **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3112b-116">Select the check box next to a device name, and in the **Device** panel, choose a profile from the **Assigned profile** drop-down list \> **Save**.</span></span>
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
-## <a name="edit-delete-or-remove-a-profile"></a><span data-ttu-id="9f2fc-118">Redigera eller ta bort en profil</span><span class="sxs-lookup"><span data-stu-id="9f2fc-118">Edit, delete, or remove a profile</span></span>
+## <a name="edit-delete-or-remove-a-profile"></a><span data-ttu-id="3112b-118">Redigera eller ta bort en profil</span><span class="sxs-lookup"><span data-stu-id="3112b-118">Edit, delete, or remove a profile</span></span>
 
-<span data-ttu-id="9f2fc-p103">När du har tilldelat en profil till en enhet kan du uppdatera den, även om du redan har gett enheten till en användare. När enheten ansluts till internet laddar den ned den senaste versionen av profilen under installationen. Om användaren återställer enheten till de förvalda inställningarna hämtar enheten på nytt de senaste uppdateringarna av profilen.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-p103">Once you've assigned a profile to a device, you can update it, even if you've already given the device to a user. When the device connects to the internet, it downloads the latest version of your profile during the setup process. If the user restores their device to its factory default settings, the device will again download the latest updates to your profile.</span></span> 
+<span data-ttu-id="3112b-p103">När du har tilldelat en profil till en enhet kan du uppdatera den, även om du redan har gett enheten till en användare. När enheten ansluts till internet laddar den ned den senaste versionen av profilen under installationen. Om användaren återställer enheten till de förvalda inställningarna hämtar enheten på nytt de senaste uppdateringarna av profilen.</span><span class="sxs-lookup"><span data-stu-id="3112b-p103">Once you've assigned a profile to a device, you can update it, even if you've already given the device to a user. When the device connects to the internet, it downloads the latest version of your profile during the setup process. If the user restores their device to its factory default settings, the device will again download the latest updates to your profile.</span></span> 
   
-### <a name="edit-a-profile"></a><span data-ttu-id="9f2fc-122">Redigera en profil</span><span class="sxs-lookup"><span data-stu-id="9f2fc-122">Edit a profile</span></span>
+### <a name="edit-a-profile"></a><span data-ttu-id="3112b-122">Redigera en profil</span><span class="sxs-lookup"><span data-stu-id="3112b-122">Edit a profile</span></span>
 
-1. <span data-ttu-id="9f2fc-123">På sidan för att **förbereda Windows** väljer du fliken **Profiler**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-123">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
+1. <span data-ttu-id="3112b-123">På sidan för att **förbereda Windows** väljer du fliken **Profiler**.</span><span class="sxs-lookup"><span data-stu-id="3112b-123">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
     
-2. <span data-ttu-id="9f2fc-124">Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de \> tillgängliga inställningarna **Spara**på **profilpanelen.**</span><span class="sxs-lookup"><span data-stu-id="9f2fc-124">Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.</span></span>
+2. <span data-ttu-id="3112b-124">Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de \> tillgängliga inställningarna **Spara**på **profilpanelen** .</span><span class="sxs-lookup"><span data-stu-id="3112b-124">Select the check box next to a device name, and in the **Profile** panel, update any of the available settings \> **Save**.</span></span>
     
-    <span data-ttu-id="9f2fc-125">Om du gör detta innan någon användare ansluter enheten till internet används profilen för installationen.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-125">If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.</span></span>
+    <span data-ttu-id="3112b-125">Om du gör detta innan någon användare ansluter enheten till internet används profilen för installationen.</span><span class="sxs-lookup"><span data-stu-id="3112b-125">If you do this before a user connects the device to the internet, then the profile gets applied to the setup process.</span></span>
     
-### <a name="delete-a-profile"></a><span data-ttu-id="9f2fc-126">Radera en profil</span><span class="sxs-lookup"><span data-stu-id="9f2fc-126">Delete a profile</span></span>
+### <a name="delete-a-profile"></a><span data-ttu-id="3112b-126">Radera en profil</span><span class="sxs-lookup"><span data-stu-id="3112b-126">Delete a profile</span></span>
 
-1. <span data-ttu-id="9f2fc-127">På sidan för att **förbereda Windows** väljer du fliken **Profiler**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-127">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
+1. <span data-ttu-id="3112b-127">På sidan för att **förbereda Windows** väljer du fliken **Profiler**.</span><span class="sxs-lookup"><span data-stu-id="3112b-127">On the **Prepare Windows** page, choose the **Profiles** tab.</span></span> 
     
-2. <span data-ttu-id="9f2fc-128">Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** \> **Spara**på **profilpanelen.**</span><span class="sxs-lookup"><span data-stu-id="9f2fc-128">Select the check box next to a device name, and in the **Profile** panel, select **Delete profile** \> **Save**.</span></span>
+2. <span data-ttu-id="3112b-128">Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** \> **Spara**på **profilpanelen** .</span><span class="sxs-lookup"><span data-stu-id="3112b-128">Select the check box next to a device name, and in the **Profile** panel, select **Delete profile** \> **Save**.</span></span>
     
-    <span data-ttu-id="9f2fc-129">När du raderar en profil tas den bort från en enhet eller en grupp av enheter som den var tilldelad till.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-129">When you delete a profile, it gets removed from a device or a group of devices it was assigned to.</span></span>
+    <span data-ttu-id="3112b-129">När du raderar en profil tas den bort från en enhet eller en grupp av enheter som den var tilldelad till.</span><span class="sxs-lookup"><span data-stu-id="3112b-129">When you delete a profile, it gets removed from a device or a group of devices it was assigned to.</span></span>
     
-### <a name="remove-a-profile"></a><span data-ttu-id="9f2fc-130">Ta bort en profil</span><span class="sxs-lookup"><span data-stu-id="9f2fc-130">Remove a profile</span></span>
+### <a name="remove-a-profile"></a><span data-ttu-id="3112b-130">Ta bort en profil</span><span class="sxs-lookup"><span data-stu-id="3112b-130">Remove a profile</span></span>
 
-1. <span data-ttu-id="9f2fc-131">På sidan för att **förbereda Windows** väljer du fliken **Enheter**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-131">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
+1. <span data-ttu-id="3112b-131">På sidan för att **förbereda Windows** väljer du fliken **Enheter**.</span><span class="sxs-lookup"><span data-stu-id="3112b-131">On the **Prepare Windows** page, choose the **Devices** tab.</span></span> 
     
-2. <span data-ttu-id="9f2fc-132">Markera kryssrutan bredvid ett enhetsnamn och \*\*\*\* välj **Ingen** i listrutan \> **Tilldelad profil** **Spara**.</span><span class="sxs-lookup"><span data-stu-id="9f2fc-132">Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.</span></span>
+2. <span data-ttu-id="3112b-132">Markera kryssrutan bredvid ett enhetsnamn **Device** och välj **Ingen** i listrutan \> **Tilldelad profil** **Spara**.</span><span class="sxs-lookup"><span data-stu-id="3112b-132">Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.</span></span>
     

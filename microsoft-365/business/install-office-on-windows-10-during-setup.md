@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Upptäck hur du med Microsoft 365 Business automatiskt kan se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter.
-ms.openlocfilehash: dbae76bf98cbcc463e4944f7c0bc59e728221c6b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Upptäck hur du med Microsoft 365 Business Premium automatiskt kan se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter.
+ms.openlocfilehash: f040f466638dc0ef5491e3097de29fc44a8e66f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561549"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627103"
 ---
-# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="d46a5-103">Installera Office vid Windows 10-installationen</span><span class="sxs-lookup"><span data-stu-id="d46a5-103">Install Office on Windows 10 during setup</span></span>
+# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="a64c5-103">Installera Office vid Windows 10-installationen</span><span class="sxs-lookup"><span data-stu-id="a64c5-103">Install Office on Windows 10 during setup</span></span>
 
 ![Banner som https://aka.ms/aboutM365previewpekar på .](../media/m365admincenterchanging.png)
 
-<span data-ttu-id="d46a5-105">Den här inställningen är inaktiverad som standard.</span><span class="sxs-lookup"><span data-stu-id="d46a5-105">This setting is off by default.</span></span> <span data-ttu-id="d46a5-106">Du kan aktivera den för att se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla förutsättningar uppfylls.</span><span class="sxs-lookup"><span data-stu-id="d46a5-106">You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met.</span></span> <span data-ttu-id="d46a5-107">Användare måste vara licensierade för Microsoft 365 Business för den här inställningen för att kunna skicka programvaran till enheten, utöver andra krav som beskrivs i [Förbereda för Office-klientdistribution av Microsoft 365 Business](prepare-for-office-client-deployment.md).</span><span class="sxs-lookup"><span data-stu-id="d46a5-107">Users must be licensed for Microsoft 365 Business for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span>
+<span data-ttu-id="a64c5-105">Den här inställningen är inaktiverad som standard.</span><span class="sxs-lookup"><span data-stu-id="a64c5-105">This setting is off by default.</span></span> <span data-ttu-id="a64c5-106">Du kan aktivera den för att se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men först kontrollera att alla förutsättningar är uppfyllda.</span><span class="sxs-lookup"><span data-stu-id="a64c5-106">You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met.</span></span> <span data-ttu-id="a64c5-107">Användare måste licensieras för Microsoft 365 Business Premium för att den här inställningen ska kunna skicka programvaran till enheten, utöver andra krav som beskrivs i [Förbereda för Office-klientdistribution av Microsoft 365 Business Premium](prepare-for-office-client-deployment.md).</span><span class="sxs-lookup"><span data-stu-id="a64c5-107">Users must be licensed for Microsoft 365 Business Premium for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business Premium](prepare-for-office-client-deployment.md).</span></span>
   
-<span data-ttu-id="d46a5-108">Vi rekommenderar att du accepterar standardinställningen under installationen.</span><span class="sxs-lookup"><span data-stu-id="d46a5-108">We recommend that you accept the default setting during setup.</span></span>
+<span data-ttu-id="a64c5-108">Vi rekommenderar att du accepterar standardinställningen under installationen.</span><span class="sxs-lookup"><span data-stu-id="a64c5-108">We recommend that you accept the default setting during setup.</span></span>
