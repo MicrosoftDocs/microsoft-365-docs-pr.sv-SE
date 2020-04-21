@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär hur du tar bort ett användarkonto. Bestäm vad du ska göra med användarens e-postadress, OneDrive-innehåll och om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42806523"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608132"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -99,7 +99,8 @@ Du blir guidad genom processen för att ta bort en användare. Så här kommer d
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Användarhanteringsadministratör: Ta bort en eller flera användare från Office 365
 
 
- **VIKTIGT!** Ta inte bort en användares konto om du har [konverterat det till en delad postlåda](../email/convert-user-mailbox-to-shared-mailbox.md) eller om du har konfigurerat vidarebefordran av e-post för kontot. Kontot måste finnas för dessa funktioner. Om du har konverterat det till en delad postlåda kan du [Sluta betala för licensen](#stop-paying-for-the-license) från det så att du inte betalar för den. Om du har konfigurerat vidarebefordran av e-post kan du inte ta bort licensen. Om du gör det stoppas e-postvidarebefordran och postlådan inaktiveras. 
+> [!IMPORTANT]
+> Ta inte bort en användares konto om du har [konverterat det till en delad postlåda](../email/convert-user-mailbox-to-shared-mailbox.md) eller om du har konfigurerat vidarebefordran av e-post på kontot. Dessa funktioner behöver fortfarande kontot. En delad postlåda kräver ingen licens. Om du har konverterat kontot till en delad postlåda kan du [sluta betala för licensen](#stop-paying-for-the-license). Om du har konfigurerat vidarebefordran av e-post på kontot kan du inte ta bort licensen. Om du gör det stoppas vidarebefordran av e-post och inaktiverar postlådan.
   
 ::: moniker range="o365-worldwide"
 

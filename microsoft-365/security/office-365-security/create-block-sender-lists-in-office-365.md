@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Administratörer kan lära sig mer om de tillgängliga alternativen i Office 365 och EOP för att blockera inkommande meddelanden.
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033428"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608125"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Skapa blockerade avsändningslistor i Office 365
 
@@ -50,9 +50,9 @@ När meddelanden har blockerats på grund av en användares lista Blockerade avs
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Använda blockerade avsändarelistor eller blockerade domänlistor
 
-När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
 
-Den maximala gränsen för dessa listor är cirka 1000 poster. även om du bara kan ange 30 poster i portalen. Du måste använda PowerShell för att lägga till fler än 30 poster.
+Den maximala gränsen för dessa listor är cirka 1000 poster.
 
 ## <a name="use-mail-flow-rules"></a>Använda regler för e-postflöde
 

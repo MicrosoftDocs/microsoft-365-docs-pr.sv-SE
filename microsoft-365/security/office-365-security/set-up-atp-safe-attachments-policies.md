@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definiera principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
-ms.openlocfilehash: 860e733bda8f16eff8e36e42055c7ea7fa88e343
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608108"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera principer för office 365 ATP-säkra bifogade filer
 
@@ -98,7 +98,7 @@ När du ställer in principerna för betrodda bilagor vid ATP väljer du bland m
 |**Ersätta**|Tar bort identifierade bifogade skadliga program  <br/> Meddelar mottagarna att bifogade filer har tagits bort  <br/> Skickar meddelanden med upptäckt skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhetsadministratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden|Öka synligheten för mottagare av att bifogade filer har tagits bort på grund av upptäckt skadlig kod|
 |**Dynamisk leverans**|Levererar meddelanden omedelbart  <br/> Ersätter bifogade filer med en platshållarfil tills skanningen är klar och fäster sedan fast bilagorna igen om ingen skadlig kod upptäcks  <br/> Inkluderar förhandsgranskningsfunktioner för bifogade filer för de flesta PDF-filer och Office-filer under skanningen  <br/> Skickar meddelanden med upptäckt skadlig kod till Karantän där en säkerhetsadministratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> [Lär dig mer om dynamisk leverans och förhandsgranskning med ATP Säkra bilagor](dynamic-delivery-and-previewing.md) <br/> |Undvik meddelandefördröjningar samtidigt som mottagare skyddas från skadliga filer  <br/> Gör det möjligt för mottagarna att förhandsgranska bifogade filer i felsäkert läge medan skanningen sker|
 |**Aktivera omdirigering**|Gäller när alternativet Bildskärm, Blockera eller Ersätt är valt  <br/> Skickar bilagor till en angiven e-postadress där säkerhetsadministratörer eller analytiker kan undersöka|Aktivera säkerhetsadministratörer och analytiker för att undersöka misstänkta bilagor|
-|**Använd ovanstående val om malware scanning för bilagor time out eller fel inträffar**|Tillämpar åtgärden som konfigurerats för unasfe-bilagor i de bifogade filer som inte kan skannas (på grund av time out eller error)|
+|**Använd ovanstående val om malware scanning för bilagor time out eller fel inträffar**|Tillämpar åtgärden som konfigurerats för osäkra bilagor till de bifogade filer som inte kan skannas (på grund av time out eller error)|
 |
 
 ## <a name="next-steps"></a>Nästa steg

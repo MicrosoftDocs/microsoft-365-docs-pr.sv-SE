@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8319dcabe6032228e2124b68f9f7d8f237ff34de
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 23242f5f2d7e1a0774c83359159588f9fef34f64
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583375"
+ms.locfileid: "43608168"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (förhandsgranskning)
 
@@ -69,6 +69,7 @@ Med läs- och skrivåtkomst kan du göra ändringar och interagera direkt med Se
 * Säkerhetsadministratör
 * Exchange-administratör
 * SharePoint-administratör
+* Kontoadministratör
 
 ### <a name="read-only-roles"></a>Skrivskyddade roller
 
@@ -151,7 +152,7 @@ På fliken **Mått & trender** finns det flera diagram och diagram som ger dig s
 
 Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition baserat på systemkonfigurationer, användarbeteende och andra säkerhetsrelaterade mätningar. Det är inte ett absolut mått på hur sannolikt ditt system eller data kommer att brytas. Snarare är det i vilken utsträckning du har antagit säkerhetskontroller i din Microsoft-miljö som kan bidra till att kompensera risken för att brytas. Ingen onlinetjänst är helt immun mot säkerhetsöverträdelser, och säker poäng bör inte tolkas som en garanti mot säkerhetsöverträdelse på något sätt.
 
-## <a name="whats-new"></a>Vad är det senaste? 
+## <a name="whats-new"></a>Vad är nytt? 
 
 För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
