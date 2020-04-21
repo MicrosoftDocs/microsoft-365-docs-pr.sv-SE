@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när din Office 365 för företag-prenumeration går ut, är inaktiverad eller om du avbryter.
-ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955679"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43584015"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Office 365 för företag-prenumeration avslutas?
 
@@ -44,7 +44,7 @@ I följande tabell förklaras vad du kan förvänta dig när en betald Office 36
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data som är tillgängliga för alla*                                               | *Data som är tillgängliga för alla*                                                     | *Data som endast är tillgängliga för administratörer*                                             | **Data<br/>borttagna Azure Active Directory tas bort, om den inte används av andra tjänster** |
 | Användare har normal åtkomst till Office 365-, data- och Office-program  | Användare har normal åtkomst till Office 365, filer och program              | Användare kan inte komma åt Office 365, filer eller program                        | Användare kan inte komma åt Office 365, filer eller program                                     |
-| Administratörer har normal åtkomst till Office 365-, data- och Office-program | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare   | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare       | Administratörer kan komma åt administrationscentret för att köpa och hantera andra prenumerationer             |
+| Administratörer har normal åtkomst till Office 365-, data- och Office-program | Administratörer kan komma åt administrationscentret   | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare       | Administratörer kan komma åt administrationscentret för att köpa och hantera andra prenumerationer             |
 |                                                                        | Globala administratörer eller faktureringsadministratörer kan återaktivera prenumerationen i administrationscentret | Globala administratörer eller faktureringsadministratörer kan återaktivera prenumerationen i administrationscentret |                                                                                           |
 
 *För de flesta erbjudanden, i de flesta länder och regioner.
@@ -143,7 +143,7 @@ Det här kan du förvänta dig när din prenumeration är i varje delstat.
 
 I det här läget har användarna normal åtkomst till Office 365-portalen, Office-program och tjänster som e-post och SharePoint Online.
   
-Som administratör har du fortfarande åtkomst till administrationscentret, men kan inte tilldela licenser till användare. Globala administratörer eller faktureringsadministratörer kan [återaktivera prenumerationen](reactivate-your-subscription.md) och fortsätta använda Office 365. Om du inte återaktiverar måste du [säkerhetskopiera dina data](back-up-data-before-switching-plans.md).
+Som administratör har du fortfarande tillgång till administrationscentret. Globala administratörer eller faktureringsadministratörer kan [återaktivera prenumerationen](reactivate-your-subscription.md) och fortsätta använda Office 365. Om du inte återaktiverar måste du [säkerhetskopiera dina data](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Tillstånd: Inaktiverat
   

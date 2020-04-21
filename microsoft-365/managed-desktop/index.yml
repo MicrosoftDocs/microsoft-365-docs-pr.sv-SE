@@ -1,8 +1,8 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Dokumentation och resurser för Microsoft Managed Desktop
+title: Dokumentation och resurser för Microsoft Hanterat skrivbord
 metadata:
-  title: Dokumentation för Microsoft Managed Desktop
+  title: Dokumentation för Microsoft Hanterat skrivbord
   description: null
   keywords: 'enhet, app, hantering'
   author: jaimeo
@@ -13,7 +13,7 @@ metadata:
 sections:
   - items:
       - type: markdown
-        text: 'Microsoft Managed Desktop samlar Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning, så att du kan frigöra IT-teamen för att fokusera på kärnverksamhetens behov.'
+        text: 'Microsoft Hanterat skrivbord sammanför Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning så du kan frigöra IT-grupper att fokusera på viktiga företagsbehov.'
   - items:
       - type: list
         style: cards
@@ -21,25 +21,25 @@ sections:
         columns: 2
         items:
           - href: intro/index.md
-            html: '<p>Introduktion till Microsoft Managed Desktop för beslutsfattare – vad det är, hur det fungerar och vad det kan göra för dig</p>'
+            html: '<p>Introduktion till Microsoft Hanterat skrivbord för beslutsfattare, vad det är och hur det fungerar samt vad det kan göra för dig</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
               alt: ''
-            title: Vad är Microsoft Managed Desktop?
+            title: Vad är Microsoft Hanterat skrivbord?
           - href: service-description/index.md
-            html: <p>Detaljerad beskrivning av alla delar av Microsoft Managed Desktop</p>
+            html: <p>Detaljerad beskrivning av alla delar av Microsoft Hanterat skrivbord</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
               alt: ''
-            title: Beskrivning av tjänsten
+            title: Tjänstbeskrivning
           - href: get-ready/index.md
-            html: <p>Alla steg för att få din miljö och organisation redo att arbeta med tjänsten</p>
+            html: <p>Alla steg för att få miljön och organisationen redo att fungera tillsammans med tjänsten</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
               alt: ''
             title: Gör dig redo
           - href: get-started/index.md
-            html: '<p>Få din organisation ombord på Microsoft Managed Desktop, inklusive att konfigurera enheter och distribuera appar</p>'
+            html: '<p>Få igång din organisation med Microsoft Hanterat skrivbord, t. ex. konfigurera enheter och distribuera appar</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
               alt: ''
@@ -49,36 +49,36 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
               alt: ''
-            title: Arbeta med Microsoft Managed Desktop
+            title: Arbeta med Microsoft Hanterat skrivbord
   - title: Nya artiklar och blogginlägg
     items:
       - type: paragraph
-        text: Läs den senaste och bästa informationen du behöver veta.
+        text: Läs den senaste och bästa informationen du behöver.
       - type: list
         style: cards
         className: cardsM
         columns: 2
         items:
           - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '- Jag vet inte vad du ska. Din fullständiga översikt till Microsoft Managed Desktop'
+            title: '[Översikt] Din fullständiga översikt till Microsoft Hanterat skrivbord'
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
           - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '- Jag vet inte vad du vill. Studie: Ökande efterfrågan på managed desktop-tjänster'
+            title: '[Teknisk] Studie: ökande behov av hanterade skrivbordstjänster'
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
           - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '- Jag vet inte vad du ska. Njut av ditt företag med en modern arbetsplats'
+            title: '[E-bok] Ge ditt företag förtjusningen med en modern arbetsplats'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
               alt: ''
   - title: Videor
     items:
       - type: paragraph
-        text: Lär dig mer om fördelarna med Microsoft Managed Desktop från VP of Technology på Indiana Pacers.
+        text: Lär dig mer om fördelarna med Microsoft Hanterat skrivbord från en teknikchef hos Indiana Pacers.
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
       - type: paragraph
-        text: General Manager för Microsoft Managed Desktop delar alla höjdpunkter i tjänsten vid den årliga Ignite-konferensen.
+        text: 'Vd:n för Microsoft Hanterat skrivbord delar med sig av alla tjänstens höjdpunkter vid den årliga Ignite-konferensen.'
       - type: markdown
         text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
