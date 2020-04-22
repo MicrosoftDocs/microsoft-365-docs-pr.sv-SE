@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå den grundläggande strukturen i Contosos lokala IT-infrastruktur och hur företagets behov uppfylldes av Microsoft 365 Enterprise.
-ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810026"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625296"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contosos IT-infrastruktur och affärsbehov
 
@@ -126,7 +126,7 @@ Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 
 | Säkerhet |  |  |
 |  | Identitets- och åtkomsthantering | Dedikerade globala administratörskonton med Azure Multi-Factor Authentication (MFA) och Azure AD Privileged Identity Management (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Avancerat skydd <BR> Office 365 Avancerat skydd <BR> Office 365 undersökning av hot och svar <BR> |
-|  | Informationsskydd | Azure Information Protection <BR> Dataförlustskydd i Office 365 (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Informationsskydd | Azure Information Protection <BR> Skydd mot dataförlust (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Säkerhetshantering | Azure Security Center  <BR> Windows Defender Säkerhetscenter |
 | Fjärr- och mobilåtkomst för affärspartner |  |  |
 |  | Högre säkerhet för arbetare och distansarbetare | Microsoft Intune |
@@ -135,7 +135,7 @@ Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 
 | Efterlevnad |  |  |
 |  | Följa regionala efterlevnadskrav | GDPR-funktioner i Office 365 |
 | Hantering |  |  |
-|  | Minska IT-omkostnaderna för installation av klientuppdateringar | Distributionsringar <BR> Windows 10 Enterprise-uppdateringar <BR> Office 365 ProPlus-uppdateringar |
+|  | Minska IT-omkostnaderna för installation av klientuppdateringar | Distributionsringar <BR> Windows 10 Enterprise-uppdateringar <BR> Microsoft 365-applikationer för företag uppdateringar |
 ||||
 
 ## <a name="next-step"></a>Nästa steg

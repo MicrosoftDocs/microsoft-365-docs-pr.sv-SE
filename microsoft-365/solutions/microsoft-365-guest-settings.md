@@ -11,22 +11,22 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Läs mer om de tillgängliga inställningarna för gästdelning i Microsoft 365.
-ms.openlocfilehash: 74bf2fd431b604b7f38043bfc029232137b24cf1
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 396f55063461bb4a87813cc1e3943c5a4afd7156
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42808775"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625164"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
-I den här artikeln beskrivs de olika inställningarna som kan påverka delning med personer utanför organisationen för Microsoft 365-arbetsbelastningar: Teams, Office 365-grupper, SharePoint och OneDrive. Dessa inställningar finns i administrationscentret för Azure Active Directory, Microsoft 365, Teams och SharePoint.
+I den här artikeln beskrivs de olika inställningarna som kan påverka delning med personer utanför organisationen för Microsoft 365-arbetsbelastningar: Teams, Microsoft-grupper, SharePoint och OneDrive. Dessa inställningar finns i administrationscentret för Azure Active Directory, Microsoft 365, Teams och SharePoint.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 **Administratörsroll:** Global administratör
 
-Azure Active Directory är den katalogtjänst som används av Microsoft 365. Inställningarna för organisationsrelationer i Azure Active Directory påverkar direkt delning i Teams, Office 365-grupper, SharePoint och OneDrive.
+Azure Active Directory är den katalogtjänst som används av Microsoft 365. Inställningarna för organisationsrelationer i Azure Active Directory påverkar direkt delning i Teams, Microsoft 365-grupper, SharePoint och OneDrive.
 
 > [!NOTE]
 > De här inställningarna påverkar bara SharePoint när [SharePoint- och OneDrive-integrering med Azure AD B2B (förhandsversion)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) har konfigurerats. I tabellen nedan förutsätts det att den har konfigurerats.
@@ -41,7 +41,7 @@ Azure Active Directory är den katalogtjänst som används av Microsoft 365. Ins
 |:-----|:-----|:-----|
 |Behörigheterna för gästanvändare är begränsade|Ja|Den här inställningen påverkar katalogaktiviteterna som en gäst kan utföra.|
 |Administratörer och användare i gästinbjudarrollen kan bjuda in|Ja|När du har angett **Ja** kan administratörer bjuda in gäster via Azure AD och Microsoft 365-delningar, t.ex. Teams och SharePoint. Om du har angett **Nej** kan de inte göra det.|
-|Medlemmar kan bjuda in|Ja|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Office 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Office 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Det här är den samma inställningen som **Låt användarna lägga till nya gäster i organisationen** för säkerhet och sekretess i Microsoft 365.|
+|Medlemmar kan bjuda in|Ja|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Det här är den samma inställningen som **Låt användarna lägga till nya gäster i organisationen** för säkerhet och sekretess i Microsoft 365.|
 |Gäster kan bjuda in|Ja|När du har angett **Ja** kan gäster i katalogen bjuda in andra gäster för att samarbeta om Azure AD-resurser och filer och mappar i SharePoint och OneDrive. Om du har angett **Nej** kan de inte göra det. <br><br>Observera att **Tillåt externa användare att hitta användarkonton i katalogen genom att skriva in exakta e-postadressmatchningar** måste vara aktiverat i administrationscentret för SharePoint för att gästerna ska kunna dela filer och mappar med andra gäster.|
 |Aktivera e-engångslösenord för gäster (förhandsversion)|Nej|När du har angett **Ja** kan gäster utan MSA-konto eller ett arbets- eller skolkonto [autentisera med Azure AD med ett engångslösenord](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode). Om du har angett **Nej** måste användarna skapa ett Microsoft-konto för att kunna autentisera. Den här inställningen måste vara inställd på **Ja** för [SharePoint- och OneDrive-integrering med Azure AD B2B (för hands version)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) för att fungera.|
 |Samarbetsbegränsningar|Tillåt att inbjudningar skickas till alla domäner|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint. Du kan tillåta eller blockera domäner på en mer detaljerad nivå med hjälp av domänfiltrering i SharePoint eller Teams.|
@@ -52,7 +52,7 @@ Dessa inställningar påverkar hur användare bjuds in till katalogen. De påver
 
 **Administratörsroll:** Global administratör
 
-Administrationscentret för Microsoft 365 har inställningar på organisationsnivå för delning och för Office 365-grupper.
+Administrationscenter för Microsoft 365 har inställningar på organisationsnivå för delning och för Microsoft 365-grupper.
 
 ### <a name="sharing"></a>Delning
 
@@ -62,18 +62,18 @@ Administrationscentret för Microsoft 365 har inställningar på organisationsni
 
 |**Inställning**|**Standard**|**Beskrivning**|
 |:-----|:-----|:-----|
-|Låt användarna lägga till nya gäster i organisationen|På|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Office 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Office 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Den här motsvarar inställningen **Medlemmar kan bjuda in** i Azure Active Directory för relationer i organisationen.|
+|Låt användarna lägga till nya gäster i organisationen|På|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Den här motsvarar inställningen **Medlemmar kan bjuda in** i Azure Active Directory för relationer i organisationen.|
 
-### <a name="office-365-groups"></a>Grupper i Office 365
+### <a name="microsoft-365-groups"></a>Microsoft 365-grupper
 
-**Navigering:** [Administrationscenter för Microsoft 365](https://admin.microsoft.com) > Inställningar > Inställningar > Office 365-grupper
+**Navigering:** [Administrationscenter för Microsoft 365](https://admin.microsoft.com) > Inställningar > Inställningar > Microsoft 365-grupper
 
-![Skärmbild av gästinställningarna för Office 365-grupper i administrationscentret för Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Skärmbild av gästinställningarna för Microsoft 365-grupper i administrationscenter för Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 |**Inställning**|**Standard**|**Beskrivning**|
 |:-----|:-----|:-----|
-|Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll|På|När den här inställningen är **På** kan gäster komma åt gruppinnehåll. När den är **Av** kan de inte det. Den här inställningen ska vara **På** i alla situationer där gästanvändare interagerar med Office 365-grupper och Teams.|
-|Låt gruppägare lägga till personer utanför organisationen i grupper|På|När inställningen är **På** kan ägare av Office 365-grupper eller Teams bjuda in nya gäster till gruppen. När den är **Av** kan ägare endast bjuda in gäster som redan finns i katalogen.|
+|Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll|På|När den här inställningen är **På** kan gäster komma åt gruppinnehåll. När den är **Av** kan de inte det. Den här inställningen ska vara **På** i alla situationer där gästanvändare interagerar med Microsoft 365-grupper och Teams.|
+|Låt gruppägare lägga till personer utanför organisationen i grupper|På|När inställningen är **På** kan ägare av Microsoft 365-grupper eller Teams bjuda in nya gäster till gruppen. När den är **Av** kan ägare endast bjuda in gäster som redan finns i katalogen.|
 
 Dessa är inställningar på organisationsnivå. Mer information om hur du ändrar de här inställningarna på gruppnivå genom att använda PowerShell finns under[Skapa inställningar för en viss grupp](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
 
@@ -136,7 +136,7 @@ Huvudinställningen för gäståtkomst i Teams **Tillåt gäståtkomst i Teams**
 
 **Administratörsroll:** SharePoint-administrator
 
-De här inställningarna påverkar alla webbplatser i organisationen. De påverkar inte Office 365-grupper eller Teams direkt, men vi rekommenderar att du justerar inställningarna i enlighet med inställningarna för Office 365-grupper och Teams för att undvika användningsproblem. (Om gästdelning till exempel är tillåtet i Teams men inte i SharePoint, har gästerna i Teams inte åtkomst till fliken Filer eftersom Teams-filer lagras i SharePoint.)
+De här inställningarna påverkar alla webbplatser i organisationen. De påverkar inte Microsoft 365-grupper eller Teams direkt, men vi rekommenderar att du justerar inställningarna i enlighet med inställningarna för Microsoft 365-grupper och Teams för att undvika användningsproblem. (Om gästdelning till exempel är tillåtet i Teams men inte i SharePoint, har gästerna i Teams inte åtkomst till fliken Filer eftersom Teams-filer lagras i SharePoint.)
 
 ### <a name="sharepoint-and-onedrive-sharing-settings"></a>Delningsinställningar för SharePoint och OneDrive
 
@@ -180,7 +180,7 @@ När filer och mappar delas i SharePoint och OneDrive får delningsmottagare en 
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>Inställningar för säkerhetsgrupper i SharePoint och OneDrive
 
-Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive begränsar du delning till personer i särskilda säkerhetsgrupper. De här inställningarna påverkar inte delning via Office 365-grupper eller Teams. Gäster som bjuds in via en grupp eller Teams har också åtkomst till den associerade webbplatsen, men dokument- och mappdelning kan endast göras av personer i de angivna säkerhetsgrupperna.
+Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive begränsar du delning till personer i särskilda säkerhetsgrupper. De här inställningarna påverkar inte delning via Microsoft 365-grupper eller Teams. Gäster som bjuds in via en grupp eller Teams har också åtkomst till den associerade webbplatsen, men dokument- och mappdelning kan endast göras av personer i de angivna säkerhetsgrupperna.
 
 **Navigering:** Administrationscenter för SharePoint > Delning > Begränsa extern delning till specifika säkerhetsgrupper
 
@@ -234,7 +234,7 @@ I tabellen nedan visas standardinställningen för delning för varje webbplatst
 |:-----|:-----|
 |Klassisk|**Endast personer i organisationen**|
 |OneDrive|**Alla**|
-|Gruppanslutna webbplatser (inklusive Teams)|**Nya och befintliga gäster** om inställningen för Office 365-grupper **Låt gruppägare lägga till personer utanför organisationen i grupper** är **På** – annars **Endast befintliga gäster**.|
+|Gruppanslutna webbplatser (inklusive Teams)|**Nya och befintliga gäster** om inställningen för Microsoft 365-grupper **Låt gruppägare lägga till personer utanför organisationen i grupper** är **På** – annars **Endast befintliga gäster**.|
 |Kommunikation|**Endast personer i organisationen**|
 |Moderna webbplatser utan grupp (#STS3-gruppwebbplats)|**Endast personer i organisationen**|
 
@@ -247,4 +247,4 @@ I tabellen nedan visas standardinställningen för delning för varje webbplatst
 
 [Gäståtkomst i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/guest-access)
 
-[Lägga till gäster i Office 365-grupper](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Lägga till gäster i Microsoft 365-grupper](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

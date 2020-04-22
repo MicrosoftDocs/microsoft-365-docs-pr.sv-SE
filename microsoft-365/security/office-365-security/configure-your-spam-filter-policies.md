@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa om hur de kan skapa, ändra och ta bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+description: I de grundläggande inställningarna för skräppostfilter kan du till exempel välja vilken åtgärd du ska vidta för meddelanden som identifieras som skräppost.
+ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231022"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637718"
 ---
-# <a name="configure-anti-spam-policies-in-office-365"></a>Konfigurera principer för skräppostskydd i Office 365
+# <a name="configure-anti-spam-policies"></a>Konfigurera principer för skräppostskydd
 
-Om du är en Office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor skyddas automatiskt inkommande e-postmeddelanden mot skräppost av EOP. EOP använder principer för skräppostskydd (kallas även för principer för skräppostfilter eller principer för innehållsfilter) som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost i Office 365](anti-spam-protection.md).
+Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor skyddas automatiskt inkommande e-postmeddelanden mot skräppost av EOP. EOP använder principer för skräppostskydd (kallas även för principer för skräppostfilter eller principer för innehållsfilter) som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost](anti-spam-protection.md).
 
 Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för skräppostskydd. För mer detaljerad kontroll kan du också skapa egna principer för skräppostskydd som gäller för vissa användare, grupper eller domäner i din organisation. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
-Du kan konfigurera principer för skräppostskydd i Säkerhets- och efterlevnadscenter för Office 365 eller i PowerShell (Exchange Online PowerShell för Office 365-kunder; Exchange Online Protection PowerShell för fristående EOP-kunder).
+Du kan konfigurera principer för skräppostskydd i Säkerhets- och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-kunder; Exchange Online Protection PowerShell för fristående EOP-kunder).
 
-## <a name="anti-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Principer för skräppostskydd i Säkerhets- och efterlevnadscenter för Office 365 jämfört med Exchange Online PowerShell eller Exchange Online Protection PowerShell
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Principer för skräppostskydd i Säkerhets- och efterlevnadscenter jämfört med Exchange Online PowerShell eller Exchange Online Protection PowerShell
 
 De grundläggande elementen i en princip för skräppostskydd i EOP är:
 
@@ -73,9 +73,9 @@ Om du vill öka effektiviteten för filtrering av skräppost kan du skapa anpass
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppostskydd måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör**. För skrivskyddad behörighet till principer för skräppostskydd måste du vara medlem i rollgruppen **Säkerhetsläsare**. Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppostskydd måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör**. För skrivskyddad behörighet till principer för skräppostskydd måste du vara medlem i rollgruppen **Säkerhetsläsare**. Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- De rekommenderade inställningarna för skräppostprinciper finns i avsnittet om [EOP-principer för skräppostskydd](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- De rekommenderade inställningarna för principer för program mot skadlig kod finns i avsnittet om [EOP-principer för skräppostskydd](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd
 
@@ -280,7 +280,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
 3. Klicka på **Redigera princip**.
 
-Inställningarna i den utfällbara rutan som visas är identiska med de i avsnittet [Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd](#use-the-security--compliance-center-to-create-anti-spam-policies).
+För anpassade principer för skräppostskydd är de tillgängliga inställningarna i den utfällbara rutan som visas identiska med de som beskrivs i avsnittet [Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd](#use-the-security--compliance-center-to-create-anti-spam-policies).
 
 För standardprincipen för skräppostskydd med namnet **Standardprincip för skräppostfilter** är avsnittet **Tillämpas på** inte tillgängligt (principen tillämpas på alla), och du kan inte byta namn på principen.
 
@@ -341,6 +341,11 @@ När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan
    - **Aktivera aviseringar om skräppost för slutanvändare**: Markera kryssrutan om du vill aktivera aviseringar. Avmarkera kryssrutan om du vill inaktivera aviseringar.
 
    - **Skicka skräppostaviseringar till slutanvändare varje (dagar)**: Välj hur ofta aviseringar ska skickas. Standardvärdet är 3 dagar. Du kan ange 1 till 15 dagar.
+   
+     Det finns tre cykler för skräppostaviseringar för användare inom en 24-timmarsperiod som startar vid följande tidpunkter: 01:00 UTC, 08:00 UTC och 16:00 UTC. 
+    
+     > [!NOTE]
+     > Om vi missade en avisering under en tidigare cykel skickas aviseringen under nästföljande cykeln. Det här kan få det att verka som om flera aviseringar skickas ut samma dag.
 
    - **Aviseringsspråk**: Klicka på listrutan och välj ett tillgängligt språk i listan. Standardvärdet är **Standard**, vilket innebär att karantänaviseringar för slutanvändare använder standardspråket för EOP-organisationen.
 
@@ -460,7 +465,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 Om du vill visa befintliga regler för skräppostfilter använder du följande syntax:
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
 ```
 
 Om du vill returnera en sammanfattningslista över alla regler för skräppostfilter kör du följande kommando:
@@ -495,7 +500,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedContentFilter
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Använda PowerShell för att ändra principer för skräppostfilter
 
-Förutom följande objekt är samma inställningar tillgängliga när du ändrar en princip för skräppostfilter i PowerShell som när du skapar principen enligt beskrivningen i avsnittet [Steg 1: Använd PowerShell för att skapa en princip för skräppostfilter](#step-1-use-powershell-to-create-a-spam-filter-policy) tidigare i den här artikeln.
+Förutom följande objekt är samma inställningar tillgängliga när du ändrar en princip för filter mot skadlig kod i PowerShell som när du skapar principen enligt beskrivningen i avsnittet [Steg 1: Använd PowerShell för att skapa en princip för skräppostfilter](#step-1-use-powershell-to-create-a-spam-filter-policy) tidigare i den här artikeln.
 
 - Switchparametern _MakeDefault_ som omvandlar den angivna principen till standardprincipen (tillämpas på alla, alltid prioriteten **Lägsta** och du kan inte ta bort den) är endast tillgänglig när du ändrar en princip för skräppostfilter i PowerShell.
 

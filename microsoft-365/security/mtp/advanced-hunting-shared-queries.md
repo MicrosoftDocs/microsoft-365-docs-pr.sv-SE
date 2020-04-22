@@ -17,17 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 38eb3c39c5473d0a729b12771b61e965dbc81931
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929486"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781523"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Använda delade frågor i avancerad jakt
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
@@ -60,15 +60,15 @@ Du kan spara en ny eller befintlig fråga så att den bara är tillgänglig för
 2. Välj **Ta bort** och bekräfta borttagning. Du kan också välja **Byt namn** och ange ett nytt namn för frågan.
 
 ## <a name="access-queries-in-the-github-repository"></a>Komma åt frågor i GitHub-databasen  
-Microsofts säkerhetsforskare delar regelbundet avancerade jaktfrågor i ett [angivet offentligt arkiv på GitHub](https://github.com/microsoft/MTP-AHQ). Databasen är öppen för bidrag. För att [bidra, gå med GitHub gratis](https://github.com/).
+Microsofts säkerhetsforskare delar regelbundet avancerade jaktfrågor i ett [angivet offentligt arkiv på GitHub](https://aka.ms/hunting-queries). Databasen är öppen för bidrag. För att [bidra, gå med GitHub gratis](https://github.com/).
 
 >[!tip]
 >Microsofts säkerhetsforskare tillhandahåller också avancerade jaktfrågor som du kan använda för att hitta aktiviteter och indikatorer som är kopplade till nya hot. Dessa frågor tillhandahålls som en del av [hotanalysrapporterna](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Security Center.
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

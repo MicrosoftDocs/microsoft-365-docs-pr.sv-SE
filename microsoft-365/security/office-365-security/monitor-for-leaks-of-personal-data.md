@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
-ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9bc56d1de153f1357064d2b3ddada0d0533bc3cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806810"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635166"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -33,13 +33,13 @@ Det finns många verktyg som kan användas för att övervaka användning och tr
 
 På bilden:
 
-- Börja med Office 365-rapporter för dataförlustskydd för att övervaka personliga data i SharePoint Online, OneDrive för företag och e-post under överföring. De ger den högsta detaljnivån för övervakning av personliga data. Rapporterna innefattar dock inte alla tjänster i Office 365.
+- Börja med Microsoft 365-rapporter för dataförlustskydd för att övervaka personliga data i SharePoint Online, OneDrive för företag och e-post under överföring. De ger den högsta detaljnivån för övervakning av personliga data. Rapporterna innefattar dock inte alla tjänster i Office 365.
 
-- Använd sedan aviseringsprinciper och granskningsloggen för Office 365 för att övervaka aktiviteten i Office 365-tjänster. Konfigurera löpande övervakning eller sök efter en händelse i granskningsloggen. Granskningsloggen för Office 365 fungerar för alla Office 365-tjänster – Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, administratörsaktivitet, OneDrive för företag, SharePoint Online, e-post under överföring och vilande inkorgar. Skype-konversationer ingår i vilande inkorgar.
+- Använd sedan aviseringsprinciper och granskningsloggen för att övervaka aktiviteten i flera tjänster. Konfigurera löpande övervakning eller sök efter en händelse i granskningsloggen. Granskningsloggen fungerar för alla tjänster – Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, administratörsaktivitet, OneDrive för företag, SharePoint Online, e-post under överföring och vilande inkorgar. Skype-konversationer ingår i vilande inkorgar.
 
-- Till sist ska du använda Microsoft Cloud App Security för att övervaka filer med känsliga data hos andra SaaS-leverantörer. Inom kort blir det möjligt att använda Office 365-känsliga informationstyper och enhetliga etiketter för Azure Information Protection och Office med Cloud App Security. Du kan konfigurera principer som gäller för alla dina SaaS-appar eller vissa appar (som Box). Cloud App Security identifierar inte filer i Exchange Online, till exempel bifogade filer i e-post.
+- Till sist ska du använda Microsoft Cloud App Security för att övervaka filer med känsliga data hos andra SaaS-leverantörer. Inom kort blir det möjligt att använda känsliga informationstyper och enhetliga etiketter för Azure Information Protection och Office med Cloud App Security. Du kan konfigurera principer som gäller för alla dina SaaS-appar eller vissa appar (som Box). Cloud App Security identifierar inte filer i Exchange Online, till exempel bifogade filer i e-post.
 
-## <a name="office-365-data-loss-prevention-reports"></a>Rapporter för dataförlustskydd i Office 365
+## <a name="data-loss-prevention-reports"></a>Rapporter för dataförlustskydd
 
 När du har skapat dina principer för dataförlustskydd (DLP) ska du kontrollera att de fungerar som de ska och hjälper dig att hålla dig uppdaterad. Med DLP-rapporterna i Office 365 kan du snabbt visa antalet DLP-principmatchningar, åsidosättningar eller falska positiva identifieringar, kontrollera om de ökar eller minskar med tiden, filtrera rapporten på olika sätt och visa ytterligare information genom att markera en punkt på en linje i diagrammet.
 
@@ -65,17 +65,17 @@ Mer information finns i [Visa rapporterna för dataförlustskydd](https://docs.m
 
 ![Rapport som visar matchningar av DLP-principer](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="office-365-audit-log-and-alert-policies"></a>Principer för Office 365-granskningslogg och -avisering
+## <a name="audit-log-and-alert-policies"></a>Principer för granskningslogg och aviseringar
 
-I granskningsloggen för Office 365 finns händelser från Exchange Online, SharePoint Online, OneDrive för företag, Azure Active Directory, Microsoft Teams, Power BI, Sway och andra Office 365-tjänster.
+I granskningsloggen finns händelser från Exchange Online, SharePoint Online, OneDrive för företag, Azure Active Directory, Microsoft Teams, Power BI, Sway och andra tjänster.
 
-Säkerhetscenter och efterlevnadscenter tillhandahåller två olika sätt att övervaka och rapportera mot granskningsloggen för Office 365:
+Säkerhetscenter och efterlevnadscenter tillhandahåller två olika sätt att övervaka och rapportera mot granskningsloggen:
 
 - Konfigurera aviseringsprinciper, visa aviseringar och följa trender – använd verktygen för aviseringsprinciper och avisering på instrumentpanelen i säkerhetscenter eller efterlevnadscenter.
 
 - Sök direkt i granskningsloggen – sök efter alla händelser i ett specifikt datumintervall. Du kan också filtrera resultatet utifrån vissa villkor, t. ex. användaren som utförde åtgärden, åtgärden eller målobjektet.
 
-Informationssäkerhets- och regelefterlevnadsteam kan använda de här verktygen för att proaktivt granska aktiviteter som utförs av både slutanvändare och administratörer i olika Office 365-tjänster. Automatiska aviseringar kan konfigureras för att skicka e-postmeddelanden när vissa aktiviteter förekommer på särskilda webbplatssamlingar, till exempel när innehåll delas från webbplatser som är kända för att innehålla GDPR-relaterad information. På så sätt kan teamen följa upp användare för att säkerställa att företagets säkerhetsprinciper följs eller för att erbjuda ytterligare utbildning.
+Informationssäkerhets- och regelefterlevnadsteam kan använda de här verktygen för att proaktivt granska aktiviteter som utförs av både slutanvändare och administratörer i olika tjänster. Automatiska aviseringar kan konfigureras för att skicka e-postmeddelanden när vissa aktiviteter förekommer på särskilda webbplatssamlingar, till exempel när innehåll delas från webbplatser som är kända för att innehålla GDPR-relaterad information. På så sätt kan teamen följa upp användare för att säkerställa att företagets säkerhetsprinciper följs eller för att erbjuda ytterligare utbildning.
 
 Team med ansvar för informationssäkerhet kan även söka i granskningsloggen för att undersöka misstänkta dataöverträdelser och fastställa både överträdelsens grundorsak och omfattning. Denna inbyggda funktion underlättar efterlevnaden av artikel 33 och 34 i GDPR, som kräver att anmälningar lämnas in till GDPR-tillsynsmyndigheterna och till de registrerade själva vid en dataöverträdelse under en viss tidsperiod. Poster i granskningsloggen sparas bara i 90 dagar i tjänsten, men det rekommenderas ofta (och många organisationer har krävt) att loggarna sparas under längre tidsperioder.
 
@@ -87,13 +87,13 @@ Mer information om aviseringsprinciper och sökning i granskningsloggen:
 
 - [Söka i granskningsloggen efter användar- och administratörsaktivitet i Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduktion)
 
-- [Aktivera och inaktivera granskningsloggsökning för Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Aktivera och inaktivera granskningsloggsökning](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 - [Söka i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Detaljerade egenskaper i Office 365 granskningslogg](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Detaljerade egenskaper i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -113,9 +113,9 @@ Den andra principen blockerar nedladdning av filer till en ohanterad enhet. Du v
 
 Dessa attributtyper kommer snart att ingå i Cloud App Security:
 
-- Känsliga informationstyper i Office 365
+- Typer av känslig information
 
-- Enhetliga etiketter i Office 365 och Azure Information Protection
+- Enhetliga etiketter i Microsoft 365 och Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Instrumentpanelen i Cloud App Security
 

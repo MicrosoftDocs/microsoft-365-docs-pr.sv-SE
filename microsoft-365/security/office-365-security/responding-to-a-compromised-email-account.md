@@ -1,5 +1,5 @@
 ---
-title: Svara på ett komprometterat e-postkonto i Office 365
+title: Hantera ett komprometterat e-postkonto
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,26 +15,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Lär dig hur du känner igen och svarar på ett komprometterat e-postkonto i Office 365
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto i Microsoft 365
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812965"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634346"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Svara på ett komprometterat e-postkonto i Office 365
+# <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
-**Sammanfattning** Lär dig hur du känner igen och svarar på ett komprometterat e-postkonto i Office 365.
+**Sammanfattning** Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto i Microsoft 365.
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>Vad är ett komprometterat e-postkonto i Office 365?
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>Vad är ett komprometterat e-postkonto i Microsoft 365?
 
-Åtkomst till Office 365-postlådor, data och andra tjänster styrs genom användningen av autentiseringsuppgifter, t. ex. ett användarnamn och lösenord eller en PIN-kod. När någon annan än den avsedda användaren stjäl de här autentiseringsuppgifterna anses de stulna uppgifterna ha komprometterats. Angriparen kan använda dem för att logga in som den ursprungliga användaren och utföra illegala åtgärder.
-Med hjälp av de stulna autentiseringsuppgifterna kan angriparen komma åt användarens Office 365-postlåda, SharePoint-mappar eller filer i användarens OneDrive. En vanligt förekommande åtgärd är att angriparen skickar e-postmeddelanden i den ursprungliga användarens namn till mottagare både inom och utanför organisationen. När angriparen skickar data via e-post till externa mottagare kallas det för dataexfiltrering.
+Åtkomst till Microsoft 365-postlådor, data och andra tjänster styrs genom användningen av autentiseringsuppgifter, t.ex. ett användarnamn och lösenord eller en PIN-kod. När någon annan än den avsedda användaren stjäl de här autentiseringsuppgifterna anses de stulna uppgifterna ha komprometterats. Angriparen kan använda dem för att logga in som den ursprungliga användaren och utföra illegala åtgärder.
+Med hjälp av de stulna autentiseringsuppgifterna kan angriparen komma åt användarens Microsoft 365-postlåda, SharePoint-mappar eller filer i användarens OneDrive. En vanligt förekommande åtgärd är att angriparen skickar e-postmeddelanden i den ursprungliga användarens namn till mottagare både inom och utanför organisationen. När angriparen skickar data via e-post till externa mottagare kallas det för dataexfiltrering.
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptom hos ett komprometterat Office 365-e-postkonto
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Symptom hos ett komprometterat Microsoft-e-postkonto
 
-Användarna kan lägga märka till och rapportera ovanliga aktiviteter i sina Office 365-postlådor. Här är några vanliga tecken:
+Användarna kan lägga märka till och rapportera ovanliga aktiviteter i sina Microsoft 365-postlådor. Här är några vanliga tecken:
 
 - Misstänkt aktivitet, t.ex. saknade eller borttagna e-postmeddelanden.
 
@@ -58,9 +58,9 @@ Användarna kan lägga märka till och rapportera ovanliga aktiviteter i sina Of
 
 Om en användare rapporterar något av ovanstående symptom bör du utföra ytterligare utredningar. Säkerhets- och efterlevnadscenter för Microsoft 365 och Azure-portalen tillhandahåller verktyg som hjälper dig att undersöka aktiviteter hos ett användarkonto som du misstänker kan ha komprometterats.
 
-- **Enhetliga granskningsloggar i Säkerhets- och efterlevnadscenter i Office 365**: Granska alla aktiviteter för det misstänkta kontot genom att filtrera resultaten för datumintervallet från före den misstänkta aktiviteten till dagens datum. Filtrera inte på aktiviteterna under sökningen.
+- **Enhetliga granskningsloggar i Säkerhets- och efterlevnadscenter**: Granska alla aktiviteter för det misstänkta kontot genom att filtrera resultaten för datumintervallet från före den misstänkta aktiviteten till dagens datum. Filtrera inte på aktiviteterna under sökningen.
 
-- **Office 365-granskningsloggar för administratörer i EAC**: I Exchange Online kan du använda administrationscentret för Exchange (EAC) för att söka efter och visa poster i granskningsloggen för administratörer. I granskningsloggen för administratörer registreras vissa åtgärder baserat på Exchange Online PowerShell-cmdletar, utförda av administratörer och användare som har tilldelats administratörsbehörigheter. Poster i granskningsloggen för administratörer innehåller information om vilken cmdlet som kördes, vilka parametrar som användes, vem som körde cmdleten och vilka objekt som påverkades.
+- **Granskningsloggar för administratörer i EAC**: I Exchange Online kan du använda administrationscentret för Exchange (EAC) för att söka efter och visa poster i granskningsloggen för administratörer. I granskningsloggen för administratörer registreras vissa åtgärder baserat på Exchange Online PowerShell-cmdletar, utförda av administratörer och användare som har tilldelats administratörsbehörigheter. Poster i granskningsloggen för administratörer innehåller information om vilken cmdlet som kördes, vilka parametrar som användes, vem som körde cmdleten och vilka objekt som påverkades.
 
 - **Inloggningsloggar för Azure AD och andra riskrapporter på Azure AD-portalen**: Granska värdena i följande kolumner:
 
@@ -72,7 +72,7 @@ Om en användare rapporterar något av ovanstående symptom bör du utföra ytte
 
   - lyckad eller misslyckad inloggning
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Så kan du skydda och återställa e-postfunktionen till ett konto eller en postlåda i Office 365 som misstänks ha komprometterats
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Så kan du skydda och återställa e-postfunktionen till ett konto eller en postlåda i Microsoft 365 som misstänks ha komprometterats
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -85,7 +85,7 @@ Du måste utföra alla följande steg för att återta åtkomsten till ditt kont
 > [!WARNING]
 > Skicka inte det nya lösen ordet till den avsedda användaren via e-post, eftersom angriparen fortfarande har tillgång till postlådan.
 
-1. Följ rutinerna i Återställa ett Office 365 Business-lösenord för någon annan i [Återställa Office 365 Business-lösenord](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Följ rutinerna för att återställa ett lösenord för Microsoft 365-appar för företag för någon annan i [Återställa lösenord för Microsoft 365-appar för företag](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
 
 **Anmärkningar**:
 
@@ -93,7 +93,7 @@ Du måste utföra alla följande steg för att återta åtkomsten till ditt kont
 
 - Återanvänd aldrig något av ditt senaste fem lösenord. Även om kravet för lösenordshistorik gör att du kan återanvända ett lösenord du använt nyligen bör du välja något som angriparen inte kan gissa.
 
-- Om din lokala identitet är federerad med Office 365 måste du ändra ditt lösenord lokalt, och därefter informera administratören om skadan.
+- Om din lokala identitet är federerad med Microsoft 365 måste du ändra ditt lösenord lokalt och därefter informera administratören om skadan.
 
 > [!TIP]
 > Vi rekommenderar att du aktiverar multifaktorautentisering (MFA) för att förhindra kompromettering, i synnerhet för konton med administratörsbehörigheter.  Du kan läsa mer om MFA [här](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -178,13 +178,13 @@ Om du vill tillåta att en postlåda skickar e-post igen följer du procedurerna
 
 1. Var noga med att verifiera dina skickade meddelanden. Du kanske måste meddela personer i din kontaktlista att ditt konto har komprometterats. Angriparen kan ha bett om att få pengar genom så kallad förfalskning, t.ex. att du var fast i ett annat land och behövde pengar, eller så kan angriparen ha skickat ett virus för att kapa deras datorer.
 
-2. Andra tjänster som har använt Exchange-kontot som ett alternativt e-postkonto kan ha komprometterats. Utför först de här stegen för din Office 365-prenumeration och därefter för dina övriga konton.
+2. Andra tjänster som har använt Exchange-kontot som ett alternativt e-postkonto kan ha komprometterats. Utför först de här stegen för din Microsoft 365-prenumeration och därefter för dina övriga konton.
 
 3. Kontrollera att din kontaktinformation, t. ex. telefonnummer och adresser, är korrekt.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Skydda Office 365 som en expert på cybersäkerhet
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
-Din Office 365-prenumeration innehåller en kraftfull uppsättning säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd [Säkerhetsöversikt för Office 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Office 365-klient organisation.
+Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd [Säkerhetsöversikt för Microsoft 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Microsoft 365-klientorganisation.
 
 - Uppgifter som ska utföras under de första 30 dagarna.  De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 
@@ -194,7 +194,7 @@ Din Office 365-prenumeration innehåller en kraftfull uppsättning säkerhetsfun
 
 ## <a name="see-also"></a>Se även
 
-- [Identifiera och reparera Outlook-regler och inmatningsattacker i anpassade formulär i Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Identifiera och reparera Outlook-regler och inmatningsattacker i anpassade formulär i Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Klagomålscenter för brottslighet på Internet](https://www.ic3.gov/preventiontips.aspx)
 

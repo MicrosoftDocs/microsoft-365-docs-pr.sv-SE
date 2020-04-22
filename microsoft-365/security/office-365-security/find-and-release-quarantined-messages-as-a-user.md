@@ -1,5 +1,5 @@
 ---
-title: Hitta och släppa meddelanden i karantän som Office 365-användare
+title: Hitta och släppa meddelanden i karantän som användare
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,23 +16,23 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: Som Office 365-användare kan du visa, släppa och ta bort dina meddelanden i karantän (meddelanden där du är mottagare och skräppostfiltreringen har satt meddelandet i karantän som skräppost eller massutskick). Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevnadscenter.
-ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Som Microsoft 365-användare kan du visa, släppa och ta bort dina meddelanden i karantän (meddelanden där du är mottagare och skräppostfiltreringen har satt meddelandet i karantän som skräppost eller massutskick). Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevnadscenter.
+ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216910"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638112"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Hitta och släppa meddelanden i karantän som användare i Office 365
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>Hitta och släppa meddelanden i karantän som användare
 
-Karantänen lagrar potentiellt farliga eller oönskade meddelanden i Office 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor. Mer information finns i [Karantän i Office 365](quarantine-email-messages.md).
+Karantänen lagrar potentiellt farliga eller oönskade meddelanden i Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor. Mer information finns i [Karantän i Office 365](quarantine-email-messages.md).
 
 Som användare kan du visa, släppa och ta bort dina meddelanden i karantän där du är mottagare, och där meddelandet har satts i karantän som skräppost, massutskick eller (från och med april 2020) nätfiske. Du visar och hanterar dina meddelanden i karantän i Säkerhets- och efterlevnadscenter eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostmeddelanden](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Säkerhets- och efterlevnadscenter för Office 365 genom att gå till <https://protection.office.com>. Om du vill öppna karantänsidan direkt går du till <https://protection.office.com/quarantine>.
+- Gå till <https://protection.office.com> för att öppna Säkerhets- och efterlevnadscenter. Om du vill öppna karantänsidan direkt går du till <https://protection.office.com/quarantine>.
 
 - Administratörer kan konfigurera hur länge meddelanden behålls i karantän innan de tas bort permanent (principer för skräppostskydd). Meddelanden som har upphört att gälla och tas bort från karantänen går inte att återställa. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
@@ -66,7 +66,7 @@ Som användare kan du visa, släppa och ta bort dina meddelanden i karantän dä
 
    - **Meddelande-ID**
 
-   - **Principnamn**: denna egenskap visar principen som gjorde att meddelandet placerades i karantän. Du kan ge en administratör den här informationen.
+   - **Principnamn**
 
    - **Storlek**
 
@@ -108,7 +108,7 @@ Som användare kan du visa, släppa och ta bort dina meddelanden i karantän dä
 
    - **Ämne**: Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
 
-   När du har angett sökvillkor klickar du på ![knappen Uppdatera](../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
+   När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
 
 När du har hittat ett specifikt meddelande i karantän väljer du meddelandet för att visa information om det och vidta åtgärder för det (till exempel visa, släpp, ladda ned eller ta bort meddelandet).
 
@@ -150,7 +150,7 @@ När du har valt ett meddelande finns det alternativ för vad du kan göra med m
 
   Klicka på **Släpp meddelandet** när du är klar.
 
-- **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsoft Message Header Analyzer** (Microsofts analysverktyg för meddelanderubrik) för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Office 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
+- **Visa meddelandehuvud**: Välj den här länken om du vill visa meddelandehuvudets text. Om du vill analysera fälten och värden för huvuden mer ingående kopierar du meddelandehuvudets text till Urklipp och väljer sedan **Microsofts analysverktyg för meddelanderubrik** för att gå till analysverktyget för fjärranslutning (högerklicka och välj **Öppna i ny flik** om du inte vill lämna Microsoft 365 för att slutföra den här uppgiften). Klistra in meddelandehuvudet på sidan i analysverktyget för meddelanderubrik. Välj **Analyze headers** (Analysera rubriker):
 
 - **Förhandsgranska meddelandet**: Välj något av följande alternativ i den utfällbara rutan som visas:
 

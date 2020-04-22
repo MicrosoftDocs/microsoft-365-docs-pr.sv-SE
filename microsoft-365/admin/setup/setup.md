@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Office 365 för företag
+title: Konfigurera Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,25 +24,25 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: Lär dig hur du konfigurerar din prenumeration på Office 365 Business Premium, Office 365 Business Essentials, Office 365 Business eller Office 365 Education.
-ms.openlocfilehash: f862eb2042da329e70c7cc1658a5c1a037b56faa
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig hur du konfigurerar ditt Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365-applikationer för företag eller Office 365 Education-abonnemang.
+ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212179"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627552"
 ---
-# <a name="set-up-office-365-for-business"></a>Konfigurera Office 365 för företag
+# <a name="set-up-microsoft-365-for-business"></a>Konfigurera Microsoft 365 för företag
 
-Följ de här stegen för att få igång din verksamhet eller [ideella förening](https://go.microsoft.com/fwlink/p/?LinkId=627221) med [Office 365 Business Premium](https://go.microsoft.com/fwlink/p/?LinkId=627220), Office 365 Business Essentials, Office365 Business eller Office 365 Education.
+Följ de här stegen för att få igång din verksamhet eller [ideella förening](https://go.microsoft.com/fwlink/p/?LinkId=627221) med [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365-applikationer för företag eller Office 365 Education.
   
-Inte ett företag? Se [Konfigurera Office 365 Home eller Office 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
+Inte ett företag? Mer information finns i [konfiguration för Microsoft 365 Family eller Microsoft 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
   
 ## <a name="business-premium"></a>Business Premium
   
- *De här stegen gäller för företag och [ideella organisationer](https://go.microsoft.com/fwlink/p/?LinkId=627221) som har **[Office 365 Business Premium-abonnemang.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
+ *De här stegen gäller för företag och [ideella organisationer](https://go.microsoft.com/fwlink/p/?LinkId=627221) som har **[Microsoft 365 Business Standard-abonnemang.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
 
-Titta på en kort video om hur du konfigurerar Office 365 Business Premium.<br><br>
+Titta på en kort video om hur du konfigurerar Microsoft 365 Business Standard.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
 
@@ -50,15 +50,15 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 ### <a name="1-sign-up-and-set-up"></a>1. Registrera dig och konfigurera
 
-1. Registrera dig för ett Office 365 Business-abonnemang genom att gå till [webbplatsen för Office-produkter](https://www.aka.ms/office365signup) och välja **Köp nu**.
+1. Registrera dig för ett Microsoft 365 Business-abonnemang genom att gå till [webbplatsen för Office-produkter](https://www.aka.ms/office365signup) och välja **Köp nu**.
 
-2. Välj det abonnemang du vill ha, som till exempel **Office 365 Business Premium**.
+2. Välj det abonnemang du vill ha, som till exempel **Microsoft 365 Business Standard**.
 
-3. Följ stegen för att registrera dig för ett Office 365 Business-abonnemang.
+3. Följ stegen för att registrera dig för ett Microsoft 365 Business-abonnemang.
 
     När registreringsprocessen är klar dirigeras du till administrationscentret, där du kommer att följa en guide för att installera Office-program, lägga till din domän, lägga till användare och tilldela licenser. När du har slutfört den första konfigurationen kan du använda **konfigurationssidan** i administrationscentret och fortsätta att installera och konfigurera tjänsterna som medföljer prenumerationerna.
 
-    Mer information om installationsguiden för Office 365 och administrationscentrets **konfigurationssida** finns i [Skillnaden mellan installationsguiden för Office 365 och sidan Konfigurera](o365-setup-wizard-and-setup-page.md).
+    Mer information om installationsguiden för och administrationscentrets **konfigurationssida** finns i [Skillnaden mellan installationsguiden och sidan Konfigurera](o365-setup-wizard-and-setup-page.md).
 
 ### <a name="2-set-up-outlook-for-email"></a>2. Konfigurera Outlook för e-post
 
@@ -70,7 +70,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 2. Välj **Arkiv** \> **Information** \> **Lägg till konto**.
 
-3. Skriv din e-postadress för Office 365 och välj **Anslut**.
+3. Ange din Microsoft e-postadress och välj **Anslut**.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -78,7 +78,7 @@ Mer information finns i [Konfigurera Outlook för e-post](https://support.office
   
 ### <a name="3-import-email"></a>3. Importera e-post
 
-Om du tidigare använde Outlook med ett annat e-postkonto kan du importera din tidigare e-post, kalender och dina tidigare kontakter till ditt nya Office 365-konto.
+Om du tidigare använde Outlook med ett annat e-postkonto kan du importera din tidigare e-post, kalender och dina tidigare kontakter till ditt nya Microsoft-konto.
   
 1. **Exportera din gamla e-post**
 
@@ -98,7 +98,7 @@ Mer information finns i [Importera e-post med Outlook](https://support.office.co
   
 ### <a name="4-use-a-public-website"></a>4. Använda en offentlig webbplats
 
-Office 365 inkluderar inte en offentlig webbplats för ditt företag. Om du vill skapa en bör du överväga att använda en Microsoft-partner som GoDaddy eller WIX.
+Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du vill skapa en bör du överväga att använda en Microsoft-partner som GoDaddy eller WIX.
   
 1. Från administrationscentret går du till **Resurser** och väljer **Offentlig webbplats**.
 
@@ -110,11 +110,11 @@ Se mer på [Använda en offentlig webbplats](https://support.office.com/article/
   
 ## <a name="business-essentials"></a>Business Essentials
   
-*Följ de här anvisningarna för att konfigurera din **[Office 365 Business Essentials](https://go.microsoft.com/fwlink/p/?LinkId=627218)**-prenumeration. Med det här abonnemanget ansluter du dig till Office 365 online. Du installerar inte Office-programmen.*
+*Följ de här anvisningarna för att konfigurera din **[Microsoft 365 Business Basic](https://go.microsoft.com/fwlink/p/?LinkId=627218)**-prenumeration. Med det här abonnemanget ansluter du dig till Office 365 online. Du installerar inte Office-programmen.*
 
-### <a name="1-create-office-365-accounts-and-add-your-domain"></a>1. Skapa Office 365-konton och lägg till din domän
+### <a name="1-create-microsoft-365-accounts-and-add-your-domain"></a>1. Skapa Microsoft 365-konton och lägg till din domän
 
-I det här steget använder du inställningsguiden för att skapa Office 365-konton för användarna och lägga till din domän. I guiden kan du anpassa användar-ID:n och e-postadresser för ditt företag, t.ex. rob@contoso.com.
+I det här steget använder du inställningsguiden för att skapa Microsoft 365-konton för användarna och lägga till din domän. I guiden kan du anpassa användar-ID:n och e-postadresser för ditt företag, t.ex. rob@contoso.com.
   
 ::: moniker range="o365-worldwide"
 
@@ -140,17 +140,17 @@ Starta guiden genom att välja **Gå till inställningar**.
   
 ### <a name="2-import-email"></a>2. Importera e-post
 
-Flytta dina befintliga e-postmeddelanden och kontakter från andra e-postsystem till Office 365-postlådan så att du har allt på en och samma plats.
+Flytta dina befintliga e-postmeddelanden och kontakter från andra e-postsystem till Microsoft-postlådan så att du kan se alla objekt på ett och samma ställe.
   
 Migreringsalternativ finns i [Migrera e-post och kontakter](migrate-email-and-contacts-admin.md).
   
 ### <a name="3-connect-email-accounts"></a>3. Anslut e-postkonton
 
-Förutom att hantera din Office 365-e-post i Outlook kan du ansluta andra e-postkonton till Outlook, till exempel Gmail- och Yahoo-konton. På det här sättet kan du hantera all din e-post på en och samma plats. Du kan ansluta upp till fem e-postkonton i Outlook.
+Förutom att hantera din Microsoft-e-post i Outlook kan du ansluta andra e-postkonton till Outlook, till exempel Gmail- och Yahoo-konton. På det här sättet kan du hantera all din e-post på en och samma plats. Du kan ansluta upp till fem e-postkonton i Outlook.
   
 ::: moniker range="o365-worldwide"
 
-Logga in på Office 365 med ditt konto för arbetet eller skolan [https://www.office.com/signin](https://www.office.com/signin).
+Logga in på Microsoft 365 med ditt konto för arbetet eller skolan [https://www.office.com/signin](https://www.office.com/signin).
 
 ::: moniker-end
 
@@ -211,11 +211,11 @@ Om du använder Office 365 med 21Vianet går du till [https://portal.partner.mic
 
 ### <a name="5-store-files-online"></a>5. Lagra filer online
 
-I Office 365 är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+I Microsoft är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Microsoft](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
-Alla får automatiskt en **OneDrive** -lagringsplats i molnet när du skapar Office 365-konton åt dem. Med OneDrive får du tillgång till filerna från alla dina datorer, telefoner och surfplattor.
+Alla får automatiskt en **OneDrive**-lagringsplats i molnet när du skapar Microsoft-konton åt dem. Med OneDrive får du tillgång till filerna från alla dina datorer, telefoner och surfplattor.  
   
-1. Öppna OneDrive i Utforskaren på datorn. Eller, från [Office 365](https://www.office.com) kan du öppna **OneDrive** från appfönstret.
+1. Öppna OneDrive i Utforskaren på datorn. Eller, från [Microsoft 365](https://www.office.com) kan du öppna **OneDrive** från appfönstret.
 
 2. Visa och ladda upp personliga filer eller dela dokument och mappar genom att välja **Dela** och bjud sedan in andra att läsa dokumenten eller skicka dem en länk. Mer information om detta finns i [Dela filer och mappar i OneDrive](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business).
 
@@ -223,11 +223,11 @@ Se mer på [Ladda upp filer till ett bibliotek](https://support.office.com/artic
   
 ### <a name="get-started-using-office"></a>Kom igång med att använda Office
 
-Ta en rundtur i Office 365 och se hur du använder Office-mobilapparna. Se [Kom igång](../admin-overview/get-started-with-office-365.md).
+Ta en rundtur i Microsoft 365 och se hur du använder Office-mobilapparna. Se [Kom igång](../admin-overview/get-started-with-office-365.md).
   
 ## <a name="business"></a>Företag
   
-*I **[Office 365 Business-abonnemanget](https://go.microsoft.com/fwlink/p/?LinkId=627219)** ingår inte Office 365-e-post eller Skype för företag. I de här konfigurationsanvisningarna visar vi hur du lägger till ditt befintliga e-postkonto (t.ex. Gmail) i Outlook.*
+*I **[Microsoft 365 Business-abonnemanget](https://go.microsoft.com/fwlink/p/?LinkId=627219)** ingår inte Microsoft e-post eller Skype för företag. I de här konfigurationsanvisningarna visar vi hur du lägger till ditt befintliga e-postkonto (t.ex. Gmail) i Outlook.*
 
 ### <a name="1-add-users"></a>1. Lägg till användare
 
@@ -283,15 +283,15 @@ Behöver du mer detaljerade anvisningar eller vill du installera 64-bitarsversio
   
 ### <a name="3-set-up-mobile"></a>3. Konfigurera en mobil enhet
 
-Installera Office på din mobila enhet och konfigurera Outlook så att det fungerar med den nya Office 365-postlådan. Alla i gruppen måste utföra det här steget. Varje användare kan även installera Office-mobilapparna på upp till fem telefoner och fem surfplattor. 
+Installera Office på din mobila enhet och konfigurera Outlook så att det fungerar med den nya Microsoft-postlådan. Alla i gruppen måste utföra det här steget. Varje användare kan även installera Office-mobilapparna på upp till fem telefoner och fem surfplattor. 
   
 Få anvisningar för din enhet: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
   
 ### <a name="4-store-files-online"></a>4. Lagra filer online
 
-I Office 365 är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+I Microsoft är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
-Alla får automatiskt en **OneDrive** -lagringsplats i molnet när du skapar Office 365-konton åt dem. Med OneDrive får du tillgång till filerna från alla dina datorer, telefoner och surfplattor.
+Alla får automatiskt en **OneDrive**-lagringsplats i molnet när du skapar Microsoft-konton åt dem. Med OneDrive får du tillgång till filerna från alla dina datorer, telefoner och surfplattor.  
   
 1. Öppna OneDrive i Utforskaren på datorn. Eller, från [Office 365](https://www.office.com) kan du öppna **OneDrive** från appfönstret.
 
@@ -301,7 +301,7 @@ Se mer på [Ladda upp filer till ett bibliotek](https://support.office.com/artic
   
 ### <a name="get-started-using-office"></a>Kom igång med att använda Office
 
-Ta en rundtur i Office 365 och se hur du använder Office-mobilapparna. Se [Kom igång](../admin-overview/get-started-with-office-365.md).
+Ta en rundtur i Microsoft 365 och se hur du använder Office-mobilapparna. Se [Kom igång](../admin-overview/get-started-with-office-365.md).
   
 ## <a name="education"></a>Utbildning
   
@@ -309,7 +309,7 @@ Ta en rundtur i Office 365 och se hur du använder Office-mobilapparna. Se [Kom 
 
 ### <a name="get-ready-for-office-365"></a>Förbered dig för Office 365
 
-- **Kontrollera först att du är berättigad till ett Education-abonnemang:** Följ stegen för att [Verify your Office 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590), så att du kan godkännas av Office 365 för att använda ett Education-abonnemang. Sedan kan du konfigurera Office 365 på din skola genom att följa anvisningarna i den här artikeln.
+- **Kontrollera först att du är berättigad till ett Education-abonnemang:** Följ stegen för att [Verifiera din domän för att bevisa ägande, ideell eller utbildningsstatus eller för att aktivera Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590), så att du kan godkännas av Microsoft för att använda ett Education-abonnemang. Sedan kan du konfigurera Office 365 på din skola genom att följa anvisningarna i den här artikeln.
 
 - **Behöver du hjälp?** Om du vill få hjälp med mer avancerade distributioner är **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** ett bra ställe att börja på. Du kan även [söka efter en partner](https://go.microsoft.com/fwlink/p/?linkid=391089) som kan hjälpa dig.
 
@@ -317,7 +317,7 @@ Ta en rundtur i Office 365 och se hur du använder Office-mobilapparna. Se [Kom 
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. Lägg till skolans domän eller anslut din katalog
 
-I det här steget loggar du in på Office 365-portalen och lägger till skolans domän i din prenumeration. Då kan Microsoft kontrollera att du är berättigad till en Education-prenumeration.
+I det här steget loggar du in på administrationscenter för Microsoft 365 och lägger till skolans domän i din prenumeration. Då kan Microsoft kontrollera att du är berättigad till en Education-prenumeration.
   
 ::: moniker range="o365-worldwide"
 
@@ -339,7 +339,7 @@ Om du använder Office 365 som drivs av 21Vianet går du till [det här administ
 
 Starta guiden genom att välja **Gå till inställningar**.
 
-En genomgång av vad som händer när du kör installationsguiden finns i [Använda Office 365-installationsguiden](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
+En genomgång av vad som händer när du kör installationsguiden finns i [Använda installationsguiden](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
   
 Om du vill synkronisera användarna från en lokal katalog eller använda enkel inloggning **ska du inte lägga till användare med hjälp av installationsguiden**. Läs i stället den här guiden och se vilka alternativ som finns: [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). Du kan antingen konfigurera:
   
@@ -379,6 +379,6 @@ Du som är administratör ska ha kontouppgifterna redo när du ringer supporten 
    
 Se [Kontakta supporten för företagsprodukter – hjälp för administratörer](../contact-support-for-business-products.md) för andra länder.
   
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

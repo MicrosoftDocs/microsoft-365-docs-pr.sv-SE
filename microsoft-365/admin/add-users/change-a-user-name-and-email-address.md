@@ -1,5 +1,5 @@
 ---
-title: Ändra ett användarnamn och en e-postadress i Office 365
+title: Ändra ett användarnamn och en e-postadress
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn i Office 365. '
-ms.openlocfilehash: 16dab0f0ac65bccea0e2273e396315a32dd33439
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn. '
+ms.openlocfilehash: 726d1f01203bbaefc529039d3816fb09c892cd90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807186"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618746"
 ---
-# <a name="change-a-user-name-and-email-address-in-office-365"></a>Ändra ett användarnamn och en e-postadress i Office 365
+# <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
-Du kanske måste ändra någons e-postadress och visningsnamn i Office 365 om personen till exempel gifter sig och byter efternamn.
+Du kanske måste ändra någons e-postadress och visningsnamn i om personen till exempel gifter sig och byter efternamn.
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 ## <a name="change-a-users-email-address"></a>Ändra en användares e-postadress
 
-Du måste vara en [global Office 365-administratör](about-admin-roles.md) för att utföra de här stegen. 
+Du måste vara en [global administratör](about-admin-roles.md) för att utföra de här stegen. 
 
 ::: moniker range="o365-worldwide"
  
@@ -101,7 +101,7 @@ Du måste vara en [global Office 365-administratör](about-admin-roles.md) för 
     
     **VIKTIGT**: Du ser inte alternativet Ange som primär om du har köpt Office 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
     
-    Du ser inte heller det här alternativet om du inte är en global Office 365-administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
+    Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
 4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
     
@@ -129,7 +129,7 @@ Du måste vara en [global Office 365-administratör](about-admin-roles.md) för 
     
     **VIKTIGT**: Du ser inte alternativet Ange som primär om du har köpt Office 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
     
-    Du ser inte heller det här alternativet om du inte är en global Office 365-administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
+    Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
 4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
     
@@ -157,7 +157,7 @@ Du måste vara en [global Office 365-administratör](about-admin-roles.md) för 
     
     **VIKTIGT**: Du ser inte alternativet Ange som primär om du har köpt Office 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
     
-    Du ser inte heller det här alternativet om du inte är en global Office 365-administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
+    Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
 4. Ett stort gult varningsmeddelande visas om att du håller på att ändra personens inloggningsinformation. Välj **Spara** och sedan **Stäng**.
     
@@ -223,22 +223,22 @@ Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'"
 
-Om du får felmeddelandet " **Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**" innebär det att det tar lite längre tid för Office 365 att slutföra konfigurationen av klienten eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa supporten så att de kan göra en fullständig synkronisering åt dig.
+Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klienten eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa supporten så att de kan göra en fullständig synkronisering åt dig.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen"
 
-Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**.” innebär det att du inte är en global Office 365-administratör och att du inte har behörighet att ändra användarnamnet. Leta upp den globala administratören i din organisation och be om att ändringen genomförs.
+Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**.” innebär det att du inte är en global administratör och att du inte har behörighet att ändra användarnamnet. Leta upp den globala administratören i din organisation och be om att ändringen genomförs.
 
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Så här gör du med gamla e-postmeddelanden
 
 Personens tidigare primära e-postadress sparas som en extra e-postadress. **Vi rekommenderar att du inte tar bort den gamla e-postadressen.**
   
-Vissa personer kommer sannolikt att fortsätta skicka e-post till användarens gamla e-postadress och om du tar bort den kan det leda till NDR-fel (misslyckad leverans). Office 365 dirigerar den automatiskt till den nya. Du behöver heller inte återanvända de gamla SMTP-e-postadresserna och använda dem för nya konton. Det här kan också orsaka NDR-fel eller leverans till en postlåda som inte var tänkt.
+Vissa personer kommer sannolikt att fortsätta skicka e-post till användarens gamla e-postadress och om du tar bort den kan det leda till NDR-fel (misslyckad leverans). Microsoft dirigerar den automatiskt till den nya. Du behöver heller inte återanvända de gamla SMTP-e-postadresserna och använda dem för nya konton. Det här kan också orsaka NDR-fel eller leverans till en postlåda som inte var tänkt.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Vad händer om personens offlineadressbok inte synkroniseras med den globala adresslistan?
 
-Om personen använder Exchange Online eller om personens Office 365-konto är länkat till organisationens lokala Exchange-miljö, kan följande felmeddelande visas när du försöker ändra ett användarnamn och en e-postadress: "Användaren är synkroniserad med ditt lokala Active Directory. Viss information kan bara redigeras genom ditt lokala Active Directory."
+Om personen använder Exchange Online eller om personens konto är länkat till organisationens lokala Exchange-miljö, kan följande felmeddelande visas när du försöker ändra ett användarnamn och en e-postadress: "Användaren är synkroniserad med ditt lokala Active Directory. Viss information kan bara redigeras genom ditt lokala Active Directory."
   
 Det beror på adressen för e-postdirigering, MOERA (Microsoft Online Email Routing Address). MOERA är uppbyggt på personens  _userPrincipalName_-attribut i Active Directory och tilldelas automatiskt till molnkontot vid den första synkroniseringen, och när det har skapats kan det inte ändras eller tas bort i Office 365. Du kan därefter ändra användarnamnet i Active Directory men MOERA ändras inte, och du kan stöta på problem med att visa det ändrade namnet i den globala adresslistan. 
   

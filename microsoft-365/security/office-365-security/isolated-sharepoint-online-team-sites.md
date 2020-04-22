@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Sammanfattning: Lär dig mer om hur du använder isolerade SharePoint Online-gruppwebbplatser.'
-ms.openlocfilehash: 5750db2206211b6bb231ea01a12d7426a1d731a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b62223b231c4b6dc0d233d899472800226503323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42807942"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634116"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Isolerade SharePoint Online-gruppwebbplatser
 
  **Sammanfattning:** Lär dig mer om hur du använder isolerade SharePoint Online-gruppwebbplatser.
   
-SharePoint Online-gruppwebbplatser är ett enkelt sätt att snabbt skapa ett utrymme för samarbete med anteckningar, dokument, artiklar, kalender och andra resurser i Microsoft Office 365. SharePoint Online-gruppwebbplatser baseras på en Office 365-grupp och har en förenklad administrationsmodell som tillåter öppet samarbete med en privat uppsättning gruppmedlemmar eller med hela organisationen. Med en standardinställd SharePoint Online-gruppwebbplats kan medlemmar i Office 365-gruppen bjuda in andra användare och styra behörighetsinställningar.
+SharePoint Online-gruppwebbplatser är ett enkelt sätt att snabbt skapa ett utrymme för samarbete med anteckningar, dokument, artiklar, kalender och andra resurser i Microsoft Office 365. SharePoint Online-gruppwebbplatser baseras på en Microsoft 365-grupp och har en förenklad administrationsmodell som tillåter öppet samarbete med privata gruppmedlemmar eller med hela organisationen. Med en standardinställd SharePoint Online-gruppwebbplats kan medlemmar i Microsoft 365-gruppen bjuda in andra användare och styra behörighetsinställningar.
   
 Men i vissa fall kan du vilja skapa en SharePoint Online-gruppwebbplats för samarbete med strängare kontroll av behörigheterna för den webbplatsen genom gruppmedlemskap och SharePoint Online-behörighetsnivåer, som bara hanteras av SharePoint-administratörer. Vi kallar det här för en isolerad webbplats, som isoleras till den uppsättning användare som samarbetar, visar dess innehåll eller administrerar webbplatsen. Du kan behöva en isolerad webbplats av följande anledningar:
   
@@ -38,7 +38,7 @@ Men i vissa fall kan du vilja skapa en SharePoint Online-gruppwebbplats för sam
     
 - Resurserna för en rättsåtgärd som vidtas av organisationen eller som den utsätts för.
     
-- För att dela en Office 365-prenumeration mellan flera organisationer som har en viss överlappning men som till största del fungerar som separata affärsenheter.
+- För att dela en Microsoft 365-prenumeration mellan flera organisationer som har en viss överlappning men som till största del fungerar som separata affärsenheter.
     
 Här är kraven för en isolerad webbplats:
   
@@ -48,7 +48,7 @@ Här är kraven för en isolerad webbplats:
     
 - Användare som inte är medlem i den isolerade webbplatsen kan inte begära åtkomst till webbplatsen. För dem visas en åtkomst nekas-webbsida när de försöker öppna en webbadress kopplad till webbplatsen.
     
-Kompromissen med att kräva centraliserad åtkomstkontroll och anpassade behörigheter av SharePoint Online-administratören är att webbplatsen förblir isolerad med tiden. Till exempel kan inte nuvarande medlemmar inte avsiktligt eller oavsiktligt, bjuda in eller konfigurera anpassade behörigheter för andra användare i Office 365-prenumerationer som inte ska vara medlemmar i webbplatsen.
+Kompromissen med att kräva centraliserad åtkomstkontroll och anpassade behörigheter av SharePoint Online-administratören är att webbplatsen förblir isolerad med tiden. Till exempel kan inte nuvarande medlemmar avsiktligt eller oavsiktligt, bjuda in eller konfigurera anpassade behörigheter för andra användare i Microsoft 365-prenumerationer som inte ska vara medlemmar i webbplatsen.
   
 En isolerad webbplats kan användas med andra funktioner, till exempel:
   

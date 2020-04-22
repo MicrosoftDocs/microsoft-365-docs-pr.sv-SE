@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster på vilken DNS-värd som helst för Office 365
+title: Skapa DNS-poster på valfri DNS-värd
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
-description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Office 365.
+description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210486"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628500"
 ---
-# <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>Skapa DNS-poster på vilken DNS-värd som helst för Office 365
+# <a name="create-dns-records-at-any-dns-hosting-provider"></a>Skapa DNS-poster på valfri DNS-värd
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
@@ -41,7 +41,7 @@ Om du inte känner till DNS-värden eller domänregistratorn för din domän kan
 Om du vill konfigurera posterna själv är det de här posterna som ska läggas till. Observera att verifieringsposten och MX-posten är unika för domänen. Om du vill konfigurera dem måste du skaffa och använda ett särskilt "token"-värde för din domän. I anvisningarna nedan förklaras hur du gör det.
   
 > [!IMPORTANT]
-> Det exakta namnet på rutorna eller *fälten* som du skriver eller klistrar in information i, för att skapa varje typ av DNS-post, skiljer sig åt för varje DNS-värd. Det kan finnas hjälp på DNS-värdens webbplats som kan hjälpa dig att mappa de anvisningar som vi visar här till de exakta fälten på webbplatsen. Kom ihåg att kontrollera i [Skapa DNS-poster för Office 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) om vi har stegvisa instruktioner för din DNS-värd. > Vissa DNS-värdar tillåter inte att du skapar alla nödvändiga posttyper, vilket [orsakar tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) i Office 365. Om värden för din domän inte har stöd för exempelvis SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför din domän](../get-help-with-domains/buy-a-domain-name.md) till en DNS-värd som har stöd för alla nödvändiga poster. Om du vill ha en snabb och automatiserad process som konfigurerar med Office 365 rekommenderar vi att du överför domänen till GoDaddy. 
+> Det exakta namnet på rutorna eller *fälten* som du skriver eller klistrar in information i, för att skapa varje typ av DNS-post, skiljer sig åt för varje DNS-värd. Det kan finnas hjälp på DNS-värdens webbplats som kan hjälpa dig att mappa de anvisningar som vi visar här till de exakta fälten på webbplatsen. Kom ihåg att kontrollera i [Skapa DNS-poster för Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) om vi har stegvisa instruktioner för din DNS-värd. > Vissa DNS-värdar tillåter inte att du skapar alla nödvändiga posttyper, vilket [orsakar tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) i Microsoft 365. Om värden för din domän inte har stöd för exempelvis SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför din domän](../get-help-with-domains/buy-a-domain-name.md) till en DNS-värd som har stöd för alla nödvändiga poster. Om du vill ha en snabb och automatiserad process som konfigurerar med Microsoft 365 rekommenderar vi att du överför domänen till GoDaddy. 
   
 > [!NOTE]
 > Det brukar bara ta några minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -52,7 +52,7 @@ Om du vill konfigurera posterna själv är det de här posterna som ska läggas 
 > [!NOTE]
 > Du skapar bara en av dessa poster. TXT är den vanligaste posttypen, men den stöds inte av vissa DNS-värdar. I sådana fall skapar du en MX-post istället. 
   
-Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Microsoft 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -74,20 +74,20 @@ Innan du använder din domän med Office 365, vill vi vara säkra på att det ä
 |||||
 |:-----|:-----|:-----|:-----|
 |**Record Type**|**Alias** eller **Host Name**|**Värde**|**TTL**|
-|TXT|Gör något av följande: skriv **@**, lämna fältet tomt eller skriv domännamnet.  <br/> **Obs!** Olika DNS-värdar har olika krav för det här fältet. |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.  <br/>        [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv.  |
+|TXT|Gör något av följande: skriv **@**, lämna fältet tomt eller skriv domännamnet.  <br/> **Obs!** Olika DNS-värdar har olika krav för det här fältet. |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.  <br/>        [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv.  |
    
   - **Om du skapar en MX-post ska du använda följande värden:**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
-|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.    <br/>       [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
+|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.    <br/>       [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
    
 2. Spara posten.
     
-Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Microsoft 365 och begär att Microsoft 365 letar efter posten.
   
-När Office 365 hittar rätt TXT-post är din domän verifierad.
+När Microsoft 365 hittar rätt TXT-post är din domän verifierad.
   
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
@@ -103,7 +103,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-mx-record-to-route-email"></a>Lägga till en MX-post för att dirigera e-post
 <a name="BKMK_add_MX"> </a>
 
-Lägg till en MX-post så att e-post för din domän kommer till Office 365.  *När du uppdaterar domänens MX-post kommer nu alla nya e-postmeddelanden till alla som använder din domän till Office 365*. E-postmeddelanden som du redan har finns kvar hos din nuvarande e-postvärd, om du inte bestämmer dig för att [migrera e-postmeddelanden och kontakter till Office 365](../setup/migrate-email-and-contacts-admin.md) till Office 365. 
+Lägga till en MX-post så att e-post för din domän kommer till Microsoft 365.  *När du uppdaterar domänens MX-post kommer nu alla nya e-postmeddelanden till alla som använder din domän till Microsoft 365*. E-postmeddelanden som du redan har finns kvar hos din nuvarande e-postvärd, om du inte bestämmer dig för att [migrera e-postmeddelanden och kontakter till Microsoft 365](../setup/migrate-email-and-contacts-admin.md) till Microsoft 365. 
   
   
  **Uppgift**
@@ -130,7 +130,7 @@ MX-posten du lägger till innehåller ett värde (värdet **Pekar på-adress**) 
 
 1. Lägg till en ny MX-post på DNS-värdens webbplats.
     
-    Nu [får du informationen för MX-posten](../get-help-with-domains/information-for-dns-records.md) från Office 365. 
+    Nu [får du informationen för MX-posten](../get-help-with-domains/information-for-dns-records.md) från Microsoft 365. 
     
 2. För MX-posten (i föregående steg) kopierar du värdet för **Pekar på-adress**. 
     
@@ -146,7 +146,7 @@ MX-posten du lägger till innehåller ett värde (värdet **Pekar på-adress**) 
     
   - **Värdnamn**: **@**
     
-  - **Pekar på-adress**: Klistra in värdet för **Pekar på-adress** som du just kopierade från Office 365 här. 
+  - **Pekar på-adress**: Klistra in värdet för **Pekar på-adress** som du just kopierade från Microsoft 365 här. 
     
   - **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
     
@@ -154,14 +154,14 @@ MX-posten du lägger till innehåller ett värde (värdet **Pekar på-adress**) 
     
 Ta bort eventuella andra MX-poster.
   
-Om du har MX-poster för den här domänen som skickar e-post någon annanstans än till Office 365 ska du ta bort dem allihop.
+Om du har MX-poster för den här domänen som skickar e-post någon annanstans än till Microsoft 365 ska du ta bort dem allihop.
   
 ## <a name="add-three-cname-records"></a>Lägga till tre CNAME-poster
 <a name="BKMK_add_MX"> </a>
 
 ::: moniker range="o365-worldwide"
 
-Följ anvisningarna nedan för att lägga till de tre CNAME-poster som krävs för Office 365. Om det finns ytterligare CNAME-poster i Office 365 lägger du till dem genom att följa samma allmänna anvisningar som visas här.
+Följ anvisningarna nedan för att lägga till de tre CNAME-poster som krävs för Microsoft 365. Om det finns ytterligare CNAME-poster i Microsoft 365 lägger du till dem genom att följa samma allmänna anvisningar som visas här.
   
 På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget.
   
@@ -182,7 +182,7 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
 ::: moniker-end
 ::: moniker range="o365-germany"
 
-Följ anvisningarna nedan för att lägga till de tre CNAME-poster som krävs för Office 365. Om det finns ytterligare CNAME-poster i Office 365 lägger du till dem genom att följa samma allmänna anvisningar som visas här.
+Följ anvisningarna nedan för att lägga till de tre CNAME-poster som krävs för Microsoft 365. Om det finns ytterligare CNAME-poster i Microsoft 365 lägger du till dem genom att följa samma allmänna anvisningar som visas här.
   
 På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget.
   
@@ -204,7 +204,7 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
 
 ::: moniker range="o365-21vianet"
 
-Följ anvisningarna nedan för att lägga till de tre CNAME-poster som krävs för Office 365. Om det finns ytterligare CNAME-poster i Office 365 lägger du till dem genom att följa samma allmänna anvisningar som visas här.
+Följ anvisningarna nedan för att lägga till de tre CNAME-poster som krävs för Microsoft 365. Om det finns ytterligare CNAME-poster i Microsoft 365 lägger du till dem genom att följa samma allmänna anvisningar som visas här.
   
 På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget.
   
@@ -224,13 +224,13 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
     
 ::: moniker-end
 
-## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Lägga till två CNAME-poster för MDM (Mobile Device Management) för Office 365
+## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft-365"></a>Lägga till två CNAME-poster för MDM (Mobile Device Management) för Microsoft 365
 <a name="BKMK_add_MX"> </a>
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Om du har MDM (Mobile Device Management) för Office 365 måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. > (Om du inte har MDM kan du hoppa över det här steget.) 
+> Om du har MDM (Mobile Device Management) för Microsoft 365 måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. > (Om du inte har MDM kan du hoppa över det här steget.) 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -243,7 +243,7 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
 ::: moniker range="o365-germany"
 
 > [!IMPORTANT]
-> Om du har MDM (Mobile Device Management) för Office 365 måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. > (Om du inte har MDM kan du hoppa över det här steget.) 
+> Om du har MDM (Mobile Device Management) för Microsoft 365 måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. > (Om du inte har MDM kan du hoppa över det här steget.) 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -259,12 +259,12 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden.
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft 365. Lägg istället till de obligatoriska Microsoft 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden.
   
 Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-värdens webbplats.
   
 > [!IMPORTANT]
-> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använda DMARC för att validera e-post i Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använda DMARC för att validera e-post i Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. I rutorna för den nya posten skriver du, eller kopierar och klistrar in, den uppsättning värden nedan som gäller för din situation.
     
@@ -284,12 +284,12 @@ Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-v
 ::: moniker range="o365-germany"
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft 365. Lägg istället till de obligatoriska Microsoft 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. 
   
 Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-värdens webbplats.
   
 > [!IMPORTANT]
-> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använda DMARC för att validera e-post i Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använda DMARC för att validera e-post i Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. I rutorna för den nya posten skriver du, eller kopierar och klistrar in, den uppsättning värden nedan som gäller för din situation.
     
@@ -309,12 +309,12 @@ Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-v
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft 365. Lägg istället till de obligatoriska Microsoft 365-värdena i den aktuella posten, så att du har en  *enda*  SPF-post som innehåller båda uppsättningarna med värden. 
   
 Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-värdens webbplats.
   
 > [!IMPORTANT]
-> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använda DMARC för att validera e-post i Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF har utformats för att hjälpa till att förhindra förfalskning men det finns förfalskningsmetoder som SPF inte skyddar mot. För att skydda mot dessa ska du, efter att ha konfigurerat SPF, även konfigurera DKIM och DMARC för Microsoft 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din domän i Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Därefter läser du [Använda DMARC för att validera e-post i Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. I rutorna för den nya posten skriver du, eller kopierar och klistrar in, den uppsättning värden nedan som gäller för din situation.
     
@@ -429,10 +429,10 @@ På DNS-värdens webbplats skapar du två nya SRV-poster, vanligtvis en i taget.
 ## <a name="more-about-updating-dns-records"></a>Mer information om att uppdatera DNS-poster
 <a name="BKMK_MoreAbout"> </a>
 
- **Om du vet hur du ska uppdatera DNS-poster hos domänens DNS-värd** använder du Office 365 DNS-värden för att redigera poster hos domänens DNS-värd, till exempel för att konfigurera en MX-post eller SPF-post. Hitta de värden som ska användas genom att [följa de här anvisningarna](../get-help-with-domains/information-for-dns-records.md) eller visa dem i domänens konfigurationsguide när du går igenom den.
+ **Om du vet hur du ska uppdatera DNS-poster hos domänens DNS-värd** använder du Microsoft 365 DNS-värden för att redigera poster hos domänens DNS-värd, till exempel för att konfigurera en MX-post eller SPF-post. Hitta de värden som ska användas genom att [följa de här anvisningarna](../get-help-with-domains/information-for-dns-records.md) eller visa dem i domänens konfigurationsguide när du går igenom den.
   
- **Om du behöver hjälp med att ta reda på hur du lägger till de DNS-poster som krävs** läser du [Konfigurera din domän (värdspecifika anvisningar)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), börja med att [samla in den information du behöver för att skapa DNS-poster i Office 365](../get-help-with-domains/information-for-dns-records.md). Använd sedan de allmänna anvisningarna i det här avsnittet för att konfigurera din domäns DNS-poster så att du kan använda din domän med Office 365-tjänster, t.ex. e-post.
+ **Om du behöver hjälp med att ta reda på hur du lägger till de DNS-poster som krävs** läser du [Konfigurera din domän (värdspecifika anvisningar)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), börja med att [samla in den information du behöver för att skapa DNS-poster i Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Använd sedan de allmänna anvisningarna i det här avsnittet för att konfigurera din domäns DNS-poster så att du kan använda din domän med Microsoft 365-tjänster, t.ex. e-post.
   
- **Om du inte har en webbplats som du använder med din egen domän** kan du ställa in Office 365 till att konfigurera och hantera DNS-posterna för domänen istället för att göra alla inställningar själv. Läs mer om de [två alternativen för att konfigurera och hantera DNS-poster för en egen domän](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) i Office 365. 
+ **Om du inte har en webbplats som du använder med din egen domän** kan du ställa in Microsoft 365 till att konfigurera och hantera DNS-posterna för domänen istället för att göra alla inställningar själv. Läs mer om de [två alternativen för att konfigurera och hantera DNS-poster för en egen domän](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) i Microsoft 365. 
   
 

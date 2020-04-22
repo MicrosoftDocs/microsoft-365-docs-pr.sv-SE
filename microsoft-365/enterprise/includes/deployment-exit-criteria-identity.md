@@ -3,7 +3,7 @@ Se också [Krav](https://docs.microsoft.com/microsoft-365/enterprise/identity-ac
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatoriskt: dina globala administratörskonton skyddas 
 
-Du har [skyddat dina globala Office 365-administratörskonton](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) för att hindra att autentiseringsuppgifter komprometteras av angripare vilket kan leda till intrång i din Microsoft 365-prenumeration.
+Du har [skyddat dina globala administratörskonton](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) för att hindra att autentiseringsuppgifter komprometteras av angripare, vilket kan leda till intrång i din Microsoft 365-prenumeration.
 
 Om du hoppar över det här kravet kan dina globala administratörskonton vara sårbara för attacker och intrång, vilket gör det möjligt för en angripare att få tillgång till dina data i hela systemet och hämta, förstöra eller använda dina data i utpressningssyfte.
 
@@ -17,7 +17,7 @@ Använd följande steg för att kontrollera att du har skyddat dina globala admi
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Logga in på Office 365 med vart och ett av kontona från steg 1. Varje inloggning bör kräva Azure-multifaktorautentisering och den starkaste formen av sekundär autentisering som finns tillgänglig i din organisation.
+2. Logga in med vart och ett av kontona från steg 1. Varje inloggning bör kräva Azure-multifaktorautentisering och den starkaste formen av sekundär autentisering som finns tillgänglig i din organisation.
 
 > [!Note]
 > Mer information om hur du installerar Azure Active Directory PowerShell för Graph-moduler och loggar in på Office 365 finns under [Ansluta till Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
@@ -66,11 +66,11 @@ Om du hoppar över det här alternativet kan användarna bli ombedda att uppge a
 Vid behov kan [Steg 2](../identity-secure-your-passwords.md#identity-sso) hjälpa dig med detta alternativ.
 
 <a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Valfritt: Inloggningsskärmen i Office 365 anpassas för din organisation
+### <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Valfritt: Inloggningsskärmen anpassas för din organisation
 
-Du har använt [Lägga till företagsanpassning på sidorna för inloggning och åtkomst till panelen](https://aka.ms/aadpaddbranding) för att lägga till organisationens varumärke på inloggningssidan för Office 365.
+Du har använt [Lägga till företagsanpassning på sidorna för inloggning och åtkomst till panelen](https://aka.ms/aadpaddbranding) för att lägga till organisationens varumärke på inloggningssidan.
 
-Om du hoppar över det här alternativet visas en allmän inloggningsskärm i Office 365 för dina användare och de kanske inte är säkra på att de loggar in på organisationens webbplats.
+Om du hoppar över det här alternativet visas en allmän inloggningsskärm för dina användare vilket kan leda till att de blir osäkra på om de verkligen loggar in på organisationens webbplats.
 
 Vid behov kan [Steg 2](../identity-secure-your-passwords.md#identity-custom-sign-in) hjälpa dig med detta alternativ.
 
@@ -98,7 +98,7 @@ Vid behov kan [Steg 3](../identity-secure-user-sign-ins.md#identity-mfa) hjälpa
 Du har aktiverat Azure AD Identity Protection för:
 
 - Åtgärda potentiella identitetssårbarheter.
-- Upptäck möjliga försök till intrång i autentiseringsuppgifter.
+- Upptäcka möjliga försök till intrång i autentiseringsuppgifter.
 - Undersök och åtgärda fortlöpande misstänkta identitetstillbud.
 
 Om du hoppar över det här alternativet kan du inte upptäcka eller automatiskt bekämpa försök till kompromettering av autentiseringsuppgifter eller undersöka identitetsrelaterade incidenter. Detta gör din organisation potentiellt utsatt för kompromettering av autentiseringsuppgifter och därmed ett hot mot organisationens känsliga data.
@@ -144,7 +144,7 @@ Du kontrollerar att katalogsynkronisering fungerar genom att göra följande:
 Du har använt [Azure AD Connect Health med synkronisering](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-sync) (för lösenordssynkronisering) eller [Med Azure AD Connect Health med AD FS](https://docs.microsoft.com/azure/active-directory/connect-health/active-directory-aadconnect-health-adfs) (för federerad autentisering) och har distribuerat Azure AD Connect Health, vilket inbegriper:
 
 - Installera Azure AD Connect Health-agenten på var och en av dina lokala identitetsservrar.
-- Använda Azure AD Connect Health-portalen för att övervaka tillståndet hos den pågående synkroniseringen.
+- Using the Azure AD Connect Health portal to monitor the state of the ongoing synchronization.
 
 Om du hoppar över det här alternativet kan du bättre utvärdera tillståndet för den molnbaserade identitetsinfrastrukturen.
 
@@ -183,7 +183,7 @@ Logga in på Office 365-portalen med ditt användarkontonamn och Azure multifakt
 
 
 <a name="crit-identity-self-service-groups"></a>
-### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Valfritt: Självbetjäning av grupphantering har aktiverats för vissa Azure AD-säkerhetsgrupper och Office 365-grupper
+### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Valfritt: Självbetjäning av grupphantering har aktiverats för vissa Azure AD-säkerhetsgrupper och Microsoft 365-grupper
 
 Du har fastställt vilka grupper som är lämpliga för självbetjäningshantering, instruerat deras ägare i arbetsflöden och ansvarsområden för grupphantering, och [konfigurerat självbetjäningshantering i Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) för dessa grupper.
 

@@ -2,22 +2,22 @@
 
     - Information om klientenhet
     - Distributionsverktyg
-    - Office 365-licenser och -konton
+    - Microsoft 365-licenser och konton
     - Nätverksfunktioner
     - Programkompatibilitet
 
 - Distributionsplanen är slutförd, inklusive:
 
-    - Så här distribueras Office 365 ProPlus
-    - Hantera uppdateringar till Office 365 ProPlus
-    - Om du vill distribuera och installera från en lokal källa i nätverket eller via molnet
+    - Så distribuerar du Microsoft 365-applikationer för företag
+    - Så hanterar du uppdateringar för Microsoft 365-applikationer för företag
+    - Om du vill distribuera och installera från en lokal källa i nätverket eller från molnet
     - Vilka klientenheter som får vilka uppdateringskanaler
-    - Installationspaket definieras
-    - Alla klientenheter som tilldelats till distributionsgrupper
-    - Vilka Office-program, arkitekturer och språk som används för vilka klientenheter
+    - Installationspaket har definierats
+    - Alla klientenheter har tilldelats till distributionsgrupper
+    - Vilka Office-program, arkitekturer och språk som medföljer vilka klientenheter
 
-- Distributionen av Office 365 ProPlus har slutförts, inklusive:
+- Distributionen av Microsoft 365-applikationer för företag har slutförts, inklusive:
 
-    - Alla klientenheter har Office 365 ProPlus installerat
-    - Alla klientenheter finns i lämplig uppdateringskanal och tar emot uppdateringar
+    - Alla klientenheter har Microsoft 365-applikationer för företag installerade
+    - Alla klientenheter finns i en lämplig uppdateringskanal och tar emot uppdateringar
     - Alla klientenheter har lämpliga språk installerade eller tillgängliga

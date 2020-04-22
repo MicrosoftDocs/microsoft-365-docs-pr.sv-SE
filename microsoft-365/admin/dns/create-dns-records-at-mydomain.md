@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster på MyDomain för Office 365
+title: Skapa DNS-poster på MyDomain för Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,36 +19,36 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
-description: Läs om hur du verifierar din domän och konfigurerar DNS-poster för e-post, Skype för företag – Online och andra tjänster på MyDomain för Office 365.
-ms.openlocfilehash: 1a75c2ab0077cac07781e5102c43e53ed965b1df
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Läs om hur du verifierar din domän och konfigurerar DNS-poster för e-post, Skype för företag – Online och andra tjänster på MyDomain för Microsoft.
+ms.openlocfilehash: 4f26da1e1e148307cd2b5cdf9aeed97c610ec8dd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211697"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629437"
 ---
-# <a name="create-dns-records-at-mydomain-for-office-365"></a>Skapa DNS-poster på MyDomain för Office 365
+# <a name="create-dns-records-at-mydomain-for-microsoft"></a>Skapa DNS-poster på MyDomain för Microsoft
 
 
   
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
 > [!CAUTION]
-> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag - Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Office 365-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
+> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
   
-Om du väljer att hantera dina egna Office 365 DNS-poster hos MyDomain trots tjänstbegränsningarna utför du stegen i den här artikeln för att konfigurera DNS-posterna för e-post, Skype för företag - Online o.s.v.
+Om du väljer att hantera dina egna Microsoft DNS-poster hos MyDomain trots tjänstbegränsningarna utför du stegen i den här artikeln för att konfigurera DNS-posterna för e-post, Skype för företag – Online o.s.v.
     
-När du har lagt till dessa poster på MyDomain är din domän konfigurerad för att fungera med Office 365-tjänster.
+När du har lagt till dessa poster på MyDomain är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
-Mer information om webbvärdverktyg och DNS för webbplatser med Office 365 finns i [Använda en offentlig webbplats med Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+Mer information om webbvärdverktyg och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Office 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Office 365 att du äger domänen.
+Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -68,17 +68,17 @@ Innan du använder din domän med Office 365, vill vi vara säkra på att det ä
     ||
     |:-----|
     |**Content** <br/> |
-    |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Välj **Lägg till**.
     
 8. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och begär posten.
   
-När Office 365 hittar rätt TXT-post är din domän verifierad.
+När Microsoft hittar rätt TXT-post är din domän verifierad.
   
-1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
+1. I Microsoft-administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domäner</a>.
     
 2. På sidan **Domains** väljer du den domän du verifierar. 
     
@@ -87,9 +87,9 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Lägga till en MX-post så att e-post för din domän kommer till Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="BKMK_add_MX"> </a>
 
 1. Kom igång genom att gå till domänsidan på MyDomain genom att klicka på [den här länken](https://www.mydomain.com/controlpanel). Du uppmanas att logga in först.
@@ -108,7 +108,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     |**Priority**|**Värd**|**Points To: (pekar på)**|
     |:-----|:-----|:-----|
-    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |@  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta din \<*domännyckel*\> från ditt Office 365-konto. > [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |@  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Obs!** Hämta din \<*domännyckel*\> från ditt Microsoft-konto. > [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
@@ -124,7 +124,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![MyDomain-BP-Configure-2-5](../../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Lägga till CNAME-posterna som krävs för Office 365
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på MyDomain genom att klicka på [den här länken](https://www.mydomain.com/controlpanel). Du uppmanas att logga in först.
@@ -167,7 +167,7 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Office 365. Lägg istället till de obligatoriska Office 365-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 1. Kom igång genom att gå till domänsidan på MyDomain genom att klicka på [den här länken](https://www.mydomain.com/controlpanel). Du uppmanas att logga in först.
     
@@ -193,12 +193,12 @@ När Office 365 hittar rätt TXT-post är din domän verifierad.
     
     ![MyDomain-BP-Configure-4-3](../../media/b3670563-b620-470c-a42b-2c77888981f8.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Lägga till de två SRV-posterna som krävs för Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägga till de två SRV-posterna som krävs för Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 > [!CAUTION]
-> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag - Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Office 365-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
+> MyDomain-webbplatsen har inget stöd för SRV-poster. Det innebär att flera Skype för företag – Online- och Outlook Web App-funktioner inte fungerar. Oavsett vilket Microsoft-abonnemang du använder, och om du hanterar dina DNS-poster hos MyDomain, finns det [betydande tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) som kan innebära att du vill byta till en annan DNS-värdleverantör. 
   
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
   
