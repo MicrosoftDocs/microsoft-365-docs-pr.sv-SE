@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium-resurser
-summary: Microsoft 365 Business Premium är en prenumerationstjänst som innehåller produktivitetsverktyg för Office 365 samt avancerade funktioner för att skydda ditt företag mot cyberhot, skydda dina data och hantera enheterna.
+summary: Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattande prenumerationstjänst för företag med färre än 300 anställda. Den integrerar dina favoritappar och tjänster och tjänster och samarbetsverktyg för Office, till exempel Microsoft Teams med avancerade säkerhets- och enhetshanteringsfunktioner.
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium-resurser
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 29504ca22db443c504a5f3265ca2e8fcba0f737e
-  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+  ms.openlocfilehash: 59478fceee0017321c59607f589fe464ac95077d
+  ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "43627116"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43665626"
 productDirectory:
   title: Säkert fjärrarbete med Microsoft 365 Business Premium
   items:
