@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå och konfigurera DNS-upplösningen för bättre prestanda.
-ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bc1460ec40cda26d4784c7af5e909e4dca3c1f24
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806024"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583443"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Steg 2: Konfigurera lokala internetanslutningar för varje kontor
 
@@ -56,6 +56,8 @@ Om du vill dirigera en klientbegäran till en startpunkt som är närmast geogra
 - Varje lokal Internet-anslutning ska använda en regional lokal DNS-server för utgående Internet-trafik från den platsen.
 
 Mer information finns i [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally) (Utgående lokala nätverksanslutningar). 
+
+Om du vill testa hur nära du befinner dig i en ingångspunkt för Microsoft globalt nätverk och hur nära din plats som organisationens nätverk ansluter till din Internetleverantör använder du [Office 365 Network Onboarding Tool](https://connectivity.office.com/).
 
 Som en mellanliggande kontrollpunkt kan du se [avslutsvillkoren](networking-exit-criteria.md#crit-networking-step2) för detta steg.
 

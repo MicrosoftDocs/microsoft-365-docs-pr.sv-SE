@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå och konfigurera webbläsare och gränsenheter för förbikoppling av trafik till betrodda Office 365-platser.
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504085"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583399"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Steg 4: Konfigurera förbikoppling av trafik
 
@@ -61,6 +61,8 @@ Anslutningar för virtuellt privat nätverk (VPN) används vanligtvis av distans
 Uppdelad tunnel är möjligheten för en VPN-anslutning att dirigera angiven trafik via Internet istället för att skicka den via VPN-anslutningen till ditt intranät. Om du vill ha bästa möjliga prestanda för distansarbetare till kritiska Microsoft 365-tjänster som Teams, SharePoint Online och Exchange Online konfigurerar du VPN-anslutningarna med uppdelad tunnel för att skicka trafik för att optimera kategori Office 365-slutpunkter direkt via Internet. 
 
 Detaljerad information finn i [Optimera Office 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+
+Om du vill testa hur nära du befinner dig i en ingångspunkt för Microsoft globalt nätverk och hur nära din plats som organisationens nätverk ansluter till din Internetleverantör använder du [Office 365 Network Onboarding Tool](https://connectivity.office.com/).
 
 Som en mellanliggande kontrollpunkt kan du se [avslutsvillkoren](networking-exit-criteria.md#crit-networking-step4) för detta steg.
 

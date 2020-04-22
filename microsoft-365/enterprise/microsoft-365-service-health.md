@@ -3,7 +3,7 @@ title: Hälsostatus för Microsoft 365-tjänsten
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Hälsostatus för Microsoft 365-tjänsten
-ms.openlocfilehash: 16621bc266684397da5fa92e953067e1e8342b4e
-ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
+ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43207169"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583363"
 ---
 # <a name="microsoft-365-network-health-status"></a>Hälsostatus för Microsoft 365-nätverk
 
@@ -37,7 +37,7 @@ När vi upptäcker betydande problem inom Microsofts globala nätverk eller med 
 
 | Plats | Problemtyp | Beskrivning |
 | --- | --- | --- |
-| **Inga aktuella problem**  |  |  |
+| Inga aktuella problem | | |
 
 ## <a name="recommendations-to-improve-network-experience"></a>Rekommendationer för att förbättra nätverksupplevelsen
 
