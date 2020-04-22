@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om Hot Trackers, inklusive nya anmärkningsvärda trackers, för att hjälpa din organisation att hålla koll på säkerhetsproblem.
-ms.openlocfilehash: 5a26bde935c45f048d0b4a0274c4abea388701ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 336cbe15d6eba7363e926a81fab498a7d6cff44a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955503"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631163"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Threat Trackers - Nya och anmärkningsvärda
 
@@ -45,11 +45,11 @@ Trackers är bara några av de många bra funktioner du får med [Office 365 Adv
 Om du vill visa och använda hotspårarna &amp; för din[https://protection.office.com](https://protection.office.com)organisation går du till Security Compliance Center ( ) och väljer \> **Hothanteringshotspårare**. **Threat management**
   
 > [!NOTE]
-> Om du vill använda Hot Trackers måste du vara en global Office 365-administratör, säkerhetsadministratör eller säkerhetsläsare. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md). 
+> Om du vill använda Hot Trackers måste du vara global administratör, säkerhetsadministratör eller säkerhetsläsare. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md). 
   
 ### <a name="noteworthy-trackers"></a>Anmärkningsvärda trackers
 
-Anmärkningsvärda trackers är där du hittar stora och mindre hot och risker som vi tycker att du bör känna till. Anmärkningsvärda spårare hjälper dig att ta reda på om dessa problem finns i office 365-miljön, plus länk till artiklar (som den här) som ger dig mer information om vad som händer och hur de påverkar organisationens användning av Office 365. Oavsett om det är ett stort nytt hot (t.ex. Wannacry, Petya) eller ett befintligt hot som kan skapa några nya utmaningar (som vår andra inledande Anmärkningsvärt objekt - Nemucod), det är här du hittar viktiga nya objekt du och ditt säkerhetsteam bör granska och undersöka Regelbundet.
+Anmärkningsvärda trackers är där du hittar stora och mindre hot och risker som vi tycker att du bör känna till. Anmärkningsvärda spårare hjälper dig att ta reda på om dessa problem finns i microsoft 365-miljön, plus länk till artiklar (som den här) som ger dig mer information om vad som händer och hur de påverkar organisationens användning av Office 365. Oavsett om det är ett stort nytt hot (t.ex. Wannacry, Petya) eller ett befintligt hot som kan skapa några nya utmaningar (som vår andra inledande Anmärkningsvärt objekt - Nemucod), det är här du hittar viktiga nya objekt du och ditt säkerhetsteam bör granska och undersöka regelbundet.
   
 Vanligtvis anmärkningsvärda trackers kommer att publiceras för bara ett par veckor när vi identifierar nya hot och tror att du kan behöva den extra synlighet som den här funktionen ger. När den största risken för ett hot har passerat tar vi bort det anmärkningsvärda objektet. På så sätt kan vi hålla listan fräsch och uppdaterad med andra relevanta nya objekt.
   
@@ -63,7 +63,7 @@ Trendande trackers ger dig en uppfattning om nya hot som du bör granska för at
   
 ### <a name="tracked-queries"></a>Spårade frågor
 
-Spårade frågor utnyttjar dina sparade frågor för att regelbundet utvärdera Office 365-aktivitet i organisationen. Detta ger dig händelse trend, med mer att komma under de kommande månaderna. Spårade frågor körs automatiskt, vilket ger dig aktuell information utan att behöva komma ihåg att köra dina frågor igen.
+Spårade frågor utnyttjar dina sparade frågor för att regelbundet utvärdera Microsoft 365-aktivitet i din organisation. Detta ger dig händelse trend, med mer att komma under de kommande månaderna. Spårade frågor körs automatiskt, vilket ger dig aktuell information utan att behöva komma ihåg att köra dina frågor igen.
   
 ![Exempel på spårade frågor med en markerad](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
@@ -77,11 +77,11 @@ Du kan alltid spara en anteckningsvärd uppföljningsfråga eller någon av dina
   
 ## <a name="trackers-and-explorer"></a>Spårare och Utforskaren
 
-Oavsett om du granskar e-post-, innehålls- eller Office-aktiviteter (kommer snart) samarbetar Explorer och Trackers för att hjälpa dig att undersöka och spåra säkerhetsrisker och hot. Tillsammans ger Trackers dig information för att skydda dina Office 365-användare genom att lyfta fram nya, anmärkningsvärda och ofta sökta problem – så att ditt företag skyddas bättre när det flyttas till molnet.
+Oavsett om du granskar e-post-, innehålls- eller Office-aktiviteter (kommer snart) samarbetar Explorer och Trackers för att hjälpa dig att undersöka och spåra säkerhetsrisker och hot. Tillsammans ger Trackers dig information för att skydda dina användare genom att lyfta fram nya, anmärkningsvärda och ofta sökta problem – se till att ditt företag skyddas bättre när det flyttas till molnet.
   
-Och kom ihåg att du alltid kan ge oss feedback på den här eller andra säkerhetsfunktioner i Office 365 genom att klicka på knappen **Feedback** längst ned till höger i [översikten över &amp; Säkerhetsefterlevnadscenter för Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Och kom ihåg att du alltid kan ge oss feedback på den här eller andra microsoft 365-säkerhetsfunktioner genom att klicka på **feedbackknappen** i det nedre högra hörnet [av Översikt över Security &amp; Compliance Center](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Center &amp; för säkerhetsefterlevnad](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Spårare och avancerat hotskydd i Office 365
 
@@ -91,15 +91,15 @@ Med vårt inledande anmärkningsvärt hot belyser vi avancerade hot mot skadlig 
   
 I dagens hot-fullspäckade värld, kör endast traditionella anti-malware skanningar innebär att du inte är tillräckligt bra mot attacker. Dagens mer sofistikerade angripare använder allmänt tillgängliga verktyg för att skapa nya, fördunklade eller försenade attacker som inte kommer att kännas igen av traditionella signaturbaserade anti-malware motorer. Funktionen BETRODDa bifogade filer tar e-postbilagor och detonerar dem i en virtuell miljö för att avgöra om de är säkra eller skadliga. Denna detonation process öppnar varje fil i en virtuell dator miljö, sedan klockor vad som händer efter att filen öppnas. Oavsett om det är en PDF-fil och komprimerad fil, eller ett Office-dokument, kan skadlig kod döljas i en fil och aktiveras först när offret öppnar den på sin dator. Genom att detonera och analysera filen i e-postflödet hittar Office 365 ATP-funktioner dessa hot baserat på beteenden, filrykte och ett antal heuristiska regler.
   
-Det nya filtret Anmärkningsvärt hot belyser objekt som nyligen upptäcktes via ATP Safe Attachments. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare hittades av Office 365 i e-postflödet eller andra kunders e-post. Var uppmärksam på objekten i Noteworthy Threat Tracker, se vem som var måltavla för dem och granska detonationen detaljer som visas på fliken Avancerad analys (hittades genom att klicka på ämnet för e-postmeddelandet i Explorer). Observera att du bara hittar den här fliken på e-postmeddelanden som upptäckts av funktionen BETRODDa bilagor för BETRODDa bilagor – den här anmärkningsvärda spåraren innehåller filtret, men du kan också använda filtret för andra sökningar i Explorer.
+Det nya filtret Anmärkningsvärt hot belyser objekt som nyligen upptäcktes via ATP Safe Attachments. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare hittats av Microsoft 365 i e-postflödet eller andra kunders e-post. Var uppmärksam på objekten i Noteworthy Threat Tracker, se vem som var måltavla för dem och granska detonationen detaljer som visas på fliken Avancerad analys (hittades genom att klicka på ämnet för e-postmeddelandet i Explorer). Observera att du bara hittar den här fliken på e-postmeddelanden som upptäckts av funktionen BETRODDa bilagor för BETRODDa bilagor – den här anmärkningsvärda spåraren innehåller filtret, men du kan också använda filtret för andra sökningar i Explorer.
   
 ## <a name="next-steps"></a>Nästa steg
 
 - Om din organisation inte redan har dessa funktioner för utredning och svar i Office 365 finns i [Hur får vi funktioner för utredning och svar i Office 365-hot?](office-365-ti.md)
     
-- Kontrollera att säkerhetsteamet har rätt roller och behörigheter tilldelade. Du måste vara en global Office 365-administratör eller ha rollen Säkerhetsadministratör &amp; eller Sök och rensa tilldelad i Security Compliance Center. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
+- Kontrollera att säkerhetsteamet har rätt roller och behörigheter tilldelade. Du måste vara global administratör eller ha rollen Säkerhetsadministratör eller Sök &amp; och rensa tilldelad i Security Compliance Center. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
     
-- Håll utkik efter de nya trackers som visas i din Office 365-miljö. När det finns tillgängligt hittar du dina trackers [här.](https://protection.office.com/) Gå till **Hothantering** \> **Hot trackers**.
+- Håll utkik efter de nya trackers som visas i din Microsoft 365-miljö. När det finns tillgängligt hittar du dina trackers [här.](https://protection.office.com/) Gå till **Hothantering** \> **Hot trackers**.
     
 - Om du inte redan har gjort det kan du läsa mer om och konfigurera [Office 365 Advanced Threat Protection](office-365-atp.md) för din organisation, inklusive betrodda länkar för Office [365 ATP](atp-safe-links.md) och [Office 365 ATP-säkra bilagor](atp-safe-attachments.md).
   

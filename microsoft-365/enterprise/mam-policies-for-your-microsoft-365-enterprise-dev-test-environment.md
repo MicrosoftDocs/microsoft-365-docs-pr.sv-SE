@@ -14,25 +14,25 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här testlabbet-guiden om du vill lägga till Intune-principer för enhetsefterlevnad i microsoft 365 Enterprise-testmiljön.
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812226"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631591"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Principer för enhetsefterlevnad för microsoft 365 Enterprise-testmiljön
 
-*Den här testlabbet-guiden kan endast användas för Microsoft 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan bara användas i Microsoft 365 Enterprise-testmiljöer.*
 
-Med instruktionerna i den här artikeln lägger du till en Intune-enhetsefterlevnadsprincip för Windows 10-enheter och Office 365 ProPlus i microsoft 365 Enterprise-testmiljön.
+Med instruktionerna i den här artikeln lägger du till en Intune-enhetsefterlevnadsprincip för Windows 10-enheter och Microsoft 365 Apps för företag i microsoft 365 Enterprise-testmiljön.
 
-![Testlabbguider för Microsoft-molnet](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill ha en visuell karta till alla artiklar i Microsoft 365 Enterprise Test Lab Guide-stacken.
+> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygg ut testmiljön för Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygga ut testmiljön i Microsoft 365 Enterprise
 
 Om du bara vill konfigurera MAM-principer på ett lätt väg med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -80,7 +80,7 @@ I den här fasen skapar du en enhetsefterlevnadsprincip för Windows 10-enheter.
 
 17. Välj Information om **App Suite**i fönstret Lägg till **app** .
  
-18. Skriv **Office 365 ProPlus** i både **Suite Namn** och Suite **Description**i informationsfönstret för **App Suite.**
+18. Skriv **Microsoft 365 Apps för företag** i både Suite **Name** och **Suite Description**i informationsfönstret i **App Suite.**
 Klicka på OK.
 
 19. I fönstret **Lägg till app** väljer du Konfigurera App **Suite**och klickar sedan på **OK**.
@@ -97,7 +97,7 @@ Du har nu en princip för enhetsefterlevnad för att testa de valda apparna i wi
 
 Utforska ytterligare funktioner och funktioner för hantering av [mobila](m365-enterprise-test-lab-guides.md#mobile-device-management) enheter i testmiljön.
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 [Microsoft 365 Företagstestlabbguider](m365-enterprise-test-lab-guides.md).
   

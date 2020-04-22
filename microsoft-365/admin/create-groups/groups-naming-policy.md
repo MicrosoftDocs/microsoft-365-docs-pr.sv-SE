@@ -1,5 +1,5 @@
 ---
-title: Namngivningsprincipen för Office 365-grupper
+title: Namngivningspolicy för grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Lär dig hur du skapar en namngivningsprincip för Office 365-grupper.
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Lär dig hur du skapar en namngivningsprincip för Microsoft 365-grupper.
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894629"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630449"
 ---
-# <a name="office-365-groups-naming-policy"></a>Namngivningsprincipen för Office 365-grupper
+# <a name="groups-naming-policy"></a>Namngivningspolicy för grupper
 
 Du använder en gruppnamngivningsprincip för att tillämpa en konsekvent namngivningsstrategi för grupper som skapats av användare i organisationen. En namngivningsprincip kan hjälpa dig och dina användare att identifiera funktionen för gruppen, medlemskap, geografisk region eller vem som skapade gruppen. Namngivningsprincipen kan också hjälpa till att kategorisera grupper i adressboken. Du kan använda principen för att blockera specifika ord från att användas i gruppnamn och alias.
 
 Namngivningsprincipen tillämpas på grupper som skapas i alla grupparbetsbelastningar (som Outlook, Microsoft Teams, SharePoint, Planner, Yammer osv.). Den tillämpas på både gruppnamnet och gruppaliaset. Den tillämpas när en användare skapar en grupp och när gruppnamn eller alias redigeras för en befintlig grupp.
 
 > [!TIP]
-> En namngivningsprincip för Office 365-grupper gäller endast för Office 365-grupper. Det gäller inte distributionsgrupper som skapats i Exchange Online. Om du vill skapa en namngivningsprincip för distributionsgrupper finns i [Skapa en namngivningsprincip för distributionsgrupper](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> En namngivningsprincip för Microsoft 365-gruppen gäller endast Microsoft 365-grupper. Det gäller inte distributionsgrupper som skapats i Exchange Online. Om du vill skapa en namngivningsprincip för distributionsgrupper finns i [Skapa en namngivningsprincip för distributionsgrupper](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 Namnprincipen för grupp består av följande funktioner:
 
@@ -44,7 +44,7 @@ Namnprincipen för grupp består av följande funktioner:
 
 ## <a name="licensing-requirements"></a>Licenskrav
 
-Om du använder Azure AD-namngivningsprincipen för Office 365-grupper krävs att du har men inte nödvändigtvis tilldela en Azure Active Directory Premium P1-licens eller Azure AD Basic EDU-licens för varje unik användare (inklusive gäster) som är medlem i en eller flera Office 365-grupper.
+Om du använder Azure AD-namngivningsprincip för Microsoft 365-grupper krävs att du har men inte nödvändigtvis tilldela en Azure Active Directory Premium P1-licens eller Azure AD Basic EDU-licens för varje unik användare (inklusive gäster) som är medlem i en eller flera Microsoft 365-grupper.
 
 Detta krävs också för administratören som skapar namngivningsprincipen Grupper.
 
@@ -80,13 +80,13 @@ Vi rekommenderar att du använder attribut som har värden ifyllda för alla anv
 
 - Prefix och suffix får innehålla specialtecken som stöds i gruppens namn och gruppalias. När prefixen och suffixen innehåller specialtecken som inte är tillåtna i gruppaliaset, tillämpas de bara på gruppnamnet. I det här fallet skiljer sig de prefix och suffix som tillämpas på gruppnamnet från dem som tillämpas på gruppaliaset.
 
-- Om du använder Yammer Office 365-anslutna grupper undviker du att \#använda \[ \]följande \<tecken \>i namnprincipen: @, , , och . Om dessa tecken finns i namngivningsprincipen kan vanliga Yammer-användare inte skapa grupper.
+- Om du använder Yammer Microsoft 365-anslutna grupper undviker du att \#använda \[ \]följande \<tecken \>i namnprincipen: @, , , , och . Om dessa tecken finns i namngivningsprincipen kan vanliga Yammer-användare inte skapa grupper.
 
 ## <a name="custom-blocked-words"></a>Anpassade blockerade ord
 
 Du kan ange en kommaavgränsad lista med blockerade ord som ska blockeras i gruppnamn och alias.
 
-Inga substrängsökningar utförs. Närmare bestämt krävs en exakt matchning mellan användarens angivna namn och de anpassade blockerade orden för att utlösa ett fel. Sub-string sökning görs inte så att användarna kan använda några av de vanliga orden som Klass även om är ett blockerat ord.
+Inga substrängsökningar utförs. Närmare bestämt krävs en exakt matchning mellan användarens angivna namn och de anpassade blockerade orden för att utlösa ett fel. Sub-string sökning görs inte så att användarna kan använda några av de vanliga orden som "Klass" även om "ass" är ett blockerat ord.
 
 **Saker att hålla utkik efter:**
 
@@ -126,10 +126,10 @@ Så här ställer du in en namngivningsprincip:
 ![Skärmbild av principinställningarna för grupper i Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> StaffHub-team följer inte namngivningsprincipen, men den underliggande Office 365-gruppen gör det. Prefix och suffix används inte för StaffHub-gruppnamn, och egna blockerade ord kontrolleras inte. Men StaffHub tillämpar prefix och suffix och tar bort blockerade ord från den underliggande Office 365-gruppen.
+> StaffHub-team följer inte namngivningsprincipen, men den underliggande Microsoft 365-gruppen gör det. Prefix och suffix används inte för StaffHub-gruppnamn, och egna blockerade ord kontrolleras inte. Men StaffHub tillämpar prefix och suffix och tar bort blockerade ord från den underliggande Microsoft 365-gruppen.
 
 ## <a name="more-articles-on-naming-policy"></a>Fler artiklar om namngivningsprincip
 
-[Framtvinga en namngivningsprincip för Office 365-grupper i Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Framtvinga en namngivningsprincip för Microsoft 365-grupper i Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Azure Active Directory-cmdletar för att konfigurera gruppinställningar](https://go.microsoft.com/fwlink/?linkid=868341)

@@ -1,5 +1,5 @@
 ---
-title: Felsöka e-post som skickas till Office 365
+title: Felsöka e-post som skickas till Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Office 365 och metodtips för massutskick till Office 365-kunder.
-ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Microsoft 365 och metodtips för massutskick till kunder.
+ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211913"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631151"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Felsöka e-post som skickas till Office 365
 
-Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Office 365 och metodtips för massutskick till Office 365-kunder.
+Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Microsoft 365 och metodtips för massutskick till kunder.
 
 ## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Felsöka vanliga problem med e-postleverans till Office 365
 
@@ -47,7 +47,7 @@ Välj bland ett av dessa vanliga problem.
 
 ### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Hanterar du din IP och domänens skicka rykte?
 
-EOP-filtreringstekniker är utformade för att ge skydd mot skräppost för Microsoft Office 365 och andra Microsoft-produkter som Exchange Server, Microsoft Office Outlook och Windows Live Mail. Vi utnyttjar också SPF, DKIM och DMARC; e-postautentiseringstekniker som hjälper till att lösa problemet med förfalskning och nätfiske genom att verifiera att domänen som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till den sändande IP, domän, autentisering, lista noggrannhet, klagomål priser, innehåll och mycket mer. Av dessa, en av de viktigaste faktorerna för att köra ner en avsändare rykte och deras förmåga att leverera e-post är deras skräp e klagomål takt.
+EOP-filtreringstekniker är utformade för att ge skydd mot skräppost för Microsoft 365 och andra Microsoft-produkter som Exchange Server, Microsoft Office Outlook och Windows Live Mail. Vi utnyttjar också SPF, DKIM och DMARC; e-postautentiseringstekniker som hjälper till att lösa problemet med förfalskning och nätfiske genom att verifiera att domänen som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till den sändande IP, domän, autentisering, lista noggrannhet, klagomål priser, innehåll och mycket mer. Av dessa, en av de viktigaste faktorerna för att köra ner en avsändare rykte och deras förmåga att leverera e-post är deras skräp e klagomål takt.
 
 ### <a name="are-you-sending-email-from-new-ip-addresses"></a>Skickar du e-post från nya IP-adresser?
 
@@ -79,7 +79,7 @@ Mer information om felet du fick finns i listan över felkoder i [rapporter om u
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Om du vill begära borttagning från den här listan kan du [använda avlistningsportalen för att ta bort dig själv från listan Blockerade avsändare i Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Om du vill begära borttagning från den här listan kan du [använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>Min e-post landade i mottagarens skräppostmapp i EOP
 
@@ -112,9 +112,9 @@ Du har fått NDR eftersom misstänkt aktivitet har upptäckts från IP-adressen 
 
  För att ta emot meddelanden från våra användare, se till att ditt nätverk tillåter anslutningar från IP-adresser som EOP använder i våra datacenter. Mer information finns i [Exchange Online Protection IP-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Metodtips för massutskick av e-post till Office 365-användare
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Metodtips för massutskick av e-post till Microsoft 365-användare
 
-Om du ofta genomför massutskick av e-post till Office 365-användare och vill se till att dina e-postmeddelanden kommer fram på ett säkert och snabbt sätt följer du tipsen i det här avsnittet.
+Om du ofta genomför massutskick av e-post till Microsoft 365-användare och vill se till att dina e-postmeddelanden kommer fram på ett säkert och snabbt sätt följer du tipsen i det här avsnittet.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Se till att namnet Från: återspeglar vem som skickar meddelandet
 

@@ -1,5 +1,5 @@
 ---
-title: Skillnaden mellan installationsguiden för Office 365 och installationssidan
+title: Skillnaden mellan inställningsguiden och inställningssidan
 f1.keywords:
 - NOCSH
 ms.author: v-sharos
@@ -18,46 +18,46 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Lär dig skillnaden mellan installationsguiden för Office 365 och installationssidan.
-ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig skillnaden mellan installationsguiden och installationssidan.
+ms.openlocfilehash: 41a87690282cdf2ff3d1514f9303776c0d2d33bf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209706"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631809"
 ---
-# <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Skillnaden mellan installationsguiden för Office 365 och installationssidan
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Skillnaden mellan inställningsguiden och inställningssidan
 
-Office 365 innehåller två installationsupplevelser: 
+Microsoft 365 innehåller två installationsupplevelser: 
 
 - Första installationen med installationsguiden
 - Pågående och avancerad installation med hjälp av **installationssidan**
 
-Installationsguiden innehåller en guidad genomgång för att konfigurera den grundläggande Office 365-konfigurationen. När du har slutfört den första konfigurationen kan du gå till **installationssidan** för att slutföra konfigurationen och konfigurera de tjänster som medföljer dina prenumerationer.
+Installationsguiden innehåller en guidad genomgång för att konfigurera den grundläggande Microsoft 365-konfigurationen. När du har slutfört den första konfigurationen kan du gå till **installationssidan** för att slutföra konfigurationen och konfigurera de tjänster som medföljer dina prenumerationer.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Använd installationsguiden för att slutföra inledande installationsuppgifter
 
 Om du vill konfigurera kontot går du till [administrationscentret,](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer **Inställningar** i det vänstra navigeringsfönstret och väljer sedan **Guidad inställning** på **inställningssidan.**
 
-![Starta installationsguiden för Office 365 Business](../../media/o365b-guided-setup.png)
+![Starta installationsguiden för Microsoft 365 Apps för företag](../../media/o365b-guided-setup.png)
 
 Installationsguiden guidar dig genom följande steg:
 
-1. Installera Office 365-programmen på datorn.
+1. Installera Microsoft 365-apparna på datorn.
 
 2. Välj och verifiera din domän, till exempel contoso.com.
 
-3. Lägg till nya användare och tilldela licenser till dem så att de kan hämta och installera Office 365-appar.
+3. Lägg till nya användare och tilldela licenser till dem så att de kan hämta och installera Microsoft 365-appar.
 
-4. Connect'your domän.
+4. Anslut domänen.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Använd installationssidan för att slutföra och hantera konfigurationen
 
-Om du vill komma åt **installationssidan** i [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer du **Installationsprogrammet** i navigeringsfönstret. Baserat på produkter som du har köpt visas funktioner som du har konfigurerat och administratörsrollen, uppgifter och relaterad information från hela Office 365 här.
+Om du vill komma åt **installationssidan** i [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer du **Installationsprogrammet** i navigeringsfönstret. Baserat på produkter som du har köpt visas funktioner som du har konfigurerat och din administratörsroll, uppgifter och relaterad information från hela Microsoft 365 här.
 
 Du ser en fullständig lista över inställningsuppgifter ordnade i logiska kategorier, inklusive de som du har slutfört i installationsguiden.
 
-![Inställningssida för Office 365 för företag](../../media/o365b-setup-page.png)
+![Installationssidan för Microsoft 365 för företag](../../media/o365b-setup-page.png)
 
 Välj **Visa** för alla uppgifter för att få snabb information, till exempel uppgiftsbeskrivning, användarpåverkan, förutsättningar, insatser för att implementera och säkerhets- och implementeringsstatistik som hjälper dig att förstå konsekvenser och effekter innan du fortsätter.
 

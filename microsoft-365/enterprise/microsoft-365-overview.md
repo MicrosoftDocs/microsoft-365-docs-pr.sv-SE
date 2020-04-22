@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/07/2020
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Innehåller en introduktion till komponenter, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504097"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631567"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -32,7 +32,7 @@ Microsoft 365 för företag består av:
 
 |||
 |:-------|:-----|
-| Lokala och molnbaserade appar och produktivitetstjänster | Innehåller både Office 365 ProPlus, de senaste Office-programmen för din PC och Mac (till exempel Word, Excel, PowerPoint, Outlook och andra) och en komplett uppsättning onlinetjänster för e-post, fillagring och samarbete, möten med mera. |
+| Lokala och molnbaserade appar och produktivitetstjänster | Innehåller både Microsoft 365 Apps för företag, de senaste Office-apparna för din PC och Mac (till exempel Word, Excel, PowerPoint, Outlook och andra) och en komplett uppsättning onlinetjänster för e-post, fillagring och samarbete, möten med mera. |
 | Windows 10 Enterprise | Tillgodoser behoven hos både stora och medelstora organisationer och ger användarna den mest produktiva och säkra versionen av Windows- och IT-proffs omfattande distribution, enhet och apphantering. |
 | Enhetshantering och avancerade säkerhetstjänster | Inkluderar Microsoft Intune, som är en molnbaserad EMM-tjänst (Enterprise Mobility Management) som gör det möjligt för din personal att vara produktiv samtidigt som företagets data skyddas. |
 |||
@@ -45,7 +45,7 @@ Microsoft 365 för företag finns i tre abonnemang.
 |:-------|:-----|
 | E3 (på andra sätt) | Få tillgång till kärnprodukter och funktioner i Microsoft 365 för att öka produktiviteten på arbetsplatsen och driva innovation på ett säkert sätt. |
 | E5 | Få tillgång till de senaste produkterna och funktionerna i Microsoft 365, inklusive avancerade verktyg för skydd mot hot, säkerhet och samarbete.. Innehåller alla E3:s funktioner samt avancerade verktyg för säkerhet, röst och dataanalys. |
-| F3 (andra) | Ta kontakt med dina Firstline-arbetare genom specialbyggda verktyg och resurser som gör det möjligt för dem att göra sitt bästa arbete. |
+| F1 (andra) | Ta kontakt med dina Firstline-arbetare genom specialbyggda verktyg och resurser som gör det möjligt för dem att göra sitt bästa arbete. |
 |||
 
 Om du har Microsoft 365 E3 kan du även få dessa [erbjudanden:](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)
@@ -55,7 +55,7 @@ Om du har Microsoft 365 E3 kan du även få dessa [erbjudanden:](https://www.mic
 
 Dessa erbjudanden innehåller ytterligare funktioner som ingår i Microsoft 365 E5.
 
-Mer information om vad som ingår i varje abonnemang finns i [Omvandla ditt företag med Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
+Mer information finns i [Funktioner och funktioner för varje plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
 ## <a name="get-the-big-picture"></a>Få helheten
 
@@ -125,11 +125,11 @@ Mer distributionsinformation finns i så här:
 
 ## <a name="additional-microsoft-365-solutions"></a>Ytterligare Microsoft 365-lösningar
 
-- [Microsoft 365 Företag](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   Samla de bästa produktivitets- och samarbetsfunktionerna i Office 365 med lösningar för enhetshantering och säkerhet för att skydda affärsdata för små och medelstora företag (SMB).
 
-- [Microsoft 365 Utbildning](https://docs.microsoft.com/education)
+- [Microsoft 365 Education](https://docs.microsoft.com/education)
  
   Ge lärare möjlighet att låsa upp kreativitet, främja lagarbete och ge en enkel och säker upplevelse i en enda, prisvärd lösning som är byggd för utbildning.
 

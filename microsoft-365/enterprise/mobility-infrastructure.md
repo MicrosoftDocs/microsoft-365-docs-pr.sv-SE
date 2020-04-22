@@ -1,6 +1,6 @@
 ---
-title: Fas 5 - Hantering av mobila enheter
-description: Microsoft 365 Enterprise inkluderar hantering av mobila enheter med Microsoft Intune. Granska kraven och förutsättningarna, konfigurera Intune med din Azure Active Directory-resurs, registrera iOS-, macOS-, Android- och Windows-enheter, distribuera appar, skapa en konfigurera profil, använda en efterlevnadsprincip och aktivera villkorad åtkomst för hantering av mobila enheter med Microsoft 365 Enterprise.
+title: Fas 5 – Hantering av mobilenheter
+description: Microsoft 365 Enterprise inkluderar hantering av mobila enheter med Microsoft Intune. Granska kraven och förutsättningarna, konfigurera Intune med din Azure Active Directory-resurs, registrera iOS-, macOS-, Android- och Windows-enheter, distribuera appar, skapa en konfigurera profil, använda en efterlevnadsprincip och aktivera villkorlig åtkomst för hantering av mobila enheter med Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365-dokumentation, hantering av mobila enheter, Intune
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153898"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631531"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fas 5: Hantering av mobila enheter för Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ I den här fasen registrerar du dina enheter i Intune och skapar och tillämpar 
 
 ## <a name="step-1-plan-for-your-scenario"></a>Steg 1: Planera för ditt scenario
 
-En av de främsta anledningarna till att hantera mobila enheter är att skydda organisationens resurser. [Vanliga sätt att använda Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) visar några verkliga exempel, bland annat att skydda Office 365-e-post och data.
+En av de främsta anledningarna till att hantera mobila enheter är att skydda organisationens resurser. [Vanliga sätt att använda Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) listar några verkliga exempel, bland annat att skydda Microsofts e-post och data.
 
 Intune ger dig alternativ för att hantera åtkomst till din organisation med hjälp av MDM (Mobile Device Management) eller Mobile Application Management (MAM). MDM är när användare "registrera" sina enheter i Intune. När de har registrerats är de hanterade enheter och kan ta emot alla principer, regler och inställningar som används av din organisation. Du kan till exempel installera specifika appar, skapa en lösenordsprincip, installera en VPN-anslutning med mera.
 
@@ -47,7 +47,7 @@ Du kommer också att bestämma hur du ska hantera personliga eller organisations
 Hämta sedan dina förutsättningar baserat på dina krav och dina scenarier som skapats i föregående steg. [Implementera dina planlistor](https://docs.microsoft.com/intune/planning-guide-onboarding) för alla krav. Här är de viktiga objekt du behöver för Intune med Microsoft 365:
 
 - **Intune-prenumeration:** Ingår i Microsoft 365 och ger dig åtkomst till Microsoft Intune i [Azure-portalen](https://portal.azure.com)
-- **Office 365-prenumeration:** Ingår i Microsoft 365 och används för Office-appar, inklusive e-post
+- **Microsoft 365-prenumeration:** Ingår i Microsoft 365 och används för Office-appar, inklusive e-post
 - **Azure Active Directory (Azure AD) premium**: Ingår i Microsoft 365 och används för att skapa användar- eller säkerhetsgrupper. Dessa grupper får Intune-principer som du skapar, till exempel att tvinga en lösenordslängd för att låsa upp en enhet. De grupper som du skapar i [fas 2: Identitet](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) kan användas.
 
 Det kan finnas vissa ytterligare krav, beroende på organisationens behov. Om du till exempel ska hantera iOS-enheter behöver du ett Apple MDM Push-certifikat. Om du använder lokalt Exchange behöver du den lokala Exchange-kopplingen. Dessa ytterligare krav beskrivs när du kommer till dessa steg.
@@ -109,7 +109,7 @@ I artikeln [Lägg till appar](https://docs.microsoft.com/intune/apps/apps-add) v
 
 I föregående steg konfigurerar du din miljö och aktiverade Intune. Nu är du redo att skapa vissa principer med efterlevnad och villkorlig åtkomst.
 
-Efterlevnad och villkorlig åtkomst är viktiga för att hantera enheter. [Efterlevnadsprinciper](https://docs.microsoft.com/intune/device-compliance-get-started) skapas för att skydda organisationens resurser. När du skapar en efterlevnadsprincip definierar du standarden eller "baslinjen" för vad en enhet måste ha. Du kan till exempel välja en acceptabel (eller oacceptabel) hotnivå, blockera jailbroken enheter, kräva en lösenordslängd med mera. Om dessa enheter inte uppfyller dina regler, vilket innebär att de inte är kompatibla, kan du blockera åtkomst till dina resurser.
+Efterlevnad och villkorlig åtkomst är viktiga för hantering av enheter. [Efterlevnadsprinciper](https://docs.microsoft.com/intune/device-compliance-get-started) skapas för att skydda organisationens resurser. När du skapar en efterlevnadsprincip definierar du standarden eller "baslinjen" för vad en enhet måste ha. Du kan till exempel välja en acceptabel (eller oacceptabel) hotnivå, blockera jailbroken enheter, kräva en lösenordslängd med mera. Om dessa enheter inte uppfyller dina regler, vilket innebär att de inte är kompatibla, kan du blockera åtkomst till dina resurser.
 
 Den här "blockeringen" introducerar [villkorlig åtkomst](https://docs.microsoft.com/intune/conditional-access). Om en enhet anses inte vara kompatibel kan du blockera åtkomst till e-post, SharePoint med mera.
 

@@ -1,5 +1,5 @@
 ---
-title: Hantera Office 365-grupp i administrationscentret
+title: Hantera en grupp i administrationscentret
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Lär dig att hantera Office 365-grupper, till exempel lägga till ta bort gruppmedlemmar, redigera e-postadressen, gruppnamnet eller beskrivningen och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig att hantera Microsoft 365-grupper, till exempel lägga till ta bort gruppmedlemmar, redigera e-postadressen, gruppnamnet eller beskrivningen och anpassa hur gruppen fungerar.
+ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212075"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630399"
 ---
-# <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Hantera en Office 365-grupp i administrationscentret för Microsoft 365
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrationscentret för Microsoft 365
 
-När du har [skapat en Office 365-grupp](create-groups.md) och lagt till gruppmedlemmar kan du konfigurera gruppen. Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar. 
+När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till gruppmedlemmar kan du konfigurera gruppen. Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar. 
 
 ## <a name="edit-the-group-name-or-description"></a>Redigera gruppens namn eller beskrivning
 
@@ -192,14 +192,14 @@ Det här alternativet är bra om du vill ha ett företags e-postadress som info@
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Skapa en Office 365-grupp](create-groups.md)
+[Skapa en Microsoft 365-grupp](create-groups.md)
 
-[Hantera gäståtkomst till Office 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[Välj vilken domän som ska användas när Office 365-grupper skapas](choose-domain-to-create-groups.md)
+[Välj vilken domän som ska användas när Microsoft 365-grupper skapas](choose-domain-to-create-groups.md)
 
-[Tillåt medlemmar att skicka som eller skicka för en Office 365-grupp](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Tillåt medlemmar att skicka som eller skicka för en Microsoft 365-grupp](allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Uppgradera distributionslistor till Office 365-grupper](../manage/upgrade-distribution-lists.md)
+[Uppgradera distributionslistor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Hantera Microsoft 365-grupper med PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)

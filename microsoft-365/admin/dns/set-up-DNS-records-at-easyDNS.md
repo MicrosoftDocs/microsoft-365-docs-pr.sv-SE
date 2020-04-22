@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster på easyDNS för Office 365
+title: Skapa DNS-poster på easyDNS för Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på easyDNS för Office 365.
-ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på easyDNS för Microsoft.
+ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210558"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631363"
 ---
-# <a name="create-dns-records-at-easydns-for-office-365"></a>Skapa DNS-poster på easyDNS för Office 365
+# <a name="create-dns-records-at-easydns-for-microsoft"></a>Skapa DNS-poster på easyDNS för Microsoft
 
 [Läs frågor och svar om domäner ](../setup/domains-faq.md) om du inte hittar det du letar efter. 
   
-Du måste lägga till alla följande DNS-poster på registratorns webbplats för att dirigera e-post till Office 365, använda domänen för Teams och Skype för företag och så vidare.
+Du måste lägga till alla följande DNS-poster på registratorns webbplats för att dirigera e-post till Microsoft, använda domänen för Teams och Skype för företag och så vidare.
   
-SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepaket. Du kan behöva uppgradera till en högre servicenivå med easyDNS för att lägga till SRV-poster som krävs för Office 365 Skype för företag.
+SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepaket. Du kan behöva uppgradera till en högre servicenivå med easyDNS för att lägga till SRV-poster som krävs för Skype för företag.
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Kontrollera att du äger domänen med en TXT-post
 
@@ -52,9 +52,9 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
     
-7. Vänta några minuter innan du fortsätter, så att posten som du just skapade kan spridas över Internet och identifieras av Office 365.
+7. Vänta några minuter innan du fortsätter, så att posten du just skapade kan spridas över Internet och identifieras av Microsoft.
     
-8. Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Office 365 och begär att Office 365 letar efter posten.
+8. Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär posten.
     
 9. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
@@ -64,7 +64,7 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 12. På sidan **Verify domain** väljer du **Verify**. 
     
-## <a name="add-an-mx-record-to-route-email-to-office-365"></a>Lägga till en MX-post för att dirigera e-post till Office 365
+## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Lägga till en MX-post för att dirigera e-post till Microsoft
 
 1. Gå [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) till och logga in med dina autentiseringsuppgifter. 
     
@@ -125,7 +125,7 @@ SRV-poster är för närvarande INTE tillgängliga under alla easyDNS-servicepak
     
 6. Kontrollera att posten är korrekt och välj sedan **BEKRÄFTA**. 
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Lägga till de två SRV-posterna som krävs för Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägg till de två SRV-poster som krävs för Microsoft
 
 SRV-poster är för närvarande INTE tillgängliga under easyDNS Domain Plus-tjänstnivå. Du kan behöva uppgradera till en högre servicenivå med easyDNS för att lägga till SRV-poster 
   

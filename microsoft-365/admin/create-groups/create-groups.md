@@ -1,5 +1,5 @@
 ---
-title: Skapa en Office 365-grupp i administrationscentret
+title: Skapa en grupp i administrationscentret
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Lär dig att skapa och ta bort Office 365-grupper, lägga till och ta bort gruppmedlemmar och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 088ef54531bc42cf563659c460cbf7d2e64c4cfe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig att skapa och ta bort Microsoft 365-grupper, lägga till och ta bort gruppmedlemmar och anpassa hur gruppen fungerar.
+ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630461"
 ---
-# <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Skapa en Office 365-grupp i administrationscentret för Microsoft 365
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Skapa en grupp i administrationscentret för Microsoft 365
   
-Användare kan skapa en Office 365-grupp från Outlook eller andra appar, men som administratör kan du behöva skapa eller ta bort grupper, lägga till eller ta bort medlemmar och anpassa hur de fungerar. Du kan göra detta i Administrationscentret för Microsoft 365 om du är global administratör eller gruppadministratör. 
+Användare kan skapa en Microsoft 365-grupp från Outlook eller andra appar, men som administratör kan du behöva skapa eller ta bort grupper, lägga till eller ta bort medlemmar och anpassa hur de fungerar. Microsoft 365 admin center är platsen att göra detta. 
 
 > [!TIP]
-> Office 365-anslutna Yammer-grupper måste skapas i Yammer, men kan hanteras i Microsoft 365-administrationscentret som andra Office 365-grupper. Mer information finns i [Yammer- och Office 365-grupper](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
+> Microsoft 365-anslutna Yammer-grupper måste skapas i Yammer, men kan hanteras i Microsoft 365-administrationscentret som andra Microsoft 365-grupper. Mer information finns i [Yammer- och Microsoft 365-grupper](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
 
-## <a name="create-an-office-365-group"></a>Skapa en Office 365-grupp
+## <a name="create-a-microsoft-365-group"></a>Skapa en Microsoft 365-grupp
 
 1. Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.
 
@@ -115,13 +115,12 @@ När ett e-postmeddelande tas bort från grupppostlådan tas det inte bort från
 
 ## <a name="next-step-manage-your-group"></a>Nästa steg: hantera din grupp
 
-När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, byta ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar. Mer information finns i [Hantera en Office 365-grupp.](manage-groups.md)
+När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppen ytterligare, till exempel redigera gruppens namn eller beskrivning, byta ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar. Mer information finns i [Hantera en Microsoft 365-grupp.](manage-groups.md)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Hantera gäståtkomst till Office 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[Välj vilken domän som ska användas när Office 365-grupper skapas](choose-domain-to-create-groups.md)
+[Välj vilken domän som ska användas när Microsoft 365-grupper skapas](choose-domain-to-create-groups.md)
 
-[Uppgradera distributionslistor till Office 365-grupper](../manage/upgrade-distribution-lists.md)
-        
+[Uppgradera distributionslistor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)

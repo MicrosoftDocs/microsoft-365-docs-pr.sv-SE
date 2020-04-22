@@ -1,5 +1,5 @@
 ---
-title: Hantera gäståtkomst i Office 365-grupper
+title: Hantera gäståtkomst i Microsoft 365-grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: Lär dig hur du lägger till gäster i en Office 365-grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomsten.
-ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Lär dig hur du lägger till gäster i en Microsoft 365-grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomsten.
+ms.openlocfilehash: cca1d3dff4d95f5b15b9f18d5eeebcf054e52fe3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894509"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630073"
 ---
-# <a name="manage-guest-access-in-office-365-groups"></a>Hantera gäståtkomst i Office 365-grupper
+# <a name="manage-guest-access-in-microsoft-365-groups"></a>Hantera gäståtkomst i Microsoft 365-grupper
 
-Som standard är gäståtkomst för Office 365-grupper aktiverat för din organisation. Administratörer kan styra om gäståtkomst till grupper ska tillåtas för hela organisationen eller för enskilda grupper.
+Som standard är gäståtkomst för Microsoft 365-grupper aktiverat för din organisation. Administratörer kan styra om gäståtkomst till grupper ska tillåtas för hela organisationen eller för enskilda grupper.
 
-När gruppmedlemmarna är aktiverade kan de bjuda in gästanvändare till en Office 365-grupp via Outlook på webben. Inbjudningar skickas till gruppägaren för godkännande.
+När gruppmedlemmarna är aktiverade kan de bjuda in gästanvändare till en Microsoft 365-grupp via Outlook på webben. Inbjudningar skickas till gruppägaren för godkännande.
 
 > [!Note]
 > Yammer Enterprise-nätverk som är i inbyggt läge eller [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) stöder inte nätverksgäster.
-> Office 365 Connected Yammer-grupper stöder för närvarande inte gäståtkomst, men du kan skapa icke-anslutna externa grupper i Yammer-nätverket. Se [Skapa och hantera externa grupper i Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) för instruktioner.
+> Microsoft 365 Connected Yammer-grupper stöder för närvarande inte gäståtkomst, men du kan skapa icke-anslutna externa grupper i Yammer-nätverket. Se [Skapa och hantera externa grupper i Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) för instruktioner.
 
 ### <a name="edit-guest-information"></a>Redigera gästinformation
 
@@ -48,11 +48,11 @@ Gäståtkomst i grupper används ofta som en del av ett bredare scenario som inn
 
 Om du vill aktivera eller inaktivera gäståtkomst i grupper kan du göra det i administrationscentret för Microsoft 365.
 
-1. Gå till inställningar för inställningar i **administrationscentret** \> **och** välj **Office 365-grupper**.
+1. Gå till inställningar och välj Microsoft **365-grupper**i **administrationscentret** \> **Settings** .
   
-2. På sidan **Office 365-grupper** väljer du om du vill låta personer utanför organisationen komma åt gruppresurser eller låta gruppägare lägga till personer utanför organisationen i grupper.
+2. På sidan **Microsoft 365 Grupper** väljer du om du vill låta personer utanför organisationen komma åt gruppresurser eller låta gruppägare lägga till personer utanför organisationen i grupper.
 
-## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>Lägga till gäster i en Office 365-grupp från administrationscentret
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Lägga till gäster i en Microsoft 365-grupp från administrationscentret
 
 Om gästen redan finns i katalogen kan du lägga till dem i dina grupper från administrationscentret för Microsoft 365.
   
@@ -131,7 +131,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Hantera gruppmedlemskap i administrationscentret för Microsoft 365](add-or-remove-members-from-groups.md)
+[Hantera gruppmedlemskap i microsoft 365-administrationscentret](add-or-remove-members-from-groups.md)
   
 [Azure Active Directory-åtkomstgranskningar](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

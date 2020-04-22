@@ -1,5 +1,5 @@
 ---
-title: Hantera vilka som kan skapa Office 365 Grupper
+title: Hantera vem som kan skapa grupper
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: Lär dig hur du styr vilka användare som kan skapa Office 365-grupper.
-ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
+ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630411"
 ---
-# <a name="manage-who-can-create-office-365-groups"></a>Hantera vilka som kan skapa Office 365 Grupper
+# <a name="manage-who-can-create-groups"></a>Hantera vem som kan skapa grupper
 
   
-Eftersom det är så enkelt för användare att skapa Office 365-grupper slipper du en massa förfrågningar om att skapa dem åt andra. Beroende på vilken verksamhet du har kanske du ändå vill styra vilka som har möjlighet att skapa grupper.
+Eftersom det är så enkelt för användare att skapa Microsoft 365-grupper översvämmas du inte av begäranden om att skapa dem för andra personers räkning. Beroende på vilken verksamhet du har kanske du ändå vill styra vilka som har möjlighet att skapa grupper.
   
-I den här artikeln beskrivs hur du inaktiverar möjligheten att skapa grupper i alla Office 365-tjänster som använder grupper, inklusive:
+I den hÃ¤r artikeln beskrivs hur du inaktiverar möjligheten att skapa grupper i alla Microsoft 365-tjänster som anvÃ¤nder grupper, inklusive:
   
 - Outlook
     
@@ -53,9 +53,9 @@ I den här artikeln beskrivs hur du inaktiverar möjligheten att skapa grupper i
 
 - Översikt
     
-Du kan begränsa skapandet av Office 365-grupper till medlemmarna i en viss säkerhetsgrupp. Om du vill konfigurera detta använder du Windows PowerShell. Den här artikeln går igenom de nödvändiga stegen.
+Du kan begränsa skapandet av Microsoft 365-grupper till medlemmarna i en viss säkerhetsgrupp. Om du vill konfigurera detta använder du Windows PowerShell. Den här artikeln går igenom de nödvändiga stegen.
   
-Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Office 365 Globala administratörer kan skapa grupper på alla sätt, till exempel Microsoft 365-administrationscentret, Planner, Teams, Exchange och SharePoint Online. Andra roller kan skapa grupper med begränsade medel, som anges nedan.
+Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Globala administratörer kan skapa grupper på alla sätt, till exempel Microsoft 365-administrationscentret, Planner, Teams, Exchange och SharePoint Online. Andra roller kan skapa grupper med begränsade medel, som anges nedan.
         
   - Exchange-administratör: Administrationscenter för Exchange, Azure AD
     
@@ -71,7 +71,7 @@ Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa
   
   - Administratör för användarhantering: Microsoft 365 Admin center, Yammer, Azure AD
      
-Om du har en av dessa roller kan du skapa Grupper i Office 365 för begränsade användare och sedan tilldela användaren som gruppens ägare. Användare som har den här rollen kan skapa anslutna grupper i Yammer, oavsett eventuella PowerShell-inställningar som kan förhindra skapande.
+Om du är medlem i någon av dessa roller kan du skapa Microsoft 365-grupper för begränsade användare och sedan tilldela användaren som ägare till gruppen. Användare som har den här rollen kan skapa anslutna grupper i Yammer, oavsett eventuella PowerShell-inställningar som kan förhindra skapande.
 
 ## <a name="licensing-requirements"></a>Licenskrav
 
@@ -85,16 +85,16 @@ För att hantera vem som skapar grupper behöver följande personer Azure AD Pre
 
 Följande personer behöver inte Azure AD Premium- eller Azure AD Basic EDU-licenser som tilldelats dem:
 
-- Personer som är medlemmar i Office 365-grupper och som inte har möjlighet att skapa andra grupper.
+- Personer som är medlemmar i Microsoft 365-grupper och som inte har möjlighet att skapa andra grupper.
 
-## <a name="step-1-create-a-security-group-for-users-who-need-to-create-office-365-groups"></a>Steg 1: Skapa en säkerhetsgrupp för användare som behöver skapa Grupper i Office 365
+## <a name="step-1-create-a-security-group-for-users-who-need-to-create-microsoft-365-groups"></a>Steg 1: Skapa en säkerhetsgrupp för användare som behöver skapa Microsoft 365-grupper
 
 Endast en säkerhetsgrupp i organisationen kan användas för att styra vem som kan skapa grupper. Men du kan kapsla andra säkerhetsgrupper som medlemmar i den här gruppen. Gruppen Tillåt gruppskapande är till exempel den angivna säkerhetsgruppen och grupperna Microsoft Planner Users och Exchange Online Users är medlemmar i den gruppen.
 
 Administratörer i de roller som anges ovan behöver inte vara medlemmar i den här gruppen: de behåller sin förmåga att skapa grupper.
 
 > [!IMPORTANT]
-> Var noga med att använda en **säkerhetsgrupp** för att begränsa vem som kan skapa grupper. Om du försöker använda en Office 365-grupp kan medlemmarna inte skapa en grupp från SharePoint eftersom den söker efter en säkerhetsgrupp. 
+> Var noga med att använda en **säkerhetsgrupp** för att begränsa vem som kan skapa grupper. Om du försöker använda en Microsoft 365-grupp kan medlemmarna inte skapa en grupp från SharePoint eftersom den söker efter en säkerhetsgrupp. 
     
 1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
 
@@ -174,7 +174,7 @@ Om du vill inaktivera begränsningen för gruppskapande och återigen tillåta a
     
 ## <a name="step-4-verify-that-it-works"></a>Steg 4: Kontrollera att det fungerar
 
-1. Logga in på Office 365 med ett användarkonto för någon som INTE ska ha möjlighet att skapa grupper. Det vill säga, de är inte medlemmar i den säkerhetsgrupp du skapade eller en administratör.
+1. Logga in med ett användarkonto för någon som INTE ska ha möjlighet att skapa grupper. Det vill säga, de är inte medlemmar i den säkerhetsgrupp du skapade eller en administratör.
     
 2. Välj panelen **Planerare.** 
     

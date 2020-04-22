@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om explorer och &amp; realtidsidentifieringar i Security Compliance Center.
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537515"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631175"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
 
@@ -39,7 +39,7 @@ Med Explorer (eller realtidsidentifieringar) har du en kraftfull rapport som gö
 
 Med den här rapporten kan du:
 
-- [Se skadlig kod som upptäckts av säkerhetsfunktionerna i Office 365](#see-malware-detected-in-email-by-technology)
+- [Se skadlig kod som upptäckts av Microsoft 365-säkerhetsfunktioner](#see-malware-detected-in-email-by-technology)
 - [Visa data om nätfiskeadresser och klicka på dom](#view-data-about-phishing-urls-and-click-verdict)
 - [Starta en automatisk undersöknings- och svarsprocess från en vy i Explorer](#start-automated-investigation-and-response) (endast ATP-plan 2)
 - ... [Undersök skadlig e-post och mycket mer!](#more-ways-to-use-explorer-or-real-time-detections)
@@ -56,7 +56,7 @@ Dessa nya funktioner beskrivs nedan.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-posthuvud och hämta e-posttext
 
-Möjligheten att förhandsgranska ett e-posthuvud och ladda ner e-postkroppen är nya funktioner som är tillgängliga i Threat Explorer. Administratörer kommer att kunna analysera nedladdade rubriker / e-postmeddelanden för hot. Eftersom nedladdning av e-postmeddelanden kan riskera exponering av information styrs den här processen av rollbaserad åtkomstkontroll (RBAC). En ny roll, *Preview,* måste läggas till i en annan Rollgrupp för Office 365 (till exempel Säkerhetsåtgärder eller säkerhetsadministratör) för att ge möjlighet att hämta e-post och förhandsgranska rubriker i vyn för alla e-postmeddelanden.
+Möjligheten att förhandsgranska ett e-posthuvud och ladda ner e-postkroppen är nya funktioner som är tillgängliga i Threat Explorer. Administratörer kommer att kunna analysera nedladdade rubriker / e-postmeddelanden för hot. Eftersom nedladdning av e-postmeddelanden kan riskera exponering av information styrs den här processen av rollbaserad åtkomstkontroll (RBAC). En ny roll, *Preview*, måste läggas till i en annan rollgrupp (till exempel Säkerhetsåtgärder eller säkerhetsadministratör) för att ge möjlighet att hämta e-post och förhandsgranska rubriker i vyn alla e-postmeddelanden.
 
 Men Explorer (och realtidsidentifieringar) lägger också till nya nya fält som är utformade för att ge dig en mer fullständig bild av var dina e-postmeddelanden landar. En del av målet med denna förändring är att göra jakten lättare för Security Ops människor, men nettoresultatet är att veta platsen för problem e-postmeddelanden på ett ögonblick.
 
@@ -117,7 +117,7 @@ Du kan komma till samma plats i rapporten identifiering i realtid enligt följan
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Se skadlig kod som upptäckts i e-post av teknik
 
-Anta att du vill se skadlig kod som har identifierats i e-post, med Office 365-teknik. Det gör du genom att använda vyn [E-post > Malware](threat-explorer-views.md#email--malware) i Explorer (eller identifieringar i realtid).
+Anta att du vill se skadlig kod som har identifierats i e-post, av Microsoft 365-teknik. Det gör du genom att använda vyn [E-post > Malware](threat-explorer-views.md#email--malware) i Explorer (eller identifieringar i realtid).
 
 1. I Security & Compliance Center[https://protection.office.com](https://protection.office.com)( väljer du **Explorer för hothantering** > **(eller** **Identifiering i realtid).** (I det här exemplet används Explorer.)
 
@@ -176,7 +176,7 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md)som 
 
 1. I Security & Compliance Center[https://protection.office.com](https://protection.office.com)( väljer du **Explorer för hothantering** > **(eller** **Identifiering i realtid).** (I det här exemplet används Explorer.)
 
-2. Välj **Skicka e-post** > **på** **Visa-menyn** . (Detta kallades tidigare **Användarrapporterat**.)
+2. Välj **Skicka e-post** > **på** **Visa-menyn** .
 
    ![Visa-menyn för Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ Om du vill visa och använda Explorer eller realtidsidentifieringar måste du ha
 
 Mer information om roller och behörigheter finns i följande resurser:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md)
 - [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Vissa skillnader mellan Threat Explorer och realtidsidentifieringar

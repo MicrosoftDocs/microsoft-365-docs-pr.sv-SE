@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här testlabbet-guiden om du vill aktivera ytterligare microsoft 365-säkerhetsinställningar i Microsoft 365 Enterprise-testmiljön.
-ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: 53205f0626ce55c5a9627339f3631964e3374a19
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058887"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631675"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Ökad Microsoft 365-säkerhet för microsoft 365 Enterprise-testmiljön
 
@@ -43,7 +43,7 @@ Om du vill konfigurera ökad Microsoft 365-säkerhet i ett simulerat företag f�
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>Fas 2: Konfigurera ökad Microsoft 365-säkerhet
 
-I den här fasen aktiverar du ökad Microsoft 365-säkerhet för microsoft 365 Enterprise-testmiljön. Mer information och inställningar finns i [Konfigurera din Office 365-klient för ökad säkerhet](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+I den här fasen aktiverar du ökad Microsoft 365-säkerhet för microsoft 365 Enterprise-testmiljön. Mer information och inställningar finns i [Konfigurera klienten för ökad säkerhet](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurera SharePoint Online för att blockera appar som inte stöder modern autentisering
 
@@ -64,7 +64,7 @@ Appar som inte stöder modern autentisering kan inte ha [konfigurationer för id
 
 Office 365 Advanced Threat Protection (ATP) för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från att oavsiktligt dela skadliga filer.
 
-1. Gå till [Office 365 Security & Compliance Center](https://protection.office.com) och logga in med ditt globala administratörskonto.
+1. Gå till [Security & Compliance Center](https://protection.office.com) och logga in med ditt globala administratörskonto.
 
 2. Klicka på **Princip**under **Hothantering**i det vänstra navigeringsfönstret och klicka sedan på **BETRODDa bifogade filer.** 
 
@@ -94,7 +94,7 @@ Office 365-hothantering kan hjälpa dig att kontrollera och hantera åtkomst til
 
 Så här ser du säkerhetsinstrumentpanelen:
 
-1. Om det behövs går du till [Office 365 Security & Compliance Center](https://protection.office.com) och loggar in med ditt globala administratörskonto.
+1. Om det behövs går du till [Security & Compliance Center](https://protection.office.com) och loggar in med ditt globala administratörskonto.
 
 2. Klicka på **Instrumentpanel**under **Hothantering**i det vänstra navigeringsfönstret.
 
@@ -119,7 +119,7 @@ Se steget [Konfigurera ökad säkerhet för Microsoft 365](infoprotect-configure
 
 Utforska ytterligare funktioner och funktioner för [informationsskydd](m365-enterprise-test-lab-guides.md#information-protection) i testmiljön.
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 

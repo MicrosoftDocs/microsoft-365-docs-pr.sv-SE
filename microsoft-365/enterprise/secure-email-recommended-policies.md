@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081298"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631411"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policyrekommendationer för att skydda e-post
 
@@ -57,9 +57,9 @@ Den här principen förhindrar att ActiveSync-klienter kringgår andra regler f�
 
 1. Följ "Steg 2: Konfigurera en Azure AD-princip för villkorlig åtkomst för Exchange Online med ActiveSync (EAS)" i [Scenario 1: Office 365-appar kräver godkända appar med appskyddsprinciper](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), vilket förhindrar att Exchange ActiveSync-klienter utnyttjar grundläggande autentisering från att ansluta till Exchange Online.
 
-## <a name="setup-office-365-message-encryption"></a>Konfigurera meddelandekryptering för Office 365
+## <a name="set-up-message-encryption"></a>Konfigurera meddelandekryptering
 
-Med de nya ome-funktionerna (Message Encryption) för Office 365-meddelanden, som utnyttjar skyddsfunktionerna i Azure Information Protection, kan din organisation enkelt dela skyddad e-post med vem som helst på vilken enhet som helst. Användare kan skicka och ta emot skyddade meddelanden med andra Office 365-organisationer samt kunder som inte är Office 365-kunder med hjälp av Outlook.com, Gmail och andra e-posttjänster.
+Med de nya ome-funktionerna (Message Encryption) för Office 365-meddelanden, som utnyttjar skyddsfunktionerna i Azure Information Protection, kan din organisation enkelt dela skyddad e-post med vem som helst på vilken enhet som helst. Användare kan skicka och ta emot skyddade meddelanden med andra Microsoft 365-organisationer samt icke-kunder som använder Outlook.com, Gmail och andra e-posttjänster.
 
 Mer information finns i [Konfigurera nya meddelandekrypteringsfunktioner för Office 365](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
 
