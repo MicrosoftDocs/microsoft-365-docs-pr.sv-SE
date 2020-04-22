@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration för Microsoft 365.
-ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631911"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707541"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köpa en Microsoft 365-prenumeration
 
@@ -32,9 +32,9 @@ Microsoft 365 är en komplett lösning som kombinerar Office 365 och Windows 10 
   
 - Microsoft 365 Business Premium
 
-- Microsoft 365 Företag E3
+- Office 365 Enterprise, E3
 
-- Microsoft 365 Företag E5
+- Office 365 Enterprise E5
 
 När du lägger till en prenumeration via administrationscentret associeras den nya prenumerationen med samma organisation (domännamnsrymd) som din befintliga prenumeration. Detta gör det enklare att flytta användare i organisationen mellan prenumerationer eller tilldela dem en licens för den ytterligare prenumeration de behöver.
   

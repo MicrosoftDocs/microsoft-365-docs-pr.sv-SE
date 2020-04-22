@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Utöka det avancerade threat protection för Office 365 till filer i SharePoint Online, OneDrive för företag och Microsoft Teams för att möjliggöra säkrare samarbete för din organisation.
-ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71e404a402db8c0c0ad01bf1daa415788dfa717b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636028"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708389"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP för SharePoint, OneDrive och Microsoft Teams
 
@@ -63,7 +63,7 @@ Mer information finns i [Aktivera Office 365 ATP för SharePoint, OneDrive och M
 
  Från och med slutet av maj 2018 utökas [karantänfunktionerna](quarantine-email-messages.md) i Security &amp; Compliance Center till ATP för SharePoint Online, OneDrive för företag och Microsoft Teams.
 
-När en fil i SharePoint Online, OneDrive för företag eller Microsoft Teams identifieras som skadlig, förutom att ATP blockerar filen från att öppnas eller delas, inkluderas filen i en lista över objekt i karantän. (I Security &amp; Compliance Center går du till **Karantän för granskning av hothantering** \> **Review** \> **och** filtrerar efter **innehåll**.)
+När en fil i SharePoint Online, OneDrive för företag eller Microsoft Teams identifieras som skadlig, förutom att ATP blockerar filen från att öppnas eller delas, inkluderas filen i en lista över objekt i karantän. (I Security &amp; Compliance Center går du till **Karantän för granskning av hothantering** \> **Review** \> **och** filtrerar efter **filer**.)
 
 Om du ingår i organisationens Microsoft 365 för företagssäkerhetsteam och har de behörigheter som krävs [tilldelade i Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)kan du hämta, släppa, rapportera och ta bort filer som identifieras som skadliga av ATP från karantänen.
 
@@ -75,7 +75,7 @@ Om du ingår i organisationens Microsoft 365 för företagssäkerhetsteam och ha
 
 ## <a name="next-steps"></a>Nästa steg
 
-1. [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+ - [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
 
-2. [Visa information om skadliga filer som upptäckts i SharePoint, OneDrive eller Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+ - [Visa information om skadliga filer som upptäckts i SharePoint, OneDrive eller Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Läs om hur du uppgraderar till en ny prenumeration.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636516"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707529"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang 
 
@@ -63,7 +63,7 @@ När du är klar med kassan kan det ta några minuter att slutföra uppgradering
 
 ## <a name="the-upgrade-tab-is-empty"></a>Fliken Uppgradera är tom
 
-Om fliken **Uppgradera** är tom visas en förklaring till varför du inte kan uppgradera just nu. Du kan försöka [ändra abonnemang manuellt](change-plans-manually.md) eller [ringa support](../../admin/contact-support-for-business-products.md). Mer information finns i [Varför kan jag inte uppgradera planer?](#why-cant-i-upgrade-plans)).
+Om fliken **Uppgradera** är tom visas en förklaring till varför du inte kan uppgradera just nu. Du kan försöka [ändra abonnemang manuellt](change-plans-manually.md) eller [ringa support](../../admin/contact-support-for-business-products.md). Mer information finns i [Varför kan jag inte uppgradera planer?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>Jag ser inte planen jag vill ha.
 
@@ -153,7 +153,7 @@ När du uppgraderar abonnemang automatiskt med knappen **Byt abonnemang** (eller
 
 Användare i den gamla prenumerationen flyttas automatiskt till den nya prenumerationen.
   
-Om din gamla prenumeration innehåller flera tjänster, och om du har ändrat vilken av dessa tjänster användarna har tilldelats, kanske du vill notera detta innan du uppgraderar abonnemangen så att du kan återskapa ändringarna efteråt. Alla användare får åtkomst till alla tjänster i den nya prenumerationen. Om du till exempel tidigare har köpt Office 365 Enterprise E3 för alla 100 användare, men inte har tilldelat SharePoint Online-tjänsten från 50 av dem, sparas inte den här ändringen efter uppgraderingsabonnemangen.
+Om din gamla prenumeration innehåller flera tjänster, och om du har ändrat vilken av dessa tjänster användarna har tilldelats, kanske du vill notera detta innan du uppgraderar abonnemangen så att du kan återskapa ändringarna efteråt. Alla användare får åtkomst till alla tjänster i den nya prenumerationen. Om du till exempel tidigare har köpt Microsoft 365 Business Premium för alla 100 användare, men inte har tilldelat SharePoint Online-tjänsten från 50 av dem, sparas inte den här ändringen efter uppgraderingsplanerna.
   
 Om du har mer än en prenumeration innan du uppgraderar abonnemang och har användare som tilldelats licenser till mer än en prenumeration, behålls det här tilldelningsmönstret så mycket som möjligt i den nya prenumerationen.
   
@@ -164,9 +164,9 @@ Alla användardata lagras under uppgraderingen, inklusive Exchange-postlådor oc
 Den dag då abonnemangsuppgraderingen är klar inaktiveras faktureringen på din gamla prenumeration och faktureringen på din nya prenumeration aktiveras. Du får en proportionell kredit för oanvända tjänster i den gamla prenumerationen. Du får en ny faktura som inkluderar krediten för din gamla prenumeration inom 30 dagar efter uppgraderingen till den nya prenumerationen.
   
 > [!NOTE]
-> Tiden det tar innan krediten visas på betalningskontot beror på betalningsmetoden som användes för prenumerationen. 
+> Tiden det tar innan krediten visas på betalningskontot beror på betalningsmetoden som användes för prenumerationen.
   
- **Uppgradera från en förbetald prenumeration innan den går ut?** Om den totala kostnaden för den nya prenumerationen är högre än eller lika med det återstående värdet för den förbetalda prenumerationen förlorar du inte förbetald tid när du förnyar prenumerationen. På kassasidan visas en kredit för oanvänd tid. Men om den totala kostnaden för den nya prenumerationen är mindre än det återstående värdet för din aktuella förbetalda prenumeration förlorar du en del av din oanvända tid. Du får ett meddelande innan du checkar ut och du kan vänta med att uppgradera tills du närmar dig förbetalda prenumerationens utgångsdatum.
+**Uppgradera från en förbetald prenumeration innan den går ut?** Om den totala kostnaden för den nya prenumerationen är högre än eller lika med det återstående värdet för den förbetalda prenumerationen förlorar du inte förbetald tid när du förnyar prenumerationen. På kassasidan visas en kredit för oanvänd tid. Men om den totala kostnaden för den nya prenumerationen är mindre än det återstående värdet för din aktuella förbetalda prenumeration förlorar du en del av din oanvända tid. Du får ett meddelande innan du checkar ut och du kan vänta med att uppgradera tills du närmar dig förbetalda prenumerationens utgångsdatum.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Ring support som hjälper dig att uppgradera abonnemang
 

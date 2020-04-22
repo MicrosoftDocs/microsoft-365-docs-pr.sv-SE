@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när din Microsoft 365 för företag-prenumeration går ut, är inaktiverad eller om du avbryter.
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634880"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707613"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?
 
@@ -220,7 +220,7 @@ Det här kan du förvänta dig för dig och dina användare om du avbryter en pr
 Mer information om hur du avbryter finns i [Avbryt prenumerationen](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Om du vill att dina prenumerationsdata ska tas bort innan den typiska inaktiverade perioden är över kan du begära snabb avetablering. När du begär snabb avetablering raderas dina prenumerationsuppgifter inom 3 dagar efter uppsägningen. Om du vill använda snabb avetablering [ringer du support](../../admin/contact-support-for-business-products.md).
+> Om du vill att dina prenumerationsdata ska tas bort innan den vanliga inaktiverade perioden är över kan du [stänga kontot](../close-your-account.md).
 
 > [!NOTE]
 > Informationen på den här sidan omfattas av [Microsofts policyfriskrivnings- och ändringsmeddelande](https://go.microsoft.com/fwlink/p/?LinkId=613651). Gå tillbaka till den här webbplatsen regelbundet för att granska eventuella ändringar.

@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om inställningarna och filtren mot skräppost som hjälper dig att förhindra skräppost i Exchange Online och Microsoft 365. Får du för mycket skräppost i Microsoft 365? Du kan anpassa dina skräppostfilter och inställningar för skräppost.
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636052"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708577"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Skydd mot skräppost i Microsoft 365
 
@@ -83,7 +83,7 @@ Här är några metodtips som gäller för båda scenarierna:
 
 - **Verifiera organisationens inställningar**: Se upp för inställningar som gör att meddelanden kan hoppa över skräppostfiltrering (till exempel om du lägger till din egen domän i listan över tillåtna domäner i anti-spam-principer). Våra rekommenderade inställningar finns i [Rekommenderade inställningar för EOP och Microsoft 365 ATP-säkerhet](recommended-settings-for-eop-and-office365-atp.md) och [Skapa säkra avsändarelistor](create-safe-sender-lists-in-office-365.md).
 
-- **Kontrollera att skräppostregeln är aktiverad i användarens postlåda**: Den är aktiverad som standard, men om det inte är meddelanden som markerats som skräppost kan inte flyttas till mappen Skräppost. Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Kontrollera att skräppostregeln är aktiverad i användarens postlåda**: Den är aktiverad som standard, men om den är inaktiverad kan meddelanden som markerats som skräppost inte flyttas till mappen Skräppost. Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Använd de tillgängliga spärrade avsändarna:** Mer information finns i [Skapa blockerade avsändarelistor](create-block-sender-lists-in-office-365.md).
 
