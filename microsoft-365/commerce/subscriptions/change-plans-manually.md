@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636589"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707637"
 ---
 # <a name="change-plans-manually"></a>Ändra planer manuellt
 
@@ -43,7 +43,7 @@ Det bästa sättet att ändra alla användare från ett abonnemang till ett anna
 Om du vill fortsätta med en manuell ändring läser du [Steg 2: Köp en ny prenumeration](#step-2-buy-a-new-subscription) i det här avsnittet.
 
 > [!IMPORTANT]
-> Om du ändrar till ett abonnemang med färre datarelaterade tjänster än din nuvarande plan (nedgradering) måste du säkerhetskopiera alla data som du vill behålla manuellt. Mer information finns i [Säkerhetskopiera data innan du byter O365 för affärsplaner](back-up-data-before-switching-plans.md).
+> Om du ändrar till ett abonnemang med färre datarelaterade tjänster än din nuvarande plan (nedgradering) måste du säkerhetskopiera alla data som du vill behålla manuellt. Mer information finns i [Säkerhetskopiera data innan du ändrar planer](back-up-data-before-switching-plans.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Steg 2: Köpa en ny prenumeration
 
@@ -62,7 +62,7 @@ Ta med en licens för varje användare som du vill flytta.
 
 2. **Kontrollera att båda prenumerationerna är listade och aktiva** Prenumerationen som du flyttar användare från och prenumerationen som du flyttar användare till måste visas tillsammans. Om den nya prenumerationen inte finns när du kontrollerar först försöker du igen senare. Kontrollera att båda prenumerationerna är aktiva. [Den nya prenumerationen visas inte eller är inte aktiv.](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Kontrollera att du har tillräckligt med licenser för varje användare** Varje användare behöver en licens som matchar deras prenumeration. Om du vill flytta tio användare till Office 365 Enterprise E5 måste du se till att tio licenser är tillgängliga.
+3. **Kontrollera att du har tillräckligt med licenser för varje användare** Varje användare behöver en licens som matchar deras prenumeration. Så om du vill flytta tio användare till Microsoft 365 Business Premium måste du se till att tio licenser är tillgängliga.
 
 4. **Behöver du köpa fler licenser för den nya prenumerationen?**
    Gå till sidan **Produkter & tjänster** och köp fler [licenser.](../licenses/buy-licenses.md)

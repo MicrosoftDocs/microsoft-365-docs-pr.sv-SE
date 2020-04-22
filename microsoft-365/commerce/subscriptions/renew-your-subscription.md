@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Läs om hur du förnyar din Prenumeration på Microsoft 365 för företag med hjälp av en produktnyckel och aktiverar eller inaktiverar den återkommande faktureringen. '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636565"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707661"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
 
@@ -48,11 +48,10 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 
 ::: moniker range="o365-worldwide"
 
-
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
 2. Välj prenumerationen som du vill hantera den återkommande fakturan för.
- 
+
 3. Välj **Billing** **redigera** **bredvid Förnyar på** eller **Förfalla på**.
 
 4. Välj **Inaktivera** i fönstret **Återkommande faktureringsinställningar** om du vill inaktivera den. Om återkommande fakturering redan är inaktiverad väljer du **Månadsvis** eller **En gång** för att aktivera den.
@@ -68,11 +67,7 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 
 ::: moniker range="o365-germany"
   
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prenumerationer</a> i administrationscentret.
-
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a>.
-
-    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a>.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
 
 2. Välj prenumerationen som du vill hantera den återkommande fakturan för.
  
@@ -91,14 +86,10 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 
 ::: moniker range="o365-21vianet"
   
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prenumerationer</a> i administrationscentret.
-
-    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a>.
-
-    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a>.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
 
 2. Välj prenumerationen som du vill hantera den återkommande fakturan för.
- 
+
 3. Om du vill aktivera **Återkommande fakturering**växlar du växlingsknappen till **På**.
 
     ![Närbild av ett prenumerationskort med återkommande fakturering aktiverat.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

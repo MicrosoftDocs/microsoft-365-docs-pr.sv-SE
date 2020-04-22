@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto purge (ZAP) är en e-postskyddsfunktion i Microsoft 365 som identifierar skräppost, skadlig kod eller nätfiskemeddelanden som redan har levererats till Exchange Online. Hur ZAP gör detta beror på vilken typ av skadligt innehåll som upptäcks.
-ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1b36f1152882f446c8f611ceafb44a085cc0a5d
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630815"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708457"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Zero-hour auto purge (ZAP) - skydd mot skräppost och skadlig kod i Microsoft 365
 
@@ -36,7 +36,7 @@ ZAP är tillgängligt med standardprenumerationen Exchange Online Protection (EO
 
 ## <a name="how-zap-works"></a>Hur ZAP fungerar
 
-Microsoft 365 uppdaterar dagligen skräppost- och malwaresignaturer i realtid. Användare kan dock fortfarande ta emot skadliga meddelanden av olika skäl, bland annat om innehållet är weaponized efter att ha levererats till användare. ZAP åtgärdar detta problem genom att kontinuerligt övervaka uppdateringar av Microsfot 365 spam och malware signaturer. ZAP kan hitta och ta bort meddelanden som redan finns i en användares postlåda.
+Microsoft 365 uppdaterar dagligen skräppost- och malwaresignaturer i realtid. Användare kan dock fortfarande ta emot skadliga meddelanden av olika skäl, bland annat om innehållet är weaponized efter att ha levererats till användare. ZAP åtgärdar det här problemet genom att kontinuerligt övervaka uppdateringar av Microsoft 365-signaturerna för skräppost och skadlig kod. ZAP kan hitta och ta bort meddelanden som redan finns i en användares postlåda.
 
 ZAP-åtgärden är sömlös för användaren. De meddelas inte om ett meddelande identifieras och flyttas.
 

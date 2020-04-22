@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Hitta och använd rapporter för avancerat skydd mot &amp; office 365 i Säkerhetsefterlevnadscenter.
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631067"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708505"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -60,9 +60,11 @@ Filter och uppdelningar av informationen möjliggör mer detaljerade kategoriser
 
 ![Rullgardinsmenyn Status för hotskydd som visar "bryt ned efter".](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i E-post > Phish, E-post > Malware och Innehåll > Malware visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
+Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **Mail** \> **Phish,** **E Malware** \> **och** **Content** \> **Malware** visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
 
 ![Den här bilden visar Export som ett alternativ i menyn för vyn Skadlig kod, precis mellan Skapa schema och Begäransrapport.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Obs:** Det maximala antalet poster som kan exporteras för **Phish** och **Malware** är strax under 10000. Om du exporterar en vy exporteras endast de senaste 10000 posterna.
 
 Översikts- och e-postvyerna visar information inom några timmar efter bearbetningen i stället för inom 24 timmar (efterfrågan på igen. ökade hastigheter här har varit en tydlig signal)!
 

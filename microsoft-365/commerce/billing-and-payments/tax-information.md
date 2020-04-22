@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Ta reda på hur mycket skatt du debiteras för din Microsoft 365 för företag-prenumeration i olika regioner. '
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635010"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708137"
 ---
 # <a name="tax-information"></a>Momsinformation
 
@@ -94,7 +94,7 @@ Ta reda på vilken moms du måste betala i följande regioner. Du kan också [an
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Mellanöstern och Afrika (EMEA)
 
-När du köper Office 365-tjänster i EU är köpet föremål för mervärdesskatt (moms).
+När du köper Microsoft 365-tjänster i EU omfattas detta köp av moms.
   
 - Om du befinner dig i en av EU:s medlemsstater och inte anger ett giltigt lokalt momsregistreringsnummer tillämpar Microsoft Ireland Operations Ltd. den aktuella lokala momssatsen, baserat på det faktureringsland som angetts i ditt konto.
 
@@ -154,7 +154,7 @@ Om du faktureras från en annan plats tillämpas den aktuella lokala skattesatse
 
 I USA och Kanada gäller olika momssatser beroende på kundens ort. Om du befinner dig i Puerto Rico gäller de lokala momsavgifterna.
   
-Om faktureringen sköts av Microsoft Corporation ([se fakturan](view-your-bill-or-invoice.md)) och du registrerat dig för Office 365 utanför USA, Kanada och Puerto Rico, debiteras vanligtvis ingen moms.
+Om din fakturering utförs av Microsoft Corporation ([se din faktura](view-your-bill-or-invoice.md)), och du har registrerat dig för Microsoft 365 utanför USA, Kanada och Puerto Rico, då skatt i allmänhet inte debiteras.
 
 ## <a name="how-taxes-are-calculated"></a>Hur skatter beräknas
 

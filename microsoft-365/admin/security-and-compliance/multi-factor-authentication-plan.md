@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig mer om multifaktorautentisering i Microsoft 365 och de steg du behöver följa för att konfigurera den.
-ms.openlocfilehash: c68fdb5c1a144c6bfe1161d95e1d6808461e2456
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
+ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627710"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43665674"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>Planera för multifaktorautentisering för Microsoft 365-distributioner
 
 Multifaktorautentisering (MFA) är en autentiseringsmetod som kräver att fler än en metod för verifiering används och lägger till ytterligare en säkerhetsnivå vid användarinloggningar och transaktioner. Det fungerar genom att kräva ett tillägg verifiering steg med information utöver användarkontot lösenord, till exempel:
   
-- Ett slumpmässigt genererad kod
+- En slumpmässigt genererad verifieringskod som skickas till din smarta telefon
     
 - Ett telefonsamtal
     
@@ -39,9 +39,9 @@ Multifaktorautentisering (MFA) är en autentiseringsmetod som kräver att fler �
     
 - En biometrisk enhet 
     
-## <a name="multi-factor-authentication-in-microsoft-365"></a>Multifaktorautentisering i Microsoft 365
+## <a name="mfa-in-microsoft-365"></a>MFA i Microsoft 365
 
-Microsoft 365 använder multifaktorautentisering för att ge extra säkerhet och hanteras från Microsoft 365 administrationscenter. Microsoft 365 erbjuder följande delmängd av Azure multifaktorautentiseringsfunktioner som en del av prenumerationen: 
+Microsoft 365 använder MFA för att ge extra säkerhet och hanteras från Microsoft 365 administrationscenter. Microsoft 365 erbjuder följande delmängd av [Azure Multi-Factor Authentication-funktioner](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) som en del av prenumerationen: 
   
 - Möjligheten att aktivera och genomdriva makroekonomiskt stöd för slutanvändare
     
@@ -49,23 +49,22 @@ Microsoft 365 använder multifaktorautentisering för att ge extra säkerhet och
     
 - Användningen av ett telefonsamtal som en andra autentiseringsfaktor
     
-- Användningen av ett sms-meddelande som en andra autentiseringsfaktor
+- Användningen av sms-textmeddelande (Short Message Service) som en andra autentiseringsfaktor
     
 - Programlösenord för klienter som inte är webbläsare (till exempel microsoft Lync 2013-kommunikationsprogrammet)
     
 - Microsoft-standardhälsningar under telefonsamtal för autentisering
     
-En fullständiga lista över tillagda funktioner finns i [jämförelsen av Azure Multi-Factor Authentication-versioner](https://go.microsoft.com/fwlink/?LinkId=506927). Du kan alltid få den fullständiga uppsättningen funktioner genom att köpa Azure Multi-Factor Authentication-tjänsten. 
+Den fullständiga listan över tillagda funktioner finns i [Azure Multi-Factor Authentication](https://go.microsoft.com/fwlink/?LinkId=506927). Du kan alltid få alla funktioner genom att köpa [Azure Multi-Factor Authentication-licenser](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing). 
   
-Du får en annan delmängd av funktionerna beroende på om du har en distribution endast för molnet för Microsoft 365 eller en hybrid som konfigureras med enkel inloggning och AD FS (Active Directory Federation Services). 
+Du får en annan delmängd av funktionerna beroende på om du använder molnidentitet där användarkontona finns i Microsoft 365 eller hybrid konfigureras med enkel inloggning och AD FS (Active Directory Federation Services). 
   
 |**Var hanterar du Microsoft 365?**|**Alternativ för andra MFA-faktor**|
 |:-----|:-----|
-|Endast molnet  <br/> |Azure Active Directory MFA (text eller telefonsamtal)  <br/> |
-|Hybridkonfiguration som hanteras lokalt  <br/> | Om du hanterar användaridentitet lokalt har du följande alternativ:  <br/>  Fysiskt eller virtuellt smartkort (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (modul för AD FS)  <br/>  Azure AD MFA  <br/> |
+|Endast molnet  <br/> | Azure MultiFaktor-autentisering (text eller telefonsamtal)  <br/> |
+|Hybridkonfiguration som hanteras lokalt  <br/> | Om du hanterar användaridentitet lokalt har du följande alternativ:  <br/> - Fysiskt eller virtuellt smartkort (AD FS)  <br/> - Azure MultiFaktor Authentication (modul för AD FS)  <br/>  - Azure multifaktorautentisering  <br/> |
    
-  
-Följande bild visar hur de uppdaterade Office 2013-enhetsapparna (i Windows) gör det möjligt för användare att logga in med MFA. Office 2013-enhetsapparna har stöd för multifaktorautentisering genom användning av [ADAL (Active Directory Authentication Library)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD är värd för en webbsida där användarna kan logga in. Identitetsleverantören kan vara Azure AD eller en federerad identitetsleverantör som AD FS. Autentiseringen av federerade användare består av följande steg:
+Office 2013-enhetsapparna stöder MFA med hjälp av [Active Directory Authentication Library (ADAL).](https://go.microsoft.com/fwlink/p/?LinkId=526684) Azure Active Directory (Azure AD) är värd för en webbsida där användare kan logga in. Identitetsleverantören kan vara Azure AD eller en federerad identitetsleverantör som AD FS. Autentiseringen av federerade användare består av följande steg:
   
 1. Azure AD omdirigerar användaren till inloggningswebbsidan som finns värd för identitetsprovidern för posten för organisationen. Identitetsleverantören fastställs av den domän som anges i användarens inloggningsnamn.
     
@@ -122,18 +121,20 @@ För MSI-baserade installationer måste du ha följande program installerade, me
 
 Så här aktiverar du MFA för din prenumeration:
   
-1. Aktivera [modern autentisering för Office 2013 på Windows-enheter om](enable-modern-authentication.md)det behövs.
+1. Vid behov: 
+
+  - [Aktivera modern autentisering för Office 2013 på Windows-enheter](enable-modern-authentication.md).
     
-  - Konfigurera Azure MFA med katalogtjänster från tredje part.
+  - Konfigurera Azure Multi-Factor Authentication med katalogtjänster från tredje part.
     
     Se [avancerade scenarier med Azure Multi-Factor Authentication och VPN-lösningar](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) från tredje part för information om specifika identitetsleverantörer som godkänts för det här programmet. 
     
-2. [Konfigurera multifaktorautentisering för Microsoft 365](set-up-multi-factor-authentication.md)
+2. [Konfigurera MFA för Microsoft 365](set-up-multi-factor-authentication.md).
     
-3. Tala om för enskilda användare hur du loggar in av MFA: [Logga in på Microsoft 365 med tvåstegsverifiering](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
+3. Tala om för enskilda användare hur de loggar in av MFA. Se [Logga in på Microsoft 365 med MFA](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb).
 
 > [!IMPORTANT]
-> Om du har aktiverat dina användare för Azure AD MFA och de har enheter med Office 2013 som inte är aktiverade för modern autentisering, kommer de att behöva använda applösenord på de enheterna. Mer information om applösenord and när, var och hur de ska användas hittar du här: [Applösenord med Azure-multifaktorautentisering](https://go.microsoft.com/fwlink/p/?LinkId=528178).
+> Om du har aktiverat dina användare för Azure Multi-Factor Authentication och de har några enheter som kör Office 2013 som inte är aktiverade för modern autentisering, måste de använda AppPasswords på dessa enheter. Mer information om AppPasswords och när/var/hur de ska användas finns här: [Applösenord med Azure Multi-Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178).
   
 ## <a name="faq"></a>Vanliga frågor och svar
 
@@ -141,11 +142,11 @@ Så här aktiverar du MFA för din prenumeration:
   
 ## <a name="known-issues"></a>Kända problem
 
-[Office 2013 och Microsoft 365 Apps för företagsmodern autentisering : Saker att veta innan du börjar med](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 och Microsoft 365 Apps för företagsmodern autentisering: Saker att veta innan du börjar med](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Felsöka Azure-multifaktorautentisering:**
   
-Se [Felsöka Azure MFA](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
+Se [Felsöka Azure Multi Factor-autentisering](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
   
 [Felsöka inloggningsproblem med modern autentisering för Office 2013 när du använder AD FS](https://support.microsoft.com/kb/3052203/)
   

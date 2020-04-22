@@ -20,29 +20,28 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Läs om hur du avbryter din Utvärderingsversion av Microsoft 365 för företag eller Microsoft 365 eller betald prenumeration.
-ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Läs om hur du avbryter din Microsoft 365 för företagstestversion eller betald prenumeration.
+ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636601"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708089"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
-*Behörighet:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din Utvärderingsversion av Microsoft 365 för företagstest eller betald prenumeration online i administrationscentret. Om du har tilldelat fler än 25 licenser till användare [ringer du supporten för att avbryta prenumerationen](../../admin/contact-support-for-business-products.md).
+*Behörighet:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din Utvärderingsversion av Microsoft 365 för företagstest eller betald prenumeration online i Microsoft 365-administrationscentret. Om du har tilldelat fler än 25 licenser till användare [ringer du supporten för att avbryta prenumerationen](../../admin/contact-support-for-business-products.md).
 
 *Återbetalning:* Eventuell proportionell kredit kommer att returneras till dig inom nästa faktureringsperiod.
 
 > [!NOTE]
-> Om du har flera prenumerationer på samma produkt, till exempel Office 365 Enterprise E3, påverkar inte uppsägningen av en av dem de köpta licenserna eller tjänsterna i de andra prenumerationerna.
+> Om du har flera prenumerationer på samma produkt, till exempel Microsoft 365 Business Premium, påverkar det inte de köpta licenserna eller tjänsterna i de andra prenumerationerna om du säger upp en av dem.
 
 ## <a name="steps-to-cancel-your-subscription"></a>Steg för att avbryta prenumerationen
 
-Om du har lagt till ditt eget domännamn som ska användas med din prenumeration måste du ta bort domänen innan du avbryter prenumerationen. Mer information finns i [Ta bort en domän från Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+Om du har lagt till ditt eget domännamn som ska användas med din prenumeration måste du ta bort domänen innan du avbryter prenumerationen. Mer information finns i [Ta bort en domän](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
-
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
@@ -109,11 +108,11 @@ Om du använder en anpassad domän med din prenumeration finns det några extra 
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Ändra dina domännamnserverposter (om det behövs)
 
-Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domänen skulle fungera med Office 365-tjänster. Innan du tar bort domänen måste du uppdatera DNS-posterna, till exempel domän-MX-posten, hos dns-värden.
+Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domänen skulle fungera med Microsoft 365-tjänster. Innan du tar bort domänen måste du uppdatera DNS-posterna, till exempel domän-MX-posten, hos dns-värden.
 
 Ändra till exempel MX-posten på DNS-värden. E-post som skickas till din domän slutar komma till din Microsoft-adress och går till din nya e-postleverantör istället. (En MX-post bestämmer vart e-post för domänen skickas.)
 
-- Om dina NS-poster (Nameserver) [pekar på Office 365-namnservrar](../../admin/setup/add-domain.md)börjar ändringar i MX-posten inte gälla förrän du ändrar NS-posterna så att de pekar på din nya DNS-värd (se steg 2).
+- Om dina NS-poster (Nameserver) [pekar på Microsoft 365-namnservrar](../../admin/setup/add-domain.md)börjar ändringar i MX-posten inte gälla förrän du ändrar NS-posterna så att de pekar på din nya DNS-värd (se steg 2).
 
 - Innan du uppdaterar MX-posten meddelar du användarna vilket datum du planerar att byta e-post och den nya e-postleverantören som du planerar att använda. Om användarna vill flytta sin befintliga Microsoft-e-post till den nya leverantören måste de också vidta extra åtgärder.
 
@@ -121,11 +120,11 @@ Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domän
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Uppdatera domänen MX och andra DNS-poster (om du använder en anpassad domän)
 
-Om du har bytt namnserverposter (NS) till Office 365 när du konfigurerade domänen måste du konfigurera eller uppdatera MX-posten och andra DNS-poster hos den DNS-värd du planerar att använda och sedan ändra NS-posten till den DNS-värden.
+Om du har bytt namnserverposter (NS) till Microsoft 365 när du konfigurerade domänen måste du konfigurera eller uppdatera MX-posten och andra DNS-poster hos den DNS-värd du planerar att använda och sedan ändra NS-posten till den DNS-värden.
 
 Om du inte växlade NS-poster när du konfigurerade domänen börjar din e-post gå till den nya adressen direkt när du ändrar MX-posten.
 
-Mer information finns i [Hur hanterar Office 365 mina DNS-poster?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records) Information om hur du ändrar NS-poster finns i [Ta bort en domän från Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+Mer information finns i [Hur hanterar Microsoft 365 mina DNS-poster?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Information om hur du ändrar NS-posterna finns i [Ta bort en domän](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### <a name="save-your-data"></a>Spara dina data
 
@@ -137,7 +136,7 @@ När annulleringen träder i kraft förlorar användarna åtkomsten till sina da
 
 ### <a name="uninstall-office-optional"></a>Avinstallera Office (valfritt)
 
-Om du avbröt prenumerationen och inte flyttade användare till en annan prenumeration som innehåller Office körs Office 365 i läget nedsatt funktionalitet. När detta inträffar kan användarna bara läsa och skriva ut dokument och Office 365-program visar [meddelanden om olicensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Se till att användarna [avinstallerar Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) från sina datorer för att undvika missförstånd.
+Om du avbröt prenumerationen och inte flyttade användare till en annan prenumeration som innehåller Microsoft 365 körs Microsoft 365 i läget nedsatt funktionalitet. När detta inträffar kan användarna bara läsa och skriva ut dokument och Microsoft 365-program visar [meddelanden om olicensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Se till att användarna [avinstallerar Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) från sina datorer för att undvika missförstånd.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

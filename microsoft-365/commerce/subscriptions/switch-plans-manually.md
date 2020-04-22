@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Byt Microsoft 365 för företag-prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636540"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707517"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Byt Microsoft 365 för affärsplaner manuellt
 
@@ -84,13 +84,9 @@ Se till att du köper en prenumeration för samma organisation som användarna f
 
     Den prenumeration du flyttar användare från och den prenumeration du flyttar användare till måste listas tillsammans. Om den nya prenumerationen inte finns när du kontrollerar först försöker du igen senare. Kontrollera att båda prenumerationerna visas under **AKTIV**. [Den nya prenumerationen visas inte eller är inte aktiv.](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Den nya Microsoft 365 för företag-prenumerationen med tillgängliga licenser**
-
-    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **Kontrollera att du har tillräckligt med licenser för varje användare**
 
-    Varje användare måste ha en licens som överensstämmer med prenumerationen. Om du vill flytta tio användare till Office 365 Enterprise E5 måste du se till att tio licenser är tillgängliga. I bilden här har tio licenser köpts för Office 365 Enterprise E5 och alla tio licenser är tillgängliga för tilldelning.
+    Varje användare måste ha en licens som överensstämmer med prenumerationen. Så om du vill flytta tio användare till Microsoft 365 Business Premium måste du se till att tio licenser är tillgängliga. 
 
 4. **Behöver du köpa fler licenser för den nya prenumerationen?** Gå till sidan **Prenumerationer** och [Köp licenser för din Microsoft 365 för företag-prenumeration](../licenses/buy-licenses.md).
   
@@ -139,8 +135,6 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
     > [!TIP]
     > Om du vill begränsa vilka tjänster som är tillgängliga för användaren drar du reglaget till positionen **Av** för de tjänster som du vill ta bort för den användaren. Om du till exempel vill att användaren ska ha tillgång till alla tillgängliga tjänster utom Skype för företag - Online kan du flytta reglaget för tjänsten Skype för företag - Online till positionen **Av**.
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. Växla växlingsknappen till **avpositionen** för licenser som den här användaren inte längre behöver.
 
 6. Längst ned i fönstret **Produktlicenser** väljer du **Tilldela** \> **stäng.** \> **Close**
@@ -149,19 +143,19 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan Aktiva <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">användare</a> i administrationscentret eller välj **Aktiva användare.** \> **Active users**
+1. Gå till sidan Aktiva <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">användare</a> i **administrationscentret.** \>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan Aktiva <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">användare</a> **i administrationscentret.** >
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
 ::: moniker-end
 
@@ -177,9 +171,7 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
     > - Om du vill begränsa vilka tjänster som är tillgängliga för användaren drar du reglaget till positionen **Av** för de tjänster som du vill ta bort för den användaren. Om du till exempel vill att användaren ska ha tillgång till alla tillgängliga tjänster utom Skype för företag - Online kan du flytta reglaget för tjänsten Skype för företag - Online till positionen **Av**.
     > - Alla tidigare tilldelade licenser för de markerade användarna tas bort.
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
-6. Längst ned i fönstret **Ersätt befintliga produkter** markerar du **Ersätt** \> **Stäng**.
+6. Längst ned i fönstret **Ersätt befintliga produkter** väljer du **Ersätt** \> **Stäng**.
 
 ## <a name="step-5-cancel-subscriptions-or-remove-licenses-that-you-no-longer-need-optional"></a>Steg 5: Avbryt prenumerationer eller ta bort licenser som du inte längre behöver (valfritt)
 
