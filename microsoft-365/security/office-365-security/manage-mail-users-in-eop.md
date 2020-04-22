@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Att definiera e-postanvändare är en viktig del av hanteringen av Tjänsten Exchange Online Protection (EOP).
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42811863"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635586"
 ---
 # <a name="manage-mail-users-in-eop"></a>Hantera e-postanvändare i EOP
 
@@ -36,7 +36,7 @@ Att definiera e-postanvändare är en viktig del av hanteringen av Tjänsten Exc
 
 - Information om hur du öppnar administrationscentret för Exchange finns [i Administrationscenter för Exchange i Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Information om vilka behörigheter du behöver finns i posten "Användare, Kontakter och Rollgrupper" i [Funktionsbehörigheter i EOP](feature-permissions-in-eop.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra den här proceduren eller procedurerna. Information om vilka behörigheter du behöver finns i posten "Användare, Kontakter och Rollgrupper" i [Funktionsbehörigheter i EOP](feature-permissions-in-eop.md).
 
 - Tänk på att när du skapar e-postanvändare med hjälp av Exchange Online Protection PowerShell-cmdlets kan du stöta på begränsning.
 
@@ -53,7 +53,7 @@ Att definiera e-postanvändare är en viktig del av hanteringen av Tjänsten Exc
 
 Det här avsnittet innehåller information om hur du hanterar e-postanvändare med hjälp av katalogsynkronisering.
 
-**Anmärkningar:**
+**Anmärkningar**:
 
 - Om du använder katalogsynkronisering för att hantera mottagarna kan du fortfarande lägga till och hantera användare i Microsoft 365-administrationscentret, men de synkroniseras inte med den lokala Active Directory. Detta beror på att katalogsynkronisering bara synkroniserar mottagare **från** den lokala Active Directory **till** molnet.
 
@@ -63,7 +63,7 @@ Det här avsnittet innehåller information om hur du hanterar e-postanvändare m
 
   - **Katalogbaserad kantblockering (DBEB)**: Mer information om DBEB finns i [Använda katalogbaserad kantblockering för att avvisa meddelanden som skickas till ogiltiga mottagare](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Slutanvändarens skräppostkarant karantän**: För att få åtkomst till slutanvändarens skräppostkarantskap måste slutanvändarna ha ett giltigt användar-ID och lösenord för Office 365. EOP-kunder som skyddar lokala postlådor måste vara giltiga e-postanvändare.
+  - **Slutanvändarens spam karantän:** För att komma åt slutanvändaren spam karantän, slutanvändare måste ha ett giltigt användar-ID och lösenord. EOP-kunder som skyddar lokala postlådor måste vara giltiga e-postanvändare.
 
   - **Regler för e-postflöde**: När du använder katalogsynkronisering överförs dina befintliga Active Directory-användare och -grupper automatiskt till molnet, och du kan sedan skapa regler för e-postflöde (kallas även transportregler) som riktar sig till specifika användare och/eller grupper utan att behöva lägga till dem manuellt via EAC eller Exchange Online Protection PowerShell. Observera att [dynamiska distributionsgrupper](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) inte kan synkroniseras via katalogsynkronisering.
 
@@ -126,7 +126,7 @@ I det här exemplet används cmdleten [New-EOPMailUser](https://docs.microsoft.c
 
 - Den externa e-postadressen är jzeng@tailspintoys.com.
 
-- Inloggningsnamnet för Office 365 är jeffreyz@contoso.onmicrosoft.com.
+- Inloggningsnamnet för Microsoft 365 är jeffreyz@contoso.onmicrosoft.com.
 
 - Lösenordet är Pa $ $word1.
 

@@ -1,5 +1,5 @@
 ---
-title: Genomgång - Från en insikt till en detaljerad rapport
+title: Genomgång – Från en insikt till en detaljerad rapport
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,16 +17,16 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Se hur du kan gå från en insikt &amp; till en detaljerad rapport i Security Compliance Center via ett exempel på dataförlustskydd.
-ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52c0f944e5319325f2ae478bd7fda34fa08319b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806459"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638076"
 ---
-# <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Genomgång - Från en insikt till en detaljerad rapport
+# <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Genomgång – Från en insikt till en detaljerad rapport
 
-Om du inte har tidigare rapporterat [och insikter i &amp; Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md)kan det hjälpa dig att se hur du enkelt kan navigera från en insikt till en detaljerad rapport. 
+Om du inte har tidigare [rapporterat och &amp; insikter i Security Compliance Center](reports-and-insights-in-security-and-compliance.md)kan det hjälpa dig att se hur du enkelt kan navigera från en insikt till en detaljerad rapport. 
   
 Detta är en av flera genomgångar för [Security &amp; Compliance Center](https://protection.office.com). Mer information om hur du går igenom ytterligare genomgångar finns i avsnittet [Närliggande ämnen.](#related-topics) 
   

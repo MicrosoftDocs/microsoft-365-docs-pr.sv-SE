@@ -1,5 +1,5 @@
 ---
-title: Förstå din e-faktura för Office 365 för företag (Taiwan)
+title: Förstå din e-faktura för Microsoft 365 för företag (Taiwan)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
-description: Läs mer om e-fakturan för Office 365 för företag för Taiwan.
-ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Läs mer om e-fakturan för Microsoft 365 för företag för Taiwan.
+ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811547"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632713"
 ---
-# <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Förstå din e-faktura för Office 365 för företag (Taiwan)
+# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Förstå din e-faktura för Microsoft 365 för företag (Taiwan)
 
 e-faktura är elektronisk faktura utfärdad av säljaren efter köpköp i enlighet med Taiwan Skatteverkets krav på e-faktura. Informationen överförs till Taiwan Skatteverkets elektroniska fakturamoln för registrering. För information om e-faktura i Taiwan, se <a href="https://www.einvoice.nat.gov.tw/" target="_blank">här:</a>中ンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンン
   
@@ -39,7 +39,7 @@ Här ingår en exempelkopia av e-faktura:
 
 För kommersiella inköp tillämpar vi skatter utöver det noterade priset på våra prenumerationer till en kurs som föreskrivs av Taiwan Tax Authority. För skatterelaterade frågor eller planering, vänligen arbeta med din skatterådgivare.
   
-## <a name="when-will-e-invoice-start-for-my-office-365-services"></a>När startar e-faktura för mina Office 365-tjänster?
+## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>När startar e-faktura för mina Microsoft 365-tjänster?
 
 Microsoft kommer att ersätta aktuell datoriserad faktura med e-faktura den **15 september**. För fakturering före den 15 september skickas papperskopieringsskattefakturor direkt till kunder. Efter den 15 september erbjuds e-faktura i ditt microsoft 365-administrationscenter för visning, nedladdning och utskrift och skickas inte längre direkt till dig. 
   

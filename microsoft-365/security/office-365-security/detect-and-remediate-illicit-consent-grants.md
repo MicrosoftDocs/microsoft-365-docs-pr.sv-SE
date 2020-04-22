@@ -1,5 +1,5 @@
 ---
-title: Upptäcka och åtgärda bidrag för olagligt samtycke i Office 365
+title: Upptäcka och åtgärda bidrag för olagligt samtycke
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Läs om hur du känner igen och åtgärdar attacken mot olagliga samtyckesbidrag i Office 365.
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42806808"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637610"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Upptäcka och åtgärda bidrag för olagligt samtycke i Office 365
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Upptäcka och åtgärda bidrag för olagligt samtycke
 
 **Sammanfattning**  Läs om hur du känner igen och åtgärdar attacken mot olagliga samtyckesbidrag i Office 365.
 
@@ -38,11 +38,11 @@ Dessa attacker utnyttjar en interaktionsmodell som förutsätter att entiteten s
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Hur ser en olaglig bidragsattack ut i Office 365?
 
-Du måste söka i **Granskningsloggen** för Office 365 för att hitta tecken, även kallade IOK (Indicators of Compromise) för den här attacken. För organisationer med många Azure-registrerade program och en stor användarbas är det bästa sättet att granska dina organisationers medgivandebidrag varje vecka.
+Du måste söka i **granskningsloggen** för att hitta tecken, även kallade Indikatorer för kompromiss (IOK) av denna attack. För organisationer med många Azure-registrerade program och en stor användarbas är det bästa sättet att granska dina organisationers medgivandebidrag varje vecka.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Åtgärder för att hitta tecken på denna attack
 
-1. Öppna **Säkerhets- och efterlevnadscentret** i office 365-klienten.
+1. Öppna **Security & Compliance Center** i din klientorganisation.
 
 2. Navigera till **Sök** och välj **Granskningsloggsökning**.
 
@@ -53,7 +53,7 @@ Du måste söka i **Granskningsloggen** för Office 365 för att hitta tecken, �
 5. Klicka på resultatet för att se information om aktiviteten. Klicka på **Mer information** om du vill ha information om aktiviteten. Kontrollera om IsAdminContent är inställt på Sant.
 
 > [!NOTE]
-> * Det kan ta från 30 minuter upp till 24 timmar innan motsvarande granskningsloggpost visas i sökresultaten när en händelse inträffar. <br/><br/> Hur lång tid en granskningspost behålls och söks i granskningsloggen beror på din Office 365-prenumeration och specifikt vilken typ av licens som tilldelas en viss användare. Mer information finns i [Granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * Det kan ta från 30 minuter upp till 24 timmar innan motsvarande granskningsloggpost visas i sökresultaten när en händelse inträffar. <br/><br/> Hur lång tid en granskningspost behålls och söks i granskningsloggen beror på din Microsoft 365-prenumeration och specifikt vilken typ av licens som tilldelas en viss användare. Mer information finns i [Granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Om det här värdet är sant anger det att någon med global administratörsåtkomst kan ha beviljat bred åtkomst till data. Om detta är oväntat, vidta åtgärder för att [bekräfta en attack](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Så här bekräftar du en attack
@@ -121,7 +121,7 @@ Det enklaste sättet att verifiera attacken mot otillåtet medgivande är att k�
 
 Skriptet producerar en fil med namnet Permissions.csv. Följ dessa steg för att leta efter bidrag för otillåten ansökan:
 
-1. Sök efter värdet "AllPrinciples" i kolumnen ConsentType (kolumn G). Behörigheten AllPrincipals gör att klientprogrammet kan komma åt allas innehåll i hyresrätt. Inbyggda Office 365-program behöver den här behörigheten för att fungera korrekt. Alla program som inte kommer från Microsoft med den här behörigheten bör granskas noggrant.
+1. Sök efter värdet "AllPrinciples" i kolumnen ConsentType (kolumn G). Behörigheten AllPrincipals gör att klientprogrammet kan komma åt allas innehåll i hyresrätt. Inbyggda Microsoft 365-program behöver den här behörigheten för att fungera korrekt. Alla program som inte kommer från Microsoft med den här behörigheten bör granskas noggrant.
 
 2. I kolumnen Behörighet (kolumn F) granska de behörigheter som varje delegerat program har till innehåll. Leta efter behörigheten "Läs" och "Skriv" eller "*. Alla" tillstånd, och granska dessa noggrant eftersom de kanske inte är lämpliga.
 
@@ -131,7 +131,7 @@ Skriptet producerar en fil med namnet Permissions.csv. Följ dessa steg för att
 
 ## <a name="determine-the-scope-of-the-attack"></a>Bestäm omfattningen av attacken
 
-När du har slutfört åtkomsten till inventeringsprogram granskar du **granskningsloggen** för Office 365 för att fastställa hela omfattningen av överträdelsen. Sök på de berörda användarna, tidsramarna som det olagliga programmet hade åtkomst till din organisation och de behörigheter som appen hade. Du kan söka i **granskningsloggen** i [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+När du har slutfört åtkomsten till inventeringsprogram granskar du **granskningsloggen** för att fastställa hela omfattningen av överträdelsen. Sök på de berörda användarna, tidsramarna som det olagliga programmet hade åtkomst till din organisation och de behörigheter som appen hade. Du kan söka i **granskningsloggen** i [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 > [!IMPORTANT]
 > [Postlådegranskning](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) och [aktivitetsgranskning för administratörer och användare](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) måste ha aktiverats före attacken för att du ska få den här informationen.
@@ -158,15 +158,15 @@ När du har identifierat ett program med olagliga behörigheter har du flera sä
 
 - Du kan stänga av integrerade program för din hyresrätt. Detta är ett drastiskt steg som inaktiverar slutanvändares möjlighet att bevilja samtycke på klientomfattande basis. Detta förhindrar att användarna oavsiktligt beviljar åtkomst till ett skadligt program. Detta rekommenderas inte starkt eftersom det allvarligt försämrar användarnas förmåga att vara produktiv med tredjepartsprogram. Du kan göra detta genom att följa stegen i [Aktivera eller inaktivera integrerade appar](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Secure Office 365 som ett cybersäkerhetsproffs
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Säkra Microsoft 365 som ett cybersäkerhetsproffs
 
-Din Office 365-prenumeration levereras med en kraftfull uppsättning säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [säkerhetsfärdplanen för Office 365 – De viktigaste prioriteringarna för de första 30 dagarna, 90 dagarna och längre för](security-roadmap.md) att implementera Microsofts rekommenderade metodtips för att skydda din Office 365-klientorganisation.
+Din Microsoft 365-prenumeration levereras med en kraftfull uppsättning säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [microsoft 365-säkerhetsfärdplanen – De högsta prioriteterna för de första 30 dagarna, 90 dagarna och längre för](security-roadmap.md) att implementera Microsofts rekommenderade metodtips för att skydda din Microsoft 365-klientorganisation.
 
-- Uppgifter att utföra under de första 30 dagarna. Dessa har omedelbar effekt och är låg påverkan på dina användare.
+- Uppgifter som ska utföras under de första 30 dagarna. De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 
-- Uppgifter att utföra i 90 dagar. Dessa tar lite mer tid att planera och genomföra men kraftigt förbättra din säkerhet hållning.
+- Uppgifter som ska utföras inom 90 dagar. De tar lite längre tid att planera och implementera men förbättrar din säkerhet avsevärt.
 
-- Mer än 90 dagar. Dessa förbättringar bygga i din första 90 dagars arbete.
+- Efter 90 dagar. De här förbättringarna uppnås under de första 90 dagarna.
 
 ## <a name="see-also"></a>Se även:
 

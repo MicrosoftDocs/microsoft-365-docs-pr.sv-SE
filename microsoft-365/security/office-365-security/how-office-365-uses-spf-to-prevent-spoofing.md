@@ -1,5 +1,5 @@
 ---
-title: Så här använder Office 365 Sender Policy Framework (SPF) för att förhindra förfalskning
+title: Så här använder Microsoft 365 Sender Policy Framework (SPF) för att förhindra förfalskning
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,34 +15,34 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: 'Sammanfattning: I den här artikeln beskrivs hur Office 365 använder SPF-posten (Sender Policy Framework) i DNS för att säkerställa att e-postsystem för mål litar på meddelanden som skickas från din anpassade domän. Detta gäller utgående e-post som skickas från Office 365. Meddelanden som skickas från Office 365 till en mottagare inom Office 365 kommer alltid att passera SPF.'
-ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 'Sammanfattning: I den här artikeln beskrivs hur Microsoft 365 använder TXT-posten (Sender Policy Framework) i DNS för att säkerställa att e-postsystem för mål litar på meddelanden som skickas från din anpassade domän. Detta gäller utgående e-post som skickas från Microsoft 365. Meddelanden som skickas från Microsoft 365 till en mottagare inom Microsoft 365 kommer alltid att passera SPF.'
+ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42806034"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633996"
 ---
-# <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Så här använder Office 365 Sender Policy Framework (SPF) för att förhindra förfalskning
+# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Så här använder Microsoft 365 Sender Policy Framework (SPF) för att förhindra förfalskning
 
- **Sammanfattning:** I den här artikeln beskrivs hur Office 365 använder SPF-posten (Sender Policy Framework) i DNS för att säkerställa att måle-e-postsystem litar på meddelanden som skickas från din anpassade domän. Detta gäller utgående e-post som skickas från Office 365. Meddelanden som skickas från Office 365 till en mottagare inom Office 365 kommer alltid att passera SPF.
+ **Sammanfattning:** I den här artikeln beskrivs hur Microsoft 365 använder TXT-posten (Sender Policy Framework) i DNS för att säkerställa att måle-e-postsystem litar på meddelanden som skickas från din anpassade domän. Detta gäller utgående e-post som skickas från Microsoft 365. Meddelanden som skickas från Microsoft 365 till en mottagare inom Microsoft 365 kommer alltid att passera SPF.
 
 En SPF TXT-post är en DNS-post som förhindrar förfalskning och nätfiske genom att verifiera domännamnet som e-postmeddelanden skickas från. SPF validerar ursprunget för e-postmeddelanden genom att verifiera avsändarens IP-adress mot den påstådda ägaren av den sändande domänen.
 
 > [!NOTE]
 > SPF-posttyper inaktuella av Internet Engineering Task Force (IETF) 2014. Se i stället till att du använder TXT-poster i DNS för att publicera din SPF-information. Resten av den här artikeln använder termen SPF TXT-post för tydlighetens skull.
 
-Domänadministratörer publicerar SPF-information i TXT-poster i DNS. SPF-informationen identifierar auktoriserade utgående e-postservrar. Mål e-postsystem verifiera att meddelanden kommer från auktoriserade utgående e-postservrar. Om du redan är bekant med SPF, eller om du har en enkel distribution, och bara behöver veta vad du ska inkludera i din SPF TXT-post i DNS för Office 365, kan du gå till [Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Om du inte har en distribution som är helt värd i Office 365, eller om du vill ha mer information om hur SPF fungerar eller hur du felsöker SPF för Office 365, fortsätter du läsa.
+Domänadministratörer publicerar SPF-information i TXT-poster i DNS. SPF-informationen identifierar auktoriserade utgående e-postservrar. Mål e-postsystem verifiera att meddelanden kommer från auktoriserade utgående e-postservrar. Om du redan är bekant med SPF, eller om du har en enkel distribution, och bara behöver veta vad du ska inkludera i din SPF TXT-post i DNS för Microsoft 365, kan du gå till [Konfigurera SPF i Microsoft 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Om du inte har en distribution som är helt värd i Microsoft 365, eller om du vill ha mer information om hur SPF fungerar eller hur du felsöker SPF för Microsoft 365, fortsätter du läsa.
 
 > [!NOTE]
-> Tidigare var du tvungen att lägga till en annan SPF TXT-post i din anpassade domän om du också använde SharePoint Online. Detta behövs inte längre. Den här ändringen bör minska risken för att Meddelanden om SharePoint Online-meddelanden hamnar i mappen Skräppost. Du behöver inte göra några ändringar omedelbart, men om du får felet "för många sökninger" ändrar du SPF TXT-posten enligt beskrivningen i [Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+> Tidigare var du tvungen att lägga till en annan SPF TXT-post i din anpassade domän om du också använde SharePoint Online. Det behöver du inte göra längre. Den här ändringen kan minska risken för att SharePoint Online-meddelanden hamnar i skräppostmappen. Du behöver inte göra några ändringar omedelbart, men om du får felet "för många sökninger" ändrar du SPF TXT-posten enligt beskrivningen i [Konfigurera SPF i Microsoft 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
 
-## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>Så här fungerar SPF för att förhindra förfalskning och nätfiske i Office 365
+## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365"></a>Så här fungerar SPF för att förhindra förfalskning och nätfiske i Microsoft 365
 <a name="HowSPFWorks"> </a>
 
 SPF avgör om en avsändare tillåts skicka för en domän. Om avsändaren inte tillåts göra det, det vill säga om e-postmeddelandet misslyckas SPF-kontrollen på den mottagande servern, avgör skräppostprincipen som konfigurerats på den servern vad meddelandet ska göra.
 
-Varje SPF TXT-post innehåller tre delar: deklarationen att det är en SPF TXT-post, IP-adresser som tillåts skicka e-post från din domän och de externa domäner som kan skicka för domänens räkning och en tvingande regel. Du behöver alla tre i en giltig SPF TXT-post. I den här artikeln beskrivs hur du skapar din SPF TXT-post och innehåller metodtips för hur du arbetar med tjänsterna i Office 365. Länkar till instruktioner om hur du arbetar med domänregistratorer för att publicera din post till DNS finns också.
+Varje SPF TXT-post innehåller tre delar: deklarationen att det är en SPF TXT-post, IP-adresser som tillåts skicka e-post från din domän och de externa domäner som kan skicka för domänens räkning och en tvingande regel. Du behöver alla tre i en giltig SPF TXT-post. I den här artikeln beskrivs hur du skapar din SPF TXT-post och innehåller metodtips för hur du arbetar med tjänsterna i Microsoft 365. Länkar till instruktioner om hur du arbetar med domänregistratorer för att publicera din post till DNS finns också.
 
 ### <a name="spf-basics-ip-addresses-allowed-to-send-from-your-custom-domain"></a>Grunderna i SPF: IP-adresser som tillåts skicka från din anpassade domän
 <a name="SPFBasicsIPaddresses"> </a>
@@ -109,32 +109,32 @@ Förutom IP-adresser kan du också konfigurera SPF TXT-posten så att den inklud
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-När den mottagande servern ser den här posten i DNS utförs även en DNS-sökning på SPF TXT-posten för contoso.net och sedan för contoso.org. Om den hittar ytterligare en inkludera uttalande i posterna för contoso.net eller contoso.org, kommer det att följa dem också. För att förhindra överbelastningsattacker är det maximala antalet DNS-sökningar för ett enskilt e-postmeddelande 10. Varje include-sats representerar ytterligare en DNS-sökning. Om ett meddelande överskrider 10-gränsen misslyckas SPF. När ett meddelande når den här gränsen, beroende på hur den mottagande servern är konfigurerad, kan avsändaren få ett meddelande som säger att meddelandet genereras "för många sökninger" eller att "maximalt hoppantal för meddelandet har överskridits" (vilket kan hända när uppslag slingan och överträffa DNS-timeouten). Tips om hur du undviker detta finns i [Felsökning: Metodtips för SPF i Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+När den mottagande servern ser den här posten i DNS utförs även en DNS-sökning på SPF TXT-posten för contoso.net och sedan för contoso.org. Om den hittar ytterligare en inkludera uttalande i posterna för contoso.net eller contoso.org, kommer det att följa dem också. För att förhindra överbelastningsattacker är det maximala antalet DNS-sökningar för ett enskilt e-postmeddelande 10. Varje include-sats representerar ytterligare en DNS-sökning. Om ett meddelande överskrider 10-gränsen misslyckas SPF. När ett meddelande når den här gränsen, beroende på hur den mottagande servern är konfigurerad, kan avsändaren få ett meddelande som säger att meddelandet genereras "för många sökninger" eller att "maximalt hoppantal för meddelandet har överskridits" (vilket kan hända när uppslagsslingen loopar och överträffar DNS-timeouten). Tips om hur du undviker detta finns i [Felsökning: Metodtips för SPF i Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
-## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>Krav för din SPF TXT-post och Office 365
+## <a name="requirements-for-your-spf-txt-record-and-microsoft-365"></a>Krav för din SPF TXT-post och Microsoft 365
 <a name="SPFReqsinO365"> </a>
 
-Om du konfigurerar e-post när du konfigurerar Office 365 har du redan skapat en SPF TXT-post som identifierar Microsofts meddelandeservrar som en legitim e-postkälla för din domän. Denna post ser förmodligen ut så här:
+Om du konfigurerar e-post när du konfigurerar Microsoft 365 har du redan skapat en SPF TXT-post som identifierar Microsofts meddelandeservrar som en legitim e-postkälla för din domän. Denna post ser förmodligen ut så här:
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-Om du är en fullständigt värd office 365-kund, det vill säga du har inga lokala e-postservrar som skickar utgående e-post, är detta den enda SPF TXT-post som du behöver publicera för Office 365.
+Om du är en helt värd kund, det vill säga du har inga lokala e-postservrar som skickar utgående e-post, är detta den enda SPF TXT-post som du behöver publicera för Office 365.
 
-Om du har en hybriddistribution (det vill säga du har vissa postlådor lokalt och vissa i Office 365), eller om du är en fristående eop-kund (Exchange Online Protection) (det vill säga din organisation använder EOP för att skydda dina lokala postlådor), bör du lägga till den utgående IP-adressen för var och en av dina lokala kantpostservrar i SPF TXT-posten i DNS.
+Om du har en hybriddistribution (det vill säga du har vissa postlådor lokalt och vissa i Microsoft 365), eller om du är en fristående Exchange Online Protection -kund (det vill säga din organisation använder EOP för att skydda dina lokala postlådor), bör du lägga till den utgående IP-adressen för var och en av dina lokala e-postservrar (EPF TXT-posten i DNS).
 
-## <a name="form-your-spf-txt-record-for-office-365"></a>Skapa din SPF TXT-post för Office 365
+## <a name="form-your-spf-txt-record-for-microsoft-365"></a>Bilda din SPF TXT-post för Microsoft 365
 <a name="FormYourSPF"> </a>
 
-Använd syntaxinformationen i den här artikeln för att skapa SPF TXT-posten för din anpassade domän. Även om det finns andra syntaxalternativ som inte nämns här, är dessa de vanligaste alternativen. När du har skapat din post måste du uppdatera posten på din domänregistratorer.
+Använd syntaxinformationen i den här artikeln för att skapa SPF TXT-posten för din anpassade domän. Även om det finns andra syntaxalternativ som inte nämns här, är dessa de vanligaste alternativen. När du har skapat posten måste du uppdatera posten hos domänregistratorn.
 
-Information om de domäner som du måste inkludera för Office 365 finns i [Externa DNS-poster som krävs för SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Använd [steg-för-steg-instruktionerna](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för uppdatering av SPF-poster (TXT) för domänregistratorer.
+Information om de domäner som du måste inkludera för Microsoft 365 finns i [Externa DNS-poster som krävs för SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Använd [steg-för-steg-instruktionerna](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för uppdatering av SPF-poster (TXT) för domänregistratorer.
 
-### <a name="spf-txt-record-syntax-for-office-365"></a>Syntax för SPF TXT-post för Office 365
+### <a name="spf-txt-record-syntax-for-microsoft-365"></a>SPF TXT-postsyntax för Microsoft 365
 <a name="SPFSyntaxO365"> </a>
 
-En typisk SPF TXT-post för Office 365 har följande syntax:
+En typisk SPF TXT-post för Microsoft 365 har följande syntax:
 
 ```text
 v=spf1 [<ip4>|<ip6>:<IP address>] [include:<domain name>] <enforcement rule>
@@ -146,15 +146,15 @@ Till exempel:
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
 ```
 
-Där:
+där:
 
 - **v=spf1** krävs. Detta definierar TXT-posten som en SPF TXT-post.
 
 - **ip4** anger att du använder IP version 4-adresser. **ip6** anger att du använder IP version 6-adresser. Om du använder IPv6 IP-adresser, ersätta **ip4** med **ip6** i exemplen i den här artikeln. Du kan också ange IP-adressintervall med CIDR-notation, till exempel **ip4:192.168.0.1/26**.
 
-- _IP-adress_ är den IP-adress som du vill lägga till i SPF TXT-posten. Detta är vanligtvis IP-adressen för den utgående e-postservern för din organisation. Du kan lista flera utgående e-postservrar. Mer information finns i [Exempel: SPF TXT-post för flera utgående lokala e-postservrar och Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
+- _IP-adress_ är den IP-adress som du vill lägga till i SPF TXT-posten. Detta är vanligtvis IP-adressen för den utgående e-postservern för din organisation. Du kan lista flera utgående e-postservrar. Mer information finns i [Exempel: SPF TXT-post för flera utgående lokala e-postservrar och Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
 
-- _domännamn_ är den domän som du vill lägga till som en legitim avsändare. En lista över domännamn som du bör inkludera för Office 365 finns i [Externa DNS-poster som krävs för SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
+- _domännamn_ är den domän som du vill lägga till som en legitim avsändare. En lista över domännamn som du bör inkludera för Microsoft 365 finns i [Externa DNS-poster som krävs för SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
 
 - Verkställighetsregel är vanligtvis en av följande:
 
@@ -170,16 +170,16 @@ Där:
 
     Anger neutral. Detta används vid testning av SPF. Vi rekommenderar inte att du använder den här kvalificeraren i din livedistribution.
 
-### <a name="example-spf-txt-record-to-use-when-all-of-your-mail-is-sent-by-office-365"></a>Exempel: SPF TXT-post som ska användas när all din e-post skickas av Office 365
+### <a name="example-spf-txt-record-to-use-when-all-of-your-mail-is-sent-by-microsoft-365"></a>Exempel: SPF TXT-post som ska användas när all din e-post skickas av Microsoft 365
 <a name="ExampleSPFNoSP"> </a>
 
-Om all din e-post skickas av Office 365 använder du den i SPF TXT-posten:
+Om all din e-post skickas av Microsoft 365 använder du detta i din SPF TXT-post:
 
 ```text
 v=spf1 include:spf.protection.outlook.com -all
 ```
 
-### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-office-365"></a>Exempel: SPF TXT-post för ett hybridscenario med en lokal Exchange Server och Office 365
+### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-microsoft-365"></a>Exempel: SPF TXT-post för ett hybridscenario med en lokal Exchange Server och Microsoft 365
 <a name="ExampleSPFHybridOneExchangeServer"> </a>
 
 Om IP-adressen för din lokala Exchange Server är 192.168.0.1, för att ställa in tvingande SPF-regeln på ett hårt fel, bildar du SPF TXT-posten enligt följande:
@@ -188,7 +188,7 @@ Om IP-adressen för din lokala Exchange Server är 192.168.0.1, för att ställa
 v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ```
 
-### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-office-365"></a>Exempel: SPF TXT-post för flera utgående lokala e-postservrar och Office 365
+### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>Exempel: SPF TXT-post för flera utgående lokala e-postservrar och Microsoft 365
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
 Om du har flera utgående e-postservrar, inkludera IP-adressen för varje e-postserver i SPF TXT-posten och separera varje IP-adress med ett blanksteg följt av en "ip4:"-sats. Till exempel:
@@ -197,14 +197,14 @@ Om du har flera utgående e-postservrar, inkludera IP-adressen för varje e-post
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all
 ```
 
-## <a name="next-steps-set-up-spf-for-office-365"></a>Nästa steg: Konfigurera SPF för Office 365
+## <a name="next-steps-set-up-spf-for-microsoft-365"></a>Nästa steg: Konfigurera SPF för Microsoft 365
 <a name="SPFNextSteps"> </a>
 
-När du har formulerat din SPF TXT-post följer du stegen i [Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md) för att lägga till den i domänen.
+När du har formulerat din SPF TXT-post följer du stegen i [Konfigurera SPF i Microsoft 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md) för att lägga till den i domänen.
 
-Även om SPF är utformat för att förhindra förfalskning, men det finns förfalskningstekniker som SPF inte kan skydda mot. För att skydda mot dessa, när du har ställt in SPF, bör du också konfigurera DKIM och DMARC för Office 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Office 365](use-dkim-to-validate-outbound-email.md). Se sedan [Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md).
+Även om SPF är utformat för att förhindra förfalskning, men det finns förfalskningstekniker som SPF inte kan skydda mot. För att skydda mot dessa, när du har ställt in SPF, bör du också konfigurera DKIM och DMARC för Microsoft 365. Information om hur du kommer igång finns i [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Microsoft 365](use-dkim-to-validate-outbound-email.md). Se sedan [Använda DMARC för att validera e-post i Microsoft 365](use-dmarc-to-validate-email.md).
 
-## <a name="troubleshooting-best-practices-for-spf-in-office-365"></a>Felsökning: Metodtips för SPF i Office 365
+## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>Felsökning: Metodtips för SPF i Microsoft 365
 <a name="SPFTroubleshoot"> </a>
 
 Du kan bara skapa en SPF TXT-post för din anpassade domän. Om du skapar flera poster misslyckas en round robin-situation och SPF misslyckas. Undvik detta kan du skapa separata poster för varje underdomän. Skapa till exempel en post för contoso.com och en annan post för bulkmail.contoso.com.
@@ -215,7 +215,7 @@ Om ett e-postmeddelande orsakar fler än 10 DNS-sökningar innan det levereras, 
 
 - Meddelandet krävde för många uppslag.
 
-## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-office-365"></a>Undvika felet "för många sökninger" när du använder domäner från tredje part med Office 365
+## <a name="avoiding-the-too-many-lookups-error-when-you-use-third-party-domains-with-microsoft-365"></a>Undvika felet "för många sökninger" när du använder domäner från tredje part med Microsoft 365
 <a name="SPFTroubleshoot"> </a>
 
 Vissa SPF TXT-poster för domäner från tredje part leder den mottagande servern att utföra ett stort antal DNS-sökningar. Till exempel, vid tidpunkten för denna skrift, innehåller Salesforce.com 5 innehålla satser i sin post:
@@ -246,6 +246,6 @@ Du kan använda nslookup för att visa dina DNS-poster, inklusive din SPF TXT-po
 ## <a name="for-more-information"></a>Mer information
 <a name="SPFTroubleshoot"> </a>
 
-Behöver du hjälp med att lägga till SPF TXT-posten? Läs artikeln [Skapa DNS-poster hos valfri DNS-värd för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för detaljerad information om användning av Avsänarprincipramverk med din anpassade domän i Office 365. [Meddelandehuvuden mot skräppost](anti-spam-message-headers.md) innehåller syntax- och rubrikfält som används av Office 365 för SPF-kontroller.
+Behöver du hjälp med att lägga till SPF TXT-posten? Läs artikeln [Skapa DNS-poster hos valfri DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för detaljerad information om användning av Avsänarprincipramverk med din anpassade domän i Microsoft 365. [Meddelanden mot skräppost](anti-spam-message-headers.md) innehåller syntax- och rubrikfält som används av Microsoft 365 för SPF-kontroller.
 
 

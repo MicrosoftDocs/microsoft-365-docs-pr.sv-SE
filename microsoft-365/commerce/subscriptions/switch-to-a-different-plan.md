@@ -1,5 +1,5 @@
 ---
-title: Byta till ett annat Office 365 för företag-abonnemang
+title: Växla till ett annat Microsoft 365 för affärsplan
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,31 +23,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: Läs om hur du byter till en ny Office 365 för företag-prenumeration.
-ms.openlocfilehash: 5f399cf222654a34006e95f3ab40bf48eeec751f
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Läs om hur du byter till en ny Microsoft 365 för företag-prenumeration.
+ms.openlocfilehash: a101ac47aede1413528fd2cb6be1d1df6ab4d961
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540827"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636528"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>Byta till ett annat Office 365 för företag-abonnemang
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Växla till ett annat Microsoft 365 för affärsplan
 
 När ditt företag ändras, eller om du behöver fler funktioner, kan du byta abonnemang.  
 
 Det enklaste sättet att byta abonnemang är att använda knappen **Byt abonnemang** i administrationscentret. Det går dock inte att använda knappen **Byt abonnemang** i alla situationer. I vissa fall kanske du kan byta abonnemang manuellt.
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Den här artikeln gäller det gamla administrationscentret. En annan plan finns i [Uppgradera till en annan plan.](upgrade-to-different-plan.md) Det nya administrationscentret är tillgängligt för alla Microsoft 365-administratörer. Mer information finns i[Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-
-::: moniker-end
 
 **Behöver du något annat?**
-
 - [Avbryt prenumerationen](cancel-your-subscription.md)
-- [Uppgradera Office 365 för hemmet till en företagsprenumeration](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Uppgradera Microsoft 365-familjen till en företagsprenumeration](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Ring Microsoft-support](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Använd knappen Växla abonnemang
@@ -82,7 +75,7 @@ När du använder knappen **Byt abonnemang** leds du genom processen att köpa e
 
 4. Välj **Chatta nu** på **kassasidan** om du behöver hjälp.
 
-    När du är klar med kassan tar det några minuter för Office 365 att slutföra växeln. Du kan börja använda din nya prenumeration direkt.
+    När du är klar med kassan tar det några minuter att slutföra växeln i Microsoft 365. Du kan börja använda din nya prenumeration direkt.
 
 ## <a name="the-switch-plans-button-isnt-there"></a>Knappen Byt abonnemang finns inte där
 
@@ -90,7 +83,7 @@ Om knappen **Byt abonnemang** inte är tillgänglig kan du försöka [byta abonn
   
 Här är varför detta kan hända:
   
-- Du använder mer än ett Office 365-abonnemang. Du kan bara använda knappen **Byt abonnemang** om alla användare prenumererar på samma abonnemang.
+- Du använder mer än ett Microsoft 365-abonnemang. Du kan bara använda knappen **Byt abonnemang** om alla användare prenumererar på samma abonnemang.
 
 - Du använder redan Office 365 Enterprise E5, så du har redan alla funktioner som är tillgängliga i Office 365.
 
@@ -98,9 +91,9 @@ Här är varför detta kan hända:
 
 När du använder knappen **Byt abonnemang** visas de planer som du kan växla till baserat på tjänsterna i ditt aktuella abonnemang. Du kan bara använda knappen **Byt abonnemang** för att växla till ett abonnemang som har samma datarelaterade tjänster eller till en högre version. Detta garanterar att användarna inte förlorar data i samband med dessa tjänster vid bytet.
   
-Om du vill jämföra abonnemang innan du byter finns på [produktjämförelsesidan för Office 365 för företag.](https://go.microsoft.com/fwlink/p/?linkid=842056) Tekniska specifikationer finns i [Servicebeskrivningar för Office 365](https://go.microsoft.com/fwlink/p/?linkid=842275).
+Om du vill jämföra planer innan du byter läser du sidan [Microsoft 365 för företagsproduktjämförelse.](https://go.microsoft.com/fwlink/p/?linkid=842056) Tekniska specifikationer finns i [Microsoft 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=842275).
   
-Om du vill byta till ett abonnemang med färre tjänster kan du [byta abonnemang manuellt](switch-plans-manually.md)eller [ringa Microsoft Support](../../admin/contact-support-for-business-products.md) för att få hjälp.
+Om du vill byta till ett abonnemang med färre tjänster kan du [byta abonnemang manuellt](switch-plans-manually.md)eller [Ringa Microsoft Support](../../admin/contact-support-for-business-products.md) för hjälp.
   
 ## <a name="why-some-switches-take-longer"></a>Varför vissa växlar tar längre tid
 
@@ -110,4 +103,4 @@ Om du vill byta till ett abonnemang med färre tjänster kan du [byta abonnemang
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Ring supporten som hjälper dig att byta abonnemang
 
-[Ring support](../../admin/contact-support-for-business-products.md)
+![](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Support för telefonsamtal](../../admin/contact-support-for-business-products.md)

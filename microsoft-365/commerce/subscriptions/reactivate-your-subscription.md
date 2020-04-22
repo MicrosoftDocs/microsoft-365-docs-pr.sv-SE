@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Läs om hur du återaktiverar prenumerationen när den går ut, eller om Microsoft inaktiverar den, eller om du avbryter den i mitten.
-ms.openlocfilehash: 0d033a60c9e738c8e58f0ea061d551ee2dd3b4d2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4e43ef1a2558ecf6d94eefd04c5ed527a3512b15
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142133"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636577"
 ---
 # <a name="reactivate-your-subscription"></a>Återaktivera prenumerationen
 
@@ -40,22 +40,24 @@ Om prenumerationen går ut eller inaktiverades av Microsoft, eller om du har sag
 
 ::: moniker range="o365-worldwide"
 
+
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
-2. Leta reda på den prenumeration som du vill återaktivera på sidan **Produkter & tjänster.** Välj **Återaktivera**i avsnittet **Fakturering** .
+2. Leta reda på den prenumeration som du vill återaktivera på sidan **Produkter och tjänster**. Välj **Återaktivera**i avsnittet **Fakturering** .
   
     Om du inte ser **Återaktivera** som en tillgänglig åtgärd [ringer du support](../../admin/contact-support-for-business-products.md) för att återaktivera prenumerationen.
 
 3. Bekräfta din betalningsinformation. Du kan uppdatera den befintliga betalningsinformationen här. När du är klar med betalningsmetoden väljer du **Återaktivera**.
 
-    - Om din prenumeration har upphört att gälla återgår prenumerationen till ett aktivt tillstånd när du har skickat in dina betalningsuppgifter och faktureringsdatumet **Nästa** sträcker sig med antingen en månad eller ett år, beroende på ditt aktuella prenumerationsåtagande. Om du betalar med kreditkort eller bankkonto debiteras ditt kreditkort eller bankkonto för förlängningen. Om du betalar med faktura visas tillägget på nästa faktura. Om du vill vara säker på att prenumerationen inte upphör att gälla igen följer du stegen för att [aktivera eller inaktivera återkommande fakturering](renew-your-subscription.md).
+  - Om din prenumeration har upphört att gälla återgår prenumerationen till ett aktivt tillstånd när du har skickat in dina betalningsuppgifter och faktureringsdatumet **Nästa** sträcker sig med antingen en månad eller ett år, beroende på ditt aktuella prenumerationsåtagande. Om du betalar med kreditkort eller bankkonto debiteras ditt kreditkort eller bankkonto för förlängningen. Om du betalar med faktura visas tillägget på nästa faktura. Om du vill vara säker på att prenumerationen inte upphör att gälla igen följer du stegen för att [aktivera eller inaktivera återkommande fakturering](renew-your-subscription.md).
 
     > [!NOTE]
     > Möjligheten att betala med bankkonto är inte tillgänglig i vissa länder eller regioner.
   
-    - Om din prenumeration har avbrutits eller inaktiverats på grund av att en betalning inte har tagits emot återgår den till ett aktivt tillstånd och **faktureringsdatumet Nästa** förblir detsamma.
+  - Om din prenumeration har avbrutits eller inaktiverats på grund av att en betalning inte har tagits emot återgår den till ett aktivt tillstånd och **faktureringsdatumet Nästa** förblir detsamma.
 
 ::: moniker-end
+
 
 ::: moniker range="o365-germany"
   
@@ -67,16 +69,16 @@ Om prenumerationen går ut eller inaktiverades av Microsoft, eller om du har sag
   
     Om du inte ser **Återaktivera** som en tillgänglig åtgärd [ringer du support](../../admin/contact-support-for-business-products.md) för att återaktivera prenumerationen.
 
-3. Ange dina betalningsuppgifter. Du kan uppdatera den befintliga betalningsinformationen här.
+3. Ange din betalningsinformation. Du kan uppdatera den befintliga betalningsinformationen här.
 
-    - Om din prenumeration har upphört att gälla återgår prenumerationen till ett aktivt tillstånd när du har skickat in dina betalningsuppgifter och faktureringsdatumet **Nästa** sträcker sig med antingen en månad eller ett år, beroende på ditt aktuella prenumerationsåtagande. Om du betalar med kreditkort eller bankkonto debiteras ditt kreditkort eller bankkonto för förlängningen. Om du betalar med faktura visas tillägget på nästa faktura. Om du vill vara säker på att prenumerationen inte upphör att gälla igen följer du stegen för att [aktivera eller inaktivera återkommande fakturering](renew-your-subscription.md).
+  - Om din prenumeration har upphört att gälla återgår prenumerationen till ett aktivt tillstånd när du har skickat in dina betalningsuppgifter och faktureringsdatumet **Nästa** sträcker sig med antingen en månad eller ett år, beroende på ditt aktuella prenumerationsåtagande. Om du betalar med kreditkort eller bankkonto debiteras ditt kreditkort eller bankkonto för förlängningen. Om du betalar med faktura visas tillägget på nästa faktura. Om du vill vara säker på att prenumerationen inte upphör att gälla igen följer du stegen för att [aktivera eller inaktivera återkommande fakturering](renew-your-subscription.md).
 
     > [!NOTE]
     > Möjligheten att betala med bankkonto är inte tillgänglig i vissa länder eller regioner.
   
-    - Om din prenumeration har avbrutits eller inaktiverats på grund av att en betalning inte har tagits emot återgår den till ett aktivt tillstånd och **faktureringsdatumet Nästa** förblir detsamma.
+  - Om din prenumeration har avbrutits eller inaktiverats på grund av att en betalning inte har tagits emot återgår den till ett aktivt tillstånd och **faktureringsdatumet Nästa** förblir detsamma.
 
-::: moniker-end
+  ::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
@@ -88,13 +90,13 @@ Om prenumerationen går ut eller inaktiverades av Microsoft, eller om du har sag
   
     Om du inte ser **Återaktivera** som en tillgänglig åtgärd [ringer du support](../../admin/contact-support-for-business-products.md) för att återaktivera prenumerationen.
 
-3. Ange dina betalningsuppgifter. Du kan uppdatera den befintliga betalningsinformationen här.
+3. Ange din betalningsinformation. Du kan uppdatera den befintliga betalningsinformationen här.
 
-    - Om din prenumeration har upphört att gälla återgår prenumerationen till ett aktivt tillstånd när du har skickat in dina betalningsuppgifter och faktureringsdatumet **Nästa** sträcker sig med antingen en månad eller ett år, beroende på ditt aktuella prenumerationsåtagande. Om du betalar med kreditkort eller bankkonto debiteras ditt kreditkort eller bankkonto för förlängningen. Om du betalar med faktura visas tillägget på nästa faktura. Om du vill vara säker på att prenumerationen inte upphör att gälla igen följer du stegen för att [aktivera eller inaktivera återkommande fakturering](renew-your-subscription.md).
+  - Om din prenumeration har upphört att gälla återgår prenumerationen till ett aktivt tillstånd när du har skickat in dina betalningsuppgifter och faktureringsdatumet **Nästa** sträcker sig med antingen en månad eller ett år, beroende på ditt aktuella prenumerationsåtagande. Om du betalar med kreditkort eller bankkonto debiteras ditt kreditkort eller bankkonto för förlängningen. Om du betalar med faktura visas tillägget på nästa faktura. Om du vill vara säker på att prenumerationen inte upphör att gälla igen följer du stegen för att [aktivera eller inaktivera återkommande fakturering](renew-your-subscription.md).
 
     > [!NOTE]
     > Möjligheten att betala med bankkonto är inte tillgänglig i vissa länder eller regioner.
   
-    - Om din prenumeration har avbrutits eller inaktiverats på grund av att en betalning inte har tagits emot återgår den till ett aktivt tillstånd och **faktureringsdatumet Nästa** förblir detsamma.
+  - Om din prenumeration har avbrutits eller inaktiverats på grund av att en betalning inte har tagits emot återgår den till ett aktivt tillstånd och **faktureringsdatumet Nästa** förblir detsamma.
 
   ::: moniker-end

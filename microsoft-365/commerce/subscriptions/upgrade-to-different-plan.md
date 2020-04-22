@@ -24,16 +24,19 @@ search.appverid:
 - GEA150
 description: Läs om hur du uppgraderar till en ny prenumeration.
 monikerRange: o365-worldwide
-ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142085"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636516"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
+# <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang 
 
 När ditt företag ändras, eller om du behöver fler funktioner, kan du uppgradera abonnemang. Det enklaste sättet att göra detta är att använda fliken **Uppgradera** i administrationscentret. Det går dock inte att använda fliken **Uppgradera** i alla situationer. I vissa fall kanske du kan ändra planer manuellt.
+
+> [!NOTE]
+> Den här artikeln gäller det nya administrationscentret. Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan. En annan [Microsoft 365 för affärsplan finns i Växla till ett annat Microsoft 365 för affärsplan](switch-to-a-different-plan.md).
 
 ## <a name="use-the-upgrade-tab"></a>Använda fliken Uppgradera
 
@@ -78,7 +81,7 @@ Om du vill flytta till en plan med färre tjänster kan du [ändra abonnemang ma
 
 Om du inte ser några planer på fliken **Uppgradera** betyder det att ditt abonnemang inte kan uppgraderas automatiskt. I vissa fall kanske du kan lösa problemet så att du kan visa planer som är tillgängliga för uppgradering, eller så kanske du kan uppgradera eller ändra planer manuellt i stället.
 
-### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Varför finns det inga planer som anges för att uppgradera?
+ ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Varför finns det inga planer som anges för att uppgradera?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Du kan inte uppgradera prenumerationer nu eftersom du har fler användare än licenser.
 
@@ -106,7 +109,7 @@ Du kan [ändra abonnemang manuellt](change-plans-manually.md) eller [ringa suppo
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Du har två eller flera planer för samma produkt
 
-Du kan bara använda fliken **Uppgradera** om alla användare prenumererar på samma abonnemang. Om du till exempel har två Office 365 Business Premium-abonnemang kan du inte uppgradera ett av dem automatiskt till ett annat abonnemang.
+Du kan bara använda fliken **Uppgradera** om alla användare prenumererar på samma abonnemang. Om du till exempel har två Microsoft 365 Business Standard-abonnemang kan du inte uppgradera ett av dem automatiskt till ett annat abonnemang.
 
 #### <a name="you-have-a-prepaid-plan"></a>Du har ett förbetalt abonnemang
 
@@ -138,13 +141,13 @@ Lös detta genom att hitta prenumerationen på sidan <a href="https://go.microso
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Vad gör uppgradering av en plan för min tjänst och fakturering?
 
-När du uppgraderar abonnemang automatiskt med hjälp av fliken **Uppgradera** i administrationscentret påverkas dina tjänster och fakturering.
+När du uppgraderar abonnemang automatiskt med knappen **Byt abonnemang** (eller fliken **Uppgradera** i det nya administrationscentret) påverkas dina tjänster och din fakturering.
 
 ### <a name="access-to-services"></a>Åtkomst till tjänster
 
-Administratörer kan inte använda **administrationscentret** medan planen uppgraderas. Det kan ta upp till en timme.
-
-**Användare** märker inga avbrott i tjänsten. De kommer att fortsätta att ha den befintliga tjänsten tills uppgraderingen är helt klar.
+ Administratörer kan inte använda **administrationscentret** medan planen uppgraderas. Det kan ta upp till en timme.
+  
+ **Användare** märker inga avbrott i tjänsten. De kommer att fortsätta att ha den befintliga tjänsten tills uppgraderingen är helt klar.
   
 ### <a name="users-and-licenses"></a>Användare och licenser
 
@@ -161,9 +164,9 @@ Alla användardata lagras under uppgraderingen, inklusive Exchange-postlådor oc
 Den dag då abonnemangsuppgraderingen är klar inaktiveras faktureringen på din gamla prenumeration och faktureringen på din nya prenumeration aktiveras. Du får en proportionell kredit för oanvända tjänster i den gamla prenumerationen. Du får en ny faktura som inkluderar krediten för din gamla prenumeration inom 30 dagar efter uppgraderingen till den nya prenumerationen.
   
 > [!NOTE]
-> Tiden det tar innan krediten visas på betalningskontot beror på betalningsmetoden som användes för prenumerationen.
-
-**Uppgradera från en förbetald prenumeration innan den går ut?** Om den totala kostnaden för den nya prenumerationen är högre än eller lika med det återstående värdet för den förbetalda prenumerationen förlorar du inte förbetald tid när du förnyar prenumerationen. På kassasidan visas en kredit för oanvänd tid. Men om den totala kostnaden för den nya prenumerationen är mindre än det återstående värdet för din aktuella förbetalda prenumeration förlorar du en del av din oanvända tid. Du får ett meddelande innan du checkar ut och du kan vänta med att uppgradera tills du närmar dig förbetalda prenumerationens utgångsdatum.
+> Tiden det tar innan krediten visas på betalningskontot beror på betalningsmetoden som användes för prenumerationen. 
+  
+ **Uppgradera från en förbetald prenumeration innan den går ut?** Om den totala kostnaden för den nya prenumerationen är högre än eller lika med det återstående värdet för den förbetalda prenumerationen förlorar du inte förbetald tid när du förnyar prenumerationen. På kassasidan visas en kredit för oanvänd tid. Men om den totala kostnaden för den nya prenumerationen är mindre än det återstående värdet för din aktuella förbetalda prenumeration förlorar du en del av din oanvända tid. Du får ett meddelande innan du checkar ut och du kan vänta med att uppgradera tills du närmar dig förbetalda prenumerationens utgångsdatum.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Ring support som hjälper dig att uppgradera abonnemang
 
@@ -173,4 +176,4 @@ Den dag då abonnemangsuppgraderingen är klar inaktiveras faktureringen på din
 
 [Ändra planer manuellt](change-plans-manually.md)
 
-[Säkerhetskopiera data innan du byter Office 365 för företag-abonnemang](back-up-data-before-switching-plans.md)
+[Säkerhetskopiera data innan du byter Microsoft 365 för affärsplaner](back-up-data-before-switching-plans.md)

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 'Ta reda på hur mycket skatt du debiteras för din Office 365 för företag-prenumeration i olika regioner. '
+description: 'Ta reda på hur mycket skatt du debiteras för din Microsoft 365 för företag-prenumeration i olika regioner. '
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826319"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635010"
 ---
-# <a name="tax-information"></a>Skatteinformation
+# <a name="tax-information"></a>Momsinformation
 
-Skatter för microsoft 365-administrationscenterköp som du gör via Microsoft bestäms av din företagsadress eller, om det är annorlunda, av din leveransadress. Om du befinner dig i USA måste du ange ett federalt employer identification number (FEIN).
+Moms för Administrationscenter för Microsoft 365 som du gör via Microsoft bestäms av företagets adress eller om den är annorlunda, via din leveransadress. Om du befinner dig i USA måste du ange ett federalt arbetsgivarregistreringsnummer (FEIN).
 
 Företag i dessa länder kan ange sitt momsregistreringsnummer:
 
@@ -44,7 +44,7 @@ Företag i dessa länder kan ange sitt momsregistreringsnummer:
 - Tjeckien
 - Danmark
 - Estland
-- Finland 
+- Finland
 - Frankrike
 - Tyskland
 - Grekland
@@ -60,33 +60,33 @@ Företag i dessa länder kan ange sitt momsregistreringsnummer:
 - Malta
 - Monaco
 - Nederländerna
-- Norge 
+- Norge
 - Polen
 - Portugal
 - Rumänien
 - Slovakien
 - Sydafrika
 - Spanien
-- Sverige 
+- Sverige
 - Schweiz
 - Storbritannien
     :::column-end:::
 :::row-end:::
 
-Dessa länder kan ange sitt momsnummer eller lokala motsvarighet på sin faktureringskontoinformation.
+Dessa länder kan ange sitt momsregistreringsnummer eller lokala motsvarighet på sina faktureringskontouppgifter.
 
 |Marknaden| Skatteidentifierare |
 |------|----------------|
 | Australien | ABN (valfritt) |
-| Brasilien | CNPJ (krävs) |
-| Indien | GSTIN (valfritt), PAN ID (obligatoriskt) |
+| Brasilien | CNPJ (obligatoriskt) |
+| Indien | GSTIN (valfritt), PAN-ID (obligatoriskt) |
 | Isle of Man | Moms-ID (valfritt) |
 | Nya Zeeland | GST-registreringsnummer (valfritt) |
 | Monaco | Moms-ID (valfritt) |
 | Taiwan | Moms-ID (valfritt) |
 
 > [!Note]
-> Om du behöver kontakta supporten har du ditt FEIN- eller momsregistreringsnummer eller lokal motsvarighet redo att ge supportagenten.
+> Om du behöver kontakta supporten ska du ha ditt FEIN, momsregistreringsnummer eller lokala motsvarighet redo att ge till supportagenten.
 
 ## <a name="what-tax-will-i-be-charged"></a>Vilka skatter debiteras jag?
 
@@ -106,7 +106,7 @@ När du köper Office 365-tjänster i EU är köpet föremål för mervärdesska
 
 Du kan vara berättigad till momsbefrielse:
   
-- **Om du är i en EU-medlemsstat utanför Irland:** Du kan ange ditt giltiga lokala moms-ID. Detta ger Microsoft Ireland Operations Ltd rätt till nollskattesats för moms. Du kan dock ha en lokal momsredovisningsskyldighet, så kontrollera med dina skatterådgivare om du har några problem. Instruktioner finns i "Lägg till ditt moms-ID (endast EU-länder)" nedan.
+- **Om du är i en EU-medlemsstat utanför Irland:** Du kan ange ditt giltiga lokala moms-ID. Detta ger Microsoft Ireland Operations Ltd. rätt till nollskattesats för transaktionen. Du kan dock ha en lokal momsredovisningsskyldighet, så kontrollera med dina skatterådgivare om du har några problem. Instruktioner finns i "Lägg till ditt moms-ID (endast EU-länder)" nedan.
 
 - **Om du befinner dig i Irland och har ett relevant giltigt certifikat för momsbefrielse:** Microsoft Ireland Operations Ltd. kan ha rätt att undanta transaktionen från moms. Om du inte har det tillämpar Microsoft Ireland Operations Ltd. den aktuella irländska momssatsen, oavsett om du anger ett momsregistreringsnummer eller inte.
 
@@ -116,11 +116,11 @@ Du kan vara berättigad till momsbefrielse:
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
-2. Leta reda på prenumerationskortet för den prenumeration som du vill uppdatera.
+2. Hitta prenumerationskortet för den prenumeration som du vill uppdatera.
 
-3. Välj **Redigera tjänstanvändningsadress i**avsnittet **Inställningar & åtgärder** .
+3. I avsnittet **Inställningar & Åtgärder** väljer du Redigera **tjänstanvändningsadress**.
 
-4. På sidan **Redigera tjänstens användningsadress** anger du ditt moms-ID i rutan **Momsregistreringsnummer** och väljer sedan **Spara**.
+4. På sidan **Redigera tjänstens användningsadress** anger du ditt moms-ID i rutan **Momsnummer** och väljer sedan **Spara**.
 
 ::: moniker-end
 
@@ -130,9 +130,9 @@ Du kan vara berättigad till momsbefrielse:
   
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj prenumerationsnamnet och välj sedan **Fler åtgärder** \> **Redigera momsnummer**.
+2. Välj prenumerationsnamnet och välj sedan **Fler åtgärder** \> **Redigera momsregistreringsnummer**.
   
-3. På sidan **Redigera tjänstens användningsadress** anger du ditt moms-ID i rutan **Momsregistreringsnummer** och väljer sedan **Skicka**.
+3. På sidan **Redigera tjänstens användningsadress** anger du ditt moms-ID i rutan **Momsnummer** och väljer sedan **Skicka**.
 
 ::: moniker-end
 
@@ -156,30 +156,30 @@ I USA och Kanada gäller olika momssatser beroende på kundens ort. Om du befinn
   
 Om faktureringen sköts av Microsoft Corporation ([se fakturan](view-your-bill-or-invoice.md)) och du registrerat dig för Office 365 utanför USA, Kanada och Puerto Rico, debiteras vanligtvis ingen moms.
 
-## <a name="how-taxes-are-calculated"></a>Så här beräknas skatter
+## <a name="how-taxes-are-calculated"></a>Hur skatter beräknas
 
 Moms beräknas mot a-priset och aggregeras sedan.
 
 Till exempel:
 
->*(enhetspris X skattesats) X-kvantitet = total moms*
+>*(skattesats för enhetspris X) X kvantitet = total moms*
 
--eller-
+-eller...
 
 >($1.29 X 0.095) X 100 = $12.25
 
-## <a name="apply-for-tax-exempt-status"></a>Ansök om skattebefriad status
+## <a name="apply-for-tax-exempt-status"></a>Ansök om status som skattebefriad
 
-Om du är berättigad till skattebefriad status på din marknad [startar du en tjänstbegäran för](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) att fastställa skattebefriad status för din organisation.
+Om du är berättigad till status som skattebefriad på din marknad [startar du en tjänstbegäran för](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) att fastställa status som skattebefriad för din organisation.
 
 Ha följande dokumentation klar:
 
 |Land eller språk | Dokumentation |
 |------------------|----------------|
-| USA | Momsbefrielsecertifikat |
-| Kanada | Intyg om befrielse (eller motsvarande tillståndsförklaring) |
-| Irland | 13B/56A intyg om skattebefrielse|
-| Internationella organisationer som innehar skattebefrielse | Certifiering / brevbekräftelse från lokala skattemyndigheter |
+| USA | Intyg om momsbefrielse |
+| Kanada | Intyg om befrielse (eller motsvarande fullmakt) |
+| Irland | 13B/56A Intyg om skattebefrielse|
+| Internationella organisationer som har skattebefrielse | Certifiering / brevbekräftelse från lokala skattemyndigheter |
 | Puerto Rico | Certificado de Compras Exentas |
   
 ## <a name="related-articles"></a>Relaterade artiklar

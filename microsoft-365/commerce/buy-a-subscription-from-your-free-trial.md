@@ -1,5 +1,5 @@
 ---
-title: Köpa ett abonnemang på Office 365 för företag från en kostnadsfri utvärderingsversion
+title: Köp en prenumeration på Microsoft 365 för företag från din kostnadsfria utvärderingsversion
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: Köpa en Office 365 för företag-prenumeration. Du kan köpa samma typ av prenumeration som du har provat eller ett annat abonnemang.
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Köp en Microsoft 365 för företag-prenumeration. Du kan köpa samma typ av prenumeration som du har provat eller ett annat abonnemang.
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142293"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634950"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Köpa ett abonnemang på Office 365 för företag från en kostnadsfri utvärderingsversion
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Köp en prenumeration på Microsoft 365 för företag från din kostnadsfria utvärderingsversion
 
-Du har provat Office 365 och är nu redo att köpa det. Du har två alternativ när du köper Office 365 från testversionen:
+Du har provat Microsoft 365, och nu är du redo att köpa. Du har två alternativ när du köper Microsoft 365 från testversionen:
   
 - [Köp samma abonnemang som din utvärderingsversion](#buy-the-same-plan-as-your-trial).
 - [Köp ett annat abonnemang än din utvärderingsversion](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ Om du köper en annan typ av prenumeration än din utvärderingsversion måste d
 
 ::: moniker range="o365-worldwide"
 
+
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
 
 2. På sidan **Köp tjänster** väljer du den prenumeration som du vill köpa och väljer sedan **Köp**.
@@ -136,6 +137,7 @@ Om du köper en annan typ av prenumeration än din utvärderingsversion måste d
 
 ::: moniker range="o365-21vianet"
 
+
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
 
 2. På sidan **Prenumeration** väljer du **Lägg till prenumerationer**.
@@ -156,10 +158,11 @@ Om du köper en annan typ av prenumeration än din utvärderingsversion måste d
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Förlänga utvärderingen ](extend-your-trial.md)
   
-[Registrera dig för Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Registrera dig för Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Byt till ett annat Office 365-abonnemang eller Office 365-prenumeration](subscriptions/switch-to-a-different-plan.md)
+[Växla till ett annat Microsoft 365-abonnemang eller -prenumeration](subscriptions/switch-to-a-different-plan.md)

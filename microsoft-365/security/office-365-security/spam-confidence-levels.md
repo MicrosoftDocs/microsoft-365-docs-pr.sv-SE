@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig om hur scl (Spam Confidence Level) avgör hur troligt eller osannolikt ett meddelande är skräppost och de standardåtgärder som skräppostfiltrering vidtar på meddelanden som baseras på SCL.
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893700"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638290"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Säkerhetsnivå för skräppost (SCL) i Office 365
 
-När Office 365 (Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor) tar emot ett inkommande e-postmeddelande går meddelandet via skräppostfiltrering och tilldelas en spampoäng. Den poängen mappas till en enskild scl -nivå (Spam Confidence Level) som läggs till i meddelandet i ett X-header. En högre SCL anger ett meddelande är mer sannolikt att vara spam. Tjänsten vidtar åtgärder för meddelandet baserat på SCL.
+När Microsoft 365 (Exchange Online eller fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor) tar emot ett inkommande e-postmeddelande går meddelandet via skräppostfiltrering och tilldelas en spampoäng. Den poängen mappas till en enskild scl -nivå (Spam Confidence Level) som läggs till i meddelandet i ett X-header. En högre SCL anger ett meddelande är mer sannolikt att vara spam. Tjänsten vidtar åtgärder för meddelandet baserat på SCL.
 
 Vad SCL innebär och standardåtgärder som vidtas på meddelanden beskrivs i följande tabell. Mer information om åtgärder du kan vidta för meddelanden baserat på domslutet för skräppostfiltrering finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 
@@ -46,4 +46,4 @@ I likhet med SCL identifierar massklagomålsnivån (BCL) felaktig massmeddelande
 
 ||
 |:-----|
-|![Den korta ikonen för](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) LinkedIn Learning **New till Office 365?**         Upptäck kostnadsfria videokurser för **Office 365-administratörer och IT-proffs**, som du får av LinkedIn Learning.|
+|![Den korta ikonen för](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) LinkedIn Learning **New till Office 365?**         Upptäck kostnadsfria videokurser för **Microsoft 365-administratörer och IT-proffs**, som du får av LinkedIn Learning.|

@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Läs om hur du använder hotundersöknings- och svarsfunktioner för att hitta och undersöka skadlig e-post.
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955621"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634140"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka och åtgärda skadlig e-post som levererades i Office 365
 
@@ -34,24 +34,24 @@ Kontrollera att följande krav är uppfyllda:
   
 - Din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) och licenser tilldelas [användare](../../admin/manage/assign-licenses-to-users.md).
     
-- [Granskningsloggning av Office 365](../../compliance/turn-audit-log-search-on-or-off.md) är aktiverat för din organisation. 
+- [granskningsloggning](../../compliance/turn-audit-log-search-on-or-off.md) är aktiverat för din organisation. 
     
 - Din organisation har principer som definierats för anti-spam, anti-malware, anti-phishing, och så vidare. Se [Skydda mot hot i Office 365](protect-against-threats.md).
     
-- Du är en global Office 365-administratör eller har rollen Säkerhetsadministratör eller sök- och rensning tilldelat i Säkerhetsefterlevnadscenter. &amp; Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md). För vissa åtgärder måste du också ha tilldelat en ny förhandsversionsroll. 
+- Du är global administratör eller har rollen Säkerhetsadministratör eller sök- och &amp; rensning tilldelat i Säkerhetsefterlevnadscenter. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md). För vissa åtgärder måste du också ha tilldelat en ny förhandsversionsroll. 
 
 #### <a name="preview-role-permissions"></a>Förhandsgranska rollbehörigheter
 
-Om du vill utföra vissa åtgärder, till exempel visa meddelanderubriker eller hämta e-postmeddelandeinnehåll, måste du ha en ny roll som kallas *Förhandsgranska tillagd* i en annan lämplig Office 365-rollgrupp. I följande tabell klargörs nödvändiga roller och behörigheter.
+Om du vill utföra vissa åtgärder, till exempel visa meddelanderubriker eller hämta e-postmeddelandeinnehåll, måste du ha en ny roll som kallas *Förhandsgranska tillagd* i en annan lämplig rollgrupp. I följande tabell klargörs nödvändiga roller och behörigheter.
 
 |Aktivitet  |Rollgrupp |Förhandsversionsroll behövs?  |
 |---------|---------|---------|
-|Använda Threat Explorer (och realtidsidentifieringar) för att analysera hot     |Global administratör för Office 365 <br> Säkerhetsadministratör <br> Säkerhetsläsare     | Nej   |
-|Använda Threat Explorer (och realtidsidentifieringar) för att visa rubriker för e-postmeddelanden samt förhandsgranska och hämta e-postmeddelanden i karantän    |Global administratör för Office 365 <br> Säkerhetsadministratör <br>Säkerhetsläsare   |       Nej  |
-|Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som levereras till postlådor     |Global administratör för Office 365 <br>Säkerhetsadministratör <br> Säkerhetsläsare <br> Förhandsgranska   |   Ja      |
+|Använda Threat Explorer (och realtidsidentifieringar) för att analysera hot     |Global administratör <br> Säkerhetsadministratör <br> Säkerhetsläsare     | Nej   |
+|Använda Threat Explorer (och realtidsidentifieringar) för att visa rubriker för e-postmeddelanden samt förhandsgranska och hämta e-postmeddelanden i karantän    |Global administratör <br> Säkerhetsadministratör <br>Säkerhetsläsare   |       Nej  |
+|Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som levereras till postlådor     |Global administratör <br>Säkerhetsadministratör <br> Säkerhetsläsare <br> Förhandsgranska   |   Ja      |
 
 > [!NOTE]
-> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsrollen måste läggas till i en befintlig rollgrupp för Office 365. Rollen För office 365-administratör tilldelas microsoft 365-administrationscentret ([https://admin.microsoft.com](https://admin.microsoft.com)) och rollerna Säkerhetsadministratör och säkerhetsläsare tilldelas i[https://protection.office.com](https://protection.office.com)Office 365 Security & Compliance Center ( ). Mer information om roller och behörigheter finns [i Behörigheter i Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsrollen måste läggas till i en befintlig rollgrupp för Office 365. Rollen Global administratör tilldelas microsoft 365-administrationscentret ([https://admin.microsoft.com](https://admin.microsoft.com)) och rollerna Säkerhetsadministratör och säkerhetsläsare tilldelas[https://protection.office.com](https://protection.office.com)i Säkerhets- & Compliance Center ( ). Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Hitta och ta bort misstänkt e-post som levererades
 
@@ -254,7 +254,7 @@ To access your message header and email download options, follow these steps:
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Avancerat hotskydd i Office 365](office-365-ti.md)
+[Office 365 ATP](office-365-ti.md)
   
 [Skydda mot hot i Office 365](protect-against-threats.md)
   

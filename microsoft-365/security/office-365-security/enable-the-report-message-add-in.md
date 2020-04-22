@@ -1,5 +1,5 @@
 ---
-title: Aktivera tillägget Rapportmeddelande
+title: Aktivera tillägget för att rapportera meddelande
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar tillägget Report Message för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
-ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
+ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061755"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633305"
 ---
-# <a name="enable-the-report-message-add-in-in-office-365"></a>Aktivera tillägget Rapportmeddelande i Office 365
+# <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
 > [!NOTE]
-> Om du är administratör i en Office 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Office 365 Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
+> Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
 
 Tillägget Report Message för Outlook och Outlook på webben (tidigare känt som Outlook Web App) gör det möjligt för människor att enkelt rapportera falska positiva (bra e-post markerad som dålig) eller falska negativ (dålig e-post tillåten) till Microsoft och dess dotterbolag för analys. Microsoft använder dessa inlämningar för att förbättra effektiviteten i e-postskyddstekniker.
 
@@ -38,16 +38,16 @@ Administratörer kan aktivera tillägget Rapportmeddelande för organisationen o
 
 Om du är en enskild användare kan du [aktivera tillägget Rapportmeddelande själv](#get-the-report-message-add-in-for-yourself).
 
-Om du är global Office 365-administratör eller Exchange [Online-administratör](#get-and-enable-the-report-message-add-in-for-your-organization)och Exchange är konfigurerat för att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande för din organisation . Tillägget Rapportmeddelande är nu tillgängligt via [centraliserad distribution](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
+Om du är global administratör eller Exchange [Online-administratör](#get-and-enable-the-report-message-add-in-for-your-organization)och Exchange är konfigurerad för att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande för din organisation . Tillägget Rapportmeddelande är nu tillgängligt via [centraliserad distribution](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Tillägget Rapportmeddelande fungerar med de flesta Office 365-prenumerationer och följande produkter:
+- Tillägget Report Message fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:
 
   - Outlook på webben
   - Outlook 2013 SP1 eller senare
   - Outlook 2016 för Mac
-  - Outlook ingår i Office 365 ProPlus
+  - Outlook ingår i Microsoft 365-appar för företag
 
 - Tillägget Rapportmeddelande är inte tillgängligt för:
 
@@ -58,7 +58,7 @@ Om du är global Office 365-administratör eller Exchange [Online-administratör
 
 - För organisationsinstallationer måste organisationen konfigureras för att använda OAuth-autentisering. Mer information finns [i Avgöra om centraliserad distribution av tillägg fungerar för din organisation](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Administratörer måste vara medlemmar i rollgruppen Globala administratörer. Mer information finns [i Behörigheter i Säkerhets- & Compliance Center för Office 365.](permissions-in-the-security-and-compliance-center.md)
+- Administratörer måste vara medlemmar i rollgruppen Globala administratörer. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Hämta tillägget Rapportmeddelande själv
 
@@ -70,7 +70,7 @@ Om du är global Office 365-administratör eller Exchange [Online-administratör
 
 3. Granska användarvillkoren och sekretesspolicyn i dialogrutan som visas och klicka sedan på **Fortsätt**.
 
-4. Logga in på Office 365 med ditt arbets- eller skolkonto (för företagsbruk) eller ditt Microsoft-konto (för personligt bruk).
+4. Logga in med ditt arbets- eller skolkonto (för företagsbruk) eller ditt Microsoft-konto (för personligt bruk).
 
 När tillägget har installerats och aktiverats visas följande ikoner:
 

@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrera office 365 avancerat skydd mot hot med Microsoft Defender Advanced Threat Protection för att se mer detaljerad information om hothantering.
-ms.openlocfilehash: a2634a70bdbdd21efe2c59721e5532500eb4e4cc
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: e416d70baf7498b0163d5bd8aa8e923585a5e5a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284233"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633815"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Integrera avancerat hotskydd för Office 365 med avancerat hotskydd för Microsoft Defender
 
@@ -38,15 +38,15 @@ I det här exemplet kan du se att mottagarna av e-postmeddelandet har fyra enhet
 
 - Din organisation måste ha Office 365 ATP-abonnemang 2 (eller Office 365 E5) och Microsoft Defender ATP.
     
-- Du måste vara en Global Office 365-administratör eller ha en säkerhetsadministratörsroll (till exempel säkerhetsadministratör) tilldelad i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com). (Se [behörigheter i &amp; Säkerhetsefterlevnadscenter för Office 365)](permissions-in-the-security-and-compliance-center.md)
+- Du måste vara global administratör eller ha en säkerhetsadministratörsroll (till exempel säkerhetsadministratör) tilldelad i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com). (Se [behörigheter i &amp; säkerhetsefterlevnadscenter)](permissions-in-the-security-and-compliance-center.md)
     
 - Du måste ha tillgång till både [Explorer (eller realtidsidentifieringar)](threat-explorer.md) i Security & Compliance Center och Microsoft Defender Security Center.
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>Så här integrerar du Office 365 ATP med Microsoft Defender ATP
 
-Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med både Office 365 Security & Compliance Center och Microsoft Defender Security Center.
+Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med både Security & Compliance Center och Microsoft Defender Security Center.
   
-1. Som en global Office 365-administratör eller [https://protection.office.com](https://protection.office.com) säkerhetsadministratör går du till och loggar in.
+1. Som global administratör eller säkerhetsadministratör [https://protection.office.com](https://protection.office.com) går du till och loggar in med ditt arbets- eller skolkonto.
     
 2. Välj **Explorer för hothantering** \> **.**<br>![Explorer på menyn Hothantering](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
@@ -60,6 +60,6 @@ Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med både 
 
 [Hotutredning och hotsvarsfunktioner i Office 365](office-365-ti.md)
   
-[Office 365 Avancerat skydd](office-365-atp.md)
+[Office 365 ATP](office-365-atp.md)
   
 

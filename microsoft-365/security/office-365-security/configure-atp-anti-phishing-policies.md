@@ -1,5 +1,5 @@
 ---
-title: Konfigurera ATP:s principer för phishing-phishing
+title: Konfigurera principer för ATP-skydd mot nätfiske
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,20 +14,20 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du skapar, ändrar och tar bort de avancerade anti-nätfiskeprinciper som är tillgängliga i organisationer med Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: b0316133c90837bedc657bde355f31d50ffe76ea
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537467"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638470"
 ---
-# <a name="configure-atp-anti-phishing-policies-in-office-365"></a>Konfigurera ATP-principer för nätfiske i Office 365
+# <a name="configure-atp-anti-phishing-policies"></a>Konfigurera principer för ATP-skydd mot nätfiske
 
-ATP:s principer för phishing är en del av [Office 365 Advanced Threat Protection](office-365-atp.md). ATP:s principer för nätfiske kan skydda din organisation från skadliga nätfiskeattacker och andra typer av nätfiskeattacker. Mer information om skillnaderna mellan anti-phishing-principer i EOP (Exchange Online Protection) och ATP:s principer för phishing finns [i Skydd mot nätfiske i Office 365](anti-phishing-protection.md).
+ATP:s principer för phishing är en del av [Office 365 Advanced Threat Protection](office-365-atp.md). ATP:s principer för nätfiske kan skydda din organisation från skadliga nätfiskeattacker och andra typer av nätfiskeattacker. Mer information om skillnaderna mellan anti-phishing-policyer i EOP (Exchange Online Protection) och ATP:s principer för phishing finns i [Anti-phishing protection](anti-phishing-protection.md).
 
 Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för ATP-phishing. För större granularitet kan du också skapa anpassade ATP-principer mot nätfiske som gäller för specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
-Du kan konfigurera ATP-principer för nätfiske i Office 365 Security & Compliance Center eller Exchange Online PowerShell.
+Du kan konfigurera ATP-principer för nätfiske i Security & Compliance Center eller i Exchange Online PowerShell.
 
 Information om hur du konfigurerar den mer begränsade inbyggda anti-phishing-principen som är tillgänglig i Exchange Online Protection-organisationer (det vill säga Office 365-organisationer utan ATP) finns [i Konfigurera standardprincipen mot nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
@@ -73,7 +73,7 @@ Om du vill öka effektiviteten i skyddet mot nätfiske kan du skapa anpassade AT
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för nätfiske måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till anti-phishing-principer måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för nätfiske måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till anti-phishing-principer måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Våra rekommenderade inställningar för ATP-principer för nätfiske finns i [Principinställningar för Office ATP-phishing](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -246,7 +246,7 @@ Använd följande procedurer för att ändra ATP:s principer för nätfiske: en 
 
    Observera att dessa inställningar är identiska med de inställningar som är tillgängliga i standardpolicyn mot nätfiske i EOP.
 
-   - **Spoofing filterinställningar:** Standardvärdet är **På**, och vi rekommenderar att du lämnar den på. Om du vill inaktivera den drar du växlingsknappen till **Av**. Mer information finns [i Konfigurera falska underrättelser i Office 365](learn-about-spoof-intelligence.md).
+   - **Spoofing filterinställningar:** Standardvärdet är **På**, och vi rekommenderar att du lämnar den på. Om du vill inaktivera den drar du växlingsknappen till **Av**. Mer information finns i [Konfigurera förfalskningsinformation i Office 365](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > Du behöver inte inaktivera förfalskningsskydd om MX-posten inte pekar på Office 365. du aktiverar utökad filtrering för kopplingar i stället. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

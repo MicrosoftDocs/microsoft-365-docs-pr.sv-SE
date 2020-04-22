@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur Microsoft 365 för kampanjer påverkar användarna.
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42808104"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632773"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Hur Microsoft 365 for Campaigns påverkar dina användare
 
@@ -70,7 +70,7 @@ För [ohanterade Windows 10- och Mac-enheter](m365-campaigns-protect-pcs-macs.md
 
 Mer information om dessa rekommendationer finns i [Skydda ditt konto och dina enheter från hackare och skadlig kod](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Samarbeta med Microsoft Teams, OneDrive, SharePoint Online och andra Office 365-verktyg
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Samarbeta med Microsoft Teams, OneDrive, SharePoint Online och andra verktyg
 Användarna kan frestas att dela och lagra organisationsfiler på andra platser än Microsoft 365. Microsoft 365 gör det så enkelt som möjligt att samarbeta och dela säkert. Du kan [dela filer och videoklipp](share-files-and-videos.md) direkt från Microsoft Teams, OneDrive, Stream och till och med inifrån en fil. Genom att dela inifrån dessa verktyg kan du förhindra att dina data läcker. Du kan lägga till ytterligare skydd för känsliga data för att förhindra delning utanför organisationen. 
 
 

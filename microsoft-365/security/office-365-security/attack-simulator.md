@@ -1,5 +1,5 @@
 ---
-title: Attack Simulator i Office 365 ATP
+title: Attack Simulator i ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Använd Attack Simulator för att köra simulerade nätfiske- och lösenordsattacker i din Office 365 E5- eller ATP Plan 2-organisation, vilket kan hjälpa dig att identifiera sårbara användare innan en verklig attack träffar ditt företag.
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: Som global administratör kan du använda Attack Simulator för att köra realistiska attackscenarier i din organisation. Detta kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack träffar ditt företag.
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42807643"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638578"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Attack Simulator i Office 365 ATP
+# <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
 
-Med Attack Simulator i Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2) kan du köra realistiska, men simulerade kampanjer för nätfiske- och lösenordsattacker i organisationen. Du kan använda resultaten av kampanjer för att identifiera och utbilda sårbara användare.
+**Sammanfattning** Om du är en global administratör eller en säkerhetsadministratör och din organisation har Office 365 Advanced Threat Protection Plan 2, som innehåller [hotutrednings- och svarsfunktioner,](office-365-ti.md)kan du använda Attack Simulator för att köra realistiska attackscenarier i organisationen. Detta kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din vinst. Läs den här artikeln om du vill veta mer.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- & Compliance Center för Office 365 går du till <https://protection.office.com/>. Attack simulator finns på **Threat management** \> **Attack simulator**.
+- Öppna säkerhets- & Compliance Center genom <https://protection.office.com/>att gå till . Attack simulator finns på **Threat management** \> **Attack simulator**.
 
   ![Hothantering - Attack Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
-- Mer information om tillgängligheten för Attack Simulator för olika Office 365-prenumerationer finns i [office 365-tjänstbeskrivning för avancerat skydd mot hot](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Mer information om tillgängligheten för Attack Simulator för olika Microsoft 365-prenumerationer finns i [office 365-tjänstbeskrivning för avancerat skydd mot hot](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Ditt konto måste konfigureras för MFA (Multi Factor Authentication) för att skapa och hantera kampanjer i Attack Simulator. Instruktioner finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-- Du kan bara köra kampanjer för nätfiske- eller lösenordsattacker på användare med postlådor i Exchange Online.
+För att en attack ska kunna startas kontrollerar du att kontot du använder för att köra simulerade attacker använder multifaktorautentisering. Dessutom måste du vara global administratör eller säkerhetsadministratör. (Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
 - Nätfiskekampanjer samlar in och behandlar händelser i 30 dagar. Historiska kampanjdata kommer att vara tillgängliga i upp till 90 dagar efter att du har startat kampanjen.
 
@@ -49,11 +49,11 @@ Med Attack Simulator i Office 365 Advanced Threat Protection Plan 2 (ATP Plan 2)
 
 *Nätfiske* är en allmän term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. *Spear phishing* är en riktad nätfiskeattack som använder mycket fokuserat och anpassat innehåll som är särskilt anpassat till de riktade mottagarna (vanligtvis efter spaning på mottagarna av angriparen).
 
-Mer information om nätfiske och spjutfiskefiske finns i [Nätfiske](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
+- Du är global administratör eller säkerhetsadministratör
 
 I Attack Simulator finns två olika typer av nätfiskekampanjer för spjut:
 
-- **Spear phishing (autentiseringsuppgifter skörd)**: Attacken försöker övertyga mottagarna att klicka på en webbadress i meddelandet. Om de klickar på länken uppmanas användarna att ange sina autentiseringsuppgifter. Om de gör det tas de till någon av följande platser:
+- [Multifaktorautentisering/villkorlig åtkomst](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) är aktiverat för åtminstone det globala administratörskontot och säkerhetsadministratörerna som ska använda Attack Simulator. (Helst är multifaktorautentisering/villkorlig åtkomst aktiverad för alla användare i organisationen.)
 
   - En standardsida som förklarar detta var bara ett test och ger tips om hur du känner igen nätfiskemeddelanden.
 
@@ -255,7 +255,7 @@ I Attack Simulator är två olika typer av lösenordsattackkampanjer tillgängli
 
    - **Brute Force Password (Dictionary Attack)**: Gör något av följande steg:
 
-     - **Ange lösenord manuellt**: Skriv ett lösenord i rutan **Tryck på retur för att lägga till ett lösenord** och tryck sedan på RETUR. Upprepa det här steget så många gånger som behövs.
+     - **Ange lösenord manuellt**: Skriv ett lösenord i rutan **Tryck på retur för att lägga till ett lösenord** och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
 
      - **Ladda upp lösenord från en ordlistefil:** Klicka på **Ladda upp** om du vill importera en befintlig textfil som innehåller ett lösenord på varje rad och en tom sista rad. Textfilen måste vara 10 MB eller mindre stor och får inte innehålla fler än 3 0000 lösenord.
 

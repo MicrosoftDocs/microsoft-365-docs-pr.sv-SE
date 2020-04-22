@@ -1,5 +1,5 @@
 ---
-title: Byta till ett annat abonnemang på Office 365 för företag manuellt
+title: Byt Microsoft 365 för affärsplaner manuellt
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: Byt Office 365 för företag-prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Byt Microsoft 365 för företag-prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540849"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636540"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>Byta till ett annat abonnemang på Office 365 för företag manuellt
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Byt Microsoft 365 för affärsplaner manuellt
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> Den här artikeln gäller det gamla administrationscentret. En vy av artikeln om det nya administrationscentret finns i [Ändra planer manuellt](change-plans-manually.md). Det nya administrationscentret är tillgängligt för alla Microsoft 365-administratörer. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-
+> Den här artikeln gäller det gamla administrationscentret. En vy av artikeln om det nya administrationscentret finns i [Ändra planer manuellt](change-plans-manually.md). Det nya administrationscentret är tillgängligt för alla Microsoft 365-administratörer och du kan anmäla dig genom att välja **Växlingsknappen Prova det nya administrationscentret** högst upp på startsidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Steg 1: Bestäm hur du vill byta abonnemang
@@ -54,13 +52,13 @@ Om du vill fortsätta med ett manuellt byte läser du [Steg 2: Köpa en ny prenu
 
  **Har du redan köpt en prenumeration?** Om du redan har en prenumeration som du vill flytta användare till hoppar du över det här steget och går till [Steg 3: Kontrollera din nya prenumeration och dina nya licenser](#step-3-check-your-new-subscription-and-licenses) i det här avsnittet.
   
-- -ELLER-
+- eller
   
- **Köp en ny prenumeration och nya licenser:** Följ anvisningarna i artikeln om att [köpa ytterligare en Office 365 för företag-prenumeration](../buy-another-subscription.md) om du vill köpa en ny prenumeration.
+ **Köp en ny prenumeration och licenser:** Följ stegen i [Köp en annan Microsoft 365 för företag-prenumeration för](../buy-another-subscription.md) att köpa en ny prenumeration.
   
 Se till att du köper en prenumeration för samma organisation som användarna finns i nu. Kontrollera till exempel e-postadresserna för de användare som du vill flytta. Om deras e-postadresser innehåller @contoso.com måste du köpa en ny prenumeration för contoso.com. Ta med en licens för varje användare som du vill flytta.
   
- **Om du behöver hjälp med att välja ett abonnemang** kan du gå du till sidan [där Office 365 för företag-produkter jämförs](https://go.microsoft.com/fwlink/p/?linkid=842056) eller [kontakta supporten](../../admin/contact-support-for-business-products.md).
+ **Om du behöver hjälp med att välja ett abonnemang**läser du [produktjämnsidan för Microsoft 365 för företag](https://go.microsoft.com/fwlink/p/?linkid=842056) eller [samtalssupport](../../admin/contact-support-for-business-products.md).
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Steg 3: Kontrollera din nya prenumeration och dina nya licenser
 
@@ -86,7 +84,7 @@ Se till att du köper en prenumeration för samma organisation som användarna f
 
     Den prenumeration du flyttar användare från och den prenumeration du flyttar användare till måste listas tillsammans. Om den nya prenumerationen inte finns när du kontrollerar först försöker du igen senare. Kontrollera att båda prenumerationerna visas under **AKTIV**. [Den nya prenumerationen visas inte eller är inte aktiv.](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Den nya Office 365 för företag-prenumerationen med tillgängliga licenser**
+   **Den nya Microsoft 365 för företag-prenumerationen med tillgängliga licenser**
 
     ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ Se till att du köper en prenumeration för samma organisation som användarna f
 
     Varje användare måste ha en licens som överensstämmer med prenumerationen. Om du vill flytta tio användare till Office 365 Enterprise E5 måste du se till att tio licenser är tillgängliga. I bilden här har tio licenser köpts för Office 365 Enterprise E5 och alla tio licenser är tillgängliga för tilldelning.
 
-4. **Behöver du köpa fler licenser för den nya prenumerationen?** Gå till sidan **Prenumerationer** och [Köp licenser för din Office 365 för företag-prenumeration](../licenses/buy-licenses.md).
+4. **Behöver du köpa fler licenser för den nya prenumerationen?** Gå till sidan **Prenumerationer** och [Köp licenser för din Microsoft 365 för företag-prenumeration](../licenses/buy-licenses.md).
   
     [Vad gäller för de gamla licenserna?](#what-about-the-old-licenses)
 

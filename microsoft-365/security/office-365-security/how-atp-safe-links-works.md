@@ -1,5 +1,5 @@
 ---
-title: Så här fungerar Safe Links i Office 365 ATP
+title: Så fungerar ATP – säkra länkar
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Funktionen Säkra länkar ger snabb verifiering av hyperlänkar i Office-dokument och i e-postmeddelanden. Läs den här artikeln om du vill veta hur ATP Safe Links fungerar.
-ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b77ab718afdc4f68d8120e11fa5d1a321b66f32e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42806799"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638016"
 ---
-# <a name="how-office-365-atp-safe-links-works"></a>Så här fungerar Safe Links i Office 365 ATP
+# <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
 > [!IMPORTANT] 
-> För att Office 365 ATP Safe Links ska fungera korrekt måste alla Office 365-tjänster vara i samma version.
+> För att Office 365 ATP Safe Links ska fungera korrekt måste alla tjänster vara i samma version.
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Så här fungerar ATP Safe Links med webbadresser i e-post
 
@@ -51,9 +51,9 @@ På en hög nivå fungerar så här [för ATP Safe Links-skydd](atp-safe-links.m
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Så här fungerar ATP Safe Links med webbadresser i Office-dokument 
 
-På en hög nivå fungerar så här för [ATP Safe Links-skydd](atp-safe-links.md) för webbadresser i Office 365 ProPlus- eller Business Premium-program (aktuella versioner av Word, Excel och PowerPoint på Windows, Mac eller i en webbläsare, Office-appar på iOS- eller Android-enheter, Visio på Windows, OneNote i en webbläsare):
+På en hög nivå fungerar så här för [ATP Safe Links-skydd](atp-safe-links.md) för webbadresser i Microsoft 365 Apps för företag eller Business Premium-program (aktuella versioner av Word, Excel och PowerPoint på Windows, Mac eller i en webbläsare, Office-appar på iOS- eller Android-enheter, Visio på Windows, OneNote i en webbläsare):
   
-1. Personer har installerat Office 365 ProPlus eller Business Premium på sin dator, smartphone eller surfplatta. (Eller så använder de Office i sin webbläsare.)
+1. Personer har installerat Microsoft 365 Apps för företag eller Business Premium på sin dator, smartphone eller surfplatta. (Eller så använder de Office i sin webbläsare.)
     
 2. En användare öppnar ett Word, Excel, PowerPoint, OneNote (i webbläsaren) eller Visio (på skrivbordet) och loggar in på Office 365 Enterprise med sitt arbets- eller skolkonto. Dokumentet innehåller webbadresser.
     

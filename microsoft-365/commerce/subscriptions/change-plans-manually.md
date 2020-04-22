@@ -1,5 +1,5 @@
 ---
-title: Ändra Office 365 för företag-abonnemang manuellt
+title: Ändra Microsoft 365 för affärsplaner manuellt
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142157"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636589"
 ---
 # <a name="change-plans-manually"></a>Ändra planer manuellt
 
@@ -51,9 +51,9 @@ Om du vill fortsätta med en manuell ändring läser du [Steg 2: Köp en ny pren
 
 ELLER
 
-**Köp en ny prenumeration och nya licenser:** Följ anvisningarna i artikeln om att [köpa ytterligare en Office 365 för företag-prenumeration](../buy-another-subscription.md) om du vill köpa en ny prenumeration.
+**Köp en ny prenumeration och licenser:** Följ stegen i [Köp en annan Microsoft 365 för företag-prenumeration för](../buy-another-subscription.md) att köpa en ny prenumeration.
 
-Se till att du köper en prenumeration för samma organisation som användarna finns i nu. Kontrollera till exempel e-postadresserna för de Office 365-användare du vill flytta. Om deras e-postadresser innehåller \@contoso.com måste du köpa en ny prenumeration för contoso.com.
+Se till att du köper en prenumeration för samma organisation som användarna finns i nu. Kontrollera till exempel e-postadresserna för de användare som du vill flytta. Om deras e-postadresser innehåller \@contoso.com måste du köpa en ny prenumeration för contoso.com.
 Ta med en licens för varje användare som du vill flytta.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Steg 3: Kontrollera din nya prenumeration och dina nya licenser
@@ -114,5 +114,4 @@ Om du har flyttat alla användare från ett abonnemang till ett annat och du int
 Om du bara har flyttat vissa användare till en annan prenumeration kan du [ta bort licenser](../licenses/remove-licenses-from-subscription.md) som du inte längre behöver.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Ring support som hjälper dig att ändra abonnemang
-
 [Ring Microsoft-support](../../admin/contact-support-for-business-products.md)

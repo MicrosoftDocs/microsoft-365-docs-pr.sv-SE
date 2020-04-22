@@ -16,26 +16,26 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Skräppostfiltrering är alltid aktiverat om du använder tjänsten för att skicka utgående e-post, vilket skyddar organisationer som använder tjänsten och deras avsedda mottagare.
-ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 27f79252d2d08c374784064ac6a12bc4cc7725ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608180"
+ms.locfileid: "43637730"
 ---
-# <a name="configure-outbound-spam-filtering-in-office-365"></a>Konfigurera skräppostfiltrering utanför mängden i Office 365
+# <a name="configure-outbound-spam-filtering"></a>Konfigurera utgående skräppostfiltrering
 
-Om du är office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor kontrolleras utgående e-postmeddelanden som skickas via EOP automatiskt efter skräppost och ovanlig sändningsaktivitet.
+Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor kontrolleras utgående e-postmeddelanden som skickas via EOP automatiskt efter skräppost och ovanlig sändningsaktivitet.
 
-Utgående skräppost från en användare i organisationen anger vanligtvis ett komprometterat konto. Misstänkta utgående meddelanden markeras som skräppost (oavsett skräppostförtroendenivå eller SCL) och dirigeras genom [högriskleveranspoolen](high-risk-delivery-pool-for-outbound-messages.md) för att skydda tjänstens rykte (det vill än att hålla e-postservrar för Office 365 borta från IP-blockeringslistor). Administratörer meddelas automatiskt om misstänkt utgående e-postaktivitet och blockerade användare via [varningsprinciper](../../compliance/alert-policies.md).
+Utgående skräppost från en användare i organisationen anger vanligtvis ett komprometterat konto. Misstänkta utgående meddelanden markeras som skräppost (oavsett skräppostförtroendenivå eller SCL) och dirigeras genom [högriskleveranspoolen](high-risk-delivery-pool-for-outbound-messages.md) för att skydda tjänstens rykte (det vill än microsoft 365-källe-postservrar borta från IP-blockeringslistor). Administratörer meddelas automatiskt om misstänkt utgående e-postaktivitet och blockerade användare via [varningsprinciper](../../compliance/alert-policies.md).
 
-EOP använder utgående skräppostpolicyer som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost i Office 365](anti-spam-protection.md).
+EOP använder utgående skräppostpolicyer som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost](anti-spam-protection.md).
 
 Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för utgående skräppost. För större granularitet kan du också skapa anpassade principer för skräppost som är tillämpliga på specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
-Du kan konfigurera principer för skräppost från utgående företag i Office 365 Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Office 365-kunder. Exchange Online Protection PowerShell för fristående EOP-kunder).
+Du kan konfigurera principer för skräppost från utgående företag i Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Microsoft 365-kunder. Exchange Online Protection PowerShell för fristående EOP-kunder).
 
-## <a name="outbound-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Principer för utgående skräppost i Office 365 Security & Compliance Center vs Exchange Online PowerShell eller Exchange Online Protection PowerShell
+## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Principer för utgående skräppost i Security & Compliance Center vs Exchange Online PowerShell eller Exchange Online Protection PowerShell
 
 De grundläggande inslagen i en utgående spam-policy i EOP är:
 
@@ -43,7 +43,7 @@ De grundläggande inslagen i en utgående spam-policy i EOP är:
 
 - **Regeln för skräppostfilter:** Anger prioritets- och mottagarfilter (vem principen gäller för) för en utgående skräppostfilterprincip.
 
-Skillnaden mellan dessa två element är inte uppenbar när du hanterar principer för utgående skräppost i Security & Compliance Center:
+Skillnaden mellan dessa två element är inte uppenbar när du hanterar utgående skräppostpoliser i Security & Compliance Center:
 
 - När du skapar en utgående skräppostprincip i Security & Compliance Center skapar du faktiskt en utgående skräppostfilterregel och den tillhörande principen för skräppostfilter samtidigt som du använder samma namn för båda.
 
@@ -77,7 +77,7 @@ Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade pri
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter för Office 365](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Våra rekommenderade inställningar för utgående skräppostpolicyer finns i [EOP:s policyinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)för skräppostfilter .
 
@@ -147,7 +147,7 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
      
    - **Maximalt antal mottagare per användare**
 
-     Ett giltigt värde är 0 till 10000. Standardvärdet är 0, vilket innebär att tjänsten som standard används. Mer information finns i [Skicka gränser för Office 365-alternativ](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+     Ett giltigt värde är 0 till 10000. Standardvärdet är 0, vilket innebär att tjänsten som standard används. Mer information finns i [Skicka gränser för Microsoft 365-alternativ](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
      - **Extern timgräns**: Det maximala antalet externa mottagare per timme.
 
@@ -293,7 +293,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 I det här exemplet skapas en ny utgående skräppostfilterprincip med namnet Contoso Executives med följande inställningar:
 
-- Mottagarhastighetsgränserna är begränsade till mindre värden som standardvärdena. Mer information finns i [Skicka gränser för Office 365-alternativ](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+- Mottagarhastighetsgränserna är begränsade till mindre värden som standardvärdena. Mer information finns i [Skicka gränser för Microsoft 365-alternativ](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - När en av gränserna har nåtts hindras användaren från att skicka meddelanden.
 
@@ -495,7 +495,7 @@ Detaljerad syntax- och parameterinformation finns i [Ta bort värddyreradOutboun
 
 ## <a name="for-more-information"></a>Mer information
 
-[Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365](removing-user-from-restricted-users-portal-after-spam.md)
+[Ta bort blockerade användare från portalen med åtkomstbegränsade användare](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Pool med hög riskleverans för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md)
 

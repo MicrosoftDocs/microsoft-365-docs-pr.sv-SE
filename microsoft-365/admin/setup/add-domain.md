@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägg till din domän i Office 365 i Microsoft 365-administrationscentret genom att lägga till en DNS-post hos din DNS-värd. Installationsguiden går igenom processen.
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209646"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631821"
 ---
 # <a name="add-a-domain-to-office-365"></a>Lägga till en domän i Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209646"
     
 5. Välj hur du vill verifiera att du äger domänen.
     
-    1. Om din domän är registrerad på&amp;GoDaddy eller 1 1 väljer du **Logga in** > **nästa** så [konfigurerar](../get-help-with-domains/domain-connect.md)Office 365 dina poster automatiskt .
+    1. Om din domän är registrerad på&amp;GoDaddy eller 1 1 väljer du **Logga in** > **nästa** så[konfigurerar](../get-help-with-domains/domain-connect.md)Microsoft dina poster automatiskt .
     
     2. Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod. Om du inte känner igen eller har tillgång till e-postmeddelandet kan du använda det tredje alternativet.
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209646"
 
 [Konfigurera din domän (tjänstspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Få hjälp med Office 365-domäner](../get-help-with-domains/get-help-with-domains.md)
+[Få hjälp med domäner](../get-help-with-domains/get-help-with-domains.md)

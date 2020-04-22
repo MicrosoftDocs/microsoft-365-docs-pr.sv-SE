@@ -1,5 +1,5 @@
 ---
-title: Betala för din prenumeration på Office 365 för företag
+title: Betala för prenumerationen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Läs om vilka betalningsalternativ som är tillgängliga för att betala för din Office 365 för företag-prenumeration.
+description: Läs om vilka betalningsalternativ som är tillgängliga för att betala för din Microsoft 365 för företag-prenumeration.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540909"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635022"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>Betala för din prenumeration på Office 365 för företag
+# <a name="pay-for-your-subscription"></a>Betala för prenumerationen
 
 När du ställer in prenumerationen kan du välja att betala med kreditkorts- eller bankkontobetalningar eller att betala med faktura med check eller elektronisk överföring av pengar (EFT). Oavsett vilken metod du väljer är det den betalningsmetod vi fortsätter att använda för kommande faktureringsperioder, såvida du inte [ändrar betalningsmetod](change-payment-method.md).
 
@@ -93,7 +93,7 @@ Om dina prenumerationskostnader överstiger ett visst belopp (beloppet varierar 
 Om du betalar med faktura för din prenumeration får du ett e-postmeddelande där det står att du nu kan visa faktureringsutdraget. E-postmeddelandet innehåller inte en kopia av ditt faktureringsutdrag. Men du kan välja att [Få en kopia av ditt faktureringsutdrag via e-post](#receive-a-copy-of-your-billing-statement-in-email). På faktureringsutdraget finns information om olika betalningsalternativ. Om du anger ett inköpsordernummer när du köper en prenumeration visas numret på faktureringsutdraget. Information om hur du visar faktureringsutdrag finns i [Visa din faktura](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> Din organisations faktureringsmeddelanden skickas som standard till e-postadressen för Office 365 och den alternativa e-postadressen för varje global administratör och faktureringsadministratör i organisationen. Information om hur du ändrar den alternativa e-postadressen finns i [Ändra dina faktureringsadresser](change-your-billing-addresses.md).
+> Som standard skickas organisationens faktureringsmeddelanden till Microsofts e-postadress och den alternativa e-postadressen för alla globala administratörer och faktureringsadministratörer i organisationen. Information om hur du ändrar den alternativa e-postadressen finns i [Ändra dina faktureringsadresser](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>Kan jag betala fakturan online?
 

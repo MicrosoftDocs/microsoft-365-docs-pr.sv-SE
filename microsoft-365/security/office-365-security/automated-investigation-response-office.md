@@ -1,5 +1,5 @@
 ---
-title: Automatisk undersökning och svar (AIR) i Office 365
+title: Automatiserad undersökning och respons (AIR)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,28 +15,28 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170958"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638554"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Automatisk undersökning och svar (AIR) i Office 365
+# <a name="automated-investigation-and-response-air"></a>Automatiserad undersökning och respons (AIR)
 
-När säkerhetsaviseringar utlöses är det upp till säkerhetsoperationsteamet att titta på dessa aviseringar och vidta åtgärder för att skydda din organisation. Ibland kan säkerhetsoperationsteam känna sig överväldigade av mängden aviseringar som utlöses. Automatiska funktioner för undersökningar och svar (AIR) i Office 365 kan hjälpa dig. AIR gör det möjligt för ditt säkerhetsteam att arbeta mer effektivt och ändamålsenligt. AIR-funktioner inkluderar automatiserade undersökningsprocesser som svar på välkända hot som finns idag. Lämpliga åtgärder väntar på godkännande, så att säkerhetsoperationsgruppen kan svara på upptäckta hot. 
+När säkerhetsaviseringar utlöses är det upp till säkerhetsoperationsteamet att titta på dessa aviseringar och vidta åtgärder för att skydda din organisation. Ibland kan säkerhetsoperationsteam känna sig överväldigade av mängden aviseringar som utlöses. Automatiserade funktioner för undersökning och svar (AIR) kan hjälpa till. AIR gör det möjligt för ditt säkerhetsteam att arbeta mer effektivt och ändamålsenligt. AIR-funktioner inkluderar automatiserade undersökningsprocesser som svar på välkända hot som finns idag. Lämpliga åtgärder väntar på godkännande, så att säkerhetsoperationsgruppen kan svara på upptäckta hot. 
 
-Den här artikeln innehåller en översikt över AIR. När du är redo att komma igång med AIR läser du [Undersök och svara på hot automatiskt i Office 365](office-365-air.md).
+Den här artikeln innehåller en översikt över AIR. När du är redo att komma igång med AIR läser du [Undersök och svara på hot automatiskt](office-365-air.md).
 
 ## <a name="at-a-high-level"></a>På en hög nivå
 
-När aviseringar utlöses träder säkerhetsspelböcker i kraft. Beroende på situationen kan en [automatiserad undersökningsprocess påbörjas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) Under och efter en automatiserad undersökning rekommenderas [åtgärder för reparation.](air-remediation-actions.md) Inga åtgärder vidtas automatiskt i Office 365 Advanced Threat Protection. Säkerhetsåtgärdsteamet granskar och [godkänner eller avvisar](air-review-approve-pending-completed-actions.md)sedan varje åtgärd , och när detta är klart slutförs varje undersökning. Alla dessa aktiviteter spåras och kan visas i Office 365 Security & Compliance Center (se [Visa information om en undersökning](air-view-investigation-results.md#view-details-of-an-investigation)).
+När aviseringar utlöses träder säkerhetsspelböcker i kraft. Beroende på situationen kan en [automatiserad undersökningsprocess påbörjas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) Under och efter en automatiserad undersökning rekommenderas [åtgärder för reparation.](air-remediation-actions.md) Inga åtgärder vidtas automatiskt i Office 365 Advanced Threat Protection. Säkerhetsåtgärdsteamet granskar och [godkänner eller avvisar](air-review-approve-pending-completed-actions.md)sedan varje åtgärd , och när detta är klart slutförs varje undersökning. Alla dessa aktiviteter spåras och kan visas i Security & Compliance Center (se [Visa information om en undersökning).](air-view-investigation-results.md#view-details-of-an-investigation)
 
 I följande avsnitt finns mer information om aviseringar, säkerhetsspelböcker och exempel på AIR i aktion.
 
 ## <a name="alerts"></a>Varningar
 
-[Aviseringar](../../compliance/alert-policies.md#viewing-alerts) representerar utlösare för säkerhetsoperationsteamarbetsflöden för incidenthantering. Att prioritera rätt uppsättning varningar för utredning, samtidigt som man ser till att inga hot inte åtgärdas är en utmaning. När undersökningar av aviseringar utförs manuellt måste säkerhetsoperationsteam jaga och korrelera entiteter (till exempel innehåll, enheter och användare) som riskerar att hotas. Sådana uppgifter och arbetsflöden kan vara mycket tidskrävande och involvera flera verktyg och system. Med AIR automatiseras säkerhetshändelser för granskning och svar för Office 365 genom att viktiga säkerhets- och hothanteringsvarningar automatiskt utlöser spelböcker för säkerhetssvar. 
+[Aviseringar](../../compliance/alert-policies.md#viewing-alerts) representerar utlösare för säkerhetsoperationsteamarbetsflöden för incidenthantering. Att prioritera rätt uppsättning varningar för utredning, samtidigt som man ser till att inga hot inte åtgärdas är en utmaning. När undersökningar av aviseringar utförs manuellt måste säkerhetsoperationsteam jaga och korrelera entiteter (till exempel innehåll, enheter och användare) som riskerar att hotas. Sådana uppgifter och arbetsflöden kan vara mycket tidskrävande och involvera flera verktyg och system. Med AIR automatiseras utredning och svar för säkerhetshändelser genom att viktiga säkerhets- och hothanteringsvarsvarsvarningar utlöser spelböcker för säkerhetssvar automatiskt. 
 
 För närvarande för AIR undersöks aviseringar som genereras från följande typer av varningsprinciper automatiskt:  
 
@@ -55,7 +55,7 @@ Om du vill visa aviseringar väljer du **Aviseringar** > **visa aviseringar**i S
 > [!NOTE]
 > Informationsaviseringar döljs som standard i varningsvyn. Om du vill se dem ändrar du varningsfiltreringen så att informationsaviseringar inkluderas.
 
-Om din organisation hanterar dina säkerhetsaviseringar via ett varningshanteringssystem, tjänsthanteringssystem eller SIEM-system (Security Information and Event Management) kan du skicka Office 365-aviseringar till det systemet via antingen e-postmeddelanden eller via [API:et för office 365 Management Activity.](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) Utredningens varningsmeddelanden via e-post eller API innehåller länkar för att komma åt aviseringarna i Security & Compliance Center, vilket gör att den tilldelade säkerhetsadministratören snabbt kan navigera till undersökningen.
+Om din organisation hanterar dina säkerhetsaviseringar via ett varningshanteringssystem, tjänsthanteringssystem eller SIEM-system (Security Information and Event Management) kan du skicka aviseringar till det systemet via e-postmeddelanden eller via [API:et för office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Utredningens varningsmeddelanden via e-post eller API innehåller länkar för att komma åt aviseringarna i Security & Compliance Center, vilket gör att den tilldelade säkerhetsadministratören snabbt kan navigera till undersökningen.
 
 ![Varningar som länkar till utredningar](../../media/air-alerts-page-details.png) 
 
@@ -75,7 +75,7 @@ Som en del av AIR, säkerhet spelböcker rullas ut i faser. Fas 1 är nu allmän
 
 Fas 1 innehåller även stöd för administratörsutlösta e-postundersökningar (med [Threat Explorer).](threat-explorer.md)
 
-Fas 2 pågår nu med följande spelböcker i **den offentliga förhandsversionen,** med rekommendationer för åtgärder och hjälp med säkerhetsadministratörer att undersöka problem:
+Fas 2 går nu vidare med följande spelböcker i **den offentliga förhandsversionen,** ger rekommendationer för åtgärder och hjälper säkerhetsadministratörer att undersöka problem:
 - Användare som rapporterats som komprometterade (offentlig förhandsversion)
 
 Ytterligare spelböcker kommer att släppas när de är klara. Besök [Översikten över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) för att se vad som planeras och kommer snart.
@@ -110,7 +110,7 @@ Därefter utförs flera hotutredningar och jaktsteg:
 - Liknande e-postmeddelanden identifieras via e-postklustersökningar.
 - Signalen delas med andra plattformar, till exempel [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - En bedömning görs om huruvida några användare har klickat igenom några skadliga länkar i misstänkta e-postmeddelanden.
-- En kontroll görs i Office 365 Exchange Online Protection[(EOP)](exchange-online-protection-eop.md)och Office 365 Advanced Threat Protection[(ATP)](office-365-atp.md)för att se om det finns några andra liknande meddelanden som rapporterats av användare.
+- En kontroll görs i Exchange Online Protection[(EOP)](exchange-online-protection-eop.md)och Office 365 Advanced Threat Protection[(ATP)](office-365-atp.md)för att se om det finns några andra liknande meddelanden som rapporterats av användare.
 - En kontroll görs för att se om en användare har komprometterats. Den här kontrollen utnyttjar signaler över Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)och Azure Active [Directory](https://docs.microsoft.com/azure/active-directory), korrelerar relaterade avvikelser i användaraktiviteten. 
 
 Under jaktfasen sätts risker och hot på olika jaktsteg. 
@@ -133,7 +133,7 @@ I likhet med spelböcker som utlöses av en avisering innehåller automatiska un
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Komma igång med AIR i Office 365](office-365-air.md)
+- [Komma igång med AIR](office-365-air.md)
 
 - [Besök Översikten över Microsoft 365 för att se vad som kommer snart och rulla ut](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

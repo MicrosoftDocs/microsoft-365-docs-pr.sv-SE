@@ -11,23 +11,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Du kan använda regler för e-postflöde (transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom din Office 365-organisation.
-ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: Du kan använda regler för e-postflöde (transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom organisationen.
+ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081430"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635418"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regler för e-postflöde (transportregler) i Exchange Online Protection
 
-Du kan använda regler för e-postflöde (kallas även transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom din Office 365-organisation. Regler för e-postflöde liknar de inkorgsregler som är tillgängliga i Outlook och Outlook på webben. Den största skillnaden är att e-postflödesregler vidtar åtgärder för meddelanden när de är under transport och inte efter att meddelandet har levererats till postlådan. Regler för e-postflöde innehåller en rikare uppsättning villkor, undantag och åtgärder, vilket ger dig flexibiliteten att implementera många typer av meddelandeprinciper.
+Du kan använda regler för e-postflöde (kallas även transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom organisationen. Regler för e-postflöde liknar de inkorgsregler som är tillgängliga i Outlook och Outlook på webben. Den största skillnaden är att e-postflödesregler vidtar åtgärder för meddelanden när de är under transport och inte efter att meddelandet har levererats till postlådan. Regler för e-postflöde innehåller en rikare uppsättning villkor, undantag och åtgärder, vilket ger dig flexibiliteten att implementera många typer av meddelandeprinciper.
 
 I den här artikeln beskrivs komponenterna i reglerna för e-postflöde och hur de fungerar.
 
 Steg om hur du skapar, kopierar och hanterar regler för e-postflöde finns [i Hantera regler för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). För varje regel har du möjlighet att verkställa den, testa den eller testa den och meddela avsändaren. Mer information om testningsalternativen finns i Testa regler för [e-postflöde](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) och [principtips i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
-Sammanfattande och detaljerade rapporter om meddelanden som matchade regler för e-postflöde finns [i Använda e-postskyddsrapporter i Office 365 för att visa data om skadlig kod, skräppost och regelidentifieringar](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
+Sammanfattande och detaljerade rapporter om meddelanden som matchade regler för e-postflöde finns i [Använda e-postskyddsrapporter för att visa data om skadlig kod, skräppost och regelidentifieringar](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
 
 Information om hur du implementerar specifika meddelandeprinciper med hjälp av regler för e-postflöde finns i följande avsnitt:
 
@@ -84,7 +84,7 @@ I följande tabell beskrivs de regelegenskaper som är tillgängliga i regler f�
 
 |**Egenskapsnamn i EAC**|**Parameternamn i PowerShell**|**Beskrivning**|
 |:-----|:-----|:-----|
-|**Prioritet**|_Prioritet_|Anger den ordning som reglerna tillämpas på meddelanden. Standardprioriteten baseras på när regeln skapas (äldre regler har högre prioritet än nyare regler och regler med högre prioritet bearbetas före regler med lägre prioritet). <br/><br/> Du ändrar regelprioriteten i EAC genom att flytta regeln uppåt eller nedåt i regellistan. I PowerShell anger du prioritetsnumret (0 har högsta prioritet). <br/><br/> Om du till exempel har en regel för att avvisa meddelanden som innehåller ett kreditkortsnummer och en annan som kräver godkännande, vill du att avvisningsregeln ska ske först och sluta tillämpa andra regler.  |
+|**Priority**|_Priority_|Anger den ordning som reglerna tillämpas på meddelanden. Standardprioriteten baseras på när regeln skapas (äldre regler har högre prioritet än nyare regler och regler med högre prioritet bearbetas före regler med lägre prioritet). <br/><br/> Du ändrar regelprioriteten i EAC genom att flytta regeln uppåt eller nedåt i regellistan. I PowerShell anger du prioritetsnumret (0 har högsta prioritet). <br/><br/> Om du till exempel har en regel för att avvisa meddelanden som innehåller ett kreditkortsnummer och en annan som kräver godkännande, vill du att avvisningsregeln ska ske först och sluta tillämpa andra regler.  |
 |**Läge**|_Läge_|Du kan ange om du vill att regeln ska börja bearbeta meddelanden omedelbart eller om du vill testa regler utan att påverka leveransen av meddelandet (med eller utan dataförlustskydd eller DLP-principtips). <br/><br/> Principtipsen visar en kort anteckning i Outlook eller Outlook på webben som innehåller information om möjliga policyöverträdelser till den person som skapar meddelandet. Mer information finns i **Policytips**. <br/><br/> Mer information om lägena finns i **Testa en regel för e-postflöde**.|
 |**Aktivera den här regeln på följande datum** <br/><br/> **Inaktivera den här regeln på följande datum**|_ActivationDate_ <br/> _UtgångsdatumDatum_|Anger datumintervallet när regeln är aktiv.|
 |**Markerad** eller inte markerad i kryssrutan markerad eller inte markerad|Nya regler: _Aktiverad_ parameter på cmdleten **New-TransportRule.** <br/><br/> Befintliga regler: Använd cmdlets **enable-transportRule** eller **Disable-TransportRule.** <br/><br/> Värdet visas i egenskapen **State** för regeln.|Du kan skapa en inaktiverad regel och aktivera den när du är redo att testa den. Du kan också inaktivera en regel utan att ta bort den för att bevara inställningarna.|

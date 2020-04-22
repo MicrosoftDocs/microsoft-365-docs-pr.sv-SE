@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Få hjälp med att höja skyddsnivån i Microsoft 365 Business
-ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Få hjälp med att höja skyddsnivån i Microsoft 365
+ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810384"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633719"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
 Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeration för att skydda mot nätfiske, skadlig programvara och andra hot. Dessa rekommendationer är lämpliga för organisationer med ett ökat behov av säkerhet, som politiska kampanjer, advokatbyråer och vårdcentraler. 
 
-Innan du börjar kontrollerar du ditt säkra Office 365-resultat. Office 365 Secure Score analyserar office 365-organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Om du vidtar de åtgärder som rekommenderas i den här artikeln ökar du poängen. Målet är inte att uppnå maxpoäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. 
+Innan du börjar kontrollerar du ditt säkra Office 365-resultat. Office 365 Secure Score analyserar organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Om du vidtar de åtgärder som rekommenderas i den här artikeln ökar du poängen. Målet är inte att uppnå maxpoäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. 
 
 Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -44,7 +44,7 @@ Office 365- eller Microsoft 365-miljön innehåller skydd mot skadlig kod, men d
   
 1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med dina administratörskontouppgifter. 
     
-2. Välj **Policy** \> **Anti-Malware**i det vänstra navigeringsfönstret **Threat management**i Office &amp; 365 Security Compliance Center i det vänstra navigeringsfönstret.
+2. &amp; Välj **Policy** \> **Anti-Malware**i det vänstra **Threat management**navigeringsfönstret i det vänstra navigeringsfönstret.
     
 3. Dubbelklicka på standardprincipen om du vill redigera den här företagsövergripande principen.
     
@@ -59,7 +59,7 @@ Mer information finns i [Skydd mot skadlig kod](https://go.microsoft.com/fwlink/
   
 
 
-## <a name="protect-against-ransomware"></a>Skydda mot ransomware
+## <a name="protect-against-ransomware"></a>Skydda mot utpressningstrojaner
 
 Ransomware begränsar åtkomsten till data genom att kryptera filer eller låsa datorskärmar. Det försöker sedan att pressa pengar från offer genom att be om "lösen", vanligtvis i form av kryptokurar som Bitcoin, i utbyte mot tillgång till data. 
   
@@ -134,7 +134,7 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
   
 1. Gå till [https://protection.office.com](https://protection.office.com). 
     
-2. Välj **Princip**i det &amp; vänstra navigeringsfönstret i Säkerhetsefterlevnadscenter i Office 365 i det vänstra navigeringsfönstret . **Threat management**
+2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
     
 3. På **sidan Policy** väljer du **ATP-anti-nätfiske**.
     
@@ -166,7 +166,7 @@ Kontrollera först <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" ta
 
    ![Den nya förhandsversionen av administrationscentret på.](../media/previewon.png)
 
-Om du inte ser **installationssidan** med kort i din klientorganisation ännu läser du hur &amp; du utför de här stegen i Office 365 Security Compliance Center. Se [Konfigurera ATP-säkra bilagor i Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) och Konfigurera SAFE Links för [ATP i Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+Om du inte ser **inställningssidan** med kort i din klientorganisation ännu &amp; läser du hur du utför de här stegen i Security Compliance Center. Se [Konfigurera ATP-säkra bilagor i Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) och Konfigurera SAFE Links för [ATP i Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Välj **Installation i**den vänstra navigeringsfältet .
 2. På sidan **Inställningar** väljer du **Visa** på **kortet Öka skydd mot avancerade hot.**</br></br>
@@ -188,7 +188,7 @@ Om du vill skapa en ATP-princip för säker bilaga tittar du antingen på [den h
   
 1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt administratörskonto. 
     
-2. Välj **Princip**i det &amp; vänstra navigeringsfönstret i Säkerhetsefterlevnadscenter i Office 365 i det vänstra navigeringsfönstret . **Threat management**
+2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
     
 3. På sidan Princip väljer du **BETRODDa ATP-bilagor**.
     
@@ -225,7 +225,7 @@ Om du vill konfigurera ATP Safe Links tittar du på [den här korta träningsvid
   
 1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt administratörskonto. 
     
-2. Välj **Princip**i det &amp; vänstra navigeringsfönstret i Säkerhetsefterlevnadscenter i Office 365 i det vänstra navigeringsfönstret . **Threat management**
+2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
     
 3. På sidan Princip väljer du **BETRODDA ATP-länkar**.
     
@@ -233,7 +233,7 @@ Så här ändrar du standardprincipen:
   
 1. Välj **standardprincipen** under **Principer som gäller för hela organisationen**på sidan Säkra länkar. 
     
-2. Under **Inställningar som gäller för innehåll utom e-post**väljer du Office **365 ProPlus, Office för iOS och Android**.
+2. Under **Inställningar som gäller för innehåll utom e-post**väljer du Microsoft **365 Apps för företag, Office för iOS och Android**.
     
 3. Klicka på **Spara**. 
     
@@ -258,12 +258,12 @@ Mer information finns i [säkra länkar till Office 365 ATP](https://go.microsof
 
 När du har aktiverat granskningsloggsökningen i säkerhetsorganisationscentret &amp; kan du behålla administratören och annan användaraktivitet i loggen och söka efter den. 
 
-Du måste tilldelas rollen Granskningsloggar i Exchange Online för att aktivera eller inaktivera granskningsloggsökning i din Microsoft 365 Business-prenumeration. Som standard tilldelas den här rollen till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Globala administratörer i Microsoft 365 är som standard medlemmar i den här gruppen.
+Du måste tilldelas rollen Granskningsloggar i Exchange Online för att aktivera eller inaktivera granskningsloggsökning i din Microsoft 365-prenumeration. Som standard tilldelas den här rollen till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Globala administratörer i Microsoft 365 är som standard medlemmar i den här gruppen.
 
 1. Om du vill aktivera granskningsloggsökningen går <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> du till administrationscentret på och väljer sedan **Efterlevnad** under **Administrationscenter** i den vänstra navigeringscentralen. 
 2. På sidan **Microsoft 365-efterlevnad** väljer du **Fler resurser**och sedan **öppna** på **säkerhetscenterkortet &amp; för Office 365.**
 
-    ![Välj Öppna på office 365-säkerhets- & efterlevnadsbilar.](../media/gotosecandcomp.png)
+    ![Välj Öppna på & kompatibilitetsbilar.](../media/gotosecandcomp.png)
 3. På sidan säkerhet och efterlevnad väljer du **Sök** och sedan **Granska loggsökning**.
 1. Högst upp på **söksidan för granskningsloggen** väljer du **Aktivera granskning**.
 
@@ -282,8 +282,8 @@ När funktionen är aktiverad kan du söka efter filer, mappar och många aktivi
 
 Du kan använda aktivitetsaviseringar för att spåra administratörs- och användaraktiviteter och upptäcka incidenter för att förhindra skadlig kod och dataförlust i organisationen. Din prenumeration innehåller en uppsättning standardprinciper, men du kan också skapa anpassade principer. Mer information finns i [varningsprinciper](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Om du till exempel lagrar en viktig fil i SharePoint som du inte vill att någon ska dela externt kan du skapa ett meddelande som varnar dig om någon delar den.
 
-Följande bild visar standardprinciper som ingår i Microsoft 365 Business. <br/><br/>
-    ![Standardvarningsprinciper som ingår i Microsoft 365 Business.](../media/alertpolicies.png)
+Följande bild visar standardprinciper som ingår i Microsoft 365. <br/><br/>
+    ![Standardvarningsprinciper som ingår i Microsoft 365](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Inaktivera eller hantera kalenderdelning
 

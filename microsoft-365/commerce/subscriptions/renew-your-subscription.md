@@ -1,5 +1,5 @@
 ---
-title: Förnya Office 365 för företag
+title: Förnya Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,19 +23,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'Läs om hur du förnyar din Office 365 för företag-prenumeration med hjälp av en produktnyckel och aktiverar eller inaktiverar den återkommande faktureringen. '
-ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'Läs om hur du förnyar din Prenumeration på Microsoft 365 för företag med hjälp av en produktnyckel och aktiverar eller inaktiverar den återkommande faktureringen. '
+ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175208"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636565"
 ---
-# <a name="renew-office-365-for-business"></a>Förnya Office 365 för företag
+# <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
 
-Den här artikeln gäller för de flesta betalda Office 365 för företag-prenumerationer.
+Den här artikeln gäller för de flesta betalda Microsoft 365 för företagsprenumerationer.
   
-Information om hur du förnyar med hjälp av en produktnyckel som du har köpt från en butik eller Office 365-partner finns i [Hitta och ange produktnyckeln](../enter-your-product-key.md).
+Information om hur du förnyar genom att använda en produktnyckel som du har köpt från en butik eller Microsoft-partner finns i [Hitta och ange produktnyckeln](../enter-your-product-key.md).
 
 > [!NOTE]
 > Att betala med bankkonto är inte tillgängligt i vissa länder eller regioner.
@@ -47,6 +47,7 @@ Om du betalar med kreditkort eller bankkonto aktiveras **återkommande faktureri
 Om du har betalat för prenumerationen med en produktnyckel upphör prenumerationen att gälla i slutet av prenumerationsperioden. Du kan aktivera **Återkommande fakturering** och ange kreditkorts- eller bankkontoinformation så att din prenumeration fortsätter att faktureras varje år den dag du prenumererar. Du har också möjlighet att betala varje månad, eller att betala för hela året i förskott. Ditt kreditkort eller bankkonto debiteras inte förrän din första prenumerationsperiod har löpt ut.
 
 ::: moniker range="o365-worldwide"
+
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
@@ -67,7 +68,11 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 
 ::: moniker range="o365-germany"
   
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prenumerationer</a> i administrationscentret.
+
+    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a>.
+
+    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a>.
 
 2. Välj prenumerationen som du vill hantera den återkommande fakturan för.
  
@@ -86,7 +91,11 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 
 ::: moniker range="o365-21vianet"
   
-1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
+1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prenumerationer</a> i administrationscentret.
+
+    Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a>.
+
+    Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a>.
 
 2. Välj prenumerationen som du vill hantera den återkommande fakturan för.
  
@@ -106,7 +115,7 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Återaktivera prenumerationen](reactivate-your-subscription.md)
-
+  
 [Vad händer med mina data och åtkomst när prenumerationen går ut?](what-if-my-subscription-expires.md)
 
 [Lägga till, uppdatera eller ta bort dina betalningsmetoder](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
@@ -115,4 +124,4 @@ Om du har betalat för prenumerationen med en produktnyckel upphör prenumeratio
   
 [Ange produktnyckeln](../enter-your-product-key.md)
   
-[Köpa utvärderingsversionen av Office 365 för företag](../buy-a-subscription-from-your-free-trial.md)
+[Köp din utvärderingsversion av Microsoft 365 för företag](../buy-a-subscription-from-your-free-trial.md)

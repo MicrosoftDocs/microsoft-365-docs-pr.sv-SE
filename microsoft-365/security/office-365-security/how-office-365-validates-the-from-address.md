@@ -1,5 +1,5 @@
 ---
-title: Så här validerar Office 365 Från-adressen för att förhindra nätfiske
+title: Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Lear om kraven på Från e-postadresser för inkommande meddelanden i Office 365. Från och med november 2017 kräver tjänsten nu RFC-kompatibla Från-adresser för att förhindra förfalskning.
-ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Lear om kraven på Från e-postadresser för inkommande meddelanden i Microsoft 365. Från och med november 2017 kräver tjänsten nu RFC-kompatibla Från-adresser för att förhindra förfalskning.
+ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529007"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633984"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Så här validerar Office 365 Från-adressen för att förhindra nätfiske
+# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske
 
-Office 365-e-postkonton får ett allt större antal nätfiskeattacker. Förutom att använda [falska (förfalskade) avsändar-e-postadresser](anti-spoofing-protection.md)använder angripare ofta värden i den Från-adress som bryter mot internetstandarder. För att förhindra den här typen av nätfiske kräver Office 365 och Outlook.com nu inkommande meddelanden för att inkludera en RFC-kompatibel Från-adress enligt beskrivningen i det här avsnittet. Denna verkställighet aktiverades i november 2017.
+Microsoft 365-e-postkonton får ett allt större antal nätfiskeattacker. Förutom att använda [falska (förfalskade) avsändar-e-postadresser](anti-spoofing-protection.md)använder angripare ofta värden i den Från-adress som bryter mot internetstandarder. För att förhindra den här typen av nätfiske kräver Microsoft 365 och Outlook.com nu inkommande meddelanden för att inkludera en RFC-kompatibel Från-adress enligt beskrivningen i det här avsnittet. Denna verkställighet aktiverades i november 2017.
 
 **Anmärkningar**:
 
@@ -75,31 +75,31 @@ Följande Från e-postadresser är giltiga:
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
-- `From: "Office 365" <sender@contoso.com>`
+- `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Office 365 <sender@contoso.com>`(Rekommenderas inte eftersom visningsnamnet inte omges av dubbla citattecken.)
+- `From: Microsoft 365 <sender@contoso.com>`(Rekommenderas inte eftersom visningsnamnet inte omges av dubbla citattecken.)
 
 Följande Från-e-postadresser är ogiltiga:
 
-- **Nej från-adress**: Vissa automatiska meddelanden innehåller inte en Från-adress. Tidigare, när Office 365 eller Outlook.com tog emot ett meddelande utan från-adress, lade tjänsten till följande standard Från:-adress för att göra meddelandet slutprodukt:
+- **Nej från-adress**: Vissa automatiska meddelanden innehåller inte en Från-adress. När Microsoft 365 eller Outlook.com fått ett meddelande utan Från-adress har tjänsten tidigare lagt till följande standard från: adress för att göra meddelandet slutprodukt:
 
   `From: <>`
 
   Meddelanden med en tom Från-adress accepteras inte längre.
 
-- `From: Office 365 sender@contoso.com`(Visningsnamnet finns, men e-postadressen omges inte av vinkelparenteser.)
+- `From: Microsoft 365 sender@contoso.com`(Visningsnamnet finns, men e-postadressen omges inte av vinkelparenteser.)
 
-- `From: "Office 365" <sender@contoso.com> (Sent by a process)`(Text efter e-postadressen.)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Text efter e-postadressen.)
 
 - `From: Sender, Example <sender.example@contoso.com>`(Visningsnamnet innehåller ett kommatecken, men omges inte av dubbla citattecken.)
 
-- `From: "Office 365 <sender@contoso.com>"`(Hela värdet omges felaktigt av dubbla citattecken.)
+- `From: "Microsoft 365 <sender@contoso.com>"`(Hela värdet omges felaktigt av dubbla citattecken.)
 
-- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`(Visningsnamnet finns, men e-postadressen omges inte av vinkelparenteser.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(Visningsnamnet finns, men e-postadressen omges inte av vinkelparenteser.)
 
-- `From: Office 365<sender@contoso.com>`(Inget blanksteg mellan visningsnamnet och det vänstra vinkelfästet.)
+- `From: Microsoft 365<sender@contoso.com>`(Inget blanksteg mellan visningsnamnet och det vänstra vinkelfästet.)
 
-- `From: "Office 365"<sender@contoso.com>`(Inget blanksteg mellan det avslutande dubbla citattecknet och det vänstra vinkelfästet.)
+- `From: "Microsoft 365"<sender@contoso.com>`(Inget blanksteg mellan det avslutande dubbla citattecknet och det vänstra vinkelfästet.)
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Undertrycka autosvar på din anpassade domän
 
@@ -115,16 +115,16 @@ Till exempel:
 noreply.contoso.com IN MX .
 ```
 
-Mer information om hur du konfigurerar MX-poster finns i [Skapa DNS-poster hos alla DNS-värdar för Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Mer information om hur du konfigurerar MX-poster finns i [Skapa DNS-poster hos alla DNS-värdar för Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Mer information om hur du publicerar ett null MX finns i [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## <a name="override-from-address-enforcement"></a>Åsidosätt från adresskontroll
 
-Om du vill kringgå kraven på från-adress för inkommande e-post kan du använda IP Allow List (anslutningsfiltrering) eller regler för e-postflöde (kallas även transportregler) enligt beskrivningen i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
+Om du vill kringgå kraven på från-adress för inkommande e-post kan du använda IP Allow List (anslutningsfiltrering) eller regler för e-postflöde (kallas även transportregler) enligt beskrivningen i [Skapa listor över betrodda avsändare i Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Du kan inte åsidosätta kraven för Från-adresser för utgående e-post som du skickar från Office 365. Dessutom kommer Outlook.com inte tillåta åsidosättningar av något slag, även genom stöd.
+Du kan inte åsidosätta kraven på från-adress för utgående e-post som du skickar från Microsoft 365. Dessutom kommer Outlook.com inte tillåta åsidosättningar av något slag, även genom stöd.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Andra sätt att förebygga och skydda mot it-brott i Office 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Andra sätt att förebygga och skydda mot it-brott i Microsoft 365
 
-Mer information om hur du kan stärka din organisation mot nätfiske, skräppost, dataintrång och andra hot finns på [de 10 bästa sätten att skydda Office 365- och Microsoft 365 Business-abonnemang](../../admin/security-and-compliance/secure-your-business-data.md).
+Mer information om hur du kan stärka din organisation mot nätfiske, skräppost, dataintrång och andra hot finns på [topp 10 sätt att skydda Microsoft 365 för affärsplaner](../../admin/security-and-compliance/secure-your-business-data.md).

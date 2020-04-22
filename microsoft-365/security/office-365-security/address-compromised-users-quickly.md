@@ -1,5 +1,5 @@
 ---
-title: Hantera komprometterade användarkonton med automatisk undersökning och svar i Office 365 Advanced Threat Protection
+title: Adresskomprometerade användarkonton med automatisk undersökning och svar
 keywords: AIR, autoIR, ATP, automatiserad, utredning, svar, sanering, hot, avancerad, hot, skydd, komprometterade
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Lär dig hur du snabbar upp processen med att identifiera och adressera komprometterade användarkonton med automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42807835"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635778"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresskomprometerade användarkonton med automatisk undersökning och svar
 
@@ -60,7 +60,7 @@ När ett användarkonto komprometteras utlöses aviseringar. Och i vissa fall bl
 
 ### <a name="view-and-investigate-restricted-users"></a>Visa och undersöka begränsade användare
 
-Du har några alternativ för att navigera till en lista över begränsade användare. I Säkerhets- & Compliance Center för Office 365 kan du till exempel gå till**Begränsad användare**för **hothanteringsgranskning** > **Review** > . Följande procedur beskriver navigering med hjälp av instrumentpanelen **Aviseringar,** vilket är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
+Du har några alternativ för att navigera till en lista över begränsade användare. I Security & Compliance Center kan du till exempel gå till Begränsad användning **av hothanteringsgranskning** > **Review** > **Restricted Users**. Följande procedur beskriver navigering med hjälp av instrumentpanelen **Aviseringar,** vilket är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
 
 1. Gå [https://protection.office.com](https://protection.office.com) till och logga in.
 
@@ -74,7 +74,7 @@ Du har några alternativ för att navigera till en lista över begränsade anvä
 
 ### <a name="view-details-about-automated-investigations"></a>Visa information om automatiserade utredningar
 
-När en automatiserad undersökning har inletts kan du se dess information och resultat i Office 365 Security & Compliance Center. Gå till > **Hothanteringsutredningar**och välj sedan en undersökning för att visa dess detaljer. **Threat management**
+När en automatiserad undersökning har inletts kan du se dess information och resulterar i Security & Compliance Center. Gå till > **Hothanteringsutredningar**och välj sedan en undersökning för att visa dess detaljer. **Threat management**
 
 Mer information finns i [Visa information om en undersökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 

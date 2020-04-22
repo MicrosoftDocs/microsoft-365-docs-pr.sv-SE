@@ -1,5 +1,5 @@
 ---
-title: Åtgärda statistik över avsändaredomän
+title: Insikten Åtgärda avsändardomän
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan lära sig mer om åtkomstbesiktningen av korrigeringsavsändaren i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809695"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635178"
 ---
-# <a name="fix-sender-domain-insight"></a>Åtgärda statistik över avsändaredomän
+# <a name="fix-sender-domain-insight"></a>Insikten Åtgärda avsändardomän
 
-Office 365 kräver meddelanden som skickas från interna lokala e-postmiljöer till Office 365 för att uppfylla vissa säkerhetskriterier:
+Microsoft 365 kräver meddelanden som skickas från interna lokala e-postmiljöer till Microsoft 365 för att uppfylla vissa säkerhetskriterier:
 
-- Du har skapat en inkommande anslutningsapp i Office 365 för att autentisera SMTP-anslutningar från den lokala e-postservern med hjälp av käll-IP-adressen eller ett certifikat.
+- Du har skapat en inkommande anslutningsapp i Microsoft 365 för att autentisera SMTP-anslutningar från den lokala e-postservern med hjälp av käll-IP-adressen eller ett certifikat.
 
-- Du har konfigurerat din lokala e-postserver för att vidarebefordra e-post via Office 365 till den externa världen.
+- Du har konfigurerat din lokala e-postserver för att vidarebefordra e-post via Microsoft 365 till den externa världen.
 
 - I konfigurationen är ett av följande satser sant:
 
-  - Avsändarens e-postdomän är registrerad i din Office 365-organisation. Mer information finns i Lägga till domäner i Office 365.
+  - Avsändarens e-postdomän är registrerad i din organisation. Mer information finns i Lägga till domäner i Office 365.
 
-  - Din lokala e-postserver är konfigurerad för att använda ett certifikat för att skicka e-post till Office 365, certifikatet innehåller eller matchar exakt ett domännamn som du har registrerat i Office 365 och du har skapat en certifikatbaserad anslutningsapp i Office 365 med den Domän. 
+  - Din lokala e-postserver är konfigurerad för att använda ett certifikat för att skicka e-post till Microsoft 365, certifikatet innehåller eller matchar exakt ett domännamn som du har registrerat i Microsoft 365 och du har skapat en certifikatbaserad anslutningsapp i Microsoft 365 med den domänen. 
 
 Meddelanden som inte uppfyller kriterierna kommer inte att tillskrivas organisationen och kan avvisas.
 
@@ -46,6 +46,6 @@ Den inkommande anslutningsappen som användes för att leverera meddelandena til
 
 ![Visa exempelmeddelande-ID:er i fix-domänens insikt](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).

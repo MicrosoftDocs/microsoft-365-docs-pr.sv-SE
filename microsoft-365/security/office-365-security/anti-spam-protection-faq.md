@@ -15,16 +15,16 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Vanliga frågor och svar för administratörer om skydd mot skräppost i Exchange Online och fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528319"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636064"
 ---
-# <a name="anti-spam-protection-faq-in-office-365"></a>Vanliga frågor om skydd mot skräppost i Office 365
+# <a name="anti-spam-protection-faq"></a>Vanliga frågor om skydd mot skräppost
 
-Det här avsnittet innehåller vanliga frågor och svar om skydd mot skräppost för Office 365-kunder med postlådor i Exchange Online- eller fristående Exchange Online Protection-kunder (EOP) utan Exchange Online-postlådor.
+Det här avsnittet innehåller vanliga frågor och svar om skydd mot skräppost för Microsoft 365-kunder med postlådor i Exchange Online- eller fristående Exchange Online Protection-kunder (EOP) utan Exchange Online-postlådor.
 
 Frågor och svar om karantänen finns i [Vanliga frågor om karantän](quarantine-faq.md).
 
@@ -34,12 +34,12 @@ För frågor och svar om anti-spoofing skydd, se [Anti-spoofing skydd FAQ](anti-
 
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>F. Vad händer som standard med ett meddelande som har upptäckts av skräppost?
 
-A. **För inkommande meddelanden:** Majoriteten av spam tas bort via anslutningsfiltrering, som baseras på IP-adressen för källan e-postserver. Policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterregler) inspekterar och klassificerar meddelanden som skräppost, bulk eller nätfiske. Som standard levereras meddelanden som klassificeras som skräppost eller bulk till mottagarens skräppostmapp, medan meddelanden som klassificeras som nätfiske sätts i karantän. Du kan ändra standardpolicyn mot skräppost (gäller alla mottagare) eller skapa anpassade policyer mot skräppost med striktare inställningar för specifika användargrupper (du kan till exempel sätta skräppost i karantän som skickas till chefer). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md) och Rekommenderade [principinställningar för skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+A. **För inkommande meddelanden:** Majoriteten av spam raderas via anslutningsfiltrering, som baseras på IP-adressen för käll-e-postservern. Policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterregler) inspekterar och klassificerar meddelanden som skräppost, bulk eller nätfiske. Som standard levereras meddelanden som klassificeras som skräppost eller bulk till mottagarens skräppostmapp, medan meddelanden som klassificeras som nätfiske sätts i karantän. Du kan ändra standardpolicyn mot skräppost (gäller alla mottagare) eller skapa anpassade policyer mot skräppost med striktare inställningar för specifika användargrupper (du kan till exempel sätta skräppost i karantän som skickas till chefer). Mer information finns i [Konfigurera policyer mot skräppost](configure-your-spam-filter-policies.md) och rekommenderade [policyinställningar för skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
 > I hybriddistributioner där EOP skyddar lokala postlådor måste du konfigurera två Exchange-regler för e-postflöde (kallas även transportregler) i din lokala Exchange-organisation för att identifiera EOP-skräppostfiltreringshuvuden som läggs till i meddelanden. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
- **För utgående meddelanden:** Meddelandet dirigeras antingen genom [högriskleveranspoolen](high-risk-delivery-pool-for-outbound-messages.md) eller returneras till avsändaren i en rapport om utebliven leverans (kallas även NDR eller avvisningsmeddelande). Mer information om skydd för skräppost från utgående finns [i Utgående skräppostkontroller i Office 365](outbound-spam-controls.md).
+ **För utgående meddelanden:** Meddelandet dirigeras antingen genom [högriskleveranspoolen](high-risk-delivery-pool-for-outbound-messages.md) eller returneras till avsändaren i en rapport om utebliven leverans (kallas även NDR eller avvisningsmeddelande). Mer information om skydd för skräppost från utgående finns i [Utgående skräppostkontroller](outbound-spam-controls.md).
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>F. Vad är en zero-day spam variant och hur hanteras den av tjänsten?
 
@@ -75,7 +75,7 @@ A. Ja, tjänsten har ett URL-filter som söker efter webbadresser i meddelanden.
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>F. Hur kan kunder som använder tjänsten skicka falska negativa (skräppost) och falska positiva (icke-spam) meddelanden till Microsoft?
 
-A. Skräppost och icke-skräppostmeddelanden kan skickas till Microsoft för analys på flera sätt. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+A. Skräppost och icke-skräppostmeddelanden kan skickas till Microsoft för analys på flera sätt. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>F. Kan jag få skräppostrapporter?
 
@@ -97,11 +97,11 @@ Du kan skicka ett meddelande till en angiven e-postadress när en avsändare blo
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>F. Kan jag använda en tredjepartsleverantör mot skräppost och skadlig kod i samband med Exchange Online?
 
-A. Ja. Även om vi rekommenderar att du pekar din MX-post till Office 365, inser vi att det finns legitima affärsskäl för att dirigera din e-post till någon annanstans än Office 365 först.
+A. Ja. Även om vi rekommenderar att du pekar din MX-post till Microsoft, inser vi att det finns legitima affärsskäl för att dirigera din e-post till någon annanstans än Microsoft först.
 
 - **Inkommande**: Ändra dina MX-poster så att de pekar på tredjepartsleverantören och omdirigera sedan meddelandena till EOP för ytterligare bearbetning. Mer information finns i [Förbättrad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **Utgående**: Konfigurera smart värddirigering från Office 365 till tredjepartsleverantören för mål.
+- **Utgående**: Konfigurera smart värddirigering från Microsoft 365 till tredjepartsleverantören för mål.
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>F. Har Microsoft någon dokumentation om hur jag kan skydda mig mot nätfiske?
 
@@ -133,7 +133,7 @@ A. Riktlinjerna nedan är metodtips för att skicka utgående e-postmeddelanden.
 
   SPF-poster är en mekanism för att validera den e-post som skickas från en domän som verkligen kommer från den domänen och inte är förfalskad. Mer information om SPF-poster finns i följande länkar:
 
-  [Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

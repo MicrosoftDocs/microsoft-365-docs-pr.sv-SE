@@ -17,17 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0b28cf2ce96e4c040fac0999d669623cef066fe4
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 93da55287c3b7d7498a9c25f4deeb2615da81675
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929498"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633501"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jaktschemat
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
@@ -39,18 +39,18 @@ Följande referens listar alla tabeller i schemat. Varje tabellnamn länkar till
 
 | Tabellnamn | Beskrivning |
 |------------|-------------|
-| **[AlertInfo (varningInfo)](advanced-hunting-alertinfo-table.md)** | Aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP, inklusive allvarlighetsgradinformation och hotkategorisering  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP, inklusive allvarlighetsgradinformation och hotkategorisering  |
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Filer, IP-adresser, webbadresser, användare eller enheter som är associerade med aviseringar |
-| **[KontoInfo](advanced-hunting-accountinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
-| **[E-postEvenemang](advanced-hunting-emailevents-table.md)** | E-posthändelser i Office 365, inklusive e-postleverans och blockering av händelser |
-| **[E-postAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om filer som är kopplade till Office 365-e-postmeddelanden |
-| **[E-postUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i Office 365-e-postmeddelanden |
+| **[AccountInfo](advanced-hunting-accountinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 e-posthändelser, inklusive e-postleverans och blockering av händelser |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om filer som är kopplade till e-postmeddelanden |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i Microsoft 365-e-postmeddelanden |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Maskininformation, inklusive OS-information |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Nätverksegenskaper för datorer, inklusive kort, IP- och MAC-adresser, samt anslutna nätverk och domäner |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Processskapande och relaterade händelser |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Nätverksanslutning och relaterade händelser |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Filskapande, ändring och andra filsystemhändelser |
-| **[EnhetsregisterEvents](advanced-hunting-deviceregistryevents-table.md)** | Skapande och ändring av registerposter |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Skapande och ändring av registerposter |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inloggningar och andra autentiseringshändelser |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-inläsning av händelser |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Flera händelsetyper, inklusive händelser som utlöses av säkerhetskontroller som Windows Defender Antivirus och utnyttja skydd |
@@ -65,9 +65,9 @@ Följande referens listar alla tabeller i schemat. Varje tabellnamn länkar till
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

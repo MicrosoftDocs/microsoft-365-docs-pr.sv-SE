@@ -1,5 +1,5 @@
 ---
-title: Ordning och prioritet för e-postskydd i Office 365
+title: Ordning och prioritet för e-postskydd
 keywords: säkerhet, skadlig kod, Microsoft 365, M365, säkerhetscenter, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Beskriver programordningen för Office 365-skydd och hur prioritetsvärdet i skyddsprinciper avgör vilken princip som tillämpas.
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537419"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633972"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Ordning och prioritet för e-postskydd i Office 365
+# <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
-I Office 365 utvärderas inkommande e-post av och kan därför flaggas av flera former av skydd (skadlig kod, skräppost, nätfiske osv.). Med tanke på all denna verksamhet kan det vara svårt att avgöra vilken princip som tillämpades och i vilken ordning.
+Som Microsoft 365-användare kan din inkommande e-post flaggas av flera former av skydd. Till exempel de inbyggda EOP-principerna mot nätfiske som är tillgängliga för alla Microsoft 365-kunder och de mer robusta ATP-principerna för nätfiske som också är tillgängliga för Office 365 Advanced Threat Protection-kunder. Meddelanden passerar också genom flera upptäckt skanningar för skadlig kod, spam, phishing, etc. Med tanke på all denna verksamhet kan det råda viss förvirring om vilken politik som tillämpas.
 
 I allmänhet identifieras en princip som tillämpas på ett meddelande i **X-Forefront-Antispam-Report-huvudet** i egenskapen **CAT (Category).** Mer information finns i [Rubriker för skräppostmeddelande](anti-spam-message-headers.md).
 

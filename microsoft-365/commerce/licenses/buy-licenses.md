@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Läs om hur du lägger till och tar bort licenser för din Office 365 för företag-prenumeration.
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: Läs om hur du lägger till och tar bort licenser för din Microsoft 365 för företag-prenumeration.
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240295"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632535"
 ---
 # <a name="manage-subscription-licenses"></a>Hantera prenumerationslicenser
 
@@ -84,22 +84,22 @@ När du har köpt nya licenser måste du [tilldela licenserna till användarna](
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?
 
-I den här tabellen beskrivs varför länken **Lägg till/ta bort licenser** kanske inte är tillgänglig och vad du kan göra åt den.
+I den här tabellen beskrivs varför länken **Lägg till/ta bort licenser** kanske inte är tillgänglig och vad du kan göra åt den. 
 
-|Orsak  |Beskrivning  |Lösning  |
+|Anledning  |Beskrivning  |Lösning  |
 |---------|---------|---------|
 |En kreditkontroll väntar. |Om det finns en kreditkontroll som väntar visas ett meddelande om väntande kreditkontroll och du kan inte köpa licenser förrän kreditkontrollen är klar.  | Kom tillbaka senare för att se om kreditkontrollen har slutförts. Kreditkontroller tar vanligtvis upp till två arbetsdagar.<br>När kreditkontrollen är klar bör länken **Lägg till/ta bort licenser** visas i avsnittet **Användare**. Om så är fallet går du till [Hantera prenumerationslicenser](#manage-subscription-licenses). |
 |Du aktiverade prenumerationen med hjälp av en produktnyckel.| Om prenumerationen har köpts och aktiverats med en 25 tecken lång produktnyckel visas texten "Förbetald".  |Se [Lägga till licenser i en prenumeration som betalats för att använda en produktnyckel](add-licenses-using-product-key.md). |
 |Du köpte din prenumeration via en partner. | Om prenumerationen har köpts via en partner visas länken Volume Licensing Service Center (VLSC). | Se [Lägga till licenser i en prenumeration som köpts via Servicecenter för volymlicensiering](add-licenses-bought-through-vlsc.md). |
 |Du har köpt din prenumeration via en återförsäljare.|| Om prenumerationen har köpts via en leverantör av molnlösningar (CSP) måste du kontakta CSP-partnern om du vill köpa fler licenser.        |
-|Du har en utvärderingsprenumeration. |En utvärderingsversion av Office 365 visar texten "Utvärderingsversion". | Du måste först köpa din provprenumeration, sedan kan du lägga till fler licenser. Se [Köpa en prenumeration på Office 365 för företag från den kostnadsfria utvärderingsversionen](../buy-a-subscription-from-your-free-trial.md).|
+|Du har en utvärderingsprenumeration. |En testversion av Microsoft 365 visar texten "Trial". | Du måste först köpa din provprenumeration, sedan kan du lägga till fler licenser. Se [Köpa en prenumeration på Microsoft 365 för företag från den kostnadsfria provperioden](../buy-a-subscription-from-your-free-trial.md).|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Vad du behöver veta om att köpa licenser för din företagsprenumeration
 
 ### <a name="buying-licenses"></a>Köpa licenser
 
 - Du måste vara antingen global administratör eller faktureringsadministratör för att kunna köpa licenser. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-- Om du vill köpa en licens och lägga till en ny användare i prenumerationen samtidigt läser du [Lägga till användare individuellt eller flera samtidigt i Office 365 - administratörshjälp](../../admin/add-users/add-users.md).
+- Information om hur du köper en licens och lägger till en ny användare i prenumerationen samtidigt finns [i Lägg till användare individuellt eller i grupp Microsoft 365 - Hjälp om administratörer](../../admin/add-users/add-users.md).
 
 ### <a name="license-availability"></a>Tillgänglighet för licens
 

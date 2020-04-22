@@ -1,5 +1,5 @@
 ---
-title: Köpa eller redigera ett tillägg för Office 365 för företag
+title: Köpa eller redigera ett tillägg
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,19 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: Lär dig hur du köper ett tillägg för att lägga till ytterligare funktioner i din Office 365 för företag-prenumeration. Du kan också uppdatera och ta bort ett tillägg.
+description: Lär dig hur du köper ett tillägg för att lägga till ytterligare funktioner i din Microsoft 365 för företag-prenumeration. Du kan också uppdatera och ta bort ett tillägg.
 ms.custom: okr_SMB
-ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142281"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634926"
 ---
-# <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Köpa eller redigera ett tillägg för Office 365 för företag
+# <a name="buy-or-edit-an-add-on"></a>Köpa eller redigera ett tillägg
 
-Flera av Office 365 för företag-abonnemangen har tillägg som du kan köpa för din prenumeration. Ett tillägg ger ytterligare funktioner med den prenumeration som du köper det för.
+Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din prenumeration. Ett tillägg ger ytterligare funktioner med den prenumeration som du köper det för.
+
 
 ## <a name="buy-an-add-on"></a>Köpa ett tillägg
 
@@ -97,13 +98,14 @@ Flera av Office 365 för företag-abonnemangen har tillägg som du kan köpa fö
 
 ::: moniker-end
 
+
 ## <a name="update-an-add-on"></a>Uppdatera ett tillägg
 
-Stegen du använder för att uppdatera ett tillägg beror på om tillägget är ett traditionellt tillägg, eller ett fristående tillägg.
+Stegen du använder för att uppdatera ett tillägg beror på om tillägget är ett traditionellt tillägg, eller ett fristående tillägg. 
 
 *Traditionella tillägg* är länkade till en viss prenumeration. Om du avbryter prenumerationen avbryts även det associerade tillägget.
   
-*Fristående tillägg* är inte länkade till en viss prenumeration. Fristående tillägg visas som en separat prenumeration på sidan **Produkter & tjänster** och har ett eget utgångsdatum. Du hanterar ett fristående tillägg på samma sätt som du hanterar andra prenumerationer.
+*Fristående tillägg* är inte länkade till en viss prenumeration. Fristående tillägg visas som en separat prenumeration på sidan Prenumerationer (eller på sidan **Produkter & tjänster** i det nya administrationscentret) och har ett eget **utgångsdatum.** Du hanterar ett fristående tillägg på samma sätt som du hanterar andra prenumerationer.
   
 ### <a name="update-a-traditional-add-on"></a>Uppdatera ett traditionellt tillägg
 
@@ -120,6 +122,7 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 5. Ange den kvantitetsändring som du vill använda för prenumerationen och välj sedan **Skicka ändring**.
 
 ::: moniker-end
+
 
 ::: moniker range="o365-germany"
 
@@ -164,6 +167,7 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
     > Du kan även använda upp- och nedpilen när du vill ändra antalet användarlicenser eller bara ange siffran du vill ha i rutan.
   
     ![Rutan Totalt antal licenser och knappen Skicka i dialogrutan Lägg till eller ta bort licenser.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+
 
 ::: moniker-end
 
@@ -209,29 +213,32 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
 ::: moniker-end
 
+
 ## <a name="remove-an-add-on"></a>Ta bort ett tillägg
 
 Du kan avsluta ett fristående tillägg på samma sätt som du [avbryter en prenumeration](subscriptions/cancel-your-subscription.md). Du kan även avaktivera **automatisk förnyelse** för ett fristående tillägg med hjälp av stegen ovan. Du kan inte dock ta bort ett traditionellt tillägg efter att det har köpts. Om du behöver ta bort ett traditionellt tillägg kontaktar du [supporten för att få hjälp](../admin/contact-support-for-business-products.md).
   
 ## <a name="available-add-ons"></a>Tillgängliga tillägg
 
-I följande tabell visas tillägg som är tillgängliga för olika versioner av Office 365 för företag.
+I följande tabell visas tillägg som är tillgängliga för olika versioner av Microsoft 365 för företag.
   
 Information om tillägg till Skype för företag finns i [tilläggslicensieringen Skype för företag och Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
+****
+
 |**Tillägg**|**Tillgängliga i de här prenumerationerna**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Avancerat hotskydd för Office 365 Online](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Exchange Online - arkivering](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Office 365 Business Essentials  <br/>  Office 365 Business Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
+|[Exchange Online - arkivering](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Office 365 Extra File Storage  <br/> | Office 365 Business  <br/>  Office 365 Business Essentials  <br/>  Office 365 Business Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office för webben med SharePoint-abonnemang 1  <br/>  Office för webben med SharePoint-abonnemang 2  <br/>  SharePoint Online (abonnemang 1)  <br/>  SharePoint Online (abonnemang 2)  <br/> |
-|Telefonsystemet i Office 365  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Ljudkonferens i Office 365  <br/> |  Office 365 Business Essentials <br/> Office 365 Business Premium <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise, E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 utan ljudkonferenser <br/> Microsoft 365 Företag <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Samtalspoäng i Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Abonnemang för inrikessamtal i Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Samtalsabonnemang för internationella samtal i Office 365  <br/> | Office 365 Enterprise E5  <br/> |
+|Office 365 Extra File Storage  <br/> | Microsoft 365-appar för företag  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office för webben med SharePoint-abonnemang 1  <br/>  Office för webben med SharePoint-abonnemang 2  <br/>  SharePoint Online (abonnemang 1)  <br/>  SharePoint Online (abonnemang 2)  <br/> |
+|Telefonsystem  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
+|Ljudkonferenser  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise, E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 utan ljudkonferenser <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Kommunikationskrediter  <br/> | Office 365 Enterprise E5  <br/> |
+|Inrikes samtalsplan <br/> | Office 365 Enterprise E5  <br/> |
+|Internationell samtalsplan  <br/> | Office 365 Enterprise E5  <br/> |
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

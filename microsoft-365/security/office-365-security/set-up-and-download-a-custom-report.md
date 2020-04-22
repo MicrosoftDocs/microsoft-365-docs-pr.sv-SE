@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du konfigurerar och hämtar en rapport &amp; med ett anpassat datumintervall och filter i Security Compliance Center.
-ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8807928141704339913e3a30c7804aad5e018d4a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810746"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638374"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Konfigurera och hämta en anpassad &amp; rapport i Security Compliance Center
 
@@ -30,7 +30,7 @@ I [Security &amp; Compliance Center](https://protection.office.com)finns flera [
 ## <a name="download-a-custom-report"></a>Ladda ned en anpassad rapport
 
 > [!IMPORTANT]
-> Kontrollera att du har de behörigheter som krävs [för Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). I allmänhet kan globala Office 365-administratörer, säkerhetsadministratörer och &amp; säkerhetsläsare komma åt rapporter i Security Compliance Center. 
+> Kontrollera att du har de behörigheter som krävs [för Säkerhetsefterlevnadscenter &amp; ](permissions-in-the-security-and-compliance-center.md). I allmänhet kan globala administratörer, säkerhetsadministratörer och säkerhetsläsare komma åt rapporter i Security &amp; Compliance Center. 
   
 1. Gå till **instrumentpanelen för rapporter** \> i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com). **Dashboard**
     
@@ -46,7 +46,7 @@ I [Security &amp; Compliance Center](https://protection.office.com)finns flera [
     
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Rapporter och insikter i Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Rapporter och insikter i &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Skapa ett schema för en &amp; rapport i Säkerhetsefterlevnadscenter](create-a-schedule-for-a-report.md)
   

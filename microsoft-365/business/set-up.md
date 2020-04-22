@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Microsoft 365 Business
+title: Konfigurera Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,17 +28,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Upptäck installationsstegen för Microsoft 365 Business, inklusive att lägga till en domän och användare, konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 99994b6f1e9e817b4858aeafe4ce3ceaaf4c3c37
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Upptäck installationsstegen för Microsoft 365 Business Premium, inklusive att lägga till en domän och användare, konfigurera säkerhetsprinciper med mera.
+ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42809669"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635766"
 ---
-# <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business i installationsguiden
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business Premium i installationsguiden
 
-Titta på det här videoklippet om du vill ha en översikt över installationen av Microsoft 365 Business.<br><br>
+Titta på det här videoklippet om du vill ha en översikt över installationen av Microsoft 365 Business Premium.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -48,7 +48,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 [![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-När du köper Microsoft 365 Business kan du välja att använda en domän som du äger eller köpa en domän under [registreringen.](sign-up.md)
+När du köper Microsoft 365 Business Premium kan du välja att använda en domän som du äger eller köpa en domän under [registreringen.](sign-up.md)
 
 - Om du köpte en ny domän när du registrerade dig är domänen konfigurerad och du kan flytta till [Lägg till användare och tilldela licenser](#add-users-and-assign-licenses).
 
@@ -82,11 +82,11 @@ Du kan lägga till användare i guiden, men du kan också [lägga till användar
 
 #### <a name="add-users-in-the-wizard"></a>Lägga till användare i guiden
 
-Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 365 Business-licens.
+Alla användare som du lägger till i guiden tilldelas automatiskt en Microsoft 365 Business Premium-licens.
 
 ![Skärmbild av sidan Lägg till nya användare i guiden](../media/addnewuserspage.png)
 
-1. Om din Microsoft 365 Business-prenumeration har befintliga användare (till exempel om du använde Azure AD Connect) får du ett alternativ för att tilldela licenser till dem nu. Lägg till licenser till dem också.
+1. Om din Microsoft 365 Business Premium-prenumeration har befintliga användare (till exempel om du använde Azure AD Connect) får du ett alternativ för att tilldela licenser till dem nu. Lägg till licenser till dem också.
 
 2. När du har lagt till användarna får du också möjlighet att dela autentiseringsuppgifter med de nya användarna som du har lagt till. Du kan välja att skriva ut, e-posta eller ladda ned.
 
@@ -130,10 +130,10 @@ På den vänstra navigeringsfältet väljer du **Installationsprogrammet** och v
 
 Om du väljer att automatiskt installera Office-appar under installationen installeras apparna på Windows 10-enheterna när användarna har loggat in på Azure AD från sina Windows-enheter med hjälp av deras arbetsuppgifter.
 
-Om du vill installera Office på mobila iOS- eller Android-enheter finns i [Konfigurera mobila enheter för Microsoft 365 Business-användare](set-up-mobile-devices.md).
+Om du vill installera Office på mobila iOS- eller Android-enheter finns i [Konfigurera mobila enheter för Microsoft 365 Business Premium-användare](set-up-mobile-devices.md).
 
 Du kan också installera Office individuellt. Instruktioner [finns i installera Office på en PC eller Mac.](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

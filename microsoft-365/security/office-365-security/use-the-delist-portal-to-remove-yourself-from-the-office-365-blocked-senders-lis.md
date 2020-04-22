@@ -1,5 +1,5 @@
 ---
-title: Använd avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365
+title: Använd avlistningsportalen för att ta bort dig själv från listan över blockerade avsändare
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Office 365? Om du tycker att du inte ska få felmeddelandet kan du använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365.
-ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Microsoft 365? Om du tycker att du inte ska få felmeddelandet kan du använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare.
+ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636410"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Använd avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Använd avlistningsportalen för att ta bort dig själv från listan över blockerade avsändare
 
-Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Office 365? Om du tycker att du inte ska få felmeddelandet kan du använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365.
+Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Microsoft 365? Om du tycker att du inte ska få felmeddelandet kan du använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare.
 
-## <a name="what-is-the-office-365-blocked-senders-list"></a>Vad är listan blockerade avsändare i Office 365?
+## <a name="what-is-the-blocked-senders-list"></a>Vad är listan med blockerade avsändare?
 
-Microsoft använder listan blockerade avsändare för att skydda sina kunder från skräppost, förfalskning och nätfiskeattacker. E-postserverns IP-adress, det villa om den adress som e-postservern använder för att identifiera sig på Internet, har taggats som ett potentiellt hot mot Office 365 av olika anledningar. När Office 365 lägger till IP-adressen i listan förhindrar det all ytterligare kommunikation mellan IP-adressen och någon av våra kunder via våra datacenter.
+Microsoft använder listan blockerade avsändare för att skydda sina kunder från skräppost, förfalskning och nätfiskeattacker. Din e-postservers IP-adress, det villa om den adress som e-postservern använder för att identifiera sig på Internet, har taggats som ett potentiellt hot mot Microsoft 365 av olika anledningar. När Microsoft 365 lägger till IP-adressen i listan förhindrar det all ytterligare kommunikation mellan IP-adressen och någon av våra kunder via våra datacenter.
 
 Du vet att du har lagts till i listan när du får ett svar på ett e-postmeddelande som innehåller ett felmeddelande som ser ut ungefär så här:
 
@@ -37,7 +37,7 @@ Du vet att du har lagts till i listan när du får ett svar på ett e-postmeddel
 
 där _IP-adressen_ är IP-adressen för den dator där e-postservern körs.
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Så här använder du avlistningsportalen för Office 365 för att ta bort dig själv från listan blockerade avsändare
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Så här använder du avlistningsportalen för att ta bort dig själv från listan över blockerade avsändare
 
 1. Gå till [https://sender.office.com](https://sender.office.com)i en webbläsare .
 
@@ -53,7 +53,7 @@ där _IP-adressen_ är IP-adressen för den dator där e-postservern körs.
 
 5. Klicka på **Avlistnings-IP**i avlistningsportalen .
 
-    När IP-adressen har tagits bort från listan över blockerade avsändare levereras e-postmeddelanden från den IP-adressen till mottagare som använder Office 365. Se därför till att du är säker på att e-post som skickas från den IP-adressen inte kommer att vara stötande eller skadligt. Annars kan IP-adressen blockeras igen.
+    När IP-adressen har tagits bort från listan över blockerade avsändare levereras e-postmeddelanden från den IP-adressen till mottagare som använder Microsoft 365. Se därför till att du är säker på att e-post som skickas från den IP-adressen inte kommer att vara stötande eller skadligt. Annars kan IP-adressen blockeras igen.
 
     > [!NOTE]
     > Det kan ta upp till 24 timmar eller resultaten kan variera kraftigt innan begränsningar tas bort.

@@ -1,5 +1,5 @@
 ---
-title: Förstå din faktura för Office 365 för företag
+title: Förstå din faktura för Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Lär dig hur du tolkar debiterings-, fakturerings- och betalningsinformationen på din Office 365 för företagsfaktura och hur du ändrar inköpsordernumret.
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Lär dig hur du tolkar debiterings-, fakturerings- och betalningsinformationen på din Microsoft 365 för företagsfaktura och hur du ändrar inköpsordernumret.
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142305"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634974"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>Förstå din faktura för Office 365 för företag
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Förstå din faktura för Microsoft 365 för företag
 
 Varje månad får du ett e-postmeddelande som talar om att ditt nya faktureringsutdrag är tillgängligt i administrationscentret. [Läs mer om hur du hittar och visar fakturan](view-your-bill-or-invoice.md).
   
@@ -138,6 +138,6 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Betala för prenumerationen på Office 365 för företag](pay-for-your-subscription.md)
+[Betala för din Microsoft 365 för företag-prenumeration](pay-for-your-subscription.md)
 
 [Betalningsalternativ för Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)

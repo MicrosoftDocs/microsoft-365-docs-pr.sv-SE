@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratörer kan lära sig mer om hur du använder S/MIME i Exchange Online.
-ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42806463"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634334"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME för signering och kryptering av meddelanden i Exchange Online
 
@@ -58,9 +58,9 @@ Att konfigurera S/MIME för Exchange Online med Outlook på webben innebär föl
 
 1. [Konfigurera S/MIME-inställningar för Outlook på webben](configure-s-mime-settings-for-outlook-web-app.md)
 
-2. [Konfigurera virtuell certifikatsamling för att validera S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
+2. [Konfigurera en virtuell certifikatsamling för att verifiera S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
 
-3. [Synkronisera användarcertifikat till Office 365 för S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
+3. [Synkronisera användarcertifikat med Office 365 för S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 
 ## <a name="related-message-encryption-technologies"></a>Relaterade meddelandekrypteringstekniker
 
@@ -68,7 +68,7 @@ När meddelandesäkerhet blir viktigare måste administratörer förstå princip
 
 - **TLS (Transport Layer Security)** krypterar tunneln eller rutten mellan e-postservrar för att förhindra snokande och avlyssning.
 
-- **SSL (Secure Sockets Layer)** krypterar anslutningen mellan e-postklienter och Office 365-servrar.
+- **SSL (Secure Sockets Layer)** krypterar anslutningen mellan e-postklienter och Microsoft 365-servrar.
 
 - **BitLocker** krypterar data på en hårddisk i ett datacenter så att om någon får obehörig åtkomst kan de inte läsa dem.
 

@@ -1,5 +1,5 @@
 ---
-title: Köpa en annan Office 365 för företag-prenumeration
+title: Köp en annan Microsoft 365 för företag-prenumeration
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: 'Läs om hur du köper en annan Office 365 för företag-prenumeration för din organisation när du redan har en prenumeration. '
+description: 'Läs om hur du köper en annan Microsoft 365 för företag-prenumeration för din organisation när du redan har en prenumeration. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142269"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634938"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>Köpa en annan Office 365 för företag-prenumeration
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>Köp en annan Microsoft 365 för företag-prenumeration
 
-Om du redan har en Office 365 för företag-prenumeration och vill köpa en annan prenumeration för din organisation är det bästa sättet att göra det via administrationscentret. Om du ännu inte har köpt den första Office 365 för företag-prenumerationen för din organisation går [du hit](https://products.office.com/business/compare-office-365-for-business-plans) för att välja ett abonnemang.
+Om du redan har en Prenumeration på Microsoft 365 för företag och vill köpa en annan prenumeration för din organisation är det bästa sättet att göra det via administrationscentret. Om du ännu inte har köpt den första Microsoft 365 för företag-prenumerationen för din organisation går [du hit](https://products.office.com/business/compare-office-365-for-business-plans) för att välja ett abonnemang.
   
 När du köper en annan prenumeration via administrationscentret är du garanterad att den nya prenumerationen associeras med samma organisation (domännamnsutrymme) som din befintliga prenumeration. Detta gör det enklare att flytta användare inom organisationen mellan prenumerationer eller tilldela dem en användarlicens för den ytterligare prenumeration de behöver.
   
-När du har köpt en ny prenumeration måste du tilldela de användare som du vill använda prenumerationen en användarlicens för den. Mer information finns i [Tilldela licenser till användare i Office 365 för företag](../admin/manage/assign-licenses-to-users.md).
+När du har köpt en ny prenumeration måste du tilldela de användare som du vill använda prenumerationen en användarlicens för den. Mer information om hur du gör finns [i Tilldela licenser till användare i Microsoft 365 för företag](../admin/manage/assign-licenses-to-users.md).
   
 ## <a name="buy-another-subscription"></a>Köpa en annan prenumeration
 
 ::: moniker range="o365-worldwide"
+
 
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
 

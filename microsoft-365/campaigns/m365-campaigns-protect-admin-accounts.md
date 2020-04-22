@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du konfigurerar och skyddar administratörskontona.
-ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42807634"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633659"
 ---
 # <a name="protect-your-administrator-accounts"></a>Skydda dina administratörskonton
 
@@ -35,12 +35,12 @@ Eftersom administratörskonton levereras med förhöjda privilegier är de värd
 - Så här konfigurerar du ytterligare ett administratörskonto för nödsituationer.
 - Hur man skyddar dessa konton.
  
-När du registrerar dig för Microsoft 365 Business och anger din information blir du automatiskt global administratör. En global administratör har den ultimata kontrollen över användarkonton och alla andra inställningar i Microsofts administrationscenter, men det finns många olika typer av administratörskonton med varierande grad av åtkomst. Mer information om de olika åtkomstnivåerna för varje typ av administratörsroll finns i [om administratörsrollen.](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
+När du registrerar dig för Microsoft 365 och anger din information blir du automatiskt global administratör. En global administratör har den ultimata kontrollen över användarkonton och alla andra inställningar i Microsofts administrationscenter, men det finns många olika typer av administratörskonton med varierande grad av åtkomst. Mer information om de olika åtkomstnivåerna för varje typ av administratörsroll finns i [om administratörsrollen.](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
 
 
 ## <a name="create-additional-admin-accounts"></a>Skapa ytterligare administratörskonton
 
-Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för regelbunden användning av Office-appar och endast använda sitt administrativa konto när det behövs för att hantera konton och enheter och när du arbetar med andra administratörsfunktioner. Det är också en bra idé att ta bort Microsoft 365 Business-licensen från administratörskontona så att du inte behöver betala för dem.
+Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för regelbunden användning av Office-appar och endast använda sitt administrativa konto när det behövs för att hantera konton och enheter och när du arbetar med andra administratörsfunktioner. Det är också en bra idé att ta bort Microsoft 365-licensen från administratörskontona så att du inte behöver betala för dem.
 
 Du bör konfigurera minst ett ytterligare globalt administratörskonto för att ge administratörsåtkomst till en annan betrodd medarbetare. Du kan också skapa separata administratörskonton för användarhantering (den här rollen kallas **Administratör för användarhantering**). Mer information finns i [om administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 

@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: de vanligaste hot- och attackscenarierna som för närvarande möter organisationer för sina Microsoft 365-miljöer och rekommenderade åtgärder för att minska dessa risker.
-ms.openlocfilehash: d03593059d473e96768e6dc3b2246fcda2ebc999
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ed147bd2ac01e2f7a0581ac18542467e40d84ddb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806055"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638530"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Beslutsfattare för säkerhet för företag (BDMs)
 
@@ -29,17 +29,17 @@ Den här artikeln är ordnad efter prioritet för arbete, som börjar med att sk
 
 Microsoft ger dig verktyget Säker poäng i din klientorganisation för att automatiskt analysera din säkerhetsposition baserat på dina vanliga aktiviteter, tilldela en poäng och ge rekommendationer för säkerhetsförbättringar. Innan du vidtar de åtgärder som rekommenderas i den här artikeln bör du ta del av din aktuella poäng och dina rekommendationer. De åtgärder som rekommenderas i den här artikeln kommer att öka din poäng. Målet är inte att uppnå maxpoäng, utan att vara medveten om möjligheterna att skydda din miljö på ett sätt som inte negativt påverkar produktiviteten för användarna. Se [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
-En sak till innan vi börjar. . . se till att [aktivera granskningsloggen för Office 365](../compliance/search-the-audit-log-in-security-and-compliance.md). Du behöver dessa data senare, i händelse av att du behöver undersöka en incident eller ett brott. 
+En sak till innan vi börjar. . . se till att [aktivera granskningsloggen](../compliance/search-the-audit-log-in-security-and-compliance.md). Du behöver dessa data senare, i händelse av att du behöver undersöka en incident eller ett brott. 
 
 ## <a name="protect-privileged-accounts"></a>Skydda privilegierade konton
 
-Som ett första steg rekommenderar vi att säkerställa att kritiska konton i miljön får ett extra skyddslager eftersom dessa konton har åtkomst och behörighet att hantera och ändra kritiska tjänster och resurser som kan påverka hela organisationen negativt. om äventyras. Att skydda privilegierade konton är ett av de mest effektiva sätten att skydda mot en angripare som försöker höja behörigheterna för ett komprometterat konto till ett administrativt konto. 
+Som ett första steg rekommenderar vi att du ser till att kritiska konton i miljön får ett extra skyddslager eftersom dessa konton har åtkomst och behörighet att hantera och ändra kritiska tjänster och resurser som kan påverka hela organisationen negativt om de äventyras. Att skydda privilegierade konton är ett av de mest effektiva sätten att skydda mot en angripare som försöker höja behörigheterna för ett komprometterat konto till ett administrativt konto. 
 
 |Rekommendation  |E3 (på andra sätt) |E5  |
 |---------|---------|---------|
 |Framtvinga MFA (Multi Factor Authentication) för alla administrativa konton.|![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)| 
 |Implementera Azure Active Directory (Azure AD) Privilegierad identitetshantering (PIM) för att tillämpa privilegierad åtkomst till Azure AD- och Azure-resurser. Du kan också upptäcka vem som har åtkomst och granskning av privilegierad åtkomst.|         | ![grön bock](../media/green-check-mark.png)|
-|Implementera hantering av privilegierad åtkomst i Office 365 för att hantera detaljerad åtkomstkontroll över privilegierade administratörsuppgifter i Office 365. |         | ![grön bock](../media/green-check-mark.png)|
+|Implementera hantering av privilegierad åtkomst för att hantera detaljerad åtkomstkontroll över privilegierade administratörsuppgifter i Office 365. |         | ![grön bock](../media/green-check-mark.png)|
 |Konfigurera och använd PAW (Privileged Access Workstations) för att administrera tjänster. Använd inte samma arbetsstationer för att surfa på Internet och kontrollera e-post som inte är relaterade till ditt administrativa konto.|  ![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png) | 
 
 Följande diagram illustrerar dessa funktioner.
@@ -78,13 +78,13 @@ Följande diagram illustrerar dessa funktioner.
 
 ## <a name="protect-against-unknown-threats"></a>Skydda mot okända hot
 
-När du har lagt till extra skydd i dina privilegierade konton och skyddat mot kända attacker kan du flytta din uppmärksamhet till att skydda mot okända hot. De mer beslutsamma och avancerade motståndarna använder innovativa och nya, okända metoder för att attackera organisationer. Med Microsofts stora telemetri med data som samlats in över miljarder enheter, program och tjänster kan vi utföra avancerat skydd mot hot i Windows, Office 365 och Azure för att förhindra attacker från Zero Day, använda sandbox-miljöer och kontrollera giltigheten innan du ger tillgång till ditt innehåll. 
+När du har lagt till extra skydd i dina privilegierade konton och skyddat mot kända attacker kan du flytta din uppmärksamhet till att skydda mot okända hot. De mer beslutsamma och avancerade motståndarna använder innovativa och nya, okända metoder för att attackera organisationer. Med Microsofts stora telemetri med data som samlats in över miljarder enheter, program och tjänster kan vi utföra avancerat skydd mot hot i Windows, Office 365 och Azure för att förhindra attacker från Zero Day, använda sandlådemiljöer och kontrollera giltigheten innan du tillåter åtkomst till ditt innehåll. 
 
 
 |Rekommendation  |E3 (på andra sätt)  |E5  |
 |---------|---------|---------|
-|**Konfigurera Office 365 Advanced Threat Protection (ATP):**<br>• ATP säkra bilagor<br>• ATP säkra länkar<br>• ATP för SharePoint, OneDrive och Microsoft Teams<br>• ATP-skydd mot nätfiske|         |![grön bock](../media/green-check-mark.png) |
-|**Konfigurera funktioner för avancerat hotskydd för Microsoft Defender:**<br>• Windows Defender Antivirus <br>• Utnyttja skyddet <br> • Minskning av angreppsytan <br> • Maskinvarubaserad isolering <br>• Kontrollerad mappåtkomst     |         |![grön bock](../media/green-check-mark.png) |
+|**Konfigurera Office 365 Advanced Threat Protection (ATP):**<br>* ATP säkra bilagor<br>* ATP säkra länkar<br>* ATP för SharePoint, OneDrive och Microsoft Teams<br>* ATP anti-phishing skydd|         |![grön bock](../media/green-check-mark.png) |
+|**Konfigurera funktioner för avancerat hotskydd för Microsoft Defender:**<br>* Windows Defender Antivirus <br>* Utnyttja skydd <br> * Attack yta minskning <br> * Hårdvarubaserad isolering <br>* Kontrollerad mappåtkomst     |         |![grön bock](../media/green-check-mark.png) |
 |**Använd Microsoft Cloud App Security** för att identifiera SaaS-appar och börja använda beteendeanalys och avvikelseidentifiering. |         |![grön bock](../media/green-check-mark.png) |
 
 Följande diagram illustrerar dessa funktioner.
@@ -93,9 +93,9 @@ Följande diagram illustrerar dessa funktioner.
 Ytterligare rekommendationer:
 - Säker partnerkanalkommunikation som e-post med TLS.
 - Öppna Teams Federation endast till partners som du kommunicerar med.
-- Vitlista inte avsändare domäner, enskilda avsändare eller källa IP-adresser eftersom detta gör att dessa för att kringgå spam och malware kontroller - En vanlig praxis med kunder är vitlistning sina egna accepterade domäner eller ett antal andra domäner där e-postflöde frågor kan ha varit Rapporterade. Lägg inte till domäner i listan Skräppost- och anslutningsfiltrering eftersom detta potentiellt kringgår alla skräppostkontroller. 
+- Vitlista inte avsändare domäner, enskilda avsändare eller källa IP-adresser eftersom detta gör att dessa för att kringgå spam och malware kontroller - En vanlig praxis med kunder är vitlistning sina egna accepterade domäner eller ett antal andra domäner där e-postflödesproblem kan ha rapporterats. Lägg inte till domäner i listan Skräppost- och anslutningsfiltrering eftersom detta potentiellt kringgår alla skräppostkontroller. 
 - Aktivera meddelanden om skräppost för utgående skräppost – Aktivera utgående skräppostmeddelanden till en distributionslista internt till helpdesken eller IT-administratörsteamet för att rapportera om någon av de interna användarna skickar ut skräppost externt. Detta kan vara en indikator på att kontot har komprometterats.
-- Inaktivera Remote PowerShell för alla användare – Remote PowerShell används huvudsakligen av administratörer för att komma åt Office 365-tjänster för administrativa ändamål eller programmatisk API-åtkomst. Vi rekommenderar att du inaktiverar det här alternativet för användare som inte är administratörer för att undvika spaning om de inte har ett affärskrav för att komma åt det. 
+- Inaktivera Remote PowerShell för alla användare – Remote PowerShell används huvudsakligen av administratörer för att komma åt tjänster för administrativa ändamål eller programmatisk API-åtkomst. Vi rekommenderar att du inaktiverar det här alternativet för användare som inte är administratörer för att undvika spaning om de inte har ett affärskrav för att komma åt det. 
 - Blockera åtkomst till Microsoft Azure Management-portalen för alla icke-administratörer. Du kan åstadkomma detta genom att skapa en villkorlig åtkomstregel för att blockera alla användare, med undantag för administratörer. 
 
 
@@ -115,9 +115,9 @@ Microsoft 365-funktioner för informationsskydd kan hjälpa dig att ta reda på 
 |**Granska och optimera din villkorliga åtkomst och relaterade principer för att anpassa sig till dina mål för ett nätverk med noll förtroende**. Att skydda mot kända hot omfattar att implementera en uppsättning [rekommenderade principer](../enterprise/microsoft-365-policies-configurations.md). Granska implementeringen av dessa policyer för att se till att du skyddar dina appar och data mot hackare som har fått åtkomst till nätverket. Observera att den rekommenderade Intune-appskyddsprincipen för Windows 10 aktiverar Pågående arbete med Windows-informationsskydd. Pia skyddar mot oavsiktliga läckor av organisationens data via appar och tjänster, som e-post, sociala medier och det offentliga molnet. |         |![grön bock](../media/green-check-mark.png)|
 |**Inaktivera extern vidarebefordran av e-post**. Hackare som får tillgång till en användares postlåda kan stjäla din e-post genom att ställa in postlådan för att automatiskt vidarebefordra e-post. Detta kan hända även utan användarens medvetenhet. Du kan förhindra att detta händer genom att konfigurera en regel för e-postflöde.|![grön bock](../media/green-check-mark.png) |![grön bock](../media/green-check-mark.png)|
 |**Inaktivera anonym extern kalenderdelning**. Som standard tillåts extern anonym kalenderdelning. [Inaktivera kalenderdelning](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy) för att minska potentiella läckor av känslig information.|![grön bock](../media/green-check-mark.png) |![grön bock](../media/green-check-mark.png)|
-|**Konfigurera principer för att förhindra dataförlust för känsliga data**. Skapa en policy för att förhindra dataförlust i säkerhets- och efterlevnadscentret för Office 365 för att identifiera och skydda känsliga data som kreditkortsnummer, personnummer och bankkontonummer. Office 365 innehåller många fördefinierade känsliga informationstyper som du kan använda i principer för att förhindra dataförlust. Du kan också skapa egna känsliga informationstyper för känsliga data som är anpassade till din miljö. |![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)|
-|**Implementera principer för dataklassificering och informationsskydd**. Implementera känslighetsetiketter i Office 365 och använd dessa för att klassificera och tillämpa skydd för känsliga data. Du kan också använda dessa etiketter i principer för att förebygga dataförlust. Om du använder Azure Information Protection-etiketter rekommenderar vi att du undviker att skapa nya etiketter i andra administrationscenter.|         |![grön bock](../media/green-check-mark.png)|
-|**Skydda data i appar och tjänster från tredje part med hjälp av Cloud App Security**. Konfigurera säkerhetsprinciper för Molnappar för att skydda känslig information i molnappar från tredje part, till exempel Salesforce, Box eller Dropbox. Du kan använda känsliga informationstyper och känslighetsetiketter som du skapade i Office 365 i Cloud App Security-principer och tillämpa dessa i dina SaaS-appar. <br><br>Med Microsoft Cloud App Security kan du tillämpa ett brett spektrum av automatiserade processer. Principer kan ställas in för att tillhandahålla kontinuerliga efterlevnadssökningar, juridiska eDiscovery-uppgifter, DLP för känsligt innehåll som delas offentligt med mera. Cloud App Security kan övervaka alla filtyper baserat på mer än 20 metadatafilter (till exempel åtkomstnivå, filtyp). |         |![grön bock](../media/green-check-mark.png)|
+|**Konfigurera principer för att förhindra dataförlust för känsliga data**. Skapa en policy för att &amp; förhindra dataförlust i centern för säkerhetsefterlevnad för att identifiera och skydda känsliga data som kreditkortsnummer, personnummer och bankkontonummer. Microsoft 365 innehåller många fördefinierade känsliga informationstyper som du kan använda i principer för att förhindra dataförlust. Du kan också skapa egna känsliga informationstyper för känsliga data som är anpassade till din miljö. |![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)|
+|**Implementera principer för dataklassificering och informationsskydd**. Implementera känslighetsetiketter och använd dessa för att klassificera och tillämpa skydd för känsliga data. Du kan också använda dessa etiketter i principer för att förebygga dataförlust. Om du använder Azure Information Protection-etiketter rekommenderar vi att du undviker att skapa nya etiketter i andra administrationscenter.|         |![grön bock](../media/green-check-mark.png)|
+|**Skydda data i appar och tjänster från tredje part med hjälp av Cloud App Security**. Konfigurera säkerhetsprinciper för Molnappar för att skydda känslig information i molnappar från tredje part, till exempel Salesforce, Box eller Dropbox. Du kan använda känsliga informationstyper och känslighetsetiketter som du har skapat i Cloud App Security-principer och tillämpa dessa i dina SaaS-appar. <br><br>Med Microsoft Cloud App Security kan du tillämpa ett brett spektrum av automatiserade processer. Principer kan ställas in för att tillhandahålla kontinuerliga efterlevnadssökningar, juridiska eDiscovery-uppgifter, DLP för känsligt innehåll som delas offentligt med mera. Cloud App Security kan övervaka alla filtyper baserat på mer än 20 metadatafilter (till exempel åtkomstnivå, filtyp). |         |![grön bock](../media/green-check-mark.png)|
 |**Använd [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview) för att identifiera om användare lagrar känslig information på sina Windows-enheter**. |         |![grön bock](../media/green-check-mark.png)|
 |**Använd [AIP Scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) för att identifiera och klassificera information mellan servrar och filresurser**. Använd AIP-rapporteringsverktyget för att visa resultaten och vidta lämpliga åtgärder.|         |![grön bock](../media/green-check-mark.png)|
 
@@ -126,15 +126,15 @@ Följande diagram illustrerar dessa funktioner.
 
 ## <a name="continuous-monitoring-and-auditing"></a>Kontinuerlig övervakning och revision
 
-Sist men inte minst Kontinuerlig övervakning och granskning av Microsoft 365-miljön tillsammans med Windows och enheter är avgörande för att du snabbt ska kunna upptäcka och åtgärda eventuella intrång. Verktyg som Secure Score, Security Center och Microsoft Intelligent Graph avancerade analyser ger ovärderlig information till din klientorganisation och länkar enorma mängder hotinformation och säkerhetsdata för att ge dig ett oöverträffat hotskydd och detektion.
+Sist men inte minst Kontinuerlig övervakning och granskning av Microsoft 365-miljön tillsammans med Windows och enheter är avgörande för att du snabbt ska kunna upptäcka och åtgärda eventuella intrång. Verktyg som Secure Score, Security Center och Microsoft Intelligent Graph avancerade analyser ger ovärderlig information till din klientorganisation och länkar enorma mängder hotinformation och säkerhetsdata för att ge dig oöverträffad hotskydd och upptäckt.
 
 
 |Rekommendation |E3 (på andra sätt) |E5 |
 |---------|---------|---------|
-|Kontrollera att **granskningsloggen för Office 365** är aktiverad.|![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)|
-|**Granska säker poäng varje vecka** – Säker poäng är en central plats för åtkomst till säkerhetsstatusen för din Office 365-klientorganisation och vidta åtgärder baserat på rekommendationer om säkra poäng. Vi rekommenderar att du utför denna kontroll varje vecka.|![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)|
-|Använda **Office 365 ATP-verktyg:**<br>• Hotutrednings- och insatsförmåga<br> • Automatiserad utredning och respons |         |![grön bock](../media/green-check-mark.png)|
-|Använd **Microsoft Defender ATP:**<br> • [Identifiering och svar på slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> • Automatiserad undersökning och sanering Säker poäng <br>• [Avancerad jakt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![grön bock](../media/green-check-mark.png)|
+|Kontrollera att **granskningsloggen** är aktiverad.|![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)|
+|**Granska Secure Score varje vecka** – Secure score är en central plats för att komma åt säkerhetsstatusen för ditt företag och vidta åtgärder baserat på rekommendationer om säkra poäng. Vi rekommenderar att du utför denna kontroll varje vecka.|![grön bock](../media/green-check-mark.png)|![grön bock](../media/green-check-mark.png)|
+|Använda **Office 365 ATP-verktyg:**<br>* Hot utredning och svar kapacitet<br> * Automatiserad utredning och svar |         |![grön bock](../media/green-check-mark.png)|
+|Använd **Microsoft Defender ATP:**<br> *    [Identifiering och svar för slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> * Automatiserad undersökning och sanering Säker poäng <br>*    [Avancerad jakt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![grön bock](../media/green-check-mark.png)|
 |Använd **Microsoft Cloud App Security** för att identifiera ovanliga beteenden i molnappar för att identifiera ransomware, komprometterade användare eller oseriösa program, analysera högriskanvändning och åtgärda automatiskt för att begränsa risken för din organisation.|         |![grön bock](../media/green-check-mark.png)|
 |Använd **Microsoft Azure Sentinel** eller ditt nuvarande SIEM-verktyg för att övervaka hot i hela din miljö. |         |![grön bock](../media/green-check-mark.png)|
 |**Distribuera [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ** för att övervaka och skydda mot hot som riktas mot din lokala Active Directory-miljö.   |         |![grön bock](../media/green-check-mark.png) |
@@ -144,6 +144,6 @@ Följande diagram illustrerar dessa funktioner.
 ![Rekommenderade funktioner för kontinuerlig övervakning och granskning](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 De vanligaste rekommenderade övervakningsåtgärderna:
-- **Granska Microsoft Secure Score varje vecka** – Secure-poängen är en central plats för att komma åt säkerhetsstatusen för din Office 365-klientorganisation och vidta åtgärder baserat på de bästa rekommendationerna. Vi rekommenderar att du utför denna kontroll varje vecka. Secure Score innehåller rekommendationer från hela Azure AD, Intune, Cloud App Security och Microsoft Defender Advanced Threat Protection samt Office 365. 
+- **Granska Microsoft Secure Score varje vecka** – Secure-poängen är en central plats för att komma åt din klient klientens säkerhetsstatus och vidta åtgärder baserat på de bästa rekommendationerna. Vi rekommenderar att du utför denna kontroll varje vecka. Secure Score innehåller rekommendationer från hela Azure AD, Intune, Cloud App Security och Microsoft Defender Advanced Threat Protection samt Office 365. 
 - **Granska riskfyllda inloggningar varje vecka** – Använd Azure AD-administrationscentret för att granska riskfyllda inloggningar varje vecka. Den rekommenderade identitets- och enhetsåtkomstregleruppsättningen innehåller en princip för att tillämpa lösenordsändring vid riskfyllda inloggningar.  
 - **Granska topp malware och phished användare varje vecka** - Använd Office Advanced Threat Protection Threat Explorer för att granska toppanvändare riktade med skadlig kod och phish och ta reda på orsaken till varför dessa användare påverkas.

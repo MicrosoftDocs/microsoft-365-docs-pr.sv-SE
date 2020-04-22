@@ -22,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig skillnaderna mellan hantering av mobila enheter och hantering av mobilappar eller MDM och MAM.
-ms.openlocfilehash: 590dc9522be7adc9c24c61091928133fb13d9027
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ecb06ffc23823df72f9254d881f6b1dc1b781f59
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811871"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635034"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Skillnad mellan MDM och MAM
 
-Microsoft 365 Business erbjuder ett antal sätt för dig att skydda dina affärsdata. Se [Översikt över Microsoft 365 Business](../microsoft-365-business-overview.md) för mer information om de olika skydd som konfigureras automatiskt och vad du kan ställa in själv för att ytterligare skydda ditt företag. Du kan också ställa in principer som skyddar dina Windows 10-enheter och data på dina mobila enheter.
+Microsoft 365 Business Premium erbjuder ett antal sätt för dig att skydda dina affärsdata. Se [Översikt över Microsoft 365 Business Premium](../microsoft-365-business-overview.md) för mer information om de olika skydd som konfigureras automatiskt och vad du kan ställa in själv för att ytterligare skydda ditt företag. Du kan också ställa in principer som skyddar dina Windows 10-enheter och data på dina mobila enheter.
 [Ange inställningar för programskydd för Windows 10-enheter](../protection-settings-for-windows-10-devices.md).
 
 ## <a name="mobile-device-management-or-mdm"></a>Hantering av mobila enheter eller MDM
 
-Med Microsoft 365 Business kan du ställa in principer som skyddar data på dina Windows 10-enheter. När en enhet är under hantering av mobila enheter styr du hela enheten och kan rensa data från den och även återställa den till fabriksinställningarna. Mer information finns i [Ange inställningar för enhetsskydd för Windows 10-datorer](../protection-settings-for-windows-10-pcs.md).
+Med Microsoft 365 Business Premium kan du ställa in principer som skyddar data på dina Windows 10-enheter. När en enhet är under hantering av mobila enheter styr du hela enheten och kan rensa data från den och även återställa den till fabriksinställningarna. Mer information finns i [Ange inställningar för enhetsskydd för Windows 10-datorer](../protection-settings-for-windows-10-pcs.md).
 
 ## <a name="mobile-application-management-or-mam"></a>Hantering av mobilapplikationer eller MAM
 

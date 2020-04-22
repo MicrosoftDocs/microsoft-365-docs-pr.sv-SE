@@ -1,5 +1,5 @@
 ---
-title: Metodtips för att konfigurera EOP och Office 365 ATP
+title: Metodtips för att konfigurera EOP och ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna om bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel.
-ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528623"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638542"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Metodtips för att konfigurera EOP och Office 365 ATP
+# <a name="best-practices-for-configuring-eop-and-atp"></a>Metodtips för att konfigurera EOP och ATP
 
 Följ de här rekommendationerna om bästa praxis för Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel. Det här avsnittet förutsätter att du redan har slutfört installationsprocessen. Om du inte har slutfört EOP-installationen läser du [Konfigurera din EOP-tjänst](set-up-your-eop-service.md).
 
@@ -41,7 +41,7 @@ De här inställningarna täcker en rad funktioner som ligger utanför säkerhet
 
 |Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---------|---------|---------|---------|
-|[Konfigurera SPF i Office 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Ja|Ja||
+|[Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Ja|Ja||
 |[Använd DKIM för att validera utgående e-post som skickas från din egna domän i Office 365](use-dkim-to-validate-outbound-email.md)|Ja|Ja||
 |[Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md)|Ja|Ja|Använd action=karantän för Standard och action=reject för Strict.|
 |Distribuera tillägg till rapportmeddelande för att förbättra slutanvändarens rapportering av misstänkta e-postmeddelanden|Ja|Ja||
@@ -63,7 +63,7 @@ Felsöka allmänna problem och trender med hjälp av rapporterna i administratio
 
 ## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Rapportera falska positiva och falska negativ till Microsoft
 
-För att förbättra skräppostfiltrering i tjänsten för alla, bör du rapportera falska positiva (bra e-post markerad som dålig) och falska negativ (dålig e-post tillåten) till Microsoft för analys. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+För att förbättra skräppostfiltrering i tjänsten för alla, bör du rapportera falska positiva (bra e-post markerad som dålig) och falska negativ (dålig e-post tillåten) till Microsoft för analys. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Skapa regler för e-postflöde
 

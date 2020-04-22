@@ -1,5 +1,5 @@
 ---
-title: Funktioner för utredning och svar om hot i Office 365 i Office 365 Advanced Threat Protection Plan 2
+title: Hotutrednings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,24 +16,23 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: Ta reda på hur hotinformationsfunktioner i Office 365 Advanced Threat Protection kan hjälpa dig att undersöka hot mot din organisation, svara på skadlig kod, nätfiske och andra attacker som Office 365 har upptäckt för din räkning och söka efter hotindikatorer.
-ms.openlocfilehash: 6df1eaab48d15565e1740c46cacee7f87c392292
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Ta reda på hur hotinformationsfunktioner i Office 365 Advanced Threat Protection kan hjälpa dig att undersöka hot mot din organisation, svara på skadlig kod, nätfiske och andra attacker som Microsoft 365 har upptäckt för din räkning och söka efter hotindikatorer.
+ms.openlocfilehash: 9d89e84cc50b82b8cc5f2fe4e0e5ad6f4f85b091
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528575"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634526"
 ---
-# <a name="office-365-threat-investigation-and-response"></a>Office 365 undersökning av hot och svar
+# <a name="threat-investigation-and-response"></a>Hotutredning och hothantering
 
-Hotutrednings- och svarsfunktioner i [Office 365 Advanced Threat Protection](office-365-atp.md) hjälper säkerhetsanalytiker och administratörer att skydda organisationens Office 365-användare genom att:
-
+Hotutrednings- och svarsfunktioner i [Office 365 Advanced Threat Protection](office-365-atp.md) hjälper säkerhetsanalytiker och administratörer att skydda organisationens Microsoft 365 för företagsanvändare genom att:
 - Gör det enkelt att identifiera, övervaka och förstå cyberattacker
 - Hjälper till att snabbt hantera hot i Exchange Online, SharePoint Online, OneDrive för företag och Microsoft Teams
 - Ge insikter och kunskap för att hjälpa säkerhetsoperationer att förhindra cyberattacker mot deras organisation
 - Använda [automatiserad undersökning och svar i Office 365](automated-investigation-response-office.md) för kritiska e-postbaserade hot
-
-Hotutrednings- och svarsfunktioner ger insikter om hot och relaterade svarsåtgärder som är tillgängliga i Office 365 Security & Compliance Center. De här insikterna kan hjälpa organisationens säkerhetsteam att skydda Office 365-användare från e-post- eller filbaserade attacker. Funktionerna hjälper till att övervaka signaler och samla in data från flera källor, till exempel användaraktivitet, autentisering, e-post, komprometterade datorer och säkerhetsincidenter. Beslutsfattare och ditt säkerhetsoperationsteam kan använda den här informationen för att förstå och svara på hot mot din organisation och skydda dina immateriella rättigheter.
+    
+Hotutrednings- och svarsfunktioner ger insikter om hot och relaterade &amp; svarsåtgärder som är tillgängliga i Security Compliance Center. Dessa insikter kan hjälpa organisationens säkerhetsteam att skydda användare från e-post- eller filbaserade attacker. Funktionerna hjälper till att övervaka signaler och samla in data från flera källor, till exempel användaraktivitet, autentisering, e-post, komprometterade datorer och säkerhetsincidenter. Beslutsfattare och ditt säkerhetsoperationsteam kan använda den här informationen för att förstå och svara på hot mot din organisation och skydda dina immateriella rättigheter.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Bekanta dig med verktyg för utredning av hot och svar
 
@@ -47,20 +46,20 @@ Hotutrednings- och svarsfunktioner visas i Security & Compliance Center, som en 
 
 ### <a name="threat-dashboard"></a>Instrumentpanel för hot
 
-Använd instrumentpanelen För hot (detta kallas även [instrumentpanelen för säkerhet)](security-dashboard.md)för att snabbt se vilka hot som har åtgärdats och som ett visuellt sätt att rapportera till beslutsfattare för företag hur Office 365-tjänster skyddar ditt företag.
-
+Använd instrumentpanelen för hot (detta kallas även [instrumentpanelen för säkerhet)](security-dashboard.md)för att snabbt se vilka hot som har åtgärdats och som ett visuellt sätt att rapportera till beslutsfattare för företag hur Microsoft 365-tjänster skyddar ditt företag.
+  
 ![Instrumentpanel för hot](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-
-Om du vill visa och använda den här instrumentpanelen går du till **instrumentpanelen** **för hothantering** \> i Office 365 Security & Compliance Center .
-
+  
+Om du vill visa och &amp; använda den här instrumentpanelen går du till **instrumentpanelen** **för hothantering** \> i Säkerhetsefterlevnadscenter .
+  
 ### <a name="threat-explorer"></a>Hotutforskaren
 
 Använd [Threat Explorer (och realtidsidentifieringar)](threat-explorer.md) för att analysera hot, se mängden attacker över tid och analysera data efter hotfamiljer, angripares infrastruktur med mera. Threat Explorer (kallas även Explorer) är startplatsen för alla säkerhetsanalytikers undersökningsarbetsflöde.
 
 ![Hot explorer](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-
-Om du vill visa och använda den här rapporten går du till Explorer för **hothantering** \> i Office 365 Security & Compliance Center **.**
-
+  
+Om du vill visa och &amp; använda den här rapporten går du till Explorer för hothantering i **Säkerhetsefterlevnadscenter** \> **Explorer**.
+  
 ### <a name="incidents"></a>Incidenter
 
 Använd listan Incidenter (detta kallas även Utredningar) för att se en lista över i flygsäkerhetsincidenter. Incidenter används för att spåra hot som misstänkta e-postmeddelanden och för att undersöka och åtgärda ytterligare.
@@ -87,26 +86,27 @@ Som en del av Office 365 Advanced Threat Protection Plan 2-erbjudandet kan säke
 
 ## <a name="how-do-we-get-these-capabilities"></a>Hur får vi dessa möjligheter?
 
-Funktioner för utredning och svar av hot i Office 365 ingår i Office 365 Advanced Threat Protection Plan 2, som ingår i Enterprise E5 eller som ett tillägg till vissa prenumerationer. Mer information finns i [Office 365 ATP Plan 1 och Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+Microsoft 365-funktioner för hotundersökning och hothantering ingår i Office 365 Advanced Threat Protection Plan 2, som ingår i Enterprise E5 eller som ett tillägg till vissa prenumerationer. Mer information finns i [Office 365 ATP Plan 1 och Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="required-roles-and-permissions"></a>Obligatoriska roller och behörigheter
 
-Med office 365 Advanced Threat Protection används rollbaserad åtkomstkontroll. Behörigheter tilldelas via vissa roller i Azure Active Directory, Microsoft 365-administrationscentret eller Office 365 Security & Compliance Center.
+Med office 365 Advanced Threat Protection används rollbaserad åtkomstkontroll. Behörigheter tilldelas via vissa roller i Azure Active Directory, Microsoft 365 admincenter eller Security & Compliance Center.
 
 > [!TIP]
-> Även om vissa roller, till exempel säkerhetsadministratör, kan tilldelas i Office 365 Security & Compliance Center kan du överväga att använda antingen Microsoft 365-administrationscentret eller Azure Active Directory i stället. Information om roller, rollgrupper och behörigheter finns i följande resurser: <br/><br/> [Behörigheter i Säkerhetsorganisationscenter för Office 365 &](permissions-in-the-security-and-compliance-center.md)<br/>
-[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+> Även om vissa roller, till exempel säkerhetsadministratör, kan tilldelas i Security & Compliance Center kan du överväga att använda antingen Microsoft 365-administrationscentret eller Azure Active Directory i stället. Information om roller, rollgrupper och behörigheter finns i följande resurser:
+> - [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md)
+> - [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
-|||
-|---|---|
-|**Aktivitet**|**Roller och behörigheter**|
-|Använda instrumentpanelen för hot (eller den nya [säkerhetsinstrumentpanelen)](security-dashboard.md) <br/><br/>Visa information om senaste eller aktuella hot|Något av följande: <br/>- **Global administratör för Office 365**  <br/> - **Säkerhetsadministratör** <br/>- **Säkerhetsläsare** <br/> <br/>Dessa roller kan tilldelas i antingen[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( ) eller[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 admin center ( ).|
-|Använda [Threat Explorer (och realtidsidentifieringar)](threat-explorer.md) för att analysera hot|Något av följande: <br/>- **Global administratör för Office 365**  <br/> - **Säkerhetsadministratör** <br/>- **Säkerhetsläsare** <br/> <br/>Dessa roller kan tilldelas i antingen[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( ) eller[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 admin center ( ).|
-|Visa incidenter (kallas även utredningar) <br/> Lägga till e-postmeddelanden i en incident|Något av följande: <br/>- **Global administratör för Office 365**  <br/> - **Säkerhetsadministratör** <br/>- **Säkerhetsläsare** <br/> <br/>Dessa roller kan tilldelas i antingen[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( ) eller[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 admin center ( ).|
-|Utlösa e-poståtgärder i en incident <br/> <br/> Hitta och ta bort misstänkta e-postmeddelanden|Något av följande: <br/>- **Global administratör för Office 365**  <br/> - **Säkerhetsadministratör** plus rollen **Sök och rensa**<br/><br/>Rollerna **Global administratör** och **säkerhetsadministratör** kan tilldelas i[https://portal.azure.com](https://portal.azure.com)antingen Azure Active Directory ([https://admin.microsoft.com](https://admin.microsoft.com)) eller Microsoft 365 administrationscenter ( ). <br/><br/>Rollen **Sök och rensa** måste tilldelas i Säkerhets- & Compliance Center i[https://protection.office.com](https://protection.office.com)Office 365 ( ).|
-|Integrera Office 365 Advanced Threat Protection Plan 2 med Microsoft Defender Avancerat hotskydd  <br/><br/> Integrera Office 365 Advanced Threat Protection Plan 2 med en SIEM-server|Antingen **den globala office 365-administratören** eller rollen **Säkerhetsadministratör** som tilldelats i Antingen Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) eller Microsoft 365 administrationscenter ([https://admin.microsoft.com](https://admin.microsoft.com)).<br/>--- **Plus** ---<br/>En lämplig roll som tilldelats i ytterligare program (till exempel [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller din SIEM-server)|
-|
 
+|Aktivitet |Roller och behörigheter |  
+|:-----|:-----|
+|Använda instrumentpanelen för hot (eller den nya [säkerhetsinstrumentpanelen)](security-dashboard.md)<br/> <br/>Visa information om senaste eller aktuella hot  <br/> |Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhetsadministratör** <br/>- **Säkerhetsläsare** <br/> <br/>Dessa roller kan tilldelas i antingen[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( ) eller[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 admin center ( ). |
+|Använda [Threat Explorer (och realtidsidentifieringar)](threat-explorer.md) för att analysera hot  <br/> |Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhetsadministratör** <br/>- **Säkerhetsläsare** <br/> <br/>Dessa roller kan tilldelas i antingen[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( ) eller[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 admin center ( ). |
+|Visa incidenter (kallas även utredningar) <br/> Lägga till e-postmeddelanden i en incident  <br/> |Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhetsadministratör** <br/>- **Säkerhetsläsare** <br/> <br/>Dessa roller kan tilldelas i antingen[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( ) eller[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 admin center ( ).  |
+|Utlösa e-poståtgärder i en incident <br/> <br/> Hitta och ta bort misstänkta e-postmeddelanden  <br/> |Något av följande: <br/>- **Global administratör**  <br/> - **Säkerhetsadministratör** plus rollen **Sök och rensa**<br/><br/>Rollerna **Global administratör** och **säkerhetsadministratör** kan tilldelas i[https://portal.azure.com](https://portal.azure.com)antingen Azure Active Directory ([https://admin.microsoft.com](https://admin.microsoft.com)) eller Microsoft 365 administrationscenter ( ). <br/><br/>Rollen **Sök och rensa** måste tilldelas i Security & Compliance[https://protection.office.com](https://protection.office.com)Center ( ). |
+|Integrera Office 365 Advanced Threat Protection Plan 2 med Microsoft Defender Avancerat hotskydd  <br/><br/> Integrera Office 365 Advanced Threat Protection Plan 2 med en SIEM-server  <br/> |Antingen den **globala administratören** eller rollen **Säkerhetsadministratör** som[https://portal.azure.com](https://portal.azure.com)tilldelats i Antingen Azure Active[https://admin.microsoft.com](https://admin.microsoft.com)Directory ( ) eller Microsoft 365 administrationscenter ( ).<br/>--- **Plus** ---<br/>En lämplig roll som tilldelats i ytterligare program (till exempel [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller din SIEM-server)  |
+   
+    
 ## <a name="next-steps"></a>Nästa steg
 
 - [Läs mer om Hot Trackers - Nytt och anmärkningsvärt](threat-trackers.md)

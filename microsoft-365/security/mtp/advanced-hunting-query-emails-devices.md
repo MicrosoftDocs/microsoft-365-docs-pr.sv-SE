@@ -17,21 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928990"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633513"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Jakten på hot på olika enheter och e-postmeddelanden
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
-[Med avancerad jakt](advanced-hunting-overview.md) i Microsoft Threat Protection kan du proaktivt jaga efter hot på dina Windows-enheter och Office 365-e-postmeddelanden. Här är några jaktscenarier och exempelfrågor som kan hjälpa dig att utforska hur du kan skapa frågor som täcker både enheter och e-postmeddelanden.
+[Med avancerad jakt](advanced-hunting-overview.md) i Microsoft Threat Protection kan du proaktivt jaga efter hot på dina Windows-enheter och Microsoft-e-postmeddelanden. Här är några jaktscenarier och exempelfrågor som kan hjälpa dig att utforska hur du kan skapa frågor som täcker både enheter och e-postmeddelanden.
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>Hämta användarkonton från e-postadresser
 När du skapar frågor över [tabeller som täcker enheter och e-postmeddelanden](advanced-hunting-schema-tables.md)måste du förmodligen skaffa användarnamn från avsändare eller mottagare e-postadresser. Så här använder du den lokala värden från *e-postadressen:*
@@ -94,9 +94,9 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

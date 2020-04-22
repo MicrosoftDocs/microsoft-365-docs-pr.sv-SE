@@ -1,5 +1,5 @@
 ---
-title: Återhämta sig från en ransomware attack
+title: Återställa efter utpressningstrojanattack
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Office 365-administratörer kan lära sig att återställa från en ransomware-attack.
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Microsoft 365-administratörer kan lära sig att återställa från en ransomware-attack.
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634406"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Återställ från en ransomware-attack i Office 365
 
-Även om du vidtar alla försiktighetsåtgärder för att skydda din Office 365-organisation kan du fortfarande falla offer för en [ransomware-attack.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware är big business, och attackerna är verifiera sofistikerade.
+Även om du vidtar alla försiktighetsåtgärder för att skydda din organisation, kan du fortfarande falla offer för en [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware är big business, och attackerna är verifiera sofistikerade.
 
-Stegen i det här avsnittet ger dig den bästa chansen att återställa data som krypterades av ransomware, och hjälper till att stoppa spridningen av infektionen i din Office 365-organisation. Innan du börjar bör du tänka på följande:
+Stegen i det här avsnittet ger dig den bästa chansen att återställa data som krypterades av ransomware, och hjälper till att stoppa spridningen av infektionen i din organisation. Innan du börjar bör du tänka på följande:
 
 - Det finns ingen garanti för att betala lösen kommer att returnera tillgång till dina filer. Faktum är att betala lösen kan göra dig till ett mål för mer ransomware. Om du redan har betalat, men du lyckades återställa dina filer utan att behöva använda angriparens lösning, bör du ringa din bank för att se om de kan blockera transaktionen. Vi rekommenderar också att du rapporterar ransomware-attacken till brottsbekämpande myndigheter, webbplatser för bedrägerirapportering och Microsoft enligt beskrivningen senare i det här avsnittet.
 
@@ -122,9 +122,9 @@ Om ditt land inte finns med i listan frågar du dina lokala eller federala brott
 
 ### <a name="submit-email-messages-to-microsoft"></a>Skicka e-postmeddelanden till Microsoft
 
-Du kan rapportera nätfiskemeddelanden som innehåller utpressningsartiklar med hjälp av någon av flera metoder. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+Du kan rapportera nätfiskemeddelanden som innehåller utpressningsartiklar med hjälp av någon av flera metoder. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 - [Ransomware (lösenköp)](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

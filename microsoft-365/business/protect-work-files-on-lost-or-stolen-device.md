@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Läs mer om de inställningar som finns i Microsoft 365 Business för att skydda arbetsfiler om en användares enhet försvinner eller blir stulen.
-ms.openlocfilehash: 4371acd53da902aa4dea93e7b8bd087d1cf27100
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Läs mer om de inställningar som är tillgängliga i Microsoft 365 för företag för att skydda arbetsfiler om en användares enhet försvinner eller blir stulen.
+ms.openlocfilehash: 8924a2c99ee4c6a4b2c0cb987b4c5ff76911bb13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633088"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Skydda arbetsfiler om en mobil enhet försvinner eller blir stulen
 
@@ -43,8 +43,8 @@ Följande inställningar är tillgängliga för att skydda arbetsfiler om en anv
 |||
 |:-----|:-----|
 |Inställning  <br/> |Beskrivning  <br/> |
-|Ta bort arbetsﬁler från en inaktiv enheten efter så många dagar  <br/> |Om en enhet inte används under det antal dagar som du anger här tas alla arbetsfiler som lagras på enheten bort automatiskt.  <br/> |
-|Tvinga användare att spara alla filer i OneDrive för företag  <br/> |Om den här inställningen är **På**är den enda tillgängliga sparplatsen för arbetsfiler OneDrive för företag.  <br/> |
-|Kryptera arbetsfiler  <br/> |Behåll den här inställningen **På** så att arbetsfiler skyddas av kryptering. Även om enheten försvinner eller blir stulen kan ingen läsa företagets data.  <br/> |
+|Ta bort arbetsﬁler från en inaktiv enheten efter så många dagar  <br/> |Om en enhet inte används för det antal dagar som du anger här tas alla arbetsfiler som lagras på enheten bort automatiskt.  <br/> |
+|Tvinga användare att spara alla filer i OneDrive för företag  <br/> |Om den här inställningen är **På**är OneDrive för företag den enda tillgängliga sparplatsen för arbetsfiler.  <br/> |
+|Kryptera arbetsfiler  <br/> |Behåll den här inställningen **På** så att arbetsfiler skyddas av kryptering. Även om enheten försvinner eller blir stulen kan ingen läsa dina företagsdata.  <br/> |
    
 

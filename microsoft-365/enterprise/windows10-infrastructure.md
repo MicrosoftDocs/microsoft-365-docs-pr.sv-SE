@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809327"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636681"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fas 3: Windows 10 Enterprise
 
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise innehåller Windows 10 Enterprise, som ger dig verktyge
 Du måste förstå olika sätt att distribuera operativsystemet Windows 10 och välja det rätta för din organisation. Beroende på din Microsoft 365 Enterprise-prenumeration finns det också Windows 10-tjänster och säkerhetsfunktioner som du måste konfigurera för att få ut det mesta av Windows 10.
 
 >[!Note]
->Information om hur du distribuerar både Windows 10 Enterprise och Office 365 ProPlus tillsammans och byter till ett [modernt skrivbord](https://www.microsoft.com/microsoft-365/modern-desktop)finns i [Modern Desktop Deployment Center](https://aka.ms/howtoshift).
+>Information om hur du distribuerar både Windows 10 Enterprise och Microsoft 365 Apps för företag tillsammans och byter till ett [modernt skrivbord](https://www.microsoft.com/microsoft-365/modern-desktop)finns i [Modern Desktop Deployment Center](https://aka.ms/howtoshift).
 >
 
 ## <a name="windows-10-deployment"></a>Windows 10-distribution
@@ -44,7 +44,7 @@ Det finns flera sätt att distribuera Windows 10 Enterprise för din organisatio
 | [Använda Microsoft Endpoint Configuration Manager som en uppgradering på plats](windows10-deploy-inplaceupgrade.md) | Välj det här alternativet om du behöver uppgradera Windows 7- eller Windows 8.1-datorer till den <a href="https://aka.ms/windows-10-release-information" target="_blank">aktuella versionen</a> av Windows 10 Enterprise och dina datorer för närvarande hanteras med <a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">Configuration Manager (aktuell gren).</a> |
 | [Använda Windows Autopilot](windows10-deploy-autopilot.md) | Välj det här alternativet om du konfigurerar nya Windows-datorer med Windows 10 Enterprise, version 1703 eller senare förinstallerat. Slutanvändare initierar installationen med önskad konfiguration genom att ange sina autentiseringsuppgifter för arbets- eller skolkonto. |
 
-Om dessa distributionsscenarier inte passar organisationens behov kan du lära dig mer om andra scenarier och förstå funktionerna och begränsningarna för varje i [Windows 10-distributionsscenarier](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också <a href="https://aka.ms/planforwin10deployment" target="_blank">planera för Windows 10-distribution</a> på egen hand.
+Om dessa distributionsscenarier inte passar organisationens behov kan du lära dig mer om andra scenarier och förstå funktionerna och begränsningarna för varje i [Windows 10-distributionsscenarier](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också <a href="https://aka.ms/planforwin10deployment" target="_blank">planera för distribution av Windows 10</a> på egen hand.
 
 Du kan läsa mer om Windows 10 med följande artiklar:
 
@@ -72,15 +72,15 @@ Windows 10 innehåller funktioner som skyddar mot hot, hjälper dig att skydda d
 
 Mer information om de säkerhetsfunktioner som du får med Windows 10 Enterprise och få vägledning om hur du kan distribuera, hantera, konfigurera och felsöka tre viktiga säkerhetsfunktioner finns i [Steg 5: Distribuera säkerhetsfunktioner för Windows 10 Enterprise](windows10-enable-security-features.md).
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Så här gör Microsoft Microsoft 365 Enterprise
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Hur Microsoft använder Microsoft 365 Enterprise
 
 Kika in i Microsoft och lär dig hur företaget [distribuerade Windows 10 Enterprise och använder stark autentisering, Intune och Microsoft Defender ATP](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
-## <a name="how-contoso-did-microsoft-365-enterprise"></a>Hur Contoso gjorde Microsoft 365 Enterprise
+## <a name="how-contoso-did-microsoft-365-enterprise"></a>Så här använder Contoso Microsoft 365 Enterprise
 
 Se hur Contoso Corporation, ett fiktivt men representativt multinationellt företag, [distribuerade Windows 10 Enterprise](contoso-win10.md).
 
-![Den Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Nästa steg
 

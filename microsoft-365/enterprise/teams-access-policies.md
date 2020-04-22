@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035105"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636729"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Principrekommendationer för att skydda Teams-chattar, grupper och filer
 
@@ -33,9 +33,9 @@ Ytterligare rekommendationer som är specifika för Teams-distributionen ingår 
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>Komma igång med Teams före andra beroende tjänster
 
-Du behöver inte aktivera beroende tjänster för att komma igång med Microsoft Teams. Dessa kommer alla "bara fungerar." Du måste dock vara beredd att hantera följande:
+Du behöver inte aktivera beroende tjänster för att komma igång med Microsoft Teams. Dessa kommer alla "bara arbete." Du måste dock vara beredd att hantera följande:
 
-- Office 365-grupper
+- Microsoft 365-grupper
 - SharePoint-gruppwebbplatser
 - OneDrive för företag
 - Postlådor
@@ -52,7 +52,7 @@ Det här är de beroende tjänsterna som ska inkluderas i tilldelningen av molna
 - Microsoft Teams
 - SharePoint Online och OneDrive för företag
 - Exchange Online
-- Skype för företag - Online
+- Skype för företag – Online
 - Microsoft Stream (mötesinspelningar)
 - Microsoft Planner (Planeraruppgifter och planera data)
 
@@ -60,16 +60,16 @@ I den här tabellen visas de principer som måste ses över och länkar till var
 
 |Skyddsnivå|Politik|Ytterligare information för Teams implementation|
 |:---------------|:-------|:----------------|
-|**Baslinje**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Se till att Teams och beroende tjänster ingår i listan över appar. Team har regler för gäståtkomst och extern åtkomst att ta hänsyn till också, du lär dig mer om dessa senare i den här artikeln.|
-|        |[Blockera klienter som inte stöder modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Teams och beroende tjänster i tilldelningen av molnappar.|
+|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Se till att Teams och beroende tjänster ingår i listan över appar. Team har regler för gäståtkomst och extern åtkomst att ta hänsyn till också, du lär dig mer om dessa senare i den här artikeln.|
+|        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera Teams och beroende tjänster i tilldelningen av molnappar.|
 |        |[Högriskanvändare måste ändra lösenord](identity-access-policies.md#high-risk-users-must-change-password)|Tvingar Teams-användare att ändra sitt lösenord när de loggar in om högriskaktivitet upptäcks för deras konto. Se till att Teams och beroende tjänster ingår i listan över appar.|
 |        |[Tillämpa APP-dataskyddsprinciper](identity-access-policies.md#apply-app-data-protection-policies)|Se till att Teams och beroende tjänster ingår i listan över appar. Uppdatera principen för varje plattform (iOS, Android, Windows).|
 |        |[Kräv godkända appar och APP-skydd](identity-access-policies.md#require-approved-apps-and-app-protection)|Inkludera teams och beroende tjänster i den här principen.|
 |        |[Definiera principer för enhetsefterlevnad](identity-access-policies.md#define-device-compliance-policies)|Inkludera teams och beroende tjänster i den här principen.|
-|        |[Kräv kompatibla datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera teams och beroende tjänster i den här principen.|
+|        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera teams och beroende tjänster i den här principen.|
 |**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Team har regler för gäståtkomst och extern åtkomst att ta hänsyn till också, du lär dig mer om dessa senare i den här artikeln. Inkludera teams och beroende tjänster i den här principen.|
 |         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inkludera teams och beroende tjänster i den här principen.|
-|**Mycket reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Oavsett användaridentitet kommer MFA att användas av din organisation. Inkludera teams och beroende tjänster i den här principen.
+|**Strikt reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Oavsett användaridentitet kommer MFA att användas av din organisation. Inkludera teams och beroende tjänster i den här principen.
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>Team beroende tjänster arkitektur
@@ -84,7 +84,7 @@ I Azure AD är gäst- och externa användare desamma. Användartypen för båda 
 
 ### <a name="guest-access-in-teams"></a>Gäståtkomst i teams
 
-Utöver principerna för användare som är interna för ditt företag eller din organisation kan administratörer tillåta gäståtkomst att, användare för användare, tillåta personer som är externa för ditt företag eller din organisation att komma åt Teams-resurser och interagera med interna personer för saker som gruppkonversationer, chatt och möten. Du kan läsa mer om Gäståtkomst på följande länk: [Teams gäståtkomst](https://docs.microsoft.com/microsoftteams/guest-access)
+Utöver principerna för användare som är interna i ditt företag eller din organisation kan administratörer tillåta gäståtkomst att, användare för användare, tillåta personer som är utanför ditt företag eller din organisation att komma åt Teams-resurser och interagera med interna personer för saker som gruppkonversationer, chatt och möten. Du kan läsa mer om Gäståtkomst på följande länk: [Teams gäståtkomst](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Extern åtkomst i team
 

@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Läs om hur du ställer in ett &amp; schema för en rapport i Säkerhetsefterlevnadscenter.
-ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: a5160c564373711521635d3a206d5501b0b2c8f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637706"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Skapa ett schema för en &amp; rapport i Säkerhetsefterlevnadscenter
 
@@ -31,7 +31,7 @@ I Security &amp; Compliance Center finns flera [rapporter och insikter](reports-
 ## <a name="create-a-schedule-for-a-report"></a>Skapa ett schema för en rapport
 
 > [!IMPORTANT]
-> Kontrollera att du har de behörigheter som krävs för att utföra den här uppgiften. I allmänhet kan globala Office 365-administratörer, säkerhetsadministratörer och &amp; säkerhetsläsare komma åt rapporter i Security Compliance Center. Mer information om behörigheter finns [i Behörigheter i &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Kontrollera att du har de behörigheter som krävs för att utföra den här uppgiften. I allmänhet kan globala administratörer, säkerhetsadministratörer och säkerhetsläsare komma åt rapporter i Security &amp; Compliance Center. Mer information om behörigheter finns [i &amp; Behörigheter i Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
   
 1. Gå till **instrumentpanelen för rapporter** \> i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com). **Dashboard**
     
@@ -72,7 +72,7 @@ När du har skapat ett schema för en rapport levereras den rapporten automatisk
   
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Rapporter och insikter i Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Rapporter och insikter i &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Hantera scheman för rapporter &amp; i Security Compliance Center](manage-schedules-for-multiple-reports.md)
   

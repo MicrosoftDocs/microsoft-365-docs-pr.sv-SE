@@ -1,5 +1,5 @@
 ---
-title: Skydda mot hot i Office 365
+title: Skydda mot hot
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,16 +17,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Använd den här artikeln som en guide för att konfigurera dina hotskyddsfunktioner nu.
-ms.openlocfilehash: 34a89f9db0ca7424d90909f09f7a2bfb4fcf3b6a
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0adf7bbb2637cc8a8d2918d951c1ccef51060b31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528563"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634466"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Skydda mot hot i Office 365
+# <a name="protect-against-threats"></a>Skydda mot hot
 
-Office 365 innehåller en mängd olika hotskyddsfunktioner. Här är en snabbstartsguide som du kan använda som checklista för att se till att dina hotskyddsfunktioner är konfigurerade för din organisation. Om du inte har använt hotskyddsfunktionerna i Office 365 tidigare, eller om du bara inte är säker på var du ska börja, använder du följande vägledning som utgångspunkt.
+Microsoft 365 innehåller en mängd olika hotskyddsfunktioner. Här är en snabbstartsguide som du kan använda som checklista för att se till att dina hotskyddsfunktioner är konfigurerade för din organisation. Om du inte har använt hotskyddsfunktionerna i Office 365 tidigare, eller om du bara inte är säker på var du ska börja, använder du följande vägledning som utgångspunkt.
 
 > [!IMPORTANT]
 > **De första rekommenderade inställningarna ingår för varje typ av princip, men många alternativ är tillgängliga och du kan justera inställningarna så att de uppfyller organisationens behov**. Tillåt cirka 30 minuter för dina principer eller ändringar att arbeta sig igenom ditt datacenter.
@@ -35,7 +35,7 @@ Office 365 innehåller en mängd olika hotskyddsfunktioner. Här är en snabbsta
 
 ### <a name="subscriptions"></a>Prenumerationer
 
-Hotskyddsfunktioner ingår i alla Office 365-prenumerationer. Vissa prenumerationer innehåller dock mer avancerade funktioner. I följande tabell visas de skyddsfunktioner som ingår i den här artikeln tillsammans med minimikraven för prenumeration.
+Hotskyddsfunktioner ingår i alla Microsoft 365-prenumerationer. Vissa prenumerationer innehåller dock mer avancerade funktioner. I följande tabell visas de skyddsfunktioner som ingår i den här artikeln tillsammans med minimikraven för prenumeration.<br/>
 
 |||
 |---|---|
@@ -43,7 +43,7 @@ Hotskyddsfunktioner ingår i alla Office 365-prenumerationer. Vissa prenumeratio
 |Skydd mot skadlig kod|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP)|
 |Skydd mot skadliga webbadresser och filer i e-post- och Office-dokument|[Office 365 Avancerat skydd mot hot](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
 |Skydd mot nätfiske|[EOP (på andra sätt)](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
-|Avancerat skydd mot nätfiske|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Avancerat skydd mot nätfiske|[Skaffa Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Skydd mot skräppost|[EOP (på andra sätt)](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Nolltimmars automatisk rensning (för e-post)|[EOP (på andra sätt)](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
 |Granskningsloggning (detta används för rapportering)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)|
@@ -53,15 +53,14 @@ Hotskyddsfunktioner ingår i alla Office 365-prenumerationer. Vissa prenumeratio
 
 Du måste tilldelas en lämplig roll för att konfigurera principer i [Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Följande tabell innehåller några exempel:
 
-|||
-|---|---|
-|**Roll eller rollgrupp**|**Här kan du läsa mer**|
-|Global administratör för Office 365|[Om Office 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Roll eller rollgrupp|Här kan du läsa mer|
+|---------|---------|
+|global administratör|[Om Microsoft 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Säkerhetsadministratör|[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Hantering av Exchange Online-organisation|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>Och<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-Mer information finns [i Behörigheter i Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Mer information finns [i Behörigheter &amp; i Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Del 1 - Skydd mot skadlig kod
 
@@ -107,7 +106,7 @@ Om du vill ställa in [ATP-säkra bilagor](atp-safe-attachments.md)måste du def
 
 5. Klicka på **Spara**.
 
-6. **(Rekommenderat ytterligare steg)** Som global administratör eller SharePoint **[Online-administratör kör cmdlet set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern **DisallowInfectedFileDownload** inställd på *true* för din Office 365-miljö. (Detta förhindrar att personer öppnar, flyttar, kopierar eller delar filer som identifieras som skadliga.)
+6. **(Rekommenderat ytterligare steg)** Som global administratör eller SharePoint **[Online-administratör kör cmdlet set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern **DisallowInfectedFileDownload** inställd på *true* för din Microsoft 365-miljö. (Detta förhindrar att personer öppnar, flyttar, kopierar eller delar filer som identifieras som skadliga.)
 
 Mer information finns i Konfigurera principer för [betrodda anslutningspunkter för Office 365 ATP](set-up-atp-safe-attachments-policies.md) och [Aktivera Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -119,7 +118,7 @@ Om du vill konfigurera [atp-säkra länkar](atp-safe-links.md)granskar och redig
 
 2. Dubbelklicka **Default** på standardprincipen.
 
-3. I avsnittet **Använd säkra länkar i** väljer du alternativet Office **365 ProPlus, Office för iOS och Android**och klickar sedan på **Spara**.
+3. I avsnittet **Använd säkra länkar i** väljer du alternativet Microsoft **365 Apps för företag, Office för iOS och Android**och klickar sedan på **Spara**.
 
 4. Klicka **på** plustecknet (**+**).
 
@@ -215,7 +214,7 @@ Mer information finns i [Zero-hour auto purge - skydd mot skräppost och skadlig
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>Revisionsloggning för rapportering och utredning
 
-Granskningsloggning är tillgängligt i prenumerationer som inkluderar [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). För att kunna visa data i rapporter om skydd mot hot, till exempel [säkerhetspanelen,](security-dashboard.md) [e-postsäkerhetsrapporter](view-email-security-reports.md)och [Utforskaren,](threat-explorer.md)måste granskningsloggning vara aktiverat för din organisation. Mer information finns i [Aktivera eller inaktivera granskningsloggsökning för Office 365.](../../compliance/turn-audit-log-search-on-or-off.md)
+Granskningsloggning är tillgängligt i prenumerationer som inkluderar [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). För att kunna visa data i rapporter om skydd mot hot, till exempel [säkerhetspanelen,](security-dashboard.md) [e-postsäkerhetsrapporter](view-email-security-reports.md)och [Utforskaren,](threat-explorer.md)måste granskningsloggning vara aktiverat för din organisation. Mer information finns i [Aktivera eller inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="post-setup-tasks"></a>Uppgifter efter installationen
 
@@ -225,6 +224,6 @@ När du har konfigurerat hotskyddsfunktionerna ska du se till att övervaka hur 
 |---|---|
 |**Vad du ska göra**|**Resurser för att få mer information**|
 |Se hur hotskyddsfunktioner fungerar för din organisation genom att visa rapporter|[Instrumentpanel för säkerhet](security-dashboard.md)<br/>[Säkerhetsrapporter för e-post](view-email-security-reports.md)<br/>[Rapporter för OFFICE 365 ATP](view-reports-for-atp.md)<br/>[Hotutforskaren](threat-explorer.md)|
-|Granska och revidera regelbundet dina policyer för hotskydd efter behov|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md)<br/>[Funktioner för utredning och svar av hot i Office 365](keep-users-safe-with-office-365-ti.md)|
+|Granska och revidera regelbundet dina policyer för hotskydd efter behov|[Säkra poäng](../mtp/microsoft-secure-score.md)<br/>[Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md)<br/>[Funktioner för utredning och svar i Microsoft 365](keep-users-safe-with-office-365-ti.md)|
 |Håll utkik efter nya funktioner och serviceuppdateringar|[Standard- och målutgivningsalternativ](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Meddelandecentral](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Beskrivningar av tjänsten](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

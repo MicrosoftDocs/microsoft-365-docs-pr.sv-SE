@@ -20,75 +20,75 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Läs om hur du flyttar ditt företag från Microsoft 365 Business till Microsoft 365 E3.
-ms.openlocfilehash: 0d636c0572850a53612bf756508c4b57f1b3e4eb
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: Läs om hur du flyttar ditt företag från Microsoft 365 Business Premium till Microsoft 365 E3.
+ms.openlocfilehash: a41b27b91bd049abb2231a397a328f4f53af9500
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153526"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633181"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business till Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business Premium till Microsoft 365 E3
 
-Microsoft 365 Business har allt du behöver för ditt småföretag och kombinerar de förstklassiga molnbaserade produktivitetsapparna med enkel enhetshantering och säkerhet som gör det möjligt för dina anställda att göra sitt bästa arbete. I vissa fall kan du dock behöva migrera din Microsoft 365 Business-prenumeration till Microsoft 365 E3. 
+Microsoft 365 Business Premium har allt du behöver för ditt småföretag och kombinerar de förstklassiga molnbaserade produktivitetsapparna med enkel enhetshantering och säkerhet som gör det möjligt för dina anställda att göra sitt bästa. I vissa fall kan du dock behöva migrera din Microsoft 365 Business Premium-prenumeration till Microsoft 365 E3. 
 
 Ditt företag har till exempel vuxit och behöver mer än 300 licenser (grattis, förresten).
 
-Eller så behöver ditt företag företagsfunktioner, till exempel Office 365 ProPlus, Windows 10 Enterprise E3 eller Klientåtkomstlicenser för företag (CAL).
+Eller så behöver ditt företag företagsfunktioner, till exempel Microsoft 365 Apps for Enterprise, Windows 10 Enterprise E3 eller Enterprise Client Access Licenses (CALs).
 
 Uppgradering är enkelt: du kan starta [uppgraderingen från administrationscentret](../commerce/subscriptions/upgrade-to-different-plan.md). Alla dina data och konfiguration i din nuvarande prenumeration underhålls. Det finns inget för dig att göra för att förbereda migreringen och inget att göra efteråt, förutom att dra nytta av de nya funktionerna.
 
 >[!Note]
->Du kan också använda en Microsoft 365 Business-prenumeration på upp till 300 platser och få en Microsoft 365 E3-prenumeration på mer än 300 platser. Office 365 ATP ingår dock inte i Microsoft 365 E3. För fortsatt skydd av hot bör du lägga till ytterligare Office 365 ATP-licenser så att alla användare i office 365 ATP-polisen är licensierade.
+>Du kan också använda en Microsoft 365 Business Premium-prenumeration på upp till 300 platser och få en Microsoft 365 E3-prenumeration på mer än 300 platser. Office 365 ATP ingår dock inte i Microsoft 365 E3. För fortsatt skydd av hot bör du lägga till ytterligare Office 365 ATP-licenser så att alla användare i office 365 ATP-polisen är licensierade.
 >
 
-## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Skillnader mellan Microsoft 365 Business och Microsoft 365 Enterprise
+## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Skillnader mellan Microsoft 365 Business Premium och Microsoft 365 Enterprise
 
-I den här tabellen visas skillnaderna mellan Microsoft 365 Business och Microsoft 365 E3.
+I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och Microsoft 365 E3.
 
-| Funktion    | Stöd i Microsoft 365 Business    | Stöd i Microsoft 365 E3 | 
+| Funktion    | Stöd i Microsoft 365 Business Premium    | Stöd i Microsoft 365 E3 | 
 |:-------|:-----|:-----|
 | **Lokalt**        | | | 
 | Windows 10    | Windows 10 Företag  |     Windows 10 Företag E3| 
-| Office-appar*    | [Office 365 Business](#office-365-business)    | Office 365 ProPlus | 
+| Office-appar*    | [Microsoft 365-appar för företag](#office-365-business)    | Microsoft 365-appar för företag | 
 | **Molnproduktivitetsappar**        | | | 
 | Exchange Online och Outlook    | Lagringsgräns på 50 GB per postlåda och obegränsad Exchange Online-arkivering    | Lagringsgräns på 100 GB per postlåda och obegränsad Exchange Online-arkivering | 
-| Teams    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Teams    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | OneDrive för företag    | 1 TB lagringsgräns per användare    | Obegränsad | 
-| Yammer, SharePoint Online, Planerare, Stream    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Outlook kundansvarig, MileIQ    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | | 
+| Yammer, SharePoint Online, Planerare, Stream    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Outlook kundansvarig, MileIQ    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | | 
 | **Skydd mot hot**        | | | 
 | Angripa ytreduceringsfunktioner    | [Se den här listan](#threat-protection) | Företagshantering av maskinvarubaserad isolering för Microsoft Edge | 
-| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
+| Office 365 Advanced Threat Protection (ATP) Plan 1 | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | Ingår inte, men kan läggas till på | 
 | **Identitetshantering**        | | | 
-| Återställning av lösenord för självbetjäning för hybridkonton i Azure Active Directory (Azure AD), Azure Multi-Factor Authentication, Villkorlig åtkomst, återställning av lösenord för lokala identiteter|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Återställning av lösenord för självbetjäning för hybridkonton i Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), Villkorlig åtkomst, återställning av lösenord för lokala identiteter|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Identifiering av molnapp, Azure AD Connect-hälsotillstånd    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Office 365-appar Enkel inloggning (SSO): 10 appar per användare (Galleri SaaS-appar som Salesforce)* | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium P1 SSO: ingen gräns (Lokala appar via Azure AD Application Proxy och appar som inte är gallerier med självbetjäningsmallar för appintegrering)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Office 365-appar Enkel inloggning (SSO): 10 appar per användare (Galleri SaaS-appar som Salesforce)* | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| SSO för Azure AD Premium 1: ingen gräns (Lokala appar via Azure AD Application Proxy och appar som inte är gallerier med självbetjäningsmallar för appintegrering)    |     | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Enhets- och apphantering**        | | | 
-| Microsoft Intune, Windows Autopilot|     ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Microsoft Intune, Windows Autopilot|     ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 |Virtuell skrivbordsåtkomst (VDA)    |  |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-|Virtuellt windows-skrivbord (WVD)    | ![Ingår i Microsoft 365 Business](../media/check-mark.png) |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-|Delad datoraktivering (SCA)    | ![Ingår i Microsoft 365 Business](../media/check-mark.png) |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+|Virtuellt windows-skrivbord (WVD)    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png) |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+|Delad datoraktivering (SCA)    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png) |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | Optimeringspaket för Microsoft Desktop    | |     ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Informationsskydd**        | | | 
-| Office 365 Data Loss Prevention, Azure Information Protection Plan 1    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Windows-informationsskydd för slutpunktS-DLP    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Office 365 Data Loss Prevention, Azure Information Protection Plan 1    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Windows-informationsskydd för slutpunktS-DLP    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Licens för klientåtkomst (CAL-rättigheter)**    | | |     
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 | **Efterlevnad**        | | | 
-| Obegränsad e-postarkivering    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Efterlevnadspoäng/efterlevnadshanterare    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| Ediscovery    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| På plats och tvistemål    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
-| BEVARANDETAGGAR och bevarandeprinciper för meddelandehandlingar (MESSAGING Records Management) och bevarandeprinciper    | ![Ingår i Microsoft 365 Business](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Obegränsad e-postarkivering    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Efterlevnadspoäng/efterlevnadshanterare    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| Ediscovery    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| På plats och tvistemål    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
+| BEVARANDETAGGAR och bevarandeprinciper för meddelandehandlingar (MESSAGING Records Management) och bevarandeprinciper    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 
 ||||
 
 \*Användare som har tilldelats åtkomst till SaaS-appar kan få SSO-åtkomst till upp till 10 appar. Administratörer kan konfigurera SSO och ändra användaråtkomst till olika SaaS-appar, men SSO-åtkomst tillåts endast för 10 appar per användare åt gången. Alla Office 365-appar räknas som ett enda program.
 
-## <a name="migration"></a>Migration
+## <a name="migration"></a>Migrering
 
-Om du vill migrera kan du arbeta med din partner för att flytta din Microsoft 365 Business-prenumeration och dina licenser till en lämplig Microsoft 365 E3-prenumeration med sina licenser.
+Om du vill migrera kan du arbeta med din partner för att flytta din Microsoft 365 Business Premium-prenumeration och dina licenser till en lämplig Microsoft 365 E3-prenumeration med sina licenser.
 
 I följande avsnitt beskrivs vilka ändringar du behöver göra, om några, och vad du kan göra efter migreringen.
 
@@ -137,12 +137,12 @@ Du behöver inte göra några ändringar i din aktuella Intune-konfiguration inn
 
 ### <a name="windows-10"></a>Windows 10
 
-Microsoft 365 Business innehåller Windows 10 Business, som du kan installera med Windows AutoPilot. När du migrerar till Microsoft 365 E3 innehåller varje användarlicens Windows 10 Enterprise E3, som du också kan installera med Windows Autopilot.
+Microsoft 365 Business Premium innehåller Windows 10 Business, som du kan installera med Windows AutoPilot. När du migrerar till Microsoft 365 E3 innehåller varje användarlicens Windows 10 Enterprise E3, som du också kan installera med Windows Autopilot.
 
 <a name="office-365-business"></a>
-### <a name="office-365-business"></a>Office 365 Business
+###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365-appar för företag
 
-Din Office 365 Business-klient som är installerad på dina enheter börjar automatiskt använda funktionerna i Office 365 ProPlus. Efter migreringen kan du nu använda:
+Din Microsoft 365 Apps for business-klient som är installerad på dina enheter börjar automatiskt använda funktionerna i Microsoft 365 Apps för företag. Efter migreringen kan du nu använda:
 
  - Volymaktivering via grupprincip
  - App telemetri

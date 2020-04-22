@@ -1,5 +1,5 @@
 ---
-title: Varningssidor för Office 365 ATP-säkra länkar
+title: VARNINGSSIDOR FÖR ATP-säkra länkar
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Få en översikt över varningssidor som kan visas när Det finns ett avancerat skydd mot office 365 på jobbet.
-ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528863"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635992"
 ---
-# <a name="office-365-atp-safe-links-warning-pages"></a>Varningssidor för Office 365 ATP-säkra länkar
+# <a name="atp-safe-links-warning-pages"></a>VARNINGSSIDOR FÖR ATP-säkra länkar
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du använder Outlook.com, Office 365 Home eller Office 365 Personal och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hjälper till att skydda din organisation från nätfiskeförsök och skadlig kod genom funktioner, till exempel [ATP Safe Links,](atp-safe-links.md) [ATP Safe Attachments](atp-safe-attachments.md)och [anti-phishing protection](anti-phishing-protection.md). När skydd är på plats kontrolleras länkar (URL:er) i e-postmeddelanden och Office-dokument. Om en webbadress identifieras som misstänkt eller skadlig kan du blockeras från att öppna webbadressen när du klickar på den. I stället för att gå direkt till webbplatsen kan du se en varningssida i stället.
 
@@ -60,7 +60,7 @@ Webbadressen pekar på en webbplats som har identifierats som skadlig.  <br/> Vi
 
 ### <a name="a-site-is-blocked"></a>En webbplats är blockerad
 
-WEBBADRESSEN är blockerad för din organisation. Det finns flera orsaker till att en webbadress kan blockeras. Vi rekommenderar att du kontaktar organisationens Office 365-administratör.
+WEBBADRESSEN är blockerad för din organisation. Det finns flera orsaker till att en webbadress kan blockeras. Vi rekommenderar att du kontaktar organisationens Microsoft 365 för företagsadministratör.
 
 ![Den här webbplatsen är blockerad](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 

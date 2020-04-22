@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: 'Sammanfattning: Konfigurera en SharePoint Online-gruppwebbplats som är isolerad från resten av organisationen i din utvecklings-/testmiljö för Office 365.'
-ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Sammanfattning: Konfigurera en SharePoint Online-gruppwebbplats som är isolerad från resten av organisationen i microsoft 365-utvecklings-/testmiljön.'
+ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809341"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634128"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Utvecklings-/testmiljö för en isolerad resursgrupp online
 
- **Sammanfattning:** Konfigurera en SharePoint Online-gruppwebbplats som är isolerad från resten av organisationen i din utvecklings-/testmiljö för Office 365.
+ **Sammanfattning:** Konfigurera en SharePoint Online-gruppwebbplats som är isolerad från resten av organisationen i microsoft 365-utvecklings-/testmiljön.
 
-SharePoint Online-gruppwebbplatser i Office 365 är platser för samarbete med hjälp av ett gemensamt dokumentbibliotek, en OneNote-anteckningsbok och andra tjänster. I många fall vill du ha bred åtkomst och samarbete mellan avdelningar eller organisationer. Men i vissa fall vill du styra åtkomsten och behörigheterna för samarbete mellan en liten grupp personer.
+SharePoint Online-gruppwebbplatser i Microsoft 365 är platser för samarbete med hjälp av ett gemensamt dokumentbibliotek, en OneNote-anteckningsbok och andra tjänster. I många fall vill du ha bred åtkomst och samarbete mellan avdelningar eller organisationer. Men i vissa fall vill du styra åtkomsten och behörigheterna för samarbete mellan en liten grupp personer.
 
 Åtkomst till SharePoint Online-gruppwebbplatser och vad användarna kan göra styrs av SharePoint-grupper och behörighetsnivåer. Som standard har SharePoint Online-webbplatser tre åtkomstnivåer:
 
@@ -43,9 +43,9 @@ I den här artikeln får du hjälp med konfigurationen av en isolerad SharePoint
 
 - Endast webbplatsskaparen och medlemmarna i en administratörsgrupp för webbplatsen kan utföra webbplatsadministration, vilket inkluderar ändring av behörigheter på webbplatsnivå.
 
-Det finns tre faser för att konfigurera en isolerad SharePoint Online-gruppwebbplats i din utvecklings-/testmiljö för Office 365:
+Det finns tre faser för att konfigurera en isolerad SharePoint Online-gruppwebbplats i microsoft 365-utvecklings-/testmiljön:
 
-1. Skapa utvecklings-/testmiljön för Office 365.
+1. Skapa utvecklings-/testmiljön för Microsoft 365.
 
 2. Skapa användare och grupper för ProjectX.
 
@@ -54,22 +54,22 @@ Det finns tre faser för att konfigurera en isolerad SharePoint Online-gruppwebb
 > [!TIP]
 > Klicka [här](https://aka.ms/catlgstack) om du vill ha en visuell karta till alla artiklar i One Microsoft Cloud Test Lab Guide-stacken.
 
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fas 1: Bygg ut din lätta eller simulerade företagsmiljö för Office 365-utveckling/testning
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Fas 1: Bygg ut din lätta eller simulerade företagsmiljö för Microsoft 365-utveckling/test
 
-Om du bara vill skapa en isolerad SharePoint Online-gruppwebbplats på ett lätt väg med minimikraven följer du instruktionerna i faserna 2 och 3 i [office 365-utvecklings-/testmiljön](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Om du bara vill skapa en isolerad SharePoint Online-gruppwebbplats på ett lättviktssätt med minimikraven följer du instruktionerna i faserna 2 och 3 i [Microsoft 365 dev/test-miljö](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Om du vill skapa en isolerad SharePoint Online-gruppwebbplats i en simulerad företagskonfiguration följer du instruktionerna i [DirSync för din utvecklings-/testmiljö för Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Om du vill skapa en isolerad SharePoint Online-gruppwebbplats i en simulerad företagskonfiguration följer du instruktionerna i [DirSync för din utvecklings-/testmiljö för Microsoft 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
 
 > [!NOTE]
 > För att skapa en isolerad SharePoint Online-webbplats krävs inte den simulerade företagsutvecklings-/testmiljön, som innehåller ett simulerat intranät som är anslutet till Internet och katalogsynkronisering för en AD DS-skog (Active Directory Domain Services). Det finns här som ett alternativ så att du kan testa en isolerad SharePoint Online-webbplats och experimentera med den i en miljö som representerar en typisk organisation.
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fas 2: Skapa användarkonton och åtkomstgrupper
 
-Använd instruktionerna i [Anslut till Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) för att ansluta till din Office 365-spårprenumeration med ditt globala administratörskonto från:
+Använd instruktionerna i [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) för att ansluta till din utvärderingsprenumeration med ditt globala administratörskonto från:
 
-- Datorn (för den lätta utvecklings-/testmiljön för Office 365).
+- Datorn (för den lätta utvecklings-/testmiljön för Microsoft 365).
 
-- Den virtuella klienten1-datorn (för den simulerade företagsmiljön för office 365-utveckling/testning).
+- Den virtuella klienten1-datorn (för det simulerade företaget Microsoft 365 dev/test-miljö).
 
 Om du vill skapa de nya åtkomstgrupperna för ProjectX SharePoint Online-gruppwebbplatsen kör du dessa kommandon från Windows Azure Active Directory Module för Windows PowerShell-prompten:
 
@@ -142,17 +142,17 @@ Figur 1 visar åtkomstgrupperna och deras medlemskap.
 
 **Bild 1**
 
-![Office 365-grupperna och deras medlemskap för en isolerad SharePoint Online Group-webbplats](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Microsoft 365-grupperna och deras medlemskap för en isolerad SharePoint Online Group-webbplats](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Fas 3: Skapa en ny ProjectX SharePoint Online-gruppwebbplats och isolera den
 
 Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
-1. Logga in på Office 365-portalen ([https://admin.microsoft.com](https://admin.microsoft.com)) med hjälp av en webbläsare på din lokala dator (lättkonfiguration) eller på KLIENT1 (simulerad företagskonfiguration) med hjälp av ditt globala administratörskonto.
+1. Logga in i Microsoft 365-administrationscentret ( microsoft 365 med[https://admin.microsoft.com](https://admin.microsoft.com)hjälp av en webbläsare på din lokala dator (lättkonfiguration) eller på KLIENT1 (simulerad företagskonfiguration) med hjälp av ditt globala administratörskonto.
 
-2. Klicka på **SharePoint**i listan med paneler.
+2. Klicka på **SharePoint** i listan med paneler.
 
-3. Klicka på **+ Skapa webbplats**på den nya fliken SharePoint i webbläsaren .
+3. På den nya fliken SharePoint i webbläsaren klickar du på **+ Skapa webbplats**.
 
 4. Skriv **ProjectX** **i Gruppplatsnamn**. I **Sekretessinställningar**väljer du **Privat - endast medlemmar kan komma åt den här webbplatsen**.
 
@@ -162,7 +162,7 @@ Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
 7. Klicka på inställningsikonen i verktygsfältet på den nya fliken **ProjectX-Start** i webbläsaren och klicka sedan på **Webbplatsbehörigheter**.
 
-8. Klicka på **Avancerade behörighetsinställningar**i fönstret **Webbplatsbehörigheter.**
+8. I fönstret **Webbplatsbehörigheter** klickar du på **Inställningar för avancerade behörigheter**.
 
 9. Klicka på **Inställningar för åtkomstbegäran**i den nya **behörigheten: Project X** i webbläsaren .
 
@@ -170,7 +170,7 @@ Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
 11. Klicka på **ProjectX-medlemmar** i listan.
 
-12. Klicka på **Nytt**på sidan **Personer och grupper** .
+12. På sidan **Personer och grupper** klickar du på **Nytt**.
 
 13. Skriv **ProjectX-medlemmar**i dialogrutan **Dela** , markera det och klicka sedan på **Dela**.
 
@@ -178,7 +178,7 @@ Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
 15. Klicka på **ProjectX-ägare** i listan.
 
-16. Klicka på **Nytt**på sidan **Personer och grupper** .
+16. På sidan **Personer och grupper** klickar du på **Nytt**.
 
 17. Skriv **ProjectX-Administratörer**i dialogrutan **Dela** , markera det och klicka sedan på **Dela**.
 
@@ -186,7 +186,7 @@ Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
 19. Klicka på **ProjectX-besökare** i listan.
 
-20. Klicka på **Nytt**på sidan **Personer och grupper** .
+20. På sidan **Personer och grupper** klickar du på **Nytt**.
 
 21. Skriv **ProjectX-Tittare**i dialogrutan **Dela** , markera det och klicka sedan på **Dela**.
 
@@ -202,7 +202,7 @@ Här är resultatet av att konfigurera behörigheter:
 
 - Medlemmar kan inte ändra behörigheter på webbplatsnivå (detta kan endast göras av medlemmar i gruppen ProjectX-Administratörer).
 
-- Andra användarkonton kan inte komma åt webbplatsen eller dess resurser eller begära åtkomst till webbplatsen.
+- Andra användarkonton kan inte komma åt webbplatsen eller dess resurser. De kan inte heller begära åtkomst till webbplatsen.
 
 Figur 2 visar SharePoint-grupperna och deras medlemskap.
 
@@ -216,9 +216,9 @@ Nu ska vi visa åtkomst med hjälp av Lead Designer-användarkontot:
 
 2. Klicka på namnet på den globala administratören och klicka sedan på **Logga ut**.
 
-3. Logga in på Office 365-portalen ([https://admin.microsoft.com](https://admin.microsoft.com)) med leaddesignerns kontonamn och dess lösenord.
+3. Logga in på Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)administrationscenter ( ) med lead designer-kontonamnet och dess lösenord.
 
-4. Klicka på **SharePoint**i listan med paneler.
+4. Klicka på **SharePoint** i listan med paneler.
 
 5. På den nya **fliken SharePoint** i webbläsaren skriver du **ProjectX** i sökrutan, aktiverar sökningen och klickar sedan på ProjectX-gruppwebbplatsen. **ProjectX** Du bör se en ny flik i webbläsaren för ProjectX-gruppwebbplatsen.
 
@@ -246,9 +246,9 @@ Nu ska vi visa åtkomst med hjälp av Lead Designer-användarkontot:
 
 Nu ska vi visa åtkomst med hjälp av utvecklings-VP-användarkontot:
 
-1. Logga in på Office 365-portalen ([https://admin.microsoft.com](https://admin.microsoft.com)) med namnet på utvecklings-VP-kontot och dess lösenord.
+1. Logga in på Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)administrationscenter ( ) med hjälp av utvecklings-VP-kontonamnet och dess lösenord.
 
-2. Klicka på **SharePoint**i listan med paneler.
+2. Klicka på **SharePoint** i listan med paneler.
 
 3. På den nya **fliken SharePoint** i webbläsaren skriver du **ProjectX** i sökrutan, aktiverar sökningen och klickar sedan på ProjectX-gruppwebbplatsen. **ProjectX** Du bör se en ny flik i webbläsaren för ProjectX-gruppwebbplatsen.
 
@@ -262,9 +262,9 @@ Nu ska vi visa åtkomst med hjälp av utvecklings-VP-användarkontot:
 
 Nu ska vi visa åtkomst med ett användarkonto som inte har några behörigheter:
 
-1. Logga in på Office 365-portalen ([https://admin.microsoft.com](https://admin.microsoft.com)) med användar3-kontonamnet och dess lösenord.
+1. Logga in på Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)administrationscenter ( ) med användar3-kontonamnet och dess lösenord.
 
-2. Klicka på **SharePoint**i listan med paneler.
+2. Klicka på **SharePoint** i listan med paneler.
 
 3. På den nya **fliken SharePoint** i webbläsaren skriver du **ProjectX** i sökrutan och aktiverar sedan sökningen. Du bör se meddelandet **Ingenting här matchar din sökning.**
 
@@ -280,19 +280,19 @@ Din isolerade SharePoint Online-webbplats är nu klar för ytterligare experimen
 
 ## <a name="next-step"></a>Nästa steg
 
-När du är redo att distribuera en isolerad SharePoint Online-gruppplats i produktion läser du de stegvisa designövervägandena i [Design en isolerad SharePoint Online-gruppwebbplats](design-an-isolated-sharepoint-online-team-site.md).
+När du är redo att distribuera en isolerad SharePoint Online-gruppwebbplats i produktion kan du läsa de steg för steg-informationen om utformning i [Utforma en isolerad SharePoint Online-gruppwebbplats](design-an-isolated-sharepoint-online-team-site.md).
 
 ## <a name="see-also"></a>Se även
 
 [Isolerade SharePoint Online-gruppwebbplatser](isolated-sharepoint-online-team-sites.md)
 
-[Testlaborationsguider för molnanvändning (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Testlabbguider för integrering med molntjänster](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Utvecklings-/testmiljö för baskonfiguration](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
 
-[Utvecklings-/testmiljö för Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Utvecklings-/testmiljö för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
 
-[Molnanvändning och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Införande av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
 
 

@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Läs om hur du avbryter utvärderingsversionen av Office 365 för företag eller Microsoft 365 eller betald prenumeration.
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Läs om hur du avbryter din Utvärderingsversion av Microsoft 365 för företag eller Microsoft 365 eller betald prenumeration.
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142169"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636601"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
-*Behörighet:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta utvärderingsversionen av Office 365 för företag eller betald prenumeration online i administrationscentret. Om du har tilldelat fler än 25 licenser till användare [ringer du supporten för att avbryta prenumerationen](../../admin/contact-support-for-business-products.md).
+*Behörighet:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din Utvärderingsversion av Microsoft 365 för företagstest eller betald prenumeration online i administrationscentret. Om du har tilldelat fler än 25 licenser till användare [ringer du supporten för att avbryta prenumerationen](../../admin/contact-support-for-business-products.md).
 
 *Återbetalning:* Eventuell proportionell kredit kommer att returneras till dig inom nästa faktureringsperiod.
 
@@ -43,13 +43,14 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 ::: moniker range="o365-worldwide"
 
+
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
 
 2. Leta reda på den prenumeration som du vill avbryta och välj **Avbryt prenumeration**under Inställningar **& Åtgärder**.
 
 3. Granska viktiga datum, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration**.
 
-    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Office 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Office 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 4. Granska viktiga datum, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration**.
 
-    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Office 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Office 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 4. Granska viktiga datum, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration**.
 
-    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Office 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Office 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ Om du använder en anpassad domän med din prenumeration finns det några extra 
 
 Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domänen skulle fungera med Office 365-tjänster. Innan du tar bort domänen måste du uppdatera DNS-posterna, till exempel domän-MX-posten, hos dns-värden.
 
-Ändra till exempel MX-posten på DNS-värden. E-post som skickas till din domän slutar komma till din Office 365-adress och går till din nya e-postleverantör i stället. (En MX-post bestämmer vart e-post för domänen skickas.)
+Ändra till exempel MX-posten på DNS-värden. E-post som skickas till din domän slutar komma till din Microsoft-adress och går till din nya e-postleverantör istället. (En MX-post bestämmer vart e-post för domänen skickas.)
 
 - Om dina NS-poster (Nameserver) [pekar på Office 365-namnservrar](../../admin/setup/add-domain.md)börjar ändringar i MX-posten inte gälla förrän du ändrar NS-posterna så att de pekar på din nya DNS-värd (se steg 2).
 
-- Innan du uppdaterar MX-posten meddelar du användarna vilket datum du planerar att byta e-post och den nya e-postleverantören som du planerar att använda. Om användarna vill flytta sin befintliga Office 365-e-post till den nya leverantören måste de också vidta extra åtgärder.
+- Innan du uppdaterar MX-posten meddelar du användarna vilket datum du planerar att byta e-post och den nya e-postleverantören som du planerar att använda. Om användarna vill flytta sin befintliga Microsoft-e-post till den nya leverantören måste de också vidta extra åtgärder.
 
 - Följ resterande steg i den här artikeln den dag du ändrar MX-posten.
 

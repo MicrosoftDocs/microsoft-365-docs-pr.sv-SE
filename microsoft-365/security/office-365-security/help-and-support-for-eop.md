@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
-ms.openlocfilehash: 3aef0cfa6209809f7a65e4179809d58d6f55aeb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42808609"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638052"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
@@ -25,13 +25,13 @@ De tekniska supportresurser som anges här hjälper dig att hitta svar om du har
 
 ## <a name="self-support-options"></a>Alternativ för självstöd
 
-När office 365-portalen har loggat in finns information om statusen för organisationens tjänster. Dessutom visar servicehälsoavsnittet i Office 365 aktuell status för dina tjänster, information om avbrott och avbrott och en lista över planerade underhållstider. Office 365-portalen innehåller också information om kända problem och förväntade lösningar. Om du påverkas av en tjänstomfattande händelse bör du se en kommunikationsavisering (vanligtvis tillsammans med en klockikon). Vi rekommenderar att du läser och agerar på alla objekt som är lämpliga. Mer information om hälsoområdet för tjänsten i Office 365 finns i [Hälsotillstånd och kontinuitet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)för tjänsten . Du kanske kan hitta mer hjälp på egen hand med hjälp av verktyg, forum och webbplatser gemenskap som anges här.
+När du loggar in innehåller Microsoft 365-administrationscentret information om statusen för organisationens tjänster. I avsnittet tjänsthälsa visas också tjänsternas aktuella status, information om avbrott och avbrott och en lista över planerade underhållstider. Administrationscentret för Microsoft 365 innehåller också information om kända problem och förväntade lösningar. Om du påverkas av en tjänstomfattande händelse bör du se en kommunikationsavisering (vanligtvis tillsammans med en klockikon). Vi rekommenderar att du läser och agerar på alla objekt som är lämpliga. Mer information om hälsoområdet för tjänsten finns i [Tjänstens hälsa och kontinuitet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Du kanske kan hitta mer hjälp på egen hand med hjälp av verktyg, forum och webbplatser gemenskap som anges här.
 
 [Produktöversikt för Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Kontakta support för företagsprodukter - Hjälp om administratörer](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+[Kontakta supporten för företagsprodukter – hjälp för administratörer](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Office 365-community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365-community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
 [Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
@@ -63,19 +63,19 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
    Om du har frågor innan du köper EOP eller frågor om fakturering och prenumerationer går du till **Fakturering och** \> **prenumerationssupport** **för kundtjänst.** \>
 
-3. Använd Virtual Agent för Microsoft Office 365 för att söka efter det senaste telefonnumret.
+3. Använd den virtuella agenten för att söka efter det senaste lämpliga telefonnumret.
 
 ## <a name="support-telephone-numbers"></a>Telefonnummer för support
 
-Microsoft tillhandahåller lokala eller avgiftsfria telefonnummer för produktsupport runt om i världen. Många av dessa supportcenter hjälper dig på ditt lokala språk under kontorstid eller på engelska 24 timmar om dygnet, varje dag. Om du inte ser din plats nedan använder du den virtuella agenten för Microsoft Office 365 enligt beskrivningen ovan för att hitta ditt lokala supporttelefonnummer.
+Microsoft tillhandahåller lokala eller avgiftsfria telefonnummer för produktsupport runt om i världen. Många av dessa supportcenter hjälper dig på ditt lokala språk under kontorstid eller på engelska 24 timmar om dygnet, varje dag. Om du inte ser din plats nedan använder du den virtuella agenten enligt beskrivningen ovan för att hitta ditt lokala supporttelefonnummer.
 
 |**Land eller region.**|**Frågor om förköp och fakturering**|**Frågor om teknisk support**|
 |:-----|:-----|:-----|
 |Brasilien|Avgiftsfritt: 08007621146 <br/> Lokal: 1147001999|Samma|
 |Frankrike|Avgiftsfritt: 0805 540 594 <br/> Lokal: 01 57 32 42 97|Samma|
 |Tyskland|Avgiftsfritt: 0800 589 2332 <br/>  Lokal: 069 380 789 508|Samma|
-|Japan |Avgiftsfritt: 0120-628860 <br/> Lokal: 343326257|Avgiftsfritt: 0120-996680 <br/> Lokal: 357679793|
-|Korea |Avgiftsfritt: 080-495-0880 <br/> Lokal: 234831937|Samma|
+|Japan|Avgiftsfritt: 0120-628860 <br/> Lokal: 343326257|Avgiftsfritt: 0120-996680 <br/> Lokal: 357679793|
+|Korea|Avgiftsfritt: 080-495-0880 <br/> Lokal: 234831937|Samma|
 |Spanien|Avgiftsfritt: 900 814 197 <br/> Lokal: 912 718 160|Samma|
 |Storbritannien|Avgiftsfritt: 0800 032 6417 <br/> Lokal: 0203 450 6455|Samma|
 |USA|Avgiftsfritt: 1-877-913-2707|Avgiftsfritt: 1-800-865-9408|

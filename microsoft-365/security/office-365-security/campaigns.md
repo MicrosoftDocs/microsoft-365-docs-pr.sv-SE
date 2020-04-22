@@ -1,5 +1,5 @@
 ---
-title: Kampanjvyer i Office 365 ATP
+title: Kampanjvyer i ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Läs mer om kampanjvyer i det avancerade skydd mot office 365-hotet.
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42810619"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637824"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Kampanjvyer i Office 365 ATP
+# <a name="campaign-views-in-atp"></a>Kampanjvyer i ATP
 
-Kampanjvyer är en funktion i Advanced Threat Protection (ATP) i Office 365 Security & Compliance Center som identifierar och kategoriserar nätfiskeattacker i tjänsten. Kampanjvyer kan hjälpa dig att:
+Kampanjvyer är en funktion i Advanced Threat Protection (ATP) i Security & Compliance Center som identifierar och kategoriserar nätfiskeattacker i tjänsten. Kampanjvyer kan hjälpa dig att:
 
 - Undersök och reagera effektivt på nätfiskeattacker.
 
@@ -40,7 +40,7 @@ Med kampanjvyer kan du se helheten av en attack snabbare och mer komplett än n�
 
 En kampanj är en samordnad e-postattack mot en eller flera organisationer. E-postattacker som stjäl referenser och företagsdata är en stor och lukrativ bransch. I takt med att tekniken ökar i ett försök att stoppa attacker ändrar angripare sina metoder i ett försök att säkerställa fortsatt framgång.
 
-Microsoft utnyttjar de stora mängderna anti-phishing, anti-spam och anti-malware data i hela Office 365-tjänsten för att identifiera kampanjer. Vi analyserar och klassificerar attackinformationen enligt flera faktorer. Till exempel:
+Microsoft utnyttjar de stora mängderna anti-phishing, anti-spam och anti-malware data över hela tjänsten för att identifiera kampanjer. Vi analyserar och klassificerar attackinformationen enligt flera faktorer. Till exempel:
 
 - **Attack källa:** Källa IP-adresser och avsändare e-domäner.
 
@@ -52,7 +52,7 @@ Microsoft utnyttjar de stora mängderna anti-phishing, anti-spam och anti-malwar
 
 En kampanj kan vara kortlivad eller sträcka sig över flera dagar, veckor eller månader med aktiva och inaktiva perioder. En kampanj kan startas mot din specifika organisation, eller så kan din organisation vara en del av en större kampanj för flera företag.
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Kampanjvyer i Säkerhets- & Compliance Center för Office 365
+## <a name="campaign-views-the-security--compliance-center"></a>Kampanjvyer security & Compliance Center
 
 Kampanjvyer är tillgängliga i [Security & Compliance Center](https://protection.office.com) vid **hothanteringskampanjer** \> **Campaigns**.
 
@@ -131,7 +131,7 @@ Diagrammet innehåller följande information:
   |:-----|:-----|:-----|
   | **Tillåtet**|`SFV:SKN` <br/><br/> `SFV:SKI`|Meddelandet markerades som inte skräppost och/eller överhoppade filtrering innan det utvärderades av skräppostfiltrering (till exempel av en regel för e-postflöde, även känd som en transportregel).<br/><br/>Meddelandet hoppade över skräppostfiltrering av andra skäl (till exempel verkar avsändaren och mottagaren befinna sig i samma organisation).|
   |**Blockerade**|`SFV:SKS`|Meddelandet markerades som skräppost innan det utvärderades av skräppostfiltrering (till exempel av en regel för e-postflöde).|
-  |**Upptäckt**|`SFV:SPM`|Meddelandet markerades som skräppost genom skräppostfiltrering.|
+  |**Upptäckt**|`SFV:SPM`|Meddelandet markerades som skräppost av skräppostfiltret.|
   |**Har inte identifierats**|`SFV:NSPM`|Meddelandet markerades som inte skräppost genom skräppostfiltrering.|
   |**Släppt**|`SFV:SKQ`|Meddelandet hoppade över skräppostfiltrering eftersom det släpptes från karantänen.|
   |**Klient tillåt**<sup>\*</sup>|`SFV:SKA`|Meddelandet hoppade över skräppostfiltrering på grund av policyinställningar för skräppost (till exempel var avsändaren med i listan över tillåtna avsändare eller tillåtna domänlistan).|

@@ -16,12 +16,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kallas även principer för skräppostfilter eller innehållsfilter) kan administratörer identifiera meddelanden som innehåller specifika meddelandeegenskaper som ofta används i skräppost. Beroende på egenskapen markerar ASF-identifieringar antingen meddelandet som skräppost eller skräppost med högt förtroende.
-ms.openlocfilehash: e35279092e9d77b18eadd2af33909eda90bdd80b
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894258"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634736"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Avancerade asf-inställningar (Spam Filter) i Office 365
 
@@ -33,7 +33,7 @@ Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kall
 > [!NOTE]
 > Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva identifieringar. Du kan identifiera meddelanden som filtrerats efter ASF genom att: <ul><li>Periodiska meddelanden om skräppost för slutanvändare.</li><li>Förekomsten av filtrerade meddelanden i karantän.</li><li>De `X-CustomSpam:` specifika X-header-fält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.</li></ul>
 
-I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Office 365 Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivera, inaktivera eller testa ASF-inställningar
 
@@ -49,9 +49,9 @@ För varje ASF-inställning finns följande alternativ i policyer mot skräppost
 
   - **Lägg till standardtext för X-header *(AddXHeader)***: X-header-värdet `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i inkorgsregler eller regler för e-postflöde (kallas även transportregler) för att påverka flödet och leveransen av meddelandet.
 
-  - **Skicka hemligt meddelande *(Hemlig kopia)***: De angivna e-postadresserna (parametervärdet *TestModeBccToRecipients* i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet levereras till mottagarna av hemlig kopia. I Säkerhetsorganisationscenter för Office 365 &-efterlevnadscenter separerar du flera e-postadresser efter semikolon ( ; ). I PowerShell separerar du flera e-postadresser med kommatecken.
+  - **Skicka hemligt meddelande *(Hemlig kopia)***: De angivna e-postadresserna (parametervärdet *TestModeBccToRecipients* i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet levereras till mottagarna av hemlig kopia. I Security & Compliance Center separerar du flera e-postadresser efter semikolon ( ; ). I PowerShell separerar du flera e-postadresser med kommatecken.
 
-  **Anmärkningar:**
+  **Anmärkningar**:
 
   - Testläget är inte tillgängligt för följande ASF-inställningar:
 
@@ -93,5 +93,5 @@ Följande ASF-inställningar ställer in SCL för upptäckta meddelanden till 9,
 |**Använda känslig ordlista** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft har en dynamisk men icke-redigerbar lista med ord som är associerade med potentiellt stötande meddelanden. <br/><br/> Meddelanden som innehåller ord från den känsliga ordlistan i ämnes- eller meddelandetexten markeras som skräppost med högt förtroende.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-rekord: hårt misslyckas** <br><br/> *MarkAsSpamSpfRecordHardFail*|Meddelanden som skickas från en IP-adress som inte anges i SPF Sender Policy Framework (SPF) i DNS för käll-e-postdomänen markeras som skräppost med högt förtroende. <br/><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrering av villkorlig avsändare: hårddisk utan fel** <br><br/> *MarkAsSpamFrånAdressAuthFail*|Meddelanden om att det inte fungerar som ett villkorligt avsänar-ID markeras som skräppost. <br/><br/> Den här inställningen kombinerar en SPF-kontroll med en avsänd-ID-kontroll för att skydda mot meddelandehuvuden som innehåller förfalskade avsändare. <br/><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF From Record Fail`|
-|**NDR backscatter** <br><br/> *MarkAsSpamNdrBackscatter*|*Backscatter* är värdelös icke-leverans rapporter (även känd som NDRs eller studsa meddelanden) som orsakas av förfalskade avsändare i e-postmeddelanden. Mer information finns i [Backscatter-meddelanden och EOP](backscatter-messages-and-eop.md). <br/><br/> Du behöver inte konfigurera den här inställningen i följande miljöer, eftersom legitima NDR levereras och backscatter markeras som skräppost: <ul><li>Office 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående* e-post via EOP.</li></ul><br/> I fristående EOP-miljöer som skyddar inkommande e-post till lokala postlådor har du följande resultat om du aktiverar eller inaktiverar den här inställningen: <ul><li> **På**: Legitima NDR levereras och backscatter är markerad som skräppost.</li><li>**Av:** Legitima NDRs och backscatter gå igenom normal spam filtrering. De flesta legitima NDR kommer att levereras till den ursprungliga meddelandet avsändaren. Vissa, men inte alla, backscatter är markerade som hög förtroende spam. Per definition kan backscatter endast levereras till förfalskad avsändare, inte till den ursprungliga avsändaren.</li></ul><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
+|**NDR backscatter** <br><br/> *MarkAsSpamNdrBackscatter*|*Backscatter* är värdelös icke-leverans rapporter (även känd som NDRs eller studsa meddelanden) som orsakas av förfalskade avsändare i e-postmeddelanden. Mer information finns i [Backscatter-meddelanden och EOP](backscatter-messages-and-eop.md). <br/><br/> Du behöver inte konfigurera den här inställningen i följande miljöer, eftersom legitima NDR levereras och backscatter markeras som skräppost: <ul><li>Microsoft 365-organisationer med Exchange Online-postlådor.</li><li>Lokala e-postorganisationer där du dirigerar *utgående* e-post via EOP.</li></ul><br/> I fristående EOP-miljöer som skyddar inkommande e-post till lokala postlådor har du följande resultat om du aktiverar eller inaktiverar den här inställningen: <ul><li> **På**: Legitima NDR levereras och backscatter är markerad som skräppost.</li><li>**Av:** Legitima NDRs och backscatter gå igenom normal spam filtrering. De flesta legitima NDR kommer att levereras till den ursprungliga meddelandet avsändaren. Vissa, men inte alla, backscatter är markerade som hög förtroende spam. Per definition kan backscatter endast levereras till förfalskad avsändare, inte till den ursprungliga avsändaren.</li></ul><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: Backscatter NDR`|
 |

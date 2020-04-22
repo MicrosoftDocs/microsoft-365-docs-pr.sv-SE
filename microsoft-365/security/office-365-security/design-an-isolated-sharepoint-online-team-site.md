@@ -1,5 +1,5 @@
 ---
-title: Designa en isolerad SharePoint Online-gruppwebbplats
+title: Utforma en isolerad SharePoint Online-gruppwebbplats
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -16,14 +16,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Sammanfattning: Steg genom designprocessen för isolerade SharePoint Online-gruppwebbplatser.'
-ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5efd5fb0501d88fda37f1530ef62e4c5110e4da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811489"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638518"
 ---
-# <a name="design-an-isolated-sharepoint-online-team-site"></a>Designa en isolerad SharePoint Online-gruppwebbplats
+# <a name="design-an-isolated-sharepoint-online-team-site"></a>Utforma en isolerad SharePoint Online-gruppwebbplats
 
  **Sammanfattning:** Stega igenom designprocessen för isolerade SharePoint Online-gruppwebbplatser.
   
@@ -39,7 +39,7 @@ Varje SharePoint Online-gruppwebbplats skapas som standard med följande SharePo
     
 - \<webbplatsnamn> ägare
     
-Dessa grupper är separata från Office 365- och Azure Active Directory-grupper (AD) och ligger till grund för tilldelning av behörigheter för resurserna på platsen.
+Dessa grupper är separata från Microsoft 365- och Azure Active Directory-grupper (AD) och ligger till grund för tilldelning av behörigheter för resurserna på webbplatsen.
   
 Den uppsättning specifika behörigheter som avgör vad en medlem i en SharePoint-grupp kan göra på en webbplats är en behörighetsnivå. Det finns tre behörighetsnivåer som standard för en SharePoint Online-gruppwebbplats: Redigera, Läsa och Fullständig kontroll. I följande tabell visas standardkorrelationen för SharePoint-grupper och tilldelade behörighetsnivåer:
   
@@ -57,7 +57,7 @@ Här är standardgrupperna och behörighetsnivåerna för SharePoint.
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fas 2: Tilldela behörigheter till användare med åtkomstgrupper
 
-Du kan tilldela behörigheter till användare genom att lägga till deras användarkonto eller en Office 365- eller Azure AD-grupp som användarkontot är medlem i till SharePoint-grupperna. När office 365-användarkontona har lagts till tilldelas de behörighetsnivåer som är associerade med SharePoint-gruppen, antingen direkt eller indirekt via medlemskap i en Office 365- eller Azure AD-grupp.
+Du kan tilldela behörigheter till användare genom att lägga till deras användarkonto, eller en Microsoft 365- eller Azure AD-grupp som användarkontot är medlem i, till SharePoint-grupperna. När användarkontona har lagts till tilldelas användarkontona, antingen direkt eller indirekt via medlemskap i en Microsoft 365- eller Azure AD-grupp, behörighetsnivån som är associerad med SharePoint-gruppen.
   
 Använda standard-SharePoint-grupper som ett exempel:
   
@@ -69,17 +69,17 @@ Använda standard-SharePoint-grupper som ett exempel:
     
  **Bästa praxis:** Även om du kan hantera behörigheter via enskilda användarkonton rekommenderar vi att du använder en enda Azure AD-grupp, en så kallad åtkomstgrupp, i stället. Detta förenklar hanteringen av behörigheter via medlemskap i åtkomstgruppen, i stället för att hantera listan över användarkonton för varje SharePoint-grupp.
   
-Azure AD-grupper för Office 365 skiljer sig från Office 365-grupper. Azure AD-grupper visas i Microsoft 365-administrationscentret med deras **typ** inställd på **Säkerhet** och har ingen e-postadress. Azure AD-grupper kan hanteras inom:
+Azure AD-grupper för Microsoft 365 skiljer sig från Microsoft 365-grupper. Azure AD-grupper visas i Microsoft 365-administrationscentret med deras **typ** inställd på **Säkerhet** och har ingen e-postadress. Azure AD-grupper kan hanteras inom:
   
 - Active Directory Domain Services (AD DS)
     
-    Det här är grupper som har skapats i din lokala AD DS-infrastruktur och synkroniserats med din Office 365-prenumeration. I administrationscentret för Microsoft 365 har dessa grupper **status** **för synkroniserad med active directory**.
+    Det här är grupper som har skapats i din lokala AD DS-infrastruktur och synkroniserats med din Microsoft 365-prenumeration. I administrationscentret för Microsoft 365 har dessa grupper **status** **för synkroniserad med active directory**.
     
 - Office 365
     
     Det här är grupper som har skapats med hjälp av microsoft 365-administrationscentret, Azure-portalen eller Microsoft PowerShell. I administrationscentret för Microsoft 365 har dessa grupper status **för** **molnet**.
     
- **Bästa praxis:** Om du använder AD DS lokalt och synkroniserar med din Office 365-prenumeration kan du utföra din användar- och grupphantering med AD DS.
+ **Bästa praxis:** Om du använder AD DS lokalt och synkroniserar med din Microsoft 365-prenumeration kan du utföra din användar- och grupphantering med AD DS.
   
 För isolerade SharePoint Online-gruppwebbplatser ser den rekommenderade gruppstrukturen ut så här:
   
@@ -89,7 +89,7 @@ För isolerade SharePoint Online-gruppwebbplatser ser den rekommenderade gruppst
 |\<webbplatsnamn> besökare  <br/> |\<webbplatsnamn> Tittare  <br/> |Läsa  <br/> |
 |\<webbplatsnamn> ägare  <br/> |\<webbplatsnamn> administratörer  <br/> |Fullständig kontroll  <br/> |
    
- **Bästa praxis:** Även om du kan använda antingen Office 365- eller Azure AD-grupper som medlemmar i SharePoint-grupper rekommenderar vi att du använder Azure AD-grupper. Azure AD-grupper, som hanteras antingen via AD DS eller Office 365, ger dig större flexibilitet att använda kapslade grupper för att tilldela behörigheter.
+ **Bästa praxis:** Även om du kan använda microsoft 365- eller Azure AD-grupper som medlemmar i SharePoint-grupper rekommenderar vi att du använder Azure AD-grupper. Azure AD-grupper, som hanteras antingen via AD DS eller Microsoft 365, ger dig större flexibilitet att använda kapslade grupper för att tilldela behörigheter.
   
 Här är standard-SharePoint-grupper som konfigurerats för att använda Azure AD-baserade åtkomstgrupper.
   
@@ -109,9 +109,9 @@ Här är ett exempel på SharePoint-grupper och åtkomstgrupper för en isolerad
 
 För ett projekt som är begränsat till ett litet antal personer passar en enda nivå av Azure AD-baserade åtkomstgrupper som läggs till i SharePoint-grupperna på webbplatsen de flesta scenarier. Men om du har ett stort antal personer och dessa personer redan är medlemmar i etablerade Azure AD-grupper kan du enklare tilldela SharePoint-behörigheter med hjälp av kapslade grupper eller grupper som innehåller andra grupper som medlemmar.
   
-Du vill till exempel skapa en isolerad SharePoint-onlinegruppwebbplats för samarbete mellan cheferna för försäljnings-, marknadsförings-, teknik-, juridiska och supportavdelningar och de avdelningar som redan är sina egna grupper med ett företagskonto Medlemskap. I stället för att skapa en ny grupp för de nya webbplatsmedlemmarna och placera alla enskilda verkställande användarkonton i den, placera de befintliga ledningsgrupperna för varje avdelning i den nya gruppen.
+Du vill till exempel skapa en isolerad SharePoint-onlinegruppwebbplats för samarbete mellan cheferna för försäljnings-, marknadsförings-, teknik-, juridiska och supportavdelningar och de avdelningar som redan är deras egna grupper med ett antal företagsprofiler. I stället för att skapa en ny grupp för de nya webbplatsmedlemmarna och placera alla enskilda verkställande användarkonton i den, placera de befintliga ledningsgrupperna för varje avdelning i den nya gruppen.
   
- Om du delar en Office 365-prenumeration mellan flera organisationer kan det bli svårt att hantera en enskild gruppmedlemskap för en isolerad plats för en organisation på grund av det stora antalet användarkonton. I det här fallet kan du använda kapslade Azure AD-grupper för varje organisation som innehåller grupperna inom deras organisationer för att hantera behörigheterna.
+ Om du delar en Microsoft 365-prenumeration mellan flera organisationer kan det bli svårt att hantera en enda gruppmedlemskap för en isolerad webbplats för en organisation på grund av det stora antalet användarkonton. I det här fallet kan du använda kapslade Azure AD-grupper för varje organisation som innehåller grupperna inom deras organisationer för att hantera behörigheterna.
   
 Så här använder du kapslade Azure AD-grupper:
   
@@ -122,7 +122,7 @@ Så här använder du kapslade Azure AD-grupper:
 3.  Om du vill ha rätt åtkomstnivå för behållaråtkomstgruppen identifierar du SharePoint-gruppen och motsvarande behörighetsnivå.
     
 > [!NOTE]
-> Du kan inte använda kapslade Office 365-grupper. 
+> Du kan inte använda kapslade Microsoft 365-grupper. 
   
 Här är ett exempel på kapslade Azure AD-grupper för projectx-medlemsåtkomstgruppen.
   

@@ -16,24 +16,24 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Lär dig var du kan visa information om skadliga filer som identifierats i SharePoint, OneDrive eller Teams och hur du vidtar åtgärder för dessa filer.
-ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 95f497c5be16d1ba1d4fa9fc57f0dd9650450414
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955561"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635406"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Visa information om skadliga filer som upptäckts i SharePoint, OneDrive eller Microsoft Teams
 
 [Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) skyddar din organisation från skadliga filer i dokumentbibliotek och gruppwebbplatser. När en skadlig fil upptäcks blockeras filen så att ingen kan öppna, kopiera, flytta eller dela den förrän ytterligare åtgärder vidtas av organisationens säkerhetsteam. Läs den här artikeln om du vill lära dig hur du visar information om identifierade filer och vilka åtgärder som ska vidtas. 
 
-För att kunna utföra de uppgifter som beskrivs i den här artikeln måste du ha de behörigheter som krävs [för Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+För att kunna utföra de uppgifter som beskrivs i den här artikeln måste du ha de behörigheter som krävs [för Säkerhetsefterlevnadscenter &amp; ](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Visa rapporter med information om identifierade filer
 
 Om du vill visa status och detaljerad information om filer som har identifierats av Office 365 ATP kan du använda rapporten Status för hotskydd.
   
-1. I [Säkerhetsefterlevnadscenter &amp; för Office 365](https://protection.office.com)väljer du **Rapporter om** \> **skydd av instrumentpanelshotskydd** **Dashboard** \> .
+1. Välj **Rapporter om** \> skydd mot **instrumentpanelsskydd** \> **Threat Protection Status**i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com).
     
 2. I det övre högra hörnet av rapporten väljer du **Visa informationstabell**.
     
@@ -45,7 +45,7 @@ Om du vill visa status och detaljerad information om filer som har identifierats
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Visa och vidta åtgärder för filer i karantän
 
-1. I Office 365 &amp; Security Compliance Center väljer du **Review** \> **Karantän** **för granskning av hothantering** \> . (Du kan också [https://protection.office.com/quarantine](https://protection.office.com/quarantine)gå direkt till .)
+1. I Security &amp; Compliance Center väljer du **Review** \> **Karantän** **för granskning av hothantering** \> . (Du kan också [https://protection.office.com/quarantine](https://protection.office.com/quarantine)gå direkt till .)
     
 2. I det övre vänstra hörnet ändrar du rullgardinsmenyn från **e-post** till **filer**. Om resultatlistan innehåller för många objekt använder du **funktionen Filter** för att begränsa markeringen.
     

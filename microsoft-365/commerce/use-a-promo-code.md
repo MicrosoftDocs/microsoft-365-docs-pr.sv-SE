@@ -1,5 +1,5 @@
 ---
-title: Använd din Office 365-kampanjkod för att få rabatt på priset
+title: Använd din kampanjkod för att sänka priset
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,34 +20,34 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Läs om hur du använder en kampanjkod på din Office 365-prenumeration för att sänka priset och hur du felsöker kampanjkod i händelse av ett fel.
+description: Lär dig hur du använder en kampanjkod på din Microsoft 365-prenumeration för att sänka priset och hur du felsöker kampanjkod vid ett fel.
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42812316"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631863"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>Använd din Office 365-kampanjkod för att få rabatt på priset
+# <a name="use-your-promo-code-to-reduce-price"></a>Använd din kampanjkod för att sänka priset
 
-När du köper en prenumeration kan du använda en kampanjkod för att sänka priset. Läs den här artikeln om du vill lära dig hur du tillämpar en kampanjkod på din prenumeration, om du vill veta mer om [kampanjkodtermerna](#promo-code-terms)och [felsöka kampanjkoder](#troubleshooting-promo-codes).
+När du köper en prenumeration kan du använda en kampanjkod för att sänka priset. Läs den här artikeln om du vill lära dig hur du använder en kampanjkod på din prenumeration, om du vill veta mer om [kampanjkodsvillkoren](#promo-code-terms)och [felsöka kampanjkoder](#troubleshooting-promo-codes).
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Använda en kampanjkod för din prenumeration
 
 1. Börja ditt köp genom att antingen köpa en ny prenumeration eller genom att lägga till tjänster i en befintlig prenumeration.
     
-2. När du checkar ut väljer du **Ha en kampanj- eller rabattkod?, och anger sedan koden i rutan. 
+2. När du checkar ut väljer du **Har en kampanj- eller rabattkod?, och anger sedan koden i rutan. 
   
-3. Välj **Använd kampanjkod**. Du bör se bekräftelse på att den har tillämpats. Om du ser ett annat meddelande läser du i [Felsökning för kampanjkoder](#troubleshooting-promo-codes) för att ta reda på orsaken. 
+3. Välj **Använd kampanjkod**. Du bör se en bekräftelse på att den har tillämpats. Om du ser ett annat meddelande läser du i [Felsökning för kampanjkoder](#troubleshooting-promo-codes) för att ta reda på orsaken. 
     
-4. Fortsätt kolla in. På sidan för orderbekräftelse ser du din rabattkod som ingår i beloppet. 
+4. Fortsätt kolla in. På sidan orderbekräftelse visas rabattkoden som ingår i beloppet. 
     
 När som helst efter att du slutfört ditt köp kan du se rabatten från kampanjkoden på fakturan. Mer information finns i [Visa din](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Kampanjkodsvillkor
 
-Följande riktlinjer gäller för kampanjkoder för Office 365 för företag-prenumerationer.
+Följande riktlinjer gäller för kampanjkoder för Microsoft 365 för företagsprenumerationer.
   
 - **Antal kampanjkoder per abonnemang** Du kan använda en kampanjkod för flera abonnemang i samma beställning, men du kan inte använda flera kampanjkoder för samma abonnemang. 
     

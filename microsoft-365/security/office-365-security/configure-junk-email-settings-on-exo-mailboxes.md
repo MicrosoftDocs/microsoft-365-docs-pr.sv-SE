@@ -16,16 +16,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 2b138830cff7337d7949606cc110ea8f7ae1c0ff
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897069"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638446"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365
 
-Organisatoriska anti-spam-inställningar i Exchange Online styrs av Exchange Online Protection (EOP). Mer information finns [i Skydd mot skräppost i Office 365](anti-spam-protection.md).
+Organisatoriska anti-spam-inställningar i Exchange Online styrs av Exchange Online Protection (EOP). Mer information finns i [Skydd mot skräppost i Office 365](anti-spam-protection.md).
 
 Men det finns också specifika inställningar mot skräppost som administratörer kan konfigurera på enskilda postlådor i Exchange Online:
 
@@ -43,11 +43,11 @@ Administratörer kan använda Exchange Online PowerShell för att inaktivera, ak
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Du måste tilldelas behörigheter innan du kan göra dessa procedurer. Du behöver rollen **E-postmottagare** (som tilldelas rollgrupperna **Organisationshantering,** **Mottagarhantering**och **Anpassade e-postmottagare** som standard) eller rollen **Användaralternativ** (som tilldelas rollgrupperna **Organisationshantering** och **HelpDesk** som standard). Information om hur du lägger till användare i rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Observera att en användare med standardbehörigheter kan göra samma procedurer på sin egen postlåda, så länge de har [åtkomst till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera regler för e-postflöde (kallas även transportregler) i lokala Exchange för att översätta EOP-skräppostfiltreringsutlåtandet så att skräppostregeln kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Använda Exchange Online PowerShell för att aktivera eller inaktivera skräppostregeln i en postlåda
 
@@ -74,11 +74,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
- **Anmärkningar:**
+ **Anmärkningar**:
 
 - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör föregående kommando. Om du vill ignorera det `-ErrorAction SlientlyContinue` här felet för massåtgärder lägger du till i kommandot **Set-MailboxJunkEmailConfiguration.**
 
-- Även om du inaktiverar skräppostregeln kan Outlook-skräppostfiltret (beroende på hur det är konfigurerat) också avgöra om ett meddelande är skräppost och kan flytta meddelanden till mappen Inkorgen eller Skräppost baserat på den egna skräppostutlåtandet och safelist-samlingen på brevlådan. Mer information finns [i avsnittet Om skräppostinställningar i Outlook](#about-junk-email-settings-in-outlook) i det här avsnittet.
+- Även om du inaktiverar skräppostregeln kan Outlook Junk Email Filter (beroende på hur det är konfigurerat) också avgöra om ett meddelande är skräppost och kan flytta meddelanden till mappen Inkorgen eller Skräppost baserat på dess egna skräppostutlåtande och safelist-samlingen på postlådan. Mer information finns [i avsnittet Om skräppostinställningar i Outlook](#about-junk-email-settings-in-outlook) i det här avsnittet.
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
@@ -143,7 +143,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
- **Anmärkningar:**
+ **Anmärkningar**:
 
 - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör de tidigare kommandona. Om du vill ignorera det `-ErrorAction SlientlyContinue` här felet för massåtgärder lägger du till i kommandot **Set-MailboxJunkEmailConfiguration.**
 
@@ -169,7 +169,7 @@ Om du vill kontrollera att du har konfigurerat insamlingen för säker lista på
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Om inställningar för skräppost i Outlook
 
-Om du vill aktivera, inaktivera och konfigurera inställningarna för skräppostfilter på klientsidan som är tillgängliga i Outlook använder du Grupprincip. Mer information finns i [Administrativa mallfiler (ADMX/ADML) och Anpassningsverktyg för Office 365 ProPlus, Office 2019 och Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+Om du vill aktivera, inaktivera och konfigurera inställningarna för skräppostfilter på klientsidan som är tillgängliga i Outlook använder du Grupprincip. Mer information finns i [Administrativa mallfiler (ADMX/ADML) och Anpassningsverktyg för Office för Microsoft 365-appar för företag, Office 2019 och Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 När skräppostfiltret i Outlook är inställt på standardvärdet Ingen **automatisk filtrering** i **Junk** \> **alternativ**för **skräppost** \> i **hemmet** \> försöker Outlook inte klassificera massage som skräppost, men använder fortfarande samlingen för betrodda användare (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockerade avsändare) för att flytta meddelanden till mappen Skräppost efter leverans. Mer information om dessa inställningar finns [i Översikt över skräppostfiltret](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

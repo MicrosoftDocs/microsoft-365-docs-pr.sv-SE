@@ -1,5 +1,5 @@
 ---
-title: Funktionsbehörigheter i EOP
+title: Behörigheter för funktioner i EOP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Vilka behörigheter som krävs för att utföra uppgifter för att hantera Microsoft Exchange Online Protection (EOP) varierar beroende på vilken funktion du hanterar.
-ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 146bf34f157eb30e680ad9e0c3e53501d6e7b425
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42809344"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638124"
 ---
-# <a name="feature-permissions-in-eop"></a>Funktionsbehörigheter i EOP
+# <a name="feature-permissions-in-eop"></a>Behörigheter för funktioner i EOP
 
 De behörigheter som krävs för att utföra uppgifter för att hantera Exchange Online Protection (EOP) varierar beroende på vilken funktion du hanterar.
 
-Om du vill konfigurera EOP måste du vara en Global Office 365-administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering).
+Om du vill konfigurera EOP måste du vara global administratör eller exchange-företagsadministratör (rollgruppen Organisationshantering).
 
 ## <a name="exchange-online-protection-permissions"></a>Behörigheter för Exchange Online Protection
 
@@ -36,7 +36,7 @@ Mer information om vilka behörigheter du behöver för att hantera EOP-funktion
 |Regler för e-postflöde|Organisationshantering <br/><br/> Hantering av arkivhandlingar|
 |Domäner|Organisationshantering <br/><br/> Endast visningsorganisation|
 |Avancerat skydd mot hot (ATP)|Organisationshantering <br/><br/> Hygien management|
-|Office 365-kontakter|Organisationshantering|
+|Microsoft 365-kontakter|Organisationshantering|
 |Meddelandespårning|Organisationshantering <br/><br/> Endast visningsorganisation|
 |Organisationskonfiguration|Organisationshantering|
 |Karantän|Organisationshantering <br/><br/> Endast visningsorganisation <br/><br/> Hygien management|

@@ -1,5 +1,5 @@
 ---
-title: Visa resultaten av en automatiserad undersökning i Office 365
+title: Visa resultaten av en automatiserad undersökning i Microsoft 365
 keywords: AIR, autoIR, ATP, automatiserad, utredning, svar, sanering, hot, avancerad, hot, skydd
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Under och efter en automatisk undersökning i Office 365 kan du visa resultat och viktiga resultat.
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Under och efter en automatisk undersökning i Microsoft 365 kan du visa resultaten och viktiga resultat.
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225981"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634634"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Information och resultat av en automatiserad undersökning i Office 365
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat av en automatiserad undersökning i Microsoft 365
 
 När en [automatiserad undersökning](office-365-air.md) inträffar i [Office 365 Advanced Threat Protection](office-365-atp.md)finns information om den undersökningen tillgänglig under och efter den automatiska granskningsprocessen. Om du har de behörigheter som krävs kan du visa dessa uppgifter i en undersökningsinformationsvy. Vyn Undersökningsinformation ger dig aktuell status och möjlighet att godkänna väntande åtgärder. 
 
@@ -46,7 +46,7 @@ Undersökningsstatusen visar hur analysen och åtgärderna fortskrider. När und
 
 ## <a name="view-details-of-an-investigation"></a>Visa detaljer om en undersökning
 
-1. Gå till Office 365 Security & Compliance[https://protection.office.com](https://protection.office.com)Center ( ) och logga in.
+1. Gå till Security & Compliance Center[https://protection.office.com](https://protection.office.com)( ) och logga in.
 
 2. Välj ett av följande alternativ:
 
@@ -66,9 +66,9 @@ Undersökningsstatusen visar hur analysen och åtgärderna fortskrider. När und
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Visa information om en avisering som är relaterad till en undersökning
 
-Vissa typer av aviseringar utlöser automatisk undersökning i Office 365. Mer information finns i [Aviseringar](automated-investigation-response-office.md#alerts). Använd följande procedur för att visa information om en avisering som är associerad med en automatisk undersökning.
+Vissa typer av aviseringar utlöser automatisk undersökning i Microsoft 365. Mer information finns i [Aviseringar](automated-investigation-response-office.md#alerts). Använd följande procedur för att visa information om en avisering som är associerad med en automatisk undersökning.
 
-1. Gå till Office 365 Security & Compliance[https://protection.office.com](https://protection.office.com)Center ( ) och logga in. 
+1. Gå till Security & Compliance Center[https://protection.office.com](https://protection.office.com)( ) och logga in. 
 
 2. Gå till **Hot management** > **Undersökningar**.
 
@@ -215,7 +215,7 @@ Du kan:
 
 |Analyzer | Beskrivning |
 |-----|-----|
-|DLP brott utredning |Undersöka eventuella överträdelser som upptäckts av [Office 365 Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
+|DLP brott utredning |Undersöka eventuella överträdelser som upptäckts av [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |E-postindikatorer extrahering |Extrahera indikatorer från sidhuvudet, brödtexten och innehållet i ett e-postmeddelande för undersökning |
 |Rykte för fil hash |Identifiera avvikelser baserat på filhÃers för användare och datorer i organisationen |
 |Identifiering av e-postkluster |Analys av e-postkluster baserat på rubrik, brödtext, innehåll och webbadresser |

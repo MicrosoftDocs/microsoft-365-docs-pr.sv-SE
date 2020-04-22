@@ -1,27 +1,27 @@
 ---
-title: Tjänstbeskrivning för Microsoft Managed Desktop
+title: Tjänstbeskrivning av Microsoft Hanterat skrivbord
 description: Beskriver vad som ingår i Microsoft Managed Desktop som en tjänst
 keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42805437"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637870"
 ---
-# <a name="microsoft-managed-desktop-service-description"></a>Tjänstbeskrivning för Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-service-description"></a>Tjänstbeskrivning av Microsoft Hanterat skrivbord
 
-Microsoft Managed Desktop är en tjänst som ger användarna en säker modern upplevelse och alltid håller enheterna uppdaterade med de senaste versionerna av Windows 10 Enterprise Edition, Office 365 ProPlus och Microsofts säkerhetstjänster, inklusive:
+Microsoft Managed Desktop är en tjänst som ger användarna en säker modern upplevelse och alltid håller enheterna uppdaterade med de senaste versionerna av Windows 10 Enterprise Edition, Microsoft 365 Apps för företag och Microsofts säkerhetstjänster, inklusive:
 
 - Förenklad registrering av nya enheter
 - Konfiguration av enheter
 - Funktioner för att skydda användare och enheter, inklusive Windows Hello, BitLocker, SecureBoot och virtualiseringsbaserad säkerhet enligt Microsofts metodtips
 - Övervaknings- och reparationstjänster för enhetssäkerhet
 - Appkompatibilitet, via [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Hantering av uppdateringar för Windows 10- och Office 365 ProPlus-appar
+- Hantering av uppdateringar för Windows 10 och Microsoft 365 Apps för företagsappar
 - Analytiska data om enhets- och appanvändning
 - IT-stöd för dina slutanvändare
 - Operativt stöd för IT-proffs

@@ -1,5 +1,5 @@
 ---
-title: Säkerhets- och efterlevnadsfunktioner för Microsoft 365 Business
+title: Säkerhets- och efterlevnadsfunktioner för Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,23 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Lär dig mer om de säkerhetsfunktioner som med microsoft 365 Business kan skydda data på datorer, telefoner och surfplattor.
-ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: Lär dig mer om de säkerhetsfunktioner som med följer med Microsoft 365 Business Premium för att skydda dina data på datorer, telefoner och surfplattor.
+ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153807"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635153"
 ---
-# <a name="microsoft-365-business-security-and-compliance-features"></a>Säkerhets- och efterlevnadsfunktioner för Microsoft 365 Business
+# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Säkerhets- och efterlevnadsfunktioner för Microsoft 365 Business Premium
 
-Microsoft 365 Business erbjuder förenklade säkerhetsfunktioner för att skydda dina data på datorer, telefoner och surfplattor.
+Microsoft 365 Business Premium erbjuder förenklade säkerhetsfunktioner som skyddar dina data på datorer, telefoner och surfplattor.
     
-## <a name="microsoft-365-business-admin-center-security-features"></a>Säkerhetsfunktioner för Microsoft 365 Business-administrationscenter
+## <a name="microsoft-365-admin-center-security-features"></a>Säkerhetsfunktioner för microsoft 365-administrationscenter
 
 [![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Du kan hantera många av säkerhetsfunktionerna i Microsoft 365 Business i administrationscentret, vilket ger dig ett förenklat sätt att aktivera eller inaktivera dessa funktioner. I administrationscentret kan du göra följande:
+Du kan hantera många av säkerhetsfunktionerna i Microsoft 365 Business Premium i administrationscentret, vilket ger dig ett förenklat sätt att aktivera eller inaktivera dessa funktioner. I administrationscentret kan du göra följande:
   
 - [Ange inställningar för programhantering för Android- eller iOS-enheter](app-protection-settings-for-android-and-ios.md) . 
     
@@ -62,9 +62,9 @@ Du kan hantera många av säkerhetsfunktionerna i Microsoft 365 Business i admin
     
 ## <a name="additional-security-features"></a>Ytterligare säkerhetsfunktioner 
 
-Avancerade funktioner i Microsoft 365 Business är tillgängliga för att skydda ditt företag mot cyberhot och skydda känslig information.
+Avancerade funktioner i Microsoft 365 Business Premium finns tillgängliga för att skydda ditt företag mot cyberhot och skydda känslig information.
   
-- **[Office 365 Avancerat skydd](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 ATP](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     Advanced Threat Protection (ATP) hjälper till att skydda ditt företag mot sofistikerade nätfiske- och utpressningsattacker som är utformade för att äventyra medarbetarnas eller kundinformationen. Funktioner inkluderar:
     
@@ -74,13 +74,13 @@ Avancerade funktioner i Microsoft 365 Business är tillgängliga för att skydda
 
 - **[De fullständiga funktionerna för Intune i Azure-portalen](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Med åtkomst till Intune-administrationscentret i Azure-portalen kan du konfigurera ytterligare säkerhetsfunktioner, till exempel hantering av MacOS-enheter, iPhone och Android-enheter, tillsammans med avancerad enhetshantering för Windows, som inte är tillgängliga via Microsoft 365 Business administrationscenter.
+    Genom att komma åt Intune-administrationscentret i Azure-portalen kan du konfigurera ytterligare säkerhetsfunktioner, till exempel hantering av MacOS-enheter, iPhone och Android-enheter, tillsammans med avancerad enhetshantering för Windows, som inte är tillgängliga via Microsoft 365-administrationscenter.
 - **Samma [villkorliga åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) som Azure AD Premium P1-abonnemang**
 
 
     Villkorlig åtkomst kan skydda din organisation från inloggningsrisk, åtkomstförsök från ett oväntat nätverk eller språk, åtkomstförsök från riskfyllda enhetstyper och så vidare. Principer för villkorlig åtkomst tillämpas efter att den första autentiseringen har slutförts och använder signaler från den första autentiseringshändelsen för att avgöra om försöket ska godkännas, nekas eller om fler bevis (till exempel en andra form av identifiering) krävs.
 
-    Funktionerna för villkorlig åtkomst ingår:
+    De villkorade åtkomstfunktionerna som ingår är:
 
     - Åtkomst baserat på användarnamn, grupp och roll
     - Åtkomst [baserat på en app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
@@ -95,7 +95,7 @@ Avancerade funktioner i Microsoft 365 Business är tillgängliga för att skydda
     
 ## <a name="compliance-features"></a>Funktioner för efterlevnad
 
-Din Microsoft 365 Business-prenumeration innehåller funktioner som hjälper dig att upprätthålla efterlevnads- och regelstandarder.
+Din Microsoft 365 Business Premium-prenumeration innehåller funktioner som hjälper dig att upprätthålla efterlevnads- och regelstandarder.
 
 - **[Översikt över principer för att förebygga dataförlust](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
@@ -105,22 +105,22 @@ Din Microsoft 365 Business-prenumeration innehåller funktioner som hjälper dig
     
     Exchange Online Archiving licens gör att meddelanden enkelt kan arkiveras med kontinuerlig säkerhetskopiering av data. Den lagrar alla en användares e-postmeddelanden, inklusive borttagna objekt, om de behövs senare för identifiering eller återställning. Dessutom kan du använda olika lagringsprinciper för att bevara e-postdata för rättstvister, eDiscovery eller för att uppfylla efterlevnadskraven.
     
-- **[Känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[Markera som känsligt](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business innehåller alla funktioner i [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Med det här abonnemanget kan du skapa **känslighetsetiketter** som gör att du kan styra åtkomsten till känslig information i e-post och dokument, med kontroller som "Vidarebefordra inte" och "Kopiera inte". Du kan också klassificera känslig information som "Konfidentiell" och ange hur sekretessbelagd information kan delas utanför och inom företaget. Kryptering i företagsklass är lätt att använda för e-post och dokument för att hålla din information privat. Du kan också installera klienttillägget Azure Information Protection för Office-appar. Mer information finns i [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). För känslighetsetiketter installerar **du AzInfoProtection_UL.exe**.
+   Microsoft 365 Business Premium innehåller alla funktioner i [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Med det här abonnemanget kan du skapa **känslighetsetiketter** som gör att du kan styra åtkomsten till känslig information i e-post och dokument, med kontroller som "Vidarebefordra inte" och "Kopiera inte". Du kan också klassificera känslig information som "Konfidentiell" och ange hur sekretessbelagd information kan delas utanför och inom företaget. Kryptering i företagsklass är lätt att använda för e-post och dokument för att hålla din information privat. Du kan också installera klienttillägget Azure Information Protection för Office-appar. Mer information finns i [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). För känslighetsetiketter installerar **du AzInfoProtection_UL.exe**.
 
-Du kan hantera dessa &amp; funktioner i säkerhetsefterlevnadscentret och Administrationscentret för Intune. Med tiden läggs de förenklade kontrollerna till i microsoft 365 Business-administrationscentret.
+Du kan hantera dessa &amp; funktioner i säkerhetsefterlevnadscentret och Administrationscentret för Intune. Med tiden läggs de förenklade kontrollerna till i Microsoft 365 admin center.
   
     
 ## <a name="faq"></a>Vanliga frågor och svar
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>Är dessa säkerhetsfunktioner tillgängliga på alla marknader?
   
-Ja, dessa funktioner är tillgängliga på alla marknader där Microsoft 365 Business säljs.
+Ja, dessa funktioner är tillgängliga på alla marknader där Microsoft 365 Business Premium säljs.
   
 ### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Hur hittar jag &amp; säkerhetsorganisationscentret?
   
-1. [Logga in på Microsoft 365 Business](https://portal.microsoft.com/) med hjälp av administratörsuppgifterna. 
+1. [Logga in på Microsoft 365 Business Premium](https://portal.microsoft.com/) med hjälp av administratörsuppgifterna. 
     
 2. Leta reda på administrationscenter i den vänstra **navigeringscentralen** och expandera den. 
     

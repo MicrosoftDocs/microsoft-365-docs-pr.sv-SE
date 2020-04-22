@@ -1,5 +1,5 @@
 ---
-title: Säkra Windows 10-datorer
+title: Skydda Windows 10-datorer
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,17 +21,17 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Lär dig hur du skyddar Windows 10-datorer när du har konfigurerat Microsoft 365 Business.
-ms.openlocfilehash: 068ac8c8b6011c879d859024b44192cb0a6d3d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Lär dig hur du skyddar Windows 10-datorer när du har konfigurerat Microsoft 365 för företag.
+ms.openlocfilehash: 71fd9202b04c2559e992977f1c21a129dd5455b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42807660"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633007"
 ---
-# <a name="secure-windows-10-computers"></a>Säkra Windows 10-datorer
+# <a name="secure-windows-10-computers"></a>Skydda Windows 10-datorer
 
-När du har [konfigurerat](set-up.md) Microsoft 365 Business är det dags att skydda Windows 10-datorerna i organisationen från stöld och skadliga hot som virus och skadlig kod.
+När du har [konfigurerat](set-up.md) Microsoft 365 för företag är det dags att skydda Windows 10-datorerna i organisationen från stöld och skadliga hot som virus och skadlig kod.
 Titta på det här videoklippet om du vill ha en översikt över hur du konfigurerar principer för att skydda dina Windows 10-datorer.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 

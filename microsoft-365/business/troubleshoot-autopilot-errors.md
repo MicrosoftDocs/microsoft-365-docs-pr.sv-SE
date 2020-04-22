@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: Lär dig hur du felsöker fel som kan visas när du arbetar med Autopilot-enhetsfiler i Microsoft 365 Business.
-ms.openlocfilehash: 8b99e848fa040711785b921d12548f16dadb09af
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig hur du felsöker fel som kan visas när du arbetar med AutoPilot-enhetsfiler i Microsoft 365 Business Premium.
+ms.openlocfilehash: 0c0742e5bf17c85cedfb421cabfd87c0e2184ba5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212142"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635053"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Felsöka AutoPilot-enhetsfel
 
 ## <a name="device-file-error-messages"></a>Felmeddelanden för enhetsfil
 
-Här finns information om några av de fel som kan visas när du arbetar med AutoPilot-enhetsfiler i Microsoft 365 Business. 
+Här finns information om några av de fel som kan visas när du arbetar med AutoPilot-enhetsfiler i Microsoft 365 Business Premium. 
   
 |**Felkod**|**Åtgärdat för att försöka**|
 |:-----|:-----|

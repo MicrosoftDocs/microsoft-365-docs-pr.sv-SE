@@ -1,5 +1,5 @@
 ---
-title: Säkerhetskopiera data innan du byter Office 365 för företag-abonnemang
+title: Säkerhetskopiera data innan du byter Microsoft 365 för affärsplaner
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Säkerhetskopiera Outlook-, OneDrive-, Yammer- och SharePoint-innehåll innan du byter Office 365-prenumerationer eller om en användare lämnar organisationen.
-ms.openlocfilehash: 3d8196bcbd0296e1b6e681b1077d165e168d2f2f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Säkerhetskopiera Outlook-, OneDrive-, Yammer- och SharePoint-innehåll innan du byter Microsoft 365-prenumerationer eller om en användare lämnar organisationen.
+ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105753"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636086"
 ---
-# <a name="back-up-data-before-switching-office-365-for-business-plans"></a>Säkerhetskopiera data innan du byter Office 365 för företag-abonnemang
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Säkerhetskopiera data innan du byter Microsoft 365 för affärsplaner
 
-Om en användare byter till en annan prenumeration som har färre datarelaterade tjänster eller lämnar organisationen går det att ladda ned en kopia av användardata som lagras i Office 365 innan de byter till den nya prenumerationen.
+Om en användare kommer att växlas till en annan prenumeration som har färre datarelaterade tjänster eller en användare lämnar organisationen, kan en kopia av deras data som lagras i Microsoft 365 hämtas innan de växlas till den nya prenumerationen.
   
 ## <a name="save-a-copy-of-outlook-information"></a>Spara en kopia av Outlook-information
 
@@ -48,7 +48,7 @@ Administratörer kan exportera alla meddelanden, anteckningar, filer, ämnen, an
   
 ## <a name="how-to-save-sharepoint-information"></a>Spara SharePoint-information
 
-Om en användare växlas från en prenumeration som har SharePoint Online till en som inte har den visas inte längre **SharePoint-panelen** på deras Office 365-meny.
+Om en användare växlas från en prenumeration som har SharePoint Online till en som inte har den, visas inte **sharepoint-panelen** längre på Microsoft 365-menyn.
   
 Så länge den nya prenumerationen är inom samma organisation som de har bytt från kan användaren fortfarande se SharePoint-gruppwebbplatsen. De kan visa och uppdatera anteckningsböcker, dokument, uppgifter och kalendrar med hjälp av direktlänkarna på gruppwebbplatsen.
   

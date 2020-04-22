@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: I det här avsnittet beskrivs hur du konfigurerar Microsoft Exchange Online Protection (EOP). Om du landade här från guiden Office 365-domäner går du tillbaka till office 365-domänguiden om du inte vill använda Exchange Online Protection. Om du letar efter mer information om hur du konfigurerar kopplingar läser du Konfigurera e-postflöde med kopplingar i Office 365.
-ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 9a2c876ac7696adfcabf87d4ad13e29374509f1b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638314"
 ---
 # <a name="set-up-your-eop-service"></a>Konfigurera din EOP-tjänst
 
@@ -30,7 +30,7 @@ I det här avsnittet beskrivs hur du konfigurerar Microsoft Exchange Online Prot
 
 - Beräknad tid för att slutföra den här uppgiften: 1 timme
 
-- Om du vill konfigurera kopplingar måste ditt konto vara en Global Office 365-administratör eller en Exchange-företagsadministratör (rollgruppen Organisationshantering). Information finns [i Funktionsbehörigheter i EOP](feature-permissions-in-eop.md).
+- Om du vill konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering). Information finns [i Funktionsbehörigheter i EOP](feature-permissions-in-eop.md).
 
 - Om du inte har registrerat dig för EOP besöker du [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) och väljer att köpa eller prova tjänsten.
 
@@ -54,11 +54,11 @@ Innan du konfigurerar din e-post så att den flödar till och från EOP-tjänste
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Steg 3: Använd EAC för att ställa in e-postflöde
 
-Skapa kopplingar i Administrationscenter för Exchange (EAC) som möjliggör e-postflöde mellan EOP och dina lokala e-postservrar. Detaljerade instruktioner finns i [Konfigurera kopplingar för att dirigera e-post mellan Office 365 och dina egna e-postservrar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
+Skapa kopplingar i Administrationscenter för Exchange (EAC) som möjliggör e-postflöde mellan EOP och dina lokala e-postservrar. Detaljerade instruktioner finns i [Konfigurera kopplingar för att dirigera e-post mellan Microsft 365 och dina egna e-postservrar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Hur vet du att den här uppgiften fungerade?
 
-Kontrollera e-postflödet mellan tjänsten och din miljö. Mer information finns i [Testa e-postflödet genom att verifiera dina Office 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+Kontrollera e-postflödet mellan tjänsten och din miljö. Mer information finns i [Testa e-postflödet genom att validera dina Microsoft 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Steg 4: Tillåt inkommande port 25 SMTP-åtkomst
 
@@ -71,17 +71,17 @@ När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridn
 
 Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje användares skräppostmapp måste du utföra ett par konfigurationssteg. Stegen finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
 
-Följ konfigurationsstegen för Office 365-domänen för att uppdatera MX-posten för din domän så att din inkommande e-post flödar via EOP. Var noga med att peka din MX-post direkt till EOP i stället för att ha en tredje part filtrering tjänst relä e-post till EOP. Mer information finns i [Skapa DNS-poster för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)igen.
+Följ stegen för domänkonfiguration för att uppdatera MX-posten för din domän, så att din inkommande e-post flödar via EOP. Var noga med att peka din MX-post direkt till EOP i stället för att ha en tredje part filtrering tjänst relä e-post till EOP. Mer information finns i [Skapa DNS-poster för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)igen.
 
 ### <a name="how-do-you-know-this-task-worked"></a>Hur vet du att den här uppgiften fungerade?
 
 Nu har du verifierat tjänstleverans för en korrekt konfigurerad utgående lokal anslutningsapp och du har verifierat att MX-posten pekar på EOP. Du kan nu välja att köra följande ytterligare tester för att kontrollera att ett e-postmeddelande kommer att levereras av tjänsten till din lokala miljö:
 
-- Kontrollera e-postflödet mellan tjänsten och din miljö. Mer information finns i [Testa e-postflödet genom att verifiera dina Office 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+- Kontrollera e-postflödet mellan tjänsten och din miljö. Mer information finns i [Testa e-postflödet genom att validera dina Microsoft 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 - Skicka ett e-postmeddelande från ett webbaserat e-postkonto till en e-postmottagare i organisationen vars domän matchar domänen som du lade till i tjänsten. Bekräfta leveransen av meddelandet till den lokala postlådan med Microsoft Outlook eller en annan e-postklient.
 

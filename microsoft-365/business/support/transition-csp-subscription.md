@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, csp-prenumeration på övergång
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504116"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635073"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Överföra en Microsoft 365 Business CSP-prenumeration
 
@@ -91,7 +91,7 @@ I följande tabell sammanfattas effekten på apphanteringsprinciperna på mobila
 | **Återställ PIN-kod när inloggningen misslyckas** | Begränsad åtkomst till appar | Ingen åtkomstbegränsning på appnivå |
 | **Kräv att användare loggar in igen efter att Office-programmen har varit inaktiva** | Inloggning krävs | Ingen inloggning krävs |
 | **Neka åtkomst till arbetsfiler på jailbrokade eller rotade enheter** | Arbetsfiler kan inte nås på jailbroken/rooted-enheter | Arbetsfiler kan nås på jailbroken/rooted-enheter |
-| **Tillåt användare att kopiera innehåll från Office-appar till personliga appar** | Kopiera/klistra in begränsade till appar som är tillgängliga som en del av Microsoft 365 Business-prenumeration | Kopiera/klistra in tillgängligt för alla appar |
+| **Tillåt användare att kopiera innehåll från Office-appar till personliga appar** | Kopiera/klistra in begränsade till appar som är tillgängliga som en del av Microsoft 365-prenumerationen | Kopiera/klistra in tillgängligt för alla appar |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Windows 10-datorer påverkar prenumerationens utgång
 

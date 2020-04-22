@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Använd den nya säkerhetsinstrumentpanelen för att granska Status för skydd mot hotskydd i Office 365 och visa och agera på säkerhetsaviseringar.
-ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537407"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632523"
 ---
 # <a name="security-dashboard"></a>Instrumentpanel för säkerhet
 
@@ -33,12 +33,12 @@ Titta på videon för att få en översikt och läs sedan den här artikeln om d
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-Beroende på vad organisationens Office 365-prenumeration innehåller innehåller säkerhetsinstrumentpanelen flera widgetar, till exempel Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware med mera, enligt beskrivningen i följande avsnitt.
+Beroende på vad organisationens prenumeration innehåller innehåller säkerhetsinstrumentpanelen flera widgetar, till exempel Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware med mera, enligt beskrivningen i följande avsnitt.
 
-Om du vill visa säkerhetsinstrumentpanelen går du till **instrumentpanelen** **för hothantering** \> i [Office 365 Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+Om du vill visa säkerhetsinstrumentpanelen går du till **instrumentpanelen** **för hothantering** \> i [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 > [!NOTE]
-> Du måste vara en global Office 365-administratör, en säkerhetsadministratör eller en säkerhetsläsare för att kunna visa säkerhetsinstrumentpanelen. Vissa widgetar kräver ytterligare behörigheter för att kunna visa. Mer information finns [i Behörigheter i Säkerhetsorganisationscenter för Office 365 &](permissions-in-the-security-and-compliance-center.md).
+> Du måste vara global administratör, säkerhetsadministratör eller säkerhetsläsare för att kunna visa säkerhetsinstrumentpanelen. Vissa widgetar kräver ytterligare behörigheter för att kunna visa. Mer information finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="threat-management-summary"></a>Sammanfattning av hothantering
 
@@ -61,13 +61,13 @@ Widgeten Hot Protection Status visar hotskyddseffektivitet med en trendig och de
 
 ![Widget för status för hotskydd](../../media/tpswidget.png)
 
-Informationen beror på om din Office 365-prenumeration innehåller [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) med eller utan Office [365 Advanced Threat Protection](office-365-atp.md) (ATP).
+Informationen beror på om din Microsoft 365-prenumeration innehåller [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) med eller utan Office [365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 |||
 |---|---|
 |**Om din prenumeration innehåller...**|**Du ser dessa detaljer**|
 |EOP men inte Office 365 ATP|Skadlig e-post som upptäcktes och blockerades av EOP.<br><br> Se [rapporten Status för hotskydd (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Office 365 ATP|Skadligt innehåll och skadlig e-post som upptäckts och blockerats av EOP och Office 365 ATP<br><br>Aggregerat antal unika e-postmeddelanden med skadligt innehåll som blockerats av anti-malware-motorn, [nolltimmars automatisk rensning](zero-hour-auto-purge.md)och ATP-funktioner (inklusive [säkra länkar,](atp-safe-links.md) [säkra bilagor](atp-safe-attachments.md)och [ATP-anti-phishing).](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br><br>Se [rapporten Status för hotskydd (ATP).](view-reports-for-atp.md#threat-protection-status-report)|
+|Skaffa Office 365 ATP|Skadligt innehåll och skadlig e-post som upptäckts och blockerats av EOP och Office 365 ATP<br><br>Aggregerat antal unika e-postmeddelanden med skadligt innehåll som blockerats av anti-malware-motorn, [nolltimmars automatisk rensning](zero-hour-auto-purge.md)och ATP-funktioner (inklusive [säkra länkar,](atp-safe-links.md) [säkra bilagor](atp-safe-attachments.md)och [ATP-anti-phishing).](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br><br>Se [rapporten Status för hotskydd (ATP).](view-reports-for-atp.md#threat-protection-status-report)|
 |
 
 Om du vill visa eller komma åt widgeten Status för hotskydd måste du ha behörighet att visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
@@ -101,7 +101,7 @@ Insikter inte bara yta viktiga frågor som du bör granska, de innehåller ocks�
 
 ![Smarta insikter](../../media/smartinsights.png)
 
-Du kan till exempel se att nätfiskemeddelanden levereras eftersom vissa användare har inaktiverat sina skräppostalternativ. Mer information om hur insikter fungerar finns [i Rapporter och insikter i Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+Du kan till exempel se att nätfiskemeddelanden levereras eftersom vissa användare har inaktiverat sina skräppostalternativ. Mer information om hur insikter fungerar finns [i Rapporter och insikter i Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
 
 ## <a name="threat-investigation-and-response"></a>Hotutredning och hothantering
 
@@ -115,7 +115,7 @@ Längst ned på säkerhetsinstrumentpanelen finns ett **avsnittet Trender** som 
 
 ![Avsnittet Trender sammanfattar trender för e-postflödet för organisationen](../../media/trends.png)
 
-Och om organisationens Office 365-prenumeration innehåller [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)har du också en rapport om aviseringar om **hothantering nyligen** i det här avsnittet som gör det möjligt för säkerhetsteamet att visa och vidta åtgärder för säkerhetsaviseringar med hög prioritet.
+Och om organisationens prenumeration innehåller [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)har du också en rapport om aviseringar om **hothantering nyligen** i det här avsnittet som gör att säkerhetsteamet kan visa och vidta åtgärder för säkerhetsaviseringar med hög prioritet.
 
 Om du vill visa eller komma åt widgeten Skickat och mottaget e-post måste du ha behörighet för att kunna visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
@@ -127,6 +127,6 @@ Om du vill visa eller komma åt widgeten Senaste hothanteringsaviseringar måste
 
 [Visa rapporter för avancerat hotskydd för Office 365](view-reports-for-atp.md)
 
-[Office 365 Avancerat skydd](office-365-atp.md)
+[Office 365 ATP](office-365-atp.md)
 
 [Office 365 Hotutredning och hothantering](office-365-ti.md)

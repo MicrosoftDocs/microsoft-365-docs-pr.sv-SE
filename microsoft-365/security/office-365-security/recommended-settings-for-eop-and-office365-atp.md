@@ -16,23 +16,23 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Vilka är bästa metoderna för säkerhetsinställningar för Exchange Online Protection (EOP) och Advanced Threat Protection (ATP). Vilka är de nuvarande rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vilka extrafunktioner får du om du också använder Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 0d5d626da8f8bdcdc234f578145db0dfde2c06a5
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547614"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634418"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet
 
-**Exchange Online Protection (EOP)** är kärnan i säkerheten för Office 365-prenumerationer och hjälper till att förhindra att skadliga e-postmeddelanden når dina anställdas inkorgar. Men med nya, mer sofistikerade attacker som växer fram varje dag, krävs ofta bättre skydd. **Office 365 Avancerat skydd mot hot (ATP)** ATP Plan 1 eller ATP Plan 2 innehåller ytterligare funktioner som ger administratörer fler lager av säkerhet, kontroll och undersökning.
+**Exchange Online Protection (EOP)** är kärnan i säkerheten för Microsoft 365-prenumerationer och hjälper till att förhindra att skadliga e-postmeddelanden når dina anställdas inkorgar. Men med nya, mer sofistikerade attacker som växer fram varje dag, krävs ofta bättre skydd. **Office 365 Avancerat skydd mot hot (ATP)** ATP Plan 1 eller ATP Plan 2 innehåller ytterligare funktioner som ger administratörer fler lager av säkerhet, kontroll och undersökning.
 
 Även om vi ger säkerhetsadministratörer möjlighet att anpassa sina säkerhetsinställningar finns det två säkerhetsnivåer i EOP och Office 365 ATP som vi rekommenderar: **Standard** och **Strikt**. Varje kunds miljö och behov är olika, men vi tror att dessa nivåer av e-postfiltrering konfigurationer kommer att bidra till att förhindra oönskad e-post från att nå dina anställdas inkorg i de flesta situationer.
 
 > [!IMPORTANT]
 > Skräppostregeln måste aktiveras på en postlåda för att filtrering ska fungera korrekt. Det är aktiverat som standard, men du bör kontrollera det om filtrrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-I det här avsnittet beskrivs de här Microsoft-rekommenderade inställningarna för att skydda dina Office 365-användare.
+I det här avsnittet beskrivs de här Microsoft-rekommenderade inställningarna för att skydda användarna.
 
 > [!TIP]
 > Det finns en ny PowerShell-modul som du kan hämta kallas Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) som hjälper till att avgöra några av dessa inställningar. När du kör som administratör i din klientorganisation kommer Get-ORCAReport att bidra till att generera en bedömning av inställningarna för anti-spam, anti-phish och andra inställningar för meddelandehygien. Du kan ladda https://www.powershellgallery.com/packages/ORCA/ner denna modul på .
@@ -117,7 +117,7 @@ Du kan bara konfigurera dessa inställningar i Office 365-organisationer med Exc
 | Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
 |**Aktivera skydd mot förfalskning** <br/><br/> _AktiveraAntispoofEnforcement_|På <br/><br/> `$true`|På <br/><br/> `$true`||
-|**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md).|
 |**Om e-post skickas av någon som inte får förfalska din domän** <br/><br/> _AutentiseringFailAction_|**Flytta meddelande till mottagarnas skräppostmappar** <br/><br/> `MoveToJmf`|**Karantän meddelandet** <br/><br/> `Quarantine`|Detta gäller blockerade avsändare i [falska underrättelser](learn-about-spoof-intelligence.md).|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Säkerhet för avancerat skydd mot skydd i Office 365
@@ -181,7 +181,7 @@ Observera att det är samma inställningar som är tillgängliga i [principinst�
 | Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
 |---|---|---|---|
 |**Aktivera skydd mot förfalskning** <br/><br/> _AktiveraAntispoofEnforcement_|På <br/><br/> `$true`|På <br/><br/> `$true`||
-|**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md).|
 |**Om e-post skickas av någon som inte får förfalska din domän** <br/><br/> _AutentiseringFailAction_|**Flytta meddelande till mottagarnas skräppostmappar** <br/><br/> `MoveToJmf`|**Karantän meddelandet** <br/><br/> `Quarantine`|Detta gäller blockerade avsändare i [falska underrättelser](learn-about-spoof-intelligence.md).|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Avancerade inställningar i ATP:s principer för phishing-phishing
@@ -215,7 +215,7 @@ Spåra inte när användare klickar på säkra länkar|Inaktiverad|Inaktiverad|D
 
 - Letar du efter metodtips med **Exchange Mail Flow / Exchange Transport Regler?** Se [den här artikeln](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) för mer information.
 
-- Administratörer och användare kan skicka falska positiva identifieringar (bra e-post markerad som dålig) och falska negativ (dålig e-post tillåten) till Microsoft för analys. Mer information finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+- Administratörer och användare kan skicka falska positiva identifieringar (bra e-post markerad som dålig) och falska negativ (dålig e-post tillåten) till Microsoft för analys. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Använd de här länkarna för information om hur **du konfigurerar** [eOP-tjänsten](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)och **konfigurerar** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (Glöm inte att se de användbara anvisningarna i '[Skydda mot hot i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)'.)
 

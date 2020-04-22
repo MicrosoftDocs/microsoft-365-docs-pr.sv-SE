@@ -19,17 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 27f27a16de9d4aa2a2f163a18c1b837d6c575eb0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894270"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633489"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsofts dataskyddsdatasäkerhet och sekretess
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
@@ -40,4 +40,4 @@ Genom att aktivera Microsoft Threat Protection (MTP) godkänner du följande vil
 Mer information om datalagring och sekretessinformation för de specifika produkterna finns i:
 - [Microsoft Defender ATP-lagring och sekretess för ATP-data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Säkerhet och sekretess för Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Sekretess och transparens i Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 sekretess, säkerhet och transparens](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

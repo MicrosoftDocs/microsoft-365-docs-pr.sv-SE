@@ -1,5 +1,5 @@
 ---
-title: Ändra dina faktureringsadresser för Office 365 för företag
+title: Ändra dina faktureringsadresser
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Läs om hur du uppdaterar dina faktureringsadresser för Office 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
+description: Läs om hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142317"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632725"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>Ändra dina faktureringsadresser för Office 365 för företag
+# <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
 Din faktura innehåller tre adresser:
   
@@ -60,9 +60,6 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Ändra Såld till-adressen
 
@@ -158,9 +155,9 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Ändra den alternativa e-postadressen dina faktureringsaviseringar skickas till
 
-Din organisations faktureringsaviseringar skickas som standard till e-postadressen för Office 365 och den alternativa e-postadressen för varje global- och faktureringsadministratör i organisationen. Alla administratörer kan ändra sin alternativa e-postadress genom att uppdatera profilinformationen.
+Som standard skickas organisationens faktureringsmeddelanden till Microsofts e-postadress och den alternativa e-postadressen för alla globala administratörer och faktureringsadministratörer i organisationen. Alla administratörer kan ändra sin alternativa e-postadress genom att uppdatera profilinformationen.
   
-1. Logga in på Office 365 med ditt arbets- eller skolkonto som en global administratör. [Så här loggar du in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Logga in på Microsoft 365 med ditt arbets- eller skolkonto som global administratör. [Läs om hur du loggar in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Välj **ikonen Användare**och välj sedan **Mitt konto**.
   
@@ -173,9 +170,7 @@ Din organisations faktureringsaviseringar skickas som standard till e-postadress
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändra den alternativa e-postadressen för en annan administratör
 
 Du kan även ändra den alternativa e-postadressen till andra globala administratörer och faktureringsadministratörer i organisationen.
-
-::: moniker range="o365-worldwide"
-
+  
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
 
 ::: moniker-end
@@ -203,3 +198,5 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 [Förstå din faktura](understand-your-invoice2.md)
 
 [Betala för prenumerationen](pay-for-your-subscription.md)
+
+[Prenumerationer och fakturering – hjälp för administratörer](../index.yml)

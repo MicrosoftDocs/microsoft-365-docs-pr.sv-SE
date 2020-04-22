@@ -16,22 +16,22 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft har utvecklat olika policyer, procedurer och antagit flera metodtips för branschen för att skydda våra användare från stötande, oönskad eller skadlig e-post.
-ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033752"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634394"
 ---
-# <a name="reference-policies-practices-and-guidelines"></a>Referens: Policyer, praxis och riktlinjer
+# <a name="reference-policies-practices-and-guidelines"></a>Referens: principer, övningar och riktlinjer
 
-Microsoft är dedikerade till att ge den mest betrodda användarupplevelsen på webben. Därför har Microsoft utvecklat olika policyer, procedurer och antagit flera branschtips för att skydda våra användare från stötande, oönskade eller skadliga e-postmeddelanden. Avsändare som försöker skicka e-post till Office 365-användare bör se till att de är helt förstå och följer vägledningen i den här artikeln för att hjälpa till i den här insatsen och för att undvika potentiella leveransproblem.
+Microsoft är dedikerade till att ge den mest betrodda användarupplevelsen på webben. Därför har Microsoft utvecklat olika policyer, procedurer och antagit flera branschtips för att skydda våra användare från stötande, oönskade eller skadliga e-postmeddelanden. Avsändare som försöker skicka e-post till användare bör se till att de förstår och följer anvisningarna i den här artikeln för att hjälpa till i den här insatsen och för att undvika potentiella leveransproblem.
 
-Om du inte följer dessa policyer och riktlinjer kanske det inte är möjligt för vårt supportteam att hjälpa dig. Om du följer riktlinjerna, metoderna och policyerna som presenteras i den här artikeln och fortfarande har leveransproblem baserat på din sändande IP-adress följer du stegen för att skicka en begäran om avnotering. Instruktioner finns i [Använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare i Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Om du inte följer dessa policyer och riktlinjer kanske det inte är möjligt för vårt supportteam att hjälpa dig. Om du följer riktlinjerna, metoderna och policyerna som presenteras i den här artikeln och fortfarande har leveransproblem baserat på din sändande IP-adress följer du stegen för att skicka en begäran om avnotering. Instruktioner finns i [Använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="general-microsoft-policies"></a>Allmänna Microsoft-policyer
 
-E-post som skickas till Office 365-användare måste följa alla Microsoft-policyer som styr e-postöverföring och användning av Office 365.
+E-post som skickas till Microsoft 365-användare måste följa alla Microsoft-policyer som styr e-postöverföring och användning av Office 365.
 
 - Villkor för tjänster som gäller för Office 365; i synnerhet förbudet mot att använda tjänsten för att spamma eller distribuera skadlig kod
 
@@ -39,7 +39,7 @@ E-post som skickas till Office 365-användare måste följa alla Microsoft-polic
 
 ## <a name="governmental-regulations"></a>Statliga föreskrifter
 
-E-post som skickas till Office 365-användare måste följa alla tillämpliga lagar och förordningar som styr e-postkommunikation i tillämplig jurisdiktion.
+E-post som skickas till Microsoft 365-användare måste följa alla tillämpliga lagar och förordningar som styr e-postkommunikation i tillämplig jurisdiktion.
 
 - [CAN-SPAM Act: En efterlevnadsguide för företag](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -47,13 +47,13 @@ E-post som skickas till Office 365-användare måste följa alla tillämpliga la
 
 ## <a name="technical-guidelines"></a>Tekniska riktlinjer
 
-E-post som skickas till Office 365 bör följa de tillämpliga rekommendationerna i dokumenten nedan (vissa länkar finns endast på engelska).
+E-post som skickas till Microsoft 365 bör följa de tillämpliga rekommendationerna i dokumenten nedan (vissa länkar finns endast på engelska).
 
 - [RFC 2505: Anti-Spam rekommendationer för SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP-tjänsttillägg för kommando pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-Dessutom måste e-postservrar som ansluter till Office 365 uppfylla följande krav:
+Dessutom måste e-postservrar som ansluter till Microsoft 365 uppfylla följande krav:
 
 - Avsändaren förväntas uppfylla alla tekniska standarder för överföring av e-post på Internet, som publiceras av The Internet Society's Internet Engineering Task Force (IETF), inklusive RFC 5321, RFC 5322 och andra.
 
@@ -73,9 +73,9 @@ Dessutom måste e-postservrar som ansluter till Office 365 uppfylla följande kr
 
 Avsändare, Internet-leverantörer och andra tjänsteleverantörer bör aktivt hantera ryktet för dina utgående IP-adresser.
 
-## <a name="office-365-limits"></a>Office 365-begränsningar
+## <a name="microsoft-365-limits"></a>Microsoft 365-gränser
 
-Avsändare måste följa Office 365-begränsningar som anges i [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Avsändare måste följa Microsoft 365-gränser som anges i [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Resurser och organisationer för e-postleverans
 

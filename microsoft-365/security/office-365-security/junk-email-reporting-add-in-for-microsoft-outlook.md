@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du installerar och använder tillägget Microsoft Junk Email Reporting för att rapportera skräppost, icke-skräppost och nätfiskemeddelanden till Microsoft.
-ms.openlocfilehash: e39fb2f4ecba806c2d26d989fbbe6ddec137adc1
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033953"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638506"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Installera och använda tillägget Skräppostrapportering för Microsoft Outlook i Office 365
 
@@ -37,7 +37,7 @@ I det här avsnittet beskrivs hur du installerar och använder tillägget Rappor
 - Tillägget Skräppostrapportering fungerar med följande versioner av Outlook:
 
   - Outlook 2013 eller senare
-  - Outlook ingår i Office 365 ProPlus
+  - Outlook ingår i Microsoft 365 Apps for Enterprise
 
 - Mer information om hur du anmäler meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft i Office 365](report-junk-email-messages-to-microsoft.md).
 

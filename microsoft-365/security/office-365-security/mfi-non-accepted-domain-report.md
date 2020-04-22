@@ -1,5 +1,5 @@
 ---
-title: Domänrapport som inte har godkänts
+title: Rapport om icke godkänd domän
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,18 +11,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan lära sig mer om den icke-accepterade domänrapporten i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 4b4573d6a43c811e919f3f5c6f281c8f31e61d6a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42808120"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635286"
 ---
-# <a name="non-accepted-domain-report"></a>Domänrapport som inte har godkänts
+# <a name="non-accepted-domain-report"></a>Rapport om icke godkänd domän
 
-I likhet med domäninsikten **av avsändare** identifierar den **icke-accepterade** domäninsikten meddelanden från din lokala e-postorganisation, men avsändarens domän är inte konfigurerad som en accepterad domän i din Office 365-organisation.
+I likhet med domäninsikten **av avsändare** identifierar den **icke-accepterade** domäninsikten meddelanden från din lokala e-postorganisation, men avsändarens domän är inte konfigurerad som en accepterad domän i organisationen.
 
-Office 365 kan begränsa dessa meddelanden om vi har data som bevisar att avsikten med dessa meddelanden är skadlig. Därför är det viktigt för dig att förstå vad som händer och åtgärda problemet.
+Microsoft 365 kan begränsa dessa meddelanden om vi har data som bevisar att avsikten med dessa meddelanden är skadlig. Därför är det viktigt för dig att förstå vad som händer och åtgärda problemet.
 
 ![Domänrapporten som inte accepteras i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/non-accepted-domain-report-selected.png)
 
@@ -34,6 +34,6 @@ När du väljer en rad i tabellen visar ett utfällbart utfällbart ut mer infor
 
 ![Markera en rad i informationstabellen i domänrapporten ej accepterad](../../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).

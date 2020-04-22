@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583387"
+ms.locfileid: "43637110"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -52,7 +52,7 @@ De flesta görs på ett binärt sätt - om du genomför förbättringsåtgärden
 
 ### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
 
-För närvarande finns det rekommendationer för Office 365 (inklusive SharePoint Online, Exchange Online, OneDrive för företag, Microsoft Information Protection med mera), Azure AD och Cloud App Security. Rekommendationer för andra säkerhetsprodukter, som Azure ATP och Microsoft Defender ATP, kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
+För närvarande finns det rekommendationer för bland annat SharePoint Online, Exchange Online, OneDrive för företag, Microsoft Information Protection med mera), Azure AD och Cloud App Security. Rekommendationer för andra säkerhetsprodukter, som Azure ATP och Microsoft Defender ATP, kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 
@@ -66,7 +66,6 @@ Med läs- och skrivåtkomst kan du göra ändringar och interagera direkt med Se
 * Säkerhetsadministratör
 * Exchange-administratör
 * SharePoint-administratör
-* Kontoadministratör
 
 ### <a name="read-only-roles"></a>Skrivskyddade roller
 
@@ -135,7 +134,7 @@ Du kan visa ett diagram över organisationens poäng över tid på fliken **Hist
 
 Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition baserat på systemkonfigurationer, användarbeteende och andra säkerhetsrelaterade mätningar. Det är inte ett absolut mått på hur sannolikt ditt system eller data kommer att brytas. Snarare är det i vilken utsträckning du har antagit säkerhetskontroller i din Microsoft-miljö som kan bidra till att kompensera risken för att brytas. Ingen onlinetjänst är helt immun mot säkerhetsöverträdelser, och säker poäng bör inte tolkas som en garanti mot säkerhetsöverträdelse på något sätt.
 
-## <a name="whats-new"></a>Vad är det senaste?
+## <a name="whats-new"></a>Vad är nytt?
 
 För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 

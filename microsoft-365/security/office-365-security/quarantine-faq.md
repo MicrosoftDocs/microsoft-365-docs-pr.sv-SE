@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor om karantän
+title: Vanliga frågor och svar om karantän
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,16 +16,16 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Svar på vanliga frågor om karantän i Office 365.
-ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634430"
 ---
-# <a name="quarantine-faq-in-office-365"></a>Vanliga frågor om karantän i Office 365
+# <a name="quarantine-faq"></a>Vanliga frågor och svar om karantän
 
-Det här avsnittet innehåller vanliga frågor och svar om karantän för Office 365-kunder med postlådor i Exchange Online eller fristående Exchange Online Protection -kunder (EOP) utan Exchange Online-postlådor.
+Det här avsnittet innehåller vanliga frågor och svar om karantän för Microsoft 365-kunder med postlådor i Exchange Online- eller fristående Exchange Online Protection-kunder (EOP) utan Exchange Online-postlådor.
 
 ## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>F: Hur hanterar jag meddelanden som har satts i karantän för skadlig kod?
 
@@ -33,7 +33,7 @@ Endast administratörer kan hantera meddelanden som har satts i karantän för s
 
 ## <a name="q-how-do-i-quarantine-spam"></a>F: Hur sätter jag skräppost i karantän?
 
-A. Som standard levereras meddelanden som klassificeras som skräppost eller massutskick via skräppostfiltrering till användarens postlåda och flyttas till mappen Skräppost. Men du kan skapa och konfigurera anti-spam-principer för att sätta skräppost eller massmeddelanden i karantän i stället. Mer information finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+A. Som standard levereras meddelanden som klassificeras som skräppost eller massutskick via skräppostfiltrering till användarens postlåda och flyttas till mappen Skräppost. Men du kan skapa och konfigurera anti-spam-principer för att sätta skräppost eller massmeddelanden i karantän i stället. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>F: Hur ger jag användarna åtkomst till karantänen?
 
@@ -70,7 +70,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 Kör sedan följande kommando för att släppa dessa meddelanden till alla ursprungliga mottagare:
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 När du har släppt ett meddelande kan du inte släppa det igen.

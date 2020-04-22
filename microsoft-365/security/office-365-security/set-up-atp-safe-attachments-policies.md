@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definiera principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608108"
+ms.locfileid: "43638350"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera principer för office 365 ATP-säkra bifogade filer
 
@@ -43,29 +43,28 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
 
 - Kontrollera att din organisation har [ett avancerat skydd mot Office 365.](office-365-atp.md)
 
-- Kontrollera att du har de behörigheter som krävs. Om du vill definiera (eller redigera) ATP-principer måste du antingen tilldelas en Exchange Online Organization Management-roll (Office 365 Global Administrator tilldelas den här rollen som standard) eller både Exchange Online Hygiene Management och Security Administrator roller. Mer information finns i följande tabell:
+- Kontrollera att du har de behörigheter som krävs. Om du vill definiera (eller redigera) ATP-principer måste du antingen tilldelas en Exchange Online Organization Management-roll (global administratör tilldelas den här rollen som standard) eller både Exchange Online Hygiene Management och Security Administrator roller. Mer information finns i följande tabell:
 
-  |||
-  |---|---|
-  |**Roll**|**Var/hur tilldelas**|
-  |Global administratör för Office 365 |Den person som registrerar sig för att köpa Office 365 är som standard en global administratör. (Mer information finns i [Om office 365-administratörsroller.)](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+  |Roll|Var/hur tilldelas|
+  |---------|---------|
+  |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
   |Säkerhetsadministratör |Administrationscenter för[https://aad.portal.azure.com](https://aad.portal.azure.com)Azure Active Directory ( )|
   |Exchange Online Organisation Management, Exchange Online Hygien Management |Administrationscenter[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)för Exchange ( ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Mer information om roller och behörigheter finns [i Behörigheter &amp; i Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Mer information om roller och behörigheter finns [i Behörigheter i Säkerhetsefterlevnadscenter &amp; ](permissions-in-the-security-and-compliance-center.md).
 
 - [Läs mer om alternativ för atp-säkra bifogade filer](#step-3-learn-about-atp-safe-attachments-policy-options) (i den här artikeln). Vissa alternativ, till exempel alternativen Bildskärm eller Ersätt, kan leda till en mindre fördröjning av e-post medan bifogade filer genomsöks. Om du vill undvika meddelandeförseningar bör du överväga att använda [dynamisk leverans och förhandsgranska](dynamic-delivery-and-previewing.md).
 
-- Tillåt upp till 30 minuter innan den nya eller uppdaterade principen sprids till alla Office 365-datacenter.
+- Tillåt upp till 30 minuter innan den nya eller uppdaterade principen sprids till alla Microsoft 365-datacenter.
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Steg 2: Konfigurera (eller redigera) en ATP-princip för säkra bilagor
 
 1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt arbets- eller skolkonto.
 
-2. Välj Principsäkra bilagor i &amp; det vänstra navigeringsfönstret i **Threat management**Det vänstra **Policy** \> **navigeringsfönstret**i Office 365 Security Compliance Center.
+2. &amp; Välj **Principsäkra** \> bilagor i det vänstra **Threat management**navigeringsfönstret i det vänstra **navigeringsfönstret.**
 
-3. Om du ser **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**rekommenderar vi att du väljer det här alternativet. Detta aktiverar [Office 365 Advanced Threat Protection för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) för din Office 365-miljö.
+3. Om du ser **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**rekommenderar vi att du väljer det här alternativet. Detta aktiverar [Office 365 Advanced Threat Protection för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) för din Microsoft 365-miljö.
 
 4. Välj **Ny** (knappen Ny liknar ett **+** plustecken ( )) för att börja skapa din princip.
 
@@ -77,13 +76,13 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
 
    - Välj alternativet **Dynamisk leverans** i svarsavsnittet. (Läs[mer om dynamisk leverans och förhandsgranskning med ATP Säkra bilagor](dynamic-delivery-and-previewing.md).)
 
-   - I avsnittet **Omdirigera bifogad fil** väljer du alternativet att aktivera omdirigering och skriver e-postadressen till office 365-administratören, säkerhetsadministratören eller säkerhetsanalytikern som undersöker skadliga bilagor.
+   - I avsnittet **Omdirigera bifogad fil** väljer du alternativet att aktivera omdirigering och skriver e-postadressen till den globala administratören, säkerhetsadministratören eller säkerhetsanalytikern som undersöker skadliga bilagor.
 
    - I avsnittet **Tillämpad på** väljer du **Den mottagande domänen är**och väljer sedan din domän. Välj **Lägg till**och välj sedan **OK**.
 
 6. Välj **Save**.
 
-Överväg att ställa in flera ATP-principer för säkra bilagor för din organisation. Dessa principer tillämpas i den ordning de visas på sidan BETRODDa bilagor med **ATP.** När en princip har definierats eller redigerats tillåter du minst 30 minuter för att principerna ska börja gälla i microsoft-datacenter.
+Överväg att ställa in flera ATP-principer för säkra bilagor för din organisation. Dessa principer tillämpas i den ordning de visas på sidan BETRODDa bilagor med **ATP.** När en princip har definierats eller redigerats tillåter du minst 30 minuter för att polisen ska börja gälla i hela Microsoft-datacenter.
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Steg 3: Lär dig mer om alternativ för ATP-säkra bilagor
 

@@ -1,5 +1,5 @@
 ---
-title: Åtgärder för reparation i office 365-automatiska undersökningar och svar
+title: Åtgärder för reparation i Microsoft 365 automatisk undersökning och svar
 keywords: AIR, autoIR, ATP, automatiserad, utredning, svar, sanering, hot, avancerad, hot, skydd
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Lär dig mer om reparationsåtgärder i automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d0f08c3e89882e21263c18246612949ea68ac1ad
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 8dfb203cfdae179d8d88842a2d2b55aeab2e17fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528935"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634658"
 ---
-# <a name="remediation-actions-in-office-365"></a>Åtgärdsåtgärder i Office 365
+# <a name="remediation-actions-in-microsoft-365"></a>Reparationsåtgärder i Microsoft 365
 
 ## <a name="remediation-actions"></a>Reparationsåtgärder
 
@@ -60,9 +60,9 @@ I följande tabell sammanfattas hot och lämpliga åtgärder för reparation i O
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Visa information och resultat av en automatiserad undersökning i Office 365](air-view-investigation-results.md)
+- [Visa information och resultat av en automatiserad undersökning i Microsoft 365](air-view-investigation-results.md)
 
-- [Visa väntande eller slutförda reparationsåtgärder efter en automatisk undersökning i Office 365](air-review-approve-pending-completed-actions.md)
+- [Visa väntande eller slutförda reparationsåtgärder efter en automatisk undersökning i Microsoft 365](air-review-approve-pending-completed-actions.md)
 
 
 ## <a name="related-articles"></a>Relaterade artiklar

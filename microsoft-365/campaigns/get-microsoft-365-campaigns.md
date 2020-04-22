@@ -23,25 +23,25 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Skaffa Microsoft 365 för kampanjer så att du kan skydda din kampanj från cybersäkerhetshot mot e-post, data och kommunikation.
-ms.openlocfilehash: 2576bc3e62fd9c51dfec16f977e8339fc09e29f6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42805642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635630"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Skaffa Microsoft 365 för kampanjer
 
-Vem som helst med Microsoft 365 Business kan använda den här vägledningen för att konfigurera extra säkerhet för e-post och samarbete. Kampanjer och politiska partier i USA är dock berättigade till specialpriser för Microsoft 365. För närvarande är denna specialpris är tillgänglig för:
+Vem som helst med Microsoft 365 Business Premium kan använda den här vägledningen för att konfigurera extra säkerhet för e-post och samarbete. Kampanjer och politiska partier i USA är dock berättigade till specialpriser för Microsoft 365. För närvarande är denna specialpris är tillgänglig för:
 - Amerikanska federala politiska kampanjer (till exempel kampanjer som söker kontor för det amerikanska huset, usa: s senat eller president)
 - Politiska partier på nationell nivå i USA.
 
 Om din kampanj eller ditt politiska parti kvalificerar sig är Microsoft 365 för kampanjer den billigaste planen som är tillgänglig via Microsoft.  
 
-Om du inte är berättigad till specialpriser är Microsoft 365 Business fortfarande det mest kostnadseffektiva sättet att skaffa omfattande säkerhet för en samarbetsmiljö. Se [Registrera dig för Microsoft 365 för kampanjer](m365-campaigns-sign-up.md). Använd sedan det här biblioteket för att konfigurera extra säkerhet och för att hjälpa ditt team att samarbeta säkert. 
+Om du inte är berättigad till specialpriser är Microsoft 365 Business Premium fortfarande det mest kostnadseffektiva sättet att skaffa omfattande säkerhet för en samarbetsmiljö. Se [Registrera dig för Microsoft 365 för kampanjer](m365-campaigns-sign-up.md). Använd sedan det här biblioteket för att konfigurera extra säkerhet och för att hjälpa ditt team att samarbeta säkert. 
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Vad innehåller Microsoft 365 för kampanjer?
-Den här konfigurationen av Microsoft 365 Business innehåller enkla kontroller som hjälper dig och din personal att arbeta tillsammans på ett säkert sätt: 
+Den här konfigurationen av Microsoft 365 Business Premium innehåller enkla kontroller som hjälper dig och din personal att arbeta tillsammans på ett säkert sätt: 
 - **Skydda användaridentitet:** Se till att användarna är de som de säger att de är när de loggar in för att skicka e-post eller för att komma åt filer (multifaktorautentisering).
 - **Skydda känslig information**: Skydda känslig information för att övervaka information som delas utanför organisationen (dataförlustskydd).
 - **Skydda mobila enheter**: Skydda data på mobila enheter (policy för skydd av mobilappar).

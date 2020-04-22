@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Lär dig att lägga till e-postsignatur, ansvarsfriskrivning eller avslöjandeutdrag i alla e-postmeddelanden som kommer in i eller lämnar organisationen.
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631983"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa organisationsomfattande signaturer och ansvarsfriskrivningar
 
@@ -62,9 +62,9 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 
 ::: moniker-end
 
-1. Välj startprogrammet ![Ikonen för startprogrammet i Office](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)365 och välj sedan **Admin**.
+1. Välj startprogrammet ![Ikonen för startprogrammet](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)och välj sedan **Admin**.
    
-    Hittar du inte appen du söker? Från appfönstret kan du välja **Alla appar** för att se en alfabetisk lista över tillgängliga Office 365-appar. Därifrån kan du söka efter en specifik app. 
+    Hittar du inte appen du söker? I startprogrammet väljer du **Alla appar** för att se en alfabetisk lista över de appar som är tillgängliga för dig. Därifrån kan du söka efter en specifik app. 
     
 2. Välj **Administrationscenter**och välj sedan **Exchange**.
     
@@ -77,14 +77,14 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 6. Under **Använd den här regeln**väljer du **[Använd på alla meddelanden]**.
     
     > [!TIP]
-    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) om att använda villkor om du inte vill ha med ansvarsfriskrivningen i alla meddelanden. (Den här omfångsartikeln är avsedd för Exchange Server, men den gäller även För Office 365.) 
+    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) om att använda villkor om du inte vill ha med ansvarsfriskrivningen i alla meddelanden. (Den här omfångsartikeln är för Exchange Server, men den gäller även Microsoft 365.) 
   
 7. Under Gör följande lämnar du **Lägg till ansvarsfriskrivningen** markerat. 
     
 8.  Välj **Ange text** och skriv ansvarsfriskrivningen. 
     
     > [!TIP]
-    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) om att formatera ansvarsfriskrivningar. (Den här formateringsartikeln är avsedd för Exchange Server, men den gäller även för Office 365.) 
+    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) om att formatera ansvarsfriskrivningar. (Den här formateringsartikeln är för Exchange Server, men den gäller även Microsoft 365.) 
 
 9. Välj **Välj ett** och välj **Radbryt** som reservalternativ. Välj sedan **OK**. Det innebär att om ansvarsfriskrivningen inte kan läggas till på grund av kryptering eller en annan e-postinställning kommer den att inneslutas i ett meddelandekuvert.
     
@@ -96,9 +96,9 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
     
 13. När du är klar väljer du **Spara**. 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Begränsningar för Office 365-organisationsomfattande signaturer
+## <a name="limitations-of-organization-wide-signatures"></a>Begränsningar av organisationsomfattande signaturer
 
-Du kan inte göra följande med Office 365-signaturer:
+Du kan inte göra följande med Microsoft 365-signaturer:
   
 - Infoga signaturen direkt under det senaste e-postsvaret eller vidarebefordra
     
@@ -112,6 +112,6 @@ Använd ett verktyg från tredje part för att få dessa och andra funktioner. G
   
 ## <a name="more-resources"></a>Fler resurser
 
-- Mer information om hur du använder PowerShell finns [i ansvarsfriskrivningar för hela organisationen, signaturer, sidfötter eller sidhuvuden i Office 365.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 
+- Mer information om hur du använder PowerShell finns [i ansvarsfriskrivningar för hela organisationen, signaturer, sidfötter eller sidhuvuden i Microsoft 365.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 
     
 

@@ -5,14 +5,14 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516815"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636226"
 ---
-# <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Managed Desktop?
+# <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
 
 Microsoft Managed Desktop är en molnbaserad tjänst som sammanför [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (inklusive [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise och [Office 365 Enterprise)](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)och lägger till följande funktioner:
@@ -28,7 +28,7 @@ Microsoft Managed Desktop erbjuder en lösning för flera av de utmaningar som f
 - Många nuvarande IT-hanterings- och säkerhetsprocesser är föråldrade, tidskrävande och dyra.
 - Företagen vill fokusera på det som gör dem unikt framgångsrika, snarare än att upprätthålla digital infrastruktur.
 
-Dina slutanvändare kommer att njuta av de senaste versionerna av Windows 10- och Office 365 ProPlus-appar (med mera), med hjälp av enheter och programvara som är kurerade och noggrant testade för bästa prestanda och tillförlitlighet. Dessutom behöver du aldrig oroa dig för att hålla någon av denna programvara uppdaterad eftersom det sker automatiskt, efter en noggrann utrullning sekvens som övervakas varje steg på vägen. Och registrerade enheter övervakas 24x7 för tekniska och säkerhetsproblem, så om något går fel, kommer hjälp vara på väg.
+Dina slutanvändare kommer att njuta av de senaste versionerna av Windows 10 och Microsoft 365 Apps för företagsappar (och mer dessutom), med hjälp av enheter och programvara som är kurerade och noggrant testade för bästa prestanda och tillförlitlighet. Dessutom behöver du aldrig oroa dig för att hålla någon av denna programvara uppdaterad eftersom det sker automatiskt, efter en noggrann utrullning sekvens som övervakas varje steg på vägen. Och registrerade enheter övervakas 24x7 för tekniska och säkerhetsproblem, så om något går fel, kommer hjälp vara på väg.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Unikt för Microsoft Managed Desktop
@@ -73,13 +73,13 @@ Om Microsoft Managed Desktop verkar vara rätt för din organisation kan du grä
 
 - [Microsoft hanterade skrivbordsroller och ansvarsområden](roles-and-responsibilities.md)
 - [Microsoft-teknik för hanterade skrivbord](technologies.md)
-- [Microsoft Managed Desktop och ITIL](../MMD-and-ITSM.md)
+- [Microsoft Hanterat skrivbord och ITIL](../MMD-and-ITSM.md)
 - [Efterlevnad](compliance.md)
-- [Tjänstbeskrivning för Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Tjänstbeskrivning av Microsoft Hanterat skrivbord](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Gör dig redo för registrering** I de här avsnitten beskrivs de steg du måste vidta i organisationen för att förbereda för registrering, inklusive att kontrollera att din miljö uppfyller viktiga förutsättningar, konfigurera nätverk, konfigurera certifikat och förbereda dina appar.
 
-- [Förutsättningar för Microsoft Managed Desktop](../get-ready/prerequisites.md)
+- [Förutsättningar för Microsoft Hanterat skrivbord](../get-ready/prerequisites.md)
 - [Nätverkskonfiguration för Microsoft Managed Desktop](../get-ready/network.md)
 - [Förbereda lokal resursåtkomst för Microsoft Managed Desktop](../get-ready/authentication.md)
 - [Förbereda mappade enheter för Microsoft Managed Desktop](../get-ready/mapped-drives.md)
@@ -89,10 +89,10 @@ Om Microsoft Managed Desktop verkar vara rätt för din organisation kan du grä
 **Kom igång** När du är redo att registrera dig innehåller det här avsnittet stegen för att faktiskt ansluta till tjänsten, hämta och konfigurera enheter, förbereda dina slutanvändare och distribuera appar.
 
 - [Lägga till och verifiera administratörskontakter i administratörsportalen](../get-started/add-admin-contacts.md)
-- [Justera villkorlig åtkomst](../get-started/conditional-access.md)
+- [Justera villkorsstyrd åtkomst](../get-started/conditional-access.md)
 - [Tilldela licenser](../get-started/assign-licenses.md)
 - [Installera Intune Company Portal på enheter](../get-started/company-portal.md)
-- [Aktivera roaming i företagstillstånd](../get-started/enterprise-state-roaming.md)
+- [Aktivera Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Konfigurera Microsoft Managed Desktop-enheter](../get-started/set-up-devices.md)
 - [Gör användarna redo att använda enheter](../get-started/get-started-devices.md)
 - [Distribuera appar till enheter](../get-started/deploy-apps.md)
@@ -111,4 +111,3 @@ Om Microsoft Managed Desktop verkar vara rätt för din organisation kan du grä
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

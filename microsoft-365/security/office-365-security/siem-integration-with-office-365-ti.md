@@ -1,5 +1,5 @@
 ---
-title: SIEM-integrering med Office 365 Avancerat hotskydd
+title: SIEM-integrering med avancerat hotskydd
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,47 +17,47 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: Integrera organisationens SIEM-server med Office 365 Advanced Threat Protection och relaterade hothändelser i Office 365 Activity Management API.
-ms.openlocfilehash: 8a870e02a37ea7f4961d0b8dc42a49cb59d2bace
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 770e2348c4e5729531118fb4a014a72c352a0dd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42807652"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638302"
 ---
-# <a name="siem-integration-with-office-365-advanced-threat-protection"></a>SIEM-integrering med Office 365 Avancerat hotskydd
+# <a name="siem-integration-with-advanced-threat-protection"></a>SIEM-integrering med avancerat hotskydd
 
-Om din organisation använder en SIEM-server (Security Incident and Event Management) kan du integrera Office 365 Advanced Threat Protection med SIEM-servern. Med SIEM-integrering kan du visa information, till exempel skadlig kod eller phish som upptäckts av Office 365 Advanced Protection, i SIEM-serverrapporterna. Om du vill konfigurera SIEM-integrering använder du [API:et för Aktivitetshantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Om din organisation använder en SIEM-server (Security Incident and Event Management) kan du integrera Office 365 Advanced Threat Protection med DIN SIEM-server. Med SIEM-integrering kan du visa information, till exempel skadlig kod eller phish som upptäckts av Office 365 Advanced Protection, i dina SIEM-serverrapporter. Om du vill konfigurera SIEM-integrering använder du [API:et för Aktivitetshantering i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-Office 365 Activity Management API hämtar information om åtgärder och åtgärder och händelser för användare, administratörer, system och principer från organisationens Aktivitetsloggar för Office 365 och Azure Active Directory. [Office 365 Advanced Threat Protection-schemat](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) fungerar med avancerat hotskydd, så om din organisation har Office 365 Advanced Threat Protection Plan 1 eller Plan 2 eller Office 365 E5 kan du fortfarande använda samma API för din SIEM-serverintegrering. 
+Api:et för Aktivitetshantering i Office 365 hämtar information om användar-, administratörs-, system- och principåtgärder och händelser från organisationens Microsoft 365 för företag och Azure Active Directory-aktivitetsloggar. [Schemat för avancerat skydd mot hot i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) fungerar med avancerat skydd mot hot, så om din organisation har Office 365 Advanced Threat Protection Plan 1 eller Plan 2 eller Office 365 E5 kan du fortfarande använda samma API för din SIEM-serverintegration. 
 
-Som en del av våra senaste uppdateringar har vi också lagt till händelser från automatiska undersöknings- och svarsfunktioner i Office 365 ATP Plan 2 i Api:et för Office 365 Management Activity. Förutom att inkludera data om centrala undersökningsdetaljer som ID, namn och status innehåller den även information på hög nivå om utredningsåtgärder och enheter.   
+Som en del av våra senaste uppdateringar har vi också lagt till händelser från automatiska undersöknings- och svarsfunktioner i Office 365 ATP-abonnemang 2 inom Office 365 Management Activity API. Förutom att inkludera data om grundläggande undersökningsinformation som ID, namn och status, innehåller den också information på hög nivå om undersökningsåtgärder och enheter.   
 
-SIEM-servern eller något annat liknande system bör avsöka **den audit.general-arbetsbelastningen** för att komma åt identifieringshändelser. Mer information finns i [Komma igång med Office 365 Management API:er](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). Dessutom är följande värden för **AuditLogRecordType** relevanta för Office 365 ATP-händelser:
+SIEM-servern eller något annat liknande system bör avsöka **audit.general-arbetsbelastningen** för att komma åt identifieringshändelser. Mer information finns [i Komma igång med API:er för hantering av Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). Dessutom är följande värden för **AuditLogRecordType** relevanta för Office 365 ATP-händelser:
 
 ### <a name="enum-auditlogrecordtype---type-edmint32"></a>Uppräkning: AuditLogRecordType - Typ: Edm.Int32
 
-#### <a name="auditlogrecordtype"></a>Granskaloggposttyp
+#### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
-|Value|Medlemsnamn|Beskrivning|
+|Value|Medlemmens namn|Beskrivning|
 |:-----|:-----|:-----|
-|28|HotIntelligens|Händelser med nätfiske och skadlig kod från Exchange Online Protection och Office 365 Advanced Threat Protection.|
-|41|ThreatIntelligenceUrl|TIME-of-block-händelser och blockera ATP-säkerhetslänkar och blockera åsidosätta händelser från Office 365 Advanced Threat Protection.|
-|47|ThreatIntelligenceAtpContent|Händelser för nätfiske och skadlig kod för filer i SharePoint Online, OneDrive för företag och Microsoft Teams från Office 365 Advanced Threat Protection.|
-|64|Flygutredning|Automatiserade gransknings- och svarshändelser, till exempel undersökningsinformation och relevanta artefakter från Office 365 Advanced Threat Protection Plan 2.|
+|28|HotIntelligens|Nätfiske- och skadlig kodhändelser från Exchange Online Protection och Office 365 Advanced Threat Protection.|
+|41|ThreatIntelligenceUrl|ATP Safe Links tid för block- och blockera åsidosättningshändelser från Office 365 Advanced Threat Protection.|
+|47|ThreatIntelligenceAtpContent|Nätfiske- och skadlig kodhändelser för filer i SharePoint Online, OneDrive för företag och Microsoft Teams från Office 365 Advanced Threat Protection.|
+|64|Luftutredning|Automatiserade undersöknings- och svarshändelser, till exempel undersökningsinformation och relevanta artefakter från Office 365 Advanced Threat Protection Plan 2.|
 
 
 > [!IMPORTANT]
-> Du måste vara en global Office 365-administratör eller ha rollen säkerhetsadministratör som tilldelats säkerhets& Compliance Center för att konfigurera SIEM-integrering med Office 365 Advanced Threat Protection.<br/>Granskningsloggning måste vara aktiverad för din Office 365-miljö. Information om hur du får hjälp med detta finns [i Aktivera eller inaktivera sökningen i granskningsloggen för Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+> Du måste vara global administratör eller ha rollen säkerhetsadministratör tilldelad för Security & Compliance Center för att konfigurera SIEM-integrering med Office 365 Advanced Threat Protection.<br/>Granskningsloggning måste vara aktiverat för din Microsoft 365-miljö. Information om hur du får hjälp med detta finns i [Aktivera eller inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Office 365 hotutredning och svar](office-365-ti.md)
+[Office 365 undersökning av hot och svar](office-365-ti.md)
 
-[Automatiserad undersökning och svar (AIR) i Office 365](automated-investigation-response-office.md)
+[Automatisk undersökning och svar (AIR) i Office 365](automated-investigation-response-office.md)
 
-[Office 365 Avancerat hotskydd](office-365-atp.md)
+[Office 365 ATP](office-365-atp.md)
 
-[Smarta rapporter och insikter i Office &amp; 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smarta rapporter och insikter &amp; i Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md)
   

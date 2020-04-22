@@ -1,5 +1,5 @@
 ---
-title: Policyer för phishing
+title: Principer för skydd mot nätfiske
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om den grundläggande anti-phishing-principen i Exchange Online Protection (EOP) och de avancerade ATP-principerna mot nätfiske i Office 365 Advanced Threat Protection.
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537479"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638362"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Principer för nätfiske i Office 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Principer för bekämpning av nätfiske i Microsoft 365
 
 Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Office 365-organisationer med Exchange Online-postlådor, fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor och ATP-organisationer (Office 365 Advanced Threat Protection).
 
@@ -34,13 +34,13 @@ ATP:s principer för nätfiske är endast tillgängliga i organisationer som har
 
 ATP:s principer för phishing-phishing omfattar en inbyggd standardpolicy mot nätfiske och du kan skapa ytterligare anpassade ATP-principer mot nätfiske.
 
-Andra Office 365-organisationer med Exchange Online-postlådor eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor har en inbyggd standardprincip mot nätfiske, men du kan inte skapa ytterligare principer. Endast organisationer med Exchange Online-postlådor kan ändra sin standardpolicy mot nätfiske.
+Andra Microsoft 365-organisationer med Exchange Online-postlådor eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor har en inbyggd standardpolicy mot nätfiske, men du kan inte skapa ytterligare principer. Endast organisationer med Exchange Online-postlådor kan ändra sin standardpolicy mot nätfiske.
 
 Skillnaderna på hög nivå mellan anti-phishing-policyer och ATP-principer mot nätfiske beskrivs i följande tabell:
 
 ||||
 |---|:---:|:---:|
-|**Funktion**|**Policyer för phishing**|**ATP:s policyer för phishing-phishing**|
+|**Funktion**|**Principer för skydd mot nätfiske**|**ATP:s policyer för phishing-phishing**|
 |Skapas automatiskt standardprincip|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Skapa anpassade principer||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Principinställningar<sup>\*</sup>||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -55,30 +55,30 @@ Information om hur du konfigurerar principer mot nätfiske finns i följande avs
 
 - [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md)
 
-- [Konfigurera ATP-principer för nätfiske i Office 365](configure-atp-anti-phishing-policies.md)
+- [Konfigurera ATP-principer för phishing i Microsoft 365](configure-atp-anti-phishing-policies.md)
 
 I resten av det här avsnittet beskrivs de inställningar som är tillgängliga i EOP- och ATP-principerna för nätfiske.
 
 ## <a name="spoof-settings"></a>Spoof-inställningar
 
-Förfalskning är när Från-adressen i ett e-postmeddelande (avsändarens adress som visas i e-postklienter) inte matchar e-postkällans domän. Mer information om förfalskning finns i Skydd mot förfalskning [i Office 365](anti-spoofing-protection.md).
+Förfalskning är när Från-adressen i ett e-postmeddelande (avsändarens adress som visas i e-postklienter) inte matchar e-postkällans domän. Mer information om förfalskning finns i Skydd mot förfalskning [i Microsoft 365](anti-spoofing-protection.md).
 
 Följande falska inställningar är tillgängliga i anti-phishing-policyer och ATP-principer mot nätfiske:
 
-- **Skydd mot spoofing**: Aktiverar eller inaktiverar skydd mot förfalskning. Vi rekommenderar att du lämnar det aktiverat. Du använder **falska underrättelsepolicy för** att tillåta eller blockera specifika förfalskade interna och externa avsändare. Mer information finns [i Konfigurera falska underrättelser i Office 365](learn-about-spoof-intelligence.md).
+- **Skydd mot spoofing**: Aktiverar eller inaktiverar skydd mot förfalskning. Vi rekommenderar att du lämnar det aktiverat. Du använder **falska underrättelsepolicy för** att tillåta eller blockera specifika förfalskade interna och externa avsändare. Mer information finns [i Konfigurera falska underrättelser i Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Spoof-inställningar är aktiverade som standard i standardpolicyn mot nätfiske i EOP, standardprincipen för ATP-phishing och i nya anpassade ATP-principer mot nätfiske som du skapar. <br/><br/> Du behöver inte inaktivera förfalskningsskydd om MX-posten inte pekar på Office 365. du aktiverar utökad filtrering för kopplingar i stället. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Spoof-inställningar är aktiverade som standard i standardpolicyn mot nätfiske i EOP, standardprincipen för ATP-phishing och i nya anpassade ATP-principer mot nätfiske som du skapar. <br/><br/> Du behöver inte inaktivera förfalskningsskydd om MX-posten inte pekar på Microsoft 365. du aktiverar utökad filtrering för kopplingar i stället. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   För meddelanden från blockerade förfalskade avsändare kan du också ange vilken åtgärd som ska vidtas för meddelandena:
 
-  - **Flytta meddelande till mappen Skräppost:** Det här är standardvärdet. Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad i postlådan (det är aktiverat som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Flytta meddelande till mappen Skräppost:** Det här är standardvärdet. Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad i postlådan (det är aktiverat som standard). Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Karantän meddelandet**: Skickar meddelandet till karantän i stället för de avsedda mottagarna. Mer information om karantän finns i artiklarna om följande ämnen:
 
-    - [Karantän i Office 365](quarantine-email-messages.md)
-    - [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md)
-    - [Hitta och släppa meddelanden i karantän som användare i Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Karantän i Microsoft 365](quarantine-email-messages.md)
+    - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Söka efter och släppa meddelanden i karantän som användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - **Oautentiserade avsändaren**: Aktiverar eller inaktiverar oidentifierad avsändande-identifiering i Outlook. Specifikt:
 
@@ -88,7 +88,7 @@ Följande falska inställningar är tillgängliga i anti-phishing-policyer och A
 
   Om du vill förhindra att dessa identifierare läggs till i meddelanden från specifika avsändare har du följande alternativ:
 
-  - Låt avsändaren förfalska i falska underrättelsepolicyn. Instruktioner finns [i Konfigurera falska underrättelser i Office 365](learn-about-spoof-intelligence.md).
+  - Låt avsändaren förfalska i falska underrättelsepolicyn. Instruktioner finns [i Konfigurera falska underrättelser i Microsoft 365](learn-about-spoof-intelligence.md).
 
   - [Konfigurera e-postautentisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarendomänen.
   
@@ -118,7 +118,7 @@ Följande principinställningar är endast tillgängliga i ATP:s principer för 
 
   - **Mottagaren är**: En eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen.
   - **Mottagaren är medlem i**: En eller flera grupper i organisationen.
-  - **Mottagardomänen är**: En eller flera av de konfigurerade accepterade domänerna i Office 365.
+  - **Mottagardomänen är**: En eller flera av de konfigurerade godkända domänerna i Microsoft 365.
 
   - **Utom när**: Undantag för regeln. Inställningarna och beteendet är exakt som villkoren:
 
@@ -152,13 +152,13 @@ Följande inställningar för personifiering är endast tillgängliga i ATP:s pr
 
   - **Omdirigera meddelande till andra e-postadresser**: Skickar meddelandet till de angivna mottagarna i stället för de avsedda mottagarna.
 
-  - **Flytta meddelande till mappen Skräppost:** Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad i postlådan (det är aktiverat som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Flytta meddelande till mappen Skräppost:** Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad i postlådan (det är aktiverat som standard). Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
     - **Karantän meddelandet**: Skickar meddelandet till karantän i stället för de avsedda mottagarna. Mer information om karantän finns i artiklarna om följande ämnen:
 
-    - [Karantän i Office 365](quarantine-email-messages.md)
-    - [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md)
-    - [Hitta och släppa meddelanden i karantän som användare i Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Karantän i Microsoft 365](quarantine-email-messages.md)
+    - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Söka efter och släppa meddelanden i karantän som användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - **Leverera meddelandet och lägg till andra adresser på raden Hemlig kopia:** Leverera meddelandet till de avsedda mottagarna och leverera meddelandet tyst till de angivna mottagarna.
 
@@ -172,7 +172,7 @@ Följande inställningar för personifiering är endast tillgängliga i ATP:s pr
 
 - **Mailbox intelligence**: Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med sina frekventa kontakter. Den här inställningen hjälper AI att skilja mellan legitim och förfalskad e-post från dessa kontakter. Postlådeinformation är endast tillgänglig för Exchange Online-postlådor.
 
-- **Informationsskydd för postlådans intelligens:** Aktiverar eller inaktiverar förbättrade personifieringsresultat baserat på varje användares individuella avsändarekarta. Med den här intelligensen kan Office 365 anpassa identifiering av användarens personifiering och bättre hantera falska positiva identifieringar. När användaren personifiering upptäcks, kan du definiera en specifik åtgärd att vidta på meddelandet:
+- **Informationsskydd för postlådans intelligens:** Aktiverar eller inaktiverar förbättrade personifieringsresultat baserat på varje användares individuella avsändarekarta. Den här intelligensen gör det möjligt för Microsoft 365 att anpassa identifiering av användarens personifiering och bättre hantera falska positiva identifieringar. När användaren personifiering upptäcks, kan du definiera en specifik åtgärd att vidta på meddelandet:
 
   - **Använd inga åtgärder**
   - **Omdirigera meddelande till andra e-postadresser**
