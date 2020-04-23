@@ -4,7 +4,7 @@
   href: ../admin/admin-home.md
 - name: Prova eller köp
   items:
-    - name: Registrera dig för en utvärderingsversion av Office 365
+    - name: Registrera dig för en utvärderingsversion av Microsoft 365
       href: sign-up-for-office-365-trial.md
     - name: Prova eller köp Microsoft 365
       href: try-or-buy-microsoft-365.md
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Andra betaltjänstdirektivet och stark kundautentisering
       href: billing-and-payments/psd2.md
-    - name: Momsinformation
-      href: billing-and-payments/tax-information.md
 - name: Faktureringskonton
   items:
     - name: Hantera faktureringskonton

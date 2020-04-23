@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
-description: Läs om hur du hanterar e-post för Office 365-postlådor.
-ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Läs om hur du hanterar e-post för Microsoft 365-postlådor.
+ms.openlocfilehash: 25d34ed4f86a918daea5e04c89b9b79c91bebc08
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126017"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628861"
 ---
 # <a name="email"></a>E-post
 
-Läs om hur du hanterar e-post för Office 365-postlådor.
+Läs om hur du hanterar e-post för Microsoft 365-postlådor.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -146,7 +146,7 @@ Läs om hur du hanterar e-post för Office 365-postlådor.
                 <div class="card">
                     <div class="cardText">
                         <h3>Lösa problem med e-postanslutning och e-postleverans</a></h3>
-                        <p><a href="https://diagnostics.outlook.com/#/">Åtgärda anslutningsproblem med Outlook i Office 365 och Exchange Online</a></p>
+                        <p><a href="https://diagnostics.outlook.com/#/">Åtgärda anslutningsproblem med Outlook i Microsoft 365 och Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">Återskapa borttagna objekt i en användares postlåda</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">Hitta och åtgärda problem med e-postleverans</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Hitta och åtgärda problem (inklusive problem med e-post) när du har lagt till din domän eller DNS-poster</a></p>
@@ -162,8 +162,8 @@ Läs om hur du hanterar e-post för Office 365-postlådor.
             <div class="card">
                 <div class="cardText">
                         <h3>Resurser för företag</h3>
-                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Metodtips för e-postflöde för Exchange Online och Office 365</a></p>
-                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Olika sätt att migrera flera e-postkonton till Office 365</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Metodtips för e-postflöden i Exchange Online och Microsoft 365</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Olika sätt att migrera flera e-postkonton till Microsoft 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Innehåll i Exchange-hybriddistribution </a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>

@@ -1,10 +1,10 @@
-- name: Microsoft 365 Business
+- name: Microsoft 365 Business Premium
   items:
     - name: Microsoft 365
       href: index.yml
-    - name: Vad är Microsoft 365 Business?
+    - name: Vad är Microsoft 365 Business Premium?
       href: microsoft-365-business-overview.md
-    - name: Skaffa Microsoft 365 Business
+    - name: Hämta Microsoft 365 Business Premium
       href: sign-up.md
     - name: Förutsättningar för dataskydd
       href: pre-requisites-for-data-protection.md
@@ -12,7 +12,7 @@
       items:
         - name: Översikt över konfiguration
           href: set-up-overview.md
-        - name: Konfigurera Microsoft 365 Business
+        - name: Konfigurera Microsoft 365 Business Premium
           href: set-up.md
         - name: Skydda Windows 10-datorer
           href: secure-win-10-pcs.md
@@ -71,9 +71,9 @@
               href: validate-settings-on-windows-10-pcs.md
         - name: Programskyddsinställningar för Windows 10-enheter
           href: protection-settings-for-windows-10-devices.md
-    - name: Migrera till Microsoft 365 Business
+    - name: Migrera till Microsoft 365 Business Premium
       items:
-        - name: Migrera från Office 365 Business Premium
+        - name: Migrera från Microsoft 365 Business Standard
           href: migrate-to-microsoft-365-business.md
         - name: Migrera från Office 365 E3
           href: migrate-from-e3.md
@@ -99,7 +99,7 @@
           href: autopilot-profile-settings.md
         - name: Statusvärden för enheter
           href: device-states.md
-    - name: Vanliga frågor och svar om Microsoft 365 Business
+    - name: Vanliga frågor och svar om Microsoft 365 Business Premium
       href: support/microsoft-365-business-faqs.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/office365/enterprise'

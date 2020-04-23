@@ -191,20 +191,18 @@
               href: mtp/feedback.md
             - name: Hantera biljetter via ServiceNow
               href: ./mtp/tickets.md
-    - name: Office 365-säkerhet
+    - name: Microsoft 365 Säkerhet
       items:
         - name: Komma igång
           items:
-            - name: Säkerhetsöversikt för Office 365
+            - name: Säkerhetsöversikt
               href: ./office-365-security/security-roadmap.md
-            - name: Konfigurera Office 365-klientorganisationen för ökad säkerhet
+            - name: Konfigurera din klientorganisationen för bättre säkerhet
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
-            - name: Nya Microsoft 365 Säkerhetscenter
+            - name: Nya säkerhetscentret i Microsoft 365
               href: ./mtp/overview-security-center.md
-            - name: Behörigheter i Säkerhets- och efterlevnadscenter för Office 365
+            - name: Behörigheter i Säkerhets- och efterlevnadscentret
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Behörigheter i Microsoft 365 Efterlevnadscenter och Microsoft 365 Säkerhetscenter
-              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: Ge användare åtkomst till säkerhetscenter
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: Skydda mot hot
@@ -281,7 +279,7 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: Säkerhetstips i e-postmeddelanden
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare i Office 365
+                - name: Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: Skydd mot nätfiske
               href: ./office-365-security/anti-phishing-protection.md
@@ -320,9 +318,9 @@
             - name: E-postautentisering
               href: ./office-365-security/email-validation-and-authentication.md
               items:
-                - name: Så använder Office 365 SPF för att förhindra förfalskning
+                - name: Så använder Microsoft 365 SPF till att förhindra förfalskning
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
-                - name: Konfigurera SPF i Office 365 för att förhindra förfalskning
+                - name: Konfigurera SPF för att förhindra förfalskning
                   href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
                 - name: Använda DKIM för att validera utgående e-post
                   href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -600,7 +598,7 @@
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 Enterprise
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
-        - name: Office 365 för företag
+        - name: Microsoft 365 för företag
           href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Microsoft 365 Efterlevnad
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'
