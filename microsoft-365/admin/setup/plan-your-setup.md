@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Läs om vad du behöver göra för att konfigurera Microsoft 365 för företag.
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627576"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794045"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planera installationen av Microsoft 365 för företag
 
@@ -93,7 +93,7 @@ Om du planerar att flytta från en befintlig e-posttjänst till Microsoft 365 ta
   
 Om du ska använda Microsoft 365 för din e-post:
   
-- Om du vill flytta företagets e-postadress (till exempel *rob@contoso.com)* från en annan e-posttjänst till Microsoft 365 måste du dirigera din e-post som ska levereras till din nya Microsoft 365-postlåda. Du gör detta genom att välja **Migrera användarnas data** på **installationssidan,** där vi guidar dig genom de uppdateringar du behöver göra på din domänvärd, steg för steg.
+- Om du vill flytta företagets e-postadress (till exempel *\@rob contoso.com)* från en annan e-posttjänst till Microsoft 365 måste du dirigera din e-post som ska levereras till din nya Microsoft 365-postlåda. Du gör detta genom att välja **Migrera användarnas data** på **installationssidan,** där vi guidar dig genom de uppdateringar du behöver göra på din domänvärd, steg för steg.
 
 - När du har uppdaterat värden för domänen börjar ändringarna vanligtvis att gälla efter bara en timme eller två. Men tänk på att det ibland kan ta upp till 72 timmar för ändringarna att uppdatera över internet.
 
