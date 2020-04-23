@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: Få teknisk support och faktureringssupport via de telefonnummer som anges för din region eller ditt språk, eller genom att skicka en tjänstbegäran online eller besöka Microsoft Store.
+description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online eller besöka Microsoft Store.
 feedback_system: None
-ms.openlocfilehash: 8f108f4348a7cecd62eba869962d9ee5b179b5b0
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212123"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707553"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Kontakta supporten för företagsprodukter – hjälp för administratörer
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[Onlinesupport](#tab/online)
 
@@ -52,7 +51,9 @@ Spara tid genom att påbörja din tjänstbegäran online. Vi hjälper dig att hi
 
 ## <a name="phone-support"></a>[Telefonsupport](#tab/phone)
 
-Faktureringssupport ges på engelska kl. 9–17 (9–18 i Australien), måndag till fredag.  <br/>Teknisk support på engelska dygnet runt alla dagar. <br/> Ha kontouppgifterna redo när du ringer.<br/>
+Faktureringssupport ges på engelska kl. 9–17 (9–18 i Australien), måndag till fredag.
+Teknisk support på engelska dygnet runt alla dagar.\
+Ha kontouppgifterna redo när du ringer.\
 
 - **I Sverige ringer du 020 160 5899. **
 
@@ -62,7 +63,7 @@ Faktureringssupport ges på engelska kl. 9–17 (9–18 i Australien), måndag t
 
 - **I Storbritannien ringer du 0800 032 6417.**
 
-Om ditt supporttelefonnummer för Office 365 eller Microsoft 365 Business inte visas ovan använder du listrutemenyn nedan för att välja land eller region.
+Om ditt supporttelefonnummer för Microsoft 365 Business inte visas ovan använder du listrutemenyn nedan för att välja land eller region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -70,13 +71,15 @@ Om du vill veta hur du öppnar en tjänstbegäran väljer du fliken **Onlinesupp
 
 ## <a name="in-store-support"></a>[Support i butik](#tab/instore)
 
-Du kan nu avtala en tid med din lokala Microsoft-butik med en supportavdelning för att lösa problemet med Office 365 eller Microsoft 365.
+Du kan nu avtala en tid med din lokala Microsoft Store med en supportavdelning för att lösa problemet med Microsoft 365.
 
 1. Gå till [schemaläggningssidan för Microsoft butiker](https://go.microsoft.com/fwlink/?LinkID=2041482) och välj **Schemalägga en avtalad tid**.
 
 2. Ange din plats och sök efter en Microsoft Store nära dig.
 
 3. Välj din butik och välj sedan **Schemalägg avtalad tid för tjänst nu**.
+
+---
 
 ::: moniker-end
 
@@ -120,7 +123,7 @@ Teknisk support för prenumerationer på Office 365 som drivs av 21Vianet hjälp
 
 | Supportkategori | Exempel |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation och konfiguration | Exchange Online  <ul><li>Office 365-postlådemigrering</li><li>Mottagarkonfiguration (postlådebehörigheter, konfigurera vidarebefordran av e-post, konfigurera delad postlåda)</li><li>Konfiguration av automatisk upptäckt</li></ul> SharePoint Online <ul><li>Behörigheter och användargrupper</li><li>Konfiguration av externa användare</li></ul> Skype för företag – Online  <ul><li>Installation och skapa kontakter</li></ul> Office 365 ProPlus  <ul><li>Installation och konfiguration</li></ul> |
+| Installation och konfiguration | Exchange Online  <ul><li>Office 365-postlådemigrering</li><li>Mottagarkonfiguration (postlådebehörigheter, konfigurera vidarebefordran av e-post, konfigurera delad postlåda)</li><li>Konfiguration av automatisk upptäckt</li></ul> SharePoint Online <ul><li>Behörigheter och användargrupper</li><li>Konfiguration av externa användare</li></ul> Skype för företag – Online  <ul><li>Installation och skapa kontakter</li></ul> Microsoft 365-applikationer för företag  <ul><li>Installation och konfiguration</li></ul> |
 | Konfiguration | Konfigurationsproblem med tjänsten  <ul><li>Enkel inloggning (SSO)</li><li>Active Directory-synkronisering</li></ul> |
 
 > [!NOTE]
@@ -178,7 +181,7 @@ Ring supporten. Om du stöter på problem med din onlinebegäran kan du ringa (8
 
 Personer med administratörsroller är de enda i kundens organisation som är behöriga att få åtkomst till administrationsavsnittet på portalen för Office 365 som drivs av 21Vianet och att kommunicera direkt med 21Vianet om Office 365-tjänstbegäranden.
 
-Med Office 365 kan du ange flera typer av administratörer som har olika funktioner. Den här tjänstbeskrivningen använder den allmänna titeln administratör för att referera till alla kategorier av administratörer. Mer information om olika typer av administratörsroller finns i [Tilldela administratörsroller i Office 365 för företag](add-users/assign-admin-roles.md).
+Med Office 365 kan du ange flera typer av administratörer som har olika funktioner. Den här tjänstbeskrivningen använder den allmänna titeln administratör för att referera till alla kategorier av administratörer. Mer information om olika typer av administratörsroller finns i [Tilldela administratörsroller i Microsoft 365 for Business](add-users/assign-admin-roles.md).
 
 Administratören är:
 
@@ -237,7 +240,7 @@ Den här artikeln gäller för Office 365 Germany-kunder som har domäner som sl
 Som administratör för Office 365 Germany får du fri tillgång till vår kunniga supportpersonal för hjälp med att lösa tekniska problem samt för support före försäljning, kontosupport och faktureringssupport. Du kan även kontakta oss med ärenden gällande andra Office 365 Germany-användare i organisationen.
 
 > [!NOTE]
-> Alla supportalternativ nedan gäller för Microsoft Cloud Germany. Mer information om hur Microsoft använder sig av de data du tillhandahåller när du kontaktar supporten för Microsoft Office 365 finns i [sekretesspolicyn](https://go.microsoft.com/fwlink/p/?LinkId=512132).
+> Alla supportalternativ nedan gäller för Microsoft Cloud Germany. Mer information om hur Microsoft använder sig av de data du tillhandahåller när du kontaktar supporten för Microsoft finns i [sekretesspolicyn](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
 ### <a name="get-assisted-support"></a>Få assisterad support
 
@@ -254,6 +257,6 @@ Alternativen för assisterad support är endast till för administratörer i org
 
 ### <a name="let-our-community-help"></a>Låt vår community hjälpa dig
 
-Du kan också [söka i Office 365 för företag-forumen](https://go.microsoft.com/fwlink/p/?LinkId=518605) efter kända problem och populära ämnen eller ställa en ny fråga. Forumen övervakas av Microsofts kunniga supportpersonal som kan hjälpa dig att lösa problemet.
+Du kan också [söka i Microsoft 365 for business-forumen](https://go.microsoft.com/fwlink/p/?LinkId=518605) efter kända problem och populära ämnen eller ställa en ny fråga. Forumen övervakas av Microsofts kunniga supportpersonal som kan hjälpa dig att lösa problemet.
 
 ::: moniker-end
