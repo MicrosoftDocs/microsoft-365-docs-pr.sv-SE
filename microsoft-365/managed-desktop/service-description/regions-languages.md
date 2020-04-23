@@ -6,26 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b517ab49681b7e9251cd5b577c9522db32aea4cb
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "42811837"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790699"
 ---
-# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a><span data-ttu-id="d5508-104">Regioner och språk som stöds av Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="d5508-104">Microsoft Managed Desktop supported regions and languages</span></span>
+# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a><span data-ttu-id="b29c8-104">Regioner och språk som stöds av Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="b29c8-104">Microsoft Managed Desktop supported regions and languages</span></span>
 
-<span data-ttu-id="d5508-105">Det här avsnittet innehåller information om regioner och språk som stöds av Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="d5508-105">This topic provides details about regions and languages supported by Microsoft Managed Desktop.</span></span> 
+<span data-ttu-id="b29c8-105">Den här artikeln innehåller information om regioner och språk som stöds av Microsoft Managed Desktop och de regioner där du kan använda det.</span><span class="sxs-lookup"><span data-stu-id="b29c8-105">This article provides details about regions and languages supported by Microsoft Managed Desktop and the regions where you can use it.</span></span>
 
-- <span data-ttu-id="d5508-106">**Regioner:** USA, Kanada (exklusive Quebec), Storbritannien, Belgien, Luxemburg, Nederländerna, Australien och Nya Zeeland</span><span class="sxs-lookup"><span data-stu-id="d5508-106">**Regions:** United States, Canada (excluding Quebec), United Kingdom, Belgium, Luxembourg, the Netherlands, Australia, and New Zealand</span></span>
-- <span data-ttu-id="d5508-107">**Språk:** Engelska är det enda språk som stöds för närvarande tillgängligt för användare på hanterade enheter.</span><span class="sxs-lookup"><span data-stu-id="d5508-107">**Languages:** English is the only supported language currently available to users on managed devices.</span></span> <span data-ttu-id="d5508-108">Detta gäller både [administratörssupport](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) och [supportalternativ för slutanvändare.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)</span><span class="sxs-lookup"><span data-stu-id="d5508-108">This is applicable to both [Admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [End-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) options.</span></span> 
+## <a name="supported-languages"></a><span data-ttu-id="b29c8-106">Språk som stöds</span><span class="sxs-lookup"><span data-stu-id="b29c8-106">Supported languages</span></span>
 
-<span data-ttu-id="d5508-109">Kunder kan dock fortfarande använda hanterade enheter utanför de regioner som anges ovan utan avbrott i Tjänsten Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="d5508-109">However, customers can still use managed devices outside of the regions listed above without an interruption to the Microsoft Managed Desktop service.</span></span> <span data-ttu-id="d5508-110">En anställd baserad i Storbritannien kan till exempel arbeta säkert och få uppdateringar om sin hanterade enhet när de reser i Asien, Europa eller Sydamerika.</span><span class="sxs-lookup"><span data-stu-id="d5508-110">For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America.</span></span>
-
-<span data-ttu-id="d5508-111">Mer information om användarsupport med Microsoft Managed Desktop finns i [support för Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).</span><span class="sxs-lookup"><span data-stu-id="d5508-111">For more information about user support with Microsoft Managed Desktop, see [support for Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).</span></span>
-
-<span data-ttu-id="d5508-112">Om en användare föredrar att arbeta på ett annat språk än engelska kan han eller hon begära att deras lokala IT-administratör centralt distribuerar ytterligare språkpaket på hanterade enheter via Intune Company Portal-appen.</span><span class="sxs-lookup"><span data-stu-id="d5508-112">If a user prefers to work in a language other than English, they can request that their local IT administrator centrally deploy additional language packs on managed devices through the Intune Company Portal app.</span></span> <span data-ttu-id="d5508-113">Från och med Windows 10, version 1803, levereras språkpaket som appx-paket från Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="d5508-113">Starting with Windows 10, version 1803, language packs are delivered as appx packages from Microsoft Store.</span></span> <span data-ttu-id="d5508-114">Mer information finns i [Microsoft Store för företag-appar](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).</span><span class="sxs-lookup"><span data-stu-id="d5508-114">To learn more, see [Microsoft Store for Business apps](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).</span></span>
+<span data-ttu-id="b29c8-107">Engelska är det enda språk som är tillgängligt för användare av Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="b29c8-107">English is the only language available to users of Microsoft Managed Desktop.</span></span> <span data-ttu-id="b29c8-108">Detta inkluderar alla användargränssnitt för både slutanvändare och administratörer och alla interaktioner med både [administratörsstöd](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) och [slutanvändarsupport](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).</span><span class="sxs-lookup"><span data-stu-id="b29c8-108">This includes all user interfaces for both end users and administrators and all interactions with both [admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [end-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).</span></span>
 
 
->[!NOTE]
-><span data-ttu-id="d5508-115">GetHelp-appen på en Microsoft Managed Desktop-enhet har endast stöd för engelska.</span><span class="sxs-lookup"><span data-stu-id="d5508-115">The GetHelp app on a Microsoft Managed Desktop device supports English only.</span></span> <span data-ttu-id="d5508-116">För att användarna ska få hjälp med Microsoft Managed Desktop via GetHelp-appen måste de byta visningsspråk till engelska.</span><span class="sxs-lookup"><span data-stu-id="d5508-116">For users to obtain help with Microsoft Managed Desktop through the GetHelp app, they must switch the display language to English.</span></span>
+<span data-ttu-id="b29c8-109">Du kan fortfarande använda hanterade enheter utanför engelsktalande regioner utan avbrott i Tjänsten Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="b29c8-109">You can still use managed devices outside of English-speaking regions without an interruption to the Microsoft Managed Desktop service.</span></span> <span data-ttu-id="b29c8-110">En anställd baserad i Storbritannien kan till exempel arbeta säkert och få uppdateringar om sin hanterade enhet när de reser i Asien, Europa eller Sydamerika.</span><span class="sxs-lookup"><span data-stu-id="b29c8-110">For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America.</span></span> 
+
+<span data-ttu-id="b29c8-111">Mer information om användarsupport med Microsoft Managed Desktop finns i [Support för Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).</span><span class="sxs-lookup"><span data-stu-id="b29c8-111">For more information about user support with Microsoft Managed Desktop, see [Support for Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).</span></span>
+
+## <a name="availability-of-the-service"></a><span data-ttu-id="b29c8-112">Tjänstens tillgänglighet</span><span class="sxs-lookup"><span data-stu-id="b29c8-112">Availability of the service</span></span>
+
+<span data-ttu-id="b29c8-113">Organisationer i följande länder kan prenumerera på Microsoft Managed Desktop:</span><span class="sxs-lookup"><span data-stu-id="b29c8-113">Organizations in the following countries can subscribe to Microsoft Managed Desktop:</span></span>
+
+- <span data-ttu-id="b29c8-114">USA</span><span class="sxs-lookup"><span data-stu-id="b29c8-114">United States</span></span>
+- <span data-ttu-id="b29c8-115">Kanada (exklusive Quebec)</span><span class="sxs-lookup"><span data-stu-id="b29c8-115">Canada (excluding Quebec)</span></span>
+- <span data-ttu-id="b29c8-116">Storbritannien</span><span class="sxs-lookup"><span data-stu-id="b29c8-116">United Kingdom</span></span>
+- <span data-ttu-id="b29c8-117">Irland</span><span class="sxs-lookup"><span data-stu-id="b29c8-117">Ireland</span></span>
+- <span data-ttu-id="b29c8-118">Belgien</span><span class="sxs-lookup"><span data-stu-id="b29c8-118">Belgium</span></span>
+- <span data-ttu-id="b29c8-119">Luxemburg</span><span class="sxs-lookup"><span data-stu-id="b29c8-119">Luxembourg</span></span>
+- <span data-ttu-id="b29c8-120">Nederländerna</span><span class="sxs-lookup"><span data-stu-id="b29c8-120">Netherlands</span></span>
+- <span data-ttu-id="b29c8-121">Sverige</span><span class="sxs-lookup"><span data-stu-id="b29c8-121">Sweden</span></span>
+- <span data-ttu-id="b29c8-122">Finland</span><span class="sxs-lookup"><span data-stu-id="b29c8-122">Finland</span></span>
+- <span data-ttu-id="b29c8-123">Norge</span><span class="sxs-lookup"><span data-stu-id="b29c8-123">Norway</span></span>
+- <span data-ttu-id="b29c8-124">Danmark</span><span class="sxs-lookup"><span data-stu-id="b29c8-124">Denmark</span></span>
+- <span data-ttu-id="b29c8-125">Island</span><span class="sxs-lookup"><span data-stu-id="b29c8-125">Iceland</span></span>
+- <span data-ttu-id="b29c8-126">Australien</span><span class="sxs-lookup"><span data-stu-id="b29c8-126">Australia</span></span>
+- <span data-ttu-id="b29c8-127">Nya Zeeland</span><span class="sxs-lookup"><span data-stu-id="b29c8-127">New Zealand</span></span>
+
+<span data-ttu-id="b29c8-128">Både slutanvändare och administratörer i dessa regioner måste använda engelska för sina enheter och hanteringsverktyg.</span><span class="sxs-lookup"><span data-stu-id="b29c8-128">Both end users and administrators in these regions must use English for their devices and management tools.</span></span> 
