@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Få regelbundna rapporter om hur personer i organisationen använder Office 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204062"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621276"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Aktivitetsrapporter i administrationscentret för Microsoft 365
+# <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
-Du ser enkelt hur personer i företaget använder Office 365-tjänster. Du kan till exempel identifiera vem som använder en tjänst mycket och når kvoter och vem som kanske inte behöver någon Office 365-licens alls.
+Du ser enkelt hur personer i företaget använder Microsoft 365-tjänster. Du kan till exempel identifiera vem som använder en tjänst mycket och når kvoter och vem som kanske inte behöver någon Microsoft 365-licens alls.
   
 Rapporter är tillgängliga för de senaste 7 dagarna, 30 dagarna, 90 dagarna och 180 dagarna. Det finns inte direktdata för alla rapporteringsperioder. Rapporterna blir tillgängliga inom 48 timmar.
   
@@ -58,7 +58,7 @@ I den här videon finns information om hur du kan använda rapporterna:
 ::: moniker-end
 
    
-2. Om du väljer **Välj en rapport** längst upp på instrumentpanelen så kan du välja från en lista med alla tillgängliga rapporter. Du kan också välja en översiktlig aktivitetswidget för en tjänst (e-post, OneDrive o.s.v.) om du vill ha mer information. <br/>![Instrumentpanelen för Office 365-användning](../../media/usage-report-dashboard.png)
+2. Om du väljer **Välj en rapport** längst upp på instrumentpanelen så kan du välja från en lista med alla tillgängliga rapporter. Du kan också välja en översiktlig aktivitetswidget för en tjänst (e-post, OneDrive o.s.v.) om du vill ha mer information. <br/>![Instrumentpanelen Användning](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Vem kan se rapporter
 
@@ -87,7 +87,6 @@ Mer information finns i [Om administratörsroller](../add-users/about-admin-role
 De här rapporterna är tillgängliga, beroende på din prenumeration.
   
 - [E-postaktivitet](email-activity.md)
-- [Formuläraktivitet](forms-activity.md)
     
 - [Postlådeanvändning](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 - [Aktiva användare](active-users.md)
   
 - [Användning av e-postprogram](email-apps-usage.md)
+
+- [Formuläraktivitet](forms-activity.md)
   
-- [Grupper i Office 365](office-365-groups.md)
+- [Microsoft 365-grupper](office-365-groups.md)
   
 - [Användaraktivitet i OneDrive för företag](onedrive-for-business-activity.md)
   
 - [OneDrive för företag-användning](onedrive-for-business-usage.md)
+
 - [ProPlus-användning](microsoft365-apps-usage.md)
   
 - [SharePoint-webbplatsanvändning](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ Du kan snabbt göra en ändring i administrationscentret om du vill dölja infor
   
 Din användarlista kommer att se ut så här:
   
-![Office 365-rapporter – anonymiserad användarlista](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Rapporter – anonymiserad användarlista](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Det tar några minuter innan ändringarna börjar gälla i rapporterna i instrumentpanelen för rapporter. Den här inställningen gäller även för API för rapporter.
   
@@ -184,4 +186,3 @@ När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dag
 
 [Rapporter i Säkerhets- och efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

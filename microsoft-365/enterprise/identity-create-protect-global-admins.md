@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dina globala administratörskonton kräver särskild hantering för att skydda dem från obehörig inloggning.
-ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c23a5730bc4c6af1f7fd829a40b63cc7ccc89184
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42806041"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621312"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Steg 1: Skapa och skydda dina globala administratörskonton
 
@@ -41,7 +41,7 @@ För dina dedikerade globala administratörskonton måste du även:
 1. Testa MFA-inställningar baserat på användarkonto eller villkorlig åtkomst på en testanvändare för att säkerställa att MFA fungerar på rätt sätt och på ett förutsägbart sätt. MFA kräver en sekundär typ av autentisering, t.ex. en verifieringskod som skickas till en smartphone.
 2. Skapa och aktivera en princip för villkorlig åtkomst för dina globala administratörskonton som kräver MFA och som använder den starkaste formen av sekundär autentisering som är tillgänglig i din organisation. Mer information finns i [Azure Multi-Factor Authentication](identity-access-prerequisites.md#protecting-administrator-accounts).
 
-Fler skydd finns i [Skydda dina globala administratörskonton för Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
+Fler skydd finns i [Skydda dina globala administratörskonton](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
 
 > [!Note]
 > Nödkonton för akuta scenarier, t.ex. en cyberattack, bör endast vara molnbaserade. Du kan även ha globala administratörskonton (kvalificerade eller permanenta) som inte endast är molnbaserade. Mer information finns i [Hantera administratörskonton för nödåtkomst i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
@@ -86,9 +86,9 @@ Som en mellanliggande kontrollpunkt kan du läsa [avslutsvillkoren](identity-exi
 <a name="identity-pam"></a>
 ## <a name="privileged-access-management"></a>Privileged Access Management
 
-Privileged Access Management aktiveras genom att konfigurera principer som anger just-in-time-åtkomst för uppgiftsbaserade aktiviteter i Office 365-klientorganisationen. Det kan hjälpa dig att skydda din organisation från intrång som kan använda befintliga privilegierade administratörskonton med ständig åtkomst till känsliga data eller åtkomst till kritiska konfigurationsinställningar. Du kan t. ex. konfigurera en Privileged Access Management-princip som kräver uttryckligt godkännande för att få åtkomst till och ändra inställningar för organisationens postlådor i Office 365-klientorganisationen.
+Privileged Access Management aktiveras genom att principer konfigureras som ställer in just-in-time-åtkomst för uppgiftsbaserade aktiviteter i klientorganisationen. Det kan hjälpa dig att skydda din organisation från intrång som kan använda befintliga privilegierade administratörskonton med ständig åtkomst till känsliga data eller åtkomst till kritiska konfigurationsinställningar. Du kan t.ex. konfigurera en Privileged Access Management-princip som kräver uttryckligt godkännande för åtkomst till och ändring av inställningar för organisationens postlådor i klientorganisationen.
 
-I det här steget ska du aktivera Privileged Access Management i din Office 365-klientorganisation och konfigurera principer för privilegierad åtkomst som ger ytterligare säkerhet för aktivitetsbaserad åtkomst till Office 365-data och -konfigurationsinställningar för din organisation. Det finns tre grundläggande steg för att komma igång med privilegierad åtkomst i din Office 365-organisation:
+I det här steget ska du aktivera Privileged Access Management i din klientorganisation och konfigurera principer för privilegierad åtkomst som ger ytterligare säkerhet för aktivitetsbaserad åtkomst till data- och konfigurationsinställningar för din organisation. Det finns tre grundläggande steg för att komma igång med privilegierad åtkomst i din organisation:
 
 - Skapa en godkännargrupp
 - Aktivera privilegierad åtkomst
@@ -96,9 +96,9 @@ I det här steget ska du aktivera Privileged Access Management i din Office 365-
 
 När du har konfigurerat Privileged Access Management kan din organisation fungera helt utan ständiga privilegier, och ger ett skydd mot säkerhetsproblem som uppstår på grund av sådan ständig administratörsåtkomst. Privilegierad åtkomst kräver godkännanden för att kunna utföra en aktivitet som har en kopplad och definierad godkännandeprincip. Användare som behöver utföra aktiviteter som ingår i en godkännandeprincip måste begära och beviljas åtkomstgodkännande för att få behörigheter för att utföra aktiviteter som definierats i principen.
 
-Mer information om hur du aktiverar Privileged Access Management i Office 365 finns i avsnittet [Konfigurera Privileged Access Management i Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Information om hur du aktiverar Privileged Access Management finns i avsnittet [Konfigurera Privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 
-Mer information finns i avsnittet [Privileged Access Management i Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Mer information finns i avsnittet [Privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
 
 |||

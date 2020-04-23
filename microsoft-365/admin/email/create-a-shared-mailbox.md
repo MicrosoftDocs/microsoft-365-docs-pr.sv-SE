@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212311"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628909"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
 > [!NOTE]
 > Om din organisation använder en Exchange-hybridmiljö, använder du det lokala administrationscentret för Exchange när du skapar och hanterar delade postlådor. Se [Så här skapar du en delad postlåda i administrationscentret för Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> Om du inte är säker på ifall du ska skapa en delad postlåda eller en Office 365-grupp för Outlook, kan du läsa mer i [Jämföra grupper](../create-groups/compare-groups.md).  Det är för närvarande inte möjligt att migrera en delad postlåda till en Office 365-grupp. Om det är något som du vill kunna göra, kan du låta oss veta detta genom att [rösta här](https://go.microsoft.com/fwlink/?linkid=871518).
+> Om du inte är säker på ifall du ska skapa en delad postlåda eller en Microsoft 365-grupp för Outlook, kan du läsa mer i [Jämföra grupper](../create-groups/compare-groups.md).  Observera att det för närvarande inte är möjligt att migrera en delad postlåda till en Microsoft 365-grupp. Om det är något som du vill kunna göra, kan du låta oss veta detta genom att [rösta här](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Det är enkelt att skapa en delad postlåda så att en grupp användare kan övervaka och skicka e-post från en gemensam e-postadress, exempelvis info@contoso.com. När en person i gruppen svarar på ett meddelande till den delade postlådan ser svarsmeddelandet ut att komma från den delade postlådan, inte från den enskilda användaren.
 
@@ -42,7 +42,7 @@ Innan du skapar en delad postlåda bör du läsa [Om delade postlådor](about-sh
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Skapa en delad postlåda och lägg till medlemmar
   
-1. Logga in med ett globalt administratörskonto för Office 365 eller Exchange. Om du får meddelandet ”**Du har inte behörighet att komma åt den här sidan eller utföra den här åtgärden**”, är du inte någon administratör. 
+1. Logga in med ett globalt administratörskonto eller Exchange-administratörskonto. Om du får meddelandet ”**Du har inte behörighet att komma åt den här sidan eller utföra den här åtgärden**”, är du inte någon administratör. 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ Du kan komma åt en delad postlåda på en mobil enhet på två sätt:
     
     Anvisningar finns i <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Lägga till en delad postlåda i Outlook Mobile</a>.
 
-- Öppna webbläsaren, logga in på Office 365 och gå sedan till Outlook på webben. Från Outlook på webben har du tillgång till den delade postlådan.
+- Öppna webbläsaren, logga in och gå sedan till Outlook på webben. Från Outlook på webben har du tillgång till den delade postlådan.
 
     Anvisningar finns i <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Lägga till en delad postlåda i Outlook på webben</a>.
 

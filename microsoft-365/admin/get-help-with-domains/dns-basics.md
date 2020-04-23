@@ -20,13 +20,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina Office 365-domäner.
-ms.openlocfilehash: 4fd41102193a9e630ed04a9d1fb2e196dc94486b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
+ms.openlocfilehash: 0b1e969dbb8b172c799e98d5470860fec3625fc2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210474"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628488"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -34,7 +34,7 @@ ms.locfileid: "43210474"
   
 ::: moniker range="o365-worldwide"
 
-Domännamn, till exempel contoso.com, hanteras med ett världsomspännande system för domänregistratorer och databaser. DNS (Domain Name System) tillhandahåller en mappning mellan läsbara dator värdnamn och de IP-adresser som används av nätverksutrustning. En förståelse av grunderna i DNS och domän registrator kan hjälpa dig att hantera domäner i Office 365.
+Domännamn, till exempel contoso.com, hanteras med ett världsomspännande system för domänregistratorer och databaser. DNS (Domain Name System) tillhandahåller en mappning mellan läsbara dator värdnamn och de IP-adresser som används av nätverksutrustning. En förståelse av grunderna i DNS och domänregistratorer kan hjälpa dig att hantera domäner.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -144,7 +144,7 @@ Varför kan domänens zonfil finnas på en annan plats än hos din domänregistr
 ::: moniker-end
 
 > [!NOTE]
-> Om du har konfigurerat en domän i Office 365 så att [Office 365 ställer in och hanterar DNS-posterna](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) åt dig kommer du som ett led i konfigurationen att [Ändra DNS-hanteringen till Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
+> Om du har konfigurerat din domän i Office 365 så att [Microsoft ställer in och hanterar dina DNS-poster](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) åt dig kommer du som ett led i konfigurationen att [ändra DNS-hanteringen till Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
  
 
 ::: moniker range="o365-worldwide"
@@ -154,13 +154,13 @@ Varför kan domänens zonfil finnas på en annan plats än hos din domänregistr
 Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
   
 > [!NOTE]
-> Om du bara vill ladda ned och använda Office 365-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Om du bara vill ladda ned och använda Microsoft-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplats och din adress för snabbmeddelanden.
   
 - **E-post:** ditt domännamn kan du anpassa din e-post så att du kan använda en kortare och enklare adress än [den första onmicrosoft.com e-postadress](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) som medföljer ditt konto. I stället för joe@contoso.onmicrosoft.com kan e-postadressen (som också är det arbetskonto som du använder för att logga in på Office 365) vara joe@contoso.com. 
     
-- **Webbplats:** Om du har en Office 365-prenumeration med en offentlig SharePoint Online-webbplats (går inte längre att köpa) har den offentliga webbplatsen från början en adress enligt följande: contoso-public.sharepoint.com. Om du konfigurerar en webbplats för företaget kan du använda en egen domän för att byta namn på webbplatsens adress till något i stil med www.contoso.com. 
+- **Webbplats:** Om du har en Microsoft 365-prenumeration med en offentlig SharePoint Online-webbplats (går inte längre att köpa) har den offentliga webbplatsen från början en adress som följande: contoso-public.sharepoint.com. Om du konfigurerar en webbplats för företaget kan du använda en egen domän för att byta namn på webbplatsens adress till något i stil med www.contoso.com. 
     
 - **Snabbmeddelanden:** Adressen för ditt Skype för företag Online kan också anpassas med domännamnet så att personer i organisationen kan kommunicera via Skype för företag Online med en kortare, mer minnesvänlig adress (t.ex. joe@contoso.com). 
     
@@ -179,7 +179,7 @@ Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplat
   
 - **E-post:** ditt domännamn kan du anpassa din e-post så att du kan använda en kortare och enklare adress än [den första onmicrosoft.com e-postadress](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) som medföljer ditt konto. I stället för joe@contoso.onmicrosoft.com kan e-postadressen (som också är det arbetskonto som du använder för att logga in på Office 365) vara joe@contoso.com. 
     
-- **Webbplats:** Om du har en Office 365-prenumeration med en offentlig SharePoint Online-webbplats (går inte längre att köpa) har den offentliga webbplatsen från början en adress enligt följande: contoso-public.sharepoint.com. Om du konfigurerar en webbplats för företaget kan du använda en egen domän för att byta namn på webbplatsens adress till något i stil med www.contoso.com. 
+- **Webbplats:** Om du har en prenumeration med en offentlig SharePoint Online-webbplats (går inte längre att köpa) har den offentliga webbplatsen från början en adress som följande: contoso-public.sharepoint.com. Om du konfigurerar en webbplats för företaget kan du använda en egen domän för att byta namn på webbplatsens adress till något i stil med www.contoso.com. 
     
 - **Snabbmeddelanden:** Adressen för ditt Skype för företag Online kan också anpassas med domännamnet så att personer i organisationen kan kommunicera via Skype för företag Online med en kortare, mer minnesvänlig adress (t.ex. joe@contoso.com). 
     
@@ -189,7 +189,7 @@ Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplat
 
 Det finns ett antal DNS-poster som krävs för att Office 365 ska fungera tillsammans med din domän. Förutom att ställa in domänens MX-post så att e-post skickas till Office 365 finns det också poster som hjälper till med åtgärder som att automatiskt ansluta Outlook till rätt Exchange-server, konfigurera snabbmeddelanden och förhindra skräppost.
   
-Du kan [hitta en lista med värden](information-for-dns-records.md) att konfigurera din domän. De är inkluderade direkt i Office 365-portalen. 
+Du kan [hitta en lista med värden](information-for-dns-records.md) att konfigurera din domän. De finns i Administrationscenter för Microsoft 365. 
   
 Om du planerar en distribution kanske du vill granska en lista över alla de DNS-poster som behövs för Office 365, vad deras funktion är och exempelvärden. Ta en titt på [Externa DNS-poster för Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
   

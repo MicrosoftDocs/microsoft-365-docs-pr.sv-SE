@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå molninfrastrukturen i Contoso och hur den använder SD-WAN-tekniken för optimal nätverksprestanda för molntjänster i Microsoft 365 Enterprise.
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810368"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625284"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Nätverk för Contoso Corporation
 
@@ -50,14 +50,14 @@ Bild 1 visar organisationens nätverksinfrastruktur och anslutningar till Intern
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Användning av SD-WAN för optimal nätverksanslutning till Microsoft
 
-Contoso följde [principerna för nätverksanslutningar för Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) för att:
+Contoso följde [principerna för nätverksanslutningar för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) för att:
 
-1. Identifiera och differentiera nätverkstrafik för Office 365
+1. Identifiera och särskilja Microsoft 365-nätverkstrafik
 2. Utgående nätverksanslutningar lokalt
 3. Undvika nätverkshairpins
 4. Kringgå dubblerade enheter för nätverkssäkerhet
 
-Det finns tre olika kategorier av nätverkstrafik för Office 365: Optimera, Tillåt och Standard. Trafik av typerna Optimera och Tillåt är betrodd nätverkstrafik som krypteras och skyddas vid slutpunkterna och som är avsedd för Microsoft 365-nätverket.
+Det finns tre olika kategorier av nätverkstrafik för Microsoft 365: Optimera, Tillåt och Standard. Trafik av typerna Optimera och Tillåt är betrodd nätverkstrafik som krypteras och skyddas vid slutpunkterna och som är avsedd för Microsoft 365-nätverket.
 
 Contoso fattade beslutet att:
 
@@ -93,7 +93,7 @@ En lyckad integrering av Microsoft 365 Enterprise-tjänster för Contosos använ
 
 2. Skapade en plan för Microsoft 365 Enterprise-nätverksanslutning
 
-   Contoso använde sig av [principerna för nätverksanslutningar för Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) och tillhandahöll referensnätverksarkitekturer för att utse SD-WAN som föredragen topologi för Office 365-anslutningar.
+   Contoso använde sig av [principerna för nätverksanslutningar för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) och tillhandahöll referensnätverksarkitekturer för att utse SD-WAN som föredragen topologi för Microsoft 365-anslutningar.
 
 3. Analyserade användningen av Internet-anslutning och MPLS WAN-bandbredd för varje kontor och ökade bandbredd vid behov
 
@@ -105,7 +105,7 @@ En lyckad integrering av Microsoft 365 Enterprise-tjänster för Contosos använ
 
 5. Konfigurerade intern DNS
 
-   DNS måste fungera och letas upp lokalt för Office 365-trafik.
+   DNS måste fungera och letas upp lokalt för Microsoft 365-trafik.
 
 6. Verifierade nätverksslutpunkter och portanslutningar
 

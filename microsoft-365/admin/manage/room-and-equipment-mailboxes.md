@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'När du har skapat en postlåda för ett rum eller en utrustning, kan alla i företaget boka den för möten eller händelser med hjälp av Outlook. '
-ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808196"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628082"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Postlådor för rum och utrustning
 
-Om du har ett konferensrum, en företagsbil eller utrustning som alla kan behöva använda, behöver man kunna boka dessa resurser. Det bästa sättet är att skapa en postlåda för ett rum eller en utrustning i Office 365 för varje resurs. Du kan t.ex. skapa den för ditt konferensrum på första våningen, din medieutrustning eller en lastbil.
+Om du har ett konferensrum, en företagsbil eller utrustning som alla kan behöva använda, behöver man kunna boka dessa resurser. Det bästa sättet är att skapa en postlåda för ett rum eller en utrustning i Microsoft 365 för varje resurs. Du kan t.ex. skapa den för ditt konferensrum på första våningen, din medieutrustning eller en lastbil.
   
 När du har skapat en postlåda för ett rum eller en utrustning, kan alla i företaget boka den för möten eller händelser med hjälp av Outlook. Lär dig **hur du använder den** och **hur du konfigurerar den** på följande två flikar. Här är några andra vanliga frågor om postlådor för rum och utrustning. 
   
@@ -66,7 +66,7 @@ Om du vill konfigurera en postlåda för ett rum eller en utrustning, går du ti
   
 2. Välj **Lägg till**.
     
-3. Fyll i fälten för rummet eller utrustningen:<br/>![Lägga till en rumspostlåda i Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Fyll i fälten för rummet eller utrustningen:<br/>![Lägga till en rumspostlåda i Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Rum** eller **Utrustning**: Den typ av postlåda som du vill skapa.
     
@@ -105,7 +105,7 @@ Om du vill konfigurera en postlåda för ett rum eller en utrustning, går du ti
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Behöver en rums- eller utrustningsbrevlåda en produktlicens?
 
-Nej. Eftersom de flesta i organisationen måste ha en licens för att kunna använda Office 365, behöver du inte tilldela någon licens till en rumspostlåda eller en utrustningspostlåda.
+Nej. Eftersom de flesta i organisationen måste ha en licens för att kunna använda Microsoft 365, behöver du inte tilldela någon licens till en rumspostlåda eller en utrustningspostlåda.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Behöver jag en ägare som ansvarar för bokning av rum eller utrustning?
 

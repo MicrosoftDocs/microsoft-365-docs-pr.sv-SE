@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151401"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618926"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -73,10 +73,10 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Om du le
 
 |Administratörsroll     |Vem ska ha tilldelas denna roll?  |
 |---------|---------|
-|Exchange-administratör     |   Tilldela rollen som Exchange-administratör till användare som behöver visa och hantera postlådor, Office 365-grupper och Exchange Online som tillhör din användare. <br><br> Exchange-administratörer kan även:<br> – Återskapa borttagna objekt i en användares postlåda <br> – Konfigurera ombud av typerna "Skicka som" och "Skicka för" <br>  |
+|Exchange-administratör     |   Tilldela rollen som Exchange-administratör till användare som behöver visa och hantera postlådor, Microsoft 365-grupper och Exchange Online som tillhör din användare. <br><br> Exchange-administratörer kan även:<br> – Återskapa borttagna objekt i en användares postlåda <br> – Konfigurera ombud av typerna "Skicka som" och "Skicka för" <br>  |
 |Global administratör     |   Tilldela rollen som global administratör till användare som behöver global åtkomst till de flesta hanteringsfunktioner och data i Microsoft Online Services. <br><br> Att ge för många användare global åtkomst är en säkerhetsrisk och vi rekommenderar att du har mellan två och fyra globala administratörer. <br><br> Det är bara globala administratörer som kan:<br> – Återställa lösenord för alla användare <br> – Lägga till och hantera domäner <br> <br> **Obs!** Den person som har registrerat sig för Microsoft Online Services blir automatiskt global administratör. |
 |Global läsare    |   Tilldela rollen global läsare till användare som behöver visa administratörsfunktioner och -inställningar i administrationscenter som den globala administratören kan visa. Den globala läsaradministratören kan inte redigera några inställningar.   |
-|Grupper-administratör     |   Tilldelar gruppadministratörsrollen till användare som behöver hantera alla gruppinställningar i olika administrationscenter, inklusive administrationscentret för Microsoft 365 och Azure Active Directory-portalen. <br><br> Grupper-administratörer kan:<br> – Skapa, redigera, ta bort och återställa Office 365 Grupper <br> – Skapa och uppdatera skapande, upphörande och namngivningsprinciper för grupper <br> – Skapa, redigera, ta bort och återställa Azure Active Directory-säkerhetsgrupper| 
+|Grupper-administratör     |   Tilldelar gruppadministratörsrollen till användare som behöver hantera alla gruppinställningar i olika administrationscenter, inklusive administrationscentret för Microsoft 365 och Azure Active Directory-portalen. <br><br> Grupper-administratörer kan:<br> – Skapa, redigera, ta bort och återställa Microsoft 365-grupper <br> – Skapa och uppdatera skapande, upphörande och namngivningsprinciper för grupper <br> – Skapa, redigera, ta bort och återställa Azure Active Directory-säkerhetsgrupper| 
 |Supportadministratör     |   Tilldela rollen som supportadministratör till användare som behöver göra följande:<br> – Återställa lösenord <br> – Tvinga att användare loggar ut <br> – Hantera tjänsteförfrågningar <br> – Övervaka tjänstens status <br> <br> **Obs**! Supportadministratören kan bara hjälpa användare som inte är administratörer och användare som tilldelats följande roller: katalogläsare, gästinbjudare, supportadministratör, meddelandecenter-administratör och rapportläsare.      |
 |Administratör för Office-program    |   Tilldela rollen som administratör för Office-program till användare som behöver göra följande: <br> – Använda tjänsten för molnprinciper i Office för att skapa och hantera molnbaserade principer för Office <br> – Skapa och hantera tjänsteförfrågningar <br> – Hantera nyhetsinnehållet som användarna ser i sina Office-program   <br> – Övervaka tjänstens status  |
 |Tjänstadministratör    |   Tilldela tjänstadministratörsrollen som en ytterligare roll för administratörer och användare vars roll inte inkluderar följande, men som ändå måste göra följande: <br> – Öppna och hantera tjänsteförfrågningar <br> – Visa och dela inlägg från meddelandecenter   |
@@ -127,9 +127,9 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Om du le
 |Säkerhetsoperatör     |    Undersöker och svarar på säkerhetsvarningar, hanterar funktioner i Identity Protection Center, övervakar tjänstens status.     |
 |Säkerhetsläsare     |    Skrivskyddad åtkomst till säkerhetsfunktioner, inloggningsrapporter och granskningsloggar.     |
 |Supportadministratör för tjänst     |    Skapar tjänsteförfrågningar för Azure, Microsoft 365 och Office 365 samt övervakar tjänstens status.     |
-|SharePoint-administratör     |    Full tillgång till SharePoint Online, hanterar Office 365-grupper, hanterar tjänsteförfrågningar och övervakar tjänstens status.     |
+|SharePoint-administratör     |    Full tillgång till SharePoint Online, hanterar Microsoft 365-grupper, hanterar tjänsteförfrågningar och övervakar tjänstens status.     |
 |Skype för företag-administratör     | Full tillgång till alla Teams- och Skype-funktioner, Skype-användarattribut, hanterar tjänsteförfrågningar och övervakar tjänstens status.      |
-|Teams-administratör     |    Full tillgång till Teams- och Skype-administrationscentret, hanterar Office 365-grupper och tjänsteförfrågningar samt övervakar tjänstens status.     |
+|Teams-administratör     |    Full tillgång till Teams- och Skype-administrationscentret, hanterar Microsoft 365-grupper och tjänsteförfrågningar samt övervakar tjänstens status.     |
 |Teams-kommunikationshanterare     |    Tilldelar telefonnummer, skapar och hanterar röst- och mötesprinciper samt läser samtalsanalyser.     |
 |Supporttekniker för Teams-kommunikation     |    Läser information om samtal för alla samtalsdeltagare för att felsöka kommunikationsproblem.     |
 |Supportspecialist för Teams-kommunikation     |    Läser information om användarsamtal för specifika användare för att felsöka kommunikationsproblem.|

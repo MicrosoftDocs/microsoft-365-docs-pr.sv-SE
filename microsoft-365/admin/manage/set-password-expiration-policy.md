@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365. '
-ms.openlocfilehash: 88953317bea2b96c04c291dd028a4e9131b9a83e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811218"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628058"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -40,12 +40,12 @@ Som administratör kan du göra så att användarlösenord upphör efter ett vis
 
 Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska upphöra efter en viss tid.
 > [!IMPORTANT]
-> Endast [globala administratörer för Office 365](../add-users/about-admin-roles.md) kan utföra de här stegen.
+> Endast [globala administratörer](../add-users/about-admin-roles.md) kan utföra de här stegen.
   
 1. I administrationscentret går du till **Inställningar** \> **Inställningar**.
 
 2. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Säkerhet och sekretess</a>.
- Om du inte är global administratör för Office 365 visas inte alternativet Säkerhet och sekretess.
+ Om du inte är global administratör visas inte alternativet Säkerhet och sekretess.
   
 3. Välj **Förfalloprincip för lösenordet**.
   
@@ -61,7 +61,7 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
 
 Här är några saker som kan vara bra att känna till om hur denna funktion fungerar från och med januari 2018:
   
-- Personer som endast använder Outlook-appen tvingas inte återställa lösenordet för Office 365 förrän det slutar gälla i cachen. Det kan dröja flera dagar från det faktiska utgångsdatumet. Det finns ingen lösning på det här felet på administratörsnivå.
+- Personer som endast använder Outlook-appen tvingas inte återställa lösenordet för Microsoft 365 förrän det slutar gälla i cachen. Det kan dröja flera dagar från det faktiska utgångsdatumet. Det finns ingen lösning på det här felet på administratörsnivå.
     
 - Användarna får inget e-postmeddelande om att lösenordet slutar gälla om X dagar. Vill du ha den här funktionen? **[Rösta här!](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
     
@@ -69,10 +69,10 @@ Här är några saker som kan vara bra att känna till om hur denna funktion fun
 
 Om du vill förhindra återanvändning av gamla lösenord kan du göra det i Azure AD. Se [Ange förfalloprincip för lösenord i organisationen](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
 
-Om en medarbetare använder en mobil enhet för att komma åt Office 365 kan du också rensa den för att säkerställa att lösenordet inte längre lagras och återanvänds därifrån. Mer information finns i [Rensa och blockera en tidigare anställds mobila enhet](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
+Om en medarbetare använder en mobil enhet för att komma åt Microsoft 365 kan du också rensa den för att säkerställa att lösenordet inte längre lagras och återanvänds därifrån. Mer information finns i [Rensa och blockera en tidigare anställds mobila enhet](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-office-365"></a>Synkronisera användares lösenords-hashar från lokal Active Directory till Azure AD (Office 365)
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Synkronisera användares lösenords-hashar från lokal Active Directory till Azure AD (Microsoft 365)
 
 Den här artikeln handlar om att ange förfalloprincipen för användare som bara använder molnet (Azure AD). Den gäller inte för hybrididentitetsanvändare som använder synkronisering av lösenordshashar, direktautentisering och lokal federation som ADFS.
   
