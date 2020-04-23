@@ -19,7 +19,7 @@
               href: networking-avoid-network-hairpins.md
             - name: Steg 4 – Konfigurera förbikoppling av trafik
               href: networking-configure-proxies-firewalls.md
-            - name: Steg 5 – Optimera prestanda för klienten och Office 365-tjänsten
+            - name: Steg 5 – Optimera prestanda för klienten och tjänsten
               href: networking-optimize-tcp-performance.md
             - name: Avslutsvillkor för nätverk
               href: networking-exit-criteria.md
@@ -55,10 +55,10 @@
               href: windows10-enable-security-features.md
             - name: Avslutsvillkor för Windows 10 Enterprise
               href: windows10-exit-criteria.md
-        - name: Fas 4 – Office 365 ProPlus
+        - name: Fas 4 – Microsoft 365 Apps för företag
           href: office365proplus-infrastructure.md
           items:
-            - name: Avslutsvillkor för Office 365 ProPlus
+            - name: Avslutsvillkor för Microsoft 365 Apps för företag
               href: office365proplus-exit-criteria.md
         - name: Fas 5 – Hantering av mobilenheter
           href: mobility-infrastructure.md
@@ -76,7 +76,7 @@
               href: infoprotect-configure-increased-security-office-365.md
             - name: Steg 4 – Konfigurera Windows informationsskydd
               href: infoprotect-deploy-windows-information-protection.md
-            - name: Steg 5 – Konfigurera dataförlustskydd i Office 365
+            - name: Steg 5 – Konfigurera skydd mot dataförlust
               href: infoprotect-data-loss-prevention.md
             - name: Steg 6 – Konfigurera e-postkryptering
               href: infoprotect-email-encryption.md
@@ -174,7 +174,7 @@
           href: contoso-identity.md
         - name: Windows 10 Enterprise
           href: contoso-win10.md
-        - name: Office 365 ProPlus
+        - name: ' Microsoft 365 Apps för företag'
           href: contoso-o365pp.md
         - name: Hantering av mobilenheter
           href: contoso-mdm.md

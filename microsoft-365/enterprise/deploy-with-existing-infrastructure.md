@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom avslutsvillkoren till distributionen av Microsoft 365 för företag när du har en befintlig infrastruktur.
-ms.openlocfilehash: ce9c9343ff6983968f3ed96b1e1558788d04ffc1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ace84e53da9b62b39a557b670c54c1be31d0b61a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42810367"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638226"
 ---
 # <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>Distribution av Microsoft 365 för företag med befintlig infrastruktur
 
@@ -49,11 +49,11 @@ Gå igenom följande obligatoriska och valfria villkor för din infrastruktur f�
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Avslutsvillkor för Office 365 ProPlus (fas 4)
+## <a name="exit-criteria-for-microsoft-365-apps-for-enterprise-phase-4"></a>Avslutsvillkor för Microsoft 365 Apps för företag (fas 4)
 
-Uppfyll kraven för bedömning, distributionsplanering och distribution av din Office 365 ProPlus-infrastruktur.
+Uppfyll kraven för bedömning, distributionsplanering och distribution av din infrastruktur för Microsoft 365 Apps för företag.
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## <a name="exit-criteria-for-mobile-device-management-phase-5"></a>Avslutsvillkor för hantering av mobilenheter (fas 5)
 

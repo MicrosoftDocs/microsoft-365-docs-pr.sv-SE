@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Lär dig hur du begränsar oavsiktlig exponering av information när du delar filer med personer utanför organisationen.
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42807795"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632589"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen
 
@@ -79,7 +79,7 @@ Begränsa extern delning till medlemmar i en säkerhetsgrupp
 3. Under **Vem kan dela utanför organisationen** markerar du en eller båda kryssrutorna: a. **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare** för att ange en säkerhetsgrupp som kan dela med autentiserade användare b. **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare och med hjälp av anonyma länkar** för att ange en säkerhetsgrupp som kan dela med autentiserade användare och genom att använda Alla-länkar
 4. Klicka på **OK**.
 
-Observera att det här påverkar filer, mappar och webbplatser, men inte Office 365-grupper eller Teams. När medlemmar bjuder in gäster till en privat Office 365-grupp eller ett privat team i Microsoft Teams skickas inbjudan till grupp- eller teamägaren för godkännande.
+Observera att det här påverkar filer, mappar och webbplatser, men inte Microsoft 365-grupper eller Teams. När medlemmar bjuder in gäster till en privat Microsoft 365-grupp eller ett privat team i Microsoft Teams skickas inbjudan till grupp- eller teamägaren för godkännande.
 
 ## <a name="see-also"></a>Se även
 

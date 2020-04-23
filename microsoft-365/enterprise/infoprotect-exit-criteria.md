@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Kontrollera villkoren för informationsskyddsbaserade tjänster och infrastruktur för att säkerställa att din konfiguration uppfyller kraven för Microsoft 365 Enterprise.
-ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42808970"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631639"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Avslutsvillkor för informationsskyddets infrastruktur
 
@@ -44,7 +44,7 @@ Vid behov kan [Steg 1](infoprotect-define-sec-infoprotect-levels.md) hjälpa dig
 <a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>Obligatoriskt: Ökad säkerhet för Microsoft 365 har konfigurerats
 
-Du har konfigurerat följande inställningar för [ökad säkerhet i Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
+Du har konfigurerat följande inställningar för [ökad säkerhet i Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Principer för hothantering i Microsoft 365 Säkerhetscenter
 - Ytterligare inställningar för hela Exchange Online-klientorganisationen
@@ -82,11 +82,11 @@ Dina registrerade Windows 10 Enterprise-enheter innehåller en Intune-princip so
 Vid behov kan [Steg 4](infoprotect-deploy-windows-information-protection.md) hjälpa dig med detta krav. 
 
 <a name="crit-infoprotect-step5"></a>
-## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Valfritt: Office 365-dataförlustskydd (DLP) har distribuerats
+## <a name="optional-data-loss-prevention-dlp-is-deployed"></a>Valfritt: Dataförlustskydd (DLP) har distribuerats
 
 Du har analyserat, testat och distribuerat en uppsättning DLP-principer – som innehåller platser och regler med villkor och åtgärder – som din organisation behöver för att skydda kunddata och andra typer av privata data, samt för att kunna följa branschbaserade och regionala regler och föreskrifter.
 
-Din personal inom dataefterlevnad och säkerhet använder instrumentpanelen för säkerhet och efterlevnad i Office 365 till att övervaka DLP-incidenter.
+Din personal inom dataefterlevnad och säkerhet använder instrumentpanelen för säkerhet och efterlevnad till att övervaka DLP-incidenter.
 
 Vid behov kan [Steg 5](infoprotect-data-loss-prevention.md) hjälpa dig med detta krav. 
 

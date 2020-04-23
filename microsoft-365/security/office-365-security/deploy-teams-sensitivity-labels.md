@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Sammanfattning: Använd känslighetsetiketter för att skydda filer i team med höga krav på konfidentialitet.'
-ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c36daef7f28ad8bd3306fd7f3f7f1558a3594e68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807658"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637622"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>Skydda filer i team med känslighetsetiketter
 
@@ -44,7 +44,7 @@ Använd [de här instruktionerna](https://docs.microsoft.com/microsoft-365/compl
 
 - Namnet på etiketten eller underetiketten innehåller teamets namn
 - Kryptering är aktiverat
-- Office 365-gruppen för teamet har medförfattarbehörighet
+- Microsoft 365-gruppen för teamet har medförfattarbehörighet
 
 När den nya etiketten eller underetiketten har skapats kan du publicera den för dina användare, som sedan kan tillämpa den på filer, antingen lokalt innan de laddas upp till teamet eller senare när filen lagras i teamet.
 
@@ -55,6 +55,6 @@ Här är konfigurationen för teamet med höga konfidentialitetskrav som använd
 
 ## <a name="see-also"></a>Se även
 
-[Säkra filer i Microsoft Teams](secure-files-in-teams.md)
+[Skydda filer i Microsoft Teams](secure-files-in-teams.md)
   
-[Integrering av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Införande av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

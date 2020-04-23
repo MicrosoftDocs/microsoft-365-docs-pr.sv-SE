@@ -87,7 +87,7 @@
       items:
         - name: Skicka i Office 365
           href: email/email.md
-        - name: E-postinställningar för Office 365-användare
+        - name: E-postinställningar för användare
           href: email/office-365-user-email-settings.md
         - name: Lägga till ytterligare ett e-postalias för en användare
           href: email/add-another-email-alias-for-a-user.md
@@ -189,6 +189,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Lösa licenskonflikter
           href: manage/resolve-license-conflicts.md
+        - name: Hantera meddelanden i meddelandecentret
+          href: manage/manage-messages.md
         - name: Visa eller dölja nya funktioner med den nya hanteringen
           href: manage/show-hide-new-features.md
     - name: Prenumerationer och fakturering
@@ -235,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: Jämföra grupper
           href: create-groups/compare-groups.md
-        - name: Skapa en Office 365-grupp
+        - name: Skapa en Microsoft 365-grupp
           href: create-groups/create-groups.md
-        - name: Hantera en Office 365-grupp
+        - name: Hantera en Microsoft 365-grupp
           href: create-groups/manage-groups.md
-        - name: Planera för styrning i Office 365 Grupper
+        - name: Planera för styrning i Microsoft 365-grupper
           href: create-groups/plan-for-groups-governance.md
         - name: Hantera skapande av grupper
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Lägga till eller ta bort medlemmar från grupper
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Förfalloprincip för Office 365 Grupper
+        - name: Förfalloprincip för Microsoft 365-grupper
           href: create-groups/office-365-groups-expiration-policy.md
         - name: Återställa borttagen grupp
           href: create-groups/restore-deleted-group.md

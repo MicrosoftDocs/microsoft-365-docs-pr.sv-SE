@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera och testa återställning av lösenord i testmiljön för Microsoft 365.'
-ms.openlocfilehash: c8d5ed0c7feac98afd3230a305f4ab1f850ca7f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42806789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632893"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Återställning av lösenord i testmiljön för Microsoft 365
 
@@ -33,9 +33,9 @@ Med självbetjäningen för återställning av lösenord (SSPR) i Azure Active D
 
 I den här artikeln beskrivs hur du kan konfigurera och testa lösenordsåterställning i Microsoft 365-testmiljön i tre faser:
 
-1.  Skapa testmiljön för Microsoft 365 Enterprise.
+1.    Skapa testmiljön för Microsoft 365 Enterprise.
 2.  Aktivera tillbakaskrivning av lösenord.
-3.  Konfigurera och testa lösenordsåterställningen för kontot Användare 3.
+3.    Konfigurera och testa lösenordsåterställningen för kontot Användare 3.
     
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -50,9 +50,9 @@ Följ först anvisningarna i [Synkronisering av lösenordshash](password-hash-sy
   
 Konfigurationen består av: 
   
-- Utvärderingsversioner eller betalda prenumerationer för Microsoft 365 E5 eller Office 365 E5.
+- Utvärderingsversioner av eller betalda prenumerationer för Microsoft 365 E5 eller Office 365 E5.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 så att TESTLAB AD DS-domänen (Active Directory Domain Services) synkroniseras med Azure AD-klientorganisationen för din Microsoft 365- eller Office 365-prenumeration.
+- Azure AD Connect körs på APP1 så att TESTLAB AD DS-domänen (Active Directory Domain Services) synkroniseras med Azure AD-klientorganisationen för dina Microsoft 365-prenumerationer.
 
 ## <a name="phase-2-enable-password-writeback"></a>Fas 2: Aktivera tillbakaskrivning av lösenord
 
@@ -81,7 +81,7 @@ Testa därefter lösenordsåterställningen för kontot Användare 3.
 1. Öppna en ny privat webbläsarinstans och gå till [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 2. Logga in med inloggningsuppgifterna för Användare 3-kontot.
 3. I **Mer information krävs** klickar du på **Nästa**. 
-5. I **Förlora aldrig åtkomsten till ditt konto** anger du ditt mobiltelefonnummer för telefonnummer för autentisering och ditt e-postkonto för arbetet eller ditt personliga e-postkonto för e-postmeddelande för autentisering.
+5. I **Förlora aldrig åtkomsten till ditt konto** anger du ditt mobiltelefonnummer som telefonnummer för autentisering och ditt e-postkonto på jobbet eller ditt privata e-postkonto som e-postmeddelande för autentisering.
 7. När båda har verifierats klickar du på **Ser bra ut** och stänger den privata instansen av webbläsaren.
 8. Öppna en ny privat webbläsarinstans och gå till [https://aka.ms/sspr](https://aka.ms/sspr).
 9. Skriv in Användare 3-kontonamnet, skriv tecknen som finns i CAPTCHA och klicka sedan på **Nästa**.

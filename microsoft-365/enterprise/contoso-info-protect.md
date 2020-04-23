@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder funktionerna för informationsskydd i Microsoft 365 Enterprise till att skydda sina digitala tillgångar i molnet.
-ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806030"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625308"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
@@ -107,10 +107,10 @@ I följande tabell mappas Contosos datanivåer till informationsskyddsfunktioner
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 och Office 365 ProPlus** | **EMS** |
+| | **Office 365** | **Windows 10 och  Microsoft 365-appar för företag** | **EMS** |
 | Nivå 1: Baslinje  | Principer för villkorlig åtkomst i SharePoint och Exchange Online <BR> Behörigheter på SharePoint-webbplatser | Känslighetsetiketter <BR> BitLocker <BR> Windows Information Protection | Principer för villkorlig åtkomst för enheter och hantering av mobilprogram |
-| Nivå 2: Känslig | Nivå 1 plus: <BR> <BR> Känslighetsetiketter <BR> Office 365-kvarhållningsetiketter på SharePoint-webbplatser <BR> Office 365-dataförlustskydd för SharePoint och Exchange Online <BR> Isolerade SharePoint-webbplatser  | Nivå 1 plus: <BR> <BR> Känslighetsetiketter för digitala tillgångar  | Nivå 1 |
-| Nivå 3: Strikt reglerad | Nivå 2 plus: <BR><BR> BYOK-kryptering (Bring Your Own Key) och skydd av företagshemligheter <BR> Azure Key Vault för verksamhetskritiska affärsprogram som interagerar med Office 365-tjänster | Nivå 2 | Nivå 1 |
+| Nivå 2: Känslig | Nivå 1 plus: <BR> <BR> Markera som känsligt <BR> Microsoft 365-kvarhållningsetiketter på SharePoint-webbplatser <BR> Dataförlustskydd för SharePoint och Exchange Online <BR> Isolerade SharePoint-webbplatser  | Nivå 1 plus: <BR> <BR> Känslighetsetiketter för digitala tillgångar  | Nivå 1 |
+| Nivå 3: Strikt reglerad | Nivå 2 plus: <BR><BR> BYOK-kryptering (Bring Your Own Key) och skydd av företagshemligheter <BR> Azure Key Vault för verksamhetskritiska affärsprogram som interagerar med Microsoft 365-tjänster | Nivå 2 | Nivå 1 |
 |||||
 
 Här är Contosos resulterande konfiguration av informationsskyddet.

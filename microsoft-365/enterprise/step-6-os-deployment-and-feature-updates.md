@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig mer om alternativen för distribution av operativsystem och uppdateringar av funktioner.
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806783"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636765"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Steg 6: Distribution av operativsystem och uppdateringar av funktioner
 
@@ -41,7 +41,7 @@ ms.locfileid: "42806783"
 
 Om du har följt distributionsprocesshjulet hittills har du åtminstone delvis slutfört stegen för enhets- och appberedskap, förberett infrastrukturen, konfigurerat och samlat in appaket, har en plan på plats för migrering av användarfiler och konfigurering av standardinställningar samt har planer för att behålla befintliga säkerhetskontroller och kanske distribuera nya.
 
-Nu har vi nått den fas när du sätter ihop alla delar för att automatisera så mycket du kan för att installera Windows 10 och Office 365 ProPlus, tillsammans med nödvändiga drivrutiner, appar och allt annat som behövs.
+Nu har vi nått den fas när du sätter ihop alla delar för att automatisera så mycket du kan för att installera Windows 10 och Microsoft 365 Apps för företag, tillsammans med nödvändiga drivrutiner, appar och allt annat som behövs.
 
 I slutänden är det bästa måttet på framgång för en OS-distribution att möta användarnas förväntningar och undvika störningar i deras arbete. Och i det här steget börjar du testa och distribuera till pilotanvändare som en del av en stegvis distribution. Och ett tips här: innan du breddar distributionen måste du gå vidare till steg step 8 i vårt distributionsprocesshjul – [Kommunikation och utbildning för användare](https://aka.ms/mdd8) för att se till att användare informeras och förbereds för de förändringar som är på gång och att du kan mäta distributionstakten med kontinuerlig verifiering med hjälp av stegvis distribution.
 

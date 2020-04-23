@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå vilka resurser du kan använda när du distribuerar Microsoft 365 för företag i din organisation.
-ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951940"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638242"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuera Microsoft 365 för företag
 
@@ -41,7 +41,7 @@ Det finns tre huvudsakliga metoder för distribution av Microsoft 365 för före
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack för Microsoft 365
 
-FastTrack är en pågående och upprepningsbar funktion – *tillgänglig kostnadsfritt som en del av din prenumeration* – som Microsofts tekniker använder när de hjälper dig att gå över till molnet i din egen takt. FastTrack ger dig även tillgång till kvalificerade partners för ytterligare tjänster. Med sina just nu drygt 40 000 kunderna kan FastTrack maximera ROI, påskynda distributionen och öka införandet i hela organisationen. Se [FastTrack för Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+FastTrack är en pågående och upprepningsbar funktion – *tillgänglig kostnadsfritt som en del av din prenumeration* – som Microsofts tekniker använder när de hjälper dig att gå över till molnet i din egen takt. FastTrack ger dig även tillgång till kvalificerade partners för ytterligare tjänster. Med sina just nu drygt 40 000 kunder kan FastTrack maximera ROI, påskynda distributionen och öka införandet i hela organisationen. Se [FastTrack för Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 Om du vill använda FastTrack när du distribuerar Microsoft 365 för företag, kan du använda FastTracks [distributionsguide för Microsoft 365](https://aka.ms/microsoft365setupguide). Där finns vägledning om hur du distribuerar och konfigurerar den grundläggande infrastrukturen. Du måste vara inloggad som global administratör i en Office 365- eller Microsoft 365-klientorganisation för att kunna öppna sidan.
 
@@ -124,7 +124,7 @@ Lär dig hur Core Services Engineering and Operations (tidigare Microsoft IT) [p
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Hur Contoso Corporation distribuerade Microsoft 365 för företag
 
-Contoso Corporation är en fiktiv och representativ global tillverkningskoncern med huvudkontor i Paris, Frankrike. Se hur [Contoso distribuerade Microsoft 365 för företag](contoso-case-study.md) och vilka beslut de tog för utformning och implementering av nätverk, identitet, Windows 10 Enterprise, Office 365 ProPlus, hantering av mobilenheter, informationsskydd och säkerhet. 
+Contoso Corporation är en fiktiv och representativ global tillverkningskoncern med huvudkontor i Paris, Frankrike. Se hur [Contoso har distribuerat Microsoft 365 för företag](contoso-case-study.md), fattat stora designbeslut och tagit fram implementeringsinformation för nätverk, identitet, Windows 10 Enterprise, Microsoft 365 Apps för företag, hantering av mobila enheter, informationsskydd och säkerhet. 
 
 ## <a name="stay-current-with-deployment-content"></a>Aktuellt distributionsinnehåll
 

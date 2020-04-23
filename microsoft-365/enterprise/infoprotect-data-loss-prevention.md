@@ -1,5 +1,5 @@
 ---
-title: 'Steg 5: Konfigurera dataförlustskydd i Office 365'
+title: 'Steg 5: Konfigurera dataförlustskydd'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå och distribuera dataförlustskydd för Office 365 i Microsoft 365.
-ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Förstå och distribuera dataförlustskydd i Microsoft 365.
+ms.openlocfilehash: e3d18bf54ecdfe11f8233163e7f200a70606d81d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812937"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636982"
 ---
-# <a name="step-5-configure-office-365-data-loss-prevention"></a>Steg 5: Konfigurera dataförlustskydd i Office 365
+# <a name="step-5-configure-data-loss-prevention"></a>Steg 5: Konfigurera dataförlustskydd
 
 *Det här steget är valfritt och gäller både E3- och E5-versionerna av Microsoft 365 Enterprise*
 
 ![Fas 6: Informationsskydd](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Med principer för dataförlustskydd (DLP) i Säkerhets- och efterlevnadscenter för Office 365 kan du identifiera, övervaka och automatiskt skydda känslig information i Microsoft 365. Med DLP-principer kan du göra följande:
+Med principer för dataförlustskydd (DLP) i Säkerhets- och efterlevnadscenter kan du identifiera, övervaka och automatiskt skydda känslig information i Microsoft 365. Med DLP-principer kan du göra följande:
 
 - Identifiera känslig information på många platser, till exempel Exchange Online, SharePoint Online, OneDrive för företag och Microsoft Teams.
 - Förhindra oavsiktlig delning av känslig information genom att blockera åtkomst till ett dokument eller blockera e-postmeddelandet som innehåller det.

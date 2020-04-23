@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå och konfigurera säkerhets- och informationsskyddsnivåer för din organisation.
-ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa3e9fa11070ea505752d781ecdd21b344c8222
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42805632"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636970"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Steg 1: definiera säkerhets- och informationsskyddsnivåer
 
@@ -33,7 +33,7 @@ I det här steget definierar du säkerhets- och skyddsnivåerna för din organis
 Även om du kan definiera dina egna säkerhetsnivåer och eventuellt redan har en del på plats, rekommenderar Microsoft att du utvecklar en plan för att använda minst tre olika säkerhetsnivåer som kan appliceras. Här är en lista som du kan använda för att komma igång: 
 
 - **Grundläggande:** det här är en minimal standard för att skydda data och identiteter och enheter som har åtkomst till dina data. Du kan följa grundläggande säkerhets- och skyddsrekommendationer för att ge ett starkt standardskydd som uppfyller behoven för många organisationer och deras avdelningar.
-- **Känslig:** det här är ytterligare skydd för en underuppsättning av dina data som måste skyddas mer än på grundläggande nivå. Du kan använda det här utökade skyddet för specifika datauppsättningar i Office 365-miljön. Microsoft rekommenderar också att du använder den känsliga säkerhetsnivån för identiteter och enheter som har åtkomst till känslig data.
+- **Känslig:** det här är ytterligare skydd för en underuppsättning av dina data som måste skyddas mer än på grundläggande nivå. Du kan använda det här utökade skyddet för specifika datauppsättningar i Microsoft 365-miljön. Microsoft rekommenderar också att du använder den känsliga säkerhetsnivån för identiteter och enheter som har åtkomst till känslig data.
 - **Högt reglerad:** Det här är den högsta skyddsnivån för organisationer som vanligtvis har en mycket liten mängd data som är mycket sekretessbelagda, som är intellektuella egendomar eller affärshemligheter eller data som måste följa strikta säkerhetsföreskrifter. Microsoft 365 Enterprise har möjligheter att hjälpa organisationer att uppfylla de här höga säkerhetskraven, inklusive likvärdigt skydd för identiteter och enheter.
 
 Mer information finns i [Tre nivåer av säkerhet](microsoft-365-policies-configurations.md#three-tiers-of-protection).

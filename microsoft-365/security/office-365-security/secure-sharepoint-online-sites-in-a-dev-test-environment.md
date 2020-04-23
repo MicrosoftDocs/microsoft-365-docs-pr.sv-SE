@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Sammanfattning: Skapa känsliga och strikt konfidentiella SharePoint Online-gruppwebbplatser i en utvecklings-/testmiljö.'
-ms.openlocfilehash: 6294daa943c3815b86a9e12154901ed0b58d5e8d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 016fd99423305e0d11272f3d25115dcffe29ecae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42805666"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631995"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Skydda SharePoint Online-webbplatser i en utvecklings-/testmiljö
 
@@ -66,7 +66,7 @@ Börja med att skapa två grupper för en vanlig organisation med Azure-portalen
 
 6. Upprepa steg 3–5 för en ny grupp med namnet **Marknadspersonal**.
 
-Nästa steg är att konfigurera automatisk licensiering så att medlemmarna i dina grupper automatiskt tilldelas licenser för dina Office 365- och EMS-prenumerationer.
+Nästa steg är att konfigurera automatisk licensiering så att medlemmarna i dina grupper automatiskt tilldelas licenser för dina Microsoft 365- och EMS-prenumerationer.
 
 1. Klicka på **Azure Active Directory > Licenser > Alla produkter** i Azure-portalen.
 
@@ -125,7 +125,7 @@ Använd stegen för att kontrollera att gruppbaserad licensiering fungerar som d
 
 4. I fönstret med egenskaperna för **CEO**-användarkontot, kontrollerar du att det har tilldelats till **Microsoft 365 Enterprise E5**-licensen (i **Produktlicenser**).
 
-## <a name="phase-3-create-office-365-retention-labels"></a>Fas 3: Skapa kvarhållningsetiketter för Office 365
+## <a name="phase-3-create-retention-labels"></a>Fas 3: Skapa kvarhållningsetiketter
 
 I den här fasen skapar du kvarhållningsetiketterna för dokument på SharePoint-gruppwebbplatserna.
 
@@ -153,7 +153,7 @@ I den här fasen skapar du kvarhållningsetiketterna för dokument på SharePoin
 
 12. Klicka på **Klar**.
 
-13. Klicka på **Nästa** i fönstret **Välj etiketter att publicera**.
+13. I fönstret **Välj etiketter att publicera** klickar du på **Nästa**.
 
 14. Klicka på **Nästa** i fönstret **Välj platser**.
 
@@ -207,11 +207,11 @@ Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar a
 
 9. I fönstret **Välj de typer av innehåll som ska skyddas** klickar du på **Lägg till** i listrutan och klickar sedan på **Kvarhållningsetiketter**.
 
-10. I fönstret **Kvarhållningsetiketter** klickar du på **+ Lägg till**, väljer etiketten **Känslig**, klickar på **Lägg till** och sedan på **Klar**.
+10. I fönstret **Kvarhållningsetiketter** klickar du på **Lägg till**, väljer etiketten **Känslig**, klickar på **Lägg till** och sedan på **Klar**.
 
 11. I fönstret **Välj de typer av innehåll som ska skyddas** klickar du på **Spara**.
 
-12. I **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
+12. I fönstret **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
 
 13. I fönstret **Vad vill du göra om vi identifierar känslig information?** klickar du på **Anpassa tips och e-post**.
 
@@ -219,7 +219,7 @@ Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar a
 
 15. I textrutan skriver du eller klistrar in följande:
 
-    Om du vill dela med en användare utanför organisationen, laddar du ner filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
+    Om du vill dela med en användare utanför organisationen, laddar du ned filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
 
 16. Klicka på **OK**.
 
@@ -276,7 +276,7 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
 
 11. I fönstret **Välj de typer av innehåll som ska skyddas** klickar du på **Spara**.
 
-12. I **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
+12. I fönstret **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
 
 13. I fönstret **Vad vill du göra om vi identifierar känslig information?** klickar du på **Anpassa tips och e-post**.
 
@@ -284,7 +284,7 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
 
 15. I textrutan skriver du eller klistrar in följande:
 
-    Om du vill dela med en användare utanför organisationen, laddar du ner filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
+    Om du vill dela med en användare utanför organisationen, laddar du ned filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
 
 16. Klicka på **OK**.
 

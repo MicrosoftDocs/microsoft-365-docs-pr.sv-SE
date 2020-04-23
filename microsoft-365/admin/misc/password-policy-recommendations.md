@@ -1,5 +1,5 @@
 ---
-title: Rekommendationer om lösenordsprincip för Office 365
+title: Policyrekommendationer för lösenord
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Lär dig hur du gör organisationen säkrare mot lösenordsattacker och varför du bör förbjuda vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516929"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627830"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Rekommendationer om lösenordsprincip för Office 365
+# <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
  
-Som administratör för en Office 365-organisation är du ansvarig för att ange lösenordsprincipen för användarna i organisationen. Det kan vara komplicerat och förvirrande att ange en lösenordsprincip och den här artikeln innehåller rekommendationer för att göra organisationen mer skyddad mot lösenordsattacker.
+Som administratör för en organisation är du ansvarig för att bestämma policyn för användarnas lösenord. Det kan vara komplicerat och förvirrande att ange en lösenordspolicy och den här artikeln innehåller rekommendationer för att skydda organisationen mot lösenordsattacker.
   
-Information om hur du anger hur ofta Office 365-lösenord ska upphöra att gälla i organisationen finns i [Ange förfalloprincip för lösenord för Office 365](../manage/set-password-expiration-policy.md).
+Information om hur du anger hur ofta Microsoft 365-lösenord ska upphöra att gälla i organisationen finns i [Ange förfalloprincip för lösenord för Microsoft 365](../manage/set-password-expiration-policy.md).
   
 ## <a name="understanding-password-recommendations"></a>Förstå rekommendationer om lösenord
 

@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225937"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631519"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
-Dessa labbar är utformade för att hjälpa dig att planera, testa och verifiera din distribution och hantering av datorer med Windows 10 Enterprise och Office 365 ProPlus. Labbarna omfattar de steg och verktyg som beskrivs i skrivbordsdistributionshjulet, bland annat Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive och Windows Autopilot.
+Dessa labbar är utformade för att hjälpa dig att planera, testa och verifiera din distribution och hantering av datorer med Windows 10 Enterprise och Microsoft 365 Apps för företag. Labbarna omfattar de steg och verktyg som beskrivs i skrivbordsdistributionshjulet, bland annat Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive och Windows Autopilot.
 
 Den här utbildningen rekommenderas starkt för organisationer som behöver migrera från Windows 7 eftersom supporten upphört, men gäller även för dig som har Windows 10 och Office 365 plus eller Office 2019. Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.
 
@@ -69,7 +69,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 ### <a name="office-and-lob-app-delivery"></a>Leverans av Office- och LOB-appar
 
-  - Distribution för Office 365 ProPlus: 
+  -  Microsoft 365 Apps för företag
   - Hanterad distribution med Konfigurationshanteraren och Microsoft Intune
   - Distribution och hantering av appar med Microsoft Intune
   - Distribution och egen installation av appar med Microsoft Store för företag
@@ -113,7 +113,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labbet utgår 5 juli 2020. En ny version kommer att publiceras före detta utgångsdatum.*
+*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labben utgår 18 april 2020. En ny version kommer att publiceras före detta utgångsdatum.*
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 
@@ -125,7 +125,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
   - [<span class="underline">Planera för distribution av Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Distributionsguide för Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guide till distribution av Microsoft 365 Apps för företag</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Komma igång med Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

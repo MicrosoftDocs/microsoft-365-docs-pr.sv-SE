@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Förstå hur planering och implementering av affärskontinuitet fungerar när ni använder molntjänster.
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030112"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633039"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Hantera affärskontinuitet (EBCM) med molntjänster
 
@@ -40,7 +40,7 @@ Om du inte har uppdaterat dina abonnemang ännu kan du få hjälp av dessa artik
 - [Microsoft 365-tjänstens återhämtning](ebcm-m365-service-resiliency.md)
 - [Utveckla en kontinuitetsplan](ebcm-developing-your-ebcm-plan.md)
 - [Scenarier för att minimera incidenter i Microsoft 365-tjänsten](ebcm-microsoft-365-mitigations.md)
-- [Utbildning och genomgång av affärskontinuitetsplan för Microsoft 365](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Utbildning och genomgång av affärskontinuitetsplan för Microsoft 365 för företag](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
 ## <a name="see-also"></a>Se även
 

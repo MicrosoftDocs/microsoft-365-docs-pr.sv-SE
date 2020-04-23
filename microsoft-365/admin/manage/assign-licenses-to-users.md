@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: Lär dig hur du tilldelar licenser till användare eller flyttar användare till en ny prenumeration.
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809435"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628250"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -224,7 +224,7 @@ Om du har fler än en prenumeration och du har användare som redan har en licen
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>Det här behöver du veta om hur du tilldelar licenser till användare
 
-- Du måste vara global administratör, faktureringsadministratör, licensadministratör eller administratör för användarhantering. Mer information finns i [Om Office 365-administratörsroller](../add-users/about-admin-roles.md).
+- Du måste vara global administratör, faktureringsadministratör, licensadministratör eller administratör för användarhantering. Mer information finns i [Om Microsoft 365-administratörsroller](../add-users/about-admin-roles.md).
 
 - Du kan [tilldela licenser till användarkonton med Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=850410).
 
@@ -236,7 +236,7 @@ Om du har fler än en prenumeration och du har användare som redan har en licen
 
 [Allmänt om prenumerationer och licenser](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Lösa licenskonflikter i Office 365 för företag](resolve-license-conflicts.md)
+[Lösa licenskonflikter i Microsoft 365 för företag](resolve-license-conflicts.md)
 
 [Ta bort licenser från användare](remove-licenses-from-users.md)
 

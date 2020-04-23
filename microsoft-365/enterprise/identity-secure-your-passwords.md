@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se till att skapa starka och lätthanterliga lösenord i hela organisationen.
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42808616"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637054"
 ---
 # <a name="step-2-secure-your-passwords"></a>Steg 2: Skydda dina lösenord
 
@@ -78,11 +78,11 @@ Se [anvisningarna för att konfigurera Azure AD Seamless SSO](https://docs.micro
 |![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Testlabbguide: enkel inloggning med Azure AD Seamless](single-sign-on-m365-ent-test-environment.md) |
 |||
 
-Som en mellanliggande kontrollpunkt kan du se [avslutsvillkoren](identity-exit-criteria.md#crit-identity-sso) för det här avsnittet.
+Som en mellanliggande kontrollpunkt kan du läsa [avslutsvillkoren](identity-exit-criteria.md#crit-identity-sso) för det här avsnittet.
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>Anpassa inloggningssidan för Office 365
+## <a name="customize-the-sign-in-page"></a>Anpassa inloggningssidan
 
 *Det här är valfritt och gäller både E3- och E5-versionerna av Microsoft 365 Enterprise*
 
@@ -90,7 +90,7 @@ I det här avsnittet kan du hjälpa användarna att identifiera din organisation
 
 Med Microsoft 365 Enterprise kan du anpassa utseendet på sidorna för inloggning och åtkomstpaneler så att de innehåller företagets logotyp, färgschema och anpassad användarinformation. 
 
-Mer information finns i [Lägga till din företagsanpassning på inloggningssidan i Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
+Mer information finns i [Lägga till din företagsanpassning på inloggningssidan i Microsoft 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Instruktioner för konfigurering finns i [Lägga till företagsanpassning på din inloggningssida och åtkomstpanelsidorna](https://aka.ms/aadpaddbranding).
 

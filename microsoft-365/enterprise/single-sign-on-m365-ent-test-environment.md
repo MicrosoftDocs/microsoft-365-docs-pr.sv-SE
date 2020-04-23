@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera och testa sömlös enkel inloggning med Azure AD för din Microsoft 365-testmiljö.'
-ms.openlocfilehash: d2b17acb2b57e379fe204e3ea4402b3f00ef7d6c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ba3f943a53f05c452a8e01e40bb6924dc42a866e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42808971"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636874"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Sömlös enkel inloggning med Azure AD för din Microsoft 365-testmiljö
 
@@ -35,8 +35,8 @@ I den här artikeln beskrivs hur du kan konfigurera Microsoft 365-testmiljön f�
 
 Det finns två faser för att konfigurera detta:
 
-1.  Skapa Microsoft 365-testmiljön för det simulerade företaget med synkronisering av lösenordshash.
-2.  Konfigurera Azure AD Connect på APP1 för sömlös SSO med Azure AD.
+1.    Skapa Microsoft 365-testmiljön för det simulerade företaget med synkronisering av lösenordshash.
+2.    Konfigurera Azure AD Connect på APP1 för sömlös SSO med Azure AD.
     
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -51,9 +51,9 @@ Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](pass
   
 Konfigurationen består av: 
   
-- Utvärderingsversioner av eller betalda prenumerationer på Microsoft 365 E5 eller Office 365 E5.
+- Utvärderingsversioner av eller betalda prenumerationer för Microsoft 365 E5 eller Office 365 E5.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 så att TESTLAB AD DS-domänen (Active Directory Domain Services) synkroniseras med Azure AD-klientorganisationen för dina Microsoft 365- och Office 365-prenumerationer med jämna mellanrum.
+- Azure AD Connect körs på APP1 så att TESTLAB AD DS-domänen (Active Directory Domain Services) synkroniseras med Azure AD-klientorganisationen för dina Microsoft 365-prenumerationer med jämna mellanrum.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Fas 2: Konfigurera Azure AD Connect på APP1 för sömlös SSO med Azure AD
 
@@ -103,14 +103,14 @@ Observera att User1 visserligen har domänadministratörsbehörighet för TESTLA
 
 Här är konfigurationsresultatet:
 
-![Det simulerade företaget med testmiljö med direktautentisering](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Det simulerade företaget med en testmiljö med direktautentisering](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
  
 Konfigurationen består av:
 
-- Utvärderingsversioner av eller betalda prenumerationer på Microsoft 365 E5 eller Office 365 E5 med DNS-domänen testlab.\<ditt domännamn> registrerad.
+- Utvärderingsversion eller betald prenumeration för Microsoft 365 E5 eller Office 365 E5 med DNS-domänen testlab.\<ditt domännamn> registrerad.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 så att listan med konton och grupper synkroniseras från Azure AD-klientorganisationen för dina Microsoft 365- eller Office 365-prenumerationer till TESTLAB AD DS-domänen. 
+- Azure AD Connect körs på APP1 så att listan med konton och grupper synkroniseras från Azure AD-klientorganisationen för dina Microsoft 365-prenumerationer till TESTLAB AD DS-domänen. 
 - Sömlös enkel inloggning med Azure AD är aktiverat så att datorer i det simulerade intranätet kan logga in i Microsoft 365-molnresurser utan att ange ett lösenord för användarkontot.
 
 I steget [Förenkla användarinloggning](identity-secure-your-passwords.md#identity-sso) i Identitet-fasen finns mer information om och länkar till hur du konfigurerar sömlös enkel inloggning med Azure AD i produktion.

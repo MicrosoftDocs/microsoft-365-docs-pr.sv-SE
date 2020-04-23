@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Endpoint Configuration Manager för att distribuera på plats-uppgraderingar av Windows 10 Enterprise.
-ms.openlocfilehash: 5dc58a9090dd6976d7c521f7552181a10f22f5b2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c66be4ad5ee383301c4fb10cf2590f7cbbed033f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810374"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630687"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Windows 10 Enterprise-driftsättning för Contoso
 
@@ -91,7 +91,7 @@ Infrastrukturen består av:
 
 ## <a name="next-step"></a>Nästa steg
 
-[Ta reda på mer](contoso-o365pp.md) om hur Contoso använder sin Configuration Manager-infrastruktur för att distribuera och hålla Office 365 ProPlus uppdaterat i organisationen. 
+[Läs mer](contoso-o365pp.md) om hur Contoso använder sin Configuration Manager-infrastruktur till att distribuera och hålla Microsoft 365 Apps uppdaterat i organisationen. 
 
 ## <a name="see-also"></a>Se även
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Kontrollera att din konfiguration uppfyller Microsoft 365 Enterprise-villkoren för nätverksinfrastruktur.
-ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6d9133fa6f3c993efe88ea53b412b9a272c1b98b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42807489"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631495"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fas 1: Avslutsvillkor för nätverksinfrastruktur
 
@@ -32,7 +32,7 @@ Kontrollera att nätverksinfrastrukturen uppfyller följande krav och att du har
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoriskt: Ditt nätverk är redo för Microsoft 365 Enterprise
 
 - Dina kontor har tillräcklig internetbandbredd för Microsoft 365-trafik, t. ex. installationer och uppdateringar av Office 365, Microsoft Intune och Windows 10 Enterprise.
-- Ditt nätverk är kartlagt i en [Office 365 Reference Architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Ditt nätverk är mappat till en [referensarkitektur för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Din nätverksändringar har övervakats och testats och uppfyller dina krav gällande trafikfördröjning.
 
 Vid behov kan [Steg 1](networking-provide-bandwidth-cloud-services.md) hjälpa dig med detta krav.
@@ -73,7 +73,7 @@ Vid behov kan [Steg 4](networking-configure-proxies-firewalls.md) hjälpa dig me
 
 
 <a name="crit-networking-step5"></a>
-## <a name="optional-your-clients-and-office-365-applications-are-configured-for-optimal-performance"></a>Valfritt: Dina klienter och Office 365-appar är konfigurerade för optimala prestanda
+## <a name="optional-your-clients-and-microsoft-365-applications-are-configured-for-optimal-performance"></a>Valfritt: Dina klienter och Microsoft 365-appar är konfigurerade för optimala prestanda
 
 Du har optimerat TCP-inställningarna (Transmission Control Protocol) på dina klientenheter och för Exchange Online, Skype för företag – Online, SharePoint Online och Microsoft Project Online-tjänster.
 

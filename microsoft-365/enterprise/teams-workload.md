@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig steg för steg och lansera sedan Microsoft Teams i hela organisationen.
-ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d34673a412539dfc73296f0139fa2eb555c17099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "42812934"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636705"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Distribuera Microsoft Teams för Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ Innan du börjar:
 
 - Kontrollera att du har konfigurerat rätt faser för [grundinfrastrukturen](deploy-foundation-infrastructure.md) så att dina grupper har de användarkonton och säkerhetsfunktioner du behöver. Faserna för identitets- och informationsskydd är viktigast för inloggning och för att kunna använda e-post och filer säkert med kvarhållnings- och känslighetsetiketter.
 - I [den här artikeln](https://docs.microsoft.com/microsoftteams/security-compliance-overview) kan du lära dig mer om säkerhet och efterlevnad i Teams.
-- I [den här artikeln](https://docs.microsoft.com/microsoftteams/office-365-licensing) kan du läsa mer om Office 365-licensiering för Teams.
+- I [den här artikeln](https://docs.microsoft.com/microsoftteams/office-365-licensing) kan du läsa mer om licensiering för Teams.
 
 Om du vill lansera Teams i din organisation läser du [Så lanserar du Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå och distribuera Windows informationsskydd i Microsoft 365.
-ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42805639"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631651"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Steg 4: Konfigurera Windows-informationsskydd
 
@@ -51,6 +51,6 @@ Som en mellanliggande kontrollpunkt kan du se [avslutsvillkoren](infoprotect-exi
 
 |||
 |:-------|:-----|
-|![Steg 5](../media/stepnumbers/Step5.png)|[Konfigurera dataförlustskydd i Office 365](infoprotect-data-loss-prevention.md)|
+|![Steg 5](../media/stepnumbers/Step5.png)|[Konfigurera dataförlustskydd](infoprotect-data-loss-prevention.md)|
 
 

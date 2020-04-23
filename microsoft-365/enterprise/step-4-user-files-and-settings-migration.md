@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs hur du migrerar användarnas filer och inställningar.
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113547"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636790"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Steg 4: Migrering av användares filer och inställningar
 
@@ -38,7 +38,7 @@ Att flytta användarnas filer och inställningar till de nya eller uppdaterade d
 </table>
 
 >[!NOTE]
->Även om du kan fortsätta att använda migreringsprocesser som du har använt tidigare, rekommenderar vi att du med bytet till Office 365 ProPlus använder Flytt av känd mapp i OneDrive (se nedan). Om du vill se en fullständig skrivbordsdistribution kan du besöka [Center för skrivbordsdistribution](https://aka.ms/HowToShift).
+>Även om du kan fortsätta att använda migreringsprocesser som du har använt tidigare, rekommenderar vi att du använder Flytt av känd mapp i OneDrive (se nedan) vid bytet till Microsoft 365 Apps för företag. Om du vill se den fullständiga skrivbordsdistributionsprocessen kan du gå till [Center för skrivbordsdistribution](https://aka.ms/HowToShift).
 >
 
 Ett av de krångligaste och ofta mest manuella uppgifterna i en storskalig distribution är överföringen av användarnas filer och inställningar. I den här artikeln går vi igenom de alternativ som är tillgängliga för att migrera användarna till nya, uppdaterade och speglade datorer.

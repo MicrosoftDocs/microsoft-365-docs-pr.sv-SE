@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Sammanfattning: Skapa grupper som är känsliga och strikt konfidentiella i Microsoft Teams för filer i en utvecklings-/testmiljö.'
-ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5b3f5c74ac484eb00852d5756b3269fb7c8c6a5b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811872"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637974"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Skydda filer i Teams i en utvecklings-/testmiljö
 
@@ -48,7 +48,7 @@ I den här fasen skapar och konfigurerar du Azure AD-grupper och användare för
   
 Börja med att skapa två grupper för en vanlig organisation med Azure-portalen.
   
-1. Gå till Azure-portalen på [https://portal.azure.com](https://portal.azure.com) på en separat flik i webbläsaren. Om det behövs loggar du in med autentiseringsuppgifterna för det globala administratörskontot för din utvärderingsprenumeration eller betalda prenumeration för Microsoft 365 E5.
+1. Gå till Azure-portalen på [https://portal.azure.com](https://portal.azure.com) från en separat flik i webbläsaren. Om det behövs loggar du in med autentiseringsuppgifterna för det globala administratörskontot för din utvärderingsprenumeration eller betalda prenumeration för Microsoft 365 E5.
     
 2. I Azure-portalen klickar du på **Azure Active Directory > Grupper**.
     
@@ -64,9 +64,9 @@ Börja med att skapa två grupper för en vanlig organisation med Azure-portalen
       
 5. Klicka på **Skapa** och stäng sedan bladet **Grupp**.
     
-6.  Upprepa steg 3–5 för en ny grupp med namnet **Marknadspersonal**.
+6.    Upprepa steg 3–5 för en ny grupp med namnet **Marknadspersonal**.
     
-Nästa steg är att konfigurera automatisk licensiering så att medlemmarna i dina grupper automatiskt tilldelas licenser för dina Office 365- och EMS-prenumerationer.
+Nästa steg är att konfigurera automatisk licensiering så att medlemmarna i dina grupper automatiskt tilldelas licenser för dina Microsoft 365- och EMS-prenumerationer.
   
 1. Klicka på **Azure Active Directory > Licenser > Alla produkter** i Azure-portalen.
     
@@ -125,7 +125,7 @@ Använd stegen för att kontrollera att gruppbaserad licensiering fungerar som d
     
 4. I fönstret med egenskaperna för **CEO**-användarkontot, kontrollerar du att det har tilldelats till **Microsoft 365 Enterprise E5**-licensen (i **Produktlicenser**).
     
-## <a name="phase-3-create-office-365-retention-labels"></a>Fas 3: Skapa kvarhållningsetiketter för Office 365
+## <a name="phase-3-create-retention-labels"></a>Fas 3: Skapa kvarhållningsetiketter
 
 I den här fasen skapar du kvarhållningsetiketter till de olika säkerhetsnivåerna för dokumentmapparna på underliggande SharePoint-webbplats.
 
@@ -153,7 +153,7 @@ I den här fasen skapar du kvarhållningsetiketter till de olika säkerhetsnivå
     
 12. Klicka på **Klar**.
     
-13. Klicka på **Nästa** i fönstret **Välj etiketter att publicera**.
+13. I fönstret **Välj etiketter att publicera** klickar du på **Nästa**.
     
 14. Klicka på **Nästa** i fönstret **Välj platser**.
     
@@ -171,18 +171,18 @@ Skapa en grupp på den känsliga nivån för medlemmarna i marknadsföringsgrupp
 
 1. [Skapa en ny privat grupp](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) med namnet **Marknadsföringskampanjer**.
 2. Öppna gruppen **Marknadsföringskampanjer**.
-3.  I verktygsfältet för gruppen klickar du på **Filer**.
-4.  Klicka på ellipsen och sedan på **Öppna i SharePoint**.
-5.  Klicka på inställningsikonen i verktygsfältet på den underliggande SharePoint-webbplatsen och klicka sedan på **Webbplatsbehörigheter**.
-6.  I fönstret **Webbplatsbehörigheter** under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
-7.  Under **Delningsbehörigheter** väljer du **Endast webbplatsens ägare kan dela filer, mappar och webbplatsen**. Klicka sedan på **Spara**.
+3.    I verktygsfältet för gruppen klickar du på **Filer**.
+4.    Klicka på ellipsen och sedan på **Öppna i SharePoint**.
+5.    Klicka på inställningsikonen i verktygsfältet på den underliggande SharePoint-webbplatsen och klicka sedan på **Webbplatsbehörigheter**.
+6.    I fönstret **Webbplatsbehörigheter** under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
+7.    Under **Delningsbehörigheter** väljer du **Endast webbplatsens ägare kan dela filer, mappar och webbplatsen**. Klicka sedan på **Spara**.
 
 Därefter konfigurerar du dokumentmappen för den underliggande SharePoint-webbplatsen för marknadsföringskampanjer med etiketten Känslig.
 
-1.  På fliken **Marknadsföringskampanjer-Start** i webbläsaren klickar du på **Dokument**.
-2.  Klicka på inställningsikonen och sedan på **Inställningar för bibliotek**. 
-3.  Under **Behörigheter och hantering** klickar du på **Använd etikett för objekt i det här biblioteket**. 
-4.  I **Inställningar-Använd etikett** väljer du **Känslig** och klickar sedan på **Spara**. 
+1.    På fliken **Marknadsföringskampanjer-Start** i webbläsaren klickar du på **Dokument**.
+2.    Klicka på inställningsikonen och sedan på **Inställningar för bibliotek**. 
+3.    Under **Behörigheter och hantering** klickar du på **Använd etikett för objekt i det här biblioteket**. 
+4.    I **Inställningar-Använd etikett** väljer du **Känslig** och klickar sedan på **Spara**. 
 
 Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar användarna när de delar ett dokument med etiketten Känslig på en underliggande SharePoint-webbplats (som inkluderar marknadsföringskampanjplatsen) och som finns utanför organisationen.
 
@@ -204,11 +204,11 @@ Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar a
     
 9. I fönstret **Välj de typer av innehåll som ska skyddas** klickar du på **Lägg till** i listrutan och klickar sedan på **Kvarhållningsetiketter**.
     
-10. I fönstret **Kvarhållningsetiketter** klickar du på **+ Lägg till**, väljer etiketten **Känslig**, klickar på **Lägg till** och sedan på **Klar**.
+10. I fönstret **Kvarhållningsetiketter** klickar du på **Lägg till**, väljer etiketten **Känslig**, klickar på **Lägg till** och sedan på **Klar**.
     
 11. I fönstret **Välj de typer av innehåll som ska skyddas** klickar du på **Spara**.
     
-12. I **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
+12. I fönstret **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
 
 13. I fönstret **Vad vill du göra om vi identifierar känslig information?** klickar du på **Anpassa tips och e-post**.
     
@@ -216,7 +216,7 @@ Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar a
     
 15. I textrutan skriver du eller klistrar in följande:
     
-  - Om du vill dela med en användare utanför organisationen, laddar du ner filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
+  - Om du vill dela med en användare utanför organisationen, laddar du ned filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
     
 16. Klicka på **OK**.
     
@@ -236,19 +236,19 @@ Skapa en strikt konfidentiell grupp för medlemmar i ledningsgruppen som ska sam
 
 1. [Skapa en ny privat grupp](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) med namnet **Företagsstrategi**.
 2. Öppna gruppen **Företagsstrategi**.
-3.  I verktygsfältet för gruppen klickar du på **Filer**.
-4.  Klicka på ellipsen och sedan på **Öppna i SharePoint**.
-5.  Klicka på inställningsikonen i verktygsfältet på den underliggande SharePoint-webbplatsen och klicka sedan på **Webbplatsbehörigheter**.
-6.  I fönstret **Webbplatsbehörigheter** under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
-7.  Under **Delningsbehörigheter** väljer du **Endast webbplatsens ägare kan dela filer, mappar och webbplatsen**.
-8.  Inaktivera **Tillåt åtkomstbegäranden** och klicka sedan på **Spara**.
+3.    I verktygsfältet för gruppen klickar du på **Filer**.
+4.    Klicka på ellipsen och sedan på **Öppna i SharePoint**.
+5.    Klicka på inställningsikonen i verktygsfältet på den underliggande SharePoint-webbplatsen och klicka sedan på **Webbplatsbehörigheter**.
+6.    I fönstret **Webbplatsbehörigheter** under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
+7.    Under **Delningsbehörigheter** väljer du **Endast webbplatsägare kan dela filer, mappar och webbplats**.
+8.    Inaktivera **Tillåt åtkomstbegäranden** och klicka sedan på **Spara**.
 
 Därefter konfigurerar du dokumentmappen för företagsstrategins underliggande SharePoint-webbplats med etiketten Strikt konfidentiellt.
 
-1.  På fliken **Företagsstrategi-Start** i webbläsaren klickar du på **Dokument**.
-2.  Klicka på inställningsikonen och sedan på **Inställningar för bibliotek**. 
-3.  Under **Behörigheter och hantering** klickar du på **Använd etikett för objekt i det här biblioteket**. 
-4.  I **Inställningar-Använd etikett** väljer du **Strikt konfidentiellt** och klickar sedan på **Spara**. 
+1.    På fliken **Företagsstrategi-Start** i webbläsaren klickar du på **Dokument**.
+2.    Klicka på inställningsikonen och sedan på **Inställningar för bibliotek**. 
+3.    Under **Behörigheter och hantering** klickar du på **Använd etikett för objekt i det här biblioteket**. 
+4.    I **Inställningar-Använd etikett** väljer du **Strikt konfidentiellt** och klickar sedan på **Spara**. 
 
 Därefter konfigurerar du en DLP-princip som blockerar användare när de delar ett dokument med etiketten Strikt konfidentiellt på en underliggande SharePoint-webbplats (som inkluderar företagsstrategiplatsen) som finns utanför organisationen.
   
@@ -274,7 +274,7 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
     
 11. I fönstret **Välj de typer av innehåll som ska skyddas** klickar du på **Spara**.
     
-12. I **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
+12. I fönstret **Anpassa typen av innehåll som du vill skydda** klickar du på **Nästa**.
 
 13. I fönstret **Vad vill du göra om vi identifierar känslig information?** klickar du på **Anpassa tips och e-post**.
     
@@ -282,7 +282,7 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
     
 15. I textrutan skriver du eller klistrar in följande:
     
-  - Om du vill dela med en användare utanför organisationen, laddar du ner filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
+  - Om du vill dela med en användare utanför organisationen, laddar du ned filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
     
 16. Klicka på **OK**.
     

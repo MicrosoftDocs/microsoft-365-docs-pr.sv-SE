@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sammanfattning: Skapa offentliga, privata, känsliga och strikt konfidentiella SharePoint Online-gruppwebbplatser i utvecklings-/testmiljön för din politiska kampanj.'
-ms.openlocfilehash: d36b2c74cc7accadf5bbbde1b52f94c5e998ea8a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 14ba5b00754a9e55c797edd0835658ac81b7e647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637670"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -35,11 +35,11 @@ Följ anvisningarna i den här artikeln om du vill skapa en utvecklings-/testmil
 
 Börja med att följa anvisningarna i [Konfigurera grupper och användare till en utvecklings-/testmiljö för en politisk kampanj](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) och skapa prenumerationer, användare och grupper.
   
-## <a name="phase-2-create-office-365-labels"></a>Fas 2: Skapa Office 365-etiketter
+## <a name="phase-2-create-labels"></a>Steg 2: Skapa etiketter
 
 I den här fasen skapar du etiketter för dokumentmapparna med olika säkerhetsnivåer för SharePoint Online-gruppwebbplatsen.
   
-1. Om det behövs loggar du in på administrationscentret med autentiseringsuppgifterna för utvärderingsprenumerationens globala administratörskonto. Mer information finns i [Så här loggar du in i Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Om det behövs loggar du in på administrationscentret med autentiseringsuppgifterna för utvärderingsprenumerationens globala administratörskonto. Mer information finns i [Så här loggar du in i Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. På fliken **Microsoft Office Home** klickar du på panelen **Administratör**.
     
@@ -71,7 +71,7 @@ I den här fasen skapar du etiketter för dokumentmapparna med olika säkerhetsn
     
 13. Klicka på **Klar**.
     
-14. Klicka på **Nästa** i fönstret **Välj etiketter att publicera**.
+14. I fönstret **Välj etiketter att publicera** klickar du på **Nästa**.
     
 15. Klicka på **Nästa** i fönstret **Välj platser**.
     
@@ -245,7 +245,7 @@ Därefter konfigurerar du en princip för dataförlustskydd (DLP) som meddelar a
     
 15. I textrutan skriver du eller klistrar in följande:
     
-  - Om du vill dela med en användare utanför organisationen, laddar du ner filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
+  - Om du vill dela med en användare utanför organisationen, laddar du ned filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
     
 16. Klicka på **OK**.
     
@@ -355,7 +355,7 @@ Därefter konfigurerar du en DLP-princip som blockerar användare när de delar 
     
 16. I textrutan skriver du eller klistrar in följande:
     
-  - Om du vill dela med en användare utanför organisationen, laddar du ner filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
+  - Om du vill dela med en användare utanför organisationen, laddar du ned filen och öppnar den. Klicka på Arkiv, Skydda dokument och Kryptera med lösenord och ange sedan ett starkt lösenord. Skicka lösenordet i ett separat e-postmeddelande eller med annat kommunikationssätt.
     
 17. Klicka på **OK**.
     

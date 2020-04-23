@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en fiktiv men representativ global organisation använder Microsoft 365 Enterprise.
-ms.openlocfilehash: 8a9727f806783c72a77a941274e4a1b042c430ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42810592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625356"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise för Contoso Corporation
 
 Microsoft 365 Enterprise är ett förstklassigt molnerbjudande från Microsoft som kombinerar lokala och molnbaserade produktivitetsprogram och -tjänster med Windows 10 Enterprise och avancerade säkerhetsfunktioner till en komplett, intelligent lösning som ger alla möjlighet till arbeta kreativt och samarbeta på ett säkert sätt. 
 
-Contoso Corporation är ett fiktivt men representativt globalt tillverkningskonglomerat med huvudkontor i Paris. Contoso har distribuerat Microsoft 365 Enterprise, och har fattat stora designbeslut och tagit fram implementeringsinformation för nätverk, identitet, Windows 10 Enterprise, Office 365 ProPlus, hantering av mobila enheter, informationsskydd och säkerhet. 
+Contoso Corporation är en fiktiv och representativ global tillverkningskoncern med huvudkontor i Paris, Frankrike. Contoso har distribuerat Microsoft 365 Enterprise, och har fattat stora designbeslut och tagit fram implementeringsinformation för nätverk, identitet, Windows 10 Enterprise, Microsoft 365 Apps för företag, hantering av mobila enheter, informationsskydd och säkerhet. 
 
 Det övergripande målet för Contoso när det gäller Microsoft 365 Enterprise är att få till en snabbare digital omvandling genom att använda molntjänster för att sammanföra anställda, partner, data och processer, och på så sätt skapa kundvärde och bibehålla konkurrensfördelarna i en alltmer digital värld.
 
@@ -52,9 +52,9 @@ Mer information finns i följande artiklar:
 
   Contoso har en Windows 10 Enterprise-infrastruktur som gör att uppdateringar automatiskt distribueras och installeras på enheter som kör deras primära dator- och enhetsoperativsystem.
 
-- [Office 365 ProPlus](contoso-o365pp.md)
+- [Microsoft 365 Apps för företag](contoso-o365pp.md)
 
-  Contoso har en Office 365 ProPlus-infrastruktur som gör att uppdateringar automatiskt distribueras och installeras för produktivitetsprogrammen i Microsoft Office.
+  Contosos infrastruktur i Microsoft 365 Apps för företag distribuerar och installerar uppdateringar för produktivitetsprogrammen i Microsoft Office-serien automatiskt.
 
 - [Hantering av mobila enheter](contoso-mdm.md)
 

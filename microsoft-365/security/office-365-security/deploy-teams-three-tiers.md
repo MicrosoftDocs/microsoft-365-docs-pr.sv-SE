@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Skapa och konfigurera team med Microsoft Teams för olika nivåer av informationsskydd för filer.
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806486"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637646"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Distribuera team för tre skyddsnivåer för filer
 
@@ -32,7 +32,7 @@ Använd anvisningarna i den här artikeln för att utforma och distribuera basli
 
 ## <a name="baseline-teams"></a>Baslinjeteam
 
-Baslinjeskydd omfattar både offentliga och privata team. Offentliga team kan upptäckas och användas av alla i organisationen. Privata webbplatser kan bara upptäckas och användas av medlemmar i den Office 365-grupp som är kopplad till teamet. Medlemmar i båda dessa typer av team kan dela webbplatsen med andra.
+Baslinjeskydd omfattar både offentliga och privata team. Offentliga team kan upptäckas och användas av alla i organisationen. Privata webbplatser kan bara upptäckas och användas av medlemmar i den Microsoft 365-grupp som är kopplad till teamet. Medlemmar i båda dessa typer av team kan dela webbplatsen med andra.
 
 ### <a name="public"></a>Offentlig
 
@@ -84,7 +84,7 @@ Därefter konfigurerar du den underliggande SharePoint-webbplatsen så att teamm
 
 4. I fönstret **Webbplatsbehörigheter** under **Delningsinställningar** klickar du på **Ändra delningsinställningar**.
 
-5. Under **Delningsbehörigheter** väljer du **Endast webbplatsens ägare kan dela filer, mappar och webbplatsen**.
+5. Under **Delningsbehörigheter** väljer du **Endast webbplatsägare kan dela filer, mappar och webbplats**.
 
 6. Inaktivera **Tillåt åtkomstbegäranden** och klicka sedan på **Spara**.
 
@@ -100,4 +100,4 @@ Här är konfigurationsresultatet.
 
 [Skydda filer i Microsoft Teams](secure-files-in-teams.md)
 
-[Integrering av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Införande av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

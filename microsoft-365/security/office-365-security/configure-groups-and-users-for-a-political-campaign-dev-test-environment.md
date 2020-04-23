@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.'
-ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638467"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -36,9 +36,9 @@ I den här fasen får du provprenumerationer för Office 365 E5 och Enterprise M
 
 Följ först anvisningarna i **Fas 2 ** i [Office 365 utvecklings-/testmiljö](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Registrera dig sedan för EMS E5 utvärderingsprenumeration och lägg till den i samma organisation som utvärderingsprenumerationen för Office 365.
+Registrera dig sedan för en utvärderingsprenumeration på EMS E5 och lägg till den i samma organisation som utvärderingsprenumerationen.
 
-1. Om det behövs loggar du in i administrationscentret med inloggningsuppgifterna för ditt globala administratörskonto för utvärderingsprenumerationen. Mer information finns i [Så här loggar du in i Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Om det behövs loggar du in på administrationscentret med autentiseringsuppgifterna för utvärderingsprenumerationens globala administratörskonto. Mer information finns i [Så här loggar du in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Klicka på panelen **Administratör**.
 
@@ -191,7 +191,7 @@ Skriv upp dessa värden för att arbeta med utvärderingsprenumerationer för Of
 
   Till exempel är ”contoso” organisationsnamnet för utvärderingsprenumerationen i domännamnet contoso.onmicrosoft.com.
 
-- Office 365 globala administratörsnamn: ![Understrykning](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- Det globala administratörsnamnet: ![Understrykning](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Anteckna lösenordet för kontot och det vanliga första lösenordet för de andra användarkontona på en säker plats.
 

@@ -2,7 +2,7 @@
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoriskt: Ditt nätverk är redo för Microsoft 365 Enterprise
 
 - Dina kontor har tillräcklig internetbandbredd för Microsoft 365-trafik, t. ex. installationer och uppdateringar av Office 365, Microsoft Intune och Windows 10 Enterprise.
-- Ditt nätverk är kartlagt i en [Office 365 Reference Architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Ditt nätverk är mappat till en [referensarkitektur för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Din nätverksändringar har övervakats och testats och uppfyller dina krav gällande trafikfördröjning.
 
 Vid behov kan [Steg 1](../networking-provide-bandwidth-cloud-services.md) hjälpa dig med detta krav.
@@ -32,7 +32,7 @@ Vid behov kan [Steg 3](../networking-avoid-network-hairpins.md) hjälpa dig med 
 
 De senaste PAC-filerna har distribuerats i dina lokala webbläsare så att trafik till Microsoft 365 DNS-domännamn förbigår proxyservrar.
 
-Du har konfigurerat nätverkets kringliggande enheter, t. ex brandväggar, och SSL Break och inspect samt anordningar för paketkontroll, för att kringgå trafik eller för att på ett minimalt sätt bearbeta trafik till Optimize- och Allow-kategorierna i Microsoft 365-slutpunkter.
+You configured your network perimeter devices—such as firewalls, and SSL Break and Inspect, and packet inspection devices— to use traffic bypass or to minimally process traffic to the Optimize and Allow categories of Microsoft 365 endpoints.
 
 
 #### <a name="how-to-test"></a>Så testar man

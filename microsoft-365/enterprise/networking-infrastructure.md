@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Steg för att distribuera nätverksinfrastrukturen för Microsoft 365 Enterprise.
-ms.openlocfilehash: 9a805ffbdbdc19ef5943a0c0ba0ff8f010d3e19b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 341e5530b159d4ba78b94001d92427e36224ab04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812568"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631483"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>Fas 1: nätverksinfrastruktur för Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ ms.locfileid: "42812568"
 
 Microsoft 365 Enterprise innehåller Office 365, Microsoft Intune och många identitets- och säkerhetstjänster i Microsoft Azure. Alla dessa molnbaserade tjänster kräver säkerhet, prestanda och tillförlitlighet för anslutningar från klientenheter via Internet eller dedikerade kretsar. Om du vill ha de här tjänsterna och göra dem tillgängliga för kunder över hela världen har Microsoft utformat en nätverksinfrastruktur som betonar prestanda och integrering. 
 
-I det här steget ska du gå igenom de viktigaste aspekterna när du skapar en omfattande anslutning till molntjänsterna för Microsoft 365 Enterprise. En översikt finns i [Office 365 networking principles](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694) (Nätverksprinciper för Office 365).
+I det här steget ska du gå igenom de viktigaste aspekterna när du skapar en omfattande anslutning till molntjänsterna för Microsoft 365 Enterprise. En översikt finns i [Nätverksprinciper för Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694).
 
 >[!Note]
 >Om du redan har distribuerat en nätverksinfrastruktur går du till [avslutsvillkoren](networking-exit-criteria.md) i den här fasen för att kontrollera att det uppfyller kraven och valfria villkor för Microsoft 365 Enterprise.
@@ -43,7 +43,7 @@ Använd följande steg för att bygga ut nätverksinfrastrukturen för krav och 
 |![Steg 2](../media/stepnumbers/Step2.png)|[Konfigurera lokala internetanslutningar för Office](networking-dns-resolution-same-location.md)|
 |![Steg 3](../media/stepnumbers/Step3.png)|[Undvika nätverkshairpins](networking-avoid-network-hairpins.md)|
 |![Steg 4](../media/stepnumbers/Step4.png)|[Konfigurera förbikoppling av trafik](networking-configure-proxies-firewalls.md)|
-|![Steg 5](../media/stepnumbers/Step5.png)|[Optimera prestanda för klienten och Office 365-tjänsten](networking-optimize-tcp-performance.md)|
+|![Steg 5](../media/stepnumbers/Step5.png)|[Optimera prestanda för klienten och tjänsten](networking-optimize-tcp-performance.md)|
 
 
 När du har utfört de här stegen går du till [avslutsvillkoret](networking-exit-criteria.md) i den här fasen för att säkerställa att du uppfyller kraven och valfria villkor för Microsoft 365 Enterprise.

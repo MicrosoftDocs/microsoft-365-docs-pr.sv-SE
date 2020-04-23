@@ -16,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Sammanfattning: i den här artikeln beskrivs hur du använder DomainKeys Identified Mail (DKIM) med Office 365 för att säkerställa att mål-e-postsystemen litar på meddelanden som skickas från din anpassade domän.'
-ms.openlocfilehash: d76c31c6a3f0ce1550f0259ee40996189b60cb79
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4df887fc7db0ef968cc06d0b1b680b9bd91686ec
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811473"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608156"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Använd DKIM för att validera utgående e-post som skickas från din egna domän i Office 365
 
@@ -80,25 +80,33 @@ Nitty Gritty: DKIM använder en privat nyckel för att infoga en krypterad signa
 Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar riktningarna hur du ska uppgradera din 1024-bitarsnyckel till 2048. Stegen nedan gäller för två användningsfall: Välj det som passar bäst för konfigurationen.
 
 1. När du **redan har konfigurerat DKIM** kan du rotera bitar enligt följande:
-    1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.)
-    1. Kör sedan följande cmdlet:
 
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
+   1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.)
+   1. Kör följande kommando:
+
+      ```powershell 
+      Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+      ```
 
 1. Eller för en **ny implementation av DKIM**:
-    1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Det här är en Exchange Online-cmdlet.)
-    1. Kör följande cmdlet:
 
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
+   1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Det här är en Exchange Online-cmdlet.)
+   1. Kör följande kommando:
 
-Fortsätt att vara ansluten till Office 365 för att *verifiera* konfigurationen.
+      ```powershell
+      New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True
+      ```
 
-2. Kör cmdleten:
+   Fortsätt att vara ansluten till Office 365 för att *verifiera* konfigurationen.
 
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Get-DkimSigningConfig | fl`
+1. Kör följande kommando:
+
+   ```powershell
+   Get-DkimSigningConfig | Format-List
+   ```
 
 > [!TIP]
->Den här nya 2048-bitarsnyckeln träder i kraft på RotateOnDate och skickar e-postmeddelanden med 1024-bitarsnyckeln i interimversionen. Efter fyra dagar kan du testa igen med 2048-bitarsnyckeln (det vill säga när rotationen träder i kraft i den andra väljaren).
+> Den här nya 2048-bitarsnyckeln träder i kraft på RotateOnDate och skickar e-postmeddelanden med 1024-bitarsnyckeln i interimversionen. Efter fyra dagar kan du testa igen med 2048-bitarsnyckeln (det vill säga när rotationen träder i kraft i den andra väljaren).
 
 Om du vill rotera till den andra väljaren är dina alternativ a) att låta Office 365-tjänsten rotera väljaren och uppgradera till 2048 bitar inom de kommande sex månaderna och b) att efter fyra dagar bekräfta att 2048-bitar används, manuellt rotera den andra väljarknappen med hjälp av lämplig cmdlet.
 
@@ -119,14 +127,8 @@ För varje domän som du vill lägga till en DKIM-signatur för måste du public
 Kör följande kommandon för att skapa väljarposterna:
 
 ```powershell
-    New-DkimSigningConfig -DomainName <domain> -Enabled $false
-    Get-DkimSigningConfig -Identity <domain> | fl Selector1CNAME, Selector2CNAME
-```
-
-Skapa CNAME-referenser i Get-DkimSigningConfig-utdata
-
-```powershell
-    Set-DkimSigningConfig -Identity <domain> -Enabled $true
+New-DkimSigningConfig -DomainName <domain> -Enabled $false
+Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
 I Office 365 utförs automatisk nyckelrotation med de två poster som du skapar. Om du har etablerade egna domäner förutom den första domänen i Office 365 måste du publicera två CNAME-poster för varje ytterligare domän. Om du har två domäner måste du publicera två ytterligare CNAME-poster och så vidare.
@@ -152,9 +154,7 @@ Var:
 
 - _domainGUID_ är samma som _domainGUID_ i den anpassade MX-posten för din domän som visas före mail.protection.outlook.com. Exempel: i följande MX-post för domänen contoso.com blir din _domainGUID_ contoso-com:
 
-    ```text
-    contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
-    ```
+  > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
 - _initialDomain_ är den domän som du använde när du registrerade dig för Office 365. De första domänerna avslutas alltid i onmicrosoft.com. Information om hur du fastställer din första domän finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
@@ -204,17 +204,17 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 
 2. Kör följande kommando:
 
-    ```powershell
-    Set-DkimSigningConfig -Identity <domain> -Enabled $true
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity <domain> -Enabled $true
+   ```
 
    Här är _domänen_ namnet på den anpassade domän som du vill aktivera DKIM-signering för.
 
    Till exempel för domänen contoso.com:
 
-    ```powershell
-    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity contoso.com -Enabled $true
+   ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>Bekräfta att DKIM-signering är rätt konfigurerad för Office 365
 
@@ -255,29 +255,29 @@ När du inaktiverar signeringsprincipen inaktiveras inte DKIM fullständigt. Eft
 
 2. Kör något av följande kommandon för varje domän som du vill inaktivera DKIM-signering för.
 
-    ```powershell
-    $p = Get-DkimSigningConfig -Identity <domain>
-    $p[0] | Set-DkimSigningConfig -Enabled $false
-    ```
+   ```powershell
+   $p = Get-DkimSigningConfig -Identity <domain>
+   $p[0] | Set-DkimSigningConfig -Enabled $false
+   ```
 
    Till exempel:
 
-    ```powershell
-    $p = Get-DkimSigningConfig -Identity contoso.com
-    $p[0] | Set-DkimSigningConfig -Enabled $false
-    ```
+   ```powershell
+   $p = Get-DkimSigningConfig -Identity contoso.com
+   $p[0] | Set-DkimSigningConfig -Enabled $false
+   ```
 
    Eller
 
-    ```powershell
-    Set-DkimSigningConfig -Identity $p[<number>].Identity -Enabled $false
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity $p[<number>].Identity -Enabled $false
+   ```
 
-    Där _number_ är indexet för principen. Till exempel:
+   Där _number_ är indexet för principen. Till exempel:
 
-    ```powershell
-    Set-DkimSigningConfig -Identity $p[0].Identity -Enabled $false
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity $p[0].Identity -Enabled $false
+   ```
 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Standardbeteende för DKIM och Office 365
 <a name="DefaultDKIMbehavior"> </a>
@@ -323,9 +323,9 @@ I det här exemplet för att uppnå följande resultat:
 
 4. Mottagande e-postsystem utför en DKIM-kontroll genom att autentisera värdet i DKIM-signaturen d=\<domän\> mot domänen i meddelandet Från: (5322.From) för meddelandet. I det här exemplet överensstämmer värdena:
 
-    sender@**contoso.com**
+   > sender@**contoso.com**
 
-    d=**contoso.com**
+   > d=**contoso.com**
 
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Nästa steg: När du har konfigurerat DKIM för Office 365
 <a name="DKIMNextSteps"> </a>

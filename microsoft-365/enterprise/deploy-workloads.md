@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducera organisationens användare för produktivitetsarbetsbelastningarna i Microsoft 365 för företag.
-ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42805634"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638170"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Arbetsbelastningar och scenarier i Microsoft 365 för företag
 
@@ -60,8 +60,8 @@ Fler scenarier finns i [Microsoft 365 Produktivitetsbibliotek](https://aka.ms/pr
 | Nätverk | Nätverket är uppdaterat för optimal prestanda för Microsoft 365-molntjänster. |
 | Identitet | Identiteten är synkroniserad och skyddad med stark autentisering för användarkonton och skydd för administratörskonton. |
 | Windows 10 Enterprise | Dina datorer med Windows 7 eller Windows 8.1 kan uppgradera till Windows 10 Enterprise och nya enheter installeras med Windows 10 Enterprise. |
-| Office 365 ProPlus | Dina befintliga Microsoft Office-användare kan uppgradera till Office 365 ProPlus. |
-| Hantering av mobila enheter | Dina enheter kan registreras och hanteras. |
+|  Microsoft 365 Apps för företag | Dina befintliga Microsoft Office-användare kan uppgradera till Microsoft 365 Apps för företag. |
+| Hantering av mobilenheter | Dina enheter kan registreras och hanteras. |
 | Informationsskydd | Funktioner för informationsskydd i Microsoft 365 konfigureras och känslighetsetiketterna eller Azure Information Protection-etiketterna kan användas för att skydda dokument och e-post. |
 
 Kom ihåg att det här är optimalt och kan ta tid att planera, konfigurera, testa och sköta, särskilt i stora organisationer med befintlig infrastruktur och flera platser. Det är inte nödvändigt att slutföra alla dessa faser på alla platser för att snabbt få affärsvärde från Microsoft 365 för företag. 
@@ -69,7 +69,7 @@ Kom ihåg att det här är optimalt och kan ta tid att planera, konfigurera, tes
 Här är några vanliga arbetsbelastningar som du kan distribuera direkt: 
 
 - Efter att fasen **Identitet** för den grundläggande infrastrukturen har lanserats för användarna distribuerar många organisationer:
-  - [Office 365 ProPlus](office365proplus-infrastructure.md) i kombination med [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus skapar säkerhet med modern autentisering och erbjuder en användarmiljö från den senaste Microsoft Office-klienten. Migreringen av användarens personliga filer till OneDrive minskar infrastrukturen och behovet att stödja arbetsmappar och -enheter.
+  - [Microsoft 365 Apps för företag](office365proplus-infrastructure.md) tillsammans med [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Microsoft  365 Apps för företag skyddas med modern autentisering och har samma användarmiljö som i den senaste Microsoft Office-klienten. Migreringen av användarens personliga filer till OneDrive minskar infrastrukturen och behovet att stödja arbetsmappar och -enheter.
   - [Exchange Online](exchangeonline-workload.md) så att användare kan börja använda molnbaserad e-post.
 - Om du inte har ett direkt behov av att lagra strikt reglerade digitala tillgångar i molnet distribuerar du [Microsoft Teams](teams-workload.md) och [SharePoint](sharepoint-online-onedrive-workload.md) för dina användare innan fasen för **informationsskydd**.
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Skapa miljöer för demonstrationer, funktionstest och utveckling/testning för Microsoft 365 för företag med hjälp av testlabbguider.
-ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 582068e84d82bfa681d1e1e64234698544ce3b9d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153922"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631603"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testlabbguider för Microsoft 365 för företag
 
@@ -116,16 +116,16 @@ För en demonstration av funktioner för hantering av mobila enheter, se:
 
 För en demonstration av informationsskyddsrelaterade funktioner, se:
 
-- [Ökad säkerhet för Office 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Ökad säkerhet i Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Konfigurera inställningar för ökad säkerhet i Office 365 och utforska inbyggda säkerhetsverktyg.
+   Konfigurera inställningar för ökad säkerhet i Microsoft 365 och utforska inbyggda säkerhetsverktyg.
   
 - [Dataklassificering](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Konfigurera och använd Office 365-etiketter i ett dokument på en SharePoint Online-gruppwebbplats.
+   Konfigurera och använd etiketter i ett dokument på en SharePoint Online-gruppwebbplats.
     
 - [Privilegierad åtkomsthantering](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Konfigurera privilegierad åtkomsthantering för just-in-time-åtkomst till upphöjda och privilegierade uppgifter i din Office 365-organisation.
+   Konfigurera privilegierad åtkomsthantering för just-in-time-åtkomst till upphöjda och privilegierade uppgifter i din organisation.
 
 

@@ -1,5 +1,5 @@
 ---
-title: Ändringar i distributionsinnehåll för Microsoft 365 Enterprise
+title: Ändringar i distributionsinnehåll för Microsoft 365 för företag
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se det nya innehållet och ändringarna i innehållet i distributionsguiden för Microsoft 365.
-ms.openlocfilehash: fb9768be38ef215b22c81bcf10b19b58e37fb124
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3374ee742982b1c7f451448674feed5f7d803031
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951816"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631579"
 ---
-# <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Ändringar i distributionsinnehåll för Microsoft 365 Enterprise
+# <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Ändringar i distributionsinnehåll för Microsoft 365 för företag
 
 ## <a name="december-2019"></a>December 2019
 
@@ -38,7 +38,7 @@ ms.locfileid: "42951816"
 
 ### <a name="new-content"></a>Nytt innehåll 
 
-- [Migrera från Microsoft 365 Business till Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Migrera från Microsoft 365 Business Premium till Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Team för ett topphemligt projekt på Contoso Corporation](contoso-team-for-top-secret-project.md)
 
@@ -48,9 +48,9 @@ ms.locfileid: "42951816"
 
 ### <a name="new-content"></a>Nytt innehåll 
 
-- [Teams för strikt reglerade data (affisch)](secure-teams-highly-regulated-data-scenario.md#poster)
+- [Team för strikt reglerade data (affisch)](secure-teams-highly-regulated-data-scenario.md#poster)
 
-  [![Teams för strikt reglerade data (affisch)](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+  [![Team för strikt reglerade data (affisch)](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
   Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)- eller [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
 
@@ -66,15 +66,15 @@ ms.locfileid: "42951816"
 
   Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf)- eller [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx)-format.
 
-- [Distribution av Windows 10 med Konfigurationshanteraren (affisch)](windows10-deploy-inplaceupgrade.md)
+- [Distribution av Windows 10 med Configuration Manager (affisch)](windows10-deploy-inplaceupgrade.md)
 
-  [![Distribution av Windows 10 med Konfigurationshanteraren (affisch)](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![Distribution av Windows 10 med Configuration Manager (affisch)](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf)- eller [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx)-format.
 
-- [Scenario för Teams för strikt reglerade data](secure-teams-highly-regulated-data-scenario.md)
+- [Team för strikt reglerade data (scenario)](secure-teams-highly-regulated-data-scenario.md)
 
-  [![Scenario för Teams för strikt reglerade data](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
+  [![Team för strikt reglerade data (scenario)](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
   Meddelanden: [Microsoft 365 Technical Community-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Protect-your-highly-regulated-files-in-Teams-with-Microsoft-365/ba-p/962985)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-lock-down-team-sensitive-top-secret-joe-davies/?published=t)
 
@@ -86,16 +86,16 @@ ms.locfileid: "42951816"
 
 ### <a name="updates-and-enhancements"></a>Uppdateringar och förbättringar
 
-- Uppdatering av [Fas 4: Office 365 ProPlus](office365proplus-infrastructure.md)
+- Uppdatering av [Fas 4: Microsoft 365 Apps för företag](office365proplus-infrastructure.md)
 - Uppdatering av [Contoso-fallstudien](contoso-case-study.md)
 - Uppdatering av [Microsoft Teams](teams-workload.md)-, [Exchange Online](exchangeonline-workload.md)- och [SharePoint Online](sharepoint-online-onedrive-workload.md)-arbetsbelastningarna
 - Uppdatering av scenariot [SharePoint-webbplatser för strikt reglerade data](teams-sharepoint-online-sites-highly-regulated-data.md)
  
   [![Scenariot SharePoint-webbplatser för strikt reglerade data](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
 
-- [Microsoft 365 Enterprise (affisch)](microsoft-365-overview.md#get-the-big-picture) för nya scenarier 
+- [Microsoft 365 för företag (affisch)](microsoft-365-overview.md#get-the-big-picture) för nya scenarier 
 
-  [![Bild för Microsoft 365 Enterprise (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
+  [![Bild för Microsoft 365 för företag (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="september-2019"></a>September 2019
 
@@ -118,11 +118,11 @@ ms.locfileid: "42951816"
 
 ### <a name="new-content"></a>Nytt innehåll 
 
-- [Övergå till Microsoft 365 Enterprise i organisationen (affisch)](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
+- [Överför din organisation till Microsoft 365 för företag (affisch)](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
 
    [![Bild för Övergå till Microsoft 365 (affisch)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
  
-- [Identitetsinfrastruktur för Microsoft 365 Enterprise (affisch)](identity-infrastructure.md)
+- [Identitetsinfrastruktur för Microsoft 365 för företag (affisch)](identity-infrastructure.md)
 
   [![Identitetsinfrastruktur (affisch)](../media/identity-infrastructure/m365e-identity-arch-poster.png)](../media/identity-infrastructure/M365E-ID-Infra.pdf)
 
@@ -138,15 +138,15 @@ ms.locfileid: "42951816"
 
 ### <a name="updates-and-enhancements"></a>Uppdateringar och förbättringar
 
-- [Microsoft 365 Enterprise (affisch)](microsoft-365-overview.md#get-the-big-picture) för nya produktivitetsscenarier
+- [Microsoft 365 för företag (affisch)](microsoft-365-overview.md#get-the-big-picture) för nya produktivitetsscenarier
 
-   [![Bild för Microsoft 365 Enterprise (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
+   [![Bild för Microsoft 365 för företag (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="july-2019"></a>Juli 2019
 
 ### <a name="new-content"></a>Nytt innehåll
 
-- Excel-arbetsbok för [Microsoft 365 for Enterprise för organisationer som inte är större företag](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
+- Excel-arbetsbok för [Microsoft 365 för företag för organisationer som inte är större företag](deploy-foundation-infrastructure-non-enterprises.md#onboarding)
 
 ## <a name="may-2019"></a>Maj 2019
 
@@ -154,12 +154,12 @@ ms.locfileid: "42951816"
 
 - [Grundläggande infrastruktur (affisch)](deploy-foundation-infrastructure.md#at-a-glance)
 
-  [![Bild på den grundläggande infrastrukturen för Microsoft 365 Enterprise (affisch)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+  [![Bild på den grundläggande infrastrukturen för Microsoft 365 för företag (affisch)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
   Meddelanden: [LinkedIn](https://www.linkedin.com/pulse/how-can-i-get-big-picture-microsoft-365-enterprise-joe-davies/)
 
  
-- [Microsoft 365 Enterprise för organisationer som inte är större företag](deploy-foundation-infrastructure-non-enterprises.md)
+- [Microsoft 365 för företag för organisationer som inte är större företag](deploy-foundation-infrastructure-non-enterprises.md)
 
   [![Sammanfattning av infrastrukturen om organisationen använder Enbart molnet-identitet](../media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)](deploy-foundation-infrastructure-non-enterprises.md)
 
@@ -170,7 +170,7 @@ ms.locfileid: "42951816"
 ### <a name="new-content"></a>Nytt innehåll 
 
 - Testlabbguider om förutsättningar för [identitets- och enhetsåtkomst](identity-device-access-m365-test-environment.md)
-- Stegen [Windows informationsskydd](infoprotect-deploy-windows-information-protection.md) och [Office 365-dataförlustskydd](infoprotect-data-loss-prevention.md) i [Fas 6: Informationsskydd](infoprotect-infrastructure.md)
+- Stegen [Windows informationsskydd](infoprotect-deploy-windows-information-protection.md) och [Dataförlustskydd](infoprotect-data-loss-prevention.md) i [Fas 6: Informationsskydd](infoprotect-infrastructure.md)
 
 
 ## <a name="see-also"></a>Se även

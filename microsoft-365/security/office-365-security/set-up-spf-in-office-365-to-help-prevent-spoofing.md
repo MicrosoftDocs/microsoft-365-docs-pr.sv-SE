@@ -1,5 +1,5 @@
 ---
-title: Konfigurera SPF i Office 365 för att förhindra förfalskning
+title: Konfigurera SPF för att förhindra förfalskning
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Sammanfattning: I den här artikeln beskrivs hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda SPF (Sender Policy Framework) med din anpassade domän i Office 365. Med SPF kan du validera utgående e-post som skickas från din egna domän.'
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812611"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638326"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Konfigurera SPF i Office 365 för att förhindra förfalskning
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
  **Sammanfattning:** I den här artikeln beskrivs hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda SPF (Sender Policy Framework) med din anpassade domän i Office 365. Med SPF kan du validera utgående e-post som skickas från din anpassade domän.
 
@@ -59,7 +59,7 @@ Samla in följande information:
 
 1. Se till att bekanta dig med SFP-syntaxen i följande tabell.
 
-   ||**Om du använder...**|**Vanligt för Office 365-kunder?**|**Lägger du till det här...**|
+   ||**Om du använder...**|**Vanligt för kunder?**|**Lägger du till det här...**|
    |:-----|:-----|:-----|:-----|
    |1|Ett e-postsystem (obligatoriskt)|Vanligt. SPF-poster som startar med det här värdet.|v=spf1|
    |2|Exchange Online|Vanligt|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ Samla in följande information:
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   Det här är den vanligaste SPF TXT-posten för Office 365. Den här posten fungerar för i stort sett alla, oavsett om ditt Office 365-datacenter är i USA eller i Europa (inklusive Tyskland) eller på någon annan plats.
+   Det här är den vanligaste SPF TXT-posten. Den här posten fungerar för i stort sett alla, oavsett om ditt Microsoft-datacenter är i USA eller i Europa (inklusive Tyskland) eller på någon annan plats.
 
    Men om du har köpt Office 365 Germany, som ingår i Microsoft Cloud Germany, bör du använda instruktionen include från rad 4 i stället för rad 2. Om du till exempel bara använder Office 365 Germany som värd, det vill säga att du inte har några lokala e-postservrar, skulle din SPF TXT-post innehålla raderna 1, 4 och 7 och se ut så här:
 
