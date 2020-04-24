@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Läs om hur du uppgraderar till en ny prenumeration.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707529"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796518"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang 
 
@@ -63,7 +63,7 @@ När du är klar med kassan kan det ta några minuter att slutföra uppgradering
 
 ## <a name="the-upgrade-tab-is-empty"></a>Fliken Uppgradera är tom
 
-Om fliken **Uppgradera** är tom visas en förklaring till varför du inte kan uppgradera just nu. Du kan försöka [ändra abonnemang manuellt](change-plans-manually.md) eller [ringa support](../../admin/contact-support-for-business-products.md). Mer information finns i [Varför kan jag inte uppgradera planer?](#why-cant-i-upgrade-plans).
+Om fliken **Uppgradera** är tom visas en förklaring till varför du inte kan uppgradera just nu. Du kan försöka [ändra planer manuellt](change-plans-manually.md). Mer information finns i [Varför kan jag inte uppgradera planer?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>Jag ser inte planen jag vill ha.
 
