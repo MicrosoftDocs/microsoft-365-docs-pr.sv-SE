@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägg till din domän i Office 365 i Microsoft 365-administrationscentret genom att lägga till en DNS-post hos din DNS-värd. Installationsguiden går igenom processen.
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631821"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800029"
 ---
 # <a name="add-a-domain-to-office-365"></a>Lägga till en domän i Office 365
 
@@ -101,6 +101,49 @@ ms.locfileid: "43631821"
     Om du vill vänta till senare bläddrar du längst ned och väljer **Hoppa över det här steget**.
     
 8. Välj **Slutför** - du är klar! 
+
+## <a name="add-or-edit-custom-dns-records"></a>Lägga till eller redigera anpassade DNS-poster
+
+Följ stegen nedan för att lägga till en anpassad post för en webbplats eller tjänst från tredje part.
+
+1. Logga in på Microsofts <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>administrationscenter på .
+
+2. Gå till sidan **Inställningar**  > **domäner.**
+
+3. Välj en domän på sidan **Domäner**. 
+    
+4. Under **DNS-inställningar**väljer du **Anpassade poster.** välj sedan **Ny anpassad post**.
+
+5. Välj den typ av DNS-post som du vill lägga till och skriv informationen för den nya posten.
+    
+6. Välj **Spara**.
+
+## <a name="registrars-with-domain-connect"></a>Registratorer med Domain Connect
+
+[Med Domain](https://www.domainconnect.org/) Connect-aktiverade registratorer kan du lägga till din domän i Microsoft 365 i en trestegsprocess som tar minuter. 
+  
+I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigurerar domänens poster, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, fungerar med din domän.
+  
+> [!NOTE]
+> Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domain Connect-registratorer som integreras med Microsoft 365
+
+- [1&amp;1 IONOS](https://www.1and1.com/)
+- [123Reg (På andra)](https://www.123-reg.co.uk/)
+- [Godaddy](https://www.godaddy.com/)
+- [Wordpress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer eller WildWestDomains (GoDaddy-återförsäljare med SecureServer DNS hosting)
+    - [MadDog domäner](https://www.maddogdomains.com/)
+    - [BilligaNamn](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a>Vad händer med min e-post och webbplats?
+
+När du är klar med installationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för din domän börjar komma till Microsoft 365. Kontrollera att du har lagt till användare och konfigurerat postlådor i Office 365 för alla som får e-post i din domän.
+  
+Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är. Installationsstegen För Domain Connect påverkar inte din webbplats.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365
+title: Konfigurera inställningar för skräppost i Exchange Online-postlådor
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638446"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800073"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
 Organisatoriska anti-spam-inställningar i Exchange Online styrs av Exchange Online Protection (EOP). Mer information finns i [Skydd mot skräppost i Office 365](anti-spam-protection.md).
 
@@ -43,11 +43,13 @@ Administratörer kan använda Exchange Online PowerShell för att inaktivera, ak
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Du måste tilldelas behörigheter innan du kan göra dessa procedurer. Du behöver rollen **E-postmottagare** (som tilldelas rollgrupperna **Organisationshantering,** **Mottagarhantering**och **Anpassade e-postmottagare** som standard) eller rollen **Användaralternativ** (som tilldelas rollgrupperna **Organisationshantering** och **HelpDesk** som standard). Information om hur du lägger till användare i rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Observera att en användare med standardbehörigheter kan göra samma procedurer på sin egen postlåda, så länge de har [åtkomst till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+- Betrodda avsändare för delade postlådor synkroniseras inte med Azure AD och EOP avsiktligt.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Använda Exchange Online PowerShell för att aktivera eller inaktivera skräppostregeln i en postlåda
 
@@ -181,3 +183,38 @@ När skräppostfiltret i Outlook är inställt på **Låg** eller **Hög**använ
 Så, Outlook Junk Email Filter kan använda brevlådans safelist samling och sin egen spam klassificering för att flytta meddelanden till skräppost mappen, även om skräppost regeln är inaktiverad i brevlådan.
 
 Outlook och Outlook på webben stöder båda insamlingen för safelist. Samlingen för safelist sparas i Exchange Online-postlådan, så ändringar i samlingen för safelist i Outlook visas i Outlook på webben och tvärtom.
+
+## <a name="limits-for-junk-email-settings"></a>Gränser för inställningar för skräppost
+
+Den safelist-samling (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockerade avsändare) som lagras i användarens postlåda synkroniseras också med EOP. Med katalogsynkronisering synkroniseras safelist-samlingen med Azure AD.
+
+- Den safelist-samlingen i användarens postlåda har en gräns på 510 KB, som innehåller alla listor, plus ytterligare inställningar för skräppostfilter. Om en användare överskrider den här gränsen visas ett Outlook-fel som ser ut så här:
+
+  > Det går inte/lägger inte till i serverns skräppostlistor. Du är över den storlek som tillåts på servern. Skräppostfiltret på servern inaktiveras tills skräppostlistorna har reducerats till den storlek som servern tillåter.
+
+  Mer information om den här gränsen och hur du ändrar den finns i [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- Den synkroniserade safelist-samlingen i EOP har följande synkroniseringsgränser:
+
+  - Totalt antal poster i listan Betrodda avsändare, listan Betrodda mottagare och externa kontakter om **Förtroende-e-post från mina kontakter** är aktiverat.
+  - Totalt 500 poster i listan Blockerade avsändare och blockerade domäner.
+
+  När 1024-ingångsgränsen har uppnåtts händer följande:
+  
+  - Listan slutar acceptera poster i PowerShell och Outlook på webben, men inget fel visas.
+
+    Outlook-användare kan fortsätta att lägga till fler än 1024 poster tills de når Outlook-gränsen på 510 kB. Outlook kan använda dessa ytterligare poster, så länge ett EOP-filter inte blockerar meddelandet före leverans till postlådan (regler för e-postflöde, anti-förfalskning, etc.).
+
+- Med katalogsynkronisering synkroniseras posterna till Azure AD i följande ordning:
+
+  1. E-postkontakter om **Förtroende-e-post från mina kontakter** är aktiverat.
+  2. Listan Säker avsändare och listan Säker mottagare kombineras, avd dupliceras och sorteras i alfabetisk ordning när en ändring görs för de första 1024-posterna.
+
+  De första 1024-posterna används och relevant information stämplas i meddelanderubrikerna.
+  
+  Poster över 1024 som inte synkroniserades med Azure AD bearbetas av Outlook (inte Outlook på webben) och ingen information stämplas i meddelanderubrikerna.
+
+Som du kan se minskar om du aktiverar **inställningen Förtroende-e-post från mina kontakter** antalet betrodda avsändare och säkra mottagare som kan synkroniseras. Om detta är ett problem rekommenderar vi att du använder Grupprincip för att inaktivera den här funktionen:
+
+- Filnamn: outlk16.opax
+- Principinställning: **Lita på e-post från kontakter**
