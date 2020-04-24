@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster. Med instrumentpanelen för översikt över användning kan du granska varje diagram för fler insikter.
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621276"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794023"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -58,7 +58,7 @@ I den här videon finns information om hur du kan använda rapporterna:
 ::: moniker-end
 
    
-2. Om du väljer **Välj en rapport** längst upp på instrumentpanelen så kan du välja från en lista med alla tillgängliga rapporter. Du kan också välja en översiktlig aktivitetswidget för en tjänst (e-post, OneDrive o.s.v.) om du vill ha mer information. <br/>![Instrumentpanelen Användning](../../media/usage-report-dashboard.png)
+2. Om du väljer **Välj en rapport** längst upp på instrumentpanelen så kan du välja från en lista med alla tillgängliga rapporter. Du kan också välja en översiktlig aktivitetswidget för en tjänst (t.ex. e-post eller OneDrive) om du vill ha mer information. <br/>![Instrumentpanelen Användning](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Vem kan se rapporter
 
@@ -104,7 +104,7 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
   
 - [OneDrive för företag-användning](onedrive-for-business-usage.md)
 
-- [ProPlus-användning](microsoft365-apps-usage.md)
+- [Användning av Microsoft 365-appar](microsoft365-apps-usage.md)
   
 - [SharePoint-webbplatsanvändning](sharepoint-site-usage.md)
   
