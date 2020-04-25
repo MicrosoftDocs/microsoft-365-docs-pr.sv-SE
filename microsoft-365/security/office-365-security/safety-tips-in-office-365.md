@@ -17,16 +17,18 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Introducerar säkerhetstips för e-postmeddelanden som filtrerats av EOP och skräppostfiltret.
-ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7d7e6819e1374fd941d6eeb992ecf63726d4127
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634310"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809020"
 ---
 # <a name="safety-tips-in-email-messages"></a>Säkerhetstips i e-postmeddelanden
 
-Exchange Online Protection (EOP) och Microsoft 365 skyddar dig med skräppost, nätfiske och förebyggande av skadlig kod. Idag är några av dessa attacker så välutformad att de ser legitima. Det räcker inte alltid att skicka meddelanden till mappen Skräppost. När du nu kontrollerar din e-post i Outlook eller Outlook på webben kontrollerar EOP automatiskt avsändaren och lägger till ett säkerhetstips högst upp i e-postmeddelandet.
+Exchange Online Protection (EOP) och Microsoft 365 skyddar dig med skräppost, nätfiske och förebyggande av skadlig kod. Idag är några av dessa attacker så välutformad att de ser legitima. Det räcker inte alltid att skicka meddelanden till mappen Skräppost. Nu, när du kontrollerar din e-post i Outlook eller Outlook på webben eller någon e-postklient, EOP automatiskt kontrollerar avsändaren och lägger till ett säkerhetstips till toppen av e-postmeddelandet.
+
+Säkerhetstips i Outlook beror inte på vilken version av Outlook du använder eftersom säkerhetstipset är sprucket öppet och infogat direkt i meddelandetexten. Detta innebär att säkerhetstipset kommer att dyka upp i vilken e-postklient du använder. Det görs på e-filternivå och inte återges på e-postklientnivå, så det visas inte bara i någon version av Outlook, det dyker också upp i någon e-postklient.
 
 Säkerhetstipset – ett färgkodat meddelande – varnar dig om potentiellt skadliga meddelanden. De flesta meddelanden i inkorgen har inget säkerhetstips. Du ser dem bara när EOP och Microsoft 365 har information som du behöver för att förhindra attacker mot skräppost, nätfiske och skadlig programvara. Om säkerhetstips visas i inkorgen kan du använda följande exempel för att lära dig mer om varje typ av säkerhetstips.
 
@@ -55,9 +57,10 @@ Säkerhetstipset – ett färgkodat meddelande – varnar dig om potentiellt ska
     Vi berättar också när vi hoppade över att kontrollera ett e-postmeddelande eftersom det är från en avsändare som du litar på på listan Betrodda avsändare eller om det finns en regel för e-postflöde för att kringgå filtrering.
 
     Den grå säkerhetstipset visas också när externa bilder blockeras, det vill säga meddelandet finns i inkorgen och verkar inte vara skräppost, men innehåller externa bilder som du inte har valt att ladda ned.
+    
 
 ## <a name="working-with-safety-tips"></a>Arbeta med säkerhetstips
 
-Säkerhetstips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden kommer att få ett. Administratörer kan inaktivera säkerhetstips för andra e-postklienter som Outlook. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
+Säkerhetstips är alltid aktiverade för Outlook på webben, även om inte alla meddelanden kommer att få ett. Administratörer kan inaktivera säkerhetstips för andra e-postklienter som Outlook. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 Om du inte håller med om hur EOP kategoriserade ett meddelande (det vill säga meddelandet är inte skräppost eller om det borde ha markerats som skräppost) kan du skicka meddelandena till Microsoft för analys för att göra din upplevelse bättre. Instruktioner finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md). Du kan också klicka på länken Feedback i säkerhetstipset för att skicka kommentarer direkt till Microsoft för att hjälpa oss att förbättra.

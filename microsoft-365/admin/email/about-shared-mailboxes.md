@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Delade postlådor används när flera personer behöver åtkomst till samma postlåda. Läs om vad du behöver veta innan du skapar en delad postlåda.
-ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6d1d7c8e0ae99047b854e91c1a97327a839f630
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629113"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808752"
 ---
 # <a name="about-shared-mailboxes"></a>Om delade postlådor
 
 Delade postlådor används när flera personer behöver åtkomst till samma postlåda, t. ex. företagsinformation eller supportens e-postadress, receptionen eller andra funktioner som kan delas av flera personer.
 
-Användare som har behörighet till gruppens postlåda kan skicka som eller skicka för postlådans e-postadress om administratören har gett dig behörighet att göra det. Detta är särskilt användbart för hjälp och stöd brevlådor eftersom användare kan skicka e-post från "Contoso Support" eller "Bygga en reception.
+Användare som har behörighet till gruppens postlåda kan skicka som eller skicka för postlådans e-postadress om administratören har gett dig behörighet att göra det. Det här är särskilt användbart för postlådor i hjälp och support eftersom användare kan skicka e-post från "contoso support" eller "Byggnad As reception".
 
-Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)bör du veta några saker du bör veta.
+Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)bör du veta:
 
 - **Licenser:** Din delade postlåda kan lagra upp till 50 GB data utan att du tilldelar en licens till den. Därefter måste du tilldela postlådan en licens för att kunna lagra mer data. Mer information om licensiering av delad postlåda finns i [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). När en delad postlåda når lagringsgränsen kommer du att kunna ta emot e-post ett tag till, men du kommer inte att kunna skicka ny e-post. Därefter slutar den att ta emot e-post. De som skickar e-post till postlådan får ett meddelande om utebliven leverans.
 
@@ -55,7 +55,7 @@ Innan du [skapar en delad postlåda](create-a-shared-mailbox.md)bör du veta nå
 
 - **För många användare:** När det finns för många angivna användare samtidigt som de har åtkomst till en delad postlåda kan de ibland misslyckas med att ansluta till den här postlådan. I det här fallet kan du överväga att minska antalet användare eller använda en annan arbetsbelastning, till exempel en Microsoft 365-grupp eller Gemensam mapp.
 
-- **Borttagning av meddelanden:** Tyvärr kan du inte hindra andra från att ta bort meddelanden i en delad postlåda. Den enda vägen runt detta är att skapa en Microsoft 365 grupp i stället för en delad postlåda. En grupp i Outlook är som en delad postlåda. En jämförelse av de två finns i [Jämför grupper](../create-groups/compare-groups.md). Mer information om grupper finns i [Läs mer om grupper](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **Borttagning av meddelanden:** Tyvärr kan du inte hindra andra från att ta bort meddelanden i en delad postlåda. Den enda vägen runt detta är att skapa en Microsoft 365 grupp i stället för en delad postlåda. En grupp i Outlook är som en delad postlåda. En jämförelse av de två finns i [Jämför grupper](../create-groups/compare-groups.md). Mer information om grupper finns i [Läs mer om grupper](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

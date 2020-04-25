@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 234ae17ab31d56d1bbd65f1aa8ed29475e9cd155
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 17bfa8ee50fbdb7dce988324f478d88d00600121
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583721"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804745"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Vad kommer i Microsoft Secure Score?
 
@@ -30,36 +30,8 @@ För att göra [Microsoft Secure Score](microsoft-secure-score.md) till en bätt
 
 Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## <a name="april-21st-2020"></a>21 april 2020
+## <a name="may-2020"></a>Maj 2020
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Ta bort förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetshållning
+### <a name="adding-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Lägga till Azure Advanced Threat Protection improvement-åtgärder i förhandsversionen
 
-För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig tar vi bort följande förbättringsåtgärder.
-
-- Använda IRM-skydd på dokument
-- Tillämpa principer för förebyggande av dataförlust
-
-### <a name="adding-azure-ad-improvement-action-to-preview"></a>Lägga till Azure AD-förbättringsåtgärd i förhandsversionen
-
-Lägga till följande förbättringsåtgärd för Azure Active Directory i [förhandsversionen av Microsoft Secure Score:](microsoft-secure-score-preview.md)
-
-- Tillåt inte användare att bevilja samtycke till ohanterada program (finns för närvarande i släppt version)
-
-### <a name="adding-azure-atp-improvement-actions-to-preview"></a>Lägga till Azure ATP-förbättringsåtgärder i förhandsversionen
-
-Lägga till följande azure advanced threat protection improvement actions i [förhandsversionen av Microsoft Secure Score:](microsoft-secure-score-preview.md)
-
-- Inaktivera tjänsten Utskriftshanteraren på domänkontrollanter
-- Ändra osäkra Kerberos-delegationer för att förhindra personifiering
-- Skydda och hantera lokala administratörslösenord med Microsoft LAPS
-- Minska risken för lateral rörelsebana för känsliga enheter
-- Ta bort vilande konton från känsliga grupper
-- Ta bort oskyddade SID-historikattribut från entiteter
-- Lösa oskyddade kontoattribut
-- Stoppa exponering för rensa textuppgifter
-- Stoppa äldre protokollkommunikation
-- Stoppa svag chifferanvändning
-
-### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-preview"></a>Stöd för säkerhetsrekommendationer för Microsoft Defender ATP Threat & Vulnerability Management (TVM) i förhandsversionen
-
-Alla utgivna säkerhetsrekommendationer som tillhandahålls av TVM kommer nu också att vara tillgängliga [förhandsgranskningsversionen av Microsoft Secure Score](microsoft-secure-score-preview.md).
+- Aktivera säkerhetsfunktioner i Active Directory-förtroenden

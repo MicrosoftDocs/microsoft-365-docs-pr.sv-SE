@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627528"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805184"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -36,10 +36,59 @@ Vi lägger kontinuerligt till nya funktioner [i Microsoft 365-administrationscen
 > **"Classic" admin center pensionering med början i mars**<br><br>
 När du loggar in på admin.microsoft.com går du nu till det nya administrationscentret varje gång. Och i mars kommer vi att börja inaktivera möjligheten att byta tillbaka till det klassiska administrationscentret. För nu kan du fortfarande växla tillbaka, men som det nya admin-centret kommer till paritet (och överstiger det) kommer vi att stänga av växeln för alla organisationer. <br><br> *Senast uppdaterad: 2 mars 2020*
 
-Och om du är intresserad av vad som är nytt i andra admin centers:
+Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
 
+- [Nyheter i Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Nyheter i Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Nyheter i Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>Mars 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Dagens Feedback Fix: Förbättra "lägg till användare" tillförlitlighet för licensiering
+
+Vi fick mycket feedback från administratörer om hur svårt det är att tilldela licenser när du lägger till användare. Vi har gjort den första uppdateringen av den här korrigeringsfilen och vi har migrerat till en mer tillförlitlig tjänst bakom kulisserna för att bearbeta dessa begäranden. Och om något går fel får du nu ett felmeddelande som gör att du kan försöka igen.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Lägg till sidan med användarbekräftelse med felet.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Startsidakort för Microsoft Teams
+
+Med uptick i Teams användning, vissa organisationer kommer att få en fäst instrumentpanel kort som gör att slå teams på mer upptäckbara. Kortet har också länkar till utbildning och dokument för att hjälpa din organisation övergången till fjärrarbete. Gå bara till **hemsidan** för att se det nya kortet.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Startsidakort för Microsoft Teams":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Anpassa organisationens SharePoint-mobilapptema
+
+Med hjälp av administrationscentret för Microsoft 365 kan du nu anpassa organisationens tema i SharePoint-mobilappen för iOS och SharePoint-mobilappen för Android. Den här funktionen ger en mobil intranätappupplevelse som kan matcha din SharePoint Online för anställda när de är på språng. Temaanpassning omfattar logotypbilden, navigeringsfältets färg, text- och ikonfärger samt accentfärger, vilket gör det enkelt att igenkänna.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram som mappar administratörscenterinställningarna till mobilappen.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Förbättringar av guiden "Lägg till en grupp"
+
+När administratörer skapade en ny grupp – och gjorde den till ett team samtidigt, kan de tilldela ägare som inte har en licens som innehåller Teams. Och det skapade lite huvudvärk. Vi har uppdaterat guideflödet för att verifiera att ägare har en Teams-licens och om de inte gör det för att göra gruppen till ett team är inaktiverat.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365-erbjudanden för små och medelstora företag
+
+Vi vet att detta är ett tillkännagivande för nästa månad, men vi vill se till att du är förberedd.
+
+Från och med den 21 april gör vi ändringar relaterade till våra Office 365-prenumerationer för små och medelstora företag – och till Office 365 ProPlus. Dessa produkter kommer nu att använda microsoft 365-varumärket.
+
+De nya produktnamnen träder i kraft den 21 april 2020. Detta är en ändring av produktnamnet bara, och det finns inga pris- eller funktionsändringar just nu.
+
+|Aktuellt namn |Nytt namn  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    Microsoft 365-appar för företag       | 
+|Office 365 ProPlus    |   Microsoft 365-appar för företag      |
+
+### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
+
+[Nyheter i Microsoft 365 webbserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)I den här månadens avsnitt lyfter vi fram 3-årsjubileet av Microsoft Teams och täcker nya funktioner, inklusive förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för handlinjechefer med Shifts-appen, Teams och Skypes konsumentinteroperabilabilabilabila sig med mera.
 
 ## <a name="february-2020"></a>Februari 2020
 

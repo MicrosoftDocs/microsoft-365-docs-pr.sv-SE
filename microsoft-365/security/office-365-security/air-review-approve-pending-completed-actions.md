@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Lär dig mer om reparationsåtgärder i automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634646"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804821"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Visa väntande eller slutförda reparationsåtgärder efter en automatisk undersökning i Office 365
 
-## <a name="approve-or-reject-pending-actions"></a>Godkänna (eller avvisa) väntande åtgärder
 
 ![AIR undersökningar åtgärd sida](../../media/air-investigationactionspage.png)
+
+## <a name="approve-or-reject-pending-actions"></a>Godkänna (eller avvisa) väntande åtgärder
 
 När du visar [information om en undersökning](air-view-investigation-results.md)kan du godkänna eller avvisa väntande reparationsåtgärder. Vi rekommenderar att du gör detta så snart som möjligt så att dina automatiska undersökningar slutförs.
 
@@ -44,8 +45,8 @@ När du visar [information om en undersökning](air-view-investigation-results.m
 5. Markera ett objekt i listan. (Detta aktiverar knapparna Godkänn och Avvisa.)
 
 6. Granska tillgänglig information för de objekt som du har valt och godkänn eller avvisa sedan åtgärderna. 
- - **Godkänn** tillåter reparation att påbörjas.
- - **Avvisa** vidtar inga ytterligare åtgärder
+   - **Godkänn** tillåter reparation att påbörjas.
+   - **Avvisa** vidtar inga ytterligare åtgärder
 
 ## <a name="next-steps"></a>Nästa steg
 

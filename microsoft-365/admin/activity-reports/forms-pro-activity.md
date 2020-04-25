@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: Lär dig hur du skaffar en aktivitetsrapport från Microsoft Forms Pro med instrumentpanelen Microsoft 365 Reports i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 69938124b1aeb996afd52c119ac61e2e607f871e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781635"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804816"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-rapporter i administrationscentret – formuläraktivitet
+# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Microsoft 365-rapporter i administrationscentret – Forms Pro-aktivitet
 
 Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för produkterna i organisationen. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md).
   

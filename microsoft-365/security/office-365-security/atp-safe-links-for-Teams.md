@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Team kommer nu att ha tillgång till säkra länkar vid tidpunkten för ditt klick. Oavsett om du använder chattar 1-mot-1-chattar, mellan grupper eller i kanaler och flikar, om du har en prenumeration på Office 365 ATP, har du möjlighet att aktivera och använda den här säkerhetsfunktionen.
-ms.openlocfilehash: 88fe9756188eb16a2347d3c0cd4a98b4003ff457
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f20f0adf503e4592d2bd3f3bc9857d08a1e433
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636004"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809002"
 ---
 <!--06/21/2019-->
 
@@ -28,7 +28,7 @@ ms.locfileid: "43636004"
 > [!IMPORTANT]
 > Den här funktionen finns i **Offentlig förhandsversion** för kunder i MICROSOFT Teams Technology Adoption Program (TAP) från och med den 28 februari 2020. Den här anteckningen tas bort från artikeln när säkra länkar för teams är mer allmänt tillgängliga.
 
-Microsoft Teams, ett molnbaserat microsoftprogram för att hantera ditt arbete, använder redan säkra bilagor (för Office 365), men det har nu tillgång till säkra länkar när du klickar. Oavsett om du använder chattar 1-mot-1-chattar, mellan grupper eller i kanaler och flikar, om du har en prenumeration på Office 365 ATP, har du möjlighet att aktivera och använda den här säkerhetsåtgärden.
+Microsoft Teams, ett molnbaserat microsoftprogram för att hantera ditt arbete, använder redan säkra bilagor (för Office 365), men det har nu tillgång till säkra länkar när du klickar. Oavsett om du använder chattar, gruppchattar, kanaler eller flikar, om du har en prenumeration på Office 365 ATP, har du möjlighet att aktivera och använda den här säkerhetsåtgärden. Mer information om licenskrav finns i [Microsoft 365 Licensväg för tjänster på klientnivå.](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
 
 Så här fungerar det: 
 
@@ -51,5 +51,4 @@ Om användaren som skickade länken inte skyddas av Office 365 ATP kan han eller
 Om du klickar på knappen *Gå bakåt* på den här sidan i Teams stängs den (eller kan det leda till att en tom sida som användarna kan stänga ute). Men om du klickar på länken igen kommer det att resultera i en ny bedömning av webbplatsens rykte så att den här sidan visas igen.
 
 > [!NOTE]
->Vissa Microsoft 365-administratörer aktiverar meddelandet **Fortsätt ändå** på blockeringssidan. Men om säkra länkar mäter rykte en webbplats och finner det saknas, bör ingen ytterligare klickning genomföras. Det rekommenderas inte att användare kringgår säkerhetsåtgärder. Vänligen väg in detta i dina överväganden innan du aktiverar Fortsätt ändå. 
-
+> Vissa Microsoft 365-administratörer aktiverar meddelandet **Fortsätt ändå** på blockeringssidan. Men om Safe Links mäter rykte en webbplats och finner det saknas, bör ingen ytterligare klickning genomföras. Det rekommenderas inte att användare kringgår säkerhetsåtgärder. Vänligen väg in detta i dina överväganden innan du aktiverar Fortsätt ändå. 

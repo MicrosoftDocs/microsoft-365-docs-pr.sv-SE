@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor.
+ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630803"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808841"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
@@ -191,7 +191,7 @@ Senaste blogg artiklar om detta ämne:
 
 ## <a name="10-train-users"></a>10: Utbilda användare
 
-När användarna inte känner till hotskyddsfunktioner på jobbet i organisationen kan de bli frustrerade av skyddsfunktioner som uppfattas som långsammare eller hindrar dem från att få sitt arbete gjort. Dessutom, om de vet i förväg vad man ska titta efter när det gäller misstänkta e-postmeddelanden eller webbadresser, kommer de att vara mycket mindre benägna att öppna tvivelaktiga artefakter. Utbildningsanvändare kan spara användarna och säkerhetsoperationsteamet mycket tid och frustration.
+Utbildningsanvändare kan spara användarna och säkerhetsoperationsteamet mycket tid och frustration. Kunniga användare är mindre benägna att öppna bilagor eller klicka på länkar i tvivelaktiga e-postmeddelanden, och de är mer benägna att undvika misstänkta webbplatser. 
 
 Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) ger utmärkt vägledning om hur du skapar en stark kultur av säkerhetsmedvetenhet inom din organisation, inklusive utbildning användare att identifiera phishing-attacker. 
 

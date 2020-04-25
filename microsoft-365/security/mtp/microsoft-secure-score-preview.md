@@ -17,19 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615924"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804774"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (förhandsgranskning)
 
 >[!IMPORTANT]
 >Viss information avser förleasend produkt som kan ändras väsentligt innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som lämnas här.
 
-Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Om du följer rekommendationerna om säkerhetsresultat kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
+Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns i https://security.microsoft.com/securescore säkerhetscentret Microsoft 365.
+
+Om du följer rekommendationerna om säkerhetsresultat kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
 
 Secure Score hjälper organisationer:  
 
@@ -154,9 +156,34 @@ Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition 
 
 ## <a name="whats-new"></a>Vad är nytt? 
 
-För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad som kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
+### <a name="april-21st-2020"></a>21 april 2020
+
+#### <a name="added-azure-active-directory-improvement-action"></a>Åtgärd för förbättrad Azure Active Directory
+
+- Tillåt inte användare att bevilja samtycke till ohanterada program (finns för närvarande i släppt version)
+
+#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Lade till Azure Advanced Threat Protection improvement-åtgärder
+
+- Inaktivera tjänsten Utskriftshanteraren på domänkontrollanter
+- Ändra osäkra Kerberos-delegationer för att förhindra personifiering
+- Skydda och hantera lokala administratörslösenord med Microsoft LAPS
+- Minska risken för lateral rörelsebana för känsliga enheter
+- Ta bort vilande konton från känsliga grupper
+- Ta bort oskyddade SID-historikattribut från entiteter
+- Lösa oskyddade kontoattribut
+- Stoppa exponering för rensa textuppgifter
+- Stoppa äldre protokollkommunikation
+- Stoppa svag chifferanvändning
+
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Stöd för säkerhetsrekommendationer för Microsoft Defender ATP Threat & Vulnerability Management (TVM)
+
+Alla utgivna säkerhetsrekommendationer från TVM är nu tillgängliga.
+
+### <a name="january---march-2020"></a>Januari - mars 2020
+
+#### <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
 
 * Alla nya statistik- och trendersvyer för CISO- och leadnivådiskussioner
 * Nya sätt att spåra och jämföra din poäng
@@ -165,13 +192,13 @@ För att göra Microsoft Secure Score till en bättre representant för din säk
 * Hantera mot dina framtida mål med hjälp av resultatprognoser och planerade åtgärder
 * Och mer!
 
-### <a name="removed-not-scored-and-review-improvement-actions"></a>Borttagna "inte poäng" och "granska" förbättringsåtgärder
+#### <a name="removed-not-scored-and-review-improvement-actions"></a>Borttagna "inte poäng" och "granska" förbättringsåtgärder
 
 En av principerna för Secure Score är att poängen ska vara standardiserade och lätta att relatera till. Att ha förbättringsåtgärder som inte är mätbara eller genomförbara har orsakat förvirring. En Microsoft Secure Score är bara meningsfullt när varje rekommendation kan ha en tydlig effekt på poängen. Förbättringsåtgärder som inte har gjorts är inte mätbara, och översynsförbättringsåtgärder mäts inte enligt samma standard som andra förbättringsåtgärder.
 
 Av dessa skäl har alla förbättringsåtgärder som inte har gjorts eller krävt en granskningskadens tillfälligt tagits bort. Inga åtgärder behövs från din sida.
 
-### <a name="simplification-of-the-point-system"></a>Förenkling av poängsystemet
+#### <a name="simplification-of-the-point-system"></a>Förenkling av poängsystemet
 
 För att standardisera poäng över flera upplevelser har varje åtgärdspoäng för säker poäng uppdaterats till 10 poäng eller mindre. Det är nödvändigt att vara mer konsekvent över den breda paus av säkerhetskontroller som vi har i dag och de som vi kommer att lägga till i framtiden. Även om detta är en betydande förändring och du kommer att se en nedgång i punkt summor, kommer det inte att finnas någon förändring i din säkerhetsposition.
 

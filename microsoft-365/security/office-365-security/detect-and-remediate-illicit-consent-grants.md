@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Läs om hur du känner igen och åtgärdar attacken mot olagliga samtyckesbidrag i Office 365.
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637610"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808979"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Upptäcka och åtgärda bidrag för olagligt samtycke
 
@@ -48,17 +48,18 @@ Du måste söka i **granskningsloggen** för att hitta tecken, även kallade Ind
 
 3. Sök (alla aktiviteter och alla användare) och ange startdatum och slutdatum om det behövs och klicka sedan på **Sök**. 
 
-4. Filtrera resultaten för Medgivande till programmet och Lägg till OAuth2PermissionGrant.
+4. Klicka på **Filtrera resultat** och ange Samtycke till att ansöka i fältet **Aktivitet.**
 
 5. Klicka på resultatet för att se information om aktiviteten. Klicka på **Mer information** om du vill ha information om aktiviteten. Kontrollera om IsAdminContent är inställt på Sant.
 
 > [!NOTE]
-> * Det kan ta från 30 minuter upp till 24 timmar innan motsvarande granskningsloggpost visas i sökresultaten när en händelse inträffar. <br/><br/> Hur lång tid en granskningspost behålls och söks i granskningsloggen beror på din Microsoft 365-prenumeration och specifikt vilken typ av licens som tilldelas en viss användare. Mer information finns i [Granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-Om det här värdet är sant anger det att någon med global administratörsåtkomst kan ha beviljat bred åtkomst till data. Om detta är oväntat, vidta åtgärder för att [bekräfta en attack](#how-to-confirm-an-attack).
+> Det kan ta från 30 minuter upp till 24 timmar innan motsvarande granskningsloggpost visas i sökresultaten när en händelse inträffar. <br/><br/> Hur lång tid en granskningspost behålls och söks i granskningsloggen beror på din Microsoft 365-prenumeration och specifikt vilken typ av licens som tilldelas en viss användare. Mer information finns i [Granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> Om det här värdet är sant anger det att någon med global administratörsåtkomst kan ha beviljat bred åtkomst till data. Om detta är oväntat, vidta åtgärder för att [bekräfta en attack](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Så här bekräftar du en attack
 
-Om du har en eller flera instanser av IOCs som anges ovan, måste du göra ytterligare undersökning för att positivt bekräfta att attacken inträffade. Du kan använda någon av dessa tre metoder för att bekräfta attacken.
+Om du har en eller flera instanser av IOCs som anges ovan, måste du göra ytterligare undersökning för att positivt bekräfta att attacken inträffade. Du kan använda någon av dessa tre metoder för att bekräfta attacken:
 
 - Inventeringsprogram och deras behörigheter med hjälp av Azure Active Directory-portalen. Denna metod är grundlig, men du kan bara kontrollera en användare i taget som kan vara mycket tidskrävande om du har många användare att kontrollera.
 
@@ -158,9 +159,9 @@ När du har identifierat ett program med olagliga behörigheter har du flera sä
 
 - Du kan stänga av integrerade program för din hyresrätt. Detta är ett drastiskt steg som inaktiverar slutanvändares möjlighet att bevilja samtycke på klientomfattande basis. Detta förhindrar att användarna oavsiktligt beviljar åtkomst till ett skadligt program. Detta rekommenderas inte starkt eftersom det allvarligt försämrar användarnas förmåga att vara produktiv med tredjepartsprogram. Du kan göra detta genom att följa stegen i [Aktivera eller inaktivera integrerade appar](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Säkra Microsoft 365 som ett cybersäkerhetsproffs
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
-Din Microsoft 365-prenumeration levereras med en kraftfull uppsättning säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [microsoft 365-säkerhetsfärdplanen – De högsta prioriteterna för de första 30 dagarna, 90 dagarna och längre för](security-roadmap.md) att implementera Microsofts rekommenderade metodtips för att skydda din Microsoft 365-klientorganisation.
+Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [Säkerhetsöversikt för Microsoft 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Microsoft 365-klientorganisation.
 
 - Uppgifter som ska utföras under de första 30 dagarna. De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 

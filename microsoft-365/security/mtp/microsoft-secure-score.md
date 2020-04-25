@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637110"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804753"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -120,9 +120,7 @@ När du väljer en specifik förbättringsåtgärd visas en utfällning. För at
 
 3. Välj **Ignorera** eftersom du har bestämt dig för att acceptera risken och inte anta förbättringsåtgärden. När du ignorerar en förbättringsåtgärd minskas det totala antalet säkra poäng du kan uppnå. Du kan visa den här åtgärden i historiken eller ångra den när som helst.
 
-4. Välj **Granska** eftersom förbättringsåtgärden kräver att du regelbundet granskar en del av din miljö för att få och behålla poäng. Regler för vidarebefordran av postlådor bör till exempel granskas varje vecka för att se till att data inte exfilteras från nätverket. Du behöver inte göra några ändringar, men en åtgärd måste utföras. Om du regelbundet granskar reglerna får du poängen. Om inte, är poängen minskas.
-
-![Exempel på förbättring av säker poäng](../../media/secure-score/secure-score1x450.png) ![Exempel på förbättringsåtgärd för säker poänggranskning](../../media/secure-score/secure-score2x450.png)
+![Exempel på förbättring av säker poäng](../../media/secure-score/secure-score1x450.png)
 
 *Figurerna 2 & 3: Utfällbara förbättringsåtgärder*
 
@@ -137,6 +135,15 @@ Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition 
 ## <a name="whats-new"></a>Vad är nytt?
 
 För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad finns i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>21 april 2020
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Ta bort förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetshållning
+
+För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig tar vi bort följande förbättringsåtgärder.
+
+- Använda IRM-skydd på dokument
+- Tillämpa principer för förebyggande av dataförlust
 
 ### <a name="january---march-2020"></a>Januari - mars 2020
 
