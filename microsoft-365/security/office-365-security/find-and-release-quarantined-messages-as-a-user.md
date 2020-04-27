@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Som Microsoft 365-användare kan du visa, släppa och ta bort dina meddelanden i karantän (meddelanden där du är mottagare och skräppostfiltreringen har satt meddelandet i karantän som skräppost eller massutskick). Du kan visa och hantera dina meddelanden i karantän i Säkerhets- och efterlevnadscenter.
-ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638112"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809006"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>Hitta och släppa meddelanden i karantän som användare
 
@@ -38,7 +38,7 @@ Som användare kan du visa, släppa och ta bort dina meddelanden i karantän dä
 
 - Administratörer kan även [aktivera skräppostaviseringar för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) i principer för skräppostskydd. Användare kan släppa skräppostmeddelanden i karantän men inte nätfiskemeddelanden i karantän direkt från dessa aviseringar. Mer information finns i artikeln om [skräppostaviseringar för slutanvändare i Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Meddelanden som har satts i karantän för nätfiske via e-post med hög konfidens, skadlig kod eller via e-postflödesregler (kallas även transportregler) är endast tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md).
+- Meddelanden som har satts i karantän för nätfiske via e-post med hög konfidens, skadlig kod eller via e-postflödesregler (kallas även transportregler) är endast tillgängliga för administratörer. Nätfiskemeddelanden kan granskas av användare men bara ges ut av administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md).
 
 - Du kan bara släppa ett meddelande och rapportera det som en falsk positiv identifiering (inte skräppost) en gång.
 

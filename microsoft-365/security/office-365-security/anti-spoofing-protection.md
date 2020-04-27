@@ -1,5 +1,5 @@
 ---
-title: Skydd mot förfalskning i Office 365
+title: Skydd mot förfalskning
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,26 +18,26 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 53e671e72922eb337cd5af2cfaa11b3ce3f95399
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: e66a0b7965212ef65663208efd73378d8c14a726
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537527"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805221"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Skydd mot förfalskning i Office 365
+# <a name="anti-spoofing-protection"></a>Skydd mot förfalskning
 
-Om du är en Office 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor, ingår det funktioner i EOP som hjälper dig att skydda din organisation mot falska (förfalskade) avsändare.
+Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor, ingår det funktioner i EOP som hjälper dig att skydda din organisation mot falska (förfalskade) avsändare.
 
 När det gäller att skydda sina användare tar Microsoft hot om nätfiske på allvar. Förfalskning är en vanlig teknik som används av angripare. **Falska meddelanden ser ut att komma från en person eller plats som inte är den verkliga källan**. Metoden används ofta i nätfiskekampanjer som är utformade för att få tag på användaruppgifter. Metoden för förfalskningsskydd i EOP undersöker särskilt förfalskningar av Från-rubriken i meddelandetexten (används för att visa meddelandets avsändare i e-postklienter). När EOP är övertygat om att huvudraden Från är förfalskad identifieras meddelandet som förfalskat.
 
 Här följer de förfalskningsskyddsmetoder som finns tillgängliga i EOP:
 
-- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Office 365](learn-about-spoof-intelligence.md).
+- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Principer för skydd mot nätfiske**: med den inbyggda principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Office 365 Avancerat skydd (ATP) innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Office 365](set-up-anti-phishing-policies.md).
+- **Principer för skydd mot nätfiske**: med den inbyggda principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Office 365 Avancerat skydd (ATP) innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **E-postautentisering**: en integrerad del av allt förfalskningsskydd är användningen av e-postautentisering (även kallat e-postverifiering) genom SPF-, DKIM- och DMARC-poster i DNS. Du kan konfigurera dessa poster för dina domäner så att mål-e-postsystemen kan kontrollera giltigheten i meddelanden som gör anspråk på att komma från avsändare i dina domäner. För inkommande meddelanden kräver Office 365 autentisering av e-post för avsändardomäner. Mer information finns i [E-postautentisering i Office 365](email-validation-and-authentication.md).
+- **E-postautentisering**: en integrerad del av allt förfalskningsskydd är användningen av e-postautentisering (även kallat e-postverifiering) genom SPF-, DKIM- och DMARC-poster i DNS. Du kan konfigurera dessa poster för dina domäner så att mål-e-postsystemen kan kontrollera giltigheten i meddelanden som gör anspråk på att komma från avsändare i dina domäner. För inkommande meddelanden kräver Microsoft 365 autentisering av e-post för avsändardomäner. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
 
 Microsofts förfalskningsskydd distribuerades ursprungligen bara för organisationer med Office 365 Avancerat skydd (ATP). I oktober 2018 lades skydd mot förfalskning till i EOP.
 
@@ -92,11 +92,9 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` tyder på förfalskning inom organisationen.
-
-  - CAT är meddelandets kategori och är normalt stämplat SPM (skräppost) men kan ibland vara HSPM (skräppost med hög konfidens) eller PHISH (nätfiske), beroende på vilka andra typer av mönster som upptäcks i meddelandet.
 
   - SFTY är meddelandets säkerhetsnivå. 9 anger nätfiske, .11 anger förfalskning inom organisationen.
 
@@ -109,19 +107,19 @@ Microsoft skiljer mellan två olika typer av falska meddelanden:
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - Värdet `reason=000` betyder att meddelandet inte har klarat explicit e-postautentisering. `reason=001` betyder att meddelandet inte har klarat implicit e-postautentisering.
+  - `reason=000` betyder att meddelandet inte har klarat explicit e-postautentisering. `reason=001` betyder att meddelandet inte har klarat implicit e-postautentisering.
 
   - SFTY är meddelandets säkerhetsnivå. 9 anger nätfiske, .22 anger förfalskning mellan domäner.
 
-Mer information om värdena för kategoriverifiering och sammansatt verifiering (compauth) som är relaterade till förfalskning finns i [Meddelanderubriker mot skräppost i Office 365](anti-spam-message-headers.md).
+Mer information om värdena för kategori och sammansatt verifiering (compauth) som är relaterade till förfalskning finns i [Meddelandehuvuden för antiskräppost i Microsoft 365](anti-spam-message-headers.md).
 
-Information om hur du konfigurerar DMARC finns i [Använda DMARC för att validera e-post i Office 365](use-dmarc-to-validate-email.md).
+Mer information om DMARC finns i [Använda DMARC för att validera e-post i Microsoft 365](use-dmarc-to-validate-email.md).
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Rapporter på hur många meddelanden som har markerats som falska
 
 EOP-organisationer kan använda rapporten om **Falska identifieringar** i instrumentpanelen för rapporter i Säkerhets- och efterlevnadscenter. Mer information finns i [Rapport om falska identifieringar](view-email-security-reports.md#spoof-detections-report).
 
-Office 365 ATP-organisationen kan använda Hotutforskaren i Säkerhets- och efterlevnadscenter för att visa information om nätfiskeförsök. Mer information finns i [Office 365 undersökning av hot och svar](office-365-ti.md).
+Office 365 ATP-organisationen kan använda Hotutforskaren i Säkerhets- och efterlevnadscenter för att visa information om nätfiskeförsök. Mer information finns i [Undersökning av hot och svar i Microsoft 365](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Problem med förfalskningsskydd
 
@@ -154,7 +152,7 @@ Om du vill se till att e-post från distributionslistor klarar förfalskningskon
 
   - Du kan skapa regler för Inkorgen i e-postklienten för att flytta meddelanden till Inkorgen. Du kan också be administratörerna att konfigurera åsidosättningar som beskrivs i [Använda förfalskningsinformation för att konfigurera tillåtna avsändare av icke autentiserad e-post](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
 
-  - Du kan skapa ett supportärende med Office 365 för att skapa en åsidosättning för distributionslistan för att behandla den som legitim. Mer information finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../admin/contact-support-for-business-products.md).
+  - Du kan skapa ett supportärende med Microsoft 365 för att skapa en åsidosättning för distributionslistan för att behandla den som legitim. Mer information finns i [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../admin/contact-support-for-business-products.md).
 
 Om ingenting annat fungerar kan du rapportera meddelandet som en falsk positiv identifiering till Microsoft. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -162,4 +160,4 @@ Du kan också kontakta din administratör som kan skapa ett supportärende hos M
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Överväganden för skydd mot förfalskning
 
-Om du är en administratör som för närvarande skickar meddelanden till Office 365 måste du se till att e-postmeddelandet autentiseras på rätt sätt. Annars kan det markeras som skräppost eller nätfiske. Mer information finns i [Lösningar för legitima avsändare som skickar icke autentiserad e-post](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+Om du är en administratör som för närvarande skickar meddelanden till Microsoft 365 måste du se till att e-postmeddelandet autentiseras på rätt sätt. Annars kan det markeras som skräppost eller nätfiske. Mer information finns i [Lösningar för legitima avsändare som skickar icke autentiserad e-post](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).

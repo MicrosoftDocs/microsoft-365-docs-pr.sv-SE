@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om de fält och värden för rubriker som läggs till i meddelanden av Exchange Online Protection.
-ms.openlocfilehash: 1bb2468908ef9711242bdb236f7f43f9f6e43eb1
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708589"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805218"
 ---
 # <a name="anti-spam-message-headers"></a>Meddelandehuvuden för antiskräppost
 
@@ -46,7 +46,7 @@ När du har använt meddelanderubrikens information kan du söka efter **X-Foref
 |IPV:CAL|Meddelandet hoppade över skräppostfiltrering eftersom IP-adressen fanns i listan över tillåtna IP-adresser. Mer information finns i [konfigurera anslutningsfilter](configure-the-connection-filter-policy.md).|
 |IPV:NLI|IP-adressen listade inte i någon IP-rykteslista.|
 |LANG|Det språk på vilket meddelandet skrevs, specificerat av landskoden (till exempel ru_RU för ryska).|
-|PTR:\[ReverseDNS\]|PTR-registret (även kallat pekarregistret eller omvänd DNS-adress) för källans IP-adress.|
+|PTR:\[ReverseDNS\]|PTR-posten (även kallad omvänd DNS-sökning) för källans IP-adress.|
 |SCL|Meddelandets SCL (Spam Confidence Level). Ett högre värde innebär att det är mer troligt att meddelandet är skräppost. Mer information finns i [Konfidensnivå för skräppost (SCL)](spam-confidence-levels.md).|
 |SFTY|Meddelandet identifierades som phishing och kommer att markeras med något av följande värden: <ul><li>9.1: Standardvärde. Meddelandet innehåller en URL-adress för nätfiske, kan innehålla annat nätfiske-innehåll eller så kan de ha markerats som nätfiske av ett annat e-postfilter (till exempel lokal Exchange) innan det vidarebefordras till Microsoft 365.</li><li>9.11: [intra-org eller inom organisationen](anti-spoofing-protection.md#different-types-of-spoofing). Meddelande om skydd mot nätfiske där den sändande domänen i rubriken Från: är samma som eller i linje med eller är en del av samma organisation som den mottagande domänen. Säkerhetstipset för förfalskningar inom organisationen läggs till i meddelandet.</li><li>9.19: Domänimitation. Den sändande domänen försöker imitera en skyddad domän (en domän som ägs av mottagarens organisation eller en anpassad domän) som anges i en ATP-skyddsprincip. Säkerhetstipset för domänimitation läggs till i meddelandet (om säkerhetstipset är aktiverat i ATP-skyddsprincipen).</li><li>9.20: Användarimitation. Den sändande användaren försöker imitera en användare i mottagarens organisation eller en skyddad användare som anges i en ATP-skyddsprincip. Säkerhetstipset för imitering av användare läggs till i meddelandet (om säkerhetstipset är aktiverat i ATP-skyddsprincipen).</li><li>9.21: [Förfalskning mellan domäner](anti-spoofing-protection.md#different-types-of-spoofing). Meddelandet gick inte igenom kontroller mot förfalskning och den sändande domänen i rubriken Från: autentiserar inte och är en extern domän. Används i kombination med [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication)).</li><li>9.22: Samma som 9.21, förutom att användaren har en säker avsändare som har åsidosatts.</li><li>9.23: Samma som 9.22, förutom att organisationen har en betrodd användare eller domän som har åsidosatts.</li><li>9.24: Samma som 9.23, förutom att användaren har en Exchange-dataflödesregel (även känt som en transportregel) som har åsidosatts.</li></ul>|
 |SFV:BLK|Filtreringen hoppades över och meddelandet blockerades eftersom det skickades från en adress i användarens lista över spärrade användare i Outlook (användarens lista med blockerade avsändare).<br/></br> Mer information om hur administratörer kan hantera användarens lista med blockerade avsändare finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).|
