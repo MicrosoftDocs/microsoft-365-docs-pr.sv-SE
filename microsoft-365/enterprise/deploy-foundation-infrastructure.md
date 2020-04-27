@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå huvudfaserna i distributionen av en grundläggande infrastruktur för Microsoft 365 för företag i din organisation.
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153850"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638254"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Grundläggande infrastruktur för Microsoft 365 för företag
 
@@ -33,9 +33,9 @@ Du kan använda de här faserna när du planerar för och distribuerar en grundl
 |![Fas 1: Nätverk](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[Fas 1: Nätverk](networking-infrastructure.md)| Ditt nätverk är optimerat för åtkomst till de molnbaserade tjänsterna i Microsoft 365. |
 |![Fas 2: Identitet](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[Fas 2: Identitet](identity-infrastructure.md)| Dina administratörskonton är skyddade, dina användare och grupper är synkroniserade och du har en stark användarautentisering. |
 |![Fas 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fas 3: Windows 10 Enterprise](windows10-infrastructure.md)| Dina befintliga Windows-baserade datorer kan uppgradera till Windows 10 Enterprise och nya enheter installeras med Windows 10 Enterprise. |
-|![Fas 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fas 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Dina befintliga Microsoft Office-användare kan uppgradera till Office 365 ProPlus. |
+|![Fas 4: Microsoft 365-applikationer för företag](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fas 4: Microsoft 365-applikationer för företag](office365proplus-infrastructure.md)| Dina befintliga Microsoft Office-användare kan uppgradera till Microsoft 365-applikationer för företag. |
 |![Fas 5: Hantering av mobila enheter](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fas 5: Hantering av mobila enheter](mobility-infrastructure.md)| Dina enheter kan registreras och hanteras. |
-|![Fas 6: Informationsskydd](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fas 6: Informationsskydd](infoprotect-infrastructure.md)| Säkerhetsfunktionerna i Office 365 är aktiverade och dina etiketter och principer är redo att skydda dokument och e-post. |
+|![Fas 6: Informationsskydd](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fas 6: Informationsskydd](infoprotect-infrastructure.md)| Säkerhetsfunktionerna i Microsoft 365 är aktiverade och dina etiketter och principer är redo att skydda dokument och e-post. |
 
 Faserna inleds med det mest grundläggande (nätverk och identitet) och sedan skapas lager med infrastrukturinställningar och grupper för att:
 
@@ -90,9 +90,9 @@ Du skapar till exempel inställningar för:
 |:-------|:-----|
 | Identitet | Kontosynkronisering och grupper för identitetsbaserade principer för villkorsstyrd åtkomst. |
 | Windows 10 Enterprise | Grupper för att automatiskt uppgradera datorer med Windows 7 eller Windows 8.1 till Windows 10 Enterprise. |
-| Office 365 ProPlus | Grupper för att automatiskt distribuera Office 365 ProPlus till användare med Office 2010, Office 2013 eller Office 2016. |
-| Hantering av mobila enheter | Grupper för enhetsregistrering och enhetsbaserade principer för villkorsstyrd åtkomst. |
-| Informationsskydd | Grupper för Office 365-känslighetsetiketter. |
+| Microsoft 365-applikationer för företag | Grupper för att automatiskt distribuera Microsoft 365-applikationer för företag till användare med Office 2010, Office 2013 eller Office 2016. |
+| Hantering av mobilenheter | Grupper för enhetsregistrering och enhetsbaserade principer för villkorsstyrd åtkomst. |
+| Informationsskydd | Grupper för känslighetsetiketter. |
 
 När du är redo att distribuera de olika delarna av infrastrukturen till användarna ska du:
 
@@ -100,11 +100,11 @@ När du är redo att distribuera de olika delarna av infrastrukturen till använ
 |:-------|:-----|
 | Identitet | Lägga till användarkonton i grupper för identitetsbaserade principer för villkorsstyrd åtkomst. |
 | Windows 10 Enterprise | Lägga till konton i grupper för att automatiskt distribuera Windows 10 Enterprise till användare med Windows 7 eller Windows 8.1. |
-| Office 365 ProPlus | Lägga till användarkonton i grupper för att automatiskt distribuera Office 365 ProPlus till användare med Office 2010, Office 2013 eller Office 2016. |
-| Hantering av mobila enheter | Lägga till konton i grupper för enhetsregistrering och enhetsbaserade principer för villkorsstyrd åtkomst. |
+| Microsoft 365-applikationer för företag | Lägga till användarkonton i grupper för att automatiskt distribuera Microsoft 365-applikationer för företag till användare med Office 2010, Office 2013 eller Office 2016. |
+| Hantering av mobilenheter | Lägga till konton i grupper för registrering av enheter och enhetsbaserade principer för villkorsstyrd åtkomst. |
 | Informationsskydd | Lägga till användarkonton i grupper för känslighetsetiketter. |
 
-När faserna eller delarna av den grundläggande infrastrukturen är klara, testade och pilottestade kan du distribuera installerad programvara, till exempel Windows 10 Enterprise och Office 365 ProPlus, samt molnbaserade tjänster och skydd som enhetsregistrering och principer för villkorsstyrd åtkomst till användarna på det sätt som passar bäst för dina affärsmål och IT-resurser.
+När faserna eller delarna av den grundläggande infrastrukturen är klara, testade och pilottestade kan du distribuera installerad programvara, till exempel Windows 10 Enterprise och Microsoft 365-applikationer för företag, samt molnbaserade tjänster och skydd som enhetsregistrering och principer för villkorsstyrd åtkomst till användarna på det sätt som passar bäst för dina affärsmål och IT-resurser.
 
 ## <a name="deployment-and-project-management-strategies"></a>Strategier för distribution och projektledning
 

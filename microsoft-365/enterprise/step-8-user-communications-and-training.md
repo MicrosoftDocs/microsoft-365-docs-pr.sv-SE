@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Lär dig hur du förbereder slutanvändarna för Windows 10 och Office 365 ProPlus med kommunikation och utbildning för användare.
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Lär dig hur du förbereder slutanvändarna för Windows 10 och Microsoft 365-applikationer för företag med kommunikation och utbildning för användare.
+ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811830"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636753"
 ---
 # <a name="step-8-user-communications-and-training"></a>Steg 8: Kommunikation och utbildning för användare
 
@@ -30,7 +30,7 @@ ms.locfileid: "42811830"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Steg 8: Kommunikation och utbildning för användare</strong></p>
-<p>Kontrollera att användarna får information om nya funktioner och sätt att arbeta när du uppdaterar datorerna till Windows 10 och Office 365 ProPlus. Lär dig hur du kan dra nytta av stöd för införande med Microsoft FastTrack, utbildningsmaterial och kommunikationsmallar, samt nya sätt att övervaka användares acceptans och användande.</p></td>
+<p>Se till att användarna får information om nya funktioner och sätt att arbeta när du uppdaterar datorerna till Windows 10 och Microsoft 365-applikationer för företag. Lär dig hur du kan dra nytta av stöd för införande med Microsoft FastTrack, utbildningsmaterial och kommunikationsmallar, samt nya sätt att övervaka användares acceptans och användande.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ Det positiva är att om du flyttar från Windows 7 och Office 2010 eller Office 
 
 ## <a name="getting-ready-for-new-experiences"></a>Bli redo för nya upplevelser
 
-Om du börjar med Office och ska distribuera Office 365 ProPlus för första gången har du ett bra tillfälle att berätta om fördelarna med att logga in på Office-appar och spara filer på OneDrive- eller SharePoint-platser för att möjliggöra enklare delning, minska förgrening av filer och möjliggöra samredigering i realtid.
+Om du börjar med Office och ska distribuera Microsoft 365-applikationer för företag för första gången har du ett bra tillfälle att berätta om fördelarna med att logga in på Office-appar och spara filer på OneDrive eller SharePoint-platser för att möjliggöra enklare delning, minska förgrening av filer och möjliggöra samredigering i realtid.
 
 Detaljerade mallar för kommunikation och utbildning finns tillgängliga för dessa och andra lokala eller webbläsarbaserade appar, t. ex. Teams och Planner.
 
@@ -61,7 +61,7 @@ Det finns också synliga kontroller för säkerhet och efterlevnad som dina anv�
 
 Om du till exempel har aktiverat multifaktorautentisering så används Azure AD, och skyddar användarnas inloggning på resurser med hjälp av en telefonapp eller PIN-kod för säker åtkomst till tjänster. Azure Information Protection gör det enkelt för användarna att klassificera och märka dokument.
 
-[Konfigurera multifaktorautentisering för Office 365-användare](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Konfigurera multifaktorautentisering för användare](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Det här är bara en fåtal nya funktioner som dina användare kommer att uppleva, och vissa kommer kanske att överraska dem – på ett positivt eller mindre positivt sätt. De här överraskningarna – i synnerhet om de påverkar det normala arbetsflödet – kan resultera i fler samtal och ärenden för dig eller din helpdesk.
 
@@ -129,7 +129,7 @@ Distribuera i en takt som är hanterbar för IT-avdelningen, supportavdelningen,
 
 Förutom de diagnostikdata som du övervakar via analysverktygen kan du även noggrant övervaka användningen av Office 365- och Microsoft 365-tjänster genom detaljerade användningsrapporter av arbetsbelastningen i administrationscentret och med instrumentpaneler för administratörer via Power BI. Det här är bra verktyg som hjälper dig att fastställa och följa upp mål när du skapar nya verktyg för samarbete som Microsoft Teams – eller nya sätt att dela filer, som OneDrive.
 
-Processen för acceptans och införande av ny teknik kommer att fortsätta långt efter att Windows 10 och Office 365 ProPlus har installerats på varje dator i organisationen. Användarna kommer inte heller att ändra sina arbetsmetoder automatiskt om du inte tar dig tid att informera och utbilda dem i de nya funktionerna. Och slutligen, med de nya servicemodeller som erbjuder nya funktioner enligt ett löpande, halvårsbaserat schema för Windows och ett valfritt månatligt schema för Office uppnås ett kontinuerligt kommunikationsflöde.
+Processen för acceptans och införande av ny teknik kommer att fortsätta långt efter att Windows 10 och Microsoft 365-applikationer för företag har installerats på varje dator i organisationen. Användarna kommer inte heller att ändra sina arbetsmetoder automatiskt om du inte tar dig tid att informera och utbilda dem i de nya funktionerna. Och slutligen, med de nya servicemodeller som erbjuder nya funktioner enligt ett löpande, halvårsbaserat schema för Windows och ett valfritt månatligt schema för Office uppnås ett kontinuerligt kommunikationsflöde.
 
 ## <a name="previous-step"></a>Föregående steg 
 

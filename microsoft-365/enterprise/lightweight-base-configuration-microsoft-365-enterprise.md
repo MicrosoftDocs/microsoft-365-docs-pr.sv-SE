@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Använd den här testlabbguiden för att skapa en förenklad testmiljö för att testa Microsoft 365 Enterprise.
-ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 04e63b1c3d9d35bd636041f8be7655ab17b1d165
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42806788"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631615"
 ---
 # <a name="the-lightweight-base-configuration"></a>Den enkla baskonfigurationen
 
@@ -63,7 +63,7 @@ För att starta utvärderingsprenumerationen för Office 365 E5 behöver du för
 5. För steg 4 skriver du inloggningssidan här (markera och kopiera): ![Rad](../media/Common-Images/TableLine.png) 
 6. Skriv användar-ID här: ![Rad](../media/Common-Images/TableLine.png).onmicrosoft.com  
    Anteckna lösenordet som du skrev ned på en säker plats.
-   Det här värdet kommer att kallas för det **globala administratörsnamnet för Office 365**.
+   Det här värdet kommer att kallas för det **globala administratörsnamnet**.
 8. Klicka på **Konfigurera**.
 9. I Office 365 E5-konfigurationen klickar du på **Fortsätt använda *din organisation*.onmicrosoft.com för e-post och inloggning** och klicka sedan på **Avsluta och fortsätt senare**.
 
@@ -73,11 +73,11 @@ Du skapar en utvärderingsprenumeration på Office 365 för att testmiljön ska 
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>Fas 2: Konfigurera utvärderingsprenumerationen för Office 365
 
-I den här fasen konfigurerar du Office 365-prenumerationen med ytterligare användare och tilldelar dem Office 365 E5-licenser.
+I den här fasen konfigurerar du prenumerationen med ytterligare användare och tilldelar dem Office 365 E5-licenser.
   
-Använd anvisningarna i [Ansluta till Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) för att ansluta till Office 365-prenumerationen med Azure Active Directory PowerShell för Graph-modulen från din dator.
+Använd anvisningarna i [Ansluta till Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) för att ansluta till prenumerationen med Azure Active Directory PowerShell för Graph-modulen från datorn.
     
-I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du det globala administratörsnamnet för Office 365 (t.ex. jdoe@contosotoycompany.onmicrosoft.com) och lösenordet.
+I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du det globala administratörsnamnet (t.ex. jdoe@contosotoycompany.onmicrosoft.com) och lösenordet.
   
 Fyll i organisationens namn (t.ex. contosotoycompany), landskoden med två tecken för din plats, ett gemensamt kontolösenord och kör sedan följande kommandon från PowerShell-prompten:
 
@@ -121,7 +121,7 @@ Det kan vara bra att skriva ut den här artikeln för att kunna skriva ned den s
 
 Anteckna dessa värden:
   
-- Det globala administratörsnamnet för Office 365: ![Rad](../media/Common-Images/TableLine.png).onmicrosoft.com (från steg 6 i fas 1)
+- globalt administratörsnamn: ![Rad](../media/Common-Images/TableLine.png).onmicrosoft.com (från steg 6 i fas 1)
     
     Anteckna också lösenordet för det här kontot på en säker plats.
     
@@ -291,7 +291,7 @@ Anslut sedan WIN10-datorn till Azure AD-klienten för din Microsoft 365 E5-prenu
     
 6. Stäng inställningsfönstret.
     
-Installera därefter Office 365 ProPlus på WIN10-datorn.
+Installera sedan Microsoft 365-applikationer för företag på WIN10-datorn.
   
 1. Öppna webbläsaren Microsoft Edge och logga in på Office-portalen med autentiseringsuppgifterna för ditt globala administratörskonto. Mer information finns i [Så här loggar du in i Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -309,7 +309,7 @@ Det här omfattar den WIN10-dator som har:
 
 - Anslutit till Azure AD-klienten för din Microsoft 365 E5-prenumeration.
 - Registrerats som en Azure AD-enhet i Microsoft Intune (EMS).
-- Har Office 365 ProPlus installerat.
+- Har Microsoft 365-applikationer för företag installerat.
   
 Nu är du redo att experimentera med fler funktioner i [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   
@@ -322,7 +322,7 @@ Utforska dessa ytterligare uppsättningar testlabbguider:
 - [Informationsskydd](m365-enterprise-test-lab-guides.md#information-protection)
    
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 

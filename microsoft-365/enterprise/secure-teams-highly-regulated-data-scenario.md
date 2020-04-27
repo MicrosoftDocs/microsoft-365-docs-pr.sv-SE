@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Skapa ett säkert team för att lagra dina mest värdefulla och känsliga filer.
-ms.openlocfilehash: aeb3662d6c8a21cbd56d983515913750fd5259f1
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 95c0fc4177f2a16fc79dd0833809f4405e8cdda9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631399"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams för strikt reglerade data
 
-I den här artikeln får du rekommendationer och anvisningar om hur du konfigurerar ett privat team i Microsoft Teams som låser åtkomsten till Teams-funktioner – till exempel chattar, möten och filer – till endast medlemmar och ägare av Office 365-gruppen för teamet. 
+I den här artikeln får du rekommendationer och anvisningar om hur du konfigurerar ett privat team i Microsoft Teams som låser åtkomsten till Teams-funktioner – till exempel chattar, möten och filer – till endast medlemmar och ägare av Microsoft 365-gruppen för teamet. 
 
-Utöver den privata åtkomst som baseras på Office 365-gruppen beskrivs i artikeln hur du konfigurerar den underliggande privata SharePoint-gruppwebbplatsen, som du når via avsnittet **Filer** i en teamkanal, så att du får den extra säkerhet som krävs för lagring av strikt reglerade data. På SharePoint-gruppwebbplatsen kan du lagra och jobba tillsammans med filer, sidor, en delad kalender, uppgifter, en anteckningsbok och listor.
+Utöver den privata åtkomst som baseras på Microsoft 365-gruppen beskrivs i artikeln hur du konfigurerar den underliggande privata SharePoint-gruppwebbplatsen, som du når via avsnittet **Filer** i en teamkanal, så att du får den extra säkerhet som krävs för lagring av strikt reglerade data. På SharePoint-gruppwebbplatsen kan du lagra och jobba tillsammans med filer, sidor, en delad kalender, uppgifter, en anteckningsbok och listor.
 
 >[!Note]
 > Ett liknande scenario med SharePoint finns [här](teams-sharepoint-online-sites-highly-regulated-data.md).
@@ -34,13 +34,13 @@ Utöver den privata åtkomst som baseras på Office 365-gruppen beskrivs i artik
 
 De olika elementen för konfiguration av ett team för strikt reglerade data är:
 
-- Ett privat team med en motsvarande Office 365-grupp som har en ägare och medlemsanvändarkonton.
+- Ett privat team med en motsvarande Microsoft 365-grupp som har användarkonton för ägare och medlemmar.
 - Ytterligare säkerhet på den underliggande SharePoint-webbplatsen för teamet som:
   - hindrar medlemmar av webbplatsen från att ge åtkomst till andra,
   - hindrar icke-medlemmar av webbplatsen från att begära åtkomst till webbplatsen.
-- En Office 365-kvarhållningsetikett för den underliggande SharePoint-webbplatsen som automatiskt tillämpas på nya filer på webbplatsen som standardmetod för att definiera kvarhållningsprinciper.
+- En kvarhållningsetikett för den underliggande SharePoint-webbplatsen som automatiskt tillämpas på nya filer på webbplatsen som standardmetod för att definiera kvarhållningsprinciper.
 - En DLP-princip (princip för dataförlustskydd) som använder kvarhållningsetiketten och blockerar användare från att dela eller skicka filer utanför organisationen.
-- En Office 365-känslighetsetikett eller en underetikett för en strikt reglerad etikett som har kryptering aktiverat och samredigeringsbehörighet för teamets Office 365-grupp. Användare tillämpar etiketten eller underetiketten som lagras i avsnittet **Filer** för teamet via menyfältsalternativet **Känslighet** i Word, Excel och PowerPoint.
+- En känslighetsetikett eller en underetikett för en strikt reglerad etikett som har kryptering aktiverat och samredigeringsbehörighet för teamets Microsoft 365-grupp. Användare tillämpar etiketten eller underetiketten som lagras i avsnittet **Filer** för teamet via menyfältsalternativet **Känslighet** i Word, Excel och PowerPoint.
 
 Här är den resulterande konfigurationen med en känslighetsetikett.
 
@@ -76,7 +76,7 @@ Skapa ett privat team med hjälp av [dessa instruktioner](https://support.office
 
 När du skapar ett privat team finns följande standardbehörigheter:
 
-- Office 365-gruppen för teamet (teamgruppen) har gruppägare och gruppmedlemmar.
+- Microsoft 365-gruppen för teamet (teamgruppen) har gruppägare och gruppmedlemmar.
 - För den underliggande SharePoint-webbplatsen (gruppwebbplatsen):
   - Administratörerna för webbplatssamlingar konfigureras för teamgruppens ägare
   - För gruppwebbplatsen: 

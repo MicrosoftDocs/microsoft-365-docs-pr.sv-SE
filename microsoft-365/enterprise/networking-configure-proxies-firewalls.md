@@ -14,13 +14,13 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå och konfigurera webbläsare och gränsenheter för förbikoppling av trafik till betrodda Office 365-platser.
-ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+description: Förstå och konfigurera webbläsare och gränsenheter för förbikoppling av trafik till betrodda Microsoft 365-platser.
+ms.openlocfilehash: 3e0f9cec8d0d1385025289f1a07d2380be34f1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583399"
+ms.locfileid: "43631507"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Steg 4: Konfigurera förbikoppling av trafik
 
@@ -28,13 +28,13 @@ ms.locfileid: "43583399"
 
 ![Fas 1 – nätverk](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Eftersom allmän Internettrafik kan utgöra en risk använder företagsnätverk vanligtvis gränsenheter som proxyservrar, SSL-inspektion, paketinspektionsenheter och system för skydd mot dataförlust. Läs om några av problemen med nätverksavlyssningsenheter i [Använda nätverksenheter eller lösningar från tredje part för Office 365-trafik](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+Eftersom allmän Internettrafik kan utgöra en risk använder företagsnätverk vanligtvis gränsenheter som proxyservrar, SSL-inspektion, paketinspektionsenheter och system för skydd mot dataförlust. Läs om några av problemen med nätverksavlyssningsenheter i [Använda nätverksenheter eller lösningar från tredje part för Microsoft 365-trafik](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 De DNS-domännamn och IP-adresser som används av de molnbaserade tjänsterna i Microsoft 365 är välkända. Dessutom skyddas själva trafiken och tjänsterna med många säkerhetsfunktioner. Eftersom det redan finns skydd på plats behöver dina gränsenheter inte duplicera det. Mellanliggande destinationer och duplicerad säkerhetsbearbetning för Microsoft 365-trafik kan ge dramatiskt försämrade prestanda.
 
 Det första steget för att undvika mellanliggande destinationer och duplicerad säkerhetsbearbetning är att identifiera Microsoft 365-trafik. Microsoft har definierat följande typer av DNS-domännamn och IP-adressintervall, så kallade slutpunkter:
 
-- **Optimera** – Krävs för anslutning till varje Office 365-tjänst och representerar över 75 procent av bandbredden, anslutningarna och datavolymen för Microsoft 365. Dessa slutpunkter representerar Microsoft 365-scenarier som är mest känsliga när det gäller nätverksprestanda, svarstid och tillgänglighet.
+- **Optimera** – Krävs för anslutning till varje Microsoft 365-tjänst och representerar över 75 procent av bandbredden, anslutningarna och datavolymen för Microsoft 365. Dessa slutpunkter representerar Microsoft 365-scenarier som är mest känsliga när det gäller nätverksprestanda, svarstid och tillgänglighet.
 - **Tillåt** – Krävs för anslutning till vissa tjänster och funktioner i Microsoft 365, men dessa slutpunkter är inte lika känsliga för nätverksprestanda och svarstider som slutpunkterna i kategorin Optimera.
  - **Standard** – Representerar tjänster och beroenden för Microsoft 365 som inte kräver någon optimering. Du kan hantera slutpunkterna i kategorin Standard som vanlig Internettrafik.
 
@@ -50,7 +50,7 @@ Här följer rekommendationer för din nätverksinfrastruktur.
 
 ![Rekommendationer för optimering av lokal trafik](../media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
-Gränsenheterna inkluderar brandväggar, SSL-inspektion, paketinspektionsenheter och skydd mot dataförlust. Om du vill konfigurera och uppdatera konfigurationerna för gränsenheter kan du använda ett skript eller ett REST-anrop för att hämta en strukturerad lista med slutpunkter från webbtjänsten för Office 365-slutpunkter. Mer information finns i [Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) (IP-adresser och URL:er för Office 365-webbtjänst).
+Gränsenheterna inkluderar brandväggar, SSL-inspektion, paketinspektionsenheter och skydd mot dataförlust. Om du vill konfigurera och uppdatera konfigurationerna för gränsenheter kan du använda ett skript eller ett REST-anrop för att hämta en strukturerad lista med slutpunkter från webbtjänsten för Office 365-slutpunkter. Mer information finns i artikeln om [webbtjänsten för IP-adresser och URL:er för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 Observera att du bara kringgår normal proxy och nätverkssäkerhetsbearbetning för trafik till slutpunkterna i kategorin Optimera och Tillåt för Microsoft 365. All annan allmän Internettrafik går via proxy och omfattas av din befintliga nätverkssäkerhetsbearbetning.
 
@@ -58,11 +58,11 @@ Observera att du bara kringgår normal proxy och nätverkssäkerhetsbearbetning 
 
 Anslutningar för virtuellt privat nätverk (VPN) används vanligtvis av distansarbetare för att få åtkomst till resurser i företagets intranät. En konventionell VPN-anslutning dirigerar ALL trafik, inklusive Internettrafik, till organisationens intranät. Internettrafiken dirigeras till organisationens gränsnätverk och paketbearbetningsenheter. Denna trafik är utsatt för resor och bearbetningsförseningar som märkbart försämrar prestanda och påverkar din arbetstagares produktivitet. 
 
-Uppdelad tunnel är möjligheten för en VPN-anslutning att dirigera angiven trafik via Internet istället för att skicka den via VPN-anslutningen till ditt intranät. Om du vill ha bästa möjliga prestanda för distansarbetare till kritiska Microsoft 365-tjänster som Teams, SharePoint Online och Exchange Online konfigurerar du VPN-anslutningarna med uppdelad tunnel för att skicka trafik för att optimera kategori Office 365-slutpunkter direkt via Internet. 
+Uppdelad tunnel är möjligheten för en VPN-anslutning att dirigera angiven trafik via Internet istället för att skicka den via VPN-anslutningen till ditt intranät. Om du vill ha bästa möjliga prestanda för distansarbetare till kritiska Microsoft 365-tjänster som Teams, SharePoint Online och Exchange Online konfigurerar du VPN-anslutningarna med delade tunnlar så att trafik skickas till slutpunkter i kategorin Optimera direkt via Internet. 
 
-Detaljerad information finn i [Optimera Office 365-anslutningen för fjärranvändare med uppdelad VPN-tunnel](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+Detaljerad information finns i artikeln om att [optimera anslutningen för fjärranvändare med delade VPN-tunnlar](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
 
-Om du vill testa hur nära du befinner dig i en ingångspunkt för Microsoft globalt nätverk och hur nära din plats som organisationens nätverk ansluter till din Internetleverantör använder du [Office 365 Network Onboarding Tool](https://connectivity.office.com/).
+Om du vill testa hur nära du befinner dig en ingångspunkt för Microsofts globala nätverk och hur nära du är platsen som organisationens nätverk ansluter till din Internetleverantör använder du [Office 365 Network Onboarding Tool](https://connectivity.office.com/).
 
 Som en mellanliggande kontrollpunkt kan du se [avslutsvillkoren](networking-exit-criteria.md#crit-networking-step4) för detta steg.
 
@@ -70,7 +70,7 @@ Som en mellanliggande kontrollpunkt kan du se [avslutsvillkoren](networking-exit
 
 |||
 |:-------|:-----|
-|![Steg 5](../media/stepnumbers/Step5.png)|[Optimera prestanda för klienten och Office 365-tjänsten](networking-optimize-tcp-performance.md) |
+|![Steg 5](../media/stepnumbers/Step5.png)|[Optimera prestanda för klienten och tjänsten](networking-optimize-tcp-performance.md) |
 
 
 

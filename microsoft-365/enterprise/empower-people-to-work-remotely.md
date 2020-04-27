@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Konfigurera infrastrukturen och säkerheten som gör att dina anställda kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 3c4d34e21993f3b0c9327b27dd0a5a14f430b1b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504129"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637510"
 ---
 # <a name="empower-remote-workers"></a>Ge distansarbetare goda förutsättningar
 
@@ -58,14 +58,14 @@ För att möta dessa kriterier för distanspersonal använder du följande Micro
 - Säker åtkomst till resurser
   - Grupper och behörigheter för Teams, SharePoint-webbplatser och OneDrive så att bara autentiserade och tillåtna användare har åtkomst
 - Skydd mot läckta filer
-  - Office 365 DLP-principer
+  - DLP-principer
   - Känslighetsetiketter för kryptering och behörigheter som följer med filer
 - Enhetshantering och säkerhet med Microsoft Intune
   - Registrering av hanterade enheter
   - Appinställningar för personliga enheter
   - Enhets- och apprinciper
 - Produktivitetsappar för enheter
-  - Office 365 ProPlus-appar för samarbete med Teams, SharePoint och OneDrive 
+  - Microsoft 365-applikationer för företag med appar för samarbete med Teams, SharePoint och OneDrive 
 - Windows 10 Enterprise
   - Omfattande säkerhetsfunktioner för att skydda mot cyberattacker och förhindra dataläckage
 - Åtkomst till lokala appar
@@ -108,11 +108,11 @@ Här är konfigurationsresultatet med Windows 10 Enterprise-enheter.
 
 ![Windows 10 Enterprise-element för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
-För [Fas 4: Office 365 ProPlus](office365proplus-infrastructure.md) distribuerar du infrastrukturen för att installera Office 365 ProPlus eller uppgradera ditt nuvarande Office-paket, till exempel Office 2010 eller Office 2013, till Office 365 ProPlus på organisationens enheter. Det här ger dina användare de bästa säkerhets- och samarbetsfunktionerna.
+För [Fas 4: Microsoft 365-applikationer för företag](office365proplus-infrastructure.md) distribuerar du infrastrukturen för att installera Microsoft 365-applikationer för företag eller uppgradera ditt nuvarande Office-paket, till exempel Office 2010 eller Office 2013, till Microsoft 365-applikationer för företag på organisationens enheter. Det här ger dina användare de bästa säkerhets- och samarbetsfunktionerna.
 
-Här är konfigurationsresultatet med Office 365 ProPlus installerat på enheterna.
+Här är konfigurationsresultatet med Microsoft 365-applikationer för företag installerat på enheterna.
 
-![Office 365 ProPlus-element för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![Microsoft 365-applikationer för företag-element för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 För [Fas 5: Hantering av mobila enheter](mobility-infrastructure.md) distribuerar du enhets- och apphantering med Intune för:
 
@@ -126,8 +126,8 @@ Här är konfigurationsresultatet med Intune-registrerade enheter och principer 
  
 För [Fas 6: Informationsskydd](infoprotect-infrastructure.md), utforma och konfigurera skydd för dina digitala tillgångar med:
 
-- Office 365 DLP-principer.
-- Office 365-känslighetsetiketter för kryptering och behörigheter som följer med filer.
+- DLP-principer.
+- Microsoft 365-känslighetsetiketter för kryptering och behörigheter som följer med filer.
 
 Här är konfigurationsresultatet med DLP-principer och känslighetsetiketter markerade.
 
@@ -153,7 +153,7 @@ Här är konfigurationsresultatet med arbetsbelastningar markerade.
  
 ### <a name="deployment-results"></a>Distributionsresultat
 
-Efter distribution av grundinfrastrukturen och arbetsbelastningar och lansering av Windows 10 Enterprise och Office 365 ProPlus gäller följande för distansarbetare:
+Efter distribution av grundinfrastrukturen och arbetsbelastningar och lansering av Windows 10 Enterprise och Microsoft 365-applikationer för företag gäller följande för distansarbetare:
 
 - De omfattas av starkt autentiserings- och identitetsskydd.
 - De har den senaste och säkraste versionen av Windows på sina Windows-enheter.
@@ -205,7 +205,7 @@ Vidareutbilda dina användare efter behov.
 
 ### <a name="user-adoption-results"></a>Användningsresultat
 
-Dina distansarbetare kan använda sina Windows 10 Enterprise-enheter eller andra enheter och Office 365 ProPlus för att komma åt och arbeta med delade Microsoft 365 Enterprise-molntjänster och -resurser i en säker miljö där de möts, skapar och samarbetar i realtid.
+Dina distansarbetare kan använda sina Windows 10 Enterprise-enheter eller andra enheter och Microsoft 365-applikationer för företag för att komma åt och arbeta med delade Microsoft 365 Enterprise-molntjänster och -resurser i en säker miljö där de möts, skapar och samarbetar i realtid.
 
 ## <a name="additional-microsoft-features-to-support-remote-workers"></a>Fler Microsoft-funktioner som har stöd för distansarbetare
 

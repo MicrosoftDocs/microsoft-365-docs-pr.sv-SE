@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera tillbakaskrivning av lösenord i testmiljön för Microsoft 365.'
-ms.openlocfilehash: 8ff6c8c7d2eae735a2572bae1c437502602cfd0b
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: cc71b581730001d8dc021b5074e300fed636e3d9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42810381"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632881"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Tillbakaskrivning av lösenord i testmiljön för Microsoft 365
 
@@ -35,8 +35,8 @@ I den här artikeln beskrivs hur du kan konfigurera Microsoft 365-testmiljön f�
 
 Det finns två faser för att konfigurera detta:
 
-1.  Skapa Microsoft 365-testmiljön för det simulerade företaget med synkronisering av lösenordshash.
-2.  Aktivera tillbakaskrivning av lösenord för TESTLAB AD DS-domänen.
+1.    Skapa Microsoft 365-testmiljön för det simulerade företaget med synkronisering av lösenordshash.
+2.    Aktivera tillbakaskrivning av lösenord för TESTLAB AD DS-domänen.
     
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -51,9 +51,9 @@ Följ först anvisningarna i [Synkronisering av lösenordshash](password-hash-sy
   
 Konfigurationen består av: 
   
-- Utvärderingsversioner eller betalda prenumerationer för Microsoft 365 E5 eller Office 365 E5.
+- Utvärderingsversioner av eller betalda prenumerationer för Microsoft 365 E5 eller Office 365 E5.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för din Microsoft 365- eller Office 365-prenumeration.
+- Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för din Microsoft 365-prenumeration.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Fas 2: Aktivera tillbakaskrivning av lösenord för TESTLAB AD DS-domänen
 
@@ -130,7 +130,7 @@ Konfigurationen består av:
 
 - Utvärderingsversioner av eller betalda prenumerationer på Microsoft 365 E5 eller Office 365 E5 med DNS-domänen TESTLAB.\<ditt domännamn> registrerad.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. 
-- Azure AD Connect körs på APP1 så att listan med konton och grupper synkroniseras från Azure AD-klientorganisationen för din Microsoft 365- eller Office 365-prenumeration till TESTLAB AD DS-domänen. 
+- Azure AD Connect körs på APP1 för att synkronisera listan med konton och grupper från Azure AD-klientorganisationen för din Microsoft 365-prenumeration till TESTLAB AD DS-domänen. 
 - Tillbakaskrivning av lösenord är aktiverat så att användare kan ändra sina lösenord i Azure AD utan att behöva ansluta till det förenklade intranätet.
 
 I steget [Enklare uppdatering av lösenord](identity-add-user-accounts.md#identity-pw-writeback) i Identitet-fasen finns mer information om och länkar till hur du konfigurerar tillbakaskrivning av lösenord i produktion.

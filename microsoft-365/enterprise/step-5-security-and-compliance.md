@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs om viktiga säkerhets- och efterlevnadsöverväganden för Windows och Office.
-ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 003064f521f1a68c01da9d6a2c9fb19eae7d3eaf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807626"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636778"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Steg 5: Överväganden för säkerhet och efterlevnad
 
@@ -30,20 +30,20 @@ ms.locfileid: "42807626"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Steg 5: Överväganden för säkerhet och efterlevnad</strong></p>
-<p>Windows 10 och Office 365 ProPlus ger nya sätt att skydda dina data, enheter och användare, samt möjligheten att snabbt identifiera och reagera på hot. Ta även reda på hur du hanterar vanliga problem som är kopplade till diskkryptering, program mot skadlig kod, samt principer när du flyttar till Windows 10.</p></td>
+<p>Windows 10 och Microsoft 365-applikationer för företag ger nya sätt att skydda dina data, enheter och användare, samt möjligheten att snabbt identifiera och reagera på hot. Ta även reda på hur du hanterar vanliga problem som är kopplade till diskkryptering, program mot skadlig kod, samt principer när du flyttar till Windows 10.</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Säkerhet och efterlevnad är det femte steget i vårt rekommenderade distributionsprocesshjul som omfattar säkerhets- och efterlevnadsöverväganden för Windows 10 och Office 365 ProPlus. Om du vill se en fullständig skrivbordsdistribution kan du besöka [Center för skrivbordsdistribution](https://aka.ms/HowToShift).
+>Säkerhet och efterlevnad är det femte steget i vårt rekommenderade distributionsprocesshjul som omfattar säkerhets- och efterlevnadsöverväganden för Windows 10 och Microsoft 365-applikationer för företag. Om du vill se den fullständiga skrivbordsdistributionsprocessen kan du gå till [Center för skrivbordsdistribution](https://aka.ms/HowToShift).
 >
 
-Nu är det dags att granska alternativ för att anpassa nya säkerhets- och efterlevnadsfunktioner som en del av distributionen av Windows 10 och Office 365 ProPlus, tillsammans med överväganden och vanliga blockerare när du flyttar från tidigare versioner av Windows och Office. Många av de säkerhetsrelaterade funktionerna i Windows 10 driver på bytet till den nyare plattformen. Integrering med molntjänster i Office 365 och identitetsalternativ med hjälp av Azure Active Directory ger dessutom åtkomst till nya och ständigt uppdaterade skydd för dina data, enheter och användare.
+Nu är det dags att granska alternativ för att anpassa nya säkerhets- och efterlevnadsfunktioner som en del av distributionen av Windows 10 och Microsoft 365-applikationer för företag, tillsammans med överväganden och vanliga blockerare när du flyttar från tidigare versioner av Windows och Office. Många av de säkerhetsrelaterade funktionerna i Windows 10 driver på bytet till den nyare plattformen. Integrering med molntjänster och identitetsalternativ med hjälp av Azure Active Directory ger dessutom åtkomst till nya och ständigt uppdaterade skydd för dina data, enheter och användare.
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>Avhjälpa potentiella säkerhetsrelaterade distributionsblockerare
 
-Innan vi förklarar nya funktioner som du kan lägga till när du flyttar över till Windows 10 och Office 365 ProPlus och ansluter dessa miljöer till molnet ska vi börja med några trender vi sett som ofta kan störa distributionsprocessen.
+Innan vi förklarar nya funktioner som du kan lägga till när du flyttar över till Windows 10 och Microsoft 365-applikationer för företag och ansluter dessa miljöer till molnet ska vi börja med några trender vi sett som ofta kan störa distributionsprocessen.
 
 ### <a name="disk-encryption"></a>Diskkryptering
 
@@ -63,7 +63,7 @@ Därför kan dessa program vara känsliga för ändringar vid ett byte till en n
 
 ### <a name="security-policies"></a>Säkerhetsprinciper
 
-De inställningar för grupprinciper i Active Directory som används för äldre versioner av Windows och Office kanske inte kan översättas direkt till Windows 10 och Office 365 ProPlus, och det finns olika överväganden för de senaste säkerhets- och efterlevnadsfunktionerna. Det är en bra idé att använda Microsoft Security Compliance Toolkit för att få en baslinje för säkerhetsprinciperna för aktuella versioner av Windows och Office. Dessutom är det värt att undersöka principerna för hantering av mobila enheter som en del av Microsoft Intune.
+De inställningar för grupprinciper i Active Directory som används för äldre versioner av Windows och Office kanske inte kan översättas direkt till Windows 10 och Microsoft 365-applikationer för företag, och det finns olika överväganden för de senaste säkerhets- och efterlevnadsfunktionerna. Det är en bra idé att använda Microsoft Security Compliance Toolkit för att få en baslinje för säkerhetsprinciperna för aktuella versioner av Windows och Office. Dessutom är det värt att undersöka principerna för hantering av mobila enheter som en del av Microsoft Intune.
 
 ![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
@@ -71,11 +71,11 @@ De inställningar för grupprinciper i Active Directory som används för äldre
 
 ## <a name="new-security-and-compliance-capabilities-in-microsoft-365"></a>Nya funktioner för säkerhet och efterlevnad i Microsoft 365
 
-Vi har angett de överväganden du bör göra för att flytta dina nuvarande skydd framåt och saker du bör vara medveten om innan bytet. Nu ska vi ta en titt på nya funktioner som du kan dra nytta av när du flyttar till Windows 10, Office 365 ProPlus och molnbaserade alternativ från EMS och senare.
+Vi har angett de överväganden du bör göra för att flytta dina nuvarande skydd framåt och saker du bör vara medveten om innan bytet. Nu ska vi ta en titt på nya funktioner som du kan dra nytta av när du flyttar till Windows 10, Microsoft 365-applikationer för företag och molnbaserade alternativ från EMS med mera.
 
 ### <a name="identity-and-access-management"></a>Identitets- och åtkomsthantering
 
-Vi börjar med identitets- och åtkomsthantering. Azure Active Directory är identitetskontrollplanen för appar, enheter och molntjänster och är det moderna sättet att ansluta till Office 365 och andra molntjänster. Med villkorsstyrd åtkomst kan du definiera olika autentiseringskrav baserat på var du loggar in från, vilken enhet du använder och saker som avvikande beteenden.
+Vi börjar med identitets- och åtkomsthantering. Azure Active Directory är identitetskontrollplanen för appar, enheter och molntjänster och är det moderna sättet att ansluta till Microsoft 365 och andra molntjänster. Med villkorsstyrd åtkomst kan du definiera olika autentiseringskrav baserat på var du loggar in från, vilken enhet du använder och saker som avvikande beteenden.
 
 På enhetsnivå kan biometri ge unika identifierare för enklare och säkrare åtkomst till dina enheter och appar – när du går mot målet att eliminera lösenord. Windows Hello tillhandahåller enhetsbaserad multifaktorautentisering. Den använder själva enheten, din PIN-kod eller unika biometriska identifierare, t.ex. ditt ansikte och fingeravtryck, som du kan tillämpa via en princip.
 
@@ -99,7 +99,7 @@ Med molntjänsterna får du ytterligare ett lager av valfritt skydd för att fö
 
 Tillsammans med Microsoft Intelligent Security Graph har du snabbare åtkomst till både information och skydd från nya hot. Här är några exempel på vad du kan dra nytta av, och vi börjar med Office.
 
-**[Dataförlustskydd](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)**, inbyggt i Office 365 ProPlus, informerar användarna om säkerhetsprinciper när högriskinnehåll, t.ex. kreditkortsnummer eller ID-nummer, upptäcks. Principer kan informera eller blockera sändning och delning efter att användare har meddelats.
+**[Dataförlustskydd](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)**, inbyggt i Microsoft 365-applikationer för företag, informerar användarna om säkerhetsprinciper när högriskinnehåll, t.ex. kreditkortsnummer eller ID-nummer, upptäcks. Principer kan informera eller blockera sändning och delning efter att användare har meddelats.
 
 **[Azure information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)** är en kompletterande tjänst som kan användas med Office, så att användarna enkelt kan klassificera och märka Office-filerna med etiketter. Den kan utlösa en automatisk åtgärd på filer med etiketter, t.ex. kryptering eller låsning av delning.
 
@@ -119,7 +119,7 @@ Dessutom finns **[Säkra bifogade filer](https://docs.microsoft.com/office365/se
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fungerar som en molnbaserad hanteringstjänst för mobila scenarier, t.ex. iOS-, Android- och Windows-enheter, och kan nu konfigureras för samtidig hantering för att komplettera och utöka kontroller för specifika arbetsbelastningar som hanteras av Konfigurationshanteraren. En fördel med detta är att enheter som kommer åt skyddade resurser kan krävas att registrera sig för enhetshantering – även ej hanterade, ej domänanslutna eller ej Azure AD-anslutna enheter. Du kan också dra nytta av införandet av en detaljerad konfigurations- och efterlevnadsprincip på operativsystem- och programnivån. Programprinciper och -inställningar kan konfigureras centralt och införas för Office 365 ProPlus och Store-appar i Windows 10 med hjälp av Microsoft Intune.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fungerar som en molnbaserad hanteringstjänst för mobila scenarier, t.ex. iOS-, Android- och Windows-enheter, och kan nu konfigureras för samtidig hantering för att komplettera och utöka kontroller för specifika arbetsbelastningar som hanteras av Konfigurationshanteraren. En fördel med detta är att enheter som kommer åt skyddade resurser kan krävas att registrera sig för enhetshantering – även ej hanterade, ej domänanslutna eller ej Azure AD-anslutna enheter. Du kan också dra nytta av införandet av en detaljerad konfigurations- och efterlevnadsprincip på operativsystem- och programnivån. Programprinciper och -inställningar kan konfigureras centralt och införas för Microsoft 365-applikationer för företag och Store-appar i Windows 10 med hjälp av Microsoft Intune.
 
 ## <a name="next-step"></a>Nästa steg
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Kontrollera att din konfiguration uppfyller Microsoft 365 Enterprise-villkoren för identitetsbaserade tjänster och infrastruktur.
-ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 3706cd84a722e68a8b75274544630719e510345a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42807629"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632547"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fas 2: Avslutsvillkor för identitetsinfrastruktur
 
@@ -33,7 +33,7 @@ Se också [Krav](https://docs.microsoft.com/microsoft-365/enterprise/identity-ac
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatoriskt: dina globala administratörskonton skyddas 
 
-Du har [skyddat dina globala Office 365-administratörskonton](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) för att hindra att autentiseringsuppgifter komprometteras av angripare, vilket kan leda till intrång i din Microsoft 365-prenumeration.
+Du har [skyddat dina globala administratörskonton](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) för att hindra att autentiseringsuppgifter komprometteras av angripare, vilket kan leda till intrång i din Microsoft 365-prenumeration.
 
 Om du hoppar över det här kravet kan dina globala administratörskonton vara sårbara för attacker och intrång, vilket gör det möjligt för en angripare att få tillgång till dina data i hela systemet och hämta, förstöra eller använda dina data i utpressningssyfte.
 
@@ -47,7 +47,7 @@ Använd följande steg för att kontrollera att du har skyddat dina globala admi
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Logga in på Office 365 med vart och ett av kontona från steg 1. Varje inloggning bör kräva Azure-multifaktorautentisering och den starkaste formen av sekundär autentisering som finns tillgänglig i din organisation.
+2. Logga in med vart och ett av kontona från steg 1. Varje inloggning bör kräva Azure-multifaktorautentisering och den starkaste formen av sekundär autentisering som finns tillgänglig i din organisation.
 
 > [!Note]
 > Mer information om hur du installerar Azure Active Directory PowerShell för Graph-moduler och loggar in på Office 365 finns under [Ansluta till Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).
@@ -96,11 +96,11 @@ Om du hoppar över det här alternativet kan användarna bli ombedda att uppge a
 Vid behov kan [Steg 2](identity-secure-your-passwords.md#identity-sso) hjälpa dig med detta alternativ.
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Valfritt: Inloggningsskärmen i Office 365 anpassas för din organisation
+## <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Valfritt: Inloggningsskärmen anpassas för din organisation
 
-Du har använt [Lägga till företagsanpassning på sidorna för inloggning och åtkomst till panelen](https://aka.ms/aadpaddbranding) för att lägga till organisationens varumärke på inloggningssidan för Office 365.
+Du har använt anvisningarna i artikeln om att [lägga till företagsanpassning på sidorna för inloggning och åtkomstpanelen](https://aka.ms/aadpaddbranding) för att lägga till organisationens varumärke på inloggningssidan.
 
-Om du hoppar över det här alternativet visas en allmän inloggningsskärm i Office 365 för dina användare och de kanske inte är säkra på att de loggar in på organisationens webbplats.
+Om du hoppar över det här alternativet visas en allmän inloggningsskärm för dina användare vilket kan leda till att de blir osäkra på om de verkligen loggar in på organisationens webbplats.
 
 Vid behov kan [Steg 2](identity-secure-your-passwords.md#identity-custom-sign-in) hjälpa dig med detta alternativ.
 
@@ -110,17 +110,17 @@ Vid behov kan [Steg 2](identity-secure-your-passwords.md#identity-custom-sign-in
 
 Du har använt [Planera för Azure multifaktorautentisering](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) och [Principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access) för att aktivera Azure multifaktorautentisering (MFA) för dina användarkonton.
 
-Om du hoppar över det här alternativet kommer dina användarkonton att vara sårbara för kompromettering av autentiseringsuppgifter genom cyberangrepp. Om lösenordet till ett användarkonto har komprometterats är alla resurser och funktioner för kontot, t. ex. administratörsroller, tillgängliga för angriparen. Det gör det möjligt för angriparen att kopiera, förstöra eller använda interna dokument och andra data i utpressningssyfte.
+Om du hoppar över det här alternativet kommer dina användarkonton att vara sårbara för kompromettering av autentiseringsuppgifter genom cyberangrepp. Om lösenordet till ett användarkonto har komprometterats är alla resurser och funktioner för kontot, till exempel administratörsroller, tillgängliga för angriparen. Det gör det möjligt för angriparen att kopiera, förstöra eller använda interna dokument och andra data i utpressningssyfte.
 
 Vid behov kan [Steg 3](identity-secure-user-sign-ins.md#identity-mfa) hjälpa dig med detta alternativ.
 
 ### <a name="how-to-test"></a>Så testar man
 
-1.  Skapa ett testanvändarkonto och tilldela dem en licens. 
-2.  Konfigurera multifaktorautentisering med Azure för testanvändarkontot med den extra verifieringsmetoden som du använder för verkliga användarkonton, t. ex. att skicka textmeddelanden till telefonen. 
-3.  Logga in på Office 365-portalen med ditt testanvändarkonto.
-4.  Kontrollera att MFA uppmanar dig om ytterligare verifieringsinformation och -resultat i en lyckad autentisering. 
-5.  Ta bort testanvändarkontot.
+1.    Skapa ett testanvändarkonto och tilldela dem en licens. 
+2.    Konfigurera multifaktorautentisering med Azure för testanvändarkontot med den extra verifieringsmetoden som du använder för verkliga användarkonton, t. ex. att skicka textmeddelanden till telefonen. 
+3.    Logga in på Office 365-portalen med ditt testanvändarkonto.
+4.    Kontrollera att MFA uppmanar dig om ytterligare verifieringsinformation och -resultat i en lyckad autentisering. 
+5.    Ta bort testanvändarkontot.
 
 <a name="crit-identity-ident-prot"></a>
 ## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Valfritt: Azure AD-identitetsskydd är aktiverat för att skydda mot kompromettering av autentiseringsuppgifter (endast Microsoft 365 E5)
@@ -128,10 +128,10 @@ Vid behov kan [Steg 3](identity-secure-user-sign-ins.md#identity-mfa) hjälpa di
 Du har aktiverat Azure AD Identity Protection för:
 
 - Åtgärda potentiella identitetssårbarheter.
-- Upptäck möjliga försök till intrång i autentiseringsuppgifter.
-- Undersök och åtgärda fortlöpande misstänkta identitetstillbud.
+- Upptäcka möjliga försök till intrång i autentiseringsuppgifter.
+- Undersöka och åtgärda fortlöpande misstänkta identitetstillbud.
 
-Om du hoppar över det här alternativet kan du inte upptäcka eller automatiskt bekämpa försök till kompromettering av autentiseringsuppgifter eller undersöka identitetsrelaterade incidenter. Detta gör din organisation potentiellt utsatt för kompromettering av autentiseringsuppgifter och därmed ett hot mot organisationens känsliga data.
+Om du hoppar över det här alternativet kan du inte upptäcka eller automatiskt bekämpa försök till kompromettering av autentiseringsuppgifter eller undersöka identitetsrelaterade incidenter. Detta gör din organisation potentiellt utsatt för kompromettering av autentiseringsuppgifter och innebär ett hot mot organisationens känsliga data.
 
 Vid behov kan [Steg 3](identity-secure-user-sign-ins.md#identity-ident-prot) hjälpa dig med detta alternativ.
 
@@ -148,11 +148,11 @@ Vid behov kan [Steg 3](identity-secure-user-sign-ins.md#identity-ident-prot) hj�
 
 Om du har en befintlig lokal AD DS (Active Directory Domain Services) har du använt Azure AD Connect för att synkronisera användarkonton och -grupper från din lokala AD DS till Azure AD-klientorganisationen.
 
-Med katalogsynkronisering kan användarna logga in på Office 365 och andra Microsoft-molntjänster med samma autentiseringsuppgifter som de använder för att logga in på sina datorer och komma åt lokala resurser.
+Med katalogsynkronisering kan användarna logga in på Microsoft 365 och andra Microsoft-molntjänster med samma autentiseringsuppgifter som de använder för att logga in på sina datorer och komma åt lokala resurser.
 
 Vid behov kan [Steg 4](identity-add-user-accounts.md#identity-sync) hjälpa dig med detta krav.
 
-Om du hoppar över det här kravet kommer du att ha två uppsättningar användarkonton och -grupper:
+Om du hoppar över det här kravet kommer du att ha två uppsättningar användarkonton och grupper:
 
 - Användarkonton och -grupper som finns i din lokala AD DS
 - Användarkonton och -grupper som finns i din Azure AD-klientorganisation
@@ -164,9 +164,9 @@ Verifiera att autentisering med lokala autentiseringsuppgifter fungerar korrekt 
 
 Du kontrollerar att katalogsynkronisering fungerar genom att göra följande:
 
-1.  Skapa en ny testgrupp i AD DS.
-2.  Vänta på synkroniseringstid.
-3.  Kontrollera att namnet på den nya testgruppen visas i Azure AD-klientorganisationen.
+1.    Skapa en ny testgrupp i AD DS.
+2.    Vänta på synkroniseringstid.
+3.    Kontrollera att namnet på den nya testgruppen visas i Azure AD-klientorganisationen.
 
 <a name="crit-identity-sync-health"></a>
 ## <a name="optional-directory-synchronization-is-monitored"></a>Valfritt: Active Directory-synkroniseringen övervakas
@@ -209,11 +209,11 @@ Du testar tillbakaskrivning av lösenord genom att ändra ditt lösenord i Offic
 
 ### <a name="how-to-test"></a>Så testar man
 
-Logga in på Office 365-portalen med ditt användarkontonamn och Azure multifaktorautentisering. Du bör se dina anpassade varumärkeselement på inloggningssidan.
+Logga in på portalen med ditt användarkontonamn och Azure Multi-Factor Authentication. Du bör se dina anpassade varumärkeselement på inloggningssidan.
 
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Valfritt: Självbetjäning av grupphantering har aktiverats för vissa Azure AD-säkerhetsgrupper och Office 365-grupper
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Valfritt: Självbetjäning av grupphantering har aktiverats för vissa Azure AD-säkerhetsgrupper och Microsoft 365-grupper
 
 Du har fastställt vilka grupper som är lämpliga för självbetjäningshantering, instruerat deras ägare i arbetsflöden och ansvarsområden för grupphantering, och [konfigurerat självbetjäningshantering i Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) för dessa grupper.
 
@@ -222,13 +222,13 @@ Om du hoppar över det här alternativet måste alla uppgifter för Azure AD-gru
 Vid behov kan [Steg 5](identity-use-group-management.md#identity-self-service-groups) hjälpa dig med detta alternativ.
 
 ### <a name="how-to-test"></a>Så testar man
-1.  Skapa ett testanvändarkonto för Azure AD med Azure-portalen.
-2.  Logga in med testanvändarkontot och skapa en säkerhetstestgrupp för Azure AD.
-3.  Logga ut och logga sedan in med ditt IT-administratörskonto.
-4.  Konfigurera säkerhetstestgruppen för självbetjäningshantering för testanvändarkontot.
-5.  Logga ut och logga sedan in med ditt testanvändarkonto.
-6.  Använd Azure-portalen för att lägga till medlemmar i säkerhetstestgruppen.
-7.  Ta bort säkerhetstestgruppen och testanvändarkontot.
+1.    Skapa ett testanvändarkonto för Azure AD med Azure-portalen.
+2.    Logga in med testanvändarkontot och skapa en säkerhetstestgrupp för Azure AD.
+3.    Logga ut och logga sedan in med ditt IT-administratörskonto.
+4.    Konfigurera säkerhetstestgruppen för självbetjäningshantering för testanvändarkontot.
+5.    Logga ut och logga sedan in med ditt testanvändarkonto.
+6.    Använd Azure-portalen för att lägga till medlemmar i säkerhetstestgruppen.
+7.    Ta bort säkerhetstestgruppen och testanvändarkontot.
 
 <a name="crit-identity-dyn-groups"></a>
 ## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a>Valfritt: inställningar för dynamiska gruppmedlemskap lägger automatiskt till användarkonton i grupper baserat på användarkontons attribut
@@ -247,10 +247,10 @@ Vid behov kan [Steg 5](identity-use-group-management.md#identity-dyn-groups) hj�
 
 ### <a name="how-to-test"></a>Så testar man
 
-1. Skapa en dynamisk testgrupp i Azure AD med Azure-portalen och konfigurera en regel för avdelningen motsvarande “test1”.
-2. Skapa ett testanvändarkonto i Azure AD och ställ in egenskapen för avdelningen till “test1”.
+1. Skapa en dynamisk testgrupp i Azure AD med Azure-portalen och konfigurera en regel för avdelningen motsvarande ”test1”.
+2. Skapa ett testanvändarkonto i Azure AD och ställ in egenskapen för avdelningen till ”test1”.
 3. Kontrollera egenskaperna för användarkontot för att säkerställa att det har blivit medlem i den dynamiska testgruppen.
-4. Ändra värdet hos avdelningen för testanvändarkontot till “test2”.
+4. Ändra värdet på avdelningsegenskapen för testanvändarkontot till ”test2”.
 5. Kontrollera egenskaperna för användarkontot för att säkerställa att det har inte längre är medlem i den dynamiska testgruppen.
 6. Ta bort den dynamiska testgruppen och testanvändarkontot.
 

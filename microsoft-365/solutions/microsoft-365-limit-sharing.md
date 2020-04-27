@@ -14,12 +14,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Lär dig mer om olika alternativ för att begränsa eller inaktivera delning i Microsoft 365.
-ms.openlocfilehash: e6cce1102af793d38606b929951d20221eba4b12
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: ebeeefa61d9f4fc9fd77b417ccadfaa4308acb38
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42806606"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632601"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Begränsa delning i Microsoft 365
 
@@ -29,7 +29,7 @@ Olika metoder för att dela filer visas i tabellen nedan. Klicka på länken i k
 
 |Delningsmetod|Beskrivning|Begränsningsalternativ|
 |:-------------|:----------|:-------------|
-|[Office 365-grupp eller team](#office-365-group-or-team)|Personer som beviljats åtkomst till ett team i Microsoft Teams eller en grupp i Office 365 har redigeringsbehörighet för filer på den associerade SharePoint-webbplatsen.|Om gruppen eller teamet är privat skickas delningsinbjudningar för att gå med i gruppen till ägaren för godkännande. Administratörer kan inaktivera gäståtkomst för att förhindra att personer utanför organisationen får åtkomst.|
+|[Microsoft 365-grupp eller team](#microsoft-365-group-or-team)|Personer som beviljats åtkomst till ett team i Microsoft Teams eller en grupp i Microsoft 365 har redigeringsbehörighet för filer på den associerade SharePoint-webbplatsen.|Om gruppen eller teamet är privat skickas delningsinbjudningar för att gå med i gruppen till ägaren för godkännande. Administratörer kan inaktivera gäståtkomst för att förhindra att personer utanför organisationen får åtkomst.|
 |[SharePoint-webbplats](#sharepoint-site)|Personer kan beviljas åtkomst som ägare, medlem eller besökare till en SharePoint-webbplats, och får samma åtkomstnivå till filer på webbplatsen.|Webbplatsbehörigheter kan begränsas så att bara webbplatsägare kan dela webbplatsen.|
 |[Dela med vissa personer](#sharing-with-specific-people)|Webbplatsmedlemmar och personer med redigeringsbehörighet kan ge direkt behörighet till filer och mappar eller dela dem med hjälp av länkarna *Vissa personer*.|Webbplatsbehörigheter kan begränsas så att bara webbplatsägare kan dela filer och mappar. I det här fallet skickas direkt åtkomst och länkdelning för *Vissa personer* från webbplatsmedlemmar till webbplatsägaren för godkännande.|
 |[Gästdelning i SharePoint](#sharepoint-guest-sharing)|SharePoint-webbplatsägare och -medlemmar kan dela filer och mappar med personer utanför organisationen.|Gästdelning kan inaktiveras för hela organisationen eller för enskilda webbplatser.|
@@ -41,9 +41,9 @@ Du kan använda de administratörskontroller som beskrivs i den här artikeln f�
 
 Om du vill förstå hur delning används i organisationen [kör du en rapport om fil- och mappdelning](https://docs.microsoft.com/sharepoint/sharing-reports).
 
-## <a name="office-365-group-or-team"></a>Office 365-grupp eller team
+## <a name="microsoft-365-group-or-team"></a>Microsoft 365-grupp eller team
 
-Om du vill begränsa delning i en Office 365-grupp eller ett Microsoft Teams-team är det viktigt att du gör gruppen eller teamet privat. Personer i din organisation kan gå med i en offentlig grupp eller ett team när som helst. Om inte gruppen eller teamet är privat finns det inget sätt att begränsa delningen av gruppen eller dess filer i organisationen.
+Om du vill begränsa delning i en Microsoft 365-grupp eller ett Microsoft Teams-team är det viktigt att du gör gruppen eller teamet privat. Personer i din organisation kan gå med i en offentlig grupp eller ett team när som helst. Om inte gruppen eller teamet är privat finns det inget sätt att begränsa delningen av gruppen eller dess filer i organisationen.
 
 ### <a name="guest-sharing"></a>Gästdelning
 
@@ -54,15 +54,15 @@ Inaktivera gästdelning för Teams
 2. Inaktivera **Tillåt gäståtkomst i Teams**.
 3. Klicka på **Spara**.
 
-Om du vill förhindra gäståtkomst i Office 365-grupper kan du inaktivera inställningarna för gäståtkomst för grupper i administrationscentret för Microsoft 365.
+Om du vill förhindra gäståtkomst i Microsoft 365-grupper kan du inaktivera inställningarna för gäståtkomst för grupper i administrationscentret för Microsoft 365.
 
-Inaktivera gästdelning i Office 365-grupper
+Inaktivera gästdelning i Microsoft 365-grupper
 1. I administrationscentret för Microsoft 365 klickar du på **Inställningar** och klickar sedan på **Inställningar**.
-2. På fliken **Tjänster** klickar du på **Office 365-grupper**.
+2. På fliken **Tjänster** klickar du på **Microsoft 365-grupper**.
 3. Avmarkera kryssrutorna **Låt gruppmedlemmar utanför organisationen få åtkomst till gruppinnehåll** och **Låt gruppägare lägga till personer utanför organisationen i grupper**.
 4. Klicka på **Spara ändringar**.
 
-    ![Skärmbild av delningsinställningarna för Office 365-grupper i administrationscentret för Microsoft 365](../media/office-365-groups-guest-settings-off.png)
+    ![Skärmbild av delningsinställningarna för Microsoft 365-grupper i administrationscentret för Microsoft 365](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > Om du vill förhindra gästdelning för en viss grupp eller ett team kan du göra det med Microsoft PowerShell. Mer information finns i [Blockera gästanvändare från en viss grupp](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group).
@@ -79,7 +79,7 @@ Tillåta delningsinbjudningar endast från angivna domäner
 
 ## <a name="sharepoint-site"></a>SharePoint-webbplats
 
-Du kan begränsa SharePoint-webbplatsdelning till enbart webbplatsägare. Det förhindrar att webbplatsmedlemmar delar webbplatsen. Kom ihåg att om webbplatsen är ansluten till en Office 365-grupp kan gruppmedlemmar bjuda in andra till gruppen och dessa användare får åtkomst till webbplatsen.
+Du kan begränsa SharePoint-webbplatsdelning till enbart webbplatsägare. Det förhindrar att webbplatsmedlemmar delar webbplatsen. Kom ihåg att om webbplatsen är ansluten till en Microsoft 365-grupp kan gruppmedlemmar bjuda in andra till gruppen och dessa användare får åtkomst till webbplatsen.
 
 Begränsa webbplatsdelning till ägare
 1. Klicka på kugghjulsikonen på webbplatsen och klicka sedan på **Webbplatsbehörigheter**.

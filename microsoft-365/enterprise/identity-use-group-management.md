@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Du kan använda grupper för att automatisera hanteringen av vissa administrativa uppgifter.
-ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 047d733dbd586f094612c579f2b1685562c58ed1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42810397"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637042"
 ---
 # <a name="step-5-use-groups-for-management"></a>Steg 5: Använda grupper för hantering
 
@@ -36,7 +36,7 @@ I avsnittet identifierar du de Azure Active Directory-grupper som kan hanteras a
 Användarna kan begära medlemskap i en säkerhetsgrupp och begäran skickas till gruppens ägare, i stället för IT-administratören. Det innebär att den dagliga kontrollen av gruppmedlemskap blir delegerad till team-, projekt- eller företagsägare som förstår gruppens användningsområden och kan hantera medlemskapen.
 
 >[!Note]
->Grupphantering via självbetjäning finns endast för vissa Azure AD-säkerhetsgrupper och Office 365-grupper. Den är inte tillgänglig för e-postaktiverade grupper, distributionslistor eller grupper som har synkroniserats från lokala Active Directory Domain Services (AD DS).
+>Grupphantering via självbetjäning finns endast för Azure AD-säkerhetsgrupper och Microsoft 365-grupper. Den är inte tillgänglig för e-postaktiverade grupper, distributionslistor eller grupper som har synkroniserats från lokala Active Directory Domain Services (AD DS).
 >
 
 Mer information finns i [anvisningarna om att konfigurera en Azure AD-grupp för självbetjäningshantering](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).

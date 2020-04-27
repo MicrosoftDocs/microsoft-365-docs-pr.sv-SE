@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 Enterprise.
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42806278"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636492"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 Enterprise-säkerhet för Contoso Corporation
 
@@ -62,7 +62,7 @@ Contosos säkerhetsadministratörer och IT-avdelning distribuerade många säker
 
   Contosos säkerhetsadministratörer har tilldelat administratörsroller med lägre behörighet för konton utifrån IT-medarbetarens jobbfunktion och ansvarsområden.
 
-  Mer information finns i [Om Office 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Mer information finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA för alla användarkonton
 
@@ -97,7 +97,7 @@ Contosos säkerhetsadministratörer och IT-avdelning distribuerade många säker
 
 - Övervakning och förebyggande av angrepp med undersökning av hot och åtgärder i Office 365 
 
-  Contoso skyddar sina Office 365-användare med [undersökning av hot och åtgärder i Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti). På så sätt kan de enkelt identifiera och åtgärda attacker och förhindra framtida attacker.
+  Contoso skyddar sina användare med [undersökning av hot och svar i Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti). På så sätt kan de enkelt identifiera och åtgärda attacker och förhindra framtida attacker.
 
 - Skydd mot avancerade attacker med Advanced Threat Analytics
 
@@ -107,9 +107,9 @@ Contosos säkerhetsadministratörer och IT-avdelning distribuerade många säker
 
 - Skydda känsliga och strikt reglerade digitala tillgångar med Azure Information Protection-etiketter
 
-  Contoso fastställde tre nivåer av dataskydd och distribuerade [Office 365-känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) som användarna använder för digitala tillgångar. När det gäller affärshemligheter och andra immateriella egendomar använder Contoso underetiketter för känslighet för strikt reglerade data som krypterar innehåll och begränsar åtkomsten till specifika användarkonton och grupper.
+  Contoso fastställde tre nivåer av dataskydd och distribuerade [Microsoft 365-känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) som användarna använder för digitala tillgångar. När det gäller affärshemligheter och andra immateriella egendomar använder Contoso underetiketter för känslighet för strikt reglerade data som krypterar innehåll och begränsar åtkomsten till specifika användarkonton och grupper.
 
-- Förhindra dataläckor i intranätet med dataförlustskydd i Office 365
+- Förhindra dataläckor i intranätet med dataförlustskydd
 
   Contoso har konfigurerat principer för [dataförlustskydd](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) för Exchange Online, SharePoint och OneDrive för företag för att hindra användare från att oavsiktligt eller avsiktligt dela känsliga data.
 

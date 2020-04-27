@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du levererar Office- och LOB-appar.
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636802"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Steg 3: Leverans av Office- och LOB-appar
 
@@ -30,7 +30,7 @@ ms.locfileid: "42811832"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Steg 3: Leverans av Office och verksamhetsspecifika appar</strong></p>
-<p>Kontrollera att dina appar är paketerade och klara för automatisk installation. Ta reda på hur du får nya alternativ för att konfigurera, leverera och hålla Office-apparna uppdaterade med Klicka-och-kör-paketering med Office 365 ProPlus.</p></td>
+<p>Kontrollera att dina appar är paketerade och klara för automatisk installation. Ta reda på hur du får nya alternativ för att konfigurera, leverera och hålla Office-apparna uppdaterade med Klicka-och-kör-paketering med Microsoft 365-applikationer för företag.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42811832"
 >Leverans av Office- och LOB-appar är det tredje steget i vår rekommenderade arbetsprocesshjul som innehåller alternativen för att installera och hantera Office och LOB. För att distributionen ska lyckas ska du inte hoppa över de första två stegen.  Om du vill se den fullständiga skrivbordsdistributionsprocessen kan du gå till [Center för skrivbordsdistribution](https://aka.ms/HowToShift).
 >
 
-Du är nu redo att leverera Office och dina verksamhetsspecifika appar, och det finns ett antal olika sätt att göra det, däribland några spännande nya alternativ. Vissa program är endast tillgängliga som en 32-bitars eller 64-bitars kompilerad version, men andra som Office 365 ProPlus erbjuds både som 32-bitars och 64-bitars inbyggd kompilerad kod, och ett av de största beslut du kommer att göra är vilken version som ska distribueras. Om du vill dra nytta av mer bearbetningskraft och RAM på nya enheter rekommenderar Microsoft att du använder 64-bitarsversionen när det inte finns några 32-bitarsberoenden. Om du vill ta reda på om det finns några problem med tillägget eller filrelaterad kompatibilitet kan du behöva gå tillbaka till Steg 1: beredskap för enheter och appar innan du fortsätter.
+Du är nu redo att leverera Office och dina verksamhetsspecifika appar, och det finns ett antal olika sätt att göra det, däribland några spännande nya alternativ. Vissa program är endast tillgängliga som en 32-bitars eller 64-bitars kompilerad version, medan andra som Microsoft 365-applikationer för företag finns som både 32-bitars och 64-bitars internt kompilerad kod. Ett av de största beslut du kommer att göra är vilken version som ska distribueras. Om du vill dra nytta av mer bearbetningskraft och RAM på nya enheter rekommenderar Microsoft att du använder 64-bitarsversionen när det inte finns några 32-bitarsberoenden. Om du vill ta reda på om det finns några problem med tillägget eller filrelaterad kompatibilitet kan du behöva gå tillbaka till Steg 1: beredskap för enheter och appar innan du fortsätter.
 
 Om inget hindrar dig rekommenderar vi att du använder 64-bitarsversioner av alla appar, t. ex. Microsoft Office. 64-bitars inbyggda kompilerade appar ger bästa möjliga prestanda och är det bästa alternativet.
 
@@ -57,19 +57,19 @@ Verktyg för distribution av programvara, t. ex. Microsoft Endpoint Configuratio
 
 ## <a name="pc-imaging"></a>Datoravbildning
 
-En annan populär metod för att leverera appar i programmet är PC Imaging. I det här fallet är programmen antingen installerade via aktivitetssekvensen eller manuellt på en exempeldator, och sedan registreras en systemavbildning med de program som krävs för installation. Imaging-metoden för att bygga och avbilda kan spara tid när du etablerar nya datorer, men kom ihåg att operativsystem och appar i avbildningen blir inaktiva snabbt. Den kumulativa uppdateringsmodellen i Windows 10 och Office 365 ProPlus hjälper dig med det här problemet, men det löser inte problemet helt. Därför rekommenderar vi en tunn avbildningsmetod där dina program installeras utanför avbildningen vid distributionstillfället.
+En annan populär metod för att leverera appar i programmet är PC Imaging. I det här fallet är programmen antingen installerade via aktivitetssekvensen eller manuellt på en exempeldator, och sedan registreras en systemavbildning med de program som krävs för installation. Imaging-metoden för att bygga och avbilda kan spara tid när du etablerar nya datorer, men kom ihåg att operativsystem och appar i avbildningen blir inaktiva snabbt. Den kumulativa uppdateringsmodellen i Windows 10 och Microsoft 365-applikationer för företag hjälper dig med det här problemet, men det löser inte problemet helt. Därför rekommenderar vi en tunn avbildningsmetod där dina program installeras utanför avbildningen vid distributionstillfället.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-Om du vill ta med Office 365 ProPlus i din avbildning måste du tänka på att det använder en användarspecifik aktivering. Det går inte att föraktivera med systemadministratören. Använd distributionsverktyget för Office för att förinstallera Office på enheten som du vill använda och hoppa över användarinloggningen. När avbildningen är distribuerad kan slutanvändarna logga in med sina Office 365-inloggningsuppgifter och aktivera Office 365 ProPlus.
+Om du vill ta med Microsoft 365-applikationer för företag i din avbildning måste du tänka på att det använder en användarspecifik aktivering. Det kan inte föraktiveras av systemadministratören. Använd distributionsverktyget för Office för att förinstallera Office på enheten för avbildningen och hoppa över användarinloggningen. När avbildningen är distribuerad kan slutanvändarna logga in med sina autentiseringsuppgifter och aktivera Microsoft 365-applikationer för företag.
 
 [Skapa en aktivitetssekvens för att installera ett operativsystem](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Distribuera Office 365 ProPlus som en del av en operativsystemavbildning](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Distribuera Microsoft 365-applikationer för företag som en del av en operativsystemavbildning](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office Klicka-och-kör 
 
-Office 365 ProPlus installeras med Klicka-och-kör, och Klicka-och-kör ersätter MSI-baserade paket i alla versioner av kommande Office 2019-versioner för Windows. Det har en mängd fördelar, bland annat snabbare installationer, snabbare och mer effektiv uppdatering och renare avinstallation. 
+Microsoft 365-applikationer för företag installeras med Klicka-och-kör, och Klicka-och-kör ersätter MSI-baserade paket i alla versioner av kommande Office 2019-versioner för Windows. Det har en mängd fördelar, bland annat snabbare installationer, snabbare och mer effektiv uppdatering och renare avinstallation. 
 
 Program som levererats via Klicka-och-kör körs i en virtuell programmiljö på datorn och samexisterar med andra program utan konflikter De upptar även ungefär hälften av diskutrymmet som skulle upptas som ett MSI-baserat paket. Office-program levereras och hanteras via [distribution verktyg för Office](https://www.microsoft.com/download/details.aspx?id=49117), som är det Office-installationsprogram som krävs för att ladda ned, konfigurera och anpassa dina Office-program. Distributionsverktyget för Office läser en XML-konfigurationsfil som innehåller metadatainstruktioner för hur du konfigurerar och anpassar din Office-installation.
 
@@ -77,15 +77,15 @@ Microsoft rekommenderar att du använder [verktyget Office-anpassning ](https://
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Om du använder Configuration Manager kan du fortfarande använda det för omfattande distribution av Office 365 ProPlus. Configuration Manager (current branch) har inbyggt stöd för det uppdaterade verktyget för Office-anpassning, paketanpassning för Klicka-och-kör under installation och ursprungligt stöd för hantering av programuppdatering efter installationen.
+Om du använder Configuration Manager kan du fortfarande använda det för omfattande distribution av Microsoft 365-applikationer för företag. Configuration Manager (current branch) har inbyggt stöd för det uppdaterade verktyget för Office-anpassning, paketanpassning för Klicka-och-kör under installation och ursprungligt stöd för hantering av programuppdatering efter installationen.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Distributionsguide för Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Guide till distribution av Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Ta bort befintliga MSI-versioner av Office när du uppgraderar till Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Ta bort befintliga MSI-versioner av Office när du uppgraderar till Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Hantera Office 365 ProPlus med Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Hantera Microsoft 365-applikationer för företag med Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Tilldela Office 365-appar till Windows 10-enheter med Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

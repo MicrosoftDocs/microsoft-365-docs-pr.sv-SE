@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Sammanfattning: Konfigurationsrekommendationer för att skydda filer i SharePoint Online och Office 365.'
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: aa6739caa3d3bce97750f0af1faa7e040f84ab7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806040"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637846"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Skydda SharePoint Online-webbplatser och filer
 
@@ -63,9 +63,9 @@ Som framgår av följande:
 
 - Principer för [dataförlustskydd](../../compliance/data-loss-prevention-policies.md) (DLP) är konfigurerade för kvarhållningsetiketterna Känslig och Strikt konfidentiell för att antingen varna eller förhindra användare när de försöker skicka sådana typer av filer utanför organisationen.
 
-- Om det behövs kan du använda [känslighetsetiketter](../../compliance/sensitivity-labels.md) för att skydda mycket konfidentiella filer med kryptering och behörigheter. För Azure Information Protection-kunder kan du använda märkning för Azure Information Protection i Microsoft 365 Efterlevnadscenter, och om du väljer att utföra ytterligare eller avancerad konfiguration synkroniseras dina etiketter med Azure-portalen. Märkning för Azure Information Protection och Office 365-känslighetsetiketter är helt kompatibla med varandra. Det innebär att om du till exempel har innehåll som tilldelats av Azure Information Protection, behöver du inte ändra klassificering eller etikett för innehållet. Alla kunder behöver inte den här skyddsnivån.
+- Om det behövs kan du använda [känslighetsetiketter](../../compliance/sensitivity-labels.md) för att skydda mycket konfidentiella filer med kryptering och behörigheter. För Azure Information Protection-kunder kan du använda märkning för Azure Information Protection i Microsoft 365 Efterlevnadscenter, och om du väljer att utföra ytterligare eller avancerad konfiguration synkroniseras dina etiketter med Azure-portalen. Azure Information Protection-etiketter och känslighetsetiketter är helt kompatibla med varandra. Det innebär att om du till exempel har innehåll som tilldelats av Azure Information Protection, behöver du inte ändra klassificering eller etikett för innehållet. Alla kunder behöver inte den här skyddsnivån.
 
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Inställningar för hela klientorganisationen för SharePoint Online och OneDrive för företag
+## <a name="organization-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Organisationsomfattande inställningar för SharePoint Online och OneDrive för företag
 
 SharePoint Online och OneDrive för företag innehåller företagsomfattande inställningar som påverkar alla webbplatser och användare. Vissa av de här inställningarna kan också justeras på webbplatsnivå, så att de blir mer begränsande (men inte mindre). I det här avsnittet beskrivs inställningar för hela klientorganisationer som påverkar säkerhet och samarbete.
 
@@ -125,11 +125,11 @@ I tabellen nedan sammanfattas konfigurationen för varje gruppwebbplats som besk
 |Kontroller för enhetsåtkomst på webbplatsnivå|Inga ytterligare kontroller.|Inga ytterligare kontroller.|Hindrar användarna från att ladda ned filer till enheter som inte är kompatibla eller icke-domänanslutna. Med det här alternativet tillåts endast webbläsaråtkomst från alla andra enheter.|Blockera nedladdning av filer till enheter som inte är kompatibla eller icke-domänanslutna.|
 |Kvarhållningsetiketter|Intern offentlig|Privat|Känslig|Strikt konfidentiell|
 |DLP-principer|||Varna användare när de skickar filer som är märkta som känsliga utanför organisationen. <br/> Om du vill blockera extern delning av känsliga datatyper, t.ex. kreditkortsnummer eller andra personliga data, kan du konfigurera ytterligare DLP-principer för dessa datatyper (inklusive anpassade datatyper som du konfigurerar).|Hindra användare från att skicka filer som är märkta som mycket konfidentiella utanför organisationen. Tillåta att användare kringgår detta genom att ange en motivering, t.ex. vem de delar filen med.|
-|Känslighetsetiketter||||Använd känslighetsetiketter för att automatiskt kryptera och bevilja behörighet till filer. Skyddet överförs med filerna om de läcks ut. <br/> Office 365 kan inte läsa filer som krypterats med känslighetsetiketter. Dessutom kan DLP-principer bara användas med metadata (inklusive etiketter), men inte innehållet i de här filerna (t.ex. kreditkortsnummer i filer).|
+|Känslighetsetiketter||||Använd känslighetsetiketter för att automatiskt kryptera och bevilja behörighet till filer. Skyddet överförs med filerna om de läcks ut. <br/> Microsoft 365 kan inte läsa filer som krypterats med känslighetsetiketter. Dessutom kan DLP-principer bara användas med metadata (inklusive etiketter), men inte innehållet i de här filerna (t.ex. kreditkortsnummer i filer).|
 
 Information om hur du distribuerar de fyra olika typerna av SharePoint Online-gruppwebbplatser i den här lösningen finns i [Distribuera SharePoint Online-webbplatser för tre skyddsnivåer](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md).
 
-## <a name="office-365-retention-labels"></a>Kvarhållningsetiketter för Office 365
+##  <a name="retention-labels"></a>Kvarhållningsetiketter
 
 Att använda kvarhållningsetiketter rekommenderas för miljöer med känsliga och strikt konfidentiella data. När du har konfigurerat och publicerat kvarhållningsetiketter:
 
@@ -139,7 +139,7 @@ Att använda kvarhållningsetiketter rekommenderas för miljöer med känsliga o
 
 - Du kan använda DLP-principer som baseras på kvarhållningsetiketter.
 
-- Personer i organisationen kan använda en etikett manuellt för innehåll i Outlook på webben, Outlook 2010 och senare, OneDrive för företag, SharePoint Online och Office 365-grupper. Användare vet ofta bäst vilken typ av innehåll de arbetar med, så att de kan klassificera det och använda rätt DLP-princip.
+- Personer i organisationen kan använda en etikett manuellt för innehåll i Outlook på webben, Outlook 2010 och senare, OneDrive för företag, SharePoint Online och Microsoft 365-grupper. Användare vet ofta bäst vilken typ av innehåll de arbetar med, så att de kan klassificera det och använda rätt DLP-princip.
 
 ![Rekommenderad konfiguration för SharePoint-webbplatser](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 

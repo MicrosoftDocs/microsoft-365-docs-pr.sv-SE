@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom processen att migrera versioner av Microsoft Office, Office-servrar och Windows till Microsoft 365 Enterprise för hela organisationen.
-ms.openlocfilehash: 9fd35e4595b19d5ddd3db0f64ea7dedf303d6818
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504059"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631543"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrering till Microsoft 365 Enterprise
 
@@ -25,7 +25,7 @@ De flesta företag och organisationer har en heterogen miljö med flera versione
 
 Om du vill maximera affärsvärdet för Microsoft 365 Enterprise integrerade utbud av produkter, kan du börja planera och implementera en strategi för att migrera versioner av:
 
-- Office-klienten som är installerad på dina datorer till Office 365 ProPlus
+- Office-klienten som är installerad på dina datorer till Microsoft 365-applikationer för företag
 - Office-servrar som är installerade på servrarna till motsvarande tjänster i Office 365
 - Windows 7 och Windows 8.1 på dina enheter till Windows 10 Enterprise
 
@@ -49,7 +49,7 @@ Oavsett om din organisation är stor eller liten, kanske du använder en kombina
 - Har inte anpassats optimalt till att använda Microsofts molntekniker som hjälper dig att transformera din verksamhet digitalt.
 - Innehåller inga nya funktioner.
  
-Microsoft 365 Enterprise innehåller Office 365 ProPlus, en version av Office-klientprodukter som är tillgängliga med en Microsoft 365 Enterprise-licens och installeras och uppdateras från Microsoft Cloud. Office 365 ProPlus innehåller säkerhetsuppdateringar och de senaste funktionerna. Se [Om Office 365 ProPlus i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) för mer information.
+Microsoft 365 Enterprise innehåller Microsoft 365-applikationer för företag, en version av Office-klientprodukter som är tillgänglig med en Microsoft 365 Enterprise-licens och installeras och uppdateras från Microsoft Cloud. Microsoft 365-applikationer för företag innehåller säkerhetsuppdateringar och de senaste funktionerna. Mer information finns i [Om Microsoft 365-applikationer för företag i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -59,9 +59,9 @@ I stället för att uppgradera datorer som kör Office 2007 med Office 2010, Off
 
 1. Skaffa och tilldela en Microsoft 365-licens till dina användare.
 2. Avinstallera Office 2007 på deras datorer.
-3. Installera Office 365 ProPlus, antingen separat eller tillsammans med en IT-distribution. Mer information finns i [Fas 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installera Microsoft 365-applikationer för företag, antingen separat eller tillsammans med en IT-distribution. Mer information finns i [Fas 4: Microsoft 365-applikationer för företag](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installerar uppdateringar automatiskt och kan använda molnbaserade tjänster i Office 365 för förbättrad säkerhet och produktivitet.
+Microsoft 365-applikationer för företag installerar uppdateringar automatiskt och använder molnbaserade tjänster för förbättrad säkerhet och produktivitet.
 
 ### <a name="office-2010"></a>Office 2010
 
@@ -71,9 +71,9 @@ I stället för att uppgradera datorerna som kör Office 2010 med Office 2013 el
 
 1. Skaffa och tilldela en Microsoft 365-licens till dina användare.
 2. Avinstallera Office 2010 på deras datorer.
-3. Installera Office 365 ProPlus, antingen separat eller tillsammans med en IT-distribution. Mer information finns i [Fas 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installera Microsoft 365-applikationer för företag, antingen separat eller tillsammans med en IT-distribution. Mer information finns i [Fas 4: Microsoft 365-applikationer för företag](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installerar både säkerhetsuppdateringar och nya funktionsuppdateringar automatiskt och använder molnbaserade tjänster i Microsoft 365 för förbättrad säkerhet och produktivitet.
+Microsoft 365-applikationer för företag installerar både säkerhetsuppdateringar och nya funktionsuppdateringar automatiskt och använder molnbaserade tjänster i Microsoft 365 för förbättrad säkerhet och produktivitet.
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 och Office 2016 
 
@@ -83,9 +83,9 @@ I stället för att fortsätta att uppdatera datorerna med de senaste säkerhets
 
 1. Skaffa och tilldela en Microsoft 365-licens till dina användare.
 2. Avinstallera Office 2013 eller Office 2016 på deras datorer.
-3. Installera Office 365 ProPlus, antingen separat eller tillsammans med en IT-distribution. Mer information finns i [Fas 4: Office 365 ProPlus](office365proplus-infrastructure.md).
+3. Installera Microsoft 365-applikationer för företag, antingen separat eller tillsammans med en IT-distribution. Mer information finns i [Fas 4: Microsoft 365-applikationer för företag](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installerar både säkerhetsuppdateringar och nya funktionsuppdateringar automatiskt och använder molnbaserade tjänster i Microsoft 365 för förbättrad säkerhet och produktivitet.
+Microsoft 365-applikationer för företag installerar både säkerhetsuppdateringar och nya funktionsuppdateringar automatiskt och använder molnbaserade tjänster i Microsoft 365 för förbättrad säkerhet och produktivitet.
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Migrering för Microsoft Office-serverprodukter
 
@@ -162,7 +162,7 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 Se hur IT-experter på Microsoft migrerade företaget till Microsoft 365 Enterprise med följande resurser: 
 
-- [Distribuera och uppdatera Microsoft Office 365 ProPlus](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [Distribuera och uppdatera Microsoft 365-applikationer för företag](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migrerar 150 000 postlådor till Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint till molnet: Se hur Microsoft har utfört sin egen migrering](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Distribution av Windows 10 på Microsoft som en på-plats-uppgradering](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)

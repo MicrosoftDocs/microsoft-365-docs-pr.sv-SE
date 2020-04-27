@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Gå igenom processen med planering, distribution och användning av SharePoint i hela organisationen.
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "42812215"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636922"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Distribuera SharePoint och OneDrive för Microsoft 365 Enterprise
 
@@ -93,8 +93,8 @@ Förbered för din SharePoint-distribution med hjälp av [Migrera till SharePoin
 
 Om du vill lära dig mer om säkerhet i SharePoint kan du se följande resurser:
 
--   [Hur SharePoint och OneDrive skyddar dina data i molnet](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [Datakryptering i OneDrive och SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [Hur SharePoint och OneDrive skyddar dina data i molnet](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [Datakryptering i OneDrive och SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>Resultat
 
@@ -155,8 +155,8 @@ När distributionen till hela organisationen är klar måste du fortsätta att t
 
 Här är några förslag på aktiviteter:
 
-- Allmänna metodtips för användning av molntjänster finns i [Framgångsfaktorer för Office 365](https://aka.ms/successfactors). 
-- Information om hur du kan använda Office 365 i organisationen finns i [Aktivitetsrapporter i Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Om du inte är en global Office 365-administratör i din organisation ber du någon som är global administratör att ge ditt användarkonto behörighet att läsa rapporter så att du kan komma åt aktivitetsrapporterna.
+- Allmänna metodtips för användning av molntjänster finns i [Framgångsfaktorer för Microsoft 365](https://aka.ms/successfactors). 
+- Information om användning av tjänsten i organisationen finns i [Microsoft 365-rapporter i administrationscentret](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports). Om du inte är global administratör i din organisation ber du någon som är global administratör att ge ditt användarkonto behörighet som Rapportläsare så att du kan komma åt aktivitetsrapporterna.
 - Övervaka feedback (via din offentliga kanal i ett centralt Teams-team eller Yammer) om problem eller synpunkter från SharePoint-användarna. Besvara frågor och åtgärda problem så snabbt du kan för att undvika frustrerade användare och visa att du finns där för att hjälpa till med distributionen.
 - Identifiera och stötta duktiga användare och framhäv deras framgångar och föredömliga sätt att använda SharePoint. Visa upp den lyckade användningen som ett gott exempel för övrig personal i organisationen.  Att få bekräftelse av tekniska ledare i en företagsgrupp kan ha ett stort inflytande på ledning och kollegor.
 

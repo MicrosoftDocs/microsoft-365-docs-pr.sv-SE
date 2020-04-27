@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom de förenklade faserna i den grundläggande infrastrukturen för Microsoft 365 för företag för andra organisationer än stora företag.
-ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42811836"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638266"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Grundläggande infrastruktur för Microsoft 365 för företag för andra än stora företag
 
@@ -38,7 +38,7 @@ I den här artikeln beskrivs en förenklad distribution av den grundläggande in
 
 ## <a name="first-set-up-your-subscription"></a>Konfigurera först din prenumeration
 
-Du måste konfigurera DNS-domänerna (Domain Name System) för prenumerationen. Om du redan har en Office 365-prenumeration borde detta vara gjort. Annars följer du anvisningarna i [Lägga till en domän i Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
+Du måste konfigurera DNS-domänerna (Domain Name System) för prenumerationen. Om du redan har en Microsoft 365-prenumeration borde detta vara gjort. Annars följer du anvisningarna i [Lägga till en domän i Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
 
 Därefter måste du konfigurera ytterligare säkerhet för Microsoft 365. Följ anvisningarna i [Konfigurera ökad säkerhet](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
@@ -213,28 +213,28 @@ De nya och markerade Windows 10 Enterprise-elementen inkluderar:
 | ![Volume Licensing Service Center](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Volume Licensing Service Center, som innehåller avbildningar för nya installationer av Windows 10 Enterprise, och tjänsten Windows Update för företag, som innehåller de senaste uppdateringarna. |
 |||
 
-## <a name="phase-4-office-365-proplus"></a>Fas 4: Office 365 ProPlus
+## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Fas 4: Microsoft 365-applikationer för företag
 
-Microsoft 365 för företag innehåller Office 365 ProPlus, prenumerationsversionen av Microsoft Office. Som Office 2016 eller Office 2019 installeras Office 365 ProPlus direkt på dina klientenheter. Office 365 ProPlus får däremot regelbundet uppdateringar som inkluderar nya funktioner. Se [Om Office 365 ProPlus i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) för mer information.
+Microsoft 365 Enterprise innehåller Microsoft 365-applikationer för företag, prenumerationsversionen av Microsoft Office. Som Office 2016 eller Office 2019 installeras Microsoft 365-applikationer för företag direkt på dina klientenheter. Microsoft 365-applikationer för företag får däremot regelbundet uppdateringar som innehåller nya funktioner. Mer information finns i [Om Microsoft 365-applikationer för företag i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
-För andra organisationer än stora företag installerar du Office 365 ProPlus manuellt på enheterna, som kan omfatta Windows-, iOS- och Android-enheter. Detta kan göras som en del av att förbereda en ny enhet för användning, eller av användaren som en del av introduktionsprocessen.
+För andra organisationer än stora företag installerar du Microsoft 365-applikationer för företag manuellt på enheterna, som kan omfatta Windows-, iOS- och Android-enheter. Detta kan göras som en del av att förbereda en ny enhet för användning, eller av användaren som en del av introduktionsprocessen.
 
 I båda fallen loggar administratören eller användaren in på Office 365-portalen på https://portal.office.com. På fliken **Microsoft Office Home** klickar du på **Installera Office** och genomför installationsprocessen.
 
-Funktionsuppdateringar för Office 365 ProPlus laddas ned varje månad av alla datorer där de är installerade. Det finns vanligtvis inget behov av att konfigurera en infrastruktur för distribution av Office 365 ProPlus-uppdateringar i organisationer som inte är stora företag. 
+Funktionsuppdateringar för Microsoft 365-applikationer för företag laddas ned varje månad av alla datorer där de är installerade. Det finns vanligtvis inget behov av att konfigurera en infrastruktur för distribution av uppdateringar för Microsoft 365-applikationer för företag i organisationer som inte är stora företag. 
 
 ### <a name="your-configuration-so-far"></a>Din konfiguration hittills
 
-Här är en visuell sammanfattning av Office 365 ProPlus-fasen med nya element markerade.
+Här är en visuell sammanfattning av fasen för Microsoft 365-applikationer för företag med nya element markerade.
 
-![Din organisation efter Office 365 ProPlus-fasen](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Din organisation efter fasen för Microsoft 365-applikationer för företag](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-De nya och markerade Office 365 ProPlus-elementen inkluderar:
+De nya och markerade elementen för Microsoft 365-applikationer för företag omfattar:
  
 |||
 |:------:|:-----|
-| ![Office 365 ProPlus installerat på enheter](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installerat på enheter, med en lokal bärbar dator som exempel. |
-| ![Office Content Delivery Network (CDN) för Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office Content Delivery Network (CDN) för Office 365 ProPlus, som enheterna har tillgång till för Office 365 ProPlus-uppdateringar. |
+| ![Microsoft 365-applikationer för företag installerat på enheter](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Microsoft 365-applikationer för företag installerat på enheter, med en lokal bärbar dator som exempel. |
+| ![Office Content Delivery Network (CDN) för Microsoft 365-applikationer för företag](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office Content Delivery Network (CDN) för Microsoft 365-applikationer för företag, som enheterna har tillgång till för uppdateringar för Microsoft 365-applikationer för företag. |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>Fas 5: Hantering av mobila enheter
@@ -312,14 +312,14 @@ Baserat på dessa datasäkerhetsnivåer är nästa steg att identifiera och impl
 
 Mer information finns i [Klassificeringstyper i Microsoft 365](infoprotect-configure-classification.md#microsoft-365-classification-types).
 
-Om du använder känslighetsetiketter med behörigheter kan du behöva skapa ytterligare Office 365-säkerhetsgrupper för att definiera vem som får göra vad med e-post och dokument som har tillämpade känslighetsetiketter. 
+Om du använder känslighetsetiketter med behörigheter kan du behöva skapa ytterligare säkerhetsgrupper för att definiera vem som får göra vad med e-post och dokument som har tillämpade känslighetsetiketter. 
 
 Du måste till exempel skapa känslighetsetiketten RESEARCH för att skydda e-post och dokument i forskningsteam. Du fastställer att:
 
 - Forskare måste ha möjlighet att ändra dokument som har markerats med känslighetsetiketten RESEARCH.
 - Medarbetare som inte är forskare bara ska ha möjlighet att visa dokument som har markerats med känslighetsetiketten RESEARCH. 
 
-Det innebär att du måste skapa och hantera två ytterligare Office 365-grupper:
+Det innebär att du måste skapa och hantera två ytterligare Microsoft 365-grupper:
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -388,7 +388,7 @@ För första gången som medarbetarna loggar in på Microsoft 365, instruerar du
 
 1. Logga in på sina enheter med användarkontouppgifterna.
 2. Logga in på Office 365-portalen med hjälp av en webbläsare på https://portal.office.com.
-3. På fliken **Office 365 Home** klickar du på **Installera Office** för att installera Office 365 ProPlus på deras enhet.
+3. På **startfliken för Office 365** klickar du på **Installera Office** för att installera Microsoft 365-applikationer för företag på deras enhet.
 
 ## <a name="end-results"></a>Slutresultat
 
@@ -405,7 +405,7 @@ Efter utbyggnad och konfiguration av din Microsoft 365 för företag-infrastrukt
   - COND-ACCESS-EXCLUDE
   - Lämpliga AD DS- eller Azure AD-säkerhetsgrupper som även är medlemmar i Azure AD-grupperna BASELINE, SENSITIVE och HIGHLY-REGULATED 
   - Arbetsgrupp, avdelning och regionala grupper
-  - Grupper av känslighetsetiketter för Office 365 (efter behov)
+  - Grupper av känslighetsetiketter för Microsoft 365 (efter behov)
 - Principer för villkorsstyrd åtkomst för Azure AD-inloggning som använder Azure AD-grupperna BASELINE, SENSITIVE, HIGHLY-REGULATED och COND-ACCESS-EXCLUDE.
 - Principer för Intune-program och enhetsefterlevnad.
 - Vanliga typer av känslig information (efter behov).
@@ -429,11 +429,11 @@ Efter introduktionen ska varje anställd ha följande:
    - LICENSED
    - Lämpliga AD DS- eller Azure AD-säkerhetsgrupper, som även är medlemmar i Azure AD-grupperna BASELINE, SENSITIVE och HIGHLY-REGULATED för principer för villkorsstyrd åtkomst 
    - Lämplig arbetsgrupp, avdelning och regionala grupper
-   - Grupper av känslighetsetiketter för Office 365 (efter behov)
+   - Grupper av känslighetsetiketter för Microsoft 365 (efter behov)
 - En Windows 10 Enterprise-enhet som:
    - är ansluten till Azure AD-klientorganisationen (endast molnet) eller till både Azure AD-klientorganisationen och AD DS-domänen (hybrid).
    - uppdateras automatiskt med de senaste produkt- och säkerhetsförbättringarna för Windows 10 Enterprise.
-   - har Office 365 ProPlus installerat, som automatiskt uppdateras med de senaste produkt- och säkerhetsförbättringarna för Office-produkter.
+   - har Microsoft 365-applikationer för företag installerat, som automatiskt uppdateras med de senaste produkt- och säkerhetsförbättringarna för Office-produkter.
    - är registrerad i Intune och omfattas av efterlevnads- och appskyddsprinciper för Intune-enheter.
 
 ## <a name="next-step"></a>Nästa steg

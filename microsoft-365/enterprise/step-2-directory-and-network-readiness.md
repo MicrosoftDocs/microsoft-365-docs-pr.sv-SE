@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig att utvärdera katalog- och nätverksberedskap i miljön.
-ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810369"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636814"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Steg 2: Katalog- och nätverksberedskap
 
-Kontrollera att katalog och nätverk är konfigurerade och kan stödja ditt skifte till Windows 10 och Office 365 ProPlus. Det innebär att användarna måste ha Azure Active Directory-tjänster och nätverket måste ha den kapacitet som krävs för att kunna hantera både den normala trafiken och rörelsen av potentiellt stora data när datorerna uppgraderas och användarnas filer, inställningar och program återställs.
+Kontrollera att katalog och nätverk är konfigurerade och kan stöda övergången till Windows 10 och Microsoft 365-applikationer för företag. Det innebär att användarna måste ha Azure Active Directory-tjänster och nätverket måste ha den kapacitet som krävs för att kunna hantera både den normala trafiken och rörelsen av potentiellt stora data när datorerna uppgraderas och användarnas filer, inställningar och program återställs.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +32,7 @@ Kontrollera att katalog och nätverk är konfigurerade och kan stödja ditt skif
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Steg 2: Katalog- och nätverksberedskap</strong></p>
-<p>Molnanslutna tjänster i Office 365 ProPlus och nya distributionsalternativ som Windows Autopilot kräver Azure Active Directory. Ditt nätverk och dina anslutningar är också viktiga när du planerar att flytta Windows-avbildningar, appar, drivrutiner och relaterade filer till datorerna. Lär dig hur nya verktyg och distributionsalternativ minskar och effektiviserar nätverkstrafiken.</p></td>
+<p>Molnanslutna tjänster i Microsoft 365-applikationer för företag och nya distributionsalternativ som Windows Autopilot kräver Azure Active Directory. Ditt nätverk och dina anslutningar är också viktiga när du planerar att flytta Windows-avbildningar, appar, drivrutiner och relaterade filer till datorerna. Lär dig hur nya verktyg och distributionsalternativ minskar och effektiviserar nätverkstrafiken.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -43,17 +43,17 @@ Kontrollera att katalog och nätverk är konfigurerade och kan stödja ditt skif
 
 Katalog- och nätverksberedskapen är grundläggande i att säkerställa en smidig distribution av operativsystem och skrivbord. Precis som med all automatisk distribution är det viktigt att se till att dina filresurser går att nå och att nätverket kan överföra mycket stora filer åt gången. Det kan röra sig om hundratals eller till och med tusentals datorer.
 
-När du övergår till Windows 10 och Office 365 ProPlus måste du se till att den molnbaserade identiteten är konfigurerad med Azure Active Directory. Det är viktigt att inte bara för att aktivera Office 365 ProPlus, utan du kan också dra nytta av moderna etableringslösningar som Windows Autopilot.
+När du övergår till Windows 10 och Microsoft 365-applikationer för företag måste du se till att den molnbaserade identiteten är konfigurerad med Azure Active Directory. Det är viktigt inte bara för att aktivera Microsoft 365-applikationer för företag, utan också för att du då kan dra nytta av moderna etableringslösningar som Windows Autopilot.
 
-I den här artikeln ska vi utforska verktygen och alternativen för att förbereda katalogtjänster, användar- och enhetsbehörigheter, så att de är redo för distribution till Windows 10 och Office 365 ProPlus.
+I den här artikeln ska vi utforska verktygen och alternativen för att förbereda katalogtjänster och användar- och enhetsbehörigheter så att de är redo för distribution till Windows 10 och Microsoft 365-applikationer för företag.
 
 ## <a name="adding-azure-active-directory"></a>Lägga till Azure Active Directory
 
 Om din organisation redan använder Office 365, Exchange Online, Microsoft Intune eller andra Microsoft Online-tjänster, använder du redan Azure Active Directory. I så fall behöver du bara säkerställa att de användare som omfattas av skrivbordsdistributionen finns i din Azure Active Directory och att licenserna har tilldelats.
 
-Om du inte använder Azure Active Directory för närvarande finns det [flera resurser](https://docs.microsoft.com/azure/active-directory/) som hjälper dig att installera det. Du kan vara berättigad till personlig hjälp via Microsoft FastTrack i din Office 365-licens. Mer information om Microsoft FastTrack finns [här](https://fasttrack.microsoft.com).
+Om du inte använder Azure Active Directory för närvarande finns det [flera resurser](https://docs.microsoft.com/azure/active-directory/) som hjälper dig att installera det. Du kan vara berättigad till personlig hjälp via Microsoft FastTrack som en del av din licens. Mer information om Microsoft FastTrack finns [här](https://fasttrack.microsoft.com).
 
-När du har Azure Active Directory på plats kan användarna logga in på och aktivera sina Office 365 ProPlus-appar. Du kan även använda Microsoft Intune eller Windows Autopilot-distribution för att distribuera appar och principer automatiskt.
+När du har Azure Active Directory på plats kan användarna logga in på och aktivera sina appar i Microsoft 365-applikationer för företag. Du kan även använda Microsoft Intune eller Windows Autopilot-distribution för att distribuera appar och principer automatiskt.
 
 ## <a name="network-readiness"></a>Nätverksberedskap
 
@@ -67,7 +67,7 @@ Vid Windows-avbildningar utan anpassning bör du vanligtvis planera för 3 GB pe
 
 ### <a name="software-updates"></a>Programuppdateringar
 
-Du måste planera nätverksbandbredden vid programuppdateringar. Windows 10 och Office 365 ProPlus använder en ny tjänstmodell som levererar månatliga och halvårsvisa uppdateringar. Om du inte har använt den här modellen förut, kan du lära dig mer om hur den fungerar [här](https://docs.microsoft.com/windows/deployment/update/waas-overview).
+Du måste planera nätverksbandbredden vid programuppdateringar. Windows 10 och Microsoft 365-applikationer för företag använder en ny tjänstmodell som levererar månatliga och halvårsvisa uppdateringar. Om du inte har använt den här modellen förut, kan du lära dig mer om hur den fungerar [här](https://docs.microsoft.com/windows/deployment/update/waas-overview).
 
 Den nya tjänstmodellen innehåller funktionsuppdateringar för Windows två gånger om året, uppdateringar av Office halvårskanal och månatliga kvalitetsuppdateringar. Funktionsuppdateringar är vanligtvis 2–4 GB i storlek och uppdateringar av Office halvårskanal är 300–400 MB per uppdatering. Det finns även månatliga kvalitetsuppdateringar. De kan variera från några hundra megabyte till drygt en gigabyte. Det beror på att månatliga uppdateringar är kumulativa, så storleken ökar under tjänstens livstid för varje Windows 10-version. Det finns verktyg som kan hjälpa till att minska mängden data som måste överföras via nätverket när uppdateringar implementeras. Vi kommer att beskriva detta mer detaljerat nedan.
 
@@ -111,19 +111,19 @@ Obs! BranchCache och Peer-cachelagring kompletterar varandra och kan användas t
 
 [BranchCache jämfört med Peer-cachelagring](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Leveransoptimering** Leveransoptimering är en annan peer-to-peer-cachelagring som tillhandahåller nätverksbaserade kontroller av distributioner. Leveransoptimeringen i Windows 10 uppdaterar inbyggda UWP-appar, installerar program från Microsoft Store och programuppdateringar med hjälp av Express Updates. Den fanns redan i tidiga versioner av Windows 10, men den har nyligen integrerats med konfigurationshanteraren för Microsoft Endpoint (aktuell förgrening). Sedan Windows 10 version 1803 innebär de nya konfigurationsalternativen att du kan ange fristående bandbreddsbegränsningar för bakgrundsuppdateringar och förgrundsjobb, t.ex. en programinstallation från Store. Leveransoptimeringen i Windows har också stöd för Office 365 ProPlus i klientuppdateringar, vilka finns i alla Office 365-klientuppdateringskanaler som stöds. Stöd för leveransoptimering i Windows under den initiala installationen av Office 365-klienten kommer snart.  
+**Leveransoptimering** Leveransoptimering är en annan peer-to-peer-cachelagring som tillhandahåller nätverksbaserade kontroller av distributioner. Leveransoptimeringen i Windows 10 uppdaterar inbyggda UWP-appar, installerar program från Microsoft Store och programuppdateringar med hjälp av Express Updates. Den fanns redan i tidiga versioner av Windows 10, men den har nyligen integrerats med konfigurationshanteraren för Microsoft Endpoint (aktuell förgrening). Sedan Windows 10 version 1803 innebär de nya konfigurationsalternativen att du kan ange fristående bandbreddsbegränsningar för bakgrundsuppdateringar och förgrundsjobb, t.ex. en programinstallation från Store. Leveransoptimeringen i Windows har också stöd för Microsoft 365-applikationer för företag under klientuppdateringar, vilka finns i alla klientuppdateringskanaler som stöds. Stöd för leveransoptimering i Windows under den initiala klientinstallationen kommer snart.  
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
-**Ytterligare överväganden för Office 365 ProPlus**
+**Ytterligare överväganden för Microsoft 365-applikationer för företag**
 
-Förutom leveransoptimeringen finns det tre saker som bidrar till att minska belastningen på nätverket vid Office 365 ProPlus-distributioner.
+Förutom leveransoptimeringen finns det tre saker som bidrar till att minska belastningen på nätverket vid distributioner av Microsoft 365-applikationer för företag.
 
-**Binary Delta Compression** Office 365 ProPlus använder Binary Delta Compression för att minska bandbredden som används av programuppdateringar vid uppdatering från den senaste Office 365 ProPlus-versionen till nästa version. Genom att bara hämta de binära nivåändringarna från föregående version, minimeras påverkan från de ökade storlekarna per månad vid kumulativa uppdateringar. Det går att spara hundratals megabyte data per dator varje månad. För att kunna använda den här funktionen kan du inte hoppa över några versioner. Om du gör det måste du ladda ned den fullständiga kumulativa uppdateringen.
+**Binary Delta Compression** Microsoft 365-applikationer för företag använder Binary Delta Compression (komprimering av binärfilsförändring) för att minska bandbredden som används av programuppdateringar vid uppdatering från den senaste Microsoft 365-applikationer för företag-versionen till nästa version. Genom att bara hämta de binära nivåändringarna från föregående version, minimeras påverkan från de ökade storlekarna per månad vid kumulativa uppdateringar. Det går att spara hundratals megabyte data per dator varje månad. För att kunna använda den här funktionen kan du inte hoppa över några versioner. Om du gör det måste du ladda ned den fullständiga kumulativa uppdateringen.
 
 [Ladda ned uppdateringar för Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
-**Outlook-datafiler** Outlook är ofta konfigurerat att cachelagra användarens hela postlåda lokalt för användning offline. I de flesta Windows-distributioner, utom vid på-plats-uppgraderingar, kräver detta att användarens Outlook-datafiler återskapar sig själva efter uppgraderingen. Det här är en automatisk process, men med begränsningarna i Outlook-postlådan som vanligtvis är upp till 100 GB, innebär en ny cachelagring av hela postlådan lokalt för alla användare stora dataöverföringar. Om du vill minska belastningen på nätverket kan du använda en grupprincip för att minska inställningen ”E-post som ska behållas offline”. I Office 365 ProPlus eller Office 2016 är standardvärdet för Outlook inställt på 12 månader. Om du vill minska risken för nätverkspåverkan kan du ställa in offlinecachen på mellan 1 och 6 månader. Att ändra inställningen påverkar inte din onlinepostlådas storlek och hela postlådan kan fortfarande sökas igenom i Outlook när du är online.
+**Outlook-datafiler** Outlook är ofta konfigurerat att cachelagra användarens hela postlåda lokalt för användning offline. I de flesta Windows-distributioner, utom vid på-plats-uppgraderingar, kräver detta att användarens Outlook-datafiler återskapar sig själva efter uppgraderingen. Det här är en automatisk process, men med begränsningarna i Outlook-postlådan som vanligtvis är upp till 100 GB, innebär en ny cachelagring av hela postlådan lokalt för alla användare stora dataöverföringar. Om du vill minska belastningen på nätverket kan du använda en grupprincip för att minska inställningen ”E-post som ska behållas offline”. I Microsoft 365-applikationer för företag eller Office 2016 är standardvärdet för Outlook inställt på 12 månader. Om du vill minska risken för nätverkspåverkan kan du ställa in offlinecachen på mellan 1 och 6 månader. Att ändra inställningen påverkar inte din onlinepostlådas storlek och hela postlådan kan fortfarande sökas igenom i Outlook när du är online.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
@@ -135,7 +135,7 @@ Förutom leveransoptimeringen finns det tre saker som bidrar till att minska bel
 
 [OneDrive-filer på begäran](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
-Om du inte redan har distribuerat OneDrive är skiftet från Windows 7 till Windows 10 en perfekt tidpunkt att aktivera OneDrive och integrera Office 365 ProPlus. Det kan vara en bra idé att börja distribuera samtidigt som du granskar beredskapen för appar och enheter. Detta ger filsynkroniseringen ett försprång innan du börjar flytta Windows-avbildningar och distribuera appar via nätverket.
+Om du inte redan har distribuerat OneDrive är övergången från Windows 7 till Windows 10 en perfekt tidpunkt att aktivera OneDrive och integrera Microsoft 365-applikationer för företag. Det kan vara en bra idé att börja distribuera samtidigt som du granskar beredskapen för appar och enheter. Detta ger filsynkroniseringen ett försprång innan du börjar flytta Windows-avbildningar och distribuera appar via nätverket.
 
 ## <a name="next-step"></a>Nästa steg 
 

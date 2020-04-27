@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Skapa en säker SharePoint-gruppwebbplats för att lagra värdefulla och känsliga filer.
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951988"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636717"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>SharePoint-webbplatser för strikt reglerade data
 
@@ -40,10 +40,10 @@ Ett molnbaserat scenario för Microsoft 365 Enterprise som uppfyller detta affä
 
 - Lagrar filer (dokument, bildspel, kalkylblad osv.) på en SharePoint-gruppwebbplats.
 - Lås webbplatsen för att förhindra:
-  - Åtkomst av användare som inte är medlemmar i webbplatsens Office 365-grupp.
+  - Åtkomst av användare som inte är medlemmar i webbplatsens Microsoft 365-grupp.
   - Webbplatsmedlemmarna från att ge andra personer åtkomst.
   - Icke-medlemmar av webbplatsen från att begära åtkomst till webbplatsen.
-- Konfigurera en Office 365-kvarhållningsetikett för dina SharePoint-webbplatser som ett standardsätt att hindra användare från att skicka filer utanför organisationen.
+- Konfigurera en kvarhållningsetikett för dina SharePoint-webbplatser som ett standardsätt att hindra användare från att skicka filer utanför organisationen.
 - Kryptera de känsligaste filerna på webbplatsen med kryptering som följer med filen.
 - Lägg till behörigheter för de känsligaste filerna så att giltiga inloggningsuppgifter för ett användarkonto som har behörighet måste anges även om de delas utanför webbplatsen.
 
@@ -53,11 +53,11 @@ I följande tabell beskrivs kraven i det här scenariot för en funktion i Micro
 |:-------|:-----|
 | **Krav** | **Microsoft 365 Enterprise-funktion** |
 | Lagra filer | SharePoint-gruppwebbplatser |
-| Lås webbplatsen | Office 365-grupper och behörigheter för SharePoint-gruppwebbplats |
-| Etikettera filerna på webbplatsen | Kvarhållningsetiketter för Office 365 |
-| Blockera användare från att skicka filer utanför organisationen | DLP-principer (dataförlustskydd) i Office 365 |
-| Kryptera alla filer på webbplatsen | Office 365-känslighetsetiketter eller underetiketter |
-| Lägg till behörigheter för webbplatsens filer | Office 365-känslighetsetiketter eller underetiketter |
+| Lås webbplatsen | Microsoft 365-grupper och behörigheter för SharePoint-gruppwebbplats |
+| Etikettera filerna på webbplatsen | Microsoft 365-kvarhållningsetiketter |
+| Blockera användare från att skicka filer utanför organisationen | DLP-principer (dataförlustskydd) |
+| Kryptera alla filer på webbplatsen | Microsoft 365-känslighetsetiketter eller underetiketter |
+| Lägg till behörigheter för webbplatsens filer | Microsoft 365-känslighetsetiketter eller underetiketter |
 |||
 
 Här är ett exempel på en konfiguration för en säker SharePoint-webbplats.
@@ -69,7 +69,7 @@ Det här scenariot kräver att du redan har distribuerat:
 - Fasen [Identitet](identity-infrastructure.md) och steg 1 och 2 av fasen [Informationsskydd](infoprotect-infrastructure.md) i den grundläggande infrastrukturen. 
 - [SharePoint](sharepoint-online-onedrive-workload.md).
 
-I följande faser får du stegvisa instruktioner hur du utformar, konfigurerar och driver på användningen av SharePoint-webbplatser för strikt reglerade data.
+I följande faser får du stegvisa instruktioner om hur du utformar, konfigurerar och driver på användningen av SharePoint-webbplatser för strikt reglerade data.
 
 <a name="poster"></a> En sammanfattning på en sida finns på [affischen SharePoint-webbplatser för strikt reglerade data](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
 
@@ -88,26 +88,26 @@ När du vill skapa en SharePoint-webbplats för strikt reglerade data måste du 
 
 Syftet avgör viktiga konfigurationselement som:
 
-- Office 365-kvarhållningsetiketten som tilldelas dokumentavsnittet på webbplatsen och DLP-principerna för etiketten
-- Inställningarna för en Office 365-underetikett för känslighet som användare tillämpar på mycket känsliga filer som lagras på webbplatsen
+- Kvarhållningsetiketten som tilldelas dokumentavsnittet på webbplatsen och DLP-principerna för etiketten
+- Inställningarna för en underetikett för känslighet som användare tillämpar på mycket känsliga filer som lagras på webbplatsen
 
 När du har fastställt detta använder du inställningarna för att konfigurera webbplatsen i fas 2. 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>Steg 1 Office 365-kvarhållningsetiketter och DLP-principer
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>Steg 1 Microsoft 365-kvarhållningsetiketter och DLP-principer
 
-Office 365-kvarhållningsetiketter tillämpas på dokumentavsnittet på SharePoint-gruppwebbplatsen och är en standardmetod för att klassificera alla filer som lagras på webbplatsen.
+Kvarhållningsetiketter som tillämpas på dokumentavsnittet på SharePoint-gruppwebbplatsen är en standardmetod för att klassificera alla filer som lagras på webbplatsen.
  
-För SharePoint-webbplatser för strikt reglerade data måste du avgöra vilken Office 365-kvarhållningsetikett som ska användas.
+För SharePoint-webbplatser för strikt reglerade data måste du avgöra vilken kvarhållningsetikett som ska användas.
 
-Information om utformning av Office 365-etiketter finns i [Klassificering och etiketter för Office 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
+Information om utformning av etiketter finns i [Klassificering och etiketter för Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Använd DLP-principer för att skydda känslig information och förhindra att den avslöjas oavsiktligt eller avsiktligt. Mer information finns i denna [översikt](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-För SharePoint-webbplatser måste du konfigurera en DLP-princip för Office 365-kvarhållningsetiketten som tilldelats webbplatsen så att användare förhindras att dela filer med externa användare. 
+För SharePoint-webbplatser måste du konfigurera en DLP-princip för kvarhållningsetiketten som tilldelats webbplatsen så att användare förhindras att dela filer med externa användare. 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Steg 2: Din underetikett för känslighet i Office 365
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>Steg 2: Din Microsoft 365-underetikett för känslighet
 
-För att tillhandahålla kryptering och en uppsättning behörigheter till de känsligaste filerna måste användarna använda en Office 365-känslighetsetikett eller underetikett. En underetikett finns under en befintlig etikett. 
+För att tillhandahålla kryptering och en uppsättning behörigheter till de känsligaste filerna måste användarna använda en känslighetsetikett eller underetikett. En underetikett finns under en befintlig etikett. 
 
 Använd en känslighetsetikett när du behöver ett litet antal etiketter för både global användning och enskilda privata team. Använd en underetikett för känslighet när du har ett stort antal etiketter eller vill ordna etiketter för säkra webbplatser under den strikt reglerade etiketten. 
 
@@ -117,14 +117,14 @@ Inställningarna för etiketten eller underetiketten följer med filen. Även om
 
 Du har fastställt följande:
 
-- Lämplig Office 365-kvarhållningsetikett och DLP-principen som associeras med etiketten
-- Inställningarna för Office 365-underetiketten för känslighet som inkluderar kryptering och behörigheter
+- Lämplig kvarhållningsetikett och DLP-principen som associeras med etiketten
+- Inställningarna för underetiketten för känslighet som inkluderar kryptering och behörigheter
 
 ## <a name="phase-2-configure"></a>Fas 2: Konfigurera
 
 I den här fasen tar du inställningarna som fastställts i fas 1 och använder dem för att skapa en SharePoint-webbplats för strikt reglerade data.
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>Steg 1: Skapa en privat SharePoint-gruppwebbplats med ägare och medlemmar i motsvarande Office 365-grupp
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>Steg 1: Skapa en privat SharePoint-gruppwebbplats med ägare och medlemmar i motsvarande Microsoft 365-grupp
 
 Skapa en privat SharePoint-gruppwebbplats genom att följa [dessa instruktioner]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8).
 
@@ -139,15 +139,15 @@ Konfigurera dessa behörighetsinställningar på SharePoint-webbplatsen.
 
 Med dessa inställningar inaktiveras funktionen för webbplatsgruppens medlemmar att dela webbplatsen med andra medlemmar eller för icke-medlemmar att begära åtkomst till webbplatsen.
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>Steg 3: Konfigurera webbplatsen för en Office 365-kvarhållningsetikett
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>Steg 3: Konfigurera webbplatsen för en kvarhållningsetikett
 
-Följ anvisningarna i [Skydda SharePoint-filer med Office 365-etiketter och DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) när du:
+Följ anvisningarna i [Skydda SharePoint-filer med etiketter och DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) när du:
 
 1. Skapar och publicerar en kvarhållningsetikett för strikt reglerade data (om det behövs).
 2. Konfigurerar webbplatsen för kvarhållningsetiketten som skapats i steg 1.
 3. Skapar en DLP-princip för strikt reglerade data som använder kvarhållningsetiketten som skapats i steg 2 och hindrar användare från att skicka filer utanför organisationen
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>Steg 4: Skapa en Office 365-underetikett för känslighet för webbplatsen
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>Steg 4: Skapa en underetikett för känslighet för webbplatsen
 
 Till skillnad från en känslighetsetikett för strikt reglerade data som alla kan tillämpa på valfri fil behöver en säker webbplats en egen underetikett så att filer som tilldelas underetiketten:
 
@@ -160,16 +160,16 @@ Följ anvisningarna [här](https://docs.microsoft.com/microsoft-365/compliance/e
 
 - Namnet på etiketten eller underetiketten innehåller namnet på webbplatsen för enkel koppling när etiketten eller underetiketten tilldelas en fil.
 - Kryptering är aktiverat.
-- Webbplatsgruppen har samredigeringsbehörighet
+- Webbplatsgruppen har samredigeringsbehörighet.
 
 ### <a name="configuration-results"></a>Konfigurationsresultat
 
 Du har konfigurerat följande:
 
 - Striktare behörighetsinställningar på SharePoint-webbplatsen
-- En Office 365-kvarhållningsetikett som tilldelats dokumentavsnittet på SharePoint-webbplatsen
-- En DLP-princip för Office 365-kvarhållningsetiketten
-- En Office 365-känslighetsetikett eller en underetikett som användare kan tillämpa på de känsligaste filerna som lagras på webbplatsen. Den krypterar filer och tillåter bara samtidig redigering för medlemmar i webbplatsgruppen. 
+- En kvarhållningsetikett som tilldelats dokumentavsnittet på SharePoint-webbplatsen
+- En DLP-princip för kvarhållningsetiketten
+- En känslighetsetikett eller en underetikett som användare kan tillämpa på de känsligaste filerna som lagras på webbplatsen. Den krypterar filer och tillåter bara samtidig redigering för medlemmar i webbplatsgruppen. 
 
 Här är en konfiguration som använder en underetikett av etiketten för strikt reglerade data.
 

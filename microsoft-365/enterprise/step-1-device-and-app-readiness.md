@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du kan utvärdera enhets- och appberedskap i miljön.
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810033"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636862"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Steg 1: Beredskap för enheter och appar
 
@@ -39,7 +39,7 @@ ms.locfileid: "42810033"
 >Beredskap för enheter och appar är det första steget i vårt rekommenderade distributionsprocesshjul, som täcker de holistiska aspekterna av applikationer och maskinvarukompatibilitet. Om du vill se en fullständig distribution av skrivbordsversionen av kan du gå till [Skrivbordsdistributioncenter](https://aka.ms/HowToShift).
 >
 
-Tidigare var ett enormt hinder för att uppgradera användarens skrivbord och applikations- och maskinvarukompatibilitet. De goda nyheterna när du planerar dina arbetspass till Windows 10 och Office 365 ProPlus, är att i stort sett alla program som skrivits under de senaste 10 åren körs på Windows 10, och alla COM-tillägg och VBA-makron din organisation använde i versioner av Office till och med från Office 2010, kommer att fortsätta att fungera med de senaste versionerna av Office, utan att du behöva göra några ändringar.
+Tidigare var ett enormt hinder för att uppgradera användarens skrivbord och applikations- och maskinvarukompatibilitet. De goda nyheterna när du planerar övergången till Windows 10 och Microsoft 365-applikationer för företag är att i stort sett alla program som skrivits under de senaste 10 åren kan köras på Windows 10. Dessutom kommer alla COM-tillägg och VBA-makron din organisation använde i versioner av Office till och med från Office 2010 att fortsätta att fungera med de senaste versionerna av Office, utan att du behöver göra några ändringar.
 
 Beroende på hur storleken och åldern på din organisation är verifiering av applikation- och maskinvarukompatibilitet troligtvis fortfarande ett viktigt första steg för vår rekommenderade distributionsprocess med 8 faser.
 
@@ -89,7 +89,7 @@ Du kommer att märka att de flesta av de program, drivrutiner och tillägg som i
 
 Du kan även använda Desktop Analytics för att utvärdera problem med webbläsarkompatibilitet, identifiera webbplatser och webbprogram som nås av användare som fortfarande använder ActiveX-kontroller, webbläsartillägg, VBScript eller annan äldre teknik som inte stöds av Microsoft Edge-webbläsaren. Användarna måste fortfarande använda Internet Explorer 11 för de här webbplatserna, och du kan lägga till dem i [företagsläget för webbplatslistan](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)med hjälp av Enterprise Mode Site List Manager.
 
-För att hjälpa till med att flytta över till Office 365 ProPlus vill du kanske använda [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) för att testa kompatibiliteten för tillägg och VBA-makron (Microsoft Visual Basic for Applications).
+För att hjälpa till med att flytta över till Microsoft 365-applikationer för företag vill du kanske använda [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) för att testa kompatibiliteten för tillägg och VBA-makron (Microsoft Visual Basic for Applications).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,11 +110,11 @@ Om du vill ha mer information kan du läsa mer i [introduktionen till programvar
 
 ## <a name="app-assure"></a>App Assure
 
-Ett annat verktyg som kan hjälpa dig med kompatibilitet för Windows 10 och Office 365 ProPlus för appar är programmet [App Assure](https://aka.ms/appassure) som är tillgängligt via FastTrack Center. I händelse av giltiga problem med programvaran hjälper en Microsoft-tekniker dig utan extra kostnad via App Assure för att hjälpa dig att åtgärda inkompatibilitetsproblem i programmet.
+Ett annat verktyg som kan hjälpa dig med appkompatibilitet för Windows 10 och Microsoft 365-applikationer för företag är programmet [App Assure](https://aka.ms/appassure) som är tillgängligt via FastTrack Center. I händelse av giltiga problem med programvaran hjälper en Microsoft-tekniker dig utan extra kostnad via App Assure för att hjälpa dig att åtgärda inkompatibilitetsproblem i programmet.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Fortsatt användning av verktyg för diagnostikdata
 
-Desktop Analytics är inte bara ett verktyg som hjälper dig att byta till Windows 10 och Office 365 ProPlus. När du har stationära datorer som körs på Windows 10 och Office 365 kan du använda det för att underhålla din distribution och hantera halvårsvisa funktionsuppdateringar så att du kan hålla dig uppdaterad.
+Desktop Analytics är inte bara ett verktyg som hjälper dig att byta till Windows 10 och Microsoft 365-applikationer för företag. När du har stationära datorer som körs på Windows 10 och Office 365 kan du använda det för att underhålla din distribution och hantera halvårsvisa funktionsuppdateringar så att du kan hålla dig uppdaterad.
 
 ## <a name="next-step"></a>Nästa steg 
 

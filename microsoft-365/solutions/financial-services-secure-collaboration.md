@@ -12,12 +12,12 @@ ms.collection:
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper finansiella tjänster att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
-ms.openlocfilehash: 4dc2c25001bb817dcf31927d2c15b1246cc52901
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: f312c1a44f81dda2cd89937354423f686eb7346b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978284"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632613"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -55,7 +55,7 @@ Genom att tillhandahålla anställda med en modern molnbaserad samarbetsplattfor
 
 Teams tillhandahåller ett samarbetsnav till organisationen. Det hjälper människor att samlas för att arbeta produktivt med gemensamma initiativ och projekt. Med Teams kan grupp medlemmarna utföra 1:1 chatt eller med flera personer samt samarbeta och samredigera dokument och lagra och dela filer. Teams förenklar även onlinemöten via integrerat företag röst och video. Teams kan också anpassas med Microsoft-appar som Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI och applikationer från tredje part. Teams är utformat för att användas av både interna gruppmedlemmar och tillåtna externa användare som kan delta i gruppkanaler, delta i chattar, komma åt lagrade filer och använda andra program
 
-Alla Microsoft-grupper stöds av en Office 365-grupp. Gruppen anses vara medlemskapstjänsten i flera Office 365-tjänster, inklusive Teams. Office 365-grupper används för att på ett säkert sätt skilja mellan "ägare" och "medlemmar" och för att styra åtkomsten till olika funktioner i Teams. När de är kopplade till lämpliga styrningskontroller och regelbundet administrerade åtkomstgranskningar kan Teams bara låta medlemmar och ägare använda godkända kanaler och funktioner.
+Varje Microsoft-team stöds av en Microsoft 365-grupp. Gruppen anses vara medlemskapstjänsten i flera Office 365-tjänster, inklusive Teams. Microsoft 365-grupper används för att på ett säkert sätt skilja mellan ”ägare” och ”medlemmar” och för att styra åtkomsten till olika funktioner i Teams. När de är kopplade till lämpliga styrningskontroller och regelbundet administrerade åtkomstgranskningar kan Teams bara låta medlemmar och ägare använda godkända kanaler och funktioner.
 
 Ett vanligt scenario där Teams är till nytta för finansiella tjänster är när interna projekt eller program körs. Många finansiella institut, t. ex. banker, kapitalförvaltare, kreditföreningar och försäkringsbolag, måste ha anti-penningtvätt och andra efterlevnadsprogram på plats. Ett multifunktionellt team består av IT, affärslinjer som banktjänster för privat personer och kapitalförvaltning, och en enhet för ekonomisk brottslighet kan krävas för att dela data med varandra och för att kommunicera med programmet eller specifika undersökningar. Traditionellt har dessa program använt delade nätverksenheter, men denna strategi kan ge många utmaningar, inklusive:
 * Bara en användare kan redigera ett dokument i taget.
@@ -70,18 +70,18 @@ Ett annat vanligt scenario är att använda Teams som ett “virtuellt datarum�
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: förbättra samarbetet och minska riskerna för efterlevnad
 
-Microsoft 365 tillhandahåller andra vanliga policyfunktioner för Teams genom dess användning av Office 365-grupper som en underliggande medlemskapstjänst. Dessa policyer kan hjälpa dig att förbättra samarbetet och uppfylla behovet av överensstämmelse.
+Microsoft 365 tillhandahåller andra vanliga principfunktioner för Teams genom dess användning av Microsoft 365-grupper som en underliggande medlemskapstjänst. Dessa policyer kan hjälpa dig att förbättra samarbetet och uppfylla behovet av överensstämmelse.
 
-Med **principerna för att namnge grupper i Office 365** kan du se till att Office 365-grupper, och följaktligen grupper, namnges enligt företagets policy. Namn kan vara problematiska om de inte är lämpliga. Anställda kanske inte vet vilka grupper som de ska arbeta med eller dela information med om namn inte används på lämpligt sätt. Namngivningsprinciper för grupper (inklusive stöd för prefix/suffix-baserade principer och egna blockerade ord) kan användas för att upprätthålla god "hygien" och förhindra användningen av specifika ord, till exempel reserverade ord eller olämplig terminologi.
+Med **namngivningsprinciperna för Microsoft 365-grupper** kan du se till att Microsoft 365-grupper, och följaktligen team, namnges enligt företagets policy. Namn kan vara problematiska om de inte är lämpliga. Anställda kanske inte vet vilka grupper som de ska arbeta med eller dela information med om namn inte används på lämpligt sätt. Namngivningsprinciper för grupper (inklusive stöd för prefix/suffix-baserade principer och egna blockerade ord) kan användas för att upprätthålla god "hygien" och förhindra användningen av specifika ord, till exempel reserverade ord eller olämplig terminologi.
   
-**Utgångsprinciper för Office 365-grupper** hjälper till med att se till att Office 365-grupper och följaktligen grupper inte finns kvar under längre tid än vad organisationen vill eller behöver. Denna förmåga hjälper till att förhindra två viktiga problem med informationshantering:
+Med **utgångsprinciper för Microsoft 365-grupper** kan du se till att Microsoft 365-grupper, och följaktligen team, inte finns kvar under längre tid än vad organisationen vill eller behöver. Denna förmåga hjälper till att förhindra två viktiga problem med informationshantering:
 
 * Spridning av grupper som inte behövs eller används.
 * Överlagring av data som inte längre krävs eller används av organisationen (utom i fall av juridiskt lagring/konservering).
 
-Administratörer kan ange en förfalloperiod för Office 365-grupper, t. ex. 90, 180 eller 365 dagar. Om en tjänst som stöds av en Office 365-grupp är inaktiv under förfalloperioden meddelas gruppägare. Om inga åtgärder vidtas, tas Office 365-gruppen och alla tillhörande tjänster, inklusive Teams bort.
+Administratörer kan ange en förfalloperiod för Microsoft 365-grupper, till exempel 90, 180 eller 365 dagar. Om en tjänst som stöds av en Microsoft 365-grupp är inaktiv under förfalloperioden meddelas gruppägare. Om inga åtgärder vidtas tas Microsoft 365-gruppen och alla tillhörande tjänster, inklusive Teams, bort.
   
-Överlagring av data som lagras i Teams och andra gruppbaserade tjänster kan innebära risker för organisationer för finansiella tjänster. Office 365-gruppens förfalloprinciper rekommenderas i syfte att förhindra att data som inte längre behövs lagras. I kombination med fördefinierade inbyggda lagringsetiketter och policyer ser Microsoft 365 till att organisationer bara bevarar de data som krävs för att uppfylla företagets principer och regelefterlevnad.
+Överlagring av data som lagras i Teams och andra gruppbaserade tjänster kan innebära risker för organisationer för finansiella tjänster. Utgångsprinciper för Microsoft 365-grupper rekommenderas i syfte att förhindra att data som inte längre behövs lagras. I kombination med fördefinierade inbyggda lagringsetiketter och policyer ser Microsoft 365 till att organisationer bara bevarar de data som krävs för att uppfylla företagets principer och regelefterlevnad.
 
 #### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams: integrera enkelt anpassade krav
 
@@ -215,7 +215,7 @@ Finansiella institut hanterar stora mängder data. Alla lagringsperioder initier
 - Vad inträffar när den lagringsperioden går ut (ta bort dokumentet, starta en granskning eller vidta ingen åtgärd)
 -  Vad utlöser att den lagringsperioden startar (skapat datum, senast ändrat datum, märkt datum eller en händelse) och markerar dokumentet eller e-postmeddelandet som en post (vilket betyder att det inte kan redigeras eller raderas)
 
-Lagringsetiketterna publiceras sedan på SharePoint-och OneDrive-webbplatser, Exchange-postlådor och Office 365-grupper. Användare kan tillämpa lagringsetiketterna manuellt i dokument och e-postmeddelanden. Arkivhanterare kan använda information för att automatiskt använda etiketterna. Intelligenta funktioner kan baseras på [över 90 inbyggda typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (till exempel ABA outingnummer, bankkontonummer eller personnummer). De kan också anpassas baserat på nyckelord och känsliga data som finns i dokument och e-postmeddelanden, t. ex kreditkortsnummer eller annan personlig information som är baserad på SharePoint-metadata. För data som inte är enkel att identifiera i manuell eller automatiserad mönstermatchning kan träningsbara klassificerare användas för att smart klassificera dokument baserat på maskininlärningstekniker.
+Kvarhållningsetiketterna publiceras sedan till SharePoint- och OneDrive-webbplatser, Exchange-postlådor och Microsoft 365-grupper. Användare kan tillämpa lagringsetiketterna manuellt i dokument och e-postmeddelanden. Arkivhanterare kan använda information för att automatiskt använda etiketterna. Intelligenta funktioner kan baseras på [över 90 inbyggda typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (till exempel ABA outingnummer, bankkontonummer eller personnummer). De kan också anpassas baserat på nyckelord och känsliga data som finns i dokument och e-postmeddelanden, t. ex kreditkortsnummer eller annan personlig information som är baserad på SharePoint-metadata. För data som inte är enkel att identifiera i manuell eller automatiserad mönstermatchning kan träningsbara klassificerare användas för att smart klassificera dokument baserat på maskininlärningstekniker.
  
 **Securities and Exchange Commission (SEC)** kräver att mäklare och andra reglerade finansiella institut bevarar all affärsrelaterad kommunikation. Kraven gäller för många typer av kommunikation och data, t. ex. e-post, dokument, snabbmeddelanden, fax och mycket mer. **SEC-regel 17a-4** definierar villkor som dessa organisationer måste uppfylla för att lagra poster i ett elektroniskt datalagringssystem. Under 2003 utfärdade SEC en version som klargör de här kraven. Det innehöll bland annat följande kriterier:
 

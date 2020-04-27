@@ -1,5 +1,5 @@
 ---
-title: Hitta hjälp för din Windows 10- och Office 365 ProPlus-distribution
+title: Hitta hjälp för din distribution av Windows 10 och Microsoft 365-applikationer för företag
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,19 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Var du hittar hjälp och support för din Windows 10- och Office 365 ProPlus-distribution.
-ms.openlocfilehash: c581cbfc7fdb537fddf10b20d697a42a8e564bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Var du hittar hjälp och support för din distribution av Windows 10 och Microsoft 365-applikationer för företag.
+ms.openlocfilehash: 7c5376228c3c0b7506fd9b9fe7fb565c0bb76446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42808101"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634092"
 ---
-# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Hitta hjälp för din Windows 10- och Office 365 ProPlus-distribution 
+# <a name="find-help-for-your-windows-10-and-microsoft-365-apps-for-enterprise-deployment"></a>Hitta hjälp för din distribution av Windows 10 och Microsoft 365-applikationer för företag 
 
-Om du planerar att genomföra din Windows 10-distribution med Office 365 ProPlus finns det flera alternativ för att få ytterligare hjälp från certifierade Microsoft-partner och [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
+Om du planerar att genomföra din distribution av Windows 10 och Microsoft 365-applikationer för företag finns det flera alternativ för att få ytterligare hjälp från certifierade Microsoft-partner och [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-Nedan ser du en översikt över de tillgängliga tjänsterna justerade mot processen för [skrivbordsdistribution](https://www.aka.ms/howtoshift) för Windows 10, Office 365 ProPlus och Enterprise Mobility + Security med befintliga partner- och FastTrack-erbjudanden. I många fall medföljer tjänsterna med din kvalificerande prenumeration för Microsoft 365, Office 365 eller Windows 10 Enterprise. För de partnerbaserade tjänsterna som Windows 10 och Office 365 ProPlus-skrivbordsbedömning tillhandahåller Microsoft en kupong för tjänster som genomförs av partnern. Information om varje erbjudande finns i länkarna nedan.
+Nedan ser du en översikt över de tillgängliga tjänsterna justerade mot processen för [skrivbordsdistribution](https://www.aka.ms/howtoshift) för Windows 10, Microsoft 365-applikationer för företag och Enterprise Mobility + Security med befintliga partner- och FastTrack-erbjudanden. I många fall medföljer tjänsterna med din kvalificerande prenumeration för Microsoft 365, Office 365 eller Windows 10 Enterprise. Som kvalificerad organisation tillhandahåller Microsoft en kupong för tjänster som genomförs av partnern för de partnerbaserade tjänsterna som skrivbordsutvärderingen av Windows 10 och Microsoft 365-applikationer för företag. Information om varje erbjudande finns i länkarna nedan.
 
 <br>
 
@@ -36,7 +36,7 @@ Nedan ser du en översikt över de tillgängliga tjänsterna justerade mot proce
 <td><p><strong>Beredskap för enheter och appar</strong></p>
 <ul>
 <li><p><a href="https://aka.ms/MDAcustomerform">Bedömning för modernt skrivbord</a>, där en kvalificerad partner i din region ger din organisation en djupgående lösning för programvara och enhetskompatibilitet och en bedömning av uppdateringsberedskap med de senaste verktygen och procedurerna från Microsoft.</p>
-<li><p><a href="https://www.aka.ms/desktopappassure">Desktop App Assure</a>, där Microsofts FastTrack-tekniker tillhandahåller rådgivning och reparationsvägledning om du stöter på problem med programkompatibilitet när du distribuerar Windows 10 och Office 365 ProPlus eller pågående uppdateringar.</p>
+<li><p><a href="https://www.aka.ms/desktopappassure">Desktop App Assure</a>, där Microsofts FastTrack-tekniker tillhandahåller rådgivning och reparationsvägledning om du stöter på problem med programkompatibilitet när du distribuerar Windows 10 och Microsoft 365-applikationer för företag eller pågående uppdateringar.</p>
 </ul></td>
 </tr>
 <tbody>
@@ -44,14 +44,14 @@ Nedan ser du en översikt över de tillgängliga tjänsterna justerade mot proce
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>Katalog- och nätverksberedskap</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">Grundregistrering</a>, där Microsofts FastTrack-specialister tillhandahåller identitetsintegrering mellan de aktuella katalogtjänsterna och Azure Active Directory. Det här krävs för Office 365 ProPlus, Microsoft Intune, OneDrive och andra Office 365- och EMS-molntjänster som en del av din datordistribution.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">Grundregistrering</a>, där Microsofts FastTrack-specialister tillhandahåller identitetsintegrering mellan de aktuella katalogtjänsterna och Azure Active Directory. Det här krävs för Microsoft 365-applikationer för företag, Microsoft Intune, OneDrive och andra Office 365- och EMS-molntjänster som en del av din skrivbordsdistribution.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Leverans av Office- och LOB-appar</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>-konfiguration och -distribution, där Microsofts FastTrack-specialister tillhandahåller hjälp med att distribuera användarlicenser, konfigurera installation och uppdateringsinställningar för Klicka-och-kör och skapa paket om din organisation använder Microsoft Endpoint Configuration Manager.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365-applikationer för företag</a>-konfiguration och -distribution, där Microsofts FastTrack-specialister tillhandahåller hjälp med att distribuera användarlicenser, konfigurera installation och uppdateringsinställningar för Klicka-och-kör och skapa paket om din organisation använder Microsoft Endpoint Configuration Manager.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ Nedan ser du en översikt över de tillgängliga tjänsterna justerade mot proce
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>Office och Windows som en tjänst</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>, där Microsofts FastTrack specialister tillhandahåller assistans med att konfigurera uppdateringsprinciper för Windows 10 och Office 365 ProPlus. <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>, där Microsoft-FastTrack kan ge vägledning för att konfigurera driftsättningsringarna för att hålla dig uppdaterad.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>, där Microsofts FastTrack-specialister tillhandahåller hjälp med att konfigurera uppdateringsprinciper för Windows 10 och Microsoft 365-applikationer för företag. <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365-applikationer för företag</a>, där Microsoft FastTrack kan ge vägledning om att konfigurera distributionsgrupper för att hålla dig uppdaterad.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ Nedan ser du en översikt över de tillgängliga tjänsterna justerade mot proce
 <td><p><strong>Kommunikation och utbildning för användare</strong></p>
 <ul>
 <li><p><a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/quickly-and-easily-transform-new-devices?rtc=2">Produktivitetsbibliotek</a>, en uppsättning onlineresurser från Microsoft för slutanvändarens kommunikation och utbildning i Microsoft 365.</p></li>
-<li><p><a href="https://www.office.com/training">Office-utbildning</a>, en uppsättning onlineresurser från Microsofts slutanvändarutbildning på Office 365 och Office 365 ProPlus.</p></li>
+<li><p><a href="https://www.office.com/training">Office-utbildning</a>, en uppsättning onlineresurser från Microsofts slutanvändarutbildning om Office 365 och Microsoft 365-applikationer för företag.</p></li>
 <li><p><a href="https://info.microsoft.com/Windows10AdoptionPlanningKit.html">Sats för införandeplanering med Windows 10</a>, en uppsättning onlineresurser från Microsoft som inkluderar användarens beredskapsresurser.</p></li>
 </ul></td>
 </tr>

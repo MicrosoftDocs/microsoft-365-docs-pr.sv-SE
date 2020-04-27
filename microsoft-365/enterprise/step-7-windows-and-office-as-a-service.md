@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du förbereder för underhåll av Windows och Office i din miljö.
-ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810593"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636741"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Steg 7: Underhåll av Windows och Office
 
@@ -30,7 +30,7 @@ ms.locfileid: "42810593"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Steg 7: Underhåll av Windows och Office</strong></p>
-<p>Både Windows 10 och Office 365 ProPlus får löpande nya funktioner för att ge bättre användarupplevelser och högre säkerhet tillsammans med de senaste nyheterna. Ta reda på hur du kan hålla dig uppdaterad med halvårsuppdateringar och månatliga uppdateringar, hur den nya underhållsmodellen fungerar och vilka verktyg och alternativ du har.</p></td>
+<p>Både Windows 10 och Microsoft 365-applikationer för företag får löpande nya funktioner för att ge bättre användarupplevelser och högre säkerhet tillsammans med de senaste nyheterna. Ta reda på hur du kan hålla dig uppdaterad med halvårsuppdateringar och månatliga uppdateringar, hur den nya underhållsmodellen fungerar och vilka verktyg och alternativ du har.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -39,9 +39,9 @@ ms.locfileid: "42810593"
 >Underhåll av Windows och Office är det sjunde steget i vårt rekommenderade distributionsprocesshjul som innehåller planeringsaspekterna när det gäller förberedelser inför de halvårsvisa funktionsuppdateringarna. Om du vill se den fullständiga skrivbordsdistributionsprocessen kan du gå till [Center för skrivbordsdistribution](https://aka.ms/HowToShift).
 >
 
-Både Windows 10 och Office 365 ProPlus inför nya underhållsalternativ, supportmodeller och tidslinjer för uppdatering. Dessa förändringar gör det enklare att hålla sig uppdaterad om de senaste funktionerna. Tillsammans med dessa uppdateringar finns nya konfigurationsalternativ för att aktivera underhållsplaner för dina behov. Nu ska gå igenom hur du förbereder dig inför uppdateringar i halvårskanalen som erbjuder nya funktioner i Windows 10 och Office 365 ProPlus samtidigt som du använder de nya funktionerna i Microsoft Endpoint Configuration Manager (aktuell gren).
+Både Windows 10 och Microsoft 365-applikationer för företag inför nya underhållsalternativ, supportmodeller och tidslinjer för uppdatering. Dessa förändringar gör det enklare att hålla sig uppdaterad om de senaste funktionerna. Tillsammans med dessa uppdateringar finns nya konfigurationsalternativ för att aktivera underhållsplaner för dina behov. Nu ska gå igenom hur du förbereder dig inför uppdateringar i halvårskanalen som erbjuder nya funktioner i Windows 10 och Microsoft 365-applikationer för företag samtidigt som du använder de nya funktionerna i Microsoft Endpoint Configuration Manager (Current Branch).
 
-[Hjälpa kunder att byta till Windows 10 och Office 365 ProPlus](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Hjälpa kunder att byta till Windows 10 och Microsoft 365-applikationer för företag](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>Uppdateringstyper
 
@@ -75,7 +75,7 @@ Med den kumulativa modellen behövs bara en uppdatering för att hålla dig uppd
 
 En annan fördel är att vi kan börja med att släppa versioner till små användargrupper via Insider-program för [Office](https://products.office.com/office-insider?tab=Windows-Desktop) och [Windows](https://insider.windows.com/), vilket ger oss möjlighet att samla in diagnostikdata och feedback innan vi släpper uppdateringarna till alla användare. Nu är Insider-programmen öppna för alla så att du kan utforska nya funktioner i förväg. När det är dags att göra uppdateringarna allmänt tillgängliga har vi fått diagnostikdata från miljontals konfigurationer, vilket innebär att uppdateringarna får bättre kvalitet och stabilitet.
 
-Och eftersom Insider-versionerna av Office 365 ProPlus återspeglar uppdateringarna i månadskanalen kan du verifiera dessa versioner tidigt och använda versionerna i halvårskanalen, om du använder halvårskanalen för Office för att leverera funktionsuppdateringar två gånger per år som för Windows.
+Och eftersom Insider-versionerna av Microsoft 365-applikationer för företag återspeglar uppdateringarna i månadskanalen kan du verifiera dessa versioner tidigt och använda versionerna i halvårskanalen, om du använder halvårskanalen för Office för att leverera funktionsuppdateringar två gånger per år som för Windows.
 
 ### <a name="supporting-management-tools"></a>Hanteringsverktyg
 
@@ -83,7 +83,7 @@ Vi har även funderat på vi kan underlätta din distribution av uppdateringarna
 
 [Distribuera Windows 10-uppdateringar med Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Hantera Office 365 ProPlus med Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Hantera Microsoft 365-applikationer för företag med Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Översikt över Windows- och Office-kanalerna
 
@@ -93,7 +93,7 @@ Windows 10 har tre underhållskanaler:
 - **Halvårskanalen** tillhandahåller ny funktionalitet med funktionsuppdateringar två gånger per år
 - **Den långsiktiga underhållskanalen** är endast avsedd för specialiserade enheter som behöver ett längre underhållsalternativ
 
-Office 365 tillhandahåller fyra underhållskanaler:
+Microsoft 365 har fyra underhållskanaler:
 
 - [**Office Insider Program**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) för organisationer som vill testa och ge feedback om de nyaste funktionerna i Office som fortfarande är under utveckling
 - **Månatliga kanaler** för att ge användarna de senaste Office-funktionerna så snart de blir tillgängliga
@@ -103,11 +103,11 @@ Office 365 tillhandahåller fyra underhållskanaler:
 Detaljerad information om underhållskanalerna för Windows och Office finns i dokumentationen nedan:
 
 - [Översikt över Windows som en tjänst](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Översikt över uppdateringskanaler för Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Översikt över uppdateringskanaler för Microsoft 365-applikationer för företag](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>Fasindelad distribution av uppdateringar
 
-Nu ska vi gå igenom hur de här uppdateringarna ska distribueras. För varje version rekommenderar vi minst tre distributionsfaser för IT – verifiering, pilottestning och bred distribution. När du har kommit igång med Windows 10 och Office 365 ProPlus använder du månadsunderhåll för att få de senaste kritiska säkerhets- och kvalitetsuppdateringarna och sedan övergår du till halvårsunderhåll för nya funktioner.
+Nu ska vi gå igenom hur de här uppdateringarna ska distribueras. För varje version rekommenderar vi minst tre distributionsfaser för IT – verifiering, pilottestning och bred distribution. När du har kommit igång med Windows 10 och Microsoft 365-applikationer för företag använder du månadsunderhåll för att få de senaste kritiska säkerhets- och kvalitetsuppdateringarna och sedan övergår du till halvårsunderhåll för nya funktioner.
 
 ### <a name="monthly-updating"></a>Månatliga uppdateringar
 
@@ -125,7 +125,7 @@ Windows Update för företag och Windows Server Update Services har länge kunna
 
 #### <a name="binary-delta-compression"></a>Komprimering av binärfilsförändring
 
-Komprimering av binärfilsförändring i Office används bara om du uppdaterar från den senaste versionen av Office 365 ProPlus. Om du vill använda den här metoden måste du alltså uppdatera från den tidigare versionen och du kan inte hoppa över uppdateringar.
+Komprimering av binärfilsförändring (Binary Delta Compression) i Office används bara om du uppdaterar från den senaste versionen av Microsoft 365-applikationer för företag. Om du vill använda den här metoden måste du alltså uppdatera från den tidigare versionen och du kan inte hoppa över uppdateringar.
 
 Uppdateringskanalerna för Windows och Office kan hanteras via Configuration Manager via den vanliga processen för godkännande och målanpassning. Du kan också använda principinställningar i Office och Windows till att tillämpa uppdateringskanaler och relaterade inställningar.
 
@@ -141,7 +141,7 @@ När det gäller verktyg kan du använda principinställningarna med Windows Upd
 
 [Windows halvårskanal](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Halvårskanal för Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Halvårskanal för Microsoft 365-applikationer för företag](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Aktivitetssekvenser för uppgradering
 
@@ -165,7 +165,7 @@ Om du redan använder aktivitetssekvenser för att migrera dina Windows 7-datore
 
   - Kommande funktionsuppdateringar, från och med version 1903, med mars som mål får support i 18 månader från utgivningsdagen.
 
-  - Halvårsuppdateringarna för Office 365 ProPlus fortsätter att få support i 18 månader
+  - Halvårsuppdateringarna för Microsoft 365-applikationer för företag fortsätter att få support i 18 månader
 
 #### <a name="additional-setup-automation-options-outside-of-task-sequences"></a>Ytterligare alternativ för automatiserad installation utöver aktivitetssekvenser
 

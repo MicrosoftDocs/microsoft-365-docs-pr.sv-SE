@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig några av sätten som du kan använda för att distribuera faserna i den grundläggande infrastrukturen för Microsoft 365 för företag.
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811464"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638158"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 för företag – strategier för distribuering av grundläggande infrastruktur
 
@@ -90,7 +90,7 @@ Här följer en förenklad pilotupplevelse för användare som exempel:
 
 - I december behöver jag använda min smartphone för MFA. (Identitet)
 - I mars får jag Windows 10 Enterprise installerat på min dator med Windows 8.1. (Windows 10 Enterprise)
-- I juni får jag Office 365 ProPlus installerat, som ersätter Office 2013. (Office 365 ProPlus)
+- I juni får jag Microsoft 365-applikationer för företag installerat, som ersätter Office 2013. (Microsoft 365-applikationer för företag)
 - I september får jag principer för enhetsregistrering, appar och enheter. (Hantering av mobila enheter)
 - I december får jag Azure Information Protection-klienten installerad och får veta hur jag lägger till etiketter i dokument. (Informationsskydd)
 
@@ -100,7 +100,7 @@ Här följer en förenklad upplevelse för slutanvändare som exempel:
 
 - I januari behöver jag använda min smartphone för MFA. (Identitet)
 - I april får jag Windows 10 Enterprise installerat på min dator med Windows 8.1. (Windows 10 Enterprise)
-- I juli får jag Office 365 ProPlus installerat, som ersätter Office 2013. (Office 365 ProPlus)
+- I juli får jag Microsoft 365-applikationer för företag installerat, som ersätter Office 2013. (Microsoft 365-applikationer för företag)
 - I oktober får jag principer för enhetsregistrering, appar och enheter. (Hantering av mobila enheter)
 - I januari efterföljande år får jag Azure Information Protection-klienten installerad och får veta hur jag lägger till etiketter i dokument. (Informationsskydd)
 
@@ -121,7 +121,7 @@ Här följer en förenklad pilotupplevelse för användare som exempel:
 
 - I december behöver jag använda min smartphone för MFA. (Identitet)
 - I februari får jag Windows 10 Enterprise installerat på min dator med Windows 8.1. (Windows 10 Enterprise)
-- I april får jag Office 365 ProPlus installerat, som ersätter Office 2013. (Office 365 ProPlus)
+- I april får jag Microsoft 365-applikationer för företag installerat, som ersätter Office 2013. (Microsoft 365-applikationer för företag)
 - I juni får jag principer för enhetsregistrering, appar och enheter. (Hantering av mobila enheter)
 - I augusti får jag Azure Information Protection-klienten installerad och får veta hur jag lägger till etiketter i dokument. (Informationsskydd)
 
@@ -131,7 +131,7 @@ Här följer en förenklad upplevelse för slutanvändare som exempel:
 
 - I januari behöver jag använda min smartphone för MFA. (Identitet)
 - I mars får jag Windows 10 Enterprise installerat på min dator med Windows 8.1. (Windows 10 Enterprise)
-- I maj får jag Office 365 ProPlus installerat, som ersätter Office 2013. (Office 365 ProPlus)
+- I maj får jag Microsoft 365-applikationer för företag installerat, som ersätter Office 2013. (Microsoft 365-applikationer för företag)
 - I juli får jag principer för enhetsregistrering, appar och enheter. (Hantering av mobila enheter)
 - I september får jag Azure Information Protection-klienten installerad och får veta hur jag lägger till etiketter i dokument. (Informationsskydd)
 
@@ -159,7 +159,7 @@ Här följer en förenklad pilotupplevelse för användare som exempel:
 
 - I december behöver jag använda min smartphone för MFA. (Identitet)
 - I januari får jag Windows 10 Enterprise installerat på min dator med Windows 8.1. (Windows 10 Enterprise)
-- I februari får jag Office 365 ProPlus installerat, som ersätter Office 2013. (Office 365 ProPlus)
+- I februari får jag Microsoft 365-applikationer för företag installerat, som ersätter Office 2013. (Microsoft 365-applikationer för företag)
 - I mars får jag principer för enhetsregistrering, appar och enheter. (Hantering av mobila enheter)
 - I april får jag Azure Information Protection-klienten installerad och får veta hur jag lägger till etiketter i dokument. (Informationsskydd)
 
@@ -169,7 +169,7 @@ Här följer en förenklad upplevelse för slutanvändare som exempel:
 
 - I januari behöver jag använda min smartphone för MFA. (Identitet)
 - I februari får jag Windows 10 Enterprise installerat på min dator med Windows 8.1. (Windows 10 Enterprise)
-- I mars får jag Office 365 ProPlus installerat, som ersätter Office 2013. (Office 365 ProPlus)
+- I mars får jag Microsoft 365-applikationer för företag installerat, som ersätter Office 2013. (Microsoft 365-applikationer för företag)
 - I april får jag principer för enhetsregistrering, appar och enheter. (Hantering av mobila enheter)
 - I maj får jag Azure Information Protection-klienten installerad och får veta hur jag lägger till etiketter i dokument. (Informationsskydd)
 
@@ -187,7 +187,7 @@ IT-avdelningen konfigurerar infrastrukturen för faserna 2–6 och lanserar seda
 
 - MFA och andra identitetsfunktioner (Identitet)
 - Windows 10 Enterprise på Windows-enheter (Windows 10 Enterprise)
-- Office 365 ProPlus för Office-paketet (Office 365 ProPlus)
+- Microsoft 365-applikationer för företag för Office-paketet (Microsoft 365-applikationer för företag)
 - Principer för appar och enheter (hantering av mobila enheter)
 - Azure Information Protection-klienten installeras och utbildning sker om hur man lägger till etiketter i dokument (Informationsskydd).
 
