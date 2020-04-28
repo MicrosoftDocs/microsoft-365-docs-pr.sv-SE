@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Lär dig att ändra standardtemat i Microsoft 365 och anpassa det så att det matchar företagets logotyp eller färg. '
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627612"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900780"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>Anpassa temat för din organisation
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365-temat för din organisation
 
 Läs om hur du anpassar ditt tema i administrationscentret för Microsoft 365. Som administratör för din Microsoft 365 för företag-prenumeration kan du ändra standardtemat som visas i det övre navigeringsfältet för alla i organisationen. Du kan lägga till företagets logotyp och ändra färgerna så att de matchar resten av ditt varumärke. Du kan till och med lägga till en mållänk som användarna kan navigera till när de väljer din logotyp. Här kan du se standardtemat och det anpassade temat i Microsoft 365.
   
@@ -64,7 +64,7 @@ Läs om hur du anpassar ditt tema i administrationscentret för Microsoft 365. S
     
 4. Välj **Spara ändringar**.
     
-Du ser ditt nya tema i administrationscentret direkt och efter en kort fördröjning visas det i hela Microsoft 365, inklusive sidor i Outlook, SharePoint, [SharePoint-mobilappen för iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)och [SharePoint-mobilapp för Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Se följande bild för ett exempel på var du kan anpassa temaändringar från administrationscentret.
+Du ser ditt nya tema i administrationscentret direkt och efter en kort fördröjning visas det i hela Microsoft 365, inklusive sidor i Outlook, SharePoint, [SharePoint-mobilappen för iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)och [SharePoint-mobilapp för Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Ett exempel på var du kan anpassa temaändringar från administrationscentret finns i följande bild.
 
 ![m365-admin-tenant-tema-konceptuell](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ Du kan ta bort den anpassade ikonen eller de anpassade färgerna när som helst.
   
 ## <a name="best-practices"></a>Metodtips
 
-När du väljer en **logotypbild**rekommenderar vi att du använder en SVG-filtyp, där det är möjligt, så att din logotyp får ett högupplöst utseende på alla skärmar och på alla zoomnivåer.
+När du väljer en **logotypbild**rekommenderar vi att du använder en SVG-filtyp, så att din logotyp får ett högupplöst utseende på alla skärmar och på alla zoomnivåer.
 
 När du väljer anpassade färger väljer du en **bakgrundsfärg i navigeringsfältet** som har ett högt kontrastförhållande med den **logotypbild** som du har valt. Välj också en **text- och ikonerfärg** med ett högt kontrastförhållande till **bakgrundsfärgen i navigeringsfältet** för att säkerställa att all text och alla ikoner är väl synliga.
 
@@ -99,4 +99,3 @@ Här är ett enkelt flödesschema som hjälper dig att snabbt konfigurera med et
 [Lägga till anpassade paneler på sidan Mina program och startprogram](../manage/customize-the-app-launcher.md)
   
   
-

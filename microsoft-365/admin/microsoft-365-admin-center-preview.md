@@ -18,19 +18,33 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Läs mer om det nya administrationscentret för Microsoft 365.
-ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627986"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907231"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Om det nya administrationscentret för Microsoft 365
 
+::: moniker range="o365-worldwide"
+
 Det nya administrationscentret för Microsoft 365 är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
-  
-Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialiserade arbetsytor, som säkerhet eller enhetshantering, möjliggör mer detaljerad kontroll. Mer information om hur administrationsenheterna ska fungera tillsammans finns i Hur är [det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange senare](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) i den här artikeln. 
-  
+
+Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialiserade arbetsytor, som säkerhet eller enhetshantering, möjliggör mer detaljerad kontroll. Mer information om hur administrationsenheterna ska fungera tillsammans finns i Hur är [det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange senare](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) i den här artikeln.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+Det nya administrationscentret för Microsoft 365, som för närvarande förhandsgranskas, är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
+
+Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)och kan nås genom att logga in på . Dessutom tillåter specialiserade arbetsytor, som Azure Active Directory och Exchange, mer detaljerad kontroll. Du kan komma åt de specialiserade arbetsytorna från navigeringsfönstret i administrationscentret för Microsoft 365.
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
 När nya funktioner blir tillgängliga i Microsoft 365-administrationscentret kan du välja det nya administrationscentret och dela din feedback med Microsoft så att vi kan fortsätta att förbättra administratörsupplevelsen. Om du anmäler dig påverkas inte användarna av användarna och du kan när som helst växla tillbaka till det gamla administrationscentret.
 [Nyheter i det nya administrationscentret för Microsoft 365](whats-new-in-preview.md).
   
@@ -43,10 +57,12 @@ Vi vill gärna att du deltar i det nya administrationscentret för Microsoft 365
 ### <a name="turn-on-targeted-release"></a>Aktivera Riktad release
 
 1. Logga in på [admin.microsoft.com](https://admin.microsoft.com)går du till navigeringsfönstret och väljer **Profilen Inställningar** \> **Organisation**.
-    
+
+1. Logga in på [portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)går du till navigeringsfönstret och väljer **Profilen Inställningar** \> **Organisation**.
+
 2. Gå till kortet **Frigör inställningar** och välj sedan **Redigera**. 
     
-3.  Välj antingen **Riktad version för alla** eller Riktad version för valda **användare**. Om du väljer Riktad version för valda användare kontrollerar du att du lägger till ditt administratörskonto (och andra administratörer i organisationen som vill delta) i listan över valda användare.
+3. Välj antingen **Riktad version för alla** eller Riktad version för valda **användare**. Om du väljer Riktad version för valda användare kontrollerar du att du lägger till ditt administratörskonto (och andra administratörer i organisationen som vill delta) i listan över valda användare.
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Växla till det nya administrationscentret och tillbaka igen
 
@@ -61,11 +77,25 @@ Om du vill vara en tidig användare i det nya administrationscentret måste du a
 > [!NOTE]
 > Åtkomst till det nya administrationscentret kommer att distribueras till alla Microsoft 365-administratörer. Administratörer som finns i gruppen Riktad utgåva i organisationen får det nya administrationscentret först. Att vara i riktad release garanterar inte att du kommer att se växla omedelbart, men du kommer att få det tidigare än de i Standard release. 
   
+::: moniker-end
 
-   
+::: moniker range="o365-21vianet"
+
+### <a name="switch-to-the-new-admin-center-and-back-again"></a>Växla till det nya administrationscentret och tillbaka igen
+
+Medan det nya administrationscentret är i förhandsgranskning kan du växla fram och tillbaka mellan det nya administrationscentret och det gamla administrationscentret med hjälp av växlingsknappen högst upp på startsidan för administrationscentret. Det nya administrationscentret är fullt fungerande och har alla funktioner i det gamla administrationscentret.
+
+Om du vill prova det nya administrationscentret vrider du växlingsknappen till <b>Prova förhandsgranskningen</b>. Växlingsknappen visar sedan <b>Förhandsgranska på</b>. Nästa gång du loggar in på administrationscentret kommer vi ihåg ditt val och loggar in dig i det nya administrationscentret.
+
+Om du vill gå tillbaka till det gamla administrationscentret vrider du växlingsknappen från <b>Förhandsgranska</b> till avstäckt position. Nästa gång du loggar in på administrationscentret loggar vi in dig på det gamla administrationscentret.
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
-Ser du inte dina frågor besvaras här? Gå till **Var denna information till hjälp?** längst ner på denna sida och ställa din fråga. 
+Ser du inte dina frågor besvaras här? Gå till avsnittet **Feedback** längst ned på den här sidan och ställ din fråga. 
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>Kan jag göra allt i det nya administrationscentret som jag kan göra i det gamla administrationscentret?
 
@@ -80,13 +110,13 @@ Microsoft 365 är en komplett, intelligent lösning som inkluderar Office 365, W
 - Microsoft 365 Företag E5
     
 Mer information finns i [Prova eller köpa en Microsoft 365-prenumeration.](../commerce/try-or-buy-microsoft-365.md)
-  
+
 ## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Jag hittade en bugg eller jag vill begära en funktionsförbättring. Hur meddelar jag Microsoft?
 
 Vi älskar att höra från dig! Genom att rapportera fel och dela feedback kan vi göra Microsoft 365-administrationscentret bättre. För att ge feedback, välj **feedback-knappen** längst ner på sidan och använd formuläret för att skicka oss dina tankar. Markera kryssrutan och bekräfta din e-postadress om du vill att någon från Microsoft 365-administrationscentret ska följa upp dina kommentarer. Vi kan inte lova att följa upp varje bit av feedback, men vi ska försöka! 
   
 Du kan också ge feedback från utanför admin center på vår UserVoice forum. Du kan använda den här sidan för att göra funktionsförslag som kan röstas fram av andra forumanvändare: [UserVoice forum för det nya admin-centret](https://go.microsoft.com/fwlink/?linkid=2024994).
-  
+
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Hur är det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange?
 
 Microsoft 365-administrationscentret är den gemensamma startpunkten för alla team och roller som hanterar Microsoft 365. Erfarenheten, informationen och kontrollerna är skräddarsydda och anpassningsbara för varje administratör och roll. Dessutom tillåter specialiserade arbetsytor djup, detaljerad kontroll. Dessa specialarbetsytor inkluderar SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management och Azure Active Directory. Du hittar de specialiserade arbetsytorna från navigeringsfönstret i Microsoft [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)365 admin center på .
@@ -100,5 +130,5 @@ Det tar en stund att uppdatera alla administrationscenter för att få en samman
 - [Översikt över Hantering av Microsoft 365-enheter](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Vi presenterar Microsoft 365 Security and Compliance Center](https://go.microsoft.com/fwlink/?linkid=2025413)
-    
 
+::: moniker-end

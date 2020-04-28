@@ -21,14 +21,21 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805184"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907243"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> En del av informationen i den här artikeln kanske inte gäller för Office 365 som drivs av 21Vianet.
+
+::: moniker-end
 
 Vi lägger kontinuerligt till nya funktioner [i Microsoft 365-administrationscentret,](microsoft-365-admin-center-preview.md)åtgärdar problem som vi lär oss om och gör ändringar baserat på din feedback. Ta en titt nedan för att se vad som är tillgängligt för dig idag. Vissa funktioner rullas ut i olika hastigheter till våra kunder. Om du inte ser någon funktion ännu [kan du prova att lägga till dig själv i riktad version](manage/release-options-in-office-365.md).
 

@@ -14,23 +14,31 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om de olika typer av vyer som är tillgängliga i Threat Explorer och realtidsidentifieringar.
-ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955645"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907255"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och realtidsidentifieringar
 
-![Hot Explorer](../../media/ThreatExplorerFirstOpened.png)
+![Hotutforskaren](../../media/ThreatExplorerFirstOpened.png)
 
 [Threat Explorer](threat-explorer.md) (och realtidsidentifieringsrapporten) är ett kraftfullt, nära realtidsverktyg som hjälper säkerhetsteam &amp; att undersöka och svara på hot i Security Compliance Center. Explorer (och rapporten identifiering i realtid) visar information om misstänkt skadlig kod och phish i e-post och filer i Office 365, samt andra säkerhetshot och risker för din organisation. 
 
 - Om du har [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2 har du Explorer.
 - Om du har Office 365 ATP-abonnemang 1 har du identifiering i realtid.
 
-När du först öppnar Explorer (eller rapporten identifiering i realtid) visas identifiering av skadlig e-post för de senaste sju dagarna i standardvyn. Den här rapporten kan också visa ATP-identifieringar, till exempel skadliga url:er som identifieras av [säkra länkar](atp-safe-links.md)och skadliga filer som identifieras av [säkra bilagor](atp-safe-attachments.md). Den här rapporten kan ändras för att visa data för de senaste 30 dagarna (såvida du inte använder en utvärderingsprenumeration). Provprenumerationer innehåller endast data för de senaste sju dagarna.
+När du först öppnar Explorer (eller rapporten identifiering i realtid) visas identifiering av skadlig e-post för de senaste sju dagarna i standardvyn. Den här rapporten kan också visa ATP-identifieringar, till exempel skadliga url:er som identifieras av [säkra länkar](atp-safe-links.md)och skadliga filer som identifieras av [säkra bilagor](atp-safe-attachments.md). Den här rapporten kan ändras för att visa data för de senaste 30 dagarna (med en betald ATP P2-prenumeration). Provprenumerationer innehåller endast data för de senaste sju dagarna.
+
+|Prenumeration  |Verktyg  |Dagar med data  |
+|---------|---------|---------|
+|ATP P1-testversion     | Realtidsidentifiering        |   7      |
+|ATP P1 betalas     |   Realtidsidentifiering      |    30     |
+|ATP P1 betald testning ATP P2 rättegång     | Hotutforskaren   |   7   |
+|ATP P2 spår     |  Hotutforskaren       |     7    |
+|ATP P2 betald     |     Hotutforskaren    |  30       |
 
 Använd **Visa-menyn** för att ändra vilken information som visas. Verktygstips hjälper dig att avgöra vilken vy som ska användas.
   
@@ -99,7 +107,7 @@ Om du vill visa den här rapporten väljer du **Visa** > **e-post all** > **e-po
 > [!NOTE]
 > Om du får ett felmeddelande som läser **för mycket data för att visa**lägger du till ett filter och begränsar datumintervallet du visar om det behövs. 
 
-Om du vill använda ett filter väljer du **Avsändare,** markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I vårt exempel använde vi **Detektionsteknik** som filter (det finns flera alternativ tillgängliga). Visa information efter avsändare, avsändares domän, mottagare, ämne, filnamn för bifogade filer, en familj för skadlig programvara, skyddsstatus (åtgärder som vidtas av dina hotskyddsfunktioner och policyer i Office 365), detektionsteknik (hur den skadliga koden upptäcktes) och Mer. 
+Om du vill använda ett filter väljer du **Avsändare,** markerar ett objekt i listan och klickar sedan på knappen Uppdatera. I vårt exempel använde vi **Detektionsteknik** som filter (det finns flera alternativ tillgängliga). Visa information efter avsändare, avsändares domän, mottagare, ämne, filnamn för bifogade filer, en familj för skadlig programvara, skyddsstatus (åtgärder som vidtas av dina hotskyddsfunktioner och policyer i Office 365), identifieringsteknik (hur den skadliga koden upptäcktes) med mera. 
 
 ![Visa data om identifierad e-post med identifieringsteknik](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 

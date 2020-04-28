@@ -17,16 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836886"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901028"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Hantera biljetter via ServiceNow
 
-Microsoft 365 security center förbättras med möjlighet att skapa och spåra biljetter i ServiceNow. Säkerhetsadministratörer kan skicka en förbättringsåtgärd för [Microsoft Secure Score](microsoft-secure-score.md) direkt till ServiceNow och skapa en biljett. Både incidenthantering och ändringshanteringsbiljetter kan skapas.
+ServiceNow är en populär molnbaserad datorplattform som hjälper företag att hantera digitala arbetsflöden för företagsverksamhet. Deras Now-plattform har IT-arbetsflöden, medarbetararbetsflöden och kundarbetsflöden. Microsoft samarbetar med ServiceNow för att göra det enklare för IT-administratörer att hantera sina biljetter och uppgifter på båda plattformarna. [Läs mer om ServiceNow](https://www.servicenow.com/)
+
+Microsoft 365 security center utökas nu med möjlighet att skapa och spåra biljetter i ServiceNow. Säkerhetsadministratörer kan skicka en förbättringsåtgärd för [Microsoft Secure Score](microsoft-secure-score.md) direkt till ServiceNow och skapa en biljett. Både incidenthantering och ändringshanteringsbiljetter kan skapas. De kan sedan spåras på startsidan för Microsofts säkerhetscenter och ServiceNow.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -52,7 +54,7 @@ När du skapar en ServiceNow-biljett från Microsoft 365-säkerhetscentret skick
 * Användar-ID som initierar skapandet av biljetten
 * Uppgiftsnamn
 * Beskrivning av uppgift
-* Prioritet
+* Priority
 * Förfallodatum
 * Rekommendationskälla (Användarrekommendation eller Microsoft-rekommendation)
 * Kategorin Rekommendation (enheter, data, appar, identitet, infrastruktur)

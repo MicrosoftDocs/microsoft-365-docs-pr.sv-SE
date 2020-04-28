@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, vanliga frågor och svar, vanliga frågor och svar, svar, affärer
 ms.date: 06/08/2018
-ms.openlocfilehash: e456719d393dc911a6f28455e530c90e8ab9ff5a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 2ace43e0a3bab466d102740434b2a126fb8e099d
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635093"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900699"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Vanliga frågor och svar för Microsoft 365 Business Premium
 
@@ -48,7 +48,7 @@ Microsoft 365 är en integrerad lösning som ger dig tillgång till produktivite
 * Strömlinjeformad distribution av datorer med Windows autopilot.
 
 **Andra avrop** 
-- Microsoft 365 Business Premium-kunder har även tillgång till funktioner för Windows Virtual Desktop och aktivering av delade datorer för Office. Läs [Microsoft 365 Business Premium-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) för att få mer information. Se även [Tjänstebeskrivning Microsoft 365 for Business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- Microsoft 365 Business Premium-kunder har även tillgång till funktioner för Windows Virtual Desktop och aktivering av delade datorer för Office. Läs [Microsoft 365 Business Premium-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) för att få mer information. Se även beskrivningen av [Microsoft 365 för företag.](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>Vem ska överväga att anta Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium är en omfattande, molnbaserad säkerhetslösning som gör att du kan:  
@@ -85,7 +85,7 @@ Befintlig stationär (Win32) programkompatibilitet är stark i Windows 10 och de
 ### <a name="what-is-windows-10-business"></a>Vad är Windows 10 Business? 
 Windows 10 Business är en uppsättning molntjänster och funktioner för enhetshantering som kompletterar Windows 10 Pro och ger tillgång till centraliserad hantering och säkerhetskontroller i Microsoft 365 Business Premium.
 
-Windows 10 Business levereras också med vissa Premium Microsoft Defender-funktioner som reglerad mappåtkomst och nätverksskydd för webbaserade trådar. Den innehåller även Windows autopilot, en tjänst som underlättar distribution av nya Windows 10-datorer.
+Windows 10 Business levereras också med vissa premium Microsoft Defender-funktioner som Kontrollerad mappåtkomst och nätverksskydd för webbaserade hot. Den innehåller även Windows autopilot, en tjänst som underlättar distribution av nya Windows 10-datorer.
 
 Om du har enheter som är licensierade för Windows 7, 8 och 8.1 Professional ger Microsoft 365 Business Premium en uppgradering till Windows 10 Pro, som är kraven för att distribuera Windows 10 Business.
 > [!IMPORTANT]
