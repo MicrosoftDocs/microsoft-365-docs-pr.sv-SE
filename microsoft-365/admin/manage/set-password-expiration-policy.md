@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365. '
-ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dd925ee3a5d2aadb07dceed5a0e896e77921e2a1
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628058"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901016"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -67,7 +67,7 @@ Här är några saker som kan vara bra att känna till om hur denna funktion fun
     
 ## <a name="prevent-last-password-from-being-used-again"></a>Förhindra att det senaste lösenordet används igen
 
-Om du vill förhindra återanvändning av gamla lösenord kan du göra det i Azure AD. Se [Ange förfalloprincip för lösenord i organisationen](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
+Om du vill förhindra återanvändning av gamla lösenord kan du göra det i Azure AD. Se [Upprätthålla uppdateringshistorik](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
 
 Om en medarbetare använder en mobil enhet för att komma åt Microsoft 365 kan du också rensa den för att säkerställa att lösenordet inte längre lagras och återanvänds därifrån. Mer information finns i [Rensa och blockera en tidigare anställds mobila enhet](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
