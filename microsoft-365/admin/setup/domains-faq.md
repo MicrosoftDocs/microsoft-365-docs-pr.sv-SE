@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner genom att hitta svar på dina frågor i vanliga frågor.
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627600"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919487"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -492,7 +492,7 @@ Du kan, men det finns begränsningar:
         
     4. Testa e-post till någon som är på det andra e-postsystemet. Skicka till exempel ett e-postmeddelande till användare C. Det här e-postmeddelandet ska levereras till användare C:s postlåda på den ursprungliga e-postservern.
         
-    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s origninalserverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att det kommer till Användare A:s Office 365-postlåda.
+    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s ursprungliga serverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att den anländer till Office 365-postlådan för användare A.
         
 9. Flytta postlådeinnehåll
     

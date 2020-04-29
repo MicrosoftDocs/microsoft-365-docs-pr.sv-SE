@@ -1,5 +1,5 @@
 ---
-title: Behörigheter i Security & Compliance Center
+title: Behörigheter i Säkerhets- och efterlevnadscentret
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratörer kan lära sig mer om de behörigheter som är tillgängliga i Security & Compliance Center.
-ms.openlocfilehash: 8bfa22f3a4f614c0a72d1f7201c2d299cd3fc337
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8fd288aa9a0a409a005c43a1ff685bf29bfef6b3
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634490"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930189"
 ---
-# <a name="permissions-in-the-security--compliance-center"></a>Behörigheter i Security & Compliance Center
+# <a name="permissions-in-the-security--compliance-center"></a>Behörigheter i Säkerhets- och efterlevnadscentret
 
 Med Security & Compliance Center kan du bevilja behörigheter till personer som utför efterlevnadsuppgifter som enhetshantering, dataförlustskydd, eDiscovery, lagring och så vidare. Dessa personer kan bara utföra de uppgifter som du uttryckligen ger dem åtkomst till. För att komma åt security & Compliance Center måste användarna vara globala administratör eller medlem i en eller flera rollgrupper för & Security Compliance Center.
 
@@ -50,13 +50,21 @@ Hantera behörigheter i Security & Compliance Center ger användarna endast åtk
 
 Om du vill se hur du beviljar åtkomst till Security & Compliance Center läser du [Ge användarna åtkomst till Microsoft 365 Compliance admin center](grant-access-to-the-security-and-compliance-center.md).
 
+||||
+|---|---|---|
 |**Rollgrupp**|**Beskrivning**|**Standardroller tilldelade**|
-|:-----|:-----|:-----|
 |**Efterlevnadsadministratör**<sup>1</sup>|Medlemmar kan hantera inställningar för enhetshantering, dataförlustskydd, rapporter och bevarande.|Ärendehantering <br/><br/> Administratör för efterlevnad <br/><br/> Efterlevnadssökning <br/><br/> Hantering av DLP-efterlevnad <br/><br/> Enhetshantering <br/><br/> Dispositionshantering <br/><br/> Hålla <br/><br/> Hantering av efterlevnad av IB <br/><br/> Hantera aviseringar <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement (RecordManagement) <br/><br/> Hantering av kvarhållning <br/><br/> Granskningsloggar med endast visa <br/><br/> Hantering av endast visningsbevarande <br/><br/> Hantering av endast vy-DLP-efterlevnad <br/><br/> Hantering av endast visningsenheter <br/><br/> Hantering av endast visning av IB-efterlevnad <br/><br/> Hantera aviseringar som endast visas <br/><br/> Endast visningsmottagare <br/><br/> Hantering av endast visningspost|
 |**Administratör för efterlevnadsdata**|Medlemmar kan hantera inställningar för enhetshantering, dataskydd, dataförlustskydd, rapporter och bevarande.|Administratör för efterlevnad <br/><br/> Efterlevnadssökning <br/><br/> Hantering av DLP-efterlevnad <br/><br/> Enhetshantering <br/><br/> Dispositionshantering <br/><br/> Hantering av efterlevnad av IB <br/><br/> Hantera aviseringar <br/><br/> Organisationskonfiguration <br/><br/> RecordManagement (RecordManagement) <br/><br/> Hantering av kvarhållning <br/><br/> Administratör för känslighetsetikett <br/><br/> Granskningsloggar med endast visa <br/><br/> Hantering av endast vy-DLP-efterlevnad <br/><br/> Hantering av endast visningsenheter <br/><br/> Hantering av endast visning av IB-efterlevnad <br/><br/> Hantera aviseringar som endast visas <br/><br/> Endast visningsmottagare <br/><br/> Hantering av endast visningspost <br/><br/> Hantering av endast visningsbevarande|
+|**Innehållsvisning för innehållsutforskaren**|Visa innehållsfilerna i Innehållsutforskaren.|Innehållsvisaren för dataklassificering|
+|**Visa loggning för innehållsutforskaren**|Visa alla objekt i Innehållsutforskaren i listformat.|Visningsprogram för dataklassificeringslista|
 |**Data Utredare**|Medlemmar kan utföra sökningar på postlådor, SharePoint-webbplatser och OneDrive-konton.|Kommunikation <br/><br/> Efterlevnadssökning <br/><br/> Vårdnadshavare <br/><br/> Hantering av datautredningar <br/><br/> Exportera<br/><br/> Förhandsgranska <br/><br/> RMS dekryptera <br/><br/> Recension<br/><br/> Sök och rensa|
 |**eDiscovery Manager**|Medlemmar kan utföra sökningar och spärrar på postlådor, SharePoint Online-webbplatser och OneDrive för företag-platser. Medlemmar kan också skapa och hantera eDiscovery-ärenden, lägga till och ta bort medlemmar i ett ärende, skapa och redigera innehållssökningar som är associerade med ett ärende och komma åt ärendedata i Avancerad eDiscovery. <br/><br/> En eDiscovery Administrator är medlem i rollgruppen eDiscovery Manager som har tilldelats ytterligare behörigheter. Förutom de uppgifter som en eDiscovery Manager kan utföra kan en eDiscovery-administratör: <br/>* Visa alla eDiscovery fall i organisationen. <br/>* Hantera alla eDiscovery fall efter att de lägger sig som en medlem av ärendet. <br/><br/> Den primära skillnaden mellan en eDiscovery Manager och en eDiscovery Administrator är att en eDiscovery-administratör kan komma åt alla ärenden som visas på sidan **eDiscovery-ärenden** i Security & Compliance Center. En eDiscovery-chef kan bara komma åt de ärenden som de har skapat eller ärenden som de är medlemmar i. Mer information om hur du gör en användare till eDiscovery Administrator finns [i Tilldela eDiscovery-behörigheter i Security & Compliance Center](../../compliance/assign-ediscovery-permissions.md).|Ärendehantering <br/><br/> Kommunikation <br/><br/> Efterlevnadssökning <br/><br/> Vårdnadshavare <br/><br/> Exportera <br/><br/> Hålla <br/><br/> Förhandsgranska <br/><br/> RMS dekryptera <br/><br/> Recension|
 |**Global läsare**|Medlemmar har skrivskyddad åtkomst till rapporter, aviseringar och kan se alla konfigurationer och inställningar.<br/><br/> Den primära skillnaden mellan Global Reader och Security Reader är att en global läsare kan komma åt **konfiguration och inställningar**.|Säkerhetsläsare <br/><br/> Känslighetsetikettläsare <br/><br/> Service assurance-vy <br/><br/> Granskningsloggar med endast visa <br/><br/> Hantering av endast vy-DLP-efterlevnad <br/><br/> Hantering av endast visningsenheter <br/><br/> Hantering av endast visning av IB-efterlevnad <br/><br/> Hantera aviseringar som endast visas <br/><br/> Endast visningsmottagare <br/><br/> Hantering av endast visningspost <br/><br/> Hantering av endast visningsbevarande|
+|**Insider riskhantering**|Använd den här rollgruppen för att hantera insiderriskhantering för din organisation i en enda grupp. Genom att lägga till alla användarkonton för utsedda administratörer, analytiker och utredare kan du konfigurera behörigheter för insiderriskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för insiderriskhantering. Detta är det enklaste sättet att snabbt komma igång med insider riskhantering och är en bra passform för organisationer som inte behöver separata behörigheter som definierats för separata grupper av användare.|Ärendehantering <br/><br/> Administratör för insiderriskhantering <br/><br/> Analys av insiderriskhantering <br/><br/> Utredning om hantering av insiderrisker <br/><br/> Tillfälligt bidrag från Insider riskhantering|
+|**Administratörer för insiderriskhantering**|Använd den här rollgruppen för att först konfigurera insiderriskhantering och senare för att segregera insiderriskadministratörer till en definierad grupp. Användare i den här rollgruppen kan skapa, läsa, uppdatera och ta bort principer för riskhantering för insider, globala inställningar och rollgruppstilldelningar.|Ärendehantering <br/><br/> Administratör för insiderriskhantering|
+|**Analytiker på insiderriskhantering**|Använd den här gruppen om du vill tilldela behörigheter till användare som fungerar som insiderriskfallsanalytiker. Användare i den här rollgruppen kan komma åt alla åtkomstbetoningar, ärenden och meddelanden till alla insiderriskhanteringsaviseringar, ärenden och meddelanden. De kan inte komma åt innehållsutforskaren för insiderrisk.|Ärendehantering <br/><br/> Analys av insiderriskhantering|
+|**Utredare av insiderriskhantering**|Använd den här gruppen om du vill tilldela behörigheter till användare som fungerar som insiderriskdatautredare. Användare i den här rollgruppen kan komma åt alla aviseringar om riskhantering för insider, ärenden, meddelanden mallar och Innehållsutforskaren för alla fall.|Ärendehantering <br/><br/> Utredning om hantering av insiderrisker|
+|**IRM-bidragsgivare**|Den här rollgruppen är synlig, men används endast av bakgrundstjänster.|Tillfälligt bidrag från Insider riskhantering|
 |**MailFlow-administratör**|Medlemmar kan övervaka och visa insikter och rapporter om e-postflödet i Security & Compliance Center. Globala administratörer kan lägga till vanliga användare i den här gruppen, men om användaren inte är medlem i exchange-administratörsgruppen har användaren inte åtkomst till Exchange-administratörsrelaterade uppgifter.|Endast visningsmottagare|
 |**Organisationsledning**<sup>1</sup>|Medlemmar kan styra behörigheter för åtkomst till funktioner i Security & Compliance Center och även hantera inställningar för enhetshantering, dataförlustskydd, rapporter och bevarande. <br/><br/> Observera att för att en användare som inte är global administratör ska kunna se listan över enheter som hanteras av MDM för Microsoft 365 och utföra åtgärder på dessa enheter, till exempel att dra tillbaka en enhet från MDM för Office 365, måste användaren vara Exchange-administratör. <br/><br/> lobal-administratörer läggs automatiskt till som medlemmar i den här rollgruppen.|Granskningsloggar <br/><br/> Ärendehantering <br/><br/> Administratör för efterlevnad <br/><br/> Efterlevnadssökning <br/><br/> Hantering av DLP-efterlevnad <br/><br/> Enhetshantering <br/><br/> Dispositionshantering <br/><br/> Hålla <br/><br/> Hantering av efterlevnad av IB <br/><br/> Hantera aviseringar <br/><br/> Organisationskonfiguration <br/><br/> Karantän <br/><br/> RecordManagement (RecordManagement) <br/><br/> Hantering av kvarhållning <br/><br/> Rollhantering <br/><br/> Sök och rensa <br/><br/> Säkerhetsadministratör <br/><br/> Säkerhetsläsare <br/><br/> Administratör för känslighetsetikett <br/><br/> Känslighetsetikettläsare <br/><br/> Service assurance-vy <br/><br/> Granskningsloggar med endast visa <br/><br/> Hantering av endast vy-DLP-efterlevnad <br/><br/> Hantering av endast visningsenheter <br/><br/> Hantering av endast visning av IB-efterlevnad <br/><br/> Hantera aviseringar som endast visas <br/><br/> Endast visningsmottagare <br/><br/> Hantering av endast visningspost <br/><br/> Hantering av endast visningsbevarande|
 |**Karantänadministratör**|Medlemmar kan komma åt alla karantänåtgärder. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md)|Karantän|
@@ -67,6 +75,7 @@ Om du vill se hur du beviljar åtkomst till Security & Compliance Center läser 
 |**Säkerhetsläsare**|Medlemmar har skrivskyddad åtkomst till ett antal säkerhetsfunktioner i Identity Protection Center, Privileged Identity Management, Monitor Office 365 Service Health och Security & Compliance Center. <br/><br/> Medlemskap i den här rollgruppen synkroniseras mellan tjänster och hanteras centralt. Medlemmar i den här rollgruppen kan inkludera administratörer över flera tjänster samt externa partnergrupper och Microsoft Support. Som standard kanske den här gruppen inte tilldelas några roller. Den kommer dock att vara medlem i rollen Säkerhetsläsare i Azure Active Directory och ärver funktionerna i den rollen. Om du vill hantera behörigheter centralt kan du göra ändringar i den här rollen i administrationscentret för Azure Active Directory – mer information finns [i Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Om du redigerar den här rollgruppen i Security & Compliance Center gäller dessa ändringar endast för Security & Compliance Center och inte andra tjänster, medan ändringar som görs i administrationscentret för Active Directory i Azure påverkar alla tjänster|Säkerhetsläsare <br/><br/> Känslighetsetikettläsare <br/><br/> Hantering av endast vy-DLP-efterlevnad <br/><br/> Hantering av endast visningsenheter <br/><br/> Hantering av endast visning av IB-efterlevnad <br/><br/> Hantera aviseringar som endast visas|
 |**Användare av servicegaranti**|Medlemmar kan komma åt avsnittet Service assurance i Security & Compliance Center. Service assurance innehåller rapporter och dokument som beskriver Microsofts säkerhetsrutiner för kunddata som lagras i Office 365. Den innehåller också oberoende granskningsrapporter från tredje part om Office 365. Mer information finns [i Service assurance i Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/service-assurance).|Service assurance-vy|
 |**Översyn av tillsynen**|Medlemmar kan skapa och hantera de principer som definierar vilka meddelanden som ska granskas i en organisation. Mer information finns i [Konfigurera principer för kommunikationsefterlevnad för din organisation](../../compliance/communication-compliance-configure.md).|Administratör för tillsynsgranskning|
+|
 
 > [!NOTE]
 > <sup>1.</sup> Den här rollgruppen tilldelar inte medlemmarna de behörigheter som krävs för att söka i granskningsloggen eller för att använda rapporter som kan innehålla Exchange-data, till exempel DLP- eller ATP-rapporterna. Om du vill söka i granskningsloggen eller visa alla rapporter måste en användare tilldelas behörigheter i Exchange Online. Detta beror på att den underliggande cmdlet som används för att söka i granskningsloggen är en Exchange Online-cmdlet. Globala administratörer kan söka i granskningsloggen och visa alla rapporter eftersom de automatiskt läggs till som medlemmar i rollgruppen Organisationshantering i Exchange Online. Mer information finns [i Sök i granskningsloggen i Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
@@ -78,29 +87,31 @@ I följande tabell visas de tillgängliga rollerna och de rollgrupper som de har
 Observera att följande roller inte tilldelas rollgruppen Organisationshantering som standard:
 
 - Kommunikation
-
 - Vårdnadshavare
-
+- Innehållsvisaren för dataklassificering
+- Visningsprogram för dataklassificeringslista
 - Hantering av datautredningar
-
 - Exportera
-
+- Administratör för insiderriskhantering
+- Analys av insiderriskhantering
+- Utredning om hantering av insiderrisker
+- Tillfälligt bidrag från Insider riskhantering
 - Förhandsgranska
-
 - Recension
-
 - RMS dekryptera
-
 - Administratör för tillsynsgranskning
 
+||||
+|---|---|---|
 |**Roll**|**Beskrivning**|**Standardrollgrupptilldelningar**|
-|:-----|:-----|:-----|
 |**Granskningsloggar**|Aktivera och konfigurera granskning för organisationen, visa organisationens granskningsrapporter och exportera sedan rapporterna till en fil.|Organisationshantering <br/><br/> Hantering av arkivhandlingar <br/><br/> Säkerhetsadministratör|
-|**Ärendehantering**|Skapa, redigera, ta bort och kontrollera åtkomsten till eDiscovery-ärenden.|Administratör för efterlevnad <br/><br/> eDiscovery Manager <br/><br/> Organisationshantering|
+|**Ärendehantering**|Skapa, redigera, ta bort och kontrollera åtkomsten till eDiscovery-ärenden.|Administratör för efterlevnad <br/><br/> eDiscovery Manager <br/><br/> Hantering av insiderrisk <br/><br/> Administratörer för insiderriskhantering <br/><br/> Analytiker på insiderriskhantering <br/><br/> Utredare av insiderriskhantering <br/><br/> Organisationshantering|
 |**Kommunikation**|Hantera all kommunikation med de vårdnadshavare som identifierats i ett avancerat eDiscovery-fall.  Skapa spärra meddelanden, håll upp påminnelser och eskalering till hantering. Spåra bekräftelse av förvaringsrum och hantera åtkomst till den depåportal som används av varje vårdnadshavare i ett fall för att spåra kommunikation i de fall där de identifierades som vårdnadshavare.|eDiscovery Manager|
 |**Administratör för efterlevnad**|Visa och redigera inställningar och rapporter för efterlevnadsfunktioner.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering|
 |**Efterlevnadssökning**|Gör sökningar över postlådor och få en uppskattning av resultaten.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> eDiscovery Manager <br/><br/> Organisationshantering <br/><br/> Säkerhetsoperatör|
 |**Vårdnadshavare**|Identifiera och hantera vårdnadshavare för avancerade eDiscovery-ärenden och använd informationen från Azure Active Directory och andra källor för att hitta datakällor som är associerade med vårdnadshavare. Associera andra datakällor som postlådor, SharePoint-webbplatser och Teams med vårdnadshavare i ett ärende.  Placera en juridisk spärr på de datakällor som är associerade med vårdnadshavare för att bevara innehållet i samband med ett ärende.|eDiscovery Manager|
+|**Innehållsvisaren för dataklassificering**|Visa återgivning på plats av filer i Innehållsutforskaren.|Innehållsvisning för innehållsutforskaren|
+|**Visningsprogram för dataklassificeringslista**|Visa listan över filer i innehållsutforskaren.|Visa loggning för innehållsutforskaren|
 |**Hantering av datautredningar**|Skapa, redigera, ta bort och kontrollera åtkomsten till dataundersökningar.|Data Utredare|
 |**Enhetshantering**|Visa och redigera inställningar och rapporter för enhetshanteringsfunktioner.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering <br/><br/> Säkerhetsadministratör|
 |**Dispositionshantering**|Kontrollbehörigheter för åtkomst till manuell disposition i Security & Compliance Center.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering|
@@ -108,6 +119,10 @@ Observera att följande roller inte tilldelas rollgruppen Organisationshantering
 |**Exportera**|Exportera postlåda och webbplatsinnehåll som returneras från sökningar.|eDiscovery Manager|
 |**Hålla**|Placera innehåll i postlådor, webbplatser och gemensamma mappar. När det är spärrat lagras en kopia av innehållet på en säker plats. Innehållsägare kan fortfarande ändra eller ta bort det ursprungliga innehållet.|Administratör för efterlevnad <br/><br/> eDiscovery Manager <br/><br/> Organisationshantering|
 |**Hantering av efterlevnad av IB**|Visa, skapa, ta bort, ändra och testa principer för informationsbarriär.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering <br/><br/> Säkerhetsadministratör|
+|**Administratör för insiderriskhantering**|Skapa, redigera, ta bort och kontrollera åtkomsten till insiderriskhanteringsfunktionen.|Hantering av insiderrisk <br/><br/> Administratörer för insiderriskhantering|
+|**Analys av insiderriskhantering**|Få tillgång till alla åtkomstberedskap, ärenden och meddelanden mallar.|Hantering av insiderrisk <br/><br/> Analytiker på insiderriskhantering|
+|**Utredning om hantering av insiderrisker**|Få tillgång till alla aviseringar om hantering av insiderrisker, ärenden, meddelanden mallar och Content Explorer för alla fall.|Hantering av insiderrisk <br/><br/> Utredare av insiderriskhantering|
+|**Tillfälligt bidrag från Insider riskhantering**|Den här rollgruppen är synlig, men används endast av bakgrundstjänster.|IRM-bidragsgivare|
 |**Hantera aviseringar**|Visa och redigera inställningar och rapporter för aviseringar.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering <br/><br/> Säkerhetsadministratör <br/><br/> Säkerhetsoperatör|
 |**Organisationskonfiguration**|Kör, visa och exportera granskningsrapporter och hantera efterlevnadsprinciper för DLP, enheter och bevarande.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering|
 |**Förhandsgranska**|Visa en lista över objekt som returneras från innehållssökningar och öppna varje objekt från listan för att visa dess innehåll.|eDiscovery Manager|
@@ -132,3 +147,4 @@ Observera att följande roller inte tilldelas rollgruppen Organisationshantering
 |**Endast visningsmottagare**|Visa information om användare och grupper.|MailFlow-administratör <br/><br/> Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering|
 |**Hantering av endast visningspost**|Visa konfiguration och rapporter för funktionen Posthantering.|Administratör för efterlevnad <br/><br/> Administratör för efterlevnadsdata <br/><br/> Organisationshantering|
 |**Hantering av endast visningsbevarande**|Visa konfigurationen och rapporterna för funktionen Bevarandehantering.|Administratör för efterlevnadsdata <br/><br/> Organisationshantering <br/><br/> Administratör för efterlevnad|
+|

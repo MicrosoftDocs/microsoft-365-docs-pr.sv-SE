@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan återställa dina lösenord med hjälp av verktyget för återställning av lösenord med självbetjäning.
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617152"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919441"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -65,12 +65,12 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sekretesssidan för **Inställningars &amp; säkerhet** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a> **Settings** \>
+1. Gå till sekretesssidan för Sekretess för Inställningar **i** \> ** &amp; ** <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administratörscentret.</a> **Settings** \>
 
 ::: moniker-end
 
    
-2. Under Låt dina personer återställa sina egna lösenord väljer du länken för **Azure AD-administrationscentret**. **Let your people reset their own passwords** Du får Azure kostnadsfritt!
+2. Välj **Självbetjäningslösenordsåterställning**väljer du länken för **Gå till Azure-portalen för att aktivera återställning av lösenord för självbetjäning**. Du får Azure kostnadsfritt!
   
 3. Välj **Användare** i den vänstra navigeringen och välj sedan **Återställning av lösenord**.
   

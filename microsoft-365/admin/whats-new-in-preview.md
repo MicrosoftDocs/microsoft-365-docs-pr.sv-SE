@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: e0f7242ff144b5e4b42a6cb1713b2ad5df41f2f3
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907243"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919766"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -49,6 +49,7 @@ Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
 - [Nyheter i Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Nyheter i Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Nyheter i administrationscentret för Exchange](https://docs.microsoft.com/Exchange/whats-new)
 - [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
 
 ## <a name="march-2020"></a>Mars 2020
@@ -96,6 +97,7 @@ De nya produktnamnen träder i kraft den 21 april 2020. Detta är en ändring av
 ### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
 
 [Nyheter i Microsoft 365 webbserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)I den här månadens avsnitt lyfter vi fram 3-årsjubileet av Microsoft Teams och täcker nya funktioner, inklusive förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för handlinjechefer med Shifts-appen, Teams och Skypes konsumentinteroperabilabilabilabila sig med mera.
+
 
 ## <a name="february-2020"></a>Februari 2020
 
@@ -259,7 +261,7 @@ Tekniskt sett är detta inte Microsoft 365 admin center nyheter att berätta, me
 > [!IMPORTANT]
 > Nu kan du komma till administrationscentret för SharePoint med en vanlig URL:[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-Mer information finns [i Nyheter i Administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+Mer information finns [i Nyheter i Administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
 ## <a name="september-2019"></a>September 2019
 

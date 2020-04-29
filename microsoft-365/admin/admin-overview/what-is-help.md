@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Läs mer om alla sätt du kan få hjälp med administrationscentret för Microsoft 365.
-ms.openlocfilehash: f9d42057e1ad16108237b9f53eedf60736cd6bd5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 847281acc368f45ffaf466cc3877c042507a7f79
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894751"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930201"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -94,6 +94,7 @@ Om du är administratör är [admin.microsoft.com](https://admin.microsoft.com) 
     </li>
 </ul>
  
+
 ## <a name="integrated-help"></a>Integrerad hjälp
 
 Hjälpen är integrerad i hela administrationscentret, så den finns precis där när du behöver den. Högst upp på många sidor hittar du hjälptext i linje som ger en informativ översikt över den aktuella uppgiften, samt länkar till artiklar som gör att du snabbt kan hitta officiell dokumentation för mer djupgående inlärning.
@@ -102,9 +103,9 @@ Hjälpen är integrerad i hela administrationscentret, så den finns precis där
 
 ## <a name="modern-self-help-powered-by-ai"></a>Modern självhjälp som drivs av AI
 
-Om du väljer knappen "Behöver du hjälp" i Microsoft 365-administrationscentret öppnas vår moderna självhjälpsupplevelse som drivs av artificiell intelligens. Om du till exempel söker efter *verifiera min domän*får du stegen plus några artiklar som vi tror hjälper dig. Vi använder maskininlärning för att visa den närmaste lösningen som har visat sig vara till hjälp för andra administratörer som har angett liknande frågor.
+Om du vill öppna vår moderna självhjälpsupplevelse som drivs av artificiell intelligens väljer du knappen **Hjälp för behov** i microsoft 365-administrationscentret. Om du till exempel söker efter "verifiera min domän" får du stegen plus några artiklar som vi tror hjälper dig. Vi använder maskininlärning för att visa den närmaste lösningen som har hjälpt andra administratörer som har angett liknande frågor.
 
-Eller, för de tillfällen då du inte riktigt vet hur man får något gjort i din specifika situation, använd supportassistenten. Denna erfarenhet är för närvarande endast tillgänglig på engelska. Använd bara växlingsknappen högst upp i fönstret "Behöver du hjälp" för att aktivera den. Supportassistenten tillhandahåller ett konversationsgränssnitt för att få hjälp. Ange din fråga, och chatbot kommer att ställa klargöra frågor för att få dig till rätt svar för din specifika situation. Se det som din virtuella hjälpare att upptäcka lösningar och slutföra uppgifter.
+Eller, för de tillfällen då du inte riktigt vet hur man får något gjort i din specifika situation, använd supportassistenten. För närvarande är denna erfarenhet endast tillgänglig på engelska. Om du vill aktivera Supportassistenten använder du bara växlingsknappen högst upp i hjälpfönstret **Behöver du.** Supportassistenten tillhandahåller ett konversationsgränssnitt som hjälper dig. När du har angett din fråga ställer chatboten klargörande frågor för att få dig till rätt svar för din specifika situation. Se det som din virtuella hjälpare att upptäcka lösningar och slutföra uppgifter.
 
 ![Modern självhjälp](../../media/help-options.png)
 
@@ -112,4 +113,4 @@ Naturligtvis besvaras ibland frågor bäst av människor. Om vår moderna själv
 
 ## <a name="guides-and-articles"></a>Guider och artiklar
 
-Om du letar efter omfattande distributionsguider, snabba steg-för-steg-procedurer eller PowerShell-cmdlets letar du upp oss på webben. Vi uppdaterar innehåll ofta och försöker ge dig den senaste informationen. Kolla in våra artiklar och guider på [Microsoft 365 Documentation](https://docs.microsoft.com/microsoft-365/) site.
+Om du letar efter omfattande distributionsguider, snabba steg-för-steg-procedurer eller PowerShell-cmdlets letar du upp oss på webben. Vi uppdaterar innehåll ofta och försöker ge dig den senaste informationen. Kolla in våra artiklar och guider på [Microsoft 365 Documentation](https://docs.microsoft.com/microsoft-365/) webbplats.
