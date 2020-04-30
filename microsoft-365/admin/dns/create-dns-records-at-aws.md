@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Amazon Web Services (AWS) för Microsoft.
-ms.openlocfilehash: 1ce4d47dce2fce177efafade49b78ea706cf14e2
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: daac9a8efedc8a2710217e352d9793ead954d2c3
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919545"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939361"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Skapa DNS-poster på Amazon Web Services (AWS) för Microsoft
 
@@ -35,7 +35,7 @@ Om AWS är din DNS-värd följer du stegen i den här artikeln för att verifier
   
 När du har lagt till dessa poster på AWS konfigureras domänen så att den fungerar med Microsoft-tjänster.
   
-Mer information om webbhotell och DNS för webbplatser med Microsfot finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar tillägget Report Message för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921582"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939481"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
@@ -133,7 +133,7 @@ Mer information om hur du använder tillägget finns i [Använda tillägget Rapp
 
    ![Meddela tilläggssida](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>Läs om hur du använder tillägget Rapportmeddelande
+## <a name="learn-how-to-use-the-report-message-add-in"></a>Läs om hur du använder tillägget Rapportmeddelande
 
 Personer som har tillägget tilldelats för dem ser följande ikoner:
 
@@ -147,7 +147,7 @@ Personer som har tillägget tilldelats för dem ser följande ikoner:
 
 När du meddelar användarna om tillägget Rapportmeddelande ska du inkludera en länk till [Använda tillägget Rapportmeddelande](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Granska eller redigera inställningar för tillägget Rapportmeddelande
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Granska eller redigera inställningar för tillägget Rapportmeddelande
 
 1. Gå till sidan **Tjänster & tillägg på** sidan Tjänster & på <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
@@ -158,3 +158,11 @@ När du meddelar användarna om tillägget Rapportmeddelande ska du inkludera en
 3. Granska och redigera inställningar som är lämpliga för din organisation i det utfällbara meddelandet **Redigera rapportmeddelande** som visas. Klicka på **Spara** när du är klar.
 
    ![Inställningar för tillägget Rapportmeddelande](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>Visa och granska rapporterade meddelanden
+
+Om du vill granska meddelanden som användarna rapporterar till Microsoft har du följande alternativ:
+
+- Använd portalen För administratörsbidrag. Mer information finns i [Visa användarinlämningar till Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+
+- Skapa en regel för e-postflöde (kallas även transportregel) för att skicka kopior av rapporterade meddelanden. Instruktioner finns i [Använda regler för e-postflöde för att se vad användarna rapporterar till Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

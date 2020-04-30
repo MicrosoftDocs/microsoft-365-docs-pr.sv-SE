@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Cloudflare för Microsoft.
-ms.openlocfilehash: ccd629dfdec24e509144c205b748a883cb65d554
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 116132d096db61e7004315dcf159fc78dd790d43
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919633"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939325"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Skapa DNS-poster på Cloudflare för Microsoft
 
@@ -35,7 +35,6 @@ Om Cloudflare är din DNS-värd följer du stegen i den här artikeln för att v
   
 När du har lagt till dessa poster på Cloudflare konfigureras domänen så att den fungerar med Microsoft 365-tjänster.
   
-Mer information om webbvärdverktyg och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 

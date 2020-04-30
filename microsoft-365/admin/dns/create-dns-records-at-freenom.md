@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Freenom för Microsoft.
-ms.openlocfilehash: 828a1728606338017383857e4b59d6a62d087fc7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629569"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939233"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Skapa DNS-poster på Freenom för Microsoft
 
@@ -36,7 +36,6 @@ ms.locfileid: "43629569"
   
 Om du trots tjänstbegränsningarna väljer att hantera dina egna Microsoft DNS-poster på Freenom följer du stegen i den här artikeln för att verifiera domänen och konfigurera DNS-poster för e-post och andra tjänster.
   
-Mer information om webbhotell och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 > Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -44,7 +43,7 @@ Mer information om webbhotell och DNS för webbplatser med Microsoft finns i [An
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="bkmk_txt"> </a>
 
-Innan du använder domänen med Microsoft måste vi se till att du äger den. Din förmåga att logga in på ditt konto hos domänregistratorer och skapa DNS-posten bevisar för Microsoft att du äger domänen.
+Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -73,7 +72,7 @@ Innan du använder domänen med Microsoft måste vi se till att du äger den. Di
     
     |**Name**|**Type (typ)**|**TTL**|**Target (mål)**|
     |:-----|:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |TXT  <br/> |3600 (sekunder)  <br/> |MS=msXXXXXXXX  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(lämna tomt)  <br/> |TXT  <br/> |3600 (sekunder)  <br/> |MS=msXXXXXXXX  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
@@ -83,11 +82,11 @@ Innan du använder domänen med Microsoft måste vi se till att du äger den. Di
   
 8. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär posten.
+Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och begär posten.
   
-När Microsoft hittar rätt TXT-post verifieras domänen.
+När Microsoft hittar rätt TXT-post är din domän verifierad.
   
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Microsofts administrationscenter.</a>
+1. I Microsoft-administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domäner</a>.
 
     
 2. På sidan **Domains** väljer du den domän du verifierar. 
@@ -105,7 +104,7 @@ När Microsoft hittar rätt TXT-post verifieras domänen.
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägg till en MX-post så att e-post för din domän kommer till Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="bkmk_mx"> </a>
 
 1. För att komma igång, gå till din domänsida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.
@@ -150,7 +149,7 @@ När Microsoft hittar rätt TXT-post verifieras domänen.
   
 10. Om det finns några andra MX-poster tar du bort dem alla. För varje post väljer du **Ta bort**. När meddelandet Vill du verkligen ta bort den **OK** **här posten?**
     
-## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-poster som krävs för Microsoft
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-posterna som krävs för Microsoft
 <a name="bkmk_cname"> </a>
 
 1. För att komma igång, gå till din domänsida i Freenom med hjälp av [denna länk](https://my.freenom.com/). Du uppmanas att logga in först.

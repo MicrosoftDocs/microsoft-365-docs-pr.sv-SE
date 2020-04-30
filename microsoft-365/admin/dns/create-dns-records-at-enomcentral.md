@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på eNomCentral för Microsoft.
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919499"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939277"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Skapa DNS-poster på eNomCentral för Microsoft
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919499"
 Om eNomCentral är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
 När du har lagt till dessa poster på eNomCentral konfigureras domänen så att den fungerar med Microsoft-tjänster.
-  
-Mer information om webbvärdverktyg och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -64,7 +63,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:46)](https://support.of
   
 4. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
-    \(Välj värdet **Posttyp** i listrutan.\) 
+    Välj värdet **Posttyp** i listrutan.
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.of
   
 5. I rutorna för de sex nya posterna skriver du in, eller kopierar och klistrar in, följande värden.
     
-        (Choose the **Record Type** value from the drop-down list.) 
+Välj värdet **Posttyp** i listrutan.
         
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
@@ -175,7 +174,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:24)](https://support.of
     |enterpriseregistration  <br/> |CNAME (Alias)  <br/> |enterpriseregistration.windows.net.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME (Alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
    
-    ![eNom-BP-Konfigurera-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. Välj **spara**.
     
@@ -203,7 +202,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.of
   
 4. I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.
     
-    (Välj värdet **Posttyp** i listrutan.) 
+Välj värdet **Posttyp** i listrutan.
     
     |**Host Name**|**Record Type**|**Adress**|
     |:-----|:-----|:-----|

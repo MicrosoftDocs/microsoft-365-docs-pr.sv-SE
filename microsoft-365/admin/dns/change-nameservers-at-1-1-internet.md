@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Lär dig hur du kan konfigurera Office 365 som drivs av 21Vianet för att hantera dina DNS-poster, när 1&1 Internet är DNS-värd.
-ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630013"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939416"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Ändra namnservrar för att konfigurera Microsoft 365 med 1&1 IONOS
 
@@ -38,7 +38,7 @@ Följ de här anvisningarna om du vill att Microsoft 365 ska hantera dina Micros
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
 
-Innan du använder domänen med Microsoft 365 måste vi se till att du äger den. Din förmåga att logga in på ditt konto hos domänregistratorer och skapa DNS-posten bevisar för Microsoft 365 att du äger domänen.
+Innan du använder din domän med Microsoft 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft 365 att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -62,7 +62,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.of
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs:** Detta är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från tabellen i Microsoft 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Lämna det här fältet tomt.)  <br/> |MS=ms *XXXXXXXX* <br/> **Obs:** Detta är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Välj **Spara**och **spara** sedan igen. 
@@ -71,9 +71,9 @@ Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.of
     
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft 365 och begär att Microsoft 365 ska söka efter posten.
+Nu när du har lagt till posten på domänregistratorns webbplats går du tillbaka till Microsoft 365 och begär att Microsoft 365 letar efter posten.
   
-När Microsoft 365 hittar rätt TXT-post verifieras domänen.
+När Microsoft 365 hittar rätt TXT-post är din domän verifierad.
   
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
@@ -138,7 +138,7 @@ Om du vill slutföra inrättandet av din domän med Microsoft 365 ändrar du dom
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![Ange namnservervärden](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Välj **Spara**.
     

@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Du och dina användare kan skicka falska negativa och falska positiva skräppostmeddelanden till Microsoft för analys. '
-ms.openlocfilehash: f6dbd808fac54ae273c21773bf8caeabce09b7fb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 928809a8d00e082bf3150abb27dc493c2b82c070
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631247"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939433"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden manuellt till Microsoft för analys
 
@@ -79,75 +79,4 @@ Om ett meddelande har identifierats felaktigt som skräppost kan du skicka medde
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Skapa en regel för e-postflöde för att ta emot kopior av meddelanden som rapporteras till Microsoft
 
-Du kan skapa en regel för e-postflöde (kallas även en transportregel) som söker efter e-postmeddelanden som rapporteras till Microsoft med hjälp av de metoder som beskrivs i det här avsnittet, och du kan konfigurera mottagare av hemlig kopia så att de tar emot kopior av dessa rapporterade meddelanden.
-
-Du kan skapa e-postflödesregeln i Administrationscenter för Exchange (EAC) och PowerShell (Exchange Online PowerShell för Microsoft 365-kunder. Exchange Online Protection PowerShell för fristående EOP-kunder).
-
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
-
-- Du måste tilldelas behörigheter i Exchange Online innan du kan göra dessa procedurer. Du måste ha tilldelats rollen **Transportregler,** som tilldelas rollerna **Organisationshantering,** **Efterlevnadshantering**och **Arkivhandling** som standard. Mer information finns [i Hantera rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
-
-- Information om hur du öppnar EAC i Exchange Online finns [i Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
-
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
-
-- Mer information om regler för e-postflöde i Exchange Online och fristående EOP finns i följande avsnitt:
-
-  - [Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-
-  - [Villkor och undantag för e-postflödesregel (predikat) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
-
-  - [Regelåtgärder för e-postflöde i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
-
-### <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Använda EAC för att skapa en regel för e-postflöde för att ta emot kopior av rapporterade meddelanden
-
-1. Gå till **Regler för** **e-postflöde** \> i EAC .
-
-2. Klicka på](../../media/ITPro-EAC-AddIcon.png) Ikonen Lägg **till** ![och välj sedan Skapa en ny **regel**.
-
-3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
-
-   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Till exempel hemlig kopia meddelanden som rapporterats till Microsoft.
-
-   - Klicka på **Fler alternativ**.
-
-   - **Använd den här regeln om:** Välj **Mottagaradressen** \> **innehåller något av dessa ord**: I dialogrutan Ange ord eller **fraser** anger du ett av följande värden, klickar på **Lägg till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepar tills du har angett alla värden.
-
-     - `junk@office365.microsoft.com`
-     - `abuse@messaging.microsoft.com`
-     - `phish@office365.microsoft.com`
-     - `false_positive@messaging.microsoft.com`
-
-     Om du vill redigera en post](../../media/ITPro-EAC-EditIcon.png)markerar du den och klickar på **Ikonen Redigera** ![redigering . Om du vill ta bort en](../../media/ITPro-EAC-DeleteIcon.png)post markerar du den och klickar på Ikonen Ta bort ta **bort** ![.
-
-     När du är klar klickar du på **OK**.
-
-   - **Gör så här:** Välj **Lägg till mottagare** \> **i rutan Hemlig kopia**. Leta reda på och markera de mottagare som du vill lägga till i dialogrutan som visas. När du är klar klickar du på **OK**.
-
-4. Du kan göra ytterligare val för att granska regeln, testa regeln, aktivera regeln under en viss tidsperiod och andra inställningar. Vi rekommenderar att du testar regeln innan du tillämpar den.
-
-5. Klicka på **Spara** när du är klar.
-
-### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Använda PowerShell för att skapa en regel för e-postflöde för att ta emot kopior av rapporterade meddelanden
-
-I det här exemplet skapas en ny regel för e-postflöde med namnet Hemlig kopia meddelanden som rapporterats till Microsoft och som söker efter e-postmeddelanden som rapporteras till Microsoft med hjälp av de metoder som beskrivs i det här avsnittet och lägger till användarna laura@contoso.com och julia@contoso.com som mottagare av hemlig kopia.
-
-```powershell
-New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
-```
-
-Detaljerad information om syntax och parametrar finns i [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
-
-### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
-
-Så här kontrollerar du att du har konfigurerat regler för e-postflöde för att ta emot kopior av rapporterade meddelanden:
-
-- Gå till EAC-regler för att skicka **Edit** ![till](../../media/ITPro-EAC-EditIcon.png) **E-postflödesregler** \> **Rules** \> och markera regeln \> klicka på Redigera redigera ikon och kontrollera inställningarna.
-
-- I PowerShell kör du följande kommando för att verifiera inställningarna:
-
-  ```powershell
-  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
-  ```
-
-- Skicka ett testmeddelanden till en av de rapporterande e-postadresserna och verifiera resultaten.
+Instruktioner finns i [Använda regler för e-postflöde för att se vad användarna rapporterar till Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

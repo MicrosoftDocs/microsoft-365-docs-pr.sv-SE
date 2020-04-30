@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på OVH för Microsoft.
-ms.openlocfilehash: 01c455f54a7ee2efc6114dba1c01170b97ea5f71
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1f29b6f6464e781768997be0969914771ec5703
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629293"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939137"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Skapa DNS-poster på OVH för Microsoft
 
@@ -37,17 +37,16 @@ Det här är de viktigaste posterna att lägga till.
   
 - [Skapa DNS-poster på OVH för Microsoft](#create-dns-records-at-ovh-for-microsoft)
     
-- [Lägg till en MX-post så att e-post för din domän kommer till Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [Lägga till en MX-post så att e-post för din domän kommer till Microsoft.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Lägga till CNAME-poster som krävs för Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
+- [Lägga till CNAME-posterna som krävs för Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Lägga till en TXT-post för SPF för att förhindra skräppost](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Lägg till de två SRV-poster som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
+- [Lägga till de två SRV-posterna som krävs för Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
 När du har lagt till dessa poster på OVH konfigureras domänen så att den fungerar med Microsoft-tjänster.
-  
-Mer information om webbhotell och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -55,7 +54,7 @@ Mer information om webbhotell och DNS för webbplatser med Microsoft finns i [An
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 <a name="bkmk_txt"> </a>
 
-Innan du använder domänen med Microsoft måste vi se till att du äger den. Din förmåga att logga in på ditt konto hos domänregistratorer och skapa DNS-posten bevisar för Microsoft att du äger domänen.
+Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
@@ -84,7 +83,7 @@ Innan du använder domänen med Microsoft måste vi se till att du äger den. Di
     
     |**Record type**|**Underdomän**|**TTL**|**Värde**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |MS=msxxxxxxxx  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(lämna tomt)  <br/> |3600 (sekunder)  <br/> |MS=msxxxxxxxx  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Välj **Bekräfta**. 
     
@@ -92,9 +91,9 @@ Innan du använder domänen med Microsoft måste vi se till att du äger den. Di
   
 8. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär posten.
+Nu när du har lagt till posten på domänregistratorns webbplats kan du gå tillbaka till Microsoft och begär posten.
   
-När Microsoft hittar rätt TXT-post verifieras domänen.
+När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
@@ -113,7 +112,7 @@ När Microsoft hittar rätt TXT-post verifieras domänen.
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägg till en MX-post så att e-post för din domän kommer till Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="bkmk_mx"> </a>
 
 1. Kom igång genom att gå till domänsidan på OVH med [den här länken](https://www.ovh.com/manager/). Du uppmanas att logga in först.
@@ -161,7 +160,7 @@ När Microsoft hittar rätt TXT-post verifieras domänen.
   
 10. Välj **Bekräfta**.
     
-## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-poster som krävs för Microsoft
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-posterna som krävs för Microsoft
 <a name="bkmk_cname"> </a>
 
 1. Kom igång genom att gå till domänsidan på OVH med [den här länken](https://www.ovh.com/manager/). Du uppmanas att logga in först.
@@ -248,7 +247,7 @@ När Microsoft hittar rätt TXT-post verifieras domänen.
     
     ![OVH Add TXT record for SPF and Confirm](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägg till de två SRV-poster som krävs för Microsoft
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägga till de två SRV-posterna som krävs för Microsoft
 <a name="bkmk_srv"> </a>
 
 1. Kom igång genom att gå till domänsidan på OVH med [den här länken](https://www.ovh.com/manager/). Du uppmanas att logga in först.

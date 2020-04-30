@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Förstå varför det ibland måste göras att byta abonnemang manuellt eller genom att ringa support.
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631935"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943149"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Varför kan jag inte byta Microsoft 365 för affärsplaner?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Den här artikeln gäller det gamla administrationscentret. Information om hur du visar artikeln om administrationscentret (förhandsversion) finns i [Varför kan jag inte uppgradera planer?](why-cant-i-change-plans.md). Förhandsgranskningen är tillgänglig för alla Microsoft 365-administratörer, du kan anmäla dig genom att välja **Prova förhandsgranskningsväxlingen** högst upp på startsidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Den här artikeln gäller det gamla administrationscentret. Information om hur du visar artikeln om administrationscentret (förhandsversion) finns i [Varför kan jag inte uppgradera planer?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). Förhandsgranskningen är tillgänglig för alla Microsoft 365-administratörer, du kan anmäla dig genom att välja **Prova förhandsgranskningsväxlingen** högst upp på startsidan. Mer information finns i [Om det nya administrationscentret för Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Om knappen **Byt abonnemang** inte visas kan ditt abonnemang inte bytas automatiskt. I vissa fall kan du kanske lösa problemet så att du kan använda knappen **Byt abonnemang**, eller så kanske du kan [byta abonnemang manuellt](switch-plans-manually.md) i stället. Placera muspekaren över informationsikonen för att visa ett meddelande som förklarar varför knappen **Byt abonnemang** inte är tillgänglig. Använd informationen i den här artikeln för att lösa problemet.

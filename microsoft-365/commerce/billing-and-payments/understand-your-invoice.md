@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Läs om hur du läser och förstår din faktura för Microsofts affärsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634986"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942883"
 ---
 # <a name="understand-your-invoice"></a>Förstå din faktura
 
 Fakturan innehåller en sammanfattning av dina avgifter och instruktioner för betalning. Du kan [visa din onlinefaktura](#view-your-online-invoice) i administrationscentret för Microsoft 365. Du kan också ladda ner den i Portable Document Format (.pdf) för att skicka via e-post.
 
-Om du bara har en Microsoft 365-prenumeration läser [du Visa fakturan för Microsoft 365 för företag](view-your-bill-or-invoice.md).
+Om du bara har en Microsoft 365-prenumeration läser du [Förstå din faktura för Microsoft 365 för företag](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Förstå fakturahuvudet
 
@@ -78,7 +78,7 @@ Det totala beloppet för varje tjänstefamilj beräknas genom att du subtraherar
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Om det finns Azure-avgifter på din faktura som du vill ha mer information om läser du [Förstå debiteringar på din Faktura för Microsoft-kundavtal](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+Om det finns Azure-avgifter på din faktura som du vill ha mer information om läser du [Granska fakturan för ditt Microsoft-kundavtal](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Förstå den senaste fakturasidan
 

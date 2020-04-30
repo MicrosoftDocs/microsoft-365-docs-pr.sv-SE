@@ -9,16 +9,18 @@ audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor.
-ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808841"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943549"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
@@ -45,7 +47,7 @@ För kunder som använder våra företagsplaner rekommenderar Microsoft att du s
 |8      |  [Registrera datorer i enhetshantering och kräver kompatibla datorer](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9      | [Optimera nätverket för molnanslutning](#9-optimize-your-network-for-cloud-connectivity)  |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10   | [Utbilda användare](#10-train-users) |    ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11 |[Komma igång med Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11 |[Komma igång med Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12 |[Övervaka hot och vidta åtgärder](#12-monitor-for-threats-and-take-action) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -200,7 +202,7 @@ Microsoft 365 innehåller följande resurser för att informera användare i org
 |Koncept  |Resurser  |
 |---------|---------|
 |Microsoft 365     |[Anpassningsbara utbildningsvägar](https://docs.microsoft.com/office365/customlearning/) <p>Dessa resurser kan hjälpa dig att sätta ihop utbildning för slutanvändare i din organisation        |
-|Microsoft 365 Säkerhetscenter |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
+|Microsoft 365-säkerhet |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
 |Multifaktorautentisering     | [Tvåstegsverifiering: Vad är den ytterligare verifieringssidan?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.    |
 | | |
 

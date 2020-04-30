@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Lync och andra tjänster på Google Domains för Microsoft.
-ms.openlocfilehash: 399482374f87d864edbc01feb4896b168d157f7f
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: baa406f61346dc052ab90a1b1c1271ab585d92c7
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919754"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939209"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Skapa DNS-poster på Google Domains för Microsoft
 
@@ -35,7 +35,7 @@ Om Google Domains är din DNS-värd följer du anvisningarna i den här artikeln
   
 När du har lagt till dessa poster på Google Domains konfigureras domänen så att den fungerar med Microsoft-tjänster.
   
-Mer information om webbvärdverktyg och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 > Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du har problem med e-postflödet eller andra problem när du har lagt till DNS-poster läser du [Hitta och åtgärda problem när du har lagt till domän- eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 

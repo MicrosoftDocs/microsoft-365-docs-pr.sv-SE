@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Väg dig igenom rekommenderad konfiguration för klientomfattande inställningar som påverkar säkerheten i din Microsoft 365-miljö. Dina säkerhetsbehov kan kräva mer eller mindre säkerhet. Använd dessa rekommendationer som utgångspunkt.
-ms.openlocfilehash: bd296d5cc822fd2257a7abad651335ad1d0717f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631187"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949399"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera din Microsoft 365-klient för ökad säkerhet
 
@@ -39,7 +39,7 @@ Microsoft 365-säkerhetscentret innehåller funktioner som skyddar din miljö. D
 ||||
 |---|---|---|
 |**Området**|**Innehåller en standardprincip**|**Rekommendation**|
-|**Anti-phishing**|Ja|Om du har en anpassad domän konfigurerar du standardpolicyn mot nätfiske för att skydda e-postkonton för dina mest värdefulla användare, till exempel din VD, och för att skydda din domän. Granska [principer för nätfiske mot nätfiske i Office 365](set-up-anti-phishing-policies.md) och se [Konfigurera standardprincipen mot nätfiske i EOP](configure-anti-phishing-policies-eop.md) eller [Konfigurera ATP-principer för phishing i Office 365](configure-atp-anti-phishing-policies.md).|
+|**Anti-phishing**|Ja|Om du har en anpassad domän konfigurerar du standardpolicyn mot nätfiske för att skydda e-postkonton för dina mest värdefulla användare, till exempel din VD, och för att skydda din domän. Granska [principer för nätfiske mot nätfiske i Office 365](set-up-anti-phishing-policies.md) och se [Konfigurera principer mot nätfiske i EOP](configure-anti-phishing-policies-eop.md) eller [Konfigurera ATP-principer för phishing i Office 365](configure-atp-anti-phishing-policies.md).|
 |**Anti-Malware Motor**|Ja| Redigera standardprincipen: <br/> &ensp;&ensp;* Filter för vanliga typer av bifogade filer – Välj på <br/><br/> Du kan också skapa anpassade filterprinciper för skadlig kod och tillämpa dem på angivna användare, grupper eller domäner i organisationen. <br/><br/> Mer information: <br/> &ensp;&ensp;* [Skydd mot skadlig kod](anti-malware-protection.md) <br/> &ensp;&ensp;* [Konfigurera policyer mot skadlig kod](configure-anti-malware-policies.md)|
 |**ATP säkra bilagor**|Nej| Skydda filer i SharePoint, OneDrive och Microsoft Teams på huvudsidan för säkra bifogade filer genom att markera den här rutan: <br/> &ensp;&ensp;* Aktivera ATP för SharePoint, OneDrive och Microsoft Teams <br/><br/> Lägg till en ny princip för säker bifogade filer med följande inställningar: <br/> &ensp;&ensp;* Blockera - Blockera nuvarande och framtida e-post och bilagor med upptäckt skadlig kod (välj det här alternativet) <br/> &ensp;&ensp;* Aktivera omdirigering – (Markera den här rutan och ange en e-postadress, till exempel ett administratörs- eller karantänkonto) <br/> &ensp;&ensp;* Använd ovanstående val om malware skanning för bilagor time out eller fel inträffar (markera den här rutan) <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän) <br/><br/>Mer information: [Konfigurera principer för betrodda bilagor i Office 365](set-up-atp-safe-attachments-policies.md)|
 |**ATP säkra länkar**|Ja| Lägg till den här inställningen i standardprincipen för hela organisationen: <br/> &ensp;&ensp;* Använd säkra länkar i: Microsoft 365 Apps för företag, Office för iOS och Android (välj det här alternativet). <br/><br/>Rekommenderad princip för specifika mottagare: <br/> &ensp;&ensp;* Webbadresser kommer att skrivas om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken (välj det här alternativet). <br/> &ensp;&ensp;* Använd säkra bilagor för att skanna nedladdningsbart innehåll (markera den här rutan). <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän). <br/><br/> Mer information: [Safe Links för Office 365 ATP](atp-safe-links.md).|

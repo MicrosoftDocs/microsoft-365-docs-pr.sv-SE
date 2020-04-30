@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du skapar, ändrar och tar bort de avancerade anti-nätfiskeprinciper som är tillgängliga i organisationer med Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638470"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949265"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurera principer för ATP-skydd mot nätfiske
 
@@ -29,9 +29,9 @@ Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardp
 
 Du kan konfigurera ATP-principer för nätfiske i Security & Compliance Center eller i Exchange Online PowerShell.
 
-Information om hur du konfigurerar den mer begränsade inbyggda anti-phishing-principen som är tillgänglig i Exchange Online Protection-organisationer (det vill säga Office 365-organisationer utan ATP) finns [i Konfigurera standardprincipen mot nätfiske i EOP](configure-anti-phishing-policies-eop.md).
+Information om hur du konfigurerar de mer begränsade i anti-phishing-principer som är tillgängliga i Exchange Online Protection-organisationer (det vill säga Office 365-organisationer utan ATP) finns [i Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
-## <a name="atp-anti-phishing-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell"></a>ATP:s principer för phishing-phishing i Office 365 Security & Compliance Center vs Exchange Online PowerShell
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>ATP:s principer för phishing-bekämpning i Security & Compliance Center vs Exchange Online PowerShell
 
 De grundläggande inslagen i en ATP-policy mot nätfiske är:
 
@@ -69,11 +69,11 @@ Om du vill öka effektiviteten i skyddet mot nätfiske kan du skapa anpassade AT
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **ATP:s sida mot nätfiske** använder du <https://protection.office.com/antiphishing>.
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **ATP:s sida mot nätfiske** använder du <https://protection.office.com/antiphishing>.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för nätfiske måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till anti-phishing-principer måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för nätfiske måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till anti-phishing-principer måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Våra rekommenderade inställningar för ATP-principer för nätfiske finns i [Principinställningar för Office ATP-phishing](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -244,7 +244,7 @@ Använd följande procedurer för att ändra ATP:s principer för nätfiske: en 
 
 6. **Spoof**: Klicka på **Redigera** om du vill aktivera eller inaktivera falska underrättelser, inaktivera oautentiserade avsändande avsändare i Outlook på eller inaktivera och konfigurera åtgärden så att den gäller för meddelanden från blockerade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md#spoof-settings).
 
-   Observera att dessa inställningar är identiska med de inställningar som är tillgängliga i standardpolicyn mot nätfiske i EOP.
+   Observera att samma inställningar också är tillgängliga i anti-phishing-principer i EOP.
 
    - **Spoofing filterinställningar:** Standardvärdet är **På**, och vi rekommenderar att du lämnar den på. Om du vill inaktivera den drar du växlingsknappen till **Av**. Mer information finns i [Konfigurera förfalskningsinformation i Office 365](learn-about-spoof-intelligence.md).
 
@@ -408,7 +408,7 @@ I det här exemplet skapas anti-phish-principen Research Quarantine med följand
 - Möjliggör säkerhetstips.
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Default monitoring policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 Detaljerad syntax- och parameterinformation finns i [Ny-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy).

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på 1&1 IONOS för Microsoft.
-ms.openlocfilehash: a80f06287b7e4efe03804248d52b4ef43fc67b26
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 2b029856617c853047a0c1da9aeb0f07a158a88e
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919655"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939385"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Skapa DNS-poster med 1&1 IONOS för Microsoft
 
@@ -36,7 +36,6 @@ ms.locfileid: "43919655"
   
 När du har lagt till dessa poster vid 1&1 IONOS konfigureras domänen så att den fungerar med Microsoft-tjänster.
   
-Mer information om webbvärdverktyg och DNS för webbplatser med Microsoft finns i [Använda en offentlig webbplats med Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 

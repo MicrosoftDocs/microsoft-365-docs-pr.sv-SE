@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
-search.appverid: ''
+search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hitta, testa och distribuera Microsoft- och Microsoft-partnerappar för användare och grupper i organisationen från portalen för integrerade appar i Microsoft 365-administrationscentret.
-ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212275"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942164"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testa och distribuera Microsoft 365-appar i microsoft 365-administrationscentret
 

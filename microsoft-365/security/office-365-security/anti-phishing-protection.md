@@ -17,12 +17,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 erbjuder en mängd olika skydd mot nätfiskeattacker som standard och även via ytterligare funktioner i Office 365 Advanced Threat Protection (ATP). I det här avsnittet introduceras de onlineresurser du kan använda för att lära dig mer om och implementera alternativ och strategier mot nätfiske i Microsoft 365.
-ms.openlocfilehash: fd1aaee221254c3899c15d22850e95378436a392
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634586"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949375"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
@@ -42,11 +42,11 @@ Med den växande komplexiteten i attacker är det till och med svårt för utbil
 
 EOP (det vill säga Microsoft 365-organisationer utan ATP) innehåller funktioner som kan skydda din organisation från nätfiskehot:
 
-- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns [i Konfigurera falska underrättelser i Microsoft 365](learn-about-spoof-intelligence.md).
+- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Standardpolicy för phishing:** Aktivera eller inaktivera falska underrättelser, aktivera eller inaktivera oautentiserade avsändande avsändare i Outlook och ange åtgärden för blockerade förfalskade avsändare (flytta till mappen Skräppost eller karantän). Mer information finns i [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
+- **Anti-phishing-principer i EOP:** Aktivera eller inaktivera falska underrättelser, aktivera eller inaktivera oautentiserade avsändande avsändare i Outlook och ange åtgärden för blockerade förfalskade avsändare (flytta till skräppostmapp eller karantän). Mer information finns i [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
-- **Implicit e-postautentisering:** EOP förbättrar standardkontroller av e-postautentisering för inkommande e-post[(SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC)](use-dmarc-to-validate-email.md)med avsändarens rykte, avsändarehistorik, mottagarhistorik, beteendeanalys och andra avancerade tekniker för att identifiera förfalskade avsändare. Mer information finns [i E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
+- **Implicit e-postautentisering:** EOP förbättrar standardkontroller av e-postautentisering för inkommande e-post[(SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC)](use-dmarc-to-validate-email.md)med avsändarens rykte, avsändarehistorik, mottagarhistorik, beteendeanalys och andra avancerade tekniker för att identifiera förfalskade avsändare. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Ytterligare skydd mot nätfiske i Office 365 ATP
 
