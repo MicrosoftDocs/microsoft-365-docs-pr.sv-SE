@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628500"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919511"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Skapa DNS-poster på valfri DNS-värd
 
@@ -69,19 +69,19 @@ Innan du använder din domän med Microsoft 365, vill vi vara säkra på att det
   
 1. Beroende på om du skapar en TXT-post eller en MX-post gör du något av följande:
     
-  - **Om du skapar en TXT-post använder du följande värden:**
+   - **Om du skapar en TXT-post använder du följande värden:**
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** eller **Host Name**|**Värde**|**TTL**|
-|TXT|Gör något av följande: skriv **@**, lämna fältet tomt eller skriv domännamnet.  <br/> **Obs!** Olika DNS-värdar har olika krav för det här fältet. |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.  <br/>        [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv.  |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Record Type**|**Alias** eller **Host Name**|**Värde**|**TTL**|
+      |TXT|Gör något av följande: skriv **@**, lämna fältet tomt eller skriv domännamnet.  <br/> **Obs!** Olika DNS-värdar har olika krav för det här fältet. |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.  <br/>        [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv.  |
    
-  - **Om du skapar en MX-post ska du använda följande värden:**
+   - **Om du skapar en MX-post ska du använda följande värden:**
     
-||||||
-|:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
-|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.    <br/>       [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
+      ||||||
+      |:-----|:-----|:-----|:-----|:-----|
+      |**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
+      |MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.    <br/>       [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
    
 2. Spara posten.
     
@@ -103,9 +103,8 @@ När Microsoft 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="add-mx-record-to-route-email"></a>Lägga till en MX-post för att dirigera e-post
 <a name="BKMK_add_MX"> </a>
 
-Lägga till en MX-post så att e-post för din domän kommer till Microsoft 365.  *När du uppdaterar domänens MX-post kommer nu alla nya e-postmeddelanden till alla som använder din domän till Microsoft 365*. E-postmeddelanden som du redan har finns kvar hos din nuvarande e-postvärd, om du inte bestämmer dig för att [migrera e-postmeddelanden och kontakter till Microsoft 365](../setup/migrate-email-and-contacts-admin.md) till Microsoft 365. 
-  
-  
+Lägga till en MX-post så att e-post för din domän kommer till Microsoft 365.  *När du uppdaterar domänens MX-post kommer nu alla nya e-postmeddelanden till alla som använder din domän till Microsoft 365*. E-postmeddelanden som du redan har finns kvar hos din nuvarande e-postvärd, om du inte bestämmer dig för att [migrera e-postmeddelanden och kontakter till Microsoft 365.](../setup/migrate-email-and-contacts-admin.md)
+
  **Uppgift**
   
 Gå till sidan där du kan skapa poster för domänen.
@@ -118,39 +117,39 @@ Gå till sidan där du kan skapa poster för domänen.
     
 ::: moniker range="o365-worldwide"
 
-MX-posten du lägger till innehåller ett värde (värdet **Pekar på adress**) som ser ut ungefär så här: \<MX token\>.mail.protection.outlook.com, där \<MX token\> är ett värde som MSxxxxxxx. 
+  MX-posten du lägger till innehåller ett värde (värdet **Pekar på adress**) som ser ut ungefär så här: \<MX token\>.mail.protection.outlook.com, där \<MX token\> är ett värde som MSxxxxxxx. 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-MX-posten du lägger till innehåller ett värde (värdet **Pekar på-adress**) som ser ut ungefär så här: \<MX token\>.mail.protection.outlook.de, där \<MX token\> är ett värde som MSxxxxxxx. 
+  MX-posten du lägger till innehåller ett värde (värdet **Pekar på-adress**) som ser ut ungefär så här: \<MX token\>.mail.protection.outlook.de, där \<MX token\> är ett värde som MSxxxxxxx. 
 
 ::: moniker-end
 
-1. Lägg till en ny MX-post på DNS-värdens webbplats.
+4. Lägg till en ny MX-post på DNS-värdens webbplats.
     
     Nu [får du informationen för MX-posten](../get-help-with-domains/information-for-dns-records.md) från Microsoft 365. 
     
-2. För MX-posten (i föregående steg) kopierar du värdet för **Pekar på-adress**. 
+5. För MX-posten (i föregående steg) kopierar du värdet för **Pekar på-adress**. 
     
     Du använder det här värdet i den post du skapar på DNS-värdens webbplats enligt beskrivningen i nästa steg.
     
-3. I den nya MX-posten på DNS-värdens webbplats ska du kontrollera att fälten är inställda på exakt följande värden:
+6. I den nya MX-posten på DNS-värdens webbplats ska du kontrollera att fälten är inställda på exakt följande värden:
     
-  - **Record Type**: **MX**.
+   - **Record Type**: **MX**.
     
-  - **Prioritet**: Ställ in prioriteten för MX-posten till det högsta tillgängliga värdet, vanligtvis **0**.
+   - **Prioritet**: Ställ in prioriteten för MX-posten till det högsta tillgängliga värdet, vanligtvis **0**.
     
-    Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
     
-  - **Värdnamn**: **@**
+   - **Värdnamn**: **@**
     
-  - **Pekar på-adress**: Klistra in värdet för **Pekar på-adress** som du just kopierade från Microsoft 365 här. 
+   - **Pekar på-adress**: Klistra in värdet för **Pekar på-adress** som du just kopierade från Microsoft 365 här. 
     
-  - **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+   - **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
     
-4. Spara posten.
+7. Spara posten.
     
 Ta bort eventuella andra MX-poster.
   
@@ -167,12 +166,12 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
   
 1. I rutorna för varje ny post skriver du in eller kopierar och klistrar in följande värden. När du har lagt till de tre första nya posterna väljer du att skapa ytterligare en CNAME-post.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 timme  <br/> |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
+      |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 timme  <br/> |
+      |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 timme  <br/> |
+      |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 timme  <br/> |
    
    > [!NOTE]
    > För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. > Dessa poster gäller inte för hybriddistributioner av Exchange, Lync och Skype för företag. 
@@ -188,15 +187,15 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
   
 1. I rutorna för varje ny post skriver du in eller kopierar och klistrar in följande värden. När du har lagt till de tre första nya posterna väljer du att skapa ytterligare en CNAME-post.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 timme  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 timme  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 timme  <br/> |
+    |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 timme  <br/> |
    
-   > [!NOTE]
-   > För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. > Dessa poster gäller inte för hybriddistributioner av Exchange, Lync och Skype för företag. 
+     > [!NOTE]
+     > För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. > Dessa poster gäller inte för hybriddistributioner av Exchange, Lync och Skype för företag. 
   
 2. Spara posterna när du är klar.
     
@@ -210,15 +209,15 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
   
 1. I rutorna för varje ny post skriver du in eller kopierar och klistrar in följande värden. När du har lagt till de tre första nya posterna väljer du att skapa ytterligare en CNAME-post.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.partner.outlook.cn  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 timme  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.partner.outlook.cn  <br/> |1 timme  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 timme  <br/> |
+    |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 timme  <br/> |
    
-   > [!NOTE]
-   > För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. > Dessa poster gäller inte för hybriddistributioner av Exchange, Lync och Skype för företag. 
+     > [!NOTE]
+     > För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. > Dessa poster gäller inte för hybriddistributioner av Exchange, Lync och Skype för företag. 
   
 2. Spara posterna när du är klar.
     
@@ -232,11 +231,11 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
 > [!IMPORTANT]
 > Om du har MDM (Mobile Device Management) för Microsoft 365 måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. > (Om du inte har MDM kan du hoppa över det här steget.) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 timme  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 timme  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 timme  <br/> |
    
 ::: moniker-end
 
@@ -245,11 +244,11 @@ På DNS-värdens webbplats skapar du tre nya CNAME-poster, vanligtvis en i taget
 > [!IMPORTANT]
 > Om du har MDM (Mobile Device Management) för Microsoft 365 måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. > (Om du inte har MDM kan du hoppa över det här steget.) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
-|CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 timme  <br/> |
-|CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 timme  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Posttyp** <br/> |**Värd** <br/> |**Pekar på** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 timme  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 timme  <br/> |
    
 ::: moniker-end
 
@@ -268,12 +267,12 @@ Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-v
   
 1. I rutorna för den nya posten skriver du, eller kopierar och klistrar in, den uppsättning värden nedan som gäller för din situation.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Värd** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-|TXT (Text)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |1 timme  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Posttyp** <br/> |**Värd** <br/> |**TXT Value** <br/> |**TTL** <br/> |
+    |TXT (Text)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |1 timme  <br/> |
    
-   För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+    För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
     
 2. Spara posten när du är klar.
     
@@ -293,12 +292,12 @@ Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-v
   
 1. I rutorna för den nya posten skriver du, eller kopierar och klistrar in, den uppsättning värden nedan som gäller för din situation.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp**|**Värd**|**TXT Value**|**TTL**|
-|TXT (Text)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.           |1 timme|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Posttyp**|**Värd**|**TXT Value**|**TTL**|
+    |TXT (Text)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.           |1 timme|
    
-   För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+    För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
     
 2. Spara posten när du är klar.
     
@@ -318,12 +317,12 @@ Redigera den befintliga SPF-posten eller skapa en ny TXT-post för SPF på DNS-v
   
 1. I rutorna för den nya posten skriver du, eller kopierar och klistrar in, den uppsättning värden nedan som gäller för din situation.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Posttyp**|**Värd**|**TXT Value**|**TTL**|
-|TXT (Text)|@|v=spf1 include:spf.protection.partner.outlook.cn -all> [!NOTE]> Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.           |1 timme|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Posttyp**|**Värd**|**TXT Value**|**TTL**|
+    |TXT (Text)|@|v=spf1 include:spf.protection.partner.outlook.cn -all> [!NOTE]> Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.           |1 timme|
    
-   För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+    För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
     
 2. Spara posten när du är klar.
     
@@ -340,27 +339,27 @@ På DNS-värdens webbplats skapar du två nya SRV-poster, vanligtvis en i taget.
   
 1. I rutorna för varje ny post skriver du in eller kopierar och klistrar in följande värden. **(Information om hur du skapar SRV-poster när din DNS-värd inte har alla dessa separata fält finns i anteckningarna nedan.)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Namn** <br/> |**Mål** <br/> |**Protokoll** <br/> |**Tjänst** <br/> |**Prioritet** <br/> |**Vikt** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
-|SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Posttyp** <br/> |**Namn** <br/> |**Mål** <br/> |**Protokoll** <br/> |**Tjänst** <br/> |**Prioritet** <br/> |**Vikt** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
+    |SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
    
-  > [!NOTE]
-  >  För **Namn**: Om din DNS-värd inte tillåter att du ställer in detta till **@** lämnar du det tomt. Använd den här metoden *bara* när din DNS-värd har separata fält för värdena Tjänst och Protokoll. Se annars anteckningarna om Tjänst och Protokoll nedan. 
-
->  För **Tjänst** och **Protokoll**: Om DNS-värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för **Tjänst** och **Protokoll** som postens **Namn**-värde. (Obs! Beroende på DNS-värd kan fältet **Namn** heta något annat, t.ex. **Värd**, **Värdnamn** eller **Underdomän**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med en punkt.  Till exempel: **Namn**: _sip._tls 
-
->  För **Prioritet**, **Vikt** och **Port**: Om din DNS-värd inte tillhandahåller dessa fält för SRV-poster måste du ange dem som postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med blanksteg och avslutar med en punkt. Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. Till exempel: **Mål**: 100 1 443 sipdir.online.lync.com. 
-
->  Variant för **Prioritet**, **Vikt** och **Port**: En del DNS-värdar tillhandahåller vissa, men inte alla, obligatoriska fält separat. För de här DNS-värdwebbplatserna anger du de värden som inte visas separat som en kombinerad sträng, i ordning, för postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng för de fält som inte visas individuellt, och separerar värdena med blanksteg. Värdena måste tas med *i ordning*, och de värden som har separata fält tillgängliga utelämnas: Prioritet, Vikt, Port, Mål. När det till exempel finns ett separat fält för Prioritet, kopplar du bara samman värdena för Vikt, Port och Mål: **Mål**: 1 443 sipdir.online.lync.com 
-
-> För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+    > [!NOTE]
+    >  För **Namn**: Om din DNS-värd inte tillåter att du ställer in detta till **@** lämnar du det tomt. Använd den här metoden *bara* när din DNS-värd har separata fält för värdena Tjänst och Protokoll. Se annars anteckningarna om Tjänst och Protokoll nedan. 
+    > 
+    >  För **Tjänst** och **Protokoll**: Om DNS-värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för **Tjänst** och **Protokoll** som postens **Namn**-värde. (Obs! Beroende på DNS-värd kan fältet **Namn** heta något annat, t.ex. **Värd**, **Värdnamn** eller **Underdomän**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med en punkt.  Till exempel: **Namn**: _sip._tls 
+    > 
+    >  För **Prioritet**, **Vikt** och **Port**: Om din DNS-värd inte tillhandahåller dessa fält för SRV-poster måste du ange dem som postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med blanksteg och avslutar med en punkt. Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. Till exempel: **Mål**: 100 1 443 sipdir.online.lync.com. 
+    > 
+    >  Variant för **Prioritet**, **Vikt** och **Port**: En del DNS-värdar tillhandahåller vissa, men inte alla, obligatoriska fält separat. För de här DNS-värdwebbplatserna anger du de värden som inte visas separat som en kombinerad sträng, i ordning, för postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng för de fält som inte visas individuellt, och separerar värdena med blanksteg. Värdena måste tas med *i ordning*, och de värden som har separata fält tillgängliga utelämnas: Prioritet, Vikt, Port, Mål. När det till exempel finns ett separat fält för Prioritet, kopplar du bara samman värdena för Vikt, Port och Mål: **Mål**: 1 443 sipdir.online.lync.com 
+    > 
+    > För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
   
 2. Spara posterna när du är klar.
     
-> [!NOTE]
->  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
@@ -371,27 +370,27 @@ På DNS-värdens webbplats skapar du två nya SRV-poster, vanligtvis en i taget.
   
 1. I rutorna för varje ny post skriver du in eller kopierar och klistrar in följande värden. **(Information om hur du skapar SRV-poster när din DNS-värd inte har alla dessa separata fält finns i anteckningarna nedan.)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Namn** <br/> |**Mål** <br/> |**Protokoll** <br/> |**Tjänst** <br/> |**Prioritet** <br/> |**Vikt** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
-|SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Posttyp** <br/> |**Namn** <br/> |**Mål** <br/> |**Protokoll** <br/> |**Tjänst** <br/> |**Prioritet** <br/> |**Vikt** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
+    |SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
    
- > [!NOTE]
- >  För **Namn**: Om din DNS-värd inte tillåter att du ställer in detta till **@** lämnar du det tomt. Använd den här metoden *bara* när din DNS-värd har separata fält för värdena Tjänst och Protokoll. Se annars anteckningarna om Tjänst och Protokoll nedan. 
-
->  För **Tjänst** och **Protokoll**: Om DNS-värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för **Tjänst** och **Protokoll** som postens **Namn**-värde. (Obs! Beroende på DNS-värd kan fältet **Namn** heta något annat, t.ex. **Värd**, **Värdnamn** eller **Underdomän**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med en punkt. >  Till exempel: **Namn**: _sip._tls 
-
->  För **Prioritet**, **Vikt** och **Port**: Om din DNS-värd inte tillhandahåller dessa fält för SRV-poster måste du ange dem som postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med blanksteg och avslutar med en punkt. Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. >  Till exempel: **Mål**: 100 1 443 sipdir.online.lync.de. 
-
->  Variant för **Prioritet**, **Vikt** och **Port**: En del DNS-värdar tillhandahåller vissa, men inte alla, obligatoriska fält separat. För de här DNS-värdwebbplatserna anger du de värden som inte visas separat som en kombinerad sträng, i ordning, för postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng för de fält som inte visas individuellt, och separerar värdena med blanksteg. Värdena måste tas med *i ordning*, och de värden som har separata fält tillgängliga utelämnas: Prioritet, Vikt, Port, Mål. >  När det till exempel finns ett separat fält för Prioritet, kopplar du bara samman värdena för Vikt, Port och Mål: **Mål**: 1 443 sipdir.online.lync.de 
-
->  För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+    > [!NOTE]
+    >  För **Namn**: Om din DNS-värd inte tillåter att du ställer in detta till **@** lämnar du det tomt. Använd den här metoden *bara* när din DNS-värd har separata fält för värdena Tjänst och Protokoll. Se annars anteckningarna om Tjänst och Protokoll nedan. 
+    > 
+    >  För **Tjänst** och **Protokoll**: Om DNS-värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för **Tjänst** och **Protokoll** som postens **Namn**-värde. (Obs! Beroende på DNS-värd kan fältet **Namn** heta något annat, t.ex. **Värd**, **Värdnamn** eller **Underdomän**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med en punkt. >  Till exempel: **Namn**: _sip._tls 
+    > 
+    >  För **Prioritet**, **Vikt** och **Port**: Om din DNS-värd inte tillhandahåller dessa fält för SRV-poster måste du ange dem som postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med blanksteg och avslutar med en punkt. Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. >  Till exempel: **Mål**: 100 1 443 sipdir.online.lync.de. 
+    > 
+    >  Variant för **Prioritet**, **Vikt** och **Port**: En del DNS-värdar tillhandahåller vissa, men inte alla, obligatoriska fält separat. För de här DNS-värdwebbplatserna anger du de värden som inte visas separat som en kombinerad sträng, i ordning, för postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng för de fält som inte visas individuellt, och separerar värdena med blanksteg. Värdena måste tas med *i ordning*, och de värden som har separata fält tillgängliga utelämnas: Prioritet, Vikt, Port, Mål. >  När det till exempel finns ett separat fält för Prioritet, kopplar du bara samman värdena för Vikt, Port och Mål: **Mål**: 1 443 sipdir.online.lync.de 
+    > 
+    >  För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
   
 2. Spara posterna när du är klar.
     
-> [!NOTE]
->  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
@@ -402,27 +401,27 @@ På DNS-värdens webbplats skapar du två nya SRV-poster, vanligtvis en i taget.
   
 1. I rutorna för varje ny post skriver du in eller kopierar och klistrar in följande värden. **(Information om hur du skapar SRV-poster när din DNS-värd inte har alla dessa separata fält finns i anteckningarna nedan.)**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Posttyp** <br/> |**Namn** <br/> |**Mål** <br/> |**Protokoll** <br/> |**Tjänst** <br/> |**Prioritet** <br/> |**Vikt** <br/> |**Port** <br/> |**TTL** <br/> |
-|SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
-|SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Posttyp** <br/> |**Namn** <br/> |**Mål** <br/> |**Protokoll** <br/> |**Tjänst** <br/> |**Prioritet** <br/> |**Vikt** <br/> |**Port** <br/> |**TTL** <br/> |
+    |SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 timme  <br/> |
+    |SRV (Service)  <br/> |@  <br/> (Du kan också lämna fältet tomt om @ inte är tillåtet)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 timme  <br/> |
    
- > [!NOTE]
- >  För **Namn**: Om din DNS-värd inte tillåter att du ställer in detta till **@** lämnar du det tomt. Använd den här metoden *bara* när din DNS-värd har separata fält för värdena Tjänst och Protokoll. Se annars anteckningarna om Tjänst och Protokoll nedan. 
-
->  För **Tjänst** och **Protokoll**: Om DNS-värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för **Tjänst** och **Protokoll** som postens **Namn**-värde. (Obs! Beroende på DNS-värd kan fältet **Namn** heta något annat, t.ex. **Värd**, **Värdnamn** eller **Underdomän**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med en punkt. >  Till exempel: **Namn**: _sip._tls 
-
->  För **Prioritet**, **Vikt** och **Port**: Om din DNS-värd inte tillhandahåller dessa fält för SRV-poster måste du ange dem som postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med blanksteg och avslutar med en punkt. Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. >  Till exempel: **Mål**: 100 1 443 sipdir.online.partner.lync.cn. 
-
->  Variant för **Prioritet**, **Vikt** och **Port**: En del DNS-värdar tillhandahåller vissa, men inte alla, obligatoriska fält separat. För de här DNS-värdwebbplatserna anger du de värden som inte visas separat som en kombinerad sträng, i ordning, för postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng för de fält som inte visas individuellt, och separerar värdena med blanksteg. Värdena måste tas med *i ordning*, och de värden som har separata fält tillgängliga utelämnas: Prioritet, Vikt, Port, Mål. >  När det till exempel finns ett separat fält för Prioritet, kopplar du bara samman värdena för Vikt, Port och Mål: **Mål**: 1 443 sipdir.online.partner.lync.cn 
-
->  För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
+    > [!NOTE]
+    >  För **Namn**: Om din DNS-värd inte tillåter att du ställer in detta till **@** lämnar du det tomt. Använd den här metoden *bara* när din DNS-värd har separata fält för värdena Tjänst och Protokoll. Se annars anteckningarna om Tjänst och Protokoll nedan. 
+    > 
+    >  För **Tjänst** och **Protokoll**: Om DNS-värden inte tillhandahåller dessa fält för SRV-poster måste du ange värdena för **Tjänst** och **Protokoll** som postens **Namn**-värde. (Obs! Beroende på DNS-värd kan fältet **Namn** heta något annat, t.ex. **Värd**, **Värdnamn** eller **Underdomän**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med en punkt. >  Till exempel: **Namn**: _sip._tls 
+    > 
+    >  För **Prioritet**, **Vikt** och **Port**: Om din DNS-värd inte tillhandahåller dessa fält för SRV-poster måste du ange dem som postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng och separerar värdena med blanksteg och avslutar med en punkt. Värdena måste tas med i följande ordning: Prioritet, Vikt, Port, Mål. >  Till exempel: **Mål**: 100 1 443 sipdir.online.partner.lync.cn. 
+    > 
+    >  Variant för **Prioritet**, **Vikt** och **Port**: En del DNS-värdar tillhandahåller vissa, men inte alla, obligatoriska fält separat. För de här DNS-värdwebbplatserna anger du de värden som inte visas separat som en kombinerad sträng, i ordning, för postens **Mål**-värde. (Obs! Beroende på DNS-värd kan fältet **Mål** heta något annat, t.ex. **Innehåll**, **IP-adress** eller **Målvärd**.) För att konfigurera det kombinerade värdet skapar du en enskild sträng för de fält som inte visas individuellt, och separerar värdena med blanksteg. Värdena måste tas med *i ordning*, och de värden som har separata fält tillgängliga utelämnas: Prioritet, Vikt, Port, Mål. >  När det till exempel finns ett separat fält för Prioritet, kopplar du bara samman värdena för Vikt, Port och Mål: **Mål**: 1 443 sipdir.online.partner.lync.cn 
+    > 
+    >  För **TTL**: Ställ in det här värdet på **1 timme** eller till motsvarande minuter (**60**), sekunder (**3600**) osv. 
   
 2. Spara posterna när du är klar.
     
-> [!NOTE]
->  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
