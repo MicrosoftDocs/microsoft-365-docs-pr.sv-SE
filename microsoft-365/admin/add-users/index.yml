@@ -1,0 +1,80 @@
+### YamlMime:Landing
+title: Hantera användare och grupper
+summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+metadata:
+  title: Hantera användare och grupper
+  description: Hantera lösenord, lägga till och ta bort användare, konfigurera grupper och hantera licenser
+  ms.service: O365-administration
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 01/27/2020
+  localization_priority: Priority
+  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955319"
+landingContent:
+- title: Hantera användare
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Lägga till en användare
+      url: add-users.md
+    - text: Redigera en användare
+      url: add-users.md
+    - text: Lägga till en annan e-postadress
+      url: ../email/add-another-email-alias-for-a-user.md
+    - text: Skapa en delad postlåda
+      url: ../email/create-a-shared-mailbox.md
+    - text: Tilldela licenser till användare
+      url: ../manage/assign-licenses-to-users.md
+    - text: Ta bort licenser från användare
+      url: ../manage/remove-licenses-from-users.md
+    - text: Använda din anpassade domän
+      url: ../email/change-email-address.md
+- title: Hantera grupper
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Skapa grupper
+      url: ../create-groups/create-groups.md
+    - text: Lägga till medlemmar
+      url: ../create-groups/add-or-remove-members-from-groups.md
+    - text: Återställa eller återställa en borttagen grupp
+      url: ../create-groups/restore-deleted-group.md
+    - text: Hantera gäståtkomst i grupper
+      url: ../create-groups/manage-guest-access-in-groups.md
+- title: Hantera lösenord
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Återställa en användares lösenord
+      url: reset-passwords.md
+    - text: Ange att lösenord aldrig ska upphöra att gälla
+      url: set-password-to-never-expire.md
+    - text: Låt användare återställa sina egna lösenord
+      url: let-users-reset-passwords.md
+    - text: Ange principen för förfallodatum för lösenord för din organisation
+      url: ../manage/set-password-expiration-policy.md
+    - text: Återställa administratörslösenord
+      url: reset-passwords.md#reset-my-admin-password
+- title: Ta bort en medarbetare
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ta bort en användare
+      url: delete-a-user.md
+    - text: Komma åt och säkerhetskopiera en tidigare användares data
+      url: get-access-to-and-back-up-a-former-user-s-data.md
+    - text: Vidarebefordra e-post till en annan användare
+      url: ../email/configure-email-forwarding.md
+    - text: Ta bort licensen
+      url: ../manage/remove-licenses-from-users.md
+    - text: Återställa en borttagen användare
+      url: restore-user.md
+    - text: Ta bort företagsdata från enheter (Microsoft 365 Business Premium)
+      url: ../../business/remove-company-data.md

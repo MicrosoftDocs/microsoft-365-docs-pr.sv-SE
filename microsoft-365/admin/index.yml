@@ -1,0 +1,72 @@
+### YamlMime:Hub
+title: Hjälp om administrationscentret för Microsoft 365
+summary: Utforska resurser för att arbeta i microsoft 365-administrationscentret.
+brand: m365
+metadata:
+  title: Hjälp om administrationscentret för Microsoft 365
+  description: Konfigurera och hantera Office 365 och Microsoft 365 i microsoft 365-administrationscentret.
+  ms.service: O365-administration
+  ms.prod: microsoft-365-business
+  ms.topic: hub-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 8299bf7fa32e6a1678185370e2ae994d80ecf270
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952786"
+productDirectory:
+  title: Komma igång
+  summary: Konfigurera prenumerationen och e-postmeddelandet, lägg till användare och installera appar.
+  items:
+  - title: Komma igång
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Registrera dig och konfigurera Microsoft 365.
+    url: setup/index.yml
+  - title: Migrera data
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    summary: Flytta dina data från en annan tjänst till Microsoft 365.
+    url: setup/migrate-email-and-contacts-admin.md
+  - title: Installera appar
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    summary: Installera Office och andra Microsoft-appar för användare i organisationen.
+    url: setup/install-applications.md
+  - title: Utbilda användare
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Hjälp användarna i organisationen att lära sig hur du lagrar och delar filer och använder Office-appar.
+    url: https://support.office.com/office-training-center
+additionalContent:
+  sections:
+  - title: Hantera
+    summary: Hantera din prenumeration, dina tjänster och användare, skydda ditt företag och få hjälp med felsökning.
+    items:
+    - title: Översikt över administrationscentret för Microsoft 365
+      summary: Läs mer om administratörsroller, hur du håller koll på ändringarna och hur du anpassar prenumerationen.
+      url: admin-overview/about-the-admin-center.md
+    - title: Användare och grupper
+      summary: Hantera lösenord, lägga till och ta bort användare, konfigurera och hantera grupper, hantera gäståtkomst och tilldela användarlicenser.
+      url: add-users/index.yml
+    - title: E-post och kalendrar
+      summary: Hantera e-postinställningar, distributionsgrupper och säkerhetsinställningar och konfigurera delade postlådor.
+      url: email/index.yml
+    - title: Domäner
+      summary: Lär dig mer om domäner, konfigurera och hantera domäner och uppdatera DNS-poster.
+      url: setup/add-domain.md
+    - title: Dina data och din tjänst
+      summary: Övervaka tjänstens status, säkerhetskopiera data, installera tillägg och uppgradera till de senaste apparna.
+      url: manage/index.yml
+    - title: Prenumerationer och fakturering
+      summary: Hantera fakturor, prenumerationer och produktlicenser, uppdatera betalningsmetoder och köpa ytterligare tjänster och lagring.
+      url: ../commerce/index.yml
+    - title: Skydda din organisation
+      summary: Skapa DLP-principer (Data Loss Prevention), konfigurera MFA (Multi Factor Authentication) och lär dig mer om Microsoft Secure Score och GDPR.
+      url: security-and-compliance/secure-your-business-data.md
+    - title: Arbeta med kunder
+      summary: Dela dokument och använd Teams för att samarbeta och träffas.
+      url: work-with-customers/index.yml
+    - title: Felsökning
+      summary: Få åtkomst till resurser som hjälper dig att felsöka och åtgärda problem med dina Office-produkter eller -tjänster.
+      url: https://docs.microsoft.com/office/troubleshoot/

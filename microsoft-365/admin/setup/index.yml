@@ -1,0 +1,63 @@
+### YamlMime:Landing
+title: Komma igång
+summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+metadata:
+  title: Komma igång
+  description: Konfigurera din prenumeration och e-post. lägga till användare och installera appar
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 0396ea8146e3e0d0419f6f1d9caeee9df7b86d59
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952787"
+landingContent:
+- title: Registrera dig
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Välj ett abonnemang och registrera dig för Microsoft 365
+      url: ../admin-overview/sign-up-for-office-365.md
+  - linkListType: video
+    links:
+    - text: Registrera dig och konfigurera Microsoft Business Basic
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+    - text: Registrera dig för Microsoft Business Standard
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+    - text: Registrera dig för Microsoft Business Premium
+      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+- title: Guidad uppsättning
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Planera din uppsättning
+      url: plan-your-setup.md
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurera Microsoft Business Standard
+      url: setup.md
+    - text: Konfigurera Microsoft Business Premium
+      url: ../../business/set-up.md
+- title: Slutför inställning
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Migrera data
+      url: migrate-email-and-contacts-admin.md
+    - text: Installera appar
+      url: install-applications.md
+    - text: Distribuera Teams
+      url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
+  - linkListType: video
+    links:
+    - text: Installera appar på Android
+      url: https://support.office.com/article/647909af-560f-4977-ae45-3b45ad9e8236
+    - text: Installera appar på iOS
+      url: https://support.office.com/article/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
+    - text: Utbilda användare
+      url: https://support.office.com/office-training-center
