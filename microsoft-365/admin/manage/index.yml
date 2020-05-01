@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Hantera dina data och tjänster
+summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+metadata:
+  title: Hantera dina data och tjänster
+  description: Övervaka tjänstens status, säkerhetskopiera data, installera tillägg och uppgradera till de senaste apparna
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 7289f6a0b971db0f9b785f35c6bbae839ecae226
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955331"
+landingContent:
+- title: Övervaka status för vår tjänst
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Övervaka användaraktivitet med hjälp av rapporter
+      url: ../activity-reports/activity-reports.md
+    - text: Övervaka användningsanalys
+      url: ../usage-analytics/usage-analytics.md
+    - text: Aktivera användningsanalyser
+      url: ../usage-analytics/enable-usage-analytics.md
+    - text: Ändra information om organisationens kontaktinformation
+      url: change-address-contact-and-more.md
+    - text: Uppdatera din administratörskontaktinformation
+      url: update-phone-number-and-email-address.md
+    - text: Ställ in frisläppningsalternativ
+      url: release-options-in-office-365.md
+- title: Blockera användaråtkomst och säkerhetskopiera data
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Komma åt och säkerhetskopiera en tidigare användares data
+      url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
+    - text: Konfigurera lagring av e-post (Microsoft 365 Business Premium)
+      url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
+    - text: Ta bort företagsdata från enheter (Microsoft 365 Business Premium)
+      url: ../../business/remove-company-data.md
+- title: Hantera tillägg och appar
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Uppgradera din organisation till de senaste apparna
+      url: ../setup/upgrade-users-to-latest-office-client.md
+    - text: Anpassa startprogrammet
+      url: customize-the-app-launcher.md
+    - text: Krav för centraliserad distribution av tillägg
+      url: centralized-deployment-of-add-ins.md
+    - text: Installera och hantera tillägg med centraliserad distribution
+      url: manage-deployment-of-add-ins.md
+- title: Microsoft Teams
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Administratörsdokumentation för Microsoft Teams
+      url: https://docs.microsoft.com/en-us/microsoftteams/
+    - text: Använda Outlook och Teams tillsammans
+      url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+  - linkListType: learn
+    links:
+    - text: Utbildning för Microsoft Teams
+      url: https://support.office.com/article/4f108e54-240b-4351-8084-b1089f0d21d7
+- title: OneDrive och SharePoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: SharePoint-dokumentation för IT-proffs och IT-administratörer
+      url: https://docs.microsoft.com/sharepoint/
+    - text: OneDrive-dokumentation för IT-proffs och IT-administratörer
+      url: https://docs.microsoft.com/onedrive/
+  - linkListType: how-to-guide
+    links:
+    - text: Hantera delning i OneDrive och SharePoint
+      url: https://docs.microsoft.com/onedrive/manage-sharing
+    - text: Skapa och hantera webbplatser
+      url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center

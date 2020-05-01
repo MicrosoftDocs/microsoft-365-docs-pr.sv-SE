@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Hantera e-post och kalendrar
+summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+metadata:
+  title: Hantera e-post och kalendrar
+  description: Hantera e-postinställningar, distributionsgrupper, säkerhetsinställningar och konfigurera delade postlådor
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952794"
+landingContent:
+- title: Hantera e-post
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hantera inställningar för e-post för användare
+      url: office-365-user-email-settings.md
+    - text: Om e-postsamarbete
+      url: email-collaboration.md
+  - linkListType: how-to-guide
+    links:
+    - text: Lägga till ett annat e-postalias
+      url: add-another-email-alias-for-a-user.md
+    - text: Använda din anpassade domän
+      url: change-email-address.md
+    - text: Konfigurera vidarebefordran av e-post
+      url: configure-email-forwarding.md
+    - text: Arbeta med säkerhetsgrupper
+      url: create-edit-or-delete-a-security-group.md
+- title: Hantera kalendrar
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hantera din kalender och dina kontakter i Outlook
+      url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
+  - linkListType: video
+    links:
+    - text: Skapa en delad kalender
+      url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+- title: Hantera delade postlådor
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurera en delad postlåda
+      url: configure-a-shared-mailbox.md
+    - text: Konvertera en användarpostlåda till en delad postlåda
+      url: convert-user-mailbox-to-shared-mailbox.md
+    - text: Ta bort en licens från en delad postlåda
+      url: remove-license-from-shared-mailbox.md
+    - text: Lösa problem med delade postlådor
+      url: resolve-issues-with-shared-mailboxes.md
+- title: Lösa problem med e-postanslutning och e-postleverans
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hitta och åtgärda problem med e-postleverans
+      url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
+    - text: Åtgärda och hitta problem när du har lagt till domän- eller DNS-poster
+      url: ../get-help-with-domains/find-and-fix-issues.md
+    - text: Återställa borttagna e-postmeddelanden i en användarpostlåda
+      url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
+    - text: Åtgärda anslutningsproblem med Outlook i Microsoft 365 och Exchange Online
+      url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f
