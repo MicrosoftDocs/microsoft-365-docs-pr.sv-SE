@@ -1,0 +1,163 @@
+- name: Microsoft 365 lösnings- och arkitekturcenter
+  href: solution-architecture-center.md
+  displayName: Home
+- name: Illustrationer av lösning och arkitektur
+  items:
+    - name: Microsoft 365 produktivitet illustrationer
+      href: productivity-illustrations.md
+    - name: Microsofts molnarkitekturmodeller
+      href: cloud-architecture-models.md
+- name: Microsoft 365 stiftelse lösningar
+  items:
+    - name: Översikt
+      href: foundation-solutions-overview.md
+    - name: Ge fjärrarbetare möjlighet att hantera Microsoft 365
+      href: empower-people-to-work-remotely.md
+      items:
+        - name: Steg 1. Öka inloggningssäkerheten för fjärrarbetare med MFA
+          href: empower-people-to-work-remotely-secure-sign-in.md
+        - name: Steg 2. Ge fjärråtkomst
+          href: empower-people-to-work-remotely-remote-access.md
+        - name: 'Steg 3. Distribuera slutpunktshantering för dina enheter, datorer och andra slutpunkter'
+          href: empower-people-to-work-remotely-manage-endpoints.md
+        - name: Steg 4. Distribuera appar och tjänster för produktivitet för fjärrarbetare
+          href: empower-people-to-work-remotely-teams-productivity-apps.md
+        - name: Steg 5. Skapa COVID-19 kriskommunikationsplatser
+          href: empower-people-to-work-remotely-communication-venues.md
+        - name: Steg 6. Utbilda fjärrarbetare och hantera användningsfeedback
+          href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: Konfigurera säkert samarbete med Microsoft 365
+      href: setup-secure-collaboration-with-teams.md
+      items:
+        - name: Tre skyddsnivåer med Microsoft Teams
+          items:
+            - name: Översikt över tre nivåer av skydd
+              href: configure-teams-three-tiers-protection.md
+            - name: Konfigurera baslinjeskydd
+              href: configure-teams-baseline-protection.md
+            - name: Konfigurera känsligt skydd
+              href: configure-teams-sensitive-protection.md
+            - name: Konfigurera mycket känsligt skydd
+              href: configure-teams-highly-sensitive-protection.md
+            - name: Konfigurera ett team med säkerhetsisolering
+              href: secure-teams-security-isolation.md
+        - name: Konfigurera extern delning
+          items:
+            - name: Översikt av extern delning
+              href: collaborate-with-people-outside-your-organization.md
+            - name: Konfigurationsscenarier
+              items:
+                - name: Samarbeta i dokument
+                  href: collaborate-on-documents.md
+                - name: Samarbeta på en webbplats
+                  href: collaborate-in-site.md
+                - name: Samarbeta som ett team
+                  href: collaborate-as-team.md
+                - name: Skapa ett B2B-extranät
+                  href: b2b-extranet.md
+                - name: Begränsa delning
+                  href: microsoft-365-limit-sharing.md
+            - name: Säkerhetsscenarier
+              items:
+                - name: Oautentiserade delning
+                  href: best-practices-anonymous-sharing.md
+                - name: Begränsa oavsiktlig exponering
+                  href: share-limit-accidental-exposure.md
+                - name: Säker gästdelningsmiljö
+                  href: create-secure-guest-sharing-environment.md
+            - name: Referens för extern delning
+              href: microsoft-365-guest-settings.md
+    - name: Distribuera hotskydd i Microsoft 365
+      href: deploy-threat-protection.md
+- name: Arbetsbelastningslösningar och scenarier
+  items:
+    - name: Översikt
+      href: workload-solutions-scenarios-overview.md
+    - name: Lagarbete och samarbete
+      items:
+        - name: Affischer för teams-arkitektur
+          href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Telefonilösningar
+          items:
+            - name: Välj din lösning
+              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+            - name: Fallstudie för multinationella företag
+              href: null
+        - name: Filsamarbete i SharePoint med Microsoft 365
+          href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Planera ett intelligent SharePoint-intranät
+          href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: OneDrive Guide för företag
+          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+    - name: Säkerhet
+      items:
+        - name: De vanligaste uppgifterna för säkerhetsteam som hjälper till att arbeta hemifrån
+          href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Microsoft 365-säkerhet för beslutsfattare för företag (BDM)
+          href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Distribuera avancerat hotskydd för Microsoft Defender
+          href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+    - name: Efterlevnad
+      items:
+        - name: Informationsskydd för GDPR
+          href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Handlingsplaner för regelefterlevnad
+          items:
+            - name: ISO - Rekommenderad handlingsplan
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+            - name: NIST - Rekommenderad handlingsplan
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+            - name: CCPA - Vanliga frågor och svar
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+            - name: GDPR - Rekommenderad handlingsplan
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+    - name: Contoso fallstudier
+      items:
+        - name: Microsoft 365-lösningar för Contoso Corporation
+          href: contoso-case-study-solutions.md
+        - name: Isolerat team för ett topphemligt projekt
+          href: contoso-team-for-top-secret-project.md
+    - name: Testlabbguider
+      items:
+        - name: Testlaboratorier för lösningar och scenarier
+          href: test-lab-guides-overview-solutions.md
+        - name: Team med säkerhetsisolering
+          href: team-security-isolation-dev-test.md
+- name: Branschspecifik vägledning
+  items:
+    - name: Översikt
+      href: industry-specific-guidance-overview.md
+    - name: Finans
+      items:
+        - name: Säkerhet och efterlevnad för finansiella tjänster
+          href: financial-services-secure-collaboration.md
+    - name: Energi- och allmännyttiga tjänster
+      items:
+        - name: Säkerhet och efterlevnad för energi- och allmännyttiga tjänster
+          href: energy-secure-collaboration.md
+    - name: Hälso
+      items:
+        - name: Team för hälso- och sjukvård
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+    - name: Utbildning
+      items:
+        - name: Team för utbildning
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+    - name: Regeringen
+      items:
+        - name: Lag för regeringen
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Stöd fjärranställda som använder Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+- name: Designprinciper för företagsarkitektur
+  items:
+    - name: Översikt
+      href: design-principles.md
+    - name: Till identitet och bortom
+      href: identity-design-principles.md
+    - name: Säkerhet hinder du kan segla över
+      href: security-design-principles.md
+- name: Distributionsresurser för Microsoft 365
+  items:
+    - name: Distribuera Microsoft 365
+      href: 'https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise'
