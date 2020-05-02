@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
-  ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
-  ms.translationtype: HT
+  ms.openlocfilehash: f97f9b3eed2ec9eed95b1f4ec57a3b055d8c4925
+  ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+  ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "43198355"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "43997532"
 landingContent:
 - title: Microsoft Hotskydd
   linkLists:
@@ -28,22 +28,18 @@ landingContent:
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 Säkerhetscenter
       url: mtp/overview-security-center.md
-- title: Microsoft Defender Avancerat skydd.
+- title: Börja med kostnadsfria utvärderingsversioner
   linkLists:
   - linkListType: overview
     links:
-    - text: Vad är Microsoft Defender Avancerat skydd?
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: Översikt över funktioner
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
-- title: Skaffa Office 365 ATP
+    - text: Utvärdera Microsofts hotskydd
+      url: mtp/mtp-evaluation.md
+- title: Säkra din fjärrarbetskraft
   linkLists:
-  - linkListType: overview
+  - linkListType: get-started
     links:
-    - text: Vad är Office 365 ATP?
-      url: office-365-security/office-365-atp.md
-    - text: Tjänstbeskrivning för Office 365 ATP
-      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+    - text: Säkra din fjärrarbetskraft
+      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
 - title: Azure ATP
   linkLists:
   - linkListType: overview
@@ -52,6 +48,22 @@ landingContent:
       url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
     - text: Azure ATP-arkitektur
       url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+- title: Skaffa Office 365 ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Office 365 ATP?
+      url: office-365-security/office-365-atp.md
+    - text: Tjänstbeskrivning för Office 365 ATP
+      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+- title: Microsoft Defender Avancerat skydd.
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Microsoft Defender Avancerat skydd?
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+    - text: Översikt över funktioner
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
 - title: Azure Security Center
   linkLists:
   - linkListType: overview
@@ -68,15 +80,15 @@ landingContent:
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
     - text: Komma igång med Microsoft Cloud App Security
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
-- title: Azure Sentinel
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Vad är Azure Sentinel?
-      url: https://docs.microsoft.com/azure/sentinel/overview
 - title: Säkerhetshantering
   linkLists:
   - linkListType: overview
     links:
     - text: Säkerhetspoäng
       url: mtp/microsoft-secure-score.md
+- title: Azure Sentinel
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Azure Sentinel?
+      url: https://docs.microsoft.com/azure/sentinel/overview

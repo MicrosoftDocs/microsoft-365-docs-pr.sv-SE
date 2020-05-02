@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Läs om hur du samarbetar med gäster på en SharePoint-webbplats.
-ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630743"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002283"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samarbeta med gäster på en webbplats
 
@@ -52,7 +56,7 @@ Observera inställningarna i avsnittet **Samarbetsbegränsningar.** Kontrollera 
 
 Moderna SharePoint-webbplatser använder Microsoft 365-grupper för att styra webbplatsåtkomsten. Gästinställningarna för Microsoft 365 Grupper måste vara aktiverade för att gäståtkomsten på SharePoint-webbplatser ska fungera.
 
-![Skärmbild av gästinställningar för Microsoft 365 Grupper i Microsoft 365-administrationscentret](../media/office-365-groups-guest-settings.png)
+![Skärmbild av gästinställningarna för Microsoft 365-grupper i administrationscenter för Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 Så här anger du gästinställningar för Microsoft 365 Grupper
 

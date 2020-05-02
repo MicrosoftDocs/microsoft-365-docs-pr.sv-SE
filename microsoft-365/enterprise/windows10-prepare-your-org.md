@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636669"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002349"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Steg 1: Förbereda din organisation för Windows 10 Enterprise
 
@@ -56,7 +56,7 @@ Använd lämpligt värde i tabellen nedan när du konfigurerar hanteringsprincip
 
 Du kan aktivera diagnostikdata via någon av dessa metoder:
 
-* **Microsoft Intune** - Om du planerar att använda Intune för att hantera dina enheter kan du skapa en konfigurationsprincip för att aktivera diagnostikdata genom att konfigurera <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">systemprincipen SystemAllowTelemetry.</a> Mer information om hur du konfigurerar konfigurationsprinciper finns i [Hantera inställningar och funktioner på dina enheter med Microsoft Intune-principer](https://aka.ms/intuneconfigpolicies).
+* **Microsoft Intune** - Om du planerar att använda Intune för att hantera dina enheter kan du skapa en konfigurationsprincip för att aktivera diagnostikdata genom att konfigurera <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">systemprincipen SystemAllowTelemetry.</a>
 * **Registereditorn** - Du kan använda Registereditorn för att manuellt aktivera diagnostikdata på varje enhet i organisationen. Alternativt kan du skriva ett skript för att redigera registret. Om det redan finns en hanteringsprincip, till exempel Grupprincip eller MDM, åsidosätts den här registerinställningen.
 * **Grupprincip** - Om du inte planerar att registrera enheter i Intune kan du använda ett grupprincipobjekt för att ange organisationens diagnostikdatanivå.
 * **Kommandotolken** - Du kan ställa in Windows 10 diagnostikdata och tjänst för att automatiskt börja med kommandotolken. Den här metoden är bäst om du testar tjänsten på endast ett fåtal enheter. Om du aktiverar tjänsten för att starta automatiskt med det här kommandot konfigureras inte diagnostikdatanivån. Om du inte har konfigurerat en diagnostikdatanivå med hjälp av hanteringsverktyg fungerar tjänsten med standardnivån Utökad.

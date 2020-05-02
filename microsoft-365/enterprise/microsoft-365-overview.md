@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Innehåller en introduktion till komponenter, planer och distributionssökvägar för Microsoft 365 för företag.
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631567"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002302"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Översikt över Microsoft 365 för företag
 
@@ -45,7 +45,7 @@ Microsoft 365 för företag finns i tre abonnemang.
 |:-------|:-----|
 | E3 (på andra sätt) | Få tillgång till kärnprodukter och funktioner i Microsoft 365 för att öka produktiviteten på arbetsplatsen och driva innovation på ett säkert sätt. |
 | E5 | Få tillgång till de senaste produkterna och funktionerna i Microsoft 365, inklusive avancerade verktyg för skydd mot hot, säkerhet och samarbete.. Innehåller alla E3:s funktioner samt avancerade verktyg för säkerhet, röst och dataanalys. |
-| F1 (andra) | Ta kontakt med dina Firstline-arbetare genom specialbyggda verktyg och resurser som gör det möjligt för dem att göra sitt bästa arbete. |
+| F3 (andra) | Ta kontakt med dina Firstline-arbetare genom specialbyggda verktyg och resurser som gör det möjligt för dem att göra sitt bästa arbete. |
 |||
 
 Om du har Microsoft 365 E3 kan du även få dessa [erbjudanden:](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)
@@ -67,7 +67,7 @@ Mer information finns i [Funktioner och funktioner för varje plan](https://www.
 - [Microsoft 365 Produktivitetsbibliotek och](https://www.microsoft.com/microsoft-365/success/) representativa scenarier för vissa vanliga organisationsavdelningar
 - Den införandeöversikt som belyser Microsoft 365 för [företagsdistributionsguide](deploy-microsoft-365-enterprise.md)
 
-[![Bild för Microsoft 365 Enterprise (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
+[![Bild för Microsoft 365 för företag (affisch)](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 Klicka [här](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf) om du vill ladda ned en kopia av affischen.
 
@@ -149,6 +149,6 @@ Mer distributionsinformation finns i så här:
 
 Om du gör distributionen själv startar du [microsoft 365 för företagsdistributionsresa](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Microsoft 365 för företagets produktsida](https://www.microsoft.com/microsoft-365/enterprise)

@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Läs om hur du samarbetar med gäster i Teams.
-ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630755"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002198"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samarbeta med gäster i ett team
 
@@ -72,7 +76,7 @@ Så här anger du inställningar för Teams gäståtkomst
 
 Team använder Microsoft 365 Grupper för lagmedlemskap. Gästinställningarna för Microsoft 365 Grupper måste vara aktiverade för att gäståtkomsten i Teams ska fungera.
 
-![Skärmbild av gästinställningar för Microsoft 365 Grupper i Microsoft 365-administrationscentret](../media/office-365-groups-guest-settings.png)
+![Skärmbild av gästinställningarna för Microsoft 365-grupper i administrationscenter för Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 Så här anger du gästinställningar för Microsoft 365 Grupper
 

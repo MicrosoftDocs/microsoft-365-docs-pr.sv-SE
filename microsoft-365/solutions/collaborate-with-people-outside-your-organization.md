@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar Microsoft 365 för samarbete med personer utanför organisationen.
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630731"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002258"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Samarbeta med personer utanför organisationen
 
@@ -42,7 +46,7 @@ När du har aktiverat det scenario som du vill använda för att dela med person
 
 - [Metodtips för att dela filer och mappar med oautentiserade användare](best-practices-anonymous-sharing.md) – Lär dig mer om metodtips för delning med oautentiserade användare.
 - [Begränsa oavsiktlig exponering](share-limit-accidental-exposure.md) – Lär dig hur du minskar risken för att oavsiktligt dela känsligt innehåll med personer utanför organisationen.
-- [Skapa en säker gästdelningsmiljö](create-secure-guest-sharing-environment.md)) - Lär dig mer om verktygen i Microsoft 365 för att säkerställa att delning med personer utanför organisationen sker på ett tryggt och säkert sätt och uppfyller dina styrningskrav.
+- [Skapa en säker gästdelningsmiljö](create-secure-guest-sharing-environment.md) – Lär dig mer om de verktyg som finns i Microsoft 365 för att se till att delning med personer utanför organisationen sker på ett tryggt och säkert sätt och uppfyller dina styrningskrav.
 
 ## <a name="collaborate-with-partner-companies"></a>Samarbeta med partnerföretag
 
