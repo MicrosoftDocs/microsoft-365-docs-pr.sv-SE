@@ -269,6 +269,8 @@
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: Skicka meddelanden till Microsoft manuellt
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+                    - name: Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft
+                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Skicka in skadlig kod och icke-skadlig kod till Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Meddelandehuvuden för antiskräppost
