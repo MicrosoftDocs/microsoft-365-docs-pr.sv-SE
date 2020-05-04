@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-security-compliance
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Lär dig hur du skapar en säker miljö för gästdelning i Microsoft 365.
-ms.openlocfilehash: 63a636ccf65b5439d5e83cf5fbe64e5db2ce40b5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 73d3e2a9a55ead5447d2c6d640123ee3befd8373
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42811619"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44003753"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -29,9 +33,9 @@ I det här scenariot:
 - Begränsa gästernas åtkomst till endast på webben för ohanterade enheter.
 - Konfigurera en princip för sessionstidsgräns för att säkerställa att gästerna autentiserar sig dagligen.
 - Skapa och publicera känslighetsetiketter för att klassificera innehåll.
-- Skapa en typ av känslig information för ett strikt konfidentiellt projekt.
-- Tilldela automatiskt etiketten *strikt konfidentiell* till dokument som innehåller den typen av känslig information.
-- Ta automatiskt bort gäståtkomst från filer med beteckningen *strikt konfidentiell*.
+- Skapa en typ av känslig information för ett strikt känsligt projekt.
+- Tilldela automatiskt etiketten *strikt känsligt* till dokument som innehåller den typen av känslig information.
+- Ta automatiskt bort gäståtkomst från filer med beteckningen *strikt känsligt*.
 
 Vissa av alternativen som beskrivs i den här artikeln kräver att gästerna har ett konto i Azure Active Directory. Om du vill vara säker på att gästerna ingår i katalogen när du delar filer och mappar med dem, ska du använda [SharePoint- och OneDrive-integrering med förhandsversionen av Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
@@ -188,34 +192,34 @@ Du kan använda känslighetsetiketter på flera olika sätt för att klassificer
 Först skapar vi tre känslighetsetiketter i Microsoft 365 Efterlevnadscenter:
 
 - Allmänt
-- Konfidentiellt
-- Strikt konfidentiellt
+- känsligt
+- Strikt känsligt
 
-Använd följande procedur för att skapa etiketterna *Allmänt* och *Konfidentiellt*.
+Använd följande procedur för att skapa etiketterna *Allmänt* och *känsligt*.
 
-Skapa en klassificeringsetikett (allmänt och konfidentiellt)
+Skapa en klassificeringsetikett (allmänt och känsligt)
 1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till vänster navigeringsfält och expanderar **Klassificering** och klickar sedan på **Känslighetsetiketter**.
 2. Klicka på **Skapa en etikett**.
-3. I **Etikettnamn** skriver du *Allmänt* eller *Konfidentiellt*.
-4. I **Knappbeskrivning** skriver du *Allmän information som kan delas med medarbetare, gäster och partner* eller *Konfidentiell information. Dela endast med medarbetare och auktoriserade gäster* och klicka sedan på **Nästa**.
+3. I **Etikettnamn** skriver du *Allmänt* eller *känsligt*.
+4. I **Knappbeskrivning** skriver du *Allmän information som kan delas med medarbetare, gäster och partner* eller *känslig information. Dela endast med medarbetare och auktoriserade gäster* och klicka sedan på **Nästa**.
 5. Lämna kryptering på **Av** och klicka på **Nästa**.
 6. Lämna märkning av innehåll på **Av** och klicka på **Nästa**.
 7. Lämna dataförlustskydd för slutpunkt på **Av** och klicka på **Nästa**.
 8. Lämna automatiska etiketter på **Av** och klicka på **Nästa**.
 9. Klicka på **Skapa**.
 
-Med etiketten *Strikt konfidentiellt* kan vi lägga till automatisk vattenstämpel av dokument med etiketten.
+Med etiketten *Strikt känsligt* kan vi lägga till automatisk vattenstämpel av dokument med etiketten.
 
-Skapa en klassificeringsetikett (strikt konfidentiellt)
+Skapa en klassificeringsetikett (strikt känsligt)
 1. Klicka på **Skapa en etikett**.
-2. I **Etikettnamn** skriver du *Strikt konfidentiellt*.
-3. I **Knappbeskrivning** skriver du *Strikt konfidentiell information. Dela inte med gäster* och klickar sedan på **Nästa**.
+2. I **Etikettnamn** skriver du *Strikt känsligt*.
+3. I **Knappbeskrivning** skriver du *Strikt känslig information. Dela inte med gäster* och klickar sedan på **Nästa**.
 4. Lämna kryptering på **Av** och klicka på **Nästa**.
 5. Aktivera märkning av innehåll med **På**, markera kryssrutan **Lägg till en rubrik** och klicka sedan på **Anpassa text**.
-6. Skriv *Strikt konfidentiellt* som rubriktext och klicka på **Spara**.
+6. Skriv *Strikt känsligt* som rubriktext och klicka på **Spara**.
 7. På sidan **Märkning av innehåll** aktiverar du detta med **På**.
 8. Markera kryssrutan **Lägg till en vattenstämpel** och klicka sedan på **Anpassa text**.
-9. För **Text för vattenstämpel** skriver du *Strikt konfidentiellt*.
+9. För **Text för vattenstämpel** skriver du *Strikt känsligt*.
 10. Skriv *24* som **Teckenstorlek** och klicka sedan på **Spara**.
 11. På sidan **Märkning av innehåll** klickar du på **Nästa**.
 12. Lämna dataförlustskydd för slutpunkt på **Av** och klicka på **Nästa**.
@@ -237,16 +241,16 @@ Publicera etiketter
 8. På sidan **Principinställningar** skriver du *Dokumentkänslighet* som namn och klickar sedan på **Nästa**.
 9. Klicka på **Publicera**.
 
-När etiketterna är publicerade är de tillgängliga för användare av Office-datorprogram. När användarna använder etiketten **Strikt konfidentiellt** läggs en vattenstämpel automatiskt till i dokumentet.
+När etiketterna är publicerade är de tillgängliga för användare av Office-datorprogram. När användarna använder etiketten **Strikt känsligt** läggs en vattenstämpel automatiskt till i dokumentet.
 
 ### <a name="more-information"></a>Mer information
 [Översikt över känslighetsetiketter](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
-## <a name="create-a-sensitive-information-type-for-a-highly-confidential-project"></a>Skapa en typ av känslig information för ett strikt konfidentiellt projekt.
+## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Skapa en typ av känslig information för ett strikt känsligt projekt.
 
 Olika typer av känsliga uppgifter är fördefinierade strängar som kan användas i policyarbetsflöden för att upprätthålla efterlevnadskraven. Microsoft 365 Efterlevnadscenter levereras med över 100 känsliga informationstyper, inklusive körkortsnummer, kreditkortsnummer, bankkontonummer osv.
 
-Du kan skapa anpassade typer av känslig information som hjälper dig att hantera innehåll som är specifikt för din organisation. I det här exemplet skapar vi en anpassad typ av känslig information för ett strikt konfidentiellt projekt. Vi kan sedan använda den här typen av känslig information för att automatiskt tillämpa en klassificeringsetikett.
+Du kan skapa anpassade typer av känslig information som hjälper dig att hantera innehåll som är specifikt för din organisation. I det här exemplet skapar vi en anpassad typ av känslig information för ett strikt känsligt projekt. Vi kan sedan använda den här typen av känslig information för att automatiskt tillämpa en klassificeringsetikett.
 
 Skapa en typ av känslig information
 1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till vänster navigeringsfält och expanderar **Klassificering** och klickar sedan på **Typer av känslig information**.
@@ -262,7 +266,7 @@ Skapa en typ av känslig information
 
 ## <a name="create-a-policy-to-assign-a-label-based-on-a-sensitive-information-type"></a>Skapa en princip för att tilldela en etikett baserat på en typ av känslig information
 
-När typen av känslig information har skapats kan vi skapa en filprincip i Microsoft Cloud App Security för att tillämpa etiketten *Strikt konfidentiellt* på dokument som innehåller strängen *Projekt Saturnus* automatiskt.
+När typen av känslig information har skapats kan vi skapa en filprincip i Microsoft Cloud App Security för att tillämpa etiketten *Strikt känsligt* på dokument som innehåller strängen *Projekt Saturnus* automatiskt.
 
 > [!NOTE]
 > Det finns en replikeringsprocess som gör känslighetsetiketter tillgängliga i Cloud App Security. Du kanske inte ser etiketten som är tillgänglig för en princip direkt.
@@ -279,19 +283,19 @@ Skapa en filprincip baserad på typen av känslig information
 10. Sök efter och välj känslighetsetiketten *Projekt Saturnus* och klicka sedan på **Klar**.</br>
    ![Skärmbild av inställningar för Cloud App Security-inspektionsmetod](../media/mcas-sensitive-info-type-project-saturn.png)
 11. Under **Styrning** expanderar du **Microsoft SharePoint Online**.
-12. Markera kryssrutan **Tillämpa klassificeringsetikett** och välj etiketten **Strikt konfidentiellt**.
+12. Markera kryssrutan **Tillämpa klassificeringsetikett** och välj etiketten **Strikt känsligt**.
 13. Klicka på **Skapa**.
 
-När principen har skapats och en användare skriver ”Projekt Saturnus” i ett dokument, kommer Cloud App Security att automatiskt tillämpa etiketten *Strikt konfidentiellt* när filen söks igenom.
+När principen har skapats och en användare skriver ”Projekt Saturnus” i ett dokument, kommer Cloud App Security att automatiskt tillämpa etiketten *Strikt känsligt* när filen söks igenom.
 
 ### <a name="more-information"></a>Mer information
 [Filprinciper](https://docs.microsoft.com/cloud-app-security/data-protection-policies)
 
-## <a name="create-a-policy-to-remove-guest-access-to-highly-confidential-files"></a>Skapa en princip för att ta bort gäståtkomst till strikt konfidentiella filer
+## <a name="create-a-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Skapa en princip för att ta bort gäståtkomst till strikt känsliga filer
 
-I exemplet i den här artikeln ska filer med etiketten *Strikt konfidentiellt* inte delas med gäster. Vi kan skapa en filprincip i Cloud App Security som automatiskt tar bort gäståtkomst från filer med den etiketten.
+I exemplet i den här artikeln ska filer med etiketten *Strikt känsligt* inte delas med gäster. Vi kan skapa en filprincip i Cloud App Security som automatiskt tar bort gäståtkomst från filer med den etiketten.
 
-Observera att det inte hindrar användarna från att dela eller dela vidare dessa filer. Du är fortfarande beroende av att användarna följer dina styrprinciper för filer som lagras på webbplatser som tillåter gästdelning. Men det kan vara ett användbart verktyg för att ta bort gäståtkomst från filer där konfidentiell information läggs till efter det att de har delats med gäster.
+Observera att det inte hindrar användarna från att dela eller dela vidare dessa filer. Du är fortfarande beroende av att användarna följer dina styrprinciper för filer som lagras på webbplatser som tillåter gästdelning. Men det kan vara ett användbart verktyg för att ta bort gäståtkomst från filer där känslig information läggs till efter det att de har delats med gäster.
 
 Skapa en etikettbaserad filprincip
 1. Öppna [Microsoft Cloud App Security](https://portal.cloudappsecurity.com).
@@ -302,20 +306,20 @@ Skapa en etikettbaserad filprincip
 6. I listan **Välj ett filter** väljer du **App** och sedan **Microsoft SharePoint Online** i listan **Välj appar...**.
 7. Klicka på **Lägg till ett filter**.
 8. I listan **Välj ett filter** väljer du **Klassificeringsetikett** och sedan **Azure Information Protection** i listan **Välj filter...**.
-9. I listan **Välj klassificeringsetikett** väljer du **Strikt konfidentiellt**.</br>
+9. I listan **Välj klassificeringsetikett** väljer du **Strikt känsligt**.</br>
    ![Skärmbild av filterinställningar för Cloud App Security-princip](../media/mcas-sharepoint-confidential-label-filter.png)
 10. Under **Styrning** expanderar du **Microsoft SharePoint Online**.
 11. Markera kryssrutorna **Skicka principmatchningssammandrag till filens ägare** och **Ta bort externa användare**.
-12. Skriv *Den här filen är strikt konfidentiell. Företagets policy tillåter inte att den delas med gäster* i det anpassade meddelandet.
+12. Skriv *Den här filen är strikt känslig. Företagets policy tillåter inte att den delas med gäster* i det anpassade meddelandet.
 13. Klicka på **Skapa**.
 
-Det är viktigt att tänka på att principen tar bort åtkomst för filer som delas med hjälp av länken *Specifika personer*. Den tar inte bort åtkomst från oautentiserade länkar (*Alla*). Den tar inte heller bort åtkomst om gästen är medlem på webbplatsen eller i teamet som helhet. Om du planerar att ha strikt konfidentiella dokument på en webbplats eller i ett team med gästmedlemmar, kan du överväga att använda [privata kanaler i Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) och bara tillåta medlemmarna i din organisation i de privata kanalerna.
+Det är viktigt att tänka på att principen tar bort åtkomst för filer som delas med hjälp av länken *Specifika personer*. Den tar inte bort åtkomst från oautentiserade länkar (*Alla*). Den tar inte heller bort åtkomst om gästen är medlem på webbplatsen eller i teamet som helhet. Om du planerar att ha strikt känsliga dokument på en webbplats eller i ett team med gästmedlemmar, kan du överväga att använda [privata kanaler i Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) och bara tillåta medlemmarna i din organisation i de privata kanalerna.
 
 ## <a name="test-the-solution"></a>Testa lösningen
 
 Om du vill testa lösningen som beskrivs i den här artikeln kan du skapa ett Word-dokument och spara det i ett dokumentbibliotek. Dela filen med en gästanvändare. När gästen försöker nå dokumentet ska de behöva registrera sig för multifaktorautentisering och sedan acceptera användningsvillkoren.
 
-När gästen har åtkomst till dokumentet skriver du *Projekt Saturnus* i dokumentet och sparar det. När Cloud App Security läser av dokumentet bör etiketten *Strikt konfidentiellt* tillämpas och gästanvändaren bör inte längre ha åtkomst till det.
+När gästen har åtkomst till dokumentet skriver du *Projekt Saturnus* i dokumentet och sparar det. När Cloud App Security läser av dokumentet bör etiketten *Strikt känsligt* tillämpas och gästanvändaren bör inte längre ha åtkomst till det.
 
 Du kan använda verktygen som beskrivs i den här artikeln i olika kombinationer för att skapa en produktiv men säker gästdelningsmiljö för din organisation.
 
