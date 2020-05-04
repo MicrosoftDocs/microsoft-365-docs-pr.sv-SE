@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du kan utvärdera enhets- och appberedskap i miljön.
-ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636862"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011669"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Steg 1: Beredskap för enheter och appar
 
@@ -89,7 +89,7 @@ Du kommer att märka att de flesta av de program, drivrutiner och tillägg som i
 
 Du kan även använda Desktop Analytics för att utvärdera problem med webbläsarkompatibilitet, identifiera webbplatser och webbprogram som nås av användare som fortfarande använder ActiveX-kontroller, webbläsartillägg, VBScript eller annan äldre teknik som inte stöds av Microsoft Edge-webbläsaren. Användarna måste fortfarande använda Internet Explorer 11 för de här webbplatserna, och du kan lägga till dem i [företagsläget för webbplatslistan](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)med hjälp av Enterprise Mode Site List Manager.
 
-För att hjälpa till med att flytta över till Microsoft 365-applikationer för företag vill du kanske använda [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) för att testa kompatibiliteten för tillägg och VBA-makron (Microsoft Visual Basic for Applications).
+För att hjälpa till med att flytta över till Microsoft 365-applikationer för företag vill du kanske använda [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps) för att testa kompatibiliteten för tillägg och VBA-makron (Microsoft Visual Basic for Applications).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -105,7 +105,7 @@ När du arbetar genom listan för att åtgärda problem ser du att fler och fler
 
 Configuration Manager-programvaruinventering är ett alternativ till att använda molnbaserade analyslösningar för beredskap för enheter och appar. Du kan använda installationsantal och ökad detaljnivå i olika datorer för att prioritera testning och verifiering av kompatibilitet och ange programpaket som kompatibla med Windows 10 via paketinställningar. Med det här alternativet kan du inte jämföra känd kompatibilitetsinformation med Microsofts analystjänster, men det kan vara en effektiv lösning som riktar sig till en mindre uppsättning prioriterade appar för manuell testning. 
 
-Om du vill ha mer information kan du läsa mer i [introduktionen till programvaruinventering i Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) och ställa in plattformskraven i programpaket i [Packages and programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs) (Paket och program i Configuration Manager).
+Om du vill ha mer information kan du läsa mer i [introduktionen till programvaruinventering i Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) och ställa in plattformskraven i programpaket i [Packages and programs in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs) (Paket och program i Configuration Manager).
 
 
 ## <a name="app-assure"></a>App Assure

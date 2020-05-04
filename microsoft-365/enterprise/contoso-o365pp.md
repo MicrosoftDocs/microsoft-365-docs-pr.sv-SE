@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Endpoint Configuration Manager för att distribuera Microsoft 365-applikationer för företag.
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625260"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011893"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365-applikationer för företagsdistribution av Contoso
 
@@ -40,7 +40,7 @@ Contoso valde att distribuera Windows 10 Enterprise och Microsoft 365-applikatio
 - Installation av intelligent språkpaket, inklusive automatisk distribution av samma språk som operativsystemet
 - Komplett och lättanvänd metod för att ta bort befintliga versioner av Office från en klient under distributionen
 
-Förutom Configuration Manager använde Contoso [Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro), ett kostnadsfritt verktyg från Microsoft, för att utvärdera kompatibilitetsproblem med Office-makron och -tillägg.
+Förutom Configuration Manager använde Contoso [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), ett kostnadsfritt verktyg från Microsoft, för att utvärdera kompatibilitetsproblem med Office-makron och -tillägg.
 
 ## <a name="managing-the-deployment-and-updates"></a>Hantera distribution och uppdateringar
 
@@ -51,7 +51,7 @@ Microsoft 365-applikationer för företag har en ny versionsmodell: Office som t
 
 I stället för att hantera uppdateringar för Office med Configuration Manager har Contoso aktiverat automatiska uppdateringar i molnet. Molnbaserade uppdateringar minskade administrationsbehovet medan enheterna är uppdaterade. 
 
-Contoso följde samma två steg för funktionsuppdateringar som de använde för att distribuera Office: enheter i pilotgruppen mottog uppdateringar fyra månader tidigare än enheter i resten av organisationen (den omfattande gruppen). För att aktivera detta för Office använde Contoso två rekommenderade [uppdateringskanaler](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
+Contoso följde samma två steg för funktionsuppdateringar som de använde för att distribuera Office: enheter i pilotgruppen mottog uppdateringar fyra månader tidigare än enheter i resten av organisationen (den omfattande gruppen). För att aktivera detta för Office använde Contoso två rekommenderade [uppdateringskanaler](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
 - Halvårsvis kanal (riktad) för uppdateringar till pilotgruppen 
 - Halvårsvis kanal för uppdateringar till den omfattande gruppen. 

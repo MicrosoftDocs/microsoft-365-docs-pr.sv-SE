@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatiserade uppgraderingar av Windows 7 till Windows 10 för stora organisationer
-ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113487"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011557"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Automatiserade på plats-uppgraderingar av Windows 7 till Windows 10 för stora organisationer
 
@@ -42,7 +42,7 @@ På plats-uppgraderingar till Windows 10 är en tillförlitlig metod för att fl
 
 Uppgraderingsprocessen säkerhetskopierar som standard din tidigare Windows-installation som en del av uppgraderingen, så att vid ett uppgraderingsfel eller om en enhet eller ett program inte fungerar på rätt sätt efter uppgraderingen kan datorn återställas till Windows 7. Uppgraderade datorer har som standard 10 dagar, så du kan manuellt starta en återställning till Windows 7 om det behövs.
 
-På plats-uppgraderingar kan automatiseras med hjälp av distributionsverktyg i operativsystemet som [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) eller [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). I den här artikeln beskrivs de automatiserade metoderna och optimeringarna och länkar ges till relaterade resurser där du kan få mer hjälp.
+På plats-uppgraderingar kan automatiseras med hjälp av distributionsverktyg i operativsystemet som [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) eller [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). I den här artikeln beskrivs de automatiserade metoderna och optimeringarna och länkar ges till relaterade resurser där du kan få mer hjälp.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Uppgradera ett litet antal datorer
 
@@ -80,13 +80,13 @@ De vanligaste orsakerna till att uppgraderingar kanske inte slutföras eller int
 
   - Kodlösningar på låg nivå, till exempel skydd mot skadlig kod, VPN eller virtualisering
 
-Mallar för [uppgraderingsaktivitetssekvenser](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) är inbyggda i Microsoft Endpoint Configuration Manager (Current Branch) och har vari tillgängliga för flera versioner. I de senaste versionerna har det skett betydande tekniska förbättringar av Configuration Manager som gör processen ännu effektivare för att fastställa beredskapen för enhets- och Office-kompatibilitet, minska nätverkstrafik och konfigurera nya alternativ som OneDrive-säkerhetskopiering Titta på det här [Microsoft Mechanics-programmet](https://youtu.be/CYRnAmCD7ls) så får du mer information om de senaste uppdateringarna av OS-distribution med Configuration Manager.
+Mallar för [uppgraderingsaktivitetssekvenser](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) är inbyggda i Microsoft Endpoint Configuration Manager (Current Branch) och har vari tillgängliga för flera versioner. I de senaste versionerna har det skett betydande tekniska förbättringar av Configuration Manager som gör processen ännu effektivare för att fastställa beredskapen för enhets- och Office-kompatibilitet, minska nätverkstrafik och konfigurera nya alternativ som OneDrive-säkerhetskopiering Titta på det här [Microsoft Mechanics-programmet](https://youtu.be/CYRnAmCD7ls) så får du mer information om de senaste uppdateringarna av OS-distribution med Configuration Manager.
 
 Om du inte använder Microsoft Endpoint Configuration Manager kan du använda Microsoft Deployment Toolkit till att skapa och köra aktivitetssekvenser för uppgraderingsdistribution.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Uppgraderingar med förcacheaktivitetssekvenser
 
-Med [förcachealternativet](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) för Configuration Manager-distributionsaktivitetssekvens kan klienter ladda ned relevant innehåll i OS-uppgraderingspaketet innan aktivitetssekvensen uppgraderar operativsystemet. Tidigare skulle start av aktivitetssekvensen starta nedladdningen av paketinnehåll. Med förcacheinnehåll får du även alternativet för klienten att bara ladda ned det gällande OS-uppgraderingspaketet och allt annat refererat innehåll så snart distributionen tas emot.
+Med [förcachealternativet](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) för Configuration Manager-distributionsaktivitetssekvens kan klienter ladda ned relevant innehåll i OS-uppgraderingspaketet innan aktivitetssekvensen uppgraderar operativsystemet. Tidigare skulle start av aktivitetssekvensen starta nedladdningen av paketinnehåll. Med förcacheinnehåll får du även alternativet för klienten att bara ladda ned det gällande OS-uppgraderingspaketet och allt annat refererat innehåll så snart distributionen tas emot.
 
 Förcacheaktivitetssekvenser kombinerat med kompatibilitetskontroller
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig mer om alternativen för distribution av operativsystem och uppdateringar av funktioner.
-ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f372c41b113286d4ecff679f16581200264a9bdd
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636765"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011633"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Steg 6: Distribution av operativsystem och uppdateringar av funktioner
 
@@ -57,7 +57,7 @@ Den infångade avbildningen har formatet för Windows-avbildning – WIM – som
 
 [Skapa en Windows 10-referensavbildning](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Skapa en aktivitetssekvens för att installera ett operativsystem](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Skapa en aktivitetssekvens för att installera ett operativsystem](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Distributionstyper
 
@@ -89,7 +89,7 @@ Scenariot med på plats-uppgradering kan användas för att migrera till Windows
 
 [Utföra en på plats-uppgradering till Windows 10 med Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Skapa en aktivitetssekvens för att uppgradera ett operativsystem i Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Skapa en aktivitetssekvens för att uppgradera ett operativsystem i Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Stegvis distribution
 
@@ -101,7 +101,7 @@ När du planerar distributionen riktar du in dig på datorer för Bare Metal-, u
 
 Oavsett vilken distributionstyp du väljer ska du se till att den är så automatiserad som möjligt för förutsägbarhet och repeterbarhet. Microsoft har två lösningar för att automatisera distributionen av operativsystem med automatiserade aktivitetssekvenser:
 
-  - Med **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) får du inbyggda funktioner för distribution av operativsystem som kompletterar funktionerna för programvarudistribution och hantering av programuppdateringar. ConfigMgr används mycket av organisationer av alla storlekar och stöder alla fyra Windows-distributionstyper. Om du vill kan du även integrera ConfigMgr med Microsoft Intune för att lägga till ytterligare funktioner för distribution och enhetshantering.
+  - Med **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)** (ConfigMgr) får du inbyggda funktioner för distribution av operativsystem som kompletterar funktionerna för programvarudistribution och hantering av programuppdateringar. ConfigMgr används mycket av organisationer av alla storlekar och stöder alla fyra Windows-distributionstyper. Om du vill kan du även integrera ConfigMgr med Microsoft Intune för att lägga till ytterligare funktioner för distribution och enhetshantering.
 
   - Och ett annat populärt distributionsalternativ är det kostnadsfria **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) som vanligtvis används av små och medelstora organisationer för distribution av operativsystem. Det kräver väldigt lite infrastruktur. MDT integreras med Windows Deployment Services (WDS) för nätverksstart. Det har stöd för alla fyra distributionstyper och installation av program, drivrutiner och inställningar. Och självklart kan MDT även integreras med Configuration Manager.
 
