@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig att utvärdera katalog- och nätverksberedskap i miljön.
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636814"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011657"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Steg 2: Katalog- och nätverksberedskap
 
@@ -121,7 +121,7 @@ Förutom leveransoptimeringen finns det tre saker som bidrar till att minska bel
 
 **Binary Delta Compression** Microsoft 365-applikationer för företag använder Binary Delta Compression (komprimering av binärfilsförändring) för att minska bandbredden som används av programuppdateringar vid uppdatering från den senaste Microsoft 365-applikationer för företag-versionen till nästa version. Genom att bara hämta de binära nivåändringarna från föregående version, minimeras påverkan från de ökade storlekarna per månad vid kumulativa uppdateringar. Det går att spara hundratals megabyte data per dator varje månad. För att kunna använda den här funktionen kan du inte hoppa över några versioner. Om du gör det måste du ladda ned den fullständiga kumulativa uppdateringen.
 
-[Ladda ned uppdateringar för Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Ladda ned uppdateringar för Microsoft 365-appar](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **Outlook-datafiler** Outlook är ofta konfigurerat att cachelagra användarens hela postlåda lokalt för användning offline. I de flesta Windows-distributioner, utom vid på-plats-uppgraderingar, kräver detta att användarens Outlook-datafiler återskapar sig själva efter uppgraderingen. Det här är en automatisk process, men med begränsningarna i Outlook-postlådan som vanligtvis är upp till 100 GB, innebär en ny cachelagring av hela postlådan lokalt för alla användare stora dataöverföringar. Om du vill minska belastningen på nätverket kan du använda en grupprincip för att minska inställningen ”E-post som ska behållas offline”. I Microsoft 365-applikationer för företag eller Office 2016 är standardvärdet för Outlook inställt på 12 månader. Om du vill minska risken för nätverkspåverkan kan du ställa in offlinecachen på mellan 1 och 6 månader. Att ändra inställningen påverkar inte din onlinepostlådas storlek och hela postlådan kan fortfarande sökas igenom i Outlook när du är online.
 
