@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introduktion till skrivbordsdistributionsprocessen.
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634224"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011881"
 ---
 # <a name="getting-started---desktop-deployment"></a>Komma igång – Skrivbordsdistribution
 
@@ -53,7 +53,7 @@ En viktig faktor inom modern hantering är att alltid ha uppdaterade enheter. I 
 
 [Windows 10 för IT-proffs](https://www.microsoft.com/itpro/windows-10)
 
-[Om Microsoft 365-applikationer för företag i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[Om Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>Förändringar
 
@@ -67,7 +67,7 @@ Vi börjar med att ta en titt på vad som har förändrats och förbättrats sed
 
 **Molnbaserad enhetshantering:** Tjänster som Microsoft Intune hjälper dig att hantera dina Windows 10-enheter på samma sätt som du hanterar mobila enheter, från en och samma plats. Det som gör Microsoft Intune unikt är att du kan samhantera dina Windows 10-enheter med Microsoft Endpoint Configuration Manager. Du kan använda Configuration Manager i övergången till Windows 10 och sedan lägga till Microsoft Intune. När dessa används tillsammans blir Microsoft Endpoint Configuration Manager den intelligenta nätverksgränsen i organisationen, med anslutning till Microsoft Intelligent Cloud. Detta innebär att du kan hantera användarnas enheter på ett säkert sätt var de än är, oavsett om de är anslutna till organisationens infrastruktur eller det offentliga molnet.
 
-[Samhantering av Windows 10-enheter](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Samhantering av Windows 10-enheter](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Molnbaserad distributionstjänst:** Vi har introducerat en ny molntjänst, Windows Autopilot, som hjälper dig att distribuera Microsoft 365-enheter när du köper nya datorer. Autopilot är integrerat med dina maskinvaruleverantörer, och de nya datorerna registreras automatiskt i Autopilot så att de kan levereras direkt till slutanvändaren. När datorn startas för första gången konfigureras den snabbt för just din organisation och efter användarnas specifika behov.
 
@@ -77,7 +77,7 @@ Vi börjar med att ta en titt på vad som har förändrats och förbättrats sed
 
 Klicka-och-kör skiljer sig från äldre MSI-baserade paket. Klicka-och-kör är snabbare och mindre, och har stöd för uppdateringar i bakgrunden så att användarna kan fortsätta arbeta. Det är fortfarande en lokal kopia av Office och du kan fortsätta att använda dina befintliga distributionsverktyg, till exempel Microsoft Endpoint Configuration Manager, för att installera och konfigurera program.
 
-[Guide till distribution av Microsoft 365-applikationer för företag](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Guide till distribution av Microsoft 365-applikationer](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Halvårsuppdateringar:** När du har övergått till Windows 10 och Microsoft 365-applikationer för företag levereras uppdateringar varje halvår med nya funktioner. Eftersom Microsoft kan leverera information från molnet kan du snabbt och säkert installera dessa uppdateringar på hundratals eller tusentals enheter. Precis som på-plats-uppgraderingen bevaras appar, data och konfigurationer från tidigare versioner vid en funktionsuppdatering.
 
@@ -109,14 +109,14 @@ Precis som i tidigare uppgraderingar fortsätter User State Migration Tool att v
 
 **[Steg 6: Distribution av operativsystem och funktionsuppdateringar](https://aka.ms/mdd6)** När alla förberedelser har gjorts är nästa steg att distribuera OS-avbildningarna. Mycket av grovjobbet kan göras med System Center Configuration Manager-aktivitetssekvenser och -infrastruktur. Vi rekommenderar att distributionen utförs i faser där distributionen först görs på en liten testgrupp i organisationen med en representativ uppsättning maskinvara och appar. Sedan kan data från dessa enheter och användare användas för att gradvis utöka distributionen till fler datorer.
 
-[Introduktion till operativsystemsdistribution i Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Introduktion till operativsystemsdistribution i Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Steg 7: Windows och Office som en tjänst](https://aka.ms/mdd7)** Det här innebär en stor förändring i hur du underhåller användarnas datorer. När du har övergått till Windows 10 och Microsoft 365-applikationer för företag kan du börja hantera Windows och Office som en tjänst. I stället för att göra stora teknikbyten efter ett par år kan du kontinuerligt ge användarna nya funktioner, upplevelser och skydd.  Nya funktionsuppdateringar släpps varje höst och vår medan samlade kvalitetsuppdateringar med säkerhets-, tillförlitlighets- och felkorrigeringar släpps varje månad. Du kan välja att distribuera Office 2019-klienten, men vi rekommenderar starkt att du övergår till att använda Microsoft 365-applikationer för företag. I så fall får du en liknande serviceplan som för Windows, vilket innebär att användarna får regelbundna uppdateringar för Office-programmen.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Översikt över Windows som en tjänst](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Översikt över Office som en tjänst](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Översikt över Office som en tjänst](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Steg 8: Användarmeddelanden och utbildning](https://aka.ms/mdd8)** Det här sista steget är viktigt för att uppmuntra användning av nya funktioner för bättre samarbete, kommunikation, säkerhet och mycket mer. Vi rekommenderar att du distribuerar information och utbildning till användarna innan gör en bred distribution till användare utanför grupperna med tidiga användare. På så sätt kan du påverka hur nya funktioner används i Office, Windows eller andra verksamhetsspecifika appar och tjänster. Som hjälp tillhandahåller vi kostnadsfri utbildning online via Microsoft FastTrack. Dessutom har vi publicerad kostnadsfria kommunikationsplaner och tidslinjer samt mallar för e-post, sociala medier och intranät som hjälper dig med distributionen av Windows 10. Om din organisation använder Microsoft 365 kan ni också vara berättigade till direktsupport.
 

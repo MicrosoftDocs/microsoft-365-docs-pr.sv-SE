@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom processen att migrera versioner av Microsoft Office, Office-servrar och Windows till Microsoft 365 Enterprise för hela organisationen.
-ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631543"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011801"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrering till Microsoft 365 Enterprise
 
@@ -49,7 +49,7 @@ Oavsett om din organisation är stor eller liten, kanske du använder en kombina
 - Har inte anpassats optimalt till att använda Microsofts molntekniker som hjälper dig att transformera din verksamhet digitalt.
 - Innehåller inga nya funktioner.
  
-Microsoft 365 Enterprise innehåller Microsoft 365-applikationer för företag, en version av Office-klientprodukter som är tillgänglig med en Microsoft 365 Enterprise-licens och installeras och uppdateras från Microsoft Cloud. Microsoft 365-applikationer för företag innehåller säkerhetsuppdateringar och de senaste funktionerna. Mer information finns i [Om Microsoft 365-applikationer för företag i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise innehåller Microsoft 365-applikationer för företag, en version av Office-klientprodukter som är tillgänglig med en Microsoft 365 Enterprise-licens och installeras och uppdateras från Microsoft Cloud. Microsoft 365-applikationer för företag innehåller säkerhetsuppdateringar och de senaste funktionerna. Mer information finns i [Om Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
 

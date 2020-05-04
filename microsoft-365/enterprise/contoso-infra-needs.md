@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå den grundläggande strukturen i Contosos lokala IT-infrastruktur och hur företagets behov uppfylldes av Microsoft 365 Enterprise.
-ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625296"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011203"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contosos IT-infrastruktur och affärsbehov
 
@@ -110,7 +110,7 @@ Hantering:
 
 - Minska IT-omkostnaderna för hantering av programvara som körs på klientdatorer och -enheter
 
-  Automatisera installationen av uppdateringar av Windows-operativsystemet och Microsoft Office ProPlus i hela organisationen.
+  Automatisera installationen av uppdateringar av Windows-operativsystemet och Microsoft 365-applikationer för företag i hela organisationen.
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Koppla Contosos affärsbehov till Microsoft 365 Enterprise
 

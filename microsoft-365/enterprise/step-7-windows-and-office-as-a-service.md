@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du förbereder för underhåll av Windows och Office i din miljö.
-ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636741"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011621"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Steg 7: Underhåll av Windows och Office
 
@@ -83,7 +83,7 @@ Vi har även funderat på vi kan underlätta din distribution av uppdateringarna
 
 [Distribuera Windows 10-uppdateringar med Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Hantera Microsoft 365-applikationer för företag med Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Hantera Microsoft 365-applikationer för företag med Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Översikt över Windows- och Office-kanalerna
 
@@ -103,7 +103,7 @@ Microsoft 365 har fyra underhållskanaler:
 Detaljerad information om underhållskanalerna för Windows och Office finns i dokumentationen nedan:
 
 - [Översikt över Windows som en tjänst](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Översikt över uppdateringskanaler för Microsoft 365-applikationer för företag](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Översikt över uppdateringskanaler för Microsoft 365-applikationer](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>Fasindelad distribution av uppdateringar
 
@@ -141,7 +141,7 @@ När det gäller verktyg kan du använda principinställningarna med Windows Upd
 
 [Windows halvårskanal](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Halvårskanal för Microsoft 365-applikationer för företag](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Halvårskanal för Microsoft 365-applikationer](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Aktivitetssekvenser för uppgradering
 
@@ -153,7 +153,7 @@ Med en aktivitetssekvens kan du skapa anpassade kontroller eller aktiviteter inn
 
 Om du redan använder aktivitetssekvenser för att migrera dina Windows 7-datorer till Windows 10 och vet hur dessa verktyg fungerar, ger detta bästa möjliga kontroll och är en bra plats att börja på. Du kan använda en enda aktivitetssekvens för hela uppgraderingen, men det är ganska vanligt att organisationer använder två aktivitetssekvenser. Det vill säga en aktivitetssekvens för att säkerställa att datorerna är redo för uppgraderingen (som tyst förinstallerar alla nödvändiga installationsfiler på måldatorerna) och en aktivitetssekvens för att utföra den faktiska uppgraderingen. Användarna störs inte lika mycket av uppgraderingen om du använder den här metoden.
 
-[Skapa en aktivitetssekvens för att uppgradera ett operativsystem i Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Skapa en aktivitetssekvens för att uppgradera ett operativsystem i Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>Support för funktionsuppdateringar i halvårskanalen
 

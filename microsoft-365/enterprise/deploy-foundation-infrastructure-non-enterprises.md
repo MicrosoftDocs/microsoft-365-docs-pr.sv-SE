@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom de förenklade faserna i den grundläggande infrastrukturen för Microsoft 365 för företag för andra organisationer än stora företag.
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638266"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011905"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Grundläggande infrastruktur för Microsoft 365 för företag för andra än stora företag
 
@@ -215,7 +215,7 @@ De nya och markerade Windows 10 Enterprise-elementen inkluderar:
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Fas 4: Microsoft 365-applikationer för företag
 
-Microsoft 365 Enterprise innehåller Microsoft 365-applikationer för företag, prenumerationsversionen av Microsoft Office. Som Office 2016 eller Office 2019 installeras Microsoft 365-applikationer för företag direkt på dina klientenheter. Microsoft 365-applikationer för företag får däremot regelbundet uppdateringar som innehåller nya funktioner. Mer information finns i [Om Microsoft 365-applikationer för företag i företaget](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise innehåller Microsoft 365-applikationer för företag, prenumerationsversionen av Microsoft Office. Som Office 2016 eller Office 2019 installeras Microsoft 365-applikationer för företag direkt på dina klientenheter. Microsoft 365-applikationer för företag får däremot regelbundet uppdateringar som innehåller nya funktioner. Mer information finns i [Om Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 För andra organisationer än stora företag installerar du Microsoft 365-applikationer för företag manuellt på enheterna, som kan omfatta Windows-, iOS- och Android-enheter. Detta kan göras som en del av att förbereda en ny enhet för användning, eller av användaren som en del av introduktionsprocessen.
 

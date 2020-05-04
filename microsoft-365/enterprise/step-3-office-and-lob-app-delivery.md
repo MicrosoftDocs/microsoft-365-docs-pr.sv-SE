@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du levererar Office- och LOB-appar.
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636802"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011645"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Steg 3: Leverans av Office- och LOB-appar
 
@@ -63,9 +63,9 @@ En annan populär metod för att leverera appar i programmet är PC Imaging. I d
 
 Om du vill ta med Microsoft 365-applikationer för företag i din avbildning måste du tänka på att det använder en användarspecifik aktivering. Det kan inte föraktiveras av systemadministratören. Använd distributionsverktyget för Office för att förinstallera Office på enheten för avbildningen och hoppa över användarinloggningen. När avbildningen är distribuerad kan slutanvändarna logga in med sina autentiseringsuppgifter och aktivera Microsoft 365-applikationer för företag.
 
-[Skapa en aktivitetssekvens för att installera ett operativsystem](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Skapa en aktivitetssekvens för att installera ett operativsystem](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Distribuera Microsoft 365-applikationer för företag som en del av en operativsystemavbildning](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Distribuera Microsoft 365-applikationer som en del av en operativsystemavbildning](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office Klicka-och-kör 
 
@@ -81,11 +81,11 @@ Om du använder Configuration Manager kan du fortfarande använda det för omfat
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guide till distribution av Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Distributionsguide för Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Ta bort befintliga MSI-versioner av Office när du uppgraderar till Microsoft 365-applikationer för företag](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Ta bort befintliga MSI-versioner av Office när du uppgraderar till Microsoft 365-applikationer](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Hantera Microsoft 365-applikationer för företag med Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Hantera Microsoft 365-applikationer för företag med Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Tilldela Office 365-appar till Windows 10-enheter med Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

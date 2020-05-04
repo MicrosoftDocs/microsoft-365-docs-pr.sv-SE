@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631519"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011965"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
@@ -104,7 +104,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 ### <a name="windows-and-office-as-a-service"></a>Windows och Office som tjänst
   - Hantera Windows-uppdateringar med grupprinciper
   - Underhålla Windows 10 med Konfigurationshanteraren och Intune
-  - Hantera Office 365 ProPlus med Konfigurationshanteraren
+  - Underhålla Microsoft 365-applikationer för företag med Configuration Manager
 
 ### <a name="new-windows-virtual-desktop"></a>NYHET! Windows Virtual Desktop
   - Windows Virtual Desktop: förbereda, distribuera, optimera 
@@ -121,11 +121,11 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
   - [Videor i skrivbordsdistributionsserien från Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Operativsystemdistribution med Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Operativsystemdistribution med Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Planera för distribution av Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guide till distribution av Microsoft 365 Apps för företag</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guide till distribution av Microsoft 365-applikationer</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Komma igång med Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
