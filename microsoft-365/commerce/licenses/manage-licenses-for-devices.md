@@ -14,25 +14,25 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
-description: Läs om hur du tilldelar licenser till grupper som ska användas med enheter.
+description: Lär dig hur du tilldelar licenser till grupper för användning med enheter.
 ms.custom: okr_SMB
 search.appverid:
 - MET150
-ms.openlocfilehash: a29465e9425694f8913cc09d1b8a0c761c79803c
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826285"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011191"
 ---
 # <a name="manage-licenses-for-devices"></a>Hantera licenser för enheter
 
-Om du har Office 365 ProPlus (enhet) eller Office 365 ProPlus för utbildning (enhet) kan du tilldela licenser till enheter med hjälp av Azure AD-grupper. När en enhet har en licens kan alla som använder den enheten använda Office 365. Anta till exempel att du har 20 bärbara datorer och surfplattor som används av personer i organisationen. När du tilldelar en licens till varje enhet använder varje person som loggar in på en av enheterna Office 365 utan att behöva sin egen licens.
+Om du har Microsoft 365 Apps for Enterprise (device) eller Microsoft 365 Apps for Education (device) kan du tilldela licenser till enheter med hjälp av Azure AD-grupper. När en enhet har en licens kan alla som använder den enheten använda Microsoft 365 Apps för företag (tidigare office 365 ProPlus). Anta till exempel att du har 20 bärbara datorer och surfplattor som används av personer i organisationen. När du tilldelar en licens till varje enhet använder varje person som loggar in på en av enheterna Microsoft 365 Apps för företag utan att behöva sin egen licens.
 
 > [!IMPORTANT]
-> Enhetsbaserad licensiering för Office 365 ProPlus är endast tillgänglig som tilläggslicens för vissa kommersiella kunder och vissa utbildningskunder. För kommersiella kunder är licensen *Office 365 ProPlus (enhet)* och är endast tillgänglig via Enterprise Agreement/Enterprise Agreement Subscription. För utbildningskunder är licensen *Office 365 ProPlus för utbildning (enhet)* och är endast tillgänglig via Inskrivning för utbildningslösningar (EES). För mer information, läs blogginlägget om [utbildning tillgänglighet](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/). Kontakta din Microsoft-kontorepresentant om du vill ha kommersiell tillgänglighet.
+> Enhetsbaserad licensiering för Microsoft 365 Apps för företag är endast tillgänglig som tilläggslicens för vissa kommersiella kunder och vissa utbildningskunder. För kommersiella kunder är licensen *Microsoft 365 Apps for enterprise (device)* och är endast tillgänglig via Enterprise Agreement/Enterprise Agreement Subscription. För utbildningskunder är licensen *Microsoft 365 Apps for Education (enhet)* och är endast tillgänglig via Enrollment for Education Solutions (EES). Mer information finns i blogginlägget om [utbildningstillgänglighet](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/). Kontakta din Microsoft-kontorepresentant för kommersiell tillgänglighet.
 
-Till att börja med skapar du en grupp i Administrationscentret för Azure Active Directory och tilldelar sedan enheter till gruppen. Mer information om enhetslicensiering, inklusive enhetskrav, vilka typer av grupper du kan använda och hur du konfigurerar Office 365 ProPlus för att använda enhetslicensiering finns i [Enhetsbaserad licensiering för Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=2094216).
+Till att börja med skapar du en grupp i Administrationscentret för Azure Active Directory och tilldelar sedan enheter till gruppen. Mer information om enhetslicensiering, inklusive enhetskrav, vilka typer av grupper du kan använda och hur du konfigurerar Microsoft 365 Apps för företag för att använda enhetslicensiering, finns i [Enhetsbaserad licensiering för Microsoft 365 Apps för företag](https://go.microsoft.com/fwlink/p/?linkid=2094216).
 
 > [!IMPORTANT]
 > Du måste vara global administratör för att kunna utföra uppgifterna i den här artikeln.
@@ -41,17 +41,17 @@ Till att börja med skapar du en grupp i Administrationscentret för Azure Activ
 
 När du tilldelar licenser till en grupp tilldelar du licenser till alla enheter i gruppen. Du kan bara tilldela en prenumeration till en enskild grupp.
 
-1. Gå till sidan<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i **administrationscentret** > för Microsoft 365.
-2. På sidan **Licenser** väljer du **Office 365 ProPlus för utbildning (enhet)** eller **Office ProPlus (enhet).**
-3. Välj en prenumeration på nästa sida och välj sedan **Tilldela licenser**.
-4. I fönstret **Tilldela licenser i en grupp** börjar du skriva ett gruppnamn och väljer det sedan från resultaten för att lägga till det i listan.
+1. Gå till sidan<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser i administrationscentret</a> **för** > Microsoft 365.
+2. På sidan **Licenser** väljer du **Microsoft 365 Apps for Education (enhet)** eller **Microsoft 365 Apps for enterprise (device)**.
+3. På nästa sida väljer du en prenumeration och väljer sedan **Tilldela licenser**.
+4. I fönstret **Tilldela licenser till en grupp** börjar du skriva ett gruppnamn och väljer det sedan från resultaten för att lägga till det i listan.
 5. Välj **Tilldela**och välj sedan **Stäng**.
 
-## <a name="unassign-licenses-from-devices"></a>Ta bort licenser från enheter
+## <a name="unassign-licenses-from-devices"></a>Ta bort tilldelning av licenser från enheter
 
-När du tar bort licenser från en grupp tar du bort licenserna från alla enheter i gruppen. Alla appar och tillhörande data är sedan skrivskyddade.
+När du tar bort licenser från en grupp tar du bort licenserna från alla enheter i gruppen. Alla appar och tillhörande data skrivs sedan skrivskyddade.
 
-1. Gå till sidan<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i **administrationscentret.** > 
-2. På sidan **Licenser** väljer du **Office 365 ProPlus för utbildning (enhet)** eller **Office ProPlus (enhet).**
-3. Välj en prenumeration på nästa sida, välj **Fler åtgärder**och välj sedan Ta **bort tilldelningslicenser**.
-4. Välj **Ta bort tilldelning i**dialogrutan Ta bort **licenser** .
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret. **Billing**
+2. På sidan **Licenser** väljer du **Microsoft 365 Apps for Education (enhet)** eller **Microsoft 365 Apps for enterprise (device)**.
+3. På nästa sida väljer du en prenumeration, väljer **Fler åtgärder**och väljer sedan Ta **bort licenser**.
+4. Välj **Ta bort tilldelning**i dialogrutan Ta bort **licenser** .

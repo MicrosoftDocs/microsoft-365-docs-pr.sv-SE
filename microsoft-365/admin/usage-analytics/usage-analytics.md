@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Få en översikt över hur din organisation använder Microsoft 365-tjänster för att kommunicera och samarbeta.
-ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626940"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011765"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
 ---
@@ -71,7 +71,7 @@ Med den här sammanfattningen kan du snabbt förstå användningsmönster i Offi
 
 Aktiverings- och licenssidan innehåller rapporter om Microsoft 365-aktivering. det vill exempel på hur många användare som har hämtat och aktiverat Office-appar och hur många licenser som har tilldelats av din organisation. Månadsvärdet mot toppen refererar till den aktuella månaden och måtten återspeglar värden som aggregerats från början av månaden till det aktuella datumet.
 
-- **Aktiveringsspårstjänstplan** &ndash; (till exempel Microsoft 365 ProPlus-, Project- och Visio-aktiveringar) i organisationen. Varje användare med en Office-licens kan installera produkter på upp till fem enheter. Du kan också använda rapporter i det här avsnittet för att se de enheter där personer har installerat Office-appar. Observera att för att aktivera ett abonnemang måste en användare installera appen och logga in med sitt konto.
+- **Aktiveringsspårstjänstplan** &ndash; (till exempel Microsoft 365 Apps för företag, Projekt och Visio) aktiveringar i organisationen. Varje användare med en Office-licens kan installera produkter på upp till fem enheter. Du kan också använda rapporter i det här avsnittet för att se de enheter där personer har installerat Office-appar. Observera att för att aktivera ett abonnemang måste en användare installera appen och logga in med sitt konto.
 
 - **Licensiering** &ndash; Den här rapporten innehåller en översikt över licenstyper, antalet användare som tilldelats varje licenstyp och licenstilldelningsdistributionen för varje månad. Månadsvärdet mot toppen refererar till den aktuella månaden och måtten återspeglar värden som aggregerats från början av månaden till det aktuella datumet.
 

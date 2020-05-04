@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636681"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011929"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fas 3: Windows 10 Enterprise
 
@@ -41,7 +41,7 @@ Det finns flera sätt att distribuera Windows 10 Enterprise för din organisatio
 
 | Distributionsscenario | När du ska använda den |
 |:--- |:--- |
-| [Använda Microsoft Endpoint Configuration Manager som en uppgradering på plats](windows10-deploy-inplaceupgrade.md) | Välj det här alternativet om du behöver uppgradera Windows 7- eller Windows 8.1-datorer till den <a href="https://aka.ms/windows-10-release-information" target="_blank">aktuella versionen</a> av Windows 10 Enterprise och dina datorer för närvarande hanteras med <a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">Configuration Manager (aktuell gren).</a> |
+| [Använda Microsoft Endpoint Configuration Manager som en uppgradering på plats](windows10-deploy-inplaceupgrade.md) | Välj det här alternativet om du behöver uppgradera Windows 7- eller Windows 8.1-datorer till den <a href="https://aka.ms/windows-10-release-information" target="_blank">aktuella versionen</a> av Windows 10 Enterprise och dina datorer för närvarande hanteras med <a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">Configuration Manager (aktuell gren).</a> |
 | [Använda Windows Autopilot](windows10-deploy-autopilot.md) | Välj det här alternativet om du konfigurerar nya Windows-datorer med Windows 10 Enterprise, version 1703 eller senare förinstallerat. Slutanvändare initierar installationen med önskad konfiguration genom att ange sina autentiseringsuppgifter för arbets- eller skolkonto. |
 
 Om dessa distributionsscenarier inte passar organisationens behov kan du lära dig mer om andra scenarier och förstå funktionerna och begränsningarna för varje i [Windows 10-distributionsscenarier](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också <a href="https://aka.ms/planforwin10deployment" target="_blank">planera för distribution av Windows 10</a> på egen hand.

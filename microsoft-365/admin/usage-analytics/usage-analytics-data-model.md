@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Lär dig hur användningsanalys ansluter till ett API och ger månatliga trend för användning av olika Microsoft 365-tjänster.  '
-ms.openlocfilehash: 56ef0ffcedee71a4529ff31aecefed0d2645b89a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634246"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011777"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Datamodell för Microsoft 365 användningsanalyser
 
@@ -50,7 +50,7 @@ Det här API:et innehåller information om den månatliga trenden för användni
 |Klientorganisationens användning av SharePoint Online  <br/> |Innehåller information om SharePoint-webbplatserna, vilket omfattar gruppwebbplatser, till exempel totalt antal webbplatser, antal dokument på webbplatsen, antal filer efter aktivitetstyp och använt lagringsutrymme.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
 |Klientorganisationens användning av OneDrive för företag  <br/> |Innehåller information om OneDrive-kontona, till exempel antalet konton, antalet dokument i OneDrives, lagringsutrymme som används och antalet filer efter aktivitetstyp.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
 |Användning av Microsoft 365-grupper för klient  <br/> |Innehåller data om användning av Microsoft 365-grupper, inklusive postlåda, SharePoint och Yammer.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Klientorganisationens Office-aktiveringar  <br/> |Innehåller information om antalet aktiveringar för Office-prenumerationer, antalet aktiveringar per enhet (Android/iOS/Mac/PC), aktiveringar efter tjänstplan, till exempel Office Proplus, Visio och Projekt.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
+|Klientorganisationens Office-aktiveringar  <br/> |Innehåller data om antalet Office-prenumerationsaktiveringar, antal aktiveringar per enhet (Android/iOS/Mac/PC), aktiveringar per serviceplan, till exempel Microsoft 365 Apps för företag, Visio, Project.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
 |Användarens status  <br/> |Innehåller metadata om användare, inklusive användarens visningsnamn, produkter som tilldelats, plats, avdelning, titel och företag. Den här informationen handlar om användare som tilldelades en licens under den senaste fullständiga månaden. Alla användare är unikt representerade av ett användar-ID.  <br/> |Den här informationen handlar om användare som hade en tilldelad licens under den senaste fullständiga månaden.  <br/> |
 |Användaraktivitet  <br/> |Innehåller information efter användarnivå om aktiviteter som utförts av licensierade användare.  <br/> Se [definition av aktiv användare](active-user-in-usage-reports.md) om du vill ha information om aktiviteterna i en produkt som visas i den här datatabellen.  <br/> |Den här informationen handlar om användare som utförde en aktivitet i någon av tjänsterna under den senaste fullständiga månaden.  <br/> |
    
@@ -152,7 +152,7 @@ Den här tabellen innehåller månad för månadsanvändningsdata när det gäll
 |ActiveUsers  <br/> |Antalet användare som utförde en avsiktlig aktivitet i produkten under tidsperioden.  <br/> En användare räknas som aktiv för en produkt under en viss månad om han eller hon har utfört en nyckelaktivitet i produkten. Nyckelaktiviteter är tillgängliga i tabellen **Klientorganisationens produktaktivitet**.  <br/> |
 |Kumulativa Aktivaanvändare  <br/> |Antalet användare som har aktiverats för att använda en produkt och som har använt produkten fram till månaden inom tidsperioden minst en gång sedan datainsamlingen påbörjades i det nya användningssystemet.  <br/> |
 |MoMReturningAnvändare  <br/> |Antalet användare som är aktiva under månaden inom tidsperioden och som även var aktiva under den föregående månaden.  <br/> |
-|FirstTimeUsers  <br/> |Antalet användare som blev aktiva inom tidsperioden för första gången sedan data samlades in i det nya användningssystemet.  <br/> En användare räknas som förstagångsanvändare under en viss månad, om vi identifierar hans eller hennes aktiviteter för första gången efter det att data börjat samlas in i det här nya rapporteringssystemet. När en användare väl har räknats som förstagångsanvändare en gång kommer han eller hon aldrig att räknas som sådan igen, även om han eller hon sedan inte utför några aktiviteter på mycket länge  <br/> |
+|FirstTimeUsers  <br/> |Antalet användare som blev aktiva inom tidsperioden för första gången sedan data samlades in i det nya användningssystemet.  <br/> En användare räknas som förstagångsanvändare under en viss månad, om vi identifierar hans eller hennes aktiviteter för första gången efter det att data börjat samlas in i det här nya rapporteringssystemet. En gång räknat som en första gången användare, även om denna användare har en stor lucka i sin verksamhet de aldrig kommer att räknas igen som en första gången användare  <br/> |
 |Content Date  <br/> |Om tidsperioden är aktuell månad representerar det här värdet det senaste datumet i den aktuella månaden för vilket det finns tillgängliga data.  <br/> Om tidsperioden är föregående månad representerar det här värdet det sista datumet i månaden inom tidsperioden.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Datatabell - Klientorganisationens produktaktivitet
@@ -277,7 +277,7 @@ Den här tabellen innehåller data om hur Microsoft 365-grupper används i hela 
    
 ### <a name="data-table---tenant-office-activation"></a>Datatabell - Klientorganisationens Office-aktiveringar
 
-Tabellen innehåller information om antalet aktiveringar av Office-prenumerationer för alla tjänstplaner, till exempel Office Proplus, Visio, Project. Här finns även information om antalet aktiveringar per enhet (Android/iOS/Mac/PC).
+Tabellen innehåller data om antalet Office-prenumerationsaktiveringar i tjänstplanerna, till exempel Microsoft 365 Apps for enterprises, Visio, Project. Här finns även information om antalet aktiveringar per enhet (Android/iOS/Mac/PC).
   
 |**Kolumnnamn**|**Kolumnbeskrivning**|
 |:-----|:-----|

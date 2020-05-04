@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 53b5bc1bad9a67543fccaa8dcb3223307d2634b9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003459"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011857"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 produktivitet illustrationer
 
@@ -124,12 +124,12 @@ Mer information finns i artikeln för den här affischen: [Microsoft Telephony S
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Distribuera ett modernt och säkert skrivbord med Microsoft
 
-Vad IT-arkitekter behöver veta om att distribuera och hantera uppdateringar för Office 365 ProPlus på Windows 10.
+Vad IT-arkitekter behöver veta om att distribuera och hantera uppdateringar för Microsoft 365 Apps för företag (tidigare office 365 ProPlus) på Windows 10.
   
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Miniatyrbild för distribuera ett modernt och säkert skrivbord med Microsoft-modell](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Uppdaterad september 2017 | Denna modell innehåller: <ul><li>  Distribuera Windows 10 och Office ProPlus från Microsoft-molnet </li><li>  Distribuera Windows 10 och Office ProPlus med Microsoft Endpoint Configuration Manager </li><li>  Hantera uppdateringar för Windows 10 och Office ProPlus från Microsoft-molnet </li><li>  Hantera uppdateringar för Windows 10 och Office ProPlus med Microsoft Endpoint Configuration Manager </li><li>  Färdiga och ytterligare skyddsfunktioner i Windows 10 </li></ul><br/> |
+|[![Miniatyrbild för distribuera ett modernt och säkert skrivbord med Microsoft-modell](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Uppdaterad september 2017 | Denna modell innehåller: <ul><li>  Distribuera Windows 10- och Microsoft 365-appar för företag från Microsoft-molnet </li><li>  Distribuera Windows 10- och Microsoft 365-appar för företag med Microsoft Endpoint Configuration Manager </li><li>  Hantera uppdateringar för Windows 10 och Microsoft 365 Apps för företag från Microsoft-molnet </li><li>  Hantera uppdateringar för Windows 10- och Microsoft 365-appar för företag med Microsoft Endpoint Configuration Manager </li><li>  Färdiga och ytterligare skyddsfunktioner i Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Se även
 

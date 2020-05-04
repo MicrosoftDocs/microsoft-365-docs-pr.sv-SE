@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'Läs om hur du använder Cortana när den är integrerad med Office 365. Du kan inaktivera Cortana i administrationscentret för att begränsa dess åtkomst till organisationens data. '
-ms.openlocfilehash: 768abeed4bf40255e9dd7c6e09e20122523a943d
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 5f1d225e8cf7378bf4548fbbc705cf4ca6c2c63b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907219"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011693"
 ---
 # <a name="cortana-in-office-365"></a>Cortana i Office 365
 
@@ -106,7 +106,7 @@ Här är de två sätten att tänka på hur Cortana fungerar i ditt företag:
 
 3. Spela upp mina e-postmeddelanden är till exempel en Cortana-tjänst som användarna kan ansluta till via Outlook för iOS och använder Cortana i Office 365.
 
-4. Administratörer har alltid kontroller för valfria anslutna upplevelser för Cortana, liknande valfria anslutna upplevelser när du använder Office ProPlus-program.
+4. Administratörer har alltid kontroller för valfria anslutna upplevelser för Cortana, liknande valfria anslutna upplevelser när du använder Microsoft 365 Apps för företagsprogram.
 
 **Befintliga tjänster för konsumenter**: Cortana-valfria anslutna tjänster är främst utformade för konsumentupplevelser och levereras för närvarande i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android.
 

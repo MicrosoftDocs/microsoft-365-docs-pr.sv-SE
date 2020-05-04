@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 lösnings- och arkitekturcenter
-description: Beskrivning.
+description: Få den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och kompatibelt modernt samarbete.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 3442e51a3487be859ba546f5be2cab6e8e574de4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: d621586e5ff50bce7be68117a940fc54607362c2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003407"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011753"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 lösnings- och arkitekturcenter
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997520"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011869"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivera Microsoft Hotskydd
 
@@ -36,7 +36,7 @@ Microsoft Threat Protection förenar din incidentsvarsprocess genom att integrer
 För att få bästa möjliga skydd och optimera Microsofts hotskydd rekommenderar vi att du distribuerar alla tillämpliga tjänster som stöds i nätverket. Mer information [finns i om hur du distribuerar tjänster som stöds](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Kontrollera behörighet för licenser och nödvändiga behörigheter
-En Microsoft 365 E5-, E5 Security-, A5- eller A5-säkerhetslicens eller en giltig kombination av licenser ger åtkomst till tjänster som stöds och ger dig rätt att använda Microsoft Threat Protection i Microsoft 365-säkerhetscenter.
+En Microsoft 365 E5-, E5 Security-, A5- eller A5-säkerhetslicens eller en giltig kombination av licenser ger åtkomst till tjänster som stöds och ger dig rätt att använda Microsoft Threat Protection i Microsoft 365-säkerhetscenter utan ytterligare licenskostnader.
 
 Detaljerad licensinformation [finns i licenskraven](prerequisites.md#licensing-requirements).
 
@@ -44,22 +44,28 @@ Detaljerad licensinformation [finns i licenskraven](prerequisites.md#licensing-r
 Du måste vara **global administratör** eller **säkerhetsadministratör** i Azure Active Directory för att kunna aktivera Microsoft Threat Protection. [Visa dina roller i Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>Börja använda tjänsten
-Microsoft Threat Protection sammanställer data från de olika integrerade tjänsterna. Det kommer att bearbeta och lagra data centralt för att identifiera nya insikter och göra centraliserade svarsarbetsflöden möjliga.
+
+>[!IMPORTANT]
+>Från och med den 3 maj 2020 kommer Microsoft gradvis att lansera nya, optimerade upplevelser kring [licenskrav](prerequisites.md#licensing-requirements) och aktivera Microsoft Threat Protection. Under flera veckor under denna period kommer vissa kunder att börja se ändringar i sina portalupplevelser. Information om de nya upplevelserna markeras **Ny upplevelse** i den här artikeln.
+
+Microsoft Threat Protection sammanställer data från de olika integrerade tjänsterna. Det kommer att bearbeta och lagra data centralt för att identifiera nya insikter och göra centraliserade svarsarbetsflöden möjliga. Det gör detta utan att påverka befintliga distributioner, inställningar eller data som är associerade med de integrerade tjänsterna.
 
 Innan du aktiverar tjänsten visar Microsoft 365-säkerhetscentret ([security.microsoft.com](https://security.microsoft.com)) välkomstsidan för Microsoft Threat Protection när du väljer **Incidenter,** **Åtgärdscenter**eller **Jakt** i navigeringsfönstret. Dessa navigeringsalternativ visas inte om du inte kan använda Microsoft Threat Protection.
 
 ![Bild av välkomstsidan för Microsoft Threat Protection som visas](../../media/mtp-welcome.png)
 om Microsoft Threat Protection inte har aktiverats på*välkomstsidan för Microsoft Threat Protection i Microsoft 365-säkerhetscenter*
 
-Om du vill aktivera Microsoft Threat Protection slutför du helt enkelt processen från välkomstsidan. Du kan också aktivera Microsoft Threat Protection genom att komma åt **Inställningar** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) i navigeringsfönstret och välja **Microsoft Threat Protection**. Klicka på **Spara**.
+Om du vill aktivera Microsoft Threat Protection slutför du helt enkelt processen från välkomstsidan. Du kan också aktivera Microsoft Threat Protection genom att komma åt **Inställningar** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) i navigeringsfönstret och välja **Microsoft Threat Protection**.
 
 >[!NOTE]
->Om du inte ser **Inställningar** i navigeringsfönstret eller inte kunde komma åt sidan kontrollerar du dina behörigheter och licenser.
+>Om du inte ser **Inställningar** i navigeringsfönstret eller inte kunde komma åt sidan kontrollerar du dina behörigheter och licenser.       
 
 ### <a name="select-data-center-location"></a>Välj datacenterplats
 Om Microsoft Defender ATP har etablerats för din organisation lagras och bearbetas data på samma datacenterplats som du har valt för [microsoft Defender ATP-data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender ATP blir du ombedd att välja en ny datacenterplats specifikt för Microsoft Threat Protection. 
-
+ 
 Du måste ge ditt samtycke innan data delas mellan tjänster och aggregeras.
+
+**Ny erfarenhet:** Från och med den 3 maj 2020 kommer kunderna gradvis att få ändringar i den här upplevelsen. För dem med den nya upplevelsen väljer tjänsten automatiskt den optimala datacenterplatsen för dina aggregerade data baserat på dina befintliga Microsoft 365-säkerhetstjänster. Den valda datacenterplatsen visas på skärmen.
 
 ### <a name="confirm-that-the-service-is-on"></a>Bekräfta att tjänsten är aktiverad
 När tjänsten har etablerats läggs följande till:

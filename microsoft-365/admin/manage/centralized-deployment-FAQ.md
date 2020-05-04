@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Granska svaren på vanliga frågor om centraliserad distribution från microsoft 365-administrationscentret.
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209670"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011741"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
@@ -31,7 +31,7 @@ Centraliserad distribution är det rekommenderade sättet för en Office 365-adm
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Hur vet jag om min organisation har konfigurerats för centraliserad distribution?  
 
-Centraliserad distribution av tillägg kräver att användare använder Office 365 ProPlus (och är inloggade på Office med sina organisationsloggningsuppgifter) och har Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federerade till Azure Active Directory.  
+Centraliserad distribution av tillägg kräver att användare använder Microsoft 365 Apps för företag (och är inloggade på Office med sina organisationsloggningsuppgifter) och har Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federerade till Azure Active Directory.  
  
 Centraliserad distribution stöds endast för onlinepostlådor. Det stöder inte distribution till lokala Exchange-postlådor.
  

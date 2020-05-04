@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952657"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011333"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -289,7 +289,7 @@ Det har skett en uppdatering av en annan av våra första installationsguider: M
 
 Vi har några uppdateringar för fakturering och prenumerationer den här månaden:
 
-- Enhetsbaserade prenumerationer: Du kan tilldela eller ta bort tilldelning av **Office 365 ProPlus for Education-licenser (enhet)** till enheter i Microsoft 365-administrationscentret. **Office 365 ProPlus for Education (enhet)** är en tilläggslicens som gör att du kan tilldela en licens till en enhet. Gå till **Faktureringsprodukter** > **& tjänster** för att hitta och köpa licensen.
+- Enhetsbaserade prenumerationer: Du kan tilldela eller ta bort tilldelning av **Microsoft 365 Apps for Education -licenser (enhet)** till enheter i Microsoft 365-administrationscentret. **Microsoft 365 Apps for Education (enhet)** är en tilläggslicens som gör att du kan tilldela en licens till en enhet. Gå till **Faktureringsprodukter** > **& tjänster** för att hitta och köpa licensen.
 - Användarbaserad licenshantering: Vi har uppdaterat hur du tilldelar licenser i **Aktiva** > **användare** till det nya formatet. Mer information finns i:
   - [Tilldela licenser till användare](manage/assign-licenses-to-users.md)
   - [Ta bort tilldelningen av licenser från användare](manage/remove-licenses-from-users.md)

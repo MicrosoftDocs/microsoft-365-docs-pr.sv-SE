@@ -12,12 +12,12 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1c90640fa49aa102d2a4c8420feedf659b5682f2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807627"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011823"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Steg 2: Distribuera Windows 10 Enterprise för befintliga enheter som en uppgradering på plats
 
@@ -31,13 +31,13 @@ Om du har befintliga datorer med Windows 7 eller Windows 8.1 rekommenderar vi de
 
 Följ dessa steg för att konfigurera och distribuera en Windows 10 Enterprise-avbildning med Microsoft Endpoint Configuration Manager som en uppgradering på plats.
 
-## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Windows 10-distributionen med Configuration Manager-affischen
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Distribution av Windows 10 med Configuration Manager (affisch)
 
 Configuration Manager-affischen är en sida i liggande läge (17x11). Klicka på bilden nedan för att visa en PDF-fil i webbläsaren. 
 
 [![Distribuera Windows 10 med Configuration Manager-affisch](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
-Du kan också ladda ner denna affisch i [PDF-](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) eller [Visio-format.](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx)
+Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf)- eller [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx)-format.
 
 ## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Del 1: Kontrollera beredskapen för att uppgradera Windows
 
@@ -47,7 +47,7 @@ Se [Hantera Windows-uppgraderingar med uppgraderingsberedskap](https://docs.micr
 
 Följ sedan guiden för att använda Configuration Manager (Current Branch) för att uppgradera Windows 7 eller senare operativsystem till Windows 10. Precis som vid alla högriskdistributioner rekommenderar vi säkerhetskopiering av användardata innan du fortsätter. OneDrive-molnlagring är klar att användas för licensierade Microsoft 365-användare och kan användas för att lagra sina filer på ett säkert sätt. Mer information finns i [Snabbstartsguide för OneDrive](https://aka.ms/ODfBquickstartguide). För att komma åt den här sidan måste du logga in som klientadministratör eller global administratör i en Office 365- eller Microsoft 365-klientorganisation.
 
-En lista över Configuration Manager-versioner och motsvarande Windows 10-klientversioner som stöds finns i [Support för Windows 10 för Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+En lista över Configuration Manager-versioner och motsvarande Windows 10-klientversioner som stöds finns i [Support för Windows 10 för Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **Så här verifierar du beredskapen för att uppgradera Windows**
 
@@ -96,7 +96,7 @@ Så här skapar du en uppgraderingsaktivitetssekvens:
 När du har skapat uppgraderingsaktivitetssekvensen måste du skapa en samling som innehåller de enheter som du ska uppgradera.
 
 > [!NOTE]
-> Använd följande inställningar för att testa distributionen på en enda enhet. Du kan använda olika medlemskapsregler för att inkludera grupper av enheter när du är redo. Mer information finns [i Så här skapar du samlingar i Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
+> Använd följande inställningar för att testa distributionen på en enda enhet. Du kan använda olika medlemskapsregler för att inkludera grupper av enheter när du är redo. Mer information finns [i Så här skapar du samlingar i Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections).
 
 1. Högerklicka på **Enhetssamlingar**i arbetsytan **Resurser och efterlevnad** i Configuration Manager-konsolen och välj sedan Skapa **enhetssamling**. 
 2. Ange följande inställningar på sidan **Skapa** enhetsinsamling i guiden Skapa enhetssamling och välj sedan **Nästa:**
@@ -136,7 +136,7 @@ Följ dessa steg för att starta aktivitetssekvensen För Windows 10-uppgraderin
  
 1. Logga in på Windows-datorn och starta **Software Center**.
 2. Markera den aktivitetssekvens som du skapade i ett tidigare steg och välj sedan **Installera**.
-3. När aktivitetssekvensen börjar initieras uppgraderingsprocessen automatiskt genom att installera installationsprogrammet för Windows (Setup.exe) med de kommandoradsparametrar som krävs för att utföra en automatisk uppgradering, vilket bevarar alla data, inställningar, appar och Drivrutiner.
+3. När aktivitetssekvensen börjar initieras automatiskt uppgraderingsprocessen på plats genom att starta installationsprogrammet för Windows (Setup.exe) med nödvändiga kommandoradsparametrar för att utföra en automatisk uppgradering, som bevarar alla data, inställningar, appar och drivrutiner.
 4. När aktivitetssekvensen har slutförts kommer datorn att uppgraderas helt till Windows 10.
 
 Om du får problem när du använder Windows 10 i en företagsmiljö kan du läsa [de vanligaste Microsoft-supportlösningarna för de vanligaste problemen](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Dessa resurser omfattar KB-artiklar, uppdateringar och biblioteksartiklar.
@@ -145,7 +145,7 @@ Under lanseringen av uppdateringar i hela organisationen använder du funktionen
 
 Mer information finns i [Övervaka Windows-uppdateringar och Windows Defender Antivirus med uppdateringsefterlevnad](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) om du vill veta mer, komma igång och använda Uppdatera efterlevnad.
 
-Som en interimskontrollpunkt kan du se [avslutningskriterierna](windows10-exit-criteria.md#crit-windows10-step2) som motsvarar det här steget.
+Som en mellanliggande kontrollpunkt kan du se vilka [avslutsvillkor](windows10-exit-criteria.md#crit-windows10-step2) som motsvarar det här steget.
 
 ## <a name="next-step"></a>Nästa steg
 

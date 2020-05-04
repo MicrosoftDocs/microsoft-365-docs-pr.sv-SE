@@ -1,5 +1,5 @@
 ---
-title: Visa eller dölja nya funktioner med hjälp av Nyheter
+title: Visa eller dölja nya funktioner med den nya hanteringen
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Bestäm vilka funktioner och nytt innehåll som visas för eller döljs för slutanvändare i Office What's New Management for Office-skrivbordsappar.
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131982"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011705"
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>Visa eller dölja nya funktioner med hjälp av Nyheter
+# <a name="show-or-hide-new-features-using-whats-new-management"></a>Visa eller dölja nya funktioner med den nya hanteringen
 
 Med Office What's New Management for Win 32 kan din organisation bestämma vilka funktioner som ska visas för eller döljas för slutanvändare i Office-skrivbordsappen. Varje utgåva av Office innehåller nya och förbättrade funktioner, och med förhandsgranskningen av innehållet kan du visa nytt innehåll för varje version och kanal och välja om du vill dölja eller visa Vad är nytt innehåll för varje funktion för slutanvändarna. 
 
@@ -62,7 +62,7 @@ Nya funktioner visas i Office What's New Management baserat på det här schemat
 |**Halvårsvis (Riktad)** <br/> |1 september och 1 mars <br/> | 2 veckor före den stora utgåvan som ger nya funktioner
 |**Halvårsvis** <br/> |1 januari och 1 juli <br/> | 2 veckor före den stora utgåvan som ger nya funktioner<br/> |
 
-Mer information om schemaläggning av kanaluppdatering finns i [Uppdateringshistorik för Office 365 ProPlus (listat efter datum).](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+Mer information om schemaläggning av kanaluppdatering finns i [Uppdatera historik för Microsoft 365-appar (listad efter datum).](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

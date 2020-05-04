@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636226"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011917"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -53,7 +53,7 @@ It-administratörerna drar nytta av följande funktioner:
 Microsoft Managed Desktop tar på sig bördan av att hantera registrerade enheter och den Microsoft-programvara de använder.
 
 - **Hårdvara:** I stället för att IT-avdelningen måste undersöka och testa enheter (och deras drivrutiner) testas specifika enheter noggrant av Microsoft Managed Desktop, vilket resulterar i en kurerad [lista över enheter](../service-description/device-list.md) som uppfyller prestandakraven på företagsnivå och som garanterat fungerar med tjänsten. Du kan antingen skaffa enheter själv (eller arbeta med en partner) eller återanvända enheter som du redan har, förutsatt att de finns med på den godkända listan. Det är enkelt och enkelt att registrera enheter, och innan de distribueras kan du också [anpassa](../working-with-managed-desktop/config-setting-overview.md) vissa aspekter av enhetsupplevelsen för dina slutanvändare.
-- **Uppdateringar:** Microsoft Managed Desktop konfigurerar och hanterar alla aspekter av [distributionsgrupper](../service-description/updates.md) för windows 10-kvalitets- och funktionsuppdateringar, drivrutiner, firmware, antivirusdefinitioner och Office ProPlus-uppdateringar. Detta inkluderar omfattande testning och verifiering av alla uppdateringar, vilket säkerställer att registrerade enheter alltid är uppdaterade och minimerar störningar, vilket befriar DIN IT-avdelning från den pågående uppgiften.
+- **Uppdateringar:** Microsoft Managed Desktop konfigurerar och hanterar alla aspekter av [distributionsgrupper](../service-description/updates.md) för windows 10-kvalitets- och funktionsuppdateringar, drivrutiner, firmware, antivirusdefinitioner och Microsoft 365-appar för företagsuppdateringar. Detta inkluderar omfattande testning och verifiering av alla uppdateringar, vilket säkerställer att registrerade enheter alltid är uppdaterade och minimerar störningar, vilket befriar DIN IT-avdelning från den pågående uppgiften.
 - **Appar:** Som en del av Microsoft 365 Enterprise tillhandahåller (och hanterar) Microsoft flera viktiga Microsoft-appar åt dig. Men du har förmodligen också andra appar som du behöver för ditt företag. I stället för att IT-avdelningen måste testa, paketera och distribuera dessa appar hjälper Microsoft dig att distribuera dem och kan hjälpa till med [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) om det behövs. Läs mer på [Appar på Microsoft Managed Desktop](../get-ready/apps.md).
 
 
