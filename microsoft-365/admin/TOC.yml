@@ -1,264 +1,49 @@
-- name: Administrationsstart
-  href: admin-home.md
+- name: Hjälp om administrationscenter för Microsoft 365
+  href: index.yml
   items:
-    - name: Översikt
+    - name: Komma igång
+      href: setup/index.yml
       items:
-        - name: Administratörsöversikt
-          href: admin-overview/admin-overview.md
-        - name: Registrera dig för Office 365
+        - name: Registrera dig
           href: admin-overview/sign-up-for-office-365.md
-        - name: Videoutbildning
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
-        - name: Om administrationscentret
-          href: admin-overview/about-the-admin-center.md
-        - name: Vilken prenumeration har jag?
-          href: admin-overview/what-subscription-do-i-have.md
-        - name: Läs om Office 365 Germany
-          href: admin-overview/learn-about-office-365-germany.md
-        - name: Admin Mobile-app
-          href: admin-overview/admin-mobile-app.md
-    - name: Konfiguration
-      items:
+        - name: Prova eller köp Microsoft 365
+          href: ../commerce/try-or-buy-microsoft-365.md
         - name: Planera konfigurationen
           href: setup/plan-your-setup.md
-        - name: Konfigurera Office 365
+        - name: Konfigurera din organisation med hjälp av en guide
           href: setup/setup.md
-        - name: Skillnader mellan inställningsguiden och konfigurationssidan
+        - name: Utforska konfigurationssidan och guiden
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Lägga till domän
-          href: setup/add-domain.md
-        - name: Vanliga frågor och svar om domäner
-          href: setup/domains-faq.md
-        - name: Installera program
-          href: setup/install-applications.md
-        - name: Migrera e-post och kontakter
+        - name: Migrera dina data
           href: setup/migrate-email-and-contacts-admin.md
+        - name: Installera Office-appar
+          href: setup/install-applications.md
         - name: Distribuera Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
-        - name: Konfigurera fillagring och fildelning
-          href: setup/set-up-file-storage-and-sharing.md
-        - name: Anpassa en gruppwebbplats
-          href: setup/customize-team-site.md
-        - name: Uppgradera användare till den senaste Office-klienten
-          href: setup/upgrade-users-to-latest-office-client.md
+        - name: Apputbildning för alla
+          href: 'https://support.office.com/en-us/office-training-center'
+        - name: Vilken prenumeration har jag?
+          href: admin-overview/what-subscription-do-i-have.md
         - name: Anpassa inloggningssidan
           href: setup/customize-sign-in-page.md
-        - name: Skapa distributionsgrupper
-          href: setup/create-distribution-lists.md
         - name: Anpassa ditt organisationstema
           href: setup/customize-your-organization-theme.md
-    - name: Användare och roller
+        - name: Läs om Office 365 Germany
+          href: admin-overview/learn-about-office-365-germany.md
+    - name: Översikt över administrationscenter för Microsoft 365
       items:
-        - name: Lägga till användare
-          href: add-users/add-users.md
-        - name: Skapa och använda en mall för att lägga till användare
-          href: add-users/create-and-use-a-template-to-add-users.md
-        - name: Ta bort en användare
-          href: add-users/delete-a-user.md
-        - name: Återställa användare
-          href: add-users/restore-user.md
-        - name: Återställ lösenord
-          href: add-users/reset-passwords.md
-        - name: Konfigurera ett lösenord med obegränsad giltighetstid
-          href: add-users/set-password-to-never-expire.md
-        - name: Låta användare återställa lösenord
-          href: add-users/let-users-reset-passwords.md
-        - name: Skicka användarlösenord igen
-          href: add-users/resend-user-password.md
-        - name: Ge behörigheter till postlådor åt en annan användare
-          href: add-users/give-mailbox-permissions-to-another-user.md
-        - name: Ändra ett användarnamn och en e-postadress
-          href: add-users/change-a-user-name-and-email-address.md
-        - name: 'Skapa, redigera eller ta bort en anpassad användarvy'
-          href: add-users/create-edit-or-delete-a-custom-user-view.md
-        - name: Lägga till nyanställd
-          href: add-users/add-new-employee.md
-        - name: Ta bort en tidigare anställd
-          href: add-users/remove-former-employee.md
-        - name: Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
-          href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+        - name: Översikt över administrationscentret
+          href: admin-overview/about-the-admin-center.md
+        - name: Om det nya administrationscentret
+          href: microsoft-365-admin-center-preview.md
         - name: Om administratörsroller
           href: add-users/about-admin-roles.md
-        - name: Tilldela administratörsroller
-          href: add-users/assign-admin-roles.md
-        - name: Om administratörsrollen i Exchange Online
-          href: add-users/about-exchange-online-admin-role.md
-    - name: E-post
-      items:
-        - name: Skicka i Office 365
-          href: email/email.md
-        - name: E-postinställningar för användare
-          href: email/office-365-user-email-settings.md
-        - name: Lägga till ytterligare ett e-postalias för en användare
-          href: email/add-another-email-alias-for-a-user.md
-        - name: Delade postlådor
-          items:
-            - name: Om delade postlådor
-              href: email/about-shared-mailboxes.md
-            - name: Skapa en delad postlåda
-              href: email/create-a-shared-mailbox.md
-            - name: Konfigurera en delad postlåda
-              href: email/configure-a-shared-mailbox.md
-            - name: Konvertera en användarpostlåda till en delad postlåda
-              href: email/convert-user-mailbox-to-shared-mailbox.md
-            - name: Ta bort licens från en delad postlåda
-              href: email/remove-license-from-shared-mailbox.md
-            - name: Lösa problem med delade postlådor
-              href: email/resolve-issues-with-shared-mailboxes.md
-        - name: Ändra e-postadress
-          href: email/change-email-address.md
-        - name: Konfigurera Prioriterad inkorg
-          href: setup/configure-focused-inbox.md
-        - name: Skapa signaturer och ansvarsfriskrivningar
-          href: setup/create-signatures-and-disclaimers.md
-        - name: 'Skapa, redigera eller ta bort en säkerhetsgrupp'
-          href: email/create-edit-or-delete-a-security-group.md
-        - name: Konfigurera vidarebefordran av e-post
-          href: email/configure-email-forwarding.md
-        - name: E-postsamarbete
-          href: email/email-collaboration.md
-        - name: Lägga till en användare eller kontakt i en distributionslista
-          href: email/add-user-or-contact-to-distribution-list.md
-        - name: Konfigurera Övrig e-post
-          href: email/configure-clutter.md
-    - name: Säkra dina affärsdata
-      items:
-        - name: De tio bästa sätten för att skydda dina data
-          href: security-and-compliance/secure-your-business-data.md
-        - name: Konfigurera multifaktorautentisering
-          href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: Konfigurera multifaktorautentisering (med Office 2013)
-          href: security-and-compliance/enable-modern-authentication.md
-        - name: GDPR-efterlevnad
-          href: security-and-compliance/gdpr-compliance.md
-    - name: Aktivitetsrapporter i administrationscentret
-      href: activity-reports/activity-reports.md
-    - name: Användningsanalys för Power BI
-      items:
-        - name: Användningsanalys
-          href: usage-analytics/usage-analytics.md
-        - name: Aktivera användningsanalyser
-          href: usage-analytics/enable-usage-analytics.md
-        - name: Skaffa den senaste versionen av användningsanalyser
-          href: usage-analytics/get-the-latest-version-of-usage-analytics.md
-        - name: Navigera och använda rapporter
-          href: usage-analytics/navigate-and-utilize-reports.md
-        - name: Aktiv användare i användningsrapporter
-          href: usage-analytics/active-user-in-usage-reports.md
-        - name: Anpassa rapporter
-          href: usage-analytics/customize-reports.md
-        - name: Datamodell för användningsanalyser
-          href: usage-analytics/usage-analytics-data-model.md
-        - name: Användningsanalysfel
-          href: usage-analytics/usage-analytics-errors.md
-    - name: Hantera
-      items:
-        - name: Hantera Office 365
-          href: manage/manage.md
-        - name: Ändra kontaktinställningar
-          href: manage/change-contact-preferences.md
-        - name: 'Ändra adress, kontakt med mera'
-          href: manage/change-address-contact-and-more.md
-        - name: Uppdatera telefonnummer och e-postadress
-          href: manage/update-phone-number-and-email-address.md
-        - name: Ange förfalloprincip för lösenordet
-          href: manage/set-password-expiration-policy.md
-        - name: Anpassa startprogrammet
-          href: manage/customize-the-app-launcher.md
-        - name: Krav för centraliserad distribution
-          href: manage/centralized-deployment-of-add-ins.md
-        - name: Använd centraliserad distribution för att distribuera tillägg
-          href: manage/manage-deployment-of-add-ins.md
-        - name: Vanliga frågor och svar om centraliserad distribution
-          href: manage/centralized-deployment-FAQ.md
-        - name: Hitta din partner eller återförsäljare
-          href: manage/find-your-partner-or-reseller.md
-        - name: Postlådor för rum och utrustning
-          href: manage/room-and-equipment-mailboxes.md
-        - name: Skicka e-post som distributionslista
-          href: manage/send-email-as-distribution-list.md
-        - name: Uppgradera distributionslistor
-          href: manage/upgrade-distribution-lists.md
-        - name: Dela webbplatser och filer externt
-          href: manage/share-sites-with-external-users.md
-        - name: Dela kalendrar med externa användare
-          href: manage/share-calendars-with-external-users.md
-        - name: Tilldela licenser till användare
-          href: manage/assign-licenses-to-users.md
-        - name: Ta bort tilldelningen av licenser från användare
-          href: manage/remove-licenses-from-users.md
-        - name: Lösa licenskonflikter
-          href: manage/resolve-license-conflicts.md
-        - name: Hantera meddelanden i meddelandecentret
-          href: manage/manage-messages.md
-        - name: Visa eller dölja nya funktioner med den nya hanteringen
-          href: manage/show-hide-new-features.md
-    - name: Prenumerationer och fakturering
-      items:
-        - name: Hantera dina abonnemang
-          href: ../commerce/index.yml
-        - name: Visa din faktura
-          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-        - name: Hantera betalningsmetoder
-          href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-        - name: Avbryt prenumerationen
-          href: ../commerce/subscriptions/cancel-your-subscription.md
-    - name: Domäner
-      items:
-        - name: Domäner i Office 365
-          href: get-help-with-domains/get-help-with-domains.md
-        - name: Vad är en domän?
-          href: get-help-with-domains/what-is-a-domain.md
-        - name: Köpa ett domännamn
-          href: get-help-with-domains/buy-a-domain-name.md
-        - name: Hitta din domänregistrator
-          href: get-help-with-domains/find-your-domain-registrar.md
-        - name: Grundläggande om DNS
-          href: get-help-with-domains/dns-basics.md
-        - name: Information för DNS-poster
-          href: get-help-with-domains/information-for-dns-records.md
-        - name: Hitta och åtgärda problem
-          href: get-help-with-domains/find-and-fix-issues.md
-        - name: Konfigurera din domän (tjänstspecifika instruktioner)
-          href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
-        - name: Ändra namnservrar hos valfri domänregistrator
-          href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
-        - name: Skapa DNS-poster på valfri DNS-värd
-          href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
-        - name: Ta bort en domän
-          href: get-help-with-domains/remove-a-domain.md
-        - name: Överföra data manuellt
-          href: get-help-with-domains/transfer-data-manually.md
-    - name: Grupper
-      items:
-        - name: Översikt av grupper
-          href: create-groups/office-365-groups.md
-        - name: Jämföra grupper
-          href: create-groups/compare-groups.md
-        - name: Skapa en Microsoft 365-grupp
-          href: create-groups/create-groups.md
-        - name: Hantera en Microsoft 365-grupp
-          href: create-groups/manage-groups.md
-        - name: Planera för styrning i Microsoft 365-grupper
-          href: create-groups/plan-for-groups-governance.md
-        - name: Hantera skapande av grupper
-          href: create-groups/manage-creation-of-groups.md
-        - name: Välj domän för att skapa grupper
-          href: create-groups/choose-domain-to-create-groups.md
-        - name: Namngivningspolicy för grupper
-          href: create-groups/groups-naming-policy.md
-        - name: Tillåta medlemmar att skicka som eller skicka för en grupp
-          href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
-        - name: Lägga till eller ta bort medlemmar från grupper
-          href: create-groups/add-or-remove-members-from-groups.md
-        - name: Förfalloprincip för Microsoft 365-grupper
-          href: create-groups/office-365-groups-expiration-policy.md
-        - name: Återställa borttagen grupp
-          href: create-groups/restore-deleted-group.md
-        - name: Hantera gäståtkomst i grupper
-          href: create-groups/manage-guest-access-in-groups.md
-        - name: Använda känslighetsetiketter med grupper
-          href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
+        - name: Mobilapp för administratörer
+          href: admin-overview/admin-mobile-app.md
+        - name: Nyheter i administrationscentret
+          href: whats-new-in-preview.md
+        - name: Håll koll på ändringarna
+          href: manage/stay-on-top-of-updates.md
     - name: Office 365 med 21Vianet
       items:
         - name: Läs om Office 365 som drivs av 21Vianet
@@ -275,19 +60,194 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Paritet för Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Skaffa nya funktioner
+    - name: Hantera användare och grupper
+      href: add-users/index.yml
       items:
-        - name: Om det nya administrationscentret
-          href: microsoft-365-admin-center-preview.md
-        - name: Nyheter i det nya administrationscentret
-          href: whats-new-in-preview.md
-        - name: Håll koll på ändringarna
-          href: manage/stay-on-top-of-updates.md
-        - name: Versionsalternativ i Office 365
-          href: manage/release-options-in-office-365.md
-        - name: Meddelandecenter
+        - name: Användare
+          items:
+            - name: Lägga till användare
+              href: add-users/add-users.md
+            - name: Lägga till en nyanställd
+              href: add-users/add-new-employee.md
+            - name: Tilldela administratörsroller
+              href: add-users/assign-admin-roles.md
+            - name: Ta bort licenser från användare
+              href: manage/remove-licenses-from-users.md
+            - name: Lösa licenskonflikter
+              href: manage/resolve-license-conflicts.md
+            - name: Ändra ett användarnamn och en e-postadress
+              href: add-users/change-a-user-name-and-email-address.md
+            - name: Ta bort en tidigare anställd
+              href: add-users/remove-former-employee.md
+            - name: Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
+              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+            - name: Återställa en användare
+              href: add-users/restore-user.md
+            - name: Återställ lösenord
+              href: add-users/reset-passwords.md
+            - name: Konfigurera lösenord med obegränsad giltighetstid
+              href: add-users/set-password-to-never-expire.md
+            - name: Låta användare återställa lösenord
+              href: add-users/let-users-reset-passwords.md
+            - name: Skicka användarlösenord igen
+              href: add-users/resend-user-password.md
+            - name: Skapa en mall för att lägga till användare
+              href: add-users/create-and-use-a-template-to-add-users.md
+        - name: Grupper
+          items:
+            - name: Översikt av grupper
+              href: create-groups/office-365-groups.md
+            - name: Jämföra grupper
+              href: create-groups/compare-groups.md
+            - name: Skapa en grupp
+              href: create-groups/create-groups.md
+            - name: Hantera grupper
+              href: create-groups/manage-groups.md
+            - name: Lägga till eller ta bort gruppmedlemmar
+              href: create-groups/add-or-remove-members-from-groups.md
+            - name: Återställa en borttagen grupp
+              href: create-groups/restore-deleted-group.md
+            - name: Planera för styrning av grupper
+              href: create-groups/plan-for-groups-governance.md
+            - name: Hantera skapande av grupper
+              href: create-groups/manage-creation-of-groups.md
+            - name: Välj domän för grupper
+              href: create-groups/choose-domain-to-create-groups.md
+            - name: Översikt över principer för namngivning av grupper
+              href: create-groups/groups-naming-policy.md
+            - name: Tillåt att medlemmar skickar e-post till och från grupper
+              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
+            - name: Hantera gäståtkomst till grupper
+              href: create-groups/manage-guest-access-in-groups.md
+            - name: Använda känslighetsetiketter med grupper
+              href: ../compliance/sensitivity-labels-teams-groups-sites.md
+    - name: Hantera e-post och kalendrar
+      href: email/index.yml
+      items:
+        - name: Om e-postinställningar för användare
+          href: email/office-365-user-email-settings.md
+        - name: Lägga till ytterligare ett e-postalias för en användare
+          href: email/add-another-email-alias-for-a-user.md
+        - name: Använda en anpassad domän
+          href: email/change-email-address.md
+        - name: Skapa signaturer och ansvarsfriskrivningar
+          href: setup/create-signatures-and-disclaimers.md
+        - name: 'Skapa, redigera eller ta bort en säkerhetsgrupp'
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: Konfigurera vidarebefordran av e-post
+          href: email/configure-email-forwarding.md
+        - name: Delade postlådor
+          items:
+            - name: Om delade postlådor
+              href: email/about-shared-mailboxes.md
+            - name: Skapa en delad postlåda
+              href: email/create-a-shared-mailbox.md
+            - name: Konfigurera en delad postlåda
+              href: email/configure-a-shared-mailbox.md
+            - name: Konvertera en användarpostlåda till en delad postlåda
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: Ta bort en licens från en delad postlåda
+              href: email/remove-license-from-shared-mailbox.md
+            - name: Lösa problem med delade postlådor
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: Konfigurera prioriterad inkorg
+          href: setup/configure-focused-inbox.md
+        - name: Om e-postsamarbete
+          href: email/email-collaboration.md
+        - name: Lägga till en användare eller kontakt i en distributionslista
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: Hantera övrig e-post för organisationen
+          href: email/configure-clutter.md
+    - name: Hantera domäner
+      href: get-help-with-domains/what-is-a-domain.md
+      items:
+        - name: Lägga till en domän
+          href: setup/add-domain.md
+        - name: Köpa en domän
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: Ta bort en domän
+          href: get-help-with-domains/remove-a-domain.md
+        - name: Vanliga frågor och svar om domäner
+          href: setup/domains-faq.md
+        - name: Värdspecifika instruktioner
+          items:
+            - name: Ändra namnservrar för valfri DNS-värd
+              href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+            - name: Skapa DNS-poster för valfri DNS-värd
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: Felsöka domänproblem
+          href: get-help-with-domains/find-and-fix-issues.md
+    - name: Hantera data och tjänster
+      href: manage/index.yml
+      items:
+        - name: Uppgradera organisationen till de senaste programmen
+          href: setup/upgrade-users-to-latest-office-client.md
+        - name: Övervaka användaraktivitet med hjälp av rapporter
+          href: activity-reports/activity-reports.md
+        - name: Ändra organisationens kontaktinformation
+          href: manage/change-address-contact-and-more.md
+        - name: Uppdatera administratörens kontaktinformation
+          href: manage/update-phone-number-and-email-address.md
+        - name: Ange förfalloprincip för lösenordet
+          href: manage/set-password-expiration-policy.md
+        - name: Anpassa startprogrammet
+          href: manage/customize-the-app-launcher.md
+        - name: Krav för centraliserad distribution av tillägg
+          href: manage/centralized-deployment-of-add-ins.md
+        - name: Installera och hantera tillägg med centraliserad distribution
+          href: manage/manage-deployment-of-add-ins.md
+        - name: Hitta en partner eller en återförsäljare
+          href: manage/find-your-partner-or-reseller.md
+        - name: Om Meddelandecenter
           href: manage/message-center.md
-        - name: Prova eller köp Microsoft 365
-          href: ../commerce/try-or-buy-microsoft-365.md
-    - name: Kontakta supporten för företagsprodukter
+        - name: Hantera meddelanden i Meddelandecenter
+          href: manage/manage-messages.md
+        - name: Konfigurera versionsalternativ
+          href: manage/release-options-in-office-365.md
+        - name: Användningsanalys för Power BI
+          items:
+            - name: Om användningsanalys
+              href: usage-analytics/usage-analytics.md
+            - name: Aktivera användningsanalyser
+              href: usage-analytics/enable-usage-analytics.md
+            - name: Skaffa den senaste versionen av användningsanalyser
+              href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+            - name: Navigera och använda rapporter
+              href: usage-analytics/navigate-and-utilize-reports.md
+            - name: Om aktiva användare i användningsrapporter
+              href: usage-analytics/active-user-in-usage-reports.md
+            - name: Anpassa rapporter
+              href: usage-analytics/customize-reports.md
+            - name: Om datamodell för användningsanalyser
+              href: usage-analytics/usage-analytics-data-model.md
+            - name: Felsöka användningsanalysfel
+              href: usage-analytics/usage-analytics-errors.md
+    - name: Hantera prenumerationer och fakturering
+      href: ../commerce/index.yml
+    - name: Skydda organisationen
+      items:
+        - name: De tio bästa sätten för att skydda dina data
+          href: security-and-compliance/secure-your-business-data.md
+        - name: Konfigurera multifaktorautentisering
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Konfigurera multifaktorautentisering (med Office 2013)
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: En guide till GDPR-efterlevnad
+          href: security-and-compliance/gdpr-compliance.md
+    - name: Arbeta med kunder
+      href: work-with-customers/index.yml
+      items:
+        - name: Dela webbplatser och filer externt
+          href: manage/share-sites-with-external-users.md
+        - name: Dela kalendrar med gästanvändare
+          href: manage/share-calendars-with-external-users.md
+        - name: Skapa ett team med gäster
+          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: Schemalägga ett teammöte med gäster
+          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+        - name: Ansluta till ett Teams-möte med gäster
+          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+    - name: Felsökning
+      href: 'https://docs.microsoft.com/office/troubleshoot/'
+    - name: Kontakta support
       href: contact-support-for-business-products.md
