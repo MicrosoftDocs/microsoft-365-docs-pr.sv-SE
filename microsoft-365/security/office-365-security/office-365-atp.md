@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Avancerat skydd innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42809357"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634538"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Avancerat skydd
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Om du använder Outlook.com, Office 365 Home eller Office 365 Personal och vill ha information om säkra länkar och säkra bifogade filer i Outlook läser du [Avancerad Outlook.com-säkerhet för Office 365-prenumeranter](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Läs [Avancerad Outlook.com-säkerhet för Microsoft 365-prenumeranter](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2) om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och vill ha information om säkra länkar och säkra bifogade filer i Outlook.
 
 ## <a name="overview"></a>Översikt
 
@@ -45,13 +45,15 @@ Office 365 Avancerat skydd (ATP) skyddar din organisation mot skadliga hot som k
 
 I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
-|Office 365 ATP-abonnemang 1 |Office 365 ATP-abonnemang 2|
-|---------|---------|
-|Funktioner för konfiguration, skydd och identifiering:<br/>- [Säkra bifogade filer](atp-safe-attachments.md)<br/>- [Säkra länkar](atp-safe-links.md)<br/>- [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Avancerat skydd mot nätfiske](atp-anti-phishing.md)<br/>- [Realtidsidentifiering](threat-explorer.md)     |Funktioner i Office 365 ATP-abonnemang 1<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:<br/>- [Hotspårare](threat-trackers.md)<br/>- [Hotutforskaren](threat-explorer.md)<br/>- [Automatiserad undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [Attacksimulator](attack-simulator.md)|
+|||
+|---|---|
+|**Office 365 ATP-abonnemang 1**|**Office 365 ATP-abonnemang 2**|
+|Funktioner för konfiguration, skydd och identifiering:<br/>• [Säkra bifogade filer](atp-safe-attachments.md)<br/>• [Säkra länkar](atp-safe-links.md)<br/>• [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP-skydd mot nätfiske](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Identifiering i realtid](threat-explorer.md)|Funktioner i Office 365 ATP-abonnemang 1<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:<br/>• [Hotspårare](threat-trackers.md)<br/>• [Hotutforskaren](threat-explorer.md)<br/>• [Automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Attacksimulator](attack-simulator.md)|
+|
 
 - Office 365 ATP-abonnemang 2 ingår i Office 365 E5, Office 365 A5 och Microsoft 365 E5.
 
-- Office 365 ATP-abonnemang 1 ingår i Microsoft 365 Business.
+- Office 365 ATP-abonnemang 1 ingår i Microsoft 365 Business Premium.
 
 - Office 365 ATP-abonnemang 1 och Office 365 ATP-abonnemang 2 är tillgängliga som ett tillägg för vissa prenumerationer. Mer information finns i [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) (Funktionstillgänglighet för ATP-abonnemang).
 
@@ -59,7 +61,7 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
 ## <a name="configure-atp-policies"></a>Konfigurera ATP-principer
 
-Med Office 365 ATP kan säkerhetsteamet för din organisation konfigurera skydd genom att definiera principer i Säkerhets- och efterlevnadscenter för Office 365 (gå till [https://protection.office.com](https://protection.office.com) > **Hothantering** > **Princip**.)
+Med Office 365 ATP kan din organisations säkerhetsteam konfigurera skydd genom att definiera principer i Säkerhets- och efterlevnadscenter (gå till [https://protection.office.com](https://protection.office.com) > **Hothantering** > **Princip**.)
 
 > [!TIP]
 > En kort lista över principer som ska definieras finns i [Skydda mot hot](protect-against-threats.md).
@@ -72,7 +74,7 @@ Principerna som definieras för din organisation avgör beteendet och skyddsniv�
 
 - **[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)**: skyddar din organisation när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på gruppwebbplatser och dokumentbibliotek. Mer information finns i [Aktivera Office 365 ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[ATP-skydd mot nätfiske](atp-anti-phishing.md)**: identifierar försök att personifiera användare och egna domäner. Det tillämpar maskininlärningsmodeller och avancerade algoritmer för identifiering av personifiering för att avvärja nätfiskeattacker. Mer information finns i [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md) (Konfigurera Office 365 ATP-skydd mot nätfiske och för principer för skydd mot nätfiske).
+- **[ATP-skydd mot nätfiske](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**: identifierar försök att imitera användare och interna eller anspassade domäner. Det tillämpar maskininlärningsmodeller och avancerade algoritmer för identifiering av personifiering för att avvärja nätfiskeattacker. Mer information finns i [konfigurera principer för ATP-skydd mot nätfiske i Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="view-office-365-atp-reports"></a>Visa rapporter om Office 365 ATP
 
@@ -110,16 +112,16 @@ För att få åtkomst till ATP-funktioner i Säkerhets- och efterlevnadscentret 
 
 |Roll eller rollgrupp|Resurser för att få mer information|
 |---------|---------|
-|Global Office 365-administratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter för Office 365) |[Om Office 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Office 365 Säkerhets- och efterlevnadscentret) |[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
+|Global administratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter) |[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter) |[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
 |Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
-|Sök och rensa (det här är bara tilldelat i Office 365 Säkerhets- och efterlevnadscenter) |[Behörigheter i Säkerhets- och efterlevnadscenter] (permissions-in-the-security-and-compliance-center.md|
+|Sök och rensa (det här är bara tilldelat i Säkerhets- och efterlevnadscenter) |[Behörigheter i Säkerhets- och efterlevnadscenter] (permissions-in-the-security-and-compliance-center.md|
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-office-365-atp"></a>Skaffa Office 365 ATP
 
-Office 365 ATP ingår i vissa prenumerationer, t. ex. Microsoft 365 E5, Office 365 E5, Office 365 A5 och Microsoft 365 Business. Om Office 365 ATP inte ingår i din prenumeration kan du köpa ATP-abonnemang 1 eller ATP-abonnemang 2 som ett tillägg till vissa prenumerationer. Mer information finns i följande resurser:
+Office 365 ATP ingår i vissa prenumerationer, t.ex. Microsoft 365 E5, Office 365 E5, Office 365 A5 och Microsoft 365 Business Premium. Om Office 365 ATP inte ingår i din prenumeration kan du köpa ATP-abonnemang 1 eller ATP-abonnemang 2 som ett tillägg till vissa prenumerationer. Mer information finns i följande resurser:
 
 - [Office 365 Avancerat skydd](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) för en lista över prenumerationer som innehåller ATP-abonnemang.
 
