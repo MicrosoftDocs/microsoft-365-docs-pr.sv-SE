@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81773481f79a70cb5996696c9554dfe744170e8c
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: d11fdc58f44c9e4bacb708fb246fdea40eb75cff
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011249"
+ms.locfileid: "44016068"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsofts dataskyddsdatasäkerhet och sekretess
 
@@ -33,7 +33,7 @@ ms.locfileid: "44011249"
 
 Genom att använda Microsoft Threat Protection godkänner du följande villkor:
 
-*Microsoft Threat Protection (MTP) tjänsten överför vissa kunddata från andra Microsoft enterprise online-tjänster till MTP och från MTP tillbaka till dessa Microsoft Enterprise online-tjänster. Dessa dataöverföringar regleras av [villkoren för onlinetjänster](https://go.microsoft.com/fwlink/?linkid=2127420) och beskrivs ytterligare i [Microsoft Trust Center](https://go.microsoft.com/fwlink/?linkid=2127550).*
+*Genom att aktivera Microsoft Threat Protection (MTP) godkänner du följande villkor. Dina tillämpliga kunddata enligt definitionen i villkoren för onlinetjänster (OST) kommer att överföras från andra Microsoft-tjänster till MTP. Användning av dina kunddata i MTP följer datahanteringsstandarderna och åtagandena för Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). Du bekräftar att sådana åtaganden kan skilja sig från de tjänster från vilka kunddata överförs. Vidare kommer kunddata som lagras i MTP att lagras i vila i den Geo du valt för lagring av dina MDATP-kunddata, som kan skilja sig från den Geo du valde i samband med andra tjänster. Microsoft överför inte kunddata utanför sådan geo förutom vad som anges i avsnittet Dataplats i [Microsoft Trust Center](https://www.microsoft.com/trust-center).*
 
 Mer information om datalagring och sekretessinformation för de specifika produkterna finns i:
 - [Microsoft Defender ATP-lagring och sekretess för ATP-data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

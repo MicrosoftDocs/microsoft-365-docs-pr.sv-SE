@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Lär dig mer om integrerade appar och hur du aktiverar dem så att appar från tredje part kan komma åt användarnas Microsoft 365-information.
-ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627854"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022114"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Slå på och stänga av integrerade applikationer
 
@@ -35,7 +35,7 @@ När integrerade appar är aktiverade kan användare i organisationen tillåta a
 
 Så här aktiverar/inaktiverar du integrerade appar:
 
-1. Gå till tilläggssidan **för Inställningarna** \> [services &amp; i administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2053743) för Microsoft 365 och välj sedan Integrerade **appar**.
+1. Gå till \> sidan **Inställningar,** **Tjänster** i administrationscentret **för** \> Microsoft 365 och välj sedan **Integrerade appar**.
 
 2. På sidan **Integrerade appar** väljer du alternativet att aktivera eller inaktivera integrerade appar.
 

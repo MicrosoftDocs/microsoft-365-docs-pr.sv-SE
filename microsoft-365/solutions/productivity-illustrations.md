@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011857"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022138"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 produktivitet illustrationer
 
@@ -54,7 +54,7 @@ Beroende på din miljö är vissa verktyg bättre lämpade för vissa arkitektur
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Tummenvbildning för Microsoft Defender ATP-distributionsstrategi](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad februari 2020| Det arkitektoniska materialet hjälper dig att planera distributionen för följande arkitekturer: <ul><li> Moln-native </li><li> Samledning </li><li> På plats</li><li>Utvärdering och lokal introduktion</li>
+|[![Tummenvbildning för Microsoft Defender ATP-distributionsstrategi](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad februari 2020| Det arkitektoniska materialet hjälper dig att planera distributionen för följande arkitekturer: <ul><li> Moln-native </li><li> Samhantering </li><li> På plats</li><li>Utvärdering och lokal introduktion</li>
 
 
 <a name="m365foundationinfra"></a>
@@ -121,16 +121,7 @@ Uppdaterad januari 2019
 
 Mer information finns i artikeln för den här affischen: [Microsoft Telephony Solutions](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Distribuera ett modernt och säkert skrivbord med Microsoft
-
-Vad IT-arkitekter behöver veta om att distribuera och hantera uppdateringar för Microsoft 365 Apps för företag (tidigare office 365 ProPlus) på Windows 10.
   
-
-|**Objekt**|**Beskrivning**|
-|:-----|:-----|
-|[![Miniatyrbild för distribuera ett modernt och säkert skrivbord med Microsoft-modell](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Uppdaterad september 2017 | Denna modell innehåller: <ul><li>  Distribuera Windows 10- och Microsoft 365-appar för företag från Microsoft-molnet </li><li>  Distribuera Windows 10- och Microsoft 365-appar för företag med Microsoft Endpoint Configuration Manager </li><li>  Hantera uppdateringar för Windows 10 och Microsoft 365 Apps för företag från Microsoft-molnet </li><li>  Hantera uppdateringar för Windows 10- och Microsoft 365-appar för företag med Microsoft Endpoint Configuration Manager </li><li>  Färdiga och ytterligare skyddsfunktioner i Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Se även
 
 [Arkitekturmodeller för SharePoint, Exchange, Skype för företag och Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
