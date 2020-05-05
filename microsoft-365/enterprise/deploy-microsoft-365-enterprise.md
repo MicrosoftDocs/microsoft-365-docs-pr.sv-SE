@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå vilka resurser du kan använda när du distribuerar Microsoft 365 för företag i din organisation.
-ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638242"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002361"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuera Microsoft 365 för företag
 
@@ -117,7 +117,7 @@ Att definiera en digital kultur är en viktig prioritering för alla ledare som 
 
 Samtidigt hjälper smarta säkerhetsfunktioner och produktintegreringen till med att effektivisera hanteringsbehoven och minimera den totala ägandekostnaden i IT-livscykeln. 
 
-Lär dig hur Core Services Engineering and Operations (tidigare Microsoft IT) [planerade och distribuerade en grund](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) för att stödja programmen och tjänsterna som frigör kreativitet och främjar samarbetet i en säker miljö.
+Services hur Core Services Engineering and Operations (tidigare Microsoft IT) har [skapat en modern arbetsplats med Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
 
 > [!Note]
 > Den här webbsidan är endast tillgänglig på engelska.

@@ -5,21 +5,25 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Lär dig hur du begränsar oavsiktlig exponering av information när du delar filer med personer utanför organisationen.
-ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 93fceaca45a3f814341678c2d29d5feea3653369
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632589"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002174"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen
 
-När du delar filer och mappar med personer utanför organisationen finns det en mängd olika alternativ som du kan använda för att minska risken för att oavsiktligt dela konfidentiell information. Du kan välja bland alternativen i den här artikeln för att uppfylla organisationens behov på bästa sätt.
+När du delar filer och mappar med personer utanför organisationen finns det en mängd olika alternativ som du kan använda för att minska risken för att någon oavsiktligt delar känslig information. Du kan välja bland alternativen i den här artikeln för att uppfylla organisationens behov på bästa sätt.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Använda bästa metoder för Alla-länkar
 

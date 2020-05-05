@@ -9,15 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper energiorganisationer att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
-ms.openlocfilehash: 536c895a52024845d8e37c5a7c0b63ba1b2c2752
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- M365solutions
+ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637194"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002246"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Grundläggande efterlevnad och säkerhetsaspekter för energiindustrin
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Illustrationsmetafor för en global vy över olika branscher som använder molnet":::
@@ -197,7 +199,7 @@ Med många kommunikationskanaler tillgängliga för anställda behöver organisa
 
 Med efterlevnad av kommunikation kan du övervaka flera kommunikationskanaler och använda maskinutbildningsmodeller för att identifiera potentiella policyöverträdelser, t. ex. e-post i Office 365, Microsoft Teams, Skype för företag Online, Facebook, Twitter och Bloomberg snabbmeddelanden. Med efterlevnad av kommunikation kan grupper effektivt granska meddelanden för potentiella överträdelser av:
 - Företagsprinciper, t. ex. acceptabel användning, etisk standard och företagsspecifika principer 
-- Konfidentialitet eller konfidentiella affärsuppgifter, t. ex. otillåten kommunikation om konfidentiella projekt som kommande förvärv, sammanslagningar, resultaträkning, omstrukturering eller ledarskapsförändringar
+- känslig information om företaget, till exempel samtal om känsliga projekt såsom kommande förvärv, sammanslagningar, vinstresultat, omstruktureringar eller förändringar i ledningsgruppen
 - Bestämmelser om efterlevnad, t. ex. medarbetarnas kommunikation angående olika typer av verksamheter och transaktioner där en organisation uppkommer med beaktande av FERC bestämmelser för energimarknader
 
 Med efterlevnad av kommunikation tillhandahåller inbyggda klassificerare för hot, trakasserier och svordomar vilket minskar falska positiva vid granskning av kommunikation. Detta sparar granskare tid under undersökningen och reparationsprocessen. Det hjälper granskare att fokusera på vissa meddelanden i långa trådar som har markerats med principvarningar. På så sätt kan grupper som följer arbetsgrupper snabbare identifiera och åtgärda risker. Den ger efterlevnadsgrupper med möjligheten att enkelt konfigurera och finjustera principer och justera lösningen till organisationens specifika behov och minska falska positiva. Med efterlevnad för kommunikation kan du även spåra användarens beteende med tiden och på så sätt Markera potentiella mönster för riskfyllda beteenden och policyöverträdelser. I den här artikeln får du till gång till flexibla, inbyggda arbetsflöden så att granskare snabbt kan vidta åtgärder och eskalera till juridiska och mänskliga resurser enligt definierade företagsprocesser.

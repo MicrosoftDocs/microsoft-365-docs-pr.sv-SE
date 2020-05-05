@@ -6,18 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom:
+- M365solutions
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper finansiella tjänster att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
-ms.openlocfilehash: f312c1a44f81dda2cd89937354423f686eb7346b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+f1.keywords: NOCSH
+ms.openlocfilehash: e3ed7d40cf7b4452dd2bc47e870e0a7afe10d629
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632613"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002373"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
