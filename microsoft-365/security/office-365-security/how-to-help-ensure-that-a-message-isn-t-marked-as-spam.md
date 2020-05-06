@@ -1,5 +1,5 @@
 ---
-title: Så här säkerställer du att ett meddelande inte markeras som skräppost
+title: Så kan du se till att ett meddelande inte markeras som skräppost
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
-description: Som Exchange Online- eller Exchange Online Protection-administratör (EOP) kan du se till att ett e-postmeddelande som reser via tjänsten inte markeras som skräppost. Se den uppdaterade versionen av tips och procedurer för att åstadkomma detta i Förhindra falsk positiv e-post markerad som skräppost med en safelist eller andra tekniker.
-ms.openlocfilehash: 7ff5c7d027a4caabaaadc8169d6afab5698a50bb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig som en Exchange Online- eller Exchange Online Protection (EOP)-administratör, hur kan du se till att ett e-postmeddelande som reser via tjänsten inte markeras som skräppost.
+ms.openlocfilehash: 4661e695d4bea363de396853ae78c3b31f878243
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893640"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036383"
 ---
-# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Så här säkerställer du att ett meddelande inte markeras som skräppost
+# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Så kan du se till att ett meddelande inte markeras som skräppost
 
 Som Exchange Online- eller Exchange Online Protection-administratör (EOP) kan du se till att ett e-postmeddelande som reser via tjänsten inte markeras som skräppost. Se den uppdaterade versionen av tips och procedurer för att åstadkomma detta i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
 

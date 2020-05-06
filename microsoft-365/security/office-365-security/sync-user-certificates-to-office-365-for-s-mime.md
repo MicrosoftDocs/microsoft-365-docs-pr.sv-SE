@@ -1,5 +1,5 @@
 ---
-title: Synkronisera användarcertifikat till Office 365 för S/MIME
+title: Synkronisera användarcertifikat med Office 365 för S/MIME
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,15 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
-description: Innan någon kan skicka S/MIME-skyddade meddelanden måste lämpliga certifikat ställas in. För att skicka krypterade meddelanden via Exchange Online använder avsändarens e-postprogram mottagarens offentliga certifikat för att kryptera meddelandet. Det här offentliga X.509-certifikatet måste publiceras i Office 365.
-ms.openlocfilehash: a62af3b176f29ec2bd8c97ae02178c87b7a63544
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig hur du publicerar lämpliga certifikat till Office 365 innan du skickar S/MIME-skyddade meddelanden i Exchange Online.
+ms.openlocfilehash: f9e0bef2f7d2125e2daeb86b3cf44ae433aae117
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42808623"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035218"
 ---
-# <a name="sync-user-certificates-to-office-365-for-smime"></a>Synkronisera användarcertifikat till Office 365 för S/MIME
+# <a name="sync-user-certificates-to-office-365-for-smime"></a>Synkronisera användarcertifikat med Office 365 för S/MIME
 
 Innan någon kan skicka S/MIME-skyddade meddelanden i Exchange Online måste lämpliga certifikat ställas in. Om du vill skicka krypterade meddelanden via Exchange Online använder avsändarens e-postapp mottagarens offentliga certifikat för att kryptera meddelandet. Det här offentliga X.509-certifikatet måste publiceras i Office 365.
 

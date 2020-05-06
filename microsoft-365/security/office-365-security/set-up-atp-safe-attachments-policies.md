@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Definiera principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
-ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Läs mer om hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638350"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035326"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera principer för office 365 ATP-säkra bifogade filer
 
@@ -90,7 +91,7 @@ När du ställer in principerna för betrodda bilagor vid ATP väljer du bland m
 
 ||||
 |---|---|---|
-|**Alternativet**|**Effekt**|**Använd när du vill:**|
+|**Alternativ**|**Effekt**|**Använd när du vill:**|
 |**Av**|Söker inte igenom bilagor efter skadlig kod  <br/> Försenar inte meddelandeleverans|Inaktivera skanning för skannrar, fax eller smarta värdar som bara skickar kända, bra bilagor  <br/> Förhindra onödiga fördröjningar i routning av intern e-post.  <br/> **Vi rekommenderar inte det här alternativet för de flesta användare. Du bör bara använda det här alternativet för att inaktivera ATP-säkra bilagor som söker efter en liten grupp betrodda avsändare.**|
 |**Övervaka**|Levererar meddelanden med bilagor och spårar sedan vad som händer med upptäckt skadlig kod|Se var upptäckt skadlig kod hamnar i organisationen|
 |**Blockera**|Förhindrar att meddelanden med identifierade bifogade filer för skadlig kod fortsätter  <br/> Skickar meddelanden med upptäckt skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhetsadministratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> Blockerar framtida meddelanden och bilagor automatiskt|Skydda din organisation från upprepade attacker med samma bifogade skadliga program|

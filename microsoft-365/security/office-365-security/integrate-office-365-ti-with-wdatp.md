@@ -1,5 +1,5 @@
 ---
-title: Integrera avancerat hotskydd för Office 365 med avancerat hotskydd för Microsoft Defender
+title: Integrera Office 365 ATP med Microsoft Defender Avancerat skydd
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,12 +17,13 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrera office 365 avancerat skydd mot hot med Microsoft Defender Advanced Threat Protection för att se mer detaljerad information om hothantering.
-ms.openlocfilehash: e416d70baf7498b0163d5bd8aa8e923585a5e5a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1574def6959bf63f061ff35bae71aed9657de436
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633815"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036371"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Integrera avancerat hotskydd för Office 365 med avancerat hotskydd för Microsoft Defender
 
@@ -60,6 +61,6 @@ Integrering av Office 365 ATP med Microsoft Defender ATP konfigureras med både 
 
 [Hotutredning och hotsvarsfunktioner i Office 365](office-365-ti.md)
   
-[Office 365 ATP](office-365-atp.md)
+[Office 365 Avancerat skydd](office-365-atp.md)
   
 

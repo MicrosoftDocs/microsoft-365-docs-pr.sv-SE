@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: De här artiklarna hjälper externa avsändare att förbättra sitt rykte och öka sin förmåga att leverera e-post till användare i Office 365. De innehåller också viss information om hur du kan rapportera skräppost och nätfiskeförsök även om du själv inte är en Microsoft 365-användare.
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig som extern avsändare hur du kan öka möjligheten att leverera e-post till användare i Microsoft 365. Lär dig också hur du anmäler skräppost & nätfiskeförsök som extern användare.
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638422"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035390"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Skicka e-post till Microsoft 365
 

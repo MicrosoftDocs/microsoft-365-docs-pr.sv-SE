@@ -13,13 +13,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Beskriver programordningen för Office 365-skydd och hur prioritetsvärdet i skyddsprinciper avgör vilken princip som tillämpas.
-ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig mer om programordningen för Office 365-skydd och hur prioritetsvärdet i skyddsprinciper avgör vilken princip som tillämpas.
+ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633972"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036722"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
@@ -33,7 +35,7 @@ Det finns två viktiga faktorer som avgör vilken princip som tillämpas på ett
 
   |||||
   |---|---|---|---|
-  |**Priority**|**Skydd av e-post**|**Kategori**|**Var ska man hantera**|
+  |**Prioritet**|**Skydd av e-post**|**Kategori**|**Var ska man hantera**|
   |1|Malware|KATT:MALW|[Konfigurera principer mot skadlig kod i Office 365](configure-anti-malware-policies.md)|
   |2|Phishing|KATT:PHSH|[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)|
   |3|Skräppost med hög konfidens|KATT:HSPM|[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)|
@@ -54,7 +56,7 @@ Tänk dig till exempel följande ATP-principer för nätfiske **som gäller för
 
   |||||
   |---|---|---|---|
-  |**ATP:s policy för phishing-phishing**|**Priority**|**Användarens personifiering**|**Anti-spoofing**|
+  |**ATP:s policy för phishing-phishing**|**Prioritet**|**Användarens personifiering**|**Anti-spoofing**|
   |Politik A|1|På|Av|
   |Politik B|2|Av|På|
   |

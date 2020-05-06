@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: Svar på vanliga frågor om karantän i Office 365.
-ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Vanliga frågor och svar om karantän för Office 365-postlådor i Exchange Online eller fristående EOP utan Exchange Online-postlådor.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5c5d7f426701ebc9a546a86a4fccbd7015fc0e49
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634430"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033860"
 ---
 # <a name="quarantine-faq"></a>Vanliga frågor och svar om karantän
 
@@ -33,7 +34,7 @@ Endast administratörer kan hantera meddelanden som har satts i karantän för s
 
 ## <a name="q-how-do-i-quarantine-spam"></a>F: Hur sätter jag skräppost i karantän?
 
-A. Som standard levereras meddelanden som klassificeras som skräppost eller massutskick via skräppostfiltrering till användarens postlåda och flyttas till mappen Skräppost. Men du kan skapa och konfigurera anti-spam-principer för att sätta skräppost eller massmeddelanden i karantän i stället. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
+A. Som standard levereras meddelanden som klassificeras som skräppost eller massutskick via skräppostfiltrering till användarens postlåda och flyttas till mappen Skräppost. Men du kan skapa och konfigurera anti-spam-principer för att sätta skräppost eller massmeddelanden i karantän i stället. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>F: Hur ger jag användarna åtkomst till karantänen?
 

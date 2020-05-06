@@ -1,5 +1,5 @@
 ---
-title: Skydda lokala postlådor med Exchange Online Protection
+title: Skydda lokal postlåda - Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,13 +18,15 @@ search.appverid:
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
-description: Även om du planerar att vara värd för vissa eller alla dina postlådor lokalt kan du fortfarande skydda postlådorna med Exchange Online Protection (EOP). Om du vill konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering). Information om hur Office 365-behörigheter relaterar till Exchange-behörigheter finns i Tilldela administratörsroller i Office 365 som drivs av 21Vianet. Om alla Exchange-postlådor är lokala följer du dessa steg för att konfigurera eOP-tjänsten.
-ms.openlocfilehash: 5d60e762b46f6f6f9228fb21ea6450e015ed9d93
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig hur du skyddar lokala postlådor med Exchange Online Protection (EOP)
+ms.openlocfilehash: bdfebf16d77f26f3e3bb2890bd4aa8ccfa12f27b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634454"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033884"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Skydda lokala postlådor med Exchange Online Protection
 
@@ -63,7 +65,7 @@ När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridn
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Steg 5: Se till att skräppost dirigeras till varje användares skräppostmapp
 
-Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje användares skräppostmapp måste du utföra ett par konfigurationssteg. Stegen finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
+Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje användares skräppostmapp måste du utföra ett par konfigurationssteg. Stegen finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
 
