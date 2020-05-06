@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Lär dig hur du uppgraderar en eller flera distributionslistor till Microsoft 365-grupper i Outlook och hur du använder PowerShell för att uppgradera flera distributionslistor samtidigt.
-ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627998"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048179"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera distributionslistor till Microsoft 365-grupper i Outlook
 
-Du kan uppgradera distributionslistor till Microsoft 365 Groups med Outlook. Det här är ett bra sätt att ge organisationens distribution listor över alla funktioner i Microsoft 365 Groups. [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+Du kan uppgradera distributionslistor till Microsoft 365 Groups med Outlook. Det här är ett bra sätt att ge organisationens distribution listor över alla funktioner i Microsoft 365 Groups. [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Du kan uppgradera dina distributionslistor en i taget eller flera samtidigt.
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Läs om hur du lägger till och tar bort licenser för din Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632535"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045230"
 ---
 # <a name="manage-subscription-licenses"></a>Hantera prenumerationslicenser
 
@@ -42,9 +42,9 @@ Du kan inte ta bort en licens från en prenumeration om den är tilldelad till e
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
-2. Leta reda på den prenumeration som du vill lägga till eller ta bort licenser till på sidan **Produkter & tjänster** och välj sedan Lägg **till/ta bort licenser**.
+2. Leta reda på den prenumeration som du vill lägga till eller ta bort licenser till på sidan **Dina produkter** och välj sedan **Lägg till/ta bort licenser**.
 
     [Vad gör jag om jag inte kan se länken Lägg till/ta bort licenser?](#what-if-i-dont-see-the-addremove-licenses-link)
 

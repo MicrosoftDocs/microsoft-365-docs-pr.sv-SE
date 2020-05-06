@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att skapa och ta bort Microsoft 365-grupper, lägga till och ta bort gruppmedlemmar och anpassa hur gruppen fungerar.
-ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a691f2363547c5bffb4c674d61cddde0cdb0266a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630461"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049221"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Skapa en grupp i administrationscentret för Microsoft 365
   
 Användare kan skapa en Microsoft 365-grupp från Outlook eller andra appar, men som administratör kan du behöva skapa eller ta bort grupper, lägga till eller ta bort medlemmar och anpassa hur de fungerar. Microsoft 365 admin center är platsen att göra detta. 
 
 > [!TIP]
-> Microsoft 365-anslutna Yammer-grupper måste skapas i Yammer, men kan hanteras i Microsoft 365-administrationscentret som andra Microsoft 365-grupper. Mer information finns i [Yammer- och Microsoft 365-grupper](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
+> Microsoft 365-anslutna Yammer-grupper måste skapas i Yammer, men kan hanteras i Microsoft 365-administrationscentret som andra Microsoft 365-grupper. Mer information finns i [Yammer- och Microsoft 365-grupper](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
 
 ## <a name="create-a-microsoft-365-group"></a>Skapa en Microsoft 365-grupp
 
@@ -57,7 +57,7 @@ När gruppen har skapats kan du lägga till medlemmar och konfigurera ytterligar
 
 ::: moniker range="o365-worldwide"
 
-Användare kan [lägga till sig själva eller begära godkännande](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
+Användare kan [lägga till sig själva eller begära godkännande](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
 
 1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas och väljer sedan namnet på den grupp som du vill lägga till medlemmar i.
     
@@ -75,7 +75,7 @@ Gruppen visas i Outlook med medlemmar som har tilldelats den.
 
 ::: moniker range="o365-germany"
 
-Användare kan [lägga till sig själva eller begära godkännande](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
+Användare kan [lägga till sig själva eller begära godkännande](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
 1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas, väljer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper</a>och väljer sedan den grupp som du vill lägga till medlemmar i. **Groups**
     
 2. Välj Redigera **bredvid** **Medlemmar**.
@@ -91,7 +91,7 @@ Gruppen visas i Outlook med medlemmar som har tilldelats den.
 
 ::: moniker range="o365-21vianet"
 
-Användare kan [lägga till sig själva eller begära godkännande](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
+Användare kan [lägga till sig själva eller begära godkännande](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)eller lägga till dem nu.
 1. I administrationscentret uppdaterar du sidan så att den nya gruppen visas, väljer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper</a>och väljer sedan den grupp som du vill lägga till medlemmar i. **Groups**
     
 2. Välj Redigera **bredvid** **Medlemmar**.
@@ -119,7 +119,7 @@ När du har skapat en ny grupp och lagt till medlemmar kan du konfigurera gruppe
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Välj vilken domän som ska användas när Microsoft 365-grupper skapas](choose-domain-to-create-groups.md)
 

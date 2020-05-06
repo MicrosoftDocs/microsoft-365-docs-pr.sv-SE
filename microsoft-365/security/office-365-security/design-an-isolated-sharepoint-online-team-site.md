@@ -13,15 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: 'Sammanfattning: Steg genom designprocessen för isolerade SharePoint Online-gruppwebbplatser.'
-ms.openlocfilehash: 5efd5fb0501d88fda37f1530ef62e4c5110e4da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Utforma isolerade SharePoint Online-gruppwebbplatser, inklusive bestämma behörighetsnivåer, tilldela behörigheter till användare med åtkomstgrupper och kapslade Azure AD-grupper.
+ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638518"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034846"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Utforma en isolerad SharePoint Online-gruppwebbplats
 

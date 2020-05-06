@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om inställningarna och filtren mot skräppost som hjälper dig att förhindra skräppost i Exchange Online och Microsoft 365. Får du för mycket skräppost i Microsoft 365? Du kan anpassa dina skräppostfilter och inställningar för skräppost.
-ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig mer om inställningarna och filtren mot skräppost som hjälper dig att förhindra skräppost i Exchange Online och Microsoft 365.
+ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708577"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034064"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Skydd mot skräppost i Microsoft 365
 
@@ -71,7 +73,7 @@ Här är några metodtips som gäller för båda scenarierna:
 
 - **Använd e-postautentisering**: Om du äger en e-postdomän kan du använda DNS för att försäkra att meddelanden från avsändare i den domänen är legitima. Använd alla följande metoder för e-postautentisering för att förhindra skräppost och oönskad förfalskning i EOP:
 
-  - **SPF**: Avsändarprincipram verifierar meddelandets käll-IP-adress mot ägaren till den sändande domänen. En snabb introduktion till SPF och snabbt konfigurera den finns i [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Om du vill ha en mer djupgående förståelse för hur Microsoft 365 använder SPF, eller för felsökning eller icke-standarddistributioner som hybriddistributioner, börjar du med [Hur Microsoft 365 använder Sender Policy Framework (SPF) för att förhindra förfalskning](how-office-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: Avsändarprincipram verifierar meddelandets käll-IP-adress mot ägaren till den sändande domänen. En snabb introduktion till SPF och snabbt konfigurera den finns i [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md). För att få en djupare förståelse av hur Microsoft 365 använder SPF, eller om du vill felsöka eller göra icke-standarddistributioner (t.ex. hybriddistributioner), kan du börja med att läsa artikeln om [hur Microsoft 365 använder SPF (Sender Policy Framework) för att förhindra förfalskning](how-office-365-uses-spf-to-prevent-spoofing.md).
 
   - **DKIM**: DomainKeys Identified Mail lägger till en digital signatur i meddelandehuvudet för meddelanden som skickas från domänen. Information finns i [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän i Microsoft 365](use-dkim-to-validate-outbound-email.md).
 

@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Funktionen Säkra bilagor ger snabb verifiering av e-postbilagor. Använd Säkra bilagor för att skydda din organisation från skadliga filer som personer skickar eller ta emot via e-post.
-ms.openlocfilehash: 14a1b37ce08e0ab63c23515fcf0fb03d99e59cc8
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig hur du skyddar organisationen från skadliga filer med ATP-säkra bilagor för Office 365.
+ms.openlocfilehash: a0d5923ccac525b23aa2ef6b45936524f0a7b483
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943765"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036662"
 ---
 # <a name="how-atp-safe-attachments-works"></a>Så fungerar ATP – säkra bifogade filer
 

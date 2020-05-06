@@ -24,12 +24,12 @@ description: Läs om vilka betalningsalternativ som är tillgängliga för att b
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635022"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045842"
 ---
 # <a name="pay-for-your-subscription"></a>Betala för prenumerationen
 
@@ -44,14 +44,14 @@ När du betalar med kreditkort eller bankkonto debiteras du automatiskt för pre
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Vad händer om mitt kreditkort avslås och min betalning blir försenad?
 
-Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande med information om att vi inte har kunnat bearbeta betalningen. Detta kan ha flera orsaker, kreditkortet kan till exempel ha upphört att gälla. Vi kommer fortsätta att försöka genomföra transaktionen med några dagars mellanrum. Om försöken misslyckas kommer du fortsätta att få e-aviseringar om problemet. Du kan när som helst använda funktionen **Kvitta saldo** för att ändra dina kreditkortsuppgifter och omedelbart skicka in betalningen igen.
+Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande med information om att vi inte har kunnat bearbeta betalningen. Detta kan ha flera orsaker, kreditkortet kan till exempel ha upphört att gälla. Vi kommer fortsätta att försöka genomföra transaktionen med några dagars mellanrum. Om försöken misslyckas kommer du fortsätta att få e-aviseringar om problemet. Du kan använda funktionen **Reglera saldo** när som helst för att ändra din kreditkortsinformation och omedelbart skicka betalningen.
 
 > [!NOTE]
 > Om du byter till ett annat kontokort för att betala det utestående saldot för din prenumeration debiteras det kortet för alla kommande automatiska betalningar för prenumerationen.
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Hitta prenumerationen med det utestående saldot. Välj **Billing** **Kvitta saldo bredvid**prenumeration bredvid **prenumeration.**
 

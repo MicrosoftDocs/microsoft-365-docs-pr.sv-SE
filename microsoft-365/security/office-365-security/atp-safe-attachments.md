@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
-description: Funktionen Säkra bilagor ger snabb verifiering av e-postbilagor. Använd Säkra bilagor för att skydda din organisation från skadliga filer som personer skickar eller ta emot via e-post.
-ms.openlocfilehash: ca46a523ffd15177c44dcb81d2529b769cc2e79c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig mer om funktionen BETRODDa bifogade filer för Office 365 och hur du skaffar funktionen för din prenumeration.
+ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636016"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034858"
 ---
 # <a name="atp-safe-attachments"></a>ATP säkra bilagor
 

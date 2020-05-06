@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Lär dig mer om registreringen av självbetjäningstjänsten för Microsoft 365 och tillgängliga självbetjäningsprogram som Microsoft Power Apps, Microsoft Flow och Dynamics 365 for Financials.
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627806"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045279"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Använda självbetjäningsanmäla i din organisation
 
@@ -42,7 +42,7 @@ I följande exempel beskrivs hur självanmälning fungerar för en skola. Samma 
 
 3. Vi validerar deras e-postadress och sedan kan de börja använda Microsoft 365, Power BI eller andra tjänster direkt.
 
-4. Som företagsadministratör ser du vem som har registrerat sig för en prenumeration genom att visa sidan **Produkter & tjänster** i administrationscentret. På så sätt kan du se när det finns nya eller okända licenser för tjänster i din klient. Om du vill styra om användare kan registrera sig för självbetjäningsprenumerationer använder du cmdleten [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell med parametern **AllowAdHocSubscriptions.** Mer information finns i [Hur kontrollerar jag självbetjäningsinställningarna?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. Som företagsadministratör ser du vem som har registrerat sig för en prenumeration genom att visa sidan **Dina produkter** i administrationscentret. På så sätt kan du se när det finns nya eller okända licenser för tjänster i din klient. Om du vill styra om användare kan registrera sig för självbetjäningsprenumerationer använder du cmdleten [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell med parametern **AllowAdHocSubscriptions.** Mer information finns i [Hur kontrollerar jag självbetjäningsinställningarna?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>Tillgängliga självbetjäningsprogram
 

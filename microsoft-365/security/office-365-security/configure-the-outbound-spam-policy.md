@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
-description: Skräppostfiltrering är alltid aktiverat om du använder tjänsten för att skicka utgående e-post, vilket skyddar organisationer som använder tjänsten och deras avsedda mottagare.
-ms.openlocfilehash: 27f79252d2d08c374784064ac6a12bc4cc7725ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig mer om hur du konfigurerar principer för skräppost som skickas ut och ut och som gäller för specifika användare, grupper eller domäner i organisationen.
+ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637730"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036794"
 ---
 # <a name="configure-outbound-spam-filtering"></a>Konfigurera utgående skräppostfiltrering
 
@@ -77,7 +79,7 @@ Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade pri
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Våra rekommenderade inställningar för utgående skräppostpolicyer finns i [EOP:s policyinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)för skräppostfilter .
 
@@ -105,15 +107,15 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
      b. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
 
-     C. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
+     c. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
 
-     D. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
+     d. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
 
         Upprepa de här stegen så många gånger det behövs.
 
         Mottagarna som du har lagt till visas i avsnittet **Mottagarlista** i det utfällbara fältet. Om du vill ![ta](../../media/scc-remove-icon.png)bort en mottagare klickar du på Knappen Ta bort .
 
-     ᵉ. Klicka på **Spara** när du är klar.
+     e. Klicka på **Spara** när du är klar.
 
      Om du vill inaktivera den här inställningen avmarkerar du kryssrutan.
 
@@ -128,15 +130,15 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
      b. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
 
-     C. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
+     c. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
 
-     D. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
+     d. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
 
         Upprepa de här stegen så många gånger det behövs.
 
         Mottagarna som du har lagt till visas i avsnittet **Mottagarlista** i det utfällbara fältet. Om du vill ![ta](../../media/scc-remove-icon.png)bort en mottagare klickar du på Knappen Ta bort .
 
-     ᵉ. Klicka på **Spara** när du är klar.
+     e. Klicka på **Spara** när du är klar.
 
      Om du vill inaktivera den här inställningen avmarkerar du kryssrutan.
 

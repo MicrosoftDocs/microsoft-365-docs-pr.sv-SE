@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Se hur den falska intelligensinsikten fungerar i Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Lär dig hur den nya falska intelligensinsikten fungerar, inklusive hur du snabbt kan avgöra vilka avsändare som lagligen skickar oautentiserade e-postmeddelanden till dig.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630935"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033650"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Genomgång - ATP Spoof intelligens insikt i Microsoft 365
 
@@ -34,15 +35,15 @@ Den här genomgången är en av flera för Security & Compliance Center. Om du v
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt <https://protection.office.com/searchandinvestigation/dashboard>till **instrumentpanelssidan för säkerhet** använder du .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt <https://protection.office.com/searchandinvestigation/dashboard>till **instrumentpanelssidan för säkerhet** använder du .
 
   Du kan visa den falska intelligensinsikten från mer än en instrumentpanel i Security & Compliance Center. Oavsett vilken instrumentpanel du tittar på ger insikten samma information och gör att du snabbt kan utföra samma uppgifter.
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill använda den falska informationsinsikten måste du vara medlem i rollgrupperna **Organisationshantering,** **Säkerhetsadministratör**eller **Säkerhetsläsare.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill använda den falska informationsinsikten måste du vara medlem i rollgrupperna **Organisationshantering,** **Säkerhetsadministratör**eller **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Du aktiverar och inaktiverar falska underrättelser i ATP:s principer för phishing.You enable and disable spoof intelligence in ATP anti-phishing policies. Mer information finns [i Konfigurera ATP-principer för nätfiske i Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- I Microsoft 365-organisationer med Exchange Online-postlådor och i fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor kan du använda falska underrättelser för att övervaka och hantera avsändare som du skickar meddelanden som inte har autentiseringslag. Mer information finns [i Konfigurera falska underrättelser i Microsoft 365](learn-about-spoof-intelligence.md).
+- I Microsoft 365-organisationer med Exchange Online-postlådor och i fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor kan du använda falska underrättelser för att övervaka och hantera avsändare som du skickar meddelanden som inte har autentiseringslag. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öppna den falska intelligensinsikten i Security & Compliance Center
 

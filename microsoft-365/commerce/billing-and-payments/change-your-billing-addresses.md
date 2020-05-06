@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Läs om hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f96d44a80b40025560ea5d6d6d29de3498a456b7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632725"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045898"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
@@ -121,7 +121,7 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Leta reda på den prenumeration som du vill ändra. I avsnittet **Inställningar & Åtgärder** väljer du Redigera **tjänstanvändningsadress**.
 

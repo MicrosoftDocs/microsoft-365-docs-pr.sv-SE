@@ -1,6 +1,6 @@
 ---
 title: Nyheter i Det avancerade hotskyddet i Office 365
-description: Visar de nya funktionerna i Office 365 ATP
+description: Lär dig mer om de nya funktionerna som är tillgängliga i den senaste versionen av Microsoft Office 365 ATP.
 keywords: nyheter i Office 365 atp, ga, allmänt tillgängliga, funktioner, tillgängliga, nya
 search.appverid: met150
 ms.service: O365-seccomp
@@ -15,12 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.date: 02/21/2020
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630827"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036590"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -82,7 +84,7 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 
 Visste du att Office 365 ATP är tillgängligt i två abonnemang? [Läs mer om vad varje plan innehåller](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

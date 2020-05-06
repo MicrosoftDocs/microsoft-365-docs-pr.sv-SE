@@ -1,7 +1,7 @@
 ---
 title: Lär dig det avancerade jaktfrågespråket i Microsoft Threat Protection
 description: Skapa din första hotjaktsfråga och lär dig mer om vanliga operatörer och andra aspekter av det avancerade jaktfrågespråket
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, språk, lär dig, första frågan, telemetri, händelser, telemetri, anpassade upptäckter, schema, kusto, operatörer, datatyper, powershell ladda ned, frågeexempel
+keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, språk, lär dig, första frågan, telemetri, händelser, telemetri, anpassade upptäckter, schema, kusto, operatörer, datatyper, powershell nedladdning, frågeexempel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982017"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036505"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig det avancerade jaktfrågespråket
 
@@ -148,6 +148,11 @@ Uppgifter i avancerade jakttabeller är i allmänhet indelade i följande dataty
 | `int` | 32-bitars numeriskt värde  |
 | `long` | 64-bitars numeriskt värde |
 
+## <a name="get-help-as-you-write-queries"></a>Få hjälp när du skriver frågor
+Dra nytta av följande funktioner för att skriva frågor snabbare:
+- **Autosuggest** - när du skriver frågor, avancerad jakt ger förslag från IntelliSense. 
+- **Schemareferens** – en schemareferens som innehåller listan över tabeller och deras kolumner finns bredvid arbetsområdet. Om du vill ha mer information håller du muspekaren över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i frågeredigeraren.
+
 ## <a name="use-sample-queries"></a>Använda exempelfrågor
 
 Avsnittet **Kom igång** innehåller några enkla frågor med vanliga operatorer. Prova att köra dessa frågor och göra små ändringar i dem.
@@ -162,9 +167,9 @@ Avsnittet **Kom igång** innehåller några enkla frågor med vanliga operatorer
 Mer information om Kusto-frågespråk och operatörer som stöds finns i [Kusto-frågespråkdokumentation](https://docs.microsoft.com/azure/kusto/query/).
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

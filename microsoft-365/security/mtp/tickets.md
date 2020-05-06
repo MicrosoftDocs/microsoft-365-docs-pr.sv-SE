@@ -1,6 +1,6 @@
 ---
 title: Skapa och spåra biljetter via ServiceNow
-description: Microsoft 365 security center förbättras med möjlighet att skapa och spåra biljetter i ServiceNow. Säkerhetsadministratörer kan skicka en rekommendation om säker poäng direkt till ServiceNow och skapa en biljett.
+description: Läs om hur du skapar och spårar biljetter i ServiceNow från Microsoft 365-säkerhetscenter.
 keywords: säkerhet, Microsoft 365, M365, säker poäng, säkerhetscenter, ServiceNow, biljetter, uppgifter
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,12 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901028"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034194"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Hantera biljetter via ServiceNow
 
@@ -54,7 +56,7 @@ När du skapar en ServiceNow-biljett från Microsoft 365-säkerhetscentret skick
 * Användar-ID som initierar skapandet av biljetten
 * Uppgiftsnamn
 * Beskrivning av uppgift
-* Priority
+* Prioritet
 * Förfallodatum
 * Rekommendationskälla (Användarrekommendation eller Microsoft-rekommendation)
 * Kategorin Rekommendation (enheter, data, appar, identitet, infrastruktur)

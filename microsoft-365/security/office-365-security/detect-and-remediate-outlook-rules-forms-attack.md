@@ -1,5 +1,5 @@
 ---
-title: Identifiera och åtgärda Outlook-regler och anpassade formulärinjektioner
+title: Identifiera och åtgärda Outlook-regler och anpassade formulär injektioner attacker.
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,12 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Lär dig hur du känner igen och åtgärdar Outlook-regler och anpassade formulärinjektioner i Office 365
-ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637598"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034822"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Identifiera och åtgärda Outlook-regler och anpassade formulär injections attacker
 
@@ -234,9 +235,9 @@ Leta efter nyckeln EnableUnsafeClientMailRules. Om den finns där och är instä
 
 Kunder med lokala Exchange-installationer bör överväga att blockera äldre versioner av Outlook som inte har korrigeringsfiler tillgängliga. Information om den här processen finns i artikeln [Konfigurera Outlook-klientblockering](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Säkra Microsoft 365 som ett cybersäkerhetsproffs
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
-Din Microsoft 365-prenumeration levereras med en kraftfull uppsättning säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [microsoft 365-säkerhetsfärdplanen – De högsta prioriteterna för de första 30 dagarna, 90 dagarna och längre för](security-roadmap.md) att implementera Microsofts rekommenderade metodtips för att skydda din Microsoft 365-klientorganisation.
+Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare. Använd [Säkerhetsöversikt för Microsoft 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Microsoft 365-klientorganisation.
 
 - Uppgifter som ska utföras under de första 30 dagarna. De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 
