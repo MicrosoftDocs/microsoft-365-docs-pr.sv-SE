@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Lär dig att verifiera vilka prenumerationer din organisation har genom att gå till sidan Prenumerationer.
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621436"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045218"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 
@@ -40,9 +40,9 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
-2. Dina prenumerationer visas på sidan **Produkter & tjänster,** tillsammans med prenumerationsnamnet, information om prenumerationen och dess status. Om du vill visa en komprimerad vy väljer du **Tabellvy**.
+2. Dina prenumerationer visas på sidan **Dina produkter,** tillsammans med prenumerationsnamnet, information om prenumerationen och dess status. Om du vill visa en komprimerad vy väljer du **Tabellvy**.
 
 ::: moniker-end
   

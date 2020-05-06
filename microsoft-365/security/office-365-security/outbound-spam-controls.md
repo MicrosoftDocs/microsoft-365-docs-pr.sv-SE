@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig mer om hur Microsoft 365 och Exchange Online Protection (EOP) skyddar kunder från utgående skräppost och vad du kan göra om du behöver skicka massutskick.
-ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig som administratör hur Office 365 och Exchange Online Protection (EOP) skyddar kunder från utgående skräppost och vad du kan göra om du behöver skicka massutskick.
+ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634502"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033932"
 ---
 # <a name="outbound-spam-protection"></a>Utgående skräppostskydd
 

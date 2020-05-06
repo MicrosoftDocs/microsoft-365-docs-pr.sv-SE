@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) erbjuder flera sätt att hantera dina e-postmottagare. Som administratör kan du utföra vissa hanteringsuppgifter i Administrationscenter för Exchange (EAC) eller använda fjärrdata Windows PowerShell och verifiera andra hanteringsuppgifter som utförs i Microsoft 365-administrationscentret.
-ms.openlocfilehash: b5d1efa0fb54b97f226f25375fb747e5373a36cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig mer om e-postmottagare som stöds av Microsoft Exchange Online Protection (EOP).
+ms.openlocfilehash: eb2855f93083c88725492be2691799c3521bbf8f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635346"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036155"
 ---
 # <a name="manage-recipients-in-eop"></a>Hantera mottagare i EOP
 

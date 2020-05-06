@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Lär dig hur du tolkar debiterings-, fakturerings- och betalningsinformationen på din Microsoft 365 för företagsfaktura och hur du ändrar inköpsordernumret.
-ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634974"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045818"
 ---
 # <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Förstå din faktura för Microsoft 365 för företag
 
@@ -104,7 +104,7 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Om du är i **tabellvyn** väljer du **Kort** för att växla vyer.
 

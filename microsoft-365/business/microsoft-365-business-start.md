@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig mer om Microsoft 365 för företag, hur du konfigurerar det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633212"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048094"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -44,7 +44,7 @@ Titta på det här videoklippet om du vill ha en snabb översikt över Microsoft
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 för företag är avsett för upp till 300 licenser. Om du behöver fler licenser läser du [Microsoft 365 Enterprise-dokumentationen](https://go.microsoft.com/fwlink/p/?linkid=860986) för mer information. 
+Microsoft 365 för företag är avsett för upp till 300 licenser. Om du behöver fler licenser finns mer information i dokumentationen för [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986). 
   
 ## <a name="get-microsoft-365-for-business"></a>Skaffa Microsoft 365 för företag
 
@@ -83,7 +83,7 @@ Logga in på [Microsoft 365 admincenter](https://portal.office.com/adminportal/h
     
     - Använd katalogsynkroniseringsguiden för att synkronisera användarna till molnet. Följ stegen i [Konfigurera katalogsynkronisering för Microsoft 365 för](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) att slutföra den här processen. När du har synkroniserat användarna med molnet måste du [inaktivera katalogsynkronisering för Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Du måste också ge varje användare som har lagts till på det här sättet en licens till Microsoft 365 för företag. Du kan göra detta i [installationsguiden](set-up.md) eller [tilldela licenser till användare i Microsoft 365 för företag](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    Du måste också ge varje användare som har lagts till på det här sättet en licens till Microsoft 365 för företag. Du kan göra detta i [installationsguiden](set-up.md) eller [tilldela licenser till användare i Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
 ### <a name="2-prepare-mobile-devices"></a>2: Förbered mobila enheter
 
@@ -106,10 +106,10 @@ Om du behåller en lokal Active Directory som innehåller vissa lokala resurser 
     
 - Som Microsoft 365 för företag-administratör har du tillgång till vårt kundsupportteam: ** [Kontakta support för företagsprodukter - Administratörshjälp](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Microsoft 365 för affärsdokumentation och resurser](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [Hantera Microsoft 365 för företag](manage.md)[Migrera till Microsoft 365 för företag](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

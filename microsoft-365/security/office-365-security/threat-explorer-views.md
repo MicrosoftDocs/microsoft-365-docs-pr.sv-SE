@@ -13,13 +13,14 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om de olika typer av vyer som är tillgängliga i Threat Explorer och realtidsidentifieringar.
-ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+description: Lär dig mer om hur du använder Threat Explorer och rapporten identifiering i realtid för att undersöka och svara på hot i Security & Compliance Center.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 31fa228d69fcbe885f7639a47a5df2bf1ee0c60d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907255"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035194"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Threat Explorer och realtidsidentifieringar
 

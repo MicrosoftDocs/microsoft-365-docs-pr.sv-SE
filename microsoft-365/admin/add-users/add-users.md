@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Lär dig hur du lägger till användare i Microsoft 365, en i taget eller flera användare samtidigt från en CSV-fil.
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618866"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049477"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Lägga till användare individuellt eller i grupp
 
@@ -118,7 +118,7 @@ Personerna i teamet behöver var och en ett användarkonto innan de kan logga in
 När du lägger till en användare får du ett e-postmeddelande från Microsoft Online Services-teamet. E-postmeddelandet innehåller personens användar-ID och lösenord så att de kan logga in på Microsoft 365. Du måste berätta för din nya användare om deras inloggningsinformation för Microsoft 365. Använd din vanliga process för att förmedla nya lösenord.
 
 > [!NOTE]
->Om du skapar användare genom att migrera e-postlådor måste du aktivera användarkonton genom att tilldela licenser. Om du inte tilldelar en licens till en användare inaktiveras postlådan efter en respitperiod på 30 dagar. Se hur du [tilldelar licenser till användare](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) med hjälp av Microsoft 365 administrationscenter.
+>Om du skapar användare genom att migrera e-postlådor måste du aktivera användarkonton genom att tilldela licenser. Om du inte tilldelar en licens till en användare inaktiveras postlådan efter en respitperiod på 30 dagar. Se hur du [tilldelar licenser till användare](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) med hjälp av Microsoft 365 administrationscenter.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Video: Lägga till och hantera användare i administrationscentret
 

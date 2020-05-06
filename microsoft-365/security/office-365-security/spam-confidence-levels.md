@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig om hur scl (Spam Confidence Level) avgör hur troligt eller osannolikt ett meddelande är skräppost och de standardåtgärder som skräppostfiltrering vidtar på meddelanden som baseras på SCL.
-ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln kan administratörer lära sig om hur spam förtroende nivå (SCL) avgör likheten av ett meddelande som spam.
+ms.openlocfilehash: 9448b1fd99878dbb85bc8699afc0719bc62dd951
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638290"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035254"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Säkerhetsnivå för skräppost (SCL) i Office 365
 
@@ -32,7 +34,7 @@ Vad SCL innebär och standardåtgärder som vidtas på meddelanden beskrivs i f�
 ||||
 |:---:|---|---|
 |**SCL**|**Definition**|**Standardåtgärd**|
-|-1|Meddelandet hoppade över skräppostfiltrering. Meddelandet kommer till exempel från en säker avsändare, skickades till en säker mottagare eller kommer från en e-postkällserver i listan TILLÅT IP. Mer information finns [i Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).|Leverera meddelandet till mottagarnas inkorg.|
+|-1|Meddelandet hoppade över skräppostfiltrering. Meddelandet kommer till exempel från en säker avsändare, skickades till en säker mottagare eller kommer från en e-postkällserver i listan TILLÅT IP. Mer information finns i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).|Leverera meddelandet till mottagarnas inkorg.|
 |0, 1|Skräppostfiltrering fastställde att meddelandet inte var skräppost.|Leverera meddelandet till mottagarnas inkorg.|
 |5, 6|Skräppostfiltrering markerade meddelandet som **skräppost**|Leverera meddelandet till mottagarnas skräppostmapp.|
 |9|Skräppostfiltrering markerade meddelandet som **skräppost med högt förtroende**|Leverera meddelandet till mottagarnas skräppostmapp.|

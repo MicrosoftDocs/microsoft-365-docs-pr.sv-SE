@@ -13,16 +13,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 erbjuder en mängd olika skydd mot nätfiskeattacker som standard och även via ytterligare funktioner i Office 365 Advanced Threat Protection (ATP). I det här avsnittet introduceras de onlineresurser du kan använda för att lära dig mer om och implementera alternativ och strategier mot nätfiske i Microsoft 365.
-ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
+description: I den här artikeln introduceras tillgängliga onlineresurser som kan användas för att lära sig mer om och implementera alternativ och strategier mot nätfiske i Microsoft 365.
+ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949375"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033768"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Användare kan lära sig att hantera sina självbetjäningsköp.
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636645"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046174"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
 
@@ -30,11 +30,11 @@ Din administratör har en skrivskyddad vy över alla prenumerationer som du köp
 
 ## <a name="view-your-subscriptions"></a>Visa dina prenumerationer
 
-Du kan visa en lista över alla köpta prenumerationer med självbetjäning som du har köpt. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+Du kan visa en lista över alla köpta prenumerationer med självbetjäning som du har köpt. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Så här köper du fler eller minskar licenser
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Hitta den prenumeration som du vill köpa fler eller minska licenser för.
 
@@ -74,7 +74,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ## <a name="cancel-a-subscription"></a>Avbryta en prenumeration
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Leta reda på den prenumeration som du vill avbryta.
 

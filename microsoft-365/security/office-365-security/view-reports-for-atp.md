@@ -1,5 +1,5 @@
 ---
-title: Visa rapporter för Avancerat skydd mot office 365, rapporter om skadlig programvara, rapporter om intrång, komprometterade konton, URL-skyddsstatus, hotrapportering, rapportera hot
+title: Visa rapporter för avancerat hotskydd
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Hitta och använd rapporter för avancerat skydd mot &amp; office 365 i Säkerhetsefterlevnadscenter.
-ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708505"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034968"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 

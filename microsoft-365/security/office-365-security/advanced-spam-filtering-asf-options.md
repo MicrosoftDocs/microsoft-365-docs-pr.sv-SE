@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kallas även principer för skräppostfilter eller innehållsfilter) kan administratörer identifiera meddelanden som innehåller specifika meddelandeegenskaper som ofta används i skräppost. Beroende på egenskapen markerar ASF-identifieringar antingen meddelandet som skräppost eller skräppost med högt förtroende.
-ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig mer om asf-inställningar (Advanced Spam Filter) i policyer för skräppost, som gör det möjligt för administratörer att identifiera meddelanden som innehåller specifika meddelandeegenskaper som ofta används i skräppost.
+ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634736"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034140"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Avancerade asf-inställningar (Spam Filter) i Office 365
 
@@ -33,7 +35,7 @@ Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kall
 > [!NOTE]
 > Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva identifieringar. Du kan identifiera meddelanden som filtrerats efter ASF genom att: <ul><li>Periodiska meddelanden om skräppost för slutanvändare.</li><li>Förekomsten av filtrerade meddelanden i karantän.</li><li>De `X-CustomSpam:` specifika X-header-fält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.</li></ul>
 
-I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns i [konfigurera anti-spam-policyer i Office 365](configure-your-spam-filter-policies.md).
+I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivera, inaktivera eller testa ASF-inställningar
 

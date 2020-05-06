@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Köp en Microsoft 365 för företag-prenumeration. Du kan köpa samma typ av prenumeration som du har provat eller ett annat abonnemang.
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634950"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045806"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Köp en prenumeration på Microsoft 365 för företag från din kostnadsfria utvärderingsversion
 
@@ -50,9 +50,9 @@ Det är enkelt, och när du köper samma typ av prenumeration som utvärderingsv
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
-2. På sidan **Produkter & tjänster** hittar du den prenumeration som du vill köpa. Välj **Köpprenumeration**i avsnittet **Licenser** .
+2. Leta reda på den prenumeration som du vill köpa på sidan **Dina produkter.** Välj **Köpprenumeration**i avsnittet **Licenser** .
 
 3. Välj antingen ett månatligt eller årligt åtagande för din prenumeration och välj sedan **Kassan**.
 

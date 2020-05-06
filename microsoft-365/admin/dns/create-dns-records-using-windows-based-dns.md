@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Windows-baserad DNS för Microsoft.
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631375"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048849"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Skapa DNS-poster för Microsoft med Windows-baserad DNS
 
@@ -200,7 +200,7 @@ Verifiera din domän i Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Icke-dirigerbar e-postadress som används som UPN i din lokala Active Directory
 <a name="BKMK_ADNote"> </a>
 
-Om du planerar att synkronisera din lokala Active Directory med Microsoft, bör du se till att Active Directory-användarens huvudnamn (UPN) är ett giltigt domänsuffix och inte ett domänsuffix som inte stöds, till exempel @contoso.local. Om du behöver ändra upn-suffixet läser du Så här förbereder du [en domän som inte kan dirigerbara för katalogsynkronisering](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
+Om du planerar att synkronisera din lokala Active Directory med Microsoft, bör du se till att Active Directory-användarens huvudnamn (UPN) är ett giltigt domänsuffix och inte ett domänsuffix som inte stöds, till exempel @contoso.local. Om du behöver ändra upn-suffixet läser du Så här förbereder du [en domän som inte kan dirigerbara för katalogsynkronisering](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
