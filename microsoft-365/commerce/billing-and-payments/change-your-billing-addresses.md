@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Läs om hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
 ms.custom: okr_SMB
-ms.openlocfilehash: f96d44a80b40025560ea5d6d6d29de3498a456b7
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045898"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048031"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
@@ -170,6 +170,8 @@ Som standard skickas organisationens faktureringsmeddelanden till Microsofts e-p
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändra den alternativa e-postadressen för en annan administratör
 
 Du kan även ändra den alternativa e-postadressen till andra globala administratörer och faktureringsadministratörer i organisationen.
+
+::: moniker range="o365-worldwide"
   
 1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
 

@@ -24,17 +24,17 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Läs om hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106054"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045934"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Lägga till, uppdatera eller ta bort dina betalningsmetoder
 
 ::: moniker range="o365-worldwide"
-Du kan köpa produkter och tjänster från Microsoft med ett kredit- eller betalkort eller bankkonto. Du kan ange din betalningsinformation på sidan **Betalningsmetoder** eller när du gör ett köp.
+Du kan köpa produkter och tjänster från Microsoft med ett kredit- eller betalkort eller bankkonto. Du kan ange din betalningsinformation på sidan **Betalningsmetoder** eller när du gör ett inköp.
 
 Du kan bara hantera betalningsmetoder som du har lagt till.
 
@@ -45,7 +45,7 @@ Du kan bara hantera betalningsmetoder som du har lagt till.
 
 **Matchar gränssnittet som du ser inte det som beskrivs i den här artikeln?** I så fall läser du [Hantera betalningsmetoder](manage-payment-methods.md).
 
-## <a name="add-a-payment-method"></a>Lägga till en betalningsmetod
+## <a name="add-a-payment-method"></a>Lägg till en betalningsmetod
 
 1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
 2. Välj **Lägg till en betalningsmetod**.
@@ -60,13 +60,13 @@ Du kan inte ändra numret på ett befintligt kort eller bankkonto. Om kortet ell
 2. På sidan **Betalningsmetoder** väljer du kortet eller bankkontot som ska uppdateras och väljer sedan **Redigera**.
 3. Uppdatera din betalningsmetodsinformation (namn på kortet eller bankkontot, faktureringsadress, telefonnummer eller utgångsdatum) och välj sedan **Spara**.
 
-## <a name="change-a-payment-method"></a>Ändra en betalningsmetod
+## <a name="change-a-payment-method"></a>Ändra betalningsmetod
 
 Du kan ändra betalningsmetoden som används för att betala för en enskild prenumeration. Du kan också flytta alla prenumerationer från en betalningsmetod till en annan.
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>Ändra betalningsmetod som används för en enskild prenumeration
 
-1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 2. Välj den prenumeration som du vill betala för med det nya kortet eller bankkontot. Välj **Billing** **Redigera**bredvid betalningsmetoden.
 3. Välj Ändra **bredvid**din befintliga betalningsmetod .
 4. Välj en alternativ betalningsmetod på den nedrullningsbara menyn eller välj att lägga till en betalningsmetod.
@@ -89,10 +89,10 @@ Du kan bara ta bort ett kredit- eller betalkort eller bankkonto från listan öv
 
 ### <a name="delete-a-payment-method"></a>Ta bort en betalningsmetod
 
-Om din betalningsmetod inte är kopplad till några prenumerationer kan du omedelbart ta bort den.
+Om din betalningsmetod inte är kopplad till några prenumerationer kan du ta bort den direkt.
 
 1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
-2. Hovra över kortet eller bankkontot och välj sedan borttagningsikonen.
+2. Hovra över kortet eller bankkontot och välj sedan ikonen Ta bort.
 3. Längst ned i fönstret **Ta bort betalningsmetod** väljer du Ta **bort**.
 
 ### <a name="add-an-alternate-payment-method-used-to-pay-for-subscriptions"></a>Lägga till en alternativ betalningsmetod som används för att betala för prenumerationer
@@ -100,7 +100,7 @@ Om din betalningsmetod inte är kopplad till några prenumerationer kan du omede
 Om din betalningsmetod är kopplad till prenumerationer och du inte har någon alternativ betalningsmetod registrerad lägger du först till en betalningsmetod. Ändra sedan betalningsmetoden som används för att betala för prenumerationerna. Sedan kan du ta bort betalningsmetoden.
 
 1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
-2. Hovra över kortet eller bankkontot och välj sedan borttagningsikonen.
+2. Hovra över kortet eller bankkontot och välj sedan ikonen Ta bort.
 3. I fönstret **Ta bort betalningsmetod** visas befintliga prenumerationer som använder den betalningsmetoden.
 4. Välj **Lägg till en betalningsmetod**.
 5. Välj den typ av betalningsmetod du vill lägga till, ange kontoinformation och välj sedan **Lägg till**.
@@ -114,7 +114,7 @@ Om din betalningsmetod är kopplad till prenumerationer och du inte har någon a
 Om din betalningsmetod är kopplad till prenumerationer och du har minst en alternativ betalningsmetod registrerad, ändrar du först betalningsmetoden som används för att betala för prenumerationerna. Sedan kan du ta bort betalningsmetoden.
 
 1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
-2. Hovra över kortet eller bankkontot och välj sedan borttagningsikonen.
+2. Hovra över kortet eller bankkontot och välj sedan ikonen Ta bort.
 3. I fönstret **Ta bort betalningsmetod** visas befintliga prenumerationer som använder den betalningsmetoden.
 4. Välj **Ändra betalningsmetod**.
 5. Välj en alternativ betalningsmetod i listrutan och välj sedan **Ändra**.
@@ -141,7 +141,7 @@ Om din betalningsmetod är kopplad till en faktureringsprofil och även används
 2. Om du inte har någon alternativ betalningsmetod följer du stegen i [Lägg till en alternativ betalningsmetod som används för att betala för prenumerationer](#add-an-alternate-payment-method-used-to-pay-for-subscriptions).
 3. Om du redan har andra betalningsmetoder tillgängliga följer du stegen i [Ändra en betalningsmetod](#change-a-payment-method).
 
-## <a name="troubleshoot-payment-methods"></a>Felsöka betalningsmetoder
+## <a name="troubleshoot-payment-methods"></a>Felsöka betalningsmetod
 
 |**Problem**|**Felsökningssteg**|
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: Automatiserad undersökning och respons (AIR)
+title: Automatiserad undersökning och respons (AIR) - Komma igång
 keywords: AIR, autoIR, ATP, automatiserad, utredning, svar, sanering, hot, avancerad, hot, skydd
 f1.keywords:
 - NOCSH
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Kom igång med automatiska funktioner för undersökningar och svar i Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air
-ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634550"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033956"
 ---
-# <a name="automated-investigation-and-response-air"></a>Automatiserad undersökning och respons (AIR)
+# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) Plan 2 innehåller kraftfulla funktioner för automatisk undersökning och svar (AIR) som kan spara tid och ansträngning för säkerhetsoperationer. När aviseringar utlöses är det upp till säkerhetsoperationsteamet att granska, prioritera och svara på dessa aviseringar. Att hålla jämna steg med volymen av inkommande aviseringar kan vara överväldigande. Automatisera en del av detta kan hjälpa. Med AIR kan ditt säkerhetsteam fokusera på uppgifter med högre prioritet utan att förlora aviseringar som utlöses ur sikte.
 

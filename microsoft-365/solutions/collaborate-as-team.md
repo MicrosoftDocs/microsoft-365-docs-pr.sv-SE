@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Läs om hur du samarbetar med gäster i Teams.
-ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Lär dig mer om konfigurationsstegen för Microsoft 365 som krävs för att konfigurera ett team för samarbete med gäster i Teams.
+ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002198"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036013"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samarbeta med gäster i ett team
 
@@ -58,19 +59,19 @@ Lagen har en master on/off-knapp för gäståtkomst och en mängd olika inställ
 
 Kontrollera att gäståtkomst är aktiverat i Teams och gör eventuella justeringar av gästinställningarna baserat på dina affärsbehov. Tänk på att dessa inställningar påverkar alla team.
 
-![Skärmbild av inställningen för gäståtkomst i Teams](../media/teams-guest-access-toggle-on.png)
+![Skärmbild av växling för gäståtkomst i Teams](../media/teams-guest-access-toggle-on.png)
 
-Så här anger du inställningar för Teams gäståtkomst
+Att ange inställningar för gäståtkomst i Teams
 
-1. Logga in på Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com)admin center på .
-2. I den vänstra navigeringen klickar du på **Visa alla**.
-3. Klicka på **Teams** **under Administrationscenter**.
-4. Expandera inställningar för hela Organisationen för hela Organisationen i administrationscentret för Team i den vänstra **navigeringen** och klicka på **Gäståtkomst**.
+1. Logga in på Administrationscenter för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Klicka på **Visa alla** i det vänstra navigeringsfönstret.
+3. Under **Administrationscenter**klickar du på **Teams**.
+4. Expandera **Inställningar för hela organisationen** och klicka på **Gäståtkomst** i Teams Administrationscenter i vänstra navigeringsfönstret.
 5. Kontrollera att **Tillåt gäståtkomst i Teams** är inställt på **På**.
 6. Gör önskade ändringar i de ytterligare gästinställningarna och klicka sedan på **Spara**.
 
 > [!NOTE]
-> Det kan ta upp till 24 timmar innan Teams gästinställning blir aktiv när du har aktiverat den.
+> Det kan ta upp till 24 timmar för gästinställningar i Teams att bli aktiva när du har aktiverat det.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Gästinställningar för Microsoft 365 Grupper
 

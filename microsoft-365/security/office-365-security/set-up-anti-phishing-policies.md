@@ -13,13 +13,15 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om den grundläggande anti-phishing-principen i Exchange Online Protection (EOP) och de avancerade ATP-principerna mot nätfiske i Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig hur du konfigurerar skydd mot nätfiske i Microsoft 365 för att skydda din organisation från skadliga nätfiskeattacker.
+ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949387"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035338"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer för bekämpning av nätfiske i Microsoft 365
 

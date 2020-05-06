@@ -1,5 +1,5 @@
 ---
-title: Flytta domäner och inställningar från en EOP-organisation till en annan EOP-organisation
+title: Flytta domäner & inställningar från en EOP-organisation till en annan
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,17 +11,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-description: Att ändra affärskrav kan ibland kräva att en Microsoft Exchange Online Protection -organisation (EOP) (innehavare) delas upp i två separata organisationer, sammanfogar två organisationer till en eller flyttar dina domäner och EOP-inställningar från en organisation till en annan organisation.
-ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation (klientorganisation) till en annan.
+ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812960"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033968"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Flytta domäner och inställningar från en EOP-organisation till en annan EOP-organisation
 
-Att ändra affärskrav kan ibland kräva att en Microsoft Exchange Online Protection -organisation (EOP) (innehavare) delas upp i två separata organisationer, sammanfogar två organisationer till en eller flyttar dina domäner och EOP-inställningar från en organisation till en annan organisation. Att gå från en EOP-organisation till en andra EOP-organisation kan vara en utmaning, men med några grundläggande fjärrskript för Windows PowerShell och en liten mängd förberedelser kan detta uppnås med ett relativt litet underhållsfönster.
+Om du ändrar affärskrav kan det ibland krävas att en Organisation (EOP) (Microsoft Exchange Online Protection) (2019) delas upp i två separata organisationer, sammanför två organisationer till en eller att dina domäner och EOP-inställningar flyttas från en organisation till en annan organisation. Att gå från en EOP-organisation till en andra EOP-organisation kan vara en utmaning, men med några grundläggande fjärrskript för Windows PowerShell och en liten mängd förberedelser kan detta uppnås med ett relativt litet underhållsfönster.
 
 > [!NOTE]
 > Inställningar kan endast flyttas på ett tillförlitligt sätt från en EOP-fristående organisation (Standard) till antingen en annan EOP-standard eller en Exchange Enterprise CAL med Services (EOP Premium) organisation, eller från en EOP Premium-organisation till en annan EOP Premium-organisation. Eftersom vissa premiumfunktioner inte stöds i EOP Standard-organisationer kanske det inte går att flytta från en EOP Premium-organisation till en EOP Standard-organisation. <br><br> Dessa instruktioner gäller för EOP-filtreringsorganisationer. Det finns ytterligare överväganden när du flyttar från en Exchange Online-organisation till en annan Exchange Online-organisation. Exchange Online-organisationer har inte samma utrymme för dessa instruktioner.

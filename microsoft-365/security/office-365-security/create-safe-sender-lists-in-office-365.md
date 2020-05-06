@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Administratörer kan lära sig mer om de tillgängliga alternativen i Microsoft 365 och EOP som gör att inkommande meddelanden kan hoppa över skräppostfiltrering.
-ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig hur administratörer kan skapa en lista över betrodda avsändare i Microsoft 365 och EOP som gör att inkommande meddelanden kan hoppa över skräppostfiltrering.
+ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637682"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036349"
 ---
 # <a name="create-safe-sender-lists"></a>Skapa listor för betrodda avsändare
 
@@ -135,4 +137,4 @@ Om du vill förhindra att det här meddelandet filtreras kan du vidta följande 
 
 - Använd en regel för [e-postflöde](#recommended-use-mail-flow-rules) med ett villkor som `5322.From` söker efter meddelanden från `5321.MailFrom`blueyonder@news.blueyonderairlines.com (adressen, blueyonder.airlines@margiestravel.com (den ) eller båda.
 
-Mer information finns [i Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
+Mer information finns i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
