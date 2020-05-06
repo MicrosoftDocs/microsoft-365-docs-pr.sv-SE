@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlem från grupp och hanterar gruppägarstatus i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631319"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049405"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med hjälp av administrationscentret
 
@@ -276,16 +276,16 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
     
 - Om du vill lägga till hundratals eller tusentals användare i grupper använder du [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
     
-- [Tilldela en ny ägare till en överbliven grupp](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## <a name="articles-about-managing-groups"></a>Artiklar om att hantera grupper
     
 - [Uppgradera distributionslistor till Microsoft 365-grupper i Outlook](../manage/upgrade-distribution-lists.md)
     
-- [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Hantera gäståtkomst i Microsoft 365-grupper](manage-guest-access-in-groups.md)    
     
-- [Hantera Microsoft 365-grupper med PowerShell:](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)den här artikeln introducerar dig till viktiga cmdlets och ger exempel
+- [Hantera Microsoft 365-grupper med PowerShell:](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)den här artikeln introducerar dig till viktiga cmdlets och ger exempel
     
 - [Namngivningsprincip för Microsoft 365-grupper](groups-naming-policy.md)

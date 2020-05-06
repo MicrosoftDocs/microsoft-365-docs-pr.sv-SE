@@ -11,13 +11,14 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: Här är några saker du bör vara medveten om innan du börjar arbeta med EOP.
-ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Lär dig mer om Microsoft Exchange Online Protection (EOP) värd e-filtreringstjänst, inklusive hur du konfigurerar din EOP-tjänst.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ee39e051d3be0e3b27013929bdc3d3a948457c9b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032870"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036542"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 

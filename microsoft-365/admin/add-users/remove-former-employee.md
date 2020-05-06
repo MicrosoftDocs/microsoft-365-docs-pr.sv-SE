@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Följ den här checklistan om du vill ta bort en anställd från Microsoft 365 och säkra data. '
-ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617128"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045302"
 ---
 # <a name="remove-a-former-employee"></a>Ta bort en tidigare anställd
   
@@ -318,7 +318,7 @@ När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [kom
 
 
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 
 ::: moniker-end

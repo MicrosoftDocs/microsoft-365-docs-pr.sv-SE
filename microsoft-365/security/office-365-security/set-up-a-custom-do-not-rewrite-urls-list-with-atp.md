@@ -16,20 +16,22 @@ search.appverid:
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
-description: När du ställer in principerna för betrodda länkar i ATP kan du inkludera en lista över webbadresser som inte skrivs om så att vissa personer i organisationen kan besöka webbplatser som du inkluderar i listan.
-ms.openlocfilehash: 490fb3279f2c54bc6f2335510aa711866318e01d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig hur du konfigurerar anpassade blockerade webbadresser för användare och skriver inte om listan över webbadresser för en grupp användare i office 365 ATP-principer för säkra länkar.
+ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638386"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046310"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Konfigurera en anpassad lista över webbadresser som inte skrivs om med hjälp av ATP Safe Links
 
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Med [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kan din organisation ha en anpassad blockerade [webbadresser,](set-up-a-custom-blocked-urls-list-wtih-atp.md)så att när personer klickar på webbadresser (webbadresser) i e-postmeddelanden eller vissa Office-dokument, hindras de från att gå till dessa webbadresser. Din organisation kan också ha anpassade listor "skriv inte om" för specifika grupper i organisationen. En lista över "skriv inte om" gör det möjligt för vissa personer att besöka webbadresser som annars blockeras av [ATP Safe Links i Office 365](atp-safe-links.md).
+Med [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kan din organisation ha en anpassad blockerade [webbadresser,](set-up-a-custom-blocked-urls-list-atp.md)så att när personer klickar på webbadresser (webbadresser) i e-postmeddelanden eller vissa Office-dokument, hindras de från att gå till dessa webbadresser. Din organisation kan också ha anpassade listor "skriv inte om" för specifika grupper i organisationen. En lista över "skriv inte om" gör det möjligt för vissa personer att besöka webbadresser som annars blockeras av [ATP Safe Links i Office 365](atp-safe-links.md).
 
 I den här artikeln beskrivs hur du anger en lista över webbadresser som är undantagna från ATP-skanning av säkra länkar och några viktiga punkter att tänka på.
 
@@ -65,7 +67,7 @@ Om du vill redigera (eller definiera) ATP-principer måste du tilldelas en lämp
 7. När du har lagt till webbadresser väljer du **Spara**i det nedre högra hörnet av skärmen .
 
 > [!NOTE]
-> Se till att granska organisationens anpassade lista över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+> Se till att granska organisationens anpassade lista över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).
 
 ## <a name="important-points-to-keep-in-mind"></a>Viktiga punkter att tänka på
 

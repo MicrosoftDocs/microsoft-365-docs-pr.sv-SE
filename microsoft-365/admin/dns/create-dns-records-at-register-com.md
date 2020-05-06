@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register.com för Microsoft.
-ms.openlocfilehash: 7d1293368a9a7ab94a5556ca266c716280ae85f5
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939125"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048909"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Skapa DNS-poster på Register.com för Microsoft
 
@@ -123,7 +123,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.of
     
     |****Host Name****|****Priority** (prioritet)**|****E-postserver****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>  <br/>**Obs!** Hämta din \<*domännyckel*\> från ditt Microsoft-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/>  <br/>**Obs!** Hämta din \<*domännyckel*\> från ditt Microsoft-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Kopiera och klistra in värdet från tabellen](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Lägg till nya medarbetare i Microsoft 365 för företag för e-post, Skype och Office-appar.
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618902"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049503"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Lägga till en ny anställd i Microsoft 365
 
@@ -82,7 +82,7 @@ Och här är en snabb referens för att hjälpa dem att komma igång:
 |Konfigurera Skype för företag så att du kan få kontakt med medarbetare eller affärspartners i ditt företag eller runt om i världen. Du kan starta konversationer med snabbmeddelanden, röstsamtal eller videosamtal.  <br/> |[Installera Skype för företag på datorn](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Om du vill veta hur du använder Skype för företag [kan du titta på en video.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Har du konfigurerat Skype för företag så att dina anställda kan kontakta personer utanför ditt företag som använder den kostnadsfria Skype-appen? Om inte, tala om för den nya medarbetaren så att de vet vad som väntar när du använder Skype för företag.  <br/> |
 |Installera appar på din mobila enhet om du vill få e-post eller använda Skype för företag på telefonen.  <br/> |Om du vill konfigurera Outlook-mobilappen så att du kan få e-post via telefonen. Instruktioner finns [i iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx), [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx), [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Om du vill använda Skype för företag på din mobila enhet laddar du ned och installerar mobilappen. Instruktioner finns [i iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Slutför OneDrive för företag-utbildningen så att du kan lära dig hur du lagrar och organiserar dina dokument, presentationer och kalkylblad i molnet.  <br/> |Förvara dina företagsrelaterade dokument i molnet med hjälp av OneDrive för företag. Du kan alltid komma åt ditt innehåll, även om du är inloggad på Microsoft 365 på en annan dator. [Titta på ett videoklipp om du vill lära dig hur du använder din OneDrive för företag](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **Utbildning:** [OneDrive för företag-utbildning](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx) (Välj OneDrive för företag).  <br/> |
-|Slutför SharePoint Online-utbildningen som hjälper dig att samarbeta med medarbetare och dela innehåll.  <br/> |Det bästa stället att behålla dokument som dina medarbetare också kommer åt är i SharePoint Online.  <br/> <br/>**Utbildning:** [Video: Samarbeta med gruppinnehåll med SharePoint Online](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx) <br/><br/> **Ta reda på:** Hur använder din organisation SharePoint Online och vilken typ av dokument som lagras där. Vilka dokument som lagras i OneDrive för företag.  <br/> |
+|Slutför SharePoint Online-utbildningen som hjälper dig att samarbeta med medarbetare och dela innehåll.  <br/> |Det bästa stället att behålla dokument som dina medarbetare också kommer åt är i SharePoint Online.  <br/> <br/>**Utbildning:** [Video: Samarbeta med gruppinnehåll med SharePoint Online](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Ta reda på:** Hur använder din organisation SharePoint Online och vilken typ av dokument som lagras där. Vilka dokument som lagras i OneDrive för företag.  <br/> |
 
    
 ## <a name="related-articles"></a>Relaterade artiklar

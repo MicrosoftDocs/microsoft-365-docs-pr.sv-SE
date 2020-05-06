@@ -1,5 +1,5 @@
 ---
-title: ATP säkra länkar
+title: Säkra ATP-länkar
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,15 +25,15 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: Funktionen Säkra länkar ger snabb verifiering av hyperlänkar i Office-dokument och i e-postmeddelanden. Använd Säkra länkar för att skydda din organisation från nätfiske och andra attacker.
-ms.openlocfilehash: 912c2fc0e76ca39ff4d600f53386d65e43946758
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: I den här artikeln får du lära dig hur du använder Säkra länkar för att skydda din organisation från nätfiske och andra attacker.
+ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638566"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045260"
 ---
-# <a name="atp-safe-links"></a>ATP säkra länkar
+# <a name="atp-safe-links"></a>Säkra ATP-länkar
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Översikt över safe links för Office 365 ATP
 
@@ -85,7 +87,7 @@ I följande tabell beskrivs några exempelscenarier där ATP Safe Links-skydd ka
 |Jean är medlem i en grupp som har ATP Safe Links-principer som täcker webbadresser i e-post- och Office-dokument. Jean öppnar en PowerPoint-presentation som någon har skickat och klickar sedan på en URL i presentationen.  <br/> |Ja. De ATP Safe Links-principer som har definierats gäller jean:s grupp-, Jean-e-post- och Word-, Excel-, PowerPoint- eller Visio-dokument som Jean öppnar, så länge Jean är inloggad och använder Microsoft 365 Apps för företag på Windows-, iOS- eller Android-enheter.  <br/> |
 |I Chris organisation har inga globala administratörer eller säkerhetsadministratörer definierat några ATP-principer för säkra länkar ännu. Chris får ett e-postmeddelande som innehåller en webbadress till en skadlig webbplats. Chris är omedveten om webbadressen är skadlig och klickar på länken.  <br/> |Nej. Standardprincipen som täcker webbadresser för alla i organisationen måste definieras för att skyddet ska vara på plats.  <br/> |
 |I Pats organisation har inga globala administratörer eller säkerhetsadministratörer definierat eller redigerat några ATP Safe Links-principer ännu. Pat öppnar ett Word-dokument och klickar på en URL i filen.  <br/> |Nej. En princip som innehåller Office-dokument måste definieras för att skyddet ska vara på plats. Se [Konfigurera ATP-principer för säkra länkar i Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|Lees organisation har en ATP Safe `https://tailspintoys.com` Links-policy som har listats som en blockerad webbplats. Lee får ett e-postmeddelande som `https://tailspintoys.com/aboutus/trythispage`innehåller en URL till . Lee klickar på webbadressen.  <br/> |Det beror på om hela webbplatsen och alla dess undersidor ingår i listan över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).  <br/> |
+|Lees organisation har en ATP Safe `https://tailspintoys.com` Links-policy som har listats som en blockerad webbplats. Lee får ett e-postmeddelande som `https://tailspintoys.com/aboutus/trythispage`innehåller en URL till . Lee klickar på webbadressen.  <br/> |Det beror på om hela webbplatsen och alla dess undersidor ingår i listan över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Jamie, Jean kollega, skickar ett e-postmeddelande till Jean, utan att veta att e-postmeddelandet innehåller en skadlig webbadress.  <br/> |Det beror på om ATP Safe Links-principer har definierats för e-post som skickas inom organisationen. Se [Konfigurera ATP-principer för säkra länkar i Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 

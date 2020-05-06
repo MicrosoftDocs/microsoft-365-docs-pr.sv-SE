@@ -22,17 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Lär dig hur du köper ett tillägg för att lägga till ytterligare funktioner i din Microsoft 365 för företag-prenumeration. Du kan också uppdatera och ta bort ett tillägg.
 ms.custom: okr_SMB
-ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634926"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045794"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Köpa eller redigera ett tillägg
 
 Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din prenumeration. Ett tillägg ger ytterligare funktioner med den prenumeration som du köper det för.
-
 
 ## <a name="buy-an-add-on"></a>Köpa ett tillägg
 
@@ -98,22 +97,21 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>Uppdatera ett tillägg
 
-Stegen du använder för att uppdatera ett tillägg beror på om tillägget är ett traditionellt tillägg, eller ett fristående tillägg. 
+Stegen du använder för att uppdatera ett tillägg beror på om tillägget är ett traditionellt tillägg, eller ett fristående tillägg.
 
 *Traditionella tillägg* är länkade till en viss prenumeration. Om du avbryter prenumerationen avbryts även det associerade tillägget.
   
-*Fristående tillägg* är inte länkade till en viss prenumeration. Fristående tillägg visas som en separat prenumeration på sidan Prenumerationer (eller på sidan **Produkter & tjänster** i det nya administrationscentret) och har ett eget **utgångsdatum.** Du hanterar ett fristående tillägg på samma sätt som du hanterar andra prenumerationer.
+*Fristående tillägg* är inte länkade till en viss prenumeration. Fristående tillägg visas som en separat prenumeration på sidan **Dina produkter** och har ett eget utgångsdatum. Du hanterar ett fristående tillägg på samma sätt som du hanterar andra prenumerationer.
   
 ### <a name="update-a-traditional-add-on"></a>Uppdatera ett traditionellt tillägg
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
-2. På sidan **Produkter & tjänster** väljer du den prenumeration som du vill uppdatera ett tillägg för.
+2. På sidan **Dina produkter** väljer du den prenumeration som du vill uppdatera ett tillägg för.
 
 3. Välj **Tillägg**. De tillägg som du har köpt visas.
 
@@ -122,7 +120,6 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 5. Ange den kvantitetsändring som du vill använda för prenumerationen och välj sedan **Skicka ändring**.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -134,7 +131,7 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
     Tilläggen du har köpt visas och under varje tillägg visas länken **Ändra antal**.
 
-4. Välj länken **Ändra kvantitet** för det tillägg som du vill uppdatera. 
+4. Välj länken **Ändra kvantitet** för det tillägg som du vill uppdatera.
 
     ![Länkarna Tilläggsprogram och Ändra antal.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -157,7 +154,7 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
     Tilläggen du har köpt visas och under varje tillägg visas länken **Ändra antal**.
 
-4. Välj länken **Ändra kvantitet** för det tillägg som du vill uppdatera. 
+4. Välj länken **Ändra kvantitet** för det tillägg som du vill uppdatera.
 
     ![Länkarna Tilläggsprogram och Ändra antal.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -175,9 +172,9 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
-2. På sidan **Produkter & tjänster** väljer du den tilläggsprenumeration som du vill uppdatera och väljer sedan Lägg **till/ta bort licenser**.
+2. På sidan **Dina produkter** väljer du den tilläggsprenumeration som du vill uppdatera och väljer sedan **Lägg till/ta bort licenser**.
 
 3. Ange antalet licenser som du behöver i rutan och välj sedan **Skicka ändring**.
 
@@ -213,7 +210,6 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>Ta bort ett tillägg
 
 Du kan avsluta ett fristående tillägg på samma sätt som du [avbryter en prenumeration](subscriptions/cancel-your-subscription.md). Du kan även avaktivera **automatisk förnyelse** för ett fristående tillägg med hjälp av stegen ovan. Du kan inte dock ta bort ett traditionellt tillägg efter att det har köpts. Om du behöver ta bort ett traditionellt tillägg kontaktar du [supporten för att få hjälp](../admin/contact-support-for-business-products.md).
@@ -235,7 +231,7 @@ Information om tillägg till Skype för företag finns i [tilläggslicensieringe
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Extra File Storage  <br/> | Microsoft 365-appar för företag  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office för webben med SharePoint-abonnemang 1  <br/>  Office för webben med SharePoint-abonnemang 2  <br/>  SharePoint Online (abonnemang 1)  <br/>  SharePoint Online (abonnemang 2)  <br/> |
 |Telefonsystem  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise, E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Ljudkonferenser  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise, E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 utan ljudkonferenser <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Ljudkonferens  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise, E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 utan ljudkonferenser <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Kommunikationskrediter  <br/> | Office 365 Enterprise E5  <br/> |
 |Inrikes samtalsplan <br/> | Office 365 Enterprise E5  <br/> |
 |Internationell samtalsplan  <br/> | Office 365 Enterprise E5  <br/> |

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Läs om hur du avbryter din Microsoft 365 för företagstestversion eller betald prenumeration.
-ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708089"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046210"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
@@ -43,7 +43,7 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Leta reda på den prenumeration som du vill avbryta och välj **Avbryt prenumeration**under Inställningar **& Åtgärder**.
 

@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Läs om hur du stänger ditt konto hos Microsoft.
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942859"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045782"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -40,7 +40,7 @@ Om din organisation använder Active Directory som synkroniseras med Azure AD ta
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Steg 2: Avbryta alla aktiva prenumerationer
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Om prenumerationslistan finns i **tabellvyn** väljer du **Kort**till höger .
 
@@ -52,7 +52,7 @@ Om din organisation använder Active Directory som synkroniseras med Azure AD ta
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Steg 3: Ta bort alla inaktiverade prenumerationer
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Om prenumerationslistan finns i **tabellvyn** väljer du **Kort**till höger .
 
