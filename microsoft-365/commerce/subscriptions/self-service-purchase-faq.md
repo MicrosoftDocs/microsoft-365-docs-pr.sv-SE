@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Hitta svar på vanliga frågor om självbetjäningsköp.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 26b6e11a6c992f85b136d05269cefb80f233b11f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636553"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046162"
 ---
 # <a name="self-service-purchase-faq"></a>Vanliga frågor om självbetjäningsköp
 
@@ -119,7 +119,7 @@ Administratörer kan tilldela befintliga licenser eller köpa ytterligare prenum
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>Var ser administratören självbetjäningsköp?
 
-Globala administratörer och faktureringsadministratörer kan se prenumerationer som köpts via självbetjäningsköp i **Faktureringsprodukter** > **& tjänster** i Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">365-administrationscentret</a> tillsammans med alla andra prenumerationer som köpts via central upphandling. De kan filtrera listan till bara de prenumerationer som köpts via central upphandling eller inkludera prenumerationer som köpts via självbetjäningsköp.
+Globala administratörer och faktureringsadministratörer kan se prenumerationer som köpts via självbetjäningsköp i **Fakturering** > **Dina produkter** i Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">365-administrationscentret</a> tillsammans med alla andra prenumerationer som köpts via central upphandling. De kan filtrera listan till bara de prenumerationer som köpts via central upphandling eller inkludera prenumerationer som köpts via självbetjäningsköp.
 
 Administratörer kan se produkten, köparens namn, köpt prenumeration, utgångsdatum, orderhistorik, inköpspris och tilldelade användare.
 

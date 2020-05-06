@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Läs om hur du uppgraderar till en ny prenumeration.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796518"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046222"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang 
 
@@ -42,7 +42,7 @@ När ditt företag ändras, eller om du behöver fler funktioner, kan du uppgrad
 
 När du använder fliken **Uppgradera** leds du genom processen att köpa ett nytt abonnemang. Alla användare tilldelas automatiskt licenser i det nya abonnemanget och din gamla plan avbryts åt dig.
 
-1. Gå till sidan **Faktureringsprodukter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Välj den prenumeration som du vill uppgradera.
 
@@ -59,7 +59,7 @@ När du använder fliken **Uppgradera** leds du genom processen att köpa ett ny
 
 7. När du är klar väljer du **Beställ**.
 
-När du är klar med kassan kan det ta några minuter att slutföra uppgraderingen. Du kan börja använda din nya prenumeration direkt. Välj **Kontrollera uppgraderingsstatus** för att kontrollera förloppet för uppgraderingen. Du får ett meddelande när uppgraderingen är klar. Meddelandet visas på sidan **Produkter & tjänster** bredvid din nya prenumeration.
+När du är klar med kassan kan det ta några minuter att slutföra uppgraderingen. Du kan börja använda din nya prenumeration direkt. Välj **Kontrollera uppgraderingsstatus** för att kontrollera förloppet för uppgraderingen. Du får ett meddelande när uppgraderingen är klar. Meddelandet visas på sidan **Dina produkter** bredvid din nya prenumeration.
 
 ## <a name="the-upgrade-tab-is-empty"></a>Fliken Uppgradera är tom
 
@@ -137,7 +137,7 @@ Om du har ett tillägg med din prenumeration kanske du kan [ändra abonnemang ma
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>Din prenumeration har ett obetalt saldo
 
-Lös detta genom att hitta prenumerationen på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter & tjänster</a> och välj länken Betala **nu** i avsnittet **Fakturering.** När betalningen har gjorts kontrollerar du fliken **Uppgradera** igen.
+Lös problemet genom att hitta prenumerationen på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a> och välja länken **Betala nu** i avsnittet **Fakturering.** När betalningen har gjorts kontrollerar du fliken **Uppgradera** igen.
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Vad gör uppgradering av en plan för min tjänst och fakturering?
 

@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Funktionen Säkra länkar ger snabb verifiering av hyperlänkar i Office-dokument och i e-postmeddelanden. Läs den här artikeln om du vill veta hur ATP Safe Links fungerar.
-ms.openlocfilehash: 7887c3c2920f472d4baa7ff899c3e3b4f704385d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: e79c44b91eb5de7564058b4dc50c94d2a4223f08
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943717"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046370"
 ---
 # <a name="how-atp-safe-links-works"></a>Så fungerar ATP – säkra länkar
 > [!IMPORTANT] 
@@ -43,7 +43,7 @@ På en hög nivå fungerar så här [för ATP Safe Links-skydd](atp-safe-links.m
     
 6. Funktionen FÖR betrodda LÄNKAR i ATP kontrollerar omedelbart webbadressen innan webbplatsen öppnas. WEBBADRESSEN identifieras som blockerad, skadlig eller säker.
         
-   - Om webbadressen är till en webbplats som ingår i organisationens [anpassade blockerade webbadresser öppnas](set-up-a-custom-blocked-urls-list-wtih-atp.md)en [varningssida.](atp-safe-links-warning-pages.md) 
+   - Om webbadressen är till en webbplats som ingår i organisationens [anpassade blockerade webbadresser öppnas](set-up-a-custom-blocked-urls-list-atp.md)en [varningssida.](atp-safe-links-warning-pages.md) 
     
    - Om webbadressen är till en webbplats som har fastställts vara skadlig öppnas en [varningssida.](atp-safe-links-warning-pages.md) 
     
@@ -61,7 +61,7 @@ På en hög nivå fungerar så här för [ATP Safe Links-skydd](atp-safe-links.m
     
 3. När användaren klickar på en URL i dokumentet kontrolleras länken av tjänsten ATP Safe Links.
     
-   - Om webbadressen är till en webbplats som ingår i organisationens [anpassade blockerade webbadresser](set-up-a-custom-blocked-urls-list-wtih-atp.md)visas användaren på en [varningssida](atp-safe-links-warning-pages.md).
+   - Om webbadressen är till en webbplats som ingår i organisationens [anpassade blockerade webbadresser](set-up-a-custom-blocked-urls-list-atp.md)visas användaren på en [varningssida](atp-safe-links-warning-pages.md).
     
    - Om webbadressen är till en webbplats som har fastställts vara skadlig, tas användaren till en [varningssida](atp-safe-links-warning-pages.md).
     

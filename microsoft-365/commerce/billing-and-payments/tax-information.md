@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Ta reda på hur mycket skatt du debiteras för din Microsoft 365 för företag-prenumeration i olika regioner. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708137"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045830"
 ---
 # <a name="tax-information"></a>Momsinformation
 
@@ -114,7 +114,7 @@ Du kan vara berättigad till momsbefrielse:
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Så här anger du ditt momsregistreringsnummer (endast EU-länder)
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Hitta prenumerationskortet för den prenumeration som du vill uppdatera.
 

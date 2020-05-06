@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor.
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943549"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046358"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
@@ -67,9 +67,9 @@ Det tar bara några minuter att tillämpa dessa principer, men var beredd att st
 
 |Planera  |Rekommendation  |
 |---------|---------|
-|Microsoft 365-abonnemang (utan Azure AD P1 eller P2)     |[Aktivera säkerhetsstandarder i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Som standard i Azure AD ingår MFA för användare och administratörer.   |
-|Microsoft 365 E3 (med Azure AD P1)     | Använd [vanliga principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (med Azure AD P2)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning principer för villkorlig åtkomst och relaterade principer](../enterprise/identity-access-policies.md) genom att skapa följande två principer:<br> - [Kräv MFA när inloggningsrisken är medelhög eller hög](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte stöder modern autentisering](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Högriskanvändare måste ändra lösenord](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365-abonnemang (utan Azure AD P1 eller P2)     |[Aktivera standardinställningar för säkerhet i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Standardinställningar för säkerhet i Azure AD inkluderar MFA för användare och administratörer.   |
+|Microsoft 365 E3 (med Azure AD P1)     | Använd [vanliga principer för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) för att konfigurera följande principer: <br>- [Kräv MFA för administratörer](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Kräv MFA för alla användare](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockera äldre autentisering](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (med Azure AD P2)     | Dra nytta av Azure AD Identity Protection och börja implementera Microsofts [rekommenderade uppsättning av villkorsstyrd åtkomst och relaterade principer](../enterprise/identity-access-policies.md) genom att skapa de två principerna:<br> - [Kräv MFA när inloggningsrisker är medel eller hög](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockera klienter som inte har stöd för modern autentisering](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Användare med hög risk måste byta lösenord](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -100,7 +100,7 @@ Den globala administratören kan konfigurera följande skydd:
 - [Konfigurera ATP-säkra länkar](office-365-security/set-up-atp-safe-links-policies.md)
 - [Konfigurera ATP-principer för säkra bifogade filer](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [Konfigurera en anpassad lista med URL-adresser som inte ska skrivas om](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Konfigurera en anpassad lista med blockerade URL-adresser](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Konfigurera en anpassad lista med blockerade URL-adresser](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 Du måste arbeta med Exchange Online-administratören och SharePoint Online-administratören för att konfigurera ATP för dessa arbetsbelastningar:
 - [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ När du har konfigurerat en eller flera av dina avancerade hotskyddstjänster ak
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: Konfigurera Intune-skydd för mobilappar för telefoner och surfplattor
 
 Med Microsoft Intune Mobile Application Management (MAM) kan du hantera och skydda organisationens data på telefoner och surfplattor utan att hantera dessa enheter. Så här fungerar det:
-- Du skapar en APP (App) som avgör vilka appar på en enhet som hanteras och vilka beteenden som tillåts (till exempel förhindra att data från en hanterad app kopieras till en ohanterad app). Du skapar en princip för varje platorm (iOS, Android).
+- Du skapar en APP (App) som avgör vilka appar på en enhet som hanteras och vilka beteenden som tillåts (till exempel förhindra att data från en hanterad app kopieras till en ohanterad app). Du skapar en princip för varje plattform (iOS, Android).
 - När du har skapat appskyddsprinciperna tillämpar du dessa genom att skapa en regel för villkorlig åtkomst i Azure AD för att kräva godkända appar och APP-dataskydd.
 
 APP-skyddsprinciper innehåller många inställningar. Lyckligtvis behöver du inte lära dig om varje inställning och väga alternativen. Microsoft gör det enkelt att tillämpa en konfiguration av inställningar genom att rekommendera startpunkter. [Ramverket för dataskydd med hjälp av appskyddsprinciper](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) innehåller tre nivåer du kan välja mellan. 
@@ -154,7 +154,8 @@ Använd vägledningen i [Uppdatera de gemensamma principerna för att tillåta o
 
 Intune-principerna för skydd av mobilappar som du har skapat, tillsammans med regeln om villkorlig åtkomst för att kräva godkända appar och APP-skydd, gäller för gästkonton och hjälper till att skydda dina organisationsdata. 
 
-**Om**du redan har registrerat datorer i enhetshantering för att kräva kompatibla datorer måste du också utesluta gästkonton från regeln om villkorlig åtkomst som tillämpar enhetsefterlevnad. 
+> [!NOTE]
+> Om du redan har registrerat datorer i enhetshantering för att kräva kompatibla datorer måste du också utesluta gästkonton från regeln om villkorlig åtkomst som framtvingar enhetsefterlevnad. 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: Registrera datorer i enhetshantering och kräver kompatibla datorer
@@ -179,12 +180,12 @@ Om du snabbt gör det möjligt för huvuddelen av dina anställda att arbeta hem
 
 Nätverkselement som VPN-koncentratorer, central nätverksutgående utrustning (t.ex. proxyservrar och dataförlustskydd), central internetbandbredd, backhaul MPLS-kretsar, NAT-kapacitet och så vidare utsätts plötsligt för enorma påfrestningar på grund av belastningen på hela verksamheten som använder dem. Slutresultatet är dålig prestanda och produktivitet i kombination med en dålig användarupplevelse för användare som anpassar sig till att arbeta hemifrån.
 
-Vissa av de skydd som traditionellt har tillhandahållits genom att dirigera trafik tillbaka via ett företagsnätverk tillhandahålls av molnapparna som användarna har åtkomst till. Om du har nått det här steget i den här artikeln har du implementerat en uppsättning avancerade molnsäkerhetskontroller för Microsoft 365-tjänster och data. Med dessa kontroller på plats kan du vara redo att dirigera fjärranvändares trafik direkt till Office 365. Om du fortfarande behöver en VPN-länk för åtkomst till andra program kan du avsevärt förbättra din prestanda och användarupplevelse genom att implementera delad tunnel. När du uppnår enighet i din oganization, kan detta ske inom en dag av en väl samordnad nätverk team.
+Vissa av de skydd som traditionellt har tillhandahållits genom att dirigera trafik tillbaka via ett företagsnätverk tillhandahålls av molnapparna som användarna har åtkomst till. Om du har nått det här steget i den här artikeln har du implementerat en uppsättning avancerade molnsäkerhetskontroller för Microsoft 365-tjänster och data. Med dessa kontroller på plats kan du vara redo att dirigera fjärranvändares trafik direkt till Office 365. Om du fortfarande behöver en VPN-länk för åtkomst till andra program kan du avsevärt förbättra din prestanda och användarupplevelse genom att implementera delad tunnel. När du har enats i din organisation kan detta ske inom en dag av ett väl koordinerat nätverksteam.
 
 
 Mer information finns i de här resurserna för dokument:
 - [Översikt: Optimera anslutningen för fjärranvändare med VPN-delad tunnel](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementera DELAD VPN-tunnel för Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implementera delad VPN-tunnel för Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Senaste blogg artiklar om detta ämne:
 - [Så här optimerar du snabbt trafiken för fjärrpersonal & minskar belastningen på infrastrukturen](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)

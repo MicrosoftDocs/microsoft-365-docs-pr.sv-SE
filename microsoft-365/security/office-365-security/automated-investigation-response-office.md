@@ -1,5 +1,5 @@
 ---
-title: Automatiserad undersökning och respons (AIR)
+title: Översikt över automatisk undersökning och respons (AIR)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air
-ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638554"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035622"
 ---
-# <a name="automated-investigation-and-response-air"></a>Automatiserad undersökning och respons (AIR)
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>En översikt över automatisk undersökning och svar (AIR) i Microsoft 365
 
 När säkerhetsaviseringar utlöses är det upp till säkerhetsoperationsteamet att titta på dessa aviseringar och vidta åtgärder för att skydda din organisation. Ibland kan säkerhetsoperationsteam känna sig överväldigade av mängden aviseringar som utlöses. Automatiserade funktioner för undersökning och svar (AIR) kan hjälpa till. AIR gör det möjligt för ditt säkerhetsteam att arbeta mer effektivt och ändamålsenligt. AIR-funktioner inkluderar automatiserade undersökningsprocesser som svar på välkända hot som finns idag. Lämpliga åtgärder väntar på godkännande, så att säkerhetsoperationsgruppen kan svara på upptäckta hot. 
 

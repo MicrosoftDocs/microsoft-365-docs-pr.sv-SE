@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att hantera Microsoft 365-grupper, till exempel lägga till ta bort gruppmedlemmar, redigera e-postadressen, gruppnamnet eller beskrivningen och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630399"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049209"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrationscentret för Microsoft 365
 
@@ -194,7 +194,7 @@ Det här alternativet är bra om du vill ha ett företags e-postadress som info@
 
 [Skapa en Microsoft 365-grupp](create-groups.md)
 
-[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Välj vilken domän som ska användas när Microsoft 365-grupper skapas](choose-domain-to-create-groups.md)
 
@@ -202,4 +202,4 @@ Det här alternativet är bra om du vill ha ett företags e-postadress som info@
 
 [Uppgradera distributionslistor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
 
-[Hantera Microsoft 365-grupper med PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Hantera Microsoft 365-grupper med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)

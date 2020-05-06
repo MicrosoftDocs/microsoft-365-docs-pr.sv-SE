@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
-description: För att hjälpa till med det första steget för att skydda din information, från och med juli 2018 alla Azure Information Protection berättigade klienter kommer att ha skyddsfunktioner i Azure Information Protection aktiverat som standard. Skyddsfunktionerna i Azure Information Protection var tidigare kända i Office 365 som Rights Management eller Azure RMS. Om din organisation har en Office E3-serviceplan eller en högre serviceplan får du nu ett försprång som skyddar information via Azure Information Protection när vi distribuerar dessa funktioner.
-ms.openlocfilehash: 3efdeefd2008a5ff9f730b879190d1edc015803a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln beskrivs de ändringar som distribueras till skyddsfunktionerna i Azure Information Protection
+ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638278"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035610"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Skyddsfunktioner i Azure Information Protection distribueras till befintliga klienter
 

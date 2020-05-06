@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Läs om hur du planerar för styrning av Microsoft 365-grupper.
-ms.openlocfilehash: 95cd549fea6646639386d33e5a026f60b3ccbbba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617140"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049417"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planera för styrning i grupp
 
@@ -50,10 +50,10 @@ Det finns tre huvudsakliga kommunikationsmetoder som stöds av Microsoft 365 Gro
 > Genom att skapa en ny grupp via andra teamwork-program – till exempel SharePoint, Planner eller Stream – skapas en grupp med en Outlook-inkorg och möjligheten att ansluta till Microsoft Teams.
 
 Beroende på var en grupp skapas etableras vissa resurser automatiskt, till exempel:
-- [Inkorg](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) - För e-postkonversationer mellan gruppmedlemmar. Den här inkorgen har en e-postadress och kan ställas in för att acceptera meddelanden från personer utanför gruppen och även utanför organisationen, ungefär som en traditionell distributionslista.
+- [Inkorg](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) - För e-postkonversationer mellan gruppmedlemmar. Den här inkorgen har en e-postadress och kan ställas in för att acceptera meddelanden från personer utanför gruppen och även utanför organisationen, ungefär som en traditionell distributionslista.
  - [Kalender](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) – För schemaläggning av händelser relaterade till gruppen
 - [SharePoint-gruppwebbplats](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) – En central databas för information, länkar och innehåll som rör din grupp
-- [SharePoint-dokumentbibliotek](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403) – En central plats för gruppen att lagra och dela filer
+- [SharePoint-dokumentbibliotek](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403) – En central plats för gruppen att lagra och dela filer
 - [OneNote-anteckningsbok](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – För att samla in idéer, forskning och information
 - [Planerare](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – För att tilldela och hantera projektaktiviteter bland gruppmedlemmarna
 - [Yammer-gruppen](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – En vanlig plats att föra konversationer och dela information
@@ -81,7 +81,7 @@ Det finns flera platser där du kan föra en konversation i Microsoft 365. Att f
 
 - Outlook-grupper: modern DL (e-postbaserat samarbete)
   - Allestädes närvarande för riktad kommunikation
-  - Uppgradera DLs till Microsoft 365-grupper – [Varför ska du uppgradera?](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - Uppgradera DLs till Microsoft 365-grupper – [Varför ska du uppgradera?](https://support.microsoft.com/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - SharePoint – Core-innehållssamarbete för alla Microsoft 365-grupper
   - Varje grupp får en ansluten SharePoint-gruppwebbplats
@@ -119,7 +119,7 @@ Det finns tre primära modeller för etablering i grupper: öppna, IT-ledda och 
 | -------------- | ------------------------------------------------------------ |
 | Öppna (standard) | Användare kan skapa sina egna grupper efter behov utan att behöva vänta på, eller bry sig om IT. |
 | IT-ledda         | Användare begär en grupp från IT. IT kan vägleda dem i valet av de bästa samarbetsverktygen för deras behov. |
-| Kontrollerade     | Gruppskapande begränsat till specifika personer, team eller tjänster. Mer information finns i [Hantera vem som kan skapa Microsoft 365-grupper](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618). |
+| Kontrollerade     | Gruppskapande begränsat till specifika personer, team eller tjänster. Mer information finns i [Hantera vem som kan skapa Microsoft 365-grupper](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups). |
 
 Din organisation kan ha särskilda krav för att implementera strikta kontroller för vem som kan skapa grupper. Använd följande tabell för att fatta beslut om vilken etableringsmodell som passar din organisation.
 
@@ -154,7 +154,7 @@ Om du har tagit bort en Microsoft 365-grupp har den som standard behållits i 30
 >Om en användare försöker komma åt webbplatsen under perioden "mjuk borttagning" får de ett meddelande med 403 - Förbjudet. Om användaren försöker komma åt webbplatsen efter den här perioden får de ett meddelande med 404 - Hittades inte
 
 #### <a name="resources"></a>*Resurser*
-- [Återställa en borttagen Microsoft 365-grupp](https://support.office.com/article/Restore-a-deleted-Office-365-Group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54?ui=en-US&rs=en-001&ad=US)
+- [Återställa en borttagen Microsoft 365-grupp](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Återställa en borttagen Microsoft 365-grupp i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Ta bort grupper med hjälp av cmdleten Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
@@ -207,7 +207,7 @@ När du har angett att en grupp ska upphöra att gälla:
 >När du ändrar förfalloprincipen beräknas tjänsten om förfallodatumet för varje grupp. Den börjar alltid räkna från det datum då gruppen skapades och tillämpar sedan den nya förfalloprincipen.
 
 #### <a name="resources"></a>*Resurser*
-- [Microsoft 365-gruppens förfalloprincip](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+- [Förfalloprincip för Microsoft 365-grupper](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Konfigurera principen för förfallodatum för Microsoft 365-grupper](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
 ### <a name="group-guest-access"></a><a name="group-guest-access"></a>Grupp gäståtkomst
@@ -273,7 +273,7 @@ I åratal har organisationer förlitat sig på distributionsgrupper för att kom
 
 #### <a name="resources"></a>*Resurser*
 - [Uppgradera distributionslistor (DL) till grupper i Outlook](https://aka.ms/whyupgradedls)
-- Uppgradera med ett klick via Administrationscenter för Exchange eller via [PowerShell-skript](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
+- Uppgradera med ett klick via Administrationscenter för Exchange eller via [PowerShell-skript](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)
 - [Migrera distributionslistor till Microsoft 365-grupper – hjälp med administratörer](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [Ansluta befintliga SharePoint-webbplatser till Microsoft 365-grupper:](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [Analysera och använda skannerdata](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
@@ -296,8 +296,8 @@ Instrumentpanelen Microsoft 365 Reports visar aktivitetsöversikten för Microso
 
 
 #### <a name="resources"></a>*Resurser*
-- [Microsoft 365-rapporter i administrationscentret](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
-- [Innehållspaket för office 365-införande](https://support.office.com/article/Office-365-Adoption-Content-Pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+- [Microsoft 365-rapporter i administrationscentret](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Innehållspaket för office 365-införande](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics)
 - [Innehållspaket för Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
 - [Aktivitets-API för Microsoft Graph-grupper](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/office_365_groups_activity_reports)
 - [Microsoft 365 Groups-rapport (enhetliga grupper)](https://gallery.technet.microsoft.com/office/Office-365-Groups-Report-7e3e161b)
@@ -318,8 +318,8 @@ Tänk dig en organisation som har distribuerat Microsoft 365 med minst Exchange 
 
 | Scenen | Beskrivning |
 | --------------- | ------------------------------------------------------------ |
-| Vägledning |<ul><li>Överväg en etableringsmodell för självbetjäning.</li><li> Grupper i Outlook & SharePoint-webbplatser är [privata som standard](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395).</li><li> Grupper kan skapas genom att uppgradera befintliga distributionslistor (DLs) antingen en efter en eller i grupp via PowerShell. Se [Uppgradera distributionslistor till Microsoft 365 Groups](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F).</li><li> Aktivera gäståtkomst men styr med hjälp av tillåt/blockera gästdomäner.</li><li> Använd grupprapportering för att få insikter om hur användare använder grupper.</li><li> Överväg att skapa ett Microsoft Teams-team för hela organisationen som ett sätt för alla att vara en del av ett enda team för samarbete. </li></ul>|
-| Nästa steg      |<ul><li>Överväg att använda [platsdesign och platsskript](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) för att definiera standarddesignen för kontroller med hjälp av de åtgärder som definierats i [JSON-schemareferensen](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Granska [grupper som rapporterar](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</li><li>Spåra totala grupper och inaktiva/aktiva grupper.</li><li>Spåra både Exchange- och SharePoint-lagring som används.</li><li>Visa gruppaktivitet över grupppostlådkonversationer, gruppwebbplats/filaktivitet osv.</li></ul> |
+| Vägledning |<ul><li>Överväg en etableringsmodell för självbetjäning.</li><li> Grupper i Outlook & SharePoint-webbplatser är [privata som standard](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395).</li><li> Grupper kan skapas genom att uppgradera befintliga distributionslistor (DLs) antingen en efter en eller i grupp via PowerShell. Se [Uppgradera distributionslistor till Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).</li><li> Aktivera gäståtkomst men styr med hjälp av tillåt/blockera gästdomäner.</li><li> Använd grupprapportering för att få insikter om hur användare använder grupper.</li><li> Överväg att skapa ett Microsoft Teams-team för hela organisationen som ett sätt för alla att vara en del av ett enda team för samarbete. </li></ul>|
+| Nästa steg      |<ul><li>Överväg att använda [platsdesign och platsskript](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) för att definiera standarddesignen för kontroller med hjälp av de åtgärder som definierats i [JSON-schemareferensen](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Granska [grupper som rapporterar](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups).</li><li>Spåra totala grupper och inaktiva/aktiva grupper.</li><li>Spåra både Exchange- och SharePoint-lagring som används.</li><li>Visa gruppaktivitet över grupppostlådkonversationer, gruppwebbplats/filaktivitet osv.</li></ul> |
 
 ### <a name="medium-sized-business"></a>Medelstora företag
 Utöver ovanstående rekommendationer bör följande gäller för medelstora företag som har distribuerat Microsoft 365 med minst en Enterprise E3/E5 med Azure Active Directory Premium P1-licenser.

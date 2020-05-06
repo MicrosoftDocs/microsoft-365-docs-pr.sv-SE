@@ -1,6 +1,6 @@
 ---
 title: Distribuera hotskyddsfunktioner i Microsoft 365
-description: Lär dig hur du distribuerar hotskyddsfunktioner på Microsoft 365 E5.
+description: Lär dig hur du distribuerar tjänster och funktioner för hotskydd på Microsoft 365 E5.
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 81b069bb5c316bea211bee98c293f2d1fcdd2422
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016102"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046268"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera hotskyddsfunktioner i Microsoft 365
 
@@ -48,7 +48,16 @@ Följande bild visar en rekommenderad sökväg för distribution av dessa enskil
 
 ![M365 hotskyddssignaler](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-Organisationer med flera säkerhetsteam kan implementera dessa funktioner parallellt.
+|Lösning/funktioner  |Beskrivning  |
+|---------|---------|
+|Multifaktorautentisering och villkorsstyrd åtkomst     |Skydda mot komprometterade identiteter och enheter. Börja med detta skydd eftersom det är grundläggande. Konfigurationen som rekommenderas i den här vägledningen innehåller Azure AD Identity Protection som en förutsättning.     |
+|Azure Advanced Threat Protection     |  En molnbaserad säkerhetslösning som utnyttjar dina lokala Active Directory-signaler för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga insideråtgärder som riktas mot din organisation. Fokusera på detta nästa eftersom det skyddar din on-prem och din molninfrastruktur, har inga beroenden eller förutsättningar och kan ge omedelbar nytta.       | 
+|Office 365 Avancerat skydd     | Skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (webbadresser) och samarbetsverktyg. Skydd för skadlig kod, nätfiske, förfalskning och andra angreppstyper. Detta rekommenderas härnäst eftersom ändringskontroll, migrerande inställningar från det etablerade systemet och andra överväganden kan ta längre tid att distribuera. <br><br>Se till att du även konfigurerar hotskyddsfunktionerna som ingår i alla Office 365-prenumerationer (Exchange Online Protection).       |
+|Microsoft Defender Avancerat skydd    | En slutpunktsskyddsplattform som hjälper till att förebygga, upptäcka, undersöka och svara på avancerade hot. Detta tar längre tid att distribuera, men kan göras parallellt med de andra funktionerna om andra administratörer är ansvariga.   |
+|Microsoft Cloud App Security     |   En molnåtkomstsäkerhetsmäklare för identifiering, undersökning och styrning. Du kan aktivera detta tidigt för att börja samla in data och insikter. Implementering av information och annat riktat skydd i dina SaaS-appar innebär planering och kan ta längre tid.       | 
+
+> [!TIP]
+> Organisationer med flera säkerhetsteam kan implementera dessa funktioner parallellt.
 
 ## <a name="deploy-your-threat-protection-solution"></a>Distribuera din hotskyddslösning
 

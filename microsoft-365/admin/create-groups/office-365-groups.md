@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om Microsoft 365-grupper.
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630049"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049173"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365-grupper för administratörer
 
@@ -79,7 +79,7 @@ Följande begränsningar gäller för Microsoft 365-grupper:
 |Fillagring|1 Terabyte + 10 GB per prenumererad användare + eventuellt extra lagringsutrymme som köpts. Du kan köpa ett obegränsat antal ytterligare lagringsutrymme.|
 |Storlek på grupppostlåda|50 GB|
 
-Det maximala standardantalet Microsoft 365-grupper som en organisation kan ha är 500 000, men kan ökas med begäran. Mer information om begränsningar för Microsoft 365 Groups finns i [Microsoft 365 Groups - Admin help](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+Det maximala standardantalet Microsoft 365-grupper som en organisation kan ha är 500 000, men kan ökas med begäran. Mer information om begränsningar för Microsoft 365 Groups finns i [Microsoft 365 Groups - Admin help](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Det är mer effektivt att hantera dina Microsoft 365-grupper när du har användbar information om gruppanvändning. Microsoft 365-administrationscentret har ett rapporteringsverktyg som kan du se saker som lagringsanvändning, hur många aktiva grupper du har och till och med hur användarna använder grupperna. Mer information finns [i Microsoft 365-rapporter i administrationscentret.](../activity-reports/office-365-groups.md)
 

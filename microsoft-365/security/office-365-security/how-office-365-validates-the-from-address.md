@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Lear om kraven på Från e-postadresser för inkommande meddelanden i Microsoft 365. Från och med november 2017 kräver tjänsten nu RFC-kompatibla Från-adresser för att förhindra förfalskning.
-ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: För att förhindra nätfiske kräver Microsoft 365 och Outlook.com nu RFC-kompatibilitet för Från:-adresser.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633984"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034088"
 ---
 # <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Som global administratör kan du använda Attack Simulator för att köra realistiska attackscenarier i din organisation. Detta kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack träffar ditt företag.
-ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig hur du använder Attack Simulator för att köra simulerade nätfiske- och lösenordsattacker i din Microsoft 365 E5- eller ATP Plan 2-organisation.
+ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638578"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035864"
 ---
 # <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
 
@@ -29,13 +31,13 @@ ms.locfileid: "43638578"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- & Compliance Center genom <https://protection.office.com/>att gå till . Attack simulator finns på **Threat management** \> **Attack simulator**.
+- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attack simulator finns på **Threat management** \> **Attack simulator**.
 
   ![Hothantering - Attack Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
 - Mer information om tillgängligheten för Attack Simulator för olika Microsoft 365-prenumerationer finns i [office 365-tjänstbeskrivning för avancerat skydd mot hot](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Ditt konto måste konfigureras för MFA (Multi Factor Authentication) för att skapa och hantera kampanjer i Attack Simulator. Instruktioner finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919511"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048789"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Skapa DNS-poster på valfri DNS-värd
 
@@ -41,7 +41,7 @@ Om du inte känner till DNS-värden eller domänregistratorn för din domän kan
 Om du vill konfigurera posterna själv är det de här posterna som ska läggas till. Observera att verifieringsposten och MX-posten är unika för domänen. Om du vill konfigurera dem måste du skaffa och använda ett särskilt "token"-värde för din domän. I anvisningarna nedan förklaras hur du gör det.
   
 > [!IMPORTANT]
-> Det exakta namnet på rutorna eller *fälten* som du skriver eller klistrar in information i, för att skapa varje typ av DNS-post, skiljer sig åt för varje DNS-värd. Det kan finnas hjälp på DNS-värdens webbplats som kan hjälpa dig att mappa de anvisningar som vi visar här till de exakta fälten på webbplatsen. Kom ihåg att kontrollera i [Skapa DNS-poster för Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) om vi har stegvisa instruktioner för din DNS-värd. > Vissa DNS-värdar tillåter inte att du skapar alla nödvändiga posttyper, vilket [orsakar tjänstbegränsningar](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) i Microsoft 365. Om värden för din domän inte har stöd för exempelvis SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför din domän](../get-help-with-domains/buy-a-domain-name.md) till en DNS-värd som har stöd för alla nödvändiga poster. Om du vill ha en snabb och automatiserad process som konfigurerar med Microsoft 365 rekommenderar vi att du överför domänen till GoDaddy. 
+> Det exakta namnet på rutorna eller *fälten* som du skriver eller klistrar in information i, för att skapa varje typ av DNS-post, skiljer sig åt för varje DNS-värd. Det kan finnas hjälp på DNS-värdens webbplats som kan hjälpa dig att mappa de anvisningar som vi visar här till de exakta fälten på webbplatsen. Kom ihåg att kontrollera i [Skapa DNS-poster för Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) om vi har stegvisa instruktioner för din DNS-värd. > Vissa DNS-värdar tillåter inte att du skapar alla nödvändiga posttyper, vilket [orsakar tjänstbegränsningar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) i Microsoft 365. Om värden för din domän inte har stöd för exempelvis SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför din domän](../get-help-with-domains/buy-a-domain-name.md) till en DNS-värd som har stöd för alla nödvändiga poster. Om du vill ha en snabb och automatiserad process som konfigurerar med Microsoft 365 rekommenderar vi att du överför domänen till GoDaddy. 
   
 > [!NOTE]
 > Det brukar bara ta några minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -81,7 +81,7 @@ Innan du använder din domän med Microsoft 365, vill vi vara säkra på att det
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
-      |MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.    <br/>       [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
+      |MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* <br/> **Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Office 365.    <br/>       [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
    
 2. Spara posten.
     
@@ -141,7 +141,7 @@ Gå till sidan där du kan skapa poster för domänen.
     
    - **Prioritet**: Ställ in prioriteten för MX-posten till det högsta tillgängliga värdet, vanligtvis **0**.
     
-      Mer information om prioritet finns i [Vad är MX-prioritet?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
     
    - **Värdnamn**: **@**
     

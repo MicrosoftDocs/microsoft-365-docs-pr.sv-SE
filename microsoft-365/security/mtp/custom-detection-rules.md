@@ -1,7 +1,7 @@
 ---
 title: Skapa och hantera anpassade identifieringsregler i Microsoft Threat Protection
 description: Lär dig hur du skapar och hanterar anpassade identifieringsregler baserat på avancerade jaktfrågor
-keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, regler, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, behörigheter, Microsoft Försvarare ATP
+keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, regler, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, behörigheter, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,17 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931758"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034870"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera regler för anpassade identifieringar
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -114,7 +114,7 @@ Identifiera kolumnerna i frågeresultaten där du förväntar dig att hitta de v
 
 Du kan bara välja en kolumn för varje entitetstyp (postlåda, användare eller enhet). Kolumner som inte returneras av frågan kan inte markeras.
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. Ange åtgärder på filer eller datorer.
+### <a name="4-specify-actions-on-files-or-machines"></a>4. Ange åtgärder på filer eller datorer.
 Din anpassade identifieringsregel kan automatiskt vidta åtgärder på filer eller datorer som returneras av frågan.
 
 #### <a name="actions-on-machines"></a>Åtgärder på maskiner
@@ -130,7 +130,7 @@ När det här alternativet är markerat `SHA1`utförs `InitiatingProcessSHA1` `S
 > [!NOTE]
 > Tillåt- eller blockeringsåtgärder för anpassade identifieringsregler stöds för närvarande inte på Microsoft Threat Protection.
 
-### <a name="4-set-the-rule-scope"></a>4. Ställ in regelomfattningen.
+### <a name="5-set-the-rule-scope"></a>5. Ställ in regelomfattningen.
 Ange omfånget för att ange vilka enheter som omfattas av regeln. Omfattningen påverkar regler som kontrollerar enheter och påverkar inte regler som bara kontrollerar postlådor och användarkonton eller identiteter.
 
 När du ställer in scopet kan du välja:
@@ -140,7 +140,7 @@ När du ställer in scopet kan du välja:
 
 Endast data från enheter i omfånget kommer att efterfrågas. Dessutom kommer åtgärder endast att vidtas på dessa enheter.
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. Granska och slå på regeln.
+### <a name="6-review-and-turn-on-the-rule"></a>6. Granska och slå på regeln.
 När du har granskat regeln klickar du på **Skapa** för att spara den. Den anpassade identifieringsregeln körs omedelbart. Den körs igen baserat på konfigurerad frekvens för att söka efter matchningar, generera aviseringar och vidta svarsåtgärder.
 
 ## <a name="manage-existing-custom-detection-rules"></a>Hantera befintliga anpassade identifieringsregler
@@ -186,5 +186,5 @@ På skärmen Regelinformation (**Hunting** > **Custom detections** > **[Rule nam
 
 ## <a name="related-topic"></a>Relaterat ämne
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig det avancerade jaktfrågespråket](advanced-hunting-query-language.md)

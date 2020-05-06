@@ -1,5 +1,5 @@
 ---
-title: Hot Explorer och realtidsidentifieringar, nya till Threat Explorer, ändringar i Threat Explorer, ny i Office 365, Säkerhet, Molnsäkerhet, ny säkerhet i ATP, nya ATP-funktioner
+title: Hot Explorer och realtidsidentifieringar
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om explorer och &amp; realtidsidentifieringar i Security Compliance Center.
-ms.openlocfilehash: 2d75a5e05bb3fce85d52856afabc6aba13594f26
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+description: Lär dig mer om hur du använder &amp; Explorer och realtidsidentifieringar i Security Compliance Center för att undersöka och reagera på hot på ett effektivt och ändamålsenligt sätt.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708565"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036758"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
 
