@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Läs om hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894847"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045874"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
@@ -36,7 +36,7 @@ När du köper företagsprodukter eller tjänster från Microsoft kan du använd
 >
 > Du måste använda en betalningsmetod som utfärdats från samma land som din klient.
 
-## <a name="add-a-payment-method"></a>Lägga till en betalningsmetod
+## <a name="add-a-payment-method"></a>Lägg till en betalningsmetod
 
 Om du lägger till en betalningsmetod kopplas inga prenumerationer till den. Information om hur du tilldelar en enskild prenumeration till betalningsmetoden finns i [Ändra en betalningsmetod för en enskild prenumeration](#change-a-payment-method-for-a-single-subscription). Information om hur du ersätter alla prenumerationer som använder en annan betalningsmetod med den nya finns i [Ersätta en betalningsmetod](#replace-a-payment-method).
 
@@ -73,7 +73,7 @@ Information om hur du ändrar betalningsmetoden för en enskild prenumeration fi
 
 Du kan ändra betalningsmetoden som används för att betala för en enskild prenumeration.
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 2. På fliken **Prenumerationer** väljer du den prenumeration som du vill betala för med den alternativa betalningsmetoden. 
 3. Välj **Billing** **Redigera**bredvid betalningsmetoden.
 4. Välj Ändra **bredvid**din befintliga betalningsmetod .
@@ -108,7 +108,7 @@ Om en betalningsmetod är kopplad till prenumerationer eller faktureringsprofile
 7. Den nya betalningsmetoden har redan valts i listrutan. Välj **Nästa**.
 8. Välj **Ta bort**.
 
-## <a name="troubleshoot-payment-methods"></a>Felsöka betalningsmetoder
+## <a name="troubleshoot-payment-methods"></a>Felsöka betalningsmetod
 
 |**Problem**|**Felsökningssteg**|
 |:----------|:-----|

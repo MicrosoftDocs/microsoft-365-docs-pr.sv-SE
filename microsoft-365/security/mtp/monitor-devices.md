@@ -1,5 +1,5 @@
 ---
-title: Enhetsövervakning och rapportering i Microsoft 365-säkerhetscentret
+title: Enhetsövervakning & rapportering - Säkerhetscenter
 description: Beskriver hur du kan skydda dina enheter, uppdaterade och upptäcka potentiella hot i organisationen
 keywords: säkerhet, skadlig kod, Microsoft 365, M365, säkerhetscenter, övervaka, rapportera, enheter
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 870d2ce1f70028c917cc8b165e8a1c55b746100a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804880"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034004"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Enhetsövervakning och rapportering i Microsoft 365-säkerhetscentret
 

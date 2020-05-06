@@ -1,5 +1,5 @@
 ---
-title: Byt till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
+title: Byt till EOP från en annan skyddstjänst
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-description: Syftet med det här avsnittet är att hjälpa dig att förstå processen för att byta till Exchange Online Protection (EOP) från en lokal e-posthygieninstallation eller molnbaserad skyddstjänst och sedan ge dig hjälpresurser för att komma igång.
-ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: I den här artikeln får du lära dig hur du byter till Exchange Online Protection (EOP) från en lokal e-posthygieninstallation eller molnbaserad skyddstjänst.
+ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631199"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035230"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Byt till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
 

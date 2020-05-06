@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Lär dig mer om de olika typerna av grupper och hur du använder dem med de olika samarbetsfunktionerna i Microsoft 365.
-ms.openlocfilehash: 09dce9a26d22989fecf828bf91c0e8ce9583a589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b5b8030b1f16562007ac2786dca776db6482eecb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628873"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048801"
 ---
 # <a name="email-collaboration"></a>E-postsamarbete
 
@@ -47,7 +47,7 @@ I den här tabellen beskrivs de olika samarbetsalternativ som är tillgängliga 
 |:-----|:-----|
 |Grupper i Outlook  <br/> |En delad arbetsyta som fungerar i alla program i Microsoft 365. Innehåller en delad inkorg, kalender och OneDrive för företag-webbplats för att lagra filer. Användare kan skapa, hitta och gå med i grupper i Outlook direkt från sin e-post eller kalender. Nya och befintliga användare med en Exchange Online- eller Microsoft 365-prenumeration kan använda Grupper i Outlook.  <br/> |
 |Delad postlåda  <br/> |En postlåda där vissa användare kan läsa och skicka e-postmeddelanden samt dela en gemensam kalender. Delade postlådor kan även fungera som en allmän e-postadress (till exempel info@contoso.com eller sales@contoso.com) som kan användas för att ställa frågor om ditt företag. När behörigheten Skicka som är aktiverad skickas alla e-postmeddelanden från den delade postlådan med den allmänna adressen (t.ex. sales@contoso.com).  <br/> |
-|Distributionslista (kallas även distributionsgrupp)  <br/> |Används för att distribuera e-postmeddelanden till två eller flera personer samtidigt. Distributionsgrupper kallas också e-postaktiverade distributionsgrupper. En distributionsgruppsvariant, en så kallad dynamisk distributionsgrupp, är ett e-postaktiverat Active Directory-gruppobjekt som används för att skicka e-post till en stor och föränderlig grupp mottagare. Exakt vem som får meddelandet bestäms av filter och villkor som du anger, till exempel alla medlemmar med ett visst språk eller alla heltidsanställda.<br/><br/> Microsoft 365 Groups in Outlook erbjuder en kraftfullare lösning för samarbete än distributionsgrupper. Mer information finns i [Varför du bör uppgradera distributionslistorna till grupper i Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx) och Migrera [distributionslistor till Microsoft 365 Groups](../manage/upgrade-distribution-lists.md).  <br/> |
+|Distributionslista (kallas även distributionsgrupp)  <br/> |Används för att distribuera e-postmeddelanden till två eller flera personer samtidigt. Distributionsgrupper kallas också e-postaktiverade distributionsgrupper. En distributionsgruppsvariant, en så kallad dynamisk distributionsgrupp, är ett e-postaktiverat Active Directory-gruppobjekt som används för att skicka e-post till en stor och föränderlig grupp mottagare. Exakt vem som får meddelandet bestäms av filter och villkor som du anger, till exempel alla medlemmar med ett visst språk eller alla heltidsanställda.<br/><br/> Microsoft 365 Groups in Outlook erbjuder en kraftfullare lösning för samarbete än distributionsgrupper. Mer information finns i [Varför du bör uppgradera distributionslistorna till grupper i Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188) och Migrera [distributionslistor till Microsoft 365 Groups](../manage/upgrade-distribution-lists.md).  <br/> |
 |offentlig mapp  <br/> |Gemensamma mappar är utformade för delad åtkomst och är ett enkelt och effektivt sätt att samla in, ordna och dela information med andra personer i organisationen. Gemensamma mappar ordnar innehåll i en djup hierarki som är lätt att bläddra bland och alltid visas i Outlook-mappvyn. En gemensam mapp kan e-postaktiveras och läggas till som medlem i distributionsgruppen. E-post som skickas till distributionsgruppen läggs automatiskt till i den gemensamma mappen för arkivering eller senare referens. Gemensamma mappar ger också enkel dokumentdelning när du inte har en SharePoint Online-prenumeration.  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>Vilket samarbetsverktyg bör du använda?

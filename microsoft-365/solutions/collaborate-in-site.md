@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Läs om hur du samarbetar med gäster på en SharePoint-webbplats.
-ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Lär dig mer om konfigurationsstegen för Microsoft 365 som krävs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
+ms.openlocfilehash: f79846de5d4fd8661205e549db3457a7696e9770
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002283"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036001"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samarbeta med gäster på en webbplats
 

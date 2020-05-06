@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företagskonto. '
-ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: efd0dbf5ae072c803b52d94dd41f16db9bb0413a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629089"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048813"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
   
@@ -68,7 +68,7 @@ Du måste ha [administratörsbehörighet](../add-users/about-admin-roles.md) fö
     > Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern. 
   
     > [!TIP]
-    > E-postaliaset måste sluta med en domän från listrutan. Information om hur du lägger till ett annat domännamn i listan finns i [Lägga till en domän i Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx). 
+    > E-postaliaset måste sluta med en domän från listrutan. Information om hur du lägger till ett annat domännamn i listan finns i [Lägga till en domän i Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. När du är klar väljer du **Spara ändringar**.
@@ -100,7 +100,7 @@ Du måste ha [administratörsbehörighet](../add-users/about-admin-roles.md) fö
     > Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern. 
   
     > [!TIP]
-    > E-postaliaset måste sluta med en domän från listrutan. Information om hur du lägger till ett annat domännamn i listan finns i [Lägga till en domän i Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx). 
+    > E-postaliaset måste sluta med en domän från listrutan. Information om hur du lägger till ett annat domännamn i listan finns i [Lägga till en domän i Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. När du är klar väljer du **Spara**.
 
@@ -131,7 +131,7 @@ Du måste ha [administratörsbehörighet](../add-users/about-admin-roles.md) fö
     > Om du har köpt prenumerationen från GoDaddy eller från en annan partner och vill ange ett nytt alias som den primära e-postadressen måste du gå till hanteringskonsolen för GoDaddy eller partnern. 
   
     > [!TIP]
-    > E-postaliaset måste sluta med en domän från listrutan. Information om hur du lägger till ett annat domännamn i listan finns i [Lägga till en domän i Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx). 
+    > E-postaliaset måste sluta med en domän från listrutan. Information om hur du lägger till ett annat domännamn i listan finns i [Lägga till en domän i Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. När du är klar väljer du **Spara**.
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Lär dig hur du lägger till en partner för prenumerationsrådgivare som postpartner vid tidpunkten för Köpet av Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627974"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045290"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Lägga till, ändra eller ta bort en partner för abonnemangsrådgivning
 
@@ -114,7 +114,7 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
     
 2. Om du har mer än en prenumeration väljer du den prenumeration som du vill redigera.
   
@@ -154,14 +154,14 @@ Så här accepterar du detta erbjudande
     
 ::: moniker-end
 
-## <a name="change-the-partner-for-a-subscription"></a>Ändra partner för ett abonnemang
+## <a name="change-the-partner-for-a-subscription"></a>Ändra partner för en prenumeration
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
     
 2. Om du har flera prenumerationer väljer du namnet på den du vill redigera.
     
@@ -202,14 +202,14 @@ Så här accepterar du detta erbjudande
   
   Om du inte har en partner visas ett meddelande där det står "Det finns inget här".
   
-## <a name="delete-a-partner-from-a-subscription"></a>Ta bort en partner från ett abonnemang
+## <a name="delete-a-partner-from-a-subscription"></a>Ta bort en partner från ett prenumeration
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1.  I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produkter och tjänster</a>.
+1.  Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
     
 2. Om du har flera prenumerationer väljer du namnet på den du vill redigera.
     

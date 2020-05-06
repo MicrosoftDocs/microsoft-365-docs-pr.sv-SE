@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Läs om hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
-ms.openlocfilehash: 056ae95f9f5067ea3fa86164b620c72c84e3aad4
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43154142"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045267"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Hantera registreringsprenumerationer för självbetjäning
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Vad är självbetjäningsprenumerationer?
 
-Det finns ett begränsat antal kostnadsfria registreringsprenumerationer för självbetjäning som användare i organisationen kan registrera sig för. En användare kan bara registrera sig för och använda en självbetjäningsprenumeration för sig själva. Dessa prenumerationer visas på sidan **Produkter & tjänster,** markeras som **Kostnadsfria**och har en anteckning som säger: "Det här är en kostnadsfri prenumeration som aktiveras av användare i företaget." Du kan hantera självbetjäningsprenumerationer genom att blockera användare från att registrera sig och genom att ta bort kostnadsfria prenumerationer som användarna har registrerat sig för. Mer information om självbetjäningsanmäla och tillgängliga prenumerationer finns [i Använda självbetjäningsanmäla i organisationen](../../admin/misc/self-service-sign-up.md).
+Det finns ett begränsat antal kostnadsfria registreringsprenumerationer för självbetjäning som användare i organisationen kan registrera sig för. En användare kan bara registrera sig för och använda en självbetjäningsprenumeration för sig själva. Dessa prenumerationer visas på sidan **Dina produkter,** markeras som **Kostnadsfria**och har en anteckning som säger: "Det här är en kostnadsfri prenumeration som aktiveras av användare i företaget." Du kan hantera självbetjäningsprenumerationer genom att blockera användare från att registrera sig och genom att ta bort kostnadsfria prenumerationer som användarna har registrerat sig för. Mer information om självbetjäningsanmäla och tillgängliga prenumerationer finns [i Använda självbetjäningsanmäla i organisationen](../../admin/misc/self-service-sign-up.md).
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Hur skiljer sig dessa prenumerationer från självbetjäningsköpsprenumerationer?
 
@@ -43,7 +43,7 @@ Du använder cmdleten [**Set-MsolCompanySettings**](https://docs.microsoft.com/p
 > [!IMPORTANT]
 > När du tar bort en prenumeration för självbetjäningsanmälning blockerar du alla användare från att komma åt deras data och e-post och ta bort alla data och e-postmeddelanden.
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 2. Hitta den självbetjäningsprenumeration som du vill ta bort. Välj **Ta bort prenumeration**i avsnittet Inställningar & **Åtgärder** .
 3. Markera kryssrutan i fönstret **Ta bort prenumeration** och välj sedan Ta bort **prenumeration**.
 

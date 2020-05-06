@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626952"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049453"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -93,7 +93,7 @@ Om du har glömt ditt lösenord och inte kan logga in:
     
 - Be en annan global administratör i företaget att återställa lösenordet åt dig.
     
-- Du kan också [kontakta Microsoft Support](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
+- Du kan också [kontakta Microsoft Support](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Återställa alla företagslösenord för alla i organisationen samtidigt
 <a name="bkmk_forgot"> </a>
@@ -117,9 +117,9 @@ Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du ha
 
 Använd PowerShell! Kolla in det här inlägget av Eyal Doron: [Hantera lösenord med PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
+Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Tvinga fram ändring av lösenord för alla i företaget
 <a name="bkmk_forgot"> </a>
@@ -144,4 +144,4 @@ Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet 
 
 [Ta bort en tidigare anställd](remove-former-employee.md)
 
-[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: Väg dig igenom rekommenderad konfiguration för klientomfattande inställningar som påverkar säkerheten i din Microsoft 365-miljö. Dina säkerhetsbehov kan kräva mer eller mindre säkerhet. Använd dessa rekommendationer som utgångspunkt.
-ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: I det här avsnittet får du hjälp med rekommenderad konfiguration för klientomfattande inställningar som påverkar säkerheten i microsoft 365-miljön.
+ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949399"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043363"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera din Microsoft 365-klient för ökad säkerhet
 
@@ -42,7 +44,7 @@ Microsoft 365-säkerhetscentret innehåller funktioner som skyddar din miljö. D
 |**Anti-phishing**|Ja|Om du har en anpassad domän konfigurerar du standardpolicyn mot nätfiske för att skydda e-postkonton för dina mest värdefulla användare, till exempel din VD, och för att skydda din domän. Granska [principer för nätfiske mot nätfiske i Office 365](set-up-anti-phishing-policies.md) och se [Konfigurera principer mot nätfiske i EOP](configure-anti-phishing-policies-eop.md) eller [Konfigurera ATP-principer för phishing i Office 365](configure-atp-anti-phishing-policies.md).|
 |**Anti-Malware Motor**|Ja| Redigera standardprincipen: <br/> &ensp;&ensp;* Filter för vanliga typer av bifogade filer – Välj på <br/><br/> Du kan också skapa anpassade filterprinciper för skadlig kod och tillämpa dem på angivna användare, grupper eller domäner i organisationen. <br/><br/> Mer information: <br/> &ensp;&ensp;* [Skydd mot skadlig kod](anti-malware-protection.md) <br/> &ensp;&ensp;* [Konfigurera policyer mot skadlig kod](configure-anti-malware-policies.md)|
 |**ATP säkra bilagor**|Nej| Skydda filer i SharePoint, OneDrive och Microsoft Teams på huvudsidan för säkra bifogade filer genom att markera den här rutan: <br/> &ensp;&ensp;* Aktivera ATP för SharePoint, OneDrive och Microsoft Teams <br/><br/> Lägg till en ny princip för säker bifogade filer med följande inställningar: <br/> &ensp;&ensp;* Blockera - Blockera nuvarande och framtida e-post och bilagor med upptäckt skadlig kod (välj det här alternativet) <br/> &ensp;&ensp;* Aktivera omdirigering – (Markera den här rutan och ange en e-postadress, till exempel ett administratörs- eller karantänkonto) <br/> &ensp;&ensp;* Använd ovanstående val om malware skanning för bilagor time out eller fel inträffar (markera den här rutan) <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän) <br/><br/>Mer information: [Konfigurera principer för betrodda bilagor i Office 365](set-up-atp-safe-attachments-policies.md)|
-|**ATP säkra länkar**|Ja| Lägg till den här inställningen i standardprincipen för hela organisationen: <br/> &ensp;&ensp;* Använd säkra länkar i: Microsoft 365 Apps för företag, Office för iOS och Android (välj det här alternativet). <br/><br/>Rekommenderad princip för specifika mottagare: <br/> &ensp;&ensp;* Webbadresser kommer att skrivas om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken (välj det här alternativet). <br/> &ensp;&ensp;* Använd säkra bilagor för att skanna nedladdningsbart innehåll (markera den här rutan). <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän). <br/><br/> Mer information: [Safe Links för Office 365 ATP](atp-safe-links.md).|
+|**Säkra ATP-länkar**|Ja| Lägg till den här inställningen i standardprincipen för hela organisationen: <br/> &ensp;&ensp;* Använd säkra länkar i: Microsoft 365 Apps för företag, Office för iOS och Android (välj det här alternativet). <br/><br/>Rekommenderad princip för specifika mottagare: <br/> &ensp;&ensp;* Webbadresser kommer att skrivas om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken (välj det här alternativet). <br/> &ensp;&ensp;* Använd säkra bilagor för att skanna nedladdningsbart innehåll (markera den här rutan). <br/> &ensp;&ensp;* Tillämpad på - Mottagaren domänen är (välj din domän). <br/><br/> Mer information: [Safe Links för Office 365 ATP](atp-safe-links.md).|
 |**Anti-Spam (E-postfiltrering)**|Ja| Vad du ska titta efter: <br/> &ensp;&ensp;* För mycket spam - Välj anpassade inställningar och redigera standard spam filter politik. <br/> &ensp;&ensp;* Spoof intelligens - Granska avsändare som förfalskar din domän. Blockera eller tillåt dessa avsändare. <br/><br/>Mer information: [Microsoft 365 E-post Anti-Spam Protection](anti-spam-protection.md).|
 |***Autentisering av e-post***|Ja|E-postautentisering använder ett DNS (Domain Name System) för att lägga till verifierbar information i e-postmeddelanden om avsändaren av ett e-postmeddelande. Microsoft 365 konfigurerar e-postautentisering för standarddomänen (onmicrosoft.com), men Microsoft 365-administratörer kan också använda e-postautentisering för anpassade domäner. Tre autentiseringsmetoder används: <br/><br/> &ensp;&ensp;* Avsändare policyram (eller SPF).<br/>&ensp;&ensp;&ensp;&ensp;- För installation finns [i Konfigurera SPF i Microsoft 365 för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md). <br/> &ensp;&ensp;* DomainKeys Identifierade Mail (DKIM). <br/> &ensp;&ensp;&ensp;&ensp;- Se [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän](use-dkim-to-validate-outbound-email.md). <br/>&ensp;&ensp;&ensp;&ensp;- När du har konfigurerat DKIM aktiverar du det i säkerhetscentret.<br/> &ensp;&ensp;* Domänbaserad meddelandeautentisering, rapportering och överensstämmelse (DMARC). <br/> &ensp;&ensp;&ensp;&ensp;- För DMARC-installation [Använd DMARC för att validera e-post i Microsoft 365](use-dmarc-to-validate-email.md).|
 |
@@ -109,7 +111,7 @@ För säkra miljöer, se till att inaktivera autentisering för appar som inte s
 
 Under tiden kan du använda någon av följande metoder för att åstadkomma detta för SharePoint Online och OneDrive för företag:
 
-- Använd PowerShell, se [Blockera appar som inte använder modern autentisering](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Använd PowerShell, se [Blockera appar som inte använder modern autentisering (ADAL)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
 - Konfigurera detta i Administrationscentret för SharePoint på sidan "Enhetsåtkomst" – "Kontrollera åtkomst från appar som inte använder modern autentisering". Välj Blockera.
 

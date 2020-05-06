@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "42807012"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046334"
 ---
 # <a name="deploy-apps-to-devices"></a>Distribuera appar till enheter
 En del av introduktionen till Microsoft Managed Desktop är att lägga till och distribuera appar på användarens enheter. När du använder Microsoft Managed Desktop-portalen kan du lägga till och distribuera dina appar. 
@@ -38,10 +38,10 @@ I den här proceduren väljer du vilken typ av app du vill lägga till och konfi
 
 Du kan logga in på Microsoft Managed Desktop-portalen eller logga in på Intune och sedan söka efter Microsoft Managed Desktop. Vi visar inloggning på Microsoft Managed Desktop-portalen. 
 
-1.  Logga in på [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
-2.  Under **Lager**väljer du **Appar**.
-3.  Välj **Lägg till**i arbetsbelastningen Appar .
-4.  Välj **Line-of-business-app** eller **Windows-app (Win32) i** **Lägg till**app .
+1.    Logga in på [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
+2.    Under **Lager**väljer du **Appar**.
+3.    Välj **Lägg till**i arbetsbelastningen Appar .
+4.    Välj **Line-of-business-app** eller **Windows-app (Win32) i** **Lägg till**app .
     - Om du har valt **Line-of-business-app**läser du [Lägga till en Windows-business-app i Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) för instruktioner om hur du lägger till och konfigurerar affärsappar.
     - Om du har valt **Windows-app (Win32)** läser du [Win32-apphanteringen](https://docs.microsoft.com/intune/apps-win32-app-management) för instruktioner om hur du lägger till och konfigurerar Windows-appar.
 
@@ -55,7 +55,7 @@ Om du inte har registrerat dig hos Microsoft Store för företag kan du registre
 1. Logga in på [Microsoft Store för företag](https://businessstore.microsoft.com) med ditt Microsoft Store för företag-administratörskonto.
 2. Välj **Handla för min grupp**.
 3. Använd Sök för att hitta den app du vill ha och välj appen.
-4. På produktinformationen väljer du **Hämta appen**. Microsoft Store lägger till appen i **Produkter & tjänster** för din organisation.
+4. På produktinformationen väljer du **Hämta appen**. Microsoft Store lägger till appen i **Dina produkter** för din organisation.
 
 **Så här tvingar du fram en synkronisering mellan Intune och Microsoft Store för företag**
 1. Logga in på [Azure Portal](https://portal.azure.com/) som Intune Admin eller Global Admin för din klientorganisation
@@ -79,7 +79,7 @@ Om du inte har registrerat dig hos Microsoft Store för företag kan du registre
 
 Skapa tre Azure AD-grupper för varje app. I den här tabellen beskrivs de grupper du behöver (Tillgänglig, Obligatorisk och Avinstallera). 
 
-Typ av apptilldelning |   Gruppanvändning   | Exempel på Azure AD-namn
+Typ av apptilldelning |    Gruppanvändning    | Exempel på Azure AD-namn
 --- | --- | ---
 Kan användas |  Appen kommer att vara tillgänglig från Company Portal app eller webbplats. | MMD – *appnamn* – Tillgängligt
 Obligatoriskt |  Appen installeras på enheter i de valda grupperna. | MMD – *appnamn* – Obligatoriskt
@@ -103,10 +103,10 @@ Lägg till användarna i dessa grupper för att antingen göra appen availabe, i
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
 
 1. [Lägga till och verifiera administratörskontakter i administratörsportalen](add-admin-contacts.md)
-2. [Justera villkorlig åtkomst](conditional-access.md)
+2. [Justera villkorsstyrd åtkomst](conditional-access.md)
 3. [Tilldela licenser](assign-licenses.md)
-4. [Distribuera Intune-företagsportal](company-portal.md)
-5. [Aktivera roaming i företagstillstånd](enterprise-state-roaming.md)
+4. [Distribuera Intune-företagsportalen](company-portal.md)
+5. [Aktivera Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Konfigurera enheter](set-up-devices.md)
 7. [Gör användarna redo att använda enheter](get-started-devices.md)
 8. Distribuera appar (det här avsnittet)

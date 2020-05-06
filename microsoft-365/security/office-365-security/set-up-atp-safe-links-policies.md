@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint- och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638338"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045242"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera Office 365 ATP-principer för säkra länkar
 
@@ -39,7 +39,7 @@ Om en användare klickar på en länk i ett e-postmeddelande och webbadressen ha
   
 1. Gå igenom förutsättningarna.
     
-2. Granska och redigera standardprincipen för betrodda länkar för ATP som gäller för alla. Du kan till exempel [ställa in listan anpassade blockerade webbadresser för betrodda ATP-länkar](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Granska och redigera standardprincipen för betrodda länkar för ATP som gäller för alla. Du kan till exempel [ställa in listan anpassade blockerade webbadresser för betrodda ATP-länkar](set-up-a-custom-blocked-urls-list-atp.md).
     
 3. Lägg till eller redigera principer för specifika e-postmottagare, inklusive [att ställa in din anpassade webbadresserlista "Skriv inte om" för ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
@@ -75,7 +75,7 @@ När du har [Ett avancerat skydd mot office 365](office-365-atp.md)har du en sta
     
 3. I de **principer som gäller för hela organisationsavsnittet** väljer du **Standard**och väljer sedan **Redigera** (knappen Redigera liknar en penna).<br/>![Klicka på Redigera om du vill redigera standardprincipen för skydd av säkra länkar](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
-4. I avsnittet **Blockera följande webbadresser** anger du en eller flera webbadresser som du vill förhindra att personer i organisationen besöker. (Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
+4. I avsnittet **Blockera följande webbadresser** anger du en eller flera webbadresser som du vill förhindra att personer i organisationen besöker. (Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).)
     
 5. I avsnittet **Inställningar som gäller för innehåll utom e-post** väljer du (eller avmarkerar) de alternativ du vill använda. (Vi rekommenderar att du väljer alla alternativ.) 
     
@@ -128,7 +128,7 @@ Standardprincipalternativ gäller för alla i organisationen.
 
 |Det här alternativet  |Gör detta  |
 |---------|---------|
-| **Blockera följande webbadresser** <br/>    | Gör att din organisation kan ha en anpassad lista över webbadresser som blockeras automatiskt. När användare klickar på en webbadress i den här listan kommer de till en [varningssida](atp-safe-links-warning-pages.md) som förklarar varför webbadressen blockeras. Mer information finns i [Konfigurera en anpassad lista med blockerade webbadresser med office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Blockera följande webbadresser** <br/>    | Gör att din organisation kan ha en anpassad lista över webbadresser som blockeras automatiskt. När användare klickar på en webbadress i den här listan kommer de till en [varningssida](atp-safe-links-warning-pages.md) som förklarar varför webbadressen blockeras. Mer information finns i [Konfigurera en anpassad lista med blockerade webbadresser med office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md). |
 | **Microsoft 365 Apps för företag, Office för iOS och Android** <br/>    | När det här alternativet är markerat tillämpas ATP-skydd för säkra länkar på WEBBADRESSER i Word-, Excel- och PowerPoint-filer i Windows eller Mac OS, e-postmeddelanden i Outlook, Office-dokument på iOS- eller Android-enheter, Visio 2016-filer i Windows och filer som är öppna i webbversionerna av Office-appar (Word, PowerPoint, Excel, Outlook och OneNote), förutsatt att användaren har loggat in på Office 365. |
 | **Spåra inte när användare klickar på ATP Safe Links** <br/>  | När det här alternativet är markerat klickar du på data för webbadresser i e-postmeddelanden i Word, Excel, PowerPoint, Visio och Outlook-e-postmeddelanden lagras inte.  <br/> |
 |**Låt inte användare klicka igenom ATP Säkra länkar till ursprungliga WEBBADRESSEN** <br/> |När det här alternativet är markerat kan användarna inte gå förbi en [varningssida](atp-safe-links-warning-pages.md) till en URL som bedöms vara skadlig.  <br/> |

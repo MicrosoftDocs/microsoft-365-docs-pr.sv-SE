@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: afb18a9e9a249459665781bb1105397684f04653
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011333"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045958"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -176,7 +176,7 @@ Vi kombinerar november och december nyheter eftersom efter Ignite vi hade mycket
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Ändra från kreditkort till fakturabetalning
 
-Vi har börjat distribuera möjligheten att ändra din betalningsmetod från kreditkort till en faktura. Gå till **Faktureringsprodukter** \> **& tjänster,** välj en prenumeration och välj sedan länken **Redigera** bredvid kreditkortsbetalningen.
+Vi har börjat distribuera möjligheten att ändra din betalningsmetod från kreditkort till en faktura. Gå till **Fakturering** \> **Dina produkter,** välj en prenumeration och välj sedan länken **Redigera** bredvid kreditkortsbetalningen.
 
 ![Skärmdump: Faktureringsavsnitt av prenumerationskort med ett kreditkort som betalningsmetod.](../media/MAC-BillingEditCreditCard.png)
 
@@ -244,7 +244,7 @@ Tjänstens hälsotillstånd har uppdaterats till det nya formatet och om du påv
 
 ### <a name="viral-subscriptions"></a>"Viral" abonnemang
 
-Som du vet kan användare aktivera kostnadsfria prenumerationer på en myriad av produkter som Power BI och App Connect. Du kan nu se de "virala prenumerationer" som användarna har försökt med. Gå till **Faktureringsprodukter** > **& tjänster**. Välj filtret **Kontotyp** på fliken Prenumerationer om du vill visa de användarköpta prenumerationerna. Om det behövs kan du nu ta bort dessa prenumerationer från ditt konto.
+Som du vet kan användare aktivera kostnadsfria prenumerationer på en myriad av produkter som Power BI och App Connect. Du kan nu se de "virala prenumerationer" som användarna har försökt med. Gå till **Fakturering** > **dina produkter**. Välj filtret **Kontotyp** på fliken Prenumerationer om du vill visa de användarköpta prenumerationerna. Om det behövs kan du nu ta bort dessa prenumerationer från ditt konto.
 
 ### <a name="user-templates"></a>Användarmallar
 
@@ -289,7 +289,7 @@ Det har skett en uppdatering av en annan av våra första installationsguider: M
 
 Vi har några uppdateringar för fakturering och prenumerationer den här månaden:
 
-- Enhetsbaserade prenumerationer: Du kan tilldela eller ta bort tilldelning av **Microsoft 365 Apps for Education -licenser (enhet)** till enheter i Microsoft 365-administrationscentret. **Microsoft 365 Apps for Education (enhet)** är en tilläggslicens som gör att du kan tilldela en licens till en enhet. Gå till **Faktureringsprodukter** > **& tjänster** för att hitta och köpa licensen.
+- Enhetsbaserade prenumerationer: Du kan tilldela eller ta bort tilldelning av **Microsoft 365 Apps for Education -licenser (enhet)** till enheter i Microsoft 365-administrationscentret. **Microsoft 365 Apps for Education (enhet)** är en tilläggslicens som gör att du kan tilldela en licens till en enhet. Gå till **Fakturering** > **Dina produkter** för att hitta och köpa licensen.
 - Användarbaserad licenshantering: Vi har uppdaterat hur du tilldelar licenser i **Aktiva** > **användare** till det nya formatet. Mer information finns i:
   - [Tilldela licenser till användare](manage/assign-licenses-to-users.md)
   - [Ta bort tilldelningen av licenser från användare](manage/remove-licenses-from-users.md)
@@ -333,7 +333,7 @@ Vi har några spännande förändringar som hjälper dig att konfigurera din org
 
 ### <a name="billing--subscriptions"></a>Fakturering & prenumerationer
 
-- **Produkttyp** för programvara - Du kan nu visa programvaruprodukter som köpts via en Molntjänstleverantör (CSP). Om du vill se dina nedladdningar och nycklar går du till **fliken Faktureringsprodukter** > **& tjänster.** > **Software**
+- **Produkttyp** för programvara - Du kan nu visa programvaruprodukter som köpts via en Molntjänstleverantör (CSP). Om du vill se dina nedladdningar och nycklar går du till fliken **Fakturering** > **av dina produkter.** > **Software**
 - Du kan visa moderna Azure-produkter och -tjänster från Microsoft 365-administrationscentret, oavsett om du har köpt dem från Microsoft eller en tredjepartsleverantör. Exempel på moderna Azure-produkter ingår:
   - Reserverade virtuella azure-instanser
   - Azure-supportplaner
@@ -431,7 +431,7 @@ Vi har gjort några fler ändringar i **användarhantering,** här är en snabb 
 - Det finns en bonanza av **Billing** förändringar denna månad ...
   - Du kan nu uppdatera CVV för befintliga kreditkort utan att behöva ta bort det och lägga till den igen. Du kan uppdatera CVV genom att gå till **Bills** > **Betalningsmetoder**.
     - Vi har gjort det enklare att hitta dina **fakturor** och förstå eventuella faktureringsproblem som ditt konto kan ha. Och nu kan du se dina räkningar i webbläsaren istället för att behöva ladda ner PDF. Gå till > **Fakturor**. **Bills**
-    - På sidan **Produkter & tjänster** sammanställer vi nu din prenumerationsinformation om du har flera prenumerationer av samma typ.
+    - På sidan **Dina produkter** sammanställer vi nu din prenumerationsinformation om du har flera prenumerationer av samma typ.
 
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>Mars 2019 - Vi har officiellt släppt admin-centret
 

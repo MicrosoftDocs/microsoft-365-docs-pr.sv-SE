@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjäningsköp som görs av användare i organisationen.
-ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42807806"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046186"
 ---
-# <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (admin)
+# <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
 
 Som administratör kan du se självbetjäningsköp som görs av personer i organisationen. Du kan se produkten, köparens namn, köpta prenumerationer, utgångsdatum, inköpspris och tilldelade användare för varje självbetjäningsköp. Om det behövs för din organisation kan du inaktivera självbetjäningsköp per produkt via PowerShell. Du har samma datahanterings- och åtkomstpolicyer över produkter som köpts via självbetjäningsköp eller centralt.
 
@@ -29,7 +29,7 @@ Du kan också styra om användare i organisationen kan göra självbetjäningsk�
 
 ## <a name="view-self-service-subscriptions"></a>Visa självbetjäningsprenumerationer
 
-1. Gå till sidan **Faktureringsprodukter** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& tjänster</a> i administrationscentret.
+1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
 
 2. Välj **Självbetjäning**i listrutan **Kontotyp** bredvid **Förfina**resultat .
 
