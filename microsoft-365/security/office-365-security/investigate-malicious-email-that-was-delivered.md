@@ -1,5 +1,5 @@
 ---
-title: Hitta och undersöka skadlig e-post som levererades i Office 365, åtgärda, åtgärda, åtgärda, hotskydd, hotutforskare, skydd
+title: Hitta och undersöka skadlig e-post
 keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, e malware, komprometterade användare, e-post phish, e-malware, läsa e-postrubriker, läshuvuden, öppna e-postrubriker
 f1.keywords:
 - NOCSH
@@ -17,12 +17,13 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Läs om hur du använder hotundersöknings- och svarsfunktioner för att hitta och undersöka skadlig e-post.
-ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634140"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034262"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka och åtgärda skadlig e-post som levererades i Office 365
 
@@ -254,7 +255,7 @@ To access your message header and email download options, follow these steps:
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Office 365 ATP](office-365-ti.md)
+[Office 365 Avancerat skydd](office-365-ti.md)
   
 [Skydda mot hot i Office 365](protect-against-threats.md)
   
