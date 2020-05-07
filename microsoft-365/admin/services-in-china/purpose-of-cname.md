@@ -19,12 +19,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Läs mer om CNAME-posten "MSOID" i Office 365 som leder dig till den bästa servern för autentiseringsprocesser, så att du får ett snabbare svar.
 monikerRange: o365-21vianet
-ms.openlocfilehash: f5369b8a723c60691da0e73f2bd8cc32233abbcd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: a7c59829419ac8e7db400b079681ccf5bff199d6
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212227"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053854"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Vad är syftet med Office 365-CNAME-posten för MSOID?
 
@@ -40,7 +40,7 @@ Om CNAME-posten saknas för din domän använder dessa program en standardslutpu
   
  **Om Office 365 hanterar domänens DNS-poster** Den här CNAME-posten konfigureras för dig i Office 365. 
   
- **Om du hanterar DNS-poster för din domän hos DNS-värden** skapar du den här posten själv genom [att följa instruktionerna för DNS-värden](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx).
+ **Om du hanterar DNS-poster för din domän hos DNS-värden** skapar du den här posten själv genom [att följa instruktionerna för DNS-värden](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
   
 Om du planerar en Office 365-distribution och vill veta mer om alla DNS-poster som du kan behöva lägga till eller uppdatera läser du om dem i [Referens: Externa domännamnssystemposter för Office 365](https://go.microsoft.com/fwlink/?LinkId=579013).
   

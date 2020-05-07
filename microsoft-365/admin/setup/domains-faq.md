@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner genom att hitta svar på dina frågor i vanliga frågor.
 ms.custom: okr_smb
-ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048167"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140755"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Den här artikeln innehåller svar på vanliga frågor och svar om domäner i Office 365.
 

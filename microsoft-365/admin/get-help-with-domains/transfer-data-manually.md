@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Ta reda på hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade planen eller företagsnamnet, eller kombinerade flera prenumerationer till ett.
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628381"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053746"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Överföra data manuellt mellan två konton
 
@@ -55,7 +55,7 @@ Förbered dig på att kavla upp ärmarna och blockera en bit av tiden i kalender
 
 Gå till följande sidor i varje konto och konfigurera det nya kontot baserat på inställningarna i det gamla kontot.
   
-Om du överför data från Microsoft 365 till Microsoft 365 Midsize Business eller Microsoft 365 Enterprise är administratörssidorna strukturerade på olika sätt. Titta på en [video: Introduktion till Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)och gå till följande platser för att titta på administratörsinställningar.
+Om du överför data från Microsoft 365 till Microsoft 365 Midsize Business eller Microsoft 365 Enterprise är administratörssidorna strukturerade på olika sätt. Titta på en [video: Introduktion till Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)och gå till följande platser för att titta på administratörsinställningar.
   
 För Microsoft 365 Enterprise och Microsoft 365 Midsize Business:
   
@@ -90,9 +90,9 @@ Det finns flera sätt att spara eller överföra data för en gruppwebbplats:
   
 - Du kan spara den gamla webbplatsen som en mall och importera mallen i den nya webbplatsen.
 
-- Om du vill överföra dokument återskapar du först hierarkin manuellt på den nya platsen. Sedan kan du öppna båda SharePoint-gruppwebbplatserna samtidigt, öppna båda dokumentbiblioteken med Utforskaren och kopiera och klistra in dokumenten. Se [video: Kopiera eller flytta biblioteksfiler med hjälp av Öppna med Utforskaren](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx).
+- Om du vill överföra dokument återskapar du först hierarkin manuellt på den nya platsen. Sedan kan du öppna båda SharePoint-gruppwebbplatserna samtidigt, öppna båda dokumentbiblioteken med Utforskaren och kopiera och klistra in dokumenten. Se [video: Kopiera eller flytta biblioteksfiler med hjälp av Öppna med Utforskaren](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- För att överföra listdata sparar du en [listmall](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx) och använder den sparade mallen för att återskapa listan på den nya webbplatsen.
+- För att överföra listdata sparar du en [listmall](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) och använder den sparade mallen för att återskapa listan på den nya webbplatsen.
 
 - Information [om manuell migrering av SharePoint Online-innehåll finns i Information om manuell migrering av SharePoint Online-innehåll](https://support.microsoft.com/kb/2783484).
 

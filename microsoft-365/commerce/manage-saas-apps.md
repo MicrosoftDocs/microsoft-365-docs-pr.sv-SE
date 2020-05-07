@@ -13,14 +13,21 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Lär dig hur du aktiverar och hanterar appar från tredje part i Microsoft 365 administrationscenter.
-ms.openlocfilehash: 521a535115cd3a082348485f4d03dade27c71d92
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045970"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141194"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Du kan hantera licenser och fakturering för appar från tredje part i Microsoft 365-administrationscentret med förhandsgranskningsläge aktiverat. Uppdaterade funktioner inkluderar förbättrad prenumerationshantering, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera räkningar. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Detta gäller appar som kunder köper direkt eller från tredjepartsleverantörer.
 

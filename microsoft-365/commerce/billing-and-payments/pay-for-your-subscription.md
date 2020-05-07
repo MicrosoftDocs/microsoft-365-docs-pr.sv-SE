@@ -24,14 +24,21 @@ description: Läs om vilka betalningsalternativ som är tillgängliga för att b
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045842"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140877"
 ---
 # <a name="pay-for-your-subscription"></a>Betala för prenumerationen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 När du ställer in prenumerationen kan du välja att betala med kreditkorts- eller bankkontobetalningar eller att betala med faktura med check eller elektronisk överföring av pengar (EFT). Oavsett vilken metod du väljer är det den betalningsmetod vi fortsätter att använda för kommande faktureringsperioder, såvida du inte [ändrar betalningsmetod](change-payment-method.md).
 

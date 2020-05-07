@@ -19,14 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare.
-ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617278"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140658"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Skapa och använda en mall för att lägga till användare
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare. Mallar är särskilt användbara om du har användare som delar många vanliga egenskaper, som de som har samma roll och arbetar på samma plats och de som behöver samma programvara. Du kan till exempel ha ett team med supporttekniker som arbetar på samma kontor.  
 

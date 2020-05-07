@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina anställda kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: da83dc788f31edb56a155f29dd6f14529840f8d5
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: af5246971de87866c41eb90ec8524e567cfd48f1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003801"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049547"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
 På grund av COVID-19-krisen kan ditt företag behöva upprätta säker åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser för anställda som arbetar hemifrån. 
+
+![Stegen för att underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
 
 Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar, data och molntjänster och för att maximera produktiviteten för medarbetarna.
 

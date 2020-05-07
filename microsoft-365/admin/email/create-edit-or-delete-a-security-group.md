@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Lär dig att skapa, redigera eller ta bort en säkerhetsgrupp.
-ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6138a36890ec4b0408339fbb1510fa7677a7040
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628885"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053818"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365
 
@@ -145,7 +145,7 @@ Om du vill skapa grupper av användare så att du kan skicka e-post till dem all
     
 När du har skapat distributionsgrupper och e-postaktiverade säkerhetsgrupper i administrationscentret för Exchange visas deras namn och användarlistor på sidan **Säkerhetsgrupper.** Grupperna kan tas bort på båda platserna, men endast redigeras i administrationscentret för Exchange. Dynamiska distributionsgrupper visas inte på sidan **Säkerhetsgrupper.** 
   
- SharePoint-grupper skapas automatiskt när du skapar en webbplatssamling. De förinställda grupperna har standardbehörighetsnivåerna för användarnas behörighet och åtkomst i SharePoint - de här nivåerna kallas ibland SharePoint-roller. Mer information finns [i Standard-SharePoint-grupper i SharePoint Online](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx).
+ SharePoint-grupper skapas automatiskt när du skapar en webbplatssamling. De förinställda grupperna har standardbehörighetsnivåerna för användarnas behörighet och åtkomst i SharePoint - de här nivåerna kallas ibland SharePoint-roller. Mer information finns [i Standard-SharePoint-grupper i SharePoint Online](https://docs.microsoft.com/sharepoint/default-sharepoint-groups).
   
 ## <a name="how-is-a-security-group-different-from-security-groups-i-create-in-sharepoint"></a>Hur skiljer sig en säkerhetsgrupp från säkerhetsgrupper som jag skapar i SharePoint?
 

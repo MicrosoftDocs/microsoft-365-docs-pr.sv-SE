@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
-description: 'Sammanfattning: I den här artikeln beskrivs hur du uppdaterar en DNS-post (Domain Name Service) så att du kan använda SPF (Sender Policy Framework) med din anpassade domän i Office 365. Med SPF kan du validera utgående e-post som skickas från din egna domän.'
-ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.custom:
+- seo-marvel-apr2020
+description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
+ms.openlocfilehash: 9d5d300b7397d719d9ab85139cd27d912627a3ff
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808972"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035314"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
