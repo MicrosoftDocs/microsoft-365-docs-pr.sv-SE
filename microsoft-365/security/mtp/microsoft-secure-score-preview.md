@@ -17,19 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 8277549c683da19dbbf915a7cf673fc731cb8803
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804774"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141421"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (förhandsgranskning)
 
 >[!IMPORTANT]
 >Viss information avser förleasend produkt som kan ändras väsentligt innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som lämnas här.
 
-Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns i https://security.microsoft.com/securescore säkerhetscentret Microsoft 365.
+Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns på https://security.microsoft.com/securescore i [Microsoft 365 security center](overview-security-center.md).
 
 Om du följer rekommendationerna om säkerhetsresultat kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
 
@@ -57,7 +57,7 @@ Varje förbättringsåtgärd är värd 10 poäng eller mindre. De flesta görs p
 
 ### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
 
-För närvarande finns det rekommendationer för Microsoft 365 (inklusive SharePoint Online, Exchange Online, OneDrive för företag, Microsoft Information Protection med mera), Azure AD, Microsoft Defender ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
+För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 
@@ -97,7 +97,7 @@ För att hjälpa dig den information du behöver snabbare är Microsofts förbä
 
 * Identitet (Azure AD-konton & roller)
 * Data (Microsofts informationsskydd)
-* Enhet (inga förbättringsåtgärder för tillfället)
+* Enhet (Microsoft Defender ATP)
 * App (e-post- och molnappar, inklusive Office 365 och Microsoft Cloud App Security)
 * Infrastruktur (inga förbättringsåtgärder för tillfället)
 
@@ -108,17 +108,17 @@ för säker poäng*Bild 1: Översiktssida för Microsoft Secure Score*
 
 ## <a name="take-action-to-improve-your-score"></a>Vidta åtgärder för att förbättra din poäng
 
-På fliken Förbättringsåtgärder visas de säkerhetsrekommendationer som tar itu med möjliga angreppsytor, tillsammans med deras status (slutförd, planerad, accepterad risk, tredje part och adressering). Du kan söka, filtrera och gruppera alla förbättringsåtgärder.  
+På fliken **Förbättringsåtgärder** visas de säkerhetsrekommendationer som åtgärdar möjliga angreppsytor, tillsammans med deras status (för att ta itu med, planerade, risk accepterade, lösas via tredje part, lösas genom alternativ begränsning och slutförd). Du kan söka, filtrera och gruppera alla förbättringsåtgärder.  
 
 ### <a name="ranking"></a>Ranking
 
 Rankningen baseras på antalet återstående poäng kvar att uppnå, implementeringssvårigheter, användarpåverkan och komplexitet. De högst rankade förbättringsåtgärderna har ett stort antal punkter kvar med låg svårighet, användarpåverkan och komplexitet.
 
-### <a name="actions"></a>Åtgärder
+### <a name="view-improvement-action-details"></a>Visa information om förbättringsåtgärder
 
 När du väljer en viss förbättringsåtgärd visas ett utfällbart utfällbart helsidesutfällbart resultat.  
 
-![Utfällbart exempel](../../media/secure-score/secure-score-improvement-action.png)
+![Utfällbart exempel](../../media/secure-score/secure-score-improvement-action-details.png)
 på förbättringsåtgärd*Bild 2: Exempel på utfällbara förbättringar*
 
 För att slutföra åtgärden har du några alternativ:
@@ -127,16 +127,34 @@ För att slutföra åtgärden har du några alternativ:
 
 * Välj **Dela** om du vill kopiera den direkta länken till förbättringsåtgärden eller välj den plattform som du vill dela länken som e-post, Microsoft Teams, Microsoft Planner eller ServiceNow. Genom att välja ServiceNow kan du skapa en ändringsbiljett som visas i ServiceNow och Microsoft 365 security center home. Mer information finns i [Microsoft 365 Security Center och ServiceNow-integrering](tickets.md).
 
-* Välj **Redigera status och anteckningar** om du vill redigera eventuella manuella statusar eller postanteckningar som är specifika för förbättringsåtgärden. Du kan filtrera eller gruppera efter status på fliken förbättringsåtgärder. De statyer du kan välja är följande
+### <a name="choose-an-improvement-action-status"></a>Välj status för förbättringsåtgärder
 
-    * **För att ta itu med** - Du inser att förbättringen åtgärder är nödvändiga och planerar att ta itu med det någon gång i framtiden. Det här tillståndet gäller även åtgärder som identifieras som delvis, men inte helt slutförda.
-    * **Planerad** – Det finns konkreta planer för att slutföra förbättringsåtgärderna.
-    * **Risk accepteras** - Säkerhet bör alltid balanseras med användbarhet, och inte varje rekommendation kommer att fungera för din miljö. När så är fallet kan du välja att acceptera risken, eller den återstående risken, och inte anta förbättringsåtgärden. Du kommer inte att få några poäng, men åtgärden kommer inte längre att vara synlig i listan över förbättringsåtgärder. Du kan visa den här åtgärden i historiken eller ångra den när som helst.
-    * **Lös igenom tredje part** – Förbättringsåtgärden har redan åtgärdats av ett program eller en programvara från tredje part. Du kommer att få de poäng som åtgärden är värd, så din poäng bättre återspeglar din totala säkerhet hållning. Om en tredje part inte längre täcker kontrollen kan du välja en annan status. Tänk på att Microsoft inte har någon insyn i implementeringens fullständighet om förbättringsåtgärden markeras som löst via tredje part
+Välj alla statusar och spela in anteckningar som är specifika för förbättringsåtgärden. De statyer du kan välja är följande:
 
-### <a name="prerequisites"></a>Förutsättningar
+* **För att ta itu med** - Du inser att förbättringen åtgärder är nödvändiga och planerar att ta itu med det någon gång i framtiden. Det här tillståndet gäller även åtgärder som identifieras som delvis, men inte helt slutförda.
+* **Planerad** – Det finns konkreta planer för att slutföra förbättringsåtgärderna.
+* **Risk accepteras** - Säkerhet bör alltid balanseras med användbarhet, och inte varje rekommendation kommer att fungera för din miljö. När så är fallet kan du välja att acceptera risken, eller den återstående risken, och inte anta förbättringsåtgärden. Du kommer inte att få några poäng, men åtgärden kommer inte längre att vara synlig i listan över förbättringsåtgärder. Du kan visa den här åtgärden i historiken eller ångra den när som helst.
+* **Matchas via tredje part** och **löst genom alternativ begränsning** – Förbättringsåtgärden har redan åtgärdats av ett program eller program från tredje part, eller ett internt verktyg. Du kommer att få de poäng som åtgärden är värd, så din poäng bättre återspeglar din totala säkerhet hållning. Om en tredje part eller ett internt verktyg inte längre täcker kontrollen kan du välja en annan status. Tänk på att Microsoft inte har någon insyn i implementeringens fullständighet om förbättringsåtgärden markeras som någon av dessa statusar.
 
-Förutsättningarna i avsnittet Implementering visar alla licenser som måste erhållas eller åtgärder som måste slutföras innan förbättringsåtgärden åtgärdas. Se till att du har tillräckligt med platser i din licens för att slutföra förbättringsåtgärden och att dessa licenser tillämpas på nödvändiga användare.  
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Åtgärder för förbättring av hot & sårbarhetshantering
+
+För förbättringsåtgärder i kategorin "Enhet" kan du inte välja status. I stället dirigeras du till den tillhörande [& säkerhetsproblemshantering (TVM) i](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) för att vidta åtgärder. Det undantag du väljer och motiveringen som du skriver kommer att vara specifikt för portalen och kommer inte att finnas i Microsoft Secure Score-portalen.
+
+#### <a name="completed-improvement-actions"></a>Slutförda förbättringsåtgärder
+
+Förbättringsåtgärder har en "slutförd" status när alla möjliga punkter för förbättringsåtgärderna har uppnåtts. Slutförda förbättringsåtgärder bekräftas genom Microsoft-data och du kommer inte att kunna ändra status.
+
+### <a name="assess-information-and-review-user-impact"></a>Utvärdera information och granska användarnas påverkan
+
+I avsnittet **Vid ett ögonkast** visas kategorin, attacker som den kan skydda mot och produkten.
+
+**Användareffekten** visar vad användarna kommer att uppleva om förbättringsåtgärden har antagits och **användare som påverkas** visar vem som kommer att uppleva det.
+
+### <a name="implement-the-improvement-action"></a>Genomföra förbättringsåtgärderna
+
+Avsnittet **Implementering** visar eventuella förutsättningar, steg för steg nästa steg för att slutföra förbättringsåtgärden, den aktuella implementeringsstatusen för förbättringsåtgärden och eventuella fler länkar.
+
+Förutsättningar kommer att vara alla licenser som måste erhållas eller åtgärder som måste slutföras innan förbättringsåtgärden åtgärdas. Se till att du har tillräckligt med platser i din licens för att slutföra förbättringsåtgärden och att dessa licenser tillämpas på nödvändiga användare.  
 
 ## <a name="track-your-score-history-and-meet-goals"></a>Spåra din poänghistorik och uppnå mål
 
@@ -148,7 +166,7 @@ På fliken **Mått & trender** finns det flera diagram och diagram som ger dig s
 * **Regressionstrend** – En tidslinje med punkter som har gått tillbaka på grund av konfigurations-, användar- eller enhetsändringar.  
 * **Jämförelsetrend** – Hur organisationens säkra resultat kan jämföras med andras över tid. Den här vyn kan innehålla rader som representerar poänggenomsnittet för organisationer med liknande platsantal och en anpassad jämförelsevy som du kan ange.
 * **Riskacceptanstrend** – Tidslinje för förbättringsåtgärder markerade som "riskgodtagen".
-* **Poängändringar** – Antalet uppnådda poäng, poäng som gått tillbaka eller nya åtgärder som lagts till, tillsammans med den efterföljande poängändringen, i det angivna datumintervallet.
+* **Poängändringar** – Antalet uppnådda poäng, poäng som gått tillbaka, tillsammans med den efterföljande poängändringen, i det angivna datumintervallet.
 
 ## <a name="risk-awareness"></a>Riskmedvetenhet
 
@@ -158,7 +176,7 @@ Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition 
 
 För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad som kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-21st-2020"></a>21 april 2020
+### <a name="april-2020"></a>April 2020
 
 #### <a name="added-azure-active-directory-improvement-action"></a>Åtgärd för förbättrad Azure Active Directory
 

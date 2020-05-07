@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducera organisationens användare för produktivitetsarbetsbelastningarna i Microsoft 365 för företag.
-ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638170"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066221"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Arbetsbelastningar och scenarier i Microsoft 365 för företag
 
@@ -47,7 +47,7 @@ De här scenarierna hjälper dig att konfigurera ett Microsoft Teams-team eller 
 
 Det här är arbetsbelastningarna och scenarierna i den övergripande distributionsguiden för Microsoft 365 för företag:
 
-![Arbetsbelastningarna och scenarierna i den övergripande distributionsguiden för Microsoft 365 för företag](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Arbetsbelastningarna och scenarierna i den övergripande distributionsguiden för Microsoft 365 för företag](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Fler scenarier finns i [Microsoft 365 Produktivitetsbibliotek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)). 
 

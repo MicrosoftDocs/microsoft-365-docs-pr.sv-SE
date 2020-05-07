@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049453"
+ms.locfileid: "44064815"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -93,7 +93,7 @@ Om du har glömt ditt lösenord och inte kan logga in:
     
 - Be en annan global administratör i företaget att återställa lösenordet åt dig.
     
-- Du kan också [kontakta Microsoft Support](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
+- Du kan också [kontakta Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Återställa alla företagslösenord för alla i organisationen samtidigt
 <a name="bkmk_forgot"> </a>

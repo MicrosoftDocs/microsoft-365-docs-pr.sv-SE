@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: Förstå vilka resurser du kan använda när du distribuerar Microsoft 365 för företag i din organisation.
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: Lär dig mer om vilka resurser du kan använda när du distribuerar Microsoft 365 för företag i din organisation.
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002361"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031432"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuera Microsoft 365 för företag
 
@@ -75,7 +75,7 @@ Påbörja distributionen själv från slutpunkt till slutpunkt [här](deploy-fou
 
 ## <a name="take-a-test-drive"></a>Ta en provtur
 
-”*Intelligens består inte bara av kunskap, utan även av förmågan att utöva kunskap i praktiken.*” - Aristoteles
+“*Intelligens består inte bara av kunskap, utan även av förmågan att utöva kunskap i praktiken.*” - Aristoteles
 
 Om du inte har använt Microsoft 365 för företag eller en särskild produkt eller funktion tidigare, är ett av de bästa sätten att lära sig på att använda det själv och se hur det fungerar.
 
@@ -117,7 +117,7 @@ Att definiera en digital kultur är en viktig prioritering för alla ledare som 
 
 Samtidigt hjälper smarta säkerhetsfunktioner och produktintegreringen till med att effektivisera hanteringsbehoven och minimera den totala ägandekostnaden i IT-livscykeln. 
 
-Services hur Core Services Engineering and Operations (tidigare Microsoft IT) har [skapat en modern arbetsplats med Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
+Services hur Core Services Engineering and Operations (tidigare Microsoft IT) har [skapat en modern arbetsplats med Microsoft 365](https://www.microsoft.com/sv-SE/itshowcase/microsoft-365).
 
 > [!Note]
 > Den här webbsidan är endast tillgänglig på engelska.

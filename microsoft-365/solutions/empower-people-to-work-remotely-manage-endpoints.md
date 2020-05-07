@@ -1,5 +1,5 @@
 ---
-title: 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
+title: Steg 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 4bc467b3da76a846d6d86e8812c542aa33f5e8b1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049595"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141468"
 ---
-# <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
+# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
 Med distansarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller en modern arbetsplats och moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
 

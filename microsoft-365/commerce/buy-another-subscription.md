@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Läs om hur du köper en annan Microsoft 365 för företag-prenumeration för din organisation när du redan har en prenumeration. '
 ms.custom: okr_SMB
-ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634938"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141308"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Köp en annan Microsoft 365 för företag-prenumeration
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Om du redan har en Prenumeration på Microsoft 365 för företag och vill köpa en annan prenumeration för din organisation är det bästa sättet att göra det via administrationscentret. Om du ännu inte har köpt den första Microsoft 365 för företag-prenumerationen för din organisation går [du hit](https://products.office.com/business/compare-office-365-for-business-plans) för att välja ett abonnemang.
   

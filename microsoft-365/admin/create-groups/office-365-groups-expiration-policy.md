@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om principer för förfallodatum för Microsoft 365-grupper.
-ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049185"
+ms.locfileid: "44064827"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Principer för förfallodatum för Microsoft 365-grupp
 
@@ -77,7 +77,7 @@ Gruppägare meddelas endast via e-post. Om gruppen skapades via Planner, SharePo
 
 30 dagar innan gruppen går ut får gruppägarna (eller de e-postadresser som du har angett för grupper som inte har en ägare) ett e-postmeddelande som gör att de enkelt kan förnya gruppen. Om de inte förnyar det får de ett nytt förnyelsemeddelande 15 dagar före utgångsdatumet. Om de fortfarande inte har förnyat det får de ytterligare ett e-postmeddelande dagen före förfallodatumet.
 
-Om ingen av ägarna eller administratörerna av någon anledning förnyar gruppen innan den upphör att gälla kan administratören fortfarande återställa gruppen i upp till 30 dagar efter utgångsdatumet. Mer information finns i: [Återställ en borttagen Microsoft 365-grupp](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group).
+Om ingen av ägarna eller administratörerna av någon anledning förnyar gruppen innan den upphör att gälla kan administratören fortfarande återställa gruppen i upp till 30 dagar efter utgångsdatumet. Mer information finns i: [Återställ en borttagen Microsoft 365-grupp](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
