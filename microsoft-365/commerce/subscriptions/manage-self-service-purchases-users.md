@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Användare kan lära sig att hantera sina självbetjäningsköp.
-ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046174"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141130"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Som användare kan du köpa prenumerationer på vissa produkter och tilldela licenser för dessa prenumerationer till personer i ditt team. Du är ansvarig för att betala för alla självbetjäningsköp du gör. Du kan hantera dina prenumerationer i Microsoft 365 admin center på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 

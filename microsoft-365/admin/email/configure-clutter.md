@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Lär dig att aktivera eller inaktivera övrig e-post för alla eller specifika användare i organisationen med Hjälp av Exchange PowerShell. '
-ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6ba1e3f2b6a8a516a2b55267ab22fb43613350e0
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628933"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053842"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Konfigurera Övrig e-post för organisationen
 
@@ -98,7 +98,7 @@ Som administratör kan du återaktivera övrig e-post med Exchange PowerShell. N
 ## <a name="related-articles"></a>Relaterade artiklar
 <a name="bkmk_onoff"> </a>
 
-[Använd Övrig e-post för att sortera meddelanden med låg prioritet i Outlook](https://support.office.com/article/7755ebf5-4585-469b-b1ab-8b12425c6b6b.aspx)
+[Använd Övrig e-post för att sortera meddelanden med låg prioritet i Outlook](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
 [Använd Övrig e-post för att sortera meddelanden med låg prioritet i OWA](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
     

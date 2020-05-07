@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Lär dig att spåra eventuella problem som du stöter på när du konfigurerar en anpassad domän genom att se till att DNS-posterna är korrekt konfigurerade.
-ms.openlocfilehash: 13d867559684d80ee5c0e1f7005d1dcaf3b4d611
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628476"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053733"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
 
@@ -65,21 +65,21 @@ Det finns ett antal vanliga orsaker till att domänverifieringen inte fungerar s
 ## <a name="outlook-isnt-working"></a>Fungerar inte Outlook?
 <a name="BKMK_OutlookBroken"> </a>
 
-Om du har konfigurerat MX-posten och andra DNS-poster rätt för din domän men e-posten inte fungerar, kan vi hjälpa dig att [lösa problemen med Outlook](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx).
+Om du har konfigurerat MX-posten och andra DNS-poster rätt för din domän men e-posten inte fungerar, kan vi hjälpa dig att [lösa problemen med Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Allas e-post fick byta till Microsoft 365 och du ville bara din e-post att byta?
 <a name="BKMK_EmailSwitched"> </a>
 
 När du lägger till din domän i Microsoft 365 uppdateras vanligtvis domänens MX-post (av dig eller Microsoft 365) så att den pekar på Microsoft 365, och all e-post som skickas till den domänen börjar komma till Microsoft 365. Kontrollera att du har skapat postlådor i Microsoft 365 för alla som har e-post på din domän innan du ändrar MX-posten.
   
-Vad händer om du inte vill flytta e-post för alla på domänen till Microsoft 365? Du kan vidta åtgärder för att [testa Microsoft 365 med bara några e-postadresser istället](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
+Vad händer om du inte vill flytta e-post för alla på domänen till Microsoft 365? Du kan vidta åtgärder för att [testa Microsoft 365 med bara några e-postadresser istället](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Kan du inte bekräfta status för ideella eller skolrelaterade konton?
 <a name="BKMK_validateAcct"> </a>
 
 Det finns ett par scenarier när du bara behöver verifiera organisationens domän och inte konfigurera några tjänster. Om du till exempel vill bevisa för Microsoft 365 att din organisation är berättigad till en skolprenumeration.
   
-Läs vägledningen i [Verifiera din Microsoft 365-domän för att bevisa ägarskap, ideell eller utbildningsstatus, eller för att aktivera Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590) för att se till att du har slutfört alla nödvändiga steg. Det är lite annorlunda för varje situation. 
+Läs vägledningen i [Verifiera din Microsoft 365-domän för att bevisa ägarskap, ideell eller utbildningsstatus, eller för att aktivera Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) för att se till att du har slutfört alla nödvändiga steg. Det är lite annorlunda för varje situation. 
   
 ## <a name="services-not-working-with-your-domain"></a>Fungerar inte tjänsterna med din domän?
 <a name="BKMK_Test"> </a>
@@ -87,14 +87,14 @@ Läs vägledningen i [Verifiera din Microsoft 365-domän för att bevisa ägarsk
 Vi kan hjälpa dig att lösa problem med DNS-inställningarna för din domän. Felsökaren för domäner i Microsoft 365 visar alla poster som behöver åtgärdas och exakt vad posterna måste ställas in på. 
 
 > [!TIP]
-> Har du DNS korrekt konfigurerad, men e-post fungerar ändå inte i Outlook på skrivbordet? Kolla in de olika scenarier för [e-postflödet du kan ha med Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=787530) för att se till att du har konfigurerat saker på rätt sätt för ditt företag. Eller få mer hjälp med felsökning av e-post här: [Åtgärda problem med Outlook](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx). 
+> Har du DNS korrekt konfigurerad, men e-post fungerar ändå inte i Outlook på skrivbordet? Kolla in de olika scenarier för [e-postflödet du kan ha med Microsoft 365](https://www.microsoft.com/?ref=go) för att se till att du har konfigurerat saker på rätt sätt för ditt företag. Eller få mer hjälp med felsökning av e-post här: [Åtgärda problem med Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Går det inte att komma åt din webbplats?
 <a name="BKMK_Website"> </a>
 
 Om du har åtgärdat ett DNS-problem men fortfarande har problem, kan du försöka med något av följande.
   
-- Personer kan inte komma åt din webbplats på www.mydomain.com: [Spåra webbplatsproblem](https://support.office.com/article/61f34ca1-ca7f-4a65-9348-def20db09ddf.aspx)
+- Personer kan inte komma åt din webbplats på www.mydomain.com: [Spåra webbplatsproblem](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - Du kan inte uppdatera A-posten eller CNAME-posten så att den pekar på din webbplats: [Uppdatera anpassade DNS-poster i Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
     

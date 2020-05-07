@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Läs om hur du förnyar din Prenumeration på Microsoft 365 för företag med hjälp av en produktnyckel och inaktiverar eller aktivera återkommande fakturering. '
-ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046234"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141084"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Förnya Microsoft 365 för företag
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Den här artikeln gäller för de flesta betalda Microsoft 365 för företagsprenumerationer.
   

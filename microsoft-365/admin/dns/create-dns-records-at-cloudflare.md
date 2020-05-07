@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Cloudflare för Microsoft.
-ms.openlocfilehash: 116132d096db61e7004315dcf159fc78dd790d43
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939325"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049077"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Skapa DNS-poster på Cloudflare för Microsoft
 
@@ -131,7 +131,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Typ**|**Namn**|**Mail server (postserver)**|**Prioritet**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Microsoft 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> [Mer information om prioritet finns i ](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
+    |MX  <br/> |@  <br/> |*\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Microsoft 365-konto.   [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/>|30 minuter  <br/> |
    
 
   

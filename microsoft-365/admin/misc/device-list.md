@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Lär dig hur du gör en CSV-fil för Autopilot i Microsoft 365 för företag.
-ms.openlocfilehash: b1154d639ba23180f637520750d94f00e997cfc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c83862675db1372aa2cef27c727c04577b4cf5a3
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627866"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064657"
 ---
 # <a name="device-list-csv-file"></a>CSV-fil för enhetslista
 
@@ -51,7 +51,7 @@ När du lägger till enheter måste du också lägga till dem i en profil. En pr
 
 [Microsoft 365 för affärsdokumentation och resurser](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Komma igång med Microsoft 365 för företag](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Komma igång med Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
   
-[Hantera Microsoft 365 för företag](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Hantera Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/business/manage)
   

@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Läs om hur du tar bort licenser från användarkonton.
-ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628106"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139643"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 Du kan ta bort eller ta bort licenser från användare på sidan **Aktiva användare** eller på sidan **Licenser.** Vilken metod du använder beror på om du vill ta bort tilldelning av produktlicenser från specifika användare eller ta bort användarlicenser från specifika produkter.

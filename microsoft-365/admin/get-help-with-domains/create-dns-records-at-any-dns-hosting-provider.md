@@ -23,25 +23,25 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-värd som helst för Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048789"
+ms.locfileid: "44053734"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Skapa DNS-poster på valfri DNS-värd
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-Kontrollera listan med [värdspecifika instruktioner](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) för att hitta din värd och följ sedan anvisningarna för att lägga till alla posterna du behöver. 
+Kontrollera listan med [värdspecifika instruktioner](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) för att hitta din värd och följ sedan anvisningarna för att lägga till alla posterna du behöver. 
   
 Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md).
   
 Om du vill konfigurera posterna själv är det de här posterna som ska läggas till. Observera att verifieringsposten och MX-posten är unika för domänen. Om du vill konfigurera dem måste du skaffa och använda ett särskilt "token"-värde för din domän. I anvisningarna nedan förklaras hur du gör det.
   
 > [!IMPORTANT]
-> Det exakta namnet på rutorna eller *fälten* som du skriver eller klistrar in information i, för att skapa varje typ av DNS-post, skiljer sig åt för varje DNS-värd. Det kan finnas hjälp på DNS-värdens webbplats som kan hjälpa dig att mappa de anvisningar som vi visar här till de exakta fälten på webbplatsen. Kom ihåg att kontrollera i [Skapa DNS-poster för Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) om vi har stegvisa instruktioner för din DNS-värd. > Vissa DNS-värdar tillåter inte att du skapar alla nödvändiga posttyper, vilket [orsakar tjänstbegränsningar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) i Microsoft 365. Om värden för din domän inte har stöd för exempelvis SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför din domän](../get-help-with-domains/buy-a-domain-name.md) till en DNS-värd som har stöd för alla nödvändiga poster. Om du vill ha en snabb och automatiserad process som konfigurerar med Microsoft 365 rekommenderar vi att du överför domänen till GoDaddy. 
+> Det exakta namnet på rutorna eller *fälten* som du skriver eller klistrar in information i, för att skapa varje typ av DNS-post, skiljer sig åt för varje DNS-värd. Det kan finnas hjälp på DNS-värdens webbplats som kan hjälpa dig att mappa de anvisningar som vi visar här till de exakta fälten på webbplatsen. Kom ihåg att kontrollera i [Skapa DNS-poster för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) om vi har stegvisa instruktioner för din DNS-värd. > Vissa DNS-värdar tillåter inte att du skapar alla nödvändiga posttyper, vilket [orsakar tjänstbegränsningar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) i Microsoft 365. Om värden för din domän inte har stöd för exempelvis SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför din domän](../get-help-with-domains/buy-a-domain-name.md) till en DNS-värd som har stöd för alla nödvändiga poster. Om du vill ha en snabb och automatiserad process som konfigurerar med Microsoft 365 rekommenderar vi att du överför domänen till GoDaddy. 
   
 > [!NOTE]
 > Det brukar bara ta några minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
@@ -432,6 +432,6 @@ På DNS-värdens webbplats skapar du två nya SRV-poster, vanligtvis en i taget.
   
  **Om du behöver hjälp med att ta reda på hur du lägger till de DNS-poster som krävs** läser du [Konfigurera din domän (värdspecifika anvisningar)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), börja med att [samla in den information du behöver för att skapa DNS-poster i Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Använd sedan de allmänna anvisningarna i det här avsnittet för att konfigurera din domäns DNS-poster så att du kan använda din domän med Microsoft 365-tjänster, t.ex. e-post.
   
- **Om du inte har en webbplats som du använder med din egen domän** kan du ställa in Microsoft 365 till att konfigurera och hantera DNS-posterna för domänen istället för att göra alla inställningar själv. Läs mer om de [två alternativen för att konfigurera och hantera DNS-poster för en egen domän](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) i Microsoft 365. 
+ **Om du inte har en webbplats som du använder med din egen domän** kan du ställa in Microsoft 365 till att konfigurera och hantera DNS-posterna för domänen istället för att göra alla inställningar själv. Läs mer om de [två alternativen för att konfigurera och hantera DNS-poster för en egen domän](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) i Microsoft 365. 
   
 

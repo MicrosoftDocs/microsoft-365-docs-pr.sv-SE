@@ -20,14 +20,21 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 2f70bf8d7b3a98416eca288aaa68f12fde1ba211
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627698"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140831"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Topp 10 sätt att säkra Microsoft 365 för affärsplaner
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Om du är en liten eller medelstor organisation som använder en av Microsofts affärsplaner och din typ av organisation är måltavla för cyberbrottslingar och hackare använder du vägledningen i den här artikeln för att öka säkerheten för din organisation. Den här vägledningen hjälper din organisation att uppnå de mål som beskrivs i Handboken för Harvard Kennedy School [Cybersecurity Campaign](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409).
   

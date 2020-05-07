@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
-ms.openlocfilehash: bd011add44ea462dacab41fde1ef0ebe4a6b4aa8
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: feef7de31f1576173f7377afe3eac8a6f6aaacb1
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048191"
+ms.locfileid: "44053758"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -151,14 +151,14 @@ Varför kan domänens zonfil finnas på en annan plats än hos din domänregistr
 ## <a name="why-add-a-domain-in-office-365"></a>Varför ska jag lägga till en domän i Office 365?
 
 
-Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
+Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
   
 > [!NOTE]
 > Om du bara vill ladda ned och använda Microsoft-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplats och din adress för snabbmeddelanden.
   
-- **E-post:** ditt domännamn kan du anpassa din e-post så att du kan använda en kortare och enklare adress än [den första onmicrosoft.com e-postadress](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) som medföljer ditt konto. I stället för joe@contoso.onmicrosoft.com kan e-postadressen (som också är det arbetskonto som du använder för att logga in på Office 365) vara joe@contoso.com. 
+- **E-post:** ditt domännamn kan du anpassa din e-post så att du kan använda en kortare och enklare adress än [den första onmicrosoft.com e-postadress](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) som medföljer ditt konto. I stället för joe@contoso.onmicrosoft.com kan e-postadressen (som också är det arbetskonto som du använder för att logga in på Office 365) vara joe@contoso.com. 
     
 - **Webbplats:** Om du har en Microsoft 365-prenumeration med en offentlig SharePoint Online-webbplats (går inte längre att köpa) har den offentliga webbplatsen från början en adress som följande: contoso-public.sharepoint.com. Om du konfigurerar en webbplats för företaget kan du använda en egen domän för att byta namn på webbplatsens adress till något i stil med www.contoso.com. 
     
@@ -170,14 +170,14 @@ Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplat
 ## <a name="why-add-a-domain-in-office-365"></a>Varför ska jag lägga till en domän i Office 365?
 
 
-Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
+Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
   
 > [!NOTE]
 > Om du bara vill ladda ned och använda Office 365-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplats och din adress för snabbmeddelanden.
   
-- **E-post:** ditt domännamn kan du anpassa din e-post så att du kan använda en kortare och enklare adress än [den första onmicrosoft.com e-postadress](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) som medföljer ditt konto. I stället för joe@contoso.onmicrosoft.com kan e-postadressen (som också är det arbetskonto som du använder för att logga in på Office 365) vara joe@contoso.com. 
+- **E-post:** ditt domännamn kan du anpassa din e-post så att du kan använda en kortare och enklare adress än [den första onmicrosoft.com e-postadress](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) som medföljer ditt konto. I stället för joe@contoso.onmicrosoft.com kan e-postadressen (som också är det arbetskonto som du använder för att logga in på Office 365) vara joe@contoso.com. 
     
 - **Webbplats:** Om du har en prenumeration med en offentlig SharePoint Online-webbplats (går inte längre att köpa) har den offentliga webbplatsen från början en adress som följande: contoso-public.sharepoint.com. Om du konfigurerar en webbplats för företaget kan du använda en egen domän för att byta namn på webbplatsens adress till något i stil med www.contoso.com. 
     

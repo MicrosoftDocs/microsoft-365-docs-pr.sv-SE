@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Läs om hur du förlänger utvärderingsprenumerationen med ytterligare 30 dagar.
-ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e634c43c1d6399abc3a88438fe410f5a1a19361e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045770"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141258"
 ---
 # <a name="extend-your-trial"></a>Förlänga utvärderingen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Behöver du mer tid att prova funktionerna i Microsoft 365 för företag innan du köper? Om det är mindre än 15 dagar tills din utvärderingsversion upphör att gälla och du inte har förlängt utvärderingsperioden redan så kan du förlänga perioden med 30 dagar. Du kan bara göra detta en gång.
 

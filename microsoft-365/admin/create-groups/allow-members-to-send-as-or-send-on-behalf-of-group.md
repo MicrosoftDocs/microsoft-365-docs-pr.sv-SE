@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Lär dig hur du tillåter medlemmar att skicka e-post som en Microsoft 365-grupp eller skicka e-post på uppdrag av en Microsoft 365-grupp.
-ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630675"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049393"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Tillåt medlemmar att skicka som eller skicka för en grupp
 
@@ -78,7 +78,7 @@ I det här avsnittet beskrivs hur du tillåter användare att skicka e-post för
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Läs mer om Microsoft 365-grupper](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[Läs mer om Microsoft 365-grupper](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [TilläggstilläggPrebehörigheter](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

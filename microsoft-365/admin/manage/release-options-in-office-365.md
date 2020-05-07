@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Lär dig hur du konfigurerar utgivningsalternativet för nya produkt- och featuresuppdateringar i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628118"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139655"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Ställ in alternativen standard eller riktad utgåva
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Med Microsoft 365 får du nya produktuppdateringar och funktioner när de blir tillgängliga i stället för att göra kostsamma uppdateringar med några års mellanrum. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln beskrivs vilka olika alternativ som finns för att ta emot nya versioner och hur du kan använda dem för organisationen.
   
