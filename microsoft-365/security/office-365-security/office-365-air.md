@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Kom igång med automatiska funktioner för undersökningar och svar i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141553"
+ms.locfileid: "44159413"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 

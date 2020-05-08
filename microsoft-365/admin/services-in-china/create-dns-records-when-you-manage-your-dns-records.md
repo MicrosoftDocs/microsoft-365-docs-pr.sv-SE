@@ -20,12 +20,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'Lär dig att skapa DNS-poster för Office 365 som drivs av 21Vianet när du hanterar dina DNS-poster. '
 monikerRange: o365-21vianet
-ms.openlocfilehash: b81ab3442e7087c4b7ee9bb3b5e5c2160d724986
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: f6ba0f891bbc207bf7d56c4527760a5c8caf90b0
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212003"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155403"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster
 
@@ -36,8 +36,8 @@ Fler alternativ och några saker att vara medveten om:
       
 -  Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md). Beskrivningar av vad DNS-posterna gör finns i [grunderna för DNS.](../get-help-with-domains/dns-basics.md)
     
--  Vissa DNS-värdleverantörer låter dig inte skapa alla nödvändiga posttyper, vilket orsakar [servicebegränsningar när din värdleverantör inte stöder SRV, CNAME, TXT eller omdirigering](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). Om din leverantör inte stöder SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför domänen](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx) till en [leverantör som stöder alla nödvändiga posttyper](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+-  Vissa DNS-värdleverantörer låter dig inte skapa alla nödvändiga posttyper, vilket orsakar [servicebegränsningar när din värdleverantör inte stöder SRV, CNAME, TXT eller omdirigering](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). Om din leverantör inte stöder SRV-, TXT- eller CNAME-poster rekommenderar vi att du [överför domänen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) till en [leverantör som stöder alla nödvändiga posttyper](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
     
-- Information om vilka DNS-poster som krävs och vilka värden som ska användas för varje post, inklusive MX-posten för e-post, finns [i Samla in den information du behöver för att skapa Office 365 DNS-poster](https://support.office.com/article/ffcc06d2-b50d-4072-95bb-f59013770e0e). Beskrivningar av vad DNS-posterna gör finns i [grunderna för DNS.](../get-help-with-domains/dns-basics.md)
+- Information om vilka DNS-poster som krävs och vilka värden som ska användas för varje post, inklusive MX-posten för e-post, finns [i Samla in den information du behöver för att skapa Office 365 DNS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records). Beskrivningar av vad DNS-posterna gör finns i [grunderna för DNS.](../get-help-with-domains/dns-basics.md)
     
 

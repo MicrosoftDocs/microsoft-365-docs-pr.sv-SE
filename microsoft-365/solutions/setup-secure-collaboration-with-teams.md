@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar Teams för att skydda dina data baserat på dess känslighet
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003410"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159473"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkert samarbete med Microsoft 365
 
@@ -85,9 +85,9 @@ Konfigurera dessa nivåer innebär:
 
 Börja med baslinjenivån och lägg sedan till team som använder de *känsliga* och *mycket känsliga* nivåerna efter behov för att skydda informationen i organisationen. Se de här resurserna för att komma igång:
 
-- [Konfigurera team med baslinjeskydd](configure-teams-baseline-protection.md)
-- [Konfigurera team med skydd för känsliga data](configure-teams-sensitive-protection.md)
-- [Konfigurera team med skydd för mycket känsliga data](configure-teams-highly-sensitive-protection.md)
+- [Konfigurera teams med grundläggande skydd](configure-teams-baseline-protection.md)
+- [Konfigurera team med skydd för känslig data](configure-teams-sensitive-protection.md)
+- [Konfigurera team med skydd för mycket känslig data](configure-teams-highly-sensitive-protection.md)
 
 Om du har ett mycket känsligt projekt som kräver ytterligare skydd mot delning även inom organisationen kan du konfigurera ett team som använder sin egen känslighetsetikett för att kryptera filer så att endast gruppmedlemmar kan läsa dem. Mer information [finns i Konfigurera ett team med säkerhetsisolering.](secure-teams-security-isolation.md)
 

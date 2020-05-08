@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Läs mer om olika typer av användare i administrationscentret. '
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627770"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155362"
 ---
 # <a name="quick-help-types-of-users"></a>Snabbhjälp: Typer av användare
 
@@ -45,7 +45,7 @@ På sidan **Aktiva användare** i administrationscentret för Microsoft 365 kan 
 |Lösenordsadministratörer  <br/> |De här användarna kan återställa lösenord, hantera tjänstförfrågningar och övervaka tjänstens status för din räkning.  <br/> |
 |Tjänstadministratörer  <br/> |De här användarna kan hantera tjänstförfrågningar och övervaka tjänstens status för din räkning.  <br/> |
 |Användarhanteringsadministratörer  <br/> |De här användarna kan återställa lösenord, övervaka tjänstens status och hantera användarkonton, användargrupper och tjänstförfrågningar. Användarhanteringsadministratörer kan inte ta bort en global administratör, skapa andra administratörsroller eller återställa lösenord för faktureringsadministratörer, globala administratörer eller tjänstadministratörer.  <br/> |
-|Lägg till ett anpassat filter  <br/> |Med det här alternativet kan du skapa ett anpassat filter för att bara visa vissa typer av användare med dina önskemål, till exempel vilka användare som finns i Microsoft 365 Apps for Business-planen. [Snabbhjälp: Filtrera användare](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Lägg till ett anpassat filter  <br/> |Med det här alternativet kan du skapa ett anpassat filter för att bara visa vissa typer av användare med dina önskemål, till exempel vilka användare som finns i Microsoft 365 Apps for Business-planen. [Snabbhjälp: Filtrera användare](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Relaterade artiklar
 

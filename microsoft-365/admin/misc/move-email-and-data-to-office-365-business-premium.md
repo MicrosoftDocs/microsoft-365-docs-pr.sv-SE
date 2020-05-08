@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Lär dig att flytta data över till din nya företagsidentitet.
-ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627842"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155369"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Flytta e-post och data till Microsoft 365 Business Standard
 
@@ -61,14 +61,14 @@ Om du vill flytta några av dina personliga data till den nya företagsidentitet
 ## <a name="outlookemail"></a>[Outlook/E-post](#tab/Outlook)
   
  **Exportera Outlook 2013-information till en Outlook-datafil**
-1. Innan du kan skapa Outlook-datafilen (PST) måste det konto som du vill exportera Outlook-information från redan ha lagts till i skrivbordsversionen av Outlook. Information om hur du lägger till ett konto i Outlook 2013 eller senare finns i [Konfigurera e-post i Outlook (för Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) eller [Konfigurera e-post i Outlook för Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
+1. Innan du kan skapa Outlook-datafilen (PST) måste det konto som du vill exportera Outlook-information från redan ha lagts till i skrivbordsversionen av Outlook. Information om hur du lägger till ett konto i Outlook 2013 eller senare finns i [Konfigurera e-post i Outlook (för Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) eller [Konfigurera e-post i Outlook för Mac 2011](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Alla användare måste följa anvisningarna i [Exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-fil (.pst)](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
     
  **Konfigurera ditt nya e-postkonto i Outlook**
 1. Varje användare måste konfigurera sitt nya e-postkonto som medföljde Microsoft 365 för företag-prenumerationen. De behöver då adressen till sitt nya e-postkonto. Varje användares e-postkonto är detsamma som användarnamnet som de använder för att logga in på Microsoft 365 för företag. Det ser ut ungefär som sue@contoso.onmicrosoft.com eller david@contoso.com.
     
-2. Be alla användare att lägga till sina e-postkonton i Outlook. Mer information finns i [Konfigurera e-post i Outlook (för Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) eller [Konfigurera e-post i Outlook för Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
+2. Be alla användare att lägga till sina e-postkonton i Outlook. Mer information finns i [Konfigurera e-post i Outlook (för Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) eller [Konfigurera e-post i Outlook för Mac 2011](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Importera information från Outlook-datafilen**
 1. Då slås e-post, kalender, uppgifter och kontakter som lagras i PST-filen samman till ditt Microsoft 365 för företags-e-postkonto.

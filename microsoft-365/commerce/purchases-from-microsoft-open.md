@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Lär dig hur du aktiverar, förnyar eller lägger till licenser i en Prenumeration på Microsoft 365 för företag.
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636458"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165137"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Ange produktnyckeln som köpts från Microsoft Open
 
@@ -63,7 +63,7 @@ Om du inte har tidigare i Microsoft 365 för företag kan du läsa om hur [du ko
 
 Kolla in den här listan över vanliga fel och lösningar: [Problem med din produktnyckel?](product-key-errors-and-solutions.md)
   
-Våra partner kan läsa [Partner: använda en produktnyckel för att skapa prenumerationen för en kund](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx).
+Våra partner kan läsa [Partner: använda en produktnyckel för att skapa prenumerationen för en kund](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Som volymlicenskund kan du lära dig mer genom att besöka webbplatsen om [utbildning och resurser för Microsoft Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

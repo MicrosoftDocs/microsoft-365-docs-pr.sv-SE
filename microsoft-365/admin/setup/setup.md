@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Lär dig hur du konfigurerar ditt Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365-applikationer för företag eller Office 365 Education-abonnemang.
-ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053866"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165089"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Konfigurera Microsoft 365 för företag
 
@@ -285,7 +285,7 @@ Behöver du mer detaljerade anvisningar eller vill du installera 64-bitarsversio
 
 Installera Office på din mobila enhet och konfigurera Outlook så att det fungerar med den nya Microsoft-postlådan. Alla i gruppen måste utföra det här steget. Varje användare kan även installera Office-mobilapparna på upp till fem telefoner och fem surfplattor. 
   
-Få anvisningar för din enhet: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+Få anvisningar för din enhet: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/sv-SE/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. Lagra filer online
 
@@ -313,7 +313,7 @@ Ta en rundtur i Microsoft 365 och se hur du använder Office-mobilapparna. Se [K
 
 - **Behöver du hjälp?** Om du vill få hjälp med mer avancerade distributioner är **[FastTrack](https://www.microsoft.com/sv-SE/fasttrack/microsoft-365/office-365)** ett bra ställe att börja på. Du kan även [söka efter en partner](https://go.microsoft.com/fwlink/p/?linkid=391089) som kan hjälpa dig.
 
-- **Planera** Med de här verktygen och resurserna kan du förbereda nätverk, katalog och användare för Office 365: [Förbered verksamheten för Office 365 Enterprise](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc).
+- **Planera** Med de här verktygen och resurserna kan du förbereda nätverk, katalog och användare för Office 365: [Förbered verksamheten för Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365).
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. Lägg till skolans domän eller anslut din katalog
 
@@ -339,25 +339,25 @@ Om du använder Office 365 som drivs av 21Vianet går du till [det här administ
 
 Starta guiden genom att välja **Gå till inställningar**.
 
-En genomgång av vad som händer när du kör installationsguiden finns i [Använda installationsguiden](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
+En genomgång av vad som händer när du kör installationsguiden finns i [Använda installationsguiden](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup).
   
-Om du vill synkronisera användarna från en lokal katalog eller använda enkel inloggning **ska du inte lägga till användare med hjälp av installationsguiden**. Läs i stället den här guiden och se vilka alternativ som finns: [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). Du kan antingen konfigurera:
+Om du vill synkronisera användarna från en lokal katalog eller använda enkel inloggning **ska du inte lägga till användare med hjälp av installationsguiden**. Läs i stället den här guiden och se vilka alternativ som finns: [Understanding Office 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity). Du kan antingen konfigurera:
   
-- [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync). Synkroniseras med en lokal katalog. Du hanterar användarna lokalt. Du kan också synkronisera lösenord så att användarna har samma lösenord lokalt och i molnet, men de måste logga in igen för att kunna använda Office 365.
+- [Understanding Office 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync). Synkroniseras med en lokal katalog. Du hanterar användarna lokalt. Du kan också synkronisera lösenord så att användarna har samma lösenord lokalt och i molnet, men de måste logga in igen för att kunna använda Office 365.
 
-- [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated). Synkroniseras med en lokal katalog. Du hanterar användarna lokalt. Användarna kan ha samma lösenord lokalt och i molnet, och de behöver inte logga in igen för att kunna använda Office 365. Detta kallas ofta enkel inloggning.
+- [Understanding Office 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated). Synkroniseras med en lokal katalog. Du hanterar användarna lokalt. Användarna kan ha samma lösenord lokalt och i molnet, och de behöver inte logga in igen för att kunna använda Office 365. Detta kallas ofta enkel inloggning.
 
 ### <a name="2-set-up-services"></a>2. Konfigurera tjänster
 
-Konfigurera e-post, fildelning, snabbmeddelanden och andra Office 365-tjänster och -program: [Konfigurera Office 365 Enterprise-tjänster och -program](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30).
+Konfigurera e-post, fildelning, snabbmeddelanden och andra Office 365-tjänster och -program: [Konfigurera Office 365 Enterprise-tjänster och -program](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications).
   
 I det här steget kan du installera Office 365 på upp till fem stationära eller bärbara datorer per person.
   
 ### <a name="3-migrate-data"></a>3. Migrera data
 
-När du har konfigurerat tjänsterna kan du börja migrera data, t.ex. e-post och filer: [Migrera organisationens data till Office 365 Enterprise](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46).
+När du har konfigurerat tjänsterna kan du börja migrera data, t.ex. e-post och filer: [Migrera organisationens data till Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365).
   
-Om du använder SIS (Student Information System) för elever och lärare kan du läsa om hur du [konfigurerar SIS-integrering](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx).
+Om du använder SIS (Student Information System) för elever och lärare kan du läsa om hur du [konfigurerar SIS-integrering](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
   
 ### <a name="train-your-users"></a>Utbilda dina användare
 

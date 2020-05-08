@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Lär dig hur du laddar upp enheter med AutoPilot i Microsoft 365 Business Premium. Du kan tilldela en profil till en enhet eller en grupp enheter.
-ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627403"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165870"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Skapa och redigera AutoPilot-enheter
 
@@ -50,7 +50,7 @@ Produkterna måste uppfylla dessa krav:
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. På panelen **Lägg** till enheter bläddrar du till en [CSV-fil för enhetslistan](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) som du har förberett \> **Spara** \> **stäng**.
+3. På panelen **Lägg** till enheter bläddrar du till en [CSV-fil för enhetslistan](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) som du har förberett \> **Spara** \> **stäng**.
     
     Du kan hämta den här informationen från maskinvaruleverantören eller använda [Get-WindowsAutoPilotInfo PowerShell-skriptet](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) för att generera en CSV-fil. 
     

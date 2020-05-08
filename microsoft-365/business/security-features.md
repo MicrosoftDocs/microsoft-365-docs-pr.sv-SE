@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om de säkerhetsfunktioner som med följer med Microsoft 365 Business Premium för att skydda dina data på datorer, telefoner och surfplattor.
-ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635153"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165766"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Säkerhets- och efterlevnadsfunktioner för Microsoft 365 Business Premium
 
@@ -64,7 +64,7 @@ Du kan hantera många av säkerhetsfunktionerna i Microsoft 365 Business Premium
 
 Avancerade funktioner i Microsoft 365 Business Premium finns tillgängliga för att skydda ditt företag mot cyberhot och skydda känslig information.
   
-- **[Office 365 ATP](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 Avancerat skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
     Advanced Threat Protection (ATP) hjälper till att skydda ditt företag mot sofistikerade nätfiske- och utpressningsattacker som är utformade för att äventyra medarbetarnas eller kundinformationen. Funktioner inkluderar:
     
@@ -97,7 +97,7 @@ Avancerade funktioner i Microsoft 365 Business Premium finns tillgängliga för 
 
 Din Microsoft 365 Business Premium-prenumeration innehåller funktioner som hjälper dig att upprätthålla efterlevnads- och regelstandarder.
 
-- **[Översikt över principer för att förebygga dataförlust](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
+- **[Översikt över principer för att förebygga dataförlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)** (DLP). 
     
     Du kan ställa in DLP för att automatiskt upptäcka känslig information, till exempel kreditkortsnummer, personnummer och så vidare, för att förhindra att de oavsiktligt delar utanför företaget.
     
@@ -105,7 +105,7 @@ Din Microsoft 365 Business Premium-prenumeration innehåller funktioner som hjä
     
     Exchange Online Archiving licens gör att meddelanden enkelt kan arkiveras med kontinuerlig säkerhetskopiering av data. Den lagrar alla en användares e-postmeddelanden, inklusive borttagna objekt, om de behövs senare för identifiering eller återställning. Dessutom kan du använda olika lagringsprinciper för att bevara e-postdata för rättstvister, eDiscovery eller för att uppfylla efterlevnadskraven.
     
-- **[Markera som känsligt](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[Känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
    Microsoft 365 Business Premium innehåller alla funktioner i [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Med det här abonnemanget kan du skapa **känslighetsetiketter** som gör att du kan styra åtkomsten till känslig information i e-post och dokument, med kontroller som "Vidarebefordra inte" och "Kopiera inte". Du kan också klassificera känslig information som "Konfidentiell" och ange hur sekretessbelagd information kan delas utanför och inom företaget. Kryptering i företagsklass är lätt att använda för e-post och dokument för att hålla din information privat. Du kan också installera klienttillägget Azure Information Protection för Office-appar. Mer information finns i [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). För känslighetsetiketter installerar **du AzInfoProtection_UL.exe**.
 

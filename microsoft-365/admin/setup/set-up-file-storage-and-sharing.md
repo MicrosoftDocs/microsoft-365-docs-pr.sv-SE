@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Läs om hur du använder OneDrive och en gruppwebbplats för fillagring och fildelning.
-ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627564"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165223"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Konfigurera fillagring och fildelning
 
@@ -63,7 +63,7 @@ Här är rekommendationer för vad du ska lagra på varje plats när du använde
 |**SharePoint-gruppwebbplatser** <br/> |Samarbete. När du skapar en Microsoft 365-grupp (till exempel i Microsoft 365-administrationscentret, i Outlook eller genom att skapa ett team i Microsoft Teams) skapas en SharePoint-gruppwebbplats för den gruppen. När du skapar en ny SharePoint-gruppwebbplats från SharePoint-startsidan eller från det nya Administrationscentret för SharePoint skapas också en Microsoft 365-grupp. Mer information finns på Vad är en [Create a team site in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx) [SharePoint-gruppwebbplats?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)  <br/> |Filer som har delat ägarskap. Vi rekommenderar separata gruppwebbplatser för varje arbetsenhet i organisationen. Om du till exempel vill hålla personal och ekonomiska dokument privata för ett litet team skapar du en separat gruppwebbplats.  <br/> |
 
 > [!NOTE]
-> SharePoint har även andra typer av webbplatser som du kan använda för ditt företag. Du kan använda [kommunikationswebbplatser](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx) i intranätet för att publicera information för en bred målgrupp. Och du kan använda [hubbplatser](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) för att ansluta webbplatser i intranätet.
+> SharePoint har även andra typer av webbplatser som du kan använda för ditt företag. Du kan använda [kommunikationswebbplatser](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) i intranätet för att publicera information för en bred målgrupp. Och du kan använda [hubbplatser](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) för att ansluta webbplatser i intranätet.
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>Börja använda OneDrive och gruppwebbplatsen
 
@@ -201,4 +201,4 @@ Du kan aktivera lagringsutrymme från tredje part för dina användare i Microso
 
   - [Installera och konfigurera Office på en iPhone eller iPad med Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Konfigurera Office på Windows Phone med Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Konfigurera Office på Windows Phone med Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

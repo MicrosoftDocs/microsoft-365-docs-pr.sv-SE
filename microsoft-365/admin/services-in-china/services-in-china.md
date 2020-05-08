@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Läs mer om Office 365 som drivs av 21Vianet och som är utformat för att uppfylla behoven av säkra, tillförlitliga och skalbara molntjänster i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808184"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155415"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 med 21Vianet
 
@@ -39,7 +39,7 @@ Microsoft använder inte själva tjänsten. 21Vianet driver, tillhandahåller oc
   
  **Följ oss på WeChat**
   
-Skanna den här QR-koden för att följa oss på WeChat och få de senaste uppdateringarna för Office 365 som drivs av 21Vianet.
+Skanna den här QR-koden om du vill följa oss på WeChat och få de senaste uppdateringarna för Office 365 som drivs av 21Vianet.
   
 ![Skanna denna QR-kod för att följa oss på WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
@@ -54,12 +54,12 @@ Om du vill lära dig hur du kommer igång med allmänna Office 365-tjänster lä
 
 |||
 |:-----|:-----|
-|Anpassade domäner  <br/> |Administratörer kan skapa och/eller använda anpassade domäner som registrerats via kinesiska domänleverantörer. Om du inte har en anpassad domän kan du [köpa ett domännamn](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx) från en domännamnsregistratorer. Om du redan har en, [Hitta din domänregistratorer eller DNS-värd](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3).  <br/> Om du skapar en offentlig webbplats med office 365 SharePoint Online-tjänsten kräver Internet-efterlevnadsprincipen i Kina att du får ett ICP-nummer (Internet Content Provider).  **Anm.:** Automatisk validering för otillåtna ord i anpassade domännamn är inte tillgänglig.           |
+|Anpassade domäner  <br/> |Administratörer kan skapa och/eller använda anpassade domäner som registrerats via kinesiska domänleverantörer. Om du inte har en anpassad domän kan du [köpa ett domännamn](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) från en domännamnsregistratorer. Om du redan har en, [Hitta din domänregistratorer eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Om du skapar en offentlig webbplats med office 365 SharePoint Online-tjänsten kräver Internet-efterlevnadsprincipen i Kina att du får ett ICP-nummer (Internet Content Provider).  **Anm.:** Automatisk validering för otillåtna ord i anpassade domännamn är inte tillgänglig.           |
 |Prenumerationer, fakturering och teknisk support  <br/> |Tillhandahålls av 21Vianet. Information om hur du kontaktar supporten finns i [Kontakta Support för Office 365 för företag](../contact-support-for-business-products.md).  <br/> |
-|Återställning av lösenord för självbetjäning  <br/> |Endast tillgängligt för administratörer. Mer information finns [i Ändra eller återställa ditt lösenord i Office 365 som drivs av 21Vianet](https://support.office.com/article/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Självbetjäning för återställning av lösenord  <br/> |Endast tillgängligt för administratörer. Mer information finns [i Ändra eller återställa ditt lösenord i Office 365 som drivs av 21Vianet](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Säkerhet, sekretess, efterlevnad och information om supportnivåer  <br/> |Tillhandahålls av 21Vianet.  <br/> |
 |Konfigurera Office-skrivbord  <br/> |Office-skrivbordskonfiguration är inte tillgänglig för Office 2010 och Office 2007. Administratörer kan dock [konfigurera aktuella Office-skrivbordsprogram så att de fungerar med Office 365](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Stöd för mobil och enhet\*  <br/> | Kommer snart är följande mobila funktioner:  <br/>  Hantering av mobila enheter (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) är inte tillgängligt, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research in Motion (RIM, BlackBerry trådlösa e-postlösning) för att köra Blackberry Enterprise Server (BES).  <br/>  Mer information om mobilsupport finns i [Konfigurera och hantera mobil åtkomst för användarna](https://support.office.com/article/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
+|Stöd för mobil och enhet\*  <br/> | Kommer snart är följande mobila funktioner:  <br/>  Hantering av mobila enheter (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) är inte tillgängligt, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research in Motion (RIM, BlackBerry trådlösa e-postlösning) för att köra Blackberry Enterprise Server (BES).  <br/>  Mer information om mobilsupport finns i [Konfigurera och hantera mobil åtkomst för användarna](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
 |Office Lens  <br/> |Inte tillgängligt.  <br/> |
 |Microsoft-planerare  <br/> |Kommer snart.  <br/> |
 |Microsoft Teams  <br/> |Inte tillgängligt.  <br/> |
@@ -76,7 +76,7 @@ Om du vill lära dig hur du kommer igång med allmänna Office 365-tjänster lä
 |Dela ett dokument, bibliotek eller en webbplats via e-post med någon utanför organisationen  <br/> |Den här funktionen är tillgänglig, men av som standard eftersom den använder den kan göra filer som delas tillgängliga utanför ditt land. Administratörer har möjlighet att aktivera den, men får ett varningsmeddelande som anger att det kan göra filer som delas tillgängliga utanför ditt land. Användare som försöker dela med någon utanför organisationen får också en varning. Mer information finns [i Dela SharePoint-filer eller -mappar i Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).  <br/> |
 |Få tillgång till tjänster  <br/> |Access 2013 stöds, men det kanske inte är tillgängligt att lägga till nya Access-appar eftersom den här funktionen dras tillbaka från Office 365 och SharePoint Online. Skapandet av nya Access-baserade webbappar och Access-webbdatabaser i Office 365 och SharePoint Online slutar från och med juni 2017 och eventuella återstående webbappar och webbdatabaser senast i april 2018. Dessutom stöds inte Access 2010-funktioner, och försök att använda en Access 2010-databas resulterar i fel och eventuell dataförlust.  <br/> |
 |Microsoft PowerApps  <br/> |Kommer snart.  <br/> |
-|Hantering av informationsrättigheter (IRM)  <br/> |Möjligheten att ställa in IRM-funktioner till SharePoint för din organisation kommer snart.  <br/> |
+|IRM (Information Rights Management)  <br/> |Möjligheten att ställa in IRM-funktioner till SharePoint för din organisation kommer snart.  <br/> |
 |Möjlighet att översätta text eller sidor  <br/> |Tillgänglig, men inaktiverad som standard. Klientadministratörer kan aktivera den här möjligheten, men översättningsmolntjänsten kan finnas utanför ditt land. Om du inte vill att användarna ska skicka innehåll till en molntjänst för översättning kan du hålla dessa funktioner inaktiverade.  <br/> |
 |Offentlig registrering av webbplatsen  <br/> |Kina Internet efterlevnad politik kräver att du får ett Internet Content Provider (ICP) nummer för din offentliga webbplats.  |
 |Funktioner för offentliga webbplatser  <br/> |Offentliga webbplatser är bara tillgängliga om du köpte Office 365 före den 9 mars 2015. Bing-kartor, extern delning och kommentarer är dock inte tillgängliga på en offentlig webbplats eftersom dessa funktioner kan skicka data utanför ditt land.  <br/> |
@@ -128,11 +128,11 @@ För organisationer som kör äldre eller blandade versioner av Exchange Server 
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Ja  <br/> | Alla  <br/> |
 | Blandade 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla utom EDiscovery/Archiving på plats, OWA-åtkomst (se tabellen nedan)  <br/> |
 | Blandade 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Ja  <br/> | Endast manuellt konfigurerad ledig/upptagen  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Ja  <br/> | Endast ledig/upptagen  <br/> |
 | 2007  <br/> | 2013 SP1 eller 2010 SP3No  <br/> | EJ TILLÄMPLIGT  <br/> | Stöds inte  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | EJ TILLÄMPLIGT  <br/> | Stöds inte  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
 
    
 > [!IMPORTANT]
@@ -210,7 +210,7 @@ Dela Exchange-kontaktdata på Apples mobila enheter till Apple iCloud. |Den här
 
 |||
 |:-----|:-----|
-|Domänleverantörer som stöder Skype för företag  <br/> |Du måste registrera din domän hos en kinesiskspecifik domänleverantör som stöder SRV-poster. Mer information om hur du registrerar domäner finns i [Hitta din domänregistratorer eller DNS-värd](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3).  <br/> |
+|Domänleverantörer som stöder Skype för företag  <br/> |Du måste registrera din domän hos en kinesiskspecifik domänleverantör som stöder SRV-poster. Mer information om hur du registrerar domäner finns i [Hitta din domänregistratorer eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
 |Konferens med uppringning (möjligheten att lägga till telefonåtkomst till möten för användare som inte kan komma åt en dator)  <br/> |Du kan se alternativ i Skype för företag och i Administrationscenter för Uppringning och leverantörer i Skype för företag, men dessa funktioner är ännu inte tillgängliga. De kommer snart.  <br/> |
 |Hjälp om Skrivbordet i Skype för företag  <br/> |Du kan få hjälp med Skype för företag-skrivbordet [här](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx). Skrivbordshjälpen är dock inte tillgänglig från produkten om du inte använder Office Klicka-och-kör.  <br/> |
 |Lync 2010  <br/> |Inte tillgängligt.  <br/> |
@@ -225,7 +225,7 @@ Dela Exchange-kontaktdata på Apples mobila enheter till Apple iCloud. |Den här
    
 ## <a name="data-subject-requests-for-gdpr"></a>Registrerade förfrågningar om GDPR
 
-GDPR ger enskilda (eller registrerade) vissa rättigheter i samband med behandlingen av deras personuppgifter, inklusive rätten att korrigera felaktiga uppgifter, radera data eller begränsa behandlingen, ta emot deras uppgifter och uppfylla en begäran om att överföra sina personuppgifter data till en annan registeransvarig. Rollen Klientadministratör för Office 365 som drivs av 21Vianet kan begära data för en registrerads räkning på följande sätt:
+GDPR ger individer (eller registrerade) vissa rättigheter i samband med behandlingen av deras personuppgifter, inklusive rätten att korrigera felaktiga uppgifter, radera data eller begränsa behandlingen, ta emot deras uppgifter och uppfylla en begäran om att överföra sina uppgifter till en annan registeransvarig. Rollen Klientadministratör för Office 365 som drivs av 21Vianet kan begära data för en registrerads räkning på följande sätt:
   
 - Med hjälp av Azure Active Directory Admin Center kan en klientadministratör permanent ta bort en registrerad person från Azure Active Directory och relaterade tjänster.
     

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Lär dig att konvertera en privat postlåda till en delad postlåda som kan nås av flera användare. '
-ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628897"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162704"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
@@ -48,7 +48,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 
 3. Välj användarpostlådan. Under **Konvertera till delad postlåda**väljer du **Konvertera**.
 
-4. Om postlådan är mindre än 50 GB kan du ta bort [licensen från användaren](../manage/remove-licenses-from-users.md) och sluta betala för den. Ta inte bort användarens gamla postlåda. Den delade postlådan behöver ha den som en fästpunkt. Om du konverterar postlådan för en medarbetare som lämnar organisationen bör du vidta ytterligare åtgärder för att se till att de inte kan logga in längre. Se [Ta bort en tidigare anställd från Microsoft 365](../add-users/remove-former-employee.md).
+4. Om postlådan är mindre än 50 GB kan du ta bort [licensen från användaren](../manage/remove-licenses-from-users.md) och sluta betala för den. Ta inte bort användarens konto. Den delade postlådan behöver ha den som en fästpunkt. Om du konverterar postlådan för en medarbetare som lämnar organisationen bör du vidta ytterligare åtgärder för att se till att de inte kan logga in längre. Se [Ta bort en tidigare anställd från Microsoft 365](../add-users/remove-former-employee.md).
     
 5. Allt annat du behöver veta om delade postlådor finns i [Om delade postlådor](about-shared-mailboxes.md) och [Skapa en delad postlåda](create-a-shared-mailbox.md).
 
