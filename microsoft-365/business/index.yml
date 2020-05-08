@@ -11,27 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
-  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.openlocfilehash: 5f146e4d0ab5a86a3891e2313b93ad307f838ae1
+  ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "44002186"
+  ms.lasthandoff: 05/07/2020
+  ms.locfileid: "44159949"
 productDirectory:
   title: Säkert fjärrarbete med Microsoft 365 Business Premium
   items:
-  - title: Vad är nytt?
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 kommer till Microsoft 365 Business Premium!
-    url: https://aka.ms/aadp1smbblog
-  - title: Se webbseminarium från vår partner
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Skydda dina SMB-kunder medans de hanterar COVID-19.
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Läsa
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: Bästa sätten att aktivera säkert fjärrarbete med Microsoft 365 Business Premium.
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+  - title: Skaffa gratis partnerkit
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Praktisk vägledning och gå till marknadsresurser för partners för att möjliggöra säkert distansarbete.
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+  - title: Vad är nytt?
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 kommer till Microsoft 365 Business Premium!
+    url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
   - title: Vad är Microsoft 365 Business Premium?
@@ -76,7 +76,7 @@ conceptualContent:
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
       text: Presentationssammanfattning (partnerfokus)
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: Tekniska grunder
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
