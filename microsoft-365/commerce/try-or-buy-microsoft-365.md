@@ -1,5 +1,5 @@
 ---
-title: Prova eller köpa en Microsoft 365-prenumeration
+title: Prova eller köp en Microsoft 365-prenumeration
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration för Microsoft 365.
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707541"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141060"
 ---
-# <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köpa en Microsoft 365-prenumeration
+# <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köp en Microsoft 365-prenumeration
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 är en komplett lösning som kombinerar Office 365 och Windows 10 med avancerad säkerhet och enhetshantering. Om du redan har en prenumeration och vill testa eller köpa en Microsoft 365-prenumeration är det bästa sättet att göra det via administrationscentret. Följande Microsoft 365-prenumerationer finns i administrationscentret som du kan prova eller köpa nu:
   
@@ -38,7 +45,7 @@ Microsoft 365 är en komplett lösning som kombinerar Office 365 och Windows 10 
 
 När du lägger till en prenumeration via administrationscentret associeras den nya prenumerationen med samma organisation (domännamnsrymd) som din befintliga prenumeration. Detta gör det enklare att flytta användare i organisationen mellan prenumerationer eller tilldela dem en licens för den ytterligare prenumeration de behöver.
   
-## <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köpa en Microsoft 365-prenumeration
+## <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köp en Microsoft 365-prenumeration
 
 ::: moniker range="o365-worldwide"
 

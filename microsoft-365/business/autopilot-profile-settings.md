@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot-profiler hjälper dig att styra hur Windows installeras på användarenheter. Profilerna innehåller standardinställningar och valfria inställningar som hoppa över Cortana-installation.
-ms.openlocfilehash: 5c2ec3f4c3e0ebc4ea545d11f819c897f414ad52
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627423"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165850"
 ---
 # <a name="about-autopilot-profile-settings"></a>Om AutoPilot-profilinställningar
 
@@ -47,7 +47,7 @@ Du kan använda AutoPilot-profiler för att styra hur Windows är installerat p�
 |**Inställning**|**Beskrivning**|
 |:-----|:-----|
 |Hoppa över Cortana-, OneDrive- och OEM-registrering  <br/> |Hoppar över installationen av konsumentappar som Cortana och personliga OneDrive-konton. Enhetsanvändaren kan installera dessa senare så länge användaren är en lokal administratör på enheten. Den ursprungliga tillverkarregistreringen hoppas över eftersom enheten hanteras av Microsoft 365 Business Premium.  <br/> |
-|Inloggning med företagets varumärke  <br/> |Om ditt företag har sidan [Lägg till ditt företags varumärke på inloggningssidan för Microsoft 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)får enhetsanvändaren den upplevelsen när du loggar in.  <br/> |
+|Inloggning med företagets varumärke  <br/> |Om ditt företag har sidan [Lägg till ditt företags varumärke på inloggningssidan för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)får enhetsanvändaren den upplevelsen när du loggar in.  <br/> |
 |Automatisk MDM-registrering med konfigurerade AAD-konton  <br/> |Användaridentiteten hanteras av Azure Active Directory och användarna loggar in på Windows och Microsoft 365 med sina Microsoft 365 Business Premium-autentiseringsuppgifter.  <br/> |
    
  **Valfria inställningar**
