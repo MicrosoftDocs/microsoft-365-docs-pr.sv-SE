@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera efterlevnadsfunktioner för att förhindra dataförlust och skydda din och dina kunders känsliga information.
-ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048074"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165746"
 ---
 # <a name="set-up-compliance-features"></a>Konfigurera funktioner för efterlevnad
 
@@ -34,9 +34,9 @@ Din Microsoft 365 Business Premium levereras med funktioner för att skydda dina
 
 ## <a name="set-up-dlp-features"></a>Konfigurera DLP-funktioner
 
-Se [Skapa en DLP-princip från en mall](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) för ett exempel på hur du ställer in en princip för att skydda mot personligt identifierbar information (PII). 
+Se [Skapa en DLP-princip från en mall](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) för ett exempel på hur du ställer in en princip för att skydda mot personligt identifierbar information (PII). 
   
-DLP levereras med många färdiga principmallar för många olika språk. Till exempel, Australien Financial Data, Canada Personal Information Act, AMERIKANSKA finansiella data, och så vidare. Se [Vad DLP-principmallarna innehåller](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) för en fullständig lista. Alla dessa mallar kan aktiveras på samma sätt som pii-mallexemplet. 
+DLP levereras med många färdiga principmallar för många olika språk. Till exempel, Australien Financial Data, Canada Personal Information Act, AMERIKANSKA finansiella data, och så vidare. Se [Vad DLP-principmallarna innehåller](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) för en fullständig lista. Alla dessa mallar kan aktiveras på samma sätt som pii-mallexemplet. 
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Konfigurera lagring av e-post med Exchange Online-arkivering
 

@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Läs om hur du återaktiverar prenumerationen när den går ut, eller om Microsoft inaktiverar den, eller om du avbryter den i mitten.
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046246"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141104"
 ---
 # <a name="reactivate-your-subscription"></a>Återaktivera prenumerationen
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Om prenumerationen går ut eller inaktiverades av Microsoft, eller om du har sagt upp den mitt under en prenumerationsperiod, kan du återaktivera den i administrationscentret.
   

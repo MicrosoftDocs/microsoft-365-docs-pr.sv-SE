@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig mer om Microsoft 365 för företag, hur du konfigurerar det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048094"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165798"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -79,9 +79,9 @@ Logga in på [Microsoft 365 admincenter](https://portal.office.com/adminportal/h
     
     Om du **flyttar permanent från en lokal Active Directory till molnet**kan du gå till administrationscentret för Microsoft 365 och använda installationsguiden för att lägga till användarna manuellt, eller så kan du göra en engångssynkronisering med Azure AD Connect. Du kan göra det på två sätt: 
     
-    - Om du också har en Exchange 2010-, Exchange 2013- eller Exchange 2016-server kan du [använda Minimal Hybrid för att snabbt migrera Exchange-postlådor till Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). De minimala hybridstegen inkluderar en engångssynkronisering av användare till Azure AD och e-postmigrering från lokalt till molnet. När e-postmigrering har slutförts inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
+    - Om du också har en Exchange 2010-, Exchange 2013- eller Exchange 2016-server kan du [använda Minimal Hybrid för att snabbt migrera Exchange-postlådor till Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). De minimala hybridstegen inkluderar en engångssynkronisering av användare till Azure AD och e-postmigrering från lokalt till molnet. När e-postmigrering har slutförts inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
     
-    - Använd katalogsynkroniseringsguiden för att synkronisera användarna till molnet. Följ stegen i [Konfigurera katalogsynkronisering för Microsoft 365 för](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) att slutföra den här processen. När du har synkroniserat användarna med molnet måste du [inaktivera katalogsynkronisering för Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+    - Använd katalogsynkroniseringsguiden för att synkronisera användarna till molnet. Följ stegen i [Konfigurera katalogsynkronisering för Microsoft 365 för](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) att slutföra den här processen. När du har synkroniserat användarna med molnet måste du [inaktivera katalogsynkronisering för Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     Du måste också ge varje användare som har lagts till på det här sättet en licens till Microsoft 365 för företag. Du kan göra detta i [installationsguiden](set-up.md) eller [tilldela licenser till användare i Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
@@ -104,7 +104,7 @@ Om du behåller en lokal Active Directory som innehåller vissa lokala resurser 
   
 - Kontakta din partner.
     
-- Som Microsoft 365 för företag-administratör har du tillgång till vårt kundsupportteam: ** [Kontakta support för företagsprodukter - Administratörshjälp](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Som Microsoft 365 för företag-administratör har du tillgång till vårt kundsupportteam: ** [Kontakta support för företagsprodukter - Administratörshjälp](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 ## <a name="see-also"></a>Se även
 

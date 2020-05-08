@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 17bfa8ee50fbdb7dce988324f478d88d00600121
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: a7e13ae8a3ccffa644a123f57b05c4364d4333d2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804745"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141353"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Vad kommer i Microsoft Secure Score?
 
@@ -32,6 +32,6 @@ Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Sec
 
 ## <a name="may-2020"></a>Maj 2020
 
-### <a name="adding-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Lägga till Azure Advanced Threat Protection improvement-åtgärder i förhandsversionen
+### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Lägga till ytterligare Azure Advanced Threat Protection förbättringsåtgärder i förhandsversion
 
 - Aktivera säkerhetsfunktioner i Active Directory-förtroenden
