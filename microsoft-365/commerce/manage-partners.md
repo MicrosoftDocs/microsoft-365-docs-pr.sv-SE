@@ -16,14 +16,21 @@ search.appverid:
 - MET150
 description: Lär dig hur du arbetar med Microsoft-certifierade lösningsleverantörer (partner) för att köpa och hantera produkter och tjänster för din organisation eller skola.
 keywords: partner, lösningsleverantör
-ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42811472"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141213"
 ---
 # <a name="manage-partner-relationships"></a>Hantera partnerrelationer
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Du kan arbeta med Microsoft-certifierade lösningsleverantörer (partner) för att köpa och hantera produkter och tjänster för din organisation eller skola. Det finns några steg inblandade i att få saker och ting inställda.
 

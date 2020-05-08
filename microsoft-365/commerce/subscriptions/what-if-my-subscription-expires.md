@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när din Microsoft 365 för företag-prenumeration går ut, är inaktiverad eller om du avbryter.
-ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707613"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165132"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?
 
@@ -50,7 +50,7 @@ I följande tabell förklaras vad du kan förvänta dig när en betald Microsoft
 *För de flesta erbjudanden, i de flesta länder och regioner.
   
 > [!NOTE]
-> **Vad är "kunddata"?** Kunddata, enligt definitionen i Villkoren för [Microsoft Online-tjänster,](https://go.microsoft.com/fwlink/p/?LinkId=613649)avser all data, inklusive alla text-, ljud- eller bildfiler som tillhandahålls Microsoft av eller för kundens räkning genom kundens användning av Microsoft 365-tjänster. Mer information om skydd av kunddata finns i [Komma igång med Microsoft Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662).
+> **Vad är "kunddata"?** Kunddata, enligt definitionen i Villkoren för [Microsoft Online-tjänster,](https://go.microsoft.com/fwlink/p/?LinkId=613649)avser all data, inklusive alla text-, ljud- eller bildfiler som tillhandahålls Microsoft av eller för kundens räkning genom kundens användning av Microsoft 365-tjänster. Mer information om skydd av kunddata finns i [Komma igång med Microsoft Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Vilka alternativ har mina alternativ om min prenumeration håller på att löpa ut?
 

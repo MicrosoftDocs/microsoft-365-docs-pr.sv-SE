@@ -12,15 +12,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- M365solutions
 ms.custom: Ent_Architecture
 description: 'Sammanfattning: Hur Contoso använde ett team med säkerhetsisolering för ett topphemligt projekt för att utveckla en ny uppsättning produkter och tjänster.'
-ms.openlocfilehash: 2da51890001a2890b2d65bc6b71537b51c335eb4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 1083c9d3db3be9ca528b2eee40f072aa17c7431e
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003488"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159461"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isolerat team för ett topphemligt projekt av Contoso Corporation
 

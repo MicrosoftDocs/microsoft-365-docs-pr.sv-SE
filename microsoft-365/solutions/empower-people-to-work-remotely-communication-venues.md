@@ -1,5 +1,5 @@
 ---
-title: '# Steg 5: skapa COVID-19 kriskommunikationsplatser'
+title: 'Steg 5: skapa COVID-19 kriskommunikationsplatser'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Använd Microsoft 365 till att skapa olika sätt att kommunicera om COVID-19 internt och offentliga nyheter.
-ms.openlocfilehash: 189e0bde959ee8ad245b03cb5aca42ab6b19a0b3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003431"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141492"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>Steg 5: skapa COVID-19 kriskommunikationsplatser
 
@@ -31,6 +31,8 @@ Det finns många sätt du kan tillhandahålla fler kommunikationsplatser för at
 - Förstärkt offentlig sjukvård och nyheter i en enda portal
 - Skapa en kommunikationswebbplats i SharePoint Online
 - En Yammer-community
+
+![Mötesplatser för information om COVID-19](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## <a name="employee-surveys"></a>Undersökningar för anställda
 

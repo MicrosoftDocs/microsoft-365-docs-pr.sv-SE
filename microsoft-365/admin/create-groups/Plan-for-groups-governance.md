@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Läs om hur du planerar för styrning av Microsoft 365-grupper.
-ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049417"
+ms.locfileid: "44064793"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planera för styrning i grupp
 
@@ -154,7 +154,7 @@ Om du har tagit bort en Microsoft 365-grupp har den som standard behållits i 30
 >Om en användare försöker komma åt webbplatsen under perioden "mjuk borttagning" får de ett meddelande med 403 - Förbjudet. Om användaren försöker komma åt webbplatsen efter den här perioden får de ett meddelande med 404 - Hittades inte
 
 #### <a name="resources"></a>*Resurser*
-- [Återställa en borttagen Microsoft 365-grupp](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
+- [Återställa en borttagen Microsoft 365-grupp](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Återställa en borttagen Microsoft 365-grupp i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Ta bort grupper med hjälp av cmdleten Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 

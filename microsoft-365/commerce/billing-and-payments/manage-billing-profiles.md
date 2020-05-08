@@ -18,14 +18,22 @@ search.appverid:
 - MET150
 description: Läs om hur faktureringsprofiler stöder fakturor.
 keywords: faktureringsprofil, fakturor, avgifter, hanterade avgifter
-ms.openlocfilehash: c9bd089843bcb620dc3feb8ec3e8f946cd739d17
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42811497"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140896"
 ---
 # <a name="manage-billing-profiles"></a>Hantera faktureringsprofiler
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 För kommersiella kunder som köper produkter och tjänster från Microsoft kan du med faktureringsprofiler anpassa vilka artiklar som ingår på fakturan och hur du betalar dina fakturor.
 
 Faktureringsprofiler innehåller följande information:

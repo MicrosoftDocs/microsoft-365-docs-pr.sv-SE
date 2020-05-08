@@ -20,23 +20,23 @@ search.appverid:
 ms.assetid: 32639d73-981f-48c2-951c-62ab12b7b48c
 ROBOTS: NOINDEX
 description: Läs om hur du hanterar dina kontakter i administrationscentret.
-ms.openlocfilehash: 8ad57c96ce01e18020c4acdcc5bd00cffdb94a87
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b479ffe391d611914d51a04aa47c09bf0bb4ba5a
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627746"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155391"
 ---
 # <a name="quick-help-ways-to-manage-contacts"></a>Snabbhjälp: Olika sätt att hantera kontakter
 
-Det finns ett antal sätt att arbeta med kontakter i Microsoft 365 och mycket av det beror på hur du använder kontakter. Här följer en jämförelse av de olika sätten för att hjälpa dig att välja rätt sätt för din organisation.
+Du kan arbeta med kontakter i Microsoft 365 på en mängd olika sätt och mycket av det beror på hur du använder kontakter. Här följer en jämförelse av de olika sätten för att hjälpa dig att välja rätt sätt för din organisation.
   
 |||||
 |:-----|:-----|:-----|:-----|
 |**Funktion** <br/> |**Beskrivning** <br/> |**Fördelar** <br/> |**Nackdelar** <br/> |
 |**Kontakter i Microsoft 365** <br/> |Använd Microsoft 365-kontakter för att lagra dina kunder eller affärskontakter så visas de under Kontakter i Microsoft 365. Se [Kontakter](contacts.md) <br/> |Alla i organisationen kan visa kontakterna direkt från Outlook, Outlook på webben och mobila enheter.  <br/> |Endast administratörer kan skapa och uppdatera kontakterna.  <br/> Inga anpassade fält tillåts (exempel: födelsedatum, universitet, referens).  <br/> |
-|**SharePoint-kontakter** <br/> |Använd ett SharePoint-kontaktprogram för att lagra dina kund- och affärskontakter så visas de på din SharePoint-webbplats och i dina SharePoint-mobilappar. Se [SharePoint-program och listor](https://support.office.com/article/0a1c3ace-def0-44af-b225-cfa8d92c52d7.aspx).  <br/> |Alla med åtkomst till SharePoint-gruppwebbplatsen och SharePoint-mobilapparna kan visa och uppdatera de här kontakterna.  <br/> Anpassade fält, vyer, arbetsflöden m.m. tillåts.  <br/> |Dessa kontakter visas inte i Outlook eller Personer i Microsoft 365.  <br/> Grundläggande förståelse av SharePoint-infrastrukturen krävs.  <br/> |
-|**Access-kontakter** <br/> |Använd ett Access-kontaktprogram för att lagra dina kund- och affärskontakter så visas de på en Access- eller SharePoint-webbplats som är värd för programmet, om det finns en sådan. Se [Access-program](https://support.office.com/article/25f3ab3e-510d-44b0-accf-b976c0813e71.aspx).  <br/> |Alla med åtkomst till Access- eller SharePoint-webbplatsen som är värd för programmet kan visa och uppdatera kontakterna.  <br/> Mycket anpassningsbar och proffsig kontakthantering inbyggd i Access.  <br/> |Du måste köpa Microsoft Access eller byta till ett Microsoft 365-abonnemang som innehåller Access.  <br/> Grundläggande förståelse av Microsoft Access och hur du skapar program krävs.  <br/> |
+|**SharePoint-kontakter** <br/> |Använd ett SharePoint-kontaktprogram för att lagra dina kund- och affärskontakter så visas de på din SharePoint-webbplats och i dina SharePoint-mobilappar. Se [SharePoint-program och listor](https://support.microsoft.com/en-us/office/introduction-to-lists-0a1c3ace-def0-44af-b225-cfa8d92c52d7).  <br/> |Alla med åtkomst till SharePoint-gruppwebbplatsen och SharePoint-mobilapparna kan visa och uppdatera de här kontakterna.  <br/> Anpassade fält, vyer, arbetsflöden m.m. tillåts.  <br/> |Dessa kontakter visas inte i Outlook eller Personer i Microsoft 365.  <br/> Grundläggande förståelse av SharePoint-infrastrukturen krävs.  <br/> |
+|**Access-kontakter** <br/> |Använd ett Access-kontaktprogram för att lagra dina kund- och affärskontakter så visas de på en Access- eller SharePoint-webbplats som är värd för programmet, om det finns en sådan. Se [Access-program](https://support.microsoft.com/en-us/office/create-an-access-app-25f3ab3e-510d-44b0-accf-b976c0813e71).  <br/> |Alla med åtkomst till Access- eller SharePoint-webbplatsen som är värd för programmet kan visa och uppdatera kontakterna.  <br/> Mycket anpassningsbar och proffsig kontakthantering inbyggd i Access.  <br/> |Du måste köpa Microsoft Access eller byta till ett Microsoft 365-abonnemang som innehåller Access.  <br/> Grundläggande förståelse av Microsoft Access och hur du skapar program krävs.  <br/> |
 |**Dynamics CRM Online** <br/> |Använd Microsoft Dynamics CRM Online för att lagra och hantera dina kunder och potentiella affärsmöjligheter. Se [Dynamics CRM](https://dynamics.microsoft.com).  <br/> |Kraftfulla funktioner för hantering av kundrelationer (CRM).  <br/> Integreras med Microsoft 365 så att du kan arbeta från ett ställe.  <br/> |Inkluderar avancerade funktioner för introduktion och anpassning för att tillgodose dina behov.  <br/> Har en avsevärt högre kostnad än något av de andra alternativen för kontakthantering.  <br/> |
 |**Program från tredje part** <br/> |Om inget av alternativen ovan intresserar dig överväg då ett program från tredje part i [Office Store](https://store.office.com) eller från någon annanstans.  <br/> |Det finns många leverantörer, funktioner och priser att välja bland för dina affärskunder.  <br/> |Ingen garanti för att det är integrerat med Microsoft 365, vilket kräver att du arbetar med två olika tjänster, inloggningar, etc.  <br/> |
    

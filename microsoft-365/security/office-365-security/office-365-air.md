@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Kom igång med automatiska funktioner för undersökningar och svar i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033956"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141553"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
@@ -93,6 +93,13 @@ Behörigheter beviljas via vissa roller, till exempel de som beskrivs i följand
 |--|--|
 |Så här konfigurerar du AIR-funktioner |En av följande roller: <br/>- Global administratör<br/>- Säkerhetsadministratör <br/>Dessa roller kan tilldelas i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i Security & Compliance [Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
 |Så här godkänner eller avvisar du rekommenderade åtgärder|En av följande roller, som tilldelats i [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i Security & Compliance [Center):](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)<br/>- Global administratör <br/>- Säkerhetsadministratör<br/>- Säkerhetsläsare <br/>--- och ---<br/>- Sök och rensa (den här rollen tilldelas endast i [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Du kanske måste skapa en ny rollgrupp där och lägga till rollen Sök och rensa i den nya rollgruppen.)
+
+[Office 365 ATP-abonnemang 2-licenser](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) ska tilldelas:
+- Säkerhetsadministratörer (inklusive globala administratörer)
+- Organisationens säkerhetsoperationsteam (inklusive säkerhetsläsare och personer med rollen Sök och rensa)
+- Slutanvändare
+
+Dessutom måste [Office 365 ATP-principer](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) definieras och tillämpas för att skyddet ska vara på plats.
 
 ## <a name="next-steps"></a>Nästa steg
 

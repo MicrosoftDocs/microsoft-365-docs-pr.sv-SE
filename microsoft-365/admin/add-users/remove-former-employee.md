@@ -24,14 +24,21 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Följ den här checklistan om du vill ta bort en anställd från Microsoft 365 och säkra data. '
-ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045302"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140599"
 ---
 # <a name="remove-a-former-employee"></a>Ta bort en tidigare anställd
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
 ## <a name="sign-out-now"></a>Logga ut nu!
 

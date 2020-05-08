@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011717"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139715"
 ---
-# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av tillägg i Microsoft 365-administrationscentret
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av tillägg i Administrationscenter för Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Office-tillägg hjälper dig att anpassa dina dokument och effektivisera ditt sätt att komma åt information på webben (se [Börja använda Office-tillägget](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Som administratör kan du distribuera Office-tillägg för användarna i organisationen. Du kan göra detta med hjälp av funktionen Centraliserad distribution i Microsoft 365 administrationscenter.
   
@@ -234,7 +241,7 @@ För att vara GDPR-kompatibel för minderåriga måste du se till att en av föl
   
 Word, Excel och PowerPoint 2013 för Windows stöder samma mindre kontroller om Active Directory Authentication Library (ADAL) är aktiverat. Det finns två alternativ för efterlevnad, som förklaras härnäst.
   
-- **Aktivera ADAL**. I den hÃ¤r artikeln beskrivs hur du aktiverar ADAL för Office 2013: [HÃ¤r Ã¤ger microsoft 365 modern autentisering med Office-klienter](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Du måste också ange registernycklarna så att de aktiverar ADAL enligt beskrivningen i [Aktivera modern autentisering för Office 2013 på Windows-enheter](../security-and-compliance/enable-modern-authentication.md).<br/>Dessutom måste du installera följande apriluppdateringar för Office 2013:
+- **Aktivera ADAL**. I den hÃ¤r artikeln beskrivs hur du aktiverar ADAL för Office 2013: [HÃ¤r Ã¤ger microsoft 365 modern autentisering med Office-klienter](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>Du måste också ange registernycklarna så att de aktiverar ADAL enligt beskrivningen i [Aktivera modern autentisering för Office 2013 på Windows-enheter](../security-and-compliance/enable-modern-authentication.md).<br/>Dessutom måste du installera följande apriluppdateringar för Office 2013:
     
   - [Beskrivning av säkerhetsuppdateringen för Office 2013: 10 april 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -281,6 +288,6 @@ Du kan också ta bort ett tillägg som har distribuerats.
 
 Läs mer om hur du skapar och bygger [Office-tillägg](https://go.microsoft.com/fwlink/p/?linkid=846362).
   
-[Använd Centraliserade PowerShell-cmdlets för att hantera tillägg](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9).
+[Använd Centraliserade PowerShell-cmdlets för att hantera tillägg](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
 [Felsöka: Användaren ser inte tillägg](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Kontrollera att dina distansarbetare kan komma åt lokala resurser samtidigt som du optimerar åtkomst till Microsoft 365-molntjänster.
-ms.openlocfilehash: fb91451b52c55f2cad1e0efefe19a044ce1cc37b
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: daa1a04912dd83c7a53769299b3870b90dbfd33a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003402"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049571"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
 
@@ -35,6 +35,10 @@ Det finns tre primära konfigurationer:
 1. Du använder redan en VPN-lösning för fjärråtkomst.
 2. Du använder inte en VPN-lösning för fjärråtkomst, men du har en hybrididentitet och du behöver endast fjärråtkomst till lokala webbaserade appar.
 3. Du använder inte en VPN-lösning för fjärråtkomst och du behöver åtkomst till lokala appar, varav några inte är webbaserade.
+
+Se det här flödesschemat för konfigurationsalternativen för fjärråtkomst som beskrivs i den här artikeln.
+
+![Flödesdiagram över konfigurationen för fjärråtkomst](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 Med fjärråtkomstanslutningar kan du även använda [Remote Desktop](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) för att ansluta dina användare till en lokal dator. En distansarbetare kan använda Remote Desktop för att ansluta till datorn på deras kontor från deras Windows-, iOS- eller Android-enhet. När de har fjärranslutit kan de använda den som om de satt framför den.
 

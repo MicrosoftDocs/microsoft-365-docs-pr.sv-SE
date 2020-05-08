@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: I den här artikeln får du lära dig hur du anpassar, organiserar och hanterar gruppwebbplatsen för fillagring och fildelning.
-ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033792"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155287"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassa din gruppwebbplats för fillagring och delning
 
@@ -51,7 +51,7 @@ Förbättra navigeringen på din webbplats med [Anpassa navigeringen på din Sha
   
 Om du vill förbättra upptäckbarheten för en webbplats lägger du till den som en länk på Startsidan för SharePoint. Mer information finns i [Lägga till utvalda länkar på Startsidan för SharePoint](/sharepoint/change-links-list-on-sharepoint-home-page).
   
-Om du vill lägga till en bild på en gruppwebbplatss startsida finns i [Lägga till en bild- eller bildfil på en SharePoint-sida](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
+Om du vill lägga till en bild på en gruppwebbplatss startsida finns i [Lägga till en bild- eller bildfil på en SharePoint-sida](https://support.microsoft.com/en-us/office/add-a-picture-or-image-file-to-a-sharepoint-page-4a9b0e98-c89a-4a41-8adb-b7750dccca16).
   
 Om du vill lägga till sidor på webbplatsen finns i [Lägga till en sida på en webbplats](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
   
@@ -65,7 +65,7 @@ Börja ladda upp, se [Ladda upp en mapp eller filer till ett dokumentbibliotek](
    
 Lär dig hur du redigerar, tar bort, checkar ut filer och mycket mer. Mer information finns [i Arbeta med filer i ett dokumentbibliotek](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx).
   
-Mer information om hur du skapar vyer av bibliotek till ytspecifik data finns i [Skapa en anpassad vy av ett dokumentbibliotek](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx).
+Mer information om hur du skapar vyer av bibliotek till ytspecifik data finns i [Skapa en anpassad vy av ett dokumentbibliotek](https://support.microsoft.com/en-us/office/create-a-custom-view-of-a-document-library-8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7).
   
 ## <a name="work-with-lists-to-organize-data"></a>Arbeta med listor för att ordna data
 
@@ -73,7 +73,7 @@ SharePoint innehåller mallar för listor som du kan lägga till på webbplatsen
   
 Lär dig [Skapa en lista i SharePoint](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online).
   
-Information om att visa listorna med flera kolumner finns i [Skapa en kolumn i en SharePoint-lista eller ett bibliotek](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online).
+Information om att visa listorna med flera kolumner finns i [Skapa en kolumn i en SharePoint-lista eller ett bibliotek](https://support.microsoft.com/en-us/office/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2).
   
 Om du lagrar mycket data i en lista läser du [Hantera stora listor och bibliotek i SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   

@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140831"
+ms.locfileid: "44155439"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Topp 10 sätt att säkra Microsoft 365 för affärsplaner
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Utöver den här vägledningen rekommenderar Microsoft att användarna vidtar de
     
 Microsoft rekommenderar också att användarna skyddar sina personliga e-postkonton genom att vidta de åtgärder som rekommenderas i följande artiklar:
   
-- [Skydda ditt Outlook.com e-postkonto](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Skydda ditt Outlook.com e-postkonto](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Skydda ditt Gmail-konto med tvåstegsverifiering](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -229,7 +229,7 @@ Om mottagaren har Outlook 2013 eller Outlook 2016 och ett Microsoft-e-postkonto 
   
 Om mottagaren använder en annan e-postklient eller e-postkonto, till exempel Gmail eller Yahoo, ser de en länk där de antingen kan logga in för att läsa e-postmeddelandet eller begära en engångslösenord för att visa meddelandet i en webbläsare. Om användarna inte får e-postmeddelandet låter du dem kontrollera mappen Skräppost eller Skräppost. 
   
-Mer information finns i [Skicka, visa och svara på krypterade meddelanden i Outlook för PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx).
+Mer information finns i [Skicka, visa och svara på krypterade meddelanden i Outlook för PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. Skydda din e-post från nätfiskeattacker
 <a name="phishing"> </a>

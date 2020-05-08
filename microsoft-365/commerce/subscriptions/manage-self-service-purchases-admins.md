@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjäningsköp som görs av användare i organisationen.
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046186"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141156"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Som administratör kan du se självbetjäningsköp som görs av personer i organisationen. Du kan se produkten, köparens namn, köpta prenumerationer, utgångsdatum, inköpspris och tilldelade användare för varje självbetjäningsköp. Om det behövs för din organisation kan du inaktivera självbetjäningsköp per produkt via PowerShell. Du har samma datahanterings- och åtkomstpolicyer över produkter som köpts via självbetjäningsköp eller centralt.
 

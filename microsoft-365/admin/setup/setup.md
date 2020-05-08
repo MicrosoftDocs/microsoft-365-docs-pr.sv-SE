@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Lär dig hur du konfigurerar ditt Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365-applikationer för företag eller Office 365 Education-abonnemang.
-ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627552"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053866"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Konfigurera Microsoft 365 för företag
 
@@ -309,9 +309,9 @@ Ta en rundtur i Microsoft 365 och se hur du använder Office-mobilapparna. Se [K
 
 ### <a name="get-ready-for-office-365"></a>Förbered dig för Office 365
 
-- **Kontrollera först att du är berättigad till ett Education-abonnemang:** Följ stegen för att [Verifiera din domän för att bevisa ägande, ideell eller utbildningsstatus eller för att aktivera Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590), så att du kan godkännas av Microsoft för att använda ett Education-abonnemang. Sedan kan du konfigurera Office 365 på din skola genom att följa anvisningarna i den här artikeln.
+- **Kontrollera först att du är berättigad till ett Education-abonnemang:** Följ stegen för att [Verifiera din domän för att bevisa ägande, ideell eller utbildningsstatus eller för att aktivera Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), så att du kan godkännas av Microsoft för att använda ett Education-abonnemang. Sedan kan du konfigurera Office 365 på din skola genom att följa anvisningarna i den här artikeln.
 
-- **Behöver du hjälp?** Om du vill få hjälp med mer avancerade distributioner är **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** ett bra ställe att börja på. Du kan även [söka efter en partner](https://go.microsoft.com/fwlink/p/?linkid=391089) som kan hjälpa dig.
+- **Behöver du hjälp?** Om du vill få hjälp med mer avancerade distributioner är **[FastTrack](https://www.microsoft.com/sv-SE/fasttrack/microsoft-365/office-365)** ett bra ställe att börja på. Du kan även [söka efter en partner](https://go.microsoft.com/fwlink/p/?linkid=391089) som kan hjälpa dig.
 
 - **Planera** Med de här verktygen och resurserna kan du förbereda nätverk, katalog och användare för Office 365: [Förbered verksamheten för Office 365 Enterprise](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc).
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804753"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141513"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -52,7 +52,7 @@ De flesta görs på ett binärt sätt - om du genomför förbättringsåtgärden
 
 ### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
 
-För närvarande finns det rekommendationer för bland annat SharePoint Online, Exchange Online, OneDrive för företag, Microsoft Information Protection med mera), Azure AD och Cloud App Security. Rekommendationer för andra säkerhetsprodukter, som Azure ATP och Microsoft Defender ATP, kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
+För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 
@@ -110,8 +110,6 @@ Rankningen baseras på antalet återstående poäng kvar att uppnå, implementer
 
 ### <a name="actions"></a>Åtgärder
 
-Åtgärder som är märkta som [Ej poängsatta] spåras inte av Microsoft Secure Score. Du kan fortfarande vidta åtgärder, men att slutföra dem kommer inte att påverka din poäng. Om en åtgärd spåras av Microsoft Secure Score i framtiden och du redan har slutfört den, återspeglar din säkra poäng automatiskt ändringen.
-
 När du väljer en specifik förbättringsåtgärd visas en utfällning. För att slutföra åtgärden har du några alternativ:
 
 1. Välj **Visa inställningar** för att gå till konfigurationsskärmen och göra ändringen. Du får sedan de punkter som åtgärden är värd, synlig på toppen av flugan ut. Det kan ta upp till 24 timmar att uppdatera poäng.
@@ -122,7 +120,7 @@ När du väljer en specifik förbättringsåtgärd visas en utfällning. För at
 
 ![Exempel på förbättring av säker poäng](../../media/secure-score/secure-score1x450.png)
 
-*Figurerna 2 & 3: Utfällbara förbättringsåtgärder*
+*Figurerna 2: Utfällbara åtgärder för förbättring*
 
 ## <a name="monitor-improvements-over-time"></a>Övervaka förbättringar över tid
 

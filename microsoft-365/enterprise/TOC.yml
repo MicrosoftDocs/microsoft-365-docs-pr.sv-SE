@@ -103,8 +103,6 @@
           href: migration-microsoft-365-enterprise-workload.md
         - name: Ge distansarbetare goda förutsättningar
           href: empower-people-to-work-remotely.md
-        - name: Teams för strikt reglerade data
-          href: secure-teams-highly-regulated-data-scenario.md
         - name: SharePoint-webbplatser för strikt reglerade data
           href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Testlabbguider
