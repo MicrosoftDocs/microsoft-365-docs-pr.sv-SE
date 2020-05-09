@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använd rapporter för avancerat skydd mot &amp; office 365 i Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034968"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173328"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -101,7 +101,7 @@ Den här rapporten är baserad på insamlade data och upptäckta hot per klick (
 I informationstabellen kan du se mer information om klicktid och användarinformation. Slutligen, tänk på url skydd statusrapport visar skyddet från ATP Safe Links funktionen, så att endast kunder som har aktiverat ATP Safe Links kommer att se data återspeglas på den här rapporten.
 
 > [!NOTE]
-> Det här är en *trendrapport*för skydd , vilket innebär att data representerar trender i en större datauppsättning. Rapportering är inte tillgängligt i realtid här. För url-klickdata i realtid fortsätter du att använda URL-spårning.
+> Det här är en *trendrapport*för skydd , vilket innebär att data representerar trender i en större datauppsättning. Därför är data i den aggregerade vyn inte tillgängliga i realtid här, men data i detaljtabellvyn är, så du kan se en liten diskrepans mellan de två vyerna.
 
 ## <a name="atp-file-types-report"></a>Rapporten för ATP-filtyper
 

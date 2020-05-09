@@ -21,20 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Lär dig hur du anger att vissa enskilda användarlösenord aldrig upphör att gälla med Windows PowerShell.
-ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624040"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173502"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
-1. Gå till sekretesssidan Inställningar <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">säkerhet & i</a> **administrationscentret.** \>
-2. Välj **Redigera** **bredvid lösenordsprincip** . 
-3. Om lösenorden aldrig upphör att gälla ställer du in växlingsknappen på **Av**. Du får möjlighet att ange antalet dagar tills lösenorden upphör att gälla.
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a> **Settings**
+2. Högst upp på sidan Inställningar väljer du **Sekretess för & .**
+3. Välj **Förfalloprincip för lösenordet**. 
+4. Om lösenorden aldrig upphör att gälla klickar du på kryssrutan **bredvid Ange att användarlösenord ska upphöra att gälla efter ett antal dagar**. Du får möjlighet att ange antalet dagar tills lösenorden upphör att gälla.
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Ange principen för förfallodatum för lösenord för enskilda användare
 

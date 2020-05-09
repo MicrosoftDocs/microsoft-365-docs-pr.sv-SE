@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan återställa dina lösenord med hjälp av verktyget för återställning av lösenord med självbetjäning.
-ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919441"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173536"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -53,7 +53,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.
   
 ::: moniker range="o365-worldwide"
-1.  Gå till sekretesssidan Inställningar <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">säkerhet & i</a> **administrationscentret.** \>
+1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a> **Settings**
 
 ::: moniker-end
 
@@ -70,13 +70,13 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 ::: moniker-end
 
    
-2. Välj **Självbetjäningslösenordsåterställning**väljer du länken för **Gå till Azure-portalen för att aktivera återställning av lösenord för självbetjäning**. Du får Azure kostnadsfritt!
+2. Högst upp på sidan Inställningar väljer du **Sekretess för & .**
   
-3. Välj **Användare** i den vänstra navigeringen och välj sedan **Återställning av lösenord**.
+3. Välj **Självbetjäningslösenordsåterställning**.
   
 4. På sidan Egenskaper väljer du **Alla** för att aktivera det för alla i ditt företag och väljer sedan **Spara**.
   
-5. När användarna loggar in på Office 365 uppmanas de ange ytterligare kontaktinformation så att de kan få hjälp med att återställa lösenordet i framtiden.
+5. När användarna loggar in uppmanas de att ange ytterligare kontaktinformation som hjälper dem att återställa sitt lösenord i framtiden.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

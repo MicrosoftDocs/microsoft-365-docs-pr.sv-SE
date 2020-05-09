@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064815"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173524"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -79,11 +79,11 @@ De här stegen är endast avsedda för personer som använder en Microsoft 365 f
 
 Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365 eftersom ditt lösenord till exempel sparas i webbläsaren: 
     
-1. I Microsoft 365 väljer du **Inställningar för** \> **Office 365** \> **Personlig information**. 
+1. Välj ditt namn (ikon) i det övre högra hörnet >**Personlig information** **för mitt konto** > . 
           
-2. Kontrollera att **Kontaktinformation**och **Alternativ e-postadress** stämmer. Ändra dem annars nu. 
+2. Under **Kontaktuppgifter**dubbelkollar du att din **alternativa e-postadress** är korrekt och att du har angett ett mobiltelefonnummer. Ändra dem annars nu. 
         
-3. Logga ut från Office 365: välj ditt namn i det övre **Diane**högra \> hörnet (i bilden ovan, visad som Diane ) **Logga ut**. 
+3. Logga ut: välj ditt namn i det övre högra **Diane**hörnet \> (i bilden ovan, visad som Diane ) **Logga ut**. 
         
 4. Logga in igen: skriv \> ditt användarnamn **Nästa** \> och välj sedan **Glömt lösenord**. 
     
@@ -92,6 +92,8 @@ Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365
 Om du har glömt ditt lösenord och inte kan logga in: 
     
 - Be en annan global administratör i företaget att återställa lösenordet åt dig.
+
+- Kontrollera att du har angett alternativ kontaktinformation, inklusive ett mobiltelefonnummer. 
     
 - Du kan också [kontakta Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     

@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur administratörer kan skapa en lista över betrodda avsändare i Microsoft 365 och EOP som gör att inkommande meddelanden kan hoppa över skräppostfiltrering.
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036349"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173422"
 ---
 # <a name="create-safe-sender-lists"></a>Skapa listor för betrodda avsändare
 
@@ -85,7 +85,7 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
 
 ## <a name="use-outlook-safe-senders"></a>Använda säkra avsändare i Outlook
 
-I stället för en organisationsinställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i postlådan. Instruktioner finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+I stället för en organisationsinställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i postlådan. Instruktioner finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Detta är inte önskvärt i de flesta situationer eftersom avsändare kommer att kringgå delar av filtreringstacken. Även om du litar på avsändaren kan avsändaren komprometteras och sluta skicka skadligt innehåll. Det är bäst att du låter våra filter göra vad som behövs för att kontrollera varje meddelande och sedan [rapportera det falska positiva/ negativa till Microsoft](report-junk-email-messages-to-microsoft.md) om våra filter fick det fel. Detta hindrar också [Zap](zero-hour-auto-purge.md) att göra vad den borde göra med budskapet också.
 
 När meddelanden hoppar över skräppostfiltrering på grund av en användares lista Betrodda avsändare innehåller `SFV:SFE`huvudfältet **X-Forefront-Antispam-Report** värdet , vilket indikerar att skräppost, parodi och phish-filtrering har kringgåts.
 

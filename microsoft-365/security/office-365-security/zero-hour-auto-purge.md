@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om automatisk rensning av nolltimmar (ZAP), en e-postskyddsfunktion i Microsoft 365 som identifierar skräppost, skadlig kod eller nätfiskemeddelanden som redan har levererats till Exchange Online.
-ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034932"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173304"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Zero-hour auto purge (ZAP) - skydd mot skräppost och skadlig kod i Microsoft 365
 
@@ -42,7 +42,7 @@ Microsoft 365 uppdaterar dagligen skräppost- och malwaresignaturer i realtid. A
 
 ZAP-åtgärden är sömlös för användaren. De meddelas inte om ett meddelande identifieras och flyttas.
 
-[Säkra avsändarelistor](create-safe-sender-lists-in-office-365.md), e-postflödesregler (kallas även transportregler), inkorgsregler eller ytterligare filter har företräde framför ZAP.
+[Säkra avsändarelistor](create-safe-sender-lists-in-office-365.md), e-postflödesregler (kallas även transportregler), inkorgsregler eller ytterligare filter har företräde framför ZAP. I likhet med vad som händer i e-postflödet innebär det att även om tjänsten bestämmer att det levererade meddelandet behöver ZAP, så har meddelandet inte agerat på grund av konfigurationen för betrodda avsändare. Detta är ytterligare en anledning att vara försiktig med att konfigurera meddelanden för att kringgå filtrering.
 
 ### <a name="malware-zap"></a>Malware ZAP
 
@@ -88,28 +88,28 @@ För att avgöra om ZAP har flyttat meddelandet kan du använda [antingen rappor
 
 ## <a name="zap-faq"></a>FRÅGOR OM ZAP
 
-### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>F: Vad händer om ett legitimt meddelande flyttas till mappen Skräppost?
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Vad händer om ett legitimt meddelande flyttas till mappen Skräppost?
 
-S: Du bör följa den normala rapporteringsprocessen för [falska positiva identifieringar](report-junk-email-messages-to-microsoft.md). Den enda anledningen till att meddelandet skulle flyttas från inkorgen till mappen Skräppost skulle bero på att tjänsten har fastställt att meddelandet var skräppost eller skadligt.
+Du bör följa den normala rapporteringsprocessen för [falska positiva identifieringar](report-junk-email-messages-to-microsoft.md). Den enda anledningen till att meddelandet skulle flyttas från inkorgen till mappen Skräppost skulle bero på att tjänsten har fastställt att meddelandet var skräppost eller skadligt.
 
-### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>F: Vad händer om jag använder karantänmappen i stället för mappen Skräppost?
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Vad gör jag om jag använder karantänmappen i stället för mappen Skräppost?
 
-S: ZAP vidtar åtgärder för ett meddelande baserat på konfigurationen av dina policyer mot skräppost som beskrivs tidigare i det här avsnittet.
+ZAP kommer att vidta åtgärder för ett meddelande baserat på konfigurationen din anti-spam politik som beskrivs tidigare i det här avsnittet.
 
-### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>F: Vad händer om jag använder regler för e-postflöde eller tillåtna/blockerade avsändarelistor?
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Vad händer om jag använder betrodda avsändare, regler för e-postflöde eller tillåtna/blockerade avsändarelistor?
 
-S: Regler för e-postflöde eller blockera och tillåta organisationsinställningar har företräde. Dessa meddelanden är undantagna från ZAP.
+Betrodda avsändare, regler för e-postflöde eller blockera och tillåta organisationsinställningar har företräde. Dessa meddelanden är undantagna från ZAP eftersom tjänsten gör vad du konfigurerat den att göra. Detta är ytterligare en anledning att vara försiktig med att konfigurera meddelanden för att kringgå filtrering.
 
-### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>F: Vad händer om ett meddelande flyttas till en annan mapp (t.ex. inkorgsregler)?
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Vad händer om ett meddelande flyttas till en annan mapp (t.ex. inkorgsregler)?
 
-S: ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge som samma, eller starkare, åtgärder inte redan har tillämpats. Om phish-principen till exempel är inställd på karantän och användaren eller administratören redan har skräppost, kommer karantän att vidta åtgärder för att sätta filen i karantän.
+ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge som samma, eller starkare, åtgärder inte redan har tillämpats. Om phish-principen till exempel är inställd på karantän och användaren eller administratören redan har skräppost, kommer karantän att vidta åtgärder för att sätta filen i karantän.
 
-### <a name="q-does-zap-change-the-message-header"></a>F: Har ZAP ändra meddelanderubriken?
+### <a name="does-zap-change-the-message-header"></a>Har ZAP ändra meddelandet huvudet?
 
-S: En ZAP-åtgärd gör inga ändringar i meddelandehuvudet.
+En ZAP-åtgärd gör inga ändringar i meddelandehuvudet.
 
-### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>F: Hur påverkar ZAP postlådor som är spärrade?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Hur påverkar ZAP postlådor som är spärrade?
 
-S: ZAP sätter inte meddelanden i karantän från spärrade postlådor. ZAP kan flytta meddelanden till mappen Skräppost baserat på den åtgärd som har konfigurerats för en skräppost- eller nätfiskedom i policyer mot skräppost.
+ZAP sätter inte meddelanden i karantän från spärrade postlådor. ZAP kan flytta meddelanden till mappen Skräppost baserat på den åtgärd som har konfigurerats för en skräppost- eller nätfiskedom i policyer mot skräppost.
 
 Mer information om spärrar i Exchange Online finns [i Hold and Litigation Hold i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).

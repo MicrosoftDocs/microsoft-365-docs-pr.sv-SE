@@ -1,6 +1,6 @@
 ---
-title: Microsoft Secure Score
-description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur information beräknas och vilka säkerhetsadministratörer som kan förvänta sig.
+title: Microsoft Secure Score (föregående iteration)
+description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur du kan förbättra säkerhetspositionen och vilka säkerhetsadministratörer som kan förvänta sig.
 keywords: säkerhet, malware, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141513"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173398"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft Secure Score
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure Score (föregående iteration)
+
+>[!IMPORTANT]
+>Den här iterationen av Microsoft Secure Score ersätts med nya designelement och funktioner under de närmaste månaderna. Om du inte redan ser den senaste iterationen kommer du snart.
+>
+>Om du ser fliken **Mått & trender** bredvid Historik finns du i den nya iterationen. [Gå till Microsoft Secure Score (ny)](microsoft-secure-score-new.md)
 
 Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Om du följer rekommendationerna om säkerhetsresultat kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
 

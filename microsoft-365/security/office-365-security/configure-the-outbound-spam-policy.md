@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om hur du konfigurerar principer för skräppost som skickas ut och ut och som gäller för specifika användare, grupper eller domäner i organisationen.
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036794"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173446"
 ---
 # <a name="configure-outbound-spam-filtering"></a>Konfigurera utgående skräppostfiltrering
 
@@ -53,7 +53,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar utgåend
 
 - När du tar bort en utgående skräppostprincip från Security & Compliance Center tas regeln för skräppostfilter och den tillhörande principen för skräppost från skräppost bort.
 
-I Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell är skillnaden mellan utgående skräppostfilterprinciper och utgående skräppostfilterregler uppenbar. Du hanterar principer för skräppostutgående skräppost med cmdlets ** \*-HostedContentFilterPolicy** och du hanterar utgående skräppostfilterregler med hjälp av ** \*cmdlets -HostedContentFilterRule.**
+I Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell är skillnaden mellan utgående skräppostfilterprinciper och utgående skräppostfilterregler uppenbar. Du hanterar principer för skräppostutgående skräppost med cmdlets ** \*-HostedOutboundSpamFilterPolicy** och du hanterar regler för skräppostfilter med hjälp av ** \*cmdlets -HostedOutboundSpamFilterRule.**
 
 - I PowerShell skapar du först principen för skräppostfilter och skapar först den utgående skräppostfilterregeln som identifierar den princip som regeln gäller för.
 

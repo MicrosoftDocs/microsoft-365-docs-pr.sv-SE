@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar en postlåda för att samla in skräppost och nätfiske e-post som rapporteras av användare.
-ms.openlocfilehash: a3a175c3815c6750086526ec92d097fb7cbcefa3
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 6de4c076af5b0c669625cd8edaa367f072c27598
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43922669"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173350"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-office-365"></a>Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Office 365
 
@@ -66,9 +66,9 @@ Genom att leverera rapporterade meddelanden till en anpassad postlåda i ställe
 
      - **Microsoft (Rekommenderas)**: Brevlådan för användarinlämningar används inte (alla rapporterade meddelanden går till Microsoft).
 
-     - **Microsoft och en anpassad postlåda**: Ange e-postadressen till en befintlig Exchange Online-postlåda i rutan som visas.
+     - **Microsoft och en anpassad postlåda**: Ange e-postadressen till en befintlig Exchange Online-postlåda i rutan som visas. Distributionsgrupper är inte tillåtna.
 
-     - **Anpassad postlåda**: Ange e-postadressen till en befintlig Exchange Online-postlåda i rutan som visas.
+     - **Anpassad postlåda**: Ange e-postadressen till en befintlig Exchange Online-postlåda i rutan som visas. Distributionsgrupper är inte tillåtna.
 
      När du är klar klickar du på **Bekräfta**.
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score (förhandsgranskning)
+title: Microsoft Secure Score ny
 description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur information beräknas och vilka säkerhetsadministratörer som kan förvänta sig att använda den.
 keywords: säkerhet, malware, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
 ms.prod: w10
@@ -17,17 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
+ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
 ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173468"
+ms.locfileid: "44173568"
 ---
-# <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (förhandsgranskning)
+# <a name="microsoft-secure-score-new"></a>Microsoft Secure Score (ny)
 
 >[!IMPORTANT]
->Viss information avser förleasend produkt som kan ändras väsentligt innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som lämnas här.
+>Denna nya iteration av Microsoft Secure Score ersätter den tidigare iterationen med nya designelement och funktioner under de närmaste månaderna
+>
+>Om du INTE ser fliken **Mått & trender bredvid** Historik, är du i föregående iteration. [Gå till Microsoft Secure Score (föregående iteration)](microsoft-secure-score.md)
 
 Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns på https://security.microsoft.com/securescore i [Microsoft 365 security center](overview-security-center.md).
 
@@ -103,8 +105,8 @@ För att hjälpa dig den information du behöver snabbare är Microsofts förbä
 
 På översiktssidan för Microsoft Secure Score kan du se hur poäng delas mellan dessa grupper och vilka punkter som är tillgängliga. Översiktssidan är också platsen för att få en helhetsbild av den totala poängen, historisk trend för din säkra poäng med jämförelsemål och prioriterade förbättringsåtgärder som kan vidtas för att förbättra din poäng.
 
-![Startsida](../../media/secure-score/secure-score-homepage.png)
-för säker poäng*Bild 1: Översiktssida för Microsoft Secure Score*
+![Startsida för säkra poäng](../../media/secure-score/secure-score-homepage-new.png)
+
 
 ## <a name="take-action-to-improve-your-score"></a>Vidta åtgärder för att förbättra din poäng
 
@@ -176,32 +178,12 @@ Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition 
 
 För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad som kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-2020"></a>April 2020
+- Lade till Azure Active Directory-förbättringsåtgärder
+- Lade till Azure Advanced Threat Protection improvement-åtgärder
+- Stöd för säkerhetsrekommendationer för Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+    - Alla utgivna säkerhetsrekommendationer från TVM är nu tillgängliga
 
-#### <a name="added-azure-active-directory-improvement-action"></a>Åtgärd för förbättrad Azure Active Directory
-
-- Tillåt inte användare att bevilja samtycke till ohanterada program (finns för närvarande i släppt version)
-
-#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Lade till Azure Advanced Threat Protection improvement-åtgärder
-
-- Inaktivera tjänsten Utskriftshanteraren på domänkontrollanter
-- Ändra osäkra Kerberos-delegationer för att förhindra personifiering
-- Skydda och hantera lokala administratörslösenord med Microsoft LAPS
-- Minska risken för lateral rörelsebana för känsliga enheter
-- Ta bort vilande konton från känsliga grupper
-- Ta bort oskyddade SID-historikattribut från entiteter
-- Lösa oskyddade kontoattribut
-- Stoppa exponering för rensa textuppgifter
-- Stoppa äldre protokollkommunikation
-- Stoppa svag chifferanvändning
-
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Stöd för säkerhetsrekommendationer för Microsoft Defender ATP Threat & Vulnerability Management (TVM)
-
-Alla utgivna säkerhetsrekommendationer från TVM är nu tillgängliga.
-
-### <a name="january---march-2020"></a>Januari - mars 2020
-
-#### <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
+### <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
 
 * Alla nya statistik- och trendersvyer för CISO- och leadnivådiskussioner
 * Nya sätt att spåra och jämföra din poäng
@@ -209,16 +191,6 @@ Alla utgivna säkerhetsrekommendationer från TVM är nu tillgängliga.
 * Filtrera, tagga, söka och gruppera förbättringsåtgärder
 * Hantera mot dina framtida mål med hjälp av resultatprognoser och planerade åtgärder
 * Och mer!
-
-#### <a name="removed-not-scored-and-review-improvement-actions"></a>Borttagna "inte poäng" och "granska" förbättringsåtgärder
-
-En av principerna för Secure Score är att poängen ska vara standardiserade och lätta att relatera till. Att ha förbättringsåtgärder som inte är mätbara eller genomförbara har orsakat förvirring. En Microsoft Secure Score är bara meningsfullt när varje rekommendation kan ha en tydlig effekt på poängen. Förbättringsåtgärder som inte har gjorts är inte mätbara, och översynsförbättringsåtgärder mäts inte enligt samma standard som andra förbättringsåtgärder.
-
-Av dessa skäl har alla förbättringsåtgärder som inte har gjorts eller krävt en granskningskadens tillfälligt tagits bort. Inga åtgärder behövs från din sida.
-
-#### <a name="simplification-of-the-point-system"></a>Förenkling av poängsystemet
-
-För att standardisera poäng över flera upplevelser har varje åtgärdspoäng för säker poäng uppdaterats till 10 poäng eller mindre. Det är nödvändigt att vara mer konsekvent över den breda paus av säkerhetskontroller som vi har i dag och de som vi kommer att lägga till i framtiden. Även om detta är en betydande förändring och du kommer att se en nedgång i punkt summor, kommer det inte att finnas någon förändring i din säkerhetsposition.
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
