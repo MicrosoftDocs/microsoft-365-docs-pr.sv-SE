@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om metodtips för att dela filer och mappar med oautentiserade användare.
-ms.openlocfilehash: 4660d1ab34172bf73e6bea0de3065d2c946a7d2c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 10de9c43497bd8e07071235868414e91c20aadb5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036770"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141396"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Metodtips för att dela filer och mappar med oautentiserade användare
 
@@ -40,7 +40,7 @@ När en *Alla*-länk går ut kan den inte längre användas för att få åtkoms
 Ange ett utgångsdatum för Alla-länkar
 1. Öppna administrationscentret för SharePoint Online.
 2. Klicka på **Delning** i det vänstra navigeringsfönstret.
-3. Under **Avancerade inställningar för "Alla"-länkar** markerar du kryssrutan **Länkarna måste upphöra att gälla inom så här många dagar**.</br>
+3. Markera kryssrutan **Länkarna måste upphöra att gälla inom så här många dagar** under **Välj behörigheter och giltighetsalternativ för Alla-länkar**.</br>
    ![Skärmbild av inställningar för utgången av Alla-länkar för SharePoint på organisationsnivå](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Skriv ett antal dagar i rutan och klicka sedan på **Spara**.
 
