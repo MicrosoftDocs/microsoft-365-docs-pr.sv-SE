@@ -26,122 +26,124 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064815"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173524"
 ---
-# <a name="reset-passwords"></a><span data-ttu-id="4b835-103">Återställ lösenord</span><span class="sxs-lookup"><span data-stu-id="4b835-103">Reset passwords</span></span>
+# <a name="reset-passwords"></a><span data-ttu-id="c3c9b-103">Återställ lösenord</span><span class="sxs-lookup"><span data-stu-id="c3c9b-103">Reset passwords</span></span>
 
-<span data-ttu-id="4b835-104">Titta på en kort video om hur du återställer användarlösenord.</span><span class="sxs-lookup"><span data-stu-id="4b835-104">Watch a short video about resetting user passwords.</span></span><br><br>
+<span data-ttu-id="c3c9b-104">Titta på en kort video om hur du återställer användarlösenord.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-104">Watch a short video about resetting user passwords.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
 
-<span data-ttu-id="4b835-105">Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="4b835-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="c3c9b-105">Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
   
-## <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="4b835-106">Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="4b835-106">Let users reset their own passwords</span></span>
+## <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="c3c9b-106">Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="c3c9b-106">Let users reset their own passwords</span></span>
 
-<span data-ttu-id="4b835-p101">Vi rekommenderar att du konfigurerar återställning av egna lösenord. På så vis behöver du inte manuellt återställa lösenord för användarna. Läs i så fall [Låt användare återställa sina egna lösenord i Office 365](let-users-reset-passwords.md).</span><span class="sxs-lookup"><span data-stu-id="4b835-p101">We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).</span></span>
+<span data-ttu-id="c3c9b-p101">Vi rekommenderar att du konfigurerar återställning av egna lösenord. På så vis behöver du inte manuellt återställa lösenord för användarna. Läs i så fall [Låt användare återställa sina egna lösenord i Office 365](let-users-reset-passwords.md).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-p101">We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).</span></span>
   
-## <a name="reset-a-business-password-for-someone-else"></a><span data-ttu-id="4b835-110">Återställa ett företagslösenord för någon annan</span><span class="sxs-lookup"><span data-stu-id="4b835-110">Reset a business password for someone else</span></span>
+## <a name="reset-a-business-password-for-someone-else"></a><span data-ttu-id="c3c9b-110">Återställa ett företagslösenord för någon annan</span><span class="sxs-lookup"><span data-stu-id="c3c9b-110">Reset a business password for someone else</span></span>
 
-<span data-ttu-id="4b835-111">De här stegen är endast avsedda för personer som använder en Microsoft 365 för affärsplan.</span><span class="sxs-lookup"><span data-stu-id="4b835-111">These steps are only for people using a Microsoft 365 for business plan.</span></span> <span data-ttu-id="4b835-112">För att kunna göra dem måste du logga in med ditt Microsoft 365-administratörskonto.</span><span class="sxs-lookup"><span data-stu-id="4b835-112">To do them, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="4b835-113">Vad är ett administratörskonto?</span><span class="sxs-lookup"><span data-stu-id="4b835-113">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
+<span data-ttu-id="c3c9b-111">De här stegen är endast avsedda för personer som använder en Microsoft 365 för affärsplan.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-111">These steps are only for people using a Microsoft 365 for business plan.</span></span> <span data-ttu-id="c3c9b-112">För att kunna göra dem måste du logga in med ditt Microsoft 365-administratörskonto.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-112">To do them, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="c3c9b-113">Vad är ett administratörskonto?</span><span class="sxs-lookup"><span data-stu-id="c3c9b-113">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
 
  
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="4b835-114">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="4b835-114">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="c3c9b-114">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-114">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="4b835-115">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="4b835-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="c3c9b-115">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="4b835-116">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="4b835-116">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="c3c9b-116">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-116">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="4b835-117">På sidan **Aktiva användare** väljer du användaren och väljer sedan **Återställ lösenord**.</span><span class="sxs-lookup"><span data-stu-id="4b835-117">On the **Active users** page, select the user and then select **Reset password**.</span></span>
+2. <span data-ttu-id="c3c9b-117">På sidan **Aktiva användare** väljer du användaren och väljer sedan **Återställ lösenord**.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-117">On the **Active users** page, select the user and then select **Reset password**.</span></span>
     
-3. <span data-ttu-id="4b835-118">Följ instruktionerna på sidan **Återställ lösenord** för att automatiskt generera ett nytt lösenord för användaren eller skapa ett för dem och välj sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="4b835-118">Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.</span></span>  
+3. <span data-ttu-id="c3c9b-118">Följ instruktionerna på sidan **Återställ lösenord** för att automatiskt generera ett nytt lösenord för användaren eller skapa ett för dem och välj sedan **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-118">Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.</span></span>  
     
-4. <span data-ttu-id="4b835-119">Ange en e-postadress som användaren kan komma åt så att de får det nya lösenordet och följ upp med dem för att se till att de fick det.</span><span class="sxs-lookup"><span data-stu-id="4b835-119">Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.</span></span>
+4. <span data-ttu-id="c3c9b-119">Ange en e-postadress som användaren kan komma åt så att de får det nya lösenordet och följ upp med dem för att se till att de fick det.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-119">Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.</span></span>
  
   
-## <a name="reset-my-admin-password"></a><span data-ttu-id="4b835-120">Återställa mitt administratörslösenord</span><span class="sxs-lookup"><span data-stu-id="4b835-120">Reset my admin password</span></span>
+## <a name="reset-my-admin-password"></a><span data-ttu-id="c3c9b-120">Återställa mitt administratörslösenord</span><span class="sxs-lookup"><span data-stu-id="c3c9b-120">Reset my admin password</span></span>
 
-<span data-ttu-id="4b835-121">Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365 eftersom ditt lösenord till exempel sparas i webbläsaren:</span><span class="sxs-lookup"><span data-stu-id="4b835-121">Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:</span></span> 
+<span data-ttu-id="c3c9b-121">Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365 eftersom ditt lösenord till exempel sparas i webbläsaren:</span><span class="sxs-lookup"><span data-stu-id="c3c9b-121">Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:</span></span> 
     
-1. <span data-ttu-id="4b835-122">I Microsoft 365 väljer du **Inställningar för** \> **Office 365** \> **Personlig information**.</span><span class="sxs-lookup"><span data-stu-id="4b835-122">In Microsoft 365, select **Settings** \> **Office 365** \> **Personal info**.</span></span> 
+1. <span data-ttu-id="c3c9b-122">Välj ditt namn (ikon) i det övre högra hörnet >**Personlig information** **för mitt konto** > .</span><span class="sxs-lookup"><span data-stu-id="c3c9b-122">Select your name (icon) in upper right corner > **My Account** > **Personal Info**.</span></span> 
           
-2. <span data-ttu-id="4b835-123">Kontrollera att **Kontaktinformation**och **Alternativ e-postadress** stämmer.</span><span class="sxs-lookup"><span data-stu-id="4b835-123">Double-check that your **Contact details** and **Alternate email** are accurate.</span></span> <span data-ttu-id="4b835-124">Ändra dem annars nu.</span><span class="sxs-lookup"><span data-stu-id="4b835-124">If not, change them now.</span></span> 
+2. <span data-ttu-id="c3c9b-123">Under **Kontaktuppgifter**dubbelkollar du att din **alternativa e-postadress** är korrekt och att du har angett ett mobiltelefonnummer.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-123">Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number.</span></span> <span data-ttu-id="c3c9b-124">Ändra dem annars nu.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-124">If not, change them now.</span></span> 
         
-3. <span data-ttu-id="4b835-125">Logga ut från Office 365: välj ditt namn i det övre **Diane**högra \> hörnet (i bilden ovan, visad som Diane ) **Logga ut**.</span><span class="sxs-lookup"><span data-stu-id="4b835-125">Sign out of Office 365: select your name in the upper right corner (in the above image, shown as **Diane**) \> **Sign out**.</span></span> 
+3. <span data-ttu-id="c3c9b-125">Logga ut: välj ditt namn i det övre högra **Diane**hörnet \> (i bilden ovan, visad som Diane ) **Logga ut**.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-125">Sign out: select your name in the upper right corner (in the above image, shown as **Diane**) \> **Sign out**.</span></span> 
         
-4. <span data-ttu-id="4b835-126">Logga in igen: skriv \> ditt användarnamn **Nästa** \> och välj sedan **Glömt lösenord**.</span><span class="sxs-lookup"><span data-stu-id="4b835-126">Now sign in again: type your user name \> **Next** \> and then select **Forgot password**.</span></span> 
+4. <span data-ttu-id="c3c9b-126">Logga in igen: skriv \> ditt användarnamn **Nästa** \> och välj sedan **Glömt lösenord**.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-126">Now sign in again: type your user name \> **Next** \> and then select **Forgot password**.</span></span> 
     
-5. <span data-ttu-id="4b835-p104">Följ anvisningarna i guiden för att återställa lösenordet. De alternativa kontaktuppgifterna används för att verifiera att du är rätt person som ska återställa lösenordet.</span><span class="sxs-lookup"><span data-stu-id="4b835-p104">Follow the steps in the wizard to reset your password. It uses your alternate contact info to verify you're the right person to reset your password.</span></span> 
+5. <span data-ttu-id="c3c9b-p104">Följ anvisningarna i guiden för att återställa lösenordet. De alternativa kontaktuppgifterna används för att verifiera att du är rätt person som ska återställa lösenordet.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-p104">Follow the steps in the wizard to reset your password. It uses your alternate contact info to verify you're the right person to reset your password.</span></span> 
     
-<span data-ttu-id="4b835-129">Om du har glömt ditt lösenord och inte kan logga in:</span><span class="sxs-lookup"><span data-stu-id="4b835-129">If you forgot your password and can't sign in:</span></span> 
+<span data-ttu-id="c3c9b-129">Om du har glömt ditt lösenord och inte kan logga in:</span><span class="sxs-lookup"><span data-stu-id="c3c9b-129">If you forgot your password and can't sign in:</span></span> 
     
-- <span data-ttu-id="4b835-130">Be en annan global administratör i företaget att återställa lösenordet åt dig.</span><span class="sxs-lookup"><span data-stu-id="4b835-130">Ask another global admin in your business to reset your password for you.</span></span>
-    
-- <span data-ttu-id="4b835-131">Du kan också [kontakta Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).</span><span class="sxs-lookup"><span data-stu-id="4b835-131">Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).</span></span> 
-    
-## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a><span data-ttu-id="4b835-132">Återställa alla företagslösenord för alla i organisationen samtidigt</span><span class="sxs-lookup"><span data-stu-id="4b835-132">Reset all business passwords for everyone in your organization at the same time</span></span>
-<span data-ttu-id="4b835-133"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="4b835-133"><a name="bkmk_forgot"> </a></span></span>
+- <span data-ttu-id="c3c9b-130">Be en annan global administratör i företaget att återställa lösenordet åt dig.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-130">Ask another global admin in your business to reset your password for you.</span></span>
 
-<span data-ttu-id="4b835-p105">Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du har tusentals användare kan du läsa mer om hur du återställer flera lösenord samtidigt i nästa avsnitt.</span><span class="sxs-lookup"><span data-stu-id="4b835-p105">These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk.</span></span>
+- <span data-ttu-id="c3c9b-131">Kontrollera att du har angett alternativ kontaktinformation, inklusive ett mobiltelefonnummer.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-131">Make sure you've provided alternate contact information, including a mobile phone number.</span></span> 
+    
+- <span data-ttu-id="c3c9b-132">Du kan också [kontakta Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-132">Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).</span></span> 
+    
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a><span data-ttu-id="c3c9b-133">Återställa alla företagslösenord för alla i organisationen samtidigt</span><span class="sxs-lookup"><span data-stu-id="c3c9b-133">Reset all business passwords for everyone in your organization at the same time</span></span>
+<span data-ttu-id="c3c9b-134"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="c3c9b-134"><a name="bkmk_forgot"> </a></span></span>
+
+<span data-ttu-id="c3c9b-p105">Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du har tusentals användare kan du läsa mer om hur du återställer flera lösenord samtidigt i nästa avsnitt.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-p105">These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk.</span></span>
   
-1. <span data-ttu-id="4b835-136">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="4b835-136">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="c3c9b-137">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-137">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
     
-2. <span data-ttu-id="4b835-137">Välj alternativet **bredvid Visa namn** om du vill välja alla i ditt företag.</span><span class="sxs-lookup"><span data-stu-id="4b835-137">Select the option next to **Display name** to select everyone in your business.</span></span> <span data-ttu-id="4b835-138">Avmarkera sedan dig själv.</span><span class="sxs-lookup"><span data-stu-id="4b835-138">Then unselect yourself.</span></span> <span data-ttu-id="4b835-139">Du kan inte återställa ditt eget lösenord samtidigt som du återställer alla andras lösenord.</span><span class="sxs-lookup"><span data-stu-id="4b835-139">You can't reset your own password at the same time you reset everyone else's password.</span></span>
+2. <span data-ttu-id="c3c9b-138">Välj alternativet **bredvid Visa namn** om du vill välja alla i ditt företag.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-138">Select the option next to **Display name** to select everyone in your business.</span></span> <span data-ttu-id="c3c9b-139">Avmarkera sedan dig själv.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-139">Then unselect yourself.</span></span> <span data-ttu-id="c3c9b-140">Du kan inte återställa ditt eget lösenord samtidigt som du återställer alla andras lösenord.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-140">You can't reset your own password at the same time you reset everyone else's password.</span></span>
     
-3. <span data-ttu-id="4b835-140">Välj **Återställ lösenord**.</span><span class="sxs-lookup"><span data-stu-id="4b835-140">Select **Reset password**.</span></span> 
+3. <span data-ttu-id="c3c9b-141">Välj **Återställ lösenord**.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-141">Select **Reset password**.</span></span> 
 
-4. <span data-ttu-id="4b835-141">Följ instruktionerna på sidan **Återställ lösenord** och välj **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="4b835-141">Follow the instructions on the **Reset password** page, and select **Reset**.</span></span>  <span data-ttu-id="4b835-142">Om du har valt att automatiskt generera lösenorden visas de nya tillfälliga lösenorden.</span><span class="sxs-lookup"><span data-stu-id="4b835-142">If you opted for auto-generating the passwords, the new temporary passwords will be displayed.</span></span>   
+4. <span data-ttu-id="c3c9b-142">Följ instruktionerna på sidan **Återställ lösenord** och välj **Återställ**.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-142">Follow the instructions on the **Reset password** page, and select **Reset**.</span></span>  <span data-ttu-id="c3c9b-143">Om du har valt att automatiskt generera lösenorden visas de nya tillfälliga lösenorden.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-143">If you opted for auto-generating the passwords, the new temporary passwords will be displayed.</span></span>   
     
-5. <span data-ttu-id="4b835-143">Ange en e-postadress där du kan få de tillfälliga lösenorden.</span><span class="sxs-lookup"><span data-stu-id="4b835-143">Enter an email address where you can receive the temporary passwords.</span></span> <span data-ttu-id="4b835-144">Du måste meddela användarna vilka tillfälliga lösenord de är.</span><span class="sxs-lookup"><span data-stu-id="4b835-144">You'll need to notify your users what their temporary passwords are.</span></span>
+5. <span data-ttu-id="c3c9b-144">Ange en e-postadress där du kan få de tillfälliga lösenorden.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-144">Enter an email address where you can receive the temporary passwords.</span></span> <span data-ttu-id="c3c9b-145">Du måste meddela användarna vilka tillfälliga lösenord de är.</span><span class="sxs-lookup"><span data-stu-id="c3c9b-145">You'll need to notify your users what their temporary passwords are.</span></span>
     
 
   
-## <a name="reset-business-passwords-in-bulk"></a><span data-ttu-id="4b835-145">Återställa företagslösenord i grupp</span><span class="sxs-lookup"><span data-stu-id="4b835-145">Reset business passwords in bulk</span></span>
-<span data-ttu-id="4b835-146"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="4b835-146"><a name="bkmk_forgot"> </a></span></span>
+## <a name="reset-business-passwords-in-bulk"></a><span data-ttu-id="c3c9b-146">Återställa företagslösenord i grupp</span><span class="sxs-lookup"><span data-stu-id="c3c9b-146">Reset business passwords in bulk</span></span>
+<span data-ttu-id="c3c9b-147"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="c3c9b-147"><a name="bkmk_forgot"> </a></span></span>
 
-<span data-ttu-id="4b835-p109">Använd PowerShell! Kolla in det här inlägget av Eyal Doron: [Hantera lösenord med PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).</span><span class="sxs-lookup"><span data-stu-id="4b835-p109">Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).</span></span>
+<span data-ttu-id="c3c9b-p109">Använd PowerShell! Kolla in det här inlägget av Eyal Doron: [Hantera lösenord med PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-p109">Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).</span></span>
   
-<span data-ttu-id="4b835-149">Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="4b835-149">Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).</span></span>
+<span data-ttu-id="c3c9b-150">Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-150">Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).</span></span>
   
-<span data-ttu-id="4b835-150">Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).</span><span class="sxs-lookup"><span data-stu-id="4b835-150">For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).</span></span>
+<span data-ttu-id="c3c9b-151">Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-151">For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).</span></span>
   
-## <a name="force-a-password-change-for-all-users-in-your-business"></a><span data-ttu-id="4b835-151">Tvinga fram ändring av lösenord för alla i företaget</span><span class="sxs-lookup"><span data-stu-id="4b835-151">Force a password change for all users in your business</span></span>
-<span data-ttu-id="4b835-152"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="4b835-152"><a name="bkmk_forgot"> </a></span></span>
+## <a name="force-a-password-change-for-all-users-in-your-business"></a><span data-ttu-id="c3c9b-152">Tvinga fram ändring av lösenord för alla i företaget</span><span class="sxs-lookup"><span data-stu-id="c3c9b-152">Force a password change for all users in your business</span></span>
+<span data-ttu-id="c3c9b-153"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="c3c9b-153"><a name="bkmk_forgot"> </a></span></span>
 
-<span data-ttu-id="4b835-153">Läs det här blogginlägget av Vasil Michev, Microsoft MVP: [Framtvinga ändring av lösenord för alla användare i Office 365](https://go.microsoft.com/fwlink/?linkid=853693).</span><span class="sxs-lookup"><span data-stu-id="4b835-153">Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).</span></span>
+<span data-ttu-id="c3c9b-154">Läs det här blogginlägget av Vasil Michev, Microsoft MVP: [Framtvinga ändring av lösenord för alla användare i Office 365](https://go.microsoft.com/fwlink/?linkid=853693).</span><span class="sxs-lookup"><span data-stu-id="c3c9b-154">Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).</span></span>
   
-## <a name="im-lost"></a><span data-ttu-id="4b835-154">Det går inte!</span><span class="sxs-lookup"><span data-stu-id="4b835-154">I'm lost!</span></span>
-<span data-ttu-id="4b835-155"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="4b835-155"><a name="bkmk_forgot"> </a></span></span>
+## <a name="im-lost"></a><span data-ttu-id="c3c9b-155">Det går inte!</span><span class="sxs-lookup"><span data-stu-id="c3c9b-155">I'm lost!</span></span>
+<span data-ttu-id="c3c9b-156"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="c3c9b-156"><a name="bkmk_forgot"> </a></span></span>
 
-<span data-ttu-id="4b835-156">Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet för kontot som jag använder med Office.](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)</span><span class="sxs-lookup"><span data-stu-id="4b835-156">Try this article: [I forgot the username or password for the account I use with Office.](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)</span></span>
+<span data-ttu-id="c3c9b-157">Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet för kontot som jag använder med Office.](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)</span><span class="sxs-lookup"><span data-stu-id="c3c9b-157">Try this article: [I forgot the username or password for the account I use with Office.](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="4b835-157">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="4b835-157">Related articles</span></span>
-<span data-ttu-id="4b835-158"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="4b835-158"><a name="bkmk_forgot"> </a></span></span>
+## <a name="related-articles"></a><span data-ttu-id="c3c9b-158">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="c3c9b-158">Related articles</span></span>
+<span data-ttu-id="c3c9b-159"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="c3c9b-159"><a name="bkmk_forgot"> </a></span></span>
   
-[<span data-ttu-id="4b835-159">Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="4b835-159">Let users reset their own passwords</span></span>](let-users-reset-passwords.md)
+[<span data-ttu-id="c3c9b-160">Låt användare återställa sina egna lösenord</span><span class="sxs-lookup"><span data-stu-id="c3c9b-160">Let users reset their own passwords</span></span>](let-users-reset-passwords.md)
 
-[<span data-ttu-id="4b835-160">Ange att en enskild användares lösenord aldrig ska förfalla</span><span class="sxs-lookup"><span data-stu-id="4b835-160">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+[<span data-ttu-id="c3c9b-161">Ange att en enskild användares lösenord aldrig ska förfalla</span><span class="sxs-lookup"><span data-stu-id="c3c9b-161">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
 
-[<span data-ttu-id="4b835-161">Ange förfalloprincip för lösenord i organisationen</span><span class="sxs-lookup"><span data-stu-id="4b835-161">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+[<span data-ttu-id="c3c9b-162">Ange förfalloprincip för lösenord i organisationen</span><span class="sxs-lookup"><span data-stu-id="c3c9b-162">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
 
-[<span data-ttu-id="4b835-162">Återställa en användare</span><span class="sxs-lookup"><span data-stu-id="4b835-162">Restore a user</span></span>](restore-user.md)
+[<span data-ttu-id="c3c9b-163">Återställa en användare</span><span class="sxs-lookup"><span data-stu-id="c3c9b-163">Restore a user</span></span>](restore-user.md)
 
-[<span data-ttu-id="4b835-163">Ta bort en tidigare anställd</span><span class="sxs-lookup"><span data-stu-id="4b835-163">Remove a former employee</span></span>](remove-former-employee.md)
+[<span data-ttu-id="c3c9b-164">Ta bort en tidigare anställd</span><span class="sxs-lookup"><span data-stu-id="c3c9b-164">Remove a former employee</span></span>](remove-former-employee.md)
 
-[<span data-ttu-id="4b835-164">Utbildningsvideor för Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="4b835-164">Microsoft 365 for business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="c3c9b-165">Utbildningsvideor för Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="c3c9b-165">Microsoft 365 for business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
