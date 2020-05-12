@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 produktivitet illustrationer
-description: Använd de här illustrationerna för att förstå arkitekturgrunderna för implementering av Microsoft 365-produktivitetslösningar.
+title: Produktivitetsillustrationer för Microsoft 365
+description: Använd de här illustrationerna för att förstå grundläggande arkitektur för implementering av Microsoft 365-produktivitetslösningar.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -11,70 +11,70 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
-ms.translationtype: MT
+ms.openlocfilehash: 2ad424741ecbfe6f4bb8693df13a92bc71f012ce
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022138"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160093"
 ---
-# <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 produktivitet illustrationer
+# <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
-Microsoft 365 enterprise solution-serien ger vägledning för implementering av Microsoft 365-funktioner, särskilt där funktioner omfattar teknik över flera tekniker.
+Microsoft 365-företagslösningsserien ger vägledning för implementering av Microsoft 365-funktioner, särskilt där funktioner möter tekniker.
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams och relaterade produktivitetstjänster i Microsoft 365 för IT-arkitekter
-Produktivitetstjänsternas logiska arkitektur i Microsoft 365, som leder med Microsoft Teams.
+Den logiska arkitekturen för produktivitetstjänster i Microsoft 365, med Microsoft Teams i spetsen.
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Tummen bild för Teams logisk arkitektur affisch](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Uppdaterad april 2019   |Microsoft tillhandahåller en uppsättning produktivitetstjänster som arbetar tillsammans för att tillhandahålla samarbetsupplevelser med funktioner för datastyrning, säkerhet och efterlevnad. <br/> <br/>Den här illustrationsserien ger en vy över produktivitetstjänsternas logiska arkitektur för företagsarkitekter, vilket leder med Microsoft Teams.|
+|[![Miniatyrbild av affischen för Teams logiska arkitektur](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Uppdaterad i april 2019   |Microsoft erbjuder ett utbud av produktivitetstjänster som samverkar för att tillhandahålla samarbetsupplevelser med funktioner för datastyrning, säkerhet och efterlevnad. <br/> <br/>Den här serien med illustrationer ger en översikt över produktivitetstjänsternas logiska arkitektur för företagsarkitekter, med Microsoft Teams i spetsen.|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupper i Microsoft 365 för IT-arkitekter
-Vad IT-arkitekter behöver veta om grupper i Microsoft 365
+Det IT-arkitekter behöver veta om grupper i Microsoft 365
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Tummen bild för grupper infographic](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Uppdaterad juni 2019|Dessa illustrationer beskriver de olika typerna av grupper, hur dessa skapas och hanteras och några styrningsrekommendationer.|
+|[![Miniatyrbild av infografiken för grupper](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Uppdaterad i juni 2019|De här illustrationerna beskriver de olika typerna av grupper, hur de skapas och hanteras samt några rekommendationer för styrning.|
 
-### <a name="security-and-information-protection-for-multi-region-organizations"></a>Säkerhets- och informationsskydd för organisationer med flera regioner
-Säkerhets- och informationsskydd för organisationer med flera regioner med en enda microsoft 365-klientorganisation
-
-|**Objekt**|**Beskrivning**|
-|:-----|:-----|
-|[![Tummen bild för flera regioner infographic](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Uppdaterad mars 2020 |Att använda en enda Microsoft 365-klient för din globala organisation är det bästa valet och upplevelsen av många skäl. Men många arkitekter brottas med hur man uppfyller säkerhets- och informationsskyddsmålen i olika regioner. Den här uppsättningen avsnitt innehåller rekommendationer. |
-
-### <a name="microsoft-defender-atp-deployment-strategy"></a>Microsoft Defender ATP-distributionsstrategi
-
-Beroende på din miljö är vissa verktyg bättre lämpade för vissa arkitekturer.
-
+### <a name="security-and-information-protection-for-multi-region-organizations"></a>Säkerhet och informationsskydd för organisationer i flera regioner
+Säkerhet och informationsskydd för organisationer i flera regioner med en enda Microsoft 365-klientorganisation
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Tummenvbildning för Microsoft Defender ATP-distributionsstrategi](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad februari 2020| Det arkitektoniska materialet hjälper dig att planera distributionen för följande arkitekturer: <ul><li> Moln-native </li><li> Samhantering </li><li> På plats</li><li>Utvärdering och lokal introduktion</li>
+|[![Miniatyrbild av infografiken för flera regioner](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Uppdaterad i mars 2020 |Användning av en enda Microsoft 365-klientorganisation för din globala organisation är det bästa alternativet och den bästa upplevelsen av många olika anledningar. Men många arkitekter kämpar med hur de ska uppfylla kraven för säkerhet och informationsskydd i olika regioner. De här avsnitten innehåller rekommendationer. |
+
+### <a name="microsoft-defender-atp-deployment-strategy"></a>Distributionsstrategi för Microsoft Defender Avancerat skydd
+
+Beroende på din miljö passar vissa verktyg bättre för vissa arkitekturer.
+
+
+|**Objekt**|**Beskrivning**|
+|:-----|:-----|
+|[![Miniatyrbild av distributionsstrategin för Microsoft Defender Avancerat skydd](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad i februari 2020| Med hjälp av arkitekturmaterialet kan du planera din distribution för följande arkitekturer: <ul><li> Molnbaserad </li><li> Samhantering </li><li> Lokal</li><li>Utvärdering och lokal registrering</li>
 
 
 <a name="m365foundationinfra"></a>
-### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruktur för Microsoft 365 Enterprise Foundation
+### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Grundläggande infrastruktur för Microsoft 365 Enterprise
 
-Få en översikt över [grundinfrastrukturen](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) för Microsoft 365 Enterprise för att påbörja distributionen.
+Få en översikt över den [grundläggande infrastrukturen](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) för Microsoft 365 Enterprise för att komma igång med distributionen.
   
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Miniatyrbild av affischen Microsoft 365 Enterprise Foundation Infrastructure](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Visa pdf-filer online](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Uppdaterad december 2019| Den här affischen sammanfattar varje fas av grundinfrastrukturen i form av mål, funktioner och verktyg, designbeslut, konfigurationsresultat, introduktion och löpande övervakning och uppdateringar. <br/>| 
+|[![Miniatyrbild av affischen för grundläggande infrastruktur för Microsoft 365 Enterprise](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Visa online](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Uppdaterad i december 2019| I den här affischen sammanfattas varje fas i den grundläggande infrastrukturen när det gäller mål, funktioner och verktyg, utformningsbeslut, konfigurationsresultat, registrering och fortlöpande övervakning och uppdateringar. <br/>| 
 
    
 <a name="BKMK_O365IDP"></a>
 ### <a name="identity-and-device-protection-for-office-365"></a>Identitets- och enhetsskydd för Office 365
 
-Rekommenderade funktioner för att skydda identiteter och enheter som har åtkomst till Office 365, andra SaaS-tjänster och lokala program som publiceras med Azure AD Application Proxy.
+Rekommenderade funktioner för att skydda identiteter och enheter som kommer åt Office 365, andra SaaS-tjänster och lokala program som publicerats med Azure AD-programproxy.
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Modellaffisch: Identitets- och enhetsskydd för Office 365 och andra SaaS-program](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032)     <br/> Uppdaterad november 2018|Det är viktigt att använda konsekventa skyddsnivåer för data, identiteter och enheter. Det här dokumentet visar vilka funktioner som är jämförbara med mer information om funktioner för att skydda identiteter och enheter.  <br/> |
+|[![Modellaffisch: Identitets- och enhetsskydd för Office 365 och andra SaaS-program](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Uppdaterad i november 2018|Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. I det här dokumentet kan du se vilka funktioner som är jämförbara och få mer information om funktioner för att skydda identiteter och enheter.  <br/> |
    
 <!--
 
@@ -110,16 +110,16 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 
 -->
 
-### <a name="microsoft-telephony-solutions"></a>Lösningar för Microsoft-telefoni
+### <a name="microsoft-telephony-solutions"></a>Microsofts telefonilösningar
 
-Microsoft stöder flera alternativ när du börjar din resa till Teams i Microsoft-molnet. Den här affischen hjälper dig att avgöra vilken Microsoft-telefonlösning (Telefonsystem i molnet eller Enterprise Voice lokalt) som är rätt för användare i organisationen och hur din organisation kan ansluta till PSTN (Public Switched Telephone Network).
+Microsoft har stöd för flera olika alternativ när du påbörjar övergången till Teams i Microsoft-molnet. Med den här affischen får du hjälp att avgöra vilken Microsoft-telefonilösning (telefonsystem i molnet eller VoIP för företag lokalt) som passar för användarna i din organisation, och hur din organisation kan ansluta till det publika telenätet (PSTN).
 
 
-[![Miniatyr för affischen Microsoft Telephony Solutions](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Miniatyrbild av affischen för Microsofts telefonilösningar](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
-Uppdaterad januari 2019
+Uppdaterad i januari 2019
 
-Mer information finns i artikeln för den här affischen: [Microsoft Telephony Solutions](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
+Mer information finns i artikeln för denna affisch: [Microsofts telefonilösningar](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
   
 ## <a name="see-also"></a>Se även
