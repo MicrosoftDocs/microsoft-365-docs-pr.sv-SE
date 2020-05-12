@@ -1,7 +1,7 @@
 - name: Hantera företagsprenumerationer
   href: index.yml
 - name: Hjälpcenter för Microsoft 365-administratörer
-  href: ../admin/admin-home.md
+  href: ../admin/index.yml
 - name: Prova eller köp
   items:
     - name: Registrera dig för en utvärderingsversion av Microsoft 365
@@ -51,7 +51,7 @@
     - name: Förstå din faktura
       href: billing-and-payments/understand-your-invoice.md
     - name: Hantera betalningsmetoder
-      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+      href: billing-and-payments/manage-payment-methods.md
     - name: Betala för prenumerationen
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Ändra hur du betalar
