@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se till att skapa starka och lätthanterliga lösenord i hela organisationen.
-ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5c2567ee2027be2a84121fdad10ba873ec1c43
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637054"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214656"
 ---
 # <a name="step-2-secure-your-passwords"></a>Steg 2: Skydda dina lösenord
 
@@ -31,7 +31,7 @@ ms.locfileid: "43637054"
 
 *Det här steget är valfritt och gäller både E3- och E5-versionerna av Microsoft 365*
 
-Alla dina användare bör följa [Microsofts lösenordsvägledning](https://www.microsoft.com/research/publication/password-guidance/) när de skapar lösenord till sina användarkonton.
+Alla dina användare bör följa [Microsofts lösenordsvägledning](https://www.microsoft.com/research/publication/password-guidance) när de skapar lösenord till sina användarkonton.
 
 Hindra användarna från att skapa svaga lösenord genom att använda Azure AD-lösenordsskydd, som tillämpar både en global lista med blockerade lösenord och en valfri lista med blockerade lösenord som du väljer. Du kan till exempel välja ord som gäller specifikt för din organisation, som:
 

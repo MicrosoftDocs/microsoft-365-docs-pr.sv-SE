@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper finansiella tjänster att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160465"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214702"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -216,7 +216,7 @@ Finansiella institut hanterar stora mängder data. Alla lagringsperioder initier
 - Vad inträffar när den lagringsperioden går ut (ta bort dokumentet, starta en granskning eller vidta ingen åtgärd)
 -  Vad utlöser att den lagringsperioden startar (skapat datum, senast ändrat datum, märkt datum eller en händelse) och markerar dokumentet eller e-postmeddelandet som en post (vilket betyder att det inte kan redigeras eller raderas)
 
-Kvarhållningsetiketterna publiceras sedan till SharePoint- och OneDrive-webbplatser, Exchange-postlådor och Microsoft 365-grupper. Användare kan tillämpa lagringsetiketterna manuellt i dokument och e-postmeddelanden. Arkivhanterare kan använda information för att automatiskt använda etiketterna. Intelligenta funktioner kan baseras på [över 90 inbyggda typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (till exempel ABA outingnummer, bankkontonummer eller personnummer). De kan också anpassas baserat på nyckelord och känsliga data som finns i dokument och e-postmeddelanden, t. ex kreditkortsnummer eller annan personlig information som är baserad på SharePoint-metadata. För data som inte är enkel att identifiera i manuell eller automatiserad mönstermatchning kan träningsbara klassificerare användas för att smart klassificera dokument baserat på maskininlärningstekniker.
+Kvarhållningsetiketterna publiceras sedan till SharePoint- och OneDrive-webbplatser, Exchange-postlådor och Microsoft 365-grupper. Användare kan tillämpa lagringsetiketterna manuellt i dokument och e-postmeddelanden. Arkivhanterare kan använda information för att automatiskt använda etiketterna. Intelligenta funktioner kan baseras på [över 90 inbyggda typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (till exempel ABA outingnummer, bankkontonummer eller personnummer). De kan också anpassas baserat på nyckelord och känsliga data som finns i dokument och e-postmeddelanden, t. ex kreditkortsnummer eller annan personlig information som är baserad på SharePoint-metadata. För data som inte är enkel att identifiera i manuell eller automatiserad mönstermatchning kan träningsbara klassificerare användas för att smart klassificera dokument baserat på maskininlärningstekniker.
  
 **Securities and Exchange Commission (SEC)** kräver att mäklare och andra reglerade finansiella institut bevarar all affärsrelaterad kommunikation. Kraven gäller för många typer av kommunikation och data, t. ex. e-post, dokument, snabbmeddelanden, fax och mycket mer. **SEC-regel 17a-4** definierar villkor som dessa organisationer måste uppfylla för att lagra poster i ett elektroniskt datalagringssystem. Under 2003 utfärdade SEC en version som klargör de här kraven. Det innehöll bland annat följande kriterier:
 
