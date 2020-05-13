@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f336c9ef2957374223a8f0d7b64f892c87e1169d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631555"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214668"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -63,11 +63,11 @@ Varje bransch har också sin egen uppsättning specialiserade regler. I stället
 
 Den här vägledningen visar hur du implementerar skydd för identiteter och enheter för var och en av dessa skyddsnivåer. Använd den här vägledningen som utgångspunkt för din organisation och justera principerna så att de uppfyller organisationens specifika krav.
 
-Det är viktigt att använda konsekventa skyddsnivåer för data, identiteter och enheter. Om du till exempel implementerar den här vägledningen måste du skydda dina data på jämförbara nivåer. Dessa arkitekturmodeller visar vilka funktioner som är jämförbara.
+Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Om du till exempel implementerar den här vägledningen måste du skydda dina data på jämförbara nivåer. Dessa arkitekturmodeller visar vilka funktioner som är jämförbara.
 
 **Identitets- och enhetsskydd för Office 365**<br/>
 ![Miniatyr för affischen "Identitets- och enhetsskydd för Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032)
+[PDF-dokument](https://go.microsoft.com/fwlink/p/?linkid=841656)  |  [Visio (på sätt och vi)](https://go.microsoft.com/fwlink/p/?linkid=841657)  |  [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Lösningar för filskydd i Office 365**<br/>
 ![Miniatyr för affischen "Filskyddslösningar i Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
@@ -121,10 +121,10 @@ Den här vägledningen visar hur du skapar rekommenderade principer för att gen
 Den här vägledningen visar hur du implementerar en uppsättning principer för att skydda åtkomsten till Office 365, inklusive Exchange Online, SharePoint Online och OneDrive för företag. Förutom att implementera dessa principer rekommenderar vi att du även höjer skyddsnivån för din klient med hjälp av dessa resurser:
 
 - [Konfigurera din klient för ökad säkerhet](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): Dessa rekommendationer gäller för originalsäkerhet för din klient.
-- [Microsoft 365-säkerhetsfärdplan: De viktigaste prioriteringarna för de första 30 dagarna, 90 dagarna och därefter](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): Dessa rekommendationer omfattar loggning, datastyrning, administratörsåtkomst och hotskydd.
+- [Microsoft 365-säkerhetsfärdplan: De viktigaste prioriteringarna för de första 30 dagarna, 90 dagarna och därefter](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Dessa rekommendationer omfattar loggning, datastyrning, administratörsåtkomst och hotskydd.
 
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10- och Microsoft 365-appar för företag
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 och  Microsoft 365-appar för företag
 
 Windows 10 och Microsoft 365 Apps för företag är den rekommenderade klientmiljön för datorer. Vi rekommenderar Windows 10, eftersom Azure är utformat för att ge den smidigaste upplevelsen som möjligt för både lokala och Azure AD. Windows 10 innehåller även avancerade säkerhetsfunktioner som kan hanteras via Intune. Microsoft 365 Apps for Enterprise innehåller de senaste versionerna av Office-program. Dessa använder modern autentisering, vilket är säkrare och ett krav på villkorlig åtkomst. Dessa appar innehåller även förbättrade säkerhets- och efterlevnadsverktyg.
 
