@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du skapar, ändrar och tar bort de anti-nätfiskeprinciper som är tillgängliga i EOP-organisationer (Exchange Online Protection) med eller utan Exchange Online-postlådor.
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208905"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213394"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för nätfiske i EOP
 
@@ -31,7 +31,7 @@ Organisationer med Exchange Online-postlådor kan konfigurera principer mot nät
 
 Information om hur du skapar och ändrar de mer avancerade ATP-principerna för nätfiske som är tillgängliga i Office 365 Advanced Threat Protection (Office 365 ATP) finns i [Konfigurera ATP-principer för nätfiske](configure-atp-anti-phishing-policies.md).
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Principer mot nätfiske i Security & Compliance Center vs Exchange Online PowerShell
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Principer mot nätfiske i Security & Compliance Center vs PowerShell
 
 De grundläggande inslagen i en anti-phishing-policy är:
 

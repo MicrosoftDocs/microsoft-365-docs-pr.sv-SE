@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: I följande tabell finns en lista över funktioner som är tillgängliga i EOP-tjänsten (Exchange Online Protection).
-ms.openlocfilehash: d3b7638a1ff060d1c1760f62e487a7cd649a9131
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209469"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213430"
 ---
 # <a name="eop-features"></a>Funktioner i EOP
 
@@ -78,7 +78,7 @@ I följande tabell finns en lista över funktioner som är tillgängliga i EOP-t
 |Webbaserad administration|Administratörer kan hantera tjänsten i Administrationscenter för Exchange (EAC), som stöds på 60 språk. Mer information finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Katalogsynkronisering|Katalogsynkronisering är tillgängligt via Azure Active Directory Sync-verktyget. Mer information finns i avsnittet "Använd katalogsynkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).|
 |Katalogbaserad kantblockering (DBEB)|Med DBEB-funktionen kan du avvisa meddelanden för ogiltiga mottagare vid tjänstens nätverksper perimeter. MED DBEB kan administratörer lägga till e-postaktiverade mottagare i Microsoft 365 och blockera alla meddelanden som skickas till e-postadresser som inte finns i Microsoft 365. Mer information om hur du konfigurerar DBEB finns i [Använda katalogbaserad kantblockering för att avvisa meddelanden som skickas till ogiltiga mottagare](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
-|Powershell|Fullständig EOP-funktionalitet finns i Exchange Online Protection PowerShell. Mer information finns i [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
+|Powershell|Fullständig EOP-funktionalitet finns i fristående EOP PowerShell. Mer information finns i [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
 |**Rapportering och loggning**||
 |Meddelandespårning|Administratörer kan följa e-postmeddelanden när de passerar genom tjänsten. Du kan avgöra om ett riktat e-postmeddelande togs emot, avvisades, sköts upp eller levererades av tjänsten. På så sätt kan du effektivt svara på användarnas frågor, felsöka problem med e-postflödet, validera principändringar och minska behovet av att kontakta teknisk support för att få hjälp. Mer information finns [i Meddelandespårning i Säkerhets- & Compliance Center](message-trace-scc.md).|
 |Webbaserade rapporter|E-postskyddsrapporterna i Security & Compliance Center tillhandahåller meddelandedata. Du kan till exempel övervaka hur mycket skräppost och skadlig kod som upptäcks eller hur ofta reglerna för e-postflödet matchas. Med dessa interaktiva rapporter kan du snabbt få en visuell rapport med sammanfattningsdata och öka detaljnivån i information om enskilda meddelanden, så långt tillbaka som 90 dagar. Mer information finns i [Använda e-postskyddsrapporter för att visa data om skadlig kod, skräppost och regelidentifieringar](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|

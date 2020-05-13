@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation (klientorganisation) till en annan.
-ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e9e0bd0d18ad73c08f0bc5b487a46289f67e40ba
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208320"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213454"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
@@ -59,11 +59,11 @@ För att återskapa källorganisationen i målorganisationen kontrollerar du att
   > [!NOTE]
   > Cmdlet-stöd för export och import av e-postflödesregelsamlingen stöds för närvarande endast för EOP Premium-prenumerationsplaner.
 
-Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till Exchange Online Protection PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 Därefter kan du samla in alla dina inställningar och exportera dem till en XML-fil som ska importeras till målklienten. I allmänhet kan du skriva **Get** utdata för Get-cmdlet för varje inställning till **cmdleten Export-Clixml** för att spara inställningarna i XML-filer, som visas i följande kodexempel.
 
-Skapa en katalog som heter Exportera på en plats som är lätt att hitta och ändra till den katalogen i Exchange Online Protection PowerShell. Till exempel:
+Skapa en katalog som heter Exportera på en plats som är lätt att hitta och ändra till den katalogen i fristående EOP PowerShell. Till exempel:
 
 ```PowerShell
 mkdir C:\EOP\Export

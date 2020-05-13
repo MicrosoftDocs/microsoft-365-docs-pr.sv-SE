@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du använder regler för e-postflöde (kallas även transportregler) för att ta emot kopior av meddelanden som användarna rapporterar till Microsoft.
-ms.openlocfilehash: faafd8fb750259c192807349b63eee14279179de
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3c0ff9556b9800a0c3be22f52d108d6b16cc6657
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208579"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213490"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft
 
@@ -36,7 +36,7 @@ Du kan skapa e-postflödesregeln i Administrationscenter för Exchange (EAC) och
 
 - Information om hur du öppnar EAC finns [i Administrationscenter för Exchange Online eller](https://docs.microsoft.com/Exchange/exchange-admin-center) Exchange i fristående [EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Mer information om regler för e-postflöde i Exchange Online och fristående EOP finns i följande avsnitt:
 

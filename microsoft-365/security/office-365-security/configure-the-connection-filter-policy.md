@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du konfigurerar anslutningsfiltrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-postmeddelanden från e-postservrar.
-ms.openlocfilehash: 9b4f203f11e72b4459c9fa35d3e4fdca544cffbb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209589"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213442"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -44,9 +44,9 @@ I det här avsnittet beskrivs hur du konfigurerar standardprincipen för anslutn
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill ändra standardprincipen för anslutningsfilter måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till standardsynreringsfilterprincipen måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill ändra standardprincipen för anslutningsfilter måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till standardsynreringsfilterprincipen måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Om du vill hitta käll-IP-adresserna för de e-postservrar (avsändare) som du vill tillåta eller blockera kan du kontrollera det anslutande IP-huvudet **(CIP)** i meddelandehuvudet. Om du vill visa ett meddelandehuvud i olika e-postklienter finns i [Visa internetmeddelanderubriker i Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -90,7 +90,7 @@ I det här avsnittet beskrivs hur du konfigurerar standardprincipen för anslutn
 
 3. Principinställningarna visas i listrutan som öppnas.
 
-## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-modify-the-default-connection-filter-policy"></a>Använd Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell för att ändra standardprincipen för anslutningsfilter
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Använd Exchange Online PowerShell eller fristående EOP PowerShell för att ändra standardprincipen för anslutningsfilter
 
 Använd följande syntax:
 
@@ -134,7 +134,7 @@ Så här kontrollerar du att du har ändrat standardprincipen för anslutningsfi
 
 - Gå till Anti-Spam för **hothanteringspolicy** i säkerhets- & efterlevnadscenter \> **Policy** \> **Anti-Spam** \> och kontrollera inställningarna. **Connection filter policy (always ON**
 
-- I Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell kör du följande kommando och verifierar inställningarna:
+- I Exchange Online PowerShell eller fristående EOP PowerShell kör du följande kommando och verifierar inställningarna:
 
   ```powershell
   Get-HostedConnectionFilterPolicy -Identity Default

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratörer kan använda meddelandespårning i Security & Compliance Center för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209433"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44212992"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -27,7 +27,7 @@ Meddelandespårning i Security & Compliance Center följer e-postmeddelanden nä
 Meddelandespårning i Security & Compliance Center förbättrar den ursprungliga meddelandespårningen som var tillgänglig i Administrationscentret för Exchange (EAC). Du kan använda informationen från meddelandespårning för att effektivt svara på användarfrågor om vad som hände med meddelanden, felsöka problem med e-postflödet och validera principändringar.
 
 > [!NOTE]
-> • För att göra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet get-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) i Exchange Online PowerShell eller Exchange Online Protection PowerShell returnerar alla meddelanden i resultatet.
+> • För att göra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
 
 ## <a name="open-message-trace"></a>Öppna meddelandespårning
 

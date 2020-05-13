@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du visar, skapar, ändrar och tar bort utgående skräppostprinciper i Exchange Online Protection (EOP).
-ms.openlocfilehash: 9970956c2d05a47032cd47b867b8b4e9e92abc29
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209577"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213038"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera skräppostfiltrering utanför eu i EOP
 
@@ -37,7 +37,7 @@ Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardp
 
 Du kan konfigurera principer för utgående skräppost i Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
-## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Principer för utgående skräppost i Security & Compliance Center vs Exchange Online PowerShell eller Exchange Online Protection PowerShell
+## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Principer för skräppost från utgående Security & Compliance Center vs PowerShell
 
 De grundläggande inslagen i en utgående spam-policy i EOP är:
 
@@ -53,7 +53,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar utgåend
 
 - När du tar bort en utgående skräppostprincip från Security & Compliance Center tas regeln för skräppostfilter och den tillhörande principen för skräppost från skräppost bort.
 
-I Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell är skillnaden mellan utgående skräppostfilterprinciper och utgående skräppostfilterregler uppenbar. Du hanterar principer för skräppostutgående skräppost med cmdlets ** \* -HostedOutboundSpamFilterPolicy** och du hanterar regler för skräppostfilter med hjälp av cmdlets ** \* -HostedOutboundSpamFilterRule.**
+I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan utgående skräppostfilterprinciper och utgående skräppostfilterregler uppenbar. Du hanterar principer för skräppostutgående skräppost med cmdlets ** \* -HostedOutboundSpamFilterPolicy** och du hanterar regler för skräppostfilter med hjälp av cmdlets ** \* -HostedOutboundSpamFilterRule.**
 
 - I PowerShell skapar du först principen för skräppostfilter och skapar först den utgående skräppostfilterregeln som identifierar den princip som regeln gäller för.
 
@@ -77,9 +77,9 @@ Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade pri
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Våra rekommenderade inställningar för utgående skräppostpolicyer finns i [EOP:s policyinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)för skräppostfilter .
 
@@ -101,7 +101,12 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
 4. (Valfritt) Expandera avsnittet **Meddelanden** om du vill konfigurera ytterligare användare som ska ta emot kopior och meddelanden om misstänkta utgående e-postmeddelanden:
 
-   - **Skicka en kopia av misstänkta utgående e-postmeddelanden till specifika personer:** Den här inställningen lägger till de angivna användarna som mottagare av hemlig kopia i de misstänkta utgående meddelandena. Så här aktiverar du den här inställningen:
+   - **Skicka en kopia av misstänkta utgående e-postmeddelanden till specifika personer:** Den här inställningen lägger till de angivna användarna som mottagare av hemlig kopia i de misstänkta utgående meddelandena.
+
+     > [!NOTE]
+     > Den här inställningen fungerar bara i standardpolicyn för utgående skräppost. Det fungerar inte i anpassade utgående skräppostprinciper som du skapar.
+
+     Så här aktiverar du den här inställningen:
 
      a. Markera kryssrutan om du vill aktivera inställningen.
 
@@ -122,7 +127,7 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
    - **Meddela specifika personer om en avsändare blockeras på grund av att skicka skräppost som skickas:**
 
      > [!NOTE]
-     > [Standardvarningsprincipen](../../compliance/alert-policies.md) **Användaren har begränsats från att skicka e-post** skickar redan e-postmeddelanden till medlemmar i gruppen **TenantAdmins** (**Global admins**) när användare blockeras på grund av att de överskrider gränserna i avsnittet **Mottagargränser.** Vi rekommenderar att du använder aviseringsprincipen i stället för den här inställningen i principen för utgående skräppost för att meddela administratörer och andra användare. Instruktioner finns i [Verifiera varningsinställningarna för begränsade användare](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
+     > [Standardvarningsprincipen](../../compliance/alert-policies.md) **Användaren har begränsats från att skicka e-post** skickar redan e-postmeddelanden till medlemmar i gruppen **TenantAdmins** (**Global admins**) när användare blockeras på grund av att de överskrider gränserna i avsnittet **Mottagargränser.** Vi rekommenderar att du använder aviseringsprincipen i stället för den här inställningen i principen för utgående skräppost för att meddela administratörer och andra användare. Instruktioner finns i [Verifiera varningsinställningarna för begränsade användare](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> Den här inställningen fungerar bara i standardpolicyn för utgående skräppost. Det fungerar inte i anpassade utgående skräppostprinciper som du skapar.
 
      Så här aktiverar du den här inställningen:
 
@@ -146,7 +151,7 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
    > [!NOTE]
    > Dessa inställningar gäller endast för molnbaserade postlådor.
-     
+
    - **Maximalt antal mottagare per användare**
 
      Ett giltigt värde är 0 till 10000. Standardvärdet är 0, vilket innebär att tjänsten som standard används. Mer information finns i [Skicka gränser för Microsoft 365-alternativ](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
@@ -263,7 +268,7 @@ Du ändrar prioriteten för en princip genom att flytta principen uppåt eller n
 
 Du kan inte ta bort standardprincipen.
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a>Använda Exchange Online PowerShell eller Exchange Online Protection PowerShell för att konfigurera principer för skräppost för utgående information
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Använd Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för skräppost för utgående information
 
 ### <a name="use-powershell-to-create-outbound-spam-policies"></a>Använda PowerShell för att skapa principer för skräppost än
 
