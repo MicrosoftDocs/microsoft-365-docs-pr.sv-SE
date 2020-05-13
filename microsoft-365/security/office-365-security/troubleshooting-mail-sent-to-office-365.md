@@ -18,50 +18,32 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller felsökningsinformation för problem med att skicka e-post till inkorgar i Microsoft 365 & metodtips för massutskick till Microsoft 365-kunder.
-ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036746"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208603"
 ---
-# <a name="troubleshooting-mail-sent-to-office-365"></a>Felsöka e-post som skickas till Office 365
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Felsöka e-post som skickas till Microsoft 365
 
 Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Microsoft 365 och metodtips för massutskick till kunder.
 
-## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Felsöka vanliga problem med e-postleverans till Office 365
+## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Hanterar du din IP och domänens skicka rykte?
 
-Välj bland ett av dessa vanliga problem.
+EOP-filtreringstekniker är utformade för att ge skydd mot skräppost för Microsoft 365 och andra Microsoft-produkter som Exchange Server. Vi utnyttjar också SPF, DKIM och DMARC; e-postautentiseringstekniker som hjälper till att lösa problemet med förfalskning och nätfiske genom att verifiera att domänen som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till den sändande IP, domän, autentisering, lista noggrannhet, klagomål priser, innehåll och mycket mer. Av dessa, en av de viktigaste faktorerna för att köra ner en avsändare rykte och deras förmåga att leverera e-post är deras skräp e klagomål takt.
 
-- [Hanterar du din IP och domänens skicka rykte?](#are-you-managing-your-ip-and-domains-sending-reputation)
-
-- [Skickar du e-post från nya IP-adresser?](#are-you-sending-email-from-new-ip-addresses)
-
-- [Bekräfta att DNS:en är korrekt konfigurerad](#confirm-that-your-dns-is-set-up-correctly)
-
-- [Se till att du inte annonserar själv som en icke-dirigerbar IP](#ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip)
-
-- [Du har fått en rapport om utebliven leverans (NDR) när du skickade e-post till en användare i Office 365](#you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365)
-
-- [Min e-post landade i mottagarens skräppostmapp i EOP](#my-email-landed-in-the-recipients-junk-folder-in-eop)
-
-- [Trafiken från min IP-adress begränsas av EOP](#traffic-from-my-ip-address-is-throttled-by-eop)
-
-### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Hanterar du din IP och domänens skicka rykte?
-
-EOP-filtreringstekniker är utformade för att ge skydd mot skräppost för Microsoft 365 och andra Microsoft-produkter som Exchange Server, Microsoft Office Outlook och Windows Live Mail. Vi utnyttjar också SPF, DKIM och DMARC; e-postautentiseringstekniker som hjälper till att lösa problemet med förfalskning och nätfiske genom att verifiera att domänen som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till den sändande IP, domän, autentisering, lista noggrannhet, klagomål priser, innehåll och mycket mer. Av dessa, en av de viktigaste faktorerna för att köra ner en avsändare rykte och deras förmåga att leverera e-post är deras skräp e klagomål takt.
-
-### <a name="are-you-sending-email-from-new-ip-addresses"></a>Skickar du e-post från nya IP-adresser?
+## <a name="are-you-sending-email-from-new-ip-addresses"></a>Skickar du e-post från nya IP-adresser?
 
 IP-adresser som inte tidigare använts för att skicka e-post har vanligtvis inget rykte byggt upp i våra system. Som ett resultat, e-post från nya IPs är mer benägna att uppleva leveransproblem. När IP har byggt upp ett rykte för att inte skicka skräppost, eop kommer vanligtvis att möjliggöra en bättre e-postleverans upplevelse.
 
 Nya IPs som läggs till för domäner som autentiseras under befintliga SPF-poster får vanligtvis den extra fördelen att ärva en del av domänens sändningsrykte. Om din domän har ett gott sändningsrykt kan nya IPs uppleva en snabbare uppramptid. En ny IP kan förvänta sig att vara helt ramped inom ett par veckor eller tidigare beroende på volym, lista noggrannhet och skräp e-post klagomål priser.
 
-### <a name="confirm-that-your-dns-is-set-up-correctly"></a>Bekräfta att DNS:en är korrekt konfigurerad
+## <a name="confirm-that-your-dns-is-set-up-correctly"></a>Bekräfta att DNS:en är korrekt konfigurerad
 
 Om du vill ha instruktioner om hur du skapar och underhåller DNS-poster, inklusive MX-posten som krävs för e-postroutning, måste du kontakta din DNS-värd.
 
-### <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Se till att du inte annonserar själv som en icke-dirigerbar IP
+## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Se till att du inte annonserar själv som en icke-dirigerbar IP
 
 Vi kanske inte accepterar e-post från avsändare som misslyckas med en omvänd DNS-sökning. I vissa fall annonserar legitima avsändare sig felaktigt som en icke-internetdigerbar IP när de försöker öppna en anslutning till EOP. IP-adresser som är reserverade för privata (icke-dirigerbara) nätverk inkluderar:
 
@@ -71,38 +53,23 @@ Vi kanske inte accepterar e-post från avsändare som misslyckas med en omvänd 
 
 - 172.16.0.0/11 (eller 172.16.0.0 - 172.31.255.255)
 
-### <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du har fått en rapport om utebliven leverans (NDR) när du skickade e-post till en användare i Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du har fått en rapport om utebliven leverans (NDR) när du skickade e-post till en användare i Office 365
 
 Vissa leveransproblem är resultatet av att avsändarens IP-adress blockeras av Microsoft eller på att användarkontot identifieras som förbjudna avsändare på grund av tidigare skräppostaktivitet. Om du tror att du har fått NDR av misstag, följ först eventuella instruktioner i NDR-meddelandet för att lösa problemet.
 
 Mer information om felet du fick finns i listan över felkoder i [rapporter om utebliven leverans via e-post i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
- Om du till exempel får följande NDR anger den att den sändande IP-adressen har blockerats av Microsoft.
+ Om du till exempel får följande NDR anger den att den sändande IP-adressen har blockerats av Microsoft:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
 Om du vill begära borttagning från den här listan kan du [använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>Min e-post landade i mottagarens skräppostmapp i EOP
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Min e-post landade i mottagarens skräppostmapp
 
-Om ett meddelande felaktigt har identifierats som skräppost av EOP kan du arbeta med mottagaren för att skicka det här falska positiva meddelandet till Microsoft Spam Analysis Team, som utvärderar och analyserar meddelandet. Beroende på resultatet av analysen kan reglerna för skräppostinnehållsfilter justeras så att meddelandet kan skickas igenom. Du använder e-post för att skicka meddelanden till Microsoft som inte bör klassificeras som skräppost. När du gör det, se till att använda stegen i följande procedur.
+Om ett meddelande felaktigt har identifierats som skräppost av EOP kan du arbeta med mottagaren för att skicka det här falska positiva meddelandet till Microsoft Spam Analysis Team, som utvärderar och analyserar meddelandet. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Så här använder du e-post för att skicka falska positiva meddelanden till Microsoft Spam Analysis Team
-
-1. Spara meddelandet som du vill skicka som icke-skräppost.
-
-2. Skapa ett nytt, tomt meddelande och bifoga meddelandet om icke-skräppost till det.
-
-    Du kan bifoga flera meddelanden som inte är skräppost om det behövs.
-
-3. Kopiera och klistra in den ursprungliga meddelandeämnesraden i den nya ämnesraden för meddelande.
-
-    > [!IMPORTANT]
-    > Lämna brödtexten i det nya meddelandet tom.
-
-4. Skicka det nya meddelandet till [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com).
-
-### <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Trafiken från min IP-adress begränsas av EOP
+## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Trafiken från min IP-adress begränsas av EOP
 
 Om du får en NDR från EOP som anger att din IP-adress begränsas av EOP, till exempel:
 
@@ -110,7 +77,7 @@ Om du får en NDR från EOP som anger att din IP-adress begränsas av EOP, till 
 
 Du har fått NDR eftersom misstänkt aktivitet har upptäckts från IP-adressen och den har begränsats tillfälligt medan den utvärderas ytterligare. Om misstanken undanröjs genom utvärdering kommer denna begränsning att hävas inom kort.
 
-### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Jag kan inte ta emot e-post från avsändare i Office 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Jag kan inte ta emot e-post från avsändare i Microsoft 365
 
  För att ta emot meddelanden från våra användare, se till att ditt nätverk tillåter anslutningar från IP-adresser som EOP använder i våra datacenter. Mer information finns i [Exchange Online Protection IP-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
@@ -118,7 +85,7 @@ Du har fått NDR eftersom misstänkt aktivitet har upptäckts från IP-adressen 
 
 Om du ofta genomför massutskick av e-post till Microsoft 365-användare och vill se till att dina e-postmeddelanden kommer fram på ett säkert och snabbt sätt följer du tipsen i det här avsnittet.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Se till att namnet Från: återspeglar vem som skickar meddelandet
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Se till att namnet Från visar vem som skickar meddelandet
 
 Ämnet bör vara en kort sammanfattning av vad meddelandet handlar om, och meddelandetexten bör tydligt och kortfattat ange vad erbjudandet, tjänsten eller produkten handlar om. Till exempel:
 

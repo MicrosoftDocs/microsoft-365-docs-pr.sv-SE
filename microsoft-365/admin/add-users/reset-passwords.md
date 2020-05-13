@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173524"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208204"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -79,13 +79,13 @@ De här stegen är endast avsedda för personer som använder en Microsoft 365 f
 
 Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365 eftersom ditt lösenord till exempel sparas i webbläsaren: 
     
-1. Välj ditt namn (ikon) i det övre högra hörnet >**Personlig information** **för mitt konto** > . 
+1. Välj ditt namn (ikon) i det övre högra hörnet > Personlig information **för mitt konto**  >  **Personal Info**. 
           
 2. Under **Kontaktuppgifter**dubbelkollar du att din **alternativa e-postadress** är korrekt och att du har angett ett mobiltelefonnummer. Ändra dem annars nu. 
         
-3. Logga ut: välj ditt namn i det övre högra **Diane**hörnet \> (i bilden ovan, visad som Diane ) **Logga ut**. 
+3. Logga ut: välj ditt namn i det övre högra hörnet (i bilden ovan, visad som **Diane**) \> **Logga ut**. 
         
-4. Logga in igen: skriv \> ditt användarnamn **Nästa** \> och välj sedan **Glömt lösenord**. 
+4. Logga in igen: skriv ditt användarnamn \> **Nästa** \> och välj sedan Glömt **lösenord**. 
     
 5. Följ anvisningarna i guiden för att återställa lösenordet. De alternativa kontaktuppgifterna används för att verifiera att du är rätt person som ska återställa lösenordet. 
     
@@ -100,7 +100,7 @@ Om du har glömt ditt lösenord och inte kan logga in:
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Återställa alla företagslösenord för alla i organisationen samtidigt
 <a name="bkmk_forgot"> </a>
 
-Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du har tusentals användare kan du läsa mer om hur du återställer flera lösenord samtidigt i nästa avsnitt.
+Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du har hundratals eller tusentals användare läser du nästa avsnitt om hur du återställer lösenord i grupp (max 40 användare åt gången).
   
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
     

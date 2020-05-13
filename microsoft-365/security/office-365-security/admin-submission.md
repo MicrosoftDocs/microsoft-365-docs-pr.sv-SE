@@ -1,5 +1,5 @@
 ---
-title: Administratörsbidrag i Office 365
+title: Administrativa inlämningar
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Läs om hur du skickar misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, webbadresser och filer från företaget till Microsoft för skanning.
-ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig hur du använder portalen Inlämningar i Security & Compliance Center för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, webbadresser och filer till Microsoft för skanning.
+ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034206"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209757"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörsöverföring för att skicka misstänkt skräppost, phish, webbadresser och filer till Microsoft
 
-Om du är administratör i en Microsoft 365-organisation med postlådor i Exchange Online kan du använda portalen Inlämningar i Security & Compliance Center för att skicka e-postmeddelanden, webbadresser och bilagor till Microsoft för skanning.
+I Microsoft 365-organisationer med postlådor i Exchange Online kan administratörer använda portalen Inlämningar i Security & Compliance Center för att skicka e-postmeddelanden, webbadresser och bilagor till Microsoft för skanning.
 
 När du skickar ett e-postmeddelande får du information om alla policyer som kan ha tillåtit inkommande e-post till din klientorganisation, samt granskning av eventuella webbadresser och bilagor med posten. Principer som kan ha tillåtit ett e-postmeddelande inkluderar en enskild användares säkra avsänningslista samt principer på klientnivå, till exempel regler för Exchange-e-postflöde (kallas även transportregler).
 
@@ -34,7 +34,7 @@ Andra sätt att skicka e-postmeddelanden, webbadresser och bilagor till Microsof
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill **Submission** gå direkt <https://protection.office.com/reportsubmission>till sidan Inlämning använder du .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Inlämning** använder du <https://protection.office.com/reportsubmission> .
 
 - Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering,** **Säkerhetsadministratör**eller **Säkerhetsläsare.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -42,7 +42,7 @@ Andra sätt att skicka e-postmeddelanden, webbadresser och bilagor till Microsof
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Rapportera misstänkt innehåll till Microsoft
 
-1. Gå till meddelanden om överföring av **Review** \> **administratörer**för hantering av & för **&.** \>
+1. Gå till meddelanden om överföring av **Threat management** administratörer för hantering av & för \> **Review** \> **Admin submission messages**&.
 
 2. Klicka på knappen **Ny inlämning** på sidan **Inlämningar** som visas.
 
@@ -74,7 +74,7 @@ Andra sätt att skicka e-postmeddelanden, webbadresser och bilagor till Microsof
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt WEBBADRESS till Microsoft
 
-1. Välj **URL**i avsnittet **Objekttyp** . I rutan som visas anger du den <https://www.fabrikam.com/marketing.html>fullständiga webbadressen (till exempel ).
+1. Välj **URL**i avsnittet **Objekttyp** . I rutan som visas anger du den fullständiga webbadressen (till exempel <https://www.fabrikam.com/marketing.html> ).
 
 2. I avsnittet **Orsak till inlämning** väljer du något av följande alternativ:
 
@@ -104,11 +104,11 @@ Andra sätt att skicka e-postmeddelanden, webbadresser och bilagor till Microsof
 
 ## <a name="view-admin-submissions"></a>Visa administratörsinlämningar
 
-1. Gå till meddelanden om överföring av **Review** \> **administratörer**för hantering av & för **&.** \>
+1. Gå till meddelanden om överföring av **Threat management** administratörer för hantering av & för \> **Review** \> **Admin submission messages**&.
 
 2. Kontrollera att fliken **Administratörsöverföringar** är markerad på sidan **Inlämningar.**
 
-Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som standard) kan du filtrera efter ![ **inlämnings-ID** genom att ange ett värde i rutan och klicka på Uppdatera.Up of the top of the page, you can enter a start date, an end date, and (by default) you can filter by Submission ID by entering a value in the box and clicking Refresh button](../../media/scc-quarantine-refresh.png). Du kan ange flera värden avgränsade med kommatecken.
+Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som standard) kan du filtrera efter **inlämnings-ID** genom att ange ett värde i rutan och klicka på Uppdatera.Up of the top of the page, you can enter a start date, an end date, and (by default) you can filter by Submission ID by entering a value in the box and ![ clicking Refresh button ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
 Om du vill ändra filtervillkoren klickar du på knappen **Inlämnings-ID** och väljer något av följande värden:
 
@@ -178,7 +178,7 @@ Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill 
 
 Om du har distribuerat [tillägget Report Message eller](enable-the-report-message-add-in.md)om personer använder den [inbyggda rapporteringen i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)kan du se vilka användare som rapporterar på fliken **Användares inlämningar.**
 
-1. Gå till meddelanden om överföring av **Review** \> **administratörer**för hantering av & för **&.** \>
+1. Gå till meddelanden om överföring av **Threat management** administratörer för hantering av & för \> **Review** \> **Admin submission messages**&.
 
 2. Klicka på fliken **Användare inlämningar** på sidan **Inlämningar** som visas.
 
@@ -193,7 +193,7 @@ Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill 
 
 <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i ett utfällbart alternativ.
 
-Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som standard) som du kan filtrera ![efter](../../media/scc-quarantine-refresh.png)avsändare genom att ange ett värde i rutan och klicka på Uppdatera.Up of the page, you can enter a start date, a end date, and (as default) you can filter by **Sender** by entering a value in the box and clicking Refresh button . Du kan ange flera värden avgränsade med kommatecken.
+Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som standard) som du kan filtrera efter **avsändare** genom att ange ett värde i rutan och klicka på Uppdatera.Up of the page, you can enter a start date, a end date, and (as default) you can filter by Sender by entering a value in the box and clicking ![ Refresh button ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
 Om du vill ändra filtervillkoren klickar du på knappen **Avsändare** och väljer något av följande värden:
 
@@ -211,7 +211,7 @@ Om du vill exportera resultaten klickar du på **Exportera** högst upp på sida
 
 Om du har [konfigurerat en anpassad postlåda](user-submission.md) för att ta emot användarrapporterade meddelanden kan du visa och även skicka meddelanden som levererades till rapportpostlådan.
 
-1. Gå till meddelanden om överföring av **Review** \> **administratörer**för hantering av & för **&.** \>
+1. Gå till meddelanden om överföring av **Threat management** administratörer för hantering av & för \> **Review** \> **Admin submission messages**&.
 
 2. Klicka på fliken **Anpassad postlåda** på sidan **Inlämningar** som visas.
 
@@ -224,7 +224,7 @@ Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill 
 - **IP-adress för avsändare**<sup>\*</sup>
 - **Typ av inlämning**
 
-Högst upp på sidan kan du ange ett startdatum, ett slutdatum och du kan filtrera efter Skickad](../../media/scc-quarantine-refresh.png)genom att ange ett värde i rutan och klicka på Uppdatera.Up the top of the page, you can enter a start date, an end date, and you can filter by Submitted by **entering** a value in the box and clicking ![Refresh button . Du kan ange flera värden avgränsade med kommatecken.
+Högst upp på sidan kan du ange ett startdatum, ett slutdatum och du kan filtrera efter Skickad genom att ange ett värde i rutan och klicka på Uppdatera.Up the top of the page, you can enter a start date, an end date, and you can filter by **Submitted by entering** a value in the box and clicking ![ Refresh button ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
 Om du vill exportera resultaten klickar du på **Exportera** högst upp på sidan och väljer **Diagramdata** eller **Tabell**. Spara CSV-filen i dialogrutan som visas.
 

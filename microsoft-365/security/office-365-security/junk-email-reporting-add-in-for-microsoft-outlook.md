@@ -14,19 +14,19 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du installerar och använder tillägget Microsoft Junk Email Reporting för att rapportera skräppost, icke-skräppost och nätfiskemeddelanden till Microsoft.
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638506"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208833"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Installera och använda tillägget Skräppostrapportering för Microsoft Outlook i Office 365
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installera och använda tillägget Skräppostrapportering för Microsoft Outlook
 
 > [!NOTE]
-> Om du för närvarande inte använder tillägget Skräppostrapportering rekommenderar vi [tillägget Rapportera meddelande i](enable-the-report-message-add-in.md) stället.
+> Om du för närvarande inte använder tillägget Skräppostrapportering rekommenderar vi [tillägget Rapportera meddelande i](enable-the-report-message-add-in.md) stället. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Add-in-tillägget för skräppostrapportering för Microsoft Outlook gör det möjligt för användare att skicka in falska positiva identifieringar (bra e-post markerat som skräppost), falska negativ (felaktig e-post tillåten) och nätfiskemeddelanden till Exchange Online Protection (EOP). Om din organisation inte använder EOP påverkar inte överföringen av skräppostrapporten skräppostfiltrering skräppostfiltrering.
+Add-in-tillägget för skräppostrapportering för Microsoft Outlook gör det möjligt för användare att skicka falska positiva identifieringar (bra e-post markerat som skräppost), falska negativ (felaktig e-post tillåten) och nätfiskemeddelanden till Microsoft. Om din organisation inte använder Exchange Online Protection (till exempel lokala Exchange- eller e-posttjänster än Exchange Online) påverkar inte överföringen av skräppostrapporten skräppostfiltreringen skräppostfiltreringen.
 
 I det här avsnittet beskrivs hur du installerar och använder tillägget Rapportering av skräppost.
 
@@ -39,7 +39,7 @@ I det här avsnittet beskrivs hur du installerar och använder tillägget Rappor
   - Outlook 2013 eller senare
   - Outlook ingår i Microsoft 365 Apps for Enterprise
 
-- Mer information om hur du anmäler meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft i Office 365](report-junk-email-messages-to-microsoft.md).
+- Mer information om hur du anmäler meddelanden till Microsoft finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Använda tillägget Skräppostrapportering för att rapportera skräppost och nätfiskemeddelanden
 
@@ -93,7 +93,7 @@ I det här avsnittet beskrivs hur du installerar och använder tillägget Rappor
 
 - Du måste ha administratörsbehörighet på datorn där du installerar tillägget.
 
-- Gå <https://www.microsoft.com/download/details.aspx?id=18275> till och hämta lämplig MSI-fil för din version av Office till en plats som är lätt att hitta:
+- Gå till <https://www.microsoft.com/download/details.aspx?id=18275> och hämta lämplig MSI-fil för din version av Office till en plats som är lätt att hitta:
 
   - **32-bitars:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
@@ -197,7 +197,7 @@ Så här kontrollerar du att du har installerat tillägget Rapportering av skrä
 
 När du har stängt Outlook använder du någon av följande procedurer för att avinstallera tillägget Rapportering av skräppost:
 
-- **Kontrollpanelen:** Tryck på Windows-tangenten + R. Ange dialogrutan **Kör** som `control appwiz.cpl` öppnas och klicka sedan på **OK**.
+- **Kontrollpanelen:** Tryck på Windows-tangenten + R. Ange dialogrutan **Kör** som öppnas `control appwiz.cpl` och klicka sedan på **OK**.
 
   Leta reda på och välj **Microsoft Junk Email Reporting Add-in i** listan och klicka sedan på **Avinstallera**.
 
@@ -209,7 +209,7 @@ När du har stängt Outlook använder du någon av följande procedurer för att
 
   I dialogrutan som visas väljer du **Ta bort Microsofts tillägg för rapportering av skräppost för Outlook** och klickar sedan på **Nästa**.
 
-- **Tyst läge:** Hitta eller ladda ner lämplig MSI-fil. I ett kommandotolksfönster ersätter du \<PathToFile\> med platsen för MSI-filen och kör något av följande kommandon:
+- **Tyst läge:** Hitta eller ladda ner lämplig MSI-fil. I ett kommandotolksfönster ersätter du \< PathToFile \> med platsen för MSI-filen och kör något av följande kommandon:
 
   - **32-bitars:**
 
@@ -249,7 +249,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
 
 #### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>Problem: Ett felmeddelande visas kontinuerligt som uppmanar användare att kontakta systemadministratören
 
-1. Verifiera eller `LoggingLevel` ange registernyckeln till värdet "Utförlig":
+1. Verifiera eller ange `LoggingLevel` registernyckeln till värdet "Utförlig":
 
    - **32-bitars Outlook i 32-bitars Windows:**
 
@@ -288,7 +288,7 @@ Andra metoder som du kan använda för att skicka meddelanden till Microsoft fin
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problem: Användare som har valt att inte få en bekräftelsefråga när de rapporterar meddelanden, och nu vill de ha snabben tillbaka
 
-1. Skapa `ConfirmReportJunk`registernyckeln wih värdet "True":
+1. Skapa `ConfirmReportJunk` registernyckeln wih värdet "True":
 
    ```text
    Windows Registry Editor Version 5.00

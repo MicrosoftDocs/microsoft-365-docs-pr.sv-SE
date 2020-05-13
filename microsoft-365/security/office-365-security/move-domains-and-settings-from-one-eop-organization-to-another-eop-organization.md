@@ -14,14 +14,14 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation (klientorganisation) till en annan.
-ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033968"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208320"
 ---
-# <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Flytta domäner och inställningar från en EOP-organisation till en annan EOP-organisation
+# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
 Om du ändrar affärskrav kan det ibland krävas att en Organisation (EOP) (Microsoft Exchange Online Protection) (2019) delas upp i två separata organisationer, sammanför två organisationer till en eller att dina domäner och EOP-inställningar flyttas från en organisation till en annan organisation. Att gå från en EOP-organisation till en andra EOP-organisation kan vara en utmaning, men med några grundläggande fjärrskript för Windows PowerShell och en liten mängd förberedelser kan detta uppnås med ett relativt litet underhållsfönster.
 
@@ -44,9 +44,13 @@ För att återskapa källorganisationen i målorganisationen kontrollerar du att
 
 - Grupper
 
-- Innehållsfilter mot skräppost
+- Anti-spam
 
-- Innehållsfilter mot skadlig kod
+  - Policyer mot skräppost (kallas även innehållsfilterprinciper)
+  - Principer för skräppostutgående skräppost
+  - Principer för anslutningsfilter
+
+- Policyer mot skadlig kod
 
 - Kontakter
 
@@ -125,7 +129,7 @@ Get-HostedContentFilterPolicy | Export-Clixml HostedContentFilterPolicy.xml
 Get-HostedContentFilterRule | Export-Clixml HostedContentFilterRule.xml
 Get-HostedOutboundSpamFilterPolicy | Export-Clixml HostedOutboundSpamFilterPolicy.xml
 #****************************************************************************
-# Anti-malware content filters
+# Anti-malware policies
 #****************************************************************************
 Get-MalwareFilterPolicy | Export-Clixml MalwareFilterPolicy.xml
 Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
@@ -175,9 +179,11 @@ Foreach ($domain in $Domains) {
 
 Nu kan du granska och samla in information från Microsoft 365-administrationscentret för din målorganisation så att du snabbt kan verifiera dina domäner när det är dags:
 
-1. Logga in på Microsoft 365 [https://portal.office.com](https://portal.office.com)admin center på .
+1. Logga in på Microsoft 365 admin center på <https://portal.office.com> .
 
 2. Klicka på **Domäner**.
+
+   Om du inte ser domäner klickar du på **Anpassa navigering,** väljer **Installationsprogrammet**och sedan på **Spara**.
 
 3. Klicka på varje **länk för startinställningar** och fortsätt sedan genom installationsguiden.
 
@@ -185,7 +191,7 @@ Nu kan du granska och samla in information från Microsoft 365-administrationsce
 
 5. Spela in MX-posten eller TXT-posten som du ska använda för att verifiera domänen och slutför installationsguiden.
 
-6. Lägg till verifierings-TXT-posterna i dina DNS-poster. På så sätt kan du snabbare verifiera domänerna i källorganisationen när de har tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värdar för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Lägg till verifierings-TXT-posterna i dina DNS-poster. På så sätt kan du snabbare verifiera domänerna i källorganisationen när de har tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Steg 3: Tvinga avsändare att köa e-post
 
@@ -195,8 +201,7 @@ Ett alternativ för att tvinga avsändare att köa e-post är att uppdatera MX-p
 
 Ett annat alternativ är att placera en ogiltig MX-post i varje domän där DNS-posterna för din domän sparas (kallas även dns-värdtjänst). Detta medför att avsändaren köar e-post och försöker igen (typiska försök att försöka igen är i 48 timmar, men det kan variera från leverantör till leverantör). Du kan använda invalid.outlook.com som ett ogiltigt MX-mål. Genom att sänka värdet för tid till live (TTL) till fem minuter på MX-posten kan ändringen spridas till DNS-providers snabbare.
 
-Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värdar för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
-
+Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!IMPORTANT]
 > Olika leverantörer köar post under olika tidsperioder. Du måste konfigurera din nya klient organisation snabbt och återställa DNS-inställningarna för att undvika att icke-leveransrapporter (NDRs) skickas till avsändaren om kötiden går ut.
@@ -244,7 +249,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Steg 5: Verifiera domäner för målorganisationen
 
-1. Logga in på administrationscentret på [https://portal.office.com](https://portal.office.com).
+1. Logga in på administrationscentret på [https://portal.office.com](https://portal.office.com) .
 
 2. Klicka på **Domäner**.
 
@@ -926,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Steg 8: Återställ DNS-inställningarna för att stoppa e-postköer
 
-Om du väljer att ange MX-posterna till en ogiltig adress så att avsändarna köar e-post under övergången måste du ställa tillbaka dem till rätt värde enligt [administrationscentret](https://admin.microsoft.com). Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värdar för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Om du väljer att ange MX-posterna till en ogiltig adress så att avsändarna köar e-post under övergången måste du ställa tillbaka dem till rätt värde enligt [administrationscentret](https://admin.microsoft.com). Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).

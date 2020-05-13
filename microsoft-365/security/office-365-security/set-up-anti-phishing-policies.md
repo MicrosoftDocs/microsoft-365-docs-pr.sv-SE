@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du konfigurerar skydd mot nätfiske i Microsoft 365 för att skydda din organisation från skadliga nätfiskeattacker.
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig mer om de anti-phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035338"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209817"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer för bekämpning av nätfiske i Microsoft 365
 
-Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor och ATP-organisationer (Office 365 Advanced Threat Protection).
+Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor och Office 365 Advanced Threat Protection-organisationer (Office 365 ATP).
 
 ATP:s principer för nätfiske är endast tillgängliga i organisationer som har Office 365 ATP. Till exempel:
 
@@ -185,7 +185,7 @@ Följande inställningar för personifiering är endast tillgängliga i ATP:s pr
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Avancerade tröskelvärden för nätfiske i ATP:s principer för phishing
 
-Följande avancerade tröskelvärden för nätfiske är endast tillgängliga i ATP:s principer för nätfiske för att ange hur identifierade nätfiskemeddelanden ska behandlas:
+Följande avancerade tröskelvärden för nätfiske är endast tillgängliga i ATP:s principer för phishing för att kontrollera känsligheten för att tillämpa maskininlärningsmodeller på meddelanden för att fastställa en phishing-dom:
 
 - **1 - Standard:** Detta är standardvärdet. Hur allvarlig åtgärden som vidtas på meddelandet är beror på graden av förtroende för att meddelandet är nätfiske (lågt, medel, högt eller mycket högt förtroende). Till exempel har meddelanden som identifieras som nätfiske med mycket hög grad av förtroende de allvarligaste åtgärderna, medan meddelanden som identifieras som nätfiske med låg grad av förtroende har mindre allvarliga åtgärder.
 

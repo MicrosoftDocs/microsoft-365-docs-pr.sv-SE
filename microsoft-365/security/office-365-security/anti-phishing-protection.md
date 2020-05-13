@@ -1,5 +1,5 @@
 ---
-title: Skydd mot nätfiske i Microsoft 365
+title: Skydd mot nätfiske
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: I den här artikeln introduceras tillgängliga onlineresurser som kan användas för att lära sig mer om och implementera alternativ och strategier mot nätfiske i Microsoft 365.
-ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig mer om funktionerna för skydd mot nätfiske i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033768"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208977"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
@@ -38,13 +38,13 @@ ms.locfileid: "44033768"
 
 - **Ransomware** som krypterar dina data och kräver betalning för att dekryptera det nästan alltid börjar i phishing-meddelanden. Skydd mot nätfiske kan inte hjälpa dig att dekryptera krypterade filer, men det kan hjälpa dig att identifiera de första nätfiskemeddelanden som är associerade med ransomware-kampanjen. Mer information om hur du återställer från en ransomware-attack finns i [Återställ från en ransomware-attack i Microsoft 365](recover-from-ransomware.md).
 
-Med den växande komplexiteten i attacker är det till och med svårt för utbildade användare att identifiera sofistikerade nätfiskemeddelanden. Lyckligtvis kan Exchange Online Protection (EOP) och ytterligare funktioner i Microsoft 365 Advanced Threat Protection (ATP) hjälpa till.
+Med den växande komplexiteten i attacker är det till och med svårt för utbildade användare att identifiera sofistikerade nätfiskemeddelanden. Lyckligtvis kan Exchange Online Protection (EOP) och ytterligare funktioner i Office 365 Advanced Threat Protection (Office 365 ATP) hjälpa till.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Skydd mot nätfiske i EOP
 
 EOP (det vill säga Microsoft 365-organisationer utan ATP) innehåller funktioner som kan skydda din organisation från nätfiskehot:
 
-- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
+- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns [i Konfigurera falska underrättelser i EOP](learn-about-spoof-intelligence.md).
 
 - **Anti-phishing-principer i EOP:** Aktivera eller inaktivera falska underrättelser, aktivera eller inaktivera oautentiserade avsändande avsändare i Outlook och ange åtgärden för blockerade förfalskade avsändare (flytta till skräppostmapp eller karantän). Mer information finns i [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 

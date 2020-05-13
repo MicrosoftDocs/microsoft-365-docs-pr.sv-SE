@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365-administratörer kan lära sig att återställa från en ransomware-attack.
-ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634406"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208264"
 ---
-# <a name="recover-from-a-ransomware-attack-in-office-365"></a>Återställ från en ransomware-attack i Office 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återhämta sig från en ransomware attack i Microsoft 365
 
 Även om du vidtar alla försiktighetsåtgärder för att skydda din organisation, kan du fortfarande falla offer för en [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware är big business, och attackerna är verifiera sofistikerade.
 
@@ -42,7 +42,7 @@ Den viktigaste punkten här är att stoppa spridningen av datakryptering av rans
 
 Om du misstänker att e-post är ett mål bör du tillfälligt inaktivera användaråtkomst till postlådor. Exchange ActiveSync används av mobila enheter för att synkronisera data mellan enheten och Exchange Online-postlådan.
 
-Om du vill inaktivera ActiveSync för en postlåda läser du [Inaktivera Exchange ActiveSync för användare i Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+Information om hur du inaktiverar ActiveSync för en postlåda finns i [Inaktivera Exchange ActiveSync för användare i Exchange Online](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
 
 Om du vill inaktivera andra typer av åtkomst till en postlåda läser du:
 
@@ -124,7 +124,7 @@ Om ditt land inte finns med i listan frågar du dina lokala eller federala brott
 
 Du kan rapportera nätfiskemeddelanden som innehåller utpressningsartiklar med hjälp av någon av flera metoder. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 - [Ransomware (lösenköp)](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

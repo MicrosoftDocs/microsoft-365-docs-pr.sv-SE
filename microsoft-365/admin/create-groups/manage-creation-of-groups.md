@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630411"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208348"
 ---
 # <a name="manage-who-can-create-groups"></a>Hantera vem som kan skapa grupper
 
@@ -96,7 +96,7 @@ Administratörer i de roller som anges ovan behöver inte vara medlemmar i den h
 > [!IMPORTANT]
 > Var noga med att använda en **säkerhetsgrupp** för att begränsa vem som kan skapa grupper. Om du försöker använda en Microsoft 365-grupp kan medlemmarna inte skapa en grupp från SharePoint eftersom den söker efter en säkerhetsgrupp. 
     
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
 
 2. Klicka på **Lägg till en grupp**.
 
@@ -112,21 +112,21 @@ Du måste använda förhandsversionen av [Azure Active Directory PowerShell for 
 
 - Om du inte har installerat någon version av Azure AD PowerShell-modulen tidigare läser [du Installera Azure AD-modulen](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) och följer instruktionerna för att installera den offentliga förhandsversionen.
 
-- Om du har installerat 2.0-versionen för allmän tillgänglighet av Azure AD PowerShell-modulen (AzureAD) måste du avinstallera den genom att köras `Uninstall-Module AzureAD` i PowerShell-sessionen och sedan installera förhandsversionen genom att köra `Install-Module AzureADPreview`.
+- Om du har installerat 2.0-versionen för allmän tillgänglighet av Azure AD PowerShell-modulen (AzureAD) måste du avinstallera den genom att `Uninstall-Module AzureAD` köras i PowerShell-sessionen och sedan installera förhandsversionen genom att köra `Install-Module AzureADPreview` .
 
-- Om du redan har installerat `Install-Module AzureADPreview` förhandsversionen kör du för att kontrollera att den är den senaste versionen av den här modulen.
+- Om du redan har installerat förhandsversionen kör du `Install-Module AzureADPreview` för att kontrollera att den är den senaste versionen av den här modulen.
 
 
 
 Kopiera skriptet nedan till en textredigerare, till exempel Anteckningar, eller [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Ersätt * \<SecurityGroupName\> * med namnet på den säkerhetsgrupp som du skapade. Till exempel:
+Ersätt * \< SecurityGroupName \> * med namnet på den säkerhetsgrupp som du skapade. Till exempel:
 
 `$GroupName = "Group Creators"`
 
 Spara filen som GroupCreators.ps1. 
 
-I PowerShell-fönstret navigerar du till den plats där <FileLocation>du sparade filen (skriv "CD ").
+I PowerShell-fönstret navigerar du till den plats där du sparade filen (skriv "CD <FileLocation> ").
 
 Kör skriptet genom att skriva:
 
@@ -173,6 +173,8 @@ Om du i framtiden vill ändra vilken säkerhetsgrupp som används kan du köra s
 Om du vill inaktivera begränsningen för gruppskapande och återigen tillåta alla användare att skapa grupper, ställer du in $GroupName till "" och $AllowGroupCreation till "True" och kör skriptet igen.
     
 ## <a name="step-4-verify-that-it-works"></a>Steg 4: Kontrollera att det fungerar
+
+Det kan ta trettio minuter eller mer att träda i kraft. Du kan verifiera de nya inställningarna genom att göra följande:
 
 1. Logga in med ett användarkonto för någon som INTE ska ha möjlighet att skapa grupper. Det vill säga, de är inte medlemmar i den säkerhetsgrupp du skapade eller en administratör.
     

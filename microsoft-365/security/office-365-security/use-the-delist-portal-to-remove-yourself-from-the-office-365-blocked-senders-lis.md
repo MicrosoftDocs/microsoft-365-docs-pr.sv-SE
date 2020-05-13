@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du använder avlistningsportalen för att ta bort dig själv från listan blockerade avsändare från Microsoft 365.
-ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034992"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208543"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
 
@@ -35,19 +35,19 @@ Microsoft använder listan blockerade avsändare för att skydda sina kunder fr�
 
 Du vet att du har lagts till i listan när du får ett svar på ett e-postmeddelande som innehåller ett felmeddelande som ser ut ungefär så här:
 
-> 550 5.7.606-649 Tillträde nekad, förbjuden att skicka IP [_IP-adress_]; För att begära borttagning https://sender.office.com/ från denna lista besök och följ anvisningarna. Mer information finns i [Rapporter om utebliven post i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Tillträde nekad, förbjuden att skicka IP [_IP-adress_]; För att begära borttagning från denna lista besök https://sender.office.com/ och följ anvisningarna. Mer information finns i [Rapporter om utebliven post i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 där _IP-adressen_ är IP-adressen för den dator där e-postservern körs.
 
 ### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Så här använder du avlistningsportalen för att ta bort dig själv från listan över blockerade avsändare
 
-1. Gå till [https://sender.office.com](https://sender.office.com)i en webbläsare .
+1. Gå till i en webbläsare [https://sender.office.com](https://sender.office.com) .
 
 2. Följ instruktionerna på sidan. Se till att du använder den e-postadress som felmeddelandet skickades till och den IP-adress som anges i felmeddelandet. Du kan bara ange en e-postadress och en IP-adress per besök.
 
 3. Klicka på **Skicka**.
 
-    Portalen skickar ett e-postmeddelande till den e-postadress som du anger. E-postmeddelandet ser ut ![ungefär så här: Skärmdump av e-post som tas emot när du skickar en begäran via avlisteportalen](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Portalen skickar ett e-postmeddelande till den e-postadress som du anger. E-postmeddelandet ser ut ungefär så här: ![ Skärmdump av e-post som tas emot när du skickar en begäran via avlisteportalen](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Klicka på bekräftelselänken i e-postmeddelandet som skickas till dig av avlistningsportalen.
 
@@ -60,4 +60,4 @@ där _IP-adressen_ är IP-adressen för den dator där e-postservern körs.
     > [!NOTE]
     > Det kan ta upp till 24 timmar eller resultaten kan variera kraftigt innan begränsningar tas bort.
 
-Se [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md) och Skydd för skräppost från [utgående information i Office 365](outbound-spam-controls.md) för att förhindra att IP-åtkomst blir svartlistat.
+Se [Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md) och [Utgående skräppostskydd i EOP](outbound-spam-controls.md) för att förhindra att IP blir svartlistat.

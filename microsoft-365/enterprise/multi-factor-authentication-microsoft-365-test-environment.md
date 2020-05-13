@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Konfigurera multifaktorautentisering med textmeddelanden som skickas till en smart telefon i testmiljön för Microsoft 365 Enterprise.
-ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153886"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213146"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Multifaktorautentisering för testmiljön för Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ ms.locfileid: "43153886"
 
 Om du vill ha ytterligare en säkerhetsnivå för att logga in på Microsoft 365 eller någon tjänst eller program som använder Azure AD-klienten för din prenumeration kan du aktivera Azure multifaktorautentisering, vilket kräver mer än bara ett användarnamn och lösenord för att verifiera ett konto. 
 
-Med multifaktorautentisering måste användarna bekräfta ett telefonsamtal, skriva en verifieringskod som skickas i ett textmeddelande eller ange ett applösenord på sina smarta telefoner när de har angett sina lösenord korrekt. De kan logga in först när den här andra autentiseringsfaktorn har uppfyllts. 
+Med multifaktorautentisering måste användarna bekräfta ett telefonsamtal, skriva en verifieringskod som skickas i ett textmeddelande eller verifiera autentiseringen med en app på sina smarta telefoner när de har angett sina lösenord korrekt. De kan logga in först när den här andra autentiseringsfaktorn har uppfyllts. 
   
 I den här artikeln beskrivs hur du aktiverar och testar textmeddelandebaserad autentisering för ett visst användarkonto.
   
@@ -58,7 +58,7 @@ Om du vill testa multifaktorautentisering i ett simulerat företag följer du in
 
 Aktivera multifaktorautentisering för User 2-kontot med följande steg:
   
-1. Öppna en separat, privat instans av webbläsaren, gå till Microsoft[https://portal.microsoft.com](https://portal.microsoft.com)365 admin center ( ) och logga sedan in med ditt globala administratörskonto.
+1. Öppna en separat, privat instans av webbläsaren, gå till Microsoft 365 admin center ( [https://portal.microsoft.com](https://portal.microsoft.com) ) och logga sedan in med ditt globala administratörskonto.
     
 2. Klicka på **Användare > Aktiva användare** i det vänstra navigeringsfönstret.
     
@@ -80,7 +80,7 @@ Slutför konfigurationen för user 2-kontot för att använda ett textmeddelande
   
 1. Öppna en ny, privat instans av din webbläsare.
     
-2. Gå till Office 365-portalen ([https://portal.office.com](https://portal.office.com)) och logga in med användaren 2-kontonamnet och lösenordet.
+2. Gå till Office 365-portalen ( [https://portal.office.com](https://portal.office.com) ) och logga in med användaren 2-kontonamnet och lösenordet.
     
 3. När du har loggat in uppmanas du att konfigurera kontot för mer information. Klicka på **Nästa**.
     
@@ -96,7 +96,7 @@ Slutför konfigurationen för user 2-kontot för att använda ett textmeddelande
     
 6. Ange verifieringskoden från det mottagna sms:et på den smarta telefonen och klicka sedan på **Verifiera**.
     
-7. På **sidan Steg 3: Behåll ditt befintliga program,** registrera det visade applösenordet för användaren 2-kontot på en säker plats och klicka sedan på **Klar**.
+7. På **steg 3: Behåll din befintliga programsida** klickar du på **Klar.**
     
 8. Om det är första gången du loggade in med kontot Användare 2 uppmanas du att ändra lösenordet. Skriv det ursprungliga lösenordet och ett nytt lösenord två gånger och klicka sedan på **Uppdatera lösenord och logga in**. Registrera det nya lösenordet på en säker plats.
     
@@ -106,7 +106,7 @@ Slutför konfigurationen för user 2-kontot för att använda ett textmeddelande
 
 *Den här fasen kan bara användas för en Microsoft 365 Enterprise-testmiljö.*
 
-I den här fasen aktiverar du multifaktorautentisering för user 3-kontot med hjälp av en grupp och en princip för villkorlig åtkomst.
+I den här fasen aktiverar du multifaktorautentisering för User 3-kontot med hjälp av en grupp och en princip för villkorlig åtkomst.
 
 Skapa sedan en ny grupp med namnet MFAUsers och lägg till kontot användare 3 i den.
 
@@ -121,7 +121,7 @@ Skapa sedan en ny grupp med namnet MFAUsers och lägg till kontot användare 3 i
 
 Skapa sedan en princip för villkorlig åtkomst för att kräva multifaktorautentisering för medlemmar i MFAUsers-gruppen.
 
-1. Gå till [https://portal.azure.com](https://portal.azure.com).
+1. Gå till [https://portal.azure.com](https://portal.azure.com) .
 2. Klicka på **Azure Active Directory > Security > Conditional Access**.
 3. Klicka på **Ny princip**i fönstret Villkorlig åtkomst **– Principer** .
 4. Skriv **MFA för användarkonton** i **Namn**i fönstret **Nytt** .

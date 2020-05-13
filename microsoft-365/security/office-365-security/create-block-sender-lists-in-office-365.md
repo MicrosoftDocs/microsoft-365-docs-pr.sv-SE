@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Administratörer kan lära sig mer om de tillgängliga alternativen i Microsoft 365 och EOP för att blockera inkommande meddelanden.
-ms.openlocfilehash: 626eff3a1ea28cc16b12acaaa2ba52f7d094a347
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratörer kan lära sig mer om tillgängliga och önskade alternativ för att blockera inkommande meddelanden i Exchange Online Protection (EOP).
+ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637694"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209553"
 ---
-# <a name="create-blocked-sender-lists"></a>Skapa listor med spärrade avsändare
+# <a name="create-blocked-sender-lists-in-eop"></a>Skapa blockerade avsändarelistor i EOP
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor erbjuder EOP flera sätt att blockera e-post från oönskade avsändare. Dessa alternativ inkluderar Outlook-blockerade avsändare, blockerade avsändare eller blockerade domänlistor i anti-spam-principer, Exchange-regler för e-postflöde (kallas även transportregler) och IP-blockeringslistan (anslutningsfiltrering). Tillsammans kan du se dessa alternativ som _blockerade avsändarelistor_.
+I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor erbjuder EOP flera sätt att blockera e-post från oönskade avsändare. Dessa alternativ inkluderar Outlook-blockerade avsändare, blockerade avsändare eller blockerade domänlistor i anti-spam-principer, Exchange-regler för e-postflöde (kallas även transportregler) och IP-blockeringslistan (anslutningsfiltrering). Tillsammans kan du se dessa alternativ som _blockerade avsändarelistor_.
 
 Den bästa metoden för att blockera avsändare varierar beroende på omfattningen av påverkan. För en enskild användare kan rätt lösning vara Outlook-blockerade avsändare. För många användare skulle ett av de andra alternativen vara lämpligare. Följande alternativ rangordnas efter både effektomfång och bredd. Listan går från smal till bred, men *läs detaljerna* för fullständiga rekommendationer.
 
@@ -43,14 +43,14 @@ Däremot har du också flera alternativ för att alltid tillåta e-post från sp
 
 När endast ett litet antal användare fick oönskad e-post kan användare eller administratörer lägga till avsändarens e-postadresser i listan Blockerade avsändare i postlådan. Instruktioner finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
 
-När meddelanden har blockerats på grund av en användares lista Blockerade avsändare innehåller huvudfältet **X-Forefront-Antispam-Report** värdet `SFV:BLK`.
+När meddelanden har blockerats på grund av en användares lista Blockerade avsändare innehåller huvudfältet **X-Forefront-Antispam-Report** värdet `SFV:BLK` .
 
 > [!NOTE]
 > Om de oönskade meddelandena är nyhetsbrev från en ansedd och igenkännlig källa, är avskrivning från e-postmeddelandet ett annat alternativ för att hindra användaren från att ta emot meddelandena.
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Använda blockerade avsändarelistor eller blockerade domänlistor
 
-När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns i [Konfigurera principer mot skräppost](configure-your-spam-filter-policies.md).
+När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
 
 Den maximala gränsen för dessa listor är cirka 1000 poster.
 

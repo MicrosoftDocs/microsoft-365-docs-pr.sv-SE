@@ -1,11 +1,11 @@
 ---
-title: Tjänster för icke-kunder som skickar e-post till Office 365
+title: Tjänster för icke-kunder som skickar e-post till Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,14 +16,14 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: För att upprätthålla användarnas förtroende för användningen av e-post har Microsoft infört olika policyer och tekniker för att skydda våra användare.
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638398"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208240"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>Tjänster för icke-kunder som skickar e-post till Office 365
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Tjänster för icke-kunder som skickar e-post till Microsoft 365
 
 E-postmissbruk, skräppost och bedrägliga e-postmeddelanden (nätfiske) fortsätter att belasta hela e-postekosystemet. För att upprätthålla användarnas förtroende för användningen av e-post har Microsoft infört olika policyer och tekniker för att skydda våra användare. Microsoft förstår dock att legitim e-post inte bör påverkas negativt. Därför har vi etablerat en uppsättning tjänster som hjälper avsändare att förbättra sin förmåga att leverera e-post till Microsoft 365-användare genom att proaktivt hantera deras sändningsrykte.
 
@@ -33,14 +33,14 @@ Den här översikten innehåller information om fördelar som vi ger din organis
 
 |**Tjänst**|**Fördelar**|
 |:-----|:-----|
-|Detta online-hjälpinnehåll| Ger:  <br/>  En utgångspunkt för alla frågor som rör leverans av kommunikation till EOP-användare  <br/>  Innehåller en enkel onlineguide med våra policyer och krav  <br/>  En översikt över skräppostfilter och autentiseringstekniker som används av Microsoft|
+|Detta online-hjälpinnehåll|Ger: <br/> En utgångspunkt för alla frågor som rör leverans av kommunikation till EOP-användare. <br/><br/> Innehåller en enkel onlineguide med våra policyer och krav. <br/><br/> En översikt över skräppostfilter och autentiseringstekniker som används av Microsoft.|
 |[Microsoft-support](#microsoft-support)|Ger självhjälp och eskaleringsstöd för leveransproblem.|
 |[Ip-portal för skräppost](#anti-spam-ip-delist-portal)|Ett verktyg för att skicka IP-avlistningsbegäran. Innan denna begäran lämnas in är det avsändarens ansvar att se till att ytterligare post från ip-adressen i fråga inte är kränkande eller skadlig.|
-|[Missbruks- och skräppostrapportering för skräppost från Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Förhindrar att skräppost och annan oönskad e-post skickas från Exchange Online och belamar Internet och ditt e-postsystem.|
+|[Missbruks- och skräppostrapportering för skräppost från Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Förhindrar att skräppost och annan oönskad e-post skickas från Exchange Online och belamar internet och ditt e-postsystem.|
 
 ## <a name="microsoft-support"></a>Microsoft-support
 
-Microsoft erbjuder flera supportalternativ för personer som har problem med att skicka e-post till Microsoft 365-inkorgar. Vi rekommenderar att du:
+Microsoft erbjuder flera supportalternativ för personer som har problem med att skicka e-post till Microsoft 365-mottagare. Vi rekommenderar att du:
 
 - Följ instruktionerna i alla rapporter om utebliven leverans som du får.
 

@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur du skapar, ändrar och tar bort de avancerade anti-nätfiskeprinciper som är tillgängliga i organisationer med Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: Administratörer kan lära sig hur du skapar, ändrar och tar bort de avancerade anti-phishing-principer som är tillgängliga i organisationer med Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949265"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208893"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurera principer för ATP-skydd mot nätfiske
 
@@ -29,7 +29,7 @@ Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardp
 
 Du kan konfigurera ATP-principer för nätfiske i Security & Compliance Center eller i Exchange Online PowerShell.
 
-Information om hur du konfigurerar de mer begränsade i anti-phishing-principer som är tillgängliga i Exchange Online Protection-organisationer (det vill säga Office 365-organisationer utan ATP) finns [i Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
+Information om hur du konfigurerar de mer begränsade i anti-phishing-principer som är tillgängliga i Exchange Online Protection-organisationer (det vill säga Microsoft 365-organisationer utan Office 365 ATP) finns [i Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
 ## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>ATP:s principer för phishing-bekämpning i Security & Compliance Center vs Exchange Online PowerShell
 
@@ -47,7 +47,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar ATP-prin
 
 - När du tar bort en ATP-anti-phishing-princip från Security & Compliance Center tas anti-phish-regeln och den associerade anti-phish-principen bort.
 
-I Exchange Online PowerShell är skillnaden mellan anti-phish-principer och anti-phish-regler uppenbar. Du hanterar anti-phish-principer med hjälp av ** \*cmdlets -AntiPhishPolicy** och hanterar anti-phish-regler med hjälp av ** \*cmdlets -AntiPhishRule.**
+I Exchange Online PowerShell är skillnaden mellan anti-phish-principer och anti-phish-regler uppenbar. Du hanterar anti-phish-principer med hjälp av cmdlets ** \* -AntiPhishPolicy** och hanterar anti-phish-regler med hjälp av cmdlets ** \* -AntiPhishRule.**
 
 - I PowerShell skapar du principen anti-phish först och sedan skapar du anti-phish-regeln som identifierar den princip som regeln gäller för.
 
@@ -63,13 +63,13 @@ Varje ATP-organisation har en inbyggd ATP-anti-phishing-princip med namnet Offic
 
 - Principen Office365 AntiPhish Default har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (principen tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen Office365 AntiPhish Default.
 
-- Principen som heter Office365 AntiPhish Default är standardprincipen (egenskapen **IsDefault** har värdet) `True`och du kan inte ta bort standardprincipen.
+- Principen som heter Office365 AntiPhish Default är standardprincipen (egenskapen **IsDefault** har `True` värdet) och du kan inte ta bort standardprincipen.
 
 Om du vill öka effektiviteten i skyddet mot nätfiske kan du skapa anpassade ATP-principer mot nätfiske med striktare inställningar som tillämpas på specifika användare eller grupper av användare.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **ATP:s sida mot nätfiske** använder du <https://protection.office.com/antiphishing>.
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **ATP:s sida mot nätfiske** använder du <https://protection.office.com/antiphishing> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
@@ -79,7 +79,7 @@ Om du vill öka effektiviteten i skyddet mot nätfiske kan du skapa anpassade AT
 
 - Tillåt upp till 30 minuter för en ny eller uppdaterad princip som ska tillämpas.
 
-- Information om var principer mot nätfiske tillämpas i filtreringspipelinen finns [i Ordning och prioritet för e-postskydd i Office 365](how-policies-and-protections-are-combined.md).
+- Information om var principer mot nätfiske tillämpas i filtreringspipelinen finns i [Ordning och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
 ## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a>Använd Security & Compliance Center för att skapa ATP-principer för nätfiske
 
@@ -87,7 +87,7 @@ Om du skapar en anpassad ATP-anti-phishing-princip i Security & Compliance Cente
 
 När du skapar en ATP-princip mot nätfiske kan du bara ange principnamn, beskrivning och mottagarfilter som identifierar vem principen gäller för. När du har skapat principen kan du ändra principen för att ändra eller granska standardinställningarna mot nätfiske.
 
-1. I Security & Compliance Center går du till **ATP-principen** **Policy** \> **mot hothantering.** \>
+1. I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen**mot hothantering.
 
 2. Klicka på **Skapa**på sidan **Anti-phishing.**
 
@@ -107,15 +107,15 @@ När du skapar en ATP-princip mot nätfiske kan du bara ange principnamn, beskri
 
    - **Mottagaren är**: Anger en eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen.
    - **Mottagaren är medlem i**: Anger en eller flera grupper i organisationen.
-   - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i Office 365.
+   - **Mottagardomänen är**: Anger mottagare i en eller flera av de konfigurerade accepterade domänerna i organisationen.
 
    När du har valt villkoret visas en motsvarande listruta med rutan **Någon av dessa.**
 
    - Klicka i rutan och bläddra igenom listan med värden att välja.
    - Klicka i rutan och börja skriva för att filtrera listan och välj ett värde.
    - Om du vill lägga till ytterligare värden klickar du i ett tomt område i rutan.
-   - Om du vill ta bort](../../media/scc-remove-icon.png) enskilda poster klickar du på **Ikonen Ta bort** ![ta bort i värdet.
-   - Om du vill ta **Remove** ![bort](../../media/scc-remove-icon.png) hela villkoret klickar du på Ikonen Ta bort ta bort på villkoret.
+   - Om du vill ta bort enskilda poster klickar du på **Ikonen Ta bort** ta bort i ![ ](../../media/scc-remove-icon.png) värdet.
+   - Om du vill ta bort hela villkoret klickar du på **Ikonen Ta bort** ta bort på ![ ](../../media/scc-remove-icon.png) villkoret.
 
    Om du vill lägga till ytterligare ett villkor klickar du på **Lägg till ett villkor** och väljer ett återstående värde under **Tillämpat om**.
 
@@ -135,15 +135,15 @@ När du har skapat ATP:s anti-nätfiskeprincip med de här allmänna principinst
 
 Använd följande procedurer för att ändra ATP:s principer för nätfiske: en ny princip som du har skapat eller befintliga principer som du redan har anpassat.
 
-1. Om du inte redan är där öppnar du Security & Compliance Center och går till **Policy** \> **ATP-principen** **mot** \> nätfiske mot hothantering .
+1. Om du inte redan är där öppnar du Security & **Threat management** Compliance Center och går till \> **Policy** \> **ATP-principen**mot nätfiske mot hothantering .
 
 2. Välj den anpassade ATP-principen mot nätfiske som du vill ändra. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Den **utfällbara sidan Redigera ditt principnamn \<\> ** visas. Om du klickar på **Redigera** i ett avsnitt får du tillgång till inställningarna i det avsnittet.
+3. Den **utfällbara sidan Redigera ditt \< principnamn \> ** visas. Om du klickar på **Redigera** i ett avsnitt får du tillgång till inställningarna i det avsnittet.
 
    - Följande steg visas i den ordning som avsnitten visas, men de är inte sekventiella (du kan markera och ändra avsnitten i valfri ordning).
 
-   - När du har **klickat** på Redigera i ett avsnitt visas de tillgängliga inställningarna i ett guideformat, men du kan hoppa](../../media/scc-remove-icon.png) inom sidorna i valfri ordning och du kan klicka på **Spara** på valfri sida (eller Ikonen **Avbryt** eller **Stäng** ![avsluta för att återgå till sidan Redigera ditt **principnamn \<\> ** (du behöver inte besöka den sista sidan i guiden för att spara eller lämna).
+   - När du har **klickat** på Redigera i ett avsnitt visas de tillgängliga inställningarna i ett guideformat, men du kan hoppa inom sidorna i valfri ordning och du kan klicka på **Spara** på valfri sida (eller **Ikonen Avbryt** eller **Stäng** avsluta för att återgå till sidan Redigera ![ ditt ](../../media/scc-remove-icon.png) ** \< principnamn \> ** (du behöver inte besöka den sista sidan i guiden för att spara eller lämna).
 
 4. **Principinställning**: Klicka på **Redigera** om du vill ändra samma inställningar som var tillgängliga när du [skapade principen](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) i föregående avsnitt:
 
@@ -164,7 +164,7 @@ Använd följande procedurer för att ändra ATP:s principer för nätfiske: en 
 
         - Klicka i rutan och bläddra igenom listan över användare att välja.
         - Klicka i rutan och börja skriva för att filtrera listan och välj en användare.
-        - Om du vill ta bort](../../media/scc-remove-icon.png) en post klickar du på **Ikonen Ta bort** ![ta bort på användaren.
+        - Om du vill ta bort en post klickar du på **Ikonen Ta bort** ta bort på ![ ](../../media/scc-remove-icon.png) användaren.
 
      - **Namn**: Det här värdet fylls i baserat på den e-postadress du har valt, men du kan ändra det.
 
@@ -226,7 +226,7 @@ Använd följande procedurer för att ändra ATP:s principer för nätfiske: en 
 
        - Klicka i rutan och bläddra igenom listan över användare att välja.
        - Klicka i rutan och börja skriva för att filtrera listan och välj en användare.
-       - Om du vill ta bort](../../media/scc-remove-icon.png) en post klickar du på **Ikonen Ta bort** ![ta bort på användaren.
+       - Om du vill ta bort en post klickar du på **Ikonen Ta bort** ta bort på ![ ](../../media/scc-remove-icon.png) användaren.
 
      - **Betrodda domäner**: Ange domännamnet (till exempel contoso.com), tryck på RETUR och upprepa vid behov.
 
@@ -246,10 +246,10 @@ Använd följande procedurer för att ändra ATP:s principer för nätfiske: en 
 
    Observera att samma inställningar också är tillgängliga i anti-phishing-principer i EOP.
 
-   - **Spoofing filterinställningar:** Standardvärdet är **På**, och vi rekommenderar att du lämnar den på. Om du vill inaktivera den drar du växlingsknappen till **Av**. Mer information finns i [Konfigurera förfalskningsinformation i Office 365](learn-about-spoof-intelligence.md).
+   - **Spoofing filterinställningar:** Standardvärdet är **På**, och vi rekommenderar att du lämnar den på. Om du vill inaktivera den drar du växlingsknappen till **Av**. Mer information finns [i Konfigurera falska underrättelser i EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
-     > Du behöver inte inaktivera förfalskningsskydd om MX-posten inte pekar på Office 365. du aktiverar utökad filtrering för kopplingar i stället. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > Du behöver inte inaktivera förfalskningsskydd om MX-posten inte pekar på Microsoft 365. du aktiverar utökad filtrering för kopplingar i stället. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Aktivera funktionen Oautentiserade avsändare:** Standardvärdet är **På**. Om du vill inaktivera den drar du växlingsknappen till **Av**.
 
@@ -283,13 +283,13 @@ Använd följande procedurer för att ändra ATP:s principer för nätfiske: en 
 
    När du är klar klickar du på **Spara** på någon av sidor.
 
-8. Tillbaka på sidan **Redigera\> principnamn, \<** granska inställningarna och klicka sedan på **Stäng**.
+8. Tillbaka på sidan **Redigera \< \> principnamn,** granska inställningarna och klicka sedan på **Stäng**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a>Använd Security & Compliance Center för att ändra standardprincipen för ATP-phishing
 
 Standardprincipen för ATP-phishing heter Office365 AntiPhish Default och visas inte i listan över principer. Så här ändrar du standardprincipen för ATP-bekämpningsfiske:
 
-1. I Security & Compliance Center går du till **ATP-principen** **Policy** \> **mot hothantering.** \>
+1. I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen**mot hothantering.
 
 2. Klicka på **Standardprincip**på sidan **Anti-phishing.**
 
@@ -309,7 +309,7 @@ Standardprincipen för ATP-phishing heter Office365 AntiPhish Default och visas 
 
 ### <a name="enable-or-disable-custom-atp-anti-phishing-policies"></a>Aktivera eller inaktivera anpassade ATP-principer för phishing
 
-1. I Security & Compliance Center går du till **ATP-principen** **Policy** \> **mot hothantering.** \>
+1. I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen**mot hothantering.
 
 2. Lägg märke till värdet i kolumnen **Status:**
 
@@ -329,11 +329,11 @@ Anpassade ATP-principer för nätfiske visas i den ordning de bearbetas (den fö
 
 Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** eller **Minska prioritet** i egenskaperna för principen (du kan inte direkt ändra **prioritetsnumret** i säkerhets- & compliance center). Det är bara meningsfullt att ändra prioriteten för en princip om du har flera principer.
 
-1. I Security & Compliance Center går du till **ATP-principen** **Policy** \> **mot hothantering.** \>
+1. I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen**mot hothantering.
 
 2. Markera den princip som du vill ändra. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Den **utfällbara sidan Redigera ditt principnamn \<\> ** visas.
+3. Den **utfällbara sidan Redigera ditt \< principnamn \> ** visas.
 
    - Den anpassade ATP-principen mot nätfiske med **prioritetsvärde** **0** har bara knappen **Minska prioritet** tillgänglig.
 
@@ -347,7 +347,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 ## <a name="use-the-security--compliance-center-to-view-atp-anti-phishing-policies"></a>Använda Security & Compliance Center för att visa ATP-principer för nätfiske
 
-1. I Security & Compliance Center och gå till **Atp-anti-phishing-principen** **mot hothanteringspolicy** \> **Policy** \> .
+1. I Security & Compliance Center och gå **Threat management** till \> **Policy** \> **Atp-anti-phishing-principen**mot hothanteringspolicy .
 
 2. Gör något av följande:
 
@@ -355,15 +355,15 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
    - Klicka på **Standardprincip** om du vill visa standardprincipen mot nätfiske.
 
-3. Den **utfällbara sidan Redigera ditt principnamn \<\> ** visas, där du kan visa inställningar och värden.
+3. Den **utfällbara sidan Redigera ditt \< principnamn \> ** visas, där du kan visa inställningar och värden.
 
 ## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a>Använd Security & Compliance Center för att ta bort ATP-principer för nätfiske
 
-1. I Security & Compliance Center går du till **ATP-principen** **Policy** \> **mot hothantering.** \>
+1. I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen**mot hothantering.
 
 2. Markera den princip som du vill ta bort. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Klicka på **Ta bort princip i**den utfällbara principen Redigera ditt **principnamn \<\> ** som visas och klicka sedan på **Ja** i varningsdialogrutan som visas.
+3. Klicka på **Ta bort princip i**den utfällbara principen Redigera ditt ** \< \> principnamn** som visas och klicka sedan på **Ja** i varningsdialogrutan som visas.
 
 Du kan inte ta bort standardprincipen.
 
@@ -385,7 +385,7 @@ Att skapa en anti-phishing-policy i PowerShell är en tvåstegsprocess:
 
   - Skapa den nya principen som inaktiverad (_Aktiverad_ `$false` på cmdleten **Ny anti-AntiPhishRule).**
 
-  - Ange prioritet för principen när du skapar _(Prioritetsnummer)_ _ \<\>_ på cmdleten **Ny anti-AntiPhishRule).**
+  - Ange prioritet för principen när du skapar _ \< \> (Prioritetsnummer)_ på cmdleten **Ny anti-AntiPhishRule).** _Priority_
 
 - En ny anti-phish-princip som du skapar i PowerShell visas inte i Security & Compliance Center förrän du tilldelar principen till en anti-phish-regel.
 
@@ -399,7 +399,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 
 I det här exemplet skapas anti-phish-principen Research Quarantine med följande inställningar:
 
-- Principen är aktiverad (vi använder inte parametern _Aktiverad_ och `$true`standardvärdet är ).
+- Principen är aktiverad (vi använder inte parametern _Aktiverad_ och standardvärdet är `$true` ).
 - Beskrivningen är: Forskningsavdelningens policy.
 - Aktiverar organisationsdomänskydd för alla accepterade domäner och riktade domänskydd för fabrikam.com.
 - Anger Mai Fujito (mfujito@fabrikam.com) som användare för att skydda mot personifiering.
@@ -603,12 +603,12 @@ Detaljerad syntax- och parameterinformation finns i [Ta bort-AntiPhishRule](http
 
 Så här kontrollerar du att du har konfigurerat ATP:s principer för phishing:er:
 
-- I Security & Compliance Center går du till **ATP-principen** **Policy** \> **mot hothantering.** \> Verifiera listan över principer, deras **statusvärden** och deras **prioritetsvärden.** Så här visar du mer information:
+- I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen**mot hothantering. Verifiera listan över principer, deras **statusvärden** och deras **prioritetsvärden.** Så här visar du mer information:
 
   - Välj principen i listan och visa informationen i utfällbara.
   - Klicka på **Standardprincip** och visa informationen i utfällbara.
 
-- I Exchange Online PowerShell ersätter du \<Namn\> med namnet på principen eller regeln och kör följande kommando och verifiera inställningarna:
+- I Exchange Online PowerShell ersätter du \< Namn med namnet på principen eller regeln och kör följande kommando och verifiera \> inställningarna:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

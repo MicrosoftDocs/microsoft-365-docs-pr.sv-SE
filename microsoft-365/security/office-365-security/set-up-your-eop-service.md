@@ -1,5 +1,5 @@
 ---
-title: Konfigurera din EOP-tjänst
+title: Konfigurera din fristående EOP-tjänst
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: I den här artikeln får du lära dig mer om hur du konfigurerar Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: c00d39cae440bc95e26c853e107d8d7a8f4c50d8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig hur du konfigurerar fristående Exchange Online Protection (EOP) för att skydda lokala e-postmiljöer.
+ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035290"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209805"
 ---
-# <a name="set-up-your-eop-service"></a>Konfigurera din EOP-tjänst
+# <a name="set-up-your-standalone-eop-service"></a>Konfigurera din fristående EOP-tjänst
 
-I det här avsnittet beskrivs hur du konfigurerar Microsoft Exchange Online Protection (EOP). Om du landade här från guiden Office 365-domäner går du tillbaka till office 365-domänguiden om du inte vill använda Exchange Online Protection. Om du letar efter mer information om hur du konfigurerar kopplingar läser du [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+I det här avsnittet beskrivs hur du konfigurerar fristående Exchange Online Protection (EOP). Om du landade här från guiden Office 365-domäner går du tillbaka till office 365-domänguiden om du inte vill använda Exchange Online Protection. Om du letar efter mer information om hur du konfigurerar kopplingar läser du [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
 > Det här avsnittet förutsätter att du har lokala postlådor och du vill skydda dem med EOP, som kallas ett fristående scenario. Om du vill vara värd för alla dina postlådor i molnet med Exchange Online behöver du inte slutföra alla steg i det här avsnittet. Gå till [Jämför Exchange Online-abonnemang](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) för att registrera dig och köpa molnpostlådor. Om du vill vara värd för några av dina postlådor lokalt och några i molnet kallas detta för ett hybridscenario. Det kräver mer avancerade inställningar för e-postflöde. [Hybriddistributioner av Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) förklarar hybridpostflödet och har länkar till resurser som visar hur du konfigurerar det.
@@ -32,7 +32,7 @@ I det här avsnittet beskrivs hur du konfigurerar Microsoft Exchange Online Prot
 
 - Beräknad tid för att slutföra den här uppgiften: 1 timme
 
-- Om du vill konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering). Information finns [i Funktionsbehörigheter i EOP](feature-permissions-in-eop.md).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Specifikt behöver du rollgrupperna Fjärr- och godkända domäner, som tilldelas rollgrupperna MailFlowAdministrator och OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Om du inte har registrerat dig för EOP besöker du [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) och väljer att köpa eller prova tjänsten.
 
@@ -56,7 +56,7 @@ Innan du konfigurerar din e-post så att den flödar till och från EOP-tjänste
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Steg 3: Använd EAC för att ställa in e-postflöde
 
-Skapa kopplingar i Administrationscenter för Exchange (EAC) som möjliggör e-postflöde mellan EOP och dina lokala e-postservrar. Detaljerade instruktioner finns i [Konfigurera kopplingar för att dirigera e-post mellan Microsft 365 och dina egna e-postservrar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
+Skapa kopplingar i Administrationscenter för Exchange (EAC) som möjliggör e-postflöde mellan EOP och dina lokala e-postservrar. Detaljerade instruktioner finns i [Konfigurera kopplingar för att dirigera e-post mellan Microsoft 365 och dina egna e-postservrar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Hur vet du att den här uppgiften fungerade?
 
@@ -73,11 +73,14 @@ När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridn
 
 Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje användares skräppostmapp måste du utföra ett par konfigurationssteg. Stegen finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera innehållsfilterprinciperna i administrationscentret för Exchange. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera dina policyer mot skräppost. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
 
 Följ stegen för domänkonfiguration för att uppdatera MX-posten för din domän, så att din inkommande e-post flödar via EOP. Var noga med att peka din MX-post direkt till EOP i stället för att ha en tredje part filtrering tjänst relä e-post till EOP. Mer information finns i [Skapa DNS-poster för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)igen.
+
+> [!NOTE]
+> Om du måste rikta MX-posten mot en annan server eller tjänst som sitter framför EOP läser du [Förbättrad filtrering för anslutningar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Hur vet du att den här uppgiften fungerade?
 
@@ -90,4 +93,4 @@ Nu har du verifierat tjänstleverans för en korrekt konfigurerad utgående loka
 - Om du vill köra ett utgående e-posttest kan du skicka ett e-postmeddelande från en användare i organisationen till ett webbaserat e-postkonto och bekräfta att meddelandet tas emot.
 
 > [!TIP]
-> När du har slutfört installationen behöver du inte utföra extra steg för att få EOP att ta bort skräppost och skadlig kod. EOP tar bort skräppost och skadlig kod automatiskt. Du kan dock finjustera dina inställningar i EAC, baserat på dina affärskrav. Mer information finns [i Skydd mot skräppost och skadlig kod i Office 365](anti-spam-and-anti-malware-protection.md). <br/><br/> Nu när tjänsten körs rekommenderar vi att du läser [metodtips för att konfigurera EOP](best-practices-for-configuring-eop.md), som beskriver rekommenderade inställningar och överväganden för när du har konfigurerat EOP.
+> När du har slutfört installationen behöver du inte utföra extra steg för att få EOP att ta bort skräppost och skadlig kod. EOP tar bort skräppost och skadlig kod automatiskt. Du kan dock finjustera dina inställningar baserat på dina affärskrav. Mer information finns [i Skydd mot skräppost och skadlig kod i Office 365](anti-spam-and-anti-malware-protection.md) och [Konfigurera falska underrättelser](learn-about-spoof-intelligence.md). <br/><br/> Nu när tjänsten körs rekommenderar vi att du läser [metodtips för att konfigurera EOP](best-practices-for-configuring-eop.md), som beskriver rekommenderade inställningar och överväganden för när du har konfigurerat EOP.

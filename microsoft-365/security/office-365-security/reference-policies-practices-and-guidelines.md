@@ -2,10 +2,10 @@
 title: Referenspolicyer, praxis och riktlinjer
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft har utvecklat olika policyer, procedurer och antagit flera metodtips för branschen för att skydda våra användare från stötande, oönskad eller skadlig e-post.
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634394"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208216"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referens: principer, övningar och riktlinjer
 
@@ -31,9 +31,9 @@ Om du inte följer dessa policyer och riktlinjer kanske det inte är möjligt f�
 
 ## <a name="general-microsoft-policies"></a>Allmänna Microsoft-policyer
 
-E-post som skickas till Microsoft 365-användare måste följa alla Microsoft-policyer som styr e-postöverföring och användning av Office 365.
+E-post som skickas till Microsoft 365-användare måste följa alla Microsoft-policyer som styr e-postöverföring och användning av Microsoft 365.
 
-- Villkor för tjänster som gäller för Office 365; i synnerhet förbudet mot att använda tjänsten för att spamma eller distribuera skadlig kod
+- Villkor för tjänster som gäller för Microsoft 365; i synnerhet förbudet mot att använda tjänsten för att spamma eller distribuera skadlig kod.
 
 - [Avtal om Microsoft-tjänster](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft arbetar aktivt med branschorgan och tjänsteleverantörer för att fö
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Koalitionen av &amp; e-postavsändare](https://www.espcoalition.org/)
+- [E-postavsändare & Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Rapportering av missbruk och skräppost
 

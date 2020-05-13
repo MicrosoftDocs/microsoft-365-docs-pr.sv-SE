@@ -20,16 +20,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: Läs om hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: c1679b8f525712681aaaad20334840da5e625ad6
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045874"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213074"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
-När du köper företagsprodukter eller tjänster från Microsoft kan du använda en befintlig betalningsmetod eller lägga till en ny. Du kan använda ett kredit- eller betalkort eller bankkonto för att betala för det du köper. Men du kan bara hantera betalningsmetoder som du lägger till.
+När du köper företagsprodukter eller tjänster från Microsoft kan du använda en befintlig betalningsmetod eller lägga till en ny. Du kan använda ett kredit- eller betalkort eller bankkonto för att betala för det du köper.
+
+Om ditt företagskonto har en faktureringsprofil och du är ägare eller faktureringsprofildeltagare kan du använda faktureringsprofilen som backas upp av ett kreditkort eller en fakturabetalning för att göra inköp eller betala räkningar. Om du är faktureringsfakturahanterare kan du bara använda en faktureringsprofil för att betala räkningar. Mer information om faktureringsprofiler och roller finns i [Hantera faktureringsprofiler](manage-billing-profiles.md).
+
+Om ditt företagskonto inte har någon faktureringsprofil kan alla globala administratörer eller faktureringsadministratörer hantera och använda alla bankkonton som läggs till på företagskontot. Du kan dock bara hantera eller använda kreditkort som du lägger till.
 
 > [!NOTE]
 > Alternativet att betala med ett bankkonto är inte tillgängligt i vissa länder eller regioner.
@@ -40,7 +44,7 @@ När du köper företagsprodukter eller tjänster från Microsoft kan du använd
 
 Om du lägger till en betalningsmetod kopplas inga prenumerationer till den. Information om hur du tilldelar en enskild prenumeration till betalningsmetoden finns i [Ändra en betalningsmetod för en enskild prenumeration](#change-a-payment-method-for-a-single-subscription). Information om hur du ersätter alla prenumerationer som använder en annan betalningsmetod med den nya finns i [Ersätta en betalningsmetod](#replace-a-payment-method).
 
-1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsfakturor &**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret.
 2. Välj **Lägg till en betalningsmetod**.
 3. På sidan **Betalningsmetoder** väljer du ett betalningssätt i listrutan. 
 4. Ange informationen för det nya kortet eller bankkontot och välj sedan **Lägg till**.
@@ -49,9 +53,9 @@ Om du lägger till en betalningsmetod kopplas inga prenumerationer till den. Inf
 
 Du kan ändra namnet på kredit- eller betalkortet, faktureringsadressen eller utgångsdatumet för en befintlig betalningsmetod. Du kan dock inte ändra kortet eller kontonumret. Om kontonumret har ändrats [ersätter du det med en annan betalningsmetod](#replace-a-payment-method)och tar sedan bort det [gamla](#delete-a-payment-method).
 
-1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsfakturor &**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret.
 2. Markera raden för den betalningsmetod som ska uppdateras. Välj **Redigera**i den högra rutan .
-3. Uppdatera din betalningsmetodsinformation (namn på kredit- eller betalkort, faktureringsadress eller utgångsdatum) och välj sedan **Spara**.
+3. Uppdatera din betalningsmetodsinformation, inklusive namnet på kredit- eller betalkortet, faktureringsadressen eller utgångsdatumet, och välj sedan **Spara**.
 
 ## <a name="replace-a-payment-method"></a>Ersätta en betalningsmetod
 
@@ -59,7 +63,7 @@ När du ersätter en betalningsmetod ersätter du den för alla prenumerationer 
 
 Information om hur du ändrar betalningsmetoden för en enskild prenumeration finns i [Ändra en betalningsmetod för en enskild prenumeration](#change-a-payment-method-for-a-single-subscription).
 
-1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsfakturor &**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret.
 2. Markera raden för den betalningsmetod som ska ersättas. I den högra rutan visas alla faktureringsprofiler och enskilda prenumerationer som använder den valda betalningsmetoden.
 3. Välj Ersätt betalningsmetod **för alla artiklar**i den högra rutan .
 4. Om du vill använda en befintlig betalningsmetod väljer du en i listrutan och väljer sedan **Ersätt**.
@@ -73,7 +77,7 @@ Information om hur du ändrar betalningsmetoden för en enskild prenumeration fi
 
 Du kan ändra betalningsmetoden som används för att betala för en enskild prenumeration.
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 2. På fliken **Prenumerationer** väljer du den prenumeration som du vill betala för med den alternativa betalningsmetoden. 
 3. Välj **Billing** **Redigera**bredvid betalningsmetoden.
 4. Välj Ändra **bredvid**din befintliga betalningsmetod .
@@ -89,7 +93,7 @@ Du kan bara ta bort en betalningsmetod som inte är kopplad till en prenumeratio
 
 Om en betalningsmetod inte är kopplad till prenumerationer eller faktureringsprofiler kan du omedelbart ta bort den.
 
-1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsfakturor &**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret.
 2. Leta reda på betalningsmetoden som ska tas bort, markera de tre punkterna och välj sedan **Ta bort**.
 3. Längst ned i den högra rutan väljer du **Ta bort**.
 
@@ -97,7 +101,7 @@ Om en betalningsmetod inte är kopplad till prenumerationer eller faktureringspr
 
 Om en betalningsmetod är kopplad till prenumerationer eller faktureringsprofiler ersätter du den först med en befintlig betalningsmetod eller lägger till en ny och tar sedan bort den gamla betalningsmetoden.
 
-1. Gå till sidan > **Faktureringsfakturor &** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsfakturor &**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalningsmetoder</a> i administrationscentret.
 2. Markera raden för betalningsmetoden som ska tas bort. I den högra rutan visas befintliga prenumerationer som använder den betalningsmetoden.
 3. Välj **Ta bort**i den högra rutan .
 4. Om du vill använda en befintlig betalningsmetod väljer du en i listrutan, väljer **Nästa**och väljer sedan **Ta bort**.
@@ -113,7 +117,7 @@ Om en betalningsmetod är kopplad till prenumerationer eller faktureringsprofile
 |**Problem**|**Felsökningssteg**|
 |:----------|:-----|
 |**Jag får ett felmeddelande som säger: "Webbläsaren är för närvarande inställd på att blockera cookies."** |Konfigurera din webbläsare så att den tillåter cookies från tredje part och försök igen. |
-|**Mitt kredit- eller betalkort avvisades.** |Om du betalar med kredit- eller betalkort och kortet avvisas får du ett e-postmeddelande där det står att Microsoft inte kunde behandla betalningen. Dubbelkolla att &mdash; kortnummer, utgångsdatum, namn på kortet och adress, inklusive ort, delstat och postnummer , visas precis som de gör på kortet och ditt utdrag. Du kan uppdatera din kortinformation och omedelbart skicka betalningen med hjälp av länken **Kvitta saldo** i avsnittet **Fakturering** på sidan Prenumerationsinformation. Mer information finns i [Vad händer om mitt kreditkort avvisades och min betalning förfaller till betalning?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)  <br/><br/>  Om meddelandet om nekat kort fortfarande visas kontaktar du banken. Det är möjligt att ditt kort inte är aktivt. Om du nyligen har fått kortet med ett uppdaterat utgångsdatum kontrollerar du att det är aktiverat. Din bank kan också berätta om ditt kort inte är godkänt för online-, internationella eller återkommande transaktioner. |
+|**Mitt kredit- eller betalkort avvisades.** |Om du betalar med kredit- eller betalkort och kortet avvisas får du ett e-postmeddelande där det står att Microsoft inte kunde behandla betalningen. Dubbelkolla att &mdash; kortnumret, utgångsdatumet, namnet på kortet och adressen, inklusive ort, delstat och &mdash; postnummer, visas precis som de gör på kortet och ditt utdrag. Du kan uppdatera din kortinformation och omedelbart skicka betalningen med hjälp av länken **Kvitta saldo** i avsnittet **Fakturering** på sidan Prenumerationsinformation. Mer information finns i [Vad händer om mitt kreditkort avvisades och min betalning förfaller till betalning?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due)  <br/><br/>  Om meddelandet om nekat kort fortfarande visas kontaktar du banken. Det är möjligt att ditt kort inte är aktivt. Om du nyligen har fått kortet med ett uppdaterat utgångsdatum kontrollerar du att det är aktiverat. Din bank kan också berätta om ditt kort inte är godkänt för online-, internationella eller återkommande transaktioner. |
 |**Jag vill uppdatera ett kort- eller bankkontonummer.** |Du kan inte ändra kortet eller kontonumret på en befintlig betalningsmetod. Om ditt kort- eller kontonummer har ändrats [ersätter du det med en annan betalningsmetod](#replace-a-payment-method), som flyttar alla aktiva prenumerationer från betalningsmetoden till den nya och sedan tar bort den gamla [betalningsmetoden](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Jag har bara ett kort eller bankkonto på mitt konto och jag vill ta bort det.** |Om du bara har en betalningsmetod måste du [ersätta den med en ny betalningsmetod](#replace-a-payment-method) innan du kan ta bort den. |
 |**Jag kan inte lägga till mitt kort eller bankkonto.**  |Du måste använda en betalningsmetod som utfärdats från samma land som din klient. Om du har problem med att ange kort- eller bankkontoinformation kan du [kontakta supporten](../../admin/contact-support-for-business-products.md). |

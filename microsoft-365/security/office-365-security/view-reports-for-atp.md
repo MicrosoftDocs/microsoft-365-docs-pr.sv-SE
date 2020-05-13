@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Hitta och använd rapporter för avancerat skydd mot &amp; office 365 i Säkerhetsefterlevnadscenter.
+description: Hitta och använd rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: af5844cf05d14e34059a26291d2034187439ec56
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173328"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208495"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
-Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) och du har de &amp; [behörigheter som krävs](#what-permissions-are-needed-to-view-the-atp-reports)kan du använda flera ATP-rapporter i Security Compliance Center. (Gå till \> **instrumentpanelen** **Rapporter** .)
+Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) och du har de [behörigheter som krävs](#what-permissions-are-needed-to-view-the-atp-reports)kan du använda flera ATP-rapporter i Security Compliance &amp; Center. (Gå till **rapporter** \> **Instrumentpanel .)**
 
-![Instrumentpanelen för Säkerhetsefterlevnadscenter &amp; kan hjälpa dig att se var avancerat skydd mot hot fungerar](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![&amp;Instrumentpanelen för Säkerhetsefterlevnadscenter kan hjälpa dig att se var avancerat skydd mot hot fungerar](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ATP-rapporter innehåller följande:
 
@@ -47,7 +47,7 @@ Rapporten **Status för hotskydd** är en enda vy som samlar information om skad
 
 Rapporten innehåller ett aggregerat antal unika e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (WEBBADRESSER) som blockerades av anti-malware-motorn, [nolltimmars automatisk rensning (ZAP)](zero-hour-auto-purge.md)och ATP-funktioner som [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md)och [ATP anti-phishing](set-up-anti-phishing-policies.md).
 
-Filter och uppdelningar av informationen möjliggör mer detaljerade kategoriseringar av informationen i den här rapporten. Specifikt finns det en "break down by" meny **Email** \> som ingår för **E Phish** \> **Phish** och E Malware **visningar.** Det kommer att dela upp data i:
+Filter och uppdelningar av informationen möjliggör mer detaljerade kategoriseringar av informationen i den här rapporten. Specifikt finns det en "break down by" meny som ingår för **E** \> **Phish** och **E Malware** \> **visningar.** Det kommer att dela upp data i:
 
 |||
 |---|---|
@@ -61,7 +61,7 @@ Filter och uppdelningar av informationen möjliggör mer detaljerade kategoriser
 
 ![Rullgardinsmenyn Status för hotskydd som visar "bryt ned efter".](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **Mail** \> **Phish,** **E Malware** \> **och** **Content** \> **Malware** visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
+Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **Mail** \> **Phish,** **E Malware** och \> **Malware** **Content** \> **Malware** visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
 
 ![Den här bilden visar Export som ett alternativ i menyn för vyn Skadlig kod, precis mellan Skapa schema och Begäransrapport.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
@@ -70,9 +70,9 @@ Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **Mail** \> *
 Översikts- och e-postvyerna visar information inom några timmar efter bearbetningen i stället för inom 24 timmar (efterfrågan på igen. ökade hastigheter här har varit en tydlig signal)!
 
 > [!NOTE]
-> En rapport om status för hotskydd är tillgänglig för kunder som har antingen [Office 365 ATP](office-365-atp.md) eller [Exchange Online Protection](exchange-online-protection-eop.md) (EOP). Informationen som visas i rapporten Status för hotskydd för ATP-kunder innehåller dock sannolikt andra data än vad EOP-kunder kan se. Rapporten Status för hotskydd för ATP-kunder innehåller till exempel information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md). Sådan information är specifik för ATP, så kunder som har EOP men inte ATP kommer inte att se dessa uppgifter i sin rapport om hotskyddsstatus.
+> En statusrapport för hot är tillgänglig för kunder som har antingen [Office 365 ATP](office-365-atp.md) eller [Exchange Online Protection](exchange-online-protection-overview.md)) (EOP). Informationen som visas i rapporten Status för hotskydd för ATP-kunder innehåller dock sannolikt andra data än vad EOP-kunder kan se. Rapporten Status för hotskydd för ATP-kunder innehåller till exempel information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md). Sådan information är specifik för ATP, så kunder som har EOP men inte ATP kommer inte att se dessa uppgifter i sin rapport om hotskyddsstatus.
 
-Om du vill visa rapporten [ &amp; ](https://protection.office.com)Status för hotskydd går du till **Rapporter om** \> skydd av **instrumentpanelens** \> **skydd .**
+Om du vill visa rapporten [Status &amp; ](https://protection.office.com)för hotskydd går du till **Rapporter om** skydd av \> **instrumentpanelens** \> **skydd .**
 
 ![ATP-rapport om skydd mot hot](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
 
@@ -107,7 +107,7 @@ I informationstabellen kan du se mer information om klicktid och användarinform
 
 I **atp-filtyper** visas vilken typ av filer som har identifierats som skadliga av [ATP Safe Attachments](atp-safe-attachments.md).
 
-Om du vill visa [ &amp; den](https://protection.office.com)här rapporten går du till **Rapporter** \> \> **instrumentpanels-ATP-filtyper**. **Dashboard**
+Om du vill visa [ &amp; den](https://protection.office.com)här rapporten går du till **Rapporter** \> **instrumentpanels-ATP-filtyper** \> **ATP File Types**.
 
 ![Rapporten för ATP-filtyper](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -119,7 +119,7 @@ När du hovrar över en viss dag kan du se fördelningen av typer av skadliga fi
 
 **Atp Message Disposition-rapporten** visar de åtgärder som har vidtagits för e-postmeddelanden som har identifierats som skadliga innehåll.
 
-Om du vill visa den här rapporten går du till \> **Rapportinstrumentpanelen** \> **ATP Message Disposition**i [Säkerhetsefterlevnadscenter &amp; ](https://protection.office.com). **Reports**
+Om du vill visa den här rapporten **Reports** går du till Rapportinstrumentpanelen ATP Message Disposition i [ &amp; Säkerhetsefterlevnadscenter](https://protection.office.com) \> **Dashboard** \> **ATP Message Disposition**.
 
 ![ATP-meddelandedispositionsrapport](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
 
@@ -135,7 +135,7 @@ Utöver de ATP-rapporter som beskrivs i den här artikeln finns flera andra rapp
 |---|---|
 |**Rapport(er)**|**Information**|
 |**Explorer** eller **realtidsidentifieringar**: (Office 365 ATP Plan 2-kunder har Explorer; Office 365 ATP-abonnemang 1-kunder har identifieringar i realtid.)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
-|**Säkerhetsrapporter för e-post**, till exempel en rapport om toppavsändare och mottagare, en rapport om falska e-postmeddelanden och en rapport om skräppostidentifieringar.|[Visa säkerhetsrapporter för &amp; e-post i Säkerhetsefterlevnadscenter](view-email-security-reports.md)|
+|**Säkerhetsrapporter för e-post**, till exempel en rapport om toppavsändare och mottagare, en rapport om falska e-postmeddelanden och en rapport om skräppostidentifieringar.|[Visa säkerhetsrapporter för e-post i &amp; Säkerhetsefterlevnadscenter](view-email-security-reports.md)|
 |**ATP-url-spårning för säkra länkar:**(Det här är en rapport som du genererar med PowerShell.) Den här rapporten visar resultaten av ATP Safe Links-åtgärder under de senaste sju (7) dagarna.|[Cmdlet-referens för Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|
 |**EOP- och ATP-resultat**: (Det här är en anpassad rapport som du genererar med PowerShell). Den här rapporten innehåller information, till exempel Domän, Datum, Händelsetyp, Riktning, Åtgärd och Meddelanderäkning.|[Cmdlet-referens för Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport)|
 |**EOP- och ATP-identifieringar**: (Det här är en anpassad rapport som du genererar med PowerShell). Den här rapporten innehåller information om skadliga filer eller webbadresser, nätfiskeförsök, personifiering och andra potentiella hot i e-post eller filer.|[Cmdlet-referens för Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)|
@@ -143,16 +143,16 @@ Utöver de ATP-rapporter som beskrivs i den här artikeln finns flera andra rapp
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Vilka behörigheter behövs för att visa ATP-rapporterna?
 
-Om du vill visa och använda de rapporter som beskrivs i den här artikeln **måste du ha tilldelat en lämplig roll för både Security &amp; Compliance Center och Administrationscenter för Exchange**.
+Om du vill visa och använda de rapporter som beskrivs i den här artikeln **måste du ha tilldelat en lämplig roll för både Security Compliance Center och &amp; Administrationscenter för Exchange**.
 
-- För Säkerhetsefterlevnadscenter &amp; måste du ha tilldelat en av följande roller:
+- För &amp; Säkerhetsefterlevnadscenter måste du ha tilldelat en av följande roller:
 
   - Organisationshantering
-  - Säkerhetsadministratör (detta kan tilldelas i Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory admin center ( ))
-  - Säkerhetsoperatör (detta kan tilldelas i Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory admin center ( ))
+  - Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory admin center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Säkerhetsoperatör (detta kan tilldelas i Azure Active Directory admin center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Säkerhetsläsare
 
-- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) eller med PowerShell-cmdletar (Se Exchange Online [PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (Se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
 
   - Organisationshantering
   - Organisationshantering endast för vy
@@ -171,10 +171,10 @@ Om du inte ser data i ATP-rapporterna dubbelkollar du att dina principer är kor
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Rapporter och insikter i &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Rapporter och insikter i Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Skapa ett schema för en &amp; rapport i Säkerhetsefterlevnadscenter](create-a-schedule-for-a-report.md)
+[Skapa ett schema för en rapport i &amp; Säkerhetsefterlevnadscenter](create-a-schedule-for-a-report.md)
 
-[Konfigurera och hämta en anpassad &amp; rapport i Security Compliance Center](set-up-and-download-a-custom-report.md)
+[Konfigurera och hämta en anpassad rapport i Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
 
 [Rollbehörigheter (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

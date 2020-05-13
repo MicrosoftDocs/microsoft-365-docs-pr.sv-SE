@@ -1,5 +1,5 @@
 ---
-title: Använda regler för e-postflöde för att filtrera massutskick av e-post i Office 365
+title: Använda regler för e-postflöde för att filtrera massutskick
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,28 +14,32 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur du använder e-postflödesregler i Exchange Online Protection (EOP) för massfiltrering av e-post.
+description: Administratörer kan lära sig hur du använder regler för e-postflöde (transportregler) för att identifiera och filtrera massutskick (grå e-post) i Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43a10951a24ac76108fb0531f9e2c205c3fc9047
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bb305551db1e86d8d6eccf5e95cdaad29e6711ef
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034980"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208531"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Använda regler för e-postflöde för att filtrera massutskick av e-post i Office 365
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Använd regler för e-postflöde för att filtrera massutskick i EOP
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection -kund (EOP) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att skanna inkommande meddelanden för skräppost och massutskick (kallas även grå e-post). Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilter) för att söka igenom inkommande meddelanden efter skräppost och massutskick (kallas även grå e-post). Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
-Om du vill att fler alternativ ska filtrera massutskick kan du skapa regler för e-postflöde (kallas även transportregler) för att söka efter textmönster eller fraser som ofta finns i massutskick och markera dessa meddelanden som skräppost. Mer information om massutskick finns i Vad är skillnaden mellan [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md)skräppost [och massmeddelande?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+Om du vill att fler alternativ ska filtrera massutskick kan du skapa regler för e-postflöde (kallas även transportregler) för att söka efter textmönster eller fraser som ofta finns i massutskick och markera dessa meddelanden som skräppost. Mer information om massutskick finns i Vad är skillnaden mellan [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md)skräppost [och massmeddelande?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
-I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Administrationscenter för Exchange (EAC) och PowerShell (Exchange Online PowerShell för Microsoft 365-kunder. Exchange Online Protection PowerShell för fristående EOP-kunder).
+I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Administrationscenter för Exchange (EAC) och PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste tilldelas behörigheter i Exchange Online innan du kan göra dessa procedurer. Du måste ha tilldelats rollen **Transportregler,** som tilldelas rollerna **Organisationshantering,** **Efterlevnadshantering**och **Arkivhandling** som standard. Mer information finns [i Hantera rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Du måste tilldelas behörigheter innan du kan göra följande:
 
-- Information om hur du öppnar EAC i Exchange Online finns [i Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  - I Exchange Online läser du posten "E-postflöde" i [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  
+  - I fristående EOP behöver du rollen Transportregler, som tilldelas rollerna OrganizationManagement, ComplianceManagement och RecordsManagement som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+
+- Information om hur du öppnar EAC i Exchange Online finns [i Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Om du vill öppna EAC i fristående EOP finns [i Exchange admin center i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du använder Windows PowerShell för att ansluta till fristående Exchange Online Protection PowerShell finns i artikeln om att [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -55,9 +59,9 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>Använd EAC för att skapa regler för e-postflöde som filtrerar massutskick av e-post
 
-1. Gå till **Regler för** **e-postflöde** \> i EAC .
+1. Gå till Regler för **e-postflöde** i EAC \> **Rules**.
 
-2. Klicka på](../../media/ITPro-EAC-AddIcon.png) Ikonen Lägg **till** ![och välj sedan Skapa en ny **regel**.
+2. Klicka på **Ikonen Lägg till** och välj sedan Skapa en ny ![ ](../../media/ITPro-EAC-AddIcon.png) **regel**.
 
 3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
 
@@ -67,65 +71,42 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
    - **Använd den här regeln om:** Konfigurera någon av följande inställningar för att söka efter innehåll i meddelanden med reguljära uttryck (RegEx) eller ord eller fraser:
 
-     - **Ämnet eller** \> **brödtexten eller brödtexten matchar dessa textmönster:** Ange ett av följande värden i dialogrutan Ange ord eller **fraser** som visas, klicka på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepa tills du har angett alla värden.
+     - **Ämnet eller kroppen** \> **ämne eller brödtext matchar dessa textmönster**: Ange **ord eller fraser** som visas, ange ett av följande värden, klicka på Lägg **till** ikonen och upprepa ![ ](../../media/ITPro-EAC-AddIcon.png) tills du har angett alla värden.
 
        - `If you are unable to view the content of this email\, please`
-
        - `\>(safe )?unsubscribe( here)?\</a\>`
-
        - `If you do not wish to receive further communications like this\, please`
-
        - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
-
        - `To stop receiving these+emails\:http\://`
-
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
        - `If you are unable to view the content of this email\, please click here`
-
        - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
        - `If you no longer wish to receive these emails`
-
        - `to change your (subscription preferences|preferences or unsubscribe)`
-
        - `click (here to|the) unsubscribe`
 
-      Om du vill redigera en post](../../media/ITPro-EAC-EditIcon.png)markerar du den och klickar på **Ikonen Redigera** ![redigering . Om du vill ta bort en](../../media/ITPro-EAC-DeleteIcon.png)post markerar du den och klickar på Ikonen Ta bort ta **bort** ![.
+      Om du vill redigera en post markerar du den och klickar på **Ikonen Redigera** ![ redigering ](../../media/ITPro-EAC-EditIcon.png) . Om du vill ta bort en post markerar du den och klickar på **Ikonen Ta bort** ta bort ![ ](../../media/ITPro-EAC-DeleteIcon.png) .
 
        När du är klar klickar du på **OK**.
 
-     - **Ämnet eller** \> **brödtexten eller brödtexten innehåller något av dessa ord:** Ange ett av följande värden i dialogrutan Ange ord eller **fraser** som visas, klicka på Lägg **till** ![ikon](../../media/ITPro-EAC-AddIcon.png)och upprepa tills du har angett alla värden.
+     - **Ämnet eller kroppen** \> **ämne eller brödtext innehåller något av dessa ord**: Ange ord eller **fraser** som visas anger du ett av följande värden, klickar på **Lägg till** ![ ikon och upprepar ](../../media/ITPro-EAC-AddIcon.png) tills du har angett alla värden.
 
        - `to change your preferences or unsubscribe`
-
        - `Modify email preferences or unsubscribe`
-
        - `This is a promotional email`
-
        - `You are receiving this email because you requested a subscription`
-
        - `click here to unsubscribe`
-
        - `You have received this email because you are subscribed`
-
        - `If you no longer wish to receive our email newsletter`
-
        - `to unsubscribe from this newsletter`
-
        - `If you have trouble viewing this email`
-
        - `This is an advertisement`
-
        - `you would like to unsubscribe or change your`
-
        - `view this email as a webpage`
-
        - `You are receiving this email because you are subscribed`
 
-      Om du vill redigera en post](../../media/ITPro-EAC-EditIcon.png)markerar du den och klickar på **Ikonen Redigera** ![redigering . Om du vill ta bort en](../../media/ITPro-EAC-DeleteIcon.png)post markerar du den och klickar på Ikonen Ta bort ta **bort** ![.
+      Om du vill redigera en post markerar du den och klickar på **Ikonen Redigera** ![ redigering ](../../media/ITPro-EAC-EditIcon.png) . Om du vill ta bort en post markerar du den och klickar på **Ikonen Ta bort** ta bort ![ ](../../media/ITPro-EAC-DeleteIcon.png) .
 
        När du är klar klickar du på **OK**.
 
@@ -135,7 +116,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde i Adm
 
      - Om du vill markera meddelanden som **skräppost med högt förtroende** väljer du **9**. Åtgärden som du har konfigurerat för skräppostfiltreringsdomar med **högt förtroende** i dina anti-spam-principer tillämpas på meddelandena (standardvärdet är **Flytta meddelande till mappen Skräppost**).
 
-    Mer information om SCL-värden finns [i SCL (Spam Confidence Level) i Office 365](spam-confidence-levels.md).
+    Mer information om SCL-värden finns i [SCL (Spam Confidence Level) i EOP](spam-confidence-levels.md).
 
    När du är klar klickar du på **Spara**
 
@@ -165,9 +146,9 @@ Detaljerad information om syntax och parametrar finns i [New-TransportRule](http
 
 Så här kontrollerar du att du har konfigurerat regler för e-postflöde för att filtrera massutskick av e-post:
 
-- Gå till EAC-regler för att skicka **Edit** ![till](../../media/ITPro-EAC-EditIcon.png) **E-postflödesregler** \> **Rules** \> och markera regeln \> klicka på Redigera redigera ikon och kontrollera inställningarna.
+- Gå till **EAC-regler** för att skicka till \> **E-postflödesregler** \> och markera regeln klicka på \> **Redigera** ![ redigera ikon och kontrollera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
 
-- I PowerShell \<ersätter\> du Regelnamn med namnet på regeln och kör följande kommando för att verifiera inställningarna:
+- I PowerShell ersätter du \< Regelnamn \> med namnet på regeln och kör följande kommando för att verifiera inställningarna:
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

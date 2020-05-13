@@ -1,5 +1,5 @@
 ---
-title: Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske
+title: Så här validerar EOP Från-adressen för att förhindra nätfiske
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: För att förhindra nätfiske kräver Microsoft 365 och Outlook.com nu RFC-kompatibilitet för Från:-adresser.
+description: Administratörer kan lära sig om vilka typer av e-postadresser som accepteras eller avvisas av Exchange Online Protection (EOP) och Outlook.com för att förhindra nätfiske.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034088"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209457"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Så här validerar EOP Från-adressen för att förhindra nätfiske
 
-Microsoft 365-e-postkonton får ett allt större antal nätfiskeattacker. Förutom att använda [falska (förfalskade) avsändar-e-postadresser](anti-spoofing-protection.md)använder angripare ofta värden i den Från-adress som bryter mot internetstandarder. För att förhindra den här typen av nätfiske kräver Microsoft 365 och Outlook.com nu inkommande meddelanden för att inkludera en RFC-kompatibel Från-adress enligt beskrivningen i det här avsnittet. Denna verkställighet aktiverades i november 2017.
+Nätfiskeattacker är ett ständigt hot mot alla e-postorganisationer. Förutom att använda [falska (förfalskade) avsändar-e-postadresser](anti-spoofing-protection.md)använder angripare ofta värden i den Från-adress som bryter mot internetstandarder. För att förhindra den här typen av nätfiske kräver Exchange Online Protection (EOP) och Outlook.com nu inkommande meddelanden för att inkludera en RFC-kompatibel från-adress enligt beskrivningen i det här avsnittet. Denna verkställighet aktiverades i november 2017.
 
 **Anmärkningar**:
 
@@ -39,9 +39,9 @@ Microsoft 365-e-postkonton får ett allt större antal nätfiskeattacker. Förut
 
 Ett standardmeddelande för SMTP-meddelanden består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som krävs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelandehuvud (kallas gemensamt *meddelandehuvudet)* och meddelandetexten. Meddelandekuvertet beskrivs i [RFC 5321](https://tools.ietf.org/html/rfc5321)och meddelandehuvudet beskrivs i [RFC 5322](https://tools.ietf.org/html/rfc5322). Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
 
-- Adressen `5321.MailFrom` (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).**
+- `5321.MailFrom`Adressen (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).**
 
-- (även `5322.From` känd som Från-adressen eller P2-avsändaren) är e-postadressen i fältet **Från-huvud** och är avsändarens e-postadress som visas i e-postklienter. Från-adressen är i fokus för kraven i det här avsnittet.
+- `5322.From`(även känd som Från-adressen eller P2-avsändaren) är e-postadressen i fältet **Från-huvud** och är avsändarens e-postadress som visas i e-postklienter. Från-adressen är i fokus för kraven i det här avsnittet.
 
 Från-adressen definieras i detalj i flera RFC (till exempel RFC 5322-avsnitten 3.2.3, 3.4 och 3.4.1 och [RFC 3696](https://tools.ietf.org/html/rfc3696)). Det finns många varianter på adressering och vad som anses giltigt eller ogiltigt. För att hålla det enkelt rekommenderar vi följande format och definitioner:
 
@@ -53,7 +53,7 @@ Från-adressen definieras i detalj i flera RFC (till exempel RFC 5322-avsnitten 
   - Om från-adressen innehåller ett visningsnamn måste värdet e-postadress omges av vinkelparenteser (< >) enligt bilden.
   - Microsoft rekommenderar starkt att du infogar ett mellanslag mellan visningsnamnet och e-postadressen.
 
-- **EmailAddress**: En e-postadress använder formatet: `local-part@domain`
+- **EmailAddress**: En e-postadress använder `local-part@domain` formatet:
 
   - **lokal del**: En sträng som identifierar postlådan som är associerad med adressen. Det här värdet är unikt inom domänen. Ofta används postlådeägarens användarnamn eller GUID.
   - **domän:** Det fullständigt kvalificerade domännamnet (FQDN) för e-postservern som är värd för postlådan som identifieras av den lokala delen av e-postadressen.
@@ -104,7 +104,7 @@ Följande Från-e-postadresser är ogiltiga:
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Undertrycka autosvar på din anpassade domän
 
-Du kan inte använda `From: <>` värdet för att undertrycka autosvar. I stället måste du ställa in en null MX-post för din anpassade domän. Autosvar (och alla svar) undertrycks naturligtvis eftersom det inte finns någon publicerad adress som den svarande servern kan skicka meddelanden till.
+Du kan inte använda värdet `From: <>` för att undertrycka autosvar. I stället måste du ställa in en null MX-post för din anpassade domän. Autosvar (och alla svar) undertrycks naturligtvis eftersom det inte finns någon publicerad adress som den svarande servern kan skicka meddelanden till.
 
 - Välj en e-postdomän som inte kan ta emot e-post. Om din primära domän till exempel är contoso.com kan du välja noreply.contoso.com.
 
