@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig mer om inställningarna och filtren mot skräppost som hjälper dig att förhindra skräppost i Exchange Online och Microsoft 365.
-ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig mer om inställningar och filter mot skräppost som förhindrar skräppost i Exchange Online Protection (EOP).
+ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034064"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211422"
 ---
-# <a name="anti-spam-protection-in-microsoft-365"></a>Skydd mot skräppost i Microsoft 365
+# <a name="anti-spam-protection-in-eop"></a>Skydd mot skräppost i EOP
 
 > [!NOTE]
-> Det här avsnittet är avsett för Microsoft 365-administratörer. För slutanvändaravsnitt finns [i Översikt över skräppostfiltret](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) och lär dig mer om skräppost och [nätfiske](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Det här avsnittet är avsett för administratörer. För slutanvändaravsnitt finns [i Översikt över skräppostfiltret](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) och lär dig mer om skräppost och [nätfiske](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection -kund (EOP) utan Exchange Online-postlådor skyddas dina e-postmeddelanden automatiskt mot skräppost (skräppost) av EOP.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor skyddas e-postmeddelanden automatiskt mot skräppost (skräppost) av EOP.
 
 Microsofts färdplan för e-postsäkerhet innebär en oöverträffad produktövergripande metod. EOP:s anti-spam- och anti-phishing-teknik tillämpas på våra e-postplattformar för att ge användarna de senaste anti-spam- och anti-phishing-verktygen och innovationerna i hela nätverket. Målet för EOP är att erbjuda en omfattande och användbar e-posttjänst som hjälper till att upptäcka och skydda användare från skräppost, bedrägliga e-posthot (nätfiske) och skadlig kod.
 
@@ -43,7 +43,7 @@ För att minska skräpposten innehåller EOP skräppostskydd som använder propr
 
 Anti-spam-inställningarna i EOP är gjorda av följande tekniker:
 
-- **Anslutningsfiltrering:** Identifierar bra och dåliga e-postkällservrar tidigt i den inkommande e-postanslutningen via IP Allow List, IP Block List och den *säkra listan* (en dynamisk men icke-redigerbar lista över betrodda avsändare som underhålls av Microsoft). Du konfigurerar dessa inställningar i anslutningsfilterprincipen. Läs mer vid [Konfigurera anslutningsfiltrering i Microsoft 365](configure-the-connection-filter-policy.md).
+- **Anslutningsfiltrering:** Identifierar bra och dåliga e-postkällservrar tidigt i den inkommande e-postanslutningen via IP Allow List, IP Block List och den *säkra listan* (en dynamisk men icke-redigerbar lista över betrodda avsändare som underhålls av Microsoft). Du konfigurerar dessa inställningar i anslutningsfilterprincipen. Läs mer vid [Konfigurera anslutningsfiltrering](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Spoof intelligence använder anslutningsfiltrering för att skapa tillåta och blockera listor över avsändare som förfalskar din e-postdomän. Mer information finns [i Läs mer om falska underrättelser i Microsoft 365](learn-about-spoof-intelligence.md).
@@ -105,7 +105,7 @@ Här är några steg som du kan vidta för att förhindra falska positiva result
 
   Mer information om de här inställningarna finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Använd de tillgängliga listorna för betrodda avsändare:** Mer information finns i [Skapa listor över betrodda avsändare](skapa säkra avsändare-listor-i-office-365.md.
+- **Använd de tillgängliga listorna för säkra avsändare:** Mer information finns i [Skapa listor över betrodda avsändare](create-safe-sender-lists-in-office-365.md).
 
 - **Kontrollera att användarna befinner sig inom de sändnings- och mottagningsgränser** som beskrivs i [Mottagnings- och sändningsgränser](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) i exchange online-tjänstbeskrivningen.
 

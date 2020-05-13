@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Använd den nya säkerhetsinstrumentpanelen för att granska Status för skydd mot hotskydd i Office 365 och visa och agera på säkerhetsaviseringar.
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632523"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208042"
 ---
 # <a name="security-dashboard"></a>Instrumentpanel för säkerhet
 
@@ -35,7 +35,7 @@ Titta på videon för att få en översikt och läs sedan den här artikeln om d
 
 Beroende på vad organisationens prenumeration innehåller innehåller säkerhetsinstrumentpanelen flera widgetar, till exempel Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware med mera, enligt beskrivningen i följande avsnitt.
 
-Om du vill visa säkerhetsinstrumentpanelen går du till **instrumentpanelen** **för hothantering** \> i [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+Om du vill visa [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md)säkerhetsinstrumentpanelen går du till **Threat management** \> **instrumentpanelen**för hothantering i Security & Compliance Center .
 
 > [!NOTE]
 > Du måste vara global administratör, säkerhetsadministratör eller säkerhetsläsare för att kunna visa säkerhetsinstrumentpanelen. Vissa widgetar kräver ytterligare behörigheter för att kunna visa. Mer information finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -61,7 +61,7 @@ Widgeten Hot Protection Status visar hotskyddseffektivitet med en trendig och de
 
 ![Widget för status för hotskydd](../../media/tpswidget.png)
 
-Informationen beror på om din Microsoft 365-prenumeration innehåller [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) med eller utan Office [365 Advanced Threat Protection](office-365-atp.md) (ATP).
+Informationen beror på om din Microsoft 365-prenumeration innehåller [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) med eller utan Office [365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 |||
 |---|---|
@@ -127,6 +127,6 @@ Om du vill visa eller komma åt widgeten Senaste hothanteringsaviseringar måste
 
 [Visa rapporter för avancerat hotskydd för Office 365](view-reports-for-atp.md)
 
-[Office 365 ATP](office-365-atp.md)
+[Office 365 Avancerat skydd](office-365-atp.md)
 
 [Office 365 Hotutredning och hothantering](office-365-ti.md)

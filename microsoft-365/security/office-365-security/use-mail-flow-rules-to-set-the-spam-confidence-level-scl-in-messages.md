@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du skapar regler för e-postflöde (transportregler) för att identifiera meddelanden och ange informationsnivå för skräppost (SCL) för meddelanden i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 444a7f2a8342102c2222cc734b2592f46632f8d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035016"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208567"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden i EOP
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection -kund (EOP) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att skanna inkommande meddelanden efter skräppost. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att söka igenom inkommande meddelanden efter skräppost. Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
-Om du vill markera specifika meddelanden som skräppost innan de ens skannas av skräppostfiltrering eller markera meddelanden så att de hoppar över skräppostfiltrering kan du skapa regler för e-postflöde (kallas även transportregler) för att identifiera meddelandena och ställa in säkerhetsnivån för skräppost (SCL). Mer information om SCL finns [i SCL (Spam Confidence Level) i Office 365](spam-confidence-levels.md).
+Om du vill markera specifika meddelanden som skräppost innan de ens skannas av skräppostfiltrering eller markera meddelanden så att de hoppar över skräppostfiltrering kan du skapa regler för e-postflöde (kallas även transportregler) för att identifiera meddelandena och ställa in säkerhetsnivån för skräppost (SCL). Mer information om SCL finns i [SCL (Spam Confidence Level) i EOP](spam-confidence-levels.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -40,9 +40,9 @@ Om du vill markera specifika meddelanden som skräppost innan de ens skannas av 
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Använda EAC för att skapa en regel för e-postflöde som anger SCL för ett meddelande
 
-1. Gå till **Regler för** **e-postflöde** \> i EAC .
+1. Gå till Regler för **e-postflöde** i EAC \> **Rules**.
 
-2. Klicka på](../../media/ITPro-EAC-AddIcon.png) Ikonen Lägg **till** ![och välj sedan Skapa en ny **regel**.
+2. Klicka på **Ikonen Lägg till** och välj sedan Skapa en ny ![ ](../../media/ITPro-EAC-AddIcon.png) **regel**.
 
 3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
 
@@ -57,7 +57,7 @@ Om du vill markera specifika meddelanden som skräppost innan de ens skannas av 
    - **Bypass spam filtrering:** Detta ställer in SCL till -1, vilket innebär att meddelandena kommer att hoppa över spam filtrering.
 
      > [!CAUTION]
-     > Var mycket försiktig med att tillåta meddelanden att hoppa över skräppostfiltrering. Angripare kan använda det här säkerhetsproblemet för att skicka nätfiske och andra skadliga meddelanden till din organisation. Reglerna för e-postflöde kräver mer än bara avsändarens e-postadress eller domän. Mer information finns i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
+     > Var mycket försiktig med att tillåta meddelanden att hoppa över skräppostfiltrering. Angripare kan använda det här säkerhetsproblemet för att skicka nätfiske och andra skadliga meddelanden till din organisation. Reglerna för e-postflöde kräver mer än bara avsändarens e-postadress eller domän. Mer information finns [i Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).
 
    - **0 till 4**: Meddelandet skickas via skräppostfiltrering för ytterligare bearbetning.
 
@@ -69,4 +69,4 @@ Om du vill markera specifika meddelanden som skräppost innan de ens skannas av 
 
 ## <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Om du vill kontrollera att den här proceduren fungerar korrekt skickar du ett e-postmeddelande till någon i organisationen och kontrollerar att åtgärden som utförs i meddelandet är som förväntat. Om du till exempel **ställer in scl (Spam Confidence Level)** på **Kringgå skräppostfiltrering**ska meddelandet skickas till den angivna mottagarens inkorg. Men om du **ställer in spam förtroendenivå (SCL)** till **9**, och **hög förtroende spam** åtgärder för din tillämpliga innehåll filter politik är att flytta meddelandet till mappen Skräppost, då meddelandet ska skickas till den angivna mottagarens skräppostmapp.
+Om du vill kontrollera att den här proceduren fungerar korrekt skickar du ett e-postmeddelande till någon i organisationen och kontrollerar att åtgärden som utförs i meddelandet är som förväntat. Om du till exempel **ställer in scl (Spam Confidence Level)** på **Kringgå skräppostfiltrering**ska meddelandet skickas till den angivna mottagarens inkorg. Men om du **ställer in spam förtroende nivå (SCL)** till **9**, och **hög förtroende spam** åtgärder för din tillämpliga anti-spam politik är att flytta meddelandet till mappen Skräppost, då meddelandet ska skickas till den angivna mottagarens skräppostmapp.

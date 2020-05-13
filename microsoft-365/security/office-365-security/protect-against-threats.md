@@ -2,8 +2,8 @@
 title: Skydda mot hot
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: hub-page
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om hotskyddet i Office 365 och konfigurera hur du använder det för din organisation.
+description: Administratörer kan lära sig mer om hotskydd i Microsoft 365 och konfigurera hur du använder det för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bdc7d619f3c48318572116fbc52647a0858ec5e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3ed243d36866e9ebadf00a0247dd4545113788e8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033896"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206610"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -61,13 +61,13 @@ Du måste tilldelas en lämplig roll för att konfigurera principer i [Security 
 |Hantering av Exchange Online-organisation|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>Och<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-Mer information finns [i Behörigheter &amp; i Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+Mer information finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Del 1 - Skydd mot skadlig kod
 
 [Skydd mot skadlig kod](anti-malware-protection.md) är tillgängligt i prenumerationer som inkluderar [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. Välj Policy mot**skadlig kod**för **Threat management** > **Policy** > & säkerhet i [säkerhetsorganisationscenter.](https://protection.office.com)
+1. I [Security & Compliance Center](https://protection.office.com)väljer du **Policy**  >  **Policy**  >  **anti-malware mot hothantering.**
 
 2. Dubbelklicka på **standardprincipen** och välj sedan **inställningar**.
 
@@ -89,15 +89,15 @@ Tidsberedskapsskydd mot skadliga webbadresser och filer är tillgängligt i pren
 
 Om du vill ställa in [ATP-säkra bilagor](atp-safe-attachments.md)måste du definiera minst en ATP-princip för säkra bilagor.
 
-1. I [Security & Compliance Center](https://protection.office.com)väljer du**ATP-säkra atp-betrodda bilagor**för **hothanteringsprincip.** > **Policy** > 
+1. I [Security & Compliance Center](https://protection.office.com)väljer du ATP-säkra atp-betrodda bilagor **för hothanteringsprincip.**  >  **Policy**  >  **ATP safe attachments**
 
 2. Välj alternativet **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
 
-3. Klicka på plustecknet ( i avsnittet**+** **Skydda e-postbilagor).**
+3. Klicka på plustecknet ( i avsnittet **Skydda e-postbilagor).** **+**
 
 4. Ange följande inställningar:
 
-   - Skriv `Block malware`i rutan **Namn** .
+   - Skriv i rutan **Namn** `Block malware` .
 
    - I svarsavsnittet väljer du **Blockera**.
 
@@ -115,17 +115,17 @@ Mer information finns i Konfigurera principer för [betrodda anslutningspunkter 
 
 Om du vill konfigurera [atp-säkra länkar](atp-safe-links.md)granskar och redigerar du standardprincipen och lägger till en princip för specifika användare.
 
-1. I [Security & Compliance Center](https://protection.office.com)väljer du**ATP Safe Links**för **hothanteringsprincip.** > **Policy** > 
+1. I [Security & Compliance Center](https://protection.office.com)väljer du ATP Safe Links **för hothanteringsprincip.**  >  **Policy**  >  **ATP Safe Links**
 
 2. Dubbelklicka **Default** på standardprincipen.
 
 3. I avsnittet **Använd säkra länkar i** väljer du alternativet Microsoft **365 Apps för företag, Office för iOS och Android**och klickar sedan på **Spara**.
 
-4. Klicka **på** plustecknet (**+**).
+4. Klicka **på** plustecknet ( **+** ).
 
 5. Ange följande inställningar:
 
-   - Skriv ett namn i rutan **Namn,** till exempel `Safe Links`.
+   - Skriv ett namn i rutan **Namn,** till exempel `Safe Links` .
 
    - Välj **På**i avsnittet **Välj åtgärd** .
 
@@ -151,7 +151,7 @@ Mer information finns i [Set up Office 365 ATP Safe Links policies](set-up-atp-s
 
 I följande procedur beskrivs hur du konfigurerar en ATP-princip mot nätfiske. Stegen är liknande för att konfigurera en anti-phishing-policy (utan ATP).
 
-1. I [Security & Compliance Center](https://protection.office.com)väljer du**ATP-principen****Policy** >  **mot hothantering.** > 
+1. I [Security & Compliance Center](https://protection.office.com)väljer du **Threat management**  >  **Policy**  >  **ATP-principen mot hothantering.**
 
 2. Klicka på **Standardprincip**.
 
@@ -179,13 +179,13 @@ I följande procedur beskrivs hur du konfigurerar en ATP-princip mot nätfiske. 
 
 5. Stäng sidan standardinställningsinställningar.
 
-Mer information om alternativ för phishing-phishing finns [i Konfigurera ATP-principer för nätfiske i Office 365](configure-atp-anti-phishing-policies.md).
+Mer information om dina policyalternativ mot nätfiske finns i [Konfigurera ATP-principer för nätfiske](configure-atp-anti-phishing-policies.md).
 
 ## <a name="part-4---anti-spam-protection"></a>Del 4 - Skydd mot skräppost
 
 [Skydd mot skräppost](anti-spam-protection.md) är tillgängligt i prenumerationer som inkluderar [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. Välj Policy mot **Threat management** > **Policy** > **skräppost**för & säkerhet i [säkerhetsorganisationscenter.](https://protection.office.com)
+1. I [Security & Compliance Center](https://protection.office.com)väljer du **Anti-spam för hothanteringspolicy**  >  **Policy**  >  **Anti-spam**.
 
 2. Aktivera **Anpassade inställningar** på fliken **Anpassad.**
 
@@ -197,7 +197,7 @@ Mer information om alternativ för phishing-phishing finns [i Konfigurera ATP-pr
 
 4. Klicka på **Spara**.
 
-Mer information om alternativ för anti-spam finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
+Mer information om dina policyalternativ mot skräppost finns [i Konfigurera policyer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Del 5 - Ytterligare inställningar för att konfigurera
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratörer kan använda meddelandespårning i Security & Compliance Center för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635322"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209433"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -27,11 +27,11 @@ Meddelandespårning i Security & Compliance Center följer e-postmeddelanden nä
 Meddelandespårning i Security & Compliance Center förbättrar den ursprungliga meddelandespårningen som var tillgänglig i Administrationscentret för Exchange (EAC). Du kan använda informationen från meddelandespårning för att effektivt svara på användarfrågor om vad som hände med meddelanden, felsöka problem med e-postflödet och validera principändringar.
 
 > [!NOTE]
-> * Om du vill utföra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>* Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet get-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) i Exchange Online PowerShell eller Exchange Online Protection PowerShell returnerar alla meddelanden i resultatet.
+> • För att göra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet get-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) i Exchange Online PowerShell eller Exchange Online Protection PowerShell returnerar alla meddelanden i resultatet.
 
 ## <a name="open-message-trace"></a>Öppna meddelandespårning
 
-1. Öppna Säkerhets- & Compliance Center <https://protection.office.com>på .
+1. Öppna Säkerhets- & Compliance Center på <https://protection.office.com> .
 
 2. Expandera **e-postflöde**och välj sedan **Meddelandespårning**.
 
@@ -39,7 +39,7 @@ Meddelandespårning i Security & Compliance Center förbättrar den ursprungliga
 
 Härifrån kan du starta en ny standardspårning genom att klicka på knappen **Starta en spårning.** Detta söker efter alla meddelanden för alla avsändare och mottagare under de senaste två dagarna. Du kan också använda en av de lagrade frågorna från de tillgängliga frågekategorierna och antingen köra dem som de är eller använda dem som utgångspunkter för dina egna frågor:
 
-- **Standardfrågor**: Inbyggda frågor som tillhandahålls av Office 365.
+- **Standardfrågor**: Inbyggda frågor från Microsoft 365.
 
 - **Anpassade frågor**: Frågor som sparats av administratörer i organisationen för framtida användning.
 
@@ -58,7 +58,7 @@ Standardvärdena är **Alla avsändare** och **Alla mottagare**, men du kan anv�
 - **Till dessa personer**: Klicka i det här fältet för att välja en eller flera mottagare i organisationen.
 
 > [!NOTE]
-> Du kan också skriva e-postadresser till externa avsändare och mottagare. Jokertecken stöds (till exempel `*@contoso.com`), men du kan inte använda flera jokerteckenposter i samma fält samtidigt. <br/><br/> Du kan klistra in flera avsändare eller mottagarlistor avgränsade med semikolon (`;`). utrymmen`\s`( ),`\r`vagnreturer (`\n`) eller nästa rader ( ).
+> Du kan också skriva e-postadresser till externa avsändare och mottagare. Jokertecken stöds (till exempel `*@contoso.com` ), men du kan inte använda flera jokerteckenposter i samma fält samtidigt. <br/><br/> Du kan klistra in flera avsändare eller mottagarlistor avgränsade med semikolon ( `;` ). utrymmen ( `\s` ), vagnreturer ( `\r` ) eller nästa rader ( `\n` ).
 
 ### <a name="time-range"></a>Tidsintervall
 
@@ -94,11 +94,11 @@ Du kan lämna standardvärdet **Alla** markerade, eller så kan du välja ett av
 
 - **Misslyckades**: Meddelandet levererades inte.
 
-- **I karantän**: Meddelandet sattes i karantän (som skräppost, massutskick eller nätfiske). Mer information finns [i Karantänmeddelanden i Office 365](quarantine-email-messages.md).
+- **I karantän**: Meddelandet sattes i karantän (som skräppost, massutskick eller nätfiske). Mer information finns i [EOP i karantän](quarantine-email-messages.md).
 
 - **Filtreras som skräppost**: Meddelandet identifierades spam, och avvisades eller blockerades (inte karantän).
 
-- **Hämta status:** Meddelandet togs nyligen emot av Office 365, men inga andra statusdata är ännu tillgängliga. Kom tillbaka om några minuter.
+- **Hämta status:** Meddelandet togs nyligen emot av Microsoft 365, men inga andra statusdata är ännu tillgängliga. Kom tillbaka om några minuter.
 
 **De**värden som **väntar,** **sätts i karantän**och Filtrera som **skräppost** är endast tillgängliga för sökningar mindre än 10 dagar. Det kan också finnas en fördröjning på 5 till 10 minuter mellan den faktiska och rapporterade leveransstatusen.
 
@@ -106,7 +106,7 @@ Du kan lämna standardvärdet **Alla** markerade, eller så kan du välja ett av
 
 Det här är internetmeddelande-ID (kallas även klient-ID) som finns i **fältet Meddelande-ID:** sidhuvud i meddelandehuvudet. Användare kan ge dig det här värdet för att undersöka specifika meddelanden.
 
-Det här värdet är konstant under meddelandets livstid. För meddelanden som skapats i Microsoft 365 eller `<GUID@ServerFQDN>`Exchange är värdet\< \>i formatet , inklusive vinkelparenteserna ( ). Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andra meddelandesystem kan använda olika syntax eller värden. Detta värde är tänkt att vara unik, men inte alla e-postsystem strikt följa detta krav. Om **fältet Meddelande-ID:** huvud inte finns eller är tomt för inkommande meddelanden från externa källor tilldelas ett godtyckligt värde.
+Det här värdet är konstant under meddelandets livstid. För meddelanden som skapats i Microsoft 365 eller Exchange är värdet i formatet `<GUID@ServerFQDN>` , inklusive vinkelparenteserna ( \< \> ). Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andra meddelandesystem kan använda olika syntax eller värden. Detta värde är tänkt att vara unik, men inte alla e-postsystem strikt följa detta krav. Om **fältet Meddelande-ID:** huvud inte finns eller är tomt för inkommande meddelanden från externa källor tilldelas ett godtyckligt värde.
 
 När du använder **Meddelande-ID** för att filtrera resultaten måste du inkludera hela strängen, inklusive eventuella vinkelparenteser.
 
@@ -126,7 +126,7 @@ De tillgängliga rapporttyperna är:
 
 - **Sammanfattning**: Tillgänglig om tidsintervallet är mindre än 10 dagar och kräver inga ytterligare filtreringsalternativ. Resultaten är tillgängliga nästan omedelbart efter att du klickar på **Sök**. Rapporten ger tillbaka upp till 20000 års resultat.
 
-- **Förbättrad sammanfattning** eller **Utökad:** Dessa rapporter är endast tillgängliga som nedladdningsbara CSV-filer och kräver ett eller flera av följande filtreringsalternativ oavsett tidsintervall: **Av dessa personer**, Till dessa **personer**eller **Meddelande-ID**. Du kan använda jokertecken för avsändare eller mottagare \*(till exempel @contoso.com). Den förbättrade sammanfattningsrapporten returnerar upp till 50000 resultat. Den utökade rapporten ger upp till 1 000 resultat.
+- **Förbättrad sammanfattning** eller **Utökad:** Dessa rapporter är endast tillgängliga som nedladdningsbara CSV-filer och kräver ett eller flera av följande filtreringsalternativ oavsett tidsintervall: **Av dessa personer**, Till dessa **personer**eller **Meddelande-ID**. Du kan använda jokertecken för avsändare eller mottagare (till exempel \* @contoso.com). Den förbättrade sammanfattningsrapporten returnerar upp till 50000 resultat. Den utökade rapporten ger upp till 1 000 resultat.
 
 **Anmärkningar**:
 
@@ -152,7 +152,7 @@ Sammanfattningsrapporten innehåller följande information:
 
 - **Datum**: Datum och tid då meddelandet togs emot av tjänsten med hjälp av den konfigurerade UTC-tidszonen.
 
-- **Avsändare**: Avsändarens e-postadress (@*aliasdomän*).*alias*
+- **Avsändare**: Avsändarens e-postadress*alias*( @ *aliasdomän*).
 
 - **Mottagare**: Mottagarens eller mottagarnas e-postadress. För ett meddelande som skickas till flera mottagare finns det en rad per mottagare. Om mottagaren är en distributionsgrupp, en dynamisk distributionsgrupp eller en e-postaktiverad säkerhetsgrupp blir gruppen den första mottagaren och sedan är varje medlem i gruppen på en separat rad.
 
@@ -172,7 +172,7 @@ Du kan exportera resultaten när du har markerat en eller flera rader genom att 
 
 Relaterade meddelandeposter är poster som delade samma meddelande-ID. Kom ihåg att även ett enda meddelande som skickas mellan två personer kan generera flera poster. Antalet poster ökar när meddelandet påverkas av distributionsgruppsexpansion, vidarebefordran, regler för e-postflöde (kallas även transportregler) etc.
 
-När du har markerat en rads kryssruta kan du hitta relaterade poster för meddelandet genom](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> att klicka på knappen **Sök relaterad** som visas eller genom att välja **Fler alternativ** ![ **Mer sökrelaterade poster för det här meddelandet**).
+När du har markerat en rads kryssruta kan du hitta relaterade poster för meddelandet genom att klicka på knappen **Sök relaterad** som visas eller genom att välja **Fler alternativ** ![ Mer ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **sökrelaterade poster för det här meddelandet**).
 
 Mer information om meddelande-ID finns i avsnittet Meddelande-ID tidigare i det här avsnittet.
 
@@ -182,7 +182,7 @@ I utdata för sammanfattningsrapporten kan du visa information om ett meddelande
 
 - Markera raden (klicka var som helst på raden utom kryssrutan).
 
-- Markera radens kryssruta och](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> klicka på **Fler alternativ** ![Mer **Visa meddelandeinformation**.
+- Markera radens kryssruta och klicka på **Fler alternativ** Mer ![ Visa ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **meddelandeinformation**.
 
    ![Information efter att du har dubbelklickats på en rad i meddelandespårningen för sammanfattningsrapportresultat i säkerhets- & compliance center](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
@@ -226,11 +226,11 @@ Meddelandespårningsinformationen innehåller följande ytterligare information 
 
 Tillgängliga (slutförda) Förbättrade sammanfattningsrapporter finns i avsnittet **Nedladdningsbara rapporter** i början av meddelandespårningen. Följande information finns i rapporten:
 
-- **origin_timestamp**<sup>*</sup>: Datum och tid då meddelandet ursprungligen togs emot av tjänsten med hjälp av den konfigurerade UTC-tidszonen.
+- **origin_timestamp** <sup>*</sup> : Datum och tid då meddelandet ursprungligen togs emot av tjänsten med hjälp av den konfigurerade UTC-tidszonen.
 
-- **sender_address**: Avsändarens e-postadress (@*aliasdomän*).*alias*
+- **sender_address**: Avsändarens e-postadress (*alias* @ *aliasdomän*).
 
-- **Recipient_status**: Status för leveransen av meddelandet till mottagaren. Om meddelandet skickades till flera mottagare visas alla mottagare och motsvarande status för varje, i \<formatet: *e-postadressstatus*\>##\<*status*\>. Till exempel:
+- **Recipient_status**: Status för leveransen av meddelandet till mottagaren. Om meddelandet skickades till flera mottagare visas alla mottagare och motsvarande status för varje, i formatet: \< *e-postadressstatus* \> ## \< *status* \> . Till exempel:
 
   - **##Receive betyder Send** att meddelandet togs emot av tjänsten och skickades till det avsedda målet.
 
@@ -244,7 +244,7 @@ Tillgängliga (slutförda) Förbättrade sammanfattningsrapporter finns i avsnit
 
 - **message_id**: Det här värdet beskrivs i avsnittet [Meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-- **network_message_id**: Ett unikt meddelande-ID-värde som finns kvar i alla kopior av meddelandet som kan skapas på grund av bifurkation eller distributionsgruppsexpansion. Ett exempelvärde `1341ac7b13fb42ab4d4408cf7f55890f`är .
+- **network_message_id**: Ett unikt meddelande-ID-värde som finns kvar i alla kopior av meddelandet som kan skapas på grund av bifurkation eller distributionsgruppsexpansion. Ett exempelvärde är `1341ac7b13fb42ab4d4408cf7f55890f` .
 
 - **original_client_ip**: IP-adressen för avsändarens klient.
 
@@ -252,7 +252,7 @@ Tillgängliga (slutförda) Förbättrade sammanfattningsrapporter finns i avsnit
 
 - **connector_id**: Namnet på käll- eller målkopplingen. Mer information om anslutningsappar i Exchange Online finns i [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority**<sup>*</sup>: Om meddelandet har skickats med **hög,** **låg**eller **normal** prioritet.
+- **delivery_priority** <sup>*</sup> : Om meddelandet har skickats med **hög,** **låg**eller **normal** prioritet.
 
 <sup>*</sup>Dessa egenskaper är endast tillgängliga i förbättrade sammanfattningsrapporter.
 
@@ -290,7 +290,7 @@ Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsba
 
 - **recipient_count**: Det totala antalet mottagare i meddelandet.
 
-- **related_recipient_address**: Används `EXPAND`med `REDIRECT`, `RESOLVE` och händelser för att visa andra mottagare e-postadresser som är associerade med meddelandet.
+- **related_recipient_address**: Används med `EXPAND` , och händelser för att visa andra mottagare `REDIRECT` `RESOLVE` e-postadresser som är associerade med meddelandet.
 
 - **referens**: Det här fältet innehåller ytterligare information för specifika typer av händelser. Till exempel:
 
@@ -308,15 +308,15 @@ Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsba
 
     För andra typer av händelser är det här fältet vanligtvis tomt.
 
-- **return_path**: Den returadress som anges av kommandot **MAIL FROM** som skickade meddelandet. Även om det här fältet aldrig är tomt kan null-adressvärdet representeras som `<>`.
+- **return_path**: Den returadress som anges av kommandot **MAIL FROM** som skickade meddelandet. Även om det här fältet aldrig är tomt kan null-adressvärdet representeras som `<>` .
 
 - **message_info**: Ytterligare information om meddelandet. Till exempel:
 
-  - Datumtid för meddelandeoriginering `DELIVER` i `SEND` UTC för och händelser. Datumtiden för originering är den tidpunkt då meddelandet först kom in i Exchange Online-organisationen. UTC-datumtiden representeras i datum-tidsformatet ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, där `dd` `T` `hh` `mm` `ss` `fff` `Z` `Zulu` `yyyy` = år, `mm` = månad, = dag, anger början på tidskomponenten, = timme, = minut, = sekund, = bråkdelar av en sekund och betyder , vilket är ett annat sätt att beteckna UTC.
+  - Datumtid för meddelandeoriginering i UTC för `DELIVER` och `SEND` händelser. Datumtiden för originering är den tidpunkt då meddelandet först kom in i Exchange Online-organisationen. UTC-datumtiden representeras i datum-tidsformatet ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ` , där `yyyy` = år, = `mm` `dd` månad, = dag, `T` anger början på tidskomponenten, `hh` = timme, = `mm` minut, = `ss` sekund, = `fff` bråkdelar av en sekund och betyder `Z` , vilket är ett annat sätt att beteckna `Zulu` UTC.
 
-  - Autentiseringsfel. Du kan till exempel `11a` se värdet och typen av autentisering som användes när autentiseringsfelet inträffade.
+  - Autentiseringsfel. Du kan till exempel se värdet `11a` och typen av autentisering som användes när autentiseringsfelet inträffade.
 
-- **tenant_id**: Ett GUID-värde som representerar Exchange Online-organisationen (till exempel `39238e87-b5ab-4ef6-a559-af54c6b07b42`).
+- **tenant_id**: Ett GUID-värde som representerar Exchange Online-organisationen (till exempel `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 
 - **original_server_ip**: IP-adressen för den ursprungliga servern.
 
@@ -328,14 +328,14 @@ Fältet **custom_data** för en `AGENTINFO` händelse används av en mängd olik
 
 #### <a name="spam-filter-agent"></a>Agent för skräppostfilter
 
-Ett **custom_data** värde som börjar `S:SFA` med kommer från spamfilteragenten. De viktigaste detaljerna beskrivs i följande tabell:
+Ett **custom_data** värde som börjar med `S:SFA` kommer från spamfilteragenten. De viktigaste detaljerna beskrivs i följande tabell:
 
 |**Värde**|**Beskrivning**|
 |:-----|:-----|
 |`SFV=NSPM`|Meddelandet har markerats som icke skräppost och skickats till avsedda mottagare.|
-|`SFV=SPM`|Meddelandet markerades som skräppost av innehållsfiltret.|
+|`SFV=SPM`|Meddelandet markerades som skräppost genom skräppostfiltrering (kallas även innehållsfiltrering).|
 |`SFV=BLK`|Filtrering hoppades över och meddelandet blockerades eftersom det kom från en blockerad avsändare.|
-|`SFV=SKS`|Meddelandet markerades som skräppost innan det bearbetades av innehållsfiltret. Detta inkluderar meddelanden där meddelandet matchade en transportregel för att automatiskt markera det som skräppost och kringgå all ytterligare filtrering.|
+|`SFV=SKS`|Meddelandet markerades som skräppost innan det bearbetades av skräppostfiltrering. Detta inkluderar meddelanden där meddelandet har matchat en e-postflödesregel (även känt som transportregel) som automatiskt markerat det som skräppost och förbigått all ytterligare filtrering.|
 |`SCL=<number>`|Mer information om de olika SCL-värdena och vad de betyder finns i [Säkerhetsnivåer för skräppost](spam-confidence-levels.md).|
 |`PCL=<number>`|Pcl-värdet (Phishing Confidence Level) för meddelandet. Dessa kan tolkas på samma sätt som SCL värden dokumenteras i [Spam förtroende nivåer](spam-confidence-levels.md).|
 |`DI=SB`|Meddelandets avsändare blockerades.|
@@ -355,7 +355,7 @@ Ett exempel **custom_data** värde för ett meddelande som filtreras för skräp
 
 #### <a name="malware-filter-agent"></a>Filteragent för skadlig kod
 
-Ett **custom_data** värde som börjar `S:AMA` med kommer från filteragenten för skadlig kod. De viktigaste detaljerna beskrivs i följande tabell:
+Ett **custom_data** värde som börjar med `S:AMA` kommer från filteragenten för skadlig kod. De viktigaste detaljerna beskrivs i följande tabell:
 
 |**Värde**|**Beskrivning**|
 |:-----|:-----|
@@ -378,7 +378,7 @@ Ett exempel **custom_data** värde för ett meddelande som innehåller skadlig k
 
 #### <a name="transport-rule-agent"></a>Agent för transportregel
 
-Ett **custom_data** värde som börjar`S:TRA` med kommer från transportregelagenten för regler för e-postflöde (kallas även transportregler). De viktigaste detaljerna beskrivs i följande tabell:
+Ett **custom_data** värde som börjar med `S:TRA` kommer från transportregelagenten för regler för e-postflöde (kallas även transportregler). De viktigaste detaljerna beskrivs i följande tabell:
 
 |**Värde**|**Beskrivning**|
 |:-----|:-----|

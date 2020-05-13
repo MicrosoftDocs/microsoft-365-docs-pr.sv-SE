@@ -1,5 +1,5 @@
 ---
-title: Rapportering och meddelandespårning i Exchange Online Protection
+title: Rapportering och meddelandespårning
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,16 +14,16 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om rapporter och felsökningsverktyg som är tillgängliga för Microsoft Exchange Online Protection -administratörer (EOP).
-ms.openlocfilehash: 44b4223b4310a2de1d90f99f8a7af23cc6054f94
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034386"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206448"
 ---
-# <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Rapportering och meddelandespårning i Exchange Online Protection
+# <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelandespårning i EOP
 
-Microsoft Exchange Online Protection (EOP) innehåller många olika rapporter som kan hjälpa dig att fastställa organisationens övergripande status och hälsa. Det finns också verktyg som hjälper dig att felsöka specifika händelser (till exempel ett meddelande som inte kommer till de avsedda mottagarna) och granskningsrapporter som hjälper dig att uppfylla efterlevnadskraven.
+I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor erbjuder EOP många olika rapporter som kan hjälpa dig att fastställa organisationens övergripande status och hälsa. Det finns också verktyg som hjälper dig att felsöka specifika händelser (till exempel ett meddelande som inte kommer till de avsedda mottagarna) och granskningsrapporter som hjälper dig att uppfylla efterlevnadskraven.
 
 ## <a name="usage-reports"></a>Användningsrapporter
 
@@ -39,7 +39,7 @@ Mer information finns i följande resurser:
 
 - [Microsoft 365-rapporter i administrationscentret – Microsoft 365-grupper](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Microsoft 365-rapporter i administrationscentret – e-postaktivitet](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365-rapporter i administrationscentret – E-postaktivitet](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
 - [Microsoft 365-rapporter i administrationscentret – användning av e-postappar](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
@@ -57,11 +57,7 @@ Dessa förbättrade rapporter ger en interaktiv rapporteringsupplevelse för EOP
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Anpassade rapporter med Microsoft Graph
 
-Skapa programmatiskt rapporter som är tillgängliga i Microsoft 365-administrationscentret med hjälp av Microsoft Graph. Se undertopikerna för [användningsrapporter för Arbeta med Office 365 i Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
-
-## <a name="custom-reports-using-microsoft-graph"></a>Anpassade rapporter med Microsoft Graph
-
-Skapa programmatiskt rapporter. Se [Översikt över Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Skapa programmatiskt rapporter som är tillgängliga i administrationscentret med hjälp av Microsoft Graph. Mer information finns i [Översikt över Microsoft Graph](https://docs.microsoft.com/graph/overview) och Arbeta med [användningsrapporter för Office 365 i Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Meddelandespårning
 
@@ -69,7 +65,7 @@ Följer e-postmeddelanden när de färdas via EOP. Du kan avgöra om ett e-postm
 
 Du kan använda den här informationen för att effektivt svara på användarens frågor, felsöka problem med e-postflödet, validera principändringar och minska behovet av att kontakta teknisk support för att få hjälp.
 
-Se [Spåra ett e-postmeddelande](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+Visa [meddelandespårning i Säkerhets- & Compliance Center](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Granskningsloggning
 
@@ -85,6 +81,7 @@ I följande tabell beskrivs när EOP-rapportering och meddelandespårningsdata �
 |Sammanfattningsrapporter för e-postskydd|90 dagar|Aggregering av meddelandedata är mestadels klar inom 24-48 timmar. Vissa mindre inkrementella aggregerade ändringar kan förekomma i upp till 5 dagar.|
 |Informationsrapporter för e-postskydd|90 dagar|För detaljdata som är mindre än 7 dagar gamla ska data visas inom 24 timmar men kanske inte vara klara förrän 48 timmar. Vissa mindre inkrementella ändringar kan förekomma i upp till 5 dagar. <br/><br/> Om du vill visa detaljerade rapporter för meddelanden som är större än 7 dagar gamla kan resultatet ta upp till några timmar.|
 |Data för meddelandespårning|90 dagar|När du kör en meddelandespårning för meddelanden som är mindre än 7 dagar gamla ska meddelandena visas inom 5-30 minuter.<br/><br/> När du kör en meddelandespårning för meddelanden som är längre än 7 dagar gamla kan resultatet ta upp till några timmar.|
+|
 
 > [!NOTE]
-> Datatillgänglighet och svarstid är desamma oavsett om de begärs via Microsoft 365 admin center eller fjärr PowerShell.
+> Datatillgänglighet och svarstid är desamma oavsett om de begärs via administrationscentret eller fjärr-PowerShell.

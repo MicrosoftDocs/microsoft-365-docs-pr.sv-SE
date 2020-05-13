@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066199"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206634"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
-Organisatoriska anti-spam-inställningar i Exchange Online styrs av Exchange Online Protection (EOP). Mer information finns i [Skydd mot skräppost i Office 365](anti-spam-protection.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online styrs organisationens anti-spam-inställningar av Exchange Online Protection (EOP). Mer information finns [i Skydd mot skräppost i EOP](anti-spam-protection.md).
 
 Men det finns också specifika inställningar mot skräppost som administratörer kan konfigurera på enskilda postlådor i Exchange Online:
 
 - **Aktivera eller inaktivera skräppostregeln**: Skräppostregeln är en dold inkorgsregel med namnet Skräppostregel som är aktiverad som standard i alla postlådor. Regeln om skräppost styr följande funktioner:
 
-  - **Flytta meddelanden till mappen Skräppost baserat på anti-spam-policyer:** När en anti-spam-princip har konfigurerats med åtgärden **Flytta meddelande till skräppostmappen** för en skräppostfiltreringsdom flyttas skräppostfiltrets regel meddelandet till skräppostmappen när meddelandet har levererats till postlådan. Mer information om skräppostfiltrering av domar i policyer mot skräppost finns [i Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md). På samma sätt, om automatisk rensning (ZAP) upptäcker spam eller phish i ett redan levererat meddelande, flyttar skräppostfilterregeln meddelandet till mappen Skräppost för **Flytta meddelande till skräppostmappen** skräppostfiltrering domåtgärder. Mer information om ZAP finns i [Zero-hour auto purge (ZAP) - skydd mot skräppost och skadlig kod i Office 365](zero-hour-auto-purge.md).
+  - **Flytta meddelanden till mappen Skräppost baserat på anti-spam-policyer:** När en anti-spam-princip har konfigurerats med åtgärden **Flytta meddelande till skräppostmappen** för en skräppostfiltreringsdom flyttas skräppostfiltrets regel meddelandet till skräppostmappen när meddelandet har levererats till postlådan. Mer information om skräppostfiltreringsutslag i policyer mot skräppost finns [i Konfigurera policyer mot skräppost i EOP](configure-your-spam-filter-policies.md). På samma sätt, om nolltimmars automatisk rensning (ZAP) bestämmer ett levererat meddelande är spam eller phish, flyttar skräppostfiltret regeln meddelandet till mappen Skräppost för **Flytta meddelande till skräppostmappen** skräppostfiltrering dom åtgärder. Mer information om ZAP finns i [Zero-hour auto purge (ZAP) i Exchange Online](zero-hour-auto-purge.md).
   
   - **Skräppostinställningar som användarna konfigurerar själva i Outlook eller Outlook på webben:** Samlingen _safelist_ är listan Betrodda avsändare, listan Betrodda mottagare och listan Blockera avsändare i varje postlåda. Posterna i dessa listor avgör om skräppostregeln flyttar meddelandet till inkorgen eller mappen Skräppost. Användare kan konfigurera samlingen för safelist för sin egen postlåda i Outlook eller Outlook på webben (tidigare kallat Outlook Web App). Administratörer kan konfigurera samlingen för safelist på alla användares postlåda.
 
@@ -54,7 +54,7 @@ Administratörer kan använda Exchange Online PowerShell för att inaktivera, ak
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Använda Exchange Online PowerShell för att aktivera eller inaktivera skräppostregeln i en postlåda
 
 > [!NOTE]
-> Du kan bara använda cmdleten **Set-MailboxJunkEmailConfiguration** för att inaktivera skräppostregeln på en postlåda som har öppnats i Outlook (i cachelagrat Exchange-läge) eller Outlook på webben. Om postlådan inte har öppnats visas felet: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` Om du vill ignorera det här `-ErrorAction SlientlyContinue` felet för massåtgärder kan du lägga till i kommandot **Set-MailboxJunkEmailConfiguration.**
+> Du kan bara använda cmdleten **Set-MailboxJunkEmailConfiguration** för att inaktivera skräppostregeln på en postlåda som har öppnats i Outlook (i cachelagrat Exchange-läge) eller Outlook på webben. Om postlådan inte har öppnats visas felet: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` Om du vill ignorera det här felet för massåtgärder kan du lägga till i kommandot `-ErrorAction SlientlyContinue` **Set-MailboxJunkEmailConfiguration.**
 
 Om du vill aktivera eller inaktivera skräppostregeln på en postlåda använder du följande syntax:
 
@@ -78,7 +78,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 
 > [!NOTE]
 > 
-> - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör föregående kommando. Om du vill ignorera det `-ErrorAction SlientlyContinue` här felet för massåtgärder lägger du till i kommandot **Set-MailboxJunkEmailConfiguration.**
+> - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör föregående kommando. Om du vill ignorera det här felet för massåtgärder lägger `-ErrorAction SlientlyContinue` du till i kommandot **Set-MailboxJunkEmailConfiguration.**
 > 
 > - Även om du inaktiverar skräppostregeln kan Outlook Junk Email Filter (beroende på hur det är konfigurerat) också avgöra om ett meddelande är skräppost och kan flytta meddelanden till mappen Inkorgen eller Skräppost baserat på dess egna skräppostutlåtande och safelist-samlingen på postlådan. Mer information finns [i avsnittet Om skräppostinställningar i Outlook](#about-junk-email-settings-in-outlook) i det här avsnittet.
 
@@ -86,7 +86,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 
 Om du vill kontrollera att du har aktiverat eller inaktiverat skräppostregeln på en postlåda använder du någon av följande procedurer:
 
-- Ersätt _ \<MailboxIdentity\> _ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera **egenskapsvärdet Aktiverad:**
+- Ersätt _ \< MailboxIdentity \> _ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera **egenskapsvärdet Aktiverad:**
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -117,7 +117,7 @@ Om du vill konfigurera safelist-samlingen på en postlåda använder du följand
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Om du vill ange flera värden och skriva över alla befintliga poster för parametrarna _BlockedSendersAndDomains_ och _TrustedSendersAndDomains_ använder du följande syntax: `"<Value1>","<Value2>"...`. Om du vill lägga till eller ta bort ett eller flera värden utan att påverka andra befintliga poster använder du följande syntax:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Om du vill ange flera värden och skriva över alla befintliga poster för parametrarna _BlockedSendersAndDomains_ och _TrustedSendersAndDomains_ använder du följande syntax: `"<Value1>","<Value2>"...` . Om du vill lägga till eller ta bort ett eller flera värden utan att påverka andra befintliga poster använder du följande syntax:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 I det här exemplet konfigureras följande inställningar för samlingen för safelist på Ori Epsteins postlåda:
 
@@ -141,7 +141,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 
 > [!NOTE]
 > 
-> - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör de tidigare kommandona. Om du vill ignorera det `-ErrorAction SlientlyContinue` här felet för massåtgärder lägger du till i kommandot **Set-MailboxJunkEmailConfiguration.**
+> - Om användaren aldrig har öppnat sin postlåda kan du få ett felmeddelande när du kör de tidigare kommandona. Om du vill ignorera det här felet för massåtgärder lägger `-ErrorAction SlientlyContinue` du till i kommandot **Set-MailboxJunkEmailConfiguration.**
 > 
 > - Även om skräppostregeln är inaktiverad i postlådan kan du fortfarande konfigurera samlingen för safelist och skräppostfiltret i Outlook kan flytta meddelanden till inkorgen eller mappen Skräppost. Mer information finns [i avsnittet Om skräppostinställningar i Outlook](#about-junk-email-settings-in-outlook) i det här avsnittet.
 > 
@@ -151,7 +151,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 
 Om du vill kontrollera att du har konfigurerat insamlingen för säker lista på en postlåda använder du något av följande:
 
-- Ersätt _ \<MailboxIdentity\> _ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera egenskapsvärdena:
+- Ersätt _ \< MailboxIdentity \> _ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera egenskapsvärdena:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
@@ -167,7 +167,7 @@ Om du vill kontrollera att du har konfigurerat insamlingen för säker lista på
 
 Om du vill aktivera, inaktivera och konfigurera inställningarna för skräppostfilter på klientsidan som är tillgängliga i Outlook använder du Grupprincip. Mer information finns i [Administrativa mallfiler (ADMX/ADML) och Anpassningsverktyg för Office för Microsoft 365-appar för företag, Office 2019 och Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
-När skräppostfiltret i Outlook är inställt på standardvärdet Ingen **automatisk filtrering** i **Junk** \> **alternativ**för **skräppost** \> i **hemmet** \> försöker Outlook inte klassificera massage som skräppost, men använder fortfarande samlingen för betrodda användare (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockerade avsändare) för att flytta meddelanden till mappen Skräppost efter leverans. Mer information om dessa inställningar finns [i Översikt över skräppostfiltret](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+När skräppostfiltret i Outlook är inställt på standardvärdet **Ingen automatisk filtrering** i alternativ för skräppost i **hemmet** försöker Outlook inte klassificera massage \> **Junk** \> **Junk E-Mail Options** \> **Options**som skräppost, men använder fortfarande samlingen för betrodda användare (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockerade avsändare) för att flytta meddelanden till mappen Skräppost efter leverans. Mer information om dessa inställningar finns [i Översikt över skräppostfiltret](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
 När skräppostfiltret i Outlook är inställt på **Låg** eller **Hög**använder skräppostfiltret i Outlook sin egen SmartScreen-filterteknik för att identifiera och flytta skräppost till mappen Skräppost. Denna spam klassificering är skild från spam förtroende nivå (SCL) som bestäms av EOP. I själva verket ignorerar Outlook SCL från EOP (om inte EOP markerade meddelandet för att hoppa över skräppostfiltrering) och använder sina egna kriterier för att avgöra om meddelandet är skräppost. Naturligtvis är det möjligt att spam dom från EOP och Outlook kan vara densamma. Mer information om dessa inställningar finns [i Ändra skyddsnivå i skräppostfiltret](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 

@@ -20,12 +20,12 @@ search.appverid:
 description: Microsoft 365 admin center - lär dig om de funktioner som lades till denna månad.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: afb18a9e9a249459665781bb1105397684f04653
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 6dcfa1bac5fa9837f9882a575c3d5eaa6cf3be4f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045958"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208164"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -40,7 +40,7 @@ Vi lägger kontinuerligt till nya funktioner [i Microsoft 365-administrationscen
 
 > [!IMPORTANT]
 > **"Classic" admin center pensionering med början i mars**<br><br>
-När du loggar in på admin.microsoft.com går du nu till det nya administrationscentret varje gång. Och i mars kommer vi att börja inaktivera möjligheten att byta tillbaka till det klassiska administrationscentret. För nu kan du fortfarande växla tillbaka, men som det nya admin-centret kommer till paritet (och överstiger det) kommer vi att stänga av växeln för alla organisationer. <br><br> *Senast uppdaterad: 2 mars 2020*
+När du loggar in på administrationscentret för Microsoft 365 går du nu till det nya administrationscentret varje gång. Och i mars började vi inaktivera möjligheten att byta tillbaka till det klassiska administrationscentret. För nu kan du fortfarande växla tillbaka, men som det nya admin-centret kommer till paritet (och överstiger det) kommer vi att stänga av växeln för alla organisationer. <br><br> *Senast uppdaterad: 11 maj 2020*
 
 Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
 
@@ -50,6 +50,77 @@ Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
 - [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Nyheter i administrationscentret för Exchange](https://docs.microsoft.com/Exchange/whats-new)
 - [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="april-2020"></a>April 2020
+
+### <a name="intune-roles-management"></a>Hantering av Intune-roller
+
+Vi klarade det! Vi har tagit det andra steget mot en enhetlig rollupplevelse och du kan nu hantera Intune-roller i Microsoft 365-administrationscentret. Du kan också utnyttja funktioner som möjligheten att söka efter roller och visa rollbehörigheter. Det innebär att du inte behöver två separata verktyg för att hantera roller för Microsoft 365 och Intune. När du loggar in på administrationscentret för Microsoft 365 ser du att det finns två pivoter på sidan Roller, en för Azure AD och en för Intune.
+
+:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Sidan Roller med intune-pivoten markerad":::
+
+### <a name="sync-message-center-posts-to-planner"></a>Synkronisera inlägg i Meddelandecenter till Planner
+
+Från och med maj börjar administratörer som är i Riktad utgåva att se knappen "Planeraresynkronisering" i meddelandecentret. Du kan nu spåra meddelanden som behöver vidtas, välja vilken typ av meddelanden du vill spåra, tilldela meddelanden att spåra som uppgifter och tagga meddelanden för senare uppmärksamhet.
+
+[Gå med riktad release](manage/release-options-in-office-365.md) för att komma igång!
+
+### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Behöver du hjälp?" lanserades i Teams administrationscenter & säkerhets- och efterlevnadscenter
+
+Administrationscentret Teams, säkerhetscentret och efterlevnadscentret använder nu samma "Behöver du hjälp?" som microsoft 365-administrationscentret använder för att hitta hjälp och kontakta support. Vi har fått mycket feedback från administratörer som du ville ha samma nivå av hjälp och support och vi är glada att få det till dig. Prova det och ge oss din feedback!
+
+#### <a name="need-chat"></a>Behöver du chatta?
+
+Våra supportagenter har arbetat hemifrån samtidigt som de tar kundfall och begränsningar på internetbandbredd medan du arbetar hemifrån kan påverka kundernas samtalskvalitet. För att fortsätta stödja dig har vi lanserat livechattsupportalternativ för kommersiella kunder i Microsoft 365 admin center.
+
+När du skapar en serviceförfrågan ser du nu chatt som ett alternativ, förutom telefon och e-post. Välj chatt som en önskad kommunikationskanal och skapa begäran. När du har skapat begäran kan du starta chatten när du är redo att chatta med Microsoft-agenter.
+
+### <a name="teams-updates"></a>Uppdateringar av team
+
+Med den ökade användningen av Teams har vi lagt till några funktioner som hjälper dig att hantera dem.
+
+- Ett nytt rekommendationskort på startsidan för administrationscentret visar vilka användare som inte aktivt har använt Teams på 30 dagar. Du kan skicka ett utbildningsmeddelande till dessa användare för att komma igång med Teams.
+- **Samla personer med team:** Gå till **installationsprogrammet** för att se en ny sida som hjälper dig att aktivera Teams för licensierade användare och ge gäståtkomst, så att du kan arbeta med externa kunder i Teams.
+- Ett Microsoft Teams-kort fästs nu som standard på startsidan. Den visar om Teams är aktiverat och om gäståtkomst är tillåten. Du kan också kontrollera inställningsstatusen för nyligen licensierade Teams-användare och kontrollera om nätverksproblem kan påverka Teams-användare.
+- Slutligen är Teams nu ett steg i det första inställningsflödet om du har köpt en licens som innehåller Teams.
+
+### <a name="productivity-score"></a>Produktivitetspoäng
+
+Productivity Score ger insikter om hur människor använder Microsofts molntjänster och de teknikupplevelser som stöder dem. Poängen återspeglar organisationens resultat mot mått på medarbetar- och teknikupplevelse och jämför dina poäng med organisationer som din. Den här månaden introducerar vi följande nya koncept för förhandsversionen:
+
+- Trendvy över primära insikter på startsidan och kategoriinformationssidor -Endpoint Analytics och nätverksanslutningskategorier som lagts till i Teknikupplevelsen
+- Relevant insight för teknikupplevelse som visas i kategorier för medarbetarupplevelse
+- Kategorin Ny kommunikation som en del av medarbetarupplevelsen
+- Användarinformation med organisationsmetadata i kategorier med medarbetare
+
+Om du vill veta mer kan du kolla in bloggen: [Mät och förbättra Microsoft 365-upplevelsen med Microsofts produktivitetspoäng](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618). Produktivitetspoängen är för närvarande i privat förhandsversion. [Gå med i den privata förhandsversionen av produktivitetspoängen](https://aka.ms/productivityscorepreview) för att komma igång.
+
+### <a name="groups-updates"></a>Gruppera uppdateringar
+
+Vi har två uppdateringar för grupper den här månaden:
+
+- Nu kan du redigera e-postadresser för Office 365-grupper (kallas även grupper i Outlook och snart kända microsoft 365-grupper).
+- Vi har hört din feedback och vi har lagt till tydligare felmeddelanden för varför du inte kan konvertera en grupp till ett Microsoft-team.
+
+### <a name="docs-videos-and-training"></a>Dokument, videor och utbildning
+
+**Nyheter i Microsoft 365-videoserien**: Den här månaden täcker vi tips och resurser för att hjälpa små företag att gå över till fjärrarbete, inklusive hur du distribuerar Microsoft Teams, utbildningsresurser för fjärrarbete för att hålla kontakten med kunder och partner och den nya Microsoft 365 Business Voice-planen. [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+
+#### <a name="for-your-users"></a>För dina användare
+
+- [Schemalägga ett möte](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Gå med i ett Teams-möte](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Skapa ett organisationsomfattande team](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Skapa ett team med gäster](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Gå med i ett team som gäst](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Skapa en grupp-e-postadress](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+
+#### <a name="for-admins-and-business-owners"></a>För administratörer och företagare
+
+- [Ge ditt småföretag möjlighet till fjärrarbete](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Driva ett litet avlägset företag](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Registrera dig för Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Ställa in inloggning med två faktorer](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## <a name="march-2020"></a>Mars 2020
 
@@ -69,7 +140,7 @@ Med uptick i Teams användning, vissa organisationer kommer att få en fäst ins
 
 Med hjälp av administrationscentret för Microsoft 365 kan du nu anpassa organisationens tema i SharePoint-mobilappen för iOS och SharePoint-mobilappen för Android. Den här funktionen ger en mobil intranätappupplevelse som kan matcha din SharePoint Online för anställda när de är på språng. Temaanpassning omfattar logotypbilden, navigeringsfältets färg, text- och ikonfärger samt accentfärger, vilket gör det enkelt att igenkänna.
 
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram som mappar administratörscenterinställningarna till mobilappen.":::
+:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram som mappar administratörscenterinställningarna till mobilappen.":::
 
 :::image-end:::
 
@@ -97,7 +168,6 @@ De nya produktnamnen träder i kraft den 21 april 2020. Detta är en ändring av
 
 [Nyheter i Microsoft 365 webbserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)I den här månadens avsnitt lyfter vi fram 3-årsjubileet av Microsoft Teams och täcker nya funktioner, inklusive förbättrad ljudkvalitet i onlinemöten, riktad kommunikation för handlinjechefer med Shifts-appen, Teams och Skypes konsumentinteroperabilabilabilabila sig med mera.
 
-
 ## <a name="february-2020"></a>Februari 2020
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>Dagens Feedback Fix: Flera organisationer switcher
@@ -119,7 +189,7 @@ Det är bokstavligen det!!!
 Ett par förändringar i gruppen området denna månad:
 
 - **Sortera efter gruppnamn**: Du kan sortera grupplistan alfabetiskt genom att välja kolumnen **Gruppnamn.**
-- **Återställ borttagna Microsoft 365-grupper**: Du behöver inte längre gå till Administrationscentret för Exchange för att återställa borttagna Microsoft 365-grupper. Gå till **Microsoft 365 administrationscenter** \> **Grupper** \> **borttagna grupper** \> (välj en grupp i listan) \> Återställ **grupp**. Gruppen återställs till listan **Grupper** och återställer gruppens e-post, konversationer, anteckningsbok, filer och kalender.
+- **Återställ borttagna Microsoft 365-grupper**: Du behöver inte längre gå till Administrationscentret för Exchange för att återställa borttagna Microsoft 365-grupper. Gå till **Microsoft 365 administrationscenter** \> **Grupper** \> **borttagna grupper** \> (välj en grupp i listan) \> **Återställ grupp**. Gruppen återställs till listan **Grupper** och återställer gruppens e-post, konversationer, anteckningsbok, filer och kalender.
 
 ### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
 
@@ -157,7 +227,7 @@ Tjena, Partners! (Kunde inte hjälpa mig själv.) Vi har en uppdatering för dig
 
 ### <a name="resource-mailboxes"></a>Resurspostlådor
 
-Listan Resurspostlådor har uppdaterats till det nya formatet. Gå till **Resursrum & utrustning**i administrationscentret **för** \> Microsoft 365 .
+Listan Resurspostlådor har uppdaterats till det nya formatet. Gå till **Resources** \> **Resursrum & utrustning**i administrationscentret för Microsoft 365 .
 
 ### <a name="videos-training-and-docs-january"></a>Videor, utbildning och dokument (januari)
 
@@ -189,7 +259,7 @@ Vi nämnde den globala läsarrollen i [oktober 2019 - Ignite Edition](#october-2
 - Rollen Global läsare är den skrivskyddade motsvarigheten till rollen Global administratör. Den globala läsaren kan se allt som den globala administratören har behörighet att göra.
 - Med några få undantag, till exempel vissa efterlevnads- och säkerhetsfunktioner, har globala läsare åtkomst till alla Microsofts molnadministrationscenter som din organisation har licens att använda.
 - Tilldela rollen Global läsare till användare som behöver den för planering, granskningar och undersökningar.
-- Du kan också kombinera den globala läsarrollen med en annan roll som har färre behörigheter. En småföretagare kan till exempel tilldelas rollerna **För global faktureringsadministratör** + **Global så** att de kan betala räkningarna och hålla koll på ändringar i sin molnorganisation.
+- Du kan också kombinera den globala läsarrollen med en annan roll som har färre behörigheter. En småföretagare kan till exempel tilldelas rollerna **För global faktureringsadministratör**  +  **Global så** att de kan betala räkningarna och hålla koll på ändringar i sin molnorganisation.
 - Globala läsare kan gå till vilken sida som helst i administrationscentret för Microsoft 365. När de öppnar en redigerbar sida visas en varning högst upp där de talar om för dem att de inte har behörighet att spara ändringar och att spara-knappen inaktiveras.
 
 Vi vill gärna få din feedback om den globala läsarrollen och någon av de rollbaserade behörigheter som du vill se i framtiden. [Ge feedback för rollbaserade behörigheter](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/10115430-have-a-consistent-experience-when-assigning-admin)
@@ -235,24 +305,24 @@ Det har skett en hel del förändringar för roller i admin center sedan vi bör
     ![Jämföra rollerna För Exchange-administratör, Helpdesk-administratör och Användaradministratör.](../media/RBAC-CompareRoles.png)
 
 - **Favoriter** - Du kan lägga till en stjärna i dina favorit- eller mest använda roller, så att du enkelt kan hitta dem genom att sortera kolumnen eller skapa ett filter.
-- **Aktiva användare** > **Hantera roller** - Detta har uppdaterats för att anpassa sig till ändringarna i Roller. Precis som med listan Roller har vi begränsat standardlistan med roller till de mest användbara, men du kan se alla roller genom att expandera **Visa alla efter kategori**.
+- **Aktiva användare**  >  **Hantera roller** - Detta har uppdaterats för att anpassa sig till ändringarna i Roller. Precis som med listan Roller har vi begränsat standardlistan med roller till de mest användbara, men du kan se alla roller genom att expandera **Visa alla efter kategori**.
 - **Global läsare roll** - Du bad om det! Du har det! Den [globala läsaren](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center) roll!
 
 ### <a name="report-an-issue"></a>Rapportera ett problem
 
-Tjänstens hälsotillstånd har uppdaterats till det nya formatet och om du påverkas av ett problem som inte visas på instrumentpanelen för tjänstens hälsotillstånd kan du **rapportera ett problem** så att Microsoft vet. Gå till > **Hälsotjänstens hälsa**. **Health**
+Tjänstens hälsotillstånd har uppdaterats till det nya formatet och om du påverkas av ett problem som inte visas på instrumentpanelen för tjänstens hälsotillstånd kan du **rapportera ett problem** så att Microsoft vet. Gå **Health**till  >  **Hälsotjänstens hälsa**.
 
 ### <a name="viral-subscriptions"></a>"Viral" abonnemang
 
-Som du vet kan användare aktivera kostnadsfria prenumerationer på en myriad av produkter som Power BI och App Connect. Du kan nu se de "virala prenumerationer" som användarna har försökt med. Gå till **Fakturering** > **dina produkter**. Välj filtret **Kontotyp** på fliken Prenumerationer om du vill visa de användarköpta prenumerationerna. Om det behövs kan du nu ta bort dessa prenumerationer från ditt konto.
+Som du vet kan användare aktivera kostnadsfria prenumerationer på en myriad av produkter som Power BI och App Connect. Du kan nu se de "virala prenumerationer" som användarna har försökt med. Gå till **Fakturering**  >  **dina produkter**. Välj filtret **Kontotyp** på fliken Prenumerationer om du vill visa de användarköpta prenumerationerna. Om det behövs kan du nu ta bort dessa prenumerationer från ditt konto.
 
 ### <a name="user-templates"></a>Användarmallar
 
-Med mallar kan du enkelt lägga till många användare genom att spara och återanvända de delade inställningarna för dessa användare. Du kan spara värden för roller, tilldelade licenser, kontaktinformation, plats med mera. När du använder mallen för att skapa en ny användare får de automatiskt det sparade värdet för dessa inställningar. Gå till **Aktiva användare och** > **Active users**välj sedan **Användarmallar** för att prova det.
+Med mallar kan du enkelt lägga till många användare genom att spara och återanvända de delade inställningarna för dessa användare. Du kan spara värden för roller, tilldelade licenser, kontaktinformation, plats med mera. När du använder mallen för att skapa en ny användare får de automatiskt det sparade värdet för dessa inställningar. Gå till **Aktiva**  >  **användare**och välj sedan **Användarmallar** för att prova det.
 
 ### <a name="office-whats-new-management-preview"></a>Office "Nyheter" hantering (Preview)
 
-När en viktig Office-funktion släpps till ett Office-program får användarna ett "Nyheter"-kort för att lära sig mer om den nya funktionen. Om du inte vill att användarna ska se kortet kan du dölja det. Du kan också välja när du vill att användarna ska se kortet genom att visa det. Gå till **Inställningar** > **Office Nyheter-hantering** för att kolla upp det.
+När en viktig Office-funktion släpps till ett Office-program får användarna ett "Nyheter"-kort för att lära sig mer om den nya funktionen. Om du inte vill att användarna ska se kortet kan du dölja det. Du kan också välja när du vill att användarna ska se kortet genom att visa det. Gå till **Inställningar**  >  **Office Nyheter-hantering** för att kolla upp det.
 
 ### <a name="sharepoint-url-change"></a>Ändring av SharePoint-URL
 
@@ -289,8 +359,8 @@ Det har skett en uppdatering av en annan av våra första installationsguider: M
 
 Vi har några uppdateringar för fakturering och prenumerationer den här månaden:
 
-- Enhetsbaserade prenumerationer: Du kan tilldela eller ta bort tilldelning av **Microsoft 365 Apps for Education -licenser (enhet)** till enheter i Microsoft 365-administrationscentret. **Microsoft 365 Apps for Education (enhet)** är en tilläggslicens som gör att du kan tilldela en licens till en enhet. Gå till **Fakturering** > **Dina produkter** för att hitta och köpa licensen.
-- Användarbaserad licenshantering: Vi har uppdaterat hur du tilldelar licenser i **Aktiva** > **användare** till det nya formatet. Mer information finns i:
+- Enhetsbaserade prenumerationer: Du kan tilldela eller ta bort tilldelning av **Microsoft 365 Apps for Education -licenser (enhet)** till enheter i Microsoft 365-administrationscentret. **Microsoft 365 Apps for Education (enhet)** är en tilläggslicens som gör att du kan tilldela en licens till en enhet. Gå till **Fakturering**  >  **Dina produkter** för att hitta och köpa licensen.
+- Användarbaserad licenshantering: Vi har uppdaterat hur du **Users**tilldelar licenser i  >  **Aktiva användare** till det nya formatet. Mer information finns i:
   - [Tilldela licenser till användare](manage/assign-licenses-to-users.md)
   - [Ta bort tilldelningen av licenser från användare](manage/remove-licenses-from-users.md)
 
@@ -302,7 +372,7 @@ Installationsprogrammet har nu kategorier och avsnitt, inklusive avsnittet **Rek
 
 ### <a name="report-an-issue-august"></a>Rapportera ett problem (augusti)
 
-Om du påverkas av ett problem som inte visas på instrumentpanelen för tjänstens hälsa, kommer funktionen **Rapportera ett problem** att ge dig ett snabbt och enkelt sätt att meddela oss. Gå till > **Hälsotjänstens hälsa**. **Health**
+Om du påverkas av ett problem som inte visas på instrumentpanelen för tjänstens hälsa, kommer funktionen **Rapportera ett problem** att ge dig ett snabbt och enkelt sätt att meddela oss. Gå **Health**till  >  **Hälsotjänstens hälsa**.
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -329,11 +399,11 @@ Message center har uppdaterats till den nya designen och det ser fantastiskt!
 Vi har några spännande förändringar som hjälper dig att konfigurera din organisation. Först och främst, låt oss diskutera skillnaden mellan **inställning** och **inställningssidan**. **I installationsprogrammet** hänvisas till den första installationsguiden som du använde för att läsa in dem i Microsofts onlinetjänster. Det innehåller vanligtvis tre specifika steg: **Anslut en domän,** **Lägg till användare**och Ladda ned **Office-programmen**. **Inställningssidan** är den sida i administrationscentret som har rekommenderat att konfigurera uppgifter för att säkerställa att du får ut mesta av dina prenumerationer, som att aktivera funktioner som du har köpt licenser för.
 
 - **Installationsprogrammet** – Den första installationsguiden har uppdaterats för **Microsoft 365 för** företagsprenumerationer. Den här nya designen hjälper nya organisationer att ta sig igenom guiden snabbare och med större framgång.
-- **Inställningssida** - På **inställningssidan** kan du slutföra konfigurationen och säkra de tjänster som med sig med dina prenumerationer. Du kan också se avvisade rekommendationer på **inställningssidan.** Om du vill se om den är tillgänglig för dina prenumerationer ännu går du till**installationsprogrammet**för **Microsoft 365 admin center** > .
+- **Inställningssida** - På **inställningssidan** kan du slutföra konfigurationen och säkra de tjänster som med sig med dina prenumerationer. Du kan också se avvisade rekommendationer på **inställningssidan.** Om du vill se om den är tillgänglig för dina prenumerationer ännu går du till installationsprogrammet för **Microsoft 365 admin center**  >  **Setup**.
 
 ### <a name="billing--subscriptions"></a>Fakturering & prenumerationer
 
-- **Produkttyp** för programvara - Du kan nu visa programvaruprodukter som köpts via en Molntjänstleverantör (CSP). Om du vill se dina nedladdningar och nycklar går du till fliken **Fakturering** > **av dina produkter.** > **Software**
+- **Produkttyp** för programvara - Du kan nu visa programvaruprodukter som köpts via en Molntjänstleverantör (CSP). Om du vill se dina nedladdningar och nycklar går du till fliken **Fakturering**  >  **av dina**  >  **produkter.**
 - Du kan visa moderna Azure-produkter och -tjänster från Microsoft 365-administrationscentret, oavsett om du har köpt dem från Microsoft eller en tredjepartsleverantör. Exempel på moderna Azure-produkter ingår:
   - Reserverade virtuella azure-instanser
   - Azure-supportplaner
@@ -344,13 +414,13 @@ Vi har några spännande förändringar som hjälper dig att konfigurera din org
 
 ### <a name="simplify-multi-factor-authentication"></a>Förenkla multifaktorautentisering
 
-Administratörer har åtkomst till känslig information i organisationen. Kräv att alla administratörer använder multifaktorautentisering när du loggar in. Den nya guiden hjälper dig att få det gjort med bara ett steg. Prova det genom att gå till **Installationsprogrammet** > **För att stärka inloggningssäkerheten**.
+Administratörer har åtkomst till känslig information i organisationen. Kräv att alla administratörer använder multifaktorautentisering när du loggar in. Den nya guiden hjälper dig att få det gjort med bara ett steg. Prova det genom att **Setup**gå till  >  **Installationsprogrammet För att stärka inloggningssäkerheten**.
 
 ### <a name="users"></a>Användare
 
 **Sidorna Borttagna användare** och **gästanvändare** har uppdaterats till det nya formatet.
 
-- **Gästanvändare**: Du lägger till gästanvändare genom att bjuda in dem att visa eller dela filer från SharePoint eller OneDrive. Du kan visa gästanvändare från **användare av Användare.** > **Guest users**
+- **Gästanvändare**: Du lägger till gästanvändare genom att bjuda in dem att visa eller dela filer från SharePoint eller OneDrive. Du kan visa gästanvändare från **användare av**  >  **Användare.**
 - **Borttagna användare**: På den uppdaterade sidan **Borttagna användare** kan du utföra alla åtgärder som du kan i det äldre administrationscentret, men nu lägger du till och tar bort kolumner. Och vi har många kolumnalternativ att välja mellan. I själva verket är det samma kolumner som du kan välja på sidan **Aktiva användare.**
 
 ## <a name="june-2019"></a>Juni 2019
@@ -361,7 +431,7 @@ Visa admin center i mörkt läge är i förhandsvisning! Du kan bara testa det p
 
 ### <a name="roles-management"></a>Hantering av roller
 
-I slutet av juni började vi lansera nya sätt att hantera administratörsroller. När den är tillgänglig för **Roles** > dig går du till**Roller**. Tills dess, ta en titt - det är häftigt!
+I slutet av juni började vi lansera nya sätt att hantera administratörsroller. När den är tillgänglig för **Roles**dig går du till  >  **Roller**. Tills dess, ta en titt - det är häftigt!
 <br> ![Skärminfångning: Lista över administratörsroller med informationsfönstret Användaradministratör markerad.](../media/MAC-AdminRoles-Featured.png) <br>
 
 Den här nya upplevelsen gör det enklare att se vem som har administratörsbehörighet och tilldela roller som ger rätt åtkomstnivå till administratörerna. Och vi har också lagt till fler roller från Azure AD så att du inte slösar tid på att gå till flera administrationscenter.
@@ -373,7 +443,7 @@ Vad mer kan du göra här?
 
 ### <a name="payment-method"></a>Betalningsmetod
 
-Vi har uppdaterat hur du betalar för dina prenumerationer. Gå till > **Faktureringsfakturor & betalningsmetoder** > **.** **Billing** Du kan se dina betalningsmetoder i en listvy. Markera ett objekt i listan om du vill ta bort det, redigera det och se enkelt vilken prenumeration som betalningsmetoden är kopplad till.
+Vi har uppdaterat hur du betalar för dina prenumerationer. Gå **Billing**till  >  **Faktureringsfakturor & betalningsmetoder**  >  **Payment methods**. Du kan se dina betalningsmetoder i en listvy. Markera ett objekt i listan om du vill ta bort det, redigera det och se enkelt vilken prenumeration som betalningsmetoden är kopplad till.
 
 ## <a name="may-2019"></a>Maj 2019
 
@@ -395,7 +465,7 @@ Du kan se en ny rekommendation pop-up i ditt admin center - vi har precis lagt t
 - **Få månatliga Office-funktionsuppdateringar** – Vi har fått feedback från våra mycket små kunder om att användarna blir lyckligare när de får månatliga Office-funktionsuppdateringar. Så om du är ett mycket litet företag och du för närvarande får dina Office-funktionsuppdateringar var sjätte månad visas den här rekommendationen.
 
 **Inställningar** <br>
-När det gäller inställningar har det skett en hel del förändringar. Mestadels, bara uppdatera de befintliga inställningarna till den nya admin center stil. När vi går framåt och lägger till nya inställningar som du aldrig har sett förut börjar vi nämna dem här. Och vi har en helhet inställning att meddela: **Modern autentisering**. Ja, det finns en ny inställning för att aktivera **modern autentisering!** Om du vill checka ut går du till **Inställningarstjänster** > **& tillägg** > **Modern autentisering**.
+När det gäller inställningar har det skett en hel del förändringar. Mestadels, bara uppdatera de befintliga inställningarna till den nya admin center stil. När vi går framåt och lägger till nya inställningar som du aldrig har sett förut börjar vi nämna dem här. Och vi har en helhet inställning att meddela: **Modern autentisering**. Ja, det finns en ny inställning för att aktivera **modern autentisering!** Om du vill checka ut går du till **Settings**  >  **Inställningarstjänster & tillägg**  >  **Modern autentisering**.
 
 ## <a name="april-2019"></a>April 2019
 
@@ -409,7 +479,7 @@ För april presenterar vi guiden **Lägg till användare** som hjälper dig... v
 Det finns två sätt att kolla upp det: <br>
 
 1. På **startsidan** väljer du **Lägg till användare** på **användarhanteringskortet.** Guiden öppnas där, så att du inte behöver navigera från något arbete du gör på **startsidan.**
-2. Gå till **Aktiva användare och** > **Active users**välj sedan Lägg **till användare** i kommandofältet.
+2. Gå till **Aktiva**  >  **användare**och välj sedan Lägg **till användare** i kommandofältet.
 <br><br>
 
 Vi har gjort några fler ändringar i **användarhantering,** här är en snabb lista:
@@ -421,23 +491,23 @@ Vi har gjort några fler ändringar i **användarhantering,** här är en snabb 
 ### <a name="but-wait-theres-more"></a>Men vänta! Det finns mer
 
 - Det finns en ny inställningsbanner på **startsidan** som du ser om du inte har slutfört konfigurationsstegen, till exempel lägga till en domän, lägga till användare och hämta Office-programmen.
-- **Fönstret Grupplista** och information har uppdaterats till det nya formatet. Gå till **Grupper** > **grupper** om du vill visa ändringarna.
+- **Fönstret Grupplista** och information har uppdaterats till det nya formatet. Gå till **Grupper**  >  **grupper** om du vill visa ändringarna.
   - På tal om grupper har vi också lagt till en **Microsoft Teams-flik** i informationsfönstret för grupper där du kan förvandla en Microsoft 365-grupp till ett team. Om du vill "teamifiera" en grupp väljer du en Microsoft 365-grupp i listan väljer du fliken **Microsoft Teams** och sedan **skapa team**. Om gruppen redan är ett team får du en länk för att hantera den från **administrationscentret för Teams**.
-  - Slutligen kan du lägga till **Teams-statusen** i **grupplistan.** Välj kolumner**Status** >  **Choose columns** > **Spara**i kolumnrubriken .
+  - Slutligen kan du lägga till **Teams-statusen** i **grupplistan.** Välj kolumner **Choose columns**  >  **Status**  >  **Spara**i kolumnrubriken .
 - **Nya begränsade administratörsroller** – Vi har släppt några nya administratörsroller så att du bara kan ge användarna den åtkomst de behöver.
   - **Kaizala admin**: Användare i den här rollen har behörighet att utföra alla hanteringsuppgifter inom Microsoft Kaizala, inklusive att skapa och hantera användare i Kaizala-katalogen, hantera Kaizala-grupper, hantera åtgärdskort och anslutningsappar och skapa tjänstförfrågningar.
   - **Sökadministratör:** Användare i den här rollen har fullständig åtkomst till alla hanteringsfunktioner för Microsoft Search i administrationscentret för Microsoft 365. Sökadministratörer kan delegera rollerna Sökadministratör och Sökredigerare till användare och skapa och hantera innehåll, till exempel bokmärken, Q-&A-objekt och platser. Dessutom kan dessa användare visa meddelandecentret, övervaka tjänstens hälsotillstånd och skapa tjänstförfrågningar.
   - **Sökredigerare**: Användare i den här rollen kan skapa, hantera och ta bort innehåll för Microsoft Search i microsoft 365-administrationscentret, inklusive bokmärken, Q-&A-objekt och platser.
 - Det finns en bonanza av **Billing** förändringar denna månad ...
-  - Du kan nu uppdatera CVV för befintliga kreditkort utan att behöva ta bort det och lägga till den igen. Du kan uppdatera CVV genom att gå till **Bills** > **Betalningsmetoder**.
-    - Vi har gjort det enklare att hitta dina **fakturor** och förstå eventuella faktureringsproblem som ditt konto kan ha. Och nu kan du se dina räkningar i webbläsaren istället för att behöva ladda ner PDF. Gå till > **Fakturor**. **Bills**
+  - Du kan nu uppdatera CVV för befintliga kreditkort utan att behöva ta bort det och lägga till den igen. Du kan uppdatera CVV genom att gå till **Bills**  >  **Betalningsmetoder**.
+    - Vi har gjort det enklare att hitta dina **fakturor** och förstå eventuella faktureringsproblem som ditt konto kan ha. Och nu kan du se dina räkningar i webbläsaren istället för att behöva ladda ner PDF. Gå **Bills**till  >  **Fakturor**.
     - På sidan **Dina produkter** sammanställer vi nu din prenumerationsinformation om du har flera prenumerationer av samma typ.
 
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>Mars 2019 - Vi har officiellt släppt admin-centret
 
 Tja, om du missade spännande nyheter, vi har officiellt släppa den nya och förbättrade Microsoft 365 admin center! Här är blogginlägget där vi meddelade det: [Den nya Microsoft 365 admin center finns idag](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/The-new-Microsoft-365-admin-center-available-today/ba-p/377870). För mars kommer vi att förlita sig på blogginlägg för dig att kolla in de funktioner som släppts - plus, du kan också läsa inlägget för de funktioner som får släppas inom en snar framtid, vilket vi inte får göra i kärninnehåll.
 <br> ![Skärminspelning av startsidan för microsoft 365 admin center.](../media/M365AC-HomePage.png) <br>
-Vi har en ändring av området **fakturering & prenumerationer** som vi vill nämna. Jag menar, ni trodde inte att vi var klara med att förbättra det, eller hur? För det är vi inte! Faktum är att den här månaden har vi lagt till möjligheten att hantera dina partnerrelationer i > **faktureringsfaktureringskonton.** **Billing** Härifrån kan du granska dina partnerrelationer över Advisor, CSP och Indirekta återförsäljare. Du kan också acceptera nya partnerrelationsförfrågningar, inklusive delegerade administratörsbehörigheter.
+Vi har en ändring av området **fakturering & prenumerationer** som vi vill nämna. Jag menar, ni trodde inte att vi var klara med att förbättra det, eller hur? För det är vi inte! Faktum är att den här månaden har vi lagt till möjligheten att hantera dina partnerrelationer **i**  >  **faktureringsfaktureringskonton.** Härifrån kan du granska dina partnerrelationer över Advisor, CSP och Indirekta återförsäljare. Du kan också acceptera nya partnerrelationsförfrågningar, inklusive delegerade administratörsbehörigheter.
 
 Som alltid är din feedback viktig för oss, så håll det kommer! På en sida i administrationscentret kan du ge feedback genom att välja **Ge feedback** längst ned till höger, bredvid Behöver **du hjälp?**
 
@@ -445,14 +515,14 @@ Som alltid är din feedback viktig för oss, så håll det kommer! På en sida i
 
 Den här månaden kommer vi att fokusera på alla förbättringar vi har gjort på de områden som kärleksfullt kallas "Fakturering och prenumerationer". Förr i tiden, du förmodligen inte hänvisa till dessa saker kärleksfullt, men vi tror att du kommer nu ...
 
-- **Betalningsmetoder** – Vi har hört din feedback om att det var svårt att uppdatera din betalningsmetod och vi har gjort en hel del ändringar kring den. Gå till**Betalningsmetoder för** **fakturering** > . Du kan enkelt se dina betalningsmetoder, som ditt Visa-kort, och vilken prenumeration det är kopplat till. I listan över betalningsmetoder väljer du menyn **Mer** (3 små punkter bredvid utgångsdatumet) och väljer sedan **Visa prenumerationer**. Du kan också redigera och ta bort dina betalningsmetoder med menyn **Mer.**
-- **Faktureringskonto** – Riktade versionskunder ser först den nya sidan för faktureringskonto och sedan distribuerar vi den till hela världen. När den är tillgänglig för dig går du till > **Faktureringsfaktureringskontot**. **Billing** Vad kan du göra på den nya sidan för faktureringskonto? Jag är glad att du frågade:
-  - Uppdatera adressen och annan kontaktinformation i organisationsprofilen direkt från den här sidan. Du behöver inte gå till Profilen **Inställningar** > **Organisation**, om du inte vill.
+- **Betalningsmetoder** – Vi har hört din feedback om att det var svårt att uppdatera din betalningsmetod och vi har gjort en hel del ändringar kring den. Gå **Billing**till  >  **Betalningsmetoder för**fakturering . Du kan enkelt se dina betalningsmetoder, som ditt Visa-kort, och vilken prenumeration det är kopplat till. I listan över betalningsmetoder väljer du menyn **Mer** (3 små punkter bredvid utgångsdatumet) och väljer sedan **Visa prenumerationer**. Du kan också redigera och ta bort dina betalningsmetoder med menyn **Mer.**
+- **Faktureringskonto** – Riktade versionskunder ser först den nya sidan för faktureringskonto och sedan distribuerar vi den till hela världen. När den är tillgänglig för dig går du till **Billing**  >  **Faktureringsfaktureringskontot**. Vad kan du göra på den nya sidan för faktureringskonto? Jag är glad att du frågade:
+  - Uppdatera adressen och annan kontaktinformation i organisationsprofilen direkt från den här sidan. Du behöver inte gå till Profilen **Inställningar**  >  **Organisation**, om du inte vill.
   - Och vi gör livet enklare för direkt- eller volymlicensieringskunder, du kan acceptera och granska kundavtal från **faktureringskonton.** Du kan också ansluta till andra organisationer så att du kan länka samman orgs för att dela licenser och resurser.
 - Vi har också gjort några mindre förbättringar och buggfixar:
   - Återaktivera en prenumeration med en fakturabetalning
   - Redigera tjänstens användningsadress för dina prenumerationer
-  - Och på sidan Lagerinformation har vi lagt till några meddelandeförbättringar, vi länkar dig till den faktiska sidan där du kan utföra arbetet och det finns fler åtgärder på lagerinformationskortet. Gå till Information om > **faktureringsfakturor** > **på** en faktura. **Billing**
+  - Och på sidan Lagerinformation har vi lagt till några meddelandeförbättringar, vi länkar dig till den faktiska sidan där du kan utföra arbetet och det finns fler åtgärder på lagerinformationskortet. Gå **Billing**till Information om  >  **faktureringsfakturor**  >  **på** en faktura.
 
 ## <a name="january-2019---happy-new-year"></a>Januari 2019 - Gott Nytt År
 

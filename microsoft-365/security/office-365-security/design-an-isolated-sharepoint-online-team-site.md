@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Utforma isolerade SharePoint Online-gruppwebbplatser, inklusive bestämma behörighetsnivåer, tilldela behörigheter till användare med åtkomstgrupper och kapslade Azure AD-grupper.
-ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 821e15a05bc80e3795f9e18d4457416baf7145b7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034846"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209517"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Utforma en isolerad SharePoint Online-gruppwebbplats
 
@@ -63,15 +63,15 @@ Du kan tilldela behörigheter till användare genom att lägga till deras använ
   
 Använda standard-SharePoint-grupper som ett exempel:
   
-- Medlemmar i ** \<webbplatsnamnet> Medlemmar** SharePoint-grupp, som kan innehålla både användarkonton och grupper, tilldelas **behörighetsnivån Redigera**
+- Medlemmar i ** \< webbplatsnamnet> Medlemmar** SharePoint-grupp, som kan innehålla både användarkonton och grupper, tilldelas **behörighetsnivån Redigera**
     
-- Medlemmar i ** \<webbplatsnamnet> Visitors** SharePoint-grupp, som kan innehålla både användarkonton och grupper, tilldelas **behörighetsnivån Läs**
+- Medlemmar i ** \< webbplatsnamnet> Visitors** SharePoint-grupp, som kan innehålla både användarkonton och grupper, tilldelas **behörighetsnivån Läs**
     
-- Medlemmar i ** \<webbplatsnamnet> Ägare** SharePoint-grupp, som kan innehålla både användarkonton och grupper, tilldelas behörighetsnivån **Fullständig kontroll**
+- Medlemmar i ** \< webbplatsnamnet> Ägare** SharePoint-grupp, som kan innehålla både användarkonton och grupper, tilldelas behörighetsnivån Fullständig **kontroll**
     
  **Bästa praxis:** Även om du kan hantera behörigheter via enskilda användarkonton rekommenderar vi att du använder en enda Azure AD-grupp, en så kallad åtkomstgrupp, i stället. Detta förenklar hanteringen av behörigheter via medlemskap i åtkomstgruppen, i stället för att hantera listan över användarkonton för varje SharePoint-grupp.
   
-Azure AD-grupper för Microsoft 365 skiljer sig från Microsoft 365-grupper. Azure AD-grupper visas i Microsoft 365-administrationscentret med deras **typ** inställd på **Säkerhet** och har ingen e-postadress. Azure AD-grupper kan hanteras inom:
+Azure AD-grupper för Microsoft 365 är olika microsoft 365-grupper. Azure AD-grupper visas i Microsoft 365-administrationscentret med deras **typ** inställd på **Säkerhet** och har ingen e-postadress. Azure AD-grupper kan hanteras inom:
   
 - Active Directory Domain Services (AD DS)
     
@@ -99,9 +99,9 @@ Här är standard-SharePoint-grupper som konfigurerats för att använda Azure A
   
 När du utformar de tre åtkomstgrupperna bör du tänka på följande:
   
-- Det bör bara finnas ett fåtal medlemmar i ** \<webbplatsnamnet> åtkomstgruppen administratörer,** vilket motsvarar ett litet antal SharePoint Online-administratörer som hanterar gruppwebbplatsen.
+- Det bör bara finnas ett fåtal medlemmar i ** \< webbplatsnamnet> åtkomstgruppen administratörer,** vilket motsvarar ett litet antal SharePoint Online-administratörer som hanterar gruppwebbplatsen.
     
-- De flesta av dina webbplatsmedlemmar finns i ** \<webbplatsnamnet> medlemmar** eller ** \<webbplatsnamn> Tittare** åtkomstgrupper. Eftersom webbplatsmedlemmar i ** \<webbplatsnamnet> medlemmars** åtkomstgrupp har möjlighet att ta bort eller ändra resurser på webbplatsen bör du noga överväga medlemskapet. När du är osäker lägger du till webbplatsmedlemmen i ** \<webbplatsnamnet>** tittaråtkomstgruppen.
+- De flesta av dina webbplatsmedlemmar finns i ** \< webbplatsnamnet> medlemmar** eller ** \< webbplatsnamn> Tittare** åtkomstgrupper. Eftersom webbplatsmedlemmar i ** \< webbplatsnamnet> medlemmars** åtkomstgrupp har möjlighet att ta bort eller ändra resurser på webbplatsen bör du noga överväga medlemskapet. När du är osäker lägger du till webbplatsmedlemmen i ** \< webbplatsnamnet> tittaråtkomstgruppen.**
     
 Här är ett exempel på SharePoint-grupper och åtkomstgrupper för en isolerad webbplats med namnet ProjectX.
   

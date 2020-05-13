@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Läs mer om kampanjvyer i det avancerade skydd mot office 365-hotet.
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637824"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209601"
 ---
 # <a name="campaign-views-in-atp"></a>Kampanjvyer i ATP
 
@@ -54,15 +54,15 @@ En kampanj kan vara kortlivad eller sträcka sig över flera dagar, veckor eller
 
 ## <a name="campaign-views-the-security--compliance-center"></a>Kampanjvyer security & Compliance Center
 
-Kampanjvyer är tillgängliga i [Security & Compliance Center](https://protection.office.com) vid **hothanteringskampanjer** \> **Campaigns**.
+Kampanjvyer är tillgängliga i [Security & Compliance Center](https://protection.office.com) vid **Threat management** \> **hothanteringskampanjer**.
 
 ![Översikt över kampanjer i Security & Compliance Center](../../media/campaigns-overview.png)
 
 Du kan också komma åt kampanjvyn från:
 
-- **Threat management** \> **Explorer** \> **Explorer-kampanjer för** \> **Campaigns** hothantering
+- **Hantering av** \> hot **Explorer** \> **Visa** \> **Kampanjer**
 
-- Explorer **Explorer** \> **View** Visa \> alla **e-postmeddelanden** \> **för** **hothantering** \>
+- **Hantering av** \> hot **Explorer** \> **Visa** \> **Alla e-postmeddelanden** \> **Kampanj**
 
 > [!TIP]
 > Om du inte ser några kampanjdata kan du prova att ändra datumintervallet.
@@ -83,7 +83,7 @@ Du kan också komma åt kampanjvyn från:
 
 - **Klickad :** Antalet användare som klickade på webbadressen i nätfiskemeddelandet.
 
-- **Klicka på Betyg:** Procentsatsen som beräknas av "**Klickad** / **inkorg**". Det här värdet är en indikator på kampanjens effektivitet och om mottagarna kunde identifiera meddelandet som nätfiske och undvika att klicka på nyttolast-url:en.
+- **Klicka på Betyg:** Procentsatsen som beräknas av "**Klickad**  /  **inkorg**". Det här värdet är en indikator på kampanjens effektivitet och om mottagarna kunde identifiera meddelandet som nätfiske och undvika att klicka på nyttolast-url:en.
 
 - **Besökt:** Hur många användare som faktiskt gjorde det genom att nyttolasten webbplats. Om det finns klickade värden, men säkra länkar **blockeras** åtkomst till webbplatsen, kommer detta värde att vara noll.
 
@@ -144,7 +144,7 @@ Diagrammet innehåller följande information:
 
   <sup>\*\*</sup>Granska dina policyer mot skräppost, eftersom dessa meddelanden ska sättas i karantän, inte levereras.
 
-- **Leveransplatser**: Du vill förmodligen undersöka meddelanden som faktiskt levererades till mottagare (antingen till inkorgen eller mappen Skräppost), även om användarna inte klickade på nyttolast-URL:en i meddelandet. Du kan också ta bort meddelandena i karantän från karantänen. Mer information finns [i Karantänmeddelanden i Office 365](quarantine-email-messages.md).
+- **Leveransplatser**: Du vill förmodligen undersöka meddelanden som faktiskt levererades till mottagare (antingen till inkorgen eller mappen Skräppost), även om användarna inte klickade på nyttolast-URL:en i meddelandet. Du kan också ta bort meddelandena i karantän från karantänen. Mer information finns i [EOP i karantän](quarantine-email-messages.md).
 
   - **Borttagen mapp**
 

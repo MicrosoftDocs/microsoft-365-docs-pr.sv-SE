@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig mer om programordningen för Office 365-skydd och hur prioritetsvärdet i skyddsprinciper avgör vilken princip som tillämpas.
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig mer om tillämpningsordningen för skydd i Exchange Online Protection (EOP) och hur prioritetsvärdet i skyddsprinciper avgör vilken princip som tillämpas.
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036722"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209445"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
-Som Microsoft 365-användare kan din inkommande e-post flaggas av flera former av skydd. Till exempel de inbyggda EOP-principerna mot nätfiske som är tillgängliga för alla Microsoft 365-kunder och de mer robusta ATP-principerna för nätfiske som också är tillgängliga för Office 365 Advanced Threat Protection-kunder. Meddelanden passerar också genom flera upptäckt skanningar för skadlig kod, spam, phishing, etc. Med tanke på all denna verksamhet kan det råda viss förvirring om vilken politik som tillämpas.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan inkommande e-post flaggas av flera former av skydd. Till exempel de inbyggda EOP-principerna mot nätfiske som är tillgängliga för alla Microsoft 365-kunder och de mer robusta ATP-principerna för nätfiske som också är tillgängliga för Office 365 Advanced Threat Protection (Office 365 ATP) kunder. Meddelanden passerar också genom flera upptäckt skanningar för skadlig kod, spam, phishing, etc. Med tanke på all denna verksamhet kan det råda viss förvirring om vilken politik som tillämpas.
 
 I allmänhet identifieras en princip som tillämpas på ett meddelande i **X-Forefront-Antispam-Report-huvudet** i egenskapen **CAT (Category).** Mer information finns i [Rubriker för skräppostmeddelande](anti-spam-message-headers.md).
 
@@ -36,19 +36,19 @@ Det finns två viktiga faktorer som avgör vilken princip som tillämpas på ett
   |||||
   |---|---|---|---|
   |**Prioritet**|**Skydd av e-post**|**Kategori**|**Var ska man hantera**|
-  |1|Malware|KATT:MALW|[Konfigurera principer mot skadlig kod i Office 365](configure-anti-malware-policies.md)|
-  |2|Phishing|KATT:PHSH|[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)|
-  |3|Skräppost med hög konfidens|KATT:HSPM|[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)|
-  |4|Kapning|CAT:SPOOF|[Konfigurera falska underrättelser i Office 365](learn-about-spoof-intelligence.md)|
-  |5|Skräppost|KATT:SPM|[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)|
-  |6|Bulk (Massutskick)|CAT:BULK|[Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|Domänpersonifiering (skyddade användare)|DIMP|[Konfigurera ATP-principer för nätfiske i Office 365](configure-atp-anti-phishing-policies.md)|
-  |8<sup>\*</sup>|Användaren personifiering (skyddade domäner)|UIMP (UIMP)|[Konfigurera ATP-principer för nätfiske i Office 365](configure-atp-anti-phishing-policies.md)|
+  |1|Malware|KATT:MALW|[Konfigurera principer mot skadlig kod i EOP](configure-anti-malware-policies.md)|
+  |2|Phishing|KATT:PHSH|[Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md)|
+  |3|Skräppost med hög konfidens|KATT:HSPM|[Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md)|
+  |4|Kapning|CAT:SPOOF|[Konfigurera falska underrättelser i EOP](learn-about-spoof-intelligence.md)|
+  |5|Skräppost|KATT:SPM|[Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md)|
+  |6|Bulk (Massutskick)|CAT:BULK|[Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md)|
+  |7<sup>\*</sup>|Domänpersonifiering (skyddade användare)|DIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
+  |8<sup>\*</sup>|Användaren personifiering (skyddade domäner)|UIMP (UIMP)|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>Dessa funktioner är endast tillgängliga i ATP:s principer för nätfiske.
 
-- **Policyns prioritet:** För varje skyddstyp (anti-spam, anti-malware, anti-phishing, etc.), finns det en standardpolicy som gäller för alla, men du kan ofta skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritetsvärde som bestämmer i vilken ordning principerna ska tillämpas i. Standardprincipen tillämpas alltid sist.
+- **Policyns prioritet:** För varje skyddstyp (anti-spam, anti-malware, anti-phishing, etc.), finns det en standardpolicy som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritetsvärde som bestämmer i vilken ordning principerna ska tillämpas i. Standardprincipen tillämpas alltid sist.
 
   Om en användare definieras i flera principer av samma typ tillämpas endast principen med högsta prioritet på dem. Återstående principer av den typen utvärderas inte för användaren (inklusive standardprincipen).
 
