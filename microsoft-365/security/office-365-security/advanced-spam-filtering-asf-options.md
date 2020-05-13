@@ -1,5 +1,5 @@
 ---
-title: ASF-inställningar i Office 365
+title: ASF-inställningar i EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,25 +17,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig mer om asf-inställningar (Advanced Spam Filter) i policyer för skräppost, som gör det möjligt för administratörer att identifiera meddelanden som innehåller specifika meddelandeegenskaper som ofta används i skräppost.
-ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig mer om asf-inställningarna (Advanced Spam Filter) som är tillgängliga i anti-spam-policyer i Exchange Online Protection (EOP).
+ms.openlocfilehash: 3193c1ea11d9a470a6b0df72f052bab20dec29f8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034140"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208054"
 ---
-# <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Avancerade asf-inställningar (Spam Filter) i Office 365
+# <a name="advanced-spam-filter-asf-settings-in-eop"></a>Inställningar för avancerat spamfilter (ASF) i EOP
 
 > [!NOTE]
 > ASF-inställningar som för närvarande är tillgängliga i anti-spam-policyer håller på att vara inaktuella. Vi rekommenderar att du inte använder dessa inställningar i anti-spam-policyer. Funktionerna i dessa ASF-inställningar införlivas i andra delar av filtreringstacken. Mer information finns i [EOP:s policyinställningar för skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-Med asf-inställningarna (Advanced Spam Filter) i policyer för skräppost (kallas även principer för skräppostfilter eller innehållsfilter) kan administratörer markera meddelanden som skräppost baserat på specifika meddelandeegenskaper. ASF riktar sig specifikt till dessa egenskaper eftersom de är vanligt förekommande i skräppost. Beroende på egenskapen, ASF upptäckter kommer antingen markera meddelandet som **spam** eller **hög förtroende spam**.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor tillåter asf-inställningarna (Advanced Spam Filter) i anti-spam-principer (kallas även principer för skräppostfilter eller innehållsfilterprinciper) administratörer att markera meddelanden som skräppost baserat på specifika meddelandeegenskaper. ASF riktar sig specifikt till dessa egenskaper eftersom de är vanligt förekommande i skräppost. Beroende på egenskapen, ASF upptäckter kommer antingen markera meddelandet som **spam** eller **hög förtroende spam**.
 
 > [!NOTE]
-> Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva identifieringar. Du kan identifiera meddelanden som filtrerats efter ASF genom att: <ul><li>Periodiska meddelanden om skräppost för slutanvändare.</li><li>Förekomsten av filtrerade meddelanden i karantän.</li><li>De `X-CustomSpam:` specifika X-header-fält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.</li></ul>
+> Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva identifieringar. Du kan identifiera meddelanden som filtrerats efter ASF genom att: <ul><li>Periodiska meddelanden om skräppost för slutanvändare.</li><li>Förekomsten av filtrerade meddelanden i karantän.</li><li>De specifika `X-CustomSpam:` X-header-fält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.</li></ul>
 
-I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+I följande avsnitt beskrivs asf-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivera, inaktivera eller testa ASF-inställningar
 
@@ -70,9 +70,9 @@ För varje ASF-inställning finns följande alternativ i policyer mot skräppost
 Följande ASF-inställningar ställer in säkerhetsnivån för skräppost (SCL) för upptäckta meddelanden **Spam** till 5 eller 6, vilket motsvarar spam-filterdomen och motsvarande åtgärder i anti-spam-policyer.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Inställning av policy för skräppost**|**Beskrivning**|**X-header har lagts till**|
-|**Bildlänkar till fjärrplatser** <br/><br/> *ÖkaScoreWithImageLinks*|Meddelanden som `<Img>` innehåller HTML-tagglänkar till fjärrplatser (till exempel med http) markeras som skräppost.|`X-CustomSpam: Image links to remote sites`|
+|**Bildlänkar till fjärrplatser** <br/><br/> *ÖkaScoreWithImageLinks*|Meddelanden som innehåller `<Img>` HTML-tagglänkar till fjärrplatser (till exempel med http) markeras som skräppost.|`X-CustomSpam: Image links to remote sites`|
 |**URL-omdirigering till annan port** <br/><br/> *ÖkascoreMedRedirectTootherPort*|Meddelande som innehåller hyperlänkar som omdirigerar till andra TCP-portar än 80 (HTTP), 8080 (alternativ HTTP) eller 443 (HTTPS) markeras som skräppost.|`X-CustomSpam: URL redirect to other port`|
 |**Numerisk IP-adress i URL** <br/><br/> *ÖkaScoreWithNumericIps*|Meddelanden som innehåller numeriska webbadresser (vanligtvis IP-adresser) markeras som skräppost.|`X-CustomSpam: Numeric IP in URL`|
 |**URL till .biz- eller .info-webbplatser** <br/><br/> *ÖkaScoreMedBizOrInfoUrls*|Meddelanden som innehåller .biz- eller .info-länkar i meddelandets brödtext markeras som skräppost.|`X-CustomSpam: URL to .biz or .info websites`|
@@ -83,14 +83,14 @@ Följande ASF-inställningar ställer in säkerhetsnivån för skräppost (SCL) 
 Följande ASF-inställningar ställer in SCL för upptäckta meddelanden till 9, vilket motsvarar **hög förtroende spam** filter dom och motsvarande åtgärder i anti-spam politik.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Inställning av policy för skräppost**|**Beskrivning**|**X-header har lagts till**|
 |**Tomma meddelanden** <br/><br/> *MarkAsSpamEmptyMessages*|Meddelanden utan ämne, inget innehåll i meddelandetexten och inga bilagor markeras som skräppost med högt förtroende.|`X-CustomSpam: Empty Message`|
 |**JavaScript eller VBScript i HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Meddelanden som använder JavaScript eller Visual Basic Script Edition i HTML markeras som skräppost med högt förtroende. <br/><br/> Dessa skriptspråk används i e-postmeddelanden för att orsaka att specifika åtgärder automatiskt utförs.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
-|**Frame- eller IFrame-taggar i HTML** <br><br/> *MarkAsSpamFramesInHtml*|Meddelanden som `<frame>` innehåller `<iframe>` eller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Dessa taggar används i e-postmeddelanden för att formatera sidan för att visa text eller grafik.|`X-CustomSpam: IFRAME or FRAME in HTML`|
-|**Objekttaggar i HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Meddelanden som `<object>` innehåller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Med den här taggen kan plugin-program eller program köras i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
-|**Bädda in taggar i HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Meddelande som `<embed>` innehåller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Med den här taggen kan du bädda in olika typer av dokument av olika datatyper i ett HTML-dokument (till exempel ljud, filmer eller bilder).|`X-CustomSpam: Embed tag in html`|
-|**Formulärtaggar i HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Meddelanden som `<form>` innehåller HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Den här taggen används för att skapa webbplatsformulär. E-postannonser innehåller ofta den här taggen för att begära information från mottagaren.|`X-CustomSpam: Form tag in html`|
+|**Frame- eller IFrame-taggar i HTML** <br><br/> *MarkAsSpamFramesInHtml*|Meddelanden som innehåller `<frame>` eller `<iframe>` HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Dessa taggar används i e-postmeddelanden för att formatera sidan för att visa text eller grafik.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Objekttaggar i HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Meddelanden som innehåller `<object>` HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Med den här taggen kan plugin-program eller program köras i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
+|**Bädda in taggar i HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Meddelande som innehåller `<embed>` HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Med den här taggen kan du bädda in olika typer av dokument av olika datatyper i ett HTML-dokument (till exempel ljud, filmer eller bilder).|`X-CustomSpam: Embed tag in html`|
+|**Formulärtaggar i HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Meddelanden som innehåller `<form>` HTML-taggar markeras som skräppost med högt förtroende. <br/><br/> Den här taggen används för att skapa webbplatsformulär. E-postannonser innehåller ofta den här taggen för att begära information från mottagaren.|`X-CustomSpam: Form tag in html`|
 |**Webbfel i HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Ett *webbfel* (kallas även *en webbfyr)* är ett grafiskt element (ofta så litet som en pixel med en pixel) som används i e-postmeddelanden för att avgöra om meddelandet lästes. <br/><br/> Meddelanden som innehåller webbbuggar markeras som skräppost med högt förtroende. <br/><br/> Legitima nyhetsbrev kan använda webbbuggar, även om många anser att detta är en integritetskränkning. |`X-CustomSpam: Web bug`|
 |**Använda känslig ordlista** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft har en dynamisk men icke-redigerbar lista med ord som är associerade med potentiellt stötande meddelanden. <br/><br/> Meddelanden som innehåller ord från den känsliga ordlistan i ämnes- eller meddelandetexten markeras som skräppost med högt förtroende.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-rekord: hårt misslyckas** <br><br/> *MarkAsSpamSpfRecordHardFail*|Meddelanden som skickas från en IP-adress som inte anges i SPF Sender Policy Framework (SPF) i DNS för käll-e-postdomänen markeras som skräppost med högt förtroende. <br/><br/> Testläget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF Record Fail`|

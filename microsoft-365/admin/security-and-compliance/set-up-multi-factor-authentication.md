@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du använder standardvärden för säkerhet för att konfigurera multifaktorautentisering för användare.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665638"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213016"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -75,7 +75,9 @@ Om du tidigare har ställt in MFA med baslinjeprinciper [måste du inaktivera de
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Aktivera modern autentisering för din organisation
 
-Alla Office 2016-klientprogrammen har stöd för MFA genom användning av ADAL (Active Directory Authentication Library). Det innebär att programlösenord inte är nödvändiga för Office 2016-klienter. Du måste dock se till att din Microsoft 365-prenumeration är aktiverad för ADAL eller modern autentisering.
+Alla Office 2016-klientprogrammen har stöd för MFA genom användning av ADAL (Active Directory Authentication Library). Det innebär att programlösenord inte är nödvändiga för Office 2016-klienter. Se [den här artikeln](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) för mer information.
+
+Du måste dock se till att din Microsoft 365-prenumeration är aktiverad för ADAL eller modern autentisering.
 
 1. Om du vill aktivera modern autentisering väljer du **Inställningar** \> **Inställningar** i [administrationscentrat](https://go.microsoft.com/fwlink/p/?linkid=834822) och **Modern autentisering** i listan på fliken **Tjänster**.
 

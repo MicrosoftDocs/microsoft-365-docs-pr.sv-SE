@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor om skydd mot förfalskning
+title: Skydd mot förfalskning frågor och svar
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Vanliga frågor och svar för administratörer om anti-förfalskningsskydd i Exchange Online och fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: b39e48fd57b899e6296d40ab10aac265cb4165a3
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Administratörer kan visa vanliga frågor och svar om anti-förfalskningsskydd i Exchange Online Protection (EOP).
+ms.openlocfilehash: 603293dd00100e3b93a225d94f2ed8fd9baae6a5
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529893"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209101"
 ---
-# <a name="anti-spoofing-protection-faq-in-office-365"></a>Vanliga frågor om skydd mot förfalskning i Office 365
+# <a name="anti-spoofing-protection-faq"></a>Skydd mot förfalskning frågor och svar
 
-Det här avsnittet innehåller vanliga frågor och svar om anti-förfalskningsskydd för Office 365-kunder med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP) kunder utan Exchange Online-postlådor.
+Det här avsnittet innehåller vanliga frågor och svar om anti-förfalskningsskydd för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
 
 Frågor och svar om skydd mot skräppost finns i [Vanliga frågor om skydd mot skräppost](anti-spam-protection-faq.md).
 
-Frågor och svar om skydd mot skadlig kod finns [i Vanliga frågor om skydd mot skadlig kod i Office 365](anti-malware-protection-faq-eop.md)
+Frågor och svar om skydd mot skadlig kod finns i [Vanliga frågor om skydd mot skadlig kod](anti-malware-protection-faq-eop.md)
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Varför valde Microsoft att skräpa upp oautentiserade inkommande e-post?
 
@@ -41,11 +41,11 @@ När Microsoft aktiverade den här funktionen under 2018 hände vissa falska pos
 
 Microsoft själv antog först de nya kraven för e-postautentisering flera veckor innan de distribuerade den till kunder. I början förekom störningar men de minskade gradvis.
 
-## <a name="is-spoof-intelligence-available-to-office-365-customers-without-atp"></a>Är falska underrättelser tillgängliga för Office 365-kunder utan ATP?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>Är falska underrättelser tillgängliga för Microsoft 365-kunder utan ATP?
 
-Ja. Från och med oktober 2018 är falska underrättelser tillgängliga för alla organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor.
+Ja. Från och med oktober 2018 är falska underrättelser tillgängliga för alla organisationer med postlådor i Exchange Online och fristående EOP-organisationer utan Exchange Online-postlådor.
 
-Anti-spoofing-teknik distribuerades ursprungligen till organisationer som hade Office 365 Enterprise E5-prenumerationer eller Office 365 Advanced Threat Protection (ATP) för sin prenumeration.
+Anti-spoofing-teknik distribuerades ursprungligen endast till organisationer som hade Office 365 Enterprise E5-prenumerationer eller Office 365 Advanced Threat Protection (Office 365 ATP) för sin prenumeration.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Hur kan jag rapportera spam eller inte spam-meddelanden tillbaka till Microsoft?
 
@@ -63,17 +63,17 @@ Nu när [förbättrad filtrering för anslutningar](https://docs.microsoft.com/e
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Betyder anti-spoofing skydd att jag kommer att skyddas från alla nätfiske?
 
-Tyvärr, nej. Angripare anpassar sig för att använda andra tekniker (till exempel komprometterade konton eller konton i kostnadsfria e-posttjänster). Skydd mot nätfiske fungerar dock mycket bättre för att upptäcka dessa andra typer av nätfiskemetoder. Skyddslagren i Office 365 är utformade tillsammans och bygger ovanpå varandra.
+Tyvärr, nej. Angripare anpassar sig för att använda andra tekniker (till exempel komprometterade konton eller konton i kostnadsfria e-posttjänster). Skydd mot nätfiske fungerar dock mycket bättre för att upptäcka dessa andra typer av nätfiskemetoder. Skyddslagren i EOP är utformade fungerar tillsammans och bygger ovanpå varandra.
 
 ## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>Blockerar andra stora e-posttjänster oautentiserade inkommande e-post?
 
-Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM- och DMARC-kontroller. Vissa tjänster har andra, striktare kontroller, men få går så långt som till Office 365 för att blockera oautentiserade e-postmeddelanden och behandla dem som falska meddelanden. Branschen blir dock mer medveten om problem med oautentiserade e-postmeddelanden, särskilt på grund av problemet med nätfiske.
+Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM- och DMARC-kontroller. Vissa tjänster har andra, striktare kontroller, men få går så långt som EOP för att blockera oautentiserade e-post och behandla dem som falska meddelanden. Branschen blir dock mer medveten om problem med oautentiserade e-postmeddelanden, särskilt på grund av problemet med nätfiske.
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag fortfarande aktivera den avancerade spam filter inställningen "SPF post: hard fail"_(MarkAsSpamSpfRecordHardFail)_ om jag aktiverar anti-spoofing?
 
 Nej. Denna ASF-inställning behövs inte längre eftersom anti-spoofing inte bara anser SPF hårt misslyckas, men en mycket bredare uppsättning kriterier. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
 
-Vi rekommenderar att du inaktiverar den här funktionen eftersom den nästan inte ger någon ytterligare fördel för att upptäcka skräppost eller nätfiskemeddelanden, och i stället skulle generera mestadels falska positiva identifieringar. Mer information finns i [Inställningar för avancerat spamfilter (ASF) i Office 365](advanced-spam-filtering-asf-options.md).
+Vi rekommenderar att du inaktiverar den här funktionen eftersom den nästan inte ger någon ytterligare fördel för att upptäcka skräppost eller nätfiskemeddelanden, och i stället skulle generera mestadels falska positiva identifieringar. Mer information finns i [ASF-inställningar (Advanced Spam Filter) i EOP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>Hjälper Sender Rewriting Scheme till att åtgärda vidarebefordrad e-post?
 

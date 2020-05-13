@@ -15,16 +15,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om säkra dokument i Office 365 ATP.
-ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 11c2736edee3dd1fcbc2560d5fa574def05a8f6e
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634322"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213122"
 ---
-# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Säkra dokument i avancerat hotskydd i Office 365
+# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Säkra dokument i Office 365 ATP
 
-Säkra dokument är en funktion i Office 365 Advanced Threat Protection (ATP) som använder [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för att skanna dokument och filer som öppnas i [skyddad vy](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
+Säkra dokument är en funktion i Office 365 Advanced Threat Protection (Office 365 ATP) som använder [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för att skanna dokument och filer som öppnas i [skyddad vy](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -32,17 +32,22 @@ Säkra dokument är en funktion i Office 365 Advanced Threat Protection (ATP) so
 
 - Säkra dokument är för närvarande tillgängliga för offentlig förhandsversion, som är tillgängliga för användare som ingår i [Office Insider-programmet](https://insider.office.com/en-us/join) på månadskanalen (Targeted)' med Office Version 2002 (12527.20092) eller mer. Den här funktionen är inaktiverad som standard och måste aktiveras av säkerhetsadministratören.
 
-- Endast usa-region som för närvarande stöds för kompatibel filbearbetning (Alla filer kommer att resa till den amerikanska regionen för skanning). Stöd till Storbritannien/EU-regionen planeras i en framtida uppdatering.
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till Exchange Online Protection PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Du måste tilldelas behörigheter innan du kan utföra procedurerna i det här avsnittet. Om du vill aktivera och konfigurera säkra dokument måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- Du måste tilldelas behörigheter innan du kan utföra procedurerna i det här avsnittet. Om du vill aktivera och konfigurera säkra dokument måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Security & Compliance Center finns [i Behörigheter i Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+## <a name="how-does-microsoft-handle-your-data"></a>Hur hanterar Microsoft dina data?
+
+För att skydda dig skickar säkra dokument filer till Microsoft [Defender Advanced Threat Protection-molnet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för analys.
+
+- Information om hur Microsoft Defender Advanced Thread Protection hanterar dina data finns [här](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- Utöver riktlinjerna ovan, filer som skickas av säkra dokument inte behållas i Defender utöver den tid som behövs för analys, vilket vanligtvis är mindre än 24 timmar
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använda Security & Compliance Center för att konfigurera säkra dokument
 
-1. Öppna Säkerhets- & Compliance Center <https://protection.office.com>på .
+1. Öppna Säkerhets- & Compliance Center på <https://protection.office.com> .
 
-2. Gå till **ATP-säkra bilagor för** **hothanteringsprincip** \> **Policy** \> .
+2. Gå **Threat management** till \> **Policy** \> **ATP-säkra bilagor för**hothanteringsprincip .
 
 3. Konfigurera någon av följande inställningar när du litar på en fil för att öppna utanför skyddad vy i Office-program i hjälpen för personer som är säkra när de **litar på en fil för att öppna utanför skyddad vy i Office-program:**
 
@@ -54,7 +59,7 @@ Säkra dokument är en funktion i Office 365 Advanced Threat Protection (ATP) so
 
 ![ATP Säkra bilagor sida](../../media/safe-docs.png)
 
-### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>Använda Exchange Online PowerShell eller Exchange Online Protection PowerShell för att konfigurera säkra dokument
+### <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-documents"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera säkra dokument
 
 Använd följande syntax:
 
@@ -78,7 +83,7 @@ Detaljerad syntax- och parameterinformation finns i [Ange-AtpPolicyForO365](http
 
 Så här kontrollerar du att du har aktiverat och konfigurerat säkra dokument:
 
-- I Security & Compliance Center går du till **ATP-betrodda bilagor**för **hothanteringsprincip** \> **Policy** \> och verifierar valen i **hjälppersonerna att vara säkra när de litar på en fil för att öppna utanför skyddad vy i Office-program.**
+- I Security & Compliance Center **Threat management** går du till \> **Policy** \> **ATP-betrodda bilagor**för hothanteringsprincip och verifierar valen i **hjälppersonerna att vara säkra när de litar på att en fil öppnas utanför skyddad vy i Office-program.**
 
 - Kör följande kommando i Exchange Online PowerShell och verifiera egenskapsvärdena:
 

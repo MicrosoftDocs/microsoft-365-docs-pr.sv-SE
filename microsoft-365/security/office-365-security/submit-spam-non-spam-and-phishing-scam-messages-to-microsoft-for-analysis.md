@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 'Du och dina användare kan skicka falska negativa och falska positiva skräppostmeddelanden till Microsoft för analys. '
+description: Administratörer och en-användare kan lära sig att e-postmeddelanden (bra e-post markerad som dålig eller dålig post tillåts) till Microsoft för analys.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7fc26e1cba976e68b8dcfee5ec8b4fe366b8c47
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035242"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208615"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden manuellt till Microsoft för analys
 
 > [!NOTE]
-> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
+> Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
 
 Det kan vara frustrerande när användare i organisationen får skräppost eller nätfiskemeddelanden i inkorgen, eller om de inte får ett legitimt e-postmeddelande eftersom det är markerat som skräppost. Vi finjusterar ständigt våra skräppostfilter för att vara mer exakta.
 
@@ -57,7 +57,7 @@ Om du får ett meddelande som skickades genom skräppostfiltrering som borde ha 
 3. När du är klar klickar du på **Skicka**.
 
 > [!TIP]
-> Administratörer har flera olika sätt att blockera specifika meddelanden som felidentifieras som skräppost. Mer information finns [i Skapa blockerade avsändarelistor i Office 365](create-block-sender-lists-in-office-365.md).
+> Administratörer har flera olika sätt att blockera specifika meddelanden som felidentifieras som skräppost. Mer information finns [i Skapa blockerade avsändarelistor i EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="submit-false-positives-to-microsoft"></a>Skicka falska positiva identifieringar till Microsoft
 
@@ -66,7 +66,7 @@ Om du får ett meddelande som skickades genom skräppostfiltrering som borde ha 
 
 Om ett meddelande har identifierats felaktigt som skräppost kan du skicka meddelandet till Microsoft Spam Analysis Team. Analytikerna kommer att utvärdera meddelandet, och (beroende på resultaten av analysen) kan de serviceomfattande filtren justeras så att meddelandet går igenom.
 
-1. Skapa ett nytt, tomt `not_junk@office365.microsoft.com` e-postmeddelande med som mottagare:
+1. Skapa ett nytt, tomt e-postmeddelande med `not_junk@office365.microsoft.com` som mottagare:
 
 2. Dra och släpp det felidentifierade meddelandet i det nya meddelandet. Då sparas det felidentifierade meddelandet som en bifogad fil i det nya meddelandet. Kopiera och klistra inte in innehållet i meddelandet eller vidarebefordra meddelandet (vi behöver det ursprungliga meddelandet så att vi kan inspektera meddelanderubrikerna).
 
@@ -76,7 +76,7 @@ Om ett meddelande har identifierats felaktigt som skräppost kan du skicka medde
 3. När du är klar klickar du på **Skicka**.
 
 > [!TIP]
-> Administratörer har flera olika sätt att tillåta specifika meddelanden att hoppa över skräppostfiltrering. Mer information finns [i Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).
+> Administratörer har flera olika sätt att tillåta specifika meddelanden att hoppa över skräppostfiltrering. Mer information finns [i Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Skapa en regel för e-postflöde för att ta emot kopior av meddelanden som rapporteras till Microsoft
 

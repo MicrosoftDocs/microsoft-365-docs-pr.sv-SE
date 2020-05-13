@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du aktiverar tillägget Report Message för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939481"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209493"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
 > [!NOTE]
-> Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
+> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
 
 Tillägget Report Message för Outlook och Outlook på webben (tidigare känt som Outlook Web App) gör det möjligt för människor att enkelt rapportera falska positiva (bra e-post markerad som dålig) eller falska negativ (dålig e-post tillåten) till Microsoft och dess dotterbolag för analys. Microsoft använder dessa inlämningar för att förbättra effektiviteten i e-postskyddstekniker.
 
@@ -54,7 +54,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
   - Postlådor i lokala Exchange-organisationer
   - GCC-, GCC HIGH- eller DoD-prenumerationer
 
-- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i [Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Office 365](user-submission.md).
+- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i [Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Exchange Online](user-submission.md).
 
 - Din befintliga webbläsare bör fungera med tillägget Rapportmeddelande. Men om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova en annan webbläsare.
 
@@ -64,7 +64,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Hämta tillägget Rapportmeddelande själv
 
-1. Gå till Microsoft AppSource och <https://appsource.microsoft.com/marketplace/apps> sök efter tillägget Rapportmeddelande. Gå direkt till tillägget Rapportmeddelande och <https://appsource.microsoft.com/product/office/wa104381180>gå till .
+1. Gå till Microsoft AppSource och <https://appsource.microsoft.com/marketplace/apps> sök efter tillägget Rapportmeddelande. Gå direkt till tillägget Rapportmeddelande och gå till <https://appsource.microsoft.com/product/office/wa104381180> .
 
 2. Klicka på **Hämta den nu.**
 
@@ -91,7 +91,7 @@ Mer information om hur du använder tillägget finns i [Använda tillägget Rapp
 > [!NOTE]
 > Det kan ta upp till 12 timmar innan tillägget visas i organisationen.
 
-1. Gå till sidan **Tjänster & tillägg i administrationscentret** för Microsoft 365 och <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>klicka sedan på Distribuera **tillägg**.
+1. Gå till sidan **Tjänster & tillägg i administrationscentret** för Microsoft 365 och klicka sedan på Distribuera <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> **tillägg**.
 
    ![Sidan Tjänster och tillägg i administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -101,7 +101,7 @@ Mer information om hur du använder tillägget finns i [Använda tillägget Rapp
 
    ![Distribuera en ny tilläggssida](../../media/NewAddInScreen2.png)
 
-4. På sidan **Välj tillägg** som visas klickar du i rutan **Sök,** anger **Rapportmeddelande**och klickar sedan på **Sök** ![efter ikon](../../media/search-icon.png). Leta reda på **Rapportmeddelande i** resultatlistan och klicka sedan på **Lägg till**.
+4. På sidan **Välj tillägg** som visas klickar du i rutan **Sök,** anger **Rapportmeddelande**och klickar sedan på **Sök** ![ efter ikon ](../../media/search-icon.png) . Leta reda på **Rapportmeddelande i** resultatlistan och klicka sedan på **Lägg till**.
 
    ![Välj sökresultat för tillägg](../../media/NewAddInScreen3.png)
 
@@ -118,7 +118,7 @@ Mer information om hur du använder tillägget finns i [Använda tillägget Rapp
    - **Distributionsmetod**: Välj ett av följande värden:
 
      - **Fast (standard)**: Tillägget distribueras automatiskt till de angivna användarna och de kan inte ta bort det.
-     - **Tillgänglig:** Användare kan installera tillägget at **Home** \> **Get-tillägg som administreras.** \> **Admin-managed**
+     - **Tillgänglig:** Användare kan installera tillägget at **Home** \> **Get-tillägg** som \> **administreras.**
      - **Valfritt:** Tillägget distribueras automatiskt till de angivna användarna, men de kan välja att ta bort det.
 
    ![Konfigurera tilläggssida](../../media/configure-add-in.png)
@@ -149,7 +149,7 @@ När du meddelar användarna om tillägget Rapportmeddelande ska du inkludera en
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Granska eller redigera inställningar för tillägget Rapportmeddelande
 
-1. Gå till sidan **Tjänster & tillägg på** sidan Tjänster & på <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. Gå till sidan **Tjänster & tillägg på** sidan Tjänster & på <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
    ![Sidan Tjänster och tillägg i det nya administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

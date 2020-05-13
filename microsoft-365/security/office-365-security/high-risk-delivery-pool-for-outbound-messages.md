@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur högriskleveranspoolen används för att skydda ryktet för e-postservrar i Microsoft 365-datacenter.
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638040"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209193"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Leveranspool med hög risk för utgående meddelanden
 
@@ -45,11 +45,8 @@ Den utgående högriskleveranspoolen hanterar leveransen för alla rapporter som
 Möjliga orsaker till en ökning av NDR inkluderar:
 
 - En förfalskningskampanj som påverkar en av kunderna som använder tjänsten.
-
 - En katalog skörd attack.
-
 - En spamattack.
-
 - En oseriös e-postserver.
 
 Alla dessa problem kan resultera i en plötslig ökning av antalet NDR som behandlas av tjänsten. Många gånger, dessa NDRs verkar vara spam till andra e-postservrar och tjänster (även känd som _[backscatter).](backscatter-messages-and-eop.md)_

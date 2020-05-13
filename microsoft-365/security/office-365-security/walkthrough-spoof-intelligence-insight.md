@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur den nya falska intelligensinsikten fungerar, inklusive hur du snabbt kan avgöra vilka avsändare som lagligen skickar oautentiserade e-postmeddelanden till dig.
+description: Administratörer kan lära sig hur falska intelligens insikt fungerar, inklusive hur man snabbt avgöra vilka avsändare som lagligen skickar dig oautentiserade e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033650"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208470"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Genomgång - ATP Spoof intelligens insikt i Microsoft 365
 
@@ -35,7 +35,7 @@ Den här genomgången är en av flera för Security & Compliance Center. Om du v
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt <https://protection.office.com/searchandinvestigation/dashboard>till **instrumentpanelssidan för säkerhet** använder du .
+- Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **instrumentpanelssidan för säkerhet** använder du <https://protection.office.com/searchandinvestigation/dashboard> .
 
   Du kan visa den falska intelligensinsikten från mer än en instrumentpanel i Security & Compliance Center. Oavsett vilken instrumentpanel du tittar på ger insikten samma information och gör att du snabbt kan utföra samma uppgifter.
 
@@ -47,7 +47,7 @@ Den här genomgången är en av flera för Security & Compliance Center. Om du v
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öppna den falska intelligensinsikten i Security & Compliance Center
 
-1. Gå till **instrumentpanelen** **för &-efterlevnad i** \> Säkerhets- & Compliance Center.
+1. Gå till instrumentpanelen för & **efterlevnad i** Säkerhets- & Compliance \> **Center.**
 
 2. Leta efter något av följande objekt på raden **Insikter:**
 
@@ -69,7 +69,7 @@ Den här genomgången är en av flera för Security & Compliance Center. Om du v
 
    Ett **domänpar** är en kombination av Från-adressen och den sändande infrastrukturen:
 
-   - Från-adressen är avsändarens e-postadress som visas i e-postklienter. Adressen identifierar e-postmeddelandets upphovsman. Det vill säga, postlådan för personen eller systemet som ansvarar för att skriva meddelandet. Den här adressen kallas `5322.From` även adressen.
+   - Från-adressen är avsändarens e-postadress som visas i e-postklienter. Adressen identifierar e-postmeddelandets upphovsman. Det vill säga, postlådan för personen eller systemet som ansvarar för att skriva meddelandet. Den här adressen kallas även `5322.From` adressen.
 
    - Den sändande infrastrukturen, eller avsändaren, är organisationsdomänen för ptr-posten (reverse DNS lookup) för den sändande IP-adressen. Om den sändande IP-adressen inte har någon PTR-post identifieras avsändaren av den sändande IP-adressen med nätmasken 255.255.255.0 i CIDR-notation (/24). Om IP-adressen till exempel är 192.168.100.100 är avsändarens fullständiga IP-adress 192.168.100.100/24.
 

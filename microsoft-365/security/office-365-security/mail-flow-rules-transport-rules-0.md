@@ -1,5 +1,5 @@
 ---
-title: Regler för e-postflöde (transportregler) - Exchange Online Protection
+title: Regler för e-postflöde i EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Du kan använda regler för e-postflöde (transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom organisationen.
-ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036191"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209697"
 ---
-# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regler för e-postflöde (transportregler) i Exchange Online Protection
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regler för e-postflöde (transportregler) i fristående EOP
 
-Du kan använda regler för e-postflöde (kallas även transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom organisationen. Regler för e-postflöde liknar de inkorgsregler som är tillgängliga i Outlook och Outlook på webben. Den största skillnaden är att e-postflödesregler vidtar åtgärder för meddelanden när de är under transport och inte efter att meddelandet har levererats till postlådan. Regler för e-postflöde innehåller en rikare uppsättning villkor, undantag och åtgärder, vilket ger dig flexibiliteten att implementera många typer av meddelandeprinciper.
+I fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan du använda e-postflödesregler (kallas även transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom din organisation.
 
-I den här artikeln beskrivs komponenterna i reglerna för e-postflöde och hur de fungerar.
+I det här avsnittet beskrivs komponenterna i reglerna för e-postflöde och hur de fungerar.
 
 Steg om hur du skapar, kopierar och hanterar regler för e-postflöde finns [i Hantera regler för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). För varje regel har du möjlighet att verkställa den, testa den eller testa den och meddela avsändaren. Mer information om testningsalternativen finns i Testa regler för [e-postflöde](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) och [principtips i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
@@ -39,13 +39,13 @@ Information om hur du implementerar specifika meddelandeprinciper med hjälp av 
 
 - [Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- [Skapa blockeringsavsändningslistor i Office 365](create-block-sender-lists-in-office-365.md)
+- [Skapa blockavsändare i EOP](create-block-sender-lists-in-office-365.md)
 
 - [Minska hot mot skadlig kod genom blockering av bifogade filer i Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
 - [Definiera regler för att kryptera eller dekryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-Följande video innehåller en demonstration av hur du ställer in regler för e-postflöde i Exchange Online Protection.
+Följande video ger en demonstration av att ställa in regler för e-postflöde i fristående EOP.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -55,13 +55,13 @@ En regel för e-postflöde består av villkor, undantag, åtgärder och egenskap
 
 - **Villkor**: Identifiera de meddelanden som du vill använda åtgärderna på. Vissa villkor undersöker fälten meddelandehuvud (till exempel fälten Till, Från eller Kopia). Andra villkor undersöker meddelandeegenskaper (till exempel meddelandeämne, brödtext, bilagor, meddelandestorlek eller meddelandeklassificering). De flesta villkor kräver att du anger en jämförelseoperator (till exempel lika med, inte är lika med eller innehåller) och ett värde som ska matchas. Om det inte finns några villkor eller undantag tillämpas regeln på alla meddelanden.
 
-Mer information om regelvillkor för e-postflöde i Exchange Online Protection finns i [Villkor och undantag för e-postflödesregel (predikater) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Mer information om regelvillkor för e-postflöde i fristående EOP finns i [Villkor och undantag för E-postflödesregel (predikat) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 - **Undantag**: Du kan också identifiera de meddelanden som åtgärderna inte ska gälla för. Samma meddelandeidentifierare som är tillgängliga i villkor är också tillgängliga i undantag. Undantag åsidosätter villkoren och förhindrar att regelåtgärderna tillämpas på ett meddelande, även om meddelandet matchar alla konfigurerade villkor.
 
 - **Åtgärder**: Ange vad du ska göra med meddelanden som matchar villkoren i regeln och matchar inte något av undantagen. Det finns många tillgängliga åtgärder, till exempel att avvisa, ta bort eller omdirigera meddelanden, lägga till ytterligare mottagare, lägga till prefix i meddelandeämnet eller infoga ansvarsfriskrivningar i meddelandetexten.
 
-Mer information om regelåtgärder för e-postflöde som är tillgängliga i Exchange Online Protection finns [i Regelåtgärder för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+Mer information om regelåtgärder för e-postflöde som är tillgängliga i fristående EOP finns [i Regelåtgärder för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 - **Egenskaper**: Ange andra regelinställningar som inte är villkor, undantag eller åtgärder. Till exempel när regeln ska tillämpas, om regeln ska tillämpas eller testas och tidsperioden när regeln är aktiv.
 
@@ -103,8 +103,6 @@ Varje regel erbjuder också möjligheten att sluta bearbeta fler regler när reg
 
 Det finns flera typer av meddelanden som passerar genom en organisation. I följande tabell visas vilka meddelandetyper som kan bearbetas av regler för e-postflöde.
 
-****
-
 |**Typ av meddelande**|**Kan en regel tillämpas?**|
 |:-----|:-----|
 |**Vanliga meddelanden**: Meddelanden som innehåller ett enda RTF-format (RTF), HTML eller vanlig textmeddelandetext eller en flerdelad eller alternativ uppsättning meddelandekroppar.|Ja|
@@ -114,7 +112,7 @@ Det finns flera typer av meddelanden som passerar genom en organisation. I följ
 |**Rensa signerade meddelanden**: Meddelanden som har signerats men inte krypterats.|Ja|
 |**UM-meddelanden:** Meddelanden som skapas eller bearbetas av tjänsten Unified Messaging, till exempel röstmeddelanden, fax, meddelanden om missade samtal och meddelanden som skapas eller vidarebefordras med hjälp av Microsoft Outlook Voice Access.|Ja|
 |**Anonyma meddelanden**: Meddelanden som skickas av anonyma avsändare.|Ja|
-|**Läs rapporter**: Rapporter som genereras som svar på begäran om läskvitto från avsändare. Läsrapporter har en `IPM.Note*.MdnRead` meddelandeklass eller `IPM.Note*.MdnNotRead`.|Ja|
+|**Läs rapporter**: Rapporter som genereras som svar på begäran om läskvitto från avsändare. Läsrapporter har en meddelandeklass `IPM.Note*.MdnRead` eller `IPM.Note*.MdnNotRead` .|Ja|
 
 ## <a name="what-else-should-i-know"></a>Vad mer ska jag veta?
 

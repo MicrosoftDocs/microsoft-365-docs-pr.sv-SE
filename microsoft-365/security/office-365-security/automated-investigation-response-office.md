@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035622"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208917"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>En översikt över automatisk undersökning och svar (AIR) i Microsoft 365
 
@@ -50,7 +50,7 @@ För närvarande för AIR undersöks aviseringar som genereras från följande t
 > [!NOTE]
 > Aviseringarna som markerats med en asterisk (*) tilldelas en *informations allvarlighetsgrad* i respektive varningsprinciper i Security & Compliance Center, med e-postmeddelanden inaktiverade. E-postmeddelanden kan aktiveras via [konfiguration av aviseringsprincip](../../compliance/alert-policies.md#alert-policy-settings). Aviseringar som är markerade med en hash (#) är allmänt tillgängliga aviseringar som är associerade med offentliga förhandsversionsspelböcker.
 
-Om du vill visa aviseringar väljer du **Aviseringar** > **visa aviseringar**i Säkerhets- & Compliance Center . Välj en avisering om du vill visa dess information och därifrån använd **länken Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
+Om du vill visa aviseringar väljer du Aviseringar **Alerts**  >  **visa aviseringar**i Säkerhets- & Compliance Center . Välj en avisering om du vill visa dess information och därifrån använd **länken Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
 
 > [!NOTE]
 > Informationsaviseringar döljs som standard i varningsvyn. Om du vill se dem ändrar du varningsfiltreringen så att informationsaviseringar inkluderas.
@@ -68,6 +68,7 @@ De säkerhetsspelböcker du får med AIR är utformade för att hantera de vanli
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Säkerhet playbooks rullas ut i faser
 
 Som en del av AIR, säkerhet spelböcker rullas ut i faser. Fas 1 är nu allmänt tillgänglig och innehåller flera spelböcker som ger rekommendationer för åtgärder som säkerhetsadministratörer kan granska och godkänna:
+
 - Användarrapporterat phish-meddelande
 - URL klicka dom förändring
 - Malware upptäckt efter leverans (Malware ZAP)
@@ -76,6 +77,7 @@ Som en del av AIR, säkerhet spelböcker rullas ut i faser. Fas 1 är nu allmän
 Fas 1 innehåller även stöd för administratörsutlösta e-postundersökningar (med [Threat Explorer).](threat-explorer.md)
 
 Fas 2 går nu vidare med följande spelböcker i **den offentliga förhandsversionen,** ger rekommendationer för åtgärder och hjälper säkerhetsadministratörer att undersöka problem:
+
 - Användare som rapporterats som komprometterade (offentlig förhandsversion)
 
 Ytterligare spelböcker kommer att släppas när de är klara. Besök [Översikten över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) för att se vad som planeras och kommer snart.
@@ -83,6 +85,7 @@ Ytterligare spelböcker kommer att släppas när de är klara. Besök [Översikt
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Spelböcker inkluderar undersökning och rekommendationer
 
 I AIR innehåller varje säkerhetsspelbok: 
+
 - En rotundersökning av ett e-postmeddelandes enheter (filer, webbadresser, mottagare, IP-adresser osv.).
 - ytterligare jakt på liknande e-postmeddelanden som mottagits av organisationen 
 - åtgärder som vidtagits för att identifiera och korrelera andra potentiella hot, och 
@@ -95,6 +98,7 @@ Varje steg på hög nivå innehåller ett antal understeg som utförs för att g
 Anta att en användare i organisationen får ett e-postmeddelande som de tror är ett nätfiskeförsök. Användaren, som är tränad att rapportera sådana meddelanden, använder [tillägget Rapportmeddelande](enable-the-report-message-add-in.md) för att skicka det till Microsoft för analys. Inlämningen skickas också till ditt system och visas i Utforskaren i **vyn Inlämningar** (tidigare kallad **användarrapporterad** vy). Dessutom utlöser det användarrapporterade meddelandet nu en systembaserad informationsavisering, som automatiskt startar undersökningsuppspelningsboken.
 
 Under rotutredningsfasen bedöms olika aspekter av e-postmeddelandet. De omfattar:
+
 - En bestämning om vilken typ av hot det kan vara;
 - Vem sände den;
 - Var e-postmeddelandet skickades från (skicka infrastruktur);
@@ -110,8 +114,8 @@ Därefter utförs flera hotutredningar och jaktsteg:
 - Liknande e-postmeddelanden identifieras via e-postklustersökningar.
 - Signalen delas med andra plattformar, till exempel [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - En bedömning görs om huruvida några användare har klickat igenom några skadliga länkar i misstänkta e-postmeddelanden.
-- En kontroll görs i Exchange Online Protection[(EOP)](exchange-online-protection-eop.md)och Office 365 Advanced Threat Protection[(ATP)](office-365-atp.md)för att se om det finns några andra liknande meddelanden som rapporterats av användare.
-- En kontroll görs för att se om en användare har komprometterats. Den här kontrollen utnyttjar signaler över Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)och Azure Active [Directory](https://docs.microsoft.com/azure/active-directory), korrelerar relaterade avvikelser i användaraktiviteten. 
+- En kontroll görs i Exchange Online Protection[(EOP)](exchange-online-protection-overview.md)och Office 365 Advanced Threat Protection[(ATP)](office-365-atp.md)för att se om det finns några andra liknande meddelanden som rapporterats av användare.
+- En kontroll görs för att se om en användare har komprometterats. Den här kontrollen utnyttjar signaler över Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)och Azure Active [Directory](https://docs.microsoft.com/azure/active-directory), korrelerar relaterade avvikelser i användaraktiviteten.
 
 Under jaktfasen sätts risker och hot på olika jaktsteg. 
 
@@ -136,4 +140,3 @@ I likhet med spelböcker som utlöses av en avisering innehåller automatiska un
 - [Komma igång med AIR](office-365-air.md)
 
 - [Besök Översikten över Microsoft 365 för att se vad som kommer snart och rulla ut](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

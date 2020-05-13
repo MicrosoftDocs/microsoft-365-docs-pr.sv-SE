@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur administratörer kan hantera meddelanden och filer i karantän för användare i Office 365.
-ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Office 365 Advanced Threat Protection (Office 365 ATP) kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
+ms.openlocfilehash: 0f0dd7ee14aeb4558674a6e2240e022df3c489fc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036179"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209013"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>Hantera meddelanden och filer i karantän som administratör
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
-Karantänen lagrar potentiellt farliga eller oönskade meddelanden i Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor. Mer information finns i [Karantän i Office 365](quarantine-email-messages.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor innehåller karantän potentiellt farliga eller oönskade meddelanden. Mer information finns i [EOP i karantän](quarantine-email-messages.md).
 
 Administratörer kan visa, släppa och ta bort alla typer av meddelanden i karantän för alla användare. Endast administratörer kan hantera meddelanden som har satts i karantän som skadlig kod, nätfiske med högt förtroende eller som ett resultat av regler för e-postflöde (kallas även transportregler). Administratörer kan också rapportera falska positiva identifieringar till Microsoft.
 
-Administratörer i organisationer med Office 365 Advance Threat Protection (ATP) kan också visa, hämta och ta bort filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
+Administratörer i organisationer med Office 365 Advance Threat Protection (Office 365 ATP) kan också visa, hämta och ta bort filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 
-Du kan visa och hantera meddelanden i karantän i Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Microsoft 365-kunder; Exchange Online Protection PowerShell för fristående EOP-kunder).
+Du kan visa och hantera meddelanden i karantän i Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -46,8 +46,6 @@ Du kan visa och hantera meddelanden i karantän i Security & Compliance Center e
 - Meddelanden i karantän behålls under en standardperiod innan de tas bort automatiskt:
 
   - Meddelanden i karantän av policyer mot skräppost (skräppost, nätfiske och massmeddelande): 30 dagar. Detta är standard- och maxvärdet. Mer om du vill konfigurera det här värdet finns i [Konfigurera principer mot skräppost](configure-your-spam-filter-policies.md).
-
-1. Logga in och [gå till Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md)med hjälp av ett arbets- eller skolkonto som har globala administratörsbehörighet (eller lämpliga säkerhetsroller & Compliance Center) i organisationen .
 
   - Meddelanden som innehåller skadlig kod: 15 dagar.
 
@@ -74,8 +72,6 @@ Du kan visa och hantera meddelanden i karantän i Security & Compliance Center e
    - **Släppt?**<sup>\*</sup>
 
    - **Principtyp**<sup>\*</sup>
-
-1. Logga in och [gå till Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md)med hjälp av ett arbets- eller skolkonto som har globala administratörsbehörighet (eller lämpliga säkerhetsroller & Compliance Center) i organisationen .
 
    - **Mottagare**
 
@@ -125,7 +121,7 @@ Du kan visa och hantera meddelanden i karantän i Security & Compliance Center e
 
    - **Meddelande-ID**: Meddelandets globalt unika identifierare.
 
-        Du använde till exempel [meddelandespårning](message-trace-scc.md) för att leta efter ett meddelande som skickades till en användare i organisationen och du bestämmer att meddelandet sattes i karantän i stället för levererat. Var noga med att inkludera det fullständiga meddelande-ID-värdet, som kan innehålla vinkelparenteser (\<\>). Till exempel: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+     Du använde till exempel [meddelandespårning](message-trace-scc.md) för att leta efter ett meddelande som skickades till en användare i organisationen och du bestämmer att meddelandet sattes i karantän i stället för levererat. Var noga med att inkludera det fullständiga meddelande-ID-värdet, som kan innehålla vinkelparenteser ( \< \> ). Till exempel: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>` .
 
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
 
@@ -240,7 +236,7 @@ I organisationer med ATP kan administratörer hantera filer i karantän i ShareP
 
 2. Ändra **vy i karantän** till standardvärdefilerna . **files** Du kan sortera i ett fält genom att klicka på ett tillgängligt kolumnhuvud.
 
-3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardkolumnerna är markerade med<sup>\*</sup>en asterisk ( ):
+3. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardkolumnerna är markerade med en asterisk ( <sup>\*</sup> ):
 
    - **Användaren**<sup>\*</sup>
 

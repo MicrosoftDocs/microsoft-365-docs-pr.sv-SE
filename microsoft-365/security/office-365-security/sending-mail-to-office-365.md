@@ -2,10 +2,10 @@
 title: Skicka e-post till Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig som extern avsändare hur du kan öka möjligheten att leverera e-post till användare i Microsoft 365. Lär dig också hur du anmäler skräppost & nätfiskeförsök som extern användare.
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035390"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209829"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Skicka e-post till Microsoft 365
 
-De här artiklarna hjälper externa avsändare att förbättra sitt rykte och öka sin förmåga att leverera e-post till användare i Office 365. De innehåller också viss information om hur du kan rapportera skräppost och nätfiskeförsök även om du själv inte är en Microsoft 365-användare.
+Dessa artiklar hjälper externa avsändare att förbättra sitt rykte och öka sin förmåga att leverera e-post till användare i Microsoft 365. De innehåller också viss information om hur du kan rapportera skräppost och nätfiskeförsök även om du själv inte är en Microsoft 365-användare.
 
 Om du inte är kund, men försöker skicka e-post till någon i vem som är, är du på rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräppost är detta inte rätt avsnitt för dig. Gå istället till Skydd mot [skräppost och skadlig kod i Microsoft 365](anti-spam-and-anti-malware-protection.md).
 

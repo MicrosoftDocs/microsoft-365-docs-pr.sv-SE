@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
-ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ef6bacbce6f46a17abcceb98e40d20ed3ad5363
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638052"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209205"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
-De tekniska supportresurser som anges här hjälper dig att hitta svar om du har problem med Microsoft Exchange Online Protection (EOP). Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
+I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor hjälper de tekniska supportresurserna i det här avsnittet dig att hitta svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
 
 ## <a name="self-support-options"></a>Alternativ för självstöd
 
@@ -51,7 +51,7 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 1. Logga in på administrationscentret för Microsoft 365.
 
-2. Gå till **Support** \> Fråga efter **ny serviceförfrågan** **för kundsupport** \>
+2. Gå till **Support** Fråga efter ny \> **Ask for Customer Support** \> **serviceförfrågan** för kundsupport
 
 3. Använd formuläret för att lägga till information om problemet, söka efter lösningar på tidigare problem eller bifoga loggar eller relaterade filer.
 
@@ -59,9 +59,9 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 1. Logga in på administrationscentret för Microsoft 365.
 
-2. Allmänna produktproblem finns i **Support** \> Fråga efter **teknisk support** **för kundtjänstsamtal** \> .
+2. Allmänna produktproblem finns i **Support** \> Fråga efter teknisk support för **kundtjänstsamtal** \> **Call technical support**.
 
-   Om du har frågor innan du köper EOP eller frågor om fakturering och prenumerationer går du till **Fakturering och** \> **prenumerationssupport** **för kundtjänst.** \>
+   Om du har frågor innan du köper EOP eller frågor om fakturering och prenumerationer går du till **Fakturering och** \> **Ask for Customer Support** \> **prenumerationssupport**för kundtjänst.
 
 3. Använd den virtuella agenten för att söka efter det senaste lämpliga telefonnumret.
 

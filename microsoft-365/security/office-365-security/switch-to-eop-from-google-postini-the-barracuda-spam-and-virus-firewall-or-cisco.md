@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du byter till Exchange Online Protection (EOP) från en lokal e-posthygieninstallation eller molnbaserad skyddstjänst.
-ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035230"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209277"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Byt till EOP från Google Postini, Barracuda Spam and Virus Firewall eller Cisco IronPort
 
@@ -55,9 +55,9 @@ Det bästa stället att börja, om du funderar på en hybriddistribution, är [E
 
 När du bestämmer dig för att byta till EOP ska du ta särskild hänsyn till följande områden:
 
-- **Anpassade filtreringsregler:** Om du har anpassade filtrerings- eller affärspolicyregler för att fånga upp specifik skräppost rekommenderar vi att du provar EOP med standardinställningarna för en period innan du migrerar reglerna. EOP erbjuder skräppostskydd på företagsnivå med standardinställningarna, det kan visa sig att du inte behöver migrera några av dina regler till EOP. Om du har regler som tillämpar specifika anpassade affärsprinciper kan du naturligtvis skapa dessa. [Regler för e-postflöde (transportregler) i Exchange Online Protection](mail-flow-rules-transport-rules-0.md) innehåller detaljerade instruktioner för hur du skapar regler för e-postflöde i EOP.
+- **Anpassade filtreringsregler:** Om du har anpassade filtrerings- eller affärspolicyregler för att fånga upp specifik skräppost rekommenderar vi att du provar EOP med standardinställningarna under en viss tid innan du migrerar reglerna. EOP erbjuder skräppostskydd på företagsnivå med standardinställningarna, det kan visa sig att du inte behöver migrera några av dina regler till EOP. Om du har regler som tillämpar specifika anpassade affärsprinciper kan du naturligtvis skapa dessa. [Regler för e-postflöde (transportregler) i Exchange Online Protection](mail-flow-rules-transport-rules-0.md) innehåller detaljerade instruktioner för hur du skapar regler för e-postflöde i EOP.
 
-- **IP-tillåta listor och IP-blocklistor:** Om du har per användare tillåta listor och blocklistor, ge lite tid att kopiera listorna till EOP som en del av din installationsprocess. Mer information om IP-tillåta listor och IP-blockeringslistor finns i [Konfigurera princip för anslutningsfilter](configure-the-connection-filter-policy.md).
+- **IP-tillåta listor och IP-blocklistor:** Om du har per användare tillåta listor och blocklistor, ge lite tid att kopiera listorna till EOP som en del av din installationsprocess. Mer information om listan TILLÅT IP och IP-blockering finns i [Konfigurera anslutningsfilterprincipen](configure-the-connection-filter-policy.md).
 
 - **Säker kommunikation**: Om du har en partner som kräver krypterade meddelanden rekommenderar vi att du konfigurerar detta i administrationscentret för Exchange. Information om hur du konfigurerar det här scenariot finns i [Konfigurera kopplingar för säkert e-postflöde med en partnerorganisation](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 

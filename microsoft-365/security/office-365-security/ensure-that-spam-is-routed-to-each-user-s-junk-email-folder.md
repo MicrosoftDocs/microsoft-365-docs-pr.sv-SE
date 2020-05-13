@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du dirigerar skräppost till mappar för skräppost från användare i hybridmiljö för Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036578"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209481"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer
 
@@ -44,7 +44,7 @@ Mer information om dessa rubrikvärden finns i [Rubriker för skräppostmeddelan
 I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC) och Exchange Management Shell (Exchange PowerShell) i den lokala Exchange-organisationen.
 
 > [!TIP]
-> I stället för att leverera meddelandena till den lokala användarens skräppostmapp kan du konfigurera anti-spam-principer i EOP för att sätta skräppostmeddelanden i karantän i EOP. Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+> I stället för att leverera meddelandena till den lokala användarens skräppostmapp kan du konfigurera anti-spam-principer i EOP för att sätta skräppostmeddelanden i karantän i EOP. Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -60,7 +60,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
   - Om skräppostregeln är aktiverad på postlådan (parametervärdet _Aktiverad_ $true på cmdleten [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) i Exchange Management Shell). Det är skräppostregeln som faktiskt flyttar meddelandet till mappen Skräppost efter leverans. Som standard är skräppostregeln aktiverad på postlådor. Mer information finns i [Konfigurera inställningar för antispam för Exchange på postlådor](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Om du vill öppna [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell)Exchange Management Shell finns i .
+- Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Om du vill öppna Exchange Management Shell finns i [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
 
 - Mer information om regler för e-postflöde i lokalt Exchange finns i följande avsnitt:
 
@@ -72,9 +72,9 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Använd EAC för att skapa regler för e-postflöde som anger SCL för EOP-skräppostmeddelanden
 
-1. Gå till **Regler för** **e-postflöde** \> i EAC .
+1. Gå till Regler för **e-postflöde** i EAC \> **Rules**.
 
-2. Klicka på](../../media/ITPro-EAC-AddIcon.png) **Lägg till-ikonen** ![och välj **Skapa en ny regel** i listrutan som visas.
+2. Klicka på **Lägg** ![ till-ikonen ](../../media/ITPro-EAC-AddIcon.png) och välj Skapa en ny **regel** i listrutan som visas.
 
 3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
 
@@ -94,7 +94,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
      - Klicka på **Ange text**. I dialogrutan **Ange rubriknamn** som visas anger du **X-Forefront-Antispam-Report** och klickar sedan på **OK**.
 
-     - Klicka på **Ange ord**. I dialogrutan **Ange ord eller fraser** som visas anger du ett av EOP:s värden för skräpposthuvudet **(SFV:SPM,** **SFV:SKS**eller **SFV:SKB**), klicka på **Ikonen Lägg till** ![](../../media/ITPro-EAC-AddIcon.png)lägg till och klicka sedan på **OK**.
+     - Klicka på **Ange ord**. I dialogrutan **Ange ord eller fraser** som visas anger du ett av EOP:s värden för skräpposthuvudet **(SFV:SPM,** **SFV:SKS**eller **SFV:SKB**), klicka på **Ikonen Lägg till** lägg till och klicka sedan på ![ ](../../media/ITPro-EAC-AddIcon.png) **OK**.
 
    - **Gör så här:** Välj **Ändra meddelandeegenskaper** \> **Ange scl (Spam Confidence Level)**.
 
@@ -132,9 +132,9 @@ Detaljerad information om syntax och parametrar finns i [New-TransportRule](http
 
 Så här kontrollerar du att du har konfigurerat fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljö:
 
-- Gå till Regler **för** **e-postflöde** \> i EAC, välj](../../media/ITPro-EAC-EditIcon.png) regeln och klicka sedan på **Ikonen Redigera** ![redigering för att verifiera inställningarna.
+- Gå till Regler för **e-postflöde** i EAC, \> **Rules**välj regeln och klicka sedan på Ikonen **Redigera** redigering för att ![ verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
 
-- I Exchange Management Shell \<ersätter du RuleName\> med namnet på e-postflödesregeln och rul följande kommando för att verifiera inställningarna:
+- I Exchange Management Shell ersätter du \< RuleName \> med namnet på e-postflödesregeln och rul följande kommando för att verifiera inställningarna:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

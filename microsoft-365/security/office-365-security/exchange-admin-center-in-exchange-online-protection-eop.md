@@ -1,5 +1,5 @@
 ---
-title: Exchange administrationscenter i Exchange Online Protection
+title: Administrationscenter för Exchange i fristående EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,47 +15,62 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Administrationscentret för Exchange (EAC) är den webbaserade hanteringskonsolen för Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Lär dig mer om webbhanteringsgränssnittet i fristående Exchange Online Protection (EOP).
+ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808613"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209742"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange administrationscenter i Exchange Online Protection
+# <a name="exchange-admin-center-in-standalone-eop"></a>Administrationscenter för Exchange i fristående EOP
 
-Administrationscentret för Exchange (EAC) är den webbaserade hanteringskonsolen för Microsoft Exchange Online Protection (EOP).
-
-Letar du efter Exchange Server-versionen av det här avsnittet? Se [Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+Exchange admin center (EAC) är en webbaserad hanteringskonsol för fristående Exchange Online Protection (EOP).
 
 Letar du efter Exchange Online-versionen av det här avsnittet? Se [Administrationscenter för Exchange i Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## <a name="accessing-the-eac"></a>Tillgång till EAC
+## <a name="open-the-eac-in-eop"></a>Öppna EAC i EOP
 
-I de flesta fall kommer EOP-kunder åt EAC via administrationscentret för Microsoft 365. Du hittar en länk till EOP i den nedrullningsbara menyn i **panelen Admin,** som ligger bredvid panelen **Jag.** Klicka på panelen **Admin** och välj **Exchange Online Protection** på den nedrullningsbara menyn som ska tas till EAC.
+Fristående EOP-kunder kan komma åt EAC med hjälp av följande metoder:
 
-Du kan också komma åt inloggningssidan för EAC direkt via följande webbadress: `https://admin.protection.outlook.com/ecp/<companydomain>`. Till exempel `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. När du har angett dina användaruppgifter kommer du att tas direkt in i EAC.
+- **Från Microsoft 365 admin center:**
 
-## <a name="common-user-interface-elements-in-the-eac"></a>Vanliga användargränssnittselement i EAC
+  1. Gå till <https://admin.microsoft.com> och klicka på Visa **alla**.
 
-I det här avsnittet beskrivs de element i användargränssnittet som finns i EAC.
+     ![Klicka på Visa alla i administrationscentret för Microsoft 365](../../media/m365-center-show-all.png)
+
+  2. Klicka på Alla **administrationscenter i** avsnittet **Administrationscenter**som visas.
+
+     ![Klicka på Alla administrationscenter i administrationscentret för Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
+
+  3. Klicka på **Exchange Online Protection**på sidan Alla **administrationscenter** som visas .
+
+- Gå direkt till `https://admin.protection.outlook.com/ecp/` .
+
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Gemensamma element för användargränssnitt i EAC i EOP
+
+I det här avsnittet beskrivs de användargränssnittselement som finns i EAC.
 
 ![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Funktionsfönstret
 
-Detta är den första navigeringsnivån för de flesta av de uppgifter du utför i EAC. Funktionsfönstret är organiserat efter funktionsområden.
+Detta är den första navigeringsnivån för de flesta av de uppgifter som du utför i EAC. Funktionsfönstret är ordnat efter funktionsområden.
 
-1. **Mottagare**: Här visar du interna användare och externa kontakter.
+- **Mottagare**: Här ska du visa grupper och externa kontakter.
 
-2. **Behörigheter**: Här hanterar du administratörsroller.
+- **Behörigheter**: Här hanterar du administratörsroller.
 
-3. **Efterlevnadshantering**: Här hittar du granskningsloggar och rapporter, till exempel rollen administratörsgruppsrapport.
+- **Efterlevnadshantering**: Här hittar du rapporten administratörsrollgrupp och rapporten administratörsgranskningslogg.
 
-4. **Skydd**: Här hanterar du skydd mot skadlig kod och skräppost för din organisation samt hanterar meddelanden i karantän.
+- **Skydd**: Här kan du hantera principer mot skadlig kod, standardprincipen för anslutningsfilter och DKIM.
 
-5. **E-postflöde:** Här hanterar du regler, accepterade domäner och kopplingar samt vart du ska gå för att utföra meddelandespårning.
+  > [!NOTE]
+  > Du bör hantera principer mot skadlig kod och standardprincipen för anslutningsfilter i Security & Compliance Center. Mer information finns [i Konfigurera principer mot skadlig kod i EOP](configure-anti-malware-policies.md) och Konfigurera [anslutningsfiltrering i EOP](configure-the-connection-filter-policy.md).
+
+- **E-postflöde:** Här hanterar du regler för e-postflöde (kallas även transportregler), accepterade domäner och kopplingar samt var du kan gå för att köra meddelandespårning.
+
+- **Hybrid:** Här kan du köra [hybridkonfigurationsguiden](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)och där du kan installera [Exchange Online PowerShell-modulen](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Flikar
 
@@ -63,22 +78,24 @@ Flikarna är din andra navigeringsnivå. Vart och ett av funktionsområdena inne
 
 ### <a name="toolbar"></a>Verktygsfältet
 
-När du klickar på de flesta flikar visas ett verktygsfält. Verktygsfältet har ikoner som utför en viss åtgärd. I följande tabell beskrivs ikonerna och deras handlingar.
+När du klickar på de flesta flikar visas ett verktygsfält. Verktygsfältet har ikoner som utför en viss åtgärd. I följande tabell beskrivs ikonerna och deras åtgärder.
 
+||||
+|---|---|---|
 |**Ikonen**|**Namn**|**Åtgärder**|
-|:-----|:-----|:-----|
-|![Lägg till ikon](../../media/ITPro-EAC-AddIcon.gif)|Lägg till, Ny|Använd den här ikonen om du vill skapa ett nytt objekt. Vissa av dessa ikoner har en associerad nedpil som du kan klicka på för att visa ytterligare objekt som du kan skapa.|
-|![Redigera ikon](../../media/ITPro-EAC-EditIcon.gif)|Redigera|Använd den här ikonen om du vill redigera ett objekt.|
+|![Ikonen Lägg till](../../media/ITPro-EAC-AddIcon.gif)|Lägg till, Nytt|Använd den här ikonen om du vill skapa ett nytt objekt. Vissa av dessa ikoner har en associerad nedpil som du kan klicka på för att visa ytterligare objekt som du kan skapa.|
+|![Ikonen Redigera](../../media/ITPro-EAC-EditIcon.gif)|Redigera|Använd den här ikonen för att redigera ett objekt.|
 |![ikonen Ta bort](../../media/ITPro-EAC-DeleteIcon.gif)|Ta bort|Använd den här ikonen om du vill ta bort ett objekt. Vissa borttagningsikoner har en nedpil som du kan klicka på för att visa ytterligare alternativ.|
-|![Sökikon](../../media/ITPro-EAC-.gif)|Sök|Använd den här ikonen om du vill öppna en sökruta där du kan skriva sökfrasen efter ett objekt som du vill hitta.|
-|![Ikon för uppdatering](../../media/ITPro-EAC-RefreshIcon.gif)|Uppdatera|Använd den här ikonen för att uppdatera listvyn.|
-|![Ikon för fler alternativ](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Fler alternativ|Använd den här ikonen om du vill visa fler åtgärder som du kan utföra för den flikens objekt. I ** \> Mottagare användare** klickar på den här ikonen visar alternativet att utföra en **avancerad sökning**.|
-|![Ikon för upppil](../../media/ITPro-EAC-UpArrowIcon.gif)![Ikon för nedpil](../../media/ITPro-EAC-DownArrowIcon.gif)|Upppil och nedåtpil|Använd dessa ikoner för att flytta ett objekts prioritet uppåt eller nedåt.|
+|![Sökikon](../../media/ITPro-EAC-.gif)|Sök|Använd den här ikonen för att öppna en sökruta där du kan skriva sökfrasen för ett objekt som du vill söka efter.|
+|![Ikonen Uppdatera](../../media/ITPro-EAC-RefreshIcon.gif)|Återställning|Använd den här ikonen för att uppdatera listvyn.|
+|![Ikonen Fler alternativ](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Fler alternativ|Använd den här ikonen om du vill visa fler åtgärder som du kan utföra för flikens objekt. I Mottagare **visar \> användare** som klickar på den här ikonen alternativet för att utföra en **avancerad sökning**.|
+|![Ikon för uppåtpil](../../media/ITPro-EAC-UpArrowIcon.gif)![Ikon för nedpil](../../media/ITPro-EAC-DownArrowIcon.gif)|Uppil och nedpil|Använd dessa ikoner för att flytta ett objekts prioritet uppåt eller nedåt.|
 |![Ikon för borttagning](../../media/ITPro-EAC-RemoveIcon.gif)|Ta bort|Använd den här ikonen om du vill ta bort objekt från en lista.|
+|
 
 ### <a name="list-view"></a>Listvy
 
-När du väljer en flik visas en listvy i de flesta fall. Den synliga gränsen med EAC-listvyn är cirka 10 000 objekt. Dessutom inkluderas växling så att du kan bläddra till resultat.
+När du väljer en flik visas i de flesta fall en listvy. Den synliga gränsen med EAC-listvyn är cirka 10 000 objekt. Dessutom ingår personsökning så att du kan bläddra till resultat.
 
 ### <a name="details-pane"></a>Informationsfönstret
 
@@ -86,23 +103,25 @@ När du markerar ett objekt i listvyn visas information om objektet i informatio
 
 ### <a name="me-tile-and-help"></a>Jag kakel och hjälp
 
-Med panelen **Me** kan du logga ut eac och logga in som en annan användare. På **Help**den nedrullningsbara hjälpikonen](../../media/ITPro-EAC-HelpIcon.gif) kan du utföra följande åtgärder:![
+Med panelen **Jag** kan du logga ut EAC:en och logga in som en annan användare. På **Help** ![ ](../../media/ITPro-EAC-HelpIcon.gif) den nedrullningssvänliga menyn Hjälpikon kan du utföra följande åtgärder:
 
-1. **Hjälp**: ![Klicka](../../media/ITPro-EAC-HelpIcon.gif) på Hjälpikonen om du vill visa hjälpinnehållet online.
+- **Hjälp:** Klicka på ![ ](../../media/ITPro-EAC-HelpIcon.gif) Hjälpikonen för att visa hjälpinnehållet online.
 
-2. **Inaktivera hjälpbubbla:** Hjälpbubblan visar kontextuell hjälp för fält när du skapar eller redigerar ett objekt. Du kan stänga av hjälpbubblan eller aktivera den om den har inaktiverats.
+- **Feedback**: Lämna feedback.
 
-3. **Upphovsrätt**: Klicka på denna länk för att läsa upphovsrättsmeddelandet för Exchange Online Protection.
+- **Community**: Post en fråga för att hitta svar i community forum.
 
-4. **Sekretess:** Klicka för att läsa sekretesspolicyn för Exchange Online Protection.
+- **Inaktivera hjälpbubbla:** Hjälpbubblan visar sammanhangsberoende hjälp för fält när du skapar eller redigerar ett objekt. Du kan stänga av hjälpbubblan eller slå på den om den har inaktiverats.
+
+- **Visa kommandologgning:** Ett nytt fönster öppnas som visar motsvarande PowerShell-kommandon baserat på vad du har konfigurerat i EAC.
 
 ## <a name="supported-browsers"></a>Webbläsare som stöds
 
-För bästa upplevelse med EAC rekommenderar vi att du alltid använder de senaste webbläsarna, Office-klienterna och apparna. Vi rekommenderar också att du installerar programuppdateringar när de blir tillgängliga. Mer information om webbläsare och systemkrav som stöds för tjänsten finns i [Systemkrav för Office](https://products.office.com/office-system-requirements).
+För bästa möjliga upplevelse av EAC rekommenderar vi att du alltid använder de senaste webbläsarna, Office-klienterna och apparna. Vi rekommenderar också att du installerar programuppdateringar när de blir tillgängliga. Mer information om de webbläsare och systemkrav som stöds för tjänsten finns i [Systemkrav för Office](https://products.office.com/office-system-requirements).
 
-## <a name="supported-languages-in-eop"></a>Språk som stöds i EOP
+## <a name="supported-languages"></a>Språk som stöds
 
-Följande språk stöds och är tillgängliga för Exchange Online Protection.
+Följande språk stöds och är tillgängliga för EAC i fristående EOP.
 
 - Amhariska
 
@@ -227,5 +246,3 @@ Följande språk stöds och är tillgängliga för Exchange Online Protection.
 - Vietnamesiska
 
 - Walesiska
-
-

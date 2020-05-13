@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratörer kan lära sig mer om de felkoder som är associerade med meddelandeleverans med kopplingar (kallas även information om e-postflödet).
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635642"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206622"
 ---
-# <a name="mail-flow-intelligence"></a>Information om e-postflöde
+# <a name="mail-flow-intelligence-in-eop"></a>Information om e-postflöde i EOP
 
-Vanligtvis använder du en anslutningsapp för att dirigera e-postmeddelanden från din organisation till din lokala e-postmiljö. Du kan också använda en anslutningsapp för att dirigera meddelanden från Microsoft 365 till en partnerorganisation. När Microsoft 365 inte kan leverera dessa meddelanden via anslutningsappen står de i kö i Microsoft 365. Microsoft 365 fortsätter att försöka leverera för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet och meddelandet returneras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även NDR eller avvisningsmeddelande).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder du vanligtvis en anslutningsapp för att dirigera e-postmeddelanden från EOP till din lokala e-postmiljö. Du kan också använda en anslutningsapp för att dirigera meddelanden från Microsoft 365 till en partnerorganisation. När Microsoft 365 inte kan leverera dessa meddelanden via anslutningsappen står de i kö i Microsoft 365. Microsoft 365 fortsätter att försöka leverera för varje meddelande i 24 timmar. Efter 24 timmar upphör det köade meddelandet och meddelandet returneras till den ursprungliga avsändaren i en rapport om utebliven leverans (kallas även NDR eller avvisningsmeddelande).
 
 Microsoft 365 genererar ett fel när ett meddelande inte kan levereras med hjälp av en anslutningsapp. De vanligaste felen och deras lösningar beskrivs i det här avsnittet. Kollektivt kallas kö- och meddelandefel för meddelanden som inte kan levereras via kopplingar som _e-postflödesinformation_.
 
@@ -72,9 +72,9 @@ Det här felet innebär vanligtvis att Microsoft 365 påträffade ett anslutning
 
     2. Välj anslutningsappen med **värdet Från** **Office 365** och **Värdet Till** **Organisationens e-postserver** och gör något av följande:
 
-       - Ta bort kopplingen genom att klicka på Ikonen **Ta bort** ![ta bort](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Ta bort kopplingen genom att klicka på Ikonen **Ta bort** ta ![ bort](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Inaktivera kopplingen genom **Edit** ![att klicka](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) på Ikonen Redigera redigera och avmarkera **Aktivera den**.
+       - Inaktivera kopplingen genom **Edit** att klicka på ![ Ikonen Redigera redigera och avmarkera Aktivera ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **den**.
 
   - Ändra den accepterade domänen i Microsoft 365 som är associerad med din lokala e-postmiljö från **Intern relay** till **auktoritär .** Instruktioner finns [i Hantera accepterade domäner i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -86,7 +86,7 @@ Det här felet innebär vanligtvis att Microsoft 365 påträffade ett anslutning
 
 Det här felet innebär vanligtvis Att Microsoft 365 är anslutet till målmeddelandeservern, men servern svarade med ett omedelbart fel eller uppfyller inte anslutningskraven. Felinformationen förklarar problemet. Till exempel:
 
-- Målmeddelandeservern svarade med ett felmeddelande om tjänsten som inte är tillgänglig, vilket indikerar att servern inte kan upprätthålla kommunikationen med Office 365.
+- Målmeddelandeservern svarade med ett felmeddelande om tjänsten som inte är tillgänglig, vilket indikerar att servern inte kan upprätthålla kommunikationen med Microsoft 365.
 
 - Anslutningen är konfigurerad för att kräva TLS, men målmeddelandeservern stöder inte TLS.
 
@@ -102,15 +102,15 @@ Det här felet innebär vanligtvis att Microsoft 365 har svårt att kommunicera 
 
 - Brandväggen använder SMTP-paketgranskningsregler och dessa regler fungerar inte korrekt.
 
-- Din lokala e-postserver fungerar inte korrekt (till exempel låser sig tjänsten, kraschar eller har låga systemresurser), vilket gör att servern tar timeout och stänger anslutningen till Office 365.
+- Din lokala e-postserver fungerar inte korrekt (till exempel låser sig tjänsten, kraschar eller har låga systemresurser), vilket gör att servern tar timeout och stänger anslutningen till Microsoft 365.
 
-- Det finns nätverksproblem mellan den lokala miljön och Office 365.
+- Det finns nätverksproblem mellan den lokala miljön och Microsoft 365.
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>Hur åtgärdar jag felkod 450 4.4.318?
 
 - Ta reda på vilket scenario som gäller för dig och gör nödvändiga korrigeringar.
 
-- Om problemet beror på nätverksproblem mellan den lokala miljön och Office 365 kontaktar du nätverksteamet för att felsöka problemet.
+- Om problemet beror på nätverksproblem mellan den lokala miljön och Microsoft 365 kontaktar du nätverksteamet för att felsöka problemet.
 
 - Om felet kommer från din partnerorganisation (till exempel en molntjänstleverantör från tredje part) måste du kontakta din partner för att åtgärda problemet.
 
