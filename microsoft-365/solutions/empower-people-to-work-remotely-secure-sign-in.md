@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166143"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213478"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
 
@@ -55,9 +55,9 @@ Mer information finns i den här [översikten över standardinställningar för 
 
 Principer för villkorsstyrd åtkomst är en uppsättning regler som anger villkoren under vilka inloggningar utvärderas och tillåts. Du kan till exempel skapa en princip för villkorsstyrd åtkomst som anger:
 
-- Om namnet på användarkontot är för en användare som är en Exchange-, användar-, lösen ords-, säkerhets- eller SharePoint-administratör eller global administratör, så måste du tillåta MFA innan åtkomst tillåts.
+- Om namnet på användarkontot är medlem i en grupp för användare som är tilldelade rollerna Exchange, användare, lösenord, säkerhet, SharePoint eller global administratör krävs MFA innan åtkomst tillåts.
 
-Med den här principen blir det enklare än att försöka komma ihåg att konfigurera enskilda användarkonton för MFA när de läggs till i eller tas bort från dessa administratörsroller.
+Med den här principen kan du kräva MFA baserat på gruppmedlemskap, i stället för att försöka konfigurera enskilda användarkonton för MFA när de tilldelas eller tas bort från dessa administratörsroller.
 
 Du kan också använda principer för villkorsstyrd åtkomst för mer avancerade funktioner, t. ex. krav på att inloggningen görs från en kompatibel enhet, t. ex. en bärbar dator med Windows 10.
 
@@ -65,15 +65,15 @@ För villkorsstyrd åtkomst krävs Azure AD Premium P1, som ingår i Microsoft 3
 
 Mer information finns i den här [översikt över villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## <a name="azure-ad-identity-protection-policies"></a>Principer för Azure AD Identity Protection
+## <a name="azure-ad-identity-protection-support"></a>Stöd för Azure AD Identity Protection
 
-Principer för Azure AD Identity Protection är regler som anger villkoren under vilka inloggningar utvärderas och tillåts. Du kan till exempel skapa en princip för Azure AD Identity Protection som anger:
+Med Azure AD Identity Protection kan du skapa en ytterligare princip för villkorsstyrd åtkomst som anger följande:
 
-- Om risken för inloggningen fastställs som medel eller hög risk måste användaren använda MFA för att logga in.
+- Om risken för inloggningen fastställs som medel eller hög risk krävs MFA.
 
 För Azure AD Identity Protection krävs Azure AD Premium P2, som ingår i Microsoft 365 E5.
 
-Mer information finns i den här [översikt över Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## <a name="using-these-methods-together"></a>Använda dessa metoder tillsammans
 
@@ -84,12 +84,12 @@ Tänk på följande:
 
 Om standardinställningar för säkerhet är aktiverade, blir alla nya användare ombedda att registrera sig och använda Microsoft Authenticator-appen. 
 
-I den här tabellen visas resultatet av att aktivera MFA med standardinställningar för säkerhet, principer för villkorsstyrd åtkomst och användarspecifika kontoinställningar.
+I den här tabellen visas resultatet av att aktivera MFA med standardinställningar för säkerhet och principer för villkorsstyrd åtkomst.
 
-|| Aktiverat | Inaktiverad | Metod för sekundär autentisering |
+|| Aktiverad | Inaktiverad | Ytterligare autentiseringsmetod |
 |:-------|:-----|:-------|:-------|
 | **Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
-| **Principer för villkorsstyrd åtkomst** | Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla inte är aktiverade kan du inte aktivera standardinställningar för säkerhet  | Användardefinierad under MFA-registrering  |
+| **Principer för villkorsstyrd åtkomst** | Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet  | Användare anger under MFA-registrering  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>Administrationsutbildning och tekniska resurser för MFA och identitet

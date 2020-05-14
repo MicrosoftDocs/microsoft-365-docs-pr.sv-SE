@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Lär dig mer om hur Exchange Online och Exchange Online Protection (EOP) i Microsoft 365 använder e-postautentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, nätfiske och skräppost.
-ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratörer kan läsa mer om hur Exchange Online Protection (EOP) använder e-postautentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, nätfiske och skräppost.
+ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637562"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209505"
 ---
-# <a name="email-authentication-in-microsoft-365"></a>E-postautentisering i Microsoft 365
+# <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
-E-postautentisering (kallas även för e-postverifiering) är en grupp standarder som försöker sluta förfalskning (e-postmeddelanden från falska avsändare). I Microsoft 365-organisationer med Exchange Online-postlådor och fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor används standarderna för att verifiera inkommande e-post:
+E-postautentisering (kallas även för e-postverifiering) är en grupp standarder som försöker sluta förfalskning (e-postmeddelanden från falska avsändare). I Microsoft 365-organisationer med postlådor i Exchange Online och i fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor använder EOP följande standarder för att verifiera inkommande e-post:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

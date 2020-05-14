@@ -2,8 +2,8 @@
 title: Meddelandehuvuden för antiskräppost
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om de huvudfält som Exchange Online Protection lägger till i meddelanden för att få information om meddelandet och hur det behandlades.
+description: Administratörer kan läsa mer om de huvudfält som läggs till i meddelanden av Exchange Online Protection (EOP) för att ge information om meddelandet och hur det behandlades.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173410"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208228"
 ---
-# <a name="anti-spam-message-headers"></a>Meddelandehuvuden för antiskräppost
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>Meddelandehuvuden för antiskräppost i Microsoft 365
 
-När Exchange Online Protection (EOP) söker igenom ett inkommande e-postmeddelande infogas **X-Forefront-Antispam-Report**-rubriken i varje meddelande. Fälten i denna rubrik kan hjälpa administratörer med information om meddelandet och hur det bearbetades. I fälten i **X-Microsoft-antispam**-rubriken finns mer information om massutskick och nätfiske. Utöver dessa två rubriker infogar Exchange Online Protection även resultat av e-postautentisering för varje meddelande det bearbetar i rubriken **Authentication-results**.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor söker EOP igenom och infogar huvudet **X-Forefront-Antispam-Report** i varje inkommande e-postmeddelande. Fälten i denna rubrik kan hjälpa administratörer med information om meddelandet och hur det bearbetades. I fälten i **X-Microsoft-antispam**-rubriken finns mer information om massutskick och nätfiske. Utöver dessa två rubriker infogar Exchange Online Protection även resultat av e-postautentisering för varje meddelande det bearbetar i rubriken **Authentication-results**.
 
 För information om hur man visar ett e-postmeddelandes meddelanderubrik i olika e-postklienter, se [Visa e-postmeddelandehuvud i Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 

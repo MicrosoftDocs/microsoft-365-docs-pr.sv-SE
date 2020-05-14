@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: I de grundläggande inställningarna för skräppostfilter kan du till exempel välja vilken åtgärd du ska vidta för meddelanden som identifieras som skräppost.
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
+ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637718"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209565"
 ---
-# <a name="configure-anti-spam-policies"></a>Konfigurera principer för skräppostskydd
+# <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor skyddas automatiskt inkommande e-postmeddelanden mot skräppost av EOP. EOP använder principer för skräppostskydd (kallas även för principer för skräppostfilter eller principer för innehållsfilter) som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost](anti-spam-protection.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor skyddas automatiskt inkommande e-postmeddelanden mot skräppost av EOP. EOP använder principer för skräppostskydd (kallas även för principer för skräppostfilter eller principer för innehållsfilter) som en del av organisationens övergripande försvar mot skräppost. Mer information finns i [Skydd mot skräppost](anti-spam-protection.md).
 
 Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för skräppostskydd. För mer detaljerad kontroll kan du också skapa egna principer för skräppostskydd som gäller för vissa användare, grupper eller domäner i din organisation. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
-Du kan konfigurera principer för skräppostskydd i Säkerhets- och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-kunder; Exchange Online Protection PowerShell för fristående EOP-kunder).
+Du kan konfigurera principer för skräppostskydd i Säkerhets- och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Principer för skräppostskydd i Säkerhets- och efterlevnadscenter jämfört med Exchange Online PowerShell eller Exchange Online Protection PowerShell
 
@@ -120,9 +120,9 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
     |**Ingen åtgärd**|||||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).<br/>I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
+    > <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).<br/>I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
 
-   - **Välj tröskelvärde**: Anger klagomålsnivån på massutskick (BCL) för ett meddelande som utlöser angiven åtgärd för utfallet **Massutskick** av skräppostfiltreringen (större än det angivna värdet, inte större än eller lika med). Ett högre värde innebär att meddelandet är mindre önskvärt (mer troligt att det liknar skräppost). Standardvärdet är 7. Mer information finns i [Massklagomålsnivå (BCL) i Office 365](bulk-complaint-level-values.md) och [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Välj tröskelvärde**: Anger klagomålsnivån på massutskick (BCL) för ett meddelande som utlöser angiven åtgärd för utfallet **Massutskick** av skräppostfiltreringen (större än det angivna värdet, inte större än eller lika med). Ett högre värde innebär att meddelandet är mindre önskvärt (mer troligt att det liknar skräppost). Standardvärdet är 7. Mer information finns i [Massklagomålsnivå (BCL) i EOP](bulk-complaint-level-values.md) och [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Som standard är PowerShell-inställningen _MarkAsSpamBulkMail_ `On` (På) i principer för skräppostskydd. Den här inställningen påverkar dramatiskt resultatet av filtreringsutfallet **Massutskick**:
 
@@ -132,9 +132,9 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
    - **Karantän**: Anger hur lång tid meddelandet ska behållas i karantän om du har valt **Sätt meddelandet i karantän** som åtgärd för ett utfall av skräppostfiltreringen. När tidsperioden går ut tas meddelandet bort. Standardvärdet är 30 dagar. Giltiga värden är 1 till 30 dagar. Mer information om karantän finns i artiklarna om följande ämnen:
 
-     - [Karantän i Office 365](quarantine-email-messages.md)
-     - [Hantera meddelanden och filer i karantän som administratör i Office 365](manage-quarantined-messages-and-files.md)
-     - [Hitta och släppa meddelanden i karantän som användare i Office 365](find-and-release-quarantined-messages-as-a-user.md)
+     - [Meddelanden i karantän i EOP](quarantine-email-messages.md)
+     - [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md)
+     - [Hitta och släppa meddelanden i karantän som användare i EOP](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Lägg till följande X-sidhuvudtext**: Den här rutan krävs och är endast tillgänglig om du har valt **Lägg till X-rubrik** som åtgärd för ett utfall av skräppostfiltreringen. Värdet du anger är *namnet* på huvudfältet som läggs till i meddelandehuvudet. Huvudfältets *värde* är alltid `This message appears to be spam` (Det här meddelandet verkar vara skräppost).
 
@@ -148,7 +148,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
    - **Omdirigera till den här e-postadressen**: Den här rutan krävs och är endast tillgänglig om du har valt **Omdirigera meddelandet till e-postadressen** som åtgärd för ett utfall av skräppostfiltreringen. Ange den e-postadress dit du vill leverera meddelandet. Du kan ange flera värden avgränsade med semikolon (;).
 
-   - **Säkerhetstips**: Säkerhetstips är aktiverade som standard, men du kan inaktivera dem genom att avmarkera kryssrutan **På**. Mer information om säkerhetstips finns i [Säkerhetstips i e-postmeddelanden i Office 365](safety-tips-in-office-365.md).
+   - **Säkerhetstips**: Säkerhetstips är aktiverade som standard, men du kan inaktivera dem genom att avmarkera kryssrutan **På**. Mer information om säkerhetstips finns i [Säkerhetstips i e-postmeddelanden](safety-tips-in-office-365.md).
 
    Inställningar för **Automatisk rensning**: Automatisk rensning identifierar och vidtar åtgärder för meddelanden som redan har levererats till Exchange Online-postlådor. Mer information om automatisk rensning finns i [Automatisk rensning – skydd mot skräppost och skadlig kod](zero-hour-auto-purge.md).
 
@@ -159,7 +159,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 5. (Valfritt) Utöka avsnittet **Tillståndslistor** om du vill konfigurera meddelandeavsändare efter e-postadress eller e-postdomän som får hoppa över skräppostfiltrering:
 
    > [!CAUTION]
-   > <ul><li>Tänk efter noga innan du lägger till domäner här. Mer information finns i [Skapa listor över betrodda avsändare i Office 365](create-safe-sender-lists-in-office-365.md).</li><li>Lägg aldrig till godkända domäner (domäner som du äger) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Då skulle angripare kunna skicka e-post till din organisation som kringgår skräppostfiltreringen.</li></ul>
+   > • Tänk efter noga innan du lägger till domäner här. Mer information finns i [Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md). <br/><br/> • Lägg aldrig till godkända domäner (domäner som du äger) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Då skulle angripare kunna skicka e-post till din organisation som kringgår skräppostfiltreringen.
 
    - **Tillåt avsändare**: Klicka på **Redigera**. I den utfällbara rutan **Lista över tillåtna avsändare** som visas gör du följande:
 
@@ -188,7 +188,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 6. (Valfritt) Utöka avsnittet **Blockeringslistor** om du vill konfigurera meddelandeavsändare efter e-postadress eller e-postdomän som alltid ska markeras som skräppost med hög konfidens:
 
    > [!NOTE]
-   > Manuell blockering av domäner är inte farligt, men det kan öka mängden administrativt arbete. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i Office 365](create-block-sender-lists-in-office-365.md).
+   > Manuell blockering av domäner är inte farligt, men det kan öka mängden administrativt arbete. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
 
    - **Blockera avsändare**: Klicka på **Redigera**. I den utfällbara rutan **Lista över blockerade avsändare** som visas gör du följande steg:
 
@@ -238,7 +238,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
 8. Det valfria avsnittet **Egenskaper för skräppost** innehåller inställningar för avancerat skräppostfilter (ASF) som är inaktiverade som standard. ASF-inställningar håller på att fasas ut och deras funktioner läggs till i andra delar av filtreringsstacken. Vi rekommenderar att du låter alla dessa ASF-inställningar vara inaktiverade i dina principer för skräppostskydd.
 
-   Mer information om inställningarna finns i artikeln om [inställningar för avancerat skräppostfilter (ASF) i Office 365](advanced-spam-filtering-asf-options.md).
+   Mer information om inställningarna finns i artikeln om [inställningar för avancerat skräppostfilter (ASF) i EOP](advanced-spam-filtering-asf-options.md).
 
 9. (Obligatoriskt) Utöka avsnittet **Tillämpas på** och ange vilka interna mottagare som principen gäller för.
 
@@ -246,7 +246,7 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 
     Det är enklast att klicka på **Lägg till ett villkor** tre gånger för att visa alla tillgängliga villkor. Om du vill ta bort villkor som du inte vill konfigurera kan du klicka på ![knappen Ta bort](../../media/scc-remove-icon.png).
 
-    - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i Office 365. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
+    - **Mottagande domän är**: Anger mottagare i en eller flera av de godkända domänerna som har konfigurerats i din organisation. Klicka i rutan **Lägg till en tagg** om du vill visa och välja en domän. Klicka igen i rutan **Lägg till en tagg** och välj fler domäner om fler än en domän är tillgänglig.
 
     - **Mottagaren är**: Anger en eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen. Klicka i rutan **Lägg till en tagg** och börja skriva för att filtrera listan. Klicka igen i rutan **Lägg till en tagg** om du vill välja fler mottagare.
 
@@ -324,7 +324,7 @@ Du ändrar prioriteten för en princip genom att flytta principen uppåt eller n
 
 ### <a name="configure-end-user-spam-notifications"></a>Konfigurera skräppostaviseringar för slutanvändare
 
-När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan du konfigurera skräppostaviseringar för slutanvändare så att mottagare får veta vad som har hänt med meddelanden som skickats till dem. Mer information om aviseringarna finns i artikeln om [skräppostaviseringar för slutanvändare i Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan du konfigurera skräppostaviseringar för slutanvändare så att mottagare får veta vad som har hänt med meddelanden som skickats till dem. Mer information om aviseringarna finns i artikeln om [skräppostaviseringar för slutanvändare i EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Princip** \> **Skräppostskydd**.
 
