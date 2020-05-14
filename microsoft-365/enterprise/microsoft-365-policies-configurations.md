@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214668"
+ms.locfileid: "44222333"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -120,7 +120,7 @@ Den här vägledningen visar hur du skapar rekommenderade principer för att gen
 
 Den här vägledningen visar hur du implementerar en uppsättning principer för att skydda åtkomsten till Office 365, inklusive Exchange Online, SharePoint Online och OneDrive för företag. Förutom att implementera dessa principer rekommenderar vi att du även höjer skyddsnivån för din klient med hjälp av dessa resurser:
 
-- [Konfigurera din klient för ökad säkerhet](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): Dessa rekommendationer gäller för originalsäkerhet för din klient.
+- [Konfigurera din klient för ökad säkerhet](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security): Dessa rekommendationer gäller för originalsäkerhet för din klient.
 - [Microsoft 365-säkerhetsfärdplan: De viktigaste prioriteringarna för de första 30 dagarna, 90 dagarna och därefter](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Dessa rekommendationer omfattar loggning, datastyrning, administratörsåtkomst och hotskydd.
 
 

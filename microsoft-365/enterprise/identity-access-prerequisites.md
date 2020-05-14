@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625212"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222595"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Förutsättningsarbete för att implementera principer för identitets- och enhetsåtkomst
 
@@ -42,7 +42,7 @@ Innan du implementerar de rekommenderade principerna för identitet och enhetså
 | **Förbered ditt supportteam.** Ha en plan för användare som inte kan slutföra MFA. Detta kan vara att lägga till dem i en grupp för undantag av principen eller registrera ny MFA-information för dem. Innan du gör någon av dessa säkerhetskänsliga ändringar måste du se till att den faktiska användaren gör begäran. Att kräva att användarnas chefer hjälper till med godkännandet är ett effektivt steg. | Ja | Ja | Ja | Ja |  
 | [Konfigurera tillbakaskrivning av lösenord till lokal AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Återställning av lösenord gör att Azure AD kan kräva att användare ändrar sina lokala lösenord när en högriskkontokompromiss identifieras. Du kan aktivera den här funktionen med Azure AD Connect på ett av två sätt: aktivera antingen återställning av **lösenord** i skärmen Valfria funktioner i installationsguiden för Azure AD Connect eller aktivera den via Windows PowerShell. |   | Ja | Ja | Ja |
 | [Aktivera Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/enable). Med Azure AD Identity Protection kan du identifiera potentiella sårbarheter som påverkar organisationens identiteter och konfigurera en automatisk reparationsprincip till låg, medelstor och hög inloggningsrisk och användarrisk.  | Ja | Ja | Ja | Ja |
-| **Aktivera modern autentisering** för [Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) och för [Skype för företag – Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern autentisering är en förutsättning för att använda MFA (Multifaktorautentisering). Modern autentisering är aktiverad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. | Ja | Ja | Ja | Ja |
+| **Aktivera modern autentisering** för [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) och för [Skype för företag – Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern autentisering är en förutsättning för att använda MFA (Multifaktorautentisering). Modern autentisering är aktiverad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. | Ja | Ja | Ja | Ja |
 ||||||
 
 
@@ -69,7 +69,7 @@ Följande e-postklienter stöder modern autentisering och villkorlig åtkomst.
 
 |Plattform|Klient|Version/Anteckningar|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016, 2013 [Aktivera modern autentisering](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [Nödvändiga uppdateringar](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016, 2013 [Aktivera modern autentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication), [Nödvändiga uppdateringar](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**Ios**|Outlook för iOS|[Senaste](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook för Android|[Senaste](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**Macos**|Outlook|2016|
@@ -91,7 +91,7 @@ Följande klienter rekommenderas när en princip för säkra dokument har tillä
 |Macos|Offentlig förhandsversion|Offentlig förhandsversion|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds inte|
 |Linux|Stöds inte|Stöds inte|Stöds inte|Stöds inte|Stöds inte|
 
-<sup>*</sup>Läs mer om hur du använder villkorlig åtkomst med [OneDrive-synkroniseringsklienten](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
+<sup>*</sup>Läs mer om hur du använder villkorlig åtkomst med [OneDrive-synkroniseringsklienten](https://docs.microsoft.com/onedrive/enable-conditional-access).
 
 ### <a name="microsoft-365-client-support"></a>Klientsupport för Microsoft 365
 Mer information om klientsupport finns i följande artiklar:
@@ -114,7 +114,7 @@ Mer information finns i [grundläggande säkerhetsprinciper för Azure AD-admini
 Ytterligare rekommendationer inkluderar följande:
 - Använd Azure AD Privileged Identity Management för att minska antalet beständiga administrativa konton. Se [Börja använda PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Använd hantering av privilegierad åtkomst i Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) för att skydda din organisation från överträdelser som kan använda befintliga privilegierade administratörskonton med stående åtkomst till känsliga data eller åtkomst till viktiga konfigurationsinställningar. 
-- Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för regelbunden icke-administrativ användning och endast använda sitt administrativa konto när det behövs för att slutföra en uppgift som är kopplad till deras jobbfunktion. [Microsoft 365-administratörsroller](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) har betydligt fler privilegier än Microsoft 365-tjänster.
+- Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för regelbunden icke-administrativ användning och endast använda sitt administrativa konto när det behövs för att slutföra en uppgift som är kopplad till deras jobbfunktion. [Microsoft 365-administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) har betydligt fler privilegier än Microsoft 365-tjänster.
 - Följ metodtipsen för att skydda privilegierade konton i Azure AD enligt beskrivningen i den här [artikeln](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
 ## <a name="next-steps"></a>Nästa steg

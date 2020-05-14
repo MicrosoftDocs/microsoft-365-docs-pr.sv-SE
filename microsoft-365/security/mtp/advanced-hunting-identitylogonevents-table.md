@@ -18,10 +18,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.openlocfilehash: 754c9476e81dd84e2140e18b8684061f52c287ba
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42929332"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
@@ -29,7 +29,7 @@ ms.locfileid: "42929332"
 **Gäller:**
 - Microsoft Hotskydd
 
-Tabellen `IdentityLogonEvents` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om autentiseringsaktiviteter som registrerats av Azure Active Directory och andra Microsoft-molnappar och -tjänster. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`IdentityLogonEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om autentiseringsaktiviteter som registrerats av Azure Active Directory och andra Microsoft-molnappar och -tjänster. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -59,4 +59,4 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

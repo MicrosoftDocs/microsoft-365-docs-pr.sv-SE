@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du känner igen och åtgärdar Outlook-regler och anpassade formulärinjektioner i Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034822"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224595"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Identifiera och åtgärda Outlook-regler och anpassade formulär injections attacker
 
@@ -137,7 +137,7 @@ Du måste ha en global administratörsberättigad för att köra skriptet efters
 
 3. Öppna en PowerShell-instans som administratör och öppna mappen som du sparade skriptet till.
 
-4. Kör den här PowerShell-kommandoraden enligt följande `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
+4. Kör den här PowerShell-kommandoraden enligt följande `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Tolka utdata
 
@@ -159,7 +159,7 @@ Om du hittar några bevis för något av dessa attacker är reparation enkel, ta
 
 1. Identifiera alla enheter som användaren har använt med Outlook. De kommer alla att behöva rengöras från potentiella skadliga program. Låt inte användaren logga in och använda e-post förrän alla enheter har rengjorts.
 
-2. Följ stegen i [Ta bort en regel](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) för varje enhet.
+2. Följ stegen i [Ta bort en regel](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) för varje enhet.
 
 3. Om du är osäker på om det finns annan skadlig kod kan du formatera och installera om all programvara på enheten. För mobila enheter kan du följa tillverkarens steg för att återställa enheten till fabriksavbildningen.
 

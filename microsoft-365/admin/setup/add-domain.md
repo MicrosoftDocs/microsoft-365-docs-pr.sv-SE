@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägg till din domän i Office 365 i Microsoft 365-administrationscentret genom att lägga till en DNS-post hos din DNS-värd. Installationsguiden går igenom processen.
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140781"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222345"
 ---
-# <a name="add-a-domain-to-office-365"></a>Lägga till en domän i Office 365
+# <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140781"
 
 ::: moniker-end
     
-2. Gå till sidan > **Installationsdomäner.** **Setup** 
+2. Gå till sidan **Setup**  >  **Installationsdomäner.** 
 
 3. Välj **Lägg till domän**.
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140781"
     
 5. Välj hur du vill verifiera att du äger domänen.
     
-    1. Om din domän är registrerad på&amp;GoDaddy eller 1 1 väljer du **Logga in** > **nästa** så[konfigurerar](../get-help-with-domains/domain-connect.md)Microsoft dina poster automatiskt .
+    1. Om din domän är registrerad på GoDaddy eller 1 &amp; 1 väljer du **Logga in**  >  **nästa** så [konfigurerar](../get-help-with-domains/domain-connect.md)Microsoft dina poster automatiskt .
     
     2. Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod. Om du inte känner igen eller har tillgång till e-postmeddelandet kan du använda det tredje alternativet.
     
@@ -113,9 +113,9 @@ ms.locfileid: "44140781"
 
 Följ stegen nedan för att lägga till en anpassad post för en webbplats eller tjänst från tredje part.
 
-1. Logga in på Microsofts <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>administrationscenter på .
+1. Logga in på Microsofts administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Gå till sidan **Inställningar**  > **domäner.**
+2. Gå till sidan **Inställningar**   >  **domäner.**
 
 3. Välj en domän på sidan **Domäner**. 
     
@@ -136,7 +136,7 @@ I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigur
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domain Connect-registratorer som integreras med Microsoft 365
 
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg (På andra)](https://www.123-reg.co.uk/)
 - [Godaddy](https://www.godaddy.com/)
 - [Wordpress](https://wordpress.com/)

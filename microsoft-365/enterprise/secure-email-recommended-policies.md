@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e469f0d1c0be85aeb5f98a4f2e6e2758cddd8450
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631411"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222703"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policyrekommendationer för att skydda e-post
 
@@ -61,7 +61,7 @@ Den här principen förhindrar att ActiveSync-klienter kringgår andra regler f�
 
 Med de nya ome-funktionerna (Message Encryption) för Office 365-meddelanden, som utnyttjar skyddsfunktionerna i Azure Information Protection, kan din organisation enkelt dela skyddad e-post med vem som helst på vilken enhet som helst. Användare kan skicka och ta emot skyddade meddelanden med andra Microsoft 365-organisationer samt icke-kunder som använder Outlook.com, Gmail och andra e-posttjänster.
 
-Mer information finns i [Konfigurera nya meddelandekrypteringsfunktioner för Office 365](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
+Mer information finns i [Konfigurera nya meddelandekrypteringsfunktioner för Office 365](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
 
 ## <a name="next-steps"></a>Nästa steg
 

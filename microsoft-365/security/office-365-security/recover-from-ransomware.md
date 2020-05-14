@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365-administratörer kan lära sig att återställa från en ransomware-attack.
-ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208264"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224715"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återhämta sig från en ransomware attack i Microsoft 365
 
@@ -132,7 +132,7 @@ Du kan rapportera nätfiskemeddelanden som innehåller utpressningsartiklar med 
 
 - [Norsk Hydro svarar på ransomware attack med öppenhet](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Ransomware identifiering och återställa dina filer i OneDrive](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Ransomware identifiering och återställa dina filer i OneDrive](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Microsofts säkerhetsinformationsrapport](https://www.microsoft.com/securityinsights/)
 

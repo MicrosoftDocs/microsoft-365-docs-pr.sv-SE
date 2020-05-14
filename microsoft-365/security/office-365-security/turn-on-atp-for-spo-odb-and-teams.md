@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Lär dig hur du aktiverar ATP för SharePoint, OneDrive och Teams, inklusive hur du ställer in aviseringar för identifierade filer.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7708697f191107176173f2bfaced576c024954c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b4dfe56b635714cedf033f2d4f14cd6bc0286650
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036734"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224617"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivera ATP för SharePoint, OneDrive och Microsoft Teams
 
@@ -38,18 +38,18 @@ Om du vill definiera (eller redigera) ATP-principer måste du tilldelas en lämp
 |Roll|Var/hur tilldelas|
 |---------|---------|
 |global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Säkerhetsadministratör|Administrationscenter för[https://aad.portal.azure.com](https://aad.portal.azure.com)Azure Active Directory ( )|
-|Hantering av Exchange Online-organisation|Administrationscenter[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)för Exchange ( ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Säkerhetsadministratör|Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivera ATP för SharePoint, OneDrive och Microsoft Teams
 
 **Innan du påbörjar den här proceduren kontrollerar du att granskningsloggning redan är aktiverat för din Microsoft 365-miljö**. Detta görs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online. Mer information finns i [Aktivera eller inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Gå [https://protection.office.com](https://protection.office.com)till och logga in med ditt arbets- eller skolkonto.
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto.
 
-2. Välj Princip &säkra bilagor i det vänstra navigeringsfönstret i **Policy** \> det vänstra **navigeringsfönstret**i säkerhetsfönstret. **Threat management**
+2. I säkerhets- & Compliance Center, i det vänstra navigeringsfönstret, under **Hothantering,** väljer du **Policy** \> **Principsäkra bilagor**.
 
-   ![I Security & Compliance Center väljer du \> Policy för hantering av hot](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![I Security & Compliance Center väljer du Policy för hantering \> av hot](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. Välj **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
 
@@ -71,7 +71,7 @@ Om du vill definiera (eller redigera) ATP-principer måste du tilldelas en lämp
 
 Mer information om hur du använder PowerShell med Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
 
-Mer information om användarupplevelsen när en fil har identifierats som skadlig finns [i Vad du ska göra när en skadlig fil hittas i SharePoint Online, OneDrive eller Microsoft Teams](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
+Mer information om användarupplevelsen när en fil har identifierats som skadlig finns [i Vad du ska göra när en skadlig fil hittas i SharePoint Online, OneDrive eller Microsoft Teams](https://support.microsoft.com/en-us/office/what-to-do-when-a-malicious-file-is-found-in-sharepoint-online-onedrive-or-microsoft-teams-01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 
 ## <a name="set-up-alerts-for-detected-files"></a>Konfigurera aviseringar för identifierade filer
 

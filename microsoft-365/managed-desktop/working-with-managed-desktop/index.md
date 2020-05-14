@@ -1,5 +1,5 @@
 ---
-title: Arbeta med Microsoft Managed Desktop
+title: Arbeta med Microsoft Hanterat skrivbord
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -7,13 +7,13 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42812576"
 ---
-# <a name="working-with-microsoft-managed-desktop"></a>Arbeta med Microsoft Managed Desktop
+# <a name="working-with-microsoft-managed-desktop"></a>Arbeta med Microsoft Hanterat skrivbord
 
 Det här avsnittet innehåller information om ditt dagliga liv med tjänsten, till exempel hur IT-administratörer kan få support om det behövs, hur dina slutanvändare får support, hanterar dina appar en gång distribuerade och hur du arbetar med anpassningsbara inställningar på enheter.
 
