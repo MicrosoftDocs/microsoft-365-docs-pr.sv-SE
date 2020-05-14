@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du förbereder slutanvändarna för Windows 10 och Microsoft 365-applikationer för företag med kommunikation och utbildning för användare.
-ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636753"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222667"
 ---
 # <a name="step-8-user-communications-and-training"></a>Steg 8: Kommunikation och utbildning för användare
 
@@ -61,7 +61,7 @@ Det finns också synliga kontroller för säkerhet och efterlevnad som dina anv�
 
 Om du till exempel har aktiverat multifaktorautentisering så används Azure AD, och skyddar användarnas inloggning på resurser med hjälp av en telefonapp eller PIN-kod för säker åtkomst till tjänster. Azure Information Protection gör det enkelt för användarna att klassificera och märka dokument.
 
-[Konfigurera multifaktorautentisering för användare](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Konfigurera multifaktorautentisering för användare](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 Det här är bara en fåtal nya funktioner som dina användare kommer att uppleva, och vissa kommer kanske att överraska dem – på ett positivt eller mindre positivt sätt. De här överraskningarna – i synnerhet om de påverkar det normala arbetsflödet – kan resultera i fler samtal och ärenden för dig eller din helpdesk.
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du förbereder för underhåll av Windows och Office i din miljö.
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011621"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222679"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Steg 7: Underhåll av Windows och Office
 
@@ -95,7 +95,7 @@ Windows 10 har tre underhållskanaler:
 
 Microsoft 365 har fyra underhållskanaler:
 
-- [**Office Insider Program**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) för organisationer som vill testa och ge feedback om de nyaste funktionerna i Office som fortfarande är under utveckling
+- [**Office Insider Program**](https://products.office.com/office-insider) för organisationer som vill testa och ge feedback om de nyaste funktionerna i Office som fortfarande är under utveckling
 - **Månatliga kanaler** för att ge användarna de senaste Office-funktionerna så snart de blir tillgängliga
 - **Halvårskanalen** tillhandahåller ny funktionalitet med nya funktioner två gånger per år
 - **Halvårskanalen (riktad)** är en version av Office med fullständigt stöd som gör det möjligt för pilotanvändare och programkompatibilitstestare att testa och verifiera nästa halvårskanal
