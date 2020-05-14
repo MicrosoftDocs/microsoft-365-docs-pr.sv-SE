@@ -19,17 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
-description: I den här artikeln får du lära dig mer om skydd mot förfalskning i Microsoft 365 som minimerar mot nätfiske-attacker från falska domäner.
-ms.openlocfilehash: a5236161e1df6df1d007135c9ae700e87a06ccf0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
+ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034076"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209037"
 ---
-# <a name="anti-spoofing-protection"></a>Skydd mot förfalskning
+# <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection-kund (EOP) utan Exchange Online-postlådor, ingår det funktioner i EOP som hjälper dig att skydda din organisation mot falska (förfalskade) avsändare.
+För Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor, ingår det funktioner i EOP som hjälper till att skydda organisationen mot falska (förfalskade) avsändare.
 
 När det gäller att skydda sina användare tar Microsoft hot om nätfiske på allvar. Förfalskning är en vanlig teknik som används av angripare. **Falska meddelanden ser ut att komma från en person eller plats som inte är den verkliga källan**. Metoden används ofta i nätfiskekampanjer som är utformade för att få tag på användaruppgifter. Metoden för förfalskningsskydd i EOP undersöker särskilt förfalskningar av Från-rubriken i meddelandetexten (används för att visa meddelandets avsändare i e-postklienter). När EOP är övertygat om att huvudraden Från är förfalskad identifieras meddelandet som förfalskat.
 
@@ -37,11 +37,11 @@ Här följer de förfalskningsskyddsmetoder som finns tillgängliga i EOP:
 
 - **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Principer för skydd mot nätfiske**: med den inbyggda principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Office 365 Avancerat skydd (ATP) innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
+- **Principer för skydd mot nätfiske**: Med principen för skydd mot nätfiske i EOP kan du aktivera eller inaktivera förfalskningsinformation, aktivera eller inaktivera icke autentiserad avsändarinformation i Outlook samt ange åtgärder för blockerade falska avsändare (placera i skräppostmappen eller i karantän). Avancerade principer för skydd mot nätfiske som är tillgängliga i Office 365 Avancerat skydd (Office 365 ATP) innehåller även inställningar för skydd mot obehörig personifiering (skyddade avsändare och domäner), inställningar för postlådeinformation och avancerade justerbara nätfisketrösklar. Mer information finns i [Principer för skydd mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **E-postautentisering**: en integrerad del av allt förfalskningsskydd är användningen av e-postautentisering (även kallat e-postverifiering) genom SPF-, DKIM- och DMARC-poster i DNS. Du kan konfigurera dessa poster för dina domäner så att mål-e-postsystemen kan kontrollera giltigheten i meddelanden som gör anspråk på att komma från avsändare i dina domäner. För inkommande meddelanden kräver Microsoft 365 autentisering av e-post för avsändardomäner. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
 
-Microsofts förfalskningsskydd distribuerades ursprungligen bara för organisationer med Office 365 Avancerat skydd (ATP). I oktober 2018 lades skydd mot förfalskning till i EOP.
+Från och med oktober 2018 är skydd mot förfalskning tillgängligt i EOP. Dessförinnan fanns skydd mot förfalskning endast tillgängligt i organisationer med Office 365 ATP.
 
 EOP analyserar och blockerar meddelanden som inte kan autentiseras med kombinationen av standardmetoder för e-postautentisering och metoder för avsändaromdöme.
 

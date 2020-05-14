@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Office 365 Advanced Threat Protection och skydda känsliga data mot nätfiske, skadlig kod och andra hot.
-ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627135"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224480"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
@@ -34,15 +34,15 @@ Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeratio
 
 Innan du börjar kontrollerar du ditt säkra Office 365-resultat. Office 365 Secure Score analyserar organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Om du vill öka poängen slutför du de åtgärder som rekommenderas i den här artikeln. Målet är inte att uppnå maximal poäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. 
 
-Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höj skyddsnivån mot skadlig kod i post
 
 Din Office 365- eller Microsoft 365-miljö omfattar skydd mot skadlig kod. Du kan öka det här skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig kod. Så här ökar du skyddet av skadlig kod i e-post:
   
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med dina administratörskontouppgifter. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med dina administratörskontouppgifter. 
     
-2. &amp; Välj **Policy** \> **Anti-Malware**i det vänstra **Threat management**navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Policy** **Threat management** \> **Anti-Malware**i det vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
     
 3. Dubbelklicka på standardprincipen om du vill redigera den här företagsövergripande principen.
     
@@ -67,11 +67,11 @@ Förutom de filer som du blockerade i föregående steg är det en bra idé att 
 
 Så här skapar du en regel för e-posttransport:
   
-1. Gå till administrationscentret <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>på och välj **Administrationscenter** \> **Exchange**.
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och välj **Administrationscenter** \> **Exchange**.
     
 2. Välj **regler**i kategorin **e-postflöde** .
     
-3. Markera **+** och välj sedan **Skapa en ny regel**.
+3. Markera **+** och välj sedan Skapa en ny **regel**.
     
 4. Välj **Fler alternativ** längst ned i dialogrutan om du vill se hela uppsättningen alternativ. 
     
@@ -99,11 +99,11 @@ Hackare som får tillgång till en användares postlåda kan stjäla e-post geno
   
 Så här skapar du en regel för e-posttransport genom att antingen titta på [den här korta videon](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller så här:
   
-1. Välj **Administrationscenter** \> för **Administrationscenter**i Microsoft 365.
+1. Välj **Administrationscenter för Administrationscenter** i Microsoft 365. \> **Exchange**
     
 2. Välj **regler**i kategorin **e-postflöde** .
     
-3. Markera **+** och välj sedan **Skapa en ny regel**.
+3. Markera **+** och välj sedan Skapa en ny **regel**.
     
 4. Om du vill visa alla alternativ väljer du **Fler alternativ** längst ned i dialogrutan. 
     
@@ -130,7 +130,7 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
   
 1. Gå till [https://protection.office.com](https://protection.office.com). 
     
-2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
     
 3. På **sidan Policy** väljer du **ATP-anti-nätfiske**.
     
@@ -147,10 +147,10 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
 |Beskrivning  <br/> |Se till att den viktigaste personalen och vår domän inte personifieras.  <br/> |
 |Lägga till användare som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagaren är**. Skriv användarnamn eller ange kandidatens, kampanjchefens och andra viktiga medarbetares e-postadress. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> |
 |Lägga till domäner som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagarens domän är**. Ange den anpassade domän som är kopplad till din Microsoft 365-prenumeration, om du har definierat en sådan. Du kan ange mer än en domän.  <br/> |
-|Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: Välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. Till exempel *<span><span>Alice @contoso.com*. Om e-post skickas av en personifierad domän: Välj **karantänmeddelande**.  <br/> |
+|Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: Välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. till exempel *Alice <span> <span> @contoso.com*. Om e-post skickas av en personifierad domän: Välj **karantänmeddelande**.  <br/> |
 |Information om brevlåda  <br/> |Som standard väljs postlådeinformation när du skapar en ny anti-phishing-princip. Lämna den här inställningen **På** för bästa resultat.  <br/> |
 |Lägga till betrodda avsändare och domäner  <br/> |Här kan du lägga till din egen domän eller andra betrodda domäner.  <br/> |
-|Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso.<span> com <span>*, i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
+|Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso. <span> <span> com*, i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Skydda mot skadliga bilagor och filer med ATP-säkra bilagor
 
@@ -158,9 +158,9 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
   
 Om du vill skapa en ATP-princip för säker bilaga tittar du antingen på [den här korta videon](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller gör följande:
   
-1. Gå [https://protection.office.com](https://protection.office.com)till och logga in med ditt administratörskonto. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
     
 3. På sidan Princip väljer du **BETRODDa ATP-bilagor**.
     
@@ -195,9 +195,9 @@ Vi rekommenderar att du gör följande:
     
 Om du vill konfigurera ATP Safe Links tittar du på [den här korta träningsvideon](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)eller utför följande steg:
   
-1. Gå [https://protection.office.com](https://protection.office.com)till och logga in med ditt administratörskonto. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
     
 3. På sidan Princip väljer du **BETRODDA ATP-länkar**.
     
@@ -211,7 +211,7 @@ Så här ändrar du standardprincipen:
     
 Så här skapar du en ny princip som riktar sig till alla mottagare på domänen:
   
-1. På sidan Säkra länkar under **Principer som gäller för hela organisationen**väljer du **+** att skapa en ny princip. 
+1. På sidan Säkra länkar under **Principer som gäller för hela organisationen**väljer du att skapa en ny **+** princip. 
     
 2. Använd inställningarna i följande tabell.
     
