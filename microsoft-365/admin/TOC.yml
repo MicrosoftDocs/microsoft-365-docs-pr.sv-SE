@@ -69,6 +69,8 @@
               href: add-users/add-users.md
             - name: Lägga till en nyanställd
               href: add-users/add-new-employee.md
+            - name: Tilldela licenser till användare
+              href: manage/assign-licenses-to-users.md
             - name: Tilldela administratörsroller
               href: add-users/assign-admin-roles.md
             - name: Ta bort licenser från användare
@@ -234,6 +236,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Konfigurera multifaktorautentisering (med Office 2013)
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Säkerhetspoäng
+          href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: En guide till GDPR-efterlevnad
           href: security-and-compliance/gdpr-compliance.md
     - name: Arbeta med kunder
