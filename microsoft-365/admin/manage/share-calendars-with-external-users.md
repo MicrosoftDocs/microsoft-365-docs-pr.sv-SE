@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Lär dig hur du låter användarna dela sina kalendrar med externa användare för möten och avtalade tider. '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628046"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249878"
 ---
 # <a name="share-calendars-with-external-users"></a>Dela kalendrar med externa användare
 
@@ -39,10 +39,9 @@ Kalenderdelning är en global inställning, vilket innebär att du, administrat�
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Aktivera kalenderdelning med administrationscentret för Microsoft 365
 
-1. Gå till sidan **Inställningarstjänster** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">& tillägg i administrationscentret.</a> 
+1. Gå till **Inställningar i administrationscentret** \> **Settings**. 
     
-  
-2. På sidan **Tillägg till Tjänster &amp; ** väljer du **Kalender**.
+2. Välj **Kalender**på fliken **Tjänster** .
   
 3. På sidan **Kalender** som öppnas väljer du om du vill att användarna ska kunna dela sina kalendrar med personer utanför organisationen som har Microsoft 365 eller Exchange.
     
@@ -55,4 +54,3 @@ Kalenderdelning är en global inställning, vilket innebär att du, administrat�
 
 När delning är aktiverad för klienten kan kalenderinnehavare utöka inbjudningar till specifika användare. Se [Dela kalendern i Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx) för anvisningar. 
   
-

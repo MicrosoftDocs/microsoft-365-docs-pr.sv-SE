@@ -21,23 +21,23 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Lär dig hur du konfigurerar utgivningsalternativet för nya produkt- och featuresuppdateringar i administrationscentret för Microsoft 365.
-ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139655"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249890"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Ställ in alternativen standard eller riktad utgåva
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Med Microsoft 365 får du nya produktuppdateringar och funktioner när de blir tillgängliga i stället för att göra kostsamma uppdateringar med några års mellanrum. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln beskrivs vilka olika alternativ som finns för att ta emot nya versioner och hur du kan använda dem för organisationen.
+Med Microsoft 365 får du nya produktuppdateringar och funktioner när de blir tillgängliga i stället för att göra kostsamma uppdateringar med några års mellanrum. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln beskrivs de olika frisläppningsalternativen och hur du kan använda dem för din organisation.
   
 > [!IMPORTANT]
 > De Microsoft 365-uppdateringar som beskrivs i den här artikeln gäller Microsoft 365, SharePoint Online och Exchange Online. De gäller inte för Skype för företag och relaterade tjänster. Dessa utgivningsalternativ är riktade, bästa möjliga sätt att släppa ändringar till Microsoft 365 men kan inte garanteras hela tiden eller för alla uppdateringar. 
@@ -48,7 +48,7 @@ Alla nya versionen testas och valideras först av funktionsteamet, sedan av hela
   
 ![Släpp valideringsringar för Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-För viktiga uppdateringar meddelas Office-kunder inledningsvis av [Microsoft 365-översikten](https://products.office.com/business/office-365-roadmap). När en uppdatering närmar sig utrullningen kommuniceras den via [ditt Microsoft 365 Message Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+För viktiga uppdateringar meddelas kunderna inledningsvis av [Microsoft 365-översikten](https://products.office.com/business/office-365-roadmap). När en uppdatering närmar sig utrullningen kommuniceras den via [ditt Microsoft 365 Message Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
 > Du behöver ett Microsoft 365- eller Azure AD-konto för att komma åt ditt meddelandecenter via [administrationscentret](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center). Microsoft 365-hemabonnemangsanvändare har inget administrationscenter.
@@ -99,7 +99,7 @@ Du kan ändra hur din organisation tar emot Microsoft 365-uppdateringar genom at
 > [!IMPORTANT]
 > Det kan ta upp till 24 timmar innan ändringarna nedan börjar gälla i Microsoft 365. Om organisationen tidigare har använt riktad version och du vill inaktivera detta kan det hända att vissa användare förlorar tillgång till funktioner som inte ingår i standardversionen än. 
   
-1. Gå till **inställningsinställningen** > **Setting**i administrationscentret och välj **Utgivningsinställningar**under fliken **Organisationsprofil** .
+1. Gå till **inställningsinställningen**i  >  **Setting**administrationscentret och välj **Utgivningsinställningar**under fliken **Organisationsprofil** .
 
 5. Om du vill inaktivera riktad frisättning väljer du **Standardversion**och väljer sedan **Spara ändringar**. 
     
@@ -112,10 +112,6 @@ Du kan ändra hur din organisation tar emot Microsoft 365-uppdateringar genom at
 9. När du är klar med att lägga till användare väljer du **Spara ändringar**.
 
 
-
-## <a name="get-the-targeted-release-version-of-office"></a>Hämta den riktade versionen av Office
-
-Du kan installera en riktad version av Office med hjälp av de här [anvisningarna](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead). Detta ger dig snabb åtkomst till de nya funktionerna i Office 2016 för Windows-datorer.
   
 ## <a name="learn-more"></a>Mer information
 
