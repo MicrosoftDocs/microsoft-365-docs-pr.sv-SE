@@ -24,19 +24,19 @@ description: Läs om vilka betalningsalternativ som är tillgängliga för att b
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140877"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232881"
 ---
 # <a name="pay-for-your-subscription"></a>Betala för prenumerationen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Hitta prenumerationen med det utestående saldot. Välj **Billing** **Kvitta saldo bredvid**prenumeration bredvid **prenumeration.**
 
@@ -107,7 +107,7 @@ Om du betalar med faktura för din prenumeration får du ett e-postmeddelande d�
 Om du har valt att betala med faktura accepterar vi tyvärr inte att du betalar online. Men du kan [ändra betalningsmetod till kreditkort eller bankkonto](change-payment-method.md) i stället. Då debiteras ditt kort eller konto automatiskt efter varje faktureringsperiod. Information för Azure finns i [Så här ändrar du kontokortet som används för att betala för en Azure-prenumeration](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> Om du ändrar till att betala automatiskt med kreditkort måste du först betala alla utestående saldon. Kontrollera ditt faktureringsutdrag för betalningsalternativ och instruktioner. Mer information finns i [Förstå fakturan](understand-your-invoice2.md).
+> Om du ändrar till att betala automatiskt med kreditkort måste du först betala alla utestående saldon. Kontrollera ditt faktureringsutdrag för betalningsalternativ och instruktioner. Mer information finns i [Förstå din faktura eller faktura](understand-your-invoice2.md).
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>Var skickar jag min check- eller EFT-betalning?
 
@@ -284,19 +284,19 @@ Du kan välja att få en kopia av faktureringsutdraget som en e-postbilaga. Om d
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -312,4 +312,4 @@ Om du behöver byta till ett annat betalningssätt, till exempel om du justerar 
 
 [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Förstå din faktura](understand-your-invoice2.md)
+[Förstå din faktura eller faktura](understand-your-invoice2.md)

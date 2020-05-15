@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Hitta svar på dina vanligaste faktureringsfrågor för Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634998"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232811"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Vanliga faktureringsfrågor för Microsoft 365 för företag
 
@@ -40,13 +40,13 @@ Om du inte hittar ett svar på din fråga, eller om du har problem med din faktu
   
 ::: moniker range="o365-worldwide"
 
-Om du behöver hjälp med att tolka de avgifter du ser på din faktura eller förstå de termer som används läser du [Förstå fakturan](understand-your-invoice2.md).
+Om du behöver hjälp med att tolka de avgifter du ser på din faktura eller förstå de termer som används läser [du Förstå din faktura eller faktura](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Om du behöver hjälp med att tolka de avgifter du ser på din faktura eller förstå de termer som används läser du [Förstå fakturan](understand-your-invoice2.md).
+Om du behöver hjälp med att tolka de avgifter du ser på din faktura eller förstå de termer som används läser [du Förstå din faktura eller faktura](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ Ja, men du måste [ringa support](../../admin/contact-support-for-business-produ
 
 Ja. Så här hämtar du ditt faktureringsutdrag som en bifogad fil i ett e-postmeddelande:
   
-1. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret för Microsoft 365 eller välj aviseringar om **fakturering.** \> **Billing notifications**
+1. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret för Microsoft 365 eller välj aviseringar om **Billing** \> **fakturering.**
 
 2. Under **Ta emot faktureringsutdrag som e-postbilaga?** **On**
 
@@ -133,7 +133,7 @@ Ja. Så här hämtar du ditt faktureringsutdrag som en bifogad fil i ett e-postm
 
 Ja. Så här hämtar du ditt faktureringsutdrag som en bifogad fil i ett e-postmeddelande:
   
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 2. Under **Ta emot faktureringsutdrag som e-postbilaga?** **On**
 

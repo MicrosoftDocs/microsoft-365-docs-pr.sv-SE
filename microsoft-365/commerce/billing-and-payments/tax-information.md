@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Ta reda på hur mycket skatt du debiteras för din Microsoft 365 för företag-prenumeration i olika regioner. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045830"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232835"
 ---
 # <a name="tax-information"></a>Momsinformation
 
@@ -114,7 +114,7 @@ Du kan vara berättigad till momsbefrielse:
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Så här anger du ditt momsregistreringsnummer (endast EU-länder)
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Hitta prenumerationskortet för den prenumeration som du vill uppdatera.
 
@@ -186,4 +186,4 @@ Ha följande dokumentation klar:
   
 [Visa din faktura](view-your-bill-or-invoice.md)
   
-[Förstå din faktura](understand-your-invoice.md)
+[Förstå din faktura eller faktura](understand-your-invoice.md)

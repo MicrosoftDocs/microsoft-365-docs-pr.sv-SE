@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Läs om hur du gör ändringar i organisationsprofilen, till exempel organisationsnamn, adress, telefon, teknisk kontakt och e-post.
-ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cae24ebb6ad317767c7798b808f166024cd9d73a
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208180"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232905"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändra organisationens adress, tekniska kontakt med mera
 
@@ -60,7 +60,7 @@ Så här ändrar du annan information på företagets profilsida:
 |**Fält**  |**Beskrivning**  |
 |---------|---------|
 |Namn  <br/>   | Namnet som anges här är det som visas för användarna på följande sidor:  <br/>  Inloggningssidan: Om dina användare har konfigurerat andra TE102824469-konton med sina e-postadresser för företag eller skola ser de kanske organisationsnamnet på inloggningssidan. Det gör det lättare för dem att skilja sitt arbets- eller skolkonto från andra konton, vilket i sin tur gör att de enkelt kan se vilket konto de ska använda när de loggar in.  <br/>  Organisationens profillänk och profilsida: Länken till din organisations profil visar organisationsnamnet.  <br/>  Yammer-navigering: I Yammer använder den vänstra navigeringen organisationsnamnet som namnet på yammernätverket i hemmet.  <br/> OneDrive-synkroniseringsklient: Organisationsnamnet visas i Utforskaren i Windows och Finder på Mac, filsökvägarna, OneDrive-aktivitetscentret, verktygstipset för OneDrive-molnikonen och onedrive-inställningsfönstret. För närvarande uppdateras inte organisationsnamnet för konfigurerade klienter. <br/> MS-team: Organisationsväxlare i Teams visar organisationens namn <br/>  |
-|Adress, ort, region, postnummer  <br/>     | Adressen som anges här är vad du kommer att se på din faktura, under Såld till: Den sålda till-adressen på din faktura är samma som din organisationsadress på din profilsida (se [Förstå din faktura för Microsoft 365 för företag](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
+|Adress, ort, region, postnummer  <br/>     | Adressen som anges här är vad du kommer att se på din faktura, under Såld till: Den sålda till adressen på din faktura är samma som din organisationsadress på din profilsida (se [Förstå din faktura eller faktura för Microsoft 365 för företag](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |Land eller region.  <br/>    | Landet eller regionen där företaget har sitt säte. Det valda landet eller regionen avgör vilka tjänster som är tillgängliga, vilka skatter och vilken faktureringsvaluta som används i ditt land eller region och platsen för närmaste datacenter (se [Licensbegränsningar för Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>När du har valt kan inte landet eller regionen ändras. Om du vill ändra valet måste du avbryta din prenumeration och anmäla dig på nytt. Kontakta [supporten](../contact-support-for-business-products.md)om du vill ha hjälp med den här processen .        |
 |Telefonnummer  <br/>     | Det här är det primära numret för ditt företag. Det är oftast numret till ert huvudkontor.  <br/>        |
 |Teknisk kontakt  <br/> |Det här är e-postadressen för den primära tekniska personen som administrerar din Microsoft 365-prenumeration. Det här är personen som får meddelanden om Microsoft 365-tjänststatus.  <br/> |

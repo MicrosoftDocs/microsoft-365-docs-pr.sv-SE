@@ -23,19 +23,19 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Läs om hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
 ms.custom: okr_SMB
-ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140929"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232893"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -51,13 +51,13 @@ I de flesta fall är de här adresserna desamma. Om du behöver ändra en eller 
   
 ::: moniker range="o365-worldwide"
 
-Mer information om fakturan eller fakturan finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md) och [Förstå fakturan](understand-your-invoice2.md).
+Mer information om fakturan eller fakturan finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md) och [Förstå din faktura eller faktura](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Mer information om fakturan eller fakturan finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md) och [Förstå fakturan](understand-your-invoice2.md).
+Mer information om fakturan eller fakturan finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md) och [Förstå din faktura eller din faktura.](understand-your-invoice2.md)
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ## <a name="change-your-sold-to-address"></a>Ändra Såld till-adressen
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Faktureringskonton</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Faktureringskonton</a> i administrationscentret.
 
 2. välj **Redigera faktureringskontoinformation**.
 
@@ -80,7 +80,7 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Faktureringsbetalningsmetoder</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Faktureringsbetalningsmetoder</a> i administrationscentret.
 
 2. Välj det kreditkort eller bankkonto som du vill ändra.
 
@@ -128,7 +128,7 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Leta reda på den prenumeration som du vill ändra. I avsnittet **Inställningar & Åtgärder** väljer du Redigera **tjänstanvändningsadress**.
 
@@ -180,19 +180,19 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 
 ::: moniker range="o365-worldwide"
   
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 
 [Visa din faktura](view-your-bill-or-invoice.md)
 
-[Förstå din faktura](understand-your-invoice2.md)
+[Förstå din faktura eller faktura](understand-your-invoice2.md)
 
 [Betala för prenumerationen](pay-for-your-subscription.md)
 

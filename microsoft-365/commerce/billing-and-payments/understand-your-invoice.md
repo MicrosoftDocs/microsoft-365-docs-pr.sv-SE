@@ -1,5 +1,5 @@
 ---
-title: Förstå din faktura
+title: Förstå din faktura eller faktura
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: Läs om hur du läser och förstår din faktura för Microsofts affärsprodukter.
+description: Läs om hur du läser och förstår din faktura eller faktura för Microsofts affärsprodukter.
 keywords: faktureringskonton, organisationsinformation, fakturor
-ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211410"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232823"
 ---
-# <a name="understand-your-invoice"></a>Förstå din faktura
+# <a name="understand-your-bill-or-invoice"></a>Förstå din faktura eller faktura
 
 ::: moniker range="o365-21vianet"
 
@@ -36,7 +36,7 @@ ms.locfileid: "44211410"
 
 Fakturan innehåller en sammanfattning av dina avgifter och instruktioner för betalning. Du kan [visa din onlinefaktura](#view-your-online-invoice) i administrationscentret för Microsoft 365. Du kan också ladda ner den i Portable Document Format (.pdf) för att skicka via e-post.
 
-Om du bara har en Microsoft 365-prenumeration läser du [Förstå din faktura för Microsoft 365 för företag](understand-your-invoice2.md).
+Om du bara har en Microsoft 365-prenumeration läser du [Förstå din faktura eller faktura för Microsoft 365 för företag](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Förstå fakturahuvudet
 

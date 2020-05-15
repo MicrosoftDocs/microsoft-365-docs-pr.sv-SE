@@ -1,5 +1,5 @@
 ---
-title: Förstå din faktura för Microsoft 365 för företag
+title: Förstå din faktura eller faktura för Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Lär dig hur du tolkar debiterings-, fakturerings- och betalningsinformationen på din Microsoft 365 för företagsfaktura och hur du ändrar inköpsordernumret.
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: Lär dig hur du tolkar debiterings-, fakturerings- och betalningsinformationen på din Microsoft 365 för företagsfaktur eller faktura och hur du ändrar inköpsordernumret.
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045818"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232799"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Förstå din faktura för Microsoft 365 för företag
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå din faktura eller faktura för Microsoft 365 för företag
 
 Varje månad får du ett e-postmeddelande som talar om att ditt nya faktureringsutdrag är tillgängligt i administrationscentret. [Läs mer om hur du hittar och visar fakturan](view-your-bill-or-invoice.md).
   
@@ -104,7 +104,7 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Om du är i **tabellvyn** väljer du **Kort** för att växla vyer.
 

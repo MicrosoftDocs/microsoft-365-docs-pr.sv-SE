@@ -13,19 +13,19 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Lär dig hur du aktiverar och hanterar appar från tredje part i Microsoft 365 administrationscenter.
-ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141194"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232751"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ Stöd för appar från tredje part är tillgängligt i följande regioner:
 
 Administratörer måste aktivera appar från tredje part innan de tilldelas användare. Dessa appar aktiveras i tredjepartsutgivarens portal.
 
-1. Gå till sidan > **Faktureringsappar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
 2. Hitta och välj den app du vill hantera.
 3. Under **Inställningar & åtgärder**väljer du Hantera i **utgivarens portal**.
 
@@ -89,7 +89,7 @@ När appen har aktiverats förblir den aktiv om den inte avbryts, upphör att g�
 
 Administratörer måste aktivera appar från tredje part innan de tilldelas användarna. De aktiveras i tredjepartsutgivarens portal. Välj länken för att tilldela licenser under **Inställningar & åtgärder**på appsidan.
 
-1. Gå till sidan > **Faktureringsappar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
 2. Hitta och välj den app du vill hantera.
 3. Under **Inställningar & åtgärder**väljer du länken till Hantera i **utgivarens portal**.
 
@@ -97,7 +97,7 @@ Administratörer måste aktivera appar från tredje part innan de tilldelas anv�
 
 Administratörer kan ändra antalet licenser som ägs av organisationen. Detta gäller endast appar som köpts med platsbaserad prissättning.
 
-1. Gå till sidan > **Faktureringsappar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
 2. Hitta och välj den app du vill hantera.
 3. Välj **Ändra licenskvantitet**.
 
@@ -113,16 +113,16 @@ Mer information om faktureringsprofiler finns i [Förstå faktureringsprofiler](
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Ändra faktureringsprofilen för en prenumeration på app för programvara som en tjänst
 
-1. Gå till sidan > **Faktureringsappar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
 2. Hitta och välj den app du vill hantera.
 3. Välj Redigera **bredvid faktureringsprofil** **.**
 
-Mer information om fakturor finns i [Förstå fakturan](billing-and-payments/understand-your-invoice.md).
+Mer information om fakturor finns i [Förstå din faktura eller faktura](billing-and-payments/understand-your-invoice.md).
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>Avbryta en prenumeration på app för programvara som en tjänst
 
 Du kan avbryta en app som en tjänst från appsidan.
 
-1. Gå till sidan > **Faktureringsappar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
 2. Hitta och välj den app du vill hantera.
 3. Under **Inställningar & åtgärder**väljer du Avbryt **prenumeration**.
