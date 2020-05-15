@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: Vad händer om min prenumeration går ut?
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: Hantera appar från tredje part
+    - name: Hantera prenumerationer på appar från tredje part
       href: manage-saas-apps.md
     - name: Hantera självbetjäningsköp (användare)
       href: subscriptions/manage-self-service-purchases-users.md
@@ -62,15 +62,15 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: Ändra dina faktureringsadresser
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: Andra betaltjänstdirektivet och stark kundautentisering
+    - name: Om betaltjänstdirektiv 2 och stark kundautentisering
       href: billing-and-payments/psd2.md
 - name: Faktureringskonton
   items:
     - name: Hantera faktureringskonton
       href: manage-billing-accounts.md
-    - name: Koppla en klientorganisation till mitt faktureringskonto
+    - name: Koppla en klientorganisation till ditt faktureringskonto
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: Hantera relationer med mina partner
+- name: Hantera relationer med partners
   href: manage-partners.md
 - name: Avsluta ditt konto
   href: close-your-account.md
