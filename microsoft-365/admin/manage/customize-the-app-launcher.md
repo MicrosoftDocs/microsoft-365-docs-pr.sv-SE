@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Skapa snabblänkar till din e-post, dokument, appar, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
-ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f099eabef7a22e9ebd8f20b23ccd3d8da142f07f
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139727"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262369"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Lägga till anpassade paneler i startprogrammet
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Du kan lägga till egna paneler i startprogrammet som pekar på SharePoint-webbp
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Lägga till en anpassad panel i startprogrammet
 
-1. Gå till fliken Inställningar och välj **organisationsprofil** **i** **administrationscentret.** > 
+1. Gå till fliken Inställningars organisationsprofil i **administrationscentret**  >  **Org Settings** och välj fliken **Organisationsprofil.**
     
 2. På fliken **Organisationsprofil** väljer du **Anpassade startpaneler**för startprogram .
   
@@ -76,7 +76,7 @@ Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig oc
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Gå till**Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">fliken Organisationsprofilinställningar</a> i **administrationscentret.** > 
+1. Gå till **Settings**  >  **Org Settings**  >  **profilfliken** Inställningar organisation i </a> administrationscentret.
     
 2. Välj **Redigera**bredvid **Lägg till anpassade paneler för din organisation**på sidan **Organisationsprofil.**
 
@@ -84,7 +84,7 @@ Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig oc
     
 4. Välj **Uppdatera** \> **stäng**. 
     
-Om du vill ta bort en anpassad panel markerar du panelen i fönstret **Anpassade paneler** och väljer **Ta bort panel** > **Ta bort**. 
+Om du vill ta bort en anpassad panel markerar du panelen i fönstret **Anpassade paneler** och väljer **Ta bort panel**Ta  >  **bort**. 
   
 ## <a name="whats-next"></a>Hur går jag vidare?
 

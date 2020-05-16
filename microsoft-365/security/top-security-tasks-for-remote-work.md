@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor.
-ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 1b21c59e95eccced66a7b64ec7c67354de53e59d
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155427"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267185"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Topp 12 uppgifter för säkerhetsteam att stödja att arbeta hemifrån
 
@@ -41,7 +41,7 @@ För kunder som använder våra företagsplaner rekommenderar Microsoft att du s
 |2     | [Skydda mot hot](#2-protect-against-threats) |![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  [Konfigurera avancerat hotskydd för Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4      | [Konfigurera Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|5     |   [Aktivera Microsoft Advanced Threat Protection](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|5     |   [Aktivera Microsoft Hotskydd](#5-turn-on-microsoft-threat-protection)  |  |      | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6      | [Konfigurera Intune-skydd för mobilappar för telefoner och surfplattor](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7     | [Konfigurera MFA och villkorlig åtkomst för gäster, inklusive Intune-appskydd](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8      |  [Registrera datorer i enhetshantering och kräver kompatibla datorer](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Ingår](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
@@ -114,7 +114,7 @@ Du måste arbeta med Exchange Online-administratören och SharePoint Online-admi
 - Titta [på video: Introduktion till Azure ATP](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - Granska de [tre faserna i Azure ATP-distributionen](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-advanced-threat-protection"></a>5: Aktivera Microsoft Advanced Threat Protection
+## <a name="5-turn-on-microsoft-threat-protection"></a>5: Aktivera Microsoft Threat Protection
 
 Nu när du har konfigurerat Office 365 ATP och Azure ATP kan du visa de kombinerade signalerna från dessa funktioner på en instrumentpanel. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) samlar aviseringar, incidenter, automatisk undersökning och svar och avancerad jakt över arbetsbelastningar (Azure ATP, Office 365 ATP, Microsoft Defender ATP och Microsoft Cloud App Security) i en enda ruta [security.microsoft.com](https://security.microsoft.com). 
 <br>
@@ -203,7 +203,7 @@ Microsoft 365 innehåller följande resurser för att informera användare i org
 |Koncept  |Resurser  |
 |---------|---------|
 |Microsoft 365     |[Anpassningsbara utbildningsvägar](https://docs.microsoft.com/office365/customlearning/) <p>Dessa resurser kan hjälpa dig att sätta ihop utbildning för slutanvändare i din organisation        |
-|Microsoft 365 Säkerhet |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
+|Microsoft 365-säkerhet |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
 |Multifaktorautentisering     | [Tvåstegsverifiering: Vad är den ytterligare verifieringssidan?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.    |
 | | |
 
@@ -236,7 +236,7 @@ Kom igång med Cloud App Security nu. Senare kan du ställa in mer sofistikerade
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: Övervaka för hot och vidta åtgärder
 
-Microsoft 365 innehåller flera sätt att övervaka status och vidta lämpliga åtgärder. Den bästa utgångspunkten är Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), där du kan visa organisationens Microsoft Secure [Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)och alla aviseringar eller entiteter som kräver din uppmärksamhet.
+Microsoft 365 innehåller flera sätt att övervaka status och vidta lämpliga åtgärder. Den bästa utgångspunkten är Microsoft 365 security center ( [https://security.microsoft.com](https://security.microsoft.com) ), där du kan visa organisationens Microsoft Secure [Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)och alla aviseringar eller entiteter som kräver din uppmärksamhet.
 
 - [Komma igång med säkerhetscentret Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Övervaka och visa rapporter](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)

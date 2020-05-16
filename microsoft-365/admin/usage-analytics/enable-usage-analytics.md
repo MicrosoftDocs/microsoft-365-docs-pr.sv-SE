@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för din klientorganisation med hjälp av mallappen Microsoft 365 Usage Analytics i Power BI.
-ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140689"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262541"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ Om du vill starta mallappen måste du antingen vara global **administratör,** *
 
 5.  Klicka på **Utforska app** om du vill visa appen med exempeldata. Klicka på **Anslut** om du vill ansluta appen till organisationens data.
 
-6.  När du har klickat på **Anslut**skriver du i det klient-ID som du kopierade \> i steg (1) **Nästa**på skärmen **Anslut till Microsoft 365 användningsanalys** .
+6.  När du har klickat på **Anslut**skriver du i det klient-ID som du kopierade i steg (1) Nästa på skärmen **Anslut till Microsoft 365** \> **Next**användningsanalys .
     
 7. På nästa skärm väljer du **oAuth2** som **autentiseringsmetod** \> **Logga in**. Om du väljer någon annan autentiseringsmetod misslyckas anslutningen till mallappen.
     
@@ -97,7 +97,7 @@ Sammanställningar på klientorganisationsnivån blir tillgängliga i alla rappo
 
 Du måste vara global administratör för att kunna anonymisera data som samlas in för alla rapporter. Detta döljer identifierbar information som användar-, grupp- och webbplatsnamn i rapporter och i mallappen .
   
-1. Gå till **inställningar** \> **Settings**för inställningar i administrationscentret och välj **Rapporter**under **Fliken Tjänster** .
+1. Gå till **Settings** \> **inställningars organisationsinställningar**i administrationscentret och välj **Rapporter**under **Fliken Tjänster** .
     
 2. Välj **Rapporter**och välj sedan att **visa anonyma identifierare**. Den här inställningen tillämpas både på användningsrapporterna och på mallappen.
   

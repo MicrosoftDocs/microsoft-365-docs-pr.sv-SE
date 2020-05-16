@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Lär dig att ändra standardtemat i Microsoft 365 och anpassa det så att det matchar företagets logotyp eller färg. '
-ms.openlocfilehash: cfde26e2b7f6d74a59b7431091fbc3c2f6049ec6
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022126"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262335"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365-temat för din organisation
 
@@ -34,7 +34,7 @@ Läs om hur du anpassar ditt tema i administrationscentret för Microsoft 365. S
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Anpassa ditt tema i administrationscentret
 
-1. Gå till inställningar i **administrationscentret** \> **Settings**och välj sedan fliken **Organisationsprofil.**
+1. Gå till inställningars organisationsprofilen i **administrationscentret** \> **Org Settings**och välj sedan fliken **Organisationsprofil.**
 
 2. Välj **Anpassade teman**på fliken **Organisationsprofil** .
 

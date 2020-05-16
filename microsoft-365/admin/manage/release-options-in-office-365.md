@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Lär dig hur du konfigurerar utgivningsalternativet för nya produkt- och featuresuppdateringar i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249890"
+ms.locfileid: "44262323"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Ställ in alternativen standard eller riktad utgåva
 
@@ -99,7 +99,7 @@ Du kan ändra hur din organisation tar emot Microsoft 365-uppdateringar genom at
 > [!IMPORTANT]
 > Det kan ta upp till 24 timmar innan ändringarna nedan börjar gälla i Microsoft 365. Om organisationen tidigare har använt riktad version och du vill inaktivera detta kan det hända att vissa användare förlorar tillgång till funktioner som inte ingår i standardversionen än. 
   
-1. Gå till **inställningsinställningen**i  >  **Setting**administrationscentret och välj **Utgivningsinställningar**under fliken **Organisationsprofil** .
+1. Gå till **Settings**  >  **inställningen Inställningars organisationsorganisation**i administrationscentret och välj **Utgivningsinställningar**under fliken **Organisationsprofil** .
 
 5. Om du vill inaktivera riktad frisättning väljer du **Standardversion**och väljer sedan **Spara ändringar**. 
     

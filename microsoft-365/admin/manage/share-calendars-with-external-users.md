@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Lär dig hur du låter användarna dela sina kalendrar med externa användare för möten och avtalade tider. '
-ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 5853d285508c5ed0ec4771a145912e374c191089
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249878"
+ms.locfileid: "44262301"
 ---
 # <a name="share-calendars-with-external-users"></a>Dela kalendrar med externa användare
 
@@ -39,7 +39,7 @@ Kalenderdelning är en global inställning, vilket innebär att du, administrat�
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Aktivera kalenderdelning med administrationscentret för Microsoft 365
 
-1. Gå till **Inställningar i administrationscentret** \> **Settings**. 
+1. Gå till **Inställningar** \> **organisationsinställningar**i administrationscentret . 
     
 2. Välj **Kalender**på fliken **Tjänster** .
   

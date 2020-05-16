@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Skapa anpassat supportkort i administrationscentret och lägg till anpassad supportkontaktinformation i hjälpfönstret.
-ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627902"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262277"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>Lägga till anpassad information om supportavdelningen i hjälpfönstret
 
@@ -40,7 +40,7 @@ Om du vill skapa ett anpassat supportkort måste du vara global administratör f
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Skapa ett anpassat kontaktkort för supporten i administrationscentret
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. Gå till fliken Inställningar i **administrationscentret** > **och** välj **informationsfliken Hjälpskrivbord.**
+1. Gå till inställningars organisationsinställningar i **administrationscentret**  >  **Org Settings** och välj **informationsfliken Hjälpskrivbord.**
     
 2. På fliken **Organisationsprofil** väljer du **Anpassade startpaneler**för startprogram .
   

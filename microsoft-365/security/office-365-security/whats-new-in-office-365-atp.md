@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036590"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267173"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -35,6 +35,10 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 > [!TIP]
 > Har du inte Office 365 ATP än? [Kontakta försäljning för att starta en utvärderingsversion](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="marchapril-2020"></a>Mars/april 2020
+
+- Möjligheten att [hantera komprometterade användarkonton med automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) är nu allmänt tillgänglig.
+
 ## <a name="januaryfebruary-2020"></a>Januari/februari 2020
 
 - [Allmän tillgänglighet för kampanjvyer i Office 365 ATP](campaigns.md)
@@ -46,7 +50,7 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
     - Avancerade NOT-filter (dessa är avancerade filtreringsalternativ som inte innehåller, inkluderar inte osv.)
     - Detaljerade tidsfilter (dag, timme, halvtimme) 
 
-- Widgeten **Incidenter** är nu widgeten **Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du till Granskning av **&-efterlevnad** > i Säkerhets- & Compliance Center **.)**
+- Widgeten **Incidenter** är nu widgeten **Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du till **Hothantering**  >  i Security & Compliance Center **Granska**.)
 
 - [Säkra dokument i Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(förhandsgranskning)**
 
