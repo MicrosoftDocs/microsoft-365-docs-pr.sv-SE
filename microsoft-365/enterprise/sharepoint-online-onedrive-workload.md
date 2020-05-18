@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Gå igenom processen med planering, distribution och användning av SharePoint i hela organisationen.
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636922"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268215"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Distribuera SharePoint och OneDrive för Microsoft 365 Enterprise
 
@@ -67,10 +67,6 @@ Pelare för att uppfylla företagets behov:
 På webbplatsen för [SharePoint-administration](https://docs.microsoft.com/sharepoint/sharepoint-online) finns resurser för hur du konfigurerar SharePoint efter dina behov.
 
 Ett sätt att ta reda på hur SharePoint kan användas på bästa sätt är att undersöka hur enskilda personer, grupper, avdelningar eller hela organisationen interagerar med varandra idag, och sedan hitta ett lämpligt scenario som ger ett enklare sätt att lagra och dela filer. Tänk på att [Microsoft Teams](teams-workload.md) kan vara ett bättre val för vissa av dina scenarier.
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>SharePoint-webbplats för strikt reglerade data
-
-Strikt reglerade data kan vara data som måste följa regionala föreskrifter, eller så kan de vara data som är särskilt värdefulla för din organisation, till exempel affärshemligheter, ekonomisk information och personalinformation samt organisationens strategi. Du kan konfigurera en SharePoint-webbplats för begränsad åtkomst, dataklassificering, dataförlustskydd och kryptering för den här typen av data. Mer information finns i [Microsoft Teams- och SharePoint-webbplatser för strikt reglerade data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### <a name="result"></a>Resultat
 En lista med SharePoint-scenarier som uppfyller din organisations behov av lagring och delning av dokument, innehållshantering, samarbete och säkerhet.

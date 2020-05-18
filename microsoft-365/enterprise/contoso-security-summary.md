@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 Enterprise.
-ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636492"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268404"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 Enterprise-säkerhet för Contoso Corporation
 
@@ -134,9 +134,4 @@ Contosos säkerhetsadministratörer och IT-avdelning distribuerade många säker
 - Central säkerhetsinstrumentpanel för användare med Windows Defender Säkerhetscenter
 
   Contoso har distribuerat [appen Windows-säkerhet](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) till de datorer och enheter som kör Windows 10 Enterprise, så att användarna snabbt kan se deras säkerhetsstatus och vidta åtgärder.
-
-
-## <a name="next-step"></a>Nästa steg
-
-[Se](contoso-sharepoint-online-site-for-highly-confidential-assets.md) hur Contoso har skapade en SharePoint-webbplats för strikt reglerade data för samarbete mellan företagets forskningsteam.
 

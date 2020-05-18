@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder funktionerna för informationsskydd i Microsoft 365 Enterprise till att skydda sina digitala tillgångar i molnet.
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625308"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268416"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsskydd för Contoso Corporation
 
@@ -65,15 +65,11 @@ Contoso använde följande steg när de förberedde Microsoft 365 Enterprise på
 
    Contoso skapade känslighetsetiketter för datanivåerna, där etiketten Strikt reglerad inkluderar kryptering, behörigheter och vattenstämplar.
 
-4. Skapade skyddade SharePoint-webbplatser för känsliga och strikt reglerade data med behörigheter som spärrar åtkomsten
-
-   Både känsliga och strikt reglerade webbplatser konfigurerades som privata gruppwebbplatser med extra behörighetsbegränsningar. Känsliga och strikt reglerade SharePoint-webbplatser konfigurerades också med en motsvarande kvarhållningsetikett. Filer som lagras på strikt reglerade SharePoint-webbplatser skyddas med en känslighetsetikett som är underetikett till etiketten Strikt reglerad. Mer information finns i scenariot [SharePoint-webbplatser för strikt reglerade data](teams-sharepoint-online-sites-highly-regulated-data.md).
-
-5.  Data flyttades från lokala SharePoint-webbplatser och filresurser till de nya SharePoint-webbplatserna
+4.  Data flyttades från lokala SharePoint-webbplatser och filresurser till de nya SharePoint-webbplatserna
 
     De filer som migrerades till de nya SharePoint-webbplatserna, ärvde standardinställningen för de kvarhållningsetiketter som tilldelats till webbplatsen.
 
-6.  Utbildade personalen i att använda känslighetsetiketter för nya dokument, hur man interagerar med Contoso IT när nya SharePoint-webbplatser skapas, samt att alltid lagra digitala tillgångar på SharePoint-webbplatser
+5.  Utbildade personalen i att använda känslighetsetiketter för nya dokument, hur man interagerar med Contoso IT när nya SharePoint-webbplatser skapas, samt att alltid lagra digitala tillgångar på SharePoint-webbplatser
 
     Med tanke på den svåraste delen i överföringen av informationsskydd i molnet, behövde Contoso IT och ledningen ändra den bristfälliga informationslagringen hos organisationens anställda till att alltid märka och lagra sina digitala tillgångar i molnet, att avstå från att använda lokala filresurser och att aldrig använda molnlagringstjänster från tredje part eller USB-enheter.
 
