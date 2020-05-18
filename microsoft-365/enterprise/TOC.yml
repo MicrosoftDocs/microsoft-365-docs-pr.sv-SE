@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: Distribuera för andra än stora företag
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Distribuera arbetsbelastningar och scenarier
+    - name: Distribuera arbetsbelastningar
       href: deploy-workloads.md
       items:
         - name: Microsoft Teams
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: Migrering
           href: migration-microsoft-365-enterprise-workload.md
-        - name: Ge distansarbetare goda förutsättningar
-          href: empower-people-to-work-remotely.md
-        - name: SharePoint-webbplatser för strikt reglerade data
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Testlabbguider
       href: m365-enterprise-test-lab-guides.md
       items:
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: Sammanfattning av säkerhet
           href: contoso-security-summary.md
-        - name: Team för ett topphemligt projekt
-          href: contoso-team-for-top-secret-project.md
-        - name: SharePoint-webbplats för strikt reglerade data
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Ändringar i distributionsinnehåll för Microsoft 365 för företag
-      href: microsoft-365-deploment-guide-changes.md
     - name: Hälsostatus för Microsoft 365-tjänsten
       href: microsoft-365-service-health.md
 - name: Center för skrivbordsdistribution
