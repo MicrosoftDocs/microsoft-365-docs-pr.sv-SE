@@ -73,6 +73,8 @@
               href: manage/assign-licenses-to-users.md
             - name: Tilldela administratörsroller
               href: add-users/assign-admin-roles.md
+            - name: Lägga till gästanvändare i en Microsoft 365-grupp
+              href: create-groups/manage-guest-access-in-groups.md
             - name: Ta bort licenser från användare
               href: manage/remove-licenses-from-users.md
             - name: Lösa licenskonflikter
