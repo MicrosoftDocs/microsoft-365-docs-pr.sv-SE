@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209241"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280540"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Förutsättningar för Microsoft Threat Protection
 
@@ -79,8 +79,12 @@ Gå till Microsoft 365 administrationscenter ([admin.microsoft.com](https://admi
 ## <a name="browser-requirements"></a>Krav på webbläsare
 Få tillgång till Microsoft Threat Protection i Microsoft 365-säkerhetscentret med Microsoft Edge, Internet Explorer 11 eller valfri HTML 5-kompatibel webbläsare.
 
-## <a name="us-gcc-and-gcc-high-availability"></a>Us GCC och GCC Hög tillgänglighet
-Microsoft Threat Protection är för närvarande inte tillgängligt för kunder i GCC-molnet (Cloud) och Government Community Cloud High (GCC High). 
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Tillgänglighet till amerikanska GCC, GCC High och andra amerikanska statliga institutioner
+Microsoft Threat Protection är för närvarande *inte* tillgängligt för:
+- Moln för usa:s myndighetsgemenskap (GCC)
+- Us-regeringgemenskap moln kick (GCC kick)
+- Usa:s försvarsdepartement
+- Alla amerikanska statliga institutioner med kommersiella licenser
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över Microsofts hotskydd](microsoft-threat-protection.md)
