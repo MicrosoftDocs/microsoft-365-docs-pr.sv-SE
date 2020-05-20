@@ -17,21 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d9025e4333c6d6ae40f894fc6bde195028871dab
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 723b2584846b9d6ec01e7d4286a63d2dce0757ac
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211456"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322177"
 ---
-# <a name="whats-coming-in-microsoft-secure-score"></a><span data-ttu-id="69ab5-104">Vad kommer i Microsoft Secure Score?</span><span class="sxs-lookup"><span data-stu-id="69ab5-104">What's coming in Microsoft Secure Score?</span></span>
+# <a name="whats-coming-in-microsoft-secure-score"></a><span data-ttu-id="1b9c4-104">Vad kommer i Microsoft Secure Score?</span><span class="sxs-lookup"><span data-stu-id="1b9c4-104">What's coming in Microsoft Secure Score?</span></span>
 
-<span data-ttu-id="69ab5-105">För att göra [Microsoft Secure Score](microsoft-secure-score-new.md) till en bättre representant för din säkerhetsposition och förbättra användbarheten gör vi vissa ändringar inom en snar framtid.</span><span class="sxs-lookup"><span data-stu-id="69ab5-105">To make [Microsoft Secure Score](microsoft-secure-score-new.md) a better representative of your security posture and improve usability, we are making some changes in the near future.</span></span> <span data-ttu-id="69ab5-106">Din poäng och högsta möjliga poäng kommer att förändras.</span><span class="sxs-lookup"><span data-stu-id="69ab5-106">Your score and the maximum possible score will change.</span></span> <span data-ttu-id="69ab5-107">Detta innebär dock inte en förändring i din säkerhetsposition.</span><span class="sxs-lookup"><span data-stu-id="69ab5-107">However, this does not imply a change in your security posture.</span></span>
+<span data-ttu-id="1b9c4-105">För att göra [Microsoft Secure Score](microsoft-secure-score-new.md) till en bättre representant för din säkerhetsposition och förbättra användbarheten gör vi vissa ändringar inom en snar framtid.</span><span class="sxs-lookup"><span data-stu-id="1b9c4-105">To make [Microsoft Secure Score](microsoft-secure-score-new.md) a better representative of your security posture and improve usability, we are making some changes in the near future.</span></span> <span data-ttu-id="1b9c4-106">Din poäng och högsta möjliga poäng kommer att förändras.</span><span class="sxs-lookup"><span data-stu-id="1b9c4-106">Your score and the maximum possible score will change.</span></span> <span data-ttu-id="1b9c4-107">Detta innebär dock inte en förändring i din säkerhetsposition.</span><span class="sxs-lookup"><span data-stu-id="1b9c4-107">However, this does not imply a change in your security posture.</span></span>
 
-<span data-ttu-id="69ab5-108">Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)</span><span class="sxs-lookup"><span data-stu-id="69ab5-108">To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)</span></span>
+<span data-ttu-id="1b9c4-108">Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)</span><span class="sxs-lookup"><span data-stu-id="1b9c4-108">To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)</span></span>
 
-## <a name="may-2020"></a><span data-ttu-id="69ab5-109">Maj 2020</span><span class="sxs-lookup"><span data-stu-id="69ab5-109">May 2020</span></span>
+## <a name="may-2020"></a><span data-ttu-id="1b9c4-109">Maj 2020</span><span class="sxs-lookup"><span data-stu-id="1b9c4-109">May 2020</span></span>
 
-### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-the-preview-release-and-new-iteration"></a><span data-ttu-id="69ab5-110">Lägga till ytterligare Azure Advanced Threat Protection förbättringsåtgärder till förhandsversionen och ny iteration</span><span class="sxs-lookup"><span data-stu-id="69ab5-110">Adding additional Azure Advanced Threat Protection improvement actions to the preview release and new iteration</span></span>
-
-- <span data-ttu-id="69ab5-111">Aktivera säkerhetsfunktioner i Active Directory-förtroenden</span><span class="sxs-lookup"><span data-stu-id="69ab5-111">Enable security features on Active Directory trusts</span></span>
+<span data-ttu-id="1b9c4-110">Inga ändringar planeras för närvarande</span><span class="sxs-lookup"><span data-stu-id="1b9c4-110">No changes currently planned</span></span>
