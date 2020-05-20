@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Läs om hur du tar bort licenser från användarkonton.
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139643"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322035"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 4. I fönstret **Ersätt befintliga produkter** väljer du **Ersätt befintliga licenstilldelningar** \> **Nästa**.
 
-5. Markera kryssrutan **Ta bort alla produktlicenser från de markerade användarna** längst ned i fönstret Ersätt befintliga **produkter** och välj sedan **Ersätt** \> **Stäng** \> **Stäng**.
+5. Markera kryssrutan **Ta bort alla produktlicenser från de markerade användarna** längst ned i fönstret Ersätt befintliga **produkter** och välj sedan **Ersätt** \> **Close** \> **Stäng Stäng**.
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 4. I fönstret **Ersätt befintliga produkter** väljer du **Ersätt befintliga licenstilldelningar** \> **Nästa**.
 
-5. Markera kryssrutan **Ta bort alla produktlicenser från de markerade användarna** längst ned i fönstret Ersätt befintliga **produkter** och välj sedan **Ersätt** \> **Stäng** \> **Stäng**.
+5. Markera kryssrutan **Ta bort alla produktlicenser från de markerade användarna** längst ned i fönstret Ersätt befintliga **produkter** och välj sedan **Ersätt** \> **Close** \> **Stäng Stäng**.
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 - Observera att filer som sparats i OneDrive för företag inte tas bort om inte användaren tas bort från Microsoft 365-administrationscentret eller tas bort via Active Directory-synkronisering. Mer information finns i [OneDrive-lagring och borttagning](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Dessutom är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Content Search eller Advanced eDiscovery när licensen tas bort. Mer information finns i avsnittet "Söka frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Dessutom är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Content Search eller Advanced eDiscovery när licensen tas bort. Mer information finns i avsnittet "Söka frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du bevara postlådedata för ett borttaget användarkonto med hjälp av [inaktiva postlådor.](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365) Mer information finns i [Skapa och hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+- Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du bevara postlådedata för ett borttaget användarkonto med hjälp av [inaktiva postlådor.](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365) Mer information finns i [Skapa och hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - Information om hur du blockerar en användares åtkomst till Microsoft 365-data efter att licensen har tagits bort och hur du får åtkomst till data efteråt finns i [Ta bort en tidigare anställd](../add-users/remove-former-employee.md).
 

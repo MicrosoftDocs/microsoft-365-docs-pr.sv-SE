@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Följ den här checklistan om du vill ta bort en anställd från Microsoft 365 och säkra data. '
-ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140599"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322093"
 ---
 # <a name="remove-a-former-employee"></a>Ta bort en tidigare anställd
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -135,7 +135,7 @@ Det finns två sätt du kan spara innehållet i den tidigare anställdas postlå
     
     Inaktiva postlådor kan inte ta emot e-post och visas inte i organisationens delade adressbok och andra listor.
     
-    Mer information om hur du placerar ett grepp om en postlåda finns [i Hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+    Mer information om hur du placerar ett grepp om en postlåda finns [i Hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
     
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda
 <a name="bkmk_forward"> </a>
@@ -218,7 +218,7 @@ Om den tidigare anställde hade en företagstelefon kan du använda Administrati
     
 4. Välj användaren och välj Visa **information**under **Mobila enheter**. 
     
-5. Välj den mobila enheten på sidan **Information om mobil enhet,** ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)välj rensa datarensningsenhet **Wipe Data**![under **Mobila enheter**och välj sedan **Blockera**. 
+5. Välj den mobila enheten på sidan **Information om mobil enhet,** välj **rensa datarensningsenhet**under Mobila **enheter**och välj ![ sedan ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Blockera**. 
     
 6. Välj **Spara**. 
     
@@ -325,7 +325,7 @@ När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [kom
 
 
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 
 ::: moniker-end

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6114642b5899e2708703e3c0d62cadde25296504
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632821"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322023"
 ---
 # <a name="compliance"></a>Efterlevnad
 
@@ -21,7 +21,7 @@ När du använder Microsoft Managed Desktop IT-as-a-service ger Microsoft dig en
 
 Microsoft Managed Desktop har uppnått följande certifieringar:
 
-- [Standarder för hantering av informationssäkerhet i ISO 27001](../../compliance/offering-ISO-27001.md)
+- [ISO 27001 Standarder för hantering av informationssäkerhet (ISMS)](../../compliance/offering-ISO-27001.md)
 - [ISO 27701 Privacy Information Management System (PIMS)](../../compliance/offering-iso-27701.md)
 - [ISO 27017 Uppförandekod för informationssäkerhetskontroller](../../compliance/offering-ISO-27017.md)
 - [ISO 27018 Uppförandekod för att skydda personuppgifter i molnet](../../compliance/offering-ISO-27018.md)
@@ -38,7 +38,7 @@ Microsoft Managed Desktop har uppnått följande certifieringar:
 Du hittar relevant information, inklusive kontroll och tekniska krav, i [SERVICE Trust Portal (STP)](https://servicetrust.microsoft.com/), den centrala databasen för sådan information om Microsoft Cloud Service-erbjudanden. Du kan hämta granskningsrapporter, efterlevnadscertifikat med mera från avsnittet [Revisionsrapporter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) i STP.
 
 > [!NOTE]
-> Eftersom Microsoft Managed Desktop körs på Azure har vissa relevanta dokument filnamn som "Microsoft Azure, Dynamics 365 och andra onlinetjänster". I dessa dokument kan du vanligtvis hitta Microsoft Managed Desktop under kategorin "Övervakning + förvaltning".
+> Eftersom Microsoft Managed Desktop körs på Azure har relevanta dokument vanligtvis filnamn som "Microsoft Azure, Dynamics 365 och andra onlinetjänster". I dessa dokument kan du vanligtvis hitta Microsoft Managed Desktop under kategorin "Övervakning + förvaltning".
 
 ## <a name="shared-responsibility"></a>Delat ansvar
 

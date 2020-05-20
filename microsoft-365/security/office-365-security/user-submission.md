@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar en postlåda för att samla in skräppost och nätfiske e-post som rapporteras av användare.
-ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262529"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294199"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Exchange Online
 
@@ -31,7 +31,7 @@ I Microsoft 365-organisationer med Exchange Online-postlådor kan du ange en pos
 - [Inbyggd rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (tidigare kallat Outlook Web App)
 
   > [!NOTE]
-  > Om rapporteringen har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)åsidosätter inställningen om du aktiverar användarinlämningar här och gör det möjligt för användare att rapportera meddelanden i Outlook på webben igen.
+  > Om rapporteringen har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)åsidosätter inställningen om du aktiverar användarinlämningar här och gör det möjligt för användare att rapportera meddelanden i Outlook på webben igen.
 
 Du kan också konfigurera meddelanderapporteringsverktyg från tredje part för att vidarebefordra meddelanden till den postlåda som du anger.
 
@@ -75,8 +75,6 @@ Genom att leverera rapporterade meddelanden till en anpassad postlåda i ställe
 
         När du är klar klickar du på **Bekräfta**.
 
-        ![Skicka rapporterade meddelanden till Microsoft och en anpassad postlåda](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > Om du har [inaktiverat skräppostrapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med Outlook i principerna för webbpostlådor, men konfigurerar någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kan användarna rapportera meddelanden till Microsoft i Outlook på webben med tillägget Rapportmeddelande.
 
@@ -86,8 +84,6 @@ Genom att leverera rapporterade meddelanden till en anpassad postlåda i ställe
 
       När du är klar klickar du på **Bekräfta**.
 
-      ![Skicka rapporterade meddelanden till en anpassad postlåda med hjälp av verktyg från tredje part](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## <a name="message-submission-format"></a>Format för meddelandeöverföring
 
 Meddelanden som skickas till anpassade postlådor måste följa ett specifikt e-postformat för inlämning. Ämnet (kuvertrubriken) för inlämningen bör vara i detta format:

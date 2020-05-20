@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online-administratörer hanterar organisationens e-post och postlådor. De återställer till exempel borttagna objekt i en användares postlåda. '
-ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618914"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322081"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Om administratörsrollen i Exchange Online
 
@@ -37,7 +37,7 @@ Här är några av de viktigaste uppgifterna som användare kan göra när de ti
   
 - [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Konfigurera en arkiv- och borttagningsprincip för postlådor i organisationen](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Konfigurera en arkiv- och borttagningsprincip för postlådor i organisationen](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Konfigurera brevlådefunktioner såsom delningsprinciper för postlådor: hur användare kan dela kalender- och kontaktinformation med andra utanför din organisation. 
     
@@ -45,7 +45,7 @@ Här är några av de viktigaste uppgifterna som användare kan göra när de ti
     
 - [Skapa en delad postlåda](../email/create-a-shared-mailbox.md) så att en grupp personer kan övervaka och skicka e-post från en gemensam e-postadress. 
     
-- [E-post anti-spam skydd](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) och malware filter för organisationen. 
+- [E-post anti-spam skydd](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) och malware filter för organisationen. 
     
 - Hantera Microsoft 365-grupper
     

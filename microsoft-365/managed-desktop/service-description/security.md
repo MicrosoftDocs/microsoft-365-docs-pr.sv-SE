@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42809682"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322011"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Säkerhet i Microsoft Managed Desktop
 
@@ -25,6 +25,7 @@ Microsoft Managed Desktop använder flera Microsoft-tekniker för att skydda han
 - [Nätverkssäkerhet](#network-security) – VPN-information och Microsoft Managed Desktop rekommenderad lösning och inställningar
 - [Informationssäkerhet](#information-security) – tillgängliga tjänster som tillval för att ytterligare skydda känslig information 
 
+Om du vill ha information om datalagring, användning och säkerhetsrutiner som används av Microsoft Managed Desktop kan du hämta vårt faktablad på [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 Mer information om säkerhetsoperationsteamet på Microsoft Managed Desktop och hur de arbetar för att skapa säkerhet för dina enheter finns i videon [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
@@ -42,13 +43,13 @@ Konfiguration av säker enhet |   Microsoft Managed Desktop implementerar Micros
 
 
 
-## <a name="identity-and-access-management"></a>Hantering av identitet och åtkomst
+## <a name="identity-and-access-management"></a>Identitets- och åtkomsthantering
 
 Identitets- och åtkomsthantering skyddar företagets tillgångar och affärskritiska data. Microsoft Managed Desktop konfigurerar enheter för att säkerställa säker användning med Azure Active Directory (Azure AD) hanterade identiteter. Det är kundens ansvar att upprätthålla korrekt information i sin Azure AD-klientorganisation. 
 
 Tjänst | Beskrivning
 --- | ---
-Biometrisk autentisering |  Windows Hello tillåter användare att logga in med sitt ansikte eller en PIN-kod, vilket gör lösenord svårare att glömma eller stjäla. Kunderna ansvarar för att implementera de förutsättningar som krävs för sin lokala Active Directory för användning av den här tjänsten i en hybridkonfiguration. Mer information finns i [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Biometrisk autentisering |  Med Windows Hello kan användare logga in med hjälp av ansiktet eller en PIN-kod, vilket gör lösenord svårare att glömma eller stjäla. Kunderna ansvarar för att implementera de förutsättningar som krävs för sin lokala Active Directory för användning av den här tjänsten i en hybridkonfiguration. Mer information finns i [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Standardanvändarbehörighet |  För att skydda systemet och göra det säkrare tilldelas användaren standardanvändarbehörigheter. Detta tilldelas som en del av Windows Autopilot out-of-box-upplevelsen.
 
 
@@ -69,5 +70,5 @@ Du kan konfigurera dessa valfria tjänster för att skydda företagets värdeful
 Tjänst | Beskrivning
 --- | ---
 Dataräddning  | Information som lagras i nyckelmappar på enheten säkerhetskopieras till OneDrive för företag. Microsoft Managed Desktop ansvarar inte för data som inte är synkroniserade med OneDrive för företag. 
-Informationsskydd för Windows |    För företag som kräver hög informationssäkerhet rekommenderar vi [Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) och Azure Information [Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection). 
+Windows Information Protection |    För företag som kräver hög informationssäkerhet rekommenderar vi [Windows Information Protection](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) och Azure Information [Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection). 
 

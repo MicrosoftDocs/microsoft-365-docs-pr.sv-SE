@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs om hur du skickar krypterad e-post med Outlook.
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165691"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322153"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Kryptera eller märka din känsliga e-post
 
@@ -52,7 +52,7 @@ Om du vill kryptera ett meddelande som inte uppfyller en fördefinierad regel el
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
-Du kan läsa allt om hur du konfigurerar e-postkryptering vid [e-postkryptering i Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+Du kan läsa allt om hur du konfigurerar e-postkryptering vid [e-postkryptering i Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Kryptera e-postmeddelanden automatiskt
 
@@ -64,9 +64,9 @@ Du skapar regler för e-postflöde för att kryptera e-postmeddelanden med de ny
 2. Välj panelen Admin. 
 3. Välj **Administrationscenter > Exchange i administrationscentret**. 
 
-Mer information finns i [Definiera regler för e-postflöde för att kryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Mer information finns i [Definiera regler för e-postflöde för att kryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Brand dina krypteringsmeddelanden
 
-Du kan också använda kampanjprofilen för att anpassa utseendet och texten i e-postmeddelandena. Mer information finns i [Lägga till organisationens varumärke i dina krypterade meddelanden](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+Du kan också använda kampanjprofilen för att anpassa utseendet och texten i e-postmeddelandena. Mer information finns i [Lägga till organisationens varumärke i dina krypterade meddelanden](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 

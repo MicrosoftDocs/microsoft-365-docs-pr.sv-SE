@@ -6,7 +6,6 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.date: 05/17/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -26,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln får du lära dig hur du använder Säkra länkar för att skydda din organisation från nätfiske och andra attacker.
-ms.openlocfilehash: 9f6222889d213c25c7411e39f0714ccf09cfe0d9
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3dfa4016b34f430a260c9af4be2ed0c4126dea34
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208953"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294235"
 ---
 # <a name="atp-safe-links"></a>Säkra ATP-länkar
 
@@ -40,7 +39,7 @@ ms.locfileid: "44208953"
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 ATP Safe Links (en del av [Advanced Threat Protection)](office-365-atp.md)kan skydda din organisation genom att tillhandahålla snabbverifiering av webbadresser (URL:er) i [e-postmeddelanden](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) och [Office-dokument](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). Skyddet definieras via [ATP Safe Links-principer](set-up-atp-safe-links-policies.md) som anges av ditt Microsoft 365-säkerhetsteam.
+Office 365 ATP Safe Links (en del av [Office 365 Advanced Threat Protection)](office-365-atp.md)kan skydda din organisation genom att tillhandahålla snabbverifiering av webbadresser (WEBBADRESSER) i [e-postmeddelanden](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) och [Office-dokument](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). Skyddet definieras via [ATP Safe Links-principer](set-up-atp-safe-links-policies.md) som anges av ditt Microsoft 365-säkerhetsteam.
   
 När dina ATP Safe Links-principer är på plats kan globala administratörer, säkerhetsadministratörer och säkerhetsläsare [visa rapporter för avancerat skydd mot hot](view-reports-for-atp.md). Informationen i dessa rapporter kan hjälpa säkerhetsteamet att vidta ytterligare åtgärder för att skydda din organisation eller undersöka säkerhetsincidenter.
 
@@ -48,7 +47,7 @@ När [nya funktioner läggs till i ATP](office-365-atp.md#new-features-in-office
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Hur får ATP Safe Links skydd
 
-**Kontrollera först att din prenumeration innehåller [avancerat skydd mot hot](office-365-atp.md)**. ATP ingår i prenumerationer, till exempel [Microsoft 365 Enterprise,](https://www.microsoft.com/microsoft-365/enterprise/home) [Microsoft 365 Business Premium,](https://www.microsoft.com/microsoft-365/business)Office 365 Enterprise E5, Office 365 Education A5 osv. Om din organisation har en Microsoft 365-prenumeration som inte innehåller Office 365 ATP kan du eventuellt köpa ATP som ett tillägg. Mer information finns i följande resurser: 
+**Kontrollera först att din prenumeration innehåller [ett avancerat skydd mot Office 365](office-365-atp.md) ** Plan 1 eller plan 2. Office 365 ATP ingår i prenumerationer, till exempel [Microsoft 365 Enterprise,](https://www.microsoft.com/microsoft-365/enterprise/home) [Microsoft 365 Business Premium,](https://www.microsoft.com/microsoft-365/business)Office 365 Enterprise E5, Office 365 Education A5 osv. Om din organisation har en Microsoft 365-prenumeration som inte innehåller Office 365 ATP kan du eventuellt köpa ATP som ett tillägg. Mer information finns i följande resurser: 
 
 - [Office 365 Avancerade hotskyddsplaner och priser](https://products.office.com/exchange/advance-threat-protection)
 

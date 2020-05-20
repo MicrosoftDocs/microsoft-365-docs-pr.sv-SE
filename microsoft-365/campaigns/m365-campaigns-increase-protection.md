@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Få hjälp med att höja skyddsnivån i Microsoft 365
-ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39c79f438bd8018f2e70863225664c55e4bcd615
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633719"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322129"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
@@ -35,16 +35,16 @@ Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeratio
 
 Innan du börjar kontrollerar du ditt säkra Office 365-resultat. Office 365 Secure Score analyserar organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Om du vidtar de åtgärder som rekommenderas i den här artikeln ökar du poängen. Målet är inte att uppnå maxpoäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. 
 
-Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Höj skyddsnivån mot skadlig kod i post
 
 Office 365- eller Microsoft 365-miljön innehåller skydd mot skadlig kod, men du kan öka det här skyddet genom att blockera bifogade filer med filtyper som ofta används för skadlig kod. Så här stöter du på skydd mot skadlig kod i e-post:
   
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med dina administratörskontouppgifter. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med dina administratörskontouppgifter. 
     
-2. &amp; Välj **Policy** \> **Anti-Malware**i det vänstra **Threat management**navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Policy** **Threat management** \> **Anti-Malware**i det vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
     
 3. Dubbelklicka på standardprincipen om du vill redigera den här företagsövergripande principen.
     
@@ -69,11 +69,11 @@ Förutom de filer som du blockerade i föregående steg är det också bra att s
 
 Så här skapar du en regel för e-posttransport:
   
-1. Gå till administrationscentret <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> på och välj **Administrationscenter** \> **Exchange**.
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och välj **Administrationscenter** \> **Exchange**.
     
 2. Klicka på **regler**i kategorin **e-postflöde.**
     
-3. Klicka **+** på och sedan på **Skapa en ny regel**.
+3. Klicka på **+** och sedan på Skapa en ny **regel**.
     
 4. Klicka på **Fler alternativ** längst ned i dialogrutan om du vill se hela uppsättningen alternativ. 
     
@@ -103,11 +103,11 @@ Hackare som får tillgång till en användares postlåda kan stjäla din e-post 
   
 Så här skapar du en regel för e-posttransport genom att antingen titta på [den här korta videon](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller så här:
   
-1. Klicka på **Administrationscenter** \> för **Administrationscenter**i Microsoft 365.
+1. Klicka på **Administrationscenter för Administrationscenter** i Microsoft 365. \> **Exchange**
     
 2. Klicka på **regler**i kategorin **e-postflöde.**
     
-3. Klicka **+** på och sedan på **Skapa en ny regel**.
+3. Klicka på **+** och sedan på Skapa en ny **regel**.
     
 4. Klicka på **Fler alternativ** längst ned i dialogrutan om du vill se hela uppsättningen alternativ. 
     
@@ -134,7 +134,7 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
   
 1. Gå till [https://protection.office.com](https://protection.office.com). 
     
-2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
     
 3. På **sidan Policy** väljer du **ATP-anti-nätfiske**.
     
@@ -151,22 +151,22 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
 |Beskrivning  <br/> |Se till att den viktigaste personalen och vår domän inte personifieras.  <br/> |
 |Lägga till användare som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagaren är**. Skriv användarnamn eller ange kandidatens, kampanjchefens och andra viktiga medarbetares e-postadress. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> |
 |Lägga till domäner som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagarens domän är**. Ange den anpassade domän som är kopplad till din Microsoft 365-prenumeration, om du har definierat en sådan. Du kan ange mer än en domän.  <br/> |
-|Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: Välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. Till exempel *<span><span>Alice @contoso.com*.          Om e-post skickas av en personifierad domän: Välj **karantänmeddelande**.  <br/> |
+|Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: Välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. till exempel *Alice <span> <span> @contoso.com*.          Om e-post skickas av en personifierad domän: Välj **karantänmeddelande**.  <br/> |
 |Information om brevlåda  <br/> |Som standard väljs postlådeinformation när du skapar en ny anti-phishing-princip. Lämna den här inställningen **På** för bästa resultat.  <br/> |
 |Lägga till betrodda avsändare och domäner  <br/> |Här kan du lägga till din egen domän eller andra betrodda domäner.  <br/> |
-|Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso.<span> com <span>*, i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
+|Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso. <span> <span> com*, i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
    
 Mer information finns i [Konfigurera Office 365 ATP-principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Skydda mot skadliga bilagor, filer och länkar med advanced threat protection (ATP)
 
-![Banner som https://aka.ms/aboutM365previewpekar på .](../media/m365admincenterchanging.png)
+![Banner som pekar på https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Kontrollera först <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> att du har aktiverat den nya förhandsversionen av administrationscentret i administrationscentret där du har aktiverat den nya förhandsversionen av administrationscentret. Aktivera växlingsknappen bredvid texten **Det nya administrationscentret**.
+Kontrollera först att du har aktiverat den nya förhandsversionen av administrationscentret i administrationscentret där du har aktiverat den nya förhandsversionen av <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> administrationscentret. Aktivera växlingsknappen bredvid texten **Det nya administrationscentret**.
 
    ![Den nya förhandsversionen av administrationscentret på.](../media/previewon.png)
 
-Om du inte ser **inställningssidan** med kort i din klientorganisation ännu &amp; läser du hur du utför de här stegen i Security Compliance Center. Se [Konfigurera ATP-säkra bilagor i Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) och Konfigurera SAFE Links för [ATP i Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
+Om du inte ser **inställningssidan** med kort i din klientorganisation ännu läser du hur du utför de här stegen i Security &amp; Compliance Center. Se [Konfigurera ATP-säkra bilagor i Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) och Konfigurera SAFE Links för [ATP i Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Välj **Installation i**den vänstra navigeringsfältet .
 2. På sidan **Inställningar** väljer du **Visa** på **kortet Öka skydd mot avancerade hot.**</br></br>
@@ -186,9 +186,9 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
   
 Om du vill skapa en ATP-princip för säker bilaga tittar du antingen på [den här korta videon](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller gör följande:
   
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt administratörskonto. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
     
 3. På sidan Princip väljer du **BETRODDa ATP-bilagor**.
     
@@ -223,9 +223,9 @@ Vi rekommenderar att du gör följande:
     
 Om du vill konfigurera ATP Safe Links tittar du på [den här korta träningsvideon](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)eller utför följande steg:
   
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt administratörskonto. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. Välj **Princip**i det **Threat management** &amp; vänstra navigeringsfönstret i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
     
 3. På sidan Princip väljer du **BETRODDA ATP-länkar**.
     
@@ -239,7 +239,7 @@ Så här ändrar du standardprincipen:
     
 Så här skapar du en ny princip som riktar sig till alla mottagare på domänen:
   
-1. Klicka på för att skapa en ny princip under **Principer som gäller för hela organisationen**på **+** sidan Säkra länkar. 
+1. Klicka på för att skapa en ny princip under **Principer som gäller för hela organisationen**på sidan Säkra **+** länkar. 
     
 2. Använd inställningarna i följande tabell.
     
@@ -256,31 +256,31 @@ Mer information finns i [säkra länkar till Office 365 ATP](https://go.microsof
   
 ## <a name="turn-on-the-unified-audit-log"></a>Aktivera den enhetliga granskningsloggen
 
-När du har aktiverat granskningsloggsökningen i säkerhetsorganisationscentret &amp; kan du behålla administratören och annan användaraktivitet i loggen och söka efter den. 
+När du har aktiverat granskningsloggsökningen i &amp; säkerhetsorganisationscentret kan du behålla administratören och annan användaraktivitet i loggen och söka efter den. 
 
 Du måste tilldelas rollen Granskningsloggar i Exchange Online för att aktivera eller inaktivera granskningsloggsökning i din Microsoft 365-prenumeration. Som standard tilldelas den här rollen till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Globala administratörer i Microsoft 365 är som standard medlemmar i den här gruppen.
 
-1. Om du vill aktivera granskningsloggsökningen går <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> du till administrationscentret på och väljer sedan **Efterlevnad** under **Administrationscenter** i den vänstra navigeringscentralen. 
-2. På sidan **Microsoft 365-efterlevnad** väljer du **Fler resurser**och sedan **öppna** på **säkerhetscenterkortet &amp; för Office 365.**
+1. Om du vill aktivera granskningsloggsökningen går du till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och väljer sedan **Efterlevnad** under **Administrationscenter** i den vänstra navigeringscentralen. 
+2. På sidan **Microsoft 365-efterlevnad** väljer du **Fler resurser**och sedan **öppna** på ** &amp; säkerhetscenterkortet för Office 365.**
 
     ![Välj Öppna på & kompatibilitetsbilar.](../media/gotosecandcomp.png)
 3. På sidan säkerhet och efterlevnad väljer du **Sök** och sedan **Granska loggsökning**.
 1. Högst upp på **söksidan för granskningsloggen** väljer du **Aktivera granskning**.
 
-När funktionen är aktiverad kan du söka efter filer, mappar och många aktiviteter. Mer information finns [i sök i granskningsloggen](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
+När funktionen är aktiverad kan du söka efter filer, mappar och många aktiviteter. Mer information finns [i sök i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 ## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Justera inställningar för anonym delning för SharePoint- och OneDrive-filer och -mappar
 
 (ändra standard anonym länk förfallodatum till 14 dagar, ändra standarddelningstyp till "Specifika personer") Så här ändrar du delningsinställningarna för OneDrive och SharePoint:
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och välj sedan **SharePoint** under **Administrationscenter** i den vänstra navigeringscentralen. 
-2. Gå till \> **PolicyDelning**i **Policies** administrationscentret för SharePoint .
+2. Gå till **PolicyDelning** i administrationscentret för SharePoint \> **Sharing**.
 3. På sidan **Delning,** under **Fil- och mapplänkar,** väljer du **Specifika personer**och under **Avancerade inställningar för "Alla" länkar**väljer du Dessa länkar måste upphöra att gälla inom dessa många **dagar**och skriv in 14 (eller ett annat antal dagar som du vill begränsa länkens livstid till).
 
     ![Välj Specifika personer och ange länkförfallodatum till 14 dagar.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Aktivitetsaviseringar
 
-Du kan använda aktivitetsaviseringar för att spåra administratörs- och användaraktiviteter och upptäcka incidenter för att förhindra skadlig kod och dataförlust i organisationen. Din prenumeration innehåller en uppsättning standardprinciper, men du kan också skapa anpassade principer. Mer information finns i [varningsprinciper](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Om du till exempel lagrar en viktig fil i SharePoint som du inte vill att någon ska dela externt kan du skapa ett meddelande som varnar dig om någon delar den.
+Du kan använda aktivitetsaviseringar för att spåra administratörs- och användaraktiviteter och upptäcka incidenter för att förhindra skadlig kod och dataförlust i organisationen. Din prenumeration innehåller en uppsättning standardprinciper, men du kan också skapa anpassade principer. Mer information finns i [varningsprinciper](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). Om du till exempel lagrar en viktig fil i SharePoint som du inte vill att någon ska dela externt kan du skapa ett meddelande som varnar dig om någon delar den.
 
 Följande bild visar standardprinciper som ingår i Microsoft 365. <br/><br/>
     ![Standardvarningsprinciper som ingår i Microsoft 365](../media/alertpolicies.png)
@@ -289,7 +289,7 @@ Följande bild visar standardprinciper som ingår i Microsoft 365. <br/><br/>
 
 Du kan förhindra att personer i organisationen delar sina kalendrar eller också hantera vad de kan dela. Du kan till exempel begränsa delningen till endast ledig/upptagen-tid.
 
-1. Gå till administrationscentret <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> på och välj **Inställningar** \> tjänster & **tillägg**.
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och välj **Inställningar** tjänster \> **& tillägg**.
 2. På sidan **Tjänster & tillägg** väljer du **Kalender**och väljer om personer i organisationen kan dela sina kalendrar med personer utanför som har Office 365 eller Exchange eller med vem som helst. 
     Om du väljer alternativet Dela med vem som helst kan du välja att även bara dela ledig/upptagen-information.
 
