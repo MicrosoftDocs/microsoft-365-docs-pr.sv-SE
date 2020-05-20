@@ -57,6 +57,8 @@
               href: mtp/portals.md
             - name: Felsöka problem
               href: ./mtp/troubleshoot.md
+            - name: Branschtester
+              href: ./mtp/top-scoring-industry-tests.md
         - name: Utvärdera funktioner
           items:
             - name: Översikt över utvärderingslaboratorie
@@ -282,6 +284,8 @@
                   items:
                     - name: Använda administratörsinsändning
                       href: ./office-365-security/admin-submission.md
+                    - name: Ange en postlåda för användarsynpunkter
+                      href: ./office-365-security/user-submission.md
                     - name: Aktivera tillägget för att rapportera meddelande
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Installera och använda tillägget för rapportering av skräppost
