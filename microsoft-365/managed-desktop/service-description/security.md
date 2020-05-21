@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322011"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327732"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Säkerhet i Microsoft Managed Desktop
 
@@ -25,7 +25,7 @@ Microsoft Managed Desktop använder flera Microsoft-tekniker för att skydda han
 - [Nätverkssäkerhet](#network-security) – VPN-information och Microsoft Managed Desktop rekommenderad lösning och inställningar
 - [Informationssäkerhet](#information-security) – tillgängliga tjänster som tillval för att ytterligare skydda känslig information 
 
-Om du vill ha information om datalagring, användning och säkerhetsrutiner som används av Microsoft Managed Desktop kan du hämta vårt faktablad på [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Om du vill ha information om metoder för datalagring, användning och säkerhet som används av Microsoft Managed Desktop kan du hämta vårt faktablad på [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 Mer information om säkerhetsoperationsteamet på Microsoft Managed Desktop och hur de arbetar för att skapa säkerhet för dina enheter finns i videon [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 

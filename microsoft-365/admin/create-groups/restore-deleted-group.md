@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Lär dig hur du återställer en borttagen Microsoft 365-grupp.
-ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140530"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327634"
 ---
 # <a name="restore-a-deleted-group"></a>Återställa en borttagen grupp
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -72,6 +72,9 @@ Om du är global administratör eller gruppadministratör kan du återställa en
 1. Gå till [administrationscentret](https://admin.microsoft.com).
 2. Expandera **grupper**och klicka sedan på **Borttagna grupper**.
 3. Markera den grupp som du vill återställa och klicka sedan på **Återställ grupp**.
+
+> [!NOTE]
+> I vissa fall kan det ta upp till 24 timmar innan gruppen och alla dess data återställs. 
   
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Ta bort en Microsoft 365-grupp permanent
 

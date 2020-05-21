@@ -21,23 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140435"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327248"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Delade postlådor behöver ingen licens om inte postlådan har över 50 GB data. Följ dessa instruktioner om du vill ta bort en licens från en delad postlåda så att du antingen kan tilldela den till en användare eller returnera licensen så att du inte betalar för en licens som du inte behöver.
+Delade postlådor kräver vanligtvis ingen licens. Följ dessa instruktioner om du vill ta bort en licens från en delad postlåda så att du antingen kan tilldela den till en användare eller returnera licensen så att du inte betalar för en licens som du inte behöver.
+
+> [!NOTE]
+> En licens krävs i följande scenarier:
+> 1. Den delade postlådan har mer än 50 GB lagringsutrymme som används.
+> 2. Den delade postlådan använder arkivering på plats.
+> 3. Den delade postlådan placeras i bevarande av juridiska skäl.
+
   
 ## <a name="remove-the-license"></a>Ta bort licensen
 

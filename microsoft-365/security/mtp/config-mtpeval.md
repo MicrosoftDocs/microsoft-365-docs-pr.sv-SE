@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 80b7e209f87d3612e753127f5d1a1b3c36304cc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209416"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330847"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurera Microsoft Threat Protection-pelare för testlabbeta
 
@@ -237,5 +237,14 @@ Klicka på **Nästa**.
 16. Bläddra nedåt och klicka på **Spara inställningar** för att bekräfta de nya integreringarna.
 <br>![Knappen Bild of_Save inställningar som du måste klicka på](../../media/mtp-eval-72.png) <br>
 
+## <a name="turn-on-microsoft-threat-protection"></a>Aktivera Microsoft Hotskydd
+1. Gå till [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigera till **Inställningar** och välj sedan **Microsoft Threat Protection**.
+<br>![Bild of_Microsoft alternativ för skydd av hot från sidan Inställningar för Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
+
+2. Markera kryssrutan **Aktivera Microsoft Threat Protection** och klicka sedan på **Spara**.
+<br>![Bild of_Microsoft alternativ för skydd av hot från sidan Inställningar för Microsoft 365 Security Center](../../media/mtp-eval-72c.png) <br>
+
+Grattis! Du har precis skapat testlabbeta Microsoft Threat Protection! Du kan nu simulera en attack och se hur cross-produktfunktionerna identifierar, skapar aviseringar och automatiskt svarar på en fillös attack på en slutpunkt.
+
 ## <a name="next-steps"></a>Nästa steg
-[Aktivera Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) och generera sedan [en testvarning](generate-test-alert.md).
+[Generera en testavisering](generate-test-alert.md).

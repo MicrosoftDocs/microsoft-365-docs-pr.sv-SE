@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2b87ba629d956b904db6598186a2f2b95012a9ee
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3509bc5031ed83785c2b0de4c0711d04f5d5ac56
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209769"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327028"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jaktschemat
 
@@ -50,14 +50,14 @@ Följande referens listar alla tabeller i schemat. Varje tabellnamn länkar till
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Nätverksegenskaper för datorer, inklusive kort, IP- och MAC-adresser, samt anslutna nätverk och domäner |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Processskapande och relaterade händelser |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Skapande och ändring av registerposter |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Hot & bedömningshändelser för sårbarhetshantering, som anger status för olika säkerhetskonfigurationer på enheter |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Kunskapsbas för olika säkerhetskonfigurationer som används av Threat & Vulnerability Management för att bedöma enheter. omfattar kartläggningar till olika standarder och riktmärken  |
-| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Inventering av programvara på enheter samt alla kända sårbarheter i dessa programvaruprodukter |
-| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-tvm-softwarevulnerability-table.md)** | Kunskapsbas för offentliggjorda sårbarheter, inklusive om det är allmänt tillgängligt för att utnyttja kod |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Hot & bedömningshändelser för sårbarhetshantering, som anger status för olika säkerhetskonfigurationer på enheter |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Kunskapsbas för olika säkerhetskonfigurationer som används av Threat & Vulnerability Management för att bedöma enheter. omfattar kartläggningar till olika standarder och riktmärken  |
+| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)** | Inventering av programvara på enheter samt alla kända sårbarheter i dessa programvaruprodukter |
+| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Kunskapsbas för offentliggjorda sårbarheter, inklusive om det är allmänt tillgängligt för att utnyttja kod |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om filer som är kopplade till e-postmeddelanden |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 e-posthändelser, inklusive e-postleverans och blockering av händelser |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i Microsoft 365-e-postmeddelanden |
-| **[IdentitetInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringshändelser som registrerats av Active Directory och andra Microsoft-onlinetjänster |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Frågeaktiviteter som utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
 

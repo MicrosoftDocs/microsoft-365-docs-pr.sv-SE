@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för din klientorganisation med hjälp av mallappen Microsoft 365 Usage Analytics i Power BI.
-ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 375bc26a2e106d909eb9ea5d0990a054553d71b0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262541"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327678"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
@@ -83,7 +83,7 @@ Om du vill starta mallappen måste du antingen vara global **administratör,** *
 
 5.  Klicka på **Utforska app** om du vill visa appen med exempeldata. Klicka på **Anslut** om du vill ansluta appen till organisationens data.
 
-6.  När du har klickat på **Anslut**skriver du i det klient-ID som du kopierade i steg (1) Nästa på skärmen **Anslut till Microsoft 365** \> **Next**användningsanalys .
+6.  När du har klickat på **Anslut**skriver du i klient-ID (utan streck) som du kopierade i steg (1) på skärmen **Anslut till Microsoft 365 användningsanalys** och väljer **Nästa**.
     
 7. På nästa skärm väljer du **oAuth2** som **autentiseringsmetod** \> **Logga in**. Om du väljer någon annan autentiseringsmetod misslyckas anslutningen till mallappen.
     

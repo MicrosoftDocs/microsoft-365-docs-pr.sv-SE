@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Kom igång med automatiska funktioner för undersökningar och svar i Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159413"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327836"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Komma igång med automatisk undersökning och svar (AIR) i Office 365
 
@@ -31,7 +31,7 @@ I den här artikeln beskrivs det [övergripande flödet](#the-overall-flow-of-ai
 
 ## <a name="the-overall-flow-of-air"></a>Det totala flödet av AIR
 
-På en hög nivå utlöses en avisering och en säkerhetsspelbok startar och automatiserad undersökning, vilket resulterar i resultat och rekommendationer. Här är det totala flödet av AIR, steg för steg:
+På en hög nivå utlöses en avisering och en säkerhetsspelbok startar en automatiserad undersökning, vilket resulterar i resultat och rekommendationer. Här är det totala flödet av AIR, steg för steg:
 
 1. En automatiserad undersökning inleds på något av följande sätt:
 

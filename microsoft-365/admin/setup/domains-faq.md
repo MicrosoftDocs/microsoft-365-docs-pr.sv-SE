@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner genom att hitta svar på dina frågor i vanliga frågor.
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140755"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327118"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Du måste konfigurera DNS-posterna för Office 365-tjänsterna själv (om du int
 
 En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel  *företagsnamn.com*  eller  *universitetsnamn.edu*  . 
   
-Genom att använda en anpassad domän som "**rob\@contoso.com**" med Office 365 kan du skapa trovärdighet och erkännande för ditt varumärke. 
+Genom att använda en anpassad domän som "**rob \@ contoso.com**" med Office 365 kan du skapa trovärdighet och erkännande för ditt varumärke. 
   
 Du kan [köpa en domän i Office 365](../get-help-with-domains/buy-a-domain-name.md), som vi konfigurerar automatiskt, eller så kan du köpa eller ta med en du redan äger från en domänregistrator.
   
@@ -128,11 +128,11 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Inställningars** > licenser i <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">administrationscentret.</a>
+1. Gå till sidan **Inställningars** licenser i > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">administrationscentret.</a>
 
 ::: moniker-end
     
-2. På sidan **Domäner** väljer du den Office 365-domän som du vill överföra till en annan domänregistratorer och väljer sedan **Domänöverföring** > **aktivera domänöverföring**.
+2. På sidan **Domäner** väljer du den Office 365-domän som du vill överföra till en annan domänregistratorer och väljer sedan **Domain Transfer**  >  **Domänöverföring aktivera domänöverföring**.
        
 4. Följ anvisningarna för att förbereda överföringen av domänen.
     
@@ -187,7 +187,7 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Inställningar** \> domäner i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret..</a>
+1. Gå till sidan **Inställningar** domäner i \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret..</a>
 
 ::: moniker-end
 
@@ -258,6 +258,8 @@ Värdar som har stöd för alla DNS-poster som krävs:
 - Skype för företag - Online-skrivbordsklienter kan använda Autodiscover för att automatiskt hitta Skype för företag - Online-tjänsten så att användarna kan logga in utan att behöva ange ett servernamn.
     
 - Skype för företag - Online-klienter på mobila enheter kan använda Autodiscover för att automatiskt hitta Skype för företag - Online-tjänsten så att användarna kan logga in utan att behöva ange ett servernamn.
+
+- Microsoft Teams federation med Skype för företag, antingen lokalt eller online. Mer information finns i [Förbereda organisationens nätverk för Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
  **Om det inte finns stöd för SPF/TXT-poster** kan andra använda din domän för att skicka skräppost eller annan skadlig e-post. SPF-poster identifierar servrarna som är godkända för att skicka e-post från din domän. 
   
@@ -342,7 +344,7 @@ När du lägger till flera domäner i Office 365 kan du välja att ha valfri tj�
 
 Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.com*. 
   
- **Om du vill att din e-post ska se ut som *\@alan contoso.com:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
+ **Om du vill att din e-post ska se ut som *alan \@ contoso.com:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
   
 - **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den initiala domänen du valde till exempel var fourthcoffee.onmicrosoft.com, kan du inte ändra den till fabrikam.onmicrosoft.com. Om du vill använda en annan onmicrosoft.com-domän måste du påbörja en ny prenumeration med Office 365. 
     
@@ -441,13 +443,13 @@ Du kan, men det finns begränsningar:
         
     3. I EAC väljer du **Skydd**och väljer sedan **Anslutningsfilter**. 
         
-    4. I **listan TILLÅT**IP **+** väljer du och lägger till IP-adressen för e-postservern som du kan få från din nuvarande e-postleverantör. 
+    4. I **listan TILLÅT IP**väljer du **+** och lägger till IP-adressen för e-postservern som du kan få från din nuvarande e-postleverantör. 
     
 5. Skapa användarkonton och ange den primära (svars)adressen
     
     1. Gå till administrationscentret för Microsoft 365.
         
-    2. I det vänstra **navigeringsfältet** \> väljer du Aktiva **användare .** 
+    2. I det vänstra **navigeringsfältet** väljer du Aktiva \> **användare .** 
         
     3. Skapa användarkontona.
         

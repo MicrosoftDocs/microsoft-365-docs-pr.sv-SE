@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804803"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327930"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterade skrivbordsenheter 
 
@@ -25,7 +25,7 @@ För att registreras i Microsoft Managed Desktop måste en enhet vara en av föl
 Länkarna till enheter här är endast för din referens. Om du vill beställa enheter kan du arbeta med dina kommersiella kanalkontakter för att se till att du väljer rätt konfigurationer. I den här tabellen är *arkivdatumet* det datum då dessa modeller kommer att bli föremål för en kortare Servicelivslängd för Microsoft Managed Desktop. Alla sådana enheter som finns ombord efter detta datum kommer inte att få en hel treårsperiod av stöd från Microsoft Managed Desktop. Arkiverade enheter visas också i [Microsoft Managed Desktop-arkiverade enheter](archived-device-list.md). *Återgivningsdatum* är det datum då den här modellen inte längre kommer att stödjas av Microsoft Managed Desktop alls. Det datumet tas alla registrerade enheter i den här modellen bort från Microsoft Managed Desktop, oavsett när de registrerades.
 
 >[!NOTE]
->Enheter kan läggas till i den här tabellen när som helst, men vi kommer att ge 90 dagars varsel för eventuella ändringar som påverkar arkiv eller pensionering datum. De enheter som senast **\*** lades till är markerade med .
+>Enheter kan läggas till i den här tabellen när som helst, men vi kommer att ge 90 dagars varsel för eventuella ändringar som påverkar arkiv eller pensionering datum. De enheter som senast lades till är markerade med **\*** .
 
 
 **Microsoft hanterade skrivbordsenheter**
@@ -54,19 +54,23 @@ Länkarna till enheter här är endast för din referens. Om du vill beställa e
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV, IR-kamera eller fingeravtrycksläsare krävs | den 6 juni 2020 | den 6 juni 2023 |
 | [HP Z2 Mini G4 Arbetsstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU med 8QR48AV| den 31 januari 2021 | den 31 januari 2024 |
 |[HP ZBook 14u/15u G6 Mobil arbetsstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS02AV, IR-kamera krävs | Den 30 november 2020 | den 30 november 2023 |
-| [Yta Gå](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | Ingen | Den 2 augusti 2020 | Den 2 augusti 2023 |
-| [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | Ingen | den 16 oktober 2020 | den 16 oktober 2023 |
-| **\*[Surface Laptop 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | Ingen | den 22 oktober 2021 | den 22 oktober 2024 |
-| [Yta Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | Ingen | den 16 oktober 2020 | den 16 oktober 2023 |
-| **\*[Yta Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | Ingen | den 22 oktober 2021 | den 22 oktober 2024 |
-
-
+| [Yta Gå](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | Inga | Den 2 augusti 2020 | Den 2 augusti 2023 |
+| [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | Inga | den 16 oktober 2020 | den 16 oktober 2023 |
+| **\*[Surface Laptop 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | Inga | den 22 oktober 2021 | den 22 oktober 2024 |
+| [Yta Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | Inga | den 16 oktober 2020 | den 16 oktober 2023 |
+| **\*[Yta Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | Inga | den 22 oktober 2021 | den 22 oktober 2024 |
 
 Dessutom måste enheten också uppfylla dessa kriterier:     
 
 - Få en avbildning godkänd av Microsoft Managed Desktop. När du beställer enheter kontrollerar du att de används med Microsoft Managed Desktop.
 - Windows har inte slutförts.
 - Registreras på Microsoft Managed Desktop med funktionen [Enhetsregistrering](https://aka.ms/mmddrhelp)
+
+>[!NOTE]
+>Enheter med en 2,0 GHz eller snabbare processor ger en mycket bättre upplevelse för användare som deltar i dessa aktiviteter:
+>- Använda videokonferenser med Teams. Mer information finns i [maskinvarukrav för Microsoft Teams.](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app)
+>-  Använda en enhet för flera olika arbetsbelastningar.
+>- Använda flera bildskärmar.
 
 **Ytterligare hjälp**
 
