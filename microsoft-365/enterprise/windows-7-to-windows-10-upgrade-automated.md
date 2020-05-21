@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Automatiserade uppgraderingar av Windows 7 till Windows 10 för stora organisationer
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011557"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221404"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Automatiserade på plats-uppgraderingar av Windows 7 till Windows 10 för stora organisationer
 
@@ -90,7 +90,7 @@ Med [förcachealternativet](https://docs.microsoft.com/mem/configmgr/osd/deploy-
 
 Förcacheaktivitetssekvenser kombinerat med kompatibilitetskontroller
 
-Förutom att spara tid för paketnedladdningen kan du förcachelagra uppgraderingspaketet och använda installationsprogrammet för Windows till att bedöma om på plats-uppgradering kommer att lyckas innan du kör den faktiska Windows-uppgraderingen. Följande kommandoradssyntax kan användas för att köra en kompatibilitetskontroll i bakgrunden och ta reda på om installationsprogrammet för Windows Setup bedömer att enheten är redo för uppgradering.
+Förutom att spara tid för paketnedladdningen kan du förcachelagra uppgraderingspaketet och använda installationsprogrammet för Windows till att bedöma om på plats-uppgradering kommer att lyckas innan du kör den faktiska Windows-uppgraderingen. Följande kommandoradssyntax kan användas för att köra en kompatibilitetskontroll i bakgrunden och ta reda på om installationsprogrammet för Windows Setup bedömer att enheten är redo för uppgradering: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 Loggar skickas sedan till din definierade serversökväg och installationsprogrammet för Windows visas inte för användaren och stängs utan användarinteraktion.
 

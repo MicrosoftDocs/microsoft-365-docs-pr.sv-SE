@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Kontrollera villkoren för informationsskyddsbaserade tjänster och infrastruktur för att säkerställa att din konfiguration uppfyller kraven för Microsoft 365 Enterprise.
-ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 19f4fc4ae93c00e33a2f58d8c23582e6e49cf887
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631639"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268227"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Avslutsvillkor för informationsskyddets infrastruktur
 
@@ -116,4 +116,4 @@ Vid behov kan [Steg 7](infoprotect-configure-privileged-access-management.md) hj
 
 Din infrastruktur för informationsskydd i Microsoft 365 Enterprise använder definierade säkerhetsnivåer, ökad säkerhet för Office 365, klassificering med känsliga datatyper och etiketter, Windows Information Protection, dataförlustskydd, e-postkryptering och Privileged Access Management.
 
-Om du har följt distributionen från slutpunkt till slutpunkt för Microsoft 365 Enterprise, är du nu redo att låta [arbetsbelastningar och scenarier](deploy-workloads.md) utnyttja funktioner och konfiguration av den grundläggande infrastrukturen.
+Om du har följt distributionen från slutpunkt till slutpunkt för Microsoft 365 Enterprise, är du nu redo att låta [arbetsbelastningar](deploy-workloads.md) utnyttja funktioner och konfiguration av den grundläggande infrastrukturen.

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Lär dig mer om vilka resurser du kan använda när du distribuerar Microsoft 365 för företag i din organisation.
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031432"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268339"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuera Microsoft 365 för företag
 
@@ -55,7 +55,7 @@ Om du vill distribuera Microsoft 365 för företag själv, kan du:
 
 - Distribuera [den grundläggande infrastrukturen](deploy-foundation-infrastructure.md) för inbyggd säkerhet och integrering med enklare hantering, vilket gör det lättare att se till att klientprogramvaran uppdateras med de senaste förbättringarna inom produktivitet och säkerhet. 
  
-  Den grundläggande infrastrukturen består av en serie numrerade faser som bygger på varandra och som är anpassade för en miljö med stöd för arbetsbelastningar och scenarier i Microsoft 365 för företag. 
+  Den grundläggande infrastrukturen består av en serie numrerade faser som bygger på varandra och som är anpassade för en miljö med stöd för arbetsbelastningar i Microsoft 365 för företag. 
 
   **Om du har en mindre eller nyare organisation** följer du faserna för att skapa din infrastruktur på ett metodiskt sätt.
 
@@ -63,13 +63,13 @@ Om du vill distribuera Microsoft 365 för företag själv, kan du:
 
   **Om du har ett större företag eller organisation** ska dessa faser betraktas som lager i IT-infrastrukturen i stället för en fastställd metod. Du avgör själv hur du på bästa sätt kan följa eventuella krav för varje lager i din organisation.
 
-- Distribuera [arbetsbelastningar och scenarier](deploy-workloads.md) för nyckelproduktivitet överst i infrastrukturen. Dessa frigör kreativitet och samarbete i organisationen.
+- Distribuera [arbetsbelastningar](deploy-workloads.md) för nyckelproduktivitet överst i infrastrukturen. Dessa frigör kreativitet och samarbete i organisationen.
 
-Här visas förhållandet mellan den grundläggande infrastrukturen, arbetsbelastningar och scenarier.
+Här visas förhållandet mellan den grundläggande infrastrukturen, arbetsbelastningar.
 
-![Förhållandet mellan den grundläggande infrastrukturen, arbetsbelastningar och scenarier](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Förhållandet mellan den grundläggande infrastrukturen, arbetsbelastningar](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-Arbetsbelastningar och scenarier ligger högst upp i den grundläggande infrastrukturen. Men alla faser i den grundläggande infrastrukturen behöver inte finnas på plats för att du ska kunna börja använda arbetsbelastningar för produktivitet och samarbete.
+Arbetsbelastningar ligger högst upp i den grundläggande infrastrukturen. Men alla faser i den grundläggande infrastrukturen behöver inte finnas på plats för att du ska kunna börja använda arbetsbelastningar för produktivitet och samarbete.
 
 Påbörja distributionen själv från slutpunkt till slutpunkt [här](deploy-foundation-infrastructure.md).
 
@@ -125,10 +125,6 @@ Services hur Core Services Engineering and Operations (tidigare Microsoft IT) ha
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Hur Contoso Corporation distribuerade Microsoft 365 för företag
 
 Contoso Corporation är en fiktiv och representativ global tillverkningskoncern med huvudkontor i Paris, Frankrike. Se hur [Contoso har distribuerat Microsoft 365 för företag](contoso-case-study.md), fattat stora designbeslut och tagit fram implementeringsinformation för nätverk, identitet, Windows 10 Enterprise, Microsoft 365 Apps för företag, hantering av mobila enheter, informationsskydd och säkerhet. 
-
-## <a name="stay-current-with-deployment-content"></a>Aktuellt distributionsinnehåll
-
-De senaste ändringarna i innehållet finns i [den här artikeln](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Nästa steg
 

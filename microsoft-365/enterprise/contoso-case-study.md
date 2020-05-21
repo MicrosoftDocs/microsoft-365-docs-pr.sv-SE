@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en fiktiv men representativ global organisation använder Microsoft 365 Enterprise.
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625356"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268428"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise för Contoso Corporation
 
@@ -68,14 +68,9 @@ Mer information finns i följande artiklar:
 
   Contoso använder alla typer av Microsoft 365 Enterprise-säkerhetsfunktioner för identitets- och åtkomsthantering, skydd mot hot, informationsskydd och säkerhetshantering.
 
-- [Team för ett topphemligt projekt](contoso-team-for-top-secret-project.md)
+- [Team för ett topphemligt projekt](../solutions/contoso-team-for-top-secret-project.md)
 
-  För att skapa en säker samarbetsmiljö för ett topphemligt projekt upprättade Contoso ett team för strikt reglerade data.
-
-- [SharePoint Online-webbplats för strikt konfidentiella digitala tillgångar](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  För att skydda den immateriella egendomen och underlätta samarbetet för forskningsteamen använde Contoso en SharePoint Online-webbplats för strikt reglerade data.
-
+  För att skapa en säker samarbetsmiljö för ett topphemligt projekt upprättade Contoso ett team med säkerhetsisolering.
 
 ## <a name="next-step"></a>Nästa steg
 

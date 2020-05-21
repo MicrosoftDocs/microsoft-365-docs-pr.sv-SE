@@ -27,12 +27,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
-ms.openlocfilehash: 9a7f6f7c28d429135959fa2612dd24721e35366b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942871"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232787"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 

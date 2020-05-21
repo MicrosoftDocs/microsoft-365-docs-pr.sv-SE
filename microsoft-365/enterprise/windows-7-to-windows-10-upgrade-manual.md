@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Guide för manuell uppgradering av Windows 7 till Windows 10.
-ms.openlocfilehash: ea1705a91baf6b0526e87bcf04529ab2668aa439
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3840a57e3672bdbe0f9fc3c785e20350646a0102
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42810735"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222321"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Steg-för-steg-vägledning för manuell uppgradering av Windows 7 till Windows 10
 
@@ -110,6 +110,6 @@ Härifrån kan du starta processen för att återgå till Windows 7. Efter någr
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>Övergå till Windows 10 på en ny dator
 
-Ett annat alternativ som rekommenderas är att övergå till Windows 10 på en ny dator. Om du vill kan du överföra dina filer från den gamla datorn med säkerhetskopiering i [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10), [inbyggd säkerhetskopiering och återställning i Windows](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10), manuellt med hjälp av en [extern lagringsenhet](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10) eller med verktyg som [PCmover Express från Laplink](https://www.microsoft.com/windows/transfer-your-data). Oavsett vilket av de här alternativen du väljer måste du ändå installera om alla nödvändiga program som inte ingår i Windows 10. Om du vill veta mer om alternativen för manuell övergång från en befintlig dator med Windows 7 till en ny dator med Windows 10 kan du läsa [Övergå till en dator med Windows 10](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10) i Windows-supporten.
+Ett annat alternativ som rekommenderas är att övergå till Windows 10 på en ny dator. Om du vill kan du överföra dina filer från den gamla datorn med säkerhetskopiering i [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10), [inbyggd säkerhetskopiering och återställning i Windows](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10), manuellt med hjälp av en [extern lagringsenhet](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10) eller med verktyg som PCmover Express från Laplink. Oavsett vilket av de här alternativen du väljer måste du ändå installera om alla nödvändiga program som inte ingår i Windows 10. Om du vill veta mer om alternativen för manuell övergång från en befintlig dator med Windows 7 till en ny dator med Windows 10 kan du läsa [Övergå till en dator med Windows 10](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10) i Windows-supporten.
 
 ## <a name="desktop-deployment-center"></a>[Center för skrivbordsdistribution](https://aka.ms/howtoshift)

@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Stegen för att distribuera infrastrukturen för informationsskydd för Microsoft 365 Enterprise.
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631627"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268309"
 ---
 # <a name="phase-6-information-protection"></a>Fas 6: Informationsskydd
 
 ![Fas 6: Informationsskydd](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-Informationsskydd är en uppsättning principer och tekniker som definierar hur du överför, lagrar och bearbetar känslig information. I fas 6 går du igenom inställningar och funktioner för informationsskydd i Microsoft 365 Enterprise som hjälper dig att skydda data för molnbaserade arbetsbelastningar och scenarier.
+Informationsskydd är en uppsättning principer och tekniker som definierar hur du överför, lagrar och bearbetar känslig information. I fas 6 går du igenom inställningar och funktioner för informationsskydd i Microsoft 365 Enterprise som hjälper dig att skydda data för molnbaserade arbetsbelastningar.
 
 >[!Note]
 >Om du redan har distribuerat informationsskydd går du till [avslutsvillkoren](infoprotect-exit-criteria.md) i den här fasen för att kontrollera att det uppfyller kraven och valfria villkor för Microsoft 365 Enterprise.

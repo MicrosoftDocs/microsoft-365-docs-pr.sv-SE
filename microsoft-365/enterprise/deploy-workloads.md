@@ -1,8 +1,8 @@
 ---
-title: Arbetsbelastningar och scenarier i Microsoft 365 för företag
+title: Arbetsbelastningar i Microsoft 365 för företag
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducera organisationens användare för produktivitetsarbetsbelastningarna i Microsoft 365 för företag.
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066221"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268291"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Arbetsbelastningar och scenarier i Microsoft 365 för företag
+# <a name="microsoft-365-for-enterprise-workloads"></a>Arbetsbelastningar i Microsoft 365 för företag
 
 För att få fördelarna med kreativitet och samarbete i Microsoft 365 för företag distribuerar du dessa arbetsbelastningar i den grundläggande infrastrukturen:
 
@@ -29,31 +29,13 @@ För att få fördelarna med kreativitet och samarbete i Microsoft 365 för för
 
 En allmän översikt över hur du migrerar hela organisationen till Microsoft 365 för företag finns i artikeln om [migrering](migration-microsoft-365-enterprise-workload.md), som inkluderar Microsoft Office-klientprodukter, lokala Office-serverprodukter och Microsoft Windows-baserade enheter.
 
-I scenarierna används funktioner och tjänster från hela Microsoft 365 för företag på ett integrerat sätt för att lösa ett företagsbehov. 
+Det här är arbetsbelastningarna i den övergripande distributionsguiden för Microsoft 365 för företag:
 
-Ett sådant behov är att se till att dina anställda kan arbeta produktivt och säkert när de inte är direktanslutna till intranätet. Mer information om hur du distribuerar infrastrukturelementen och får fart på fjärranvändning för viktiga arbetsbelastningar, t.ex. Teams och Exchange Online, finns i scenariot [Ge distansarbetare goda förutsättningar](empower-people-to-work-remotely.md).
-
-Ett annat sådant behov är att skydda strikt reglerade data som lagrats i Microsoft 365. I strikt reglerade data ingår digitala tillgångar som:
-
-- Lyder under regionala bestämmelser.
-- Är de mest värdefulla data för din organisation, t.ex. affärshemligheter, ekonomisk information och personalinformation samt organisationens strategi.
-
-Information om hur du skyddar dessa data från interna och externa hot finns i:
-
-- [Teams för strikt reglerade data](secure-teams-highly-regulated-data-scenario.md)
-- [SharePoint-webbplatser för strikt reglerade data](teams-sharepoint-online-sites-highly-regulated-data.md). 
-
-De här scenarierna hjälper dig att konfigurera ett Microsoft Teams-team eller en SharePoint-webbplats där du på ett säkert sätt kan lagra dina mest värdefulla data.
-
-Det här är arbetsbelastningarna och scenarierna i den övergripande distributionsguiden för Microsoft 365 för företag:
-
-![Arbetsbelastningarna och scenarierna i den övergripande distributionsguiden för Microsoft 365 för företag](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-Fler scenarier finns i [Microsoft 365 Produktivitetsbibliotek](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)). 
+![Arbetsbelastningarna i den övergripande distributionsguiden för Microsoft 365 för företag](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Förutsättningar för grundläggande infrastruktur
 
-*Helst* bör du distribuera arbetsbelastningar och scenarier efter att du har konfigurerat alla faser för den [grundläggande infrastrukturen](deploy-foundation-infrastructure.md). Det säkerställer att alla underliggande grundlager finns på plats för att användarna och deras enheter ska få integrering, säkerhet och bästa möjliga upplevelse.
+*Helst* bör du distribuera arbetsbelastningar efter att du har konfigurerat alla faser för den [grundläggande infrastrukturen](deploy-foundation-infrastructure.md). Det säkerställer att alla underliggande grundlager finns på plats för att användarna och deras enheter ska få integrering, säkerhet och bästa möjliga upplevelse.
 
 | Fas | Resultat |
 |:-------|:-----|
