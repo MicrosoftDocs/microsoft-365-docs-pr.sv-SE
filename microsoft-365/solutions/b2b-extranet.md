@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du skapar en B2B extranätwebbplats eller team med hanterade gästanvändare från en partnerorganisation.
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166155"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342521"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Skapa ett B2B-extranät med hanterade gäster
 
@@ -30,6 +30,12 @@ Med den här metoden för att dela resurser för samarbete kan partnerorganisati
 Den här artikeln går igenom stegen för att skapa ett paket med resurser (i det här fallet en webbplats eller ett team) som du kan dela med en partnerorganisation via en självbetjäningsregistreringsmodell. 
 
 Innan du börjar skapar du den webbplats eller det team som du vill dela med partnerorganisationen och aktiverar den för gästdelning. Mer information [finns i Samarbeta med gäster](collaborate-in-site.md) på en webbplats eller Samarbeta med gäster i ett [team.](collaborate-as-team.md) Vi rekommenderar också att du granskar [Skapa en säker gästdelningsmiljö](create-secure-guest-sharing-environment.md) för information om säkerhets- och efterlevnadsfunktioner som du kan använda för att underhålla dina styrningsprinciper när du samarbetar med gäster.
+
+## <a name="video-demonstration"></a>Videodemonstration
+
+Den här videon visar de procedurer som beskrivs i den här artikeln.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>Anslut partnerorganisationen
 

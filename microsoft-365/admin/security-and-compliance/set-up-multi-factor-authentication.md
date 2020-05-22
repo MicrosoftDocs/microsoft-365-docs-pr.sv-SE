@@ -20,77 +20,100 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: Lär dig hur du använder standardvärden för säkerhet för att konfigurera multifaktorautentisering för användare.
+description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262381"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340780"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
-> [!IMPORTANT]
-> Om du har köpt din prenumeration eller utvärderingsversion efter den 21 oktober 2019 och du oväntat uppmanas att korrigera flera faktorer har [säkerhetsinställningarna aktiverats](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) automatiskt för din prenumeration.
+Baserat på din förståelse av [MFA (Multi Factor Authentication) och dess stöd i Microsoft 365](multi-factor-authentication-microsoft-365.md)är det dags att konfigurera den och distribuera den till din organisation.
 
-Varje ny Microsoft 365-prenumeration har automatiskt [aktiverat säkerhetsstandarder.](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) Det innebär att alla användare måste konfigurera MFA (Multi Factor Authentication) och installera Microsoft Authenticator-appen på sin mobila enhet. Mer information finns i [Konfigurera MFA för ett Microsoft 365-konto](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+Innan du börjar, ta reda på om dessa särskilda villkor gäller för dig och vidta lämpliga åtgärder:
 
-Följande nio administratörsroller måste utföra ytterligare autentisering varje gång de loggar in:
+- Om du har Office 2013-klienter på Windows-enheter [aktiverar du Modern autentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 
-- Global administratör
-- SharePoint-administratör
-- Exchange-administratör
-- Administratör för villkorsstyrd åtkomst
-- Säkerhetsadministratör
-- Kundtjänstadministratör eller lösenordsadministratör
-- Faktureringsadministratör
-- Användaradministratör
-- Administratör av autentisering
+- Om du har katalogtjänster från tredje part med Active Directory Federation Services (AD FS) konfigurerar du Azure MFA Server. Mer information finns i [avancerade scenarier med Azure Multi-Factor Authentication och VPN-lösningar från tredje part.](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)
 
-Alla andra användare kommer att ombes utföra ytterligare autentisering när det behövs.
+## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Steg 1: Bestäm metoden för att kräva att användarna använder MFA
 
-> [!NOTE]
-> Du måste vara global administratör för att kunna konfigurera eller ändra MFA <br><br>
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
+Det finns tre sätt att kräva att användarna använder MFA för inloggningar. Mer information finns [i MFA-supporten i Microsoft 365.](multi-factor-authentication-microsoft-365.md)
 
-Om du tidigare har ställt in MFA med baslinjeprinciper [måste du inaktivera dem för att aktivera säkerhetsstandarder](#move-from-baseline-policies-to-security-defaults). Men om du har Microsoft 365 Business eller din prenumeration innehåller [Azure Active Directory Premium P1 eller Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)kan du också ställa in principer för villkorlig [åtkomst.](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) Om du vill använda principer för villkorlig åtkomst måste du se till att säkerhetsinställningarna är inaktiverade och [att modern autentisering](#enable-modern-authentication-for-your-organization) är aktiverad.
+- Standardvärden för säkerhet (rekommenderas för småföretag)
 
-> [!TIP]
-> Mer om hur du konfigurerar Microsoft Authenticator-appen finns i [Använda Microsoft Authenticator med Office 365.](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411)
+  Om du har köpt din prenumeration eller utvärderingsversion efter den 21 oktober 2019 och du oväntat uppmanas att ange MFA har [säkerhetsinställningarna aktiverats](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) automatiskt för din prenumeration.
+  
+  Varje ny Microsoft 365-prenumeration har automatiskt aktiverat säkerhetsstandarder. Det innebär att alla användare måste konfigurera MFA och installera Microsoft Authenticator-appen på sin mobila enhet.
 
-## <a name="manage-security-defaults"></a>Hantera säkerhetsstandarder
+  Alla användare måste använda Microsoft Authenticator-appen eftersom deras ytterligare verifieringsmetod och äldre autentisering blockeras. 
 
-1. Logga in på [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=834822) som global administratör.
-2. Gå till [sidan Azure Active Directory - Egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-3. Längst ner på sidan väljer du **Hantera säkerhetsstandarder**.
-4. Välj **Ja** om du vill aktivera standardvärden för säkerhet och **Nej** om du vill inaktivera standardvärden för säkerhet och välj sedan **Spara**.
+- Principer för villkorlig åtkomst (rekommenderas för företag)
 
-## <a name="move-from-baseline-policies-to-security-defaults"></a>Flytta från baslinje riktlinjer till säkerhetsstandarder
+  Användare väljer ytterligare verifieringsmetod under MFA-registrering.
 
-1. Gå till [sidan Villkorlig åtkomst - Principer](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
-2. Välj varje baslinjeprincip som är **På** och ange **Aktivera princip** till **Av**.
-3. Gå till [sidan Azure Active Directory - Egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-4. Längst ned på sidan väljer du **Hantera standardvärden för säkerhet**och i fönstret Aktivera säkerhet som **standard** anger du Växla till **Ja**för **säkerhet** och väljer sedan **Spara**. 
+- Per användarkonto (rekommenderas inte)
 
-## <a name="enable-modern-authentication-for-your-organization"></a>Aktivera modern autentisering för din organisation
+  Användare väljer ytterligare verifieringsmetod under MFA-registrering.
 
-Alla Office 2016-klientprogrammen har stöd för MFA genom användning av ADAL (Active Directory Authentication Library). Det innebär att programlösenord inte är nödvändiga för Office 2016-klienter. Se [den här artikeln](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) för mer information.
+## <a name="step-2-test-mfa-on-your-pilot-users"></a>Steg 2. Testa MFA på dina pilotanvändare
 
-Du måste dock se till att din Microsoft 365-prenumeration är aktiverad för ADAL eller modern autentisering.
+Om du använder principer för villkorlig åtkomst eller MFA (rekommenderas inte för användare) väljer du pilotanvändare i ditt företag eller din organisation för att testa MFA-registrering och inloggningar. Till exempel:
 
-1. Om du vill aktivera modern autentisering **väljer** du Moderna autentisering i listan i [administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=834822) \> **Org Settings** **Services** **Modern authentication**
+- För principer för villkorlig åtkomst skapar du en pilotanvändargrupp och en princip som kräver MFA för medlemmarna i gruppen och för alla appar. Lägg sedan till pilotanvändarens konton i gruppen.
 
-2. Markera rutan **Aktivera modern autentisering (rekommenderas)** på panelen **Modern autentisering** och välj sedan **Spara ändringar**. 
+- För MFA per användare aktiverar du MFA för pilotanvändarnas användarkonton en gång.
 
-    ![Panelen Modern autentisering med kryssrutan Aktivera markerad.](../../media/enablemodernauth.png)
-    
-> [!IMPORTANT]
-> Från och med augusti 2017 har alla nya Microsoft 365-prenumerationer som inkluderar Skype för företag online och Exchange online modern autentisering aktiverade som standard. Om du vill kontrollera status för modern autentisering i Skype för företag – Online kan du använda Skype för företag – Online PowerShell med globala administratörsuppgifter. Kör Get-CsOAuthConfiguration när du vill kontrollera utdata för -ClientADALAuthOverride. Om -ClientADALAuthOverride är Allowed är modern autentisering aktiverat.
-Om du vill kontrollera MA-status för Exchange Online går du till [Aktivera modern autentisering i Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
+Arbeta med pilotanvändarna för att ta itu med frågor och problem för att förbereda en smidig utrullning till din organisation.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Steg 3. Informera din organisation om att MFA kommer
 
-[Topp 10 sätt att säkra Microsoft 365 för affärsplaner](secure-your-business-data.md)
+Använd e-postaviseringar, hallaffischer, gruppmöten eller formell utbildning för att se till att dina anställda förstår:
 
-[Aktivera modern autentisering för Office 2013 på Windows-enheter](enable-modern-authentication.md)
+- Varför MFA krävs för inloggningar
+- [Så här registrerar du dig för ytterligare verifieringsmetod](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
+- [Så här loggar du in efter registreringen](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Så här ändrar du sin ytterligare verifieringsmetod](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
+- [Hur man hanterar situationer som en ny smart telefon](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+
+Viktigast av allt, se till att dina anställda förstår ***när MFA kravet kommer att införas*** så att det inte förvånar dem.
+
+## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>Steg 4. Distribuera MFA-kravet till din organisation eller användare
+
+Baserat på din valda MFA-kravmetod, distribuera MFA-autentisering till de anställda utanför dina pilottestare.
+
+### <a name="security-defaults"></a>Standardinställningar för säkerhet
+
+Du aktiverar eller inaktiverar säkerhetsstandarder från **egenskapsfönstret** för Azure Active Directory (Azure AD) i Azure-portalen.
+
+1.  Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med globala administratörsuppgifter.
+2.  Gå till [sidan Azure Active Directory - Egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+3.  Längst ner på sidan väljer du **Hantera säkerhetsstandarder**.
+4.  Välj **Ja** om du vill aktivera standardvärden för säkerhet och **Nej** om du vill inaktivera standardvärden för säkerhet och välj sedan **Spara**.
+
+Om du har använt [grundläggande principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)går du vidare till att använda säkerhetsstandarder.
+
+1.  Gå till [sidan Villkorlig åtkomst - Principer](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
+2.  Välj varje baslinjeprincip som är **På** och ange **Aktivera princip** till **Av**.
+2.  Gå till [sidan Azure Active Directory - Egenskaper](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+4.  Längst ner på sidan väljer du **Hantera säkerhetsstandarder**.
+5.  Välj **Ja** om du vill aktivera standardvärden för säkerhet och **Nej** om du vill inaktivera standardvärden för säkerhet och välj sedan **Spara**.
+
+### <a name="conditional-access-policies"></a>Principer för villkorsstyrd åtkomst
+
+Skapa, konfigurera eller aktivera lämpliga principer som innehåller den grupp användare som kräver MFA för inloggning.
+
+### <a name="per-user-mfa-not-recommended"></a>MFA per användare (rekommenderas inte)
+
+Aktivera användarkonton för MFA som motsvarar din distribution.
+
+### <a name="supporting-your-employees"></a>Stöd till dina anställda
+
+När dina anställda registrerar sig och börjar logga in med MFA, se till att dina IT-specialister, IT-avdelning eller helpdesk kan svara på frågor och åtgärda problem snabbt.
+
+I den här artikeln finns [information om felsökning av MFA-inloggningar](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2). 
+
+
