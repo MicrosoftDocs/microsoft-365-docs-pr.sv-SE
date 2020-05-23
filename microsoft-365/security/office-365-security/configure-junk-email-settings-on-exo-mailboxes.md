@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206634"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347801"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
@@ -41,9 +41,12 @@ När skräppostregeln är aktiverad i postlådan kan EOP flytta meddelanden till
 
 Administratörer kan använda Exchange Online PowerShell för att inaktivera, aktivera och visa status för skräppostregeln på postlådor. Administratörer kan också använda Exchange Online PowerShell för att konfigurera poster i samlingen safelist på postlådor (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockera avsändare).
 
+> [!NOTE]
+> Meddelanden från avsändare som användare har lagt till i sina egna listor över betrodda avsändare hoppar över EOP-filtrering (SCL är -1). Om du vill hindra användare från att lägga till poster i listan Betrodda avsändare i Outlook använder du Grupprincip som nämns i avsnittet [Om skräppost i Outlook](#about-junk-email-settings-in-outlook) senare i det här avsnittet.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Du måste tilldelas behörigheter innan du kan göra dessa procedurer. Du behöver rollen **E-postmottagare** (som tilldelas rollgrupperna **Organisationshantering,** **Mottagarhantering**och **Anpassade e-postmottagare** som standard) eller rollen **Användaralternativ** (som tilldelas rollgrupperna **Organisationshantering** och **HelpDesk** som standard). Information om hur du lägger till användare i rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Observera att en användare med standardbehörigheter kan göra samma procedurer på sin egen postlåda, så länge de har [åtkomst till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
@@ -165,7 +168,7 @@ Om du vill kontrollera att du har konfigurerat insamlingen för säker lista på
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Om inställningar för skräppost i Outlook
 
-Om du vill aktivera, inaktivera och konfigurera inställningarna för skräppostfilter på klientsidan som är tillgängliga i Outlook använder du Grupprincip. Mer information finns i [Administrativa mallfiler (ADMX/ADML) och Anpassningsverktyg för Office för Microsoft 365-appar för företag, Office 2019 och Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+Om du vill aktivera, inaktivera och konfigurera inställningarna för skräppostfilter på klientsidan som är tillgängliga i Outlook använder du Grupprincip. Mer information finns i [Administrativa mallfiler (ADMX/ADML) och Anpassningsverktyg för Office för Microsoft 365-appar för företag, Office 2019 och Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) och [Hur du distribuerar skräppostinställningar, till exempel listan Betrodda avsändare, med hjälp av Grupprincip](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
 
 När skräppostfiltret i Outlook är inställt på standardvärdet **Ingen automatisk filtrering** i alternativ för skräppost i **hemmet** försöker Outlook inte klassificera massage \> **Junk** \> **Junk E-Mail Options** \> **Options**som skräppost, men använder fortfarande samlingen för betrodda användare (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockerade avsändare) för att flytta meddelanden till mappen Skräppost efter leverans. Mer information om dessa inställningar finns [i Översikt över skräppostfiltret](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
