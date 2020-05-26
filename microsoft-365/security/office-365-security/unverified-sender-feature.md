@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln kommer att guida dig om, hur du förhindrar att nätfiskemeddelanden når din postlåda, Outlook.com och Outlook på webben.
-ms.openlocfilehash: 2172a9890d629dd840c3e2e2591d78546899d17e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224885"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352460"
 ---
 # <a name="unverified-sender"></a>Overifierad avsändare
 
@@ -50,7 +50,7 @@ Alla meddelanden som inte autentiserar är inte skadliga. Du bör dock vara för
 
 Om du är Office 365-kund kan du hantera den här funktionen via Office 365 Security & Compliance Center.
 
-- I Security & Compliance Center kan globala administratörer eller säkerhetsadministratörer aktivera eller inaktivera funktionen genom skydd mot förfalskning enligt anti-Phish-principen. Dessutom kan du använda cmdleten **Set-AntiPhishPolicy** i Exchange Online PowerShell. Mer information finns [i Skydd mot nätfiske i Office 365](anti-phishing-protection.md) och [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- I Security & Compliance Center kan globala administratörer eller säkerhetsadministratörer aktivera eller inaktivera funktionen genom skydd mot förfalskning enligt anti-Phish-principen. Dessutom kan du använda cmdleten **Set-AntiPhishPolicy** i Exchange Online PowerShell. Mer information finns [i Skydd mot nätfiske i Office 365](anti-phishing-protection.md) och [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/set-antiphishpolicy).
 
     ![Redigera oautentiserade avsändare i det grafiska gränssnittet.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -58,7 +58,7 @@ Om du är Office 365-kund kan du hantera den här funktionen via Office 365 Secu
 
   - Lägg till domänparet via Spoof Intelligence Insight. Mer information finns i [Genomgång: spoof intelligence insight](walkthrough-spoof-intelligence-insight.md).
 
-  - Lägg till domänparet via cmdleten **Set-PhishFilterPolicy** i Exchange Online PowerShell. Mer information finns i [Ange-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) och [Konfigurera Office 365 ATP-principer för nätfiske och nätfiske.](set-up-anti-phishing-policies.md)
+  - Lägg till domänparet via cmdleten **Set-PhishFilterPolicy** i Exchange Online PowerShell. Mer information finns i [Ange-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy) och [Konfigurera Office 365 ATP-principer för nätfiske och nätfiske.](set-up-anti-phishing-policies.md)
 
 Dessutom tillämpar vi inte den overifierade avsändaren om meddelandet levererades till Inkorgen via regler för e-postflöde (kallas även transportregler) eller safe domain list (policyer mot skräppost).
 

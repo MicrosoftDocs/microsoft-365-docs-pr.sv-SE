@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om asf-inställningarna (Advanced Spam Filter) som är tillgängliga i anti-spam-policyer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 904513780ca472efb91cfcd914ad6c72d6c720f7
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213418"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352482"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Inställningar för avancerat spamfilter (ASF) i EOP
 
@@ -35,7 +35,7 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller friståend
 > [!NOTE]
 > Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för skräppostfiltrering. Du kan inte rapportera meddelanden som filtreras av ASF som falska positiva identifieringar. Du kan identifiera meddelanden som filtrerats efter ASF genom att: <ul><li>Periodiska meddelanden om skräppost för slutanvändare.</li><li>Förekomsten av filtrerade meddelanden i karantän.</li><li>De specifika `X-CustomSpam:` X-header-fält som läggs till i meddelanden enligt beskrivningen i det här avsnittet.</li></ul>
 
-I följande avsnitt beskrivs ASF-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) och [Set-HostedConfilterFason ).](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy) Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
+I följande avsnitt beskrivs ASF-inställningarna och alternativen som är tillgängliga i anti-spam-principer i Security & Compliance Center och i Exchange Online PowerShell eller fristående EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) och [Set-HostedConfilterFason ).](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy) Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivera, inaktivera eller testa ASF-inställningar
 

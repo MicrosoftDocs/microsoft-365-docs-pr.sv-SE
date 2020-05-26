@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du dirigerar skräppost till mappar för skräppost från användare i hybridmiljö för Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209481"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351969"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer
 
@@ -44,7 +44,7 @@ Mer information om dessa rubrikvärden finns i [Rubriker för skräppostmeddelan
 I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC) och Exchange Management Shell (Exchange PowerShell) i den lokala Exchange-organisationen.
 
 > [!TIP]
-> I stället för att leverera meddelandena till den lokala användarens skräppostmapp kan du konfigurera anti-spam-principer i EOP för att sätta skräppostmeddelanden i karantän i EOP. Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
+> I stället för att leverera meddelandena till den lokala användarens skräppostmapp kan du konfigurera anti-spam-principer i EOP för att sätta skräppostmeddelanden i karantän i EOP. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -52,13 +52,13 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
 - Om och när ett meddelande levereras till mappen Skräppost i en lokal Exchange-organisation styrs av en kombination av följande inställningar:
 
-  - Parametervärdet _SCLJunkThreshold_ på [cmdlet Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) i Exchange Management Shell. Standardvärdet är 4, vilket innebär att en SCL på 5 eller högre bör leverera meddelandet till användarens skräppostmapp.
+  - Parametervärdet _SCLJunkThreshold_ på [cmdlet Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) i Exchange Management Shell. Standardvärdet är 4, vilket innebär att en SCL på 5 eller högre bör leverera meddelandet till användarens skräppostmapp.
 
-  - Parametervärdet _SCLJunkThreshold_ på cmdlet [set-postlådan](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) i Exchange Management Shell. Standardvärdet är tomt ($null), vilket innebär att organisationsinställningen används.
+  - Parametervärdet _SCLJunkThreshold_ på cmdlet [set-postlådan](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) i Exchange Management Shell. Standardvärdet är tomt ($null), vilket innebär att organisationsinställningen används.
 
   Mer information finns i [SCL-tröskelvärden (Exchange spam Confidence Level).](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl)
 
-  - Om skräppostregeln är aktiverad på postlådan (parametervärdet _Aktiverad_ $true på cmdleten [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) i Exchange Management Shell). Det är skräppostregeln som faktiskt flyttar meddelandet till mappen Skräppost efter leverans. Som standard är skräppostregeln aktiverad på postlådor. Mer information finns i [Konfigurera inställningar för antispam för Exchange på postlådor](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  - Om skräppostregeln är aktiverad på postlådan (parametervärdet _Aktiverad_ $true på cmdleten [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) i Exchange Management Shell). Det är skräppostregeln som faktiskt flyttar meddelandet till mappen Skräppost efter leverans. Som standard är skräppostregeln aktiverad på postlådor. Mer information finns i [Konfigurera inställningar för antispam för Exchange på postlådor](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
 - Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Om du vill öppna Exchange Management Shell finns i [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
 
@@ -78,7 +78,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
 3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
 
-   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Till exempel:
+   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Ett exempel:
 
      - EOP SFV:SPM till SCL 6
 
@@ -112,7 +112,7 @@ Använd följande syntax för att skapa de tre reglerna för e-postflöde:
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-Till exempel:
+Ett exempel:
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
@@ -126,7 +126,7 @@ New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-F
 New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
 ```
 
-Detaljerad information om syntax och parametrar finns i [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+Detaljerad information om syntax och parametrar finns i [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 

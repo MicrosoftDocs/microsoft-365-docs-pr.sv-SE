@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160384"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352552"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Till identitet och bortom - En arkitekt synvinkel
 
@@ -183,7 +183,7 @@ Vissa kunder väljer att gå med mer än en klient. Detta bör vara ett mycket n
 - Simulering av en kunds miljö som inte ändrar kundens produktionsmiljö. 
 - Utveckling av mjukvara för kunder.
 
-I dessa scenarier för flera innehavare vill kunderna ofta behålla vissa konfigurationer på samma sätt mellan klienter eller rapportera om konfigurationsändringar och drifts. Detta innebär ofta att gå från manuella ändringar till konfiguration som kod. Microsoft Premiere-supporten erbjuder en workshop för dessa [https://Microsoft365dsc.com](https://Microsoft365dsc.com)typer av krav baserat på den här offentliga IP:et: .
+I dessa scenarier för flera innehavare vill kunderna ofta behålla vissa konfigurationer på samma sätt mellan klienter eller rapportera om konfigurationsändringar och drifts. Detta innebär ofta att gå från manuella ändringar till konfiguration som kod. Microsoft Premiere-supporten erbjuder en workshop för dessa typer av krav baserat på den här offentliga [https://Microsoft365dsc.com](https://Microsoft365dsc.com) IP:et: .
 
 
 ### <a name="multi-geo"></a>Multi-Geo 
@@ -209,7 +209,7 @@ Det finns en lång och växande lista över [inbyggda roller](https://docs.micro
 
 Det är inte möjligt att delegera allt (även om gapet minskar), vilket innebär att den globala administratörsrollen skulle behöva användas ibland. Konfiguration som kod och automatisering bör övervägas i stället för personer som är medlemmar i den här rollen.
 
-**Microsoft**365-administrationscentret har ett mer användarvänligt gränssnitt men har en delmängd av funktioner jämfört med Azure AD-administratörsupplevelsen. Båda portalerna använder samma Azure AD-roller, så ändringar sker på samma plats. Om du vill ha ett administratörsgränssnitt för identitetshantering [https://aad.portal.azure.com](https://aad.portal.azure.com)utan all Azure-röran använder du . 
+**Microsoft**365-administrationscentret har ett mer användarvänligt gränssnitt men har en delmängd av funktioner jämfört med Azure AD-administratörsupplevelsen. Båda portalerna använder samma Azure AD-roller, så ändringar sker på samma plats. Om du vill ha ett administratörsgränssnitt för identitetshantering utan all Azure-röran använder du [https://aad.portal.azure.com](https://aad.portal.azure.com) . 
 
 Vad heter det? Gör inte antaganden från namnet på rollen. Språket är inte ett mycket exakt verktyg. Målet bör vara att definiera åtgärder som måste delegeras innan du tittar på vilka roller som behövs. Att lägga till någon i rollen "Säkerhetsläsare" gör inte att de ser säkerhetsinställningar över allt. 
 
@@ -243,29 +243,29 @@ Som tidigare nämnts, många kunder är ute efter att uppnå en mer detaljerad d
 
 - **Byt online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft-team**  -  [ https://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft-team**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **Ediscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **Filtrering av**  -  [ https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search behörighet](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **Efterlevnadsgränser**  -  [ https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **Avancerad eDiscovery**  -  [ https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **Filtrering av**  -  behörighet [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **Efterlevnadsgränser**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **Avancerad eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer (yammer)** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **Multi-geo** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** –[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   Den här länken är till dokumentationens rot. Det finns flera typer av tjänster med variationer i administratörs-/delegeringsmodellen.
-- **Power Platform** -  [ Kraftplattformhttps://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **Power-appar**  -  [ https://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **Kraftplattform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **Power-appar**  -  [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     Det finns flera typer med variationer i administratörs-/delegeringsmodellerna.
-  + **Power Automate** -  [ Strömautomathttps://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI (på andra)**  -  [ https://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **Strömautomat**  -  [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI (på andra)**  -  [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 Säkerhet och delegering av dataplattformar (vilken Power BI är en komponent) är ett komplext område.
-- **MEM/Intune**  -  [ https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **Microsoft Defender ATP**  -  [ https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **Microsoft Defender ATP**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
 - **Microsofts hotskydd** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Säkerhet i Microsoft Cloud-appar** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- **Stream** -  [ Strömmahttps://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **Informationshinder**  -  [ https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- **Strömma**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **Informationshinder**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
-För övrigt har sökning i Docs varit [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)riktigt bra på sistone - . 
+För övrigt har sökning i Docs varit riktigt bra på sistone [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) - . 
 
 
 ### <a name="activity-logs"></a>Aktivitetsloggar
@@ -273,7 +273,7 @@ Office 365 har en [enhetlig granskningslogg](https://docs.microsoft.com/microsof
 
 Exempel på Microsoft 365-loggar som nås via andra API:er är följande:
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (aktiviteter som inte är relaterade till Office 365)
-- [Spårning av exchange-meddelanden](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+- [Spårning av exchange-meddelanden](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
 - Hot/UEBA-system som beskrivs ovan (till exempel Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender ATP, etc.)
 - [Microsofts informationsskydd](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender Avancerat skydd.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

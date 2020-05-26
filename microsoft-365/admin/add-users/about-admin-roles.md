@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618926"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294223"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
-Din prenumeration innehåller en uppsättning administratörsroller som du kan tilldela användare i organisationen. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i administrationscentret. Mer information finns i [Tilldela administratörsroller](assign-admin-roles.md)
+Din Microsoft 365- eller Office 365-prenumeration innehåller en uppsättning administratörsroller som du kan tilldela användare i organisationen i Administrationscenter för Microsoft 365. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i administrationscentret.
 
-> [!TIP] 
-> Letar du efter de detaljerade rollbeskrivningarna? Ta en titt på [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+I Administrationscenter för Microsoft 365 kan du hantera Azure Active Directory-roller och Microsoft Intune-roller. Dessa roller är dock en deluppsättning av rollerna som finns tillgängliga i Azure Active Directory-portalen och administrationscentret för Intune.
+
+Letar du efter de detaljerade rollbeskrivningarna för Azure Active Directory? Ta en titt på [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+
+Letar du efter de detaljerade rollbeskrivningarna för Microsoft Intune? Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+
+Mer information om hur du tilldelar roller i Administrationscenter för Microsoft 365 finns i [Tilldela administratörsroller](assign-admin-roles.md).
 
 ## <a name="things-to-consider"></a>Saker att tänka på...
 
@@ -44,32 +49,21 @@ Eftersom administratörer har tillgång till känsliga data och filer rekommende
 | Tilldela *begränsade* roller     | Genom att tilldela *begränsade* roller får administratörerna bara den behörighet som behövs för att få jobbet gjort. Om du till exempel vill att någon ska återställa lösenord för anställda bör du inte tilldela den obegränsade rollen som global administratör, i stället kan du tilldela en begränsad roll som lösenordsadministratör eller supportadministratör. På så sätt skyddar du dina data.                 |
 | Konfigurera multifaktorautentisering för administratörer                  |    Det är en bra idé att kräva MFA för alla användare, men administratörer i synnerhet bör använda MFA för att logga in. MFA gör att användarna måste använda ytterligare en identifieringsmetod för att verifiera sin identitet. Administratörer kan ha tillgång till stora mängder kund- och personaldata och om du använder MFA är själva lösenordet oanvändbart utan en andra verifiering i händelse av att administratörslösenordet äventyras.  <br><br>När du aktiverar MFA måste användaren ange en alternativ e-postadress och ett telefonnummer för kontoåterställning nästa gång användaren loggar in.  <br> [Konfigurera multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>Vissa roller saknas i Aktiva användare > Hantera administratörsroller. Var finns de?
-Som standard visar vi först de roller som de flesta organisationer använder. Om du inte hittar någon roll går du till slutet av listan och väljer **Visa fler roller**.
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>Hur ser jag vilka behörigheter som jag tilldelats?
 Om du får ett meddelande i administrationscentret om att du inte har behörighet att redigera inställningar eller sidor beror det på att du har tilldelats en roll som inte har den behörigheten.
 
-## <a name="what-about-the-azure-active-directory-roles"></a>Vad gäller för Azure Active Directory-roller? 
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Azure Active Directory-roller i Administrationscenter för Microsoft 365
 
-Azure-portalen har fler roller än de som finns tillgängliga i administrationscentret för Microsoft 365. Om du har ett stort företag kan det finnas roller i Azure-portalen som uppfyller organisationens behov.
-
-En lista och beskrivning av alla Azure Active Directory-roller finns i [Behörigheter för administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+I administrationscentret för Microsoft 365 kan du hantera över 30 Azure AD-roller. Dessa roller är bara en underuppsättning av rollerna som finns tillgängliga i Azure-portalen. Om du har ett stort företag kan det finnas roller i Microsoft Azure-portalen som uppfyller organisationens behov.
 
 En användare som har tilldelats en administratörsroll får samma behörigheter till alla molntjänster som organisationen prenumererar på, oavsett om du tilldelar rollen i administrationscentret för Microsoft 365, i Azure-portalen eller med Azure AD-modulen för Windows PowerShell.
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Tillgängliga roller i administrationscentret för Microsoft 365
-
-I administrationscentret för Microsoft 365 kan du hantera över 30 Azure AD-roller. Dessa roller är bara en underuppsättning av rollerna som finns tillgängliga i Azure-portalen.
 
 ::: moniker range="o365-worldwide"
 
-I administrationscentret kan du gå till **Roller** och välj sedan en roll för att öppna informationsfönstret. Välj fliken **Behörigheter** om du vill visa en detaljerad lista över vilka behörigheter som administratörer som tilldelats rollen har. 
+I Administrationscenter för Microsoft 365 går du till **Roller** och väljer sedan en roll för att öppna informationsfönstret. Välj fliken **Behörigheter** om du vill visa en detaljerad lista över vilka behörigheter som administratörer som tilldelats rollen har. Välj fliken **Tilldelad** eller **Tilldelade administratörer** om du vill lägga till användare i roller.
 
 ::: moniker-end
 
-Du behöver antagligen bara tilldela följande roller i organisationen. Om du letar efter detaljerad information, inklusive cmdlets som är kopplade till en roll, kan du läsa [Behörigheter för administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Du behöver antagligen bara tilldela följande roller i organisationen. Som standard visar vi först de roller som de flesta organisationer använder. Om du inte hittar någon roll går du till slutet av listan och väljer **Visa fler roller**. Om du letar efter detaljerad information, inklusive cmdlets som är kopplade till en roll, kan du läsa [Behörigheter för administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 |Administratörsroll     |Vem ska ha tilldelas denna roll?  |
 |---------|---------|
@@ -84,7 +78,7 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Om du le
 |Teams-tjänstadministratör    |   Tilldela Teams-tjänstadministratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för Teams. <br><br>Teams-tjänstadministratörer kan också: <br> – Hantera möten <br> – Hantera konferensbryggor <br> – Hantera alla organisationsomfattande inställningar, inklusive inställningar för federation, team-uppgradering och team-klienter   |
 |Användaradministratör     |    Tilldela rollen som användaradministratör till användare som behöver göra följande för alla användare: <br> – Lägga till användare och grupper <br> – Tilldela licenser <br> – Hantera de flesta användaregenskaper <br> – Skapa och hantera användarvyer <br> – Uppdatera giltighetsprinciper för lösenord <br> – Hantera tjänsteförfrågningar <br> – Övervaka tjänstens status <br><br>  Användaradministratören kan också utföra följande åtgärder för användare som inte är administratörer och för användare som har tilldelats följande roller: katalogläsare, gästinbjudare, supportadministratör, meddelandecenter-administratör, rapportläsare: <br> – Hantera användarnamn<br> – Ta bort och återställa användare<br> – Återställa lösenord <br> – Tvinga att användare loggar ut <br> – Uppdatera enhetsnycklar (FIDO)   |
 
-### <a name="all-roles"></a>Alla roller
+### <a name="all-azure-ad-roles"></a>Alla Azure Active Directory-roller
 
  Här följer en lista över alla tillgängliga administratörsroller i administrationscentret för Microsoft 365.
 
@@ -134,6 +128,17 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Om du le
 |Supporttekniker för Teams-kommunikation     |    Läser information om samtal för alla samtalsdeltagare för att felsöka kommunikationsproblem.     |
 |Supportspecialist för Teams-kommunikation     |    Läser information om användarsamtal för specifika användare för att felsöka kommunikationsproblem.|
 |Användaradministratör     |   Återställer användarlösenord, skapar och hanterar användare och grupper samt filter, hanterar tjänsteförfrågningar och övervakar tjänstens status.|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft Intune-roller i Administrationscenter för Microsoft 365
+
+|Administratörsroll     |Vem ska ha tilldelas denna roll?  |
+|---------|---------|
+|Programhanterare     |   Tilldela rollen som programhanterare till användare som hanterar livscykel för mobilappar, konfigurerar princip-hanterade appar och visar enhetsinformation och konfigurationsprofiler.  |
+|Supportoperatör     |   Tilldela rollen supportoperatör till användare som tilldelar appar och principer till användare och enheter. |
+|Intune rolladministratör    |   Tilldela Intune rolladministratör till användare som kan tilldela Intune-behörigheter till andra administratörer och kan hantera anpassade och inbyggda Intune-roller.   |
+|Princip- och profilhanterare     |   Tilldela rollen princip- och profilhanterare till användare som hanterar principer för efterlevnad, konfigurationsprofiler och Apple-registrering.   |
+|Skrivskyddsoperatör     |   Tilldela rollen skrivskyddsoperatör till användare som endast kan visa användare, enheter, registreringsinformation och konfigureringar.   |
+|Skoladministratör     |   Tilldela rollen skoladministratör till användare för fullständig åtkomst till hantering av Windows 10 och iOS-enheter, appar och konfigurationer i Intune for Education.   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Delegerad administration för Microsoft-partners
 

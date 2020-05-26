@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 370d2ff5f98b507cd819a57e4b0de613de7ab395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035426"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351013"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -102,7 +102,7 @@ Om du vill visa information om särskilda användare ersätter du \<E-postadress
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Se [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress) för detaljerad information om syntax och parametrar.
+Se [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress) för detaljerad information om syntax och parametrar.
 
 Om du vill ta bort användare från listan med åtkomstbegränsade användare ersätter du \<E-postadress\> med deras e-postadress och kör följande kommando:
 
@@ -110,4 +110,4 @@ Om du vill ta bort användare från listan med åtkomstbegränsade användare er
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Se [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress) för detaljerad information om syntax och parametrar.
+Se [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress) för detaljerad information om syntax och parametrar.

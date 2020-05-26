@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Använd den här testlabbet-guiden om du vill aktivera hantering av privilegierad åtkomst din Microsoft 365 Enterprise-testmiljö.
-ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632869"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352528"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Hantering av privilegierad åtkomst för microsoft 365 Enterprise-testmiljön
 
@@ -62,9 +62,9 @@ I den här fasen kontrollerar du att principen för privilegierad åtkomst funge
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testförmåga att utföra en uppgift SOM INTE har definierats i en privilegierad åtkomstprincip
 
-Anslut först till Exchange Management PowerShell med autentiseringsuppgifterna för en användare som konfigurerats som global administratör i testmiljön och försök skapa en ny journalregel. [Aktiviteten Ny journalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) har för närvarande inte definierats i en privilegierad åtkomstprincip för din organisation.
+Anslut först till Exchange Management PowerShell med autentiseringsuppgifterna för en användare som konfigurerats som global administratör i testmiljön och försök skapa en ny journalregel. [Aktiviteten Ny journalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) har för närvarande inte definierats i en privilegierad åtkomstprincip för din organisation.
 
-1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** på den lokala datorn med hjälp av det globala administratörskontot för din testmiljö.
+1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**Microsoft Exchange Online Remote PowerShell Module på den lokala datorn  >  **Microsoft Exchange Online Remote PowerShell Module** med hjälp av det globala administratörskontot för din testmiljö.
 
 2. Skapa en ny journalregel för din organisation i PowerShell för Exchange Management:
 
@@ -81,7 +81,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 1. Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med autentiseringsuppgifterna för det globala administratörskontot för testmiljön.
 
-2. Gå till **Inställningar** > **för säkerhet & sekretessbehörighetsåtkomst** > i**administrationscentret**.
+2. Gå till **Inställningar**  >  **&**  >  **sekretessbehörighet i**administrationscentret .
 
 3. Välj **Hantera åtkomstprinciper och begäranden**.
 
@@ -103,7 +103,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Testgodkännandekrav för den new-journalRule-uppgift som definierats i en princip för privilegierad åtkomst
 
-1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** på den lokala datorn med hjälp av ett globalt administratörskonto för din testmiljö.
+1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**Microsoft Exchange Online Remote PowerShell Module på den lokala datorn  >  **Microsoft Exchange Online Remote PowerShell Module** med hjälp av ett globalt administratörskonto för din testmiljö.
 
 2. Skapa en ny journalregel för din organisation i PowerShell för Exchange Management:
 
@@ -125,7 +125,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med hjälp av det globala administratörskontot för testmiljön.
 
-2. Gå till **Inställningar** > **för säkerhet & sekretessbehörighetsåtkomst** > i**administrationscentret**.
+2. Gå till **Inställningar**  >  **&**  >  **sekretessbehörighet i**administrationscentret .
 
 3. Välj **Hantera åtkomstprinciper och begäranden**.
 
@@ -147,7 +147,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med autentiseringsuppgifterna för Användare 3 i testmiljön (medlem i säkerhetsgruppen "Privilegierade åtkomstgodtagare" i testmiljön).
 
-2. Gå till **Inställningar** > **för säkerhet & sekretessbehörighetsåtkomst** > i**administrationscentret**.
+2. Gå till **Inställningar**  >  **&**  >  **sekretessbehörighet i**administrationscentret .
 
 3. Välj **Hantera åtkomstprinciper och begäranden**.
 
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testa att skapa en ny journalregel med privilegierad åtkomst godkänd för aktiviteten Ny journalregel
 
-1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** på den lokala datorn med hjälp av det globala administratörskontot för din testmiljö.
+1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**Microsoft Exchange Online Remote PowerShell Module på den lokala datorn  >  **Microsoft Exchange Online Remote PowerShell Module** med hjälp av det globala administratörskontot för din testmiljö.
 
 2. Skapa en ny journalregel för din organisation i PowerShell för Exchange Management:
 
@@ -169,7 +169,7 @@ New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain>
 
 Utforska ytterligare funktioner och funktioner för [informationsskydd](m365-enterprise-test-lab-guides.md#information-protection) i testmiljön.
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 

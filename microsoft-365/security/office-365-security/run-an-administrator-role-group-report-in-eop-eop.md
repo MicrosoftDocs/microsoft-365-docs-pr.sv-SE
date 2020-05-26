@@ -1,5 +1,5 @@
 ---
-title: Kör en rapport över administratörsrollgrupper i fristående EOP
+title: Köra en administratörsrapport för rollgrupp i fristående EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du kör en administratörsrollgruppsrapport i fristående Exchange Online Protection (EOP). Den här rapporten loggar när en administratör lägger till medlemmar i eller tar bort medlemmar från administratörsrollgrupper, EOP loggar varje förekomst.
-ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209181"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350945"
 ---
-# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Kör en rapport över administratörsrollgrupper i fristående EOP
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Köra en administratörsrapport för rollgrupp i fristående EOP
 
 I fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor, när en administratör lägger till medlemmar i eller tar bort medlemmar från administrativa rollgrupper, loggar tjänsten varje förekomst. Mer information om rollgrupper i fristående EOP finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md).
 
@@ -31,7 +31,7 @@ När du kör en administratörsrollgruppsrapport i Administrationscenter för Ex
 
 - Om du vill öppna administrationscentret för Exchange finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du behöver rollen Granskningsloggar eller granskningsloggar för endast granskning, som tilldelas rollgrupperna ComplianceManagement, OrganizationManagement (global admins) och SecurityAdministrator som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver rollen Granskningsloggar eller granskningsloggar för endast granskning, som tilldelas rollgrupperna ComplianceManagement, OrganizationManagement (global admins) och SecurityAdministrator som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Information om kortkommandon som kan gälla för procedurerna i det här avsnittet finns [i Kortkommandon för administrationscentret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -115,7 +115,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 Om dina sökningar returnerar många loggposter rekommenderar vi att du använder proceduren i **Använd Exchange Online PowerShell för att söka efter granskningsloggposter och skicka resultat till en mottagare** senare i det här avsnittet. Proceduren i det avsnittet skickar en XML-fil som en e-postbilaga till de mottagare du anger, så att du lättare kan extrahera de data du är intresserad av.
 
-Detaljerad syntax- och parameterinformation finns i [Sök-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+Detaljerad syntax- och parameterinformation finns i [Sök-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Visa information om granskningsloggposter
 

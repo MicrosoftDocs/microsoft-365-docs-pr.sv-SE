@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Lär dig mer om hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda katalogsynkronisering, EAC och PowerShell för att hantera användare.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208651"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352438"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
 
@@ -35,11 +35,11 @@ För fristående EOP-organisationer med ett litet antal användare kan du lägga
 
 - Om du vill öppna Administrationscenter för Exchange (EAC) finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - När du skapar e-postanvändare i EOP PowerShell kan du stöta på begränsning. EOP PowerShell-cmdlets använder också en batchbearbetningsmetod som resulterar i en spridningsfördröjning på några minuter innan resultaten av kommandona är synliga.
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du behöver som standard rollerna För skapande av e-postmottagare (skapa) och E-postmottagare (ändra) som har tilldelats rollgrupperna OrganizationManagement (global admins) och RecipientManagement som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver som standard rollerna För skapande av e-postmottagare (skapa) och E-postmottagare (ändra) som har tilldelats rollgrupperna OrganizationManagement (global admins) och RecipientManagement som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Information om kortkommandon som kan gälla för procedurerna i det här avsnittet finns [i Kortkommandon för administrationscentret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Hämta mottagare](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) och [hämta användare](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+Detaljerad syntax- och parameterinformation finns i [Hämta mottagare](https://docs.microsoft.com/powershell/module/exchange/get-recipient) och [hämta användare](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>Använda fristående EOP PowerShell för att skapa e-postanvändare
 
@@ -178,7 +178,7 @@ I det här exemplet skapas en e-postanvändare med följande inställningar:
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ny-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser).
+Detaljerad syntax- och parameterinformation finns i [Ny-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>Använda fristående EOP PowerShell för att ändra e-postanvändare
 
@@ -205,7 +205,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ange-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser).
+Detaljerad syntax- och parameterinformation finns i [Ange-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Använda fristående EOP PowerShell för att ta bort e-postanvändare
 
@@ -221,7 +221,7 @@ I det här exemplet tas e-postanvändaren bort för Jeffrey Zeng.
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ta bort EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser).
+Detaljerad syntax- och parameterinformation finns i [Ta bort EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
@@ -255,7 +255,7 @@ I fristående EOP är katalogsynkronisering tillgänglig för kunder med lokal A
 
 - Användning av katalogsynkronisering rekommenderas för användning med följande funktioner:
 
-  - **Outlook Safe Sender listor och blockerade avsändare listor:** När synkroniseras till tjänsten, dessa listor kommer att ha företräde framför spam filtrering i tjänsten. På så sätt kan användare hantera sin egen lista över betrodda avsändare och blockerad avsändare med enskilda avsändare och domänposter. Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - **Outlook Safe Sender listor och blockerade avsändare listor:** När synkroniseras till tjänsten, dessa listor kommer att ha företräde framför spam filtrering i tjänsten. På så sätt kan användare hantera sin egen lista över betrodda avsändare och blockerad avsändare med enskilda avsändare och domänposter. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
 
   - **Katalogbaserad kantblockering (DBEB):** Mer information om DBEB finns i [Använda katalogbaserad kantblockering för att avvisa meddelanden som skickas till ogiltiga mottagare](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 

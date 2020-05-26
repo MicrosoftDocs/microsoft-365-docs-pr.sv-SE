@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratörer kan lära sig att tilldela eller ta bort behörigheter i Administrationscenter för Exchange (EAC) i Exchange Online Protection.
-ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209681"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352341"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Hantera rollgrupper i fristående EOP
 
@@ -31,7 +31,7 @@ Mer information om roller och rollgrupper finns [i Behörigheter i fristående E
 
 - Information om hur du öppnar fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du behöver rollrollen Rollhantering, som som tilldelas rollgruppen OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver rollrollen Rollhantering, som som tilldelas rollgruppen OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Information om kortkommandon som kan gälla för procedurerna i det här avsnittet finns [i Kortkommandon för administrationscentret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -135,7 +135,7 @@ I det här exemplet returneras alla rollgrupper där användaren Julia är medle
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
+Detaljerad syntax- och parameterinformation finns i [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Använda fristående EOP PowerShell för att skapa rollgrupper
 
@@ -184,7 +184,7 @@ När du skapar en ny rollgrupp kan du konfigurera alla inställningar manuellt (
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-Detaljerad syntax- och parameterinformation, [Nyrollgrupp](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+Detaljerad syntax- och parameterinformation, [Nyrollgrupp](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Använda fristående EOP PowerShell ändra listan över medlemmar i rollgrupper
 
@@ -214,7 +214,7 @@ I det här exemplet läggs Daigoro Akai till och Valeria Barrio tas bort från l
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Uppdatera rollgruppmedlem](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
+Detaljerad syntax- och parameterinformation finns i [Uppdatera rollgruppmedlem](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Använd fristående EOP PowerShell för att ta bort rollgrupper
 
@@ -232,7 +232,7 @@ I det här exemplet tas rollgruppen Utbildningsadministratörer bort.
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ta bort rollgrupp](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
+Detaljerad syntax- och parameterinformation finns i [Ta bort rollgrupp](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om falska underrättelser i Exchange Online Protection (EOP), där du kan tillåta eller blockera specifika förfalskade avsändare.
-ms.openlocfilehash: fb5193566ee359dfe2e5652707c1846280a45c33
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 638f130c448f14bf7214afc705b5650311866fce
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347849"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351945"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurera falska underrättelser i EOP
 
@@ -48,7 +48,7 @@ När en avsändare förfalskar en e-postadress verkar de vara en användare i en
 
   - Ett externt företag skickar e-post på uppdrag av ett annat företag (till exempel en automatiserad rapport eller ett program-som-en-tjänst företag).
 
-Falska underrättelser, och särskilt standardprincipen (och endast) falska underrättelser, hjälper till att säkerställa att falska e-postmeddelanden som skickas av legitima avsändare inte fastnar i skräppostfilter i Microsoft 365 eller externa e-postsystem, samtidigt som användarna skyddas från skräppost- eller nätfiskeattacker.
+Falska underrättelser, och särskilt standardprincipen (och endast) falska underrättelser, hjälper till att säkerställa att det falska e-postmeddelandet som skickas av legitima avsändare inte fastnar i EOP:s skräppostfilter eller externa e-postsystem, samtidigt som användarna skyddas från skräppost- eller nätfiskeattacker.
 
 Du kan hantera falska underrättelser i Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
@@ -60,7 +60,7 @@ Du kan hantera falska underrättelser i Security & Compliance Center eller i Pow
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill ändra informationsprincipen eller aktivera eller inaktivera falska underrättelser måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till den falska underrättelsepolicyn måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- För våra rekommenderade inställningar för falska underrättelser, [EOP standard anti-phishing-principinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
+- Våra rekommenderade inställningar för falska underrättelser finns i [EOP:s standardinställningar för anti-nätfiske](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Använd Security & Compliance Center för att hantera förfalskade avsändare
 
@@ -140,7 +140,7 @@ I det här exemplet returneras detaljerad information om alla avsändare som til
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Hämta-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy).
+Detaljerad syntax- och parameterinformation finns i [Hämta-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy).
 
 Så här konfigurerar du tillåtna och blockerade avsändare i falska underrättelser:
 
@@ -162,7 +162,7 @@ Så här konfigurerar du tillåtna och blockerade avsändare i falska underrätt
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-Detaljerad syntax- och parameterinformation finns i [Ange-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy).
+Detaljerad syntax- och parameterinformation finns i [Ange-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy).
 
 ## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>Använd Security & Compliance Center för att konfigurera falska underrättelser
 
@@ -195,28 +195,16 @@ Om du vill kontrollera att du har konfigurerat falska underrättelser med avsän
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- I Microsoft 365-organisationer med Exchange Online-postlådor gör du något av följande:
+- I Security & Compliance Center går **Threat management** du till \> **Policy** \> **Anti-phishing-principen mot hothantering** eller **ATP-anti-nätfiske**och gör något av följande:  
 
-  - Gå till Anti-phishing-principen mot **nätfiske** i Security & Compliance Center \> **Policy** \> **Anti-phishing** \> och visa information i det utfällbara utfällbara energiläget. **Default policy**
+  - Välj en princip i listan. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
+  - Klicka på **Standardprincip**. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
 
-  - I Exchange Online PowerShell kör du följande kommando och verifierar inställningarna:
+- I Exchange Online PowerShell ersätter du \< Namn \> med Office365 AntiPhish Standard eller namnet på en anpassad princip och kör följande kommando för att verifiera inställningarna:
 
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
-    ```
-
-- I Microsoft 365 ATP-organisationer gör du något av följande:
-
-  - I Security & Compliance Center går **Threat management** du till \> **Policy** \> **ATP-principen** mot hothanteringspolicy och gör något av följande:
-
-    - Välj en princip i listan. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
-    - Klicka på **Standardprincip**. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
-
-  - I Exchange Online PowerShell ersätter du \< Namn \> med Office365 AntiPhish Standard eller namnet på en anpassad ATP-anti-phishing-princip och kör följande kommando och verifiera inställningarna:
-
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "<Name>"
-    ```
+  ```PowerShell
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Andra sätt att hantera förfalskning och nätfiske
 

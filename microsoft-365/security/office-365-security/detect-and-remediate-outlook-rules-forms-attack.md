@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du känner igen och åtgärdar Outlook-regler och anpassade formulärinjektioner i Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224595"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351981"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Identifiera och åtgärda Outlook-regler och anpassade formulär injections attacker
 
@@ -175,17 +175,17 @@ Det finns två PowerShell-fjärr-PowerShell-cmdlets som du kan använda för att
 
 1. Anslut till Exchange-servern med fjärr-PowerShell. Följ stegen i [Connect to Exchange-servrar med fjärr-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell).
 
-2. Om du vill ta bort en enda regel, flera regler eller alla regler från en postlåda använder du cmdleten [Ta bort inkorgen.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)
+2. Om du vill ta bort en enda regel, flera regler eller alla regler från en postlåda använder du cmdleten [Ta bort inkorgen.](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)
 
-3. Om du vill behålla regeln och dess innehåll för vidare undersökning använder du cmdleten [Inaktivera inkorgRegel.](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx)
+3. Om du vill behålla regeln och dess innehåll för vidare undersökning använder du cmdleten [Inaktivera inkorgRegel.](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx)
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Steg för postlådor i Exchange Online
 
 1. Följ stegen i [Anslut till Exchange Online med PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Om du vill ta bort en enda regel, flera regler eller alla regler från en postlåda använder du cmdleten [Ta bort inkorgsregeln.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)
+2. Om du vill ta bort en enda regel, flera regler eller alla regler från en postlåda använder du cmdleten [Ta bort inkorgsregeln.](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)
 
-3. Om du vill behålla regeln och dess innehåll för vidare undersökning använder du cmdleten [Inaktivera inkorgRegel.](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx)
+3. Om du vill behålla regeln och dess innehåll för vidare undersökning använder du cmdleten [Inaktivera inkorgRegel.](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx)
 
 ## <a name="how-to-minimize-future-attacks"></a>Så här minimerar du framtida attacker
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratörer kan använda meddelandespårning i Security & Compliance Center för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44212992"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352504"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -27,7 +27,7 @@ Meddelandespårning i Security & Compliance Center följer e-postmeddelanden nä
 Meddelandespårning i Security & Compliance Center förbättrar den ursprungliga meddelandespårningen som var tillgänglig i Administrationscentret för Exchange (EAC). Du kan använda informationen från meddelandespårning för att effektivt svara på användarfrågor om vad som hände med meddelanden, felsöka problem med e-postflödet och validera principändringar.
 
 > [!NOTE]
-> • För att göra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
+> • För att göra en meddelandespårning måste du vara medlem i rollgrupperna Organisationshantering, Efterlevnadshantering eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Det maximala antalet meddelanden som visas i resultatet beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
 
 ## <a name="open-message-trace"></a>Öppna meddelandespårning
 
@@ -230,7 +230,7 @@ Tillgängliga (slutförda) Förbättrade sammanfattningsrapporter finns i avsnit
 
 - **sender_address**: Avsändarens e-postadress (*alias* @ *aliasdomän*).
 
-- **Recipient_status**: Status för leveransen av meddelandet till mottagaren. Om meddelandet skickades till flera mottagare visas alla mottagare och motsvarande status för varje, i formatet: \< *e-postadressstatus* \> ## \< *status* \> . Till exempel:
+- **Recipient_status**: Status för leveransen av meddelandet till mottagaren. Om meddelandet skickades till flera mottagare visas alla mottagare och motsvarande status för varje, i formatet: \< *e-postadressstatus* \> ## \< *status* \> . Ett exempel:
 
   - **##Receive betyder Send** att meddelandet togs emot av tjänsten och skickades till det avsedda målet.
 
@@ -268,13 +268,13 @@ Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsba
 
 - **server_hostname**: Målserverns värdnamn eller FQDN.
 
-- **source_context**: Extra information som är associerad med **källfältet.** Till exempel:
+- **source_context**: Extra information som är associerad med **källfältet.** Ett exempel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **källa**: Exchange Online-komponenten som är ansvarig för händelsen. Till exempel:
+- **källa**: Exchange Online-komponenten som är ansvarig för händelsen. Ett exempel:
 
   - `AGENT`
 
@@ -292,7 +292,7 @@ Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsba
 
 - **related_recipient_address**: Används med `EXPAND` , och händelser för att visa andra mottagare `REDIRECT` `RESOLVE` e-postadresser som är associerade med meddelandet.
 
-- **referens**: Det här fältet innehåller ytterligare information för specifika typer av händelser. Till exempel:
+- **referens**: Det här fältet innehåller ytterligare information för specifika typer av händelser. Ett exempel:
 
   - **DSN**: Innehåller rapportlänken, som är **det message_id** värdet för meddelandet om associerad leveransstatus (kallas även DSN, icke-leveransrapport, NDR eller avvisningsmeddelande) om ett DSN genereras efter den här händelsen. Om detta är ett DSN-meddelande innehåller det här fältet **värdet message_id** för det ursprungliga meddelandet som DSN skapades för.
 
@@ -310,7 +310,7 @@ Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsba
 
 - **return_path**: Den returadress som anges av kommandot **MAIL FROM** som skickade meddelandet. Även om det här fältet aldrig är tomt kan null-adressvärdet representeras som `<>` .
 
-- **message_info**: Ytterligare information om meddelandet. Till exempel:
+- **message_info**: Ytterligare information om meddelandet. Ett exempel:
 
   - Datumtid för meddelandeoriginering i UTC för `DELIVER` och `SEND` händelser. Datumtiden för originering är den tidpunkt då meddelandet först kom in i Exchange Online-organisationen. UTC-datumtiden representeras i datum-tidsformatet ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ` , där `yyyy` = år, = `mm` `dd` månad, = dag, `T` anger början på tidskomponenten, `hh` = timme, = `mm` minut, = `ss` sekund, = `fff` bråkdelar av en sekund och betyder `Z` , vilket är ett annat sätt att beteckna `Zulu` UTC.
 

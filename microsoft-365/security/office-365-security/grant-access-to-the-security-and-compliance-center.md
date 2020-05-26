@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Användare måste tilldelas behörigheter i Microsoft 365 Security & Compliance Center innan de kan hantera någon av dess säkerhets- eller efterlevnadsfunktioner.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036674"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351957"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Ge användarna åtkomst till Security & Compliance Center
 
@@ -50,11 +50,11 @@ Mer information om de olika behörigheter som du kan ge användare i Security & 
 
 3. Gå till **Behörigheter**i Säkerhets- & Compliance Center .
 
-4. Välj den rollgrupp som du vill lägga till användaren i](../../media/O365-MDM-CreatePolicy-EditIcon.gif)i listan och klicka på **Ikonen Redigera** ![redigera.
+4. Välj den rollgrupp som du vill lägga till användaren i i listan och klicka på **Ikonen Redigera** ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) redigera.
 
-5. Klicka på **Lägg till**![ikonen](../../media/ITPro-EAC-AddIcon.gif) i rollgruppens egenskaper under **Medlemmar**och välj namnet på den eller de användare som du vill lägga till.
+5. Klicka på **Lägg till**ikonen i rollgruppens egenskaper under **Medlemmar**och välj namnet på den eller de användare som du vill ![ lägga ](../../media/ITPro-EAC-AddIcon.gif) till.
 
-6. När du har markerat alla användare som du vill lägga till i rollgruppen klickar du på **lägg\> till** och sedan **på OK**.
+6. När du har markerat alla användare som du vill lägga till i rollgruppen klickar du på **lägg \> till** och sedan **på OK**.
 
 7. Klicka på **Spara** om du vill spara ändringarna i rollgruppen.
 
@@ -82,7 +82,7 @@ Mer information om de olika behörigheter som du kan ge användare i Security & 
 
    - _Medlem_ är postlådan, den universella säkerhetsgruppen (USG) eller datorn som ska läggas till i rollgruppen. Du kan bara ange en medlem i taget.
 
-Detaljerad information om syntax och parametrar finns i [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+Detaljerad information om syntax och parametrar finns i [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
@@ -92,4 +92,4 @@ Om du vill kontrollera att du har gett användarna åtkomst till Security & Comp
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
+Detaljerad information om syntax och parametrar finns i [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
