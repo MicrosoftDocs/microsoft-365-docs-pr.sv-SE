@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig mer om multifaktorautentisering i Microsoft 365.
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340852"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371458"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multifaktorautentisering för Microsoft 365
 
@@ -151,17 +151,10 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 |:-------|:-----|:-------|:-------|
 | **Standardinställningar för säkerhet** | Det går inte att använda principer för villkorsstyrd åtkomst |   Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
 | **Principer för villkorsstyrd åtkomst** |Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet | Användardefinierad under MFA-registrering |
-| **Inställning per användarkonto (rekommenderas inte)** | Åsidosätts av säkerhetsstandarder och principer för villkorlig åtkomst som kräver MFA | Åsidosätts efter säkerhetsstandarder och principer för villkorlig åtkomst | Användardefinierad under MFA-registrering|
+| **Inställning per användarkonto (rekommenderas inte)** | Åsidosätter säkerhetsstandarder och principer för villkorlig åtkomst som kräver MFA vid varje inloggning | Åsidosätts efter säkerhetsstandarder och principer för villkorlig åtkomst | Användardefinierad under MFA-registrering|
 ||||
 
 Om standardinställningarna för säkerhet är aktiverade uppmanas alla nya användare att registrera MFA och använda Microsoft Authenticator-appen vid nästa inloggning.
-
-Om en användare har en äldre telefon som kan ta emot textmeddelanden men inte kan köra Microsoft Authenticator-appen kan du aktivera MFA på det specifika användarkontot och låta dem registrera sig med hjälp av ytterligare verifieringsmetod för textkod med följande steg:
-
-1. Inaktivera säkerhetsstandarder i Azure-portalen.
-2. Aktivera MFA för användarkontot i Microsoft 365-administrationscentret.
-3. Låt användaren logga in och registrera sig för MFA och textkodautentiseringsmetoden.
-4. När du är klar aktiverar du standardinställningar för säkerhet i Azure-portalen
 
 ## <a name="ways-to-manage-mfa-settings"></a>Olika sätt att hantera MFA-inställningar
 

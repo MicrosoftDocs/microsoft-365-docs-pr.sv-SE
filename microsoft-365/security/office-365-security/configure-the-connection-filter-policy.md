@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du konfigurerar anslutningsfiltrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-postmeddelanden från e-postservrar.
-ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6fb1fd95a701802d9373c07b7661196271ac1e2c
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352017"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371480"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -31,7 +31,7 @@ Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en frist�
 
 - **IP Tillåt lista:** Hoppa över skräppostfiltrering för alla inkommande meddelanden från källan e-postservrar som du anger av IP-adress eller IP-adressintervall. Scenarier där skräppostfiltrering fortfarande kan förekomma på meddelanden från dessa källor finns i [scenarierna där meddelanden från källor i ip-listan fortfarande filtreras](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) senare i det här avsnittet. Mer information om hur IP-listan ska passa in i din övergripande strategi för betrodda avsändare finns [i Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).
 
-- **IP-blockeringslista:** Blockera alla inkommande meddelanden från käll-e-postservrar som du anger per IP-adress eller IP-adressintervall. De inkommande meddelandena avvisas, markeras inte som skräppost och ingen ytterligare filtrering sker . Mer information om hur IP-blockeringslistan ska passa in i din övergripande strategi för blockerade avsändare finns [i Skapa blockavsändare i EOP](create-block-sender-lists-in-office-365.md).
+- **IP-blockeringslista:** Blockera alla inkommande meddelanden från käll-e-postservrar som du anger per IP-adress eller IP-adressintervall. De inkommande meddelandena avvisas, markeras inte som skräppost och ingen ytterligare filtrering sker. Mer information om hur IP-blockeringslistan ska passa in i din övergripande strategi för blockerade avsändare finns [i Skapa blockavsändare i EOP](create-block-sender-lists-in-office-365.md).
 
 - **Säker lista**: Den *säkra listan* är en dynamisk tillåt-lista i Microsoft-datacenter som inte kräver någon kundkonfiguration. Microsoft identifierar dessa betrodda e-postkällor från prenumerationer på olika tredjepartslistor. Du aktiverar eller inaktiverar användningen av den säkra listan. Du kan inte konfigurera käll-e-postservrarna i den säkra listan. Skräppostfiltrering hoppas över inkommande meddelanden från e-postservrarna i den säkra listan.
 

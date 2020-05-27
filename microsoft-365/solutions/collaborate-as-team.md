@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om konfigurationsstegen för Microsoft 365 som krävs för att konfigurera ett team för samarbete med gäster i Teams.
-ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160033"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371503"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samarbeta med gäster i ett team
 
@@ -44,10 +44,10 @@ Kontrollera inställningarna för organisationsrelationer för att säkerställa
 
 Så här anger du inställningar för organisationsrelationer
 
-1. Logga in på [https://portal.azure.com](https://portal.azure.com)Microsoft Azure på .
+1. Logga in på Microsoft Azure på [https://portal.azure.com](https://portal.azure.com) .
 2. Klicka på Azure **Active Directory**i den vänstra navigeringen .
-3. Klicka på **Organisationsrelationer**i **fönstret Översikt.**
-4. Klicka på **Inställningar**i fönstret **Organisationsrelationer** .
+3. Klicka på Externa **identiteter**i **fönstret Översikt** .
+4. Klicka på **Externa samarbetsinställningar**i fönstret **Organisationsidentiteter** .
 5. Se till att **administratörer och användare i gäst inbjudna roll kan bjuda in** och medlemmar kan bjuda **in** är båda inställda på **Ja**.
 6. Om du har gjort ändringar klickar du på **Spara**.
 
@@ -161,12 +161,12 @@ Så här anger du delningsinställningar på webbplatsnivå
 Gästdelningsinställningarna är nu konfigurerade, så att du kan börja lägga till interna användare och gäster i ditt team. 
 
 Så här bjuder du in interna användare till ett team
-1. Klicka på **Fler alternativ** **\*\***( ) i gruppen och klicka sedan på **Lägg till medlem**.
+1. Klicka på **Fler alternativ** ( ) i gruppen och klicka sedan på Lägg **\*\*\*** till **medlem**.
 2. Skriv namnet på den person som du vill bjuda in.
 3. Klicka på **Lägg till**och sedan på **Stäng**.
 
 Så här bjuder du in gäster till ett team
-1. Klicka på **Fler alternativ** **\*\***( ) i gruppen och klicka sedan på **Lägg till medlem**.
+1. Klicka på **Fler alternativ** ( ) i gruppen och klicka sedan på Lägg **\*\*\*** till **medlem**.
 2. Skriv e-postadressen till den gäst som du vill bjuda in.
 3. Klicka på **Redigera gästinformation**.
 4. Skriv gästens fullständiga namn och klicka på bocken.
