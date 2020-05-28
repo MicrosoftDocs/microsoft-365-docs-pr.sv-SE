@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8e474b5df7df58ad8ab405417626a5c5f6dc01ab
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d0f72f0bc425fcabbac1eb43d5a25efada2a4f08
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807714"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386491"
 ---
 # <a name="payment-information-for-south-africa"></a>Betalningsinformation för Sydafrika
 

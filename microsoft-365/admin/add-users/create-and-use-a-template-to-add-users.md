@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare.
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140658"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387231"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Skapa och använda en mall för att lägga till användare
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ Du kan skapa och använda en mall för att spara tid och standardisera inställn
 
 ## <a name="create-a-template"></a>Skapa en mall
 
-Mallar är enkla&mdash;att skapa, du kan välja **Användare** > **Aktiva användare** > **Användarmallar**, och välj sedan Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
+Mallar är enkla att &mdash; skapa, du kan välja **Användare**  >  **Aktiva användare**  >  **Användarmallar**, och välj sedan Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
 
 När du skapar en mall när du har lagt till en användare sparas de värden du väljer för följande inställningar i mallen:
 
@@ -68,12 +69,12 @@ När du skapar en mall genom att välja alternativet **Lägg till en mall** kan 
 
 Så här använder du en befintlig mall för att lägga till en användare:
 
-1. I administrationscentret väljer du**Aktiva användare** **.** > 
+1. I administrationscentret väljer du **Aktiva**  >  **användare**.
 
 2. Välj **Användarmallar**och välj sedan en mall i listrutan. (Listan innehåller bara de mallar som du har skapat, inte de som skapats av andra administratörer.)
 
  > [!NOTE]
- > Du kan också använda en mall för att lägga till en användare genom att välja **Användarmallar** > **Hantera mallar,** välja en mall och sedan välja **Använd mall**.
+ > Du kan också använda en mall för att lägga till en användare genom att välja **Användarmallar**  >  **Hantera mallar,** välja en mall och sedan välja **Använd mall**.
 
 3. Följ stegen för att skapa en användare från den mall du valde.
 
@@ -84,7 +85,7 @@ Så här använder du en befintlig mall för att lägga till en användare:
 
 Du kan enkelt ta bort mallar som du inte längre behöver och lägga till nya. Så här tar du bort en mall:
 
-1. I administrationscentret väljer du**Aktiva användare** **.** > 
+1. I administrationscentret väljer du **Aktiva**  >  **användare**.
 
 2. Välj **Mallar**och välj sedan **Hantera mallar** i listrutan.
 

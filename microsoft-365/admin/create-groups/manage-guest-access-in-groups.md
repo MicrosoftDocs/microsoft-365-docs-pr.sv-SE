@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Lär dig hur du lägger till gäster i en Microsoft 365-grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomsten.
-ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140549"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386787"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Hantera gäståtkomst i Microsoft 365-grupper
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -55,7 +56,7 @@ Gäståtkomst i grupper används ofta som en del av ett bredare scenario som inn
 
 Om du vill aktivera eller inaktivera gäståtkomst i grupper kan du göra det i administrationscentret för Microsoft 365.
 
-1. Gå till inställningar och välj Microsoft **365-grupper**i **administrationscentret** \> **Settings** .
+1. Gå till inställningar och **Settings** \> välj Microsoft **365-grupper**i administrationscentret . **Settings**
   
 2. På sidan **Microsoft 365 Grupper** väljer du om du vill låta personer utanför organisationen komma åt gruppresurser eller låta gruppägare lägga till personer utanför organisationen i grupper.
 
@@ -63,7 +64,7 @@ Om du vill aktivera eller inaktivera gäståtkomst i grupper kan du göra det i 
 
 Om gästen redan finns i katalogen kan du lägga till dem i dina grupper från administrationscentret för Microsoft 365.
   
-1. Gå till sidan **Gruppergrupper** > **i** administrationscentret.
+1. Gå till sidan **Groups**  >  **Gruppergrupper i** administrationscentret.
   
 2. Klicka på den grupp som du vill lägga till gästen i och välj **Visa alla och hantera medlemmar** på fliken **Medlemmar.** 
   
@@ -83,14 +84,14 @@ Du måste använda förhandsversionen av [Azure Active Directory PowerShell for 
 
 - Om du inte har installerat någon version av Azure AD PowerShell-modulen tidigare läser [du Installera Azure AD-modulen](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) och följer instruktionerna för att installera den offentliga förhandsversionen.
 
-- Om du har installerat 2.0-versionen för allmän tillgänglighet av Azure AD PowerShell-modulen (AzureAD) måste du avinstallera den genom att köras `Uninstall-Module AzureAD` i PowerShell-sessionen och sedan installera förhandsversionen genom att köra `Install-Module AzureADPreview`.
+- Om du har installerat 2.0-versionen för allmän tillgänglighet av Azure AD PowerShell-modulen (AzureAD) måste du avinstallera den genom att `Uninstall-Module AzureAD` köras i PowerShell-sessionen och sedan installera förhandsversionen genom att köra `Install-Module AzureADPreview` .
 
-- Om du redan har installerat `Install-Module AzureADPreview` förhandsversionen kör du för att kontrollera att den är den senaste versionen av den här modulen.
+- Om du redan har installerat förhandsversionen kör du `Install-Module AzureADPreview` för att kontrollera att den är den senaste versionen av den här modulen.
 
 > [!NOTE]
 > Du måste ha globala administratörsrättigheter för att kunna köra dessa kommandon. 
 
-Kör följande skript * / * och ändra till namnet på den grupp där du vill blockera gäståtkomst.
+Kör följande skript och ändra */<GroupName/>* till namnet på den grupp där du vill blockera gäståtkomst.
 
 ```PowerShell
 $GroupName = "<GroupName>"

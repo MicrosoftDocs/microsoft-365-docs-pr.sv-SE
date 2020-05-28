@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Lär dig att verifiera vilka prenumerationer din organisation har genom att gå till sidan Prenumerationer.
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045218"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386751"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 
@@ -40,7 +42,7 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Dina prenumerationer visas på sidan **Dina produkter,** tillsammans med prenumerationsnamnet, information om prenumerationen och dess status. Om du vill visa en komprimerad vy väljer du **Tabellvy**.
 
@@ -48,7 +50,7 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
   
 ::: moniker range="o365-germany"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**  
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.  
 
 2. Om du bara har en prenumeration visas den på sidan **Prenumerationer** tillsammans med namnet på prenumerationen, information om prenumerationen och dess status. I följande skärmbild kan du se att jag har en Prenumeration på Microsoft 365 Apps for business.
 
@@ -67,7 +69,7 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**  
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.  
 
 2. Om du bara har en prenumeration visas den på sidan **Prenumerationer** tillsammans med namnet på prenumerationen, information om prenumerationen och dess status. I följande skärmbild kan du se att jag har en Prenumeration på Microsoft 365 Apps for business.
 

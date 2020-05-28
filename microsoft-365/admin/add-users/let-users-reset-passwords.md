@@ -17,18 +17,19 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan återställa dina lösenord med hjälp av verktyget för återställning av lösenord med självbetjäning.
-ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173536"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387039"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -53,19 +54,19 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.
   
 ::: moniker range="o365-worldwide"
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a> **Settings**
+1. Gå till sidan **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sekretesssidan för **Inställningars &amp; säkerhet** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> **Settings** \>
+1. Gå till sekretesssidan **för Inställningars** säkerhet i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> \> ** &amp; **
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sekretesssidan för Sekretess för Inställningar **i** \> ** &amp; ** <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administratörscentret.</a> **Settings** \>
+1. Gå till sekretesssidan för Sekretess för Inställningar i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> **Settings** \> **Settings** \> ** &amp; administratörscentret.**
 
 ::: moniker-end
 

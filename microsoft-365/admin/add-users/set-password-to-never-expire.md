@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Lär dig hur du anger att vissa enskilda användarlösenord aldrig upphör att gälla med Windows PowerShell.
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173502"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387015"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a> **Settings**
+1. Gå till sidan **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a>
 2. Högst upp på sidan Inställningar väljer du **Sekretess för & .**
 3. Välj **Förfalloprincip för lösenordet**. 
 4. Om lösenorden aldrig upphör att gälla klickar du på kryssrutan **bredvid Ange att användarlösenord ska upphöra att gälla efter ett antal dagar**. Du får möjlighet att ange antalet dagar tills lösenorden upphör att gälla.
@@ -127,4 +128,4 @@ Kör något av följande kommandon:
     ```
 
 > [!WARNING]
-> Lösenord inställd `-PasswordPolicies DisablePasswordExpiration` på att fortfarande `pwdLastSet` ålder baserat på attributet. Om du anger att användarlösenorden aldrig ska upphöra att gälla och sedan 90+ dagar går upphör att gälla upphör lösenorden att gälla. Baserat på `pwdLastSet` attributet, om du `-PasswordPolicies None`ändrar förfallodatum till , alla lösenord som har en `pwdLastSet` äldre än 90 dagar kräver användaren att ändra dem nästa gång de loggar in. Den här ändringen kan påverka ett stort antal användare.
+> Lösenord inställd på `-PasswordPolicies DisablePasswordExpiration` att fortfarande ålder baserat på `pwdLastSet` attributet. Om du anger att användarlösenorden aldrig ska upphöra att gälla och sedan 90+ dagar går upphör att gälla upphör lösenorden att gälla. Baserat på `pwdLastSet` attributet, om du ändrar förfallodatum till `-PasswordPolicies None` , alla lösenord som har en äldre än `pwdLastSet` 90 dagar kräver användaren att ändra dem nästa gång de loggar in. Den här ändringen kan påverka ett stort antal användare.

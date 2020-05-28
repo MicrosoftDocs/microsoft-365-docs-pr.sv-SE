@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Lär dig hur du tillåter medlemmar att skicka e-post som en Microsoft 365-grupp eller skicka e-post på uppdrag av en Microsoft 365-grupp.
-ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049393"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388143"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Tillåt medlemmar att skicka som eller skicka för en grupp
 
@@ -44,13 +45,13 @@ Med behörigheten **Skicka för räkning** kan en användare skicka e-post för 
 
 I det här avsnittet beskrivs hur du tillåter användare att skicka e-post som en grupp i [Administrationscenter](https://go.microsoft.com/fwlink/p/?linkid=2059104) för Exchange (EAC) i Exchange Online.
   
-1. Gå till Mottagare **grupper**i \> **administrationscentret för** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
+1. Gå till Mottagare grupper i **administrationscentret för** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> \> **Groups**.
     
-2. Välj **Ikonen**![Redigera](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) redigera grupp i gruppen som du vill tillåta användare att skicka som.   
+2. Välj **Ikonen Redigera**redigera grupp i gruppen som du vill tillåta användare att skicka ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) som.   
     
 3. Välj **gruppdelegering**.
     
-4. I avsnittet **Skicka som** **+** markerar du tecknet för att lägga till de användare som du vill skicka som grupp. 
+4. I avsnittet **Skicka som** markerar du **+** tecknet för att lägga till de användare som du vill skicka som grupp. 
     
     ![Välj plustecknet för att lägga till de användare som du vill skicka som Microsoft 365-grupp](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
@@ -62,13 +63,13 @@ I det här avsnittet beskrivs hur du tillåter användare att skicka e-post som 
 
 I det här avsnittet beskrivs hur du tillåter användare att skicka e-post för en grupp i Administrationscenter för Exchange (EAC) i Exchange Online.
   
-1. Gå till Mottagare **grupper**i \> **administrationscentret för** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a>.
+1. Gå till Mottagare grupper i **administrationscentret för** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> \> **Groups**.
     
-2. Välj **Edit** ![Ikonen Redigera](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) redigera grupp på den grupp som du vill tillåta användare att skicka som. 
+2. Välj **Edit** ![ Ikonen Redigera redigera grupp på den grupp som du vill tillåta användare att ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) skicka som. 
     
 3. Välj **gruppdelegering**.
     
-4. I avsnittet Skicka för räkning **+** väljer du tecknet för att lägga till de användare som du vill skicka som grupp. 
+4. I avsnittet Skicka för räkning väljer du **+** tecknet för att lägga till de användare som du vill skicka som grupp. 
     
     ![Välj plustecknet för att lägga till de användare som du vill skicka som Microsoft 365-grupp](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   

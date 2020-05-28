@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Läs om hur du hämtar användaraktivitetsrapporten för Microsoft Teams och får insikter om Teams-aktiviteten i organisationen.
-ms.openlocfilehash: 4a1b546efa7ba3bac887f60de54231389b8b5ca6
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 59fdeec9979b939524279d938e97baf6993d3cb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047103"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387675"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-rapporter i administrationscentret – Användaraktivitet för Microsoft Teams
 
@@ -37,7 +38,7 @@ Instrumentpanelen Microsoft 365 **Reports** visar aktivitetsöversikten för pro
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. Välj **Användaraktivitet**för **Microsoft Teams** \> i listrutan Välj **en rapport** .
+2. Välj **Användaraktivitet** för Microsoft Teams i listrutan **Välj en rapport** \> **User activity**.
   
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Tolka användaraktivitetsrapporten för Microsoft Teams
 

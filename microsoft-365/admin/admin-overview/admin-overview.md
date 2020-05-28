@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 'Läs mer om administrationscentret för Microsoft 365: hur du loggar in, vem administratören är och titta på en videointroduktion om det.'
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623970"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386943"
 ---
 # <a name="admin-center-overview"></a>Översikt över administrationscentret 
 
@@ -35,19 +36,19 @@ Med det här kontot kan du komma åt Microsoft 365-administrationscentret för a
   
 ::: moniker range="o365-worldwide"
 
- **Logga in med ditt <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>administratörskonto på .**
+ **Logga in med ditt administratörskonto på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**Logga in med ditt administratörskonto i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>Office 365 Germany på .**
+**Logga in med ditt administratörskonto i Office 365 Germany på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**Logga in med ditt administratörskonto i Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>som drivs av 21Vianet på .**
+**Logga in med ditt administratörskonto i Office 365 som drivs av 21Vianet på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> .**
 
 ::: moniker-end
 

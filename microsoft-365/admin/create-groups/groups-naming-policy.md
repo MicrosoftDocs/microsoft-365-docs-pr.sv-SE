@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Lär dig hur du skapar en namngivningsprincip för Microsoft 365-grupper.
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630449"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388011"
 ---
 # <a name="groups-naming-policy"></a>Namngivningspolicy för grupper
 
@@ -38,7 +39,7 @@ Namngivningsprincipen tillämpas på grupper som skapas i alla grupparbetsbelast
 
 Namnprincipen för grupp består av följande funktioner:
 
-- **Namngivningsprincipen prefix-Suffix**: Du kan använda prefix eller suffix för att definiera namngivningskonventionen för grupper (till exempel:"US\_My Group\_Engineering"). Prefix och suffix kan antingen vara fasta strängar eller användarattribut som [Department], som ersätts utifrån den användare som skapar gruppen.
+- **Namngivningsprincipen prefix-Suffix**: Du kan använda prefix eller suffix för att definiera namngivningskonventionen för grupper (till exempel:"US \_ My Group \_ Engineering"). Prefix och suffix kan antingen vara fasta strängar eller användarattribut som [Department], som ersätts utifrån den användare som skapar gruppen.
 
 - **Anpassade blockerade ord:** Du kan ladda upp en uppsättning blockerade ord som är specifika för din organisation och som skulle blockeras i grupper som skapats av användare. (Till exempel: "VD, Lön, HR").
 
@@ -54,7 +55,7 @@ Prefix och suffix kan antingen vara fasta strängar eller användarattribut.
 
 ### <a name="fixed-strings"></a>Fasta strängar
 
-Du kan använda korta strängar som kan hjälpa dig att skilja grupper i GAL och vänster navigering av grupparbetsbelastningar. Några av de vanliga suffixen prefix är\_nyckelord som\#"Grp\_Name", ' Name', ' Name'
+Du kan använda korta strängar som kan hjälpa dig att skilja grupper i GAL och vänster navigering av grupparbetsbelastningar. Några av de vanliga suffixen prefix är nyckelord som "Grp \_ Name", ' \# Name', ' \_ Name'
 
 ### <a name="attributes"></a>Attribut
 
@@ -80,7 +81,7 @@ Vi rekommenderar att du använder attribut som har värden ifyllda för alla anv
 
 - Prefix och suffix får innehålla specialtecken som stöds i gruppens namn och gruppalias. När prefixen och suffixen innehåller specialtecken som inte är tillåtna i gruppaliaset, tillämpas de bara på gruppnamnet. I det här fallet skiljer sig de prefix och suffix som tillämpas på gruppnamnet från dem som tillämpas på gruppaliaset.
 
-- Om du använder Yammer Microsoft 365-anslutna grupper undviker du att \#använda \[ \]följande \<tecken \>i namnprincipen: @, , , , och . Om dessa tecken finns i namngivningsprincipen kan vanliga Yammer-användare inte skapa grupper.
+- Om du använder Yammer Microsoft 365-anslutna grupper undviker du att använda följande tecken i namnprincipen: @, \# , \[ , , \] \<, and \> . Om dessa tecken finns i namngivningsprincipen kan vanliga Yammer-användare inte skapa grupper.
 
 ## <a name="custom-blocked-words"></a>Anpassade blockerade ord
 

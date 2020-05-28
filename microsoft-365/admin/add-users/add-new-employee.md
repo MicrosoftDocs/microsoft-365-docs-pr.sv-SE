@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Lägg till nya medarbetare i Microsoft 365 för företag för e-post, Skype och Office-appar.
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049503"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387315"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Lägga till en ny anställd i Microsoft 365
 
@@ -63,7 +64,7 @@ Eftersom de ännu inte har tillgång till sin e-post ska du inte skicka informat
 
 Precis som Facebook, Amazon eller Gmail loggar din medarbetare in för att använda Microsoft 365. Ge dem följande inloggningsinformation:
   
-- Logga in [https://www.office.com](https://www.office.com)på .
+- Logga in på [https://www.office.com](https://www.office.com) .
     
 - Välj **Logga in**och skriv sedan användar-ID och lösenord.
     
@@ -76,7 +77,7 @@ Och här är en snabb referens för att hjälpa dem att komma igång:
   
 |**Uppgift**|**Hitta information**|
 |:-----|:-----|
-|Logga in på Office  <br/> |Gå [https://www.office.com](https://www.office.com)till , välj Logga in och ange sedan ditt användar-ID och lösenord. **Sign in**  <br/> |
+|Logga in på Office  <br/> |Gå till [https://www.office.com](https://www.office.com) , välj Logga in och ange sedan ditt användar-ID och lösenord. **Sign in**  <br/> |
 |Installera Office-program på datorn.  <br/><br/> |När du loggar in har startsidan en länk för att hämta och installera appar som Word och Outlook.  Välj **Installera Office**.         Instruktioner finns i [Så här installerar du Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
 |Konfigurera din e-post i Outlook 2016 .  <br/> |När Office-programmen är installerade på datorn konfigurerar du din e-post. Instruktioner finns i [Så här konfigurerar du Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
 |Konfigurera Skype för företag så att du kan få kontakt med medarbetare eller affärspartners i ditt företag eller runt om i världen. Du kan starta konversationer med snabbmeddelanden, röstsamtal eller videosamtal.  <br/> |[Installera Skype för företag på datorn](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Om du vill veta hur du använder Skype för företag [kan du titta på en video.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Har du konfigurerat Skype för företag så att dina anställda kan kontakta personer utanför ditt företag som använder den kostnadsfria Skype-appen? Om inte, tala om för den nya medarbetaren så att de vet vad som väntar när du använder Skype för företag.  <br/> |

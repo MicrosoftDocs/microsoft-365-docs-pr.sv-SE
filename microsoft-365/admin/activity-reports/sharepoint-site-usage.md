@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Hämta sharepoint-webbplatsanvändningsrapporten för att veta hur många filer användare lagrar på SharePoint-webbplatser, hur många som används aktivt och det totala lagringsutrymmet som förbrukas. '
-ms.openlocfilehash: 92ff9c4dbfcc7fcd9f9fdc511584400273030f21
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 45614557710e05c600a3603d85462c4987022881
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047125"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387519"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-rapporter i administrationscentret – Användning av SharePoint-webbplatser
 
@@ -39,7 +40,7 @@ Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** aktivitet
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. Välj Användning av **SharePoint-webbplats** \> **Site usage**i listrutan **Välj en rapport** .
+2. Välj Användning av **SharePoint-webbplats** i listrutan **Välj en rapport** \> **Site usage**.
   
 ## <a name="interpreting-the-sharepoint-site-usage-report"></a>Tolka rapporten om SharePoint-webbplatsanvändning
 
@@ -55,8 +56,8 @@ Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** aktivitet
 |6.  <br/> |I diagrammet **Sidor** visas antalet sidor som visats på alla webbplatser.  <br/> |
 |7.  <br/> |Du kan filtrera diagram som du ser genom att markera ett objekt i förklaringen. Välj filer **eller** **Aktiva filer**i diagrammet **Filer** . I **diagrammet Platser** kan du välja **Totalt antal platser** eller Aktiva **webbplatser**. I **lagringsdiagrammet** kan du välja **Lagringsallokerad** eller **Lagring som förbrukas.** När du ändrar det här valet ändras inte informationen i rutnätstabellen.  <br/> |
 |8.  <br/> | Tabellen visar en uppdelning av aktiviteterna per webbplats.  <br/> ![Kolumnalternativ för användningsrapport](../../media/sharepointsite-usage.png)           <br/> **Webbplatsens URL** är den fullständiga URL-adressen för webbplatsen.  <br/> **Borttagna** är borttagningsstatusen för webbplatsen. Det tar minst 7 dagar för webbplatser att markeras som borttagna.  <br/> **Webbplatsägare** är användarnamnet på den primära ägaren av webbplatsen.  <br/>**Webbplatsens huvudnamn** är e-postadressen till webbplatsens ägare.  <br/> **Datum för senaste aktivitet (UTC)** är datumet för den senaste gången som filaktivitet upptäcktes eller en sida visades på webbplatsen.  <br/> **Filer** är antalet filer på webbplatsen.  <br/> **Aktiva filer** är antalet aktiva filer på webbplatsen. En fil anses vara aktiv om den har sparats, synkroniserats, ändrats eller delats inom en viss tidsperiod.  <br/> En filaktivitet kan inträffa flera gånger för en enskild fil, men räknas bara som en aktiv fil. Du kan till exempel spara och synkronisera samma fil flera gånger under en viss tidsperiod, men den räknas bara som en enda aktiv fil och en enda synkroniserad fil i dina data. >  Om du tog bort filer under tidsperioden som angetts för rapporten kan antalet aktiva filer som visas i rapporten vara större än det aktuella antalet filer på webbplatsen.<br/>**Använt lagringsutrymme (MB)** är mängden lagringsutrymme som för närvarande används på webbplatsen.  <br/> **Tilldelat lagringsutrymme (MB)** är den högsta mängden lagringsutrymme som tilldelats för webbplatsen.  <br/> **Visade sidor** är antalet gånger som sidor har visats på webbplatsen.  <br/> **Sidor som besökts** är antalet unika sidor som har besökts på webbplatsen.  <br/> **Rotwebbmall** är den mall som använts för att skapa webbplatsen.  <br/> Om du vill filtrera data efter olika platstyper exporterar du data och använder kolumnen Rotwebbmall. <br/>Om organisationens principer hindrar dig från att visa rapporter där användarinformation kan identifieras kan du ändra sekretessinställningen för alla dessa rapporter. Kolla in avsnittet **Hur döljer jag information på användarnivå?** [Activity Reports in the Microsoft 365 admin center](activity-reports.md)  <br/> |
-|9.  <br/> |Välj **Hantera**![kolumner](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) Hantera kolumner om du vill lägga till eller ta bort kolumner från rapporten.    <br/> |
-|10.  <br/> |Du kan också exportera rapportdata till en CSV-fil i](../../media/4dc548cc-8061-48d5-9240-6793affca43a.png) Excel genom att välja länken **Exportera** ![export. Då exporteras data för alla webbplatser och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 webbplatser kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 webbplatser måste du exportera data för att kunna filtrera och sortera.  <br/> När data exporteras till en Excel-fil bör du tänka på att datumet då innehållsrapporten genererades återspeglas i filen i kolumnen **Data från** och med.      <br/>   |
+|9.  <br/> |Välj **Hantera kolumner**Hantera kolumner om du vill lägga till eller ta bort kolumner från ![ ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) rapporten.    <br/> |
+|10.  <br/> |Du kan också exportera rapportdata till en CSV-fil i Excel genom att välja länken **Exportera** ![ ](../../media/4dc548cc-8061-48d5-9240-6793affca43a.png) export. Då exporteras data för alla webbplatser och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 webbplatser kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 webbplatser måste du exportera data för att kunna filtrera och sortera.  <br/> När data exporteras till en Excel-fil bör du tänka på att datumet då innehållsrapporten genererades återspeglas i filen i kolumnen **Data från** och med.      <br/>   |
 |||
    
 

@@ -16,25 +16,26 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Läs om hur du bevarar en medarbetares filer och e-postmeddelanden när personen lämnar organisationen.
-ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140639"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387207"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -156,7 +157,7 @@ Om du vill spara e-postmeddelanden, kalender, uppgifter och kontakter för den t
     
     ![Så här ser menyfliksområdet ut i Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
-3. Välj ** &amp; Öppna Exportera** \> **import/export**.
+3. Välj **Öppna &amp; Exportera** \> **import/export**.
     
     ![Kommandot Importera/Exportera i Backstage-vyn](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
@@ -204,7 +205,7 @@ Om du vill ge åtkomst till den tidigare medarbetarens e-postmeddelanden, kalend
 > Du kan också [konvertera den tidigare användarens postlåda till en delad postlåda](https://docs.microsoft.com/office365/admin/email/convert-user-mailbox-to-shared-mailbox) eller [vidarebefordra en tidigare anställds e-post till en annan anställd](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).
 
   
-1. Gå till \> **Filöppnad &amp; ** \> **exportimport/export**i **Outlook** .
+1. Gå till **File** \> ** &amp; Filöppnad** \> **exportimport/export**i Outlook .
     
     När du gör det startas Import-/exportguiden.
     

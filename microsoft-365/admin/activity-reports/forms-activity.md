@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: Lär dig hur du skaffar en aktivitetsrapport för Microsoft Forms med instrumentpanelen Microsoft 365 Reports i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 63eb8613879849201876b237c659a4529ce2ca0f
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: f835533fb626c8d6e7bd408b90abaa558304e20b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781511"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387759"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-rapporter i administrationscentret – formuläraktivitet
 
@@ -38,7 +39,7 @@ Du kan till exempel förstå aktiviteten hos alla användare som licensieras fö
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. \> Välj **Formuläraktivitet**i listrutan **Forms** **Välj en rapport** .
+2. **Välj** Formuläraktivitet i listrutan **Välj en rapport** \> **activity**.
 
 ## <a name="interpret-the-forms-activity-report"></a>Tolka formuläraktivitetsrapporten
 

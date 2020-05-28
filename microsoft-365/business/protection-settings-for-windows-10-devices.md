@@ -22,18 +22,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Lär dig hur du skapar en apphanteringsprincip och skyddar arbetsfiler på användarnas personliga Windows 10-enheter.
-ms.openlocfilehash: bbfb07302f2d77f7e66301723d176cf053f79cc1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: c3e003205da30fa79069946960ef00e4195f0cbc
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561349"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386546"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Ange programskyddsinställningar för Windows 10-enheter
 
@@ -43,13 +44,13 @@ Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter 
   
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Välj \> **Enhetsprinciper** \> lägg **** **till**på vänster navigator.
+2. Välj **Enhetsprinciper** \> **Policies** \> **lägg till**på den vänstra navigeringsknappen .
 
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
 4. Välj **Programhantering för Windows 10** under **Principtyp**.
     
-5. Under **Enhetstyp**väljer du antingen **Personligt** eller **företagsägt**.
+5. Under **Enhetstyp**väljer du antingen **Person eller** **Företagsägda**.
     
 6. **Kryptera arbetsfiler** aktiveras automatiskt. 
     
@@ -57,7 +58,7 @@ Om dina användare har privata Windows 10-enheter som de utför arbetsuppgifter 
     
 9. Expandera **Återställ data på Windows-enheter**. Vi rekommenderar att du slår **på**den .
     
-    Innan du kan bläddra till certifikatet för dataåterställningsagenten måste du skapa ett. Instruktioner finns i [Skapa och verifiera ett EFS-certifikat (Encrypting File System) Data Recovery Agent (D).](https://go.microsoft.com/fwlink/p/?linkid=853700)
+    Innan du kan bläddra till certifikatet för dataåterställningsagenten måste du skapa ett. Instruktioner finns i [Skapa och verifiera ett EFS-certifikat (Encrypting File System) Data Recovery Agent ..](https://go.microsoft.com/fwlink/p/?linkid=853700)
     
     Som standard krypteras arbetsfiler med en hemlig nyckel som lagras på enheten och som är kopplad till användarens profil. Endast användaren kan öppna och dekryptera filen. Men om en enhet försvinner eller en användare tas bort kan en fil fastna i ett krypterat tillstånd. En administratör kan använda DRA-certifikatet (Data Recovery Agent) för att dekryptera filen.
     

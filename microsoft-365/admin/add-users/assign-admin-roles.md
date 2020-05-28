@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en användare eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618794"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387243"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -65,7 +66,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Tilldela administratörsroller till användare med roller
 
-1. Gå till Roller **roller i** **administrationscentret** > och visa alla administratörsroller som är tillgängliga för organisationen.
+1. Gå till Roller roller i **administrationscentret** > **Roles** och visa alla administratörsroller som är tillgängliga för organisationen.
 2. Välj den administratörsroll som du vill tilldela användaren till.
 3. Välj **Tilldelade administratörer** > **Lägg till**.
 4. Skriv användarens **visningsnamn** eller **användarnamn**och välj sedan användaren i listan med förslag.
@@ -74,7 +75,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Tilldela en användare till en administratörsroll från aktiva användare
 
-1. Gå till sidan Aktiva [användare](https://go.microsoft.com/fwlink/p/?linkid=834822) **i administrationscentret.** >
+1. Gå till sidan Aktiva användare **i administrationscentret.** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822)
 
 2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Hantera roller bredvid Roller i det utfällbara fönstret **bredvid** **Roller.**
 

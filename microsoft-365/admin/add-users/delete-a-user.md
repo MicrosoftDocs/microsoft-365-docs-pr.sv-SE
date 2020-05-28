@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär hur du tar bort ett användarkonto. Bestäm vad du ska göra med användarens e-postadress, OneDrive-innehåll och om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: a179915ae92def2a967dc86378346bb905c923e4
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049465"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387195"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -138,7 +139,7 @@ Att minska antalet licenser är ett separat steg som endast kan utföras av den 
   
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing** Om du inte ser det här alternativet är du inte en global administratör eller faktureringsadministratör och kan inte genomföra detta steg.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>. Om du inte ser det här alternativet är du inte en global administratör eller faktureringsadministratör och kan inte genomföra detta steg.
 
 2. Markera prenumerationen (om du har fler än en) och välj sedan **Lägg till/ta bort licenser** för att ta bort licensen så att du inte betalar för den förrän du anställer en ny person.  
 

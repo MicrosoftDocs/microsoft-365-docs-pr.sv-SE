@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Lär dig hur du lägger till användare i Microsoft 365, en i taget eller flera användare samtidigt från en CSV-fil.
-ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049477"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387267"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Lägga till användare individuellt eller i grupp
 
@@ -42,7 +43,7 @@ Personerna i teamet behöver var och en ett användarkonto innan de kan logga in
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Gå till **Aktiva användare** **och** > välj **Lägg till en användare**.
+2. Gå till **Aktiva** > **användare**och välj Lägg till **en användare**.
    
 3. I fönstret **Konfigurera grunderna** fyller du i följande information och väljer sedan **Nästa**. 
   
@@ -69,7 +70,7 @@ Personerna i teamet behöver var och en ett användarkonto innan de kan logga in
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
-2. Gå till **Aktiva användare** **och** > välj **Lägg till en användare**.
+2. Gå till **Aktiva** > **användare**och välj Lägg till **en användare**.
    
   
    Fyll i följande information i fönstret **Ny användare.** Välj **Lägg till** när du är klar. 
@@ -94,7 +95,7 @@ Personerna i teamet behöver var och en ett användarkonto innan de kan logga in
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-2. Gå till **Aktiva användare** **och** > välj **Lägg till en användare**.
+2. Gå till **Aktiva** > **användare**och välj Lägg till **en användare**.
    
   
    Fyll i följande information i fönstret **Ny användare.** Välj **Lägg till** när du är klar. 

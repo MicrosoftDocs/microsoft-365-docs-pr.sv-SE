@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Lär dig hur du återställer borttagna användarkonton och alla associerade data.
-ms.openlocfilehash: 7ac0805024ebf78075a66f77c99496675f20e497
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140573"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387011"
 ---
 # <a name="restore-a-user"></a>Återställa en användare
 
@@ -53,7 +54,7 @@ Du måste vara global administratör för Microsoft 365 eller användarhantering
  
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
+1. Gå till sidan Användare **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -88,7 +89,7 @@ Om du vill lösa detta ersätter du det aktiva användarkontot med det konto som
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
+1. Gå till sidan Användare **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -129,7 +130,7 @@ Du måste ha [administratörsbehörighet](about-admin-roles.md) i Microsoft 365 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
+1. Gå till sidan Användare **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">borttagna användare</a> i administrationscentret.
 
 ::: moniker-end
 

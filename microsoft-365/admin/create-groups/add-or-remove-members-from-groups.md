@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,19 +21,19 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlem från grupp och hanterar gruppägarstatus i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 96d9485821c27f2e9a4696401938da35a9996996
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99f764c3fc0022a570af6f3dc232725025b4d32f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140561"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388155"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med hjälp av administrationscentret
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -45,7 +46,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.  
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.  
     
 2. Välj ett gruppnamn.
     
@@ -59,7 +60,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.  
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.  
     
 2. Välj ett gruppnamn.
     
@@ -73,7 +74,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.  
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.  
     
 2. Välj ett gruppnamn.
     
@@ -138,7 +139,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
  
 ::: moniker range="o365-worldwide"
  
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     
@@ -152,7 +153,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     
@@ -166,7 +167,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     
@@ -186,7 +187,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     
@@ -202,7 +203,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
 
@@ -218,7 +219,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
 
@@ -236,7 +237,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     
@@ -250,7 +251,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     
@@ -264,7 +265,7 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj ett gruppnamn.
     

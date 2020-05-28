@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Lär dig hur du får en Office-aktiveringsrapport för att veta vilka användare som har aktiverat sin Office-prenumeration och identifiera användare som kan behöva ytterligare hjälp.
-ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621228"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387747"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365-rapporter i administrationscentret – Microsoft Office-aktiveringar
 
@@ -39,7 +40,7 @@ I rapporten Office-aktivering får du en översikt över vilka användare som ha
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>.
 
     
-2. Välj **Office 365-aktiveringar** \> **Activations**i listrutan **Välj en rapport** . 
+2. Välj **Office 365-aktiveringar** i listrutan **Välj en rapport** \> **Activations**. 
   
 ## <a name="interpret-the-office-activations-report"></a>Tolka rapporten över Office-aktiveringar
 
