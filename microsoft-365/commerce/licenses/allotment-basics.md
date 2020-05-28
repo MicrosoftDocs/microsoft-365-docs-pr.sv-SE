@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: Läs mer om den nya kolonilotter funktionen.
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942182"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402420"
 ---
 # <a name="allotment-basics"></a>Grunderna i tilldelning
 
@@ -51,4 +49,4 @@ Du måste vara global administratör eller licensadministratör för att komma i
 
 ## <a name="getting-started"></a>Komma igång
 
-Tilldelningsfunktionen är tillgänglig i en privat förhandsversion för endast ett litet antal kunder. Om du är intresserad av att gå [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)med, fyll i det här formuläret: .
+Tilldelningsfunktionen är tillgänglig i en privat förhandsversion för endast ett litet antal kunder. Om du är intresserad av att gå med, fyll i det här formuläret: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

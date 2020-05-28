@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjäningsköp som görs av användare i organisationen.
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141156"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403276"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ Du kan också styra om användare i organisationen kan göra självbetjäningsk�
 
 ## <a name="view-self-service-subscriptions"></a>Visa självbetjäningsprenumerationer
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Välj **Självbetjäning**i listrutan **Kontotyp** bredvid **Förfina**resultat .
 
@@ -44,7 +45,7 @@ Du kan också styra om användare i organisationen kan göra självbetjäningsk�
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visa vem som har licenser för en självbetjäningsköpsprenumeration
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret.
 
 2. Välj filterikonen och välj sedan **Självbetjäning**.
 
@@ -63,7 +64,7 @@ Du kan inaktivera eller aktivera självbetjäningsköp för användare i organis
 
 Du kan använda **MSCommerce** PowerShell-modulen för att:
 
-- Visa standardtillståndet för parametervärdet &mdash; Tillåt **självtjänstköpa** om det är aktiverat eller inaktiverat av produkten
+- Visa standardtillståndet för parametervärdet **Tillåt självtjänstköpa** om &mdash; det är aktiverat eller inaktiverat av produkten
 - Visa en lista över tillämpliga produkter och om självbetjäningsköp är aktiverat eller inaktiverat
 - Visa eller ändra den aktuella inställningen för en viss produkt för att antingen aktivera eller inaktivera den
 
@@ -75,7 +76,7 @@ Du kan tilldela befintliga licenser eller köpa ytterligare prenumerationer via 
 
 1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a> med ditt globala administratörs- eller faktureringsadministratörskonto.
 
-2. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a> **Billing**
+2. Gå till **Billing**sidan  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
 
 3. Hitta och välj den produkt som du vill köpa och välj sedan **Köp.**
 

@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Läs om hur du köper en annan Microsoft 365 för företag-prenumeration för din organisation när du redan har en prenumeration. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: ebadf9a019829080c145eec2f3f5d612473e91b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141308"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402208"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Köp en annan Microsoft 365 för företag-prenumeration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +51,7 @@ När du har köpt en ny prenumeration måste du tilldela de användare som du vi
 ::: moniker range="o365-worldwide"
 
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret.
 
 2. På sidan **Köp tjänster** väljer du den prenumeration som du vill köpa och väljer sedan **Köp**.
 
@@ -59,7 +61,7 @@ När du har köpt en ny prenumeration måste du tilldela de användare som du vi
 
 5. Granska prisinformationen och välj **Nästa**.
 
-6. Ange din betalningsinformation och välj sedan **Gå** \> **till Admin Home**.
+6. Ange din betalningsinformation och **Place order** välj sedan \> **Gå till Admin Home**.
 
 ::: moniker-end
 

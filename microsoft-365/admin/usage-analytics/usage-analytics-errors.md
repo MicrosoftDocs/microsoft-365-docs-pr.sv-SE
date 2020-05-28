@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Lär dig hur du felsöker problem med mallappen Microsoft 365 Usage Analytics.
-ms.openlocfilehash: 7164aa246a79a8d8c5aa50d995b53b6221003c01
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212155"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402040"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Felsökning av Microsoft 365 användningsanalyser
 
@@ -39,7 +40,7 @@ Utforska följande lista över felmeddelanden för att få hjälp med de vanliga
   
  **Orsak:** Innan du kan ansluta till appen måste du prenumerera på data från administrationscentret för Microsoft 365. Om det här steget inte görs först kan du inte ansluta till mallappen, även om du anger ditt Microsoft 365-klient-ID. 
   
- **Så här åtgärdar du det här felet:** Om du vill prenumerera på data \> går du till administrationscentret **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">användning</a> och letar reda på Microsoft 365-panelen för användningsanalys på huvudpanelsidan. Välj knappen **Kom igång** och vrid sedan på inställningen Gör data tillgängliga för **Microsoft 365-användningsanalys för Power BI** och **Spara**i fönstret **Rapporter** som öppnas.
+ **Så här åtgärdar du det här felet:** Om du vill prenumerera på data går du till administrationscentret \> **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">användning</a> och letar reda på Microsoft 365-panelen för användningsanalys på huvudpanelsidan. Välj knappen **Kom igång** och vrid sedan på inställningen Gör data tillgängliga för **Microsoft 365-användningsanalys för Power BI** och **Spara**i fönstret **Rapporter** som öppnas.
   
 ## <a name="we-are-processing-your-data"></a>Vi bearbetar dina data
 
@@ -67,7 +68,7 @@ Utforska följande lista över felmeddelanden för att få hjälp med de vanliga
   
  **Orsak:** Klientorganisations-ID:t är ett GUID och måste vara i xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Om du anger någon annan sträng i inmatningsrutan för klientorganisationen får du det här felet. 
   
- **Så här åtgärdar du det här felet:** Gå \> till administrationscentret **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">användning</a> och leta reda på Microsoft 365 användning analytics panel på huvudpanelen sidan. Klientorganisations-ID:t visas på panelen. Du kan kopiera den härifrån och klistra in den i dialogrutan för att ansluta till mallappen. 
+ **Så här åtgärdar du det här felet:** Gå till administrationscentret \> **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">användning</a> och leta reda på Microsoft 365 användning analytics panel på huvudpanelen sidan. Klientorganisations-ID:t visas på panelen. Du kan kopiera den härifrån och klistra in den i dialogrutan för att ansluta till mallappen. 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>Vårt system känner inte igen klientorganisations-ID:t som du angav
 
@@ -77,7 +78,7 @@ Utforska följande lista över felmeddelanden för att få hjälp med de vanliga
   
  **Orsak:** Klientorganisations-ID:t som du angav är inte giltigt eller finns inte. 
   
- **Så här åtgärdar du det här felet:** Gå \> till administrationscentret **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">användning</a> och leta reda på Microsoft 365 användning analytics panel på huvudpanelen sidan. Klientorganisations-ID:t visas på panelen. Du kan kopiera den härifrån och klistra in den i dialogrutan för att ansluta till mallappen. 
+ **Så här åtgärdar du det här felet:** Gå till administrationscentret \> **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">användning</a> och leta reda på Microsoft 365 användning analytics panel på huvudpanelen sidan. Klientorganisations-ID:t visas på panelen. Du kan kopiera den härifrån och klistra in den i dialogrutan för att ansluta till mallappen. 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>Ange dina inloggningsuppgifter för att logga in på Power BI igen
 

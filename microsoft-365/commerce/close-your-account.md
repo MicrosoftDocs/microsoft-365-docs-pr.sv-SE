@@ -11,23 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Läs om hur du stänger ditt konto hos Microsoft.
-ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f399a1ba4d67abf5982c111e9b915f02324150a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141284"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402184"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Om din organisation använder Active Directory som synkroniseras med Azure AD ta
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Steg 2: Avbryta alla aktiva prenumerationer
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Om prenumerationslistan finns i **tabellvyn** väljer du **Kort**till höger .
 
@@ -59,7 +59,7 @@ Om din organisation använder Active Directory som synkroniseras med Azure AD ta
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Steg 3: Ta bort alla inaktiverade prenumerationer
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Om prenumerationslistan finns i **tabellvyn** väljer du **Kort**till höger .
 
@@ -73,7 +73,7 @@ Om din organisation använder Active Directory som synkroniseras med Azure AD ta
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Steg 4: Inaktivera multifaktorautentisering
 
-1. Gå till sidan Aktiva<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">användare</a> i **administrationscentret.** > 
+1. Gå till sidan Aktiva användare i **administrationscentret.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>
 
 2. Välj **Multifaktorautentisering**.
 

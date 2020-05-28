@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: Läs om hur du uppgraderar till en ny prenumeration.
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141072"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403180"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Uppgradera till ett annat abonnemang
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -48,7 +49,7 @@ När ditt företag ändras, eller om du behöver fler funktioner, kan du uppgrad
 
 När du använder fliken **Uppgradera** leds du genom processen att köpa ett nytt abonnemang. Alla användare tilldelas automatiskt licenser i det nya abonnemanget och din gamla plan avbryts åt dig.
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Välj den prenumeration som du vill uppgradera.
 
@@ -95,7 +96,7 @@ Om du vill uppgradera abonnemangen automatiskt måste alla användare tilldelas 
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Du kan inte uppgradera prenumerationer just nu eftersom den här prenumerationen inte är helt konfigurerad eller tjänsten inte är tillgänglig.
 
-Om en av tjänsterna till exempel har en incident kan du inte uppgradera förrän alla tjänster är felfria. Om du vill se om det finns etablerings- eller servicehälsoproblem går du till **hälsosidan** \> för <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">hälsotjänsten</a> i administrationscentret.
+Om en av tjänsterna till exempel har en incident kan du inte uppgradera förrän alla tjänster är felfria. Om du vill se om det finns etablerings- eller servicehälsoproblem går du till **hälsosidan** för \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">hälsotjänsten</a> i administrationscentret.
 
 Om du upptäcker att en tjänst inte är helt etablerad, eller om du har ett servicehälsoproblem, väntar du några timmar på att tjänsten ska bli tillgänglig och försök igen. Om du fortfarande har problem, [ring supporten](../../admin/contact-support-for-business-products.md).
 
@@ -133,7 +134,7 @@ Du kanske inte ser några planer på fliken **Uppgradera** eftersom tjänsten h�
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Planen som du vill uppgradera till är inte ett alternativ som stöds
 
-När du uppgraderar planer visas de planer som är tillgängliga för dig att uppgradera till baserat på tjänsterna i den aktuella planen. Du kan bara uppgradera till ett abonnemang som har samma datarelaterade tjänster, till exempel Exchange Online eller SharePoint Online, eller till en högre version av dem. Detta säkerställer att\'användare inte förlorar data som är relaterade till dessa tjänster under uppgraderingen.
+När du uppgraderar planer visas de planer som är tillgängliga för dig att uppgradera till baserat på tjänsterna i den aktuella planen. Du kan bara uppgradera till ett abonnemang som har samma datarelaterade tjänster, till exempel Exchange Online eller SharePoint Online, eller till en högre version av dem. Detta säkerställer att användare \' inte förlorar data som är relaterade till dessa tjänster under uppgraderingen.
 
 Om din plan inte är kvalificerad att uppgradera planer automatiskt kan du kanske [ändra abonnemang manuellt](change-plans-manually.md)i stället. Du kan också [ringa support](../../admin/contact-support-for-business-products.md) för att få hjälp.
 

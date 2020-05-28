@@ -14,15 +14,16 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Läs om hur du hanterar kostnadsfria registreringsprenumerationer för självbetjäning för din organisation.
-ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045267"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403252"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Hantera registreringsprenumerationer för självbetjäning
 
@@ -43,7 +44,7 @@ Du använder cmdleten [**Set-MsolCompanySettings**](https://docs.microsoft.com/p
 > [!IMPORTANT]
 > När du tar bort en prenumeration för självbetjäningsanmälning blockerar du alla användare från att komma åt deras data och e-post och ta bort alla data och e-postmeddelanden.
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 2. Hitta den självbetjäningsprenumeration som du vill ta bort. Välj **Ta bort prenumeration**i avsnittet Inställningar & **Åtgärder** .
 3. Markera kryssrutan i fönstret **Ta bort prenumeration** och välj sedan Ta bort **prenumeration**.
 

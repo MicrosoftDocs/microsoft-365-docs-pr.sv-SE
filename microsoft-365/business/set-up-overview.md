@@ -21,17 +21,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Lär dig installationsstegen för Microsoft 365 Business Premium, från att prenumerera, lägga till en domän och användare, till att konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633364"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402987"
 ---
 # <a name="overview-of-setup"></a>Översikt över konfiguration
 
@@ -92,6 +93,6 @@ När du ansluter en Windows 10-enhet till Azure AD tillämpas de principer som d
 
     - Om ditt företag har en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare) kan du ge dina Azure AD-anslutna enheter åtkomst till dessa resurser genom att följa stegen här: [Få åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business Premium](access-resources.md).
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
-[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

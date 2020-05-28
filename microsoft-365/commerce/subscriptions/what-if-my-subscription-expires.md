@@ -1,5 +1,5 @@
 ---
-title: Vad händer med mina data och åtkomst när prenumerationen går ut?
+title: Vad händer med mina data och min åtkomst när prenumerationen går ut?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Läs om vad som händer med dina data när din Microsoft 365 för företag-prenumeration går ut, är inaktiverad eller om du avbryter.
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165132"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403168"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Vad händer med mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?
 
@@ -40,9 +41,9 @@ Om prenumerationen upphör– antingen för att den går ut eller för att du be
 
 I följande tabell förklaras vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration upphör att gälla.
 
-| **Aktiva**                                                             | **Utgångna <br/>(30 dagar)\***                                                | **Inaktiverad <br/>(90 dagar)\***                                               | **Avetablerade**                                                                         |
+| **Aktiva**                                                             | **Utgångna <br/> (30 \* dagar)**                                                | **Inaktiverad <br/> (90 \* dagar)**                                               | **Avetablerade**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Data som är tillgängliga för alla*                                               | *Data som är tillgängliga för alla*                                                     | *Data som endast är tillgängliga för administratörer*                                             | **Data<br/>borttagna Azure Active Directory tas bort, om den inte används av andra tjänster** |
+| *Data som är tillgängliga för alla*                                               | *Data som är tillgängliga för alla*                                                     | *Data som endast är tillgängliga för administratörer*                                             | **Data borttagna <br/> Azure Active Directory tas bort, om den inte används av andra tjänster** |
 | Användare har normal åtkomst till Microsoft 365-, data- och Office-program  | Användare har normal åtkomst till Microsoft 365, filer och program              | Användare kan inte komma åt Microsoft 365, filer eller program                        | Användare kan inte komma åt Microsoft 365, filer eller program                                     |
 | Administratörer har normal åtkomst till Microsoft 365-, data- och Office-program | Administratörer kan komma åt administrationscentret                                           | Administratörer kan komma åt administrationscentret, men kan inte tilldela licenser till användare       | Administratörer kan komma åt administrationscentret för att köpa och hantera andra prenumerationer             |
 |                                                                        | Globala administratörer eller faktureringsadministratörer kan återaktivera prenumerationen i administrationscentret | Globala administratörer eller faktureringsadministratörer kan återaktivera prenumerationen i administrationscentret |                                                                                           |

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Byt Microsoft 365 för företag-prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
-ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707517"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403204"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Byt Microsoft 365 för affärsplaner manuellt
 
@@ -137,13 +138,13 @@ Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara 
   
 5. Växla växlingsknappen till **avpositionen** för licenser som den här användaren inte längre behöver.
 
-6. Längst ned i fönstret **Produktlicenser** väljer du **Tilldela** \> **stäng.** \> **Close**
+6. Längst ned i fönstret **Produktlicenser** väljer du **Tilldela** \> **Close** \> **stäng.**
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Tilldela om licenser för flera användare samtidigt
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan Aktiva <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">användare</a> i **administrationscentret.** \>
+1. Gå till sidan **Aktiva** användare i \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> administrationscentret.
 
 ::: moniker-end
 

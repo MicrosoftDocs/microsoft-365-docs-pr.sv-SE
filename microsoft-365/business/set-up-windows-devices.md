@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Lär dig hur du konfigurerar Windows-enheter som kör Windows 10 Pro för Microsoft 365 Business Premium-användare, vilket aktiverar centraliserad hantering och säkerhetskontroller.
-ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635461"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402967"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare
 
@@ -104,7 +105,7 @@ Om du laddade upp filer till OneDrive för företag, synkroniserar du dem med da
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Kontrollera att enheten är ansluten till Azure AD
 
-Om du vill verifiera synkroniseringsstatus klickar du i området **Anslut** \<till\> _ organisationsnamn _ på sidan **Access för arbete eller skola** i **Inställningar**för att visa knapparna **Info** och **Koppla från**. Klicka på **Info** för att få din synkroniseringsstatus. 
+Om du vill verifiera synkroniseringsstatus klickar du i området **Anslut till** _ _ på sidan Access för arbete eller **skola** i **Inställningar**för att \<organization name\> visa knapparna **Info** och **Koppla från**. Klicka på **Info** för att få din synkroniseringsstatus. 
   
 Klicka på Synkronisera på sidan Synkroniseringsstatus synkronisering för att hämta de senaste hanteringsprinciperna för mobila enheter till datorn.
   
@@ -128,4 +129,4 @@ Information om hur du konfigurerar dina mobila enheter finns i [Konfigurera mobi
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Mer information om hur du konfigurerar och använder Microsoft 365 Business Premium
 
-[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

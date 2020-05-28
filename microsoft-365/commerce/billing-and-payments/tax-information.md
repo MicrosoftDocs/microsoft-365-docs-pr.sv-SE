@@ -20,13 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 description: 'Ta reda på hur mycket skatt du debiteras för din Microsoft 365 för företag-prenumeration i olika regioner. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232835"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401756"
 ---
 # <a name="tax-information"></a>Momsinformation
 
@@ -160,7 +162,7 @@ Om din fakturering utförs av Microsoft Corporation ([se din faktura](view-your-
 
 Moms beräknas mot a-priset och aggregeras sedan.
 
-Till exempel:
+Ett exempel:
 
 >*(skattesats för enhetspris X) X kvantitet = total moms*
 
@@ -186,4 +188,4 @@ Ha följande dokumentation klar:
   
 [Visa din faktura](view-your-bill-or-invoice.md)
   
-[Förstå din faktura eller faktura](understand-your-invoice.md)
+[Förstå din faktura](understand-your-invoice.md)

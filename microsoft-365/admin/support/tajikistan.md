@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 547d01b9bd4cbed5d9d75e5939e38c444fc78364
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 953f56a345281d40d4308a748dc96d00bf0c7b4a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811226"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401548"
 ---
 # <a name="contact-support-for-tajikistan"></a>Kontakta support för Tadzjikistan
 
@@ -26,7 +27,7 @@ ms.locfileid: "42811226"
 ## <a name="phone-number"></a>Telefonnummer
 +7 499 922 86 23
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Ryska: mån-fre 10:00-19:00 Moskva

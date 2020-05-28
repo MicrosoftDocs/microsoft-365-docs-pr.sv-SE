@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Användare kan lära sig att hantera sina självbetjäningsköp.
-ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141130"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403264"
 ---
 # <a name="manage-self-service-purchases-users"></a>Hantera självbetjäningsköp (användare)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -37,11 +38,11 @@ Din administratör har en skrivskyddad vy över alla prenumerationer som du köp
 
 ## <a name="view-your-subscriptions"></a>Visa dina prenumerationer
 
-Du kan visa en lista över alla köpta prenumerationer med självbetjäning som du har köpt. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+Du kan visa en lista över alla köpta prenumerationer med självbetjäning som du har köpt. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Så här köper du fler eller minskar licenser
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Hitta den prenumeration som du vill köpa fler eller minska licenser för.
 
@@ -54,7 +55,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ### <a name="to-assign-licenses"></a>Så här tilldelar du licenser
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret.
 
 2. Välj den prenumeration som du vill tilldela licenser för.
 
@@ -69,7 +70,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ### <a name="to-unassign-licenses"></a>Så här avtar du licenser
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret.
 
 2. Välj den produkt som du vill ta bort licenser för.
 
@@ -81,7 +82,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ## <a name="cancel-a-subscription"></a>Avbryta en prenumeration
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Leta reda på den prenumeration som du vill avbryta.
 
@@ -91,7 +92,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ## <a name="manage-your-payment-details"></a>Hantera dina betalningsuppgifter
 
-1. Gå till sidan > **Faktureringsfakturor & betalningar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">i</a> administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  **Faktureringsfakturor & betalningar**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">i</a> administrationscentret.
 
 2. Välj en faktureringsprofil i listan.
 
@@ -104,7 +105,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ### <a name="update-an-existing-payment-method"></a>Uppdatera en befintlig betalningsmetod
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Faktureringsfakturor & betalningar</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Faktureringsfakturor & betalningar</a> i administrationscentret.
 
 2. Om du vill redigera en befintlig betalningsmetod väljer du den i listan.
 
@@ -114,7 +115,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ### <a name="add-a-new-payment-method"></a>Lägga till en ny betalningsmetod
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Faktureringsfakturor & betalningar</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Faktureringsfakturor & betalningar</a> i administrationscentret.
 
 2. Välj **Lägg till en betalningsmetod**.
 
@@ -122,7 +123,7 @@ Om du till exempel har 100 licenser och behöver lägga till ytterligare 5 skriv
 
 ## <a name="view-your-invoices"></a>Visa dina fakturor
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Faktureringsfakturor & betalningar</a> i administrationscentret. **Billing**
+1. Gå till **sidan**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Faktureringsfakturor & betalningar</a> i administrationscentret.
 
 2. Under **Fakturor** väljer du den faktura som du vill visa.
 

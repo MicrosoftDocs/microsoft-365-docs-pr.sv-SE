@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Lär dig mer om de säkerhetsfunktioner som med följer med Microsoft 365 Business Premium för att skydda dina data på datorer, telefoner och surfplattor.
-ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165766"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402723"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Säkerhets- och efterlevnadsfunktioner för Microsoft 365 Business Premium
 
@@ -109,7 +110,7 @@ Din Microsoft 365 Business Premium-prenumeration innehåller funktioner som hjä
 
    Microsoft 365 Business Premium innehåller alla funktioner i [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Med det här abonnemanget kan du skapa **känslighetsetiketter** som gör att du kan styra åtkomsten till känslig information i e-post och dokument, med kontroller som "Vidarebefordra inte" och "Kopiera inte". Du kan också klassificera känslig information som "Konfidentiell" och ange hur sekretessbelagd information kan delas utanför och inom företaget. Kryptering i företagsklass är lätt att använda för e-post och dokument för att hålla din information privat. Du kan också installera klienttillägget Azure Information Protection för Office-appar. Mer information finns i [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). För känslighetsetiketter installerar **du AzInfoProtection_UL.exe**.
 
-Du kan hantera dessa &amp; funktioner i säkerhetsefterlevnadscentret och Administrationscentret för Intune. Med tiden läggs de förenklade kontrollerna till i Microsoft 365 admin center.
+Du kan hantera dessa funktioner i &amp; säkerhetsefterlevnadscentret och Administrationscentret för Intune. Med tiden läggs de förenklade kontrollerna till i Microsoft 365 admin center.
   
     
 ## <a name="faq"></a>Vanliga frågor och svar
@@ -126,4 +127,4 @@ Ja, dessa funktioner är tillgängliga på alla marknader där Microsoft 365 Bus
     
     ![Välj Administrationscenter i den vänstra navigeringscentralen i Administrationscentret för Microsoft 365.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Välj ** &amp; Säkerhetsefterlevnad** för att gå till säkerhetsefterlevnadscenter. &amp;
+3. Välj ** &amp; Säkerhetsefterlevnad** för att gå till &amp; säkerhetsefterlevnadscenter.

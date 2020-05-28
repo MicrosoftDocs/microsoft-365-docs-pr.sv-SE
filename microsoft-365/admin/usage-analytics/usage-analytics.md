@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Få en översikt över hur din organisation använder Microsoft 365-tjänster för att kommunicera och samarbeta.
-ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011765"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402028"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
 ---
@@ -55,23 +56,23 @@ Med den här sammanfattningen kan du snabbt förstå användningsmönster i Offi
 
 Översiktsrapporten för Microsoft 365 innehåller följande rapporter. Du kan visa dem genom att välja fliken överst på rapportsidan. Alla värden i månaden som visas i det övre avsnittet i rapporten refererar till den senaste hela månaden.
 
-- **Adoption** &ndash; Erbjuder en sammanfattning av antagandetrenderna. Använd rapporterna i det här avsnittet om du vill veta hur användarna har antagit Microsoft 365 och hur den totala användningen av de enskilda tjänsterna har ändrats månad för månad. Du kan se hur användarna är aktiverade, hur många personer i organisationen som aktivt använder Microsoft 365, hur många som returnerar användare och hur många som använder produkten för första gången.
+- **Antagande** &ndash; Erbjuder en sammanfattning av antagandetrenderna. Använd rapporterna i det här avsnittet om du vill veta hur användarna har antagit Microsoft 365 och hur den totala användningen av de enskilda tjänsterna har ändrats månad för månad. Du kan se hur användarna är aktiverade, hur många personer i organisationen som aktivt använder Microsoft 365, hur många som returnerar användare och hur många som använder produkten för första gången.
 
-- **Användning** &ndash; Erbjuder en nedrullningsvy över volymen aktiva användare och nyckelaktiviteterna för varje produkt under de senaste 12 månaderna. Använd rapporterna i det här avsnittet om du vill veta hur personer i organisationen använder Microsoft 365.
+- **Användning** &ndash; Erbjuder en nedrullningsvy över volymen aktiva användare och de viktigaste aktiviteterna för varje produkt under de senaste 12 månaderna. Använd rapporterna i det här avsnittet om du vill veta hur personer i organisationen använder Microsoft 365.
 
 - **Kommunikation** &ndash; Du kan snabbt se om personer i organisationen föredrar att hålla kontakten med hjälp av Teams-, Yammer-, e-post- eller Skype-samtal. Du kan observera om det finns förändringar i mönster i användningen av kommunikationsverktyg bland dina anställda. 
 
 - **Samarbete** &ndash; Se hur personer i organisationen använder OneDrive och SharePoint för att lagra dokument och samarbeta med varandra och hur dessa trender utvecklas månad för månad. Du kan också se hur många dokument som delas internt eller externt och hur många SharePoint-webbplatser eller OneDrive-konton som aktivt används, uppdelade efter ägare och andra medarbetare.
 
-- **Lagring** &ndash; Använd den här rapporten för att spåra molnlagring för postlådor, OneDrive och SharePoint-webbplatser.
+- **Lagring** &ndash; Använd den här rapporten om du vill spåra molnlagring för postlådor, OneDrive och SharePoint-webbplatser.
 
-- **Mobilitetsspår** &ndash; vilka klienter och enheter som personer använder för att ansluta till e-post, Teams, Skype eller Yammer.
+- **Rörlighet** &ndash; Spåra vilka klienter och enheter som personer använder för att ansluta till e-post, Teams, Skype eller Yammer.
 
 ## <a name="activation-and-licensing"></a>Aktivering och licensiering
 
 Aktiverings- och licenssidan innehåller rapporter om Microsoft 365-aktivering. det vill exempel på hur många användare som har hämtat och aktiverat Office-appar och hur många licenser som har tilldelats av din organisation. Månadsvärdet mot toppen refererar till den aktuella månaden och måtten återspeglar värden som aggregerats från början av månaden till det aktuella datumet.
 
-- **Aktiveringsspårstjänstplan** &ndash; (till exempel Microsoft 365 Apps för företag, Projekt och Visio) aktiveringar i organisationen. Varje användare med en Office-licens kan installera produkter på upp till fem enheter. Du kan också använda rapporter i det här avsnittet för att se de enheter där personer har installerat Office-appar. Observera att för att aktivera ett abonnemang måste en användare installera appen och logga in med sitt konto.
+- **Aktivering** &ndash; Spåra tjänstplan (till exempel Microsoft 365 Apps för företags-, projekt- och Visio-aktiveringar) i organisationen. Varje användare med en Office-licens kan installera produkter på upp till fem enheter. Du kan också använda rapporter i det här avsnittet för att se de enheter där personer har installerat Office-appar. Observera att för att aktivera ett abonnemang måste en användare installera appen och logga in med sitt konto.
 
 - **Licensiering** &ndash; Den här rapporten innehåller en översikt över licenstyper, antalet användare som tilldelats varje licenstyp och licenstilldelningsdistributionen för varje månad. Månadsvärdet mot toppen refererar till den aktuella månaden och måtten återspeglar värden som aggregerats från början av månaden till det aktuella datumet.
 

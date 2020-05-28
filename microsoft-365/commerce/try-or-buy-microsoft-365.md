@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration för Microsoft 365.
-ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141060"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403144"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köp en Microsoft 365-prenumeration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 ::: moniker range="o365-worldwide"
 
 
-1. Logga [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)in i administrationscentret på och gå sedan till **Faktureringsköpstjänster** **Billing** \> .
+1. Logga in i administrationscentret på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
 
 2. På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation. Välj det Microsoft 365-abonnemang som du vill prova eller köpa.
 
@@ -79,7 +80,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. Logga [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)in i administrationscentret på och gå sedan till **Faktureringsköpstjänster** **Billing** \> .
+1. Logga in i administrationscentret på [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
 
 2. På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation. 
 
@@ -107,7 +108,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. Logga [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)in i administrationscentret på och gå sedan till **Faktureringsköpstjänster** **Billing** \> .
+1. Logga in i administrationscentret på [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
 
 2. På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation. 
 

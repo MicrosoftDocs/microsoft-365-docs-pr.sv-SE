@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Lär dig hur du köper ett tillägg för att lägga till ytterligare funktioner i din Microsoft 365 för företag-prenumeration. Du kan också uppdatera och ta bort ett tillägg.
-ms.custom: okr_SMB
-ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141296"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402196"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Köpa eller redigera ett tillägg
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +46,7 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret.
 
 2. Längst ned på sidan **Köptjänster** väljer du **Tillägg**.
 
@@ -56,7 +58,7 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 6. Granska prisinformationen och välj sedan **Nästa**.
 
-7. Ange din betalningsinformation och välj sedan **Gå** \> **till Admin Home**.
+7. Ange din betalningsinformation och **Place order** välj sedan \> **Gå till Admin Home**.
 
 ::: moniker-end
 
@@ -66,7 +68,7 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill köpa ett tillägg för.
 
-3. I det nedre vänstra hörnet av **prenumerationsinformationen** \> väljer du Tillägg **Köp tillägg**.
+3. I det nedre vänstra hörnet av **prenumerationsinformationen** väljer du Tillägg \> **Köp tillägg**.
 
     ![Länken Köp tillägg på sidan Prenumerationer i administrationscentret för Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -78,7 +80,7 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 7. Granska prisinformationen och välj sedan **Nästa**.
 
-8. Ange din betalningsinformation och välj sedan **Gå** \> **till Admin Home**.
+8. Ange din betalningsinformation och **Place order** välj sedan \> **Gå till Admin Home**.
 
 ::: moniker-end
 
@@ -88,7 +90,7 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill köpa ett tillägg för.
 
-3. I det nedre vänstra hörnet av **prenumerationsinformationen** \> väljer du Tillägg **Köp tillägg**.
+3. I det nedre vänstra hörnet av **prenumerationsinformationen** väljer du Tillägg \> **Köp tillägg**.
 
     ![Länken Köp tillägg på sidan Prenumerationer i administrationscentret för Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -100,7 +102,7 @@ Flera av Microsoft 365 för affärsplaner har tillägg som du kan köpa för din
 
 7. Granska prisinformationen och välj sedan **Nästa**.
 
-8. Ange din betalningsinformation och välj sedan **Gå** \> **till Admin Home**.
+8. Ange din betalningsinformation och **Place order** välj sedan \> **Gå till Admin Home**.
 
 ::: moniker-end
 
@@ -116,7 +118,7 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. På sidan **Dina produkter** väljer du den prenumeration som du vill uppdatera ett tillägg för.
 
@@ -179,7 +181,7 @@ Stegen du använder för att uppdatera ett tillägg beror på om tillägget är 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. På sidan **Dina produkter** väljer du den tilläggsprenumeration som du vill uppdatera och väljer sedan **Lägg till/ta bort licenser**.
 

@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: deaddbe42647ded69fb5efa7e99fc2c1572d95ce
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bcd9ad0f3e8bcf18f6846f6a5a80918c401e4ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42810153"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401864"
 ---
 # <a name="contact-support-for-tristan-da-cunha"></a>Kontakta support för Tristan da Cunha
 
@@ -26,7 +27,7 @@ ms.locfileid: "42810153"
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5151
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 09.00-17.00

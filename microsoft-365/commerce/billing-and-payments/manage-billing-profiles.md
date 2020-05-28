@@ -13,24 +13,24 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Läs om hur faktureringsprofiler stöder fakturor.
 keywords: faktureringsprofil, fakturor, avgifter, hanterade avgifter
-ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140896"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401780"
 ---
 # <a name="manage-billing-profiles"></a>Hantera faktureringsprofiler
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -38,10 +38,10 @@ För kommersiella kunder som köper produkter och tjänster från Microsoft kan 
 
 Faktureringsprofiler innehåller följande information:
 
-- **Faktureringskonto** &ndash; Namn på det faktureringskonto som profilen är relaterad till
+- **Faktureringskonto** &ndash; Namnet på det faktureringskonto som profilen är relaterad till
 - **Betalningsmetoder** &ndash; Kredit- eller betalkort, bankkonton, check eller banköverföring
 - **Kontaktuppgifter** &ndash; Faktureringsadress och ett kontaktnamn
-- **Fakturainställningar** &ndash; Valuta baserat på faktureringskontots land, ett valfritt inköpsordernummer och alternativet att ta emot fakturor som e-postbilagor
+- **Inställningar för** &ndash; faktura Valuta baserat på faktureringskontots land, ett valfritt inköpsordernummer och möjlighet att ta emot fakturor som e-postbilagor
 - **Behörigheter** &ndash; Behörigheter som gör att du kan ändra faktureringsprofilen, betala räkningar eller använda betalningsmetoden i faktureringsprofilen för att göra inköp
 
 Använd faktureringsprofiler för att styra dina inköp och anpassa fakturan. En månadsfaktura genereras för de produkter som köpts med faktureringsprofilen. Du kan anpassa fakturan, till exempel uppdatera inköpsordernumret och e-fakturainställningarna.

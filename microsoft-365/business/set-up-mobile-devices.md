@@ -19,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installera Office på en iPhone eller en Android-telefon, så skyddas dina arbetsfiler i Office-appar av Microsoft 365 för företag.
-ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632576"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403007"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Konfigurera mobila enheter för Microsoft 365 för företagsanvändare
 
@@ -59,7 +60,7 @@ När installationen är klar trycker du på **Öppna** för att öppna Outlook o
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Ange din e-postadress för arbete \> på skärmen **Lägg till** **e-postkonto** och \> ange sedan dina Inloggningsuppgifter för Microsoft 365 för företag Logga **in**.
+Ange din e-postadress för arbete på skärmen **Lägg till e-postkonto** \> **Add Account**och ange sedan dina Inloggningsuppgifter för Microsoft 365 för företag Logga \> **in**.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -87,7 +88,7 @@ Ange Microsoft Outlook i sökrutan google play och tryck på **Installera**. Nä
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-I Outlook-appen trycker du på **Kom igång**och lägger \> sedan till ditt Microsoft 365 för företag-e-postkonto **Fortsätt**och loggar in med organisationens autentiseringsuppgifter.
+I Outlook-appen trycker du på **Kom igång**och lägger sedan till ditt Microsoft 365 för företag-e-postkonto \> **Fortsätt**och loggar in med organisationens autentiseringsuppgifter.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -103,8 +104,8 @@ Installera Intune Company Portal i Play Butik.
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
-[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

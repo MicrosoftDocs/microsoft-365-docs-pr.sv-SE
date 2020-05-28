@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: Läs mer om e-fakturan för Microsoft 365 för företag för Taiwan.
-ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045886"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401792"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Förstå din e-faktura för Microsoft 365 för företag (Taiwan)
 
@@ -55,7 +56,7 @@ När du skapar kontot, i **steg 1**, Välkommen, Låt oss lära känna dig, **si
   
 När du har skapat ditt konto kan du uppdatera ditt moms-ID via administrationscentret genom att följa dessa steg:
   
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
     
 2. Välj en prenumeration och välj sedan **Fler åtgärder**.
     
@@ -69,4 +70,4 @@ Annars, om du behöver den officiella papperskopian av din e-faktura, [vänligen
   
 ## <a name="more-questions"></a>Fler frågor?
 
-[中ンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンンン](../../admin/contact-support-for-business-products.md)
+[連絡客戶支援](../../admin/contact-support-for-business-products.md)

@@ -20,6 +20,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Köp en Microsoft 365 för företag-prenumeration. Du kan köpa samma typ av prenumeration som du har provat eller ett annat abonnemang.
-ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: de141cb42b310bff6221d0bef6d923882dadadfd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045806"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402624"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Köp en prenumeration på Microsoft 365 för företag från din kostnadsfria utvärderingsversion
 
@@ -50,7 +51,7 @@ Det är enkelt, och när du köper samma typ av prenumeration som utvärderingsv
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Leta reda på den prenumeration som du vill köpa på sidan **Dina produkter.** Välj **Köpprenumeration**i avsnittet **Licenser** .
 
@@ -99,7 +100,7 @@ Om du köper en annan typ av prenumeration än din utvärderingsversion måste d
 ::: moniker range="o365-worldwide"
 
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret.
 
 2. På sidan **Köp tjänster** väljer du den prenumeration som du vill köpa och väljer sedan **Köp**.
 
@@ -109,7 +110,7 @@ Om du köper en annan typ av prenumeration än din utvärderingsversion måste d
 
 5. Granska prisinformationen och välj **Nästa**.
 
-6. Ange din betalningsinformation och välj sedan **Gå** \> **till Admin Home**.
+6. Ange din betalningsinformation och **Place order** välj sedan \> **Gå till Admin Home**.
 
 ::: moniker-end
 

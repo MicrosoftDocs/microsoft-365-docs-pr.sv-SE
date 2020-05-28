@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: Lär dig hur du tilldelar licenser till grupper för användning med enheter.
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011191"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402876"
 ---
 # <a name="manage-licenses-for-devices"></a>Hantera licenser för enheter
 
@@ -41,7 +43,7 @@ Till att börja med skapar du en grupp i Administrationscentret för Azure Activ
 
 När du tilldelar licenser till en grupp tilldelar du licenser till alla enheter i gruppen. Du kan bara tilldela en prenumeration till en enskild grupp.
 
-1. Gå till sidan<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser i administrationscentret</a> **för** > Microsoft 365.
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser i administrationscentret</a> för Microsoft 365.
 2. På sidan **Licenser** väljer du **Microsoft 365 Apps for Education (enhet)** eller **Microsoft 365 Apps for enterprise (device)**.
 3. På nästa sida väljer du en prenumeration och väljer sedan **Tilldela licenser**.
 4. I fönstret **Tilldela licenser till en grupp** börjar du skriva ett gruppnamn och väljer det sedan från resultaten för att lägga till det i listan.
@@ -51,7 +53,7 @@ När du tilldelar licenser till en grupp tilldelar du licenser till alla enheter
 
 När du tar bort licenser från en grupp tar du bort licenserna från alla enheter i gruppen. Alla appar och tillhörande data skrivs sedan skrivskyddade.
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret.
 2. På sidan **Licenser** väljer du **Microsoft 365 Apps for Education (enhet)** eller **Microsoft 365 Apps for enterprise (device)**.
 3. På nästa sida väljer du en prenumeration, väljer **Fler åtgärder**och väljer sedan Ta **bort licenser**.
 4. Välj **Ta bort tilldelning**i dialogrutan Ta bort **licenser** .

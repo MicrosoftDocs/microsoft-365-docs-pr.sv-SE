@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Lär dig att anpassa rapporter i webbläsaren och Power BI Desktop.
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140715"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402936"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Anpassa rapporter i Microsoft 365 användningsanalyser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ I det här exemplet visas hur du ändrar fliken **Aktivering** i **aktiverings-/
   
 1. Klicka på fliken Aktivering i **aktiverings-/licensieringsrapporten.** **Activation**
     
-2. Ange redigeringsläget genom **Edit** att klicka på knappen ![Redigera högst upp](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) via knappen Fler sidor i Power BI-knappen. 
+2. Ange redigeringsläget genom att klicka på knappen **Redigera** högst upp via ![ knappen Fler sidor i Power ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI-knappen. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ Följande exempel visar hur du skapar en ny visualisering för att spåra nya Ya
   
 1. Gå till rapporten **Produktanvändning** med den vänstra navigeringsfliken och klicka på fliken **Yammer.**
     
-2. Växla till redigeringsläge ![genom att klicka på](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) Knappen Mer sida i Power BI och **Redigera**. 
+2. Växla till redigeringsläge genom att klicka på ![ Knappen Mer sida i Power BI och ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) **Redigera**. 
     
 3. Längst ned på sidan klickar du på ![Knappen Lägg till sida i Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) för att skapa en ny sida.
   
@@ -95,7 +96,7 @@ Följande exempel visar hur du skapar en ny visualisering för att spåra nya Ya
 
     ![Markera kryssrutan Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Precis under listan över visualiseringar klickar ![du på ikonen](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) **Formatformat** i Power BI Visualizaions .
+12. Precis under listan över visualiseringar klickar du på ikonen **Formatformat** ![ i Power BI Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
 13. Expandera rubriken och ändra värdet för **Rubriktext** till **First-Time Yammer Users by Month** (Förstagångsanvändare av Yammer per månad).
     
@@ -115,7 +116,7 @@ Du kan börja med att ansluta direkt till ODATA-rapporterings-API:erna från Mic
   
 1. Gå till **Hämta data** \> **Andra** \> **ODATA-feed** \> **Anslut**.
     
-2. I URL-fönstret anger du<i></i>"https://\<reports.office.com/pbi/v1.0/\>tenantid "
+2. I URL-fönstret anger du "https:// <i></i> reports.office.com/pbi/v1.0/ \<tenantid\> "
     
     **OBS:** De rapporterande API:erna är i förhandsversion och kan komma att ändras tills de tas i produktion. 
   

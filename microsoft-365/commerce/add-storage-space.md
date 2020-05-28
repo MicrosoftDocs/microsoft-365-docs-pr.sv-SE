@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Lär dig att lägga till och minska fillagringen i din Microsoft 365-prenumeration. Med extra fillagring kan du lagra mer innehåll i SharePoint Online och OneDrive.
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140972"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402684"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Lägga till lagringsutrymme för din prenumeration
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -95,7 +96,7 @@ Om du ännu inte har köpt extra lagringsutrymme för din prenumeration kan du g
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster</a> i administrationscentret.
 
 2. Längst ned på sidan **Köptjänster** väljer du **Tillägg**.
 
@@ -107,13 +108,13 @@ Om du ännu inte har köpt extra lagringsutrymme för din prenumeration kan du g
 
 6. På sidan **Hur ser det ut?** **Next**
 
-7. Kontrollera summan på sidan **Slutför order.** Om du behöver göra några ändringar väljer du **Redigera ordning**. Om ordern kräver en kreditkontroll markerar du kryssrutan. När du är klar väljer du **Gå** \> **till Admin Home**.
+7. Kontrollera summan på sidan **Slutför order.** Om du behöver göra några ändringar väljer du **Redigera ordning**. Om ordern kräver en kreditkontroll markerar du kryssrutan. När du är klar **Place order** väljer du \> **Gå till Admin Home**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**  
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.  
 
 2. På sidan **Prenumerationer** väljer du den prenumeration som du vill lägga till lagringsutrymme på och väljer sedan **Tillägg**.
 
@@ -167,7 +168,7 @@ Om du redan har köpt extra fillagring via tillägget Extra fillagring i **Offic
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Välj den prenumeration som innehåller tillägget **Extra fillagring i Office 365.**
 

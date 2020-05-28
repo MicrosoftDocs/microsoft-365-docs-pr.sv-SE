@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Förstå varför det ibland måste göras att byta abonnemang manuellt eller genom att ringa support.
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943149"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403156"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Varför kan jag inte byta Microsoft 365 för affärsplaner?
 
@@ -41,18 +42,18 @@ Om knappen **Byt abonnemang** inte visas kan ditt abonnemang inte bytas automati
   
 ::: moniker range="o365-worldwide"
 
- **Behöver du något annat?** [Köp en annan prenumeration](../buy-another-subscription.md) | [Avbryt din prenumeration](cancel-your-subscription.md) | [prenumerationsprenumerationer och support för faktureringssamtal](../index.yml) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Behöver du något annat?** [Köp en annan prenumeration](../buy-another-subscription.md)  |  [Avbryt prenumerationen](cancel-your-subscription.md)  |  [Prenumerationer och fakturering](../index.yml)  |  [Ring support](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Behöver du något annat?** [Köp en annan prenumeration](../buy-another-subscription.md) | [Avbryt din prenumeration](cancel-your-subscription.md) | [prenumerationsprenumerationer och support för faktureringssamtal](../index.yml) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Behöver du något annat?** [Köp en annan prenumeration](../buy-another-subscription.md)  |  [Avbryt prenumerationen](cancel-your-subscription.md)  |  [Prenumerationer och fakturering](../index.yml)  |  [Ring support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Behöver du något annat?** [Köp eller prova prenumerationer för Office 365 som drivs av 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md) | [Avbryt supporten för prenumerationen](cancel-your-subscription.md) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Behöver du något annat?** [Köp eller prova prenumerationer för Office 365 som drivs av 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Avbryt prenumerationen](cancel-your-subscription.md)  |  [Ring support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -83,19 +84,19 @@ Om du ska kunna använda knappen **Byt abonnemang** för att byta abonnemang aut
 
 ::: moniker range="o365-worldwide"
 
-Om du vill se om det finns etablerings- eller servicehälsoproblem går du till hälsosidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">för Tjänsten</a> i administrationscentret eller väljer **Hälsotillstånd** \> **Service health**.
+Om du vill se om det finns etablerings- eller servicehälsoproblem går du till hälsosidan <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">för Tjänsten</a> i administrationscentret eller väljer **Health** \> **Hälsotillstånd**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Om du vill se om det finns etablerings- eller tjänsthälsoproblem går du till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">Tjänsthälsa</a> i Microsoft 365 eller väljer **Hälsotillstånd** \> för **hälsotjänsten**.
+Om du vill se om det finns etablerings- eller tjänsthälsoproblem går du till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">Tjänsthälsa</a> i Microsoft 365 eller väljer **Hälsotillstånd** för \> **hälsotjänsten**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Om du vill se om det finns etablerings- eller tjänsthälsoproblem går du till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">Tjänsthälsa</a> i Microsoft 365 eller väljer **Hälsotillstånd** \> för **hälsotjänsten**.
+Om du vill se om det finns etablerings- eller tjänsthälsoproblem går du till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">Tjänsthälsa</a> i Microsoft 365 eller väljer **Hälsotillstånd** för \> **hälsotjänsten**.
 
 ::: moniker-end
 

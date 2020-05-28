@@ -16,17 +16,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Läs om hur du flyttar ditt företag från Microsoft 365 Business Premium till Microsoft 365 E3.
-ms.openlocfilehash: a41b27b91bd049abb2231a397a328f4f53af9500
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633181"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401996"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrera från Microsoft 365 Business Premium till Microsoft 365 E3
 
@@ -50,7 +51,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 |:-------|:-----|:-----|
 | **Lokalt**        | | | 
 | Windows 10    | Windows 10 Företag  |     Windows 10 Företag E3| 
-| Office-appar*    | [Microsoft 365-appar för företag](#office-365-business)    | Microsoft 365-appar för företag | 
+| Office-appar*    | [Microsoft 365-appar för företag](#office-365-business)    |  Microsoft 365 Apps för företag | 
 | **Molnproduktivitetsappar**        | | | 
 | Exchange Online och Outlook    | Lagringsgräns på 50 GB per postlåda och obegränsad Exchange Online-arkivering    | Lagringsgräns på 100 GB per postlåda och obegränsad Exchange Online-arkivering | 
 | Teams    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Microsoft 365 E3](../media/check-mark.png) | 

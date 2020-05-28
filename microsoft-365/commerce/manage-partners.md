@@ -11,30 +11,30 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Lär dig hur du arbetar med Microsoft-certifierade lösningsleverantörer (partner) för att köpa och hantera produkter och tjänster för din organisation eller skola.
 keywords: partner, lösningsleverantör
-ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141213"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402600"
 ---
 # <a name="manage-partner-relationships"></a>Hantera partnerrelationer
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
 Du kan arbeta med Microsoft-certifierade lösningsleverantörer (partner) för att köpa och hantera produkter och tjänster för din organisation eller skola. Det finns några steg inblandade i att få saker och ting inställda.
 
-- Administratörer hitta och kontakta en partner <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>med hjälp av formuläret på .
+- Administratörer hitta och kontakta en partner med hjälp av formuläret på <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
 - Partner skickar en e-postbegäran till kunder för att upprätta en partnerrelation.
 - Kunderna accepterar inbjudan i Microsoft 365 admincenter och börja arbeta med partnern.
 
@@ -90,7 +90,7 @@ Om du inte vill delegera administratörsbehörighet till partnern avbryter du in
 
 Om du delegerar administratörsbehörighet till en partner kan du ta bort dessa privilegier när som helst. Om du tar bort administratörsbehörighet tas inte partnerrelationen bort. De kan fortfarande arbeta med dig, till exempel som återförsäljare.
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringskonton</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringskonton</a> i administrationscentret.
 2. På sidan **Faktureringskonton** väljer du fliken **Partnerrelationer.**
 3. Markera raden som innehåller namnet på partnern.
 4. På partnersidan väljer du **Ta bort administratörsroller**.
@@ -99,7 +99,7 @@ Om du delegerar administratörsbehörighet till en partner kan du ta bort dessa 
 
 Om du bestämmer dig för att du inte vill arbeta med en partner längre kan du avsluta relationen. Du kan dock bara ta bort relationer där partnern antingen är delegerad administratör eller rådgivare. För alla andra partnertyper kontaktar du din partner för att avsluta relationen.
 
-1. Gå till sidan > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringskonton</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringskonton</a> i administrationscentret.
 2. På sidan **Faktureringskonton** väljer du fliken **Partnerrelationer.**
 3. Markera raden som innehåller namnet på partnern.
 4. På partnerinformationssidan väljer du **Ta bort partner**.

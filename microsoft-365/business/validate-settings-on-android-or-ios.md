@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Lär dig hur du validerar inställningarna för skydd av Microsoft 365 Business Premium-appar på dina Android- eller iOS-enheter.
-ms.openlocfilehash: d25a23bc8eb56e05bd74f7bf4658ee9e18dc41f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635733"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403379"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validera inställningar för appskydd på Android- eller iOS-enheter
 
@@ -41,7 +42,7 @@ När du har [angett appkonfigurationer för Android-enheter](app-protection-sett
   
 Kontrollera först att principen gäller för appen där du ska validera den.
   
-1. Gå till [policyn](https://portal.office.com) **För redigering av** \> **principer**i Microsoft 365 Business Premium.
+1. Gå till [policyn](https://portal.office.com) **För redigering av principer** i Microsoft 365 Business \> **Edit policy**Premium.
     
 2. Välj **Programprincip för Android** för de inställningar som du skapade vid installationen, eller en annan princip som du har skapat, och kontrollera att den tillämpas för Outlook, till exempel. 
     
@@ -130,7 +131,7 @@ När du har [angett appkonfigurationer för iOS-enheter](app-protection-settings
   
 Kontrollera först att principen gäller för appen där du ska validera den.
   
-1. Gå till [policyn](https://portal.office.com) **För redigering av** \> **principer**i Microsoft 365 Business Premium.
+1. Gå till [policyn](https://portal.office.com) **För redigering av principer** i Microsoft 365 Business \> **Edit policy**Premium.
     
 2. Välj **Programprincip för iOS** för de inställningar som du skapade vid installationen, eller en annan princip som du har skapat, och kontrollera att den tillämpas för Outlook till exempel. 
     

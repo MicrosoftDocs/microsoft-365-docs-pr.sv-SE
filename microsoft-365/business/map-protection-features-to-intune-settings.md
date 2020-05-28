@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Lär dig hur skyddsfunktioner i Microsoft 365 Business Premium mappas till Intune-inställningar. Prenumerationen ger dig en licens att ändra Intune-inställningarna.
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633252"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401587"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Hur skyddar skyddsfunktioner i Microsoft 365 Business Premium-mappning till Intune-inställningar
 
@@ -44,7 +45,7 @@ Om du vill hitta intune-inställningen loggar du in med dina Microsoft 365 Busin
  > 
  > En Microsoft 365 Business Premium-prenumeration ger dig en licens att ändra alla Intune-inställningar. Se [Introduktion till Intune för att komma igång.](https://docs.microsoft.com/intune/introduction-intune)
   
-Välj det principnamn &mdash; du vill använda &mdash; till exempel Programprincip för Android och välj sedan **Principinställningar**.
+Välj det principnamn du vill &mdash; använda till exempel Programprincip för Android och &mdash; välj sedan **Principinställningar**.
   
 Under **Skydda filer om enheter försvinner eller blir stulna**
   
@@ -103,7 +104,7 @@ Om du vill hitta Intune-inställningen loggar du in med dina Microsoft 365 Busin
 |Skydda datorer från webbaserade hot i Microsoft Edge  <br/> |**SmartScreen** i **webbläsarinställningar för Edge** är inställt på **Krävs**.  <br/> |
 |Stäng av enhetens skärm när datorn varit inaktiv i (minuter)  <br/> |Maximalt antal minuter av inaktivitet innan skärmen låses (minuter)  <br/> |
 |Tillåt användare att hämta appar från Microsoft Store  <br/> |Anpassad URI-princip  <br/> |
-|Tillåt användare att använda Cortana  <br/> |**General** \> **Cortana** är inställd på att **blockera** i Intune när den är inställd på **av** i Microsoft 365 Business Premium.  <br/> |
+|Tillåt användare att använda Cortana  <br/> |**Allmänt** \> **Cortana** är inställd på att **blockera** i Intune när den är inställd på **av** i Microsoft 365 Business Premium.  <br/> |
 |Tillåt användare att ta emot Windows-tips och reklam från Microsoft  <br/> |**Windows Spotlight**, alla blockerade om detta är inställt **på av** i Microsoft 365 Business Premium.  <br/> |
 |Håll Windows 10-enheter uppdaterade automatiskt  <br/> | Den här inställningen finns i **Uppdateringar av Microsoft Intune-tjänsten** \> **– Windows 10 Update Rings**väljer du **Uppdateringsprincip för Windows 10-enheter**och sedan **Egenskaper** \> **.**  <br/>  När Microsoft 365 Business Premium-inställningen är inställd **på På**ställs alla följande inställningar in:  <br/> **Tjänstgrenen** är inställd på **CB** (CBB när den är inaktiverad i Microsoft 365 Business Premium).  <br/> **Microsoft-produktuppdateringar** är inställt på **Tillåt**.  <br/> **Windows-drivrutiner** är inställt på **Tillåt**.  <br/> **Funktionssätt för automatisk uppdatering** är inställt på **Installera automatiskt vid underhåll** med:  <br/> **Starttid för aktiva timmar** är inställt på **06:00**.  <br/> **Sluttid för aktiva timmar** är inställt på **22:00**.  <br/> **Uppskjutningsperiod för kvalitetsuppdatering (dagar)** är inställt på **0**.  <br/> **Uppskjutningsperiod för funktionsuppdatering (dagar)** är inställt på **0**.  <br/> **Nedladdningsläge för leveransoptimering** är inställt på **HTTP blandat med peering bakom samma NAT**.  <br/> |
 |||

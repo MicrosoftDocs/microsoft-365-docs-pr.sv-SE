@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Validera Microsoft 365 Business Premium-appskyddsinställningar på Windows 10-enheter och kontrollera att användare inte kan kopiera företagsdata till personliga filer eller appar som inte hanterats.
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635753"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403399"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Bekräfta programskyddsinställningar på PC-datorer med Windows 10
 
@@ -37,11 +38,11 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
   
  **Kontrollera anslutningsinställningar**
   
-1. När du har loggat in med Microsoft 365 Business Premium-autentiseringsuppgifter och ansluter till Azure AD enligt beskrivningen i [Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare](set-up-windows-devices.md)går du till **Windows Settings** \> **Accounts** \> **Access-arbete eller skola**. Välj **Ansluten till \<innehavarnamn\> Azure AD** och välj sedan **Info**.
+1. När du har loggat in med Microsoft 365 Business Premium-autentiseringsuppgifter och ansluter till Azure AD enligt beskrivningen i [Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare](set-up-windows-devices.md)går du till **Windows Settings** \> **Accounts** \> **Access-arbete eller skola**. Välj **Ansluten till \<tenant name\> Azure AD**och välj sedan **Info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. På sidan **Hanterad efter** \<\> klientnamn kan du se **anslutningsinformationen** som innehåller en **hanteringsserveradress** som den som visas i följande bild. 
+2. På sidan **Hanterad efter** \<tenant name\> kan du se **anslutningsinformationen** som innehåller en **hanteringsserveradress** som den som visas i följande bild. 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -67,7 +68,7 @@ När du [ställt in principer för programskydd](protection-settings-for-windows
     
 2. Välj **Anslut** under **Åtkomst till arbete eller skola**.
     
-3. Ange microsoft 365 Business Premium-autentiseringsuppgifter i \> **dialogrutan Konfigurera ett arbets- eller skolkonto** Logga **in**.
+3. Ange microsoft 365 Business Premium-autentiseringsuppgifter i **dialogrutan Konfigurera ett arbets- eller skolkonto** \> **Logga in**.
     
 4. På sidan **Åtkomst till arbetet eller skolan** väljer du **Arbets- eller skolkonto** och väljer sedan **Info**.
     

@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Lär dig mer om hur du konfigurerar inställningarna för standardenhetsprincipen som alla Windows 10-enheter får när de loggar in på sitt arbets- eller skolkonto.
-ms.openlocfilehash: dfa6aca1f12ab37b8b0926dea4a6a79c934b1250
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Läs mer om hur du konfigurerar inställningarna för standardenhetsprincipen som alla Windows 10-enheter får när de loggar in på sitt arbets- eller skolkonto.
+ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561289"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402743"
 ---
 # <a name="secure-windows-10-devices"></a>Skydda Windows 10-enheter
 
@@ -48,7 +49,7 @@ Som standard är alla inställningar **På**. Följande inställningar är tillg
 |Skydda datorer från webbaserade hot i Microsoft Edge  <br/> |Aktiverar inställningarna Microsoft i Edge som hjälper till att skydda användare från skadliga webbplatser och nedladdningar.  <br/> |
 |Stäng av enhetens skärm efter en viss tids inaktivitet  <br/> |Säkerställer att företagsdata skyddas om en användare är inaktiv. En användare som befinner sig på en offentlig plats, till exempel ett café, kan göra ett ärende eller låter sig distraheras för ett ögonblick, vilket gör att obehöriga kan få tillgång till enheten. Med den här inställningen kan du bestämma hur länge användaren kan vara inaktiv innan skärmen stängs av.  <br/> |
 |Tillåt användare att hämta appar från Microsoft Store  <br/> |Låter användare ladda ned och installera appar från Microsoft Store. Appar inbegriper allt från spel till produktivitetsverktyg, så vi lämnar den här inställningen **På**, men du kan inaktivera den för extra säkerhet.  <br/> |
-|Tillåt användare att använda Cortana  <br/> |Cortana kan vara mycket användbar! Cortana kan aktivera eller inaktivera inställningar för dig, ge vägbeskrivningar och se till att du är i tid för avtalade tider, så vi behåller den här inställningen **På** som standard.  <br/> |
+|Tillåt användare att använda Cortana  <br/> |Cortana kan vara mycket användbar! Cortana kan aktivera eller inaktivera inställningar åt dig, ge vägbeskrivningar och se till att du är i tid för avtalade tider, så vi behåller den här inställningen **På** som standard.  <br/> |
 |Tillåt användare att ta emot Windows-tips och reklam från Microsoft  <br/> |Windows-tips kan vara praktiskt eftersom de informerar användare när nya funktioner blir tillgängliga.  <br/> |
 |Håll Windows 10-enheter uppdaterade automatiskt  <br/> |Säkerställer att Windows 10-enheter automatiskt får de senaste uppdateringarna.  <br/> |
    
