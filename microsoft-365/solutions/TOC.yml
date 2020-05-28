@@ -3,7 +3,7 @@
   displayName: Home
 - name: Illustrationer av lösning och arkitektur
   items:
-    - name: Microsoft 365 produktivitet illustrationer
+    - name: Produktivitetsillustrationer för Microsoft 365
       href: productivity-illustrations.md
     - name: Microsofts molnarkitekturmodeller
       href: cloud-architecture-models.md
@@ -11,20 +11,20 @@
   items:
     - name: Översikt
       href: foundation-solutions-overview.md
-    - name: Ge fjärrarbetare möjlighet att hantera Microsoft 365
+    - name: Underlätta för distansarbetare med Microsoft 365
       href: empower-people-to-work-remotely.md
       items:
-        - name: Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
+        - name: Steg 1. Öka inloggningssäkerheten
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Steg 2. Ge fjärråtkomst
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'Steg 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter'
+        - name: Steg 3. Distribuera slutpunktshantering
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Steg 4. Distribuera produktivitetsappar och tjänster för distansarbetare
+        - name: Steg 4. Distribuera produktivitetsappar och produktivitetstjänster
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Steg 5. Skapa COVID-19 kriskommunikationsplatser
+        - name: Steg 5. Skapa kommunikationsplatser
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: Steg 6. Utbilda fjärrarbetare och hantera användningsfeedback
+        - name: Steg 6. Utbilda distansarbetare
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Konfigurera säkert samarbete med Microsoft 365
       href: setup-secure-collaboration-with-teams.md
