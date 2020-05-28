@@ -9,18 +9,19 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 description: Läs om hur du övergår från Microsoft Cloud Germany Exchange Online till den globala Exchange Online-tjänsten
-ms.openlocfilehash: 276a12095cbad5b9bcaf1c48fe5d26ee20232e54
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 41628b3032f5b268d5e32501b393fef31663dfc3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003421"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399236"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>Uppdatera dina MX-poster för övergången till den globala Exchange Online-tjänsten
 
-1. Logga in på [Microsoft 365-administratörsportalen](https://admin.microsoft.com)och gå till **Inställningar** > **domäner**
+1. Logga in på [Microsoft 365-administratörsportalen](https://admin.microsoft.com)och gå till **Inställningar**  >  **domäner**
 
 2. Status visas på höger sida för varje domän. Om organisationens domäner pekar på Microsoft Cloud Germany Exchange Online måste du uppdatera MX-posten.
 

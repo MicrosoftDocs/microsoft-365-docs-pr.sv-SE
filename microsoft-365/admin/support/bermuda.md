@@ -9,24 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0cde6cbade086e12aa454ffce74225dc6ea4b30e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5f38035450504b942948bb89391017e0aeef4ae6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42810130"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398516"
 ---
-# <a name="contact-support-for-bermuda"></a>Kontaktstöd för Bermuda
+# <a name="contact-support-for-bermuda"></a>Kontakta support för Bermuda
 
 [Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 877 639 9636
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 09.00-17.00

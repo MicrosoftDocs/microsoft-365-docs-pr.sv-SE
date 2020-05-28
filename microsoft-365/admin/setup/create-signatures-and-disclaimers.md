@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Lär dig att lägga till e-postsignatur, ansvarsfriskrivning eller avslöjandeutdrag i alla e-postmeddelanden som kommer in i eller lämnar organisationen.
-ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631983"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398960"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa organisationsomfattande signaturer och ansvarsfriskrivningar
 
@@ -62,7 +63,7 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 
 ::: moniker-end
 
-1. Välj startprogrammet ![Ikonen för startprogrammet](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)och välj sedan **Admin**.
+1. Välj startprogrammet ![ Ikonen för startprogrammet ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) och välj sedan **Admin**.
    
     Hittar du inte appen du söker? I startprogrammet väljer du **Alla appar** för att se en alfabetisk lista över de appar som är tillgängliga för dig. Därifrån kan du söka efter en specifik app. 
     

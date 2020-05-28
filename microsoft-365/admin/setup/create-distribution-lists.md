@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Skicka e-post till en grupp personer utan att behöva skriva varje enskild mottagares namn genom att skapa distribution (lista).
-ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627648"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398972"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributionsgrupper i administrationscentret för Microsoft 365
   
@@ -58,7 +59,7 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
     
     Hittar du inte appen du söker? I startprogrammet väljer du **Alla appar** för att se en alfabetisk lista över de appar som är tillgängliga för dig. Därifrån kan du söka efter en specifik app. 
     
-2. Välj **Gruppergrupper** \> **Groups** i det vänstra navigeringsfönstret och välj sedan **Lägg till en grupp**. 
+2. Välj **Groups** \> **Gruppergrupper** i det vänstra navigeringsfönstret och välj sedan **Lägg till en grupp**. 
       
 3. I fältet **Välj grupptyp** väljer du **Distribution**och väljer sedan **Nästa**.
   

@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -26,12 +27,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Lär dig att importera kontakter, kalendrar, e-postmeddelanden från Gmail eller en annan e-postleverantör till Microsoft 365. '
-ms.openlocfilehash: 3200ee91e4ca01fb946cbb045805a213958be000
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165161"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398876"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrera e-post och kontakter till Microsoft 365
 
@@ -67,9 +68,9 @@ Om du bara vill ha kontakter gör du så här:
     
 2. [Importera kontakter till Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
     
-Starta Processen genom att öppna Outlook och välja **Filöppna** \> ** &amp; ** \> **exportimport/export**.
+Starta Processen genom att öppna **File** Outlook och välja \> **Filöppna &amp; ** \> **exportimport/export**.
   
-![Arkiv-menyn i Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Kommandot &amp; Öppna export i Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Knappen Importera/exportera i Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Arkiv-menyn i Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![&amp;Kommandot Öppna export i Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Knappen Importera/exportera i Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Visa andra e-postkonton i Outlook
 
@@ -79,7 +80,7 @@ Vill du bara se din e-post från en annan leverantör (som Gmail, Yahoo eller Li
 
 Lägg till ett konto, till exempel ditt privata Gmail-konto, i Outlook.
   
-- Öppna Outlook och gå sedan till \> **Filtilläggskonto**. **File**
+- Öppna Outlook och **File** gå sedan till \> **Filtilläggskonto**.
     
 Behöver du mer detaljerade steg? Se [Lägga till ett konto](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   

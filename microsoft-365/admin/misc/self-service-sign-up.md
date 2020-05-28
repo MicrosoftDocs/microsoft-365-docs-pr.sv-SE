@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,13 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Lär dig mer om registreringen av självbetjäningstjänsten för Microsoft 365 och tillgängliga självbetjäningsprogram som Microsoft Power Apps, Microsoft Flow och Dynamics 365 for Financials.
-ms.custom: okr_SMB
-ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045279"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399296"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Använda självbetjäningsanmäla i din organisation
 
@@ -63,6 +65,6 @@ Följande är de för närvarande tillgängliga självbetjäningsprogram. Den h�
 |**Microsoft Business Center** <br/> |Microsoft Business Center är en portal för kunder som har gjort inköp via Microsofts produkt- och tjänsteavtal (MPSA). <br/> |[Snabbstart: Registrera dig för Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsofts tjänst för volymlicens** <br/> |Microsoft Volume License Service Center visar licenser som köpts under Enterprise, Select, Education (Campus eller School), Open Value, Open License och ISV Royalty-avtal.  <br/> |[VLSC utbildning och resurser](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Servicecenter för volymlicens](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft Utbildning Edition** <br/> |Genom att använda Minecraft som en plattform för lärande kan lärare motivera och inspirera varje elev att uppnå mer och tända en passion för lärande. Gå med i en grupp lärare som lär dig hur du använder Minecraft för att låsa upp elevernas potential.  <br/> |[Minecraft Utbildning Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Utbildning Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
-|**Microsoft Stream** <br/> |Ladda upp och dela videoklipp i hela organisationen för att förbättra kommunikation, delaktighet och inlärning.  <br/> |[Registrera &amp; dig Dag 0-upplevelse](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
+|**Microsoft Stream** <br/> |Ladda upp och dela videoklipp i hela organisationen för att förbättra kommunikation, delaktighet och inlärning.  <br/> |[Registrera dig &amp; Dag 0-upplevelse](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Strömautomat** <br/> |Power Automate är en produkt som hjälper dig att konfigurera automatiserade arbetsflöden mellan dina favoritappar och tjänster för att synkronisera filer, få aviseringar, samla in data med mera.  <br/> |[Registrera dig och logga in för Power Automate](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Strömautomat](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power virtuella agenter** <br/> |Power Virtual Agents ger teamen möjlighet att enkelt skapa kraftfulla robotar med hjälp av ett guidat grafiskt gränssnitt utan kod utan behov av datavetare eller utvecklare. Power Virtual Agents tar upp många av de stora problemen med bot byggnad i branschen idag. Det eliminerar klyftan mellan ämnet experter och utvecklingsteam bygga bots, och den långa latens mellan lag som erkänner ett problem och uppdatera bot för att ta itu med det.  <br/> |[Information om licensiering och åtkomst](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrera dig för Virtuella Power-agenter](https://aka.ms/TryPVA) <br/> |

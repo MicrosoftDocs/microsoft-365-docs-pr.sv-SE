@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ae0c5ee4be4f268225edc7f4119dcec09e4e2747
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a3559b309aebd2b64742326f3721da09e5b3bba6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42811936"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398444"
 ---
 # <a name="contact-support-for-bouvet-island"></a>Kontakta support för Bouvet Island
 
@@ -26,7 +27,7 @@ ms.locfileid: "42811936"
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5149
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 09.00-17.00

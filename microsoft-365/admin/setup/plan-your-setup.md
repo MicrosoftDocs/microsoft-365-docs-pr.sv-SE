@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Läs om vad du behöver göra för att konfigurera Microsoft 365 för företag.
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794045"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398852"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planera installationen av Microsoft 365 för företag
 
@@ -49,7 +50,7 @@ I installationsguiden går du igenom installation av Microsoft 365-appar på dat
 > [!NOTE]
 > Om du behöver [tilldela administratörsroller i Microsoft 365 för företag](../add-users/assign-admin-roles.md) till de användare som du lägger till i guiden kan du göra det senare på sidan **Användare.** 
   
-Om du inte slutför installationsguiden kan du när som helst slutföra installationsuppgifterna från**installationsprogrammet för** [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339) > . Härifrån kan du migrera e-post och kontakter från en annan e-posttjänst, ändra domänen för ditt administratörskonto, hantera din faktureringsinformation, lägga till eller ta bort användare, återställa lösenord och utföra andra affärsfunktioner. Mer information om skillnaderna mellan installationsguiden och **installationssidan** finns i [Skillnader mellan installationsguiden för Microsoft 365 och installationssidan](o365-setup-wizard-and-setup-page.md).
+Om du inte slutför installationsguiden kan du när som helst slutföra installationsuppgifterna från installationsprogrammet för [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **Setup**. Härifrån kan du migrera e-post och kontakter från en annan e-posttjänst, ändra domänen för ditt administratörskonto, hantera din faktureringsinformation, lägga till eller ta bort användare, återställa lösenord och utföra andra affärsfunktioner. Mer information om skillnaderna mellan installationsguiden och **installationssidan** finns i [Skillnader mellan installationsguiden för Microsoft 365 och installationssidan](o365-setup-wizard-and-setup-page.md).
 
 Kontakta oss om du kör fast. [Vi hjälper gärna till!](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ Om du planerar att flytta från en befintlig e-posttjänst till Microsoft 365 ta
   
 Om du ska använda Microsoft 365 för din e-post:
   
-- Om du vill flytta företagets e-postadress (till exempel *\@rob contoso.com)* från en annan e-posttjänst till Microsoft 365 måste du dirigera din e-post som ska levereras till din nya Microsoft 365-postlåda. Du gör detta genom att välja **Migrera användarnas data** på **installationssidan,** där vi guidar dig genom de uppdateringar du behöver göra på din domänvärd, steg för steg.
+- Om du vill flytta företagets e-postadress (till exempel *rob \@ contoso.com)* från en annan e-posttjänst till Microsoft 365 måste du dirigera din e-post som ska levereras till din nya Microsoft 365-postlåda. Du gör detta genom att välja **Migrera användarnas data** på **installationssidan,** där vi guidar dig genom de uppdateringar du behöver göra på din domänvärd, steg för steg.
 
 - När du har uppdaterat värden för domänen börjar ändringarna vanligtvis att gälla efter bara en timme eller två. Men tänk på att det ibland kan ta upp till 72 timmar för ändringarna att uppdatera över internet.
 

@@ -14,25 +14,26 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Lär dig hur du skickar din Fapiao-begäran till 21Vianet Fapiao-hanteringssystemet efter att du har gjort en betalning i Office 365 som drivs av 21Vianet i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 55629654599dd20b813708a148e3ce49f6b6cf88
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c920f7497c50e7f961028624f9e3ca954a6108f3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140819"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399104"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Ansök om en Fapiao för Office 365 som drivs av 21Vianet
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ Det finns två sätt att ansöka om en Fapiao:
   
 1. När du har gjort en betalning i Office 365 som drivs av 21Vianets webbplats får du ett e-postmeddelande med orderbekräftelse som innehåller ditt ordernummer och en länk till Fapiao-hanteringssystemet. Du kan använda länken i e-postmeddelandet för att skapa ett konto i <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">informationshanteringssystemet 21Vianet Fapiao</a>.
     
-    Eller
+    eller
     
 2. Du kan ansöka om en Fapiao från <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.
     
@@ -138,7 +139,7 @@ Om du vill ändra Fapiao titeln, vänligen skicka Fapiao tillbaka till oss och v
     
 ### <a name="how-do-i-find-my-order-id"></a>Hur hittar jag mitt beställnings-ID?
 
-1. Gå till sidan \> **Faktureringsfakturor & betalningar** i [administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=850627) **Billing**
+1. Gå till sidan **Billing** Faktureringsfakturor & betalningar i [administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=850627) \> **Bills & payments**
     
 2. Leta reda på den faktura du vill använda, välj att visa eller välj att ladda ned PDF-filen.
 

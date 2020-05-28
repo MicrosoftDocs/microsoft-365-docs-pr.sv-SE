@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 85eb5ceddf27c8c8cf873566b37da3d0b9e1b720
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: cc20a37372f4e4532b4adaaa8605b245b2e90161
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808699"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398588"
 ---
 # <a name="contact-support-for-bangladesh"></a>Kontakta support för Bangladesh
 
@@ -30,7 +31,7 @@ När du har ringt anger du
 
 877 857 3235
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 09.00-17.00

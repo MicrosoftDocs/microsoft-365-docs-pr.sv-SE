@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Läs mer om Office 365 som drivs av 21Vianet och som är utformat för att uppfylla behoven av säkra, tillförlitliga och skalbara molntjänster i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155415"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399020"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 med 21Vianet
 
@@ -186,7 +187,7 @@ Dela Exchange-kontaktdata på Apples mobila enheter till Apple iCloud. |Den här
 
 |||
 |:-----|:-----|
-|Hantera konto (inifrån Office-klienten)  <br/> |Den här funktionen och andra liknande som är avsedda att gå till din Office 365-portal pekar för närvarande på den globala Office 365-portalen, och du kan inte logga in med ditt Office 365 som drivs av 21Vianet-kontot. Detta är ett känt problem som åtgärdas. Under tiden kan du använda https://portal.partner.microsoftonline.cn/ webbadressen för att logga in på ditt konto och hantera inställningar därifrån. Mer information finns i [Hantera ditt Office 365 Pro Plus-konto för Office 365 som drivs av 21Vianet](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx).  <br/> |
+|Hantera konto (inifrån Office-klienten)  <br/> |Den här funktionen och andra liknande som är avsedda att gå till din Office 365-portal pekar för närvarande på den globala Office 365-portalen, och du kan inte logga in med ditt Office 365 som drivs av 21Vianet-kontot. Detta är ett känt problem som åtgärdas. Under tiden kan du använda webbadressen https://portal.partner.microsoftonline.cn/ för att logga in på ditt konto och hantera inställningar därifrån. Mer information finns i [Hantera ditt Office 365 Pro Plus-konto för Office 365 som drivs av 21Vianet](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx).  <br/> |
    
 ## <a name="onenote"></a>OneNote
 

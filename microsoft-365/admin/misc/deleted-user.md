@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Läs om hur du tar bort eller återställer en användares Microsoft 365-konto.
-ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7e71aa11c153372c9b38c54e45397c5f840c2e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627890"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399392"
 ---
 # <a name="quick-help-deleted-user"></a>Snabbhjälp: Borttagen användare
 
@@ -50,7 +51,7 @@ Du kan behöva ta bort en [användare](../add-users/add-users.md) från organisa
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
 
-2. Välj en användare och välj sedan **Mer ta** > **bort en användare**ovanför listan över användare .
+2. Välj en användare och välj sedan **Mer** > **ta bort en användare**ovanför listan över användare .
   
 3. Välj Ta bort användare i bekräftelsefönstret **för borttagning**. <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
 
@@ -60,7 +61,7 @@ Du kan behöva ta bort en [användare](../add-users/add-users.md) från organisa
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
 
-2. Välj en användare och välj sedan **Mer ta** > **bort en användare**ovanför listan över användare .
+2. Välj en användare och välj sedan **Mer** > **ta bort en användare**ovanför listan över användare .
   
 3. Välj Ta bort användare i bekräftelsefönstret **för borttagning**. <br/>[Läs hela artikeln.](../add-users/delete-a-user.md)
 

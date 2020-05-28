@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
 - GEA150
 description: Läs mer om Azure Information Protection för Office 365 som drivs av 21Vianet och hur du konfigurerar det för kunder i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3d24b450cc9ba9a6427732d408e35af1394b4a34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1f5d73f5c421a545ea0085f018a2c2a703b0b374
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627660"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399044"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Paritet mellan Azure Information Protection for Office 365 som drivs av 21Vianet och kommersiella erbjudanden
 
@@ -54,35 +55,35 @@ För att krypteringen ska fungera korrekt måste RMS vara aktiverat för kliente
 
 - Kontrollera om RMS är aktiverat:
   1. Starta PowerShell som administratör.
-  2. Om AIPService-modulen inte `Install-Module AipService`är installerad kör du .
-  3. Importera modulen `Import-Module AipService`med .
-  4. Anslut till tjänsten `Connect-AipService -environmentname azurechinacloud`med .
-  5. Kör `(Get-AipServiceConfiguration).FunctionalState` och kontrollera om `Enabled`tillståndet är .
+  2. Om AIPService-modulen inte är installerad kör du  `Install-Module AipService` .
+  3. Importera modulen med `Import-Module AipService` .
+  4. Anslut till tjänsten med  `Connect-AipService -environmentname azurechinacloud` .
+  5. Kör  `(Get-AipServiceConfiguration).FunctionalState`   och kontrollera om tillståndet är  `Enabled` .
 
-- Om funktionstillståndet `Disabled` `Enable-AipService`är kör du .
+- Om funktionstillståndet är  `Disabled` kör du  `Enable-AipService` .
 
 ### <a name="dns-configuration-for-encryption-windows"></a>DNS-konfiguration för kryptering (Windows)
 
 För att kryptering ska fungera korrekt måste Office-klientprogram ansluta till Kina-instansen av tjänsten och bootstrap därifrån. Om du vill omdirigera klientprogram till rätt tjänstinstans måste klientadministratören konfigurera en DNS SRV-post med information om Azure RMS-URL:en. Utan DNS SRV-posten försöker klientprogrammet som standard ansluta till den offentliga molninstansen och misslyckas.
 
-Antagandet är också att användare ska logga in med ett användarnamn baserat `joe@contoso.cn`utanför den `onmschina` bostadsrättsägda domänen (till exempel ), och inte användarnamnet (till exempel `joe@contoso.onmschina.cn`). Domännamnet från användarnamnet används för DNS-omdirigering till rätt tjänstinstans.
+Antagandet är också att användare ska logga in med ett användarnamn baserat utanför den bostadsrättsägda domänen (till exempel `joe@contoso.cn` ), och inte `onmschina` användarnamnet (till exempel `joe@contoso.onmschina.cn` ). Domännamnet från användarnamnet används för DNS-omdirigering till rätt tjänstinstans.
 
 - Hämta RMS-ID:
   1. Starta PowerShell som administratör.
-  2. Om AIPService-modulen inte `Install-Module AipService`är installerad kör du .
-  3. Anslut till tjänsten `Connect-AipService -environmentname azurechinacloud`med .
-  4. Kör `(Get-AipServiceConfiguration).RightsManagementServiceId` för att hämta RMS-ID: et.
+  2. Om AIPService-modulen inte är installerad kör du  `Install-Module AipService` .
+  3. Anslut till tjänsten med  `Connect-AipService -environmentname azurechinacloud` .
+  4. Kör  `(Get-AipServiceConfiguration).RightsManagementServiceId`   för att hämta RMS-ID: et.
 
 - Logga in på DNS-leverantören, navigera till DNS-inställningarna för domänen och lägg sedan till en ny SRV-post.
   - Tjänst = `_rmsredir`
   - Protokoll = `_http`
   - Namn = `_tcp`
-  - Mål `[GUID].rms.aadrm.cn` = (där GUID är RMS-ID)
+  - Mål =  `[GUID].rms.aadrm.cn`   (där GUID är RMS-ID)
   - Prioritet, Vikt, Sekunder, TTL = standardvärden
 
 - Associera den anpassade domänen med klienten i [Azure-portalen](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Detta lägger till en post i DNS, vilket kan ta flera minuter att verifiera när du har lagt till värdet i DNS-inställningarna.
 
-- Logga in i Microsoft 365-administrationscentret med motsvarande globala administratörsautentiseringsuppgifter och lägg till domänen (till `contoso.cn`exempel) för att skapa användare. I verifieringsprocessen kan ytterligare DNS-ändringar krävas. När verifieringen är klar kan användare skapas.
+- Logga in i Microsoft 365-administrationscentret med motsvarande globala administratörsautentiseringsuppgifter och lägg till domänen (till `contoso.cn` exempel) för att skapa användare. I verifieringsprocessen kan ytterligare DNS-ändringar krävas. När verifieringen är klar kan användare skapas.
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>DNS-konfiguration för kryptering (Mac, iOS, Android)
 

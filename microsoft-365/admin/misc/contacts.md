@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Lär dig hur du skapar kontakter i administrationscentret och hanterar din globala adresslista.
-ms.openlocfilehash: f8298713944bdb88c7fbcb31d4bd5a5738cb081b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064751"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399428"
 ---
 # <a name="quick-help-contacts"></a>Snabbhjälp: Kontakter
 
@@ -33,7 +34,7 @@ Om du behöver delade kontakter som alla i organisationen kan komma åt skapar d
   
 ## <a name="how-do-i-add-contacts-in-the-admin-center"></a>Hur lägger jag till kontakter i administrationscentret?
 
-1. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">Användares kontakter</a> i **administrationscentret.** \>
+1. Gå till sidan Användares kontakter i **administrationscentret.** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">Contacts</a>
 
 2. På sidan **Kontakter** väljer du **Lägg till en kontakt**.
   

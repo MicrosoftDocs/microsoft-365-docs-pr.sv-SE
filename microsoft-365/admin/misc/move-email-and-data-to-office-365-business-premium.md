@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Lär dig att flytta data över till din nya företagsidentitet.
-ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155369"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399332"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Flytta e-post och data till Microsoft 365 Business Standard
 
@@ -39,7 +40,7 @@ Om du vill flytta några av dina personliga data till den nya företagsidentitet
  **Kopiera dina OneDrive-data**
 1. Skapa en tillfällig mapp på hårddisken om du tillfälligt vill lagra de filer som du vill migrera till Microsoft 365 för företag.
     
-2. Gå [https://onedrive.live.com/](https://onedrive.live.com/) till och logga in med det Microsoft-konto som du använder för att komma åt din Microsoft 365 Family-prenumeration. 
+2. Gå till [https://onedrive.live.com/](https://onedrive.live.com/) och logga in med det Microsoft-konto som du använder för att komma åt din Microsoft 365 Family-prenumeration. 
     
 3. Kopiera de filer som du vill använda med Microsoft 365 för företag till den lokala mappen som du skapade i steg 1.
     
