@@ -9,24 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3c54e6381aceea66154c3aa038041ca35aa31e1a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1ef544a8dbd9b2f636ad2bf633abfb4b210fe203
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808213"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44393807"
 ---
-# <a name="contact-support-for-niue"></a>Kontaktstöd för Niue
+# <a name="contact-support-for-niue"></a>Kontakta support för Niue
 
 [Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5148
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 09.00-17.00
@@ -35,4 +36,4 @@ Engelska: mån-fre 09.00-17.00
 
 Engelska: 24 timmar om dygnet, 7 dagar i veckan
 
-Internationella samtalsavgifter tillkommer
+Avgifter för internationella samtal tillkommer
