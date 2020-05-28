@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3856d6d3175d30cb83fa6bc4fd2647f556a7cf64
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 23d3922b4057815742fc191035590f73e8392a88
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812718"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397100"
 ---
-# <a name="contact-support-for-micronesia"></a><span data-ttu-id="84fea-103">Kontaktstöd för Mikronesien</span><span class="sxs-lookup"><span data-stu-id="84fea-103">Contact support for Micronesia</span></span>
+# <a name="contact-support-for-micronesia"></a><span data-ttu-id="9374a-103">Kontakta support för Mikronesien</span><span class="sxs-lookup"><span data-stu-id="9374a-103">Contact support for Micronesia</span></span>
 
-<span data-ttu-id="84fea-104">[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="84fea-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="9374a-104">[Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9374a-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="84fea-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="84fea-105">Phone number</span></span>
-<span data-ttu-id="84fea-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="84fea-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="9374a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="9374a-105">Phone number</span></span>
+<span data-ttu-id="9374a-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="9374a-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="84fea-107">Timmar</span><span class="sxs-lookup"><span data-stu-id="84fea-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="84fea-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="84fea-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="9374a-107">Tider</span><span class="sxs-lookup"><span data-stu-id="9374a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="9374a-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="9374a-108">Billing Support:</span></span>
 
-<span data-ttu-id="84fea-109">Engelska: mån-fre 11.00-19.00</span><span class="sxs-lookup"><span data-stu-id="84fea-109">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="9374a-109">Engelska: mån-fre 11.00-19.00</span><span class="sxs-lookup"><span data-stu-id="9374a-109">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="84fea-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="84fea-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="9374a-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="9374a-110">Technical Support:</span></span>
 
-<span data-ttu-id="84fea-111">Engelska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="84fea-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="9374a-111">Engelska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="9374a-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="84fea-112">Internationella samtalsavgifter tillkommer</span><span class="sxs-lookup"><span data-stu-id="84fea-112">International call charges apply</span></span>
+<span data-ttu-id="9374a-112">Avgifter för internationella samtal tillkommer</span><span class="sxs-lookup"><span data-stu-id="9374a-112">International call charges apply</span></span>
