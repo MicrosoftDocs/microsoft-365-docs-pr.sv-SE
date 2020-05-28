@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 091e867269765b99fa7482e5c378ebcbecc98b9a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dd792263b24fac7babe06028f9a0224b8f8bfbae
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813034"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397112"
 ---
 # <a name="contact-support-for-mexico"></a>Kontakta support för Mexiko
 
@@ -26,7 +27,7 @@ ms.locfileid: "42813034"
 ## <a name="phone-number"></a>Telefonnummer
 01 800 563 0605
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Spanska: mån-fre 09.00-17.00

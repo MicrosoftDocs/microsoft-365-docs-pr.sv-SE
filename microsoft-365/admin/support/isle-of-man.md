@@ -9,24 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 19ab5bc1f843da114f9da9c896a395807d60fabb
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 15b9e633a02e722c8e4c4ae2f4233a612071bbf1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812706"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397556"
 ---
-# <a name="contact-support-for-isle-of-man"></a>Kontaktstöd för Isle of Man
+# <a name="contact-support-for-isle-of-man"></a>Kontakta support för Isle of Man
 
 [Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5151
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 10.00-18.00
@@ -35,4 +36,4 @@ Engelska: mån-fre 10.00-18.00
 
 Engelska: 24 timmar om dygnet, 7 dagar i veckan
 
-Internationella samtalsavgifter tillkommer
+Avgifter för internationella samtal tillkommer

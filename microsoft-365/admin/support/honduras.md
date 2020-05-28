@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a458e93166fd785098a11beea918f6df9c5bb3d5
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e98f050b44e3ccf12152aea89beda8e07aae9659
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42813050"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397652"
 ---
-# <a name="contact-support-for-honduras"></a>Kontaktstöd för Honduras
+# <a name="contact-support-for-honduras"></a>Kontakta support för Honduras
 
 [Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
 
@@ -30,7 +31,7 @@ När du har ringt anger du
 
 877 635 7034
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Spanska: mån-fre 09.00-17.00

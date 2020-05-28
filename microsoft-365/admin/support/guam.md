@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b154a61fda76e6a1e84849b4321170568ce5e415
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1b45a01ec983ac29b913ad4fc2ddd61e81821c33
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807083"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397748"
 ---
 # <a name="contact-support-for-guam"></a>Kontakta support för Guam
 
@@ -26,7 +27,7 @@ ms.locfileid: "42807083"
 ## <a name="phone-number"></a>Telefonnummer
 800-865-9408
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 03.00-22.00

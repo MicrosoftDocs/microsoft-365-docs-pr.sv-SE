@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4cc0b85858cb0d119ac2882701c50cdf3d418fa0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 24cc25ef1f581c083a6348c1ce218792a53beb59
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807240"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398012"
 ---
 # <a name="contact-support-for-equatorial-guinea"></a>Kontakta stöd för Ekvatorialguinea
 
@@ -26,7 +27,7 @@ ms.locfileid: "42807240"
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5144
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Spanska: mån-fre 09.00-17.00

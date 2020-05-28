@@ -9,24 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f66ca54b73803239ec2fd19f2940beed604cbf68
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b28aa9abf7557b104afbddb27a1dba025b982a47
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812709"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398240"
 ---
-# <a name="contact-support-for-cocos-keeling-islands"></a>Kontaktstöd för Cocos (Keeling) Islands
+# <a name="contact-support-for-cocos-keeling-islands"></a>Kontakta support för Cocos (Keeling) Islands
 
 [Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5148
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 09.00-17.00
@@ -35,4 +36,4 @@ Engelska: mån-fre 09.00-17.00
 
 Engelska: 24 timmar om dygnet, 7 dagar i veckan
 
-Internationella samtalsavgifter tillkommer
+Avgifter för internationella samtal tillkommer

@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a6d7523c65269777f990f2413b4643526680d58a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d8a612952576fbdd3a6c534ea253dc7a4194a13a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42808336"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398180"
 ---
 # <a name="contact-support-for-cook-islands"></a>Kontakta support för Cooköarna
 
@@ -26,7 +27,7 @@ ms.locfileid: "42808336"
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5148
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Engelska: mån-fre 10.00-18.00

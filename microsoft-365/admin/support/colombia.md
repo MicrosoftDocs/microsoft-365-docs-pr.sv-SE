@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3886f0d1b308847af8861faa4a004cde20c8b323
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b23115811b2ef3465698ad189cb5b5c34a5ee61e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42812679"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398228"
 ---
 # <a name="contact-support-for-colombia"></a>Kontakta support för Colombia
 
@@ -26,7 +27,7 @@ ms.locfileid: "42812679"
 ## <a name="phone-number"></a>Telefonnummer
 01 800 518 1781
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Spanska: mån-fre 09.00-17.00

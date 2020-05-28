@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f5db584d1d68c9c83ef5e4cf8732e0a1ce0772d4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2cd49e5e649f283ed323857294f87fc1aa2cc887
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42807742"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397316"
 ---
 # <a name="contact-support-for-libya"></a>Kontakta support för Libyen
 
@@ -32,7 +33,7 @@ Välj alternativ 9
 
 Ange kod 7701
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
 Arabiska: Sön-tor 09.00-17.00

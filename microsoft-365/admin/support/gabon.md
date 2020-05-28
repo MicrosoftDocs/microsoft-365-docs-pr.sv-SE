@@ -9,34 +9,35 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Läs om hur du kontaktar support en för ditt land eller din region.
+description: Läs om hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d397e67216abc5867e800dce11661b365fec34f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 0891431463027c041a0fe3c634b814752048a959
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42809061"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397868"
 ---
-# <a name="contact-support-for-gabon"></a>Kontaktstöd för Gabon
+# <a name="contact-support-for-gabon"></a>Kontakta support för Gabon
 
 [Hitta ett annat land eller en annan region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5147
 
-## <a name="hours"></a>Timmar
+## <a name="hours"></a>Tider
 ### <a name="billing-support"></a>Faktureringssupport:
 
-Franska: mån-fre 09:00-17:00
+Franska: mån-fre 09.00-17.00
 
 Engelska: mån-fre 09.00-17.00
 
 ### <a name="technical-support"></a>Teknisk support:
 
-Franska: mån-fre 08:00-21:00
+Franska: mån-fre 08.00-21.00
 
 Engelska: 24 timmar om dygnet, 7 dagar i veckan
 
-Internationella samtalsavgifter tillkommer
+Avgifter för internationella samtal tillkommer
