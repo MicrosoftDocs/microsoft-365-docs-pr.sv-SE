@@ -14,178 +14,179 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'Lär dig att konfigurera din anpassade Microsoft-domän med Namecheap om du vill att Microsoft ska hantera dina DNS-poster. '
-ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55fde3b0db960d78ad77c9f9189c5367de16c73f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629785"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400623"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a><span data-ttu-id="fb4e7-103">Ändra namnservrar för att konfigurera Microsoft med Namecheap</span><span class="sxs-lookup"><span data-stu-id="fb4e7-103">Change nameservers to set up Microsoft with Namecheap</span></span>
+# <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a><span data-ttu-id="4baec-103">Ändra namnservrar för att konfigurera Microsoft med Namecheap</span><span class="sxs-lookup"><span data-stu-id="4baec-103">Change nameservers to set up Microsoft with Namecheap</span></span>
 
- <span data-ttu-id="fb4e7-104">**[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
+ <span data-ttu-id="4baec-104">**[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="4baec-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
   
-<span data-ttu-id="fb4e7-105">Följ dessa instruktioner om du vill att Microsoft ska hantera dina DNS-poster åt dig.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-105">Follow these instructions if you want Microsoft to manage your DNS records for you.</span></span> <span data-ttu-id="fb4e7-106">(Om du vill kan du [hantera alla dina Microsoft DNS-poster på Namecheap](create-dns-records-at-namecheap.md).)</span><span class="sxs-lookup"><span data-stu-id="fb4e7-106">(If you prefer, you can [manage all your Microsoft DNS records at Namecheap](create-dns-records-at-namecheap.md).)</span></span>
+<span data-ttu-id="4baec-105">Följ dessa instruktioner om du vill att Microsoft ska hantera dina DNS-poster åt dig.</span><span class="sxs-lookup"><span data-stu-id="4baec-105">Follow these instructions if you want Microsoft to manage your DNS records for you.</span></span> <span data-ttu-id="4baec-106">(Om du vill kan du [hantera alla dina Microsoft DNS-poster på Namecheap](create-dns-records-at-namecheap.md).)</span><span class="sxs-lookup"><span data-stu-id="4baec-106">(If you prefer, you can [manage all your Microsoft DNS records at Namecheap](create-dns-records-at-namecheap.md).)</span></span>
   
     
-## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="fb4e7-107">Lägga till en TXT-post för verifiering</span><span class="sxs-lookup"><span data-stu-id="fb4e7-107">Add a TXT record for verification</span></span>
+## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="4baec-107">Lägga till en TXT-post för verifiering</span><span class="sxs-lookup"><span data-stu-id="4baec-107">Add a TXT record for verification</span></span>
 
-1. <span data-ttu-id="fb4e7-p102">Börja med att gå till domänsidan på Namecheap genom att klicka på [den här länken](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Du uppmanas att logga in och fortsätta.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-p102">To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.</span></span>
+1. <span data-ttu-id="4baec-p102">Börja med att gå till domänsidan på Namecheap genom att klicka på [den här länken](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Du uppmanas att logga in och fortsätta.</span><span class="sxs-lookup"><span data-stu-id="4baec-p102">To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.</span></span>
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. <span data-ttu-id="fb4e7-111">Välj **Domänlista** i listrutan under **Konto**på sidan **Mål.**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-111">On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list.</span></span> 
+2. <span data-ttu-id="4baec-111">Välj **Domänlista** i listrutan under **Konto**på sidan **Mål.**</span><span class="sxs-lookup"><span data-stu-id="4baec-111">On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list.</span></span> 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. <span data-ttu-id="fb4e7-113">Leta reda på namnet på den domän som du vill redigera på sidan **Domänlista** och välj sedan **Hantera**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-113">On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.</span></span>
+3. <span data-ttu-id="4baec-113">Leta reda på namnet på den domän som du vill redigera på sidan **Domänlista** och välj sedan **Hantera**.</span><span class="sxs-lookup"><span data-stu-id="4baec-113">On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.</span></span>
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. <span data-ttu-id="fb4e7-115">Välj **Avancerad DNS**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-115">Select **Advanced DNS**.</span></span>
+4. <span data-ttu-id="4baec-115">Välj **Avancerad DNS**.</span><span class="sxs-lookup"><span data-stu-id="4baec-115">Select **Advanced DNS**.</span></span>
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. <span data-ttu-id="fb4e7-117">Välj **LÄGG TILL NY POST i**avsnittet **VÄRDPOSTER** .</span><span class="sxs-lookup"><span data-stu-id="fb4e7-117">In the **HOST RECORDS** section, select **ADD NEW RECORD**.</span></span>
+5. <span data-ttu-id="4baec-117">Välj **LÄGG TILL NY POST i**avsnittet **VÄRDPOSTER** .</span><span class="sxs-lookup"><span data-stu-id="4baec-117">In the **HOST RECORDS** section, select **ADD NEW RECORD**.</span></span>
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. <span data-ttu-id="fb4e7-119">Välj **TXT Record** i listrutan **Type**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-119">In the **Type** drop-down, select **TXT Record**.</span></span>
+6. <span data-ttu-id="4baec-119">Välj **TXT Record** i listrutan **Type**.</span><span class="sxs-lookup"><span data-stu-id="4baec-119">In the **Type** drop-down, select **TXT Record**.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="fb4e7-120">Listrutan **Typ** visas automatiskt när du väljer **LÄGG TILL NY POST**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-120">The **Type** drop-down automatically appears when you select **ADD NEW RECORD**.</span></span>
+    > <span data-ttu-id="4baec-120">Listrutan **Typ** visas automatiskt när du väljer **LÄGG TILL NY POST**.</span><span class="sxs-lookup"><span data-stu-id="4baec-120">The **Type** drop-down automatically appears when you select **ADD NEW RECORD**.</span></span>
   
     ![Namecheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
-7. <span data-ttu-id="fb4e7-122">I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-122">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
+7. <span data-ttu-id="4baec-122">I rutorna för den nya posten skriver du in, eller kopierar och klistrar in, värdena från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="4baec-122">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
     
-    <span data-ttu-id="fb4e7-123">(Välj **TTL-värdet** i listrutan.)</span><span class="sxs-lookup"><span data-stu-id="fb4e7-123">(Choose the **TTL** value from the drop-down list.)</span></span> 
+    <span data-ttu-id="4baec-123">(Välj **TTL-värdet** i listrutan.)</span><span class="sxs-lookup"><span data-stu-id="4baec-123">(Choose the **TTL** value from the drop-down list.)</span></span> 
     
-|<span data-ttu-id="fb4e7-124">**Typ**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-124">**Type**</span></span>|<span data-ttu-id="fb4e7-125">**Host**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-125">**Host**</span></span>|<span data-ttu-id="fb4e7-126">**Värde**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-126">**Value**</span></span>|<span data-ttu-id="fb4e7-127">**TTL**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-127">**TTL**</span></span>|
+|<span data-ttu-id="4baec-124">**Typ**</span><span class="sxs-lookup"><span data-stu-id="4baec-124">**Type**</span></span>|<span data-ttu-id="4baec-125">**Host**</span><span class="sxs-lookup"><span data-stu-id="4baec-125">**Host**</span></span>|<span data-ttu-id="4baec-126">**Värde**</span><span class="sxs-lookup"><span data-stu-id="4baec-126">**Value**</span></span>|<span data-ttu-id="4baec-127">**TTL**</span><span class="sxs-lookup"><span data-stu-id="4baec-127">**TTL**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="fb4e7-128">TXT</span><span class="sxs-lookup"><span data-stu-id="fb4e7-128">TXT</span></span>  <br/> |@  <br/> |<span data-ttu-id="fb4e7-129">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="fb4e7-129">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="fb4e7-130">**Obs:** Detta är ett exempel.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-130">**Note**: This is an example.</span></span> <span data-ttu-id="fb4e7-131">Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-131">Use your specific **Destination or Points to Address** value here, from the table.</span></span>           [<span data-ttu-id="fb4e7-132">Hur hittar jag detta?</span><span class="sxs-lookup"><span data-stu-id="fb4e7-132">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)          |<span data-ttu-id="fb4e7-133">30 min</span><span class="sxs-lookup"><span data-stu-id="fb4e7-133">30 min</span></span>  <br/> |
+|<span data-ttu-id="4baec-128">TXT</span><span class="sxs-lookup"><span data-stu-id="4baec-128">TXT</span></span>  <br/> |@  <br/> |<span data-ttu-id="4baec-129">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="4baec-129">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="4baec-130">**Obs:** Detta är ett exempel.</span><span class="sxs-lookup"><span data-stu-id="4baec-130">**Note**: This is an example.</span></span> <span data-ttu-id="4baec-131">Använd ditt specifika \*\*Mål eller pekar på adress \*\* värde här, från tabellen.</span><span class="sxs-lookup"><span data-stu-id="4baec-131">Use your specific **Destination or Points to Address** value here, from the table.</span></span>           [<span data-ttu-id="4baec-132">Hur hittar jag det här?</span><span class="sxs-lookup"><span data-stu-id="4baec-132">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)          |<span data-ttu-id="4baec-133">30 min</span><span class="sxs-lookup"><span data-stu-id="4baec-133">30 min</span></span>  <br/> |
    
    ![Namecheap-BP-Verifiera-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. <span data-ttu-id="fb4e7-135">Markera kontrollen **Spara ändringar** (markera).</span><span class="sxs-lookup"><span data-stu-id="fb4e7-135">Select the **Save Changes** (check mark) control.</span></span> 
+8. <span data-ttu-id="4baec-135">Markera kontrollen **Spara ändringar** (markera).</span><span class="sxs-lookup"><span data-stu-id="4baec-135">Select the **Save Changes** (check mark) control.</span></span> 
     
     ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
-9. <span data-ttu-id="fb4e7-137">Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-137">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
+9. <span data-ttu-id="4baec-137">Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.</span><span class="sxs-lookup"><span data-stu-id="4baec-137">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
     
-<span data-ttu-id="fb4e7-138">Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär en sökning efter posten.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-138">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record.</span></span>
+<span data-ttu-id="4baec-138">Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär en sökning efter posten.</span><span class="sxs-lookup"><span data-stu-id="4baec-138">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record.</span></span>
   
-<span data-ttu-id="fb4e7-139">När Microsoft hittar rätt TXT-post verifieras domänen.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-139">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
+<span data-ttu-id="4baec-139">När Microsoft hittar rätt TXT-post är din domän verifierad.</span><span class="sxs-lookup"><span data-stu-id="4baec-139">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
   
-1. <span data-ttu-id="fb4e7-140">I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-140">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="4baec-140">I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.</span><span class="sxs-lookup"><span data-stu-id="4baec-140">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
     
-2. <span data-ttu-id="fb4e7-141">På sidan **Domains** väljer du den domän du verifierar.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-141">On the **Domains** page, select the domain that you are verifying.</span></span> 
+2. <span data-ttu-id="4baec-141">På sidan **Domains** väljer du den domän du verifierar.</span><span class="sxs-lookup"><span data-stu-id="4baec-141">On the **Domains** page, select the domain that you are verifying.</span></span> 
     
     
   
-3. <span data-ttu-id="fb4e7-142">På sidan **Setup** väljer du **Start setup**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-142">On the **Setup** page, select **Start setup**.</span></span>
+3. <span data-ttu-id="4baec-142">På sidan **Setup** väljer du **Start setup**.</span><span class="sxs-lookup"><span data-stu-id="4baec-142">On the **Setup** page, select **Start setup**.</span></span>
     
     
   
-4. <span data-ttu-id="fb4e7-143">På sidan **Verify domain** väljer du **Verify**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-143">On the **Verify domain** page, select **Verify**.</span></span>
+4. <span data-ttu-id="4baec-143">På sidan **Verify domain** väljer du **Verify**.</span><span class="sxs-lookup"><span data-stu-id="4baec-143">On the **Verify domain** page, select **Verify**.</span></span>
     
     
   
 > [!NOTE]
->  <span data-ttu-id="fb4e7-p104">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="fb4e7-p104">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+>  <span data-ttu-id="4baec-p104">Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="4baec-p104">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
-## <a name="change-your-domains-nameserver-ns-records"></a><span data-ttu-id="fb4e7-147">Ändra domänens namnserverposter (NS)</span><span class="sxs-lookup"><span data-stu-id="fb4e7-147">Change your domain's nameserver (NS) records</span></span>
+## <a name="change-your-domains-nameserver-ns-records"></a><span data-ttu-id="4baec-147">Ändra domänens namnserverposter (NS)</span><span class="sxs-lookup"><span data-stu-id="4baec-147">Change your domain's nameserver (NS) records</span></span>
 
-<span data-ttu-id="fb4e7-148">Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens NS-poster på domänregistraren så att de pekar på Microsofts primära och sekundära namnservrar.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-148">To complete setting up your domain with Microsoft, you change your domain's NS records at your domain registrar to point to the Microsoft primary and secondary name servers.</span></span> <span data-ttu-id="fb4e7-149">Detta ställer in Microsoft för att uppdatera domänens DNS-poster åt dig.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-149">This sets up Microsoft to update the domain's DNS records for you.</span></span> <span data-ttu-id="fb4e7-150">Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-150">We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.</span></span>
+<span data-ttu-id="4baec-148">Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens NS-poster på domänregistraren så att de pekar på Microsofts primära och sekundära namnservrar.</span><span class="sxs-lookup"><span data-stu-id="4baec-148">To complete setting up your domain with Microsoft, you change your domain's NS records at your domain registrar to point to the Microsoft primary and secondary name servers.</span></span> <span data-ttu-id="4baec-149">Detta ställer in Microsoft för att uppdatera domänens DNS-poster åt dig.</span><span class="sxs-lookup"><span data-stu-id="4baec-149">This sets up Microsoft to update the domain's DNS records for you.</span></span> <span data-ttu-id="4baec-150">Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.</span><span class="sxs-lookup"><span data-stu-id="4baec-150">We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.</span></span>
   
 > [!CAUTION]
-> <span data-ttu-id="fb4e7-151">När du ändrar domänens NS-poster så att de pekar på Microsofts namnservrar påverkas alla tjänster som för närvarande är associerade med domänen.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-151">When you change your domain's NS records to point to the Microsoft name servers, all the services that are currently associated with your domain are affected.</span></span> <span data-ttu-id="fb4e7-152">Till exempel börjar all e-post som skickas till din domän (t.ex. *rob@ your_domain* .com) komma till Microsoft när du har gjort den här ändringen.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-152">For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft after you make this change.</span></span> 
+> <span data-ttu-id="4baec-151">När du ändrar domänens NS-poster så att de pekar på Microsofts namnservrar påverkas alla tjänster som för närvarande är associerade med domänen.</span><span class="sxs-lookup"><span data-stu-id="4baec-151">When you change your domain's NS records to point to the Microsoft name servers, all the services that are currently associated with your domain are affected.</span></span> <span data-ttu-id="4baec-152">Till exempel börjar all e-post som skickas till din domän (t.ex. *rob@ your_domain* .com) komma till Microsoft när du har gjort den här ändringen.</span><span class="sxs-lookup"><span data-stu-id="4baec-152">For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft after you make this change.</span></span> 
   
 > [!IMPORTANT]
->  <span data-ttu-id="fb4e7-153">När du har utfört stegen i det här avsnittet är de  *enda*  namnservrarna som bör finnas i listan dessa fyra: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till  *korrekta*  namnservrar om de inte redan finns i listan.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-153">When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list.</span></span> 
+>  <span data-ttu-id="4baec-153">När du har utfört stegen i det här avsnittet är de  *enda*  namnservrarna som bör finnas i listan dessa fyra: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till  *korrekta*  namnservrar om de inte redan finns i listan.</span><span class="sxs-lookup"><span data-stu-id="4baec-153">When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list.</span></span> 
   
-1. <span data-ttu-id="fb4e7-p107">Börja med att gå till domänsidan på Namecheap genom att klicka på [den här länken](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Du uppmanas att logga in och fortsätta.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-p107">To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.</span></span>
+1. <span data-ttu-id="4baec-p107">Börja med att gå till domänsidan på Namecheap genom att klicka på [den här länken](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Du uppmanas att logga in och fortsätta.</span><span class="sxs-lookup"><span data-stu-id="4baec-p107">To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.</span></span>
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. <span data-ttu-id="fb4e7-157">Välj **Domänlista** i listrutan under **Konto**på sidan **Mål.**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-157">On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list.</span></span> 
+2. <span data-ttu-id="4baec-157">Välj **Domänlista** i listrutan under **Konto**på sidan **Mål.**</span><span class="sxs-lookup"><span data-stu-id="4baec-157">On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list.</span></span> 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. <span data-ttu-id="fb4e7-159">Leta reda på namnet på den domän som du vill redigera på sidan **Domänlista** och välj sedan **Hantera**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-159">On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.</span></span>
+3. <span data-ttu-id="4baec-159">Leta reda på namnet på den domän som du vill redigera på sidan **Domänlista** och välj sedan **Hantera**.</span><span class="sxs-lookup"><span data-stu-id="4baec-159">On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.</span></span>
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. <span data-ttu-id="fb4e7-161">Välj **Domän**.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-161">Select **Domain**.</span></span>
+4. <span data-ttu-id="4baec-161">Välj **Domän**.</span><span class="sxs-lookup"><span data-stu-id="4baec-161">Select **Domain**.</span></span>
     
     ![Namncheap-BP-Redelegate-1-1](../../media/59588406-794e-4ae4-8526-35e3111b5791.png)
   
-5. <span data-ttu-id="fb4e7-163">Leta reda på avsnittet **NAMESERVERS** och välj sedan **Anpassad** i listrutan **Namecheap Standard.**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-163">Find the **NAMESERVERS** section, and then select **Custom** from the **Namecheap Default** drop-down list.</span></span> 
+5. <span data-ttu-id="4baec-163">Leta reda på avsnittet **NAMESERVERS** och välj sedan **Anpassad** i listrutan **Namecheap Standard.**</span><span class="sxs-lookup"><span data-stu-id="4baec-163">Find the **NAMESERVERS** section, and then select **Custom** from the **Namecheap Default** drop-down list.</span></span> 
     
     ![Namecheap-BP-Redelegate-1-2](../../media/7df56295-fdb3-472f-9442-13f780c2c93e.png)
   
-6. <span data-ttu-id="fb4e7-165">Beroende på om det redan finns namnservrar listade på sidan som visas nu fortsätter du till någon av följande två procedurer.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-165">Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures.</span></span>
+6. <span data-ttu-id="4baec-165">Beroende på om det redan finns namnservrar listade på sidan som visas nu fortsätter du till någon av följande två procedurer.</span><span class="sxs-lookup"><span data-stu-id="4baec-165">Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures.</span></span>
     
-### <a name="if-there-are-no-nameservers-already-listed"></a><span data-ttu-id="fb4e7-166">Om INGA namnservrar visas</span><span class="sxs-lookup"><span data-stu-id="fb4e7-166">If there are NO nameservers already listed</span></span>
-<span data-ttu-id="fb4e7-167"><a name="BKMK_ProcedureWithOUT"> </a></span><span class="sxs-lookup"><span data-stu-id="fb4e7-167"><a name="BKMK_ProcedureWithOUT"> </a></span></span>
+### <a name="if-there-are-no-nameservers-already-listed"></a><span data-ttu-id="4baec-166">Om INGA namnservrar visas</span><span class="sxs-lookup"><span data-stu-id="4baec-166">If there are NO nameservers already listed</span></span>
+<span data-ttu-id="4baec-167"><a name="BKMK_ProcedureWithOUT"> </a></span><span class="sxs-lookup"><span data-stu-id="4baec-167"><a name="BKMK_ProcedureWithOUT"> </a></span></span>
 
-1. <span data-ttu-id="fb4e7-168">Välj **LÄGG TILL NAMESERVER** två gånger om du vill lägga till två nya rader.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-168">Select **ADD NAMESERVER** twice to add two new rows.</span></span>
+1. <span data-ttu-id="4baec-168">Välj **LÄGG TILL NAMESERVER** två gånger om du vill lägga till två nya rader.</span><span class="sxs-lookup"><span data-stu-id="4baec-168">Select **ADD NAMESERVER** twice to add two new rows.</span></span>
     
     ![Namncheap-BP-Redelegate-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
-2. <span data-ttu-id="fb4e7-170">Skriv eller kopiera och klistra in värdena från följande tabell i **rutorna Nameserver.**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-170">In the **Nameserver** boxes, type or copy and paste the values from the following table.</span></span>
+2. <span data-ttu-id="4baec-170">Skriv eller kopiera och klistra in värdena från följande tabell i **rutorna Nameserver.**</span><span class="sxs-lookup"><span data-stu-id="4baec-170">In the **Nameserver** boxes, type or copy and paste the values from the following table.</span></span>
     
 |||
 |:-----|:-----|
-|<span data-ttu-id="fb4e7-171">**Namnserver 1**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-171">**Nameserver 1**</span></span> <br/> |<span data-ttu-id="fb4e7-172">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-172">ns1.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="fb4e7-173">**Namnserver 2**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-173">**Nameserver 2**</span></span> <br/> |<span data-ttu-id="fb4e7-174">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-174">ns2.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="fb4e7-175">**Namnserver 3**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-175">**Nameserver 3**</span></span> <br/> |<span data-ttu-id="fb4e7-176">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-176">ns3.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="fb4e7-177">**Namnserver 4**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-177">**Nameserver 4**</span></span> <br/> |<span data-ttu-id="fb4e7-178">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-178">ns4.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-171">**Namnserver 1**</span><span class="sxs-lookup"><span data-stu-id="4baec-171">**Nameserver 1**</span></span> <br/> |<span data-ttu-id="4baec-172">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-172">ns1.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-173">**Namnserver 2**</span><span class="sxs-lookup"><span data-stu-id="4baec-173">**Nameserver 2**</span></span> <br/> |<span data-ttu-id="4baec-174">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-174">ns2.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-175">**Namnserver 3**</span><span class="sxs-lookup"><span data-stu-id="4baec-175">**Nameserver 3**</span></span> <br/> |<span data-ttu-id="4baec-176">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-176">ns3.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-177">**Namnserver 4**</span><span class="sxs-lookup"><span data-stu-id="4baec-177">**Nameserver 4**</span></span> <br/> |<span data-ttu-id="4baec-178">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-178">ns4.bdm.microsoftonline.com</span></span>  <br/> |
    
    ![Namncheap-BP-Redelegate-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
-3. <span data-ttu-id="fb4e7-180">Markera kontrollen **Spara** (markera).</span><span class="sxs-lookup"><span data-stu-id="fb4e7-180">Select the **Save** (check mark) control.</span></span> 
+3. <span data-ttu-id="4baec-180">Markera kontrollen **Spara** (markera).</span><span class="sxs-lookup"><span data-stu-id="4baec-180">Select the **Save** (check mark) control.</span></span> 
     
     ![Namncheap-BP-Redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> <span data-ttu-id="fb4e7-182">Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-182">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="fb4e7-183">Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-183">Then your Microsoft email and other services will be all set to work with your domain.</span></span> 
+> <span data-ttu-id="4baec-182">Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet.</span><span class="sxs-lookup"><span data-stu-id="4baec-182">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="4baec-183">Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän.</span><span class="sxs-lookup"><span data-stu-id="4baec-183">Then your Microsoft email and other services will be all set to work with your domain.</span></span> 
   
-### <a name="if-there-are-nameservers-already-listed"></a><span data-ttu-id="fb4e7-184">Om det redan FINNS namnservrar listade</span><span class="sxs-lookup"><span data-stu-id="fb4e7-184">If there ARE nameservers already listed</span></span>
+### <a name="if-there-are-nameservers-already-listed"></a><span data-ttu-id="4baec-184">Om det redan FINNS namnservrar listade</span><span class="sxs-lookup"><span data-stu-id="4baec-184">If there ARE nameservers already listed</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="fb4e7-p109">Följ de här anvisningarna  *endast*  om det finns andra namnservrar utöver de fyra  *korrekta*  namnservrarna. (Ta alltså  *endast*  bort eventuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** eller **ns4.bdm.microsoftonline.com**.)</span><span class="sxs-lookup"><span data-stu-id="fb4e7-p109">Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)</span></span> 
+> <span data-ttu-id="4baec-p109">Följ de här anvisningarna  *endast*  om det finns andra namnservrar utöver de fyra  *korrekta*  namnservrarna. (Ta alltså  *endast*  bort eventuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** eller **ns4.bdm.microsoftonline.com**.)</span><span class="sxs-lookup"><span data-stu-id="4baec-p109">Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)</span></span> 
   
-1. <span data-ttu-id="fb4e7-187">Om det finns andra namnservrar i **rutorna Nameserver** tar du bort var och en genom att markera den och sedan trycka på **Delete-tangenten** på tangentbordet.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-187">If there are any other nameservers listed in the **Nameserver** boxes, delete each one by selecting it and then pressing the **Delete** key on your keyboard.</span></span> 
+1. <span data-ttu-id="4baec-187">Om det finns andra namnservrar i **rutorna Nameserver** tar du bort var och en genom att markera den och sedan trycka på **Delete-tangenten** på tangentbordet.</span><span class="sxs-lookup"><span data-stu-id="4baec-187">If there are any other nameservers listed in the **Nameserver** boxes, delete each one by selecting it and then pressing the **Delete** key on your keyboard.</span></span> 
     
     ![Namncheap-BP-Redelegate-1-4](../../media/3270603a-c4f4-40b7-acad-733d56e2f53c.png)
   
-2. <span data-ttu-id="fb4e7-189">Välj **LÄGG TILL NAMESERVER** två gånger om du vill lägga till två nya rader.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-189">Select **ADD NAMESERVER** twice to add two new rows.</span></span> 
+2. <span data-ttu-id="4baec-189">Välj **LÄGG TILL NAMESERVER** två gånger om du vill lägga till två nya rader.</span><span class="sxs-lookup"><span data-stu-id="4baec-189">Select **ADD NAMESERVER** twice to add two new rows.</span></span> 
     
     ![Namncheap-BP-Redelegate-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
-3. <span data-ttu-id="fb4e7-191">Skriv eller kopiera och klistra in värdena från följande tabell i **rutorna Nameserver.**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-191">In the **Nameserver** boxes, type or copy and paste the values from the following table.</span></span>
+3. <span data-ttu-id="4baec-191">Skriv eller kopiera och klistra in värdena från följande tabell i **rutorna Nameserver.**</span><span class="sxs-lookup"><span data-stu-id="4baec-191">In the **Nameserver** boxes, type or copy and paste the values from the following table.</span></span>
  
     
 |||
 |:-----|:-----|
-|<span data-ttu-id="fb4e7-192">**Name Server 1**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-192">**Name Server 1**</span></span> <br/> |<span data-ttu-id="fb4e7-193">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-193">ns1.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="fb4e7-194">**Name Server 2**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-194">**Name Server 2**</span></span> <br/> |<span data-ttu-id="fb4e7-195">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-195">ns2.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="fb4e7-196">**Namnserver 3**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-196">**Nameserver 3**</span></span> <br/> |<span data-ttu-id="fb4e7-197">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-197">ns3.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="fb4e7-198">**Namnserver 4**</span><span class="sxs-lookup"><span data-stu-id="fb4e7-198">**Nameserver 4**</span></span> <br/> |<span data-ttu-id="fb4e7-199">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="fb4e7-199">ns4.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-192">**Name Server 1**</span><span class="sxs-lookup"><span data-stu-id="4baec-192">**Name Server 1**</span></span> <br/> |<span data-ttu-id="4baec-193">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-193">ns1.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-194">**Name Server 2**</span><span class="sxs-lookup"><span data-stu-id="4baec-194">**Name Server 2**</span></span> <br/> |<span data-ttu-id="4baec-195">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-195">ns2.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-196">**Namnserver 3**</span><span class="sxs-lookup"><span data-stu-id="4baec-196">**Nameserver 3**</span></span> <br/> |<span data-ttu-id="4baec-197">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-197">ns3.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="4baec-198">**Namnserver 4**</span><span class="sxs-lookup"><span data-stu-id="4baec-198">**Nameserver 4**</span></span> <br/> |<span data-ttu-id="4baec-199">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="4baec-199">ns4.bdm.microsoftonline.com</span></span>  <br/> |
    
    ![Namncheap-BP-Redelegate-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
-4. <span data-ttu-id="fb4e7-201">Markera kontrollen **Spara** (markera).</span><span class="sxs-lookup"><span data-stu-id="fb4e7-201">Select the **Save** (check mark) control.</span></span> 
+4. <span data-ttu-id="4baec-201">Markera kontrollen **Spara** (markera).</span><span class="sxs-lookup"><span data-stu-id="4baec-201">Select the **Save** (check mark) control.</span></span> 
     
     ![Namncheap-BP-Redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> <span data-ttu-id="fb4e7-203">Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-203">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="fb4e7-204">Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän.</span><span class="sxs-lookup"><span data-stu-id="fb4e7-204">Then your Microsoft email and other services will be all set to work with your domain.</span></span>
+> <span data-ttu-id="4baec-203">Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet.</span><span class="sxs-lookup"><span data-stu-id="4baec-203">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="4baec-204">Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän.</span><span class="sxs-lookup"><span data-stu-id="4baec-204">Then your Microsoft email and other services will be all set to work with your domain.</span></span>

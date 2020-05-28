@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: Kom igång med din egen domän för e-post, webbplatser och konton i Office 365. Lär dig mer om domäner, gör ändringar i din domän, integrera e-post och webbplatser och få verktyg och tips.
-ms.openlocfilehash: f1b159f33d60c9a927f495b5bdce8a8eb24e9a44
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897078"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399926"
 ---
 # <a name="get-help-with-office-365-domains"></a>Få hjälp med Office 365-domäner
 
