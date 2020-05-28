@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Granska svaren på vanliga frågor om centraliserad distribution från microsoft 365-administrationscentret.
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011741"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399830"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
@@ -35,7 +36,7 @@ Centraliserad distribution av tillägg kräver att användare använder Microsof
  
 Centraliserad distribution stöds endast för onlinepostlådor. Det stöder inte distribution till lokala Exchange-postlådor.
  
-Du kan använda [kompatibilitetskontrollen för centraliserad distribution i Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) för att avgöra om din prenumeration är kvalificerad. 
+Du kan använda [kompatibilitetskontrollen för centraliserad distribution i Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   för att avgöra om din prenumeration är kvalificerad. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Hur inriktar du dig på tilläggsanvändartilldelningar med centraliserad distribution?  
 

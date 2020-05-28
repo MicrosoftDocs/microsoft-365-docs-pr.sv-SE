@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Ta reda på hur du överför data manuellt mellan två Microsoft 365-konton när du ändrade planen eller företagsnamnet, eller kombinerade flera prenumerationer till ett.
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053746"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399878"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Överföra data manuellt mellan två konton
 
@@ -61,10 +62,10 @@ För Microsoft 365 Enterprise och Microsoft 365 Midsize Business:
   
 |**Plats**|**Ändamål**|
 |:-----|:-----|
-|**Administratörsinställningar** \> för **Microsoft 365-tjänsten** \> **Service settings** <br/> |Välj varje flik för inställningar för e-post, webbplatser, Lync, användarprogramvara, lösenord, community, rättighetshantering och mobil.  <br/> |
+|**Admin (admin)** \> **Microsoft 365** \> **Tjänstinställningar** <br/> |Välj varje flik för inställningar för e-post, webbplatser, Lync, användarprogramvara, lösenord, community, rättighetshantering och mobil.  <br/> |
 |**Admin** \> **Exchange** <br/> | Exchange Online-inställningar  <br/> |
 |**Admin** \> **SharePoint** <br/> | SharePoint Online-inställningar  <br/> |
-|**Administrera** \> **Skype för företag** <br/> |Ytterligare Skype för företag-inställningar  <br/> |
+|**Admin (admin)** \> **Skype för företag** <br/> |Ytterligare Skype för företag-inställningar  <br/> |
 
 För Microsoft 365 Small Business
   

@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Lär dig att skapa, redigera eller ta bort en säkerhetsgrupp.
-ms.openlocfilehash: 6f4daa66c11675674fdbfbfeb625128d8f817520
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140447"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400094"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Skapa, redigera eller ta bort en säkerhetsgrupp i administrationscentret för Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
 
 ### <a name="add-a-security-group"></a>Lägga till en säkerhetsgrupp
 
-1. Gå till sidan<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> **administrationscentret för** > Microsoft 365.
+1. Gå till sidan Gruppergrupper i **administrationscentret för**Microsoft 365.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>
   
 2. På sidan **Grupper** väljer du **Lägg till en grupp**.
     
@@ -97,7 +98,7 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
   
 2. Välj gruppens namn på sidan **Grupper.** 
     
@@ -107,7 +108,7 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
   
 2. Välj gruppens namn på sidan **Grupper.** 
     
@@ -119,7 +120,7 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
   
 2. Välj gruppens namn på sidan **Grupper.** 
     
@@ -132,7 +133,7 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
 
 ### <a name="delete-a-security-group"></a>Ta bort en säkerhetsgrupp
 
-1. Gå till sidan **Gruppergrupper** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. Välj gruppens namn på sidan **Grupper.** 
     
@@ -142,7 +143,7 @@ Det finns även [Grupper i Exchange Online och SharePoint Online](#groups-in-exc
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Grupper i Exchange Online och SharePoint Online
 
-Om du vill skapa grupper av användare så att du kan skicka e-post till dem alla samtidigt kan du göra det i administrationscentret för Exchange genom att \> gå till **Admin** \> **Administratörsutbytesmottagare** \> **Recipients** grupper . **Groups** Välj sedan **New**![Nytt](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)lägg till och välj den typ av grupp som du vill skapa: 
+Om du vill skapa grupper av användare så att du kan skicka e-post till dem alla **Admin** samtidigt kan du göra det i administrationscentret för Exchange genom att gå till \> **Administratörsutbytesmottagare** \> **Recipients** \> **Groups**grupper . Välj sedan **Nytt** ![ lägg till och välj den typ av grupp som du ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) vill skapa: 
   
 - **Distributionsgrupp**: Används för att distribuera meddelanden till en grupp användare. Det kallas också en *e-postaktiverad distributionsgrupp*eller en *distributionslista*. Mer information finns i [Hantera distributionsgrupper](https://technet.microsoft.com/library/bb124513.aspx).
     

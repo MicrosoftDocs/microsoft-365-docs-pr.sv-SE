@@ -14,17 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Lär dig hur du blir administratör och får en Microsoft 365-prenumeration för din organisation. '
-ms.openlocfilehash: ac18b40a1160d58e343df8196881769b7200d5a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627962"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399464"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>Bli administratör och köp Microsoft 365 för din organisation
 
@@ -89,6 +90,6 @@ Nu när du är administratör kanske du vill göra följande:
 |Börja använda Microsoft 365  <br/> |Besök [Office 365 Learning Center](https://support.office.com/learn/office365-for-business) och läs hur du loggar in, kontrollerar e-post, delar dokument med mera. Du och dina användare kan använda den här webbplatsen för att komma igång med Microsoft 365.  <br/> |
 |Hantera din Microsoft 365-prenumeration  <br/> |Besök [Microsoft 365 Admin hjälpcenter](../admin-home.md) och lära dig vanliga administrativa uppgifter som att lägga till och ta bort användare, återställa lösenord och konfigurera mobila enheter.  <br/> |
 
-## <a name="still-need-help"></a>Behöver du mer hjälp?
+## <a name="still-need-help"></a>Behöver du fortfarande hjälp?
 
 [Ring Microsoft-support](../contact-support-for-business-products.md)

@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Prova de här lösningarna om du får problem med delade postlådor.
-ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628753"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400022"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Lösa problem med delade postlådor
 
@@ -34,7 +35,7 @@ Om felmeddelanden visas när du skapar eller använder en delad postlåda kan du
 ## <a name="error-when-creating-shared-mailboxes"></a>Fel vid skapande av delade postlådor
 <a name="bkmk_Fix"> </a>
 
-Om felmeddelandet visas **används proxyadressen "smtp:<delat\>postlådenamn " redan av proxyadresserna eller\<LegacyExchangeDN för " namn>". Välj en annan proxyadress**betyder det att du försöker ge den delade postlådan ett namn som redan används. Anta att du vill ha delade postlådor med namnen info@domän1 och info@domän2. Du kan göra det på två sätt:
+Om felmeddelandet visas **används proxyadressen "smtp:<delat postlådenamn \> " redan av proxyadresserna eller LegacyExchangeDN för " \<name> ". Välj en annan proxyadress**betyder det att du försöker ge den delade postlådan ett namn som redan används. Anta att du vill ha delade postlådor med namnen info@domän1 och info@domän2. Du kan göra det på två sätt:
 
   - Använd Windows PowerShell. Se det här blogginlägget för instruktioner: [Skapa delade postlådor med samma alias på olika domäner](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     

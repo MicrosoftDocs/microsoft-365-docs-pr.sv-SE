@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Lär dig skillnaden mellan Microsoft 365 Business Standard och Microsoft 365 Business Premium och hur du kan uppgradera till Microsoft 365 Business Premium.
-ms.openlocfilehash: 20a4162f74a9cb0e943195a589fd2d964f773f48
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: bdab8165623170926b17efa4cae9408b78a2f5f5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045989"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401391"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Uppgradera till Microsoft 365 Business Premium från Microsoft 365 Business Standard
 
@@ -55,7 +56,7 @@ Vi har lagt till en jämförelse sida vid sida av dessa två planer i [Microsoft
 
 ## <a name="upgrade-to-microsoft-365-business-premium"></a>Uppgradera till Microsoft 365 Business Premium
 
-1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>administrationscentret på .
+1. Logga in på administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 
 2. Gå till navigeringsfönstret och välj **Fakturering** \> **dina produkter**. Hitta din nuvarande prenumeration och välj den för att visa informationen.
 
@@ -85,7 +86,7 @@ Det tar Microsoft några minuter att konfigurera dina nya serviceplaner. Om du v
 
 Nu när Microsoft 365 Business Premium-licenser har tilldelats, gör du några steg för att börja skydda enheter och filer. Du ska använda några nya alternativ som ingår i navigeringsfönstret för administrationscenter.
   
-1. Gå till Enhetsprinciper i **navigeringsfönstret** \> **Policies**i administrationscentret.
+1. Gå till Enhetsprinciper i **navigeringsfönstret i administrationscentret.** \> **Policies**
 
 2. På sidan **Enhetsprinciper** väljer du **Lägg till**.
 

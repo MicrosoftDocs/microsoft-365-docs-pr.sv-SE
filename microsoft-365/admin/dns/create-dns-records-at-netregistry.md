@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster i Netregistry för Microsoft.
-ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939161"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400370"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Skapa DNS-poster i Netregistry för Microsoft
 
@@ -137,7 +138,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Namn**|**TTL (SEK)**|**Exchange (Pekar på adress eller värde)**|**Är värden fullt kvalificerad?**|**Preferens (prioritet)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> | *\<domännyckel\>*  .mail.protection.outlook.com  <br/> **Anm.:** Hämta * \<domännyckeln\> * från ditt Microsoft-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)      |(markera kryssrutan)  <br/> |10  <br/> Mer information om prioritet finns i Vad är MX-prioritet?  <br/> |
+    |(lämna tomt)  <br/> |3600 (sekunder)  <br/> | *\<domain-key\>*.mail.protection.outlook.com  <br/> **Anm.:** Hämta ditt *\<domain-key\>* från ditt Microsoft-konto.  [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)      |(markera kryssrutan)  <br/> |10  <br/> Mer information om prioritet finns i Vad är MX-prioritet?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   

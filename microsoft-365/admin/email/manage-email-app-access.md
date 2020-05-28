@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Läs om hur du väljer vilka mobilappar som personer kan använda för att komma åt e-post, kalender och kontakter.
-ms.openlocfilehash: 8627a31f7ec5e3c14b853618bb0383ecc58597cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628813"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400058"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Hantera åtkomst till e-postappar i administrationscentret för Microsoft 365
 

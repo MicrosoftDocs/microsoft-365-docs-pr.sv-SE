@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Läs om hur du hittar en ny Microsoft 365-partner eller får kontaktinformation för en partner som du har arbetat med tidigare. '
-ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628190"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399770"
 ---
 # <a name="find-your-partner-or-reseller"></a>Hitta din partner eller återförsäljare
 
@@ -50,7 +51,7 @@ Om du är redo att köpa eller förnya Microsoft 365 via Open Volume Licensing, 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Hämta partnerinformation i administrationscentret
 
-1. Gå till sidan Inställningar<a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partnerrelationer</a> i **administrationscentret.** > 
+1. Gå till sidan Inställningar **Settings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partnerrelationer</a> i administrationscentret.
   
 2. Om du har en partner visas partnerns namn och relation till din organisation här. Om du vill visa partnerkontaktinformation (telefonnummer och e-postadress) väljer du partnernamnet.
     

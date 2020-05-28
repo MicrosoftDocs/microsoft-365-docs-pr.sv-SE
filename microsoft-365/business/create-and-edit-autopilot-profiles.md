@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Lär dig att skapa en AutoPilot-profil och tillämpa den på en enhet, samt redigera eller ta bort en profil eller ta bort en profil från en enhet.
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627383"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400983"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Skapa och redigera AutoPilot-profiler
 
@@ -39,9 +40,9 @@ ms.locfileid: "43627383"
 
 En profil gäller för en enhet eller en grupp enheter.
   
-1. I administrationscentret för Microsoft 365 väljer du **Autopilot för** **enheter** \> .
+1. I administrationscentret för Microsoft 365 väljer du **Devices** \> **Autopilot för**enheter .
   
-2. På sidan **Autopilot** väljer du \> fliken **Profiler** **Skapa profil**.
+2. På sidan **Autopilot** väljer du fliken **Profiler** \> **Skapa profil**.
     
 3. På sidan **Skapa profil** anger du ett namn på profilen som hjälper dig att identifiera den, till exempel Marknadsföring. Aktivera den inställning du vill använda och välj sedan **Spara**. Mer information om profilerinställningar för Autopilot finns i [Om inställningar för autopilotprofil](autopilot-profile-settings.md).
     
@@ -53,7 +54,7 @@ När du har skapat en profil kan du använda den på en enhet eller en grupp enh
   
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn **Device** och välj en profil i listrutan \> **Tilldelad profil** **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn **Device** och välj en profil i listrutan **Tilldelad profil** \> **Spara**.
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +66,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de \> tillgängliga inställningarna **Spara**på **profilpanelen** .
+2. Markera kryssrutan bredvid ett enhetsnamn och uppdatera någon av de tillgängliga inställningarna Spara på **profilpanelen** \> **Save**.
     
     Om du gör detta innan någon användare ansluter enheten till internet används profilen för installationen.
     
@@ -73,7 +74,7 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Profiler**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** \> **Spara**på **profilpanelen** .
+2. Markera kryssrutan bredvid ett enhetsnamn och välj **Ta bort profil** Spara på **profilpanelen** \> **Save**.
     
     När du raderar en profil tas den bort från en enhet eller en grupp av enheter som den var tilldelad till.
     
@@ -81,5 +82,5 @@ När du har tilldelat en profil till en enhet kan du uppdatera den, även om du 
 
 1. På sidan för att **förbereda Windows** väljer du fliken **Enheter**. 
     
-2. Markera kryssrutan bredvid ett enhetsnamn **Device** och välj **Ingen** i listrutan \> **Tilldelad profil** **Spara**.
+2. Markera kryssrutan bredvid ett enhetsnamn **Device** och välj **Ingen** i listrutan **Tilldelad profil** \> **Spara**.
     

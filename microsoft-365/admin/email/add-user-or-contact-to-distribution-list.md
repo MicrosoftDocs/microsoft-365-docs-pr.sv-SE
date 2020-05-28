@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Läs om hur du lägger till en Microsoft 365-användare eller kontaktar en distributionsgrupp. Du kan till exempel lägga till en medarbetare, partner eller en leverantör i din e-postdistributionsgrupp.
-ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 47b338a326c5c1152c8e14e13f01f9a36de1cb6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629077"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400178"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Lägga till en användare eller kontakt i en distributionsgrupp
 
@@ -37,7 +38,7 @@ Som administratör för en organisation kan du behöva lägga till en av dina an
 > [!NOTE]
 > Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
 
 2. På sidan **Grupper** väljer du namnet på den grupp som du vill lägga till en kontakt i.
 
@@ -53,7 +54,7 @@ Som administratör för en organisation kan du behöva lägga till en av dina an
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. På sidan **Grupper** markerar du den grupp som du vill lägga till en kontakt i.
     
@@ -71,7 +72,7 @@ Om du inte ännu har skapat [kontakten](../misc/contacts.md) gör du det först 
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
     
 2. På sidan **Grupper** markerar du den grupp som du vill lägga till en kontakt i.
     

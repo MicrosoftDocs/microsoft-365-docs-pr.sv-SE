@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: Läs mer om det nya administrationscentret för Microsoft 365.
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952645"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399488"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Om det nya administrationscentret för Microsoft 365
 
@@ -30,7 +31,7 @@ ms.locfileid: "43952645"
 
 Det nya administrationscentret för Microsoft 365 är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
 
-Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialiserade arbetsytor, som säkerhet eller enhetshantering, möjliggör mer detaljerad kontroll. Mer information om hur administrationsenheterna ska fungera tillsammans finns i Hur är [det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange senare](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) i den här artikeln.
+Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Specialiserade arbetsytor, som säkerhet eller enhetshantering, möjliggör mer detaljerad kontroll. Mer information om hur administrationsenheterna ska fungera tillsammans finns i Hur är [det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange senare](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) i den här artikeln.
 
 ::: moniker-end
 
@@ -38,7 +39,7 @@ Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 3
 
 Det nya administrationscentret för Microsoft 365, som för närvarande förhandsgranskas, är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
 
-Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)och kan nås genom att logga in på . Dessutom tillåter specialiserade arbetsytor, som Azure Active Directory och Exchange, mer detaljerad kontroll. Du kan komma åt de specialiserade arbetsytorna från navigeringsfönstret i administrationscentret för Microsoft 365.
+Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås genom att logga in på [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . Dessutom tillåter specialiserade arbetsytor, som Azure Active Directory och Exchange, mer detaljerad kontroll. Du kan komma åt de specialiserade arbetsytorna från navigeringsfönstret i administrationscentret för Microsoft 365.
 
 ::: moniker-end
 
@@ -118,13 +119,13 @@ Du kan också ge feedback från utanför admin center på vår UserVoice forum. 
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Hur är det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange?
 
-Microsoft 365-administrationscentret är den gemensamma startpunkten för alla team och roller som hanterar Microsoft 365. Erfarenheten, informationen och kontrollerna är skräddarsydda och anpassningsbara för varje administratör och roll. Dessutom tillåter specialiserade arbetsytor djup, detaljerad kontroll. Dessa specialarbetsytor inkluderar SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management och Azure Active Directory. Du hittar de specialiserade arbetsytorna från navigeringsfönstret i Microsoft [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)365 admin center på .
+Microsoft 365-administrationscentret är den gemensamma startpunkten för alla team och roller som hanterar Microsoft 365. Erfarenheten, informationen och kontrollerna är skräddarsydda och anpassningsbara för varje administratör och roll. Dessutom tillåter specialiserade arbetsytor djup, detaljerad kontroll. Dessa specialarbetsytor inkluderar SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management och Azure Active Directory. Du hittar de specialiserade arbetsytorna från navigeringsfönstret i Microsoft 365 admin center på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
   
 Det tar en stund att uppdatera alla administrationscenter för att få en sammanhängande upplevelse, men du kan läsa mer om de administrationscenter vi redan har börjat göra om:
   
 - [Komma igång med det nya Administrationscentret för SharePoint](https://go.microsoft.com/fwlink/?linkid=2024186)
     
-- [Hantera team under övergången till &amp; det nya Administrationscentret för Microsoft Teams Skype för företag](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [Hantera team under övergången till det nya Administrationscentret för Microsoft Teams &amp; Skype för företag](https://go.microsoft.com/fwlink/?linkid=2024308)
     
 - [Översikt över Hantering av Microsoft 365-enheter](https://go.microsoft.com/fwlink/?linkid=2006262)
     

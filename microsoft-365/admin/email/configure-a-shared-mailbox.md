@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: När du har skapat en delad postlåda bör du konfigurera vissa inställningar för användarna, till exempel vidarebefordran av e-post och autosvar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629053"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400154"
 ---
 # <a name="configure-a-shared-mailbox"></a>Konfigurera en delad postlåda
 
@@ -79,7 +80,7 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 ::: moniker-end
 
-2. Markera den delade postlåda som du vill redigera och välj sedan Redigera redigera **e-post.** \> **Edit**
+2. Markera den delade postlåda som du vill redigera och välj sedan Redigera redigera **Email forwarding** \> **e-post.**
     
 3. Ställ in växlingsknappen **på På**och ange en e-postadress att vidarebefordra meddelandena till. Det kan vara vilken giltig e-postadress som helst. Om du vill vidarebefordra till flera adresser måste du [skapa en distributionsgrupp](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) för adresserna och sedan ange namnet på gruppen i den här rutan.
     
@@ -105,7 +106,7 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 ::: moniker-end
 
-2. Markera den delade postlåda som du vill redigera och välj sedan **Redigera** **autosvar** \> .
+2. Markera den delade postlåda som du vill redigera och välj sedan **Redigera autosvar** \> **Edit**.
     
 3. Ändra växlingsknappen till **På** och välj om du vill skicka till personer inom eller utanför organisationen.
 
@@ -119,7 +120,7 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 Standardinställningen är att e-post skickad från den delade postlådan inte sparas i den gemensamma Skickat-mappen. Den sparas istället hos den person som skickade meddelandet, i mappen Skickat.
 
-Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du inställningarna för den delade postlådan i administrationscentret och väljer **Redigera skickade** **objekt** \> .
+Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du inställningarna för den delade postlådan i administrationscentret och väljer Redigera **skickade objekt** \> **Edit**.
 
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Välj de appar som en delad postlåda kan använda för att komma åt Microsoft-e-post
@@ -142,7 +143,7 @@ Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du ins
 
 ::: moniker-end
 
-2. Markera den delade postlåda som du vill redigera och välj sedan **Redigera** **e-postappar** \> .
+2. Markera den delade postlåda som du vill redigera och välj sedan **Redigera e-postappar** \> **Edit**.
 
 3. Ställ in växlingsknappen på **På** för alla appar som du vill att medlemmar ska kunna använda för att komma åt den delade postlådan. Ställ in växlingsknappen på **Av** för alla appar som du inte vill att de ska använda. 
 
@@ -171,7 +172,7 @@ Mer information om bevarande av rättstvister finns i [Skapa en bevarande av rä
 
 ::: moniker-end
 
-2. Markera den delade postlåda som du vill redigera och välj sedan **Spärr** \> för juridiska skäl **Redigera**.
+2. Markera den delade postlåda som du vill redigera och välj sedan **Spärr för juridiska skäl** \> **Redigera**.
 
 3. Ställ in växlingsknappen **på På**. 
 

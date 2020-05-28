@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Lär dig att komma åt eNom och skapa DNS via sidan Google Domains.
-ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629137"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400262"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Skapa DNS-poster när din domän hanteras av Google (eNom)
 
@@ -89,7 +90,7 @@ Du kan komma åt eNom och skapa DNS via sidan Google **Domäner.** Följ bara an
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > Detta är ett exempel. Använd ditt specifika **mål- eller poäng till-adress-värde** här, från bordet. 
+    > Detta är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. 
   
     [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)
   

@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139715"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399734"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av tillägg i Administrationscenter för Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +68,7 @@ Beroende på målgruppens storlek kanske du vill lägga till eller ta bort utrul
 Innan du börjar läser du [Ta reda på om centraliserad distribution av tillägg fungerar för din organisation](centralized-deployment-of-add-ins.md).
 
   
-1. Gå till sidan **Inställningar** \> **i administrationscentret.**
+1. Gå till sidan Inställningar **Settings** \> **i administrationscentret.**
     
 2. Välj **Distribuera tillägg** högst upp på sidan. På översiktssidan väljer du **Nästa**.
     
@@ -147,7 +148,7 @@ Uppdateringar för tillägg sker på följande sätt:
 
 Efter distributionen kan administratörer också ändra användaråtkomsten till tillägg.
 
-1. Gå till sidan **Inställningarstjänster** > **& tillägg i administrationscentret.**
+1. Gå till sidan **Settings**  >  **Inställningarstjänster & tillägg i administrationscentret.**
 
 2. Välj det distribuerade tillägget.
 
@@ -261,7 +262,7 @@ Om det distribuerade tillägget inte stöder tilläggskommandon eller om du vill
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>I Word 2016, Excel 2016 eller PowerPoint 2016
 
-1. Välj ** \> Infoga mina tillägg**. 
+1. Välj **Infoga \> mina tillägg**. 
     
 2. Välj fliken **Hanterad administratör** i fönstret Office-tillägg. 
     
@@ -277,7 +278,7 @@ Om det distribuerade tillägget inte stöder tilläggskommandon eller om du vill
 
 Du kan också ta bort ett tillägg som har distribuerats.
 
-1. Gå till sidan **Inställningarstjänster** > **& tillägg i administrationscentret.**
+1. Gå till sidan **Settings**  >  **Inställningarstjänster & tillägg i administrationscentret.**
 
 2. Välj det distribuerade tillägget.
 

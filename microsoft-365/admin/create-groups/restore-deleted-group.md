@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Lär dig hur du återställer en borttagen Microsoft 365-grupp.
-ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 24e5159dd85ab6ede324b3981e3e592f1c2ead70
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327634"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400695"
 ---
 # <a name="restore-a-deleted-group"></a>Återställa en borttagen grupp
 

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Windows-baserad DNS för Microsoft.
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048849"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400250"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Skapa DNS-poster för Microsoft med Windows-baserad DNS
 
@@ -38,21 +39,21 @@ För att komma igång måste du [hitta dina DNS-poster i Windows-baserad DNS](#f
 Problem med e-postflödet eller andra problem när du har lagt till DNS-poster, se [Felsöka problem när du har ändrat ditt domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Hitta dina DNS-poster i Windows-baserad DNS
-<a name="BKMK_find_your_dns_1"> </a> Gå till sidan som har DNS-posterna för din domän. Om du arbetar i Windows Server 2008 går du till > **Startkörning**. **Start** Om du arbetar i Windows Server 2012 trycker du på Windows-tangenten och **r**. Skriv **dnsmgmnt.msc**och välj sedan **OK**. Expandera ** \<DNS-servernamnet Framåtslagszoner i DNS-hanteraren\> \>   **. Välj din domän. Nu är du redo att skapa DNS-poster.
+<a name="BKMK_find_your_dns_1"> </a> Gå till sidan som har DNS-posterna för din domän. Om du arbetar i Windows Server 2008 går du till **Start**  >  **Startkörning**. Om du arbetar i Windows Server 2012 trycker du på Windows-tangenten och **r**. Skriv **dnsmgmnt.msc**och välj sedan **OK**. Expandera ** \<DNS server name\> \> Zoner för sökning framåt i  **DNS-hanteraren . Välj din domän. Nu är du redo att skapa DNS-poster.
    
 ## <a name="add-mx-record"></a>Lägga till MX-post
 <a name="BKMK_add_MX"> </a>
 
 Lägg till en MX-post så att e-post för din domän kommer till Microsoft.
-- MX-posten du lägger till innehåller ett värde (värdet **Pekar på adress**) som ser ut ungefär så här: \<MX token\>.mail.protection.outlook.com, där \<MX token\> är ett värde som MSxxxxxxx. 
+- MX-posten som du lägger till innehåller ett värde **(värdet Pekar på adress)** som ser ut ungefär så här: \<MX token\> .mail.protection.outlook.com, där \<MX token\> är ett värde som MSxxxxxxx. 
 - Kopiera värdet som anges under Pekar på adress från raden MX i avsnittet Exchange Online på sidan Lägg till DNS-poster i Microsoft. Du ska använda det här värdet i den post som du skapar i den här uppgiften. 
-- På sidan DNS-hanteraren för domänen går du till **Action** > **Mail Exchanger (MX)**. Information om hur du hittar den här sidan för domänen finns [i Hitta dina DNS-poster i Windows-baserad DNS](#find-your-dns-records-in-windows-based-dns).  
+- På sidan DNS-hanteraren för domänen går du till **Action**  >  **Mail Exchanger (MX)**. Information om hur du hittar den här sidan för domänen finns [i Hitta dina DNS-poster i Windows-baserad DNS](#find-your-dns-records-in-windows-based-dns).  
 - Kontrollera att fälten är inställda på exakt följande värden i dialogrutan **Ny resurspost:** 
     - Värdnamn:  
     - @Address: Klistra in värdet Pekar på-adress som du just kopierade från Microsoft här.  
     - Pref: 
 - Välj **Spara ändringar**.
-- Ta bort eventuella gamla MX-poster. Om du har några gamla MX-poster för den här domänen som cirkulerar e-post någon annanstans markerar du kryssrutan bredvid varje gammal post och väljer sedan **Ta bort** > **OK**. 
+- Ta bort eventuella gamla MX-poster. Om du har några gamla MX-poster för den här domänen som cirkulerar e-post någon annanstans markerar du kryssrutan bredvid varje gammal post och väljer sedan **Ta bort**  >  **OK**. 
    
 ## <a name="add-cname-records"></a>Lägga till CNAME-poster
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ Lägg till de CNAME-poster som krävs för Microsoft. Om ytterligare CNAME-poste
 > [!IMPORTANT]
 > Om du har MDM (Mobile Device Management) för Microsoft måste du skapa ytterligare två CNAME-poster. Följ proceduren som du använde för de övriga fyra CNAME-posterna, men ange värden från följande tabell. (Om du inte har MDM kan du hoppa över det här steget.) 
 
-- På sidan DNS-hanteraren för domänen går du till **Åtgärd** > **CNAME (CNAME)**.
+- På sidan DNS-hanteraren för domänen går du till **Åtgärd**  >  **CNAME (CNAME)**.
 - Kontrollera att fälten är inställda på exakt följande värden i dialogrutan **Ny resurspost:**  
     - Värdnamn: automatisk upptäckt
     - Typ: 
@@ -115,7 +116,7 @@ Lägga till MDM Enterpriseenrollment CNAME-posten.
 Lägg till SPF TXT-posten för din domän för att förhindra skräp i e-posten.
   
 - Du kanske redan har andra strängar i TXT-värdet för den här posten (t.ex. strängar för reklamutskick) och det är ok. Låt dessa strängar vara kvar och lägg till den här. Sätt dubbla citattecken runt varje sträng för att separera dem. 
-- På sidan DNS-hanteraren för din domän går du till \> **Åtgärdstext (TXT)**. **Action** 
+- På sidan DNS-hanteraren för **Action** din domän går du till \> **Åtgärdstext (TXT)**. 
 -  Kontrollera att fälten är inställda på exakt följande värden i dialogrutan **Ny resurspost.** 
  > [!IMPORTANT]
 > I vissa versioner av Windows DNS Manager kan domänen ha konfigurerats så att hemnamnet som standard är standard för den överordnade domänen när du skapar en txt-post. När du lägger till en TXT-post i det här fallet ska du ange värdnamnet till tomt (inget värde) i stället för att ange det till @ eller domännamnet. 
@@ -173,7 +174,7 @@ Innan du lägger till DNS-posterna för att konfigurera Dina Microsoft-tjänster
 6. Kopiera värdet för Mål eller pekar på-adress i tabellen. Du behöver det i nästa steg. Vi rekommenderar att du kopierar och klistrar in det här värdet så att alla avstånd förblir korrekta.
 
 Lägga till en TXT-post. 
--  På sidan DNS-hanteraren för din domän går du till \> **Åtgärdstext (TXT)**. **Action** 
+-  På sidan DNS-hanteraren för **Action** din domän går du till \> **Åtgärdstext (TXT)**. 
 -   Välj **Redigera**i dialogrutan **Ny resurspost** .  
 -  Kontrollera att fälten är inställda på exakt följande värden i området **Anpassade värdnamn** i dialogrutan **Ny resurspost.** 
 
@@ -183,14 +184,14 @@ Lägga till en TXT-post.
 - Värdnamn: @
 - Typ: TXT
 - Adress: Klistra in värdet Mål eller pekar på-adress som du just kopierade från Microsoft här.  
-- Välj **OK** > **Klar**.
+- Välj **OK**  >  **Klar**.
 
 Verifiera din domän i Microsoft.  
 > [!IMPORTANT]
 > Vänta ungefär 15 minuter innan du gör detta, så att posten du just skapade kan uppdateras över Internet.       
 
 - Gå tillbaka till Microsoft och följ stegen nedan för att begära en verifieringskontroll. Kontrollen används för TXT-posten du lade till i föregående steg. När den hittar rätt TXT-post är domänen verifierad.  
-1. Gå till sidan **Installationsdomäner** \> i <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">administrationscentret.</a>
+1. Gå till sidan **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Installationsdomäner</a> i administrationscentret.
 2. Välj **Starta installation**på **Action** sidan Domäner på sidan **Domäner** för den domän som du verifierar . 
 3. På sidan **Bekräfta att du äger domänen** väljer du **klar, verifierar nu**och väljer sedan Slutför i bekräftelsedialogrutan . **Finish** 
    

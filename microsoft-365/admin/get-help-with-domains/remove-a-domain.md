@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140411"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399902"
 ---
 # <a name="remove-a-domain"></a>Ta bort en domän
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -105,7 +106,7 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.
 
-2. Gå till **Aktiva användare** **för användare** \> och välj ditt konto i listan.
+2. Gå till Aktiva användare **för användare** och välj ditt konto \> **Active Users**i listan.
 
 3. Välj **Hantera användarnamn**på fliken **Konto** och välj sedan en annan domän.
   
@@ -119,7 +120,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till **Aktiva användare** **för användare** \> och välj ditt namn i listan.
+1. Gå till Aktiva användare **för användare** och välj ditt namn \> **Active Users**i listan.
 
 2. I avsnittet **Användarnamn/E-post** väljer du **Redigera**och väljer sedan en annan domän.
 
@@ -135,7 +136,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till **Aktiva användare** **för användare** \> och välj ditt namn i listan.
+1. Gå till Aktiva användare **för användare** och välj ditt namn \> **Active Users**i listan.
 
 2. I avsnittet **Användarnamn/E-post** väljer du **Redigera**och väljer sedan en annan domän.
 
@@ -153,7 +154,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Gruppergrupper** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">i</a> administrationscentret.
+1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
   
 2. Markera gruppnamnet och välj sedan **Redigera**på fliken **Allmänt** under **E-postadress.**
 
@@ -165,7 +166,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** > **i** <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a>
+1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> > **Groups**
 
 2. Markera gruppnamnet och välj sedan **Redigera bredvid** **Namn**.
 
@@ -177,7 +178,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** > **i** <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a>
+1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a> > **Groups**
 
 2. Markera gruppnamnet och välj sedan **Redigera bredvid** **Namn**.
 
@@ -197,13 +198,13 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Installationsdomäner** \> i <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">administrationscentret.</a>
+1. Gå till sidan **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Installationsdomäner</a> i administrationscentret.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Installationsdomäner** \> i <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">administrationscentret.</a>
+1. Gå till sidan **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Installationsdomäner</a> i administrationscentret.
 
 ::: moniker-end
   
@@ -219,7 +220,7 @@ Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om de
   
 Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>Vill du ha mer hjälp?
+## <a name="still-need-help"></a>Behöver du fortfarande hjälp?
 
 ::: moniker range="o365-worldwide"
 

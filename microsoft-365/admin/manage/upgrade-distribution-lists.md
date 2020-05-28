@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Lär dig hur du uppgraderar en eller flera distributionslistor till Microsoft 365-grupper i Outlook och hur du använder PowerShell för att uppgradera flera distributionslistor samtidigt.
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065675"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399500"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera distributionslistor till Microsoft 365-grupper i Outlook
 
@@ -38,7 +39,7 @@ Du måste vara global administratör eller Exchange-administratör för att kunn
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
 
-2. Gå till Mottagare **grupper**i **administrationscentret** \> för Exchange .<br/>Ett meddelande visas om att du har distributionslistor (kallas även **distributionsgrupper)** som kan uppgraderas till Microsoft 365-grupper.<br/> ![Välj knappen Kom igång](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Gå till Mottagare grupper i **administrationscentret för** Exchange \> **Groups**.<br/>Ett meddelande visas om att du har distributionslistor (kallas även **distributionsgrupper)** som kan uppgraderas till Microsoft 365-grupper.<br/> ![Välj knappen Kom igång](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Välj en eller flera distributionslistor (kallas även för **distributionsgrupp** ) från **gruppsidan**.<br/>![Välj en distributionsgrupp](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-Om du till exempel vill uppgradera fem DLs `dl1@contoso.com` `dl2@contoso.com`med `dl3@contoso.com` `dl4@contoso.com` SMTP-adress och , och `dl5@contoso.com`kör följande kommando:
+Om du till exempel vill uppgradera fem DLs med SMTP-adress `dl1@contoso.com` och , och kör följande `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` kommando:
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Om du till exempel vill uppgradera fem DLs `dl1@contoso.com` `dl2@contoso.com`me
 Det finns två sätt att uppgradera alla berättigade DLs.
 
 > [!NOTE]
-> Cmdlet upgrade-DistributionGroup tar inte emot data från pipelinen, av den anledningen krävs{}det att du använder operatorn "foreach-object" för att köras.
+> Cmdlet upgrade-DistributionGroup tar inte emot data från pipelinen, av den anledningen krävs det att du använder operatorn "foreach-object" {} för att köras.
 
 1. Hämta de kvalificerade DLs i klienten och uppgradera dem med hjälp av uppgraderingskommandot:
 

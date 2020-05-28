@@ -21,24 +21,25 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Lär dig mer om hur du konfigurerar enhetsprinciper för Windows 10 som gäller för alla användare i organisationen och ser till att de ansluter på ett säkert sätt.
-ms.openlocfilehash: 1d25e51b1f61f67ca2ebe6180d6c280c23facaa5
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Läs mer om hur du konfigurerar enhetsprinciper för Windows 10 som gäller för alla användare i organisationen och säkerställer att de ansluter på ett säkert sätt.
+ms.openlocfilehash: 811e948b33e8d305c88ff3e502c413356178696a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560649"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401023"
 ---
 # <a name="configure-windows-10-devices"></a>Konfigurera Windows 10-enheter
 
-Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på en Office-app på sin Windows 10-enhet med sitt arbets- eller skolkonto används de inställningar du konfigurerar automatiskt för att se till att användaren ansluter på ett säkert sätt.
+Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på en Office-app på sin Windows 10-enhet med sitt arbets- eller skolkonto tillämpas de inställningar du konfigurerar automatiskt för att se till att användaren ansluter på ett säkert sätt.
   
-Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. När du har konfigurerat kan du skapa fler principer och rikta dem mot specifika användargrupper.
+Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. Efter installationen kan du skapa fler principer och rikta dem till specifika grupper av användare.
   
 Mer information om hur du lägger till en princip för att hantera konfigurationer för Windows 10-enheter finns i [Ange enhetskonfigurationer för Windows 10-datorer](protection-settings-for-windows-10-pcs.md).
   

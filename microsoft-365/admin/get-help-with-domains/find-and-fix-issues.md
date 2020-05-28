@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Lär dig att spåra eventuella problem som du stöter på när du konfigurerar en anpassad domän genom att se till att DNS-posterna är korrekt konfigurerade.
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053733"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399950"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053733"
 Det kan vara svårt att konfigurera domänen så att den fungerar med Microsoft 365. DNS-systemet är omständigt att arbeta med, och DNS-konfigurationen för din domän påverkar viktiga företagsfunktioner som e-post!
 
 > [!NOTE]
-> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå till > **installationsdomäner** och visa meddelandena i kolumnen **Status.** **Setup** Om du ser ett problem väljer du Fler åtgärder (tre punkter) och väljer sedan **Kontrollera hälsotillstånd**. Fönstret som öppnas beskriver eventuella problem med domänen.
+> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå **Setup**till  >  **installationsdomäner** och visa meddelandena i kolumnen **Status.** Om du ser ett problem väljer du Fler åtgärder (tre punkter) och väljer sedan **Kontrollera hälsotillstånd**. Fönstret som öppnas beskriver eventuella problem med domänen.
   
 ## <a name="whats-going-on"></a>Vad är det som händer?
 

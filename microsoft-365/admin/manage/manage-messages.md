@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Lär dig att hantera meddelanden i Message Center för att hjälpa till med ändringshantering.
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628154"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399722"
 ---
 # <a name="manage-messages-in-message-center"></a>Hantera meddelanden i Meddelandecenter
 
@@ -32,7 +33,7 @@ Inlägg i Meddelandecenter är viktiga meddelanden om nya och ändrade funktione
   
 ## <a name="read-a-message"></a>Läsa ett meddelande
 
-Om du vill gå till meddelandecentret går du till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och väljer > **Hälsomeddelandecenter**. **Health** 
+Om du vill gå till meddelandecentret går du till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och väljer **Health**  >  **Hälsomeddelandecenter**. 
 
 Välj en meddelandetitel för att öppna den i läsfönstret. Varje meddelande innehåller en sammanfattning av ändringen, en redogörelse för hur ändringen kan påverka dig, information om hur du kan förbereda din organisation för ändringen och (i de flesta fall) en ytterligare informationslänk där du kan läsa mer. Den ytterligare informationen fortsätter att vara tillgänglig, även efter att ett meddelande har upphört att gälla.
 

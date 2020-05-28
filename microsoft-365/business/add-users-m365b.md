@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Lär dig stegen för att enkelt lägga till nya användare, skydda deras enheter och tilldela roller i Microsoft 365 Business Premium.
-ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d2efe62ed1c48df5c10a765b8d3499934e6aebd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627483"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401083"
 ---
 # <a name="add-more-users"></a>Lägga till fler användare
 
@@ -46,7 +47,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 Så här lägger du till en användare:
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-2. I det vänstra navigeringsfönstret väljer du **Aktiva användare** **.** \>
+2. I det vänstra navigeringsfönstret väljer du **Aktiva** \> **användare**.
 3. På sidan **Aktiva användare** väljer du Lägg till **en användare**.
 4. Skriv den information som krävs på den **nya användarpanelen.** 
   

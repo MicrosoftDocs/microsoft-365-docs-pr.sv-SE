@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Läs om hur du verifierar din e-post och domänägarskap för att ta över en ohanterat klientorganisation i Microsoft 365
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627950"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399452"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Utför ett internt administrationsövertagande
 
@@ -40,9 +41,9 @@ Om du är administratör och vill ta över en ohanterlig klient som skapats av e
 > [!NOTE]
 > Om självbetjäning är aktiverat i din klientorganisation kan användare prenumerera på kostnadsfria tjänster, till exempel Power BI, på egen hand. De här stegen förutsätter att en självbetjäningsanvändarprenumeration har skapat den ohanterat klient som du vill ta över som administratör. I det första steget skapar du en användarkontext i den ohanterat klienten med Power BI för att illustrera sökvägen till administration.
 
-1. Om du vill registrera dig för Power BI går du till [Power BI-webbplatsen](https://powerbi.com) och väljer **Startfri** > **startfri utvärderingsversion** (i rutan Dela med Power BI Pro). 
+1. Om du vill registrera dig för Power BI går du till [Power BI-webbplatsen](https://powerbi.com) och väljer **Startfri**  >  **startfri utvärderingsversion** (i rutan Dela med Power BI Pro). 
 
-2. Registrera dig med ett användarkonto som använder domännamnet `powerbiadmin@contoso.com`för din organisation (till exempel ). Om ditt konto redan används loggar du in med ditt nuvarande lösenord.
+2. Registrera dig med ett användarkonto som använder domännamnet för din organisation (till exempel `powerbiadmin@contoso.com` ). Om ditt konto redan används loggar du in med ditt nuvarande lösenord.
 
 3. Kontrollera din e-post för **verifieringskoden** och ange koden för att validera din e-postadress.
     

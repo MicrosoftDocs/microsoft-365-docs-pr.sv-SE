@@ -19,27 +19,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Lär dig hur du skapar, redigerar eller tar bort en apphanteringsprincip och skyddar arbetsfiler på Android- eller iOS-enheter.
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627443"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401063"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Ange inställningar för appskydd för Android- eller iOS-enheter
 
-![Banner som https://aka.ms/aboutM365previewpekar på .](../media/m365admincenterchanging.png)
+![Banner som pekar på https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Skapa en princip för programhantering
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Välj Enhetsprinciper **Policies** \> **Lägg till**i den vänstra **navigeringsskeppet** \> .
+2. Välj Enhetsprinciper Lägg till i den vänstra **navigeringsskeppet** \> **Policies** \> **Add**.
   
 3. I fönstret **Lägg till princip** anger du ett unikt namn för principen. 
     
@@ -51,7 +52,7 @@ ms.locfileid: "43627443"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. **Vem får de här inställningarna?** Om du inte vill använda standardgruppen **Alla användare** väljer du **Ändra**, välj \> de säkerhetsgrupper som får dessa inställningar **Välj**.
+6. **Vem får de här inställningarna?** Om du inte vill använda standardgruppen **Alla användare** väljer du **Ändra**, välj de säkerhetsgrupper som får dessa inställningar \> **Välj**.
     
 7. Välj **Klar** för att spara principen och tilldela den till enheter. 
     

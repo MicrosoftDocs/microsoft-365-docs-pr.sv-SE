@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Läs mer om principer för förfallodatum för Microsoft 365-grupper.
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064827"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400731"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Principer för förfallodatum för Microsoft 365-grupp
 
@@ -57,7 +58,7 @@ Det är viktigt att veta att förfallodatum är inaktiverat som standard. Admini
 
 ## <a name="how-to-set-the-expiration-policy"></a>Så här ställer du in principen om förfallodatum
 
-Som nämnts ovan är förfallodatumet inaktiverat som standard. En administratör måste aktivera förfalloprincipen och ange att egenskaperna för den ska börja gälla. Om du vill aktivera den går du till **Azure Active Directory (AAD)** > **Grupper** > **förfallodatum**. Här kan du ange standardgruppens livstid och ange hur långt i förväg du vill att den första och andra förfallodatum meddelanden att gå till gruppens ägare.
+Som nämnts ovan är förfallodatumet inaktiverat som standard. En administratör måste aktivera förfalloprincipen och ange att egenskaperna för den ska börja gälla. Om du vill aktivera den går du till **Azure Active Directory (AAD)**  >  **Grupper**  >  **förfallodatum**. Här kan du ange standardgruppens livstid och ange hur långt i förväg du vill att den första och andra förfallodatum meddelanden att gå till gruppens ägare.
 
 Gruppens livstid anges i dagar och kan ställas in på 180, 365 eller till ett anpassat värde som du anger. Det anpassade värdet måste vara minst 30 dagar.
 

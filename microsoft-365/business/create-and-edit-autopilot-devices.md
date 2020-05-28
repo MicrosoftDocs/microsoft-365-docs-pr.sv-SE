@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Lär dig hur du laddar upp enheter med AutoPilot i Microsoft 365 Business Premium. Du kan tilldela en profil till en enhet eller en grupp enheter.
-ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165870"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401003"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Skapa och redigera AutoPilot-enheter
 
@@ -44,13 +45,13 @@ Produkterna måste uppfylla dessa krav:
     
 - Nya enheter som inte har gått via Windows-direktupplevelse
 
-1. I administrationscentret för Microsoft 365 väljer du **Autopilot för** **enheter** \> .
+1. I administrationscentret för Microsoft 365 väljer du **Devices** \> **Autopilot för**enheter .
   
-2. På sidan **Autopilot** väljer du \> fliken **Enheter** **Lägg till enheter**.
+2. På sidan **Autopilot** väljer du fliken **Enheter** \> **Lägg till enheter**.
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. På panelen **Lägg** till enheter bläddrar du till en [CSV-fil för enhetslistan](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) som du har förberett \> **Spara** \> **stäng**.
+3. På panelen Lägg till **enheter** bläddrar du till en [CSV-fil för enhetslistan](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) som du har förberett \> **Spara** \> **stäng**.
     
     Du kan hämta den här informationen från maskinvaruleverantören eller använda [Get-WindowsAutoPilotInfo PowerShell-skriptet](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) för att generera en CSV-fil. 
     

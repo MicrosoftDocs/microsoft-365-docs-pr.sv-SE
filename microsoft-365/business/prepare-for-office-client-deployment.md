@@ -16,17 +16,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Lär dig hur du installerar 32-bitars Office-appar automatiskt på Windows 10-datorer och håller dem uppdaterade.
-ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f3a80be9729a3818607c0f42e2cc7ece66a07ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401331"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Förbereda för Office-klientdistribution av Microsoft 365 för företag
 
@@ -60,14 +61,14 @@ I följande tabell visas vilken åtgärd slutanvändarna/administratörerna kan 
   
 |**Status vid start av Office-installationen**|**Åtgärder som ska vidtas innan Microsoft 365 för företag Office installeras**|**Slutstatus**|
 |:-----|:-----|:-----|
-|Ingen Office-programsvit installerad  <br/> |Ingen  <br/> |Office 2016 32-bitars installeras med Klicka-och-kör  <br/> |
-|Befintlig 32-bitars Klicka-och-kör-version av Office (2016 eller tidigare) och inga fristående program  <br/> |Ingen  <br/> |Uppgraderad till den senaste 32-bitars Klicka-och-kör-versionen av Office 2016, enligt behov **\*** <br/> |
-|Befintlig Klicka-och-kör 32-bitarsversion av Office och Klicka-och-kör 32-bitars eller 64-bitars fristående Office-appar (till exempel Visio, Project)  <br/> |Ingen  <br/> |Fristående appar påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> |
-|Befintlig 32-bitars Klicka-och-kör-version av Office och eventuella 32-bitars eller 64-bitars (med undantag av 2016) fristående MSI Office-program  <br/> |Ingen  <br/> |Fristående appar påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> ||||
+|Ingen Office-programsvit installerad  <br/> |Inga  <br/> |Office 2016 32-bitars installeras med Klicka-och-kör  <br/> |
+|Befintlig 32-bitars Klicka-och-kör-version av Office (2016 eller tidigare) och inga fristående program  <br/> |Inga  <br/> |Uppgraderad till den senaste 32-bitars Klicka-och-kör-versionen av Office 2016, enligt behov **\*** <br/> |
+|Befintlig Klicka-och-kör 32-bitarsversion av Office och Klicka-och-kör 32-bitars eller 64-bitars fristående Office-appar (till exempel Visio, Project)  <br/> |Inga  <br/> |Fristående appar påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> |
+|Befintlig 32-bitars Klicka-och-kör-version av Office och eventuella 32-bitars eller 64-bitars (med undantag av 2016) fristående MSI Office-program  <br/> |Inga  <br/> |Fristående appar påverkas inte. Programsviten uppgraderas till 32-bitars Klicka-och-kör-versioner av Office 2016  <br/> ||||
 |Alla befintliga 64-bitars Klicka-och-kör-versioner av Office  <br/> |Avinstallera 64-bitars Office-programmen om det är OK att ersätta dem med 32-bitars Office-program  <br/> |Om 64-bitarsprogram tas bort installeras 32-bitars Klicka-och-kör-versionen av Office 2016  <br/> |
 |En befintlig MSI-installation av Office 2016 med eller utan fristående program  <br/> |Avinstallera MSI-versionen av Office 2016.  <br/> |32-bitars Klicka-och-kör-version av Office 2016 installeras. Inga ändringar av fristående program  <br/> |
 |En befintlig MSI-installation av Office 2013 (eller tidigare) och/eller fristående Office-program  <br/> |Ingen  <br/> |32-bitars Klicka-och-kör-versionen av Office 2016 kan installeras sida vid sida med befintlig MSI-installation av Office (och fristående program)  <br/> |
 ||||
    
- **(\*) Anmärkning:** Uppgraderar inte till Click-to-Run 32-bitarsversion av Office 2016 på grund av ett känt fel. En lösning pågår. 
+ **( \* ) Obs:** Uppgraderar inte till Click-to-Run 32-bitars version av Office 2016 på grund av ett känt fel. En lösning pågår. 
   

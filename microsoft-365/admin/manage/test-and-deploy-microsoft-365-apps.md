@@ -10,15 +10,16 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hitta, testa och distribuera Microsoft- och Microsoft-partnerappar för användare och grupper i organisationen från portalen för integrerade appar i Microsoft 365-administrationscentret.
-ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 787c1670cff865e1f207a1554f3fa6a0b1a28f1d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942164"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399524"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testa och distribuera Microsoft 365-appar i microsoft 365-administrationscentret
 

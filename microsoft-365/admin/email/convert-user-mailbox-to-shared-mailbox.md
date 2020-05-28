@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Lär dig att konvertera en privat postlåda till en delad postlåda som kan nås av flera användare. '
-ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162704"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400118"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
@@ -44,7 +45,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
  
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
 
-2. Välj **Mottagare Postlådor** \> **Mailboxes**.
+2. Välj **Mottagare** \> **Postlådor**.
 
 3. Välj användarpostlådan. Under **Konvertera till delad postlåda**väljer du **Konvertera**.
 
@@ -117,7 +118,7 @@ Anta att du har tagit bort ett användarkonto och du nu vill konvertera använda
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
    
-2. Välj **Delade mottagare** \> **.**
+2. Välj **Delade mottagare** \> **Shared**.
 
 3. Markera den delade postlådan. Under **Konvertera till vanlig postlåda**väljer du **Konvertera**.
 
