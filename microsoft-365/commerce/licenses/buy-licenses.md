@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Läs om hur du lägger till och tar bort licenser för din Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c4b2b30c9d444aad11ea4cd2faf8b2546e33c39c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141239"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404028"
 ---
 # <a name="manage-subscription-licenses"></a>Hantera prenumerationslicenser
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Administrationscentret förändras. Om din upplevelse inte stämmer överens med informationen som presenteras här läser du [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ Du kan inte ta bort en licens från en prenumeration om den är tilldelad till e
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Leta reda på den prenumeration som du vill lägga till eller ta bort licenser till på sidan **Dina produkter** och välj sedan **Lägg till/ta bort licenser**.
 

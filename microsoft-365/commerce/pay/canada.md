@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Läs om var du skickar betalningen för din prenumeration.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c1c8186b335f370f8d8969d4cd0ae7e4c003980d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 16ce085edcb573874ddb10b127723ab34efd6546
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42813043"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404376"
 ---
 # <a name="payment-information-for-canada"></a>Betalningsinformation för Kanada
 
@@ -27,13 +28,17 @@ Betala endast i CAD och ange fakturanummer på din betalningsöverföring.
 
 ## <a name="check"></a>Check
 
-**Betalningsmottagare:** Microsoft  
-**Postadress:**   
+**Betalningsmottagare:** Microsoft
+
+**Postadress:**  
 Bank of America, Lockbox 910430, BOX 4090, STN A, Toronto PÅ M5W 0E9, Kanada
 
 ## <a name="electronic-funds-transfer"></a>Elektronisk betalningsöverföring
 
-**Bank:** Bank of America  
+**Bank:** Bank of America, Toronto  
 **SWIFT-kod:** BOFACATT (BOFACATT)  
 **Kontonummer:** 45571239  
 **Kontonamn:** Microsoft  
+**Bank-ID:** 241  
+**Gren:** 56792  
+**Routning/transitering #:** 024156792  

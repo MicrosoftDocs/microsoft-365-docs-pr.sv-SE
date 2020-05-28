@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Säkerhetskopiera Outlook-, OneDrive-, Yammer- och SharePoint-innehåll innan du ändrar Microsoft 365-abonnemang.
-ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708101"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403624"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Säkerhetskopiera data innan du byter Microsoft 365 för affärsplaner
 
@@ -61,7 +62,7 @@ Som standard har webbadressen till gruppwebbplatser följande format:
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-där _ \<orgDomain\> _ är organisationens URL.
+där _\<orgDomain\>_ är organisationens URL.
   
 Om domänen för organisationen till exempel är contoso.onmicrosoft.com så skulle direktadressen till gruppwebbplatsen vara https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
   

@@ -24,12 +24,13 @@ description: Läs om vilka betalningsalternativ som är tillgängliga för att b
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232881"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407962"
 ---
 # <a name="pay-for-your-subscription"></a>Betala för prenumerationen
 
@@ -47,7 +48,7 @@ När du ställer in prenumerationen kan du välja att betala med kreditkorts- el
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Betala med kreditkort eller bankkonto
 
-När du betalar med kreditkort eller bankkonto debiteras du automatiskt för prenumerationen dagen efter fakturadatumet, tills prenumerationen löper ut. Du kan [uppdatera kreditkorts- eller bankkortsinformationen](add-update-or-remove-credit-card-or-bank-account.md) när du behöver det. Du kan välja att [Få en kopia av ditt faktureringsutdrag via e-post](#receive-a-copy-of-your-billing-statement-in-email).
+När du betalar med kreditkort eller bankkonto debiteras du automatiskt för prenumerationen dagen efter fakturadatumet, tills prenumerationen löper ut. Du kan [hantera betalningsmetoder](manage-payment-methods.md) när du behöver. Du kan välja att [Få en kopia av ditt faktureringsutdrag via e-post](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Vad händer om mitt kreditkort avslås och min betalning blir försenad?
 
@@ -62,12 +63,12 @@ Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande
 
 2. Hitta prenumerationen med det utestående saldot. Välj **Billing** **Kvitta saldo bredvid**prenumeration bredvid **prenumeration.**
 
-3. Om du är kreditkortsägare kan du ändra kortets utgångsdatum, välja ett annat kort eller [lägga till ett nytt kort](add-update-or-remove-credit-card-or-bank-account.md).
+3. Om du är kreditkortsägare kan du ändra kortets utgångsdatum, välja ett annat kort eller [lägga till ett nytt kort](manage-payment-methods.md).
 
     > [!NOTE]
     > När du använder funktionen **Kvitta saldo** debiteras du för hela det utestående saldot på ditt konto, vilket kan vara mer än det förfallna beloppet som visas någon annanstans.
 
-4. Om du inte är kreditkortsägare kan du välja ett annat kreditkort eller [lägga till ett nytt kort.](add-update-or-remove-credit-card-or-bank-account.md)
+4. Om du inte är kreditkortsägare kan du välja ett annat kreditkort eller [lägga till ett nytt kort.](manage-payment-methods.md)
 
 5. När du har uppdaterat kreditkortsinformationen eller ändrat kreditkortet som används för att betala för prenumerationen väljer du **Spara**.
 
@@ -79,12 +80,12 @@ Om du betalar med kreditkort och kreditkortet nekas får du ett e-postmeddelande
 
 2. Välj den prenumeration som du vill ändra. I avsnittet **Min faktura** väljer du **Betala nu**.
 
-3. Om du är kreditkortsägare kan du ändra kortets utgångsdatum, välja ett annat kort eller [lägga till ett nytt kort](add-update-or-remove-credit-card-or-bank-account.md).
+3. Om du är kreditkortsägare kan du ändra kortets utgångsdatum, välja ett annat kort eller [lägga till ett nytt kort](manage-payment-methods.md).
 
     > [!NOTE]
     > När du använder funktionen **Betala nu** debiteras du för hela det utestående saldot på ditt konto, vilket kan vara mer än det belopp att betala som visas någon annanstans.
 
-4. Om du inte är kreditkortsägare kan du välja ett annat kreditkort eller [lägga till ett nytt kort.](add-update-or-remove-credit-card-or-bank-account.md)
+4. Om du inte är kreditkortsägare kan du välja ett annat kreditkort eller [lägga till ett nytt kort.](manage-payment-methods.md)
 
 5. När du har uppdaterat kreditkortsinformationen eller ändrat kreditkortet som används för att betala för prenumerationen väljer du **Skicka**. Då visas ett bekräftelsemeddelande där det står att betalningsmetoden har uppdaterats och alla utestående avgifter har betalats. "Tack!"
 
@@ -310,6 +311,6 @@ Om du behöver byta till ett annat betalningssätt, till exempel om du justerar 
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](add-update-or-remove-credit-card-or-bank-account.md)
+[Hantera betalningsmetoder](manage-payment-methods.md)
 
-[Förstå din faktura eller faktura](understand-your-invoice2.md)
+[Förstå din faktura](understand-your-invoice2.md)

@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Upptäck hur du kan uppgradera dina Windows-enheter till Windows 10 Pro för att använda mer avancerade säkerhets- och företagsnätverksfunktioner.
-ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632060"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403539"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Uppgradera Windows-enheter till Windows 10 Pro
 
@@ -44,11 +45,11 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
   
 Om du vill uppgradera till Windows 10 Pro har du flera alternativ. Du kan:
     
-- Installera uppgraderingen från [microsoft software download site](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Välj det här alternativet om enheten som du är inloggad på finns på samma enhet som den du vill uppdatera. 
+- Installera uppgraderingen från [microsoft software download site](https://go.microsoft.com/fwlink/?LinkID=836951 ) Välj det här alternativet om enheten som du är inloggad på finns på samma enhet som den du vill &ndash; uppdatera. 
 
     - Från webbplatsen för nedladdning av programvara klickar du på **Uppdatera nu** för att börja uppgradera enheten till Windows 10 Pro Creators Update. 
     
-- Skapa ett installationsmedia med [verktyget För att skapa media](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Välj det här alternativet om du vill skapa ett installationsmedia för Windows 10 Pro Creators Update (USB flash-enhet eller ISO-fil) för att installera Windows 10 på en dator som skiljer sig från den du använder.
+- Skapa ett installationsmedia med [verktyget För att skapa media](https://go.microsoft.com/fwlink/?LinkID=836960) Välj det här alternativet om du vill skapa ett &ndash; installationsmedia för Windows 10 Pro Creators Update (USB flash-enhet eller ISO-fil) för att installera Windows 10 på en dator som skiljer sig från den du använder.
 
     - Läs instruktionerna om hur du använder verktyget och skapa installationsmedia. 
 
@@ -61,4 +62,4 @@ Se [Konfigurera mobila enheter för Microsoft 365 för företagsanvändare](set-
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Mer information om hur du konfigurerar och använder Microsoft 365 för företag
 
-[Microsoft 365 för företagsutbildningsvideor](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

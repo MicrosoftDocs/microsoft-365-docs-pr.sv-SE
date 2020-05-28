@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visa enhetsprinciper och -åtgärder genom att logga in på Microsoft 365 för företag med globala administratörsautentiseringsuppgifter.
-ms.openlocfilehash: e514b48c17de492bd1eaa75b48418ce0f2ff493e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f65365584d8b05f4df012d9f5727a74c33c06ae8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635693"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403579"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visa och hantera principer och enheter
 
@@ -36,7 +37,7 @@ ms.locfileid: "43635693"
 ## <a name="view-and-edit-device-policies"></a>Visa och redigera enhetsprinciper
 
 1.  Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Välj **Enhetsprinciper** \> på den vänstra navigeringsknappen **.**
+2. Välj **Enhetsprinciper** på den vänstra navigeringsknappen \> **Policies**.
 
     På den här sidan kan du skapa, redigera, ändra målgrupp eller ta bort en princip.
 

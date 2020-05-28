@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Läs om hur du hanterar dina betalningsmetoder i administrationscentret för Microsoft 365.
-ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322165"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403684"
 ---
 # <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 

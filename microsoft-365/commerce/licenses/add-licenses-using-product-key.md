@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Läs om hur du lägger till licenser i din prenumeration.
-ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045410"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404016"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Lägga till licenser i eller utöka en prenumeration som betalats för att använda en produktnyckel
 
@@ -42,7 +43,7 @@ Förbetalda användarlicenser utfärdas till dig som en alfanumerisk kod med 25 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Leta reda på den prenumeration som du vill lägga till licenser till. I avsnittet **Licenser** väljer du **Lägg till fler licenser**.
 
@@ -78,7 +79,7 @@ Förbetalda användarlicenser utfärdas till dig som en alfanumerisk kod med 25 
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Faktureringsprodukter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">& tjänster</a> i administrationscentret.  
+1. Gå till sidan **Faktureringsprodukter** & tjänster i \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">administrationscentret.</a>  
 
 2. Leta reda på den prenumeration som du vill lägga till licenser till. Välj listrutan **Fler åtgärder** och välj sedan Förnya eller lägg till licens **med token**.
 
@@ -99,7 +100,7 @@ Förbetalda användarlicenser utfärdas till dig som en alfanumerisk kod med 25 
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 
 2. Leta reda på den prenumeration som du vill utöka. Välj **Utöka slutdatum i**avsnittet **Fakturering** .
 

@@ -20,17 +20,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Läs om hur du verifierar att inställningarna för skydd av Microsoft 365 för företag-appar trädde i kraft på användarnas Windows 10-enheter.
-ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635713"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403599"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validera inställningar för enhetsskydd på PC-datorer med Windows 10
 
@@ -38,11 +39,11 @@ ms.locfileid: "43635713"
 
 När du [konfigurerat principer för enheter](protection-settings-for-windows-10-pcs.md) kan det ta några timmar innan principen börjar gälla på användarnas enheter. Du kan bekräfta att principerna har verkställts genom att titta på olika skärmar för Windows-inställningar på användarnas enheter. Eftersom användarna inte kan ändra inställningarna för Windows Update och Windows Defender Antivirus på sina Windows 10-enheter kommer många alternativ att vara nedtonade.
   
-1. Gå till **Alternativ för** \> ** &amp; uppdatering av säkerhetsinställningar** \> **i Windows Update** \> **och** bekräfta att alla inställningar är nedtonade. 
+1. Gå till **Alternativ för** uppdatering av \> ** &amp; säkerhetsinställningar** \> **i Windows Update** och bekräfta att alla inställningar är \> **Restart options** nedtonade. 
     
     ![Alla omstartsalternativ är nedtonade.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Gå till **Alternativuppdatering** \> ** &amp; av säkerhet** \> **Windows Update** \> **Avancerade alternativ** och bekräfta att alla inställningar är nedtonade. 
+2. Gå **Settings** till \> **Alternativuppdatering &amp; av säkerhet** Windows \> **Update** Avancerade \> **alternativ** och bekräfta att alla inställningar är nedtonade. 
     
     ![Alternativen för avancerade uppdateringar i Windows är nedtonade.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   

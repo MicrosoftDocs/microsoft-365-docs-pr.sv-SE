@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du skapar regler för e-postflöde (transportregler) för att identifiera meddelanden och ange informationsnivå för skräppost (SCL) för meddelanden i Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
+ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208567"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44405125"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden i EOP
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att söka igenom inkommande meddelanden efter skräppost. Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor använder EOP policyer mot skräppost (kallas även principer för skräppostfilter eller innehållsfilterprinciper) för att söka igenom inkommande meddelanden efter skräppost. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
 Om du vill markera specifika meddelanden som skräppost innan de ens skannas av skräppostfiltrering eller markera meddelanden så att de hoppar över skräppostfiltrering kan du skapa regler för e-postflöde (kallas även transportregler) för att identifiera meddelandena och ställa in säkerhetsnivån för skräppost (SCL). Mer information om SCL finns i [SCL (Spam Confidence Level) i EOP](spam-confidence-levels.md).
 
@@ -54,7 +54,7 @@ Om du vill markera specifika meddelanden som skräppost innan de ens skannas av 
 
    - **Gör följande:** Välj **Ändra meddelandeegenskaperna** \> **ange scl (Spam Confidence Level)**. Konfigurera ett av följande värden i dialogrutan **Ange SCL** som visas:
 
-   - **Bypass spam filtrering:** Detta ställer in SCL till -1, vilket innebär att meddelandena kommer att hoppa över spam filtrering.
+   - **Bypass spam filtrering:** Meddelandena kommer att hoppa över skräppostfiltrering.
 
      > [!CAUTION]
      > Var mycket försiktig med att tillåta meddelanden att hoppa över skräppostfiltrering. Angripare kan använda det här säkerhetsproblemet för att skicka nätfiske och andra skadliga meddelanden till din organisation. Reglerna för e-postflöde kräver mer än bara avsändarens e-postadress eller domän. Mer information finns [i Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).

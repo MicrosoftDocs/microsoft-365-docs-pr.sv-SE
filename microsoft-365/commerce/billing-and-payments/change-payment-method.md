@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Läs om hur du ändrar betalningsmetoden för din företagsprenumeration.
-ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045910"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407974"
 ---
 # <a name="change-your-payment-method"></a>Ändra betalningsmetod
 
@@ -42,7 +43,7 @@ När du köper en prenumeration väljer du att betala med kreditkort eller bankk
 > [!IMPORTANT]
 > Att betala med ett bankkonto är inte tillgängligt i vissa länder eller regioner.
 
- **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](add-update-or-remove-credit-card-or-bank-account.md).
+ **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Hantera betalningsmetoder](manage-payment-methods.md).
 
  **Vill du bara ändra hur ofta du faktureras?** Se [Ändra betalningsfrekvens](change-payment-frequency.md).
   
@@ -66,7 +67,7 @@ När du köper Office 365 för företag väljer du mellan att betala med kreditk
   
  **Vill du ändra betalningsfrekvens?** Om du vill ändra hur ofta du betalar för din prenumeration, antingen från år till månad eller månad till år, måste du [ringa Microsoft-supporten](../../admin/contact-support-for-business-products.md) för att få hjälp.
   
- **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](add-update-or-remove-credit-card-or-bank-account.md).
+ **Vill du bara ändra din kreditkorts- eller bankkontoinformation?** Se [Hantera betalningsmetoder](manage-payment-methods.md).
   
  **Vad händer om jag har ett utestående saldo?**
   
@@ -88,7 +89,7 @@ Om du flyttar från *kreditkort eller bankkonto till faktura*överförs eventuel
   
 När du ändrar från betalning via faktura till att betala med kreditkort skapas automatiskt en ny prenumeration åt dig. Dina användare flyttas till den nya prenumerationen och sedan inaktiveras den gamla prenumerationen. Du behöver inte oroa dig – dina användare får inga störningar i tjänsten och deras information blir tillgänglig genom den nya prenumerationen.
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Om du är i **tabellvyn** väljer du **Kort**.
 
@@ -113,7 +114,7 @@ När du ändrar från betalning via faktura till att betala med kreditkort skapa
   
 När du ändrar från betalning via faktura till kreditkort eller bankkonto skapas automatiskt en ny prenumeration åt dig. Dina användare flyttas till den nya prenumerationen och sedan inaktiveras den gamla prenumerationen. Du behöver inte oroa dig - dina användare får inga störningar i tjänsten och all deras information blir tillgänglig genom den nya prenumerationen.
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
 
 2. Leta reda på den prenumeration som du vill ändra. I avsnittet **Betalningsinformation** väljer du **Ändra betalningsinformation**.
   
@@ -152,7 +153,7 @@ Om din orderkvantitet är för hög kan en kreditkontroll krävas. Om så är fa
 
 Om ingen kreditkontroll krävs, använd följande steg för att ändra till betalning med faktura.
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Om du är i **tabellvyn** väljer du **Kort**.
 
@@ -177,7 +178,7 @@ Om ingen kreditkontroll krävs, använd följande steg för att ändra till beta
 > [!NOTE]
 > Alternativet att betala med faktura är endast tillgängligt om din prenumeration kostar över ett visst belopp (som varierar beroende på serviceplats). En kreditkontroll kan behövas för större fakturabetalningar. Mer information finns i [Betala för din prenumeration](pay-for-your-subscription.md).
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
 
 2. Leta reda på den prenumeration som du vill ändra. Välj **Ändra betalningsinformation**i avsnittet **Betalningsmetod** .
   
@@ -198,13 +199,13 @@ Om ingen kreditkontroll krävs, använd följande steg för att ändra till beta
 
 Du kan med hjälp av följande anvisningar när som helst verifiera betalningsmetoden som har konfigurerats för en prenumeration.
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 
 2. Leta reda på den prenumeration som du vill verifiera. Betalningsmetoden som har konfigurerats för prenumerationen visas i avsnittet **Fakturering.**
 
 ### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Använd det gamla administrationscentret för att verifiera vilken betalningsmetod som har konfigurerats
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
 
 2. Leta reda på den prenumeration som du vill verifiera. Betalningsmetoden som har konfigurerats för prenumerationen visas under **Betalningsmetod**.
 
@@ -216,7 +217,7 @@ Du kan med hjälp av följande anvisningar när som helst verifiera betalningsme
 
 Du kan med hjälp av följande anvisningar när som helst verifiera betalningsmetoden som har konfigurerats för en prenumeration.
 
-1. Gå till sidan\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret. **Billing**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Faktureringsprenumerationer</a> i administrationscentret.
 
 2. Leta reda på den prenumeration som du vill verifiera. Betalningsmetoden som har konfigurerats för prenumerationen visas under **Betalningsmetod**.
 
