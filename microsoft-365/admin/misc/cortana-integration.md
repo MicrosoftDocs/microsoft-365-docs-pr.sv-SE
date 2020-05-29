@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: 'Läs om hur du använder Cortana när den är integrerad med Office 365. Du kan inaktivera Cortana i administrationscentret för att begränsa dess åtkomst till organisationens data. '
-ms.openlocfilehash: 80c4425814e6015d5a8116a1e8df7f7b528dbd66
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: När användarna är inloggade med giltiga arbets- eller skolkonton kan de få molnbaserade hjälptjänster med Cortana i Microsoft 365-upplevelser som uppfyller sekretess-, säkerhets- och efterlevnadslöftena på företagsnivå på företagsnivå.
+ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399416"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411007"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
