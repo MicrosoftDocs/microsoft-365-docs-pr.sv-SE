@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42812584"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418884"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Hanterade skrivbord arkiverade enheter
 
@@ -41,9 +41,10 @@ För att registreras i Microsoft Managed Desktop måste en enhet vara en av föl
 |HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS03AV, IR-kamera krävs |**den 14 maj 2023** |
 |HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**den 14 maj 2023** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | **den 23 oktober 2023** |
-|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Ingen | **Den 16 november 2022** |
-|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 20 maj 2022** |
-|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 15 juni 2022** |
+|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Inga | **Den 16 november 2022** |
+|Yta Gå| 128 GB / Intel 4415Y / 8GB RAM | Inga | **Den 2 augusti 2023** |
+|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 20 maj 2022** |
+|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 15 juni 2022** |
 
 
 Dessutom måste enheten också:

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om Microsoft 365-grupper.
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400719"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419142"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365-grupper för administratörer
 
@@ -84,12 +84,27 @@ Det maximala standardantalet Microsoft 365-grupper som en organisation kan ha ä
 
 Det är mer effektivt att hantera dina Microsoft 365-grupper när du har användbar information om gruppanvändning. Microsoft 365-administrationscentret har ett rapporteringsverktyg som kan du se saker som lagringsanvändning, hur många aktiva grupper du har och till och med hur användarna använder grupperna. Mer information finns [i Microsoft 365-rapporter i administrationscentret.](../activity-reports/office-365-groups.md)
 
+## <a name="sensitivity-labels"></a>Känslighetsetiketter
+
+Du kan skapa känslighetsetiketter som användarna i organisationen kan ange när de skapar en Microsoft 365-grupp. Med känslighetsetiketter kan du konfigurera: 
+
+- Sekretess (offentlig eller privat)
+- Åtkomst till externa användare
+- Åtkomst till ohanter för enheten
+
+Du kan till exempel skapa en etikett som heter *Mycket konfidentiell och* ange att alla grupper som skapas med den här etiketten ska vara privata och inte tillåta externa användare. När användare i organisationen väljer den här etiketten när gruppen skapas, kommer gruppen att ställas in på privata och gruppmedlemmar kommer inte att tillåtas att lägga till externa användare i gruppen.
+
+> [!IMPORTANT]
+> Om du för närvarande använder klassificeringsetiketter är de inte längre tillgängliga för användare som skapar grupper när känslighetsetiketter är aktiverade. 
+
+Information om hur du skapar, hanterar och använder känslighetsetiketter finns i [Använda känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>Vilka Microsoft 365-abonnemang innehåller grupper?
 
 Alla Microsoft 365-prenumerationer som har Exchange Online och SharePoint Online stöder grupper. Det inkluderar Business Essentials och Business Premium-abonnemangen samt Enterprise E1-, E3- och E5-planerna. Gruppen tar på licensiering av den person som skapar gruppen (även känd som "organisatör" av gruppen). Så länge arrangören har rätt licens för vilka funktioner du vill att gruppen ska ha, kommer den licensen att förmedla till gruppen.
 
 > [!NOTE]
-> Mer information om Microsoft 365-tjänstfamiljer och -abonnemang finns i [microsoft 365-abonnemangsalternativ](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Mer information om Microsoft 365-tjänstfamiljer och -abonnemang finns i [Microsoft 365-abonnemangsalternativ](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 Om du har en Exchange-plan kan du fortfarande hämta den delade inkorgen och delade kalenderfunktioner i grupper i Outlook, men du får inte dokumentbiblioteket, planeraren eller någon av de andra funktionerna.
 

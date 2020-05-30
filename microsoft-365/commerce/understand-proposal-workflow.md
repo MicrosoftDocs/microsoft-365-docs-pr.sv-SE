@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Läs mer om förslag som hjälper dig att köpa Microsofts produkter och tjänster.
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403132"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419118"
 ---
 # <a name="understand-the-proposal-workflow"></a>Förstå arbetsflödet för förslag
 
@@ -31,7 +31,7 @@ En Microsoft-representant utarbetar ett förslag som innehåller de objekt som d
 
 När du har fått e-postmeddelandet följer du länken till förslagswebbplatsen. När du har loggat in på webbplatsen kan du starta processen för granskning av förslag.
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>Vilka är organisationens förutsättningar för att köpa artiklar med ett förslag?
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Förutsättningar för att köpa artiklar med ett förslag
 
 Innan du kan köpa artiklar för ett förslag måste du ha ett faktureringskonto och ett avtal med Microsoft.
 
@@ -49,7 +49,7 @@ Mer information om faktureringskonton finns i [Hantera faktureringskonton](manag
 
 Med McA (Microsoft Customer Agreement) kan en organisation köpa Microsofts produkter och tjänster. Mer information finns i [Microsofts kundavtal](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>Vilka behörigheter behöver jag för att underteckna ett avtal eller betala för varor?
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Behörigheter som krävs för att underteckna ett avtal eller betala för artiklar
 
 Om du inte har en tilldelad roll i faktureringskontot tilldelas du den grundläggande läsarrollen när du visar förslaget. Med den här rollen kan du visa, men inte vidta några åtgärder för, förslaget. Du måste tilldelas rollen som ägare eller faktureringskontopersonförsörjare innan du kan underteckna ett avtal eller köpa produkter och tjänster. Din ägare av faktureringskontot kan tilldela den här rollen till dig.
 
@@ -59,7 +59,7 @@ Om detta är ett nytt faktureringskonto och ingen har accepterat ett avtal blir 
 
 - Är den person som nämns i förslaget\
     ELLER
-- Är redan en global Azure Active Directory-administratör för din organisation
+- Är redan [en global Azure Active Directory-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) för din organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Vad är det övergripande arbetsflödet?
 
@@ -86,7 +86,6 @@ Följande tabell innehåller termer och definitioner som visas i ditt förslag o
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Faktureringskonto | Ett konto som används för att hantera kontoinställningar, fakturor, betalningsmetoder och produkter. |
 | Faktureringsprofil | Information om din organisation som låter dig anpassa vilka artiklar som ingår på fakturan och hur du betalar för dina fakturor. Faktureringsprofilen innehåller faktureringskontonamnet, betalningsmetoderna som används för den specifika faktureringsprofilen, kontaktinformationen, fakturainställningarna och behörigheterna som gör att du kan ändra faktureringsprofilen, betala räkningar och köpa produkter och tjänster. |
-| Inköpsvillkor för kundpartner (CAPT) | Ytterligare en uppsättning villkor som låter en partner till din organisation köpa produkter och tjänster utan att underteckna en separat MCA. |
 | Befintliga avtal | Alla avtal som din organisation redan har på plats med Microsoft. Detta kan inkludera, men är inte begränsat till, ett Enterprise-avtal, Microsoft Product & Services Agreement eller Microsofts kundavtal. |
 | Microsoft-kundavtal (MCA) | Ett avtal som beskriver villkoren för kontot som din organisation har hos Microsoft. |
 | Microsoft-representant | En auktoriserad Microsoft-representant som förbereder ett förslag för dig och din organisation. |
