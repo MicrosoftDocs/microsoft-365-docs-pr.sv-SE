@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Steg för att distribuera din identitets infrastruktur för Microsoft 365 Enterprise.
-ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6f237f779df16f2a2a03eab29af78a89c5f7a5ae
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952036"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371424"
 ---
 # <a name="phase-2-identity"></a>Fas 2: Identitet
 
 ![Fas 2: Identitet](../media/deploy-foundation-infrastructure/identity_icon.png)
 
-I Microsoft 365 Enterprise banar en välplanerad och väl genomförd identitetsinfrastruktur vägen för bättre säkerhet och åtkomst till produktivitetsarbeten och deras data med enbart autentiserade användare och enheter.
+I Microsoft 365 Enterprise banar en välplanerad och körd identitetsinfrastruktur vägen för bättre säkerhet och åtkomst till dina produktivitetsarbetsbelastningar och deras data endast med autentiserade användare och enheter.
 
 I den här videon finns en översikt över identitetsmodeller och autentisering för Microsoft 365 Enterprise.
 
@@ -70,7 +70,11 @@ Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- oc
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Så här används Microsoft 365 Enterprise på Microsoft
 
-Lär dig hur IT-experter på Microsoft [hanterar identiteter och säker åtkomst](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
+Lär dig hur IT-experter på Microsoft [hanterar identiteter och säker åtkomst](https://www.microsoft.com/sv-SE/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
+
+>[!Note]
+>Den här IT-showcaseresurs är endast tillgänglig på engelska.
+>
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Så här använder Contoso Microsoft 365 Enterprise
 
