@@ -23,23 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Läs om hur en global administratör kan ändra en användares e-postadress och visningsnamn. '
-ms.openlocfilehash: 4325892a51c9d7a562b628a2bb89e6e1ff966e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387255"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432093"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
 Du kanske måste ändra någons e-postadress och visningsnamn i om personen till exempel gifter sig och byter efternamn.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
 
 Titta på en kort video om hur du ändrar en användares e-postadress. <br><br>
 

@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Lär dig hur du ger en användare rätt att komma åt en annan användares postlåda. Då kan användaren läsa e-postmeddelanden och skicka e-postmeddelanden från den andra användarens postlåda. '
-ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387183"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431671"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Ge behörigheter för postlådor åt en annan användare – administratörshjälp
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
 
 Som administratör kanske du behöver ge vissa användare åtkomst till andra användares postlåda. Du kanske till exempel vill låta en assistent kunna skicka och läsa e-post från sin chefs postlåda eller ge någon av dina användare möjlighet att skicka e-post åt en annan användare. I det här avsnittet får du se hur du ska göra.
   
