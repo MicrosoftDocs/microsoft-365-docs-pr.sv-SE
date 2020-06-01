@@ -283,7 +283,7 @@
                   items:
                     - name: Konfigurera utgående skräppostfiltrering
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: Leveranspool med hög risk för utgående meddelanden
+                    - name: Pooler för utgående leverans
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Ta bort blockerade användare från portalen med åtkomstbegränsade användare
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
