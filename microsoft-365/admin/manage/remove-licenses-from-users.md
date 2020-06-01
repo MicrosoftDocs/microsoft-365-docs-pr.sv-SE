@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Läs om hur du tar bort licenser från användarkonton.
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399686"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432237"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
@@ -45,9 +45,6 @@ Du kan ta bort eller ta bort licenser från användare på sidan **Aktiva använ
 
 När du använder sidan **Licenser** för att ta bort tilldelning av licenser avtar du licenser för en viss produkt för upp till 20 användare. 
 
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
 1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
 2. Välj den produkt som du vill ta bort licenser för.
 3. Välj de användare som du vill ta bort licenser för.
@@ -59,9 +56,6 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>Ta bort tilldelning av licenser från en användare på sidan Aktiva användare
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
   
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
@@ -104,9 +98,6 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 ## <a name="unassign-licenses-from-multiple-users-on-the-active-users-page"></a>Ta bort tilldelning av licenser från flera användare på sidan Aktiva användare
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fdf0b9db2c23632a213e860bd54097c1d453cf55
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399902"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432397"
 ---
 # <a name="remove-a-domain"></a>Ta bort en domän
 
@@ -47,9 +47,6 @@ Tar du bort domänen för att du vill lägga till den i ett annat Microsoft 365-
 #### <a name="move-users"></a>Flytta användare
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a>.
 
@@ -100,9 +97,6 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 #### <a name="move-yourself"></a>Flytta dig själv
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.
 

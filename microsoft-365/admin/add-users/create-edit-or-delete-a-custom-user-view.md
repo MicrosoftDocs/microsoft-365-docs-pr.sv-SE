@@ -20,23 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Lär dig att använda filter för att skapa, redigera eller ta bort anpassad användarvy i Microsoft 365.
-ms.openlocfilehash: faea21f0e5142d197cc2b90d6ade99490f9f88e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387219"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431647"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Skapa, redigera eller ta bort en anpassad användarvy i Office 365
 
 Om du är global administratör eller användarhanteringsadministratör för Office 365 kan du skapa anpassade användarvyer för att visa en viss delmängd användare. Dessa vyer är utöver standarduppsättningen vyer som medverkar med Office 365. Du kan skapa, redigera eller ta bort anpassade användarvyer och de anpassade vyer som du skapar är tillgängliga för alla administratörer.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Anpassade användarvyer i administrationscentret
 

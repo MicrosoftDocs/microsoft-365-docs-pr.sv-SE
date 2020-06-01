@@ -25,21 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Lär dig hur du lägger till användare i Microsoft 365, en i taget eller flera användare samtidigt från en CSV-fil.
-ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387267"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432129"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Lägga till användare individuellt eller i grupp
 
 Personerna i teamet behöver var och en ett användarkonto innan de kan logga in och komma åt [Microsoft 365 för företag.](https://go.microsoft.com/fwlink/?LinkID=519395) Det enklaste sättet att lägga till användarkonton är att lägga till dem en i taget i Microsoft 365 administrationscenter. När du har gjort det här steget har användarna Microsoft 365-licenser, inloggningsuppgifter och Microsoft 365-postlådor.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 

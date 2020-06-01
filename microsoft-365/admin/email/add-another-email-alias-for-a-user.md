@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företagskonto. '
-ms.openlocfilehash: 778d927d9ab830aea674b9bff72df250e6e430b1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bab4ace6d497bac8892a29c76b6f2d05c4fa018f
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400190"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432331"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
 
@@ -58,9 +58,6 @@ Du måste ha [administratörsbehörighet](../add-users/about-admin-roles.md) fö
 
   
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 

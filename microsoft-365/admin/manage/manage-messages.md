@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Lär dig att hantera meddelanden i Message Center för att hjälpa till med ändringshantering.
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399722"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432271"
 ---
 # <a name="manage-messages-in-message-center"></a>Hantera meddelanden i Meddelandecenter
 
@@ -36,13 +36,6 @@ Inlägg i Meddelandecenter är viktiga meddelanden om nya och ändrade funktione
 Om du vill gå till meddelandecentret går du till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och väljer **Health**  >  **Hälsomeddelandecenter**. 
 
 Välj en meddelandetitel för att öppna den i läsfönstret. Varje meddelande innehåller en sammanfattning av ändringen, en redogörelse för hur ändringen kan påverka dig, information om hur du kan förbereda din organisation för ändringen och (i de flesta fall) en ytterligare informationslänk där du kan läsa mer. Den ytterligare informationen fortsätter att vara tillgänglig, även efter att ett meddelande har upphört att gälla.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>Filtrera och sortera
 

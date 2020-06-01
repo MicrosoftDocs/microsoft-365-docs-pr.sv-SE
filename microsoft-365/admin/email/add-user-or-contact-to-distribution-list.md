@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Läs om hur du lägger till en Microsoft 365-användare eller kontaktar en distributionsgrupp. Du kan till exempel lägga till en medarbetare, partner eller en leverantör i din e-postdistributionsgrupp.
-ms.openlocfilehash: 47b338a326c5c1152c8e14e13f01f9a36de1cb6f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 23862a756d15f98e7b37175f557406914e177d75
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400178"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432319"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Lägga till en användare eller kontakt i en distributionsgrupp
 
@@ -34,9 +34,6 @@ Som administratör för en organisation kan du behöva lägga till en av dina an
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Lägga till en användare eller kontakt i en distributionsgrupp
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
 

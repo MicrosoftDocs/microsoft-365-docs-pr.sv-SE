@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Lär dig att verifiera vilka prenumerationer din organisation har genom att gå till sidan Prenumerationer.
-ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386751"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431611"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 
@@ -38,9 +38,6 @@ Om du är administratör kan du verifiera vilka prenumerationer din organisation
  **Är du inte administratör?** Se [Vilken Microsoft 365 för företag produkt eller licens har jag?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Läs mer om Power BI och hur användare i organisationen kan använda den här affärsanalystjänsten.
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399308"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432177"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI i organisationen
 
@@ -171,9 +171,6 @@ Om du vill tillåta att användarna registrerar sig för Power BI inverterar du 
 Om en användare har registrerat sig för Power BI-men du inte längre vill att de ska ha åtkomst till Power BI, kan du ta bort Power BI-licensen för den användaren.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
   
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
     

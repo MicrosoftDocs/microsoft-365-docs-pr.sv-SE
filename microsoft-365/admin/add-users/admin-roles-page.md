@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: 1dde487ef9dc99b45263a21ce62d556249ada927
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387279"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432117"
 ---
 # <a name="get-started-with-the-roles-page"></a>Komma igång med sidan roller
 
@@ -99,3 +99,9 @@ I administrationscentret:
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="En siffra som visar en jämförelse av administratörsroller":::
 
 ::: moniker-end
+
+## <a name="related-topics"></a>Relaterade ämnen
+
+[Om administratörsroller i Microsoft 365](about-admin-roles.md)
+
+[Tilldela administratörsroller](assign-admin-roles.md)

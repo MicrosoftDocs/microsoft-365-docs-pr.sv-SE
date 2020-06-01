@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Lär hur du tar bort ett användarkonto. Bestäm vad du ska göra med användarens e-postadress, OneDrive-innehåll och om du vill behålla produktlicensen eller sluta betala för den.
-ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 81243286b70985082f8b671d7e021735a76cffc4
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387195"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431683"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Ta bort en användare från organisationen
   
@@ -67,13 +67,6 @@ Innan du börjar ska du bestämma dig för vad du vill göra med användarens e-
 |Active Directory  <br/> |Om ditt företag använder **Active Directory** som synkroniseras med Azure AD måste du ta bort användarkontot från Active Directory. Du kan inte göra det via Office 365. Anvisningar finns i[Ta bort ett användarkonto](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
    
 ### <a name="get-started"></a>Komma igång
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
 
 Du blir guidad genom processen för att ta bort en användare. Så här kommer du igång.
 

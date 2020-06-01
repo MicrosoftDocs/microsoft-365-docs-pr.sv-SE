@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Konfigurera vidarebefordran av e-post till ett eller flera e-postkonton med Office365.
-ms.openlocfilehash: 72eca099f0c7e60efe8f616dfe23201cd46975cf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400130"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432307"
 ---
 # <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 
@@ -52,9 +52,6 @@ Som administratör för en organisation kan du ha företagskrav för att konfigu
 Du måste vara Exchange-administratör eller Global administratör i Microsoft 365 för att kunna göra så här. Mer information finns i avsnittet [Om administratörsroller](../add-users/about-admin-roles.md).
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
     

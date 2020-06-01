@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online-administratörer hanterar organisationens e-post och postlådor. De återställer till exempel borttagna objekt i en användares postlåda. '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387434"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432141"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Om administratörsrollen i Exchange Online
 
@@ -56,9 +56,10 @@ Om du har en stor organisation kanske Exchange-administratören vill tilldela Ex
   
  Till exempel kan Exchange-administratören lägga till någon i rollgruppen för Identifieringshantering så att han/hon kan söka i postlådor efter data som uppfyller vissa villkor. Mer information finns i [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) och [Hantera rollgrupper](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-roles"></a>Läs mer om andra administratörsroller
-    
+## <a name="learn-about-other-admin-role"></a>Läs mer om annan administratörsroll
+
+- [Om administratörsroller i Microsoft 365](about-admin-roles.md)
+
 - [Om administratörsrollen för SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [Om administratörsrollen i Skype för företag](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

@@ -1,5 +1,5 @@
 ---
-title: Om det nya administrationscentret för Microsoft 365
+title: Om Administrationscenter för Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Läs mer om det nya administrationscentret för Microsoft 365.
-ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs mer om administrationscentret för Microsoft 365.
+ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399488"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432213"
 ---
-# <a name="about-the-new-microsoft-365-admin-center"></a>Om det nya administrationscentret för Microsoft 365
+# <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
 ::: moniker range="o365-worldwide"
 
-Det nya administrationscentret för Microsoft 365 är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
+Microsoft 365-administrationscentret är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
 
 Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Specialiserade arbetsytor, som säkerhet eller enhetshantering, möjliggör mer detaljerad kontroll. Mer information om hur administrationsenheterna ska fungera tillsammans finns i Hur är [det med de specifika typerna av IT-roller och andra arbetsytor som Säkerhet, Enhetshantering eller Exchange senare](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) i den här artikeln.
 
@@ -37,7 +37,7 @@ Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 3
 
 ::: moniker range="o365-21vianet"
 
-Det nya administrationscentret för Microsoft 365, som för närvarande förhandsgranskas, är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
+Microsoft 365-administrationscentret är byggt för IT-team som ett förenklat sätt att hantera dina Microsoft 365-tjänster. Administrationscentret ger en skräddarsydd upplevelse baserat på de unika behoven hos din roll eller organisation, förbättrar effektiviteten för vardagliga uppgifter och ger användbara insikter som hjälper dig att fatta datadrivna beslut för att ge användarna en bättre upplevelse.
 
 Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 365-administratörer och kan nås genom att logga in på [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . Dessutom tillåter specialiserade arbetsytor, som Azure Active Directory och Exchange, mer detaljerad kontroll. Du kan komma åt de specialiserade arbetsytorna från navigeringsfönstret i administrationscentret för Microsoft 365.
 
@@ -45,14 +45,11 @@ Microsoft 365 admin center är den gemensamma startpunkten för alla Microsoft 3
 
 ::: moniker range="o365-worldwide"
 
-När nya funktioner blir tillgängliga i Microsoft 365-administrationscentret kan du välja det nya administrationscentret och dela din feedback med Microsoft så att vi kan fortsätta att förbättra administratörsupplevelsen. Om du anmäler dig påverkas inte användarna av användarna och du kan när som helst växla tillbaka till det gamla administrationscentret.
-[Nyheter i det nya administrationscentret för Microsoft 365](whats-new-in-preview.md).
+När nya funktioner blir tillgängliga i Microsoft 365-administrationscentret kan du anmäla dig till administrationscentret och dela din feedback med Microsoft så att vi kan fortsätta att förbättra administratörsupplevelsen. Om du anmäler dig påverkas inte användarna av användarna och du kan när som helst växla tillbaka till det gamla administrationscentret.
+[Nyheter i Microsoft 365 admin center](whats-new-in-preview.md).
   
 > [!NOTE]
-> Riktade versionsadministratörer får först tillgång till nya funktioner. Nya funktioner kommer sedan att distribueras till alla administratörer. Det innebär att du kanske inte ser det nya administrationscentret, eller så kan det se annorlunda ut än vad som beskrivs i hjälpartiklar. Se Delta i det nya administrationscentret nedan. 
-    
-## <a name="participate-in-the-new-admin-center"></a>Delta i det nya administrationscentret
-Vi vill gärna att du deltar i det nya administrationscentret för Microsoft 365 så att du kan förbereda dig för förändring och ge oss feedback.
+> Riktade versionsadministratörer får först tillgång till nya funktioner. Nya funktioner kommer sedan att distribueras till alla administratörer. Det innebär att du kanske inte ser administrationscentret eller att det kan se annorlunda ut än vad som beskrivs i hjälpartiklar. Se Delta i administrationscentret nedan. 
 
 ### <a name="turn-on-targeted-release"></a>Aktivera Riktad release
 
@@ -64,18 +61,9 @@ Vi vill gärna att du deltar i det nya administrationscentret för Microsoft 365
     
 3. Välj antingen **Riktad version för alla** eller Riktad version för valda **användare**. Om du väljer Riktad version för valda användare kontrollerar du att du lägger till ditt administratörskonto (och andra administratörer i organisationen som vill delta) i listan över valda användare.
     
-### <a name="switch-to-the-new-admin-center-and-back-again"></a>Växla till det nya administrationscentret och tillbaka igen
+### <a name="admin-center-feedback"></a>Feedback från administrationscenter
 
-- När det nya administrationscentret för Microsoft 365 är tillgängligt för dig kan du anmäla dig genom att välja **Växlingsknappen Prova det nya administrationscentret** högst upp på startsidan. Om du loggar ut från administrationscentret kommer vi ihåg ditt val och du loggar in igen i det nya administrationscentret. <br/><br/>![Det nya administrationscentret växlar från det gamla administrationscentret](../media/admin-center-toggle-off.png) 
-  
-- Växla tillbaka till det gamla administrationscentret från startsidan genom att vrida växlingsknappen till **Av**. <br/><br/>![Den nya admin center växlingsknappen aktiverad](../media/admin-center-toggle-on.png)
-
-I det nya administrationscentret kan du ge Microsoft feedback om din upplevelse genom att välja **Ge feedback** bredvid knappen Behöver **du hjälp?** Berätta vad du gillar och vad vi kan göra bättre. Dessutom kan du få popup-undersökningar från tid till annan frågar om din totala visningar eller en viss upplevelse som är nyutgivna. Du kan också ge feedback i slutet av den här artikeln genom att välja **Var den här informationen till hjälp?**
-  
-Om du vill vara en tidig användare i det nya administrationscentret måste du aktivera Riktad version och sedan när det nya administrationscentret är tillgängligt kan du växla till det för att kolla upp det och ge feedback.
-  
-> [!NOTE]
-> Åtkomst till det nya administrationscentret kommer att distribueras till alla Microsoft 365-administratörer. Administratörer som finns i gruppen Riktad utgåva i organisationen får det nya administrationscentret först. Att vara i riktad release garanterar inte att du kommer att se växla omedelbart, men du kommer att få det tidigare än de i Standard release. 
+När du är i administrationscentret kan du ge Microsoft feedback om din upplevelse genom att välja **Ge feedback** bredvid knappen Behöver **du hjälp?** Berätta vad du gillar och vad vi kan göra bättre. Dessutom kan du få popup-undersökningar från tid till annan frågar om din totala visningar eller en viss upplevelse som är nyutgivna. Du kan också ge feedback i slutet av den här artikeln genom att välja **Var den här informationen till hjälp?**
   
 ::: moniker-end
 

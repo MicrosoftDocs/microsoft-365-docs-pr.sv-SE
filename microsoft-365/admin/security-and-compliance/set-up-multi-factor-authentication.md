@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 2b4ac2b5950d2641254742e03f054f3e4c886833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399128"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432385"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -42,7 +42,8 @@ Innan du börjar, ta reda på om dessa särskilda villkor gäller för dig och v
 
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Steg 1: Bestäm metoden för att kräva att användarna använder MFA
 
-Det finns tre sätt att kräva att användarna använder MFA för inloggningar. Mer information finns [i MFA-supporten i Microsoft 365.](multi-factor-authentication-microsoft-365.md)
+> [!NOTE]
+> Du måste vara global administratör för att kunna konfigurera eller ändra MFA. Det finns tre sätt att kräva att användarna använder MFA för inloggningar. Mer information finns [i MFA-supporten i Microsoft 365.](multi-factor-authentication-microsoft-365.md)
 
 - Standardvärden för säkerhet (rekommenderas för småföretag)
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Följ den här checklistan om du vill ta bort en anställd från Microsoft 365 och säkra data. '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387051"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431659"
 ---
 # <a name="remove-a-former-employee"></a>Ta bort en tidigare anställd
 
@@ -44,9 +44,6 @@ ms.locfileid: "44387051"
 ## <a name="sign-out-now"></a>Logga ut nu!
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 Titta på en kort video om att ta bort en anställd. <br><br>
 
@@ -156,9 +153,6 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
 2. Markera namnet på den medarbetare som du vill blockera och välj sedan fliken **E-post.**
@@ -234,9 +228,6 @@ Om den tidigare anställde hade en företagstelefon kan du använda Administrati
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
 2. Välj namnet på den medarbetare som du vill blockera och välj symbolen för Blockera den **här användaren**under användarens namn .
@@ -287,9 +278,6 @@ Så du fortsätter inte att betala för en licens efter att någon har lämnat o
 När du tar bort licensen bevaras användarens alla data i 30 dagar. Du kan [komma åt](get-access-to-and-back-up-a-former-user-s-data.md) alla data, eller [återställa](restore-user.md) kontot om användaren kommer tillbaka. Efter 30 dagar raderas alla användares data (förutom dokument som lagras på SharePoint Online) permanent från Microsoft 365 och kan inte återställas. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 
@@ -364,9 +352,6 @@ När du har sparat och kommit åt den tidigare anställdes alla användardata ka
 Ta inte bort kontot om du har konfigurerat vidarebefordran av e-post eller konverterat postlådan till en delad postlåda. Kontot krävs för att kunna använda vidarebefordran av e-post eller den delade postlådan.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 

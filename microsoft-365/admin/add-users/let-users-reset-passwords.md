@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan återställa dina lösenord med hjälp av verktyget för återställning av lösenord med självbetjäning.
-ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387039"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431707"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -37,19 +37,19 @@ Står folk i kö och ber dig återställa deras lösenord? Som Microsoft 365-adm
   
 Här är några saker du kan behöva veta:
   
-- Du får lösenordsåterställning med självbetjäning för molnanvändare **gratis** med alla Microsoft 365-företag, utbildningar eller avgiftsbetalda organisationer. Det fungerar inte med Microsoft 365 rättegång. 
-    
-- Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner. 
-    
-- **Om du använder Active Directory lokalt** gäller inte de två punkterna ovan. Du kan du konfigurera det här, men **det kräver en betald prenumeration på Azure AD Premium**. 
+- Du får lösenordsåterställning med självbetjäning för molnanvändare **gratis** med alla Microsoft 365-företag, utbildningar eller avgiftsbetalda organisationer. Det fungerar inte med Microsoft 365 rättegång.
+
+- Tjänsten använder Azure. Du får automatiskt den här funktionen **kostnadsfritt** när du utför de här stegen. Det kostar dig ingenting att aktivera självbetjäning för återställning av lösenord om du inte använder andra Azure-funktioner.
+
+- **Om du använder Active Directory lokalt** gäller inte de två punkterna ovan. Du kan du konfigurera det här, men **det kräver en betald prenumeration på Azure AD Premium**.
 
 Titta på en kort video om att låta användare återställa sina egna lösenord. <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="let-people-reset-their-own-passwords"></a>Låt andra återställa sina egna lösenord 
+## <a name="let-people-reset-their-own-passwords"></a>Låt andra återställa sina egna lösenord
 
 Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.
   
@@ -70,7 +70,6 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 
 ::: moniker-end
 
-   
 2. Högst upp på sidan Inställningar väljer du **Sekretess för & .**
   
 3. Välj **Självbetjäningslösenordsåterställning**.

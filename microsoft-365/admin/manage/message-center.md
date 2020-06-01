@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Få en översikt över Microsoft 365 Message Center och dess roll i ändringshantering.
-ms.openlocfilehash: 509c379beffaa4be8bb9cfcd7277ef6beb147bf3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0d23280f5657d656e778c358dfe6349e16db9c3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399710"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432259"
 ---
 # <a name="message-center"></a>Meddelandecenter
 
 
 Om du vill hålla reda på kommande ändringar, inklusive nya och ändrade funktioner, planerat underhåll eller andra viktiga meddelanden, går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>. Det är där vi lägger upp officiella meddelanden som låter dig ta ett proaktivt förhållningssätt till förändringshantering. Varje inlägg ger dig en översikt på hög nivå över en planerad ändring och hur den kan påverka användarna och länkar ut till mer detaljerad information som hjälper dig att förbereda dig.
   
-Om du vill öppna Meddelandecenter kontrollerar du först att du har valt **växlingsknappen Prova det nya administrationscentret** på startsidan för administrationscentret och sedan:
+Så här öppnar du Meddelandecenter:
 
 ::: moniker range="o365-worldwide"
 
@@ -62,7 +62,7 @@ Du kan också använda [Microsoft 365 Admin-appen](https://go.microsoft.com/fwli
 |Vem kan visa inlägg i Meddelandecenter?  <br/> |De flesta användare som har tilldelats en administratörsroll i Microsoft 365 kan visa inlägg i Message Center. [Här är en lista över administratörsroller](#admin-roles-that-dont-have-access-to-the-message-center) som inte har åtkomst till meddelandecentret. Du kan också tilldela rollen Message center-läsare till användare som ska kunna läsa och dela inlägg i Message Center utan att ha några andra administratörsbehörighet.<br/><br/> Dessutom kan du tilldela rollen Sekretessläare i Message Center till personer som ska se meddelanden om säkerhets- och sekretessinformation som är relevant för din organisation. Se [Om administratörsroller](../add-users/about-admin-roles.md) om du vill veta mer om vad varje administratörsroll kan göra. <br/><br/>De flesta inlägg i Message Center kan delas via e-post med användare som inte är administratörer som kan behöva vidta åtgärder. Det här alternativet är inte tillgängligt för datasekretessinlägg som Message Center Privacy reader visar. <br/> |
 |Är detta det enda sättet Microsoft kommer att kommunicera ändringar om Microsoft 365?  <br/> |Nej, det finns många sätt att kommunicera ändringar i Microsoft 365. Meddelandecenter är det huvudsakliga sätt vi använder för att informera om tidpunkten för enskilda ändringar. Se [Håll koll på Microsoft 365-ändringar](stay-on-top-of-updates.md) för information om ytterligare resurser.  <br/> |
 |Hur kan jag se inlägg på mitt språk?  <br/> |Inlägg i meddelandecenter är endast skrivna på engelska på grund av aktualiteten i den information vi publicerar, men du kan styra om inläggen som standard visas på engelska eller automatiskt maskinöversätts till önskat språk. Och oavsett vilken standardvy du väljer kan du välja att maskinöversätta inlägg till vilket språk vi har stöd för. Mer information finns i [Inlägg för språköversättning för Message center](language-translation-for-message-center-posts.md) för mer information.  <br/> |
-|Kan jag förhandsgranska ändringar eller funktioner innan de distribueras i organisationen?  <br/> |Ibland. Vissa ändringar och nya funktioner kan förhandsgranskas genom att anmäla sig till programmet Riktad utgåva. Om du vill anmäla dig går **Settings**du till Inställningar  >  **organisationsprofilens**  >  **utgivningsinställningar**. (I det nya administrationscentret kan du behöva välja **Visa alla** längst ned i det vänstra navigeringsfönstret för att se **Inställningar**.) Du kan välja Riktad publicering för hela organisationen eller bara för valda användare. Mer information om programmet finns [i Standard- eller målutgivningsalternativ i Microsoft 365.](release-options-in-office-365.md)  <br/> |
+|Kan jag förhandsgranska ändringar eller funktioner innan de distribueras i organisationen?  <br/> |Ibland. Vissa ändringar och nya funktioner kan förhandsgranskas genom att anmäla sig till programmet Riktad utgåva. Om du vill anmäla dig går **Settings**du till Inställningar  >  **organisationsprofilens**  >  **utgivningsinställningar**. (I administrationscentret kan du behöva välja **Visa alla** längst ned i det vänstra navigeringsfönstret för att se **Inställningar**.) Du kan välja Riktad publicering för hela organisationen eller bara för valda användare. Mer information om programmet finns [i Standard- eller målutgivningsalternativ i Microsoft 365.](release-options-in-office-365.md)  <br/> |
 |Kan jag ta reda på det exakta datumet då en ändring blir tillgänglig för min organisation?  <br/> |Tyvärr kan vi inte berätta exakt datum då en ändring kommer att göras i din organisation. I vårt meddelandecenter post, kommer vi att ge så mycket information som vi kan om tidpunkten för frisläppandet, baserat på vår förtroendenivå. Vi förstår att du vill att vi ska vara mer specifika när det gäller tidpunkten för utgåvor, och vi arbetar med förbättringar för att bli bättre med den detaljnivån.  <br/> |
 |Är de här meddelandena specifika för min organisation?  <br/> |Vi gör vårt bästa för att se till att du bara ser inlägg i Message Center som påverkar din organisation. Microsoft 365-översikten innehåller alla funktioner som vi för närvarande arbetar med och distribuerar, men inte alla dessa funktioner gäller för alla organisationer. Om en funktion till exempel bara distribueras till utbildningsinstitutioner riktar vi endast inlägg i meddelandecentret till dessa organisationer.  <br/> |
 |Kan jag få inlägg från message center som skickas via e-post i stället?  <br/> |Ja! Du kan välja att ha en vecka smält skickas till dig och upp till två e-postadresser. Om du behöver ha sammanfattningen gå till fler än två personer kan du skicka till en Microsoft 365-grupp eller distributionslista. Den veckovisa sammanfattningen via e-post är aktiverad som standard. Om du inte får dina veckovisa sammanfattningar kontrollerar du skräppostmappen. Mer information om hur du ställer in veckosammanfattningen finns i avsnittet [Inställningar](#preferences) i den här artikeln.  <br/> |
@@ -128,9 +128,6 @@ Om administrationen distribueras över hela organisationen kanske du inte vill e
 - Ange e-postinställningar för att ta emot en veckovis sammanfattning av alla meddelanden, e-postmeddelanden endast för större uppdateringar och e-postmeddelanden för datasekretessmeddelanden.  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. Välj **Redigera inställningar** högst upp i Meddelandecenter.
 

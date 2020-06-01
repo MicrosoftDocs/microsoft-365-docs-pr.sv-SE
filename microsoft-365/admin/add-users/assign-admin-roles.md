@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en användare eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387243"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432105"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -47,13 +47,6 @@ Titta på en kort video om att lägga till en administratör.<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>Tilldela administratörsroller 
 
@@ -99,7 +92,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 1. I administrationscentret går du till sidan **Användare** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Redigera bredvid Roller i det utfällbara fönstret **bredvid** **Roller**. 
+2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Redigera bredvid Roller i det utfällbara fönstret **bredvid** **Roller**.
 
     Om du inte ser alternativet **Redigera** har du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i ditt företag att tilldela roller åt dig. I ett litet företag är företagsägaren (personen som köpte prenumerationen) en global administratör. I ett stort företag är nyckelpersoner på IT-avdelningen globala administratörer.
 
@@ -125,9 +118,10 @@ Du kanske inte har rätt behörigheter och har därför inte åtkomst till att t
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
+[Om administratörsroller i Microsoft 365](about-admin-roles.md)
+
 [Tilldela roller till användarkonton med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Auktorisera eller ta bort partnerrelationer](../misc/add-partner.md)
 
 [Lägga till en alternativ e-postadress med administrationscentret för Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

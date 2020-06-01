@@ -23,21 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Läs om hur du bevarar en medarbetares filer och e-postmeddelanden när personen lämnar organisationen.
-ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387207"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431719"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 
 När en medarbetare lämnar organisationen vill du förmodligen komma åt deras data (dokument och e-postmeddelanden) och antingen granska dem, säkerhetskopiera den eller ge den till en ny medarbetare.
@@ -50,9 +43,6 @@ Om du tar bort en användares licens men inte tar bort kontot kan du ge dig sjä
 Om du vill bevara en tidigare användares OneDrive-filer ger du dig först åtkomst till deras OneDrive och flyttar sedan de filer du vill behålla. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Om du inte använder det nya administrationscentret för Microsoft 365 kan du aktivera det genom att välja **Prova det nya administrationscentret** längst upp på startsidan.
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.  
     
@@ -132,7 +122,7 @@ Som global administratör kan du ge dig själv tillgång till innehållet på en
 
 2. Välj **Administrationscenter** \> **SharePoint**i den vänstra rutan . (Du kan behöva välja **Visa alla** för att se listan över administrationscenter.)
 
-3. Om det klassiska Administrationscentret för SharePoint visas väljer du **Öppna det nu** högst upp på sidan för att öppna det nya Administrationscentret för SharePoint.
+3. Om det klassiska Administrationscentret för SharePoint visas väljer du **Öppna det nu** högst upp på sidan för att öppna administrationscentret för SharePoint.
 
 4. Välj **Fler funktioner**i den vänstra rutan .
 
