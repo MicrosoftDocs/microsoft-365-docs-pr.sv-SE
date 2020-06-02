@@ -22,17 +22,19 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Lär dig hur du skyddar Windows 10-datorer när du har konfigurerat Microsoft 365 för företag.
-ms.openlocfilehash: 88fb149e521848d6a7daa9498cd7d6240169c9fa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du skyddar Windows 10-datorer när du har konfigurerat Microsoft 365 Business Premium.
+ms.openlocfilehash: 5d5dda9c1faa7d50063c9b2b05bd938c67b54a76
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402756"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470617"
 ---
 # <a name="secure-windows-10-computers"></a>Skydda Windows 10-datorer
 
-När du har [konfigurerat](set-up.md) Microsoft 365 för företag är det dags att skydda Windows 10-datorerna i organisationen från stöld och skadliga hot som virus och skadlig kod.
+Den här artikeln gäller Microsoft 365 Business Premium.
+
+När du har [konfigurerat](set-up.md) Microsoft 365 Business Premium är det dags att skydda Windows 10-datorerna i organisationen från stöld och skadliga hot som virus och skadlig kod.
 Titta på det här videoklippet om du vill ha en översikt över hur du konfigurerar principer för att skydda dina Windows 10-datorer.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 

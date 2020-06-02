@@ -23,16 +23,16 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visa enhetsprinciper och -åtgärder genom att logga in på Microsoft 365 för företag med globala administratörsautentiseringsuppgifter.
-ms.openlocfilehash: f65365584d8b05f4df012d9f5727a74c33c06ae8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 49e878ae6d4e1a6c55dbd7bc65532f94295412a8
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403579"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470604"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visa och hantera principer och enheter
 
-[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 ## <a name="view-and-edit-device-policies"></a>Visa och redigera enhetsprinciper
 

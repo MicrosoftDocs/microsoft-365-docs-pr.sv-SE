@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Lär dig installationsstegen för Microsoft 365 Business Premium, från att prenumerera, lägga till en domän och användare, till att konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402987"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470534"
 ---
 # <a name="overview-of-setup"></a>Översikt över konfiguration
 
@@ -48,7 +48,7 @@ De flesta installationsstegen kan göras i installationsguiden, men de andra alt
 
    - **[Lägg till din domän](set-up.md#add-your-domain-to-personalize-sign-in)** (om du köpte domänen under [registreringen](sign-up.md)är det här steget redan gjort.)
 
-    - **Lägg till användare**. Du kan lägga till användare på något av de tre sätten:
+   - **Lägg till användare**. Du kan lägga till användare på något av de tre sätten:
         - I [guiden](set-up.md#add-users-in-the-wizard).
         - Använd katalogsynkronisering för att lägga till [användare med hjälp av Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) om du har en lokal Active-katalog.
         - Du kan också [lägga till användare senare](add-users-m365b.md) i administrationscentret.

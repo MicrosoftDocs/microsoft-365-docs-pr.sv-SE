@@ -27,16 +27,18 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: Lär dig mer om skyddsprinciper som gör att du kan hantera hur användare får åtkomst till Office-appar och arbetar filer från mobila enheter.
-ms.openlocfilehash: f613e518c3607010cae55443456be9d3ddc3d689
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b828cf2e201360f12b8fadcb395e72958230f6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403087"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471076"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Hantera hur användare kommer åt Office-dokument på mobila enheter
 
- Principinställningar som styr hur användare får åtkomst till Office-filer från sina mobila enheter är **Av** som standard. Vi rekommenderar att du accepterar standardvärdena under installationen för att skapa programprinciper för Android, iOS och Windows 10 som gäller för alla användare. Du kan skapa fler principer när installationen har slutförts. 
+Den här artikeln gäller Microsoft 365 Business Premium.
+
+Principinställningar som styr hur användare får åtkomst till Office-filer från sina mobila enheter är **Av** som standard. Vi rekommenderar att du accepterar standardvärdena under installationen för att skapa programprinciper för Android, iOS och Windows 10 som gäller för alla användare. Du kan skapa fler principer när installationen har slutförts. 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Inställningar som styr hur användare kommer åt Office-filer på mobila enheter
 

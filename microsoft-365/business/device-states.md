@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Lär dig mer om de olika enhetstillstånden i listan Enhetsåtgärder i Administrationshem i Microsoft 365 för företag.
-ms.openlocfilehash: 90c11caa03249408ba2916d303bcb4a59fbcca8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400963"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471188"
 ---
 # <a name="device-states"></a>Statusvärden för enheter
+
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 Enheter i listan **Enhetsåtgärder** (Administratörshemsida \> **Enhetsåtgärder**) kan ha följande statusar.
   

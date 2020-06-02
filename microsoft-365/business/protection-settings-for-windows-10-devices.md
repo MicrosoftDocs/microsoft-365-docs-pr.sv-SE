@@ -29,14 +29,16 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Lär dig hur du skapar en apphanteringsprincip och skyddar arbetsfiler på användarnas personliga Windows 10-enheter.
-ms.openlocfilehash: c3e003205da30fa79069946960ef00e4195f0cbc
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: df10470c6bd7aad2f35700a267c4d24d949f569c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386546"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470876"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Ange programskyddsinställningar för Windows 10-enheter
+
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 ## <a name="create-an-app-management-policy-for-windows-10"></a>Skapa en princip för programhantering för Windows 10
 

@@ -28,14 +28,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Lär dig att ta bort företagsdata från enheter som hanteras genom skyddsprinciper samt återställa Windows 10-enheter till fabriksinställningarna.
-ms.openlocfilehash: 2d725224631901054480d705ab2adc0f8f4f9353
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5e6ba7352a6a82811e1c79fe29bff35e3da5639e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403107"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471148"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Hantera skyddade enheter med Microsoft 365 för företag
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Hantera skyddade enheter med Microsoft 365 Business Premium
 
 När en användare ansluter sin enhet till din organisation genom att logga in med sitt arbetskonto till enheten eller till Office-appar på enheten kan du skydda enheten med de principer som du har ställt in. Anslutna enheter visas på sidan **Enheter.** Om en enhet försvinner eller blir stulen kan du ta bort företagsdata från den här sidan. Du kan även återställa Windows 10-enheter till deras fabriksinställning för att ta bort alla anpassade inställningar. 
 

@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Lär dig hur du får åtkomst till lokala resurser som affärsappar, filresurser och skrivare från en Azure Active Directory-ansluten till Windows 10-enhet.
-ms.openlocfilehash: da5fab99cf00a65986fb5e555cc19e432fe0fe8d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9615ecc9469992d3e5a7479f4799c610db11fb41
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401123"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471260"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Få åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 Business Premium
+
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 Alla Windows 10-enheter som är Azure Active Directory-anslutna har åtkomst till alla molnbaserade resurser, till exempel dina Microsoft 365-appar, och kan skyddas av Microsoft 365 Business Premium. Du kan också tillåta åtkomst till lokala resurser som LOB-appar (line of business), filresurser och skrivare. Om du vill tillåta åtkomst använder du [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) för att synkronisera din lokala Active Directory med Azure Active Directory. 
 

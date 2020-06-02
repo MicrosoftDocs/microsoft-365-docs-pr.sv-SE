@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: 'Lär dig mer om standardkonfiguration och lägga till programhanteringsprinciper för att skydda företagsdata på användarnas personliga mobila enheter. '
-ms.openlocfilehash: 1d76b8fde6db4cf99d29fcfff000c20f0e7c18fe
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401291"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470916"
 ---
 # <a name="protect-work-files-on-devices"></a>Skydda arbetsfiler på enheter
+
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 I dagens värld är användarna bundna till sina enheter, och när privatlivet och arbetslivet kolliderar kan dina företagsdata hamna på en anställds personliga enhet. De inställningar som du konfigurerar här kan hjälpa dig ta tillbaka kontrollen och skydda arbetsfiler, utan att användarens personliga inställningar eller data påverkas.
   

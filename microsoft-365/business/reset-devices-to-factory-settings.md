@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Lär dig hur du använder Microsoft 365 för företag för att fabriksåterställa Windows 10-enheter som du hanterar och återställa dem till de ursprungliga inställningarna vid köpet.
-ms.openlocfilehash: 62585828274652e48b6c6d3654faa8c20fb4caba
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b82f502f8fdcbbd2338b2a0e2ad69d230a693cb
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402775"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470816"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Återställa Windows 10-enheter till fabriksinställningarna
 
-[![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 En fabriksinställning återställer en enhet till de ursprungliga inställningarna då enheten köptes. Data, och alla appar som installerats sedan dess tas bort. Du kan använda Microsoft 365 för företag för att fabriksåterställa Windows 10-enheter som du hanterar.
   

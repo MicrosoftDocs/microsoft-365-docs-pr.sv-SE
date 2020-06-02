@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ccaa0a99dbfe8ce775f078093b9bf6b34e503fa7
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327930"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477190"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterade skrivbordsenheter 
 
@@ -42,6 +42,7 @@ Länkarna till enheter här är endast för din referens. Om du vill beställa e
 | [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | den 1 maj 2021  | den 1 maj 2024  |
 | [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | den 1 maj 2021  | den 1 maj 2024  |
 | **\*[Dell Latitude 7400 2-i-1-dator](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | den 1 maj 2021  | den 1 maj 2024  |
+| **\*[Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop)** | 128 GB / Intel i3 / 8 GB RAM | Inga | den 1 maj 2022  | den 1 maj 2025  |
 | [HP EliteBook 830 / 840 / 850 G6 bärbar dator](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtryckssensor krävs | Den 30 november 2020 | den 30 november 2023 |
 | [HP EliteBook x360 830 G6 bärbar dator](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtryckssensor krävs | Den 30 november 2020 | den 30 november 2023 |
 | **\*[HP Elite x2 G4 Tablett](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS03AV | den 31 juli 2021 | den 31 juli 2024 |
@@ -54,11 +55,11 @@ Länkarna till enheter här är endast för din referens. Om du vill beställa e
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV, IR-kamera eller fingeravtrycksläsare krävs | den 6 juni 2020 | den 6 juni 2023 |
 | [HP Z2 Mini G4 Arbetsstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU med 8QR48AV| den 31 januari 2021 | den 31 januari 2024 |
 |[HP ZBook 14u/15u G6 Mobil arbetsstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS02AV, IR-kamera krävs | Den 30 november 2020 | den 30 november 2023 |
-| [Yta Gå](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | Inga | Den 2 augusti 2020 | Den 2 augusti 2023 |
+| [Yta Gå 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8GB RAM | Inga | den 21 maj 2022 | den 21 maj 2027 |
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | Inga | den 16 oktober 2020 | den 16 oktober 2023 |
-| **\*[Surface Laptop 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | Inga | den 22 oktober 2021 | den 22 oktober 2024 |
+| **\*[Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | Inga | den 22 oktober 2021 | den 22 oktober 2024 |
 | [Yta Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | Inga | den 16 oktober 2020 | den 16 oktober 2023 |
-| **\*[Yta Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | Inga | den 22 oktober 2021 | den 22 oktober 2024 |
+| **\*[Yta Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | Inga | den 22 oktober 2021 | den 22 oktober 2024 |
 
 Dessutom måste enheten också uppfylla dessa kriterier:     
 

@@ -25,14 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du ställer in principer för villkorlig åtkomst för Microsoft 365-kampanjer för att lägga till betydande ytterligare säkerhet.
-ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58ee760877ee2fd7e53ef9463242657ab66a2b6e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403027"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470656"
 ---
 # <a name="set-up-conditional-access-policies"></a>Ställ in principer för villkorlig åtkomst
+
+Den här artikeln gäller Microsoft 365 Business Premium.
 
 [Principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ger betydande ytterligare säkerhet. Microsoft tillhandahåller en uppsättning principer för grundläggande villkorlig åtkomst som rekommenderas för alla kunder. Baslinjeprinciper är en uppsättning fördefinierade principer som hjälper till att skydda organisationer mot många vanliga attacker. Dessa vanliga attacker kan omfatta lösenordsspray, uppspelning och nätfiske.
 

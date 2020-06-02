@@ -1,5 +1,5 @@
 ---
-title: Slå på och stänga av integrerade applikationer
+title: Hantera användarens medgivande till appar i Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,42 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Lär dig mer om integrerade appar och hur du aktiverar dem så att appar från tredje part kan komma åt användarnas Microsoft 365-information.
-ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs mer om användarens medgivande till appar och hur du aktiverar dem så att appar från tredje part kan komma åt användarnas Microsoft 365-information.
+ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399344"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477178"
 ---
-# <a name="turning-integrated-apps-on-or-off"></a>Slå på och stänga av integrerade applikationer
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Hantera användarens medgivande till appar i Microsoft 365
 
-När integrerade appar är aktiverade kan användare i organisationen tillåta att appar från tredje part får åtkomst till sin Microsoft 365-information. Till exempel tredjepartsprogram som använder informationen i kalendern eller kan användas för att redigera filer i en OneDrive-mapp.
+Den här inställningen styr om användare kan ge det medgivandet till appar som använder OpenID Connect och OAuth 2.0 för inloggning och begäranden om åtkomst till data. En app kan skapas inifrån din egen organisation eller komma från en annan Office 365-organisation eller en tredje part.
 
-## <a name="turning-integrated-apps-on-or-off"></a>Slå på och stänga av integrerade applikationer
+Om du aktiverar den här inställningen ber dessa appar användarna om tillåtelse att komma åt organisationens data och användarna kan välja om de vill tillåta det. Om du inaktiverar den här inställningen måste administratörerna samtycka till dessa appar innan användarna kan använda dem. I det här fallet bör du överväga att konfigurera ett arbetsflöde för administratörsgodkännande i Azure-portalen så att användarna kan skicka en begäran om administratörsgodkännande för att använda en blockerad app.
+
+Det går bara att ge behörighet till sin egen Office 365-information. Det går inte att ge åtkomst till andra användares information.
+
+## <a name="turning-user-consent-on-or-off"></a>Aktivera eller inaktivera användarens medgivande
 <a name="__toc379982114"> </a>
 
-Så här aktiverar/inaktiverar du integrerade appar:
+Så här aktiverar eller inaktiverar du Användarens medgivande till appar.
 
-1. Gå till sidan **Inställningar,** Tjänster i administrationscentret för Microsoft 365 \> **Settings** och välj sedan \> **Services** **Integrerade appar**.
+1. Gå till sidan **Inställningar** Org settings Services i administrationscentret \> **Org settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) och välj sedan **Användarens medgivande till appar**.
 
-2. På sidan **Integrerade appar** väljer du alternativet att aktivera eller inaktivera integrerade appar.
+2. På sidan **Användarens medgivande till appar** väljer du alternativet att aktivera eller inaktivera integrerade appar.
 
-## <a name="more-info-on-integrated-apps"></a>Mer information om integrerade appar
+## <a name="more-info"></a>Mer information
 <a name="__toc379982114"> </a>
 
-En integrerad app kan skapas inifrån din egen organisation, eller så kan den komma från en annan organisation eller en tredje part.
+Mer information om hur du konfigurerar dina inställningar för medgivande i Azure active directory läser [du Konfigurera arbetsflödet för administratörssamtycke](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
-Om du har aktiverat integrerade appar och använder en sådan får du en fråga om vilken behörighetsnivå till användarens information som appen ska ha. En användare kan endast ge åtkomst till appar som de äger och som har åtkomst till sin Microsoft 365-information. Det går inte att ge åtkomst till andra användares information.
-
-Det finns två typer av behörigheter som används när du använder integrerade appar i Microsoft 365: användarbehörigheter och administratörsbehörigheter. Exempel: Om integrerade appar är aktiverat för organisationen och en tredjepartsapp används kan användaren få en fråga om appen får använda användarens profilinformation, redigera och ta bort filer, använda information i webbplatssamlingar och skicka e-post i användarens namn.
-
-![Användarbehörigheter för integrerade appar](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
-
-Om en administratör registrerar en app för alla användare i en organisation ombeds han eller hon om tillåtelse att låta appen komma åt information och resurser i organisationen. Efter det, när andra användare i organisationen använder appen, får de ingen fråga om behörighet. När en administratör registrerar en app måste den administratören kontrollera appens utgivare. Mer information om registrering av appar finns i [Lägga till, uppdatera och ta bort program](https://go.microsoft.com/fwlink/p/?LinkID=518600).
-
-![Administratörsbehörigheter för integrerade appar](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
-
-Om du har inaktiverat integrerade appar avinstalleras inte program som redan har installerats och har behörighet till information, och behörigheterna tas inte bort. Trots att integrerade appar är inaktiverat kan administratörer fortfarande registrera program och göra dem tillgängliga för användarna och tillåta att apparna använder informationen. Mer information om hur du tar bort en registrerad app och dess behörigheter finns i [Lägga till, uppdatera och ta bort program](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).
-
-
+Om du vill veta mer om hur du hanterar användarens medgivande till appar läser du [Hantera samtycke till program och utvärdera samtyckesbegäranden](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).
