@@ -218,6 +218,8 @@
           href: manage/manage-messages.md
         - name: Konfigurera versionsalternativ
           href: manage/release-options-in-office-365.md
+        - name: Visa eller dölj nya funktioner
+          href: manage/show-hide-new-features.md
         - name: Användningsanalys för Power BI
           items:
             - name: Om användningsanalys
