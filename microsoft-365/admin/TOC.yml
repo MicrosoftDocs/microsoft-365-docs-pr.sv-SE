@@ -11,7 +11,15 @@
         - name: Planera konfigurationen
           href: setup/plan-your-setup.md
         - name: Konfigurera din organisation med hjälp av en guide
-          href: setup/setup.md
+          items:
+            - name: Microsoft 365 Business Basic
+              href: setup/setup-business-basic.md
+            - name: Microsoft 365 Business Standard
+              href: setup/setup-business-standard.md
+            - name: Microsoft Business Premium
+              href: ../business/set-up.md
+            - name: Microsoft 365-applikationer för affärsverksamhet
+              href: setup/setup-apps-for-business.md
         - name: Utforska konfigurationssidan och guiden
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Migrera dina data
@@ -21,7 +29,7 @@
         - name: Distribuera Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: Apputbildning för alla
-          href: 'https://support.office.com/en-us/office-training-center'
+          href: 'https://support.office.com/office-training-center'
         - name: Vilken prenumeration har jag?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Anpassa inloggningssidan
@@ -240,10 +248,42 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Aktivera modern autentisering för Office 2013
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Skydda Microsoft Business Premium
+          items:
+            - name: Förutsättningar för dataskydd
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: Säkerhetslösningar
+              href: ../business/security-features.md
+            - name: Öka hotskyddet
+              href: ../business/increase-threat-protection.md
+            - name: Konfigurera funktioner för efterlevnad
+              href: ../business/set-up-compliance.md
         - name: Säkerhetspoäng
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: En guide till GDPR-efterlevnad
           href: security-and-compliance/gdpr-compliance.md
+    - name: Hantera enheter
+      items:
+        - name: Visa och redigera principer och enheter
+          href: ../business/view-policies-and-devices.md
+        - name: Ta bort företagsdata
+          href: ../business/remove-company-data.md
+        - name: Återställa enheter till fabriksinställningar
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: Mappa skyddsfunktioner till Intune-inställningar
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: Inställningar för appskydd för Android och iOS
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: Validera inställningar på Android eller iOS
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: Inställningar för enhetsskydd för Windows 10-datorer
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: Validera inställningar på Windows 10-datorer
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: Programskyddsinställningar för Windows 10-enheter
+          href: ../business/protection-settings-for-windows-10-devices.md
     - name: Arbeta med kunder
       href: work-with-customers/index.yml
       items:
