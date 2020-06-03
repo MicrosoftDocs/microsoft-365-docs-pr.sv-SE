@@ -6,10 +6,10 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42805431"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Komma igång med Microsoft Hanterat skrivbord

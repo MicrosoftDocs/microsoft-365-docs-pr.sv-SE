@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262420"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520164"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Så här rapporterar du falska positiva identifieringar/negativ i automatiserade undersöknings- och svarsfunktioner
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262420"
 Har funktioner för [automatisk undersökning och respons (AIR) i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) missat eller felidentifierade något? Det finns åtgärder du kan vidta för att åtgärda det. Du kan:
 - [Rapportera ett falskt positivt/negativt till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Justera dina aviseringar](#adjust-an-alert-to-prevent-false-positives-from-recurring) (om det behövs); Och 
-- [Ångra åtgärder för reparation som har vidtagits på enheter](#undo-a-remediation-action). 
+- [Ångra åtgärder för reparation som har vidtagits](#undo-a-remediation-action). 
 
 Använd den här artikeln som vägledning. 
 

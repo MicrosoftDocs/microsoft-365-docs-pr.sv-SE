@@ -1,6 +1,6 @@
 ---
 title: Tabellen EmailEvents i det avancerade jaktschemat
-description: Lär dig mer om händelser som är kopplade till Microsoft-e-postmeddelanden i tabellen EmailEvents i det avancerade jaktschemat
+description: Lär dig mer om händelser som är associerade med Microsoft 365-e-postmeddelanden i tabellen EmailEvents i det avancerade jaktschemat
 keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, E-posthändelser, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, bifogad filnamn, dom för skadlig kod, phishing-dom, antal bilagor, antal länkar, url-antal
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633537"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515861"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "43633537"
 
 
 
-Tabellen `EmailEvents` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om händelser som involverar bearbetning av e-postmeddelanden på Office 365 ATP. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`EmailEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om händelser som involverar bearbetning av e-postmeddelanden på Office 365 ATP. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 

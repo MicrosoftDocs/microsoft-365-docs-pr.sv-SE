@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931750"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498357"
 ---
 # <a name="custom-detections-overview"></a>Översikt över anpassade identifieringar
 
 **Gäller:**
-- Microsofts hotskydd
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+- Microsoft Hotskydd
 
 Med anpassade identifieringar kan du proaktivt övervaka och svara på olika händelser och systemtillstånd, inklusive misstänkt intrångsaktivitet och felkonfigurerade slutpunkter. Detta möjliggörs genom anpassningsbara identifieringsregler som automatiskt utlöser aviseringar samt svarsåtgärder.
 
@@ -41,4 +39,4 @@ Anpassade identifieringar ger:
 
 ## <a name="related-topic"></a>Relaterat ämne
 - [Skapa och hantera anpassade identifieringsregler](custom-detection-rules.md)
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)

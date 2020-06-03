@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330847"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498465"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurera Microsoft Threat Protection-pelare för testlabbeta
 
@@ -238,6 +238,9 @@ Klicka på **Nästa**.
 <br>![Knappen Bild of_Save inställningar som du måste klicka på](../../media/mtp-eval-72.png) <br>
 
 ## <a name="turn-on-microsoft-threat-protection"></a>Aktivera Microsoft Hotskydd
+>[!NOTE]
+>Från och med den 1 juni 2020 aktiverar Microsoft automatiskt Microsoft Threat Protection-funktioner för alla berättigade klienter. Mer information finns i den här [artikeln i Microsoft Tech Community om licensberättigande.](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 
+<br>
 1. Gå till [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigera till **Inställningar** och välj sedan **Microsoft Threat Protection**.
 <br>![Bild of_Microsoft alternativ för skydd av hot från sidan Inställningar för Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
 

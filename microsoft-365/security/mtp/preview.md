@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503989"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515873"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
 
@@ -48,15 +48,17 @@ Aktivera inställningen för förhandsgranskningsupplevelsen så att den är bla
 2. Välj **Microsoft Threat Protection**.
 
 
-3. Välj **Förhandsgranskningsfunktioner** > **Aktivera förhandsgranskningsfunktioner**. 
+3. Välj **Förhandsgranskningsfunktioner**  >  **Aktivera förhandsgranskningsfunktioner**. 
 
 3. Välj **Spara**.
 
 Du vet att du har aktiverat förhandsgranskningsfunktioner när du ser att kryssrutan **Aktivera förhandsgranskningsfunktioner** är markerad. 
 
-## <a name="preview-features"></a>Förhandsgranska funktioner
+## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 Följande funktioner och förbättringar är för närvarande tillgängliga vid förhandsversionen:
 
-- **[Anpassade identifieringar](custom-detections-overview.md)** – använd avancerade jaktfrågor för att skapa regler som automatiskt söker efter intrångsaktivitet och andra objekt av intresse med jämna mellanrum. Matchar frågorna utlösa aviseringar och angivna svarsåtgärder.
-
 - **[Identitets- och apptabeller](advanced-hunting-schema-tables.md)** – få insyn i autentiseringshändelser, Active Directory-frågor och apprelaterad aktivitet med [tabellerna IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)och [AppFileEvents](advanced-hunting-appfileevents-table.md) i det avancerade jaktschemat.
+
+- **[Tabellen EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** – använd den här tabellen för att skapa [avancerade jaktfrågor](advanced-hunting-overview.md) som söker efter åtgärder som vidtagits på e-postmeddelanden när de har levererats till mottagarpostlådor.
+
+- **[FileProfile() funktion](advanced-hunting-fileprofile-function.md)** - använd i dina [avancerade jaktfrågor](advanced-hunting-overview.md) för att införliva omfattande filinformation.

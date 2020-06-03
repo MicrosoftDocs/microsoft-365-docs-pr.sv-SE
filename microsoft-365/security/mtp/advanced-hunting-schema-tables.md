@@ -17,17 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3509bc5031ed83785c2b0de4c0711d04f5d5ac56
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 2ed89a676525b91f6b0923cf39be5b014638e93e
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327028"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515849"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jaktschemat
 
 **Gäller:**
 - Microsoft Hotskydd
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Det [avancerade jaktschemat](advanced-hunting-overview.md) består av flera tabeller som ger antingen händelseinformation eller information om datorer och entiteter. Om du effektivt vill skapa frågor som sträcker sig över flera tabeller måste du förstå tabellerna och kolumnerna i det avancerade jaktschemat.
 
@@ -56,7 +58,8 @@ Följande referens listar alla tabeller i schemat. Varje tabellnamn länkar till
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Kunskapsbas för offentliggjorda sårbarheter, inklusive om det är allmänt tillgängligt för att utnyttja kod |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information om filer som är kopplade till e-postmeddelanden |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 e-posthändelser, inklusive e-postleverans och blockering av händelser |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i Microsoft 365-e-postmeddelanden |
+| **[E-postPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Säkerhetshändelser som inträffar efter leverans, efter att Microsoft 365 har levererat e-postmeddelandena till mottagarens postlåda |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i e-postmeddelanden |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringshändelser som registrerats av Active Directory och andra Microsoft-onlinetjänster |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Frågeaktiviteter som utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner |

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352516"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498669"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
@@ -42,7 +42,7 @@ När skräppostregeln är aktiverad i postlådan kan EOP flytta meddelanden till
 Administratörer kan använda Exchange Online PowerShell för att inaktivera, aktivera och visa status för skräppostregeln på postlådor. Administratörer kan också använda Exchange Online PowerShell för att konfigurera poster i samlingen safelist på postlådor (listan Betrodda avsändare, listan Betrodda mottagare och listan Blockera avsändare).
 
 > [!NOTE]
-> Meddelanden från avsändare som användare har lagt till i sina egna listor över betrodda avsändare hoppar över EOP-filtrering (SCL är -1). Om du vill hindra användare från att lägga till poster i listan Betrodda avsändare i Outlook använder du Grupprincip som nämns i avsnittet [Om skräppost i Outlook](#about-junk-email-settings-in-outlook) senare i det här avsnittet.
+> Meddelanden från avsändare som användare har lagt till i sina egna listor över betrodda avsändare hoppar över anslutningsfiltrering som en del av EOP (SCL är -1). Om du vill hindra användare från att lägga till poster i listan Betrodda avsändare i Outlook använder du Grupprincip som nämns i avsnittet [Om skräppost i Outlook](#about-junk-email-settings-in-outlook) senare i det här avsnittet. Atp-kontroller (Content filtering, Advanced Threat Protection) tillämpas fortfarande på meddelandena.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -89,7 +89,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 
 Om du vill kontrollera att du har aktiverat eller inaktiverat skräppostregeln på en postlåda använder du någon av följande procedurer:
 
-- Ersätt _ \< MailboxIdentity \> _ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera **egenskapsvärdet Aktiverad:**
+- Ersätt _\<MailboxIdentity\>_ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera **egenskapsvärdet Aktiverad:**
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 
 Om du vill kontrollera att du har konfigurerat insamlingen för säker lista på en postlåda använder du något av följande:
 
-- Ersätt _ \< MailboxIdentity \> _ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera egenskapsvärdena:
+- Ersätt _\<MailboxIdentity\>_ med postlådans namn, alias eller e-postadress och kör följande kommando för att verifiera egenskapsvärdena:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

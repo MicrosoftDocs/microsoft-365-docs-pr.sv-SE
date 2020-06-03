@@ -18,10 +18,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.openlocfilehash: 754c9476e81dd84e2140e18b8684061f52c287ba
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42929332"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents

@@ -22,10 +22,10 @@ search.appverid:
 - MET150
 description: Anpassa din sig-in-sida med ett sekretess- och samtyckesmeddelande för Microsoft 365 för kampanjer.
 ms.openlocfilehash: ddf99652ef7fd66df508a36dc4368595509597f6
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42810078"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Anpassa din inloggningssida med ett sekretess- och samtyckesmeddelande

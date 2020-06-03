@@ -17,21 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 46849aa81da5a615a5dff7c5e2ac28566443d3ee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 47486f34f9926d83e52ba206f63d3e85286527dc
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633525"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515825"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
 **Gäller:**
 - Microsoft Hotskydd
 
-
-
-Tabellen `EmailUrlInfo` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om webbadresser i e-postmeddelanden och bilagor som bearbetas av Office 365 ATP. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`EmailUrlInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om webbadresser i e-postmeddelanden och bilagor som bearbetas av Office 365 ATP. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du flyttar ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402244"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515905"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium 
 
@@ -42,7 +42,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | Funktion    | Stöd i Microsoft 365 Business Premium    | Stöd i Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Lokalt**        | | | 
-| Office-appar<sup>1</sup>    | Microsoft 365-appar för företag    |  Microsoft 365 Apps för företag | 
+| Office-appar<sup>1</sup>    | Microsoft 365-appar för företag    | Microsoft 365-applikationer för företag | 
 | **Molnproduktivitetsappar**        | | | 
 | Exchange Online och Outlook    | Lagringsgräns på 50 GB per postlåda och obegränsad Exchange Online-arkivering    | Lagringsgräns på 100 GB per postlåda och obegränsad Exchange Online-arkivering | 
 | Teams    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
@@ -78,6 +78,7 @@ Du behöver inte göra några ändringar i din aktuella prenumeration eller dina
 - Prenumerationskonfiguration, till exempel DNS-poster och domännamn.
 - Användar- och gruppkonton och autentiseringsinställningar, till exempel multifaktorautentisering eller principer för villkorlig åtkomst.
 - Produktivitetstjänstkonfigurationer och deras data, till exempel Teams, Exchange Online-postlådor, SharePoint Online-webbplatser, OneDrive för företag-mappar och OneNote-anteckningsböcker.
+- Office-program skalas automatiskt. Office 365 modern licensiering kontrollerar användarens licenstilldelning var 72:e timme och konverterar Office-program till den version som matchar användarprenumerationen.
 
 ### <a name="windows-10"></a>Windows 10
 

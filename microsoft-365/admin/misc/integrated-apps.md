@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Läs mer om användarens medgivande till appar och hur du aktiverar dem så att appar från tredje part kan komma åt användarnas Microsoft 365-information.
-ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477178"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498323"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Hantera användarens medgivande till appar i Microsoft 365
 
@@ -42,7 +42,7 @@ Så här aktiverar eller inaktiverar du Användarens medgivande till appar.
 
 1. Gå till sidan **Inställningar** Org settings Services i administrationscentret \> **Org settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) och välj sedan **Användarens medgivande till appar**.
 
-2. På sidan **Användarens medgivande till appar** väljer du alternativet att aktivera eller inaktivera integrerade appar.
+2. På sidan **Användarens medgivande till appar** väljer du alternativet att aktivera eller inaktivera användarens medgivande.
 
 ## <a name="more-info"></a>Mer information
 <a name="__toc379982114"> </a>

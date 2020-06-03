@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Läs om hur du hittar en ny Microsoft 365-partner eller får kontaktinformation för en partner som du har arbetat med tidigare. '
-ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399770"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515801"
 ---
 # <a name="find-your-partner-or-reseller"></a>Hitta din partner eller återförsäljare
 
