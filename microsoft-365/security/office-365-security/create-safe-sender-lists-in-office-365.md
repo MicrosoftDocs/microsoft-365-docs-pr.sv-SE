@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209541"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545952"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Skapa listor över betrodda avsändare i EOP
 
@@ -39,7 +39,7 @@ Regler för e-postflöde ger mest flexibilitet för att säkerställa att endast
 > [!IMPORTANT]
 > • Var noga med att noga övervaka *eventuella* undantag som du spam filtrering med hjälp av säkra avsändare listor. <br/><br/> • Även om du kan använda säkra avsänningslistor för att hjälpa till med falska positiva (bra e-post markerad som skräppost), bör du betrakta användningen av säkra avsändarelistor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falska positiva identifieringar med hjälp av säkra avsänningslistor, eftersom undantag från skräppostfiltrering kan öppna din organisation för förfalskning och andra attacker. Om du insisterar på att använda listor med betrodda avsändare för att hantera falska positiva identifieringar måste du vara vaksam och hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) i redo. <br/><br/> • Om du vill att en domän ska kunna skicka oautentiserade e-postmeddelanden (kringgå skydd mot förfalskning) men inte kringgå kontroller av skräppost och skadlig kod kan du lägga till den i [listan Tillåtet Förspoof-värdeskåpavsändare](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP och Outlook granskar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet [Överväganden för massutskick av e-post](#considerations-for-bulk-email) senare i det här avsnittet.
 
-Däremot har du också flera alternativ för att blockera e-post från specifika källor med hjälp av _blockerade avsändarelistor_. Mer information finns [i Skapa blockeringsavsänningslistor i EOP](create-block-sender-lists-in-office-365.md).
+Däremot har du också flera alternativ för att blockera e-post från specifika källor med hjälp av _blockerade avsändarelistor_. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Rekommenderas) Använda regler för e-postflöde
 
@@ -66,13 +66,13 @@ I följande exempel förutsätts att du behöver e-post från contoso.com för a
 
    - **Avsändaren** \> **är intern/extern** \> Utanför organisationen : Det här **villkoret**är implicit, men det är OK att använda det för att ta hänsyn till lokala e-postservrar som kanske inte är korrekt konfigurerade.
 
-   - **Ämnet eller kroppen** \> **ämne eller kropp innehåller något av dessa ord** \> \<nyckelord \> : Om du ytterligare kan begränsa meddelandena med nyckelord eller fraser i ämnesraden eller meddelandetexten kan du använda dessa ord som ett villkor.
+   - **Ämnet eller kroppen** \> **ämne eller kropp innehåller något av dessa ord** \> \<keywords\>: Om du ytterligare kan begränsa meddelandena med nyckelord eller fraser i ämnesraden eller meddelandetexten kan du använda dessa ord som ett villkor.
 
 4. **Åtgärd**: Konfigurera båda dessa åtgärder i regeln:
 
    a. **Ändra meddelandeegenskaperna** \> **ställa in spam förtroendenivå (SCL)** \> **Kringgå skräppostfiltrering**.
 
-   b. **Ett meddelandehuvud** \> **innehåller något av dessa ord** \> **Rubriknamn**: \< CustomHeaderName \> **Header värde**: \< CustomHeaderValue \> .
+   b. **Ett meddelandehuvud** \> **innehåller något av dessa ord** \> **Rubriknamn**: \<CustomHeaderName\> **Rubrikvärde**: \<CustomHeaderValue\> .
 
       Till exempel `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Om du har mer än en domän i regeln kan du anpassa rubriktexten efter behov.
 
@@ -118,7 +118,7 @@ Ett standardmeddelande för SMTP-meddelanden består av ett *meddelandekuvert* o
 
 - `5322.From`(även känd som **Från-adressen** eller P2-avsändaren) är e-postadressen i fältet **Från-huvud** och är avsändarens e-postadress som visas i e-postklienter.
 
-Ofta är `5321.MailFrom` adresserna och `5322.From` desamma (kommunikation mellan person och person). Men när e-post skickas på uppdrag av någon annan, är adresserna ofta olika. Detta händer oftast oftast för massmeddelanden.
+Ofta är `5321.MailFrom` adresserna och `5322.From` desamma (kommunikation mellan person och person). Men när e-post skickas på uppdrag av någon annan, kan adresserna vara olika. Detta händer oftast för massmeddelanden.
 
 Anta till exempel att Blue Yonder Airlines har anlitat Margie's Travel för att skicka ut sin e-postreklam. Meddelandet du får i Inkorgen har följande egenskaper:
 

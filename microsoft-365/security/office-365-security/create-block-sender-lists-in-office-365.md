@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Administratörer kan lära sig mer om tillgängliga och önskade alternativ för att blockera inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209553"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545906"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Skapa blockerade avsändarelistor i EOP
 
@@ -38,6 +38,18 @@ Den bästa metoden för att blockera avsändare varierar beroende på omfattning
 > Även om du kan använda organisationsomfattande blockinställningar för att åtgärda falska negativ (missat skräppost), bör du också skicka dessa meddelanden till Microsoft för analys. Om du hanterar falska negativ genom att använda blockeringslistor ökar dina administrativa kostnader avsevärt. Om du använder blockeringslistor för att avleda missade skräppost måste du hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) redo.
 
 Däremot har du också flera alternativ för att alltid tillåta e-post från specifika källor med hjälp av _säkra avsändarelistor_. Mer information finns i [Skapa listor över betrodda avsändare](create-safe-sender-lists-in-office-365.md).
+
+## <a name="email-message-basics"></a>Grunderna i e-postmeddelande
+
+Ett standardmeddelande för SMTP-meddelanden består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som krävs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelandehuvud (kallas gemensamt *meddelandehuvudet)* och meddelandetexten. Meddelandekuvertet beskrivs i RFC 5321 och meddelandehuvudet beskrivs i RFC 5322. Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
+
+- `5321.MailFrom`Adressen (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).** Om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR eller avvisningsmeddelande).
+
+- `5322.From`(även känd som **Från-adressen** eller P2-avsändaren) är e-postadressen i fältet **Från-huvud** och är avsändarens e-postadress som visas i e-postklienter.
+
+Ofta är `5321.MailFrom` adresserna och `5322.From` desamma (kommunikation mellan person och person). Men när e-post skickas på uppdrag av någon annan, kan adresserna vara olika.
+
+Blockerade avsändarelistor och blockerade domänlistor i anti-spam-principer i EOP inspekterar både `5321.MailFrom` `5322.From` och adresser. Outlook Blockerade avsändare använder bara `5322.From` adressen.
 
 ## <a name="use-outlook-blocked-senders"></a>Använda Outlook-blockerade avsändare
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 723b2584846b9d6ec01e7d4286a63d2dce0757ac
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322177"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545940"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Vad kommer i Microsoft Secure Score?
 
@@ -30,6 +30,26 @@ För att göra [Microsoft Secure Score](microsoft-secure-score-new.md) till en b
 
 Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)
 
-## <a name="may-2020"></a>Maj 2020
+## <a name="june-2020"></a>Juni 2020
 
-Inga ändringar planeras för närvarande
+### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Ta bort förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
+
+* Aktivera regler för minskning av attackytan
+
+### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Lägg till förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
+
+* Blockera Adobe Reader från att skapa underordnade processer
+* Använd avancerat skydd mot ransomware
+* Blockera alla Office-program från att skapa underordnade processer
+* Blockera Office-program från att skapa körbart innehåll
+* Blockera JavaScript eller VBScript från att starta nedladdat körbart innehåll
+* Blockera körning av potentiellt fördunklade skript
+* Blockera körbart innehåll från e-postklient och webbmail
+* Blockera Office-kommunikationsprogram från att skapa underordnade processer
+* Blockera ej betrodda och osignerade processer som körs från USB
+* Blockera persistens genom WMI-händelseprenumeration
+* Blockera Office-program från att injicera kod i andra processer
+* Blockera körbara filer från att köras om de inte uppfyller ett prevalens-, ålders- eller tillförlitligt listkriterium
+* Blockera processskapanden från PSExec- och WMI-kommandon
+* Blockera stöld av autentiseringsuppgifter från undersystemet Windows lokala säkerhetsmyndighet (lsass.exe)
+* Blockera Win32 API-anrop från Office-makron
