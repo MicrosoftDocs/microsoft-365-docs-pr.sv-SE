@@ -12,8 +12,9 @@
     - name: Översikt
       href: foundation-solutions-overview.md
     - name: Underlätta för distansarbetare med Microsoft 365
-      href: empower-people-to-work-remotely.md
       items:
+        - name: Översikt
+          href: empower-people-to-work-remotely.md
         - name: Steg 1. Öka inloggningssäkerheten
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Steg 2. Ge fjärråtkomst
