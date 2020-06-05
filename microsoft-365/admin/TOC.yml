@@ -42,6 +42,14 @@
           href: setup/customize-your-organization-theme.md
         - name: Läs om Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
+        - name: Åtkomst till lokala användare och resurser
+          items:
+            - name: "Synkronisera domänanvändare med Microsoft\_365"
+              href: ../business/manage-domain-users.md
+            - name: Aktivera domänanslutna Windows 10-enheter för hantering
+              href: ../business/manage-windows-devices.md
+            - name: Åtkomst till resurser från en Azure AD-ansluten enhet
+              href: ../business/access-resources.md
     - name: Översikt över administrationscenter för Microsoft 365
       items:
         - name: Översikt över administrationscentret
@@ -278,6 +286,8 @@
           href: ../business/reset-devices-to-factory-settings.md
         - name: Mappa skyddsfunktioner till Intune-inställningar
           href: ../business/map-protection-features-to-intune-settings.md
+        - name: Statusvärden för enheter
+          href: ../business/device-states.md
         - name: Inställningar för appskydd för Android och iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
@@ -290,6 +300,16 @@
               href: ../business/validate-settings-on-windows-10-pcs.md
         - name: Programskyddsinställningar för Windows 10-enheter
           href: ../business/protection-settings-for-windows-10-devices.md
+        - name: Autopilot
+          items:
+            - name: Lägga till Autopilot-enheter och -profiler
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: Skapa och redigera AutoPilot-profiler
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: Skapa och redigera AutoPilot-enheter
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: AutoPilot-profilinställningar
+              href: ../business/autopilot-profile-settings.md
     - name: Arbeta med kunder
       href: work-with-customers/index.yml
       items:

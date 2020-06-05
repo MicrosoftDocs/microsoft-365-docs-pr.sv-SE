@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160804"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560499"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
-Med distansarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller en modern arbetsplats och moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
+Med distansarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
 
 Microsoft Endpoint Manager tillhandhåller tjänster och verktyg för hantering av mobila enheter, stationära datorer, virtuella datorer, inbäddade enheter och servrar genom att kombinera följande tjänster som du kanske redan känner till och använder.
 
@@ -34,7 +34,7 @@ Microsoft Endpoint Manager tillhandhåller tjänster och verktyg för hantering 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune har utformats för att hjälpa dig att skydda data när du inte hanterar enheter som används för att få åtkomst till organisationens data. Skyddsprinciper för Intune-appar kombinerat med villkorlig åtkomst i Azure Active Directory ger detaljerad kontroll över data på mobila enheter. Intune gör det också möjligt att definiera fullständiga principer som gör att bara rätt personer har tillgång till dina företagsdata och säkerställa att data förblir skyddade genom att kontrollera hur de använder dem i Office, Outlook och andra mobilappar.
+Intune har utformats för att hjälpa dig att skydda data när du inte hanterar enheter som används för att få åtkomst till organisationens data. Skyddsprinciper för Intune-appar kombinerat med villkorlig åtkomst i Azure Active Directory (Azure AD) ger detaljerad kontroll över data på mobila enheter. Intune gör det också möjligt att definiera fullständiga principer som gör att bara rätt personer har tillgång till dina företagsdata och säkerställa att data förblir skyddade genom att kontrollera hur de använder dem i Office, Outlook och andra mobilappar.
 
 Mer information finns i det här [översikt över Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
@@ -66,8 +66,10 @@ Mer information finns i den här [översikt över Windows Autopilot](https://doc
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Tekniska IT-resurser för slutpunktshantering
 
-- [Registrera hanterade enheter för säkerhet, använd programinställningar för ohanterade enheter och använda principer för appar och enheter](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
-- [Registrera olika typer av enheter för hantering av mobila enheter (MDM)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+- [Del 3-video om hur man hanterar Windows 10-enheter vid distansarbete](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Del 5-video om hur man hanterar användares skrivbord och webbläsare vid distansarbete](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Distribuera en infrastruktur för rörlighet med Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Registrera olika typer av enheter för hantering av mobila enheter](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Hur du utbildar dina slutanvändare om Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-3"></a>Resultat i steg 3

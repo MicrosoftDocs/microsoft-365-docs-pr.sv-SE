@@ -24,6 +24,8 @@
           href: help-users-install-office.md
         - name: Åtkomst till lokala resurser
           items:
+            - name: "Synkronisera domänanvändare med Microsoft\_365"
+              href: manage-domain-users.md
             - name: Aktivera domänanslutna Windows 10-enheter för hantering
               href: manage-windows-devices.md
             - name: Åtkomst till resurser från en Azure AD-ansluten enhet
