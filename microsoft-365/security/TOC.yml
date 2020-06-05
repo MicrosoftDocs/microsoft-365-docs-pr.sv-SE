@@ -373,26 +373,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items:
-                - name: Översikt över instrumentpanelen för säkerhet
-                  href: ./office-365-security/security-dashboard.md
-                  items:
-                    - name: Genomgång – Från en detaljerad rapport till en insikt
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: Genomgång – Från en insikt till en detaljerad rapport
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: Genomgång – Från en instrumentpanel till en insikt
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Skapa ett schema för en rapport
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Hantera scheman för flera rapporter
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Konfigurera och ladda ned en anpassad rapport
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Ladda ned befintliga rapporter
-                      href: ./office-365-security/download-existing-reports.md
-                - name: Visa information om skadliga filer
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Översikt över instrumentpanelen för säkerhet
+              href: ./office-365-security/security-dashboard.md
+            - name: Visa information om skadliga filer
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Avancerat skydd
           href: ./office-365-security/office-365-atp.md
           items:
