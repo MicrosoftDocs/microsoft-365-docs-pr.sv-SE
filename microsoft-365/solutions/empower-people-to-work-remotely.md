@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina arbetare kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: ce287cdf5bcbd0283252b08c035dc954044a9c0e
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534967"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560475"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -38,6 +38,16 @@ Distansarbete kan betyda flera olika saker, till exempel:
 - En del arbetare som arbetar heltid på distans.
 - En fullständigt fjärransluten organisation där det inte finns något kontor och alla arbetare arbetar på distans.
 
+Oavsett tid och plats måste distansarbetare kunna komma åt:
+
+- Organisationsresurser av samma slag som finns att tillgå med programdatacentraler på plats.
+- Molnbaserade tjänster och data inom Microsoft 365-prenumerationen, till exempel Teams, Exchange Online, SharePoint och OneDrive.
+
+För smidig inloggning bör dina användarkonton i Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD). För att skydda dina Windows 10-enheter bör de registreras i Intune. Här är en övergripande vy över infrastrukturen.
+
+![Grundläggande infrastruktur för distansarbetare som använder Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+
+
 För att stödja distansarbetare, till exempel som svar under en COVID-19-kris finns det en kombination av funktioner i Microsoft 365 ger dina distansarbetare goda förutsättningar på ett mycket samarbetsinriktat sätt, till exempel:
 
 - Onlinemöten och chattsessioner.
@@ -51,27 +61,25 @@ Av säkerhets skäl innehåller Microsoft 365:
 - Behörigheter för att definiera vilka som kan göra vad med filer.
 - Omfattande säkerhetsfunktioner för att skydda Windows 10-enheter.
 
-För att möta dessa kriterier för distanspersonal använder du följande Microsoft 365-funktioner:
+Använd dessa Microsoft 365-funktioner för att uppfylla de här kriterierna vid distansarbete.
 
-- Användaridentitet och inloggningssäkerhet
-  - Användarkonton i Azure Active Directory (Azure AD) med multifaktorautentisering (MFA)
-  - En princip för villkorsstyrd åtkomst för att kräva MFA för riskfyllda inloggningar (Microsoft 365 E5)
-- Samarbetsplattformar
-  - Microsoft Teams, SharePoint och OneDrive, med vilka distansarbetare kan schemalägga och delta i videobaserade onlinemöten och arbeta med samma dokument samtidigt
-- Säker åtkomst till resurser
-  - Grupper och behörigheter för Teams, SharePoint-webbplatser och OneDrive så att bara autentiserade och tillåtna användare har åtkomst
-- Skydd mot läckta filer
-  - Känslighetsetiketter för kryptering och behörigheter som följer med filer
-- Enhetshantering och säkerhet med Microsoft Intune
-  - Registrering av hanterade enheter
-  - Appinställningar för personliga enheter
-  - Enhets- och apprinciper
-- Produktivitetsappar för enheter
-  - Microsoft 365 Apps (Word, PowerPoint, Excel) för samarbetsupplevelser med Teams, Exchange, SharePoint och OneDrive 
-- Windows 10 Enterprise
-  - Inbyggd uppsättning av säkerhetsfunktioner för att skydda mot cyberattacker och förhindra dataläckage
-- Åtkomst till lokala appar och servrar
-  - Anslutningar för virtuellt privat nätverk (VPN), Azure Active Directory-tillämpningsproxy eller Azure Point-to-Site VPN
+| Resurs eller funktion | Beskrivning | Licensiering |
+|:-------|:-----|:-------|
+| MFA som förstärks med säkerhetsstandarder   | Skydda er mot identitetsstölder och komprometterade enheter genom att kräva en andra form av autentisering vid inloggning. Säkerhetsstandarderna kräver MFA för alla användarkonton.   | Microsoft 365 E3 och E5 |
+| MFA som förstärks med villkorsstyrd åtkomst| Använd villkorsstyrda åtkomstprinciper för att kräva MFA baserat på egenskaperna för inloggningen.    | Microsoft 365 E3 och E5 | 
+| MFA som förstärks med riskbaserad villkorsstyrd åtkomst   | Använd Azure Advanced Threat Protection för att kräva MFA baserat på risken som är kopplad till användarens inloggning. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser | 
+| Självbetjäning för återställning av lösenord (SSPR)    | Låt användarna återställa eller låsa upp sina lösenord och konton.  | Microsoft 365 E3 och E5 |
+| Azure Active Directory Application Proxy    | Tillhandahåll säker fjärråtkomst till webbaserade program som finns på intranätsservrar.   | För detta krävs en separat, betald Azure-prenumeration |
+| Azure Point-to-Site VPN   | Skapa en säker anslutning från en distansarbetares enhet till ert intranät via ett virtuellt Azure-nätverk.   | För detta krävs en separat, betald Azure-prenumeration |
+| Windows Virtual Desktop   | Underlätta för distansarbetare som bara kan använda privata och ohanterade enheter med hjälp av virtuella skrivbord som körs i Azure. | För detta krävs en separat, betald Azure-prenumeration |
+| Fjärrskrivbordstjänster (RDS) | Låt medarbetarna ansluta till Windows-baserade datorer på intranätet. | Microsoft 365 E3 och E5 | 
+| Gateway för fjärrskrivbordstjänster   | Kryptera kommunikationen och hindra värddatorerna för fjärrskrivbordstjänsterna från att exponeras direkt på internet. | För detta krävs separata Windows Server-licenser |
+| Microsoft Intune | Hantera enheter och program.   | Microsoft 365 E3 och E5 | 
+| Konfigurationshanteraren | Hantera programvaruinstallationer, uppdateringar och inställningar på dina enheter | För detta krävs separata licenser för Konfigurationshanteraren |
+| Desktop Analytics | Avgör uppdateringsberedskapen hos dina Windows-klienter.   | För detta krävs separata licenser för Konfigurationshanteraren |
+| Windows Autopilot | Förinstallera och konfigurera nya Windows 10-enheter för effektiv användning.   | Microsoft 365 E3 och E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online och OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Skapa, kommunicera och samarbeta. | Microsoft 365 E3 och E5 |
+||||
 
 Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar, data och molntjänster och för att maximera produktiviteten för medarbetarna.
 
