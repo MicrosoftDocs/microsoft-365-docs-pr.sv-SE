@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Använd den nya säkerhetsinstrumentpanelen för att granska Status för skydd mot hotskydd i Office 365 och visa och agera på säkerhetsaviseringar.
-ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208042"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566722"
 ---
 # <a name="security-dashboard"></a>Instrumentpanel för säkerhet
 
@@ -47,11 +47,12 @@ Widgeten Sammanfattning av hot ger dig en överblick över hur din organisation 
 ![Säkerhetsinstrumentpanel – sammanfattningswidget för hothantering](../../media/SecDash-ThreatMgmtSummary.png)
 
 Vilken information du ser i sammanfattningen av hothantering beror på vad du prenumererar på. I följande tabell beskrivs vilken information som ingår för Office 365 E3 och Office 365 E5.
-|||
+
+
+|Office 365 E3 |Office 365 E5 |
 |---|---|
-|**Office 365 E3**|**Office 365 E5**|
 |Blockerade meddelanden om skadlig kod<br/>Nätfiskemeddelanden blockerade<br>Meddelanden som rapporterats av användare<br><br><br><br>|Blockerade meddelanden om skadlig kod<br>Nätfiskemeddelanden blockerade<br>Meddelanden som rapporterats av användare<br>Zero-day malware blockerad<br>Avancerade nätfiskemeddelanden har upptäckts<br>Blockerade skadliga webbadresser|
-|
+
 
 Om du vill visa eller komma åt widgeten Sammanfattning av hothantering måste du ha behörighet för att kunna visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
@@ -63,12 +64,10 @@ Widgeten Hot Protection Status visar hotskyddseffektivitet med en trendig och de
 
 Informationen beror på om din Microsoft 365-prenumeration innehåller [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) med eller utan Office [365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
-|||
+|Om din prenumeration innehåller...|Du ser dessa detaljer|
 |---|---|
-|**Om din prenumeration innehåller...**|**Du ser dessa detaljer**|
 |EOP men inte Office 365 ATP|Skadlig e-post som upptäcktes och blockerades av EOP.<br><br> Se [rapporten Status för hotskydd (EOP).](view-email-security-reports.md#threat-protection-status-report)|
 |Skaffa Office 365 ATP|Skadligt innehåll och skadlig e-post som upptäckts och blockerats av EOP och Office 365 ATP<br><br>Aggregerat antal unika e-postmeddelanden med skadligt innehåll som blockerats av anti-malware-motorn, [nolltimmars automatisk rensning](zero-hour-auto-purge.md)och ATP-funktioner (inklusive [säkra länkar,](atp-safe-links.md) [säkra bilagor](atp-safe-attachments.md)och [ATP-anti-phishing).](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br><br>Se [rapporten Status för hotskydd (ATP).](view-reports-for-atp.md#threat-protection-status-report)|
-|
 
 Om du vill visa eller komma åt widgeten Status för hotskydd måste du ha behörighet att visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
@@ -80,14 +79,13 @@ Widgeten Global Weekly Threat Detections visar hur många hot som upptäckts i e
 
 Måtten beräknas enligt beskrivningen i följande tabell:
 
-|||
+|Metriska|Hur det beräknas |
 |---|---|
-|**Metriska**|**Hur det beräknas**|
 |Skannade meddelanden|Antal skannade e-postmeddelanden multiplicerat med antalet mottagare|
 |Hot stoppas|Antal e-postmeddelanden som identifierats som innehållande skadlig kod multiplicerat med antalet mottagare|
 |Blockerad av [ATP](office-365-atp.md)|Antal e-postmeddelanden som blockerats av ATP multiplicerat med antalet mottagare|
 |Tas bort efter leverans|Antal meddelanden som tagits bort med [automatisk rensning](zero-hour-auto-purge.md) noll timmar multiplicerat med antalet mottagare|
-|
+
 
 ## <a name="malware"></a>Malware
 
@@ -105,9 +103,9 @@ Du kan till exempel se att nätfiskemeddelanden levereras eftersom vissa använd
 
 ## <a name="threat-investigation-and-response"></a>Hotutredning och hothantering
 
-Om organisationens prenumeration innehåller [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)har säkerhetsinstrumentpanelen ett avsnitt som innehåller avancerade verktyg för utredning och svar av hot. Organisationens säkerhetsteam kan använda informationen i det här avsnittet för att förstå nya kampanjer, undersöka hot och hantera incidenter.
+Om organisationens prenumeration innehåller [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)har säkerhetsinstrumentpanelen ett avsnitt som innehåller avancerade verktyg för utredning och svar av hot. Dessa verktyg inkluderar [automatiserade undersöknings- och svarsfunktioner](automated-investigation-response-office.md). Automatisk undersökning och svar kan vara till hjälp i scenarier som [att snabbt adressera komprometterade användarkonton](address-compromised-users-quickly.md).
 
-![Hotinformation hjälper dig att förstå attacker riktade mot din organisation](../../media/threatintelwidget.png)
+Mer information finns i [Komma igång med Automatisk undersökning och svar (AIR) i Office 365](office-365-air.md).
 
 ## <a name="trends"></a>Trender
 

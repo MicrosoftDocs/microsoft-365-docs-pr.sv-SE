@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använd rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351879"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566734"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -173,8 +173,4 @@ Om du inte ser data i ATP-rapporterna dubbelkollar du att dina principer är kor
 
 [Rapporter och insikter i Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Skapa ett schema för en rapport i &amp; Säkerhetsefterlevnadscenter](create-a-schedule-for-a-report.md)
-
-[Konfigurera och hämta en anpassad rapport i Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
-
 [Rollbehörigheter (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
