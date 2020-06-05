@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Läs mer om administrationscentret för Microsoft 365.
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432213"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560429"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -54,8 +54,6 @@ När nya funktioner blir tillgängliga i Microsoft 365-administrationscentret ka
 ### <a name="turn-on-targeted-release"></a>Aktivera Riktad release
 
 1. Logga in på [admin.microsoft.com](https://admin.microsoft.com)går du till navigeringsfönstret och väljer **Profilen Inställningar** \> **Organisation**.
-
-1. Logga in på [portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)går du till navigeringsfönstret och väljer **Profilen Inställningar** \> **Organisation**.
 
 2. Gå till kortet **Frigör inställningar** och välj sedan **Redigera**. 
     

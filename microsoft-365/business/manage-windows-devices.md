@@ -1,7 +1,7 @@
 ---
 title: Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 för företag
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,14 +23,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Lär dig hur du aktiverar Microsoft 365 för att skydda lokala Active-Directory-anslutna Windows 10-enheter i några få steg.
-ms.openlocfilehash: 7bfe5da8701a17712fa249eac99a22b8d5a1b2d1
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 857651081fb10856d28dd419333ebef655388407
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471056"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564962"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business Premium
 
@@ -42,48 +41,92 @@ I det här videoklippet beskrivs stegen för hur du konfigurerar det här för d
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
 
-## <a name="1-prepare-for-directory-synchronization"></a>1. Förbered för katalogsynkronisering 
+## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Innan du börjar måste du slutföra följande steg:
+- Synkronisera användare till Azure AD med Azure AD Connect.
+- Fullständig synkronisering av Azure AD Connect-organisationsenhet (OU).
+- Kontrollera att alla domänanvändare som du synkroniserar har licenser till Microsoft 365 Business Premium.
 
-Innan du synkroniserar användare och datorer från den lokala Active Directory-domänen läser du [Förbered för katalogsynkronisering till Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). I synnerhet gäller följande:
+Se [Synkronisera domänanvändare till Microsoft](manage-domain-users.md) för stegen.
 
-   - Kontrollera att det inte finns några dubbletter i katalogen för följande attribut: **e-post**, **proxyAdresser**och **userPrincipalName**. Dessa värden måste vara unika och eventuella dubbletter måste tas bort.
-   
-   - Vi rekommenderar att du konfigurerar attributet **userPrincipalName** (UPN) för varje lokalt användarkonto så att det matchar den primära e-postadressen som motsvarar den licensierade Microsoft 365-användaren. Till exempel: *mary.shelley@contoso.com* i stället *för mary@contoso.local*
-   
-   - Om Active Directory-domänen slutar i ett suffix som inte är dirigerbart som *.local* eller *.lan*i stället för ett internetrdigerbart suffix som *.com* eller *.org*justerar du UPN-suffixet för de lokala användarkontona först enligt beskrivningen i [Förbered en icke-dirigerbar domän för katalogsynkronisering](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+## <a name="1-verify-mdm-authority-in-intune"></a>1. Verifiera MDM-myndigheten i Intune
 
-## <a name="2-install-and-configure-azure-ad-connect"></a>2. Installera och konfigurera Azure AD Connect
+Gå till portal.azure.com och högst upp på sidan sök efter Intune.
+På sidan Microsoft Intune väljer du **Enhetsregistrering** och kontrollera att **MDM-behörigheten** är Intune på **sidan** **Microsoft Intune.**
 
-Om du vill synkronisera användare, grupper och kontakter från den lokala Active Directory till Azure Active Directory installerar du Azure Active Directory Connect och konfigurerar katalogsynkronisering. Mer information finns i [Konfigurera katalogsynkronisering för Office 365.](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)
+- Om **MDM-behörigheten** är **Ingen**klickar du på **MDM-behörigheten** för att ange den till **Intune**.
+- Om **MDM-behörigheten** är **Microsoft Office 365**går du till **Devices**  >  **Enheters registrera enheter** och använder dialogrutan Lägg till **MDM-behörighet** till höger för att lägga till **Intune MDM-behörighet** (dialogrutan **Lägg till MDM-auktoritet** är endast tillgänglig om **MDM-behörigheten** är inställd på Microsoft Office 365).
 
-> [!NOTE]
-> Stegen är exakt desamma för Microsoft 365 för företag. 
+## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Verifiera att Azure AD är aktiverat för att ansluta till datorer
 
-När du konfigurerar dina alternativ för Azure AD Connect rekommenderar vi att du aktiverar **lösenordssynkronisering,** **sömlös enkel inloggning**och **tillbakaskrivningsfunktionen** för lösenord, som också stöds i Microsoft 365 för företag.
+- Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> och välj Azure Active **Directory** (välj Visa alla om Azure Active Directory inte visas) i listan **Administrationscenter.** 
+- I **administrationscentret**för Azure Active Directory går du till **Azure Active Directory,** väljer **Enheter** och sedan **Enhetsinställningar**.
+- Verifiera**att användare kan ansluta till enheter till Azure AD** är aktiverat 
+    1. Om du vill aktivera alla användare anger du **alla**.
+    2. Om du vill aktivera specifika användare anger du **till Markerad** för att aktivera en viss grupp användare.
+        - Lägg till önskade domänanvändare som synkroniserats i Azure AD i en [säkerhetsgrupp](../admin/create-groups/create-groups.md).
+        - Välj **välj grupper** om du vill aktivera MDM-användaromfattning för den säkerhetsgruppen.
 
-> [!NOTE]
-> Det finns ytterligare några steg för återställning av lösenord utanför kryssrutan i Azure AD Connect. Mer information finns i [Så här konfigurerar du tillbaka lösenordet](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
+## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Verifiera att Azure AD är aktiverat för MDM
 
-## <a name="3-configure-hybrid-azure-ad-join"></a>3. Konfigurera Hybrid Azure AD-anslutning
+- Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> och välj **Slutpunktshanterare**t (välj **Visa alla** om **Slutpunktshanteraren** inte visas)
+- Gå till **Automatisk**registrering av Enheter med Windows Windows-registrering i **administrationscentret för Microsoft Slutpunktshanteraren**  >  **Windows**  >  **Windows Enrollment**  >  **Automatic Enrollment**.
+- Kontrollera att MDM-användaromfattningen är aktiverad.
 
-Innan du aktiverar Windows 10-enheter så att Hybrid Azure AD går med i, se till att du uppfyller följande förutsättningar:
+    1. Om du vill registrera alla datorer ställer du in på **Alla** för att automatiskt registrera alla användardatorer som är anslutna till Azure AD och nya datorer när användarna lägger till ett arbetskonto i Windows.
+    2. Ange till **Vissa** för att registrera datorerna för en viss grupp användare.
+        -  Lägg till önskade domänanvändare som synkroniserats i Azure AD i en [säkerhetsgrupp](../admin/create-groups/create-groups.md).
+        -  Välj **välj grupper** om du vill aktivera MDM-användaromfattning för den säkerhetsgruppen.
 
-   - Du kör den senaste versionen av Azure AD Connect.
+## <a name="4-set-up-service-connection-point-scp"></a>4. Ställ in tjänstanslutningspunkt (SCP)
 
-   - Azure AD connect har synkroniserat alla datorobjekt på de enheter som du vill ska vara hybrid Azure AD-anslutna. Om datorobjekten tillhör specifika organisationsenheter (OU) kontrollerar du att dessa organisationsenheter också är inställda för synkronisering i Azure AD connect.
+Dessa steg förenklas från [konfigurera hybrid azure AD-anslutning](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). För att slutföra de steg du behöver för att använda Azure AD Connect och dina globala administratörs- och Active Directory-administratörslösenord från Microsoft 365 Business Premium.
 
-Om du vill registrera befintliga domänanslutna Windows 10-enheter som Hybrid Azure AD gick med i följer du stegen i [självstudien: Konfigurera hybrid-Azure Active Directory-anslutning för hanterade domäner](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). Den här hybriden aktiverar din befintliga lokala Active Directory-anslutna Windows 10-datorer och gör dem molnklara.
-    
-## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. Aktivera automatisk registrering för Windows 10
+1.  Starta Azure AD Connect och välj sedan **Konfigurera**.
+2.  På sidan **Ytterligare uppgifter** väljer du **Konfigurera enhetsalternativ**och väljer sedan **Nästa**.
+3.  På sidan **Översikt** väljer du **Nästa**.
+4.  På sidan **Anslut till Azure AD** anger du autentiseringsuppgifterna för en global administratör för Microsoft 365 Business Premium.
+5.  På sidan **Enhetsalternativ** väljer du **Konfigurera Hybrid Azure AD-koppling**och väljer sedan **Nästa**.
+6.  På **SCP-sidan,** för varje skog där du vill att Azure AD Connect ska konfigurera SCP, slutför du följande steg och välj sedan **Nästa:**
+    - Markera rutan bredvid skogsnamnet. Skogen ska vara ditt AD-domännamn.
+    - Öppna listrutan under kolumnen **Autentiseringstjänst** och välj matchande domännamn (det bör bara finnas ett enda alternativ).
+    - Välj **Lägg till** om du vill ange autentiseringsuppgifterna för domänadministratören.  
+7.  Välj Endast Windows 10 eller senare domänanslutna enheter på sidan **Enhetsoperativsystem.**
+8.  På sidan **Klar att konfigurera** väljer du **Konfigurera**.
+9.  På sidan **Konfigurationens klara** väljer du **Avsluta**.
 
- Information om hur du automatiskt registrerar Windows 10-enheter för hantering av mobila enheter i Intune finns i [Registrera en Windows 10-enhet automatiskt med grupprincip](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). Du kan ange grupprincipen på lokal datornivå eller för massåtgärder, du kan använda mallarna Grupprinciphantering och ADMX för att skapa den här grupprincipinställningen på domänkontrollanten.
 
-## <a name="5-configure-seamless-single-sign-on"></a>5. Konfigurera sömlös enkel inloggning
+## <a name="5-create-a-gpo-for-intune-enrollment--admx-method"></a>5. Skapa ett GPO för Intune-registrering – ADMX-metoden
 
-  Sömlös SSO signerar automatiskt användare i sina Microsoft 365-molnresurser när de använder företagsdatorer. Distribuera bara ett av de två grupprincipalternativen som beskrivs i [Azure Active Directory Seamless Single Sign-On: Snabbstart](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). Alternativet **Grupprincip** tillåter inte att användarna ändrar sina inställningar, medan alternativet **Grupprincipinställningar** anger värdena men också gör att de kan konfigureras av användaren.
+Använda. ADMX-mallfil.
 
-## <a name="6-set-up-windows-hello-for-business"></a>6. Konfigurera Windows Hello för företag
+1.  Logga in på AD-server, sök och öppna **Server Manager**  >  **Tools**  >  **Grupprinciphantering**för Serverhanterarens verktyg .
+2.  Välj ditt domännamn under **Domäner** och högerklicka på **Grupprincipobjekt** för att välja **Nytt**.
+3.  Ge det nya nationella användarobjektet ett namn, till exempel "*Cloud_Enrollment*" och välj sedan **OK**.
+4.  Högerklicka på den nya grupprincipobjektet under **Grupprincipobjekt** och välj **Redigera**.
+5.  Gå till Administrativa mallar för **datorkonfigurationsprinciper**i Redigeraren för **grupprinciphantering.**  >  **Policies**  >  **Administrative Templates**  >  **Windows Components**  >  **MDM**
+6. Högerklicka på **Aktivera automatisk MDM-registrering med standardautentiseringsuppgifter för Azure AD** och välj sedan **Aktiverad**  >  **OK**. Stäng redigeringsfönstret.
 
- Windows Hello för företag ersätter lösenord med stark tvåfaktorsautentisering (2FA) för signering på en lokal dator. En faktor är ett asymmetriskt nyckelpar och det andra är en PIN-kod eller annan lokal gest, till exempel fingeravtryck eller ansiktsigenkänning om enheten stöder det. Vi rekommenderar att du byter lösenord mot 2FA och Windows Hello för företag där det är möjligt.
+> [!IMPORTANT]
+> Om du inte ser principen **Aktivera automatisk MDM-registrering med standardautentiseringsuppgifter för Azure AD**läser du Hämta de [senaste administrativa mallarna](#get-the-latest-administrative-templates).
 
-Om du vill konfigurera Hybrid Windows Hello för företag läser du [hybridnyckelns förtroende för Windows Hello for Business Förutsättningar](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs). Följ sedan instruktionerna i [Konfigurera inställningar för hybrid windows hello för företag-nyckelförtroende .](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings) 
+## <a name="6-deploy-the-group-policy"></a>6. Distribuera grupprincipen
+
+1.  Markera grupprincipobjektet från steg 3 ovan under **Domäner** > grupprincipobjekt i Serverhanteraren, till exempel "Cloud_Enrollment".
+2.  Välj fliken **Omfattning** för dittrincipobjekt.
+3.  Högerklicka på länken till domänen under **Länkar**på fliken Scope.
+4.  Välj **Tvingad** om du vill distribuera den nationella säkerhetsobjektet och sedan **PÅ OK** på bekräftelseskärmen.
+
+## <a name="get-the-latest-administrative-templates"></a>Hämta de senaste administrativa mallarna
+
+Om du inte ser principen **Aktivera automatisk MDM-registrering med standardautentiseringsuppgifter för Azure AD**kan det bero på att du inte har ADMX installerat för Windows 10, version 1803, version 1809 eller version 1903. För att åtgärda problemet följer du dessa steg (Obs: den senaste MDM.admx är bakåtkompatibel):
+
+1.  Ladda ned: [Administrativa mallar (.admx) för Windows 10 Maj 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all).
+2.  Installera paketet på PDC (Primary Domain Controller).
+3.  Navigera beroende på version till mappen: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 Maj 2019 Update (1903) v3**.
+4.  Byt namn på mappen **Principdefinitioner** i sökvägen ovan till **PolicyDefinitions**.
+5.  Kopiera **mappen Principdefinitioner** till **mappen C:\Windows\SYSVOL\domain\Policies**. 
+    -   Om du planerar att använda ett centralt principarkiv för hela domänen lägger du till innehållet i PolicyDefinitions där.
+6.  Starta om den primära domänkontrollanten för att principen ska vara tillgänglig. Denna procedur kommer att fungera för alla framtida versioner också.
+
+Nu bör du kunna se principen **Aktivera automatisk MDM-registrering med standard Azure AD-autentiseringsuppgifter** tillgängliga.
+

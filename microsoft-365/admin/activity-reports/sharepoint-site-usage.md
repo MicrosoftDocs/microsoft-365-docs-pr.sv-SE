@@ -21,19 +21,20 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Hämta sharepoint-webbplatsanvändningsrapporten för att veta hur många filer användare lagrar på SharePoint-webbplatser, hur många som används aktivt och det totala lagringsutrymmet som förbrukas. '
-ms.openlocfilehash: 45614557710e05c600a3603d85462c4987022881
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a7fece8868ceb34cbcf356e23fd13006defa439
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387519"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560405"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365-rapporter i administrationscentret – Användning av SharePoint-webbplatser
 
 Som Microsoft 365-administratör visar instrumentpanelen **Rapporter** aktivitetsöversikten för olika produkter i organisationen. Där kan du öka detaljnivån för att få bättre inblick i de aktiviteter som är specifika för varje produkt. Du kan till exempel få en överblick på hög nivå av det värde som du får från SharePoint som det totala antalet filer som användare lagrar på SharePoint-webbplatser, hur många filer som används aktivt och hur mycket lagring som används på alla dessa webbplatser. Du kan sedan öka detaljnivån på rapporten om SharePoint-webbplatsanvändningen för att förstå trenderna och information per webbplatsnivå för alla webbplatser. 
   
 > [!NOTE]
-> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter. 
+> Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller exchange-, SharePoint-, Teams-tjänst, Teams Communications eller Skype för företag-administratör för att kunna se rapporter.
+Microsoft 365-rapporter i administrationscentret stöds inte för GCC High- och DoD-klienter.
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Så här kommer du till rapporten om SharePoint-webbplatsanvändning
 
