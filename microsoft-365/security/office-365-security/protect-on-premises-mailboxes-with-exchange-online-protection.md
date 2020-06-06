@@ -1,5 +1,5 @@
 ---
-title: Skydda lokala brevlådor i Kina med fristående EOP
+title: Skydda lokala postlådor i Kina med fristående EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer i Kina som använder Office 365 som drivs av 21Vianet kan lära sig hur du använder fristående Exchange Online Protection (EOP) för att skydda sina lokala postlådor.
-ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208300"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587986"
 ---
-# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Skydda lokala brevlådor i Kina med fristående EOP
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Skydda lokala postlådor i Kina med fristående EOP
 
 > [!NOTE]
 > Den här artikeln gäller endast Office 365 som drivs av 21Vianet i Kina.
 
-Även om du planerar att vara värd för vissa eller alla dina postlådor lokalt kan du fortfarande skydda postlådorna med Exchange Online Protection (EOP). Om du vill konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering). Information om hur Office 365-behörigheter relaterar till Exchange-behörigheter finns [i Tilldela administratörsroller i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Om alla Exchange-postlådor är lokala följer du dessa steg för att konfigurera eOP-tjänsten.
+Även om du planerar att vara värd för vissa eller alla dina postlådor lokalt kan du fortfarande skydda postlådorna med Exchange Online Protection (EOP). Om du vill konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering). Information om hur Office 365-behörigheter relaterar till Exchange-behörigheter finns [i Tilldela administratörsroller i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Om alla Exchange-postlådor är lokala följer du dessa steg för att konfigurera eOP-tjänsten.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Steg 1: Använda administrationscentret för Microsoft 365 för att lägga till och verifiera din domän
 
@@ -42,7 +42,7 @@ ms.locfileid: "44208300"
 2. Följ stegen i portalen för att lägga till tillämpliga DNS-poster i din DNS-värd för att verifiera domänägarskap.
 
 > [!TIP]
-> [Lägga till din domän och användare i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) och [Skapa DNS-poster för Office 365 när du hanterar DINA DNS-poster](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) är användbara resurser att referera till när du lägger till domänen i tjänsten och konfigurerar DNS.
+> [Lägga till din domän och användare i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) och [Skapa DNS-poster för Office 365 när du hanterar DINA DNS-poster](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) är användbara resurser att referera till när du lägger till domänen i tjänsten och konfigurerar DNS.
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Steg 2: Lägga till mottagare och konfigurera domäntypen
 
@@ -69,7 +69,7 @@ Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje an
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
 
-Följ konfigurationsstegen för Office 365-domänen för att uppdatera MX-posten för din domän så att din inkommande e-post flödar via EOP. Om du vill ha mer information kan du återigen referera till [Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Följ konfigurationsstegen för Office 365-domänen för att uppdatera MX-posten för din domän så att din inkommande e-post flödar via EOP. Om du vill ha mer information kan du återigen referera till [Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 Hur vet du att den här uppgiften fungerade?
 

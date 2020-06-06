@@ -81,7 +81,7 @@
         - name: Telefonilösningar
           items:
             - name: Välj din lösning
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Fallstudie för multinationella företag
               href: null
         - name: Filsamarbete i SharePoint med Microsoft 365
@@ -89,7 +89,7 @@
         - name: Planera ett intelligent SharePoint-intranät
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: OneDrive Guide för företag
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Säkerhet
       items:
         - name: De vanligaste uppgifterna för säkerhetsteam som hjälper till att arbeta hemifrån
@@ -158,6 +158,8 @@
       href: identity-design-principles.md
     - name: Säkerhet hinder du kan segla över
       href: security-design-principles.md
+    - name: Nätverka upp (till molnet)
+      href: networking-design-principles.md
 - name: Distributionsresurser för Microsoft 365
   items:
     - name: Distribuera Microsoft 365

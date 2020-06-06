@@ -2,8 +2,8 @@
 title: Vad är nytt i Microsoft 365 admin center?
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Microsoft 365 admin center - lär dig om de funktioner som lades ti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401148"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587586"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -43,18 +43,62 @@ Vi lägger kontinuerligt till nya funktioner [i Microsoft 365-administrationscen
 > **"Classic" admin center pensionering med början i mars**<br><br>
 När du loggar in på administrationscentret för Microsoft 365 går du nu till det nya administrationscentret varje gång. Och i mars började vi inaktivera möjligheten att byta tillbaka till det klassiska administrationscentret. För nu kan du fortfarande växla tillbaka, men som det nya admin-centret kommer till paritet (och överstiger det) kommer vi att stänga av växeln för alla organisationer. <br><br> *Senast uppdaterad: 11 maj 2020*
 
-Och om du är intresserad av vad som är nytt i andra Microsoft-molntjänster:
+Och om du vill veta vad som är nytt med andra Microsoft-molntjänster:
 
-- [Nyheter i Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Nyheter i Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Nyheter i Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Nyheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Nyheter i administrationscentret för Exchange](https://docs.microsoft.com/Exchange/whats-new)
+- [Nyheter i Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Nyheter i Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Nyheter i Microsoft Hotskydd](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Nyheter i administrationscentret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>Maj 2020
+
+### <a name="new-update-channel-for-office"></a>Ny uppdateringskanal för Office
+
+Den 12 maj meddelade vi att det finns en ny uppdateringskanal för Office: Monthly Enterprise Channel. Den här uppdateringskanalen ger användarna nya Office-funktioner en gång i månaden, den andra tisdagen i månaden.
+
+Om du tillåter användarna att själv installera Office från portalen kan du välja Månadsvis företagskanal för dem. Det gör du genom att logga in på administrationscentret för Microsoft 365 och gå till **Visa alla**inställningar  > **Settings**  >  **Hämtningsinställningar**  >  **För**  >  **Office-programhämtningsinställningar .** Om du väljer **En gång i månaden (Monthly Enterprise Channel)** konfigureras alla nya självinstallationer av Office för att använda Monthly Enterprise Channel.
+
+I samband med lanseringen av Monthly Enterprise Channel reviderar vi även namnen på de befintliga uppdateringskanalerna. Månadskanal byter till exempel namn till Aktuell kanal. De nya namnen träder i kraft den 9 juni 2020.
+
+Mer information finns i [Ändringar i uppdateringskanaler för Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+
+### <a name="new-admin-roles"></a>Nya administratörsroller
+
+Vi har lagt till några nya Azure Active Directory-administratörsroller i Microsoft 365-administrationscentret.
+
+- Hybrid identitetsadministratör roll ger användarna behörighet att hantera molntablering och autentiseringstjänster.
+- Med rollen Nätverksadministratör kan användare hantera nätverksplatser och granska nätverksinsikter för Microsoft 365 Software as a Service-appar.
+- Rollen skrivaradministratör ger behörighet att hantera alla aspekter av skrivare och skrivaranslutningar.
+- Skrivarteknikern är en delmängd av rollen Skrivaradministratör där dessa användare kan registrera och avregistrera skrivare och uppdatera skrivarstatus.
+Mer information om dessa roller finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+
+### <a name="export-groups-list"></a>Lista över exportgrupper
+
+Vi har hört från många administratörer att de behöver dela information om grupper och deras användning till personer som inte har tillgång till administratörscentren. Du kan nu exportera grupplistan till en CSV-fil för granskningsändamål, vilket innebär att du kan kasta ut det gamla PowerShell-skriptet. Prova det går du **Groups**till  >  **Gruppergrupper**och väljer sedan **Exportera grupper** i kommandofältet.
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 lösnings- och arkitekturcenter
+
+Just den här månaden släppte vi en ny webbplats om [https://docs.microsoft.com](https://docs.microsoft.com) Microsoft [365-lösnings- och arkitekturcenter](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), som samlar den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och kompatibelt samarbete. I det här centret hittar du:
+
+- Vägledning för grundläggande lösning
+- Arbetsbelastningslösningar och scenariovägledning
+- Lösnings- och arkitekturillustrationer (Affischerna!!!)
+- Branschspecifik vägledning
+- Huvudmän för företagsarkitektur
+
+### <a name="docs-training-and-videos"></a>Dokument, utbildning och videor
+
+- **Nyheter i Microsoft 365 videoserie:** Den här månaden täcker vi den nya supportupplevelsen i Teams administration och säkerhets- och efterlevnadscenter, Planner-integrering med Message Center och den nya 3x3-videolayouten i Microsoft Teams. [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- [Hjälphubben för administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) har uppdaterats så att du snabbare kan hitta det du behöver. Och om du går titta på den sidan just nu, har vi lagt till ett kort för att informera dig om viktiga uppdateringar och ändringar.
 
 ## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>Hantering av Intune-roller
+
+[April 2020](#april-2020)
 
 Vi klarade det! Vi har tagit det andra steget mot en enhetlig rollupplevelse och du kan nu hantera Intune-roller i Microsoft 365-administrationscentret. Du kan också utnyttja funktioner som möjligheten att söka efter roller och visa rollbehörigheter. Det innebär att du inte behöver två separata verktyg för att hantera roller för Microsoft 365 och Intune. När du loggar in på administrationscentret för Microsoft 365 ser du att det finns två pivoter på sidan Roller, en för Azure AD och en för Intune.
 
@@ -103,7 +147,7 @@ Vi har två uppdateringar för grupper den här månaden:
 - Nu kan du redigera e-postadresser för Office 365-grupper (kallas även grupper i Outlook och snart kända microsoft 365-grupper).
 - Vi har hört din feedback och vi har lagt till tydligare felmeddelanden för varför du inte kan konvertera en grupp till ett Microsoft-team.
 
-### <a name="docs-videos-and-training"></a>Dokument, videor och utbildning
+### <a name="docs-videos-and-training-april"></a>Dokument, videor och utbildning (april)
 
 **Nyheter i Microsoft 365-videoserien**: Den här månaden täcker vi tips och resurser för att hjälpa små företag att gå över till fjärrarbete, inklusive hur du distribuerar Microsoft Teams, utbildningsresurser för fjärrarbete för att hålla kontakten med kunder och partner och den nya Microsoft 365 Business Voice-planen. [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ Vi har två uppdateringar för grupper den här månaden:
 
 #### <a name="for-admins-and-business-owners"></a>För administratörer och företagare
 
-- [Ge ditt småföretag möjlighet till fjärrarbete](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Ge ditt småföretag möjlighet till fjärrarbete](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Driva ett litet avlägset företag](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Registrera dig för Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Ställa in inloggning med två faktorer](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ Med hjälp av administrationscentret för Microsoft 365 kan du nu anpassa organi
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram som mappar administratörscenterinställningarna till mobilappen.":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Förbättringar av guiden "Lägg till en grupp"
 
 När administratörer skapade en ny grupp – och gjorde den till ett team samtidigt, kan de tilldela ägare som inte har en licens som innehåller Teams. Och det skapade lite huvudvärk. Vi har uppdaterat guideflödet för att verifiera att ägare har en Teams-licens och om de inte gör det för att göra gruppen till ett team är inaktiverat.
@@ -162,7 +204,7 @@ De nya produktnamnen träder i kraft den 21 april 2020. Detta är en ändring av
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365-appar för företag       | 
+|Office 365 Business     |    Microsoft 365-applikationer för affärsverksamhet       |
 |Office 365 ProPlus    |   Microsoft 365-appar för företag      |
 
 ### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
@@ -192,7 +234,7 @@ Ett par förändringar i gruppen området denna månad:
 - **Sortera efter gruppnamn**: Du kan sortera grupplistan alfabetiskt genom att välja kolumnen **Gruppnamn.**
 - **Återställ borttagna Microsoft 365-grupper**: Du behöver inte längre gå till Administrationscentret för Exchange för att återställa borttagna Microsoft 365-grupper. Gå till **Microsoft 365 administrationscenter** \> **Grupper** \> **borttagna grupper** \> (välj en grupp i listan) \> **Återställ grupp**. Gruppen återställs till listan **Grupper** och återställer gruppens e-post, konversationer, anteckningsbok, filer och kalender.
 
-### <a name="videos-training-and-docs"></a>Videor, utbildning och dokument
+### <a name="videos-training-and-docs-february"></a>Videor, utbildning och dokument (februari)
 
 - **Nyheter i Microsoft 365-videoserien**: Den här månaden fokuserar vi på anpassade sökfunktioner för SharePoint Online, hanteringsfunktionen "Nyheter" för Office som gör att du kan visa eller dölja specifika funktioner från slutanvändare via hjälpfönstret i appen, de senaste säkerhets- och efterlevnadsuppdateringarna i Yammer med mera. Här är det senaste avsnittet: [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 

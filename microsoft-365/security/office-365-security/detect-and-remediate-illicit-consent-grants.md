@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du känner igen och åtgärdar attacken mot olagliga samtyckesbidrag i Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034834"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587502"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Upptäcka och åtgärda bidrag för olagligt samtycke
 
@@ -90,7 +90,7 @@ Detta visar de appar som är tilldelade till användaren och vilka behörigheter
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Steg för att få användarna att räkna upp sin programåtkomst
 
-Låt användarna gå https://myapps.microsoft.com till och granska sin egen programåtkomst där. De bör kunna se alla appar med åtkomst, visa information om dem (inklusive åtkomstens omfattning) och kunna återkalla privilegier till misstänkta eller olagliga appar.
+Låt användarna gå till https://myapps.microsoft.com och granska sin egen programåtkomst där. De bör kunna se alla appar med åtkomst, visa information om dem (inklusive åtkomstens omfattning) och kunna återkalla privilegier till misstänkta eller olagliga appar.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Steg för att göra detta med PowerShell
 
@@ -158,7 +158,7 @@ När du har identifierat ett program med olagliga behörigheter har du flera sä
 
 - Du kan också inaktivera inloggning för det berörda kontot helt och hållet, vilket i sin tur inaktiverar appåtkomst till data i det kontot. Detta är inte idealiskt för slutanvändarens produktivitet, naturligtvis, men om du arbetar för att begränsa effekten snabbt, kan det vara en livskraftig kortsiktig sanering.
 
-- Du kan stänga av integrerade program för din hyresrätt. Detta är ett drastiskt steg som inaktiverar slutanvändares möjlighet att bevilja samtycke på klientomfattande basis. Detta förhindrar att användarna oavsiktligt beviljar åtkomst till ett skadligt program. Detta rekommenderas inte starkt eftersom det allvarligt försämrar användarnas förmåga att vara produktiv med tredjepartsprogram. Du kan göra detta genom att följa stegen i [Aktivera eller inaktivera integrerade appar](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
+- Du kan stänga av integrerade program för din hyresrätt. Detta är ett drastiskt steg som inaktiverar slutanvändares möjlighet att bevilja samtycke på klientomfattande basis. Detta förhindrar att användarna oavsiktligt beviljar åtkomst till ett skadligt program. Detta rekommenderas inte starkt eftersom det allvarligt försämrar användarnas förmåga att vara produktiv med tredjepartsprogram. Du kan göra detta genom att följa stegen i [Aktivera eller inaktivera integrerade appar](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 

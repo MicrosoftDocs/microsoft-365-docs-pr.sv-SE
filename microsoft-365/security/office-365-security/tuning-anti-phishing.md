@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att identifiera orsakerna till och hur ett nätfiskemeddelande kom fram i Microsoft 365 och vad de ska göra för att förhindra fler nätfiskemeddelanden i framtiden.
-ms.openlocfilehash: a9b7a58f32fd14c157d72e8f91a1f1b8bfe3aedc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208591"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588446"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -75,4 +75,4 @@ Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i me
 
 - Multifaktorautentisering (MFA) är ett bra sätt att förhindra komprometterade konton. Du bör starkt överväga att aktivera MFA för alla dina användare. För en stegvis metod, börja med att aktivera MFA för dina mest känsliga användare (administratörer, chefer, etc.) innan du aktiverar MFA för alla. Instruktioner finns i [Konfigurera multifaktorautentisering](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-- Vidarebefordringsregler till externa mottagare används ofta av angripare för att extrahera data. Använd informationen **om vidarebefordrade postlåda** i [Microsoft Secure Score](../mtp/microsoft-secure-score.md) för att hitta och till och med förhindra vidarekopplingsregler till externa mottagare. Mer information finns i [Förmildrande regler](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)för extern vidarebefordran av klienter med säker poäng .
+- Vidarebefordringsregler till externa mottagare används ofta av angripare för att extrahera data. Använd informationen **om vidarebefordrade postlåda** i [Microsoft Secure Score](../mtp/microsoft-secure-score.md) för att hitta och till och med förhindra vidarekopplingsregler till externa mottagare. Mer information finns i [Förmildrande regler](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)för extern vidarebefordran av klienter med säker poäng .

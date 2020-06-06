@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du känner igen och åtgärdar Outlook-regler och anpassade formulärinjektioner i Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351981"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588270"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Identifiera och åtgärda Outlook-regler och anpassade formulär injections attacker
 
@@ -165,7 +165,7 @@ Om du hittar några bevis för något av dessa attacker är reparation enkel, ta
 
 4. Installera de senaste versionerna av Outlook. Kom ihåg att den aktuella versionen av Outlook blockerar båda typerna av den här attacken som standard.
 
-5. När alla offlinekopior av postlådan har tagits bort återställer du användarens lösenord (använd ett lösenord av hög kvalitet) och följer stegen i [installationsprogrammets multifaktorautentisering för användare](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) om MFA inte redan har aktiverats. Detta säkerställer att användarens autentiseringsuppgifter inte exponeras på annat sätt (t.ex. nätfiske eller återanvändning av lösenord).
+5. När alla offlinekopior av postlådan har tagits bort återställer du användarens lösenord (använd ett lösenord av hög kvalitet) och följer stegen i [installationsprogrammets multifaktorautentisering för användare](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) om MFA inte redan har aktiverats. Detta säkerställer att användarens autentiseringsuppgifter inte exponeras på annat sätt (t.ex. nätfiske eller återanvändning av lösenord).
 
 ### <a name="using-powershell"></a>Använda PowerShell
 
@@ -193,7 +193,7 @@ Det finns två PowerShell-fjärr-PowerShell-cmdlets som du kan använda för att
 
 Bedrifterna regler och formulär används endast av en angripare efter att de har stulit eller brutit mot ett av dina användares konton. Så, ditt första steg för att förhindra användningen av dessa bedrifter mot din organisation är att aggressivt skydda dina användarkonton. Några av de vanligaste sätten att konton bryts är genom phishing eller [lösenord sprutning](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) attacker.
 
-Det bästa sättet att skydda dina användarkonton, och särskilt dina administratörskonton, är att [konfigurera multifaktorautentisering för användare](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). Du bör också:
+Det bästa sättet att skydda dina användarkonton, och särskilt dina administratörskonton, är att [konfigurera multifaktorautentisering för användare](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). Du bör också:
 
 - Övervaka hur dina användarkonton [används och används](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports). Du får inte förhindra den första överträdelsen, men du kommer att förkorta varaktigheten och effekten av överträdelsen genom att upptäcka det tidigare. Du kan använda dessa säkerhetsprinciper för [Office 365 Cloud App](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) för att övervaka konton och aviseringar om ovanlig aktivitet:
 

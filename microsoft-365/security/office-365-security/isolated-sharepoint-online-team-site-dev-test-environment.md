@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Sammanfattning: Konfigurera en SharePoint Online-gruppwebbplats som är isolerad från resten av organisationen i microsoft 365-utvecklings-/testmiljön.'
-ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634128"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588034"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Utvecklings-/testmiljö för en isolerad resursgrupp online
 
@@ -56,9 +56,9 @@ Det finns tre faser för att konfigurera en isolerad SharePoint Online-gruppwebb
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Fas 1: Bygg ut din lätta eller simulerade företagsmiljö för Microsoft 365-utveckling/test
 
-Om du bara vill skapa en isolerad SharePoint Online-gruppwebbplats på ett lättviktssätt med minimikraven följer du instruktionerna i faserna 2 och 3 i [Microsoft 365 dev/test-miljö](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Om du bara vill skapa en isolerad SharePoint Online-gruppwebbplats på ett lättviktssätt med minimikraven följer du instruktionerna i faserna 2 och 3 i [Den lätta baskonfigurationen](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
-Om du vill skapa en isolerad SharePoint Online-gruppwebbplats i en simulerad företagskonfiguration följer du instruktionerna i [DirSync för din utvecklings-/testmiljö för Microsoft 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Om du vill skapa en isolerad SharePoint Online-gruppwebbplats i en simulerad företagskonfiguration följer du instruktionerna i synkronisering av [lösenordshöte för microsoft 365-testmiljön](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
 
 > [!NOTE]
 > För att skapa en isolerad SharePoint Online-webbplats krävs inte den simulerade företagsutvecklings-/testmiljön, som innehåller ett simulerat intranät som är anslutet till Internet och katalogsynkronisering för en AD DS-skog (Active Directory Domain Services). Det finns här som ett alternativ så att du kan testa en isolerad SharePoint Online-webbplats och experimentera med den i en miljö som representerar en typisk organisation.
@@ -148,7 +148,7 @@ Figur 1 visar åtkomstgrupperna och deras medlemskap.
 
 Så här skapar du en SharePoint Online-gruppwebbplats för ProjectX:
 
-1. Logga in i Microsoft 365-administrationscentret ( microsoft 365 med[https://admin.microsoft.com](https://admin.microsoft.com)hjälp av en webbläsare på din lokala dator (lättkonfiguration) eller på KLIENT1 (simulerad företagskonfiguration) med hjälp av ditt globala administratörskonto.
+1. Logga in i Microsoft 365-administrationscentret ( microsoft 365 med hjälp av en webbläsare på din lokala dator (lättkonfiguration) eller på KLIENT1 (simulerad företagskonfiguration) [https://admin.microsoft.com](https://admin.microsoft.com) med hjälp av ditt globala administratörskonto.
 
 2. Klicka på **SharePoint** i listan med paneler.
 
@@ -216,7 +216,7 @@ Nu ska vi visa åtkomst med hjälp av Lead Designer-användarkontot:
 
 2. Klicka på namnet på den globala administratören och klicka sedan på **Logga ut**.
 
-3. Logga in på Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)administrationscenter ( ) med lead designer-kontonamnet och dess lösenord.
+3. Logga in på Microsoft 365 administrationscenter ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med lead designer-kontonamnet och dess lösenord.
 
 4. Klicka på **SharePoint** i listan med paneler.
 
@@ -246,7 +246,7 @@ Nu ska vi visa åtkomst med hjälp av Lead Designer-användarkontot:
 
 Nu ska vi visa åtkomst med hjälp av utvecklings-VP-användarkontot:
 
-1. Logga in på Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)administrationscenter ( ) med hjälp av utvecklings-VP-kontonamnet och dess lösenord.
+1. Logga in på Microsoft 365 administrationscenter ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med hjälp av utvecklings-VP-kontonamnet och dess lösenord.
 
 2. Klicka på **SharePoint** i listan med paneler.
 
@@ -262,7 +262,7 @@ Nu ska vi visa åtkomst med hjälp av utvecklings-VP-användarkontot:
 
 Nu ska vi visa åtkomst med ett användarkonto som inte har några behörigheter:
 
-1. Logga in på Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)administrationscenter ( ) med användar3-kontonamnet och dess lösenord.
+1. Logga in på Microsoft 365 administrationscenter ( [https://admin.microsoft.com](https://admin.microsoft.com) ) med användar3-kontonamnet och dess lösenord.
 
 2. Klicka på **SharePoint** i listan med paneler.
 
@@ -288,12 +288,8 @@ När du är redo att distribuera en isolerad SharePoint Online-gruppwebbplats i 
 
 [Testlabbguider för integrering med molntjänster](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Utvecklings-/testmiljö för baskonfiguration](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[Baskonfiguration för simulerat företag](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Utvecklings-/testmiljö för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Den enkla baskonfigurationen](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
-[Införande av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-
+[Integrering av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

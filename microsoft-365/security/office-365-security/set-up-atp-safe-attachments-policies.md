@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Läs mer om hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035326"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588126"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera principer för office 365 ATP-säkra bifogade filer
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare och letar efter information om säkra bilagor i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare och letar efter information om säkra bilagor i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dokument, presentationer, kalkylblad med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Och det sista du vill ha är en skadlig bilaga för att komma igenom, vilket orsakar förödelse för din organisation. Lyckligtvis kan [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hjälpa till. Du kan ställa in principer för [betrodda bilagor](atp-safe-attachments.md) för att säkerställa att din organisation skyddas mot attacker av osäkra e-postbilagor.
 
@@ -48,12 +48,12 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
 
   |Roll|Var/hur tilldelas|
   |---------|---------|
-  |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-  |Säkerhetsadministratör |Administrationscenter för[https://aad.portal.azure.com](https://aad.portal.azure.com)Azure Active Directory ( )|
-  |Exchange Online Organisation Management, Exchange Online Hygien Management |Administrationscenter[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)för Exchange ( ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+  |Säkerhetsadministratör |Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+  |Exchange Online Organisation Management, Exchange Online Hygien Management |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Mer information om roller och behörigheter finns [i Behörigheter i Säkerhetsefterlevnadscenter &amp; ](permissions-in-the-security-and-compliance-center.md).
+  Mer information om roller och behörigheter finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - [Läs mer om alternativ för atp-säkra bifogade filer](#step-3-learn-about-atp-safe-attachments-policy-options) (i den här artikeln). Vissa alternativ, till exempel alternativen Bildskärm eller Ersätt, kan leda till en mindre fördröjning av e-post medan bifogade filer genomsöks. Om du vill undvika meddelandeförseningar bör du överväga att använda [dynamisk leverans och förhandsgranska](dynamic-delivery-and-previewing.md).
 
@@ -61,13 +61,13 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Steg 2: Konfigurera (eller redigera) en ATP-princip för säkra bilagor
 
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt arbets- eller skolkonto.
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto.
 
-2. &amp; Välj **Principsäkra** \> bilagor i det vänstra **Threat management**navigeringsfönstret i det vänstra **navigeringsfönstret.**
+2. Välj &amp; **Principsäkra** bilagor i det vänstra **Threat management**navigeringsfönstret i det vänstra \> **navigeringsfönstret.**
 
 3. Om du ser **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**rekommenderar vi att du väljer det här alternativet. Detta aktiverar [Office 365 Advanced Threat Protection för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) för din Microsoft 365-miljö.
 
-4. Välj **Ny** (knappen Ny liknar ett **+** plustecken ( )) för att börja skapa din princip.
+4. Välj **Ny** (knappen Ny liknar ett plustecken ( **+** )) för att börja skapa din princip.
 
 5. Ange namn, beskrivning och inställningar för principen.<br/><br/>**Exempel:** Om du vill ställa in en princip som kallas "inga fördröjningar" som levererar allas meddelanden omedelbart och sedan sätter i lösningar igen när de har skannats kan du ange följande inställningar:
 

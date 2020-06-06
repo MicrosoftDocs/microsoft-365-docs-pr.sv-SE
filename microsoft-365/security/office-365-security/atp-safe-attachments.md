@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om funktionen BETRODDa bifogade filer för Office 365 och hur du skaffar funktionen för din prenumeration.
-ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034858"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588306"
 ---
 # <a name="atp-safe-attachments"></a>ATP säkra bilagor
 
@@ -47,9 +47,9 @@ Om du vill definiera (eller redigera) ATP-principer måste du tilldelas en lämp
 
 |Roll|Var/hur tilldelas|
 |---------|---------|
-|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Säkerhetsadministratör|Administrationscenter för[https://aad.portal.azure.com](https://aad.portal.azure.com)Azure Active Directory ( )|
-|Hantering av Exchange Online-organisation|Administrationscenter[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)för Exchange ( ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Säkerhetsadministratör|Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Hur man vet om ATP Säkra bilagor skydd är på plats
 

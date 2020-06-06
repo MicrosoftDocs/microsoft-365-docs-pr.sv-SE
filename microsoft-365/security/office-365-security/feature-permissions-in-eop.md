@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Läs mer om den behörighet som krävs för uppgifter i fristående Exchange Online Protection
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208877"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588258"
 ---
 # <a name="permissions-in-standalone-eop"></a>Behörigheter i fristående EOP
 
@@ -134,7 +134,7 @@ I följande tabell visas de Microsoft 365-roller och fristående EOP-rollgrupper
 |Säkerhetsläsare|Säkerhetsläsare|
 |
 
-Andra Microsoft 365-roller har ingen motsvarande EOP-rollgrupp och beviljar inte administratörsbehörighet i EOP. Mer information om hur du tilldelar en Microsoft 365-roll till en användare finns i [Tilldela administratörsroller](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Andra Microsoft 365-roller har ingen motsvarande EOP-rollgrupp och beviljar inte administratörsbehörighet i EOP. Mer information om hur du tilldelar en Microsoft 365-roll till en användare finns i [Tilldela administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
 
 Användare kan beviljas administrativa rättigheter i EOP utan att lägga till dem i Microsoft 365-roller. Du gör detta genom att lägga till användaren som medlem i en EOP-rollgrupp. Användaren får behörigheter i EOP, men de får inte behörigheter i andra Microsoft 365-arbetsbelastningar.
 
@@ -144,7 +144,7 @@ Så här kontrollerar du att du har kopierat en rollgrupp:
 
 - Gå till **Administratörsroller** för behörigheter och kontrollera att \> **Admin Roles**rollgruppen visas (eller inte visas). Markera rollgruppen och kontrollera inställningarna i informationsfönstret eller klicka på **Redigera** ![ redigera ikon för att verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
 
-- I Exchange Online PowerShell ersätter du \< Rollgruppsnamnet \> med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera inställningarna:
+- I Exchange Online PowerShell ersätter du \<Role Group Name\> med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera inställningarna:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

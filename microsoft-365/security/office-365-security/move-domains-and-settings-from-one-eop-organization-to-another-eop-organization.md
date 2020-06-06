@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation (klientorganisation) till en annan.
-ms.openlocfilehash: e9e0bd0d18ad73c08f0bc5b487a46289f67e40ba
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213454"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588198"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
@@ -59,11 +59,11 @@ För att återskapa källorganisationen i målorganisationen kontrollerar du att
   > [!NOTE]
   > Cmdlet-stöd för export och import av e-postflödesregelsamlingen stöds för närvarande endast för EOP Premium-prenumerationsplaner.
 
-Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 Därefter kan du samla in alla dina inställningar och exportera dem till en XML-fil som ska importeras till målklienten. I allmänhet kan du skriva **Get** utdata för Get-cmdlet för varje inställning till **cmdleten Export-Clixml** för att spara inställningarna i XML-filer, som visas i följande kodexempel.
 
-Skapa en katalog som heter Exportera på en plats som är lätt att hitta och ändra till den katalogen i fristående EOP PowerShell. Till exempel:
+Skapa en katalog som heter Exportera på en plats som är lätt att hitta och ändra till den katalogen i fristående EOP PowerShell. Ett exempel:
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -191,7 +191,7 @@ Nu kan du granska och samla in information från Microsoft 365-administrationsce
 
 5. Spela in MX-posten eller TXT-posten som du ska använda för att verifiera domänen och slutför installationsguiden.
 
-6. Lägg till verifierings-TXT-posterna i dina DNS-poster. På så sätt kan du snabbare verifiera domänerna i källorganisationen när de har tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Lägg till verifierings-TXT-posterna i dina DNS-poster. På så sätt kan du snabbare verifiera domänerna i källorganisationen när de har tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Steg 3: Tvinga avsändare att köa e-post
 
@@ -201,7 +201,7 @@ Ett alternativ för att tvinga avsändare att köa e-post är att uppdatera MX-p
 
 Ett annat alternativ är att placera en ogiltig MX-post i varje domän där DNS-posterna för din domän sparas (kallas även dns-värdtjänst). Detta medför att avsändaren köar e-post och försöker igen (typiska försök att försöka igen är i 48 timmar, men det kan variera från leverantör till leverantör). Du kan använda invalid.outlook.com som ett ogiltigt MX-mål. Genom att sänka värdet för tid till live (TTL) till fem minuter på MX-posten kan ändringen spridas till DNS-providers snabbare.
 
-Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!IMPORTANT]
 > Olika leverantörer köar post under olika tidsperioder. Du måste konfigurera din nya klient organisation snabbt och återställa DNS-inställningarna för att undvika att icke-leveransrapporter (NDRs) skickas till avsändaren om kötiden går ut.
@@ -931,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Steg 8: Återställ DNS-inställningarna för att stoppa e-postköer
 
-Om du väljer att ange MX-posterna till en ogiltig adress så att avsändarna köar e-post under övergången måste du ställa tillbaka dem till rätt värde enligt [administrationscentret](https://admin.microsoft.com). Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Om du väljer att ange MX-posterna till en ogiltig adress så att avsändarna köar e-post under övergången måste du ställa tillbaka dem till rätt värde enligt [administrationscentret](https://admin.microsoft.com). Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).

@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du kör en administratörsrollgruppsrapport i fristående Exchange Online Protection (EOP). Den här rapporten loggar när en administratör lägger till medlemmar i eller tar bort medlemmar från administratörsrollgrupper, EOP loggar varje förekomst.
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350945"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587370"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Köra en administratörsrapport för rollgrupp i fristående EOP
 
@@ -74,7 +74,7 @@ I det här exemplet har administratörsanvändarkontot gjort följande ändringa
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Använd fristående Exchange Online PowerShell för att söka efter granskningsloggposter
 
-Du kan använda Exchange Online PowerShell för att söka efter granskningsloggposter som uppfyller de kriterier du anger. En lista över sökvillkor finns i [Administratörsgranskningsloggning](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Den här proceduren använder cmdleten **Search-AdminAuditLog** och visar sökresultat i Exchange Online PowerShell. Du kan använda den här cmdleten när du behöver returnera en uppsättning resultat som överskrider de gränser som definierats i cmdleten **New-AdminAuditLogSearch** eller i EAC Audit Reporting-rapporterna.
+Du kan använda Exchange Online PowerShell för att söka efter granskningsloggposter som uppfyller de kriterier du anger. En lista över sökvillkor finns i [Sökvillkor för Söksökning](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)för sök . Den här proceduren använder cmdleten **Search-AdminAuditLog** och visar sökresultat i Exchange Online PowerShell. Du kan använda den här cmdleten när du behöver returnera en uppsättning resultat som överskrider de gränser som definierats i cmdleten **New-AdminAuditLogSearch** eller i EAC Audit Reporting-rapporterna.
 
 Om du vill söka i granskningsloggen efter villkor som du anger använder du följande syntax.
 
@@ -119,7 +119,7 @@ Detaljerad syntax- och parameterinformation finns i [Sök-AdminAuditLog](https:/
 
 ### <a name="view-details-of-audit-log-entries"></a>Visa information om granskningsloggposter
 
-**Cmdlet search-adminAuditLog** returnerar de fält som beskrivs i avsnittet "Granskningslogginnehåll i [granskningsloggning](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)av administratörer . Av de fält som returneras av cmdlet, två fält, **CmdletParameters** och **ModifiedProperties**, innehåller ytterligare information som inte kan visas som standard.
+**Cmdlet search-adminAuditLog** returnerar de fält som beskrivs i [granskningslogginnehållet](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). Av de fält som returneras av cmdlet, två fält, **CmdletParameters** och **ModifiedProperties**, innehåller ytterligare information som inte kan visas som standard.
 
 Om du vill visa innehållet i fälten **CmdletParameters** och **ModifiedProperties** använder du följande steg. Du kan också använda proceduren i **Använda Exchange Online PowerShell för att söka efter granskningsloggposter och skicka resultat till en mottagare** senare i det här avsnittet för att skapa en XML-fil.
 

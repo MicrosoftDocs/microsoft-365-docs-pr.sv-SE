@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om de smarta rapporter och insikter som finns i Säkerhets- och efterlevnadscenter och hur du använder dem för att visa och utforska data och vidta snabba åtgärder.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a033231b808964829ced0b9520515c426f5b81f
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566698"
+ms.locfileid: "44588162"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Smarta rapporter och insikter i Security &amp; Compliance Center
 
@@ -50,7 +50,7 @@ En mängd olika rapporter finns i Security &amp; Compliance Center. (Gå till **
 |**Hot explorer** (kallas även Explorer) eller **realtidsidentifieringar** <br/> Misstänkt skadlig kod som upptäckts i e-post och filer i Microsoft 365  <br/> |Gå &amp; till Explorer för hothantering eller realtidsidentifieringar i Säkerhetsefterlevnadscenter **Threat management** \> **Explorer** **Real-time detections**<br/> |[Hotutforskaren (eller realtidsidentifieringar)](threat-explorer.md) <br/> |
 |**Avancerade rapporter om skydd mot hot och e-post** <br/> Rapporter om e-postsäkerhet och skydd mot hot (inklusive skadlig kod, skräppost, nätfiske och förfalskningsrapporter)  <br/> |Gå &amp; till **instrumentpanelen Rapporter** i \> **Säkerhetsefterlevnadscenter** <br/> |[Visa rapporter för avancerat hotskydd för Office 365](view-reports-for-atp.md) <br/><br/> [Visa säkerhetsrapporter för e-post i &amp; Säkerhetsefterlevnadscenter](view-email-security-reports.md) <br/> |
 |**E-postflöde** <br/> Information om skickade och mottagna e-postmeddelanden, de senaste aviseringarna, de främsta avsändare och mottagare, rapporter om vidarebefordran av e-post med mera  <br/> |Gå &amp; till instrumentpanelen **för e-postflöde** i \> **Säkerhetsefterlevnadscenter** <br/> |[Insikter om e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md)<br/> |
-|**GDPR-efterlevnad** <br/> Information om GDPR-efterlevnad, inklusive länkar till registrerade, etiketttrender och aktiva &amp; avslutade ärenden  <br/> |Gå &amp; till **GDPR-instrumentpanelen för datasekretess** \> **i Security** Compliance Center <br/> |[Informationsskydd för Office 365 för GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**GDPR-efterlevnad** <br/> Information om GDPR-efterlevnad, inklusive länkar till registrerade, etiketttrender och aktiva &amp; avslutade ärenden  <br/> |Gå &amp; till **GDPR-instrumentpanelen för datasekretess** \> **i Security** Compliance Center <br/> |[Informationsskydd för Office 365 för GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) <br/> |
 |**Granskningslogg** <br/> Information om Microsoft 365-aktiviteter, användare, filer eller mappar med mera  <br/> |Gå &amp; till ** &amp; Granskningsloggsökning** i Säkerhetsefterlevnadscenter \> **Audit log search** <br/> |[Sök i granskningsloggen i &amp; Säkerhetsefterlevnadscenter](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Rapporter om efterlevnad** <br/> FedRAMP-rapporter, styrnings-, risk- och efterlevnadsrapporter, gransknings- och utvärderingsrapporter för ISO-informationssäkerhet och granskningsrapporter för serviceorganisationskontroller  <br/> |Gå &amp; till Service assurance **Service assurance** \> **Compliance-rapporter** i Security Compliance Center <br/> |[Planera för &amp; säkerhetsefterlevnad i Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   

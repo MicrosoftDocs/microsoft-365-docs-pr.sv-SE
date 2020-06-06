@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498669"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588458"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
@@ -32,7 +32,7 @@ Men det finns också specifika inställningar mot skräppost som administratöre
 - **Aktivera eller inaktivera skräppostregeln**: Skräppostregeln är en dold inkorgsregel med namnet Skräppostregel som är aktiverad som standard i alla postlådor. Regeln om skräppost styr följande funktioner:
 
   - **Flytta meddelanden till mappen Skräppost baserat på anti-spam-policyer:** När en anti-spam-princip har konfigurerats med åtgärden **Flytta meddelande till skräppostmappen** för en skräppostfiltreringsdom flyttas skräppostfiltrets regel meddelandet till skräppostmappen när meddelandet har levererats till postlådan. Mer information om skräppostfiltreringsutslag i policyer mot skräppost finns [i Konfigurera policyer mot skräppost i EOP](configure-your-spam-filter-policies.md). På samma sätt, om nolltimmars automatisk rensning (ZAP) bestämmer ett levererat meddelande är spam eller phish, flyttar skräppostfiltret regeln meddelandet till mappen Skräppost för **Flytta meddelande till skräppostmappen** skräppostfiltrering dom åtgärder. Mer information om ZAP finns i [Zero-hour auto purge (ZAP) i Exchange Online](zero-hour-auto-purge.md).
-  
+
   - **Skräppostinställningar som användarna konfigurerar själva i Outlook eller Outlook på webben:** Samlingen _safelist_ är listan Betrodda avsändare, listan Betrodda mottagare och listan Blockera avsändare i varje postlåda. Posterna i dessa listor avgör om skräppostregeln flyttar meddelandet till inkorgen eller mappen Skräppost. Användare kan konfigurera samlingen för safelist för sin egen postlåda i Outlook eller Outlook på webben (tidigare kallat Outlook Web App). Administratörer kan konfigurera samlingen för safelist på alla användares postlåda.
 
 När skräppostregeln är aktiverad i postlådan kan EOP flytta meddelanden till mappen Skräppost baserat på skräppostfiltreringsåtgärden **Flytta meddelande till mappen Skräppost** eller listan Blockerade avsändare i postlådan och förhindra att meddelanden levereras till mappen Skräppost (baserat på listan Betrodda avsändare i postlådan).
@@ -148,7 +148,7 @@ Detaljerad syntax- och parameterinformation finns i [Set-MailboxJunkEmailConfigu
 > 
 > - Även om skräppostregeln är inaktiverad i postlådan kan du fortfarande konfigurera samlingen för safelist och skräppostfiltret i Outlook kan flytta meddelanden till inkorgen eller mappen Skräppost. Mer information finns [i avsnittet Om skräppostinställningar i Outlook](#about-junk-email-settings-in-outlook) i det här avsnittet.
 > 
-> - Outlook Skräppostfilter har ytterligare inställningar för safelist-samling (till exempel **lägger jag automatiskt till personer som jag e-postar i listan Betrodda avsändare).** Mer information finns i [Använda skräppostfilter för att styra vilka meddelanden som visas](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)i .
+> - Outlook Skräppostfilter har ytterligare inställningar för safelist-samling (till exempel **lägger jag automatiskt till personer som jag e-postar i listan Betrodda avsändare).** Mer information finns i [Använda skräppostfilter för att styra vilka meddelanden som visas](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)i .
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
@@ -197,7 +197,7 @@ Den safelist-samling (listan Betrodda avsändare, listan Betrodda mottagare och 
   - Totalt 500 poster i listan Blockerade avsändare och blockerade domäner.
 
   När 1024-ingångsgränsen har uppnåtts händer följande:
-  
+
   - Listan slutar acceptera poster i PowerShell och Outlook på webben, men inget fel visas.
 
     Outlook-användare kan fortsätta att lägga till fler än 1024 poster tills de når Outlook-gränsen på 510 kB. Outlook kan använda dessa ytterligare poster, så länge ett EOP-filter inte blockerar meddelandet före leverans till postlådan (regler för e-postflöde, anti-förfalskning, etc.).
@@ -208,7 +208,7 @@ Den safelist-samling (listan Betrodda avsändare, listan Betrodda mottagare och 
   2. Listan Säker avsändare och listan Säker mottagare kombineras, avd dupliceras och sorteras i alfabetisk ordning när en ändring görs för de första 1024-posterna.
 
   De första 1024-posterna används och relevant information stämplas i meddelanderubrikerna.
-  
+
   Poster över 1024 som inte synkroniserades med Azure AD bearbetas av Outlook (inte Outlook på webben) och ingen information stämplas i meddelanderubrikerna.
 
 Som du kan se minskar om du aktiverar **inställningen Förtroende-e-post från mina kontakter** antalet betrodda avsändare och säkra mottagare som kan synkroniseras. Om detta är ett problem rekommenderar vi att du använder Grupprincip för att inaktivera den här funktionen:

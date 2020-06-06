@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Förstå vad du behöver veta innan du går igenom registreringsprocessen för Office 365. '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386763"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579175"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Så här registrerar du dig – hjälp med administratörer
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386763"
 
 Registrera dig för Microsoft 365 för företag så att ditt team kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office-program i ditt företag.
   
-Titta på en snabb översikt över de tre Microsoft 365 för affärsplaner eller bläddra nedåt för mer information.
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 Registrera dig för Microsoft 365 för företag så att ditt team kan börja använda de senaste versionerna av Word, Excel, PowerPoint och andra Office-program i ditt företag.
-  
-Titta på en snabb översikt över de tre planer som är bäst för ditt företag. eller bläddra nedåt för mer info.
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 

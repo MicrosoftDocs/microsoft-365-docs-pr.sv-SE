@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder Attack Simulator för att köra simulerade nätfiske- och lösenordsattacker i din Microsoft 365 E5- eller ATP Plan 2-organisation.
-ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035864"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587574"
 ---
 # <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
 
@@ -37,9 +37,9 @@ ms.locfileid: "44035864"
 
 - Mer information om tillgängligheten för Attack Simulator för olika Microsoft 365-prenumerationer finns i [office 365-tjänstbeskrivning för avancerat skydd mot hot](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- Ditt konto måste konfigureras för MFA (Multi Factor Authentication) för att skapa och hantera kampanjer i Attack Simulator. Instruktioner finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Ditt konto måste konfigureras för MFA (Multi Factor Authentication) för att skapa och hantera kampanjer i Attack Simulator. Instruktioner finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 För att en attack ska kunna startas kontrollerar du att kontot du använder för att köra simulerade attacker använder multifaktorautentisering. Dessutom måste du vara global administratör eller säkerhetsadministratör. (Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
 
@@ -55,7 +55,7 @@ För att en attack ska kunna startas kontrollerar du att kontot du använder fö
 
 I Attack Simulator finns två olika typer av nätfiskekampanjer för spjut:
 
-- [Multifaktorautentisering/villkorlig åtkomst](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) är aktiverat för åtminstone det globala administratörskontot och säkerhetsadministratörerna som ska använda Attack Simulator. (Helst är multifaktorautentisering/villkorlig åtkomst aktiverad för alla användare i organisationen.)
+- [Multifaktorautentisering/villkorlig åtkomst](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) är aktiverat för åtminstone det globala administratörskontot och säkerhetsadministratörerna som ska använda Attack Simulator. (Helst är multifaktorautentisering/villkorlig åtkomst aktiverad för alla användare i organisationen.)
 
   - En standardsida som förklarar detta var bara ett test och ger tips om hur du känner igen nätfiskemeddelanden.
 
@@ -63,7 +63,7 @@ I Attack Simulator finns två olika typer av nätfiskekampanjer för spjut:
 
   - En anpassad sida (URL) som du anger.
 
-- **Spear phishing (bilaga)**: Attacken försöker övertyga mottagarna att öppna en .docx eller .pdf-bilaga i meddelandet. Den bifogade filen innehåller samma innehåll från standardlänken för\<nätfiske, men den första meningen börjar med "Visningsnamn\>visas det här meddelandet som ett nytt e-postmeddelande som du öppnade...".
+- **Spear phishing (bilaga)**: Attacken försöker övertyga mottagarna att öppna en .docx eller .pdf-bilaga i meddelandet. Den bifogade filen innehåller samma innehåll från standardlänken för nätfiske, men den första meningen börjar med " \<Display Name\> visas det här meddelandet som ett nytt e-postmeddelande som du öppnade...".
 
 > [!NOTE]
 > För närvarande upphör inte spjutfiskekampanjer i Attack Simulator.
@@ -82,7 +82,7 @@ En viktig del av en spjutfiskekampanj är utseendet på det e-postmeddelande som
 
 Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet direkt i guiden kan du hoppa över det här steget.
 
-1. Gå till simulator för \> **angreppshantering** **Threat management** för & säkerhet i säkerhetsorganisationscenter .
+1. Gå till simulator för **angreppshantering** för & säkerhet i \> **Attack simulator**säkerhetsorganisationscenter .
 
 2. Klicka på **Attackinformation**i avsnitten **Spear Phishing (Credentials Harvest)** eller **Spear Phishing (Attachment)** på sidan **Simulera attacker.**
 
@@ -138,13 +138,13 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
 #### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Steg 2: Skapa och starta nätfiskekampanjen för spjut
 
-1. Gå till simulator för \> **angreppshantering** **Threat management** för & säkerhet i säkerhetsorganisationscenter .
+1. Gå till simulator för **angreppshantering** för & säkerhet i \> **Attack simulator**säkerhetsorganisationscenter .
 
 2. På sidan **Simulera attacker** gör du något av följande val baserat på vilken typ av kampanj du vill skapa:
 
-   - Klicka på **Starta attack** i avsnittet **Spear Phishing (Credentials Harvest)** eller klicka på **Attackinformation** \> **Launch Attack**.
+   - Klicka på **Starta attack** i avsnittet **Spear Phishing (Credentials Harvest)** eller klicka på **Attack Details** \> **Attackinformation Launch Attack**.
 
-   - Klicka på **Attack Details** \> **Launch Attack** **Starta attack** i avsnittet **Spear Phishing (Attachment).**
+   - Klicka på **Starta attack** i avsnittet **Spear Phishing (Attachment).** **Attack Details** \> **Launch Attack**
 
 3. Guiden **Konfigurera nätfiskeattack** startar i ett nytt utfällbart utfällbart. Gör **Start** något av följande i startsteget:
 
@@ -235,11 +235,11 @@ I Attack Simulator är två olika typer av lösenordsattackkampanjer tillgängli
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Skapa och starta en kampanj för lösenordsattack
 
-1. Gå till simulator för \> **angreppshantering** **Threat management** för & säkerhet i säkerhetsorganisationscenter .
+1. Gå till simulator för **angreppshantering** för & säkerhet i \> **Attack simulator**säkerhetsorganisationscenter .
 
 2. På sidan **Simulera attacker** gör du något av följande val baserat på vilken typ av kampanj du vill skapa:
 
-   - Klicka på **Starta attack** i avsnittet Brute Force **Password (Dictionary Attack)** eller klicka på **Attackinformation** \> **Launch Attack**.
+   - Klicka på **Starta attack** i avsnittet Brute Force **Password (Dictionary Attack)** eller klicka på **Attack Details** \> **Attackinformation Launch Attack**.
 
    - I avsnittet **Lösenord spray attack,** klicka **på Starta attack** eller klicka på Attack **Detaljer** \> **Launch Attack**.
 
@@ -291,7 +291,7 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Lyckade försök**: Antalet användare som klickade på länken **och** angav sina autentiseringsuppgifter *(alla* användarnamn och lösenordsvärde).
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök** / **Totalt antal användare som är inriktade på**.
+- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
 
 - **Snabbaste klick:** Hur lång tid det tog den första användaren att klicka på länken efter att du startat kampanjen.
 
@@ -331,7 +331,7 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Lyckade försök**: Antalet användare som öppnade eller hämtade och öppnade den bifogade filen (förhandsgranskning räknas inte).
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök** / **Totalt antal användare som är inriktade på**.
+- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
 
 - **Snabbaste öppen tid för bifogade filer**: Hur lång tid det tog för den första användaren att öppna den bifogade filen när du startade kampanjen.
 
@@ -349,7 +349,7 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Lyckade försök**: Antalet användare som visade sig använda ett av de angivna lösenorden.
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök** / **Totalt antal användare som är inriktade på**.
+- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
 
 - I avsnittet **Komprometterade användare** visas de berörda användarnas e-postadresser. Du kan klicka på **Exportera** om du vill exportera resultaten till en CSV-fil.
 
@@ -363,4 +363,4 @@ Följande information finns på sidan **Attackinformation** för varje kampanj:
 
 - **Lyckade försök**: Antalet användare som visade sig använda det angivna lösenordet.
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök** / **Totalt antal användare som är inriktade på**.
+- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.

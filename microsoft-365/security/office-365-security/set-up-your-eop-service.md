@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratörer kan lära sig hur du konfigurerar fristående Exchange Online Protection (EOP) för att skydda lokala e-postmiljöer.
-ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b50ec7e2bca3765bb81e165b74596155da1f7940
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209805"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588070"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Konfigurera din fristående EOP-tjänst
 
@@ -32,7 +32,7 @@ I det här avsnittet beskrivs hur du konfigurerar fristående Exchange Online Pr
 
 - Beräknad tid för att slutföra den här uppgiften: 1 timme
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Specifikt behöver du rollgrupperna Fjärr- och godkända domäner, som tilldelas rollgrupperna MailFlowAdministrator och OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt behöver du rollgrupperna Fjärr- och godkända domäner, som tilldelas rollgrupperna MailFlowAdministrator och OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Om du inte har registrerat dig för EOP besöker du [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) och väljer att köpa eller prova tjänsten.
 
@@ -43,12 +43,12 @@ I det här avsnittet beskrivs hur du konfigurerar fristående Exchange Online Pr
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Steg 1: Använda administrationscentret för Microsoft 365 för att lägga till och verifiera din domän
 
-1. I [administrationscentret för Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)går du till **Installationsprogrammet** för att lägga till domänen i tjänsten.
+1. I [administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)går du till **Installationsprogrammet** för att lägga till domänen i tjänsten.
 
 2. Följ stegen för att lägga till tillämpliga DNS-poster i din DNS-värd för att verifiera domänägarskap.
 
 > [!TIP]
-> [Lägga till en domän i Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) och [Skapa DNS-poster hos alla DNS-värd för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) är användbara resurser att referera till när du lägger till domänen i tjänsten och konfigurerar DNS.
+> [Lägga till en domän i Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) och [Skapa DNS-poster hos alla DNS-värd för Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) är användbara resurser att referera till när du lägger till domänen i tjänsten och konfigurerar DNS.
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Steg 2: Lägg till mottagare och aktivera DBEB
 
@@ -77,7 +77,7 @@ Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du 
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
 
-Följ stegen för domänkonfiguration för att uppdatera MX-posten för din domän, så att din inkommande e-post flödar via EOP. Var noga med att peka din MX-post direkt till EOP i stället för att ha en tredje part filtrering tjänst relä e-post till EOP. Mer information finns i [Skapa DNS-poster för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)igen.
+Följ stegen för domänkonfiguration för att uppdatera MX-posten för din domän, så att din inkommande e-post flödar via EOP. Var noga med att peka din MX-post direkt till EOP i stället för att ha en tredje part filtrering tjänst relä e-post till EOP. Mer information finns i [Skapa DNS-poster för Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)igen.
 
 > [!NOTE]
 > Om du måste rikta MX-posten mot en annan server eller tjänst som sitter framför EOP läser du [Förbättrad filtrering för anslutningar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

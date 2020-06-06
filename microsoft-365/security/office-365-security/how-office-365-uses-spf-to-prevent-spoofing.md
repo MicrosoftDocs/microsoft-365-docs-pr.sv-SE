@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur Microsoft 365 använder TXT-posten (Sender Policy Framework) i DNS för att säkerställa att e-postsystem för mål litar på meddelanden som skickas från din anpassade domän.
-ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a86087f510dca328bb5b56af6fd4802f1f42a454
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036395"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587490"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Så använder Microsoft 365 SPF (Sender Policy Framework) för att förhindra förfalskning
 
@@ -51,11 +51,11 @@ Varje SPF TXT-post innehåller tre delar: deklarationen att det är en SPF TXT-p
 
 Ta en titt på den grundläggande syntaxen för en SPF-regel:
 
-v=spf1 \<\> \<IP-efterlevnadsregel\>
+v=spf1 \<IP\>\<enforcement rule\>
 
 Anta till exempel att följande SPF-regel finns för contoso.com:
 
-v=spf1 \<IP-adress #1\> \<IP-adress #2\> \<IP-adress #3\> \<tvingande regel\>
+v=spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\>\<enforcement rule\>
 
 I det här exemplet instruerar SPF-regeln den mottagande e-postservern att endast ta emot e-post från dessa IP-adresser för domänen contoso.com:
 
@@ -131,7 +131,7 @@ Om du har en hybriddistribution (det vill säga du har vissa postlådor lokalt o
 
 Använd syntaxinformationen i den här artikeln för att skapa SPF TXT-posten för din anpassade domän. Även om det finns andra syntaxalternativ som inte nämns här, är dessa de vanligaste alternativen. När du har skapat posten måste du uppdatera posten hos domänregistratorn.
 
-Information om de domäner som du måste inkludera för Microsoft 365 finns i [Externa DNS-poster som krävs för SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Använd [steg-för-steg-instruktionerna](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för uppdatering av SPF-poster (TXT) för domänregistratorer.
+Information om de domäner som du måste inkludera för Microsoft 365 finns i [Externa DNS-poster som krävs för SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Använd [steg-för-steg-instruktionerna](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för uppdatering av SPF-poster (TXT) för domänregistratorer.
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>SPF TXT-postsyntax för Microsoft 365
 <a name="SPFSyntaxO365"> </a>
@@ -142,7 +142,7 @@ En typisk SPF TXT-post för Microsoft 365 har följande syntax:
 v=spf1 [<ip4>|<ip6>:<IP address>] [include:<domain name>] <enforcement rule>
 ```
 
-Till exempel:
+Ett exempel:
 
 ```text
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
@@ -193,7 +193,7 @@ v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-microsoft-365"></a>Exempel: SPF TXT-post för flera utgående lokala e-postservrar och Microsoft 365
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
-Om du har flera utgående e-postservrar, inkludera IP-adressen för varje e-postserver i SPF TXT-posten och separera varje IP-adress med ett blanksteg följt av en "ip4:"-sats. Till exempel:
+Om du har flera utgående e-postservrar, inkludera IP-adressen för varje e-postserver i SPF TXT-posten och separera varje IP-adress med ett blanksteg följt av en "ip4:"-sats. Ett exempel:
 
 ```text
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all
@@ -248,6 +248,6 @@ Du kan använda nslookup för att visa dina DNS-poster, inklusive din SPF TXT-po
 ## <a name="for-more-information"></a>Mer information
 <a name="SPFTroubleshoot"> </a>
 
-Behöver du hjälp med att lägga till SPF TXT-posten? Läs artikeln [Skapa DNS-poster hos valfri DNS-värd för Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för detaljerad information om användning av Avsänarprincipramverk med din anpassade domän i Microsoft 365. [Meddelanden mot skräppost](anti-spam-message-headers.md) innehåller syntax- och rubrikfält som används av Microsoft 365 för SPF-kontroller.
+Behöver du hjälp med att lägga till SPF TXT-posten? Läs artikeln [Skapa DNS-poster hos valfri DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) för detaljerad information om användning av Avsänarprincipramverk med din anpassade domän i Microsoft 365. [Meddelanden mot skräppost](anti-spam-message-headers.md) innehåller syntax- och rubrikfält som används av Microsoft 365 för SPF-kontroller.
 
 

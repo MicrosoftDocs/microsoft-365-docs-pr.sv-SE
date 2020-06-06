@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan visa vanliga frågor och svar om skydd mot skräppost i Exchange Online Protection (EOP).
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209649"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588046"
 ---
 # <a name="anti-spam-protection-faq"></a>Vanliga frågor om skydd mot skräppost
 
@@ -59,7 +59,7 @@ Mer information finns i följande avsnitt:
 
 [Konfigurera anslutningsfiltrering i EOP](configure-the-connection-filter-policy.md)
 
-[Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md)
+[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)
 
 [Konfigurera principen för skräppost för utgående](configure-the-outbound-spam-policy.md)
 
@@ -137,7 +137,7 @@ Riktlinjerna nedan är metodtips för att skicka utgående e-postmeddelanden.
 
   [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Vanliga frågor och svar om domäner](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **Signera e-post med DKIM, underteckna med avslappnad kanonisering.**
 

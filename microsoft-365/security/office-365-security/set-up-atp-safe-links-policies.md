@@ -17,17 +17,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint- och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045242"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588094"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera Office 365 ATP-principer för säkra länkar
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP Safe Links](atp-safe-links.md), en funktion i [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), kan skydda din organisation från skadliga länkar som används vid nätfiske och andra attacker. Om du har de [behörigheter &amp; ](permissions-in-the-security-and-compliance-center.md)som krävs för Security Compliance Center kan du ställa in ATP Safe Links-principer för att se till att din organisation är skyddad när personer klickar på webbadresser. Dina ATP Safe Links-principer kan konfigureras för att skanna webbadresser i e-post och webbadresser i Office-dokument.
 
@@ -53,11 +53,11 @@ Om en användare klickar på en länk i ett e-postmeddelande och webbadressen ha
 
     |Roll  |Var/hur tilldelas  |
     |---------|---------|
-    |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)         |
-    |Säkerhetsadministratör |Administrationscenter för[https://aad.portal.azure.com](https://aad.portal.azure.com)Azure Active Directory ( )|
-    |Hantering av Exchange Online-organisation |Administrationscenter[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)för Exchange ( ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+    |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)         |
+    |Säkerhetsadministratör |Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+    |Hantering av Exchange Online-organisation |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    Mer information om roller och behörigheter finns [i Behörigheter i Säkerhetsefterlevnadscenter &amp; ](permissions-in-the-security-and-compliance-center.md).
+    Mer information om roller och behörigheter finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
 - Kontrollera att Office-klienter är konfigurerade för att använda [modern autentisering](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (detta är för ATP Safe Links-skydd i Office-dokument).
     
@@ -69,7 +69,7 @@ Om en användare klickar på en länk i ett e-postmeddelande och webbadressen ha
 
 När du har [Ett avancerat skydd mot office 365](office-365-atp.md)har du en standardprincip för ATP Safe Links som gäller för alla i organisationen. Se till att granska och redigera standardprincipen om det behövs.
   
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt arbets- eller skolkonto. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto. 
     
 2. Välj ** \> Policy** Säkra länkar under **Hothantering**i den vänstra **navigeringen.**
     
@@ -85,13 +85,13 @@ När du har [Ett avancerat skydd mot office 365](office-365-atp.md)har du en sta
 
 När du har granskat (eller redigerat) standardprincipen för betrodda länkar till ATP som gäller för alla, är nästa steg att definiera ytterligare principer som skulle gälla för specifika mottagare. Du kan till exempel ange undantag från standardprincipen genom att definiera ytterligare en princip. 
   
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in med ditt arbets- eller skolkonto. 
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto. 
     
 2. Välj **Policy**under **Hothantering**i den vänstra navigeringen .
     
 3. Välj **säkra länkar**.
     
-4. I avsnittet **Principer som gäller för specifika mottagare** väljer du **Ny** (knappen Nytt liknar ett plustecken ( **+**)).<br/>![Välj Ny om du vill lägga till en princip för säkra länkar för specifika e-postmottagare](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. I avsnittet **Principer som gäller för specifika mottagare** väljer du **Ny** (knappen Nytt liknar ett plustecken ( **+** )).<br/>![Välj Ny om du vill lägga till en princip för säkra länkar för specifika e-postmottagare](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Ange namn, beskrivning och inställningar för principen.<br/>**Exempel:** Om du vill ställa in en princip som kallas "inget direkt klick igenom" som inte tillåter att personer i en viss grupp i organisationen kan klicka sig vidare till en viss webbplats utan ATP Safe Links-skydd kan du ange följande rekommenderade inställningar: 
     
@@ -144,7 +144,7 @@ Standardprincipalternativ gäller för alla i organisationen.
 |**Använda säkra länkar på meddelanden som skickas inom organisationen** <br/> | När det här alternativet är tillgängligt och markerat tillämpas ATP-skydd för säkra länkar på e-postmeddelanden som skickas mellan personer i organisationen, förutsatt att e-postkontona finns i Office 365.  <br/> |
 |**Spåra inte användarens klick** <br/> |När det här alternativet är markerat lagras inte data för webbadresser i e-post från externa avsändare. URL-klickspårning för länkar i e-postmeddelanden som skickas inom organisationen stöds för närvarande inte.  <br/> |
 |**Tillåt inte att användare klickar sig vidare till den ursprungliga webbadressen** <br/> |När det här alternativet är markerat kan användarna inte gå förbi en [varningssida](atp-safe-links-warning-pages.md) till en URL som bedöms vara skadlig.  <br/> |
-|**Skriv inte om följande webbadresser** <br/> |Lämnar webbadresser som de är. Håller en anpassad lista över säkra webbadresser som inte behöver söka efter en viss grupp e-postmottagare i organisationen.  Se [Konfigurera en anpassad webbadresslista "Skriv inte om" med hjälp av ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) för mer information, inklusive de senaste ändringarna av stödet för jokertecken asterisker (\*).  <br/> |
+|**Skriv inte om följande webbadresser** <br/> |Lämnar webbadresser som de är. Håller en anpassad lista över säkra webbadresser som inte behöver söka efter en viss grupp e-postmottagare i organisationen.  Se [Konfigurera en anpassad webbadresslista "Skriv inte om" med hjälp av ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) för mer information, inklusive de senaste ändringarna av stödet för jokertecken asterisker ( \* ).  <br/> |
    
 ## <a name="next-steps"></a>Nästa steg
 

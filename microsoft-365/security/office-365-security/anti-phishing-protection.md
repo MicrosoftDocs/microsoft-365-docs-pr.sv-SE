@@ -19,16 +19,16 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om funktionerna för skydd mot nätfiske i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 2b5d5786e363b0d74e29b1f0c27ab110d2e60b0d
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262289"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588318"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
-*Nätfiske* är en e-postattack som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. Det finns specifika kategorier av nätfiske. Till exempel:
+*Nätfiske* är en e-postattack som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. Det finns specifika kategorier av nätfiske. Ett exempel:
 
 - **Spear phishing** använder mycket fokuserat och anpassat innehåll som är särskilt anpassat till de riktade mottagarna (vanligtvis efter spaning på mottagarna av angriparen).
 
@@ -62,6 +62,6 @@ Office 365 ATP innehåller ytterligare och mer avancerade funktioner mot nätfis
 
 ## <a name="other-anti-phishing-resources"></a>Andra anti-phishing-resurser
 
-- För slutanvändare: [Skydda dig mot nätfiske och andra former av onlinebedrägerier](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593).
+- För slutanvändare: [Skydda dig mot nätfiske och andra former av onlinebedrägerier](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593).
 
 - [Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske](how-office-365-validates-the-from-address.md).

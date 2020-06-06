@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om rapporter och felsökningsverktyg som är tillgängliga för Microsoft Exchange Online Protection -administratörer (EOP).
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206448"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588174"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelandespårning i EOP
 
@@ -37,13 +37,13 @@ I Microsoft 365-organisationer med postlådor i Exchange Online- eller friståen
 
 Mer information finns i följande resurser:
 
-- [Microsoft 365-rapporter i administrationscentret – Microsoft 365-grupper](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365-rapporter i administrationscentret – Microsoft 365-grupper](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Microsoft 365-rapporter i administrationscentret – E-postaktivitet](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365-rapporter i administrationscentret – E-postaktivitet](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Microsoft 365-rapporter i administrationscentret – användning av e-postappar](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365-rapporter i administrationscentret – användning av e-postappar](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Microsoft 365-rapporter i administrationscentret – användning av postlåda](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365-rapporter i administrationscentret – användning av postlåda](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Säkerhetsrapporter & efterlevnad i microsoft 365-administrationscentret
 

@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan lära sig mer om instrumentpanelen för e-postflödet i Security & Compliance Center, inklusive insikter, rapporter och widgetar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034152"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588022"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
@@ -57,19 +57,19 @@ Instrumentpanelen för e-postflödet är tillgänglig för:
 
 - Medlemmar i **administratörsrollen E-postflöde** i Security & Compliance Center. Om den här rollen uttryckligen tilldelas en användare som inte är medlem i den globala administratören eller Exchange-administratörsrollerna:
 
-  - Användaren måste logga in på Security & Compliance [https://protection.office.com](https://protection.office.com)Center direkt på .
+  - Användaren måste logga in på Security & Compliance Center direkt på [https://protection.office.com](https://protection.office.com) .
 
   - Användaren har endast skrivskyddad behörighet till instrumentpanelen för e-postflödet.
 
   - Användaren har inte tillgång till Microsoft 365-administrationscentret.
 
-Mer information om den globala administratörsrollen finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Mer information om den globala administratörsrollen finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Var du hittar instrumentpanelen för e-postflödet
 
-1. Gå till Security & Compliance Center [https://protection.office.com](https://protection.office.com)på .
+1. Gå till Security & Compliance Center på [https://protection.office.com](https://protection.office.com) .
 
 2. Expandera **e-postflödet** och välj sedan **Instrumentpanel**.
 

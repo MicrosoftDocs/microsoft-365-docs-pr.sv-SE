@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna om bästa praxis för fristående Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel.
-ms.openlocfilehash: ade41b5343e19f75658f01e6c395c470e230b315
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351933"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587540"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Metodtips för att konfigurera fristående EOP
 
@@ -56,7 +56,7 @@ De här inställningarna täcker en rad funktioner som ligger utanför säkerhet
 |[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgänglig för postlådeanvändare eller [e-postanvändare](https://docs.microsoft.com/powershell/module/exchange/get-user) (användarobjekt som returneras av cmdleten Hämta användare).|
 |Använd [falska underrättelser](learn-about-spoof-intelligence.md) för att vitlista avsändare när det är möjligt|Ja|Ja||
 |[Katalogbaserad kantblockering (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiverad|Aktiverad|Domäntyp = Auktoritär|
-|[Konfigurera multifaktorautentisering för alla administratörskonton](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiverad|Aktiverad||
+|[Konfigurera multifaktorautentisering för alla administratörskonton](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiverad|Aktiverad||
 |
 
 ## <a name="troubleshooting"></a>Felsökning

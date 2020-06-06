@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: I det här avsnittet får du hjälp med rekommenderad konfiguration för klientomfattande inställningar som påverkar säkerheten i microsoft 365-miljön.
-ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043363"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588058"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera din Microsoft 365-klient för ökad säkerhet
 
@@ -73,7 +73,7 @@ Många av kontrollerna för säkerhet och skydd i administrationscentret för Ex
 ||||
 |---|---|---|
 |**Området**|**Innehåller en standardprincip**|**Rekommendation**|
-|**E-postflöde** (regler för e-postflöde, även kallade transportregler)|Nej|Lägg till en regel för e-postflöde för att skydda mot ransomware genom att blockera körbara filtyper och Office-filtyper som innehåller makron. Mer information finns i [Använda regler för e-postflöde för att granska bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Se följande avsnitt: <br/>* [Skydda mot ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>* [Skydd mot skadlig programvara och ransomware i Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Återställ från en ransomware-attack i Office 365](recover-from-ransomware.md) <br/><br/> Skapa en regel för e-postflöde för att förhindra automatisk vidarebefordran av e-post till externa domäner. Mer information finns i [Förmildrande regler](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)för extern vidarebefordran av klienter med säker poäng . <br/><br/> Mer information: [Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**E-postflöde** (regler för e-postflöde, även kallade transportregler)|Nej|Lägg till en regel för e-postflöde för att skydda mot ransomware genom att blockera körbara filtyper och Office-filtyper som innehåller makron. Mer information finns i [Använda regler för e-postflöde för att granska bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Se följande avsnitt: <br/>* [Skydda mot ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Skydd mot skadlig programvara och ransomware i Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Återställ från en ransomware-attack i Office 365](recover-from-ransomware.md) <br/><br/> Skapa en regel för e-postflöde för att förhindra automatisk vidarebefordran av e-post till externa domäner. Mer information finns i [Förmildrande regler](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)för extern vidarebefordran av klienter med säker poäng . <br/><br/> Mer information: [Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Aktivera modern autentisering**|Nej|Modern autentisering är en förutsättning för att använda MFA (Multifaktorautentisering). MFA rekommenderas för att skydda åtkomsten till molnresurser, inklusive e-post. <br/><br/> Se följande avsnitt: <br/>* [Aktivera eller inaktivera modern autentisering i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype för företag – Online: Aktivera din klient för modern autentisering](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Modern autentisering är aktiverad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. <br/><br/> Mer information: [Så här fungerar modern autentisering för Office 2013- och Office 2016-klientappar](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
