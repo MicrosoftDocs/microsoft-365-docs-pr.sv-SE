@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Träna dina användare och se till att hantera problem snabbt.
-ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 14a46b77c739dfb2caaf171f5798b9cabfef393c
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160732"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560441"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Steg 6: Träna distansarbetare och få feedback om användningen
 
@@ -43,7 +43,7 @@ I veckorna efter utbildningen:
 - Snabbt hantera feedback från distansarbetare och finjustera principer och konfigurationer.
 - Analysera användning av Teams, E-post, SharePoint-webbplatser och OneDrive-mappar samt jämföra med förväntad användning.
 
-Vidareutbilda dina användare efter behov.
+Vidareutbilda då dina användare efter behov.
 
 ## <a name="results-of-step-6"></a>Resultat i steg 6
 

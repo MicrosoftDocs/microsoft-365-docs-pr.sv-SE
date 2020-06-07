@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160744"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560453"
 ---
 # <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Steg 4. Distribuera produktivitetsappar och tjänster för distansarbetare
 
@@ -39,7 +39,9 @@ För att kunna vara produktiva måste personer kommunicera och samarbeta med var
 
 Med Teams kan ni chatta, träffas, ringa och samarbeta på en och samma plats. Miljontals användare får jobbet gjort i Teams varje dag eftersom det sammanställer allt du behöver arbeta med i ett samarbetsnav. 
 
-Du kan använda [den här artikeln](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) om du vill ha hjälp med hur du ska hjälpa dina distansarbetare med Teams. 
+Använd [den här artikeln](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) om du vill ha hjälp med hur du ska hjälpa dina distansarbetare med Teams. 
+
+Mer information och demonstrationer om hur du använder Teams för distansarbete finns i [del 1-video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
 
 ### <a name="chat-and-conversations"></a>Chatt och konversationer
 
@@ -63,25 +65,34 @@ Med appar och arbetsflöden blir distansarbetarna mer produktiva i Teams, genom 
 
 Med Outlook kan distansarbetare vara anslutna och organiserade med e-post, kalendrar, kontakter, uppgifter med mera, tillsammans på ett och samma ställe. Outlook hjälper dig att hålla reda på din dag baserat på vad som är relevant för dig. Med Outlook kan du dela bifogade filer direkt från OneDrive, planera och delta i Teams-möten, visa och dela kalendrar samt ge behörigheter till andra. Att veta vad som kommer härnäst för både arbete och personliga åtaganden och vad som behöver uppmärksamhet kan hjälpa distansarbetare att fokusera på vad som är viktigt. Outlook ger användbara sätt för hur distansarbetare kan hantera sin tid och enkelt hitta vad de behöver, inklusive filer, personer i organisationen och mer. 
 
+Se [den här artikeln](../enterprise/secure-email-recommended-policies.md) om du vill ha rekommenderad identitets- och enhetsåtkomst för att skydda organisationens e-post och e-postklienter som stöder modern autentisering och villkorlig åtkomst.
+
 ## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>Lagra och samarbeta i filer med SharePoint Online och OneDrive
 
 För innehållssamarbete kan fjärrarbetare använda mappar från SharePoint Online och OneDrive som en central plats i molnet för att lagra och dela filer, samredigera, kommunicera och samarbeta. Distansarbetare kan samarbeta säkert från valfri plats från en webbläsare, från Teams och från Office-appar.
+
+Se [den här artikeln](../enterprise/sharepoint-file-access-policies.md) om du vill ha de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint Online och OneDrive för företag.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Skapa och samarbeta med innehåll med Microsoft 365-appar
 
 Microsoft 365-appar är den mest produktiva och säkraste Office-upplevelsen för företag, de låter personer kan samarbeta smidigt, var som helst, när som helst. Distansarbetare kan samarbeta på ett dokument med flera personer samtidigt, se redigeringar och förändringar i realtid och samredigera med andra på vilken bärbar dator, dator eller mobil enhet som helst.
 
+Se [den här artikeln](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) för att planera, distribuera och hantera Microsoft 365 Apps i din företagsmiljö.
+
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Teknisk administration för produktivitetsprogram och-tjänster
 
 - [Ge stöd till distansarbetare med Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Del 1 video om Teams för distansarbetare](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Nedladdning av Teams Customer Success Kit](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Verktyg för att driva på användning av Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Skapa en strategi för ändringshantering för Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
 - [Teams med tre skyddsnivåer](configure-teams-three-tiers-protection.md)
+
+## <a name="user-training-resources-for-productivity-apps-and-services"></a>Utbildningsresurser för användare för produktivitetsprogram och -tjänster
 
 - [Träna dina användare på Office och Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
 - [Använda Office för webben](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Nästa steg
 
-Fortsätt med [Steg 5](empower-people-to-work-remotely-communication-venues.md) om du vill skapa fler kommunikationsplatser som tjänar de unika kraven för COVID-19-krisen.
+Fortsätt med [Steg 5](empower-people-to-work-remotely-communication-venues.md) om du vill skapa fler kommunikationsplatser som betjänar din distansarbetare.
