@@ -25,14 +25,15 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
-ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232787"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407950"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -89,6 +90,6 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 [Betala med faktura, kreditkort eller bankkonto](pay-for-your-subscription.md)
   
-[Lägga till, uppdatera eller ta bort ett kreditkort eller bankkonto](add-update-or-remove-credit-card-or-bank-account.md)
+[Hantera betalningsmetoder](manage-payment-methods.md)
 
 [Betalningsalternativ för Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)
