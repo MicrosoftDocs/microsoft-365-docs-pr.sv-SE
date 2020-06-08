@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033836"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588222"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
@@ -87,7 +87,7 @@ Du måste utföra alla följande steg för att återta åtkomsten till ditt kont
 > [!WARNING]
 > Skicka inte det nya lösen ordet till den avsedda användaren via e-post, eftersom angriparen fortfarande har tillgång till postlådan.
 
-1. Följ rutinerna för att återställa ett lösenord för Microsoft 365-appar för företag för någon annan i [Återställa lösenord för Microsoft 365-appar för företag](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Följ rutinerna för att återställa ett lösenord för Microsoft 365-appar för företag för någon annan i [Återställa lösenord för Microsoft 365-appar för företag](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Anmärkningar**:
 
@@ -98,7 +98,7 @@ Du måste utföra alla följande steg för att återta åtkomsten till ditt kont
 - Om din lokala identitet är federerad med Microsoft 365 måste du ändra ditt lösenord lokalt och därefter informera administratören om skadan.
 
 > [!TIP]
-> Vi rekommenderar att du aktiverar multifaktorautentisering (MFA) för att förhindra kompromettering, i synnerhet för konton med administratörsbehörigheter.  Du kan läsa mer om MFA [här](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Vi rekommenderar att du aktiverar multifaktorautentisering (MFA) för att förhindra kompromettering, i synnerhet för konton med administratörsbehörigheter.  Du kan läsa mer om MFA [här](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Steg 2 Ta bort misstänkta adresser för vidarebefordran av e-post
 
@@ -202,4 +202,4 @@ Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som 
 
 - [Tillsynsmyndigheten för värdepapper – Bedrägerier genom nätfiske](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- Om du vill rapportera skräppost direkt till Microsoft och din administratör [använder du tillägget Rapportera meddelande](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- Om du vill rapportera skräppost direkt till Microsoft och din administratör [använder du tillägget Rapportera meddelande](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
