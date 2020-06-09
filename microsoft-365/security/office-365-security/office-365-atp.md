@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Avancerat skydd innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: f0d256a1d181b482516c7be55bca240a55dec567
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 6fd860bbe860b9ed398d0f452c6ea60b41c0e225
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588186"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617424"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Avancerat skydd
 
@@ -114,7 +114,7 @@ För att få åtkomst till ATP-funktioner i Säkerhets- och efterlevnadscentret 
 |---------|---------|
 |Global administratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter) |[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter) |[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
-|Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
+|Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Sök och rensa (det här är bara tilldelat i Säkerhets- och efterlevnadscenter) |[Behörigheter i Säkerhets- och efterlevnadscenter] (permissions-in-the-security-and-compliance-center.md|
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
