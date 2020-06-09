@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan få information om hur de tar bort användare från portalen för åtkomstbegränsade användare i Office 365. Användare läggs till i portalen med åtkomstbegränsade användare för att de skickat utgående skräppost, oftast som ett resultat av kontointrång.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351013"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617368"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Ta bort blockerade användare från portalen med åtkomstbegränsade användare i Office 365
 
@@ -40,7 +40,7 @@ Administratörer kan ta bort användare från portalen med åtkomstbegränsade a
 
 - Öppna säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd <https://protection.office.com/restrictedusers> för att gå direkt till sidan med **åtkomstbegränsade användare**.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Om du vill ta bort användare från portalen för åtkomstbegränsade användare måste du vara medlem i rollgrupperna **Organisationsledning** eller **Säkerhetsadministratörer**. För skrivskyddad behörighet till portalen för åtkomstbegränsade användare måste du vara medlem i rollgruppen **Säkerhetsläsare**. Mer information om rollgrupper i säkerhets- och efterlevnadscentret finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -96,7 +96,7 @@ Om du vill visa en lista med användare som begränsas från att skicka e-post k
 Get-BlockedSenderAddress
 ```
 
-Om du vill visa information om särskilda användare ersätter du \<E-postadress\> med deras e-postadress och kör följande kommando:
+Om du vill visa information om särskilda användare ersätter du \<emailaddress\> med deras e-postadress och kör följande kommando:
 
 ```powershell
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
@@ -104,7 +104,7 @@ Get-BlockedSenderAddress -SenderAddress <emailaddress>
 
 Se [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress) för detaljerad information om syntax och parametrar.
 
-Om du vill ta bort användare från listan med åtkomstbegränsade användare ersätter du \<E-postadress\> med deras e-postadress och kör följande kommando:
+Om du vill ta bort användare från listan med åtkomstbegränsade användare ersätter du \<emailaddress\> med deras e-postadress och kör följande kommando:
 
 ```powershell
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>

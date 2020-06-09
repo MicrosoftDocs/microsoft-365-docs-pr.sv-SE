@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
-ms.openlocfilehash: 2db8af2c0651388998967db239ceed92a8be1018
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9a2cda171de2b81acdabc2180fe53d8ed4e0f900
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036614"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616484"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -33,7 +33,7 @@ Du bör använda DKIM tillsammans med SPF och DMARC för att förhindra att för
 
 I stort sett använder du en privat nyckel för att kryptera huvudet i domänens utgående e-post. Du publicerar en offentlig nyckel i din domäns DNS-poster som tar emot servrar som sedan kan användas för att avkoda signaturen. De använder en offentlig nyckel för att kontrollera att de verkligen kommer från dig och att de inte kommer från någon som *förfalskar* din domän.
 
-Microsoft 365 konfigurerar automatiskt DKIM för dess ursprungliga ”onmicrosoft.com”-domäner. Det innebär att du inte behöver göra något för att konfigurera DKIM för alla inledande domännamn (t. ex. litware.onmicrosoft.com). Mer information om domäner finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
+Microsoft 365 konfigurerar automatiskt DKIM för dess ursprungliga ”onmicrosoft.com”-domäner. Det innebär att du inte behöver göra något för att konfigurera DKIM för alla inledande domännamn (t. ex. litware.onmicrosoft.com). Mer information om domäner finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
 Du kan också välja att inte göra något med DKIM för din anpassade domän. Om du inte konfigurerar DKIM för din anpassade domän skapar Microsoft 365 ett privat och offentligt nyckelpar, aktiverar DKIM-signering och konfigurerar sedan standardprincipen för Microsoft 365 för din anpassade domän. Även om det är tillräcklig täckning för de flesta kunder ska du manuellt konfigurera DKIM för din anpassade domän i följande fall:
 
@@ -133,7 +133,7 @@ New-DkimSigningConfig -DomainName <domain> -Enabled $false
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
-I Microsoft 365 utförs automatisk nyckelrotation med de två poster som du skapar. Om du har etablerat anpassade domäner utöver den första domänen i Microsoft 365 måste du publicera två CNAME-poster för varje ytterligare domän. Om du har två domäner måste du publicera två ytterligare CNAME-poster och så vidare.
+Om du har etablerat anpassade domäner utöver den första domänen i Microsoft 365 måste du publicera två CNAME-poster för varje ytterligare domän. Om du har två domäner måste du publicera två ytterligare CNAME-poster och så vidare.
 
 Använd följande format för CNAME-posterna.
 
@@ -158,7 +158,7 @@ Var:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
-- _initialDomain_ är den domän som du använde när du registrerade dig för Microsoft 365. De första domänerna avslutas alltid i onmicrosoft.com. Information om hur du fastställer din första domän finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
+- _initialDomain_ är den domän som du använde när du registrerade dig för Microsoft 365. De första domänerna avslutas alltid i onmicrosoft.com. Information om hur du fastställer din första domän finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
 Om du till exempel har en första domän med cohovineyardandwinery.onmicrosoft.com, och två egna domäner cohovineyard.com och cohowinery.co, behöver du skapa två CNAME-poster för varje ytterligare domän för att summera fyra CNAME-poster.
 
@@ -181,7 +181,10 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> Det är viktigt att skapa den andra posten, men bara en av dem kan vara tillgänglig när du skapar den. I själva verket kan den andra väljarens peka på en adress som inte har skapats än. Vi rekommenderar fortfarande att du skapar den andra CNAME-posten eftersom nyckelroteringen blir smidig och du inte behöver göra några manuella steg själv.
+> Det är viktigt att skapa den andra posten, men bara en av dem kan vara tillgänglig när du skapar den. I själva verket kan den andra väljarens peka på en adress som inte har skapats än. Vi rekommenderar fortfarande att du skapar den andra CNAME-posten eftersom nyckelroteringen blir smidig.
+
+> [!CAUTION]
+> Automatisk nyckelrotering har tillfälligt inaktiverats eftersom vi implementerar några designändringar i hur vi skapar nycklar. Det är en bra idé att ha flera nycklar så att du kan rotera dem med jämna mellanrum. Även om det är svårt att knäcka är det fortfarande en praktisk strategi för att skydda mot sådan som imitation. Du kan följa dokumentet [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) om du vill utföra det här för din organisation. Vi beräknar att automatisk rotering kommer att aktiveras igen i augusti 2020.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>Aktivera DKIM-signering för din anpassade domän
 <a name="EnableDKIMinO365"> </a>
@@ -202,7 +205,7 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>För att aktivera DKIM-signering för din anpassade domän med PowerShell
 
-1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör följande kommando:
 
@@ -253,7 +256,7 @@ När du inaktiverar signeringsprincipen inaktiveras inte DKIM fullständigt. Eft
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Inaktivera DKIM-signeringsprincipen med Windows PowerShell
 
-1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör något av följande kommandon för varje domän som du vill inaktivera DKIM-signering för.
 
@@ -299,7 +302,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-I det här exemplet innehåller värddatornamnet och domänen värdena som CNAME pekar på om DKIM-signering för fabrikam.com har aktiverats av domänadministratören. Till slut kommer alla meddelanden som skickats från Microsoft 365 att DKIM-signeras. Om du aktiverar DKIM själv blir domänen samma som domänen i Från: adress, i det här fallet fabrikam.com. Om du inte gör det justeras det inte. I stället används din organisations första domän. Information om hur du fastställer din första domän finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
+I det här exemplet innehåller värddatornamnet och domänen värdena som CNAME pekar på om DKIM-signering för fabrikam.com har aktiverats av domänadministratören. Till slut kommer alla meddelanden som skickats från Microsoft 365 att DKIM-signeras. Om du aktiverar DKIM själv blir domänen samma som domänen i Från: adress, i det här fallet fabrikam.com. Om du inte gör det justeras det inte. I stället används din organisations första domän. Information om hur du fastställer din första domän finns i [Vanliga frågor och svar om domäner](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Konfigurera DKIM så att en tjänst från tredje part kan skicka, eller förfalska, e-postmeddelanden för din anpassade domän.
 <a name="SetUp3rdPartyspoof"> </a>
@@ -323,7 +326,7 @@ I det här exemplet för att uppnå följande resultat:
 
 3. När du skickar e-post signerar e-postleverantören för massutskick nyckeln med motsvarande privata nyckel. Det gör att e-postleverantören för massutskicket bifogar DKIM-signaturen i meddelandehuvudet.
 
-4. Mottagande e-postsystem utför en DKIM-kontroll genom att autentisera värdet i DKIM-signaturen d=\<domän\> mot domänen i meddelandet Från: (5322.From) för meddelandet. I det här exemplet överensstämmer värdena:
+4. Mottagande e-postsystem utför en DKIM-kontroll genom att autentisera värdet i DKIM-signaturen d=\<domain\> mot domänen i meddelandet Från: (5322.From) för meddelandet. I det här exemplet överensstämmer värdena:
 
    > sender@**contoso.com**
 

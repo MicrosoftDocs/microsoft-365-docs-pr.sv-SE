@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14722ab96230ecb8acaf4476d6ca70c47de2ffdd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d1cd4812cdb8a58062d7c64e73049c080f8b906f
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035112"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588470"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -35,7 +35,7 @@ Följ anvisningarna i den här artikeln om du vill skapa en utvecklings-/testmil
 
 I den här fasen får du provprenumerationer för Office 365 E5 och Enterprise Mobility + Security (EMS) E5 för en fiktiv organisation som representerar en politisk kampanj.
 
-Följ först anvisningarna i **Fas 2 ** i [Office 365 utvecklings-/testmiljö](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Följ anvisningarna i **fas 2** i [Enkel baskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
 Registrera dig sedan för en utvärderingsprenumeration på EMS E5 och lägg till den i samma organisation som utvärderingsprenumerationen.
 

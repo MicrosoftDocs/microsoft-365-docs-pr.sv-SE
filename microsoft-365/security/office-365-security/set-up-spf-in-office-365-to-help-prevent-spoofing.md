@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: 9d5d300b7397d719d9ab85139cd27d912627a3ff
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6061cd9ea52f4ed4073f510dcba60fba9b4fd23c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035314"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588082"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
@@ -49,7 +49,7 @@ Innan du uppdaterar TXT-posten i DNS måste du samla in viss information och bes
 
 Samla in följande information:
 
-- Aktuell SPF TXT-post för din anpassade domän. Instruktioner finns i [Samla den information du behöver för att skapa DNS-poster i Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
+- Aktuell SPF TXT-post för din anpassade domän. Instruktioner finns i [Samla den information du behöver för att skapa DNS-poster i Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
 - Externa IP-adresser för alla lokala meddelandeservrar. Till exempel: **131.107.2.200**.
 
@@ -67,9 +67,9 @@ Samla in följande information:
    |2|Exchange Online|Vanligt|include:spf.protection.outlook.com|
    |3|Endast dedikerad Exchange Online|Inte vanligt|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|Office 365 Germany, endast Microsoft Cloud Germany|Inte vanligt|include:spf.protection.outlook.de|
-   |5|E-postsystem från tredje part|Inte vanligt|include:\<domännamn\>  <br/> Domännamnet är domännamnet för e-postsystemet från tredje part.|
-   |6|Lokalt e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt| Använd något av följande för varje extra e-postsystem: <br> ip4:\<_IP-adress_\>  <br/>  ip6:\<_IP-adress_\>  <br/>  include:\<_domännamn_\>  <br/>  Värdet för \<_IP-adress_\> representerar IP-adressen för det andra e-postsystemet och \<_domännamnet_\> är domännamnet för det andra e-postsystemet som skickar e-post för domänen.|
-   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|\<_användningsregel_\>  <br/> Det här kan vara ett av flera värden. Vi rekommenderar att du använder **-all**.|
+   |5|E-postsystem från tredje part|Inte vanligt|include:\<domain name\>  <br/> Domännamnet är domännamnet för e-postsystemet från tredje part.|
+   |6|Lokalt e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt| Använd något av följande för varje extra e-postsystem: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Värdet för \<_IP address_\> representerar IP-adressen för det andra e-postsystemet och \<_domain name_\> är domännamnet för det andra e-postsystemet som skickar e-post för domänen.|
+   |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|\<_enforcement rule_\>  <br/> Det här kan vara ett av flera värden. Vi rekommenderar att du använder **-all**.|
 
 2. Om du inte redan har gjort det kan du skapa en SPF TXT-post med hjälp av syntaxen i tabellen:
 
@@ -85,7 +85,7 @@ Samla in följande information:
 
    Om du redan har distribuerats i Office 365 och har konfigurerat dina SPF TXT-poster för din anpassade domän och migrerar till Office 365 Germany måste du uppdatera din SPF TXT-post. Det gör du genom att ändra **include:spf.protection.outlook.com** till **include:spf.protection.outlook.de**.
 
-3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. Du kan bara ha en SPF TXT-post för en domän. Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) och klicka på länken för din DNS-värd.
+3. När du har skapat din SPF TXT-post måste du uppdatera posten i DNS. Du kan bara ha en SPF TXT-post för en domän. Om det redan finns en SPF TXT-post ska du inte lägga till en ny post utan i stället uppdatera den befintliga posten. Gå till [Skapa DNS-poster för Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) och klicka på länken för din DNS-värd.
 
 4. Testa din SPF TXT-post.
 
