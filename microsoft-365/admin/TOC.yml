@@ -288,6 +288,8 @@
           href: ../business/map-protection-features-to-intune-settings.md
         - name: Statusvärden för enheter
           href: ../business/device-states.md
+        - name: "Programskyddsinställningar för Windows\_10-enheter"
+          href: ../business/protection-settings-for-windows-10-devices.md
         - name: Inställningar för appskydd för Android och iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
@@ -298,8 +300,6 @@
           items:
             - name: Validera inställningar på Windows 10-datorer
               href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Programskyddsinställningar för Windows 10-enheter
-          href: ../business/protection-settings-for-windows-10-devices.md
         - name: Autopilot
           items:
             - name: Lägga till Autopilot-enheter och -profiler
