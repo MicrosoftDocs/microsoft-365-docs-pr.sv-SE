@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint- och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 54b896616cf09c84525b812fed6fb3f35b07bf10
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588094"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617224"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera Office 365 ATP-principer för säkra länkar
 
@@ -55,7 +55,7 @@ Om en användare klickar på en länk i ett e-postmeddelande och webbadressen ha
     |---------|---------|
     |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)         |
     |Säkerhetsadministratör |Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-    |Hantering av Exchange Online-organisation |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+    |Hantering av Exchange Online-organisation |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
 
     Mer information om roller och behörigheter finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -67,7 +67,7 @@ Om en användare klickar på en länk i ett e-postmeddelande och webbadressen ha
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Steg 2: Definiera (eller granska) ATP Safe Links-principen som gäller för alla
 
-När du har [Ett avancerat skydd mot office 365](office-365-atp.md)har du en standardprincip för ATP Safe Links som gäller för alla i organisationen. Se till att granska och redigera standardprincipen om det behövs.
+När du har [Ett avancerat skydd mot office 365](office-365-atp.md)har du en standardprincip för ATP-säkra länkar som gäller för alla i organisationen. Se till att granska och redigera standardprincipen om det behövs.
   
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto. 
     

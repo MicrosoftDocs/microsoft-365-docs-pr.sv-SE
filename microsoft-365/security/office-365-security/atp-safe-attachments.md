@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig mer om funktionen BETRODDa bifogade filer för Office 365 och hur du skaffar funktionen för din prenumeration.
-ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588306"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616784"
 ---
 # <a name="atp-safe-attachments"></a>ATP säkra bilagor
 
@@ -49,11 +49,11 @@ Om du vill definiera (eller redigera) ATP-principer måste du tilldelas en lämp
 |---------|---------|
 |global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Säkerhetsadministratör|Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Hur man vet om ATP Säkra bilagor skydd är på plats
 
-När du har [definierat (eller granskat) dina ATP-principer för säkra bilagor](set-up-atp-safe-attachments-policies.md)är ett bra sätt att se hur tjänsten fungerar genom att [visa rapporter för avancerat skydd mot hot](view-reports-for-atp.md).
+När du har [definierat (eller granskat) dina ATP Safe Attachments-principer](set-up-atp-safe-attachments-policies.md)är ett bra sätt att se hur tjänsten fungerar genom att [visa rapporter för avancerat skydd mot hot](view-reports-for-atp.md).
 
 I följande tabell beskrivs några exempelscenarier. I alla dessa fall antar vi att organisationen har en Microsoft 365-prenumeration som innehåller avancerat skydd mot hot.
 

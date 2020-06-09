@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om hotskydd i Microsoft 365 och konfigurera hur du använder det för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4176aabb88d177c7cff0f32f32543a251b558170
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 54500500095392ebfc3d93080701fa4715fc8448
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587998"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617402"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -58,7 +58,7 @@ Du måste tilldelas en lämplig roll för att konfigurera principer i [Security 
 |---------|---------|
 |global administratör|[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Säkerhetsadministratör|[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Hantering av Exchange Online-organisation|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>Och<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
+|Hantering av Exchange Online-organisation|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>Och<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
 Mer information finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
@@ -225,6 +225,6 @@ När du har konfigurerat hotskyddsfunktionerna ska du se till att övervaka hur 
 |---|---|
 |**Vad du ska göra**|**Resurser för att få mer information**|
 |Se hur hotskyddsfunktioner fungerar för din organisation genom att visa rapporter|[Instrumentpanel för säkerhet](security-dashboard.md)<br/>[Säkerhetsrapporter för e-post](view-email-security-reports.md)<br/>[Rapporter för OFFICE 365 ATP](view-reports-for-atp.md)<br/>[Hotutforskaren](threat-explorer.md)|
-|Granska och revidera regelbundet dina policyer för hotskydd efter behov|[Säkra poäng](../mtp/microsoft-secure-score.md)<br/>[Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md)<br/>[Funktioner för utredning och svar i Microsoft 365](keep-users-safe-with-office-365-ti.md)|
+|Granska och revidera regelbundet dina policyer för hotskydd efter behov|[Säkerhetspoäng](../mtp/microsoft-secure-score.md)<br/>[Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md)<br/>[Funktioner för utredning och svar i Microsoft 365](keep-users-safe-with-office-365-ti.md)|
 |Håll utkik efter nya funktioner och serviceuppdateringar|[Standard- och målutgivningsalternativ](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Meddelandecentral](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Beskrivningar av tjänsten](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

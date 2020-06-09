@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du visar, skapar, ändrar och tar bort utgående skräppostprinciper i Exchange Online Protection (EOP).
-ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352005"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616584"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera skräppostfiltrering utanför eu i EOP
 
@@ -77,7 +77,7 @@ Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade pri
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till principer för skräppost med utgående skräppost måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -178,7 +178,7 @@ Om du skapar en anpassad utgående skräppostprincip i Security & Compliance Cen
 
 6. (Obligatoriskt) Expandera avsnittet **Tillämpat på** för att identifiera de interna avsändare som principen gäller för.
 
-    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden med samma villkor eller undantag använder ELLER-logik (till exempel _ \< sender1 \> _ eller _ \< sender2 \> _). Olika villkor eller undantag använder AND-logik (till exempel _ \< sender1 \> _ och _ \< medlem i grupp 1 \> _).
+    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden med samma villkor eller undantag använder ELLER-logik (till exempel _\<sender1\>_ eller _\<sender2\>_ ). Olika villkor eller undantag använder AND-logik (till exempel _\<sender1\>_ och _\<member of group 1\>_ ).
 
     Det är enklast att klicka på **Lägg till ett villkor** tre gånger för att visa alla tillgängliga villkor. Om du vill ta bort villkor som du inte vill konfigurera kan du klicka på ![knappen Ta bort](../../media/scc-remove-icon.png).
 
@@ -286,7 +286,7 @@ Att skapa en utgående skräppostprincip i PowerShell är en tvåstegsprocess:
 
   - Skapa den nya principen som inaktiverad (_Aktiverad_ `$false` på cmdleten **Ny värdbaseradOutboundSpamFilterRule).**
 
-  - Ange prioritet för principen när_Priority_ du skapar ( _ \< Prioritetsnummer \> _) på cmdleten **New-HostedOutboundSpamFilterRule).**
+  - Ange prioritet för principen när du skapar (_Prioritet_ _\<Number\>_ ) på cmdleten **New-HostedOutboundSpamFilterRule).**
 
 - En ny princip för skräppostfilter som du skapar i PowerShell visas inte i Security & Compliance Center förrän du tilldelar principen till en skräppostfilterregel.
 

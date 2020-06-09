@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Lär dig mer om hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda katalogsynkronisering, EAC och PowerShell för att hantera användare.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352438"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616840"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
 
@@ -35,7 +35,7 @@ För fristående EOP-organisationer med ett litet antal användare kan du lägga
 
 - Om du vill öppna Administrationscenter för Exchange (EAC) finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - När du skapar e-postanvändare i EOP PowerShell kan du stöta på begränsning. EOP PowerShell-cmdlets använder också en batchbearbetningsmetod som resulterar i en spridningsfördröjning på några minuter innan resultaten av kommandona är synliga.
 
@@ -139,7 +139,7 @@ Om du vill returnera en sammanfattningslista över alla e-postanvändare i frist
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-Om du vill visa detaljerad information om en viss e-postanvändare ersätter du \< E-postidentitet \> med e-postanvändarens namn, alias eller kontonamn och kör följande kommandon:
+Om du vill visa detaljerad information om en viss e-postanvändare ersätter du \<MailUserIdentity\> med e-postanvändarens namn, alias eller kontonamn och kör följande kommandon:
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ Detaljerad syntax- och parameterinformation finns i [Ange-EOPMailUser](https://d
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Använda fristående EOP PowerShell för att ta bort e-postanvändare
 
-Om du vill ta bort e-postanvändare i fristående EOP PowerShell \< ersätter du MailUserIdentity \> med e-postanvändarens namn, alias eller kontonamn och kör följande kommando:
+Om du vill ta bort e-postanvändare i fristående EOP PowerShell ersätter du \<MailUserIdentity\> med e-postanvändarens namn, alias eller kontonamn och kör följande kommando:
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Om du vill kontrollera att du har skapat, ändrat eller tagit bort e-postanvänd
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- Ersätt \< E-postidentitet \> med e-postanvändarens namn, alias eller kontonamn och kör följande kommandon för att verifiera inställningarna:
+- Ersätt \<MailUserIdentity\> med e-postanvändarens namn, alias eller kontonamn och kör följande kommandon för att verifiera inställningarna:
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

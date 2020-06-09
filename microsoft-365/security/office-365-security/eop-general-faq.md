@@ -14,12 +14,12 @@ ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
 description: Få svar på de vanligaste allmänna frågorna om tjänsten För molnbaserad e-postfiltrering av Exchange Online Protection (EOP).
-ms.openlocfilehash: 02aa7175e95cf706ed13268035953400af2485a7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0908fd5cf3a799f5a253122efac2b4d56d80ee76
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206668"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617036"
 ---
 # <a name="eop-general-faq"></a>Allmänna vanliga frågor och svar om EOP
 
@@ -89,4 +89,4 @@ Ja. Mer information om begränsningar i EOP finns i [Exchange Online Protection 
 
 ## <a name="does-eop-support-powershell"></a>Stöder EOP PowerShell?
 
-Ja, fullständig EOP-funktionalitet är tillgänglig via PowerShell: Exchange Online PowerShell för organisationer med Exchange Online-postlådor; fristående EOP PowerShell för fristående EOP-organisationer. Mer information finns i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) och [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).
+Ja, fullständig EOP-funktionalitet är tillgänglig via PowerShell: Exchange Online PowerShell för organisationer med Exchange Online-postlådor; fristående EOP PowerShell för fristående EOP-organisationer. Mer information finns i [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) och [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).

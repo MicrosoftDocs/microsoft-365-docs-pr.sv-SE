@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Läs mer om hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588126"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617236"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera principer för office 365 ATP-säkra bifogade filer
 
@@ -34,11 +34,11 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
 
 ## <a name="what-to-do"></a>Vad du ska göra
 
-1. Gå igenom förutsättningarna
+1. Granska förutsättningarna
 
 2. Konfigurera en ATP-princip för säkra bilagor
 
-3. Läs mer om alternativ för atp-säkra bifogade filer
+3. Läs mer om alternativ för ATP-säkra bilagor
 
 ## <a name="step-1-review-the-prerequisites"></a>Steg 1: Granska förutsättningarna
 
@@ -50,7 +50,7 @@ Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dok
   |---------|---------|
   |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
   |Säkerhetsadministratör |Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-  |Exchange Online Organisation Management, Exchange Online Hygien Management |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |Exchange Online Organisation Management, Exchange Online Hygien Management |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
   |
 
   Mer information om roller och behörigheter finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).

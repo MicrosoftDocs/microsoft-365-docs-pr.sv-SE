@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar inställningarna för skräppost i Exchange Online-postlådor. Många av dessa inställningar är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588458"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616640"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
@@ -46,9 +46,9 @@ Administratörer kan använda Exchange Online PowerShell för att inaktivera, ak
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Du kan bara använda Exchange Online PowerShell för att utföra dessa procedurer. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste tilldelas behörigheter innan du kan göra dessa procedurer. Du behöver rollen **E-postmottagare** (som tilldelas rollgrupperna **Organisationshantering,** **Mottagarhantering**och **Anpassade e-postmottagare** som standard) eller rollen **Användaralternativ** (som tilldelas rollgrupperna **Organisationshantering** och **HelpDesk** som standard). Information om hur du lägger till användare i rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Observera att en användare med standardbehörigheter kan göra samma procedurer på sin egen postlåda, så länge de har [åtkomst till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+- Du måste tilldelas behörigheter innan du kan göra dessa procedurer. Du behöver rollen **E-postmottagare** (som tilldelas rollgrupperna **Organisationshantering,** **Mottagarhantering**och **Anpassade e-postmottagare** som standard) eller rollen **Användaralternativ** (som tilldelas rollgrupperna **Organisationshantering** och **HelpDesk** som standard). Information om hur du lägger till användare i rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Observera att en användare med standardbehörigheter kan göra samma procedurer på sin egen postlåda, så länge de har [åtkomst till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 

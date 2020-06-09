@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du skapar, ändrar och tar bort de anti-nätfiskeprinciper som är tillgängliga i EOP-organisationer (Exchange Online Protection) med eller utan Exchange Online-postlådor.
-ms.openlocfilehash: b5ec72365c9b7446f4b6a4c32d96a89ca57efbe4
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352063"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616704"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för nätfiske i EOP
 
@@ -69,7 +69,7 @@ Om du vill öka effektiviteten i skyddet mot nätfiske kan du skapa anpassade pr
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Mot nätfiske** använder du <https://protection.office.com/antiphishing> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
   Du kan inte hantera anti-phishing-principer i fristående EOP PowerShell.
 
@@ -103,7 +103,7 @@ När du skapar en anti-phishing-princip kan du bara ange principnamn, beskrivnin
 
 4. På sidan **Tillämpad på** som visas identifierar du de interna mottagare som principen gäller för.
 
-   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<mottagare1\>_ eller _\<mottagare2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<mottagare1\>_ och _\<medlem i grupp 1\>_).
+   Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden med samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ). Olika villkor eller undantag använder AND-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
 
    Klicka på **Lägg till ett villkor**. I listrutan som visas väljer du ett villkor under **Tillämpad om:**
 
@@ -141,11 +141,11 @@ Använd följande procedurer för att ändra anti-phishing-principer: en ny prin
 
 2. Välj den anpassade anti-phishing-principen som du vill ändra. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Den **utfällbara sidan Redigera ditt \< principnamn \> ** visas. Om du klickar på **Redigera** i ett avsnitt får du tillgång till inställningarna i det avsnittet.
+3. **Den Redigera \<name\> din princip** utfällbara visas. Om du klickar på **Redigera** i ett avsnitt får du tillgång till inställningarna i det avsnittet.
 
    - Följande steg visas i den ordning som avsnitten visas, men de är inte sekventiella (du kan markera och ändra avsnitten i valfri ordning).
 
-   - När du har **klickat** på Redigera i ett avsnitt visas de tillgängliga inställningarna i ett guideformat, men du kan hoppa inom sidorna i valfri ordning och du kan klicka på **Spara** på valfri sida (eller **Ikonen Avbryt** eller **Stäng** avsluta för att återgå till sidan Redigera ![ ditt ](../../media/scc-remove-icon.png) ** \< principnamn \> ** (du behöver inte besöka den sista sidan i guiden för att spara eller lämna).
+   - När du har **klickat** på Redigera i ett avsnitt visas de tillgängliga inställningarna i ett guideformat, men du kan hoppa inom sidorna i valfri ordning och du kan klicka på **Spara** på valfri sida (eller **Ikonen Avbryt** eller **Stäng** stäng för att återgå till sidan Redigera ![ din ](../../media/scc-remove-icon.png) **principsida \<name\> ** (du behöver inte besöka den sista sidan i guiden för att spara eller lämna).
 
 4. **Principinställning**: Klicka på **Redigera** om du vill ändra samma inställningar som var tillgängliga när du [skapade principen](#use-the-security--compliance-center-to-create-anti-phishing-policies) i föregående avsnitt:
 
@@ -184,7 +184,7 @@ Använd följande procedurer för att ändra anti-phishing-principer: en ny prin
 
    När du är klar klickar du på **Spara** på valfri sida.
 
-6. Tillbaka på sidan **Redigera \< \> principnamn,** granska inställningarna och klicka sedan på **Stäng**.
+6. Tillbaka på **sidan \<Name\> Redigera din princip,** granska dina inställningar och klicka sedan på **Stäng**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Använd Security & Compliance Center för att ändra standardprincipen mot nätfiske
 
@@ -224,7 +224,7 @@ Du kan inte inaktivera standardpolicyn mot nätfiske.
 
 Som standard ges anti-phishing-principer en prioritet som baseras på den ordning de skapades i (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Två principer kan inte ha samma prioritet.
 
-Anpassade principer mot nätfiske visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen mot nätfiske med namnet Office365 AntiPhish Default har det anpassade **prioritetsvärdet Lägsta**och du kan inte ändra det.
+Anpassade principer mot nätfiske visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0). Standardprincipen mot nätfiske med namnet Office365 AntiPhish Default har det anpassade prioritetsvärdet **Lägsta**och du kan inte ändra det.
 
  **I**Security & Compliance Center kan du bara ändra prioriteten för anti-phishing-principen när du har skapat den. I PowerShell kan du åsidosätta standardprioriteten när du skapar anti-phish-regeln (vilket kan påverka prioriteten för befintliga regler).
 
@@ -234,7 +234,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 2. Markera den princip som du vill ändra. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Den **utfällbara sidan Redigera ditt \< principnamn \> ** visas.
+3. **Den Redigera \<name\> din princip** utfällbara visas.
 
    - Den anpassade anti-phishing-principen med **prioritetsvärde** **0** har bara knappen **Minska prioritet** tillgänglig.
 
@@ -256,7 +256,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
    - Klicka på **Standardprincip** om du vill visa standardprincipen mot nätfiske.
 
-3. Den **utfällbara sidan Redigera ditt \< principnamn \> ** visas, där du kan visa inställningar och värden.
+3. **Den Redigera \<name\> din princip** utfällbara visas, där du kan visa inställningar och värden.
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Använd Security & Compliance Center för att ta bort principer för nätfiske
 
@@ -264,7 +264,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 2. Markera den princip som du vill ta bort. Om den redan är markerad avmarkerar du den och markerar den igen.
 
-3. Klicka på **Ta bort princip i**den utfällbara principen Redigera ditt ** \< \> principnamn** som visas och klicka sedan på **Ja** i varningsdialogrutan som visas.
+3. Klicka på **Ta bort princip**i utfällningen redigera din **princip \<name\> ** och klicka sedan på **Ja** i varningsdialogrutan som visas.
 
 Du kan inte ta bort standardprincipen.
 
@@ -288,7 +288,7 @@ Att skapa en anti-phishing-policy i PowerShell är en tvåstegsprocess:
 
   - Skapa den nya principen som inaktiverad (_Aktiverad_ `$false` på cmdleten **Ny anti-AntiPhishRule).**
 
-  - Ange prioritet för principen när du skapar _ \< \> (Prioritetsnummer)_ på cmdleten **Ny anti-AntiPhishRule).** _Priority_
+  - Ange prioritet för principen när du skapar (_Prioritet_ _\<Number\>_ ) på cmdleten **Ny anti-AntiPhishRule).**
 
 - En ny anti-phish-princip som du skapar i PowerShell visas inte i Security & Compliance Center förrän du tilldelar principen till en anti-phish-regel.
 
@@ -507,7 +507,7 @@ Så här kontrollerar du att du har konfigurerat ATP:s principer för phishing:e
   - Välj principen i listan och visa informationen i utfällbara.
   - Klicka på **Standardprincip** och visa informationen i utfällbara.
 
-- I Exchange Online PowerShell ersätter du \< Namn med namnet på principen eller regeln och kör följande kommando och verifiera \> inställningarna:
+- I Exchange Online PowerShell ersätter du \<Name\> med namnet på principen eller regeln och kör följande kommando och verifiera inställningarna:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Följ de här rekommendationerna om bästa praxis för fristående Exchange Online Protection (EOP) för att ställa in dig själv för framgång och undvika vanliga konfigurationsfel.
-ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587540"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616728"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Metodtips för att konfigurera fristående EOP
 
@@ -53,7 +53,7 @@ De här inställningarna täcker en rad funktioner som ligger utanför säkerhet
 |[POP-anslutning till postlåda](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Inaktiverad|Inaktiverad||
 |Autentiserat SMTP-inlämnande|Inaktiverad|Inaktiverad|Autentiserade smtp-klientöverföring (kallas även klient-SMTP-inlämning eller SMTP AUTH) krävs för att POP3- och IMAP4-klienter ska kunna skicka e-post.|
 |EWS-anslutning till postlåda|Inaktiverad|Inaktiverad||
-|[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgänglig för postlådeanvändare eller [e-postanvändare](https://docs.microsoft.com/powershell/module/exchange/get-user) (användarobjekt som returneras av cmdleten Hämta användare).|
+|[PowerShell-anslutning](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Inaktiverad|Inaktiverad|Tillgänglig för postlådeanvändare eller [e-postanvändare](https://docs.microsoft.com/powershell/module/exchange/get-user) (användarobjekt som returneras av cmdleten Hämta användare).|
 |Använd [falska underrättelser](learn-about-spoof-intelligence.md) för att vitlista avsändare när det är möjligt|Ja|Ja||
 |[Katalogbaserad kantblockering (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiverad|Aktiverad|Domäntyp = Auktoritär|
 |[Konfigurera multifaktorautentisering för alla administratörskonton](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiverad|Aktiverad||

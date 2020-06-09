@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation (klientorganisation) till en annan.
-ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588198"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617456"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
@@ -59,7 +59,7 @@ För att återskapa källorganisationen i målorganisationen kontrollerar du att
   > [!NOTE]
   > Cmdlet-stöd för export och import av e-postflödesregelsamlingen stöds för närvarande endast för EOP Premium-prenumerationsplaner.
 
-Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Därefter kan du samla in alla dina inställningar och exportera dem till en XML-fil som ska importeras till målklienten. I allmänhet kan du skriva **Get** utdata för Get-cmdlet för varje inställning till **cmdleten Export-Clixml** för att spara inställningarna i XML-filer, som visas i följande kodexempel.
 

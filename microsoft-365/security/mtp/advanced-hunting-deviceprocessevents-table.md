@@ -1,7 +1,7 @@
 ---
 title: DeviceProcessEvents-tabellen i det avancerade jaktschemat
 description: Lär dig mer om processlek- eller skapelsehändelser i DeviceProcessEventstable av det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, processcreationevents, DeviceProcessEvents, process-ID, kommando linje, DeviceProcessEvents
+keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, processcreationevents, DeviceProcessEvents, process-ID, kommandorad, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,21 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eae1eff69fa6a91413e3f2dd6644c9c27549968e
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: a6e22dc9462ff8f06f171b71b2d68973fd87cc63
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42809374"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617478"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
-Tabellen `DeviceProcessEvents` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om processskapande och relaterade händelser. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`DeviceProcessEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om processskapande och relaterade händelser. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -62,7 +62,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `InitiatingProcessIntegrityLevel` | Sträng | Integritetsnivå för den process som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från en nedladdning på Internet. Dessa integritetsnivåer påverkar behörigheter till resurser |
 | `InitiatingProcessTokenElevation` | Sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighetshöjning (User Access Control) som tillämpas på den process som initierade händelsen |
 | `InitiatingProcessSHA1` | Sträng | SHA-1 av processen (bildfil) som initierade händelsen |
-| `InitiatingProcessSHA256` | Sträng | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när den är tillgänglig |
+| `InitiatingProcessSHA256` | Sträng | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
 | `InitiatingProcessMD5` | Sträng | MD5-hash i processen (bildfil) som initierade händelsen |
 | `InitiatingProcessFileName` | Sträng | Namnet på den process som initierade händelsen |
 | `InitiatingProcessId` | Int | Process-ID (PID) för den process som initierade händelsen |
@@ -81,4 +81,4 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

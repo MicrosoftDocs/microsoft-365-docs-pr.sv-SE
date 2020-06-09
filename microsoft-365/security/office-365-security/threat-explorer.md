@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om hur du använder &amp; Explorer och realtidsidentifieringar i Security Compliance Center för att undersöka och reagera på hot på ett effektivt och ändamålsenligt sätt.
+description: Lär dig mer om hur du använder Explorer och realtidsidentifieringar i Security &amp; Compliance Center för att undersöka och reagera på hot på ett effektivt och ändamålsenligt sätt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036758"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613450"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
 
@@ -36,7 +36,7 @@ Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.m
 
 Med Explorer (eller realtidsidentifieringar) har du en kraftfull rapport som gör det möjligt för säkerhetsoperationsteamet att undersöka och reagera på hot på ett effektivt och ändamålsenligt sätt. Rapporten liknar följande bild:
 
-![Gå till \> Explorer för hothantering](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Gå till Explorer för hothantering \>](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Med den här rapporten kan du:
 
@@ -103,13 +103,13 @@ Mer diskussion om hur du undersöker skadliga e-postmeddelanden finns [i Unders�
 
 Du kan nu också exportera rapporter för URL-klick till Microsoft Excel för att visa både deras nätverksmeddelande-ID och deras klickslutning, vilket gör uppgiften att förstå var url-klicktrafiken har sitt ursprung. Så här fungerar det. Klicka på den här kedjan med hjälp av hothantering vid snabbstarten för Office 365:
 
-**Explorer** \> **Visa Phish** \> Klickar på de vanligaste **webbadresserna** \> **eller URL-toppklick** \> Klicka på en post för att öppna **utfällbart url-utfällbart**
+**Explorer** \> **Visa Phish** \> **Klick** \> **De vanligaste webbadresserna eller url-toppklick** \> **Klicka på valfri post för att öppna utfällbart webbadresser**
 
 När du klickar på en webbadress i listan visas en ny exportknapp på utfällningspanelen. Använd den här knappen om du vill flytta data till ett Excel-kalkylblad för enklare rapportering.
 
 Du kan komma till samma plats i rapporten identifiering i realtid enligt följande:
 
-**Explorer** \> **Realtidsidentifieringar** \> **Visa Phish-url:er** \> **URLs** \> **toppadresser** \> eller Toppklick **Klicka på en post för att öppna utfällbara URL-objekt** \> **Navigera till fliken Klick.**
+**Explorer** \> **Identifiering i** \> realtid **Visa Phish** \> **Webbadresser** \> **De vanligaste webbadresserna eller de vanligaste klicken** \> **Klicka på valfri post för att öppna utfällbart webbadresser** \> **Navigera till fliken Klick.**
 
 > [!TIP]
 > Nätverksmeddelande-ID mappar tillbaka till specifika e-postmeddelanden när du söker igenom Explorer eller tillhörande verktyg från tredje part via Nätverksmeddelande-ID. Genom att söka igenom nätverksmeddelande-ID:et får administratörerna det specifika e-postmeddelande som är kopplat till ett klickresultat. Vid export med, korrelera identifiering av Network Message ID gör för snabbare och mer kraftfull analys.
@@ -120,13 +120,13 @@ Du kan komma till samma plats i rapporten identifiering i realtid enligt följan
 
 Anta att du vill se skadlig kod som har identifierats i e-post, av Microsoft 365-teknik. Det gör du genom att använda vyn [E-post > Malware](threat-explorer-views.md#email--malware) i Explorer (eller identifieringar i realtid).
 
-1. I Security & Compliance Center[https://protection.office.com](https://protection.office.com)( väljer du **Explorer för hothantering** > **(eller** **Identifiering i realtid).** (I det här exemplet används Explorer.)
+1. I Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) väljer du Explorer för **hothantering**  >  **Explorer** (eller Identifiering **i realtid).** (I det här exemplet används Explorer.)
 
-2. Välj **View** **E-postprogram** > **.**
+2. Välj **View** **E-postprogram**  >  **.**
 
    ![Visa-menyn för Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Klicka på **Avsändare**och välj sedan **Grundläggande** > **identifieringsteknik**.
+3. Klicka på **Avsändare** **Basic**och välj sedan  >  **Grundläggande identifieringsteknik**.
 
    Identifieringstekniken är nu tillgänglig som filter för rapporten.
 
@@ -144,13 +144,13 @@ Anta att du vill se nätfiskeförsök via webbadresser i e-post, inklusive en li
 
 Om du vill granska phish-url:er i meddelanden och klick på webbadresser i phish-meddelanden använder du [e-> Phish-vyn](threat-explorer-views.md#email--phish) för Explorer (eller identifieringar i realtid).
 
-1. I Security & Compliance Center[https://protection.office.com](https://protection.office.com)( väljer du **Explorer för hothantering** > **(eller** **Identifiering i realtid).** (I det här exemplet används Explorer.)
+1. I Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) väljer du Explorer för **hothantering**  >  **Explorer** (eller Identifiering **i realtid).** (I det här exemplet används Explorer.)
 
-2. Välj **E-post** > **phish**på **Visa-menyn** .
+2. Välj **E-post phish**på **Visa-menyn**  >  **Phish**.
 
    ![Visa-menyn för Explorer](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicka på **Avsändare**och välj sedan **webbadresser** > **Klicka på domslut**.
+3. Klicka på **Avsändare**och välj sedan **webbadresser**  >  **Klicka på domslut**.
 
 4. Markera ett eller flera alternativ, till exempel **Blockerat** och **Blockera åsidosättt,** och klicka sedan på knappen **Uppdatera** som finns på samma rad som alternativen för att använda filtret. (Uppdatera inte webbläsarfönstret.)
 
@@ -175,13 +175,13 @@ Om du vill granska phish-url:er i meddelanden och klick på webbadresser i phish
 
 Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md)som användare i organisationen har rapporterat som Skräppost, inte skräppost eller nätfiske med hjälp av tillägget Rapportera meddelande för Outlook och Outlook på webben . Det gör du genom att använda vyn [E-> inlämningar](threat-explorer-views.md#email--submissions) av Explorer (eller identifiering i realtid).
 
-1. I Security & Compliance Center[https://protection.office.com](https://protection.office.com)( väljer du **Explorer för hothantering** > **(eller** **Identifiering i realtid).** (I det här exemplet används Explorer.)
+1. I Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) väljer du Explorer för **hothantering**  >  **Explorer** (eller Identifiering **i realtid).** (I det här exemplet används Explorer.)
 
-2. Välj **Skicka e-post** > **på** **Visa-menyn** .
+2. Välj **Skicka e-post**på **Visa-menyn**  >  **Submissions**.
 
    ![Visa-menyn för Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Klicka på **Avsändare**och välj sedan **Grundläggande** > **rapporttyp**.
+3. Klicka på **Avsändare**och välj sedan **Grundläggande**  >  **rapporttyp**.
 
 4. Välj ett alternativ, till exempel **Phish,** och klicka sedan på knappen **Uppdatera.**
 
@@ -216,16 +216,16 @@ Du måste ha [Office 365 ATP](office-365-atp.md) för att kunna identifieringen 
 
 Om du vill visa och använda Explorer eller realtidsidentifieringar måste du ha rätt behörighet, till exempel de som beviljas en säkerhetsadministratör eller säkerhetsläsare.
 
-- För Säkerhetsefterlevnadscenter &amp; måste du ha tilldelat en av följande roller:
+- För &amp; Säkerhetsefterlevnadscenter måste du ha tilldelat en av följande roller:
 
   - Organisationshantering
-  - Säkerhetsadministratör (detta kan tilldelas i Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory admin center ( ))
+  - Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory admin center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Säkerhetsläsare
 
-- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) eller med PowerShell-cmdletar (Se Exchange Online [PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (Se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
   - Organisationshantering
-  - Organisationshantering endast för vy
+  - Organisationshantering endast med enbart vy
   - Rollen Endast visa mottagare
   - Hantering av efterlevnad
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använd rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566734"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613366"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -98,7 +98,7 @@ Den här rapporten är baserad på insamlade data och upptäckta hot per klick (
 |URL-klick efter program|Se programmet som url:en klickades på.|
 |
 
-I informationstabellen kan du se mer information om klicktid och användarinformation. Slutligen, tänk på url skydd statusrapport visar skyddet från ATP Safe Links funktionen, så att endast kunder som har aktiverat ATP Safe Links kommer att se data återspeglas på den här rapporten.
+I informationstabellen kan du se mer information om klicktid och användarinformation. Slutligen, tänk på url skydd statusrapport visar skyddet från ATP Safe Links funktionen, så att endast kunder som har aktiverat ATP Säkra länkar kommer att se data återspeglas på den här rapporten.
 
 > [!NOTE]
 > Det här är en *trendrapport*för skydd , vilket innebär att data representerar trender i en större datauppsättning. Därför är data i den aggregerade vyn inte tillgängliga i realtid här, men data i detaljtabellvyn är, så du kan se en liten diskrepans mellan de två vyerna.
@@ -152,7 +152,7 @@ Om du vill visa och använda de rapporter som beskrivs i den här artikeln **må
   - Säkerhetsoperatör (detta kan tilldelas i Azure Active Directory admin center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Säkerhetsläsare
 
-- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (Se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (Se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
   - Organisationshantering
   - Organisationshantering endast för vy

@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 description: En kort beskrivning av vad Exchange Online-administratörer behöver göra för att visa och konfigurera S/MIME-inställningarna i Outlook på webben i Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b98a853d81d5ce067233314dfc59c7f677656bd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2c1496025124717688cc812e22e0d8fe3a441112
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352039"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616628"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Konfigurera S/MIME-inställningar i Exchange Online för Outlook på webben
 
-Som administratör för Exchange Online kan du konfigurera Outlook på webben (tidigare kallat Outlook Web App) så att s/mime-skyddade meddelanden kan skickas och ta emot. Använd cmdletsna **Get-SmimeConfig** och **Set-SmimeConfig** för att visa och hantera den här funktionen i Exchange Online PowerShell. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+Som administratör för Exchange Online kan du konfigurera Outlook på webben (tidigare kallat Outlook Web App) så att s/mime-skyddade meddelanden kan skickas och ta emot. Använd cmdletsna **Get-SmimeConfig** och **Set-SmimeConfig** för att visa och hantera den här funktionen i Exchange Online PowerShell. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 Detaljerad syntax- och parameterinformation finns i [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig) och [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig).
 

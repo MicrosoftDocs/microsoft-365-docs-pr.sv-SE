@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln beskrivs de ändringar som distribueras till skyddsfunktionerna i Azure Information Protection
-ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c2f386e17d3c0da74f360a7b1262a2f32dbf92cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035610"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616740"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Skyddsfunktioner i Azure Information Protection distribueras till befintliga klienter
 
@@ -75,7 +75,7 @@ Mer information om dessa registerkonfigurationer finns i [Aktivera identifiering
 
 Så här väljer du bort den kommande ändringen:
 
-1. Starta en Windows PowerShell-session med hjälp av ett arbets- eller skolkonto som har globala administratörsbehörighet i organisationen och ansluta till Exchange Online. Instruktioner finns i [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Starta en Windows PowerShell-session med hjälp av ett arbets- eller skolkonto som har globala administratörsbehörighet i organisationen och ansluta till Exchange Online. Instruktioner finns i [Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör cmdlet set-IRMConfiguration med följande syntax:
 

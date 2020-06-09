@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Administratörer kan lära sig att visa och söka i administratörsgranskningsloggen i fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351867"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613330"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Visa administratörsgranskningsloggen i fristående EOP
 
@@ -32,7 +32,7 @@ Administratörsgranskningsloggen registrerar specifika åtgärder, baserat på f
 
 - Om du vill öppna administrationscentret för Exchange finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver rollen Granskningsloggar eller granskningsloggar för endast granskning, som tilldelas rollgrupperna ComplianceManagement, OrganizationManagement (global admins) och SecurityAdministrator som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -80,13 +80,13 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   Du kommer förmodligen att behöva använda andra filtreringsparametrar på den här cmdleten för att begränsa resultaten och identifiera vilka typer av objekt som du är intresserad av.
 
-- Parametern _UserIds_ filtrerar resultatet av den användare som gjorde ändringen (som körde cmdleten).
+- Parametern _UserIds filtrerar_ resultatet av den användare som gjorde ändringen (som körde cmdleten).
 
 - Om du anger ett datum-/tidsvärde utan tidszon för _parametrarna StartDate_ och _EndDate_ finns värdet i Coordinated Universal Time (UTC). Om du vill ange ett datum-/tidsvärde för den här parametern använder du något av följande alternativ:
 
   - Ange datum-/tidsvärdet i UTC: Till exempel "2016-05-06 14:30:00z".
 
-  - Ange datum-/tidsvärdet som en formel som konverterar datum/tid i den lokala tidszonen till UTC: Till exempel `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Mer information finns i [Hämta datum](https://go.microsoft.com/fwlink/p/?LinkID=113313).
+  - Ange datum-/tidsvärdet som en formel som konverterar datum/tid i den lokala tidszonen till UTC: Till exempel `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Mer information finns i [Hämta datum](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date).
 
 - Cmdlet returnerar som standard högst 1 000 loggposter. Använd parametern _ResultSize_ för att ange upp till 250 000 loggposter. Du kan också använda värdet `Unlimited` för att returnera alla transaktioner.
 

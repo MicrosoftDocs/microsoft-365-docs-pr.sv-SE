@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om hur Exchange Online Protection (EOP) kan skydda din lokala e-postorganisation i fristående miljöer och hybridmiljöer.
-ms.openlocfilehash: 7a019b2651eda114bab8dcf9df6d9a6201558704
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206688"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616992"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
@@ -109,6 +109,6 @@ Hjälpinnehållet för EOP-administratörer består av följande kategorier på 
 
 - [Exchange admin center i fristående EOP:](exchange-admin-center-in-exchange-online-protection-eop.md)Beskriver hur du kommer åt och navigera genom Exchange admin center (EAC) hanteringsgränssnitt för att hantera din EOP-tjänst.
 
-- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): Innehåller information om fjärr-PowerShell, som gör att du kan hantera din EOP-tjänst från kommandoraden.
+- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): Innehåller information om fjärr-PowerShell, som gör att du kan hantera din EOP-tjänst från kommandoraden.
 
 - [Hjälp och support för EOP](help-and-support-for-eop.md) Ger information om hur du skaffar hjälp och teknisk support.

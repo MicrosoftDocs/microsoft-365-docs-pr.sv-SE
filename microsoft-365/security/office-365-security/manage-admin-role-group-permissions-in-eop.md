@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Administratörer kan lära sig att tilldela eller ta bort behörigheter i Administrationscenter för Exchange (EAC) i Exchange Online Protection.
-ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352341"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616520"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Hantera rollgrupper i fristående EOP
 
@@ -29,7 +29,7 @@ Mer information om roller och rollgrupper finns [i Behörigheter i fristående E
 
 - Om du vill öppna Administrationscenter för Exchange (EAC) finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du öppnar fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du öppnar fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver rollrollen Rollhantering, som som tilldelas rollgruppen OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -240,7 +240,7 @@ Så här kontrollerar du att du har kopierat en rollgrupp:
 
 - Gå till **Behörighetsadministratörsroller** i EAC och kontrollera att \> **Admin roles**rollgruppen visas (eller inte visas). Markera rollgruppen och kontrollera inställningarna i informationsfönstret eller klicka på **Redigera** ![ redigera ikon för att verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
 
-- I Exchange Online PowerShell ersätter du \< Rollgruppsnamnet \> med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera inställningarna:
+- I Exchange Online PowerShell ersätter du \<Role Group Name\> med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera inställningarna:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

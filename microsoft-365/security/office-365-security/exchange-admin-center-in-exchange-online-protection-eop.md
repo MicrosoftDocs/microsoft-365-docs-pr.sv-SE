@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om webbhanteringsgränssnittet i fristående Exchange Online Protection (EOP).
-ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209742"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617004"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Administrationscenter för Exchange i fristående EOP
 
@@ -70,7 +70,7 @@ Detta är den första navigeringsnivån för de flesta av de uppgifter som du ut
 
 - **E-postflöde:** Här hanterar du regler för e-postflöde (kallas även transportregler), accepterade domäner och kopplingar samt var du kan gå för att köra meddelandespårning.
 
-- **Hybrid:** Här kan du köra [hybridkonfigurationsguiden](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)och där du kan installera [Exchange Online PowerShell-modulen](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
+- **Hybrid:** Här kan du köra [hybridkonfigurationsguiden](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)och där du kan installera [Exchange Online PowerShell-modulen](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Flikar
 
@@ -131,67 +131,67 @@ Följande språk stöds och är tillgängliga för EAC i fristående EOP.
 
 - Bengali (Indien)
 
-- Bulgariska
+- Bulgarian
 
-- Katalanska
+- Catalan
 
 - Kinesiska (förenklad)
 
 - Kinesiska (traditionell)
 
-- Kroatiska
+- Croatian
 
-- Tjeckiska
+- Czech
 
-- Danska
+- Danish
 
-- Nederländska
+- Dutch
 
-- Nederländska
+- Dutch
 
-- Engelska
+- English
 
-- Estniska
+- Estonian
 
 - Filippinska (Filippinerna)
 
-- Finska
+- Finnish
 
-- Franska
+- French
 
-- Galiciska
+- Galician
 
-- Tyska
+- German
 
-- Grekiska
+- Greek
 
 - Gujarati
 
-- Hebreiska
+- Hebrew
 
 - Hindi
 
-- Ungerska
+- Hungarian
 
 - Isländska
 
-- Indonesiska
+- Indonesian
 
-- Italienska
+- Italian
 
-- Japanska
+- Japanese
 
 - Kannada
 
-- Kazakiska
+- Kazakh
 
 - Kiswahili
 
-- Koreanska
+- Korean
 
-- Lettiska
+- Latvian
 
-- Litauiska
+- Lithuanian
 
 - Malajiska (Brunei Darussalam)
 
@@ -209,27 +209,27 @@ Följande språk stöds och är tillgängliga för EAC i fristående EOP.
 
 - Persiska
 
-- Polska
+- Polish
 
 - Portugisiska (Brasilien)
 
 - Portugisiska (Portugal)
 
-- Rumänska
+- Romanian
 
-- Ryska
+- Russian
 
 - Serbiska (kyrilliska, Serbien)
 
 - Serbiska (latin)
 
-- Slovakiska
+- Slovak
 
-- Slovenska
+- Slovenian
 
-- Spanska
+- Spanish
 
-- Svenska
+- Swedish
 
 - Tamilska
 
@@ -237,12 +237,12 @@ Följande språk stöds och är tillgängliga för EAC i fristående EOP.
 
 - Thai
 
-- Turkiska
+- Turkish
 
-- Ukrainska
+- Ukrainian
 
 - Urdu
 
-- Vietnamesiska
+- Vietnamese
 
 - Walesiska

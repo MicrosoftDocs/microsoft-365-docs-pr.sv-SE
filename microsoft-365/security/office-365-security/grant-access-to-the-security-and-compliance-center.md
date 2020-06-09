@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Användare måste tilldelas behörigheter i Microsoft 365 Security & Compliance Center innan de kan hantera någon av dess säkerhets- eller efterlevnadsfunktioner.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bfded9d3f75f57eca1097fec6f18dc55410b65fb
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351957"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616980"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Ge användarna åtkomst till Security & Compliance Center
 
@@ -68,7 +68,7 @@ Mer information om de olika behörigheter som du kan ge användare i Security & 
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Använda PowerShell för att ge en annan användare åtkomst till Security & Compliance Center
 
-1. [Anslut till Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Anslut till Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Använd kommandot **Lägg till rollgruppmedlem** för att lägga till en användare i organisationshanteringsrollen, vilket visas i följande exempel.
 

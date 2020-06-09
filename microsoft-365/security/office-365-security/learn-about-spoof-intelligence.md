@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om falska underrättelser i Exchange Online Protection (EOP), där du kan tillåta eller blockera specifika förfalskade avsändare.
-ms.openlocfilehash: 638f130c448f14bf7214afc705b5650311866fce
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: fe1e8f8a2e9f0cc792dc802ea5c7362af00687ae
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351945"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613246"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Konfigurera falska underrättelser i EOP
 
@@ -56,7 +56,7 @@ Du kan hantera falska underrättelser i Security & Compliance Center eller i Pow
 
 - Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://protection.office.com/antispam>. Om du vill gå direkt till sidan **Mot nätfiske** använder du <https://protection.office.com/antiphishing> .
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill ändra informationsprincipen eller aktivera eller inaktivera falska underrättelser måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till den falska underrättelsepolicyn måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -200,7 +200,7 @@ Om du vill kontrollera att du har konfigurerat falska underrättelser med avsän
   - Välj en princip i listan. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
   - Klicka på **Standardprincip**. I det utfällbara resultatet som visas kontrollerar du värdena i avsnittet **Spoof.**
 
-- I Exchange Online PowerShell ersätter du \< Namn \> med Office365 AntiPhish Standard eller namnet på en anpassad princip och kör följande kommando för att verifiera inställningarna:
+- I Exchange Online PowerShell ersätter du \<Name\> med Office365 AntiPhish Standard eller namnet på en anpassad princip och kör följande kommando för att verifiera inställningarna:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction

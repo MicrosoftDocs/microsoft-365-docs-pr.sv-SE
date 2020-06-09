@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du dirigerar skräppost till mappar för skräppost från användare i hybridmiljö för Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351969"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617060"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer
 
@@ -60,7 +60,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
   - Om skräppostregeln är aktiverad på postlådan (parametervärdet _Aktiverad_ $true på cmdleten [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) i Exchange Management Shell). Det är skräppostregeln som faktiskt flyttar meddelandet till mappen Skräppost efter leverans. Som standard är skräppostregeln aktiverad på postlådor. Mer information finns i [Konfigurera inställningar för antispam för Exchange på postlådor](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Om du vill öppna Exchange Management Shell finns i [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
+- Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Om du vill öppna Exchange Management Shell finns i [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) .
 
 - Mer information om regler för e-postflöde i lokalt Exchange finns i följande avsnitt:
 
@@ -134,7 +134,7 @@ Så här kontrollerar du att du har konfigurerat fristående EOP för att levere
 
 - Gå till Regler för **e-postflöde** i EAC, \> **Rules**välj regeln och klicka sedan på Ikonen **Redigera** redigering för att ![ verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
 
-- I Exchange Management Shell ersätter du \< RuleName \> med namnet på e-postflödesregeln och rul följande kommando för att verifiera inställningarna:
+- I Exchange Management Shell ersätter du \<RuleName\> med namnet på e-postflödesregeln och rul följande kommando för att verifiera inställningarna:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

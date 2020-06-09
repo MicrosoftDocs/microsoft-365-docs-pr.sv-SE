@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer i fristående EOP-organisationer (Exchange Online Protection) kan lära sig hur du skapar, ändrar och tar bort distributionsgrupper och e-postaktiverade säkerhetsgrupper i Exchange-administrationscentret (EAC) och i fristående EOP-powershell (Exchange Online Protection).
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352197"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616508"
 ---
 # <a name="manage-groups-in-eop"></a>Hantera grupper i EOP
 
@@ -38,7 +38,7 @@ Du kan hantera grupper i Administrationscenter för Exchange (EAC) och i fristå
 
 - Om du vill öppna administrationscentret för Exchange finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - När du hanterar grupper i fristående EOP PowerShell kan du stöta på begränsning. PowerShell-procedurerna i det här avsnittet använder en batchbearbetningsmetod som resulterar i en spridningsfördröjning på några minuter innan resultaten av kommandona visas.
 
@@ -141,7 +141,7 @@ Om du vill returnera en sammanfattningslista över alla distributionsgrupper och
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-Om du vill returnera listan över gruppmedlemmar ersätter du \< GroupIdentity \> med gruppens namn, alias eller e-postadress och kör följande kommando:
+Om du vill returnera listan över gruppmedlemmar ersätter du \<GroupIdentity\> med gruppens namn, alias eller e-postadress och kör följande kommando:
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Så här kontrollerar du att du har skapat, ändrat eller tagit bort en distribu
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- Ersätt \< GroupIdentity \> med gruppens namn, alias eller e-postadress och kör följande kommando för att verifiera inställningarna:
+- Ersätt \<GroupIdentity\> med gruppens namn, alias eller e-postadress och kör följande kommando för att verifiera inställningarna:
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- Om du vill visa gruppmedlemmarna ersätter du \< GroupIdentity \> med gruppens namn, alias eller e-postadress och kör följande kommando:
+- Om du vill visa gruppmedlemmarna ersätter du \<GroupIdentity\> med gruppens namn, alias eller e-postadress och kör följande kommando:
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

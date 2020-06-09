@@ -1,7 +1,7 @@
 ---
 title: DeviceImageLoadEvents-tabellen i det avancerade jaktschemat
 description: Lär dig mer om DLL-inläsning av händelser i tabellen DeviceImageLoadEvents i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, imageloadevents, DeviceImageLoadEvents, DLL-inläsning, bibliotek, arkivbild
+keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, imageloadevents, DeviceImageLoadEvents, DLL-inläsning, bibliotek, filavbildning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,21 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e3f51cfbe19a7b487f7382f0d2534b4a5efaab95
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 98aac3d231e2c8630cb4721ee8012054ab90feef
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42809372"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617146"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
-Tabellen `DeviceImageLoadEvents` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om DLL-inläsningshändelser. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`DeviceImageLoadEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om DLL-inläsningshändelser. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -44,6 +44,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `FileName` | Sträng | Namnet på den fil som den registrerade åtgärden tillämpades på |
 | `FolderPath` | Sträng | Mapp som innehåller filen som den inspelade åtgärden tillämpades på |
 | `SHA1` | Sträng | SHA-1 i den akt som den registrerade åtgärden tillämpades på |
+| `SHA256` | Sträng | SHA-256 i filen som den inspelade åtgärden tillämpades på. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
 | `MD5` | Sträng | MD5-hash i filen som den registrerade åtgärden tillämpades på |
 | `InitiatingProcessAccountDomain` | Sträng | Domän för kontot som körde processen som var ansvarig för händelsen |
 | `InitiatingProcessAccountName` | Sträng | Användarnamn för kontot som körde processen som var ansvarig för händelsen |
@@ -51,6 +52,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `InitiatingProcessIntegrityLevel` | Sträng | Integritetsnivå för den process som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från en nedladdning på Internet. Dessa integritetsnivåer påverkar behörigheter till resurser |
 | `InitiatingProcessTokenElevation` | Sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighetshöjning (User Access Control) som tillämpas på den process som initierade händelsen |
 | `InitiatingProcessSHA1` | Sträng | SHA-1 av processen (bildfil) som initierade händelsen |
+| `InitiatingProcessSHA256` | Sträng | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
 | `InitiatingProcessMD5` | Sträng | MD5-hash i processen (bildfil) som initierade händelsen |
 | `InitiatingProcessFileName` | Sträng | Namnet på den process som initierade händelsen |
 | `InitiatingProcessId` | Int | Process-ID (PID) för den process som initierade händelsen |
@@ -69,4 +71,4 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
-- [Tillämpa metodtips för frågor](advanced-hunting-best-practices.md)
+- [Använda metodtips för frågor](advanced-hunting-best-practices.md)

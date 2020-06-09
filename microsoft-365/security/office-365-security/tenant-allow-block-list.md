@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratörer kan lära sig hur du konfigurerar URL- och filposter i listan Tillåt/blockera klient i säkerhets- & Compliance Center.
-ms.openlocfilehash: b3a25458bbde2b3a78cfecc60ccb75fe298013f7
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419267"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613426"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Hantera webbadresser och filer i listan Tillåt/blockera klient
 
@@ -56,7 +56,7 @@ I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blocke
 
 - Som standard upphör posterna i listan Tillåt/blockera klient att gälla efter 30 dagar. Du kan ange ett datum eller ange att de aldrig ska upphöra att gälla.
 
-- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill lägga till och ta bort värden från listan Tillåt/blockera klient måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** För skrivskyddad åtkomst till listan Tillåt/blockera klient måste du vara medlem i rollgruppen **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
@@ -72,7 +72,7 @@ Mer information om syntaxen för URL-poster finns i [URL-syntaxen för avsnittet
 
    - **Lägg till webbadresser med jokertecken:** Ange en URL per rad, upp till maximalt 20.
 
-   - **Blockera/Tillåt**: Välj om du vill **tillåta** eller **blockera** de angivna webbadresserna.
+   - **Blockera/tillåt**: Välj om du vill **tillåta** eller **blockera** de angivna webbadresserna.
 
    - **Upphör aldrig att gälla**: Gör något av följande:
 
@@ -200,7 +200,7 @@ New-TenantAllowBlockListItem -ListType FileHash -Action Allow -Entries "768a8136
 
 I det här exemplet läggs en fil tillåta post för de angivna filerna som aldrig upphör att gälla.
 
-Detaljerad syntax- och parameterinformation finns i [Ny klientAlowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
+Detaljerad syntax- och parameterinformation finns i [Ny-KlientEns 111111.For](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)detailed syntax and parameter information, see New-TenantAllowBlockListItems .
 
 ### <a name="use-powershell-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att visa URL- och filposter i listan Tillåt/blockera klient
 
