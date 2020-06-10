@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Bestäm vilka funktioner och nytt innehåll som visas för eller döljs för slutanvändare i Office What's New Management for Office-skrivbordsappar.
-ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399548"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678608"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Visa eller dölja nya funktioner med den nya hanteringen
 
-Med Office What's New Management for Win 32 kan din organisation bestämma vilka funktioner som ska visas för eller döljas för slutanvändare i Office-skrivbordsappen. Varje utgåva av Office innehåller nya och förbättrade funktioner, och med förhandsgranskningen av innehållet kan du visa nytt innehåll för varje version och kanal och välja om du vill dölja eller visa Vad är nytt innehåll för varje funktion för slutanvändarna. 
+Med Office What's New Management för Windows kan din organisation bestämma vilka funktioner som ska visas för eller döljas för slutanvändare i Office-skrivbordsappen. Varje utgåva av Office innehåller nya och förbättrade funktioner, och med förhandsgranskningen av innehållet kan du visa nytt innehåll för varje version och kanal och välja om du vill dölja eller visa Vad är nytt innehåll för varje funktion för slutanvändarna. 
 
 Det nya innehållet i Office-skrivbordsapparna belyser en lista över nya funktioner som släpps för det programmet, med en kort beskrivning och ofta en bild eller en video som skapats av teamet som släpper funktionen för att hjälpa kunderna att lära sig hur de använder funktionen. 
 
@@ -37,13 +37,13 @@ Office What's New-hantering är tillgänglig i Microsoft 365-administrationscent
 > [!NOTE]
 > Globala administratörs- och Office Apps-administratörsroller hanterar det nya innehåll som användarna ser i sina Office-appar.
 
-##  <a name="show-or-hide-new-features"></a>Visa eller dölja nya funktioner 
+##  <a name="show-or-hide-new-features"></a>Visa eller dölj nya funktioner 
 
-Administratörer kan förhandsgranska det nya innehållet för en kanal och hantera utgivningen av innehållet med Office What's New Management.
+Administratörer kan förhandsgranska det nya innehållet för en kanal och hantera utgivningen av innehållet med office what's new-hantering.
 
-1. Välj **Inställningar**under Inställningar i Administrationscentret **för**Microsoft 365 .
+1. Välj **Organisationsinställningar**under **Inställningar**i Administrationscentret för Microsoft 365 .
 
-2. Välj **Office What's New Management**på fliken **Tjänster** .
+2. Välj **Office What's New-hantering**på fliken **Tjänster** .
 
 3. Välj en eller flera funktioner för att visa funktionsnamnet, en kort beskrivning, programmet och utgivningsversionen för varje funktion på den utfällbara panelen.
 
@@ -59,11 +59,11 @@ Nya funktioner visas i Office What's New Management baserat på det här schemat
 ||||
 |:-----|:-----|:-----|
 |**Kanal** <br/> |**Förhandsgranskning av hantering** <br/> |**Vidta åtgärder** <br/> |
-|**Månatliga** <br/> |15:e i månaden  <br/> |1 - 3 veckor före månadsversionen <br/> |
-|**Halvårsvis (Riktad)** <br/> |1 september och 1 mars <br/> | 2 veckor före den stora utgåvan som ger nya funktioner
-|**Halvårsvis** <br/> |1 januari och 1 juli <br/> | 2 veckor före den stora utgåvan som ger nya funktioner<br/> |
+|**Nuvarande** <br/> |15:e i månaden  <br/> |1 - 3 veckor före månadsversionen <br/> |
+|**Halvårsvis företag (förhandsversion)** <br/> |1 september och 1 mars <br/> | 2 veckor före den stora utgåvan som ger nya funktioner
+|**Halvårsvis företag** <br/> |1 januari och 1 juli <br/> | 2 veckor före den stora utgåvan som ger nya funktioner<br/> |
 
-Mer information om schemaläggning av kanaluppdatering finns i [Uppdatera historik för Microsoft 365-appar (listad efter datum).](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+Mer information om schemaläggning av kanaluppdatering finns i [Uppdatera historik för Microsoft 365-appar (listad efter datum).](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

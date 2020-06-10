@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Lär dig att använda filter för att skapa, redigera eller ta bort anpassad användarvy i Microsoft 365.
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431647"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664580"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Skapa, redigera eller ta bort en anpassad användarvy i Office 365
+# <a name="create-edit-or-delete-a-custom-user-view"></a>Skapa, redigera eller ta bort en anpassad användarvy
 
-Om du är global administratör eller användarhanteringsadministratör för Office 365 kan du skapa anpassade användarvyer för att visa en viss delmängd användare. Dessa vyer är utöver standarduppsättningen vyer som medverkar med Office 365. Du kan skapa, redigera eller ta bort anpassade användarvyer och de anpassade vyer som du skapar är tillgängliga för alla administratörer.
+Om du är global administratör eller användarhanteringsadministratör för en Prenumeration på Microsoft 365 för företag kan du skapa anpassade användarvyer för att visa en viss delmängd användare. Dessa vyer är utöver standarduppsättningen vyer. Du kan skapa, redigera eller ta bort anpassade användarvyer och de anpassade vyer som du skapar är tillgängliga för alla administratörer.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Anpassade användarvyer i administrationscentret
 
@@ -98,7 +98,7 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+1. Gå till **Aktiva användare i administrationscentret** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. På sidan **Aktiva användare** väljer du **Filter** och väljer **Nytt filter**.
   
@@ -108,7 +108,7 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 
 ::: moniker range="o365-germany"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
+1. Gå till **Aktiva användare i administrationscentret** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. På sidan **Aktiva användare** väljer du **Vyer** och väljer Lägg till **anpassad vy**.
   
@@ -119,7 +119,7 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 
 ::: moniker range="o365-21vianet"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
+1. Gå till **Aktiva användare i administrationscentret** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. På sidan **Aktiva användare** väljer du **Vyer** och väljer Lägg till **anpassad vy**.
   
@@ -132,7 +132,7 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+1. Gå till **Aktiva användare i administrationscentret** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. På sidan **Aktiva användare** väljer du **Filter,** markerar det filter som du vill ändra och väljer sedan **Redigera filter**. 
     
@@ -145,7 +145,7 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 
 ::: moniker range="o365-germany"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
+1. Gå till **Aktiva användare i administrationscentret** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. På sidan **Aktiva användare** väljer du **Vyer,** markerar det filter som du vill ändra och väljer sedan **Redigera den här vyn**. 
     
@@ -158,7 +158,7 @@ Du kan också filtrera efter ytterligare användarprofilinformation som används
 
 ::: moniker range="o365-21vianet"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>. 
+1. Gå till **Aktiva användare i administrationscentret** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. På sidan **Aktiva användare** väljer du **Vyer,** markerar det filter som du vill ändra och väljer sedan **Redigera den här vyn**. 
     

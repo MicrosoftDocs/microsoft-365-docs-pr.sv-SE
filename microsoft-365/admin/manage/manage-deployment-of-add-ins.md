@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399734"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678642"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av tillägg i Administrationscenter för Microsoft 365
 
@@ -219,8 +219,8 @@ För att vara GDPR-kompatibel för minderåriga måste du se till att en av föl
 |||
 |:-----|:-----|
 |**Plattform** <br/> |**Byggnummer** <br/> |
-|Microsoft 365-appar för företag (månadskanal)  <br/> |9001.2138   <br/> |
-|Microsoft 365 Apps for enterprise (Halvårskanal)  <br/> |8431.2159  <br/> |
+|Microsoft 365-appar för företag (aktuell kanal)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Halvårsvis Företagskanal)  <br/> |8431.2159  <br/> |
 |Office 2016 för Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 för Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 för Mac  <br/> |16.11.18020200  <br/> |

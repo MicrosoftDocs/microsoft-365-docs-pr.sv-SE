@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 7e7889cb1540cb2cb164cbbd44e9ec0e480a6fd5
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011941"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678700"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Så här hanteras uppdateringar på Microsoft Managed Desktop
 
@@ -61,10 +61,10 @@ Så här fungerar uppdateringsdistribution:
 <tr><td>Funktionsuppdateringar för operativsystem</td><td>0 dagar</td><td>30 dagar</td><td>60 dagar</td><td>90 dagar</td></tr>
 <tr><td>Drivrutiner/inbyggd programvara</td><td colspan="4">Följer schemat för kvalitetsuppdateringar</td></tr>
 <tr><td>Definition av virusskydd</td><td colspan="4">Uppdaterad med varje genomsökning</td></tr>
-<tr><td>Microsoft 365-applikationer för företag</td><td colspan="4">Följer Office månadskanal
+<tr><td>Microsoft 365-applikationer för företag</td><td colspan="4">Följer Office nuvarande kanal
 </table>
 
-Mer information om månadskanalen för Microsoft 365 Apps för företag finns i [Översikt över uppdateringskanaler för Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+Mer information om Aktuell kanal för Microsoft 365 Apps för företag finns i [Översikt över uppdateringskanaler för Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Dessa uppskovsperioder är avsiktligt utformade för att säkerställa höga säkerhets- och prestandastandarder för alla användare. Dessutom, baserat på data som samlats in på alla Microsoft Managed Desktop-enheter och den varierande omfattningen och effekten av uppdateringar, förbehåller sig Microsoft Managed Desktop flexibilitet att ändra längden på ovanstående uppskovsperioder för alla distributionsgrupper på ad hoc-basis.

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Läs om hur du kan återställa dina lösenord med hjälp av verktyget för återställning av lösenord med självbetjäning.
-ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431707"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678688"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
@@ -54,7 +54,8 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 Anvisningarna aktiverar Självbetjäning för återställning av lösenord för alla i organisationen.
   
 ::: moniker range="o365-worldwide"
-1. Gå till sidan **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Inställningar.</a>
+
+1. Gå till sidan **Inställningar** org i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret.</a> > **Org settings**
 
 ::: moniker-end
 
@@ -70,13 +71,17 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 
 ::: moniker-end
 
-2. Högst upp på sidan Inställningar väljer du **Sekretess för & .**
+2. Högst upp på sidan **Organisationsinställningar** väljer du fliken **Sekretess för säkerhet &.**
   
 3. Välj **Självbetjäningslösenordsåterställning**.
+
+4. Under **Återställning av lösenord för självbetjäning**väljer du Gå till **Azure-portalen för att aktivera återställning av lösenord för självbetjäning**.
+
+5. I det vänstra navigeringsfönstret väljer du **Användare**och sedan på **användarna | Välj** **Återställ lösenord**för alla användare .
   
-4. På sidan Egenskaper väljer du **Alla** för att aktivera det för alla i ditt företag och väljer sedan **Spara**.
+6. På sidan **Egenskaper** väljer du **Alla** för att aktivera det för alla i ditt företag och väljer sedan **Spara**.
   
-5. När användarna loggar in uppmanas de att ange ytterligare kontaktinformation som hjälper dem att återställa sitt lösenord i framtiden.
+7. När användarna loggar in uppmanas de att ange ytterligare kontaktinformation som hjälper dem att återställa sitt lösenord i framtiden.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

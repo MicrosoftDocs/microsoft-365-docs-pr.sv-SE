@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Använd den här testlabbet-guiden om du vill lägga till Intune-principer för enhetsefterlevnad i microsoft 365 Enterprise-testmiljön.
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631591"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679032"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Principer för enhetsefterlevnad för microsoft 365 Enterprise-testmiljön
 
@@ -46,9 +46,9 @@ Om du vill konfigurera [MAM-principer](pass-through-auth-m365-ent-test-environme
 
 I den här fasen skapar du en enhetsefterlevnadsprincip för Windows 10-enheter.
   
-1. Gå till Office 365-portalen på ([https://portal.office.com](https://portal.office.com)) och logga in på din Office 365 testlabbprenumeration med ditt globala administratörskonto.
+1. Gå till Office 365-portalen på ( [https://portal.office.com](https://portal.office.com) ) och logga in på din Office 365 testlabbprenumeration med ditt globala administratörskonto.
     
-2. Öppna Azure-portalen på [https://portal.azure.com](https://portal.azure.com)en ny flik i webbläsaren .
+2. Öppna Azure-portalen på en ny flik i webbläsaren [https://portal.azure.com](https://portal.azure.com) .
 
 3. Skriv **Intune** i sökrutan på fliken Azure portal i webbläsaren och klicka sedan på **Intune**.
     
@@ -87,7 +87,7 @@ Klicka på OK.
 
 20. Välj **Inställningar för App Suite**i fönstret Lägg till **app.**
 
-21. För **Uppdatera kanal**väljer du **Halvårsvis**och klickar sedan på **OK**.
+21. För **Uppdatera kanal**väljer du **Halvårsvis företag**och klickar sedan på **OK**.
 
 22. Klicka på **Lägg till**i fönstret Lägg **till app** .
 
@@ -97,7 +97,7 @@ Du har nu en princip för enhetsefterlevnad för att testa de valda apparna i wi
 
 Utforska ytterligare funktioner och funktioner för hantering av [mobila](m365-enterprise-test-lab-guides.md#mobile-device-management) enheter i testmiljön.
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
 [Microsoft 365 Företagstestlabbguider](m365-enterprise-test-lab-guides.md).
   

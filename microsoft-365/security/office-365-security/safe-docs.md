@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om säkra dokument i Office 365 ATP.
-ms.openlocfilehash: 40554365cf41ac37b9f9b8399b10dc8f6ab81f42
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e9b1fadd3e9e6dab337a0c3ded380c5c49f53bab
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617292"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678676"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Säkra dokument i Office 365 ATP
 
@@ -30,7 +30,7 @@ Säkra dokument är en funktion i Office 365 Advanced Threat Protection (Office 
 
 - Den här funktionen är endast tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Security-licensen.
 
-- Säkra dokument är för närvarande tillgängliga för offentlig förhandsversion, som är tillgängliga för användare som ingår i [Office Insider-programmet](https://insider.office.com/en-us/join) på månadskanalen (Targeted)' med Office Version 2002 (12527.20092) eller mer. Den här funktionen är inaktiverad som standard och måste aktiveras av säkerhetsadministratören.
+- Säkra dokument är för närvarande tillgängliga för offentlig förhandsversion, som är tillgängliga för användare som ingår i [Office Insider Program](https://insider.office.com/en-us/join) på aktuell kanal (förhandsversion) med Office Version 2002 (12527.20092) eller mer. Den här funktionen är inaktiverad som standard och måste aktiveras av säkerhetsadministratören.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 

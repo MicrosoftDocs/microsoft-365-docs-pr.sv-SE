@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Använd den nya säkerhetsinstrumentpanelen för att granska Status för skydd mot hotskydd i Office 365 och visa och agera på säkerhetsaviseringar.
-ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566722"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679138"
 ---
 # <a name="security-dashboard"></a>Instrumentpanel för säkerhet
 
@@ -48,13 +48,11 @@ Widgeten Sammanfattning av hot ger dig en överblick över hur din organisation 
 
 Vilken information du ser i sammanfattningen av hothantering beror på vad du prenumererar på. I följande tabell beskrivs vilken information som ingår för Office 365 E3 och Office 365 E5.
 
-
-|Office 365 E3 |Office 365 E5 |
+|Office 365 E3|Office 365 E5|
 |---|---|
 |Blockerade meddelanden om skadlig kod<br/>Nätfiskemeddelanden blockerade<br>Meddelanden som rapporterats av användare<br><br><br><br>|Blockerade meddelanden om skadlig kod<br>Nätfiskemeddelanden blockerade<br>Meddelanden som rapporterats av användare<br>Zero-day malware blockerad<br>Avancerade nätfiskemeddelanden har upptäckts<br>Blockerade skadliga webbadresser|
 
-
-Om du vill visa eller komma åt widgeten Sammanfattning av hothantering måste du ha behörighet för att kunna visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Om du vill visa eller komma åt widgeten Sammanfattning av hothantering måste du ha behörighet för att kunna visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## <a name="threat-protection-status"></a>Status för skydd mot hot
 
@@ -69,7 +67,7 @@ Informationen beror på om din Microsoft 365-prenumeration innehåller [Exchange
 |EOP men inte Office 365 ATP|Skadlig e-post som upptäcktes och blockerades av EOP.<br><br> Se [rapporten Status för hotskydd (EOP).](view-email-security-reports.md#threat-protection-status-report)|
 |Skaffa Office 365 ATP|Skadligt innehåll och skadlig e-post som upptäckts och blockerats av EOP och Office 365 ATP<br><br>Aggregerat antal unika e-postmeddelanden med skadligt innehåll som blockerats av anti-malware-motorn, [nolltimmars automatisk rensning](zero-hour-auto-purge.md)och ATP-funktioner (inklusive [säkra länkar,](atp-safe-links.md) [säkra bilagor](atp-safe-attachments.md)och [ATP-anti-phishing).](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br><br>Se [rapporten Status för hotskydd (ATP).](view-reports-for-atp.md#threat-protection-status-report)|
 
-Om du vill visa eller komma åt widgeten Status för hotskydd måste du ha behörighet att visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Om du vill visa eller komma åt widgeten Status för hotskydd måste du ha behörighet att visa rapporter om avancerat skydd mot hot. Mer information finns i [Vilka behörigheter som behövs för att visa ATP-rapporterna?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## <a name="global-weekly-threat-detections"></a>Globala hotidentifieringar varje vecka
 
@@ -79,13 +77,12 @@ Widgeten Global Weekly Threat Detections visar hur många hot som upptäckts i e
 
 Måtten beräknas enligt beskrivningen i följande tabell:
 
-|Metriska|Hur det beräknas |
+|Metriska|Hur det beräknas|
 |---|---|
 |Skannade meddelanden|Antal skannade e-postmeddelanden multiplicerat med antalet mottagare|
 |Hot stoppas|Antal e-postmeddelanden som identifierats som innehållande skadlig kod multiplicerat med antalet mottagare|
 |Blockerad av [ATP](office-365-atp.md)|Antal e-postmeddelanden som blockerats av ATP multiplicerat med antalet mottagare|
 |Tas bort efter leverans|Antal meddelanden som tagits bort med [automatisk rensning](zero-hour-auto-purge.md) noll timmar multiplicerat med antalet mottagare|
-
 
 ## <a name="malware"></a>Malware
 

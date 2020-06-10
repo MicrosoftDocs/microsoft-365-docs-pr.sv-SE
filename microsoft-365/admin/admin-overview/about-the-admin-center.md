@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Du kan använda Administrationscenter för att konfigurera din organisation i molnet, hantera användare och prenumerationer. Kom igång genom att logga in på kontot som har administratörsbehörighet.
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386967"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678654"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -75,7 +75,7 @@ Här är funktionerna och inställningarna du hittar i navigeringen till vänste
   
 |**Meny**|**Vad det används till**|
 |-----|-----|
-|**Start** <br/> |Det här är startsidan i nya Administrationscenter. Här kan du se hur du hanterar användare, fakturering, tjänstehälsa och rapporter.  <br/> |
+|**Start** <br/> |Det här är målsidan i administrationscentret. Här kan du se hur du hanterar användare, fakturering, tjänstehälsa och rapporter.  <br/> |
 |**Användare** <br/> |Skapa och hantera användare i din organisation, som anställda eller elever. Du kan även ställa in deras behörighetsnivå eller återställa deras lösenord.  <br/> |
 |**Grupper** <br/> |Skapa och hantera grupper i din organisation, till exempel en Microsoft 365-grupp, distributionsgrupp, säkerhetsgrupp eller delad postlåda. Lär dig [skapa](../create-groups/create-groups.md) och [hantera](../create-groups/manage-groups.md) grupper.  <br/> |
 |**Resurser** <br/> |Skapa och hantera resurser, som en SharePoint-webbplatssamling. Lär dig [skapa webbplatssamlingar](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |

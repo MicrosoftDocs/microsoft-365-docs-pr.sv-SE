@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du dirigerar skräppost till mappar för skräppost från användare i hybridmiljö för Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 5d8ba6aae599ee4dd327bd1ec82b46e8f3ee3ca8
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617060"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679126"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer
 
@@ -60,7 +60,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
   - Om skräppostregeln är aktiverad på postlådan (parametervärdet _Aktiverad_ $true på cmdleten [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) i Exchange Management Shell). Det är skräppostregeln som faktiskt flyttar meddelandet till mappen Skräppost efter leverans. Som standard är skräppostregeln aktiverad på postlådor. Mer information finns i [Konfigurera inställningar för antispam för Exchange på postlådor](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Om du vill öppna Exchange Management Shell finns i [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) .
+- Om du vill öppna EAC på en Exchange Server finns [i Administrationscenter för Exchange i Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Öppna Exchange Management Shell genom [att öppna Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Mer information om regler för e-postflöde i lokalt Exchange finns i följande avsnitt:
 
@@ -78,7 +78,7 @@ I det här avsnittet beskrivs hur du skapar dessa regler för e-postflöde (EAC)
 
 3. Konfigurera följande inställningar på sidan **Ny regel** som öppnas:
 
-   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Ett exempel:
+   - **Namn**: Ange ett unikt, beskrivande namn för regeln. Till exempel:
 
      - EOP SFV:SPM till SCL 6
 
@@ -112,7 +112,7 @@ Använd följande syntax för att skapa de tre reglerna för e-postflöde:
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-Ett exempel:
+Till exempel:
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
