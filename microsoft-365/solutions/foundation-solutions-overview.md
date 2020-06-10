@@ -13,18 +13,19 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 37d0de34bb9a6f138b31e063b76761124c1664a9
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 49d58c8d489906519f0c5e3aab4cec8183a5fe5d
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160372"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664556"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Översikt över Microsoft 365 Foundation-lösningar
 
 
-![block](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation lösningar** Dessa lösningar ger en fullständig vägledning för ett specifikt affärsproblem eller behov. De guidar dig genom begrepp och funktioner och hjälper dig att göra de val som leder till ett fungerande slutresultat, från planering till genomförande, till antagande. 
+![block ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation lösningar** Dessa lösningar ger en fullständig vägledning för ett specifikt affärsproblem eller behov. De guidar dig genom begrepp och funktioner och hjälper dig att göra de val som leder till ett fungerande slutresultat, från planering till genomförande, till antagande. 
 
-- [Underlätta för distansarbetare med Microsoft 365](empower-people-to-work-remotely.md)
+- [Ge distansarbetare goda förutsättningar](empower-people-to-work-remotely.md)
 - [Samarbeta säkert i team, grupper och webbplatser](setup-secure-collaboration-with-teams.md)
 - [Konfigurera hotskydd och cybersäkerhet i hela organisationen](deploy-threat-protection.md)
+- [Distribuera informationsskydd för dataskyddsregler](information-protection-deploy.md)

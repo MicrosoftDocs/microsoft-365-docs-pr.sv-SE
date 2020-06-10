@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 92a2cc7603a1a49be5ee72fc7b6d132ce46e38d7
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: ee3acf0729920f1ab4fdaa3fb79b2b541a7a608b
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160876"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664604"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera hotskyddsfunktioner i Microsoft 365
 
@@ -83,8 +83,8 @@ Dina hotskyddsfunktioner kan konfigureras parallellt, så om du har flera säker
 Microsoft har testat och rekommenderar en specifik uppsättning principer för villkorlig åtkomst och relaterade principer för att skydda åtkomsten till alla Dina SaaS-program, särskilt Microsoft 365. Principer rekommenderas för grundläggande, känsligt och starkt reglerat skydd. Börja med att implementera principerna för baslinjeskydd. 
 
 
-[![Vanliga principer för att konfigurera identitets- och enhetsåtkomst](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-[Se en större version av den här avbildningen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Vanliga principer för att konfigurera identitets- och enhetsåtkomst](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [Se en större version av den här avbildningen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Så här implementerar du baslinjeskydd för Microsoft 365
 
@@ -206,7 +206,7 @@ Med Office 365 ATP kan personer i hela organisationen kommunicera och samarbeta 
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>Steg 7: Övervaka status och vidta åtgärder
 
-När du har konfigurerat och distribuerat dina tjänster och funktioner för hotskydd är nästa steg att övervaka hotidentifieringar och vidta lämpliga åtgärder. Den bästa utgångspunkten är Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), där du kan övervaka och hantera säkerhet över dina Microsoft-identiteter, data, enheter, appar och infrastruktur. 
+När du har konfigurerat och distribuerat dina tjänster och funktioner för hotskydd är nästa steg att övervaka hotidentifieringar och vidta lämpliga åtgärder. Den bästa utgångspunkten är Microsoft 365 security center ( [https://security.microsoft.com](https://security.microsoft.com) ), där du kan övervaka och hantera säkerhet över dina Microsoft-identiteter, data, enheter, appar och infrastruktur. 
 
 :::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 Säkerhetscenter":::
 
@@ -236,7 +236,7 @@ Microsoft 365 innehåller följande resurser för att informera användare i org
 |Koncept  |Resurser  |
 |---------|---------|
 |Microsoft 365     |[Anpassningsbara utbildningsvägar](https://docs.microsoft.com/office365/customlearning/) <p>Dessa resurser kan hjälpa dig att sätta ihop utbildning för slutanvändare i din organisation        |
-|Microsoft 365 Säkerhet |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
+|Microsoft 365 Säkerhetscenter |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
 |Multifaktorautentisering     | [Tvåstegsverifiering: Vad är den ytterligare verifieringssidan?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.    |
 
 Utöver den här vägledningen rekommenderar Microsoft att användarna vidtar de åtgärder som beskrivs i den här artikeln: [Skydda ditt konto och dina enheter från hackare och skadlig kod](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Dessa åtgärder omfattar:
@@ -245,5 +245,5 @@ Utöver den här vägledningen rekommenderar Microsoft att användarna vidtar de
 - Aktivera säkerhetsfunktioner på Windows 10- och Mac-datorer (för ohanterade enheter)
     
 Microsoft rekommenderar också att användarna skyddar sina personliga e-postkonton genom att vidta de åtgärder som rekommenderas i följande artiklar:
-- [Skydda ditt Outlook.com e-postkonto](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Skydda ditt Outlook.com e-postkonto](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Skydda ditt Gmail-konto med tvåstegsverifiering](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
