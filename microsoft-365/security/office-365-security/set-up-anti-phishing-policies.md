@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om de anti-phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209817"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689284"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer för bekämpning av nätfiske i Microsoft 365
 
@@ -114,7 +114,7 @@ Följande principinställningar är endast tillgängliga i ATP:s principer för 
 
 - **Används på**: Identifierar interna mottagare som ATP:s anti-phishing-policy gäller för. Det här värdet krävs i anpassade principer och inte tillgängligt i standardprincipen (standardprincipen gäller för alla mottagare).
 
-    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<mottagare1\>_ eller _\<mottagare2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<mottagare1\>_ och _\<medlem i grupp 1\>_).
+    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
   - **Mottagaren är**: En eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen.
   - **Mottagaren är medlem i**: En eller flera grupper i organisationen.
@@ -128,7 +128,7 @@ Följande principinställningar är endast tillgängliga i ATP:s principer för 
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Inställningar för personifiering i ATP:s principer för phishing-phishing
 
-Personifiering är där avsändaren eller avsändarens e-postdomän i ett meddelande ser mycket lik en riktig avsändare eller domän:
+Personifiering är där avsändaren eller avsändarens e-postdomän i ett meddelande liknar en riktig avsändare eller domän:
 
 - Ett exempel på personifiering av domänen contoso.com är ćóntoso.com.
 
@@ -140,11 +140,11 @@ Följande inställningar för personifiering är endast tillgängliga i ATP:s pr
 
 - **Användare att skydda:** Förhindrar att angivna interna eller externa användare personifieras. Till exempel chefer (interna) och styrelseledamöter (externa). Du kan lägga till upp till 60 interna och externa adresser. Den här listan över skyddade användare skiljer sig från listan över mottagare som principen gäller för i inställningen **Tillämpad** på.
 
-  Du kan till exempel ange Felipe Apodaca (felipea@contoso.com) som en skyddad användare i en princip som gäller för gruppen Chefer. Inkommande meddelanden som skickas till medlemmar i gruppen Chefer där där Felipe Apodaca personifieras kommer att hanteras av principen (den åtgärd som du konfigurerar för personifierade användare).
+  Du kan till exempel ange Felipe Apodaca (felipea@contoso.com) som en skyddad användare i en princip som gäller för gruppen Chefer. Inkommande meddelanden som skickas till medlemmar i gruppen Chefer där Felipe Apodaca personifieras kommer att hanteras av principen (den åtgärd som du konfigurerar för personifierade användare).
 
 - **Domäner som ska skyddas**: Förhindra att de angivna domänerna personifieras. Till exempel alla domäner som du äger[(godkända domäner)](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)eller specifika domäner (domäner som du äger eller partnerdomäner). Den här listan över skyddade domäner skiljer sig från listan över domäner som principen gäller för i inställningen **Tillämpad** på.
 
-  Du kan till exempel ange tailspintoys.com som en skyddad domän i en princip som gäller för medlemmar i gruppen Chefer. Inkommande meddelanden som skickas till medlemmar i gruppen Chefer där var tailspintoys.com personifieras kommer att utföras av principen (den åtgärd som du konfigurerar för personifierade domäner).
+  Du kan till exempel ange tailspintoys.com som en skyddad domän i en princip som gäller för medlemmar i gruppen Chefer. Inkommande meddelanden som skickas till medlemmar i gruppen Chefer där tailspintoys.com personifieras kommer att hanteras av principen (den åtgärd som du konfigurerar för personifierade domäner).
 
 - **Åtgärder för skyddade användare eller domäner**: Välj vilken åtgärd som ska vidtas för inkommande meddelanden som innehåller personifieringsförsök mot skyddade användare och skyddade domäner i principen. Du kan ange olika åtgärder för personifiering av skyddade användare jämfört med personifiering av skyddade domäner:
 

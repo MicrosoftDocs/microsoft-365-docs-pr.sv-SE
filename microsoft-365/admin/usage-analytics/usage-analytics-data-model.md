@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Lär dig hur användningsanalys ansluter till ett API och ger månatliga trend för användning av olika Microsoft 365-tjänster.  '
-ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402052"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695097"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Datamodell för Microsoft 365 användningsanalyser
 
@@ -43,16 +43,16 @@ Det här API:et innehåller information om den månatliga trenden för användni
 
 |**Tabellnamn**|**Informationen i tabellen**|**Datumintervall**|
 |:-----|:-----|:-----|
-|Klientorganisationens produktanvändning  <br/> |Innehåller månatliga summeringar av antalet aktiverade, aktiva användare, antalet kvarhållna användare månad för månad, förstagångsanvändare och det ackumulerade antalet aktiva användare.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
+|Klientorganisationens produktanvändning  <br/> |Innehåller månatliga summor för aktiverade, aktiva användare, användare som behålls i månaden, förstagångsanvändare och kumulativa aktiva användare.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
 |Klientorganisationens produktaktivitet  <br/> |Innehåller månatliga summeringar av aktivitet och antalet aktiva användare för olika aktiviteter i produkterna.  <br/> Se [definition av aktiv användare](active-user-in-usage-reports.md) om du vill ha information om aktiviteterna i en produkt som visas i den här datatabellen.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Klientorganisationens Office-licenser  <br/> |Innehåller information om hur många Microsoft Office-prenumerationer som användare tilldelats  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Klientorganisationens postlådeanvändning  <br/> |Innehåller information om användarens postlåda, till exempel totalt antal meddelanden i postlådan och lagringsanvändningen.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
+|Klientorganisationens Office-licenser  <br/> |Innehåller information om hur många Microsoft Office-prenumerationer som användare tilldelats  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
+|Klientorganisationens postlådeanvändning  <br/> |Innehåller information om användarens postlåda, till exempel totalt antal meddelanden i postlådan och lagringsanvändningen.  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
 |Klientorganisationens klientanvändning  <br/> |Innehåller information om antalet användare som aktivt använder specifika klienter/enheter för att ansluta till Exchange Online, Skype för företag och Yammer.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Klientorganisationens användning av SharePoint Online  <br/> |Innehåller information om SharePoint-webbplatserna, vilket omfattar gruppwebbplatser, till exempel totalt antal webbplatser, antal dokument på webbplatsen, antal filer efter aktivitetstyp och använt lagringsutrymme.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Klientorganisationens användning av OneDrive för företag  <br/> |Innehåller information om OneDrive-kontona, till exempel antalet konton, antalet dokument i OneDrives, lagringsutrymme som används och antalet filer efter aktivitetstyp.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Användning av Microsoft 365-grupper för klient  <br/> |Innehåller data om användning av Microsoft 365-grupper, inklusive postlåda, SharePoint och Yammer.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Klientorganisationens Office-aktiveringar  <br/> |Innehåller data om antalet Office-prenumerationsaktiveringar, antal aktiveringar per enhet (Android/iOS/Mac/PC), aktiveringar per serviceplan, till exempel Microsoft 365 Apps för företag, Visio, Project.  <br/> |Innehåller information om status vid månadsslutet för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
-|Användarens status  <br/> |Innehåller metadata om användare, inklusive användarens visningsnamn, produkter som tilldelats, plats, avdelning, titel och företag. Den här informationen handlar om användare som tilldelades en licens under den senaste fullständiga månaden. Alla användare är unikt representerade av ett användar-ID.  <br/> |Den här informationen handlar om användare som hade en tilldelad licens under den senaste fullständiga månaden.  <br/> |
+|Klientorganisationens användning av SharePoint Online  <br/> |Innehåller information om SharePoint-webbplatserna, vilket omfattar gruppwebbplatser, till exempel totalt antal webbplatser, antal dokument på webbplatsen, antal filer efter aktivitetstyp och använt lagringsutrymme.  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
+|Klientorganisationens användning av OneDrive för företag  <br/> |Innehåller information om OneDrive-kontona, till exempel antalet konton, antalet dokument i OneDrives, lagringsutrymme som används och antalet filer efter aktivitetstyp.  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
+|Användning av Microsoft 365-grupper för klient  <br/> |Innehåller data om användning av Microsoft 365-grupper, inklusive postlåda, SharePoint och Yammer.  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
+|Klientorganisationens Office-aktiveringar  <br/> |Innehåller data om antalet Office-prenumerationsaktiveringar, antal aktiveringar per enhet (Android/iOS/Mac/PC), aktiveringar per serviceplan, till exempel Microsoft 365 Apps för företag, Visio, Project.  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
+|Användarens status  <br/> |Innehåller metadata om användare, inklusive användarens visningsnamn, produkter som tilldelats, plats, avdelning, titel och företag. Den här informationen handlar om användare som tilldelades en licens under den senaste fullständiga månaden. Varje användare representeras unikt av ett användar-ID.  <br/> |Den här informationen handlar om användare som hade en tilldelad licens under den senaste fullständiga månaden.  <br/> |
 |Användaraktivitet  <br/> |Innehåller information efter användarnivå om aktiviteter som utförts av licensierade användare.  <br/> Se [definition av aktiv användare](active-user-in-usage-reports.md) om du vill ha information om aktiviteterna i en produkt som visas i den här datatabellen.  <br/> |Den här informationen handlar om användare som utförde en aktivitet i någon av tjänsterna under den senaste fullständiga månaden.  <br/> |
    
 Expandera avsnitten nedan om du vill se detaljerad information om varje datatabell.
@@ -63,11 +63,11 @@ Den här tabellen innehåller information efter användarnivå för alla använd
   
 |**Kolumnnamn**|**Kolumnbeskrivning**|
 |:-----|:-----|
-|Userid  <br/> |Unikt användar-ID som representerar en användare och som gör det möjligt att ansluta till andra datatabeller i datauppsättningen.  <br/> |
+|Userid  <br/> |Unikt användar-ID som representerar en användare och gör det möjligt att gå med andra datatabeller i datauppsättningen.  <br/> |
 |Timeframe  <br/> |Månadsvärde som den här tabellen har data för.  <br/> |
 |UPN  <br/> |UPN, användarens huvudnamn, identifierar användaren unikt så att denne kan ansluta till andra externa datakällor.  <br/> |
 |Displayname  <br/> |Användarens visningsnamn.  <br/> |
-|IDType  <br/> |Id-typ är inställd på 1 om användaren är en Yammer-användare som ansluter med hjälp av sitt Yammer-ID eller 0 om de ansluter till Yammer med hjälp av sitt Microsoft 365-ID.  <br/> Värdet är 1 för att representera att dessa användare ansluter till Yammer med sitt Yammer-id och inte deras Microsoft 365-id  <br/> |
+|IDType  <br/> |ID-typ är inställd på 1 om användaren är en Yammer-användare som ansluter med hjälp av sitt Yammer-ID eller 0 om de ansluter till Yammer med hjälp av sitt Microsoft 365-ID.  <br/> Värdet är 1 för att representera att dessa användare ansluter till Yammer med sitt Yammer-ID och inte deras Microsoft 365-ID  <br/> |
 |HarLicenseEXO  <br/> |Värdet är Sant om användaren tilldelats en licens och är aktiverad för att använda Exchange.  <br/> |
 |HarLicenseODB  <br/> |Värdet är Sant om användaren tilldelats en licens och är aktiverad för att använda OneDrive för företag.  <br/> |
 |HasLicenseSPO  <br/> |Värdet är Sant om användaren tilldelats en licens och är aktiverad för att använda SharePoint Online.  <br/> |
@@ -95,7 +95,7 @@ Den här tabellen innehåller information om alla användare som hade en aktivit
 |**Kolumnnamn**|**Kolumnbeskrivning**|
 |:-----|:-----|
 |Userid  <br/> |Unikt användar-ID som representerar en användare och som gör det möjligt att ansluta till andra datatabeller i datauppsättningen.  <br/> |
-|IDType  <br/> |Id-typ är inställd på 1 om användaren är en Yammer-användare som ansluter med hjälp av sitt Yammer-ID eller 0 om de ansluter till Yammer med hjälp av sitt Microsoft 365-ID.  <br/> Värdet är 1 för att representera att dessa användare ansluter till Yammer med sitt Yammer-id och inte deras Microsoft 365-id  <br/> |
+|IDType  <br/> |Id-typ är inställd på 1 om användaren är en Yammer-användare som ansluter med hjälp av sitt Yammer-ID eller 0 om de ansluter till Yammer med hjälp av sitt Microsoft 365-ID.  <br/> Värdet är 1 för att representera att dessa användare ansluter till Yammer med sitt Yammer-ID och inte deras Microsoft 365-ID  <br/> |
 |Timeframe  <br/> |Månadsvärde som den här tabellen innehåller data för.  <br/> |
 |EXO_EmailSent  <br/> |Antalet e-postmeddelanden som skickats.  <br/> |
 |EXO_EmailReceived  <br/> |Antalet e-postmeddelanden som mottagits.  <br/> |
@@ -143,7 +143,7 @@ Den här tabellen innehåller information om alla användare som hade en aktivit
    
 ### <a name="data-table---tenant-product-usage"></a>Datatabell - Klientorganisationens produktanvändning
 
-Den här tabellen innehåller månad för månadsanvändningsdata när det gäller aktivera, aktiva, återkommande och första gången användare för varje produkt inom Microsoft 365. Microsoft 365-värdet representerar aktiv användning i någon av produkterna.
+Den här tabellen innehåller månad för månad antagande data i form av aktivera, aktiva, återkommande och första gången användare för varje produkt inom Microsoft 365. Microsoft 365-värdet representerar aktiv användning i någon av produkterna.
   
 |**Kolumnnamn**|**Kolumnbeskrivning**|
 |:-----|:-----|
@@ -153,7 +153,7 @@ Den här tabellen innehåller månad för månadsanvändningsdata när det gäll
 |ActiveUsers  <br/> |Antalet användare som utförde en avsiktlig aktivitet i produkten under tidsperioden.  <br/> En användare räknas som aktiv för en produkt under en viss månad om han eller hon har utfört en nyckelaktivitet i produkten. Nyckelaktiviteter är tillgängliga i tabellen **Klientorganisationens produktaktivitet**.  <br/> |
 |Kumulativa Aktivaanvändare  <br/> |Antalet användare som har aktiverats för att använda en produkt och som har använt produkten fram till månaden inom tidsperioden minst en gång sedan datainsamlingen påbörjades i det nya användningssystemet.  <br/> |
 |MoMReturningAnvändare  <br/> |Antalet användare som är aktiva under månaden inom tidsperioden och som även var aktiva under den föregående månaden.  <br/> |
-|FirstTimeUsers  <br/> |Antalet användare som blev aktiva inom tidsperioden för första gången sedan data samlades in i det nya användningssystemet.  <br/> En användare räknas som förstagångsanvändare under en viss månad, om vi identifierar hans eller hennes aktiviteter för första gången efter det att data börjat samlas in i det här nya rapporteringssystemet. En gång räknat som en första gången användare, även om denna användare har en stor lucka i sin verksamhet de aldrig kommer att räknas igen som en första gången användare  <br/> |
+|FirstTimeUsers  <br/> |Antalet användare som blev aktiva inom tidsperioden för första gången sedan data samlades in i det nya användningssystemet.  <br/> En användare räknas som förstagångsanvändare under en viss månad, om vi identifierar hans eller hennes aktiviteter för första gången efter det att data börjat samlas in i det här nya rapporteringssystemet. En gång räknats som en första gången användare, även om denna användare har en stor lucka i sin verksamhet de aldrig kommer att räknas igen som en första gången användare  <br/> |
 |Content Date  <br/> |Om tidsperioden är aktuell månad representerar det här värdet det senaste datumet i den aktuella månaden för vilket det finns tillgängliga data.  <br/> Om tidsperioden är föregående månad representerar det här värdet det sista datumet i månaden inom tidsperioden.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Datatabell - Klientorganisationens produktaktivitet
@@ -191,7 +191,7 @@ Den här tabellen består av sammanfattningsdata för alla licensierade Exchange
    
 ### <a name="data-table---tenant-client-usage"></a>Datatabell - Klientorganisationens klientanvändning
 
-Den här tabellen innehåller sammanfattningsdata månad för månad om klienter som användarna använder för att ansluta till Exchange Online, Skype för företag och Yammer. Den här tabellen har ännu inte klientanvändningsdata för SharePoint Online och OneDrive för företag.
+Den här tabellen innehåller sammanfattningsdata för månad för månad om de klienter som användarna använder för att ansluta till Exchange Online, Skype för företag och Yammer. Den här tabellen har ännu inte klientanvändningsdata för SharePoint Online och OneDrive för företag.
   
 |**Kolumnnamn**|**Kolumnbeskrivning**|
 |:-----|:-----|
