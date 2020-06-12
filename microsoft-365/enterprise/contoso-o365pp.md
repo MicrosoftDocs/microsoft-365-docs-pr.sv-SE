@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Endpoint Configuration Manager för att distribuera Microsoft 365-applikationer för företag.
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011893"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679044"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365-applikationer för företagsdistribution av Contoso
 
@@ -53,8 +53,8 @@ I stället för att hantera uppdateringar för Office med Configuration Manager 
 
 Contoso följde samma två steg för funktionsuppdateringar som de använde för att distribuera Office: enheter i pilotgruppen mottog uppdateringar fyra månader tidigare än enheter i resten av organisationen (den omfattande gruppen). För att aktivera detta för Office använde Contoso två rekommenderade [uppdateringskanaler](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
-- Halvårsvis kanal (riktad) för uppdateringar till pilotgruppen 
-- Halvårsvis kanal för uppdateringar till den omfattande gruppen. 
+- Halvårsvis kanal (riktad) för uppdateringar av pilotgruppen 
+- Halvårsvis kanal för uppdateringar till den breda gruppen. 
 
 Eftersom den halvårsvisa kanalen (riktad) lanserar en version av Microsoft 365-applikationer för företag fyra månader tidigare än den halvårsvisa kanalen har Contoso tid att validera uppdateringarna utan att behöva hantera dem. 
 
