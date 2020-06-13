@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: a1c734adfe72d5eff5f18e67116544fd63eb854a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160141"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679150"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -195,7 +195,7 @@ Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive be
 |Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare|Av|När inställningen är **På** kan bara personer i de specifika säkerhetsgrupperna dela med externa användare. Bara länkar för *Vissa personer* är tillgängliga. Delning med *Alla* inaktiveras, såvida inte **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar** också är **På**|
 |Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar|Av|När inställningen är **På** kan bara personerna i de angivna säkerhetsgrupperna dela med gäster. Både länkar för *Alla* och *Vissa personer* är tillgängliga.|
 
-Båda inställningarna kan användas samtidigt. Om en användare ingår i säkerhetsgrupper som angetts för båda inställningarna, kommer den högre behörighetsnivån att gälla (*Alla* plus *Vissa användare*).
+Båda inställningarna kan användas samtidigt. Om en användare ingår i säkerhetsgrupper som angetts för båda inställningarna, kommer den högre behörighetsnivån att gälla (*Alla* plus *Vissa användare*). Kapslade säkerhetsgrupper stöds.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (webbplatsnivå)
 
