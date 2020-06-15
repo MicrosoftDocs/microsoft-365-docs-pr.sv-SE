@@ -28,9 +28,10 @@
         - name: Steg 6. Utbilda distansarbetare
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Konfigurera säkerhet samarbete med hjälp av Microsoft 365
-      href: setup-secure-collaboration-with-teams.md
       items:
-        - name: Tre skyddsnivåer med Microsoft Teams
+        - name: Översikt
+          href: setup-secure-collaboration-with-teams.md
+        - name: Steg 1. Konfigurera tre skyddsnivåer med Microsoft Teams
           items:
             - name: Översikt över tre skyddsnivåer
               href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Konfigurera en team med säkerhetsisolering
               href: secure-teams-security-isolation.md
-        - name: Konfigurera extern delning
+        - name: Steg 2. Konfigurera extern delning
           items:
             - name: Översikt av extern delning
               href: collaborate-with-people-outside-your-organization.md
@@ -69,7 +70,11 @@
             - name: Referens för extern delning
               href: microsoft-365-guest-settings.md
     - name: Distribuera skydd mot hot i Microsoft 365
-      href: deploy-threat-protection.md
+      items:
+        - name: Översikt
+          href: deploy-threat-protection.md
+        - name: Steg för att distribuera hotskydd
+          href: deploy-threat-protection-configure.md
     - name: Distribuera informationsskydd för datasekretessregler
       items:
         - name: Översikt

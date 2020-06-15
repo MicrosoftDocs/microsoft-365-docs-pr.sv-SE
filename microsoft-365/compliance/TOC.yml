@@ -472,6 +472,8 @@
               href: retry-failed-content-search.md
             - name: Använda Microsoft Edge för att ladda ned sökresultat
               href: configure-edge-to-export-search-results.md
+            - name: Söka efter eDiscovery-aktiviteter i granskningsloggen
+              href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
         - name: Översikt över Advanced eDiscovery
@@ -587,6 +589,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Konfigurera efterlevnadsgränser
               href: set-up-compliance-boundaries.md
+            - name: Söka efter eDiscovery-aktiviteter i granskningsloggen
+              href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Felsöka AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (klassisk)
