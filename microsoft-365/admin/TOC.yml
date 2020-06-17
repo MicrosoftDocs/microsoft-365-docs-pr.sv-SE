@@ -22,14 +22,14 @@
               href: setup/setup-apps-for-business.md
         - name: Utforska konfigurationssidan och guiden
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Migrera dina data
-          href: setup/migrate-email-and-contacts-admin.md
         - name: Installera Office-appar
           href: setup/install-applications.md
         - name: Konfigurera Windows-enheter
           href: ../business/set-up-windows-devices.md
         - name: Konfigurera mobila enheter
           href: ../business/set-up-mobile-devices.md
+        - name: Migrera data till Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: Distribuera Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: Apputbildning för alla
@@ -117,6 +117,8 @@
               href: add-users/resend-user-password.md
             - name: Skapa en mall för att lägga till användare
               href: add-users/create-and-use-a-template-to-add-users.md
+            - name: Uppgradera användare till de senaste apparna
+              href: setup/upgrade-users-to-latest-office-client.md
         - name: Grupper
           items:
             - name: Översikt av grupper
@@ -154,6 +156,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: Använda en anpassad domän
           href: email/change-email-address.md
+        - name: Migrera e-post och kontakter till Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: Skapa signaturer och ansvarsfriskrivningar
           href: setup/create-signatures-and-disclaimers.md
         - name: 'Skapa, redigera eller ta bort en säkerhetsgrupp'
@@ -204,8 +208,6 @@
     - name: Hantera data och tjänster
       href: manage/index.yml
       items:
-        - name: Uppgradera organisationen till de senaste programmen
-          href: setup/upgrade-users-to-latest-office-client.md
         - name: Övervaka användaraktivitet med hjälp av rapporter
           href: activity-reports/activity-reports.md
         - name: Ändra organisationens kontaktinformation
@@ -313,15 +315,15 @@
     - name: Arbeta med kunder
       href: work-with-customers/index.yml
       items:
-        - name: Dela webbplatser och filer externt
+        - name: Dela webbplatser och filer med gästanvändare
           href: manage/share-sites-with-external-users.md
         - name: Dela kalendrar med gästanvändare
           href: manage/share-calendars-with-external-users.md
-        - name: Skapa ett team med gäster
+        - name: Skapa ett team med gästanvändare
           href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: Schemalägga ett teammöte med gäster
+        - name: Schemalägga ett Teams-möte med gäster
           href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
-        - name: Ansluta till ett Teams-möte med gäster
+        - name: Ansluta till ett Teams-möte med gästanvändare
           href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
     - name: Felsökning
       href: 'https://docs.microsoft.com/office/troubleshoot/'
