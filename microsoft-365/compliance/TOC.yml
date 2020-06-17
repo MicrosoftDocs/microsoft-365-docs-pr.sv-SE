@@ -2,6 +2,8 @@
   href: index.yml
 - name: Komma igång
   items:
+    - name: Snabbuppgifter för att komma igång med efterlevnad
+      href: compliance-quick-tasks.md
     - name: Nyheter i efterlevnadscentret
       href: whats-new.md
     - name: Senaste uppdateringar i efterlevnadsinnehåll
@@ -155,6 +157,8 @@
       href: encryption.md
     - name: Tjänstkryptering i Office 365
       href: office-365-service-encryption.md
+    - name: Teknisk referensinformation om kryptering i Office 365
+      href: technical-reference-details-about-encryption.md
     - name: Customer Key
       items:
         - name: Tjänstkryptering med Kundnyckel i Office 365
@@ -198,8 +202,6 @@
           href: exchange-online-secures-email-secrets.md
         - name: Hur Exchange Online använder TLS för att säkra e-postanslutningar i Office 365
           href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: Teknisk referensinformation om kryptering i Office 365
-          href: technical-reference-details-about-encryption.md
         - name: BitLocker och DKM (Distributed Key Manager) för kryptering
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: Äldre OME
@@ -533,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Granska ärendedata
           items:
-            - name: Använda instrumentpanelen för granskningsuppsättningar (förhandsversion)
+            - name: Använda instrumentpanelen för granskningsuppsättningar
               href: advanced-ediscovery-dashboard.md
             - name: Visa dokument i en granskningsuppsättning
               href: view-documents-in-review-set.md
