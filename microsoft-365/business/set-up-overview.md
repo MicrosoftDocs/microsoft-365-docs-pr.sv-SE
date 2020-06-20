@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Lär dig installationsstegen för Microsoft 365 Business Premium, från att prenumerera, lägga till en domän och användare, till att konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: a808ae5761c1bc5706966a3f7de95f96f8f7c8c8
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470534"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785821"
 ---
 # <a name="overview-of-setup"></a>Översikt över konfiguration
 
@@ -40,11 +40,11 @@ Titta på en kort video om installationsprogrammet för Microsoft 365 Business P
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 De flesta installationsstegen kan göras i installationsguiden, men de andra alternativen visas också.
 
-## <a name="step-1-add-your-domain-and-users"></a>Steg 1: Lägg till din domän och dina användare
+## <a name="step-1-add-your-domain-and-users"></a>Steg 1: Lägga till din domän och användare
 
    - **[Lägg till din domän](set-up.md#add-your-domain-to-personalize-sign-in)** (om du köpte domänen under [registreringen](sign-up.md)är det här steget redan gjort.)
 
@@ -74,13 +74,13 @@ Se även [de 10 bästa sätten att skydda Din Microsoft 365 Business Premium](ht
 När du har kört guiden Konfigurera vill du ta fram alla Windwos 10-datorer i organisationen.
   
 - Windows 10 Pro är en [förutsättning](pre-requisites-for-data-protection.md) för Microsoft 365 Business Premium, men om du har Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro ger din prenumeration dig rätt till en [uppgradering till Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-- Följ stegen i [säkra Windows 10-datorer](secure-win-10-pcs.md) för att konfigurera principer för Windows 10-enheter.
+- Följ stegen i [säkra Windows 10-datorer](secure-win-10-pcs.md) för att ställa in principer för Windows 10-enheter.
 
 När du ansluter en Windows 10-enhet till Azure AD tillämpas de principer som du anger för Windows 10-datorer på den. Mer information finns i [Konfigurera Windows-enheter för Microsoft 365-användare](set-up-windows-devices.md).
 
 ## <a name="step-4-install-microsoft-365-apps-for-business"></a>Steg 4: Installera Microsoft 365-appar för företag
 - Du kan automatiskt installera Office i Windows-enheterna med hjälp av [installationsguiden](set-up.md#deploy-office-365-client-apps).
-- Låt användare [installera Office-program](https://docs.microsoft.com/office365/admin/setup/install-applications) för Windows och enheter.
+- Låt användare [installera Office-appar](https://docs.microsoft.com/office365/admin/setup/install-applications) för Windows och enheter.
      
 ## <a name="advanced"></a>Avancerade
 - **Använd Autopilot för att konfigurera nya enheter**
@@ -95,4 +95,4 @@ När du ansluter en Windows 10-enhet till Azure AD tillämpas de principer som d
 
 ## <a name="see-also"></a>Se även
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

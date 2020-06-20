@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig mer om Microsoft 365 för företag, hur du konfigurerar det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402015"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786163"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -57,7 +57,7 @@ Microsoft 365 för företag är avsett för upp till 300 licenser. Om du behöve
 
  **Översikt över Microsoft 365 för företag Suite-uppsättning**
   
-I följande diagram beskrivs hur administratörer konfigurerar Microsoft 365 för företag. I rapporten beskrivs också stegen för att förbereda Windows-datorer för Microsoft 365 för företag. Du kan också lägga till nya enheter i Microsoft 365-administrationscentret med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda Autopilot för att konfigurera och förkonfigurera nya enheter så att de är redo för produktiv användning så snart en användare loggar in med sina Microsoft 365 för affärsautentiseringsuppgifter.
+I följande diagram beskrivs hur administratörer konfigurerar Microsoft 365 för företag. I rapporten beskrivs också stegen för att förbereda Windows-datorer för Microsoft 365 för företag. Du kan också lägga till nya enheter i Microsoft 365 admin center med [Windows AutoPilot](add-autopilot-devices-and-profile.md). Du kan använda Autopilot för att konfigurera och förkonfigurera nya enheter så att de är redo för produktiv användning så snart en användare loggar in med sina Microsoft 365 för affärsautentiseringsuppgifter.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
@@ -65,7 +65,7 @@ Titta på det här videoklippet om du vill ha en översikt över installationspr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Konfigurera Microsoft 365 för företag (admin)
@@ -92,9 +92,9 @@ Följ stegen i [Konfigurera mobila enheter för Microsoft 365 för företagsanv�
   
 ### <a name="3-prepare-pcs"></a>3: Förbereda datorer
 
-Administratörer kan förvälja inställningar för nya Windows 10-datorer med hjälp av [Windows AutoPilot](add-autopilot-devices-and-profile.md). Användare kan konfigurera sina befintliga eller nya Windows 10-enheter genom att följa stegen i det här avsnittet: [Konfigurera Windows-datorer för Microsoft 365 för företagsanvändare](set-up-windows-devices.md). För befintliga enheter kan användare **eventuellt** [flytta filer till OneDrive för företag](move-files-to-onedrive.md). De kan också använda verktyg från tredje part för att flytta filer som är associerade med Windows-profilen till OneDrive.
+Administratörer kan förvälja inställningar för nya Windows 10-datorer med hjälp av [Windows AutoPilot](add-autopilot-devices-and-profile.md). Användare kan konfigurera sina befintliga eller nya Windows 10-enheter genom att följa stegen i det här avsnittet: [Konfigurera Windows-datorer för Microsoft 365 för företagsanvändare](set-up-windows-devices.md). För befintliga enheter kan användare **också** [flytta filer till OneDrive för företag](move-files-to-onedrive.md). De kan också använda verktyg från tredje part för att flytta filer som är associerade med Windows-profilen till OneDrive.
   
-Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 för företag för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 för företag](manage-windows-devices.md) för att konfigurera detta. Den här metoden är att föredra och enheter i det här tillståndet kallas **Hybrid Azure AD-anslutna enheter**. 
+Om din organisation använder Windows Server Active Directory lokalt kan du konfigurera Microsoft 365 för företag för att skydda dina Windows 10-enheter, samtidigt som du behåller åtkomsten till lokala resurser som kräver lokal autentisering. Följ stegen i [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 för företag för](manage-windows-devices.md) att konfigurera detta. Den här metoden är att föredra och enheter i det här tillståndet kallas **Hybrid Azure AD-anslutna enheter**. 
   
 Om du behåller en lokal Active Directory som innehåller vissa lokala resurser (till exempel filresurser och skrivare) kan du ge dina **Azure AD-anslutna enheter** åtkomst till dessa resurser genom att följa stegen här: [Få åtkomst till lokala resurser från en Azure AD-ansluten enhet i Microsoft 365 för företag](access-resources.md).
   
@@ -113,4 +113,4 @@ Om du behåller en lokal Active Directory som innehåller vissa lokala resurser 
   
 [Hantera Microsoft 365 för företag](manage.md)[Migrera till Microsoft 365 för företag](migrate-to-microsoft-365-business.md)
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

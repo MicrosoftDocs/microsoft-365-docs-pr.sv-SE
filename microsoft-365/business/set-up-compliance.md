@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera efterlevnadsfunktioner för att förhindra dataförlust och skydda din och dina kunders känsliga information.
-ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402703"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785841"
 ---
 # <a name="set-up-compliance-features"></a>Konfigurera funktioner för efterlevnad
 
@@ -43,13 +43,13 @@ DLP levereras med många färdiga principmallar för många olika språk. Till e
 
  **Exchange Online Archiving** licensfunktioner bidra till att upprätthålla efterlevnad och reglerande standarder genom att bevara e-postinnehåll för eDiscovery. Det bidrar också till att minska risken om det finns en rättegång, och ger ett sätt att återställa data efter en säkerhetsöverträdelse eller när du behöver återställa borttagna objekt. Du kan använda bevarande av rättstvister för att bevara allt innehåll för en användare eller använda bevarandeprinciper för att anpassa det du vill bevara.
   
-**Rättstvister håller:** Du kan bevara allt postlådeinnehåll, inklusive borttagna objekt genom att spärra hela en användares postlåda. 
+**Rättstvister håller:** Du kan bevara allt postlådeinnehåll, inklusive borttagna objekt genom att spärra en användares hela postlåda. 
     
 Så här placerar du en postlåda i bevarandet av rättstvister i administrationscentret:
     
 1. Gå till Aktiva användare i den vänstra **navigeringsfältet** \> **Active users**.
     
-2. Välj en användare vars postlåda du vill placera i bevarandet av rättstvister. Expandera **E-postinställningarna**i användarfönstret och välj **Redigera Exchange-egenskaper**bredvid **Fler inställningar**.
+2. Välj en användare vars postlåda du vill placera i bevarandet av rättstvister. I användarfönstret expanderar du **E-postinställningar och**bredvid **Fler inställningar**väljer du **Redigera Exchange-egenskaper**.
     
 3. På postlådesidan för användaren väljer du ** postlådefunktioner ** på den vänstra navigeringsfältet och väljer sedan länken **Aktivera** under **Bevarande av juridiska skäl**.
     
@@ -61,7 +61,7 @@ Så här placerar du en postlåda i bevarandet av rättstvister i administration
 
 Känslighetsetiketter levereras med Azure Information Protection (AIP) Plan 1 och hjälper dig att klassificera och eventuellt skydda dina dokument och e-postmeddelanden genom att använda etiketter. Etiketter kan användas automatiskt av administratörer som definierar regler och villkor, manuellt av användare eller genom att använda en kombination där användarna får rekommendationer.
 
-Om du vill ställa in Känslighetsetiketter visar du [skapa och hantera känslighetsetiketter](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+Om du vill ställa in Känslighetsetiketter visar du [skapa och hantera känslighetsetiketter](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
 
 
 
@@ -69,7 +69,7 @@ Om du vill ställa in Känslighetsetiketter visar du [skapa och hantera känslig
 
 Så här installerar du AIP-klienten manuellt:
 
-1. Ladda ned **AzinfoProtection_UL.exe** från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Ladda ner **AzinfoProtection_UL.exe** från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
  
 2. Du kan kontrollera att installationen fungerade genom att visa ett Word-dokument och se till att alternativet **Känslighet** är tillgängligt på fliken **Start.**
 <br/>![Listruta på fliken Skydd i ett Word-dokument.](../media/word-sensitivity.png)

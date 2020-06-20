@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: Läs mer om kraven för att konfigurera din organisation med Microsoft 365 för företag och skydda arbetsdata på användarnas enheter.
-ms.openlocfilehash: 1bfa2b2d2ceba68d39da9c65560e67a6602e6cfa
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Lär dig mer om kraven för att konfigurera din organisation med Microsoft 365 för företag och skydda arbetsdata på användarnas enheter.
+ms.openlocfilehash: 237825d2c2683bb6e71ae2fd31f8a25b1aa85ff7
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470976"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785901"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Förutsättningar för att skydda data på enheter med Microsoft 365 för företag
 
@@ -41,7 +41,7 @@ Det första steget i att konfigurera din organisation med Microsoft 365 för fö
     
     [Uppgradera Windows-enheter till Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
     
-    Om du kör Windows 10 Home måste du **köpa** Windows 10 Pro. Instruktioner finns i [uppgradera Windows 10 Home till Windows 10 Pro.](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) 
+    Om du kör Windows 10 Home måste du **köpa** Windows 10 Pro. Instruktioner finns i [uppgradera Windows 10 Home till Windows 10 Pro.](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) 
     
 - Ta bort enheter från mobila hanteringslösningar (Mobile Iron, AirWatch och så vidare). Du registrerar alla personer i organisationen i Microsoft 365 för mobilhantering för företag.
     

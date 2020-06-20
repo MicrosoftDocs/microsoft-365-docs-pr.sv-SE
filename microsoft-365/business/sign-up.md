@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om vad Microsoft 365 Business Premium innehåller och få steg-för-steg-vägledning när du registrerar dig för Microsoft 365 Business Premium.
-ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401567"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785681"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Registrera dig för Microsoft 365 Business Premium
 
@@ -40,7 +40,7 @@ Om du vill ta reda på vad Microsoft 365 Business Premium innehåller kan du tit
 Det finns tre sätt att få Microsoft 365 Business Premium:
 - **Köp Microsoft 365 Business Premium och slutför din egen konfiguration:** Så här köper du Microsoft 365 Business Premium online [nedan](#sign-up-steps).
 - **För Microsoft-partner:** Om du är partner läser du [Hämta Microsoft 365 Business Premium från Microsoft Partner Center](get-microsoft-365-business.md).
-- **Få hjälp i en Microsoft-butik:** Gå till en [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652). Microsoft-butiker kan hjälpa dig med frågor om planer, hjälpa dig att köpa ett abonnemang som passar dina affärsbehov och hjälpa dig att slutföra konfigurationen.
+- **Få hjälp i en Microsoft Store:** Gå till en [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652). Microsoft-butiker kan hjälpa dig med frågor om planer, hjälpa dig att köpa en plan som passar dina affärsbehov och hjälpa dig att slutföra konfigurationen.
 
 **Behöver du något annat?** Du kan:
 - [Uppgradera ditt Office 365-abonnemang till Microsoft 365 Business Premium](migrate-to-microsoft-365-business.md).
@@ -54,20 +54,20 @@ Titta på det här videoklippet om du vill ha en snabb överblick över registre
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Så här registrerar du och köper Microsoft 365 för ditt företag:
+Så här registrerar du dig och köper Microsoft 365 för ditt företag:
 
-1. På [sidan Microsoft 365 för företag](https://go.microsoft.com/fwlink/?linkid=2109654)väljer du **Se planer & prissättning**. 
+1. På [sidan Microsoft 365 för företag](https://go.microsoft.com/fwlink/?linkid=2109654)väljer du **Se planer & priser**. 
 2. På nästa sida tar du reda på månadskostnaden och bläddrar sedan nedåt på sidan för att ta reda på mer om vad som ingår i Microsoft 365. Under Microsoft 365 Business Premium väljer du **Köp nu**.
 3. På sidan **Tack för att du väljer Microsoft 365 Business Premium** anger du din information för att komma igång.
-4. I **steg 1**anger du en e-postadress som du redan använder. Detta kan vara din nuvarande e-postadress för arbete eller vilken adress som helst som du vill att Microsoft ska använda för att kommunicera med dig under installationen. Det är också adressen dit vi skickar information om din faktura och förnyelser. Välj **sedan, Konfigurera konto**.
+4. I **steg 1**anger du en e-postadress som du redan använder. Detta kan vara din nuvarande e-postadress för arbete eller någon adress som du vill att Microsoft ska använda för att kommunicera med dig under installationen. Det är också adressen där vi skickar information om din faktura och förnyelser. Välj **sedan, Konfigurera konto**.
 5. I **steg 2**anger du namn, företagstelefonnummer, företagsnamn och plats. Ditt land eller din region avgör exakt vilka tjänster du får från Microsoft och kan inte ändras när du har slutfört det här steget. Välj **Nästa**.
     > [!NOTE]
     > Vi visar ditt företagsnamn i administrationscentret. Det är här du hanterar Microsoft 365-användare, licenser och så vidare. Vi inkluderar det också i alla interna (SharePoint) webbplats webbadresser.
 6. I **steg 3:**
 
-    1. Bevisa att du inte är en robot! Välj antingen **Sms eller** **Ring mig**och ange ett nummer där vi kan nå dig. Välj **Skicka verifieringskod** så får du ett sms eller samtal direkt. Ange koden och välj **Verifiera**.
+    1. Bevisa att du inte är en robot! Välj antingen **Sms:a mig** eller **Ring mig**och ange ett nummer där vi kan nå dig. Välj **Skicka verifieringskod** så får du ett sms eller samtal direkt. Ange koden och välj **Verifiera**.
     2. Därefter bestämmer du om du vill köpa ett nytt domännamn eller få ett tillfälligt namn:
 
         - **Jag äger inget domännamn** 
@@ -91,10 +91,10 @@ Så här registrerar du och köper Microsoft 365 för ditt företag:
 
 ## <a name="whats-next"></a>Hur går jag vidare?
 
-Välj **Gå till installation för att** utföra andra steg, till exempel lägga till mer säkerhet för att skydda ditt företag och ladda ned Office-appar som Word och Excel.
+Välj **Gå till installationsprogrammet** för att utföra andra steg, till exempel lägga till mer säkerhet för att skydda ditt företag och hämta Office-appar som Word och Excel.
 
 Information om hur du får hjälp med installationen finns [i ställa in](set-up.md).
 
 ## <a name="see-also"></a>Se även
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
