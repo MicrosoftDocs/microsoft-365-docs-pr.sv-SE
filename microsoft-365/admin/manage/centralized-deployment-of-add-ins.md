@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ta reda på om din klient och dina användare uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: db5a9669464a9c4cb150dee119d8c0bcc2dc9833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399818"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717279"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ta reda på om centraliserad distribution av tillägg fungerar för din organisation
 
-Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta kunder att distribuera Office-tillägg till användare och grupper inom organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din klient och dina användare uppfyller kraven så att du kan använda centraliserad distribution.
-Centraliserad distribution stöder Windows-, Mac-, iOS-, Android- och Online Office-appar.
-Det kan ta upp till 12 timmar innan ett tillägg visas för klienten för alla användare.
+Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta kunder att distribuera Office-tillägg till användare och grupper inom organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din klient och användare uppfyller kraven så att du kan använda centraliserad distribution.
+Centraliserad distribution stöder tre skrivbordsplattformar Windows, Mac och Online Office-appar. Centraliserad distribution stöder även iOS och Android (endast Outlook Mobile-tillägg).
+Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla användare.
   
 ## <a name="requirements"></a>Krav
 
-Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365 Apps for Enterprise (och är inloggade på Office med sitt organisations-ID) och har Exchange Online- och aktiva Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federeras med Azure Active Directory.
+Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365 Apps for Enterprise (och är inloggade på Office med sitt organisations-ID) och har Exchange Online- och active Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federeras med Azure Active Directory.
 Du kan visa specifika krav för Office och Exchange nedan eller använda den [centraliserade kompatibilitetskontrollen för distribution](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
 
 Centraliserad distribution stöder inte följande:
@@ -74,7 +74,7 @@ Centraliserad distribution stöder inte följande:
 
 Om du vill använda Microsoft 365 Apps för företag måste en användare ha ett Microsoft 365-konto och ha tilldelats en licens. Mer information finns i [Översikt över Microsoft 365 Apps för företag](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-Det enklaste sättet att identifiera om en användare har Microsoft 365 Apps för företag installerat och har använt det nyligen är att använda Microsoft Office Aktiveringsrapporten, som finns i Microsoft 365 admin center. Rapporten innehåller en lista över alla användare som har aktiverat Microsoft 365 Apps för företag under de senaste 7 dagarna, 30 dagarna, 90 dagarna eller 180 dagarna. De kolumner i rapporten som är viktiga för centraliserad distribution är de för datoraktiveringar för Windows och Mac. Du kan exportera rapporten till Excel. Mer information om rapporten finns [i Microsoft 365 Reports i Administrationscenter – Microsoft Office-aktiveringar](../activity-reports/microsoft-office-activations.md).
+Det enklaste sättet att identifiera om en användare har Microsoft 365 Apps för företag installerat och har använt det nyligen är att använda Microsoft Office Aktiveringsrapporten, som är tillgänglig i Microsoft 365 admin center. Rapporten innehåller en lista över alla användare som har aktiverat Microsoft 365 Apps för företag under de senaste 7 dagarna, 30 dagarna, 90 dagarna eller 180 dagarna. De kolumner i rapporten som är viktiga för centraliserad distribution är de för datoraktiveringar för Windows och Mac. Du kan exportera rapporten till Excel. Mer information om rapporten finns [i Microsoft 365 Reports i Administrationscenter – Microsoft Office-aktiveringar](../activity-reports/microsoft-office-activations.md).
   
 Om du inte vill använda rapporten Aktiveringar kan du be en användare att öppna ett Office-program som Word på datorn och sedan välja **File** \> **Arkivkonto**. Under **Produktinformation**bör du se **Prenumerationsprodukt** och **Microsoft 365 för företag**, vilket visas i följande bild.
 
@@ -87,7 +87,7 @@ Mer information om Microsoft 365 Apps for enterprise finns i [Felsökningstips f
 
 Microsoft Exchange lagrar tilläggsmanifesten i organisationens klientorganisation. Administratören som distribuerar tillägg och de användare som tar emot dessa tillägg måste finnas på en version av Exchange Online som stöder OAuth-autentisering.
   
-Fråga organisationens Exchange-administratör om vilken konfiguration som används. OAuth-anslutning per användare kan verifieras med hjälp av PowerShell-cmdleten [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet. 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Centraliserad kompatibilitetskontroll för distribution
@@ -104,7 +104,7 @@ Med hjälp av den centraliserade kompatibilitetskontrollen för distribution kan
 Import-Module O365CompatibilityChecker
 ```
     
-3. Kör kommandot **Anropa-CompatabilityCheck:**
+3. Kör kommandot **Invoke-CompatabilityCheck:**
 
 ```powershell
 Invoke-CompatibilityCheck
@@ -139,7 +139,7 @@ Funktionen Centraliserad distribution stöder för närvarande de flesta grupper
   
 Centraliserad distribution stöder tilldelningar till enskilda användare, grupper och alla i klienten. Centraliserad distribution har stöd för användare i grupper på översta nivå och grupper utan överordnade grupper, men inte för användare i kapslade grupper och grupper som har överordnade grupper.
    
-Ta en titt på följande exempel där Sandra, Sheila och gruppen Sales Department har tilldelats till ett tillägg. Eftersom West Coast Sales Department är en kapslad grupp, tilldelas Jens och Erik inte till ett tillägg.
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
   
 ![Diagram över försäljningsavdelningen](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -150,11 +150,11 @@ Det enklaste sättet att upptäcka om en grupp innehåller kapslade grupper är 
   
 ![Fliken Medlemmar på Kontaktkortet i Outlook](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
-Du kan göra motsatt fråga genom att matcha gruppen och ta reda på om den är medlem i en grupp. I exemplet nedan kan du se att Sub Group 1 är medlem i Test Group under fliken **medlemskap** för Outlook-kontaktkortet. 
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
   
-![Fliken Medlemskap i Outlook-kontaktkortet](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Fliken Medlemskap i Kontaktkortet i Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-Du kan också använda Azure Active Directory Graph API till att köra frågor för att hitta listan med grupper inom en grupp. Mer information finns i [Åtgärder för grupper | Referens för Graph API](https://go.microsoft.com/fwlink/p/?linkid=846342).
+Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342).
   
 ### <a name="contacting-microsoft-for-support"></a>Kontakta Microsoft om du behöver support
 
@@ -162,7 +162,7 @@ Om du eller dina användare stöter på problem med att läsa in tillägget när
   
 |**Plattform**|**Felsökningsinformation**|
 |:-----|:-----|
-|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visa källan till en av kontorssidorna och leta efter värdet för korrelations-ID och skicka det till stöd:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|RTF-klienter (Windows, Mac)  <br/> | Charles-/Fiddler-loggar  <br/>  Bygg nummer på klientappen (helst som en skärmdump från **Arkiv/Konto)**  <br/> |
+|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visa källan till en av kontorets sidor och leta efter värdet för korrelations-ID och skicka det till stöd:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|RTF-klienter (Windows, Mac)  <br/> | Charles-/Fiddler-loggar  <br/>  Bygg nummer på klientappen (helst som en skärmdump från **Fil/konto)**  <br/> |
    
 

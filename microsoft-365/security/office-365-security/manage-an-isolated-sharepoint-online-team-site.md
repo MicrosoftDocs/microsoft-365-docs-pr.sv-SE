@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Hantera en isolerad SharePoint Online-gruppwebbplats, lägga till nya användare och grupper, ta bort användare och grupper och skapa en undermapp för dokument med anpassade behörigheter.
-ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036638"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755384"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Hantera en isolerad SharePoint Online-gruppwebbplats
 
@@ -31,11 +31,11 @@ I den här artikeln beskrivs vanliga hanteringsåtgärder för en isolerad Share
   
 ## <a name="add-a-new-user"></a>Lägga till en ny användare
 
-När någon ny ansluter till webbplatsen måste du bestämma deras deltagande i webbplatsen:
+När någon ny ansluter till webbplatsen måste du bestämma deras deltagande på webbplatsen:
   
 - Administration: Lägga till det nya användarkontot i åtkomstgruppen för webbplatsadministratörer
     
-- Aktivt samarbete: Lägg till användarkontot i åtkomstgruppen för webbplatsmedlemmar
+- Aktivt samarbete: Lägga till användarkontot i åtkomstgruppen för webbplatsmedlemmar
     
 - Visa: Lägga till användarkontot i åtkomstgruppen för webbplatsvisningsprogram
     
@@ -100,7 +100,7 @@ Om du hanterar användarkonton och grupper via AD DS tar du bort lämpliga anvä
   
 Om du hanterar användarkonton och grupper via Office 365 kan du använda Microsoft 365-administrationscentret eller PowerShell:
   
-- För administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Användarkontoadministratör eller Företagsadministratör och använder grupper för att ta bort lämpliga användare från lämpliga åtkomstgrupper.
+- För administrationscentret för Microsoft 365 loggar du in med ett användarkonto som har tilldelats rollen Användarkontoadministratör eller Företagsadministratör och använder Grupper för att ta bort lämpliga användare från lämpliga åtkomstgrupper.
     
 - För PowerShell, anslut först [med Azure Active Directory PowerShell för Graph-modulen](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 Om du vill ta bort ett användarkonto från en åtkomstgrupp med upn-programmet använder du följande PowerShell-kommandoblock:
@@ -150,7 +150,7 @@ I vissa fall behöver en delmängd av de personer som arbetar inom den isolerade
   
 Så här skapar du en undermapp för dokument med anpassade behörigheter:
   
-1. Logga in på ett konto som är medlem i åtkomstgruppen för administratörer för webbplatsen. Mer information finns i [Så här loggar du in i Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Logga in på ett konto som är medlem i åtkomstgruppen för administratörer för webbplatsen. Mer information finns i [Så här loggar du in i Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Gå till den isolerade gruppwebbplatsen och klicka på **Dokument**.
     
@@ -168,9 +168,9 @@ Så här skapar du en undermapp för dokument med anpassade behörigheter:
     
 9. Klicka på **Bevilja behörigheter > delas med > Avancerat**.
     
-10. Klicka på ** \<webbplatsnamn> medlemmar i listan**på behörighetssidan .
+10. Klicka på ** \<site name> Medlemmar i listan**på behörighetssidan .
     
-11. På ** \<sidan webbplatsnamn> medlemmar** markerar du bocken bredvid åtkomstgruppen för webbplatsmedlemmar, klickar på **Åtgärder,** klickar på **Ta bort användare från gruppen**och klickar sedan på **OK**.
+11. På sidan ** \<site name> Medlemmar** markerar du bocken bredvid åtkomstgruppen för webbplatsmedlemmar, klickar på **Åtgärder,** klickar på **Ta bort användare från gruppen**och klickar sedan på **OK**.
     
 12. Om du vill lägga till specifika medlemmar i den här undermappen klickar du på **Ny > Lägg till användare**.
     
@@ -178,9 +178,9 @@ Så här skapar du en undermapp för dokument med anpassade behörigheter:
     
 14. Uppdatera webbsidan för att se de nya resultaten.
     
-15. Under **Grupper** i den vänstra navigeringen klickar du på ** \<webbplatsnamnet>** gruppen Besökare och använder steg 11–14 för att ange den uppsättning användarkonton som kan visa filerna i undermappen (efter behov).
+15. Under **Grupper** i den vänstra navigeringen klickar du på gruppen ** \<site name> Besökare** och använder steg 11–14 för att ange den uppsättning användarkonton som kan visa filerna i undermappen (efter behov).
     
-16. Under **Grupper** i den vänstra navigeringen klickar du på ** \<webbplatsnamnet> ägargruppen** och använder steg 11–14 för att ange den uppsättning användarkonton som kan administrera behörigheterna i undermappen (efter behov).
+16. Under **Grupper** i den vänstra navigeringen klickar du på gruppen ** \<site name> Ägare** och använder steg 11-14 för att ange den uppsättning användarkonton som kan administrera behörigheterna i undermappen (efter behov).
     
 17. Stäng fliken **Personer och grupper** i webbläsaren.
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678642"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780127"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Hantera distribution av tillägg i Administrationscenter för Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678642"
 
 ::: moniker-end
 
-Office-tillägg hjälper dig att anpassa dina dokument och effektivisera ditt sätt att komma åt information på webben (se [Börja använda Office-tillägget](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Som administratör kan du distribuera Office-tillägg för användarna i organisationen. Du kan göra detta med hjälp av funktionen Centraliserad distribution i Microsoft 365 administrationscenter.
+Office-tillägg hjälper dig att anpassa dina dokument och effektivisera ditt sätt att komma åt information på webben (se [Börja använda office-tillägget](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Som administratör kan du distribuera Office-tillägg för användarna i organisationen. Du kan göra detta med hjälp av funktionen Centraliserad distribution i Administrationscentret för Microsoft 365.
   
 Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta administratörer att distribuera tillägg till användare och grupper inom en organisation. Mer information om hur du tar reda på om din organisation kan stödja centraliserad distribution finns [i Avgöra om centraliserad distribution av tillägg fungerar för din organisation](centralized-deployment-of-add-ins.md).
   
@@ -46,7 +46,7 @@ Centraliserad distribution ger följande fördelar:
     
 - När det aktuella Office-programmet startar hämtas tillägget automatiskt för användaren. Om tillägget stöder tilläggskommandon visas tillägget automatiskt i menyfliksområdet i Office-programmet.
     
-- Tillägg visas inte längre för användare om administratören inaktiverar eller tar bort tillägget, eller om användaren tas bort från Azure Active Directory eller från en grupp som tillägget har tilldelats.
+- Tillägg visas inte längre för användare om administratören stänger av eller tar bort tillägget, eller om användaren tas bort från Azure Active Directory eller från en grupp som tillägget har tilldelats.
     
 > [!NOTE]
 >  För Word, Excel och PowerPoint används en [SharePoint-appkatalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Microsoft 365 och/eller stöd för SharePoint-tillägg som krävs. > För Outlook använder Exchange-kontrollpanelen för att distribuera i en lokal miljö utan anslutning till Microsoft 365. > 
@@ -83,7 +83,7 @@ Innan du börjar läser du [Ta reda på om centraliserad distribution av tilläg
 7. En grön bock visas när tillägget har distribuerats. Du kan följa instruktionerna på sidan för att testa att tillägget har distribuerats.
 
 > [!NOTE]
-> Användare kan behöva starta om Office för att se att tilläggsikonen visas i menyfliksområdet i appen. Det kan ta upp till 12 timmar innan Outlook-tillägg visas i användarnas menyfliksområdet.
+> Användare kan behöva starta om Office för att se att tilläggsikonen visas i menyfliksområdet i appen. Det kan ta upp till 24 timmar innan Outlook-tillägg visas i användarnas menyfliksområdet.
     
 8. När du är klar väljer du **Nästa**. Om du har distribuerat till bara dig själv kan du välja **Ändra vem som har åtkomst till tillägget** för att distribuera till fler användare.
 
@@ -91,7 +91,7 @@ Innan du börjar läser du [Ta reda på om centraliserad distribution av tilläg
 
 Om du har distribuerat tillägget till andra medlemmar i organisationen följer du instruktionerna som visas för att effektivt meddela distributionen av tillägget. <br/>Nu visas ditt tillägg tillsammans med andra appar i Microsoft 365.
   
-Det är en bra idé att informera de användare och grupper som du distribuerade tillägget till så att de vet att det är tillgängligt. Överväg att skicka ett e-postmeddelande till dem som beskriver när och hur du använder tillägget och förklarar hur tillägget kan hjälpa dem att göra sitt jobb bättre. Inkludera eller länka till relevant hjälpinnehåll eller vanliga frågor som kan hjälpa till om användarna har problem med tillägget.
+Det är en bra idé att informera de användare och grupper som du distribuerade tillägget till så att de vet att det är tillgängligt. Överväg att skicka ett e-postmeddelande till dem som beskriver när och hur du använder tillägget och förklarar hur tillägget kan hjälpa dem att göra sitt jobb bättre. Inkludera eller länka till relevant hjälpinnehåll eller vanliga frågor som kan hjälpa om användarna har problem med tillägget.
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Överväganden när du tilldelar ett tillägg till användare och grupper
 
@@ -99,7 +99,7 @@ Administratörer kan tilldela ett tillägg till alla eller till specifika använ
   
 - **Alla**: Som namnet antyder tilldelar det här alternativet tillägget till varje användare i klienten. Använd det här alternativet sparsamt och endast för tillägg som verkligen är universella för din organisation. 
     
-- **Användare**: Om du tilldelar ett tillägg till en enskild användare och sedan distribuerar tillägget till en ny användare måste du först lägga till den användaren. Detsamma gäller för att ta bort användare. 
+- **Användare**: Om du tilldelar ett tillägg till en enskild användare och sedan distribuerar tillägget till en ny användare måste du först lägga till användaren. Detsamma gäller för att ta bort användare. 
     
 - **Grupper**: Om du tilldelar ett tillägg till en grupp tilldelas användare som läggs till i gruppen automatiskt tillägget. Och när en användare tas bort från en grupp förlorar användaren åtkomst till tillägget. I båda fallen krävs ingen ytterligare åtgärd från dig som administratör. 
 
@@ -129,20 +129,20 @@ Office-tillägg kombinerar en XML-manifestfil som innehåller vissa metadata om 
     
 - Läs och skriv data till och från en användares dokument för att ge användaren värde.
     
-Mer information om vilka typer och funktioner för Office-tillägg finns i [plattformsöversikten för Office-tillägg,](https://go.microsoft.com/fwlink/p/?linkid=846362)särskilt avsnittet "Anatomi för ett Office-tillägg".
+Mer information om typerna och funktionerna i Office-tillägg finns i [plattformsöversikt för Office-tillägg,](https://go.microsoft.com/fwlink/p/?linkid=846362)särskilt avsnittet "Anatomi för ett Office-tillägg".
   
-Om du vill interagera med användarens dokument måste tillägget deklarera vilken behörighet det behöver i manifestet. En javascript-api-åtkomstbehörighetsmodell på fem nivåer utgör grunden för sekretess och säkerhet för användare av tillägg till åtgärdsfönstret. Majoriteten av tilläggen i Office Store är lässkrivdokument på nivå med nästan alla tillägg som stöder åtminstone ReadDocument-nivån. Mer information om [behörighetsnivåerna finns i Begära behörigheter för API-användning i innehåll och tillägg i åtgärdsfönstret](https://go.microsoft.com/fwlink/p/?linkid=848863).
+Om du vill interagera med användarens dokument måste tillägget deklarera vilken behörighet det behöver i manifestet. En javascript-api-åtkomstbehörighetsmodell på fem nivåer utgör grunden för sekretess och säkerhet för användare av tillägg i åtgärdsfönstret. Majoriteten av tilläggen i Office Store är lässkrivdokument på nivå med nästan alla tillägg som stöder åtminstone ReadDocument-nivån. Mer information om [behörighetsnivåerna finns i Begära behörigheter för API-användning i innehåll och tillägg till åtgärdsfönstret](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-När du uppdaterar ett manifest är de typiska ändringarna i ett tilläggs ikon och text. Ibland ändras tilläggskommandon. Men behörigheterna för tillägget ändras inte. Webbprogrammet där all kod och logik för tilläggskörningarna kan ändras när som helst, vilket är webbprogrammens natur.
+När du uppdaterar ett manifest är de typiska ändringarna i ett tilläggs ikon och text. Ibland ändras tilläggskommandon. Men behörigheterna för tillägget ändras inte. Webbprogrammet där all kod och logik för tilläggskörningar kan ändras när som helst, vilket är webbprogrammens natur.
   
 Uppdateringar för tillägg sker på följande sätt:
   
-- **Tillägg för företagsrader:** I det här fallet, där en administratör uttryckligen laddade upp ett manifest, kräver tillägget att administratören överför en ny manifestfil för att stödja metadataändringar. Nästa gång de relevanta Office-programmen startas uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
+- **Tillägg för företagsrader:** I det här fallet, när en administratör uttryckligen laddade upp ett manifest, kräver tillägget att administratören överför en ny manifestfil för att stödja metadataändringar. Nästa gång de relevanta Office-programmen startar uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
 
     > [!NOTE]
-    > Admin behöver inte ta bort ett LOB-tillägg för att göra en uppdatering.   I avsnittet Tillägg kan admin helt enkelt klicka på LOB-tillägget och välja **uppdateringsknappen** i det nedre högra hörnet. Uppdateringen fungerar bara om versionen av det nya tillägget är större än det befintliga tillägget.   
+    > Administratören behöver inte ta bort ett LOB-tillägg för att göra en uppdatering.   I avsnittet Tillägg kan admin helt enkelt klicka på LOB-tillägget och välja **uppdateringsknappen** i det nedre högra hörnet. Uppdateringen fungerar bara om versionen av det nya tillägget är större än det befintliga tillägget.   
     
-- **Office Store-tillägg:** När en administratör valde ett tillägg från Office Store, om ett tillägg uppdateras i Office Store, uppdateras tillägget senare i Centraliserad distribution. Nästa gång de relevanta Office-programmen startas uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
+- **Office Store-tillägg:** När en administratör valde ett tillägg från Office Store, om ett tillägg uppdateras i Office Store, uppdateras tillägget senare i Centraliserad distribution. Nästa gång de relevanta Office-programmen startar uppdateras tillägget. Webbprogrammet kan ändras när som helst. 
 
 ### <a name="edit-add-in-access"></a>Redigera tilläggsåtkomst
 
@@ -155,7 +155,7 @@ Efter distributionen kan administratörer också ändra användaråtkomsten till
 3. Klicka på **Redigera** under **Vem har Access**.
 4. Spara ändringarna.
     
-### <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Förhindra hämtning av tillägg genom att stänga av Office Store för alla klienter (utom Outlook)
+### <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Förhindra hämtningar av tillägg genom att stänga av Office Store för alla klienter (utom Outlook)
 
 > [!NOTE]
 > Outlook-tilläggsinstallation hanteras av en [annan process](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx).
@@ -166,9 +166,9 @@ Så här inaktiverar du tilläggsförvärv:
   
 1. I administrationscentret går du till sidan **Inställningar** \> [Tjänster och tillägg](https://go.microsoft.com/fwlink/p/?linkid=2053743).
     
-3. Välj **Användarinlägda appar och tjänster**.
+3. Välj **Användarindagna appar och tjänster**.
     
-4. Avmarkera alternativet att låta användare komma åt Office-arkivet.
+4. Avmarkera alternativet om du vill att användarna ska kunna komma åt Office-arkivet.
 
 Detta förhindrar att alla användare hämtar följande tillägg från butiken.
   
@@ -206,7 +206,7 @@ Om du vill förhindra att en användare loggar in med ett Microsoft-konto kan du
 
 Den allmänna dataskyddsförordningen (GDPR) är en EU-förordning som träder i kraft den 25 maj 2018. Det ger användarna rätt till och skydd av sina uppgifter. En av aspekterna av GDPR är att minderåriga inte kan få sina personuppgifter skickade till parter som deras förälder eller vårdnadshavare inte har godkänt. Den specifika ålder som definieras som minderårig beror på den region där personen är belägen.
   
-Regioner som har lagstadgade bestämmelser om föräldrarnas samtycke inkluderar USA, Sydkorea, Storbritannien och Eu ropeiska unionen. För dessa regioner blockeras en minderårig (via Azure Active Directory) från att få nya Office-tillägg från Store och köra tillägg som tidigare har förvärvats. För länder utan lagstadgade bestämmelser kommer det inte att finnas några nedladdningsrestriktioner.
+Regioner som har lagstadgade bestämmelser om föräldrarnas samtycke inkluderar USA, Sydkorea, Storbritannien och Eu ropeiska unionen. För dessa regioner blockeras en minderårig (via Azure Active Directory) från att hämta nya Office-tillägg från Store och köra tillägg som tidigare har förvärvats. För länder utan lagstadgade bestämmelser kommer det inte att finnas några nedladdningsrestriktioner.
   
 En användare bedöms vara en minderårig baserat på data som anges i Azure Active Directory. Klientadministratören ansvarar för att deklarera den lagliga åldersgruppen och föräldrarnas samtycke för den användaren.
   
@@ -218,7 +218,7 @@ För att vara GDPR-kompatibel för minderåriga måste du se till att en av föl
   
 |||
 |:-----|:-----|
-|**Plattform** <br/> |**Byggnummer** <br/> |
+|**Plattform** <br/> |**Bygg nummer** <br/> |
 |Microsoft 365-appar för företag (aktuell kanal)  <br/> |9001.2138   <br/> |
 |Microsoft 365 Apps for enterprise (Halvårsvis Företagskanal)  <br/> |8431.2159  <br/> |
 |Office 2016 för Windows  <br/> |16.0.4672.1000  <br/> |
@@ -230,7 +230,7 @@ För att vara GDPR-kompatibel för minderåriga måste du se till att en av föl
   
 |||
 |:-----|:-----|
-|**Plattform** <br/> |**Byggnummer** <br/> |
+|**Plattform** <br/> |**Bygg nummer** <br/> |
 |Outlook 2016 för Windows (MSI)  <br/> |Skapa ingen TBD  <br/> |
 |Outlook 2016 för Windows (C2R)  <br/> |16.0.9323.1000  <br/> |
 |Office 2016 för Mac  <br/> |16.0.9318.1000  <br/> |
@@ -248,11 +248,11 @@ Word, Excel och PowerPoint 2013 för Windows stöder samma mindre kontroller om 
     
   - [3 april 2018, uppdatering för Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **Aktivera inte ADAL**. Om du inte kan aktivera ADAL i Office 2013 är vår rekommendation att använda Grupprincip för att stänga av Store för kontorskunderna. Information om hur du inaktiverar appen för Office-inställningarna finns [här](https://technet.microsoft.com/library/cc178992.aspx).
+- **Aktivera inte ADAL**. Om du inte kan aktivera ADAL i Office 2013 är vår rekommendation att använda Grupprincip för att stänga av Store för kontorskunderna. Information om hur du inaktiverar appen för Office-inställningar finns [här](https://technet.microsoft.com/library/cc178992.aspx).
     
 ## <a name="end-user-experience-with-add-ins"></a>Slutanvändarens upplevelse med tillägg
 
-Nu när du har distribuerat tillägget kan dina slutanvändare börja använda det i sina Office-program (se [Börja använda Office-tillägget](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Tillägget visas på alla plattformar som tillägget stöder.
+Nu när du har distribuerat tillägget kan dina slutanvändare börja använda det i sina Office-program (se [Börja använda Office-tillägget](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Tillägget visas på alla plattformar som tillägget stöder.
   
 Om tillägget stöder tilläggskommandon visas kommandona i menyfliksområdet i Office. I följande exempel visas kommandot **Sökcitning** för tillägget **Källhänvisning.** 
 
@@ -264,7 +264,7 @@ Om det distribuerade tillägget inte stöder tilläggskommandon eller om du vill
 
 1. Välj **Infoga \> mina tillägg**. 
     
-2. Välj fliken **Hanterad administratör** i fönstret Office-tillägg. 
+2. Välj fliken **Administratörshanterad** i fönstret Office-tillägg. 
     
 3. Dubbelklicka på det tillägg som du distribuerade tidigare (i det här exemplet **Citat** ). <br/>![Fliken Hanterad administratör på sidan Office-tillägg](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
@@ -287,8 +287,8 @@ Du kan också ta bort ett tillägg som har distribuerats.
   
 ## <a name="learn-more"></a>Mer information
 
-Läs mer om hur du skapar och bygger [Office-tillägg](https://go.microsoft.com/fwlink/p/?linkid=846362).
+Läs mer om hur du skapar och skapar [Office-tillägg](https://go.microsoft.com/fwlink/p/?linkid=846362).
   
-[Använd Centraliserade PowerShell-cmdlets för att hantera tillägg](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
+[Använd centraliserade PowerShell-cmdlets för att hantera tillägg](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
 [Felsöka: Användaren ser inte tillägg](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

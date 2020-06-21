@@ -1,7 +1,7 @@
 ---
 title: Nätverkskonfiguration för Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632845"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735520"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Nätverkskonfiguration för Microsoft Managed Desktop
 
@@ -29,7 +29,7 @@ Kunder kan optimera sitt nätverk genom att skicka alla betrodda Microsoft 365-n
 
 För att optimera prestanda för Microsoft Managed Desktop molnbaserade tjänster behöver dessa slutpunkter också hantering av kundklientwebbläsare och enheterna i deras edge-nätverk. Dessa enheter omfattar brandväggar, SSL Break and Inspect, paketinspektionsenheter och dataförlustskyddssystem.
 
-### <a name="proxy-requirement"></a>Proxykrav
+### <a name="proxy-requirement"></a>Proxy krav
 
 Proxyn eller brandväggen måste ha stöd för TLS 1.2. Annars kanske du måste inaktivera protokollidentifiering.
 
@@ -51,13 +51,13 @@ Microsofts support- och återställningsassistent | \*.apibasic.diagnostics.offi
 
 Det finns webbadresser från flera Microsoft-produkter som måste finnas i listan över tillåtna enheter så att Microsoft Hanterade stationära enheter kan kommunicera med dessa Microsoft-tjänster. Använd länkarna för att se hela listan för varje produkt. 
 
-Microsoft-tjänst | Dokumentationskälla - webbadresser som krävs i listan över tillåt
+Microsoft-tjänst | Dokumentationskälla - WEBBADRESSER som krävs i listan över tillåt
 --- | ---
-Windows 10 Enterprise inklusive Windows Update för företag | [Hantera anslutningsslutpunkter för Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+Windows 10 Enterprise inklusive Windows Update för företag | [Hantera anslutningsslutpunkter för Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Hantera anslutningsslutpunkter för Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
 Optimering av leverans | [Konfigurera leveransoptimering för Windows 10-uppdateringar](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Url- och IP-adressintervall för Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybrididentitet krävs portar och protokoll](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) samt [Portkrav för Active Directory och Active Directory Domain Services](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune-krav för nätverkskonfiguration](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Nätverksslutpunkter för Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
+Microsoft Intune | [Intune-krav på nätverkskonfiguration](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Nätverksslutpunkter för Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender avancerat skydd mot hot (ATP) | [Microsoft Defender ATP-slutpunkter](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---

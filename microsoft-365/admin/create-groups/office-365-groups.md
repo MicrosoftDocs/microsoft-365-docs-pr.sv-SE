@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om Microsoft 365-grupper.
-ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 14bc1211aaa65fb2daeebdb22729fce10154f204
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419142"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780415"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365-grupper för administratörer
 
@@ -40,7 +40,7 @@ Microsoft 365 Groups är den grundläggande medlemskapstjänsten som driver allt
 - Ett team (om gruppen skapades från Teams)
 - Översikt (om du har Project for the web)
 
-Med en Microsoft 365-grupp behöver du inte manuellt tilldela behörigheter till var och en av dessa resurser, eftersom om du lägger till personer i gruppen automatiskt får de behörigheter de behöver i de verktyg som gruppen tillhandahåller.
+Med en Microsoft 365-grupp behöver du inte tilldela behörigheter manuellt till var och en av dessa resurser, eftersom om du lägger till personer i gruppen automatiskt får de behörigheter de behöver i de verktyg som gruppen tillhandahåller.
 
 Alla användare kan skapa en grupp om du inte [begränsar gruppskapandet till en viss uppsättning personer](manage-creation-of-groups.md). Observera att om du begränsar gruppskapandet kan användare som inte kan skapa grupper inte skapa SharePoint-webbplatser, planerare eller team. Dessa tjänster kräver att de personer som skapar dem kan skapa en grupp. Användare kan fortfarande delta i gruppaktiviteter, till exempel skapa uppgifter i Planner eller använda Teams-chatt, förutsatt att de är medlemmar i gruppen.
 
@@ -62,7 +62,7 @@ Som administratör kan du:
 
 Om du föredrar ett mer automatiserat sätt att hantera livscykeln för dina Microsoft 365-grupper kan du använda principer för förfallodatum för att förfalla grupper med ett visst tidsintervall. Gruppens ägare kommer att få ett e-postmeddelande 30, 15 och 1 dag före gruppens utgång som gör att de enkelt kan förnya gruppen om det fortfarande behövs. Se: [Policy för förfallodatum för Microsoft 365.](office-365-groups-expiration-policy.md)
 
-Du kan administrera dina grupper från Microsoft 365-administrationscentret eller [med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
+Du kan administrera dina grupper från Administrationscentret för Microsoft 365 eller [med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
 
 Om du har många användare, till exempel i ett stort företag eller företag, kan du ha många användare som skapar grupper för olika ändamål. Vi rekommenderar starkt att du granskar [Planera för styrning i Microsoft 365-grupper](plan-for-groups-governance.md) för bästa praxis.
 
@@ -74,15 +74,15 @@ Följande begränsningar gäller för Microsoft 365-grupper:
 |:---------|:----|
 |Ägare per grupp|100|
 |Grupper som en användare kan skapa|250|
-|Grupper som en administratör kan skapa|Upp till standardklientgränsen på 500 000 000 000 000 000 000|
+|Grupper som en administratör kan skapa|Upp till standardklientgräns på 500 000 000 000 000 000 000|
 |Antal medlemmar|Mer än 1 000, men bara 1 000 kan komma åt gruppkonversationerna samtidigt. <br>Användare kan märka förseningar när de öppnar kalendern och konversationer i mycket stora grupper i Outlook.|
 |Antal grupper som en användare kan vara medlem i|1,000|
-|Fillagring|1 Terabyte + 10 GB per prenumererad användare + eventuellt extra lagringsutrymme som köpts. Du kan köpa ett obegränsat antal ytterligare lagringsutrymme.|
+|Fillagring|1 Terabyte + 10 GB per användare som prenumererar + eventuellt extra lagringsutrymme som köpts. Du kan köpa ett obegränsat antal ytterligare lagringsutrymme.|
 |Storlek på grupppostlåda|50 GB|
 
-Det maximala standardantalet Microsoft 365-grupper som en organisation kan ha är 500 000, men kan ökas med begäran. Mer information om begränsningar för Microsoft 365 Groups finns i [Microsoft 365 Groups - Admin help](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Det maximala standardantalet Microsoft 365-grupper som en organisation kan ha är 500 000, men kan ökas med begäran. Mer information om begränsningar för Microsoft 365 Groups finns i [Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-Det är mer effektivt att hantera dina Microsoft 365-grupper när du har användbar information om gruppanvändning. Microsoft 365-administrationscentret har ett rapporteringsverktyg som kan du se saker som lagringsanvändning, hur många aktiva grupper du har och till och med hur användarna använder grupperna. Mer information finns [i Microsoft 365-rapporter i administrationscentret.](../activity-reports/office-365-groups.md)
+Det är mer effektivt att hantera dina Microsoft 365-grupper när du har användbar information om gruppanvändning. Administrationscentret för Microsoft 365 har ett rapporteringsverktyg som kan se saker som lagringsanvändning, hur många aktiva grupper du har och till och med hur användarna använder grupperna. Se: [Microsoft 365 Rapporter i administrationscentret](../activity-reports/office-365-groups.md) för mer information.
 
 ## <a name="sensitivity-labels"></a>Känslighetsetiketter
 
@@ -101,7 +101,7 @@ Information om hur du skapar, hanterar och använder känslighetsetiketter finns
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Vilka Microsoft 365-abonnemang innehåller grupper?
 
-Alla Microsoft 365-prenumerationer som har Exchange Online och SharePoint Online stöder grupper. Det inkluderar Business Essentials och Business Premium-abonnemangen samt Enterprise E1-, E3- och E5-planerna. Gruppen tar på licensiering av den person som skapar gruppen (även känd som "organisatör" av gruppen). Så länge arrangören har rätt licens för vilka funktioner du vill att gruppen ska ha, kommer den licensen att förmedla till gruppen.
+Alla Microsoft 365-prenumerationer som har Exchange Online och SharePoint Online stöder grupper. Det inkluderar Business Essentials och Business Premium-abonnemangen samt Enterprise E1-, E3- och E5-abonnemangen. Gruppen tar på licensiering av den person som skapar gruppen (även känd som "organisatör" av gruppen). Så länge arrangören har rätt licens för vilka funktioner du vill att gruppen ska ha, kommer den licensen att förmedla till gruppen.
 
 > [!NOTE]
 > Mer information om Microsoft 365-tjänstfamiljer och -abonnemang finns i [Microsoft 365-abonnemangsalternativ](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
@@ -116,7 +116,7 @@ Microsoft 365-grupper fungerar med Azure Active Directory (AAD). Vilka grupper f
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Läs mer om Microsoft 365-grupper](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Läs mer om Microsoft 365-grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Uppgradera distributionslistor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
 

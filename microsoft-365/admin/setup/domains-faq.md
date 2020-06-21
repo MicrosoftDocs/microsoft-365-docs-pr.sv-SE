@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner genom att hitta svar på dina frågor i vanliga frågor.
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398912"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739151"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -102,7 +102,7 @@ Du måste konfigurera DNS-posterna för Office 365-tjänsterna själv (om du int
 ## <a name="what-is-a-domain-name"></a>Vad är ett domännamn?
 
 
-En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel  *företagsnamn.com*  eller  *universitetsnamn.edu*  . 
+A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
   
 Genom att använda en anpassad domän som "**rob \@ contoso.com**" med Office 365 kan du skapa trovärdighet och erkännande för ditt varumärke. 
   
@@ -134,7 +134,7 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
 
 ::: moniker-end
     
-2. På sidan **Domäner** väljer du den Office 365-domän som du vill överföra till en annan domänregistratorer och väljer sedan **Domain Transfer**  >  **Domänöverföring aktivera domänöverföring**.
+2. På sidan **Domäner** väljer du den Office 365-domän som du vill överföra till en annan domänregistrare och väljer sedan **Domain Transfer**  >  **Domänöverföring aktivera domänöverföring**.
        
 4. Följ anvisningarna för att förbereda överföringen av domänen.
     
@@ -144,7 +144,7 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
     
 7. När överföringen är klar förnyar du domänen hos den nya domänregistraren.
     
-8. Slutför processen genom att gå tillbaka till sidan Domäner för **administrationscenter** och välja **Slutför domänöverföring**. 
+8. Avsluta processen genom att gå tillbaka till sidan Domäner för **administrationscenter** och välja **Slutför domänöverföring**. 
 
 *Observera att köpta Office 365-domäner inte är berättigade till namnserverändringar eller överföring av domänen mellan Office 365-klienter.  Om något av dessa krävs måste domänregistreringen överföras till en annan registrator.*
     
@@ -154,7 +154,7 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
    
 1. Logga in på domänregistratorn för din domän.
     
-2. Leta reda på var du uppdaterar namnserverposterna på registratorns webbplats och uppdatera namnservrarna så att de pekar på domänens DNS-värd. (DNS-värden är ofta domänregistratorn.)
+2. Find the area on the registrar's website where you update nameserver records, and update the nameservers to point to your domain's DNS host. (The DNS host is often the domain registrar.)
     
 3. Följ en länk för att gå till installationsguiden för domäner:
 
@@ -207,17 +207,17 @@ Följ anvisningarna nedan för att hämta koden på Office 365, och gå sedan ti
     
 2. På sidan **Domäner** väljer du den domän du byter och väljer **DNS-hantering**.
     
-3. I guiden Konfigurera domäner väljer du Konfigurera mina onlinetjänster åt mig på sidan **Konfigurera onlinetjänster.** ** (Rekommenderas)** och välj sedan **Nästa**.
+3. I guiden Konfigurera **onlinetjänster** i domäninstallationsguiden väljer du Konfigurera mina onlinetjänster åt mig på sidan Konfigurera **onlinetjänster. (Rekommenderas)** och välj sedan **Nästa**.
     
 4. Om du inte har verifierat domänen ännu, följer du stegen nedan för att göra det först.
     
-5. På sidan **Uppdatera DNS-inställningar** visar vi namnservrarna för Office 365. Gå till domänregistratorn för domänen och uppdatera namnservrarna till Office 365-namnservrarna. 
+5. On the **Update DNS settings** page, we list the nameservers for Office 365. Go to the domain registrar for your domain, and update the nameservers to the Office 365 nameservers. 
     
 4. När du har uppdaterat namnservrarna bör du **vänta i minst en timme**. Välj sedan **Verifiera**i guiden i Office 365.
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>Vad händer om min DNS-värd inte har stöd för vissa typer av poster?
 
-Om du hanterar dina egna DNS-poster och din DNS-värd inte har stöd för alla DNS-poster som Office 365 kräver kommer vissa funktioner i Office 365 inte att fungera. Vi rekommenderar att du för över din domän till en registrator som har stöd för alla DNS-poster som krävs.
+If you manage your own DNS records and your DNS host does not support all the DNS records that Office 365 needs, some Office 365 features won't work. We recommend that you transfer your domain to a registrar that supports all required DNS records.
   
 Värdar som har stöd för alla DNS-poster som krävs:
   
@@ -263,9 +263,9 @@ Värdar som har stöd för alla DNS-poster som krävs:
 
 - Microsoft Teams federation med Skype för företag, antingen lokalt eller online. Mer information finns i [Förbereda organisationens nätverk för Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
- **Om det inte finns stöd för SPF/TXT-poster** kan andra använda din domän för att skicka skräppost eller annan skadlig e-post. SPF-poster identifierar servrarna som är godkända för att skicka e-post från din domän. 
+ **If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email. SPF records work by identifying the servers that are authorized to send email from your domain. 
   
-## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Hur anger eller ändrar jag standarddomänen i Office 365?
+## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Hur ställer jag in eller ändrar standarddomänen i Office 365?
 
 Du måste ha minst en egen domän som du har lagt till i Office 365 innan du kan välja en standarddomän.
 
@@ -335,33 +335,33 @@ Du kan till exempel lägga till domänerna contoso.com och contosomarketing.com,
   
 När du lägger till en underdomän verifieras den automatiskt baserat på den överordnade domänen som verifieras.
   
-När du lägger till flera domäner i Office 365 kan du välja att ha valfri tjänst (t.ex. e-post) på valfri domän du har lagt till.  *När du ändrar din e-post till Office 365 genom att uppdatera en domäns MX-post levereras ALL e-post som skickas till den domänen till Office 365.* 
+When you add multiple domains to Office 365, you can host any of the services (like email) on any of the domains you've added.  *When you change your email to Office 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Office 365.* 
  
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Om du redan har lagt till en contoso.com domän i en Office 365-klientorganisation kan du också lägga till underdomänen xyz.contoso.com till en annan Office 365-klientorganisation. När du lägger till underdomänen uppmanas du att lägga till en TXT-post i DNS-värdleverantören.
+> Om du redan har lagt till en contoso.com domän i en Office 365-klientorganisation kan du även lägga till underdomänen xyz.contoso.com till en annan Office 365-klientorganisation. När du lägger till underdomänen uppmanas du att lägga till en TXT-post i DNS-värdleverantören.
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Varför har jag en onmicrosoft.com-domän?
 
-Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.com*. 
+Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*, när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.com*. 
   
  **Om du vill att din e-post ska se ut som *alan \@ contoso.com:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till dina användare och domäner i Office 365](add-domain.md) om du äger den redan. 
   
-- **Du kan inte byta namn på onmicrosoft-domänen efter registreringen.** Om den initiala domänen du valde till exempel var fourthcoffee.onmicrosoft.com, kan du inte ändra den till fabrikam.onmicrosoft.com. Om du vill använda en annan onmicrosoft.com-domän måste du påbörja en ny prenumeration med Office 365. 
+- **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Office 365. 
     
 - **Du kan inte byta namn på din gruppwebbplats-URL.** Webbadressen till gruppwebbplatsen baseras på ditt onmicrosoft.com domännamn. På grund av hur SharePoint Online-arkitekturen fungerar kan du tyvärr inte byta namn på gruppwebbplatsen. 
     
-- **Du kan inte ta bort domänen onmicrosoft.** Office 365 måste behålla den eftersom den används i bakgrunden för din prenumeration. Men du behöver inte använda domänen när du har lagt till en egen domän. 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
-Du kan emellertid fortsätta använda den första onmicrosoft.com-domänen, även efter att du har lagt till din domän. Den fungerar fortfarande för e-post och andra tjänster, så det är upp till dig.
+You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Varför har jag en "onmicrosoft.de"-domän?
 
-Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.de*. 
+Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de,* när du registrerar dig med tjänsten. Användar-ID som du skapar när du registrerar dig innehåller domänen, till exempel *alan@contoso.onmicrosoft.de*. 
   
  **Om du vill att din e-post ska se ut *alan@contoso.de:*** [köp domänen](../get-help-with-domains/buy-a-domain-name.md) eller följ bara stegen i [Lägg till användare och domän i Office 365](add-domain.md) om du redan äger den. 
   
@@ -369,7 +369,7 @@ Office 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.de*, när
     
 - **Du kan inte byta namn på din gruppwebbplats-URL.** Webbadressen till gruppwebbplatsen baseras på ditt onmicrosoft.de domännamn. På grund av hur SharePoint Online-arkitekturen fungerar kan du tyvärr inte byta namn på gruppwebbplatsen. 
     
-- **Du kan inte ta bort domänen onmicrosoft.** Office 365 måste behålla den eftersom den används i bakgrunden för din prenumeration. Men du behöver inte använda domänen när du har lagt till en egen domän. 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
 Du kan fortsätta använda den ursprungliga onmicrosoft.de domänen även efter att du har lagt till domänen. Den fungerar fortfarande för e-post och andra tjänster, så det är upp till dig.
   
@@ -399,7 +399,7 @@ Du kan, men det finns begränsningar:
 - Du måste hantera dina Office 365-relaterade DNS-poster hos din DNS-värd i stället för att office 365 ska hantera dessa poster åt dig. Mer information om vad det innebär finns i Lägga till din domän i Office 365 när du vill hantera dina egna DNS-poster.
     
 - Vissa Office 365-funktioner är inte tillgängliga:
-- Användare kan inte se ledig/upptagen-information för de användare som finns på den andra e-postleverantören.
+- Användarna kan inte se ledig/upptagen-information för de användare som finns på den andra e-postleverantören.
 - Administratörer kan inte administrera allas konton från ett ställe.
 - Användare kanske inte kan använda skräppostfiltrering i Office 365
 
@@ -433,13 +433,13 @@ Du kan, men det finns begränsningar:
         
     3. Dubbelklicka på den domän som du vill ändra.
         
-    4. Välj **Internt relä**i fönstret som öppnas . 
+    4. I fönstret som öppnas väljer du **Internt relä**. 
         
-    5. Välj **Spara**. Den här inställningen kan kräva några minuter för att börja gälla. 
+    5. Välj **Spara**. Den här inställningen kan kräva att några minuter börjar gälla. 
     
 4. Du kan också häva blockeringen av den befintliga e-postservern
     
-    1. Office 365 använder Exchange Online Protection (EOP) för skräppostskydd. Om EOP upptäcker en stor mängd skräppost som vidarebefordras av din nuvarande e-postserver kan det blockera den, vilket skulle förhindra att vidarebefordran fungerar. Om du är säker på det skräppostskydd som din andra e-postleverantör använder kan du vitlista deras server i Office 365. Detta gör det dock också möjligt för skräppost som kommer via den ursprungliga servern att komma fram till Office 365-postlådorna, och du kan inte utvärdera hur väl Office 365 förhindrar skräppost.
+    1. Office 365 använder Exchange Online Protection (EOP) för skräppostskydd. Om EOP upptäcker en stor mängd skräppost som vidarebefordras av din nuvarande e-postserver kan det blockera den, vilket skulle förhindra att vidarebefordran fungerar. Om du är säker på det skräppostskydd som din andra e-postleverantör använder kan du lägga till deras server i en tillåtslista i Office 365. Detta gör det dock också möjligt för skräppost som kommer via den ursprungliga servern att komma fram till Office 365-postlådorna, och du kan inte utvärdera hur väl Office 365 förhindrar skräppost.
     
     2. Gå till Administrationscenter för Exchange (EAC).
         
@@ -451,13 +451,13 @@ Du kan, men det finns begränsningar:
     
     1. Gå till administrationscentret för Microsoft 365.
         
-    2. I det vänstra **navigeringsfältet** väljer du Aktiva \> **användare .** 
+    2. I det vänstra navigeringsfältet väljer du **Aktiva** \> **användare**. 
         
     3. Skapa användarkontona.
         
     4. För varje konto väljer du **+ (Ny)** och fyller i den information som krävs. 
         
-    5. Om du vill att användarens e-post ska vara på samma sätt som för närvarande bör fältet **Användarnamn** vara exakt samma som användarens befintliga e-postadress. 
+    5. Om du vill att användarens e-post ska vara densamma som den är för tillfället bör fältet **Användarnamn** vara exakt samma som användarens befintliga e-postadress. 
         
     6. Bredvid Användarnamn väljer du ditt eget domännamn i listrutan.
         
@@ -475,7 +475,7 @@ Du kan, men det finns begränsningar:
             
 7. Konfigurera vidarebefordran av e-post hos din nuvarande leverantör
     
-    1. Konfigurera vidarebefordran för användarnas e-postkonton på din nuvarande e-postleverantör till din onmicrosoft.com domän:
+    1. Konfigurera vidarebefordran för användarnas e-postkonton på din onmicrosoft.com nuvarande e-postleverantör:
         
     2. Användare A:s postlåda ska vidarebefordras till usera@yourcompany.onmicrosoft.com
         
@@ -495,7 +495,7 @@ Du kan, men det finns begränsningar:
     
 8. Testa e-postflöde
     
-    1. Logga in i Outlook Web App med autentiseringsuppgifter för användare A.
+    1. Logga in på Outlook Web App med autentiseringsuppgifter för användare A.
         
     2. Utför följande tester:
         
@@ -503,7 +503,7 @@ Du kan, men det finns begränsningar:
         
     4. Testa e-post till någon som är på det andra e-postsystemet. Skicka till exempel ett e-postmeddelande till användare C. Det här e-postmeddelandet ska levereras till användare C:s postlåda på den ursprungliga e-postservern.
         
-    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s ursprungliga serverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och verifierar att den anländer till Office 365-postlådan för användare A.
+    5. Från ett externt konto eller från en medarbetares e-postkonto i det andra e-postsystemet kontrollerar du att vidarebefordran är korrekt konfigurerad i det andra e-postsystemet. Från användare C:s ursprungliga serverkonto eller ett Hotmail-konto skickar du till exempel ett e-postmeddelande till användare A och kontrollerar att den anländer till Office 365-postlådan för användare A.
         
 9. Flytta postlådeinnehåll
     

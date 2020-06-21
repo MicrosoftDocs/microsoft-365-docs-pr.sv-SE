@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Läs om hur du hittar en ny Microsoft 365-partner eller får kontaktinformation för en partner som du har arbetat med tidigare. '
-ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+description: 'Läs om hur du hittar en ny Microsoft 365-partner eller få kontaktinformation för en partner som du har arbetat med tidigare. '
+ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515801"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780115"
 ---
 # <a name="find-your-partner-or-reseller"></a>Hitta din partner eller återförsäljare
 
@@ -61,6 +61,6 @@ Om du är redo att köpa eller förnya Microsoft 365 via Open Volume Licensing, 
   
  **För Microsoft-partners**
   
-[Hjälp för partners](https://support.office.com/article/ae811622-b838-4f62-b7e9-659627374963.aspx)
+[Hjälp för partners](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
   
 

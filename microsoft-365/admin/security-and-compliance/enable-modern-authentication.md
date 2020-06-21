@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Lär dig att ange registernycklar för att aktivera modern autentisering för enheter som har Microsoft Office 2013 installerat.
-ms.openlocfilehash: 8bf6f50068f1a1435897c49656823302df40235e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8edcedefc04d5018b8b61022c26cbe027f7c24a9
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399176"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779971"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Aktivera modern autentisering för Office 2013 på Windows-enheter
 
@@ -36,7 +36,7 @@ Om du vill aktivera modern autentisering för Windows-enheter som har Office 201
 > [!NOTE]
 > Modern autentisering redan är aktiverad för Office 2016-klienter så du behöver inte ange registernycklar för Office 2016. 
   
-Om du vill aktivera modern autentisering för enheter med Windows (till exempel på bärbara datorer och surfplattor), som har Microsoft Office 2013 installerat, måste du ange följande registernycklar. Registernycklarna måste anges på varje enhet som du vill aktivera för modern autentisering:
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**Registernyckel**|**Typ**|**Värde** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ Om du vill aktivera modern autentisering för enheter med Windows (till exempel 
    
 När du har angett registernycklarna kan du ange att Office 2013-enheter ska använda [MFA (Multifactor Authentication)](set-up-multi-factor-authentication.md) med Microsoft 365. 
   
-Om du för närvarande är inloggad med något av klientprogrammen måste du logga ut och logga in igen för att ändringen ska börja gälla. I annat fall är MRU- och roaminginställningarna otillgängliga tills ADAL-identiteten har upprättats.
+If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
   
 ## <a name="disable-modern-authentication-on-devices"></a>Inaktivera modern autentisering på enheter
 
@@ -56,7 +56,7 @@ Du inaktiverar modern autentisering på en enhet genom att ange följande regist
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
 ## <a name="related-articles"></a>Relaterade artiklar
-[Logga in på Office 2013 med en andra metod för verifiering](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
+[Logga in på Office 2013 med en andra metod för verifiering](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
   
 

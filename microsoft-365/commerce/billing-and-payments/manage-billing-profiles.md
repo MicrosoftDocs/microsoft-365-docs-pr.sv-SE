@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Läs om hur faktureringsprofiler stöder fakturor.
 keywords: faktureringsprofil, fakturor, avgifter, hanterade avgifter
-ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2979909e3b916cc4bc8704f32a821b13fa6090e0
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401780"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741708"
 ---
 # <a name="manage-billing-profiles"></a>Hantera faktureringsprofiler
 
@@ -56,16 +56,16 @@ Roller på faktureringsprofiler har behörighet att styra inköp och visa och ha
 |-----------------------------  |---------------------------------------------------------------------------------  |
 | Ägare av faktureringsprofil         | Hantera allt för en faktureringsprofil                                           |
 | Deltagare i faktureringsprofil   | Hantera allt utom behörigheter i en faktureringsprofil                         |
-| Läsare av faktureringsprofil        | Skrivskyddad vy över allt i en faktureringsprofil                                 |
+| Läsare av faktureringsprofil        | Skrivskyddad vy av allt i en faktureringsprofil                                 |
 | Fakturaansvarig               | Visa och betala räkningar och har en skrivskyddad vy över allt i en faktureringsprofil   |
 
 ## <a name="view-billing-profiles"></a>Visa faktureringsprofiler
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fakturor och betalningar</a>.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
 
 2. Välj **Faktureringsprofiler**och välj sedan en faktureringsprofil i listan.
 
-    - På fliken **Översikt** kan du redigera information om faktureringsprofilen och aktivera eller inaktivera att skicka en faktura via e-post.
+    - På fliken **Översikt** kan du redigera faktureringsprofilinformation och aktivera eller inaktivera att skicka en faktura via e-post.
 
     - På fliken **Behörigheter** kan du tilldela användare roller att betala fakturor.
 

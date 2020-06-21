@@ -19,33 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Lär dig hur du lägger till gäster i en Microsoft 365-grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomsten.
-ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386787"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761668"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Hantera gäståtkomst i Microsoft 365-grupper
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Administrationscentret förändras. Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
-Som standard är gäståtkomst för Microsoft 365-grupper aktiverat för din organisation. Administratörer kan styra om gäståtkomst till grupper ska tillåtas för hela organisationen eller för enskilda grupper.
+Som standard är gäståtkomst för Microsoft 365-grupper aktiverat för din organisation. Administratörer kan styra om gäståtkomst till grupper ska tillåtas för hela organisationen eller enskilda grupper.
 
 När gruppmedlemmarna är aktiverade kan de bjuda in gästanvändare till en Microsoft 365-grupp via Outlook på webben. Inbjudningar skickas till gruppägaren för godkännande.
 
+När gästanvändaren har godkänts läggs den till i katalogen och gruppen.
+
 > [!Note]
 > Yammer Enterprise-nätverk som är i inbyggt läge eller [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) stöder inte nätverksgäster.
-> Microsoft 365 Connected Yammer-grupper stöder för närvarande inte gäståtkomst, men du kan skapa icke-anslutna externa grupper i Yammer-nätverket. Se [Skapa och hantera externa grupper i Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) för instruktioner.
-
-### <a name="edit-guest-information"></a>Redigera gästinformation
-
-När gästanvändaren har godkänts läggs den till i katalogen och gruppen.
+> Microsoft 365 Connected Yammer-grupper stöder för närvarande inte gäståtkomst, men du kan skapa icke-anslutna externa grupper i Yammer-nätverket. Instruktioner [finns i Skapa och hantera externa grupper i Yammer.](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups)
 
 Gäståtkomst i grupper används ofta som en del av ett bredare scenario som innehåller SharePoint eller Teams. Dessa tjänster har sina egna inställningar för gästdelning. Fullständiga instruktioner för hur du konfigurerar gästdelning mellan grupper, SharePoint och Teams finns i:
 
@@ -56,7 +47,7 @@ Gäståtkomst i grupper används ofta som en del av ett bredare scenario som inn
 
 Om du vill aktivera eller inaktivera gäståtkomst i grupper kan du göra det i administrationscentret för Microsoft 365.
 
-1. Gå till inställningar och **Settings** \> välj Microsoft **365-grupper**i administrationscentret . **Settings**
+1. I administrationscentret går du till inställningarna **för** \> **Inställningars organisation** och väljer Microsoft **365-grupper**på fliken **Tjänster** .
   
 2. På sidan **Microsoft 365 Grupper** väljer du om du vill låta personer utanför organisationen komma åt gruppresurser eller låta gruppägare lägga till personer utanför organisationen i grupper.
 
@@ -78,7 +69,7 @@ Om du vill redigera någon av en gästs information kan du [lägga till eller up
   
 ## <a name="block-guest-users-from-a-specific-group"></a>Blockera gästanvändare från en viss grupp
 
-Om du vill tillåta gäståtkomst till de flesta grupper, men har några där du vill förhindra gäståtkomst, kan du blockera gäståtkomst för enskilda grupper med hjälp av Microsoft PowerShell.
+Om du vill ge gäståtkomst till de flesta grupper, men har några där du vill förhindra gäståtkomst, kan du blockera gäståtkomst för enskilda grupper med hjälp av Microsoft PowerShell.
 
 Du måste använda förhandsversionen av [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (modulnamnet **AzureADPreview)** för att ändra inställningen för gäståtkomst på gruppnivå:
 
@@ -139,8 +130,8 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Hantera gruppmedlemskap i microsoft 365-administrationscentret](add-or-remove-members-from-groups.md)
+[Hantera gruppmedlemskap i administrationscentret för Microsoft 365](add-or-remove-members-from-groups.md)
   
 [Azure Active Directory-åtkomstgranskningar](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
-[Ange AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser)
+[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser)

@@ -19,56 +19,39 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280540"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773857"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Förutsättningar för Microsoft Threat Protection
 
 **Gäller:**
 - Microsoft Hotskydd
 
-Lär dig mer om licens-, maskinvaru- och programvarukrav och andra konfigurationsinställningar för att etablera och använda Microsoft Threat Protection.
+Lär dig mer om licensiering och andra krav för etablering och användning av [Microsoft Threat Protection](microsoft-threat-protection.md).
 
 ## <a name="licensing-requirements"></a>Licenskrav
-
->[!IMPORTANT]
->Från och med den 12 maj 2020 kommer Microsoft gradvis att lansera nya, optimerade upplevelser kring licenskrav och [aktivera Microsoft Threat Protection](mtp-enable.md). Under flera veckor under denna period kommer vissa kunder att börja se ändringar i sina portalupplevelser. Information om de nya upplevelserna markeras **Ny upplevelse** i den här artikeln.
-
-Om du vill använda Microsoft Threat Protection behöver du antingen en enda licens eller en kombination av licenser. Dessa licenser eller licenskombinationer ger dig tillgång till Microsoft Threat Protection-funktioner utan extra kostnad.
-
-### <a name="single-license"></a>Enkel licens
-Du kan använda *någon* av följande licenser:
+Alla dessa licenser ger dig tillgång till Microsoft Threat Protection-funktioner i Microsoft 365-säkerhetscenter utan extra kostnad:
 
 - Microsoft 365 E5 eller A5
-- Microsoft 365 E5 Security eller A5 Security
-
-### <a name="combination-of-licenses"></a>Kombination av licenser
-Du kan också använda en kombination av licenser för E5- eller A5-prenumerationer på Office 365, *Enterprise Mobility + Security (EMS)* och Windows. Licenskombinationen måste innehålla *alla* dessa licenser:
-
-- Office 365 E5 eller A5
-- *Företagsmobilitet + säkerhet (EMS)* E5 eller A5
+- Microsoft 365 E5-säkerhet eller A5-säkerhet
 - Windows 10 Enterprise E5 eller A5
+- Enterprise Mobility + Security (EMS) E5 eller A5 
+- Office 365 E5 eller A5
+- Microsoft Defender Avancerat skydd
+- Azure Advanced Threat Protection 
+- Microsoft Cloud App Security
+- Avancerat skydd mot Office 365 (plan 2)
+
+> [!NOTE]
+> Utvärderingslicenser för Office 365 ger för närvarande inte åtkomst till Microsoft Threat Protection.
 
 Mer information [finns i Microsoft 365 Enterprise-tjänstplanerna](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
 > Har du inte licens än? [Prova eller köp en Microsoft 365-prenumeration](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-**Ny erfarenhet:** Från och med den 12 maj 2020 kommer kunderna gradvis att få ändringar i den här upplevelsen. För dem med den nya upplevelsen är möjligheten att aktivera Microsoft Threat Protection tillgänglig för *alla* kunder med någon av följande licenser:
-
-- Microsoft 365 E5 eller A5
-- Microsoft 365 E5 Security eller A5 Security
-- Windows 10 Enterprise E5 eller A5
-- Enterprise Mobility + Security (EMS) E5 eller A5 
-- Office 365 E5 eller A5
-- Microsoft Defender Avancerat skydd 
-- Azure Advanced Threat Protection 
-- Microsoft Cloud App Security 
-- Avancerat skydd mot Office 365 (plan 2) 
 
 ### <a name="check-your-existing--licenses"></a>Kontrollera dina befintliga licenser
 Gå till Microsoft 365 administrationscenter ([admin.microsoft.com](https://admin.microsoft.com/)) för att visa dina befintliga licenser. Gå till **Billing**  >  **Faktureringslicenser i administrationscentret**.
@@ -76,16 +59,20 @@ Gå till Microsoft 365 administrationscenter ([admin.microsoft.com](https://admi
 >[!NOTE]
 > Du måste tilldelas rollen **Faktureringsadministratör** eller **Global läsare** [i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) för att kunna se licensinformation. Om du stöter på åtkomstproblem kontaktar du en global administratör.
 
+## <a name="required-permissions"></a>Nödvändiga behörigheter
+Om du vill visa en lista över nödvändiga roller och hur åtkomst till data regleras läser du om [hur du hanterar åtkomsten till Microsoft Threat Protection](mtp-permissions.md).
+
 ## <a name="browser-requirements"></a>Krav på webbläsare
 Få tillgång till Microsoft Threat Protection i Microsoft 365-säkerhetscentret med Microsoft Edge, Internet Explorer 11 eller valfri HTML 5-kompatibel webbläsare.
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Tillgänglighet till amerikanska GCC, GCC High och andra amerikanska statliga institutioner
 Microsoft Threat Protection är för närvarande *inte* tillgängligt för:
-- Moln för usa:s myndighetsgemenskap (GCC)
-- Us-regeringgemenskap moln kick (GCC kick)
+- Moln för amerikanska myndigheter (GCC)
+- Usa:s myndighets molnhög (GCC-hög)
 - Usa:s försvarsdepartement
 - Alla amerikanska statliga institutioner med kommersiella licenser
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Översikt över Microsofts hotskydd](microsoft-threat-protection.md)
+- [Översikt över Microsoft Threat Protection](microsoft-threat-protection.md)
 - [Aktivera Microsoft Hotskydd](mtp-enable.md)
+- [Hantera åtkomst och behörigheter](mtp-permissions.md)

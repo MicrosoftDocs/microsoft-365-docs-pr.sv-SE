@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Skicka e-post till en grupp personer utan att behöva skriva varje enskild mottagares namn genom att skapa distribution (lista).
-ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398972"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779899"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Skapa distributionsgrupper i administrationscentret för Microsoft 365
   
@@ -69,8 +69,8 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
     
 6. Information om hur du lägger till användare i distributionsgruppen finns [i Lägga till en användare eller kontakt i en distributionsgrupp](../email/add-user-or-contact-to-distribution-list.md).
     
-Läs om hur du använder gruppen i Outlook 2016 och Outlook på webben i [avsnittet Använd kontaktgrupper (tidigare distributionslistor) i Outlook.](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) 
+Läs om hur du använder gruppen i Outlook 2016 och Outlook på webben i [avsnittet Använd kontaktgrupper (tidigare distributionslistor) i Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
-Kolla in [Distributionsgruppsproblem](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) för hjälp med distributionsgruppsproblem. 
+Kolla in [Distributionsgruppfrågor](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) för hjälp med distributionsgruppsproblem. 
   
 

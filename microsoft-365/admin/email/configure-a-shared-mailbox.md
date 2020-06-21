@@ -1,5 +1,5 @@
 ---
-title: Konfigurera en delad postlåda
+title: Konfigurera inställningar för delad postlåda
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: När du har skapat en delad postlåda bör du konfigurera vissa inställningar för användarna, till exempel vidarebefordran av e-post och autosvar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
-ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: När du har skapat en delad postlåda bör du konfigurera vissa inställningar för användarna, till exempel vidarebefordran av e-post och automatiska svar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamnet eller medlemmarna.
+ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400154"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739210"
 ---
-# <a name="configure-a-shared-mailbox"></a>Konfigurera en delad postlåda
+# <a name="configure-shared-mailbox-settings"></a>Konfigurera inställningar för delad postlåda
 
 När du har [skapat en delad postlåda](create-a-shared-mailbox.md)bör du konfigurera vissa inställningar för postlådeanvändarna, till exempel vidarebefordran av e-post och autosvar. Senare kanske du vill ändra andra inställningar, till exempel postlådenamn, medlemmar eller medlemsbehörigheter. 
 
@@ -82,7 +82,7 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 2. Markera den delade postlåda som du vill redigera och välj sedan Redigera redigera **Email forwarding** \> **e-post.**
     
-3. Ställ in växlingsknappen **på På**och ange en e-postadress att vidarebefordra meddelandena till. Det kan vara vilken giltig e-postadress som helst. Om du vill vidarebefordra till flera adresser måste du [skapa en distributionsgrupp](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) för adresserna och sedan ange namnet på gruppen i den här rutan.
+3. Ställ in växlingsknappen **på På**och ange en e-postadress som meddelandena ska vidarebefordras till. Det kan vara vilken giltig e-postadress som helst. Om du vill vidarebefordra till flera adresser måste du [skapa en distributionsgrupp](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) för adresserna och sedan ange namnet på gruppen i den här rutan.
     
 4. Välj **Spara**.
 
@@ -112,13 +112,13 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 4. Skriv ett meddelande till personer inom organisation. Du endast lägga till text, inga bilder.
 
-5. Om du *också* vill skicka ett svar till personer utanför organisationen markerar du kryssrutan, vem du vill få svaret och skriver texten. Det finns inget sätt att bara skicka till personer utanför organisationen, men inte till personer i organisationen.
+5. Om du *också* vill skicka ett svar till personer utanför organisationen markerar du kryssrutan, vem du vill få svaret och skriver texten. Det finns inget sätt att bara skicka till personer utanför organisationen, men inte till personer inom organisationen.
 
 6. Välj **Spara**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Tillåta alla att se skickad e-post (svaren)
 
-Standardinställningen är att e-post skickad från den delade postlådan inte sparas i den gemensamma Skickat-mappen. Den sparas istället hos den person som skickade meddelandet, i mappen Skickat.
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du inställningarna för den delade postlådan i administrationscentret och väljer Redigera **skickade objekt** \> **Edit**.
 
@@ -176,7 +176,7 @@ Mer information om bevarande av rättstvister finns i [Skapa en bevarande av rä
 
 3. Ställ in växlingsknappen **på På**. 
 
-4. Du kan också ange en varaktighet, en anteckning om spärren och en URL med mer information.  
+4. Du kan också ange en varaktighet, en s-anteckning om spärren och en URL med mer information.  
 
 5. Välj **Spara**.
 

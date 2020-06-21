@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'Skapa snabblänkar till din e-post, dokument, appar, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
-ms.openlocfilehash: cad78207c5d4025d385a7452fbe86df79a694067
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 'Skapa snabblänkar till e-post, dokument, appar, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
+ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399782"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780139"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Lägga till anpassade paneler i startprogrammet
 
@@ -37,25 +37,25 @@ ms.locfileid: "44399782"
 
 ::: moniker-end
 
-I Microsoft 365 kan du snabbt och enkelt komma åt din e-post, kalendrar, dokument och appar med hjälp av startprogrammet ([läs mer](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)). Det här är appar som du får med Microsoft 365 samt anpassade appar som du lägger till från [SharePoint Store](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx) eller [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
+I Microsoft 365 kan du snabbt och enkelt komma åt din e-post, kalendrar, dokument och appar med hjälp av startprogrammet ([läs mer](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Det här är appar som du får med Microsoft 365 samt anpassade appar som du lägger till från [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) eller [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
   
-Du kan lägga till egna paneler i startprogrammet som pekar på SharePoint-webbplatser, externa webbplatser, äldre program och mycket mer. De anpassade panelerna visas under **Alla** appar i startprogrammet, men du kan fästa dem under **Start**-appar och instruera användarna att göra samma sak. Det här gör det enkelt att hitta de webbplatser, program och resurser som ni behöver i arbetet. I exemplet nedan används en egen panel som heter "Contoso-portalen" för att nå ett företags SharePoint-intranätwebbplats. 
+You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
   
 ![Startprogram](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Lägga till en anpassad panel i startprogrammet
 
-1. Gå till fliken Inställningars organisationsprofil i **administrationscentret**  >  **Org Settings** och välj fliken **Organisationsprofil.**
+1. Gå till **Settings**  >  **fliken Inställningars** **organisationsprofil** i administrationscentret.
     
-2. På fliken **Organisationsprofil** väljer du **Anpassade startpaneler**för startprogram .
+2. På fliken **Organisationsprofil** väljer du **Anpassade startpaneler**för startprogrammet .
   
 3. Välj **Lägg till en anpassad panel**. 
   
 4. Ange ett **Panelnamn** för den nya panelen. Namnet visas sedan i panelen. 
     
-5. Ange en **webbadress till panelen.** Det här är den plats där du vill att användarna ska gå när de väljer panelen i startprogrammet. Använd HTTPS i URL:en.<br/>Om du skapar en panel för en SharePoint-webbplats navigerar du till den webbplatsen, kopierar webbadressen och klistrar in den här. Webbadressen till standardgruppwebbplatsen ser ut så här:`https://<company_name>.sharepoint.com` 
+5. Ange en **webbadress till panelen.** Det här är den plats där du vill att användarna ska gå när de väljer panelen i startprogrammet. Använd HTTPS i URL:en.<br/>Tips: Om du skapar en panel för en SharePoint-webbplats navigerar du till den webbplatsen, kopierar webbadressen och klistrar in den här. Webbadressen till standardgruppwebbplatsen ser ut så här:`https://<company_name>.sharepoint.com` 
   
-6. Ange en **URL till bilden** för panelen. Bilden visas på sidan Mina program och i startprogrammet.<br/>TIPS: Bilden ska vara 60x60 pixlar och vara tillgänglig för alla i organisationen utan att behöva autentisering.
+6. Ange en **URL för bilden** för panelen. Bilden visas på sidan Mina program och i startprogrammet.<br/>TIPS: Bilden ska vara 60x60 pixlar och vara tillgänglig för alla i organisationen utan att behöva autentisering.
 
 7. Ange en **beskrivning** för panelen. Du ser detta när du väljer panelen på sidan Mina appar och väljer **Appinformation**. 
   
@@ -65,7 +65,7 @@ Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig oc
   
 ## <a name="promote-the-tile-to-app-launcher"></a>Befordra panelen till Startprogrammet
 
-1. Välj ikonen för startprogrammet och välj **Alla appar**. 
+1. Välj ikonen för startprogrammet och välj **alla appar**. 
     
 2. Leta reda på den nya panelen för din app, välj ellipsen och välj **Fäst för startprogrammet**.
   
@@ -85,10 +85,10 @@ Den anpassade panelen visas nu i startprogrammet på fliken **Alla** för dig oc
     
 4. Välj **Uppdatera** \> **stäng**. 
     
-Om du vill ta bort en anpassad panel markerar du panelen i fönstret **Anpassade paneler** och väljer **Ta bort panel**Ta  >  **bort**. 
+Om du vill ta bort en anpassad panel markerar du panelen i fönstret **Anpassade paneler,** väljer **Ta bort panel**Ta  >  **bort**. 
   
 ## <a name="whats-next"></a>Hur går jag vidare?
 
-Förutom att lägga till paneler i startprogrammet kan du lägga till startpaneler i navigeringsfältet[(läs mer).](https://support.office.com/article/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985) Information om hur du anpassar utseendet på Microsoft 365 så att det matchar organisationens varumärke finns [i Anpassa Microsoft 365-temat](../setup/customize-your-organization-theme.md).
+Förutom att lägga till paneler i startprogrammet kan du lägga till startpaneler i navigeringsfältet[(läs mer).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Information om hur du anpassar utseendet på Microsoft 365 så att det matchar organisationens varumärke finns [i Anpassa Microsoft 365-temat](../setup/customize-your-organization-theme.md).
   
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Lär dig hur du konfigurerar ett e-postkonto i Outlook för både Windows och Mac och om hur du installerar Office-appar och använder e-post online.
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399284"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779995"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Konfigurera Outlook för att läsa e-post
 
@@ -39,7 +39,7 @@ Första gången du öppnar Outlook öppnas en guiden Automatiskt konto. Om inte 
     
 2. På sidan **Konfigurera automatiskt konto** anger du namn, e-postadress och lösenord och väljer sedan **Nästa** \> **slut**.
     
-Läs [hela artikeln](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
+Läs [hela artikeln](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Hur installerar jag Office-programmen, inklusive Outlook?
 
@@ -59,7 +59,7 @@ Första gången du öppnar Outlook-appen öppnas guiden Konfigurera min inkorg. 
     
 3. På sidan **Ange ditt Exchange-kontoinformation** anger du ditt namn, din e-postadress och ditt lösenord och väljer sedan **Lägg till konto**.
     
-Läs [hela artikeln](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac). 
+Läs [hela artikeln](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
   
 ## <a name="how-do-i-access-my-mail-online"></a>Hur kommer jag åt min e-post online?
 
@@ -75,6 +75,6 @@ Microsoft 365 Business Standard och Microsoft 365 Apps för företag inkluderar 
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Hur avgör jag vilken prenumeration jag har?
 
-Information om hur du bestämmer din prenumeration finns i [Vilken prenumeration har jag?](../admin-overview/what-subscription-do-i-have.md)
+Information om vilken prenumeration du har för att avgöra din prenumeration [finns i Vilken prenumeration har jag?](../admin-overview/what-subscription-do-i-have.md)
   
 

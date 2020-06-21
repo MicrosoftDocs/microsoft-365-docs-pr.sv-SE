@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Register.com för Microsoft.
-ms.openlocfilehash: 7b2353b4b6832c9316e302ace4db948e2550a28f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7a11fa248f2602eb02fe1242234d26584bd33fd2
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400334"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780331"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Skapa DNS-poster på Register.com för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "44400334"
   
 Om Register.com är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
-Det här är de viktigaste posterna att lägga till. Följ stegen nedan eller [titta på videon](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+Det här är de viktigaste posterna att lägga till. Följ stegen nedan eller [titta på videon](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
 - [Lägga till en TXT-post på Register.com för att verifiera att det är din domän](#add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain)
     
@@ -51,17 +51,17 @@ När du har lagt till dessa poster i Register.com konfigureras domänen så att 
 
   
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>Lägga till en TXT-post på Register.com för att verifiera att det är din domän
 <a name="BKMK_verify"> </a>
 
-Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
 1. Kom igång genom att gå till domänsidan på Register.com med [den här länken](https://www.register.com/myaccount/). Du uppmanas att logga in först.
     
@@ -69,7 +69,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
     
 5. Bläddra ned till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **TXT Records (SPF)**.
     
@@ -82,7 +82,7 @@ Följ stegen nedan eller [titta på videon (börja vid 0:44)](https://support.of
    
 7. Välj **Fortsätt**.
     
-8. På nästa sida väljer du **Fortsätt** igen för att bekräfta dina ändringar. 
+8. På nästa sida väljer du **Fortsätt** igen för att bekräfta ändringarna. 
     
 9. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
@@ -99,12 +99,12 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 4. På sidan **Verify domain** väljer du **Verify**.
     
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Lägga till en MX-post så att e-post för din domän kommer till Microsoft.
 <a name="BKMK_add_MX"> </a>
 
-Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
 1. Kom igång genom att gå till domänsidan på Register.com med [den här länken](https://www.register.com/myaccount/). Du uppmanas att logga in först.
     
@@ -112,7 +112,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
     
 5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **e-postutväxlingsposter**.
     
@@ -124,7 +124,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.of
     
     |****Host Name****|****Priority** (prioritet)**|****E-postserver****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*.mail.protection.outlook.com  <br/>  <br/>**Anm.:** Hämta ditt \<*domain-key*\> från ditt Microsoft-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*.mail.protection.outlook.com  <br/>  <br/>**Obs:** Hämta ditt \<*domain-key*\> från ditt Microsoft-konto. <br> [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Kopiera och klistra in värdet från tabellen](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -143,7 +143,7 @@ Följ stegen nedan eller [titta på videon (börja vid 3:32)](https://support.of
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Lägga till CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
-Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
 1. Kom igång genom att gå till domänsidan på Register.com med [den här länken](https://www.register.com/myaccount/). Du uppmanas att logga in först.
     
@@ -151,7 +151,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
     
 5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **domänaliasposter**.
     
@@ -189,7 +189,7 @@ Följ stegen nedan eller [titta på videon (börja vid 4:23)](https://support.of
 > [!IMPORTANT]
 > Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg istället till de obligatoriska Microsoft-värdena i den aktuella posten, så att du har en enda SPF-post som innehåller båda uppsättningarna med värden.  
   
-Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
 1. Kom igång genom att gå till domänsidan på Register.com med [den här länken](https://www.register.com/myaccount/). Du uppmanas att logga in först.
     
@@ -197,7 +197,7 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.of
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
     
 5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **TXT Records (SPF)**.
     
@@ -222,15 +222,15 @@ Följ stegen nedan eller [titta på videon (börja vid 5:12)](https://support.of
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Lägga till de två SRV-posterna som krävs för Microsoft
 <a name="BKMK_add_SRV"> </a>
 
-Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
-1. Kom igång genom att gå till domänsidan på Register.com med [den här länken](https://www.register.com/myaccount/). Du uppmanas att logga in först.
+1. To get started, go to your domains page at Register.com by using [this link](https://www.register.com/myaccount/). You'll be prompted to sign in.
     
 2. Välj **Domäner**.
     
 3. Välj **Hantera**.
     
-4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och välj sedan **Hantera**på den raden .
+4. Leta reda på raden som innehåller namnet på den domän som du vill ändra. och sedan, på den raden, välj **Hantera**.
     
 5. Bläddra till avsnittet **Avancerade tekniska inställningar** och välj sedan Redigera **SRV-poster**.
     
@@ -266,5 +266,5 @@ Följ stegen nedan eller [titta på videon (börja vid 5:55)](https://support.of
     ![Välj Fortsätt](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
-> Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Lär dig hur du kan konfigurera Office 365 som drivs av 21Vianet för att hantera dina DNS-poster, när 1&1 Internet är DNS-värd.
-ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79870d534e7d825fd59dbbbec54c796227f5faf1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400707"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780379"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Ändra namnservrar för att konfigurera Microsoft 365 med 1&1 IONOS
 
@@ -39,12 +39,12 @@ Följ de här anvisningarna om du vill att Microsoft 365 ska hantera dina Micros
 ## <a name="add-a-txt-record-for-verification"></a>Lägga till en TXT-post för verifiering
 
 
-Innan du använder din domän med Microsoft 365, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft 365 att du äger domänen.
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
   
 > [!NOTE]
-> Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 0:42)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 1. För att komma igång, gå till din domänsida på 1&1 IONOS via [denna länk](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). Du uppmanas att logga in. 
     
@@ -94,10 +94,10 @@ Om du vill slutföra inrättandet av din domän med Microsoft 365 ändrar du dom
 > [!CAUTION]
 > När du ändrar domänens NS-poster så att de pekar på Microsoft 365-namnservrarna påverkas alla tjänster som för närvarande är associerade med domänen. Till exempel börjar all e-post som skickas till din domän (t.ex. *rob@ your_domain* .com) komma till Microsoft 365 när du har gjort den här ändringen. 
   
-Är du redo att ändra dina NS-poster så att Microsoft 365 kan konfigurera din domän? Följ stegen nedan eller [titta på videon (börja vid 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+Är du redo att ändra dina NS-poster så att Microsoft 365 kan konfigurera din domän? Följ stegen nedan eller [titta på videon (börja vid 2:47)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 > [!IMPORTANT]
->  Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till korrekta namnservrar om de inte redan finns i listan. >  När du har utfört stegen i det här avsnittet är de enda namnservrarna som bör finnas i listan dessa fyra: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com 
+>  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already listed. >  When you have completed the steps in this section, the only nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com 
   
 1. För att komma igång, gå till din domänsida på 1&1 IONOS med hjälp av [denna länk](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). Du uppmanas att logga in. 
     
@@ -155,7 +155,7 @@ Om du vill slutföra inrättandet av din domän med Microsoft 365 ändrar du dom
 ### <a name="if-there-are-nameservers-already-listed"></a>Om det redan FINNS namnservrar listade
 
 > [!CAUTION]
-> Följ de här anvisningarna  *endast*  om det finns andra namnservrar utöver de fyra  *korrekta*  namnservrarna. (Ta alltså  *endast*  bort eventuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** eller **ns4.bdm.microsoftonline.com**.) 
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.) 
   
 1. Om det förekommer andra namnservrar i **Name server**-rutorna tar du bort var och en genom att markera den och sedan trycka på **Delete**-tangenten. 
     

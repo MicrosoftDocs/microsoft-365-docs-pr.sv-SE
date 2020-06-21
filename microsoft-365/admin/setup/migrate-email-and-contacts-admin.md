@@ -27,12 +27,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Lär dig att importera kontakter, kalendrar, e-postmeddelanden från Gmail eller en annan e-postleverantör till Microsoft 365. '
-ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4cc7a68929bdcc4cb79f3c7b78e07023a8952f81
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398876"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779015"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrera e-post och kontakter till Microsoft 365
 
@@ -46,29 +46,29 @@ Du måste använda en version av Outlook som är installerad på skrivbordet fö
 
 Så här importerar du e-post, kontakter och kalender från Gmail till Outlook med Microsoft 365:
   
-- [Importera Gmail till Outlook](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
+- [Importera Gmail till Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
-- [Importera kontakter till Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Importera kontakter till Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-- [Importera Google Kalender](https://support.office.com/article/098ed60c-936b-41fb-83d6-7e3786437330)
+- [Importera Google Kalender](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
 ### <a name="import-from-outlook-desktop"></a>Importera från Outlook (skrivbord)
 
-Så här exporterar du e-post, kontakter och kalendrar från Outlook till en PST-fil och importerar sedan filen till Outlook med Microsoft 365:
+Följ dessa steg för att exportera e-post, kontakter och kalendrar från Outlook till en PST-fil och sedan importera filen till Outlook med Microsoft 365:
   
-1. [Exportera e-post, kontakter och kalender](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
+1. [Exportera e-post, kontakter och kalender](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
-2. [Importera e-post, kontakter och kalender](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
+2. [Importera e-post, kontakter och kalender](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
     
 Om du bara vill ha kontakter gör du så här:
   
-1. [Exportera kontakter från Outlook](https://support.office.com/article/10f09abd-643c-4495-bb80-543714eca73f.aspx)
+1. [Exportera kontakter från Outlook](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f)
     
-2. [Importera kontakter till Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+2. [Importera kontakter till Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-Starta Processen genom att öppna **File** Outlook och välja \> **Filöppna &amp; ** \> **exportimport/export**.
+Starta processen genom att öppna **File** Outlook och välja \> ** &amp; Filöppen** \> **exportimport/export**.
   
 ![Arkiv-menyn i Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![&amp;Kommandot Öppna export i Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Knappen Importera/exportera i Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
@@ -80,11 +80,11 @@ Vill du bara se din e-post från en annan leverantör (som Gmail, Yahoo eller Li
 
 Lägg till ett konto, till exempel ditt privata Gmail-konto, i Outlook.
   
-- Öppna Outlook och **File** gå sedan till \> **Filtilläggskonto**.
+- Öppna Outlook och **File** gå sedan till \> **Filtilläggskontot**.
     
-Behöver du mer detaljerade steg? Se [Lägga till ett konto](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+Behöver du mer detaljerade steg? Se [Lägga till ett konto](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Skärmbild som visar sidan Outlook-kontoinformation i backstage-vyn.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Skärmbild som visar sidan Outlook-kontoinformation i backstage-vyn.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Flera postlådor: Administratörer kan massimport importera e-post, kontakter och kalendrar till Microsoft 365
 

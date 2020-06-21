@@ -23,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Lär dig att lägga till e-postsignatur, ansvarsfriskrivning eller avslöjandeutdrag i alla e-postmeddelanden som kommer in i eller lämnar organisationen.
-ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7e19c6e3f425f95429aefd769d2b8992fde141e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398960"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779887"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa organisationsomfattande signaturer och ansvarsfriskrivningar
 
- Du kan lägga till en e-postsignatur, en juridisk ansvarsfriskrivning eller en policy om konfidentialitet i e-postmeddelanden som skickas till eller från din organisation. Du kan konfigurera den så att den gäller för alla inkommande och utgående meddelanden som visas nedan. Eller så kan du använda den på vissa meddelanden, till exempel dem som innehåller specifika ord eller textmönster.
+ You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
  Titta på en kort video om hur du skapar en företagsomfattande e-postsignatur. <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Skapa en signatur som gäller för alla meddelanden
 
@@ -78,18 +78,18 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 6. Under **Använd den här regeln**väljer du **[Använd på alla meddelanden]**.
     
     > [!TIP]
-    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) om att använda villkor om du inte vill ha med ansvarsfriskrivningen i alla meddelanden. (Den här omfångsartikeln är för Exchange Server, men den gäller även Microsoft 365.) 
+    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) om att använda villkor om du inte vill ha med ansvarsfriskrivningen i alla meddelanden. (Den här artikeln gäller Exchange Server, men den gäller även Microsoft 365.) 
   
 7. Under Gör följande lämnar du **Lägg till ansvarsfriskrivningen** markerat. 
     
 8.  Välj **Ange text** och skriv ansvarsfriskrivningen. 
     
     > [!TIP]
-    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) om att formatera ansvarsfriskrivningar. (Den här formateringsartikeln är för Exchange Server, men den gäller även Microsoft 365.) 
+    > [Läs mer](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) om att formatera ansvarsfriskrivningar. (Den här formateringsartikeln är avsedd för Exchange Server, men den gäller även Microsoft 365.) 
 
 9. Välj **Välj ett** och välj **Radbryt** som reservalternativ. Välj sedan **OK**. Det innebär att om ansvarsfriskrivningen inte kan läggas till på grund av kryptering eller en annan e-postinställning kommer den att inneslutas i ett meddelandekuvert.
     
-10. Lämna **Granska den här regeln med allvarlighetsnivå** markerat. Välj sedan **Låg**, **Medium** eller **Hög** för användning i meddelandeloggen. 
+10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
     
 11. Välj **Tillämpa** för att aktivera ansvarsfriskrivningen direkt, såvida du inte vill testa den först. 
     
@@ -101,7 +101,7 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 
 Du kan inte göra följande med Microsoft 365-signaturer:
   
-- Infoga signaturen direkt under det senaste e-postsvaret eller vidarebefordra
+- Infoga signaturen direkt under det senaste e-postmeddelandet eller vidarebefordra
     
 - Visa e-postsignaturer på serversidan i mapparna Skickat objekt
     

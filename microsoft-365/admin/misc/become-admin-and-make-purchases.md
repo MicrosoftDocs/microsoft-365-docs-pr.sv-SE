@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Lär dig hur du blir administratör och får en Microsoft 365-prenumeration för din organisation. '
-ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ecfde457cc04e28ef544701fe623a53a8e610b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399464"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780043"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>Bli administratör och köp Microsoft 365 för din organisation
 
 Microsoft gör det enkelt för personer i organisationen att registrera sig och använda verktyg och tjänster utan att vänta på en formell distribution från IT-avdelningen.
   
-Organisationen kan låta personerna fortsätta att använda tjänsterna som de är. Men om dessa personer har registrerat sig för Skype-möten som en av dessa tjänster, kan du tilldela en administratör för att uppgradera och få en mer fullständig lösning för möten med Skype för företag och Office-program, fillagring och delning med mera.
+Your organization can let people continue to use these services "as is." But if people signed up for Skype Meetings as one of those services, you can assign an admin to upgrade and get a more complete meeting solution with Skype for Business and Office applications, file storage and sharing, and more.
   
 ## <a name="why-become-the-admin-and-buy-microsoft-365-for-your-organization"></a>Varför bli administratör och köpa Microsoft 365 för din organisation?
 
-När en anställd registrerar sig för Skype-möten med sitt arbetskonto har de inte möjlighet att hantera tjänsten. Och de får endast de mest grundläggande funktionerna: de kan ha ett obegränsat antal möten men endast med 10 eller färre deltagare (efter 60 dagar är högsta antal deltagare tre personer). 
+When an employee signs up for Skype Meetings with their work account, they can't manage the service. And they get only the most basic features: they can have unlimited meetings but only with 10 or fewer participants (after 60 days, the maximum participants is three people). 
   
 När du konfigurerar en administratör för tjänsten och köper Microsoft 365 för användarna får de mer avancerade funktioner. Och du får möjlighet att hantera tjänsterna, så att du kan tillämpa principer och lägga till nya användare.
   
@@ -48,7 +48,7 @@ För att bli administratör ska du först bevisa att du äger den domän som and
 > [!NOTE]
 > Att bli administratör och uppgradera till Microsoft 365 är en del av samma process. Du kan inte uppgradera utan att först bli administratör och du kan inte hantera tjänsterna som administratör om du inte också uppgraderar till Microsoft 365. 
   
- **Varför ber vi dig att bevisa att du äger domänen?** Eftersom alla som registrerar sig med en e-postadress på samma domän (t.rob@contoso.com och sara@contoso.com) grupperas tillsammans efter domännamnet. Vi bestämmer vilken grupp varje person tillhör efter domändelen av deras e-postadresser (som contoso.com), så att personer från samma organisation kan arbeta tillsammans. Eftersom de tillhör samma grupp kan de samarbeta med varandra.
+ **Varför ber vi dig att bevisa att du äger domänen?** Eftersom alla som registrerar sig med en e-postadress på samma domän (t.rob@contoso.com och sara@contoso.com) grupperas tillsammans med domännamnet. Vi bestämmer vilken grupp varje person tillhör av domändelen av deras e-postadresser (som contoso.com), så att personer från samma organisation kan arbeta tillsammans. Eftersom de tillhör samma grupp kan de samarbeta med varandra.
   
 Om du vill bli administratör för gruppen ska du verifiera att du äger den domän som alla i organisationen är grupperade under. Om du har behörighet att bevisa domänägarskap (genom att logga in där domänen hanteras) är det logiskt att du kan hantera Microsoft 365-tjänster för personer som använder domänen.
   
@@ -87,7 +87,7 @@ Nu när du är administratör kanske du vill göra följande:
 |:-----|:-----|
 |Lägga till eller ta bort licenser  <br/> |Du kan [lägga till fler licenser](../../commerce/licenses/buy-licenses.md) för användare som inte använder Microsoft 365 ännu, eller ta bort licenser från [användare](../manage/remove-licenses-from-users.md) som du inte vill använda organisationens Microsoft 365 för företag-prenumeration.  <br/> |
 |Kontakta andra som redan registrerat sig  <br/> |Kontakta de andra användarna och meddela dem att du hanterar deras Microsoft 365-prenumeration och att de har uppgraderats. [Följ de här stegen](../add-users/add-users.md) för att se en lista över **aktiva användare** och deras e-postadresser.  <br/> |
-|Börja använda Microsoft 365  <br/> |Besök [Office 365 Learning Center](https://support.office.com/learn/office365-for-business) och läs hur du loggar in, kontrollerar e-post, delar dokument med mera. Du och dina användare kan använda den här webbplatsen för att komma igång med Microsoft 365.  <br/> |
+|Börja använda Microsoft 365  <br/> |Besök [Office 365 Learning Center](https://support.microsoft.com/training) och läs hur du loggar in, kontrollerar e-post, delar dokument med mera. Du och dina användare kan använda den här webbplatsen för att komma igång med Microsoft 365.  <br/> |
 |Hantera din Microsoft 365-prenumeration  <br/> |Besök [Microsoft 365 Admin hjälpcenter](../admin-home.md) och lära dig vanliga administrativa uppgifter som att lägga till och ta bort användare, återställa lösenord och konfigurera mobila enheter.  <br/> |
 
 ## <a name="still-need-help"></a>Behöver du fortfarande hjälp?

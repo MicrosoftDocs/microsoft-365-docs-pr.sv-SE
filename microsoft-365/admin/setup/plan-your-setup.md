@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Läs om vad du behöver göra för att konfigurera Microsoft 365 för företag.
-ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398852"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778955"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planera installationen av Microsoft 365 för företag
 
@@ -33,7 +33,7 @@ Den här artikeln är avsedd för personer som prenumererar på en Microsoft 365
   
 Det finns några saker du måste bestämma och information som du måste ha till hands innan du flyttar organisationen till Microsoft 365.
   
-## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Information som du kan ha till hands innan du kör installationsguiden
+## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Information som ska finnas till hands innan du kör installationsguiden
 
 När du är redo att köra installationsguiden och flytta domänen till Microsoft 365 måste du ha den information du behöver ha till hands:
   
@@ -41,11 +41,11 @@ När du är redo att köra installationsguiden och flytta domänen till Microsof
 
 - Hur du ska meddela dina anställda om deras användar-ID och lösenord så att de kan logga in. Ger du dem informationen över telefon? Eller skickar du den till deras privata e-postadresser? De har inte tillgång till sin e-post, så du kan inte använda den.
 
-- Om du har ett domännamn för din organisation (till exempel contoso.com) **och** du planerar att använda Microsoft-e-post måste du veta var din domän är registrerad och ha inloggningsinformation.
+- Om du har ett domännamn för din organisation (till exempel contoso.com) **och** du planerar att använda Microsofts e-post måste du veta var din domän är registrerad och ha inloggningsinformation.
 
 ## <a name="what-happens-when-you-run-the-microsoft-365-setup-wizard"></a>Vad händer när du kör installationsguiden för Microsoft 365
 
-I installationsguiden går du igenom installation av Microsoft 365-appar på datorn, lägger till och verifierar domänen, lägger till användare och tilldelar licenser till dem och ansluter domänen.
+I installationsguiden kan du använda Microsoft 365-apparna på datorn, lägga till och verifiera domänen, lägga till användare och tilldela licenser till dem och ansluta domänen.
 
 > [!NOTE]
 > Om du behöver [tilldela administratörsroller i Microsoft 365 för företag](../add-users/assign-admin-roles.md) till de användare som du lägger till i guiden kan du göra det senare på sidan **Användare.** 
@@ -58,7 +58,7 @@ Kontakta oss om du kör fast. [Vi hjälper gärna till!](../contact-support-for-
 
 Det finns ett par scenarier som inkluderar antingen migrera data eller användare från lokala miljöer eller ställa in ett hybridsystem som innehåller katalogsynkronisering. Om du är i någon av kategorierna följer du instruktionerna i följande artiklar:
   
-- Information om hur du konfigurerar katalogsynkronisering med din lokala Active Directory finns i [Konfigurera katalogsynkronisering för Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)och förstå de olika identitetsmodellerna i Microsoft 365 genom att läsa [Förstå Microsoft 365-identitet och Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity).
+- Information om hur du konfigurerar katalogsynkronisering med den lokala Active Directory finns i [Konfigurera katalogsynkronisering för Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)och förstå de olika identitetsmodellerna i Microsoft 365, med [Förstå Microsoft 365-identitet och Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity).
 
 - Här finns fullständiga instruktioner som hjälper dig igenom alla olika sätt att konfigurera en Exchange-hybrid (inklusive hur du konfigurerar DNS-poster): [Exchange Server Deployment Assistant](https://aka.ms/exdeploy)
 
@@ -72,11 +72,11 @@ Det finns ett par scenarier som inkluderar antingen migrera data eller användar
 
     1. [Lägg till dina anställda i Microsoft 365](../add-users/add-users.md) så att de kan hämta och installera Office-programmen.
 
-    2. [Ladda ned och installera Office-programmen](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx) för att kunna använda Word, Excel och PowerPoint på datorer och enheter.
+    2. [Ladda ned och installera Office-programmen](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) för att kunna använda Word, Excel och PowerPoint på datorer och enheter.
 
     3. [Konfigurera Microsoft Teams](#plan-for-teams) som ska användas för dina möten.
 
-    4. [Flytta ditt innehåll till Microsoft 365-molnlagring](set-up-file-storage-and-sharing.md) (OneDrive- eller SharePoint-gruppwebbplatser).
+    4. [Flytta ditt innehåll till Microsoft 365 molnlagring](set-up-file-storage-and-sharing.md) (OneDrive- eller SharePoint-gruppwebbplatser).
 
     5. När du är klar väljer du **Inställningar** i det vänstra navigeringsfönstret i [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och använder **inställningssidan** för att [flytta domänen och e-postmeddelandet](add-domain.md).
 
@@ -111,9 +111,9 @@ Om du ska använda Microsoft 365 för ditt e-postkonto kan du ta med dig din bef
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planera för lagring och migrering av filer
 
-Microsoft 365 tillhandahåller molnlagring för enskilda personer, små organisationer och företag. Mer information om vad du vill lagra var finns [i Var du kan lagra dokument i Microsoft 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft 365 tillhandahåller molnlagring för individer, små organisationer och företag. Mer information om vad du vill lagra var finns [i Var du kan lagra dokument i Microsoft 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-- **Du kan flytta hundratals filer** till [OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx) eller till en [SharePoint-gruppwebbplats](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242). Du kan ladda upp 100 filer åt gången. Undvik att ladda upp filer som är större än 2 GB, eftersom det är den största tillåtna filstorleken som standard.
+- **Du kan flytta hundratals filer** till [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) eller till en [SharePoint-gruppwebbplats](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). Du kan ladda upp 100 filer åt gången. Undvik att ladda upp filer som är större än 2 GB, eftersom det är den största tillåtna filstorleken som standard.
   
 - **Om du vill flytta flera tusen filer** till Microsoft 365-lagring läser du [SharePoint Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=856113). Vi rekommenderar att du använder ett migreringsverktyg och överväger att anlita en [partner](https://go.microsoft.com/fwlink/?linkid=391089) som kan hjälpa dig med migreringen. Mer information om hur du migrerar ett stort antal filer finns i [Användarhandbok om SharePoint Online- och OneDrive-migrering](https://go.microsoft.com/fwlink/?LinkId=723574).
   
@@ -135,6 +135,6 @@ För större organisationer eller om du börjar från Skype för företag, lokal
 
   - **Be om hjälp så ringer vi dig**. När du har köpt Microsoft 365 kan du komma åt administrationscentret (du behöver inte köra installationen för att komma åt det). Längst ned i administrationscentret väljer du **Behöver du hjälp?** Beskriv problemet så ringer vi upp dig. 
   - **Ring [Microsoft 365 för företagssupport](../contact-support-for-business-products.md) med dina frågor**. Vi hjälper gärna till! 
-  - **Du kan även anlita en [Microsoft-partner](https://go.microsoft.com/fwlink/?linkid=391089)**. Om du har ont om tid eller har avancerade krav (som att flytta tusentals filer till Microsoft 365-molnlagring eller integrera med annan programvara) kan en erfaren partner vara till stor hjälp. 
+  - **Du kan även anlita en [Microsoft-partner](https://go.microsoft.com/fwlink/?linkid=391089)**. Om du har ont om tid, eller har avancerade krav (som att flytta tusentals filer till Microsoft 365 molnlagring eller integrera med annan programvara), kan en erfaren partner vara till stor hjälp. 
 
 - **Om du har fler än 50 anställda** kan [FastTrack-introduktionscentret](https://go.microsoft.com/fwlink/?LinkId=517115) hjälpa dig med distributionen. 

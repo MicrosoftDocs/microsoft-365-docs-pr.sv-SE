@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om principer för förfallodatum för Microsoft 365-grupper.
-ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400731"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780427"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Principer för förfallodatum för Microsoft 365-grupp
 
 Med den ökade användningen av Microsoft 365-grupper behöver administratörer och användare ett sätt att rensa oanvända grupper. Principer för förfallodatum kan hjälpa till att ta bort inaktiva grupper från systemet och göra saker renare.
 
-När en grupp upphör att gälla tas även alla tillhörande tjänster (postlådan, Planeraren, SharePoint-webbplatsen, teamet osv.) bort.
+När en grupp upphör att gälla tas även alla tillhörande tjänster (postlådan, Planner, SharePoint-webbplatsen, teamet osv.) bort.
 
 När en grupp upphör att gälla är den "mjuk borttagen" vilket innebär att den fortfarande kan återställas i upp till 30 dagar.
 
-Administratörer kan ange en förfalloperiod och alla inaktiva grupper som når slutet av den perioden och som inte förnyas tas bort. Förfallotiden börjar när gruppen skapas eller på det datum då den senast förnyades. Gruppägare skickas automatiskt ett e-postmeddelande före utgången som gör att de kan förnya gruppen för ett annat utgångsdatum. Teams-användare ser beständiga aviseringar i Teams.
+Administratörer kan ange en förfalloperiod och alla inaktiva grupper som når slutet av den perioden och som inte förnyas tas bort. Förfallotiden börjar när gruppen skapas eller på det datum då den senast förnyades. Gruppägare skickas automatiskt ett e-postmeddelande före förfallodatumet som gör att de kan förnya gruppen för ett annat utgångsdatum. Teams-användare ser beständiga aviseringar i Teams.
 
 Grupper som används aktivt förnyas automatiskt. Någon av följande åtgärder förnyar automatiskt en grupp:
 - SharePoint - visa, redigera, ladda ned, flytta, dela eller ladda upp filer.
@@ -47,9 +47,9 @@ Grupper som används aktivt förnyas automatiskt. Någon av följande åtgärder
 Det är viktigt att veta att förfallodatum är inaktiverat som standard. Administratörer måste aktivera den för sin organisation om de vill använda den.
 
 > [!NOTE]
-> Konfigurera och använda principen om förfallodatum för Microsoft 365-grupper kräver att du har men inte nödvändigtvis tilldela Azure AD Premium-licenser för medlemmarna i alla grupper som principen för förfallodatum tillämpas på. Mer information finns under [ Komma igång med Azure Active Directory Premium ](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> Konfigurera och använda principen för förfallodatum för Microsoft 365-grupper kräver att du har men inte nödvändigtvis tilldela Azure AD Premium-licenser för medlemmarna i alla grupper som principen för förfallodatum tillämpas på. Mer information finns under [ Komma igång med Azure Active Directory Premium ](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Vem kan konfigurera och använda princip för förfallodatum för Microsoft 365-grupper?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Vem kan konfigurera och använda förfalloprincipen för Microsoft 365-grupper?
 
 |Roll|Vad de kan göra|
 |---------|---------|
@@ -84,6 +84,6 @@ Om ingen av ägarna eller administratörerna av någon anledning förnyar gruppe
 
 [Översikt över bevarandeprinciper](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+[Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [Konfigurera Microsoft 365-gruppers förfallodatum](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

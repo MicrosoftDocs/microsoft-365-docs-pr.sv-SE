@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387999"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761680"
 ---
 # <a name="manage-who-can-create-groups"></a>Hantera vem som kan skapa grupper
 
@@ -45,18 +45,16 @@ I den hÃ¤r artikeln beskrivs hur du inaktiverar möjligheten att skapa grupper
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI (på andra)
 
-- Översikt
+- Projekt för webben och färdplanen
     
 Du kan begränsa skapandet av Microsoft 365-grupper till medlemmarna i en viss säkerhetsgrupp. Om du vill konfigurera detta använder du Windows PowerShell. Den här artikeln går igenom de nödvändiga stegen.
   
-Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Globala administratörer kan skapa grupper på alla sätt, till exempel Microsoft 365-administrationscentret, Planner, Teams, Exchange och SharePoint Online. Andra roller kan skapa grupper med begränsade medel, som anges nedan.
+Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa grupper. Globala administratörer kan skapa grupper på alla sätt, till exempel Microsoft 365-administrationscentret, Planner, Teams, Exchange och SharePoint Online. Andra roller kan skapa grupper med begränsade medel, listade nedan.
         
   - Exchange-administratör: Administrationscenter för Exchange, Azure AD
     
@@ -72,7 +70,7 @@ Stegen i den här artikeln hindrar inte medlemmar i vissa roller från att skapa
   
   - Administratör för användarhantering: Microsoft 365 Admin center, Yammer, Azure AD
      
-Om du är medlem i någon av dessa roller kan du skapa Microsoft 365-grupper för begränsade användare och sedan tilldela användaren som ägare till gruppen. Användare som har den här rollen kan skapa anslutna grupper i Yammer, oavsett eventuella PowerShell-inställningar som kan förhindra skapande.
+Om du är medlem i en av dessa roller kan du skapa Microsoft 365-grupper för begränsade användare och sedan tilldela användaren som ägare till gruppen. Användare som har den här rollen kan skapa anslutna grupper i Yammer, oavsett eventuella PowerShell-inställningar som kan förhindra skapande.
 
 ## <a name="licensing-requirements"></a>Licenskrav
 
@@ -121,7 +119,7 @@ Du måste använda förhandsversionen av [Azure Active Directory PowerShell for 
 
 Kopiera skriptet nedan till en textredigerare, till exempel Anteckningar, eller [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Ersätt *\<SecurityGroupName\>* med namnet på den säkerhetsgrupp som du skapade. Ett exempel:
+Ersätt *\<SecurityGroupName\>* med namnet på den säkerhetsgrupp som du skapade. Till exempel:
 
 `$GroupName = "Group Creators"`
 
@@ -173,7 +171,7 @@ Om du i framtiden vill ändra vilken säkerhetsgrupp som används kan du köra s
 
 Om du vill inaktivera begränsningen för gruppskapande och återigen tillåta alla användare att skapa grupper, ställer du in $GroupName till "" och $AllowGroupCreation till "True" och kör skriptet igen.
     
-## <a name="step-4-verify-that-it-works"></a>Steg 4: Kontrollera att det fungerar
+## <a name="step-3-verify-that-it-works"></a>Steg 3: Kontrollera att det fungerar
 
 Det kan ta trettio minuter eller mer att träda i kraft. Du kan verifiera de nya inställningarna genom att göra följande:
 
@@ -181,14 +179,14 @@ Det kan ta trettio minuter eller mer att träda i kraft. Du kan verifiera de nya
     
 2. Välj panelen **Planerare.** 
     
-3. Välj Nytt **abonnemang** i den vänstra navigeringen i Planner för att skapa en plan. 
+3. Välj Ny **plan** i den vänstra navigeringen i Planner för att skapa en plan. 
   
 4. Du bör få ett meddelande om att planen och gruppskapandet är inaktiverat.
 
 Försök med samma procedur igen med en medlem i säkerhetsgruppen.
 
 > [!NOTE]
-> Om medlemmar i säkerhetsgruppen inte kan skapa grupper kontrollerar du att de inte blockeras via principen [för OWA-postlådeprincipen.](https://go.microsoft.com/fwlink/?linkid=852135)
+> Om medlemmar i säkerhetsgruppen inte kan skapa grupper kontrollerar du att de inte blockeras via principen [för OWA-postlådeprincipen](https://go.microsoft.com/fwlink/?linkid=852135).
     
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -25,13 +25,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: 'Hitta svar på dina vanligaste faktureringsfrågor för Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 'Hitta svar på de vanligaste faktureringsfrågorna för Microsoft 365 för företag-prenumeration. '
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400767"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741686"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Vanliga faktureringsfrågor för Microsoft 365 för företag
 
@@ -75,7 +75,7 @@ Faktureringssupport erbjuds på tyska och engelska, måndag - fredag, från 09:0
   
 - I Tyskland, ring 0800 589 2330.
 
-Om du vill ha fler telefonnummer via kontakttelefoner per land eller region [kontaktar du supporten för affärsprodukter](../../admin/contact-support-for-business-products.md).
+Om du vill ha fler telefonnummer via land eller region [kontaktar du supporten för företagsprodukter](../../admin/contact-support-for-business-products.md).
   
 ::: moniker-end
 
@@ -121,7 +121,7 @@ Ja, men du måste [ringa support](../../admin/contact-support-for-business-produ
 
 Ja. Så här hämtar du ditt faktureringsutdrag som en bifogad fil i ett e-postmeddelande:
   
-1. Gå till sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret för Microsoft 365 eller välj aviseringar om **Billing** \> **fakturering.**
+1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i Microsoft 365.
 
 2. Under **Ta emot faktureringsutdrag som e-postbilaga?** **On**
 
@@ -134,7 +134,7 @@ Ja. Så här hämtar du ditt faktureringsutdrag som en bifogad fil i ett e-postm
 
 Ja. Så här hämtar du ditt faktureringsutdrag som en bifogad fil i ett e-postmeddelande:
   
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
+1. Gå till sidan **Faktureringsmeddelanden** på sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsfakturering</a> i administrationscentret.
 
 2. Under **Ta emot faktureringsutdrag som e-postbilaga?** **On**
 
@@ -148,7 +148,7 @@ Du kan säga upp avgiftsbelagda prenumerationer och utvärderingsprenumerationer
   
 ## <a name="how-do-i-see-my-current-order-balance"></a>Hur ser jag mitt aktuella ordersaldo?
 
-Summan som visas på sidan Räkningar är fakturasaldot - summan från fakturadatumet. Om du vill se ditt aktuella ordersaldo visar du din senaste order eller faktura. 
+Summan som visas på sidan Räkningar är fakturasaldot - summan från fakturadatumet. Om du vill se ditt aktuella ordersaldo visar du din senaste beställning eller faktura. 
   
 ::: moniker range="o365-worldwide"
 
@@ -200,9 +200,10 @@ Du kan [ansöka om status som skattebefriad](tax-information.md#apply-for-tax-ex
 
 ::: moniker range="o365-worldwide"
 
-1. Välj ett fakturadatumintervall på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fakturerar.</a>
-  
-2. Om du vill skriva ut eller spara en PDF-kopia av fakturan väljer du **Hämta faktura-PDF**och skriver sedan ut PDF-filen.
+1. Gå till **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">sidan Faktureringsfakturor & betalningar i administrationscentret.</a>
+2. Välj ett fakturadatumintervall på fliken **Fakturor.**
+3. Markera den faktura som du vill visa.
+4. Om du vill skriva ut eller spara en PDF-kopia av fakturan väljer du **Hämta PDF**och skriver sedan ut PDF-filen.
 
 Mer information finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md).
 
@@ -210,7 +211,7 @@ Mer information finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice
 
 ::: moniker range="o365-germany"
 
-1. Välj ett fakturadatumintervall på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturerar.</a>
+1. Välj ett fakturadatumintervall på sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Räkningar.</a>
   
 2. Om du vill skriva ut eller spara en PDF-kopia av fakturan väljer du **Hämta faktura-PDF**och skriver sedan ut PDF-filen.
 
@@ -220,7 +221,7 @@ Mer information finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice
 
 ::: moniker range="o365-21vianet"
 
-1. Välj ett fakturadatumintervall på sidan Fakturerar.
+1. Välj ett fakturadatumintervall på sidan Räkningar.
   
 2. Om du vill skriva ut eller spara en PDF-kopia av fakturan väljer du **Hämta faktura-PDF**och skriver sedan ut PDF-filen.
 

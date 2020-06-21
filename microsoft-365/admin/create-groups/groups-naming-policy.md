@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Lär dig hur du skapar en namngivningsprincip för Microsoft 365-grupper.
-ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ae216d0d8f3319e9633d300d785b4a8c31702798
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388011"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702554"
 ---
 # <a name="groups-naming-policy"></a>Namngivningspolicy för grupper
 
-Du använder en gruppnamngivningsprincip för att tillämpa en konsekvent namngivningsstrategi för grupper som skapats av användare i organisationen. En namngivningsprincip kan hjälpa dig och dina användare att identifiera funktionen för gruppen, medlemskap, geografisk region eller vem som skapade gruppen. Namngivningsprincipen kan också hjälpa till att kategorisera grupper i adressboken. Du kan använda principen för att blockera specifika ord från att användas i gruppnamn och alias.
+Du använder en gruppnamnprincip för att tillämpa en konsekvent namngivningsstrategi för grupper som skapats av användare i organisationen. En namngivningsprincip kan hjälpa dig och dina användare att identifiera funktionen för gruppen, medlemskap, geografisk region eller vem som skapade gruppen. Namngivningsprincipen kan också hjälpa till att kategorisera grupper i adressboken. Du kan använda principen för att blockera specifika ord från att användas i gruppnamn och alias.
 
 Namngivningsprincipen tillämpas på grupper som skapas i alla grupparbetsbelastningar (som Outlook, Microsoft Teams, SharePoint, Planner, Yammer osv.). Den tillämpas på både gruppnamnet och gruppaliaset. Den tillämpas när en användare skapar en grupp och när gruppnamn eller alias redigeras för en befintlig grupp.
 
@@ -69,7 +69,7 @@ Du kan använda attribut som kan hjälpa till att identifiera vem som skapade gr
 
 Azure Active Directory-attribut (Azure AD) stöds är [Avdelning], [Företag], [Office], [StateOrProvince], [CountryOrRegion] och [Titel].
 
-- Användarattribut som inte stöds betraktas som fasta strängar, t.ex. "[postalCode]"
+- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
 
 - Tilläggsattribut och egna attribut stöds inte.
 
@@ -81,13 +81,16 @@ Vi rekommenderar att du använder attribut som har värden ifyllda för alla anv
 
 - Prefix och suffix får innehålla specialtecken som stöds i gruppens namn och gruppalias. När prefixen och suffixen innehåller specialtecken som inte är tillåtna i gruppaliaset, tillämpas de bara på gruppnamnet. I det här fallet skiljer sig de prefix och suffix som tillämpas på gruppnamnet från dem som tillämpas på gruppaliaset.
 
+  > [!NOTE]
+  > En period (.) eller ett bindestreck (-) tillåts var som helst i gruppnamnet, utom i början eller slutet av namnet. Ett understreck (_) tillåts var som helst i gruppnamnet, inklusive i början eller slutet av namnet.
+
 - Om du använder Yammer Microsoft 365-anslutna grupper undviker du att använda följande tecken i namnprincipen: @, \# , \[ , , \] \<, and \> . Om dessa tecken finns i namngivningsprincipen kan vanliga Yammer-användare inte skapa grupper.
 
 ## <a name="custom-blocked-words"></a>Anpassade blockerade ord
 
 Du kan ange en kommaavgränsad lista med blockerade ord som ska blockeras i gruppnamn och alias.
 
-Inga substrängsökningar utförs. Närmare bestämt krävs en exakt matchning mellan användarens angivna namn och de anpassade blockerade orden för att utlösa ett fel. Sub-string sökning görs inte så att användarna kan använda några av de vanliga orden som "Klass" även om "ass" är ett blockerat ord.
+Inga substrängsökningar utförs. Närmare bestämt krävs en exakt matchning mellan användarens angivna namn och de anpassade blockerade orden för att utlösa ett fel. Sub-string sökning görs inte så att användarna kan använda några av de vanligaste orden som "Klass" även om "ass" är ett blockerat ord.
 
 **Saker att hålla utkik efter:**
 
@@ -101,7 +104,7 @@ Inga substrängsökningar utförs. Närmare bestämt krävs en exakt matchning m
 
 ## <a name="admin-override"></a>Åsidosättning för administratör
 
-Vissa administratörer är undantagna från de här principerna i alla grupparbetslaster och slutpunkter så att de kan skapa grupper med blockerade ord och med de namnkonventioner de önskar. Nedan följer listan över administratörsroller som är undantagna från namnprincipen för grupp.
+Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
 
 - Global administratör
 

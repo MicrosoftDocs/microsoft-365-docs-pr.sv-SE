@@ -1,5 +1,5 @@
 ---
-title: Dela webbplatser och filer externt
+title: Dela webbplatser och filer med gästanvändare
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Läs om hur du delar webbplatser och filer med personer utanför organisationen. '
-ms.openlocfilehash: 6990b4ffe45af1a591c72e36c1348d1e804e829b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399560"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780055"
 ---
-# <a name="share-sites-and-files-externally"></a>Dela webbplatser och filer externt
+# <a name="share-sites-and-files-with-guest-users"></a>Dela webbplatser och filer med gästanvändare
 
 ::: moniker range="o365-21vianet"
 
@@ -62,14 +62,14 @@ Svaren på dessa frågor hjälper dig att planera en strategi för innehållsdel
 |Dela ett dokument, men kräver inte autentisering.  <br/> |Dela en länk till ett dokument som inte innehåller känslig eller konfidentiell information med personer utanför organisationen så att de kan visa eller uppdatera det med feedback. Dessa personer behöver inte tillgång till innehåll på webbplatsen.  <br/> |
    
 > [!IMPORTANT]
-> När du inaktiverar extern delning har personer utanför organisationen som för närvarande har åtkomst inte längre åtkomst. Om du senare aktiverar extern delning igen återställs åtkomsten för dessa personer. Om du vill förhindra att en användare kommer åt ett delat innehåll [tar du bort dem från Microsoft 365-gruppen,](/office365/admin/create-groups/add-or-remove-members-from-groups)tar bort deras behörigheter från webbplatsen eller slutar dela filen eller mappen med [dem](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> När du inaktiverar extern delning har personer utanför organisationen som för närvarande har åtkomst inte längre åtkomst. Om du senare aktiverar extern delning igen återställs åtkomsten för dessa personer. Om du vill förhindra att en användare kommer åt ett delat innehåll [tar du bort dem från Microsoft 365-gruppen,](/office365/admin/create-groups/add-or-remove-members-from-groups)tar bort deras behörigheter från webbplatsen eller slutar dela filen eller mappen med [dem](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Aktivera extern delning på organisationsnivå
 
 Extern delning är aktiverat som standard på organisationsnivå, men inte för alla nya webbplatser. Information finns i [Översikt över extern delning](/sharepoint/external-sharing-overview). 
 
 > [!NOTE]
->  Om du vill tillåta extern delning för en webbplats måste du tillåta den på organisationsnivå. 
+>  Om du vill tillåta extern delning för en webbplats måste du tillåta det på organisationsnivå. 
   
 1. Skriv "extern" i sökrutan på startsidan i [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)och välj **Extern delning av webbplatser**.
   

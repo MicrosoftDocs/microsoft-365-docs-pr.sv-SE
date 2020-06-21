@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
-ms.openlocfilehash: 277c48a8ac9503681eb695fba3697ddd16e49b88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588246"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755194"
 ---
 # <a name="help-and-support-for-eop"></a>Hjälp och support för EOP
 
-I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor hjälper de tekniska supportresurserna i det här avsnittet dig att hitta svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor hjälper de tekniska supportresurserna i det här avsnittet dig att hitta svar om du har problem med EOP. Microsoft tillhandahåller hjälp för EOP på en mängd olika platser och metoder, inklusive självsupport och assisterad support.
 
 ## <a name="self-support-options"></a>Alternativ för självstöd
 
@@ -33,7 +33,7 @@ När du loggar in innehåller Microsoft 365-administrationscentret information o
 
 [Microsoft 365-community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Felsökare för e-postflöde](https://aka.ms/FixEmail)
 
@@ -55,7 +55,7 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
 3. Använd formuläret för att lägga till information om problemet, söka efter lösningar på tidigare problem eller bifoga loggar eller relaterade filer.
 
-### <a name="ask-for-help-on-the-telephone"></a>Be om hjälp på telefon
+### <a name="ask-for-help-on-the-telephone"></a>Be om hjälp i telefon
 
 1. Logga in på administrationscentret för Microsoft 365.
 
@@ -63,9 +63,9 @@ Mer information om hur Premier Support kan hjälpa din organisation att maximera
 
    Om du har frågor innan du köper EOP eller frågor om fakturering och prenumerationer går du till **Fakturering och** \> **Ask for Customer Support** \> **prenumerationssupport**för kundtjänst.
 
-3. Använd den virtuella agenten för att söka efter det senaste lämpliga telefonnumret.
+3. Använd den virtuella agenten för att söka efter det senaste telefonnumret.
 
-## <a name="support-telephone-numbers"></a>Telefonnummer för support
+## <a name="support-telephone-numbers"></a>Support telefonnummer
 
 Microsoft tillhandahåller lokala eller avgiftsfria telefonnummer för produktsupport runt om i världen. Många av dessa supportcenter hjälper dig på ditt lokala språk under kontorstid eller på engelska 24 timmar om dygnet, varje dag. Om du inte ser din plats nedan använder du den virtuella agenten enligt beskrivningen ovan för att hitta ditt lokala supporttelefonnummer.
 

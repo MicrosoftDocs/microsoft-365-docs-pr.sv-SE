@@ -1,5 +1,5 @@
 ---
-title: Konfigurera säkert samarbete med Microsoft 365
+title: Konfigurera säkerhet samarbete med hjälp av Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-description: Lär dig hur du konfigurerar Teams för att skydda dina data baserat på dess känslighet
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+description: Lär dig hur du konfigurerar teams för att skydda dina data baserat på dess känslighet
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159473"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724801"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkert samarbete med Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkerhet samarbete med hjälp av Microsoft 365
 
 Att enkelt kunna dela information med rätt personer samtidigt som det förhindrar överdelning är nyckeln till en organisations framgång. Detta inkluderar att kunna dela känsliga data på ett säkert sätt med endast dem som ska ha tillgång till dem. Beroende på projektet kan det handla om att dela känsliga data med personer utanför organisationen.
 
@@ -30,7 +30,7 @@ Den här lösningsvägledningen innehåller två komponenter som hjälper dig at
 
 ![Distribuera team med lämpligt skydd och konfigurera extern delning med lämpliga säkerhetsinställningar](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Om det inte finns några mångsidiga och lätt att använda samarbetsverktyg samarbetar användarna ofta via e-postdokument. Detta är en tråkig och felbenägen samarbetsmetod och kan öka risken för olämpligt informationsutbyte. Om människor tycker att det är för svårt att dela information kan de återgå till att använda konsumentprodukter som inte styrs av IT. Detta kan innebära en ännu större risk.
+Om det inte finns några mångsidiga och lätt att använda samarbetsverktyg samarbetar användarna ofta genom att skicka dokument via e-post. Detta är en tråkig och felbenägen samarbetsmetod och kan öka risken för olämpligt informationsutbyte. Om människor tycker att det är för svårt att dela information kan de återgå till att använda konsumentprodukter som inte styrs av IT. Detta kan innebära en ännu större risk.
 
 Med Microsoft 365 kan du distribuera Teams med en mängd olika konfigurationer som hjälper:
 
@@ -45,7 +45,7 @@ De flesta organisationer har en mängd information, med varierande grad av käns
 - Specifika personer inom organisationen
 - Specifika personer inom och utanför organisationen
 
-Information som marknadsföringsbroschyrer är avsedda för utbyte i stort sett utanför organisationen. Information som cafeteria menyer är inte avsedda för extern delning, men skulle ha någon inverkan på verksamheten om de delades externt. Dessa typer av information behöver lite eller inget skydd.
+Information såsom marknadsföringsbroschyrer är avsedda för att dela i stort sett utanför organisationen. Information som kafeteria menyer är inte avsedda för extern delning, men skulle inte ha någon inverkan på verksamheten om de delades externt. Dessa typer av information behöver lite eller inget skydd.
 
 Samma marknadsföringsbroschyrer, under utveckling, kan bara delas inom organisationen. I det här fallet kan standarddelningsinställningarna i Teams vara tillräckliga.
 
@@ -57,19 +57,28 @@ Information som är avgörande för organisationens framgång, eller som har str
 
 För alla scenarier som anges ovan kan du använda team i Microsoft Teams för att lagra, dela och samarbeta med informationen. 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>Använda Teams för alla typer av data
+Om du vill konfigurera säker collabration använder du dessa funktioner och funktioner i Microsoft 365.
+
+| Produkt eller komponent | Resurs eller funktion | Licensiering |
+|:-------|:-----|:-------|
+| Office 365 Avancerat skydd | ATP Säkra bilagor för SPO, OneDrive och teams; ATP säkra dokument; ATP säkra länkar för team    | Microsoft 365 E1, E3 och E5 |
+| SharePoint    | Webbplats- och fildelningsprinciper, behörigheter för webbplatsdelning, Delningslänkar, Åtkomstbegäranden, Inställningar för delning av webbplatsgäst | Microsoft 365 E1, E3 och E5 |
+| Microsoft Teams   | Gäståtkomst, privata team, privata kanaler | Microsoft 365 E1, E3 och E5 |
+| Microsoft 365 Efterlevnad  | Känslighetsetiketter    | Microsoft 365 E3 och E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>Använda Teams för alla typer av data
 
 För att hantera åtkomst till information med olika känslighet har vi utvecklat [tre olika skyddsnivåer för Teams.](configure-teams-three-tiers-protection.md) Du kan anpassa någon av dessa nivåer för att bättre tillgodose behoven eller ditt företag. 
 
-![Tummen bild för Teams logisk arkitektur affisch](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
+![Miniatyrbild av affischen för Teams logiska arkitektur](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Dessa nivåer - *baslinje*, *känslig*och *mycket känslig* - ökar gradvis de skydd som hjälper till att förhindra överdelning och potentiellt informationsläckage, som visas i följande tabell.
+Dessa nivåer - *baslinje,* *känslig*och *mycket känslig* - ökar gradvis de skydd som hjälper till att förhindra överdelning och potentiellt informationsläckage, som visas i följande tabell.
 
 ||**Baslinjenivå**|**Känslig nivå**|**Mycket känslig nivå**|
 |:--|:-----------|:------------|:-------------------|
 |Offentligt eller privat team|Antingen|Privat|Privat|
-|Oautentiserade delning|Blockerade|Blockerade|Blockerade|
+|Oautentiserad delning|Blockerade|Blockerade|Blockerade|
 |Fildelning|Tillåtet|Tillåtet|Endast gruppägare kan dela.|
 |Lagmedlemskap|Vem som helst kan gå med i offentliga team.<br>Teamägare godkännande krävs för att gå med i privata team.|Teamägare godkännande krävs för att gå med.|Teamägare godkännande krävs för att gå med.|
 |Dokumentkryptering|||Finns med känslighetsetikett|
@@ -81,7 +90,7 @@ Konfigurera dessa nivåer innebär:
 - Konfigurera inställningar i Teams för gäståtkomst och privata kanaler
 - Konfigurera inställningar på ett teams associerade SharePoint-webbplats för intern delning och gästdelning, åtkomstbegäranden och delningslänkar
 - För *känsliga* och *mycket känsliga* nivåer konfigurerar du känslighetsetiketter för att klassificera teamen och styr gästdelning och åtkomst från ohanterade enheter
-- För den *mycket känsliga* nivån konfigurerar du en känslighetsetikett för att kryptera de dokument som den används för
+- För den *mycket känsliga* nivån konfigurerar du en känslighetsetikett för att kryptera de dokument som den används på
 
 Börja med baslinjenivån och lägg sedan till team som använder de *känsliga* och *mycket känsliga* nivåerna efter behov för att skydda informationen i organisationen. Se de här resurserna för att komma igång:
 
@@ -91,7 +100,7 @@ Börja med baslinjenivån och lägg sedan till team som använder de *känsliga*
 
 Om du har ett mycket känsligt projekt som kräver ytterligare skydd mot delning även inom organisationen kan du konfigurera ett team som använder sin egen känslighetsetikett för att kryptera filer så att endast gruppmedlemmar kan läsa dem. Mer information [finns i Konfigurera ett team med säkerhetsisolering.](secure-teams-security-isolation.md)
 
-## <a name="sharing-with-people-outside-your-organization"></a>Dela med personer utanför organisationen
+### <a name="sharing-with-people-outside-your-organization"></a>Dela med personer utanför organisationen
 
 Du kan behöva [dela information om eventuell känslighet med personer utanför organisationen](collaborate-with-people-outside-your-organization.md). Detta kan vara allt från att dela ett enda dokument med en enda person till att samarbeta i ett större projekt med en stor partnerorganisation eller frilansare från hela världen. I Microsoft 365 kan det här utbudet av extern delning göras enkelt och med lämpliga skyddsåtgärder för att skydda din känsliga information.
 
@@ -107,7 +116,13 @@ Beroende på hur känslig informationen är kan du lägga till skyddsåtgärder 
 - [Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen](share-limit-accidental-exposure.md)
 - [Skapa en säker miljö för gästdelning](create-secure-guest-sharing-environment.md)
 
-Om du har ett stort projekt med en partnerorganisation kan du använda Azure Entitlement Management för att hantera gäster från den organisationen i ett team som du har konfigurerat för projektet. Mer information finns i [Skapa ett B2B-extranät med hanterade gäster.](b2b-extranet.md)
+Om du har ett större projekt med en partnerorganisation kan du använda Azure Entitlement Management för att hantera gäster från den organisationen i ett team som du har konfigurerat för projektet. Mer information finns i [Skapa ett B2B-extranät med hanterade gäster.](b2b-extranet.md)
+
+## <a name="deploy-the-secure-collaboration-solution"></a>Distribuera lösningen för säkert samarbete
+
+När du är redo att distribuera den här lösningen fortsätter du med följande steg:
+1. Konfigurera de [tre olika skyddsnivåerna för Teams](configure-teams-three-tiers-protection.md).
+2. Konfigurera inställningar för [att dela information om eventuell känslighet med personer utanför organisationen](collaborate-with-people-outside-your-organization.md).
 
 ## <a name="see-also"></a>Se även
 

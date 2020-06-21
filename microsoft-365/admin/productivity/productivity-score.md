@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Microsofts produktivitetspoäng.
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399188"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754802"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsofts produktivitetspoäng (förhandsversion)
 
@@ -42,21 +42,21 @@ Vi tillhandahåller data, insikter och rekommendationer inom två områden:
 
     Vi ger dessa insikter eftersom när människor samarbetar online sparar de tid. När de har friheten att arbeta på alla enheter, de är mer produktiva och nöjda. När de kan kommunicera på ett flexibelt sätt är de mer effektiva, bildar bättre relationer och din organisation är mer enhetlig. För bevis, se [Forrester rapport](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Teknikerfarenhet:** Produktiviteten är beroende av tillförlitlig och högpresterande teknik samt effektiv användning av Microsoft 365. Vi tillhandahåller slutpunktsanalys, som ger dig insikter och rekommendationer om enhetsinstallation och starttider, och vi tillhandahåller Microsoft 365-nätverksanslutningsstatistik för din organisation.
+- **Teknikerfarenhet:** Produktiviteten är beroende av tillförlitlig och högpresterande teknik samt effektiv användning av Microsoft 365. Vi tillhandahåller slutpunktsanalys, som ger dig insikter och rekommendationer om enhetsinstallation och starttider, och vi tillhandahåller Microsoft 365 nätverksanslutningsinsikter för din organisation.
 
 Mer information om slutpunktsanalys finns [i översikten över nätverksanslutningen](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Hur poängen beräknas
 
-Din produktivitetspoäng baseras på de sammanlagda poängen för dina kategorier av medarbetar- och teknikupplevelser. Varje kategori viktas lika, med totalt 100 poäng per kategori. Den totala möjliga poäng för produktivitetspoäng är 500.
+Din produktivitetspoäng baseras på de sammanlagda poängen för dina kategorier av medarbetar- och teknikupplevelse. Varje kategori viktas lika, med totalt 100 poäng per kategori. Den totala möjliga poäng för produktivitetspoäng är 500.
 
 ### <a name="score-categories"></a>Poängkategorier 
 
-- Samarbete om innehåll (100 poäng)
+- Samarbete med innehåll (100 poäng)
 - Meddelande (100 poäng)
 - Rörlighet (100 poäng)
-- Analys av slutpunkt (100 poäng)
+- Slutpunktsanalys (100 poäng)
 - Nätverksanslutning (100 poäng)
 - **Totalt möjligt = 500 poäng**
  
@@ -71,7 +71,7 @@ Din poäng uppdateras dagligen och återspeglar användaråtgärder som slutför
 
 ## <a name="pre-requisites"></a>Förutsättningar 
 
-Du behöver en Microsoft 365 för företag eller Office 365 för företagsprenumeration för att få data från medarbetarnas erfarenhet och du måste använda molntjänster för flera innehavare. Om du vill hämta slutpunktsanalysdata för din klientorganisation måste du lägga till Microsoft Intune i din prenumeration. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar.       När du har Intune kan du aktivera slutpunktsanalys inom Intune-upplevelsen. Läs mer om Microsoft Intune. 
+Du behöver en Microsoft 365 för företag eller Office 365 för företagsprenumeration för att få data om medarbetarupplevelsen och du måste använda molntjänster för flera innehavare. Om du vill hämta slutpunktsanalysdata för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar.       När du har Intune kan du aktivera slutpunktsanalys inom Intune-upplevelsen. Läs mer om Microsoft Intune. 
 
 Om du vill visa produktivitetspoängen för din organisation måste du ha en av följande roller: 
 
@@ -99,9 +99,9 @@ Peer-riktmärket för slutpunktsanalys innehåller mål för enhetens startprest
 
 För nätverksanslutning är det rekommenderade riktmärket 80 poäng.
 
-Avsnittet **Poängfördelning** ger en uppdelning av produktivitetspoängen med riktmärken efter personal- och teknikupplevelseområden.
+Avsnittet **Poängfördelning** ger en uppdelning av produktivitetspoängen med riktmärken efter anställdas och teknikerfarenhetsområden.
 
-Poänghistoriken visar hur dina poäng i varje kategori har förändrats under de senaste 6 månaderna.
+Poänghistoriken visar hur dina poäng i varje kategori har ändrats under de senaste 6 månaderna.
 
 **Erfarenhetsområdena Medarbetarnas erfarenhet** och **Teknik** innehåller de primära insikterna för kategorierna inom dessa områden. Du kan klicka på varje kategori för att se djupare insikter.
 
@@ -123,11 +123,11 @@ Medarbetare: Personer som samarbetar med onlinefiler med OneDrive eller SharePoi
 
 De filtyper som övervägs för samarbete är Word-, Excel-, PowerPoint-, OneNote- och PDF-filer.
 
-Vi ger insikter om starttiderna och konfigurerar för enheter i din organisation samt nätverksanslutningsinsikter för innehållssamarbete eftersom samarbete med onlinefiler kräver tillförlitliga enheter som startar snabbt och har uppdaterad programvara samt bra anslutning till Microsoft 365.
+Vi ger insikter om starttider och konfigurera för enheter i din organisation samt nätverksanslutningsinsikter för innehållssamarbete eftersom samarbete med onlinefiler kräver tillförlitliga enheter som startar snabbt och har uppdaterad programvara samt bra anslutning till Microsoft 365.
 
 ### <a name="communication-details"></a>Information om kommunikation
 
-Den primära insikten för kommunikation är hur ofta personer i organisationen använder e-post, chatt och community-inlägg för att kommunicera. Den här insikten är viktig eftersom när människor använder en mängd olika kommunikationsverktyg i realtid kan de välja det kommunikationssätt som hjälper dem att bli mest effektiva, och de har verktyg som chatt och grupper som hjälper dem att utveckla relationer över kontorsplatser.
+Den primära insikten för kommunikation är hur ofta personer i organisationen använder e-post, chatt och communityinlägg för att kommunicera. Den här insikten är viktig eftersom när människor använder en mängd olika kommunikationsverktyg i realtid kan de välja det kommunikationssätt som hjälper dem att bli mest effektiva, och de har verktyg som chatt och grupper som hjälper dem att utveckla relationer över kontorsplatser.
 
 ### <a name="mobility-details"></a>Information om rörlighet
 
@@ -135,6 +135,22 @@ Den primära insikten för mobilitet är antalet personer som får åtkomst till
 
 Vi mäter procentandelen och det absoluta antalet personer som använde minst en Microsoft 365 produktivitetsapp på två eller flera plattformar, inklusive stationära, mobila och webb. De produktivitetsappar vi mäter är Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype. Personer måste ha Microsoft 365-appar för företags-, Exchange-, Yammer-, Skype- eller Teams-licenser som ska mätas. 
 
-## <a name="we-want-to-hear-from-you"></a>vi vill höra från dig
+## <a name="business-continuity-special-report"></a>Särskild rapport om kontinuitet i verksamheten
+
+Rapporten Affärskontinuitet är en begränsad workplace intelligence-rapport som är tillgänglig för alla Microsoft 365-kunder för att hjälpa dem att vägleda sina organisationer under den här utmanande tiden.  
+
+Den här rapporten hjälper företagsledare att förstå: 
+
+- Hur samarbete och kommunikation påverkas av övergången till distansarbete. 
+
+- Effekten på balansen mellan arbete och privatliv när människor anpassar sig till att arbeta hemifrån. 
+
+- Om människor använder möten på ett effektivt sätt och hur de 
+
+[Läs mer om rapporten Affärskontinuitet](https://aka.ms/bcrps)
+
+[Läs mer om Microsoft Graph](https://docs.microsoft.com/graph/)
+
+## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
 Vänligen dela dina tankar om Produktivitetspoäng och dina idéer om hur du kan förbättra den. Använd avsnitten **Feedback** i produkten och/eller kontakta produktivitetspoängteamet på ProductivityScorePreview@service.microsoft.com.

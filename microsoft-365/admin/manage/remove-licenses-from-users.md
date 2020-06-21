@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Läs om hur du tar bort licenser från användarkonton.
-ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432237"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780080"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
@@ -48,8 +48,8 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 1. Gå till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.
 2. Välj den produkt som du vill ta bort licenser för.
 3. Välj de användare som du vill ta bort licenser för.
-4. Välj Licenser för **ta bort tilldelning**.
-5. Välj **Ta bort tilldelning**i rutan Ej tilldela **licenser** .
+4. Välj **Licenser för ta bort tilldelning**.
+5. Välj **Ta bort tilldelning**i rutan Licenser för **avtilldelning** .
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 3. Välj **Redigera**på raden **Produktlicenser** till höger .
 
-4. I fönstret **Produktlicenser** växlar du växlingsknappen till **läget Av** för den licens som du vill ta bort tilldelningen för användaren. Om du till exempel stänger av Office 365 Enterprise E3-licensen avtilldelar den licensen och alla tjänster under den licensen för den användaren.
+4. I fönstret **Produktlicenser** växlar du växlingsknappen till **avpositionen** för den licens som du vill ta bort tilldelningen för användaren. Om du till exempel stänger av Office 365 Enterprise E3-licensen avtilldelningar den licensen och alla tjänster under den licensen för den användaren.
 
 5. Längst ned i fönstret **Produktlicenser** väljer du **Spara** \> **Stäng** \> **Stäng**.
 
@@ -89,7 +89,7 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 3. Välj **Redigera**på raden **Produktlicenser** till höger .
 
-4. I fönstret **Produktlicenser** växlar du växlingsknappen till **läget Av** för den licens som du vill ta bort tilldelningen för användaren. Om du till exempel stänger av Office 365 Enterprise E3-licensen avtilldelar den licensen och alla tjänster under den licensen för den användaren.
+4. I fönstret **Produktlicenser** växlar du växlingsknappen till **avpositionen** för den licens som du vill ta bort tilldelningen för användaren. Om du till exempel stänger av Office 365 Enterprise E3-licensen avtilldelningar den licensen och alla tjänster under den licensen för den användaren.
 
 5. Längst ned i fönstret **Produktlicenser** väljer du **Spara** \> **Stäng** \> **Stäng**.
 
@@ -145,7 +145,7 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 - Du kan [ta bort licenser från användarkonton med Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
-- Du kan även [ta bort användarkonton](../add-users/delete-a-user.md) som har tilldelats en licens om du vill göra licensen tillgänglig för andra användare. När du tar bort ett användarkonto blir licensen direkt tillgänglig att tilldelas till någon annan.
+- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 - När en licens tas bort från en användare lagras data som är associerade med det kontot i 30 dagar. Efter respitperioden på 30 dagar tas data bort och kan inte återställas.
 
@@ -153,11 +153,11 @@ När du använder sidan **Licenser** för att ta bort tilldelning av licenser av
 
 - Dessutom är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Content Search eller Advanced eDiscovery när licensen tas bort. Mer information finns i avsnittet "Söka frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du bevara postlådedata för ett borttaget användarkonto med hjälp av [inaktiva postlådor.](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365) Mer information finns i [Skapa och hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+- Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du bevara postlådedata för ett borttaget användarkonto med hjälp av [inaktiva postlådor](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). Mer information finns i [Skapa och hantera inaktiva postlådor i Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - Information om hur du blockerar en användares åtkomst till Microsoft 365-data efter att licensen har tagits bort och hur du får åtkomst till data efteråt finns i [Ta bort en tidigare anställd](../add-users/remove-former-employee.md).
 
-- Om du tar bort en användares licens och de fortfarande har Office installerat visas [meddelanden om olicensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) när de använder Office.
+- Om du tar bort en användares licens och de fortfarande har Office installerat visas [meddelanden om olicensierad produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) när de använder Office.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

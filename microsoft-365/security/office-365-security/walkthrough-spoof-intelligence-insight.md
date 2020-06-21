@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur falska intelligens insikt fungerar, inklusive hur man snabbt avgöra vilka avsändare som lagligen skickar dig oautentiserade e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566710"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726513"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Genomgång - ATP Spoof intelligens insikt i Microsoft 365
 
-I Microsoft 365-organisationer med Atp (Advanced Threat Protection) kan du använda den falska intelligensinsikten för att snabbt avgöra vilka avsändare som lagligen skickar oautentiserade e-postmeddelanden till dig. Genom att tillåta dem att skicka falska meddelanden kan du minska risken för att falska positiva identifieringar går till dina användare. Du kan också använda den falska intelligensinsikten för att övervaka och hantera tillåtna domänpar för att tillhandahålla ett extra säkerhetslager och förhindra att osäkra meddelanden kommer till din organisation.
+I Microsoft 365-organisationer med Atp (Advanced Threat Protection) kan du använda den falska intelligensinsikten för att snabbt avgöra vilka avsändare som lagligen skickar oautentiserade e-postmeddelanden till dig. Genom att tillåta dem att skicka falska meddelanden kan du minska risken för att falska positiva identifieringar går till användarna. Du kan också använda den falska intelligensinsikten för att övervaka och hantera tillåtna domänpar för att tillhandahålla ett extra säkerhetslager och förhindra att osäkra meddelanden kommer till din organisation.
 
 Om du inte har tidigare information [om rapporter och insikter i Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)kan det hjälpa dig att se hur du enkelt kan navigera från en instrumentpanel till en insikt och rekommenderade åtgärder.
 
-Den här genomgången är en av flera för Security & Compliance Center. Om du vill navigera i rapporter och insikter finns i genomgångarna i avsnittet Närliggande ämnen.
+Den här genomgången är en av flera för Security & Compliance Center. Om du vill navigera i rapporter och insikter läser du genomgångarna i avsnittet Närliggande ämnen.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -39,21 +39,26 @@ Den här genomgången är en av flera för Security & Compliance Center. Om du v
 
   Du kan visa den falska intelligensinsikten från mer än en instrumentpanel i Security & Compliance Center. Oavsett vilken instrumentpanel du tittar på ger insikten samma information och gör att du snabbt kan utföra samma uppgifter.
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill använda den falska informationsinsikten måste du vara medlem i rollgrupperna **Organisationshantering,** **Säkerhetsadministratör**eller **Säkerhetsläsare.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste tilldelas behörigheter innan du kan göra procedurerna i det här avsnittet. Om du vill använda den falska intelligensinsikten måste du vara medlem i någon av följande rollgrupper:
 
-- Du aktiverar och inaktiverar falska underrättelser i ATP:s principer för phishing.You enable and disable spoof intelligence in ATP anti-phishing policies. Mer information finns [i Konfigurera ATP-principer för nätfiske i Microsoft 365](configure-atp-anti-phishing-policies.md).
+  - **Organisationshantering** eller **säkerhetsadministratör** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organisationshantering** eller **hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Säkerhetsläsaren** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Endast visningsorganisation i** [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- Du aktiverar och inaktiverar falska underrättelser i ATP:s principer för phishing.You enable and disable spoof intelligence in ATP anti-phishing policies. Mer information finns [i Konfigurera ATP:s principer för phishing-phishing i Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 - I Microsoft 365-organisationer med Exchange Online-postlådor och i fristående Exchange Online Protection (EOP) utan Exchange Online-postlådor kan du använda falska underrättelser för att övervaka och hantera avsändare som du skickar meddelanden som inte har autentiseringslag. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öppna den falska intelligensinsikten i Security & Compliance Center
 
-1. Gå till instrumentpanelen för & **efterlevnad i** Säkerhets- & Compliance \> **Center.**
+1. Gå till **instrumentpanelen för &-efterlevnad i** Säkerhets- & Compliance \> **Center.**
 
 2. Leta efter något av följande objekt på raden **Insikter:**
 
    - **Falska underrättelser är aktiverad:** Insikten heter **Falska domäner som misslyckades autentisering av de senaste 30 dagarna**. Detta är standardvärdet.
 
-   - **Falska underrättelser är inaktiverat**: Insikten i namnet **Aktivera Spoof Protection**, och genom att klicka på den kan du aktivera falska underrättelser.
+   - **Falska underrättelser är inaktiverat**: Insikten i namnet **Aktivera förfalskningsskydd**– och genom att klicka på den kan du aktivera falska underrättelser.
 
 3. Insikten på instrumentpanelen visar information så här:
 
@@ -77,23 +82,23 @@ Den här genomgången är en av flera för Security & Compliance Center. Om du v
 
    - **Högförtroende parodi:** Microsoft 365 fick starka signaler om att dessa domäner är misstänkta, baserat på de historiska sändningsmönstren och ryktespoängen för domänerna. Microsoft 365 är mycket övertygade om att domänerna är förfalskning och att meddelanden som skickas från dessa domäner är mindre benägna att vara legitima.
 
-   - **Måttlig förtroende parodi:** Microsoft 365 fick måttliga signaler om att dessa domäner är misstänkta, baserat på historiska sändningsmönster och rykte poäng av domänerna. Office 365 är måttligt säker på att domänerna förfalskar och att meddelanden som skickas från dessa domäner är legitima. Denna hink har en större chans att innehålla falska positiva (FPs) än hög förtroende parodi hink.
+   - **Måttlig förtroende parodi:** Microsoft 365 fick måttliga signaler om att dessa domäner är misstänkta, baserat på historiska sändningsmönster och rykte poäng av domänerna. Office 365 är måttligt säker på att domänerna förfalskar och att meddelanden som skickas från dessa domäner är legitima. Denna hink har större chans att innehålla falska positiva (FPs) än hög förtroende parodi hink.
 
    - **Icke-misstänkta domänpar** (inkluderar **räddad parodi):** Räddad parodi är domäner som har misslyckats med de explicita autentiseringskontrollerna [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) men som har klarat våra implicita e-postautentiseringskontroller ([sammansatt autentisering](email-validation-and-authentication.md#composite-authentication)). Som ett resultat räddade Microsoft 365 posten för din räkning och inga anti-spoofing åtgärder vidtogs på meddelandet.
 
-### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visa detaljerad information om misstänkta domänpar från den falska intelligensinsikten
+### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visa detaljerad information om misstänkta domänpar från falska underrättelseinsikten
 
 1. På falska intelligens insikt, klicka på någon av domänparen (hög, måttlig eller räddad).
 
-   Sidan **Spoof Intelligence-statistik** visas som visar en lista över avsändare som skickar oautentiserade e-postmeddelanden till din organisation. Informationen på den här sidan hjälper dig att avgöra om falska meddelanden är auktoriserade eller om du behöver vidta ytterligare åtgärder. Du kan sortera informationen efter antalet meddelanden, det datum då förfalskningen senast upptäcktes med mera. (Klicka på kolumnrubriker, till exempel **Antal meddelanden** eller **Senast sedd.**
+   Sidan **Spoof Intelligence-insikt** visas som visar en lista över avsändare som skickar oautentiserade e-postmeddelanden till din organisation. Informationen på den här sidan hjälper dig att avgöra om falska meddelanden är auktoriserade eller om du behöver vidta ytterligare åtgärder. Du kan sortera informationen efter antal meddelanden, det datum då förfalskningen senast upptäcktes med mera. (Klicka på kolumnrubriker, till exempel **Antal meddelanden** eller **Senast sedd.**
 
 2. Välj ett objekt i tabellen för att öppna ett informationsfönster som innehåller omfattande information om domänparet, inklusive varför vi fångade detta, vad du behöver göra, en domänsammanfattning, WhoIs-data om avsändaren och liknande e-postmeddelanden som vi har sett i din klientorganisation från samma avsändare. Härifrån kan du också välja att lägga till eller ta bort domänparet från listan **Tillåtet försyre säker** avsändare.
 
-   ![Skärmbild av en domän i informationsfönstret för information om falska underrättelseuppgifter](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   ![Skärmbild av en domän i informationsfönstret för falska underrättelseinsikter](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
 ### <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Lägga till eller ta bort en domän från listan Tillåtetsumma för säker avsändare
 
-Du lägger till eller tar bort en domän från listan TillåtetSummabehållsam avsändare när du granskar domänparet i informationsfönstret i den falska intelligensinsikten. Ställ bara in växlingen därefter.
+Du lägger till eller tar bort en domän från listan Tillåtetsummabehållsam avsändare när du granskar domänparet i informationsfönstret i den falska intelligensinsikten. Ställ bara in växlingen därefter.
 
 Detta ändrar den unika domänparkombinationen av den falska domänen och den sändande infrastrukturen och ger inte täckning för hela den falska domänen eller den sändande infrastrukturen separat.
 

@@ -1,5 +1,5 @@
 ---
-title: Ändra namnservrar för att konfigurera Microsoft med Network Solutions
+title: Ändra namnservrar för att konfigurera Microsoft med Nätverkslösningar
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Lär dig att konfigurera din anpassade Microsoft-domän med Network Solutions om du vill att Microsoft ska hantera dina DNS-poster. '
-ms.openlocfilehash: 4a7c1eaab132b0ab41a62ba62d87956ccfafc014
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400611"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780391"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Ändra namnservrar för att konfigurera Microsoft med Network Solutions
+# <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Ändra namnservrar för att konfigurera Microsoft med Nätverkslösningar
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter.
   
@@ -37,17 +37,17 @@ Följ dessa instruktioner om du vill att Microsoft ska hantera dina DNS-poster �
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>Lägga till en TXT-post på Network Solutions för att verifiera att det är din domän
 
-Innan du använder din domän med Microsoft, vill vi vara säkra på att det är du som äger den. Att du kan logga in på ditt konto hos domänregistratorn och skapa DNS-posten bevisar för Microsoft att du äger domänen.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> Den här posten används endast för att verifiera att du äger domänen. Den påverkar ingenting annat. Du kan ta bort den senare om du vill. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US).
+Följ stegen nedan eller [titta på videon (börja vid 0:47)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
-1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** .
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** .
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -108,24 +108,24 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
   
 > [!NOTE]
->  Det brukar ta ungefär 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Felsöka problem när du har ändrat domännamn eller DNS-poster](../get-help-with-domains/find-and-fix-issues.md). 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Ändra domänens namnserverposter (NS)
 
-Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens NS-poster på domänregistraren så att de pekar på Microsofts primära och sekundära namnservrar. Detta ställer in Microsoft för att uppdatera domänens DNS-poster åt dig. Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.
+Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens NS-poster på domänregistraren så att de pekar på Microsofts primära och sekundära namnservrar. Detta konfigurerar Microsoft för att uppdatera domänens DNS-poster åt dig. Vi lägger till alla poster så att e-post, Skype för företag - Online och den offentliga webbplatsen fungerar med domänen så att du kan börja.
   
 > [!CAUTION]
-> När du ändrar domänens NS-poster så att de pekar på Microsofts namnservrar påverkas alla tjänster som för närvarande är associerade med domänen. Till exempel börjar all e-post som skickas till din domän (t.ex. *rob@ your_domain* .com) komma till Microsoft när du har gjort den här ändringen.
+> När du ändrar domänens NS-poster så att de pekar på Microsofts namnservrar påverkas alla tjänster som för närvarande är associerade med domänen. Till exempel börjar all e-post som skickas till din domän (t.ex. *rob@ your_domain* .com) till Microsoft när du har gjort den här ändringen.
   
-Är du redo att ändra dina NS-poster så att Microsoft kan konfigurera din domän? Följ stegen nedan eller [titta på videon (börja vid 2:23)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US).
+Är du redo att ändra dina NS-poster så att Microsoft kan konfigurera din domän? Följ stegen nedan eller [titta på videon (börja vid 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
 > [!IMPORTANT]
->  När du har slutfört stegen i det här avsnittet är de *enda* namnservrarna som ska visas dessa fyra: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**och **ns4.bdm.microsoftonline.com**. Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till  *korrekta*  namnservrar om de inte redan finns i listan. 
+>  När du har slutfört stegen i det här avsnittet visas de *enda* namnservrarna som ska visas dessa fyra: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**och **ns4.bdm.microsoftonline.com**. Följande procedur visar hur du tar bort andra, oönskade namnservrar från listan, och hur du lägger till  *korrekta*  namnservrar om de inte redan finns i listan. 
   
 1. Kom igång genom att gå till domänsidan på Network Solutions med [den här länken](https://www.networksolutions.com/manage-it). Du uppmanas att logga in.
     
     > [!IMPORTANT]
-    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in till:** . 
+    > Innan du väljer **knappen Logga in** väljer du först Hantera mina **domännamn** i **listrutan Logga in på:** . 
   
     ![Välj Hantera mina domännamn och logga in på Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -179,7 +179,7 @@ Om du vill slutföra inrättandet av domänen med Microsoft ändrar du domänens
 ### <a name="if-there-are-nameservers-already-listed"></a>Om det redan FINNS namnservrar listade
 
 > [!CAUTION]
-> Följ de här anvisningarna  *endast*  om det finns andra namnservrar utöver de fyra  *korrekta*  namnservrarna. (Ta alltså  *endast*  bort eventuella namnservrar som  *inte*  heter **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** eller **ns4.bdm.microsoftonline.com**.)
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)
   
 1. Om det finns andra namnservrar tar du bort var och en av dem genom att markera den och sedan trycka på **Delete**-tangenten.
     

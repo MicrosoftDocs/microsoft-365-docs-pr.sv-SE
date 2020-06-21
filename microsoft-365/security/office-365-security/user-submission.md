@@ -15,23 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du konfigurerar en postlåda för att samla in skräppost och nätfiske e-post som rapporteras av användare.
-ms.openlocfilehash: 0f3c7f160e26b8befcbbe8096c07e9eb6fecb533
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e9550ce6357ddf19041e752c17e8bd844cba1a11
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613438"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726492"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Exchange Online
 
-I Microsoft 365-organisationer med Exchange Online-postlådor kan du ange en postlåda för att ta emot meddelanden som användarna rapporterar som skadliga eller inte skadliga. När användare skickar meddelanden med de olika rapporteringsalternativen kan du använda den här postlådan för att avlyssna meddelanden (endast skicka till den anpassade postlådan) eller ta emot kopior av meddelanden (skicka till den anpassade postlådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelanderapportering:
+I Microsoft 365-organisationer med Exchange Online-postlådor kan du ange en postlåda för att ta emot meddelanden som användarna rapporterar som skadliga eller inte skadliga. När användare skickar meddelanden med de olika rapporteringsalternativen kan du använda den här postlådan för att avlyssna meddelanden (skicka till endast den anpassade postlådan) eller ta emot kopior av meddelanden (skicka till den anpassade postlådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelanderapportering:
 
 - [Tillägget Rapportmeddelande](enable-the-report-message-add-in.md)
 
-- [Inbyggd rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (tidigare kallat Outlook Web App)
+- [Inbyggd rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (tidigare känd som Outlook Web App)
 
   > [!NOTE]
-  > Om rapporteringen har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)åsidosätter inställningen om du aktiverar användarinlämningar här och gör det möjligt för användare att rapportera meddelanden i Outlook på webben igen.
+  > Om rapporteringen har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)åsidosätts den inställningen om du aktiverar användarinlämningar här och gör det möjligt för användare att rapportera meddelanden i Outlook på webben igen.
 
 Du kan också konfigurera meddelanderapporteringsverktyg från tredje part för att vidarebefordra meddelanden till den postlåda som du anger.
 
@@ -43,11 +43,21 @@ Genom att leverera rapporterade meddelanden till en anpassad postlåda i ställe
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Om du vill konfigurera postlådan för användaröverföringar måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste tilldelas behörigheter innan du kan göra procedurerna i det här avsnittet:
+
+  - Om du vill ändra konfigurationen för användaröverföringar måste du vara medlem i någon av följande rollgrupper:
+
+    - **Organisationshantering** eller **säkerhetsadministratör** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organisationshantering** eller **hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - För skrivskyddad åtkomst till användarinlämningar måste du vara medlem i någon av följande rollgrupper:
+
+    - **Säkerhetsläsaren** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Endast visningsorganisation i** [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Använda Security & Compliance Center för att konfigurera postlådan för användarinlämningar
 
-1. Gå till användarinlämningar för **&-efterlevnadsprincipen** i Security & Compliance Center \> **Policy** \> **User submissions**.
+1. Gå till användarinlämningar för **&-efterlevnadsprincipen** i Security & Compliance \> **Policy** \> **Center**.
 
 2. På sidan **Användares inlämningar** som visas väljer du något av följande alternativ:
 
@@ -61,7 +71,7 @@ Genom att leverera rapporterade meddelanden till en anpassad postlåda i ställe
 
         > Din e-post skickas som den är till Microsoft för analys. Vissa e-postmeddelanden kan innehålla personlig eller känslig information.
 
-      - **Efter inlämning:** Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . I meddelanderutorna **Rubrik** och **Bekräftelse** anger du den beskrivande text som användarna ser när de har rapporterat ett meddelande med tillägget Rapportmeddelande. Du kan använda variabeln %type% för att inkludera inlämningstypen.
+      - **Efter inlämning:** Klicka på ![ ikonen Expandera ](../../media/scc-expand-icon.png) . I rutorna **Rubrik** och **Bekräftelse anger** du den beskrivande text som användarna ser när de har rapporterat ett meddelande med tillägget Rapportmeddelande. Du kan använda variabeln %type% för att inkludera inlämningstypen.
 
       Klicka på **Spara** när du är klar. Om du vill ta bort dessa värden klickar du på **Återställ** igen på sidan **Användares inlämningar.**
 
@@ -79,7 +89,7 @@ Genom att leverera rapporterade meddelanden till en anpassad postlåda i ställe
       När du är klar klickar du på **Bekräfta**.
 
       > [!CAUTION]
-      > Om du har [inaktiverat skräppostrapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med Outlook i principerna för webbpostlådor, men konfigurerar någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kan användarna rapportera meddelanden till Microsoft i Outlook på webben med tillägget Rapportmeddelande.
+      > Om du har [inaktiverat skräppostrapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med Outlook på webbpostlådeprinciperna, men konfigurerar någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kan användarna rapportera meddelanden till Microsoft i Outlook på webben med tillägget Rapportmeddelande.
 
    - **Inaktivera funktionen Rapportmeddelande för Outlook:** Välj det här alternativet om du använder rapporteringsverktyg från tredje part i stället för tillägget Rapportmeddelande eller den inbyggda rapporteringen i Outlook på webben och sedan konfigurerar följande inställningar:
 
@@ -103,7 +113,7 @@ I följande exempel:
 
 - Meddelandet rapporteras som Phish.
 - Nätverksmeddelande-ID är 49871234-6dc6-43e8-abcd-08d797f20abe.
-- Avsändarens IP är 167.220.232.101.
+- Avsändare IP är 167.220.232.101.
 - Från-adressen är test@contoso.com.
 - Meddelandets ämnesrad är "test phish submission"
 

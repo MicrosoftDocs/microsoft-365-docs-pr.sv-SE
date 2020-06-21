@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om skräppostmeddelanden för slutanvändare för meddelanden i karantän i Exchange Online Protection (EOP).
-ms.openlocfilehash: 7d4cf21ade504e999dc5b53ad9062977369561c6
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: 14dcdfa8373e3826b23bc5574d1b5ae8ff76927b
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294247"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754790"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräppostmeddelanden för att släppa och rapportera meddelanden i karantän
 
@@ -44,7 +44,7 @@ Ett skräppostmeddelande för slutanvändare innehåller följande information f
 
 - **Datum**: Datum och tid (i UTC) som meddelandet sattes i karantän.
 
-- **Blockera avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Blockerade avsändare. Mer information finns i [Blockera en e-postavsändare i Outlook](https://support.office.com/article/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Blockera avsändare:** Klicka på den här länken för att lägga till avsändaren i listan Blockerade avsändare. Mer information finns i [Blockera en e-postavsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Släpp:** För spam (inte phish) meddelanden, kan du släppa meddelandet här utan att gå till Karantän Security & Compliance Center.
 
