@@ -16,22 +16,22 @@ search.appverid:
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
-description: När du ställer in principerna för betrodda bilagor i ATP väljer du Dynamisk leverans för att undvika meddelandefördröjningar och gör det möjligt för personer att förhandsgranska bifogade filer som genomsöks.
+description: När du ställer in principerna för betrodda bifogade filer väljer du Dynamisk leverans för att undvika meddelandefördröjningar och gör det möjligt för personer att förhandsgranska bifogade filer som genomsöks.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034798"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819358"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Dynamisk leverans och förhandsgranskning med ATP-säkra bilagor
 
-## <a name="overview"></a>Översikt
+## <a name="basic-features-of-dynamic-delivery"></a>Grundläggande funktioner i dynamisk leverans
 
 Dynamisk leverans är ett alternativ som kan väljas för [ATP Säkra bilagor](atp-safe-attachments.md). Läs den här artikeln om du vill veta mer om förhandsgranskningsfunktioner för dynamisk leverans och förhandsgranskning av bifogade filer i [ATP-säkra bilagor i Office 365](atp-safe-attachments.md).
 
-När [ATP-principer](set-up-atp-safe-attachments-policies.md) för säkra bilagor har ställts in för din organisation finns det flera alternativ för hur e-postbilagor hanteras. Dessa inkluderar **Block,** **Ersätt**och **Dynamisk leverans**. Beroende på hur principer för betrodda bilagor konfigureras kan e-postmottagare uppleva en mindre fördröjning i e-postleveransen medan deras bilagor genomsöks. Om du vill undvika meddelandefördröjningar väljer du **Dynamisk leverans**.
+När [ATP-principer](set-up-atp-safe-attachments-policies.md) för säkra bilagor har ställts in för din organisation finns det flera alternativ för hur e-postbilagor hanteras. Dessa inkluderar **Block,** **Ersätt**och **Dynamisk leverans**. Beroende på hur atp-principer för säkra bilagor är konfigurerade kan e-postmottagare uppleva en mindre fördröjning i e-postleveransen medan deras bilagor genomsöks. Om du vill undvika meddelandefördröjningar väljer du **Dynamisk leverans**.
 
 ## <a name="how-dynamic-delivery-works"></a>Så här fungerar dynamisk leverans
 
@@ -56,7 +56,7 @@ Anta att en organisation använder dynamisk leverans för sin [ATP-princip för 
 
 - Om en mottagare omfattas av en ATP-princip för säkra bilagor med alternativet Dynamisk leverans ser mottagaren platshållaren med möjlighet att förhandsgranska kompatibla filer.
 
-- Om en mottagare inte omfattas av en ATP Safe Attachments-policy går e-post- och bilagan igenom, utan att några platshållare för ATP-säkra bilagor skanning eller platshållare för bifogade filer.
+- Om en mottagare inte omfattas av en ATP Safe Bilagor politik, då e-post och bilaga kommer att gå igenom, utan någon ATP säkra bilagor skanning eller bifogade platshållare.
 
 ## <a name="whats-required-for-dynamic-delivery-to-work"></a>Vad krävs för att dynamisk leverans ska fungera?
 
@@ -80,8 +80,8 @@ Det finns vissa scenarier där dynamisk leverans inte stöds. Dessa inkluderar f
 
 - En användares sökmapp för postlådan som är i feltillstånd
 
-- Miljöer där en Exchange Online-administratör har aktiverat Exclaimer. LÃ¶s problemet genom att se [Meddelanden med bifogade filer inte levereras nÃ¤r ATP Dynamic Delivery and Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Miljöer där en Exchange Online-administratör har aktiverat Exclaimer. Lös detta genom att se [Meddelanden med bifogade filer levereras inte när ATP Dynamic Delivery och Exclaimer används](https://support.microsoft.com/help/4014438)
 
-- Meddelanden krypterade med [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
+- Meddelanden krypterade med [Säkra/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
 
-- I de fall dynamisk leverans inte stöds kommer ATP Safe Attachments inte att skanna e-postmeddelanden. Att leverera e-postmeddelanden med bifogade filer som innehåller webbadresser kommer dock att kontrolleras, beroende på hur [principerna för ATP Safe Links](set-up-atp-safe-links-policies.md) är konfigurerade. I dessa fall kontrolleras webbadresser i e-postmeddelanden och Office-filer.
+- I de fall dynamisk leverans inte stöds kommer ATP-säkra bilagor inte att skanna e-postmeddelanden. Att leverera e-postmeddelanden med bifogade filer som innehåller webbadresser kommer dock att kontrolleras, beroende på hur [principerna för ATP Safe Links](set-up-atp-safe-links-policies.md) är konfigurerade. I dessa fall kontrolleras webbadresser i e-postmeddelanden och Office-filer.

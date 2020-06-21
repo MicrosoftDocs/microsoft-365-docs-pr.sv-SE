@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Lär dig hur du återställer en borttagen Microsoft 365-grupp.
-ms.openlocfilehash: 24e5159dd85ab6ede324b3981e3e592f1c2ead70
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400695"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818513"
 ---
 # <a name="restore-a-deleted-group"></a>Återställa en borttagen grupp
 
@@ -36,11 +36,11 @@ ms.locfileid: "44400695"
 
 ::: moniker-end
 
-Om du har tagit bort en grupp behålls den som standard i 30 dagar. Denna 30-dagarsperiod anses vara en "mjuk borttagning" eftersom du fortfarande kan återställa gruppen. Efter 30 dagar tas gruppen och dess associerade innehåll bort permanent och kan inte återställas.
+Om du har tagit bort en grupp behålls den som standard i 30 dagar. Den här 30-dagarsperioden anses vara en "mjuk borttagning" eftersom du fortfarande kan återställa gruppen. Efter 30 dagar tas gruppen och dess associerade innehåll bort permanent och kan inte återställas.
 
 När du återställer en grupp återställs följande innehåll:
   
-- Azure Active Directory (AD) Microsoft 365 Groups-objekt, egenskaper och medlemmar.
+- Azure Active Directory (AD) Microsoft 365 Grupper objekt, egenskaper och medlemmar.
     
 - gruppens e-postadresser.
     
@@ -56,9 +56,9 @@ När du återställer en grupp återställs följande innehåll:
 
 - Yammer-grupp- och gruppinnehåll (Om Microsoft 365-gruppen skapades från Yammer)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook"></a>Återställa en grupp som du äger med Outlook
+## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Återställa en grupp som du äger med Outlook på webben
 
-Om du äger en Microsoft 365-grupp kan du återställa gruppen själv i Outlook genom att följa följande:
+Om du äger en Microsoft 365-grupp kan du återställa gruppen själv i Outlook på webben genom att följa dessa steg:
 
 1. På [sidan Borttagna grupper](https://outlook.office.com/people/group/deleted)väljer du alternativet **Hantera grupper** under noden **Grupper** och väljer sedan **Borttaget**.
 
@@ -79,7 +79,7 @@ Om du är global administratör eller gruppadministratör kan du återställa en
   
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Ta bort en Microsoft 365-grupp permanent
 
-Ibland kanske du vill rensa en grupp permanent utan att vänta på att 30-dagars perioden för mjuk borttagning ska löpa ut. Starta PowerShell och kör det här kommandot för att ta fram gruppens objekt-ID
+Ibland kanske du vill rensa en grupp permanent utan att vänta på att 30-dagarssperiod för mjuk borttagning ska löpa ut. Starta PowerShell och kör det här kommandot för att ta fram gruppens objekt-ID
   
 ```
 Get-AzureADMSDeletedGroup
@@ -96,7 +96,7 @@ Om du vill ta bort gruppen kör du det här kommandot i PowerShell
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-För att kontrollera att gruppen har tagits bort kör du cmdleten  *Get- AzureADMSDeletedGroup*  en gång till för att bekräfta att gruppen inte längre visas i listan över mjukt borttagna grupper. I vissa fall kan det ta upp till ett dygn för gruppen och allt innehåll att tas bort permanent. 
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>Har du frågor om Microsoft 365 Groups?
 
@@ -108,6 +108,6 @@ Besök [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-
   
 [Ta bort grupper med hjälp av cmdleten Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[Hantera dina grupprelaterade gruppwebbplatsinställningar](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
+[Hantera dina grupprelaterade gruppwebbplatsinställningar](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   
-[Ta bort en grupp i Outlook](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
+[Ta bort en grupp i Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)

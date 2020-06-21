@@ -26,13 +26,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 'Läs om hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
-ms.openlocfilehash: 44052ee0c795143d67d832f9528e3eea7232f1cb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 'Lär dig hur du återställer lösenord för en användare i Microsoft 365 för företag-prenumeration. '
+ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386979"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780571"
 ---
 # <a name="reset-passwords"></a>Återställ lösenord
 
@@ -40,11 +40,11 @@ Titta på en kort video om hur du återställer användarlösenord.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
-Vi rekommenderar att du konfigurerar återställning av egna lösenord. På så vis behöver du inte manuellt återställa lösenord för användarna. Läs i så fall [Låt användare återställa sina egna lösenord i Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>Återställa ett företagslösenord för någon annan
 
@@ -84,11 +84,11 @@ Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365
           
 2. Under **Kontaktuppgifter**dubbelkollar du att din **alternativa e-postadress** är korrekt och att du har angett ett mobiltelefonnummer. Ändra dem annars nu. 
         
-3. Logga ut: välj ditt namn i det övre högra hörnet (i bilden ovan, visad som **Diane**) \> **Logga ut**. 
+3. Logga ut: Välj ditt namn i det övre högra hörnet (i bilden ovan, visad som **Diane**) \> **Logga ut**. 
         
 4. Logga in igen: skriv ditt användarnamn \> **Nästa** \> och välj sedan Glömt **lösenord**. 
     
-5. Följ anvisningarna i guiden för att återställa lösenordet. De alternativa kontaktuppgifterna används för att verifiera att du är rätt person som ska återställa lösenordet. 
+5. Follow the steps in the wizard to reset your password. It uses your alternate contact info to verify you're the right person to reset your password. 
     
 Om du har glömt ditt lösenord och inte kan logga in: 
     
@@ -118,11 +118,11 @@ Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du ha
 ## <a name="reset-business-passwords-in-bulk"></a>Återställa företagslösenord i grupp
 <a name="bkmk_forgot"> </a>
 
-Använd PowerShell! Kolla in det här inlägget av Eyal Doron: [Hantera lösenord med PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
+Översiktsinformation finns i [PowerShell för Microsoft 365-administratörer](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Tvinga fram ändring av lösenord för alla i företaget
 <a name="bkmk_forgot"> </a>
@@ -132,7 +132,7 @@ Läs det här blogginlägget av Vasil Michev, Microsoft MVP: [Framtvinga ändrin
 ## <a name="im-lost"></a>Det går inte!
 <a name="bkmk_forgot"> </a>
 
-Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet för kontot som jag använder med Office.](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
+Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet för kontot som jag använder med Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
 ## <a name="related-articles"></a>Relaterade artiklar
 <a name="bkmk_forgot"> </a>
@@ -147,4 +147,4 @@ Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet 
 
 [Ta bort en tidigare anställd](remove-former-employee.md)
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

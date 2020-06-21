@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Läs om hur du registrerar dig för en utvärderingsprenumeration av Microsoft 365 för företag.
-ms.openlocfilehash: 968ab3c8bf7b377eba1aafb3fbc710eb4d36dad7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs om hur du registrerar dig för en utvärderingsprenumeration för Microsoft 365 för företag.
+ms.openlocfilehash: b14cf3ede622d54a95eb5cec3b67eec230ea8793
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402840"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818549"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>Registrera dig för en utvärderingsprenumeration
 
 Du kan registrera dig för en utvärderingsprenumeration för Microsoft 365 för företag utan kostnad. Du kan prova det i 30 dagar.
 
 > [!NOTE]
-> Du behöver ett kreditkort när du registrerar dig för en provperiod om ditt företag för närvarande finns i USA, Japan, Kanada och Australien. I slutet av den kostnadsfria provperioden konverteras provprenumerationen automatiskt till en betald prenumeration. Ditt kreditkort kommer inte att debiteras förrän i slutet av provperioden.
+> Du behöver ett kreditkort när du registrerar dig för en provperiod om ditt företag för närvarande finns i USA, Japan, Kanada och Australien. I slutet av den kostnadsfria provperioden konverteras din provprenumeration automatiskt till en betald prenumeration. Ditt kreditkort kommer inte att faktureras förrän i slutet av provperioden.
 
 ## <a name="sign-up-for-a-microsoft-365-business-standard-trial-subscription"></a>Registrera dig för en utvärderingsprenumeration för Microsoft 365 Business Standard
 
@@ -53,4 +53,4 @@ Om du bestämmer dig för att avbryta utvärderingsperioden innan den kostnadsfr
 
 ## <a name="see-also"></a>Se även
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

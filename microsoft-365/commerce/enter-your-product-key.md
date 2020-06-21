@@ -25,19 +25,19 @@ description: Läs om hur du löser in en produktnyckel för Microsoft 365 Busine
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402172"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818585"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Ange produktnyckeln för Microsoft 365 Business Standard
 
-Om du har köpt Microsoft 365 Business Standard från en butik hjälper den här artikeln dig att aktivera prenumerationen. 
+Om du har köpt Microsoft 365 Business Standard från en butik hjälper den här artikeln dig att aktivera din prenumeration. 
   
  **Behöver du något annat?**
- Mer information om hur du får **hjälp med Microsoft 365 Family eller Microsoft 365 Personal**finns i Använda [produktnycklar med Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ Mer information om Hur du får **hjälp med Microsoft 365 Family eller Microsoft 365 Personal**finns i Använda [produktnycklar med Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Volymlicenskund?** Om du har köpt Microsoft 365 för företag via ett [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)läser du [artikeln, Ange produktnyckeln som köpts från Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Aktivera en ny prenumeration
@@ -55,7 +55,7 @@ Om du har köpt Microsoft 365 Business Standard från en butik hjälper den här
     > [!NOTE]
     > Om du vill vara säker på att prenumerationen förlängs automatiskt i slutet av perioden kan du lägga till ett kreditkort eller bankkonto och sedan [aktivera Återkommande fakturering](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) för prenumerationen.
 
-6. När du är klar går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a> för att hantera prenumerationen.
+6. När du är klar går du till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a> för att hantera din prenumeration.
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Förläng utgångsdatumet eller lägga till en licens i en befintlig prenumeration
 
@@ -67,6 +67,6 @@ Om du inte har tidigare i Microsoft 365 för företag kan du läsa om hur [du ko
   
 ## <a name="still-having-trouble-with-product-keys"></a>Har du fortfarande problem med produktnycklar?
 
-Kolla in den här listan över vanliga fel och lösningar: [Problem med produktnyckeln Microsoft 365 för företag?](product-key-errors-and-solutions.md)
+Kolla in den här listan över vanliga fel och lösningar: [Problem med produktnyckeln microsoft 365 för företag?](product-key-errors-and-solutions.md)
   
 Du kan också [kontakta Microsoft Support](../admin/contact-support-for-business-products.md).

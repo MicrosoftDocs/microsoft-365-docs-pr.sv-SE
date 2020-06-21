@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en användare eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432105"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780643"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -40,13 +40,13 @@ Om du är den person som har köpt din Microsoft-företagsprenumeration är du d
 
 Mer information finns i [Om administratörsroller](about-admin-roles.md).
 
-När du lägger till nya användare, om du inte tilldelar dem en administratörsroll, är de i *användarrollen* och har inte administratörsbehörighet till någon av Microsofts administrationscenter. Men om du behöver hjälp med att få saker gjorda kan du tilldela en administratörsroll till en användare. Om du till exempel behöver någon som kan återställa lösenord bör du inte tilldela dem den globala administratörsrollen, du bör tilldela dem rollen för lösenordsadministratör. Att ha för många globala administratörer, med obegränsad tillgång till dina data och online-verksamhet, är en säkerhetsrisk.
+När du lägger till nya användare, om du inte tilldelar dem en administratörsroll, är de i *användarrollen* och har inte administratörsbehörighet till någon av Microsofts administratörscenter. Men om du behöver hjälp med att få saker gjorda kan du tilldela en administratörsroll till en användare. Om du till exempel behöver någon som kan återställa lösenord bör du inte tilldela dem den globala administratörsrollen, du bör tilldela dem rollen lösenordsadministratör. Att ha för många globala administratörer, med obegränsad tillgång till dina data och online-verksamhet, är en säkerhetsrisk.
 
 Titta på en kort video om att lägga till en administratör.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="assign-admin-roles"></a>Tilldela administratörsroller 
 
@@ -59,7 +59,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Tilldela administratörsroller till användare med roller
 
-1. Gå till Roller roller i **administrationscentret** > **Roles** och visa alla administratörsroller som är tillgängliga för organisationen.
+1. Gå till Roller roller i **administrationscentret** > **Roles** och visa alla administratörsroller som är tillgängliga för din organisation.
 2. Välj den administratörsroll som du vill tilldela användaren till.
 3. Välj **Tilldelade administratörer** > **Lägg till**.
 4. Skriv användarens **visningsnamn** eller **användarnamn**och välj sedan användaren i listan med förslag.
@@ -70,7 +70,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 1. Gå till sidan Aktiva användare **i administrationscentret.** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822)
 
-2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Hantera roller bredvid Roller i det utfällbara fönstret **bredvid** **Roller.**
+2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj **Hantera roller**bredvid Roller i det utfällbara fönstret bredvid **Roller**.
 
 3. Välj den administratörsroll som du vill tilldela användaren. Om du inte ser den roll du letar efter väljer du **Visa alla** längst ned i listan.
 
@@ -82,7 +82,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Redigera bredvid Roller i det utfällbara fönstret **bredvid** **Roller**. 
 
-    Om du inte ser alternativet **Redigera** har du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i ditt företag att tilldela roller åt dig. I ett litet företag är företagsägaren (personen som köpte prenumerationen) en global administratör. I ett stort företag är nyckelpersoner på IT-avdelningen globala administratörer.
+    Om alternativet **Redigera** inte visas har du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i ditt företag att tilldela roller åt dig. I ett litet företag är företagsägaren (personen som köpte prenumerationen) en global administratör. I ett stort företag är nyckelpersoner på IT-avdelningen globala administratörer.
 
 3. Välj **Anpassad administratör** om du vill visa en lista över roller som vi har anpassat åt dig. En beskrivning av varje roll finns i [Om administratörsroller.](about-admin-roles.md)
 
@@ -94,7 +94,7 @@ Du kan tilldela användare till en roll på två olika sätt:
 
 2. På sidan **Aktiva användare** väljer du den användare vars administratörsroll du vill ändra. Välj Redigera bredvid Roller i det utfällbara fönstret **bredvid** **Roller**.
 
-    Om du inte ser alternativet **Redigera** har du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i ditt företag att tilldela roller åt dig. I ett litet företag är företagsägaren (personen som köpte prenumerationen) en global administratör. I ett stort företag är nyckelpersoner på IT-avdelningen globala administratörer.
+    Om alternativet **Redigera** inte visas har du inte behörighet att redigera och kan inte tilldela administratörsroller till andra personer. Be en global administratör i ditt företag att tilldela roller åt dig. I ett litet företag är företagsägaren (personen som köpte prenumerationen) en global administratör. I ett stort företag är nyckelpersoner på IT-avdelningen globala administratörer.
 
 3. Välj **Anpassad administratör** om du vill visa en lista över roller som vi har anpassat åt dig. En beskrivning av varje roll finns i [Om administratörsroller.](about-admin-roles.md)
 

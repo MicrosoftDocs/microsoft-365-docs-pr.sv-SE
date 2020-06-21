@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Administratör kan lära sig hur du konfigurerar stöd för anonym inkommande e-post från IPv6-källor i Exchange Online och Exchange Online Protection.
-ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631223"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818715"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Lägga till stöd för anonym inkommande e-post via IPv6 i Microsoft 365
 
@@ -28,11 +30,11 @@ Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-
 
 - Käll-IPv6-adressen måste ha en giltig PTR-post (Reverse DNS lookup) som gör att målet kan hitta domännamnet från IPv6-adressen.
 
-- Avsändaren måste godkänna antingen SPF-verifiering (definierad i [RFC 7208)](https://tools.ietf.org/html/rfc7208)eller [DKIM-verifiering](https://dkim.org/) (definierad i [RFC 6376).](https://www.rfc-editor.org/rfc/rfc6376.txt)
+- Avsändaren måste passera antingen SPF-verifiering (definierad i [RFC 7208)](https://tools.ietf.org/html/rfc7208)eller [DKIM-verifiering](https://dkim.org/) (definierad i [RFC 6376).](https://www.rfc-editor.org/rfc/rfc6376.txt)
 
 Innan din organisation kan ta emot anonymt inkommande e-postmeddelande via IPv6 måste en administratör kontakta Microsoft-supporten och be om den. Instruktioner om hur du öppnar en supportbegäran finns i [Kontakta support för företagsprodukter - Hjälp om administratörer](../../admin/contact-support-for-business-products.md).
 
-När anonymt inkommande IPv6-meddelandestöd har aktiverats i din organisation går meddelandet igenom den normala meddelandefiltrering som tillhandahålls av tjänsten.
+När stöd för anonym inkommande IPv6-meddelanden har aktiverats i organisationen går meddelandet igenom den normala meddelandefiltrering som tillhandahålls av tjänsten.
 
 ## <a name="troubleshooting"></a>Felsökning
 
@@ -42,12 +44,12 @@ När anonymt inkommande IPv6-meddelandestöd har aktiverats i din organisation g
 
 - Om avsändaren inte skickar SPF- eller DKIM-validering avvisas meddelandena med följande fel:
 
-  > 450 4.7.26 Tjänsten är inte tillgänglig, meddelande som skickas via IPv6 [2a01:111:f200:2004::240] måste passera antingen SPF- eller DKIM-validering.
+  > 450 4.7.26 Tjänsten är inte tillgänglig, meddelande som skickas via IPv6 [2a01:111:f200:2004::240] måste skicka antingen SPF- eller DKIM-validering.
 
 - Om du försöker ta emot anonyma IPv6-meddelanden innan du har anmält dig kommer meddelandet att avvisas med följande fel:
 
   > 550 5.2.1 Tjänsten är inte tillgänglig, [contoso.com] accepterar inte e-post via IPv6.
 
-## <a name="for-more-information"></a>Mer information
+## <a name="related-topics"></a>Relaterade ämnen
 
 [Stöd för validering av DKIM-signerade meddelanden](support-for-validation-of-dkim-signed-messages.md)

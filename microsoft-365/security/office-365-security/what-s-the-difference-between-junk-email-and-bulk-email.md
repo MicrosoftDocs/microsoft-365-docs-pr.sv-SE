@@ -1,5 +1,5 @@
 ---
-title: Vad är skillnaden mellan skräppost och massutskick?
+title: Vad &apos; är skillnaden mellan skräppost och massutskick av e-post?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig om skillnaderna mellan skräppost (skräppost) och massutskick av e-post (grå e-post) i Exchange Online Protection (EOP).
-ms.openlocfilehash: 6936028aa7bda538f0e49429d22f28c7a78cdb36
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c1f5ca724f7a41d9fc11ed0c93f52a79a6ecc8e5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208458"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819442"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Vad är skillnaden mellan skräppost och massutskick av e-post i EOP?
 
@@ -33,7 +33,7 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller friståend
 
   - Du kan konfigurera de åtgärder som ska vidtas för att filtrera domar för skräppost. Instruktioner finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
-  - Om du inte håller med om omdömet om skräppostfiltrering kan du rapportera meddelanden som du anser vara skräppost eller icke-skräppost till Microsoft på flera sätt, enligt beskrivningen i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+  - Om du inte håller med om skräppostfiltreringsdomen kan du rapportera meddelanden som du anser vara skräppost eller icke-skräppost till Microsoft på flera sätt, enligt beskrivningen i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Massutskick av e-post** (kallas även _grå e-post)_ är svårare att klassificera. Medan spam är ett ständigt hot, bulk e-post är ofta engångsannonser eller meddelanden marknadsföring. Vissa användare vill ha massmeddelanden (och i själva verket har de medvetet registrerat sig för att ta emot dem), medan andra användare anser bulk e-post vara spam. Vissa användare vill till exempel ta emot annonsmeddelanden från Contoso Corporation eller inbjudningar till en kommande konferens om cybersäkerhet, medan andra användare anser att samma meddelanden är skräppost.
 
@@ -47,6 +47,6 @@ Anti-spam-polisen har en standard BCL tröskel som används för att identifiera
 
 - [Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
 
-- [EOP:s policyinställningar för skräppost mot skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+- [EOP-principinställningar mot skräppost](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
 
 Ett annat alternativ som är lätt att förbise: om en användare klagar över att ta emot mass-e-post, men meddelandena är från välrenommerade avsändare som passerar skräppostfiltrering i EOP, har användaren kontrollera om ett alternativ för att avsluta prenumerationen i massmeddelandet.

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Lär dig hur du konfigurerar och använder Microsoft 365 på datorn, telefonen och surfplattan.
-ms.openlocfilehash: 5510f93a0e282b73405fa066669cdc1b63ea8a28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3909cdabd0c4f95c44ab5afaf7dba7244bf6eeb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386895"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780535"
 ---
 # <a name="get-started"></a>Komma igång
 
@@ -45,25 +45,25 @@ Din organisation fick nyligen Microsoft 365, och nu måste du använda den så a
 ## <a name="training-resources-for-your-users"></a>Utbildningsresurser för dina användare
 
 
-- [Snabbstart för medarbetare](https://support.office.com/article/b9700090-ce64-4046-ab92-ce8488a7bc0f.aspx)
+- [Snabbstart för medarbetare](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
-- [Utbildningscenter för Office](https://support.office.com/article/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb.aspx)
+- [Utbildningscenter för Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Var kan du logga in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Var kan du logga in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
-- [Installera Office på en PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
+- [Installera Office på en PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
-- [Mobil installation](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- [Mobil installation](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
     
 ## <a name="training-resources-for-you-the-admin"></a>Utbildningsresurser för dig som är administratör
 
 Här är några resurser som hjälper dig att komma igång.
   
-- [Utbildning för administratörer:](https://support.office.com/article/e990f8ff-56d7-450e-ad9f-74ae8718ef09.aspx)Få länkar till gratis online klasser för administratörer.
+- [Utbildning för administratörer:](https://docs.microsoft.com/microsoft-365/admin)Få länkar till gratis online klasser för administratörer.
     
-- [Hjälp för administratörer](https://docs.microsoft.com/microsoft-365/admin/admin-home): Få information om de vanligaste uppgifterna, komma igång med administrationsverktyg och felsökningsproblem.
+- [Hjälp om administratörer](https://docs.microsoft.com/microsoft-365/admin/admin-home): Få information om de vanligaste uppgifterna, komma igång med administrationsverktyg och felsökningsproblem.
     
-- [Kontakta support - Admin Hjälp:](../contact-support-for-business-products.md) Ring oss, öppna en online-begäran, eller låt samhället hjälpa. 
+- [Kontakta support - Admin Hjälp:](../contact-support-for-business-products.md) Ring oss, öppna en online-begäran, eller låt samhället hjälp. 
     
 ## <a name="related-articles"></a>Relaterade artiklar
 

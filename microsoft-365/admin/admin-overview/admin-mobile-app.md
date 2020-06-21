@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Skaffa Microsoft 365 Admin-appen och lär dig att hantera din onlineorganisation från din telefon eller surfplatta.
-ms.openlocfilehash: e0aa16bd01e81e89e80db51c6569009e177ed687
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386955"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780547"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Om mobilappen Microsoft 365 admin
 
@@ -58,7 +58,7 @@ Titta på en kort video om hur du installerar appen admin.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
@@ -67,7 +67,7 @@ Nedan finns svar på några vanliga frågor om appen.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Vad behöver jag göra för att kunna använda appen?
 
-Du måste ha en giltig Microsoft 365 Apps för företag eller Microsoft 365 Business Premium-prenumeration med administratörsbehörighet för att logga in och använda appen. Appen Admin är inte en e-postklient. Det är en rik administrativ app med över 80 funktioner som hjälper dig att stödja din organisation när du är på språng.
+Du måste ha en giltig Microsoft 365 Apps för företag eller Microsoft 365 Business Premium-prenumeration med administratörsbehörighet för att logga in och använda appen. Appen Admin är inte en e-postklient. Det är en omfattande administrativ app med över 80 funktioner som hjälper dig att stödja din organisation när du är på språng.
   
 ### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kan jag använda appen med min Microsoft 365 Family-prenumeration?
 
@@ -75,7 +75,7 @@ Nej, appen fungerar bara med Microsoft 365 Apps for business och Microsoft 365 B
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>Fungerar appen om organisationen har aktiverat katalogsynkronisering?
 
-Ja, men med nedsatt funktionalitet. Du kan logga in och visa serviceinformation, men de flesta användarhanteringsfunktioner är skrivskyddade. Du kan inte lägga till, redigera eller ta bort användare. Du kan dock tilldela licenser till användare i organisationen och få aviseringar.
+Ja, men med nedsatt funktionalitet. Du kan logga in och visa serviceinformation, men de flesta användarhanteringsfunktionerna är skrivskyddade. Du kan inte lägga till, redigera eller ta bort användare. Du kan dock tilldela licenser till användare i organisationen och få aviseringar.
   
 ### <a name="what-languages-are-supported-by-the-app"></a>Vilka språk stöds i appen?
 
@@ -105,4 +105,4 @@ Skicka [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ett e-postm
   
 ## <a name="see-also"></a>Se även
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Lär dig att hantera Microsoft 365-grupper, till exempel lägga till ta bort gruppmedlemmar, redigera e-postadressen, gruppnamnet eller beskrivningen och anpassa hur gruppen fungerar.
-ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049209"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780655"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrationscentret för Microsoft 365
 
@@ -110,7 +110,7 @@ När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till grup
   
 När du använder administrationscentret för att skapa en grupp får användarna som standard inte kopior av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorgar. De måste gå till gruppen för att se konversationer och möten. Du kan ändra den här inställningen i administrationscentret.
 
-När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras Outlook-inkorg. De kan läsa och ta bort kopian utan att någon annan påverkas. En kopia av e-postmeddelandet finns kvar i gruppens inkorg.
+När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras Inkorg i Outlook. De kan läsa och ta bort kopian utan att någon annan påverkas. En kopia av e-postmeddelandet finns kvar i gruppens inkorg.
 
 Gruppmedlemmar kan välja bort att ta emot dessa e-postmeddelanden genom att välja att sluta följa gruppen i Outlook.
 
@@ -128,9 +128,9 @@ Gruppmedlemmar kan välja bort att ta emot dessa e-postmeddelanden genom att vä
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan \> **Gruppergrupper** i administrationscentret och välj sedan den grupp som du vill ändra. **Groups**
+1. Gå till sidan **Gruppergrupper** i administrationscentret \> **Groups** och välj sedan den grupp som du vill ändra.
 
-2. Välj Redigera **bredvid Namn** **.**
+2. Välj Redigera **bredvid** **Namn**.
 
 3. Aktivera **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmarnas inkorgar** till **På** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.
 
@@ -140,9 +140,9 @@ Gruppmedlemmar kan välja bort att ta emot dessa e-postmeddelanden genom att vä
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan \> **Gruppergrupper** i administrationscentret och välj sedan den grupp som du vill ändra. **Groups**
+1. Gå till sidan **Gruppergrupper** i administrationscentret \> **Groups** och välj sedan den grupp som du vill ändra.
 
-2. Välj Redigera **bredvid Namn** **.**
+2. Välj Redigera **bredvid** **Namn**.
 
 3. Aktivera **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmarnas inkorgar** till **På** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.
 
@@ -160,7 +160,7 @@ Det här alternativet är bra om du vill ha ett företags e-postadress som info@
 
 2. Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.
 
-3. I listan Över administrationscentergrupper väljer du namnet på den grupp som du vill ändra och väljer sedan **Tillåt externa avsändare att skicka den här gruppen till e-post**på fliken **Inställningar.**
+3. I listan Över administrationscentergrupper väljer du namnet på den grupp som du vill ändra och väljer sedan **Tillåt externa avsändare att skicka den här gruppen via e-post**till den här gruppen på fliken **Inställningar** .
     
 4. Välj **Spara**.
 
@@ -194,7 +194,7 @@ Det här alternativet är bra om du vill ha ett företags e-postadress som info@
 
 [Skapa en Microsoft 365-grupp](create-groups.md)
 
-[Hantera gäståtkomst till Microsoft 365-grupper](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Hantera gäståtkomst till Microsoft 365-grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Välj vilken domän som ska användas när Microsoft 365-grupper skapas](choose-domain-to-create-groups.md)
 

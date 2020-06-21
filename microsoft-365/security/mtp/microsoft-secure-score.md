@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score (föregående iteration)
-description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur du kan förbättra säkerhetspositionen och vilka säkerhetsadministratörer som kan förvänta sig.
-keywords: säkerhet, malware, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
+description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur du kan förbättra säkerhetspositionen och vad säkerhetsadministratörer kan förvänta sig.
+keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,19 +17,22 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173398"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818573"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure Score (föregående iteration)
 
 >[!IMPORTANT]
 >Den här iterationen av Microsoft Secure Score ersätts med nya designelement och funktioner under de närmaste månaderna. Om du inte redan ser den senaste iterationen kommer du snart.
 >
->Om du ser fliken **Mått & trender** bredvid Historik finns du i den nya iterationen. [Gå till Microsoft Secure Score (ny)](microsoft-secure-score-new.md)
+>Om du ser fliken **Mått & trender** bredvid Historik, är du i den nya iterationen. [Gå till Microsoft Secure Score (ny)](microsoft-secure-score-new.md)
 
 Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Om du följer rekommendationerna om säkerhetsresultat kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
 
@@ -43,11 +46,11 @@ Organisationer får tillgång till robusta visualiseringar av mått och trender,
 
 Dessutom kan du komma åt dina rekommendationer och poäng via [Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api). Läs mer om [resurstypen Säker poäng](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Så här fungerar det
+## <a name="how-your-secure-score-is-calculated"></a>Hur din säkra poäng beräknas
 
 Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter (till exempel visa rapporter) eller åtgärda förbättringsåtgärden med ett program eller en programvara från tredje part. Vissa förbättringsåtgärder ger bara poäng när de är helt slutförda, och vissa ger partiella poäng om de slutförs för vissa enheter eller användare.
 
-Vi visar dig alla möjliga förbättringar, oavsett licens, så att du kan förstå bästa praxis för säkerhet och förbättra dina poäng. Din absoluta säkerhetsposition representeras av Secure Score, som förblir densamma oavsett vilka produktlicenser din organisation äger. Tänk på att säkerheten bör vara balanserad med användbarhet, och inte varje rekommendation kan fungera för din miljö.
+Vi visar dig alla möjliga förbättringar, oavsett licens, så att du kan förstå bästa praxis för säkerhet och förbättra dina poäng. Din absoluta säkerhetsposition representeras av Secure Score, som förblir densamma oavsett vilka produktlicenser din organisation äger. Tänk på att säkerheten bör balanseras med användbarhet, och inte varje rekommendation kan fungera för din miljö.
 
 Din poäng uppdateras i realtid för att återspegla den information som presenteras i visualiseringar och förbättring åtgärd sidor. Secure Score synkroniserar också dagligen för att ta emot systemdata om dina uppnådda poäng för varje åtgärd.
 
@@ -57,7 +60,7 @@ De flesta görs på ett binärt sätt - om du genomför förbättringsåtgärden
 
 ### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
 
-För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att omfatta alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part.
+För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att täcka alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som de som täcks av en tredje part.
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 
@@ -102,30 +105,30 @@ För att hjälpa dig den information du behöver snabbare är Microsofts förbä
 
 På översiktssidan för Microsoft Secure Score kan du se hur poäng delas mellan dessa grupper och vilka punkter som är tillgängliga. Översiktssidan är också platsen för att få en helhetsbild av den totala poängen, historisk trend för din säkra poäng med jämförelsemål och prioriterade förbättringsåtgärder som kan vidtas för att förbättra din poäng.
 
-![Startsida](../../media/secure-score/homepage-original.png)
-för säker poäng*Bild 1: Översiktssida för Microsoft Secure Score*
+![Startsida för säker poäng ](../../media/secure-score/homepage-original.png)
+ *Bild 1: Översiktssida för Microsoft Secure Score*
 
 ## <a name="take-action-to-improve-your-score"></a>Vidta åtgärder för att förbättra din poäng
 
 På fliken Förbättringsåtgärder visas de säkerhetsrekommendationer som åtgärdar möjliga angreppsytor, tillsammans med deras status (slutförd, inte slutförd, löst via tredje part och ignoreras). Du kan söka, filtrera och gruppera alla förbättringsåtgärder.
 
-### <a name="ranking"></a>Ranking
+### <a name="ranking"></a>Ranking (ranking)
 
 Rankningen baseras på antalet återstående poäng kvar att uppnå, implementeringssvårigheter, användarpåverkan och komplexitet. De högst rankade förbättringsåtgärderna har ett stort antal punkter kvar med låg svårighet, användarpåverkan och komplexitet.
 
 ### <a name="actions"></a>Åtgärder
 
-När du väljer en specifik förbättringsåtgärd visas en utfällning. För att slutföra åtgärden har du några alternativ:
+När du väljer en viss förbättringsåtgärd visas en utfällning. För att slutföra åtgärden har du några alternativ:
 
-1. Välj **Visa inställningar** för att gå till konfigurationsskärmen och göra ändringen. Du får sedan de punkter som åtgärden är värd, synlig på toppen av flugan ut. Det kan ta upp till 24 timmar att uppdatera poäng.
+1. Välj **Visa inställningar** om du vill gå till konfigurationsskärmen och göra ändringen. Du får sedan de punkter som åtgärden är värd, synlig på toppen av flugan ut. Det kan ta upp till 24 timmar att uppdatera poäng.
 
-2. Välj **Lös via tredje part** eftersom förbättringsåtgärden redan har åtgärdats av ett program eller en programvara från tredje part. Du får de poäng som åtgärden är värd, så din säkra poäng bättre återspeglar din totala säkerhet hållning. Om en tredje part inte längre täcker kontrollen kan du markera förbättringsåtgärden som inte slutförd. Tänk på att Microsoft inte har någon insyn i om poängkraven har uppfyllts om förbättringsåtgärden markeras som löst via tredje part.
+2. Välj **Lös via tredje part** eftersom förbättringsåtgärden redan har åtgärdats av ett program eller program från tredje part. Du får de poäng som åtgärden är värd, så din säkra poäng bättre återspeglar din totala säkerhet hållning. Om en tredje part inte längre täcker kontrollen kan du markera förbättringsåtgärden som inte slutförd. Tänk på att Microsoft inte har någon insyn i om poängkraven har uppfyllts om förbättringsåtgärden markeras som löst via tredje part.
 
 3. Välj **Ignorera** eftersom du har bestämt dig för att acceptera risken och inte anta förbättringsåtgärden. När du ignorerar en förbättringsåtgärd minskas det totala antalet säkra poäng du kan uppnå. Du kan visa den här åtgärden i historiken eller ångra den när som helst.
 
 ![Exempel på förbättring av säker poäng](../../media/secure-score/secure-score1x450.png)
 
-*Figurerna 2: Utfällbara åtgärder för förbättring*
+*Figurerna 2: Utfällbart resultat*
 
 ## <a name="monitor-improvements-over-time"></a>Övervaka förbättringar över tid
 
@@ -141,7 +144,7 @@ För att göra Microsoft Secure Score till en bättre representant för din säk
 
 ### <a name="april-21st-2020"></a>21 april 2020
 
-#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Ta bort förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetshållning
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Ta bort förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetsposition
 
 För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig tar vi bort följande förbättringsåtgärder.
 
@@ -160,7 +163,7 @@ Det kommer att påverka följande förbättringsåtgärder:
 - Kräv MFA för administrativa roller
 - Aktivera princip för att blockera äldre autentisering
 
-#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Borttagna förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetsposition
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Borttagna förbättringsåtgärder som inte uppfyller förväntningarna för tillförlitlig mätning eller inte ger en användbar representation av säkerhetshållning
 
 För att säkerställa att Microsoft Secure Score är meningsfull och att varje förbättringsåtgärd är mätbar och tillförlitlig tar vi bort följande förbättringsåtgärder.
 
@@ -193,9 +196,9 @@ Följande förbättringsåtgärder har tagits bort:
 - Aktivera Hantering av Mobila enheter för Microsoft Intune
 - Skapa en efterlevnadsprincip för Microsoft Intune för Android
 - Skapa en efterlevnadsprincip för Microsoft Intune för Android for Work
-- Skapa en Microsoft Intune App Protection Policy för Android
+- Skapa en Microsoft Intune-appskyddsprincip för Android
 - Skapa en Microsoft Intune-appskyddsprincip för iOS
-- Markera enheter utan Microsoft Intune-efterlevnadsprincip som inte är kompatibla
+- Markera enheter utan Microsoft Intune Compliance Policy som inte har tilldelats som kompatibla
 - Skapa en Microsoft Intune-efterlevnadsprincip för iOS
 - Skapa en efterlevnadsprincip för Microsoft Intune för macOS
 - Skapa en Microsoft Intune-efterlevnadsprincip för Windows
@@ -204,7 +207,7 @@ Följande förbättringsåtgärder har tagits bort:
 - Skapa en konfigurationsprofil för Microsoft Intune för macOS
 - Skapa en konfigurationsprofil för Microsoft Intune för iOS
 - Skapa en konfigurationsprofil för Microsoft Intune för Windows
-- Aktivera förbättrad jailbreak-identifiering i Microsoft Intune
+- Aktivera förbättrad jailbreak-upptäckt i Microsoft Intune
 - Kräva att alla enheter ska korrigeras, ha anti-virus och brandväggar aktiverade
 - Aktivera Windows Defender ATP-integrering i Microsoft Intune
 - Skapa en informationsskyddsprincip för Microsoft Intune Windows
@@ -226,11 +229,11 @@ Lade till förbättringsåtgärder:
 - Se till att alla användare kan slutföra multifaktorautentisering för säker åtkomst
 - Kräv MFA för administrativa roller
 
- Dessa nya förbättringsåtgärder kräver registrering av användare eller administratörer för MFA (Multi factor Authentication) i katalogen och upprätta rätt uppsättning principer som passar dina organisationsbehov. Huvudmålet är att ha flexibilitet samtidigt som alla användare och administratörer kan autentisera med flera faktorer eller riskbaserade uppmaningar om identitetsverifiering. Det kan ta formen av flera principer som tillämpar begränsade beslut eller anger säkerhetsstandarder (som kommer den 16 mars) som låter Microsoft bestämma när användare ska utmanas för MFA.
+ Dessa nya förbättringsåtgärder kräver registrering av användare eller administratörer för MFA (Multi Factor Authentication) i katalogen och upprätta rätt uppsättning principer som passar dina organisationsbehov. Huvudmålet är att ha flexibilitet samtidigt som alla användare och administratörer kan autentisera med flera faktorer eller riskbaserade uppmaningar om identitetsverifiering. Det kan ta formen av flera principer som tillämpar begränsade beslut, eller ange säkerhetsstandarder (som kommer 16 mars) som låter Microsoft bestämma när användare ska utmanas för MFA.
 
 #### <a name="removed-review-improvement-actions"></a>Borttagna "granska" förbättringsåtgärder
 
-En av principerna för Secure Score är att poängen ska vara standardiserade och lätta att relatera till. Att ha förbättringsåtgärder som inte är mätbara eller genomförbara har orsakat förvirring. En Microsoft Secure Score är bara meningsfullt när varje rekommendation kan ha en tydlig effekt på poängen. Granskningsåtgärder mäts inte enligt samma standard som andra förbättringsåtgärder.  
+En av principerna för Secure Score är att poängen ska vara standardiserade och lätta att relatera till. Att ha förbättringsåtgärder som inte är mätbara eller genomförbara har orsakat förvirring. En Microsoft Secure Score är bara meningsfullt när varje rekommendation kan ha en tydlig effekt på poängen. Granskningsförbättringsåtgärder mäts inte enligt samma standard som andra förbättringsåtgärder.  
 
 Av dessa skäl har alla förbättringsåtgärder som krävde en granskningskadens tillfälligt tagits bort. Inga åtgärder behövs från din sida.
 

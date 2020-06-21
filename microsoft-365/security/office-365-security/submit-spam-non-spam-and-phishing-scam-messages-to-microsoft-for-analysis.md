@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: Administratörer och en-användare kan lära sig att e-postmeddelanden (bra e-post markerad som dålig eller dålig post tillåts) till Microsoft för analys.
+description: Administratörer och slutanvändare kan lära sig att skicka e-postmeddelanden (bra e-post markerad som felaktig eller felaktig e-post tillåts) till Microsoft för analys.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208615"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811044"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden manuellt till Microsoft för analys
 
@@ -31,7 +31,7 @@ ms.locfileid: "44208615"
 
 Det kan vara frustrerande när användare i organisationen får skräppost eller nätfiskemeddelanden i inkorgen, eller om de inte får ett legitimt e-postmeddelande eftersom det är markerat som skräppost. Vi finjusterar ständigt våra skräppostfilter för att vara mer exakta.
 
-Du och dina användare kan hjälpa den här processen genom att skicka in falska positiva identifieringar (bra e-post markerad som dålig), falska negativ (felaktig e-post tillåten) och nätfiskemeddelanden till Microsoft för analys.
+Du och dina användare kan hjälpa den här processen genom att skicka in falska positiva identifieringar (bra e-post markerad som dålig), falska negativ (tillåtna meddelanden om dålig e-post) och nätfiskemeddelanden till Microsoft för analys.
 
 > [!NOTE]
 > På grund av den stora mängden inlagor som vi får kanske vi inte kan svara på alla förfrågningar om analys.
@@ -41,7 +41,7 @@ Du och dina användare kan hjälpa den här processen genom att skicka in falska
 > [!TIP]
 > I stället för att använda följande procedurer för att rapportera falska negativ kan användare i Outlook och Outlook på webben (tidigare kallat Outlook Web App) använda tillägget Rapportmeddelande för Microsoft Outlook. Information om hur du installerar och använder det här verktyget finns [i Aktivera tillägget Rapportmeddelande](enable-the-report-message-add-in.md).
 
-Om du får ett meddelande som skickades genom skräppostfiltrering som borde ha identifierats som skräppost eller nätfiske kan du skicka meddelandet till microsofts team för skräppostanalys och Microsofts nätfiskeanalys efter behov. Analytikerna granskar meddelandet och lägger till det i de serviceomfattande filtren om det uppfyller klassificeringskriterierna.
+Om du får ett meddelande som skickades genom skräppostfiltrering som borde ha identifierats som skräppost eller nätfiske kan du skicka meddelandet till Microsofts team för skräppostanalys och Microsofts nätfiskeanalys efter behov. Analytikerna granskar meddelandet och lägger till det i de serviceomfattande filtren om det uppfyller klassificeringskriterierna.
 
 1. Skapa ett nytt, tomt e-postmeddelande med någon av följande mottagare:
 

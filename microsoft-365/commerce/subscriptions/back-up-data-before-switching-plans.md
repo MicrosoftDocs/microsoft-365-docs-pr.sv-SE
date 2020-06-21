@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Säkerhetskopiera Outlook-, OneDrive-, Yammer- och SharePoint-innehåll innan du ändrar Microsoft 365-abonnemang.
-ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403624"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818537"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Säkerhetskopiera data innan du byter Microsoft 365 för affärsplaner
 
@@ -35,13 +35,13 @@ Om en användare kommer att växlas till en annan prenumeration som har färre d
   
 ## <a name="save-a-copy-of-outlook-information"></a>Spara en kopia av Outlook-information
 
-Om användarna har Outlook kan de [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Pst-fil i Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) innan deras abonnemang byts.
+Om användarna har Outlook kan de [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook PST-fil](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) innan deras plan byts.
   
-När övergången till det nya abonnemanget är klar kan användarna [importera e-post, kontakter och kalender från en Pst-fil i Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+När övergången till det nya abonnemanget är klar kan användarna [importera e-post, kontakter och kalender från en Pst-fil i Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
   
 ## <a name="save-files-stored-in-onedrive-for-business"></a>Spara filer som lagras i OneDrive för företag
 
-Innan användare växlas till en annan prenumeration kan de [hämta filer och mappar från OneDrive eller SharePoint](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05) till en annan plats, till exempel en mapp på datorns hårddisk eller en filresurs i organisationens nätverk.
+Innan användarna växlas till en annan prenumeration kan de [hämta filer och mappar från OneDrive eller SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) till en annan plats, till exempel en mapp på datorns hårddisk eller en filresurs i organisationens nätverk.
   
 ## <a name="save-yammer-information"></a>Spara Yammer-information
 
@@ -49,9 +49,9 @@ Administratörer kan exportera alla meddelanden, anteckningar, filer, ämnen, an
   
 ## <a name="how-to-save-sharepoint-information"></a>Spara SharePoint-information
 
-Om en användare växlas från en prenumeration som har SharePoint Online till en som inte har den, visas inte **sharepoint-panelen** längre på Microsoft 365-menyn.
+Om en användare växlas från en prenumeration som har SharePoint Online till en som inte har den visas inte längre **SharePoint-panelen** på Microsoft 365-menyn.
   
-Så länge den nya prenumerationen är inom samma organisation som de har bytt från kan användaren fortfarande se SharePoint-gruppwebbplatsen. De kan visa och uppdatera anteckningsböcker, dokument, uppgifter och kalendrar med hjälp av direktlänkarna på gruppwebbplatsen.
+However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
   
 > [!TIP]
 > Vi rekommenderar att sådana användare går till gruppwebbplatsen innan prenumerationen byts ut och sparar webbadressen som en favorit eller ett bokmärke i webbläsaren.

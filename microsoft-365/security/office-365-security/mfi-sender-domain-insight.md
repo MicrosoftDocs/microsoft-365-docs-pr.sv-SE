@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Administratörer kan lära sig mer om åtkomstbesiktningen av korrigeringsavsändaren i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4cf4a87ad770325ca6ad2f0b87ac8ce52c345c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635178"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818837"
 ---
 # <a name="fix-sender-domain-insight"></a>Insikten Åtgärda avsändardomän
 
@@ -28,7 +30,7 @@ Microsoft 365 kräver meddelanden som skickas från interna lokala e-postmiljöe
 
 - I konfigurationen är ett av följande satser sant:
 
-  - Avsändarens e-postdomän är registrerad i din organisation. Mer information finns i Lägga till domäner i Office 365.
+  - Avsändarens e-postdomän är registrerad i din organisation. Se Lägga till domäner i Office 365 för mer information.
 
   - Din lokala e-postserver är konfigurerad för att använda ett certifikat för att skicka e-post till Microsoft 365, certifikatet innehåller eller matchar exakt ett domännamn som du har registrerat i Microsoft 365 och du har skapat en certifikatbaserad anslutningsapp i Microsoft 365 med den domänen. 
 
@@ -46,6 +48,6 @@ Den inkommande anslutningsappen som användes för att leverera meddelandena til
 
 ![Visa exempelmeddelande-ID:er i fix-domänens insikt](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="related-topics"></a>Relaterade ämnen
 
 Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).

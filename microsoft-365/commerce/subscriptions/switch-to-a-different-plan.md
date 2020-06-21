@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: Läs om hur du byter till en ny Microsoft 365 för företag-prenumeration.
-ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs om hur du byter till en ny Prenumeration på Microsoft 365 för företag.
+ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403192"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818641"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Byta till ett annat Microsoft 365 för företag-abonnemang
 
@@ -41,7 +41,7 @@ Det enklaste sättet att byta abonnemang är att använda knappen **Byt abonnema
 
 **Behöver du något annat?**
 - [Avbryt prenumerationen](cancel-your-subscription.md)
-- [Uppgradera Microsoft 365-familjen till en företagsprenumeration](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Uppgradera Microsoft 365-familjen till en företagsprenumeration](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Ring Microsoft-support](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Använd knappen Växla abonnemang
@@ -70,7 +70,7 @@ När du använder knappen **Byt abonnemang** leds du genom processen att köpa e
 
     [Knappen Byt abonnemang finns inte där](#the-switch-plans-button-isnt-there)  |  [Jag ser inte planen jag vill ha.](#i-dont-see-the-plan-i-want)
 
-3. Välj en plan för att se den nya totala kostnaden per månad. Var noga med att läsa **nyckelinformationen**och välj sedan **Nästa** för att checka ut.
+3. Välj en plan för att se den nya totala kostnaden per månad. Var noga med att läsa **viktig information**och välj sedan **Nästa** för att checka ut.
 
     [Hjälp mig att välja en ny plan](https://go.microsoft.com/fwlink/p/?linkid=842056).
 
@@ -92,7 +92,7 @@ Här är varför detta kan hända:
 
 När du använder knappen **Byt abonnemang** visas de planer som du kan växla till baserat på tjänsterna i ditt aktuella abonnemang. Du kan bara använda knappen **Byt abonnemang** för att växla till ett abonnemang som har samma datarelaterade tjänster eller till en högre version. Detta garanterar att användarna inte förlorar data i samband med dessa tjänster vid bytet.
   
-Om du vill jämföra planer innan du byter läser du sidan [Microsoft 365 för företagsproduktjämförelse.](https://go.microsoft.com/fwlink/p/?linkid=842056) Tekniska specifikationer finns i [Microsoft 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=842275).
+Om du vill jämföra planer innan du byter finns på sidan [Microsoft 365 för företag produktjämförelse.](https://go.microsoft.com/fwlink/p/?linkid=842056) Tekniska specifikationer finns i [Microsoft 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?linkid=842275).
   
 Om du vill byta till ett abonnemang med färre tjänster kan du [byta abonnemang manuellt](switch-plans-manually.md)eller [Ringa Microsoft Support](../../admin/contact-support-for-business-products.md) för hjälp.
   

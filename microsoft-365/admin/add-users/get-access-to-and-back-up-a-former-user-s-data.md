@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Läs om hur du bevarar en medarbetares filer och e-postmeddelanden när personen lämnar organisationen.
-ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431719"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780619"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
 
@@ -38,7 +38,7 @@ När en medarbetare lämnar organisationen vill du förmodligen komma åt deras 
     
 ## <a name="access-a-former-users-onedrive-documents"></a>Komma åt en tidigare användares OneDrive-dokument
 
-Om du tar bort en användares licens men inte tar bort kontot kan du ge dig själv åtkomst till innehållet på användarens OneDrive. Om du tar bort användarens konto har du som standard 30 dagar på dig att komma åt den tidigare användarens OneDrive-data. [Lär dig hur du ställer in OneDrive-kvarhållningen för borttagna användare](/onedrive/set-retention). Om du inte [återställer ett användarkonto](/office365/admin/add-users/restore-user) inom den här tiden tas deras OneDrive-innehåll bort. 
+Om du tar bort en användares licens men inte tar bort kontot kan du ge dig själv åtkomst till innehållet på användarens OneDrive. Om du tar bort användarens konto har du 30 dagar som standard att komma åt den tidigare användarens OneDrive-data. [Lär dig hur du ställer in OneDrive-kvarhållningen för borttagna användare](/onedrive/set-retention). Om du inte [återställer ett användarkonto](/office365/admin/add-users/restore-user) inom den här tiden tas deras OneDrive-innehåll bort. 
 
 Om du vill bevara en tidigare användares OneDrive-filer ger du dig först åtkomst till deras OneDrive och flyttar sedan de filer du vill behålla. 
 
@@ -50,11 +50,11 @@ Om du vill bevara en tidigare användares OneDrive-filer ger du dig först åtko
 
 3. Välj **OneDrive**i den högra rutan . Under **Hämta åtkomst till filer**väljer du Skapa länk till **filer**.
 
-4. Välj länken för att öppna filplatsen. Ladda ned filerna till datorn eller välj **Flytta till** eller Kopiera **för att** flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek. 
+4. Välj länken för att öppna filplatsen. Hämta filerna till datorn eller välj **Flytta till** eller Kopiera **för att** flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek. 
 
 > [!NOTE]
 > Du kan flytta eller kopiera upp till 500 MB filer och mappar åt gången.<br/>
-> När du flyttar eller kopierar dokument med versionshistorik flyttas bara den senaste versionen.  
+> När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
 
 ::: moniker-end
 
@@ -66,11 +66,11 @@ Om du vill bevara en tidigare användares OneDrive-filer ger du dig först åtko
 
 3. Expandera **OneDrive-inställningar i**den högra rutan och välj sedan **Access-filer bredvid** **Access**.
 
-4. Välj länken för att öppna filplatsen. Ladda ned filerna till datorn eller välj **Flytta till** eller Kopiera **för att** flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek. 
+4. Välj länken för att öppna filplatsen. Hämta filerna till datorn eller välj **Flytta till** eller Kopiera **för att** flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek. 
 
 > [!NOTE]
 > Du kan flytta eller kopiera upp till 500 MB filer och mappar åt gången.<br/>
-> När du flyttar eller kopierar dokument med versionshistorik flyttas bara den senaste versionen.  
+> När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
 
 ::: moniker-end
 
@@ -82,11 +82,11 @@ Om du vill bevara en tidigare användares OneDrive-filer ger du dig först åtko
 
 3. Expandera **OneDrive-inställningar i**den högra rutan och välj sedan **Access-filer bredvid** **Access**.
 
-4. Välj länken för att öppna filplatsen. Ladda ned filerna till datorn eller välj **Flytta till** eller Kopiera **för att** flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek.  
+4. Välj länken för att öppna filplatsen. Hämta filerna till datorn eller välj **Flytta till** eller Kopiera **för att** flytta eller kopiera dem till din egen OneDrive eller till ett delat bibliotek.  
 
 > [!NOTE]
 > Du kan flytta eller kopiera upp till 500 MB filer och mappar åt gången.<br/>
-> När du flyttar eller kopierar dokument med versionshistorik flyttas bara den senaste versionen.  
+> När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
 
 ::: moniker-end
     
@@ -122,7 +122,7 @@ Som global administratör kan du ge dig själv tillgång till innehållet på en
 
 2. Välj **Administrationscenter** \> **SharePoint**i den vänstra rutan . (Du kan behöva välja **Visa alla** för att se listan över administrationscenter.)
 
-3. Om det klassiska Administrationscentret för SharePoint visas väljer du **Öppna det nu** högst upp på sidan för att öppna administrationscentret för SharePoint.
+3. Om det klassiska Administrationscentret för SharePoint visas väljer du **Öppna det högst** upp på sidan för att öppna administrationscentret för SharePoint.
 
 4. Välj **Fler funktioner**i den vänstra rutan .
 
@@ -141,7 +141,7 @@ Som global administratör kan du ge dig själv tillgång till innehållet på en
 
 Om du vill spara e-postmeddelanden, kalender, uppgifter och kontakter för den tidigare medarbetaren exporterar du informationen till en Outlook-datafil (.pst).
   
-1. [Lägg till den tidigare anställdes e-post](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) i Outlook (Om du [återställer användarens lösenord](reset-passwords.md)kan du ställa in det till något som bara du vet.)
+1. [Lägg till den tidigare anställdes e-post](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) i Outlook (Om du [återställer användarens lösenord](reset-passwords.md)kan du ställa in det till något som bara du vet.)
     
 2. Välj **Arkiv**i Outlook .
     
@@ -157,7 +157,7 @@ Om du vill spara e-postmeddelanden, kalender, uppgifter och kontakter för den t
   
 5. Välj **Outlook-datafil (.pst)** och välj sedan **Nästa**.
     
-6. Välj det konto som du vill exportera genom att välja namn eller e-postadress, till exempel Postlåda - Anne Weiler eller anne@contoso.com. Om du vill exportera allt i ditt konto, inklusive e-post, kalender, kontakter, uppgifter och anteckningar, kontrollerar du att kryssrutan **Inkludera undermappar** är markerad. 
+6. Välj det konto som du vill exportera genom att välja namn eller e-postadress, till exempel Brevlåda - Anne Weiler eller anne@contoso.com. Om du vill exportera allt i ditt konto, inklusive e-post, kalender, kontakter, uppgifter och anteckningar, kontrollerar du att kryssrutan **Inkludera undermappar** är markerad. 
     
     > [!NOTE]
     > Du kan exportera ett konto i taget. Om du vill exportera flera konton upprepar du dessa steg när ett konto har exporterats. 
@@ -181,15 +181,15 @@ Outlook påbörjar exporten direkt om du inte skapar en ny Outlook-datafil (.pst
     
   - Om du exporterar till en befintlig Outlook-datafil (.pst) som är lösenordsskyddad skriver du *lösenordet*i dialogrutan **Lösenord för Outlook-datafil** och väljer sedan **OK**.
     
-Lär dig hur du [exporterar eller säkerhetskopierar e-post, kontakter och kalender till en PST-fil](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) i Outlook 2010. 
+Lär dig hur du [exporterar eller säkerhetskopierar e-post, kontakter och kalender till en PST-fil](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) i Outlook 2010. 
   
   
   > [!NOTE]
   > Som standard är din e-post tillgänglig offline under en period av 12 månader. Om det behövs kan du se hur du [ökar tillgängliga data offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
  
-## <a name="give-another-user-access-to-a-former-users-email"></a>Ge en annan användare åtkomst till en tidigare användares e-post 
+## <a name="give-another-user-access-to-a-former-users-email"></a>Ge en annan användare åtkomst till en tidigare användares e-postadress 
 
-Om du vill ge åtkomst till den tidigare medarbetarens e-postmeddelanden, kalender, uppgifter och kontakter till en annan anställd importerar du informationen till en annan medarbetares Outlook-inkorg.
+Om du vill ge åtkomst till den tidigare medarbetarens e-postmeddelanden, kalender, uppgifter och kontakter till en annan medarbetare importerar du informationen till en annan medarbetares Outlook-inkorg.
 
 > [!NOTE]
 > Du kan också [konvertera den tidigare användarens postlåda till en delad postlåda](https://docs.microsoft.com/office365/admin/email/convert-user-mailbox-to-shared-mailbox) eller [vidarebefordra en tidigare anställds e-post till en annan anställd](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).

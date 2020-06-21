@@ -19,13 +19,14 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 description: Lär dig mer om avancerat skydd mot Office 365 för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
-ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031454"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815415"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP för SharePoint, OneDrive och Microsoft Teams
 
@@ -33,13 +34,13 @@ ms.locfileid: "44031454"
 
 Personer delar regelbundet filer och samarbetar med SharePoint, OneDrive och Microsoft Teams. Med [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kan din organisation samarbeta på ett säkrare sätt. ATP hjälper till att identifiera och blockera filer som identifieras som skadliga på gruppwebbplatser och dokumentbibliotek.
 
-## <a name="how-it-works"></a>Så här fungerar det
+## <a name="how-office-365-atp-operates"></a>Så här fungerar Office 365 ATP
 
 När en fil i SharePoint Online, OneDrive för företag och Microsoft Teams har identifierats som skadlig integreras ATP direkt med filarkiven för att låsa filen. Följande bild visar ett exempel på en skadlig fil som har identifierats i ett bibliotek.
 
 ![Filer i OneDrive för företag med en som har identifierats som skadlig](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
-Även om den blockerade filen fortfarande finns med i dokumentbiblioteket och webb-, mobil- eller skrivbordsprogrammen kan den blockerade filen inte öppnas, kopieras, flyttas eller delas. Andra kan dock ta bort en blockerad fil. Här är ett exempel på hur det ser ut på en användares mobila enhet:
+Även om den blockerade filen fortfarande finns med i dokumentbiblioteket och webb-, mobil- eller skrivbordsprogram, kan den blockerade filen inte öppnas, kopieras, flyttas eller delas. Andra kan dock ta bort en blockerad fil. Här är ett exempel på hur det ser ut på en användares mobila enhet:
 
 ![Ta bort en blockerad fil från OneDrive för företag från OneDrive-mobilappen](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
@@ -55,7 +56,7 @@ Mer information finns i [Aktivera Office 365 ATP för SharePoint, OneDrive och M
 
 - Kontrollera att dina SharePoint-webbplatser är konfigurerade för att använda den [moderna upplevelsen](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). När en fil identifieras som skadlig och blockerad kan andra se att detta har inträffat i den moderna upplevelsen, men inte den klassiska vyn. ATP-skydd gäller oavsett om den moderna upplevelsen eller den klassiska vyn används. Visuella indikatorer som en fil är blockerad finns dock bara i den moderna upplevelsen.
 
-- Filer som identifieras som skadliga i SharePoint Online, OneDrive för företag eller Microsoft Teams visas i [rapporter för avancerat skydd mot office 365](view-reports-for-atp.md) och i [Explorer (och realtidsidentifieringar).](threat-explorer.md)
+- Filer som identifieras som skadliga i SharePoint Online, OneDrive för företag eller Microsoft Teams visas i [rapporter för avancerat skydd mot Office 365](view-reports-for-atp.md) och i [Explorer (och realtidsidentifieringar).](threat-explorer.md)
 
 - ATP är en del av organisationens övergripande strategi för skydd av hot, som omfattar skydd mot skräppost och skadlig kod, samt säkra länkar och säkra bilagor. Mer information finns [i Skydda mot hot i Office 365](protect-against-threats.md).
 
@@ -65,11 +66,11 @@ Mer information finns i [Aktivera Office 365 ATP för SharePoint, OneDrive och M
 
  Från och med slutet av maj 2018 utökas [karantänfunktionerna](quarantine-email-messages.md) i Security &amp; Compliance Center till ATP för SharePoint Online, OneDrive för företag och Microsoft Teams.
 
-När en fil i SharePoint Online, OneDrive för företag eller Microsoft Teams identifieras som skadlig, förutom att ATP blockerar filen från att öppnas eller delas, inkluderas filen i en lista över objekt i karantän. (I Security &amp; Compliance Center går du till **Karantän för granskning av hothantering** \> **Review** \> **och** filtrerar efter **filer**.)
+När en fil i SharePoint Online, OneDrive för företag eller Microsoft Teams identifieras som skadlig, förutom att ATP blockerar filen från att öppnas eller delas, inkluderas filen i en lista över objekt i karantän. (I säkerhets- &amp; Compliance Center, gå till **Threat Management** \> **Review** \> **Karantän** och filter för **filer**.)
 
-Om du ingår i organisationens Microsoft 365 för företagssäkerhetsteam och har de behörigheter som krävs [tilldelade i Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)kan du hämta, släppa, rapportera och ta bort filer som identifieras som skadliga av ATP från karantänen.
+Om du ingår i organisationens Microsoft 365 för företagssäkerhetsteam och har de behörigheter som krävs [som tilldelats i Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)kan du hämta, släppa, rapportera och ta bort filer som identifieras som skadliga av ATP från karantänen.
 
-- **Om du släpper och rapporterar** en fil tas ATP-blocket bort på filen på respektive gruppwebbplats eller dokumentbibliotek för SharePoint, OneDrive eller Microsoft Teams. Användarna kan sedan öppna, dela och ladda ned filen. Och när alternativet **Skicka rapport till Microsoft** är markerat rapporteras filen som falskt positivt för Microsoft.
+- **Om du släpper och rapporterar** en fil tas ATP-blocket bort på filen på respektive gruppwebbplats eller dokumentbibliotek för SharePoint, OneDrive eller Microsoft Teams. Användarna kan sedan öppna, dela och hämta filen. Och när alternativet **Skicka rapport till Microsoft** är markerat rapporteras filen som falskt positivt för Microsoft.
 
 - **Om du tar bort en fil** tas filen bort från karantänen. Filen är dock fortfarande blockerad från att öppnas eller delas. Filen måste också tas bort i respektive dokumentbibliotek eller gruppwebbplats (SharePoint Online, OneDrive för företag eller Microsoft Teams).
 

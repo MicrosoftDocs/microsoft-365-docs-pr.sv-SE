@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Läs om hur du avbryter din Microsoft 365 för företagstestversion eller betald prenumeration.
-ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403300"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818525"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
@@ -47,7 +47,7 @@ ms.locfileid: "44403300"
 
 ## <a name="steps-to-cancel-your-subscription"></a>Steg för att avbryta prenumerationen
 
-Om du har lagt till ditt eget domännamn som ska användas med din prenumeration måste du ta bort domänen innan du avbryter prenumerationen. Mer information finns i [Ta bort en domän](../../admin/get-help-with-domains/remove-a-domain.md).
+Om du har lagt till ditt eget domännamn som ska användas med prenumerationen måste du ta bort domänen innan du avbryter prenumerationen. Mer information finns i [Ta bort en domän](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
@@ -57,7 +57,7 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 3. Granska viktiga datum, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration**.
 
-    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+    Prenumerationen visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration upphör?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 4. Granska viktiga datum, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration**.
 
-    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+    Prenumerationen visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration upphör?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Om du har lagt till ditt eget domännamn som ska användas med din prenumeration
 
 4. Granska viktiga datum, ge feedback om varför du avbryter och välj sedan **Avbryt prenumeration**.
 
-    Din prenumeration visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration avslutas?](what-if-my-subscription-expires.md)
+    Prenumerationen visas nu i **inaktiverat** tillstånd och har nedsatt funktionalitet tills den tas bort. Mer information om vad du kan förvänta dig när en betald Microsoft 365 för företag-prenumeration avbryts finns i Vad händer med [mina data och åtkomst när min Microsoft 365 för företag-prenumeration upphör?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -101,12 +101,12 @@ Om du avbryter en prenumeration före terminens flyttas prenumerationen direkt t
   
 - **Åtkomst till administratör** Administratörer kan fortfarande logga in och komma åt administrationscentret och köpa andra prenumerationer efter behov. Som global administratör eller faktureringsadministratör har du 90 dagar på dig att [återaktivera prenumerationen](reactivate-your-subscription.md) med alla data intakta.
 
-- **Användaråtkomst** Användarna kan inte använda tjänster som OneDrive för företag eller komma åt kunddata som e-post eller dokument på gruppwebbplatser. Office-program, som Word och Excel, flyttas så småningom till ett skrivskyddat läge med nedsatt funktionalitet och [meddelanden om ej licensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) visas.
+- **Användaråtkomst** Användarna kan inte använda tjänster som OneDrive för företag eller komma åt kunddata som e-post eller dokument på gruppwebbplatser. Office-program, som Word och Excel, flyttas så småningom till ett skrivskyddat läge med nedsatt funktionalitet och [meddelanden om ej licensierad produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) visas.
 
 Mer information finns i [Vad händer med mina data och åtkomst när min prenumeration avslutas?](what-if-my-subscription-expires.md)
 
 > [!IMPORTANT]
-> Om du vill att dina prenumerationsdata ska tas bort innan den vanliga inaktiverade perioden är över kan du [stänga kontot](../close-your-account.md).
+> Om du vill att dina prenumerationsdata ska tas bort innan den typiska inaktiverade perioden är över kan du [stänga kontot](../close-your-account.md).
 
 ## <a name="other-steps-you-might-have-to-take"></a>Andra åtgärder du kanske måste vidta
 
@@ -116,9 +116,9 @@ Om du använder en anpassad domän med din prenumeration finns det några extra 
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Ändra dina domännamnserverposter (om det behövs)
 
-Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domänen skulle fungera med Microsoft 365-tjänster. Innan du tar bort domänen måste du uppdatera DNS-posterna, till exempel domän-MX-posten, hos dns-värden.
+Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domänen skulle fungera med Microsoft 365-tjänster. Innan du tar bort domänen måste du uppdatera DNS-posterna, till exempel domän MX-posten, hos din DNS-värd.
 
-Ändra till exempel MX-posten på DNS-värden. E-post som skickas till din domän slutar komma till din Microsoft-adress och går till din nya e-postleverantör istället. (En MX-post bestämmer vart e-post för domänen skickas.)
+Ändra till exempel MX-posten hos DNS-värden. E-post som skickas till din domän slutar komma till din Microsoft-adress och går till din nya e-postleverantör istället. (En MX-post bestämmer vart e-post för domänen skickas.)
 
 - Om dina NS-poster (Nameserver) [pekar på Microsoft 365-namnservrar](../../admin/setup/add-domain.md)börjar ändringar i MX-posten inte gälla förrän du ändrar NS-posterna så att de pekar på din nya DNS-värd (se steg 2).
 
@@ -128,7 +128,7 @@ Om du konfigurerar en anpassad domän har du lagt till DNS-poster så att domän
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Uppdatera domänen MX och andra DNS-poster (om du använder en anpassad domän)
 
-Om du har bytt namnserverposter (NS) till Microsoft 365 när du konfigurerade domänen måste du konfigurera eller uppdatera MX-posten och andra DNS-poster hos den DNS-värd du planerar att använda och sedan ändra NS-posten till den DNS-värden.
+Om du har växlat namnserverposterna till Microsoft 365 när du konfigurerade domänen måste du konfigurera eller uppdatera MX-posten och andra DNS-poster hos den DNS-värd du planerar att använda och sedan ändra NS-posten till den DNS-värden.
 
 Om du inte växlade NS-poster när du konfigurerade domänen börjar din e-post gå till den nya adressen direkt när du ändrar MX-posten.
 
@@ -138,13 +138,13 @@ Mer information finns i [Hur hanterar Microsoft 365 mina DNS-poster?](../../admi
 
 När annulleringen träder i kraft förlorar användarna åtkomsten till sina data. Innan du avslutar prenumerationen ber du dem spara sina OneDrive för företag- eller SharePoint Online-filer på en annan plats. Alla kunddata som du lämnar efter dig kan raderas efter 30 dagar och raderas senast 180 dagar efter avbokningen.
 
-- Om du vill flytta e-post, kontakter, uppgifter och kalenderinformation till ett annat konto hittar du information i artikeln om att [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-datafil (.pst)](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
+- Om du vill flytta e-post, kontakter, uppgifter och kalenderinformation till ett annat konto hittar du information i artikeln om att [exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-datafil (.pst)](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
 - Om du vill spara ett dokumentbibliotek eller listinnehåll (till exempel kontakter) från en SharePoint Online-miljö (OneDrive för företag eller gruppwebbplatser) på filresurser eller på en lokal dator kan du läsa mer i artikeln om [manuell migrering av SharePoint Online-innehåll](https://support.microsoft.com/kb/2783484).
 
 ### <a name="uninstall-office-optional"></a>Avinstallera Office (valfritt)
 
-Om du avbröt prenumerationen och inte flyttade användare till en annan prenumeration som innehåller Microsoft 365 körs Microsoft 365 i läget nedsatt funktionalitet. När detta inträffar kan användarna bara läsa och skriva ut dokument och Microsoft 365-program visar [meddelanden om olicensierad produkt](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Se till att användarna [avinstallerar Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) från sina datorer för att undvika missförstånd.
+Om du avbröt prenumerationen och inte flyttade användare till en annan prenumeration som innehåller Microsoft 365 körs Microsoft 365 i läget nedsatt funktionalitet. När detta inträffar kan användarna bara läsa och skriva ut dokument och Microsoft 365-program visar [meddelanden om olicensierad produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Se till att användarna [avinstallerar Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) från sina datorer för att undvika missförstånd.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

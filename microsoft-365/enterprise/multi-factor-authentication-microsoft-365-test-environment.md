@@ -1,5 +1,5 @@
 ---
-title: Multifaktorautentisering för testmiljön för Microsoft 365 Enterprise
+title: Microsoft 365 Företags testmiljö multifaktorautentisering
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,19 +14,20 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: Konfigurera multifaktorautentisering med textmeddelanden som skickas till en smart telefon i testmiljön för Microsoft 365 Enterprise.
-ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213146"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819382"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Multifaktorautentisering för testmiljön för Microsoft 365 Enterprise
 
 *Den här testlabbguiden kan användas i både Microsoft 365 Enterprise- och Office 365 Enterprise-testmiljöer.*
 
-Om du vill ha ytterligare en säkerhetsnivå för att logga in på Microsoft 365 eller någon tjänst eller program som använder Azure AD-klienten för din prenumeration kan du aktivera Azure multifaktorautentisering, vilket kräver mer än bara ett användarnamn och lösenord för att verifiera ett konto. 
+Om du vill ha ytterligare en säkerhetsnivå för inloggning till Microsoft 365 eller någon tjänst eller program som använder Azure AD-klienten för din prenumeration kan du aktivera Azure multifaktorautentisering, vilket kräver mer än bara ett användarnamn och lösenord för att verifiera ett konto. 
 
 Med multifaktorautentisering måste användarna bekräfta ett telefonsamtal, skriva en verifieringskod som skickas i ett textmeddelande eller verifiera autentiseringen med en app på sina smarta telefoner när de har angett sina lösenord korrekt. De kan logga in först när den här andra autentiseringsfaktorn har uppfyllts. 
   
@@ -43,11 +44,11 @@ Det finns två faser för att konfigurera multifaktorautentisering för ett kont
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+> Gå till [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) för en visuell karta till alla artiklar i Microsoft 365 Enterprise Test Lab Guide stacken.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygga ut testmiljön i Microsoft 365 Enterprise
 
-Om du bara vill testa multifaktorautentisering på ett lätt väg med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du bara vill testa multifaktorautentisering på ett lättviktssätt med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 Om du vill testa multifaktorautentisering i ett simulerat företag följer du instruktionerna i [Direktautentisering](pass-through-auth-m365-ent-test-environment.md).
   
@@ -58,7 +59,7 @@ Om du vill testa multifaktorautentisering i ett simulerat företag följer du in
 
 Aktivera multifaktorautentisering för User 2-kontot med följande steg:
   
-1. Öppna en separat, privat instans av webbläsaren, gå till Microsoft 365 admin center ( [https://portal.microsoft.com](https://portal.microsoft.com) ) och logga sedan in med ditt globala administratörskonto.
+1. Öppna en separat, privat instans av webbläsaren, gå till Microsoft 365 admin center ( [https://portal.microsoft.com](https://portal.microsoft.com) ) och sedan logga in med ditt globala administratörskonto.
     
 2. Klicka på **Användare > Aktiva användare** i det vänstra navigeringsfönstret.
     
@@ -76,7 +77,7 @@ Aktivera multifaktorautentisering för User 2-kontot med följande steg:
     
 9. Stäng webbläsarinstansen.
    
-Slutför konfigurationen för user 2-kontot för att använda ett textmeddelande för validering och testa det med följande steg:
+Slutför konfigurationen för user 2-kontot om du vill använda ett textmeddelande för validering och testa det med följande steg:
   
 1. Öppna en ny, privat instans av din webbläsare.
     
@@ -98,19 +99,19 @@ Slutför konfigurationen för user 2-kontot för att använda ett textmeddelande
     
 7. På **steg 3: Behåll din befintliga programsida** klickar du på **Klar.**
     
-8. Om det är första gången du loggade in med kontot Användare 2 uppmanas du att ändra lösenordet. Skriv det ursprungliga lösenordet och ett nytt lösenord två gånger och klicka sedan på **Uppdatera lösenord och logga in**. Registrera det nya lösenordet på en säker plats.
+8. Om det är första gången du loggade in med user 2-kontot uppmanas du att ändra lösenordet. Skriv det ursprungliga lösenordet och ett nytt lösenord två gånger och klicka sedan på **Uppdatera lösenord och logga in**. Spela in det nya lösenordet på en säker plats.
     
-    Du bör se Office-portalen för användare 2 på fliken **Microsoft Office Home** i webbläsaren.
+    Du bör se Office-portalen för användare 2 på fliken Start för **Microsoft Office** i webbläsaren.
 
 ## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Fas 3: Aktivera och testa multifaktorautentisering med en princip för villkorlig åtkomst
 
 *Den här fasen kan bara användas för en Microsoft 365 Enterprise-testmiljö.*
 
-I den här fasen aktiverar du multifaktorautentisering för User 3-kontot med hjälp av en grupp och en princip för villkorlig åtkomst.
+I den här fasen aktiverar du multifaktorautentisering för user 3-kontot med hjälp av en grupp och en princip för villkorlig åtkomst.
 
 Skapa sedan en ny grupp med namnet MFAUsers och lägg till kontot användare 3 i den.
 
-1. Klicka på **Grupper** i den vänstra navigeringen på fliken **Administrationscenter i Microsoft 365** och klicka sedan på **Grupper**.
+1. Klicka på **Grupper** i den vänstra navigeringen på fliken **Administrationscenter för Microsoft 365** och klicka sedan på **Grupper**.
 2. Klicka på **Lägg till en grupp**.
 3. I fönstret **Välj grupptyp** väljer du **Säkerhet**och klickar sedan på **Nästa**.
 4. Klicka på **Skapa grupp**i fönstret **Konfigurera grunderna** och klicka sedan på **Stäng**.

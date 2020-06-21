@@ -20,19 +20,19 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om hur automatisk rensning av nolltimmar (ZAP) retroaktivt kan flytta levererade meddelanden i en Exchange Online-postlåda till mappen Skräppost eller karantän som retroaktivt visar sig vara skräppost eller nätfiske.
-ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: Administratörer kan lära sig mer om hur automatisk rensning på noll timmar (ZAP) retroaktivt kan flytta levererade meddelanden i en Exchange Online-postlåda till mappen Skräppost eller karantän som retroaktivt visar sig vara skräppost eller nätfiske.
+ms.openlocfilehash: 612ef45194fbf70ef89eee0f455b2d4d8781247f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208446"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819430"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zero-hour automatisk rensning (ZAP) i Exchange Online
 
-## <a name="overview"></a>Översikt
+## <a name="basic-features-of-zap"></a>Grundläggande funktioner i ZAP
 
-I Microsoft 365-organisationer med postlådor i Exchange Online är automatisk rensning av nolltimmar (ZAP) en e-postskyddsfunktion som retroaktivt identifierar och neutraliserar meddelanden om skadligt nätfiske, skräppost eller skadlig kod som redan har levererats till Exchange Online-postlådor.
+I Microsoft 365-organisationer med postlådor i Exchange Online är automatisk rensning av nolltimmar (ZAP) en e-postskyddsfunktion som retroaktivt upptäcker och neutraliserar meddelanden om skadligt nätfiske, skräppost eller skadlig kod som redan har levererats till Exchange Online-postlådor.
 
 ZAP fungerar inte i fristående EOP-miljöer (Exchange Online Protection) som skyddar lokala Exchange-postlådor.
 
@@ -42,17 +42,17 @@ Spam och malware signaturer uppdateras i tjänsten i realtid på en daglig basis
 
 ZAP-åtgärden är sömlös för användaren. De meddelas inte om ett meddelande identifieras och flyttas.
 
-[Säkra avsändarelistor](create-safe-sender-lists-in-office-365.md), e-postflödesregler (kallas även transportregler), inkorgsregler eller ytterligare filter har företräde framför ZAP. I likhet med vad som händer i e-postflödet innebär det att även om tjänsten bestämmer att det levererade meddelandet behöver ZAP, så har meddelandet inte agerat på grund av konfigurationen för betrodda avsändare. Detta är ytterligare en anledning att vara försiktig med att konfigurera meddelanden för att kringgå filtrering.
+[Säkra avsändarelistor](create-safe-sender-lists-in-office-365.md), e-postflödesregler (kallas även transportregler), inkorgsregler eller ytterligare filter har företräde framför ZAP. I likhet med vad som händer i e-postflödet innebär det att även om tjänsten bestämmer att det levererade meddelandet behöver ZAP, så har meddelandet inte agerat på grund av konfigurationen för betrodda avsändare. Detta är ytterligare en anledning att vara försiktig med att konfigurera meddelanden till bypass-filtrering.
 
 ### <a name="malware-zap"></a>Malware ZAP
 
-För **lästa eller olästa meddelanden** som visar sig innehålla skadlig kod efter leverans sätter ZAP meddelandet som innehåller den bifogade koden i karantän. Endast administratörer kan visa och hantera meddelanden om skadlig kod från karantänen.
+För **lästa eller olästa meddelanden** som visar sig innehålla skadlig kod efter leverans sätter ZAP meddelandet som innehåller den bifogade koden i karantän. Endast administratörer kan visa och hantera meddelanden om skadlig kod från karantän.
 
-Malware ZAP är aktiverat som standard i anti-malware politik. Mer information finns i [Konfigurera principer mot skadlig kod i EOP](configure-anti-malware-policies.md).
+Malware ZAP är aktiverat som standard i anti-malware politik. Mer information finns [i Konfigurera principer mot skadlig kod i EOP](configure-anti-malware-policies.md).
 
 ### <a name="phish-zap"></a>Phish ZAP
 
-För **lästa eller olästa meddelanden** som identifieras som phish efter leverans beror ZAP-resultatet på vilken åtgärd som har konfigurerats för en **phishing-e-postfiltreringsdom** i tillämplig policy mot skräppost. De tillgängliga filtreringsutlåtandesåtgärderna för phish och deras möjliga ZAP-resultat beskrivs i följande lista:
+För **lästa eller olästa meddelanden** som identifieras som phish efter leverans beror ZAP-resultatet på vilken åtgärd som är konfigurerad för en **phishing-e-postfiltreringsdom** i tillämplig policy mot skräppost. De tillgängliga filtreringsutlåtandesåtgärderna för phish och deras möjliga ZAP-resultat beskrivs i följande lista:
 
 - **Lägg till X-Header**, **Prepend ämnesrad med text:** ZAP vidtar ingen åtgärd på meddelandet.
 
@@ -80,33 +80,29 @@ Mer information om hur du konfigurerar domar för skräppostfiltrering finns [i 
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>ZAP-överväganden för avancerat skydd mot Office 365 (Office 365 ATP)
 
-ZAP kommer inte att sätta något meddelande i karantän som håller på att [skannas](dynamic-delivery-and-previewing.md) dynamisk leverans, eller där filtrering av skadlig kod redan har ersatt den bifogade filen med filen **Malware Alert Text.txt.** Om en phish eller spam signal tas emot för dessa typer av meddelanden, och filtrering dom i anti-spam politik är inställd på att vidta vissa åtgärder på meddelandet (Flytta till Skräp, Omdirigera, Ta bort, Karantän) då ZAP kommer standard till en "Flytta till Skräp" åtgärd.
+ZAP kommer inte att sätta något meddelande i karantän som håller på att [skannas](dynamic-delivery-and-previewing.md) dynamisk leverans, eller där filtreringen av skadlig kod redan har ersatt den bifogade filen med filen **Malware Alert Text.txt.** Om en phish eller spam signal tas emot för dessa typer av meddelanden, och filtrering dom i anti-spam politik är inställd på att vidta vissa åtgärder på meddelandet (Flytta till Skräp, Omdirigera, Ta bort, Karantän) då ZAP kommer standard till en "Flytta till Skräp" åtgärd.
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Så här ser du om ZAP har flyttat meddelandet
 
 För att avgöra om ZAP har flyttat meddelandet kan du använda [antingen rapporten Status för hotskydd](view-email-security-reports.md#threat-protection-status-report) eller Hot Explorer [(och identifiering i realtid)](threat-explorer.md). Observera att ZAP som en systemåtgärd inte är inloggad i granskningsloggarna för Exchange-postlådan.
 
-## <a name="zap-faq"></a>FRÅGOR OM ZAP
+## <a name="zap-faq"></a>VANLIGA FRÅGOR OM ZAP
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Vad händer om ett legitimt meddelande flyttas till mappen Skräppost?
 
 Du bör följa den normala rapporteringsprocessen för [falska positiva identifieringar](report-junk-email-messages-to-microsoft.md). Den enda anledningen till att meddelandet skulle flyttas från inkorgen till mappen Skräppost skulle bero på att tjänsten har fastställt att meddelandet var skräppost eller skadligt.
 
-### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Vad gör jag om jag använder karantänmappen i stället för mappen Skräppost?
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Vad händer om jag använder karantänmappen i stället för mappen Skräppost?
 
 ZAP kommer att vidta åtgärder för ett meddelande baserat på konfigurationen din anti-spam politik som beskrivs tidigare i det här avsnittet.
 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Vad händer om jag använder betrodda avsändare, regler för e-postflöde eller tillåtna/blockerade avsändarelistor?
 
-Betrodda avsändare, regler för e-postflöde eller blockera och tillåta organisationsinställningar har företräde. Dessa meddelanden är undantagna från ZAP eftersom tjänsten gör vad du konfigurerat den att göra. Detta är ytterligare en anledning att vara försiktig med att konfigurera meddelanden för att kringgå filtrering.
+Säkra avsändare, regler för e-postflöde eller blockera och tillåta organisationsinställningar har företräde. Dessa meddelanden är undantagna från ZAP eftersom tjänsten gör vad du konfigurerat den att göra. Detta är ytterligare en anledning att vara försiktig med att konfigurera meddelanden till bypass-filtrering.
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Vad händer om ett meddelande flyttas till en annan mapp (t.ex. inkorgsregler)?
 
-ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge som samma, eller starkare, åtgärder inte redan har tillämpats. Om phish-principen till exempel är inställd på karantän och användaren eller administratören redan har skräppost, kommer karantän att vidta åtgärder för att sätta filen i karantän.
-
-### <a name="does-zap-change-the-message-header"></a>Har ZAP ändra meddelandet huvudet?
-
-En ZAP-åtgärd gör inga ändringar i meddelandehuvudet.
+ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge som samma, eller starkare, åtgärder har inte redan tillämpats. Om phish-principen till exempel är inställd på karantän och användaren eller administratören redan har skräppost, kommer karantän att vidta åtgärder för att sätta filen i karantän.
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Hur påverkar ZAP postlådor som är spärrade?
 

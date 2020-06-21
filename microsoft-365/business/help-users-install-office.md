@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Hjälp användarna att installera Office-appar på Windows 10-enheter och enkelt installera Office på Windows 10-datorer från administrationscentret för Microsoft 365.
-ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400912"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786240"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Hjälp användarna att installera Office på Windows 10-enheter
 
@@ -46,7 +46,7 @@ Titta på ett kort videoklipp om hur du installerar Office-appar.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="manage-office-deployments"></a>Hantera Office-distribution
 
@@ -56,13 +56,13 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
     > [!NOTE]
     > Du kanske inte ser det här kortet om alla användare har installerat Office-appar.
   
-3. På **hjälpanvändarna installera sitt Office-programkort** väljer du **Visa**och sedan **Kom igång**.
+3. På **hjälpanvändarna installera sitt Office-appkort** väljer du **Visa**och sedan **Kom igång**.
     
-4. På **panelen E-postanvändare** väljer du de användare som du vill skicka e-post till på panelen **E-postanvändare**.
+4. På **panelen E-postanvändare** väljer du de användare som du vill skicka e-post till på panelen **E-postanvändare**och skickar sedan e-post till valda användare .
 
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="Välj användare som ska skicka e-post med hämtningslänken för Office.":::
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Mer information om hur du konfigurerar och använder Microsoft 365 Business Premium
 
-[Utbildningsvideor för Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Utbildningsvideor för Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

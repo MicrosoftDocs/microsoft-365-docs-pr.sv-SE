@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Läs om hur du flyttar ditt företag till Microsoft 365 Business Premium från Office 365 E3.
-ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515905"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785934"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrera från Office 365 E3 till Microsoft 365 Business Premium 
 
 Microsoft 365 Business Premium har allt du behöver för ditt småföretag och kombinerar de förstklassiga molnbaserade produktivitetsapparna med enkel enhetshantering och säkerhet. Om du för närvarande har en Office 365 E3-prenumeration, men inte har fler än 300 anställda, kan du överväga att byta till Microsoft 365 Business Premium för extra säkerhetsfunktioner.
 
-Migrering är enkelt: Först byter du licenser och all data- och användarinformation i din nuvarande prenumeration bibehålls. Efter migreringen måste du konfigurera de funktioner som läggs till i Microsoft 365 Business Premium.
+Migrering är enkelt: Först byter du licenser och all data- och användarinformation i din aktuella prenumeration upprätthålls. Efter migreringen måste du konfigurera de funktioner som läggs till i Microsoft 365 Business Premium.
 
 ## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>Skillnader mellan Office 365 E3 och Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | Funktion    | Stöd i Microsoft 365 Business Premium    | Stöd i Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Lokalt**        | | | 
-| Office-appar<sup>1</sup>    | Microsoft 365-appar för företag    | Microsoft 365-applikationer för företag | 
+| Office-appar<sup>1</sup>    | Microsoft 365-applikationer för affärsverksamhet    | Microsoft 365-applikationer för företag | 
 | **Molnproduktivitetsappar**        | | | 
 | Exchange Online och Outlook    | Lagringsgräns på 50 GB per postlåda och obegränsad Exchange Online-arkivering    | Lagringsgräns på 100 GB per postlåda och obegränsad Exchange Online-arkivering | 
 | Teams    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 
@@ -65,15 +65,15 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 |**Licens för klientåtkomst (CAL-rättigheter)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Ingår i Office 365 E3](../media/check-mark.png)|
 
-<sup>1</sup> Microsoft 365 Business Premium-versionen av Office-apparna innehåller inte volymaktivering via grupprincip, programtelemetri, uppdateringskontroller, kalkylbladsjämförelse och fråga eller Business Intelligence.
+<sup>1</sup> Microsoft 365 Business Premium-versionen av Office-apparna innehåller inte volymaktivering via grupprincip, programtelemetri, uppdateringskontroller, kalkylbladsjämförelser och förfrågningar eller business Intelligence.
 
 ## <a name="migration"></a>Migrering
 
 Information om hur du migrerar prenumerationen finns i [Ändra abonnemang manuellt](../commerce/subscriptions/change-plans-manually.md) för instruktioner om du bara vill flytta några personer till Microsoft 365 Business Premium. Du kan också [uppgradera alla automatiskt](../commerce/subscriptions/upgrade-to-different-plan.md)eller arbeta med en partner för att flytta din E3-prenumeration och dina licenser till en Microsoft 365 Business Premium-prenumeration.
 I följande avsnitt beskrivs de ändringar du behöver göra, om några, och vad du kan göra efter migreringen.
 
-### <a name="office-365-e3-subscription-configuration-and-data"></a>Konfiguration och data för Office 365 E3-prenumeration
-Du behöver inte göra några ändringar i din aktuella prenumeration eller dina data innan du migrerar, vilket inkluderar:
+### <a name="office-365-e3-subscription-configuration-and-data"></a>Konfiguration och data för Office 365 E3-prenumerationer
+Du behöver inte göra några ändringar i din aktuella prenumeration eller data innan du migrerar, vilket inkluderar:
 
 - Prenumerationskonfiguration, till exempel DNS-poster och domännamn.
 - Användar- och gruppkonton och autentiseringsinställningar, till exempel multifaktorautentisering eller principer för villkorlig åtkomst.
@@ -87,7 +87,7 @@ Om windows inte redan finns på Windows Pro Creator-uppdateringen [uppgraderar d
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Konfigurera principer för att skydda användarenheter och filer
 
 > [!NOTE]
-> Om du konfigurerar Office 365 MDM-principer och -enheter visas dessa enheter på sidan **Enheter** i administrationscentret för Microsoft 365. Alla principer som du har ställt in visas i listan över klassiska principer i [Intune-portalen](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
+> Om du ställer in Office 365 MDM-principer och -enheter visas dessa enheter på sidan **Enheter** i administrationscentret för Microsoft 365. Alla principer som du ställer in visas i listan över klassiska principer i [Intune-portalen](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
 
 När du har tilldelat licenser till Microsoft 365 Business Premium kan du börja skydda användarnas enheter och filer.
 
@@ -117,8 +117,8 @@ Du kan också utföra de här stegen på sidan Enheter:
 
 ### <a name="threat-protection"></a>Skydd mot hot
 
-När du har migrerat till Microsoft 365 Business Premium har du Office 365 ATP. Mer om du vill ha en översikt i [Office 365 ATP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) Information om hur du konfigurerar finns [i konfigurera ATP-säkra länkar,](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa) [konfigurera ATP-säkra bilagor](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)och konfigurera [ATP-anti-nätfiske](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
+När du har migrerat till Microsoft 365 Business Premium har du Office 365 ATP. Mer om du vill ha en översikt över [Office 365 ATP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) Information om hur du konfigurerar finns [i konfigurera ATP-säkra länkar,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa) [konfigurera ATP-säkra bilagor](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)och konfigurera [ATP-anti-nätfiske](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 
-Om du vill börja använda känslighetsetiketter läser du [Översikt över känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) och [skapar och hanterar video för känslighetsetiketter.](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)
+Om du vill börja använda känslighetsetiketter läser du [Översikt över känslighetsetiketter](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) och [skapar och hanterar känslighetsetiketter](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.

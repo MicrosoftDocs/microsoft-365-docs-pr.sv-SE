@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Lär dig hur du aktiverar, förnyar eller lägger till licenser i en Prenumeration på Microsoft 365 för företag.
-ms.openlocfilehash: 83b4ba3338db4351ef50af687d3632da83f45648
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0e8de1546c5efdde907209e98f9ee5d710ab2c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404688"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818561"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Ange produktnyckeln som köpts från Microsoft Open
 
@@ -38,9 +38,9 @@ Om du har köpt Microsoft 365 för företag från ett [Microsoft Open License Pr
   
  **Behöver du något annat?**
  
- **Mer information om Microsoft 365 Home eller Personal**finns i [Använda produktnycklar med Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Mer information om Microsoft 365 Home eller Personal**finns i [Använda produktnycklar med Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
- **Mer information om Hur du får hjälp med Microsoft 365 Business Standard som köpts från en butik**finns i [Ange produktnyckeln som köpts från en butik](enter-your-product-key.md). 
+ **Hjälp med Microsoft 365 Business Standard som köpts från en butik**finns i [Ange produktnyckeln som köpts från en butik](enter-your-product-key.md). 
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>Aktivera, förnya eller lägga till licenser för en prenumeration som köpts från Microsoft Open
 
@@ -51,7 +51,7 @@ Om du har köpt Microsoft 365 från ett Microsoft Open License Program anges aut
     > [!TIP]
     >  E-postmeddelandet skickas till den person som har angetts som onlineadministratör i volymlicensavtalet. Om du är osäker på vem som är utsedd till onlineadministratör frågar du din Microsoft 365-partner. 
   
-2. Följ länken i e-postmeddelandet för att logga in med ditt arbets- eller skolkonto, acceptera open license-avtalet och förnya prenumerationen. För en stegvis genomgång laddar du ned PDF-guiden [Aktivera onlinetjänster: Microsoft 365-prenumeration](https://go.microsoft.com/fwlink/p/?LinkId=618100), som täcker hur du aktiverar en ny prenumeration, förnyar en befintlig prenumeration eller lägger till licenser i en befintlig prenumeration.
+2. Följ länken i e-postmeddelandet för att logga in med ditt arbets- eller skolkonto, acceptera open license-avtalet och förnya prenumerationen. För en stegvis genomgång laddar du ned PDF-guiden [Aktivera onlinetjänster: Microsoft 365-prenumeration](https://go.microsoft.com/fwlink/p/?LinkId=618100), som beskriver hur du aktiverar en ny prenumeration, förnyar en befintlig prenumeration eller lägger till licenser i en befintlig prenumeration.
     
 > [!NOTE]
 > Volymlicensieringskunder kan också välja att aktivera prenumerationer i [Volymlicensieringsservicecenter](https://go.microsoft.com/fwlink/p/?LinkID=282016). Om du vill lära dig hur du gör det laddar du ned PDF-guiden [Aktivera Onlinetjänster i Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618096). 
@@ -64,7 +64,7 @@ Om du inte har tidigare i Microsoft 365 för företag kan du läsa om hur [du ko
 
 Kolla in den här listan över vanliga fel och lösningar: [Problem med din produktnyckel?](product-key-errors-and-solutions.md)
   
-Våra partner kan läsa [Partner: använda en produktnyckel för att skapa prenumerationen för en kund](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
+Våra partner kan läsa [Partner: använda en produktnyckel för att skapa prenumerationen för en kund](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Som volymlicenskund kan du lära dig mer genom att besöka webbplatsen om [utbildning och resurser för Microsoft Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
