@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: I den här artikeln finns information om hur du hanterar inställningar för dina användare.
-ms.openlocfilehash: 65396339f099628911da1dbaaef83bc18181e680
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400046"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780211"
 ---
 # <a name="user-email-settings"></a>E-postinställningar för användare
 
@@ -40,7 +40,7 @@ I den här tabellen beskrivs olika e-postinställningar som du kan ändra för e
 |Visa i global adresslista| I Visa i global adresslista kan du aktivera eller inaktivera synligheten för användarens postlåda i organisationens adresslista. |
 |Vidarebefordran av e-post|I Vidarebefordran av e-post kan du lägga till en e-postadress för vidarebefordran till en användare. Detta kan vara bra om personen har flera e-postadresser och vill ta emot e-post till alla sina e-postadresser. Mer information finns i [Konfigurera vidarebefordran av e-post i Microsoft 365](configure-email-forwarding.md).|
 |Automatiska svar|I Automatiska svar kan du ställa in ett automatiskt svar när någon skickar ett e-postmeddelande till personens e-postadress. Detta kan vara bra om en anställd lämnar företaget och du vill låta e-postavsändaren veta detta.|
-|Fler åtgärder| I **Konvertera till delad postlåda** kan du konvertera användarens postlåda till en delad postlåda. Detta kan du göra om personen lämnar organisationen och du vill låta postlådan vara igång ett tag. Läs mer i [Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) och [Öppna och använda en delad postlåda](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>I **Redigera egenskaper för Exchange** kan du hantera fler Exchange Online-uppgifter med administrationscentret för Exchange. Läs om att [hantera användarpostlådor i Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|Fler åtgärder| I **Konvertera till delad postlåda** kan du konvertera användarens postlåda till en delad postlåda. Detta kan du göra om personen lämnar organisationen och du vill låta postlådan vara igång ett tag. Läs mer i [Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) och [Öppna och använda en delad postlåda](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>I **Redigera egenskaper för Exchange** kan du hantera fler Exchange Online-uppgifter med administrationscentret för Exchange. Läs om att [hantera användarpostlådor i Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 
 > [!NOTE]
 >

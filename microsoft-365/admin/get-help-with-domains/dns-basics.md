@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
-ms.openlocfilehash: 9e86aed070023963635319cdd9fdb6a8ccca4c23
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a3a03c408d480b5d4678fde25c8830e063b1310
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399974"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780187"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -155,7 +155,7 @@ Varför kan domänens zonfil finnas på en annan plats än hos din domänregistr
 Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
   
 > [!NOTE]
-> Om du bara vill ladda ned och använda Microsoft-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Om du bara vill ladda ned och använda Microsoft-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplats och din adress för snabbmeddelanden.
   
@@ -174,7 +174,7 @@ Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplat
 Genom att lägga till en egen domän, t. ex. fourthcoffee.com i Office 365 kan du använda en kortare, välbekant e-postadress och userID med tjänsten. Du [tilldelas en domän att använda](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) när du registrerar dig för ett Office 365-konto, men det innehåller "onmicrosoft.com". Många föredrar att lägga till sin organisation eller affärsdomän om de planerar att använda Office 365 för e-post. 
   
 > [!NOTE]
-> Om du bara vill ladda ned och använda Office 365-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Om du bara vill ladda ned och använda Office 365-program, som Outlook och Word, behöver du inte lägga till en domän: [Installera Office på din PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Du kan använda ditt domännamn i Office 365 med din e-post, offentliga webbplats och din adress för snabbmeddelanden.
   
