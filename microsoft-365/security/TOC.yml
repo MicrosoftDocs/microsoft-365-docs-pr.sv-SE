@@ -230,7 +230,7 @@
               href: mtp/feedback.md
             - name: Hantera biljetter via ServiceNow
               href: ./mtp/tickets.md
-    - name: Microsoft 365 Säkerhet
+    - name: Office 365 Avancerat skydd
       items:
         - name: Komma igång
           items:
