@@ -33,7 +33,7 @@
         - name: Distribuera Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: Apputbildning för alla
-          href: 'https://support.office.com/office-training-center'
+          href: 'https://support.microsoft.com/training'
         - name: Vilken prenumeration har jag?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Anpassa inloggningssidan
@@ -93,6 +93,8 @@
               href: manage/assign-licenses-to-users.md
             - name: Tilldela administratörsroller
               href: add-users/assign-admin-roles.md
+            - name: Gästanvändare
+              href: add-users/about-guest-users.md
             - name: Lägga till gästanvändare i en Microsoft 365-grupp
               href: create-groups/manage-guest-access-in-groups.md
             - name: Ta bort licenser från användare
@@ -170,7 +172,7 @@
               href: email/about-shared-mailboxes.md
             - name: Skapa en delad postlåda
               href: email/create-a-shared-mailbox.md
-            - name: Konfigurera en delad postlåda
+            - name: Redigera inställningar för delad postlåda
               href: email/configure-a-shared-mailbox.md
             - name: Konvertera en användarpostlåda till en delad postlåda
               href: email/convert-user-mailbox-to-shared-mailbox.md
@@ -218,6 +220,8 @@
           href: manage/set-password-expiration-policy.md
         - name: Anpassa startprogrammet
           href: manage/customize-the-app-launcher.md
+        - name: Uppgradera användare till de senaste apparna
+          href: setup/upgrade-users-to-latest-office-client.md
         - name: Krav för centraliserad distribution av tillägg
           href: manage/centralized-deployment-of-add-ins.md
         - name: Installera och hantera tillägg med centraliserad distribution
@@ -320,11 +324,11 @@
         - name: Dela kalendrar med gästanvändare
           href: manage/share-calendars-with-external-users.md
         - name: Skapa ett team med gästanvändare
-          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: Schemalägga ett Teams-möte med gäster
-          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: Schemalägga ett Teams-möte med gästanvändare
+          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
         - name: Ansluta till ett Teams-möte med gästanvändare
-          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: Felsökning
       href: 'https://docs.microsoft.com/office/troubleshoot/'
     - name: Kontakta support
