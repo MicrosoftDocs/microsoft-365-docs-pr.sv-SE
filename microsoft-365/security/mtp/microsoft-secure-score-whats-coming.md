@@ -1,7 +1,7 @@
 ---
 title: Vad kommer i Microsoft Secure Score?
 description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur information beräknas och vilka säkerhetsadministratörer som kan förvänta sig.
-keywords: säkerhet, malware, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
+keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,18 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545940"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844888"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Vad kommer i Microsoft Secure Score?
 
-För att göra [Microsoft Secure Score](microsoft-secure-score-new.md) till en bättre representant för din säkerhetsposition och förbättra användbarheten gör vi vissa ändringar inom en snar framtid. Din poäng och högsta möjliga poäng kommer att förändras. Detta innebär dock inte en förändring i din säkerhetsposition.
+För att göra [Microsoft Secure Score](microsoft-secure-score.md) till en bättre representant för din säkerhetsposition och förbättra användbarheten gör vi vissa ändringar inom en snar framtid. Din poäng och högsta möjliga poäng kommer att förändras. Detta innebär dock inte en förändring i din säkerhetsposition.
 
-Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)
+Mer information om de senaste ändringarna finns [i Nyheter i Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
 ## <a name="june-2020"></a>Juni 2020
 
@@ -36,7 +36,7 @@ Mer information om de senaste ändringarna finns [i Vad är nytt i Microsoft Sec
 
 * Aktivera regler för minskning av attackytan
 
-### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Lägg till förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
+### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Lägga till förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
 
 * Blockera Adobe Reader från att skapa underordnade processer
 * Använd avancerat skydd mot ransomware

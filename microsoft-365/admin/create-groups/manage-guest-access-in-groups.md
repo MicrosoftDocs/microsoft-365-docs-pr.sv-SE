@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Lär dig hur du lägger till gäster i en Microsoft 365-grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomsten.
-ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761668"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854252"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Hantera gäståtkomst i Microsoft 365-grupper
 
@@ -47,7 +47,7 @@ Gäståtkomst i grupper används ofta som en del av ett bredare scenario som inn
 
 Om du vill aktivera eller inaktivera gäståtkomst i grupper kan du göra det i administrationscentret för Microsoft 365.
 
-1. I administrationscentret går du till inställningarna **för** \> **Inställningars organisation** och väljer Microsoft **365-grupper**på fliken **Tjänster** .
+1. I administrationscentret går du till **Visa alla** inställningar \> **Settings** \> **Org inställningar** och välj **Microsoft 365-grupper**på fliken **Tjänster** .
   
 2. På sidan **Microsoft 365 Grupper** väljer du om du vill låta personer utanför organisationen komma åt gruppresurser eller låta gruppägare lägga till personer utanför organisationen i grupper.
 

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om säkra dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
-ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
+ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811068"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44835357"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -28,9 +28,9 @@ Säkra dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5 Securi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Den här funktionen är endast tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Security-licensen.
+- Säkra dokument är nu allmänt tillgängliga för användare med Office Version 2004 (12730.x) eller mer! Den här funktionen är inaktiverad som standard och måste aktiveras av säkerhetsadministratören.
 
-- Säkra dokument är för närvarande tillgängliga för offentlig förhandsversion, som är tillgängliga för användare som ingår i [Office Insider Program](https://insider.office.com/join) på aktuell kanal (förhandsversion) med Office Version 2002 (12527.20092) eller mer. Den här funktionen är inaktiverad som standard och måste aktiveras av säkerhetsadministratören.
+- Den här funktionen är endast tillgänglig för användare med *Microsoft 365 E5-* eller *Microsoft 365 E5 Security-licensen* (ingår inte i Office 365 ATP-abonnemang).
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -40,7 +40,7 @@ Säkra dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5 Securi
 
 För att skydda dig skickar säkra dokument filer till [Microsoft Defender Advanced Threat Protection-molnet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för analys.
 
-- Information om hur Microsoft Defender Advanced Thread Protection hanterar dina data finns [här](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- Information om hur Microsoft Defender Advanced Threat Protection hanterar dina data finns [här](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - Utöver riktlinjerna ovan behålls inte filer som skickas av säkra dokument i Defender efter den tid som behövs för analys, vilket vanligtvis är mindre än 24 timmar
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använda Security & Compliance Center för att konfigurera säkra dokument
@@ -51,7 +51,7 @@ För att skydda dig skickar säkra dokument filer till [Microsoft Defender Advan
 
 3. Konfigurera någon av följande inställningar när du litar på en fil för att öppna utanför skyddad vy i Office-program i hjälpen när de **litar på en fil för att öppna utanför Skyddad vy i Office-program:**
 
-   - **Aktivera säkra dokument för Office-klienter (Filer skickas också till Microsoft Cloud för djupgående analyser)**
+   - **Aktivera säkra dokument för Office-klienter**
 
    - **Tillåt personer att klicka sig igenom Skyddad vy även om säkra dokument identifierar filen som skadlig:** Vi rekommenderar att du inte aktiverar det här alternativet.
 
@@ -64,7 +64,7 @@ För att skydda dig skickar säkra dokument filer till [Microsoft Defender Advan
 Använd följande syntax:
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
+Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
 - Parametern _EnableSafeDocs_ aktiverar eller inaktiverar säkra dokument för hela organisationen.

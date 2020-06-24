@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ba603f3703a7d4b6df567f8299af9f1804e42b96
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702576"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854370"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurera Microsoft Threat Protection-pelare för testlabbeta
 
@@ -237,7 +237,7 @@ Klicka på **Nästa**.
 16. Bläddra nedåt och klicka på **Spara inställningar** för att bekräfta de nya integreringarna.
 <br>![Knappen Bild of_Save inställningar som du måste klicka på](../../media/mtp-eval-72.png) <br>
 
-## <a name="turn-on-microsoft-threat-protection"></a>Aktivera Microsoft Hotskydd
+## <a name="start-the-microsoft-threat-protection-service"></a>Starta Microsoft Threat Protection-tjänsten
 >[!NOTE]
 >Från och med den 1 juni 2020 aktiverar Microsoft automatiskt Microsoft Threat Protection-funktioner för alla berättigade klienter. Mer information finns i den här [artikeln i Microsoft Tech Community om licensberättigande.](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 
 <br>
@@ -245,7 +245,10 @@ Klicka på **Nästa**.
 Gå till [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigera till **Inställningar** och välj sedan **Microsoft Threat Protection**.
 <br>![Bild of_Microsoft alternativ för skydd av hot från sidan Inställningar för Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
 
+Mer omfattande vägledning finns i [Aktivera Microsoft Threat Protection](mtp-enable.md). 
+
 Grattis! Du har precis skapat testlabbmiljön för Microsoft Threat Protection! Du kan nu simulera en attack och se hur cross-produktfunktionerna identifierar, skapar aviseringar och automatiskt svarar på en fillös attack på en slutpunkt.
+
 
 ## <a name="next-steps"></a>Nästa steg
 [Generera en testavisering](generate-test-alert.md).

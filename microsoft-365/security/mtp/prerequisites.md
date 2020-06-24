@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773857"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844912"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Förutsättningar för Microsoft Threat Protection
 
@@ -60,7 +60,7 @@ Gå till Microsoft 365 administrationscenter ([admin.microsoft.com](https://admi
 > Du måste tilldelas rollen **Faktureringsadministratör** eller **Global läsare** [i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) för att kunna se licensinformation. Om du stöter på åtkomstproblem kontaktar du en global administratör.
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
-Om du vill visa en lista över nödvändiga roller och hur åtkomst till data regleras läser du om [hur du hanterar åtkomsten till Microsoft Threat Protection](mtp-permissions.md).
+Du måste vara **global administratör** eller **säkerhetsadministratör** i Azure Active Directory för att kunna aktivera Microsoft Threat Protection. En lista över roller som krävs för att använda Microsoft Threat Protection och information om hur åtkomst till data regleras läser du om [hur du hanterar åtkomsten till Microsoft Threat Protection](mtp-permissions.md).
 
 ## <a name="browser-requirements"></a>Krav på webbläsare
 Få tillgång till Microsoft Threat Protection i Microsoft 365-säkerhetscentret med Microsoft Edge, Internet Explorer 11 eller valfri HTML 5-kompatibel webbläsare.

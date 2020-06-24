@@ -3,11 +3,10 @@ title: Så här får du hjälp i administrationscentret för Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Läs mer om alla sätt du kan få hjälp med administrationscentret för Microsoft 365.
-ms.openlocfilehash: eea5e58ba571cebd7d73202fa8f6c01ba06b8e44
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386775"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844722"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -35,70 +34,15 @@ ms.locfileid: "44386775"
 
 Om du är administratör är [admin.microsoft.com](https://admin.microsoft.com) din go-to-plats för att hantera och få ut det mesta av din Microsoft 365-prenumeration. Ibland kanske du inte hittar rätt uppgift, behöver mer sammanhang innan du påbörjar ett aktivitetsflöde, eller helt enkelt kanske inte är säker på omfattningen och effekten av dina åtgärder som administratör. För att täcka dessa situationer erbjuder vi modern hjälp och intelligent hjälp i hela Microsoft 365 admin center på följande sätt:
 
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Integrerad hjälp</h3>
-                            <p>Hjälp i administrationscentret</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Intelligent hjälp</h3>
-                            <p>Självhjälp drivs av AI</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Guider och artiklar</h3>
-                            <p>Omfattande innehåll på webben</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+* **Integrerad hjälp** - hjälp i administrationscentret
+
+* **Intelligent hjälp** - självhjälp som drivs av AI
+
+* **Guider och artiklar** - omfattande innehåll på webben
 
 ## <a name="integrated-help"></a>Integrerad hjälp
 
-Hjälpen är integrerad i hela administrationscentret, så den finns precis där när du behöver den. Högst upp på många sidor hittar du hjälptext i linje som ger en informativ översikt över den aktuella uppgiften, samt länkar till artiklar som gör att du snabbt kan hitta officiell dokumentation för mer djupgående inlärning.
+Hjälpen är integrerad i hela administrationscentret, så den finns precis där när du behöver den. Högst upp på många sidor hittar du hjälptext i infogade dokument som ger en informativ översikt över den aktuella uppgiften, samt länkar till artiklar som gör att du snabbt kan hitta officiell dokumentation för mer djupgående inlärning.
 
 ![Sidan Grupper som visar infogad hjälp och länkar till artiklar](../../media/integrated-help.png)
 
@@ -114,4 +58,4 @@ Naturligtvis besvaras ibland frågor bäst av människor. Om vår moderna själv
 
 ## <a name="guides-and-articles"></a>Guider och artiklar
 
-Om du letar efter omfattande distributionsguider, snabba steg-för-steg-procedurer eller PowerShell-cmdlets letar du upp oss på webben. Vi uppdaterar innehåll ofta och försöker ge dig den senaste informationen. Kolla in våra artiklar och guider på [Microsoft 365 Documentation](https://docs.microsoft.com/microsoft-365/) webbplats.
+Om du letar efter omfattande distributionsguider, snabba steg-för-steg-procedurer eller PowerShell-cmdlets, slå oss upp på webben. Vi uppdaterar innehåll ofta och försöker ge dig den senaste informationen. Kolla in våra artiklar och guider på Microsoft [365 Documentation](https://docs.microsoft.com/microsoft-365/) webbplats.

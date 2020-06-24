@@ -24,27 +24,29 @@ description: 'Lär dig mer om prenumerationer och licenser i Microsoft 365 för 
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402408"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844686"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Förstå prenumerationer och licenser i Microsoft 365 för företag
 
-I den här artikeln beskrivs relationen mellan prenumerationer och licenser och ytterligare information om [vem som kan tilldela licenser,](#find-out-who-can-assign-licenses)förstå vad som händer när du [tilldelar en licens till någon](#understand-what-happens-when-you-assign-a-license-to-someone)och hur många enheter som kan installera Office [på](#how-many-devices-can-people-install-office-on). Den innehåller också länkar till att [förstå licenser för postlådor som inte är användare](#understand-licenses-for-non-user-mailboxes)och artiklar om hur du hanterar [licenser](#articles-about-managing-licenses).
+I den här artikeln beskrivs relationen mellan prenumerationer och licenser och ytterligare information om [vem som kan tilldela licenser,](#find-out-who-can-assign-licenses)förstå vad som händer när du [tilldelar en licens till någon](#understand-what-happens-when-you-assign-a-license-to-someone)och hur många enheter som kan installera Office [på](#how-many-devices-can-people-install-office-on). Den innehåller också länkar för att [förstå licenser för postlådor som inte är användare](#understand-licenses-for-non-user-mailboxes)och artiklar om hur du hanterar [licenser](#articles-about-managing-licenses).
   
-När du köper en prenumeration på Microsoft 365 för företag registrerar du dig för en uppsättning program och tjänster som du betalar för antingen månadsvis eller årsvis. Vilka program och tjänster du får som en del av prenumerationen beror på vilken produkt du har köpt, till exempel Microsoft 365 Apps for business eller Microsoft 365 Business Standard. Du kan granska vad som medföljer varje produkt på [sidan Köp Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+När du köper en prenumeration på Microsoft 365 för företag registrerar du dig för en uppsättning program och tjänster som du betalar för antingen månadsvis eller år. Vilka program och tjänster du får som en del av prenumerationen beror på vilken produkt du har köpt, till exempel Microsoft 365 Apps for business eller Microsoft 365 Business Standard. Du kan granska vad som medföljer varje produkt på [sidan Köp Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+
+Du kan granska olika licensieringsalternativ som är tillgängliga i [Microsoft 365 för små och medelstora företag](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)
 
 När du köper en prenumeration anger du det antal licenser som du behöver, baserat på hur många personer som finns i organisationen. Efter att köpet är klart skapar du konton för personerna och tilldelar en licens till var och en av dem. När dina organisationsbehov ändras kan du köpa fler licenser för att anpassa nya personer eller tilldela om licenser till andra användare när någon lämnar organisationen. 
 
-Om du har mer än en prenumeration kan du tilldela licenser till olika personer för varje prenumeration. Alla användare kan till exempel tilldelas alla Microsoft 365-program och -tjänster som en del av en Microsoft 365 Business Standard-prenumeration, medan en delmängd användare också kan tilldelas Visio Online via en separat Visio-prenumeration. 
+Om du har mer än en prenumeration kan du tilldela licenser till olika personer för varje prenumeration. Till exempel kan alla dina användare tilldelas alla Microsoft 365-program och tjänster som en del av en Microsoft 365 Business Standard-prenumeration, medan en delmängd användare också kan tilldelas Visio Online via en separat Visio-prenumeration. 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Ta reda på vem som kan tilldela licenser
 
-Olika typer av administratörer kan arbeta med licenser på olika sätt beroende på deras respektive roller. I följande tabell finns de vanligaste alternativen. En fullständig lista över administrationsroller och behörigheter finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**Administratörsroller**|**Tilldela en licens**|**Ta bort en licens**|**Köp flera licenser**|**Ta bort ett konto**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -63,17 +65,17 @@ I följande tabell anges vad som sker automatiskt när du tilldelar en licens ti
 |Exchange Online  <br/> |En postlåda skapas för den personen.  <br/> Mer information om serviceavtalet för den här uppgiften finns i ["Ställa in..." meddelanden i Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Personen tilldelas redigeringsbehörigheter på SharePoint Online-standardgruppwebbplatsen.  <br/> |
 |Skype för företag - Online  <br/> |Personen får åtkomst till de funktioner som är kopplade till licensen.  <br/> |
-| Microsoft 365 Apps för företag  <br/> |Personen kan ladda ned Microsoft Office på upp till 5 Mac- eller PC-datorer, 5 surfplattor och 5 smartphones.  <br/> |
+|Microsoft 365-applikationer för företag  <br/> |Personen kan ladda ned Microsoft Office på upp till 5 Mac- eller PC-datorer, 5 surfplattor och 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Hur många enheter går det att installera Office på?
 
 Om prenumerationen innehåller någon av följande produkter kan varje person installera Office på upp till 5 PC- eller Mac-datorer, 5 surfplattor och 5 telefoner.
   
-- Microsoft 365-appar för företag
+- Microsoft 365-applikationer för affärsverksamhet
     
 - Microsoft 365 Business Standard
     
--  Microsoft 365 Apps för företag
+- Microsoft 365-applikationer för företag
     
 - Office 365 Enterprise, E3
     
@@ -81,7 +83,7 @@ Om prenumerationen innehåller någon av följande produkter kan varje person in
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Allmänt om licenser för postlådor som inte är kopplade till någon användare
 
-Du behöver inte tilldela licenser till resurspostlådor, rumspostlådor och delade postlådor, förutom när de är över sin lagringskvot på 50 GB. Mer information om postlådor som inte är kopplade till någon användare finns i följande artiklar:
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [Skapa en delad postlåda](../../admin/email/create-a-shared-mailbox.md)
     

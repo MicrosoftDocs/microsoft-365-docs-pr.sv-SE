@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
-ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
+ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44820554"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854300"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Nyheter i Microsoft Hotskydd
 
@@ -30,6 +30,9 @@ RSS-flöde: Få ett meddelande när den här sidan uppdateras genom att kopiera 
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="june-2020"></a>Juni 2020
+- Twitter-flöde <br> Få den senaste säkerhetsforskningen, hotinformationen, produktnyheterna med mera – direkt i instrumentpanelen.
+
 ## <a name="february-2020"></a>Februari 2020
 - [Incidenter](incidents-overview.md) <br> Vet exakt var en attack började och andra detaljer som hjälper dig att se omfattningen av attacken.
 - [Automatiska undersökningar och svar](mtp-autoir.md) <br> AIR gör det möjligt för din säkerhetsoperationsgrupp att dramatiskt öka organisationens kapacitet att hantera säkerhetsvarningar och incidenter.
