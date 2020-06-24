@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Använd den här testlabbguiden för att skapa en testmiljö för ett simulerat företag för Microsoft 365 Enterprise.
-ms.openlocfilehash: 66d62677843843476baffac3f295e41eda71be69
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 486429bf9e1c0a88c9beb01a092f968256c1fa77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806445"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818501"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Baskonfiguration för simulerat företag
 
@@ -40,7 +41,7 @@ Du kan använda den resulterande miljön för att testa funktionerna och funktio
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+> Gå till [Samling med testlabbguider för Microsoft 365 för företag](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Fas 1: Skapa ett simulerat intranät
 
@@ -54,7 +55,7 @@ I den här metoden använder du en Azure Resource Manager-mall (ARM) för att by
 
 Innan du distribuerar mallen ska du läsa igenom [mallens README-sida](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) och ha följande information redo:
 
-- Testmiljöns namn på den offentliga DNS-domänen (testlab.\<din offentliga domän>). Du måste ange det här namnet i fältet **Domain Name** (Domännamn) på sidan **Custom deployment** (Anpassad distribution).
+- Testmiljöns namn på den offentliga DNS-domänen (testlab.\<your public domain>) Du måste ange det här namnet i fältet **Domain Name** (Domännamn) på sidan **Custom deployment** (Anpassad distribution).
 - Ett DNS-etikettprefix för URL:erna för de virtuella datorernas offentliga IP-adresser. Du måste ange det här namnet i fältet **Dns Label Prefix** (DNS-etikettprefix) på sidan **Custom deployment** (Anpassad distribution).
 
 När du har läst igenom de här instruktionerna klickar du på **Deploy to Azure** (Distribuera till Azure) på [mallens README-sida](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) för att komma igång.
@@ -130,7 +131,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPre
 $vnet | Set-AzVirtualNetwork
 ```
 
-Skapa sedan den virtuella datorn DC1 och konfigurera den som domänkontrollant för AD DS-domänen **testlab.**\<din offentliga domän> och en DNS-server för de virtuella datorerna i det virtuella nätverket TestLab. Exempel: Om namnet på din offentliga domän är **<span>contoso</span>.com** blir den virtuella datorn DC1 domänkontrollant för domänen **<span>testlab</span>.contoso.com**.
+Nästa steg är att skapa den virtuella DC1-datorn och konfigurera den som domänkontrollant för **testlab.**\<your public domain> AD DS-domän och en DNS-server för de virtuella datorerna i TestLabs virtuella nätverk. Exempel: Om namnet på din offentliga domän är **<span>contoso</span>.com** blir den virtuella datorn DC1 domänkontrollant för domänen **<span>testlab</span>.contoso.com**.
   
 Om du vill skapa en virtuell Azure-dator för DC1 fyller du i namnet på din resursgrupp och kör dessa kommandon vid kommandotolken i PowerShell på din lokala dator.
   
@@ -180,7 +181,7 @@ Lägg sedan till en extra datadisk som en ny volym med enhetsbokstaven F: med de
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Konfigurera sedan DC1 som domänkontrollant och DNS-server för domänen **testlab.**\<din offentliga domän>. Ange namnet på din offentliga domän, ta bort tecknen \< och > och körs sedan dessa kommandon i en Windows PowerShell-kommandotolk på administratörsnivå på DC1.
+Konfigurera sedan DC1 som domänkontrollant och DNS-server för domänen **testlab.**\<your public domain> domän. Ange namnet på din offentliga domän, ta bort tecknen \< and > och kör sedan dessa kommandon i en Windows PowerShell-kommandotolk på administratörsnivå på DC1.
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -257,7 +258,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Anslut sedan till den virtuella datorn APP1 med namnet och lösenordet för det lokala administratörskontot för APP1 och öppna sedan en kommandotolk i Windows PowerShell.
   
-Om du vill kontrollera namnmatchningen och nätverkskommunikationen mellan APP1 och DC1 kör du kommandot **ping dc1.testlab.**\<namnet på din offentliga domän> och verifierar att det finns fyra svar.
+Om du vill kontrollera namnmatchningen och nätverkskommunikationen mellan APP1 och DC1 kör **ping dc1.testlab.**\<your public domain name> kommandot och bekräfta att det finns fyra svar.
   
 Anslut sedan den virtuella datorn APP1 till TESTLAB-domänen med dessa kommandon i Windows PowerShell-kommandotolken.
   
@@ -315,7 +316,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Anslut sedan till den virtuella datorn CLIENT1 med namnet och lösenordet för det lokala administratörskontot för CLIENT1 och öppna sedan en Windows PowerShell-kommandotolk på administratörsnivå.
   
-Om du vill kontrollera namnmatchningen och nätverkskommunikationen mellan CLIENT1 och DC1 kör du kommandot **ping dc1.testlab.**\<namnet på din offentliga domän> i en Windows PowerShell-kommandotolk och verifierar att det finns fyra svar.
+Om du vill kontrollera namnmatchningen och nätverkskommunikationen mellan CLIENT1 och DC1 kör **ping dc1.testlab.**\<your public domain name> kommandot i Windows PowerShell kommandotolk och bekräfta att det finns fyra svar.
   
 Anslut sedan den virtuella datorn CLIENT1 till TESTLAB-domänen med dessa kommandon i Windows PowerShell-kommandotolken.
   
@@ -339,7 +340,7 @@ Verifiera sedan att du har åtkomst till webb- och fildelningsresurser på APP1 
     
 4. På Start-skärmen klickar du på **Internet Explorer** och klickar sedan på **OK**.
     
-5. I adressfältet skriver du **http<span>://</span>app1.testab.**\<namnet på din offentliga domän>**/** och trycker sedan på RETUR. Du bör se Internet Information Services-standardwebbsidan för APP1.
+5. I adressfältet skriver du **http<span>://</span>app1.testab.**\<your public domain name>**/** och trycker sedan på RETUR. Du bör se Internet Information Services-standardwebbsidan för APP1.
     
 6. Klicka på ikonen för Utforskaren i aktivitetsfältet på skrivbordet.
     
@@ -407,7 +408,7 @@ Utforska dessa ytterligare uppsättningar testlabbguider:
 - [Hantering av mobila enheter](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [Informationsskydd](m365-enterprise-test-lab-guides.md#information-protection)
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Snabbreferens
 
 [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 

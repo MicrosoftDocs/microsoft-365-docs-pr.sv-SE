@@ -15,13 +15,14 @@ search.appverid:
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+ms.custom: seo-marvel-apr2020
 description: 'Sammanfattning: Skapa ett virtuellt nätverk för flera platser i Microsoft Azure som en Microsoft 365-testmiljö.'
-ms.openlocfilehash: 52ba80d8613f44b252389da87891359eadae752a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6a9eb7377ff7ce3aa5b251d345e57ae2a25ba926
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812266"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817077"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Simulerat virtuellt nätverk på flera platser i en Microsoft 365-testmiljö
 
@@ -63,7 +64,7 @@ Du kan använda den resulterande miljön för att testa funktionerna och funktio
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+> Gå till [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fas 1: Konfigurera det virtuella TestLab-nätverket.
 
@@ -94,7 +95,7 @@ Hämta ditt prenumerationsnamn med det här kommandot.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Ange din Azure-prenumeration. Ersätt allt inom citattecknen, inklusive tecknen \< och >, med de rätta namnen.
+Ange din Azure-prenumeration. Ersätt allt inom citattecknen, inklusive \< and >-tecknen med de rätta namnen.
   
 ```powershell
 $subscrName="<subscription name>"

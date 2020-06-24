@@ -14,33 +14,40 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om de huvudfält som läggs till i meddelanden av Exchange Online Protection (EOP) för att ge information om meddelandet och hur det behandlades.
+description: Administratörer kan lära sig mer om de fält som läggs till i meddelanden av Exchange Online Protection (EOP). De här huvudfälten innehåller information om meddelandet och hur det behandlades.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208228"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755362"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Meddelandehuvuden för antiskräppost i Microsoft 365
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor söker EOP igenom och infogar huvudet **X-Forefront-Antispam-Report** i varje inkommande e-postmeddelande. Fälten i denna rubrik kan hjälpa administratörer med information om meddelandet och hur det bearbetades. I fälten i **X-Microsoft-antispam**-rubriken finns mer information om massutskick och nätfiske. Utöver dessa två rubriker infogar Exchange Online Protection även resultat av e-postautentisering för varje meddelande det bearbetar i rubriken **Authentication-results**.
 
-För information om hur man visar ett e-postmeddelandes meddelanderubrik i olika e-postklienter, se [Visa e-postmeddelandehuvud i Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
+För information om hur man visar ett e-postmeddelandes meddelanderubrik i olika e-postklienter, se [Visa e-postmeddelandehuvud i Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 > [!TIP]
-> Du kan kopiera och klistra in innehållet i ett meddelandehuvud i verktyget [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha). Det här verktyget hjälper till att tolka rubriker och lägga till dem i ett mer läsbart format.
+> Du kan kopiera och klistra in innehållet i ett meddelandehuvud i [Analysverktyg för meddelanderubrik](https://mha.azurewebsites.net/). Det här verktyget hjälper till att tolka rubriker och lägga till dem i ett mer läsbart format.
 
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X-Forefront-Antispam-Report meddelanderubrikfält
 
-När du har använt meddelanderubrikens information kan du söka efter **X-Forefront-Antispam-Report** och sedan söka efter de här fälten. Andra fält i den här rubriken används exklusivt av Microsofts anti-spam-team av diagnostiska skäl.
+När du har information om meddelande rubriken hittar du i rubriken **X-Forefront-Antispam-Report**. Det finns flera fält för rubriknamn och värdepar i denna rubrik som är avgränsade med semikolon (;). Till exempel:
+
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+
+De enskilda fälten och värdena beskrivs i följande tabell.
+
+> [!NOTE]
+> Rubriken **X-Forefront-Antispam-Report** innehåller många olika fält och värden för rubriker. Andra fält i den här rubriken som inte beskrivs i tabellen används exklusivt av Microsofts anti-spam-team av diagnostiska skäl.
 
 |||
 |---|---|
 |**Rubrikfält**|**Beskrivning**|
 |ARC|ARC-protokollet har följande rubriker: <ul><li>AAR: registrerar innehållet i rubriken för verifieringsresultat från DMARC.</li><li>AMS: denna rubrik innehåller kryptografiska signaturer för meddelandet.</li><li>AS: innehåller kryptografiska signaturer för meddelanderubriker. Den här rubriken innehåller en tagg för en kedjeverifiering som kallas "cv=", som inkluderar resultatet av kedjeverifieringen som **ingen**, **gick igenom**och **misslyckades**.</li></ul>|
-|CAT:|Kategori för den skyddspolicy som används för meddelandet: <ul><li>BULK: Bulk</li><li>DIMP: Domain Impersonation</li><li>GIMP: Mailbox Intelligence</li><li>HPHSH or HPHISH : High confidence phishing </li><li>HSPM: High confidence spam</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: User Impersonation</li></ul><br/>Ett inkommande meddelande kan flaggas av flera olika typer av skydd och flera identifieringsgenomsökningar. Policyer har olika prioriteringar och den policy som har högst prioritet kommer att tillämpas först. Se [Vilken policy gäller när flera skyddsmetoder och identifieringsgenomsökningar körs på din e-post](how-policies-and-protections-are-combined.md) för mer information.|
+|CAT:|Kategori för den skyddspolicy som används för meddelandet: <ul><li>BULK: Bulk</li><li>DIMP: Domain Impersonation</li><li>GIMP: imitationsskydd baserat på postlådeinformation</li><li>HPHSH or HPHISH : High confidence phishing</li><li>HSPM: High confidence spam</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: User Impersonation</li><li>AMP: Anti-malware</li><li>SAP: Säkra bifogade filer</li><li>OSPM: Utgående skräppost</li></ul><br/>Ett inkommande meddelande kan flaggas av flera olika typer av skydd och flera identifieringsgenomsökningar. Policyer har olika prioriteringar och den policy som har högst prioritet kommer att tillämpas först. Se [Vilken policy gäller när flera skyddsmetoder och identifieringsgenomsökningar körs på din e-post](how-policies-and-protections-are-combined.md) för mer information.|
 |CIP: \[IP-adress\]|Den anslutande IP-adressen. Du kan använda den här IP-adressen i listan över tillåtna IP-adresser eller IP-adresser som ska blockeras. Mer information finns i [konfigurera anslutningsfilter](configure-the-connection-filter-policy.md).|
 |CTRY|Källlandet, vilket bestäms av den anslutande IP-adressen, som kanske inte är samma som den ursprungliga IP-adressen.|
 |H:\[helostring\]|En anslutande e-mailservers HELO- eller OEHLO-sträng.|

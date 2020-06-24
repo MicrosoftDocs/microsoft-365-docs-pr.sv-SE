@@ -28,16 +28,16 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
-ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407950"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817003"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
-Den här artikeln är avsedd för personer som har en Microsoft 365 för företag-prenumeration. Du måste vara global administratör eller faktureringsadministratör för att kunna utföra åtgärderna som beskrivs i den här artikeln.
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 Om du behöver hjälp med att tolka de debiteringar som visas på din faktura hittar du en detaljerad genomgång i [Förstå din faktura](understand-your-invoice2.md).
   
@@ -49,13 +49,13 @@ Om du behöver hjälp med att tolka de debiteringar som visas på din faktura hi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="view-a-bill-or-invoice"></a>Visa en faktura
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fakturor och betalningar</a>.
+1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
 
 ::: moniker-end
 
@@ -71,21 +71,20 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 ::: moniker-end
 
-2. Välj ett datumintervall i listrutan och välj sedan den beställning du vill visa.
+2. Välj ett datumintervall i listrutan på fliken **Fakturor** och välj sedan den beställning du vill visa.
 
 3. På sammanfattningssidan ser du följande:
 
-  - Totalt saldo, aktuellt belopp att betala, förfallodatum, den senaste betalningens belopp och datumet när den togs emot.
+    - Totalt saldo, aktuellt belopp att betala, förfallodatum, den senaste betalningens belopp och datumet när den togs emot.
 
-  - Betalningsinstruktioner.
+    - Betalningsinstruktioner.
 
-  - En förteckning över tidigare betalningsdatum och beloppen som betalats.
+    - En förteckning över tidigare betalningsdatum och beloppen som betalats.
 
-  - Datumet då ordern skapades och ordernumret.
+    - Datumet då ordern skapades och ordernumret.
 
 4. Om du vill skriva ut eller spara en pdf-kopia av fakturan väljer du **Ladda ned PDF**.
 
-  
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Betala med faktura, kreditkort eller bankkonto](pay-for-your-subscription.md)

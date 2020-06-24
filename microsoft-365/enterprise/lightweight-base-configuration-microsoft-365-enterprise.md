@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Använd den här testlabbguiden för att skapa en förenklad testmiljö för att testa Microsoft 365 Enterprise.
-ms.openlocfilehash: 04e63b1c3d9d35bd636041f8be7655ab17b1d165
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a4800d374416a1e197536bc1a867d3fbc4b1243
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631615"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818759"
 ---
 # <a name="the-lightweight-base-configuration"></a>Den enkla baskonfigurationen
 
@@ -37,7 +38,7 @@ Använd den resulterande miljön för att testa funktionerna och funktionalitete
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+> Klicka på [Samling med testlabbguider för Microsoft 365 för företag](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Fas 1: Skapa en Office 365 E5-prenumeration
 
@@ -227,7 +228,7 @@ Hämta ditt prenumerationsnamn med följande kommando.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Ange din Azure-prenumeration. Ersätt allt inom citattecknen, inklusive tecknen \< och >, med det rätta namnet.
+Ange din Azure-prenumeration. Ersätt allt inom citattecknen, inklusive \< and >-tecknen med rätt namn.
   
 ```powershell
 $subscr="<subscription name>"
@@ -240,7 +241,7 @@ Skapa sedan en ny resursgrupp. Använd det här kommandot för att lista dina be
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Skapa den nya resursgruppen med dessa kommandon. Ersätt allt inom citattecknen, inklusive tecknen \< och >, med de rätta namnen.
+Skapa den nya resursgruppen med dessa kommandon. Ersätt allt inom citattecknen, inklusive \< and >-tecknen med de rätta namnen.
   
 ```powershell
 $rgName="<resource group name>"

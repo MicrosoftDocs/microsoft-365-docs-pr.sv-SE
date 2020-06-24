@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Lär dig mer om vilka resurser du kan använda när du distribuerar Microsoft 365 för företag i din organisation.
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268339"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819334"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuera Microsoft 365 för företag
 
@@ -59,7 +59,7 @@ Om du vill distribuera Microsoft 365 för företag själv, kan du:
 
   **Om du har en mindre eller nyare organisation** följer du faserna för att skapa din infrastruktur på ett metodiskt sätt.
 
-  Du kan dock distribuera faser eller delar av faser i den här infrastrukturen i valfri ordning, [efter varandra eller parallellt](deployment-strategies-microsoft-365-enterprise.md), för att integrera dem med din befintliga infrastruktur, anpassa efter dina IT-abonnemang och resurser, eller uppfylla dina affärsbehov. Om du vill ha en förenklad distribution som inte är avsedd för företag, kan du klicka [här](deploy-foundation-infrastructure-non-enterprises.md).
+  Du kan dock distribuera faser eller delar av faser i den här infrastrukturen i valfri ordning, [efter varandra eller parallellt](deployment-strategies-microsoft-365-enterprise.md), för att integrera dem med din befintliga infrastruktur, anpassa efter dina IT-abonnemang och resurser, eller uppfylla dina affärsbehov. Om du vill ha en förenklad distribution för andra än stora företag går du till [grundläggande infrastruktur för icke-företag](deploy-foundation-infrastructure-non-enterprises.md).
 
   **Om du har ett större företag eller organisation** ska dessa faser betraktas som lager i IT-infrastrukturen i stället för en fastställd metod. Du avgör själv hur du på bästa sätt kan följa eventuella krav för varje lager i din organisation.
 
@@ -71,7 +71,7 @@ Här visas förhållandet mellan den grundläggande infrastrukturen, arbetsbelas
 
 Arbetsbelastningar ligger högst upp i den grundläggande infrastrukturen. Men alla faser i den grundläggande infrastrukturen behöver inte finnas på plats för att du ska kunna börja använda arbetsbelastningar för produktivitet och samarbete.
 
-Påbörja distributionen själv från slutpunkt till slutpunkt [här](deploy-foundation-infrastructure.md).
+Kom igång själv med din distribution på [Grundläggande infrastruktur för Microsoft 365 för företag](deploy-foundation-infrastructure.md).
 
 ## <a name="take-a-test-drive"></a>Ta en provtur
 
