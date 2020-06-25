@@ -69,29 +69,20 @@
               href: mtp/setup-mtpeval.md
             - name: Konfigurera och introducera
               href: mtp/config-mtpeval.md
-            - name: Aktivera Microsoft Hotskydd
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+            - name: Starta tjänsten Microsoft Threat Protection
+              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Skapa ett testmeddelande
               href: mtp/generate-test-alert.md
         - name: Guider med anvisningar
           items:
             - name: Skapa en utvärderingslaboratoriemiljö
               href: mtp/mtp-evaluation.md
-              items:
-                - name: Förbereda
-                  href: mtp/prepare-mtpeval.md
-                - name: Installation
-                  href: mtp/setup-mtpeval.md
-                - name: Konfigurera och introducera
-                  href: mtp/config-mtpeval.md
-                - name: Aktivera Microsoft Hotskydd
-                  href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
-                - name: Skapa ett testmeddelande
-                  href: mtp/generate-test-alert.md
             - name: Distribuera tjänster som stöds
               href: mtp/deploy-supported-services.md
             - name: Aktivera Microsoft Hotskydd
               href: mtp/mtp-enable.md
+            - name: Aktivera vanliga frågor och svar
+              href: mtp/mtp-enable-faq.md
             - name: Incidenter
               items:
                 - name: Översikt
@@ -196,14 +187,10 @@
                       href: mtp/custom-detections-overview.md
                     - name: Skapa och hantera identifieringsregler
                       href: mtp/custom-detection-rules.md
-            - name: Secure Score
+            - name: Microsoft Secure Score
               items:
-                - name: Secure Score (ny)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: Secure Score (tidigare version)
+                - name: Översikt över Secure Score
                   href: mtp/microsoft-secure-score.md
-                - name: Secure Score (förhandsversion)
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: Kommer snart
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Rapporter
@@ -324,6 +311,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Använda avlistningsportalen för att ta bort dig själv från listan med spärrade avsändare
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: Hantera webbadresser och filer i listan över tillåtna/blockerade klientorganisationer
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: Skydd mot nätfiske
               href: ./office-365-security/anti-phishing-protection.md
               items:
