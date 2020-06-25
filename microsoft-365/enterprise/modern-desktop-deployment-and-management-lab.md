@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 48d8cf5bc618f4f1e840872c4369bc5cdda19727
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
+ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262563"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44869862"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
@@ -34,9 +34,9 @@ Den här utbildningen rekommenderas starkt för organisationer som behöver migr
 
 Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslutna skrivbordsklienter, domänkontrollant, Internetgateway och en helt konfigurerad Konfigurationshanterare-instans. Labbet innehåller den senaste utvärderingsversioner av följande produkter:
 
-  - Windows 10 Enterprise
+  - NYHET! Windows 10 Enterprise, version 2004
   - Windows 7 Enterprise
-  - Microsoft konfigurationshanterare för slutpunkt
+  - NYHET! Microsoft Endpoint Configuration Manager, version 2002
   - Windows Assessment and Deployment Kit för Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -113,7 +113,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labbet utgår 5 juli 2020. En ny version kommer att publiceras före detta utgångsdatum.*
+*Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labben utgår 12 september 2020. En ny version kommer att publiceras före detta utgångsdatum.*
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
 

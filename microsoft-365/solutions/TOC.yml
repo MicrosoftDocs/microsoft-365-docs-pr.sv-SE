@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Steg 2. Tillhandahåll fjärråtkomst
           href: empower-people-to-work-remotely-remote-access.md
-        - name: Steg 3. Distribuera slutpunktshantering
+        - name: Steg 3. Distribuera säkerhet och efterlevnad
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: Steg 4. Distribuera slutpunktshantering
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Steg 4. Distribuera produktivitetsappar och tjänster
+        - name: 'Steg 5: Distribuera produktivitetsappar och tjänster'
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 'Steg 5: Skapa kommunikationsplatser'
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: Steg 6. Utbilda distansarbetare
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Konfigurera säkerhet samarbete med hjälp av Microsoft 365
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: Isolerat team för ett topphemligt projekt
           href: contoso-team-for-top-secret-project.md
+        - name: Röstmigrering för Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Testlabbguider
       items:
         - name: Testlabbguider för lösningar och scenarier

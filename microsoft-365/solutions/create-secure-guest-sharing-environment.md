@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om vilka alternativ som finns för att skapa en säker gästdelningsmiljö i Microsoft 365.
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159485"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874900"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -40,7 +40,7 @@ I det här scenariot:
 
 Vissa av alternativen som beskrivs i den här artikeln kräver att gästerna har ett konto i Azure Active Directory. Om du vill vara säker på att gästerna ingår i katalogen när du delar filer och mappar med dem, ska du använda [SharePoint- och OneDrive-integrering med förhandsversionen av Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
-Observera att vi inte tar upp inställningarna för gästdelning i den här artikeln. Mer information om hur du aktiverar gästdelning i olika scenarier finns i [Samarbeta med personer utanför organisationen](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization).
+Observera att vi inte tar upp inställningarna för gästdelning i den här artikeln. Mer information om hur du aktiverar gästdelning i olika scenarier finns i [Samarbeta med personer utanför organisationen](collaborate-with-people-outside-your-organization.md).
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Konfigurera multifaktorautentisering för gäster
 

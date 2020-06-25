@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Konfigurationsrekommendationer för att skydda filer i Microsoft Teams.
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159437"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702518"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurera Teams med tre skyddsnivåer
 
@@ -50,7 +50,7 @@ Mer information om nivåerna och de funktioner som rekommenderas för varje niv�
 
 I tabellen nedan sammanfattas konfigurationerna för respektive nivå. Använd de här konfigurationerna som utgångspunkt och justera konfigurationerna efter behoven i din organisation. Du kanske inte behöver alla nivåer.
 
-||**Grundläggande (offentlig)**|**Grundläggande (privat)**|**Känslig**|**Strikt känsligt**|
+||Grundläggande (offentlig)|Grundläggande (privat)|Känslig|Strikt känsligt|
 |:-----|:-----|:-----|:-----|:-----|
 |Privat eller offentligt team|Offentlig|Privat|Privat|Privat|
 |Vem har åtkomst?|Alla i organisationen, t. ex. B2B-användare.|Endast teammedlemmar. Andra kan begära åtkomst till den associerade webbplatsen.|Endast teammedlemmar.|Endast teammedlemmar.|
