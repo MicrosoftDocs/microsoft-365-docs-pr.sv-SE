@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617092"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899357"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
 **Gäller:**
 - Microsoft Hotskydd
 
-`AlertEvidence`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om olika entiteter – filer, IP-adresser, webbadresser, användare eller enheter – som är associerade med aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`AlertEvidence`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om olika entiteter – filer, IP-adresser, webbadresser, användare eller enheter – som är associerade med aviseringar från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -53,7 +53,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `AdditionalFields` | Sträng | Ytterligare information om händelsen i JSON-matrisformat |
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)

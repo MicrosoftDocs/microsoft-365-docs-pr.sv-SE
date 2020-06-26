@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 754c9476e81dd84e2140e18b8684061f52c287ba
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 17e12e9095219b7ad7923f7b5664946fff6ce724
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42929332"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899381"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
 **Gäller:**
 - Microsoft Hotskydd
 
-`IdentityLogonEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om autentiseringsaktiviteter som registrerats av Azure Active Directory och andra Microsoft-molnappar och -tjänster. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`IdentityLogonEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om autentiseringsaktiviteter som registrerats av Azure Active Directory och andra Microsoft-molnappar och -tjänster. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -37,12 +37,12 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 |-------------|-----------|-------------|
 | `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
 | `ActionType` | Sträng | Typ av aktivitet som utlöste händelsen |
-| `LogonType` | Sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktiv** - Användaren interagerar fysiskt med maskinen med det lokala tangentbordet och skärmen<br><br> - **Fjärr interaktiva (RDP)-inloggningar** - Användaren interagerar med datorn på distans med fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initieras när datorn används med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** - Session initierad av schemalagda aktiviteter<br><br> - **Service** - Session initierad av tjänster när de startar |
-| `Application` | Sträng | Ansökan som utförde den registrerade åtgärden |
+| `LogonType` | Sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktiv** - Användaren interagerar fysiskt med maskinen med det lokala tangentbordet och skärmen<br><br> - **Fjärr interaktiva (RDP)-inloggningar** - Användaren interagerar med datorn på distans med fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initieras när datorn används med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** - Session initierad av schemalagda aktiviteter<br><br> - **Service** - Session initierad av tjänster när de börjar |
+| `Application` | Sträng | Ansökan som utförde den inspelade åtgärden |
 | `Protocol` | Sträng | Protokoll som används under kommunikationen |
 | `AccountName` | Sträng | Kontots användarnamn |
 | `AccountDomain` | Sträng | Kontots domän |
-| `AccountUpn` | Sträng | Kontots användarnamn (UPN) |
+| `AccountUpn` | Sträng | Användarens huvudnamn (UPN) för kontot |
 | `AccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountObjectId` | Sträng | Unik identifierare för kontot i Azure AD |
 | `AccountDisplayName` | Sträng | Namn på den kontoanvändare som visas i adressboken. Vanligtvis en kombination av ett givet eller förnamn, en mellaninitiering och ett efternamn eller efternamn. |
@@ -51,10 +51,10 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `OSPlatform` | Sträng | Plattform för operativsystemet som körs på maskinen. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
 | `IPAddress` | Sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
 | `Location` | Sträng | Ort, land eller annan geografisk plats som är associerad med händelsen |
-| `Isp` | Sträng | Internet-leverantör (ISP) som är associerad med ip-adressen för slutpunkten |
+| `Isp` | Sträng | Internet-leverantör (ISP) som är associerad med IP-adressen för slutpunkten |
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)

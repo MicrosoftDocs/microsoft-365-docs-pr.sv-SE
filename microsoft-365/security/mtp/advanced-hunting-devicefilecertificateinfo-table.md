@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fcbd487aeed633176c86fd22bfcd156be02fea22
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900799"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899321"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
 **Gäller:**
 - Microsoft Hotskydd
 
-Tabellen `DeviceFileCertificateInfo` i det [avancerade jaktschemat](advanced-hunting-overview.md) innehåller information om certifikat för filsignering. I den här tabellen används data som erhållits från certifikatverifieringsaktiviteter som regelbundet utförs på filer på slutpunkter.
+`DeviceFileCertificateInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om certifikat för filsignering. I den här tabellen används data som erhållits från certifikatverifieringsaktiviteter som regelbundet utförs på filer på slutpunkter.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -44,7 +44,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `Signer` | Sträng | Information om undertecknaren av filen |
 | `SignerHash` | Sträng | Unikt hash-värde som identifierar undertecknaren |
 | `Issuer` | Sträng | Information om den utfärdande certifikatutfärdaren |
-| `IssuerHash` | Sträng | Unikt hash-värde som identifierar utfärdande certifikatutfärdarh (CA) |
+| `IssuerHash` | Sträng | Unikt hash-värde som identifierar utfärdande certifikatutfärdaren |
 | `CertificateSerialNumber` | Sträng | Identifierare för certifikatet som är unikt för den utfärdande certifikatutfärdaren |
 | `CrlDistributionPointUrls` | Sträng |  JSON-matris med url:er för nätverksresurser som innehåller certifikat och listor över återkallade certifikat (CRL:er) |
 | `CertificateCreationTime` | Datetime | Datum och tid då certifikatet skapades |
@@ -55,7 +55,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `ReportId` | Lång | Händelseidentifierare baserat på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. | 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)

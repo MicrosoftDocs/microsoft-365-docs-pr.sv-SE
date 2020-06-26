@@ -11,16 +11,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- fwlink 2133922 to Delete subscription heading
 search.appverid:
 - MET150
-description: Läs om hur du stänger ditt konto hos Microsoft.
-ms.openlocfilehash: f399a1ba4d67abf5982c111e9b915f02324150a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Läs om hur du avslutar ditt konto hos Microsoft.
+ms.openlocfilehash: a92b9f2053d9acf4e8233bee7a42047f51288943
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402184"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898927"
 ---
 # <a name="close-your-account"></a>Avsluta ditt konto
 
@@ -39,7 +41,7 @@ Ta bort alla användare utom en global administratör som slutför stegen för a
 
 Om användare synkroniseras från lokala, stäng först av synkronisering och ta sedan bort användarna i molnkatalogen med hjälp av Azure-portalen eller Azure PowerShell-cmdletar.
 
-Information om hur du tar bort användare finns i <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">Administratör för Användarhantering: Ta bort en eller flera användare</a>.
+Information om hur du tar bort användare finns i <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">Användarhanteringsadministratör: Ta bort en eller flera användare</a>.
 
 Du kan också använda cmdleten <a href="https://go.microsoft.com/fwlink/?linkid=842230">Ta bort MsolUser</a> PowerShell för att ta bort användare i grupp.
 

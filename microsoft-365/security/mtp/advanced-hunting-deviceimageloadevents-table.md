@@ -1,7 +1,7 @@
 ---
 title: DeviceImageLoadEvents-tabellen i det avancerade jaktschemat
 description: Lär dig mer om DLL-inläsning av händelser i tabellen DeviceImageLoadEvents i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, imageloadevents, DeviceImageLoadEvents, DLL-inläsning, bibliotek, filavbildning
+keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, imageloadevents, DeviceImageLoadEvents, DLL-inläsning, bibliotek, filbild
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 98aac3d231e2c8630cb4721ee8012054ab90feef
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e4b136b7d9ae86756c401d8c73bcb7a7ea251b54
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617146"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899297"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "44617146"
 
 
 
-`DeviceImageLoadEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om DLL-inläsningshändelser. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`DeviceImageLoadEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om DLL-inläsningshändelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -49,24 +49,24 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `InitiatingProcessAccountDomain` | Sträng | Domän för kontot som körde processen som var ansvarig för händelsen |
 | `InitiatingProcessAccountName` | Sträng | Användarnamn för kontot som körde processen som var ansvarig för händelsen |
 | `InitiatingProcessAccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessIntegrityLevel` | Sträng | Integritetsnivå för den process som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från en nedladdning på Internet. Dessa integritetsnivåer påverkar behörigheter till resurser |
-| `InitiatingProcessTokenElevation` | Sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighetshöjning (User Access Control) som tillämpas på den process som initierade händelsen |
+| `InitiatingProcessIntegrityLevel` | Sträng | Integritetsnivå för den process som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från en nedladdning på Internet. Dessa integritetsnivåer påverkar behörigheter för resurser |
+| `InitiatingProcessTokenElevation` | Sträng | Tokentyp som anger närvaron eller frånvaron av UAC-behörighetshöjning (User Access Control) som tillämpas på den process som initierade händelsen |
 | `InitiatingProcessSHA1` | Sträng | SHA-1 av processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA256` | Sträng | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
 | `InitiatingProcessMD5` | Sträng | MD5-hash i processen (bildfil) som initierade händelsen |
-| `InitiatingProcessFileName` | Sträng | Namnet på den process som initierade händelsen |
+| `InitiatingProcessFileName` | Sträng | Namn på den process som initierade händelsen |
 | `InitiatingProcessId` | Int | Process-ID (PID) för den process som initierade händelsen |
 | `InitiatingProcessCommandLine` | Sträng | Kommandorad som används för att köra processen som initierade händelsen |
 | `InitiatingProcessCreationTime` | Datetime | Datum och tid då processen som initierade händelsen startades |
 | `InitiatingProcessFolderPath` | Sträng | Mapp som innehåller processen (bildfilen) som initierade händelsen |
 | `InitiatingProcessParentId` | Int | Process-ID (PID) för den överordnade processen som gav upphov till den process som var ansvarig för händelsen |
-| `InitiatingProcessParentFileName` | Sträng | Namn på den överordnade process som gav upphov till den process som ansvarar för händelsen |
-| `InitiatingProcessParentCreationTime` | Datetime | Datum och tid då den överordnade processen som ansvarar för händelsen startades |
+| `InitiatingProcessParentFileName` | Sträng | Namn på den överordnade process som gav upphov till den process som var ansvarig för händelsen |
+| `InitiatingProcessParentCreationTime` | Datetime | Datum och tid då den överordnade processen som var ansvarig för händelsen startades |
 | `ReportId` | Lång | Händelseidentifierare baserat på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
 | `AppGuardContainerId` | Sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)

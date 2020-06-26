@@ -1,7 +1,7 @@
 ---
-title: IdentityQueryEvents-tabellen i det avancerade jaktschemat
-description: Lär dig mer om Active Directory-frågehändelser i tabellen IdentityQueryEvents i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identiteter, LDAP-frågor
+title: AppFileEvents-tabellen i det avancerade jaktschemat
+description: Lär dig mer om filrelaterade händelser som är associerade med molnappar och molntjänster i tabellen AppFileEvents i det avancerade jaktschemat
+keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AppFileEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
+ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
 ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899119"
+ms.locfileid: "44899345"
 ---
-# <a name="identityqueryevents"></a>IdentityQueryEvents
+# <a name="appfileevents"></a>AppFileEvents
 
 **Gäller:**
 - Microsoft Hotskydd
 
-`IdentityQueryEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om frågor som utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`AppFileEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om filrelaterade aktiviteter i molnappar och tjänster som övervakas av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
@@ -38,16 +38,14 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
 | `ActionType` | Sträng | Typ av aktivitet som utlöste händelsen |
 | `Application` | Sträng | Ansökan som utförde den inspelade åtgärden |
-| `Query` | Sträng | Typ av fråga: QueryGroup, QueryUser eller UppräkningAnvändare |
-| `QueryObject` | Sträng | Namn på den användare, grupp, enhet, domän eller någon annan entitetstyp som efterfrågas |
-| `Protocol` | Sträng | Protokoll som används under kommunikationen |
+| `FileName` | Sträng | Namnet på den fil som den registrerade åtgärden tillämpades på |
+| `FolderPath` | Sträng | Mapp som innehåller filen som den inspelade åtgärden tillämpades på |
+| `PreviousFileName` | Sträng | Det ursprungliga namnet på filen som har bytt namn till följd av åtgärden |
 | `AccountName` | Sträng | Kontots användarnamn |
 | `AccountDomain` | Sträng | Kontots domän |
 | `AccountUpn` | Sträng | Användarens huvudnamn (UPN) för kontot |
-| `AccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot |
 | `AccountObjectId` | Sträng | Unik identifierare för kontot i Azure AD |
 | `AccountDisplayName` | Sträng | Namn på den kontoanvändare som visas i adressboken. Vanligtvis en kombination av ett givet eller förnamn, en mellaninitiering och ett efternamn eller efternamn. |
-| `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för slutpunkten |
 | `IPAddress` | Sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
 | `Location` | Sträng | Ort, land eller annan geografisk plats som är associerad med händelsen |
 

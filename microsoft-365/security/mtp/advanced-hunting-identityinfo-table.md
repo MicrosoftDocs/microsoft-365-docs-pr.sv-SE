@@ -17,29 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 12f8d0995d00daffe8a1ca1c2c8d9dfe25a11581
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209781"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898963"
 ---
-# <a name="identityinfo"></a>IdentitetInfo
+# <a name="identityinfo"></a>IdentityInfo
 
 **Gäller:**
 - Microsoft Hotskydd
 
-`IdentityInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om användarkonton som hämtats från olika tjänster, inklusive Azure Active Directory. Använd den här referensen om du vill skapa frågor som returnerar information från den här tabellen.
+`IdentityInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om användarkonton som hämtats från olika tjänster, inklusive Azure Active Directory. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!NOTE]
->Den här tabellen har bytt namn från `AccountInfo` . Under namnbyten uppdateras alla frågor som sparas i portalen automatiskt. Kontrollera frågor som du har sparat någon annanstans.
+>Den här tabellen har bytt namn från `AccountInfo` . Under namnbyten uppdateras alla frågor som sparats i portalen automatiskt. Kontrollera frågor som du har sparat någon annanstans.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
 | `AccountObjectId` | Sträng | Unik identifierare för kontot i Azure AD |
-| `AccountUpn` | Sträng | Kontots användarnamn (UPN) |
+| `AccountUpn` | Sträng | Användarens huvudnamn (UPN) för kontot |
 | `OnPremSid` | Sträng | Sid-säkerhetsidentifierare (On-premises security identifier) för kontot |
 | `CloudSid` | Sträng | Molnsäkerhetsidentifierare för kontot |
 | `GivenName` | Sträng | Kontoanvändarens förnamn eller förnamn |
@@ -56,7 +56,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `IsAccountEnabled` | Boolean | Anger om kontot är aktiverat eller inte |
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
