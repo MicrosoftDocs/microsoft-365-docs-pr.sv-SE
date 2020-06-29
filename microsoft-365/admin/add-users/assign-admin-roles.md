@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Lär dig hur du tilldelar administratörsroller till en användare eller flera användare i företaget så att de kan utföra specifika uppgifter i administrationscentret.
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780643"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900782"
 ---
 # <a name="assign-admin-roles"></a>Tilldela administratörsroller
 
@@ -110,9 +110,9 @@ Använd följande instruktioner för att tilldela roller till mer än tio använ
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>Fungerade det inte för dig?
+## <a name="check-your-permissions"></a>Kontrollera dina behörigheter
 
-Du kanske inte har rätt behörigheter och har därför inte åtkomst till att tilldela administratörsroller till andra användare. Be en annan administratör att tilldela roller åt dig.
+Du kanske inte har rätt behörighet att tilldela administratörsroller till andra användare. Kontrollera om du har rätt behörighet eller be en annan administratör att tilldela roller åt dig.
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ Du kanske inte har rätt behörigheter och har därför inte åtkomst till att t
 
 [Om administratörsroller i Microsoft 365](about-admin-roles.md)
 
+[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Tilldela roller till användarkonton med PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Auktorisera eller ta bort partnerrelationer](../misc/add-partner.md)
-
-[Lägga till en alternativ e-postadress med administrationscentret för Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
