@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844630"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936635"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -56,6 +56,19 @@ Varje förbättringsåtgärd är värd 10 poäng eller mindre. De flesta görs p
 ### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
 
 För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att täcka alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part eller alternativ begränsning.
+
+### <a name="security-defaults"></a>Standardinställningar för säkerhet
+
+Microsoft Secure Score har uppdaterade förbättringsåtgärder för att stödja [säkerhetsstandarder i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), vilket gör det enklare att skydda din organisation med förkonfigurerade säkerhetsinställningar för vanliga attacker.
+
+Om du aktiverar standardvärden för säkerhet får du fullständiga poäng för följande förbättringsåtgärder:
+
+- Se till att alla användare kan slutföra multifaktorautentisering för säker åtkomst (9 poäng)
+- Kräv MFA för administrativa roller (10 poäng)
+- Aktivera principen för att blockera äldre autentisering (7 poäng)
+
+>[!IMPORTANT]
+>Standardinställningar för säkerhet omfattar säkerhetsfunktioner som ger liknande säkerhet som förbättringsåtgärderna för "inloggningsrisk" och "användarriskprincip". I stället för att ställa in dessa principer ovanpå säkerhetsinställningarna rekommenderar vi att de uppdateras till "Löst genom alternativ begränsning".
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 

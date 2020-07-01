@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Hitta och använd rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
+description: Hitta och använda rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613366"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44937001"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -36,8 +36,8 @@ ATP-rapporter innehåller följande:
 - [Statusrapport för hotskydd](#threat-protection-status-report)
 - [Rapporten för ATP-filtyper](#atp-file-types-report)
 - [Rapport om ATP-meddelandedisposition](#atp-message-disposition-report)
-- antingen [identifiering i realtid eller Utforskaren](threat-explorer.md) (beroende på om du har Office 365 ATP-abonnemang 1 eller 2)
-- ... [och mer](#additional-reports-to-view).
+- antingen [identifieringar i realtid eller Utforskaren](threat-explorer.md) (beroende på om du har Office 365 ATP-abonnemang 1 eller 2)
+- ... [med mera](#additional-reports-to-view).
 
 Läs den här artikeln om du vill få en översikt över ATP-rapporter och hur du använder dem.
 
@@ -45,32 +45,33 @@ Läs den här artikeln om du vill få en översikt över ATP-rapporter och hur d
 
 Rapporten **Status för hotskydd** är en enda vy som samlar information om skadligt innehåll och skadlig e-post som upptäckts och blockerats av [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) och [Office 365 ATP](office-365-atp.md). Den här rapporten är användbar för att visa identifieringar över tid (upp till 90 dagar) och gör det möjligt för säkerhetsadministratörer att identifiera trender eller avgöra om principer behöver justeras.
 
-Rapporten innehåller ett aggregerat antal unika e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (WEBBADRESSER) som blockerades av anti-malware-motorn, [nolltimmars automatisk rensning (ZAP)](zero-hour-auto-purge.md)och ATP-funktioner som [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md)och [ATP anti-phishing](set-up-anti-phishing-policies.md).
+Rapporten innehåller ett aggregerat antal unika e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (URL:er) som blockerades av anti-malware-motorn, [nolltimmars automatisk rensning (ZAP)](zero-hour-auto-purge.md)och ATP-funktioner som [ATP Safe Links,](atp-safe-links.md) [ATP Safe Attachments](atp-safe-attachments.md)och [ATP anti-phishing](set-up-anti-phishing-policies.md).
 
 Filter och uppdelningar av informationen möjliggör mer detaljerade kategoriseringar av informationen i den här rapporten. Specifikt finns det en "break down by" meny som ingår för **E** \> **Phish** och **E Malware** \> **visningar.** Det kommer att dela upp data i:
 
 |||
 |---|---|
-|Efter identifieringstyp|Vilken politik hjälpte till att fånga dessa hot?|
+|Efter principtyp|Vilken politik hjälpte till att fånga upp dessa hot?|
 |Genom detektionsteknik|Vilken underliggande Microsoft-teknik fångade hotet?|
-|Efter leveransstatus|Vad har hänt med de e-postmeddelanden som upptäckts som hot?|
+|Efter leveransstatus|Vad identifierades den slutliga leveransstatusen för e-postmeddelanden som hot?|
 |
 
 > [!TIP]
-> Både e-> Phish | Malware visningar har detaljerade uppdelningar för upptäckt teknik som visas, med kategorier som *ATP-genererade fil rykte*, *File detonation*, *URL detonation*, *Anti-parodi: DMARC misslyckande*, till exempel, till hjälp med att precisera exakt vilken funktion som ledde din organisation att fånga hot.
+> Både e-> Phish | Malware visningar har detaljerade uppdelningar för detektionsteknik som visas, med kategorier som *ATP-genererade fil rykte*, *File detonation*, *URL detonation*, *Anti-parodi: DMARC misslyckande*, till exempel, till hjälp med att precisera exakt vilken funktion som ledde din organisation att fånga hot.
 
 ![Rullgardinsmenyn Status för hotskydd som visar "bryt ned efter".](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **Mail** \> **Phish,** **E Malware** och \> **Malware** **Content** \> **Malware** visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
+Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **e-post** \> **Phish,** **E Malware** och \> **Malware** **Innehåll** \> **Malware** visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
 
 ![Den här bilden visar Export som ett alternativ i menyn för vyn Skadlig kod, precis mellan Skapa schema och Begäransrapport.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Obs:** Det maximala antalet poster som kan exporteras för **Phish** och **Malware** är strax under 10000. Om du exporterar en vy exporteras endast de senaste 10000 posterna.
+> [!NOTE]
+> Det maximala antalet poster som kan exporteras för **Phish** och **Malware** är strax under 10000. Om du exporterar en vy exporteras endast de senaste 10000 posterna. På exporterade data representerar kolumnen _meddelandeantal_ antalet antalet meddelanden som identifieras av identifieringsteknik och principtyp.    
 
 Översikts- och e-postvyerna visar information inom några timmar efter bearbetningen i stället för inom 24 timmar (efterfrågan på igen. ökade hastigheter här har varit en tydlig signal)!
 
 > [!NOTE]
-> En statusrapport för hot är tillgänglig för kunder som har antingen [Office 365 ATP](office-365-atp.md) eller [Exchange Online Protection](exchange-online-protection-overview.md)) (EOP). Informationen som visas i rapporten Status för hotskydd för ATP-kunder innehåller dock sannolikt andra data än vad EOP-kunder kan se. Rapporten Status för hotskydd för ATP-kunder innehåller till exempel information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md). Sådan information är specifik för ATP, så kunder som har EOP men inte ATP kommer inte att se dessa uppgifter i sin rapport om hotskyddsstatus.
+> En rapport om status för hotskydd är tillgänglig för kunder som har antingen [Office 365 ATP](office-365-atp.md) eller [Exchange Online Protection](exchange-online-protection-overview.md)) (EOP). Informationen som visas i rapporten Status för hotskydd för ATP-kunder innehåller dock sannolikt andra data än vad EOP-kunder kan se. Rapporten Status för hotskydd för ATP-kunder innehåller till exempel information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md). Sådan information är specifik för ATP, så kunder som har EOP men inte ATP kommer inte att se dessa uppgifter i sin hotskyddsstatusrapport.
 
 Om du vill visa rapporten [Status &amp; ](https://protection.office.com)för hotskydd går du till **Rapporter om** skydd av \> **instrumentpanelens** \> **skydd .**
 
@@ -78,9 +79,9 @@ Om du vill visa rapporten [Status &amp; ](https://protection.office.com)för hot
 
 Om du vill ha detaljerad status för en dag håller du muspekaren över diagrammet.
 
-![ATP-hotskyddsstatusdata för en dag](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+![ATP Hot Protection Status data för en dag](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-Som standard visar rapporten Status för hotskydd data för de senaste sju dagarna. Du kan dock välja **Filter** och ändra datumintervallet för att visa data i upp till 90 dagar. (Om du använder en utvärderingsprenumeration kan du vara begränsad till 30 dagars data.)
+Som standard visar rapporten Status för hotskydd data för de senaste sju dagarna. Du kan dock välja **Filter** och ändra datumintervallet för att visa data i upp till 90 dagar för den sammanlagda vyn och 30 dagar för detaljvyn. (Om du använder en utvärderingsprenumeration kan du vara begränsad till 30 dagars data.)
 
 ![STATUSFILTER FÖR ATP-hotskydd](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -94,7 +95,7 @@ Den här rapporten är baserad på insamlade data och upptäckta hot per klick (
 
 |||
 |---|---|
-|Url-klickskyddsåtgärd|Se antalet webbadresser som blockerats, blockerats men åsidosättts med ett klick av en användare, åsidosatt med ett klick av en användare och tillåtet.|
+|Url-klickskyddsåtgärd|Se antalet webbadresser som blockerats, blockerats men åsidosätts med ett klick av en användare, åsidosätts med ett klick av en användare och tillåts.|
 |URL-klick efter program|Se programmet som url:en klickades på.|
 |
 
@@ -105,27 +106,27 @@ I informationstabellen kan du se mer information om klicktid och användarinform
 
 ## <a name="atp-file-types-report"></a>Rapporten för ATP-filtyper
 
-I **atp-filtyper** visas vilken typ av filer som har identifierats som skadliga av [ATP Safe Attachments](atp-safe-attachments.md).
+I rapporten **ATP-filtyper** visas vilken typ av filer som har identifierats som skadliga av [ATP Safe Attachments](atp-safe-attachments.md).
 
-Om du vill visa [ &amp; den](https://protection.office.com)här rapporten går du till **Rapporter** \> **instrumentpanels-ATP-filtyper** \> **ATP File Types**.
+Om du vill visa [ &amp; den](https://protection.office.com)här rapporten går du till **Rapporter** \> **instrumentpanelen** \> **ATP-filtyper**.
 
 ![Rapporten för ATP-filtyper](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-När du hovrar över en viss dag kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Safe Bilagor](atp-safe-attachments.md) och [anti-spam &amp; anti-malware skydd](anti-spam-and-anti-malware-protection.md).
+När du hovrar över en viss dag kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Säkra bilagor](atp-safe-attachments.md) och [ &amp; anti-spam anti-malware skydd](anti-spam-and-anti-malware-protection.md). Den samlade vyn av rapporten tillåter 90 dagars filtrering, medan detaljvyn endast tillåter tio dagars filtrering. 
   
 ![ATP-filtyper rapportdata för en dag](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
 ## <a name="atp-message-disposition-report"></a>Rapport om ATP-meddelandedisposition
 
-**Atp Message Disposition-rapporten** visar de åtgärder som har vidtagits för e-postmeddelanden som har identifierats som skadliga innehåll.
+**Atp-meddelandedispositionsrapporten** visar de åtgärder som har vidtagits för e-postmeddelanden som har identifierats som skadliga innehåll.
 
 Om du vill visa den här rapporten **Reports** går du till Rapportinstrumentpanelen ATP Message Disposition i [ &amp; Säkerhetsefterlevnadscenter](https://protection.office.com) \> **Dashboard** \> **ATP Message Disposition**.
 
 ![ATP-meddelandedispositionsrapport](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
 
-När du hovrar över en stapel i diagrammet kan du se vilka åtgärder som har vidtagits för upptäckt e-post för den dagen.
+När du hovrar över en stapel i diagrammet kan du se vilka åtgärder som vidtogs för upptäckt e-post för den dagen.
 
-![ATP Message Disposition Rapport data för en dag](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![ATP Message Disposition Report-data för en dag](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
 
 ## <a name="additional-reports-to-view"></a>Ytterligare rapporter att visa
 
@@ -145,17 +146,17 @@ Utöver de ATP-rapporter som beskrivs i den här artikeln finns flera andra rapp
 
 Om du vill visa och använda de rapporter som beskrivs i den här artikeln **måste du ha tilldelat en lämplig roll för både Security Compliance Center och &amp; Administrationscenter för Exchange**.
 
-- För &amp; Säkerhetsefterlevnadscenter måste du ha tilldelat en av följande roller:
+- För &amp; Säkerhetsefterlevnadscenter måste du ha en av följande roller tilldelad:
 
   - Organisationshantering
-  - Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory admin center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Säkerhetsoperatör (detta kan tilldelas i Azure Active Directory admin center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Säkerhetsadministratör (detta kan tilldelas i Administrationscentret för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Säkerhetsoperatör (detta kan tilldelas i Administrationscentret för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Säkerhetsläsare
 
-- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (Se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
   - Organisationshantering
-  - Organisationshantering endast för vy
+  - Organisationshantering endast med enbart vy
   - Rollen Endast visa mottagare
   - Hantering av efterlevnad
 

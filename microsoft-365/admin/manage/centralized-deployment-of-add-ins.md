@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ta reda på om din klient och dina användare uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717279"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936449"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ta reda på om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -40,16 +40,12 @@ Du kan visa specifika krav för Office och Exchange nedan eller använda den [ce
 
 Centraliserad distribution stöder inte följande:
   
-- Tillägg som är inriktade på Word, Excel eller PowerPoint i Office 2013
-    
+- Tillägg som är inriktade på Word, Excel eller PowerPoint i Office 2013 
 - En lokal katalogtjänst
-    
+- Tilläggsdistribution till en Exchange On-Prem-postlåda
 - Tilläggsdistribution till SharePoint  
-
 - Team-appar
-   
 - Distribution av COM- (Component Object Model) och VSTO-tilläggen (Visual Studio Tools for Office)
-    
 - Distributioner av Microsoft 365 som inte inkluderar Exchange, till exempel Microsoft 365 Apps for business
 
 ### <a name="office-requirements"></a>Office-krav
