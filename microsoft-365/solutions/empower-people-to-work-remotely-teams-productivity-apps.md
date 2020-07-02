@@ -1,5 +1,5 @@
 ---
-title: Steg 4. Distribuera produktivitetsappar och tjänster för distansarbetare
+title: 'Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560453"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005968"
 ---
-# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Steg 4. Distribuera produktivitetsappar och tjänster för distansarbetare
+# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare
 
 För att kunna vara produktiva måste personer kommunicera och samarbeta med varandra. De måste träffas, chatta med röst och text, skapa nytt innehåll och dela information och filer, utbyta e-post och hantera kalendrar och uppgifter. Microsoft 365 tillhandahåller molnbaserade tjänster för alla de här nyckelfunktionerna:
 
@@ -90,9 +90,9 @@ Se [den här artikeln](https://docs.microsoft.com/deployoffice/deployment-guide-
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>Utbildningsresurser för användare för produktivitetsprogram och -tjänster
 
-- [Träna dina användare på Office och Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
+- [Träna dina användare på Office och Microsoft 365](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [Använda Office för webben](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Nästa steg
 
-Fortsätt med [Steg 5](empower-people-to-work-remotely-communication-venues.md) om du vill skapa fler kommunikationsplatser som betjänar din distansarbetare.
+Fortsätt med [Steg 6](empower-people-to-work-remotely-train-monitor-usage.md) för hur du tränar användarna och övervakar hur de lyckas.

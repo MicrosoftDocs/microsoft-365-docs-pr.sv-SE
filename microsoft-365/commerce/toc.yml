@@ -36,12 +36,14 @@
       href: subscriptions/manage-self-service-purchases-admins.md
 - name: Hantera licenser
   items:
-    - name: Hantera prenumerationslicenser
+    - name: Köpa eller ta bort prenumerationslicenser
       href: licenses/buy-licenses.md
     - name: Tilldela licenser till användare
       href: ../admin/manage/assign-licenses-to-users.md
     - name: Ta bort tilldelningen av licenser från användare
       href: ../admin/manage/remove-licenses-from-users.md
+    - name: Flytta användare till en annan prenumeration
+      href: subscriptions/move-users-different-subscription.md
     - name: Allmänt om prenumerationer och licenser
       href: licenses/subscriptions-and-licenses.md
 - name: Fakturor och betalningar

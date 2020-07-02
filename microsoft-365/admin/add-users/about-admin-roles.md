@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: d67f80ef00f6decb7172d4ea484a3c4161fcbf31
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e76024f1d13e9210b74e2f6c4fc63c9992615099
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387435"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015917"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -35,13 +35,13 @@ Din Microsoft 365- eller Office 365-prenumeration innehåller en uppsättning ad
 
 I Administrationscenter för Microsoft 365 kan du hantera Azure Active Directory-roller och Microsoft Intune-roller. Dessa roller är dock en deluppsättning av rollerna som finns tillgängliga i Azure Active Directory-portalen och administrationscentret för Intune.
 
-Letar du efter de detaljerade rollbeskrivningarna för Azure Active Directory? Ta en titt på [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Vill du ha en komplett lista över detaljerade Azure AD-rollbeskrivningar som du kan hantera i administrations centret för Microsoft 365? Ta en titt på Administratörens rollbehörigheter i Azure Active Directory. [Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Letar du efter de detaljerade rollbeskrivningarna för Microsoft Intune? Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Vill du ha en komplett lista över detaljerade Intune-rollbeskrivningar som du kan hantera i administrations centret för Microsoft 365?  Ta en titt på [Rollbaserad åtkomstkontroll (RBAC) med Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 Mer information om hur du tilldelar roller i Administrationscenter för Microsoft 365 finns i [Tilldela administratörsroller](assign-admin-roles.md).
 
-## <a name="things-to-consider"></a>Saker att tänka på...
+## <a name="security-guidelines-for-assigning-roles"></a>Säkerhetsriktinjer för tilldelning av roller
 
 Eftersom administratörer har tillgång till känsliga data och filer rekommenderar vi att du följer dessa riktlinjer för att skydda organisationens data.
 
@@ -53,11 +53,7 @@ Eftersom administratörer har tillgång till känsliga data och filer rekommende
 
 Om du får ett meddelande i administrationscentret om att du inte har behörighet att redigera inställningar eller sidor beror det på att du har tilldelats en roll som inte har den behörigheten.
 
-## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Azure Active Directory-roller i Administrationscenter för Microsoft 365
-
-I administrationscentret för Microsoft 365 kan du hantera över 30 Azure AD-roller. Dessa roller är bara en underuppsättning av rollerna som finns tillgängliga i Azure-portalen. Om du har ett stort företag kan det finnas roller i Microsoft Azure-portalen som uppfyller organisationens behov.
-
-En användare som har tilldelats en administratörsroll får samma behörigheter till alla molntjänster som organisationen prenumererar på, oavsett om du tilldelar rollen i administrationscentret för Microsoft 365, i Azure-portalen eller med Azure AD-modulen för Windows PowerShell.
+## <a name="commonly-used-microsoft-365-admin-center-roles"></a>Vanliga roller för administrationscenter för Microsoft 365
 
 ::: moniker range="o365-worldwide"
 
@@ -80,82 +76,24 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Som stan
 |Teams-tjänstadministratör    |   Tilldela Teams-tjänstadministratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för Teams. <br><br>Teams-tjänstadministratörer kan också: <br> – Hantera möten <br> – Hantera konferensbryggor <br> – Hantera alla organisationsomfattande inställningar, inklusive inställningar för federation, team-uppgradering och team-klienter   |
 |Användaradministratör     |    Tilldela rollen som användaradministratör till användare som behöver göra följande för alla användare: <br> – Lägga till användare och grupper <br> – Tilldela licenser <br> – Hantera de flesta användaregenskaper <br> – Skapa och hantera användarvyer <br> – Uppdatera giltighetsprinciper för lösenord <br> – Hantera tjänsteförfrågningar <br> – Övervaka tjänstens status <br><br>  Användaradministratören kan också utföra följande åtgärder för användare som inte är administratörer och för användare som har tilldelats följande roller: katalogläsare, gästinbjudare, supportadministratör, meddelandecenter-administratör, rapportläsare: <br> – Hantera användarnamn<br> – Ta bort och återställa användare<br> – Återställa lösenord <br> – Tvinga att användare loggar ut <br> – Uppdatera enhetsnycklar (FIDO)   |
 
-### <a name="all-azure-ad-roles"></a>Alla Azure Active Directory-roller
-
- Här följer en lista över alla tillgängliga administratörsroller i administrationscentret för Microsoft 365.
-
-|Administratörsroll     |Beskrivning  |
-|---------|---------|
-|Programadministratör     |    Full tillgång till företagsprogram, programregistreringar och inställningar för proxyinställningar för program.     |
-|Programutvecklare     |    Skapa programregistreringar och bevilja appåtkomst för egen räkning.     |
-|Autentiseringsadministratör     |    Kan begära att användare registrerar om autentisering för användaruppgifter utan lösenord, t.ex. MFA.     |
-|Azure Information Protection-administratör     |   Hanterar etiketter för Azure information Protection-principen, hanterar skyddsmallar och aktiverar skydd.       |
-|Faktureringsadministratör     |    Gör inköp, hanterar prenumerationer, hanterar tjänsteförfrågningar och övervakar tjänstens status.     |
-|Molnprogramsadministratör     | Full tillgång till företagsprogram och programregistreringar. Ingen programproxy.     |
-|Molnenhetsadministratör     |    Aktiverar, inaktiverar och tar bort enheter samt kan läsa Windows 10 BitLocker-nycklar.     |
-|Efterlevnadsadministratör     |    Hanterar regelkrav och eDiscovery-ärenden samt underhåller datastyrning för platser, identiteter och appar.     |
-|Efterlevnadsdataadministratör     |    Håller ordning på data, ser till att de skyddas, får information om problem och hjälper till att minska risken.     |
-|Administratör för villkorsstyrd åtkomst     |   Hanterar inställningar för villkorsstyrd åtkomst i Azure Active Directory, men inte Exchange ActiveSync-principer för villkorsstyrd åtkomst.      |
-|Customer Lockbox-åtkomstgodkännare     |      Hanterar förfrågningar om Customer Lockbox, kan aktivera och inaktivera Customer Lockbox.   |
-|Desktop Analytics-administratör     |   Kan komma åt och hantera Desktop-hanteringsverktyg och tjänster.      |
-|Dynamics 365-administratör     |  Full tillgång till Microsoft Dynamics 365 online, hanterar tjänsteförfrågningar och övervakar tjänstens status.       |
-|Exchange-administratör     |  Full tillgång till Exchange Online, skapar och hanterar grupper, hanterar tjänsteförfrågningar och övervakar tjänstens status.    |
-|Administratör för extern identitetsleverantör    |     Konfigurerar identitetsleverantörer för användning med direkt federering.    |
-|Global administratör     |    Har obegränsad åtkomst till alla hanteringsfunktioner och de flesta data i alla administrationscenter.     |
-|Global läsare     |    Har skrivskyddad åtkomst till alla hanteringsfunktioner och de flesta uppgifter i administrationscenter. En detaljerad beskrivning av behörighet och begränsningar för den här rollen finns i [administratörs behörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
-|Grupper-administratör   |Skapar grupper och hanterar alla Grupper-inställningar i olika administrationscenter.|
-|Gästinbjudare     |    Hanterar Azure Active Directory B2B-inbjudningar till gästanvändare.     |
-|Supportadministratör     | Återställer lösenord och omautentiseringar för alla icke-administratörer och vissa administratörsroller, hanterar tjänsteförfrågningar och övervakar tjänstens status.      |
-|Intune-administratör     | Fullständig åtkomst till Intune, hanterar användare och enheter för att associera principer, skapar och hanterar grupper.      |
-|Kaizala-administratör     |    Full tillgång till alla Kaizala-hanteringsfunktioner och data, hanterar tjänsteförfrågningar.     |
-|Licensadministratör     |     Tilldelar och tar bort licenser från användare och redigerar deras användningsplatser.    |
-|Sekretessläsare i meddelandecenter     |    Åtkomst till datasekretessmeddelanden i meddelandecenter, hämtar e-postmeddelanden.     |
-|Meddelandecenter-administratör     | Läser och delar vanliga meddelanden i meddelandecenter, hämtar e-postsammandrag varje vecka, har skrivskyddad åtkomst till användare, grupper, domäner och prenumerationer.     |
-|Administratör för Office-program    |   Hanterar molnbaserade principer för Office och nyhetsinnehållet som användarna ser i sina Office-program.   |
-|Power BI-administratör    |   Fullständig åtkomst till Power BI-hanteringsuppgifter, hanterar tjänsteförfrågningar och övervakar tjänstens status.   |
-|Administratör för Power Platform     |    Full tillgång till Microsoft Dynamics 365, PowerApps, principer för dataförlustskydd och Microsoft Flow.     |
-|Administratör för privilegierad roll     |    Hanterar rolltilldelningar och alla funktioner för åtkomstbehörighet för privilegierad identitetshantering.     |
-|Autentiseringsadministratör med privilegier     |    Återställer lösenord, uppdaterar autentiseringsuppgifter andra än lösenord, tvingar användare att logga ut och övervakar tjänstens status samt hanterar tjänstförfrågningar.     |
-|Rapportläsare     |   Läser användningsrapporter från rapportkontrollpanelen, PowerBI-innehållspaketet, inloggningsrapporter och rapporterings-API för Microsoft Graph.      |
-|Sökadministratör     |    Full tillgång till Microsoft Search, tilldelar rollerna sökadministratör och sökredigerare, hanterar redaktionellt innehåll, övervakar tjänstens status och skapar tjänsteförfrågningar.     |
-|Sökredigerare     |    Kan bara skapa, redigera och ta bort innehåll för Microsoft Search som bokmärken, frågor och svar samt platser.     |
-|Säkerhetsadministratör     |    Styr organisationens säkerhet, hanterar säkerhetsprinciper, granskar säkerhetsanalyser och rapporter samt övervakar hotbilden.     |
-|Säkerhetsoperatör     |    Undersöker och svarar på säkerhetsvarningar, hanterar funktioner i Identity Protection Center, övervakar tjänstens status.     |
-|Säkerhetsläsare     |    Skrivskyddad åtkomst till säkerhetsfunktioner, inloggningsrapporter och granskningsloggar.     |
-|Supportadministratör för tjänst     |    Skapar tjänsteförfrågningar för Azure, Microsoft 365 och Office 365 samt övervakar tjänstens status.     |
-|SharePoint-administratör     |    Full tillgång till SharePoint Online, hanterar Microsoft 365-grupper, hanterar tjänsteförfrågningar och övervakar tjänstens status.     |
-|Skype för företag-administratör     | Full tillgång till alla Teams- och Skype-funktioner, Skype-användarattribut, hanterar tjänsteförfrågningar och övervakar tjänstens status.      |
-|Teams-administratör     |    Full tillgång till Teams- och Skype-administrationscentret, hanterar Microsoft 365-grupper och tjänsteförfrågningar samt övervakar tjänstens status.     |
-|Teams-kommunikationshanterare     |    Tilldelar telefonnummer, skapar och hanterar röst- och mötesprinciper samt läser samtalsanalyser.     |
-|Supporttekniker för Teams-kommunikation     |    Läser information om samtal för alla samtalsdeltagare för att felsöka kommunikationsproblem.     |
-|Supportspecialist för Teams-kommunikation     |    Läser information om användarsamtal för specifika användare för att felsöka kommunikationsproblem.|
-|Användaradministratör     |   Återställer användarlösenord, skapar och hanterar användare och grupper samt filter, hanterar tjänsteförfrågningar och övervakar tjänstens status.|
-
-## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft Intune-roller i Administrationscenter för Microsoft 365
-
-|Administratörsroll     |Vem ska ha tilldelas denna roll?  |
-|---------|---------|
-|Programhanterare     |   Tilldela rollen som programhanterare till användare som hanterar livscykel för mobilappar, konfigurerar princip-hanterade appar och visar enhetsinformation och konfigurationsprofiler.  |
-|Supportoperatör     |   Tilldela rollen supportoperatör till användare som tilldelar appar och principer till användare och enheter. |
-|Intune rolladministratör    |   Tilldela Intune rolladministratör till användare som kan tilldela Intune-behörigheter till andra administratörer och kan hantera anpassade och inbyggda Intune-roller.   |
-|Princip- och profilhanterare     |   Tilldela rollen princip- och profilhanterare till användare som hanterar principer för efterlevnad, konfigurationsprofiler och Apple-registrering.   |
-|Skrivskyddsoperatör     |   Tilldela rollen skrivskyddsoperatör till användare som endast kan visa användare, enheter, registreringsinformation och konfigureringar.   |
-|Skoladministratör     |   Tilldela rollen skoladministratör till användare för fullständig åtkomst till hantering av Windows 10 och iOS-enheter, appar och konfigurationer i Intune for Education.   |
-
 ## <a name="delegated-administration-for-microsoft-partners"></a>Delegerad administration för Microsoft-partners
 
-Om du arbetar med en Microsoft-partner kan du tilldela dem administratörsroller. De kan i sin tur tilldela användare i ditt företag – eller i sitt företag – administratörsroller. Det kanske du vill göra om de till exempel konfigurerar och hanterar din onlineorganisation åt dig.
+Om du arbetar med en Microsoft-partner kan du tilldela dem administratörsroller. De kan i sin tur tilldela användare i ditt företag, eller i sitt företag, administratörsroller. Det kanske du vill göra om de till exempel konfigurerar och hanterar din onlineorganisation åt dig.
   
 Ett partnerföretag kan tilldela följande roller: 
   
-- Fullständig administrering, som har samma behörigheter som en global administratör, förutom behörighet att hantera flerfaktorautentisering via partnercentret.
-    
-- Begränsad administration, som har samma behörigheter som en supportadministratör.
+- **Fullständig administrering** Behörigheter som en global administratör, förutom behörighet att hantera flerfaktorautentisering via partnercentret.
+
+- **Begränsad administration** Behörigheter som en supportadministratör.
 
 För att partnerföretaget ska kunna tilldela de här rollerna till användare måste du lägga till partnern som delegerad administratör i kontot. Initiativet till en sådan här process tas av en auktoriserad partner. Partnern skickar ett e-postmeddelande till dig med frågan om du vill ge dem behörighet att fungera som delegerad administratör. Anvisningar finns i [Auktorisera eller ta bort partnerrelationer](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Tilldela administratörsroller](assign-admin-roles.md)
+
+[Azure AD-roller i administrationscentret för Microsoft 365](azure-ad-roles-in-the-mac.md)
+
+[Administratörsrollen i Exchange Online](about-exchange-online-admin-role.md)
   
 [Aktivitetsrapporter i administrationscentret för Microsoft 365](../activity-reports/activity-reports.md)

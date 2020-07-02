@@ -19,18 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Lär dig hur du gör organisationen säkrare mot lösenordsattacker och varför du bör förbjuda vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399320"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015929"
 ---
 # <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
  
-Som administratör för en organisation är du ansvarig för att bestämma policyn för användarnas lösenord. Det kan vara komplicerat och förvirrande att ange en lösenordspolicy och den här artikeln innehåller rekommendationer för att skydda organisationen mot lösenordsattacker.
+As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 Information om hur du anger hur ofta Microsoft 365-lösenord ska upphöra att gälla i organisationen finns i [Ange förfalloprincip för lösenord för Microsoft 365](../manage/set-password-expiration-policy.md).
+
+Mer information om Microsoft 365-lösenord finns i följande [relaterade artiklar](#related-articles).
   
 ## <a name="understanding-password-recommendations"></a>Förstå rekommendationer om lösenord
 
@@ -38,17 +40,17 @@ Bra metoder för lösenord delas in i några breda kategorier:
   
 - **Motarbeta vanliga attacker** Här ingår valet av var användarna kan ange lösenord (kända och betrodda enheter med bra identifiering av skadlig kod, verifierade webbplatser) och valet av vilka lösenord de kan välja (längd och unikhet).
 
-- **Begränsa lyckade attacker** Att begränsa lyckade hackarattacker handlar om att begränsa exponering till en viss tjänst, eller förhindra skadan helt och hållet, om en användares lösenord stjäls. Till exempel att se till att ett avslöjande av din inloggningsinformation för sociala nätverk inte gör ditt bankkonto sårbart, eller att se till att ett konto med svagt skydd inte tar emot återställningslänkar för ett viktigt konto.
+- **Containing successful attacks** Containing successful hacker attacks is about limiting exposure to a specific service, or preventing that damage altogether, if a user's password gets stolen. For example, ensuring that a breach of your social networking credentials doesn't make your bank account vulnerable, or not letting a poorly guarded account accept reset links for an important account.
 
-- **Förstå människans natur** Många giltiga lösenordsmetoder misslyckas på grund av naturliga mänskliga beteenden. Det är avgörande att förstå människans natur eftersom forskning visar att nästan alla regler som du tillämpar för användarna leder till svagare lösenord. Krav gällande längd, specialtecken och lösenordsändring leder till normalisering av lösenord, vilket gör det enklare för attackerare att gissa eller knäcka lösenord.
+- **Understanding human nature** Many valid password practices fail in the face of natural human behaviors. Understanding human nature is critical because research shows that almost every rule you impose on your users will result in a weakening of password quality. Length requirements, special character requirements, and password change requirements all result in normalization of passwords, which makes it easier for attackers to guess or crack passwords.
 
 ## <a name="password-guidelines-for-administrators"></a>Riktlinjer om lösenord för administratörer
 
-Det primära målet med ett säkrare lösenordssystem är lösenordsvariation. Lösenordsprincipen bör innehålla många olika och svårgissade lösenord. Här är några rekommendationer för att skydda organisationen.
+The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
 - Ha ett krav om minimilängd på 8 tecken (längre är inte nödvändigtvis bättre)
 
-- Ha inte krav på teckensammansättning. Exempel: \*&amp;(^%$
+- Don't require character composition requirements. For example, \*&amp;(^%$
 
 - Kräv inte regelbundna lösenordsåterställningar för användarkonton
 
@@ -62,7 +64,7 @@ Det primära målet med ett säkrare lösenordssystem är lösenordsvariation. L
 
 ### <a name="password-guidance-for-your-users"></a>Hjälp om lösenord för användare
 
-Här är lite hjälp om lösenord för användarna i organisationen. Se till att informera användarna om de här rekommendationerna och tillämpa rekommenderade lösenordsprinciper på organisationsnivå.
+Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
   
 - Använd inte ett lösenord som är samma som eller liknar ett du använder på andra webbplatser
 
@@ -76,15 +78,15 @@ Det här är några av de vanligaste metoderna för lösenordshantering, men for
   
 ### <a name="password-expiration-requirements-for-users"></a>Krav på giltighetstid för lösenord för användare
 
-Krav på giltighetstid för lösenord gör mer skada än nytta, eftersom de här kraven gör att användarna väljer förutsägbara lösenord, som består av sekventiella ord och tal som är nära relaterade till varandra. I sådana fall kan nästa lösenord förutsägas utifrån föregående lösenord. Krav på giltighetstid för lösenord ger inga begränsningsfördelar eftersom cyberbrottslingar nästan alltid använder inloggningsuppgifter direkt när de får tag på dem.
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them.
   
 ### <a name="requiring-long-passwords"></a>Krav på långa lösenord
 
-Krav på lösenordslängd (fler än cirka 10 tecken) kan leda till förutsägbara och oönskade användarbeteenden. Användare som måste ha ett lösenord med minst 16 tecken kan till exempel välja upprepade mönster som **fyrafyrafyrafyra** eller **lösenordlösenord** som uppfyller kravet på teckenlängd men inte är svåra att gissa sig till. Längdkrav ökar dessutom risken för att användare använder sig av andra osäkra metoder, till exempel att skriva ned sina lösenord, använda dem igen eller lagra dem okrypterade i sina dokument. För att uppmuntra användare att komma på ett unikt lösenord rekommenderar vi att ha ett rimligt krav om minimilängd på 8 tecken. 
+Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement. 
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Krav på användning av flera teckenuppsättningar
 
-Krav på lösenordskomplexitet minskar nyckelutrymmet och leder till förutsägbart användarbeteende, vilket gör mer skada än nytta. I de flesta system tillämpas någon nivå av krav på lösenordskomplexitet. Till exempel måste lösenord innehålla tecken från samtliga av följande tre kategorier:
+Password complexity requirements reduce key space and cause users to act in predictable ways, doing more harm than good. Most systems enforce some level of password complexity requirements. For example, passwords need characters from all three of the following categories:
   
 - versaler
 
@@ -92,7 +94,7 @@ Krav på lösenordskomplexitet minskar nyckelutrymmet och leder till förutsägb
 
 - icke-alfanumeriska tecken
 
-De flesta använder liknande mönster, till exempel en versal i den första positionen, en symbol i den sista och en siffra i de sista två. Cyberbrottslingar vet om det, så de kör sina ordlisteattacker med de vanligaste ersättningarna, ”$” för ”s”, ”@” för ”a”, ”1” för ”l”. Att tvinga användare att välja en kombination av versaler, gemener, siffror och specialtecken har en negativ effekt. Vissa komplexitetskrav hindrar till och med användare från att använda säkra lösenord som de kommer ihåg, och tvingar dem att komma på mindre säkra lösenord som är svårare att komma ihåg.
+Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cyber criminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
   
 ## <a name="successful-patterns"></a>Lyckade mönster
 
@@ -100,15 +102,15 @@ Här finns däremot några rekommendationer om hur du uppmuntrar lösenordsvaria
   
 ### <a name="ban-common-passwords"></a>Förbjud vanliga lösenord
 
-Det viktigaste lösenordskravet du bör tillämpa när användarna skapar lösenord är att förbjuda användning av vanliga lösenord för att minska organisationens känslighet för råstyrkeattacker. Vanliga användarlösenord är bland annat **abdcefg**, **lösenord** och **sommar**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abdcefg**, **password**, **monkey**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Utbilda användare så att de inte återanvänder organisationslösenord någon annanstans
 
-Ett av de viktigaste budskapen att få fram till organisationens användare är att de inte ska återanvända sitt organisationslösenord någon annanstans. Användning av organisationslösenord på externa webbplatser ökar kraftigt risken för att cyberbrottslingar får tag på lösenorden.
+One of the most important messages to get across to users in your organization is to not re-use their organization password anywhere else. The use of organization passwords in external websites greatly increases the likelihood that cyber criminals will compromise these passwords.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>Tillämpa registrering för multifaktorautentisering
 
-Se till att användarna uppdaterar kontakt- och säkerhetsinformation, till exempel en alternativ e-postadress, telefonnummer eller en enhet som är registrerad för push-meddelanden, så att de kan svara på säkerhetskontroller och meddelas om säkerhetshändelser. Uppdaterad kontakt- och säkerhetsinformation hjälper användarna att bekräfta sin identitet om de någonsin glömmer sitt lösenord eller om någon annan försöker ta över deras konto. Det ger också en alternativ meddelandekanal vid säkerhetshändelser, till exempel inloggningsförsök eller ändrade lösenord. 
+Make sure your users update contact and security information, like an alternate email address, phone number, or a device registered for push notifications, so they can respond to security challenges and be notified of security events. Updated contact and security information helps users verify their identity if they ever forget their password, or if someone else tries to take over their account. It also provides an out of band notification channel in the case of security events such as login attempts or changed passwords. 
   
 Mer information finns i [Konfigurera multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md).
   
@@ -131,3 +133,13 @@ Med riskbaserad multifaktorautentisering går det att kontrollera att användare
 - [2015 års sämsta lösenord](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
 - [Ladda ned filer från webben](https://go.microsoft.com/fwlink/p/?linkid=861029)
+
+## <a name="related-articles"></a>Relaterade artiklar
+
+[Återställa lösenord](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[Ange att en enskild användares lösenord aldrig ska förfalla](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[Låt användare återställa sina egna lösenord](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[Skicka om en användares lösenord – hjälp för administratörer](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

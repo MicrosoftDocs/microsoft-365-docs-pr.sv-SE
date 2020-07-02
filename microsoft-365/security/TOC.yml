@@ -217,7 +217,7 @@
               href: mtp/feedback.md
             - name: Hantera biljetter via ServiceNow
               href: ./mtp/tickets.md
-    - name: Office 365 Avancerat skydd
+    - name: Office 365-säkerhet
       items:
         - name: Komma igång
           items:
@@ -366,7 +366,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: Visa information om skadliga filer
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Avancerat skydd
+        - name: Office 365 Avancerat skydd
           href: ./office-365-security/office-365-atp.md
           items:
             - name: Se vad som är nytt

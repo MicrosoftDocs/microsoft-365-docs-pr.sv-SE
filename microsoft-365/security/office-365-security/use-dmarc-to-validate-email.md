@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
-ms.openlocfilehash: 9ae159ccb2673fd9c8538b184e4de1b8e1c2b039
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: adc213ec5c47184f997a812425e53a61d7ac2da3
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224583"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016332"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -226,6 +226,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
 Alla, eller de flesta, e-postmeddelanden dirigeras först till mail.contoso.com eftersom det är den primära MX-posten och sedan dirigeras e-post till EOP. I vissa fall kanske du inte listar EOP som en MX-post alls och använder bara anslutningsprogram för att dirigera e-post. EOP måste inte vara den första posten för att DMARC-validering ska göras. Den säkerställer bara valideringen, eftersom vi inte kan vara säkra på att alla lokala servrar/icke-O365-servrar kommer att göra DMARC-kontroller.  DMARC kan tillämpas för en kunds domän (inte server) när du konfigurerar DMARC TXT-posten men det är upp till den mottagande servern att faktiskt göra tillämpningen.  Om du konfigurerar EOP som mottagande server gör EOP DMARC-tillämpningen.
+
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="En felsökningsbild för DMARC, av Daniel Mande":::
 
 ## <a name="for-more-information"></a>Mer information
 
