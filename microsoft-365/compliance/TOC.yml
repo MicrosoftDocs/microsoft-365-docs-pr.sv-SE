@@ -809,19 +809,19 @@
   items:
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Efterlevnadspoäng och Compliance Manager
+    - name: Efterlevnadspoäng och Compliance Manager (förhandsversion)
       items:
         - name: Efterlevnadspoäng (förhandsversion)
           href: compliance-score.md
-        - name: Konfigurera Efterlevnadspoäng (förhandsversion)
+        - name: Konfigurera Efterlevnadspoäng
           href: compliance-score-setup.md
-        - name: Arbeta med Efterlevnadspoäng (förhandsversion)
-          href: working-with-compliance-score.md
-        - name: Beräkning av efterlevnadspoäng (förhandsversion)
+        - name: Anpassa Efterlevnadspoäng med bedömningar
+          href: compliance-score-assessments.md
+        - name: Tilldela och utföra arbete med förbättringsåtgärder
+          href: compliance-score-improvement-actions.md
+        - name: Så beräknas din poäng
           href: compliance-score-methodology.md
-        - name: Viktig information om Efterlevnadspoäng (förhandsversion)
-          href: compliance-score-release-notes.md
-        - name: Vanliga frågor om Efterlevnadspoäng (förhandsversion)
+        - name: Vanliga frågor (FAQ)
           href: compliance-score-faq.md
         - name: Compliance Manager (förhandsversion)
           href: compliance-manager-overview.md

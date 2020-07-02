@@ -93,14 +93,12 @@
               href: manage/assign-licenses-to-users.md
             - name: Tilldela administratörsroller
               href: add-users/assign-admin-roles.md
+            - name: Ta bort tilldelningen av licenser från användare
+              href: manage/remove-licenses-from-users.md
             - name: Gästanvändare
               href: add-users/about-guest-users.md
             - name: Lägga till gästanvändare i en Microsoft 365-grupp
               href: create-groups/manage-guest-access-in-groups.md
-            - name: Ta bort licenser från användare
-              href: manage/remove-licenses-from-users.md
-            - name: Lösa licenskonflikter
-              href: manage/resolve-license-conflicts.md
             - name: Ändra ett användarnamn och en e-postadress
               href: add-users/change-a-user-name-and-email-address.md
             - name: Ta bort en tidigare anställd
