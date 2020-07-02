@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: 6061cd9ea52f4ed4073f510dcba60fba9b4fd23c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588082"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936943"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
@@ -59,7 +59,7 @@ Samla in följande information:
 
 ### <a name="to-add-or-update-your-spf-txt-record"></a>Så här lägger du till eller uppdaterar din SPF TXT-post
 
-1. Se till att bekanta dig med SFP-syntaxen i följande tabell.
+1. Kom ihåg att bekanta dig med SFP-syntaxen i följande tabell.
 
    ||**Om du använder...**|**Vanligt för kunder?**|**Lägger du till det här...**|
    |:-----|:-----|:-----|:-----|

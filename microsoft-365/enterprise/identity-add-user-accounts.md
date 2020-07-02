@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lägg till användarkonton och grupper direkt i molnet eller genom att synkronisera med din lokala katalog.
-ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2a54044737f5b924bd619d5a6c7c72091dc7a0d1
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42812953"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005840"
 ---
 # <a name="step-4-add-your-user-accounts"></a>Steg 4: Lägga till användarkonton
 
@@ -54,7 +54,7 @@ Det första beslutet i din hybrididentitetslösning gäller autentiseringskravet
 - Med **hanterad autentisering** hanteras autentiseringsprocessen för användarnas inloggning av Azure AD. Det finns två metoder för hanterad autentisering: 
     - **PHS (Password Hash Sync)** [rekommenderas och krävs för vissa premiumfunktioner]. Det här är det enklaste sättet att aktivera autentisering för lokala katalogobjekt i Azure AD. Azure AD Connect extraherar det hash-kodade lösenordet från AD DS, utför extra säkerhetsbearbetning för lösenordshashvärdet och synkroniserar det med Azure AD. Mer information finns i [Implementera synkronisering av lösenordshash med Azure AD Connect-synkronisering](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
     - **Direktautentisering (PTA)** ger en enkel lösning för lösenordsverifiering för Azure AD-baserade tjänster. PTA använder en agent som körs på en eller flera lokala servrar för att verifiera användarautentiseringarna direkt i din lokala AD DS. Mer information finns i [användarinloggning med Azure Active Directory – direktautentisering](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
-- Med **federerad autentisering** omdirigeras autentiseringsprocessen till en annan identitetsleverantör via en server för identitetsfederation, till exempel Active Directory Federation Services (AD FS), för en användares inloggning. Identitetsleverantören kan tillhandahålla ytterligare autentiseringsmetoder, t. ex. smartkortsbaserad autentisering. Mer information finns i [Välja rätt autentiseringsmetod för din hybrididentitetslösning i Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn).
+- Med **federerad autentisering** omdirigeras autentiseringsprocessen till en annan identitetsleverantör via en server för identitetsfederation, till exempel Active Directory Federation Services (AD FS), för en användares inloggning. Identitetsleverantören kan tillhandahålla ytterligare autentiseringsmetoder, t. ex. smartkortsbaserad autentisering. Mer information finns i [Välja rätt autentiseringsmetod för din hybrididentitetslösning i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
 
 I den här videon finns en översikt över identitetsmodeller och autentisering för Microsoft 365 Enterprise.
 
