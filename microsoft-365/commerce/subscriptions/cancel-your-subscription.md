@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Läs om hur du avbryter din Microsoft 365 för företagstestversion eller betald prenumeration.
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818525"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023375"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
@@ -144,10 +144,12 @@ När annulleringen träder i kraft förlorar användarna åtkomsten till sina da
 
 ### <a name="uninstall-office-optional"></a>Avinstallera Office (valfritt)
 
-Om du avbröt prenumerationen och inte flyttade användare till en annan prenumeration som innehåller Microsoft 365 körs Microsoft 365 i läget nedsatt funktionalitet. När detta inträffar kan användarna bara läsa och skriva ut dokument och Microsoft 365-program visar [meddelanden om olicensierad produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Se till att användarna [avinstallerar Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) från sina datorer för att undvika missförstånd.
+Om du avbröt prenumerationen och inte [flyttade användare till en annan prenumeration](move-users-different-subscription.md) som innehåller Microsoft 365 körs Microsoft 365 i läget nedsatt funktionalitet. När detta inträffar kan användarna bara läsa och skriva ut dokument och Microsoft 365-program visar [meddelanden om olicensierad produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Se till att användarna [avinstallerar Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) från sina datorer för att undvika missförstånd.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Förnya prenumerationen](renew-your-subscription.md)
 
 [Återaktivera prenumerationen](reactivate-your-subscription.md)
+
+[Flytta användare till en annan prenumeration](move-users-different-subscription.md)

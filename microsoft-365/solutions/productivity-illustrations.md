@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2ad424741ecbfe6f4bb8693df13a92bc71f012ce
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-ms.translationtype: HT
+ms.openlocfilehash: 3dc20db78139bc86daff6bf0a3ba3e0983746974
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160093"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016385"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -38,7 +38,7 @@ Det IT-arkitekter behöver veta om grupper i Microsoft 365
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Miniatyrbild av infografiken för grupper](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Uppdaterad i juni 2019|De här illustrationerna beskriver de olika typerna av grupper, hur de skapas och hanteras samt några rekommendationer för styrning.|
+|[![Miniatyrbild av infografiken för grupper](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Uppdaterad maj 2020|De här illustrationerna beskriver de olika typerna av grupper, hur de skapas och hanteras samt några rekommendationer för styrning.|
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Säkerhet och informationsskydd för organisationer i flera regioner
 Säkerhet och informationsskydd för organisationer i flera regioner med en enda Microsoft 365-klientorganisation

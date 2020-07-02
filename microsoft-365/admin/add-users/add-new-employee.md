@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Lägg till nya medarbetare i Microsoft 365 för företag för e-post, Skype och Office-appar.
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780679"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022139"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Lägga till en ny anställd i Microsoft 365
 
@@ -50,7 +50,7 @@ Här är en snabb översikt:
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>Steg 1: Skapa ett Microsoft 365-konto för medarbetaren
 
 
-Instruktioner finns [i Lägga till användare individuellt eller i grupp till Microsoft 365 - Hjälp om administratörer](add-users.md). När du konfigurerar den nya medarbetaren kan du välja att skicka inloggningsuppgifter till medarbetarens personliga konto. På så sätt får de ett e-postmeddelande från Microsoft Online Service Team som talar om för dem hur de ska logga in på Microsoft 365.
+Instruktioner finns i [Lägga till användare och tilldela licenser samtidigt](add-users.md). När du konfigurerar den nya medarbetaren kan du välja att skicka inloggningsuppgifter till medarbetarens personliga konto. På så sätt får de ett e-postmeddelande från Microsoft Online Service Team som talar om för dem hur de ska logga in på Microsoft 365.
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>Steg 2: Ge den anställde deras användar-ID och lösenord
 
@@ -85,12 +85,8 @@ Och här är en snabb referens för att hjälpa dem att komma igång:
 |Slutför OneDrive för företag-utbildningen så att du kan lära dig hur du lagrar och organiserar dina dokument, presentationer och kalkylblad i molnet.  <br/> |Förvara dina företagsrelaterade dokument i molnet med hjälp av OneDrive för företag. Du kan alltid komma åt ditt innehåll, även om du är inloggad på Microsoft 365 på en annan dator. [Titta på ett videoklipp om du vill lära dig hur du använder din OneDrive för företag](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Utbildning:** [OneDrive för företag-utbildning](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Välj OneDrive för företag).  <br/> |
 |Slutför SharePoint Online-utbildningen för att hjälpa dig att samarbeta med medarbetare och dela innehåll.  <br/> |Det bästa stället att behålla dokument som dina medarbetare också kommer åt är i SharePoint Online.  <br/> <br/>**Utbildning:** [Video: Samarbeta med gruppinnehåll med SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Ta reda på:** Hur använder din organisation SharePoint Online och vilken typ av dokument som lagras där. Vilka dokument som lagras i OneDrive för företag.  <br/> |
 
-   
 ## <a name="related-articles"></a>Relaterade artiklar
-
 
 [Ta bort en tidigare anställd från Microsoft 365](remove-former-employee.md)
   
-[Lägga till användare individuellt eller i grupp i Microsoft 365](add-users.md)
-  
-
+[Lägga till användare och tilldela licenser samtidigt65](add-users.md)

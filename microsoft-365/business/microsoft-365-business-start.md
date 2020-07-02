@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig mer om Microsoft 365 för företag, hur du konfigurerar det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786163"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022126"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -84,7 +84,7 @@ Logga in på [Microsoft 365 admincenter](https://portal.office.com/adminportal/h
     
     - Använd katalogsynkroniseringsguiden för att synkronisera användarna till molnet. Följ stegen i [Konfigurera katalogsynkronisering för Microsoft 365 för](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) att slutföra den här processen. När du har synkroniserat användarna med molnet måste du [inaktivera katalogsynkronisering för Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
-    Du måste också ge varje användare som har lagts till på det här sättet en licens till Microsoft 365 för företag. Du kan göra detta i [installationsguiden](set-up.md) eller [tilldela licenser till användare i Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+    Du måste också ge varje användare som har lagts till på det här sättet en licens till Microsoft 365 för företag. Du kan göra detta i [installationsguiden](set-up.md) eller [tilldela licenser till användare](../admin/manage/assign-licenses-to-users.md).
     
 ### <a name="2-prepare-mobile-devices"></a>2: Förbered mobila enheter
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689272"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005896"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
 
@@ -60,7 +60,5 @@ Följande funktioner och förbättringar är för närvarande tillgängliga vid 
 - **[Identitets- och apptabeller](advanced-hunting-schema-tables.md)** – få insyn i autentiseringshändelser, Active Directory-frågor och apprelaterad aktivitet med [tabellerna IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)och [AppFileEvents](advanced-hunting-appfileevents-table.md) i det avancerade jaktschemat.
 
 - **[Gå jakt](advanced-hunting-go-hunt.md)** - snabbt pivot från att undersöka en incident för att inspektera en viss händelse, en användare, en enhet eller andra entitetstyper med hjälp av frågebaserade [avancerade jaktfunktioner.](advanced-hunting-overview.md)
-
-- **[Tabellen EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** – använd den här tabellen för att skapa [avancerade jaktfrågor](advanced-hunting-overview.md) som söker efter åtgärder som vidtagits på e-postmeddelanden när de har levererats till mottagarpostlådor.
 
 - **[FileProfile() funktion](advanced-hunting-fileprofile-function.md)** - använd i dina [avancerade jaktfrågor](advanced-hunting-overview.md) för att införliva omfattande filinformation.

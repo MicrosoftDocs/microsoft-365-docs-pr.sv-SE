@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f5c226b6028c845acc674ec0a0536727386c2380
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899393"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005704"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
 **Gäller:**
 - Microsoft Hotskydd
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `EmailPostDeliveryEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om åtgärder efter leverans som vidtas i e-postmeddelanden som bearbetats av Microsoft 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 

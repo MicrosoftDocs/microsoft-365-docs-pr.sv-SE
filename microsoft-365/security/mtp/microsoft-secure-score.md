@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936635"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023409"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -203,6 +203,31 @@ Med tiden antar Identity Secure Score och Graph API den nya bedömningsmodellen.
 * Filtrera, tagga, söka och gruppera förbättringsåtgärder
 * Hantera mot dina framtida mål med hjälp av resultatprognoser och planerade åtgärder
 * Och mer!
+
+### <a name="june-2020"></a>Juni 2020
+
+#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Borttagen förbättringsåtgärd för Microsoft Defender Advanced Threat Protection
+
+* Aktivera regler för minskning av attackytan
+
+#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Lade till förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
+
+* Blockera Adobe Reader från att skapa underordnade processer
+* Använd avancerat skydd mot ransomware
+* Blockera alla Office-program från att skapa underordnade processer
+* Blockera Office-program från att skapa körbart innehåll
+* Blockera JavaScript eller VBScript från att starta nedladdat körbart innehåll
+* Blockera körning av potentiellt fördunklade skript
+* Blockera körbart innehåll från e-postklient och webbmail
+* Blockera Office-kommunikationsprogram från att skapa underordnade processer
+* Blockera ej betrodda och osignerade processer som körs från USB
+* Blockera persistens genom WMI-händelseprenumeration
+* Blockera Office-program från att injicera kod i andra processer
+* Blockera körbara filer från att köras om de inte uppfyller ett prevalens-, ålders- eller tillförlitligt listkriterium
+* Blockera processskapanden från PSExec- och WMI-kommandon
+* Blockera stöld av autentiseringsuppgifter från undersystemet Windows lokala säkerhetsmyndighet (lsass.exe)
+* Blockera Win32 API-anrop från Office-makron
+
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 

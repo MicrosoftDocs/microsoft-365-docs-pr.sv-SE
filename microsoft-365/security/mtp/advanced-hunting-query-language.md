@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036505"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005852"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig det avancerade jaktfrågespråket
 
@@ -66,13 +66,13 @@ En kort kommentar har lagts till i början av frågan för att beskriva vad den 
 // Finds PowerShell execution events that could involve a download
 ```
 
-Själva frågan börjar vanligtvis med ett tabellnamn följt av en`|`serie element som startats av en pipe ( ). I det här exemplet börjar vi med `DeviceProcessEvents` att `DeviceNetworkEvents`skapa en union med två tabeller och lägga till rörelement efter behov.
+Själva frågan börjar vanligtvis med ett tabellnamn följt av en serie element som startats av en pipe ( `|` ). I det här exemplet börjar vi med att skapa en union med två tabeller `DeviceProcessEvents` och `DeviceNetworkEvents` lägga till rörelement efter behov.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Ange tidsintervall
-Det första rörelementet är ett tidsfilter som har scopets till de föregående sju dagarna. Om du håller tidsintervallet så smalt som möjligt säkerställer du att frågor presterar bra, returnerar hanterbara resultat och inte time out.
+Det första rörelementet är ett tidsfilter som har scopets till de föregående sju dagarna. Om du håller tidsintervallet så smalt som möjligt säkerställer du att frågor fungerar bra, returnerar hanterbara resultat och inte time out.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -81,7 +81,7 @@ Det första rörelementet är ett tidsfilter som har scopets till de föregåend
 ### <a name="check-specific-processes"></a>Kontrollera specifika processer
 Tidsintervallet följs omedelbart av en sökning efter processfilnamn som representerar PowerShell-programmet.
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
@@ -102,7 +102,7 @@ Därefter söker frågan efter strängar på kommandorader som vanligtvis använ
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Anpassa resultatkolumner och längd 
-Nu när frågan tydligt identifierar de data du vill hitta kan du lägga till element som definierar hur resultaten ser ut. `project`returnerar specifika `top` kolumner och begränsar antalet resultat. Dessa operatörer hjälper till att säkerställa att resultaten är välformaterade och någorlunda stora och lätta att bearbeta.
+Nu när frågan tydligt identifierar de data du vill hitta kan du lägga till element som definierar hur resultaten ser ut. `project`returnerar specifika kolumner och `top` begränsar antalet resultat. Dessa operatörer hjälper till att säkerställa att resultaten är välformaterade och någorlunda stora och lätta att bearbeta.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -110,7 +110,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Klicka på **Kör fråga** om du vill se resultatet. Välj ikonen expandera längst upp till höger i frågeredigeraren för att fokusera på jaktfrågan och resultaten. 
+Klicka på **Kör fråga** om du vill se resultatet. Välj ikonen expandera längst upp till höger i frågeredigeraren för att fokusera på din jaktfråga och resultaten. 
 
 ![Bild av utöka kontrollen i den avancerade jaktfråge redigeraren](../../media/advanced-hunting-expand.png)
 
@@ -125,7 +125,7 @@ Nu när du har kört din första fråga och har en allmän uppfattning om dess k
 |--|--|
 | `where` | Filtrera en tabell till den delmängd av rader som uppfyller ett predikat. |
 | `summarize` | Skapa en tabell som sammanställer innehållet i indatatabellen. |
-| `join` | Sammanfoga raderna med två tabeller för att skapa en ny tabell genom att matcha värden för de angivna kolumnerna från varje tabell. |
+| `join` | Sammanfoga raderna med två tabeller för att skapa en ny tabell med matchande värden för de angivna kolumnerna från varje tabell. |
 | `count` | Returnera antalet poster i indatapostuppsättningen. |
 | `top` | Returnera de första N-posterna sorterade efter de angivna kolumnerna. |
 | `limit` | Returnera upp till angivet antal rader. |
@@ -160,7 +160,7 @@ Avsnittet **Kom igång** innehåller några enkla frågor med vanliga operatorer
 ![Bild på avancerat jaktfönster](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Förutom de grundläggande frågeexemplen kan du också komma åt delade frågor för specifika [hotjaktsscenarier.](advanced-hunting-shared-queries.md) Utforska de delade frågorna till vänster på sidan eller GitHub-frågedatabasen.
+>Förutom de grundläggande frågeexemplen kan du också komma åt delade frågor för specifika [hotjaktsscenarier.](advanced-hunting-shared-queries.md) Utforska delade frågor till vänster på sidan eller GitHub-frågedatabasen.
 
 ## <a name="access-query-language-documentation"></a>Dokumentation för åtkomst till frågespråk
 

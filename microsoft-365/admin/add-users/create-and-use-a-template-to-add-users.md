@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Du kan skapa och använda en mall för att spara tid och standardisera inställningar när du lägger till flera användare.
-ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431815"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022151"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Skapa och använda en mall för att lägga till användare
 
@@ -33,7 +33,7 @@ Du kan skapa och använda en mall för att spara tid och standardisera inställn
 
 ## <a name="create-a-template"></a>Skapa en mall
 
-Mallar är enkla att &mdash; skapa, du kan välja **Användare**  >  **Aktiva användare**  >  **Användarmallar**, och välj sedan Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar har du möjlighet att spara posten som en mall.
+Mallar är lätta att &mdash; skapa, du kan välja **Användare**  >  **Aktiva användare**  >  **Användarmallar**, och sedan välja Lägg till en **mall** i listrutan, eller så kan du lägga till en ny användare och när du är klar, har du möjlighet att spara posten som en mall.
 
 När du skapar en mall när du har lagt till en användare sparas de värden du väljer för följande inställningar i mallen:
 
@@ -42,7 +42,7 @@ När du skapar en mall när du har lagt till en användare sparas de värden du 
 - Engångslösenord: du kan kräva att användaren skapar ett nytt lösenord efter första inloggningen
 - Licensplats
 - Licensval
-- Val av program
+- Programval
 - Roll
 - Mest profilinformation, till exempel **Jobbprofil,** **Avdelning,** **Office,** **Office-telefon**och **Gatuadress** 
 
@@ -54,7 +54,7 @@ Följande information är användarspecifik och sparas inte i mallen:
 - Val att skicka lösenordet via e-post och vem lösenordet e-postmeddelandet skickas till
 - Mobiltelefonnummer
 
-Om du väljer att inte ange information för en inställning i ett avsnitt är det värdet tomt och den inställningen visas inte i mallen. Om du till exempel lämnar **befattningen** tom visas inte **befattningen jobbtitel** alls när du granskar mallen och när du använder mallen. Om du lämnar alla inställningar för **profilavsnittet** tomma visas **Ingen** i den slutliga mallen i avsnittet **Profil.**
+Om du väljer att inte ange information för en inställning i ett avsnitt är det värdet tomt och den inställningen visas inte i mallen. Om du till exempel lämnar **befattningen** tom visas inte **befattningen jobbtitel** alls när du granskar mallen och när du använder mallen. Om du lämnar alla inställningar **för profilavsnittet** tomma visas **Ingen** i den slutliga mallen i avsnittet **Profil.**
 
 När du skapar en mall genom att välja alternativet **Lägg till en mall** kan du välja vilka värden som ska slutföras. Allt som lämnas tomt visas som **Ingen i** mallen.
 
@@ -89,7 +89,7 @@ Du kan enkelt ta bort mallar som du inte längre behöver och lägga till nya. S
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till användare individuellt eller i grupp i Microsoft 365](add-users.md)
+[Lägga till användare och tilldela licenser samtidigt](add-users.md)
 
 [Ta bort en tidigare anställd från Microsoft 365](remove-former-employee.md)
   

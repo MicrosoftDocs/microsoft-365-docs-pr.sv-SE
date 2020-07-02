@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Läs om hur du får användningsrapport för e-postappar för att få reda på om e-postappar som ansluter till Exchange Online och outlook-versionanvändarna använder.
-ms.openlocfilehash: 80f05e4b356655c859536a46868e7ffde7cdebdb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bfd8a911652283685486202203d0302479a8270e
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387771"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005758"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365-rapporter i administrationscentret – användning av e-postappar
 
@@ -53,11 +53,10 @@ Du kan få en vy över aktiviteten för e-postappar genom att titta på diagramm
 |3.  <br/> |I vyn **Användare** visas antalet unika användare som har anslutit till Exchange Online med ett e-postprogram.  <br/> |
 |4.  <br/> |I vyn **Appar** visas antalet unika användare per app under den valda tidsperioden.  <br/> |
 |5.  <br/> |I **vyn Versioner** visas antalet unika användare för varje version av Outlook i Windows.  <br/> |
-|6.  <br/> | I diagrammet **Användare** är Y-axeln det totala antalet unika användare som har anslutit till ett program någon dag under rapporteringsperioden.  <br/>  I diagrammet **Användare** är X-axeln antalet unika användare som har använt programmet under rapporteringsperioden.  <br/>  I diagrammet **Appar** är Y-axeln det totala antalet unika användare som har använt ett visst program under rapporteringsperioden.  <br/>  I diagrammet **Appar** är X-axeln listan över program i organisationen.  <br/>  I diagrammet **Versioner** är Y-axeln det totala antalet unika användare med en viss version av Outlook för skrivbordet. Om rapporten inte kan identifiera versionsnumret för Outlook visas antalet som Obestämbar.  <br/>  I diagrammet **Versioner** är X-axeln listan över program i organisationen.  <br/> |
+|6.  <br/> | I diagrammet **Användare** är Y-axeln det totala antalet unika användare som har anslutit till ett program någon dag under rapporteringsperioden.  <br/>  I diagrammet **Användare** är X-axeln antalet unika användare som har använt programmet under rapporteringsperioden.  <br/>  I diagrammet **Appar** är Y-axeln det totala antalet unika användare som har använt ett visst program under rapporteringsperioden.  <br/>  I diagrammet **Appar** är X-axeln listan över program i organisationen.  <br/>  I diagrammet **Versioner** är Y-axeln det totala antalet unika användare med en viss version av Outlook för skrivbordet. Om rapporten inte kan matcha versionsnumret för Outlook visas kvantiteten som **Obestämd**.  <br/>  I diagrammet **Versioner** är X-axeln listan över program i organisationen.  <br/> |
 |7.  <br/> |Du kan filtrera serien som visas i diagrammet genom att markera ett objekt i förklaringen. I diagrammet **Användare** väljer du till exempel **Mac-e-post** eller **Outlook** ![ Outlook-lista över e-postklienter. Välj e-postklienten för att få mer rapporteringsdata om den klienten.](../../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) för att bara visa information om det objektet. När du ändrar det här valet ändras inte informationen i rutnätstabellen. Mac Mail, Outlook för Mac, Outlook Mobile, Outlook för skrivbordet och Outlook på webben är exempel på e-postprogram som du kan ha i organisationen.  <br/> |
 |8.  <br/> | Du kan kanske inte se alla objekt i listan nedan i kolumnerna förrän du lägger till dem.<br/> **Användarnamn** är namnet på e-postappens ägare.  <br/> **Senaste aktivitetsdatum** är det senaste datumet då användaren läste eller skickade ett e-postmeddelande.  <br/> **Mac Mail**, **Outlook för Mac** och **Outlook**, **Outlook Mobile** och **Outlook på webben** är exempel på e-postprogram som du kan ha i organisationen.  <br/>  Om organisationens principer förhindrar dig att visa rapporter där användarinformationen är identifierbar kan du ändra sekretessinställningen för alla de här rapporterna. Kolla in avsnittet **Hur döljer jag information på användarnivå?** [Activity Reports in the Microsoft 365 admin center](activity-reports.md)  <br/> |
-|9.  <br/> |Välj **Hantera kolumner** om du vill lägga till eller ta bort kolumner från rapporten.  <br/> ![Användningsrapport för e-postappar – välj kolumner](../../media/c17b2a5c-db41-474a-8334-0e5a621b2f16.png)|
+|9.  <br/> |Välj **Hantera kolumner** om du vill lägga till eller ta bort kolumner från rapporten.  <br/> ![Användningsrapport för e-postappar – välj kolumner](../../media/82008680-cd28ab00-9686-11ea-8692-b3d72117c20b.png)|
 |10.  <br/> |Du kan också exportera rapportdata till en CSV-fil i Excel genom att välja länken **Exportera.** Då exporteras data för alla användare och du kan göra enkel sortering och filtrering för vidare analys. Om du har mindre än 2 000 användare kan du sortera och filtrera i tabellen i själva rapporten. Om du har fler än 2 000 användare måste du exportera data för att kunna filtrera och sortera.  <br/> |
 |||
    
-

@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Lär dig hur du lägger till en partner för prenumerationsrådgivare som postpartner vid tidpunkten för Köpet av Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
-ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Lär dig hur du lägger till en partner för prenumerationsrådgivare som partner vid tidpunkten för Köpet av Microsoft 365, ändrar partnern eller tar bort en partner från en prenumeration.
+ms.openlocfilehash: 07e0d47d45f20e206fb8ca4c5ff5e81785bc74b9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432201"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005692"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Lägga till, ändra eller ta bort en partner för abonnemangsrådgivning
 
@@ -50,13 +50,13 @@ Vilken partner du väljer beror på vilka Microsoft-tjänster du använder och i
 
 ::: moniker range="o365-germany"
 
-En auktoriserad Microsoft-partner fungerar som din abonnemangsrådgivare och hjälper dig med expertkunskaper inom försäljning, support och teknik, som behövs för att konfigurera och underhålla ditt abonnemang. Du kan lägga till en auktoriserad partner när du köper Office 365, eller vid en senare tidpunkt. Om du inte har någon partner kan du hitta en på webbplatsen [Microsoft Pinpoint](https://pinpoint.microsoft.com). 
+An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Office 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website. 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Vilken partner du väljer beror på vilka Office 365-tjänster du använder och var någonstans du kommer att använda tjänsterna. Om du lägger till eller ändrar en partner för ditt abonnemang behöver du först be om partnerns Microsoft partner-ID.
+The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
 
 ::: moniker-end
 
@@ -75,11 +75,11 @@ Som administratör för Office 365 kan du skapa eller redigera användare, åter
 2. Välj den produkt du vill köpa och välj sedan **Köp**.
   
 3. Om du vill lägga till en ny partner **Get assistance from a Microsoft Partner**expanderar **du Behöver du hjälp med din beställning?**<br>
-Följ stegen på leverantörssidan för att antingen söka efter eller för att matchas med en partner.
+Följ stegen på sidan leverantörer för att antingen söka efter eller för att matchas med en partner.
     
 4. Om du redan har en partner väljer du **Lägg till**i det andra steget i kassaguiden i den högra rutan under Partnerinformation .
 
-5. Skriv Microsoft partner-ID för partnern du vill lägga till. Microsoft partner-ID får du reda på genom att fråga partnern.
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. Slutför guiden om du vill genomföra köpet av abonnemang. 
     
@@ -94,11 +94,11 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
 2. Välj den produkt du vill köpa och välj sedan **Köp**.
   
 3. Om du vill lägga till en ny partner **Get assistance from a Microsoft Partner**expanderar **du Behöver du hjälp med din beställning?**<br>
-Följ stegen på leverantörssidan för att antingen söka efter eller för att matchas med en partner.
+Följ stegen på sidan leverantörer för att antingen söka efter eller för att matchas med en partner.
     
 4. Om du redan har en partner väljer du **Lägg till**i det andra steget i kassaguiden i den högra rutan under Partnerinformation .
 
-5. Skriv Microsoft partner-ID för partnern du vill lägga till. Microsoft partner-ID får du reda på genom att fråga partnern.
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. Slutför guiden om du vill genomföra köpet av abonnemang. 
     
@@ -113,7 +113,7 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
     
 2. Om du har mer än en prenumeration väljer du den prenumeration som du vill redigera.
   
-3. På prenumerationssidan väljer du fliken **Partner** och skriver sedan partnernätverks-ID för den partner du lägger till Du kan få partnerns Microsoft Partner-ID genom att be partnern om det.
+3. På prenumerationssidan väljer du fliken **Partner** och skriver sedan partnernätverks-ID:t för den partner du lägger till Du kan få partnerns Microsoft-partner-ID genom att be partnern om det.
     
 4. Välj **Lägg till**.
 
@@ -125,9 +125,9 @@ Följ stegen på leverantörssidan för att antingen söka efter eller för att 
     
 2. Om du har mer än en prenumeration väljer du den prenumeration som du vill redigera.
   
-3. Till höger, under prenumerationskostnaden, väljer **du Fler åtgärder** Lägg till partner till > **posten**.
+3. Till höger, under prenumerationskostnaden, väljer **Fler åtgärder** > **Lägg till partner till posten**.
 
-4. Skriv Microsoft partner-ID för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.
+4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 5. Partner-ID:t som visas på sidan **Prenumerationer**.
     
@@ -143,9 +143,9 @@ Så här accepterar du detta erbjudande
     
 2. Om du vill auktorisera avtalet väljer du länken som går till en auktoriseringssida i Office 365.
     
-3. Under **Partnerrelationer**väljer du **Ja** för att auktorisera partnern att vara din delegerade administratör och välj sedan **Nästa**.
+3. Under **Partnerrelationer**väljer du **Ja** om du vill att partnern ska vara den delegerade administratören och välj sedan **Nästa**.
     
-4. Om erbjudandet om partnerrelation kom med en provprenumeration eller ett köperbjudande skapar du ditt utvärderings- eller prenumerationskonto.
+4. Om erbjudandet om partnerrelation kom med en utvärderingsprenumeration eller ett köperbjudande skapar du ditt utvärderings- eller prenumerationskonto.
     
 ::: moniker-end
 
@@ -159,7 +159,7 @@ Så här accepterar du detta erbjudande
     
 3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
   
-4. Skriv det nya Microsoft partner-ID:t för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Så här accepterar du detta erbjudande
     
 3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
   
-4. Skriv det nya Microsoft partner-ID:t för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.   
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Så här accepterar du detta erbjudande
     
 3. Under **Partner-ID** väljer du **Redigera auktoriserad partner**.
   
-4. Skriv det nya Microsoft partner-ID:t för partnern du vill lägga till och klicka på **Kontrollera ID** och sedan på **Skicka**. Rätt Microsoft partner-ID får du reda på genom att fråga partnern.   
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
 
 ::: moniker-end
 
@@ -255,7 +255,7 @@ Om du tar bort en återförsäljarrelation är alternativet **Ta bort** nedtonat
 
 Du kan inte ta bort en återförsäljarrelation med en dig själv.
   
-Om du tar bort en återförsäljarrelation är alternativet **Ta bort** nedtonat och du måste be din återförsäljare följa de här anvisningarna: [Ta bort en återförsäljarrelation med en partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+Du måste be din återförsäljare partner att följa dessa instruktioner: [Ta bort en återförsäljare relation med partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
 ::: moniker-end
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779959"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005636"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Topp 10 sätt att skydda Microsoft 365 för affärsplaner
 
@@ -325,15 +325,17 @@ Om du vill komma åt ATP Safe Links kan du visa en [kort träningsvideo](https:/
     
 Så här ändrar du standardprincipen:
   
-1. Välj **standardprincipen** under **Principer som gäller för hela organisationen**på sidan Säkra länkar. 
+1. Dubbelklicka på **standardprincipen** under Principer som gäller för hela organisationen under **Principer som gäller för hela organisationen.** 
     
-2. Under **Inställningar som gäller för innehåll utom e-post**väljer du Microsoft **365 Apps för företag, Office för iOS och Android**.
+2. Under **Inställningar som gäller för innehåll i Office 365**anger du en URL som ska blockeras, till exempel _example.com_och väljer **+** .
+
+3. Under **Inställningar som gäller för innehåll utom e-post**väljer du Office **365-program**, **Spåra inte när användare klickar på säkra länkar**och Låt inte användare klicka på säkra länkar till den ursprungliga **webbadressen**.
     
-3. Välj **Spara**. 
+4. Välj **Spara**. 
     
 Så här skapar du en ny princip som riktar sig till alla mottagare på domänen:
   
-1. På sidan Säkra länkar under **Principer som gäller för hela organisationen**väljer du att skapa en ny **+** princip. 
+1. På sidan Säkra länkar under **Principer som gäller för specifika mottagare**väljer du att skapa en ny **+** princip. 
     
 2. Använd inställningarna i följande tabell.
     
@@ -343,7 +345,7 @@ Så här skapar du en ny princip som riktar sig till alla mottagare på domänen
 |:-----|:-----|
 |Namn  <br/> |Princip för säkra länkar för alla mottagare i domänen  <br/> |
 |Välj åtgärden för okända potentiellt skadliga url:er i meddelanden  <br/> |Välj **På - webbadresser skrivs om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken**.  <br/> |
-|Använd säkra bilagor för att skanna nedladdningsbart innehåll  <br/> |Markera den här rutan.  <br/> |
+|Använda URL-skanning i realtid efter misstänkta länkar och länkar som pekar på filer  <br/> |Markera den här rutan.  <br/> |
 |Tillämpas på  <br/> |Mottagardomänen är . . . välj domän.  <br/> |
 |
    

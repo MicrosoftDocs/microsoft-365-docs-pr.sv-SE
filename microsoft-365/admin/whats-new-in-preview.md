@@ -21,12 +21,12 @@ description: Microsoft 365 admin center - lär dig om de funktioner som lades ti
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780713"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015999"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrationscentret för Microsoft 365
 
@@ -349,7 +349,7 @@ Det har skett en hel del förändringar för roller i admin center sedan vi bör
 
 - **Favoriter** - Du kan lägga till en stjärna i dina favorit- eller mest använda roller, så att du enkelt kan hitta dem genom att sortera kolumnen eller skapa ett filter.
 - **Aktiva användare**  >  **Hantera roller** - Detta har uppdaterats för att anpassa sig till ändringarna i Roller. Precis som med listan Roller har vi scoped standardlistan med roller till de mest användbara, men du kan se alla roller genom att expandera **Visa alla efter kategori**.
-- **Global läsare roll** - Du bad om det! Du har det! Den [globala läsaren](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) roll!
+- **Global läsare roll** - Du bad om det! Du har det! Den [globala läsaren](add-users/about-admin-roles.md) roll!
 
 ### <a name="report-an-issue"></a>Rapportera ett problem
 

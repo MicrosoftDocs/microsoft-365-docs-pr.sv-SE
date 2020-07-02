@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Du kan använda Administrationscenter för att konfigurera din organisation i molnet, hantera användare och prenumerationer. Kom igång genom att logga in på kontot som har administratörsbehörighet.
-ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780559"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022187"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -89,7 +89,7 @@ Här är funktionerna och inställningarna du hittar i navigeringen till vänste
    
 ## <a name="common-tasks-in-the-admin-center"></a>Vanliga uppgifter i administrationscentret
 
-- Hantera användare: [Lägga till användare individuellt](../add-users/add-users.md), [Ta bort eller återställa användare](../add-users/delete-a-user.md) eller [Återställa en användares lösenord ](../add-users/reset-passwords.md).
+- Hantera användare: [Lägg till användare och tilldela licenser samtidigt,](../add-users/add-users.md)Ta bort eller återställa [användare](../add-users/delete-a-user.md)eller Återställ [en användares lösenord](../add-users/reset-passwords.md).
 
 - Få hjälp med fakturering: [Fakturering](../../commerce/index.yml)
 

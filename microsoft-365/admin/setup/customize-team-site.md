@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: I den här artikeln får du lära dig hur du anpassar, organiserar och hanterar gruppwebbplatsen för fillagring och fildelning.
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779875"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022175"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassa din gruppwebbplats för fillagring och delning
 
@@ -104,7 +104,7 @@ As you manage your team site, you may have to add or remove users. Here's inform
   
 Visa en video om grupper med [Förstå och hantera grupper](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
-Information om hur du lägger till användare i en Microsoft 365-grupp finns [i Lägga till användare individuellt eller i grupp till Microsoft 365 - Hjälp om administratörer](../add-users/add-users.md).
+Om du vill lägga till användare i en Microsoft 365-grupp läser du [Lägga till användare och tilldela licenser samtidigt](../add-users/add-users.md).
   
 Lär dig hur du hanterar åtkomstbegäranden med [Konfigurera och hantera åtkomstbegäranden](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   

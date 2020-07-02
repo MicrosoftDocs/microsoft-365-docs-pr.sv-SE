@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844614"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016349"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Aktivera Microsoft Hotskydd
 
@@ -61,10 +61,12 @@ Om du vill aktivera Microsoft Threat Protection väljer du Aktivera **Microsoft 
 >Om du inte ser **Inställningar** i navigeringsfönstret eller inte kunde komma åt sidan kontrollerar du dina behörigheter och licenser.
 
 ### <a name="data-center-location"></a>Plats för datacenter
-Microsoft Threat Protection lagrar och bearbetar data på [samma plats som används av Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender ATP väljs en ny datacenterplats automatiskt baserat på platsen för aktiva Microsoft 365-säkerhetstjänster. Den valda datacenterplatsen visas på skärmen.
+Microsoft Threat Protection lagrar och bearbetar data på [samma plats som används av Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Om du inte har Microsoft Defender ATP väljs en ny datacenterplats automatiskt baserat på platsen för aktiva Microsoft 365-säkerhetstjänster. Den valda datacenterplatsen visas på skärmen. 
+
+Välj **Behöver du hjälp?** i Microsoft 365-säkerhetscentret för att kontakta Microsoft-supporten om etablering av Microsoft Threat Protection på en annan datacenterplats. 
 
 >[!NOTE]
->Välj **Behöver du hjälp?** i Microsoft 365-säkerhetscentret för att kontakta Microsoft-supporten om microsoft threat protection på en annan datacenterplats. 
+>Microsoft Defender ATP etablerar automatiskt bestämmelser i EU-datacenter när de aktiveras via Azure Security Center. Microsoft Threat Protection etableras automatiskt i samma EU-datacenter för kunder som har etablerat Microsoft Defender ATP på det här sättet. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Bekräfta att tjänsten är aktiverad
 När tjänsten har etablerats läggs den till:

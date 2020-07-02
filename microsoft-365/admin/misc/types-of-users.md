@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Läs mer om olika typer av användare i administrationscentret. '
-ms.openlocfilehash: 4e28715674360dbbed7ef398207e39e45b1fec81
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0b0638ee9fb258cfd84bafdc1c09ab691a1d060
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399224"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022209"
 ---
 # <a name="quick-help-types-of-users"></a>Snabbhjälp: Typer av användare
 
@@ -46,12 +46,12 @@ På sidan **Aktiva användare** i administrationscentret för Microsoft 365 kan 
 |Globala administratörer  <br/> |De här användarna har åtkomst till alla administrativa funktioner. Den person som registrerar sig för Microsoft 365 blir en global administratör men du kan ha mer än en om du vill. Globala administratörer är de enda som kan tilldela andra administratörsroller.  <br/> |
 |Lösenordsadministratörer  <br/> |De här användarna kan återställa lösenord, hantera tjänstförfrågningar och övervaka tjänstens status för din räkning.  <br/> |
 |Tjänstadministratörer  <br/> |De här användarna kan hantera tjänstförfrågningar och övervaka tjänstens status för din räkning.  <br/> |
-|Användarhanteringsadministratörer  <br/> |De här användarna kan återställa lösenord, övervaka tjänstens status och hantera användarkonton, användargrupper och tjänstförfrågningar. Användarhanteringsadministratörer kan inte ta bort en global administratör, skapa andra administratörsroller eller återställa lösenord för faktureringsadministratörer, globala administratörer eller tjänstadministratörer.  <br/> |
-|Lägg till ett anpassat filter  <br/> |Med det här alternativet kan du skapa ett anpassat filter för att bara visa vissa typer av användare med dina önskemål, till exempel vilka användare som finns i Microsoft 365 Apps for Business-planen. [Snabbhjälp: Filtrera användare](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
+|Användarhanteringsadministratörer  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
+|Lägg till ett anpassat filter  <br/> |Med det här alternativet kan du skapa ett anpassat filter för att bara visa vissa typer av användare av dina önskemål, till exempel vilka användare som finns i Microsoft 365 Apps for Business-planen. [Snabbhjälp: Filtrera användare](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Lägga till användare i Microsoft 365](../add-users/add-users.md)
+[Lägga till användare och tilldela licenser samtidigt](../add-users/add-users.md)
     
 [Tilldela licenser till användare i Microsoft 365 för företag](../manage/assign-licenses-to-users.md)
     
