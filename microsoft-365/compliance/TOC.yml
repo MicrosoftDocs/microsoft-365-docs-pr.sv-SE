@@ -159,6 +159,8 @@
       href: office-365-service-encryption.md
     - name: Teknisk referensinformation om kryptering i Office 365
       href: technical-reference-details-about-encryption.md
+    - name: TLS 1.0 och 1.1 fasas ut för Office 365
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
     - name: Customer Key
       items:
         - name: Tjänstkryptering med Kundnyckel i Office 365
@@ -249,10 +251,14 @@
       items:
         - name: Översikt över arkivering av data från tredje part
           href: archiving-third-party-data.md
+        - name: Arkivera Bloomberg-meddelandedata (förhandsversion)
+          href: archive-bloomberg-message-data.md
         - name: Arkivera Facebook-data (förhandsversion)
           href: archive-facebook-data-with-sample-connector.md
         - name: Importera HR-data (förhandsversion)
           href: import-hr-data.md
+        - name: Arkivera ICE-chattdata (förhandsversion)
+          href: archive-icechat-data.md
         - name: Arkivera Instant Bloomberg-data
           href: archive-instant-bloomberg-data.md
         - name: Arkivera LinkedIn-data
