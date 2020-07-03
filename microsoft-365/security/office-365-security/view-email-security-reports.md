@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Läs om hur du hittar och använder säkerhetsrapporter för e-post för din organisation. Säkerhetsrapporter för e-post finns i Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 226f147dec7795ce6f8314a04218eab84e609218
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937079"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035829"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -32,6 +32,9 @@ En mängd olika rapporter finns i [Security & Compliance Center](https://protect
 ![Rapporter instrumentpanel i Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>Rapport över komprometterade användare
+
+> [!NOTE]
+> Den här rapporten är tillgänglig i Microsoft 365-organisationer med Exchange Online-postlådor. Den är inte tillgänglig i fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
 
 Rapporten **Komprometterade användare** visar antalet användarkonton som har markerats som **misstänkta** eller **begränsade** under de senaste 7 dagarna. Konton i någon av dessa stater är problematiska eller till och med komprometterade. Med frekvent användning kan du använda rapporten för att upptäcka toppar och till och med trender i misstänkta eller begränsade konton. Mer information om komprometterade användare finns i [Svara på ett komprometterat e-postkonto](responding-to-a-compromised-email-account.md).
 
@@ -176,7 +179,7 @@ Den sammanlagda vyn tillåter 90 dagars filtrering, medan informationstabellen t
 
 Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://protection.office.com)går till **Instrumentpanelen för rapporter** och väljer \> **Dashboard** **Skräppostidentifieringar**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=SpamDetections> .
 
-![Widgeten Skräppostidentifieringar i instrumentpanelen Rapporter](../../media/spam-detections-widget.png)
+![Widgeten Skräppostidentifieringar i instrumentpanelen Rapporter](../../media/spam-detections-report-widget.png)
 
 Mer information om skydd mot skräppost finns [i Skydd mot skräppost i EOP](anti-spam-protection.md).
 
@@ -193,12 +196,14 @@ Följande diagram är tillgängliga i rapportvyn:
 
   När du hovrar över en dag (datapunkt) i diagrammet kan du se hur många objekt som blockerades den dagen och hur dessa objekt kategoriseras.
 
-  ![Åtgärdsvyn i rapportvyn i rapporten Skräppostidentifiering](../../media/spam-detections-report-action-view.png)
+  ![Åtgärdsvyn i rapporten Skräppostidentifiering](../../media/spam-detections-report-action-view.png)
 
 - **Bryt ned efter:Riktning**: Följande anvisningar visas:
 
   - **Inkommande**
   - **Utgående**
+
+  ![Riktningsvyn i rapporten Skräppostidentifiering](../../media/spam-detections-report-direction-view.png)
 
 Om du klickar på **Filter** i en rapportvy kan du ändra resultaten med följande filter:
 
@@ -266,7 +271,7 @@ Det här är en smart rapport som visar skadlig e-post som har identifierats och
 
 Om du vill visa rapporten öppnar du [Security & Compliance Center](https://protection.office.com), går till **Instrumentpanelen för rapporter** och väljer Status för skydd mot \> **Dashboard** **hot**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
 
-![Statusrapport för hotskydd](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![Statuswidget för hotskydd i instrumentpanelen Rapporter](../../media/threat-protection-status-report-widget.png)
 
 Som standard visar diagrammet data för de senaste 7 dagarna. Om du klickar på **Filter**kan du välja ett datumintervall på 90 dagar (utvärderingsprenumerationer kan vara begränsade till 30 dagar). I detaljtabellvyn kan filtrering filtreras i 30 dagar.
 
@@ -280,45 +285,55 @@ Följande vyer är tillgängliga:
   - **E-post phish**
   - **Skadlig kod för innehåll**
 
-- **Visa data efter: Innehåll \> Skadlig kod:** Följande information visas:
+  ![Översiktsvy i statusrapporten för hotskydd](../../media/threat-protection-status-report-overview-view.png)
+
+- **Visa data efter: Innehåll \> Skadlig kod**<sup>1</sup>: Följande information visas för Office 365 ATP-organisationer:
 
   - **Anti-malware motor**
   - **Fildetonation**
 
+  ![Vyn Innehålls skadlig kod i statusrapporten för hotskydd](../../media/threat-protection-status-report-content-malware-view.png)
+
 - **Bryt ner av: Detektionsteknik** och **Visa data efter: E-post \> Phish:** Följande information visas:
 
-  - **ATP-genererat URL-rykte**<sup>\*</sup>
-  - **Avancerat phish-filter**<sup>\*</sup>
+  - **ATP-genererat URL-rykte**<sup>1</sup>
+  - **Avancerat phish-filter**
   - **Anti-parodi: DMARC misslyckande**
   - **Anti-parodi: Intra-org**
   - **Anti-parodi: extern domän**
-  - **Varumärke personifiering**<sup>\*</sup>
-  - **Personifiering av domän**<sup>\*</sup>
+  - **Varumärke personifiering**
+  - **Domänpersonifiering**<sup>1</sup>
   - **EOP URL rykte**
   - **Allmänt phish-filter**
   - **Andra**
-  - **Phish ZAP**<sup>\*\*</sup>
-  - **URL detonation**<sup>\*\*</sup>
-  - **Personifiering av användare**<sup>\*</sup>
+  - **Phish ZAP**<sup>2</sup>
+  - **URL detonation**<sup>1</sup>
+  - **Användarens personifiering**<sup>1</sup>
+
+  ![Identifieringsteknikvyn för nätfiskemeddelande i statusrapporten för hotskydd](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **Bryt ner av: Detektionsteknik** och **Visa data efter: E Malware: \> **Följande information visas:
 
-  - **ATP-genererat filrykte**<sup>\*\*</sup>
-  - **Anti-malware motor**
+  - **ATP-genererat filrykte**<sup>1</sup>
+  - **Anti-malware motor**<sup>1</sup>
   - **Filtypsblock för skadlig kod**
-  - **Fildetonation**<sup>\*\*</sup>
+  - **Fil detonation**<sup>1</sup>
   - **Rykte om skadliga filer**
-  - **Malware ZAP****<sup>\*\*</sup>
+  - **Malware ZAP**<sup>2</sup>
   - **Andra**
+
+  ![Identifieringsteknikvy för skadlig kod i statusrapporten för hotskydd](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 - **Bryt ned efter: Principtyp** och **Visa data efter: E-post \> Phish** eller **Visa data efter: E Malware: \> **Följande information visas:
 
-  - **Anti-malware**<sup>\*\*</sup>
-  - **Säker fastsättning**<sup>\*\*</sup>
+  - **Anti-malware**
+  - **Säker fastsättning**<sup>1</sup>
   - **Anti-phish (anti-phish)**
   - **Anti-spam**
   - **Regel för e-postflöde** (kallas även transportregel)
   - **Andra**
+
+  ![Principtypsvy för nätfiskemeddelande i statusrapporten För hotskydd](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 - **Bryt ner efter: Leveransstatus** och **Visa data efter: E-post \> Phish** eller **Visa data av: E Malware: \> **Följande information visas:
 
@@ -332,9 +347,11 @@ Följande vyer är tillgängliga:
   - **Lokal server: Levererad**
   - **Karantän**
 
-<sup>\*</sup>Endast Office 365 ATP
+  ![Leveransstatusvy för nätfiskemeddelande i statusrapporten för hotskydd](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>\*\*</sup>Zero-hour auto purge (ZAP) är inte tillgängligt i fristående EOP (det fungerar bara i Exchange Online-postlådor).
+<sup>Endast 1</sup> Office 365 ATP
+
+<sup>2</sup> Zero-hour auto purge (ZAP) är inte tillgängligt i fristående EOP (det fungerar bara i Exchange Online-postlådor).
 
 Om du klickar på **Filter**kan du ändra rapporten med följande filter:
 
@@ -348,10 +365,10 @@ Om du klickar på **Visa informationstabell**beror informationen som visas på v
 
 - **Visa data efter: Innehåll \> Skadlig kod:**
 
-- **Datum**
-- **Plats**
-- **Regisserad av**
-- **Namn på skadlig kod**
+  - **Datum**
+  - **Plats**
+  - **Regisserad av**
+  - **Namn på skadlig kod**
 
 - **Visa data efter: Översikt**: **Knappen Ingen visa information tabell** är tillgänglig.
 
@@ -361,7 +378,7 @@ Om du klickar på **Visa informationstabell**beror informationen som visas på v
   - **Ämne**
   - **Avsändare**
   - **Mottagare**
-  - **Regisserad av**
+  - **Detekteras av**
   - **Leveransstatus**
   - **Källa till kompromisser**
 
@@ -373,33 +390,31 @@ Om du klickar på **Filter**kan du ändra rapporten med följande filter:
 
 ## <a name="top-malware-report"></a>Topprapport för skadlig kod
 
-**Top Malware** rapporten visar olika typer av skadlig kod som upptäcktes av [EOP](eop-features.md).
+Top **malware** rapporten visar de olika typer av skadlig kod som upptäcktes av [anti-malware skydd i EOP](anti-malware-protection.md).
 
-Om du vill visa rapporten öppnar du [Security & Compliance Center](https://protection.office.com), går till **Instrumentpanelen för rapporter** och väljer Topp skadlig \> **Dashboard** **kod**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=TopMalwaret> .
+Om du vill visa rapporten öppnar du [Security & Compliance Center](https://protection.office.com), går till **Instrumentpanelen för rapporter** och väljer Topp skadlig \> **Dashboard** **kod**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=TopMalware> .
 
-![SCC - EOP Top Malware](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![Widgeten Bästa skadlig kod på instrumentpanelen Rapporter](../../media/top-malware-report-widget.png)
 
 När du hovrar över en kil i cirkeldiagrammet kan du se namnet på en typ av skadlig kod och hur många meddelanden som har upptäckts ha den skadliga koden.
 
-Klicka (eller tryck) på rapporten för att öppna den i ett nytt webbläsarfönster, där du kan få en mer detaljerad vy av rapporten.
+![Rapportvyn för skadlig kod](../../media/top-malware-report-view.png)
 
-![Den här rapporten visar den översta skadliga koden som har identifierats för din organisation](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+Om du klickar på **Visa informationstabell**kan du se följande information:
 
-Under diagrammet visas en lista över upptäckt skadlig kod och hur många meddelanden som har upptäckts som att ha den skadliga koden. Observera att den sammanlagda vyn endast tillåter filtrering i 90 dagar.
+- **Bästa malware**
+- **Räkna**
+
+Om du klickar på **Filter** i rapportvyn eller detaljtabellvyn kan du ange ett datumintervall med **Startdatum** och **Slutdatum**.
 
 ## <a name="url-threat-protection-report"></a>Rapport om skydd av URL-hot
 
-Widgeten för den här rapporten heter **URL-skyddsrapport** på instrumentpanelen för rapporter och är endast tillgänglig i Office 365 Advanced Threat Protection (ATP). Specifikt:
-
-- En Microsoft 365 E5-prenumeration.
-- Ett tillägg för avancerat skydd mot hot (Plan 1 *eller* Plan 2) till en annan prenumeration som inkluderar Exchange Online Protection (EOP).
-
-Om du vill gå direkt till rapporten **om skydd mot URL-hot** öppnar du <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
-
 > [!NOTE]
-> Den här rapporten kommer inte att ha klickdata från användare där principen Säkra länkar tillämpas har alternativet **Spåra inte användarens klick** markerat.
+> Den här rapporten är endast tillgänglig i Office 365 Advanced Threat Protection (ATP). Till exempel en Microsoft 365 E5-prenumeration eller ett ATP-plan 1- eller ATP-plan 2-tillägg.
 
-![Bild av URL-hotskyddsrapporten i aktion.](../../media/tp-URLThreatProRpt1.PNG)
+**Rapporten för skydd av URL-hot** innehåller sammanfattnings- och trendvyer för upptäckta hot och åtgärder som vidtas på URL-klick som en del av [ATP Safe Links](atp-safe-links.md). Den här rapporten kommer inte att ha klickdata från användare där principen Säkra länkar tillämpas har alternativet **Spåra inte användarens klick** markerat.
+
+Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://protection.office.com)går till **Instrumentpanelen för rapporter** och väljer \> **Dashboard** **URL-skydd**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>Rapportvy för rapporten om skydd mot URL-hot
 
@@ -417,6 +432,8 @@ Om du vill gå direkt till rapporten **om skydd mot URL-hot** öppnar du <https:
 
   - **Startdatum** och **slutdatum**
   - De tillgängliga klickskyddsåtgärderna, plus värdet **Tillåten** att se information för alla URL-klick (inte bara blockerade klick).
+
+  ![URL-klickskyddsåtgärdsvyn i rapporten för skydd mot URL-hot](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 - **URL-klick för program**: Visar antalet URL-klick för program som stöder säkra länkar i Office 365 ATP:
 

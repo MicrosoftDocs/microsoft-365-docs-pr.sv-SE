@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du visar, skapar, ändrar och tar bort utgående skräppostpolicyer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761724"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024588"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera skräppostfiltrering utanför eu i EOP
 
@@ -79,17 +79,17 @@ Om du vill öka effektiviteten i skräppostfiltrering kan du skapa anpassade pri
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste tilldelas behörigheter innan du kan göra procedurerna i det här avsnittet:
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
 
   - Om du vill lägga till, ändra och ta bort principer för skräppost måste du vara medlem i någon av följande rollgrupper:
 
-    - **Organisationshantering** eller **säkerhetsadministratör** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - För skrivskyddad åtkomst till principer för skräppost från utgående skräppost måste du vara medlem i någon av följande rollgrupper:
 
-    - **Säkerhetsläsaren** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Endast visningsorganisation i** [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Våra rekommenderade inställningar för utgående skräppostpolicyer finns i [EOP:s policyinställningar](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)för skräppostfilter .
 
@@ -118,21 +118,21 @@ Genom att skapa en anpassad utgående skräppostprincip i Security & Compliance 
 
      Så här aktiverar du den här inställningen:
 
-     a. Markera kryssrutan om du vill aktivera inställningen.
+     1. Markera kryssrutan om du vill aktivera inställningen.
 
-     b. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
+     1. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
 
-     c. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
+     1. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
 
-     d. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
+     1. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
 
         Upprepa de här stegen så många gånger det behövs.
 
         Mottagarna som du har lagt till visas i avsnittet **Mottagarlista** på utfällbara. Om du vill ta bort en mottagare klickar du på ![ Knappen Ta bort ](../../media/scc-remove-icon.png) .
 
-     e. Klicka på **Spara** när du är klar.
+     1. Klicka på **Spara** när du är klar.
 
-     Om du vill inaktivera den här inställningen avmarkerar du kryssrutan.
+        Om du vill inaktivera den här inställningen avmarkerar du kryssrutan.
 
    - **Meddela specifika personer om en avsändare blockeras på grund av att skicka skräppost som skickas:**
 
@@ -185,8 +185,20 @@ Genom att skapa en anpassad utgående skräppostprincip i Security & Compliance 
      - **Begränsa användaren från att skicka e-post:** E-postmeddelanden skickas, användaren läggs till i portalen **[Begränsade användare] <https://sip.protection.office.com/restrictedusers> ** i Security & Compliance Center och användaren kan inte skicka e-post förrän de har tagits bort från portalen **Begränsade användare** av en administratör. När en administratör har tagit bort användaren från listan begränsas användaren inte igen för den dagen. Instruktioner finns i [Ta bort en användare från portalen Begränsade användare efter att ha skickat skräppost.](removing-user-from-restricted-users-portal-after-spam.md)
 
      - **Ingen åtgärd, endast avisering:** E-postmeddelanden skickas.
+6. (Valfritt) Expandera avsnittet **Automatisk vidarebefordran** om du vill konfigurera kontroller över hur automatisk vidarebefordran av användare styrs.
 
-6. (Obligatoriskt) Expandera avsnittet **Tillämpat på** för att identifiera de interna avsändare som principen gäller för.
+   > [!NOTE]
+   > Dessa inställningar gäller endast för molnbaserade postlådor.
+   
+   - **Automatisk vidarebefordran**
+  
+      Välj ett av alternativen för att styra hur automatisk vidarebefordring hanteras.
+    
+      - **Automatisk:** Standardinställning som gör att systemet kan styra automatisk vidarebefordran med automatisk vidarebefordran inaktiverad som standard.
+      - **På**: Extern vidarebefordran aktiveras inom principen utan begränsning.
+      - **Av**: Extern vidarebefordran är inaktiverad och kommer att blockeras
+
+7. (Obligatoriskt) Expandera avsnittet **Tillämpat på** för att identifiera de interna avsändare som principen gäller för.
 
     Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<sender1\>_ eller _\<sender2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<sender1\>_ och _\<member of group 1\>_).
 
@@ -200,7 +212,7 @@ Genom att skapa en anpassad utgående skräppostprincip i Security & Compliance 
 
     - **Förutom om**: Om du vill lägga till undantag för regeln klickar du på **Lägg till ett villkor** tre gånger, så visas alla tillgängliga undantag. Inställningarna och beteendet är likadana som villkoren.
 
-7. Klicka på **Spara** när du är klar.
+8. Klicka på **Spara** när du är klar.
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>Använda Security & Compliance Center för att visa principer för skräppost från utgående
 
@@ -404,7 +416,8 @@ Detaljerad syntax- och parameterinformation finns i [Hämta värddredOutboundSpa
 
 Samma inställningar är tillgängliga när du ändrar en policy för skadlig kodfilter i PowerShell som när du skapar principen enligt beskrivningen i [steg 1: Använd PowerShell för att skapa ett utgående skräppostfilterprincipavsnitt](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) tidigare i det här avsnittet.
 
-**Du**kan inte byta namn på en utgående skräppostfilterprincip (cmdleten **Set-HostedOutboundSpamFilterPolicy** har ingen _namnparameter)._ När du byter namn på en utgående skräppostprincip i Security & Compliance Center byter du bara namn på _regeln för_skräppostfilter.
+> [!NOTE]
+> Du kan inte byta namn på en utgående skräppostfilterprincip (cmdleten **Set-HostedOutboundSpamFilterPolicy** har ingen _namnparameter)._ När du byter namn på en utgående skräppostprincip i Security & Compliance Center byter du bara namn på _regeln för_skräppostfilter.
 
 Om du vill ändra en utgående skräppostfilterprincip använder du den här syntaxen:
 
@@ -468,11 +481,11 @@ I det här exemplet anges prioriteten för regeln med namnet Marketing Departmen
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Anmärkningar**:
-
-- Om du vill ange prioritet för en ny regel när du skapar den använder du parametern _Prioritet_ på cmdleten **New-HostedOutboundSpamFilterRule** i stället.
-
-- Principen för det utgående standardfiltfilteret har ingen motsvarande skräppostfilterregel och har alltid det omodifierbara prioritetsvärdet **Lägsta**.
+> [!NOTE]
+> 
+> - Om du vill ange prioritet för en ny regel när du skapar den använder du parametern _Prioritet_ på cmdleten **New-HostedOutboundSpamFilterRule** i stället.
+>
+> - Principen för det utgående standardfiltfilteret har ingen motsvarande skräppostfilterregel och har alltid det omodifierbara prioritetsvärdet **Lägsta**.
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>Använda PowerShell för att ta bort principer för skräppost från skräppost
 
@@ -517,3 +530,5 @@ Detaljerad syntax- och parameterinformation finns i [Ta bort värdbaseradeOutbou
 [Pool med hög riskleverans för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Vanliga frågor om skydd mot skräppost](anti-spam-protection-faq.md)
+
+[Rapporten Automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md)
