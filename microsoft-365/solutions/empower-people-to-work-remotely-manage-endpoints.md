@@ -1,5 +1,5 @@
 ---
-title: Steg 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
+title: Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 64f9aad04dd562e570d81c3c2993c2641354b95a
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560499"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844972"
 ---
-# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 3. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
 
 Med distansarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
 
@@ -34,33 +34,50 @@ Microsoft Endpoint Manager tillhandhåller tjänster och verktyg för hantering 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune har utformats för att hjälpa dig att skydda data när du inte hanterar enheter som används för att få åtkomst till organisationens data. Skyddsprinciper för Intune-appar kombinerat med villkorlig åtkomst i Azure Active Directory (Azure AD) ger detaljerad kontroll över data på mobila enheter. Intune gör det också möjligt att definiera fullständiga principer som gör att bara rätt personer har tillgång till dina företagsdata och säkerställa att data förblir skyddade genom att kontrollera hur de använder dem i Office, Outlook och andra mobilappar.
+Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobila enheter (MDM) och hantering av mobila program (MAM) som ingår i Microsoft 365. 
+
+- **MDM:** för enheter som ägs av organisationen kan du utnyttja fullständig kontroll, t. ex. inställningar, funktioner och säkerhet. Enheter "registreras" i Intune där de får Intune-principer med regler och inställningar. Du kan till exempel ange krav på lösenord och PIN-kod, skapa en VPN-anslutning, konfigurera skydd med hot och mycket mer.
+
+- **MAM:** distansmedarbetare kanske inte vill att du ska ha fullständig kontroll över deras personliga enheter, även kallat bring-your-own device (BYOD). Du kan erbjuda dina distansmedarbetare alternativ och fortfarande skydda din organisation. Distansmedarbetare kan till exempel registrera sina enheter om de vill ha full tillgång till organisationens resurser. Om de här användarna bara vill ha tillgång till e-post eller Microsoft Teams kan du använda skyddsprinciper för appar som kräver multifaktorautentisering (MFA) för att använda de här apparna.
 
 Mer information finns i det här [översikt över Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager är en lokal hanteringslösning för hantering av stationära datorer, servrar och bärbara datorer som finns på nätverket eller är internet-baserade. Du kan moln-aktivera den för att integrera med Intune, Azure Active Directory, Microsoft Defender Avancerat skydd och andra molntjänster. Använd Configuration Manager för att distribuera appar, programvaruuppdateringar och operativ system. Du kan också övervaka efterlevnad, läsa och åtgärda klienter i realtid och mycket mer.
+Configuration Manager är en lokal hanteringslösning för hantering av stationära datorer, servrar och bärbara datorer som finns på nätverket eller är internet-baserade. Använd Configuration Manager för att distribuera appar, programvaruuppdateringar och operativ system. Du kan också övervaka efterlevnad, läsa och åtgärda klienter i realtid och mycket mer. Du kan moln-aktivera den för att integrera med Intune, Azure Active Directory, Microsoft Defender Avancerat skydd och andra molntjänster. 
 
 Mer information finns i den här [översikt över Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Samhantering
 
-Med hjälp av samhantering slås din befintliga lokala investeringar i Configuration Manager med molnet med hjälp av Intune och andra Microsoft 365-molntjänster. Du kan välja om Configuration Manager eller Intune ska vara hanteringsauktoritet för sju olika arbetsbelastningsgrupper.
+Med hjälp av samhantering slås din befintliga lokala investeringar i Configuration Manager med molnet med hjälp av Intune och andra Microsoft 365-molntjänster. Du kan välja om Configuration Manager eller Intune ska vara hanteringsauktoritet för olika arbetsbelastning. 
 
-Som en del av Endpoint Manager använder samhantering molnfunktioner, inklusive villkorsstyrd åtkomst. Du har kvar några uppgifter lokalt medan du kör andra uppgifter i molnet med Intune.
+I Co-Management används Intune-baserade molnfunktioner, t. ex. villkorlig åtkomst och framtvingande av enhetskompatibilitet. Du har kvar några uppgifter lokalt medan du kör andra uppgifter i molnet.
 
 Mer information finns i den här [översikt över samhantering](https://docs.microsoft.com/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
-Desktop Analytics är en molnbaserad tjänst som integreras med Configuration Manager och ger dig insyn och intelligens så att du kan fatta välgrundade beslut om dina Windows-klienter. Den kombinerar data från din organisation med data aggregerade från miljontals enheter som är anslutna till Microsofts molntjänster. Med Desktop Analytics kan du skapa en inventering av appar som körs i din organisation, utvärdera programkompatibilitet med de senaste funktionerna i Windows 10, identifiera kompatibilitetsproblem och få förslag på problem beroende på molnbaserade datainsikter, skapa pilotgrupper som representerar hela programmet och din enhets plats i en minimal uppsättning enheter och distribuera Windows 10 till pilotprojekt och produktionshanterade enheter.
+Desktop Analytics är en molnbaserad tjänst som integreras med Configuration Manager och ger dig insyn och intelligens så att du kan fatta välgrundade beslut om dina Windows-klienter. Den kombinerar data från din organisation med data aggregerade från miljontals enheter som är anslutna till Microsofts molntjänster. 
+
+Med Desktop Analytics kan du:
+
+- Skapa en inventering av appar som körs i din organisation.
+- Utvärdera apparnas kompatibilitet med de senaste funktionsuppdateringarna för Windows 10.
+- Identifiera kompatibilitetsproblem och få förslag på problem med hjälp av molnbaserade datainsikter.
+- Skapa pilotgrupper som representerar hela programmet och fastigheten i en minimal uppsättning enheter.
+- Distribuera Windows 10 till pilotprojekt och Production Managed-enheter.
 
 Mer information finns i den här [översikt över Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot är en plattform för Windows-driftsättning med låg vikt. Den innehåller en samling tekniker som används för att konfigurera och förinstallera nya enheter och för att förbereda för effektiv användning. Du kan också använda Windows Autopilot för att återställa, återanvända enheter. Med den här lösningen kan IT-avdelningen uppnå ovanstående med liten till ingen infrastruktur för hantering, med en process som är enkel och lätt. Från användarens perspektiv är det bara några få enkla åtgärder för att göra deras enhet redo för användning. Från IT-proffsens perspektiv är den enda interaktion som krävs för slutanvändarna att ansluta till ett nätverk och för att verifiera deras autentiseringsuppgifter.
+Windows Autopilot är en plattform för Windows-driftsättning med låg vikt. Den innehåller en samling tekniker som används för att konfigurera och förinstallera nya enheter och för att förbereda för effektiv användning. Du kan också använda Windows Autopilot för att återställa, återanvända enheter. 
+
+Windows Autopilot låter IT-avdelningen förkonfigurera enheter med liten till ingen infrastruktur för hantering, med en process som är enkel och lätt. 
+
+- Från användarens perspektiv är det bara några få enkla åtgärder för att göra deras enhet redo för användning. 
+- Från IT-proffsens perspektiv är den enda interaktion som krävs för slutanvändarna att ansluta till ett nätverk och för att verifiera deras autentiseringsuppgifter.
 
 Mer information finns i den här [översikt över Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
 
@@ -78,4 +95,4 @@ Du använder paketet med Endpoint Manager-funktioner och -förmågor för att ha
 
 ## <a name="next-step"></a>Nästa steg
 
-Fortsätt med [Steg 4](empower-people-to-work-remotely-teams-productivity-apps.md) om du vill tillhandahålla fjärråtkomst till lokala appar och tjänster.
+Fortsätt med [Steg 5](empower-people-to-work-remotely-teams-productivity-apps.md) för att få dina distansmedarbetare att använda Microsoft 365 produktivitetsappar som Microsoft Teams.

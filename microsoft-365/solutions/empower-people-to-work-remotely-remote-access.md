@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Kontrollera att dina distansarbetare kan komma åt lokala resurser samtidigt som du optimerar åtkomst till Microsoft 365-molntjänster.
-ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160756"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844984"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
 
@@ -70,7 +70,11 @@ Här är komponenterna i Azure Active Directory Application Proxy.
 
 ![Komponenter i Azure Active Directory Application Proxy](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Mer information finns i den här [översikt över Azure Active Directory Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Mer information finns i den här [översikt över Azure Active Directory Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) och [del 3-videon om att använda Azure AD Application Proxy](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
+
+>[!Note]
+>Azure Active Directory Application Proxy ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
+>
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Distribuera fjärråtkomst när alla appar inte är webbprogram
 
@@ -82,13 +86,32 @@ En P2S VPN-anslutning skapar en säker anslutning från en distansarbetares enhe
 
 Mer information finns i denna [översikt över P2S VPN](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about).
 
+>[!Note]
+>Azure P2S VPN ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
+>
+
 ## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Distribuera Windows Virtual Desktop för att tillhandahålla fjärråtkomst för distansarbetare som använder personliga enheter 
 
-Om du vill stödja distansarbetare som endast kan använda sina personliga och ohanterade enheter kan du använda Windows Virtual Desktop i Azure och skapa och allokera virtuella skrivbord för användarna att använda hemifrån.
+Om du vill stödja distansarbetare som endast kan använda sina personliga och ohanterade enheter kan du använda Windows Virtual Desktop i Azure och skapa och allokera virtuella skrivbord för användarna att använda hemifrån. Virtualiserade datorer kan agera precis som datorer som är anslutna till din organisations nätverk.
 
-Virtualiserade datorer kan agera precis som datorer som är anslutna till din organisations nätverk.
+![Komponenter i Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Mer information finns i [den här översikten över Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
+Mer information finns i: 
+
+- [Den här översikten över Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- [Del 2 video om hur du använder Windows Virtual Desktop för distansmedarbetare](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+
+>[!Note]
+>Windows Virtual Desktop ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
+>
+
+## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Skydda dina anslutningar för fjärrskrivbordstjänster med gateway för fjärrskrivbordstjänster
+
+Om du använder fjärrskrivbordstjänster (RDS) för att låta dina medarbetare ansluta till Windows-datorer i det lokala nätverket bör du använda en Microsoft Fjärrskrivbordtjänster-gateway i Edge-nätverket. I gateway används SSL (Secure Sockets Layer) för att kryptera kommunikation och förhindra att det system som är värd för kommunikationen direkt exponeras mot internet.
+
+![Anslutningar för fjärrskrivbordstjänster med gateway för fjärrskrivbordstjänster](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+
+Mer information finns i [den här artikeln](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/).
 
 ## <a name="admin-technical-resources-for-remote-access"></a>Tekniska administrationsresurser för fjärråtkomst
 
@@ -105,8 +128,9 @@ Efter distribution av en lösning för fjärråtkomst för dina distansarbetare:
 | Ingen VPN-lösning för fjärråtkomst och du behöver endast fjärråtkomst till lokala webbaserade appar | Du har konfigurerat Azure Application Proxy. |
 | Ingen VPN-lösning för fjärråtkomst och du behöver åtkomst till lokala appar, vissa som inte är webbaserade | Du har konfigurerat Azure P2S VPN. |
 | Distansarbetare använder sina personliga enheter från hemmet | Du har konfigurerat Windows Virtual Desktop. |
+| Distansmedarbetare använder RDS-anslutningar i lokala system | Du har distribuerat en gateway för fjärrskrivbordstjänster i Edge-nätverket. |
 |||
 
 ## <a name="next-step"></a>Nästa steg
 
-Fortsätt med [Steg 3](empower-people-to-work-remotely-manage-endpoints.md) för att hantera enheter, datorer och andra slutpunkter.
+Fortsätt med [Steg 3](empower-people-to-work-remotely-security-compliance.md) om du vill distribuera Microsoft 365 säkerhets och efterlevnadstjänster för att skydda appar, data och enheter.
