@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: En fiktiv men representativ global organisation har distribuerat Microsoft 365-lösningar.
-ms.openlocfilehash: 7d99a936bcfaddb2032b5f077ea95034e275182a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: dc9fcf667b31af0ab3db9006f545b1f33e091639
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159497"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854288"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-lösningar för Contoso Corporation
 
@@ -31,4 +31,9 @@ Det övergripande målet för Contoso när det gäller Microsoft 365 Enterprise 
 
 Läs mer om [Contoso Corporation](../enterprise/contoso-overview.md), deras internationella kontor och de designöverväganden de gjorde när de distribuerade Microsoft 365 Enterprise.
 
-Läs sedan [den här artikeln](contoso-team-for-top-secret-project.md) och se hur Contoso upprättade ett isolerat team för ett hemligt projekt.
+Härnäst ska vi se hur Contoso använde Microsoft 365 för dessa lösningar och scenarier:
+
+- [Ett isolerat team för ett topphemligt projekt](contoso-team-for-top-secret-project.md)
+
+- [Migrering av deras lokala användare till Teams för enhetlig kommunikation, samarbete och röst](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+

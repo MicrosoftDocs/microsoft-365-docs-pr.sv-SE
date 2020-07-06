@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Hur en fiktiv men representativ global organisation använder Microsoft 365 Enterprise.
-ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268428"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854264"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise för Contoso Corporation
 
@@ -71,6 +71,10 @@ Mer information finns i följande artiklar:
 - [Team för ett topphemligt projekt](../solutions/contoso-team-for-top-secret-project.md)
 
   För att skapa en säker samarbetsmiljö för ett topphemligt projekt upprättade Contoso ett team med säkerhetsisolering.
+
+- [Översikt av röstmigrering för Teams](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+
+  Lär dig hur Contoso migrerar sina lokala användare till Teams för enhetlig kommunikation, samarbete och röst.
 
 ## <a name="next-step"></a>Nästa steg
 

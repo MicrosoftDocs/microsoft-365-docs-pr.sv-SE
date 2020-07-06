@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du förbereder för underhåll av Windows och Office i din miljö.
-ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e9de339c6bc66e5cd3c02af5f6a53c32b7573b1f
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222679"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679008"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Steg 7: Underhåll av Windows och Office
 
@@ -45,7 +45,7 @@ Både Windows 10 och Microsoft 365-applikationer för företag inför nya underh
 
 ## <a name="update-types"></a>Uppdateringstyper
 
-Uppdateringarna är indelade i två huvudkategorier. Den ena kategorin är funktionsuppdateringar och den andra är kvalitets- och säkerhetsuppdateringar som innehåller kumulativa säkerhets-, tillförlitlighets- och felkorrigeringar. Både Windows och Office har en halvårskanal som levererar nya funktioner två gånger per år (kring mars och september), medan kvalitets- och säkerhetsuppdateringarna släpps varje månad. Något som är unikt för Office 365-program är att vi även erbjuder en månadskanal med fullständigt stöd där uppdateringarna innehåller både nya funktioner och kvalitetsuppdateringar.
+Uppdateringarna är indelade i två huvudkategorier. Den ena kategorin är funktionsuppdateringar och den andra är kvalitets- och säkerhetsuppdateringar som innehåller kumulativa säkerhets-, tillförlitlighets- och felkorrigeringar. Både Windows och Office har en halvårskanal som levererar nya funktioner två gånger per år (kring mars och september), medan kvalitets- och säkerhetsuppdateringarna släpps varje månad. Något som är unikt för Office 365-program är att vi även erbjuder aktuell kanal med fullständigt stöd där uppdateringarna innehåller både nya funktioner och kvalitetsuppdateringar.
 
 Om du är van vid längre cykler mellan uppdateringar av operativsystem och appar kanske du har följande funderingar:
 
@@ -75,7 +75,7 @@ Med den kumulativa modellen behövs bara en uppdatering för att hålla dig uppd
 
 En annan fördel är att vi kan börja med att släppa versioner till små användargrupper via Insider-program för [Office](https://products.office.com/office-insider?tab=Windows-Desktop) och [Windows](https://insider.windows.com/), vilket ger oss möjlighet att samla in diagnostikdata och feedback innan vi släpper uppdateringarna till alla användare. Nu är Insider-programmen öppna för alla så att du kan utforska nya funktioner i förväg. När det är dags att göra uppdateringarna allmänt tillgängliga har vi fått diagnostikdata från miljontals konfigurationer, vilket innebär att uppdateringarna får bättre kvalitet och stabilitet.
 
-Och eftersom Insider-versionerna av Microsoft 365-applikationer för företag återspeglar uppdateringarna i månadskanalen kan du verifiera dessa versioner tidigt och använda versionerna i halvårskanalen, om du använder halvårskanalen för Office för att leverera funktionsuppdateringar två gånger per år som för Windows.
+Och eftersom Insider-versionerna av Microsoft 365-applikationer för företag återspeglar uppdateringarna i månadskanalen kan du verifiera dessa versioner tidigt och använda versionerna i halvårskanalen, om du använder halvårskanalen (förhandsvisning) för Office för att leverera funktionsuppdateringar två gånger per år som för Windows.
 
 ### <a name="supporting-management-tools"></a>Hanteringsverktyg
 
@@ -96,9 +96,9 @@ Windows 10 har tre underhållskanaler:
 Microsoft 365 har fyra underhållskanaler:
 
 - [**Office Insider Program**](https://products.office.com/office-insider) för organisationer som vill testa och ge feedback om de nyaste funktionerna i Office som fortfarande är under utveckling
-- **Månatliga kanaler** för att ge användarna de senaste Office-funktionerna så snart de blir tillgängliga
-- **Halvårskanalen** tillhandahåller ny funktionalitet med nya funktioner två gånger per år
-- **Halvårskanalen (riktad)** är en version av Office med fullständigt stöd som gör det möjligt för pilotanvändare och programkompatibilitstestare att testa och verifiera nästa halvårskanal
+- **Aktuella kanaler** för att ge användarna de senaste Office-funktionerna så snart de blir tillgängliga
+- **Halvårsföretagskanalen** tillhandahåller ny funktionalitet med nya funktioner två gånger per år
+- **Halvårsföretagskanalen (förhandsvisning)** är en version av Office med fullständigt stöd som gör det möjligt för pilotanvändare och programkompatibilitstestare att testa och verifiera nästa halvårsföretagskanal
 
 Detaljerad information om underhållskanalerna för Windows och Office finns i dokumentationen nedan:
 
@@ -141,7 +141,7 @@ När det gäller verktyg kan du använda principinställningarna med Windows Upd
 
 [Windows halvårskanal](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Halvårskanal för Microsoft 365-applikationer](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
+[Halvårsföretagskanal för Microsoft 365-applikationer](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Aktivitetssekvenser för uppgradering
 

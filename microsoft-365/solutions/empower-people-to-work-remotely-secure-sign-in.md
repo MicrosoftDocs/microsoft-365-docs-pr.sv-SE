@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560417"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844966"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
 
@@ -95,6 +95,10 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 ## <a name="let-your-users-reset-their-own-passwords"></a>Tillåt användarna att återställa sina egna lösenord
 
 Med självbetjäning för återställning av lösenord (SSPR) kan användarna återställa sina egna lösenord utan att det påverkar IT-personal. Användarna kan snabbt återställa lösenorden när som helst och från vilken plats som helst. Titta på [den här video](https://go.microsoft.com/fwlink/?linkid=2128524) för att konfigurera SSPR.
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Logga in i SaaS-appar med Azure AD
+
+Förutom att tillhandahålla molnverifiering för användare kan även Azure AD vara ditt primära sätt att skydda alla dina appar, oavsett om de är lokala, i Microsofts moln eller i ett annat moln. Genom att [integrera apparna i Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration) kan du göra det enkelt för distansarbetare att upptäcka vilka program de behöver och att logga in på dem på ett säkert sätt.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Tekniska resurser för administratörer om MFA och identitet
 

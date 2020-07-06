@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Sammanfattning: Konfigurera federerad autentisering för Microsoft 365-testmiljön.'
-ms.openlocfilehash: b0aa967570c3d12554cdb273a8b39b8931af1fbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: efe2e196b95feff2aab1577f8e5d3ee29b5e39ba
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634104"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385061"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Federerade identiteter i testmiljön för Microsoft 365
 
@@ -166,7 +166,7 @@ Visa den offentliga IP-adressen för PROXY1 med följande Azure PowerShell-komma
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-Tillsammans med din offentliga DNS-leverantör kan du sedan skapa en ny offentlig DNS-post för **fs.testlab.**\<ditt DNS-domännamn > som matchas mot IP-adressen som visas med kommandot **Write-Host**. **fs.testlab.**\<ditt DNS-domännamn > kallas i fortsättningen för *federationstjänstens FQDN*.
+Arbeta sedan med din offentliga DNS-leverantör och skapa en ny offentlig DNS A-post för **fs.testlab.**\<your DNS domain name> det löser att IP-adressen visas av kommandot **Write-Host**. **fs.testlab.**\<your DNS domain name> kallas i fortsättningen för *federationstjänstens FQDN*.
   
 Använd sedan [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella DC1-datorn med hjälp av CORP\\User1-autentiseringsuppgifter och kör följande kommandon i en Windows PowerShell-kommandotolk på administratörsnivå:
   
@@ -278,7 +278,7 @@ Konfigurera sedan AD FS-tjänsten med följande steg:
     
 I [Azure-portalen](https://portal.azure.com) kan du ansluta till PROXY1 med autentiseringsuppgifterna för CORP\\User1-kontot.
   
-Följ sedan de här anvisningarna för att installera det självsignerade certifikatet och konfigurera PROXY1.
+Följ sedan de här anvisningarna för att installera det självsignerade certifikatet på **både PROXY1 och APP1**.
   
 1. Klicka på **Start**, skriv **mmc.exe** och tryck på **Retur**.
     
@@ -387,13 +387,13 @@ Visa att den federerade autentiseringen fungerar:
   
 1. Öppna en ny privat instans av webbläsaren på din lokala dator och gå till [https://admin.microsoft.com](https://admin.microsoft.com).
     
-2. Som autentiseringsuppgifter skriver du **user1@**\<den domän som skapades i fas 1>. 
+2. För inloggningsuppgifterna skriver du **user1@**\<the domain created in Phase 1>. 
     
     Om din testdomän exempelvis är **testlab.contoso.com**skriver du ”user1@testlab.contoso.com”. Tryck på TABB-tangenten eller tillåt att Microsoft 365 omdirigerar dig automatiskt.
     
     Nu bör du se sidan **Din anslutning är inte privat**. Den visas eftersom du har installerat ett självsignerat certifikat på ADFS1 som din stationära dator inte kan verifiera. I en produktionsdistribution av federerad autentisering använder du ett certifikat från en betrodd certifikatutfärdare för att dina användare inte ska se den här sidan.
     
-3. På sidan **Din anslutning inte är privat** klickar du på **Avancerat** och sedan på **Fortsätt till \<ditt FQDN för federationstjänsten>**. 
+3. På sidan **Din anslutning inte är privat** klickar du på **Avancerat** och sedan på **Fortsätt till \<your federation service FQDN>**. 
     
 4. Logga in med följande på sidan med namnet på din fiktiva organisation:
     

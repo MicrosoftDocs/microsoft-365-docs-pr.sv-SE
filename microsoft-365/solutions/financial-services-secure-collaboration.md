@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper finansiella tjänster att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214702"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432433"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -99,7 +99,7 @@ Effektiva metoder som rekommenderas av FINRA omfattar följande:
 * Definiera och kontrollera tillåtna digitala kanaler tydligt. Definiera både godkända och förbjudna digitala kanaler. Blockera eller begränsa användningen av förbjudna digitala kanaler, eller förbjudna funktioner inom digitala kanaler, som begränsar organisationens förmåga att uppfylla arkivhantering och övervakningskrav.
 * Tillhandahålla utbildning för digital kommunikation. Implementera obligatoriska utbildningsprogram innan registrerade ombud får tillgång till godkända digitala kanaler. Med utbildning kan du klargöra en organisations förväntningar för affärer och personlig digital kommunikation, och IT vägleder personalen genom att använda de funktioner som finns i alla kanaler.
 
-FINRAs upptäckter och iakttagelser för digital kommunikation relaterar direkt till organisationens möjlighet att uppfylla [SEC regel 17a–4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) för att bibehålla all nätverksrelaterade kommunikation, FINRA regler [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) och [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) för övervakning och granskning av kommunikation, och regelserie [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) för arkivföring. Commodity Futures Trading Commission (FTC) kungör liknande krav under 17 CFR 131. De här reglerna beskrivs ingående senare i den här artikeln.
+FINRAs upptäckter och iakttagelser för digital kommunikation relaterar direkt till organisationens möjlighet att uppfylla [SEC regel 17a–4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) för att bibehålla all nätverksrelaterade kommunikation, FINRA regler [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) och [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) för övervakning och granskning av kommunikation, och regelserie [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) för arkivföring. Commodity Futures Trading Commission (CFTC) kungör liknande krav under 17 CFR 131. De här reglerna beskrivs ingående senare i den här artikeln.
 
 ***Teams, tillsammans med den omfattande paketet med Microsoft 365-säkerhets- och efterlevnadserbjudanden, erbjuder en digital kommunikationskanal för institutioner för finansiella tjänster för att effektivt bedriva affärer och följa regler.*** Återstoden av den här artikeln beskriver hur Microsoft 365 inbyggda funktioner för arkivhantering, informationsskydd, informationshinder och övervakningskontroll ger Teams en rejäl verktygslåda för att uppfylla dessa lagstadgade skyldigheter.
 
@@ -276,7 +276,7 @@ Informationshinder i Microsoft 365 har stöd för konversationer och filer i Tea
 
 Finansiella institut måste vanligtvis upprätta och underhålla en tillsynsfunktion i sina organisationer för att kontrollera att de anställdas aktiviteter och hjälpa dem att uppnå efterlevnad av tillämpliga värdepapperslagar. FINRA har fastställt dessa övervakningskrav:
  
-* [FINRA regel 3110 (övervakning)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) kräver att företag har skriftliga tillsynsförfaranden (WSPs) för att övervaka anställdas aktiviteter samt vilka typer av verksamheter som företaget bedriver. Förutom andra krav måste procedurerna innehålla:
+* [FINRA regel 3110 (övervakning)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) kräver att företag har skriftliga tillsynsförfaranden (WSP) för att övervaka anställdas aktiviteter samt vilka typer av verksamheter som företaget bedriver. Förutom andra krav måste procedurerna innehålla:
    - Övervakning av tillsynspersonal
    - Översyn av bankens investment banking, värdepappersaffärer, internkommunikation och interna utredningar
    - Översyn av transaktioner för insiderhandel
@@ -284,7 +284,7 @@ Finansiella institut måste vanligtvis upprätta och underhålla en tillsynsfunk
 
    Förfarandena måste beskriva de personer som är ansvariga för granskningar, vilka tillsynsaktiviteter som varje person utför, granska frekvens och vilka typer av dokumentation eller kommunikation som granskas.
  
-* [FINRA relgel 3120 (kontrollsystem för övervakning)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) kräver att företag har ett system med kontrollprinciper och procedurer (SCPs) som validerar deras skriftliga övervakningsförfaranden som definieras av regel 3110. Företag är skyldiga att inte bara ha WSPs utan också att ha principer som testar dessa förfaranden årligen för att verifiera att de kan säkerställa efterlevnaden av tillämpliga lagar och föreskrifter för värdepapper. Riskbaserade metoder och provtagning kan användas för att definiera testningens omfattning. Bland annat kräver den här regeln att företagen tillhandahåller en årsrapport till högsta ledning, som innehåller en sammanfattning av testresultaten och eventuella betydande undantag eller ändrade förfaranden som svar på testresultat.
+* [FINRA relgel 3120 (kontrollsystem för övervakning)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) kräver att företag har ett system med kontrollprinciper och procedurer (SCPs) som validerar deras skriftliga övervakningsförfaranden som definieras av regel 3110. Företag är skyldiga att inte bara ha WSP utan även att ha principer som testar dessa förfaranden årligen för att verifiera att de kan säkerställa efterlevnaden av tillämpliga lagar och föreskrifter för värdepapper. Riskbaserade metoder och provtagning kan användas för att definiera testningens omfattning. Bland annat kräver den här regeln att företagen tillhandahåller en årsrapport till högsta ledning, som innehåller en sammanfattning av testresultaten och eventuella betydande undantag eller ändrade förfaranden som svar på testresultat.
 
 :::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="I en kontorsarbetare tittar på ett diagram och tabeller på en skärm medan andra träffas i bakgrunden.":::
  

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig att utvärdera katalog- och nätverksberedskap i miljön.
-ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 78087b7e0c1cb7031954d3a9ac4188b59879db20
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011657"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679020"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Steg 2: Katalog- och nätverksberedskap
 
@@ -69,7 +69,7 @@ Vid Windows-avbildningar utan anpassning bör du vanligtvis planera för 3 GB pe
 
 Du måste planera nätverksbandbredden vid programuppdateringar. Windows 10 och Microsoft 365-applikationer för företag använder en ny tjänstmodell som levererar månatliga och halvårsvisa uppdateringar. Om du inte har använt den här modellen förut, kan du lära dig mer om hur den fungerar [här](https://docs.microsoft.com/windows/deployment/update/waas-overview).
 
-Den nya tjänstmodellen innehåller funktionsuppdateringar för Windows två gånger om året, uppdateringar av Office halvårskanal och månatliga kvalitetsuppdateringar. Funktionsuppdateringar är vanligtvis 2–4 GB i storlek och uppdateringar av Office halvårskanal är 300–400 MB per uppdatering. Det finns även månatliga kvalitetsuppdateringar. De kan variera från några hundra megabyte till drygt en gigabyte. Det beror på att månatliga uppdateringar är kumulativa, så storleken ökar under tjänstens livstid för varje Windows 10-version. Det finns verktyg som kan hjälpa till att minska mängden data som måste överföras via nätverket när uppdateringar implementeras. Vi kommer att beskriva detta mer detaljerat nedan.
+Den nya tjänstmodellen innehåller funktionsuppdateringar för Windows två gånger om året, uppdateringar av Office företagshalvårskanal och månatliga kvalitetsuppdateringar. Funktionsuppdateringar är vanligtvis 2–4 GB i storlek och uppdateringar av Office företagshalvårskanal är 300–400 MB per uppdatering. Det finns även månatliga kvalitetsuppdateringar. De kan variera från några hundra megabyte till drygt en gigabyte. Det beror på att månatliga uppdateringar är kumulativa, så storleken ökar under tjänstens livstid för varje Windows 10-version. Det finns verktyg som kan hjälpa till att minska mängden data som måste överföras via nätverket när uppdateringar implementeras. Vi kommer att beskriva detta mer detaljerat nedan.
 
 ### <a name="user-personalization"></a>Användaranpassning
 
