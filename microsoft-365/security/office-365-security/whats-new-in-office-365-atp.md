@@ -1,5 +1,5 @@
 ---
-title: Nyheter i Det avancerade hotskyddet i Office 365
+title: Nyheter i det avancerade hotskyddet i Office 365
 description: Lär dig mer om de nya funktionerna som är tillgängliga i den senaste versionen av Microsoft Office 365 ATP.
 keywords: nyheter i Office 365 atp, ga, allmänt tillgängliga, funktioner, tillgängliga, nya
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267173"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039406"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -37,7 +37,7 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 
 ## <a name="marchapril-2020"></a>Mars/april 2020
 
-- Möjligheten att [hantera komprometterade användarkonton med automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) är nu allmänt tillgänglig.
+- Möjligheten att [hantera komprometterade användarkonton med automatiserad undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) är nu allmänt tillgänglig.
 
 ## <a name="januaryfebruary-2020"></a>Januari/februari 2020
 
@@ -60,6 +60,11 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 
 - [Använda kampanjvyer i Office 365 ATP (**förhandsversion)**](campaigns.md)
 
+## <a name="july-2020"></a>Juli 2020 
+ 
+- [Erfarenhet förbättringar av jakt erfarenhet](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## <a name="november-2019"></a>November 2019
 
 - Kolla in nya funktioner för identifiering och svar av [flera komprometterade användare](address-compromised-users-quickly.md) **(förhandsversion)**(Office 365 ATP-abonnemang 2)
@@ -74,7 +79,7 @@ I den här artikeln visas nya funktioner i den senaste versionen av Office 365 A
 
 ## <a name="august-2019"></a>Augusti 2019
 
-- [Visa tidslinjen för e-post](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP Plan 1 eller Plan 2)
+- [Visa tidslinjen för e-post](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP-abonnemang 1 eller abonnemang 2)
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -94,4 +99,4 @@ Visste du att Office 365 ATP är tillgängligt i två abonnemang? [Läs mer om v
 
 [Beskrivning av Office 365 ATP-tjänst](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Automatiserad undersökning och svar i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Läs om hur du använder hotundersöknings- och svarsfunktioner för att hitta och undersöka skadlig e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034262"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039418"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka och åtgärda skadlig e-post som levererades i Office 365
 
@@ -39,7 +39,7 @@ Kontrollera att följande krav är uppfyllda:
     
 - Din organisation har principer som definierats för anti-spam, anti-malware, anti-phishing, och så vidare. Se [Skydda mot hot i Office 365](protect-against-threats.md).
     
-- Du är global administratör eller har rollen Säkerhetsadministratör eller sök- och &amp; rensning tilldelat i Säkerhetsefterlevnadscenter. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md). För vissa åtgärder måste du också ha tilldelat en ny förhandsversionsroll. 
+- Du är global administratör eller har rollen Säkerhetsadministratör eller sök- och rensning tilldelat i &amp; Säkerhetsefterlevnadscenter. Se [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md). För vissa åtgärder måste du också ha tilldelat en ny förhandsversionsroll. 
 
 #### <a name="preview-role-permissions"></a>Förhandsgranska rollbehörigheter
 
@@ -52,18 +52,18 @@ Om du vill utföra vissa åtgärder, till exempel visa meddelanderubriker eller 
 |Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som levereras till postlådor     |Global administratör <br>Säkerhetsadministratör <br> Säkerhetsläsare <br> Förhandsgranska   |   Ja      |
 
 > [!NOTE]
-> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsrollen måste läggas till i en befintlig rollgrupp för Office 365. Rollen Global administratör tilldelas microsoft 365-administrationscentret ([https://admin.microsoft.com](https://admin.microsoft.com)) och rollerna Säkerhetsadministratör och säkerhetsläsare tilldelas[https://protection.office.com](https://protection.office.com)i Säkerhets- & Compliance Center ( ). Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsrollen måste läggas till i en befintlig rollgrupp för Office 365. Rollen Global administratör tilldelas microsoft 365-administrationscentret ( [https://admin.microsoft.com](https://admin.microsoft.com) ) och rollerna Säkerhetsadministratör och säkerhetsläsare tilldelas i Säkerhets- & Compliance Center ( [https://protection.office.com](https://protection.office.com) ). Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Hitta och ta bort misstänkt e-post som levererades
 
 Threat Explorer är en kraftfull rapport som kan tjäna flera syften, till exempel att hitta och ta bort meddelanden, identifiera IP-adressen för en skadlig e-postavsändare eller starta en incident för vidare undersökning. Följande procedur fokuserar på att använda Explorer för att hitta och ta bort skadlig e-post från mottagarens postlådor.
 
 > [!NOTE]
-> Standardsökningar i Explorer innehåller för närvarande inte Zapped-objekt.  Detta gäller alla vyer, till exempel skadlig kod eller phish-vyer. Om du vill inkludera Zapped-objekt måste du lägga till en leveransåtgärd som ska inkluderas med "Borttaget av ZAP". Om du inkluderar alla alternativ visas alla resultat för leveransåtgärder, inklusive Zapped-objekt.
+> Standardsökningar i Explorer innehåller för närvarande inte Zapped-objekt.  Detta gäller för alla vyer, till exempel skadlig kod eller phish-vyer. Om du vill inkludera Zapped-objekt måste du lägga till en leveransåtgärd som ska inkluderas av ZAP. Om du inkluderar alla alternativ visas alla resultat för leveransåtgärder, inklusive Zapped-objekt.
 
-1. **Navigera till Threat Explorer:** Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto för Office 365. Detta tar dig &amp; till Security Compliance Center.
+1. **Navigera till Threat Explorer:** Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto för Office 365. Detta tar dig till Security &amp; Compliance Center.
 
-2. I snabbstarten för vänster navigering väljer du **Explorer för hothantering** \> **.**
+2. I snabbstarten för vänster navigering väljer du **Explorer för hothantering** \> **Explorer**.
 
     ![Explorer med fälten Leveransåtgärd och Leveransplats.](../../media/ThreatExFields.PNG)
 
@@ -83,16 +83,16 @@ Threat Explorer är en kraftfull rapport som kan tjäna flera syften, till exemp
     - Filter gör exakt matchning på de flesta filterförhållanden.
     - Ämnesfiltret använder en CONTAINS-fråga.
     - URL-filter fungerar med eller utan protokoll (t.ex. https).
-    - URL-domän-, URL-sökvägs- och URL-domän- och sökvägsfilter kräver inget protokoll för att filtrera.
+    - URL-domän-, URL-sökvägs- och URL-domän- och sökvägsfilter kräver inte ett protokoll för att filtrera.
     - Du måste klicka på ikonen Uppdatera varje gång du ändrar filtervärdena för att få relevanta resultat.
 
 5. **Avancerade filter:** Med dessa filter kan du skapa komplexa frågor och filtrera datauppsättningen. Om du klickar på *Avancerade filter* öppnas ett utfällbart alternativ.
 
-   Avancerad filtrering är ett bra komplement till sökfunktionerna. Ett booleskt **NOT-filter** har introducerats på *domänen Mottagare,* *Avsändare* och *Avsändare* för att administratörer ska kunna undersöka genom att utesluta värden. Det här alternativet visas under *markeringsparametern Innehåller ingen av*. **INTE** kommer att låta administratörer utesluta varningspostlådor, standardsvarllådor svar från sina undersökningar, och är användbart för fall där administratörer söka efter ett visst ämne (subject ="Attention") där mottagaren kan ställas in på *ingen av defaultMail@contoso.com*. Detta är en exakt värdesökning.
+   Avancerad filtrering är ett bra komplement till sökfunktionerna. Ett booleskt **NOT-filter** har introducerats på *domänen Mottagare,* *Avsändare* och *Avsändare* för att administratörer ska kunna undersöka genom att utesluta värden. Det här alternativet visas under *markeringsparametern Innehåller ingen av*. **INTE** kommer att låta administratörer utesluta varningspostlådor, standardsvarllådor svar från sina undersökningar, och är användbart för fall där administratörer söka efter ett visst ämne (subject ="Attention") där mottagaren kan ställas in på *ingen av defaultMail \@ contoso.com*. Detta är en exakt värdesökning.
 
    ![Mottagarna - "Innehåller inget av" Avancerat filter.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
-   *Filtrering efter timmar* hjälper organisationens säkerhetsteam att snabbt öka detaljnivån. Den kortaste tillåtna tidstiden är 30 minuter. Om du kan begränsa den misstänkta åtgärden efter tidsram (t.ex. det hände för tre timmar sedan), begränsar detta sammanhanget och hjälper till att identifiera problemet.
+   *Filtrering efter timmar* hjälper organisationens säkerhetsteam att snabbt öka detaljnivån. Den kortaste tillåtna tidstiden är 30 minuter. Om du kan begränsa den misstänkta åtgärden efter tidsram (t.ex. det hände för tre timmar sedan), kommer detta att begränsa sammanhanget och hjälpa till att identifiera problemet.
 
   ![Alternativet filtrering efter timmar för att begränsa mängden datasäkerhetsteam måste bearbeta och vars kortaste varaktighet är 30 minuter.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
@@ -110,26 +110,26 @@ Threat Explorer är en kraftfull rapport som kan tjäna flera syften, till exemp
     - **Skräppostmapp** – E-postmeddelandet finns i en användares skräppostmapp.
     - **Mappen Borttaget objekt** – E-postmeddelandet finns i mappen Borttaget.
     - **Karantän** – E-postmeddelandet i karantän och inte i en användares postlåda.
-    - **Misslyckades** – Det gick inte att nå postlådan via e-post.
-    - **Tappade** - E-post förlorades någonstans i e-postflödet.
+    - **Misslyckades** – det gick inte att nå postlådan via e-post.
+    - **Tappade** - E-postmeddelandet förlorades någonstans i e-postflödet.
 
-    **Riktning:** Med det här alternativet kan säkerhetsoperationsteamet filtrera efter den "riktning" som ett e-postmeddelande kommer från eller kommer. Riktningsvärden är *Inkommande,* *Utgående*och Intra-org (motsvarande *e-post* som kommer in i din organisation utifrån, skickas ut från din organisation eller skickas internt till din organisation, respektive). Den här informationen kan hjälpa säkerhetsoperationer team plats förfalskning och personifiering, eftersom en obalans mellan directionality värde (t.ex. *Inkommande*), och domänen för avsändaren (som *verkar* vara en intern domän) kommer att vara uppenbart! Riktningsvärdet är separat och kan skilja sig från meddelandespårningen. Resultaten kan exporteras till kalkylblad.
+    **Riktning:** Med det här alternativet kan säkerhetsoperationsteamet filtrera efter den "riktning" som ett e-postmeddelande kommer från eller kommer. Riktningsvärden är *inkommande,* *utgående*och intra-org (motsvarande *e-post* som kommer in i din organisation utifrån, skickas ut från din organisation eller skickas internt till din organisation, respektive). Den här informationen kan hjälpa säkerhetsoperationer team plats förfalskning och personifiering, eftersom en obalans mellan directionality värde (t.ex. *Inkommande*), och domänen för avsändaren (som *verkar* vara en intern domän) kommer att vara uppenbart! Riktningsvärdet är separat och kan skilja sig från meddelandespårningen. Resultaten kan exporteras till kalkylblad.
 
     **Åsidosättningar**: Det här filtret tar information som visas på fliken information om e-post och använder den för att exponera var organisations- eller användarprinciper, för att tillåta och blockera e-post har *åsidosatts*. Det viktigaste med det här filtret är att det hjälper organisationens säkerhetsteam att se hur många misstänkta e-postmeddelanden som levererades på grund av konfigurationen. Detta ger dem en möjlighet att ändra tillåter och block som behövs. Den här resultatuppsättningen för det här filtret kan exporteras till kalkylblad.
 
 |Åsidosättningar av hotutforskaren  | Vad de betyder  |
 |---------|---------|
 |Tillåts av org policy     |   E-post tilläts komma in i postlådan enligt organisationens princip.       |
-|Blockerad av org-principen      |  E-post blockerades från leverans till postlådan enligt organisationens princip.    |
-|Filtillägg blockeras av Org Policy     | Filen blockerades från leverans till postlådan enligt organisationens princip.        |
+|Blockerad av org-policy      |  E-post blockerades från leverans till postlådan enligt organisationens princip.    |
+|Filtillägg blockeras av Org Policy     | Filen blockerades från leverans till postlådan enligt anvisningarna i organisationsprincipen.        |
 |Tillåts av användarprincip     | E-post tilläts komma in i postlådan enligt anvisningarna i användarprincipen.        |
 |Blockerad av användarprincip     | E-post blockerades från leverans till postlådan enligt anvisningarna i användarprincipen.        |
 
-**URL-hot**: Url-hotfältet har inkluderats på *informationsfliken* i ett e-postmeddelande för att ange det hot som en webbadress utgör. Hot som presenteras av en webbadress kan vara *skadlig kod,* *Phish*eller *Spam*, och en webbadress *utan hot* kommer att säga *Ingen* i hot avsnitt.
+**URL-hot**: Url-hotfältet har inkluderats på *informationsfliken* i ett e-postmeddelande för att ange det hot som en webbadress utgör. Hot som presenteras av en webbadress kan inkludera *skadlig kod,* *Phish*eller *Spam*, och en webbadress *utan hot* kommer att säga *Ingen* i hot avsnitt.
 
 7. **Tidslinjevy för e-post:** Ditt säkerhetsoperationsteam kan behöva fördjupa sig i e-postinformation för att undersöka saken ytterligare. Med e-posttidslinjen kan administratörer visa åtgärder som vidtas på ett e-postmeddelande från leverans till efterleverans. Om du vill visa en tidslinje för e-post klickar du på ämnet för ett e-postmeddelande och klickar sedan på E-posttidslinje. (Det visas bland andra rubriker på panelen som Sammanfattning eller Detaljer.) Dessa resultat kan exporteras till kalkylblad.
 
-    E-posttidslinje öppnas för en tabell som visar alla leverans- och efterleveranshändelser för e-postmeddelandet. Om det inte finns några ytterligare åtgärder på e-postmeddelandet, bör du se en enda händelse för den ursprungliga leveransen som anger ett resultat, till exempel *Blockerad*, med en dom som *Phish*. Administratörer kan exportera hela e-posttidslinjen, inklusive all information på fliken och e-postmeddelandet (till exempel Ämne, Avsändare, Mottagare, Nätverk och Meddelande-ID). E-posttidslinjen skär ned på randomisering eftersom det finns mindre tid att kontrollera olika platser för att försöka förstå händelser som hänt sedan e-postmeddelandet kom. När flera händelser inträffar vid eller i närheten av samma tid i ett e-postmeddelande visas dessa händelser i en tidslinjevy.
+    E-posttidslinje öppnas för en tabell som visar alla leverans- och efterleveranshändelser för e-postmeddelandet. Om det inte finns några ytterligare åtgärder på e-postmeddelandet, bör du se en enda händelse för den ursprungliga leveransen som anger ett resultat, till exempel *Blockerad*, med en dom som *Phish*. Administratörer kan exportera hela e-posttidslinjen, inklusive all information på fliken och e-postmeddelandet (till exempel Ämne, Avsändare, Mottagare, Nätverk och Meddelande-ID). E-posttidslinjen skär ned på randomisering eftersom det finns mindre tid att kontrollera olika platser för att försöka förstå händelser som hänt sedan e-postmeddelandet kom. När flera händelser inträffar vid eller nära, samtidigt i ett e-postmeddelande visas dessa händelser i en tidslinjevy.
 
 8. **Preview / ladda ner:** Threat Explorer ger din säkerhetsoperation team de uppgifter de behöver för att undersöka misstänkta e-post. Säkerhetsoperationsteamet kan antingen:
 
@@ -169,13 +169,13 @@ Threat Explorer är en kraftfull rapport som kan tjäna flera syften, till exemp
 
     - **Karantän** – E-postmeddelandet i karantän och inte i en användares postlåda.
 
-    - **Misslyckades** – Det gick inte att nå postlådan via e-post.
+    - **Misslyckades** – det gick inte att nå postlådan via e-post.
 
-    - **Tappade** - E-post försvinner någonstans i e-postflödet.
+    - **Tappade** - E-postmeddelandet försvinner någonstans i e-postflödet.
 
      ##### <a name="view-the-timeline-of-your-email"></a>Visa tidslinjen för din e-post
   
-     **E-posttidslinje** är ett fält i Threat Explorer som gör det enklare för säkerhetsoperationsteamet att jaga. När flera händelser inträffar samtidigt eller i närheten av samma tid i ett e-postmeddelande visas dessa händelser i en tidslinjevy. Vissa händelser som inträffar efter leverans till e-post fångas in i kolumnen **Särskilda åtgärder.** Genom att kombinera information från tidslinjen för ett e-postmeddelande med eventuella särskilda åtgärder som vidtogs efter leveransen får administratörerna insikt i principer och hothantering (till exempel var posten dirigerades och, i vissa fall, vad den slutliga bedömningen var).
+     **E-posttidslinje** är ett fält i Threat Explorer som gör det enklare att söka för säkerhetsoperationsteamet. När flera händelser inträffar vid eller nära samma tidpunkt i ett e-postmeddelande visas dessa händelser i en tidslinjevy. Vissa händelser som inträffar efter leverans till e-post fångas in i kolumnen **Särskilda åtgärder.** Genom att kombinera information från tidslinjen för ett e-postmeddelande med eventuella särskilda åtgärder som vidtogs efter leveransen får administratörerna insikt i principer och hothantering (till exempel var posten dirigerades och, i vissa fall, vad den slutliga bedömningen var).
 
 <!-- Reference material
 
