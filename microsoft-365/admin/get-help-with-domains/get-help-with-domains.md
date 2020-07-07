@@ -21,12 +21,11 @@ search.appverid:
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: Kom igång med din egen domän för e-post, webbplatser och konton i Office 365. Lär dig mer om domäner, gör ändringar i din domän, integrera e-post och webbplatser och få verktyg och tips.
-ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: MT
+ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399926"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049684"
 ---
 # <a name="get-help-with-office-365-domains"></a>Få hjälp med Office 365-domäner
 
@@ -158,7 +157,6 @@ Använd de här resurserna när du vill komma igång med din egen domän för e-
                             <p><a href="information-for-dns-records.md">Samla in den information du behöver för att skapa DNS-poster</a></p>
                             <p><a href="find-your-domain-registrar.md">Hitta domänens registrator</a></p>
                             <p><a href="buy-a-domain-name.md">Köpa ett domännamn</a></p>
-                            <p><a href="../setup/domains-faq.md#how-to-set-up-an-office-365-pilot">Konfigurera ett pilottest med din egen domän för ett fåtal personer i företaget</a></p>
                             <p><a href="domain-connect.md">Lägga till en GoDaddy-domän i Office 365 snabbt</a></p>
                             <p>Få stegvisa instruktioner om att <a href="create-dns-records-at-any-dns-hosting-provider.md">lägga till de DNS-poster som krävs för Office 365-tjänster</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">How to prepare a non-routable domain for directory synchronization</a></p>
@@ -208,8 +206,7 @@ Använd de här resurserna när du vill komma igång med din egen domän för e-
                         <h3>Göra ändringar</h3>
                             <p><a href="find-and-fix-issues.md">Hitta och åtgärda problem när du har ändrat ditt domännamn eller DNS-poster</a></p>
                             <p><a href="../dns/add-or-edit-custom-dns-records.md">Lägga till eller redigera anpassade DNS-poster i Office 365</a></p>
-                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-office-365">Lägga till egna underdomäner eller flera domäner i Office 365</a></p>
-                            <p><a href="../setup/domains-faq.md#how-do-i-change-how-my-dns-records-are-managed-in-office-365">Ändra hur Office 365 hanterar DNS för din domän</a></p>
+                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">Lägga till anpassade underdomäner eller flera domäner i Microsoft 365</a></p>
                             <p><a href="remove-a-domain.md">Ta bort en domän</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">Office 365 integration with on-premises environments</a></p>
                             <p><a href="../contact-support-for-business-products.md">Har du fler frågor? Ring supporten eller öppna ett supportärende</a></p>
