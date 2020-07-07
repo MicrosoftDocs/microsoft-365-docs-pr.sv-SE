@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005852"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049707"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig det avancerade jaktfrågespråket
 
@@ -151,7 +150,16 @@ Uppgifter i avancerade jakttabeller är i allmänhet indelade i följande dataty
 ## <a name="get-help-as-you-write-queries"></a>Få hjälp när du skriver frågor
 Dra nytta av följande funktioner för att skriva frågor snabbare:
 - **Autosuggest** - när du skriver frågor, avancerad jakt ger förslag från IntelliSense. 
-- **Schemareferens** – en schemareferens som innehåller listan över tabeller och deras kolumner finns bredvid arbetsområdet. Om du vill ha mer information håller du muspekaren över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i frågeredigeraren.
+- **Schematräd** – en schemarepresentation som innehåller listan över tabeller och deras kolumner finns bredvid arbetsområdet. Om du vill ha mer information håller du muspekaren över ett objekt. Dubbelklicka på ett objekt om du vill infoga det i frågeredigeraren.
+- **[Schemareferens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – i portalreferens med tabell- och kolumnbeskrivningar samt händelsetyper som stöds `ActionType` (värden) och exempelfrågor
+
+## <a name="work-with-multiple-queries-in-the-editor"></a>Arbeta med flera frågor i redigeraren
+Frågeredigeraren kan fungera som din scratch pad för att experimentera med flera frågor. Så här använder du flera frågor:
+
+- Avgränsa varje fråga med en tom rad.
+- Placera markören på någon del av en fråga för att markera frågan innan du kör den. Detta kommer bara att köra den valda frågan. Om du vill köra en annan fråga flyttar du markören därefter och väljer **Kör fråga**.
+
+![Bild av frågeredigeraren med flera frågor](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>Använda exempelfrågor
 

@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 67fa551fd7c2add815d5698a22b5eb3ae607f716
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899273"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048285"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -31,7 +30,7 @@ ms.locfileid: "44899273"
 
 
 
-`DeviceLogonEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om användarinloggningar och andra autentiseringshändelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`DeviceLogonEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om användarinloggningar och andra autentiseringshändelser på enheter. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
 

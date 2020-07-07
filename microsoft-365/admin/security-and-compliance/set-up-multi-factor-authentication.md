@@ -23,12 +23,11 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-ms.translationtype: MT
+ms.openlocfilehash: b0fd16fc74319c88a6f91bf56ac96346915c35ac
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779947"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049766"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -40,10 +39,8 @@ Innan du börjar, ta reda på om dessa särskilda villkor gäller för dig och v
 
 - Om du har katalogtjänster från tredje part med Active Directory Federation Services (AD FS) konfigurerar du Azure MFA Server. Mer information finns i [avancerade scenarier med Azure Multi-Factor Authentication och VPN-lösningar från tredje part.](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)
 
-
 Alla andra användare kommer att ombes utföra ytterligare autentisering när det behövs. Mer information finns i [Tvåfaktorsverifieringsmetod och inställningar](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device).
 
-=======
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Steg 1: Bestäm metoden för att kräva att användarna använder MFA
 
 > [!NOTE]

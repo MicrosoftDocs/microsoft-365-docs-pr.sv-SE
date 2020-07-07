@@ -22,12 +22,11 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
-ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035615"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049660"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -143,10 +142,6 @@ Varför kan domänens zonfil finnas på en annan plats än hos din domänregistr
 Varför kan domänens zonfil finnas på en annan plats än hos din domänregistrator? Du kan också registrera domännamnet hos en domänregistrator, t. ex. HiChina, men dina DNS-poster kanske hanteras någon annanstans, på ett separat värdföretag för DNS eller ett webbhotell. NS-posterna för din domän lagrar information så att alla DNS-servrar vet var de ska leta.
 
 ::: moniker-end
-
-> [!NOTE]
-> Om du ställer in din domän i Microsoft 365 så att [Microsoft ställer in och hanterar dina DNS-poster](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) för dig måste du[ ändra DNS-hantering till Microsoft 365 när du ställer in domänen](../setup/domains-faq.md#change-dns-management-to-office-365). 
- 
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>Varför ska jag lägga till en domän i Office 365?

@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854370"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049946"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Konfigurera Microsoft Threat Protection-pelare för testlabbeta
 
@@ -237,7 +236,7 @@ Klicka på **Nästa**.
 16. Bläddra nedåt och klicka på **Spara inställningar** för att bekräfta de nya integreringarna.
 <br>![Knappen Bild of_Save inställningar som du måste klicka på](../../media/mtp-eval-72.png) <br>
 
-## <a name="start-the-microsoft-threat-protection-service"></a>Starta Microsoft Threat Protection-tjänsten
+## <a name="start-the-microsoft-threat-protection-service"></a>Starta tjänsten Microsoft Threat Protection
 >[!NOTE]
 >Från och med den 1 juni 2020 aktiverar Microsoft automatiskt Microsoft Threat Protection-funktioner för alla berättigade klienter. Mer information finns i den här [artikeln i Microsoft Tech Community om licensberättigande.](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 
 <br>
@@ -247,8 +246,9 @@ Gå till [Microsoft 365 Security Center](https://security.microsoft.com/homepage
 
 Mer omfattande vägledning finns i [Aktivera Microsoft Threat Protection](mtp-enable.md). 
 
-Grattis! Du har precis skapat testlabbmiljön för Microsoft Threat Protection! Du kan nu simulera en attack och se hur cross-produktfunktionerna identifierar, skapar aviseringar och automatiskt svarar på en fillös attack på en slutpunkt.
+Grattis! Du har precis skapat testlabbmiljön för Microsoft Threat Protection! Nu kan du bekanta dig med användargränssnittet i Microsoft Threat Protection! Se vad du kan lära dig av och veta hur du använder varje instrumentpanel för dina dagliga säkerhetsoperationsuppgifter: [Interaktiv guide för Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
+Därefter kan du simulera en attack och se hur cross-produktfunktionerna identifierar, skapar aviseringar och automatiskt svarar på en fillös attack på en slutpunkt.
 
 ## <a name="next-steps"></a>Nästa steg
 [Generera en testavisering](generate-test-alert.md).

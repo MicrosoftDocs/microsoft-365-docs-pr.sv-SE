@@ -22,12 +22,11 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Läs om hur du avbryter din Microsoft 365 för företagstestversion eller betald prenumeration.
-ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
-ms.translationtype: MT
+ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023375"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049754"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt prenumerationen
 
@@ -132,7 +131,7 @@ Om du har växlat namnserverposterna till Microsoft 365 när du konfigurerade do
 
 Om du inte växlade NS-poster när du konfigurerade domänen börjar din e-post gå till den nya adressen direkt när du ändrar MX-posten.
 
-Mer information finns i [Hur hanterar Microsoft 365 mina DNS-poster?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Information om hur du ändrar NS-posterna finns i [Ta bort en domän](../../admin/get-help-with-domains/remove-a-domain.md).
+Information om hur du ändrar NS-posterna finns i [Ta bort en domän](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### <a name="save-your-data"></a>Spara dina data
 

@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899369"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046057"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jaktschemat
 
@@ -31,10 +30,22 @@ ms.locfileid: "44899369"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Det [avancerade jaktschemat](advanced-hunting-overview.md) består av flera tabeller som ger antingen händelseinformation eller information om datorer och entiteter. Om du effektivt vill skapa frågor som sträcker sig över flera tabeller måste du förstå tabellerna och kolumnerna i det avancerade jaktschemat.
+Det [avancerade jaktschemat](advanced-hunting-overview.md) består av flera tabeller som innehåller antingen händelseinformation eller information om enheter, aviseringar, identiteter och andra entitetstyper. Om du effektivt vill skapa frågor som sträcker sig över flera tabeller måste du förstå tabellerna och kolumnerna i det avancerade jaktschemat.
+
+## <a name="get-schema-information-in-the-security-center"></a>Hämta schemainformation i säkerhetscentret
+När du konstruerar frågor använder du den inbyggda schemareferensen för att snabbt få följande information om varje tabell i schemat:
+
+- **Tabellbeskrivning** – typ av data i tabellen och källan till dessa data.
+- **Kolumner** – alla kolumner i tabellen.
+- **Åtgärdstyper** – möjliga värden i `ActionType` kolumnen som representerar de händelsetyper som stöds av tabellen. Detta tillhandahålls endast för tabeller som innehåller händelseinformation.
+- **Exempelfråga** – exempelfrågor som innehåller hur tabellen kan användas.
+
+### <a name="access-the-schema-reference"></a>Få tillgång till schemareferensen
+Om du snabbt vill komma åt schemareferensen väljer du åtgärden **Visa referens** bredvid tabellnamnet i schemarepresentationen. Du kan också välja **Schemareferens** för att söka efter en tabell.   
+
+![Bild som visar hur du kommer åt schemareferens i portalen ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="schema-tables"></a>Schematabeller
-
 Följande referens visar alla tabeller i schemat. Varje tabellnamn länkar till en sida som beskriver kolumnnamnen för den tabellen. Tabell- och kolumnnamn visas också i säkerhetscentret som en del av schemarepresentationen på den avancerade jaktskärmen.
 
 | Tabellnamn | Beskrivning |
@@ -47,7 +58,7 @@ Följande referens visar alla tabeller i schemat. Varje tabellnamn länkar till 
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Filskapande, ändring och andra filsystemhändelser |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-inläsning av händelser |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Maskininformation, inklusive OS-information |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inloggningar och andra autentiseringshändelser |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inloggningar och andra autentiseringshändelser på enheter |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Nätverksanslutning och relaterade händelser |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Nätverksegenskaper för datorer, inklusive kort, IP- och MAC-adresser, samt anslutna nätverk och domäner |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Processskapande och relaterade händelser |
@@ -61,7 +72,7 @@ Följande referens visar alla tabeller i schemat. Varje tabellnamn länkar till 
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Säkerhetshändelser som inträffar efter leverans, efter att Microsoft 365 har levererat e-postmeddelandena till mottagarens postlåda |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om webbadresser i e-postmeddelanden |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformation från olika källor, inklusive Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringshändelser som registrerats av Active Directory och andra Microsoft-onlinetjänster |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringshändelser för Active Directory och Microsofts onlinetjänster |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Frågeaktiviteter som utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
 
 ## <a name="related-topics"></a>Relaterade ämnen
