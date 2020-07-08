@@ -1,0 +1,98 @@
+### YamlMime:Landing
+title: Dokumentation för Microsoft 365 Efterlevnadscenter
+summary: Om din organisation måste efterleva lagar eller föreskrifter kan ni börja här för att få reda på mer om regelefterlevnad i Microsoft 365.
+metadata:
+  title: Dokumentation för Microsoft 365 Efterlevnadscenter
+  description: På den här sidan finns länkar till några viktiga ämnen som är relaterade till Microsoft 365 Efterlevnadscenter-funktioner. Börja här för att få veta mer om regelefterlevnad i Microsoft 365.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 09/20/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 7346a0d1abf0f8b643716d138efaaa269f35a2c5
+  ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 06/19/2020
+  ms.locfileid: "45051609"
+landingContent:
+- title: Hantera informationsskydd
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Känslighetsetiketter
+      url: sensitivity-labels.md
+    - text: Skydd mot dataförlust (DLP)
+      url: data-loss-prevention-policies.md
+    - text: Typer av känslig information
+      url: custom-sensitive-info-types.md
+    - text: E-postkryptering
+      url: email-encryption.md
+    - text: Customer Key
+      url: customer-key-overview.md
+- title: Hantera informationsstyrning
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Kvarhållningsetiketter
+      url: labels.md
+    - text: Kvarhållningsprinciper
+      url: retention-policies.md
+    - text: Hantering av arkivhandlingar
+      url: records-management.md
+    - text: Filplanshanterare
+      url: file-plan-manager.md
+    - text: Händelsebaserad kvarhållning
+      url: event-driven-retention.md
+    - text: PST-import
+      url: importing-pst-files-to-office-365.md
+    - text: Datakopplingar för tredje part
+      url: archiving-third-party-data.md
+    - text: Datastyrningsrapporter
+      url: view-the-data-governance-reports.md
+- title: Hantera insiderrisker
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hantering av insiderrisk
+      url: insider-risk-management.md
+    - text: Efterlevnad av kommunikation
+      url: communication-compliance.md
+    - text: Informationsbarriärer
+      url: information-barriers.md
+    - text: Privilegierad åtkomsthantering
+      url: privileged-access-management-overview.md
+    - text: Customer Lockbox
+      url: customer-lockbox-requests.md
+- title: Upptäcka och agera
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Advanced eDiscovery
+      url: overview-ediscovery-20.md
+    - text: Core eDiscovery
+      url: ediscovery-cases.md
+    - text: Innehållssökning
+      url: search-for-content.md
+    - text: Dataundersökningar (förhandsgranskning)
+      url: overview-data-investigations.md
+    - text: Granskning
+      url: search-the-audit-log-in-security-and-compliance.md
+- title: Kom igång med efterlevnad av förordningar
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Efterlevnadspoäng
+      url: compliance-score.md
+    - text: Handlingsplan för GDPR-efterlevnad
+      url: gdpr-action-plan.md
+    - text: Informationsskydd för GDPR
+      url: office-365-info-protection-for-gdpr-overview.md
+    - text: Handlingsplan för ISO-efterlevnad
+      url: iso-action-plan.md
+    - text: Handlingsplan för NIST-efterlevnad
+      url: nist-action-plan.md
