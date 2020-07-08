@@ -20,12 +20,12 @@ description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-v
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: a9809dda90bc9eb4a8241f94f48f7f7842df9af9
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419130"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049672"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Lägga till DNS-poster för att ansluta till din domän
 
@@ -127,7 +127,7 @@ Kontrollera att fälten är inställda på följande värden för varje:
 
 Spara posten.
 
-#### <a name="srv-record-feild-restrictions-and-workarounds"></a>Restriktioner och lösningar för SRV-postfält
+#### <a name="srv-record-field-restrictions-and-workarounds"></a>Restriktioner och lösningar för SRV-postfält
 Vissa värdar har restriktioner för fältvärden i SRV-poster. Här är några vanliga lösningar på de här begränsningarna.
 
 ##### <a name="name"></a>Namn

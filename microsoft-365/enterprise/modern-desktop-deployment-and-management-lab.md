@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869862"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049922"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
@@ -52,12 +52,13 @@ Dessutom är labbet utformat för anslutning till utvärderingsversioner av:
 
 ## <a name="step-by-step-labs"></a>Stegvisa labbuppgifter
 
-Du får utföra flera labbuppgifter för olika distributions- och hanteringsscenarier med detaljerad vägledning. Labbuppgifterna har uppdaterats för de senaste versionerna av Intune och Configuration Manager (version 1910). 
+Du får utföra flera labbuppgifter för olika distributions- och hanteringsscenarier med detaljerad vägledning. Labbuppgifterna har uppdaterats för de senaste versionerna av Intune och Configuration Manager. 
 
 ### <a name="device-and-app-readiness"></a>Beredskap för enheter och appar
 
   - Desktop Analytics
   - NYHET! Distribuera och uppdatera nya Microsoft Edge 
+  - NYHET! Installera och konfigurera Cloud Management Gateway (CMG) 
   - Internet Explorer-läge 
   - Programskydd som 
 
@@ -92,6 +93,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
   - Windows Defender Exploit Guard
   - Windows Defender-programreglering
   - Windows Defender – avancerat skydd mot hot
+  - NYHET! Slutpunktssäkerhet 
 
 ### <a name="os-deployment-and-feature-updates"></a>Distribution av operativsystem och uppdateringar av funktioner 
 
@@ -105,6 +107,8 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
   - Hantera Windows-uppdateringar med grupprinciper
   - Underhålla Windows 10 med Konfigurationshanteraren och Intune
   - Underhålla Microsoft 365-applikationer för företag med Configuration Manager
+  - NYHET! Office-uppdateringar med konfigurationshanteraren och Intune
+  - NYHET! Installera Microsoft Teams 
 
 ### <a name="new-windows-virtual-desktop"></a>NYHET! Windows Virtual Desktop
   - Windows Virtual Desktop: förbereda, distribuera, optimera 

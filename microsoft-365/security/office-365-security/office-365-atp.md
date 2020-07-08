@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Avancerat skydd innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: 52cb0d00d0c01adc34ee480f6daca9a6b509c671
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818813"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039384"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Avancerat skydd
 
@@ -45,9 +45,8 @@ Office 365 Avancerat skydd (ATP) skyddar din organisation mot skadliga hot som k
 
 I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
-|||
+| Office 365 ATP-abonnemang 1 | Office 365 ATP-abonnemang 2 |
 |---|---|
-|**Office 365 ATP-abonnemang 1**|**Office 365 ATP-abonnemang 2**|
 |Funktioner för konfiguration, skydd och identifiering:<br/>• [Säkra bifogade filer](atp-safe-attachments.md)<br/>• [Säkra länkar](atp-safe-links.md)<br/>• [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP-skydd mot nätfiske](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Identifiering i realtid](threat-explorer.md)|Funktioner i Office 365 ATP-abonnemang 1<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:<br/>• [Hotspårare](threat-trackers.md)<br/>• [Hotutforskaren](threat-explorer.md)<br/>• [Automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Attacksimulator](attack-simulator.md)|
 |
 
@@ -56,6 +55,8 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 - Office 365 ATP-abonnemang 1 ingår i Microsoft 365 Business Premium.
 
 - Office 365 ATP-abonnemang 1 och Office 365 ATP-abonnemang 2 är tillgängliga som ett tillägg för vissa prenumerationer. Mer information finns i [Feature availability across ATP plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) (Funktionstillgänglighet för ATP-abonnemang).
+
+- Funktionen [säkra dokument](safe-docs.md) är bara tillgänglig för användare med Microsoft 365 E5- eller Microsoft 365 E5 Säkerhet-licenser (inte inkluderad i Office 365 ATP-abonnemang).
 
 - Om du inte har Office 365 ATP, kan du [kontakta försäljningsavdelningen för att starta en utvärderingsversion](https://go.microsoft.com/fwlink/p/?LinkId=518644) och se hur ATP fungerar för din organisation.
 
