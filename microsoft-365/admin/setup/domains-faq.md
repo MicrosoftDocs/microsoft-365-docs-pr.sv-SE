@@ -24,11 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Läs mer om domäner genom att hitta svar på dina vanliga frågor.
-ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049742"
+ms.locfileid: "45068109"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -45,15 +46,15 @@ Om du inte hittar ett svar på din fråga här, kan du lämna en kommentar om de
 
 I den här artikeln
 
-[Vad är MX prioritet?](#what-is-mx-priority) 
- [Hur validerar jag SPF-poster för min domän?](#how-can-i-validate-spf-records-for-my-domain) 
- [Vad är ett domännamn?](#what-is-a-domain-name) 
- [Vad händer om min DNS-leverantör inte stöder vissa posttyper?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
- [Hur ställer jag in eller ändrar standarddomänen i Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
- [Kan jag lägga till anpassade underdomäner eller flera domäner i Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
- [Varför har jag en domän för "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain) 
- [Varför har jag en domän för "onmicrosoft.de"?](#why-do-i-have-an-onmicrosoftde-domain) 
- [Hur verifierar jag min ideella organisation eller utbildningsstatus?](#how-do-i-verify-my-nonprofit-or-education-status)
+- [Vad är MX-prioritet?](#what-is-mx-priority)
+- [Hur validerar jag SPF-poster för min domän?](#how-can-i-validate-spf-records-for-my-domain)
+- [Vad är ett domännamn?](#what-is-a-domain-name)
+- [Vad händer om min DNS-värd inte har stöd för vissa typer av poster?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [Hur ställer jag in eller ändrar standarddomänen i Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [Kan jag lägga till anpassade underdomäner eller flera domäner i Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Varför har jag en onmicrosoft.com-domän?](#why-do-i-have-an-onmicrosoftcom-domain)
+- [Varför har jag en "onmicrosoft.de"-domän?](#why-do-i-have-an-onmicrosoftde-domain)
+- [Hur verifierar jag min ideella organisation eller utbildningsstatus?](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>Vad är MX-prioritet?
 

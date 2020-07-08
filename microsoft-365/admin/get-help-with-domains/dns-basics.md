@@ -22,11 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Lär dig mer om domäner och deras associerade DNS-poster för att hantera dina domäner.
-ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049660"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079997"
 ---
 # <a name="dns-basics"></a>Grundläggande om DNS
 
@@ -144,7 +145,7 @@ Varför kan domänens zonfil finnas på en annan plats än hos din domänregistr
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-## <a name="why-add-a-domain-in-office-365"></a>Varför ska jag lägga till en domän i Office 365?
+## <a name="why-add-a-domain-in-microsoft-365"></a>Varför ska jag lägga till en domän i Microsoft 365?
 
 
 Om du lägger till en anpassad domän, till exempel fourthcoffee.com, till Microsoft 365, kan du använda kortare, mer betrodda e-postadresser och använder-ID med tjänsten. Du[kommer att tilldelas en domän ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) när du registrerar dig för ett Microsoft 365-konto, men detta inkluderar onmicrosoft.com. Många föredrar att lägga till domänen för sin organisation eller företag om de vill använda Microsoft 365 för e-post. 

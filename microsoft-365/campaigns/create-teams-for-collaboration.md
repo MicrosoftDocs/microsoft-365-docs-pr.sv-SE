@@ -23,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Skapa ett samarbetsutrymme för ditt team med Microsoft Teams.
-ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635654"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079791"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Skapa team för samarbete i Microsoft Teams
 
-Microsoft Teams är en samarbetsapp som hjälper din personal att hålla ordning och ha konversationer från vilken enhet som helst. Du kan använda Microsoft Teams för att föra omedelbara konversationer med personal eller gäster utanför organisationen. Du kan också ringa telefonsamtal, vara värd för möten och dela filer.
+Microsoft Teams är en samarbetsapp som hjälper din personal att hålla ordning och ha konversationer från vilken enhet som helst. Du kan använda Microsoft Teams för att föra samtal direkt med personal eller gäster utanför organisationen. Du kan också ringa telefonsamtal, vara värd för möten och dela filer.
 
 ## <a name="best-practices"></a>Metodtips
 
-Kampanjer kan till exempel skapa följande team för att kommunicera och samarbeta på ett säkert sätt:
+Som ett exempel kan kampanjer skapa följande team för att kommunicera och samarbeta säkert:
 
 1. **Ett kampanjleadteam:** Konfigurera detta som ett privat team så att endast dina viktiga kampanjmedlemmar kan komma åt det och diskutera potentiellt känsliga problem.
 2. **Ett allmänt kampanjteam:** Detta är för alla att använda för daglig kommunikation och arbete. Individer, grupper eller kommittéer kan skapa kanaler i det här teamet för att utföra sitt arbete. Händelseplaneringspersonerna kan till exempel skapa en kanal för att chatta och samordna logistik för kampanjhändelser.
@@ -57,7 +57,7 @@ När du skapar ett team skapas det här:
 I Microsoft Teams hittar du:
 1. **Lag:** Hitta kanaler att tillhöra eller skapa egna. Inuti kanaler kan du hålla möten på plats, ha konversationer och dela filer.
 
-2. **Möten:** Se allt du har uppradade för dagen eller veckan. Eller boka in ett möte. Den här kalendern synkroniseras med Din Outlook-kalender.
+2. **Möten:** Se allt du har ställt upp för dagen eller veckan. Eller boka in ett möte. Den här kalendern synkroniseras med Din Outlook-kalender.
  
 3. **Samtal:** I vissa fall, om din organisation har konfigurerat den, kan du ringa vem som helst från Microsoft Teams, även om de inte använder Microsoft Teams.
 
@@ -85,5 +85,5 @@ Läs mer om [teknisk dokumentation](https://docs.microsoft.com/microsoftteams/mi
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
-Du måste vara administratör för att kunna skapa ett organisationsomfattande team. Mer information finns [i Vad är en administratör i Office 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)
+Du måste vara administratör för att kunna skapa ett organisationsomfattande team. Mer information finns [i Vad är en administratör i Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
   

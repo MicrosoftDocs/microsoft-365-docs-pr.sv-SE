@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Lär dig hur du arbetar med Domain Connect-aktiverade registratorer och lägger till din domän i Microsoft 365.
-ms.openlocfilehash: 70a30201d4b795c7458959b6b2eee14c9b3c7186
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399962"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079985"
 ---
 # <a name="using-domain-connect"></a>Använda Domain Connect
 
@@ -35,7 +35,7 @@ ms.locfileid: "44399962"
   
 [Med Domain](https://www.domainconnect.org/) Connect-aktiverade registratorer kan du lägga till din domän i Microsoft 365 i en trestegsprocess som tar minuter. 
   
-I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigurerar domänens poster, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, fungerar med din domän.
+I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigurerar domänens poster, så e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, som fungerar med din domän.
   
 > [!NOTE]
 > Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.
@@ -48,12 +48,12 @@ I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigur
 - [Wordpress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer eller WildWestDomains (GoDaddy-återförsäljare med SecureServer DNS hosting)
+- SecureServer eller WildWestDomains (GoDaddy återförsäljare med SecureServer DNS hosting)
     - [MadDog domäner](https://www.maddogdomains.com/)
     - [BilligaNamn](https://www.cheapnames.com)
 
 ## <a name="what-happens-to-my-email-and-website"></a>Vad händer med min e-post och webbplats?
 
-När du är klar med installationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för din domän börjar komma till Microsoft 365. Kontrollera att du har lagt till användare och konfigurerat postlådor i Office 365 för alla som får e-post i din domän.
+När du är klar med installationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för din domän börjar komma till Microsoft 365. Se till att du har lagt till användare och konfigurerat postlådor i Microsoft 365 för alla som får e-post på din domän!
   
 Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är. Installationsstegen För Domain Connect påverkar inte din webbplats.

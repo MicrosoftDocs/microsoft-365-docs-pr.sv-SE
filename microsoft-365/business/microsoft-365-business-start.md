@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Lär dig mer om Microsoft 365 för företag, hur du konfigurerar det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022126"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080052"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -80,9 +80,9 @@ Logga in på [Microsoft 365 admincenter](https://portal.office.com/adminportal/h
     
     Om du **flyttar permanent från en lokal Active Directory till molnet**kan du gå till administrationscentret för Microsoft 365 och använda installationsguiden för att lägga till användarna manuellt, eller så kan du göra en engångssynkronisering med Azure AD Connect. Du kan göra det på två sätt: 
     
-    - Om du också har en Exchange 2010-, Exchange 2013- eller Exchange 2016-server kan du [använda Minimal Hybrid för att snabbt migrera Exchange-postlådor till Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). De minimala hybridstegen inkluderar en engångssynkronisering av användare till Azure AD och e-postmigrering från lokalt till molnet. När e-postmigrering har slutförts inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
+    - Om du också har en Exchange 2010-, Exchange 2013- eller Exchange 2016-server kan du [använda Minimal Hybrid för att snabbt migrera Exchange-postlådor till Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). De minimala hybridstegen inkluderar en engångssynkronisering av användare till Azure AD och e-postmigrering från lokalt till molnet. När e-postmigrering har slutförts inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
     
-    - Använd katalogsynkroniseringsguiden för att synkronisera användarna till molnet. Följ stegen i [Konfigurera katalogsynkronisering för Microsoft 365 för](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) att slutföra den här processen. När du har synkroniserat användarna med molnet måste du [inaktivera katalogsynkronisering för Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
+    - Använd katalogsynkroniseringsguiden för att synkronisera användarna till molnet. Följ stegen i [Konfigurera katalogsynkronisering för Microsoft 365 för](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) att slutföra den här processen. När du har synkroniserat användarna med molnet måste du [inaktivera katalogsynkronisering för Microsoft 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     Du måste också ge varje användare som har lagts till på det här sättet en licens till Microsoft 365 för företag. Du kan göra detta i [installationsguiden](set-up.md) eller [tilldela licenser till användare](../admin/manage/assign-licenses-to-users.md).
     

@@ -1,19 +1,19 @@
 ---
 title: Microsoft Hanterade skrivbord arkiverade enheter
-description: Enheter som närmar sig pensionering som du fortfarande kan registrera dig men kommer att ha en förkortad livslängd
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+description: Enheter närmar pensionering som du fortfarande kan registrera men kommer att ha en förkortad livslängd
+keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418884"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080087"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Hanterade skrivbord arkiverade enheter
 
@@ -24,7 +24,7 @@ För att säkerställa bästa möjliga användarupplevelse drar Microsoft Manage
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-För att registreras i Microsoft Managed Desktop måste en enhet vara en av följande modeller och uppfylla eller överskrida de angivna specifikationerna för RAM, processorfamilj och diskutrymme. Ingen annan anpassning stöds.
+För att vara registrerad i Microsoft Managed Desktop måste en enhet vara en av följande modeller och uppfylla eller överskrida de angivna specifikationerna för RAM, processorfamilj och diskutrymme. Ingen annan anpassning stöds.
 
 
 
@@ -35,16 +35,18 @@ För att registreras i Microsoft Managed Desktop måste en enhet vara en av föl
 
 | Modell  | Minsta specifikationer  | Ytterligare krav  | Pensioneringsdatum |
 |---------|---------|---------|---------|
+| Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **den 22 maj 2023** |
 | Dell Latitude 5490| 256 GB / Intel i5 / 8 GB RAM | IR-kamera krävs | **den 9 januari 2023** |
-| Dell Latitude 7390 7390 2-i-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR-kamera krävs | **den 9 januari 2023** |
+| Dell Latitude 7390 7390 2-i-1 /7490 | 256 GB / Intel i5 / 8 GB RAM   | IR-kamera krävs | **den 9 januari 2023** |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera eller fingeravtryckssensor krävs  | **Den 15 februari 2023** |
-|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS03AV, IR-kamera krävs |**den 14 maj 2023** |
-|HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**den 14 maj 2023** |
+|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS03AV, IR-kamera krävs |**Den 14 maj 2023** |
+|HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**Den 14 maj 2023** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | **den 23 oktober 2023** |
-|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Inga | **Den 16 november 2022** |
-|Yta Gå| 128 GB / Intel 4415Y / 8GB RAM | Inga | **Den 2 augusti 2023** |
-|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 20 maj 2022** |
-|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 15 juni 2022** |
+|HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV, IR-kamera eller fingeravtrycksläsare krävs | **den 6 juni 2023** |
+|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Ingen | **Den 16 november 2022** |
+|Yta gå| 128 GB / Intel 4415Y / 8GB RAM | Ingen | **Den 2 augusti 2023** |
+|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 20 maj 2022** |
+|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 15 juni 2022** |
 
 
 Dessutom måste enheten också:

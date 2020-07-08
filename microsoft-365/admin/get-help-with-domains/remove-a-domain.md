@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Lär dig hur du tar bort en gammal domän från Microsoft 365 och flyttar användare och grupper till en annan domän.
-ms.openlocfilehash: fdf0b9db2c23632a213e860bd54097c1d453cf55
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432397"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079767"
 ---
 # <a name="remove-a-domain"></a>Ta bort en domän
 
@@ -50,7 +50,7 @@ Tar du bort domänen för att du vill lägga till den i ett annat Microsoft 365-
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a>.
 
-2. Välj **Aktiva användare av** > **användare**.
+2. Välj **Aktiva** > **användare**.
 
 3. Markera rutorna bredvid namnen på alla användare som du vill flytta.
 
@@ -58,7 +58,7 @@ Tar du bort domänen för att du vill lägga till den i ett annat Microsoft 365-
 
 5. Välj en annan domän i fönstret **Ändra domäner.**
 
-Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.
+You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret</a>.  
 
-2. Välj **Aktiva användare av** > **användare**.
+2. Välj **Aktiva** > **användare**.
 
 3. Markera rutorna bredvid namnen på alla användare som du vill flytta.
 
@@ -74,7 +74,7 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 5. Välj en annan domän i fönstret **Redigera domäner.**
   
-Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.
+You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret</a>.  
 
-2. Välj **Aktiva användare av** > **användare**.
+2. Välj **Aktiva** > **användare**.
 
 3. Markera rutorna bredvid namnen på alla användare som du vill flytta.
 
@@ -90,7 +90,7 @@ Du måste även göra detta för dig själv om du använder den domän som du vi
 
 5. Välj en annan domän i fönstret **Redigera domäner.**
   
-Du måste även göra detta för dig själv om du använder den domän som du vill ta bort. När du redigerar domänen för ditt konto måste du logga ut och logga in igen med den nya domänen du har valt.
+You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
 ::: moniker-end
 
@@ -202,7 +202,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 ::: moniker-end
   
-2. På sidan **Domäner** väljer du den domän som du vill ta bort.
+2. Markera den domän som du vill ta bort på sidan **Domäner.**
 
 3. Välj **Ta bort**i den högra rutan .
 
@@ -212,7 +212,7 @@ Du kan också använda PowerShell för att flytta användare till en annan domä
 
 Det kan ta så lite som 5 minuter för Microsoft 365 att ta bort en domän om den inte refereras på många platser som säkerhetsgrupper, distributionslistor, användare och Microsoft 365-grupper. Om det finns många referenser till domänen kan det ta flera timmar (ett dygn) innan domänen tas bort.
   
-Om du har hundratals eller tusentals användare använder du PowerShell och letar upp alla användare och flyttar dem till en annan domän. Annars kan det hända att några användare missas i gränssnittet och när du sedan försöker ta bort domänen så går det inte och du kommer inte att veta varför. Mer information finns i [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Om du vill ange standarddomänen använder du [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
 ## <a name="still-need-help"></a>Behöver du fortfarande hjälp?
 
@@ -221,7 +221,7 @@ Om du har hundratals eller tusentals användare använder du PowerShell och leta
 > [!NOTE]
 > Du kan inte ta bort domänen [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) från ditt konto.
   
-Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss](../contact-support-for-business-products.md) så kan vi hjälpa dig med det!
+Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
   
 ::: moniker-end
 
@@ -229,7 +229,7 @@ Fungerar det fortfarande inte? Domänen kan behöva tas bort manuellt. [Ring oss
 
 [Vanliga frågor och svar om domäner](../setup/domains-faq.md)
 
-[Få hjälp med Office 365-domäner](get-help-with-domains.md)
+[Få hjälp med Microsoft 365-domäner](get-help-with-domains.md)
 
 [Byta till ett annat Microsoft 365 för företag-abonnemang](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Få hjälp med att höja skyddsnivån i Microsoft 365
-ms.openlocfilehash: 39c79f438bd8018f2e70863225664c55e4bcd615
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0583bcb540991f20b3826549125800c80a3738db
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322129"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079827"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
-Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeration för att skydda mot nätfiske, skadlig programvara och andra hot. Dessa rekommendationer är lämpliga för organisationer med ett ökat behov av säkerhet, som politiska kampanjer, advokatbyråer och vårdcentraler. 
+Den här artikeln hjälper dig att öka skyddet i din Microsoft 365-prenumeration för att skydda mot nätfiske, skadlig kod och andra hot. Dessa rekommendationer är lämpliga för organisationer med ett ökat behov av säkerhet, som politiska kampanjer, advokatbyråer och vårdcentraler. 
 
-Innan du börjar kontrollerar du ditt säkra Office 365-resultat. Office 365 Secure Score analyserar organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Om du vidtar de åtgärder som rekommenderas i den här artikeln ökar du poängen. Målet är inte att uppnå maxpoäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. 
+Kontrollera ditt Microsoft Secure-resultat innan du börjar. Microsoft Secure Score analyserar organisationens säkerhet baserat på dina vanliga aktiviteter och säkerhetsinställningar och tilldelar en poäng. Börja med att notera din nuvarande poäng. Om du vidtar de åtgärder som rekommenderas i den här artikeln ökar du poängen. Målet är inte att uppnå maxpoäng, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar produktiviteten för användarna. 
 
 Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
@@ -91,7 +91,7 @@ Så här skapar du en regel för e-posttransport:
    
 Mer information finns i:
   
-- [Hur man handskas med ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [Hur man hanterar ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
 - [Återställa din OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
     
@@ -101,7 +101,7 @@ Mer information finns i:
 
 Hackare som får tillgång till en användares postlåda kan stjäla din e-post genom att ställa in postlådan för att automatiskt vidarebefordra e-post. Detta kan hända även utan användarens medvetenhet. Du kan förhindra att detta händer genom att konfigurera en regel för e-postflöde. 
   
-Så här skapar du en regel för e-posttransport genom att antingen titta på [den här korta videon](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller så här:
+Om du vill skapa en regel för e-posttransport tittar du antingen på [den här korta videon](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) eller så här:
   
 1. Klicka på **Administrationscenter för Administrationscenter** i Microsoft 365. \> **Exchange**
     
@@ -121,7 +121,7 @@ Så här skapar du en regel för e-posttransport genom att antingen titta på [d
 |Tillämpa den här regeln om ...  <br/> |Avsändaren . . . är extern/intern . . . Inne i organisationen  <br/> |
 |Lägg till villkor  <br/> |Meddelandeegenskaperna . . . inkludera meddelandetypen . . . Auto-framåt  <br/> |
 |Gör följande ...  <br/> |Blockera meddelandet . . . avvisa meddelandet och inkludera en förklaring.  <br/> |
-|Ange meddelandetext  <br/> |Automatisk vidarebefordran av e-post utanför den här organisationen förhindras av säkerhetsskäl.  <br/> |
+|Ange meddelandetext  <br/> |E-post som vidarebefordras automatiskt utanför den här organisationen förhindras av säkerhetsskäl.  <br/> |
 
 
 ## <a name="protect-your-email-from-phishing-attacks"></a>Skydda din e-post från nätfiskeattacker
@@ -134,7 +134,7 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
   
 1. Gå till [https://protection.office.com](https://protection.office.com). 
     
-2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret i det vänstra navigeringsfönstret i **det**vänstra navigeringsfönstret .
     
 3. På **sidan Policy** väljer du **ATP-anti-nätfiske**.
     
@@ -149,14 +149,14 @@ Om du vill skapa en ATP-policy mot nätfiske tittar du på [den här korta trän
 |:-----|:-----|
 |Namn  <br/> |Domän och mest värdefull kampanjpersonal  <br/> |
 |Beskrivning  <br/> |Se till att den viktigaste personalen och vår domän inte personifieras.  <br/> |
-|Lägga till användare som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagaren är**. Skriv användarnamn eller ange kandidatens, kampanjchefens och andra viktiga medarbetares e-postadress. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> |
+|Lägga till användare för att skydda  <br/> |Välj **+ Lägg till ett villkor, Mottagaren är**. Skriv användarnamn eller ange kandidatens, kampanjchefens och andra viktiga medarbetares e-postadress. Du kan lägga till upp till 20 interna och externa adresser som du vill skydda mot personifiering.  <br/> |
 |Lägga till domäner som ska skyddas  <br/> |Välj **+ Lägg till ett villkor, Mottagarens domän är**. Ange den anpassade domän som är kopplad till din Microsoft 365-prenumeration, om du har definierat en sådan. Du kan ange mer än en domän.  <br/> |
 |Välj åtgärder  <br/> |Om e-post skickas av en personifierad användare: Välj **Omdirigera meddelande till en annan e-postadress**och skriv sedan säkerhetsadministratörens e-postadress. till exempel *Alice <span> <span> @contoso.com*.          Om e-post skickas av en personifierad domän: Välj **karantänmeddelande**.  <br/> |
-|Information om brevlåda  <br/> |Som standard väljs postlådeinformation när du skapar en ny anti-phishing-princip. Lämna den här inställningen **På** för bästa resultat.  <br/> |
+|Information om brevlåda  <br/> |Som standard väljs postlådeinformation när du skapar en ny anti-phishing-policy. Lämna den här inställningen **På** för bästa resultat.  <br/> |
 |Lägga till betrodda avsändare och domäner  <br/> |Här kan du lägga till din egen domän eller andra betrodda domäner.  <br/> |
 |Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel *contoso. <span> <span> com*, i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
    
-Mer information finns i [Konfigurera Office 365 ATP-principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+Mer information finns i [Konfigurera Office 365 ATP:s principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Skydda mot skadliga bilagor, filer och länkar med advanced threat protection (ATP)
 
@@ -168,27 +168,27 @@ Kontrollera först att du har aktiverat den nya förhandsversionen av administra
 
 Om du inte ser **inställningssidan** med kort i din klientorganisation ännu läser du hur du utför de här stegen i Security &amp; Compliance Center. Se [Konfigurera ATP-säkra bilagor i Security & Compliance Center](#set-up-atp-safe-attachments-in-the-security--compliance-center) och Konfigurera SAFE Links för [ATP i Security & Compliance Center](#set-up-atp-safe-links-in-the-security--compliance-center).
 
-1.  Välj **Installation i**den vänstra navigeringsfältet .
+1.  Välj **Installationsprogrammet**i den vänstra navigeringsfältet .
 2. På sidan **Inställningar** väljer du **Visa** på **kortet Öka skydd mot avancerade hot.**</br></br>
     ![Välj Visa på öka skyddet mot avancerade hot.](../media/startatp.png) 
 
 3. På sidan **Öka skydd mot avancerade hot** väljer du Kom **igång**.
-4. Markera kryssrutorna bredvid Länkar **och bifogade filer i e-post,** **Skanna filer i SharePoint, OneDrive och Teams och Skanna**i **Office-skrivbord och Office Online-appar i Office-datorer och Office Online-appar** under **Skanna objekt efter skadligt innehåll**.
+4. Markera kryssrutorna bredvid Länkar **och bifogade filer i e-post,** **Skanna filer i SharePoint, OneDrive och Teams och Skanna**i **Office-skrivbord och Office Online-appar i Office-skrivbord och Office Online-appar** under **Skanna objekt efter skadligt innehåll**.
 
-      - Under **Länkar och bilagor i e-post**skriver du i Alla användare eller de specifika användare vars e-post du vill ska skannas.
+      - Under **Länkar och bilagor i e-post**, Skriv i Alla användare eller de specifika användare vars e-post du vill ska skannas.
 
     ![Markera alla kryssrutor i Öka skyddet mot avancerade hot.](../media/setatp.png)
 5. Välj **Skapa principer** för att aktivera ATP-säkra bilagor och ATP-säkra länkar.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Konfigurera ATP-säkra bilagor i Security & Compliance Center
 
-Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dokument, presentationer, kalkylblad med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Office 365 Advanced Threat Protection innehåller ATP Safe Attachment protection, men det här skyddet är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda det här skyddet. Det här skyddet omfattar filer i SharePoint, OneDrive och Microsoft Teams.
+Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dokument, presentationer, kalkylblad med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Office 365 Advanced Threat Protection innehåller ATP-skydd för säkra bilagor, men det här skyddet är inte aktiverat som standard. Vi rekommenderar att du skapar en ny regel för att börja använda det här skyddet. Det här skyddet omfattar filer i SharePoint, OneDrive och Microsoft Teams.
   
-Om du vill skapa en ATP-princip för säker bilaga tittar du antingen på [den här korta videon](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller gör följande:
+Om du vill skapa en ATP-princip för säker bifogad fil tittar du antingen på [den här korta videon](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)eller gör följande:
   
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret i det vänstra navigeringsfönstret i **det**vänstra navigeringsfönstret .
     
 3. På sidan Princip väljer du **BETRODDa ATP-bilagor**.
     
@@ -206,10 +206,10 @@ Om du vill skapa en ATP-princip för säker bilaga tittar du antingen på [den h
 |Namn  <br/> |Blockera nuvarande och framtida e-postmeddelanden med upptäckt skadlig kod.  <br/> |
 |Beskrivning  <br/> |Blockera aktuella och framtida e-postmeddelanden och bilagor med upptäckt skadlig kod.  <br/> |
 |Spara okända skadliga filer för okänd skadlig kod  <br/> |Välj **Blockera - Blockera aktuella och framtida e-postmeddelanden och bilagor med upptäckt skadlig kod**.  <br/> |
-|Omdirigera bifogad fil vid identifiering  <br/> |Aktivera omdirigering (välj den här rutan) Ange administratörskontot eller en postlåda för karantän.          Använd markeringen ovan om du söker efter bilagor eller fel uppstår (markera den här rutan).  <br/> |
+|Omdirigera bifogad fil vid identifiering  <br/> |Aktivera omdirigering (välj den här rutan) Ange administratörskontot eller en postlådeinställning för karantän.          Använd markeringen ovan om skadlig kod söker efter bilagor time out eller fel inträffar (välj den här rutan).  <br/> |
 |Tillämpas på  <br/> |Mottagardomänen är . . . välj domän.  <br/> |
    
-Mer information finns i [Konfigurera Office 365 ATP-principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
+Mer information finns i [Konfigurera Office 365 ATP:s principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 ### <a name="set-up-atp-safe-links-in-the-security--compliance-center"></a>Konfigurera ATP-säkra länkar i Security & Compliance Center
 
@@ -225,7 +225,7 @@ Om du vill konfigurera ATP Safe Links tittar du på [den här korta träningsvid
   
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt administratörskonto. 
     
-2. Välj &amp; **Princip**i det vänstra navigeringsfönstret **Threat management**i det vänstra navigeringsfönstret.
+2. Välj &amp; **Princip**i det vänstra navigeringsfönstret i det vänstra navigeringsfönstret i **det**vänstra navigeringsfönstret .
     
 3. På sidan Princip väljer du **BETRODDA ATP-länkar**.
     
@@ -258,14 +258,14 @@ Mer information finns i [säkra länkar till Office 365 ATP](https://go.microsof
 
 När du har aktiverat granskningsloggsökningen i &amp; säkerhetsorganisationscentret kan du behålla administratören och annan användaraktivitet i loggen och söka efter den. 
 
-Du måste tilldelas rollen Granskningsloggar i Exchange Online för att aktivera eller inaktivera granskningsloggsökning i din Microsoft 365-prenumeration. Som standard tilldelas den här rollen till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Globala administratörer i Microsoft 365 är som standard medlemmar i den här gruppen.
+Du måste tilldelas rollen Granskningsloggar i Exchange Online för att aktivera eller inaktivera granskningsloggsökning i din Microsoft 365-prenumeration. Som standard tilldelas den här rollen rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Globala administratörer i Microsoft 365 är medlemmar i den här gruppen som standard.
 
 1. Om du vill aktivera granskningsloggsökningen går du till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> och väljer sedan **Efterlevnad** under **Administrationscenter** i den vänstra navigeringscentralen. 
 2. På sidan **Microsoft 365-efterlevnad** väljer du **Fler resurser**och sedan **öppna** på ** &amp; säkerhetscenterkortet för Office 365.**
 
-    ![Välj Öppna på & kompatibilitetsbilar.](../media/gotosecandcomp.png)
+    ![Välj Öppna på & efterlevnad bilar.](../media/gotosecandcomp.png)
 3. På sidan säkerhet och efterlevnad väljer du **Sök** och sedan **Granska loggsökning**.
-1. Högst upp på **söksidan för granskningsloggen** väljer du **Aktivera granskning**.
+1. Högst upp på söksidan för **granskningsloggen** väljer **du Aktivera granskning**.
 
 När funktionen är aktiverad kan du söka efter filer, mappar och många aktiviteter. Mer information finns [i sök i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 

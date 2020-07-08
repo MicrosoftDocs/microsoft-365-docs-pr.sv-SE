@@ -1,5 +1,5 @@
 ---
-title: Lägga till en domän i Office 365
+title: Lägga till en domän i Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Lägg till din domän i Office 365 i Microsoft 365-administrationscentret genom att lägga till en DNS-post hos din DNS-värd. Installationsguiden går igenom processen.
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lägg till din domän i Microsoft 365 i Microsoft 365-administrationscentret genom att lägga till en DNS-post hos din DNS-värd. Installationsguiden hjälper dig att gå igenom processen.
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398996"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079731"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "44398996"
 
  **[Läs frågor och svar om domäner](domains-faq.md)** om du inte hittar det du letar efter. 
   
- *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller en [företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
+ *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller en [företagsplan](https://products.office.com/business/office). Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
 
  Följ dessa steg för att lägga till, konfigurera eller fortsätta konfigurera en domän. 
 
@@ -91,10 +91,10 @@ ms.locfileid: "44398996"
     
 6. Välj hur du vill göra de DNS-ändringar som krävs för att Office ska kunna använda domänen.
     
-    1. Välj **Lägg till DNS-posterna åt mig** om du vill att Dns ska konfigureras automatiskt. 
+    1. Välj **Lägg till DNS-posterna åt mig** om du vill att Office ska konfigurera DNS automatiskt. 
     
   
-    2. Välj **Jag lägger till DNS-posterna själv** om du bara vill koppla specifika Office 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och göra detta senare. **Välj det här alternativet om du vet exakt vad du gör.**
+    2. Välj **Jag lägger till DNS-posterna själv** om du bara vill bifoga specifika Microsoft 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och göra detta senare. **Välj det här alternativet om du vet exakt vad du gör.**
     
 7. Om du själv väljer att lägga till *DNS-poster* väljer du **Nästa** och du ser en sida med alla poster som du behöver lägga till på registrarernas webbplats för att konfigurera domänen. 
     
@@ -130,7 +130,7 @@ Följ stegen nedan för att lägga till en anpassad post för en webbplats eller
 
 [Med Domain](https://www.domainconnect.org/) Connect-aktiverade registratorer kan du lägga till din domän i Microsoft 365 i en trestegsprocess som tar minuter. 
   
-I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigurerar domänens poster, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, fungerar med din domän.
+I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigurerar domänens poster, så e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, som Teams, som fungerar med din domän.
   
 > [!NOTE]
 > Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.
@@ -143,13 +143,13 @@ I guiden bekräftar vi bara att du äger domänen och sedan automatiskt konfigur
 - [Wordpress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer eller WildWestDomains (GoDaddy-återförsäljare med SecureServer DNS hosting)
+- SecureServer eller WildWestDomains (GoDaddy återförsäljare med SecureServer DNS hosting)
     - [MadDog domäner](https://www.maddogdomains.com/)
     - [BilligaNamn](https://www.cheapnames.com)
 
 ### <a name="what-happens-to-my-email-and-website"></a>Vad händer med min e-post och webbplats?
 
-När du är klar med installationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för din domän börjar komma till Microsoft 365. Kontrollera att du har lagt till användare och konfigurerat postlådor i Office 365 för alla som får e-post i din domän.
+När du är klar med installationen uppdateras MX-posten för din domän så att den pekar på Microsoft 365 och all e-post för din domän börjar komma till Microsoft 365. Se till att du har lagt till användare och konfigurerat postlådor i Microsoft 365 för alla som får e-post på din domän!
   
 Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är. Installationsstegen För Domain Connect påverkar inte din webbplats.
 
@@ -159,7 +159,7 @@ Om du har en webbplats som du använder med ditt företag kommer den att fortsä
 
 [Vad är en domän?](../get-help-with-domains/what-is-a-domain.md)
 
-[Köpa ett domännamn i Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Köpa ett domännamn i Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Konfigurera din domän (tjänstspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 

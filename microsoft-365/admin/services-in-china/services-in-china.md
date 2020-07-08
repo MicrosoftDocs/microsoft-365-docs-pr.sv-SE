@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Läs mer om Office 365 som drivs av 21Vianet och som är utformat för att uppfylla behoven av säkra, tillförlitliga och skalbara molntjänster i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779923"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079743"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 med 21Vianet
 
@@ -57,7 +57,7 @@ Om du vill lära dig hur du kommer igång med allmänna Office 365-tjänster lä
 |:-----|:-----|
 |Anpassade domäner  <br/> |Administratörer kan skapa och/eller använda anpassade domäner som registrerats via kinesiska domänleverantörer. Om du inte har en anpassad domän kan du [köpa ett domännamn](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) från en domännamnsregistratorer. Om du redan har en, [Hitta din domänregistratorer eller DNS-värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Om du skapar en offentlig webbplats med office 365 SharePoint Online-tjänsten kräver Kinas internetefterlevnadspolicy att du får ett ICP-nummer (Internet Content Provider).  **Obs:** Automatisk validering för otillåtna ord i anpassade domännamn är inte tillgänglig.           |
 |Prenumerationer, fakturering och teknisk support  <br/> |Tillhandahålls av 21Vianet. Information om hur du kontaktar supporten finns i [Kontakta Support för Office 365 för företag](../contact-support-for-business-products.md).  <br/> |
-|Självbetjäning för återställning av lösenord  <br/> |Endast tillgängligt för administratörer. Mer information finns [i Ändra eller återställa ditt lösenord i Microsoft 365 som drivs av 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Självbetjäning för återställning av lösenord  <br/> |Endast tillgängligt för administratörer. Mer information finns [i Ändra eller återställa ditt lösenord i Office 365 som drivs av 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Säkerhet, sekretess, efterlevnad och information om supportnivåer  <br/> |Tillhandahålls av 21Vianet.  <br/> |
 |Konfigurera Office-skrivbordet  <br/> |Office-skrivbordskonfiguration är inte tillgänglig för Office 2010 och Office 2007. Administratörer kan dock [konfigurera aktuella Office-skrivbordsprogram så att de fungerar med Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
 |Stöd för mobil och enhet\*  <br/> | Kommer snart är följande mobila funktioner:  <br/>  Hantering av mobila enheter (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) är inte tillgänglig, men du kan använda Exchange ActiveSync-enheter eller ett erbjudande från Research in Motion (RIM, BlackBerry trådlös e-postlösning) för att köra Blackberry Enterprise Server (BES).  <br/>  Mer information om mobilsupport finns i [Konfigurera och hantera mobil åtkomst för användarna](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
@@ -129,11 +129,11 @@ För organisationer som kör äldre eller blandade versioner av Exchange Server 
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Ja  <br/> | Alla  <br/> |
 | Blandade 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla utom eDiscovery/Archiving på plats, OWA-åtkomst (se tabellen nedan)  <br/> |
 | Blandade 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Ja  <br/> | Endast manuellt konfigurerad ledig/upptagen  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Ja  <br/> | Endast ledig/upptagen  <br/> |
 | 2007  <br/> | 2013 SP1 eller 2010 SP3No  <br/> | EJ TILLÄMPLIGT  <br/> | Stöds inte  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | EJ TILLÄMPLIGT  <br/> | Stöds inte  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
 
    
 > [!IMPORTANT]
