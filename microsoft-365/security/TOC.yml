@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Lär dig frågespråket
                   href: mtp/advanced-hunting-query-language.md
+                - name: Använda metodtips för frågor
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Arbeta med frågeresultat
                   href: mtp/advanced-hunting-query-results.md
                 - name: Använda delade frågor
@@ -179,8 +181,6 @@
                   items:
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Använda metodtips för frågor
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Anpassade identifieringar
                   items:
                     - name: Översikt över anpassade identifieringar
