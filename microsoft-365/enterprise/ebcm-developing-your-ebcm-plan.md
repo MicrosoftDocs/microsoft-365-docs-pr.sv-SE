@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Saker du bör tänka på när du utvecklare en molnmedveten affärskontinuitetsplan.
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42812614"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083521"
 ---
 # <a name="developing-your-continuity-plan"></a>Utveckla en kontinuitetsplan
 
@@ -80,6 +80,8 @@ Här är ett exempel på en beroendeanalys (DA – Dependency Analysis) du kan a
 
 När du har inventerat dina affärsprocesser och kartlagt relationerna till andra processer och tekniker måste du skapa valideringsscenarier för alla processer. I princip ska du ta reda på hur du ska validera affärsprocessernas kontinuitetsplaner. Du kommer troligen finna att vissa är viktigare än andra och att du vill prioritera dem.
 Kom ihåg att regelbunden utbildning av medarbetare om svar på incidenter och kontinuitetsåtgärder är viktigt när planen har upprättats. Granskningar efter incidenter ska användas för att förbättra återhämtningsstrategierna genom att lägga till information från varje validering eller test.
+
+![funktionsvalidering visio](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>Samordning och kommunikation vid incidenter
 

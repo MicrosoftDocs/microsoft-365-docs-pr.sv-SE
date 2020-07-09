@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Några exempel på begränsningar för händelsescenarier i Microsoft 365-tjänsten.
-ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "42806484"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086639"
 ---
 # <a name="service-incident-mitigation-strategies"></a>Strategier för att begränsa händelser i tjänsten
 
@@ -36,6 +36,7 @@ Här är några strategier och scenarier som visar hur du kan minska effekten p�
 |VoIP-telefoner används som sekundär kommunikationsmetod.|Implementera ej VoIP-telefoner som kan användas för PSTN-samtal, framför allt för nätverks- och tjänståtgärder under händelser. Lägg till en anställds mobiltelefonnummer i företagets katalog för att tillåta att kritisk personal kontaktas via det mobila nätverket.|
 |OneDrive för företag används för fillagring och användarproduktivitet. [Filer på begäran](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234) konfigureras för att frigöra utrymme på lokala användarenheter.|Med grupprinciper för OneDrive-synkronisering kan administratörer begära att visst innehåll ska synkroniseras lokalt eller frigöra utrymme vid behov. Om du vill minska risken för att dokument blir otillgängliga kan du konfigurera den här principen för lokal synkronisering av viktiga dokument. Träna användarna att manuellt använda inställningen ”Behåll alltid på den här enheten” för viktiga dokument.|
 |För kommunikation av störningar i verksamheten till kunder och leverantörer används Exchange Online.|Offentliga sociala nätverk från tredje part kan användas som ett alternativt sätt att masskommunicera.
+|Lokal hybridarkitektur som ADFS eller Pass Through-autentisering fungerar inte, och orsakar störningar i användarnas autentisering till molntjänster.|Konfigurera [synkronisering för hash-lösenord](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls#deploy-password-hash-sync-even-if-you-are-federated-or-use-pass-through-authentication) tillsammans med dina hybridverifieringstjänster som en sekundär molnbaserad autentiseringsmekanism för att undvika inloggningsstörningar under avbrott. [Läs Skapa en elastisk hanteringsstrategi för åtkomstkontroll med Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls) om du vill ha mer information om hur du skapar elastiska arkitekturer för autentisering och åtkomstkontroll.|  
 
 ## <a name="leveraging-mobile-app-access"></a>Utnyttja tillgång till mobilappar
 

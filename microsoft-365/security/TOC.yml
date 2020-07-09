@@ -215,8 +215,12 @@
               href: mtp/device-profile.md
             - name: Ge feedback
               href: mtp/feedback.md
-            - name: Hantera biljetter via ServiceNow
-              href: ./mtp/tickets.md
+            - name: Skapa ärenden och uppgifter i ServiceNow
+              items:
+                - name: Översikt över ServiceNow-integrering
+                  href: ./mtp/tickets.md
+                - name: ServiceNow-ärenden i säkerhetscentret
+                  href: ./mtp/tickets-security-center.md
     - name: Office 365-säkerhet
       items:
         - name: Komma igång
