@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Hantera användare och grupper
-summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+summary: Ta en titt på de här resurserna för att hjälpa administratörer med vanliga uppgifter eller gå till navigeringsfönstret till vänster för en fullständig lista.
 metadata:
   title: Hantera användare och grupper
   description: Hantera lösenord, lägga till och ta bort användare, konfigurera grupper och hantera licenser
@@ -14,7 +14,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785478"
@@ -49,9 +49,9 @@ landingContent:
     links:
     - text: Skapa grupper
       url: ../create-groups/create-groups.md
-    - text: Lägga till medlemmar
+    - text: Lägg till medlemmar
       url: ../create-groups/add-or-remove-members-from-groups.md
-    - text: Återställa eller återställa en borttagen grupp
+    - text: Återställa eller återvinn en borttagen grupp
       url: ../create-groups/restore-deleted-group.md
     - text: Hantera gäståtkomst i grupper
       url: ../create-groups/manage-guest-access-in-groups.md
@@ -59,15 +59,15 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Återställa en användares lösenord
+    - text: Återställ en användares lösenord
       url: reset-passwords.md
     - text: Konfigurera lösenord med obegränsad giltighetstid
       url: set-password-to-never-expire.md
     - text: Låt användare återställa sina egna lösenord
       url: let-users-reset-passwords.md
-    - text: Ange principen för förfallodatum för lösenord för din organisation
+    - text: Ange förfalloprincip för lösenord i organisationen
       url: ../manage/set-password-expiration-policy.md
-    - text: Återställa administratörslösenord
+    - text: Återställa administratörslösenordet
       url: reset-passwords.md#reset-my-admin-password
 - title: Ta bort en medarbetare
   linkLists:
@@ -77,7 +77,7 @@ landingContent:
       url: delete-a-user.md
     - text: Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
       url: get-access-to-and-back-up-a-former-user-s-data.md
-    - text: Vidarebefordra e-post till en annan användare
+    - text: Vidarebefordra e-post till ett annan användare
       url: ../email/configure-email-forwarding.md
     - text: Ta bort licensen
       url: ../manage/remove-licenses-from-users.md

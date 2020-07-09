@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Komma igång
-summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+summary: Ta en titt på de här resurserna för att hjälpa administratörer med vanliga uppgifter eller gå till navigeringsfönstret till vänster för en fullständig lista.
 metadata:
   title: Komma igång
   description: Konfigurera din prenumeration och e-post. lägga till användare och installera appar
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 0af560ae2a7f8aa028e0cb493c9070f78f93e0a4
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44779851"
@@ -22,7 +22,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Välj ett abonnemang och registrera dig för Microsoft 365
+    - text: Välj en plan och registrera dig för Microsoft 365
       url: ../admin-overview/sign-up-for-office-365.md
   - linkListType: video
     links:
@@ -32,11 +32,11 @@ landingContent:
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
     - text: Registrera dig för Microsoft Business Premium
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-- title: Guidad uppsättning
+- title: Guidad konfiguration
   linkLists:
   - linkListType: overview
     links:
-    - text: Planera din uppsättning
+    - text: Planera konfigurationen
       url: plan-your-setup.md
   - linkListType: how-to-guide
     links:
@@ -46,9 +46,9 @@ landingContent:
       url: setup-business-standard.md
     - text: Konfigurera Microsoft Business Premium
       url: ../../business/set-up.md
-    - text: Konfigurera Microsoft Apps for Business
+    - text: Konfigurera Microsoft Apps för affärsverksamhet
       url: setup-apps-for-business.md
-- title: Slutför inställning
+- title: Slutför konfigureringen
   linkLists:
   - linkListType: how-to-guide
     links:
