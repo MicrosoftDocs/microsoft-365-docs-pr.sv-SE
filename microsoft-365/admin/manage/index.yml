@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Hantera dina data och tjänster
-summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+title: Hantera data och tjänster
+summary: Ta en titt på de här resurserna för att hjälpa administratörer med vanliga uppgifter eller gå till navigeringsfönstret till vänster för en fullständig lista.
 metadata:
-  title: Hantera dina data och tjänster
+  title: Hantera data och tjänster
   description: Övervaka tjänstens status, säkerhetskopiera data, installera tillägg och uppgradera till de senaste apparna
   ms.service: O365-administration
   ms.topic: landing-page
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780103"
@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: Övervaka användaraktivitet med hjälp av rapporter
       url: ../activity-reports/activity-reports.md
-    - text: Övervaka användningsanalys
+    - text: Övervaka användningsanalyser
       url: ../usage-analytics/usage-analytics.md
     - text: Aktivera användningsanalyser
       url: ../usage-analytics/enable-usage-analytics.md
@@ -40,9 +40,9 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Få åtkomst till och säkerhetskopiera en tidigare anställds användardata.
+    - text: Få åtkomst till och säkerhetskopiera en tidigare användares data
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: Konfigurera lagring av e-post (Microsoft 365 Business Premium)
+    - text: Konfigurera e-postbevarande (Microsoft 365 Business Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
     - text: Ta bort företagsdata från enheter (Microsoft 365 Business Premium)
       url: ../../business/remove-company-data.md
@@ -62,21 +62,21 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Administratörsdokumentation för Microsoft Teams
+    - text: Microsoft Teams-dokumentation för administratörer
       url: https://docs.microsoft.com/en-us/microsoftteams/
     - text: Använda Outlook och Teams tillsammans
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
-    - text: Utbildning för Microsoft Teams
+    - text: Microsoft Teams-utbildning
       url: https://support.microsoft.com/office/4f108e54-240b-4351-8084-b1089f0d21d7
 - title: OneDrive och SharePoint
   linkLists:
   - linkListType: overview
     links:
-    - text: SharePoint-dokumentation för IT-proffs och IT-administratörer
+    - text: SharePoint-dokumentation för IT-tekniker och administratörer
       url: https://docs.microsoft.com/sharepoint/
-    - text: OneDrive-dokumentation för IT-proffs och IT-administratörer
+    - text: OneDrive-dokumentation för IT-tekniker och administratörer
       url: https://docs.microsoft.com/onedrive/
   - linkListType: how-to-guide
     links:

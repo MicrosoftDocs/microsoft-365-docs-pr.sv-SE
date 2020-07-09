@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Arbeta med kunder
-summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+summary: Ta en titt på de här resurserna för att hjälpa administratörer med vanliga uppgifter eller gå till navigeringsfönstret till vänster för en fullständig lista.
 metadata:
   title: Arbeta med kunder
-  description: Dela dokument och använda Teams för att samarbeta och träffas
+  description: Dela dokument och använda Teams för att samarbeta och hålla möten
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 80aea7aef92cd584df0c35b0d14ec71e0ad738b7
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785466"
@@ -30,9 +30,9 @@ landingContent:
     links:
     - text: Skapa ett team med gästanvändare
       url: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
-    - text: Gå med i ett team som gäst
+    - text: Ansluta till ett team som gäst
       url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
-    - text: Chatta med anställda och kunder
+    - text: Chatta med medarbetare och kunder
       url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
     - text: Schemalägga ett Teams-möte med gästanvändare
       url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a

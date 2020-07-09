@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
   ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 06/27/2020
   ms.locfileid: "44909294"
@@ -54,7 +54,7 @@ additionalContent:
       summary: Utformad för stora organisationer. Skydda företaget och transformera ditt sätt att arbeta med Office-appar, Windows 10 och Enterprise Mobility + Security.
       url: ./enterprise/index.yml
     - title: Microsoft 365-center för lösningar och arkitektur
-      summary: Förstå hur du utformar lösningen och arkitekturen som är rätt för din organisation.
+      summary: Lär dig hur du utformar en lösning och en arkitektur som passar din organisation.
       url: ./solutions/index.yml
     - title: Microsoft 365 Education
       summary: Utformad för lärare för att uppmuntra kreativitet, främja samarbete och ge en enkel och säker upplevelse i en specifik och prisvärd lösning som är utformad för utbildning.
