@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Granska svaren på vanliga frågor om centraliserad distribution från microsoft 365-administrationscentret.
-ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Granska svaren på vanliga frågor om centraliserad distribution från administrationscentret för Microsoft 365.
+ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399830"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083568"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
@@ -32,15 +32,15 @@ Centraliserad distribution är det rekommenderade sättet för en Office 365-adm
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Hur vet jag om min organisation har konfigurerats för centraliserad distribution?  
 
-Centraliserad distribution av tillägg kräver att användare använder Microsoft 365 Apps för företag (och är inloggade på Office med sina organisationsloggningsuppgifter) och har Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federerade till Azure Active Directory.  
+Centraliserad distribution av tillägg kräver att användare använder Microsoft 365 Apps för företag (och är inloggade på Office med hjälp av sina organisationslogguppgifter) och har Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federerade till Azure Active Directory.  
  
 Centraliserad distribution stöds endast för onlinepostlådor. Det stöder inte distribution till lokala Exchange-postlådor.
  
-Du kan använda [kompatibilitetskontrollen för centraliserad distribution i Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   för att avgöra om din prenumeration är kvalificerad. 
+Du kan använda den [centraliserade kompatibilitetskontrollen](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)för distribution   för att avgöra om din prenumeration är kvalificerad. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Hur inriktar du dig på tilläggsanvändartilldelningar med centraliserad distribution?  
 
-Centraliserad distribution stöder tilldelningar till enskilda användare, grupper och alla i klienten. Centraliserad distribution kan användas för användare i grupper på den högsta nivån eller grupper utan överordnade grupper, men inte för användare i kapslade grupper eller grupper som har överordnade grupper. Centraliserad distribution är också en del av de flesta Azure Active Directory-grupper, inklusive Office 365-grupper, distributionslistor och säkerhetsgrupper.  
+Centraliserad distribution stöder tilldelningar till enskilda användare, grupper och alla i klienten. Centraliserad distribution kan användas för användare i grupper eller grupper på den högsta nivån utan överordnade grupper, men inte för användare i kapslade grupper eller grupper som har överordnade grupper. Centraliserad distribution är också en del av de flesta Azure Active Directory-grupper, inklusive Office 365-grupper, distributionslistor och säkerhetsgrupper.  
 
 Det är bättre att använda grupptilldelningar i stället för enskilda användartilldelning för enklare hantering.
  
@@ -72,7 +72,7 @@ Ja. Administratörer kan ladda upp en ny manifestfil för att stödja metadataä
  
 Mer information finns [i tillägg för företagslinje](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
 
-## <a name="can-admins-turn-off-add-ins"></a>Kan administratörer inaktivera tillägg?  
+## <a name="can-admins-turn-off-add-ins"></a>Kan administratörer stänga av tillägg?  
 
 Ja. Administratörer kan aktivera eller inaktivera de tillägg som de distribuerar för alla användare från Microsofts administrationscenter.
 
@@ -92,7 +92,7 @@ Vi föreslår att du når ut till ISV-utvecklaren för det betalda tillägget f�
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>Vilken administratörsroll behöver jag hantera tillägg för min organisation?  
 
-Du måste ha rollen Global administratör för att hantera tillägg. Om du är den person som har köpt din Microsoft 365 för företag-prenumeration är du global administratör. 
+Du måste ha rollen Global administratör för att hantera tillägg. Om du är den person som köpte din Microsoft 365 för företag-prenumeration är du global administratör. 
  
 Din prenumeration levereras med en uppsättning administratörsroller som du kan tilldela andra användare i organisationen. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personer i organisationen behörighet att utföra specifika uppgifter i Microsoft 365-administrationscentret.  
  

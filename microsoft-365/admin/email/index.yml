@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Hantera e-post och kalendrar
-summary: Kolla in dessa resurser för att hjälpa administratörer med vanliga uppgifter, eller se navigeringsfönstret till vänster för en fullständig lista.
+summary: Ta en titt på de här resurserna för att hjälpa administratörer med vanliga uppgifter eller gå till navigeringsfönstret till vänster för en fullständig lista.
 metadata:
   title: Hantera e-post och kalendrar
-  description: Hantera e-postinställningar, distributionsgrupper, säkerhetsinställningar och konfigurera delade postlådor
+  description: Hantera e-postinställningar, distributionsgrupper och säkerhetsinställningar och konfigurera delade postlådor
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780223"
@@ -22,7 +22,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Hantera inställningar för e-post för användare
+    - text: Hantera e-postinställningar för användare
       url: office-365-user-email-settings.md
     - text: Om e-postsamarbete
       url: email-collaboration.md
@@ -38,11 +38,11 @@ landingContent:
       url: create-edit-or-delete-a-security-group.md
     - text: Migrera e-post och kontakter till Microsoft 365
       url: ../setup/migrate-email-and-contacts-admin.md
-- title: Hantera delade postlådor
+- title: Skapa delade postlådor
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Konfigurera inställningar för delad postlåda
+    - text: Redigera inställningar för delad postlåda
       url: configure-a-shared-mailbox.md
     - text: Konvertera en användarpostlåda till en delad postlåda
       url: convert-user-mailbox-to-shared-mailbox.md
@@ -54,7 +54,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Hantera din kalender och dina kontakter i Outlook
+    - text: Hantera kalendern och kontakter i Outlook
       url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
   - linkListType: video
     links:
@@ -66,9 +66,9 @@ landingContent:
     links:
     - text: Hitta och åtgärda problem med e-postleverans
       url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
-    - text: Åtgärda och hitta problem när du har lagt till domänen eller DNS-posterna
+    - text: Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
       url: ../get-help-with-domains/find-and-fix-issues.md
-    - text: Återställa borttagna e-postmeddelanden i en användarpostlåda
+    - text: Återskapa borttagna e-postmeddelanden i en användares postlåda
       url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
     - text: Åtgärda anslutningsproblem med Outlook i Microsoft 365 och Exchange Online
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

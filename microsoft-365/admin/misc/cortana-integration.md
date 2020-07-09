@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: När användarna är inloggade med giltiga arbets- eller skolkonton kan de få molnbaserade hjälptjänster med Cortana i Microsoft 365-upplevelser som uppfyller sekretess-, säkerhets- och efterlevnadslöftena på företagsnivå på företagsnivå.
-ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411007"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083556"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -33,7 +33,7 @@ Cortana, din personliga produktivitetsassistent, erbjuder AI-drivna upplevelser 
 
 Som en personlig produktivitetsassistent är Cortana utformad för att leverera funktioner som på ett säkert och säkert sätt bearbetar och resonerar över Office 365-data som e-post, filer, chattar osv., för att spara tid, öka effektiviteten och öka användarnas produktivitet.
 
-Framöver fokuserar vi Cortana på företagets produktivitet.
+Framöver fokuserar vi Cortana på företagets produktivitet. 
 
 - I enlighet med andra Office 365-tjänster uppfyller Cortanas företagstjänster samma sekretess-, säkerhets- och efterlevnadslöften på företagsnivå som återspeglas i [villkoren för onlinetjänster (OST).](https://www.microsoft.com/licensing/product-licensing/products)
 
@@ -60,10 +60,10 @@ I tabellen nedan beskrivs datahanteringen för Cortana-företagstjänster.
 |**Lagring**  <br/> |Kunddata lagras på Microsoft-servrar i Office 365-molnet. Dina data är en del av din klient. <br/> Talljud behålls inte.  <br/> |
 |**Stannar i Geo**  <br/> |Kunddata lagras på Microsoft-servrar i Office 365-molnet i Geo. Dina data är en del av din klient.  <br/> |
 |**Lagring**  <br/> |Kunddata tas bort när kontot stängs av klientadministratören eller när en begäran om borttagning av GDPR-datareserättigheter görs. <br/> Talljud behålls inte.  <br/> |
-|**Behandling och konfidentialitet**  <br/> |Personal som arbetar med behandling av kunddata och personuppgifter (i) kommer att behandla sådana uppgifter endast på instruktioner från Kunden, och (ii) kommer att vara skyldig att upprätthålla sekretessen och säkerheten för sådana uppgifter även efter deras engagemang slutar.  <br/> |
+|**Behandling och sekretess**  <br/> |Personal som arbetar med behandling av kunddata och personuppgifter (i) kommer att behandla sådana uppgifter endast på instruktioner från Kunden, och (ii) kommer att vara skyldig att upprätthålla sekretessen och säkerheten för sådana uppgifter även efter deras engagemang slutar.  <br/> |
 |**Användning**  <br/> |Microsoft använder endast kunddata för att tillhandahålla de överenskomna tjänsterna och för ändamål som är kompatibla med dessa tjänster. Maskininlärning för att utveckla och förbättra modeller är ett av dessa syften. Maskininlärning görs i Office 365-molnet och det finns ingen mänsklig visning, granskning eller märkning av dina kunddata. <br/> Dina data används inte för att rikta reklam.  <br/> |
 
-## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Cortana-företagstjänster i Microsoft 365-upplevelser
+## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Cortana företagstjänster i Microsoft 365-upplevelser
 
 ### <a name="cortana-in-windows-10-version-2004-and-later"></a>Cortana i Windows 10 (version 2004 och senare)
 
@@ -81,13 +81,33 @@ Från och med Windows 10, version 2004, Cortana är en Universal Windows Platfor
 
 [Läs mer om Cortana i Windows 10](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
+### <a name="cortana-voice-assistance-in-teams"></a>Cortana rösthjälp i team
+
+Cortana rösthjälp i Teams mobilapp gör det möjligt för Microsoft 365 Enterprise-användare att effektivisera kommunikation, samarbete och mötesrelaterade uppgifter med hjälp av talat naturligt språk. Användare kan tala med Cortana genom att klicka på mikrofonknappen längst upp till höger i Appen Teams. De kan ansluta med någon när du är på språng genom att göra en röstfråga som "ring Megan" eller "skicka ett meddelande till mitt nästa möte." Användare kan också gå med i möten genom att säga "gå med i mitt nästa möte" och använda rösthjälp för att dela filer, kontrollera sin kalender med mera. Dessa rösthjälpsupplevelser levereras med Cortana-tjänster i företagsklass som helt överensstämmer med Sekretess-, säkerhets- och efterlevnadslöften för Office 365 enligt beskrivningen i [villkoren för onlinetjänster (OST).](https://www.microsoft.com/licensing/product-licensing/products)
+
+**Administratörskontroll**
+
+Cortana rösthjälp aktiveras som standard för klienter. Administratörer kan styra vem i deras klientorganisation som kan använda Cortana-rösthjälp i Teams via en policy (TeamsCortanaPolicy). Den här principen kan ställas in på antingen en användarkontonivå eller klientnivå. Administratörer kan också använda cortanaVoiceInvocationMode-fältet i den här principkontrollen för att avgöra om Cortana är inaktiverad, aktiverad endast med tryckknappsanrop eller aktiverad med aktiveringsordanrop också (gäller även enheter som stöder det). Observera att vid tidpunkten för den första versionen för Microsoft 365 Enterprise-användare på engelska, kommer Teams mobilapp inte att stödja aktivering av aktivering av aktivering av aktivering av aktivering av väckningsord, men den kommer att stödjas i framtiden.
+
+**Användarkontroll**
+
+Enskilda användare kan prova Cortana rösthjälp i Teams mobilapp genom att klicka på mikrofonknappen. De kan också styra om Cortana i Teams är aktiverad för sin enhet via en inställning i appen Teams: 
+
+1. Öppna mobilappen Teams.
+
+2. Gå till **Inställningar**.
+
+3. Välj **Cortana**.
+
+4. Flytta växlingsknappen till på eller av, beroende på om du vill ha Cortana-rösthjälp på den här enheten.
+
 ### <a name="play-my-emails"></a>Spela upp mina e-postmeddelanden
 
-Spela min e-post (som ansluten till via Outlook mobile) är en röstdriven, handsfree-upplevelse för användare att lyssna på nya meddelanden i sin fokuserade inkorg och ändras till sin dag via högtalarna på sin telefon, hörlurar eller ansluten ljudenhet. Användare kan be Cortana att läsa sina senaste e-postmeddelanden högt och be Cortana att vidta åtgärder som flagga, arkivera, ta bort och hoppa över meddelanden. Den här funktionen är särskilt användbar för att komma ikapp din e-post när du pendlar, multitasking, eller på språng. När användaren pratar med Cortana i Spela upp mina e-postmeddelanden går begäran om talljud direkt till Cortanas företagstjänster. En text till talavläsning av användarens e-post bearbetas i Office 365-molnet. Under den här processen bearbetas inga Office 365-data på användarens mobila enhet och inga e-postdata sparas. En utskrift av talade kommandon (d.v.s. "markera som läst", "nästa", "flagga" osv.) kan behållas i enlighet med dataskyddsvillkoren i Villkoren för [Microsofts onlinetjänster](https://www.microsoft.com/licensing/product-licensing/products).
+Spela min e-post (som ansluten till via Outlook mobile) är en röstdriven, handsfree-upplevelse för användare att lyssna på nya meddelanden i sin fokuserade inkorg och ändra sin dag via högtalarna på sin telefon, hörlurar eller ansluten ljudenhet. Användare kan be Cortana att läsa sina senaste e-postmeddelanden högt och be Cortana att vidta åtgärder som flagga, arkivera, ta bort och hoppa över meddelanden. Den här funktionen är särskilt användbar för att komma ikapp din e-post när du pendlar, multitasking, eller på språng. När användaren pratar med Cortana i Spela upp mina e-postmeddelanden går begäran om talljud direkt till Cortanas företagstjänster. En text till talavläsning av användarens e-post bearbetas i Office 365-molnet. Under den här processen bearbetas inga Office 365-data på användarens mobila enhet och inga e-postdata sparas. En utskrift av talade kommandon (d.v.s. "markera som läst", "nästa", "flagga" osv.) kan behållas i enlighet med dataskyddsvillkoren i Villkoren för [Microsofts onlinetjänster](https://www.microsoft.com/licensing/product-licensing/products).
 
 Cortana ropar när ett e-postmeddelande är skyddat och pausar kort innan du läser meddelandet för att ge användarna tillräckligt med tid för att pausa uppspelningen eller hoppa till nästa meddelande. I likhet med ett privat telefonsamtal bör användarna vara försiktiga när de startar uppspelning på platser där konfidentiell information eventuellt kan höras. I dessa fall rekommenderas att anställda i organisationen använder hörlurar i lämpliga miljöer när de använder Spela upp mina e-postmeddelanden i Outlook-mobilen.
 
-### <a name="opt-out-of-play-my-emails"></a>Välj bort spela upp mina e-postmeddelanden
+### <a name="opt-out-of-play-my-emails"></a>Välja bort spela upp mina e-postmeddelanden
 
 Enskilda personer kan välja bort Spela upp mina e-postmeddelanden med hjälp av följande steg.
 
@@ -103,7 +123,7 @@ Enskilda personer kan välja bort Spela upp mina e-postmeddelanden med hjälp av
 
 ### <a name="briefing-email"></a>Informationsmeddelande
 
-Cortana skickar ett personligt informationsmeddelande med uppgifter och åtaganden som du gjort med ett bekvämt sätt att markera dem som **gjorda** eller schemalägga fokustiden för att få dem gjorda. Den innehåller också en sammanfattning av dina möten och relevanta dokument för din dag. Cortana extraherar information från en användares e-postmeddelanden och lagrar den i exchange online-postlådan tills den konsolideras i informationsmeddelandet. Personuppgifter är inte vid något tillfälle tillgängliga utanför din Exchange Online-postlåda.
+Cortana skickar ett personligt informationsmeddelande med uppgifter och åtaganden som du gjort med ett bekvämt sätt att markera dem som **gjorda** eller schemalägga fokustiden för att få dem gjorda. Den innehåller också en sammanfattning av dina möten och relevanta dokument för din dag. Cortana extraherar information från en användares e-postmeddelanden och lagrar den i exchange online-postlådan tills den konsolideras i informationsmeddelandet. Personuppgifter är inte tillgängliga utanför din Exchange Online-postlåda.
 
 ### <a name="how-to-opt-out-of-briefing-email"></a>Så här väljer du bort informationsmeddelande
 
@@ -111,7 +131,7 @@ Administratörer kan konfigurera Briefing för sin organisation med [PowerShell]
 
 [Läs mer om informationsmeddelandet](https://support.microsoft.com/help/4558259)
 
-Vi kommer att fortsätta att introducera fler upplevelser som ovanstående för att öka organisationens produktivitet.
+Vi kommer att fortsätta att introducera fler upplevelser som ovanstående för att öka din organisations produktivitet.
 
 Läs mer om [Microsoft Compliance-erbjudanden](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
 
@@ -133,14 +153,14 @@ Här är de två sätten att tänka på hur Cortana fungerar i ditt företag:
 
 1. De här upplevelserna möjliggör funktioner som väder, nyheter och trafik.
 
-2. Klientadministratörer kan styra om Cortana i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android kan tillåta Cortana att ansluta till Klientdata för Office 365.
+2. Klientadministratörer kan styra om Cortana i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android kan tillåta att Cortana ansluter till Klientdata för Office 365.
 
 Inaktivera Cortana-åtkomst till organisationens Microsoft-värddata
 
 1. I administrationscentret för Microsoft 365 väljer du **Settings**  >  **Inställningars organisationsinställningar** och väljer **Cortana**.
 
-2. Avmarkera kryssrutan Tillåt **att dessa Cortana-valfria anslutna upplevelser använder organisationens Microsoft-värddata** för att inaktivera Cortana-anslutna upplevelser.
+2. Avmarkera kryssrutan Tillåt **att dessa Cortana-valfria anslutna upplevelser kan använda organisationens Microsoft-värddata** för att inaktivera Cortana-anslutna upplevelser.
 
 3. Välj **Spara ändringar**.
 
-För tjänster som regleras av [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) och [Microsofts sekretesspolicy](https://privacy.microsoft.com/privacystatement)är Microsoft personuppgiftsansvarig. Som personuppgiftsansvarig använder Microsoft data för att förbättra produkter och tjänster i enlighet med [Microsofts sekretesspolicy](https://privacy.microsoft.com/privacystatement).
+För tjänster som regleras av [Microsoft Services-avtalet](https://go.microsoft.com/fwlink/p/?LinkId=2109174) och [Microsofts sekretesspolicy](https://privacy.microsoft.com/privacystatement)är Microsoft personuppgiftsansvarig. Som personuppgiftsansvarig använder Microsoft data för att förbättra produkter och tjänster i enlighet med [Microsofts sekretesspolicy](https://privacy.microsoft.com/privacystatement).

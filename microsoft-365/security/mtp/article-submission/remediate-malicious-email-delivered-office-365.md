@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Åtgärder mot hot
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068217"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086697"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Åtgärda skadlig e-post som levererades i Office 365
 
@@ -77,8 +77,6 @@ All medling (antingen direkt godkännande eller tvåstegsgodkännande) som skapa
 Varje reparationsobjekt kan öppnas för att visa information om det. När ett reparationsobjekt öppnas visas grundläggande reparationsinformation, reparationsnamn, skapandedatum, beskrivning, allvarlighetsgrad för hot och status. Den visar också två flikar. 
 
 1. **Fliken Skicka in e-post**: Det här är antalet e-postmeddelanden som skickas in via Threat Explorer eller automatiska undersökningar som ska åtgärdas. Dessa e-postmeddelanden kan vara:
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="Åtgärdscentret med användbara och inte användbara hot.":::
 
 **Användbart:** E-postmeddelanden i följande platser i molnpostlådan kan hanteras och flyttas, dvs.
   - Inkorg 

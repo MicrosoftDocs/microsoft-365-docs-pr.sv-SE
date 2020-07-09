@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Lär dig hur du uppgraderar en eller flera distributionslistor till Microsoft 365-grupper i Outlook och hur du använder PowerShell för att uppgradera flera distributionslistor samtidigt.
-ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: a1fb974be4838ebe98c2c55fe8694e89e27d636e
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780031"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083580"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uppgradera distributionslistor till Microsoft 365-grupper i Outlook
 
@@ -71,11 +71,15 @@ Om du är van vid att använda PowerShell kanske du vill göra det i stället f�
 
 Så här uppgraderar du ett enda DL-kommando:
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 Om du till exempel vill uppgradera en DLs med SMTP-adress dl1@contoso.com kör du följande kommando:
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > Du kan också uppgradera en enda distributionslista till en Microsoft 365-grupp med hjälp av powershell-cmdleten [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
@@ -84,9 +88,8 @@ Om du till exempel vill uppgradera en DLs med SMTP-adress dl1@contoso.com kör d
 
 Du kan också skicka flera DLs som en batch och uppgradera dem tillsammans:
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -103,7 +106,7 @@ Det finns två sätt att uppgradera alla berättigade DLs.
 
 1. Hämta de kvalificerade DLs i klienten och uppgradera dem med hjälp av uppgraderingskommandot:
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -111,7 +114,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. Hämta listan över alla DLs och uppgradera endast de kvalificerade DLs:
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }

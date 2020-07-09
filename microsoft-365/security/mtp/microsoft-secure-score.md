@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 44c9992be3fe0e6919a498fea0ee1b480a30a2bb
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023409"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086685"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -131,7 +131,7 @@ För att slutföra åtgärden har du några alternativ:
 
 * Välj **Hantera** om du vill gå till konfigurationsskärmen och göra ändringen. Du kommer då att få de poäng som åtgärden är värd, synlig i flyga ut. Poäng tar i allmänhet ca 24 timmar att uppdatera.
 
-* Välj **Dela** om du vill kopiera den direkta länken till förbättringsåtgärden eller välj den plattform som du vill dela länken som e-post, Microsoft Teams, Microsoft Planner eller ServiceNow. Genom att välja ServiceNow kan du skapa en ändringsbiljett som visas i ServiceNow och Microsoft 365 security center home. Mer information finns i [Microsoft 365 Security Center och ServiceNow-integrering](tickets.md).
+* Välj **Dela** om du vill kopiera den direkta länken till förbättringsåtgärden eller välj den plattform som du vill dela länken som e-post, Microsoft Teams, Microsoft Planner eller ServiceNow. Genom att välja ServiceNow kan du skapa en ändringsbiljett som visas i ServiceNow och Microsoft 365 security center home. Mer information finns i [Microsoft 365 Security Center och ServiceNow-integrering](tickets-security-center.md).
 
 ### <a name="choose-an-improvement-action-status"></a>Välj status för förbättringsåtgärder
 

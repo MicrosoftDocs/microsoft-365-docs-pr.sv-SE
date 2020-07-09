@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049922"
+ms.locfileid: "45052731"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
 Dessa labbar är utformade för att hjälpa dig att planera, testa och verifiera din distribution och hantering av datorer med Windows 10 Enterprise och Microsoft 365 Apps för företag. Labbarna omfattar de steg och verktyg som beskrivs i skrivbordsdistributionshjulet, bland annat Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive och Windows Autopilot.
 
-Den här utbildningen rekommenderas starkt för organisationer som behöver migrera från Windows 7 eftersom supporten upphört, men gäller även för dig som har Windows 10 och Office 365 plus eller Office 2019. Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.
+Den här utbildningen rekommenderas starkt för organisationer som behöver migrera från Windows 7 eftersom supporten upphört, men gäller även för dig som har Windows 10 och Microsoft 365 Apps för företag (tidigare Office 365 ProPlus) eller Office 2019. Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -74,6 +74,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
   - Hanterad distribution med Konfigurationshanteraren och Microsoft Intune
   - Distribution och hantering av appar med Microsoft Intune
   - Distribution och egen installation av appar med Microsoft Store för företag
+  - NYHET! Installera Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>Migrering av användares filer och inställningar
 
@@ -108,8 +109,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
   - Underhålla Windows 10 med Konfigurationshanteraren och Intune
   - Underhålla Microsoft 365-applikationer för företag med Configuration Manager
   - NYHET! Office-uppdateringar med konfigurationshanteraren och Intune
-  - NYHET! Installera Microsoft Teams 
-
+  
 ### <a name="new-windows-virtual-desktop"></a>NYHET! Windows Virtual Desktop
   - Windows Virtual Desktop: förbereda, distribuera, optimera 
 
