@@ -1,11 +1,12 @@
 ---
-title: Hitta och undersöka skadlig e-post
+title: Undersöka skadlig e-post som levererades i Office 365, Hitta och undersöka skadlig e-post
 keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, e malware, komprometterade användare, e-post phish, e-malware, läsa e-postrubriker, läshuvuden, öppna e-postrubriker
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +19,21 @@ ms.collection:
 - M365-security-compliance
 description: Läs om hur du använder hotundersöknings- och svarsfunktioner för att hitta och undersöka skadlig e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 747b6b875a3b7ebc8125ac27ed00c9a300845427
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039418"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091968"
 ---
-# <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka och åtgärda skadlig e-post som levererades i Office 365
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka skadlig e-post som levererades i Office 365
 
 [Med Office 365 Advanced Threat Protection](office-365-atp.md) kan du undersöka aktiviteter som utsätter personer i organisationen för risker och vidtar åtgärder för att skydda din organisation. Om du till exempel ingår i organisationens säkerhetsteam kan du hitta och undersöka misstänkta e-postmeddelanden som levererades. Du kan göra detta genom att använda [Threat Explorer (eller realtidsidentifieringar)](threat-explorer.md).
+
+> [!NOTE]
+> Hoppa till sanering artikeln [här](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258).
   
-## <a name="before-you-begin"></a>Innan du börjar...
+## <a name="before-you-begin"></a>Innan du börjar
 
 Kontrollera att följande krav är uppfyllda:
   
@@ -177,6 +181,9 @@ Threat Explorer är en kraftfull rapport som kan tjäna flera syften, till exemp
   
      **E-posttidslinje** är ett fält i Threat Explorer som gör det enklare att söka för säkerhetsoperationsteamet. När flera händelser inträffar vid eller nära samma tidpunkt i ett e-postmeddelande visas dessa händelser i en tidslinjevy. Vissa händelser som inträffar efter leverans till e-post fångas in i kolumnen **Särskilda åtgärder.** Genom att kombinera information från tidslinjen för ett e-postmeddelande med eventuella särskilda åtgärder som vidtogs efter leveransen får administratörerna insikt i principer och hothantering (till exempel var posten dirigerades och, i vissa fall, vad den slutliga bedömningen var).
 
+> [!IMPORTANT]
+> Hoppa till ett reparationsämne [här](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide).
+
 <!-- Reference material
 
 1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
@@ -254,6 +261,8 @@ To access your message header and email download options, follow these steps:
 -->
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
+[Åtgärda skadlig e-post som levereras i Office 365](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Office 365 Avancerat skydd](office-365-ti.md)
   

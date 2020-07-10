@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087939"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094840"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Skapa och spåra ServiceNow-biljetter i Microsoft 365-säkerhetscentret
 
@@ -54,9 +54,7 @@ Lär dig vanliga fel som kan uppstå i anslutningsprocessen och hur du kan minsk
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>Skapa en uppgift och dela den till ServiceNow
 
-När integreringen har konfigurerats skapar du ServiceNow-uppgifter baserat på specifika microsoft secure score-förbättringsåtgärder. Gå till alla förbättringsåtgärder i Secure Score i Microsoft 365 security center-portalen och välj ikonen "dela". Ett av listrutan är ServiceNow.
-
-![ServiceNow-delning i Secure Score](../../media/servicenow-share.png)
+När integreringen har konfigurerats skapar du ServiceNow-uppgifter baserat på specifika [microsoft secure score-förbättringsåtgärder.](microsoft-secure-score.md) Gå till alla förbättringsåtgärder i Secure Score i Microsoft 365 security center-portalen och välj **Dela**. Ett av listrutan är ServiceNow.
 
 En aktivitet genereras där du kan ange prioritet och redigera namn, beskrivning eller förfallodatum. När alla obligatoriska fält har fyllts i skickar du uppgiften till ServiceNow.
 
