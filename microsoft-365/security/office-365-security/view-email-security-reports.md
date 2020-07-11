@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Läs om hur du hittar och använder säkerhetsrapporter för e-post för din organisation. Säkerhetsrapporter för e-post finns i Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035829"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102926"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -38,6 +38,8 @@ En mängd olika rapporter finns i [Security & Compliance Center](https://protect
 
 Rapporten **Komprometterade användare** visar antalet användarkonton som har markerats som **misstänkta** eller **begränsade** under de senaste 7 dagarna. Konton i någon av dessa stater är problematiska eller till och med komprometterade. Med frekvent användning kan du använda rapporten för att upptäcka toppar och till och med trender i misstänkta eller begränsade konton. Mer information om komprometterade användare finns i [Svara på ett komprometterat e-postkonto](responding-to-a-compromised-email-account.md).
 
+![Komprometterade användare widget i instrumentpanelen Rapporter](../../media/compromised-users-report-widget.png)
+
 Den samlade vyn visar data för de senaste 90 dagarna och detaljvyn visar data för de senaste 30 dagarna.
 
 Om du vill visa rapporten öppnar du [Security & Compliance Center](https://protection.office.com), går till **Instrumentpanelen för rapporter** och väljer \> **Dashboard** **Komprometterade användare**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=CompromisedUsers> .
@@ -50,7 +52,7 @@ Du kan filtrera både diagrammet och informationstabellen genom att klicka på *
 
 - **Begränsad**: Användarkontot har begränsats från att skicka e-post på grund av mycket misstänkta mönster.
 
-![De komprometterade användarna rapporterar som det visas i Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Rapportvyn i rapporten Komprometterade användare](../../media/compromised-users-report-activity-view.png)
 
 Om du klickar på **Visa informationstabell**kan du se följande information:
 

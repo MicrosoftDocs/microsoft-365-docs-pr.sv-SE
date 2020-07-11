@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Microsofts produktivitetspoäng.
-ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754802"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101653"
 ---
-# <a name="microsoft-productivity-score-preview"></a>Microsofts produktivitetspoäng (förhandsversion)
+# <a name="microsoft-productivity-score-preview"></a>Microsofts produktivitetspoäng (förhandsgranskning)
 
 Produktivitetspoäng hjälper organisationer att förändra hur arbetet utförs med insikter om hur människor använder Microsoft 365 och de teknikupplevelser som stöder dem. Poängen återspeglar organisationens resultat mot mått på medarbetar- och teknikupplevelse och jämför dina poäng med organisationer som din.
 
@@ -89,7 +89,7 @@ Du kan komma åt upplevelsen från Microsoft 365 Admin home under **Reports**  >
 
 På hemsidan för produktivitetspoäng visas din totala poäng- och poänghistorik samt den primära insikten för varje kategori
 
-![Startsida för produktivitetspoäng](../../media/pslanding.png)
+![Startsida för produktivitetsresultat](../../media/pslanding.png)
 
 **Din poäng** visas som ett procentvärde såväl som i poäng så att du kan se dina poäng (täljare) och högsta möjliga poäng (nämnare).
 
@@ -145,7 +145,7 @@ Den här rapporten hjälper företagsledare att förstå:
 
 - Effekten på balansen mellan arbete och privatliv när människor anpassar sig till att arbeta hemifrån. 
 
-- Om människor använder möten på ett effektivt sätt och hur de 
+- Om fjärrmöten stöder ett effektivt beslutsfattande.
 
 [Läs mer om rapporten Affärskontinuitet](https://aka.ms/bcrps)
 

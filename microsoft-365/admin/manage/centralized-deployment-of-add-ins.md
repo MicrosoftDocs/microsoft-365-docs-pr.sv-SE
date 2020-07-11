@@ -20,17 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ta reda på om din klient och dina användare uppfyller kraven, så att du kan använda centraliserad distribution för att distribuera Office-tillägg.
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936449"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102878"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ta reda på om centraliserad distribution av tillägg fungerar för din organisation
 
-Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta kunder att distribuera Office-tillägg till användare och grupper inom organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din klient och användare uppfyller kraven så att du kan använda centraliserad distribution.
+Centraliserad distribution är det rekommenderade och mest funktionsrika sättet för de flesta kunder att distribuera Office-tillägg till användare och grupper inom organisationen. Om du är administratör kan du använda den här vägledningen för att avgöra om din organisation och användare uppfyller kraven så att du kan använda centraliserad distribution.
+
+Centraliserad distribution ger följande fördelar:
+  
+- En global administratör kan tilldela ett tillägg direkt till en användare, till flera användare via en grupp eller till alla i organisationen.
+    
+- När det aktuella Office-programmet startar hämtas tillägget automatiskt. Om tillägget stöder tilläggskommandon visas tillägget automatiskt i menyfliksområdet i Office-programmet.
+    
+- Tillägg visas inte längre för användare om administratören stänger av eller tar bort tillägget, eller om användaren tas bort från Azure Active Directory eller från en grupp som tillägget har tilldelats.
+
 Centraliserad distribution stöder tre skrivbordsplattformar Windows, Mac och Online Office-appar. Centraliserad distribution stöder även iOS och Android (endast Outlook Mobile-tillägg).
+
 Det kan ta upp till 24 timmar för ett tillägg att visas för klienten och alla användare.
   
 ## <a name="requirements"></a>Krav
@@ -96,19 +106,19 @@ Med hjälp av den centraliserade kompatibilitetskontrollen för distribution kan
     
 2. Kör följande kommando:
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. Kör kommandot **Invoke-CompatabilityCheck:**
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   som uppmanar dig för *_TenantDomain_* (till exempel *TailspinToysIncorporated.onmicrosoft. </span> com*) och *_TenantAdmin-autentiseringsuppgifter_* (använd dina globala administratörsautentiseringsuppgifter) och begär sedan samtycke.
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   Det här kommandot uppmanar dig för *_TenantDomain_* (till exempel *TailspinToysIncorporated.onmicrosoft. </span> com*) och *_TenantAdmin-autentiseringsuppgifter_* (använd dina globala administratörsautentiseringsuppgifter) och begär sedan samtycke.
     
-> [!NOTE]
-> Beroende på antalet användare i klientorganisationen kan det ta några minuter eller några timmar att slutföra åtgärden. 
+   > [!NOTE]
+   > Beroende på antalet användare i klientorganisationen kan det ta några minuter eller några timmar att slutföra åtgärden. 
   
 När verktyget körts klart har en utdatafil i kommaavgränsat format (.csv) genererats. Filen sparas i **C:\windows\system32** som standard. Utdatafilen innehåller följande information:
   

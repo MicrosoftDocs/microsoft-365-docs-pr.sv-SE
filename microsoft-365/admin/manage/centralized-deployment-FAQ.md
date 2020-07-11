@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Granska svaren på vanliga frågor om centraliserad distribution från administrationscentret för Microsoft 365.
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083568"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102890"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
@@ -35,7 +35,7 @@ Centraliserad distribution är det rekommenderade sättet för en Office 365-adm
 Centraliserad distribution av tillägg kräver att användare använder Microsoft 365 Apps för företag (och är inloggade på Office med hjälp av sina organisationslogguppgifter) och har Exchange Online-postlådor. Din prenumerationskatalog måste antingen vara i eller federerade till Azure Active Directory.  
  
 Centraliserad distribution stöds endast för onlinepostlådor. Det stöder inte distribution till lokala Exchange-postlådor.
- 
+
 Du kan använda den [centraliserade kompatibilitetskontrollen](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)för distribution   för att avgöra om din prenumeration är kvalificerad. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Hur inriktar du dig på tilläggsanvändartilldelningar med centraliserad distribution?  
@@ -54,7 +54,9 @@ Det kan ta upp till 24 timmar innan ett tillägg visas för alla användare. Det
 
 För enkel distribution av tillägg till användare, grupper eller till hela organisationen rekommenderar vi administratörer att använda centraliserad distribution.
 
-Mer information om hur du hanterar användaråtkomst finns i </br>[Förhindra hämtning av tillägg genom att stänga av Office Store för alla klienter (utom Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) och </br>[Ange de administratörer och användare som kan installera och hantera tillägg för Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+Mer information om hur du hanterar användaråtkomst finns i:
+ - [Förhindra hämtningar av tillägg genom att stänga av Office Store för alla klienter (utom Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Ange vilka administratörer och användare som kan installera och hantera tillägg för Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Ger centraliserad distribution administratörer flexibiliteten att välja distributionsmetod för Outlook-tillägg?  
 
@@ -62,7 +64,7 @@ Ja. Centraliserad distribution ger administratörer flexibiliteten att välja en
 
 **Fast (standard)**   Tillägget distribueras automatiskt till de tilldelade användarna och de kan inte ta bort det.  
  
-**Tillgänglig** Användare kan installera tillägget i Outlook genom att välja Hem > Få fler tillägg > Admin-hanterade.   
+**Tillgänglig** Användare kan installera tillägget i Outlook genom att välja **> Få fler tillägg > Admin-hanterade**.
  
 **Valfritt** Tillägget distribueras automatiskt till de tilldelade användarna, men de kan välja att ta bort det.  
     
@@ -70,19 +72,19 @@ Ja. Centraliserad distribution ger administratörer flexibiliteten att välja en
 
 Ja. Administratörer kan ladda upp en ny manifestfil för att stödja metadataändringar för administratörsbe distribuerade LOB-tillägg. Tillägget uppdateras nästa gång Office-programmen startas. Webbprogrammet kan ändras när som helst.  
  
-Mer information finns [i tillägg för företagslinje](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+Mer information finns [i tillägg för företagslinje](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Kan administratörer stänga av tillägg?  
 
 Ja. Administratörer kan aktivera eller inaktivera de tillägg som de distribuerar för alla användare från Microsofts administrationscenter.
 
-Mer information finns [i Tilläggstillstånd](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
+Mer information finns [i Tilläggstillstånd](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states).  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>Kan administratörer ta bort eller ta bort tillägg?
 
 Ja. Administratörer kan ta bort tillägg som de har distribuerat för alla användare från Microsofts administrationscenter.
 
-Mer information finns [i Ta bort tillägget](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+Mer information finns [i Ta bort ett tillägg](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Kan administratörer distribuera betalda tillägg från Office Store med centraliserad distribution? 
 
