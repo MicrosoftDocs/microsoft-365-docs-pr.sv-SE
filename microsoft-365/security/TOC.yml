@@ -191,6 +191,10 @@
               items:
                 - name: Översikt över Secure Score
                   href: mtp/microsoft-secure-score.md
+                - name: Få insyn i din säkerhetshållning
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: Spåra din resultathistorik och uppfylla mål
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: Kommer snart
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Rapporter
@@ -411,8 +415,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Identifiera och åtgärda komprometterade användarkonton snabbt
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Undersöka och åtgärda skadlig e-post
+            - name: Undersöka skadlig e-post
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Åtgärda skadlig e-post
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: Visa och läsa ATP-rapporter
               href: ./office-365-security/view-reports-for-atp.md
             - name: Förstå de senaste attackerna med hotanalys

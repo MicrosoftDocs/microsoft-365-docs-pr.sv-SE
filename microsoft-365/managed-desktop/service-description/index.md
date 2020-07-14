@@ -1,39 +1,39 @@
 ---
 title: Tjänstbeskrivning av Microsoft Hanterat skrivbord
-description: Beskriver vad som ingår i Microsoft Managed Desktop som en tjänst
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+description: Beskriver vad som ingår i Microsoft Hanterat skrivbord som en tjänst
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "43637870"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Tjänstbeskrivning av Microsoft Hanterat skrivbord
 
-Microsoft Managed Desktop är en tjänst som ger användarna en säker modern upplevelse och alltid håller enheterna uppdaterade med de senaste versionerna av Windows 10 Enterprise Edition, Microsoft 365 Apps för företag och Microsofts säkerhetstjänster, inklusive:
+Microsoft Hanterat skrivbord är en tjänst som ger dina användare en säker, modern upplevelse och alltid håller enheter uppdaterade med de senaste versionerna av Windows 10 Enterprise Edition, Microsoft 365-appar för företag och Microsofts Security-tjänster, inklusive:
 
 - Förenklad registrering av nya enheter
-- Konfiguration av enheter
-- Funktioner för att skydda användare och enheter, inklusive Windows Hello, BitLocker, SecureBoot och virtualiseringsbaserad säkerhet enligt Microsofts metodtips
-- Övervaknings- och reparationstjänster för enhetssäkerhet
-- Appkompatibilitet, via [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Hantering av uppdateringar för Windows 10 och Microsoft 365 Apps för företagsappar
-- Analytiska data om enhets- och appanvändning
+- Enhetskonfiguration
+- Funktioner som skyddar användare och enheter, inklusive Windows Hello, BitLocker, SecureBoot och virtualiseringsbaserad säkerhet enligt Microsoft bästa metoder
+- Enhetssäkerhetsövervakning och saneringstjänster
+- App kompatibilitet via [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- Uppdateringshantering för Windows 10-appar och Microsoft 365-appar för företag
+- Analysdata om enhets- och app användning
 - IT-stöd för dina slutanvändare
 - Operativt stöd för IT-proffs
 
-Mer information om de specifika tjänster som ingår i Microsoft Managed Desktop finns i de andra avsnitten i det här avsnittet. Om du redan har bestämt att Microsoft Managed Desktop är till för dig innehåller du följande avsnitt i Gör dig [redo för registrering på Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) som ger dig de steg du kan förbereda dig för att gå med i tjänsten.
+Mer information om de specifika tjänsterna i Microsoft Hanterat skrivbord finns i andra ämnen i det här avsnittet. Om du redan har beslutat att börja använda Microsoft Hanterat skrivbord beskriver ämnena i [Förberedelser för Microsoft Hanterat skrivbord](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) förberedelsestegen för att använda tjänsten.
 
-- [Regioner och språk som stöds av Microsoft Managed Desktop](regions-languages.md) förklarar vilka regioner och språk som stöds med tjänsten.
-- För att garantera den bästa upplevelsen för slutanvändarna stöds endast vissa enheter av Microsoft Managed Desktop. [Programenheter](device-list.md) anger exakt vilka enhetsmodeller och konfigurationer du kan använda med tjänsten, oavsett om du tillhandahåller dem eller arbetar med en partner.
-- [Enhetstjänster](device-services.md) anger de enhetsrelaterade tjänster som Microsoft tillhandahåller prenumeranter.
-- [Enhetskonfiguration](device-policies.md) förtydligar standard- och säkerhetsrelaterade principer för hantering av mobila enheter som tjänsten gäller för registrerade enheter.
-- [Säkerhet](security.md) anger data som samlas in från registrerade enheter samt funktioner och principer som är relaterade till enhetssäkerhet, identitets- och åtkomsthantering, nätverkssäkerhet och informationssäkerhet.
-- [I uppdateringarna](updates.md) beskrivs de olika uppdateringsgrupper som används i Microsoft Managed Desktop för att distribuera uppdateringar till dina enheter.
-- [Support](support.md) förtydligar det stöd som Microsoft tillhandahåller för din organisation och dina slutanvändare.
-- [Åtgärder och övervakning](operations-and-monitoring.md) förklarar hur ändringshantering fungerar med Microsoft Managed Desktop, inklusive standardprocedurer för att begära och förbereda för ändringar i distributionen.
-- [Programkrav](mmd-app-requirements.md) beskriver de typer av appar och beteenden som tillåts i Microsoft Managed Desktop och behörighetsfördelningen för appdistribution och apphantering.
+- [Regioner och språk som stöds i Microsoft Hanterat skrivbord](regions-languages.md) ger information om de regioner och språk som stöds av tjänsten.
+- För att säkerställa bästa möjliga upplevelse för dina slutanvändare stöds endast vissa enheter av Microsoft Hanterat skrivbord. [Programenheter](device-list.md) anger exakta enhetsmodeller och konfigurationer som du kan använda med tjänsten, oavsett om du tillhandahåller dem eller arbetar med en partner.
+- [Enhetstjänster](device-services.md) anger vilka enhetsrelaterade tjänster Microsoft tillhandahåller prenumeranter.
+- [Enhetskonfiguration](device-policies.md) klargör standard- och säkerhetspolicyn för hantering av mobila enheter som tjänsten gäller för registrerade enheter.
+- [Säkerhet](security.md) anger information som samlas in från registrerade enheter, samt funktioner och policyer relaterade till enhetssäkerhet, identitets- och åtkomsthantering, nätverkssäkerhet och informationssäkerhet.
+- [Uppdateringar](updates.md) beskriver de olika uppdateringsgrupperna som Microsoft Hanterat skrivbord använder för att distribuera uppdateringar till dina enheter.
+- [Support](support.md) klargör stödet som Microsoft tillhandahåller för din organisation och slutanvändare.
+- [Operationer och övervakning](operations-and-monitoring.md) ger information om ändringshantering med Microsoft Hanterat skrivbord, inklusive standardförfaranden för att begära och förbereda för implementeringsändringar.
+- [Applikationskrav](mmd-app-requirements.md) beskriver vilka typer av appar och beteenden som tillåts i Microsoft Hanterat skrivbord och fördelningen av roller och ansvar för app-implementering och hantering.
