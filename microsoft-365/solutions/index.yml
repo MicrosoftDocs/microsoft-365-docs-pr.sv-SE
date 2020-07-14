@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 lösnings- och arkitekturcenter
-summary: Förstå hur du utformar lösningen och arkitekturen som är rätt för din organisation.
+title: Microsoft 365-center för lösningar och arkitektur
+summary: Lär dig hur du utformar en lösning och en arkitektur som passar din organisation.
 brand: m365
 metadata:
-  title: Microsoft 365 lösnings- och arkitekturcenter
-  description: Förstå hur du utformar lösningen och arkitekturen som är rätt för din organisation
+  title: Microsoft 365-center för lösningar och arkitektur
+  description: Lär dig hur du utformar en lösning och en arkitektur som passar din organisation
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection:
@@ -18,7 +18,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 7f0da78b7d0c716532c2aca277059ff54478be5f
   ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: sv-SE
   ms.lasthandoff: 05/07/2020
   ms.locfileid: "44160153"
@@ -27,53 +27,53 @@ highlightedContent:
   - title: Underlätta för distansarbetare med Microsoft 365
     itemType: whats-new
     url: empower-people-to-work-remotely.md
-  - title: Konfigurera säkert samarbete med Microsoft 365
+  - title: Konfigurera säkerhet samarbete med hjälp av Microsoft 365
     itemType: get-started
     url: setup-secure-collaboration-with-teams.md
-  - title: Distribuera hotskydd i Microsoft 365
+  - title: Distribuera skydd mot hot i Microsoft 365
     itemType: get-started
     url: deploy-threat-protection.md
 productDirectory:
   items:
-  - title: Microsoft 365 grundläggande lösningar
+  - title: Grundläggande lösningar för Microsoft 365
     imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: Hitta fullständig vägledning för ett specifikt affärsproblem eller behov, från planering till implementering, till införande.
+    summary: Hitta fullständiga riktlinjer för ett enskilt affärsproblem eller behov, från planering till implementering för att använda.
     url: foundation-solutions-overview.md
-  - title: Vägledning för arbetsbelastningslösning och scenario
+  - title: Riktlinjer för belastningslösningar och scenario
     imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: Lägg till dessa scenarier på de grundläggande lösningarna för att lägga till funktioner i din miljö.
+    summary: Lägg till de här scenarierna på de grundläggande lösningarna för att lägga till funktioner i miljön.
     url: workload-solutions-scenarios-overview.md
-  - title: Illustrationer av lösning och arkitektur
+  - title: Illustrationer för lösningar och arkitektur
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: Visa eller ladda ned dessa illustrationer för att förstå funktionerna och arkitekturen i Microsoft 365:s tjänster.
+    summary: Visa eller ladda ned de här illustrationerna för att förstå funktionerna och arkitekturen för Microsoft 365-tjänsterna.
     url: productivity-illustrations.md
   - title: Branschspecifik vägledning
     imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
-    summary: Hitta vägledning speciellt utformad för din bransch.
+    summary: Hitta vägledning som är särskilt utformad för din bransch.
     url: industry-specific-guidance-overview.md
-  - title: Principer för företagsdesign
+  - title: Företagsprinciper för konstruktion
     imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: Förstå de viktigaste principerna du behöver för att förstå nätverk, identitet, säkerhet och multinationell arkitektur.
+    summary: Förstå de viktigaste principer som du behöver för att förstå nätverks-, identitets-, säkerhets- och internationella arkitekturer.
     url: design-principles.md
-  - title: Översikt över distribution och resurser
+  - title: Översikt och resurser för distribution
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: Resurser för att upprätta samarbete tillsammans med säkerhets- och informationsskydd.
+    summary: Resurser för att konfigurera samarbete tillsammans med säkerhets- och informationsskydd.
     url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
 additionalContent:
   sections:
-  - title: Mer resurser för Microsoft 365
+  - title: Fler resurser för Microsoft 365
     items:
-    - title: Hjälpcenter för Microsoft 365 för administratörer och IT-proffs
-      summary: Hitta fler resurser för IT-proffs på Sidan Microsoft 365
+    - title: Microsoft 365 Help Center för administratörer och IT-proffs
+      summary: Hitta fler resurser för IT-proffs på sidan för Microsoft 365
       url: https://docs.microsoft.com/microsoft-365
     - title: Utbildning för administratörer och IT-proffs
-      summary: Hitta utbildningsresurser för hantering av Microsoft 365
+      summary: Hitta utbildningsresurser för att hantera Microsoft 365
       url: https://docs.microsoft.com/learn/m365/
     - title: Utbildning för slutanvändare
-      summary: Hjälp dina slutanvändare att lära sig hur de använder Microsoft 365
+      summary: Hjälpa dina slutanvändare att lära sig hur man använder Microsoft 365
       url: https://support.office.com/modernworkplace
     - title: Microsoft 365 Tech Community
-      summary: Samarbeta med teknikcommunityn
+      summary: Delta i Tech-communityn
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
     - title: Resurser för utvecklare
       summary: Lär dig hur du utvecklar för Microsoft 365
