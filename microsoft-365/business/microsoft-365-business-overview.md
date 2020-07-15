@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer om Microsoft 365 Business Premium, en prenumerationstjänst som innehåller Office-appar för produktivitet och avancerat skydd för ditt företag mot cyberhot.
-ms.openlocfilehash: 6cff2fe62111e0d3ee99f406d0be83db0a119b09
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786183"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138237"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Översikt av Microsoft 365 Business Premium
 
@@ -110,11 +110,6 @@ Om du vill se en fullständig lista över säkerhetsfunktioner läser du [Micros
 - Om du har en partner får de Microsoft 365 Business Premium: [Hämta Microsoft 365 Business Premium från Microsoft-partnercenter](get-microsoft-365-business.md).
 
 - Om du inte har en partner och vill få Microsoft 365 Business Premium kan du [köpa den här](https://www.microsoft.com/microsoft-365/business) och följa [registrera dig](sign-up.md) anvisningarna.
-
-- Du kan också ta dig till en [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) att köpa Microsoft 365 Business Premium och få konfigurationshjälp.
-
-    > [!NOTE]
-    > Den här länken gäller endast för butiker i USA
 
 ## <a name="see-also"></a>Se även
 

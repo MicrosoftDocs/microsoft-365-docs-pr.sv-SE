@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Distribuera säkerhets- och efterlevnadsfunktioner för Microsoft 365 och skydda din personliga information.
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844698"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126460"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som omfattas av dataskyddsförordningen
 
@@ -33,6 +33,8 @@ Dessa kontroller finns inom följande lösningsområden:
 - Skydd mot dataförlust (DLP)
 - Kryptering av Office-meddelanden (OME)
 - Team och webbplatser får åtkomst till kontroller
+
+![Viktiga tjänster för att skydda personuppgifter som omfattas av dataskyddsförordningen](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >Den här lösningen beskriver säkerhets- och efterlevnadsfunktioner för att skydda information som omfattas av datasekretessbestämmelser. En fullständig lista över säkerhetsfunktioner i Microsoft 365 finns i [Microsoft 365-säkerhetsdokumentationen](https://docs.microsoft.com/microsoft-365/security/). En fullständig lista över efterlevnadsfunktioner i Microsoft 365 finns i [Microsoft 365-dokumentation för efterlevnad](https://docs.microsoft.com/microsoft-365/compliance/).
@@ -94,7 +96,7 @@ Slutför dessa aktiviteter innan du implementerar någon av de känslighetsetike
 
 1. Förstå följande:
    - **Affärskrav.** Fastställa affärsskäl för att tillämpa känslighetsetiketter i företaget. Till exempel dina krav på datasekretess för informationsskydd.
-   - **Känslighetsetikettfunktioner.** Känslighetsmärkning kan bli komplex, så se till att läsa dokumentationen för [känslighetsetiketter](../compliance/sensitivity-labels.md) innan du börjar.
+   - **Känslighetsetikettfunktioner.** Känslighetsetikettering kan bli komplex, så se till att läsa dokumentationen för [känslighetsetiketter](../compliance/sensitivity-labels.md) innan du börjar.
    - **Viktiga saker att komma ihåg** Känslighetsetiketter hanteras i administrationscentret för Microsoft Compliance, men inriktnings- och programalternativen varierar avsevärt.
       - Det finns känslighetsetiketter för webbplatser, grupper och Teams på behållarnivå (inställningarna gäller inte för innehåll i behållaren). Dessa publiceras för användare och grupper som tillämpar dem när en webbplats, grupp eller ett team etableras.
       - Det finns känslighetsetiketter för aktivt innehåll. Dessa publiceras också för användare eller grupper, som antingen tillämpar dem manuellt eller så tillämpas de automatiskt när:
@@ -106,7 +108,7 @@ Slutför dessa aktiviteter innan du implementerar någon av de känslighetsetike
 
    - Azure Information Protection
 
-      Det aktuella känslighetsmärkningssystemet kan behöva stämmas av med alla befintliga [implementeringar](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) av Azure Information Protection-märkning.
+      Det aktuella känslighetsetikettschemat kan behöva stämmas av med alla befintliga [implementeringar](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) av Azure Information Protection-märkning.
    - Ome
 
       Om du planerar att använda modern känslighetsmärkning för e-postskydd och befintliga e-postkrypteringsmetoder som OME finns på plats, kan de samexistera, men du bör förstå de scenarier där antingen bör tillämpas. Se [nya funktioner för office 365-meddelandekryptering (OME),](#office-365-message-encryption-ome-new-capabilities)som innehåller en tabell som jämför det moderna känslighetsetikettskyddet med OME-baserat skydd.
@@ -174,7 +176,7 @@ Möjligheten att automatiskt använda känslighetsetiketter på innehåll är vi
 - Du behöver inte förlita dig på att användarna klassificerar allt innehåll korrekt.
 - Användarna behöver inte längre känna till dina policyer – de kan i stället fokusera på sitt arbete.
 
-Automatisk märkning stöder att rekommendera en etikett till användarna, samt att automatiskt tillämpa en etikett. Men i båda fallen bestämmer användaren om han vill acceptera eller avvisa etiketten för att säkerställa korrekt märkning av innehåll.
+Automatisk märkning stöder att rekommendera en etikett till användare, samt att automatiskt använda en etikett. Men i båda fallen bestämmer användaren om han vill acceptera eller avvisa etiketten för att säkerställa korrekt märkning av innehåll.
 
 Den här etiketten på klientsidan har minimal fördröjning för dokument eftersom etiketten kan användas redan innan dokumentet sparas. Alla klientappar stöder dock inte automatisk märkning. Den här funktionen stöds av azure informationsskydd enhetlig märkning klient, och [vissa versioner av Office-program](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -235,7 +237,7 @@ Planera dina DLP-principer för:
 
 - Pågående DLP-principhantering, som kräver att någon i organisationen använder och ställer in principer för ändringar i känsliga informationstyper, lagringsetiketter, föreskrifter och efterlevnadsprinciper.
 
-Även om känslighetsetiketter inte kan användas i DLP-principvillkor kan vissa skyddsscenarier för att förhindra åtkomst uppnås med bara känslighetsetiketter som kan tillämpas automatiskt baserat på känsliga informationstyper. Om det finns en robust känslighetsmärkning bör du överväga om DLP bör användas för att öka skyddet eftersom
+Även om känslighetsetiketter inte kan användas i DLP-principvillkor kan vissa skyddsscenarier för att förhindra åtkomst uppnås med bara känslighetsetiketter som kan tillämpas automatiskt baserat på känsliga informationstyper. Om det finns en robust känslighetsmärkning bör du överväga om DLP ska användas för att öka skyddet eftersom:
 
   - DLP kan förhindra delning av filer. Känslighetsetiketter kan bara förhindra åtkomst.
 

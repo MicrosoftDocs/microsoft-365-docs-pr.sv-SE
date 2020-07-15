@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Bestäm reglerna för datasekretess, relevanta scenarier, din beredskap och de känsliga informationstyper som finns i din Microsoft 365-miljö.
-ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854358"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126608"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Bedöma datasekretessrisker och identifiera känsliga objekt med Microsoft 365
 
@@ -59,22 +59,22 @@ För senare referens i artiklarna i denna övergripande lösning, ger denna tabe
 
 | Förordning | Artikel/avsnitt | Utdrag | Tillämpliga tekniska kontrollkategorier |
 |:-------|:-----|:-------|:-------|
-| GDPR | Artikel 5.1 f | Personuppgifter ska behandlas på ett sätt som säkerställer lämplig säkerhet för personuppgifterna, inklusive skydd mot obehörig eller olaglig behandling och mot oavsiktlig förlust, förstörelse eller skada, med hjälp av lämpliga tekniska eller organisatoriska åtgärder ("integritet och sekretess".  |  -Jag är inte så bra som jag kan göra. <br> Identitet <br> Enhet <br> Skydd mot hot <br> Skydda information <br> Styr information <br> Upptäck och svara |
+| GDPR | Artikel 5.1 f | Personuppgifter ska behandlas på ett sätt som säkerställer lämplig säkerhet för personuppgifterna, inklusive skydd mot obehörig eller olaglig behandling och mot oavsiktlig förlust, förstörelse eller skada, med hjälp av lämpliga tekniska eller organisatoriska åtgärder ("integritet och sekretess".  |  -Jag är inte så bra som jag kan göra. <br> Identitet <br> Enhet <br> Skydd mot hot <br> Skydda information <br> Styr information <br> Upptäcka och agera |
 |  | Artikel 32.1 a | Med hänsyn till den senaste tekniken, kostnaderna för genomförandet och arten, omfattningen, sammanhanget och syftet med behandlingen samt risken för varierande sannolikhet och allvarlighetsgrad för fysiska personers fri- och rättigheter, ska den registeransvarige och bearbetningsföretaget vidta lämpliga tekniska och organisatoriska åtgärder för att säkerställa en säkerhetsnivå som är lämplig för risken. , bland annat i förekommande fall: a) pseudonymisering och kryptering av personuppgifter. | Skydda information |
 |  | Artikel 13.2 a | "... Den registeransvarige ska vid den tidpunkt då personuppgifter erhålls förse den registrerade med följande ytterligare information som är nödvändig för att säkerställa en rättvis och öppen behandling: a) den period för vilken personuppgifterna kommer att lagras, eller om detta inte är möjligt, de kriterier som används för att fastställa denna period. | Styr information |
-|  | Artikel 15.1 e | Den registrerade ska ha rätt att från den registeransvarige bekräfta om huruvida personuppgifter om honom eller henne behandlas eller inte, och om så är fallet, tillgång till personuppgifter och följande uppgifter: e) förekomsten av rätten att begära rättelse eller radering av personuppgifter eller begränsning av behandlingen av personuppgifter om den registrerade eller att invända mot sådan behandling | Upptäck och svara |
-| LGPD (LGPD) | Artikel 46 | Behandlingsagenter ska vidta säkerhets-, tekniska och administrativa åtgärder som kan skydda personuppgifter från obehörig åtkomst och oavsiktlig eller olaglig förstörelse, förlust, ändring, kommunikation eller någon typ av felaktig eller olaglig behandling. | Skydda information <br> Styr information <br> Upptäck och svara|
-|  | Artikel 48 | Den registeransvarige skall meddela den nationella myndigheten och den registrerade förekomsten av ett säkerhetstillbud som kan skapa risk eller relevant skada för de registrerade. | Upptäck och svara |
+|  | Artikel 15.1 e | Den registrerade ska ha rätt att från den registeransvarige bekräfta om huruvida personuppgifter om honom eller henne behandlas eller inte, och om så är fallet, tillgång till personuppgifter och följande uppgifter: e) förekomsten av rätten att begära rättelse eller radering av personuppgifter eller begränsning av behandlingen av personuppgifter om den registrerade eller att invända mot sådan behandling | Upptäcka och agera |
+| LGPD (LGPD) | Artikel 46 | Behandlingsagenter ska vidta säkerhets-, tekniska och administrativa åtgärder som kan skydda personuppgifter från obehörig åtkomst och oavsiktlig eller olaglig förstörelse, förlust, ändring, kommunikation eller någon typ av felaktig eller olaglig behandling. | Skydda information <br> Styr information <br> Upptäcka och agera|
+|  | Artikel 48 | Den registeransvarige skall meddela den nationella myndigheten och den registrerade förekomsten av ett säkerhetstillbud som kan skapa risk eller relevant skada för de registrerade. | Upptäcka och agera |
 | HIPPA-HITECH | 45 CFR 164.312 e(1) | Vidta tekniska säkerhetsåtgärder för att skydda mot obehörig åtkomst till elektronisk skyddad hälsoinformation som överförs via ett elektroniskt kommunikationsnät. | Skydda information |
 |  | 45 C.F.R. 164.312 e.2 ii | Införa en mekanism för att kryptera elektronisk skyddad hälsoinformation när det anses lämpligt. | Skydda information |
 |  | 45 CFR 164.312 c(2) | Implementera elektroniska mekanismer för att bekräfta att elektronisk skyddad hälsoinformation inte har ändrats eller förstörts på ett otillåtet sätt. | Styr information |
 |  | 45 CFR 164.316 b(1)i) | Om en åtgärd, verksamhet eller bedömning krävs av detta kapitel för att dokumenteras, föra en skriftlig (som kan vara elektronisk) register över åtgärden, verksamheten eller bedömningen | Styr information |
 |  | 45 CFR 164.316 b(1)ii) | Behåll den dokumentation som krävs enligt punkt b.1 i detta avsnitt i sex år från den dag då den skapades eller det datum då den senast gällde, beroende på vilket som inträffar senare. | Styr information |
-|  | 45 C.F.R. 164.308 a.1 ii(D) | Implementera procedurer för att regelbundet granska register över informationssystemaktivitet, till exempel granskningsloggar, åtkomstrapporter och rapporter för spårning av säkerhetsincidenter | Upptäck och svara |
-|  | 45 C.F.R. 164.308 a.6 ii | Identifiera och reagera på misstänkta eller kända säkerhetsincidenter. i möjligaste mån mildra de skadliga effekterna av säkerhetsincidenter som är kända för den berörda enheten eller intresseföretag som omfattas, och dokumentera säkerhetsincidenter och deras resultat. | Upptäck och svara |
-|  | 45 C.F.R. 164.312 b | Implementera maskinvaru-, programvaru- och procedurmekanismer som registrerar och undersöker aktivitet i informationssystem som innehåller eller använder elektronisk skyddad hälsoinformation. | Upptäck och svara |
-| CCPA (på andra sätt) | 1798.105 c | Ett företag som tar emot en verifierbar begäran från en konsument om att radera konsumentens personuppgifter i enlighet med underavdelning (a) i detta avsnitt ska radera konsumentens personuppgifter från sina register och uppmana alla tjänsteleverantörer att radera konsumentens personuppgifter från sina register | Upptäck och svara |
-|  | 1798.105 d | (undantag från 1798.105 c) <br> Ett företag eller en tjänsteleverantör ska inte vara skyldig att uppfylla en konsuments begäran om att radera konsumentens personuppgifter om det är nödvändigt för företags- eller tjänsteleverantören att upprätthålla konsumentens personuppgifter för att: (se gällande bestämmelser för ytterligare information). | Upptäck och svara |
+|  | 45 C.F.R. 164.308 a.1 ii(D) | Implementera procedurer för att regelbundet granska register över informationssystemaktivitet, till exempel granskningsloggar, åtkomstrapporter och rapporter för spårning av säkerhetsincidenter | Upptäcka och agera |
+|  | 45 C.F.R. 164.308 a.6 ii | Identifiera och reagera på misstänkta eller kända säkerhetsincidenter. i möjligaste mån mildra de skadliga effekterna av säkerhetsincidenter som är kända för den berörda enheten eller intresseföretag som omfattas, och dokumentera säkerhetsincidenter och deras resultat. | Upptäcka och agera |
+|  | 45 C.F.R. 164.312 b | Implementera maskinvaru-, programvaru- och procedurmekanismer som registrerar och undersöker aktivitet i informationssystem som innehåller eller använder elektronisk skyddad hälsoinformation. | Upptäcka och agera |
+| CCPA (på andra sätt) | 1798.105 c | Ett företag som tar emot en verifierbar begäran från en konsument om att radera konsumentens personuppgifter i enlighet med underavdelning (a) i detta avsnitt ska radera konsumentens personuppgifter från sina register och uppmana alla tjänsteleverantörer att radera konsumentens personuppgifter från sina register | Upptäcka och agera |
+|  | 1798.105 d | (undantag från 1798.105 c) <br> Ett företag eller en tjänsteleverantör ska inte vara skyldig att uppfylla en konsuments begäran om att radera konsumentens personuppgifter om det är nödvändigt för företags- eller tjänsteleverantören att upprätthålla konsumentens personuppgifter för att: (se gällande bestämmelser för ytterligare information). | Upptäcka och agera |
 |||||
 
 >[!Important]
@@ -98,6 +98,8 @@ Data flyttas också runt med tiden när de bearbetas, förfinas och andra versio
 För att ta itu med datasekretessbestämmelser kan du inte lita på allmänna föreställningar om var du tror att personuppgifter kan finnas, varken nu eller i framtiden. Regler för datasekretess kräver att organisationer visar att de vet var personuppgifterna är fortlöpna. Detta gör det viktigt att ta en första ögonblicksbild av alla dina datakällor för eventuell lagring av personlig information, inklusive din Microsoft 365-miljö, och upprätta mekanismer för kontinuerlig övervakning och identifiering.
 
 Om du inte redan har bedömt din övergripande beredskap och risk i samband med datasekretessbestämmelser kan du använda följande 3-stegsramverk för att komma igång. 
+
+![Åtgärder för att bedöma din övergripande beredskap och risk i samband med datasekretessbestämmelser](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >Denna artikel och dess innehåll är inte avsedda att ta plats i juridisk rådgivning. Det ger bara några grundläggande vägledning och länkar till verktyg som kan vara till hjälp i ett tidigt skede av din bedömning.
@@ -178,7 +180,7 @@ Organisationer som omfattas av andra datasekretessbestämmelser, till exempel CC
 
 GDPR-bedömning består av följande avsnitt:
 
-| | |
+| Avsnitt | Beskrivning |
 |:-------|:-----|
 | Styrning | <ol><li>Anger din sekretesspolicy uttryckligen vilken datainformation som behandlas? </li><li>Kör du regelbundet konsekvensbedömningar för sekretessen? </li><li> Använder du ett verktyg för att hantera personlig information (PI)? </li><li> Har du laglig rätt att bedriva verksamhet med hjälp av PI-data på en viss individ? Spårar du samtycke för data? </li><li> Spårar, implementerar och hanterar du granskningskontroller? Övervakar du dataläckage? </li></ol>|
 | Borttagning och anmälan | <ol><li>Ger ni uttryckliga instruktioner om hur användarnas data kan nås? </li><li> Har du dokumenterade processer för att hantera opt out-samtycke? </li><li> Har du en automatisk raderingsprocess för data? </li><li>   Har du en process för att validera identitet när du samarbetar med en kund? </li></ol>|

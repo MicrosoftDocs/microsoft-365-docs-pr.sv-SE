@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Skydda företagets e-post och data från cyberhot, inklusive utpressningsartiklar, nätfiske och skadliga bilagor. '
-ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005636"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138296"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Topp 10 sätt att skydda Microsoft 365 för affärsplaner
 
@@ -252,7 +252,7 @@ Om du vill skapa en ATP-policy mot nätfiske kan du visa en [kort träningsvideo
     
 4. På sidan Anti-phishing väljer du **+ Skapa**. En guide startar som vägleder dig genom att definiera din anti-phishing-policy.
     
-5. Ange namn, beskrivning och inställningar för principen enligt rekommendationen i diagrammet nedan. Mer information [finns i Läs mer om atp-policyalternativ för nätfiske.](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) 
+5. Ange namn, beskrivning och inställningar för principen enligt rekommendationen i diagrammet nedan. Mer information [finns i Läs mer om atp-policyalternativ för nätfiske.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 
     
 6. När du har granskat inställningarna väljer du **Skapa den här principen** eller **Spara**, beroende på vad som är lämpligt.
 
@@ -269,7 +269,7 @@ Om du vill skapa en ATP-policy mot nätfiske kan du visa en [kort träningsvideo
 |Tillämpas på  <br/> |Välj **Mottagardomänen är**. Under **Något av dessa**väljer du **Välj**. Välj **+ Lägg till**. Markera kryssrutan bredvid namnet på domänen, till exempel contoso.com i listan och välj sedan **Lägg till**. Välj **Klar**.  <br/> |
 |
    
-Mer information finns i [Konfigurera Office 365 ATP:s principer mot nätfiske](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Mer information finns i [Konfigurera Office 365 ATP:s principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9: Skydda mot skadliga bilagor och filer med ATP Säkra bilagor
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Om du vill skapa en ATP-princip för säker bifogad fil kan du visa en [kort tr�
 |Tillämpas på  <br/> |Mottagardomänen är . . . välj domän.  <br/> |
 |
    
-Mer information finns i [Konfigurera Office 365 ATP:s principer mot nätfiske](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Mer information finns i [Konfigurera Office 365 ATP:s principer mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10: Skydda mot nätfiskeattacker med ATP Safe Links
 <a name="phishingatp"> </a>

@@ -18,11 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049638"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138284"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktivt jakt efter hot med avancerad jakt i Microsoft Threat Protection
 
@@ -43,7 +44,7 @@ Vi rekommenderar att du går igenom flera steg för att snabbt komma igång med 
 
 | Lärandemål | Beskrivning | Resurs |
 |--|--|--|
-| **Få en känsla för språket** | Avancerad jakt baseras på [Kusto-frågespråket](https://docs.microsoft.com/azure/kusto/query/), som stöder samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Översikt över frågespråk](advanced-hunting-query-language.md) |
+| **Få en känsla för språket** | Avancerad jakt baseras på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/), som stöder samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Översikt över frågespråk](advanced-hunting-query-language.md) |
 | **Lär dig hur du använder frågeresultaten** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Utforska hur du snabbt kan justera frågor och öka detaljnivån för att få rikare information. | [Arbeta med frågeresultat](advanced-hunting-query-results.md) |
 | **Förstå schemat** | Få en bra förståelse på hög nivå av tabellerna i schemat och deras kolumner. Detta hjälper dig att avgöra var du ska leta efter data och hur du skapar dina frågor. | [Schemareferens](advanced-hunting-schema-tables.md) |
 | **Utnyttja fördefinierade frågor** | Utforska samlingar av fördefinierade frågor som täcker olika hotjaktsscenarier. | - [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och jaga](advanced-hunting-go-hunt.md) |
@@ -53,6 +54,11 @@ Vi rekommenderar att du går igenom flera steg för att snabbt komma igång med 
 ## <a name="get-access"></a>Få åtkomst
 Om du vill använda avancerade jaktfunktioner eller andra [Microsoft Threat Protection-funktioner](microsoft-threat-protection.md) måste du tilldelas en lämplig roll i Azure AD. Observera att din åtkomst till slutpunktsdata påverkas av rollbaserade inställningar för åtkomstkontroll i Microsoft Defender ATP. [Läs om hur du hanterar åtkomst till Microsoft Threat Protection](mtp-permissions.md)
 
+## <a name="data-freshness-and-update-frequency"></a>Datas fräschör och uppdateringsfrekvens
+Avancerade jaktdata kan kategoriseras i två olika typer, var och en konsoliderad på olika sätt.
+
+- **Händelse- eller aktivitetsdata** – fyller i tabeller om aviseringar, säkerhetshändelser, systemhändelser och rutinbedömningar. Avancerad jakt tar emot dessa data nästan omedelbart efter att sensorerna som samlar in dem framgångsrikt överför dem till motsvarande molntjänster. Du kan till exempel börja fråga händelsedata från felfria sensorer på arbetsstationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga på Microsoft Defender ATP och Azure ATP.
+- **Entitetsdata** – fyller i tabeller med konsoliderad information om användare och enheter. Dessa data kommer från både relativt statiska datakällor, till exempel Active Directory-poster och dynamiska källor, till exempel händelseloggar. För att ge nya data uppdateras tabeller var 15:e minut med ny information, vilket lägger till rader som kanske inte är helt ifyllda. Var 24:e timme konsolideras data för att infoga en post som innehåller den senaste, mest omfattande datauppsättningen om varje entitet.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Lär dig frågespråket](advanced-hunting-query-language.md)

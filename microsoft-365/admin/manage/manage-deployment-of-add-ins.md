@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av Centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 51db2bf7b618bddf2c6de417b7f5e53c91a64a1b
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4e9a3a4b7182bfd452c63abd03836623dc77260c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102866"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138250"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
@@ -116,9 +116,9 @@ Office-tillägg kombinerar en XML-manifestfil som innehåller vissa metadata om 
     
 - Läs och skriv data till och från en användares dokument för att ge användaren värde.
     
-Mer information om typerna och funktionerna i Office-tillägg finns i [plattformsöversikt för Office-tillägg,](https://go.microsoft.com/fwlink/p/?linkid=846362)särskilt avsnittet "Anatomi för ett Office-tillägg".
+Mer information om typerna och funktionerna i Office-tillägg finns i [plattformsöversikt för Office-tillägg,](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)särskilt avsnittet "Anatomi för ett Office-tillägg".
   
-Om du vill interagera med användarens dokument måste tillägget deklarera vilken behörighet det behöver i manifestet. En javascript-api-åtkomstbehörighetsmodell på fem nivåer utgör grunden för sekretess och säkerhet för användare av tillägg i åtgärdsfönstret. Majoriteten av tilläggen i Office Store är lässkrivdokument på nivå med nästan alla tillägg som stöder åtminstone ReadDocument-nivån. Mer information om [behörighetsnivåerna finns i Begära behörigheter för API-användning i innehåll och tillägg till åtgärdsfönstret](https://go.microsoft.com/fwlink/p/?linkid=848863).
+Om du vill interagera med användarens dokument måste tillägget deklarera vilken behörighet det behöver i manifestet. En javascript-api-åtkomstbehörighetsmodell på fem nivåer utgör grunden för sekretess och säkerhet för användare av tillägg i åtgärdsfönstret. Majoriteten av tilläggen i Office Store är lässkrivdokument på nivå med nästan alla tillägg som stöder åtminstone ReadDocument-nivån. Mer information om [behörighetsnivåerna finns i Begära behörigheter för API-användning i innehåll och tillägg till åtgärdsfönstret](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
 När du uppdaterar ett manifest är de typiska ändringarna i ett tilläggs ikon och text. Ibland ändras tilläggskommandon. Men behörigheterna för tillägget ändras inte. Webbprogrammet där all kod och logik för tilläggskörningar kan ändras när som helst, vilket är webbprogrammens natur.
   
@@ -133,9 +133,9 @@ Uppdateringar för tillägg sker på följande sätt:
   
 ## <a name="learn-more"></a>Mer information
 
-Skapa och bygga [Office-tillägg](https://go.microsoft.com/fwlink/p/?linkid=846362)
-
 [Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md)
+
+[Bygga office-tillägg](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals).
 
 [Minderåriga och förvärva tillägg från butiken](minors-and-acquiring-addins-from-the-store.md)
   
