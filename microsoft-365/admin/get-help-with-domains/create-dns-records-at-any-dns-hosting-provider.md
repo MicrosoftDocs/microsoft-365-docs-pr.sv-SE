@@ -20,12 +20,12 @@ description: Lär dig verifiera din domän och skapa DNS-poster på vilken DNS-v
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 01bcffe37d9c38d91eff25d9df58f848f4ee1a82
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049672"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138262"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Lägga till DNS-poster för att ansluta till din domän
 
@@ -37,7 +37,9 @@ Om du inte lägger till en domän kommer personer i organisationen att använda 
 
 [Läs frågor och svar om domäner](../setup/domains-faq.md) om du inte hittar det du letar efter nedan.
 
-## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>Steg 1: Lägga till en TXT-post för att verifiera att det är din domän
+## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Steg 1: Lägga till en TXT eller MX-post för att verifiera att det är din domän
+
+### <a name="recommended-verify-with-a-txt-record"></a>Rekommenderas: Verifiera med en TXT-post
 
 Först måste du bevisa att du äger den domän som du vill lägga till i Microsoft 365.
 
@@ -56,6 +58,25 @@ Exempel:
 
 När Microsoft hittar rätt TXT-post är din domän verifierad.
 
+### <a name="verify-with-an-mx-record"></a>Verifiera med en MX-post
+
+Om din domänregistrator inte har stöd för att lägga till TXT-poster kan du verifiera genom att lägga till en MX-post.
+
+1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com/) och välj **Visa alla** > **Inställningar** > **Domäner**.
+2. Logga in på din DNS-värdtjänst i en ny flik i webbläsaren eller i en ny webbläsare och leta sedan reda på hur du hanterar dina DNS-inställningar (t. ex. inställningar för zonfiler, hantera domäner, domänhanteraren, DNS-hanteraren).
+3. Gå till din leverantörs DNS-hanterare och lägga till den MX-post som anges i administrationscentret för din domän.
+
+MX-postens **Prioritet** måste vara den högsta av alla befintliga MX-poster för domänen. Annars kan det störa sändning och mottagning av e-post. Du bör ta bort de här posterna när domänverifieringen är slutförd.
+
+Kontrollera att fälten är inställda på följande värden:
+
+- Posttyp: `MX`
+- Prioritet: Ange det högsta värdet, vanligtvis `0`.
+- Värdnamn: `@`
+- Pekar på adress: Kopiera värdet från administrationscentret och klistra in det här.
+- TTL: `3600‎` (eller din leverantörs standard)
+
+När Microsoft hittar rätt MX-post är din domän verifierad.
 
 ## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>Steg 2: Lägga till DNS-poster för att ansluta till Microsoft-tjänster
 
