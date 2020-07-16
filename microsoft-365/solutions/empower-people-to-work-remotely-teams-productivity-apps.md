@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Gör det möjligt för användarna att vara produktiva med Teams, Exchange, SharePoint och andra Microsoft 365-tjänster.
-ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: a5c1d27afdb7afd8b4ee3052f745c4c986299a2e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005968"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127103"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare
 
@@ -67,11 +67,18 @@ Med Outlook kan distansarbetare vara anslutna och organiserade med e-post, kalen
 
 Se [den här artikeln](../enterprise/secure-email-recommended-policies.md) om du vill ha rekommenderad identitets- och enhetsåtkomst för att skydda organisationens e-post och e-postklienter som stöder modern autentisering och villkorlig åtkomst.
 
-## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>Lagra och samarbeta i filer med SharePoint Online och OneDrive
+## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>Lagra och samarbeta i filer med SharePoint och OneDrive
 
-För innehållssamarbete kan fjärrarbetare använda mappar från SharePoint Online och OneDrive som en central plats i molnet för att lagra och dela filer, samredigera, kommunicera och samarbeta. Distansarbetare kan samarbeta säkert från valfri plats från en webbläsare, från Teams och från Office-appar.
+För innehållssamarbete kan fjärrarbetare använda mappar från SharePoint och OneDrive som en central plats i molnet för att lagra och dela filer, samredigera, kommunicera och samarbeta. Distansarbetare kan samarbeta säkert från valfri plats från en webbläsare, från Teams och från Office-appar.
 
-Se [den här artikeln](../enterprise/sharepoint-file-access-policies.md) om du vill ha de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint Online och OneDrive för företag.
+Du kan behöva migrera dina dokument till SharePoint eller OneDrive från:
+
+- [SharePoint Server-gruppwebbplatser](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [Filresurser](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Ruta](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+Se [den här artikeln](../enterprise/sharepoint-file-access-policies.md) om du vill ha de rekommenderade principerna för identitets- och enhetsåtkomst för att skydda SharePoint och OneDrive.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Skapa och samarbeta med innehåll med Microsoft 365-appar
 

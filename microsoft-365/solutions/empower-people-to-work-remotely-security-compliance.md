@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049877"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127089"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -54,6 +54,8 @@ Skydda dina program och data med de här säkerhetsfunktionerna i Microsoft 365.
 | Azure AD Identity Protection  | Automatisera identifiering och åtgärder för identitetsbaserade risker. <br><br>Skapa riskbaserade principer för villkorsstyrd åtkomst för att kräva multifaktorautentisering (MFA) för riskfyllda inloggningar. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser |
 ||||
 
+Mer information finns i artikeln om [snabbuppgifter för att komma igång med Microsoft 365-efterlevnad](../compliance/compliance-quick-tasks.md).
+
 ## <a name="compliance"></a>Efterlevnad
 
 Uppfyll de interna principerna eller regelkraven med dessa efterlevnadsfunktioner i Microsoft 365.
@@ -64,10 +66,12 @@ Uppfyll de interna principerna eller regelkraven med dessa efterlevnadsfunktione
 | Dataförlustskydd (DLP) | Identifiera, varna för och blockera riskfylld, oavsiktlig eller olämplig delning, t.ex. av data som innehåller personuppgifter, både internt och externt. | Microsoft 365 E3 och E5 | 
 | Programkontroll med villkorsstyrd åtkomst | Förhindra att känsliga data laddas ned till användarnas personliga enheter. | Microsoft 365 E3 och E5 |
 | Etiketter och principer för kvarhållning av data | Implementera kontrollerna för informationsstyrning, t.ex. hur länge data ska behållas och kraven för lagring av personuppgifter för kunder, för att uppfylla organisationens principer och dataföreskrifter. | Microsoft 365 E3 och E5 |
-| E-postkryptering | Skicka och ta emot krypterade e-postmeddelanden som innehåller reglerade data, t.ex. personliga data om kunder, mellan personer i och utanför din organisation. | Microsoft 365 E3 och E5 |
+| Meddelandekryptering i Office (OME) | Skicka och ta emot krypterade e-postmeddelanden som innehåller reglerade data, t.ex. personliga data om kunder, mellan personer i och utanför din organisation. | Microsoft 365 E3 och E5 |
 | Efterlevnadshanteraren | Hantera regelefterlevnad som rör Microsofts molntjänster med detta arbetsflödesbaserade verktyg för riskbedömning i Microsoft Service Trust Portal. | Microsoft 365 E3 och E5 |
 | Efterlevnadspoäng (förhandsversion) | Se en övergripande poäng för din aktuella efterlevnadskonfiguration och rekommendationer för att förbättra den i Efterlevnadscentret för Microsoft 365. | Microsoft 365 E3 och E5 |
 ||||
+
+Mer information finns i artikeln om [de 12 viktigaste åtgärderna för säkerhetsteam för att stödja arbete hemifrån](../security/top-security-tasks-for-remote-work.md).
 
 ## <a name="results-of-step-3"></a>Resultat av steg 3
 
