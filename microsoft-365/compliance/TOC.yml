@@ -283,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: Konfigurera en princip för arkivering och borttagning för postlådor
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Hålla kvar data
+    - name: Behålla och ta bort data
       items:
-        - name: Lär dig mer om kvarhållningsprinciper
-          href: retention-policies.md
-        - name: Skapa och konfigurera kvarhållningsprinciper
+        - name: Lär dig mer om kvarhållning
+          items:
+            - name: Kvarhållningsprinciper och -etiketter
+              href: retention.md
+            - name: Kvarhållning för SharePoint och OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Kvarhållning för Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Kvarhållning för Exchange
+              href: retention-policies-exchange.md
+        - name: Komma igång med kvarhållning
+          href: get-started-with-retention.md
+        - name: Skapa kvarhållningsprinciper
           href: create-retention-policies.md
-        - name: Kvarhållning för SharePoint och OneDrive
-          href: retention-policies-sharepoint.md
-        - name: Kvarhållning för Microsoft Teams
-          href: retention-policies-teams.md
-        - name: Kvarhållning för Exchange
-          href: retention-policies-exchange.md
-        - name: Filplan
+        - name: Använda filplan
           href: file-plan-manager.md
-        - name: Lär dig mer om kvarhållningsetiketter
-          href: labels.md
-        - name: 'Skapa, publicera och använda automatiskt kvarhållningsetiketter'
-          href: create-retention-labels.md
+        - name: Skapa kvarhållningsetiketter och använda dem i appar
+          href: create-apply-retention-labels.md
+        - name: Använda en kvarhållningsetikett för innehåll automatiskt
+          href: apply-retention-labels-automatically.md
         - name: Uppfylla kraven i SEC-regel 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Använda PowerShell för att skapa och publicera kvarhållningsetiketter
+        - name: Skapa kvarhållningsetiketter med PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Händelsebaserad kvarhållning
-          href: event-driven-retention.md
-        - name: Automatisera händelsebaserad kvarhållning
-          href: automate-event-driven-retention.md
-        - name: Hantera livscykeln för SharePoint-dokument
-          href: auto-apply-retention-labels-scenario.md
+        - name: Använda händelsebaserad kvarhållning
+          items:
+            - name: Starta kvarhållning när en händelse inträffar
+              href: event-driven-retention.md
+            - name: Automatisera händelsebaserad kvarhållning
+              href: automate-event-driven-retention.md
+            - name: Hantera livscykeln för SharePoint-dokument
+              href: auto-apply-retention-labels-scenario.md
     - name: Kassera data
       href: disposition.md
     - name: Hantera inaktiva postlådor
@@ -345,34 +351,6 @@
           href: records-management.md
         - name: Poster
           href: records.md
-        - name: Filplan
-          items:
-            - name: Hantera kvarhållningsetiketter
-              href: file-plan-manager.md
-            - name: Lär dig mer om kvarhållningsetiketter
-              href: labels.md
-            - name: Skapa och publicera kvarhållningsetiketter
-              href: create-retention-labels.md
-            - name: Använda PowerShell för att skapa och publicera kvarhållningsetiketter med skala
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: Visa etikettanvändning med etikettanalys
-              href: label-analytics.md
-            - name: Visa etikettaktivitet för dokument
-              href: view-label-activity-for-documents.md
-            - name: Visa datastyrningsrapporter
-              href: view-the-data-governance-reports.md
-        - name: Händelser
-          items:
-            - name: Händelsebaserad kvarhållning
-              href: event-driven-retention.md
-            - name: Automatisera händelsebaserad kvarhållning
-              href: automate-event-driven-retention.md
-        - name: Borttagning
-          href: disposition.md
-        - name: Mer om hantering av arkivhandlingar
-          items:
-            - name: Titta på videor om hantering av arkivhandlingar
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: Hantera eDiscovery
   items:
     - name: eDiscovery i Microsoft 365
