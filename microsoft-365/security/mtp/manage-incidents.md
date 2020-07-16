@@ -19,17 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42808134"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148120"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Hantera incidenter i Microsoft Threat Protection
 
 **Gäller:**
-- Microsofts hotskydd
+- Microsoft Hotskydd
 
 
 
@@ -38,13 +38,22 @@ Hanteringen av incidenter är avgörande för att säkerställa att hoten begrä
 
 Du kan hantera incidenter genom att välja en incident från **kön Incidenter**. 
 
-Du kan redigera namnet på en incident, lösa den, ange dess klassificering och bestämning. Du kan också tilldela händelsen till dig själv, lägga till incidenttaggar och kommentarer.
+Du kan redigera namnet på en incident, lösa den, ange dess klassificering och bestämning. Du kan också tilldela incidenten till dig själv, lägga till incidenttaggar och kommentarer.
 
 I de fall där du under utredningen vill flytta aviseringar från en incident till en annan kan du också göra det från fliken Aviseringar, vilket skapar en större eller mindre incident som innehåller alla relevanta aviseringar.
 
 ## <a name="edit-incident-name"></a>Redigera incidentnamn
 Som standard tilldelas en incident ett nummer. Du kan ändra incidentnamnet så att det stämmer överens med den namngivningskonvention som du föredrar.
- 
+
+> [!TIP]
+> För ytterligare synlighet via ett ögonkast genererar automatisk incidentnamn, som för närvarande finns i offentlig förhandsversion, incidentnamn baserat på varningsattribut som antalet slutpunkter som påverkas, användare som påverkas, identifieringskällor eller kategorier. På så sätt kan du snabbt förstå omfattningen av incidenten.
+>
+> Till exempel: *Flerstegsincident på flera slutpunkter som rapporterats av flera källor.*
+>
+> Incidenter som fanns före utrullningen av automatisk incidentnamn kommer inte att få sitt namn ändrat.
+>
+> Läs mer om [hur du aktiverar förhandsgranskningsfunktioner](preview.md#turn-on-preview-features).
+
 ## <a name="assign-incidents"></a>Tilldela incidenter
 Om en incident ännu inte har tilldelats kan du välja **Tilldela mig** för att tilldela händelsen till dig själv. Detta förutsätter ägandet av inte bara händelsen, men också alla varningar i samband med den.
 
@@ -67,5 +76,4 @@ När en ändring eller kommentar görs i en avisering registreras den i avsnitte
 Tillagda kommentarer visas direkt i fönstret.
 
 ## <a name="add-incident-tags"></a>Lägga till incidenttaggar
-Du kan lägga till anpassade taggar i en incident, till exempel för att flagga en grupp incidenter med gemensamma egenskaper. Du kan senare filtrera incidentkön för alla incidenter som innehåller en specifik tagg.
-
+Du kan lägga till anpassade taggar i en incident, till exempel för att flagga en grupp incidenter med gemensamma egenskaper. Du kan senare filtrera incidentkön för alla incidenter som innehåller en viss tagg.
