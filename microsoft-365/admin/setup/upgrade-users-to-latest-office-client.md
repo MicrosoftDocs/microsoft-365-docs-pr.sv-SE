@@ -53,7 +53,7 @@ Som administratör styr du vilken version av Office-personer i organisationen so
 
 ## <a name="upgrade-steps"></a>Steg för att uppgradera
 
-The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
+Stegen nedan vägleder dig genom processen att uppgradera användarna till den senaste Office-skrivbordsklienten. Vi rekommenderar att du läser igenom de här stegen innan du påbörjar uppgraderingen.
   
 ## <a name="step-1---check-system-requirements"></a>Steg 1 - Kontrollera systemkrav
 
@@ -114,7 +114,7 @@ Om du använder tillägg från tredje part bör du kontakta tillverkaren för at
 
  **Prenumerationer som inte stöds** Om ditt exemplar av Office erhölls via prenumerationer som har upphört, till exempel Office 365 Small Business Premium eller Office 365 Mid-size Business, kan du inte installera en äldre version av Office om du inte har produktnyckeln som medföljde prenumerationen.
 
-If you'd prefer to install your older version of Office side-by-side with the latest version, you can see a list of versions where this is supported in, [Install and use different versions of Office on the same PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). A side-by-side installation might be the right choice for you, if for example, you've installed third-party add-ins you're using with your older version of Office and you're not yet sure they're compatible with the latest version.
+Om du föredrar att ha den äldre versionen av Office installerad sida vid sida med den senaste versionen finns mer information i [Installera och använda flera versioner av Office på samma dator](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). En sida vid sida-installation kan vara rätt val för dig om du till exempel använder tillägg från tredje part i en äldre version av Office och inte kan bekräfta att tilläggen är kompatibla med den senaste versionen.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Steg 4 - Tilldela licenser till användare
 
@@ -125,4 +125,4 @@ Om du inte redan har gjort det läser du Tilldela licenser till alla användare 
 När du har verifierat att de användare som du vill uppgradera alla har licenser är det sista steget att låta dem installera Office, se [Hämta och installera eller installera om Office på din PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
-> If you don't want your users installing Office themselves, see [Manage software download settings in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). You can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) to download the Office software to your local network and then deploy Office by using the software deployment method you typically use.
+> Om du inte vill att användarna själva installerar Office kan du läsa mer i artikeln om att [hantera nedladdningsinställningar för programvara i Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Du kan använda [distributionsverktyget för Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) om du vill ladda ned Office-programvaran till ditt lokala nätverk och sedan distribuera Office med hjälp av den programdistributionsmetod som du normalt använder.

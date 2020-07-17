@@ -50,7 +50,7 @@ Om en användare har en dator som innehåller många personliga filer, bör du f
     
 3. Välj **Ladda upp**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) i menyraden och bläddra till de filer du vill spara. 
     
-To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
+Du kan även använda ett tredjepartsverktyg, till exempel ForensiT, för att föra över användarprofilen och viktiga filer. Du bör föra över dessa filer i OneDrive för företag också.
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Mer information om hur du konfigurerar och använder Microsoft 365 för företag
 

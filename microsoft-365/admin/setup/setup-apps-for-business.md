@@ -66,7 +66,7 @@ Du kan lägga till användare i guiden eller så kan du [lägga till användare 
 
 ## <a name="install-office"></a>Installera Office
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+När du har skapat konton för de andra i företaget kan du och övriga gruppmedlemmar installera den fullständiga skrivbordsversionen av Office (Word, Excel, Outlook osv.). Varje enskild användare kan installera Office på upp till fem PC- eller Mac-datorer.
   
 ::: moniker range="o365-worldwide"
 
@@ -100,9 +100,9 @@ Få anvisningar för din enhet: [Android](https://support.microsoft.com/office/6
   
 ## <a name="store-files-online"></a>Lagra filer online
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+I Microsoft är det enkelt att lagra filer online. Mer information om vilka lagringsplatser som passar bäst för ditt företag finns i [Här kan du lagra filer i Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Alla får automatiskt en **OneDrive**-lagringsplats i molnet när du skapar Microsoft-konton åt dem. Med OneDrive får du tillgång till filerna från alla dina datorer, telefoner och surfplattor.  
   
 1. Öppna OneDrive i Utforskaren på datorn. Eller, från [Office 365](https://www.office.com) kan du öppna **OneDrive** från appfönstret.
 

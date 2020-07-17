@@ -82,7 +82,7 @@ Det är viktigt att du bara har eller skapar **en TXT-post för SPF**. Om du red
 
 ## <a name="what-is-a-domain-name"></a>Vad är ett domännamn?
 
-A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
+En domän är ett unikt namn som visas efter **@** -tecknet i e-postadresser och efter **www.** i webbadresser. Det består vanligen av organisationens namn och ett vanligt Internetsuffix, till exempel  *företagsnamn.com*  eller  *universitetsnamn.edu*  . 
   
 Genom att använda en anpassad domän som "**rob \@ contoso.com**" med Microsoft 365 kan du skapa trovärdighet och erkännande för ditt varumärke. 
   
@@ -207,7 +207,7 @@ Microsoft 365 skapar en domän åt dig, till exempel *contoso.onmicrosoft.com*, 
     
 - **Du kan inte ta bort domänen onmicrosoft.** Microsoft 365 måste behålla den eftersom den används bakom kulisserna för din prenumeration. Men du behöver inte använda domänen när du har lagt till en egen domän. 
     
-You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
+Du kan emellertid fortsätta använda den första onmicrosoft.com-domänen, även efter att du har lagt till din domän. Den fungerar fortfarande för e-post och andra tjänster, så det är upp till dig.
   
 ::: moniker-end
 

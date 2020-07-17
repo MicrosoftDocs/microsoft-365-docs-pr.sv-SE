@@ -69,7 +69,7 @@ Du kan använda attribut som kan hjälpa till att identifiera vem som skapade gr
 
 Azure Active Directory-attribut (Azure AD) stöds är [Avdelning], [Företag], [Office], [StateOrProvince], [CountryOrRegion] och [Titel].
 
-- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
+- Användarattribut som inte stöds betraktas som fasta strängar, t.ex. "[postalCode]"
 
 - Tilläggsattribut och egna attribut stöds inte.
 
@@ -104,7 +104,7 @@ Inga substrängsökningar utförs. Närmare bestämt krävs en exakt matchning m
 
 ## <a name="admin-override"></a>Åsidosättning för administratör
 
-Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
+Vissa administratörer är undantagna från de här principerna i alla grupparbetslaster och slutpunkter så att de kan skapa grupper med blockerade ord och med de namnkonventioner de önskar. Nedan följer listan över administratörsroller som är undantagna från namnprincipen för grupp.
 
 - Global administratör
 

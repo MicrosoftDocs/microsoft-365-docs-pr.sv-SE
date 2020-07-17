@@ -32,7 +32,7 @@ ms.locfileid: "44779887"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Skapa organisationsomfattande signaturer och ansvarsfriskrivningar
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ Du kan lägga till en e-postsignatur, en juridisk ansvarsfriskrivning eller en policy om konfidentialitet i e-postmeddelanden som skickas till eller från din organisation. Du kan konfigurera den så att den gäller för alla inkommande och utgående meddelanden som visas nedan. Eller så kan du använda den på vissa meddelanden, till exempel dem som innehåller specifika ord eller textmönster.
 
  Titta på en kort video om hur du skapar en företagsomfattande e-postsignatur. <br><br>
   
@@ -89,7 +89,7 @@ Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?
 
 9. Välj **Välj ett** och välj **Radbryt** som reservalternativ. Välj sedan **OK**. Det innebär att om ansvarsfriskrivningen inte kan läggas till på grund av kryptering eller en annan e-postinställning kommer den att inneslutas i ett meddelandekuvert.
     
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
+10. Lämna **Granska den här regeln med allvarlighetsnivå** markerat. Välj sedan **Låg**, **Medium** eller **Hög** för användning i meddelandeloggen. 
     
 11. Välj **Tillämpa** för att aktivera ansvarsfriskrivningen direkt, såvida du inte vill testa den först. 
     

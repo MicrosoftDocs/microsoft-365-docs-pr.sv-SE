@@ -36,7 +36,7 @@ Det är ofta nödvändigt att schemalägga möten med personer utanför organisa
 Kalenderdelning är en global inställning, vilket innebär att du, administratören, kan aktivera den för alla användare i klienten. När delningen är aktiverad kan användare använda Outlook Web App för att dela sina kalendrar med personer i eller utanför organisationen. Personer i organisationen kan visa den delade kalendern sida vid sida med sin egen. Personer utanför organisationen får ett e-postmeddelande med en URL som de kan använda för att visa kalendern. Användaren bestämmer hur mycket som ska delas och när, samt när kalendern ska vara privat.
   
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
+> Om du vill dela kalendrar med en organisation som använder Exchange Server 2013 (en lösning på platsen), Exchange-administratören måste du konfigurera en autentisering relation med molnet. Det här kallas "federation" och som måste uppfylla minimikraven för programvaran. [Mer information finns i ](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) Starta. 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Aktivera kalenderdelning med administrationscentret för Microsoft 365
 
@@ -53,5 +53,5 @@ Kalenderdelning är en global inställning, vilket innebär att du, administrat�
     
 ## <a name="invite-people-to-access-calendars"></a>Bjuda in personer att få åtkomst till kalendrar
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
+När delning är aktiverad för klienten kan kalenderinnehavare utöka inbjudningar till specifika användare. Se [Dela kalendern i Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) för anvisningar. 
   

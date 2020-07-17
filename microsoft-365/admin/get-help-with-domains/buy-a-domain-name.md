@@ -88,9 +88,9 @@ Om du vill köpa en domän från en annan domänregistrator än [GoDaddy](https:
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Överföra din domän till en annan domänregistrator
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+Om din domän är registrerad hos en leverantör som inte stöder alla nödvändiga DNS-poster kan du överföra den till en annan registrator. När du överför domänen kan du ändra vem du skickar betalningar till för att förnya och behålla ditt domännamn.
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
+Begär överföringen hos registratorn du vill flytta din domän till. Titta efter ett alternativ som **Överför DNS** på registratorns webbplats. När ändringarna har genomförts kan det ta några dagar innan de uppdateras på Internet.
  
 
 
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+Om du inte redan har en egen domän kan du enkelt köpa en online hos en domännamnsregistrator, en domänåterförsäljare eller hos din nuvarande Internetleverantör. Du får ett domännamn när du registrerar dig för Office 365 med 21Vianet, till exempel contoso.partner.onmschina.cn. Men du kanske vill använda ett eget domännamn, till exempel fourthcoffee.com.
   
 Om du vill konfigurera en domän i Microsoft 365 måste du äga en domän och ändra några av DNS-posterna för domänen.
   

@@ -104,18 +104,18 @@ En fråga vi ofta får är: "Vad ska jag göra för att skydda data när en anst
 > [!NOTE]
 > Om du är global administratör kan du ta bort medarbetaren, vidarebefordra deras e-post, välja vad de ska göra med deras OneDrive-innehåll med hjälp av den nya guidade upplevelsen. Mer information finns i [Global admin: Ta bort en användare](remove-former-employee.md). Vi rekommenderar dock att du slutför alla ytterligare steg som anges här för att säkerställa att medarbetaren inte har åtkomst till företagets data. 
   
-Here's a quick overview. Each step is explained in detail in this article.
+Här följer en snabb översikt: Varje steg beskrivs i detalj i den här artikeln.
   
 |||
 |:-----|:-----|
 |**Steg** <br/> |**Varför** <br/> |
 |1. [Spara innehållet i en tidigare anställds postlåda](#save-the-contents-of-a-former-employees-mailbox) <br/> |Det är användbart för den som ska ta över den anställdas arbete, samt i händelse av tvist.  <br/> |
-|2. [Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
+|2. [Vidarebefordra en före detta anställds e-post till en annan anställd eller konvertera till en delad postlåda](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Då kan du hålla den före detta anställdas e-postadress aktiv. Om du har kunder eller partners som fortfarande skickar e-post till den före detta anställdas e-postadress hamnar den hos den person som har tagit över arbetet.  <br/> |
 |3. [Rensa och blockera en tidigare anställds mobil enhet](#wipe-and-block-a-former-employees-mobile-device) <br/> |Tar bort affärsdata från telefonen eller surfplattan.  <br/> |
 |4. [Blockera en tidigare anställds åtkomst till Microsoft 365-data](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Det hindrar personen från att komma åt sin gamla Microsoft 365-postlåda och data.  <br/><br/> **Tips:** När du blockerar en användares åtkomst betalar du fortfarande för deras licens. Du måste ta bort licensen från prenumerationen för att slippa betala för den (steg 5).           |
-|5. [Flytta medarbetarens OneDrive-innehåll](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Om du bara tar bort en användares licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/><br/> Before you delete the account, you should move the content of their OneDrive to another location that's easy for you to access. After you delete an employee's account, the content in their OneDrive is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their OneDrive content. If you restore the user's account, the OneDrive content will remain accessible to you even after 30 days.  <br/> |
-|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |Om en personlig dator använts för att ladda ned filer från OneDrive och SharePoint, i stället för en företagsdator, går det inte att rensa dessa filer.  <br/><br/> Åtkomst kvarstår till alla filer som har synkroniserats till datorn.  <br/> |
-|6. [Ta bort och ta bort Microsoft 365-licensen från en tidigare anställd](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
+|5. [Flytta medarbetarens OneDrive-innehåll](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Om du bara tar bort en användares licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/><br/> Innan du tar bort kontot bör du flytta innehållet på deras OneDrive till en annan plats som är enkel att komma åt. Efter att du tagit bort en anställds konto bevaras innehållet på deras OneDrive under **30** dagar. Under de 30 dagarna kan du dock återställa användarens konto och få åtkomst till deras OneDrive-innehåll. Om du återskapar användarens konto kommer OneDrive-innehållet att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
+|5a. Vad kan jag göra om personen använt sin egen dator för att komma åt OneDrive och SharePoint?  <br/> |Om en personlig dator använts för att ladda ned filer från OneDrive och SharePoint, i stället för en företagsdator, går det inte att rensa dessa filer.  <br/><br/> Åtkomst kvarstår till alla filer som har synkroniserats till datorn.  <br/> |
+|6. [Ta bort och ta bort Microsoft 365-licensen från en tidigare anställd](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |När du tar bort en licens kan du tilldela någon annan den. Du kan också radera licensen så att du inte behöver betala för den förrän du anställer någon ny.  <br/><br/> När du tar bort eller raderar en licens sparas användarens gamla e-post, kontakter och kalender i **30 dagar**, och tas sedan bort permanent. Om du tar bort eller raderar en licens, men inte tar bort kontot, kommer innehållet på användarens OneDrive att finnas tillgängligt för dig även efter 30 dagar.  <br/> |
 |7. [Ta bort en tidigare anställds användarkonto](#delete-a-former-employees-user-account)<br/> |Då tas kontot bort från administrationscentret. Hjälper dig att hålla ordning och reda.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Spara innehållet i en tidigare anställds postlåda
@@ -123,11 +123,11 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 Det finns två sätt du kan spara innehållet i den tidigare anställdas postlåda:
   
-1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+1. Lägg till den tidigare anställdas e-postadress till din version av Outlook 2013 eller 2016 och exportera sedan alla data till en PST-fil. Du kan importera dessa data till ett annat e-postkonto vid behov. Mer information om hur du gör det finns i [Få åtkomst till och säkerhetskopiera en tidigare anställds användardata](get-access-to-and-back-up-a-former-user-s-data.md).
     
     ELLER
     
-2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
+2. Aktivera Bevarande av juridiska skäl eller Lokalt bevarande för postlådan innan du tar bort användarkontot. Det här är mycket mer komplicerat än det första alternativet, men värt att välja om: företagsabonnemanget omfattar arkivering och bevarande av juridiska skäl, det finns risk för tvister och du har en tekniskt stark IT-avdelning.
     
     När du har konverterar postlådan till en inaktiv postlåda kan administratörer, efterlevnadsansvariga och hanterare av arkivhandlingar använda lokala eDiscovery-verktyg i Exchange Online för att komma åt och söka i innehållet.
     
@@ -140,9 +140,9 @@ Det finns två sätt du kan spara innehållet i den tidigare anställdas postlå
 
 I det här steget tilldelar du den tidigare anställdas e-postadress till en annan anställd eller [konverterar postlådan till en delad postlåda](../email/convert-user-mailbox-to-shared-mailbox.md) du har skapat. 
   
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it. 
+- Att skapa en delad postlåda är det billigaste alternativet eftersom du inte behöver betala för en licens **så länge postlådan är mindre än 50 GB**. Över 50 GB så måste du tilldela en licens till den. 
     
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
+- Om du konverterar postlådan till en delad postlåda blir även gamla e-postmeddelanden tillgängliga. Det kan ta upp mycket utrymme.
     
 - Om du vidarebefordrar e-postmeddelanden kommer bara  *nya*  e-postmeddelanden som skickas till den tidigare anställda att skickas till nuvarande anställda. 
     
@@ -159,7 +159,7 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 
 3. Under **Vidarebefordran av e-post**väljer du **Hantera vidarebefordran av e-post**.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren (eller den delade postlådan) dit e-posten ska skickas. 
   
 5. Välj **Spara**. 
     
@@ -175,7 +175,7 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 
 3. Välj **Redigera** **bredvid Vidarebefordring av e-post**.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren (eller den delade postlådan) dit e-posten ska skickas. 
   
 5. Välj **Spara**. 
     
@@ -191,7 +191,7 @@ I det här steget tilldelar du den tidigare anställdas e-postadress till en ann
 
 3. Välj **Redigera** **bredvid Vidarebefordring av e-post**.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Aktivera **Vidarebefordra all e-post som skickats till den här postlådan**. I rutan **Adress för vidarebefordran** skriver du e-postadressen till den aktuella medarbetaren (eller den delade postlådan) dit e-posten ska skickas. 
   
 5. Välj **Spara**. 
     
@@ -217,7 +217,7 @@ Om den tidigare anställde hade en företagstelefon kan du använda Administrati
     
 6. Välj **Spara**. 
     
-    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
+    **Tips**: Kontrollera att du tar bort eller inaktiverar användaren från din lokala Blackberry Enterprise Service. Du bör dessutom inaktivera alla Blackberry-enheter för användaren. Läs i Blackberry Business Cloud Services Administration Guide om du behöver specifika anvisningar om hur du inaktiverar användaren. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockera en tidigare anställds åtkomst till Microsoft 365-data
 <a name="bkmk_block"> </a>
@@ -340,16 +340,16 @@ Mer information om hur du hanterar användarlicenser för Microsoft 365 för fö
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Så här påverkas Skype för företag när en anställds konto tas bort
 <a name="bkmk_remove"> </a>
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+När du tar bort en användares licens från Office 365 frigörs PSTN-telefonnumret som är kopplat till användaren. Du kan tilldela det till en annan användare.
   
-If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
+Om användaren tillhör en kögrupp är användaren inte längre ett möjligt mål för agenter från samtalskön. Därför rekommenderar vi att användaren också tas bort från de grupper som är kopplade till samtalskön. 
   
 ## <a name="delete-a-former-employees-user-account"></a>Ta bort en tidigare anställds användarkonto
 <a name="bkmk_delete"> </a>
 
 När du har sparat och kommit åt den tidigare anställdes alla användardata kan du ta bort den tidigare anställdes konto.
   
-Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
+Ta inte bort kontot om du har konfigurerat vidarebefordran av e-post eller konverterat postlådan till en delad postlåda. Kontot krävs för att kunna använda vidarebefordran av e-post eller den delade postlådan.
 
 ::: moniker range="o365-worldwide"
 
@@ -381,7 +381,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker-end
 
-When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
+När du tar bort en användare blir dennes konto inaktivt i ca 30 dagar. Du har tills dess på dig att återställa kontot innan det tas bort permanent.
   
 ### <a name="does-your-organization-use-active-directory"></a>Använder ni Active Directory i organisationen?
 
@@ -400,8 +400,8 @@ Här finns information om hur du avslutar en anställds e-post (Exchange).
 |:-----|:-----|
 |**Vad du kan göra** <br/> |**Hur gör du det?** <br/> |
 |Avsluta en session (till exempel Outlook på webben, Outlook, Exchange ActiveSync, etc.) och framtvinga en ny session  <br/> |Återställa lösenord  <br/> |
-|Avsluta en session och blockera åtkomst till framtida sessioner (för alla protokoll)  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Avbryt sessionen för ett visst protokoll (till exempel ActiveSync)  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Avsluta en session och blockera åtkomst till framtida sessioner (för alla protokoll)  <br/> |Inaktivera kontot. Till exempel (i administrationscentret för Exchange eller med PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|Avbryt sessionen för ett visst protokoll (till exempel ActiveSync)  <br/> |Inaktivera protokollet. Till exempel (i administrationscentret för Exchange eller med PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 Åtgärderna ovan kan göras på 3 platser:
   
@@ -414,9 +414,9 @@ Här finns information om hur du avslutar en anställds e-post (Exchange).
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Så här får du snabbast svar vid kontouppsägning
 
- **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync. 
+ **Snabbast**: Använd administrationscentret för Exchange (använd PowerShell) eller administrationscentret för Azure Active Directory. Det kan ta flera timmar att synkronisera ändringar genom DirSync i en lokal miljö. 
   
- **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync. 
+ **Snabbast för en användare med närvaro lokalt och i Exchange-datacentret**: Avbryt sessionen med administrationscentret för Azure Active Directory/administrationscentret för Exchange OCH gör även ändringen i den lokala miljön. Ändringen i administrationscentret för Azure Active Directory/administrationscentret för Exchange kommer annars att skrivas över av DirSync. 
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

@@ -52,9 +52,9 @@ Här är några av de viktigaste uppgifterna som användare kan göra när de ti
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online-rollgrupper
 
-If you have a large organization, the Exchange admin might want to assign users to Exchange role groups. When an admin adds a user to a role group, the user gets permissions to perform certain business functions only members of that group can do.
+Om du har en stor organisation kanske Exchange-administratören vill tilldela Exchange-rollgrupper till användare. När en administratör lägger till en användare i en rollgrupp får användaren behörighet att utföra vissa företagsfunktioner som endast medlemmar i den gruppen kan utföra.
   
- For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+ Till exempel kan Exchange-administratören lägga till någon i rollgruppen för Identifieringshantering så att han/hon kan söka i postlådor efter data som uppfyller vissa villkor. Mer information finns i [Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) och [Hantera rollgrupper](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
 ## <a name="learn-about-other-admin-role"></a>Läs mer om annan administratörsroll
 

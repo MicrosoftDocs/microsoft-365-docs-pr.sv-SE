@@ -47,9 +47,9 @@ Din faktura innehåller tre adresser:
 
 - **Faktureras till-adress** Det här är adressen till din faktureringsavdelning, vanligtvis samma som **Såld till**-adressen.
 
-- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
+- **Tjänstanvändningsadress** Adressen där tjänsten används, vanligtvis samma som **Såld till**-adressen. Om organisationen har fjärranvändare eller flera kontor använder du adressen där majoriteten av användarna finns.
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+I de flesta fall är de här adresserna desamma. Om du behöver ändra en eller flera adresser kan du göra det. Du kan också ange en alternativ e-postadress för att få faktureringsaviseringar, samt ändra den alternativa e-postadressen för andra administratörer.
   
 ::: moniker range="o365-worldwide"
 

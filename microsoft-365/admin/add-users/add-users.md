@@ -78,7 +78,7 @@ Du måste vara global, licens eller användaradministratör för att kunna lägg
     - **Kontaktinformation** Expandera det här avsnittet för att fylla i mobiltelefonnummer, adress och så vidare.
     - **Lösenord** Använd lösenordet för automatiskt uppradade eller expandera för att ange ett starkt lösenord för användaren. De måste ändra sitt lösenord efter 90 dagar. Du kan även välja att **Uppmana användaren att byta lösenord vid första inloggningen**.
     - **Roller** Expandera det här avsnittet om du vill göra användaren till administratör.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Produktlicenser** Expandera det här avsnittet och välj rätt licens. Även om du inte har några tillgängliga licenser kan du alltid lägga till en ny användare och köpa fler licenser.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ Du måste vara global, licens eller användaradministratör för att kunna lägg
     - **Kontaktinformation** Expandera det här avsnittet för att fylla i mobiltelefonnummer, adress och så vidare.
     - **Lösenord** Använd lösenordet för automatiskt uppradade eller expandera för att ange ett starkt lösenord för användaren. De måste ändra sitt lösenord efter 90 dagar. Du kan även välja att **Uppmana användaren att byta lösenord vid första inloggningen**.
     - **Roller** Expandera det här avsnittet om du vill göra användaren till administratör.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Produktlicenser** Expandera det här avsnittet och välj rätt licens. Även om du inte har några tillgängliga licenser kan du alltid lägga till en ny användare och köpa fler licenser.
 
 ::: moniker-end
 

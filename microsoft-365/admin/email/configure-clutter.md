@@ -38,7 +38,7 @@ Läs artikeln [Använd PowerShell med Exchange Online](https://go.microsoft.com/
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Aktivera Övrig e-post med Exchange PowerShell
 
-You can enable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+Du kan manuellt aktivera Övrig e-post för en postlåda genom att köra cmdleten [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446). Du kan också visa inställningar för Övrig e-post för postlådor i din organisation genom att köra cmdleten [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759). 
   
 Aktivera Övrig e-post för en enskild användare med namnet Diana Bergqvist
     
@@ -47,7 +47,7 @@ Aktivera Övrig e-post för en enskild användare med namnet Diana Bergqvist
 
 ## <a name="turn-clutter-off-using-exchange-powershell"></a>Inaktivera Övrig e-post med Exchange PowerShell
 
-You can disable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+Du kan manuellt inaktivera Övrig e-post för en postlåda genom att köra cmdleten [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446). Du kan också visa inställningarna för **Övrig e-post** för postlådor i din organisation genom att köra cmdleten [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759). 
   
 Inaktivera Övrig e-post för en enskild användare med namnet Diana Bergqvist:
     

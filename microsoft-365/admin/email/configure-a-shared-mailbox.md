@@ -118,7 +118,7 @@ Du behöver inte tilldela en licens till den delade postlådan för att vidarebe
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Tillåta alla att se skickad e-post (svaren)
 
-By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
+Standardinställningen är att e-post skickad från den delade postlådan inte sparas i den gemensamma Skickat-mappen. Den sparas istället hos den person som skickade meddelandet, i mappen Skickat.
 
 Om du vill att alla ska kunna se det skickade e-postmeddelandet redigerar du inställningarna för den delade postlådan i administrationscentret och väljer Redigera **skickade objekt** \> **Edit**.
 

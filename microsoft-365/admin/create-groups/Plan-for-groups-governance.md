@@ -152,7 +152,7 @@ Om du har tagit bort en Microsoft 365-grupp har den som standard behållits i 30
 |![bild desc](../../media/next_steps.png)|Nästa steg|<ul><li>Kommunicera och publicera principer för borttagning och återställning för att informera användarna om det beteende de kan förvänta sig </li><li> Dokumentera organisationens krav för övervakning av borttagna grupper.</li><li>Planera att implementera dessa krav som en del av grupputrullningen.</li></ul>|
 
 > [!Important]
->During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
+>Om en användare försöker komma åt webbplatsen under perioden "mjuk borttagning" får de ett meddelande med 403 - Förbjudet. Om användaren försöker komma åt webbplatsen efter den här perioden får de ett meddelande med 404 - Hittades inte
 
 #### <a name="resources"></a>*Resurser*
 - [Återställa en borttagen Microsoft 365-grupp](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)

@@ -44,7 +44,7 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
   
 ## <a name="let-users-reset-their-own-passwords"></a>Låt användare återställa sina egna lösenord
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+Vi rekommenderar att du konfigurerar återställning av egna lösenord. På så vis behöver du inte manuellt återställa lösenord för användarna. Läs i så fall [Låt användare återställa sina egna lösenord i Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>Återställa ett företagslösenord för någon annan
 
@@ -88,7 +88,7 @@ Gör så här om du har glömt ditt lösenord men kan logga in på Microsoft 365
         
 4. Logga in igen: skriv ditt användarnamn \> **Nästa** \> och välj sedan Glömt **lösenord**. 
     
-5. Follow the steps in the wizard to reset your password. It uses your alternate contact info to verify you're the right person to reset your password. 
+5. Följ anvisningarna i guiden för att återställa lösenordet. De alternativa kontaktuppgifterna används för att verifiera att du är rätt person som ska återställa lösenordet. 
     
 Om du har glömt ditt lösenord och inte kan logga in: 
     
@@ -118,7 +118,7 @@ Dessa anvisningar fungerar för verksamheter med dussintals användare. Om du ha
 ## <a name="reset-business-passwords-in-bulk"></a>Återställa företagslösenord i grupp
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+Använd PowerShell! Kolla in det här inlägget av Eyal Doron: [Hantera lösenord med PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Här är en relaterad artikel: [Ange lösenorden för flera användarkonton](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   

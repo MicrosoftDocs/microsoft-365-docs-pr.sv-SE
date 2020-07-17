@@ -93,7 +93,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **VIKTIGT**: Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
     
     Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
@@ -103,7 +103,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
  
   - Ändringen kan ta en stund.
   
-  - Their new username. They'll need it to sign in to Microsoft 365.
+  - Deras nya användarnamn. De behöver det för att logga in på Microsoft 365.
     
   - Om personen använder Skype för företag – måste de schemalägga alla eventuella Skype för företag – Online-möten som han/hon organiserat på nytt, och be sina externa kontakter att uppdatera kontaktinformationen.
 
@@ -121,7 +121,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **VIKTIGT**: Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
     
     Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
@@ -131,7 +131,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
  
   - Det kan ta en stund att göra den här ändringen.
   
-  - What their new username is. They'll need it to sign in to Microsoft 365.
+  - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
     
   - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
 
@@ -149,7 +149,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 3. Välj **Ange som primär** för den e-postadress som du vill ange som primär e-postadress för den personen. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **VIKTIGT**: Du ser inte alternativet Ange som primär om du har köpt Microsoft 365 från GoDaddy eller en annan partnertjänst som tillhandahåller en hanteringskonsol. Logga istället in på hanteringskonsolen för GoDaddy eller partnern om du vill ange ett primärt alias. 
     
     Du ser inte heller det här alternativet om du inte är en global administratör. Om du inte ser alternativet har du inte behörighet att ändra användarnamn och primär e-postadress.
   
@@ -159,7 +159,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
  
   - Det kan ta en stund att göra den här ändringen.
   
-  - What their new username is. They'll need it to sign in to Microsoft 365.
+  - Personens nya användarnamn. Han/hon behöver det för att logga in på Microsoft 365.
     
   - Om personen använder Skype för företag - Online ska du berätta att han/hon måste schemalägga alla eventuella Skype för företag - Online-möten som han/hon organiserat på nytt, och att han/hon måste be sina externa kontakter att uppdatera den gamla kontaktinformationen.
 
@@ -181,7 +181,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
     Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
+Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet.
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
     Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet, så se till att berätta för personen om ändringen.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
     Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen**” läser du [Åtgärda felmeddelanden](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+Det kan ta upp till 24 timmar innan ändringen börjar gälla i alla tjänster. När ändringen har genomförts måste personen logga in på Outlook, Skype för företag och SharePoint med det uppdaterade användarnamnet, så se till att berätta för personen om ändringen.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'"
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
+Om du får felmeddelandet ”**Det hittades ingen parameter som matchar parameternamnet 'E-postadresser'**” innebär det att det tar lite längre tid för att slutföra konfigurationen av klienten eller den anpassade domänen, om du nyligen har lagt till en sådan. Konfigurationen kan ta upp till 4 timmar. Vänta en stund så att konfigurationen hinner slutföras och försök sedan igen. Om problemet kvarstår kan du ringa [supporten](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) och be dem göra en fullständig synkronisering åt dig.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Tyvärr kunde användaren inte redigeras. Kontrollera användarinformationen och försök igen"
 
@@ -226,15 +226,15 @@ Om du får felmeddelandet ”**Tyvärr kunde användaren inte redigeras. Kontrol
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Så här gör du med gamla e-postmeddelanden
 
-A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
+Personens tidigare primära e-postadress sparas som en extra e-postadress. **Vi rekommenderar att du inte tar bort den gamla e-postadressen.**
   
-Some people might continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft automatically routes it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
+Vissa personer kommer sannolikt att fortsätta skicka e-post till användarens gamla e-postadress och om du tar bort den kan det leda till NDR-fel (misslyckad leverans). Microsoft dirigerar den automatiskt till den nya. Du behöver heller inte återanvända de gamla SMTP-e-postadresserna och använda dem för nya konton. Det här kan också orsaka NDR-fel eller leverans till en postlåda som inte var tänkt.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Vad händer om personens offlineadressbok inte synkroniseras med den globala adresslistan?
 
-If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
+Om personen använder Exchange Online eller om personens konto är länkat till organisationens lokala Exchange-miljö, kan följande felmeddelande visas när du försöker ändra ett användarnamn och en e-postadress: "Användaren är synkroniserad med ditt lokala Active Directory. Viss information kan bara redigeras genom ditt lokala Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+Det beror på adressen för e-postdirigering, MOERA (Microsoft Online Email Routing Address). MOERA är uppbyggt på personens  _userPrincipalName_-attribut i Active Directory och tilldelas automatiskt till molnkontot vid den första synkroniseringen, och när det har skapats kan det inte ändras eller tas bort i Microsoft 365. Du kan därefter ändra användarnamnet i Active Directory men MOERA ändras inte, och du kan stöta på problem med att visa det ändrade namnet i den globala adresslistan. 
   
 Om du vill åtgärda detta loggar du in på [Azure Active Directory-modulen för PowerShell]( https://go.microsoft.com/fwlink/?LinkId=823193) med dina autentiseringsuppgifter som Microsoft 365-administratör. och använder följande syntax: 
   

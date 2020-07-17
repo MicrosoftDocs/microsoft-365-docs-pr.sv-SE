@@ -29,7 +29,7 @@ ms.locfileid: "45005828"
 ---
 # <a name="manage-messages-in-message-center"></a>Hantera meddelanden i Meddelandecenter
 
-Message center posts are important announcements about new and changed features. This article provides more information about the things you can do with messages to help with change management in your organization.
+Inlägg i Meddelandecenter är viktiga meddelanden om nya och ändrade funktioner. Den här artikeln ger mer information om vad du kan göra med meddelanden för att hjälpa dig med hantering av ändringar i din organisation.
   
 ## <a name="read-a-message"></a>Läsa ett meddelande
 

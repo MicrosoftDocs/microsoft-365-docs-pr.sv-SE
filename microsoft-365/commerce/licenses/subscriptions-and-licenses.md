@@ -62,7 +62,7 @@ I följande tabell anges vad som sker automatiskt när du tilldelar en licens ti
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Allmänt om licenser för postlådor som inte är kopplade till någon användare
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+Du behöver inte tilldela licenser till resurspostlådor, rumspostlådor och delade postlådor, förutom när de är över sin lagringskvot på 50 GB. Mer information om postlådor som inte är kopplade till någon användare finns i följande artiklar:
   
 - [Skapa en delad postlåda](../../admin/email/create-a-shared-mailbox.md)
 - [Ta bort en licens från en delad postlåda](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>Vem kan tilldela licenser?
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+Olika typer av administratörer kan arbeta med licenser på olika sätt beroende på deras respektive roller. I följande tabell finns de vanligaste alternativen. En fullständig lista över administrationsroller och behörigheter finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   
 |**Administratörsroller**|**Tilldela en licens**|**Ta bort tilldelning av en licens**|**Köp fler licenser**|**Ta bort ett konto**|
 |:-----|:-----|:-----|:-----|:-----|

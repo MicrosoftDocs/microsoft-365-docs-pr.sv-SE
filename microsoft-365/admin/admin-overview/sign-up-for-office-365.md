@@ -115,9 +115,9 @@ Du behöver inte avbryta din provperiod. Om du inte köper utvärderingsprenumer
 
 - **Adress och kontaktinformation för din prenumeration:**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - **Land** där tjänsterna kommer att användas. Du **kan inte** ändra detta senare, inte ens under registreringen, utan du måste i så fall starta om registreringsguiden.
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **E-postadress** och **telefonnummer** så att vi kan kontakta dig angående prenumerationen om så behövs. Om du till exempel glömt ditt lösenord använder vi informationen för att skicka dig ett tillfälligt lösenord. Vi skickar också faktureringsinformation till den e-postadress du anger.
 
     > [!NOTE]
     > Den e-postadress du anger här skiljer sig från din Microsoft 365-e-postadress (ditt inloggningsnamn nedan). Eftersom det är hit vi skickar din faktureringsinformation rekommenderar vi att du använder en e-postadress som är lämplig för att ta emot affärs-e-post.

@@ -155,7 +155,7 @@ Säkerhetsgrupper kan användas med SharePoint, Exchange, MDM, Windows med mera.
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>Måste jag använda säkerhetsgrupper för att min organisation ska vara säker?
 
-No. This is just one more way you can manage security for your organization. You can always grant user permissions and access to sites individually. But with security groups, you can easily manage larger groups of users.
+Nej. Det här är ett annat sätt som du kan hantera säkerhet för din organisation. Du kan alltid bevilja användarbehörigheter och åtkomst till webbplatser individuellt. Men med säkerhetsgrupper kan du enkelt hantera större grupper med användare.
   
 ## <a name="can-i-send-email-to-a-security-group"></a>Kan jag skicka e-post till en säkerhetsgrupp?
 

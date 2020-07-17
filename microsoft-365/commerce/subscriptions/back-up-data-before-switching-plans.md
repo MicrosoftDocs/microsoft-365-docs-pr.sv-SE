@@ -51,7 +51,7 @@ Administratörer kan exportera alla meddelanden, anteckningar, filer, ämnen, an
 
 Om en användare växlas från en prenumeration som har SharePoint Online till en som inte har den visas inte längre **SharePoint-panelen** på Microsoft 365-menyn.
   
-However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
+Så länge den nya prenumerationen är inom samma organisation som de har bytt från kan användaren fortfarande se SharePoint-gruppwebbplatsen. De kan visa och uppdatera anteckningsböcker, dokument, uppgifter och kalendrar med hjälp av direktlänkarna på gruppwebbplatsen.
   
 > [!TIP]
 > Vi rekommenderar att sådana användare går till gruppwebbplatsen innan prenumerationen byts ut och sparar webbadressen som en favorit eller ett bokmärke i webbläsaren.

@@ -57,19 +57,19 @@ Om du vill flytta några av dina personliga data till den nya företagsidentitet
 4. Välj **Ladda upp** om du vill kopiera filerna från hårddisken där du kopierade Dina OneDrive-filer. 
   
     > [!NOTE]
-    >  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business. Instead, you'll need to create the folder structure you want on OneDrive for business. >  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files. Otherwise, the files will be uploaded to the root folder. You can also move your files between folders in OneDrive for Business after you've uploaded them. 
+    >  Du kan ladda upp enskilda filer och grupper med filer (till exempel alla filer i en viss mapp) samtidigt, men du kan inte kopiera en mapp till OneDrive för företag. I stället måste du skapa den mappstruktur som du vill ha i OneDrive för företag. >  Om du vill kopiera filer till en mapp som du skapade i steg 4 öppnar du den mappen innan du laddar upp filerna. Annars laddas filerna upp till rotmappen. Du kan även flytta filer mellan mappar i OneDrive för företag när du har laddat upp dem. 
   
 ## <a name="outlookemail"></a>[Outlook/E-post](#tab/Outlook)
   
  **Exportera Outlook 2013-information till en Outlook-datafil**
-1. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook. For information about how to add an account to Outlook 2013 or higher, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+1. Innan du kan skapa Outlook-datafilen (PST) måste det konto som du vill exportera Outlook-information från redan ha lagts till i skrivbordsversionen av Outlook. Information om hur du lägger till ett konto i Outlook 2013 eller senare finns i [Konfigurera e-post i Outlook (för Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) eller [Konfigurera e-post i Outlook för Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Alla användare måste följa anvisningarna i [Exportera eller säkerhetskopiera e-post, kontakter och kalender till en Outlook-fil (.pst)](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
     
  **Konfigurera ditt nya e-postkonto i Outlook**
 1. Varje användare måste konfigurera sitt nya e-postkonto som medföljde Microsoft 365 för företag-prenumerationen. De behöver då adressen till sitt nya e-postkonto. Varje användares e-postkonto är detsamma som användarnamnet som de använder för att logga in på Microsoft 365 för företag. Det ser ut ungefär som sue@contoso.onmicrosoft.com eller david@contoso.com.
     
-2. Ask each user to add their email account to Outlook. To learn how, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+2. Be alla användare att lägga till sina e-postkonton i Outlook. Mer information finns i [Konfigurera e-post i Outlook (för Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) eller [Konfigurera e-post i Outlook för Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Importera information från Outlook-datafilen**
 1. Då slås e-post, kalender, uppgifter och kontakter som lagras i PST-filen samman till ditt Microsoft 365 för företags-e-postkonto.

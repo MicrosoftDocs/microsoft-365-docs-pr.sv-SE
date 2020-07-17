@@ -179,7 +179,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ## <a name="manage-group-owner-status"></a>Hantera gruppägarestatus
 
-By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
+Personen som skapade gruppen är som standard gruppägare. Grupper har ofta flera ägare för stöd av säkerhetskopiering eller av andra orsaker. Medlemmar kan flyttas upp till ägarstatus och ägare kan flyttas ned till medlemsstatus.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Befordra en medlem till ägarstatus i administrationscentret
 

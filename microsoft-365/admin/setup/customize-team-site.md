@@ -82,9 +82,9 @@ Visa en video om hur du lägger till kalendrar på din webbplats, se [Skapa en d
 
 ## <a name="organize-sites-into-hubs"></a>Ordna webbplatser i hubbar
 
-Your team site shares almost everything with all members of the group associated with the site. If you want to have a separate site for specific customers, you can create additional team sites, and manage them using SharePoint hub sites. Here's more information. 
+Gruppwebbplatsen delar nästan allt med alla medlemmar i gruppen som är kopplade till webbplatsen. Om du vill ha en separat webbplats för vissa kunder kan du skapa ytterligare gruppwebbplatser och hantera dem med hjälp av SharePoint hubb-webbplatser. Mer information 
   
-Hub sites let you add and associate sites. For more info see [What is a SharePoint hub site?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
+Hubb-webbplatser låter dig lägga till och koppla ihop webbplatser. Mer information finns i [Vad är en SharePoint-hubb-webbplats?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
 Är du redo att skapa en hubb-webbplats se [Skapa en hubb-webbplats i SharePoint Online](/sharepoint/create-hub-site).
   
@@ -92,7 +92,7 @@ Information om hur du lägger till platser till en hubb-webbplats finns i [Koppl
   
 ## <a name="sharing-files-with-the-team"></a>Dela filer med gruppen
 
-While storage and organizing is a start, sharing with your team and external clients is also important. Here are some links to topics that will help you manage users and share your data. 
+Lagring och organisering är en bra start, det är även viktigt att dela information med din grupp och externa kunder. Här är några länkar till information som hjälper dig att hantera användare och dela dina data. 
   
 Fildelning med teamet finns [i Dela SharePoint-filer eller -mappar i Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
@@ -100,7 +100,7 @@ För att förstå delning utanför ditt team se [Hantera extern delning i ShareP
   
 ## <a name="managing-users-and-groups"></a>Hantera användare och grupper
 
-As you manage your team site, you may have to add or remove users. Here's information to help you understand, add, and manage users on your team site. 
+När du hanterar din gruppwebbplats kan du behöva lägga till eller ta bort användare. Här finns information som hjälper dig att förstå, lägga till och hantera användare på gruppwebbplatsen. 
   
 Visa en video om grupper med [Förstå och hantera grupper](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
@@ -110,7 +110,7 @@ Lär dig hur du hanterar åtkomstbegäranden med [Konfigurera och hantera åtkom
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>Här är fler ämnen du kan vara intresserad av
 
-- **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+- **Konfigurera Office-appar på surfplattor och telefoner**. Du behöver göra detta så att du kan redigera filer som är lagrade på gruppwebbplatsen från en surfplatta eller telefon. Om du inte installerar Office-appar för surfplattan eller telefonen kommer du att kunna visa filerna på gruppwebbplatsen, men inte redigera dem. 
     
   - [Installera och konfigurera Office på en Android med Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

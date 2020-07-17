@@ -37,7 +37,7 @@ ms.locfileid: "44817003"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
-This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
+Den här artikeln är avsedd för personer som har en Microsoft 365 för företag-prenumeration. Du måste vara global administratör eller faktureringsadministratör för att kunna utföra åtgärderna som beskrivs i den här artikeln.
   
 Om du behöver hjälp med att tolka de debiteringar som visas på din faktura hittar du en detaljerad genomgång i [Förstå din faktura](understand-your-invoice2.md).
   
