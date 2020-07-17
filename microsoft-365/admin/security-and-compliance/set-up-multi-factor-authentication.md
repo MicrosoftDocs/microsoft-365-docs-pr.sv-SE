@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Lär dig hur du konfigurerar multifaktorautentisering för din organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 597d8383166e0ddae0984573d77ba75cf54dafdd
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146236"
+ms.locfileid: "45153683"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Konfigurera multifaktorautentisering
   
@@ -77,6 +77,8 @@ Om din organisation har mer detaljerade säkerhetsbehov kan villkorsstyrd åtkom
 Villkorsstyrd åtkomst är tillgänglig för kunder som har köpt Azure AD Premium P1, och licenser som inkluderar detta, t. ex. Microsoft 365 Business Premium och Microsoft 365 E3. Mer information finns i [skapa en princip för villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
 Riskbaserad villkorsstyrd åtkomst är tillgänglig via Azure AD Premium P2-licensen eller licenserna som inkluderar detta, t. ex. Microsoft 365 E5. Mer information finns i [Riskbaserad villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+
+Mer information om Azure AD P1 och P2 finns i [Azure Active Directory-priserna](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Aktivera modern autentisering för din organisation
 

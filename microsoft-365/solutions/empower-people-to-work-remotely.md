@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina arbetare kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844876"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158905"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -68,6 +68,12 @@ Använd dessa Microsoft 365-funktioner för att uppfylla de här kriterierna fö
 | Windows Autopilot | Förinstallera och konfigurera nya Windows 10-enheter för effektiv användning.   | Microsoft 365 E3 och E5 |
 | Microsoft Teams, Exchange Online, SharePoint Online och OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Skapa, kommunicera och samarbeta. | Microsoft 365 E3 och E5 |
 ||||
+
+<a name="poster"></a> En sammanfattning på två sidor av det här scenariot finns på affischen [Ge distansarbetare goda förutsättningar](../downloads/empower-remote-workers.pdf).
+
+[![Ge distansarbetare goda förutsättningar (affisch)](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+
+Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)- eller [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
 
 Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar, data och molntjänster och för att maximera produktiviteten för medarbetarna.
 
