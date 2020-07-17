@@ -1,7 +1,7 @@
 ---
-title: Top scoring i branschtester (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK)
+title: Poängsättning i branschtester – Microsoft Threat Protection
 ms.reviewer: ''
-description: Microsoft Defender ATP uppnår konsekvent höga poäng i oberoende tester. Visa de senaste poängen och analysen.
+description: Visa de senaste poängen och analysen av Microsoft Threat Protection, som konsekvent uppnår höga poäng i oberoende tester (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Visa de senaste poängen och analysen.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, AV recensioner, antivirustest, av testning, senaste av-poäng, upptäcktspoäng, säkerhetsprodukttestning, säkerhetsindustritester, industriantivirustester, bästa antivirusprogram, av-test, av-comparatives, SE-laboratorier, MITRE ATT&CK, slutpunktsskyddsplattform, EPP, endpoint upptäckt och svar, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, säkerhet, malware, av, antivirus, poäng, scoring, nästa generations skydd, ranking, framgång
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909282"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158875"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Top scoring i branschtester
 
