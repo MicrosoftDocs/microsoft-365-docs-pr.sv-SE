@@ -26,180 +26,180 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/17/2020
 ms.locfileid: "44780655"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a><span data-ttu-id="18cee-103">Hantera en grupp i administrationscentret för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="18cee-103">Manage a group in the Microsoft 365 admin center</span></span>
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a><span data-ttu-id="a5994-103">Hantera en grupp i administrationscentret för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="a5994-103">Manage a group in the Microsoft 365 admin center</span></span>
 
-<span data-ttu-id="18cee-104">När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till gruppmedlemmar kan du konfigurera gruppen.</span><span class="sxs-lookup"><span data-stu-id="18cee-104">After you have [created a Microsoft 365 group](create-groups.md) and added group members, you can configure your group.</span></span> <span data-ttu-id="18cee-105">Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar.</span><span class="sxs-lookup"><span data-stu-id="18cee-105">You can edit the group name or description, manage owners or members, and specify whether external senders can email the group and whether to send copies of group conversations to members.</span></span> 
+<span data-ttu-id="a5994-104">När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till gruppmedlemmar kan du konfigurera gruppen.</span><span class="sxs-lookup"><span data-stu-id="a5994-104">After you have [created a Microsoft 365 group](create-groups.md) and added group members, you can configure your group.</span></span> <span data-ttu-id="a5994-105">Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om du vill skicka kopior av gruppkonversationer till medlemmar.</span><span class="sxs-lookup"><span data-stu-id="a5994-105">You can edit the group name or description, manage owners or members, and specify whether external senders can email the group and whether to send copies of group conversations to members.</span></span> 
 
-## <a name="edit-the-group-name-or-description"></a><span data-ttu-id="18cee-106">Redigera gruppens namn eller beskrivning</span><span class="sxs-lookup"><span data-stu-id="18cee-106">Edit the group name or description</span></span>
+## <a name="edit-the-group-name-or-description"></a><span data-ttu-id="a5994-106">Redigera gruppens namn eller beskrivning</span><span class="sxs-lookup"><span data-stu-id="a5994-106">Edit the group name or description</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="18cee-107">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-107">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-107">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-107">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-108">Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="18cee-108">Select the group that you want to edit, and then click **Edit name and description**.</span></span>
+2. <span data-ttu-id="a5994-108">Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="a5994-108">Select the group that you want to edit, and then click **Edit name and description**.</span></span>
 
-3. <span data-ttu-id="18cee-109">Uppdatera namnet och beskrivningen och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-109">Update the name and description, and then select **Save**.</span></span>
+3. <span data-ttu-id="a5994-109">Uppdatera namnet och beskrivningen och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-109">Update the name and description, and then select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="18cee-110">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-110">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-110">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-110">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-111">Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="18cee-111">Select the group that you want to edit, and then click **Edit name and description**.</span></span>
+2. <span data-ttu-id="a5994-111">Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="a5994-111">Select the group that you want to edit, and then click **Edit name and description**.</span></span>
 
-3. <span data-ttu-id="18cee-112">Uppdatera namnet och beskrivningen och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-112">Update the name and description, and then select **Save**.</span></span>
+3. <span data-ttu-id="a5994-112">Uppdatera namnet och beskrivningen och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-112">Update the name and description, and then select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="18cee-113">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-113">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-113">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-113">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-114">Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="18cee-114">Select the group that you want to edit, and then click **Edit name and description**.</span></span>
+2. <span data-ttu-id="a5994-114">Markera den grupp som du vill redigera och klicka sedan på **Redigera namn och beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="a5994-114">Select the group that you want to edit, and then click **Edit name and description**.</span></span>
 
-3. <span data-ttu-id="18cee-115">Uppdatera namnet och beskrivningen och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-115">Update the name and description, and then select **Save**.</span></span>
+3. <span data-ttu-id="a5994-115">Uppdatera namnet och beskrivningen och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-115">Update the name and description, and then select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="manage-group-owners-and-members"></a><span data-ttu-id="18cee-116">Hantera gruppägare och medlemmar</span><span class="sxs-lookup"><span data-stu-id="18cee-116">Manage group owners and members</span></span>
+## <a name="manage-group-owners-and-members"></a><span data-ttu-id="a5994-116">Hantera gruppägare och medlemmar</span><span class="sxs-lookup"><span data-stu-id="a5994-116">Manage group owners and members</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="18cee-117">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-117">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-117">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-117">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-118">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="18cee-118">Click the name of the group you want to manage to open the settings pane.</span></span>
+2. <span data-ttu-id="a5994-118">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a5994-118">Click the name of the group you want to manage to open the settings pane.</span></span>
 
-3. <span data-ttu-id="18cee-119">På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.</span><span class="sxs-lookup"><span data-stu-id="18cee-119">On the **Members** tab, choose if you want to manage owners or members.</span></span>
+3. <span data-ttu-id="a5994-119">På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.</span><span class="sxs-lookup"><span data-stu-id="a5994-119">On the **Members** tab, choose if you want to manage owners or members.</span></span>
 
-4. <span data-ttu-id="18cee-120">Välj **Lägg till** om du vill lägga till någon eller klicka på **X** om du vill ta bort någon.</span><span class="sxs-lookup"><span data-stu-id="18cee-120">Choose **Add** to add someone or click **X** to remove someone.</span></span>
+4. <span data-ttu-id="a5994-120">Välj **Lägg till** om du vill lägga till någon eller klicka på **X** om du vill ta bort någon.</span><span class="sxs-lookup"><span data-stu-id="a5994-120">Choose **Add** to add someone or click **X** to remove someone.</span></span>
 
-5. <span data-ttu-id="18cee-121">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="18cee-121">Click **Close**.</span></span>
+5. <span data-ttu-id="a5994-121">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="a5994-121">Click **Close**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="18cee-122">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-122">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-122">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-122">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-123">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="18cee-123">Click the name of the group you want to manage to open the settings pane.</span></span>
+2. <span data-ttu-id="a5994-123">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a5994-123">Click the name of the group you want to manage to open the settings pane.</span></span>
 
-3. <span data-ttu-id="18cee-124">På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.</span><span class="sxs-lookup"><span data-stu-id="18cee-124">On the **Members** tab, choose if you want to manage owners or members.</span></span>
+3. <span data-ttu-id="a5994-124">På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.</span><span class="sxs-lookup"><span data-stu-id="a5994-124">On the **Members** tab, choose if you want to manage owners or members.</span></span>
 
-4. <span data-ttu-id="18cee-125">Välj **Lägg till** om du vill lägga till någon eller klicka på **X** om du vill ta bort någon.</span><span class="sxs-lookup"><span data-stu-id="18cee-125">Choose **Add** to add someone or click **X** to remove someone.</span></span>
+4. <span data-ttu-id="a5994-125">Välj **Lägg till** om du vill lägga till någon eller klicka på **X** om du vill ta bort någon.</span><span class="sxs-lookup"><span data-stu-id="a5994-125">Choose **Add** to add someone or click **X** to remove someone.</span></span>
 
-5. <span data-ttu-id="18cee-126">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="18cee-126">Click **Close**.</span></span>
+5. <span data-ttu-id="a5994-126">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="a5994-126">Click **Close**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="18cee-127">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-127">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-127">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-127">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-128">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="18cee-128">Click the name of the group you want to manage to open the settings pane.</span></span>
+2. <span data-ttu-id="a5994-128">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a5994-128">Click the name of the group you want to manage to open the settings pane.</span></span>
 
-3. <span data-ttu-id="18cee-129">På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.</span><span class="sxs-lookup"><span data-stu-id="18cee-129">On the **Members** tab, choose if you want to manage owners or members.</span></span>
+3. <span data-ttu-id="a5994-129">På fliken **Medlemmar** väljer du om du vill hantera ägare eller medlemmar.</span><span class="sxs-lookup"><span data-stu-id="a5994-129">On the **Members** tab, choose if you want to manage owners or members.</span></span>
 
-4. <span data-ttu-id="18cee-130">Välj **Lägg till** om du vill lägga till någon eller klicka på **X** om du vill ta bort någon.</span><span class="sxs-lookup"><span data-stu-id="18cee-130">Choose **Add** to add someone or click **X** to remove someone.</span></span>
+4. <span data-ttu-id="a5994-130">Välj **Lägg till** om du vill lägga till någon eller klicka på **X** om du vill ta bort någon.</span><span class="sxs-lookup"><span data-stu-id="a5994-130">Choose **Add** to add someone or click **X** to remove someone.</span></span>
 
-5. <span data-ttu-id="18cee-131">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="18cee-131">Click **Close**.</span></span>
+5. <span data-ttu-id="a5994-131">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="a5994-131">Click **Close**.</span></span>
 
 ::: moniker-end
 
-## <a name="send-copies-of-conversations-to-group-members-inboxes"></a><span data-ttu-id="18cee-132">Skicka kopior av konversationer till gruppmedlemmarnas inkorgar</span><span class="sxs-lookup"><span data-stu-id="18cee-132">Send copies of conversations to group members' inboxes</span></span>
+## <a name="send-copies-of-conversations-to-group-members-inboxes"></a><span data-ttu-id="a5994-132">Skicka kopior av konversationer till gruppmedlemmarnas inkorgar</span><span class="sxs-lookup"><span data-stu-id="a5994-132">Send copies of conversations to group members' inboxes</span></span>
   
-<span data-ttu-id="18cee-133">När du använder administrationscentret för att skapa en grupp får användarna som standard inte kopior av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorgar.</span><span class="sxs-lookup"><span data-stu-id="18cee-133">When you use the admin center to create a group, by default users  do not get copies of group emails and meeting invitations sent to their inboxes.</span></span> <span data-ttu-id="18cee-134">De måste gå till gruppen för att se konversationer och möten.</span><span class="sxs-lookup"><span data-stu-id="18cee-134">They'll need to go to the group to see conversations and meetings.</span></span> <span data-ttu-id="18cee-135">Du kan ändra den här inställningen i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="18cee-135">You can change this setting in the admin center.</span></span>
+<span data-ttu-id="a5994-133">När du använder administrationscentret för att skapa en grupp får användarna som standard inte kopior av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorgar.</span><span class="sxs-lookup"><span data-stu-id="a5994-133">When you use the admin center to create a group, by default users  do not get copies of group emails and meeting invitations sent to their inboxes.</span></span> <span data-ttu-id="a5994-134">De måste gå till gruppen för att se konversationer och möten.</span><span class="sxs-lookup"><span data-stu-id="a5994-134">They'll need to go to the group to see conversations and meetings.</span></span> <span data-ttu-id="a5994-135">Du kan ändra den här inställningen i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="a5994-135">You can change this setting in the admin center.</span></span>
 
-<span data-ttu-id="18cee-136">När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras Inkorg i Outlook.</span><span class="sxs-lookup"><span data-stu-id="18cee-136">When you turn this setting on, group members will get a copy of group emails and meeting invitations sent to their Outlook Inbox.</span></span> <span data-ttu-id="18cee-137">De kan läsa och ta bort kopian utan att någon annan påverkas.</span><span class="sxs-lookup"><span data-stu-id="18cee-137">They can read and delete this copy of the email and not affect anyone else.</span></span> <span data-ttu-id="18cee-138">En kopia av e-postmeddelandet finns kvar i gruppens inkorg.</span><span class="sxs-lookup"><span data-stu-id="18cee-138">In the Group inbox, a copy of the email still exists.</span></span>
+<span data-ttu-id="a5994-136">När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras Inkorg i Outlook.</span><span class="sxs-lookup"><span data-stu-id="a5994-136">When you turn this setting on, group members will get a copy of group emails and meeting invitations sent to their Outlook Inbox.</span></span> <span data-ttu-id="a5994-137">De kan läsa och ta bort kopian utan att någon annan påverkas.</span><span class="sxs-lookup"><span data-stu-id="a5994-137">They can read and delete this copy of the email and not affect anyone else.</span></span> <span data-ttu-id="a5994-138">En kopia av e-postmeddelandet finns kvar i gruppens inkorg.</span><span class="sxs-lookup"><span data-stu-id="a5994-138">In the Group inbox, a copy of the email still exists.</span></span>
 
-<span data-ttu-id="18cee-139">Gruppmedlemmar kan välja bort att ta emot dessa e-postmeddelanden genom att välja att sluta följa gruppen i Outlook.</span><span class="sxs-lookup"><span data-stu-id="18cee-139">Group members can opt out of receiving these emails by choosing to stop following the group in Outlook.</span></span>
+<span data-ttu-id="a5994-139">Gruppmedlemmar kan välja bort att ta emot dessa e-postmeddelanden genom att välja att sluta följa gruppen i Outlook.</span><span class="sxs-lookup"><span data-stu-id="a5994-139">Group members can opt out of receiving these emails by choosing to stop following the group in Outlook.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="18cee-140">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-140">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-140">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-140">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-141">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="18cee-141">Click the name of the group you want to manage to open the settings pane.</span></span>
+2. <span data-ttu-id="a5994-141">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a5994-141">Click the name of the group you want to manage to open the settings pane.</span></span>
 
-3. <span data-ttu-id="18cee-142">På fliken **Inställningar** väljer du **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmar** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.</span><span class="sxs-lookup"><span data-stu-id="18cee-142">On the **Settings** tab, select **Send copies of group conversations and events to group members** if you want members to receive copies of group messages and calendar items in their own inbox.</span></span>
+3. <span data-ttu-id="a5994-142">På fliken **Inställningar** väljer du **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmar** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.</span><span class="sxs-lookup"><span data-stu-id="a5994-142">On the **Settings** tab, select **Send copies of group conversations and events to group members** if you want members to receive copies of group messages and calendar items in their own inbox.</span></span>
 
-4. <span data-ttu-id="18cee-143">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-143">Select **Save**.</span></span>
+4. <span data-ttu-id="a5994-143">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-143">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="18cee-144">Gå till sidan **Gruppergrupper** i administrationscentret \> **Groups** och välj sedan den grupp som du vill ändra.</span><span class="sxs-lookup"><span data-stu-id="18cee-144">In the admin center, go to the **Groups** \> **Groups** page, and then select the group you want to change.</span></span>
+1. <span data-ttu-id="a5994-144">Gå till sidan **Gruppergrupper** i administrationscentret \> **Groups** och välj sedan den grupp som du vill ändra.</span><span class="sxs-lookup"><span data-stu-id="a5994-144">In the admin center, go to the **Groups** \> **Groups** page, and then select the group you want to change.</span></span>
 
-2. <span data-ttu-id="18cee-145">Välj Redigera **bredvid** **Namn**.</span><span class="sxs-lookup"><span data-stu-id="18cee-145">Next to **Name**, select **Edit**.</span></span>
+2. <span data-ttu-id="a5994-145">Välj Redigera **bredvid** **Namn**.</span><span class="sxs-lookup"><span data-stu-id="a5994-145">Next to **Name**, select **Edit**.</span></span>
 
-3. <span data-ttu-id="18cee-146">Aktivera **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmarnas inkorgar** till **På** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.</span><span class="sxs-lookup"><span data-stu-id="18cee-146">Turn **Send copies of group conversations and events to group members' inboxes** to **On** if you want members to receive copies of group messages and calendar items in their own inbox.</span></span>
+3. <span data-ttu-id="a5994-146">Aktivera **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmarnas inkorgar** till **På** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.</span><span class="sxs-lookup"><span data-stu-id="a5994-146">Turn **Send copies of group conversations and events to group members' inboxes** to **On** if you want members to receive copies of group messages and calendar items in their own inbox.</span></span>
 
-4. <span data-ttu-id="18cee-147">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-147">Select **Save**.</span></span>
+4. <span data-ttu-id="a5994-147">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-147">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="18cee-148">Gå till sidan **Gruppergrupper** i administrationscentret \> **Groups** och välj sedan den grupp som du vill ändra.</span><span class="sxs-lookup"><span data-stu-id="18cee-148">In the admin center, go to the **Groups** \> **Groups** page, and then select the group you want to change.</span></span>
+1. <span data-ttu-id="a5994-148">Gå till sidan **Gruppergrupper** i administrationscentret \> **Groups** och välj sedan den grupp som du vill ändra.</span><span class="sxs-lookup"><span data-stu-id="a5994-148">In the admin center, go to the **Groups** \> **Groups** page, and then select the group you want to change.</span></span>
 
-2. <span data-ttu-id="18cee-149">Välj Redigera **bredvid** **Namn**.</span><span class="sxs-lookup"><span data-stu-id="18cee-149">Next to **Name**, select **Edit**.</span></span>
+2. <span data-ttu-id="a5994-149">Välj Redigera **bredvid** **Namn**.</span><span class="sxs-lookup"><span data-stu-id="a5994-149">Next to **Name**, select **Edit**.</span></span>
 
-3. <span data-ttu-id="18cee-150">Aktivera **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmarnas inkorgar** till **På** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.</span><span class="sxs-lookup"><span data-stu-id="18cee-150">Turn **Send copies of group conversations and events to group members' inboxes** to **On** if you want members to receive copies of group messages and calendar items in their own inbox.</span></span>
+3. <span data-ttu-id="a5994-150">Aktivera **Skicka kopior av gruppkonversationer och händelser till gruppmedlemmarnas inkorgar** till **På** om du vill att medlemmar ska ta emot kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.</span><span class="sxs-lookup"><span data-stu-id="a5994-150">Turn **Send copies of group conversations and events to group members' inboxes** to **On** if you want members to receive copies of group messages and calendar items in their own inbox.</span></span>
 
-4. <span data-ttu-id="18cee-151">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-151">Select **Save**.</span></span>
+4. <span data-ttu-id="a5994-151">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-151">Select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="let-people-outside-the-organization-email-the-group"></a><span data-ttu-id="18cee-152">Låta personer utanför organisationen skicka e-post till gruppen</span><span class="sxs-lookup"><span data-stu-id="18cee-152">Let people outside the organization email the group</span></span>
+## <a name="let-people-outside-the-organization-email-the-group"></a><span data-ttu-id="a5994-152">Låta personer utanför organisationen skicka e-post till gruppen</span><span class="sxs-lookup"><span data-stu-id="a5994-152">Let people outside the organization email the group</span></span>
 
-<span data-ttu-id="18cee-153">Det här alternativet är bra om du vill ha ett företags e-postadress som info@contoso.com.</span><span class="sxs-lookup"><span data-stu-id="18cee-153">This option is great if you want to have a company email address such as info@contoso.com.</span></span>
+<span data-ttu-id="a5994-153">Det här alternativet är bra om du vill ha ett företags e-postadress som info@contoso.com.</span><span class="sxs-lookup"><span data-stu-id="a5994-153">This option is great if you want to have a company email address such as info@contoso.com.</span></span>
  
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="18cee-154">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="18cee-154">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="a5994-154">Expandera **Grupper**i administrationscentret och klicka sedan på **Grupper**.</span><span class="sxs-lookup"><span data-stu-id="a5994-154">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="18cee-155">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="18cee-155">Click the name of the group you want to manage to open the settings pane.</span></span>
+2. <span data-ttu-id="a5994-155">Klicka på namnet på den grupp som du vill lyckas öppna inställningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a5994-155">Click the name of the group you want to manage to open the settings pane.</span></span>
 
-3. <span data-ttu-id="18cee-156">I listan Över administrationscentergrupper väljer du namnet på den grupp som du vill ändra och väljer sedan **Tillåt externa avsändare att skicka den här gruppen via e-post**till den här gruppen på fliken **Inställningar** .</span><span class="sxs-lookup"><span data-stu-id="18cee-156">In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Allow external senders to email this group**.</span></span>
+3. <span data-ttu-id="a5994-156">I listan Över administrationscentergrupper väljer du namnet på den grupp som du vill ändra och väljer sedan **Tillåt externa avsändare att skicka den här gruppen via e-post**till den här gruppen på fliken **Inställningar** .</span><span class="sxs-lookup"><span data-stu-id="a5994-156">In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Allow external senders to email this group**.</span></span>
     
-4. <span data-ttu-id="18cee-157">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-157">Select **Save**.</span></span>
+4. <span data-ttu-id="a5994-157">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-157">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="18cee-158">Uppdatera administratörscentret så att den nya gruppen visas.</span><span class="sxs-lookup"><span data-stu-id="18cee-158">Refresh your admin center page so your new group appears.</span></span>
+1. <span data-ttu-id="a5994-158">Uppdatera administratörscentret så att den nya gruppen visas.</span><span class="sxs-lookup"><span data-stu-id="a5994-158">Refresh your admin center page so your new group appears.</span></span>
     
-2. <span data-ttu-id="18cee-159">Markera den grupp som du vill ändra i listan Administrationscentergrupper och välj sedan **Redigera**bredvid **Namn**.</span><span class="sxs-lookup"><span data-stu-id="18cee-159">In the admin center groups list, select the group you want to change, and then next to **Name**, select **Edit**.</span></span> 
+2. <span data-ttu-id="a5994-159">Markera den grupp som du vill ändra i listan Administrationscentergrupper och välj sedan **Redigera**bredvid **Namn**.</span><span class="sxs-lookup"><span data-stu-id="a5994-159">In the admin center groups list, select the group you want to change, and then next to **Name**, select **Edit**.</span></span> 
     
-3. <span data-ttu-id="18cee-160">Ställ in alternativet **Tillåt personer utanför organisationen att skicka e-post till gruppen** på **På**.</span><span class="sxs-lookup"><span data-stu-id="18cee-160">Set the **Let people outside the organization email the group** toggle to **On**.</span></span>
+3. <span data-ttu-id="a5994-160">Ställ in alternativet **Tillåt personer utanför organisationen att skicka e-post till gruppen** på **På**.</span><span class="sxs-lookup"><span data-stu-id="a5994-160">Set the **Let people outside the organization email the group** toggle to **On**.</span></span>
     
-4. <span data-ttu-id="18cee-161">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-161">Select **Save**.</span></span>
+4. <span data-ttu-id="a5994-161">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-161">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="18cee-162">Uppdatera administratörscentret så att den nya gruppen visas.</span><span class="sxs-lookup"><span data-stu-id="18cee-162">Refresh your admin center page so your new group appears.</span></span>
+1. <span data-ttu-id="a5994-162">Uppdatera administratörscentret så att den nya gruppen visas.</span><span class="sxs-lookup"><span data-stu-id="a5994-162">Refresh your admin center page so your new group appears.</span></span>
     
-2. <span data-ttu-id="18cee-163">Markera den grupp som du vill ändra i listan Administrationscentergrupper och välj sedan **Redigera**bredvid **Namn**.</span><span class="sxs-lookup"><span data-stu-id="18cee-163">In the admin center groups list, select the group you want to change, and then next to **Name**, select **Edit**.</span></span> 
+2. <span data-ttu-id="a5994-163">Markera den grupp som du vill ändra i listan Administrationscentergrupper och välj sedan **Redigera**bredvid **Namn**.</span><span class="sxs-lookup"><span data-stu-id="a5994-163">In the admin center groups list, select the group you want to change, and then next to **Name**, select **Edit**.</span></span> 
     
-3. <span data-ttu-id="18cee-164">Ställ in alternativet **Tillåt personer utanför organisationen att skicka e-post till gruppen** på **På**.</span><span class="sxs-lookup"><span data-stu-id="18cee-164">Set the **Let people outside the organization email the group** toggle to **On**.</span></span>
+3. <span data-ttu-id="a5994-164">Ställ in alternativet **Tillåt personer utanför organisationen att skicka e-post till gruppen** på **På**.</span><span class="sxs-lookup"><span data-stu-id="a5994-164">Set the **Let people outside the organization email the group** toggle to **On**.</span></span>
     
-4. <span data-ttu-id="18cee-165">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="18cee-165">Select **Save**.</span></span>
+4. <span data-ttu-id="a5994-165">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a5994-165">Select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="related-articles"></a><span data-ttu-id="18cee-166">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="18cee-166">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="a5994-166">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="a5994-166">Related articles</span></span>
 
-[<span data-ttu-id="18cee-167">Skapa en Microsoft 365-grupp</span><span class="sxs-lookup"><span data-stu-id="18cee-167">Create a Microsoft 365 group</span></span>](create-groups.md)
+[<span data-ttu-id="a5994-167">Skapa en Microsoft 365-grupp</span><span class="sxs-lookup"><span data-stu-id="a5994-167">Create a Microsoft 365 group</span></span>](create-groups.md)
 
-[<span data-ttu-id="18cee-168">Hantera gäståtkomst till Microsoft 365-grupper</span><span class="sxs-lookup"><span data-stu-id="18cee-168">Manage guest access to Microsoft 365 groups</span></span>](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[<span data-ttu-id="a5994-168">Hantera gäståtkomst till Microsoft 365-grupper</span><span class="sxs-lookup"><span data-stu-id="a5994-168">Manage guest access to Microsoft 365 groups</span></span>](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[<span data-ttu-id="18cee-169">Välj vilken domän som ska användas när Microsoft 365-grupper skapas</span><span class="sxs-lookup"><span data-stu-id="18cee-169">Choose the domain to use when creating Microsoft 365 groups</span></span>](choose-domain-to-create-groups.md)
+[<span data-ttu-id="a5994-169">Välj vilken domän som ska användas när Microsoft 365-grupper skapas</span><span class="sxs-lookup"><span data-stu-id="a5994-169">Choose the domain to use when creating Microsoft 365 groups</span></span>](choose-domain-to-create-groups.md)
 
-[<span data-ttu-id="18cee-170">Tillåt medlemmar att skicka som eller skicka för en Microsoft 365-grupp</span><span class="sxs-lookup"><span data-stu-id="18cee-170">Allow members to send as or send on behalf of a Microsoft 365 group</span></span>](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[<span data-ttu-id="a5994-170">Tillåt medlemmar att skicka som eller skicka för en Microsoft 365-grupp</span><span class="sxs-lookup"><span data-stu-id="a5994-170">Allow members to send as or send on behalf of a Microsoft 365 group</span></span>](allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[<span data-ttu-id="18cee-171">Uppgradera distributionslistor till Microsoft 365-grupper</span><span class="sxs-lookup"><span data-stu-id="18cee-171">Upgrade distribution lists to Microsoft 365 groups</span></span>](../manage/upgrade-distribution-lists.md)
+[<span data-ttu-id="a5994-171">Uppgradera distributionslistor till Microsoft 365-grupper</span><span class="sxs-lookup"><span data-stu-id="a5994-171">Upgrade distribution lists to Microsoft 365 groups</span></span>](../manage/upgrade-distribution-lists.md)
 
-[<span data-ttu-id="18cee-172">Hantera Microsoft 365-grupper med PowerShell</span><span class="sxs-lookup"><span data-stu-id="18cee-172">Manage Microsoft 365 groups with PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[<span data-ttu-id="a5994-172">Hantera Microsoft 365-grupper med PowerShell</span><span class="sxs-lookup"><span data-stu-id="a5994-172">Manage Microsoft 365 groups with PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
