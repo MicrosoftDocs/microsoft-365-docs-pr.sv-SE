@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur du hämtar användaraktivitetsrapporten för Microsoft Teams och får insikter om teams-aktiviteten i organisationen.
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158851"
+ms.locfileid: "45167347"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Microsoft 365-rapporter i administrationscentret – Användaraktivitet för Microsoft Teams– Förhandsversion
 
@@ -51,9 +51,9 @@ Du kan visa användaraktiviteten i rapporten Förhandsgranska Teams genom att v�
 |Totalt antal möten   <br/> |Antalet onlinemöten som användaren deltog i under den angivna tidsperioden.  <br/> |
 |01:1 samtal   <br/> | Antalet 1:1-anrop som användaren deltog i under den angivna tidsperioden.  <br/> |
 |Sista aktivitetsdatum (UTC)  <br/> |Det sista datum då användaren deltog i en Microsoft Teams-aktivitet.<br/> |
-|Möten deltog adhoc   <br/> | Antalet adhoc-möten som användaren deltog i under den angivna tidsperioden.  <br/> |
-|Möten organiserade adhoc <br/> |Antalet ad hoc-möten som användaren organiserade under den angivna tidsperioden. <br/>|
+|Möten deltog adhoc   <br/> | Antalet möten som inte har schemalagts i kalendern som användaren deltog i under den angivna tidsperioden.  <br/> |
+|Möten organiserade adhoc <br/> |Antalet möten som inte har schemalagts i kalendern som användaren organiserade under den angivna tidsperioden. <br/>|
 |Möten ordnade schemalagda  <br/> |Antalet schemalagda möten som en användare har organiserat under den angivna tidsperioden.  <br/> |
 |Är licensierad |Väljs om användaren är licensierad att använda Teams.|
-|Övrig aktivitet|Antalet andra teamaktiviteter som användaren har. |
+|Övrig aktivitet|Användaren anses vara aktiv men har ett nollvärde för chattmeddelanden, 1:1-samtal, kanalmeddelanden, totalt antal möten och möten. Exempel på åtgärder är när Microsoft Teams-klienten aktiveras till förgrunden, åtgärder vidtogs i området för att skriva meddelande, popup-meddelanden dök upp i Microsoft Teams-klienten, banners visades i Microsoft Teams-klienten osv. |
 |||

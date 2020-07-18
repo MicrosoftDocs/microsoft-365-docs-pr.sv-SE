@@ -4,14 +4,18 @@ description: ''
 keywords: webbläsare, Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094792"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170677"
 ---
 # <a name="new-microsoft-edge-app"></a>Ny Microsoft Edge-app
 
@@ -38,7 +42,7 @@ Säkerhetsbaslinjen för Microsoft Edge på Microsoft Managed Desktop-enheter an
 #### <a name="extension-installation-blocklist"></a>Blockeringslista för tilläggsinstallation
 **Standardvärde:** Alla
 
-Microsoft Managed Desktop anger den här principen för att förhindra att Chrome-tillägg installeras på hanterade slutpunkter. Det finns kända risker i kopplingen till modellen för kromtillägg, inklusive dataskydd, sekretess och andra risker som kan äventyra enheter. 
+Microsoft Managed Desktop anger den här principen för att förhindra att Chrome-tillägg installeras på hanterade slutpunkter. Det finns kända risker som associeras med modellen för kromtillägg, inklusive dataskydd, sekretess och andra risker som kan äventyra enheter. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Tillåt inbyggda meddelandevärdar på användarnivå (installeras utan administratörsbehörighet)
 
@@ -119,7 +123,7 @@ När den här principen tillämpas hoppar första körningen över importavsnitt
 
 ## <a name="settings-you-manage"></a>Inställningar som du hanterar
 
-Du kan distribuera alla Microsft Edge-inställningar som inte tidigare beskrivits med hjälp av profilen Administrativa mallar i Microsoft Intune. Mer information finns i [Konfigurera principinställningar för Microsoft Edge med Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Om du vill utvärdera en princip som för närvarande inte ingår i Microsoft Edge Administrativa mallar i Intune kan du använda anpassade inställningar för Windows 10-enheter i Intune.
+Du kan distribuera alla Microsoft Edge-inställningar som inte tidigare beskrivits med hjälp av profilen Administrativa mallar i Microsoft Intune. Mer information finns i [Konfigurera principinställningar för Microsoft Edge med Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Om du vill utvärdera en princip som för närvarande inte ingår i Microsoft Edge Administrativa mallar i Intune kan du använda anpassade inställningar för Windows 10-enheter i Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Aktivera specifika Chrome-tillägg
 
