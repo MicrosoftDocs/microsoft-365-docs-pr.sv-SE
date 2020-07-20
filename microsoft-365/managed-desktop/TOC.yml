@@ -38,6 +38,8 @@
           href: service-description/operations-and-monitoring.md
         - name: Programkrav
           href: service-description/mmd-app-requirements.md
+        - name: Applikationskontroll
+          href: service-description/app-control.md
         - name: Tjänständringar och kommunikation
           href: service-description/servicechanges.md
         - name: Undantag från tjänstplanen
@@ -89,6 +91,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Gör användarna redo att använda enheter
           href: get-started/get-started-devices.md
+        - name: Kom igång med appens kontroll
+          href: get-started/get-started-app-control.md
         - name: Distribuera appar
           href: get-started/deploy-apps.md
           items:
@@ -116,6 +120,8 @@
           href: working-with-managed-desktop/end-user-support.md
         - name: Hantera appar
           href: working-with-managed-desktop/manage-apps.md
+        - name: Arbeta med appens kontroll
+          href: working-with-managed-desktop/work-with-app-control.md
         - name: Inställningar som kan konfigureras
           href: working-with-managed-desktop/config-setting-overview.md
           items:
