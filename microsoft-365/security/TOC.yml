@@ -37,6 +37,18 @@
           href: ../enterprise/secure-email-recommended-policies.md
         - name: Rekommenderade åtkomstprinciper för SharePoint Online
           href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft Secure Score
+      items:
+        - name: Översikt över Secure Score
+          href: mtp/microsoft-secure-score.md
+        - name: Utvärdera säkerhets genom övergå molnet
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: Spåra din resultathistorik och uppfylla mål
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: Kommer snart
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: Vad är nytt
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Hotskydd
       items:
         - name: Översikt
@@ -187,16 +199,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Skapa och hantera identifieringsregler
                       href: mtp/custom-detection-rules.md
-            - name: Microsoft Secure Score
-              items:
-                - name: Översikt över Secure Score
-                  href: mtp/microsoft-secure-score.md
-                - name: Få insyn i din säkerhetshållning
-                  href: mtp/microsoft-secure-score-improvement-actions.md
-                - name: Spåra din resultathistorik och uppfylla mål
-                  href: mtp/microsoft-secure-score-history-metrics-trends.md
-                - name: Kommer snart
-                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Rapporter
               items:
                 - name: Övervaka och visa rapporter

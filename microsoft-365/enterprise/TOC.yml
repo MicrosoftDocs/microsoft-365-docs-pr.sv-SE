@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: Distribuera med befintlig infrastruktur
           href: deploy-with-existing-infrastructure.md
+        - name: Distribution och uppdatering av kanalkonfigurationer
+          href: deploy-update-channels-examples.md
+          items:
+            - name: Bred distribution av de senaste utgåvorna
+              href: deploy-update-channels-examples-rapid-deploy.md
         - name: Distribuera för andra än stora företag
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: Distribuera arbetsbelastningar
