@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om vilka alternativ som finns för att skapa en säker gästdelningsmiljö i Microsoft 365.
-ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874900"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167371"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -53,10 +53,12 @@ Konfigurera multifaktorautentisering för gäster
 2. På bladet för **Villkorsstyrd åtkomst – Principer** klickar du på **Ny princip**.
 3. I fältet **Namn** skriver du *Multifaktorautentisering för gäst*.
 4. Under **Tilldelningar** klickar du på **Användare och grupper**.
-5. På bladet **Användare och grupper** väljer du **Välj användare och grupper**, markerar kryssrutan **Alla gäster och externa användare** och klickar sedan på **Klar**.
-4. Under **Åtkomstkontroller** klickar du på **Bevilja**.
-5. På bladet **Bevilja** markerar du kryssrutan **Kräv multifaktorautentisering** och klickar sedan på **Välj**.
-6. På bladet **Nytt**, under **Aktivera princip**, klickar du på **På** och sedan på **Skapa**.
+5. I bladet **Användare och grupper** markerar du **Välj användare och grupper**, markerar kryssrutan **Alla gäster och externa användare**.
+6. Under **Tilldelningar** klickar du på **Molnappar eller åtgärder**.
+7. Välj **alla program i molnet** på fliken **inkluderar** fliken **moln program eller-åtgärder** blad.
+8. Under **Åtkomstkontroller** klickar du på **Bevilja**.
+9. På bladet **Bevilja** markerar du kryssrutan **Kräv multifaktorautentisering** och klickar sedan på **Välj**.
+10. På bladet **Nytt**, under **Aktivera princip**, klickar du på **På** och sedan på **Skapa**.
 
 Gästen måste då registrera sig för multifaktorautentisering för att de ska kunna komma åt delat innehåll, webbplatser eller team.
 
