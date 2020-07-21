@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 212cefebfa3b4954f30d114419f82a5862e98a4f
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094804"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200044"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -47,7 +47,7 @@ Organisationer får tillgång till robusta visualiseringar av mått och trender,
 
 Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter eller åtgärda förbättringsåtgärden med ett program eller program från tredje part, eller en alternativ begränsning. Vissa förbättringsåtgärder ger bara poäng när de är helt slutförda, och vissa ger partiella poäng om de slutförs för vissa enheter eller användare. Om du inte kan eller inte vill anta någon av förbättringsåtgärderna kan du välja att acceptera risken eller den återstående risken.
 
-Vi visar dig alla möjliga förbättringar, oavsett licens, så att du kan förstå bästa praxis för säkerhet och förbättra dina poäng. Din absoluta säkerhetsposition representeras av Secure Score, som förblir densamma oavsett vilka produktlicenser din organisation äger. Tänk på att säkerheten bör balanseras med användbarhet, och inte varje rekommendation kan fungera för din miljö.
+Om du har en licens för en av microsoft-produkter som stöds visas rekommendationer för dessa produkter. Vi visar dig alla möjliga förbättringar för en produkt, oavsett licensutgåva, prenumeration eller abonnemang, så att du kan förstå bästa säkerhetspraxis och förbättra dina poäng. Din absoluta säkerhetsposition representeras av Secure Score, som förblir densamma oavsett vilka licenser din organisation äger för en viss produkt. Tänk på att säkerheten bör balanseras med användbarhet, och inte varje rekommendation kan fungera för din miljö.
 
 Din poäng uppdateras i realtid för att återspegla den information som presenteras i visualiseringar och förbättring åtgärd sidor. Secure Score synkroniserar också dagligen för att ta emot systemdata om dina uppnådda poäng för varje åtgärd.
 
@@ -109,62 +109,13 @@ Med skrivskyddad åtkomst kan du inte redigera status eller anteckningar för en
 
 Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition baserat på systemkonfigurationer, användarbeteende och andra säkerhetsrelaterade mätningar. Det är inte ett absolut mått på hur sannolikt ditt system eller data kommer att brytas. Snarare är det i vilken utsträckning du har antagit säkerhetskontroller i din Microsoft-miljö som kan bidra till att kompensera risken för att brytas. Ingen onlinetjänst är helt immun mot säkerhetsöverträdelser, och säker poäng bör inte tolkas som en garanti mot säkerhetsöverträdelse på något sätt.
 
-## <a name="whats-new"></a>Vad är nytt? 
-
-För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad som kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
-
-### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med Identity Secure Score och Graph API
-
-I den senaste versionen av Microsoft Secure Score har en förbättrad poängsättningsmodell släppts. Dessa ändringar möjliggör en mer flexibel och korrekt bild av din säkerhetsposition. Dessa uppdateringar har dock gjort Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score och Graph API.
-
-Med tiden antar Identity Secure Score och Graph API den nya bedömningsmodellen. Fram till dess ser kunderna skillnader i poängen som rapporteras av Microsoft Secure Score, Identity Secure Score och Graph API. Vi ber om ursäkt för eventuella besvär detta orsakar, och arbetar för att säkerställa dessa erfarenheter är mer kompatibla i framtiden.
-
-### <a name="updated-improvement-actions"></a>Uppdaterade förbättringsåtgärder
-
-- Lade till förbättringarsåtgärder för Azure Active Directory
-- Lade till Azure Advanced Threat Protection improvement-åtgärder
-- Stöd för säkerhetsrekommendationer för Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-    - Alla utgivna säkerhetsrekommendationer från TVM finns nu tillgängliga
-
-### <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
-
-* Alla nya statistik- och trendersvyer för CISO- och leadnivådiskussioner
-* Nya sätt att spåra och jämföra din poäng
-* Bättre spårning och förståelse för poängregressioner
-* Filtrera, tagga, söka och gruppera förbättringsåtgärder
-* Hantera mot dina framtida mål med hjälp av resultatprognoser och planerade åtgärder
-* Och mer!
-
-### <a name="june-2020"></a>Juni 2020
-
-#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Borttagen förbättringsåtgärd för Microsoft Defender Advanced Threat Protection
-
-* Aktivera regler för minskning av attackytan
-
-#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Lade till förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
-
-* Blockera Adobe Reader från att skapa underordnade processer
-* Använd avancerat skydd mot ransomware
-* Blockera alla Office-program från att skapa underordnade processer
-* Blockera Office-program från att skapa körbart innehåll
-* Blockera JavaScript eller VBScript från att starta nedladdat körbart innehåll
-* Blockera körning av potentiellt fördunklade skript
-* Blockera körbart innehåll från e-postklient och webbmail
-* Blockera Office-kommunikationsprogram från att skapa underordnade processer
-* Blockera ej betrodda och osignerade processer som körs från USB
-* Blockera persistens genom WMI-händelseprenumeration
-* Blockera Office-program från att injicera kod i andra processer
-* Blockera körbara filer från att köras om de inte uppfyller ett prevalens-, ålders- eller tillförlitligt listkriterium
-* Blockera processskapanden från PSExec- och WMI-kommandon
-* Blockera stöld av autentiseringsuppgifter från undersystemet Windows lokala säkerhetsmyndighet (lsass.exe)
-* Blockera Win32 API-anrop från Office-makron
-
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
 Om du har några problem, vänligen meddela oss genom att publicera i [security, privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar samhället och kommer att ge hjälp.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Få insyn i din säkerhetsposition](microsoft-secure-score-improvement-actions.md)
+- [Bedöm din säkerhetsposition](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft Secure Score-historik och uppnå mål](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)

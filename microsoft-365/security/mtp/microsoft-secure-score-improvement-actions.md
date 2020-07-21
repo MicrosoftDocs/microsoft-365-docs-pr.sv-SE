@@ -1,5 +1,5 @@
 ---
-title: Få insyn i din säkerhetsposition via Microsoft Secure Score
+title: Utvärdera din säkerhetsposition via Microsoft Secure Score
 description: I artikeln beskrivs hur du vidtar åtgärder för att förbättra Microsoft Secure Score i microsoft 365-säkerhetscentret.
 keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
 ms.prod: microsoft-365-enterprise
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ae1a196f11f383c1d3f9fd2056d5d19e7cdd6da
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 469056bbae4627e0b013bfc0f2e965586fd15175
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095077"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200068"
 ---
-# <a name="gain-visibility-into-your-security-posture-through-microsoft-secure-score"></a>Få insyn i din säkerhetsposition via Microsoft Secure Score
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Utvärdera din säkerhetsposition med Microsoft Secure Score
 
 Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns https://security.microsoft.com/securescore på i Microsoft [365 security center](overview-security-center.md).
 
@@ -40,7 +40,7 @@ För att hjälpa dig den information du behöver snabbare är Microsofts förbä
 * Infrastruktur (inga förbättringsåtgärder för tillfället)
 
 >[!NOTE]
->I den senaste versionen av Microsoft Secure Score har en förbättrad poängsättningsmodell släppts som gjorde Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score och Graph API. [Visa information](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>I den senaste versionen av Microsoft Secure Score har en förbättrad poängsättningsmodell släppts som gjorde Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score och Graph API. [Visa information](microsoft-secure-score-whats-new.md)
 
 På översiktssidan för Microsoft Secure Score kan du se hur poäng delas mellan dessa grupper och vilka punkter som är tillgängliga. Översiktssidan är också platsen för att få en helhetsbild av den totala poängen, historisk trend för din säkra poäng med jämförelsemål och prioriterade förbättringsåtgärder som kan vidtas för att förbättra din poäng.
 
@@ -121,3 +121,4 @@ Om du har några problem, vänligen meddela oss genom att publicera i [security,
 - [Översikt över Microsoft Secure Score](microsoft-secure-score.md)
 - [Spåra din Microsoft Secure Score-historik och uppnå mål](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)

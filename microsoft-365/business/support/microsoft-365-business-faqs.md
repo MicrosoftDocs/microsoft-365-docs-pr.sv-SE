@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, vanliga frågor och svar, vanliga frågor och svar, svar, affärer
 ms.date: 06/08/2018
-ms.openlocfilehash: a2feb91ddcd2d95da28c3363d983b382cf2aa6dc
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30437825a896acb470b23cb8f68ea36235ee80c8
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403459"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185985"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Vanliga frågor och svar för Microsoft 365 Business Premium
 
@@ -86,7 +86,7 @@ Befintlig stationär (Win32) programkompatibilitet är stark i Windows 10 och de
 ### <a name="what-is-windows-10-business"></a>Vad är Windows 10 Business? 
 Windows 10 Business är en uppsättning molntjänster och funktioner för enhetshantering som kompletterar Windows 10 Pro och ger tillgång till centraliserad hantering och säkerhetskontroller i Microsoft 365 Business Premium.
 
-Windows 10 Business levereras också med vissa premium Microsoft Defender-funktioner som Kontrollerad mappåtkomst och nätverksskydd för webbaserade hot. Den innehåller även Windows autopilot, en tjänst som underlättar distribution av nya Windows 10-datorer.
+Windows 10 Business levereras också med vissa premium Microsoft Defender-funktioner som kontrollerad mappåtkomst och nätverksskydd för webbaserade hot. Den innehåller även Windows autopilot, en tjänst som underlättar distribution av nya Windows 10-datorer.
 
 Om du har enheter som är licensierade för Windows 7, 8 och 8.1 Professional ger Microsoft 365 Business Premium en uppgradering till Windows 10 Pro, som är kraven för att distribuera Windows 10 Business.
 > [!IMPORTANT]
@@ -137,9 +137,9 @@ Den mest direkta vägen till en framgångsrik Microsoft 365 Business Premium-dis
 Ja, Microsoft 365 Business Premium-prenumeranter har licens för att använda fullständiga Intune-funktioner för iOS, Android, MacOS och annan enhetshantering för flera plattformar. Funktioner som inte är tillgängliga i den förenklade hanteringskonsolen i Microsoft 365 Business Premium, t. ex. programhantering och konfigurering av WiFi-profiler, VPN-certifikat kan hanteras i den fullständiga Intune-konsolen. 
   
 
-### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business"></a>Medföljer Azure Active Directory (Azure AD) Premium P1 med Microsoft 365 Business? 
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Levereras Azure Active Directory (Azure AD) Premium P1 med Microsoft 365 Business Premium? 
 
-Tidigare Microsoft 365 Business hade en delmängd av funktionerna för Azure AD Premium abonnemang 1, t. ex. villkorlig åtkomst, självbetjäning för återställning av lösenord och multifaktorautentisering. Nu lanserar vi hela Azure AD Premium P1-licensen till Microsoft 365 Business-prenumeranter först till nya kunder och sedan till de aktuella prenumeranterna. Mer information finns i [Tjänstebeskrivning Microsoft 365 Business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) och den här [bloggen](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/azure-active-directory-premium-p1-is-coming-to-microsoft-365/ba-p/1275496).
+Ja, Azure AD Premium P1 ingår i Microsoft Business Premium.
  
  
 ### <a name="does-microsoft-365-business-premium-allow-customers-to-manage-macs"></a>Tillåter Microsoft 365 Business Premium att kunderna hanterar Mac:ar? 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158875"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185998"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Top scoring i branschtester
 
@@ -44,19 +44,18 @@ Kärnan i MITRE:s testmetod efterliknar verkliga attacker för att förstå om l
 [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) presterar konsekvent mycket i oberoende tester, visar hur det är ett toppval på antivirusmarknaden. Tänk på att dessa tester bara ger resultat för antivirusprogram och inte testar för ytterligare säkerhetsskydd.
 
 Microsoft Defender Antivirus är [nästa generations skyddskapacitet](https://www.youtube.com/watch?v=Xy3MOxkX_o4) i [Microsoft Defender ATP Windows 10 säkerhetsstack](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) som behandlar de senaste och mest sofistikerade hoten idag. I vissa fall kanske kunderna inte ens vet att de var skyddade eftersom en cyberattack [stoppas millisekunder efter att en kampanj startar](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). Det beror på att Microsoft Defender Antivirus och andra [EPP-funktioner (Endpoint Protection Platform)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) i Microsoft Defender ATP identifierar och stoppar skadlig kod vid första anblicken med [maskininlärning,](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering) [artificiell intelligens,](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)beteendeanalys och andra avancerade tekniker.
-<br><br>
-
-**Ladda ner den senaste [insynsrapporten: Granska AVT-testresultat, januari-februari 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)**
 
 ### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-TEST: Skyddspoäng på 5.5/6.0 i det senaste testet
 
 Av-TEST Produktgranskning och certifieringsrapport testar på tre kategorier: skydd, prestanda och användbarhet. Följande poäng är för kategorin Skydd som har två poäng: Real-World Testing och AV-TEST referensuppsättning (känd som "Prevalent Malware").
 
+**Ladda ner den senaste insynsrapporten: [Undersöka AV-TEST-resultaten, januari-februari 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+
 - Mars – april 2020 AV-TEST Företagsanvändartest: [Skyddspoäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**Senaste**</sup>
 
     Microsoft Defender Antivirus uppnådde en övergripande skyddspoäng på 5.5/6.0, med 20 540 skadliga program som används.
 
-- Januari – februari 2020 AV-TEST Företagsanvändartest: [Skyddspoäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [Analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)
+- Januari – februari 2020 AV-TEST Företagsanvändartest: [Skyddspoäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [Analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - November – December 2019 AV-TEST Företagsanvändartest: [Skyddspoäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
@@ -84,7 +83,9 @@ Business Security Test består av tre huvuddelar: Real-World Protection Test som
 
 SE Labs testar en rad lösningar som används av produkter och tjänster för att upptäcka och/eller skydda mot attacker, inklusive slutpunktsprogram, nätverksenheter och molntjänster.
 
-- Enterprise Endpoint Protection januari – mars 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>
+**Ladda ner den senaste [insynsrapporten: Undersöker SE Labs testresultat, januari-mars 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- Enterprise Endpoint Protection januari – mars 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [Analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
     Microsofts nästa generations skydd utsågs till en av de ledande produkterna, stoppa alla riktade attacker och alla utom ett offentligt hot.
 

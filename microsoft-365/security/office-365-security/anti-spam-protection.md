@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om inställningar och filter mot skräppost som förhindrar skräppost i Exchange Online Protection (EOP).
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800113"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189567"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Skydd mot skräppost i EOP
 
@@ -36,6 +36,9 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller friståend
 Microsofts färdplan för e-postsäkerhet innebär en oöverträffad produktövergripande metod. EOP:s anti-spam- och anti-phishing-teknik tillämpas på våra e-postplattformar för att ge användarna de senaste anti-spam- och anti-phishing-verktygen och innovationerna i hela nätverket. Målet för EOP är att erbjuda en omfattande och användbar e-posttjänst som hjälper till att upptäcka och skydda användare från skräppost, bedrägliga e-posthot (nätfiske) och skadlig kod.
 
 Som e-postanvändning har ökat, så har e-missbruk. Oövervakad skräppost kan täppa till inkorgar och nätverk, påverka användarnas tillfredsställelse och hindra effektiviteten i legitim e-postkommunikation. Det är därför Microsoft fortsätter att investera i anti-spam-teknik. Enkelt uttryckt, det börjar med att innehålla och filtrera skräppost.
+
+> [!TIP]
+> Följande anti-spam-tekniker är användbara när du vill tillåta eller blockera meddelanden baserat på meddelandekuvertet (till exempel avsändarens domän eller meddelandets källa-IP-adress). Om du vill tillåta eller blockera meddelanden baserat på nyttolast (till exempel webbadresser i meddelandet eller bifogade filer) bör du använda [portalen Tillåt/blockera blockering av klienten](tenant-allow-block-list.md).
 
 ## <a name="anti-spam-technologies-in-eop"></a>Anti-spam-teknik i EOP
 

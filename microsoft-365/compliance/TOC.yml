@@ -24,6 +24,8 @@
           href: insider-risk-management.md
         - name: Planera för hantering av insiderrisker
           href: insider-risk-management-plan.md
+        - name: Komma igång med inställningar för Insider-risker
+          href: insider-risk-management-settings.md
         - name: Kom igång med hantering av insiderrisker
           href: insider-risk-management-configure.md
         - name: Skapa och hantera principer för hantering av insiderrisker
@@ -105,30 +107,32 @@
       items:
         - name: DLP och Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Titta på en utökad översikt av DLP
-          href: 'https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111'
-        - name: Konfigurera DLP
-          items:
-            - name: Kom igång med DLP-principrekommendationer
-              href: get-started-with-dlp-policy-recommendations.md
-            - name: Kom igång med DLP-standardprincipen
-              href: get-started-with-the-default-dlp-policy.md
-            - name: Skapa en DLP-princip från en mall
-              href: create-a-dlp-policy-from-a-template.md
-            - name: 'Skapa, testa och justera en DLP-princip'
-              href: create-test-tune-dlp-policy.md
-            - name: Använda aviseringar och principtips i DLP-principer
-              href: use-notifications-and-policy-tips.md
-            - name: Det här innehåller DLP-principmallarna
-              href: what-the-dlp-policy-templates-include.md
-            - name: Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper
-              href: protect-documents-that-have-fci-or-other-properties.md
-            - name: Visa DLP-rapporterna
-              href: view-the-dlp-reports.md
-            - name: Skapa en fråga för att hitta känsliga data som lagras på webbplatser
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: Så fungerar DLP mellan Säkerhets- och efterlevnadscenter och administrationscentret för Exchange
-              href: how-dlp-works-between-admin-centers.md
+        - name: Mer information om skydd mot Endpoint data förlust (förhandsversion)
+          href: endpoint-dlp-learn-about.md
+        - name: Komma igång med data förlust skydd för Endpoint (förhandsversion)
+          href: endpoint-dlp-getting-started.md
+        - name: Använda skydd mot Endpoint data förlust (förhandsversion)
+          href: endpoint-dlp-using.md
+        - name: Kom igång med DLP-principrekommendationer
+          href: get-started-with-dlp-policy-recommendations.md
+        - name: Kom igång med DLP-standardprincipen
+          href: get-started-with-the-default-dlp-policy.md
+        - name: Skapa en DLP-princip från en mall
+          href: create-a-dlp-policy-from-a-template.md
+        - name: 'Skapa, testa och justera en DLP-princip'
+          href: create-test-tune-dlp-policy.md
+        - name: Använda aviseringar och principtips i DLP-principer
+          href: use-notifications-and-policy-tips.md
+        - name: Det här innehåller DLP-principmallarna
+          href: what-the-dlp-policy-templates-include.md
+        - name: Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper
+          href: protect-documents-that-have-fci-or-other-properties.md
+        - name: Visa DLP-rapporterna
+          href: view-the-dlp-reports.md
+        - name: Skapa en fråga för att hitta känsliga data som lagras på webbplatser
+          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: Så fungerar DLP mellan Säkerhets- och efterlevnadscenter och administrationscentret för Exchange
+          href: how-dlp-works-between-admin-centers.md
     - name: Typer av känslig information
       items:
         - name: Entitetsdefinitioner för typer av känslig information
