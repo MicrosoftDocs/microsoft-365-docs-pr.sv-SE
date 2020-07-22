@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Lär dig hur du lägger till gäster i en Microsoft 365-grupp, visar gästanvändare och använder PowerShell för att styra gäståtkomsten.
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854252"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204749"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Hantera gäståtkomst i Microsoft 365-grupper
 
@@ -114,7 +114,7 @@ Mer information finns i [Tillåt eller blockera inbjudningar till B2B-användare
 
 ## <a name="add-guests-to-the-global-address-list"></a>Lägga till gäster i den globala adresslistan
 
-Som standard visas inte gäster i exchange-listan över globala adresser. Följ stegen nedan för att göra en gäst synlig i den globala adresslistan.
+Som standard visas inte gäster i exchange-listan över globala adresser. Följ stegen nedan för att göra en gäst synlig i den globala adresslistan. Kontrollera att gästen är synlig i administrationscentret för Exchange Online. Det kan ta en kort stund innan nya gäster visas där när de har lagts till.
 
 Hitta gästanvändarens ObjectID genom att köra:
 

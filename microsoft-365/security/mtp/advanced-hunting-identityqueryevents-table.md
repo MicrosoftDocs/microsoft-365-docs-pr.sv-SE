@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899119"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204881"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,8 +38,9 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
 | `ActionType` | Sträng | Typ av aktivitet som utlöste händelsen |
 | `Application` | Sträng | Ansökan som utförde den inspelade åtgärden |
-| `Query` | Sträng | Typ av fråga: QueryGroup, QueryUser eller UppräkningAnvändare |
-| `QueryObject` | Sträng | Namn på den användare, grupp, enhet, domän eller någon annan entitetstyp som efterfrågas |
+| `QueryType` | Sträng | Typ av fråga, till exempel QueryGroup, QueryUser eller UppräkningAnvändare |
+| `QueryTarget` | Sträng | Namn på användare, grupp, enhet, domän eller någon annan entitetstyp som efterfrågas |
+| `Query` | Sträng | Sträng som används för att köra frågan |
 | `Protocol` | Sträng | Protokoll som används under kommunikationen |
 | `AccountName` | Sträng | Kontots användarnamn |
 | `AccountDomain` | Sträng | Kontots domän |
@@ -49,7 +50,14 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `AccountDisplayName` | Sträng | Namn på den kontoanvändare som visas i adressboken. Vanligtvis en kombination av ett givet eller förnamn, en mellaninitiering och ett efternamn eller efternamn. |
 | `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för slutpunkten |
 | `IPAddress` | Sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `DestinationDeviceName` | Sträng | Namn på den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
+| `DestinationIPAddress` | Sträng | IP-adressen för den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
+| `TargetDeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för den enhet som den registrerade åtgärden tillämpades på |
+| `TargetAccountUpn` | Sträng | Användarens huvudnamn (UPN) för det konto som den registrerade åtgärden tillämpades på |
+| `TargetAccountDisplayName` | Sträng | Visa namnet på det konto som den registrerade åtgärden tillämpades på |
 | `Location` | Sträng | Ort, land eller annan geografisk plats som är associerad med händelsen |
+| `ReportId` | Lång | Unik identifierare för händelsen |
+| `AdditionalFields` | Sträng | Ytterligare information om entiteten eller händelsen |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898963"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204929"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -50,7 +50,7 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `AccountName` | Sträng | Kontots användarnamn |
 | `AccountDomain` | Sträng | Kontots domän |
 | `EmailAddress` | Sträng | SMTP-adressen för kontot |
-| `SipProxyAddress` | Sträng | Röst för kontots ip-sessionsinitieringsprotokoll (VOIP) för kontot |
+| `SipProxyAddress` | Sträng | SIP-adressen (Voice over IP) session initiation protocol (SIP) för kontot |
 | `City` | Sträng | Stad där kontoanvändaren finns |
 | `Country` | Sträng | Land/region där kontoanvändaren finns |
 | `IsAccountEnabled` | Boolean | Anger om kontot är aktiverat eller inte |

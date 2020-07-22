@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig mer om hur Exchange Online Protection (EOP) kan skydda din lokala e-postorganisation i fristående miljöer och hybridmiljöer.
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616992"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204809"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
@@ -43,9 +43,9 @@ För att förstå hur EOP fungerar hjälper det att se hur det bearbetar inkomma
 
 - Ett inkommande meddelande passerar inledningsvis genom anslutningsfiltrering, som kontrollerar avsändarens rykte och kontrollerar meddelandet efter skadlig kod. Majoriteten av spam stoppas på denna punkt och tas bort av EOP. Mer information finns i [konfigurera anslutningsfilter](configure-the-connection-filter-policy.md).
 
-- Meddelanden fortsätter genom principfiltrering, där meddelanden utvärderas mot anpassade regler för e-postflöde (kallas även transportregler) som du skapar eller tillämpar från en mall. Du kan till exempel ha en regel som skickar ett meddelande till en chef när e-post kommer från en viss avsändare. DLP-kontroller (Data loss prevention) sker också vid denna tidpunkt (Exchange Enterprise CAL with Services).
+- Meddelanden fortsätter genom principfiltrering, där meddelanden utvärderas mot anpassade regler för e-postflöde (kallas även transportregler) som du skapar eller tillämpar från en mall. Du kan till exempel ha en regel som skickar ett meddelande till en chef när e-post kommer från en viss avsändare. DLP-kontroller (Data loss prevention) utförs också vid denna tidpunkt (Exchange Enterprise CAL with Services).
 
-- Därefter passerar meddelanden genom skräppostfiltrering (kallas även innehållsfiltrering). Ett meddelande som är bestämt att vara skräppost kan skickas till en användares skräppostmapp eller till karantänen, bland andra alternativ. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
+- Därefter passerar meddelanden genom skräppostfiltrering (kallas även innehållsfiltrering). Ett meddelande som är bestämt att vara spam kan skickas till en användares skräppostmapp eller till karantänen, bland andra alternativ. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
 
 - När ett meddelande har skickat alla dessa skyddslager har levererats det till mottagaren.
 
@@ -53,7 +53,7 @@ Mer information finns i [Ordning och prioritet för e-postskydd](how-policies-an
 
 ### <a name="eop-datacenters"></a>EOP-datacenter
 
-EOP körs på ett världsomspännande nätverk av datacenter som är utformade för att ge den bästa tillgängligheten. Om ett datacenter till exempel blir otillgängligt dirigeras e-postmeddelanden automatiskt till ett annat datacenter utan avbrott i tjänsten. Servrar i varje datacenter accepterar meddelanden för din räkning, vilket ger ett lager av separation mellan din organisation och internet, vilket minskar belastningen på dina servrar. Genom detta nätverk med högtillgänglig tillgång kan Microsoft se till att e-post når din organisation i tid.
+EOP körs på ett världsomspännande nätverk av datacenter som är utformade för att ge den bästa tillgängligheten. Om ett datacenter till exempel blir otillgängligt dirigeras e-postmeddelanden automatiskt till ett annat datacenter utan avbrott i tjänsten. Servrar i varje datacenter accepterar meddelanden för din räkning, vilket ger ett lager av separation mellan din organisation och internet, vilket minskar belastningen på dina servrar. Genom detta högtillgängliga nätverk kan Microsoft se till att e-post når din organisation i tid.
 
 EOP utför belastningsutjämning mellan datacenter men bara inom en region. Om du etableras i en region bearbetas alla dina meddelanden med hjälp av e-postroutning för den regionen. Följande lista visar hur regional e-postroutning fungerar för EOP-datacenter:
 
@@ -61,7 +61,13 @@ EOP utför belastningsutjämning mellan datacenter men bara inom en region. Om d
 
 - I Asien-Stillahavsområdet (APAC) finns alla Exchange Online-postlådor i APAC-datacenter och meddelanden dirigeras för närvarande via APAC-datacenter för EOP-filtrering.
 
-- I Amerika finns alla Exchange Online-postlådor i amerikanska datacenter, med undantag för Sydamerika där datacenter i Brasilien och Chile används och i Kanada där datacenter i Kanada används. Alla e-postmeddelanden, inklusive meddelanden för kunder i Sydamerika och Kanada, dirigeras via lokala datacenter för EOP-filtrering. e-post i karantän lagras i det datacenter där klienten finns.
+- I Amerika distribueras tjänster på följande platser:
+
+  - Sydamerika: Exchange Online-postlådor finns i datacenter i Brasilien och Chile. Alla meddelanden dirigeras via lokala datacenter för EOP-filtrering. Meddelanden i karantän lagras i det datacenter där klienten finns.
+
+  - Kanada: Exchange Online-postlådor finns i datacenter i Kanada. Alla meddelanden dirigeras via lokala datacenter för EOP-filtrering. Meddelanden i karantän lagras i det datacenter där klienten finns.
+
+  - USA: Exchange Online-postlådor finns i amerikanska datacenter. Alla meddelanden dirigeras via lokala datacenter för EOP-filtrering. Meddelanden i karantän lagras i det datacenter där klienten finns.
 
 - För Government Community Cloud (GCC) finns alla Exchange Online-postlådor i amerikanska datacenter och alla meddelanden dirigeras via amerikanska datacenter för EOP-filtrering.
 
@@ -97,7 +103,7 @@ Hjälpinnehållet för EOP-administratörer består av följande kategorier på 
 
 - [Hantera mottagare i fristående EOP:](manage-recipients-in-eop.md)Beskriver hur du hanterar e-postanvändare och grupper i EOP.
 
-- [E-postflöde i EOP:](mail-flow-in-eop.md)Beskriver hur du konfigurerar anpassade scenarier för e-postflöde med kopplingar, hur du hanterar domäner som är associerade med tjänsten och hur du aktiverar funktionen DBEB (Directory Based Edge Blocking).
+- [E-postflöde i EOP:](mail-flow-in-eop.md)Beskriver hur du konfigurerar anpassade scenarier för e-postflöde med hjälp av kopplingar, hur du hanterar domäner som är associerade med tjänsten och hur du aktiverar funktionen DBEB (Directory Based Edge Blocking).
 
 - [Metodtips för att konfigurera EOP:](best-practices-for-configuring-eop.md)Beskriver rekommenderade konfigurationsinställningar och överväganden för när du har konfigurerat och etablerat tjänsten.
 

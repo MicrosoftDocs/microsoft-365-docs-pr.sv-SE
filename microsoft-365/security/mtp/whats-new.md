@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084161"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204941"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Nyheter i Microsoft Hotskydd
 
@@ -30,6 +30,10 @@ RSS-flöde: Få ett meddelande när den här sidan uppdateras genom att kopiera 
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="july-2020"></a>Juli 2020
+- [Funktionen FileProfile()](advanced-hunting-fileprofile-function.md) <br> Använd den här funktionen i dina [avancerade jaktfrågor](advanced-hunting-overview.md) för att berika resultaten med omfattande filinformation.
+- [Identitets- och apptabeller](advanced-hunting-schema-tables.md)<br> Få insyn i autentiseringshändelser, Active Directory-frågor och apprelaterad aktivitet med [tabellerna IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)och [AppFileEvents](advanced-hunting-appfileevents-table.md) i det avancerade jaktschemat.
+
 ## <a name="june-2020"></a>Juni 2020
 - Twitter-flöde <br> Få den senaste säkerhetsforskningen, hotinformationen, produktnyheterna med mera – direkt i instrumentpanelen.
 - [Schematabellen EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Införliva information om åtgärder efter leverans som vidtagits på e-postmeddelanden i dina avancerade jaktfrågor.

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899345"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204761"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -41,13 +41,23 @@ Information om andra tabeller i det avancerade jaktschemat [finns i den avancera
 | `FileName` | Sträng | Namnet på den fil som den registrerade åtgärden tillämpades på |
 | `FolderPath` | Sträng | Mapp som innehåller filen som den inspelade åtgärden tillämpades på |
 | `PreviousFileName` | Sträng | Det ursprungliga namnet på filen som har bytt namn till följd av åtgärden |
+| `PreviousFolderPath` | Sträng | Den ursprungliga mappen som innehåller filen innan den inspelade åtgärden tillämpades |
+| `Protocol` | Sträng | Nätverksprotokoll som används |
 | `AccountName` | Sträng | Kontots användarnamn |
 | `AccountDomain` | Sträng | Kontots domän |
 | `AccountUpn` | Sträng | Användarens huvudnamn (UPN) för kontot |
 | `AccountObjectId` | Sträng | Unik identifierare för kontot i Azure AD |
 | `AccountDisplayName` | Sträng | Namn på den kontoanvändare som visas i adressboken. Vanligtvis en kombination av ett givet eller förnamn, en mellaninitiering och ett efternamn eller efternamn. |
+| `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten |
+| `DeviceType` | Sträng | Typ av enhet | 
+| `OSPlatform` | Sträng | Plattform för operativsystemet som körs på enheten. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
 | `IPAddress` | Sträng | IP-adress som tilldelats slutpunkten och som används under relaterad nätverkskommunikation |
+| `DestinationDeviceName` | Sträng | Namn på den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
+| `DestinationIPAddress` | Sträng | IP-adressen för den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
 | `Location` | Sträng | Ort, land eller annan geografisk plats som är associerad med händelsen |
+| `Isp` | Sträng | Internet-leverantör (ISP) som är associerad med IP-adressen för slutpunkten |
+| `ReportId` | Lång | Unik identifierare för händelsen |
+| `AdditionalFields` | Sträng | Ytterligare information om entiteten eller händelsen |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

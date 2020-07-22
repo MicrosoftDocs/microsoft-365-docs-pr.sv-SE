@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 039b9dc038cd1a1645aee2289f3bdb389eb3f426
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515940"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204953"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 **Gäller:**
 - Microsoft Hotskydd
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `FileProfile()`Funktionen är en anrikningsfunktion i avancerad [jakt](advanced-hunting-overview.md) som lägger till följande data i filer som hittades av frågan.
 
@@ -39,9 +37,9 @@ ms.locfileid: "44515940"
 | SHA256 (SHA256) | Sträng | SHA-256 i den akt som den registrerade åtgärden tillämpades på |
 | VD5 | Sträng | MD5-hash i filen som den registrerade åtgärden tillämpades på |
 | Filstorlek | Int | Filens storlek i byte |
-| GlobalPrevalence | Int | Antal instanser av den enhet som Microsoft observerat globalt |
+| GlobalPrevalence | Int | Antal instanser av den enhet som Microsoft har observerat globalt |
 | GlobalFirstSeen | Datetime | Datum och tid då enheten först observerades av Microsoft globalt |
-| GlobalSeen | Datetime | Datum och tid då entiteten senast observerades av Microsoft globalt |
+| GlobalLastSeen | Datetime | Datum och tid då entiteten senast observerades av Microsoft globalt |
 | Signerat | Sträng | Information om undertecknaren av filen |
 | Emittenten | Sträng | Information om den utfärdande certifikatutfärdaren |
 | SignerHash (Teckenhash) | Sträng | Unikt hash-värde som identifierar undertecknaren |
@@ -75,7 +73,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Berika de första 500 posterna och lista filer med lågprevalens
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Berika de första 500 posterna och lista filer med låg prevalens
 
 ```kusto
 DeviceFileEvents

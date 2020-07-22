@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048273"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204833"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
 
@@ -59,8 +59,4 @@ Följande funktioner och förbättringar är för närvarande tillgängliga vid 
 
 - **[Schemareferens för portaler](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – information om schematabeller som är tillgängliga direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här referensen information om händelsetyper som stöds `ActionType` (värden) och exempelfrågor.  
 
-- **[Identitets- och apptabeller](advanced-hunting-schema-tables.md)** – få insyn i autentiseringshändelser, Active Directory-frågor och apprelaterad aktivitet med [tabellerna IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)och [AppFileEvents](advanced-hunting-appfileevents-table.md) i det avancerade jaktschemat.
-
 - **[Gå jakt](advanced-hunting-go-hunt.md)** - snabbt pivot från att undersöka en incident för att inspektera en viss händelse, en användare, en enhet eller andra entitetstyper med hjälp av frågebaserade [avancerade jaktfunktioner.](advanced-hunting-overview.md)
-
-- **[FileProfile() funktion](advanced-hunting-fileprofile-function.md)** - använd i dina [avancerade jaktfrågor](advanced-hunting-overview.md) för att införliva omfattande filinformation.

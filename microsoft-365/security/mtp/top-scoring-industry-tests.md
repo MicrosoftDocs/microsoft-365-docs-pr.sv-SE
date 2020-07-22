@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185998"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204965"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Top scoring i branschtester
 
@@ -100,6 +100,8 @@ SE Labs testar en rad lösningar som används av produkter och tjänster för at
 ## <a name="endpoint-detection--response"></a>Slutpunktsidentifiering & svar
 
 Identifierings- [och svarsfunktionerna för](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) Microsoft Defender ATP-slutpunkt ger avancerade attackidentifieringar som är nära realtid och kan kan tas i action. Säkerhetsanalytiker kan prioritera aviseringar effektivt, få insyn i hela omfattningen av en överträdelse och vidta svarsåtgärder för att åtgärda hot.
+
+Microsoft Defender ATP:s edr- och slutpunktsskydd har fått positiva resultat från branschtester och publikationer. [SC Labs utvärderade säkerhetsverktyg](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) för slutpunkter i juni 2020 och gav Microsoft Defender ATP [5/5 stjärnor](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). De ropade också ut Microsoft Defender ATP: s förmåga att skydda organisationer mot det moderna hot landskapet med hjälp av en fullständig uppsättning säkerhetsfunktioner, och identifierade slutpunkt säkerhetslösning som holistisk och enhetlig. De erkände också konvergensen av slutpunktsskydd med slutpunktsidentifiering och svarsfunktioner, eftersom attackkedjan nu blir helt täckt av lösningar.
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: Branschledande optik- och detektionskapacitet
 

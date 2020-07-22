@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig hur du visar, skapar, ändrar och tar bort utgående skräppostpolicyer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024588"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204857"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera skräppostfiltrering utanför eu i EOP
 
@@ -136,26 +136,10 @@ Genom att skapa en anpassad utgående skräppostprincip i Security & Compliance 
 
    - **Meddela specifika personer om en avsändare blockeras på grund av att skicka skräppost som skickas:**
 
-     > [!NOTE]
-     > [Standardvarningsprincipen](../../compliance/alert-policies.md) **Användaren har begränsat från att skicka e-post** skickar redan e-postmeddelanden till medlemmar i gruppen **TenantAdmins** (**Global admins**) när användare blockeras på grund av att de överskrider gränserna i avsnittet **Mottagargränser.** Vi rekommenderar att du använder aviseringsprincipen i stället för den här inställningen i principen för utgående skräppost för att meddela administratörer och andra användare. Instruktioner finns i [Verifiera varningsinställningarna för begränsade användare](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> Den här inställningen fungerar bara i standardpolicyn för utgående skräppost. Det fungerar inte i anpassade utgående skräppostpolicyer som du skapar.
-
-     Så här aktiverar du den här inställningen:
-
-     a. Markera kryssrutan om du vill aktivera inställningen.
-
-     b. Klicka på **Lägg till personer**. I det utfällbara antalet mottagare som visas i utfällbara mottagare eller **ta bort mottagare:**
-
-     c. Ange avsändarens e-postadress. Du kan ange flera e-postadresser avgränsade med semikolon (;) eller en mottagare per rad.
-
-     d. Klicka på ![Ikonen Lägg till](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) för att lägga till mottagarna.
-
-        Upprepa de här stegen så många gånger det behövs.
-
-        Mottagarna som du har lagt till visas i avsnittet **Mottagarlista** på utfällbara. Om du vill ta bort en mottagare klickar du på ![ Knappen Ta bort ](../../media/scc-remove-icon.png) .
-
-     e. Klicka på **Spara** när du är klar.
-
-     Om du vill inaktivera den här inställningen avmarkerar du kryssrutan.
+     > [!IMPORTANT]
+     > Den här inställningen håller på att vara inaktuell från utgående skräppostpolicyer.
+     > 
+     > [Standardvarningsprincipen](../../compliance/alert-policies.md) **Användaren har begränsat från att skicka e-post** skickar redan e-postmeddelanden till medlemmar i gruppen **TenantAdmins** (**Global admins**) när användare blockeras på grund av att de överskrider gränserna i avsnittet **Mottagargränser.** **Vi rekommenderar starkt att du använder aviseringsprincipen i stället för den här inställningen i principen för utgående skräppost för att meddela administratörer och andra användare**. Instruktioner finns i [Verifiera varningsinställningarna för begränsade användare](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. (Valfritt) Expandera avsnittet **Mottagargränser** om du vill konfigurera begränsningar och åtgärder för misstänkta utgående e-postmeddelanden:
 
@@ -189,11 +173,11 @@ Genom att skapa en anpassad utgående skräppostprincip i Security & Compliance 
 
    > [!NOTE]
    > Dessa inställningar gäller endast för molnbaserade postlådor.
-   
+
    - **Automatisk vidarebefordran**
   
       Välj ett av alternativen för att styra hur automatisk vidarebefordring hanteras.
-    
+
       - **Automatisk:** Standardinställning som gör att systemet kan styra automatisk vidarebefordran med automatisk vidarebefordran inaktiverad som standard.
       - **På**: Extern vidarebefordran aktiveras inom principen utan begränsning.
       - **Av**: Extern vidarebefordran är inaktiverad och kommer att blockeras
