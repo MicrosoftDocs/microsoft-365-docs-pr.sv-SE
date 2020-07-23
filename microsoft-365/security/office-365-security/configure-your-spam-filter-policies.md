@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726831"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204869"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -352,12 +352,12 @@ När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan
 
    - **Skicka skräppostaviseringar till slutanvändare varje (dagar)**: Välj hur ofta aviseringar ska skickas. Standardvärdet är 3 dagar. Du kan ange 1 till 15 dagar.
 
-     Det finns tre cykler för skräppostaviseringar för användare inom en 24-timmarsperiod som startar vid följande tidpunkter: 01:00 UTC, 08:00 UTC och 16:00 UTC. 
+     Det finns tre cykler för skräppostaviseringar för användare inom en 24-timmarsperiod som startar vid följande tidpunkter: 01:00 UTC, 08:00 UTC och 16:00 UTC.
 
      > [!NOTE]
      > Om vi missade en avisering under en tidigare cykel skickas aviseringen under nästföljande cykeln. Det här kan få det att verka som om flera aviseringar skickas ut samma dag.
 
-   - **Aviseringsspråk**: Klicka på listrutan och välj ett tillgängligt språk i listan. Standardvärdet är **Standard**, vilket innebär att karantänaviseringar för slutanvändare använder standardspråket för EOP-organisationen.
+   - **Aviseringsspråk**: Klicka på listrutan och välj ett tillgängligt språk i listan. Standardvärdet är **Standard** vilket innebär att den molnbaserade organisationens standardspråk används.
 
    Klicka på **Spara** när du är klar.
 
@@ -643,7 +643,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="allowblock-lists"></a>Listor över blockerade eller tillåtna
 
-Det kommer att finnas tillfällen när våra filter missar meddelandet eller då det tar tid för våra system att komma ifatt det. I de här fallen har principen för skräppostskydd en lista över tillåtna och en lista över blockerade tillgängliga för att åsidosätta den aktuella bedömningen. Det här alternativet ska bara användas sparsamt eftersom listor kan bli svåra att hantera, och bara tillfälligt eftersom vår filtreringsstack borde göra vad den ska göra.
+Det kommer att finnas tillfällen när våra filter missar meddelandet eller då det tar tid för våra system att komma ifatt det. I de här fallen har principen för skräppostskydd en lista över Tillåtna och en lista över Blockerade tillgängliga för att åsidosätta den aktuella bedömningen. Det här alternativet ska bara användas sparsamt eftersom listor kan bli svåra att hantera, och bara tillfälligt eftersom vår filtreringsstack borde göra vad den ska göra.
 
 > [!TIP]
 > Det kan finnas situationer där din organisation kanske inte håller med om den bedömning tjänsten tillhandahåller. I det här fallet kanske du vill behålla listan över tillåtna eller blockerade permanent. Men om du kommer att lägga till en domän i listan över tillåtna för en längre tid bör du be avsändaren att kontrollera att avsändarens domän har autentiserats och ange den som DMARC-avvisa (reject) om den inte är det.
