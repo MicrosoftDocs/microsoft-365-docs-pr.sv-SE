@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du använder cmdleten AllowSelfServicePurchase PowerShell för att aktivera eller inaktivera självbetjäningsköp.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec5ebe814066916de5cafc176cdcd82bfd416a57
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403696"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391548"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Använd AllowSelfServicePurchase för MSCommerce PowerShell-modulen
 
@@ -43,7 +43,7 @@ Om du vill använda **MSCommerce** PowerShell-modulen behöver du:
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Installera MSCommerce PowerShell-modulen
 
-Du installerar **MSCommerce** PowerShell-modulen på din Windows 10-enhet en gång och importerar den sedan till varje PowerShell-session som du startar. Hämta **MSCommerce** PowerShell-modulen från [PowerShell-galleriet](https://aka.ms/allowselfservicepurchase-powershell-gallery).
+Du installerar **MSCommerce** PowerShell-modulen på din Windows 10-enhet en gång och sedan importera den till varje PowerShell-session du startar. Hämta **MSCommerce** PowerShell-modulen från [PowerShell-galleriet](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 Så här installerar du **MSCommerce** PowerShell-modulen med **PowerShellGet**kör du följande kommando:
 
@@ -69,7 +69,7 @@ Connect-MSCommerce
 
 Det här kommandot ansluter den aktuella PowerShell-sessionen till en Azure Active Directory-klientorganisation. Kommandot frågar dig för ett användarnamn och lösenord för den klient som du vill ansluta till. Om multifaktorautentisering är aktiverat för dina autentiseringsuppgifter använder du det interaktiva alternativet för att logga in.
 
-## <a name="view-details-for-allowselfservicepurchase"></a>Visa information för AllowSelfServicePurchase
+## <a name="view-details-for-allowselfservicepurchase"></a>Visa information för TillåtSelfServicePurchase
 
 Om du vill visa en beskrivning av parametervärdet **AllowSelfServicePurchase** och standardstatus, baserat på din organisation, kör du följande kommando:
 
@@ -103,7 +103,7 @@ Om du vill hämta principinställningen för en viss produkt kör du följande k
 Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N
 ```
 
-Om du vill aktivera principinställningen för en viss produkt kör du följande kommando:
+Så här aktiverar du principinställningen för en viss produkt genom att köra följande kommando:
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
@@ -132,8 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 Följande felmeddelande visas:
 
-    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
-    connection was closed: An unexpected error occurred on a send.
+> HandleError : Det gick inte att hämta principen med PolicyId 'AllowSelfServicePurchase', ErrorMessage - Den underliggande anslutningen stängdes: Ett oväntat fel uppstod vid en skicka.
 
 Detta kan bero på en äldre version av Transport Layer Security (TLS). För att ansluta den här tjänsten måste du använda TLS 1.2 eller mer
 

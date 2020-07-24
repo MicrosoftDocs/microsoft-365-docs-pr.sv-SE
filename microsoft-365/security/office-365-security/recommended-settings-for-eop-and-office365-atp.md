@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 12/12/2019
+ms.date: ''
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,18 +16,20 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Vilka är bästa metoderna för säkerhetsinställningar för Exchange Online Protection (EOP) och Advanced Threat Protection (ATP). Vilka är de nuvarande rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vilka extrafunktioner får du om du också använder Advanced Threat Protection (ATP)?
-ms.openlocfilehash: e6ed4e204ef3cdf66fb065af4621f176bb33cad9
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
+ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146248"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45389851"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet
 
 **Exchange Online Protection (EOP)** är kärnan i säkerheten för Microsoft 365-prenumerationer och hjälper till att förhindra att skadliga e-postmeddelanden når dina anställdas inkorgar. Men med nya, mer sofistikerade attacker som växer fram varje dag, krävs ofta bättre skydd. **Office 365 Avancerat skydd mot hot (ATP)** ATP Plan 1 eller ATP Plan 2 innehåller ytterligare funktioner som ger administratörer fler lager av säkerhet, kontroll och undersökning.
 
 Även om vi ger säkerhetsadministratörer möjlighet att anpassa sina säkerhetsinställningar finns det två säkerhetsnivåer i EOP och Office 365 ATP som vi rekommenderar: **Standard** och **Strikt**. Varje kunds miljö och behov är olika, men vi tror att dessa nivåer av e-postfiltrering konfigurationer kommer att bidra till att förhindra oönskad e-post från att nå dina anställdas inkorg i de flesta situationer.
+
+Om du vill använda standardinställningarna eller Strikta inställningar automatiskt för användare finns [i Förinställda säkerhetsprinciper i EOP och Office 365 ATP](preset-security-policies.md).
 
 > [!IMPORTANT]
 > Skräppostregeln måste aktiveras på en postlåda för att filtrering ska fungera korrekt. Det är aktiverat som standard, men du bör kontrollera det om filtrrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -45,7 +47,7 @@ Anti-spam, anti-malware och anti-phishing är funktioner i EOP som kan konfigure
 
 Om du vill skapa och konfigurera principer mot skräppost finns i [Konfigurera principer mot skräppost i Office 365](configure-your-spam-filter-policies.md).
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Åtgärder** för identifiering av skräppost <br/><br/> _SpamAction (Skräppost)_|**Flytta meddelande till mappen Skräppost** <br/><br/> `MoveToJmf`|**Karantänmeddelande** <br/><br/> `Quarantine`||
 |**Åtgärder för** att upptäcka skräppost med högt förtroende <br/><br/> _HögtrohetSpamAction_|**Karantänmeddelande** <br/><br/> `Quarantine`|**Karantänmeddelande** <br/><br/> `Quarantine`||
@@ -70,7 +72,7 @@ Det finns flera andra asf-inställningar (Advanced Spam Filter) i anti-spam-poli
 
 Vi rekommenderar att du inaktiverar dessa **ASF-inställningar** för både **standard-** och **strikta** nivåer. Mer information om ASF-inställningar finns [i ASF-inställningar (Advanced Spam Filter) i Office 365](advanced-spam-filtering-asf-options.md).
 
-| Namn på säkerhetsfunktionen | Kommentar |
+|Namn på säkerhetsfunktionen|Kommentar|
 |---|---|
 |**Bildlänkar till fjärrplatser** _(IncreaseScoreWithImageLinks)_||
 |**Numerisk IP-adress i URL** _(IncreaseScoreWithNumericIps_)||
@@ -95,7 +97,7 @@ Om du vill skapa och konfigurera principer för skräppost för utgående skräp
 
 Mer information om standardgränserna för sändning i tjänsten finns i [Skicka gränser](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Maximalt antal mottagare per användare: Gräns för extern timme** <br/><br/> _MottagareLimitExternalPerHour_|500|400||
 |**Maximalt antal mottagare per användare: Gräns för intern timme** <br/><br/> _MottagareLimitInternalPerHour_|1000|800||
@@ -107,7 +109,7 @@ Mer information om standardgränserna för sändning i tjänsten finns i [Skicka
 
 Om du vill skapa och konfigurera principer mot skadlig kod finns [i Konfigurera principer mot skadlig kod i Office 365](configure-anti-malware-policies.md).
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Vill du meddela mottagarna om deras meddelanden sätts i karantän?** <br/><br/> _Åtgärder_|Nej <br/><br/> _Ta bortMessage_|Nej <br/><br/> _Ta bortMessage_|Om skadlig kod upptäcks i en bifogad fil i ett e-postmeddelande sätts meddelandet i karantän och kan endast släppas av en administratör.|
 |**Filter för vanliga typer av bifogade filer** <br/><br/> _EnableFileFilter_|På <br/><br/> `$true`|På <br/><br/> `$true`|Den här inställningen sätter meddelanden i karantän som innehåller körbara bilagor baserat på filtyp, oavsett innehållet i bifogade filer.|
@@ -120,7 +122,7 @@ Om du vill skapa och konfigurera principer mot skadlig kod finns [i Konfigurera 
 
 Mer information om dessa inställningar finns i [Spoof-inställningar](set-up-anti-phishing-policies.md#spoof-settings). Hur du konfigurerar dessa inställningar finns i [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Aktivera förfalskningsskydd** <br/><br/> _AktiveraAntispoofEnforcement_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md).|
@@ -146,7 +148,7 @@ EOP-kunder får grundläggande nätfiske som tidigare beskrivits, men Office 365
 
 Mer information om dessa inställningar finns [i Inställningar för personifiering i ATP:s principer för phishing.](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies) Hur du konfigurerar de här inställningarna finns i [Konfigurera ATP-principer för nätfiske](configure-atp-anti-phishing-policies.md).
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |Skyddade användare: **Lägg till användare för att skydda** <br/><br/> _AktiveraMålsbegäraSkydd_ <br/><br/> _TargetedAnvändareTillSkydd_|På <br/><br/> `$true` <br/><br/> \<list of users\>|På <br/><br/> `$true` <br/><br/> \<list of users\>|Beror på din organisation, men vi rekommenderar att du lägger till användare i viktiga roller. Internt kan dessa vara din VD, CFO och andra ledande befattningshavare. Externt kan dessa omfatta rådsmedlemmar eller din styrelse.|
 |Skyddade domäner: **Inkludera automatiskt de domäner jag äger** <br/><br/> _AktiveraOrganisationDomainsSkydd_|På <br/><br/> `$true`|På <br/><br/> `$true`||
@@ -167,7 +169,7 @@ Mer information om dessa inställningar finns [i Inställningar för personifier
 
 Observera att det är samma inställningar som är tillgängliga i [principinställningarna mot skräppost i EOP](#eop-anti-spam-policy-settings).
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Aktivera förfalskningsskydd** <br/><br/> _AktiveraAntispoofEnforcement_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Aktivera oautentiserade avsändare** <br/><br/> _AktiveraUnauthenticatedSender_|På <br/><br/> `$true`|På <br/><br/> `$true`|Lägger till ett frågetecken (?) i avsändarens foto i Outlook för oidentifierade förfalskade avsändare. Mer information finns [i Spoof-inställningar i anti-phishing-principer](set-up-anti-phishing-policies.md).|
@@ -178,7 +180,7 @@ Observera att det är samma inställningar som är tillgängliga i [principinst�
 
 Mer information om den här inställningen finns [i Avancerade tröskelvärden för nätfiske i ATP:s principer för nätfiske](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). Den här inställningen finns i [Konfigurera ATP-principer för nätfiske](configure-atp-anti-phishing-policies.md).
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Avancerade tröskelvärden för nätfiske** <br/><br/> _PhishThresholdLevel_|**2 - Aggressiv** <br/><br/> `2`|**3 - Mer aggressiv** <br/><br/> `3`||
 
@@ -190,7 +192,7 @@ Information om hur du konfigurerar de här inställningarna finns i [Konfigurera
 
 **I**PowerShell använder du [cmdleten Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) för dessa inställningar.
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Använda säkra länkar i: Office 365-program** <br/><br/> _EnableSafeLinksForO365Clients_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använd ATP-säkra länkar i Office 365 Apps, Office för iOS och Android.|
 |**Spåra inte när användare klickar på säkra länkar** <br/><br/> _TrackClicks (Spår)_|Av <br/><br/> `$true`|Av <br/><br/> `$true`||
@@ -199,9 +201,9 @@ Information om hur du konfigurerar de här inställningarna finns i [Konfigurera
 
 #### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Principinställningar för säkra länkar i anpassade principer för specifika användare
 
-**I**PowerShell använder du [cmdletsen New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) och [Set-SafeLinksPolicy]( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicycmdlet cmdlets för dessa inställningar.
+**I**PowerShell använder du cmdletsen [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) och [Set-SafeLinksPolicy]( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy ] för dessa inställningar.
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Välj åtgärden för okända potentiellt skadliga url:er i meddelanden** <br/><br/> _ÄrEnabled_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Välj åtgärden för okända eller potentiellt skadliga webbadresser i Microsoft Teams** <br/><br/> _EnableSafeLinksForTeams_|På <br/><br/> `$true`|På <br/><br/> `$true`||
@@ -220,7 +222,7 @@ Information om hur du konfigurerar de här inställningarna finns i Konfigurera 
 
 **I**PowerShell använder du [cmdleten Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) för dessa inställningar.
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Aktivera ATP för SharePoint, OneDrive och Microsoft Teams** <br/><br/> _AktiveraATPForSPOTeamsODB_|På <br/><br/> `$true`|På <br/><br/> `$true`||
 |**Aktivera säkra dokument för Office-klienter**<bt/><br/> _EnableSafeDocs_|På <br/><br/> `$true`|På <br/><br/> `$true`||Den här inställningen är endast tillgänglig med Microsoft 365 E5- eller Microsoft 365 E5-säkerhetslicenser. Mer information finns [i Säkra dokument i Office 365 Advanced Threat Protection](safe-docs.md).|
@@ -231,7 +233,7 @@ Information om hur du konfigurerar de här inställningarna finns i Konfigurera 
 
 **I**PowerShell använder du cmdletsen [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) och [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) för dessa inställningar.
 
-| Namn på säkerhetsfunktionen | Standard | Strikt | Kommentar |
+|Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
 |**Säkra bilagor okänd malware svar** <br/><br/> _Åtgärder_|Blockera <br/><br/> `Block`|Blockera <br/><br/> `Block`||
 |**Omdirigera bifogad fil vid identifiering** : **Aktivera omdirigering** <br/><br/> _Omdirigera_ <br/><br/> _Omdirigeraadress_|På och ange en e-postadress. <br/><br/> `$true` <br/><br/> en e-postadress|På och ange en e-postadress. <br/><br/> `$true` <br/><br/> en e-postadress|Omdirigera meddelanden till en säkerhetsadministratör för granskning.|

@@ -29,12 +29,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Lär dig att lägga till och minska fillagringen i din Microsoft 365-prenumeration. Med extra fillagring kan du lagra mer innehåll i SharePoint Online och OneDrive.
-ms.openlocfilehash: f3720580c44b68f5b34d5e11f5af1a919ec07dea
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: d0580113449ae91e7be02a13993562d6b91a7d19
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899131"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387427"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Lägga till lagringsutrymme för din prenumeration
 
@@ -48,7 +48,7 @@ ms.locfileid: "44899131"
 Om du börjar få slut på lagringsutrymme för webbplatssamlingar i SharePoint Online kan du lägga till lagringsutrymme för din prenumeration om prenumerationen är berättigad till det. Om du inte ser extra fillagring i **Office 365** i listan över tillgängliga tillägg betyder det att ditt abonnemang inte är kvalificerat. Mer information finns i [Är min plan berättigad?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Om du har köpt prenumerationen via Volymlicensiering eller en CSP kan du inte köpa Extra fillagring för **Office 365** för din organisation. Kontakta din representant eller partner för hjälp.
+> Om du har köpt din prenumeration via Volymlicensiering eller en CSP kan du inte köpa **Office 365 Extra fillagring** för din organisation direkt från Microsoft. Kontakta din representant eller partner för hjälp.
 
 ## <a name="view-available-storage"></a>Visa tillgängligt lagringsutrymme
 
