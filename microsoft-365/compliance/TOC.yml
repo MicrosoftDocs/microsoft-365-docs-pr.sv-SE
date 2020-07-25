@@ -315,14 +315,10 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Skapa kvarhållningsetiketter med PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Använda händelsebaserad kvarhållning
-          items:
-            - name: Starta kvarhållning när en händelse inträffar
-              href: event-driven-retention.md
-            - name: Automatisera händelsebaserad kvarhållning
-              href: automate-event-driven-retention.md
-            - name: Hantera livscykeln för SharePoint-dokument
-              href: auto-apply-retention-labels-scenario.md
+        - name: Starta kvarhållning när en händelse inträffar
+          href: event-driven-retention.md
+        - name: Hantera livscykeln för SharePoint-dokument
+          href: auto-apply-retention-labels-scenario.md
     - name: Kassera data
       href: disposition.md
     - name: Hantera inaktiva postlådor
