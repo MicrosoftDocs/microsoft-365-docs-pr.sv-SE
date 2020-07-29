@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: När du ställer in principerna för betrodda bifogade filer väljer du Dynamisk leverans för att undvika meddelandefördröjningar och gör det möjligt för personer att förhandsgranska bifogade filer som genomsöks.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819358"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430357"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Dynamisk leverans och förhandsgranskning med ATP-säkra bilagor
 
@@ -68,20 +68,20 @@ Anta att en organisation använder dynamisk leverans för sin [ATP-princip för 
 
 ## <a name="additional-considerations"></a>Ytterligare överväganden
 
-Det finns vissa scenarier där dynamisk leverans inte stöds. Dessa inkluderar följande:
+Det finns vissa scenarier där säkra bilagor (inklusive dynamisk leverans inte stöds). De omfattar:
 
-- E-postmeddelanden som finns i gemensamma mappar
+- E-postmeddelanden som finns i gemensamma mappar.
 
-- E-postmeddelanden som dirigeras ut ur och sedan tillbaka till användarens postlåda med hjälp av anpassade regler
+- E-postmeddelanden som dirigeras ut ur och sedan tillbaka till användarens postlåda med hjälp av anpassade regler.
 
-- E-postmeddelanden som flyttas (automatiskt eller manuellt) från den värdbaserade postlådan och till andra platser, inklusive arkivmappar
+- E-postmeddelanden som flyttas (automatiskt eller manuellt) från den värdbaserade postlådan och till andra platser, inklusive arkivmappar.
 
-- E-postmeddelanden som tas bort
+- E-postmeddelanden som tas bort.
 
-- En användares sökmapp för postlådan som är i feltillstånd
+- En användares sökmapp för postlådan som är i feltillstånd.
 
-- Miljöer där en Exchange Online-administratör har aktiverat Exclaimer. Lös detta genom att se [Meddelanden med bifogade filer levereras inte när ATP Dynamic Delivery och Exclaimer används](https://support.microsoft.com/help/4014438)
+- Miljöer där en Exchange Online-administratör har aktiverat Exclaimer. LÃ¶s detta genom att se [Meddelanden med bifogade filer inte levereras nÃ¤r ATP Dynamic Delivery and Exclaimer används](https://support.microsoft.com/help/4014438).
 
-- Meddelanden krypterade med [Säkra/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
+- Meddelanden krypterade med [Säkra/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)).
 
-- I de fall dynamisk leverans inte stöds kommer ATP-säkra bilagor inte att skanna e-postmeddelanden. Att leverera e-postmeddelanden med bifogade filer som innehåller webbadresser kommer dock att kontrolleras, beroende på hur [principerna för ATP Safe Links](set-up-atp-safe-links-policies.md) är konfigurerade. I dessa fall kontrolleras webbadresser i e-postmeddelanden och Office-filer.
+- I de fall dynamisk leverans inte stöds kommer säkra bilagor inte att skanna e-postmeddelanden. Att leverera e-postmeddelanden med bifogade filer som innehåller webbadresser kommer dock att kontrolleras, beroende på hur [principerna för ATP Safe Links](set-up-atp-safe-links-policies.md) är konfigurerade. I dessa fall kontrolleras webbadresser i e-postmeddelanden och Office-filer.

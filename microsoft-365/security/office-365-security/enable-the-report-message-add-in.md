@@ -15,22 +15,22 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du aktiverar tillägget Report Message för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
-ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: Lär dig hur du aktiverar tillägget Rapportmeddelande för Outlook och Outlook på webben, för enskilda användare eller hela organisationen.
+ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588234"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430513"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivera tillägget för att rapportera meddelande
 
 > [!NOTE]
 > Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
 
-Tillägget Report Message för Outlook och Outlook på webben (tidigare känt som Outlook Web App) gör det möjligt för människor att enkelt rapportera falska positiva (bra e-post markerad som dålig) eller falska negativ (dålig e-post tillåten) till Microsoft och dess dotterbolag för analys. Microsoft använder dessa inlämningar för att förbättra effektiviteten i e-postskyddstekniker.
+Tillägget Report Message för Outlook och Outlook på webben (tidigare känt som Outlook Web App) gör det möjligt för människor att enkelt rapportera falska positiva (bra e-post markerad som dålig) eller falska negativ (dålig e-post tillåts) till Microsoft och dess dotterbolag för analys. Microsoft använder dessa inlämningar för att förbättra effektiviteten i e-postskyddstekniker.
 
-Anta till exempel att andra rapporterar många meddelanden som nätfiske. Den här informationen visas i [säkerhetsinstrumentpanelen](security-dashboard.md) och andra rapporter. Organisationens säkerhetsteam kan använda den här informationen som en indikation på att anti-phishing-principer kan behöva uppdateras. Om personer rapporterar många meddelanden som har flaggats som skräppost som Inte skräppost med tillägget Rapportera meddelande kan organisationens säkerhetsteam behöva justera [principer mot skräppost.](configure-your-spam-filter-policies.md)
+Anta till exempel att personer rapporterar många meddelanden som nätfiske. Den här informationen visas i [säkerhetsinstrumentpanelen](security-dashboard.md) och andra rapporter. Organisationens säkerhetsteam kan använda den här informationen som en indikation på att anti-phishing-principer kan behöva uppdateras. Om personer rapporterar många meddelanden som har flaggats som skräppost som Inte skräppost med tillägget Rapportera meddelande kan organisationens säkerhetsteam behöva justera [policyerna mot skräppost.](configure-your-spam-filter-policies.md)
 
 Om din organisation använder [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) eller [Plan 2](office-365-ti.md)ger tillägget Rapportmeddelande dessutom organisationens säkerhetsteam användbar information som de kan använda för att granska och uppdatera säkerhetsprinciper.
 
@@ -42,17 +42,14 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Tillägget Report Message fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:
+- Tillägget Rapportmeddelande fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:
 
   - Outlook på webben
   - Outlook 2013 SP1 eller senare
   - Outlook 2016 för Mac
-  - Outlook ingår i Microsoft 365-appar för företag
+  - Outlook ingår i Microsoft 365-appar för Företag
 
-- Tillägget Rapportmeddelande är inte tillgängligt för:
-
-  - Postlådor i lokala Exchange-organisationer
-  - GCC-, GCC HIGH- eller DoD-prenumerationer
+- Tillägget Rapportmeddelande är inte tillgängligt för postlådor i lokala Exchange-organisationer.
 
 - Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i [Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Exchange Online](user-submission.md).
 
@@ -64,7 +61,7 @@ Om du är global administratör eller Exchange [Online-administratör](#get-and-
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Hämta tillägget Rapportmeddelande själv
 
-1. Gå till Microsoft AppSource och <https://appsource.microsoft.com/marketplace/apps> sök efter tillägget Rapportmeddelande. Gå direkt till tillägget Rapportmeddelande och gå till <https://appsource.microsoft.com/product/office/wa104381180> .
+1. Gå till Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> och sök efter tillägget Rapportmeddelande. Gå direkt till tillägget Rapportmeddelande och gå till <https://appsource.microsoft.com/product/office/wa104381180> .
 
 2. Klicka på **Hämta den nu.**
 
@@ -101,7 +98,7 @@ Mer information om hur du använder tillägget finns i [Använda tillägget Rapp
 
    ![Distribuera en ny tilläggssida](../../media/NewAddInScreen2.png)
 
-4. På sidan **Välj tillägg** som visas klickar du i rutan **Sök,** anger **Rapportmeddelande**och klickar sedan på **Sök** ![ efter ikon ](../../media/search-icon.png) . Leta reda på **Rapportmeddelande i** resultatlistan och klicka sedan på **Lägg till**.
+4. På sidan **Välj tillägg** som visas klickar du i rutan **Sök,** anger **Rapportmeddelande**och klickar sedan på **Sök** ![ ](../../media/search-icon.png) eftersökikon . Leta reda på **Rapportmeddelande i** resultatlistan och klicka sedan på **Lägg till**.
 
    ![Välj sökresultat för tillägg](../../media/NewAddInScreen3.png)
 
@@ -135,7 +132,7 @@ Mer information om hur du använder tillägget finns i [Använda tillägget Rapp
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Läs om hur du använder tillägget Rapportmeddelande
 
-Personer som har tillägget tilldelats för dem ser följande ikoner:
+Personer som har tillägget tilldelats dem ser följande ikoner:
 
 - I Outlook ser ikonen ut så här:
 
@@ -161,7 +158,7 @@ När du meddelar användarna om tillägget Rapportmeddelande ska du inkludera en
 
 ## <a name="view-and-review-reported-messages"></a>Visa och granska rapporterade meddelanden
 
-Om du vill granska meddelanden som användarna rapporterar till Microsoft har du följande alternativ:
+Om du vill granska meddelanden som användare rapporterar till Microsoft har du följande alternativ:
 
 - Använd portalen För administratörsbidrag. Mer information finns i [Visa användarinlämningar till Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 

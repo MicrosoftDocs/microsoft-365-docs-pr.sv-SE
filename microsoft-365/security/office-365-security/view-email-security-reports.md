@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Läs om hur du hittar och använder säkerhetsrapporter för e-post för din organisation. Säkerhetsrapporter för e-post finns i Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102926"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434261"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
 
@@ -34,7 +34,7 @@ En mängd olika rapporter finns i [Security & Compliance Center](https://protect
 ## <a name="compromised-users-report"></a>Rapport över komprometterade användare
 
 > [!NOTE]
-> Den här rapporten är tillgänglig i Microsoft 365-organisationer med Exchange Online-postlådor. Den är inte tillgänglig i fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
+> Den här rapporten är tillgänglig i Microsoft 365-organisationer med Exchange Online-postlådor. Den är inte tillgänglig i fristående EOP-organisationer (Exchange Online Protection).
 
 Rapporten **Komprometterade användare** visar antalet användarkonton som har markerats som **misstänkta** eller **begränsade** under de senaste 7 dagarna. Konton i någon av dessa stater är problematiska eller till och med komprometterade. Med frekvent användning kan du använda rapporten för att upptäcka toppar och till och med trender i misstänkta eller begränsade konton. Mer information om komprometterade användare finns i [Svara på ett komprometterat e-postkonto](responding-to-a-compromised-email-account.md).
 
@@ -139,7 +139,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 **Statusrapporten för Mailflow** innehåller information om meddelanden om skadlig kod, skräppost, nätfiske och kantblockerade meddelanden. Mer information finns i [Statusrapport för Mailflow](view-mail-flow-reports.md#mailflow-status-report).
 
-## <a name="malware-detection-in-email-report"></a>Identifiering av skadlig kod i e-postrapport
+## <a name="malware-detections-in-email-report"></a>Identifiering av skadlig kod i e-postrapport
 
 Identifieringen **av skadlig kod i e-postrapporten** visar information om identifiering av skadlig kod i inkommande och utgående e-postmeddelanden (skadlig kod som upptäckts av Exchange Online Protection eller EOP). Mer information om skydd mot skadlig programvara i EOP finns [i Skydd mot skadlig kod i EOP](anti-malware-protection.md).
 
@@ -162,7 +162,7 @@ Om du klickar på **Visa informationstabell**kan du se följande information:
 - **Datum**
 - **Avsändarens adress**
 - **Mottagaradress**
-- **Meddelande-ID**
+- **Meddelande-ID:** Tillgängligt i fältet **Meddelande-ID-huvud** i meddelandehuvudet och ska vara unikt. Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (notera vinkelparenteserna).
 - **Ämne**
 - **Filnamn**
 - **Namn på skadlig kod**
@@ -267,11 +267,14 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
-**Statusrapporten för hotskydd** är tillgänglig i både EOP och Office 365 ATP. Rapporterna innehåller dock olika data. EOP-kunder kan till exempel visa information om skadlig kod som identifierats i e-post, men inte information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md). Mer information om Office 365 ATP-rapporter finns i [Visa rapporter för avancerat skydd mot office 365](view-reports-for-atp.md).
+**Statusrapporten för hotskydd** är tillgänglig i både EOP och Office 365 ATP. Rapporterna innehåller dock olika data. EOP-kunder kan till exempel visa information om skadlig kod som identifierats i e-post, men inte information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-Det här är en smart rapport som visar skadlig e-post som har identifierats och blockerats, och den gör det möjligt för säkerhetsadministratörer att identifiera trender eller avgöra om organisationsprinciper behöver justeras.
+Rapporten innehåller ett aggregerat antal unika e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (URL:er) som blockerades av anti-malware-motorn, [nolltimmars automatisk rensning (ZAP)](zero-hour-auto-purge.md)och ATP-funktioner som [ATP Safe Links,](atp-safe-links.md) [ATP Safe Attachments](atp-safe-attachments.md)och [ATP anti-phishing](set-up-anti-phishing-policies.md). Du kan använda den här informationen för att identifiera trender eller avgöra om organisationsprinciper behöver justeras.
 
-Om du vill visa rapporten öppnar du [Security & Compliance Center](https://protection.office.com), går till **Instrumentpanelen för rapporter** och väljer Status för skydd mot \> **Dashboard** **hot**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
+Om du vill visa rapporten öppnar du [Security & Compliance Center](https://protection.office.com), går till **Instrumentpanelen för rapporter** och väljer Status för skydd mot \> **Dashboard** **hot**. Om du vill gå direkt till rapporten öppnar du någon av följande webbadresser:
+
+- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
+- EOP:<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Statuswidget för hotskydd i instrumentpanelen Rapporter](../../media/threat-protection-status-report-widget.png)
 
@@ -411,61 +414,7 @@ Om du klickar på **Filter** i rapportvyn eller detaljtabellvyn kan du ange ett 
 
 ## <a name="url-threat-protection-report"></a>Rapport om skydd av URL-hot
 
-> [!NOTE]
-> Den här rapporten är endast tillgänglig i Office 365 Advanced Threat Protection (ATP). Till exempel en Microsoft 365 E5-prenumeration eller ett ATP-plan 1- eller ATP-plan 2-tillägg.
-
-**Rapporten för skydd av URL-hot** innehåller sammanfattnings- och trendvyer för upptäckta hot och åtgärder som vidtas på URL-klick som en del av [ATP Safe Links](atp-safe-links.md). Den här rapporten kommer inte att ha klickdata från användare där principen Säkra länkar tillämpas har alternativet **Spåra inte användarens klick** markerat.
-
-Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://protection.office.com)går till **Instrumentpanelen för rapporter** och väljer \> **Dashboard** **URL-skydd**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
-
-### <a name="report-view-for-the-url-threat-protection-report"></a>Rapportvy för rapporten om skydd mot URL-hot
-
-**Url-hotskyddsrapporten** har två aggregerade vyer som uppdateras en gång var fjärde timme som visar data för de senaste 90 dagarna:
-
-- **URL klicka skydd åtgärd**: Visar antalet URL klick av användare i organisationen och resultatet av klick:
-
-  - **Blockerade**
-  - **Blockerad och klickad igenom**
-  - **Klickade igenom under genomsökningen**
-
-  Ett klick anger att användaren har klickat sig igenom blocksidan till den skadliga webbplatsen (administratörer kan inaktivera klickning i principer för säkra länkar).
-
-  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
-
-  - **Startdatum** och **slutdatum**
-  - De tillgängliga klickskyddsåtgärderna, plus värdet **Tillåten** att se information för alla URL-klick (inte bara blockerade klick).
-
-  ![URL-klickskyddsåtgärdsvyn i rapporten för skydd mot URL-hot](../../media/url-threat-protection-report-url-click-protection-action-view.png)
-
-- **URL-klick för program**: Visar antalet URL-klick för program som stöder säkra länkar i Office 365 ATP:
-
-  - **E-postklient**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **Annat**
-
-  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
-
-  - **Startdatum** och **slutdatum**
-  - Tillgängliga program.
-
-### <a name="details-table-view-for-the-threat-protection-report"></a>Information om tabellvy för rapporten om hotskydd
-
-Om du klickar på **Visa informationstabell**ger rapporten en vy i nära realtid av alla klick som sker inom organisationen under de senaste sju dagarna med följande information:
-
-- **Klicka på tid**
-- **Användare**
-- **Url**
-- **Åtgärder**
-- **Program**
-
-Om du klickar på **Filter** i detaljtabellvyn kan du filtrera efter samma villkor som i rapportvyn och även efter **domäner** eller **mottagare** avgränsade med kommatecken.
-
-Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+**Rapporten för skydd av URL-hot** finns i Office 365 Advanced Threat Protection (ATP). Mer information finns i [rapporten skydd av URL-hot](view-reports-for-atp.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Rapport över användarrapporterade meddelanden
 
@@ -511,3 +460,7 @@ Om du inte ser data i dina rapporter dubbelkollar du att dina principer är korr
 [Skydd mot skräppost och skadlig kod i EOP](anti-spam-and-anti-malware-protection.md)
 
 [Smarta rapporter och insikter i Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+
+[Visa e-postflödesrapporter i Säkerhets- & Compliance Center](view-mail-flow-reports.md)
+
+[Visa rapporter för avancerat hotskydd för Office 365](view-reports-for-atp.md)

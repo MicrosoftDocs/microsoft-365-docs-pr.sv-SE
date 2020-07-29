@@ -1,5 +1,5 @@
 ---
-title: Få tillgång till administratörsportalen
+title: Tillgång till administrationsportalen
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 ms.author: jaimeo
@@ -9,16 +9,16 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b6310849f27200adbbcbcb1584903011fbdf6145
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 17696b18b4109b568bb1d616813ba40e2a9dccdc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146277"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430477"
 ---
 # <a name="access-the-admin-portal"></a>Få tillgång till administratörsportalen
 
-Din gateway till Tjänsten Microsoft Managed Desktop är Microsoft [Azure-portalen](https://portal.azure.com). Mer information om hur du använder och anpassar din Azure-portalupplevelse i allmänhet finns i [Azure-portaldokumentationen](https://docs.microsoft.com/azure/azure-portal/). 
+Din gateway till Tjänsten Microsoft Managed Desktop är Microsoft [Azure-portalen](https://portal.azure.com). Mer information om hur du använder och anpassar din Azure-portalupplevelse i allmänhet finns i [Azure-portaldokumentationen](https://docs.microsoft.com/azure/azure-portal/). Finns i förhandsversion nu, kan du också hitta Microsoft Managed Desktop i [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Om du inte känner till funktionerna i den här portalen för enhetshantering, se [dokumentationen för Microsoft Slutpunktshanteraren](https://docs.microsoft.com/mem/).
 
 Ditt administrativa konto behöver särskilda behörigheter för att komma åt Microsoft Managed Desktop Admin-portalen. Du kan hantera administratörsåtkomst till dessa funktioner i organisationen med hjälp av Rollbaserad åtkomstkontroll (RBAC). Mer information om Azure Active Directory-roller finns [i Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 

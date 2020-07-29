@@ -1,17 +1,17 @@
 ---
 title: Få support för Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327898"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430441"
 ---
 # <a name="getting-help-for-end-users"></a>Få hjälp för slutanvändare
 
@@ -24,20 +24,20 @@ Det finns två sätt som användare i organisationen kan få hjälp med sina Mic
 
 Den metod som föredras för att ge stöd till användarna är **Get Help**, ett lättanvänt gränssnitt inbyggt i slutanvändarens enhet.  
 
-![Ikonen Skaffa appen Hjälp](../../media/get-help.png)
+![Ikonen Skaffa hjälpapp](../../media/get-help.png)
 
 Det här är ett program som är installerat på alla Microsoft Managed Desktop-enheter och som är fäst i aktivitetsfältet. 
 
 - Slutanvändare kan begära ett samtal tillbaka till ett medgett telefonnummer eller chatta online med en servicerepresentant.
-- Begäranden som faller utanför Supportomfattningen för Microsoft Managed Desktop omdirigeras till den lokala IT-supportavdelningen via telefonsamtal.
+- Begäranden som faller utanför Supportomfattningen för Microsoft Managed Desktop omdirigeras till den lokala IT-supporten via telefonsamtal.
 
 ### <a name="prerequisites"></a>Förutsättningar
 För att dina slutanvändare ska kunna få hjälp via appen kontrollerar du att dessa förutsättningar är uppfyllda:
 
 - Enheten måste vara registrerad hos Microsoft Managed Desktop med någon av metoderna i [Konfigurera Microsoft Managed Desktop-enheter,](../get-started/set-up-devices.md)till exempel [Registrera nya enheter själv](../get-started/register-devices-self.md).
 - Visningsspråket för enheten måste vara inställt på någon av dessa engelskspråkiga språk: en-us, en-gb, en-au, en-nz eller en-ca.
-- Appen Skaffa hjälp ska vara uppdaterad. Kontrollera om det finns appuppdateringar i Microsoft Store för att bekräfta detta.
-- Vissa [slutpunkter](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.
+- Appen Skaffa hjälp ska vara uppdaterad. Kontrollera om det finns några appuppdateringar i Microsoft Store för att bekräfta detta.
+- Vissa [slutpunkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.
 
 > [!NOTE]
 > Appen Hämta hjälp kan ta upp till en timme efter att en enhet har distribuerats för att fungera fullt ut.

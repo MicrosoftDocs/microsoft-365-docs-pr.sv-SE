@@ -1,5 +1,5 @@
 ---
-title: Ändra din betalningsfrekvens
+title: Ändra faktureringsfrekvens
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Läs om hur du ändrar hur ofta du faktureras för din företagsprenumeration.
-ms.openlocfilehash: 321bf660caf53a39a85ad45b20bd7ed2267c8748
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402660"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430008"
 ---
-# <a name="change-your-payment-frequency"></a>Ändra din betalningsfrekvens
+# <a name="change-your-billing-frequency"></a>Ändra faktureringsfrekvens
 
 ::: moniker range="o365-21vianet"
 
@@ -37,7 +37,7 @@ ms.locfileid: "44402660"
 
 ::: moniker-end
 
-När du köper en prenumeration väljer du månads- eller årsfakturering. Om du vill ändra hur ofta du fakturerar för en prenumeration följer du stegen nedan.
+När du köper en prenumeration väljer du månads- eller årsfakturering. Om du vill ändra hur ofta du faktureras för en prenumeration följer du följande steg.
 
 1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
 

@@ -1,5 +1,5 @@
 ---
-title: Visa e-postflödesrapporter i Säkerhets- & Compliance Center
+title: Visa e-postflödesrapporter i Säkerhets- och efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Läs om hur du hittar och använder säkerhetsrapporter för e-postflödet för din organisation. E-postflödesrapporter är tillgängliga i Security & Compliance Center.
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937257"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434185"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Visa e-postflödesrapporter i Säkerhets- & Compliance Center
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Visa e-postflödesrapporter i Säkerhets- och efterlevnadscenter
 
 Förutom de insikter om [e-postflöde](mail-flow-insights-v2.md) som är tillgängliga i Security & Compliance Center finns det också en mängd rapporter om e-postflöde som hjälper dig att övervaka din Microsoft 365-organisation. Om du har [de behörigheter som krävs](#what-permissions-are-needed-to-view-these-reports)kan du visa dessa rapporter i Security & Compliance Center genom att gå till <https://office.protection.com> **Reports** \> **Instrumentpanelen**för rapporter . Om du vill gå direkt till instrumentpanelen för rapporter öppnar du <https://office.protection.office.com/insightdashboard> .
 
@@ -310,7 +310,7 @@ Följande diagram är tillgängliga i rapportvyn:
 
   ![Riktningsvy i rapporten Skickat och mottaget e-post](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Öka detaljnivån efter** \> **Malware (anti-malware)**: Detta val tar dig till [malware upptäckt i e-rapport](view-email-security-reports.md#malware-detection-in-email-report).
+- **Öka detaljnivån efter** \> **Malware (anti-malware)**: Detta val tar dig till [Malware upptäckter i e-rapport](view-email-security-reports.md#malware-detections-in-email-report).
 
 - **Öka detaljnivån efter** \> **Spam upptäckter)**: Detta val tar dig till [spam Upptäckter rapporten](view-email-security-reports.md#spam-detections-report).
 

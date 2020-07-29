@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Uppdatera administratörens telefonnummer och e-postadress i administrationscentret. Du behöver den här informationen om du vill återställa ditt eget administratörslösenord.
-ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: ed7e8152ffdf05d94068e6bdb81697dee737ea01
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407926"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429960"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Uppdatera ditt telefonnummer och din e-postadress
 
@@ -41,13 +41,13 @@ Om du vill veta hur du ändrar företagets profilinformation, till exempel före
   
 ## <a name="to-update-your-name-phone-number-and-email-address"></a>Så här uppdaterar du namn, telefonnummer och e-postadress
 
-På sidan **Personlig information** kan du ändra namn, mobiltelefonnummer och alternativ e-postadress. Den alternativa e-postadressen används för viktiga meddelanden, till exempel återställa admin lösenord (inte din dator admin lösenord). 
+Använd sidan **Inställningar och sekretess** för att ändra namn, mobiltelefonnummer och alternativ e-postadress. Den alternativa e-postadressen används för viktiga meddelanden, till exempel återställa admin-lösenordet (inte datorns administratörslösenord). 
   
 1. Bläddra till administrationscentret för Microsoft 365.
 
-2. I sidhuvudet väljer du din profilikon \> **Min personliga** \> **information**.
+2. I sidhuvudet väljer du din profilikon \> **Mina** \> **kontoinställningar och Sekretess**.
 
-3. Välj Redigera i avsnittet **Kontaktuppgifter.** Uppdatera din mobil, telefon och alternativa e-postadress. Se till att du använder något annat än din Microsoft-e-postadress för din alternativa e-postadress.
+3. I avsnittet **Kontaktinställningar** väljer du **Hantera och utöka kontaktinställningar .** Uppdatera din mobiltelefon, telefon och alternativa e-postadress. Se till att du använder något annat än din Microsoft-e-postadress för din alternativa e-postadress.
 
     > [!IMPORTANT]
     > Den alternativa e-postadressen och mobiltelefonnumret behövs för att återställa administratörslösenordet (inte lösenordet för datorns administratör).

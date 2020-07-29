@@ -1,5 +1,5 @@
 ---
-title: Arbeta med appkontroll
+title: Arbeta med appens kontroll
 description: ''
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170742"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430453"
 ---
-# <a name="work-with-app-control"></a>Arbeta med appkontroll
+# <a name="work-with-app-control"></a>Arbeta med appens kontroll
 
 När appkontrollen har distribuerats i din miljö har både du och Microsoft Managed Desktop Operations kontinuerligt ansvar. Du kanske till exempel vill lägga till en ny app i miljön eller lägga till (eller ta bort) en betrodd undertecknare. För att förbättra säkerheten bör alla appar vara kodsignerade innan du släpper dem till slutanvändare. En apps utgivarinformation innehåller information om undertecknaren.
 
@@ -50,12 +50,12 @@ När du öppnar en undertecknarbegäran måste du ange viktig information om utg
 Åtgärder distribuerar progressivt principer till distributionsgrupper enligt det här schemat:
 
 
-|Distributionsgrupp  |Typ av princip  |Timing  |
+|Distributions grupp  |Typ av princip  |Timing  |
 |---------|---------|---------|
 |Test     |  Revision       |  Dag 0       |
 |Första     | Verkställas        | Dag 1        |
-|Snabb     | Verkställas        |  Dag 3       |
-|Bred     | Verkställas        |  Dag 7       |
+|Snabb     | Verkställas        |  Dag 2       |
+|Bred     | Verkställas        |  Dag 3       |
 
 
 Du kan pausa eller återställa distributionen när som helst under distributionen. Det gör du genom att öppna en annan tjänstbegäran med åtgärder.

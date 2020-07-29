@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204941"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429972"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Nyheter i Microsoft Hotskydd
 
@@ -33,6 +33,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="july-2020"></a>Juli 2020
 - [Funktionen FileProfile()](advanced-hunting-fileprofile-function.md) <br> Använd den här funktionen i dina [avancerade jaktfrågor](advanced-hunting-overview.md) för att berika resultaten med omfattande filinformation.
 - [Identitets- och apptabeller](advanced-hunting-schema-tables.md)<br> Få insyn i autentiseringshändelser, Active Directory-frågor och apprelaterad aktivitet med [tabellerna IdentityLogonEvents,](advanced-hunting-identitylogonevents-table.md) [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)och [AppFileEvents](advanced-hunting-appfileevents-table.md) i det avancerade jaktschemat.
+- [Gå på jakt](advanced-hunting-go-hunt.md)<br> Pivoterar snabbt från att undersöka en incident till att inspektera en viss händelse, en användare, en enhet eller andra entitetstyper med hjälp av frågebaserade [avancerade jaktfunktioner.](advanced-hunting-overview.md)
 
 ## <a name="june-2020"></a>Juni 2020
 - Twitter-flöde <br> Få den senaste säkerhetsforskningen, hotinformationen, produktnyheterna med mera – direkt i instrumentpanelen.

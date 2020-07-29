@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om hur SharePoint Online identifierar virus i filer som användare laddar upp och hindrar användare från att hämta eller synkronisera filerna.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
-ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
+ms.openlocfilehash: f6bfc23ca4120122ecfa44ad4d39795fed22af84
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45029614"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429926"
 ---
-# <a name="virus-detection-in-sharepoint-online"></a>Virusskydd i SharePoint Online
+# <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Virusidentifiering i SharePoint Online, OneDrive och Microsoft Teams
 
-Microsoft 365 kan skydda din miljö från skadlig kod genom att upptäcka virus i filer som användare laddar upp till SharePoint Online. Filer kan sökas efter virus när de har laddats upp. Om det visar sig att en fil är infekterad anges en egenskap så att användarna inte kan hämta eller synkronisera filen.
+Microsoft 365 kan skydda din miljö från skadlig kod genom att identifiera virus i filer som användare laddar upp till SharePoint Online, OneDrive och Microsoft Teams. Filer kan sökas efter virus när de har laddats upp. Om det visar sig att en fil är infekterad anges en egenskap så att användarna inte kan hämta eller synkronisera filen.
 
 > [!IMPORTANT]
 > Dessa antivirusfunktioner i SharePoint Online är ett sätt att innehålla virus. De är inte avsedda som en enda försvarspunkt mot skadlig kod för din miljö. Vi uppmuntrar alla kunder att bedöma och implementera skydd mot skadlig kod på olika lager och tillämpa bästa praxis för att skydda företagets infrastruktur. Mer information om strategier och metodtips finns i [Översikt över säkerhet](security-roadmap.md).
@@ -58,11 +58,18 @@ Så här går det till:
 2. Användaren får en varning om att ett virus har upptäckts. Användaren ges möjlighet att ladda ner filen och försöka rengöra den med sitt eget antivirusprogram.
 
 > [!NOTE]
+> 
 > Du kan använda parametern *DisallowInfectedFileDownload* på cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) i SharePoint Online PowerShell för att förhindra att användare hämtar en infekterad fil, även i varningsfönstret mot virus.
+> 
+> Tänk också på att så fort du aktiverar parametern *DisallowInfectedFileDownload,* är åtkomsten till de identifierade/blockerade filerna helt blockerad för användare och administratörer.
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Vad händer när OneDrive-synkroniseringsklienten försöker synkronisera en infekterad fil?
 
 Oavsett om användarna synkroniserar filer med den nya OneDrive-synkroniseringsklienten (OneDrive.exe) eller den tidigare Synkroniseringsklienten för OneDrive för företag (Groove.exe), om en fil innehåller ett virus, hämtas den inte synkroniseringsklienten. Synkroniseringsklienten visar ett meddelande om att filen inte kan synkroniseras.
+
+## <a name="extended-capabilities-with-office-365-atp"></a>Utökade funktioner med Office 365 ATP
+
+Kunder som har aktiverat Office 365 ATP för Sharepoint, OneDrive och Microsoft Teams [Aktivera ATP för SharePoint, OneDrive och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) kan använda Security & Compliance Center för att hantera filer i karantän för AV- och ATP-identifieringar i karantän. [Endast ATP: Använd Security & Compliance Center för att hantera filer i karantän](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
 ## <a name="more-information"></a>Mer information
 

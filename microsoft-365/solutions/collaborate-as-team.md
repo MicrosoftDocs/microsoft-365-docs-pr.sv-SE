@@ -2,7 +2,7 @@
 title: Samarbeta med gäster i ett team
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig mer om konfigurationsstegen för Microsoft 365 som krävs för att konfigurera ett team för samarbete med gäster i Teams.
-ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 2a412502af16ff95bf0f1f912ac57d00eb1d382a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371503"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430393"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Samarbeta med gäster i ett team
 
@@ -30,7 +30,7 @@ I den här artikeln går vi igenom de konfigurationssteg för Microsoft 365 som 
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
-I det här videoklippet visas de konfigurationssteg som beskrivs i det här dokumentet.</br>
+Den här videon visar konfigurationsstegen som beskrivs i det här dokumentet.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
@@ -47,7 +47,7 @@ Så här anger du inställningar för organisationsrelationer
 1. Logga in på Microsoft Azure på [https://portal.azure.com](https://portal.azure.com) .
 2. Klicka på Azure **Active Directory**i den vänstra navigeringen .
 3. Klicka på Externa **identiteter**i **fönstret Översikt** .
-4. Klicka på **Externa samarbetsinställningar**i fönstret **Organisationsidentiteter** .
+4. Klicka på Inställningar för **externt samarbete**i fönstret **Organisationsidentiteter** .
 5. Se till att **administratörer och användare i gäst inbjudna roll kan bjuda in** och medlemmar kan bjuda **in** är båda inställda på **Ja**.
 6. Om du har gjort ändringar klickar du på **Spara**.
 
@@ -82,7 +82,7 @@ Team använder Microsoft 365 Grupper för lagmedlemskap. Gästinställningarna f
 Så här anger du gästinställningar för Microsoft 365 Grupper
 
 1. Expandera **Inställningar**i det vänstra navigeringsfältet i Microsoft 365 i det vänstra navigeringscentret .
-2. Klicka på **Tjänster & tillägg**.
+2. Klicka på **Organisationsinställningar**.
 3. Klicka på **Microsoft 365 Grupper**i listan .
 4. Kontrollera att kryssrutorna **Låt gruppmedlemmar utanför organisationen får åtkomst till gruppinnehåll** och **Låt gruppägare lägga till personer utanför organisationen i grupper** är markerade.
 5. Om du har gjort ändringar klickar du på **Spara ändringar**.
@@ -101,7 +101,7 @@ Om du vill tillåta fil- och mappdelning med oautentiserade personer väljer du 
 
 Så här anger du delningsinställningar för SharePoint-organisationsnivå
 
-1. Klicka på **SharePoint**under **Administrationscenter i administrationscentret**för Microsoft 365, i den vänstra navigeringen.
+1. Klicka på **SharePoint**under Administrationscenter i administrationscentret för Microsoft 365 i det vänstra **navigeringscentret.**
 2. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
 3. Kontrollera att extern delning för SharePoint är inställt **på Alla** eller Nya och **befintliga gäster**.
 4. Om du har gjort ändringar klickar du på **Spara**.
@@ -115,16 +115,16 @@ Tänk på att den här inställningen påverkar alla team och SharePoint-webbpla
 
 Välj den typ av länk som är markerad som standard när användare delar filer och mappar:
 
-- **Alla med länken** - Välj det här alternativet om du förväntar dig att göra en hel del oautentiserade delning av filer och mappar. Om du vill tillåta *någon* länkar men är oroliga för oavsiktlig oautentiserade delning, överväga ett av de andra alternativen som standard. Den här länktypen är bara tillgänglig om du har aktiverat **Alla delar.**
+- **Alla med länken** - Välj det här alternativet om du förväntar dig att göra en hel del oautentiserade delning av filer och mappar. Om du vill tillåta *någon* länkar men är oroliga för oavsiktlig oautentiserade delning, överväga ett av de andra alternativen som standard. Den här länktypen är bara tillgänglig om du har aktiverat **Någon delning.**
 - **Endast personer i organisationen** – Välj det här alternativet om du förväntar dig att de flesta fil- och mappdelning ska vara med personer i organisationen.
-- **Specifika personer** - Tänk på det här alternativet om du förväntar dig att göra en hel del fil- och mappdelning med gäster. Denna typ av länk fungerar med gäster och kräver att de autentisera.
+- **Specifika personer** - Överväga det här alternativet om du förväntar dig att göra en hel del fil- och mappdelning med gäster. Denna typ av länk fungerar med gäster och kräver att de autentisera.
  
 ![Skärmbild av delningsinställningar för filer och mappar för SharePoint på organisationsnivå](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Så här anger du standardlänkinställningar för SharePoint-organisationsnivå
 
-1. Navigera till sidan Delning i administrationscentret för SharePoint.
+1. Gå till sidan Delning i administrationscentret för SharePoint.
 2. Under **Fil- och mapplänkar**väljer du den standarddelningslänk som du vill använda.
 3. Om du har gjort ändringar klickar du på **Spara**.
 
@@ -133,7 +133,7 @@ Så här anger du standardlänkinställningar för SharePoint-organisationsnivå
 Nästa steg är att skapa det team som du planerar att använda för att samarbeta med gäster.
 
 Så här skapar du ett team
-1. På fliken **Teams** i Teams klickar du på **Gå med i eller skapa ett lag** längst ned i den vänstra rutan.
+1. På fliken **Teams** i Teams klickar du på **Anslut eller skapa ett lag** längst ned i den vänstra rutan.
 2. Klicka på **Skapa ett team**.
 3. Klicka på **Bygg ett team från grunden**.
 4. Välj **Privat** eller **Offentlig**.

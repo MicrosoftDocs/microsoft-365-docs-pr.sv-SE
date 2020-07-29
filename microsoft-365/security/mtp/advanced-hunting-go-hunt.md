@@ -1,6 +1,6 @@
 ---
 title: Få relevant information om en enhet med go hunt
-description: Lär dig hur du använder verktyget "gå jakt" på för att snabbt fråga efter relevant information om en enhet eller händelse med hjälp av avancerad jakt.
+description: Lär dig hur du använder verktyget "go hunt" för att snabbt fråga efter relevant information om en enhet eller händelse med hjälp av avancerad jakt.
 keywords: avancerad jakt, incident, pivot, enhet, gå jakt, relevanta händelser, hot jakt, cyber hot jakt, sökning, fråga, telemetri, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,21 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 89d592368d49d767d76865d299ab74a41a052b2f
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689432"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430417"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Snabbt jaga enhet eller händelse information med go hunt
 
 **Gäller:**
 - Microsoft Hotskydd
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-Med *åtgärden Go Hunt* kan du snabbt undersöka händelser och olika entitetstyper med hjälp av kraftfulla frågebaserade [avancerade jaktfunktioner.](advanced-hunting-overview.md) Den här åtgärden kör automatiskt en avancerad jaktfråga för att hitta relevant information om den valda händelsen eller entiteten.
+Med åtgärden *go hunt* kan du snabbt undersöka händelser och olika entitetstyper med hjälp av kraftfulla frågebaserade [avancerade jaktfunktioner.](advanced-hunting-overview.md) Den här åtgärden kör automatiskt en avancerad jaktfråga för att hitta relevant information om den valda händelsen eller entiteten.
 
 Go *hunt-åtgärden* är tillgänglig i olika delar av säkerhetscentret när händelse- eller entitetsinformation visas. Du kan till exempel använda *go hunt* från följande avsnitt:
 
@@ -46,7 +44,7 @@ Go *hunt-åtgärden* är tillgänglig i olika delar av säkerhetscentret när h�
 
 - När du visar tidslinjen för en enhet kan du välja en händelse på tidslinjen för att visa ytterligare information om händelsen. När ett evenemang har valts får du möjlighet att jaga efter andra relevanta evenemang i avancerad jakt.
 
-    ![Bild som visar händelseinformation med alternativet Gå jakt](../../media/mtp-ah/go-hunt-event.png)
+    ![Bild som visar händelsedetaljer med alternativet Gå jakt](../../media/mtp-ah/go-hunt-event.png)
 
 Om du väljer **Gå jakt** eller Jakt efter **relaterade händelser** skickas olika frågor, beroende på om du har valt en entitet eller en händelse.
 
@@ -67,11 +65,11 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>Typer av entitet som stöds
-Du kan använda *go hunt* efter att ha valt någon av dessa entitetstyper:
+Du kan använda *go hunt* efter att du har valt någon av dessa entitetstyper:
 
 - ﬁler
 - Email
-- E-postkluster
+- E-kluster
 - Postlådor
 - Användare
 - Enheter
@@ -79,7 +77,7 @@ Du kan använda *go hunt* efter att ha valt någon av dessa entitetstyper:
 - Webbadresser
 
 ## <a name="query-for-event-information"></a>Fråga efter händelseinformation
-När du använder *gå jaga* till fråga efter information om en tidslinjehändelse kontrollerar frågan alla relevanta schematabeller för andra händelser runt tiden för den valda händelsen. Följande fråga visar till exempel händelser i olika schematabeller som inträffade ungefär samma tidsperiod på samma enhet:
+När du använder *gå jaga* till fråga efter information om en tidslinje händelse, kontrollerar frågan alla relevanta schematabeller för andra händelser runt tiden för den valda händelsen. Följande fråga visar till exempel händelser i olika schematabeller som inträffade ungefär samma tidsperiod på samma enhet:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event

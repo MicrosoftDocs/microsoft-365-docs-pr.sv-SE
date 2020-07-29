@@ -1,17 +1,17 @@
 ---
 title: Efterlevnad
 description: I den här artikeln visas de efterlevnadsstandarder som är relevanta för Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: e2a60bba348e4f19eaa56805b509e4472c9fd215
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322023"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434295"
 ---
 # <a name="compliance"></a>Efterlevnad
 
@@ -28,7 +28,7 @@ Microsoft Managed Desktop har uppnått följande certifieringar:
 - [Standarder för kvalitetsledningssystem i ISO 9001](../../compliance/offering-ISO-9001.md)
 - [ISO 20000-1 Hantering av informationstekniktjänster](../../compliance/offering-ISO-20000-1-2011.md)
 - [ISO 22301 Business Continuity Management Standard](../../compliance/offering-ISO-22301.md)
-- [CSA-intyg (Cloud Security Alliance) STAR](../../compliance/offering-CSA-STAR-Attestation.md)
+- [Csa-intyg (Cloud Security Alliance) STAR](../../compliance/offering-CSA-STAR-Attestation.md)
 - [CSA-certifiering (Cloud Security Alliance)](../../compliance/offering-CSA-Star-Certification.md)
 - [Kontroller av serviceorganisation (SOC) 1, 2, 3](../../compliance/offering-SOC.md)
 - [DSS (Payment Card Industry) Data Security Standard (DSS)](../../compliance/offering-PCI-DSS.md)
@@ -38,7 +38,7 @@ Microsoft Managed Desktop har uppnått följande certifieringar:
 Du hittar relevant information, inklusive kontroll och tekniska krav, i [SERVICE Trust Portal (STP)](https://servicetrust.microsoft.com/), den centrala databasen för sådan information om Microsoft Cloud Service-erbjudanden. Du kan hämta granskningsrapporter, efterlevnadscertifikat med mera från avsnittet [Revisionsrapporter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) i STP.
 
 > [!NOTE]
-> Eftersom Microsoft Managed Desktop körs på Azure har relevanta dokument vanligtvis filnamn som "Microsoft Azure, Dynamics 365 och andra onlinetjänster". I dessa dokument kan du vanligtvis hitta Microsoft Managed Desktop under kategorin "Övervakning + förvaltning".
+> Eftersom Microsoft Managed Desktop körs på Azure har relevanta dokument vanligtvis filnamn som "Microsoft Azure, Dynamics 365 och andra onlinetjänster". I dessa dokument kan du vanligtvis hitta Microsoft Managed Desktop under kategorin "Microsoft Online Services" eller "Övervakning + hantering".
 
 ## <a name="shared-responsibility"></a>Delat ansvar
 

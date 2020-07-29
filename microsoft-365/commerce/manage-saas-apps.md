@@ -14,14 +14,16 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Lär dig hur du aktiverar och hanterar appar från tredje part i Microsoft 365 administrationscenter.
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402588"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429996"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
+
+Du kan hantera licenser och fakturering för appar från tredje part i det nya administrationscentret för Microsoft 365. Uppdaterade funktioner inkluderar förbättrad prenumerationshantering, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera räkningar. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Detta gäller appar som kunder köper direkt eller från en tredjepartsleverantör.
 
 ::: moniker range="o365-21vianet"
 
@@ -30,7 +32,8 @@ ms.locfileid: "44402588"
 
 ::: moniker-end
 
-Du kan hantera licenser och fakturering för appar från tredje part i Microsoft 365-administrationscentret med förhandsgranskningsläge aktiverat. Uppdaterade funktioner inkluderar förbättrad prenumerationshantering, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera räkningar. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Detta gäller appar som kunder köper direkt eller från tredjepartsleverantörer.
+Du kan hantera licenser och fakturering för appar från tredje part i Microsoft 365-administrationscentret med förhandsgranskningsläge aktiverat. Uppdaterade funktioner inkluderar förbättrad prenumerationshantering, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera räkningar. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Detta gäller för appar som en tjänst som kunder köper direkt eller från tredjepartsleverantörer.
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Så här skaffar du appar för programvara som en tjänst
 
@@ -44,7 +47,7 @@ När kunderna har köpt apparna och accepterat Microsofts kundavtal kan de hante
 
 Appleverantörer säljer sina appar antingen till ett schablonbelopp eller genom att köpa licenser för användare.
 
-- **Schablonbelopp** – Även kallad platsbaserad prissättning, appar är prissatta med ett månads- eller årspris. På appsidan visas licenskvantitet på Unlimited.
+- **Schablonbelopp** – Även kallad webbplatsbaserad prissättning, appar är prissatta med ett månads- eller årspris. På appsidan visas licenskvantitet på Unlimited.
 - **Licenser** – Appar prissätts efter licens. Kunder tilldelar licenser till varje användare i organisationen
 
 ## <a name="supported-regions"></a>Regioner som stöds
@@ -84,7 +87,7 @@ Det här kan du göra i varje portal.
 | --- | --- |
 | Ändra licenskvantitet <br> Hantera hur du betalar din faktura <br> Hantera hur du betalar din faktura <br> Ändra betalningsmetod (kreditkort) <br> Visa faktura <br> Avbryt appprenumeration | Konfigurera app (en gång för varje app) <br> Tilldela licenser till användare <br> Teknisk support |
 
-När appen har aktiverats förblir den aktiv om den inte avbryts, upphör att gälla eller om betalningen inte hålls aktuell. Dessa händelser ändrar appstatusen till inaktiverad. När en app har inaktiverats kan den inte återaktiveras. Om du vill fortsätta använda appen köper du en annan kopia av den.
+När appen har aktiverats förblir den aktiv om den inte har avbrutits, upphör att gälla eller om betalningen inte hålls aktuell. Dessa händelser ändrar appstatusen till inaktiverad. När en app har inaktiverats kan den inte återaktiveras. Om du vill fortsätta använda appen köper du en annan kopia av den.
 
 ## <a name="assign-licenses"></a>Tilldela licenser
 
@@ -104,7 +107,7 @@ Administratörer kan ändra antalet licenser som ägs av organisationen. Detta g
 
 ## <a name="manage-payment-methods"></a>Hantera betalningsmetoder
 
-Appar för programvara som en tjänst har var sin faktureringsprofil tilldelad. Med faktureringsprofiler kan du anpassa vilka produkter som ingår på fakturan och hur du betalar dina fakturor. De omfattar:
+Appar för programvara som en tjänst har var sin faktureringsprofil tilldelad. Med faktureringsprofiler kan du anpassa vilka produkter som ingår i fakturan och hur du betalar dina fakturor. De omfattar:
 
 - **Betalningsmetoder** – Kreditkort eller check/banköverföring
 - **Kontaktuppgifter** – Faktureringsadress och kontaktnamn
@@ -112,7 +115,7 @@ Appar för programvara som en tjänst har var sin faktureringsprofil tilldelad. 
 
 Mer information om faktureringsprofiler finns i [Förstå faktureringsprofiler](https://docs.microsoft.com/microsoft-store/billing-profile).
 
-### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Ändra faktureringsprofilen för en prenumeration på app för programvara som en tjänst
+### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Ändra faktureringsprofilen för en appprenumeration för programvara som en tjänst
 
 1. Gå till sidan **Billing**  >  **Faktureringsappar**i administrationscentret.  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>
 2. Hitta och välj den app du vill hantera.

@@ -18,135 +18,267 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använda rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937001"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434131"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
-Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) och du har de [behörigheter som krävs](#what-permissions-are-needed-to-view-the-atp-reports)kan du använda flera ATP-rapporter i Security Compliance &amp; Center. (Gå till **rapporter** \> **Instrumentpanel .)**
+Office 365 Atp-organisationer (Advanced Threat Protection) (till exempel Microsoft 365 E5-prenumerationer eller ATP-abonnemang 1 eller ATP-abonnemang 2) innehåller en mängd säkerhetsrelaterade rapporter. Om du har [de behörigheter som krävs](#what-permissions-are-needed-to-view-the-atp-reports)kan du visa dessa rapporter i Security & Compliance Center genom att gå till **Reports** \> **Instrumentpanelen**för rapporter . Om du vill gå direkt till instrumentpanelen för rapporter öppnar du <https://protection.office.com/insightdashboard> .
 
-![&amp;Instrumentpanelen för Säkerhetsefterlevnadscenter kan hjälpa dig att se var avancerat skydd mot hot fungerar](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Instrumentpanelen Rapporter i security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-ATP-rapporter innehåller följande:
+## <a name="advanced-threat-protection-file-types-report"></a>Rapport över avancerade filtyper för hotskydd
 
-- [Statusrapport för hotskydd](#threat-protection-status-report)
-- [Rapporten för ATP-filtyper](#atp-file-types-report)
-- [Rapport om ATP-meddelandedisposition](#atp-message-disposition-report)
-- antingen [identifieringar i realtid eller Utforskaren](threat-explorer.md) (beroende på om du har Office 365 ATP-abonnemang 1 eller 2)
-- ... [med mera](#additional-reports-to-view).
+Rapporten **Avancerat skydd mot hotfiltyper** visar vilken typ av filer som har identifierats som skadliga av [ATP Safe Attachments](atp-safe-attachments.md).
 
-Läs den här artikeln om du vill få en översikt över ATP-rapporter och hur du använder dem.
+ Den sammanlagda vyn av rapporten tillåter 90 dagars filtrering, medan detaljvyn endast tillåter 10 dagars filtrering.
+
+Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://protection.office.com)går till **Instrumentpanelen för Rapporter** och väljer Office \> **Dashboard** **ATP-filtyper**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=ATPFileReport> .
+
+![Widgeten Office ATP-filtyper i instrumentpanelen Rapporter](../../media/atp-file-types-report-widget.png)
+
+> [!NOTE]
+> Informationen i den här rapporten finns också i [rapporten Disposition för avancerat skydd mot skydd.](#advanced-threat-protection-message-disposition-report)
+
+### <a name="report-view-for-the-advanced-threat-protection-file-types-report"></a>Rapportvy för rapporten Avancerad skyddsskydd
+
+Följande vyer är tillgängliga:
+
+- **Visa data efter: Fil:** Diagrammet innehåller följande information:
+
+  - **Skadliga Excel-bilagor**
+  - **Skadliga Flash-bilagor**
+  - **Skadliga PDF-bilagor**
+  - **Skadliga PowerPoint-bilagor**
+  - **Skadliga webbadresser**
+  - **Bifogade filer med skadliga Word**
+  - **Skadliga körbara bilagor**
+  - **Andra**
+
+  När du hovrar över en viss dag (datapunkt) kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Safe Attachments](atp-safe-attachments.md) och [skydd mot skadlig kod i EOP](anti-malware-protection.md).
+
+  ![Filvy i ATP-filtyperrapporten](../../media/atp-file-types-report-file-view.png)
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
+
+- **Visa data efter: Meddelande**: Diagrammet innehåller följande information:
+
+  - **Blockera åtkomst**
+  - **Meddelanden ersatta**
+  - **Meddelanden som övervakas**
+  - **Ersatt av dynamisk e-postleverans:** Mer information finns i [Dynamisk leverans och förhandsgranskning med ATP Säkra bilagor](dynamic-delivery-and-previewing.md).
+
+  ![Meddelandevy i ATP-filtyperrapporten](../../media/atp-file-types-report-message-view.png)
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma meddelandedispositionsvärden som är tillgängliga i diagrammet och det ytterligare **meddelandebelåtet** värde.
+
+### <a name="details-table-view-for-the-advanced-threat-protection-file-types-report"></a>Informationstabellvy för rapporten Avancerad skyddsskydd
+
+Om du klickar på **Visa informationstabell**ger rapporten en vy i nära realtid över alla klick som inträffar inom organisationen under de senaste 10 dagarna. Vilken information som visas beror på diagrammet du tittade på:
+
+- **Visa data efter: Arkiv:**
+
+  - **Datum**
+  - **Mottagaradress**
+  - **Avsändarens adress**
+  - **Meddelande-ID:** Tillgängligt i fältet **Meddelande-ID-huvud** i meddelandehuvudet och ska vara unikt. Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (notera vinkelparenteserna).
+  - **ﬁlen**
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
+
+- **Visa data efter: Meddelande:**
+
+  - **Datum**
+  - **Mottagaradress**
+  - **Avsändarens adress**
+  - **Meddelande-ID**
+  - **ﬁlen**
+  - **Ämne**
+
+  Om du klickar på **Filter**kan du ändra resultaten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma meddelandedispositionsvärden som är tillgängliga i diagrammet och det ytterligare **meddelandebelåtet** värde.
+
+Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
+
+## <a name="advanced-threat-protection-message-disposition-report"></a>Dispositionsrapport för avancerat skydd mot skydd
+
+**Atp-meddelandedispositionsrapporten** visar de åtgärder som har vidtagits för e-postmeddelanden som har identifierats som skadliga innehåll.
+
+Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://protection.office.com)går till **Instrumentpanelen för rapporter** och väljer Office \> **Dashboard** **ATP-meddelandedisposition**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=ATPMessageReport> .
+
+![Office 365 ATP-meddelandedispositionswidget i instrumentpanelen Rapporter](../../media/atp-message-disposition-report-widget.png)
+
+> [!NOTE]
+> Informationen i den här rapporten finns också i [rapporten Avancerade typer av hotskydd](#advanced-threat-protection-file-types-report).
+
+### <a name="report-view-for-the-advanced-threat-protection-message-disposition-report"></a>Rapportvy för meddelandedispositionsrapporten för avancerat skydd
+
+Följande vyer är tillgängliga:
+
+- **Visa data efter: Meddelande**: Diagrammet innehåller följande information:
+
+  - **Blockera åtkomst**
+  - **Meddelanden ersatta**
+  - **Meddelanden som övervakas**
+  - **Ersatt av dynamisk e-postleverans:** Mer information finns i [Dynamisk leverans och förhandsgranskning med ATP Säkra bilagor](dynamic-delivery-and-previewing.md).
+
+  ![Meddelandevy i ATP-filtyperrapporten](../../media/atp-file-types-report-message-view.png)
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma meddelandedispositionsvärden som är tillgängliga i diagrammet och det ytterligare **meddelandebelåtet** värde.
+
+- **Visa data efter: Fil:** Diagrammet innehåller följande information:
+
+  - **Skadliga Excel-bilagor**
+  - **Skadliga Flash-bilagor**
+  - **Skadliga PDF-bilagor**
+  - **Skadliga PowerPoint-bilagor**
+  - **Skadliga webbadresser**
+  - **Bifogade filer med skadliga Word**
+  - **Skadliga körbara bilagor**
+  - **Andra**
+
+  När du hovrar över en viss dag (datapunkt) kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Safe Attachments](atp-safe-attachments.md) och [skydd mot skadlig kod i EOP](anti-malware-protection.md).
+
+  ![Filvy i ATP-filtyperrapporten](../../media/atp-file-types-report-file-view.png)
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
+
+### <a name="details-table-view-for-the-advanced-threat-protection-message-disposition-report"></a>Informationstabellvy för meddelandedispositionsrapporten för avancerat skydd
+
+Om du klickar på **Visa informationstabell**ger rapporten en vy i nära realtid över alla klick som inträffar inom organisationen under de senaste 10 dagarna. Vilken information som visas beror på diagrammet du tittade på:
+
+- **Visa data efter: Meddelande:**
+
+  - **Datum**
+  - **Mottagaradress**
+  - **Avsändarens adress**
+  - **Meddelande-ID**
+  - **ﬁlen**
+  - **Ämne**
+
+  Om du klickar på **Filter**kan du ändra resultaten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma meddelandedispositionsvärden som är tillgängliga i diagrammet och det ytterligare **meddelandebelåtet** värde.
+
+- **Visa data efter: Arkiv:**
+
+  - **Datum**
+  - **Mottagaradress**
+  - **Avsändarens adress**
+  - **Meddelande-ID**
+  - **ﬁlen**
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Samma filtypsvärden som visas i diagrammet.
+
+Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
-Rapporten **Status för hotskydd** är en enda vy som samlar information om skadligt innehåll och skadlig e-post som upptäckts och blockerats av [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) och [Office 365 ATP](office-365-atp.md). Den här rapporten är användbar för att visa identifieringar över tid (upp till 90 dagar) och gör det möjligt för säkerhetsadministratörer att identifiera trender eller avgöra om principer behöver justeras.
+**Statusrapporten för hotskydd** är en enda vy som samlar information om skadligt innehåll och skadlig e-post som upptäckts och blockerats av [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) och Office 365 ATP. Mer information finns i [statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report).
 
-Rapporten innehåller ett aggregerat antal unika e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (URL:er) som blockerades av anti-malware-motorn, [nolltimmars automatisk rensning (ZAP)](zero-hour-auto-purge.md)och ATP-funktioner som [ATP Safe Links,](atp-safe-links.md) [ATP Safe Attachments](atp-safe-attachments.md)och [ATP anti-phishing](set-up-anti-phishing-policies.md).
+## <a name="url-threat-protection-report"></a>Rapport om skydd av URL-hot
 
-Filter och uppdelningar av informationen möjliggör mer detaljerade kategoriseringar av informationen i den här rapporten. Specifikt finns det en "break down by" meny som ingår för **E** \> **Phish** och **E Malware** \> **visningar.** Det kommer att dela upp data i:
+**Rapporten för skydd av URL-hot** innehåller sammanfattnings- och trendvyer för upptäckta hot och åtgärder som vidtas på URL-klick som en del av [ATP Safe Links](atp-safe-links.md). Den här rapporten kommer inte att ha klickdata från användare där principen Säkra länkar tillämpas har alternativet **Spåra inte användarens klick** markerat.
 
-|||
-|---|---|
-|Efter principtyp|Vilken politik hjälpte till att fånga upp dessa hot?|
-|Genom detektionsteknik|Vilken underliggande Microsoft-teknik fångade hotet?|
-|Efter leveransstatus|Vad identifierades den slutliga leveransstatusen för e-postmeddelanden som hot?|
-|
+Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://protection.office.com)går till **Instrumentpanelen för rapporter** och väljer \> **Dashboard** **URL-skyddsrapport**. Öppna om du vill gå direkt till rapporten <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
-> [!TIP]
-> Både e-> Phish | Malware visningar har detaljerade uppdelningar för detektionsteknik som visas, med kategorier som *ATP-genererade fil rykte*, *File detonation*, *URL detonation*, *Anti-parodi: DMARC misslyckande*, till exempel, till hjälp med att precisera exakt vilken funktion som ledde din organisation att fånga hot.
-
-![Rullgardinsmenyn Status för hotskydd som visar "bryt ned efter".](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
-
-Dessa vyer ger dig möjlighet att exportera, via ett knappklick (i **e-post** \> **Phish,** **E Malware** och \> **Malware** **Innehåll** \> **Malware** visningar). De aggregerade data som exporteras till datorn kan öppnas i Excel.
-
-![Den här bilden visar Export som ett alternativ i menyn för vyn Skadlig kod, precis mellan Skapa schema och Begäransrapport.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
-
-> [!NOTE]
-> Det maximala antalet poster som kan exporteras för **Phish** och **Malware** är strax under 10000. Om du exporterar en vy exporteras endast de senaste 10000 posterna. På exporterade data representerar kolumnen _meddelandeantal_ antalet antalet meddelanden som identifieras av identifieringsteknik och principtyp.    
-
-Översikts- och e-postvyerna visar information inom några timmar efter bearbetningen i stället för inom 24 timmar (efterfrågan på igen. ökade hastigheter här har varit en tydlig signal)!
-
-> [!NOTE]
-> En rapport om status för hotskydd är tillgänglig för kunder som har antingen [Office 365 ATP](office-365-atp.md) eller [Exchange Online Protection](exchange-online-protection-overview.md)) (EOP). Informationen som visas i rapporten Status för hotskydd för ATP-kunder innehåller dock sannolikt andra data än vad EOP-kunder kan se. Rapporten Status för hotskydd för ATP-kunder innehåller till exempel information om [skadliga filer som identifierats i SharePoint Online, OneDrive eller Microsoft Teams](atp-for-spo-odb-and-teams.md). Sådan information är specifik för ATP, så kunder som har EOP men inte ATP kommer inte att se dessa uppgifter i sin hotskyddsstatusrapport.
-
-Om du vill visa rapporten [Status &amp; ](https://protection.office.com)för hotskydd går du till **Rapporter om** skydd av \> **instrumentpanelens** \> **skydd .**
-
-![ATP-rapport om skydd mot hot](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
-
-Om du vill ha detaljerad status för en dag håller du muspekaren över diagrammet.
-
-![ATP Hot Protection Status data för en dag](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
-
-Som standard visar rapporten Status för hotskydd data för de senaste sju dagarna. Du kan dock välja **Filter** och ändra datumintervallet för att visa data i upp till 90 dagar för den sammanlagda vyn och 30 dagar för detaljvyn. (Om du använder en utvärderingsprenumeration kan du vara begränsad till 30 dagars data.)
-
-![STATUSFILTER FÖR ATP-hotskydd](../../media/4f703369-642b-402b-9758-b9c828283410.png)
-
-Du kan också använda **Visa data efter** meny för att ändra vilken information som visas i rapporten.
-
-![Visa alternativ för ATP-rapport om hotskyddsstatus](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-
-## <a name="url-protection-status-report"></a>Statusrapport för URL-skydd
-
-Den här rapporten är baserad på insamlade data och upptäckta hot per klick (medan de flesta andra e-posthotrelaterade rapporter är per meddelandedata). Den här rapporten är utformad för att visa hot som kommer från hyperlänkar i e-postmeddelanden och dokument per klick. Det finns två vyer:
-
-|||
-|---|---|
-|Url-klickskyddsåtgärd|Se antalet webbadresser som blockerats, blockerats men åsidosätts med ett klick av en användare, åsidosätts med ett klick av en användare och tillåts.|
-|URL-klick efter program|Se programmet som url:en klickades på.|
-|
-
-I informationstabellen kan du se mer information om klicktid och användarinformation. Slutligen, tänk på url skydd statusrapport visar skyddet från ATP Safe Links funktionen, så att endast kunder som har aktiverat ATP Säkra länkar kommer att se data återspeglas på den här rapporten.
+![Widgeten URL-skyddsrapport på instrumentpanelen Rapporter](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
 > Det här är en *trendrapport*för skydd , vilket innebär att data representerar trender i en större datauppsättning. Därför är data i den aggregerade vyn inte tillgängliga i realtid här, men data i detaljtabellvyn är, så du kan se en liten diskrepans mellan de två vyerna.
 
-## <a name="atp-file-types-report"></a>Rapporten för ATP-filtyper
+### <a name="report-view-for-the-url-threat-protection-report"></a>Rapportvy för rapporten om skydd mot URL-hot
 
-I rapporten **ATP-filtyper** visas vilken typ av filer som har identifierats som skadliga av [ATP Safe Attachments](atp-safe-attachments.md).
+**Url-hotskyddsrapporten** har två aggregerade vyer som uppdateras en gång var fjärde timme som visar data för de senaste 90 dagarna:
 
-Om du vill visa [ &amp; den](https://protection.office.com)här rapporten går du till **Rapporter** \> **instrumentpanelen** \> **ATP-filtyper**.
+- **URL klicka skydd åtgärd**: Visar antalet URL klick av användare i organisationen och resultatet av klick:
 
-![Rapporten för ATP-filtyper](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-  
-När du hovrar över en viss dag kan du se fördelningen av typer av skadliga filer som upptäcktes av [ATP Säkra bilagor](atp-safe-attachments.md) och [ &amp; anti-spam anti-malware skydd](anti-spam-and-anti-malware-protection.md). Den samlade vyn av rapporten tillåter 90 dagars filtrering, medan detaljvyn endast tillåter tio dagars filtrering. 
-  
-![ATP-filtyper rapportdata för en dag](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+  - **Blockerade**
+  - **Blockerad och klickad igenom**
+  - **Klickade igenom under genomsökningen**
 
-## <a name="atp-message-disposition-report"></a>Rapport om ATP-meddelandedisposition
+  Ett klick anger att användaren har klickat sig igenom blocksidan till den skadliga webbplatsen (administratörer kan inaktivera klickning i principer för säkra länkar).
 
-**Atp-meddelandedispositionsrapporten** visar de åtgärder som har vidtagits för e-postmeddelanden som har identifierats som skadliga innehåll.
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
 
-Om du vill visa den här rapporten **Reports** går du till Rapportinstrumentpanelen ATP Message Disposition i [ &amp; Säkerhetsefterlevnadscenter](https://protection.office.com) \> **Dashboard** \> **ATP Message Disposition**.
+  - **Startdatum** och **slutdatum**
+  - De tillgängliga klickskyddsåtgärderna, plus värdet **Tillåten** att se information för alla URL-klick (inte bara blockerade klick).
 
-![ATP-meddelandedispositionsrapport](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+  ![URL-klickskyddsåtgärdsvyn i rapporten för skydd mot URL-hot](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-När du hovrar över en stapel i diagrammet kan du se vilka åtgärder som vidtogs för upptäckt e-post för den dagen.
+- **URL-klick för program**: Visar antalet URL-klick för program som stöder säkra länkar i Office 365 ATP:
 
-![ATP Message Disposition Report-data för en dag](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+  - **E-postklient**
+  - **PowerPoint**
+  - **Word**
+  - **Excel**
+  - **OneNote**
+  - **Visio**
+  - **Teams**
+  - **Annat**
+
+  Om du klickar på **Filter**kan du ändra rapporten med följande filter:
+
+  - **Startdatum** och **slutdatum**
+  - Tillgängliga program.
+
+### <a name="details-table-view-for-the-url-threat-protection-report"></a>Informationstabellvy för rapporten om skydd mot URL-hot
+
+Om du klickar på **Visa informationstabell**ger rapporten en vy i nära realtid av alla klick som sker inom organisationen under de senaste sju dagarna med följande information:
+
+- **Klicka på tid**
+- **Användare**
+- **Url**
+- **Åtgärder**
+- **Program**
+
+Om du klickar på **Filter** i detaljtabellvyn kan du filtrera efter samma villkor som i rapportvyn och även efter **domäner** eller **mottagare** avgränsade med kommatecken.
+
+Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="additional-reports-to-view"></a>Ytterligare rapporter att visa
 
-Utöver de ATP-rapporter som beskrivs i den här artikeln finns flera andra rapporter tillgängliga, enligt beskrivningen i följande tabell:
+Förutom de ATP-rapporter som beskrivs i det här avsnittet finns flera andra rapporter tillgängliga, enligt beskrivningen i följande tabell:
 
-|||
+|Rapport|Ämne|
 |---|---|
-|**Rapport(er)**|**Information**|
-|**Explorer** eller **realtidsidentifieringar**: (Office 365 ATP Plan 2-kunder har Explorer; Office 365 ATP-abonnemang 1-kunder har identifieringar i realtid.)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
-|**Säkerhetsrapporter för e-post**, till exempel en rapport om toppavsändare och mottagare, en rapport om falska e-postmeddelanden och en rapport om skräppostidentifieringar.|[Visa säkerhetsrapporter för e-post i &amp; Säkerhetsefterlevnadscenter](view-email-security-reports.md)|
-|**ATP-url-spårning för säkra länkar:**(Det här är en rapport som du genererar med PowerShell.) Den här rapporten visar resultaten av ATP Safe Links-åtgärder under de senaste sju (7) dagarna.|[Cmdlet-referens för Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**EOP- och ATP-resultat**: (Det här är en anpassad rapport som du genererar med PowerShell). Den här rapporten innehåller information, till exempel Domän, Datum, Händelsetyp, Riktning, Åtgärd och Meddelanderäkning.|[Cmdlet-referens för Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP- och ATP-identifieringar**: (Det här är en anpassad rapport som du genererar med PowerShell). Den här rapporten innehåller information om skadliga filer eller webbadresser, nätfiskeförsök, personifiering och andra potentiella hot i e-post eller filer.|[Cmdlet-referens för Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
-|
+|**Explorer** (ATP Plan 2) eller **realtidsidentifieringar** (ATP-plan 1)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
+|**Säkerhetsrapporter för e-post**, till exempel rapporten Toppavsändare och mottagare, rapporten Spoof-e-post och rapporten Skräppostidentifieringar.|[Visa säkerhetsrapporter för e-post i Säkerhets- & Compliance Center](view-email-security-reports.md)|
+|**E-postflödesrapporter**, till exempel rapporten Vidarebefordran, statusrapporten för e-postflödet och rapporten Toppavsändare och mottagare.|[Visa e-postflödesrapporter i Säkerhets- & Compliance Center](view-mail-flow-reports.md)|
+|**URL-spårning för ATP-säkra länkar** (endast PowerShell). Utdata från den här cmdleten visar resultatet av ATP Safe Links-åtgärder under de senaste sju dagarna.|[Få-urltrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**E-posttrafikresultat för EOP och ATP** (endast PowerShell). Utdata för den här cmdleten innehåller information om domän, datum, händelsetyp, riktning, åtgärd och meddelanderäkning.|[Hämta-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**E-postinformationsrapporter för EOP- och ATP-identifieringar** (endast PowerShell). Utdata från den här cmdleten innehåller information om skadliga filer eller webbadresser, nätfiskeförsök, personifiering och andra potentiella hot i e-post eller filer.|[Hämta-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Vilka behörigheter behövs för att visa ATP-rapporterna?
 
-Om du vill visa och använda de rapporter som beskrivs i den här artikeln **måste du ha tilldelat en lämplig roll för både Security Compliance Center och &amp; Administrationscenter för Exchange**.
+Om du vill visa och använda de rapporter som beskrivs i det här avsnittet **måste du ha en lämplig roll tilldelad för både Security Compliance Center och &amp; Administrationscenter för Exchange**.
 
-- För &amp; Säkerhetsefterlevnadscenter måste du ha en av följande roller tilldelad:
+- För Security & Compliance Center måste du ha tilldelats någon av följande roller:
 
   - Organisationshantering
   - Säkerhetsadministratör (detta kan tilldelas i Administrationscentret för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -162,7 +294,7 @@ Om du vill visa och använda de rapporter som beskrivs i den här artikeln **må
 
 Mer information finns i följande resurser:
 
-- [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
 
 - [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -172,6 +304,6 @@ Om du inte ser data i ATP-rapporterna dubbelkollar du att dina principer är kor
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Rapporter och insikter i Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smarta rapporter och insikter i Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Rollbehörigheter (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

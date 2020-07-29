@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Vilka är bästa metoderna för säkerhetsinställningar för Exchange Online Protection (EOP) och Advanced Threat Protection (ATP). Vilka är de nuvarande rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vilka extrafunktioner får du om du också använder Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389851"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430381"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet
 
@@ -194,7 +194,8 @@ Information om hur du konfigurerar de här inställningarna finns i [Konfigurera
 
 |Namn på säkerhetsfunktionen|Standard|Strikt|Kommentar|
 |---|---|---|---|
-|**Använda säkra länkar i: Office 365-program** <br/><br/> _EnableSafeLinksForO365Clients_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använd ATP-säkra länkar i Office 365 Apps, Office för iOS och Android.|
+|**Använda säkra länkar i: Office 365-program** <br/><br/> _EnableSafeLinksForO365Clients_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använd ATP Safe Links i Office 365-klienter (stationära och mobila datorer) (iOS och Android).|
+|**Använda säkra länkar i: Office Web Access Companions** <br/><br/> _AktiveraSafeLinksForWebAccessCompanion_|På <br/><br/> `$true`|På <br/><br/> `$true`|Använd BETRODDa ATP-länkar i Office Web Apps.|
 |**Spåra inte när användare klickar på säkra länkar** <br/><br/> _TrackClicks (Spår)_|Av <br/><br/> `$true`|Av <br/><br/> `$true`||
 |**Låt inte användare klicka igenom säkra länkar till den ursprungliga webbadressen** <br/><br/> _TillåtClick-genomgången_|På <br/><br/> `$false`|På <br/><br/> `$false`||
 |

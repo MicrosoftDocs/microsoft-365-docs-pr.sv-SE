@@ -1,5 +1,5 @@
 ---
-title: Förinställda säkerhetsprinciper
+title: Förvalda säkerhetsprinciper
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur du använder standard- och strikta principinställningar för skyddsfunktionerna i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389882"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430405"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Förinställda säkerhetsprinciper i EOP och Office 365 ATP
 
@@ -88,9 +88,10 @@ När flera principer tillämpas på en användare tillämpas följande ordning f
 
 1. **Strikt säkerhetsprincip** för skydd
 2. Förinställd säkerhetsprincip för **standardskydd**
-3. Alla andra relaterade policyer.
+3. Anpassade säkerhetsprinciper
+4. Standardsäkerhetsprinciper
 
-Med andra ord åsidosätter inställningarna i principen **Strikt skydd** inställningarna för **standardskyddsprincipen,** som åsidosätter inställningarna från andra relaterade principer.
+Med andra ord åsidosätter inställningarna i principen **Strikt skydd** inställningarna för **standardskyddsprincipen,** som åsidosätter inställningarna från en anpassad princip, som åsidosätter inställningarna från standardprincipen.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Tilldela förinställda säkerhetsprinciper till användare
 
