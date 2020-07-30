@@ -5,9 +5,8 @@ f1.keywords:
 ms.author: samanro
 author: samanro
 manager: scotv
-layout: LandingPage
 ms.audience: Admin
-ms.topic: landing-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -24,158 +23,61 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 för kampanjer
-ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: d936b05c7668b2fcdeb976e547cde8694b304c27
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "43632041"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429984"
 ---
-<a name="microsoft-365-for-campaigns"></a>Microsoft 365 för Kampanjer
+<a name="microsoft-365-for-campaigns"></a><span data-ttu-id="a563e-103">Microsoft 365 för Kampanjer</span><span class="sxs-lookup"><span data-stu-id="a563e-103">Microsoft 365 for Campaigns</span></span>
 ===========================
 
-I dagens värld är att säkra data och kommunikation en prioritering, särskilt för politiska kampanjer, medicinska och juridiska metoder och många andra branscher. Microsoft 365 för kampanjer innehåller ett antal rekommendationer som hjälper dig att skydda dig själv och dina data. Biblioteket ger också instruktioner för att ställa in och använda den rekommenderade miljön, även om du inte är en kampanj.
+<span data-ttu-id="a563e-104">I dagens värld är att säkra data och kommunikation en prioritering, särskilt för politiska kampanjer, medicinska och juridiska metoder och många andra branscher.</span><span class="sxs-lookup"><span data-stu-id="a563e-104">In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses.</span></span> <span data-ttu-id="a563e-105">Microsoft 365 för kampanjer innehåller ett antal rekommendationer som hjälper dig att skydda dig själv och dina data.</span><span class="sxs-lookup"><span data-stu-id="a563e-105">Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data.</span></span> <span data-ttu-id="a563e-106">Biblioteket ger också instruktioner för att ställa in och använda den rekommenderade miljön, även om du inte är en kampanj.</span><span class="sxs-lookup"><span data-stu-id="a563e-106">This library includes help for setting up and using this recommended environment, even if you're not a campaign.</span></span>
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Vad är Microsoft 365 för kampanjer?** Det är en rekommenderad säker konfiguration som inkluderar Microsoft 365 Business Premium så att du kan:
-- Lita på pålitliga produktivitets- och samarbetsverktyg, som Outlook, Word, Excel och andra kontorsprodukter 
-- Skydda dina arbetsfiler på alla dina iOS-, Android- och Windows 10-enheter med säkerhet i företagsklass som är lätt att hantera 
-- Tillämpa ytterligare skydd för användarkonton och identiteter 
+<span data-ttu-id="a563e-107">**Vad är Microsoft 365 för kampanjer?**</span><span class="sxs-lookup"><span data-stu-id="a563e-107">**What is Microsoft 365 for Campaigns?**</span></span> <span data-ttu-id="a563e-108">Det är en rekommenderad säker konfiguration som inkluderar Microsoft 365 Business Premium så att du kan:</span><span class="sxs-lookup"><span data-stu-id="a563e-108">It's a recommended secure configuration that includes Microsoft 365 Business Premium so that you can:</span></span>
+- <span data-ttu-id="a563e-109">Lita på pålitliga produktivitets- och samarbetsverktyg, som Outlook, Word, Excel och andra kontorsprodukter</span><span class="sxs-lookup"><span data-stu-id="a563e-109">Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products</span></span> 
+- <span data-ttu-id="a563e-110">Skydda dina arbetsfiler på alla dina iOS-, Android- och Windows 10-enheter med säkerhet i företagsklass som är lätt att hantera</span><span class="sxs-lookup"><span data-stu-id="a563e-110">Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage</span></span> 
+- <span data-ttu-id="a563e-111">Tillämpa ytterligare skydd för användarkonton och identiteter</span><span class="sxs-lookup"><span data-stu-id="a563e-111">Apply extra protection for user accounts and identity</span></span> 
 
 ![Microsoft 365 Business Premium skyddar dina produktivitetsverktyg, samarbetsverktyg, fillagring, e-post, enheter och identiteter](../media/M365-WhatIsIt-SecurityFocus.png)
 
-Det amerikanska presidentvalet kvalificerar sig för specialerbjudandet Microsoft 365 Business Premium, men alla med denna plan kan dra nytta av den här guiden för att konfigurera ökad säkerhet och arbeta säkert tillsammans.
+<span data-ttu-id="a563e-113">Det amerikanska presidentvalet kvalificerar sig för specialerbjudandet Microsoft 365 Business Premium, men alla med denna plan kan dra nytta av den här guiden för att konfigurera ökad säkerhet och arbeta säkert tillsammans.</span><span class="sxs-lookup"><span data-stu-id="a563e-113">While federal election campaigns in the United States qualify for special pricing for Microsoft 365 Business Premium, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.</span></span>
 
-Biblioteket innehåller följande:
-- Bindande installationsinstruktioner för att öka säkerheten.
-- Hjälp för användare att konfigurera enheter för säker åtkomst.
-- Instruktioner för att säkert samarbeta och dela filer.
+<span data-ttu-id="a563e-114">Biblioteket innehåller följande:</span><span class="sxs-lookup"><span data-stu-id="a563e-114">This library includes the following:</span></span>
+- <span data-ttu-id="a563e-115">Bindande installationsinstruktioner för att öka säkerheten.</span><span class="sxs-lookup"><span data-stu-id="a563e-115">Prescriptive setup guidance for adding increased security.</span></span>
+- <span data-ttu-id="a563e-116">Hjälp för användare att konfigurera enheter för säker åtkomst.</span><span class="sxs-lookup"><span data-stu-id="a563e-116">Help for users to setup devices for secure access.</span></span>
+- <span data-ttu-id="a563e-117">Instruktioner för att säkert samarbeta och dela filer.</span><span class="sxs-lookup"><span data-stu-id="a563e-117">Guidance on how to collaborate and share securely.</span></span>
 
-Mer information om innehållet finns i [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
+<span data-ttu-id="a563e-118">Mer information om innehållet finns i [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).</span><span class="sxs-lookup"><span data-stu-id="a563e-118">For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).</span></span> 
 
 
-<a name="get-started"></a>Komma igång
+<a name="get-started"></a><span data-ttu-id="a563e-119">Komma igång</span><span class="sxs-lookup"><span data-stu-id="a563e-119">Get started</span></span>
 --------------------------
 
-<ul class="panelContent cardsJ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <p><b>Följ dessa steg för att komma igång:</b></p>
-                        <P><a href="get-microsoft-365-campaigns.md">Få Microsoft 365-kampanjer</a></p>
-                        <P><a href="m365-campaigns-users.md">Lär dig hur dina användare arbetar med Microsoft 365</a></p>
-                        <P><a href="microsoft-365-campaigns-setup-overview.md">Ställ in Microsoft 365-kampanjer</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+<span data-ttu-id="a563e-120">![Översikt](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Följ dessa steg för att komma igång:**</span><span class="sxs-lookup"><span data-stu-id="a563e-120">![Roadmap](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Follow these steps to get started:**</span></span>  
 
-<a name="solutions-for-your-campaign-or-small-business"></a>Lösningar för din kampanj eller småföretag
+- [<span data-ttu-id="a563e-121">Få Microsoft 365-kampanjer</span><span class="sxs-lookup"><span data-stu-id="a563e-121">Get Microsoft 365 campaigns</span></span>](get-microsoft-365-campaigns.md)
+- [<span data-ttu-id="a563e-122">Lär dig hur dina användare arbetar med Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="a563e-122">Learn how your users will work with Microsoft 365</span></span>](m365-campaigns-users.md)
+- [<span data-ttu-id="a563e-123">Ställ in Microsoft 365-kampanjer</span><span class="sxs-lookup"><span data-stu-id="a563e-123">Set up Microsoft 365 campaigns</span></span>](microsoft-365-campaigns-setup-overview.md)
+
+
+
+<a name="solutions-for-your-campaign-or-small-business"></a><span data-ttu-id="a563e-124">Lösningar för din kampanj eller småföretag</span><span class="sxs-lookup"><span data-stu-id="a563e-124">Solutions for your campaign or small business</span></span>
 --------------------------
 
-När du har installerat din säkra Microsoft 365-miljö kan du börja arbeta med följande lösningar:
+<span data-ttu-id="a563e-125">När du har installerat din säkra Microsoft 365-miljö kan du börja arbeta med följande lösningar:</span><span class="sxs-lookup"><span data-stu-id="a563e-125">After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:</span></span>
 
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Skapa team för samarbete</h3>
-                        <p>Skapa ett utrymme för kommunikation och samarbete med specifika team för nyckelpersoner, alla anställda och partners eller leverantörer med Microsoft Teams.</p>
-                        <p><a href="create-teams-for-collaboration.md">Skapa ditt team</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Ställ in online-möten</h3>
-                        <p>Planera ett möte med ljud-, video- och fildelning med Microsoft Teams.</p>
-                        <p><a href="set-up-meetings.md">Boka ett möte</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Kryptera eller märk dina konfidentiella e-postmeddelanden</h3>
-                        <p>Använd krypterings- eller sekretessetiketter för att skydda e-postmeddelanden med konfidentiell eller känslig information.</p>
-                        <p><a href="send-encrypted-email.md">Skicka krypterade e-postmeddelanden</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Skapa en webbplats för kommunikation</h3>
-                        <p>Skapa en intern kommunikationssida med SharePoint och dela händelser, meddelanden, bilder och mer med ditt team.</p>
-                        <p><a href="create-communications-site.md">Skapa din webbplats</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Dela filer och videor</h3>
-                        <p>Lagra dina filer och videor i molnet så att de är tillgängliga för alla lämpliga användare.</p>
-                        <p><a href="share-files-and-videos.md">Börja dela</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+|               |               |
+| ------------- | ------------- |
+| ![en SharePoint-kommunikationswebbplats](../media/sm-m365-democracy-teams-collab.png) | ![ett onlinemöte](../media/m365-democracy-teams-meetings.png) |
+| <span data-ttu-id="a563e-128">**Skapa grupper för samarbete** Skapa ett utrymme för kommunikation och samarbete med specifika team för nyckelpersoner, alla anställda och partners eller leverantörer med Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="a563e-128">**Create teams for collaboration**  Make a space for communication and collaboration with specific teams for key staff, all staff, and partners or vendors with Microsoft Teams.</span></span> [<span data-ttu-id="a563e-129">Skapa ditt team</span><span class="sxs-lookup"><span data-stu-id="a563e-129">Create your team</span></span>](create-teams-for-collaboration.md) | <span data-ttu-id="a563e-130">**Konfigurera ett onlinemöte** Planera ett möte med ljud-, video- och fildelning med Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="a563e-130">**Set up online meetings**  Schedule a meeting with audio, video, and sharing with Microsoft Teams.</span></span> [<span data-ttu-id="a563e-131">Boka ett möte</span><span class="sxs-lookup"><span data-stu-id="a563e-131">Set up a meeting</span></span>](set-up-meetings.md) |
+| ![Krypterad och etiketterad e-postmeddelande](../media/sm-m365-campaign-email-encrypt.png) | ![en SharePoint-kommunikationswebbplats](../media/sm-m365-democracy-comms-site.png) |
+| <span data-ttu-id="a563e-134">**Kryptera eller etikettera känsliga e-postmeddelanden** Använd krypterings- eller sekretessetiketter för att skydda e-postmeddelanden med konfidentiell eller känslig information.</span><span class="sxs-lookup"><span data-stu-id="a563e-134">**Encrypt or label your sensitive email**  Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</span></span> [<span data-ttu-id="a563e-135">Skicka krypterade e-postmeddelanden</span><span class="sxs-lookup"><span data-stu-id="a563e-135">Send encrypted email</span></span>](send-encrypted-email.md) | <span data-ttu-id="a563e-136">**Skapa en kommunikationswebbplats** Skapa en intern kommunikationssida med SharePoint och dela händelser, meddelanden, bilder och mer med ditt team.</span><span class="sxs-lookup"><span data-stu-id="a563e-136">**Create a communications site**  Share events, message, images, and more with your team in an internal communications site created with SharePoint.</span></span> [<span data-ttu-id="a563e-137">Skapa din webbplats</span><span class="sxs-lookup"><span data-stu-id="a563e-137">Create your site</span></span>](create-communications-site.md) |
+| ![Dela en fil i Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) | |
+| <span data-ttu-id="a563e-139">**Dela filer och videor** Lagra dina filer och videor i molnet så att de är tillgängliga för alla lämpliga användare.</span><span class="sxs-lookup"><span data-stu-id="a563e-139">**Share files and videos**  Save your files and videos to the cloud so they're available to all of the appropriate people.</span></span> [<span data-ttu-id="a563e-140">Börja dela</span><span class="sxs-lookup"><span data-stu-id="a563e-140">Start sharing</span></span>](share-files-and-videos.md) | |
+

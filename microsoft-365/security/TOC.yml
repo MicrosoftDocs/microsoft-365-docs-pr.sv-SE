@@ -423,7 +423,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Åtgärda skadlig e-post
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: Visa och läsa ATP-rapporter
+            - name: Visa ATP-rapporter i Säkerhets- och efterlevnadscenter
               href: ./office-365-security/view-reports-for-atp.md
             - name: Förstå de senaste attackerna med hotanalys
               href: ./mtp/latest-attack-campaigns.md
