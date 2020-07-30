@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: I den här artikeln får du lära dig mer om vilka alternativ som finns för att skapa en säker gästdelningsmiljö i Microsoft 365.
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167371"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502921"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Skapa en säker miljö för gästdelning
 
@@ -101,6 +101,9 @@ Skapa princip för villkorsstyrd åtkomst
 12. På bladet **Nytt**, under **Aktivera princip**, klickar du på **På** och sedan på **Skapa**.
 
 Första gången en gästanvändare försöker komma åt innehåll, ett team eller en webbplats i organisationen måste de acceptera villkoren för användning.
+
+> [!NOTE]
+> Användningen av villkorstyrd åtkomst kräver en Azure Active Directory Premium P1-licens. Mer information finns i [Vad är villkorsstyrd åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Mer information
 [Användningsvillkor för Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)

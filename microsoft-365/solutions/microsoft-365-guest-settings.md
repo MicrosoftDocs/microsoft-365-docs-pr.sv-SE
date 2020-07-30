@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679150"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514795"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -37,7 +37,7 @@ Azure Active Directory är den katalogtjänst som används av Microsoft 365. Ins
 
 ### <a name="organizational-relationships-settings"></a>Inställningar för relationer i organisationen
 
-**Navigering:** [Administrationscenter för Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Organisationsrelationer > Inställningar
+**Navigering:** [administrationscentret för Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > externa identiteter > Inställningar för externt samarbete
 
 ![Skärmbild av sidan med inställningar för organisationsrelationer i Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ Administrationscenter för Microsoft 365 har inställningar på organisationsniv
 
 ### <a name="sharing"></a>Delning
 
-**Navigering:** [Administrationscenter för Microsoft 365](https://admin.microsoft.com) > Inställningar > Inställningar > fliken Säkerhet och sekretess > Delning
+**Navigering:** [Administrationscenter för Microsoft 365](https://admin.microsoft.com) > Inställningar > Organisationsinställningar > fliken Säkerhet och sekretess > Delning
 
 ![Skärmbild av gästdelningsinställningen för säkerhet och sekretess i Microsoft 365-administrationscentret](../media/sharepoint-security-privacy-sharing-setting.png)
 

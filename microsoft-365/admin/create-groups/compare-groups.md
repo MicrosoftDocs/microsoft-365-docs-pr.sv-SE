@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Lär dig mer om de typer av grupper som du kan använda.
-ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780463"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514773"
 ---
 # <a name="compare-groups"></a>Jämföra grupper
 
@@ -55,6 +55,8 @@ Gruppmedlemmar kan skicka som eller skicka för gruppens e-postadress om det har
 
 Distributionsgrupper passar bäst för situationer där du behöver skicka information till en grupp användare, t. ex. "personer i byggnad A" eller "alla på Contoso".
 
+Distributionsgrupper kan [uppgraderas till Microsoft 365-grupper](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
+
 ## <a name="security-groups"></a>Säkerhetsgrupper
 
 [Säkerhetsgrupper](../email/create-edit-or-delete-a-security-group.md) används för att bevilja åtkomst till Microsoft 365-resurser, t.ex. SharePoint. De kan göra administrationen enklare eftersom du bara behöver administrera gruppen i stället för att lägga till användare i varje resurs individuellt.
@@ -82,3 +84,5 @@ Det är för närvarande inte möjligt att migrera en delad postlåda till en Mi
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Läs mer om Microsoft 365-grupper](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

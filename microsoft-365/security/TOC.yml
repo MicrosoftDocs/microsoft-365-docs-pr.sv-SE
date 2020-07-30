@@ -137,6 +137,8 @@
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Gå på jakt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Utöka datatäckning
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: Dataschema
                   items:
                     - name: Förstå schemat

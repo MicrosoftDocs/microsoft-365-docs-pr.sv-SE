@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: e76024f1d13e9210b74e2f6c4fc63c9992615099
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 361c6599dfccbe7a80fa520bcd1fa988a1fae536
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015917"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506291"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -61,7 +61,7 @@ I Administrationscenter för Microsoft 365 går du till **Roller** och väljer s
 
 ::: moniker-end
 
-Du behöver antagligen bara tilldela följande roller i organisationen. Som standard visar vi först de roller som de flesta organisationer använder. Om du inte hittar någon roll går du till slutet av listan och väljer **Visa fler roller**. Om du letar efter detaljerad information, inklusive cmdlets som är kopplade till en roll, kan du läsa [Behörigheter för administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Du behöver antagligen bara tilldela följande roller i organisationen. Som standard visar vi först de roller som de flesta organisationer använder. Om du inte hittar någon roll går du till slutet av listan och väljer **Visa alla efter kategori**. Om du letar efter detaljerad information, inklusive cmdlets som är kopplade till en roll, kan du läsa [Behörigheter för administratörsroller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 |Administratörsroll     |Vem ska ha tilldelas denna roll?  |
 |---------|---------|
