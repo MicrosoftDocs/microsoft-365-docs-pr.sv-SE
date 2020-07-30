@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Lär dig hur du kan utvärdera enhets- och appberedskap i miljön.
-ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 2389dcfe70108e261208191bd3674eced702b4c6
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011669"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434163"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Steg 1: Beredskap för enheter och appar
 
@@ -35,9 +35,8 @@ ms.locfileid: "44011669"
 </thead>
 </table>
 
->[!NOTE]
->Beredskap för enheter och appar är det första steget i vårt rekommenderade distributionsprocesshjul, som täcker de holistiska aspekterna av applikationer och maskinvarukompatibilitet. Om du vill se en fullständig distribution av skrivbordsversionen av kan du gå till [Skrivbordsdistributioncenter](https://aka.ms/HowToShift).
->
+> [!NOTE]
+> Beredskap för enheter och appar är det första steget i vårt rekommenderade distributionsprocesshjul, som täcker de holistiska aspekterna av applikationer och maskinvarukompatibilitet. Om du vill se en fullständig distribution av skrivbordsversionen av kan du gå till [Skrivbordsdistributioncenter](https://aka.ms/HowToShift).
 
 Tidigare var ett enormt hinder för att uppgradera användarens skrivbord och applikations- och maskinvarukompatibilitet. De goda nyheterna när du planerar övergången till Windows 10 och Microsoft 365-applikationer för företag är att i stort sett alla program som skrivits under de senaste 10 åren kan köras på Windows 10. Dessutom kommer alla COM-tillägg och VBA-makron din organisation använde i versioner av Office till och med från Office 2010 att fortsätta att fungera med de senaste versionerna av Office, utan att du behöver göra några ändringar.
 
@@ -47,11 +46,13 @@ I den här artikeln vägleder vi dig genom den första fasen – beredskap för 
 
 ## <a name="windows-10-compatibility-scan"></a>Kompatibilitetsgenomsökning med Windows 10
 
-Innan du distribuerar Windows 10 rekommenderar Microsoft att du kontrollerar att dina befintliga enheter som kör Windows 7 eller 8/8.1 är kompatibla. Windows 10-installationsmedia stöder en kommandoradväxel för setup.exe för att köra uppgraderingen men endast kontrollera kompatibilitet, inte faktiskt utföra uppgraderingen. ScanOnly kan köras som en kommandofil med skript eller integreras i en aktivitetssekvens för Microsoft Endpoint Configuration Manager, som även kan köra ScanOnly direkt från nätverket så att installationsmedia för Windows 10 inte direktuppspelas på den lokala enheten. När ScanOnly slutförts returneras resultatet via returkoder i loggfiler som genereras av setup.EXE.   
+Innan du distribuerar Windows 10 rekommenderar Microsoft att du kontrollerar att dina befintliga enheter som kör Windows 7 eller 8/8.1 är kompatibla. Windows 10-installationsmedia stöder en kommandoradväxel för setup.exe för att köra uppgraderingen men endast kontrollera kompatibilitet, inte faktiskt utföra uppgraderingen. ScanOnly kan köras som en kommandofil med skript eller integreras i en aktivitetssekvens för Microsoft Endpoint Configuration Manager, som även kan köra ScanOnly direkt från nätverket så att installationsmedia för Windows 10 inte direktuppspelas på den lokala enheten. När ScanOnly slutförts returneras resultatet via returkoder i loggfiler som genereras av setup.EXE.
 
 Ett exempel på en ScanOnly-kommandorad som slutförde kompatibilitetskontrollen tyst skulle se ut så här:
 
-    Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```dos
+Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```
 
 Mer information om ScanOnly och andra kommandoväxlar för Windows-installationer finns i kommandoradsalternativen för [Windows-installationer](https://aka.ms/setupswitches).
 
@@ -61,7 +62,7 @@ Med Desktop Analytics får du många fördelar jämfört med traditionella syste
 
 För att konfigurera Desktop Analytics måste du först konfigurera en Azure-prenumeration och inkludera en arbetsyta för Azure Desktop Analytics-inloggning. När du har aktiverat tjänsten för Desktop Analytics kan du registrera alla Internet-anslutna Windows 7 SP1 eller nyare enheter via grupprincipinställningar – det är det enkelt. Det finns inga agenter att distribuera, och det visuella arbetsflödet i Desktop Analytics vägleder dig från pilotprojekt till produktionsdistribution. Om du vill kan du exportera data från Desktop Analytics till verktyg för distribution av programvara, t. ex. Microsoft Endpoint Configuration Manager (Current Branch), för att rikta datorerna direkt och skapa samlingar när de blir klara för distribution.
 
-Om du inte har konfigurerat Desktop Analytics för din miljö eller vill registrera dig för en utvärderingsversion kan du gå till Desktop Analytics-sidan] (https://www.aka.ms/desktopanalytics) och komma igång.
+Om du inte har konfigurerat Desktop Analytics för din miljö eller vill registrera dig för en utvärderingsversion kan du gå till [Desktop Analytics-sidan](https://www.aka.ms/desktopanalytics) för att komma igång.
 
 ## <a name="device-and-app-readiness-process"></a>Process för beredskap för enheter och appar
 
@@ -103,10 +104,9 @@ När du arbetar genom listan för att åtgärda problem ser du att fler och fler
 
 ### <a name="configuration-manager-software-inventory-for-application-prioritization"></a>Configuration Manager-programvaruinventering för prioritering av program
 
-Configuration Manager-programvaruinventering är ett alternativ till att använda molnbaserade analyslösningar för beredskap för enheter och appar. Du kan använda installationsantal och ökad detaljnivå i olika datorer för att prioritera testning och verifiering av kompatibilitet och ange programpaket som kompatibla med Windows 10 via paketinställningar. Med det här alternativet kan du inte jämföra känd kompatibilitetsinformation med Microsofts analystjänster, men det kan vara en effektiv lösning som riktar sig till en mindre uppsättning prioriterade appar för manuell testning. 
+Configuration Manager-programvaruinventering är ett alternativ till att använda molnbaserade analyslösningar för beredskap för enheter och appar. Du kan använda installationsantal och ökad detaljnivå i olika datorer för att prioritera testning och verifiering av kompatibilitet och ange programpaket som kompatibla med Windows 10 via paketinställningar. Med det här alternativet kan du inte jämföra känd kompatibilitetsinformation med Microsofts analystjänster, men det kan vara en effektiv lösning som riktar sig till en mindre uppsättning prioriterade appar för manuell testning.
 
 Om du vill ha mer information kan du läsa mer i [introduktionen till programvaruinventering i Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) och ställa in plattformskraven i programpaket i [Packages and programs in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs) (Paket och program i Configuration Manager).
-
 
 ## <a name="app-assure"></a>App Assure
 
@@ -116,6 +116,6 @@ Ett annat verktyg som kan hjälpa dig med appkompatibilitet för Windows 10 och 
 
 Desktop Analytics är inte bara ett verktyg som hjälper dig att byta till Windows 10 och Microsoft 365-applikationer för företag. När du har stationära datorer som körs på Windows 10 och Office 365 kan du använda det för att underhålla din distribution och hantera halvårsvisa funktionsuppdateringar så att du kan hålla dig uppdaterad.
 
-## <a name="next-step"></a>Nästa steg 
+## <a name="next-step"></a>Nästa steg
 
 ## <a name="step-2-directory-and-network-readiness"></a>[Steg 2: Katalog- och nätverksberedskap](https://aka.ms/mdd2)

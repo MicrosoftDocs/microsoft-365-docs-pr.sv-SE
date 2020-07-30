@@ -1,19 +1,19 @@
 ---
 title: Microsoft Hanterade skrivbord arkiverade enheter
 description: Enheter närmar pensionering som du fortfarande kan registrera men kommer att ha en förkortad livslängd
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080087"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503073"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Hanterade skrivbord arkiverade enheter
 
@@ -43,6 +43,9 @@ För att vara registrerad i Microsoft Managed Desktop måste en enhet vara en av
 |HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs |**Den 14 maj 2023** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU med 5VS01AV, IR-kamera krävs | **den 23 oktober 2023** |
 |HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV, IR-kamera eller fingeravtrycksläsare krävs | **den 6 juni 2023** |
+|HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | **den 18 juli 2023** |
+|HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | **den 18 juli 2023** |
+|HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |SKU med 5VS04AV| **den 18 juli 2023** |
 |Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Ingen | **Den 16 november 2022** |
 |Yta gå| 128 GB / Intel 4415Y / 8GB RAM | Ingen | **Den 2 augusti 2023** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 20 maj 2022** |

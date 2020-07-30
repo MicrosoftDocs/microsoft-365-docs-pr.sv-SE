@@ -5,9 +5,8 @@ f1.keywords:
 ms.author: samanro
 author: samanro
 manager: scotv
-layout: LandingPage
 ms.audience: Admin
-ms.topic: landing-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 för kampanjer
-ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: d936b05c7668b2fcdeb976e547cde8694b304c27
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "43632041"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429984"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 för Kampanjer
 ===========================
@@ -60,122 +59,25 @@ Mer information om innehållet finns i [Microsoft 365 Business Premium](https://
 <a name="get-started"></a>Komma igång
 --------------------------
 
-<ul class="panelContent cardsJ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <p><b>Följ dessa steg för att komma igång:</b></p>
-                        <P><a href="get-microsoft-365-campaigns.md">Få Microsoft 365-kampanjer</a></p>
-                        <P><a href="m365-campaigns-users.md">Lär dig hur dina användare arbetar med Microsoft 365</a></p>
-                        <P><a href="microsoft-365-campaigns-setup-overview.md">Ställ in Microsoft 365-kampanjer</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+![Översikt](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Följ dessa steg för att komma igång:**  
+
+- [Få Microsoft 365-kampanjer](get-microsoft-365-campaigns.md)
+- [Lär dig hur dina användare arbetar med Microsoft 365](m365-campaigns-users.md)
+- [Ställ in Microsoft 365-kampanjer](microsoft-365-campaigns-setup-overview.md)
+
+
 
 <a name="solutions-for-your-campaign-or-small-business"></a>Lösningar för din kampanj eller småföretag
 --------------------------
 
 När du har installerat din säkra Microsoft 365-miljö kan du börja arbeta med följande lösningar:
 
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Skapa team för samarbete</h3>
-                        <p>Skapa ett utrymme för kommunikation och samarbete med specifika team för nyckelpersoner, alla anställda och partners eller leverantörer med Microsoft Teams.</p>
-                        <p><a href="create-teams-for-collaboration.md">Skapa ditt team</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Ställ in online-möten</h3>
-                        <p>Planera ett möte med ljud-, video- och fildelning med Microsoft Teams.</p>
-                        <p><a href="set-up-meetings.md">Boka ett möte</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Kryptera eller märk dina konfidentiella e-postmeddelanden</h3>
-                        <p>Använd krypterings- eller sekretessetiketter för att skydda e-postmeddelanden med konfidentiell eller känslig information.</p>
-                        <p><a href="send-encrypted-email.md">Skicka krypterade e-postmeddelanden</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Skapa en webbplats för kommunikation</h3>
-                        <p>Skapa en intern kommunikationssida med SharePoint och dela händelser, meddelanden, bilder och mer med ditt team.</p>
-                        <p><a href="create-communications-site.md">Skapa din webbplats</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Dela filer och videor</h3>
-                        <p>Lagra dina filer och videor i molnet så att de är tillgängliga för alla lämpliga användare.</p>
-                        <p><a href="share-files-and-videos.md">Börja dela</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+|               |               |
+| ------------- | ------------- |
+| ![en SharePoint-kommunikationswebbplats](../media/sm-m365-democracy-teams-collab.png) | ![ett onlinemöte](../media/m365-democracy-teams-meetings.png) |
+| **Skapa grupper för samarbete** Skapa ett utrymme för kommunikation och samarbete med specifika team för nyckelpersoner, alla anställda och partners eller leverantörer med Microsoft Teams. [Skapa ditt team](create-teams-for-collaboration.md) | **Konfigurera ett onlinemöte** Planera ett möte med ljud-, video- och fildelning med Microsoft Teams. [Boka ett möte](set-up-meetings.md) |
+| ![Krypterad och etiketterad e-postmeddelande](../media/sm-m365-campaign-email-encrypt.png) | ![en SharePoint-kommunikationswebbplats](../media/sm-m365-democracy-comms-site.png) |
+| **Kryptera eller etikettera känsliga e-postmeddelanden** Använd krypterings- eller sekretessetiketter för att skydda e-postmeddelanden med konfidentiell eller känslig information. [Skicka krypterade e-postmeddelanden](send-encrypted-email.md) | **Skapa en kommunikationswebbplats** Skapa en intern kommunikationssida med SharePoint och dela händelser, meddelanden, bilder och mer med ditt team. [Skapa din webbplats](create-communications-site.md) |
+| ![Dela en fil i Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) | |
+| **Dela filer och videor** Lagra dina filer och videor i molnet så att de är tillgängliga för alla lämpliga användare. [Börja dela](share-files-and-videos.md) | |
+

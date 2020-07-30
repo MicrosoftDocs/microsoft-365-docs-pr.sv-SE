@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c3406ebf5962d6f0ac08c1ee280bab725cf1c3bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 77bc0f088a9779396a56a9cc8cc9ae6ecbdadea7
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626964"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503109"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -41,11 +41,11 @@ Använd åtgärdscentret för att se resultatet av aktuella och tidigare unders�
 - Visa en granskningslogg över redan godkända reparationsåtgärder. Och
 - Granska slutförda reparationsåtgärder.
 
-Säkerhetsoperationsteamet kan arbeta mer effektivt och ändamålsenligt eftersom åtgärdscentret ger en omfattande vy över Microsoft Threat Protection på jobbet.
+Säkerhetsoperationsteamet kan arbeta mer effektivt och ändamålsenligt eftersom åtgärdscentret ger en omfattande bild av Microsoft Threat Protection på jobbet.
 
 ## <a name="go-to-the-action-center"></a>Gå till åtgärdscentret
 
-1. Gå [https://security.microsoft.com](https://security.microsoft.com) till och logga in. 
+1. Gå till [https://security.microsoft.com](https://security.microsoft.com) och logga in. 
 
 2. Välj **Åtgärdscenter**i navigeringsfönstret . 
 
@@ -59,21 +59,35 @@ Säkerhetsoperationsteamet kan arbeta mer effektivt och ändamålsenligt efterso
 
 5. Välj ett objekt i listan om du vill visa mer information om en undersökning. Utredningens detaljvy öppnas.<br/>![Detaljer om undersökningen](../../media/mtp-air-investdetails.png)
 
-    - Om undersökningen gäller e-postinnehåll (t.ex. är entiteten en postlåda) kan undersökningsinformation som finns öppen i Säkerhets- & Compliance Center ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
+    - Om undersökningen gäller e-postinnehåll (t.ex. är entiteten en postlåda) kan undersökningsinformation som finns öppen i Säkerhets- & Compliance Center ( [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation) ). 
 
-    - Om undersökningen omfattar en enhet, utredningsuppgifter öppna[https://security.microsoft.com](https://security.microsoft.com)i säkerhetscentret ( ). 
+    - Om undersökningen omfattar en enhet, utredning detaljer öppna i säkerhetscentret ( [https://security.microsoft.com](https://security.microsoft.com) ). 
 
 > [!TIP]
-> Om du tror att något har missats eller felaktigt upptäckts av automatiska undersöknings- och svarsfunktioner i Microsoft Threat Protection, låt oss veta! Se [Så här rapporterar du falska positiva identifieringar/negativ i automatiska funktioner för undersökning och svar (AIR) i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+> Om du tror att något missades eller felaktigt upptäcktes av automatiska undersöknings- och svarsfunktioner i Microsoft Threat Protection, låt oss veta! Se [Så här rapporterar du falska positiva identifieringar/negativ i funktioner för automatisk undersökning och svar (AIR) i Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
+
+## <a name="available-actions"></a>Tillgängliga åtgärder
+
+När reparationsåtgärder vidtas visas de på fliken Historik i åtgärdscentret. Sådana åtgärder omfattar följande:
+
+- Samla in undersökningspaket 
+- Isolera enheten (den här åtgärden kan ångras) 
+- Maskin utanförbord 
+- Körning av frisläppning av kod 
+- Frisläppning från karantän 
+- Exempel på begäran 
+- Begränsa körning av kod (den här åtgärden kan ångras) 
+- Kör antivirussökning 
+- Stoppa och karantän 
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Nödvändiga behörigheter för åtgärdscenteraktiviteter
 
 Om du vill godkänna eller avvisa väntande åtgärder i åtgärdscentret måste du ha behörigheter tilldelade enligt följande tabell:
 
-|Åtgärd för reparation |Obligatoriska roller och behörigheter |
+|Åtgärdsåtgärder |Obligatoriska roller och behörigheter |
 |--|----|
-|Microsoft Defender ATP-reparation (enheter) |Rollen Säkerhetsadministratör som tilldelats i[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( )[https://admin.microsoft.com](https://admin.microsoft.com)eller Microsoft 365 administrationscenter ( )<br/>--- eller ---<br/>Active remediation actions-rollen som tilldelats i Microsoft Defender ATP <br/> <br/> Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Office 365 ATP-reparation (Office-innehåll och e-post)  |Rollen Säkerhetsadministratör som tilldelats i[https://portal.azure.com](https://portal.azure.com)Azure Active Directory ( )[https://admin.microsoft.com](https://admin.microsoft.com)eller Microsoft 365 administrationscenter ( )<br/>--- och --- <br/>Sök- och rensningsrollen som tilldelats[https://protection.office.com](https://protection.office.com)Security & Compliance Center ( ) <br/><br/>**VIKTIGT:** Om du bara har rollen Säkerhetsadministratör tilldelad i Security & Compliance Center kan du inte komma åt funktionerna i Åtgärdscenter eller Microsoft Threat Protection. Du måste ha rollen Säkerhetsadministratör tilldelad i Azure Active Directory eller Microsoft 365 admincenter. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender ATP-reparation (enheter) |Rollen Säkerhetsadministratör som tilldelats i Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 administrationscenter ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- eller ---<br/>Active remediation actions-rollen som tilldelats i Microsoft Defender ATP <br/> <br/> Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Office 365 ATP-reparation (Office-innehåll och e-post)  |Rollen Säkerhetsadministratör som tilldelats i Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) eller Microsoft 365 administrationscenter ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- och --- <br/>Sök- och rensningsrollen som tilldelats Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**VIKTIGT:** Om du bara har rollen Säkerhetsadministratör tilldelad i Security & Compliance Center kan du inte komma åt funktionerna i Åtgärdscenter eller Microsoft Threat Protection. Du måste ha rollen Säkerhetsadministratör tilldelad i Azure Active Directory eller Microsoft 365 admincenter. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
 > Användare som har rollen Global administratör tilldelad i Azure Active Directory kan godkänna eller avvisa väntande åtgärder i åtgärdscentret. Som bästa praxis bör dock din organisation begränsa antalet personer som har rollen Global administratör tilldelad. Vi rekommenderar att du använder säkerhetsadministratören, aktiva reparationsåtgärder och sök- och rensningsroller som anges ovan för behörigheter till åtgärdscenter.
@@ -84,5 +98,5 @@ Om du vill godkänna eller avvisa väntande åtgärder i åtgärdscentret måste
 
 - [Visa resultaten av en automatiserad undersökning](mtp-autoir-results.md)
 
-- [Läs mer om jakt i Microsofts hotskydd](advanced-hunting-overview.md)
+- [Läs mer om jakt i Microsoft Threat Protection](advanced-hunting-overview.md)
 

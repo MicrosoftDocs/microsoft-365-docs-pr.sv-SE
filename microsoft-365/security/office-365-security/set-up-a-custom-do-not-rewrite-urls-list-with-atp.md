@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du konfigurerar anpassade blockerade webbadresser för användare och inte skriver om listan över webbadresser för en grupp användare i office 365 ATP-principer för säkra länkar.
-ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702542"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517479"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Konfigurera en anpassad lista över webbadresser som inte skrivs om med hjälp av ATP Safe Links
 
@@ -60,11 +60,13 @@ Om du vill redigera (eller definiera) ATP-principer måste du tilldelas en lämp
 
 4. Ange ett namn och en beskrivning för principen.
 
-5. I avsnittet **Skriv inte om följande webbadresser** markerar du rutan Ange en giltig **URL** och skriver sedan en URL och väljer sedan plustecknet (+).
+5. **Aktivera** webbadresser skrivs om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken.
 
-6. I avsnittet **Tillämpad på** väljer du **Mottagaren är medlem i**och väljer sedan den grupp(er) som du vill ta med i principen. Välj **Lägg till**och välj sedan **OK**.
+6. I avsnittet **Skriv inte om följande webbadresser** väljer du rutan Ange en giltig **WEBBADRESS,** anger en URL och väljer sedan plustecknet (+).
 
-7. När du har lagt till webbadresser väljer du **Spara**i det nedre högra hörnet av skärmen .
+7. I avsnittet **Tillämpad på** väljer du **Mottagaren är medlem i**och väljer sedan den grupp(er) som du vill ta med i principen. Välj **Lägg till**och välj sedan **OK**.
+
+8. När du har lagt till webbadresser väljer du **Spara**i det nedre högra hörnet av skärmen .
 
 > [!NOTE]
 > Se till att granska organisationens anpassade lista över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).

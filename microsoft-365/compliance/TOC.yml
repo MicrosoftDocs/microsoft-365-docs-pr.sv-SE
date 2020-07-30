@@ -319,8 +319,8 @@
           href: event-driven-retention.md
         - name: Hantera livscykeln för SharePoint-dokument
           href: auto-apply-retention-labels-scenario.md
-    - name: Kassera data
-      href: disposition.md
+        - name: Hantera disposition av data
+          href: disposition.md
     - name: Hantera inaktiva postlådor
       items:
         - name: Översikt över inaktiva postlådor

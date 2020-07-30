@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: Lär dig hur du börjar samla in data för din klientorganisation med hjälp av mallappen Microsoft 365 Usage Analytics i Power BI.
-ms.openlocfilehash: fa0973521f5a5e7e8b9b0fda161a5b4779d64c68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du börjar samla in data för din klientorganisation med hjälp av microsoft 365 Usage Analytics-mallappen i Power BI.
+ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401512"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502955"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
@@ -36,7 +36,7 @@ ms.locfileid: "44401512"
 
 ::: moniker-end
 
-Microsoft 365-användningsanalys är också tillgängligt för Microsoft 365 US Government Community.
+Microsoft 365-användningsanalys är ännu inte tillgängligt för Microsoft 365 US Government Community.
   
 ## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Steg för att aktivera Microsoft 365 användningsanalyser
 
@@ -52,7 +52,7 @@ Du kan också öppna **Produkter** och köpa en version av Power BI.
 > [!NOTE]
 > Du behöver en Power BI Pro-licens för att installera, anpassa och distribuera en mallapp. Mer information finns i [Förutsättningar](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-Du behöver en Power BI Pro-licens för att dela ditt innehåll, och de personer du delar det med gör det också, eller så måste innehållet finnas på en arbetsyta med [en Premium-kapacitet.](https://docs.microsoft.com/power-bi/service-premium-what-is) 
+Du behöver en Power BI Pro-licens för att dela ditt innehåll, och de personer du delar det med gör det också, eller så måste innehållet finnas på en arbetsyta med [en Premium-kapacitet](https://docs.microsoft.com/power-bi/service-premium-what-is). 
   
 ### <a name="enable-the-template-app"></a>Aktivera mallappen
 
@@ -62,7 +62,7 @@ Mer information finns i [Om administratörsroller.](../add-users/about-admin-rol
   
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
     
-2. Leta reda på Microsoft **365-användningsanalyskortet** på sidan **Användning** och välj **Kom igång**.
+2. Leta reda på **Microsoft 365-användningsanalyskortet** på sidan **Användning** och välj **Kom igång**.
     
 3. På panelen Rapporter som öppnas anger du **Gör data tillgängliga för Microsoft 365-användningsanalys för Power BI** till **På** \> **Spara**. 
   
