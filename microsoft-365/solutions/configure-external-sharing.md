@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-externalsharing
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: abd789c9121cbbeeb484aa51bdb47eac18f39c0f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 58ce4c7725217a5b47ceddb8f48e587d4270f55d
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159425"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527842"
 ---
 # <a name="configure-external-sharing-across-microsoft-365"></a>Konfigurera extern delning i Microsoft 365
 
-Det här är en artikel i omslagslösningen som beskriver hur delning fungerar i Microsoft 365:s produktivitetsverktyg och funktioner för identitetsskydd. Innehåller länkar till djupare artiklar som beskriver hur för varje arbetsbelastning.
+Det här är en artikel i omslagslösningen som beskriver hur delning fungerar i Microsoft 365 produktivitetsverktyg och identitetsskyddsfunktioner. Innehåller länkar till djupare artiklar som beskriver hur för varje arbetsbelastning.

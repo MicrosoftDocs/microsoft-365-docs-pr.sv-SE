@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur Microsoft 365 för kampanjer påverkar användarna.
-ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632773"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527024"
 ---
-# <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Hur Microsoft 365 for Campaigns påverkar dina användare
+# <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Så här påverkar Microsoft 365 för kampanjer dina användare
 
 Microsoft 365 for Campaigns gör det mycket svårare för hackare att få tillgång till din miljö. Avvägningen är att användarna måste vara medvetna om hur de ska arbeta i den här säkrare miljön. Vi förstår att det krävs lite extra tålamod, men det är värt det att hålla organisationen skyddad.
 
@@ -40,7 +41,7 @@ Microsoft 365 for Campaigns gör det mycket svårare för hackare att få tillg�
 Alla användare bör vara medvetna om och använda dessa e-postmetoder för att skydda sin e-post:
 - Konfigurera e-post för att använda multifaktorautentisering med autentiseringsappen.
 - Verifiera legitima e-postmeddelanden och leta efter säkerhetstips från ATP Advanced Phishing Protection.
-- Öppna endast säkra länkar och bilagor, som verifierats av ATP Safe Links och ATP Safe Attachments.
+- Öppna endast säkra länkar och bilagor, som verifieras av ATP Safe Links och ATP Safe Bilagor.
 
 Läs mer om [nätfiske och andra attacker](m365-campaigns-phishing-and-attacks.md). 
 
@@ -48,7 +49,7 @@ Ladda ner en [infografik](m365-campaigns-protect-campaign-infographic.md) med ti
 
 ## <a name="set-up-iphones-and-android-devices"></a>Konfigurera iPhone- och Android-enheter
 Alla användare som du lägger till i din miljö måste ta några minuter att [konfigurera iPhone och Android-enheter](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) för att fungera säkert:
-- Konfigurera enheter för att använda multifaktorautentisering med autentiseringsappen.
+- Konfigurera enheter så att de använder multifaktorautentisering med autentiseringsappen.
 - Använd Microsofts mobilappar, inklusive Outlook Mobile, Word, OneDrive och andra Microsoft-appar från App Store. De inbyggda e-postapparna som ingår på iPhone- och Android-enheter stöds inte. 
 - Kräv en PIN-kod för att användarna ska kunna låsa upp sin enhet.
 
@@ -56,7 +57,7 @@ När du har konfigurerat dessa uppmanas användarna att använda autentiseringsa
 
 ## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Håll BYOD Mac-datorer och Windows 10-datorer färska 
 Det är också viktigt att användarna håller sin primära arbetsenhet uppdaterad:
-- Installera de senaste versionerna av Office-skrivbordsappar och håll dessa färska med uppdateringar när du uppmanas att göra det. 
+- Installera de senaste versionerna av Office-skrivbordsappar och behåll dessa färska med uppdateringar när du uppmanas att göra det. 
 - Håll koll på uppdateringar av operativsystemet, till exempel Windows-uppdateringar.
 
 För [ohanterade Windows 10- och Mac-enheter](m365-campaigns-protect-pcs-macs.md)har användarna ansvaret för att se till att grundläggande säkerhetsfunktioner är aktiverade.

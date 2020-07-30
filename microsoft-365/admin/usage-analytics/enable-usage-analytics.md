@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Lär dig hur du börjar samla in data för din klientorganisation med hjälp av microsoft 365 Usage Analytics-mallappen i Power BI.
-ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: b5cb8df7fbe8ce1844d2af3ecaf62c7903d4e98b
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502955"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527389"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivera Microsoft 365 användningsanalyser
 
@@ -86,9 +86,9 @@ Om du vill starta mallappen måste du antingen vara global **administratör,** *
 
 6.  När du har klickat på **Anslut**skriver du i klient-ID (utan streck) som du kopierade i steg (1) på skärmen **Anslut till Microsoft 365 användningsanalys** och väljer **Nästa**.
     
-7. På nästa skärm väljer du **oAuth2** som **autentiseringsmetod** \> **Logga in**. Om du väljer någon annan autentiseringsmetod misslyckas anslutningen till mallappen.
+7. På nästa skärm väljer du **Microsoft-konto** som **autentiseringsmetod** \> **Logga in**. Om du väljer någon annan autentiseringsmetod misslyckas anslutningen till mallappen.
     
-    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Välj Microsoft-konto som autentiseringsmetod](../../media/ab6f0463-c3f7-4088-a605-67c699fa86ad.png)
   
 8. När mallappen har instansierats är instrumentpanelen för användningsanalys i Microsoft 365 tillgänglig i Power BI på webben. Första inläsningen av instrumentpanelen tar 2 till 30 minuter.
   

@@ -1,10 +1,10 @@
 ---
-title: Kontakta supporten för företagsprodukter – hjälp för administratörer
+title: Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,44 +17,44 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online eller besöka Microsoft Store.
+description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online eller besöka Microsoft Store för en virtuell kundtjänst.
 feedback_system: None
-ms.openlocfilehash: 80fa10e01934e98f16fa36403268229409638d68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388251"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506315"
 ---
-# <a name="contact-support-for-business-products---admin-help"></a>Kontakta supporten för företagsprodukter – hjälp för administratörer
+# <a name="ways-to-contact-support-for-business-products---admin-help"></a>Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 
 ::: moniker range="o365-worldwide"
 
-## <a name="online-support"></a>[Onlinesupport](#tab/online)
+> [!IMPORTANT]
+> Du måste vara administratör för en företags prenumeration för att kunna använda dessa supportvägar. Om du inte är administratör för en organisation kan du använda [den här supportsidan](https://support.microsoft.com/help/contactus).
 
-Spara tid genom att påbörja din tjänstbegäran online. Vi hjälper dig att hitta en lösning eller tilldelar dig en expert som kontaktar dig via e-post eller telefon. [Mer information om supportens svarstider](https://go.microsoft.com/fwlink/p/?LinkId=518251).
+Börja med att [kontrollera aktuell hälsostatus för dina tjänster](https://docs.microsoft.com/office365/enterprise/view-service-health). Du kan visa detaljerad information om aktuella och tidigare problem på <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Instrumentpanel för tjänststatus</a>. Om du har ett problem som inte finns med i listan kan du få support på något av följande sätt:
+
+## <a name="online-support"></a>Onlinesupport
+
+Spara tid genom att påbörja din tjänstbegäran online. Vi hjälper dig att hitta en lösning eller så kan du ansluta dig för att få teknisk support.
 
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Om du får meddelandet ”Du har inte behörighet att komma åt den här sidan eller utföra den här åtgärden”, är du inte administratör. [Vem har administratörsbehörigheter i min verksamhet?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
 2. Välj knappen **Behöver du hjälp?**.
 
-3. I fönstret **Behöver du hjälp?** anger du vad du behöver hjälp med och trycker på Retur.
+3. I fönstret **Behöver du hjälp?** anger du vad du behöver hjälp med och trycker på **Retur**.
 
 4. Om resultatet inte hjälper kan du välja **Kontakta support**.
 
-5. Skriv en beskrivning om du vill, bekräfta ditt kontaktnummer och din e-postadress, välj önskad kontaktmetod och välj sedan **Kontakta mig**. Den uppskattade väntetiden visas i fönstret **Behöver du hjälp?**.
+5. Skriv en beskrivning av ditt problem, bekräfta ditt kontaktnummer och din e-postadress, välj önskad kontaktmetod och välj sedan **Kontakta mig**. Den uppskattade väntetiden visas i fönstret **Behöver du hjälp?**.
 
-## <a name="phone-support"></a>[Telefonsupport](#tab/phone)
+## <a name="phone-support"></a>Telefonsupport
 
 Faktureringssupport ges på engelska kl. 9–17 (9–18 i Australien), måndag till fredag.
 Teknisk support på engelska dygnet runt alla dagar.\
-Ha kontouppgifterna redo när du ringer.\
+Ha kontouppgifterna redo när du ringer.
 
 - **I Sverige ringer du 020 160 5899. **
 
@@ -64,23 +64,17 @@ Ha kontouppgifterna redo när du ringer.\
 
 - **I Storbritannien ringer du 0800 032 6417.**
 
-Om ditt supporttelefonnummer för Microsoft 365 Business inte visas ovan använder du listrutemenyn nedan för att välja land eller region.
+### <a name="phone-numbers-for-other-countries"></a>Telefonnummer för andra länder
+
+Om ditt telefonnummer till supporten inte visas ovan använder du den nedrullningsbara menyn nedan för att hitta numret för ditt land eller region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-Om du vill veta hur du öppnar en tjänstbegäran väljer du fliken **Onlinesupport** ovan.
+## <a name="virtual-support-from-the-microsoft-store"></a>Virtuell support från Microsoft Store
 
-## <a name="in-store-support"></a>[Support i butik](#tab/instore)
+Du kan nu kontakta Microsoft Store Sales och kundtjänst för att prata med en supportavdelning för att lösa problemet med Microsoft 365.
 
-Du kan nu avtala en tid med din lokala Microsoft Store med en supportavdelning för att lösa problemet med Microsoft 365.
-
-1. Gå till [schemaläggningssidan för Microsoft butiker](https://go.microsoft.com/fwlink/?LinkID=2041482) och välj **Schemalägga en avtalad tid**.
-
-2. Ange din plats och sök efter en Microsoft Store nära dig.
-
-3. Välj din butik och välj sedan **Schemalägg avtalad tid för tjänst nu**.
-
----
+Gå till sidan [Kontakta Microsoft Store support](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020) för att få länkar och telefonnummer.
 
 ::: moniker-end
 
@@ -92,15 +86,15 @@ Behöriga administratörer kan använda portalen för Office 365 som drivs av 21
 
 Det tekniska supportteamet för Office 365 hos 21Vianet felsöker bara fel som rör Office 365 som drivs av 21Vianet. Problem som beror på kundens nätverk omfattas inte av Office 365-supporten, och i sådana fall måste kunden kontakta sitt nätverksteam för att få hjälp.
 
-### <a name="community-and-self-service-support-options"></a>Supportalternativ för community och självservice
+## <a name="community-and-self-service-support-options"></a>Supportalternativ för community och självservice
 
 Självservicesupport är tillgänglig för alla användare av Office 365 som drivs av 21Vianet och innehåller verktyg och videor för felsökning, hjälpartiklar och hjälpvideor samt forum och wiki-sidor i [Office 365-communityn](https://go.microsoft.com/fwlink/p/?linkid=842838). Mer information om självhjälpsresurser finns i artikeln om [Office 365 som drivs av 21Vianet](services-in-china/services-in-china.md).
 
-### <a name="pre-sales-support"></a>Support före försäljning
+## <a name="pre-sales-support"></a>Support före försäljning
 
 Med support före försäljning för Office 365 som drivs av 21Vianet får du hjälp med prenumerationens funktioner och fördelar, jämförelser av abonnemang, priser och licensiering och med att identifiera den rätta lösningen som uppfyller dina företagsbehov. Dessutom kan du med support före försäljning få hjälp att hitta en partner och köpa och registrera dig för en provperiod. Du kan ringa på lokal kontorstid, måndag till fredag. Support före försäljning kan nås med samma telefonnummer som teknisk support. Instruktioner finns i [Kontakta support](#contact-support).
 
-### <a name="billing-and-subscription-management-support"></a>Support för fakturering och prenumerationshantering
+## <a name="billing-and-subscription-management-support"></a>Support för fakturering och prenumerationshantering
 
 Hjälp för problem med fakturering och prenumerationshantering är tillgänglig online eller via telefon under kontorstid i Kina (Beijing-tid), måndag till fredag. Support för fakturering och prenumerationshantering kan nås med samma telefonnummer och onlineprocess för tjänstbegäranden som för teknisk support. Supporttelefonnumret finns på portalen för Office 365 som drivs av 21Vianet. Instruktioner finns i [Kontakta support](#contact-support).
 
@@ -118,7 +112,7 @@ Här är några exempel på problem med fakturering och prenumerationshantering:
 
 - Avbryta en betalprenumeration
 
-### <a name="technical-support"></a>Teknisk support
+## <a name="technical-support"></a>Teknisk support
 
 Teknisk support för prenumerationer på Office 365 som drivs av 21Vianet hjälper till med grundläggande installation, konfiguration och allmän teknisk användning. I följande tabell visas några exempel på sådana problem.
 
@@ -131,7 +125,7 @@ Teknisk support för prenumerationer på Office 365 som drivs av 21Vianet hjälp
 > Här får du information om hur du kontaktar teknisk support: [Kontakta support](#contact-support).
 > Teknisk support inkluderar inte felsökning av tjänster eller tillägg från tredje part. Mer information om hur du hittar svar från andra kunder i [communityn](https://go.microsoft.com/fwlink/p/?linkid=842838).
 
-### <a name="technical-support-case-handling"></a>Ärendehantering i teknisk support
+## <a name="technical-support-case-handling"></a>Ärendehantering i teknisk support
 
 21Vianet tilldelar en allvarlighetsnivå till ett ärende när det öppnas, baserat på en bedömning av problemtypen och inverkan på kunden. I följande tabell visas exempel på problemtyper och allvarlighetsnivåer.
 
@@ -141,7 +135,7 @@ Teknisk support för prenumerationer på Office 365 som drivs av 21Vianet hjälp
 | Allvarlighetsnivå B (hög) | Tjänsten kan användas men med nedsatt funktion. Situationen har måttlig inverkan på verksamheten och kan hanteras under kontorstid. En användare, kund eller tjänst påverkas delvis. | <ul><li>Skicka-knappen i Outlook är förvrängd.</li> <li>Inställningen går inte att göra från EAC (administrationscentret för Exchange), men möjlig i Windows PowerShell.</li></ul> |
 | Allvarlighetsnivå C (icke-kritisk) | Situationen har minimal inverkan på verksamheten. Problemet är viktigt men har inte en betydande aktuell inverkan på kundens tjänst eller produktivitet. En användare upplever vissa störningar men det finns en acceptabel lösning. | <ul><li>Hur du anger användarlösenord som aldrig upphör att gälla.</li> <li>Användare kan inte ta bort kontaktinformation i Exchange Online.</li></ul> |
 
-### <a name="technical-support-initial-response-times"></a>Tiden för första svar för teknisk support
+## <a name="technical-support-initial-response-times"></a>Tiden för första svar för teknisk support
 
 Tiden för första svar baseras på allvarlighetsnivåerna som beskrivs ovan. 21Vianets kundtjänstteam följer upp med undersökning och kundkommunikation i rimlig takt enligt aktuell allvarlighetsnivå. 21Vianet förväntar sig även att kunden samarbetar på en rimlig nivå.
 
@@ -155,22 +149,22 @@ Tiden för första svar baseras på allvarlighetsnivåerna som beskrivs ovan. 21
 
 <sup>2</sup> Allvarlighetsnivå A är bara tillgänglig för kunder som har tecknat ett avtal för avancerade onlinetjänster med 21Vianet via en säljansvarig. Allvarlighetsnivå A är bara tillgänglig för teknisk support. För support för fakturering och prenumerationshantering är den högsta allvarlighetsnivån B.
 
-### <a name="technical-support-working-hours"></a>Arbetstider för teknisk support
+## <a name="technical-support-working-hours"></a>Arbetstider för teknisk support
 
 Allvarlighetsnivå A: Löpande tjänst dygnet runt
 
 Allvarlighetsnivå B/C: 09:00 ~24:00 (Beijing-tid) per dag, 365 dagar.
 
-### <a name="contact-support"></a>Kontakta support
+## <a name="contact-support"></a>Kontakta support
 
 > [!NOTE]
 > Alternativen för assisterad support är endast till för administratörer i organisationer med Office 365-abonnemang. Om du använder Office 365 men inte är administratör kan du fortfarande få support i communityforumen eller genom att kontakta din administratör.
 
-#### <a name="open-an-online-request"></a>Skapa en onlinebegäran
+### <a name="open-an-online-request"></a>Skapa en onlinebegäran
 
 Spara tid genom att påbörja din tjänstbegäran online. Välj **Support** \> **Ny tjänstbegäran** i administrationscentret för Microsoft 365.
 
-#### <a name="call-support"></a>Ring supporten
+### <a name="call-support"></a>Ring supporten
 
 Ring supporten. Om du stöter på problem med din onlinebegäran kan du ringa (86) 400-089-0365 och få support via telefon.
 
@@ -178,7 +172,7 @@ Ring supporten. Om du stöter på problem med din onlinebegäran kan du ringa (8
 
 21Vianet förstår att det är en viktig aspekt med molntjänster att få teknisk support i tid från kvalificerad personal. Lika viktigt är den avgörande roll som kundens IT-avdelning spelar i supporten för användarna.
 
-#### <a name="administrator-roles-and-responsibilities"></a>Administratörens roller och ansvar
+### <a name="administrator-roles-and-responsibilities"></a>Administratörens roller och ansvar
 
 Personer med administratörsroller är de enda i kundens organisation som är behöriga att få åtkomst till administrationsavsnittet på portalen för Office 365 som drivs av 21Vianet och att kommunicera direkt med 21Vianet om Office 365-tjänstbegäranden.
 
@@ -204,7 +198,7 @@ Administratörens roll är att:
 
 Administratören förväntas ge inledande hjälp till kundens användare. Men om administratören inte kan lösa problemen med hjälp av resurserna för självservicesupport ska han/hon [kontakta supporten](#contact-support).
 
-#### <a name="21vianet-support-role"></a>21Vianet-supportrollen
+### <a name="21vianet-support-role"></a>21Vianet-supportrollen
 
 21Vianets supportroll är att:
 
@@ -222,11 +216,11 @@ Administratören förväntas ge inledande hjälp till kundens användare. Men om
 
 - kontinuerligt samla in kundfeedback via enkäter om hur tjänsten ska förbättras.
 
-### <a name="feature-availability"></a>Funktionstillgänglighet
+## <a name="feature-availability"></a>Funktionstillgänglighet
 
 Information om funktioners tillgänglighet i olika Office 365-abonnemang finns i [beskrivningen av Office 365-tjänster](https://go.microsoft.com/fwlink/p/?linkid=846911)
 
-### <a name="follow-us-on-wechat"></a>Följ oss på WeChat
+## <a name="follow-us-on-wechat"></a>Följ oss på WeChat
 
 Skanna den här QR-koden om du vill följa oss på WeChat och få de senaste uppdateringarna för Office 365 som drivs av 21Vianet.
 
@@ -243,7 +237,7 @@ Som administratör för Office 365 Germany får du fri tillgång till vår kunni
 > [!NOTE]
 > Alla supportalternativ nedan gäller för Microsoft Cloud Germany. Mer information om hur Microsoft använder sig av de data du tillhandahåller när du kontaktar supporten för Microsoft finns i [sekretesspolicyn](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
-### <a name="get-assisted-support"></a>Få assisterad support
+## <a name="get-assisted-support"></a>Få assisterad support
 
 Alternativen för assisterad support är endast till för administratörer i organisationer med abonnemang på Office 365 Germany. Du som inte är administratör, men som använder Office 365 Germany på jobbet eller i skolan, kan få support i communityforumen eller genom att kontakta administratören eller IT-avdelningen.
 
@@ -253,10 +247,10 @@ Alternativen för assisterad support är endast till för administratörer i org
 
 | Region | Telefonnummer | Tider |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tyskland | 0800 589 2330 | Faktureringssupport: Tyska: mån–fre 9–17 Berlin, engelska: mån–fre 9–17 Berlin. Teknisk support: Tyska: mån–sön, dygnet runt, engelska: mån–sön, dygnet runt. Alternativt telefonnummer: 069 380 789 305 (lokala samtalsavgifter) |
-| Alla andra marknader i det europeiska ekonomiska samarbetsområdet | (+49) 69 380 789 305 | Faktureringssupport: Tyska: mån–fre 9–17 Berlin (UTC+1), engelska: mån–fre 9–17 Berlin (UTC+1). Teknisk support: Tyska: mån–sön, dygnet runt, engelska: mån–sön, dygnet runt. Telefonsupport är tillgänglig via internationella samtal till Tyskland. Internationell samtalsavgift. Du kan undvika samtalsavgifter genom att skicka ett supportärende via administrationscentret. |
+| Tyskland | 0800&nbsp;589&nbsp;2330 | Faktureringssupport: <ul><li>Tyska: mån–fre, 09–17, Berlin</li><li>Engelska: mån–fre, 09–17, Berlin</li></ul>Teknisk support: <ul><li>Tyska: mån–sön, dygnet runt</li><li>Engelska: mån–sön, dygnet runt</li></ul>Alternativt telefonnummer: 069 380 789 305 (lokal samtalsavgift) |
+| Alla andra marknader i det europeiska ekonomiska samarbetsområdet | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Faktureringssupport: <ul><li>German: Mon-Fri 9-5 Berlin(UTC+1)</li><li>Engelska: mån–fre, 09–17, Berlin (UTC +1)</li></ul>Teknisk support: <ul><li>Tyska: mån–sön, dygnet runt</li><li>Engelska: mån–sön, dygnet runt</li></ul>Telefonsupporten är tillgänglig via internationellt samtal till Tyskland. Internationell samtalsavgift. Du kan undvika samtalsavgifter genom att skicka ett supportärende via administrationscentret. |
 
-### <a name="let-our-community-help"></a>Låt vår community hjälpa dig
+## <a name="let-our-community-help"></a>Låt vår community hjälpa dig
 
 Du kan också [söka i Microsoft 365 for business-forumen](https://go.microsoft.com/fwlink/p/?LinkId=518605) efter kända problem och populära ämnen eller ställa en ny fråga. Forumen övervakas av Microsofts kunniga supportpersonal som kan hjälpa dig att lösa problemet.
 

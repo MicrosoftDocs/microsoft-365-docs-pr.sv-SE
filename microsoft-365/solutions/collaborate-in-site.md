@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Lär dig mer om konfigurationsstegen för Microsoft 365 som krävs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+description: Lär dig mer om de konfigurationssteg för Microsoft 365 som krävs för att konfigurera en SharePoint-webbplats för samarbete med gäster.
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160009"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527912"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Samarbeta med gäster på en webbplats
 
@@ -30,7 +31,7 @@ I den här artikeln går vi igenom de konfigurationssteg för Microsoft 365 som 
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
-I det här videoklippet visas de konfigurationssteg som beskrivs i det här dokumentet.</br>
+Den här videon visar konfigurationsstegen som beskrivs i det här dokumentet.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
@@ -44,7 +45,7 @@ Kontrollera inställningarna för organisationsrelationer för att säkerställa
 
 Så här anger du inställningar för organisationsrelationer
 
-1. Logga in på [https://portal.azure.com](https://portal.azure.com)Microsoft Azure på .
+1. Logga in på Microsoft Azure på [https://portal.azure.com](https://portal.azure.com) .
 2. Klicka på Azure **Active Directory**i den vänstra navigeringen .
 3. Klicka på **Organisationsrelationer**i **fönstret Översikt.**
 4. Klicka på **Inställningar**i fönstret **Organisationsrelationer** .
@@ -70,7 +71,7 @@ Så här anger du gästinställningar för Microsoft 365 Grupper
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Delningsinställningar för SharePoint-organisationsnivå
 
-För att gästerna ska få tillgång till SharePoint-webbplatser måste delningsinställningarna på SharePoint-organisationsnivå tillåta delning med gäster.
+För att gästerna ska få åtkomst till SharePoint-webbplatser måste delningsinställningarna på SharePoint-organisationsnivå tillåta delning med gäster.
 
 Inställningarna på organisationsnivå avgör vilka inställningar som är tillgängliga för enskilda webbplatser. Webbplatsinställningarna kan inte vara mer tillåtande än inställningarna på organisationsnivå.
 
@@ -81,7 +82,7 @@ Om du vill tillåta oautentiserade fil- och mappdelning väljer du **Alla**. Om 
 
 Så här anger du delningsinställningar för SharePoint-organisationsnivå
 
-1. Klicka på **SharePoint**under **Administrationscenter i administrationscentret**för Microsoft 365, i den vänstra navigeringen.
+1. Klicka på **SharePoint**under Administrationscenter i administrationscentret för Microsoft 365 i det vänstra **navigeringscentret.**
 2. I navigeringsfönstret till vänster i administrationscentret för SharePoint klickar du på **Delning**.
 3. Kontrollera att extern delning för SharePoint är inställt **på Alla** eller Nya och **befintliga gäster**.
 4. Om du har gjort ändringar klickar du på **Spara**.
@@ -103,9 +104,9 @@ Vi bjuder in användare senare. Därefter är det viktigt att kontrollera delnin
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Delningsinställningar för SharePoint-webbplatsnivå
 
-Kontrollera delningsinställningarna på webbplatsnivå för att se till att de tillåter den typ av åtkomst som du vill ha för den här webbplatsen. Om du till exempel anger inställningarna på organisationsnivå till **Alla**, men vill att alla gäster ska autentisera för den här webbplatsen, kontrollerar du att delningsinställningarna på webbplatsnivå är inställda på **Nya och befintliga gäster**.
+Kontrollera delningsinställningarna på webbplatsnivå för att se till att de tillåter den typ av åtkomst som du vill ha för den här webbplatsen. Om du till exempel ställer in inställningarna på organisationsnivå för **Alla**, men vill att alla gäster ska autentisera för den här webbplatsen, kontrollerar du att delningsinställningarna på webbplatsnivå är inställda på **Nya och befintliga gäster**.
 
-Observera att webbplatsen inte kan delas med oautentiserade personer (**Någon** inställning), men enskilda filer och mappar kan.
+Observera att webbplatsen inte kan delas med oautentiserade personer (**Alla** inställningar), men enskilda filer och mappar kan.
 
 ![Skärmbild av inställningar för extern delning för SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -118,7 +119,7 @@ Så här anger du delningsinställningar på webbplatsnivå
 
 ## <a name="invite-users"></a>Bjud in användare
 
-Gästdelningsinställningarna är nu konfigurerade, så att du kan börja lägga till interna användare och gäster på webbplatsen. Webbplatsåtkomsten styrs via den associerade Microsoft 365-gruppen, så vi lägger till användare där.
+Gästdelningsinställningarna är nu konfigurerade, så att du kan börja lägga till interna användare och gäster på din webbplats. Webbplatsåtkomsten styrs via den associerade Microsoft 365-gruppen, så vi kommer att lägga till användare där.
 
 Så här bjuder du in interna användare till en grupp
 1. Navigera till den webbplats där du vill lägga till användare.
@@ -130,7 +131,7 @@ Gästanvändare kan inte läggas till från webbplatsen. Du måste lägga till d
 
 Så här bjuder du in gäster till en grupp
 1. Klicka på den grupp där du vill lägga till medlemmar under **Grupper**i Outlook på webben.
-2. Öppna gruppkontaktkortet och klicka sedan på Lägg **till medlemmar**under **Fler alternativ** (...).
+2. Öppna gruppkontaktkortet och klicka sedan på Lägg **till medlemmar**under **Fler alternativ** (....
 3. Skriv e-postadresserna till de gäster som du vill bjuda in och klicka sedan på **Lägg till**.
 4. Klicka på **Stäng**.
 

@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Skydda mot nätfiske och andra attacker med Microsoft 365 för kampanjer.
-ms.openlocfilehash: 0cd96cb73ad3d0b38ab1e5ff31c913d97528c2d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e0c6a52209c56e75c6ff1210f26e6926e4d7d32
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632797"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527144"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Skydda ohanterade Windows 10-datorer och Mac-datorer
 
@@ -50,9 +51,9 @@ Om din Windows 10-dator eller Mac inte hanteras av din organisation måste du ko
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 **Aktivera enhetskryptering**<p>
 
-Enhetskryptering är tillgängligt på ett brett spektrum av Windows-enheter och hjälper till att skydda dina data genom att kryptera dem. Om du aktiverar enhetskryptering kan endast behöriga personer komma åt din enhet och dina data. Instruktioner finns [i aktivera enhetskryptering.](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)
+Enhetskryptering är tillgängligt på ett brett spektrum av Windows-enheter och hjälper till att skydda dina data genom att kryptera dem. Om du aktiverar enhetskryptering kan endast behöriga personer komma åt din enhet och dina data. Instruktioner [finns i aktivera enhetskryptering.](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)
 
- Om enhetskryptering inte är tillgängligt på enheten kan du aktivera [standardBitLocker-kryptering](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) i stället. (BitLocker är inte tillgängligt i Windows 10 Home Edition.) 
+ Om enhetskryptering inte är tillgängligt på enheten kan du aktivera [standardBitLocker-kryptering](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) i stället. (BitLocker är inte tillgängligt i Windows 10 Home edition.) 
 
 
 **Skydda enheten med Windows Security**<p>
@@ -63,7 +64,7 @@ Windows Update hämtar uppdateringar för Windows Security automatiskt för att 
 Om du har en tidigare version av Windows och använder Microsoft Security Essentials är det en bra idé att flytta till Windows Security. Mer information finns i [Skydda min enhet med Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
 **Aktivera Windows-brandväggen**<p>
-Du bör alltid köra Windows-brandväggen även om du har aktiverat en annan brandvägg. Om du inaktiverar Windows-brandväggen kan enheten (och nätverket, om du har en) bli mer sårbara för obehörig åtkomst. Instruktioner finns [i Aktivera eller inaktivera Windows-brandväggen](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)
+Du bör alltid köra Windows-brandväggen även om du har aktiverat en annan brandvägg. Om du inaktiverar Windows-brandväggen kan enheten (och nätverket, om du har en) bli mer sårbar för obehörig åtkomst. Instruktioner för [Aktivera eller inaktivera Windows-brandväggen](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 **Använda FileVault för att kryptera din Mac-disk**<p>
@@ -72,7 +73,7 @@ Diskkryptering skyddar data när enheter försvinner eller blir stulna. FileVaul
 **Skydda din mac från skadlig kod**<p>
 Microsoft rekommenderar att du installerar och använder tillförlitligt antivirusprogram på din Mac. Se följande artikel för en lista med alternativ: [Bästa Mac antivirus 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-Du kan också minska risken för skadlig kod genom att endast använda programvara från tillförlitliga källor. Med inställningarna i säkerhets- & sekretessinställningarna kan du ange de programvarukällor som är installerade på din Mac. Mer information finns i [skydda din Mac från skadlig kod](https://support.apple.com/kb/PH25087).
+Du kan också minska risken för skadlig kod genom att endast använda programvara från tillförlitliga källor. Med inställningarna i säkerhetsinställningarna & sekretessinställningarna kan du ange de programvarukällor som är installerade på din Mac. Mer information finns i [skydda din Mac från skadlig kod](https://support.apple.com/kb/PH25087).
 
 **Aktivera brandväggsskydd**<p>
 Använd brandväggsinställningar för att skydda din Mac från oönskad kontakt som initieras av andra datorer när du är ansluten till Internet eller ett nätverk. Utan det här skyddet kan din Mac vara mer sårbar för obehörig åtkomst. Se [om programmet brandväggen](https://support.apple.com/HT201642) för instruktioner.

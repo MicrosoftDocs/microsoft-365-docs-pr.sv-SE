@@ -5,21 +5,40 @@ keywords: ändra historik
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
-ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
+ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45107605"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528042"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
 
 I den här artikeln visas nya och uppdaterade artiklar i [dokumentationen till Microsoft Managed Desktop](index.yml). "Uppdaterade" artiklar är de som har haft materialtillägg eller korrigeringar - mindre korrigeringar som korrigering av stavfel, stil eller formateringsproblem listas inte. Du kan alltid visa historiken för specifika åtaganden (inklusive information om eventuella ändringar) genom att besöka [reporäntan på GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="july-2020"></a>Juli 2020
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Microsofts appkrav för hanterade skrivbord](service-description/mmd-app-requirements.md) | Uppdaterad artikel
+[Efterlevnad](intro/compliance.md) | Uppdaterad artikel
+[Kom igång med appens kontroll](get-started/get-started-app-control.md) | Uppdaterad artikel
+[Arbeta med appens kontroll](working-with-managed-desktop/work-with-app-control.md) | Uppdaterad artikel
+[Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
+[Appkontroll](service-description/app-control.md) | Uppdaterad artikel
+[Nätverks konfiguration för Microsoft Hanterat skrivbord](get-ready/network.md) | Uppdaterad artikel
+[Ny Microsoft Edge-app](get-started/edge-browser-app.md) | Uppdaterad artikel
+[Få tillgång till administratörsportalen](get-started/access-admin-portal.md) | Ny artikel
+[Appkontroll](service-description/app-control.md) | Ny artikel
+[Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Desktop-enheter](get-started/project-visio.md) | Uppdaterad artikel
 
 ## <a name="june-2020"></a>Juni 2020
 Ny eller ändrad artikel | Beskrivning
