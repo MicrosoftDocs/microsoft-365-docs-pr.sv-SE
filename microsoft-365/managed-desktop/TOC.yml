@@ -98,7 +98,7 @@
           items:
             - name: Microsoft Project och Microsoft Visio
               href: get-started/project-visio.md
-            - name: Nya Microsoft Edge-appar
+            - name: Nya Microsoft Edge
               href: get-started/edge-browser-app.md
     - name: Arbeta med Microsoft Hanterat skrivbord
       href: working-with-managed-desktop/index.md
