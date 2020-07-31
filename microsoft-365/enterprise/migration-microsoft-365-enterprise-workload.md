@@ -2,7 +2,7 @@
 title: Migrering till Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 07/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gå igenom processen att migrera versioner av Microsoft Office, Office-servrar och Windows till Microsoft 365 Enterprise för hela organisationen.
-ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 05654e4714d2328f2f5853ed49df83a907e580f6
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011801"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528066"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrering till Microsoft 365 Enterprise
+
+
+>[!Note]
+>Söker du efter verktyg som hjälper dig att migrera ditt *innehåll* till Microsoft 365?  Om du migrerar innehåll från nätverksfilresurser, SharePoint Server eller andra molntjänster har vi ett kostnadsfritt migreringsverktyg som passar dina behov. Läs mer om våra verktyg för KOSTNADSFRIA migreringar på:
+>
+>[Migrera ditt innehåll till Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 
 De flesta företag och organisationer har en heterogen miljö med flera versioner av operativsystem, klientprogramvara och serverprogram. Microsoft 365 Enterprise innehåller de säkraste versionerna av dessa nyckelkomponenter i IT-infrastrukturen, med produktivitetsfunktioner som är utformade för att dra nytta av molntekniken.
 

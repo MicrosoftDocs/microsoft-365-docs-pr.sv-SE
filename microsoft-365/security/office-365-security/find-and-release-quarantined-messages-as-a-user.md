@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
-ms.openlocfilehash: 01125b7aa0a89c27cdc8abc5ebb46da4b11ac504
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 37392034f6aef3b40dd70ceb10ec41c20abfacbf
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936989"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527464"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -40,7 +40,7 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
 
 - Administratörer kan även [aktivera skräppostaviseringar för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) i principer för skräppostskydd. Användare kan släppa skräppostmeddelanden i karantän men inte nätfiskemeddelanden i karantän direkt från dessa aviseringar. Mer information finns i [Skräppostaviseringar för slutanvändare i EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Meddelanden som har satts i karantän för nätfiske via e-post med hög konfidens, skadlig kod eller via e-postflödesregler (kallas även transportregler) är endast tillgängliga för administratörer. Nätfiskemeddelanden kan granskas och frisläppas av användarna. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
+- Meddelanden som har satts i karantän för nätfiske via e-post med hög konfidens, skadlig kod eller via e-postflödesregler (kallas även transportregler) är endast tillgängliga för administratörer. Nätfiskemeddelanden kan granskas av användare men bara ges ut av administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
 
 - Du kan bara släppa ett meddelande och rapportera det som en falsk positiv identifiering (inte skräppost) en gång.
 
