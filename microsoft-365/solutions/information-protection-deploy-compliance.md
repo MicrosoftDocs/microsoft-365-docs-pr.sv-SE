@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Läs om hur du använder Efterlevnadspoäng och Efterlevnadshanteraren för att förbättra din skyddsnivå för personuppgifter.
-ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b1d465ad03a6aad5370f76b2cdde0657efd2f79
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126563"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521059"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Använd Efterlevnadspoäng och Efterlevnadshanteraren för att hantera förbättringsåtgärder
 

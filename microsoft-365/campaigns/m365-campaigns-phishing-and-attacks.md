@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,21 +24,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Skydda mot nätfiske och andra attacker med Microsoft 365 för kampanjer.
-ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 99b578c0b4f36d107d881d8b424ee899a937aa88
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165715"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527168"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Skydda dig mot nätfiske och andra attacker
 
-Microsoft 365 innehåller många skydd för att skydda mot attacker, men det finns saker du kan göra själv för att begränsa och minimera risken för onlineattacker.
+Microsoft 365 innehåller många skydd för att skydda mot attacker, men det finns saker du kan göra själv för att begränsa och minimera risken för online-attacker.
 
-- **Skräppost eller skräppost** Det finns många anledningar till att du kan få skräppost och inte all skräppost är densamma. Du kan dock minska det som når fram till dig och därmed minska risken för attacker genom att filtrera bort skräppost.
+- **Skräppost eller skräppost** Det finns många anledningar till att du kan få skräppost och inte alla skräppost är desamma. Du kan dock minska det som når fram till dig och därmed minska risken för attacker genom att filtrera bort skräppost.
 - **Nätfiske** Ett nätfiskebedrägeri är ett e-postmeddelande som verkar legitimt men som är ett försök att få din personliga information eller stjäla dina pengar.
 - **Spoofing (Spoofing)** Bedragare kan också använda en teknik som kallas spoofing för att få det att se ut som om du har fått ett e-postmeddelande från dig själv. 
-- **Skadlig programvara** är skadlig programvara som kan installeras på datorn, vanligtvis installerad efter att du har klickat på en länk eller öppnat ett dokument från ett e-postmeddelande. Det finns olika typer av skadlig kod (till exempel ransomware, när datorn tas över), men du vill inte ha någon av dem. 
+- **Skadlig programvara** är skadlig programvara som kan installeras på datorn, vanligtvis installeras efter att du har klickat på en länk eller öppnat ett dokument från ett e-postmeddelande. Det finns olika typer av skadlig kod (till exempel ransomware, när datorn tas över), men du vill inte ha någon av dem. 
 
 ## <a name="best-practices"></a>Metodtips
 
@@ -47,15 +48,15 @@ Följ dessa [10 tips om hur man kan bidra till att minska spam](https://support.
 
 **Rapportera det!**
 
-Rapportera alla nätfiskemeddelanden eller andra bluffmeddelanden som du får. Markera meddelandet och välj **Rapportmeddelande** i menyfliksområdet.
-Här finns mer information om [rapportering av skräppost och nätfiskemeddelanden.](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+Rapportera alla nätfiskemeddelanden eller andra bluffmeddelanden som du får. Markera meddelandet och välj **Rapportera meddelande** i menyfliksområdet.
+Här finns mer information om [hur du anmäler skräppost och skräppost.](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
 **Undvik nätfiske**
 - Svara aldrig på ett e-postmeddelande som ber dig att skicka personlig information eller kontoinformation.
-- Om du får ett e-postmeddelande som ser misstänkt ut eller ber dig om den här typen av information klickar du aldrig på länkar som ska ta dig till ett företags webbplats.
+- Om du får ett e-postmeddelande som ser misstänkt ut eller ber dig om den här typen av information klickar du aldrig på länkar som ska ta dig till en företagswebbplats.
 - Öppna aldrig någon fil som är kopplad till ett e-postmeddelande med misstänkt utseende.
 - Om e-postmeddelandet verkar komma från ett företag kontaktar du företagets kundtjänst via telefon eller webbläsare för att se om e-postmeddelandet är legitimt.
-- Sök på webben efter e-ämnesraden följt av ordet bluff för att se om någon annan har rapporterat denna bluff.
+- Sök på webben efter e ämnesraden följt av ordet bluff för att se om någon annan har rapporterat denna bluff.
 
 Läs om fem vanliga typer av bedrägerier i [Hantera missbruk, nätfiske eller förfalskning](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
@@ -69,7 +70,7 @@ Ladda ner den här infografiken med tips för dig och medlemmarna i ditt kampanj
 
 [![Hjälpen skyddar din kampanjinformationsgrafik](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
-[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
+[PDF-dokument](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  |  [PowerPoint (på andra)](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## <a name="set-it-up"></a>Konfigurera
 

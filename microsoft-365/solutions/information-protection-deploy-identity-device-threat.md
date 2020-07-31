@@ -1,5 +1,5 @@
 ---
-title: Använda identitets-, enhets- och hotskydd för dataskyddsreglering
+title: Använda identitets-, enhets- och hotskydd för dataskydd
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -13,27 +13,27 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Förhindra personuppgiftsbrott med microsoft 365-tjänster för personuppgiftsskydd och hotskydd.
-ms.openlocfilehash: 74894037ef2fe56aeb5bc44340cd8a946863baff
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695085"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520987"
 ---
-# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Använda identitets-, enhets- och hotskydd för dataskyddsreglering
+# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Använda identitets-, enhets- och hotskydd för dataskydd
 
-Microsoft 365 tillhandahåller ett antal funktioner för identitets-, enhets- och hotskydd som organisationer kan använda för att följa reglerna för datasekretessrelaterad efterlevnad. I den här artikeln beskrivs vad de datasekretessregler som krävs i dessa områden och en lista över relaterade Funktioner och tjänster från Microsoft 365 med länkar till mer information som hjälper dig att hantera implementeringskrav.
+Microsoft 365 tillhandahåller ett antal funktioner för identitets-, enhets- och hotskydd som organisationer kan använda för att följa reglerna för datasekretessrelaterad efterlevnad. I den här artikeln beskrivs vad de datasekretessregler som krävs i dessa områden och en lista över relaterade funktioner och tjänster från Microsoft 365 med länkar till mer information som hjälper dig att hantera implementeringskrav.
 
-## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Hur identitet, enhet och hotskydd relaterar till datasekretessreglering
+## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Hur identitet, enhet och hotskydd relaterar till dataskyddsreglering
 
 Även om bestämmelserna om datasekretess varierar i fråga om deras specificitet, ingår kärnan i vad de kräver i GDPR:s artikel 5.1 f, där det anges att 
 
 - Personuppgifter ska behandlas på ett sätt som säkerställer lämplig säkerhet för personuppgifterna, inklusive skydd mot obehörig eller olaglig behandling och mot oavsiktlig förlust, förstörelse eller skada, med hjälp av lämpliga tekniska eller organisatoriska åtgärder ("integritet och sekretess").
 
-Eftersom personuppgiftsbrott ofta orsakas av kompromettering av administrativa konton eller slutanvändarkonto och åtkomst till skadligt system. Till exempel, en admin konto hacka kan resultera i exfiltration av kundens kreditkortsnummer eller annan personlig information. Alla allmänt tillrådliga identitets-, enhets- och hotskydd som är tillgängliga med Microsoft 365 bör implementeras, vilket återspeglas i din efterlevnadspoäng.
+Eftersom personuppgiftsbrott ofta orsakas av kompromettering av administrativa konton eller slutanvändarkonto och åtkomst till skadliga system. Till exempel, en admin konto hacka kan resultera i exfiltration av kundens kreditkortsnummer eller annan personlig information. Alla allmänt tillrådliga identitets-, enhets- och hotskydd som är tillgängliga med Microsoft 365 bör implementeras, vilket återspeglas i din efterlevnadspoäng.
 
 ## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a>Använda resultaten av ditt bedömningsarbete och efterlevnadspoäng
 
@@ -47,10 +47,10 @@ Om dessa väljs ut i vår urvalsuppsättning med fyra huvudregler för datasekre
 
 Använd [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) för identitet och kategorin Control **Access,** med vilken du kan:
 
-- Implementera reprisresistent autentisering (för att förhindra "Man in the middle"-attacker)
+- Implementera rearesistent autentisering (för att förhindra "Man in the middle"-attacker)
 - Blockera äldre autentisering.
 - Konfigurera användarrisk- och användaråtkomstriskprinciper.
-- Aktivera villkorlig åtkomst och MFA (Multi Factor Authentication) för administratörer och icke-administratörer.
+- Aktivera villkorad åtkomst och MFA (Multi factor Authentication) för administratörer och icke-administratörer.
 - Konfigurera och tillämpa lösenordsprinciper.
 - Begränsa åtkomsten till privilegierade konton med Azure AD Privileged Identity Management.
 - Inaktivera åtkomst vid uppsägning.

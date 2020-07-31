@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- M365solutions
+- m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: dbc6ba10b966d7d2630177d2380a041422d5ce52
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: 30ecb25ca68b23278aa8b2905c5f3aa8703cb7f1
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724983"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522091"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera hotskyddsfunktioner i Microsoft 365
 
@@ -185,7 +185,7 @@ Microsoft 365 innehåller följande resurser för att informera användare i org
 |Koncept  |Resurser  |
 |---------|---------|
 |Microsoft 365     |[Anpassningsbara utbildningsvägar](https://docs.microsoft.com/office365/customlearning/) <p>Dessa resurser kan hjälpa dig att sätta ihop utbildning för slutanvändare i din organisation        |
-|Microsoft 365 Säkerhetscenter |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
+|Microsoft 365-säkerhet |[Utbildningsmodul: Skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur Microsoft 365-säkerhetsfunktioner fungerar tillsammans och formulera fördelarna med dessa säkerhetsfunktioner. |
 |Multifaktorautentisering     | [Tvåstegsverifiering: Vad är den ytterligare verifieringssidan?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.    |
 
 Utöver den här vägledningen rekommenderar Microsoft att användarna vidtar de åtgärder som beskrivs i den här artikeln: [Skydda ditt konto och dina enheter från hackare och skadlig kod](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Dessa åtgärder omfattar:

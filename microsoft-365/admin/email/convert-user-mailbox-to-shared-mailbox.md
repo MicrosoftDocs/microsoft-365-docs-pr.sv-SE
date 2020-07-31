@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Lär dig att konvertera en privat postlåda till en delad postlåda som kan nås av flera användare. '
-ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391536"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521035"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertera en användarpostlåda till en delad postlåda
 
@@ -35,7 +35,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 
 - Användarpostlådan som du konverterar behöver en licens som tilldelats den innan du konverterar den till en delad postlåda. Annars visas inte alternativet för att konvertera postlådan. Om du har tagit bort licensen lägger du till den igen så att du kan konvertera postlådan. När du har konverterat postlådan till en delad postlåda kan du ta bort licensen från användarens konto.
 
-- Delade postlådor kan ha upp till 50 GB data utan att någon tilldelad licens. Om postlådan ska innehålla mer data än det behöver du tilldela en licens till den. Du kanske måste ta bort flera stora e-postmeddelanden (t.ex. sådana med bifogade filer) från den delade postlådan för att krympa dess storlek så att du kan ta bort licensen.
+- Delade postlådor kan ha upp till 50 GB data utan att en licens har tilldelats dem. Om du vill behålla mer data än så behöver du en licens som tilldelats den. Du kan behöva ta bort en massa stora e-postmeddelanden (säg, de med bilagor) från den delade postlådan för att krympa den så att du kan ta bort licensen.
 
 - Ta inte bort den gamla användarens konto. Det krävs för att fästa den delade postlådan. Om du redan har tagit bort användarkontot läser du [Konvertera en borttagen användares postlåda](#convert-the-mailbox-of-a-deleted-user).
 
@@ -49,7 +49,7 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 
 3. Markera användarpostlådan. Under **Konvertera till delad postlåda**väljer du **Konvertera**.
 
-4. Om postlådan är mindre än 50 GB kan du ta bort [licensen från användaren](../manage/remove-licenses-from-users.md) och sluta betala för den. Ta inte bort användarens konto. Den delade postlådan behöver ha den som en fästpunkt. Om du konverterar postlådan för en medarbetare som lämnar organisationen bör du vidta ytterligare åtgärder för att se till att de inte kan logga in längre. Se [Ta bort en tidigare anställd från Microsoft 365](../add-users/remove-former-employee.md).
+4. Om postlådan är mindre än 50 GB kan du ta bort [licensen från användaren](../manage/remove-licenses-from-users.md)och sluta betala för den. Ta inte bort användarens konto. Den delade postlådan behöver ha den som en fästpunkt. Om du konverterar postlådan för en medarbetare som lämnar organisationen bör du vidta ytterligare åtgärder för att se till att de inte kan logga in längre. Se [Ta bort en tidigare anställd från Microsoft 365](../add-users/remove-former-employee.md).
     
 5. Allt annat du behöver veta om delade postlådor finns i [Om delade postlådor](about-shared-mailboxes.md) och [Skapa en delad postlåda](create-a-shared-mailbox.md).
 
@@ -63,8 +63,8 @@ När du konverterar en användares postlåda till en delad postlåda sparas alla
 
 3. Återställ användarens lösenord.
 
-> [!NOTE]
-> Det krävs inte att återställa användarens lösenord under postlådekonvertering. Men om lösenordet inte återställs **fortsätter det ursprungliga användarnamnet och lösenordet att fungera** när postlådekonverteringen är klar.
+   > [!NOTE]
+   > Det krävs inte att återställa användarens lösenord under postlådekonvertering. Men om lösenordet inte återställs **fortsätter det ursprungliga användarnamnet och lösenordet att fungera** när postlådekonverteringen är klar.
 
 4. Välj **Konvertera till delad postlåda**under Fler **åtgärder**på fliken **E-post** . 
 
@@ -132,19 +132,19 @@ Anta att du har tagit bort ett användarkonto och du nu vill konvertera använda
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Konvertera en användares postlåda i en hybridmiljö
 
-Om den här delade postlådan finns i en hybridmiljö rekommenderar vi **starkt** (nästan behöver!) att du flyttar tillbaka användarpostlådan till lokalt, konverterar användarpostlådan till en delad postlåda och sedan flyttar tillbaka den delade postlådan till molnet.
+Om den här delade postlådan finns i en hybridmiljö rekommenderar vi **starkt** (nästan behöver!) att du flyttar tillbaka användarpostlådan till lokalt, konverterar användarpostlådan till en delad postlåda och sedan flyttar tillbaka den delade postlådan till molnet. 
 
 Här är anledningen: om du konverterar postlådan i molnet kan den konverteras, men lokalt fortfarande tror att postlådan är användarpostlådan, eftersom den nya verkligheten inte synkroniseras tillbaka till lokalt.
 
 Vanligtvis är detta inte ett problem, men det finns vissa scenarier där lokala attribut (som tror att postlådan är användarpostlådan) kan skriva över de nya molnversionerna av dessa attribut, och som ett resultat kan postlådan konverteras tillbaka. Detta är ett problem eftersom användaren brevlådor kräver licenser **eller de är mjuka bort efter 30 dagar!**
 
-Vi har tagit upp de flesta av anledningarna till att detta händer men det kan fortfarande hända, men sällan. Det är bäst att vara säker och flytta brevlådan tillbaka till lokala.
+Vi har tagit upp de flesta av anledningarna till att detta händer men det kan fortfarande hända, men sällan. Det är bäst att vara säker och flytta tillbaka postlådan till lokalt, konvertera den och sedan flytta tillbaka den delade postlådan till molnet. Den här rekommenderade lösningen bryter inte mot licensavtalet för hybridmiljöer eftersom förekomsten av användarpostlådan lokalt bara är tillfällig. Du skulle bryta mot din licens om du underhållit användarpostlådan eller den delade postlådan i din lokala organisation och inte flyttade tillbaka den till molnet.
 
 > [!NOTE]
-> Om du är en del av organisationshantering eller mottagarhantering kan du använda exchange management-gränssnittet för att ändra en användarpostlåda till en delad postlåda lokalt. Till exempel `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
+> Om du är medlem i rollgruppen Organisationshantering eller Mottagarhantering kan du använda exchange management-gränssnittet för att ändra en användarpostlåda till en delad postlåda lokalt. Till exempel `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
 
 > [!TIP]
-> Se lösningen i den här supportlösningen för instanser när [delade postlådor oväntat konverteras till användarpostlådor](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)
+> Se lösningen i den här supportlösningen för instanser när [delade postlådor oväntat konverteras till användarpostlådor](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di).
   
 ## <a name="related-articles"></a>Relaterade artiklar
 

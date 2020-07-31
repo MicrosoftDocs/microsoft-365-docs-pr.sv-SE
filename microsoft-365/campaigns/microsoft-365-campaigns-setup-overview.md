@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Installationsöversikt för Microsoft 365 för kampanjer
-ms.openlocfilehash: 463d7cebf88ea830048c25e2781eac4aa379e30a
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 17d8b90c5dc15009340454491c57802d7ac1b496
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165703"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526858"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Konfigurera Microsoft 365 för kampanjer
 
@@ -56,12 +57,12 @@ Det tar några minuter för användarna att konfigurera enheter för att arbeta 
 Så här konfigurerar du användarenheter: 
 1. Varje användare [ställer in sina mobila enheter](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json). 
 2. För ohanterade enheter konfigurerar användare sina [datorer och Mac-datorer](m365-campaigns-protect-pcs-macs.md). För nyckelpersonal rekommenderar vi att du använder [hanterade enheter](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) för ännu bättre skydd. För alla enheter bör du konfigurera [multifaktorautentisering](m365-campaigns-multifactor-authenication.md). 
-3. Alla användare bör lära sig att skydda sig själva och din kampanj genom att lära sig om [nätfiske och andra attacker](m365-campaigns-phishing-and-attacks.md). Den här [infografiken](m365-campaigns-protect-campaign-infographic.md) kan också hjälpa användarna att förstå hur du skyddar din kampanj från onlinehot.
+3. Alla användare bör lära sig att skydda sig själva och din kampanj genom att lära sig mer om [nätfiske och andra attacker](m365-campaigns-phishing-and-attacks.md). Den här [infografiken](m365-campaigns-protect-campaign-infographic.md) kan också hjälpa användarna att förstå hur du skyddar din kampanj från onlinehot.
 
 ## <a name="contact-support"></a>Kontakta support
 
  **Om du behöver kontakta supporten:**
   
-Som Microsoft 365-administratör har du tillgång till vårt kundsupportteam, ** [Kontakta support för företagsprodukter - Hjälp om administratörer](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
+Som Microsoft 365-administratör har du tillgång till vår kundtjänst, ** [Kontakta support för företagsprodukter - Hjälp om administratörer](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 

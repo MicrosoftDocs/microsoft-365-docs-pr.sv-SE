@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Skaffa Microsoft 365 för kampanjer så att du kan skydda din kampanj från cybersäkerhetshot mot e-post, data och kommunikation.
-ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 13e0f66b388e9041e1654a7a45226d3204499618
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635630"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527336"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Skaffa Microsoft 365 för kampanjer
 
@@ -36,7 +37,7 @@ Vem som helst med Microsoft 365 Business Premium kan använda den här vägledni
 - Amerikanska federala politiska kampanjer (till exempel kampanjer som söker kontor för det amerikanska huset, usa: s senat eller president)
 - Politiska partier på nationell nivå i USA.
 
-Om din kampanj eller ditt politiska parti kvalificerar sig är Microsoft 365 för kampanjer den billigaste planen som är tillgänglig via Microsoft.  
+Om din kampanj eller ditt politiska parti är kvalificerat är Microsoft 365 för kampanjer den billigaste planen som är tillgänglig via Microsoft.  
 
 Om du inte är berättigad till specialpriser är Microsoft 365 Business Premium fortfarande det mest kostnadseffektiva sättet att skaffa omfattande säkerhet för en samarbetsmiljö. Se [Registrera dig för Microsoft 365 för kampanjer](m365-campaigns-sign-up.md). Använd sedan det här biblioteket för att konfigurera extra säkerhet och för att hjälpa ditt team att samarbeta säkert. 
 
@@ -55,8 +56,8 @@ Det finns inget minsta tidsåtagande när du registrerar dig för Microsoft 365 
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>Hur kvalificerar jag mig för specialpriser?
 
-1. Gå https://m365forcampaigns.microsoft.com/ till och ge några detaljer om din organisation. De uppgifter du ger hjälper oss att kontrollera att du representerar en politisk kampanj eller ett parti på nationell nivå i USA. Det finns inget åtagande när du fyller i det här formuläret. 
-2. När du har fyllt i formuläret tar det oss några dagar att granska din information. 
+1. Gå till https://m365forcampaigns.microsoft.com/ och ge några detaljer om din organisation. De uppgifter du ger hjälper oss att kontrollera att du representerar en politisk kampanj eller ett parti på nationell nivå i USA. Det finns inget åtagande när du fyller i det här formuläret. 
+2. När du har fyllt i formuläret tar det några dagar att granska din information. 
 3. När vi har verifierat att du representerar en politisk kampanj eller ett parti på nationell nivå får du en e-postanbjudan från Microsoft. Din inbjudan innehåller en registreringslänk som är specifik för din organisation. 
 
 När du får din inbjudan [registrerar du dig för Microsoft 365 för kampanjer](m365-campaigns-sign-up.md).

@@ -9,17 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Lär dig hur du skapar en B2B extranätwebbplats eller team med hanterade gästanvändare från en partnerorganisation.
-ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 4f8eb33ad9b41f552975d4158a61ec4cedcfa9cc
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342521"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526988"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Skapa ett B2B-extranät med hanterade gäster
 
@@ -49,13 +50,13 @@ Så här lägger du till en ansluten organisation
 6. Klicka på **Lägg till katalog + domän**.
 7. Skriv domänen för den organisation som du vill ansluta och klicka sedan på **Lägg till**.
 8. Klicka på **Anslut**och sedan på **Nästa: Sponsorer.**
-9. Lägg till personer från din organisation eller organisationen som du ansluter till och med den du vill godkänna åtkomst för gästanvändare.
+9. Lägg till personer från din organisation eller organisationen som du ansluter till och som du vill godkänna åtkomst för gästanvändare.
 10. Klicka på **Nästa: Granska + Skapa**.
 11. Granska de inställningar som du har valt och klicka sedan på **Skapa**.
 
     ![Skärmbild av sidan anslutna organisationer i Azure Active Directory](../media/identity-governance-connected-organizations.png)
 
-## <a name="choose-the-resources-to-share"></a>Välj vilka resurser som ska delas
+## <a name="choose-the-resources-to-share"></a>Välj de resurser som ska delas
 
 Det första steget i att välja resurser att dela med en partnerorganisation är att skapa en katalog som innehåller dem.
 
@@ -63,7 +64,7 @@ Så här skapar du en katalog
 1. Klicka på **Identitetsstyrning**i [Azure Active Directory](https://aad.portal.azure.com).
 2. Klicka på **Kataloger**.
 3. Klicka på **Ny katalog**.
-4. Skriv ett namn och en beskrivning för katalogen och se till att **Aktiverad** och **Aktiverad för externa användare** båda är inställda på **Ja**.
+4. Skriv ett namn och en beskrivning för katalogen och se till att **Aktiverade** och **Aktiverade för externa användare** båda är inställda på **Ja**.
 5. Klicka på **Skapa**.
 
    ![Skärmbild av katalogsidan i Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
@@ -84,15 +85,15 @@ Så här skapar du ett åtkomstpaket
 2. Klicka på **Access-paket**och sedan på **Nytt åtkomstpaket**.
 3. Skriv ett namn och en beskrivning för åtkomstpaketet och klicka sedan på **Nästa: Resursroller**.
 4. Välj de resurser från katalogen som du vill använda för extranätet.
-5. För varje resurs i kolumnen **Roll** väljer du den användarroll som du vill bevilja gästanvändarna som använder extranätet.
+5. För varje resurs väljer du den användarroll som du vill bevilja gästanvändare som använder extranätet i kolumnen **Roll.**
 6. Klicka på **Nästa: Förfrågningar**.
 7. Under **Användare som kan begära åtkomst**väljer du För användare som inte finns i **katalogen**.
 8. Kontrollera att alternativet **Specifika anslutna organisationer** är markerat och klicka sedan på Lägg till **kataloger**.
 9. Välj den anslutna organisation som du lägger till tidigare och klicka sedan på **Välj**
 10. Under **Godkännande**väljer du **Ja** för **Kräv godkännande**.
 11. Under **Första godkännaren**väljer du en av sponsorerna som du har lagt till tidigare eller väljer en viss användare.
-12. Klicka på **Lägg till reservstöd** och välj en reservaserare.
-13. Välj **Ja**under **Aktivera**.
+12. Klicka på **Lägg till reservstöd** och välj en reserv godkännare.
+13. Under **Aktivera**väljer du **Ja**.
 14. Klicka på **Nästa: Livscykel**.
 15. Välj de inställningar för förfallodatum och åtkomstgranskning som du vill använda och klicka sedan på **Nästa: Granska + Skapa**.
 16. Granska inställningarna och klicka sedan på **Skapa**.
@@ -110,9 +111,9 @@ Så här ställer du in ett åtkomstpaket på dolda
 
 ## <a name="invite-partner-users"></a>Bjud in partneranvändare
 
-Om du anger åtkomstpaketet till dold måste du skicka en direktlänk till partnerorganisationen så att de kan begära åtkomst till din webbplats eller ditt team.
+Om du anger åtkomstpaketet till dolda måste du skicka en direktlänk till partnerorganisationen så att de kan begära åtkomst till din webbplats eller ditt team.
 
-Så här hittar du länken till accessportalen
+Så här hittar du länken till åtkomstportalen
 1. I Azure AD Identity Governance klickar du på **Åtkomstpaket**och sedan på ditt åtkomstpaket.
 2. Klicka på Kopiera **till urklippslänk** för **länken Min Access på**sidan **Översikt** .
 

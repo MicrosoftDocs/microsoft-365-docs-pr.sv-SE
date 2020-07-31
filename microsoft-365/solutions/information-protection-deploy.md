@@ -13,15 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen för att skydda din information och följa datasekretessreglerna.
-ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854341"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522295"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuera informationsskydd för datasekretessbestämmelser med Microsoft 365
 
@@ -37,13 +38,13 @@ Om du vill uppfylla kriterierna för att skydda information för att uppfylla re
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
-| Efterlevnadshanteraren | Hantera regelefterlevnadsaktiviteter relaterade till Microsofts molntjänster med det här arbetsflödesbaserade riskbedömningsverktyget i Microsoft Service Trust Portal. | Microsoft 365 E3 och E5 |
-| Efterlevnadspoäng (förhandsgranskning) | Se en övergripande poäng för din aktuella efterlevnadskonfiguration och rekommendationer för att förbättra den i Microsoft 365 Compliance Center. | Microsoft 365 E3 och E5 |
-| Office Advanced Threat Protection (ATP) | Skydda dina Microsoft 365-appar och -data– till exempel e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. | Microsoft 365 E3 och E5 | 
-| Känslighetsetiketter | Klassificera och skydda organisationens data utan att hindra användarnas produktivitet och deras förmåga att samarbeta genom att placera etiketter med olika skyddsnivåer på e-post, filer eller webbplatser. | Microsoft 365 E3 och E5 |
-| Dataskydd (DLP) | Identifiera, varna och blockera riskfylld, oavsiktlig eller olämplig delning, till exempel delning av data som innehåller personlig information, både internt och externt. | Microsoft 365 E3 och E5 | 
-| Etiketter och principer för datalagring | Implementera kontroller för informationsstyrning, till exempel hur länge data och krav på lagring av personuppgifter på kunder ska lagras för att följa organisationens policyer eller dataregler. | Microsoft 365 E3 och E5 |
-| E-postkryptering | Skicka och ta emot krypterade e-postmeddelanden mellan personer inom och utanför organisationen som innehåller reglerade data, till exempel personuppgifter om kunder. | Microsoft 365 E3 och E5 |
+| Efterlevnadshanteraren | Hantera regelefterlevnad som rör Microsofts molntjänster med detta arbetsflödesbaserade verktyg för riskbedömning i Microsoft Service Trust Portal. | Microsoft 365 E3 och E5 |
+| Efterlevnadspoäng (förhandsversion) | Se en övergripande poäng för din aktuella efterlevnadskonfiguration och rekommendationer för att förbättra den i Efterlevnadscentret för Microsoft 365. | Microsoft 365 E3 och E5 |
+| Office Advanced Threat Protection (ATP) | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. | Microsoft 365 E3 och E5 | 
+| Känslighetsetiketter | Med hjälp av etiketter med olika nivåer av skydd för e-post, filer och webbplatser kan du klassificera och skydda din organisations data utan att hindra användarnas produktivitet och möjligheter att samarbeta. | Microsoft 365 E3 och E5 |
+| Dataförlustskydd (DLP) | Identifiera, varna för och blockera riskfylld, oavsiktlig eller olämplig delning, t.ex. av data som innehåller personuppgifter, både internt och externt. | Microsoft 365 E3 och E5 | 
+| Etiketter och principer för kvarhållning av data | Implementera kontrollerna för informationsstyrning, t.ex. hur länge data ska behållas och kraven för lagring av personuppgifter för kunder, för att uppfylla organisationens principer och dataföreskrifter. | Microsoft 365 E3 och E5 |
+| E-postkryptering | Skicka och ta emot krypterade e-postmeddelanden som innehåller reglerade data, t.ex. personliga data om kunder, mellan personer i och utanför din organisation. | Microsoft 365 E3 och E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation av vägledningen i denna lösning

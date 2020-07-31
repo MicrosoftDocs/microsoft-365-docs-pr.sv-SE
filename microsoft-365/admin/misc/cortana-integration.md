@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: När användarna är inloggade med giltiga arbets- eller skolkonton kan de få molnbaserade hjälptjänster med Cortana i Microsoft 365-upplevelser som uppfyller sekretess-, säkerhets- och efterlevnadslöftena på företagsnivå på företagsnivå.
-ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 5707fb5966e77787b609c20b204602318627d350
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083556"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521283"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -33,7 +33,7 @@ Cortana, din personliga produktivitetsassistent, erbjuder AI-drivna upplevelser 
 
 Som en personlig produktivitetsassistent är Cortana utformad för att leverera funktioner som på ett säkert och säkert sätt bearbetar och resonerar över Office 365-data som e-post, filer, chattar osv., för att spara tid, öka effektiviteten och öka användarnas produktivitet.
 
-Framöver fokuserar vi Cortana på företagets produktivitet. 
+Framöver fokuserar vi Cortana på företagets produktivitet.
 
 - I enlighet med andra Office 365-tjänster uppfyller Cortanas företagstjänster samma sekretess-, säkerhets- och efterlevnadslöften på företagsnivå som återspeglas i [villkoren för onlinetjänster (OST).](https://www.microsoft.com/licensing/product-licensing/products)
 
@@ -159,7 +159,7 @@ Inaktivera Cortana-åtkomst till organisationens Microsoft-värddata
 
 1. I administrationscentret för Microsoft 365 väljer du **Settings**  >  **Inställningars organisationsinställningar** och väljer **Cortana**.
 
-2. Avmarkera kryssrutan Tillåt **att dessa Cortana-valfria anslutna upplevelser kan använda organisationens Microsoft-värddata** för att inaktivera Cortana-anslutna upplevelser.
+2. Avmarkera kryssrutan Tillåt **Cortana i Windows 10 (version 1909 och tidigare) och Cortana-appen på iOS och Android för att komma åt Microsoft-värddata på uppdrag av personer i organisationen** för att inaktivera Cortana-anslutna upplevelser.
 
 3. Välj **Spara ändringar**.
 

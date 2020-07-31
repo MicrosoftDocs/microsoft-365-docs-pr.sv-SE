@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Använd gransknings- och varningspolicyer och förfrågningar från registrerade för att övervaka och svara på personuppgiftsincidenter.
-ms.openlocfilehash: 5760bb40eb26e2ff0636ea9604cc7c45b7d0ca63
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 8fdba5799ca9ee97a013c1322e5e79f6bf38764a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695073"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522079"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Övervaka och svara på datasekretessincidenter i din organisation
 
@@ -58,7 +58,7 @@ Din organisation kan också vilja utföra övervaknings- och svarsaktiviteter f�
 För att hjälpa dig att komma igång med ett övervaknings- och svarsschema i Microsoft 365 för datasekretessbestämmelser innehåller den här artikeln en lista över användbara funktioner i Microsoft 365 för att svara på frågor som: 
 
 - Vilken typ av daglig övervaknings-, utrednings- och rapporteringsteknik finns tillgänglig för de olika datatyperna och källorna?
-- Vilka mekanismer som kommer att behövas för att hantera registrerade förfrågningar (DSRs) och eventuella avhjälpande åtgärder, till exempel anonymisering, bortredigeringsverktyg och radering.
+- Vilka mekanismer kommer att behövas för att hantera registrerade förfrågningar (DSRs) och eventuella avhjälpande åtgärder, till exempel anonymisering, bortredigeringsverktyg och radering.
 
 ## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Gransknings- och varningsprinciper i säkerhets- och efterlevnadscentret
 
@@ -79,7 +79,7 @@ När en användare tas bort från Azure Active Directory (Azure AD) för Microso
 
 ## <a name="additional-investigative-tools"></a>Ytterligare utredningsverktyg
 
-Här är ytterligare två verktyg som kan vara användbara för att övervaka, undersöka och åtgärda dataintegritetsrelaterade incidenter i organisationen:
+Här är ytterligare två verktyg som kan vara användbara för att övervaka, undersöka och åtgärda datasekretessrelaterade incidenter i organisationen:
 
-- [Insiderriskhantering i Microsoft 365](../compliance/insider-risk-management.md), en funktion i Microsoft Compliance-administrationscentret för att minimera interna risker genom att du kan identifiera, undersöka och vidta åtgärder för riskfyllda aktiviteter i din organisation.
-- [Dataundersökningar i Microsoft 365](../compliance/overview-data-investigations.md), en funktion i Microsoft Compliance admin center för att söka efter känsliga, skadliga eller felplacerade data över Microsoft 365, och sedan undersöka vad som hände för att vidta lämpliga åtgärder för att åtgärda händelsen.
+- [Insider-riskhantering i Microsoft 365](../compliance/insider-risk-management.md), en funktion i Microsoft Compliances administrationscenter för att minimera interna risker genom att du kan identifiera, undersöka och vidta åtgärder för riskfyllda aktiviteter i organisationen.
+- [Dataundersökningar i Microsoft 365](../compliance/overview-data-investigations.md), en funktion i Microsoft Compliance admin center för att söka efter känsliga, skadliga eller felplacerade data över Microsoft 365, och sedan undersöka vad som hände med att vidta lämpliga åtgärder för att åtgärda händelsen.

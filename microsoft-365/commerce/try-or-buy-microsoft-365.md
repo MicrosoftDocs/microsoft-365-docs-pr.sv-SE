@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration för Microsoft 365.
-ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6400f8a05a0e1b8fd8d7200af90a0b232b288895
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403144"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526846"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Prova eller köp en Microsoft 365-prenumeration
 
@@ -40,7 +40,9 @@ Microsoft 365 är en komplett lösning som kombinerar Office 365 och Windows 10 
   
 - Microsoft 365 Business Premium
 
-- Office 365 Enterprise, E3
+- Microsoft 365 E5
+
+- Microsoft 365 E3
 
 - Office 365 Enterprise E5
 
@@ -51,7 +53,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 ::: moniker range="o365-worldwide"
 
 
-1. Logga in i administrationscentret på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
+1. Logga in på administrationscentret på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
 
 2. På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation. Välj det Microsoft 365-abonnemang som du vill prova eller köpa.
 
@@ -70,7 +72,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 
 8. Välj att ta emot ett sms eller ett samtal, ange ditt telefonnummer och välj sedan **Sms eller** **Ring mig**.
 
-9. Ange verifieringskoden och välj sedan **Starta din kostnadsfria utvärderingsversion**.
+9. Ange verifieringskoden och välj sedan **Starta den kostnadsfria utvärderingsversionen**.
 
 10. På sidan **Checka ut** väljer du **Prova nu**.
 
@@ -80,11 +82,11 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. Logga in i administrationscentret på [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
+1. Logga in på administrationscentret på [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
 
 2. På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation. 
 
-3. Välj ellipserna under Microsoft 365-abonnemanget som du vill prova eller köpa och välj sedan **Starta kostnadsfri utvärderingsversion**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du välja **Köp nu**.
+3. Välj ellipserna under Microsoft 365-planen som du vill prova eller köpa och välj sedan **Starta fri utvärderingsversion**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du välja **Köp nu**.
 
     > [!NOTE]
     > Om du startar en kostnadsfri utvärderingsversion går du till steg 8.
@@ -99,7 +101,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 
 8. Välj att ta emot ett sms eller ett samtal, ange ditt telefonnummer och välj sedan **Sms eller** **Ring mig**.
 
-9. Ange verifieringskoden och välj sedan **Starta din kostnadsfria utvärderingsversion**.
+9. Ange verifieringskoden och välj sedan **Starta den kostnadsfria utvärderingsversionen**.
 
 10. På sidan **Checka ut** väljer du **Prova nu**.
 
@@ -108,11 +110,11 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. Logga in i administrationscentret på [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
+1. Logga in på administrationscentret på [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.
 
 2. På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation. 
 
-3. Välj ellipserna under Microsoft 365-abonnemanget som du vill prova eller köpa och välj sedan **Starta kostnadsfri utvärderingsversion**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du välja **Köp nu**.
+3. Välj ellipserna under Microsoft 365-planen som du vill prova eller köpa och välj sedan **Starta fri utvärderingsversion**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du välja **Köp nu**.
 
     > [!NOTE]
     > Om du startar en kostnadsfri utvärderingsversion går du till steg 8.
@@ -127,7 +129,7 @@ När du lägger till en prenumeration via administrationscentret associeras den 
 
 8. Välj att ta emot ett sms eller ett samtal, ange ditt telefonnummer och välj sedan **Sms eller** **Ring mig**.
 
-9. Ange verifieringskoden och välj sedan **Starta din kostnadsfria utvärderingsversion**.
+9. Ange verifieringskoden och välj sedan **Starta den kostnadsfria utvärderingsversionen**.
 
 10. På sidan **Checka ut** väljer du **Prova nu**.
 

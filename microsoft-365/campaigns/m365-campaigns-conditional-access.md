@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du kräver MFA och ställer in principer för villkorlig åtkomst för Microsoft 365 för företag.
-ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635618"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527204"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Kräv multifaktorautentisering och konfigurera principer för villkorlig åtkomst
 
@@ -38,7 +39,7 @@ Dessa principer kräver att administratörer och användare anger en andra form 
 
 För närvarande omfattar baslinjeprinciper följande:
 - Konfigurera i Microsoft 365 administrationscenter:
-    - **Kräv MFA för administratörer** – Kräver multifaktorautentisering för de mest privilegierade administratörsrollerna, inklusive den globala administratören.
+    - **Kräv MFA för administratörer** – Kräver multifaktorautentisering för de mest privilegierade administratörsrollerna, inklusive global administratör.
     - **Skydd för slutanvändare** – Kräver multifaktorautentisering endast för användare när en inloggning är riskabel. 
 - Konfigurera i Azure Active Directory-portalen:
     - **Blockera äldre autentisering** – Äldre klientappar och vissa nya appar använder inte nyare, säkrare autentiseringsprotokoll. Dessa äldre appar kan kringgå principer för villkorlig åtkomst och få obehörig åtkomst till din miljö. Den här principen blockerar åtkomst från klienter som inte stöder villkorlig åtkomst. 
@@ -46,7 +47,7 @@ För närvarande omfattar baslinjeprinciper följande:
 
 Microsoft rekommenderar att du aktiverar alla dessa grundläggande principer. När dessa principer har aktiverats uppmanas administratörer och användare att registrera sig för Azure Multi-Factor-autentisering.
 
-Mer information om dessa principer finns i [Vad är baslinjeprinciper?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)
+Mer information om dessa principer finns i [Vad är originalprinciper?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)
 
 
 ## <a name="require-mfa"></a>Kräv MFA
@@ -62,7 +63,7 @@ Så här kräver du att alla användare loggar in med en andra form av ID:
 3. På sidan Gör inloggningen säkrare väljer du **Kom igång**.
  
 4. I säkerhetsfönstret Stärk inloggning markerar du kryssrutorna bredvid **Kräv multifaktorautentisering för administratörer** och **Kräv att användare registrerar sig för multifaktorautentisering och blockera åtkomst om risk upptäcks**.
-    Var noga med att utesluta [det akuta](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) eller "break-glass"-administratörskontot från MFA-kravet i rutan **Sök användare.**
+    Var noga med att utesluta [det akuta](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) eller "break-glass" admin-kontot från MFA-kravet i rutan **Sök användare.**
     
     ![Stärka sidan för instringning.](../media/requiremfa.png)
 
@@ -70,7 +71,7 @@ Så här kräver du att alla användare loggar in med en andra form av ID:
 
 ## <a name="set-up-baseline-policies"></a>Ställ in originalprinciper
 
-1. Gå till [Azure-portalen](https://portal.azure.com)och navigera sedan till **Azure Active Directory** \> **Villkorlig åtkomst**.
+1. Gå till [Azure-portalen](https://portal.azure.com)och navigera sedan till **Azure Active Directory** Villkorlig \> **åtkomst**.
     
     Originalprinciperna visas på sidan och du kan se att **Kräv MFA för administratörer** och skydd för **slutanvändare** redan är aktiverade när du har slutfört stegen i [kräver MFA](#require-mfa).
 

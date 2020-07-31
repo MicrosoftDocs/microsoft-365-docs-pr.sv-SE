@@ -14,15 +14,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.custom: Ent_Architecture
 description: 'Sammanfattning: Hur Contoso använde ett team med säkerhetsisolering för ett topphemligt projekt för att utveckla en ny uppsättning produkter och tjänster.'
-ms.openlocfilehash: 1083c9d3db3be9ca528b2eee40f072aa17c7431e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: f7b38a7ef43cdb50b46f3e37f855f490dc32cfdf
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159461"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521631"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isolerat team för ett topphemligt projekt av Contoso Corporation
 
@@ -32,7 +31,7 @@ Tidslinjerna för forskning och utveckling var snäva, vilket innebar att samarb
 
 De resulterande slutprodukterna för Project 2X var affärsplaner, produkt- och teknikspecifikationer samt marknadsföringsmaterial och scheman i form av Word-, Excel- och PowerPoint-filer. 
 
-På grund av deras känsliga karaktär, tillgång till dessa filer var:
+På grund av deras känsliga natur var tillgången till dessa filer:
 
 - Begränsad till Project 2X-gruppmedlemmar.
 - Krypterad och skyddad med behörighet att endast tillåta åtkomst till Project 2X-gruppmedlemmar, även om filerna distribuerades utanför sina säkra mappar.
@@ -56,7 +55,7 @@ Contoso-administratörer skapade en ny känslighetsetikett med namnet **Project 
 
 Filerna i avsnittet **Dokument** på den underliggande Project 2X SharePoint-webbplatsen skyddades av:
 
-- Webbplatsbehörigheterna, som endast ger åtkomst till medlemmar i Gruppen Project 2X Microsoft 365.
+- Webbplatsbehörigheterna, som endast ger åtkomst till medlemmar i gruppen Project 2X Microsoft 365.
 - Känslighetsetiketten För Project 2X, med kryptering och behörigheter som färdas med filen om den flyttas eller kopieras från webbplatsen.
 
 Konfigurationsinformation finns i [Skapa en känslighetsetikett](secure-teams-security-isolation.md#create-a-sensitivity-label).

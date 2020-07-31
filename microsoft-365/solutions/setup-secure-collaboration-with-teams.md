@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: Lär dig hur du konfigurerar teams för att skydda dina data baserat på dess känslighet
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724801"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527714"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Konfigurera säkerhet samarbete med hjälp av Microsoft 365
 
@@ -128,6 +129,6 @@ När du är redo att distribuera den här lösningen fortsätter du med följand
 
 [Dokumentation för Microsoft 365 Säkerhetscenter](https://docs.microsoft.com/microsoft-365/security)
 
-[Dokumentation om efterlevnad i Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance)
+[Dokumentation för Microsoft 365 Efterlevnadscenter](https://docs.microsoft.com/microsoft-365/compliance)
 
 [Välkommen till Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)

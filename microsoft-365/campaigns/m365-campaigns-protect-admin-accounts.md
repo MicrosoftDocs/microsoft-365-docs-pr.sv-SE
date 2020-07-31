@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -20,13 +21,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Läs om hur du konfigurerar och skyddar administratörskontona.
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Läs om hur du konfigurerar och skyddar dina administratörskonton.
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633659"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527192"
 ---
 # <a name="protect-your-administrator-accounts"></a>Skydda dina administratörskonton
 
@@ -42,11 +43,11 @@ När du registrerar dig för Microsoft 365 och anger din information blir du aut
 
 Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för regelbunden användning av Office-appar och endast använda sitt administrativa konto när det behövs för att hantera konton och enheter och när du arbetar med andra administratörsfunktioner. Det är också en bra idé att ta bort Microsoft 365-licensen från administratörskontona så att du inte behöver betala för dem.
 
-Du bör konfigurera minst ett ytterligare globalt administratörskonto för att ge administratörsåtkomst till en annan betrodd medarbetare. Du kan också skapa separata administratörskonton för användarhantering (den här rollen kallas **Administratör för användarhantering**). Mer information finns i [om administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Du bör konfigurera minst ett ytterligare globalt administratörskonto för att ge administratörsåtkomst till en annan betrodd medarbetare. Du kan också skapa separata administratörskonton för användarhantering (den här rollen kallas **Användarhanteringsadministratör**). Mer information finns i [om administratörsroller](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 Så här skapar du ytterligare administratörskonton:
 
- 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administrationscentret</a> och välj sedan **Aktiva användare** \> **Active users** i den vänstra navigeringscentralen.
+ 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administrationscentret</a> och välj sedan **Aktiva** \> **användare** i den vänstra navigeringsfältet.
 
     ![Välj Användare och sedan Aktiva användare i den vänstra navigeringsfältet](../media/Activeusers.png)
 
@@ -67,10 +68,10 @@ Du bör också skapa ett säkerhetskopieringskonto som inte är konfigurerat med
 
 ## <a name="create-a-user-account-for-yourself"></a>Skapa ett användarkonto åt dig själv
 
-Använd ditt användarkonto för att delta i samarbete med din organisation, inklusive att kontrollera e-post. Det innebär att administratörsuppgifterna kan likna *Alice.Chavez<span></span>@Contoso.org* och ditt vanliga användarkonto kan likna *Alice<span></span>@Contoso.com*.
+Använd ditt användarkonto för att delta i samarbete med din organisation, inklusive att kontrollera e-post. Det innebär att administratörsuppgifterna kan likna *Alice.Chavez <span></span> @Contoso.org* och ditt vanliga användarkonto kan likna *Alice <span></span> @Contoso.com*.
 
 Så här skapar du ett nytt användarkonto:
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administrationscentret</a> och välj sedan **Aktiva användare** \> **Active users** i den vänstra navigeringscentralen.
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administrationscentret</a> och välj sedan **Aktiva** \> **användare** i den vänstra navigeringsfältet.
 2. På sidan **Aktiva användare** väljer du Lägg till **en användare** högst upp på sidan och ange namnet och annan information på den **nya användarpanelen.**
 3. Expandera avsnittet **Roller** och välj **Användare (ingen administrativ åtkomst)**.
 1. I avsnittet **Produktlicenser** flyttar du väljaren för **Microsoft 365 Business** till **På**. 

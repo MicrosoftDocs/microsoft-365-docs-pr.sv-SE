@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs om hur du skickar krypterad e-post med Outlook.
-ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: f5184de55ce07d5e669e98afb6e627833071c4ba
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080033"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526882"
 ---
-# <a name="encrypt-or-label-your-sensitive-email"></a>Kryptera eller märka din känsliga e-post
+# <a name="encrypt-or-label-your-sensitive-email"></a>Kryptera eller märk dina konfidentiella e-postmeddelanden
 
 Dina data- och kampanjinformationer är viktiga och ofta konfidentiella. Skydda den här känsliga informationen genom att använda krypterings- och känslighetsetiketter så att du och dina e-postmottagare behandlar informationen med den känslighet som krävs.
 
