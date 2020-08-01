@@ -1,19 +1,22 @@
 ---
-title: Justera villkorlig åtkomst
+title: Justera villkorsstyrd åtkomst
 description: Så här utesluter du vissa Microsoft-konton
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1bc5d937616cba60c5af43fe22a7c4dccf89a55e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 8844c50f5faba609b3f5f53adc5ab45ba1dbaa74
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42806478"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529689"
 ---
-# <a name="adjust-conditional-access"></a>Justera villkorlig åtkomst
+# <a name="adjust-conditional-access"></a>Justera villkorsstyrd åtkomst
 
 Om du använder [principer för villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) i organisationen måste du ange att de ska utesluta vissa konton så att Microsoft Managed Desktop kan fungera korrekt.
 
@@ -29,9 +32,9 @@ Om du har några problem med villkorlig åtkomst kontaktar du [administratörssu
 
 1. [Lägga till och verifiera administratörskontakter i administratörsportalen](add-admin-contacts.md)
 2. Justera villkorlig åtkomst (det här avsnittet)
-3. [Tilldela licenser](assign-licenses.md)
-4. [Distribuera Intune-företagsportal](company-portal.md)
-5. [Aktivera roaming i företagstillstånd](enterprise-state-roaming.md)
+3. [Koppla licenser](assign-licenses.md)
+4. [Distribuera Intune-företagsportalen](company-portal.md)
+5. [Aktivera Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Konfigurera enheter](set-up-devices.md)
 7. [Gör användarna redo att använda enheter](get-started-devices.md)
 8. [Distribuera appar](deploy-apps.md)

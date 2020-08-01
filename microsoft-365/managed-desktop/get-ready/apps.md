@@ -1,19 +1,22 @@
 ---
-title: Appar i Microsoft Managed Desktop
+title: Appar på Microsoft Hanterat skrivbord
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632857"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530109"
 ---
-# <a name="apps-in-microsoft-managed-desktop"></a>Appar i Microsoft Managed Desktop
+# <a name="apps-in-microsoft-managed-desktop"></a>Appar på Microsoft Hanterat skrivbord
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
@@ -23,7 +26,7 @@ ms.locfileid: "43632857"
 
 Microsoft innehåller vissa viktiga appar tillsammans med microsoft 365 E3- eller E5-licensen som behövs för att delta i Microsoft Managed Desktop. Men även om vi tillhandahåller dessa appar har du fortfarande vissa ansvarsområden och åtgärder att slutföra.
 
-Du kan också distribuera ytterligare appar som inte kommer från Microsoft till slutanvändarna för självbetjäning via företagsportalen eller en nödvändig bakgrundsinstallation, som alla använder Microsoft Intunes distributionspipeline. Om du har den expertis som du har kan migrera de appar du behöver själv. Alternativt hjälper Microsoft Consulting Services (MCS) eller leverantörer utanför Microsoft gärna dig med ett paketerings- och migreringsprojekt. Mer information om hur du arbetar med MCS finns i [Arbeta med Microsoft Consulting Services](apps-MCS.md).
+Du kan också distribuera ytterligare appar som inte kommer från Microsoft till slutanvändarna för självbetjäning via företagsportalen eller en nödvändig bakgrundsinstallation, som alla använder Microsoft Intunes distributionspipeline. Om du har den expertis som du har den expertis du behöver själv. Alternativt hjälper Microsoft Consulting Services (MCS) eller leverantörer utanför Microsoft dig gärna med ett paketerings- och migreringsprojekt. Mer information om hur du arbetar med MCS finns i [Arbeta med Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>Appar från Microsoft

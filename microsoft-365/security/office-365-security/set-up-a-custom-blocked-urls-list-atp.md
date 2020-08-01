@@ -18,13 +18,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig hur du konfigurerar en lista med blockerade url:er för din organisation med hjälp av avancerat skydd mot office 365.
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: Lär dig hur du konfigurerar en lista över blockerade webbadresser för din organisation med hjälp av Office 365 Advanced Threat Protection.
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617270"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533817"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Konfigurera en lista med anpassade blockerade webbadresser med ATP Safe Links
 
@@ -37,19 +37,19 @@ Med [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kan din org
 
 Listan blockerade webbadresser definieras av organisationens Microsoft 365 för företag-säkerhetsteam, och den listan gäller alla i organisationen som omfattas av Office 365 ATP Safe Links-principer.
 
-Läs den här artikeln om du vill lära dig hur du konfigurerar organisationens anpassade lista med blockerade webbadresser för [BETRODDA ATP-länkar i Office 365](atp-safe-links.md).
+Läs den här artikeln om du vill lära dig hur du konfigurerar organisationens anpassade lista med blockerade webbadresser för [ATP-säkra länkar i Office 365](atp-safe-links.md).
 
 ## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Visa eller redigera en anpassad lista med blockerade webbadresser
 
-[ATP Safe Links i Office 365](atp-safe-links.md) använder flera listor, inklusive organisationens anpassade lista med blockerade webbadresser. Om du har de behörigheter som krävs kan du ställa in organisationens anpassade lista. Du gör detta genom att redigera organisationens standardprincip för säkra länkar.
+[ATP Safe Links i Office 365](atp-safe-links.md) använder flera listor, inklusive organisationens anpassade lista över blockerade webbadresser. Om du har de behörigheter som krävs kan du ställa in organisationens anpassade lista. Det gör du genom att redigera organisationens standardprincip för säkra länkar.
 
 Om du vill redigera (eller definiera) ATP-principer måste du tilldelas en av de roller som beskrivs i följande tabell:
 
 |Roll|Var/hur tilldelas|
 |---------|---------|
-|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om Microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Säkerhetsadministratör|Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdlets (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 > [!TIP]
 > Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -58,9 +58,9 @@ Om du vill redigera (eller definiera) ATP-principer måste du tilldelas en av de
 
 1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto.
 
-2. Välj **Policy** Säkra länkar under **Hothantering**i den vänstra \> **navigeringen.**
+2. Välj **Policy** säkra länkar under **Hothantering**i den vänstra \> **navigeringen.**
 
-3. I de **principer som gäller för hela organisationsavsnittet** väljer du **Standard**och väljer sedan **Redigera** (knappen Redigera liknar en penna).<br/>![Klicka på Redigera om du vill redigera standardprincipen för skydd av säkra länkar](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>På så sätt kan du visa listan över blockerade webbadresser. Först kanske du inte har några webbadresser listade här.<br/>![Lista med blockerade webbadresser i standardprincipen för säkra länkar](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. I avsnittet **Principer som gäller för hela organisationsavsnittet** väljer du **Standard**och väljer sedan **Redigera** (knappen Redigera liknar en penna).<br/>![Klicka på Redigera om du vill redigera standardprincipen för skydd av säkra länkar](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>På så sätt kan du visa listan över blockerade webbadresser. Först kanske du inte har några webbadresser listade här.<br/>![Lista med blockerade webbadresser i standardprincipen för säkra länkar](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
 
 4. Markera rutan **Ange en giltig URL,** skriv en URL och välj sedan plustecknet ( **+** ).
 
@@ -70,9 +70,9 @@ Om du vill redigera (eller definiera) ATP-principer måste du tilldelas en av de
 
 När du lägger till webbadresser i listan bör du tänka på följande:
 
-- Ta inte med ett snedstreck ( **/** ) i slutet av webbadressen. I stället för att till exempel skriva `https://www.contoso.com/` in anger du `https://www.contoso.com` .
+- Ta inte med ett snedstreck ( **/** ) i slutet av webbadressen. I stället för att skriva in anger du till exempel `https://www.contoso.com/` `https://www.contoso.com` .
 
-- Du kan ange en URL endast för domän (gilla `contoso.com` eller `tailspintoys.com` ). Detta blockerar klick på alla webbadresser som innehåller domänen.
+- Du kan ange en url endast för domän (gilla `contoso.com` eller `tailspintoys.com` ). Detta blockerar klick på alla webbadresser som innehåller domänen.
 
 - Du kan ange en underdomän `toys.contoso.com*` (som) utan att blockera en fullständig domän (till exempel `contoso.com` ). Detta blockerar klick på en URL som innehåller underdomänen, men det blockerar inte klick till en URL som innehåller hela domänen.
 
@@ -81,9 +81,13 @@ När du lägger till webbadresser i listan bör du tänka på följande:
 |Exempel på post|Vad den gör|
 |:-----|:-----|
 |`contoso.com`Eller`*contoso.com*`|Blockerar domänen, underdomänerna och sökvägarna, till exempel `https://www.contoso.com` `https://sub.contoso.com` , och`https://contoso.com/abc`|
-|`https://contoso.com/a`|Blockerar en plats `https://contoso.com/a` men inte ytterligare undervägar som`https://contoso.com/a/b`|
+|`https://contoso.com/a`|Blockerar en webbplats `https://contoso.com/a` men inte ytterligare undervägar som`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Blockerar en webbplats `https://contoso.com/a` och ytterligare undervägar som`https://contoso.com/a/b`|
-|`https://toys.contoso.com*`|Blockerar en underdomän ("leksaker" i det här fallet) men tillåter klick till andra domänadresser (gilla `https://contoso.com` eller `https://home.contoso.com` ).|
+|`https://toys.contoso.com*`|Blockerar en underdomän ("leksaker" i det här fallet) men tillåt klick till andra domänadresser (gilla `https://contoso.com` eller `https://home.contoso.com` ).|
+
+
+> [!NOTE]
+> Som standard kan du bara lägga till 500 webbadresser i den blockerade URL-listan i standardprincipen för betrodda office 365-atp-länkar.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Så här definierar du undantag för vissa användare i en organisation
 

@@ -1,17 +1,20 @@
 ---
 title: Arbeta med insikter
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42807145"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529773"
 ---
 # <a name="work-with-insights"></a>Arbeta med insikter
 
@@ -34,14 +37,14 @@ Om du vill komma åt dessa vyer från Administrationscenter för Microsoft 365 v
 
 
 
-## <a name="usage-insights"></a>Insikter om användning
+## <a name="usage-insights"></a>Användningsinsikter
 Den här vyn innehåller användningsmått för dina Microsoft-hanterade stationära enheter. 
 
 Om du vill visa användningsdata väljer du fliken **Användning.**
 
 Läs mer om [användningsinsikter](usage-insights.md).
 
-## <a name="reliability-insights"></a>Tillförlitlighet insikter
+## <a name="reliability-insights"></a>Tillförlitlighetsinsikter
 Den här vyn ger dig en hälsosammanfattning av dina hanterade enheter. Om du vill visa tillförlitlighetsdata väljer du fliken **Tillförlitlighet.**
 
 Läs mer om [tillförlitlighetsstatistik](reliability-insights.md).
@@ -51,7 +54,7 @@ I den här vyn visas information om apparnas energiförbrukning och den beräkna
 
 Läs mer om [batteriinsikter](battery-insights.md).
 
-## <a name="windows-security-update-insights"></a>Statistik för säkerhetsuppdatering i Windows
+## <a name="windows-security-update-insights"></a>Insikter om Windows-säkerhetsuppdateringar
 
 I den här vyn visas information om statusen för säkerhetsuppdateringar för dina Microsoft Managed Desktop-enheter. Om du vill visa den här informationen väljer du fliken **Windows-säkerhets udats.**
 

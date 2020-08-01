@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4751a5a38229039ae325c0efc9353d4582243349
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c958101e1f3268c706c27df6fc9e21e9914b3f46
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430489"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530289"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Förutsättningar för Microsoft Hanterat skrivbord
 
@@ -49,7 +52,7 @@ Microsoft Managed Desktop kräver vissa licensalternativ för att fungera. Dessa
 |Microsoft Intune | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Säkerhetstillägg<br>- Enterprise Mobility + Säkerhet E5<br>- Enterprise Mobility + Säkerhet E3<br>- Microsoft Intune  |  Nödvändigt att registrera enheter, distribuera uppdateringar och hantera enheter       |
 |Windows 10 Enterprise  |- Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Säkerhetstillägg<br>- Windows 10 Enterprise E3<br>- Windows 10 Enterprise E5 | Innehåller företagsfunktioner i Windows 10       |
 |Microsoft Defender Avancerat skydd | - Microsoft 365 E5<br>- Microsoft 365 E3 + Microsoft 365 *E5* Säkerhetstillägg<br>- Windows 10 Enterprise E5<br>- Microsoft Defender avancerat hotskydd   |  Ger identifiering, övervakning, aviseringar och svar på hot  |
-| Microsoft 365 Apps för företag  |- Microsoft 365 E5<br>- Microsoft 365 E3<br>- Office 365 E5<br>- Office 365 E3| Aktiverar Verktyg för Office och produktivitet och samarbete    |
+|Microsoft 365-applikationer för företag  |- Microsoft 365 E5<br>- Microsoft 365 E3<br>- Office 365 E5<br>- Office 365 E3| Aktiverar Verktyg för Office och produktivitet och samarbete    |
 
 > [!TIP]
 > Din Microsoft Account Manager hjälper dig att granska dina nuvarande licenser och serviceplaner och hitta den mest effektiva vägen för dig att få ytterligare licenser eller serviceplaner som du kan behöva, samtidigt som du undviker dubbelarbete.

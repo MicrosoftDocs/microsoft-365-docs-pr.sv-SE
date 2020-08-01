@@ -8,12 +8,15 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: acdca0a70fb28b10f053da8f79b4e37c9c7632f5
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503073"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529929"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Hanterade skrivbord arkiverade enheter
 
@@ -46,10 +49,10 @@ För att vara registrerad i Microsoft Managed Desktop måste en enhet vara en av
 |HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | **den 18 juli 2023** |
 |HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU med 5VS04AV | **den 18 juli 2023** |
 |HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |SKU med 5VS04AV| **den 18 juli 2023** |
-|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Ingen | **Den 16 november 2022** |
-|Yta gå| 128 GB / Intel 4415Y / 8GB RAM | Ingen | **Den 2 augusti 2023** |
-|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 20 maj 2022** |
-|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Ingen | **den 15 juni 2022** |
+|Surface Bok 2| 256 GB / Intel i5 / 8 GB RAM | Inga | **Den 16 november 2022** |
+|Yta gå| 128 GB / Intel 4415Y / 8GB RAM | Inga | **Den 2 augusti 2023** |
+|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 20 maj 2022** |
+|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | Inga | **den 15 juni 2022** |
 
 
 Dessutom måste enheten också:

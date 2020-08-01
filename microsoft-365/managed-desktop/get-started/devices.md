@@ -1,17 +1,20 @@
 ---
 title: Beställa enheter i Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c53b5e8002b8217055a29903719bda83e43ce554
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 75514dfc3c5de3c579cc051b830ebdc92a93e531
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42806447"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529535"
 ---
 # <a name="order-microsoft-managed-desktop-devices"></a>Beställ Microsoft Managed Desktop-enheter
 

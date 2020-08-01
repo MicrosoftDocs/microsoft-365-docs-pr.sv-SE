@@ -1,32 +1,34 @@
 ---
-title: Förbereda mappade enheter för Microsoft Managed Desktop
+title: Förbereda mappade enheter för Microsoft Hanterat skrivbord
 description: Viktiga steg för att se till att
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42806452"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530181"
 ---
-#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Förbereda mappade enheter för Microsoft Managed Desktop
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Förbereda mappade enheter för Microsoft Hanterat skrivbord
 
-Många företagsmiljöer har äldre krav för mappade enheter så att användarna eller teamen kan dela och lagra filer eller för lokala program. Microsoft rekommenderar inte användning av mappade enheter med Microsoft Managed Desktop. I stället rekommenderar vi att du moderniserar yor-filåtkomstlösningar enligt följande:
+Många företagsmiljöer har äldre krav på mappade enheter så att deras användare eller team kan dela och lagra filer eller för lokala program. Microsoft rekommenderar inte användning av mappade enheter med Microsoft Managed Desktop. I stället rekommenderar vi att du moderniserar filåtkomstlösningarna enligt följande:
   
 - Migrera mappade enheter som används av enskilda användare till OneDrive för företag. 
 - Migrera mappade enheter som används av team för att dela filer till SharePoint Online. 
-- Modernisera eller ersätta alla program som använder lokala filresurser för att ta bort detta krav.
+- Modernisera eller ersätta program som använder lokala filresurser för att ta bort det kravet.
   
-Genom att modernisera dessa tjänster kan du göra det möjligt att få den bästa slutanvändarupplevelsen med Microsoft Managed Desktop. Microsoft FastTrack Services kan hjälpa dig att modernisera din miljö med hjälp av Microsoft Cloud Services. Du kan kontrollera om du är berättigad till [FastTrack-tjänster](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) på kvalificerade tjänster och abonnemang och sedan kontakta dem direkt för att förbereda för Microsoft Managed Desktop. Om du har bakgrund om FastTrack OneDrive för företag eller SharePoint Online migrering finns i [Datamigrering](https://docs.microsoft.com/fasttrack/o365-data-migration).
+Genom att modernisera dessa tjänster kan du få den bästa slutanvändarupplevelsen med Microsoft Managed Desktop. Microsoft FastTrack Services kan hjälpa dig att modernisera din miljö med hjälp av Microsoft Cloud Services. Du kan kontrollera om du är berättigad till FastTrack-tjänster på [Kvalificerade tjänster och abonnemang](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) och sedan kontakta dem direkt för att förbereda för Microsoft Managed Desktop. Bakgrund om FastTrack OneDrive för företag eller SharePoint Online-migrering finns i [Datamigrering](https://docs.microsoft.com/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Mappade enheter på Microsoft Managed Desktop
  
-Om du inte kan ta bort eller ersätta mappade enheter för vissa användningsfall bör du skicka en supportbegäran i microsoft managed desktop-administratörsportalen för att få dem distribuerade till Användare på Microsoft Managed Desktop.
+Om du inte kan ta bort eller ersätta mappade enheter för vissa användningsfall bör du skicka en supportbegäran i Microsoft Managed Desktop-administratörsportalen för att få dem distribuerade till Microsoft Managed Desktop-användare.
     
 För en sådan begäran måste du ange följande information i supportbegäran: 
 
@@ -38,16 +40,16 @@ Till exempel:
 
 | Enhetsbeteckning | UNC-sökväg | Användargrupp |
 |--------------|----------|------------|
-| X:  | \\\server\share\Marketing | ContosoMarketing (på 85) |
+| X:  | \\\server\dela\Marknadsföring | ContosoMarketing |
 
-Det är helt och hållet ditt ansvar att se till att användare och grupper har och behålla rätt behörighet för att komma åt fildelningsplatser och att de lokala filtjänsterna förblir tillgängliga. Du bör också ta bort dina krav för sådana filresurser så snart som möjligt.
+Det är helt och hållet ditt ansvar att se till att användare och grupper har och har rätt behörighet att komma åt fildelningsplatser och att de lokala filtjänsterna förblir tillgängliga. Du bör också ta bort dina krav för sådana filresurser så snart som möjligt.
 
-### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Så här distribueras mappade enheter på Microsoft Managed Desktop
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Så här har mappade enheter distribuerats i Microsoft Managed Desktop
  
-Kontrollera att mappade enheter inte kan undvikas och du noggrant har granskat kraven innan du skickar en servicebegäran. Följ sedan dessa steg:
+Se till att mappade enheter inte kan undvikas och du har noggrant granskat kraven innan du skickar en servicebegäran. Följ sedan dessa steg:
 
-1. Navigera till [Portalen för Hanterade skrivbord i Microsoft](https://aka.ms/mmdportal).  
-2. Skicka en supportbegäran med titeln "Mappad enhetsdistribution" via avsnittet **Support > Support-begäranden** och ange alla nödvändiga filresursdetaljer.  
-3. Microsoft Managed Desktop IT-åtgärder kommer att ge råd, med hjälp av supportuppdateringar, när begäran har slutförts. Inledningsvis distribueras den här konfigurationen endast till enheter i gruppen Testa distribution.  
-4. Du måste testa och bekräfta om konfigurationen som distribueras av Microsoft Managed Desktop IT-driften fungerar som förväntat. Svara med fliken Diskussion i supportbegäran om att meddela Microsoft Managed Desktop IT-åtgärder när du har slutfört testningen.  
+1. Navigera till [Microsoft Managed Desktop-portalen](https://aka.ms/mmdportal).  
+2. Skicka en supportbegäran med titeln "Mappad enhetsdistribution" via avsnittet **Support > supportbegäranden** och ange all information om filresurs som krävs.  
+3. Microsoft Managed Desktop IT Operations kommer att ge råd, genom att använda uppdateringar för supportbegäran, när begäran har slutförts. Inledningsvis kommer den här konfigurationen endast att distribueras till enheter i testdistributionsgruppen.  
+4. Du måste testa och bekräfta om konfigurationen som distribueras av Microsoft Managed Desktop IT Operations fungerar som förväntat. Svara med fliken Diskussion i supportbegäran för att meddela Microsoft Managed Desktop IT Operations när du har slutfört testningen.  
 5. Microsoft Managed Desktop IT Operations-teamet distribuerar sedan konfigurationen till de andra distributionsgrupperna. 

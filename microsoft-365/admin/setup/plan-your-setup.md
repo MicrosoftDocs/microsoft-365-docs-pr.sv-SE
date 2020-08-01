@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: Läs om vad du behöver göra för att konfigurera Microsoft 365 för företag.
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Läs mer om kraven och övervägandena för att flytta till Microsoft 365 för företag.
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778955"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529666"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planera installationen av Microsoft 365 för företag
 
 Den här artikeln är avsedd för personer som prenumererar på en Microsoft 365 for Business-plan.
   
-Det finns några saker du måste bestämma och information som du måste ha till hands innan du flyttar organisationen till Microsoft 365.
+Innan du flyttar organisationen till Microsoft 365 finns det krav som du måste uppfylla, information som du måste ha till hands och beslut som du måste fatta.
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Information som ska finnas till hands innan du kör installationsguiden
 

@@ -1,21 +1,24 @@
 ---
 title: Lägga till och verifiera administratörskontakter i administratörsportalen
 description: Berätta vem vi ska kontakta för varje fokusområde.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42812924"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529809"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Lägga till och verifiera administratörskontakter i administratörsportalen
 
-Det finns flera sätt att kommunicera med kunder i Microsoft Managed Desktop.There are several ways that Microsoft Managed Desktop service communicates with customers. För att effektivisera kommunikationen och se till att vi kontrollerar med rätt personer måste du tillhandahålla en uppsättning administratörskontakter. Microsoft Managed Desktop IT Operations kontaktar dessa personer för att få hjälp med felsökningsproblem för din klientorganisation.
+Det finns flera sätt att kommunicera med kunder i Microsoft Managed Desktop. För att effektivisera kommunikationen och se till att vi kontrollerar med rätt personer måste du tillhandahålla en uppsättning administratörskontakter. Microsoft Managed Desktop IT Operations kontaktar dessa personer för att få hjälp med felsökningsproblem för din klientorganisation.
 
 > [!IMPORTANT]
 > Du kanske redan har lagt till dessa kontakter i administratörsportalen. Om så är fallet, ta en stund nu att dubbelkolla att kontaktlistan är korrekt, eftersom Microsoft Managed Desktop **måste** kunna nå dem om en allvarlig incident inträffar.
@@ -28,7 +31,7 @@ Microsofts administratörsportal för hanterade skrivbord kräver att personer s
 - Global läsare
 - Administratör för servicesupport
 
-Den globala administratören måste vara den som registrerar din organisation i Microsoft Managed Desktop. Alla fem rollerna har samma åtkomst i administratörsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar dessa roller i Azure AD finns [i Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+Den globala administratören måste vara den som registrerar din organisation på Microsoft Managed Desktop. Alla fem rollerna har samma åtkomst i administratörsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar dessa roller i Azure AD finns [i Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-areas-of-focus"></a>Admin kontaktområden i fokus
 
@@ -39,8 +42,8 @@ Fokusområde | För frågor om
 Förpackning av appar | Felsöka appförpackningar
 Enheter | Enhetshälsa, felsökning med Microsoft Hanterade skrivbordsenheter
 Säkerhet | Felsöka säkerhetsproblem med Microsoft Managed Desktop-enheter
-IT-helpdesk | i de fall där vår supportpersonal lämnar över slutanvändarbiljetter utanför Microsoft Managed Desktop-supportområden 
-Andra | För frågor som inte omfattas av andra områden
+IT-support | i de fall där vår supportpersonal lämnar över slutanvändarbiljetter utanför Microsoft Managed Desktop-supportområden 
+Annat | För frågor som inte omfattas av andra områden
 
 **Den du väljer för dessa kontakter måste ha kunskap och behörighet att fatta beslut för din Microsoft Managed Desktop-miljö.** När du är ombord på microsoft managed desktop-miljön uppmanas du att lägga till kontakter för din lokala helpdesk och säkerhet. 
 
@@ -58,7 +61,7 @@ Administratörskontakter krävs när du [skickar en supportbegäran](../service-
 
     ![Admin portal, Lägg till knappen, till vänster om Exportera och uppdatera](../../media/adminadd.png)
 
-4.  Välj ett **fokusområde** och ange information för kontakten. 
+4.  Välj ett **fokusområde** och ange informationen för kontakten. 
 
     ![listan över fokusområden, till exempel Andra, Appar och Säkerhet](../../media/areaoffocus.png)
 
@@ -67,10 +70,10 @@ Administratörskontakter krävs när du [skickar en supportbegäran](../service-
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
 
 1. Lägga till och verifiera administratörskontakter i administratörsportalen (det här avsnittet)
-2. [Justera villkorlig åtkomst](conditional-access.md)
-3. [Tilldela licenser](assign-licenses.md)
-4. [Installera Intune Company Portal på enheter](company-portal.md)
-5. [Aktivera roaming i företagstillstånd](enterprise-state-roaming.md)
-6. [Konfigurera Microsoft Managed Desktop-enheter](set-up-devices.md)
-7. [Gör användarna redo att använda enheter](get-started-devices.md)
+2. [Justera villkorsstyrd åtkomst](conditional-access.md)
+3. [Koppla licenser](assign-licenses.md)
+4. [Installera Intune-företagsportal på enheter](company-portal.md)
+5. [Aktivera Enterprise State Roaming](enterprise-state-roaming.md)
+6. [Konfigurera Microsoft Hanterat skrivbord enheter](set-up-devices.md)
+7. [Få dina användare redo att använda enheter](get-started-devices.md)
 8. [Distribuera appar till enheter](deploy-apps.md)

@@ -1,25 +1,27 @@
 ---
 title: Konfigurerbar inställningsreferens för Microsoft Managed Desktop
 description: Ange kategorier för konfigurerbara inställningar i Microsoft Managed Desktop
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42812935"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529367"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Konfigurerbar inställningsreferens - Microsoft Managed Desktop
 
-I det här avsnittet visas de inställningskategorier som kunder kan konfigurera med Microsoft Managed Desktop. Varje inställningskategori innehåller information om krav, metodtips och hur du anpassar inställningskategorin. 
+I det här avsnittet visas de inställningskategorier som kunderna kan konfigurera med Microsoft Managed Desktop. Varje inställningskategori innehåller information om krav, metodtips och hur du anpassar inställningskategorin. 
 
 ## <a name="desktop-background-picture"></a>Bakgrundsbild på skrivbordet
-Du kan anpassa skrivbordsbakgrundsbilden för Microsoft Hanterade stationära enheter i organisationen. Du kan använda detta för att tillämpa ett företags varumärke eller marknadsföringsmaterial. 
+Du kan anpassa skrivbordsbakgrundsbilden för Microsoft Managed Desktop-enheter i organisationen. Du kan använda detta för att tillämpa ett företags varumärke eller marknadsföringsmaterial. 
 
 ### <a name="requirements"></a>Krav
 
@@ -34,8 +36,8 @@ Dessa krav måste uppfyllas för en skrivbordsbakgrundsbild:
 1. Logga in på [Microsofts administratörsportal för hanterade skrivbord](https://aka.ms/mwaasportal)
 2. Under **Inställningar**väljer du **Konfigurera .**
 3. I **Konfigurerbar** arbetsyta väljer du **Skrivbordsbakgrundsbild**. 
-4. Ange platsen för den bild som du vill använda. 
-5. Välj **Scendistribution** för att spara ändringarna och distribuera dem till testgruppen. 
+4. Ange platsen för den bild du vill använda. 
+5. Välj **Scendistribution** för att spara ändringarna och distribuera dem till gruppen Testa. 
 
 ## <a name="browser-start-pages"></a>Startsidor för webbläsare
 Startsidor i webbläsaren öppnas på enskilda flikar när användarna startar Microsoft Edge. Om du vill göra det enkelt för användarna att öppna en uppsättning webbplatser som de använder ofta lägger du till en startsida för webbläsaren för varje webbplats. 
@@ -51,13 +53,13 @@ Du måste ange det fullständigt kvalificerade domännamnet (FQDN) för intranä
 2. Under **Inställningar**väljer du **Konfigurera .**
 3. I **Konfigurerbar** arbetsyta väljer du **Startsidor för webbläsare**. 
 4. Välj **Lägg till startsida**.
-5. På **Startsidan För Lägg till webbläsare**anger du URL:en för den webbplats som du vill använda och väljer sedan Lägg till **startsida**. 
+5. På **Startsidan För Lägg till webbläsare**anger du URL:en för den webbplats du vill använda och väljer sedan Lägg till **startsida**. 
 6. Upprepa steg 1-5 för ytterligare startsidor i webbläsaren. 
-7. Välj **Scendistribution** för att spara ändringarna och distribuera dem till testgruppen.
+7. Välj **Scendistribution** för att spara ändringarna och distribuera dem till gruppen Testa.
 
-## <a name="enterprise-mode-site-list-location"></a>Plats för plats i företagslägeslistan
+## <a name="enterprise-mode-site-list-location"></a>Plats för plats för företagslägeslista
 
-Om du har specifika webbplatser och appar som du vet har kompatibilitetsproblem med Microsoft Edge kan du använda webbplatslistan för Företagsläge så att webbplatserna öppnas automatiskt med Internet Explorer 11. Om du vet att intranätplatserna inte fungerar korrekt med Microsoft Edge kan du dessutom ställa in alla intranätplatser så att de öppnas automatiskt med Internet Explorer 11. Att använda Företagsläge innebär att du kan fortsätta att använda Microsoft Edge som standardwebbläsare, samtidigt som du ser till att dina appar fortsätter att fungera i Internet Explorer 11. Mer information om webbplatslistor för företagsläge finns i [Platslistor för företagsläge och företagsläge](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode). 
+Om du har specifika webbplatser och appar som du vet har kompatibilitetsproblem med Microsoft Edge kan du använda webbplatslistan för Företagsläge så att webbplatserna öppnas automatiskt med Internet Explorer 11. Om du vet att intranätplatserna inte fungerar korrekt med Microsoft Edge kan du dessutom ställa in alla intranätplatser så att de öppnas automatiskt med Internet Explorer 11. Med enterprise mode innebär det att du kan fortsätta att använda Microsoft Edge som standardwebbläsare, samtidigt som du ser till att dina appar fortsätter att fungera i Internet Explorer 11. Mer information om webbplatslistor för företagsläge finns i [Platslistor för företagsläge och företagsläge](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode). 
 
 Du kan ange en https:// plats eller platsen för en intern resurs där du har varit värd för webbplatslistan för företagsläge. 
 
@@ -81,8 +83,8 @@ Dessa bästa metoder erbjuds för att hjälpa kunderna att fatta beslut om att m
 1.  Logga in på [Microsofts administratörsportal för hanterade skrivbord](https://aka.ms/mwaasportal)
 2.  Under **Inställningar**väljer du **Konfigurera .**
 3.  I **Konfigurerbar** arbetsyta väljer du **Plats för webbplats i företagsläge**. 
-4.  Ange https-platsen för din webbplatslista. 
-5.  Välj **Scendistribution** för att spara ändringarna och distribuera dem till testgruppen.
+4.  Ange https-platsen för webbplatslistan. 
+5.  Välj **Scendistribution** för att spara ändringarna och distribuera dem till gruppen Testa.
 
 ## <a name="trusted-sites"></a>Betrodda platser
 
@@ -90,11 +92,11 @@ Med betrodda platser kan du anpassa säkerhetszoner eller där en plats kan anv�
 - Zon 1 – Zonen Lokalt intranät
 - Zon 2 – Zonen Betrodda platser
 - Zon 3 – Zonen Internet
-- Zon 4 – Zon restriktion
+- Zon 4 – Zonplanera platser
 
 ### <a name="requirements"></a>Krav
 
-Ange fullständigt kvalificerat domännamn (FQDN) för intranät eller Internet-platser för varje betrodd plats. 
+Ange fullständigt kvalificerat domännamn (FQDN) för intranät eller internetplatser för varje betrodd plats. 
 
 ### <a name="customize-and-deploy-trusted-sites"></a>Anpassa och distribuera betrodda platser
 
@@ -105,7 +107,7 @@ Ange fullständigt kvalificerat domännamn (FQDN) för intranät eller Internet-
 3. I **Konfigurerbar** arbetsyta väljer du **Betrodda platser**och väljer sedan **Lägg till betrodd plats**. 
 4. På **Lägg till betrodd plats**anger du URL:en, väljer en säkerhetszon och väljer sedan Lägg till betrodd **plats**. 
 5. Upprepa steg 1-4 för varje betrodd plats som du vill lägga till. 
-6. Välj **Scendistribution** för att spara ändringarna och distribuera dem till testgruppen.
+6. Välj **Scendistribution** för att spara ändringarna och distribuera dem till gruppen Testa.
 
 **Så här tar du bort en betrodd plats**
 
@@ -114,15 +116,15 @@ Ange fullständigt kvalificerat domännamn (FQDN) för intranät eller Internet-
 3. I **Konfigurerbar** arbetsyta väljer du **Betrodda platser**. 
 4. Markera den webbplats som du vill ta bort och välj sedan **Ta bort**. 
 5. Upprepa steg 1-4 för varje betrodd plats som du vill ta bort. 
-6. Välj **Scendistribution** för att spara ändringarna och distribuera dem till testgruppen.
+6. Välj **Scendistribution** för att spara ändringarna och distribuera dem till gruppen Testa.
 
 ## <a name="proxy"></a>Proxy
-Du kan hantera nätverksproxyinställningar för din organisation. Lägg till proxyservern och portnumret och lägg sedan till undantag från proxywebbplatsen. Microsoft Managed Desktop innehåller en uppsättning standardproxyundantag som krävs för att tjänsten ska fungera. Standardundansuteskapslistan får endast ändras av tjänsten Microsoft Managed Desktop.  Mer information finns i [Nätverkskonfiguration för Microsoft Managed Desktop](../get-ready/network.md). 
+Du kan hantera nätverksproxyinställningar för din organisation. Lägg till proxyservern och portnumret och lägg sedan till undantag från proxywebbplatsen. Microsoft Managed Desktop innehåller en uppsättning standardproxyundantag som krävs för att tjänsten ska fungera. Standardundanskapslistan kan bara ändras av tjänsten Microsoft Managed Desktop.  Mer information finns i [Nätverkskonfiguration för Microsoft Managed Desktop](../get-ready/network.md). 
 
 De proxywebbplatsundantag som du lägger till i Microsoft Managed Desktop-portalen läggs till i standardproxyundantagen som ingår i Microsoft Managed Desktop-tjänsten. 
 
 > [!NOTE]
-> Att uppdatera standardundantagslistan för proxy prioriteras alltid framför kunddistributioner. Det innebär att den stegvisa distributionen pausas om det finns en distribution för standardundantagslistan för proxy.  
+> Att uppdatera standardundantagslistan för proxy prioriteras alltid framför kunddistributioner. Det innebär att den iscensatta distributionen pausas om det finns en distribution för standardundantagslistan för proxy.  
 
 ### <a name="requirements"></a>Krav
 
@@ -140,8 +142,8 @@ Dessa krav måste uppfyllas för proxyserver- och proxyplatsundantag:
 4. Ange **adress-** och **portnumret** för din proxyserver och välj sedan **Lägg till proxyundantag**. 
 5. Ange URL:en för en giltig http-webbplats och välj sedan **Lägg till proxyundantag**. 
 6. Upprepa steg 1-5 för varje betrodd plats som du vill lägga till. 
-7. Välj **Scendistribution** för att spara ändringarna och distribuera dem till testgruppen.
+7. Välj **Scendistribution** för att spara ändringarna och distribuera dem till gruppen Testa.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Översikt över konfigurerbara inställningar](config-setting-overview.md) 
-- [Distribuera konfigurerbara inställningar](config-setting-deploy.md)
+- [Distribuera inställningar som kan konfigureras](config-setting-deploy.md)

@@ -5,16 +5,18 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation, inst
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "42806792"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530241"
 ---
-# <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurerbara inställningar - Microsoft Managed Desktop
+# <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurerbara inställningar – Microsoft Hanterat skrivbord
 
 Microsoft Managed Desktop distribuerar inställningar och principer som tillämpas på alla enheter som hanteras av Microsoft Managed Desktop. Mer information finns i [Enhetskonfiguration](../service-description/device-policies.md).
 
@@ -26,16 +28,16 @@ Konfigurerbara inställningsändringar görs i molnet och tillämpas på dina Mi
 
 Det finns några gånger att använda konfigurerbara inställningar. 
 
-**Introduktionsprocess** – Microsoft Managed Desktop rekommenderar att du anpassar konfigurerbara inställningar när du är ombord på Microsoft Managed Desktop-tjänsten eller när du är ombord på ett stort antal enheter (20 eller fler). Inställningskategorier konfigureras i Microsoft Managed Desktop-administratörsportalen. När du har gått in och har åtkomst till administratörsportalen kan du bestämma vilka inställningskategorier du vill anpassa för din organisation, göra ändringarna, iscensätta en distribution och sedan distribuera ändringarna.
+**Introduktionsprocess** – Microsoft Managed Desktop rekommenderar att du anpassar konfigurerbara inställningar när du är ombord på Microsoft Managed Desktop-tjänsten eller när du ar ombord på ett stort antal enheter (20 eller fler). Inställningskategorier konfigureras i Microsoft Managed Desktop-administratörsportalen. När du har gått in och har åtkomst till administratörsportalen kan du bestämma vilka inställningskategorier du vill anpassa för din organisation, göra ändringarna, iscensätta en distribution och sedan distribuera ändringarna.
 
 **Underhåll inställningar** - Granska dina inställningar regelbundet och gör nödvändiga uppdateringar. Du kan behöva göra ändringar för att stödja en ändring i ditt företag.   
 
 ## <a name="setting-categories"></a>Ange kategorier
 
-Det här är de konfigurerbara inställningskategorierna som du kan anpassa:
-- [Bakgrundsbild](config-setting-ref.md#desktop-background-picture) för skrivbordet – Anpassa skrivbordsbakgrundsbilden för Microsoft Hanterade stationära enheter. 
-- [Startsidor för webbläsare](config-setting-ref.md#browser-start-pages) – Lägg till startsidor som ska användas med Microsoft Edge. Se Startsida för webbläsare
-- [Webbplatslista för företagsläge](config-setting-ref.md#enterprise-mode-site-list-location) – Lägg till webbplatser och deras kompatibilitetsläge. Webbplatser i listan startar i Internet Explorer. 
+Det här är de konfigurerbara inställningskategorier som du kan anpassa:
+- [Bakgrundsbild för skrivbordet](config-setting-ref.md#desktop-background-picture) – Anpassa skrivbordsbakgrundsbilden för Microsoft Hanterade stationära enheter. 
+- [Startsidor för webbläsaren](config-setting-ref.md#browser-start-pages) – Lägg till startsidor som ska användas med Microsoft Edge. Se Startsida för webbläsare
+- [Webbplatslista för företagsläge](config-setting-ref.md#enterprise-mode-site-list-location) – Lägg till platser och deras kompatibilitetsläge. Webbplatser i listan startar i Internet Explorer. 
 - [Betrodda platser](config-setting-ref.md#trusted-sites) – Lägg till betrodda platser och ange säkerhetszoner för varje plats. 
 - [Proxyplatsundantag](config-setting-ref.md#proxy) – Ställ in adressnummer och portnummer för proxyservern och lägg till proxyplatsundantag.
 
@@ -55,22 +57,22 @@ Microsoft Managed Desktop rekommenderar att du följer en process som liknar fö
 
 Du konfigurerar och arrangerar ändringar i administrationsportalen för Microsoft Managed Desktop. Mer information finns i [Anpassa konfigurerbara inställningar](config-setting-ref.md). 
 
-**Steg 3 - Kommunicera ändringar** Kommunicera information om kommande ändringar till användarna. Slutför kommunikationen som ingår i dina ändringshanteringsprocesser för varje distribution. Du bör tydligt kommunicera alla ändringar som påverkar hur en användare fungerar, eller vad de kommer att se på sina enheter.
+**Steg 3 - Kommunicera ändringar** Kommunicera information om kommande ändringar till användarna. Slutför kommunikationen som ingår i ändringshanteringsprocesserna för varje distribution. Du bör tydligt kommunicera alla ändringar som påverkar hur en användare fungerar, eller vad de kommer att se på sina enheter.
 
-**Steg 4 – Distribuera ändringar** – Distribuera dina ändringar, med början i testgruppen. Med gruppen Test kan du validera och felsöka eventuella problem i en grupp med färre enheter innan du distribuerar ändringar till större grupper av enheter. Om du stöter på problem kan du återställa ändringen, uppdatera inställningen och iscensätta en ny distribution. Microsoft Managed Desktop rekommenderar att du följer den strukturerade metoden och distribuerar till grupper i den här ordningen: Testa, Först, Snabbt och sedan Brett.   
+**Steg 4 – Distribuera ändringar** – Distribuera dina ändringar, med början i testgruppen. Med gruppen Test kan du validera och felsöka eventuella problem i en grupp med färre enheter innan du distribuerar ändringar till större grupper av enheter. Om du stöter på några problem kan du återställa ändringen, uppdatera inställningen och iscensätta en ny distribution. Microsoft Managed Desktop rekommenderar att du följer den strukturerade metoden och distribuerar till grupper i den här ordningen: Testa, Först, Snabbt och sedan Brett.   
 
-Alla konfigurerbara inställningar hanteras med hjälp av administrationsportalen för Microsoft Managed Desktop. Mer information finns i [Distribuera ändringar](config-setting-deploy.md). 
+Alla konfigurerbara inställningar hanteras med hjälp av microsoft managed desktop-administratörsportalen. Mer information finns i [Distribuera ändringar](config-setting-deploy.md). 
 
 **Steg 5 – Spåra ändringar** – Spåra förloppet för dina ändringar av distributionsstatus. För varje inställning kan du:
 - **Spåra förloppet** – Spåra status när du har distribuerat ändringen. Statusen ändras till **Pågår**och sedan **antingen Slutför**eller **Misslyckades**. Om en distribution misslyckas öppnas en supportbegäran automatiskt för Microsoft Managed Desktop Operations för att undersöka problemet.  
 - **Se distribuerad version** – Varje distribuerad ändring har ett versionsnummer.
-- **Återställ ändringar** – Om du återställer en ändring stoppas den aktuella distributionen och alla grupper återgår till de senaste ändringarna som har distribuerats till alla grupper. Du rullar tillbaka till det senast kända inställningsvärdet.
-- **Validera ändringar** - När distributionen är klar har du validerat ändringarna som förväntat.  
+- **Återställ ändringar** – Om du återställer en ändring stoppas den aktuella distributionen och alla grupper återgår till de senaste ändringarna som har distribuerats till alla grupper. Du återgår till det senast kända inställningsvärdet.
+- **Validera ändringar** - När distributionen är klar validerar du ändringarna som förväntat.  
 
 Om en distribution har misslyckats eller om du inte kan återställa en ändring öppnar du [en supportbegäran](admin-support.md) med Microsoft Managed Desktop Operations. 
 
 Mer information finns i [Distribuera och spåra konfigurerbara inställningar](config-setting-deploy.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-- [Konfigurerbar inställningsreferens](config-setting-ref.md) 
-- [Distribuera konfigurerbara inställningar](config-setting-deploy.md) 
+- [Referens för inställningar som kan konfigureras](config-setting-ref.md) 
+- [Distribuera inställningar som kan konfigureras](config-setting-deploy.md) 
