@@ -315,6 +315,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Förvalda säkerhetsprinciper
                   href: ./office-365-security/preset-security-policies.md
+                - name: Konfigureringsanalys för förvalda säkerhetsprinciper
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Meddelandehuvuden för antiskräppost
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Så kombineras principer och skydd

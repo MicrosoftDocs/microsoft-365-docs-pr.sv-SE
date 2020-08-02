@@ -6,17 +6,24 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2ee1b38497819f547b0dcf91ecd88249d0d2d704
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 8f2132688ce5e8888e4f63444315204fb3405df3
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42812576"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529713"
 ---
-# <a name="working-with-microsoft-managed-desktop"></a><span data-ttu-id="31927-103">Arbeta med Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="31927-103">Working with Microsoft Managed Desktop</span></span>
+# <a name="working-with-microsoft-managed-desktop"></a><span data-ttu-id="a6599-103">Arbeta med Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="a6599-103">Working with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="31927-104">Det här avsnittet innehåller information om dagens dagliga liv, t. ex. hur IT-administratörer kan få support, om det behövs, hur dina slutanvändare får support, hanterar dina program när de har distribuerats och hur du arbetar med de anpassningsbara inställningarna på enheter.</span><span class="sxs-lookup"><span data-stu-id="31927-104">This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.</span></span>
+<span data-ttu-id="a6599-104">Det här avsnittet innehåller information om dagens dagliga liv, t. ex. hur IT-administratörer kan få support, om det behövs, hur dina slutanvändare får support, hanterar dina program när de har distribuerats och hur du arbetar med de anpassningsbara inställningarna på enheter.</span><span class="sxs-lookup"><span data-stu-id="a6599-104">This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.</span></span>
 
-- [<span data-ttu-id="31927-105">Admin-support för Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="31927-105">Admin support for Microsoft Managed Desktop</span></span>](admin-support.md)
-- [<span data-ttu-id="31927-106">Få hjälp för slutanvändare</span><span class="sxs-lookup"><span data-stu-id="31927-106">Getting help for end users</span></span>](end-user-support.md)
-- [<span data-ttu-id="31927-107">Konfigurerbara inställningar – Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="31927-107">Configurable settings - Microsoft Managed Desktop</span></span>](config-setting-overview.md)
+
+- [<span data-ttu-id="a6599-105">Arbeta med insikter</span><span class="sxs-lookup"><span data-stu-id="a6599-105">Work with insights</span></span>](insights.md)
+- [<span data-ttu-id="a6599-106">Admin-support för Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="a6599-106">Admin support for Microsoft Managed Desktop</span></span>](admin-support.md)
+- [<span data-ttu-id="a6599-107">Få hjälp för slutanvändare</span><span class="sxs-lookup"><span data-stu-id="a6599-107">Getting help for end users</span></span>](end-user-support.md)
+- [<span data-ttu-id="a6599-108">Hantera branschspecifika appar på Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="a6599-108">Manage line-of-business apps in Microsoft Managed Desktop</span></span>](manage-apps.md)
+- [<span data-ttu-id="a6599-109">Appkontroll</span><span class="sxs-lookup"><span data-stu-id="a6599-109">App control</span></span>](../service-description/app-control.md)
+- [<span data-ttu-id="a6599-110">Konfigurerbara inställningar – Microsoft Hanterat skrivbord</span><span class="sxs-lookup"><span data-stu-id="a6599-110">Configurable settings - Microsoft Managed Desktop</span></span>](config-setting-overview.md)

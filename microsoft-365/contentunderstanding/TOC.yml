@@ -1,0 +1,22 @@
+- name: Komma igång med innehållsöverensning
+  items:
+    - name: Översikt över dokuments förståelse
+      href: document-understanding-overview.md
+    - name: Översikt över formulärbearbetning
+      href: form-processing-overview.md
+    - name: Skillnad mellan en dokumentöverensning och formulärbearbetningsmodeller
+      href: difference-between-document-understanding-and-form-processing-model.md
+    - name: Skapa ett innehållscenter
+      href: create-a-content-center.md
+    - name: Skapa en klassificerare
+      href: create-a-classifier.md
+    - name: Skapa en utsutorn
+      href: create-an-extractor.md
+    - name: Använda en modell
+      href: apply-a-model.md
+    - name: Skapa en formulärbearbetningsmodell
+      href: create-a-form-processing-model.md
+- name: Komma igång med installationen
+  items:
+    - name: Konfigurera innehållsöverensning
+      href: set-up-content-understanding.md
