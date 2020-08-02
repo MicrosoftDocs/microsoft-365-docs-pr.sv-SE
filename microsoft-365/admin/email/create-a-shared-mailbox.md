@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: När en delad postlåda har skapats kan flera personer i verksamheten dela på ansvaret att läsa och svara på e-postmeddelanden som skickas till en adress.
-ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780271"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529641"
 ---
 # <a name="create-a-shared-mailbox"></a>Skapa en delad postlåda 
 
@@ -159,6 +159,9 @@ Du kan komma åt en delad postlåda på en mobil enhet på två sätt:
 - Öppna webbläsaren, logga in och gå sedan till Outlook på webben. Från Outlook på webben har du tillgång till den delade postlådan.
 
     Anvisningar finns i <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Lägga till en delad postlåda i Outlook på webben</a>.
+    
+> [!NOTE]
+> Delad postlåda kan bara läggas till i Outlook för iOS-appen eller Outlook för Android-mobilappen
 
 ## <a name="use-the-shared-calendar"></a>Använda den delade kalendern
 

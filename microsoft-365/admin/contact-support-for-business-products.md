@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online eller besöka Microsoft Store för en virtuell kundtjänst.
+description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online.
 feedback_system: None
-ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
+ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506315"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46536866"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 
@@ -70,11 +70,6 @@ Om ditt telefonnummer till supporten inte visas ovan använder du den nedrullnin
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-## <a name="virtual-support-from-the-microsoft-store"></a>Virtuell support från Microsoft Store
-
-Du kan nu kontakta Microsoft Store Sales och kundtjänst för att prata med en supportavdelning för att lösa problemet med Microsoft 365.
-
-Gå till sidan [Kontakta Microsoft Store support](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020) för att få länkar och telefonnummer.
 
 ::: moniker-end
 

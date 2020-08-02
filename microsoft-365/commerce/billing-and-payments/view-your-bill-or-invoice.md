@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,69 +26,57 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
-ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 81c3a03207fd8f35c975026ebd2a9a0334fc9407
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817003"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533619"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
-Den här artikeln är avsedd för personer som har en Microsoft 365 för företag-prenumeration. Du måste vara global administratör eller faktureringsadministratör för att kunna utföra åtgärderna som beskrivs i den här artikeln.
+Den här artikeln är avsedd för personer som har en Microsoft 365 företagsprenumeration.
   
 Om du behöver hjälp med att tolka de debiteringar som visas på din faktura hittar du en detaljerad genomgång i [Förstå din faktura](understand-your-invoice2.md).
   
- **Är du inte administratör?** Kontakta IT-administratören om hjälp. 
-  
- **Har du problem med fakturan?** [Kontakta supporten för företagsprodukter](../../admin/contact-support-for-business-products.md).
+**Har du problem med fakturan?** [Kontakta supporten för företagsprodukter](../../admin/contact-support-for-business-products.md).
 
- Titta på en kort video om hur du visar fakturan (observera att din faktura kan skilja sig från den som visas i videon). <br><br>
+## <a name="before-you-begin"></a>Innan du börjar
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
-
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Du måste vara global administratör eller faktureringsadministratörer för att kunna utföra åtgärder som beskrivs i den här artikeln.
   
 ## <a name="view-a-bill-or-invoice"></a>Visa en faktura
 
-::: moniker range="o365-worldwide"
-
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fakturor och betalningar</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. I administrationscentret går du till sidan **Fakturering** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturor och betalningar</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fakturor och betalningar</a>.
-
-::: moniker-end
-
+    - Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fakturor och betalningar</a>.
+    - Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fakturering och betalning</a>.
 2. Välj ett datumintervall i listrutan på fliken **Fakturor** och välj sedan den beställning du vill visa.
-
-3. På sammanfattningssidan ser du följande:
-
-    - Totalt saldo, aktuellt belopp att betala, förfallodatum, den senaste betalningens belopp och datumet när den togs emot.
-
-    - Betalningsinstruktioner.
-
-    - En förteckning över tidigare betalningsdatum och beloppen som betalats.
-
-    - Datumet då ordern skapades och ordernumret.
-
+3. På sidan Sammanfattning visas artiklarna, kvantiteten, priset, rabatten och summan för alla artiklar i fakturan.
 4. Om du vill skriva ut eller spara en pdf-kopia av fakturan väljer du **Ladda ned PDF**.
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Få en kopia av ditt faktureringsutdrag via e-post
 
-[Betala med faktura, kreditkort eller bankkonto](pay-for-your-subscription.md)
-  
-[Hantera betalningsmetoder](manage-payment-methods.md)
+Du kan välja att få en kopia av faktureringsutdraget som en e-postbilaga. Om du vill det bör du tänka på följande:
 
-[Betalningsalternativ för Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)
+- Ett e-postmeddelande skickas till både den primära och den alternativa e-postadressen för varje person som har angetts som mottagare av meddelandet.
+- Du får två separata e-postmeddelanden: ett som meddelar att fakturan är klar, med instruktioner för att logga in på administrationscentret för att se den, och ett annat e-postmeddelande som innehåller faktureringsutdraget som en bifogad fil.
+
+### <a name="to-receive-your-billing-statement-in-email"></a>Få faktureringsutdraget via e-post
+
+1. Gå till sidan **Fakturering**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
+    - Om du använder Office 365 Germany går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsmeddelanden</a>.
+    - Om du använder Office 365 med 21Vianet går du till den här sidan för <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a>.
+1. Under **Vill du få faktureringsutdrag som en e-postbilaga?** ändrar du inställningen till **På**.
+
+    Du kan sluta ta emot faktureringsutdrag i e-postmeddelanden när som helst genom att ställa reglaget på **Av**.
+
+## <a name="next-steps"></a>Nästa steg
+
+Om du har ett saldo och vill betala det kan du göra det online. Se [Betala för prenumerationen](pay-for-your-subscription.md) för att ta reda på hur du gör det.
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Betala med faktura, kreditkort eller bankkonto](pay-for-your-subscription.md) (artikel) \
+[Hantera betalningsmetoder](manage-payment-methods.md) (artikel) \
+[Betalningsalternativ för Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761) (artikel)
