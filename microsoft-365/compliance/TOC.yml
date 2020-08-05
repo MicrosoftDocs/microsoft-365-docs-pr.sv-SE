@@ -317,7 +317,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Starta kvarhållning när en händelse inträffar
           href: event-driven-retention.md
-        - name: Hantera livscykeln för SharePoint-dokument
+        - name: Använd lagringsetiketter för att hantera livscyklar för dokument
           href: auto-apply-retention-labels-scenario.md
         - name: Hantera disposition av data
           href: disposition.md
