@@ -20,12 +20,13 @@ search.appverid:
 - MET150
 description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online.
 feedback_system: None
-ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.date: 7/28/2020
+ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536866"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552452"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 
@@ -64,12 +65,9 @@ Ha kontouppgifterna redo när du ringer.
 
 - **I Storbritannien ringer du 0800 032 6417.**
 
-### <a name="phone-numbers-for-other-countries"></a>Telefonnummer för andra länder
-
 Om ditt telefonnummer till supporten inte visas ovan använder du den nedrullningsbara menyn nedan för att hitta numret för ditt land eller region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

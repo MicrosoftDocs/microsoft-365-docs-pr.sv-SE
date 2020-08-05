@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använda rapporter för avancerat skydd mot office 365 i &amp; Säkerhetsefterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434131"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560303"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för avancerat hotskydd för Office 365
 
@@ -31,7 +31,7 @@ Office 365 Atp-organisationer (Advanced Threat Protection) (till exempel Microso
 
 ![Instrumentpanelen Rapporter i security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a>Rapport över avancerade filtyper för hotskydd
+## <a name="advanced-threat-protection-file-types-report"></a>Filtypsrapporter för ATP
 
 Rapporten **Avancerat skydd mot hotfiltyper** visar vilken typ av filer som har identifierats som skadliga av [ATP Safe Attachments](atp-safe-attachments.md).
 
@@ -115,7 +115,7 @@ Om du klickar på **Visa informationstabell**ger rapporten en vy i nära realtid
 
 Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
-## <a name="advanced-threat-protection-message-disposition-report"></a>Dispositionsrapport för avancerat skydd mot skydd
+## <a name="advanced-threat-protection-message-disposition-report"></a>Meddelandedispositionsrapport för ATP
 
 **Atp-meddelandedispositionsrapporten** visar de åtgärder som har vidtagits för e-postmeddelanden som har identifierats som skadliga innehåll.
 
@@ -218,7 +218,7 @@ Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://pro
 
 - **URL klicka skydd åtgärd**: Visar antalet URL klick av användare i organisationen och resultatet av klick:
 
-  - **Blockerade**
+  - **Blockerad** (användaren blockerades från att navigera till webbadressen)
   - **Blockerad och klickad igenom**
   - **Klickade igenom under genomsökningen**
 
@@ -227,7 +227,7 @@ Om du vill visa rapporten öppnar du [Security & Compliance Center,](https://pro
   Om du klickar på **Filter**kan du ändra rapporten med följande filter:
 
   - **Startdatum** och **slutdatum**
-  - De tillgängliga klickskyddsåtgärderna, plus värdet **Tillåten** att se information för alla URL-klick (inte bara blockerade klick).
+  - De tillgängliga klickskyddsåtgärderna plus det **tillåtna** värdet (användaren tilläts navigera till webbadressen).
 
   ![URL-klickskyddsåtgärdsvyn i rapporten för skydd mot URL-hot](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 

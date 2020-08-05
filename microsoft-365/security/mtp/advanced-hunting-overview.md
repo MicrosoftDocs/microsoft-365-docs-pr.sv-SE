@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138284"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552440"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktivt jakt efter hot med avancerad jakt i Microsoft Threat Protection
 
@@ -33,6 +33,9 @@ ms.locfileid: "45138284"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Avancerad jakt är ett frågebaserat hotjaktsverktyg som låter dig utforska upp till 30 dagars rådata. Du kan proaktivt granska händelser i nätverket för att hitta intressanta indikatorer och entiteter. Den flexibla tillgången till data underlättar obegränsad jakt på både kända och potentiella hot.
+<p></p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 Du kan använda samma frågor om hot-jakt för att skapa anpassade identifieringsregler. Dessa regler körs automatiskt för att söka efter och svara på olika händelser och systemtillstånd, inklusive misstänkt överträdelseaktivitet och felkonfigurerade datorer.
 
@@ -45,7 +48,7 @@ Vi rekommenderar att du går igenom flera steg för att snabbt komma igång med 
 | Lärandemål | Beskrivning | Resurs |
 |--|--|--|
 | **Få en känsla för språket** | Avancerad jakt baseras på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/), som stöder samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Översikt över frågespråk](advanced-hunting-query-language.md) |
-| **Lär dig hur du använder frågeresultaten** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Utforska hur du snabbt kan justera frågor och öka detaljnivån för att få rikare information. | [Arbeta med frågeresultat](advanced-hunting-query-results.md) |
+| **Lär dig hur du använder frågeresultaten** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Utforska hur du snabbt kan justera frågor, öka detaljnivån för att få rikare information och vidta svarsåtgärder. | - [Arbeta med frågeresultat](advanced-hunting-query-results.md)<br>- [Vidta åtgärder för frågeresultat](advanced-hunting-take-action.md) |
 | **Förstå schemat** | Få en bra förståelse på hög nivå av tabellerna i schemat och deras kolumner. Detta hjälper dig att avgöra var du ska leta efter data och hur du skapar dina frågor. | [Schemareferens](advanced-hunting-schema-tables.md) |
 | **Utnyttja fördefinierade frågor** | Utforska samlingar av fördefinierade frågor som täcker olika hotjaktsscenarier. | - [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och jaga](advanced-hunting-go-hunt.md) |
 | **Optimera frågor** | Förstå hur du skapar effektiva frågor och frågor som kombinerar data från e-postmeddelanden och enheter. | - [Metodtips för frågor](advanced-hunting-shared-queries.md) <br>- [Jaga mellan enheter och e-postmeddelanden](advanced-hunting-best-practices.md) |
@@ -63,6 +66,7 @@ Avancerade jaktdata kan kategoriseras i två olika typer, var och en konsolidera
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
+- [Vidta åtgärder för frågeresultat](advanced-hunting-take-action.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
 - [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)

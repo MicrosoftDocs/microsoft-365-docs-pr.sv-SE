@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Lär dig att spåra eventuella problem som du stöter på när du konfigurerar en anpassad domän genom att se till att DNS-posterna är korrekt konfigurerade.
-ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399950"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560257"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399950"
 Det kan vara svårt att konfigurera domänen så att den fungerar med Microsoft 365. DNS-systemet är omständigt att arbeta med, och DNS-konfigurationen för din domän påverkar viktiga företagsfunktioner som e-post!
 
 > [!NOTE]
-> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå **Setup**till  >  **installationsdomäner** och visa meddelandena i kolumnen **Status.** Om du ser ett problem väljer du Fler åtgärder (tre punkter) och väljer sedan **Kontrollera hälsotillstånd**. Fönstret som öppnas beskriver eventuella problem med domänen.
+> Du kan söka efter problem med domänen genom att kontrollera dess status. Gå **Setup**till  >  **installationsdomäner** och visa meddelandena i kolumnen **Status.** Om ett problem visas väljer du Fler åtgärder (tre punkter) och väljer sedan **Kontrollera hälsotillstånd**. Fönstret som öppnas beskriver eventuella problem med domänen.
   
 ## <a name="whats-going-on"></a>Vad är det som händer?
 
@@ -88,7 +88,7 @@ Läs vägledningen i [Verifiera din Microsoft 365-domän för att bevisa ägarsk
 Vi kan hjälpa dig att lösa problem med DNS-inställningarna för din domän. Felsökaren för domäner i Microsoft 365 visar alla poster som behöver åtgärdas och exakt vad posterna måste ställas in på. 
 
 > [!TIP]
-> Har du DNS korrekt konfigurerad, men e-post fungerar ändå inte i Outlook på skrivbordet? Kolla in de olika scenarier för [e-postflödet du kan ha med Microsoft 365](https://www.microsoft.com/?ref=go) för att se till att du har konfigurerat saker på rätt sätt för ditt företag. Eller få mer hjälp med felsökning av e-post här: [Åtgärda problem med Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Har du DNS korrekt konfigurerad, men e-post fungerar ändå inte i Outlook på skrivbordet? Kolla in de [olika scenarier för e-postflödet du kan ha med Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) för att se till att du har konfigurerat saker på rätt sätt för ditt företag. Eller få mer hjälp med felsökning av e-post här: [Åtgärda problem med Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Går det inte att komma åt din webbplats?
 <a name="BKMK_Website"> </a>

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Skapa snabblänkar till e-post, dokument, appar, SharePoint-webbplatser, externa webbplatser och andra resurser genom att lägga till anpassade paneler i startprogrammet. '
-ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780139"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552500"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Lägga till anpassade paneler i startprogrammet
 
@@ -45,7 +45,7 @@ Du kan lägga till egna paneler i startprogrammet som pekar på SharePoint-webbp
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Lägga till en anpassad panel i startprogrammet
 
-1. Gå till **Settings**  >  **fliken Inställningars** **organisationsprofil** i administrationscentret.
+1. Logga in på administrationscentret som global **Settings**administratör, gå till  >  **Inställningar orginställningar**och välj fliken **Organisationsprofil.**
     
 2. På fliken **Organisationsprofil** väljer du **Anpassade startpaneler**för startprogrammet .
   
@@ -91,4 +91,3 @@ Om du vill ta bort en anpassad panel markerar du panelen i fönstret **Anpassade
 
 Förutom att lägga till paneler i startprogrammet kan du lägga till startpaneler i navigeringsfältet[(läs mer).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Information om hur du anpassar utseendet på Microsoft 365 så att det matchar organisationens varumärke finns [i Anpassa Microsoft 365-temat](../setup/customize-your-organization-theme.md).
   
-

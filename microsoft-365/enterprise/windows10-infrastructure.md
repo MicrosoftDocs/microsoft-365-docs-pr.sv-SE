@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011929"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552692"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fas 3: Windows 10 Enterprise
 
@@ -44,7 +44,7 @@ Det finns flera sätt att distribuera Windows 10 Enterprise för din organisatio
 | [Använda Microsoft Endpoint Configuration Manager som en uppgradering på plats](windows10-deploy-inplaceupgrade.md) | Välj det här alternativet om du behöver uppgradera Windows 7- eller Windows 8.1-datorer till den <a href="https://aka.ms/windows-10-release-information" target="_blank">aktuella versionen</a> av Windows 10 Enterprise och dina datorer för närvarande hanteras med <a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">Configuration Manager (aktuell gren).</a> |
 | [Använda Windows Autopilot](windows10-deploy-autopilot.md) | Välj det här alternativet om du konfigurerar nya Windows-datorer med Windows 10 Enterprise, version 1703 eller senare förinstallerat. Slutanvändare initierar installationen med önskad konfiguration genom att ange sina autentiseringsuppgifter för arbets- eller skolkonto. |
 
-Om dessa distributionsscenarier inte passar organisationens behov kan du lära dig mer om andra scenarier och förstå funktionerna och begränsningarna för varje i [Windows 10-distributionsscenarier](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också <a href="https://aka.ms/planforwin10deployment" target="_blank">planera för distribution av Windows 10</a> på egen hand.
+Om dessa distributionsscenarier inte passar organisationens behov kan du lära dig mer om andra scenarier och förstå funktionerna och begränsningarna för var och en av [Windows 10-distributionsscenarier](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). Du kan också <a href="https://aka.ms/planforwin10deployment" target="_blank">planera för distribution av Windows 10</a> på egen hand.
 
 Du kan läsa mer om Windows 10 med följande artiklar:
 
@@ -56,15 +56,15 @@ Du kan läsa mer om Windows 10 med följande artiklar:
 ## <a name="additional-services-and-features"></a>Ytterligare tjänster och funktioner
 Som en del av distributionen av Windows 10 Enterprise kan du lägga till dessa ytterligare tjänster och funktioner.
 
-### <a name="windows-analytics"></a>Windows-analys
+### <a name="desktop-analytics"></a>Desktop Analytics
 
 Windows använder diagnostikdata för att tillhandahålla omfattande och användbar information som hjälper dig att få djup insikt i driftseffektivitet och hälsa för Windows 10-enheter i din miljö.
 
 * Uppgraderingsberedskap - Uppgraderingsberedskap hjälper dig att flytta till Windows 10 och hålla dig uppdaterad med nya windows 10-funktionsuppdateringar. 
 * Uppdateringsefterlevnad – Uppdateringsefterlevnad riktar sig till IT-administratören som vill få en helhetsbild av alla sina Windows 10-enheter, utan några ytterligare infrastrukturkrav.
-* Enhetshälsa – Du kan använda Enhetshälsa för att proaktivt identifiera och åtgärda problem med att påverka slutanvändaren.
+* Device Health - Du kan använda Enhetshälsa för att proaktivt identifiera och åtgärda problem med att påverka slutanvändaren.
 
-Mer information finns i [Översikt över Windows Analytics.](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)
+Mer information [finns i Översikt över skrivbordsanalyser.](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
 
 ### <a name="windows-security"></a>Windows-säkerhet
 

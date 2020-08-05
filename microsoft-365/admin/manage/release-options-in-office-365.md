@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Lär dig hur du konfigurerar utgivningsalternativet för nya produkter och funktioner i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 648be8ca5d3c7aae93ed868972bc59b32ba87987
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502885"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560721"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Ställ in alternativen standard eller riktad utgåva
 
@@ -38,10 +38,10 @@ ms.locfileid: "46502885"
 
 ::: moniker-end
 
-Med Microsoft 365 får du nya produktuppdateringar och funktioner när de blir tillgängliga i stället för att göra kostsamma uppdateringar med några års mellanrum. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln beskrivs de olika frisläppningsalternativen och hur du kan använda dem för din organisation.
-  
 > [!IMPORTANT]
-> De Microsoft 365-uppdateringar som beskrivs i den här artikeln gäller Microsoft 365, SharePoint Online och Exchange Online. De gäller inte för Skype för företag och relaterade tjänster. Dessa utgivningsalternativ är riktade, bästa möjliga sätt att släppa ändringar i Microsoft 365 men kan inte garanteras hela tiden eller för alla uppdateringar. 
+> De Microsoft 365-uppdateringar som beskrivs i den här artikeln gäller Microsoft 365, SharePoint Online och Exchange Online. Dessa utgivningsalternativ är riktade, bästa möjliga sätt att släppa ändringar i Microsoft 365 men kan inte garanteras hela tiden eller för alla uppdateringar. De gäller inte För Skype för företag, Microsoft Teams och relaterade tjänster.
+
+Med Microsoft 365 får du nya produktuppdateringar och funktioner när de blir tillgängliga i stället för att göra kostsamma uppdateringar med några års mellanrum. Du kan styra hur organisationen ska få tillgång till uppdateringarna. Du kan till exempel registrera dig för en tidig version, så att organisationen blir bland de första som får uppdateringarna. Du kan ange att bara vissa personer ska ta emot uppdateringarna. Du kan också välja att behålla standardschemat för nya versioner och få uppdateringarna senare. I den här artikeln beskrivs de olika frisläppningsalternativen och hur du kan använda dem för din organisation.
 
 > [!NOTE]
 > Information om uppdateringskanaler för program finns i [Översikt över uppdateringskanaler för Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels). 

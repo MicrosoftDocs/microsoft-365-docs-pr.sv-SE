@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Följ den här checklistan om du vill ta bort en anställd från Microsoft 365 och säkra data. '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844864"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560393"
 ---
-# <a name="remove-a-former-employee"></a>Ta bort en tidigare anställd
+# <a name="remove-or-delete-a-former-employee"></a>Ta bort eller ta bort en tidigare anställd
 
 ::: moniker range="o365-21vianet"
 
@@ -59,7 +59,7 @@ Så här förhindrar du att en medarbetare loggar in:
 
 3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka den inte till dem.)
     
-4. Markera användarens namn för att gå till deras egenskapsfönster och välj **Initiera utloggning**på fliken **OneDrive** .
+4. Välj användarens namn för att gå till egenskapsfönstret och välj **Initiera utloggning**på fliken **Konto** .
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Så här förhindrar du att en medarbetare loggar in:
 
 3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka den inte till dem.)
 
-4. Markera användaren igen, expandera **OneDrive-inställningar**och välj sedan **Initiera bredvid** **Logga ut**.
+4. Välj användarens namn för att gå till egenskapsfönstret och välj **Initiera utloggning**på fliken **Konto** .
 
 ::: moniker-end
 
@@ -83,9 +83,12 @@ Så här förhindrar du att en medarbetare loggar in:
 
 3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka den inte till dem.)
 
-4. Markera användaren igen, expandera **OneDrive-inställningar**och välj sedan **Initiera bredvid** **Logga ut**.
+4. Välj användarens namn för att gå till egenskapsfönstret och välj **Initiera utloggning**på fliken **Konto** .
 
 ::: moniker-end
+
+> [!NOTE]
+> Du måste vara global administratör för att initiera ut signering.
 
     
 Inom en timme - eller efter att de lämnar den aktuella Microsoft 365-sidan de är på - kommer de att uppmanas att logga in igen. (En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som återstår på den token och om de navigerar från sin nuvarande webbsida.)
@@ -217,7 +220,8 @@ Om den tidigare anställde hade en företagstelefon kan du använda Administrati
     
 6. Välj **Spara**. 
     
-    **Tips**: Kontrollera att du tar bort eller inaktiverar användaren från din lokala Blackberry Enterprise Service. Du bör dessutom inaktivera alla Blackberry-enheter för användaren. Läs i Blackberry Business Cloud Services Administration Guide om du behöver specifika anvisningar om hur du inaktiverar användaren. 
+   > [!TIP]
+   > Se till att du tar bort eller inaktiverar användaren från din lokala Blackberry Enterprise Service. Du bör dessutom inaktivera alla Blackberry-enheter för användaren. Läs i Blackberry Business Cloud Services Administration Guide om du behöver specifika anvisningar om hur du inaktiverar användaren. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Blockera en tidigare anställds åtkomst till Microsoft 365-data
 <a name="bkmk_block"> </a>
@@ -343,6 +347,10 @@ Mer information om hur du hanterar användarlicenser för Microsoft 365 för fö
 När du tar bort en användares licens från Office 365 frigörs PSTN-telefonnumret som är kopplat till användaren. Du kan tilldela det till en annan användare.
   
 Om användaren tillhör en kögrupp är användaren inte längre ett möjligt mål för agenter från samtalskön. Därför rekommenderar vi att användaren också tas bort från de grupper som är kopplade till samtalskön. 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Konfigurera vidarekoppling av samtal till personer i organisationen
+
+Om du behöver ställa in vidarekoppling av samtal för den uppsagda medarbetarens telefonnummer kan inställningen för vidarekoppling av samtal under samtalsprinciper ställa in vidarekoppling där inkommande samtal kan vidarebefordras till andra användare eller ringa en annan person samtidigt. Mer information finns [i Ringa policyer i Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
   
 ## <a name="delete-a-former-employees-user-account"></a>Ta bort en tidigare anställds användarkonto
 <a name="bkmk_delete"> </a>

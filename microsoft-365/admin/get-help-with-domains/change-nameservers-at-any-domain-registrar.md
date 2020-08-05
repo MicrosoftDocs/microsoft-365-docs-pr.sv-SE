@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Läs om hur du lägger till och konfigurerar din domän i Microsoft 365 så att dina tjänster som e-post och Skype för företag – Online använder ditt eget domännamn.
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399998"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560347"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrare
 
@@ -108,7 +108,7 @@ När Microsoft 365 hittar rätt TXT-post är din domän verifierad.
 ## <a name="change-your-domains-nameserver-ns-records"></a>Ändra domänens namnserverposter (NS)
 <a name="BKMK_nameservers"> </a>
 
-När du kommer till det sista steget i installationsguiden för domäner i Microsoft 365 har du en aktivitet kvar. Om du vill konfigurera domänen med Microsoft 365-tjänster, till exempel e-post, ändrar du domänens namnserverposter (eller NS) på domänregistraren så att de pekar på De primära och sekundära namnservrarna i Microsoft 365. Eftersom Microsoft 365 är värd för din DNS konfigureras de DNS-poster som krävs för dina tjänster automatiskt åt dig. Du kan uppdatera namnserverposterna själv genom att följa de steg som domänregistratorn tillhandahåller i hjälpavsnitten på sin webbplats (om det finns några). Om du inte är bekant med DNS kontaktar du supporten hos domänregistratorn.
+När du kommer till det sista steget i installationsguiden för domäner i Microsoft 365 har du en aktivitet kvar. Om du vill konfigurera domänen med Microsoft 365-tjänster, till exempel e-post, ändrar du domänens namnservrar (eller NS) på domänregistraren så att de pekar på De primära och sekundära namnservrarna i Microsoft 365. Eftersom Microsoft 365 är värd för din DNS konfigureras de DNS-poster som krävs för dina tjänster automatiskt åt dig. Du kan uppdatera namnserverposterna själv genom att följa de steg som domänregistratorn tillhandahåller i hjälpavsnitten på sin webbplats (om det finns några). Om du inte är bekant med DNS kontaktar du supporten hos domänregistratorn.
 
 ::: moniker range="o365-worldwide"
   
@@ -162,15 +162,14 @@ Här följer exempel på några åtgärder som krävs för e-post och webbplatse
 
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
-3. Välj en domän på sidan Domäner.
+2. På sidan **Domäner** väljer du domänen och väljer sedan **DNS Records**.
 
-4. Under **DNS-inställningar**väljer du **Anpassade poster**och väljer sedan Ny anpassad **post**.
+3. Under **DNS-inställningar**väljer du **Anpassade poster**och väljer sedan Ny anpassad **post**.
 
-5. Välj den typ av DNS-post som du vill lägga till och skriv informationen för den nya posten.
+4. Välj den typ av DNS-post som du vill lägga till och skriv informationen för den nya posten.
 
-6. Välj **Spara**.
+5. Välj **Spara**.
     
 > [!NOTE]
 > Det kan ta flera timmar innan ändringarna har uppdaterats genom hela DNS-systemet på Internet. Då kommer din Microsoft-e-post och andra tjänster att vara inställda på att fungera med din domän. 
   
-

@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Läs om hur du verifierar skolans berättigande till akademisk prissättning för Microsoft 365 Education.
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205012"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560709"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Verifiera akademisk behörighet för Microsoft 365 Education-prenumerationer
 
@@ -44,7 +45,7 @@ Om du är osäker på om du har en testprenumeration för Microsoft 365 Educatio
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Verifiera skolans akademiska behörighet
 
-I de flesta fall, när du registrerar dig för en kostnadsfri utvärderingsversion och slutför guiden för berättigandeverifiering för att tillhandahålla skolans domän, får du ett omedelbart godkännande eller avslag på skolans behörighet. I vissa fall behöver vi mer information för att slutföra en manuell behörighetsgranskning. Den här granskningen kan ta upp till 10 arbetsdagar. När vi har granskat skolans behörighetsinformation skickar vi ett e-postmeddelande som meddelar dig om din skolas status.
+I de flesta fall, när du registrerar dig för en kostnadsfri utvärderingsversion och slutför guiden för berättigandeverifiering för att tillhandahålla skolans domän, får du ett omedelbart godkännande eller avslag på skolans behörighet. I vissa fall behöver vi mer information för att slutföra en manuell behörighetsgranskning och kommer att kontakta dig med en enkät att fylla i. Den här granskningen kan ta upp till 10 arbetsdagar. När vi har granskat skolans behörighetsinformation skickar vi ett e-postmeddelande som meddelar dig om din skolas status.
 
 Du kan stänga den akademiska verifieringsguiden innan du anger en domän och börja använda utvärderingsprenumerationen direkt. Du är dock inte berättigad till akademiska priser förrän du har slutfört verifieringsprocessen. Du måste slutföra processen innan den kostnadsfria utvärderingsperioden är för att konvertera till en betald prenumeration och fortsätta att använda den. Detta gäller även när du konverterar till den kostnadsfria A1-prenumerationen.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Lär dig hur användningsanalys ansluter till ett API och ger månatliga trend för användning av olika Microsoft 365-tjänster.  '
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695097"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560865"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Datamodell för Microsoft 365 användningsanalyser
 
@@ -43,7 +43,7 @@ Det här API:et innehåller information om den månatliga trenden för användni
 
 |**Tabellnamn**|**Informationen i tabellen**|**Datumintervall**|
 |:-----|:-----|:-----|
-|Klientorganisationens produktanvändning  <br/> |Innehåller månatliga summor för aktiverade, aktiva användare, användare som behålls i månaden, förstagångsanvändare och kumulativa aktiva användare.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
+|Klientorganisationens produktanvändning  <br/> |Innehåller månatliga summor för aktiverade, aktiva användare, användare som behålls under månad, förstagångsanvändare och kumulativa aktiva användare.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
 |Klientorganisationens produktaktivitet  <br/> |Innehåller månatliga summeringar av aktivitet och antalet aktiva användare för olika aktiviteter i produkterna.  <br/> Se [definition av aktiv användare](active-user-in-usage-reports.md) om du vill ha information om aktiviteterna i en produkt som visas i den här datatabellen.  <br/> |Innehåller sammanräknade månatliga data för en rullande tolvmånadersperiod som omfattar delar av innevarande månad.  <br/> |
 |Klientorganisationens Office-licenser  <br/> |Innehåller information om hur många Microsoft Office-prenumerationer som användare tilldelats  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
 |Klientorganisationens postlådeanvändning  <br/> |Innehåller information om användarens postlåda, till exempel totalt antal meddelanden i postlådan och lagringsanvändningen.  <br/> |Innehåller tillståndsdata vid slutet av månaden för en rullande 12-månadersperiod inklusive den aktuella delmånaden.  <br/> |
@@ -140,10 +140,13 @@ Den här tabellen innehåller information om alla användare som hade en aktivit
 |SFB_P2PSummary  <br/> |Antalet peer to peer-sessioner som användaren deltagit i.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Antalet konferenssessioner som användaren organiserat.  <br/> |
 |SFB_ConfPartSummary  <br/> |Antalet konferenssessioner som användaren deltagit i.  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction innebär att användaren anses vara aktiv men har ett nollvärde för chattmeddelanden, 1:1-samtal, kanalmeddelanden, totalt antal möten och möten.
    
 ### <a name="data-table---tenant-product-usage"></a>Datatabell - Klientorganisationens produktanvändning
 
-Den här tabellen innehåller månad för månad antagande data i form av aktivera, aktiva, återkommande och första gången användare för varje produkt inom Microsoft 365. Microsoft 365-värdet representerar aktiv användning i någon av produkterna.
+Den här tabellen innehåller månad för månads införandedata när det gäller aktivera, aktiva, återkommande och förstagångsanvändare för varje produkt inom Microsoft 365. Microsoft 365-värdet representerar aktiv användning i någon av produkterna.
   
 |**Kolumnnamn**|**Kolumnbeskrivning**|
 |:-----|:-----|
@@ -181,7 +184,7 @@ Den här tabellen består av sammanfattningsdata för alla licensierade Exchange
 |ProhibitSendQuota  <br/> |Totalkvot för att förhindra sändning för alla användarpostlådor.  <br/> |
 |ProhibitSendReceiveQuota  <br/> |Totalkvot för kvot för att förhindra sändning/mottagning för alla användarpostlådor.  <br/> |
 |TotalItemBytes  <br/> |Mängden lagringsutrymme som används för alla användarpostlådor i byte.  <br/> |
-|BrevlådorObvarning  <br/> |Antalet användarpostlådor som låg under gränsen för lagringsutrymmesvarning.  <br/> |
+|BrevlådorIngarObvarning  <br/> |Antalet användarpostlådor som låg under gränsen för lagringsutrymmesvarning.  <br/> |
 |MailboxesIssueVarning  <br/> |Antalet användarpostlådor för vilka det utfärdats en varning för lagringskvot.  <br/> |
 |BrevlådorExceedSendQuota  <br/> |Antalet användarpostlådor som har överskridit sändningskvoten.  <br/> |
 |BrevlådorExceedSendReceiveQuota  <br/> |Antalet användarpostlådor som har överskridit sändnings-/mottagningskvoten.  <br/> |
@@ -235,7 +238,7 @@ Den här tabellen innehåller information om OneDrive-kontona, till exempel anta
 |Timeframe  <br/> |Den här kolumnen innehåller datumvärdet. Används som ett-till-många-samband för kalendertabellen.  <br/> |
 |Content Date  <br/> |Om tidsperioden är aktuell månad representerar det här värdet det senaste datumet i den aktuella månaden för vilket det finns tillgängliga data.  <br/> Om tidsperioden är föregående månad representerar det här värdet det sista datumet i månaden inom tidsperioden.  <br/> |
    
-### <a name="data-table---tenant-microsoft-365-groups-usage"></a>Datatabell – Användning av Microsoft 365-grupper för klientorganisation
+### <a name="data-table---tenant-microsoft-365-groups-usage"></a>Datatabell - Användning av Microsoft 365-grupper för klientorganisation
 
 Den här tabellen innehåller data om hur Microsoft 365-grupper används i hela organisationen.
   
@@ -245,7 +248,7 @@ Den här tabellen innehåller data om hur Microsoft 365-grupper används i hela 
 |:-----|:-----|
 |Tidsram  <br/> |Månadsvärdet. Det kommer att finnas en rad per produkt per månad för de senaste 12 månaderna, inklusive del av aktuell månad.  <br/> |
 |Grupptyp  <br/> |Typ av grupp (privat/offentlig/alla).  <br/> |
-|Totalt Antal grupper  <br/> |Antalet grupper i varje grupptyp.  <br/> |
+|Totalt Grupper  <br/> |Antalet grupper i varje grupptyp.  <br/> |
 |Aktiva grupper  <br/> |Antalet aktiva grupper.  <br/> |
 |MBX_TotalGroups  <br/> |Antalet postlådegrupper.  <br/> |
 |MBX_ActiveGroups  <br/> |Antalet aktiva postlådegrupper.  <br/> |
@@ -256,7 +259,7 @@ Den här tabellen innehåller data om hur Microsoft 365-grupper används i hela 
 |SPO_ActiveGroups  <br/> |Antalet aktiva SharePoint-grupper.  <br/> |
 |SPO_FileAccessedActiveGroups  <br/> |Antalet SharePoint-grupper som har filåtkomstaktiviteter.  <br/> |
 |SPO_FileSyncedActiveGroups  <br/> |Antalet SharePoint-grupper som har filsynkroniseringsaktiviteter.  <br/> |
-|SPO_FileSharedInternallyActiveGroups  <br/> |Antal SharePoint-grupper som har delat aktiviteter internt eller med grupper (som kan omfatta externa användare).  <br/> |
+|SPO_FileSharedInternallyActiveGroups  <br/> |Antal SharePoint-grupper som har delat aktiviteter internt eller med grupper (som kan inkludera externa användare).  <br/> |
 |SPO_FileSharedExternallyActiveGroups  <br/> |Antalet SharePoint-grupper som har externdelningsaktiviteter.  <br/> |
 |SPO_TotalActivities  <br/> |Antalet SharePoint-aktiviteter.  <br/> |
 |SPO_FileAccessedActivities  <br/> |Antalet SharePoint filåtkomstaktiviteter.  <br/> |

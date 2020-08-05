@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049934"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560901"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Hotskydd
 
@@ -55,6 +55,8 @@ Microsoft Threat Protection suite skyddar:
 - **E-post och samarbete med Office 365 ATP** – Office 365 ATP skyddar organisationen mot skadliga hot som orsakas av e-postmeddelanden, länkar (webbadresser) och samarbetsverktyg. 
 - **Identiteter med Azure ATP och Azure AD Identity Protection** – Azure ATP använder Active Directory-signaler för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga insideråtgärder som riktas mot din organisation. 
 - **Program med Microsoft Cloud App-säkerhet** – Microsoft Cloud App security är en omfattande cross-SaaS-lösning som ger djup synlighet, starka datakontroller och förbättrat hotskydd för dina molnappar. 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
 Microsoft Threat Protections unika lager över flera produkter förstärker de enskilda svitkomponenterna till:
 - Skydda dig mot attacker och samordna defensiva svar över hela sviten genom signaldelning och automatiserade åtgärder

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430369"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552668"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
 
@@ -57,5 +57,7 @@ Du vet att du har aktiverat förhandsgranskningsfunktioner när du ser att kryss
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 Följande funktioner och förbättringar är för närvarande tillgängliga vid förhandsversionen:
 
-- **[Schemareferens för portaler](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – information om schematabeller som är tillgängliga direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här referensen information om händelsetyper som stöds `ActionType` (värden) och exempelfrågor.
+- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – Innehåller snabbt hot eller adresserar komprometterade tillgångar som du hittar i avancerad [jakt](advanced-hunting-overview.md).
+
+- **[Schemareferens för portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – Få information om avancerade jaktschematabeller direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här praktiska referensen information om händelsetyper som stöds `ActionType` (värden) och exempelfrågor.
 
