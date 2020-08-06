@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: 7483075767b7ffaf269899d83a0ab6e5f5759e99
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521511"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560469"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
 
@@ -70,7 +70,7 @@ Uppfyll de interna principerna eller regelkraven med dessa efterlevnadsfunktione
 | Efterlevnadshanteraren | Hantera regelefterlevnad som rör Microsofts molntjänster med detta arbetsflödesbaserade verktyg för riskbedömning i Microsoft Service Trust Portal. | Microsoft 365 E3 eller E5 |
 | Efterlevnadspoäng (förhandsversion) | Se en övergripande poäng för din aktuella efterlevnadskonfiguration och rekommendationer för att förbättra den i Efterlevnadscentret för Microsoft 365. | Microsoft 365 E3 eller E5 |
 | Efterlevnad av kommunikation  | Identifiera, fånga och vidta reparationsåtgärder för olämpliga meddelanden i organisationen. | Microsoft 365 E5 eller Microsoft 365 E3 med tilläggen för efterlevnad och Insider-riskhantering |
-| Hantering av insiderrisk |  Identifiera, undersöka och åtgärda skadliga och oavsiktliga aktiviteter i din organisation. Microsoft 365 kan identifiera den här typen av aktiviteter även om en medarbetare använder en ohanterad enhet. | Microsoft 365 E5 eller Microsoft 365 E3 med tilläggen för efterlevnad och Insider-riskhantering |
+| Hantering av insiderrisk |  Identifiera, undersöka och åtgärda skadliga och oavsiktliga risker i organisationen. Microsoft 365 kan upptäcka sådana typer av risker även om en arbetstagare använder en ohanterad enhet. | Microsoft 365 E5 eller Microsoft 365 E3 med tilläggen för efterlevnad och Insider-riskhantering |
 ||||
 
 Mer information finns i artikeln om [de 12 viktigaste åtgärderna för säkerhetsteam för att stödja arbete hemifrån](../security/top-security-tasks-for-remote-work.md).

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365. '
-ms.openlocfilehash: a4d5f5240a6d4cca686b4809d05970b5e18b897f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399584"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560877"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -75,13 +75,17 @@ Här är några saker som kan vara bra att känna till om hur denna funktion fun
     
 ## <a name="prevent-last-password-from-being-used-again"></a>Förhindra att det senaste lösenordet används igen
 
-Om du vill förhindra återanvändning av gamla lösenord kan du göra det i Azure AD. Se [Upprätthålla uppdateringshistorik](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
-
-Om en medarbetare använder en mobil enhet för att komma åt Microsoft 365 kan du också rensa den för att säkerställa att lösenordet inte längre lagras och återanvänds därifrån. Mer information finns i [Rensa och blockera en tidigare anställds mobila enhet](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
-
+Om du inte vill att användarna ska kunna återvinna gamla lösen ord kan du göra det genom att använda tidigare lösen ord i Azure AD. Se [Skapa en anpassad lösenordspolicy](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Synkronisera användares lösenords-hashar från lokal Active Directory till Azure AD (Microsoft 365)
 
-Den här artikeln handlar om att ange förfalloprincipen för användare som bara använder molnet (Azure AD). Den gäller inte för hybrididentitetsanvändare som använder synkronisering av lösenordshashar, direktautentisering och lokal federation som ADFS.
+Den här artikeln handlar om att ange förfalloprincipen för användare som bara använder molnet (Azure AD). Den gäller inte för hybrididentitetsanvändare som använder synkronisering av lösenords-hashar, direktautentisering och lokal federation som ADFS.
   
 Information om hur du synkroniserar användarlösenordshashar från lokal AD till Azure AD finns i [Implementera synkronisering av lösenordshashar med Azure AD Connect-synkronisering](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+
+
+## <a name="update-password-policy"></a>Uppdatera lösenordspolicy
+
+Set-MsolPasswordPolicy cmdlet uppdaterar lösenordspolicyn för en specificerad domän eller hyresgäst. Två inställningar krävs; den första är att ange hur lång tid ett lösenord förblir giltigt innan det måste ändras och det andra är att ange antalet dagar innan lösenordets utgångsdatum som kommer att trigga när användare kommer att få sitt första meddelande om att deras lösenord snart kommer att löpa ut.
+
+Information om hur du uppdaterar lösenordspolicyn för en specifik domän eller hyresgäst finns i [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209037"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577854"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -119,7 +119,7 @@ Mer information om DMARC finns i [Använda DMARC för att validera e-post i Micr
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Rapporter på hur många meddelanden som har markerats som falska
 
-EOP-organisationer kan använda rapporten om **Falska identifieringar** i instrumentpanelen för rapporter i Säkerhets- och efterlevnadscenter. Mer information finns i [Rapport om falska identifieringar](view-email-security-reports.md#spoof-detections-report).
+EOP-organisationer kan använda **falska identifieringar** rapporter i instrument panelen rapporter i säkerhets och efterlevnadscenter. Mer information finns i [Rapport om falska identifieringar](view-email-security-reports.md#spoof-detections-report).
 
 Office 365 ATP-organisationen kan använda Hotutforskaren i Säkerhets- och efterlevnadscenter för att visa information om nätfiskeförsök. Mer information finns i [Undersökning av hot och svar i Microsoft 365](office-365-ti.md).
 
@@ -129,12 +129,12 @@ E-postlistor (även kallade diskussionslistor) är kända för att ha problem me
 
 Anta till exempel att Gabriela Laureano (glaureano@contoso.com) är intresserad av fågelskådning och går med i diskussionslistan fagelskadare@fabrikam.com. och skickar följande meddelande till listan:
 
-> **Från:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Fågelskådarnas diskussionslista \<fagelskadare@fabrikam.com\> <br/> 
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br/> 
 **Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <br/><br/>Vem vill kolla in denna veckas bilder från Mt. Rainier?
 
 E-postlistans server tar emot meddelandet, ändrar innehållet och skickar tillbaka det till medlemmarna i listan. Det återgivna meddelandet har samma Från:-adress (glaureano@contoso.com) men en tagg har lagts till i ämnesraden och en sidfot har lagts till längst ned i meddelandet. Den här typen av ändringar är vanliga i distributionslistor och kan leda till falska positiva identifieringar av förfalskning.
 
-> **Från:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Fågelskådarnas diskussionslista \<fagelskadare@fabrikam.com\> <br/> **Ämne:** [FÅGELSKÅDARE] Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <br/><br/> Vem vill kolla in denna veckas bilder från Mt. Rainier? <br/><br/> Meddelandet skickades till diskussionslistan Fågelskådare. Du kan avbryta prenumerationen när du vill.
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br/> **Ämne:** [FÅGELSKÅDARE] Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <br/><br/> Vem vill kolla in denna veckas bilder från Mt. Rainier? <br/><br/> Meddelandet skickades till diskussionslistan Fågelskådare. Du kan avbryta prenumerationen när du vill.
 
 Om du vill se till att e-post från distributionslistor klarar förfalskningskontroller, följer du dessa anvisningar beroende på om du har kontroll över distributionslistan:
 

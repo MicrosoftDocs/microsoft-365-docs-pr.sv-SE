@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Lär dig hur du ger en användare rätt att komma åt en annan användares postlåda. Då kan användaren läsa e-postmeddelanden och skicka e-postmeddelanden från den andra användarens postlåda. '
-ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780607"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560381"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Ge behörigheter för postlådor åt en annan användare – administratörshjälp
 
@@ -55,7 +55,10 @@ När du har konfigurerat behörigheter kan det ta upp till 60 minuter innan änd
   
  **Hur du använder funktionen när behörigheter har konfigurerats:**
   
-Det finns några olika sätt att komma åt en postlåda när du har fått åtkomst. Mer information om detta finns i den här artikeln: [Tillgång till en annan persons postlåda](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+Det finns några olika sätt att komma åt en postlåda när du har fått åtkomst. Mer information om detta finns i den här artikeln: [Tillgång till en annan persons postlåda](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
+
+> [!NOTE]
+> Behörigheterna kan bara konfigureras i den aktuella organisationens klient organisation. Det är inte möjligt att ställa in brevlådesbehörigheter hos uthyresanvändare.
   
 ## <a name="send-email-from-another-users-mailbox"></a>Skicka e-post från en annan användares postlåda
 

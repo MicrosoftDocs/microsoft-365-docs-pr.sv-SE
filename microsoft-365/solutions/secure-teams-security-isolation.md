@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: 33b84423fa4744c34e184690bcfc3fe8dd435298
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528054"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560237"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -42,7 +42,13 @@ De olika elementen för konfiguration av ett team för strikt reglerade data är
 > [!IMPORTANT]
 > Kontrollera att du har aktiverat [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) innan du fortsätter med stegen i den här artikeln.
 
-## <a name="initial-protections"></a>Första skydd
+<a name="poster"></a> En sammanfattning av 2 sidor av detta scenario finns i [Microsoft Team med säkerhets isoleringsaffisch](../downloads/team-security-isolation-poster.pdf).
+
+[![Microsoft Team med säkerhets isoleringsaffisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+
+Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- eller [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
+
+## <a name="initial-protections"></a>Initiala skydd
 
 Läs följande metodtips för att skydda åtkomst till teamet och dess underliggande SharePoint-webbplats:
 - [Principer för identitets- och enhetsåtkomst](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)

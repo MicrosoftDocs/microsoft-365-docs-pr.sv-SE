@@ -489,28 +489,30 @@
             - name: E-postflödesinsikter i Säkerhets- och efterlevnadscenter
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: Rapport om e-postflödeskarta
+                - name: Auto-vidarebefordrade meddelanden insikt
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Fixa möjlig inblick i e-postslingan
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Fixa insikter om långsamma flödesregler
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: E-postflödeskarta
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Insikten E-postflödesstatus för översta domäner
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: Rapporten SMTP Auth-klienter
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Insikten Åtgärda avsändardomän
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: Rapport om misslyckad leverans
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Nya domäner som vidarebefordras via e-post
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: Nya användare vidarebefordrar insikt via e-post
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: Rapport om icke godkänd domän
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: Utgående och inkommande e-postflöde
+                - name: Rapport om misslyckad leverans
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Insikt om utgående och inkommande e-postflöden
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Köaviseringar och köer
+                - name: Köer insikt
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: Rapporten Automatiskt vidarebefordrade meddelanden
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: Insikt om e-postloop
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: Insikt om långsamma e-postflödesregler
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: SMTP Auth-klienter insikt och rapport
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Insikten E-postflödesstatus för översta domäner
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Säkerhetslösningar
           items:
             - name: 'Vägledning från Microsoft Security för politiska kampanjer, ideella föreningar och andra snabbrörliga organisationer'
