@@ -1,84 +1,53 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Dokumentation och resurser för Microsoft Hanterat skrivbord
+### YamlMime:Landing
+title: Dokumentation för Microsoft Hanterat skrivbord
+summary: Microsoft Hanterat skrivbord sammanför Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning så du kan frigöra IT-grupper att fokusera på viktiga företagsbehov.
 metadata:
   title: Dokumentation för Microsoft Hanterat skrivbord
-  description: null
-  keywords: 'enhet, app, hantering'
+  description: Microsoft Hanterat skrivbord sammanför Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning så du kan frigöra IT-grupper att fokusera på viktiga företagsbehov.
+  keywords: device, app, management
+  ms.service: m365-md
+  ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-  - items:
-      - type: markdown
-        text: 'Microsoft Hanterat skrivbord sammanför Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning så du kan frigöra IT-grupper att fokusera på viktiga företagsbehov.'
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: intro/index.md
-            html: '<p>Introduktion till Microsoft Hanterat skrivbord för beslutsfattare, vad det är och hur det fungerar samt vad det kan göra för dig</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
-              alt: ''
-            title: Vad är Microsoft Hanterat skrivbord?
-          - href: service-description/index.md
-            html: <p>Detaljerad beskrivning av alla delar av Microsoft Hanterat skrivbord</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-              alt: ''
-            title: Tjänstbeskrivning
-          - href: get-ready/index.md
-            html: <p>Alla steg för att få miljön och organisationen redo att fungera tillsammans med tjänsten</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              alt: ''
-            title: Gör dig redo
-          - href: get-started/index.md
-            html: '<p>Få igång din organisation med Microsoft Hanterat skrivbord, t. ex. konfigurera enheter och distribuera appar</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              alt: ''
-            title: Komma igång
-          - href: working-with-managed-desktop/index.md
-            html: <p>Allt om din dagliga verksamhet med tjänsten</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-              alt: ''
-            title: Arbeta med Microsoft Hanterat skrivbord
-  - title: Nya artiklar och blogginlägg
-    items:
-      - type: paragraph
-        text: Läs den senaste och bästa informationen du behöver.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '[Översikt] Din fullständiga översikt till Microsoft Hanterat skrivbord'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '[Teknisk] Studie: ökande behov av hanterade skrivbordstjänster'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[E-bok] Ge ditt företag förtjusningen med en modern arbetsplats'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-              alt: ''
-  - title: Videor
-    items:
-      - type: paragraph
-        text: Lär dig mer om fördelarna med Microsoft Hanterat skrivbord från en teknikchef hos Indiana Pacers.
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
-      - type: paragraph
-        text: 'Vd:n för Microsoft Hanterat skrivbord delar med sig av alla tjänstens höjdpunkter vid den årliga Ignite-konferensen.'
-      - type: markdown
-        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
+  ms.date: 07/13/2020
+  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
+  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "46564149"
+landingContent:
+- title: Microsoft Hanterat skrivbord
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Microsoft Hanterat skrivbord?
+      url: /microsoft-365/managed-desktop/intro/
+    - text: Tjänstbeskrivning
+      url: /microsoft-365/managed-desktop/service-description
+  - linkListType: get-started
+    links:
+    - text: Gör dig redo
+      url: get-ready/index.md
+    - text: Komma igång
+      url: get-started/index.md
+    - text: Arbeta med Microsoft Hanterat skrivbord
+      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+- title: Nya artiklar och blogginlägg
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: '[Översikt] Din fullständiga översikt till Microsoft Hanterat skrivbord'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+    - text: '[Teknisk] Studie: ökande behov av hanterade skrivbordstjänster'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+    - text: '[E-bok] Ge ditt företag förtjusningen med en modern arbetsplats'
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+- title: Videor
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Lär dig mer om fördelarna med Microsoft Hanterat skrivbord från direktören för tekniska lösningar i Lloyds bank grupp.
+      url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+    - text: Högdagrar av Microsoft Hanterat skrivbord i den årliga antändnings konferensen
+      url: /microsoft-365/managed-desktop/service-description
