@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Lär dig hur du skapar ett team med en unik känslighetsetikett för säkerhet.
-ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560237"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577968"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurera en team med säkerhetsisolering
 
@@ -28,7 +28,7 @@ I den här artikeln får du rekommendationer och anvisningar om hur du konfigure
 
 Utöver den privata åtkomst som beskrivs i artikeln hur du konfigurerar den associerade SharePoint-webbplatsen. Den når du via avsnittet **Filer** i en teamkanal så att du får den extra säkerhet som krävs för lagring av strikt reglerade data.
 
-De olika elementen för konfiguration av ett team för strikt reglerade data är:
+Komponenterna i konfigurationen för en grupp med säkerhets isolering är:
 
 - Ett privat team
 - Ytterligare säkerhet på den associerade SharePoint-webbplatsen för teamet som:
@@ -42,9 +42,9 @@ De olika elementen för konfiguration av ett team för strikt reglerade data är
 > [!IMPORTANT]
 > Kontrollera att du har aktiverat [känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) innan du fortsätter med stegen i den här artikeln.
 
-<a name="poster"></a> En sammanfattning av 2 sidor av detta scenario finns i [Microsoft Team med säkerhets isoleringsaffisch](../downloads/team-security-isolation-poster.pdf).
+<a name="poster"></a> En sammanfattning av 2 sidor av det här scenariot finns i [Microsoft Teams med säkerhets isolering med affisch](../downloads/team-security-isolation-poster.pdf).
 
-[![Microsoft Team med säkerhets isoleringsaffisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- eller [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
 
@@ -226,7 +226,7 @@ Microsoft 365 tillhandahåller fler metoder för att skydda innehållet. Överv�
 
 Med teamet på plats är det dags att driva på teamets användning och den extra säkerheten för teammedlemmar.
 
-## <a name="train-your-users"></a>Utbilda dina användare
+### <a name="train-your-users"></a>Utbilda dina användare
 
 Teamets medlemmar kan komma åt teamet och alla dess resurser, inklusive chattar, möten och andra appar. När du arbetar med filer från avsnittet **Filer** i en kanal ska medlemmarna i teamet ange känslighetsetikett för filerna de skapar.
 
