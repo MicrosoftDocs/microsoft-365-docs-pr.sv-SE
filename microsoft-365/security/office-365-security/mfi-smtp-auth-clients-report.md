@@ -1,5 +1,5 @@
 ---
-title: Rapporten SMTP Auth-klienter
+title: SMTP-AUTH-klienter inblick och rapport i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,79 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om smtp-autentiseringsklientrapporten i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 90d008bf775c692431fb5b832652ceb97f9fd760
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan lära dig hur du använder SMTP AUTH inblick och rapport i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka e-avsändare i organisationen som använder autentiserad SMTP (SMTP AUTH) för att skicka e-postmeddelanden.
+ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818825"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577257"
 ---
-# <a name="smtp-auth-clients-report"></a><span data-ttu-id="6ba13-103">Rapporten SMTP Auth-klienter</span><span class="sxs-lookup"><span data-stu-id="6ba13-103">SMTP Auth clients report</span></span>
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a><span data-ttu-id="468de-103">SMTP-AUTH-klienter inblick och rapportera i säkerhets & Compliance Center</span><span class="sxs-lookup"><span data-stu-id="468de-103">SMTP Auth clients insight and report in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="6ba13-104">I rapporten **SMTP Auth-klienter** belysers användningen av SMTP Auth-klientöverföringsprotokollet av användare eller systemkonton i organisationen.</span><span class="sxs-lookup"><span data-stu-id="6ba13-104">The **SMTP Auth clients** report highlights the use of the SMTP Auth client submission protocol by users or system accounts in your organization.</span></span> <span data-ttu-id="6ba13-105">Det här äldre protokollet (som använder slutpunkten smtp.office365.com) erbjuder endast grundläggande autentisering och kan användas av komprometterade konton för att skicka e-post.</span><span class="sxs-lookup"><span data-stu-id="6ba13-105">This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email.</span></span>  <span data-ttu-id="6ba13-106">Med den här rapporten kan du söka efter ovanlig aktivitet.</span><span class="sxs-lookup"><span data-stu-id="6ba13-106">This report allows you to check for unusual activity.</span></span> <span data-ttu-id="6ba13-107">Den visar också TLS-användningsdata för klienter eller enheter som använder SMTP Auth.</span><span class="sxs-lookup"><span data-stu-id="6ba13-107">It also shows the TLS usage data for clients or devices using SMTP Auth.</span></span>
+<span data-ttu-id="468de-104">**SMTP-AUTH-klienterna** fokuserar på [instrument panelen för e-postflöden](mail-flow-insights-v2.md) och den associerade [SMTP-authn-rapporten](#smtp-auth-clients-report) markerar användning av SMTP auth client sändning Protocol via användare eller system konton i din organisation.</span><span class="sxs-lookup"><span data-stu-id="468de-104">The **SMTP Auth clients** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) and the associated [SMTP Auth clients report](#smtp-auth-clients-report) highlight the use of the SMTP AUTH client submission protocol by users or system accounts in your organization.</span></span> <span data-ttu-id="468de-105">Det här bakåtkompatibla protokollet (som använder slut punkts smtp.office365.com) endast erbjuder grundläggande inloggningsautentisering och är känsligt för att användas av obehöriga konton för att skicka e-post.</span><span class="sxs-lookup"><span data-stu-id="468de-105">This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email.</span></span> <span data-ttu-id="468de-106">Med inblick och rapport kan du söka efter ovanlig aktivitet för SMTP-profilens e-postinlägg.</span><span class="sxs-lookup"><span data-stu-id="468de-106">The insight and report allow you to check for unusual activity for SMTP AUTH email submissions.</span></span> <span data-ttu-id="468de-107">Det visar också TLS-dataanvändningen för klienter eller enheter med SMTP-autentisering.</span><span class="sxs-lookup"><span data-stu-id="468de-107">It also shows the TLS usage data for clients or devices using SMTP AUTH.</span></span>
 
-<span data-ttu-id="6ba13-108">Widgeten som visas på instrumentpanelen e-postflöde anger antalet användare eller tjänstkonton som har använt SMTP Auth-protokollet under de senaste 7 dagarna.</span><span class="sxs-lookup"><span data-stu-id="6ba13-108">The widget that's shown in the Mail Flow dashboard indicates the number of users or service accounts that have used the SMTP Auth protocol in the last 7 days.</span></span>
+<span data-ttu-id="468de-108">Widgeten visar antalet användare eller tjänst konton som har använt SMTP Authentication Protocol under de senaste 7 dagarna.</span><span class="sxs-lookup"><span data-stu-id="468de-108">The widget indicates the number of users or service accounts that have used the SMTP Auth protocol in the last 7 days.</span></span>
 
-![SMTP-autentiseringsklienter rapporterar i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/smtp-auth-clients-report-selected.png)
+![Widget för SMTP-AUTH-klienter i instrument panelen för e-postflöde i säkerhets & Compliance Center](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-<span data-ttu-id="6ba13-110">Om du klickar på widgeten öppnas ett utfällbart utfällbart alternativ som ger en aggregerad vy över TLS-användningen och volymerna för den senaste veckan.</span><span class="sxs-lookup"><span data-stu-id="6ba13-110">Clicking on the widget opens a flyout that provides an aggregated view of the TLS usage and volumes for the last week.</span></span>
+<span data-ttu-id="468de-110">Om du klickar på antalet meddelanden i widgeten visas en **SMTP-AUTH-klienter** .</span><span class="sxs-lookup"><span data-stu-id="468de-110">If you click the number of messages on the widget, an **SMTP Auth clients** flyout appears.</span></span> <span data-ttu-id="468de-111">Den utfällbara vyn visar en sammanslagen vy av TLS-användning och volymerna under den senaste veckan.</span><span class="sxs-lookup"><span data-stu-id="468de-111">The flyout provides an aggregated view of the TLS usage and volumes for the last week.</span></span>
 
-![Utfällbara i rapporten SMTP Auth-klienter](../../media/smtp-auth-clients-flyout.png)
+![Information utfälld när du klickar på widgeten SMTP-AUTH-klienter i instrument panelen för e-postflöde](../../media/mfi-smtp-auth-clients-report-details.png)
 
-<span data-ttu-id="6ba13-112">När du klickar på länken **SMTP Auth Clients Report** visas två huvuddata pivoter och två datavyer.</span><span class="sxs-lookup"><span data-stu-id="6ba13-112">When you click on the **SMTP Auth Clients Report** link, you'll see two main data pivots and two data views.</span></span> <span data-ttu-id="6ba13-113">Data pivoter är **skicka volym** och **TLS användning**.</span><span class="sxs-lookup"><span data-stu-id="6ba13-113">The data pivots are the **Sending Volume** and **TLS Usage**.</span></span> <span data-ttu-id="6ba13-114">Datavyerna är diagrammet och detaljtabellen.</span><span class="sxs-lookup"><span data-stu-id="6ba13-114">The data views are the chart and the details table.</span></span>
+<span data-ttu-id="468de-113">Du kan klicka på länken **SMTP-AUTH-klienter** för att gå till rapporten SMTP-AUTH-klienter enligt beskrivningen i nästa avsnitt.</span><span class="sxs-lookup"><span data-stu-id="468de-113">You can click the **SMTP Auth clients report** link to go to the SMTP Auth clients report as described in the next section.</span></span>
 
-<span data-ttu-id="6ba13-115">Vyn **Skicka volym** visar antalet meddelanden som skickades med SMTP-autentisering för det angivna tidsintervallet.</span><span class="sxs-lookup"><span data-stu-id="6ba13-115">The **Sending Volume** view shows the number of messages that were sent using SMTP Auth for the specified time range.</span></span> <span data-ttu-id="6ba13-116">Du kan justera intervallet genom att klicka på **Filter**.</span><span class="sxs-lookup"><span data-stu-id="6ba13-116">You can adjust the range by clicking **Filters**.</span></span> <span data-ttu-id="6ba13-117">Diagrammet ordnas efter avsändatordomän.</span><span class="sxs-lookup"><span data-stu-id="6ba13-117">The chart is organized by sender domain.</span></span> <span data-ttu-id="6ba13-118">Du kan se separata data för varje domän genom att välja domänen i **listrutan Visa data.**</span><span class="sxs-lookup"><span data-stu-id="6ba13-118">You can see separate data for each domain by selecting the domain in the **Show data for** drop down.</span></span>
+## <a name="smtp-auth-clients-report"></a><span data-ttu-id="468de-114">Rapporten SMTP Auth-klienter</span><span class="sxs-lookup"><span data-stu-id="468de-114">SMTP Auth clients report</span></span>
 
-![Skicka volym i rapporten SMTP Auth Clients](../../media/smtp-auth-clients-report-sending-volume.png)
+### <a name="report-view-for-the-smtp-auth-clients-report"></a><span data-ttu-id="468de-115">Rapportvy för rapporten SMTP-AUTH-klienter</span><span class="sxs-lookup"><span data-stu-id="468de-115">Report view for the SMTP Auth clients report</span></span>
 
-<span data-ttu-id="6ba13-120">Du kan visa detaljerad information om avsändarna och deras meddelandeantal genom att klicka på **Visa informationstabell**.</span><span class="sxs-lookup"><span data-stu-id="6ba13-120">You can view detailed information about the senders and their message counts by clicking **View details table**.</span></span> <span data-ttu-id="6ba13-121">Om du vill återgå till diagrammet klickar du på **Visa rapport**.</span><span class="sxs-lookup"><span data-stu-id="6ba13-121">To return to the chart, click **View report**.</span></span>
+<span data-ttu-id="468de-116">Som standard visar rapporten data för de senaste 7 dagarna, men data är tillgängliga under de senaste 90 dagarna.</span><span class="sxs-lookup"><span data-stu-id="468de-116">By default, the report shows data for the last 7 days, but data is available for the last 90 days.</span></span>
 
-![Informationstabell för att skicka volym i rapporten SMTP-autentiseringsklienter](../../media/smtp-auth-clients-report-details-sending-volume.png)
+<span data-ttu-id="468de-117">Avsnittet Översikt innehåller följande diagram:</span><span class="sxs-lookup"><span data-stu-id="468de-117">The overview section contains the following charts:</span></span>
 
-<span data-ttu-id="6ba13-123">**TLS-användnings** pivot är viktigt på grund av den kommande utfasningen av TLS1.0 och TLS1.1 i Office 365.</span><span class="sxs-lookup"><span data-stu-id="6ba13-123">The **TLS Usage** pivot is important due to the upcoming deprecation of TLS1.0 and TLS1.1 in Office 365.</span></span> <span data-ttu-id="6ba13-124">Många äldre enheter och program kan inte skicka e-post om de bara kan använda TLS1.0 med SMTP Auth. Med den här pivoten kan du identifiera och vidta åtgärder för användare och systemkonton som fortfarande använder äldre versioner av TLS.</span><span class="sxs-lookup"><span data-stu-id="6ba13-124">Many legacy devices and applications will be unable to send email if they are only capable of using TLS1.0 with SMTP Auth. This pivot allows you to identify and take action on users and system accounts that are still using older versions of TLS.</span></span>
+- <span data-ttu-id="468de-118">**Visa data genom: skicka volym**: diagrammet visar som standard antalet SMTP auth client-meddelanden som skickades från alla domäner (**Visa data för: alla avsändare** är markerade som standard).</span><span class="sxs-lookup"><span data-stu-id="468de-118">**View data by: Sending volume**: By default, the chart shows the number of SMTP Auth client messages that were sent from all domains (**Show data for: All sender domains** is selected by default).</span></span> <span data-ttu-id="468de-119">Du kan filtrera resultaten till en viss avsändares domän genom att klicka på **Visa data för** och välja avsändar domänen i list rutan.</span><span class="sxs-lookup"><span data-stu-id="468de-119">You can filter the results to a specific sender domain by clicking **Show data for** and selecting the sender domain from the dropdown list.</span></span> <span data-ttu-id="468de-120">Om du hovrar över en viss data punkt (dag) visas antalet meddelanden.</span><span class="sxs-lookup"><span data-stu-id="468de-120">If you hover a specific data point (day), the number of messages is shown.</span></span>
 
-![TLS-användning i rapporten SMTP-autentiseringsklienter](../../media/smtp-auth-clients-report-tls-usage.png)
+  ![Skicka vyn volym i rapporten SMTP-AUTH-klienter i säkerhets & efterlevnad](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-<span data-ttu-id="6ba13-126">Du kan visa detaljerad information om avsändare, versioner av TLS som de använder med SMTP Auth och deras meddelande räknas genom att klicka på **Visa informationstabell**.</span><span class="sxs-lookup"><span data-stu-id="6ba13-126">You can view detailed information about the senders, the versions of TLS they are using with SMTP Auth, and their message counts by clicking **View details table**.</span></span> <span data-ttu-id="6ba13-127">Om du vill återgå till diagrammet klickar du på **Visa rapport**.</span><span class="sxs-lookup"><span data-stu-id="6ba13-127">To return to the chart, click **View report**.</span></span>
+- <span data-ttu-id="468de-122">**Visa data genom: TLS-användning**: diagrammet visar procent andelen av TLS-användning för alla SMTP auth client-meddelanden under den valda tids perioden.</span><span class="sxs-lookup"><span data-stu-id="468de-122">**View data by: TLS Usage**: The chart shows the percentage of TLS usage for all SMTP Auth client messages during the selected time period.</span></span> <span data-ttu-id="468de-123">I det här diagrammet kan du identifiera och vidta åtgärder för användare och system konton som fortfarande använder äldre versioner av TLS.</span><span class="sxs-lookup"><span data-stu-id="468de-123">This chart allows you to identify and take action on users and system accounts that are still using older versions of TLS.</span></span>
 
-<span data-ttu-id="6ba13-128">Du kan också hämta en mer detaljerad version av rapporten genom att klicka på Begär rapport.</span><span class="sxs-lookup"><span data-stu-id="6ba13-128">You can also download a more detailed version of the report by clicking Request report.</span></span>
+  ![Vyn användning av TLS i rapporten SMTP-AUTH-klienter i säkerhets & efterlevnad](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
-![Informationstabell för TLS-användning i rapporten SMTP-autentiseringsklienter](../../media/smtp-auth-clients-report-details-tls-usage.png)
+<span data-ttu-id="468de-125">Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.</span><span class="sxs-lookup"><span data-stu-id="468de-125">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="6ba13-130">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="6ba13-130">Related topics</span></span>
+<span data-ttu-id="468de-126">Klicka på **rapporten Request** för att få en mer detaljerad version av rapporten i ett e-postmeddelande.</span><span class="sxs-lookup"><span data-stu-id="468de-126">Click **Request report** to receive a more detailed version of the report in an email message.</span></span> <span data-ttu-id="468de-127">Du kan ange datum intervallet och mottagarna för att få rapporten.</span><span class="sxs-lookup"><span data-stu-id="468de-127">You can specify the date range and the recipients to receive the report.</span></span>
 
-<span data-ttu-id="6ba13-131">Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="6ba13-131">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a><span data-ttu-id="468de-128">Vyn detaljerad tabell för rapporten SMTP-AUTH-klienter</span><span class="sxs-lookup"><span data-stu-id="468de-128">Details table view for the SMTP Auth clients report</span></span>
+
+<span data-ttu-id="468de-129">Om du klickar på **Visa informations tabell**beror informationen som visas på diagrammet du tittade på:</span><span class="sxs-lookup"><span data-stu-id="468de-129">If you click **View details table**, the information that's shown depends on the chart you were looking at:</span></span>
+
+- <span data-ttu-id="468de-130">**Visa data genom: skicka volym**: följande information visas i en tabell:</span><span class="sxs-lookup"><span data-stu-id="468de-130">**View data by: Sending volume**: The following information is shown in a table:</span></span>
+
+  - <span data-ttu-id="468de-131">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="468de-131">**Sender address**</span></span>
+  - <span data-ttu-id="468de-132">**Antal meddelanden**</span><span class="sxs-lookup"><span data-stu-id="468de-132">**Message count**</span></span>
+
+  <span data-ttu-id="468de-133">Om du markerar en rad visas samma detaljer i en utfällbar lista.</span><span class="sxs-lookup"><span data-stu-id="468de-133">If you select a row, the same details are shown in a flyout.</span></span>
+
+- <span data-ttu-id="468de-134">**Visa data genom: TLS-användning**: följande information visas i en tabell:</span><span class="sxs-lookup"><span data-stu-id="468de-134">**View data by: TLS Usage**: The following information is shown in a table:</span></span>
+
+  - <span data-ttu-id="468de-135">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="468de-135">**Sender address**</span></span>
+  - <span data-ttu-id="468de-136">**TLS 1.0%**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="468de-136">**TLS1.0%**<sup>\*</sup></span></span>
+  - <span data-ttu-id="468de-137">**TLS 1.1%**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="468de-137">**TLS1.1%**<sup>\*</sup></span></span>
+  - <span data-ttu-id="468de-138">**TLS 1.2%**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="468de-138">**TLS1.2%**<sup>\*</sup></span></span>
+  - <span data-ttu-id="468de-139">**Antal meddelanden**</span><span class="sxs-lookup"><span data-stu-id="468de-139">**Message count**</span></span>
+
+  <span data-ttu-id="468de-140"><sup>\*</sup>I den här kolumnen visas både procent andelen och antalet meddelanden från avsändaren.</span><span class="sxs-lookup"><span data-stu-id="468de-140"><sup>\*</sup> This column shows both the percentage and number of messages from the sender.</span></span>
+
+<span data-ttu-id="468de-141">Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.</span><span class="sxs-lookup"><span data-stu-id="468de-141">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="468de-142">Om du markerar en rad visas liknande information i en utfällbar lista:</span><span class="sxs-lookup"><span data-stu-id="468de-142">If you select a row, similar details are shown in a flyout:</span></span>
+
+![Information som utfälls från tabellen information i vyn TLS-användning i SMTP-authn-klienter](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+
+<span data-ttu-id="468de-144">Klicka på **rapporten Request** för att få en mer detaljerad version av rapporten i ett e-postmeddelande.</span><span class="sxs-lookup"><span data-stu-id="468de-144">Click **Request report** to receive a more detailed version of the report in an email message.</span></span> <span data-ttu-id="468de-145">Du kan ange datum intervallet och mottagarna för att få rapporten.</span><span class="sxs-lookup"><span data-stu-id="468de-145">You can specify the date range and the recipients to receive the report.</span></span>
+
+<span data-ttu-id="468de-146">Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.</span><span class="sxs-lookup"><span data-stu-id="468de-146">To go back to the reports view, click **View report**.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="468de-147">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="468de-147">Related topics</span></span>
+
+<span data-ttu-id="468de-148">Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="468de-148">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

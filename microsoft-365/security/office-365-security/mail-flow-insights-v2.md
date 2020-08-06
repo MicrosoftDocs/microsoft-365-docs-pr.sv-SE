@@ -1,5 +1,5 @@
 ---
-title: E-postflödesinsikter i Säkerhets- och efterlevnadscenter
+title: Insikter för e-postflöde i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,67 +10,69 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Administratörer kan lära sig mer om instrumentpanelen för e-postflödet i Security & Compliance Center, inklusive insikter, rapporter och widgetar.
+description: Administratörer kan läsa mer om insikter och rapporter som är tillgängliga i instrument panelen för e-postflöde i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552680"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577799"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a><span data-ttu-id="5523a-103">E-postflödesinsikter i Säkerhets- och efterlevnadscenter</span><span class="sxs-lookup"><span data-stu-id="5523a-103">Mail flow insights in the Security & Compliance Center</span></span>
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a><span data-ttu-id="3eaad-103">E-postflödesinsikter i Säkerhets- och efterlevnadscenter</span><span class="sxs-lookup"><span data-stu-id="3eaad-103">Mail flow insights in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="5523a-104">Administratörer kan använda instrumentpanelen för e-postflödet i Security & Compliance Center för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem som rör e-postflödet i organisationen.</span><span class="sxs-lookup"><span data-stu-id="5523a-104">Admins can use mail flow dashboard in the Security & Compliance Center to discover trends, insights and take actions to fix issues related to mail flow in their organization.</span></span>
+<span data-ttu-id="3eaad-104">Administratörer kan använda instrument panelen för e-postflöden i säkerhets & efterlevnad för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem med e-postflöde i organisationen.</span><span class="sxs-lookup"><span data-stu-id="3eaad-104">Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.</span></span>
 
-<span data-ttu-id="5523a-105">De insikter, rapporter och widgetar som är tillgängliga i instrumentpanelen för e-postflödet är:</span><span class="sxs-lookup"><span data-stu-id="5523a-105">The insights, reports, and widgets that are available in the mail flow dashboard are:</span></span>
+![Instrument panelen för e-postflöde i säkerhets & efterlevnad](../../media/mail-flow-dashboard-v2.png)
 
-- [<span data-ttu-id="5523a-106">Rapport om e-postflödeskarta</span><span class="sxs-lookup"><span data-stu-id="5523a-106">Mail flow map report</span></span>](mfi-mail-flow-map-report.md)
+<span data-ttu-id="3eaad-106">Tillgängliga insikter är:</span><span class="sxs-lookup"><span data-stu-id="3eaad-106">The available insights are:</span></span>
 
-- [<span data-ttu-id="5523a-107">Statusinsikt för domänmeddelandeflöde</span><span class="sxs-lookup"><span data-stu-id="5523a-107">Domain mail flow status insight</span></span>](mfi-domain-mail-flow-status-insight.md)
+- [<span data-ttu-id="3eaad-107">Inblick i meddelanden som skickas automatiskt</span><span class="sxs-lookup"><span data-stu-id="3eaad-107">Auto-forwarded messages insight</span></span>](mfi-auto-forwarded-messages-report.md)
 
-- [<span data-ttu-id="5523a-108">Rapporten SMTP Auth-klienter</span><span class="sxs-lookup"><span data-stu-id="5523a-108">SMTP Auth clients report</span></span>](mfi-smtp-auth-clients-report.md)
+- <span data-ttu-id="3eaad-108">[Åtgärda möjliga e-postloop Insight](mfi-mail-loop-insight.md)<sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="3eaad-108">[Fix possible mail loop insight](mfi-mail-loop-insight.md)<sup>1</sup></span></span>
 
-- [<span data-ttu-id="5523a-109">Statistik över avsändaredomän</span><span class="sxs-lookup"><span data-stu-id="5523a-109">Sender domain insight</span></span>](mfi-sender-domain-insight.md)
+- <span data-ttu-id="3eaad-109">[Åtgärda regler för långsam e-postflöde, inblick](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="3eaad-109">[Fix slow mail flow rules insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup></span></span>
 
-- [<span data-ttu-id="5523a-110">Rapport om misslyckad leverans</span><span class="sxs-lookup"><span data-stu-id="5523a-110">Non-delivery report</span></span>](mfi-non-delivery-report.md)
+- [<span data-ttu-id="3eaad-110">Översikt över e-postflöde</span><span class="sxs-lookup"><span data-stu-id="3eaad-110">Mail flow map</span></span>](mfi-mail-flow-map-report.md)
 
-- [<span data-ttu-id="5523a-111">Rapport om icke godkänd domän</span><span class="sxs-lookup"><span data-stu-id="5523a-111">Non-accepted domain report</span></span>](mfi-non-accepted-domain-report.md)
+- <span data-ttu-id="3eaad-111">[Nya domäner vidarekopplas med e-post, Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="3eaad-111">[New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup></span></span>
 
-- [<span data-ttu-id="5523a-112">Utgående och inkommande e-postflöde</span><span class="sxs-lookup"><span data-stu-id="5523a-112">Outbound and inbound mail flow</span></span>](mfi-outbound-and-inbound-mail-flow.md)
+- <span data-ttu-id="3eaad-112">[Nya användare vidarebefordrar e-post, Insight](mfi-new-users-forwarding-email.md)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="3eaad-112">[New users forwarding email insight](mfi-new-users-forwarding-email.md)<sup>2</sup></span></span>
 
-- [<span data-ttu-id="5523a-113">Köaviseringar och köer</span><span class="sxs-lookup"><span data-stu-id="5523a-113">Queue alerts and Queues</span></span>](mfi-queue-alerts-and-queues.md)
+- [<span data-ttu-id="3eaad-113">Rapport om icke godkänd domän</span><span class="sxs-lookup"><span data-stu-id="3eaad-113">Non-accepted domain report</span></span>](mfi-non-accepted-domain-report.md)
 
-- [<span data-ttu-id="5523a-114">Rapporten Automatiskt vidarebefordrade meddelanden</span><span class="sxs-lookup"><span data-stu-id="5523a-114">Auto-forwarded messages report</span></span>](mfi-auto-forwarded-messages-report.md)
+- [<span data-ttu-id="3eaad-114">Rapport om misslyckad leverans</span><span class="sxs-lookup"><span data-stu-id="3eaad-114">Non-delivery report</span></span>](mfi-non-delivery-report.md)
 
-- [<span data-ttu-id="5523a-115">Insikt om e-postloop</span><span class="sxs-lookup"><span data-stu-id="5523a-115">Mail loop insight</span></span>](mfi-mail-loop-insight.md)
+- [<span data-ttu-id="3eaad-115">Ingående och inkommande e-postflöde</span><span class="sxs-lookup"><span data-stu-id="3eaad-115">Outbound and inbound mail flow insight</span></span>](mfi-outbound-and-inbound-mail-flow.md)
 
-- [<span data-ttu-id="5523a-116">Insikt om långsamma e-postflödesregler</span><span class="sxs-lookup"><span data-stu-id="5523a-116">Slow mail flow rules insight</span></span>](mfi-slow-mail-flow-rules-insight.md)
+- [<span data-ttu-id="3eaad-116">Inblick i köer</span><span class="sxs-lookup"><span data-stu-id="3eaad-116">Queues insight</span></span>](mfi-queue-alerts-and-queues.md)
 
-## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a><span data-ttu-id="5523a-117">Behörigheter som krävs för att visa instrumentpanelen för e-postflödet</span><span class="sxs-lookup"><span data-stu-id="5523a-117">Permissions required to view the mail flow dashboard</span></span>
+- [<span data-ttu-id="3eaad-117">SMTP-AUTH-klienter inblick och rapport</span><span class="sxs-lookup"><span data-stu-id="3eaad-117">SMTP Auth clients insight and report</span></span>](mfi-smtp-auth-clients-report.md)
 
-<span data-ttu-id="5523a-118">Instrumentpanelen för e-postflödet är tillgänglig för:</span><span class="sxs-lookup"><span data-stu-id="5523a-118">The mail flow dashboard is available to:</span></span>
+- [<span data-ttu-id="3eaad-118">Insikten E-postflödesstatus för översta domäner</span><span class="sxs-lookup"><span data-stu-id="3eaad-118">Top domain mail flow status insight</span></span>](mfi-domain-mail-flow-status-insight.md)
 
-- <span data-ttu-id="5523a-119">Medlemmar i den **globala administratörsrollen.**</span><span class="sxs-lookup"><span data-stu-id="5523a-119">Members of the **global administrator** role.</span></span>
+<span data-ttu-id="3eaad-119"><sup>1</sup> denna inblick visas i det **rekommenderade för** området i instrument panelen för e-postflöde först efter att problemet har upptäckts.</span><span class="sxs-lookup"><span data-stu-id="3eaad-119"><sup>1</sup> This insight appears in the **Recommended for you** area of the Mail flow dashboard only after the issue is detected.</span></span> <span data-ttu-id="3eaad-120">Annars visas den inte.</span><span class="sxs-lookup"><span data-stu-id="3eaad-120">Otherwise, you won't see it.</span></span>
 
-- <span data-ttu-id="5523a-120">Medlemmar i **Exchange-administratörsrollen.**</span><span class="sxs-lookup"><span data-stu-id="5523a-120">Members of **Exchange administrator** role.</span></span>
+<span data-ttu-id="3eaad-121"><sup>2</sup> denna inblick visas inte på instrument panelen för e-postflöden, men visas på sidan för [vidarebefordran av rapporter](view-mail-flow-reports.md#forwarding-report) efter problemet.</span><span class="sxs-lookup"><span data-stu-id="3eaad-121"><sup>2</sup> This insight doesn't appear on the Mail flow dashboard, but is visible on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page after the issue is detected.</span></span> <span data-ttu-id="3eaad-122">Annars visas den inte.</span><span class="sxs-lookup"><span data-stu-id="3eaad-122">Otherwise, you won't see it.</span></span>
 
-- <span data-ttu-id="5523a-121">Medlemmar i **administratörsrollen E-postflöde** i Security & Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="5523a-121">Members of the **Mail flow administrator role** in the Security & Compliance Center.</span></span> <span data-ttu-id="5523a-122">Om den här rollen uttryckligen tilldelas en användare som inte är medlem i den globala administratören eller Exchange-administratörsrollerna:</span><span class="sxs-lookup"><span data-stu-id="5523a-122">If this role is explicitly assigned to a user who isn't a member of the global administrator or Exchange administrator roles:</span></span>
+## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a><span data-ttu-id="3eaad-123">Behörigheter som krävs för att visa instrument panelen för e-postflöde</span><span class="sxs-lookup"><span data-stu-id="3eaad-123">Permissions required to view the Mail flow dashboard</span></span>
 
-  - <span data-ttu-id="5523a-123">Användaren måste logga in på Security & Compliance Center direkt på <https://protection.office.com> .</span><span class="sxs-lookup"><span data-stu-id="5523a-123">The user must log in to the Security & Compliance Center directly at <https://protection.office.com>.</span></span>
+<span data-ttu-id="3eaad-124">Instrument panelen för e-postflöde är tillgänglig för medlemmar i följande väg grupper:</span><span class="sxs-lookup"><span data-stu-id="3eaad-124">The Mail flow dashboard is available to members of the following route groups:</span></span>
 
-  - <span data-ttu-id="5523a-124">Användaren har endast skrivskyddad behörighet till instrumentpanelen för e-postflödet.</span><span class="sxs-lookup"><span data-stu-id="5523a-124">The user will only have read-only permission to the mail flow dashboard.</span></span>
+- <span data-ttu-id="3eaad-125">**Organisations hantering** i säkerhets & efterlevnad (globala administratörer).</span><span class="sxs-lookup"><span data-stu-id="3eaad-125">**Organization Management** in the Security & Compliance Center (global admins).</span></span>
 
-  - <span data-ttu-id="5523a-125">Användaren har inte tillgång till Microsoft 365-administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="5523a-125">The user won't have access to the Microsoft 365 admin center.</span></span>
+- <span data-ttu-id="3eaad-126">**[Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure AD.</span><span class="sxs-lookup"><span data-stu-id="3eaad-126">**[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD.</span></span>
 
-<span data-ttu-id="5523a-126">Mer information om den globala administratörsrollen finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="5523a-126">For more information about the global administrator role, see [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span></span>
+- <span data-ttu-id="3eaad-127">**Flödes administratör** i säkerhets & regelefterlevnad: om en medlem i den här roll gruppen inte är medlem i roll grupperna global administratör eller Exchange-administratör bör du tänka på följande:</span><span class="sxs-lookup"><span data-stu-id="3eaad-127">**MailFlow Administrator** in the Security & Compliance Center: If a member of this role group is not also a member of the global administrator or Exchange administrator role groups, then note the following issues and requirements:</span></span>
 
-<span data-ttu-id="5523a-127">Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="5523a-127">For information on assigning Security & Compliance Center roles to users, see [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).</span></span>
+  - <span data-ttu-id="3eaad-128">Användaren måste logga in på säkerhets & Compliance Center direkt vid <https://protection.office.com> .</span><span class="sxs-lookup"><span data-stu-id="3eaad-128">The user must log in to the Security & Compliance Center directly at <https://protection.office.com>.</span></span>
+  - <span data-ttu-id="3eaad-129">Användaren har bara Skriv behörighet i instrument panelen för e-postflöde.</span><span class="sxs-lookup"><span data-stu-id="3eaad-129">The user will only have read-only permission to the Mail flow dashboard.</span></span>
+  - <span data-ttu-id="3eaad-130">Användaren har inte till gång till administrations centret för Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="3eaad-130">The user won't have access to the Microsoft 365 admin center.</span></span>
 
-## <a name="where-to-find-the-mail-flow-dashboard"></a><span data-ttu-id="5523a-128">Var du hittar instrumentpanelen för e-postflödet</span><span class="sxs-lookup"><span data-stu-id="5523a-128">Where to find the mail flow dashboard</span></span>
+<span data-ttu-id="3eaad-131">Mer information om behörigheter i säkerhets & Compliance Center finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md) och [ge användarna åtkomst till säkerhets & Compliance Center](grant-access-to-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="3eaad-131">For more information about permissions in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).</span></span>
 
-1. <span data-ttu-id="5523a-129">Gå till Security & Compliance Center på [https://protection.office.com](https://protection.office.com) .</span><span class="sxs-lookup"><span data-stu-id="5523a-129">Go to the Security & Compliance Center at [https://protection.office.com](https://protection.office.com).</span></span>
+## <a name="where-to-find-the-mail-flow-dashboard"></a><span data-ttu-id="3eaad-132">Här hittar du instrument panelen för e-postflöde</span><span class="sxs-lookup"><span data-stu-id="3eaad-132">Where to find the Mail flow dashboard</span></span>
 
-2. <span data-ttu-id="5523a-130">Expandera **e-postflödet** och välj sedan **Instrumentpanel**.</span><span class="sxs-lookup"><span data-stu-id="5523a-130">Expand **Mail flow** and then select **Dashboard**.</span></span>
+<span data-ttu-id="3eaad-133">Öppna säkerhets & Compliance Center <https://protection.office.com> , expandera **e-postflöde**och välj **instrument panel**.</span><span class="sxs-lookup"><span data-stu-id="3eaad-133">Open the Security & Compliance Center at <https://protection.office.com>, expand **Mail flow**, and then select **Dashboard**.</span></span>
 
-   ![Instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+<span data-ttu-id="3eaad-134">Öppna för att gå direkt till instrument panelen för e-postflöde <https://protection.office.com/mailflow/dashboard> .</span><span class="sxs-lookup"><span data-stu-id="3eaad-134">To go directly to the Mail flow dashboard, open <https://protection.office.com/mailflow/dashboard>.</span></span>

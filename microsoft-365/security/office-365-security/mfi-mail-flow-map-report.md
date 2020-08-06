@@ -1,5 +1,5 @@
 ---
-title: Rapport om e-postflödeskarta
+title: Översikt över e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om rapporten för mappning av e-postflöde i instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center.
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan läsa mer om hur du använder översikten för e-postflöden i instrument panelen för e-postflöde i säkerhets & efterföljandekrav för att visualisera och spåra hur e-flöden kommer till och från sin organisation via kopplingar och utan att använda kopplingar.
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818849"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577720"
 ---
-# <a name="mail-flow-map-report"></a><span data-ttu-id="8e016-103">Rapport om e-postflödeskarta</span><span class="sxs-lookup"><span data-stu-id="8e016-103">Mail flow map report</span></span>
+# <a name="mail-flow-map-in-the-security--compliance-center"></a><span data-ttu-id="805d4-103">Översikt över e-postflöde i säkerhets & efterlevnad</span><span class="sxs-lookup"><span data-stu-id="805d4-103">Mail flow map in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="8e016-104">Den här rapporten ger insikter om hur e-post flödar genom din organisation.</span><span class="sxs-lookup"><span data-stu-id="8e016-104">This report gives insights as to how mail flows through your organization.</span></span> <span data-ttu-id="8e016-105">Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.</span><span class="sxs-lookup"><span data-stu-id="8e016-105">You can use this information to learn patterns, identify anomalies, and fix issues as they arise.</span></span>
+<span data-ttu-id="805d4-104">**E-postflödes kartan** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & Compliance Center ger en överblick över hur e-flöden passerar genom din organisation.</span><span class="sxs-lookup"><span data-stu-id="805d4-104">The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization.</span></span> <span data-ttu-id="805d4-105">Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.</span><span class="sxs-lookup"><span data-stu-id="805d4-105">You can use this information to learn patterns, identify anomalies, and fix issues as they occur.</span></span>
 
-![Mapprapporten För e-postflöde i instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center](../../media/mail-flow-map-selected.png)
+![Widget för e-postflödes karta i instrument panelen för säkerhet &](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a><span data-ttu-id="8e016-107">Widgeten Mappning av e-postflöde</span><span class="sxs-lookup"><span data-stu-id="8e016-107">Mail flow map widget</span></span>
+<span data-ttu-id="805d4-107">Som standard visar widgeten e-postflödet från föregående dag i ett diagram som kallas *Sankey* -diagram.</span><span class="sxs-lookup"><span data-stu-id="805d4-107">By default, the widget shows the mail flow pattern from the previous day in a chart known as a *Sankey* diagram.</span></span> <span data-ttu-id="805d4-108">Du kan använda vänsterpilen vänsterpil ![ och HÖGERPIL ](../../media/scc-left-arrow.png) ![ ](../../media/scc-right-arrow.png) för att visa information från olika dagar.</span><span class="sxs-lookup"><span data-stu-id="805d4-108">You can use the left arrow ![Left arrow](../../media/scc-left-arrow.png) and right arrow ![Right arrow](../../media/scc-right-arrow.png) to show information from different days.</span></span> <span data-ttu-id="805d4-109">Varje färg representerar e-postflöden över en annan inkommande eller utgående koppling (eller utan att använda kopplingar).</span><span class="sxs-lookup"><span data-stu-id="805d4-109">Each different color represents mail flow over a different inbound or outbound connector (or without using connectors).</span></span> <span data-ttu-id="805d4-110">Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.</span><span class="sxs-lookup"><span data-stu-id="805d4-110">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-<span data-ttu-id="8e016-108">Som standard visar e-postflödeskartan det höga e-postflödesmönstret från föregående dag.</span><span class="sxs-lookup"><span data-stu-id="8e016-108">By default, the mail flow map shows the high level mail flow pattern from the previous day.</span></span> <span data-ttu-id="8e016-109">Du kan använda vänster- och högerpilarna för olika dagar.</span><span class="sxs-lookup"><span data-stu-id="8e016-109">You can use the left and right arrows for different days.</span></span> <span data-ttu-id="8e016-110">Om du hovrar muspekaren över varje område i rapporten visas mängden e-post till och från organisationen enligt följande diagram:</span><span class="sxs-lookup"><span data-stu-id="8e016-110">Hovering your mouse cursor over each area in the report will show the volume of mail to and from your organization as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-mail-flow-map"></a><span data-ttu-id="805d4-111">Rapportvy för översikt över e-postflöde</span><span class="sxs-lookup"><span data-stu-id="805d4-111">Report view for the Mail flow map</span></span>
 
-![Vänster- och högerpilar i widgeten Mapp med e-postflöde](../../media/mail-flow-map-widget.png)
+<span data-ttu-id="805d4-112">Om du klickar på widgeten **Koppla dokument flöden** tas du till **översikten över e-postflöde** .</span><span class="sxs-lookup"><span data-stu-id="805d4-112">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span>
 
-## <a name="mail-flow-map-basics"></a><span data-ttu-id="8e016-112">Grunderna i e-postflödeskarta</span><span class="sxs-lookup"><span data-stu-id="8e016-112">Mail flow map basics</span></span>
+<span data-ttu-id="805d4-113">Följande diagram är tillgängliga i rapportvyn:</span><span class="sxs-lookup"><span data-stu-id="805d4-113">The following charts are available in the report view:</span></span>
 
-<span data-ttu-id="8e016-113">Om du klickar på widgeten **Skicka flödeskarta** kommer du till rapporten **Mappa e-postflöde.**</span><span class="sxs-lookup"><span data-stu-id="8e016-113">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span> <span data-ttu-id="8e016-114">Här kan du se mer detaljerad nivå av rapporten, kan du klicka på Visa information tabell för att se detaljerade data.</span><span class="sxs-lookup"><span data-stu-id="8e016-114">Here you can see more granular level of report, you can click View details table to see detailed data.</span></span> <span data-ttu-id="8e016-115">Du kan också hämta den detaljerade rapporten genom att klicka på Begär rapport.</span><span class="sxs-lookup"><span data-stu-id="8e016-115">You can also download the detailed report by clicking Request report.</span></span>
+- <span data-ttu-id="805d4-114">**Visa data för: översikt**: det här är i stort sett en större vy av widgeten.</span><span class="sxs-lookup"><span data-stu-id="805d4-114">**Show data for: Overview**: This is basically a larger view of the widget.</span></span> <span data-ttu-id="805d4-115">Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.</span><span class="sxs-lookup"><span data-stu-id="805d4-115">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-![Översiktsvy i rapporten Mappa e-post](../../media/mail-flow-map-overview.png)
+  ![Vyn Översikt i rapporten e-postflödes karta](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a><span data-ttu-id="8e016-117">Information</span><span class="sxs-lookup"><span data-stu-id="8e016-117">Details</span></span>
+- <span data-ttu-id="805d4-117">**Visa data för: detail**: den här vyn visar information om kopplingarna och mål domänerna.</span><span class="sxs-lookup"><span data-stu-id="805d4-117">**Show data for: Detail**: This view shows details about the connectors and destination domains.</span></span> <span data-ttu-id="805d4-118">De översta avsändarna och mottagar domänerna visas och resten placeras i **andra**.</span><span class="sxs-lookup"><span data-stu-id="805d4-118">The top sender and recipient domains are listed, and the rest are put in **Others**.</span></span> <span data-ttu-id="805d4-119">Om du hovrar över en viss färg och ett avsnitt visas antalet meddelanden.</span><span class="sxs-lookup"><span data-stu-id="805d4-119">If you hover over a specific color and section, the number of messages is displayed.</span></span>
 
-<span data-ttu-id="8e016-118">Som standard **är Visa data för** inställd på värdet **Översikt**.</span><span class="sxs-lookup"><span data-stu-id="8e016-118">By default, **Show data for** is set to the value **Overview**.</span></span> <span data-ttu-id="8e016-119">När du klickar på listrutan och väljer **Detalj**växlar vyn till domännivådetaljerna.</span><span class="sxs-lookup"><span data-stu-id="8e016-119">When you click on the drop down and select **Detail**, the view switches to the domain level detail.</span></span>
+  ![Detaljvyn i rapporten dokument flödes karta](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Välj Information i Visa data för i översiktsvyn i rapporten Mappningsrapport för e-postflöde](../../media/mail-flow-map-select-detail.png)
+<span data-ttu-id="805d4-121">Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.</span><span class="sxs-lookup"><span data-stu-id="805d4-121">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-<span data-ttu-id="8e016-121">De översta avsändarna och mottagardomänerna visas och resten placeras i **Andra** enligt följande diagram:</span><span class="sxs-lookup"><span data-stu-id="8e016-121">The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:</span></span>
+<span data-ttu-id="805d4-122">Om du vill skicka rapporten för ett visst datum intervall till en eller flera mottagare klickar du på **Hämta**.</span><span class="sxs-lookup"><span data-stu-id="805d4-122">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
 
-![Informationsvy i rapporten Mappa e-post](../../media/mail-flow-map-detail.png)
+<span data-ttu-id="805d4-123">Relaterade insikter visas under översikten över e-postflöden om de är tillgängliga (till exempel [korrigerings filen för möjlig e-postloop](mfi-mail-loop-insight.md)).</span><span class="sxs-lookup"><span data-stu-id="805d4-123">Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).</span></span>
 
-## <a name="related-insights"></a><span data-ttu-id="8e016-123">Relaterade insikter</span><span class="sxs-lookup"><span data-stu-id="8e016-123">Related insights</span></span>
+## <a name="details-table-view-for-the-mail-flow-map"></a><span data-ttu-id="805d4-124">Vyn detaljerad vy för översikt över e-postflöde</span><span class="sxs-lookup"><span data-stu-id="805d4-124">Details table view for the Mail flow map</span></span>
 
-<span data-ttu-id="8e016-124">Relaterade insikter visas under datamappningen för e-postflöde om de är tillgängliga (till exempel domäninsikten av avsändare eller insikten om e-direktloopen).</span><span class="sxs-lookup"><span data-stu-id="8e016-124">Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).</span></span>
+<span data-ttu-id="805d4-125">Om du klickar på **Visa informations tabell** i en rapportvy visas följande information:</span><span class="sxs-lookup"><span data-stu-id="805d4-125">If you click **View details table** in a report view, the following information is shown:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8e016-125">Se även</span><span class="sxs-lookup"><span data-stu-id="8e016-125">See also</span></span>
+- <span data-ttu-id="805d4-126">**Datum**</span><span class="sxs-lookup"><span data-stu-id="805d4-126">**Date**</span></span>
+- <span data-ttu-id="805d4-127">**Kategori**</span><span class="sxs-lookup"><span data-stu-id="805d4-127">**Category**</span></span>
+- <span data-ttu-id="805d4-128">**Anslutning/tredjepartsleverantör från tredje part**</span><span class="sxs-lookup"><span data-stu-id="805d4-128">**Connector / Third-party service provider**</span></span>
+- <span data-ttu-id="805d4-129">**Avsändare/mottagare**</span><span class="sxs-lookup"><span data-stu-id="805d4-129">**Sender/Recipient domain**</span></span>
+- <span data-ttu-id="805d4-130">**Antal meddelanden**</span><span class="sxs-lookup"><span data-stu-id="805d4-130">**Message count**</span></span>
 
-<span data-ttu-id="8e016-126">Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="8e016-126">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="805d4-131">Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.</span><span class="sxs-lookup"><span data-stu-id="805d4-131">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="805d4-132">Om du markerar en rad visas liknande information i en utfällbar lista:</span><span class="sxs-lookup"><span data-stu-id="805d4-132">If you select a row, similar details are shown in a flyout:</span></span>
+
+![Information som utfälls från informations tabellen i översikten över e-postflöde](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+<span data-ttu-id="805d4-134">Om du vill skicka rapporten för ett visst datum intervall till en eller flera mottagare klickar du på **Hämta**.</span><span class="sxs-lookup"><span data-stu-id="805d4-134">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="805d4-135">Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.</span><span class="sxs-lookup"><span data-stu-id="805d4-135">To go back to the reports view, click **View report**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="805d4-136">Se även</span><span class="sxs-lookup"><span data-stu-id="805d4-136">See also</span></span>
+
+<span data-ttu-id="805d4-137">Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="805d4-137">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

@@ -1,5 +1,5 @@
 ---
-title: Köaviseringar och köer
+title: Köers inblick i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,68 +10,83 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Administratörer kan lära sig mer om köaviseringar och köer i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 7bb103bad89ee39991a5c16d7101ab4658842479
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratörer kan lära dig hur du använder widgeten köer i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka misslyckade e-postflöden till deras lokala eller partner organisationer via utgående anslutningar.
+ms.openlocfilehash: fdc3f44041990e3860deb04a36a69a3d506d334a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635190"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577341"
 ---
-# <a name="queue-alerts-and-queues"></a><span data-ttu-id="d69ce-103">Köaviseringar och köer</span><span class="sxs-lookup"><span data-stu-id="d69ce-103">Queue alerts and Queues</span></span>
+# <a name="queues-insight-in-the-security--compliance-center"></a><span data-ttu-id="fe0be-103">Köer inblickar i säkerhets & Compliance Center</span><span class="sxs-lookup"><span data-stu-id="fe0be-103">Queues insight in the Security & Compliance Center</span></span>
 
-## <a name="queue-alerts"></a><span data-ttu-id="d69ce-104">Köaviseringar</span><span class="sxs-lookup"><span data-stu-id="d69ce-104">Queue alerts</span></span>
+<span data-ttu-id="fe0be-104">När meddelanden inte kan skickas från din organisation till lokala eller partnersbaserade e-postservrar med kopplingar köas de i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="fe0be-104">When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365.</span></span> <span data-ttu-id="fe0be-105">Vanliga exempel som orsakar det här problemet:</span><span class="sxs-lookup"><span data-stu-id="fe0be-105">Common examples that cause this condition are:</span></span>
 
-<span data-ttu-id="d69ce-105">När meddelanden inte kan skickas från din organisation till dina lokala eller partner-e-postservrar med hjälp av anslutningsappar, står meddelandena i kö i Office 365.</span><span class="sxs-lookup"><span data-stu-id="d69ce-105">When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365.</span></span> <span data-ttu-id="d69ce-106">Vanliga exempel som orsakar detta tillstånd är:</span><span class="sxs-lookup"><span data-stu-id="d69ce-106">Common examples that cause this condition are:</span></span>
+- <span data-ttu-id="fe0be-106">Kopplingen är felaktigt konfigurerad.</span><span class="sxs-lookup"><span data-stu-id="fe0be-106">The connector is incorrectly configured.</span></span>
+- <span data-ttu-id="fe0be-107">Nätverks-eller vägg ändringar har gjorts i din lokala miljö.</span><span class="sxs-lookup"><span data-stu-id="fe0be-107">There have been networking or firewall changes in your on-premises environment.</span></span>
 
-- <span data-ttu-id="d69ce-107">Anslutningen är felaktigt konfigurerad.</span><span class="sxs-lookup"><span data-stu-id="d69ce-107">The connector is incorrectly configured.</span></span>
+<span data-ttu-id="fe0be-108">Microsoft 365 fortsätter att försöka leverera i 24 timmar.</span><span class="sxs-lookup"><span data-stu-id="fe0be-108">Microsoft 365 will continue to retry to delivery for 24 hours.</span></span> <span data-ttu-id="fe0be-109">Efter 24 timmar upphör meddelanden att gälla och kommer att återföras till avsändare i rapporter som inte kunde levereras (kallas även för NDR eller studs meddelanden).</span><span class="sxs-lookup"><span data-stu-id="fe0be-109">After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
 
-- <span data-ttu-id="d69ce-108">Det har skett nätverks- eller brandväggsändringar i din lokala miljö.</span><span class="sxs-lookup"><span data-stu-id="d69ce-108">There have been networking or firewall changes in your on-premises environment.</span></span>
+<span data-ttu-id="fe0be-110">Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (Standardvärdet är 200 meddelanden) finns informationen på följande platser:</span><span class="sxs-lookup"><span data-stu-id="fe0be-110">If the queued email volume exceeds the pre-defined threshold (the default value is 200 messages), the information is available in the following locations:</span></span>
 
-<span data-ttu-id="d69ce-109">Microsoft 365 fortsätter att försöka levereras igen i 24 timmar.</span><span class="sxs-lookup"><span data-stu-id="d69ce-109">Microsoft 365 will continue to retry to delivery for 24 hours.</span></span> <span data-ttu-id="d69ce-110">Efter 24 timmar upphör meddelandena att gälla och returneras till avsändarna i rapporter som inte levereras (kallas även ndr-meddelanden eller avstudsar).</span><span class="sxs-lookup"><span data-stu-id="d69ce-110">After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
+- <span data-ttu-id="fe0be-111">**Köerna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="fe0be-111">The **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center.</span></span> <span data-ttu-id="fe0be-112">Mer information finns i [köerna under rubriken e-postflöde](#queues-insight-in-the-mail-flow-dashboard) i det här avsnittet.</span><span class="sxs-lookup"><span data-stu-id="fe0be-112">For more information, see the [Queues insight in the Mail flow dashboard](#queues-insight-in-the-mail-flow-dashboard) section in this topic.</span></span>
+  
+- <span data-ttu-id="fe0be-113">En avisering visas i de **senaste varningarna** instrument panelen för aviseringar i [säkerhets & Compliance Center](https://protection.office.com) (instrument panelen för**aviseringar** \> **Dashboard** eller <https://protection.office.com/alertsdashboard> ).</span><span class="sxs-lookup"><span data-stu-id="fe0be-113">An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).</span></span>
 
-<span data-ttu-id="d69ce-111">Om den köade e-postvolymen överskrider det fördefinierade tröskelvärdet (standardvärdet är 2000-meddelanden) är aviseringarna tillgängliga i instrumentpanelen för e-postflödet vid **de senaste aviseringarna**och administratörer får ett e-postmeddelande (till deras alternativa e-postadress).</span><span class="sxs-lookup"><span data-stu-id="d69ce-111">If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address).</span></span> <span data-ttu-id="d69ce-112">Information om hur du konfigurerar varningströskeln, den dagliga meddelandegränsen och/eller mottagarna av aviseringen finns i avsnittet **Anpassa köaviseringar** nedan.</span><span class="sxs-lookup"><span data-stu-id="d69ce-112">To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.</span></span>
+  ![Senaste meddelanden i instrument panelen för aviseringar i säkerhets & efterlevnad](../../media/mfi-queued-messages-alert.png)
 
-![Kövarningar i området Senaste aviseringar i instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center](../../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+- <span data-ttu-id="fe0be-115">Administratörer får ett e-postmeddelande baserat på konfigurationen av den standard aviserings princip som heter **meddelanden har försen ATS**.</span><span class="sxs-lookup"><span data-stu-id="fe0be-115">Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**.</span></span> <span data-ttu-id="fe0be-116">Se nästa avsnitt om du vill konfigurera aviserings inställningarna för den här aviseringen.</span><span class="sxs-lookup"><span data-stu-id="fe0be-116">To configure the notification settings for this alert, see the next section.</span></span>
 
-## <a name="customize-queue-alerts"></a><span data-ttu-id="d69ce-114">Anpassa köaviseringar</span><span class="sxs-lookup"><span data-stu-id="d69ce-114">Customize queue alerts</span></span>
+  <span data-ttu-id="fe0be-117">Mer information om aviserings principer finns i [aviserings principer i säkerhets & efterlevnad](../../compliance/alert-policies.md).</span><span class="sxs-lookup"><span data-stu-id="fe0be-117">For more information about alert policies, see [Alert policies in the Security & Compliance Center](../../compliance/alert-policies.md).</span></span>
 
-<span data-ttu-id="d69ce-115">Statistik för e-postflöde skapar en aviseringsprincip med namnet **Meddelanden har försenats** (kryssrutan **Skicka e-postmeddelanden** i exempelskärmen nedan) som finns i **varningsprinciper** \> **Alert Policies**för aviseringar .</span><span class="sxs-lookup"><span data-stu-id="d69ce-115">Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**.</span></span> <span data-ttu-id="d69ce-116">Du kan ändra tröskelvärdet och varna mottagarna genom att klicka på principen.</span><span class="sxs-lookup"><span data-stu-id="d69ce-116">You can modify the threshold and alert recipients by clicking on the policy.</span></span>
+## <a name="customize-queue-alerts"></a><span data-ttu-id="fe0be-118">Anpassa aviseringar i kö</span><span class="sxs-lookup"><span data-stu-id="fe0be-118">Customize queue alerts</span></span>
 
-![Navigering i varningar](../../media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+1. <span data-ttu-id="fe0be-119">Gå till **aviserings** principer för varningar eller öppna i fönstret [säkerhets & efterlevnad](https://protection.office.com) \> **Alert policies** <https://protection.office.com/alertpolicies> .</span><span class="sxs-lookup"><span data-stu-id="fe0be-119">In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.</span></span>
 
-<span data-ttu-id="d69ce-118">Du ser ett nytt policyinformationsblad, du kan nu klicka på **Redigera princip**.</span><span class="sxs-lookup"><span data-stu-id="d69ce-118">You'll see a new policy information blade, you can now click **Edit Policy**.</span></span>
+2. <span data-ttu-id="fe0be-120">Leta reda på och välj policyn som heter **meddelanden**på sidan **aviserings principer** .</span><span class="sxs-lookup"><span data-stu-id="fe0be-120">On the **Alert policies** page, find and select the policy named **Messages have been delayed**.</span></span>
 
-![Redigera princip](../../media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
+3. <span data-ttu-id="fe0be-121">I **meddelandet har fördröjd** utfällning som öppnas kan du aktivera eller inaktivera aviseringen och konfigurera aviserings inställningarna.</span><span class="sxs-lookup"><span data-stu-id="fe0be-121">In the **Message have been delayed** flyout that opens, you can turn the alert on or off and configure the notification settings.</span></span>
 
-<span data-ttu-id="d69ce-120">Informationsbladet ändras till **redigeringsprincipen**.</span><span class="sxs-lookup"><span data-stu-id="d69ce-120">The information blade will change to the **Edit Policy**.</span></span> <span data-ttu-id="d69ce-121">Du kan nu ändra mottagarna för aviseringsmeddelandet, gränsen för antalet meddelanden som skickas per dag och minimitröskeln för att utlösa aviseringen (200 eller fler).</span><span class="sxs-lookup"><span data-stu-id="d69ce-121">You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).</span></span>
+   ![Meddelanden har fördröjts med aviserings princip uppgifter säkerhets & efterlevnad](../../media/mfi-queued-messages-alert-policy.png)
 
-![Redigera principblad](../../media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+   - <span data-ttu-id="fe0be-123">**Status**: du kan aktivera eller inaktivera aviseringen.</span><span class="sxs-lookup"><span data-stu-id="fe0be-123">**Status**: You can toggle the alert on or off.</span></span>
 
-## <a name="queue-alert-details"></a><span data-ttu-id="d69ce-123">Information om köavisering</span><span class="sxs-lookup"><span data-stu-id="d69ce-123">Queue alert details</span></span>
+   - <span data-ttu-id="fe0be-124">**E-postmottagare** och **daglig meddelande gräns**: Klicka på **Redigera** för att konfigurera följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="fe0be-124">**Email recipients** and **Daily notification limit**: Click **Edit** to configure the following settings:</span></span>
 
-<span data-ttu-id="d69ce-124">När du klickar på aviseringen visas varningsinformationen i ett utfällbart fönster.</span><span class="sxs-lookup"><span data-stu-id="d69ce-124">When you click the alert, the alert details appear in a flyout pane.</span></span>
+4. <span data-ttu-id="fe0be-125">Konfigurera aviserings inställningarna genom att klicka på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="fe0be-125">To configure the notification settings, click **Edit**.</span></span> <span data-ttu-id="fe0be-126">I redigera utfällbar **princip** som visas konfigurerar du följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="fe0be-126">In the **Edit policy** flyout that appears, configure the following settings:</span></span>
 
-![Välj en köavisering i området Senaste aviseringar på instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center](../../media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+   - <span data-ttu-id="fe0be-127">**Skicka e-postmeddelanden**: standardvärdet är på.</span><span class="sxs-lookup"><span data-stu-id="fe0be-127">**Send email notifications**: The default value is on.</span></span>
+   - <span data-ttu-id="fe0be-128">**E-postmottagare**: standardvärdet är **TenantAdmins**.</span><span class="sxs-lookup"><span data-stu-id="fe0be-128">**Email recipients**: The default value is **TenantAdmins**.</span></span>
+   - <span data-ttu-id="fe0be-129">**Daglig meddelande gräns**: standardvärdet är **ingen gräns**.</span><span class="sxs-lookup"><span data-stu-id="fe0be-129">**Daily notification limit**: The default value is **No limit**.</span></span>
+   - <span data-ttu-id="fe0be-130">**Tröskelvärde**: standardvärdet är 200.</span><span class="sxs-lookup"><span data-stu-id="fe0be-130">**Threshold**: The default value is 200.</span></span>
 
-![Köaviseringsinformationen Utfällbara information i Security & Compliance Center](../../media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+   ![Aviserings inställningar i meddelanden har fördröjts med aviserings princip uppgifter säkerhets & efterlevnad](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-<span data-ttu-id="d69ce-127">Du kan klicka på **Visa kö** i aviseringsinformationen om du vill se köinformation, problem och länkar till tillgängliga korrigeringar i ett nytt utfällbart fönster.</span><span class="sxs-lookup"><span data-stu-id="d69ce-127">You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.</span></span>
+5. <span data-ttu-id="fe0be-132">När du är klar klickar du på **Spara** och **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="fe0be-132">When you're finished, click **Save** and **Close**.</span></span>
 
-![Köaviseringsinformationen Utfällbara information i Security & Compliance Center](../../media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a><span data-ttu-id="fe0be-133">Köers inblick i instrument panelen för e-postflöde</span><span class="sxs-lookup"><span data-stu-id="fe0be-133">Queues insight in the Mail flow dashboard</span></span>
 
-![Visa kö i varningsinformationen](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+<span data-ttu-id="fe0be-134">Även om den köade meddelande volymen inte har överskridit tröskelvärdet och genererat en avisering kan du ändå använda **köer** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) för att visa meddelanden som har placerats i kö i mer än en timme och vidta åtgärder innan antalet köade meddelanden blir för stora.</span><span class="sxs-lookup"><span data-stu-id="fe0be-134">Even if the queued message volume hasn't exceeded the threshold and generated an alert, you can still use the **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) to see messages that have been queued for more than one hour, and take action before the number of queued messages becomes too large.</span></span>
 
-## <a name="queues"></a><span data-ttu-id="d69ce-130">Köer</span><span class="sxs-lookup"><span data-stu-id="d69ce-130">Queues</span></span>
+![Widgeten för köer i instrument panelen för säkerhets &](../../media/mfi-queues-widget.png)
 
-<span data-ttu-id="d69ce-131">Även om den köade meddelandevolymen inte har överskridit tröskelvärdet kan du fortfarande använda området **Köer** på instrumentpanelen för e-postflödet för att se meddelanden som har köats i mer än en timme.</span><span class="sxs-lookup"><span data-stu-id="d69ce-131">Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour.</span></span> <span data-ttu-id="d69ce-132">Du kan använda **området Köer** för att övervaka antalet meddelanden i kö (värdet 0 anger att e-postflödet är OK) och vidta åtgärder innan antalet köade meddelanden blir för stort.</span><span class="sxs-lookup"><span data-stu-id="d69ce-132">You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.</span></span>
+<span data-ttu-id="fe0be-136">Om du klickar på antalet meddelanden i widgeten visas en utfällbar **meddelande** med följande information:</span><span class="sxs-lookup"><span data-stu-id="fe0be-136">If you click the number of messages on the widget, a **Messages queued** flyout appears with the following information:</span></span>
 
-![Köer i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+- <span data-ttu-id="fe0be-137">**Antal köade meddelanden**</span><span class="sxs-lookup"><span data-stu-id="fe0be-137">**Number of queued messages**</span></span>
+- <span data-ttu-id="fe0be-138">**Anslutnings namn**: Klicka på kopplingens namn för att hantera kopplingen i administrations centret för Exchange (UK).</span><span class="sxs-lookup"><span data-stu-id="fe0be-138">**Connector name**: Click on the connector name to manage the connector in the Exchange admin center (EAC).</span></span>
+- <span data-ttu-id="fe0be-139">**Start tid för kö**</span><span class="sxs-lookup"><span data-stu-id="fe0be-139">**Queue started time**</span></span>
+- <span data-ttu-id="fe0be-140">**Äldsta meddelanden har upphört**</span><span class="sxs-lookup"><span data-stu-id="fe0be-140">**Oldest messages expired**</span></span>
+- <span data-ttu-id="fe0be-141">**Mål Server**</span><span class="sxs-lookup"><span data-stu-id="fe0be-141">**Destination server**</span></span>
+- <span data-ttu-id="fe0be-142">**Sista IP-adress**</span><span class="sxs-lookup"><span data-stu-id="fe0be-142">**Last IP address**</span></span>
+- <span data-ttu-id="fe0be-143">**Senaste fel**</span><span class="sxs-lookup"><span data-stu-id="fe0be-143">**Last error**</span></span>
+- <span data-ttu-id="fe0be-144">**Så här löser du problemet**: vanliga problem och lösningar finns tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="fe0be-144">**How to fix**: Common issues and solutions are available.</span></span> <span data-ttu-id="fe0be-145">Om du har en lösning på att länken **nu** är tillgänglig klickar du på den för att åtgärda problemet.</span><span class="sxs-lookup"><span data-stu-id="fe0be-145">If is a **Fix it now** link is available, click it to fix the problem.</span></span> <span data-ttu-id="fe0be-146">Annars kan du klicka på eventuella tillgängliga länkar för mer information om felet och möjliga lösningar.</span><span class="sxs-lookup"><span data-stu-id="fe0be-146">Otherwise, click on any available links for more information about the error and possible solutions.</span></span>
 
-<span data-ttu-id="d69ce-134">När du klickar på antalet meddelanden i kö **i Köer**visas köinformation och vägledning för hur du åtgärdar problemet i ett utfällbart fönster (samma utfällbara objekt som visas när du klickar på **Visa kö** i information om en köavisering).</span><span class="sxs-lookup"><span data-stu-id="d69ce-134">When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).</span></span>
+![Information efter att du klickat på ärende köerna i instrument panelen för e-postflöde](../../media/mfi-queues-details.png)
 
-![Köinformation](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+<span data-ttu-id="fe0be-148">Samma utfällda meddelande visas när du klickar på **Visa kö** i **meddelandet har fördröjts** .</span><span class="sxs-lookup"><span data-stu-id="fe0be-148">The same flyout is displayed after you click **View queue** in the details of a **Messages have been delayed** alert.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d69ce-136">Snabbreferens</span><span class="sxs-lookup"><span data-stu-id="d69ce-136">See also</span></span>
+![Meddelanden har fördröjts med aviserings informationen i centret för säkerhets &](../../media/mfi-queued-messages-alert-details.png)
 
-<span data-ttu-id="d69ce-137">Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="d69ce-137">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="see-also"></a><span data-ttu-id="fe0be-150">Se även</span><span class="sxs-lookup"><span data-stu-id="fe0be-150">See also</span></span>
+
+<span data-ttu-id="fe0be-151">Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="fe0be-151">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
