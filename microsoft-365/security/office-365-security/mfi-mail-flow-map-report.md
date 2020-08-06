@@ -1,5 +1,5 @@
 ---
-title: Rapport om e-postflödeskarta
+title: Översikt över e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om rapporten för mappning av e-postflöde i instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center.
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan läsa mer om hur du använder översikten för e-postflöden i instrument panelen för e-postflöde i säkerhets & efterföljandekrav för att visualisera och spåra hur e-flöden kommer till och från sin organisation via kopplingar och utan att använda kopplingar.
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818849"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577720"
 ---
-# <a name="mail-flow-map-report"></a>Rapport om e-postflödeskarta
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>Översikt över e-postflöde i säkerhets & efterlevnad
 
-Den här rapporten ger insikter om hur e-post flödar genom din organisation. Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.
+**E-postflödes kartan** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & Compliance Center ger en överblick över hur e-flöden passerar genom din organisation. Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.
 
-![Mapprapporten För e-postflöde i instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center](../../media/mail-flow-map-selected.png)
+![Widget för e-postflödes karta i instrument panelen för säkerhet &](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a>Widgeten Mappning av e-postflöde
+Som standard visar widgeten e-postflödet från föregående dag i ett diagram som kallas *Sankey* -diagram. Du kan använda vänsterpilen vänsterpil ![ och HÖGERPIL ](../../media/scc-left-arrow.png) ![ ](../../media/scc-right-arrow.png) för att visa information från olika dagar. Varje färg representerar e-postflöden över en annan inkommande eller utgående koppling (eller utan att använda kopplingar). Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.
 
-Som standard visar e-postflödeskartan det höga e-postflödesmönstret från föregående dag. Du kan använda vänster- och högerpilarna för olika dagar. Om du hovrar muspekaren över varje område i rapporten visas mängden e-post till och från organisationen enligt följande diagram:
+## <a name="report-view-for-the-mail-flow-map"></a>Rapportvy för översikt över e-postflöde
 
-![Vänster- och högerpilar i widgeten Mapp med e-postflöde](../../media/mail-flow-map-widget.png)
+Om du klickar på widgeten **Koppla dokument flöden** tas du till **översikten över e-postflöde** .
 
-## <a name="mail-flow-map-basics"></a>Grunderna i e-postflödeskarta
+Följande diagram är tillgängliga i rapportvyn:
 
-Om du klickar på widgeten **Skicka flödeskarta** kommer du till rapporten **Mappa e-postflöde.** Här kan du se mer detaljerad nivå av rapporten, kan du klicka på Visa information tabell för att se detaljerade data. Du kan också hämta den detaljerade rapporten genom att klicka på Begär rapport.
+- **Visa data för: översikt**: det här är i stort sett en större vy av widgeten. Om du hovrar över en viss färg visas antalet meddelanden för den typen av koppling.
 
-![Översiktsvy i rapporten Mappa e-post](../../media/mail-flow-map-overview.png)
+  ![Vyn Översikt i rapporten e-postflödes karta](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a>Information
+- **Visa data för: detail**: den här vyn visar information om kopplingarna och mål domänerna. De översta avsändarna och mottagar domänerna visas och resten placeras i **andra**. Om du hovrar över en viss färg och ett avsnitt visas antalet meddelanden.
 
-Som standard **är Visa data för** inställd på värdet **Översikt**. När du klickar på listrutan och väljer **Detalj**växlar vyn till domännivådetaljerna.
+  ![Detaljvyn i rapporten dokument flödes karta](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Välj Information i Visa data för i översiktsvyn i rapporten Mappningsrapport för e-postflöde](../../media/mail-flow-map-select-detail.png)
+Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
 
-De översta avsändarna och mottagardomänerna visas och resten placeras i **Andra** enligt följande diagram:
+Om du vill skicka rapporten för ett visst datum intervall till en eller flera mottagare klickar du på **Hämta**.
 
-![Informationsvy i rapporten Mappa e-post](../../media/mail-flow-map-detail.png)
+Relaterade insikter visas under översikten över e-postflöden om de är tillgängliga (till exempel [korrigerings filen för möjlig e-postloop](mfi-mail-loop-insight.md)).
 
-## <a name="related-insights"></a>Relaterade insikter
+## <a name="details-table-view-for-the-mail-flow-map"></a>Vyn detaljerad vy för översikt över e-postflöde
 
-Relaterade insikter visas under datamappningen för e-postflöde om de är tillgängliga (till exempel domäninsikten av avsändare eller insikten om e-direktloopen).
+Om du klickar på **Visa informations tabell** i en rapportvy visas följande information:
+
+- **Datum**
+- **Kategori**
+- **Anslutning/tredjepartsleverantör från tredje part**
+- **Avsändare/mottagare**
+- **Antal meddelanden**
+
+Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+
+Om du markerar en rad visas liknande information i en utfällbar lista:
+
+![Information som utfälls från informations tabellen i översikten över e-postflöde](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+Om du vill skicka rapporten för ett visst datum intervall till en eller flera mottagare klickar du på **Hämta**.
+
+Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="see-also"></a>Se även
 
-Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).
+Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).

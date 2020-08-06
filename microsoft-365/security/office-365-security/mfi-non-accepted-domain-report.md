@@ -1,5 +1,5 @@
 ---
-title: Rapport om icke godkänd domän
+title: Icke godkänd domän rapport i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,30 +12,58 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om den icke-accepterade domänrapporten i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: a630d5b9674dbb136ecc54b23acd4408534d6fbc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan lära sig att använda den icke godkända domän rapporten i instrument panelen för e-postflöde i säkerhets & efterlevnad för att övervaka meddelanden från din lokala organisation där avsändarens domän inte är konfigurerad i Microsoft 365.
+ms.openlocfilehash: 649163729bbb73140f9cfb7e75c9fd06f3908cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819527"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577479"
 ---
-# <a name="non-accepted-domain-report"></a>Rapport om icke godkänd domän
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Icke godkänd domän rapport i Center för säkerhets &
 
-I likhet med domäninsikten **av avsändare** identifierar den **icke-accepterade** domäninsikten meddelanden från din lokala e-postorganisation, men avsändarens domän är inte konfigurerad som en accepterad domän i organisationen.
+Den **icke godkända domän** rapporten i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & Compliance Center visar information om meddelanden från din lokala e-postorganisation där avsändarens domän inte är konfigurerad som en godkänd domän i Microsoft 365-organisationen.
 
-Microsoft 365 kan begränsa dessa meddelanden om vi har data som bevisar att avsikten med dessa meddelanden är skadlig. Därför är det viktigt för dig att förstå vad som händer och åtgärda problemet.
+Microsoft 365 kan begränsa dessa meddelanden om vi har data som visar att syftet med dessa meddelanden är skadligt. Därför är det viktigt att du förstår vad som händer och för att åtgärda problemet.
 
-![Domänrapporten som inte accepteras i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/non-accepted-domain-report-selected.png)
+![Icke godkänd domän-widget i instrument panelen för e-postflöde i säkerhets & efterlevnad](../../media/mfi-non-accepted-domain-report-widget.png)
 
-När du klickar på widgeten tas du till hela rapporten. I den fullständiga rapporten, där du kan klicka på **Visa information** om du vill visa informationen i en tabell som visas i följande diagram:
+## <a name="report-view-for-the-non-accepted-domain-report"></a>Rapportvy för den icke godkände domän rapporten
 
-![Visa informationstabell i den icke godkända domänrapporten](../../media/non-accepted-domain-report-view-details.png)
+Om du klickar på diagrammet i widgeten **icke godkänd domän** tas du till den **icke godkända domän** rapporten.
 
-När du väljer en rad i tabellen visar ett utfällbart utfällbart ut mer information. Du kan klicka på **Visa exempelmeddelanden** för att se några av de identifierade meddelandena.
+Aktiviteten för alla berörda kopplingar visas som standard. Om du klickar på **Visa data för**kan du välja en specifik koppling i list rutan.
 
-![Markera en rad i informationstabellen i domänrapporten ej accepterad](../../media/non-accepted-domain-report-select-row-in-table.png)
+Om du hovrar över en data punkt (dag) i diagrammet visas det totala antalet meddelanden för kopplingen.
+
+![Rapportvy i rapporten icke godkänd domän](../../media/mfi-non-accepted-domain-report-overview-view.png)
+
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Vyn detaljerad tabell för icke godkänd domän rapport
+
+Om du klickar på **Visa informations tabell** i en rapportvy visas följande information:
+
+- **Datum**
+- **Namn på inkommande anslutning**
+- **Avsändningsdomän**
+- **Antal meddelanden**
+- **Exempel meddelanden**: meddelande-ID för ett urval av påverkade meddelanden.
+
+Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+
+Om du vill skicka rapporten för ett visst datum intervall till en eller flera mottagare klickar du på **Hämta**.
+
+När du markerar en rad i tabellen visas en utfällbar tabell med följande information:
+
+- **Datum**
+- **Namn på inkommande anslutning**
+- **Avsändningsdomän**
+- **Antal meddelanden**
+- **Exempel meddelanden**: du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
+
+![Utfällda detaljer när du har markerat en rad i tabellvy för information i den icke godkända domän rapporten](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+
+Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).
+Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).

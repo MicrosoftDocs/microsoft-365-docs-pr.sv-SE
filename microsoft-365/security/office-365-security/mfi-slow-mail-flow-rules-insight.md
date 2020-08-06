@@ -1,11 +1,11 @@
 ---
-title: Insikt om långsamma e-postflödesregler
+title: Åtgärda inblick i regler för långsam e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 5/3/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +13,39 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om insikten om långsamma regler för e-postflöde i instrumentpanelen för säkerhets- & compliance.
-ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan lära sig att använda åtgärds reglerna för långsam e-postflöde inblick i säkerhets & Compliance Center för att identifiera och åtgärda ineffektiva eller felaktiga regler för e-postflöde (kallas även transport regler) i organisationen.
+ms.openlocfilehash: bb1c09c2809260be8086059259a1aeec3f1fb3eb
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819370"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577177"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>Insikt om långsamma e-postflödesregler
+# <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Åtgärda regler för långsam e-postflöde inblick i centret för säkerhets & efterlevnad
 
-Ineffektiva regler för e-postflöde (kallas även transportregler) kan leda till fördröjningar i e-postflödet för din organisation. Den här insikten rapporterar regler för e-postflöde som påverkar organisationens e-postflöde. Exempel på dessa typer av regler är:
+Ineffektiva regler för e-postflöde (kallas även transport regler) kan leda till fördröjning i e-postflöden för din organisation. Den här Insight rapporterar regler för e-postflöde som påverkar organisationens e-postflöde. Här följer exempel på dessa typer av regler:
 
-- Villkor som används **Är medlem i** för stora grupper.
+- De villkor som används **är medlemmar i** för stora grupper.
+- Villkor som använder regex-mönster matchning (komplext).
+- Villkor som använder innehålls kontroll i bifogade filer.
 
-- Villkor som använder komplexa reguljära uttryck (regex) mönster matchning.
+Reglerna för att **åtgärda långsamma e-postflöde** är inblickade i det **rekommenderade för dig** -området i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & efterlevnaden meddelar dig när det tar för lång tid att slutföra en regel för e-postflöde. Denna inblick visas bara efter det att villkoret har identifierats (om du inte har några e-postloopar visas inte inblicken).
 
-- Villkor som använder innehållskontroll i bifogade filer.
+Du kan använda det här meddelandet för att identifiera och finjustera regler för e-postflöde för att minska fördröjningar för e-postflöde.
 
-Insikten hjälper dig att identifiera och finjustera regler för e-postflöde för att minska fördröjningar i e-postflödet.
+![Åtgärda regler för långsam e-postflöde inblick i det rekommenderade för dig-området på instrument panelen för e-postflöde](../../media/mfi-fix-slow-mail-flow-rules.png)
 
-![En långsam insikt om e-postflödesregler i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+När du klickar på **Visa information** i widgeten visas en utfällbar lista med mer information:
 
-När du klickar på **Visa information**visas ett utfällbart fönster där du kan granska regeln. I det utfällbara fönstret kan du även klicka på **Visa exempelmeddelanden** för att se vilken typ av meddelanden som påverkas av regeln.
+- **Regel**: du kan hovra över sammanfattningen för att se alla villkor, undantag och åtgärder för regeln. Du kan klicka på sammanfattningen för att redigera regeln i administrations centret för Exchange (UK).
+- **Antal meddelanden som utvärderats**: du kan klicka på **Visa exempel meddelanden** [om du vill visa resultaten för](message-trace-scc.md) ett urval av de meddelanden som påverkade regeln.
+- **Genomsnittlig tid som lagts ned på varje meddelande**
+- **Median tid som lagts på ett meddelande**: det mittersta värdet som avgränsar den övre halvan från den nedre halvan av tidsdata.
 
-![Utfällbart fönster efter att ha klickat på Visa information i en långsam insikt om regler för e-postflöde i instrumentpanelen för e-postflödet](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Den utfällbara informationen som visas när du klickar på Visa information om regler för att åtgärda långsamma e-postflöde inblick](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+
+Mer information om villkor och undantag i regler för e-postflöden i Exchange Online finns i [villkor och undantag för e-postflödes regler (predikat) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).
+Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).

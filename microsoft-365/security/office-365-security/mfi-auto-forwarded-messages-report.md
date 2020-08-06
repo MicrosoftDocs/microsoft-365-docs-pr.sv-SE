@@ -1,5 +1,5 @@
 ---
-title: Rapporten Automatiskt vidarebefordrade meddelanden
+title: Inblick i meddelanden som skickas automatiskt
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,32 +10,48 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Administratörer kan lära sig mer om rapporten Meddelanden med automatiskt vidarebefordrade meddelanden på instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Administratörer kan lära sig mer om rapporten för automatiskt vidarebefordrade meddelanden i instrument panelen för e-postflöde i säkerhets & efterlevnad.
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635310"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577836"
 ---
-# <a name="auto-forwarded-messages-report"></a>Rapporten Automatiskt vidarebefordrade meddelanden
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Automatiskt vidarebefordrade meddelanden är inblick i säkerhets & Compliance Center
 
-Rapporten **Meddelanden som vidarebefordras** automatiskt i instrumentpanelen för e-postflödet visar information om meddelanden som automatiskt vidarebefordras från organisationen till mottagare i externa domäner.
+De **automatiskt avvidarekopplade meddelandena** är inblick i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center visar information om meddelanden som automatiskt vidarebefordras från din organisation till mottagare i externa domäner.
 
-![Insikten om automatiskt vidarebefordrade meddelanden i Security & Compliance Center](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Widget för automatiskt vidarebefordrade meddelanden i säkerhets & efterlevnad](../../media/mfi-auto-forwarded-messages.png)
 
-![Rapporten Automatiskt vidarebefordrade meddelanden i instrumentpanelen för e-postflödet i Säkerhets- & Compliance Center](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+## <a name="auto-forwarded-messages-details"></a>Information om automatiskt vidarebefordrade meddelanden
 
-## <a name="auto-forwarded-messages-details"></a>Information om vidarebefordrade meddelanden automatiskt
+När du klickar på antalet meddelanden i widgeten visas en utfällbar ruta som visar mer information om de automatiskt vidarebefordrade meddelandena:
 
-När du klickar på antalet meddelanden i widgeten visas ett utfällbart fönster som visar statusen för meddelandet automatiskt vidarebefordrat. Du kan se informationen genom att klicka på länken **Vidarebefordran.**
+- **Automatiskt vidarebefordrade meddelanden genom metoder för vidarebefordran**:
 
-![Informationsutfällbart för rapporten Automatiskt vidarebefordrade meddelanden i Security & Compliance Center](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+  - **Regler för e-postflöde**
+  - **Regler för Inkorgen**
+  - **Via SMTP-vidarekoppling**
+  - En länk till [vidarekoppling](view-mail-flow-reports.md#forwarding-report) för mer information.
+
+- **Automatiskt vidarebefordrade meddelanden per domän och användare**:
+
+  - **De fem främsta domänerna vidarekopplas till**
+  - **Nya domäner (förra veckan)**
+  - **De 5 vanligaste användarna**
+  - **Nya användare (förra veckan)**
+  - En länk till [rapporten för ändring av ändringar](mfi-new-users-forwarding-email.md#forwarding-modifications-report) för att få mer information.
+
+![Den utfällbara informationen för rapporten för automatiskt vidarebefordrade meddelanden i säkerhets & Compliance Center](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Insikter
 
-Två insikter genereras baserat på rapportdata: **Nya vidarebefordringsanvändare** och **Nya vidarebefordringsdomäner**. Varje insikt ger en sammanfattning av antalet nya vidarebefordrare eller domäner med en länk till den **nya vidarebefordringsrapporten** som innehåller mer information om de två typerna av data. Den **nya vidarebefordringsrapporten** visar också en tidslinjevy över ny aktivitet och informationstabellen identifierar vem som har börjat vidarebefordra och till vilka domäner.
+Två insikter genereras utifrån rapportens data:
 
-## <a name="see-also"></a>Snabbreferens
+- [Nya e-postmeddelanden](mfi-new-users-forwarding-email.md)
+- [Nya domäner vidarebefordras via e-post](mfi-new-domains-being-forwarded-email.md)
 
-Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).
+## <a name="see-also"></a>Se även
+
+Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).

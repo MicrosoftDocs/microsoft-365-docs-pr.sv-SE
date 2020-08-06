@@ -1,5 +1,5 @@
 ---
-title: E-postflödesinsikter i Säkerhets- och efterlevnadscenter
+title: Insikter för e-postflöde i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,67 +10,69 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Administratörer kan lära sig mer om instrumentpanelen för e-postflödet i Security & Compliance Center, inklusive insikter, rapporter och widgetar.
+description: Administratörer kan läsa mer om insikter och rapporter som är tillgängliga i instrument panelen för e-postflöde i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552680"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577799"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
-Administratörer kan använda instrumentpanelen för e-postflödet i Security & Compliance Center för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem som rör e-postflödet i organisationen.
+Administratörer kan använda instrument panelen för e-postflöden i säkerhets & efterlevnad för att upptäcka trender, insikter och vidta åtgärder för att åtgärda problem med e-postflöde i organisationen.
 
-De insikter, rapporter och widgetar som är tillgängliga i instrumentpanelen för e-postflödet är:
+![Instrument panelen för e-postflöde i säkerhets & efterlevnad](../../media/mail-flow-dashboard-v2.png)
 
-- [Rapport om e-postflödeskarta](mfi-mail-flow-map-report.md)
+Tillgängliga insikter är:
 
-- [Statusinsikt för domänmeddelandeflöde](mfi-domain-mail-flow-status-insight.md)
+- [Inblick i meddelanden som skickas automatiskt](mfi-auto-forwarded-messages-report.md)
 
-- [Rapporten SMTP Auth-klienter](mfi-smtp-auth-clients-report.md)
+- [Åtgärda möjliga e-postloop Insight](mfi-mail-loop-insight.md)<sup>1</sup>
 
-- [Statistik över avsändaredomän](mfi-sender-domain-insight.md)
+- [Åtgärda regler för långsam e-postflöde, inblick](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Rapport om misslyckad leverans](mfi-non-delivery-report.md)
+- [Översikt över e-postflöde](mfi-mail-flow-map-report.md)
+
+- [Nya domäner vidarekopplas med e-post, Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+
+- [Nya användare vidarebefordrar e-post, Insight](mfi-new-users-forwarding-email.md)<sup>2</sup>
 
 - [Rapport om icke godkänd domän](mfi-non-accepted-domain-report.md)
 
-- [Utgående och inkommande e-postflöde](mfi-outbound-and-inbound-mail-flow.md)
+- [Rapport om misslyckad leverans](mfi-non-delivery-report.md)
 
-- [Köaviseringar och köer](mfi-queue-alerts-and-queues.md)
+- [Ingående och inkommande e-postflöde](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Rapporten Automatiskt vidarebefordrade meddelanden](mfi-auto-forwarded-messages-report.md)
+- [Inblick i köer](mfi-queue-alerts-and-queues.md)
 
-- [Insikt om e-postloop](mfi-mail-loop-insight.md)
+- [SMTP-AUTH-klienter inblick och rapport](mfi-smtp-auth-clients-report.md)
 
-- [Insikt om långsamma e-postflödesregler](mfi-slow-mail-flow-rules-insight.md)
+- [Insikten E-postflödesstatus för översta domäner](mfi-domain-mail-flow-status-insight.md)
 
-## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Behörigheter som krävs för att visa instrumentpanelen för e-postflödet
+<sup>1</sup> denna inblick visas i det **rekommenderade för** området i instrument panelen för e-postflöde först efter att problemet har upptäckts. Annars visas den inte.
 
-Instrumentpanelen för e-postflödet är tillgänglig för:
+<sup>2</sup> denna inblick visas inte på instrument panelen för e-postflöden, men visas på sidan för [vidarebefordran av rapporter](view-mail-flow-reports.md#forwarding-report) efter problemet. Annars visas den inte.
 
-- Medlemmar i den **globala administratörsrollen.**
+## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Behörigheter som krävs för att visa instrument panelen för e-postflöde
 
-- Medlemmar i **Exchange-administratörsrollen.**
+Instrument panelen för e-postflöde är tillgänglig för medlemmar i följande väg grupper:
 
-- Medlemmar i **administratörsrollen E-postflöde** i Security & Compliance Center. Om den här rollen uttryckligen tilldelas en användare som inte är medlem i den globala administratören eller Exchange-administratörsrollerna:
+- **Organisations hantering** i säkerhets & efterlevnad (globala administratörer).
 
-  - Användaren måste logga in på Security & Compliance Center direkt på <https://protection.office.com> .
+- **[Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure AD.
 
-  - Användaren har endast skrivskyddad behörighet till instrumentpanelen för e-postflödet.
+- **Flödes administratör** i säkerhets & regelefterlevnad: om en medlem i den här roll gruppen inte är medlem i roll grupperna global administratör eller Exchange-administratör bör du tänka på följande:
 
-  - Användaren har inte tillgång till Microsoft 365-administrationscentret.
+  - Användaren måste logga in på säkerhets & Compliance Center direkt vid <https://protection.office.com> .
+  - Användaren har bara Skriv behörighet i instrument panelen för e-postflöde.
+  - Användaren har inte till gång till administrations centret för Microsoft 365.
 
-Mer information om den globala administratörsrollen finns i [Om Microsoft 365-administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+Mer information om behörigheter i säkerhets & Compliance Center finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md) och [ge användarna åtkomst till säkerhets & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
-Information om hur du tilldelar säkerhetsroller & efterlevnadscenter till användare finns i [Ge användarna åtkomst till Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+## <a name="where-to-find-the-mail-flow-dashboard"></a>Här hittar du instrument panelen för e-postflöde
 
-## <a name="where-to-find-the-mail-flow-dashboard"></a>Var du hittar instrumentpanelen för e-postflödet
+Öppna säkerhets & Compliance Center <https://protection.office.com> , expandera **e-postflöde**och välj **instrument panel**.
 
-1. Gå till Security & Compliance Center på [https://protection.office.com](https://protection.office.com) .
-
-2. Expandera **e-postflödet** och välj sedan **Instrumentpanel**.
-
-   ![Instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+Öppna för att gå direkt till instrument panelen för e-postflöde <https://protection.office.com/mailflow/dashboard> .

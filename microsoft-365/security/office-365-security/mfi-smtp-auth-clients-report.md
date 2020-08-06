@@ -1,5 +1,5 @@
 ---
-title: Rapporten SMTP Auth-klienter
+title: SMTP-AUTH-klienter inblick och rapport i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,79 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om smtp-autentiseringsklientrapporten i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: 90d008bf775c692431fb5b832652ceb97f9fd760
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan lära dig hur du använder SMTP AUTH inblick och rapport i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka e-avsändare i organisationen som använder autentiserad SMTP (SMTP AUTH) för att skicka e-postmeddelanden.
+ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818825"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577257"
 ---
-# <a name="smtp-auth-clients-report"></a>Rapporten SMTP Auth-klienter
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP-AUTH-klienter inblick och rapportera i säkerhets & Compliance Center
 
-I rapporten **SMTP Auth-klienter** belysers användningen av SMTP Auth-klientöverföringsprotokollet av användare eller systemkonton i organisationen. Det här äldre protokollet (som använder slutpunkten smtp.office365.com) erbjuder endast grundläggande autentisering och kan användas av komprometterade konton för att skicka e-post.  Med den här rapporten kan du söka efter ovanlig aktivitet. Den visar också TLS-användningsdata för klienter eller enheter som använder SMTP Auth.
+**SMTP-AUTH-klienterna** fokuserar på [instrument panelen för e-postflöden](mail-flow-insights-v2.md) och den associerade [SMTP-authn-rapporten](#smtp-auth-clients-report) markerar användning av SMTP auth client sändning Protocol via användare eller system konton i din organisation. Det här bakåtkompatibla protokollet (som använder slut punkts smtp.office365.com) endast erbjuder grundläggande inloggningsautentisering och är känsligt för att användas av obehöriga konton för att skicka e-post. Med inblick och rapport kan du söka efter ovanlig aktivitet för SMTP-profilens e-postinlägg. Det visar också TLS-dataanvändningen för klienter eller enheter med SMTP-autentisering.
 
-Widgeten som visas på instrumentpanelen e-postflöde anger antalet användare eller tjänstkonton som har använt SMTP Auth-protokollet under de senaste 7 dagarna.
+Widgeten visar antalet användare eller tjänst konton som har använt SMTP Authentication Protocol under de senaste 7 dagarna.
 
-![SMTP-autentiseringsklienter rapporterar i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/smtp-auth-clients-report-selected.png)
+![Widget för SMTP-AUTH-klienter i instrument panelen för e-postflöde i säkerhets & Compliance Center](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-Om du klickar på widgeten öppnas ett utfällbart utfällbart alternativ som ger en aggregerad vy över TLS-användningen och volymerna för den senaste veckan.
+Om du klickar på antalet meddelanden i widgeten visas en **SMTP-AUTH-klienter** . Den utfällbara vyn visar en sammanslagen vy av TLS-användning och volymerna under den senaste veckan.
 
-![Utfällbara i rapporten SMTP Auth-klienter](../../media/smtp-auth-clients-flyout.png)
+![Information utfälld när du klickar på widgeten SMTP-AUTH-klienter i instrument panelen för e-postflöde](../../media/mfi-smtp-auth-clients-report-details.png)
 
-När du klickar på länken **SMTP Auth Clients Report** visas två huvuddata pivoter och två datavyer. Data pivoter är **skicka volym** och **TLS användning**. Datavyerna är diagrammet och detaljtabellen.
+Du kan klicka på länken **SMTP-AUTH-klienter** för att gå till rapporten SMTP-AUTH-klienter enligt beskrivningen i nästa avsnitt.
 
-Vyn **Skicka volym** visar antalet meddelanden som skickades med SMTP-autentisering för det angivna tidsintervallet. Du kan justera intervallet genom att klicka på **Filter**. Diagrammet ordnas efter avsändatordomän. Du kan se separata data för varje domän genom att välja domänen i **listrutan Visa data.**
+## <a name="smtp-auth-clients-report"></a>Rapporten SMTP Auth-klienter
 
-![Skicka volym i rapporten SMTP Auth Clients](../../media/smtp-auth-clients-report-sending-volume.png)
+### <a name="report-view-for-the-smtp-auth-clients-report"></a>Rapportvy för rapporten SMTP-AUTH-klienter
 
-Du kan visa detaljerad information om avsändarna och deras meddelandeantal genom att klicka på **Visa informationstabell**. Om du vill återgå till diagrammet klickar du på **Visa rapport**.
+Som standard visar rapporten data för de senaste 7 dagarna, men data är tillgängliga under de senaste 90 dagarna.
 
-![Informationstabell för att skicka volym i rapporten SMTP-autentiseringsklienter](../../media/smtp-auth-clients-report-details-sending-volume.png)
+Avsnittet Översikt innehåller följande diagram:
 
-**TLS-användnings** pivot är viktigt på grund av den kommande utfasningen av TLS1.0 och TLS1.1 i Office 365. Många äldre enheter och program kan inte skicka e-post om de bara kan använda TLS1.0 med SMTP Auth. Med den här pivoten kan du identifiera och vidta åtgärder för användare och systemkonton som fortfarande använder äldre versioner av TLS.
+- **Visa data genom: skicka volym**: diagrammet visar som standard antalet SMTP auth client-meddelanden som skickades från alla domäner (**Visa data för: alla avsändare** är markerade som standard). Du kan filtrera resultaten till en viss avsändares domän genom att klicka på **Visa data för** och välja avsändar domänen i list rutan. Om du hovrar över en viss data punkt (dag) visas antalet meddelanden.
 
-![TLS-användning i rapporten SMTP-autentiseringsklienter](../../media/smtp-auth-clients-report-tls-usage.png)
+  ![Skicka vyn volym i rapporten SMTP-AUTH-klienter i säkerhets & efterlevnad](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-Du kan visa detaljerad information om avsändare, versioner av TLS som de använder med SMTP Auth och deras meddelande räknas genom att klicka på **Visa informationstabell**. Om du vill återgå till diagrammet klickar du på **Visa rapport**.
+- **Visa data genom: TLS-användning**: diagrammet visar procent andelen av TLS-användning för alla SMTP auth client-meddelanden under den valda tids perioden. I det här diagrammet kan du identifiera och vidta åtgärder för användare och system konton som fortfarande använder äldre versioner av TLS.
 
-Du kan också hämta en mer detaljerad version av rapporten genom att klicka på Begär rapport.
+  ![Vyn användning av TLS i rapporten SMTP-AUTH-klienter i säkerhets & efterlevnad](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
-![Informationstabell för TLS-användning i rapporten SMTP-autentiseringsklienter](../../media/smtp-auth-clients-report-details-tls-usage.png)
+Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+
+Klicka på **rapporten Request** för att få en mer detaljerad version av rapporten i ett e-postmeddelande. Du kan ange datum intervallet och mottagarna för att få rapporten.
+
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Vyn detaljerad tabell för rapporten SMTP-AUTH-klienter
+
+Om du klickar på **Visa informations tabell**beror informationen som visas på diagrammet du tittade på:
+
+- **Visa data genom: skicka volym**: följande information visas i en tabell:
+
+  - **Avsändarens adress**
+  - **Antal meddelanden**
+
+  Om du markerar en rad visas samma detaljer i en utfällbar lista.
+
+- **Visa data genom: TLS-användning**: följande information visas i en tabell:
+
+  - **Avsändarens adress**
+  - **TLS 1.0%**<sup>\*</sup>
+  - **TLS 1.1%**<sup>\*</sup>
+  - **TLS 1.2%**<sup>\*</sup>
+  - **Antal meddelanden**
+
+  <sup>\*</sup>I den här kolumnen visas både procent andelen och antalet meddelanden från avsändaren.
+
+Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+
+Om du markerar en rad visas liknande information i en utfällbar lista:
+
+![Information som utfälls från tabellen information i vyn TLS-användning i SMTP-authn-klienter](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+
+Klicka på **rapporten Request** för att få en mer detaljerad version av rapporten i ett e-postmeddelande. Du kan ange datum intervallet och mottagarna för att få rapporten.
+
+Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).
+Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).

@@ -1,5 +1,5 @@
 ---
-title: Administrativa inlämningar
+title: Administratörs inlämningar
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,237 +16,237 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig hur du använder portalen Inlämningar i Security & Compliance Center för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, webbadresser och filer till Microsoft för skanning.
-ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
+ms.openlocfilehash: 4d0737d881334db9cc4aeda43037ab89d7444618
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726845"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577876"
 ---
-# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörsöverföring för att skicka misstänkt skräppost, phish, webbadresser och filer till Microsoft
+# <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
-I Microsoft 365-organisationer med postlådor i Exchange Online kan administratörer använda portalen Inlämningar i Security & Compliance Center för att skicka e-postmeddelanden, webbadresser och bilagor till Microsoft för skanning.
+I Microsoft 365-organisationer med post lådor i Exchange Online kan administratörer använda & portalen för att skicka e-postmeddelanden, URL: er och bifogade filer till Microsoft för att söka.
 
-När du skickar ett e-postmeddelande får du information om alla policyer som kan ha tillåtit inkommande e-post till din klientorganisation, samt granskning av webbadresser och bilagor med posten. Principer som kan ha tillåtit ett e-postmeddelande inkluderar en enskild användares säkra avsänningslista samt principer för klientnivå, till exempel regler för Exchange-e-postflöde (kallas även transportregler).
+När du skickar ett e-postmeddelande får du information om eventuella principer som kan ha tillåtit inkommande e-post till din klient organisation samt granskning av URL: er och bilagor i e-postmeddelandet. Principer som kan ha tillåtelse till ett e-postmeddelande inkluderar en enskild användares lista över betrodda avsändare och policy principer för Exchange-flöden (kallas även transport regler).
 
-Andra sätt att skicka e-postmeddelanden, webbadresser och bilagor till Microsoft finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Inlämning** använder du <https://protection.office.com/reportsubmission> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till **sändnings** sidan, Använd <https://protection.office.com/reportsubmission> .
 
-- Du måste tilldelas behörigheter innan du kan göra procedurerna i det här avsnittet:
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
 
-  - Om du vill skicka meddelanden och filer till Microsoft måste du vara medlem i någon av följande rollgrupper:
+  - För att skicka meddelanden och filer till Microsoft måste du vara medlem i någon av följande roll grupper:
 
-    - **Organisationshantering** eller **säkerhetsadministratör** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Organisationshantering** eller **hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+    - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - För skrivskyddad åtkomst till portalen inlämningar måste du vara medlem i någon av följande rollgrupper:
+  - Om du vill ha skrivskyddad åtkomst till portalen för att skicka objekt måste du vara medlem i någon av följande roll grupper:
 
-    - **Säkerhetsläsaren** i [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-    - **Endast visningsorganisation i** [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+    - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Mer information om hur användare kan skicka meddelanden och filer till Microsoft finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+- Mer information om hur användarna kan skicka meddelanden och filer till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Rapportera misstänkt innehåll till Microsoft
 
-1. Gå till meddelanden om överföring av **Threat management** administratörer för & granskning \> **Review** \> **av**&.
+1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
 
-2. Klicka på knappen **Ny inlämning** på sidan **Inlämningar** som visas.
+2. Klicka på knappen **ny sändning** på sidan för **skickade inlägg** .
 
-3. Använd **Nytt överföringsutfällbart** överföringsutfällbart som visas för att skicka meddelandet, WEBBADRESSEN eller bilagan enligt beskrivningen i följande avsnitt.
+3. Använd **New submission** utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
 
-### <a name="submit-a-questionable-email-to-microsoft"></a>Skicka ett tvivelaktigt e-postmeddelande till Microsoft
+### <a name="submit-a-questionable-email-to-microsoft"></a>Skicka ett tveksamt e-postmeddelande till Microsoft
 
-1. Välj **E-post**i avsnittet **Objekttyp** . I avsnittet **Inlämningsformat** använder du något av följande alternativ:
+1. Välj **e-post**under **objekt typ** . Använd något av följande alternativ i avsnittet **sändnings format** :
 
-   - **Nätverksmeddelande-ID:** Det här är ett GUID-värde som är tillgängligt i **x-MS-Exchange-Organization-Network-Message-Id-huvudet** i meddelandet.
+   - **Nätverks meddelande-ID**: det här är ett GUID-värde som är tillgängligt i huvudet **X-MS-Exchange-Organization-Network-meddelande-ID** i meddelandet.
 
-   - **Arkiv**: Klicka på **Välj fil**. Leta reda på och markera FILEN .eml eller .msg i dialogrutan som öppnas och klicka sedan på **Öppna**.
+   - **Fil**: Klicka på **Välj fil**. I dialog rutan som öppnas letar du reda på och markerar EML-eller MSG-filen och klickar sedan på **Öppna**.
 
-2. I avsnittet **Mottagare** anger du en eller flera mottagare som du vill köra en principkontroll mot. Principkontrollen avgör om e-postmeddelandet kringgås genomsökning på grund av användar- eller organisationsprinciper.
+2. Ange en eller flera mottagare som du vill köra en princip kontroll för i avsnittet **mottagare** . Princip kontrollen avgör om genomsökning av e-postmeddelandet kringgås på grund av principer för användare eller organisation.
 
-3. I avsnittet **Orsak till inlämning** väljer du något av följande alternativ:
+3. Välj något av följande alternativ i avsnittet **orsak för inlämning** :
 
-   - **Borde inte ha blockerats**
+   - **Ska inte ha blockerats**
 
-   - **Borde ha blockerats:** Välj **Skräppost,** **Nätfiske**eller **skadlig kod**. Om du är osäker, använd ditt bästa omdöme.
+   - **Bör ha blockerats**: Välj **skräp post**, **nätfiske**eller **skadlig program vara**. Om du är osäker kan du använda ditt bästa omdöme.
 
-4. Om filtret kringgådes på grund av principer vid inlämning visas information om den principen.
+4. Om filtret hoppades över på grund av principer vid överföring visas information om den policyn.
 
-   Om filtret inte kringgådes på grund av en eller flera principer slutförs genomsökningen på flera minuter. Du ser ytterligare information om inlämningen genom att klicka på statuslänken. Detta inkluderar resultaten av policykontrollen och återscan domen. Observera att detta inte kör e-postmeddelandet via office 365 ATP full filtrering stack igen men kör en partiell omsökning baserat på vissa attribut för e-post, URL eller fil.
+   Om filtret inte har hoppats över på grund av en eller flera principer slutförs genomsökningen flera minuter. Du får mer information om inlämningen genom att klicka på status länken. Här ingår resultaten av princip kontrollen och omsökning Verdict. OBS! detta kör inte e-postmeddelandet via Office 365 ATP-fullständig filtrerings stack igen men kör en delvis omsökning baserat på vissa av attributen för e-post, URL eller fil.
 
-5. När du är klar klickar du på knappen **Skicka.**
+5. När du är klar klickar du på **Skicka** .
 
-![Exempel på inskickad webbadress](../../media/submission-flyout-email.PNG)
+![Exempel på skicka URL](../../media/submission-flyout-email.PNG)
 
-### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt WEBBADRESS till Microsoft
+### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt URL till Microsoft
 
-1. Välj **URL**i avsnittet **Objekttyp** . I rutan som visas anger du den fullständiga webbadressen (till exempel <https://www.fabrikam.com/marketing.html> ).
+1. Välj **URL**under **objekt typ** . I rutan som visas anger du den fullständiga URL: en (till exempel <https://www.fabrikam.com/marketing.html> ).
 
-2. I avsnittet **Orsak till inlämning** väljer du något av följande alternativ:
+2. Välj något av följande alternativ i avsnittet **orsak för inlämning** :
 
-   - **Borde inte ha blockerats**
+   - **Ska inte ha blockerats**
 
-   - **Borde ha blockerats:** Välj **Nätfiske** eller **skadlig kod**.
+   - **Borde ha blockerats**: Välj **nätfiske** eller **malware**.
 
-3. När du är klar klickar du på knappen **Skicka.**
+3. När du är klar klickar du på **Skicka** .
 
-![Exempel på inlämning av e-post](../../media/submission-url-flyout.png)
+![Exempel på Skicka e-post](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Skicka en misstänkt fil till Microsoft
 
-1. Välj **Bifogad fil**i avsnittet **Objekttyp** .
+1. Välj **bilaga**under **objekt typ** .
 
-2. Klicka på **Välj fil**. Leta reda på och markera filen i dialogrutan som öppnas och klicka sedan på **Öppna**.
+2. Klicka på **Välj fil**. Leta upp och markera filen i dialog rutan som öppnas och klicka sedan på **Öppna**.
 
-3. I avsnittet **Orsak till inlämning** väljer du något av följande alternativ:
+3. Välj något av följande alternativ i avsnittet **orsak för inlämning** :
 
-   - **Borde inte ha blockerats**
+   - **Ska inte ha blockerats**
 
-   - **Borde ha blockerats:** **Malware** är det enda valet, och väljs automatiskt..
+   - **Bör ha blockerats**: **malware** är det enda alternativet och väljs automatiskt...
 
-4. När du är klar klickar du på knappen **Skicka.**
+4. När du är klar klickar du på **Skicka** .
 
-![Exempel på inlämning av bifogad fil](../../media/submission-file-flyout.PNG)
+![Exempel på skicka bilagor](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>Visa administratörsinlämningar
+## <a name="view-admin-submissions"></a>Visa administratörs inlämningar
 
-1. Gå till meddelanden om överföring av **Threat management** administratörer för & granskning \> **Review** \> **av**&.
+1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
 
-2. Kontrollera att fliken **Administratörsöverföringar** är markerad på sidan **Inlämningar** som visas.
+2. På sidan för att **Skicka** objekt som visas kontrollerar du att fliken **Administratörs överföringar** är markerad.
 
-Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som standard) kan du filtrera efter **inlämnings-ID** genom att ange ett värde i rutan och klicka på Uppdatera.Up of the top of the page, you can enter a start date, an end date, and (by default) you can filter by Submission ID by entering a value in the box and ![ clicking Refresh button ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
+Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **överförings-ID** (ett GUID-värde som är kopplat till varje överföring) genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
-Om du vill ändra filtervillkoren klickar du på knappen **Inlämnings-ID** och väljer något av följande värden:
+Om du vill ändra filter villkoren klickar du på knappen **Skicka ID** och väljer något av följande värden:
 
 - **Avsändare**
-- **Ämne/URL/Filnamn**
-- **Insänt av**
-- **Typ av inlämning**
+- **Ämne/URL/fil namn**
+- **Skickades av**
+- **Sändnings typ**
 - **Status**
 
-![Filteralternativ för administratörsinlämningar](../../media/admin-submission-email-filter-options.png)
+![Filter alternativ för administratörs inlämning](../../media/admin-submission-email-filter-options.png)
 
-Om du vill exportera resultaten klickar du på **Exportera** högst upp på sidan och väljer **Diagramdata** eller **Tabell**. Spara CSV-filen i dialogrutan som visas.
+Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell**. Spara CSV-filen i dialog rutan som visas.
 
-Under diagrammet finns tre flikar: **E-post** (standard), **URL**och **Bifogad fil**.
+Under grafen finns det tre flikar: **e-post** (standard), **URL**och **bifogad fil**.
 
-### <a name="view-admin-email-submissions"></a>Visa e-postinlämningar för administratörer
+### <a name="view-admin-email-submissions"></a>Visa e-postinlägg för administratörer
 
-Klicka på fliken **E-post.**
+Klicka på fliken **e-post** .
 
-Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner från vyn:
+Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
 - **Datum**
-- **Inlämnings-ID**
-- **Insänt av**<sup>\*</sup>
+- **Sändnings-ID**: ett GUID-värde som tilldelats varje överföring.
+- **Skickades av**<sup>\*</sup>
 - **Ämne**<sup>\*</sup>
 - **Avsändare**
-- **IP-adress för avsändare**<sup>\*</sup>
-- **Typ av inlämning**
-- **Leveransorsak**
+- **Avsändarens IP**<sup>\*</sup>
+- **Sändnings typ**
+- **Leverans orsak**
 - **Status**<sup>\*</sup>
-- **Kontrolltyp**
-- **Kontrollkälla**
+- **Kontroll typ**
+- **Kontroll källa**
 
-  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i ett utfällbart alternativ.
+  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
-### <a name="view-admin-url-submissions"></a>Visa inlämning av administratörs-URL
+### <a name="view-admin-url-submissions"></a>Visa URL-överföringar för administratörer
 
-Klicka på fliken **URL.**
+Klicka på fliken **URL** .
 
-Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner från vyn:
+Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
 - **Datum**
-- **Inlämnings-ID**
-- **Insänt av**<sup>\*</sup>
-- **Url**<sup>\*</sup>
-- **Typ av inlämning**
+- **Sändnings-ID**
+- **Skickades av**<sup>\*</sup>
+- **:**<sup>\*</sup>
+- **Sändnings typ**
 - **Status**<sup>\*</sup>
 
-  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i ett utfällbart alternativ.
+  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
-### <a name="view-admin-attachment-submissions"></a>Visa inlämningar av administratörsbelämning
+### <a name="view-admin-attachment-submissions"></a>Visa underlämning av administrativa bilagor
 
-Klicka på fliken **Bifogade filer.**
+Klicka på fliken **bifogade filer** .
 
-Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner från vyn:
+Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
 - **Datum**
-- **Inlämnings-ID**
-- **Insänt av**<sup>\*</sup>
-- **Filnamn**<sup>\*</sup>
-- **Typ av inlämning**
+- **Sändnings-ID**
+- **Skickades av**<sup>\*</sup>
+- **Fil namn**<sup>\*</sup>
+- **Sändnings typ**
 - **Status**<sup>\*</sup>
 
-  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i ett utfällbart alternativ.
+  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
-## <a name="view-user-submissions-to-microsoft"></a>Visa användarinlämningar till Microsoft
+## <a name="view-user-submissions-to-microsoft"></a>Visa användar inlämningar till Microsoft
 
-Om du har distribuerat [tillägget Rapportmeddelande](enable-the-report-message-add-in.md)eller om personer använder den [inbyggda rapporteringen i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)kan du se vilka användare som rapporterar på fliken **Användares inlämningar.**
+Om du har distribuerat [tillägget för rapport meddelanden](enable-the-report-message-add-in.md), eller om personer använder den [inbyggda rapporteringen i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), kan du se vilka användare som rapporterar på fliken **användar överföringar** .
 
-1. Gå till meddelanden om överföring av **Threat management** administratörer för & granskning \> **Review** \> **av**&.
+1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
 
-2. Klicka på fliken **Användare inlämningar** på sidan **Inlämningar** som visas.
+2. På sidan för **skickade inlägg** klickar du på fliken **användar överföringar** .
 
-Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner från vyn:
+Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
-- **Insänt den**
-- **Insänt av**<sup>\*</sup>
+- **Skickades**
+- **Skickades av**<sup>\*</sup>
 - **Ämne**<sup>\*</sup>
 - **Avsändare**
-- **IP-adress för avsändare**<sup>\*</sup>
-- **Typ av inlämning**
+- **Avsändarens IP**<sup>\*</sup>
+- **Sändnings typ**
 
-<sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i ett utfällbart alternativ.
+<sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
-Högst upp på sidan kan du ange ett startdatum, ett slutdatum och (som standard) som du kan filtrera efter **avsändare** genom att ange ett värde i rutan och klicka på Uppdatera.Up the top of the page, you can enter a start date, an end date, and (as default) you can filter by Sender by entering a value in the box and clicking ![ Refresh button ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
+Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **avsändare** genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
-Om du vill ändra filtervillkoren klickar du på knappen **Avsändare** och väljer något av följande värden:
+Om du vill ändra filter villkoren klickar du på knappen **avsändare** och väljer något av följande värden:
 
 - **Avsändningsdomän**
 - **Ämne**
-- **Insänt av**
-- **Typ av inlämning**
-- **IP-adress för avsändare**
+- **Skickades av**
+- **Sändnings typ**
+- **Avsändarens IP**
 
-![Filteralternativ för användarinlämningar](../../media/user-submissions-filter-options.png)
+![Filter alternativ för användar inlämning](../../media/user-submissions-filter-options.png)
 
-Om du vill exportera resultaten klickar du på **Exportera** högst upp på sidan och väljer **Diagramdata** eller **Tabell**. Spara CSV-filen i dialogrutan som visas.
+Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell**. Spara CSV-filen i dialog rutan som visas.
 
-## <a name="view-user-submissions-to-the-custom-mailbox"></a>Visa användaröverföringar till den anpassade postlådan
+## <a name="view-user-submissions-to-the-custom-mailbox"></a>Visa användar inlämningar till den anpassade post lådan
 
-Om du har [konfigurerat en anpassad postlåda](user-submission.md) för att ta emot användarrapporterade meddelanden kan du visa och även skicka meddelanden som levererades till rapportpostlådan.
+Om du har [konfigurerat en egen post låda](user-submission.md) för att få användardefinierade meddelanden kan du Visa och även skicka meddelanden som har levererats till rapporterings post lådan.
 
-1. Gå till meddelanden om överföring av **Threat management** administratörer för & granskning \> **Review** \> **av**&.
+1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
 
-2. Klicka på fliken **Anpassad postlåda** på sidan **Inlämningar** som visas.
+2. På sidan för **skickade inlägg** klickar du på fliken **anpassad post låda** .
 
-Du kan klicka på knappen **Kolumnalternativ** längst ned på sidan om du vill lägga till eller ta bort kolumner från vyn:
+Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
-- **Insänt den**
-- **Insänt av**<sup>\*</sup>
+- **Skickades**
+- **Skickades av**<sup>\*</sup>
 - **Ämne**<sup>\*</sup>
 - **Avsändare**
-- **IP-adress för avsändare**<sup>\*</sup>
-- **Typ av inlämning**
+- **Avsändarens IP**<sup>\*</sup>
+- **Sändnings typ**
 
-Högst upp på sidan kan du ange ett startdatum, ett slutdatum och du kan filtrera efter **Skickad** genom att ange ett värde i rutan och klicka på ![ Uppdatera-knappen ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
+Högst upp på sidan kan du ange ett start datum, ett slutdatum och du kan **Filtrera efter genom** att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
-Om du vill exportera resultaten klickar du på **Exportera** högst upp på sidan och väljer **Diagramdata** eller **Tabell**. Spara CSV-filen i dialogrutan som visas.
+Exportera resultatet genom att klicka på **Exportera** överst på sidan och välja **diagram data** eller **tabell**. Spara CSV-filen i dialog rutan som visas.
 
-### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Skicka meddelanden till Microsoft från den anpassade postlådan
+### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Skicka meddelanden till Microsoft från den anpassade post lådan
 
-Om du har konfigurerat den anpassade postlådan för att avlyssna användarrapporterade meddelanden utan att skicka meddelandena till Microsoft kan du söka efter och skicka specifika meddelanden till Microsoft för analys. Detta flyttar effektivt en användare inlämning till en administratör inlämning.
+Om du har konfigurerat den anpassade post lådan för att avlyssna användardefinierade meddelanden utan att skicka meddelanden till Microsoft kan du söka efter och skicka specifika meddelanden till Microsoft för analys. Detta flyttar en användares överföring till en administratör.
 
-Markera ett meddelande i listan på fliken **Anpassad postlåda,** klicka på **knappen Åtgärd** och gör något av följande val:
+På fliken **egen post låda** väljer du ett meddelande i listan, klickar på knappen **åtgärd** och gör något av följande:
 
-- **Rapporten är ren**
+- **Rapport klar**
 - **Rapportera nätfiske**
-- **Rapportera skadlig kod**
-- **Rapportera skräppost**
+- **Rapportera skadlig program vara**
+- **Rapportera skräp post**
 
-![Alternativ på knappen Åtgärd](../../media/user-submission-custom-mailbox-action-button.png)
+![Alternativ på Åtgärds knappen](../../media/user-submission-custom-mailbox-action-button.png)

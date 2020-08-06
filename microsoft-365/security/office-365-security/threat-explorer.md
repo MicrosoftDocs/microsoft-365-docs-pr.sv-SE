@@ -1,5 +1,5 @@
 ---
-title: Hot Explorer och realtidsidentifieringar
+title: Threat Explorer och real tids identifiering
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,270 +15,269 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om hur du använder Explorer och realtidsidentifieringar i Security &amp; Compliance Center för att undersöka och reagera på hot på ett effektivt och ändamålsenligt sätt.
+description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039542"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577552"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>Hot Explorer och realtidsidentifieringar
+# <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
-Om din organisation har [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) och du har de [behörigheter som krävs](#required-licenses-and-permissions)har du antingen **Explorer** eller **realtidsidentifieringar** (tidigare *realtidsrapporter* – [se vad som är nytt!).](#new-features-in-threat-explorer-and-real-time-detections) I Security & Compliance Center går du till **Hothantering**och väljer sedan **Explorer** _eller_ **Realtidsidentifieringar**.
+Om din organisation har [office 365 Avancerat skydd](office-365-atp.md) (Office 365 ATP) och du har de [nödvändiga behörigheterna](#required-licenses-and-permissions)har du antingen **Explorer** **-eller real tids identifiering** (tidigare *real tids rapporter* – [se vad som är nytt](#new-features-in-threat-explorer-and-real-time-detections)!). Gå till **Threat Management**i säkerhets & efterlevnad och välj sedan **Utforskaren** _eller_ **identifiering av real tid**.
 
-| Med ATP Plan 2 ser du: | Med ATP Plan 1 ser du: |
+|Med ATP-abonnemang 2 ser du:|Med ATP-abonnemang 1 ser du:|
 |---|---|
-|![Hot explorer](../../media/threatmgmt-explorer.png)|![Realtidsidentifiering](../../media/threatmgmt-realtimedetections.png)|
+|![Threat Explorer](../../media/threatmgmt-explorer.png)|![Realtidsidentifiering](../../media/threatmgmt-realtimedetections.png)|
 |
 
-Med Explorer (eller realtidsidentifieringar) har du en kraftfull rapport som gör det möjligt för säkerhetsoperationsteamet att undersöka och reagera på hot på ett effektivt och ändamålsenligt sätt. Rapporten liknar följande bild:
+Med Explorer (eller real tids identifieringar) har du en kraftfull rapport som gör det möjligt för säkerhets åtgärds gruppen att undersöka och reagera på hot effektivt och effektivt. Rapporten ser ut ungefär så här:
 
-![Gå till Explorer för hothantering \>](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Gå till Threat Management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Med den här rapporten kan du:
 
-- [Se skadlig kod som upptäckts av Microsoft 365-säkerhetsfunktioner](#see-malware-detected-in-email-by-technology)
-- [Visa data om nätfiskeadresser och klicka på dom](#view-data-about-phishing-urls-and-click-verdict)
-- [Starta en automatisk undersöknings- och svarsprocess från en vy i Explorer](#start-automated-investigation-and-response) (endast ATP-plan 2)
-- ... [Undersök skadlig e-post och mycket mer!](#more-ways-to-use-explorer-or-real-time-detections)
+- [Se malware identifieras av Microsoft 365-säkerhetsfunktioner](#see-malware-detected-in-email-by-technology)
+- [Visa data om nät fiske adresser och klicka på Verdict](#view-data-about-phishing-urls-and-click-verdict)
+- [Starta en automatiserad undersökning och svars process från en vy i Utforskaren](#start-automated-investigation-and-response) (endast ATP-abonnemang 2)
+- ... [Undersök skadlig e-post och mycket mer](#more-ways-to-use-explorer-or-real-time-detections).
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av hotutforskaren och realtidsidentifieringar
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Upplev förbättringar av Threat Explorer och identifiering i real tid
 
-Som en del av att förbättra jaktprocessen har vi gjort några uppdateringar av Threat Explorer och Real-Time Detections. Det är "erfarenhetsförbättringar" med fokus på att göra jaktupplevelsen mer konsekvent. Dessa ändringar beskrivs nedan: 
+Som en del av att förbättra jakt processen har vi gjort några uppdateringar för Threat Explorer och identifiering av real tid. Det här är en "Experience" förbättringar, med fokus på att göra jakt upplevelsen mer enhetlig. Dessa ändringar beskrivs nedan:
 
-- [Förbättringar av tidszonen](#timezone-improvements)
-- [Uppdatera i uppdateringsprocessen](#update-in-the-refresh-process)
-- [Diagramgranskning att lägga till i filter](#chart-drilldown-to-add-to-filters)
-- [I uppdateringar av produktinformation](#in-product-information-updates)
+- [Förbättringar av tidszon](#timezone-improvements)
+- [Uppdatera i uppdaterings processen](#update-in-the-refresh-process)
+- [Diagram specificering att lägga till i filter](#chart-drilldown-to-add-to-filters)
+- [Uppdateringar av produkt information](#in-product-information-updates)
 
-### <a name="timezone-improvements"></a>Förbättringar av tidszonen 
+### <a name="timezone-improvements"></a>Förbättringar av tidszon
 
-Vi visar tidszonen för e-postposterna i portalen, samt för exporterade data. Tidszonen kommer att vara synlig över upplevelser som E-post Grid, Detaljer Flyout, E-post tidslinje och liknande e-post, så att tidszonen för resultatuppsättningen är tydlig för användaren. 
+Vi kommer att Visa tids zonen för e-postmeddelandena i portalen samt för exporterade data. Tids zonen visas i upplevelser som e-postrutnät, information utfällbar, e-posttids linje och liknande e-postmeddelanden, så att tids zonen för resultat uppsättningen är klar för användaren.
 
-![Visa tidszon i Utforskaren](../media/TimezoneImprovements.png)
+![Visa tids zonen i Utforskaren](../../media/TimezoneImprovements.png)
 
-### <a name="update-in-the-refresh-process"></a>Uppdatera i uppdateringsprocessen 
+### <a name="update-in-the-refresh-process"></a>Uppdatera i uppdaterings processen
 
-Vi har hört feedback kring förväxling med automatisk uppdatering (t.ex. för datum, så fort du ändrar datum, skulle sidan uppdatera) och manuell uppdatering (för andra filter). På samma sätt leder borttagning av filter till automatisk uppdatering, vilket medför situationer där ändring av de olika filtren när du ändrar frågan kan orsaka inkonsekventa sökupplevelser. För att lösa detta går vi över till en manuell filtreringsmekanism.
-Från en upplevelse synvinkel kan användaren tillämpa och ta bort olika intervall av filter (från filteruppsättningen och datum), och tryck på uppdateringsknappen för att filtrera resultaten när de är klara med att definiera frågan. Uppdateringsknappen har också uppdaterats för att syna det tydligt på skärmen. Vi har också uppdaterat verktygstips och produktdokumentation kring denna förändring. 
+Vi har hört att få feedback kring förvirring med automatisk uppdatering (t. ex. för datum så fort du ändrar datumet kommer sidan att uppdateras) och manuell uppdatering (för andra filter). På samma sätt kan borttagning av filter leda till automatisk uppdatering, vilket gör att situationer där det går att ändra de olika filtren när du ändrar frågan är inkonsekventa Sök upplevelser. För att lösa det här flyttar vi till en manuell filtrerings funktion.
+Från en miljö synpunkt kan användaren tillämpa och ta bort det olika intervallet med filter (från filter uppsättning och datum) och klicka på knappen Uppdatera för att filtrera resultaten när de har definierats. Knappen Uppdatera har också uppdaterats så att den visas tydligt på skärmen. Vi har också uppdaterat beskrivningar och dokumentation i produkten kring den här ändringen.
 
-![Klicka på Uppdatera för att filtrera resultat](../media/ManualRefresh.png)
+![Klicka på Uppdatera för att filtrera resultat](../../media/ManualRefresh.png)
 
-### <a name="chart-drilldown-to-add-to-filters"></a>Diagramgranskning att lägga till i filter
+### <a name="chart-drilldown-to-add-to-filters"></a>Diagram specificering att lägga till i filter
 
-Du kommer nu att kunna klicka på diagramförklaringvärdena för att lägga till det värdet som ett filter. Observera att du fortfarande måste klicka på uppdateringsknappen för att filtrera resultaten som en del av ändringen som beskrivs ovan.
+Du kommer nu att kunna Klicka på diagrammets serie värden för att lägga till det värdet som ett filter. Observera att du fortfarande måste klicka på knappen Uppdatera för att filtrera resultaten som en del av ändringen som beskrivs ovan.
 
-![Detaljgranska genom diagram till filter](../media/ChartDrilldown.png)
+![Filtrera fram diagram](../../media/ChartDrilldown.png)
 
-### <a name="in-product-information-updates"></a>I uppdateringar av produktinformation 
+### <a name="in-product-information-updates"></a>Uppdateringar av produkt information
 
-Du bör också se ytterligare information i produkten. Till exempel det totala antalet sökresultat i rutnätet (se nedan), samt förbättringar kring etiketter, felmeddelanden och verktygstips, för att ge mer information om filter, sökupplevelse och resultatuppsättning. 
+Du bör också läsa mer om produkten. Det totala antalet Sök resultat inom rutnätet (se nedan), samt förbättringar kring etiketter, fel meddelanden och beskrivningar, för att ge mer information kring filter, Sök funktioner och resultat uppsättning.
 
-![Visa information om produkten](../media/ProductInfo.png)
+![Visa information om produkten](../../media/ProductInfo.png)
 
 
-## <a name="new-features-in-real-time-detections"></a>Nya funktioner i realtidsidentifieringar
+## <a name="new-features-in-real-time-detections"></a>Nya funktioner i real tids identifiering
 
-## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nya funktioner i Threat Explorer och realtidsidentifieringar
+## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nya funktioner i Threat Explorer och identifiering av real tid
 
-Tre nya funktioner läggs till i Threat Explorer och realtidsidentifieringar:
+Tre nya funktioner läggs till i Threat Explorer och real tids identifiering:
 
-- [Förhandsgranska e-postrubrik och hämta e-posttext](#preview-email-header-and-download-email-body)
-- [Tidslinje för e-post](#email-timeline)
-- [Exportera URL-klickdata](#export-url-click-data)
+- [Förhandsgranska e-posthuvud och hämta e-postmeddelande](#preview-email-header-and-download-email-body)
+- [E-posttids linje](#email-timeline)
+- [Exportera URL Klicka på data](#export-url-click-data)
 
 Dessa nya funktioner beskrivs nedan.
 
-### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-postrubrik och hämta e-posttext
+### <a name="preview-email-header-and-download-email-body"></a>Förhandsgranska e-posthuvud och hämta e-postmeddelande
 
-Möjligheten att förhandsgranska ett e-posthuvud och ladda ner e-postkroppen är nya funktioner som är tillgängliga i Threat Explorer. Administratörer kommer att kunna analysera nedladdade rubriker / e-postmeddelanden för hot. Eftersom nedladdning av e-postmeddelanden kan riskera exponering av information styrs den här processen av rollbaserad åtkomstkontroll (RBAC). En ny roll, *Preview,* måste läggas till i en annan rollgrupp (till exempel Säkerhetsåtgärder eller säkerhetsadministratör) för att ge möjlighet att hämta e-post och förhandsgranska rubriker i vyn alla e-postmeddelanden.
+Möjligheten att förhandsgranska ett e-posthuvud och hämta e-postmeddelandet är nya funktioner som är tillgängliga i Threat Explorer. Administratörer kan analysera hämtade meddelandehuvuden/e-postmeddelanden för hot. Eftersom hämtning av e-postmeddelanden kan påverka exponeringen av informationen styrs processen av en rollbaserad åtkomst kontroll (RBAC). En ny roll, för *hands version*, måste läggas till i en annan roll grupp (som säkerhets åtgärder eller säkerhets administratör) för att tillåta möjligheten att hämta e-post och förhandsgranska rubriker i alla e-postmeddelanden.
 
-Men Explorer (och realtidsidentifieringar) lägger också till nya nya fält som är utformade för att ge dig en mer komplett bild av var dina e-postmeddelanden landar. En del av målet med denna förändring är att göra jakten lättare för Security Ops människor, men nettoresultatet är att veta platsen för problem e-postmeddelanden på ett ögonblick.
+Men Explorer (och real tids identifieringar) lägger också till nya fält som är utformade för att ge dig en mer fullständig bild av var e-postmeddelandena hamnar. En del av syftet med ändringen är att göra det lättare för säkerhetsledandet att skydda dig, men netto resultatet är att du snabbt kan se var det finns problem med e-postmeddelanden.
 
-Hur går det till? Leveransstatus är nu uppdelad i två kolumner:
+Hur gör du det här? Leverans status är nu uppdelad i två kolumner:
 
-- **Leveransåtgärd** - Vad är status för det här e-postmeddelandet?
-- **Leveransplats** - Var dirigerades det här e-postmeddelandet som ett resultat?
+- **Leverans åtgärd** – vilken är statusen för det här meddelandet?
+- **Leverans plats** – var hette detta e-postmeddelande som ett resultat?
 
-Leveransåtgärd är de åtgärder som vidtas på ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de möjliga åtgärder ett e-postmeddelande kan vidta:
+Leverans åtgärden är den åtgärd som utförs via e-post på grund av befintliga principer eller identifieringar. Här är de möjliga åtgärder som ett e-postmeddelande kan ta:
 
-|Levereras  |Skräppost  |Blockerade  |Ersatt  |
-|---------|---------|---------|---------|
-|E-post levererades till inkorgen eller mappen för en användare och användaren kan komma åt den direkt.    | E-post skickades till antingen användarens skräppostmapp eller Borttagen mapp, och användaren har tillgång till e-postmeddelanden i dessa mappar.       | Alla e-postmeddelanden som är i karantän, som misslyckades eller togs bort. Detta är helt otillgängligt av användaren!     | Alla e-postmeddelanden där skadliga bilagor ersätts av .txt-filer som anger att den bifogade filen var skadlig.     |
-    
-
-| Levereras | Skräppost | Blockerade | Ersatt |
+|Levereras|Skräp post|Blockering|Byta|
 |---|---|---|---|
-|E-post levererades till användarens inkorg eller en annan mapp, och användaren kan komma åt den direkt.| E-post skickades till antingen användarens skräppostmapp eller Borttagen mapp, och användaren har åtkomst till e-postmeddelanden i dessa mappar.| Alla e-postmeddelanden som är i karantän, som misslyckades eller har tagits bort och som inte är tillgängliga för användaren.| Alla e-postmeddelanden där skadliga bilagor ersattes av .txt-filer som anger att bifogade filer var skadliga.|
+|E-postmeddelandet skickades till Inkorgen eller mappen för en användare och användaren kan komma åt den direkt.|E-postmeddelandet skickades till antingen en användares skräppost eller borttagna mapp och användaren har till gång till e-post i dessa mappar.|Alla e-postmeddelanden som har satts i karantän, som misslyckats eller tagits bort. Det här är fullständigt otillgängligt för användaren!|Alla e-postmeddelanden där skadliga bifogade filer ersätts med txt-filer som gör att den bifogade filen har skadligt.|
+
+|Levereras|Skräp post|Blockering|Byta|
+|---|---|---|---|
+|E-postmeddelandet skickades till användarens inkorg eller till en annan mapp, och användaren kan komma åt den direkt.|E-postmeddelandet skickades antingen till användarens skräppostmappen eller mappen borttagen, och användaren har till gång till e-postmeddelanden i dessa mappar.|Alla e-postmeddelanden som har satts i karantän, som misslyckats eller tagits bort och inte är tillgängliga för användaren.|Alla e-postmeddelanden där skadliga bifogade filer ersattes med txt-filer som anger att de bifogade filerna var skadliga.|
 |
 
-Och här är vad användaren kan se, och vad de inte kan:
+Så här ser användaren vad de kan se och vad de inte kan:
 
-| Tillgänglig för slutanvändare | Otillgängliga för slutanvändare |
+|Tillgänglig för slutanvändare|Ej tillgänglig för slutanvändare|
 |---|---|
-|Levereras|Blockerade|
-|Skräppost|Ersatt|
+|Levereras|Blockering|
+|Skräp post|Byta|
 
-Leveransplatsen visar resultatet av principer och identifieringar som körs efter leverans. Det är kopplat till en leveransåtgärd. Det här fältet har lagts till för att ge insikt i de åtgärder som vidtogs när ett problemmeddelande hittas. Här är möjliga värden för leveransplats:
+Leverans platsen visar resultaten av principer och upptäckter med efter-leverans. Den är länkad till en leverans åtgärd. Det här fältet lades till för att ge insyn i den åtgärd som utförs när ett problem har uppstått. Här är möjliga värden för leverans plats:
 
-- **Inkorg eller mapp**: E-postmeddelandet är i inkorgen eller en mapp (enligt dina e-postregler).
-- **On-prem eller extern**: Postlådan finns inte i molnet utan är lokal.
-- **Skräppostmapp:** E-postmeddelandet finns i skräppostmappen för en användare.
-- **Mappen Borttaget objekt**: E-postmeddelandet i mappen Borttaget för en användare.
-- **Karantän**: E-postmeddelandet i karantän och finns inte i en användares postlåda.
-- **Det gick inte**att skicka e-postmeddelandet till postlådan.
-- **Tappade:** E går vilse någonstans i e-postflödet.
+- **Inkorgen eller mapp**: e-postmeddelandet finns i Inkorgen eller i en mapp (enligt dina e-postregler).
+- **On-lokala eller external**: post lådan finns inte i molnet, men den är lokal.
+- **Skräppostmappen**: e-postmeddelandet finns i skräppostmappen för en användare.
+- **Mappen Borttaget**: e-post i mappen Borttaget för en användare.
+- **Karantän**: e-postmeddelandet i karantän och finns inte i en användares post låda.
+- **Misslyckades**: det gick inte att nå post lådan.
+- **Släppt**: e-postmeddelandet tappas bort någonstans i e-postflödet.
 
-### <a name="email-timeline"></a>Tidslinje för e-post
+### <a name="email-timeline"></a>E-posttids linje
 
-**E-posttidslinjen** är en annan ny Explorer-funktion som syftar till att göra jaktupplevelsen bättre för administratörer. Det skär ner på randomisering eftersom det finns mindre tid att kontrollera olika platser för att försöka förstå händelsen. När flera händelser inträffar vid eller i närheten av samma tid i ett e-postmeddelande visas dessa händelser i en tidslinjevy. Faktum är att vissa händelser som inträffar efter leverans till din e-post kommer att fångas i kolumnen "Särskild åtgärd". Genom att kombinera informationen från tidslinjen för det e-postmeddelandet med de särskilda åtgärder som vidtagits på posten efter leveransen kommer administratörerna att få insyn i hur deras policyer fungerar, var posten slutligen dirigerades och, i vissa fall, vad den slutliga bedömningen var.
+**E-Posttids linjen** är en ny Explorer-funktion som syftar till att förbättra jakt upplevelsen för administratörer. Den minskar med slumpmässigheten eftersom det är mindre tid att kontrol lera olika platser för att försöka förstå händelsen. När flera händelser inträffar till, eller nära till, samma tid i ett e-postmeddelande, visas händelserna i vyn tids linje. Vissa händelser som inträffar efter leverans till din e-post sparas i förhållande till "särskild åtgärd"-kolumnen. Om du kombinerar informationen från tids linjen för det e-postmeddelandet med den speciella åtgärden som utförs på post-leveransen får administratörer inblick i hur deras principer fungerar, där e-postmeddelandet slutligen skickades och, i vissa fall, vad den slutliga utvärderingen var.
 
-Mer diskussion om hur du undersöker skadliga e-postmeddelanden finns i [Undersöka och åtgärda skadlig e-post som levererades i Office 365](investigate-malicious-email-that-was-delivered.md).
+Mer information om hur du undersöker illasinnade e-postmeddelanden finns i [undersöka och åtgärda skadlig e-post som har levererats i Office 365](investigate-malicious-email-that-was-delivered.md).
 
-### <a name="export-url-click-data"></a>Exportera URL-klickdata
+### <a name="export-url-click-data"></a>Exportera URL Klicka på data
 
-Du kan nu också exportera rapporter för URL-klick till Microsoft Excel för att visa både deras nätverksmeddelande-ID och deras klickslutning, vilket gör uppgiften att förstå var url-klicktrafiken har sitt ursprung. Så här fungerar det. Klicka på den här kedjan med hjälp av hothantering i snabbstarten för Office 365:
+Du kan då nu exportera rapporter för URL-musklick till Microsoft Excel för att visa både deras nätverks meddelande-ID och deras Klicka på Verdict, så att du kan förstå var din URL-adress klicka på trafik har blivit enklare. Så här fungerar det. Starta med Threat Management i snabb start för Office 365 genom att klicka igenom den här kedjan:
 
-**Explorer** \> **Visa Phish** \> **Klick** \> **De vanligaste webbadresserna eller url-toppklick** \> **Klicka på valfri post för att öppna utfällbart webbadresser**
+**Utforskaren** \> **Visa Phish** \> **Klickar på** \> **De översta URL-adresserna eller webb adressen** \> **Klicka på en post för att öppna webb adressen**
 
-När du klickar på en webbadress i listan visas en ny exportknapp på utfällningspanelen. Använd den här knappen om du vill flytta data till ett Excel-kalkylblad för enklare rapportering.
+När du klickar på en URL-adress i listan visas en ny exportera-knapp på panelen utflygande. Använd den här knappen för att flytta data till ett Excel-kalkylblad för enklare rapportering.
 
-Du kan komma till samma plats i rapporten identifiering i realtid enligt följande:
+Du kan komma till samma plats i rapporten för rapporter i real tid så här:
 
-**Explorer** \> **Identifiering i** \> realtid **Visa Phish** \> **Webbadresser** \> **De vanligaste webbadresserna eller de vanligaste klicken** \> **Klicka på valfri post för att öppna utfällbart webbadresser** \> **Navigera till fliken Klick.**
+**Utforskaren** \> **Real tids identifiering** \> **Visa Phish** \> **URL: er** \> **Översta URL-adresser eller högst upp** \> **Klicka på en post för att öppna webb adressen** \> **Gå till fliken klickningar.**
 
 > [!TIP]
-> Nätverksmeddelande-ID mappar tillbaka till specifika e-postmeddelanden när du söker igenom Explorer eller tillhörande verktyg från tredje part via Nätverksmeddelande-ID. Genom att söka igenom nätverksmeddelande-ID:et får administratörerna det specifika e-postmeddelande som är kopplat till ett klickresultat. Vid export med, korrelera identifiering av Nätverksmeddelande-ID gör för snabbare och mer kraftfull analys.
+> Nätverks meddelande-ID mappar Klicka på tillbaka till specifika e-postmeddelanden när du söker via Utforskaren eller tillhör ande tredje parts verktyg via nätverks meddelande-ID. Om du söker igenom nätverks meddelande-ID: t får administratörer det specifika e-postmeddelandet som är associerat med ett Klicka Vid exporten blir samarbeten av ID för nätverks meddelande-ID för snabb och mer effektiv analys.
 
 ![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
-## <a name="see-malware-detected-in-email-by-technology"></a>Se skadlig kod som upptäckts i e-post av teknik
+## <a name="see-malware-detected-in-email-by-technology"></a>Se malware identifierat i e-post efter teknik
 
-Anta att du vill se skadlig kod som upptäcks i e-post, av Microsoft 365-teknik. Det gör du genom att använda vyn [E-post > malware](threat-explorer-views.md#email--malware) i Explorer (eller identifiering i realtid).
+Anta att du vill se hur skadlig kod identifieras i e-post, av Microsoft 365-teknologi. För att göra det här använder du [e-postmeddelandet med > skadlig program vara](threat-explorer-views.md#email--malware) för Explorer (eller real tids identifiering).
 
-1. I Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) väljer du Explorer för **hothantering**  >  **Explorer** (eller Identifiering **i realtid).** (I det här exemplet används Explorer.)
+1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **View** **E-postprogram**  >  **.**
+2. Välj **View** **e-**  >  **postmalware**på Visa-menyn.
 
-   ![Visa-menyn för Explorer](../../media/ExplorerViewEmailMalwareMenu.png)
+   ![Visa-menyn för Utforskaren](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Klicka på **Avsändare** **Basic**och välj sedan  >  **Grundläggande identifieringsteknik**.
+3. Klicka på **avsändare**och välj sedan **grundläggande**  >  **identifierings teknik**.
 
-   Identifieringstekniken är nu tillgänglig som filter för rapporten.
+   Din identifierings teknik är nu tillgänglig som filter för rapporten.
 
-   ![Tekniker för identifiering av skadlig kod](../../media/ExplorerEmailMalwareDetectionTech.png)
+   ![Tekniker för identifiering av skadlig program vara](../../media/ExplorerEmailMalwareDetectionTech.png)
 
-4. Välj ett alternativ och klicka sedan på knappen **Uppdatera** för att använda filtret.
+4. Välj ett alternativ och klicka sedan på knappen **Uppdatera** för att tillämpa filtret.
 
-   ![Utvald detektionsteknik](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   ![Vald identifierings teknik](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
-Rapporten uppdateras för att visa resultaten malware upptäckts i e-post, med hjälp av det teknikalternativ du valt. Härifrån kan du göra ytterligare analyser.
+Rapporten uppdateras för att visa resultatet skadlig program vara som identifieras i e-post, med det teknik alternativ du valt. Härifrån kan du göra ytterligare analyser.
 
-## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Visa data om nätfiskeadresser och klicka på dom
+## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Visa data om nät fiske adresser och klicka på Verdict
 
-Anta att du vill se nätfiskeförsök via webbadresser i e-post, inklusive en lista över webbadresser som var tillåtna, blockerade och åsidosatta. Identifiera webbadresser som klickades kräver [atp-säkra länkar](atp-safe-links.md) som ska konfigureras. Se till att du har ställt in [ATP Safe Links-principer](set-up-atp-safe-links-policies.md) för tidsbestna skydd och loggning av klickutlåtanden av ATP Safe Links.
+Anta att du vill se nät fiske försök via URL: er via e-post, inklusive en lista med URL-adresser som tilläts, blockerades och åsidosatts. Om du vill konfigurera URL-adresser som har klickats måste du ha ett [ATP Safe Links](atp-safe-links.md) . Kontrol lera att du har ställt in [principer för Safet ATP-länkar](set-up-atp-safe-links-policies.md) för att kunna Klicka på skydd och loggning av Klicka Verdicts via säkra Länkar för ATP.
 
-Om du vill granska phish-url:er i meddelanden och klick på webbadresser i phish-meddelanden använder du [e-> Phish-vyn](threat-explorer-views.md#email--phish) för Explorer (eller identifieringar i realtid).
+Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Phish meddelanden använder du [e-post> Phish](threat-explorer-views.md#email--phish) vyn av Utforskaren (eller real tids identifieringar).
 
-1. I Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) väljer du Explorer för **hothantering**  >  **Explorer** (eller Identifiering **i realtid).** (I det här exemplet används Explorer.)
+1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **E-post phish**på **Visa-menyn.**  >  **Phish**
+2. Välj **e-** Phish på **Visa** -menyn  >  **Phish**.
 
-   ![Visa-menyn för Explorer](../../media/ExplorerViewEmailPhishMenu.png)
+   ![Visa-menyn för Utforskaren](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicka på **Avsändare**och välj sedan **webbadresser**  >  **Klicka på domslut**.
+3. Klicka på **avsändare**och välj **URL-adresser**  >  **på Verdict**.
 
-4. Markera ett eller flera alternativ, till exempel **Blockerat** och **Blockera åsidosättt,** och klicka sedan på knappen **Uppdatera** som finns på samma rad som alternativen för att använda filtret. (Uppdatera inte webbläsarfönstret.)
+4. Välj ett eller flera alternativ, till exempel **blockerat** och **blockera**, och klicka sedan på knappen **Uppdatera** på samma rad som de alternativ som används för att tillämpa filtret. (Uppdatera inte webbläsarfönstret.)
 
-   ![Webbadresser och klicka på domar](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   ![URL: er och klicka på verdicts](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-    Rapporten uppdateras så att två olika URL-tabeller visas på fliken URL under rapporten:
+    Rapporten uppdateras och visar två olika URL-tabeller på fliken URL under rapporten:
 
-   - **De vanligaste webbadresserna** är webbadresserna i de meddelanden som du har filtrerat ned till, och åtgärden för e-postleverans räknas för varje webbadress. I phish e-postvyn innehåller den här listan vanligtvis legitima webbadresser. Angripare inkluderar en blandning av bra och dåliga webbadresser i sina meddelanden för att försöka få dem levererade, men de kommer att göra de skadliga länkarna mer intressanta för användaren att klicka. Tabellen med webbadresser sorteras efter totalt antal e-postmeddelanden (men observera att den här kolumnen är dold för att förenkla vyn).
+   - De **vanligaste URL** -adresserna är de URL-adresser som visas i de meddelanden som du har filtrerat ned till och hur många e-postleveranser som är tillgängliga I Phish e-postvy innehåller listan normalt legitima URL: er. Attackerare inkluderar en blandning av bra och dåliga URL-adresser i sina meddelanden för att försöka komma åt dem, men de tar bort de skadliga länkarna mer intressant för användaren att klicka på. Tabellen med URL-adresser sorteras efter totalt antal e-postmeddelanden (men Observera att den här kolumnen är dold för att förenkla vyn).
 
-   - **De vanligaste klicken** är de infogade url:erna för säkra länkar som klickades, sorterade efter totalt antal klick (den här kolumnen visas inte heller för att förenkla vyn). Totalt antal per kolumn anger antalet säkra länkar klickar på domslut för varje klickad webbadress. I phish e-postvyn är dessa oftare misstänkta eller skadliga webbadresser, men kan innehålla webbadresser som inte är hot men som finns i phish-meddelanden. URL-klick på oförpackade länkar visas inte här.
+   - De **bästa klickningarna** är de inkapslade länkarna som du har klickat på, sorterat efter totalt antal klickningar (den här kolumnen visas inte för att förenkla vyn). Kolumnen totalt antal gånger visar de säkra länkarna Klicka på Verdict antal för varje klickning-URL. I Phish e-postvy är de oftare misstänkta eller illasinnade webb adresser, men kan innehålla URL-adresser som inte är Hot men som är i Phish meddelanden. URL-klickningar på ej figursatta länkar visas inte här.
 
-   De två URL-tabellerna visar de vanligaste webbadresserna i nätfiskemeddelanden via leveransåtgärd och plats, och de visar URL-klick som blockerades (eller besöktes trots en varning) så att du kan förstå vilka potentiella dåliga länkar som togs emot av användare och interagerat med av användare. Härifrån kan du göra ytterligare analyser. Under diagrammet kan du till exempel se de vanligaste webbadresserna i e-postmeddelanden som har blockerats i organisationens miljö.
+   I de två URL-tabellerna visas de högsta URL-adresserna i phishing-e-postmeddelanden efter leverans åtgärd och plats, och de visar URL-klickningar som har blockerats (eller som besökts trots en varning) så att du kan förstå vilka potentiella felaktiga länkar som användare har fått och interagerat med av användare. Härifrån kan du göra ytterligare analyser. Under diagrammet kan du till exempel se de högsta URL-adresserna i e-postmeddelanden som har blockerats i organisationens miljö.
 
-   ![Explorer-url:er som har blockerats](../../media/ExplorerPhishClickVerdictURLs.png)
+   ![Explorer-URL: er som blockerats](../../media/ExplorerPhishClickVerdictURLs.png)
 
-   Välj en URL om du vill visa mer detaljerad information.
-   
+   Välj en URL för att visa mer detaljerad information.
+
    > [!NOTE]
-   > I dialogrutan Utfällbara webbadresser tas filtrningen på e-postmeddelanden bort för att visa dig en fullständig vy över webbadressens exponering i din miljö. På så sätt kan du filtrera bort e-postmeddelanden i Explorer till de som du är orolig för, hitta specifika webbadresser som är potentiella hot och sedan utöka din förståelse av URL-exponeringen i din miljö (via dialogrutan URL-information) utan att behöva lägga till URL-filter i Själva Utforskarvyn.
+   > I dialog rutan URL-utfällbar text tas filtreringen av e-postmeddelanden bort så att du får fullständig vy över URL-vyns exponering i miljön. Med den här funktionen kan du filtrera ned e-postmeddelanden i Utforskaren till dem du är orolig för, hitta specifika URL-adresser som är potentiella hot och sedan utöka din förståelse av URL-exponeringen i din miljö (via dialog rutan URL-information) utan att behöva lägga till URL-filter i själva Utforskarvyn.
 
-## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporterats av användare
+## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporter ATS av användare
 
-Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md)som användare i organisationen har rapporterat som Skräppost, inte skräppost eller Nätfiske med hjälp av tillägget Rapportera meddelande för Outlook och Outlook på webben . Det gör du genom att använda vyn [E-> Inlämningar](threat-explorer-views.md#email--submissions) av Explorer (eller identifiering i realtid).
+Anta att du vill se e-postmeddelanden som användare i organisationen har rapporterat som skräp post, inte skräp post eller nätfiske med hjälp av [rapport tillägget för Outlook och Outlook på webben](enable-the-report-message-add-in.md). För att göra detta kan du använda [e-post>-](threat-explorer-views.md#email--submissions) vyn i Utforskaren (eller real tids identifieringar).
 
-1. I Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) väljer du Explorer för **hothantering**  >  **Explorer** (eller Identifiering **i realtid).** (I det här exemplet används Explorer.)
+1. [https://protection.office.com](https://protection.office.com)Välj **Threat Management**  >  **Explorer** (eller **real tids identifiering**) i gruppen säkerhets & efterlevnad. (Det här exemplet använder Utforskaren.)
 
-2. Välj **E-postinlämningar**på **Visa-menyn**  >  **Submissions**.
+2. Välj **View** **e-**  >  **postinlägg**i menyn Visa.
 
-   ![Visa-menyn för Explorer](../../media/explorer-view-menu-email-user-reported.png)
+   ![Visa-menyn för Utforskaren](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Klicka på **Avsändare**och välj sedan **Grundläggande**  >  **rapporttyp**.
+3. Klicka på **avsändare**och välj sedan **enkel**  >  **typ av rapport**.
 
-4. Välj ett alternativ, till exempel **Phish,** och klicka sedan på knappen **Uppdatera.**
+4. Välj ett alternativ, till exempel **Phish**, och klicka sedan på knappen **Uppdatera** .
 
-   ![Användarrapporterad phish](../../media/EmailUserReportedReportType.png)
+   ![Användardefinierad Phish](../../media/EmailUserReportedReportType.png)
 
-Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som ett nätfiskeförsök. Du kan använda den här informationen för att göra ytterligare analyser och vid behov justera dina [ATP-principer för nätfiske](configure-atp-anti-phishing-policies.md).
+Rapporten uppdateras och visar information om e-postmeddelanden som personer i organisationen har rapporterat som ett nät fiske försök. Du kan använda den här informationen för att utföra ytterligare analyser och, om det behövs, justera dina [ATP-skydds principer](configure-atp-anti-phishing-policies.md).
 
-## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och respons
+## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och svar
 
 > [!NOTE]
-> Automatiserade funktioner för undersökningar och svar finns i **Office 365 ATP Plan 2** och **Office 365 E5**.
+> Automatiserade undersökningar och svars funktioner finns i **Office 365 ATP-abonnemang 2** och **Office 365 E5**.
 
-(NY!) [Automatiserad undersökning och svar](automated-investigation-response-office.md) kan spara din säkerhetsoperation team mycket tid och ansträngning för att undersöka och mildra cyberattacker. Förutom att konfigurera aviseringar som kan utlösa en säkerhetsuppspelningsbok kan du starta en automatisk undersöknings- och svarsprocess från en vy i Explorer.
+(Ny!) Den [automatiska undersökningen och svaret](automated-investigation-response-office.md) kan spara säkerhets arbets gruppen i stort sett tid och ansträngning för att undersöka och begränsa cyberattacks. Förutom att konfigurera aviseringar som kan utlösa en säkerhets Playbook kan du starta en automatiserad undersökning och svars process från en vy i Utforskaren.
 
-Mer information om detta finns i [Exempel: En säkerhetsadministratör utlöser en undersökning från Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+För mer information, se [exempel: en säkerhets administratör utlöser en undersökning från Utforskaren](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
-## <a name="more-ways-to-use-explorer-or-real-time-detections"></a>Fler sätt att använda Explorer (eller identifieringar i realtid)
+## <a name="more-ways-to-use-explorer-or-real-time-detections"></a>Fler sätt att använda Explorer (eller real tids identifiering)
 
-Förutom de scenarier som beskrivs i den här artikeln har du många fler rapporteringsalternativ tillgängliga med Explorer (eller realtidsidentifieringar).
+Utöver de scenarier som beskrivs i den här artikeln finns det många fler rapporterings alternativ som är tillgängliga med Explorer (eller real tids identifieringar).
 
-- [Hitta och undersöka skadlig e-post som levererades](investigate-malicious-email-that-was-delivered.md)
-- [Visa skadliga filer som upptäckts i SharePoint Online, OneDrive och Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
-- [Få en översikt över vyerna i Threat Explorer (och identifiering i realtid)](threat-explorer-views.md)
-- [Automatiserad undersökning och svar i Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Hitta och undersöka skadlig e-post som har levererats](investigate-malicious-email-that-was-delivered.md)
+- [Visa skadliga filer som identifieras i SharePoint Online, OneDrive och Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+- [Få en översikt över vyerna i Threat Explorer (och identifieringar i real tid)](threat-explorer-views.md)
+- [Automatisk undersökning och svar i skydd mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>Nödvändiga licenser och behörigheter
 
-Du måste ha [Office 365 ATP](office-365-atp.md) för att kunna identifieringen av Utforskaren eller realtid.
+Du måste ha [Office 365 ATP](office-365-atp.md) för att få Explorer eller real tids identifiering.
 
 - Explorer ingår i Office 365 ATP-abonnemang 2.
-- Identifieringsrapporten för realtid ingår i Office 365 ATP-abonnemang 1.
-- Planera att tilldela licenser för alla användare som ska skyddas av Office 365 ATP. (Explorer- eller realtidsidentifieringar visar identifieringsdata för licensierade användare.)
+- Rapporten om real tids identifiering ingår i Office 365 ATP-abonnemang 1.
+- Planera för att tilldela licenser för alla användare som ska skyddas av Office 365 ATP. (Explorer eller real tids identifiering visar identifierings data för licensierade användare.)
 
-Om du vill visa och använda Explorer eller realtidsidentifieringar måste du ha lämpliga behörigheter, till exempel de som beviljas en säkerhetsadministratör eller säkerhetsläsare.
+Om du vill visa och använda Explorer-eller real tids identifiering måste du ha lämplig behörighet, till exempel en säkerhets administratör eller en säkerhets läsare.
 
-- För &amp; Säkerhetsefterlevnadscenter måste du ha en av följande roller tilldelad:
-
-  - Organisationshantering
-  - Säkerhetsadministratör (detta kan tilldelas i Administrationscentret för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Säkerhetsläsare
-
-- För Exchange Online måste du ha någon av följande roller tilldelad i administrationscentret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (se [Exchange Online PowerShell):](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- För säkerhetsrelaterade &amp; Center måste du ha någon av följande roller tilldelade:
 
   - Organisationshantering
-  - Organisationshantering endast med enbart vy
-  - Rollen Endast visa mottagare
+  - Säkerhets administratör (detta kan tilldelas i Azure Active Directory Admin Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Säkerhets läsare
+
+- För Exchange Online måste du ha någon av följande roller tilldelade i antingen administrations centret för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) eller med PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+
+  - Organisationshantering
+  - Organisations hantering för endast visning
+  - Rollen skrivskyddade mottagare
   - Hantering av efterlevnad
 
 Mer information om roller och behörigheter finns i följande resurser:
 
-- [Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md)
-- [Funktionsbehörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+- [Behörigheter i säkerhetsrelaterade &amp; Center](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter för funktioner i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
-## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Vissa skillnader mellan Threat Explorer och realtidsidentifieringar
+## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Skillnader mellan Threat Explorer och identifiering av real tid
 
-- Identifieringsrapporten **för realtid** är tillgänglig i Office 365 ATP Plan 1, medan **Threat Explorer** är tillgängligt i Office 365 ATP-abonnemang 2.
-- I rapporten **identifiering i realtid** kan du visa identifieringar i realtid. **Threat Explorer** gör detta också, men låter dig också visa ytterligare information för en viss attack.
-- En **e-postvy** är tillgänglig i **Threat Explorer** (och finns inte i rapporten identifiering i **realtid).**
-- Fler filtreringsfunktioner och tillgängliga åtgärder ingår i **Threat Explorer**.
+- Rapporten om **identifiering av real tid** är tillgänglig i Office 365 ATP-abonnemang 1, medan **hot Explorer** är tillgängligt i Office 365 ATP-abonnemang 2.
+- Med rapporten **real tids identifiering** kan du Visa identifieringar i real tid. **Threat Explorer** fungerar också, men du kan även visa ytterligare information om en viss attack.
+- En **all e-** postvy är tillgänglig i **Threat Explorer** (och är inte med i rapporten om **identifiering i real tid** ).
+- Fler filter funktioner och tillgängliga åtgärder ingår i **Threat Explorer**.
 
-Mer information finns i [Office 365 ATP Service Description: Funktionstillgänglighet i atp-abonnemang (Advanced Threat Protection).](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+Mer information finns i avsnittet [Office 365 ATP Service Description: funktions tillgänglighet för abonnemang för avancerat hot Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 

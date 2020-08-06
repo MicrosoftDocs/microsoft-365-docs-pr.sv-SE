@@ -1,5 +1,5 @@
 ---
-title: Rapport om misslyckad leverans
+title: Rapport om utebliven leverans i instrument panelen för e-postflöde
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,52 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om rapporten om utebliven leverans i instrumentpanelen för e-postflödet i Security & Compliance Center.
-ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan lära dig hur du använder rapporten för information om ej leverans i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka de vanligaste fel koderna i rapporter som inte kunde levereras (kallas även NDR eller studs meddelanden) från avsändare i din organisation.
+ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819515"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577438"
 ---
-# <a name="non-delivery-report"></a>Rapport om misslyckad leverans
+# <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport om utebliven leverans i säkerhets & efterlevnad
 
-**Rapporten Icke-leverans** visar de felkoder som påträffats mest i rapporter som inte har levererats (kallas även NDR-meddelanden eller avvisningsmeddelanden) för användare i organisationen. Den här rapporten är avsedd att visa information om NDRs, så att du kan felsöka problem.
+I **rapporten om utebliven leverans** i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center visas de mest upptäckta fel koderna i rapporter för inte leverans (kallas även för NDR eller studs meddelanden) för användare i organisationen. Den här rapporten visar information om NDR så att du kan felsöka problem med e-postleverans.
 
-![Rapporten Utebliven leverans i instrumentpanelen för e-postflödet i Security & Compliance Center](../../media/non-delivery-report-selected.png)
+![Widget för rapport om utebliven leverans i instrument panelen för e-postflöde i säkerhets & efterlevnad](../../media/mfi-non-delivery-report-widget.png)
 
-Du kan visa information för alla NDR-koder eller en viss kod genom att klicka på **Visa data för**. Du kan också klicka på **Visa informationstabell** om du vill se en mer detaljerad vy som visas i följande diagram:
+## <a name="report-view-for-the-non-delivery-report"></a>Rapportvy för rapport om utebliven leverans
 
-![Visa informationstabell i rapporten Ej leverans](../../media/non-delivery-report-view-details-table.png)
+Om du klickar på widgeten för **ej leverans rapporter** tas du till **rapporten för ej leverans**.
 
-När du väljer en rad i tabellen för att visa information om den specifika NDR kan du använda den detaljerade informationen för att felsöka och vidta nödvändiga åtgärder.
+Aktiviteten för alla felkoder visas som standard. Om du klickar på **Visa data för**kan du välja en specifik felkod i list rutan.
 
-![Markera en rad i informationstabellen i rapporten Ej leverans](../../media/non-delivery-report-details-table-select-row.png)
+Om du hovrar över en viss färg (felkod) på en viss dag i diagrammet visas det totala antalet meddelanden för felet.
+
+![Rapportvy i rapporten icke godkänd domän](../../media/mfi-non-delivery-report-overview-view.png)
+
+## <a name="details-table-view-for-the-non-delivery-report"></a>Vyn detaljerad lista för rapport om utebliven leverans
+
+Om du klickar på **Visa informations tabell** i en rapportvy visas följande information:
+
+- **Datum**
+- **Rapport kod för ej leverans**
+- **Öka**
+- **Exempel meddelanden**: meddelande-ID för ett urval av påverkade meddelanden.
+
+Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
+
+Om du vill skicka rapporten för ett visst datum intervall till en eller flera mottagare klickar du på **Hämta**.
+
+När du markerar en rad i tabellen visas en utfällbar tabell med följande information:
+
+- **Datum**
+- **Rapport kod för ej leverans**: du kan klicka på länken för att hitta mer information om orsakerna och lösningarna för den specifika felkoden.
+- **Öka**
+- **Exempel meddelanden**: du kan klicka på **Visa exempel meddelanden** om du vill visa [meddelande spårnings](message-trace-scc.md) resultaten för ett prov av de påverkade meddelandena.
+
+![Utfällda detaljer när du har markerat en rad i Tabellvy i rapporten för ej leverans](../../media/mfi-non-delivery-report-details-flyout.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-Mer information om andra insikter om e-postflöde i instrumentpanelen för e-postflödet finns [i Insikterna för e-postflöde i Security & Compliance Center](mail-flow-insights-v2.md).
+Information om andra insikter i instrument panelen för e-postflöden finns i avsnittet om [hur du använder e-postflöde i säkerhets & Compliance Center](mail-flow-insights-v2.md).

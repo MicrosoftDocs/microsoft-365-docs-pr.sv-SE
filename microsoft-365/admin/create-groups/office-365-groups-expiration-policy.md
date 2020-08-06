@@ -1,10 +1,10 @@
 ---
-title: Principer för förfallodatum för grupper
+title: Förfallo princip för grupper
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,74 +18,82 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs mer om principer för förfallodatum för Microsoft 365-grupper.
-ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+description: Lär dig mer om principer för förfallo datum för Microsoft 365 Groups.
+ms.openlocfilehash: bda4bfbbef4e0d145c55b2a49b4d1203c6a7b1f0
+ms.sourcegitcommit: 4f82fa7270e7ec6c6dd80329f28612e1f3289b22
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560369"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572145"
 ---
-# <a name="microsoft-365-group-expiration-policy"></a>Principer för förfallodatum för Microsoft 365-grupp
+# <a name="microsoft-365-group-expiration-policy"></a>Utgångs princip för Microsoft 365-gruppen
 
-Med den ökade användningen av Microsoft 365-grupper behöver administratörer och användare ett sätt att rensa oanvända grupper. Principer för förfallodatum kan hjälpa till att ta bort inaktiva grupper från systemet och göra saker renare.
+Med ökad användning av Microsoft 365-grupper behöver administratörer och användare ett sätt att rensa oanvända grupper. Principer för förfallo datum kan hjälpa till att ta bort inaktiva grupper från systemet och göra saker renare.
 
-När en grupp upphör att gälla tas även alla tillhörande tjänster (postlådan, Planner, SharePoint-webbplatsen, teamet osv.) bort.
+När en grupp går ut tas alla tillhör ande tjänster (post lådan, Planner, SharePoint-webbplatsen, teamet etc.) också bort.
 
-När en grupp upphör att gälla är den "mjuk borttagen" vilket innebär att den fortfarande kan återställas i upp till 30 dagar.
+När en grupp upphör är "mjuk borttagen", vilket innebär att den fortfarande kan återställas i upp till 30 dagar.
 
-Administratörer kan ange en förfalloperiod och alla inaktiva grupper som når slutet av den perioden och som inte förnyas tas bort. Förfallotiden börjar när gruppen skapas eller på det datum då den senast förnyades. Gruppägare skickas automatiskt ett e-postmeddelande före förfallodatumet som gör att de kan förnya gruppen för ett annat utgångsdatum. Teams-användare ser beständiga aviseringar i Teams.
+Administratörer kan ange en förfallo period och alla inaktiva grupper som når slutet av perioden och som inte förnyas, tas bort. Utgångs perioden börjar när gruppen skapas, eller vid det datum då den senast förnyades. Grupp ägare kommer automatiskt att skicka ett e-postmeddelande innan utgångs datumet gör det möjligt för dem att förnya gruppen för ett annat utgångs intervall. Teams användarna kan se beständiga meddelanden i Teams.
 
-Grupper som används aktivt förnyas automatiskt. Någon av följande åtgärder förnyar automatiskt en grupp:
-- SharePoint - visa, redigera, ladda ned, flytta, dela eller ladda upp filer.
-- Outlook – gå med i grupp-, läs- eller skrivgruppsmeddelande från gruppen och som ett meddelande (Outlook på webben).
-- Lag - besöker en lagkanal.
+Grupper som aktivt används förnyas automatiskt. En av följande åtgärder kommer automatiskt att förnya en grupp:
+- SharePoint – Visa, redigera, ladda ned, flytta, dela eller ladda upp filer.
+- Outlook – gå med i gruppen, läsa eller skriva grupp meddelande från gruppen och gilla ett meddelande (Outlook på webben).
+- Teams som besöker en Teams-kanal.
 
 > [!IMPORTANT]
-> När du ändrar förfalloprincipen beräknas tjänsten om förfallodatumet för varje grupp. Den börjar alltid räkna från det datum då gruppen skapades och tillämpar sedan den nya förfalloprincipen.
+> När du ändrar förfallo dagen beräknas utgångs datumet för varje grupp. Det börjar alltid räkna från det datum då gruppen skapades och sedan tillämpas den nya princip policyn.
 
-Det är viktigt att veta att förfallodatum är inaktiverat som standard. Administratörer måste aktivera den för sin organisation om de vill använda den.
+Det är viktigt att veta att förfallo dagen är inaktive rad som standard. Administratörer måste aktivera den för organisationen om de vill använda den.
 
 > [!NOTE]
-> Konfigurera och använda principen för förfallodatum för Microsoft 365-grupper kräver att du har men inte nödvändigtvis tilldela Azure AD Premium-licenser för medlemmarna i alla grupper som principen för förfallodatum tillämpas på. Mer information finns under [ Komma igång med Azure Active Directory Premium ](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> Om du konfigurerar och använder policyn för utgångs datum för Microsoft 365-grupper måste du ha men inte nödvändigt vis tilldela Azure AD Premium-licenser för medlemmar i alla grupper som princip för förfallo tid tillämpas. Mer information finns under [ Komma igång med Azure Active Directory Premium ](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Vem kan konfigurera och använda förfalloprincipen för Microsoft 365-grupper?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Vem kan konfigurera och använda Microsofts 365-grupper giltighets princip?
 
 |Roll|Vad de kan göra|
 |---------|---------|
-|Global administratör (i Azure, företagsadministratören), användaradministratör|Skapa, läsa, uppdatera eller ta bort principinställningarna för förfallodatum för Microsoft 365-grupper.|
+|Global administratör (i Azure, företags administratören), användar administratör|Skapa, läsa, uppdatera och ta bort princip inställningar för förfallo principer för Microsoft 365 Groups.|
 |Användare|Förnya eller [återställa](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) en Microsoft 365-grupp som de äger|
 
-## <a name="how-to-set-the-expiration-policy"></a>Så här ställer du in principen om förfallodatum
+## <a name="how-to-set-the-expiration-policy"></a>Ange förfallo princip
 
-Som nämnts ovan är förfallodatumet inaktiverat som standard. En administratör måste aktivera förfalloprincipen och ange att egenskaperna för den ska börja gälla. Om du vill aktivera den går du till **Azure Active Directory (AAD)**  >  **Grupper**  >  **förfallodatum**. Här kan du ange standardgruppens livstid och ange hur långt i förväg du vill att den första och andra förfallodatum meddelanden att gå till gruppens ägare.
+Som vi noterade ovan är förfallo datumet inaktiverat som standard. En administratör måste aktivera policyn för förfallo datum och ställa in egenskaperna för att den ska gälla. Så här aktiverar du funktionen gå till gruppen **Azure Active Directory (AAD)**  >  **Groups**  >  **Expiration**. Här kan du ange standard livstid för gruppen och ange hur långt i förväg du vill att aviseringarna för första och sista giltighets tiden ska gå till gruppens ägare.
 
-Gruppens livstid anges i dagar och kan ställas in på 180, 365 eller till ett anpassat värde som du anger. Det anpassade värdet måste vara minst 30 dagar.
+Gruppens livs längd anges i dagar och kan anges till 180, 365 eller till ett anpassat värde som du anger. Värdet måste vara minst 30 dagar.
 
-Om gruppen inte har någon ägare går e-postmeddelandena för utgångsdatum till en angiven administratör.
+Om gruppen inte har någon ägare skickas e-postmeddelandet till angiven administratör.
 
-Du kan ange principen för alla dina grupper, bara valda grupper eller stänga av den helt genom att välja **Ingen**. Observera att du för närvarande inte kan ha olika principer för olika grupper.
+Du kan ställa in policyn för alla dina grupper, endast valda grupper eller stänga av den helt och hållet genom att välja **ingen**. Observera att du inte kan använda olika principer för olika grupper.
 
-![Skärmbild av inställningar för gruppförfallodatum i Azure Active Directory](../../media/azure-groups-expiration-settings.png)
+![Skärm bild av inställningar för förfallo tid för grupper i Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
-## <a name="how-expiry-works-with-the-retention-policy"></a>Så här fungerar förfallodatum med bevarandeprincipen
+## <a name="how-expiration-and-renewal-work"></a>Så här fungerar förfallo datum och förnyelse
 
-Om du har inställningsbevarandeprincip i Säkerhets- och efterlevnadscenter för grupper fungerar principen för förfallodatum sömlöst med bevarandeprincipen. När en grupp upphör att gälla behålls gruppens konversationer i e-postlådan och filer på gruppwebbplatsen i behållarbehållaren för det specifika antal dagar som definierats i bevarandeprincipen. Användarna kommer dock inte att se gruppen eller dess innehåll efter utgångsdatum.
+Princip för förfallo tid fungerar så här: 
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Hur och när en gruppägare får reda på om deras grupper kommer att löpa ut
+- Om en månad före utgångs datum kontrollerar systemet om det finns någon grupp aktivitet sedan gruppen skapades eller sedan början av den aktuella förnyelse cykeln.
 
-Gruppägare meddelas endast via e-post. Om gruppen skapades via Planner, SharePoint eller någon annan app kommer meddelanden om förfallodatum alltid via e-post. Om gruppen skapades via Teams får gruppägaren ett meddelande om att förnya genom aktivitetsavsnittet. Vi rekommenderar inte att du aktiverar förfallodatum för en grupp om gruppägaren inte har en giltig e-postadress.
+- Om en tidigare aktivitet identifieras är utgångs datumet Avancerat vid den tidpunkten med det antal dagar som anges i policyn för förfallo dag.
 
-30 dagar innan gruppen går ut får gruppägarna (eller de e-postadresser som du har angett för grupper som inte har en ägare) ett e-postmeddelande som gör att de enkelt kan förnya gruppen. Om de inte förnyar det får de ett nytt förnyelsemeddelande 15 dagar före utgångsdatumet. Om de fortfarande inte har förnyat det får de ytterligare ett e-postmeddelande dagen före förfallodatumet.
+- Om en föregående aktivitet inte hittas fortsätter systemet att titta efter aktivitet fram till utgångs datumet. Om aktiviteten hittas förfaller systemet fram utgångs datumet med angivet belopp vid den tidpunkten.
 
-Om ingen av ägarna eller administratörerna av någon anledning förnyar gruppen innan den upphör att gälla och automatisk förnyelse inte sker på grund av att gruppen inte uppfyller kraven som ska förnyas automatiskt, kan administratören fortfarande återställa gruppen i upp till 30 dagar efter utgångsdatumet. Mer information finns i: [Återställ en borttagen Microsoft 365-grupp](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+30 dagar innan gruppen går ut får grupp ägarna (eller de e-postadresser som du har angett för grupper som inte har en ägare) ett e-postmeddelande som gör det enkelt att förnya gruppen. Om de inte förnyar det får de en ny förnyelse via e-post 15 dagar före utgångs datum. Om de fortfarande inte har förnyat det får de ett mer e-postmeddelande dagen innan den upphör att gälla. (När gruppen har förnyats skickas inga fler e-postpåminnelser förrän 30 dagar före det nya utgångs datumet.)
+
+Grupp ägare meddelas via e-post. Om gruppen skapades via Planner, SharePoint eller något annat program kommer giltighets meddelandena alltid att skickas via e-post. Om gruppen skapades via Teams får grupp ägaren ett meddelande om att förnya via avsnittet aktivitet. Du rekommenderas inte att aktivera utgångs datum för en grupp om gruppens ägare inte har en giltig e-postadress.
+
+Om du av någon anledning inte förnyar gruppen innan den upphör att gälla, och automatisk förnyelse inte sker på grund av att den grupp som inte uppfyller kraven automatiskt förnyas, kan administratören återställa gruppen i upp till 30 dagar efter förfallo dagen. Mer information finns i: [återställa en borttagen Microsoft 365-grupp](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+
+## <a name="how-expiry-works-with-retention-policies"></a>Hur upphör ande fungerar med bevarande principer
+
+Om du har en princip för konfigurations lagring i säkerhets-och kompatibilitetstillstånd för grupper fungerar utgångs principen sömlöst med bevarande princip. När en grupp går ut bevaras gruppens konversationer i e-postlådan och filer i grupp webbplatsen bevaras i behållnings behållaren för det angivna antalet dagar som definierats i bevarande principen. Användarna kan inte se gruppen eller dess innehåll efter att det har gått ut.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Översikt över bevarandeprinciper](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+[Översikt över bevarande principer](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 [Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Konfigurera Microsoft 365-gruppers förfallodatum](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Konfigurera att Microsoft 365-grupper upphör](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
 
-[Aktivitetsbaserad automatisk förnyelse](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
+[Aktivitet baserad automatisk förnyelse](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
