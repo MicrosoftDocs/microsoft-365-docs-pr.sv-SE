@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Ta bort en inaktiv postlåda
           href: delete-an-inactive-mailbox.md
-    - name: Övervaka datastyrning
-      items:
-        - name: Visa etikettaktivitet för dokument
-          href: view-label-activity-for-documents.md
-        - name: Visa etikettanvändning med etikettanalys
-          href: label-analytics.md
-        - name: Visa datastyrningsrapporter
-          href: view-the-data-governance-reports.md
     - name: Mer information om datastyrning
       items:
         - name: Titta på videor från Microsoft-datastyrningsteamet
