@@ -1,10 +1,10 @@
 ---
-title: Prova eller köp en Microsoft 365-prenumeration
+title: Prova eller Köp en Microsoft 365 för företag-prenumeration
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,136 +17,105 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-- MOE150
-ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
-description: Läs om hur du får en kostnadsfri utvärderingsversion eller köper en prenumeration för Microsoft 365.
-ms.openlocfilehash: 6400f8a05a0e1b8fd8d7200af90a0b232b288895
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Lär dig hur du får en gratis prov period eller köpa ett abonnemang för Microsoft 365 för företag.
+ms.date: 08/07/2020
+ms.openlocfilehash: addd535bfad00a7486bdd439afd7636c9cb2ea13
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526846"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597601"
 ---
-# <a name="try-or-buy-a-microsoft-365-subscription"></a><span data-ttu-id="feb90-103">Prova eller köp en Microsoft 365-prenumeration</span><span class="sxs-lookup"><span data-stu-id="feb90-103">Try or buy a Microsoft 365 subscription</span></span>
+# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a><span data-ttu-id="51407-103">Prova eller Köp en Microsoft 365 för företag-prenumeration</span><span class="sxs-lookup"><span data-stu-id="51407-103">Try or buy a Microsoft 365 for business subscription</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="feb90-104">Administrationscentret förändras.</span><span class="sxs-lookup"><span data-stu-id="feb90-104">The admin center is changing.</span></span> <span data-ttu-id="feb90-105">Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="feb90-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="51407-104">Administrationscentret förändras.</span><span class="sxs-lookup"><span data-stu-id="51407-104">The admin center is changing.</span></span> <span data-ttu-id="51407-105">Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="51407-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="feb90-106">Microsoft 365 är en komplett lösning som kombinerar Office 365 och Windows 10 med avancerad säkerhet och enhetshantering.</span><span class="sxs-lookup"><span data-stu-id="feb90-106">Microsoft 365 is a complete solution that combines Office 365 and Windows 10 with advanced security and device management.</span></span> <span data-ttu-id="feb90-107">Om du redan har en prenumeration och vill testa eller köpa en Microsoft 365-prenumeration är det bästa sättet att göra det via administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="feb90-107">If you already have a subscription and you want to trial or buy a Microsoft 365 subscription, the best way to do it is through the admin center.</span></span> <span data-ttu-id="feb90-108">Följande Microsoft 365-prenumerationer finns i administrationscentret som du kan prova eller köpa nu:</span><span class="sxs-lookup"><span data-stu-id="feb90-108">The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:</span></span>
-  
-- <span data-ttu-id="feb90-109">Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="feb90-109">Microsoft 365 Business Premium</span></span>
+<span data-ttu-id="51407-106">Microsoft 365 för företag är en prenumerations tjänst som gör att du kan köra din organisation i molnet när Microsoft tar hand om det åt dig.</span><span class="sxs-lookup"><span data-stu-id="51407-106">Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you.</span></span> <span data-ttu-id="51407-107">Microsoft hanterar enheter, skyddar mot verkliga hot och ger din organisation den senaste versionen av Business-programmet.</span><span class="sxs-lookup"><span data-stu-id="51407-107">Microsoft manages devices, protects against real-world threats, and provides your organization with the latest in business software.</span></span> <span data-ttu-id="51407-108">Du kan registrera dig för en kostnads fri prov prenumeration för Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-appar för företag och pröva det i 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="51407-108">You can sign up for a free trial subscription for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business and try it out for 30 days.</span></span>
 
-- <span data-ttu-id="feb90-110">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="feb90-110">Microsoft 365 E5</span></span>
+> [!NOTE]
+> <span data-ttu-id="51407-109">Du måste använda ett kredit kort när du registrerar dig för en gratis prov period.</span><span class="sxs-lookup"><span data-stu-id="51407-109">You must use a credit card when you sign up for a free trial.</span></span> <span data-ttu-id="51407-110">I slutet av prov perioden omvandlas utvärderings prenumerationen automatiskt till ett betalt abonnemang.</span><span class="sxs-lookup"><span data-stu-id="51407-110">At the end of your free trial period, your trial subscription is  automatically converted to a paid subscription.</span></span> <span data-ttu-id="51407-111">Ditt kredit kort debiteras inte förrän prov perioden är slut.</span><span class="sxs-lookup"><span data-stu-id="51407-111">Your credit card isn't billed until the end of the trial period.</span></span>
 
-- <span data-ttu-id="feb90-111">Microsoft 365 E3</span><span class="sxs-lookup"><span data-stu-id="feb90-111">Microsoft 365 E3</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="51407-112">Innan du börjar</span><span class="sxs-lookup"><span data-stu-id="51407-112">Before you begin</span></span>
 
-- <span data-ttu-id="feb90-112">Office 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="feb90-112">Office 365 Enterprise E5</span></span>
+<span data-ttu-id="51407-113">Du behöver inget befintligt Microsoft-konto för att registrera dig för en kostnads fri utvärderings version.</span><span class="sxs-lookup"><span data-stu-id="51407-113">You don't need an existing Microsoft account to sign up for a free trial.</span></span> <span data-ttu-id="51407-114">För alla andra procedurer i den här artikeln måste du vara global eller fakturerings administratör för organisationen.</span><span class="sxs-lookup"><span data-stu-id="51407-114">For all other procedures in this article, you must be a Global or Billing admin for your organization.</span></span> <span data-ttu-id="51407-115">Mer information finns i [om administratörs roller](../admin/add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="51407-115">For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).</span></span>
 
-<span data-ttu-id="feb90-113">När du lägger till en prenumeration via administrationscentret associeras den nya prenumerationen med samma organisation (domännamnsrymd) som din befintliga prenumeration.</span><span class="sxs-lookup"><span data-stu-id="feb90-113">When you add a subscription through the admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription.</span></span> <span data-ttu-id="feb90-114">Detta gör det enklare att flytta användare i organisationen mellan prenumerationer eller tilldela dem en licens för den ytterligare prenumeration de behöver.</span><span class="sxs-lookup"><span data-stu-id="feb90-114">This makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional subscription they need.</span></span>
-  
-## <a name="try-or-buy-a-microsoft-365-subscription"></a><span data-ttu-id="feb90-115">Prova eller köp en Microsoft 365-prenumeration</span><span class="sxs-lookup"><span data-stu-id="feb90-115">Try or buy a Microsoft 365 subscription</span></span>
+## <a name="try-a-free-trial-subscription"></a><span data-ttu-id="51407-116">Prova en gratis prov prenumeration</span><span class="sxs-lookup"><span data-stu-id="51407-116">Try a free trial subscription</span></span>
 
-::: moniker range="o365-worldwide"
+<span data-ttu-id="51407-117">Är du en ny kund och du har inte redan ett konto hos Microsoft?</span><span class="sxs-lookup"><span data-stu-id="51407-117">Are you a new customer, and you don't already have an account with Microsoft?</span></span> <span data-ttu-id="51407-118">Följ de här stegen för att skapa ett konto och registrera dig för en kostnads fri utvärderings version av Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-appar för företag.</span><span class="sxs-lookup"><span data-stu-id="51407-118">Use these steps to create an account and sign up for a free trial subscription of Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business.</span></span>
 
+1. <span data-ttu-id="51407-119">Gå till <a href="https://www.aka.ms/office365signup" target="_blank">webbplatsen för Microsoft 365-produkter</a>.</span><span class="sxs-lookup"><span data-stu-id="51407-119">Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.</span></span>
+2. <span data-ttu-id="51407-120">Välj det abonnemang som du vill registrera dig för, till exempel **Microsoft 365 Business Standard**, Bläddra ned på sidan och välj **prova gratis i en månad**.</span><span class="sxs-lookup"><span data-stu-id="51407-120">Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.</span></span>
+3. <span data-ttu-id="51407-121">På nästa sida följer du stegen för att konfigurera kontot.</span><span class="sxs-lookup"><span data-stu-id="51407-121">On the next page, follow the steps to set up your account.</span></span>
+4. <span data-ttu-id="51407-122">Det kan ta flera minuter att genomföra registreringen.</span><span class="sxs-lookup"><span data-stu-id="51407-122">The signup process may take several minutes to complete.</span></span> <span data-ttu-id="51407-123">När det är \' klart kan du starta installations guiden för din prenumeration.</span><span class="sxs-lookup"><span data-stu-id="51407-123">After it\'s complete, you're ready to start the setup wizard for your subscription.</span></span> <span data-ttu-id="51407-124">För mer information om hur du konfigurerar prenumerationen, se [Nästa steg](#next-steps).</span><span class="sxs-lookup"><span data-stu-id="51407-124">For more information about setting up your subscription, see [Next steps](#next-steps).</span></span>
 
-1. <span data-ttu-id="feb90-116">Logga in på administrationscentret på [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.</span><span class="sxs-lookup"><span data-stu-id="feb90-116">Sign in to the admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339), and then go to **Billing** \> **Purchase services**.</span></span>
+## <a name="buy-a-subscription-from-your-free-trial"></a><span data-ttu-id="51407-125">Köpa en prenumeration från din kostnadsfria utvärderingsversion</span><span class="sxs-lookup"><span data-stu-id="51407-125">Buy a subscription from your free trial</span></span>
 
-2. <span data-ttu-id="feb90-117">På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation.</span><span class="sxs-lookup"><span data-stu-id="feb90-117">On the **Purchase services** page, the subscriptions that are available to your organization are listed.</span></span> <span data-ttu-id="feb90-118">Välj det Microsoft 365-abonnemang som du vill prova eller köpa.</span><span class="sxs-lookup"><span data-stu-id="feb90-118">Choose the Microsoft 365 plan that you want to try or buy.</span></span>
+<span data-ttu-id="51407-126">I slutet av prov perioden omvandlas utvärderings prenumerationen automatiskt till ett betalt abonnemang.</span><span class="sxs-lookup"><span data-stu-id="51407-126">At the end of your free trial period, your trial subscription automatically converts to a paid subscription.</span></span> <span data-ttu-id="51407-127">Den betalda prenumerationen använder det aktuella abonnemanget.</span><span class="sxs-lookup"><span data-stu-id="51407-127">The paid subscription defaults to the plan you currently have.</span></span> <span data-ttu-id="51407-128">Du kan köpa ett annat abonnemang genom att följa stegen i [köpa ett annat abonnemang](#buy-a-different-subscription).</span><span class="sxs-lookup"><span data-stu-id="51407-128">You can buy a different plan by following the steps in [Buy a different subscription](#buy-a-different-subscription).</span></span>
 
-3. <span data-ttu-id="feb90-119">På nästa sida väljer du **Få gratis provperiod**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du **köpa**.</span><span class="sxs-lookup"><span data-stu-id="feb90-119">On the next page, select **Get free trial**, which gives you 25 user licenses for a one-month term, or you can **Buy**.</span></span>
+<span data-ttu-id="51407-129">Följ de här stegen om du vill köpa prenumerationen innan prov perioden är slut:</span><span class="sxs-lookup"><span data-stu-id="51407-129">If you want to buy your subscription before your trial is over, use these steps:</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="feb90-120">Om du startar en kostnadsfri utvärderingsversion går du till steg 8.</span><span class="sxs-lookup"><span data-stu-id="feb90-120">If you start a free trial, skip to step 8.</span></span>
-  
-4. <span data-ttu-id="feb90-121">Om du köper anger du antalet användarlicenser du behöver och väljer om du vill betala varje månad eller för hela året och väljer sedan **Checka ut nu.**</span><span class="sxs-lookup"><span data-stu-id="feb90-121">If you buy, enter the number of user licenses you need and choose whether to pay each month or for the whole year, then select **Check out now**.</span></span>
+1. <span data-ttu-id="51407-130">Gå till sidan för **fakturering**av produkter i Microsoft 365 Admin Center   \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a>   .</span><span class="sxs-lookup"><span data-stu-id="51407-130">In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="51407-131"> **Your products**   Leta upp den prenumeration som du vill köpa på sidan produkter.</span><span class="sxs-lookup"><span data-stu-id="51407-131">On the **Your products** page, find the subscription that you want to buy.</span></span>
+3. <span data-ttu-id="51407-132">I avsnittet **licenser**   väljer du **köp abonnemang**.</span><span class="sxs-lookup"><span data-stu-id="51407-132">In the **Licenses** section, select **Purchase subscription**.</span></span>
+4. <span data-ttu-id="51407-133">Välj ett månads-eller års åtagande för ditt abonnemang och välj sedan **utcheckning**.</span><span class="sxs-lookup"><span data-stu-id="51407-133">Choose either a monthly or annual commitment for your subscription, then select **Checkout**.</span></span>
+5. <span data-ttu-id="51407-134">På nästa sida bekräftar du prenumerationen och väljer **utcheckning**.</span><span class="sxs-lookup"><span data-stu-id="51407-134">On the next page, verify the subscription, and select **Checkout**.</span></span>
+6. <span data-ttu-id="51407-135">På nästa sida kontrollerar du den **sålda till**   -adressen, **fakturerings**   informationen och **artiklarna i den här beställningen**.</span><span class="sxs-lookup"><span data-stu-id="51407-135">On the next page, verify the **Sold to** address, the **Billed to** information, and **Items in this order**.</span></span> <span data-ttu-id="51407-136">Om du behöver göra några ändringar väljer du **ändra**   bredvid lämpligt avsnitt.</span><span class="sxs-lookup"><span data-stu-id="51407-136">If you need to make any changes, select **Change** next to the applicable section.</span></span>
+7. <span data-ttu-id="51407-137">När du \' är klar väljer du **acceptera avtal & plats ordning**.</span><span class="sxs-lookup"><span data-stu-id="51407-137">When you\'re finished, select **Accept agreement & place order**.</span></span>
 
-5. <span data-ttu-id="feb90-122">Din kundvagn öppnas.</span><span class="sxs-lookup"><span data-stu-id="feb90-122">Your cart opens.</span></span> <span data-ttu-id="feb90-123">Granska prisinformationen och välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="feb90-123">Review the pricing information and select **Next**.</span></span>
+## <a name="cancel-your-free-trial-subscription"></a><span data-ttu-id="51407-138">Avbryta ditt gratis prov abonnemang</span><span class="sxs-lookup"><span data-stu-id="51407-138">Cancel your free trial subscription</span></span>
 
-6. <span data-ttu-id="feb90-124">Ange din betalningsinformation och välj sedan **Beställ**.</span><span class="sxs-lookup"><span data-stu-id="feb90-124">Provide your payment information, then select **Place order**.</span></span>
+<span data-ttu-id="51407-139">Om du bestämmer dig för att annullera prov prenumerationen innan den kostnads fria prov perioden går, går du till administrations centret för Microsoft 365 och [inaktiverar](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)automatisk förnyelse.</span><span class="sxs-lookup"><span data-stu-id="51407-139">If you decide to cancel your trial subscription before the free trial period ends, go to the Microsoft 365 admin center and [turn off Recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).</span></span> <span data-ttu-id="51407-140">Utvärderings versionen upphör automatiskt när din månad går ut, och kredit kortet vann \' t debiteras.</span><span class="sxs-lookup"><span data-stu-id="51407-140">The trial will automatically expire when your month ends, and your credit card won\'t be charged.</span></span>
 
-7. <span data-ttu-id="feb90-125">På bekräftelsesidan väljer du **Gå till admin home**.</span><span class="sxs-lookup"><span data-stu-id="feb90-125">On the confirmation page, select **Go to admin home**.</span></span> <span data-ttu-id="feb90-126">Du är klar!</span><span class="sxs-lookup"><span data-stu-id="feb90-126">You're all set!</span></span>
+## <a name="try-a-different-subscription"></a><span data-ttu-id="51407-141">Pröva ett annat abonnemang</span><span class="sxs-lookup"><span data-stu-id="51407-141">Try a different subscription</span></span>
 
-8. <span data-ttu-id="feb90-127">Välj att ta emot ett sms eller ett samtal, ange ditt telefonnummer och välj sedan **Sms eller** **Ring mig**.</span><span class="sxs-lookup"><span data-stu-id="feb90-127">Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.</span></span>
+<span data-ttu-id="51407-142">Om du redan har en Microsoft 365 för företag-prenumeration kan du använda Microsoft 365 Admin Center för att pröva ett annat abonnemang.</span><span class="sxs-lookup"><span data-stu-id="51407-142">If you already have a Microsoft 365 for business subscription, you can use the Microsoft 365 admin center to try a different subscription.</span></span>
 
-9. <span data-ttu-id="feb90-128">Ange verifieringskoden och välj sedan **Starta den kostnadsfria utvärderingsversionen**.</span><span class="sxs-lookup"><span data-stu-id="feb90-128">Enter the verification code, then select **Start your free trial**.</span></span>
+<span data-ttu-id="51407-143">När du lägger till ett abonnemang via Microsoft 365 Admin Center associeras det nya abonnemanget med samma organisation (domän namn) som ditt befintliga abonnemang.</span><span class="sxs-lookup"><span data-stu-id="51407-143">When you add a subscription through the Microsoft 365 admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription.</span></span> <span data-ttu-id="51407-144">Den här kopplingen gör det enklare att flytta användare i din organisation mellan abonnemang eller att tilldela dem en licens för de ytterligare produkter de behöver.</span><span class="sxs-lookup"><span data-stu-id="51407-144">This association makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional products they need.</span></span>
 
-10. <span data-ttu-id="feb90-129">På sidan **Checka ut** väljer du **Prova nu**.</span><span class="sxs-lookup"><span data-stu-id="feb90-129">On the **Check out** page, select **Try now**.</span></span>
+1. <span data-ttu-id="51407-145">Gå till sidan fakturering i administrations centret **Billing**   \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a>   .</span><span class="sxs-lookup"><span data-stu-id="51407-145">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
+2. <span data-ttu-id="51407-146">På sidan **Köp tjänster**   ser du de abonnemang som är tillgängliga för din organisation.</span><span class="sxs-lookup"><span data-stu-id="51407-146">On the **Purchase services** page, you see the plans that are available to your organization.</span></span> <span data-ttu-id="51407-147">Välj det Microsoft 365-abonnemang som du vill prova.</span><span class="sxs-lookup"><span data-stu-id="51407-147">Choose the Microsoft 365 plan that you want to try.</span></span>
+3. <span data-ttu-id="51407-148">På nästa sida väljer du **få gratis prov period**.</span><span class="sxs-lookup"><span data-stu-id="51407-148">On the next page, select **Get free trial**.</span></span> <span data-ttu-id="51407-149">Med utvärderings versionen får du 25 användar licenser för en period om en månad.</span><span class="sxs-lookup"><span data-stu-id="51407-149">The trial gives you 25 user licenses for a one-month term.</span></span>
+4. <span data-ttu-id="51407-150">Välj att få en text eller ett samtal, ange ditt telefonnummer och välj sedan **skicka SMS**   eller **Ring mig**.</span><span class="sxs-lookup"><span data-stu-id="51407-150">Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.</span></span>
+5. <span data-ttu-id="51407-151">Ange verifierings koden och välj sedan **starta din gratis prov period**.</span><span class="sxs-lookup"><span data-stu-id="51407-151">Enter the verification code, then select **Start your free trial**.</span></span>
+6. <span data-ttu-id="51407-152">På sidan **checka ut**   väljer du **try nu**.</span><span class="sxs-lookup"><span data-stu-id="51407-152">On the **Check out** page, select **Try now**.</span></span>
+7. <span data-ttu-id="51407-153">På sidan **order kvitto**   väljer du **Fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="51407-153">On the **order receipt** page, select **Continue**.</span></span>
 
-11. <span data-ttu-id="feb90-130">På **sidan orderinleverans** väljer du **fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="feb90-130">On the **order receipt** page, select **continue**.</span></span>
+## <a name="buy-a-different-subscription"></a><span data-ttu-id="51407-154">Köp ett annat abonnemang</span><span class="sxs-lookup"><span data-stu-id="51407-154">Buy a different subscription</span></span>
 
+<span data-ttu-id="51407-155">Om du redan har en Microsoft 365 för företag-prenumeration kan du gå igenom Microsoft 365 Admin Center och köpa ett annat abonnemang för organisationen.</span><span class="sxs-lookup"><span data-stu-id="51407-155">If you already have a Microsoft 365 for business subscription, you can go through the Microsoft 365 admin center to buy a different subscription for your organization.</span></span>
 
-::: moniker-end
+<span data-ttu-id="51407-156">När du köper ett annat abonnemang via administrations centret är det nya abonnemanget kopplat till samma organisation (domän namns utrymme) som ditt nuvarande abonnemang.</span><span class="sxs-lookup"><span data-stu-id="51407-156">When you buy another subscription through the admin center, the new subscription is associated with the same organization (domain name space) as your existing subscription.</span></span> <span data-ttu-id="51407-157">Det gör det enklare att flytta användare i organisationen mellan abonnemang eller tilldela dem en licens för det ytterligare abonnemang de behöver.</span><span class="sxs-lookup"><span data-stu-id="51407-157">This makes it easier to move users in your organization between subscriptions or assign them a license for the additional subscription they need.</span></span>
 
-::: moniker range="o365-germany"
-1. <span data-ttu-id="feb90-131">Logga in på administrationscentret på [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.</span><span class="sxs-lookup"><span data-stu-id="feb90-131">Sign in to the admin center at [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686), and then go to **Billing** \> **Purchase services**.</span></span>
+1. <span data-ttu-id="51407-158">Gå till sidan fakturering i administrations centret **Billing**   \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a>   .</span><span class="sxs-lookup"><span data-stu-id="51407-158">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
+2. <span data-ttu-id="51407-159">På sidan **Köp tjänster**   väljer du det abonnemang som du vill köpa, väljer **uppgifter**och väljer sedan **köp**.</span><span class="sxs-lookup"><span data-stu-id="51407-159">On the **Purchase services** page, select the plan that you want to buy, select **Details**, then select **Buy**.</span></span>
+3. <span data-ttu-id="51407-160">Ange antalet licenser som du behöver och välj om du vill betala varje månad eller för hela året.</span><span class="sxs-lookup"><span data-stu-id="51407-160">Enter the number of licenses that you need and choose whether to pay each month or for the whole year.</span></span> <span data-ttu-id="51407-161">Välj om du vill att licenser automatiskt ska tilldelas alla användare som inte redan har en licens.</span><span class="sxs-lookup"><span data-stu-id="51407-161">Choose whether you want to automatically assign licenses to everyone who does not currently have a license.</span></span> <span data-ttu-id="51407-162">Välj sedan **gå ut nu**.</span><span class="sxs-lookup"><span data-stu-id="51407-162">Then select **Check out now**.</span></span>
+4. <span data-ttu-id="51407-163">Granska pris informationen och välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="51407-163">Review the pricing information and select **Next**.</span></span>
+5. <span data-ttu-id="51407-164">Ange din betalnings information och välj sedan **Placera order**   \>  **gå till administratörs start**.</span><span class="sxs-lookup"><span data-stu-id="51407-164">Provide your payment information, and then select **Place order** \> **Go to Admin Home**.</span></span>
 
-2. <span data-ttu-id="feb90-132">På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation.</span><span class="sxs-lookup"><span data-stu-id="feb90-132">On the **Purchase services** page, the subscriptions that are available to your organization are listed.</span></span> 
+> [!NOTE]
+> <span data-ttu-id="51407-165">Du måste flytta användare från din kostnads fria prov prenumeration till det nya abonnemanget innan respittiden för 90 dagar upphör när utvärderings prenumerationen går ut.</span><span class="sxs-lookup"><span data-stu-id="51407-165">You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires.</span></span> <span data-ttu-id="51407-166">Genom att göra detta behåller du dina data, konton och din konfiguration.</span><span class="sxs-lookup"><span data-stu-id="51407-166">By doing this, you keep your data, accounts, and configuration.</span></span> <span data-ttu-id="51407-167">Annars tas informationen bort.</span><span class="sxs-lookup"><span data-stu-id="51407-167">Otherwise, that information is deleted.</span></span>
 
-3. <span data-ttu-id="feb90-133">Välj ellipserna under Microsoft 365-planen som du vill prova eller köpa och välj sedan **Starta fri utvärderingsversion**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du välja **Köp nu**.</span><span class="sxs-lookup"><span data-stu-id="feb90-133">Select the ellipses under the Microsoft 365 plan that you want to try or buy, and then select **Start free trial**, which gives you 25 user licenses for a one-month term, or you can select **Buy now**.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="51407-168">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="51407-168">Next steps</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="feb90-134">Om du startar en kostnadsfri utvärderingsversion går du till steg 8.</span><span class="sxs-lookup"><span data-stu-id="feb90-134">If you start a free trial, skip to step 8.</span></span>
-  
-4. <span data-ttu-id="feb90-135">Om du köper anger du antalet användarlicenser du behöver och väljer om du vill betala varje månad eller för hela året och väljer sedan **Checka ut nu.**</span><span class="sxs-lookup"><span data-stu-id="feb90-135">If you buy, enter the number of user licenses you need and choose whether to pay each month or for the whole year, then select **Check out now**.</span></span>
+<span data-ttu-id="51407-169">Om du har ett nytt konto och har konfigurerat din första prenumeration kan du använda de här artiklarna för att hjälpa dig att komma igång.</span><span class="sxs-lookup"><span data-stu-id="51407-169">If you have a new account and are setting up your first subscription, you can use the guided setup articles to help you get started.</span></span>
 
-5. <span data-ttu-id="feb90-136">Din kundvagn öppnas.</span><span class="sxs-lookup"><span data-stu-id="feb90-136">Your cart opens.</span></span> <span data-ttu-id="feb90-137">Granska prisinformationen och välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="feb90-137">Review the pricing information and select **Next**.</span></span>
+- [<span data-ttu-id="51407-170">Konfigurera Microsoft 365 Business Basic</span><span class="sxs-lookup"><span data-stu-id="51407-170">Set up Microsoft 365 Business Basic</span></span>](../admin/setup/setup-business-basic.md)
+- [<span data-ttu-id="51407-171">Konfigurera Microsoft 365 Business Standard</span><span class="sxs-lookup"><span data-stu-id="51407-171">Set up Microsoft 365 Business Standard</span></span>](../admin/setup/setup-business-standard.md)
+- [<span data-ttu-id="51407-172">Konfigurera Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="51407-172">Set up Microsoft 365 Business Premium</span></span>](../business/set-up.md)
+- [<span data-ttu-id="51407-173">Microsoft 365-applikationer för affärsverksamhet</span><span class="sxs-lookup"><span data-stu-id="51407-173">Set up Microsoft 365 Apps for business</span></span>](../admin/setup/setup-apps-for-business.md)
 
-6. <span data-ttu-id="feb90-138">Ange din betalningsinformation och välj sedan **Beställ**.</span><span class="sxs-lookup"><span data-stu-id="feb90-138">Provide your payment information, then select **Place order**.</span></span>
+<span data-ttu-id="51407-174">Om du redan har ett abonnemang och lägger till ett nytt abonnemang kan du flytta användare till det.</span><span class="sxs-lookup"><span data-stu-id="51407-174">If you already have a subscription and are adding a new subscription, you can move users to it.</span></span> <span data-ttu-id="51407-175">Mer information finns i [flytta användare till ett annat abonnemang](subscriptions/move-users-different-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="51407-175">To learn how, see [Move users to a different subscription](subscriptions/move-users-different-subscription.md).</span></span>
 
-7. <span data-ttu-id="feb90-139">På bekräftelsesidan väljer du **Gå till admin home**.</span><span class="sxs-lookup"><span data-stu-id="feb90-139">On the confirmation page, select **Go to admin home**.</span></span> <span data-ttu-id="feb90-140">Du är klar!</span><span class="sxs-lookup"><span data-stu-id="feb90-140">You're all set!</span></span>
+## <a name="related-content"></a><span data-ttu-id="51407-176">Relaterat innehåll</span><span class="sxs-lookup"><span data-stu-id="51407-176">Related content</span></span>
 
-8. <span data-ttu-id="feb90-141">Välj att ta emot ett sms eller ett samtal, ange ditt telefonnummer och välj sedan **Sms eller** **Ring mig**.</span><span class="sxs-lookup"><span data-stu-id="feb90-141">Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.</span></span>
-
-9. <span data-ttu-id="feb90-142">Ange verifieringskoden och välj sedan **Starta den kostnadsfria utvärderingsversionen**.</span><span class="sxs-lookup"><span data-stu-id="feb90-142">Enter the verification code, then select **Start your free trial**.</span></span>
-
-10. <span data-ttu-id="feb90-143">På sidan **Checka ut** väljer du **Prova nu**.</span><span class="sxs-lookup"><span data-stu-id="feb90-143">On the **Check out** page, select **Try now**.</span></span>
-
-11. <span data-ttu-id="feb90-144">På **sidan orderinleverans** väljer du **fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="feb90-144">On the **order receipt** page, select **continue**.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-1. <span data-ttu-id="feb90-145">Logga in på administrationscentret på [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) och gå sedan till **Billing** \> **Faktureringsköpstjänster**.</span><span class="sxs-lookup"><span data-stu-id="feb90-145">Sign in to the admin center at [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628), and then go to **Billing** \> **Purchase services**.</span></span>
-
-2. <span data-ttu-id="feb90-146">På sidan **Köptjänster** visas de prenumerationer som är tillgängliga för din organisation.</span><span class="sxs-lookup"><span data-stu-id="feb90-146">On the **Purchase services** page, the subscriptions that are available to your organization are listed.</span></span> 
-
-3. <span data-ttu-id="feb90-147">Välj ellipserna under Microsoft 365-planen som du vill prova eller köpa och välj sedan **Starta fri utvärderingsversion**, vilket ger dig 25 användarlicenser för en månads period, eller så kan du välja **Köp nu**.</span><span class="sxs-lookup"><span data-stu-id="feb90-147">Select the ellipses under the Microsoft 365 plan that you want to try or buy, and then select **Start free trial**, which gives you 25 user licenses for a one-month term, or you can select **Buy now**.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="feb90-148">Om du startar en kostnadsfri utvärderingsversion går du till steg 8.</span><span class="sxs-lookup"><span data-stu-id="feb90-148">If you start a free trial, skip to step 8.</span></span>
-  
-4. <span data-ttu-id="feb90-149">Om du köper anger du antalet användarlicenser du behöver och väljer om du vill betala varje månad eller för hela året och väljer sedan **Checka ut nu.**</span><span class="sxs-lookup"><span data-stu-id="feb90-149">If you buy, enter the number of user licenses you need and choose whether to pay each month or for the whole year, then select **Check out now**.</span></span>
-
-5. <span data-ttu-id="feb90-150">Din kundvagn öppnas.</span><span class="sxs-lookup"><span data-stu-id="feb90-150">Your cart opens.</span></span> <span data-ttu-id="feb90-151">Granska prisinformationen och välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="feb90-151">Review the pricing information and select **Next**.</span></span>
-
-6. <span data-ttu-id="feb90-152">Ange din betalningsinformation och välj sedan **Beställ**.</span><span class="sxs-lookup"><span data-stu-id="feb90-152">Provide your payment information, then select **Place order**.</span></span>
-
-7. <span data-ttu-id="feb90-153">På bekräftelsesidan väljer du **Gå till admin home**.</span><span class="sxs-lookup"><span data-stu-id="feb90-153">On the confirmation page, select **Go to admin home**.</span></span> <span data-ttu-id="feb90-154">Du är klar!</span><span class="sxs-lookup"><span data-stu-id="feb90-154">You're all set!</span></span>
-
-8. <span data-ttu-id="feb90-155">Välj att ta emot ett sms eller ett samtal, ange ditt telefonnummer och välj sedan **Sms eller** **Ring mig**.</span><span class="sxs-lookup"><span data-stu-id="feb90-155">Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.</span></span>
-
-9. <span data-ttu-id="feb90-156">Ange verifieringskoden och välj sedan **Starta den kostnadsfria utvärderingsversionen**.</span><span class="sxs-lookup"><span data-stu-id="feb90-156">Enter the verification code, then select **Start your free trial**.</span></span>
-
-10. <span data-ttu-id="feb90-157">På sidan **Checka ut** väljer du **Prova nu**.</span><span class="sxs-lookup"><span data-stu-id="feb90-157">On the **Check out** page, select **Try now**.</span></span>
-
-11. <span data-ttu-id="feb90-158">På **sidan orderinleverans** väljer du **fortsätt**.</span><span class="sxs-lookup"><span data-stu-id="feb90-158">On the **order receipt** page, select **continue**.</span></span>
-
-::: moniker-end
-
-
-## <a name="next-steps"></a><span data-ttu-id="feb90-159">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="feb90-159">Next steps</span></span>
-
-<span data-ttu-id="feb90-160">När du har fått den nya prenumerationen måste du tilldela en licens till de användare som ska använda prenumerationen.</span><span class="sxs-lookup"><span data-stu-id="feb90-160">After you get the new subscription, you have to assign a license to the users who will use that subscription.</span></span> <span data-ttu-id="feb90-161">Mer information finns i [Tilldela licenser till användare](../admin/manage/assign-licenses-to-users.md) .</span><span class="sxs-lookup"><span data-stu-id="feb90-161">To learn how, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md) .</span></span>
-
-## <a name="related-articles"></a><span data-ttu-id="feb90-162">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="feb90-162">Related articles</span></span>
-
-[<span data-ttu-id="feb90-163">Köp en annan Microsoft 365 för företag-prenumeration</span><span class="sxs-lookup"><span data-stu-id="feb90-163">Buy another Microsoft 365 for business subscription</span></span>](buy-another-subscription.md)
-
-[<span data-ttu-id="feb90-164">Köpa eller redigera ett tillägg för Microsoft 365 för företag</span><span class="sxs-lookup"><span data-stu-id="feb90-164">Buy or edit an add-on for Microsoft 365 for business</span></span>](buy-or-edit-an-add-on.md)
-
-[<span data-ttu-id="feb90-165">Lägga till lagringsutrymme för din prenumeration</span><span class="sxs-lookup"><span data-stu-id="feb90-165">Add storage space for your subscription</span></span>](add-storage-space.md)
-
+<span data-ttu-id="51407-177">[Utbildnings video för Microsoft 365 för företag](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (utbildnings video) </span><span class="sxs-lookup"><span data-stu-id="51407-177">[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (training videos)</span></span>\
+<span data-ttu-id="51407-178">[Lägga till användare och tilldela licenser samtidigt](../admin/add-users/add-users.md) (artikel) </span><span class="sxs-lookup"><span data-stu-id="51407-178">[Add users and assign licenses at the same time](../admin/add-users/add-users.md) (article)</span></span>\
+<span data-ttu-id="51407-179">[Tilldela licenser till användare](../admin/manage/assign-licenses-to-users.md) (artikel) </span><span class="sxs-lookup"><span data-stu-id="51407-179">[Assign licenses to users](../admin/manage/assign-licenses-to-users.md) (article)</span></span>\
+<span data-ttu-id="51407-180">[Uppgradera till ett annat abonnemang](subscriptions/upgrade-to-different-plan.md) (artikel) </span><span class="sxs-lookup"><span data-stu-id="51407-180">[Upgrade to a different plan](subscriptions/upgrade-to-different-plan.md) (article)</span></span>\
+<span data-ttu-id="51407-181">[Köp eller redigera ett tillägg för Microsoft 365 för företag](buy-or-edit-an-add-on.md) (artikel) </span><span class="sxs-lookup"><span data-stu-id="51407-181">[Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md) (article)</span></span>\
+[<span data-ttu-id="51407-182">Lägga till lagrings utrymme för din prenumeration</span><span class="sxs-lookup"><span data-stu-id="51407-182">Add storage space for your subscription</span></span>](add-storage-space.md)
