@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper energiorganisationer att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
 ms.custom: ''
-ms.openlocfilehash: bb45cf1abf101966514eb4f54090b3ac7cbee645
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521023"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597461"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Grundläggande efterlevnad och säkerhetsaspekter för energiindustrin
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Illustrationsmetafor för en global vy över olika branscher som använder molnet":::
+![Illustrerad metafor för en global vy över olika branscher som använder molnet](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>Introduktion
 Energiindustrin tillhandahåller samhället med bränsle och kritisk infrastruktur som människor förlitar sig på varje dag. För att säkerställa tillförlitligheten i infrastruktur för omfångsrika energisystem lägger regleringsGovernmentna in strikta normer i organisationer för energiindustrin. Dessa föreskrifter gäller inte bara för skapande och överföring av energi, utan även för de data och meddelanden som är viktiga för den dagliga verksamheten i energiföretag. 
 

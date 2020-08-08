@@ -4,14 +4,10 @@
   href: ../admin/index.yml
 - name: Prova eller köp
   items:
-    - name: Registrera dig för en utvärderingsversion av Microsoft 365
-      href: sign-up-for-office-365-trial.md
     - name: Prova eller köp Microsoft 365
       href: try-or-buy-microsoft-365.md
     - name: Förlänga utvärderingen
       href: extend-your-trial.md
-    - name: Köpa en annan prenumeration
-      href: buy-another-subscription.md
     - name: Köpa eller redigera ett tillägg
       href: buy-or-edit-an-add-on.md
     - name: Lägga till lagringsutrymme

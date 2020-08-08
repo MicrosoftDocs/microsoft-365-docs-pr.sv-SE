@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Lär dig hur Microsoft 365 hjälper finansiella tjänster att gå till en modern samarbetsplattform, medan vi håller data och systemen säkra och kompatibla med föreskrifter
 f1.keywords: NOCSH
-ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521213"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597527"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Viktig information om efterlevnad och säkerhet för amerikanska banker och stora marknader
 
@@ -66,7 +66,7 @@ Grupper kan tillhandahålla ett samarbetsutrymme för att säkert lagra känslig
 
 Ett annat vanligt scenario är att använda Teams som ett “virtuellt datarum” för att säkert samarbeta, inklusive lagring och hantering av dokument. Gruppmedlemmar och kollegor inom investment banking, asset management och riskkapitalbolag kan samarbeta med ett avtal eller investering på ett säkert sätt. Multifunktionella grupper är ofta inblandade i planering och uppfyllandet av dessa avtal, och möjligheten att säkert dela data och göra konversationer är ett centralt krav. Det är även viktigt att dela relaterade dokument till externa investerare. Teams tillhandahåller en säker och fullt granskad plats för att centralt lagra, skydda och dela investeringsdata.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="En grupp kontorsarbetare i ett möte diskuterar bilder på en stor skärm.":::
+![En grupp kontorsarbetare i ett möte diskuterar bilder på en stor skärm](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: förbättra samarbetet och minska riskerna för efterlevnad
 
@@ -156,7 +156,7 @@ Identity Protection använder kunskap som Microsoft har anskaffat från sin plat
 
 Identity Protection hjälper organisationer att automatiskt skydda mot kompromettering av identitet genom att dra nytta av molninformation som drivs av avancerad upptäcktsbaserat heuristisk sökning, användar- och enhetsbeteendeanalys (UEBA) och maskininlärning (ML) över Microsofts ekosystem.
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="Fem informationsarbetare tittar på samtidigt som en annan ger en presentation.":::
+![Fem informationsarbetare tittar på när en annan ger en presentation](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>Identifiera känsliga data och förhindra dataförluster
 I Microsoft 365 kan alla organisationer identifiera känsliga data i organisationen genom en kombination av kraftfulla funktioner, t. ex.:
@@ -178,7 +178,7 @@ Signalerna som skapas av och utfodras med Identity Protection kan också matas i
 
 Identity Protection hjälper organisationer att automatiskt skydda mot kompromettering av identiteter genom att dra nytta av molninformation som drivs av avancerad upptäcktsbaserat heuristisk sökning, användar- och enhetsbeteendeanalys och maskininlärning över Microsofts ekosystem.
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="En informationsarbetare står framför en stor matris med bildskärmar.":::
+![En informationsarbetare står framför en stor grupp med bildskärmar](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>Försvara fortet
 
@@ -199,7 +199,7 @@ Med [Microsoft Cloud App Security (MCAS)](https://docs.microsoft.com/cloud-app-s
 * Identifiera och undersök misstänkta användaraktiviteter och avancerade attacker under alla attackfaserna.
 * Ge tydlig information om incidenten på en enkel tidslinje för snabb prioritering.
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="Office-arbetarna sammanträder i ett litet konferensrum. En av dem ger en presentation.":::
+![Kontorsarbetare träffas i ett litet konferensrum. En håller en presentation.](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>Styr data och hantera arkivhandlingar
 
@@ -285,7 +285,7 @@ Finansiella institut måste vanligtvis upprätta och underhålla en tillsynsfunk
  
 * [FINRA relgel 3120 (kontrollsystem för övervakning)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) kräver att företag har ett system med kontrollprinciper och procedurer (SCPs) som validerar deras skriftliga övervakningsförfaranden som definieras av regel 3110. Företag är skyldiga att inte bara ha WSP utan även att ha principer som testar dessa förfaranden årligen för att verifiera att de kan säkerställa efterlevnaden av tillämpliga lagar och föreskrifter för värdepapper. Riskbaserade metoder och provtagning kan användas för att definiera testningens omfattning. Bland annat kräver den här regeln att företagen tillhandahåller en årsrapport till högsta ledning, som innehåller en sammanfattning av testresultaten och eventuella betydande undantag eller ändrade förfaranden som svar på testresultat.
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="I en kontorsarbetare tittar på ett diagram och tabeller på en skärm medan andra träffas i bakgrunden.":::
+![En kontorsarbetare tittar på diagram och tabeller på en skärm medan andra träffas i bakgrunden.](../media/wco18-desk-work-002.jpg)
  
 ### <a name="communication-compliance"></a>Efterlevnad av kommunikation
 
@@ -296,7 +296,7 @@ Efterlevnad av kommunikation ger rapporter som gör det möjligt att granska gra
 
 Förutom att följa FINRA-reglerna, tillåter efterlevnad av kommunikation organisationer att övervaka kommunikation för efterlevnad av andra juridiska krav, företagspolicyer och etiska standarder. Efterlevnad av kommunikation ger inbyggda hot-, trakasserings- och svordomsklassificerare som hjälper till att minska falska positiva när man granskar kommunikationer, vilket sparar granskarna tid under utrednings- och saneringsprocessen. Det gör också att organisationer kan minska riskerna genom att övervaka kommunikationen när de genomgår känsliga förändringar, t. ex. sammanslagningar och förvärv eller förändringar i ledarskap.
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="En informationsarbetare fokuserar på en skärm.":::
+![En informationsarbetare fokuserar på en skärm.](../media/msc16-slalom-004.jpg)
  
 ## <a name="protect-against-data-exfiltration-and-insider-risk"></a>Skydd mot dataexfiltration och insiderrisk
 
@@ -312,14 +312,14 @@ Exempelvis kan hantering av insiderrisk i Microsoft 365 korrelera signaler från
 
 Hantering av insiderrisk i Microsoft 365 ökar organisationers kapacitet att övervaka och undersöka insiderrisker avsevärt samtidigt som organisationer fortfarande kan uppfylla bestämmelserna om dataskydd och följa etablerade eskaleringsvägar när ärenden kräver åtgärder på högre nivå.
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="En anställd i ett callcenter i ett bås skriver samtidigt som han tittar på en skärm.":::
+![En anställd i ett bås på ett callcenter skriver och tittar på en skärm.](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>Klientrestriktioner
 Organisationer som hanterar känslig data och lägger stor vikt vid säkerhet vill vanligtvis kontrollera onlineresurserna som användare kan komma åt. Samtidigt vill de möjliggöra säkert samarbete genom onlinetjänster som Office 365. Som ett resultat av detta blir det en utmaning att kontrollera Office 365-miljöerna som användare kan komma åt eftersom icke-företagsklassificerade Office 365-miljöer kan användas för att exfiltrera data från företagsenheter, antingen skadligt eller oavsiktligt. Traditionellt sett begränsar organisationer vilka domäner eller IP-adresser som användare kan komma åt från företagsenheter. Men det fungerar inte i molnet – i en värld, där användare måste få åtkomst till Office 365-tjänster på ett korrekt sätt.
 
 Microsoft 365 ger [klientrestriktioner](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) möjligheten att ta itu med denna utmaning. Klientrestriktioner kan konfigureras för att begränsa anställdas tillgång till externa Office 365-företagsgäster med hjälp av oseriösa identiteter (identiteter som inte ingår i företagskatalogen). I dag gäller klientrestriktioner över hela klienten, vilket endast tillåter åtkomst till de klienter som visas i listan som du konfigurerar. Microsoft fortsätter att utveckla den här lösningen för att förbättra kontrollens granularitet och förstärka skyddet.
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="BILD":::
+![BILD](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>Sammanfattning
 
