@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: fb1290a0f0b884fdbc630cbfcd10cd1102c8acae
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588234"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597515"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera hot Protection-funktioner i Microsoft 365
 
@@ -156,7 +156,7 @@ Med Office 365 ATP kan folk i hela organisationen kommunicera och samar beta sä
 
 När du har konfigurerat och distribuerat skydds tjänster och-kapacitet, är nästa steg att övervaka hotets identifieringar och vidta lämpliga åtgärder. Din bästa start punkt är Microsoft 365 säkerhets Center ( [https://security.microsoft.com](https://security.microsoft.com) ), där du kan övervaka och hantera säkerhet för dina Microsoft-identiteter, data, enheter, appar och infrastruktur. 
 
-:::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 Säkerhetscenter":::
+![Microsoft 365 Säkerhetscenter](../media/solutions-architecture-center/m365-security-center.png)
 
 Säkerhets Center för säkerhets administratörer och säkerhets åtgärder i Microsoft 365. I Microsoft 365 säkerhets Center kan du:
 - Se hela din organisations säkerhets tillstånd med [säkra Poäng](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
@@ -184,7 +184,7 @@ Microsoft 365 tillhandahåller följande resurser för att hjälpa användare i 
 |Symboliserar konceptet  |Resurser  |
 |---------|---------|
 |Microsoft 365     |[Anpassningsbara Learning-vägar](https://docs.microsoft.com/office365/customlearning/) <p>De här resurserna hjälper dig att hålla ihop utbildning för slutanvändare i din organisation        |
-|Microsoft 365-säkerhet |[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna. |
+|Microsoft 365 Säkerhetscenter |[Kodmodul: skydda din organisation med inbyggd, intelligent säkerhet från Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Med den här modulen kan du beskriva hur säkerhetsfunktionerna i Microsoft 365 fungerar tillsammans och för att Articulate fördelarna med de här säkerhetsfunktionerna. |
 |Multifaktorautentisering     | [Tvåstegsverifiering: Vad är sidan för ytterligare verifiering?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför den används i din organisation.    |
 
 Utöver den här vägledningen rekommenderar Microsoft att användarna vidtar åtgärderna som beskrivs i den här artikeln: [skydda ditt konto och dina enheter från hackare och skadlig program vara](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Dessa åtgärder inkluderar:

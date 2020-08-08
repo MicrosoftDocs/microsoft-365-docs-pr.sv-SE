@@ -1,7 +1,7 @@
 ---
-title: Ny Microsoft Edge
+title: Nya Microsoft Edge
 description: ''
-keywords: webbläsare, Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation
+keywords: webbläsare, Microsoft hanterat skriv bord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -10,135 +10,158 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170677"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597503"
 ---
 # <a name="new-microsoft-edge-app"></a>Ny Microsoft Edge-app
 
-Den nya [webbläsaren Microsoft Edge](https://www.microsoft.com/edge) ger prestanda i världsklass med mer sekretess, mer produktivitet och mer värde medan du surfar. Microsoft Managed Desktop erbjuder en offentlig förhandsversion av distributionen av den nya Edge-webbläsaren i din miljö.
+I den nya [webbläsaren Microsoft Edge](https://www.microsoft.com/edge) får du världs klassens prestanda med mer integritet, mer produktivitet och mer värde när du bläddrar. Microsoft Managed Desktop erbjuder en offentlig för hands version av distributionen av den nya webbläsaren i din miljö.
 
 ## <a name="initial-deployment"></a>Inledande distribution
 
-Om du vill migrera dina Microsoft Managed Desktop-enheter till den nya webbläsaren Microsoft Edge filar du en IT-supportbiljett via Microsoft Managed Desktop Portal. Vi distribuerar Edge Stable-kanalen till testgruppen när du arkiverar biljetten och distribuerar den sedan i varje efterföljande distributionsgrupp var 24:e timme. Om du vill pausa distributionen sparar du en annan biljett där du ber operationerna att spärra.
+Om du vill migrera dina Microsoft Managed Station ära enheter till den nya webbläsaren Microsoft Edge kan du läsa en IT support-biljett via Microsoft Managed Desktop-portalen. Vi kommer att distribuera Edge stabil kanal till test gruppen när du arkiverar biljetten och sedan distribuera den i varje senare distributions grupp varje dygn. Om du vill pausa distributionen kan du spara en fil i en annan biljett.
+
+[Beta kanal] (finns https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) också på begäran om representativ verifiering inom din organisation. Microsoft Managed Desktop distribuerar programmet som obligatoriskt för test och första grupper så att alla dessa användare har beta kanalen utöver den stabila kanalen. För alla ytterligare användare som behöver komma åt beta kanalen ska du lägga till dem i den **moderna beta-användare-gruppen på arbets platsen** och låta dem installera den från företags portalen
 
 ## <a name="updates-to-microsoft-edge"></a>Uppdateringar av Microsoft Edge
 
-Microsoft Managed Desktop distribuerar den [stabila kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) för Microsoft Edge som uppdateras automatiskt ungefär var sjätte vecka. Uppdateringar på den stabila kanalen lanseras [successivt](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) av Microsoft Edge-produktgruppen för att säkerställa bästa möjliga upplevelse för kunderna. Microsoft Edge Beta-kanalen är inte tillgänglig för närvarande.
+Microsoft Managed Desktop distribuerar den [stabila kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) i Microsoft Edge som uppdateras automatiskt var sjätte vecka. Uppdateringar i den stabila kanalen lyfts [successivt](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) av Microsoft Edge-produktnyckeln för att säkerställa den bästa upplevelsen för kunder. 
 
-Ändra inte Microsoft [Edge-uppdateringsprinciperna](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)för att säkerställa att Microsoft Edge uppdateras korrekt.
+[Beta kanal] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) distribueras till enheter i både test-och första grupperna för representativ verifiering i organisationen. Denna kanal stöds helt och uppdateras automatiskt med nya funktioner ungefär var sjätte vecka.
+
+Om du vill vara säker på att Microsoft Edge uppdateras korrekt ska du inte ändra Microsofts Edge [Update-principer](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
+
+### <a name="microsoft-edge-beta-channel"></a>Beta kanal för Microsoft Edge
+
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Inställningar som hanteras av Microsoft Managed Desktop
 
-Microsoft Managed Desktop har skapat en standarduppsättning principer för Microsoft Edge för att skydda webbläsaren. Standardinställningarna för webbläsaren är följande:
+Microsoft Managed Desktop har skapat en standard uppsättning principer för Microsoft Edge för att skydda webbläsaren. Standardinställningarna för webbläsaren är följande:
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge-tillägg
 
-Säkerhetsbaslinjen för Microsoft Edge på Microsoft Managed Desktop-enheter anger två principer för att inaktivera alla Chrome-tillägg och säkra slutanvändare. Information om hur du aktiverar och distribuerar tillägg i din miljö finns i Inställningar som du hanterar. 
+Säkerhets bas linjen för Microsoft Edge på Microsoft Managed Station ära datorer har två principer för att inaktivera alla Chrome-tillägg och säkra slutanvändare. Om du vill aktivera och distribuera tillägg i miljön läser du inställningar som du hanterar. 
 
-#### <a name="extension-installation-blocklist"></a>Blockeringslista för tilläggsinstallation
+#### <a name="extension-installation-blocklist"></a>Installations blockeringslista
 **Standardvärde:** Alla
 
-Microsoft Managed Desktop anger den här principen för att förhindra att Chrome-tillägg installeras på hanterade slutpunkter. Det finns kända risker som associeras med modellen för kromtillägg, inklusive dataskydd, sekretess och andra risker som kan äventyra enheter. 
+Microsoft Managed Desktop anger den här principen för att förhindra att Chrome-tillägg installeras på hanterade slut punkter. Det finns kända risk sassociated med krom tilläggs modellen, inklusive data förlust skydd, integritet och andra risker som kan äventyra enheter. 
 
-#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Tillåt inbyggda meddelandevärdar på användarnivå (installeras utan administratörsbehörighet)
+#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Tillåt interna meddelanden på användar nivå (installeras utan Administratörs behörigheter)
 
-**Standardvärde:** Inaktiverad
+**Standardvärde:** Aktiv
 
-Genom att inaktivera den här principen använder Microsoft Edge endast inbyggda meddelandevärdar som är installerade på systemnivå. Inbyggda meddelandevärdar är en del av Chrome-tillägg som gör det möjligt för webbläsaren att interagera med andra delar av användarens slutpunkt, vilket skapar en mängd olika säkerhetsproblem.  
+Genom att inaktivera den här principen använder Microsoft Edge endast interna meddelande värdar som är installerade på system nivå. Interna meddelande värdar är en del av Chrome-tillägg som gör att webbläsaren interagerar med andra delar av användarens slut punkt och skapar en mängd olika säkerhets problem.  
 
-### <a name="secure-sockets-layer-ssl"></a>Ssl (Secure Sockets Layer)
+### <a name="secure-sockets-layer-ssl"></a>SSL (Secure Sockets Layer)
 
-#### <a name="minimum-ssl-version"></a>Minsta SSL-version
+#### <a name="minimum-ssl-version"></a>Lägsta SSL-version
 
-**Standardvärde:** Minst TLS 1.2 stöds
+**Standardvärde:** Minsta TLS 1,2 stöds
 
-Om du vill använda den mindre säkra TLS 1.1 kan du begära detta.
+Om du vill använda den mindre säkra TLS-1,1 kan du begära detta.
 
-#### <a name="allows-users-to-proceed-from-the-ssl-warning-page"></a>Tillåter användare att gå vidare från SSL-varningssidan
+#### <a name="allows-users-to-proceed-from-the-ssl-warning-page"></a>Tillåter användare att gå vidare från sidan SSL-varning
 
-**Standardvärde:** Inaktiverad
+**Standardvärde:** Aktiv
 
 Vi rekommenderar inte att du aktiverar den här inställningen eftersom den tillåter användare att besöka webbplatser med SSL-fel.
 
-### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart Skärm
+### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart skärm
 
-#### <a name="configure-microsoft-defender-smartscreen"></a>Konfigurera Smartskärm för Microsoft Defender
-
-**Standardvärde:** Aktiverat
-
-Aktiverad som standard för att skydda slutanvändare.
-
-#### <a name="microsoft-defender-smartscreen-prompts-for-sites"></a>Microsoft Defender SmartScreen uppmanas för webbplatser
+#### <a name="configure-windows-defender-smartscreen"></a>Konfigurera Windows Defender SmartScreen
 
 **Standardvärde:** Aktiverat
 
-Vi rekommenderar inte att du inaktiverar den här inställningen eftersom det skulle göra det möjligt för användare att ignorera varningar och fortsätta till potentiellt skadliga webbplatser.
+Aktiverat som standard för att skydda slutanvändare.
 
-#### <a name="prevent-bypassing-of-microsoft-defender-smartscreen-warnings-about-downloads"></a>Förhindra förbikoppling av Microsoft Defender SmartScreen-varningar om nedladdningar
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen-frågor för webbplatser
 
 **Standardvärde:** Aktiverat
 
-Vi rekommenderar inte att du inaktiverar den här inställningen eftersom det skulle göra det möjligt för användare att ignorera varningar och slutföra overifierade nedladdningar.
+Vi rekommenderar inte att du inaktiverar den här inställningen eftersom den tillåter att användare ignorerar varningar och fortsätter till potentiellt skadliga webbplatser.
+
+#### <a name="prevent-bypassing-of-windows-defender-smartscreen-warnings-about-downloads"></a>Förhindra att varningar från Windows Defender SmartScreen om nedladdningar ignoreras
+
+**Standardvärde:** Aktiverat
+
+Vi rekommenderar inte att du inaktiverar den här inställningen eftersom den tillåter användare att ignorera varningar och slutföra icke verifierade nedladdningar.
 
 ### <a name="adobe-flash"></a>Adobe Flash
 
-#### <a name="default-adobe-flash-setting"></a>Standardinställning för Adobe Flash
+#### <a name="default-adobe-flash-setting"></a>Standard inställning för Adobe Flash
 
-**Standardvärde:** Inaktiverad
+**Standardvärde:** Aktiv
 
-Vi rekommenderar inte att du använder Flash på grund av tillhörande säkerhetsrisker. Om du fortfarande har processer som är beroende av Flash, ställa in **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** politik för att aktivera Flash för webbplatser som behöver det. Om du inte kan underhålla en tillåten lista över webbplatser som ska använda Flash skickar du en ändringsbegäran för att ändra värdet till **Klicka för att spela**, vilket gör att användarna kan välja när det är lämpligt att köra Flash.
+Vi rekommenderar inte att du använder Flash på grund av associerade säkerhets risker. Om du fortfarande har processer som är beroende av Flash kan du ange **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** -principen för att aktivera Flash för webbplatser som behöver den. Om du inte kan behålla en lista över tillåtna webbplatser för att använda Flash, File a ändringsbegäran för att ändra värdet till **Klicka för att spela upp**, vilket gör att användare kan välja när det är lämpligt att köra Flash.
 
-### <a name="password-manager"></a>Lösenordshanterare
+### <a name="password-manager"></a>Lösen ords hanteraren
 
-#### <a name="enable-saving-passwords-to-the-password-manager"></a>Aktivera spara lösenord till lösenordshanteraren
+#### <a name="enable-saving-passwords-to-the-password-manager"></a>Aktivera Spara lösen ord i lösen ords hanteraren
 
-**Standardvärde:** Inaktiverad
+**Standardvärde:** Aktiv
 
-Vi rekommenderar inte att låta slutanvändare spara lösenord på sin enhet.
+Vi rekommenderar inte att användarna sparar lösen ord på sina enheter.
+
+### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer-läge i Microsoft Edge
+I IE-läge på Microsoft Edge är det enkelt att använda alla webbplatser som organisationen behöver i en och samma webbläsare. Den integrerade krom motorn används för webbplatser som är kompatibla med krom åter givnings motorn och använder Trident MSHTML-motorn från Internet Explorer 11 (IE11) för webbplatser som inte är eller har beroenden till IE-funktioner. [Läs mer] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+
+Microsoft Managed Desktop gör att Internet Explorer-läget för dina enheter används som standard 
+
+#### <a name="internet-explorer-mode-integration"></a>Integrering med Internet Explorer
+**Standardvärde:** Internet Explorer-läge
+
+Som standard är enheter inställda på att använda Internet Explorer-läge, men du kan konfigurera dem så att de öppnas i ett fristående fönster i Internet Explorer 11. För att ändra detta, spara en supportbegäran.
+
+#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Lägga till webbplatser i webbplats listan för företags lägen
+För att webbplatser ska öppnas i Internet Explorer-läge måste du inkludera dem i [listan med företags webbplatser](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist). Att behålla och distribuera företags plats listan är ditt ansvar. Mer information finns i [Konfigurera använda webbplatsen för webbplats listan för att konfigurera företags läge](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>Andra inställningar
 
-#### <a name="enable-site-isolation-for-every-site"></a>Aktivera webbplatsisolering för varje plats
+#### <a name="enable-site-isolation-for-every-site"></a>Aktivera webbplats isolering för varje webbplats
 
 **Standardvärde:** Aktiverat
 
-När den här principen är aktiverad kan användarna inte välja bort standardbeteendet där varje plats körs i sin egen process.
+När den här principen är aktive rad kan användarna inte välja standard beteendet som varje webbplats körs i sin egen process.
 
 #### <a name="supported-authentication-schemes"></a>Autentiseringsscheman som stöds
 
-**Standardvärde:** NTLM, Förhandla
+**Standardvärde:** NTLM, Negotiate
 
-Microsoft Managed Desktop stöder inte grundläggande autentiserings- eller sammanfattande autentiseringsscheman.
+Microsoft Managed Desktop stöder inte grundläggande och sammanfattad autentisering.
 
-#### <a name="automatically-import-another-browsers-data-and-settings-at-first-run"></a>Importera en annan webbläsares data och inställningar automatiskt vid första körningen
+#### <a name="automatically-import-another-browsers-data-and-settings-at-first-run"></a>Importera data och inställningar från en annan webbläsare automatiskt vid första körningen
 
-**Standardvärde:** Importera alla datatyper och inställningar som stöds automatiskt från standardwebbläsaren 
+**Standardvärde:** Importera automatiskt alla data typer och inställningar från standard webbläsaren 
 
-När den här principen tillämpas hoppar första körningen över importavsnittet, vilket minimerar användarinteraktionen. Webbläsardata från äldre versioner av Microsoft Edge migreras alltid tyst vid den första körningen, oavsett den här inställningen. 
+Med den här policyn hoppar den första körningen över import-delen och minimerar användarnas interaktion. Webb läsar data från äldre versioner av Microsoft Edge migreras alltid tyst vid första körningen, oavsett den här inställningen. 
 
 
 ## <a name="settings-you-manage"></a>Inställningar som du hanterar
 
-Du kan distribuera alla Microsoft Edge-inställningar som inte tidigare beskrivits med hjälp av profilen Administrativa mallar i Microsoft Intune. Mer information finns i [Konfigurera principinställningar för Microsoft Edge med Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Om du vill utvärdera en princip som för närvarande inte ingår i Microsoft Edge Administrativa mallar i Intune kan du använda anpassade inställningar för Windows 10-enheter i Intune.
+Du kan distribuera alla Microsoft Edge-inställningar som inte tidigare har beskrivits med hjälp av profilen för administrativa mallar i Microsoft Intune. Mer information finns i [Konfigurera princip inställningar för Microsoft Edge med Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Om du vill utvärdera en princip som för närvarande inte ingår i Microsoft Edge Administrative Templates i Intune kan du använda anpassade inställningar för Windows 10-enheter i Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Aktivera specifika Chrome-tillägg
 
-Den administrativa mallen erbjuder en inställning för att distribuera vissa Chrome-tillägg med Microsoft Intune. Du hittar den i **datorkonfiguration > Microsoft Edge >-tillägg > tillåt att specifika tillägg installeras**.
+Den administrativa mallen erbjuder en inställning för att distribuera särskilda Chrome-tillägg med Microsoft Intune. Du hittar det i **dator konfiguration > Microsoft Edge >-tillägg > tillåta specifika tillägg att installeras**.
 
 ### <a name="install-extensions-silently"></a>Installera tillägg tyst
 
-Du kan också använda den administrativa mallen för att ange Microsoft Edge för att installera tillägg utan att varna användaren. Du hittar den i **datorkonfiguration > Microsoft Edge >-tillägg > Kontrollerar vilka tillägg som installeras tyst**.
+Du kan också använda den administrativa mallen för att ställa in Microsoft Edge för att installera tillägg utan att användaren meddelas. Du hittar det i **dator konfiguration > Microsoft Edge > extensions > kontrollerar vilka tillägg som installeras tyst**.
 
-### <a name="other-common-enterprise-policies"></a>Andra gemensamma företagspolitiker
+### <a name="microsoft-edge-update-policies"></a>Uppdaterings policy för Microsoft Edge
+Om du vill vara säker på att Microsoft Edge uppdateras korrekt ska du inte ändra Microsofts Edge [Update-principer](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-Microsoft Edge erbjuder många ytterligare policyer. Dessa är några av de vanligaste:
+### <a name="other-common-enterprise-policies"></a>Andra vanliga företags principer
+
+Microsoft Edge erbjuder många fler principer. Här är några av de vanligaste:
  
-- [Konfigurera platser i företagswebbplatslistan och IE-läget](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
-- [Konfigurera inställningar för start, startsida och ny fliksida](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
-- [Konfigurera inställningen Surf spel](https://docs.microsoft.com/deployedge/microsoft-edge-policies#allowsurfgame)
+- [Konfigurera webbplatser i företagets webbplats lista och IE-läge](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
+- [Konfigurera inställningar för start-, start sida och ny flik](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
+- [Konfigurera spel för surfa](https://docs.microsoft.com/deployedge/microsoft-edge-policies#allowsurfgame)
 - [Konfigurera proxyserverinställningar](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proxy-server)
 
