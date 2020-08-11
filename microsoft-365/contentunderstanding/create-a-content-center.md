@@ -1,5 +1,5 @@
 ---
-title: Skapa ett innehållscenter (förhandsgranska)
+title: Skapa ett innehålls Center (för hands version)
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,20 +8,20 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: Läs om hur du skapar ett innehållscenter.
-ms.openlocfilehash: ced47f8029079910479dd9aa5c43b39870a56aea
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+description: Lär dig hur du skapar ett innehålls Center.
+ms.openlocfilehash: 5332ffa195519aebd5ae8dd2c26d7d62fd9b3267
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537902"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612756"
 ---
-# <a name="create-a-content-center-preview"></a>Skapa ett innehållscenter (förhandsgranska)
+# <a name="create-a-content-center-preview"></a>Skapa ett innehålls Center (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln är för Project Cortex Private Preview. [Läs mer om Project Cortex](https://aka.ms/projectcortex).</br>
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).</br>
 
 </br>
 
@@ -29,30 +29,30 @@ ms.locfileid: "46537902"
 
 </br>
 
-Om du vill skapa och hantera dokumentförståelsemodeller behöver du först ett innehållscenter. Innehållscentret är gränssnittet för att skapa modeller och innehåller även information om vilka dokumentbibliotek publicerade modeller som har tillämpats.</br>
+För att skapa och hantera dokument förståelse modeller behöver du först ett innehålls Center. Innehålls centret är gränssnittet för skapande av modell och innehåller information om vilka dokument bibliotek som har publicerats.</br>
 
-   ![Välj ett dokumentbibliotek](../media/content-understanding/content-center-page.png)</br>
+   ![Välj ett dokument bibliotek](../media/content-understanding/content-center-page.png)</br>
 
-Ett första innehållscenter skapas under [installationen,](set-up-content-understanding.md)men en SharePoint-administratör kan välja att skapa ytterligare som behövs. Även om ett enda innehållscenter kan vara bra för miljöer där du vill se en sammanslagning av all modellaktivitet, kanske du vill ha ytterligare om du har flera avdelningar inom organisationen som kan ha olika behov och krav för sina modeller.
+Ett ursprungligt innehålls Center skapas under [installationen](set-up-content-understanding.md), men en SharePoint-administratör kan välja att skapa fler som behövs. Även om det kan vara bra att använda ett enda innehålls Center för miljöer där du vill se en sammanfattning av alla modell aktiviteter, kanske du vill få ytterligare information om din organisation har flera avdelningar som kan ha olika behov och krav för sina modeller.
 
-En SharePoint-administratör kan skapa en webbplats för innehållscentret på samma sätt som de skulle [skapa en annan SharePoint-webbplats](https://docs.microsoft.com/sharepoint/create-site-collection) – via en webbplatsmall.
+En SharePoint-administratör kan skapa en innehålls Center-webbplats som de [skapar andra SharePoint-webbplatser](https://docs.microsoft.com/sharepoint/create-site-collection) – genom en webbplatsmall.
 
-Så här skapar du ett nytt innehållscenter:
+Så här skapar du ett nytt innehålls Center:
 
-1. Gå till administrationscentret för SharePoint i Administrationscentret för Microsoft 365.
-2. Välj **Aktiva webbplatser**under **Webbplatser**i Administrationscentret för SharePoint.
-3. Klicka på **Skapa**på sidan **Aktiva webbplatser** och välj sedan **Andra alternativ**.
-4. Välj **Content Center**på menyn Välj **en mall** .
-5. För den nya webbplatsen anger du ett **webbplatsnamn,** **primär administratör**och ett **språk**.</br>
+1. Gå till administrations centret för SharePoint i administrations centret för Microsoft 365.
+2. Gå till administrations centret för SharePoint och välj **aktiva webbplatser**under **webbplatser**.
+3. På sidan **aktiva webbplatser** klickar du på **skapa**och väljer sedan **andra alternativ**.
+4. Gå till menyn **Välj en mall** och välj **innehålls Center**.
+5. Ange ett **namn**, en **primär administratör**och ett **språk**för den nya webbplatsen.</br>
 
 > [!Note] 
-> Du kan välja en content center-webbplats som du vill återge på något av de tillgängliga språken, men observera att modeller för närvarande bara kan skapas för engelska filer.</br>
+> Du kan välja en innehålls Center webbplats som ska återges på något av de tillgängliga språken, men det går bara att skapa en anteckning för att för engelska filer.</br>
 
-6. Klicka på **Klar**.
+6. Klicka på **klar**.
 
-### <a name="give-access-to-additional-users"></a>Ge åtkomst till ytterligare användare
+### <a name="give-access-to-additional-users"></a>Ge till gång till ytterligare användare
  
-När webbplatsen har skapats kan du ge ytterligare användare åtkomst till webbplatsen via [standardmodellen för SharePoint-webbplatsbehörigheter](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).
+När webbplatsen har skapats kan du ge ytterligare användare åtkomst till webbplatsen via standard modell för SharePoint- [webbplatsens behörigheter](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).
 
 
 
@@ -60,10 +60,10 @@ När webbplatsen har skapats kan du ge ytterligare användare åtkomst till webb
 
 ## <a name="see-also"></a>Se även
 [Skapa en klassificerare](create-a-classifier.md)</br>
-[Skapa en utsutorn](create-an-extractor.md)</br>
-[Skapa ett innehållscenter](create-a-content-center.md) 
- [Översikt över dokuments förståelse](document-understanding-overview.md)</br>
-[Skapa en formulärbearbetningsmodell](create-a-form-processing-model.md)</br>
+[Skapa en Extractor](create-an-extractor.md)</br>
+[Skapa ett innehålls Center](create-a-content-center.md) 
+ [Översikt över dokument förståelse](document-understanding-overview.md)</br>
+[Skapa en modell för formulär bearbetning](create-a-form-processing-model.md)</br>
 [Använda en modell](apply-a-model.md)    
 
 

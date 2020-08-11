@@ -1,6 +1,6 @@
 ---
-title: 'Översikt över ämnescenter (förhandsgranskning) '
-description: Läs mer om ämnescentret.
+title: 'Översikt över avsnitts Center (för hands version) '
+description: Läs mer om ämnes Center.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -10,63 +10,63 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: bbc6a6b63f742939675e366b7fe95aaa3900d30e
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: e9306ff3f797e03422a40ceb189a76dee331ddd9
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540100"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612508"
 ---
-# <a name="topic-center-overview-preview"></a>Översikt över ämnescenter (förhandsgranskning)
+# <a name="topic-center-overview-preview"></a>Översikt över avsnitts Center (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln är för Project Cortex Private Preview. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
 
-Ämnescentret är en modern SharePoint-webbplats som fungerar som ett kunskapscentrum för din organisation. Den skapas under [knowledge management-installationen](set-up-knowledge-network.md) i Microsoft 365 admin center.
+Ämnes Center är en modern SharePoint-webbplats som fungerar som en grupp kunskap för organisationen. Det skapas vid [konfiguration av kunskaps hantering](set-up-knowledge-network.md) i administrations centret för Microsoft 365.
 
-Genom ämnescentret kan användare med rätt behörighet göra följande:
+I ämnes centret kan användare med rätt behörighet göra följande:
 
-- Bekräfta eller avvisa identifierade ämnen
-- Skapa en ny ämnessida
-- Redigera en befintlig ämnessida
+- Bekräfta eller avvisa upptäckta ämnen
+- Skapa en ny ämnes sida
+- Redigera en befintlig ämnes sida
 
 > [!Note] 
-> Du kan läsa mer om varje uppgift i [Arbeta med ämnen i ämnescentret](work-with-topics.md).
+> Du kan läsa mer om varje uppgift i [arbeta med ämnen i ämnes centret](work-with-topics.md).
 
-## <a name="where-is-the-topic-center"></a>Var är ämnescentret
+## <a name="where-is-the-topic-center"></a>Var finns ämnes Center
 
-Ditt ämnescenter skapas under inställningarna för kunskapshantering. När installationen är klar kan en administratör hitta webbadressen på [sidan för hantering av kunskapscenter](manage-knowledge-network.md).
+Ditt ämnes Center skapas under Inställningar för kunskaps hantering. När installationen är slutförd kan administratören hitta URL-adressen på [sidan hantering av kunskaps Center](manage-knowledge-network.md).
 
-1. I administrationscentret för Microsoft 365 väljer du **Inställningar** i navigeringsfönstret och i avsnittet **Organisationskunskap** väljer du **Anslut personer till kunskap**.
+1. I administrations centret för Microsoft 365 väljer du **Konfigurera** i navigerings fönstret och väljer **Anslut personer till kunskap**i avsnittet **organisationsinformation** .
 
    ![Koppla personer till kunskap](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
 
-2. På sidan **Anslut personer till kunskap** läser du i avsnittet **Snabbhet** i **avsnittet Diskussionscenter** för webbadressen.
+2. På sidan **Connect personer to knowledgeation** går du till avsnitts **Center adress** för webbplats-URL: **en** .
 
-## <a name="permissions-to-use-the-topic-center"></a>Behörigheter för att använda ämnescentret
+## <a name="permissions-to-use-the-topic-center"></a>Behörighet att använda ämnes Center
 
-Om du vill arbeta i ämnescentret måste du ha de behörigheter som krävs. Administratören kan tilldela dessa behörigheter till användare under installationen av [kunskapshanteringen](set-up-knowledge-network.md)eller nya användare kan [läggas till efteråt](give-user-permissions-to-the-topic-center.md) av en administratör via Microsoft 365-administrationscentret.
+För att arbeta i ämnes centret måste du ha den behörighet som krävs. Administratören kan tilldela dessa behörigheter till användare under [inställning av kunskaps hantering](set-up-knowledge-network.md), eller så kan nya användare [läggas till senare](give-user-permissions-to-the-topic-center.md) av en administratör via administrations centret för Microsoft 365.
 
-Användare av ämnescenter kan få två uppsättningar behörigheter:
+Användare av ämnes Center kan få två uppsättningar behörigheter:
 
-- **Skapa och redigera ämnen**: Skapa nya ämnen eller uppdatera ämnesinnehåll som beskrivning, dokument och associerade personer. Tilldela den här behörigheten till ämnesexperter som har till uppgift att granska ämnessidor.
-- **Hantera ämnen**: Använd ämnesinstrumentpanelen för att granska ämnen i hela organisationen. Användare kan utföra åtgärder som att bekräfta och avvisa obekräftade ämnen.
+- **Skapa och redigera ämnen**: skapa nya avsnitt eller uppdatera ämnets innehåll som beskrivning, dokument och associerade personer. Tilldela den här behörigheten till ämnes experter som är med i granskningen av ämnes sidor.
+- **Hantera ämnen**: Använd instrument panelen ämne för att granska ämnen i hela organisationen. Användare kan utföra åtgärder som att bekräfta och avvisa obekräftade ämnen.
 
-En användare kan få båda uppsättningarna med behörigheter, eller bara en om det behövs. 
+En användare kan få båda uppsättnings behörigheter eller bara en om det behövs. 
 
-## <a name="reviewing-topics-in-the-topic-dashboard"></a>Granska ämnen i ämnesinstrumentpanelen
+## <a name="reviewing-topics-in-the-topic-dashboard"></a>Granska ämnen i ämnes instrument panelen
 
-På ämnesinstrumentpanelen visas ämnen som har brutits från dina angivna källplatser. Varje ämne visar datumet då ämnet upptäcktes och om någon feedback har lämnats på det. En användare som har tilldelats **behörigheter hantera ämnen** kan granska de obekräftade ämnena och välja att:
-- Bekräfta ämnet: Markerar avsnittet för användare som har åtkomst och låter dem se det associerade ämneskortet och ämnessidan.
-- Avvisa ämnet: Gör ämnet inte tillgängligt för användare. Avsnittet flyttas till fliken **Avvisad** och kan bekräftas senare om det behövs.
+På instrument panelen ämne visas avsnitt som mined från dina angivna käll platser. Varje ämne visar datumet som identifieras och om någon feedback har lämnats in. En användare som har tilldelats **Hantera avsnitts** behörigheter kan granska de obekräftade ämnena och välja att:
+- Bekräfta ämnet: markerar ämnet för användare som har åtkomst till och visar det associerade ämnes-och ämnes sidan.
+- Avvisa ämnet: gör att avsnittet inte är tillgängligt för användarna. Avsnittet flyttas till fliken **avvisad** och kan bekräftas senare om det behövs.
 
 ## <a name="create-or-edit-a-topic"></a>Skapa eller redigera ett ämne
 
-Om du har **behörigheter för skapa och redigera ämnen** kan du välja att:
+Om du har behörigheterna **skapa och redigera ämnen** kan du välja att:
 
-- Redigera befintliga ämnen: Du kan göra ändringar på befintliga ämnessidor som har skapats genom identifiering.
-- Skapa nya ämnen: Du kan skapa nya ämnen för dem som inte hittades genom identifiering, eller om AI-verktyg inte hittade tillräckligt med bevis för att skapa ett ämne.
+- Redigera befintliga ämnen: du kan göra ändringar i befintliga ämnes sidor som skapats genom identifiering.
+- Skapa nya ämnen: du kan skapa nya ämnen för dem som inte hittats via Upptäck, eller om AI-verktygen inte hittade tillräckligt många belägg för att skapa ett ämne.
 
 
 

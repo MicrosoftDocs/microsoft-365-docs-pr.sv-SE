@@ -1,6 +1,6 @@
 ---
-title: 'Konfigurera innehållsförståelse (förhandsgranskning) '
-description: Så här ställer du in Project Cortex.
+title: 'Konfigurera innehålls förståelse (för hands version) '
+description: Så här konfigurerar du Project cortex.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -9,68 +9,68 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fca80e45dfa45ee5da9521854c6eebfbd87d8859
-ms.sourcegitcommit: 91c82a79962387205c4dd4dd8d61322b79fed55f
+ms.openlocfilehash: 5fcc7f78bfc12faae19ce2a3fbc77c4348da01de
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539914"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612708"
 ---
-# <a name="set-up-content-understanding-preview"></a>Konfigurera innehållsförståelse (förhandsgranskning)
+# <a name="set-up-content-understanding-preview"></a>Konfigurera innehålls förståelse (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln är för Project Cortex Private Preview. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
 
-Administratörer kan använda Microsoft 365-administrationscentret för att konfigurera innehållsbeståelse. 
+Administratörer kan använda Microsoft 365 Admin Center för att konfigurera och konfigurera innehålls förståelse. 
 
-Innan du konfigurerar, se till att planera för det bästa sättet att ställa in och konfigurera innehållsförståelse i din miljö. Du måste till exempel ta hänsyn till följande:
-- Vilka SharePoint-webbplatser aktiverar du formulärbearbetning? Alla av dem, vissa, eller välj webbplatser?
-- Namnet på ditt innehållscenter och vem är den primära webbplatsadministratören?
+Innan du konfigurerar dig bör du planera för det bästa sättet att konfigurera och konfigurera innehålls förståelse i din miljö. Till exempel måste du tänka på följande:
+- Vilka SharePoint-webbplatser aktiverar du formulär bearbetning? Alla, vissa eller utvalda webbplatser?
+- Namn på innehålls Center och vem är den primära webbplats administratören?
 
-En administratör kan också göra ändringar i dina valda inställningar när som helst efter installationen genom hanteringsinställningarna för innehålls förståelse i microsoft 365-administrationscentret.
+En administratör kan också göra ändringar i dina valda inställningar när som helst efter installationen via konfigurations inställningarna för innehålls förståelse i administrations centret för Microsoft 365.
 
 
 ## <a name="requirements"></a>Krav 
-Du måste ha behörigheten Global Admin eller SharePoint för att kunna komma åt Microsoft 365-administrationscentret och konfigurera innehållsförståelse.
+Du måste ha global administratör eller administratörs behörighet för SharePoint för att kunna komma åt Microsoft 365 Admin Center och ställa in innehålls förståelse.
 
 
-## <a name="to-set-up-content-understanding"></a>Så här ställer du in innehållsöverensning
+## <a name="to-set-up-content-understanding"></a>Konfigurera innehålls förståelse
 
-1. I administrationscentret för Microsoft 365 väljer du **Installationsprogrammet**och visar sedan avsnittet **Organisationskunskap.**
-2. I avsnittet **Organisatorisk kunskap** väljer du **Automatisera innehållsöverensning**.<br/>
+1. I administrations centret för Microsoft 365 väljer du **Konfigurera**och sedan avsnittet **organisations** information.
+2. I avsnittet **organisationsinformation** väljer du **Automatisera innehålls förståelse**.<br/>
 
-    ![Inställningssida för organisationskunskap](../media/content-understanding/admin-org-knowledge-options.png)</br>
+    ![Sidan för information om organisationens kunskap](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. På sidan **Automatisera innehållsöverenskommelsen** klickar du på **Kom igång** för att gå igenom installationsprocessen.<br/>
+3. På sidan **Automatisera innehålls förståelse** klickar du på **komma igång** för att vägleda dig genom installations processen.<br/>
 
-    ![Börja installationen](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    ![Starta installationen](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 
-4. På sidan **Konfigurera formulärbearbetning** kan du välja om du vill att användarna ska kunna använda AI Builder för att skapa formulärbearbetningsmodeller i specifika SharePoint-dokumentbibliotek. Ett menyalternativ är tillgängligt i menyfliksområdet för dokumentbiblioteket för att **skapa en formulärbearbetningsmodell** i SharePoint-dokumentbibliotek där den är aktiverad.
+4. På sidan **Konfigurera formulär bearbetning** kan du välja om du vill låta användare kunna använda AI-verktyget för att skapa formulär bearbetnings modeller i specifika SharePoint-dokumentbibliotek. Ett meny alternativ är tillgängligt i menyfliksområdet dokument bibliotek för att **skapa en formulär bearbetnings modell** i SharePoint-dokumentbibliotek där den är aktive rad.
  
-     För **vilka SharePoint-bibliotek ska visa alternativet för att skapa en formulärbearbetningsmodell**kan du välja:</br>
-    - **Alla SharePoint-bibliotek** för att göra det tillgängligt för alla SharePoint-bibliotek i din klientorganisation.</br>
-    - **Endast bibliotek på valda platser**och välj sedan de platser där du vill göra det tillgängligt.</br>
-    - **Inga SharePoint-bibliotek** om du för närvarande inte vill göra det tillgängligt för några webbplatser (du kan ändra detta efter installationen).
+     För **vilka SharePoint-bibliotek bör visa alternativ för att skapa en modell för formulär bearbetning**kan du välja:</br>
+    - **Alla SharePoint-bibliotek** som gör det tillgängligt för alla SharePoint-bibliotek i klient organisationen.</br>
+    - **Endast bibliotek på valda webbplatser**och välj de webbplatser som du vill göra tillgänglig för.</br>
+    - **Inga SharePoint-bibliotek** om du inte vill göra det tillgängligt för några webbplatser (du kan ändra det efter installationen).
 </br>
 
-   ![Konfigurera formulärbearbetning](../media/content-understanding/admin-configforms.png)
+   ![Konfigurera formulär bearbetning](../media/content-understanding/admin-configforms.png)
 </br>
 
    > [!Note]
-   > Om du aktiverar den här inställningen i ett SharePoint-dokumentbibliotek påverkas inte befintliga modeller som tillämpas på biblioteket eller möjligheten att tillämpa dokumentöverenstagande modeller i ett bibliotek. 
+   > Om du aktiverar den här inställningen i ett SharePoint-dokumentbibliotek påverkar det inte befintliga modeller som tillämpas på biblioteket eller möjligheten att tillämpa dokument förståelse på ett bibliotek. 
 
     
-5. På sidan **Skapa innehållscenter** kan du skapa en SharePoint-webbplats för innehållscenter där användarna kan skapa och hantera dokumentöverenstagande modeller. </br>
-    a. För **Webbplatsnamn**skriver du det namn som du vill ge webbplatsen för innehållscentret.</br>
-    b. **Webbplatsadressen** visar webbadressen för din webbplats, baserat på vad du valde för webbplatsnamnet.</br>
+5. På sidan **skapa innehålls Center** kan du skapa en SharePoint-webbplats för innehålls Center där användarna kan skapa och hantera dokument förståelse modeller. </br>
+    a. För **webbplats namn**anger du det namn som du vill ge innehålls Center webbplatsen.</br>
+    b. **Webbplats adressen** visar URL-adressen för webbplatsen, baserat på vad du har valt för webbplats namnet.</br>
 
     > [!Note] 
-    > Du kan välja ett språk som stöds, observera att innehållsöverenseringsmodeller endast kan skapas för engelska.</br>
+    > Du kan välja ett språk som stöds, men du kan bara skapa innehålls förstå modeller för engelska.</br>
 
-      ![Skapa innehållscenter](../media/content-understanding/admin-cu-create-cc.png)</br>
+      ![Skapa innehålls Center](../media/content-understanding/admin-cu-create-cc.png)</br>
 
 
     Välj **Nästa**.
@@ -78,9 +78,9 @@ Du måste ha behörigheten Global Admin eller SharePoint för att kunna komma å
 
 
 
-7. Sidan **Innehållsförståelse aktiverad** visas, vilket bekräftar att systemet har lagt till dina inställningar för formulärbearbetning och skapat Content Center-webbplatsen. Välj **Klar**.
+7. Sidan **innehålls förståelse** visas och bekräftar att systemet har lagt till dina inställningar för formulär bearbetning och skapar innehålls Center webbplatsen. Välj **klar**.
 
-8. Du kommer tillbaka till sidan För att **förstå automatisera innehåll.** På den här sidan kan du välja **Hantera** om du vill göra ändringar i konfigurationsinställningarna. 
+8. Du kommer att återföras till sidan **Automatisera innehålls förståelse** . Från den här sidan kan du välja **Hantera** för att ändra dina konfigurations inställningar. 
 
 ## <a name="see-also"></a>Se även
 

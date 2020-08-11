@@ -1,5 +1,5 @@
 ---
-title: Använda en dokumentförståelsemodell i ett dokumentbibliotek (förhandsgranskning)
+title: Använda en dokument förståelse för ett dokument bibliotek (för hands version)
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,20 +8,20 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lär dig hur du använder en publicerad modell i ett SharePoint-dokumentbibliotek.
-ms.openlocfilehash: 7e5f3f02c2679769515b27026918a15c901c896e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537911"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612686"
 ---
-# <a name="apply-a-document-understanding-model-preview"></a>Använda en modell för dokumentförståelse (förhandsgranskning)
+# <a name="apply-a-document-understanding-model-preview"></a>Använda en modell för dokument förståelse (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln är för Project Cortex Private Preview. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -29,56 +29,56 @@ ms.locfileid: "46537911"
 
 </br>
 
-När du har publicerat dokumentförståelsemodellen kan du använda den på ett SharePoint-dokumentbibliotek i microsoft 365-klienten.
+När du har publicerat din dokument förståelse kan du tillämpa den på ett SharePoint-dokumentbibliotek i Microsoft 365-klient organisationen.
 
 > [!Note]
-> Du kan bara använda modellen på dokumentbibliotek som du har åtkomst till.
+> Du kan bara använda modellen för dokument bibliotek som du har åtkomst till.
 
 
-## <a name="apply-your-model-to-a-document-library"></a>Använd modellen på ett dokumentbibliotek.
+## <a name="apply-your-model-to-a-document-library"></a>Tillämpa modellen på ett dokument bibliotek.
 
-Så här använder du modellen på ett SharePoint-dokumentbibliotek:
+Så här använder du modellen till i ett SharePoint-dokumentbibliotek:
 
-1. På modellens startsida väljer du **Publicera modell**på panelen Använd modell **på bibliotek** . Du kan också välja **+Lägg till bibliotek** i **biblioteken med det här** modellavsnittet. </br>
+1. På Start sidan för modellen väljer du **publicera modell**på panelen **Använd modell på bibliotek** . Eller så kan du välja **+ Lägg till bibliotek** i **biblioteken med den här modellen** . </br>
 
-    ![Lägga till modell i biblioteket](../media/content-understanding/apply-to-library.png)</br>
+    ![Lägga till modell i bibliotek](../media/content-understanding/apply-to-library.png)</br>
 
-2. Du kan sedan välja den SharePoint-webbplats som innehåller det dokumentbibliotek som du vill använda modellen på. Om webbplatsen inte visas i listan använder du sökrutan för att hitta den.</br>
+2. Du kan sedan välja den SharePoint-webbplats som innehåller det dokument bibliotek som du vill använda modellen för. Om webbplatsen inte visas i listan kan du använda rutan Sök för att hitta den.</br>
 
     ![Välj en webbplats](../media/content-understanding/site-search.png)</br>
 
     > [!Note]
-    > Du måste ha behörigheten *Hantera lista* eller *Redigera* rättigheter till det dokumentbibliotek som du använder modellen på.</br>
+    > Du måste ha behörigheten *Hantera lista* eller *Redigera* rättigheter till det dokument bibliotek som du tillämpar modellen på.</br>
 
-3. När du har valt webbplatsen måste du välja det dokumentbibliotek som du vill använda modellen på. I exemplet väljer vi *dokumentbiblioteket Dokument* från webbplatsen *Contoso Case Tracking.*</br>
+3. När du har valt webbplatsen måste du välja det dokument bibliotek som du vill tillämpa modellen på. I exemplet väljer *vi dokument biblioteket* på webbplatsen *contoso ärende uppföljning* .</br>
 
-    ![Välj ett dokumentbibliotek](../media/content-understanding/select-doc-library.png)</br>
+    ![Välj ett dokument bibliotek](../media/content-understanding/select-doc-library.png)</br>
 
-4. Eftersom modellen är kopplad till en innehållstyp skapas en vy för innehållstypen när du använder den på biblioteket med etiketterna som du extraherade som kolumner. Den här vyn blir bibliotekets standardvy som standard, men du kan välja att inte ha det som standardvy genom att välja **Avancerade inställningar** och avmarkera Ange den **nya vyn som standard**.</br>
+4. Eftersom modellen är kopplad till en innehålls typ skapas en vy för innehålls typen när du använder den i biblioteket och etiketterna du extraherade visas som kolumner. Den här vyn blir bibliotekets standardvy, men du kan välja att inte använda den som standardvy genom att välja **Avancerade inställningar** och avmarkera **Ange den här nya vyn som standard**.</br>
 
-    ![Biblioteksvy](../media/content-understanding/library-view.png)</br>
+    ![Vyn bibliotek](../media/content-understanding/library-view.png)</br>
 
-5. Välj **Lägg till** om du vill använda modellen på biblioteket. 
-6. På modellens startsida visas URL:en till SharePoint-webbplatsen i avsnittet **Bibliotek med den här modellen.**</br>
+5. Välj **Lägg till** för att tillämpa modellen på biblioteket. 
+6. På Start sidan för modeller i avsnittet **bibliotek med den här modellen** visas URL-adressen till den SharePoint-webbplats som visas.</br>
 
-    ![Biblioteksvy](../media/content-understanding/selected-library.png)</br>
+    ![Vyn bibliotek](../media/content-understanding/selected-library.png)</br>
 
-7. Gå till dokumentbiblioteket och se till att du är i modellens dokumentbiblioteksvy. Du kommer att märka att om du väljer informationsknappen bredvid dokumentbibliotekets namn kommer ett meddelande att notera att din modell har tillämpats på dokumentbiblioteket.
+7. Gå till dokument biblioteket och kontrol lera att du är i modellens dokument bibliotek. Om du väljer knappen information intill dokument bibliotekets namn ser ett meddelande om att din modell har lagts till i dokument biblioteket.
 
-    ![Biblioteksvy](../media/content-understanding/info-du.png)</br> 
+    ![Vyn bibliotek](../media/content-understanding/info-du.png)</br> 
 
 
-När du har använt modellen på dokumentbiblioteket kan du börja ladda upp dokument till webbplatsen och se resultaten.
+När du har använt modellen i dokument biblioteket kan du börja överföra dokument till webbplatsen och se resultatet.
 
-Modellen identifierar alla filer med modellens associerade innehållstyp och listar dem i vyn. Om din modell har några utsug visas kolumner för de data som du extraherar från varje fil.
+Modellen identifierar alla filer med modellens associerade innehålls typ och visar dem i vyn. Om modellen har några utdrag visar vyn kolumner för de data du extraherar från varje fil.
 
-### <a name="apply-the-model-to-files-already-in-the-document-library"></a>Använda modellen på filer som redan finns i dokumentbiblioteket
+### <a name="apply-the-model-to-files-already-in-the-document-library"></a>Tillämpa modellen på filer som redan finns i dokument biblioteket
 
-Medan en tillämpad modell bearbetar alla filer som överförs till dokumentbiblioteket när den har tillämpats, kan du också göra följande för att köra modellen på filer som redan fanns i dokumentbiblioteket innan modellen tillämpas:
+När en tillämpad modell bearbetar alla filer som laddas upp till dokument biblioteket efter att den har tillämpats, kan du även göra följande för att köra modellen på filer som redan fanns i dokument biblioteket innan modellen tillämpas:
 
-1. Markera de filer som du vill bearbeta av modellen i dokumentbiblioteket.
-2. När du har markerat dina filer visas **klassificera och extrahera** i menyfliksområdet för dokumentbiblioteket. Välj **Klassificera och extrahera**.
-3. De filer du har valt läggs till i kön som ska bearbetas.
+1. Markera de filer som du vill bearbeta i din modell i dokument biblioteket.
+2. När du har valt filer visas **klassificering och utdrag** i menyfliksområdet dokument bibliotek. Välj **klassificera och extrahera**.
+3. De filer du valde kommer att läggas till i kön som ska bearbetas.
 
       ![Klassificera och extrahera](../media/content-understanding/extract-classify.png)</br> 
 
@@ -88,9 +88,9 @@ Medan en tillämpad modell bearbetar alla filer som överförs till dokumentbibl
 
 ## <a name="see-also"></a>Se även
 [Skapa en klassificerare](create-a-classifier.md)</br>
-[Skapa en utsutorn](create-an-extractor.md)</br>
-[Översikt över dokuments förståelse](document-understanding-overview.md)</br>
-[Skapa en formulärbearbetningsmodell](create-a-form-processing-model.md)  
+[Skapa en Extractor](create-an-extractor.md)</br>
+[Översikt över dokument förståelse](document-understanding-overview.md)</br>
+[Skapa en modell för formulär bearbetning](create-a-form-processing-model.md)  
 
 
 

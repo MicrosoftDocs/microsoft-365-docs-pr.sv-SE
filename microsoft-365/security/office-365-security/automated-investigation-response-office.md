@@ -1,5 +1,5 @@
 ---
-title: Översikt över automatisk undersökning och respons (AIR)
+title: Automatisk undersökning och svar (luft) Översikt
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -13,130 +13,130 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Få en översikt över automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
+description: Få en översikt över automatiserade undersökningar och svars funktioner i Office 365 Avancerat skydds plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c977aa3f57c981cdc29037ca6f9f7803b7accd03
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208917"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601903"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>En översikt över automatisk undersökning och svar (AIR) i Microsoft 365
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>En översikt över automatiserad undersökning och svar (AIR) i Microsoft 365
 
-När säkerhetsaviseringar utlöses är det upp till säkerhetsoperationsteamet att titta på dessa aviseringar och vidta åtgärder för att skydda din organisation. Ibland kan säkerhetsoperationsteam känna sig överväldigade av mängden aviseringar som utlöses. Automatiserade funktioner för undersökning och svar (AIR) kan hjälpa till. AIR gör det möjligt för ditt säkerhetsteam att arbeta mer effektivt och ändamålsenligt. AIR-funktioner inkluderar automatiserade undersökningsprocesser som svar på välkända hot som finns idag. Lämpliga åtgärder väntar på godkännande, så att säkerhetsoperationsgruppen kan svara på upptäckta hot. 
+När säkerhets varningar utlöses är det upp till din säkerhets åtgärds grupp för att titta på dessa meddelanden och vidta åtgärder för att skydda din organisation. Ibland kan säkerhets Operations teamen bli försäkrade av volymen av de larm som utlöses. Automatiserade undersökningar och svar (AIR) kan hjälpa dig. AIR gör det möjligt för din säkerhets plan att fungera mer effektivt och effektivt. FLYGTRAFIK funktioner inkluderar automatiserade undersökningar som svar på välkända hot som existerar idag. Lämpliga reparations åtgärder väntar på godkännande och gör det möjligt för ditt säkerhets arbete att reagera på identifierade hot. 
 
-Den här artikeln innehåller en översikt över AIR. När du är redo att komma igång med AIR läser du [Undersök och svara på hot automatiskt](office-365-air.md).
+Den här artikeln innehåller en översikt över luft. När du är redo att komma igång med AIR läser du [automatiskt och svarar på hot](office-365-air.md).
 
 ## <a name="at-a-high-level"></a>På en hög nivå
 
-När aviseringar utlöses träder säkerhetsspelböcker i kraft. Beroende på situationen kan en [automatiserad undersökningsprocess påbörjas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) Under och efter en automatiserad undersökning rekommenderas [åtgärder för reparation.](air-remediation-actions.md) Inga åtgärder vidtas automatiskt i Office 365 Advanced Threat Protection. Säkerhetsåtgärdsteamet granskar och [godkänner eller avvisar](air-review-approve-pending-completed-actions.md)sedan varje åtgärd , och när detta är klart slutförs varje undersökning. Alla dessa aktiviteter spåras och kan visas i Security & Compliance Center (se [Visa information om en undersökning).](air-view-investigation-results.md#view-details-of-an-investigation)
+När notifieringar utlöses blir säkerhets playbooks träder i kraft. Beroende på situationen kan en [automatiserad undersöknings process](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) påbörjas. Under och efter en automatisk undersökning rekommenderas [reparations åtgärder](air-remediation-actions.md) . Inga åtgärder vidtas automatiskt i Office 365 Avancerat skydd. Din säkerhets Operations team granskar och [godkänner eller avvisar varje åtgärd](air-review-approve-pending-completed-actions.md)för att åtgärda och när det sker utförs varje undersökning. Alla de här aktiviteterna spåras och visas i avsnittet om säkerhets & efterlevnad (se [detaljerad information om en undersökning](air-view-investigation-results.md#view-details-of-an-investigation)).
 
-I följande avsnitt finns mer information om aviseringar, säkerhetsspelböcker och exempel på AIR i aktion.
+I följande avsnitt finns mer information om aviseringar, säkerhets playbooks och flyg exempel.
 
 ## <a name="alerts"></a>Varningar
 
-[Aviseringar](../../compliance/alert-policies.md#viewing-alerts) representerar utlösare för säkerhetsoperationsteamarbetsflöden för incidenthantering. Att prioritera rätt uppsättning varningar för utredning, samtidigt som man ser till att inga hot inte åtgärdas är en utmaning. När undersökningar av aviseringar utförs manuellt måste säkerhetsoperationsteam jaga och korrelera entiteter (till exempel innehåll, enheter och användare) som riskerar att hotas. Sådana uppgifter och arbetsflöden kan vara mycket tidskrävande och involvera flera verktyg och system. Med AIR automatiseras utredning och svar för säkerhetshändelser genom att viktiga säkerhets- och hothanteringsvarsvarsvarningar utlöser spelböcker för säkerhetssvar automatiskt. 
+[Aviseringar](../../compliance/alert-policies.md#viewing-alerts) representerar utlösare för säkerhets åtgärds team arbets flöden för samtals svar. Prioritera de rätta uppsättningarna med aviseringar och kontrol lera att inga hot är avadresserade är utmanande. När undersökningar av notifieringar utförs manuellt måste säkerhets åtgärds teamerna nå och korrelera enheter (till exempel innehåll, enheter och användare) till risk för hot. Sådana uppgifter och arbets flöden kan vara mycket tidsödande och involvera flera verktyg och system. Med luft, undersökning och svar för säkerhets händelser automatiseras genom att viktiga säkerhets-och Threat Management Alerts playbooks automatiskt. 
 
-För närvarande för AIR undersöks aviseringar som genereras från följande typer av varningsprinciper automatiskt:  
+För närvarande är det automatiskt undersökta notifieringar som genereras från följande typer av larm principer:  
 
-- Ett potentiellt skadligt URL-klick upptäcktes
-- E-post som rapporteras av användaren som phish*
-- E-postmeddelanden som innehåller skadlig kod som tagits bort efter leverans*
-- E-postmeddelanden som innehåller phish webbadresser som tagits bort efter leverans*
-- Misstänkta e-postutskicksmönster har upptäckts #
-- Användare som är begränsad från att skicka e-post #
-
-> [!NOTE]
-> Aviseringarna som markerats med en asterisk (*) tilldelas en *informations allvarlighetsgrad* i respektive varningsprinciper i Security & Compliance Center, med e-postmeddelanden inaktiverade. E-postmeddelanden kan aktiveras via [konfiguration av aviseringsprincip](../../compliance/alert-policies.md#alert-policy-settings). Aviseringar som är markerade med en hash (#) är allmänt tillgängliga aviseringar som är associerade med offentliga förhandsversionsspelböcker.
-
-Om du vill visa aviseringar väljer du Aviseringar **Alerts**  >  **visa aviseringar**i Säkerhets- & Compliance Center . Välj en avisering om du vill visa dess information och därifrån använd **länken Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
+- En potentiellt skadlig URL-adress klickning upptäcktes
+- E-post som rapporter ATS av användaren som Phish *
+- E-postmeddelanden som innehåller skadlig kod tas bort efter leverans *
+- E-postmeddelanden som innehåller Phish-URL: er som tas bort efter leverans *
+- Misstänkta e-postskickade mönster #
+- Användare begränsad från att skicka e-post #
 
 > [!NOTE]
-> Informationsaviseringar döljs som standard i varningsvyn. Om du vill se dem ändrar du varningsfiltreringen så att informationsaviseringar inkluderas.
+> Aviseringar som är markerade med en asterisk (*) har tilldelats en allvarlighets grad för *information* i respektive larm policy i säkerhets & efterlevnad, med e-postaviseringar inaktiverade. E-postaviseringar kan aktive ras genom [konfigurering av aviserings principer](../../compliance/alert-policies.md#alert-policy-settings). Aviseringar som marker ATS med en hash (#) är allmänt tillgängliga för de offentliga förhands gransknings playbooks.
 
-Om din organisation hanterar dina säkerhetsaviseringar via ett varningshanteringssystem, tjänsthanteringssystem eller SIEM-system (Security Information and Event Management) kan du skicka aviseringar till det systemet via e-postmeddelanden eller via [API:et för office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Utredningens varningsmeddelanden via e-post eller API innehåller länkar för att komma åt aviseringarna i Security & Compliance Center, vilket gör att den tilldelade säkerhetsadministratören snabbt kan navigera till undersökningen.
+Om du vill visa aviseringar väljer du **varningar**i avsnittet säkerhet & efterlevnad  >  **View alerts**. Välj en avisering om du vill visa dess uppgifter och därifrån kan du använda länken **Visa undersökning** för att gå till motsvarande [undersökning](air-view-investigation-results.md#investigation-graph).  
 
-![Varningar som länkar till utredningar](../../media/air-alerts-page-details.png) 
+> [!NOTE]
+> Informations varningar döljs som standard i vyn avisering. För att se dem kan du ändra varnings filtreringen så att den innehåller informations aviseringar.
 
-## <a name="security-playbooks"></a>Spelböcker för säkerhet
+Om din organisation hanterar dina säkerhets varningar via ett system för aviserings hantering, tjänst hanterings system eller SIEM (Security information and Event Management) kan du skicka aviseringar till det systemet via ett e-postmeddelande eller via [API för hanterings aktivitet i Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Undersöknings aviseringar via e-post eller API innehåller länkar för åtkomst till aviseringarna i säkerhets & Compliance Center, vilket gör att den tilldelade säkerhets administratören snabbt kan navigera till undersökningen.
 
-Säkerhetsuppspelningsböcker är backend-principer som är kärnan i automatiseringen i Office Advanced Threat Protection och Microsoft Threat Protection. Säkerhetsspelböckerna i AIR baseras på vanliga verkliga säkerhetsscenarier och utvecklas baserat på feedback från säkerhetsteam. En säkerhetsuppspelningsbok startas automatiskt när specifika aviseringar utlöses inom organisationen. När aviseringen utlöses körs den associerade spelboken av air-systemet (Automated Investigation and Response). Undersökningen går igenom en analys av aviseringen baserat på den specifika aviseringens spelbok och tittar på alla associerade metadata (inklusive e-postmeddelanden, användare, ämnen, avsändare osv.). Baserat på undersökningsuppspelningsbokens resultat rekommenderar AIR en uppsättning åtgärder som organisationens säkerhetsteam kan vidta för att kontrollera och minska hotet. 
+![Aviseringar som länkar till undersökningar](../../media/air-alerts-page-details.png) 
 
-De säkerhetsspelböcker du får med AIR är utformade för att hantera de vanligaste hoten som organisationer möter idag med e-post. De baseras på indata från team för säkerhetsoperationer och incidenthantering, inklusive de som hjälper till att försvara Microsoft och våra kunders tillgångar.
+## <a name="security-playbooks"></a>Säkerhets playbooks
 
-### <a name="security-playbooks-are-rolling-out-in-phases"></a>Säkerhet playbooks rullas ut i faser
+Säkerhets playbooks är backend-principer som är till för att fungera i automatiserings syfte i Office-Avancerat skydd och skydd mot Microsoft Threat. De säkerhets playbooks som tillhandahålls i AIR är baserade på vanliga scenarier för verklig säkerhet och utvecklad utifrån feedback från team för säkerhets åtgärder. En säkerhets Playbook startas automatiskt när specifika aviseringar utlöses inom din organisation. När notifieringen utlöses körs den associerade Playbook av den automatiska undersöknings-och svars systemet. Undersöknings stegen genom analys av aviseringen baserat på den specifika aviseringens Playbook, som visar alla associerade metadata (inklusive e-postmeddelanden, användare, ämnen, avsändare osv.). På grund av undersökningen playbooks resultat rekommenderar AIR en uppsättning åtgärder som organisationens säkerhets team kan vidta för att kontrol lera och minska hotet. 
 
-Som en del av AIR, säkerhet spelböcker rullas ut i faser. Fas 1 är nu allmänt tillgänglig och innehåller flera spelböcker som ger rekommendationer för åtgärder som säkerhetsadministratörer kan granska och godkänna:
+Playbooks som du får med flyg är avsedda att klara de hot som organisationer drabbar idag med e-post. De baseras på inmatningar från säkerhets åtgärder och arbets grupps svar, inklusive de som hjälper till att försvara Microsoft och våra kunders till gångar.
 
-- Användarrapporterat phish-meddelande
-- URL klicka dom förändring
-- Malware upptäckt efter leverans (Malware ZAP)
-- Phish upptäckt efter leverans ZAP (Phish ZAP)
+### <a name="security-playbooks-are-rolling-out-in-phases"></a>Säkerhets playbooks tas upp i faser
 
-Fas 1 innehåller även stöd för administratörsutlösta e-postundersökningar (med [Threat Explorer).](threat-explorer.md)
+Som en del av luft bevaras säkerhets playbooks i faser. Fas 1 är nu allmänt tillgänglig och innehåller flera playbooks som ger rekommendationer för åtgärder som säkerhets administratörer kan granska och godkänna:
 
-Fas 2 går nu vidare med följande spelböcker i **den offentliga förhandsversionen,** ger rekommendationer för åtgärder och hjälper säkerhetsadministratörer att undersöka problem:
+- Rapporterat Phish meddelande
+- URL-adress klicka Verdict ändra
+- Skadlig kod identifierad efter leverans (malware, ZAP)
+- Phish upptäckte att det är en Phish
 
-- Användare som rapporterats som komprometterade (offentlig förhandsversion)
+Fas 1 inkluderar stöd för administratörer som utlöser e-postutredning (med hjälp av [Threat Explorer](threat-explorer.md)).
 
-Ytterligare spelböcker kommer att släppas när de är klara. Besök [Översikten över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) för att se vad som planeras och kommer snart.
+Fas 2 fortskrider nu med följande playbooks i **offentlig för hands version**och ger rekommendationer för åtgärder och aiding säkerhets administratörer för att undersöka problem:
 
-### <a name="playbooks-include-investigation-and-recommendations"></a>Spelböcker inkluderar undersökning och rekommendationer
+- Användare som rapporter ATS som kompromissad (offentlig för hands version)
 
-I AIR innehåller varje säkerhetsspelbok: 
+Ytterligare playbooks kommer att frisläppas när de har slutförts. Besök [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap) för att se vad mer som är planerat och kommer snart.
 
-- En rotundersökning av ett e-postmeddelandes enheter (filer, webbadresser, mottagare, IP-adresser osv.).
-- ytterligare jakt på liknande e-postmeddelanden som mottagits av organisationen 
-- åtgärder som vidtagits för att identifiera och korrelera andra potentiella hot, och 
-- rekommenderade åtgärder för att åtgärda hot.
+### <a name="playbooks-include-investigation-and-recommendations"></a>Playbooks innehåller undersökningar och rekommendationer
 
-Varje steg på hög nivå innehåller ett antal understeg som utförs för att ge ett djupt, detaljerat och uttömmande svar på hot.
+I luft inkluderar varje säkerhets Playbook: 
 
-## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: Ett användarrapporterat phish-meddelande startar en undersökningsspelbok
+- en rot undersökning av ett e-postmeddelandes enheter (filer, URL: er, mottagare, IP-adresser osv.).
+- ytterligare jakt efter liknande e-postmeddelanden som tas emot av organisationen 
+- steg som vidtogs för att identifiera och korrelera andra potentiella hot. 
+- rekommenderade hot åtgärds åtgärder.
 
-Anta att en användare i organisationen får ett e-postmeddelande som de tror är ett nätfiskeförsök. Användaren, som är tränad att rapportera sådana meddelanden, använder [tillägget Rapportmeddelande](enable-the-report-message-add-in.md) för att skicka det till Microsoft för analys. Inlämningen skickas också till ditt system och visas i Utforskaren i **vyn Inlämningar** (tidigare kallad **användarrapporterad** vy). Dessutom utlöser det användarrapporterade meddelandet nu en systembaserad informationsavisering, som automatiskt startar undersökningsuppspelningsboken.
+Varje steg i hög nivå innehåller ett antal under steg som utförs för att ge ett djupgående, detaljerat och komplett svar på hot.
 
-Under rotutredningsfasen bedöms olika aspekter av e-postmeddelandet. De omfattar:
+## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: ett användardefinierat Phish meddelande öppnar en undersökning Playbook
 
-- En bestämning om vilken typ av hot det kan vara;
-- Vem sände den;
-- Var e-postmeddelandet skickades från (skicka infrastruktur);
-- Om andra instanser av e-postmeddelandet levererades eller blockerades.
-- En bedömning från våra analytiker;
-- Om e-postmeddelandet är associerat med kända kampanjer.
-- med mera.
+Anta att en användare i din organisation får ett e-postmeddelande om att de tycker är ett nät fiske försök. Användaren, utbildad att rapportera sådana meddelanden, använder [tillägget rapport meddelande](enable-the-report-message-add-in.md) för att skicka det till Microsoft för analys. Överföringen skickas också till ditt system och visas i Utforskaren i vyn för **skickade** samtal (kallades tidigare vyn **användare-rapporterad** ). Dessutom utlöser det användardefinierade meddelandet en systembaserad informations avisering, som automatiskt startar undersökningen Playbook.
 
-När rotundersökningen är klar innehåller spelboken en lista över rekommenderade åtgärder som ska vidtas på det ursprungliga e-postmeddelandet och entiteterna som är associerade med den.
+Under den här fasen av rot undersökningen bedöms olika delar av e-postmeddelandet. De omfattar:
+
+- En analys av vilken typ av hotet det är.
+- Vem skickade det;
+- Varifrån e-postmeddelandet skickades (med infrastruktur);
+- Om andra instanser av e-postmeddelandet levererades eller blockerades;
+- En utvärdering från våra analytiker;
+- Om e-postmeddelandet är kopplat till alla kända kampanjer;
+- och mycket annat.
+
+När du har slutfört rot undersökningen tillhandahåller Playbook en lista över rekommenderade åtgärder att vidta på den ursprungliga e-postmeddelandet och de enheter som är kopplade till den.
   
-Därefter utförs flera hotutredningar och jaktsteg:
+Nu utförs flera hot undersökningar och jakt steg:
 
-- Liknande e-postmeddelanden identifieras via e-postklustersökningar.
+- Likartade e-postmeddelanden identifieras via e-postklusters ökning.
 - Signalen delas med andra plattformar, till exempel [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
-- En bedömning görs om huruvida några användare har klickat igenom några skadliga länkar i misstänkta e-postmeddelanden.
-- En kontroll görs i Exchange Online Protection[(EOP)](exchange-online-protection-overview.md)och Office 365 Advanced Threat Protection[(ATP)](office-365-atp.md)för att se om det finns några andra liknande meddelanden som rapporterats av användare.
-- En kontroll görs för att se om en användare har komprometterats. Den här kontrollen utnyttjar signaler över Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)och Azure Active [Directory](https://docs.microsoft.com/azure/active-directory), korrelerar relaterade avvikelser i användaraktiviteten.
+- En bestämning görs på om en användare har klickat på några illasinnade länkar i misstänkta e-postmeddelanden.
+- En kontroll görs med Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) och Office 365 Avancerat skydd ([ATP](office-365-atp.md)) för att se om det finns andra liknande meddelanden som rapporteras av användarna.
+- En kontroll görs för att se om en användare har fått ett problem. Den här kontrollen används för att utnyttja signaler mellan Office 365, [Microsoft Cloud App-säkerhet](https://docs.microsoft.com/cloud-app-security)och [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), som korrelerar relaterade användar aktiviteter.
 
-Under jaktfasen sätts risker och hot på olika jaktsteg. 
+Under jakt fasen är riskerna och hot tilldelade till olika jakt steg. 
 
-Reparation är den sista fasen av spelboken. Under denna fas vidtas saneringsåtgärder på grundval av utrednings- och jaktfaserna. 
+Reparation är den sista fasen i Playbook. Under den här fasen vidtas reparations steg, baserat på undersökningen och jakt faserna. 
 
-## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Exempel: En säkerhetsadministratör utlöser en undersökning från Threat Explorer
+## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Exempel: en säkerhets administratör utlöser en undersökning från Threat Explorer
 
-Förutom automatiska undersökningar som utlöses av en avisering kan organisationens säkerhetsoperationsteam utlösa en automatisk undersökning från en vy i [Threat Explorer](threat-explorer.md).
+Förutom automatiska utredningar som utlöses av en avisering kan organisationens säkerhets åtgärds team utlösa en automatisk undersökning från en vy i [Threat Explorer](threat-explorer.md).
 
-Anta till exempel att du använder vyn **Skadlig kod** i Threat Explorer. Med hjälp av flikarna under diagrammet väljer du fliken **E-post.** Om du markerar ett eller flera objekt i listan aktiveras knappen **+ Åtgärder.** 
+Antag till exempel att du använder vyn **mot skadlig kod** i Threat Explorer. Använd flikarna nedanför diagrammet och välj fliken **e-post** . Om du markerar ett eller flera objekt i listan aktive ras knappen **+-åtgärder** . 
 
-:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorer med markerade meddelanden":::
+![Utforskaren med valda meddelanden](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Med hjälp av menyn **Åtgärder** kan du välja **Utlösarundersökning**.
+Med menyn **åtgärder** kan du välja **Utlös ande undersökning**.
 
-:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Åtgärdsmenyn för markerade meddelanden":::
+![Menyn åtgärder för valda meddelanden](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
-I likhet med spelböcker som utlöses av en avisering innehåller automatiska undersökningar som utlöses från en vy i Explorer en rotundersökning, steg för att identifiera och korrelera hot och rekommenderade åtgärder för att minska dessa hot.
+På liknande sätt som playbooks utlöst av en avisering, inkluderar automatiska utredningar som utlöses från en vy i Utforskaren en rot undersökning, steg för att identifiera och korrelera hot och rekommenderade åtgärder för att minska dessa hot.
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Komma igång med AIR](office-365-air.md)
+- [Komma igång med luft](office-365-air.md)
 
-- [Besök Översikten över Microsoft 365 för att se vad som kommer snart och rulla ut](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Besök Microsoft 365-översikten för att se vad som kommer snart och lanseras](https://www.microsoft.com/microsoft-365/roadmap?filters=)

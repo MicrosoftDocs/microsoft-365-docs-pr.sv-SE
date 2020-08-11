@@ -1,6 +1,6 @@
 ---
-title: 'Hantera kunskapshanteringsnätverket(Förhandsgranska) '
-description: Så här ställer du in Knowledge Management.
+title: 'Hantera din kunskaps Management Network (för hands version) '
+description: Så här konfigurerar du kunskaps hantering.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -10,115 +10,115 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: 87275dba78ab402a9ea9553198ce1a84072e3351
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: af53f4d563d286ad29138f935fbb69aa10b902ca
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540124"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612626"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>Hantera ditt kunskapshanteringsnätverk (förhandsversion)
+# <a name="manage-your-knowledge-management-network-preview"></a>Hantera din kunskaps Management Network (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln är för Project Cortex Private Preview. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
 
 
-När du [har konfigurerat kunskapshantering](set-up-knowledge-network.md)kan en administratör när som helst efteråt göra justeringar i konfigurationsinställningarna via administrationscentret för Microsoft 365.
+När du [har konfigurerat kunskaps hanteringen](set-up-knowledge-network.md)kan du när som helst göra ändringar i konfigurations inställningarna via administrations centret för Microsoft 365.
 
-Du kan till exempel behöva justera inställningarna för något av följande:
-- Lägg till nya SharePoint-källor i mina ämnen.
+Du kan till exempel behöva justera dina inställningar för något av följande:
+- Lägga till nya SharePoint-källor i mina avsnitt.
 - Ändra vilka användare som ska ha åtkomst till ämnen.
-- Ändra vilka användare som har behörighet att utföra uppgifter i ämnescentret.
-- Ändra namnet på ditt ämnescenter
+- Ändra vilka användare som har behörighet att utföra uppgifter i ämnes centret.
+- Ändra namnet på ämnes Center
 
 
 ## <a name="requirements"></a>Krav 
-Du måste ha behörigheten Global admin eller SharePoint för att kunna komma åt Microsoft 365-administrationscentret och hantera organisatoriska kunskapsuppgifter.
+Du måste ha global administratör eller administratörs behörighet för SharePoint för att kunna komma åt Microsoft 365 Admin Center och hantera organisationens kunskaps uppgifter.
 
 
-## <a name="to-access-knowledge-management-settings"></a>Så här kommer du åt kunskapshanteringsinställningarna:
+## <a name="to-access-knowledge-management-settings"></a>Så här använder du inställningar för kunskaps hantering:
 
-1. I administrationscentret för Microsoft 365 väljer du **Installationsprogrammet**och visar sedan avsnittet **Organisationskunskap.**
-2. Klicka på Anslut personer **till kunskap**i avsnittet **Organisationskunskap.**<br/>
+1. I administrations centret för Microsoft 365 väljer du **Konfigurera**och sedan avsnittet **organisations** information.
+2. I avsnittet **organisationsinformation** klickar du på **Anslut personer till kunskap**.<br/>
 
     ![Koppla personer till kunskap](../media/content-understanding/admin-org-knowledge-options.png) </br>
 
-3. På sidan **Anslut personer till kunskap** väljer du **Hantera** för att öppna fönstret Inställningar **för kunskapsnätverk.**<br/>
+3. På sidan **Anslut personer till kunskap** väljer du **Hantera** för att öppna fönstret **kunskaps nätverks inställningar** .<br/>
 
-    ![inställningar för kunskapsnätverk](../media/content-understanding/knowledge-network-settings.png) </br>
+    ![kunskap – nätverks inställningar](../media/content-understanding/knowledge-network-settings.png) </br>
 
-## <a name="change-how-the-knowledge-network-can-find-topics"></a>Ändra hur kunskapsnätverket kan hitta ämnen
+## <a name="change-how-the-knowledge-network-can-find-topics"></a>Ändra hur kunskaps nätverket hittar ämnen
 
-Välj fliken **Ämnesidentifiering** om du vill uppdatera dina alternativ för SharePoint-ämneskällor. Med den här inställningen kan du välja de SharePoint-platser i din klientorganisation som ska genomsökas och brytas för ämnen.
+Välj fliken **identifiering** om du vill uppdatera dina val för avsnitts källor i SharePoint. Med den här inställningen kan du välja vilka SharePoint-webbplatser i din klient organisation som ska crawlas och mined för avsnitt.
 
-1. Välj **Redigera**under **Välj SharePoint-ämneskällor**på fliken **Ämnesidentifiering** .
-2. På sidan **Välj SharePoint-ämneskällor** väljer du vilka SharePoint-webbplatser som ska genomsökas som källor för dina ämnen under identifieringen. Detta inkluderar:</br>
-    a. **Alla webbplatser:** Alla SharePoint-webbplatser i din klientorganisation. Detta fångar nuvarande och framtida webbplatser.</br>
-    b. **Alla, utom valda platser:** Skriv namnen på de webbplatser som du vill utesluta.  Du kan också ladda upp en lista över webbplatser som du vill välja bort från identifiering. Webbplatser som skapas i framtiden kommer att inkluderas som källor för ämnesidentifiering. </br>
-    c. **Endast valda platser:** Skriv namnen på de platser som du vill inkludera. Du kan också ladda upp en lista över webbplatser. Webbplatser som skapas i framtiden kommer inte att inkluderas som källor för ämnesidentifiering. </br>
+1. På fliken **identifiering** , under **Välj SharePoint-ämnes källor**, väljer du **Redigera**.
+2. På sidan **Select SharePoint topic sources** väljer du vilka SharePoint-webbplatser som ska crawlas som källor för dina ämnen under identifiering. Detta inkluderar:</br>
+    a. **Alla webbplatser**: alla SharePoint-webbplatser i din klient organisation. Här fångar du aktuella och framtida webbplatser.</br>
+    b. **Alla, förutom markerade webbplatser**: Skriv namnen på de webbplatser du vill undanta.  Du kan också ladda upp en lista med webbplatser som du inte vill ska ingå i sökningen. Webbplatser som skapats i framtiden kommer att inkluderas som källor för avsnitts identifiering. </br>
+    c. **Endast valda webbplatser**: Skriv in namnen på de webbplatser du vill ta med. Du kan också ladda upp en lista med webbplatser. Webbplatser som skapats i framtiden kommer inte att ingå som källor för identifiering av ämnen. </br>
 
-    ![Välj hur du hittar ämnen](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![Välj hur du vill hitta ämnen](../media/content-understanding/k-manage-select-topic-source.png) </br>
    
-    Om du har ett antal webbplatser som du vill utesluta (om du väljer **Alla, utom valda webbplatser)** eller inkluderar (om du har valt **Endast valda webbplatser)** kan du välja att ladda upp en CSV-fil med webbplatsnamn och webbadresser. Du kan välja **Hämta webbplatsmall .csv** om du vill använda CSV-mallfilen.
+    Om du har ett antal webbplatser som du vill undanta (om du markerar **alla, förutom markerade webbplatser**) eller inkludera (om du valde **endast markerade webbplatser**) kan du välja att överföra en CSV-fil med webbplats namn och URL-adresser. Du kan välja **Hämta webbplatsmall. csv** om du vill använda CSV-mallfilen.
 
 3. Välj **Spara**.
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>Ändra vem som kan se ämnen i organisationen
+##  <a name="change-who-can-see-topics-in-your-organization"></a>Ändra vem som kan se ämnen i din organisation
 
-Välj fliken **Ämnesidentifiering** om du vill uppdatera vem i organisationen som kan se upptäckta ämnen i sökresultaten och när ämnen markeras i innehåll som SharePoint-sidor.
+Välj fliken **identifiering** om du vill uppdatera vem i organisationen kan se upptäckta avsnitt i Sök Resultat och när ämnen markeras i innehåll som SharePoint-sidor.
 
-1. Välj **Redigera**under **Vem kan se ämnen i kunskapsnätverket**på fliken **Ämnesidentifiering** .
-2. På sidan Vem kan se ämnen på sidan **kunskapsnätverk** väljer du vem som ska ha tillgång till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sök- och ämnessidor. Du kan välja:</br>
+1. På fliken **identifiering** , under **vem kan se ämnen i kunskaps nätverket**, väljer du **Redigera**.
+2. På sidan **vem kan se ämnen i kunskaps nätverk** väljer du vilka som kommer att ha till gång till ämnen, till exempel markerade ämnen, ämnes kort, ämnes svar i sökningar och avsnitts sidor. Du kan välja:</br>
     a. **Alla i organisationen**</br>
-    b. **Endast markerade personer eller säkerhetsgrupper**</br>
+    b. **Endast valda personer eller säkerhets grupper**</br>
     c. **Ingen**</br>
 
-    ![Vem kan se ämnen](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
+    ![Vilka som kan se ämnen](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
 3. Välj **Spara**.  
  
 > [!Note] 
-> Med den här inställningen kan du välja en användare i organisationen, men endast användare som har kunskapshanteringslicenser som tilldelats dem kan visa ämnen.
+> Med den här inställningen kan du välja en användare i organisationen, men endast användare som har kunskaps hanterings licenser tilldelade till dem kan visa ämnen.
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a>Ändra vem som har behörighet att utföra uppgifter i ämnescentret
+## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a>Ändra vem som har behörighet att utföra uppgifter i ämnes centret
 
-Välj fliken **Ämnesbehörigheter** om du vill uppdatera vem som har behörighet att göra följande på ämnescentrets sida:
+Välj fliken **behörigheter för ämne** om du vill uppdatera vilka som har behörighet att göra följande på sidan avsnitts Center:
 
-- Vilka användare kan skapa och redigera ämnen: Skapa nya ämnen som inte hittades under identifieringen eller redigera befintlig information om ämnessidan.
-- Vilka användare kan hantera ämnen: Bekräfta eller avvisa identifierade ämnen.
+- Vilka användare som kan skapa och redigera ämnen: skapa nya avsnitt som inte hittades under identifiering eller redigera befintliga avsnitts sidor.
+- Vilka användare som kan hantera ämnen: bekräfta eller avvisa upptäckta ämnen.
 
-Så här uppdaterar du vem som har behörighet att skapa och redigera ämnen:
+Så här uppdaterar du vilka som har behörighet att skapa och redigera ämnen:
 
-1. Välj **Redigera**under Vem **kan skapa och redigera ämnen**på fliken **Ämnesbehörigheter** .</br>
-2. På sidan **Vem kan skapa och redigera ämnen** kan du välja:</br>
+1. På fliken **behörigheter** under **vem kan skapa och redigera ämnen**väljer du **Redigera**.</br>
+2. På sidan **vem som kan skapa och redigera ämnen** kan du välja:</br>
     a. **Alla i organisationen**</br>
-    b. **Endast markerade personer eller säkerhetsgrupper**</br>
+    b. **Endast valda personer eller säkerhets grupper**</br>
 
     ![Skapa och redigera ämnen](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
 
 3. Välj **Spara**.</br>
 
-Så här uppdaterar du vem som har behörighet att hantera ämnen:
+Så här uppdaterar du vilka som har behörighet att hantera ämnen:
 
-1. Välj **Redigera**under Vem **kan hantera ämnen**på fliken **Ämnesbehörigheter.**</br>
-2. På sidan **Vem kan hantera ämnen** kan du välja:</br>
+1. Välj **Redigera**under **vilka kan hantera ämnen**på fliken **behörigheter** .</br>
+2. På sidan **vem kan hantera ämnen** kan du välja:</br>
     a. **Alla i organisationen**</br>
-    b. **Utvalda personer eller säkerhetsgrupper**</br>
+    b. **Markerade personer eller säkerhets grupper**</br>
 
     ![Hantera ämnen](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
 
 3. Välj **Spara**.</br>
 
 
-##  <a name="update-your-topic-center-name"></a>Uppdatera namn på ämnescenter
+##  <a name="update-your-topic-center-name"></a>Uppdatera namnet på ämnes Center
 
-Välj fliken **Ämnescenter** om du vill uppdatera namnet på ämnescentret. 
+Välj fliken för **avsnitts Center** om du vill uppdatera namnet på ditt ämnes Center. 
 
-1. Välj **Redigera**under **Namnet Ämnescenter**på fliken **Ämnescenter** .
-2. Skriv det nya namnet för ämnescentret i **namnrutan För ämnescenter** på **namnsidan** Redigera ämnescenter.
+1. Välj **Redigera**under **ämnes Center namn**på fliken **ämnes Center** .
+2. Skriv det nya namnet på ämnes centret i rutan **namn** på sidan **Redigera ämnes Center namn** .
 3. Välj **Spara**
 
-    ![Redigera namn på ämnescenter](../media/content-understanding/manage-topic-center-name.png) </br> 
+    ![Redigera namn på ämnes Center](../media/content-understanding/manage-topic-center-name.png) </br> 
 
 
 

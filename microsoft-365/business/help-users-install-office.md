@@ -26,23 +26,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Hjälp användarna att installera Office-appar på Windows 10-enheter och enkelt installera Office på Windows 10-datorer från administrationscentret för Microsoft 365.
-ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: Hjälp användarna att installera Office-program på Windows 10-enheter och installera Office på Windows 10-datorer från Microsoft 365 Admin Center.
+ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786240"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601992"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Hjälp användarna att installera Office på Windows 10-enheter
 
 [![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Du kan snabbt och enkelt installera Office på Windows 10-datorer från administrationscentret för Microsoft 365.
+Du kan snabbt och enkelt installera Office på Windows 10-datorer från Microsoft 365 Admin Center.
   
 Om du vill veta mer om hur det fungerar med tidigare installerade Office-program kan du läsa [Förbered för installation av Office-klienten](prepare-for-office-client-deployment.md) innan du sätter igång.
 
-Titta på ett kort videoklipp om hur du installerar Office-appar.<br><br>
+Titta på en kort video om hur du installerar Office-appar.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
@@ -50,18 +50,17 @@ Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbi
 
 ## <a name="manage-office-deployments"></a>Hantera Office-distribution
 
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> och logga in med globala administratörsautentiseringsuppgifter. 
+1. Gå till administrations centret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> och logga in med globala administratörs uppgifter. 
 
-2. Gå till **installationsprogrammet** i det vänstra navigeringsfönstret och bläddra till **Appar och uppdateringar**på **inställningssidan** .
+2. Gå till **Inställningar** i det vänstra navigerings fönstret och bläddra till **appar och uppdateringar**på sidan **Inställningar** .
     > [!NOTE]
-    > Du kanske inte ser det här kortet om alla användare har installerat Office-appar.
+    > Det här kortet kanske inte visas om alla dina användare har installerat Office-appar.
   
-3. På **hjälpanvändarna installera sitt Office-appkort** väljer du **Visa**och sedan **Kom igång**.
+3. På **hjälp användarna att installera Office-programmen** väljer du **Visa**och sedan **Kom igång**.
     
-4. På **panelen E-postanvändare** väljer du de användare som du vill skicka e-post till på panelen **E-postanvändare**och skickar sedan e-post till valda användare .
+4. Gå **till e-postanvändare en länk för att hämta Office** panelen, Välj de användare som du vill skicka e-post till och sedan **skicka e-post till användarna**.
 
-    
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="Välj användare som ska skicka e-post med hämtningslänken för Office.":::
+   ![Välj användare för att skicka e-post med nedladdnings länken för Office.](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Mer information om hur du konfigurerar och använder Microsoft 365 Business Premium
 

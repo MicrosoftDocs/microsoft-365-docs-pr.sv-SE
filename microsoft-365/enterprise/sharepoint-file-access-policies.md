@@ -1,6 +1,6 @@
 ---
-title: Rekommenderade principer för säkra dokument – Microsoft 365 Enterprise | Microsoft-dokument
-description: I artikeln beskrivs principerna för Microsofts rekommendationer om hur du skyddar SharePoint-filåtkomst.
+title: Rekommenderade principer för säker dokument – Microsoft 365 Enterprise | Microsoft-dok
+description: Beskriver policyerna för Microsoft-rekommendationer om hur du skyddar åtkomst till SharePoint-filer.
 author: BrendaCarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
@@ -16,76 +16,74 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
+ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222691"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46617192"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Principrekommendationer för att skydda SharePoint-webbplatser och -filer
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Policy rekommendationer för att skydda SharePoint-webbplatser och-filer
 
-I den här artikeln beskrivs hur du implementerar de rekommenderade principerna för identitet och enhetsåtkomst för att skydda SharePoint Online och OneDrive för företag. Den här vägledningen bygger på principerna [för gemensam identitet och enhetsåtkomst](identity-access-policies.md).
+I den här artikeln beskrivs hur du implementerar Rekommenderad identitet och enhets åtkomst principer för att skydda SharePoint Online och OneDrive för företag. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
 
-Dessa rekommendationer baseras på tre olika säkerhets- och skyddsnivåer för SharePoint-filer som kan tillämpas baserat på dina behovs kornighet: **baslinje,** **känslig**och **starkt reglerad**. Du kan läsa mer om dessa säkerhetsnivåer och de rekommenderade klientoperativsystemen, som refereras av dessa rekommendationer i [översikten](microsoft-365-policies-configurations.md).
+De här rekommendationerna bygger på tre olika nivåer av säkerhet och skydd för SharePoint-filer som kan användas baserat på hur olika behov fungerar: **original plan**, **känslig**och **högreglerad**. Du kan läsa mer om de här säkerhets nivåerna och de rekommenderade klient operativ systemen som hänvisas till av de här rekommendationerna i [översikten](microsoft-365-policies-configurations.md).
 
-Förutom att implementera den här vägledningen måste du konfigurera SharePoint-webbplatser med rätt mängd skydd, inklusive att ange lämpliga behörigheter för känsligt och starkt reglerat innehåll. Mer information om hur du skapar webbplatser för baslinje, känsligt och starkt reglerat skydd finns i Webbplatser och filer för [Säker SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).
+Förutom att implementera den här vägledningen måste du konfigurera SharePoint-webbplatser med rätt skydds nivå, inklusive att ange lämpliga behörigheter för känslig och hög reglerad information.
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Uppdatera vanliga principer så att de inkluderar SharePoint och OneDrive för företag
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Uppdatera gemensamma principer för att inkludera SharePoint och OneDrive för företag
 
-I följande diagram visas en uppsättning rekommenderade principer för att skydda filer i SharePoint Online och OneDrive för företag. Den anger vilka principer som ska uppdateras eller nyligen skapas för att lägga till skydd för SharePoint Online och OneDrive för företag.
+I följande diagram visas den uppsättning rekommenderade principer för att skydda filer i SharePoint Online och OneDrive för företag. Det visar vilka principer som ska uppdateras eller nyskapas för att skydda SharePoint Online och OneDrive för företag.
 
-![Sammanfattning av principer för SharePoint Online och OneDrive](../media/identity-access-ruleset-sharepoint.png)
+[![Översikt över principer för SharePoint Online och OneDrive ](../media/identity-access-ruleset-sharepoint.png)](../media/identity-access-ruleset-sharepoint.png#lightbox)
 
-Om du inkluderade SharePoint Online när du skapade de gemensamma principerna behöver du bara skapa de nya principerna. När du konfigurerar regler för villkorlig åtkomst innehåller SharePoint Online OneDrive för företag.
+Om du har inkluderat SharePoint Online när du skapade de gemensamma principerna behöver du bara skapa de nya principerna. När du konfigurerar regler för villkorlig åtkomst inkluderar SharePoint Online OneDrive för företag.
 
-De nya principerna implementerar enhetsskydd för känsligt och starkt reglerat innehåll genom att tillämpa specifika åtkomstkrav på SharePoint-webbplatser som du anger.
+De nya principerna implementerar enhets skydd för känsligt och starkt reglerat innehåll genom att använda specifika åtkomst krav på SharePoint-webbplatser som du anger.
 
-I följande tabell visas de principer som du antingen behöver granska och uppdatera eller skapa nya för SharePoint Online. De vanliga principerna länkar till tillhörande konfigurationsinstruktioner i artikeln [Gemensamma identitets- och enhetsåtkomstprinciper.](identity-access-policies.md)
+I följande tabell visas de principer som du måste granska och uppdatera eller skapa en ny för SharePoint Online. Gemensamma principer-länken till de associerade konfigurations anvisningarna i artikeln om [principer för åtkomst policys för identitet och enheter](identity-access-policies.md) .
 
-|Skyddsnivå|Politik|Mer information|
+|Skydds nivå|Principerna|Mer information|
 |:---------------|:-------|:----------------|
-|**Grundläggande**|[Kräv MFA när inloggningsrisken är *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningen av molnappar|
-|        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera SharePoint Online i tilldelningen av molnappar|
-|        |[Tillämpa APP-dataskyddsprinciper](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar ingår i listan över appar. Var noga med att uppdatera principen för varje plattform (iOS, Android, Windows)|
-|        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera SharePoint Online i listan över molnappar|
-|        |[Använda begränsningar för apppåstvingade i SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Lägg till den här nya principen. Detta talar om för Azure AD att använda de inställningar som anges i SharePoint Online. Den här regeln gäller för alla användare, men påverkar bara åtkomsten till webbplatser som ingår i SharePoint Online-åtkomstprinciper|
-|**Känslig**|[Kräv MFA när inloggningsrisken är *låg,* *medelhög* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningar av molnappar|
-|         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Inkludera SharePoint Online i listan över molnappar|
-||[Åtkomstkontrollprincip för SharePoint Online:](#sharepoint-online-access-control-policies)Tillåt åtkomst endast för webbläsare till specifika SharePoint-webbplatser från ohanterade enheter|Detta förhindrar redigering och hämtning av filer. Använda PowerShell för att ange platser|
-|**Strikt reglerad**|[*Kräver alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningen av molnappar|
-||[Åtkomstkontrollprincip för SharePoint Online:](#use-app-enforced-restrictions-in-sharepoint-online)Blockera åtkomst till specifika SharePoint-webbplatser från ohanterade enheter|Använda PowerShell för att ange platser|
+|**Grundläggande**|[Kräv MFA när en inloggnings risk är *mellan* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelning av moln program|
+|        |[Blockera klienter som inte har stöd för modern autentisering](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inkludera SharePoint Online i tilldelning av moln program|
+|        |[Tillämpa program data skydds policy](identity-access-policies.md#apply-app-data-protection-policies)|Se till att alla rekommenderade appar ingår i listan med program. Se till att uppdatera policyn för varje plattform (iOS, Android, Windows)|
+|        |[Kräv kompatibla PC-datorer](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inkludera SharePoint Online i listan över moln program|
+|        |[Använda program begränsningar i SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Lägg till den här nya principen. Detta meddelar Azure AD att använda inställningarna i SharePoint Online. Den här regeln gäller för alla användare, men påverkar bara åtkomst till webbplatser som ingår i SharePoint Online-åtkomst principer|
+|**Känslig**|[Kräv MFA när en inloggnings risk är *låg*, *medium* eller *hög*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelningarna av moln program|
+|         |[Kräv kompatibla datorer *och* mobila enheter](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Ta med SharePoint Online i listan med moln program|
+||[Åtkomst kontroll princip för SharePoint Online](#sharepoint-online-access-control-policies): Tillåt åtkomst via webbläsare för vissa SharePoint-webbplatser från ohanterade enheter|Detta förhindrar redigering och nedladdning av filer. Använda PowerShell för att ange webbplatser|
+|**Strikt reglerad**|[Kräv *alltid* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inkludera SharePoint Online i tilldelning av moln program|
+||[Åtkomst kontroll princip för SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online): blockera åtkomst till specifika SharePoint-webbplatser från ohanterade enheter|Använda PowerShell för att ange webbplatser|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Använda begränsningar för appadvingande i SharePoint Online
+## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Använd program begränsningar i SharePoint Online
 
-Om du implementerar åtkomstkontroller i SharePoint Online måste du skapa den här princip för villkorlig åtkomst i Azure AD för att be Azure AD att tillämpa principerna som du konfigurerar i SharePoint Online. Den här regeln gäller för alla användare, men påverkar bara åtkomsten till de webbplatser som du anger med PowerShell när du skapar åtkomstkontrollerna i SharePoint Online.
+Om du implementerar åtkomst kontroller i SharePoint Online måste du skapa den här principen för villkorsstyrd åtkomst i Azure AD för att Azure AD ska kunna använda de principer du konfigurerar i SharePoint Online. Den här regeln gäller för alla användare, men påverkar bara åtkomst till de webbplatser som du anger med PowerShell när du skapar Access-kontroller i SharePoint Online.
 
-Information om hur du konfigurerar den här principen finns i "Blockera eller begränsa åtkomsten till specifika SharePoint-webbplatssamlingar eller OneDrive-konton" i den här artikeln: [Kontrollera åtkomsten från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Om du vill konfigurera den här principen kan du läsa "blockera eller begränsa åtkomst till specifika SharePoint-webbplatssamling eller OneDrive-konton" i den här artikeln: [kontrol lera åtkomst från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
-## <a name="sharepoint-online-access-control-policies"></a>Principer för åtkomstkontroll för SharePoint Online
+## <a name="sharepoint-online-access-control-policies"></a>Åtkomst kontroll principer för SharePoint Online
 
-Microsoft rekommenderar att du skyddar innehåll på SharePoint-webbplatser med känsligt och starkt reglerat innehåll med kontroller för enhetsåtkomst. Du gör detta genom att skapa en princip som anger skyddsnivån och de platser som ska användas på.
+Microsoft rekommenderar att du skyddar innehåll på SharePoint-webbplatser med känsligt och starkt reglerat innehåll med enhets åtkomst kontroller. Det gör du genom att skapa en princip som anger nivån på skyddet och webbplatserna som skyddar mot.
 
-- Känsliga webbplatser: Tillåt åtkomst endast för webbläsare. Detta hindrar användare från att redigera och hämta filer.
-- Starkt reglerade platser: Blockera åtkomst från ohanterade enheter.
+- Känsliga webbplatser: Tillåt åtkomst via webbläsare. Detta förhindrar att användare redigerar och laddar ned filer.
+- Högreglerade webbplatser: blockera åtkomst från ohanterade enheter.
 
-Se Blockera eller begränsa åtkomsten till specifika SharePoint-webbplatssamlingar eller OneDrive-konton i den här artikeln: [Kontrollera åtkomsten från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Se "blockera eller begränsa åtkomst till specifika SharePoint-webbplats samlingar eller OneDrive-konton" i den här artikeln: [kontrol lera åtkomst från ohanterade enheter](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
-## <a name="how-these-policies-work-together"></a>Hur dessa policyer fungerar tillsammans
+## <a name="how-these-policies-work-together"></a>Hur dessa principer fungerar tillsammans
 
-Det är viktigt att förstå att SharePoint-webbplatsbehörigheter vanligtvis baseras på affärsbehov för åtkomst till webbplatser. Dessa behörigheter hanteras av webbplatsägare och kan vara mycket dynamiska. Genom att använda SharePoint-principer för enhetsåtkomst säkerställer skyddet för dessa platser, oavsett om användare har tilldelats en Azure AD-grupp som är associerad med baslinje, känslig eller starkt reglerad skydd.
+Det är viktigt att förstå att SharePoint-webbplatsens behörigheter normalt baseras på affärs behov för åtkomst till webbplatser. Dessa behörigheter hanteras av webbplats ägare och kan vara mycket dynamiska. Genom att använda åtkomst principer för SharePoint-enheter skyddas de här webbplatserna, oavsett om användare är tilldelade till en Azure AD-grupp som är kopplad till original-, känsligt-eller starkt reglerat skydd.
 
-Följande bild är ett exempel på hur åtkomstprinciper för SharePoint-enheter skyddar åtkomsten till webbplatser.
+Följande bild visar ett exempel på hur åtkomst principer för SharePoint-enheter skyddar åtkomst till webbplatser.
 
-![Så här skyddar SharePoint-principer för enhetsåtkomstwebbplatser webbplatser](../media/SharePoint-rules-scenario.png)
+[![Så här skyddas webbplatser ](../media/SharePoint-rules-scenario.png) med åtkomst principer för SharePoint-enheter](../media/SharePoint-rules-scenario.png#lightbox)
 
 På bilden:
 
-- James tilldelas principer för villkorlig åtkomst som är associerade med baslinjeskydd, men han kan få åtkomst till SharePoint-webbplatser som är associerade med känsligt eller starkt reglerat skydd.
-- Om James kommer åt en känslig eller starkt reglerad webbplats han är medlem i att använda sin dator, är hans tillgång beviljas så länge hans dator är kompatibel.
-- Om James kommer åt en känslig webbplats som han är medlem i att använda sin ohanterade telefon, vilket är tillåtet för baslinjeanvändare, får han endast åtkomst till den känsliga webbplatsen på grund av enhetsåtkomstprincipen som konfigurerats för den här webbplatsen.
-- Om James kommer åt en starkt reglerad webbplats han är medlem i att använda sin ohanterade telefon, kommer han att blockeras på grund av åtkomstprincipen konfigureras för denna webbplats. Han kan bara komma åt denna webbplats med hjälp av sin hanterade och kompatibla dator.
+- Jonas är tilldelad till principer för villkorlig åtkomst som är kopplade till original planens skydd, men han kan få åtkomst till SharePoint-webbplatser som är kopplade till känsligt eller starkt reglerat skydd.
+- Om Johan har åtkomst till en känslig eller högreglerad webbplats han är medlem i sin dator, ges hans åtkomst så länge datorn är kompatibel.
+- Om Jonas öppnar en känslig webbplats han är medlem i att använda sin ohanterade telefon, som är tillåten för bas linje användare, får han eller hon skrivskyddad åtkomst till den känsliga webbplatsen på grund av enhets åtkomst principen som har kon figurer ATS för den här webbplatsen.
+- Om Johan har åtkomst till en högreglerad webbplats som han är medlem i med sin ohanterade telefon kommer han att blockeras på grund av åtkomst principen som har kon figurer ATS för den här webbplatsen. Han kan bara komma åt den här webbplatsen via sin hanterade och kompatibla dator.
 
-## <a name="next-steps"></a>Nästa steg
 
-[Skydda SharePoint Online-webbplatser och filer](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)

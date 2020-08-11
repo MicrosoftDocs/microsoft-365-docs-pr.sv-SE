@@ -1,5 +1,5 @@
 ---
-title: Skapa en formulärbearbetningsmodell (förhandsgranskning)
+title: Skapa en modell för formulär bearbetning (för hands version)
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,137 +8,137 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: Skapa en formulärbearbetningsmodell i Project Cortex.
-ms.openlocfilehash: d3ca64ff5923e95704b72fd748884549a18624a3
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+description: Skapa en formulär bearbetnings modell i Project cortex.
+ms.openlocfilehash: 733baf24d8a484571ba9882fdda2633dc2ce0504
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540148"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612780"
 ---
-# <a name="create-a-form-processing-model-preview"></a>Skapa en formulärbearbetningsmodell (förhandsgranskning)
+# <a name="create-a-form-processing-model-preview"></a>Skapa en modell för formulär bearbetning (för hands version)
 
 > [!Note] 
-> Innehållet i den här artikeln är för Project Cortex Private Preview. [Läs mer om Project Cortex](https://aka.ms/projectcortex).
+> Innehållet i den här artikeln gäller för projekt cortex privat för hands version. [Lär dig mer om Project cortex](https://aka.ms/projectcortex).
 
-Använda [AI Builder](https://docs.microsoft.com/ai-builder/overview) - en funktion i Microsoft PowerApps - Project Cortex-användare kan skapa en [formulärbearbetningsmodell](form-processing-overview.md) direkt från ett SharePoint-dokumentbibliotek. 
+Använda [AI-verktyget](https://docs.microsoft.com/ai-builder/overview) – en funktion i Microsoft PowerApps – Project cortex-användare kan skapa en [modell för formulär bearbetning](form-processing-overview.md) direkt från ett SharePoint-dokumentbibliotek. 
 
-Att skapa en formulärbearbetningsmodell innebär följande:
- - Steg 1: Skapa frånbearbetningsmodellen för att skapa innehållstypen
- - Steg 2: Lägga till och analysera exempelfiler
- - Steg 3: Markera formulärfälten
- - Steg 4: Träna och testa din modell
- - Steg 5: Publicera din modell
- - Steg 6: Använd din modell
+Att skapa en modell för formulär bearbetning inbegriper följande:
+ - Steg 1: skapa innehålls typen från bearbetnings modellen
+ - Steg 2: lägga till och analysera exempel filer
+ - Steg 3: Välj formulär fälten
+ - Steg 4: träna och testa modellen
+ - Steg 5: publicera din modell
+ - Steg 6: använda modellen
 
 
 ## <a name="requirements"></a>Krav
 
-Du kan bara skapa en formulärbearbetningsmodell i SharePoint-dokumentbibliotek där den är aktiverad. Om formulärbearbetning är aktiverat kan du se **AI Builder** **"Skapa en formulärbearbetningsmodell"** under Menyn **Automatisera** i dokumentbiblioteket.  Om du behöver använda den i dokumentbiblioteket kontaktar du administratören.
+Du kan bara skapa en formulär bearbetnings modell i SharePoint-dokumentbibliotek där den är aktive rad. Om formulär bearbetning är aktiverat kan du se **AI-verktyget** **"skapa en formulär bearbetnings modell"** under **Automatisera** -menyn i dokument biblioteket.  Om du behöver använda bearbetnings funktionen i dokument biblioteket kontaktar du din administratör.
 
  ![Skapa en AI Builder-modell](../media/content-understanding/create-ai-builder-model.png)</br>
 
 
-## <a name="step-1-create-a-form-processing-model"></a>Steg 1: Skapa en formulärbearbetningsmodell
+## <a name="step-1-create-a-form-processing-model"></a>Steg 1: skapa en modell för formulär bearbetning
 
-Det första steget i att skapa en formulärbearbetningsmodell är att namnge den för att skapa definiera den nya innehållstypen och skapa en ny dokumentbiblioteksvy för den.
+Det första steget när du skapar en modell för formulär bearbetning är att namnge den för att skapa fönstret definiera den nya innehålls typen och skapa en ny vy för dokument bibliotek.
 
-1. Välj **menyn Automatisera** i dokumentbiblioteket, välj **AI Builder**och välj sedan Skapa **en formulärbearbetningsmodell**.
+1. I dokument biblioteket väljer du menyn **Automatisera** , väljer **AI Builder**och väljer sedan **skapa en modell för formulär bearbetning**.
 
     ![Skapa en AI Builder-modell](../media/content-understanding/create-ai-builder-model.png)</br>
-2. Skriv ett namn på modellen i fältet **Nytt formulärbearbetning** i fältet **Nytt** formulärbearbetning *).*
+2. I fönstret **ny formulär bearbetnings modell** anger du ett namn på modellen (till exempel *inköps order*) i fältet **namn** .
 
-    ![Ny formulärbearbetningsmodell](../media/content-understanding/new-form-model.png)</br> 
+    ![Ny modell för formulär bearbetning](../media/content-understanding/new-form-model.png)</br> 
 
-3. När du skapar en formulärbearbetningsmodell skapar du en ny SharePoint-innehållstyp. En SharePoint-innehållstyp representerar en kategori av dokument som har gemensamma egenskaper och delar en samling kolumner eller metadataegenskaper för det aktuella innehållet. SharePoint-innehållstyper hanteras via [galleriet Innehållstyper]().
+3. När du skapar en formulär bearbetnings modell skapar du en ny SharePoint-innehållstyp. En SharePoint-innehållstyp representerar en kategori med dokument som har gemensamma egenskaper och delar en uppsättning kolumner eller metadataegenskaper för det specifika innehållet. SharePoint-innehålls typer hanteras via [galleriet innehålls typer]().
 
-    Välj **Avancerade inställningar** om du vill mappa den här modellen till en befintlig innehållstyp i galleriet SharePoint-innehållstyper för att använda schemat. 
+    Välj **Avancerade inställningar** om du vill mappa den här modellen till en befintlig innehålls typ i galleriet SharePoint-innehålls typer för att använda dess schema. 
 
-4. Din modell skapar en ny vy i dokumentbiblioteket för dina extraherade data. Om du inte vill att det ska vara standardvyn avmarkerar du **Ange vyn som standard**.
-5. Välj **Skapa**.
+4. Modellen skapar en ny vy i dokument biblioteket för dina extraherade data. Om du inte vill använda den som standardvy avmarkerar du **Ställ in vyn som standard**.
+5. Välj **skapa**.
 
 
-## <a name="step-2-add-and-analyze-documents"></a>Steg 2: Lägga till och analysera dokument
+## <a name="step-2-add-and-analyze-documents"></a>Steg 2: lägga till och analysera dokument
 
-När du har skapat din nya formulärbearbetningsmodell öppnar webbläsaren en ny Modellsida för PowerApps AI Builder-formulär. På den här sidan kan du lägga till och analysera dina exempeldokument. </br>
+När du har skapat den nya modellen för formulär bearbetning öppnas en ny PowerApps AI Builder-sida med formulär bearbetnings modell. På den här sidan kan du lägga till och analysera exempel dokument. </br>
 
 > [!Note]
-> När du letar efter exempelfiler att använda, se [formulärbearbetningsmodellens indatadokumentkrav och optimeringstips](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> När du letar efter exempel filer som ska användas läser du [krav för inmatnings dokument och optimerings tips för formulär bearbetnings modellen](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
 
-   ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
+   ![AI-verktyg för Power Apps](../media/content-understanding/powerapps.png)</br> 
  
 
-1. Klicka på **Lägg till dokument** om du vill börja lägga till exempeldokument som analyseras för att avgöra vilka namngivna värdepar som kan extraheras. Du kan välja **antingen Ladda upp från lokal lagring,** **SharePoint**eller **Azure Blob storage**. Du måste använda minst fem filer för utbildning.
-2. När du har lagt till dina filer väljer du **Analysera** för att söka efter all information som är vanlig är alla filer. Observera att det kan ta flera minuter att slutföra detta.</br> 
+1. Klicka på **Lägg till dokument** för att lägga till exempel dokument som analyseras för att avgöra vilka namngivna värde par som kan extraheras. Du kan välja **Ladda upp från lokal lagring**, **SharePoint**eller **Azure-Blob-lagring**. Du måste använda minst fem filer för utbildning.
+2. När du har lagt till filerna väljer du **analysera** för att kontrol lera eventuell information som är gemensam för alla filer. Observera att det kan ta flera minuter att slutföra.</br> 
  
     ![Analysera filer](../media/content-understanding/analyze.png)</br> 
 
-3. När de har analyserats klickar du på filen i sidan **Välj de formulärfält som du vill spara** för att se de fält som upptäcktes.</br>
+3. När de har analyser ATS klickar du på filen i listan **Markera de formulär fält som du vill spara** .</br>
 
-    ![Markera formulärfält](../media/content-understanding/select-form-fields.png)</br> 
+    ![Välj formulär fält](../media/content-understanding/select-form-fields.png)</br> 
 
-## <a name="step-3-select-your-form-fields"></a>Steg 3: Markera formulärfälten
+## <a name="step-3-select-your-form-fields"></a>Steg 3: Välj formulär fälten
 
-När du har analyserat dina dokument för fält kan du nu se vilka fält som hittades och vilka som du vill spara. Sparade fält visas som kolumner i modellens dokumentbiblioteksvy och visar de värden som extraherats från varje dokument.
+När du har analyserat dina dokument för fält kan du se vilka fält som hittades och vilka som du vill spara. Sparade fält visas som kolumner i modellens dokument bibliotek och visar de värden som extraheras från varje dokument.
 
-1. På nästa sida visas en av dina exempelfiler och alla vanliga fält som automatiskt upptäcktes av systemet. </br>
+1. Nästa sida visar en av dina exempelfiler och markerar alla gemensamma fält som identifieras automatiskt av systemet. </br>
 
-    ![Markera formulärfält](../media/content-understanding/select-fields-page.png)</br> 
+    ![Välj formulär fält](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Markera de fält som du vill spara och markera kryssrutan för att bekräfta ditt val. I inköpsordermodellen kan du till exempel välja fälten *Datum,* *INKÖPSORDER*och *Totalt.*  Observera att du också kan välja att byta namn på ett fält om du vill. </br>
+2. Markera de fält som du vill spara och markera kryss rutan för att bekräfta ditt val. I modellen för inköps order kan du till exempel välja *datum*, *IO*och *total summa* .  Observera att du också kan byta namn på ett fält om du vill. </br>
 
-    ![Välj INKÖPSORDER #](../media/content-understanding/po.png)</br> 
+    ![Välj PO #](../media/content-understanding/po.png)</br> 
 
-3. Om ett fält inte upptäcktes av analysen kan du ändå välja att lägga till det. Markera den information som du vill extrahera och skriv det namn som du vill ge den i namnrutan. Välj sedan checken. Observera att du måste bekräfta oupptäckta fält i dina återstående exempelfiler.
-4. Klicka på **Bekräfta fält** när du har markerat de fält som du vill spara. </br>
+3. Om ett fält inte identifieras av analysen kan du ändå välja att lägga till det. Markera den information som du vill extrahera och ange namnet på den i rutan namn. Markera sedan kryss rutan. Observera att du måste bekräfta de oidentifierade fälten i de återstående exemplen.
+4. Klicka på **Bekräfta fält** när du har markerat fälten som du vill spara. </br>
  
     ![Bekräfta fält](../media/content-understanding/confirm-fields.png)</br> 
  
-5. På sidan **Välj de formulärfält som du vill spara** visas antalet fält som du har markerat. Välj **Klar**.
+5. I rutan **Markera de formulär fält du vill spara** visas det antal fält du har valt. Välj **klar**.
 
-## <a name="step-4-train-and-test-your-model"></a>Steg 4: Träna och testa din modell
+## <a name="step-4-train-and-test-your-model"></a>Steg 4: träna och testa modellen
 
-När du har valt de fält som du vill spara kan du träna och testa modellen på sidan **Modellsammanfattning.**
+När du har valt de fält du vill spara kan du träna och testa modellen med **modell sammanfattnings** sidan.
 
-1. På sidan **Modellsammanfattning** visas de sparade fälten i avsnittet **Markerade fält.** Välj **Träna** om du vill börja träna med dina exempelfiler. Observera att det kan ta några minuter att slutföra detta.</br>
+1. På sidan **modell Sammanfattning** visas de sparade fälten i avsnittet **valda fält** . Välj **träna** för att påbörja träning för dina exempelfiler. Observera att det kan ta några minuter att slutföra.</br>
     ![Bekräfta fält](../media/content-understanding/select-fields-train.png)</br> 
-2. När du ser meddelandet om att utbildningen har slutförts väljer du **Gå till informationssidan**. 
-3. På sidan **Modellinformation** kan du välja att testa hur modellen fungerar genom att välja **Snabbtest**. På så sätt kan du dra och släppa filer till sidan och se om fälten identifieras.
+2. När du ser meddelandet om att utbildningen har slutförts väljer du **gå till sidan information**. 
+3. På sidan **modell information** kan du välja att testa hur modellen fungerar genom att välja **snabb test**. Med det här alternativet kan du dra och släppa filer till sidan och se om fälten identifieras.
 
-## <a name="step-5-publish-your-model"></a>Steg 5: Publicera din modell
+## <a name="step-5-publish-your-model"></a>Steg 5: publicera din modell
 
 
 
-1. Om du är nöjd med resultatet av din modell väljer du **Publicera** för att göra den tillgänglig för användning.
-2. När modellen har publicerats väljer du **Använd modell**. Detta skapar ett PowerAutomate-flöde som körs i SharePoint-dokumentbiblioteket och extraherar de fält som har identifierats i modellen. Välj **Skapa flöde**.  
-3. När du är klar visas meddelandet **Ditt flöde har skapats**.
+1. Om du är nöjd med resultatet av modellen väljer du **publicera** för att göra den tillgänglig för användning.
+2. När modellen har publicerats väljer du **Använd modell**. Detta skapar ett PowerAutomate-flöde som körs i SharePoint-dokumentbiblioteket och extraherar de fält som har identifierats i modellen. Välj **skapa flöde**.  
+3. När du är klar kommer du att se meddelandet att **flödet har skapats**.
  
  
-## <a name="step-6-use-your-model"></a>Steg 6: Använd din modell
+## <a name="step-6-use-your-model"></a>Steg 6: använda modellen
 
-När du har publicerat modellen och skapat powerautomate-flödet kan du använda modellen i SharePoint-dokumentbiblioteket.
+När du har publicerat modellen och skapat det PowerAutomate flödet kan du använda modellen i ditt SharePoint-dokumentbibliotek.
 
-1. När du har publicerat modellen väljer du **Gå till SharePoint** för att gå till dokumentbiblioteket.
-2. Observera att de fält som du har markerat nu visas som kolumner i dokumentbiblioteksmodellvyn.</br>
+1. När du har publicerat modellen väljer du **gå till SharePoint** för att gå till ditt dokument bibliotek.
+2. I modell vyn för dokument bibliotek kan du se att fälten du valde nu visas som kolumner.</br>
 
-    ![Dokumentbibliotek med modell tillämpad](../media/content-understanding/doc-lib-view.png)</br> 
+    ![Dokument bibliotek med modellen använda](../media/content-understanding/doc-lib-view.png)</br> 
 
-    Observera också att informationslänken **bredvid Dokument** kommer att notera att en formulärbearbetningsmodell tillämpas på det här dokumentbiblioteket.
+    Observera också att informations länken bredvid **dokument** anger att en modell för formulär bearbetning används för det här dokument biblioteket.
 
-    ![Extraherade](../media/content-understanding/info-button.png)</br>  
+    ![Pack](../media/content-understanding/info-button.png)</br>  
 
-3. Ladda upp filer till dokumentbiblioteket. Alla filer som modellen identifierar som innehållstyp visar filerna i vyn och visar de extraherade data i kolumnerna.</br>
+3. Ladda upp filer till ett dokument bibliotek. Alla filer som modellen identifierar som innehålls typ visas i listan och visar extraherade data i kolumnerna.</br>
 
-    ![Extraherade](../media/content-understanding/doc-lib-done.png)</br>  
+    ![Pack](../media/content-understanding/doc-lib-done.png)</br>  
 
 
 
 ## <a name="see-also"></a>Se även
   
-[Dokumentation för Power Automate](https://docs.microsoft.com/power-automate/)</br>
-[Utbildning: Förbättra företagets resultat med AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Automatiserad energi dokumentation](https://docs.microsoft.com/power-automate/)</br>
+[Utbildning: förbättra företags prestanda med hjälp av AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
 
 
 

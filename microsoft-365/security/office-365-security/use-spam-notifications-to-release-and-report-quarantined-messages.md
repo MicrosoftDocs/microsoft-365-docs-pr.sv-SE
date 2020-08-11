@@ -1,5 +1,5 @@
 ---
-title: Skräppostmeddelanden för slutanvändare i Microsoft 365
+title: Meddelanden om avanmälan till slutanvändare i Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,35 +19,35 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om skräppostmeddelanden för slutanvändare för meddelanden i karantän i Exchange Online Protection (EOP).
-ms.openlocfilehash: 4c3275b6af1eb452ed420b8eb2f923dfbb1267d6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+description: Administratörer kan lära sig om skräp post meddelanden för meddelanden i karantän i Exchange Online Protection (EOP).
+ms.openlocfilehash: b196a9e11d54d9d86acc991ba877279f1fa3d115
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200022"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608305"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräppostmeddelanden för att släppa och rapportera meddelanden i karantän
+# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräp post meddelanden för att frigöra och rapportera översatta meddelanden
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns [i Meddelanden i karantän i EOP](quarantine-email-messages.md).
+I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [karantän meddelanden i EOP](quarantine-email-messages.md).
 
-Som standard inaktiveras skräppostmeddelanden för slutanvändare i policyer mot skräppost. När en administratör [aktiverar skräppostmeddelanden](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)för slutanvändare får mottagare (inklusive delade postlådor med automatisk mappning aktiverat) regelbundna meddelanden om sina meddelanden som har satts i karantän som skräppost, massmeddelande eller (från och med april 2020) nätfiske.
+Som standard är skräp post meddelanden avaktiverade i principer för skräp post. När en administratör [aktiverar skräp post meddelanden för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), får mottagarna (inklusive delade post lådor med Automappning aktiverat) regelbundna meddelanden om sina meddelanden som sattes i karantän som skräp post, Mass utskick eller (från april 2020) nätfiske.
 
 > [!NOTE]
-> Meddelanden som har satts i karantän som nätfiske, skadlig kod eller via regler för e-postflöde (kallas även transportregler) är endast tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
+> Meddelanden som satts i karantän som nätfiske, skadlig program vara eller enligt regler för e-postflöde (kallas även transport regler) är endast tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
 
-Ett skräppostmeddelande för slutanvändare innehåller följande information för varje meddelande i karantän:
+Ett skräp post meddelande för slutanvändare innehåller följande information för varje meddelande i karantän:
 
-- **Avsändare**: Skicka namn och e-postadress för det i karantänmeddelandet.
+- **Avsändare**: skicka namn och e-postadress till det uppsatta meddelandet.
 
-- **Ämne**: Ämnesradens text i det i karantänsmeddelandet.
+- **Ämne**: ämnes raden i det mellanliggande meddelandet.
 
-- **Datum**: Datum och tid (i UTC) som meddelandet sattes i karantän.
+- **Datum**: det datum och den tid (i UTC) som meddelandet satts i karantän.
 
-- **Blockera avsändare:** Klicka på den här länken för att lägga till avsändaren i listan Blockerade avsändare. Mer information finns i [Blockera en e-postavsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Spärra avsändare**: Klicka på den här länken för att lägga till avsändaren i listan med spärrade avsändare. Mer information finns i [blockera en e-avsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- **Släpp:** För spam (inte phish) meddelanden, kan du släppa meddelandet här utan att gå till Karantän Security & Compliance Center.
+- **Version**: för skräp post meddelanden (inte nätfiske) kan du släppa meddelandet här utan att gå till karantänen säkerhets & Compliance Center.
 
-- **Granska**: Klicka på den här länken om du vill gå till Karantän i Security & Compliance Center, där du kan släppa, ta bort eller rapportera dina meddelanden i karantän. Mer information finns i [Hitta och släppa meddelanden i karantän som användare i EOP](find-and-release-quarantined-messages-as-a-user.md).
+- **Granska**: Klicka på den här länken om du vill gå till karantän i säkerhets & Compliance Center, där du kan (beroende på varför meddelandet satts i karantän), släpp, ta bort eller rapportera dina meddelanden i karantän. Mer information finns i [hitta och släppa meddelanden i karantän som en användare i EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-![Exempel på skräppostmeddelanden för slutanvändare](../../media/end-user-spam-notification.png)
+![Exempel på påminnelse om slutanvändare](../../media/end-user-spam-notification.png)

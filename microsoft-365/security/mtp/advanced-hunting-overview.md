@@ -1,7 +1,7 @@
 ---
-title: Översikt - Avancerad jakt
-description: Lär dig mer om avancerade jaktfrågor i Microsoft 365 och hur du använder dem för att proaktivt hitta hot och svagheter i nätverket
-keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, schema, kusto, microsoft 365, Microsoft Threat Protection
+title: Översikt – avancerad jakt
+description: Lär dig mer om de avancerade jakt frågorna i Microsoft 365 och hur du kan använda dem för att proaktivt hitta hot och svaga sidor i ditt nätverk
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -18,57 +18,57 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552440"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608339"
 ---
-# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Proaktivt jakt efter hot med avancerad jakt i Microsoft Threat Protection
+# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Det står proaktivt för problem med avancerad jakt i Microsoft Threat Protection
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Avancerad jakt är ett frågebaserat hotjaktsverktyg som låter dig utforska upp till 30 dagars rådata. Du kan proaktivt granska händelser i nätverket för att hitta intressanta indikatorer och entiteter. Den flexibla tillgången till data underlättar obegränsad jakt på både kända och potentiella hot.
+Advanced jakt är ett fråge baserat Threat-verktyg som gör att du kan utforska upp till 30 dagars rå data. Du kan inspektera händelser i ditt nätverk proaktivt för att hitta intressanta indikatorer och enheter. Den flexibla till gången till data underlättar obegränsad jakt för både kända och potentiella hot.
 <p></p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-Du kan använda samma frågor om hot-jakt för att skapa anpassade identifieringsregler. Dessa regler körs automatiskt för att söka efter och svara på olika händelser och systemtillstånd, inklusive misstänkt överträdelseaktivitet och felkonfigurerade datorer.
+Du kan använda samma hot-jakt-frågor för att skapa anpassade identifierings regler. Dessa regler körs automatiskt för att söka efter och svara på olika händelser och system tillstånd, inklusive misstänkt överträdelse och felkonfigurerade maskiner.
 
-I säkerhetscentret Microsoft 365 stöder avancerad jakt frågor som undersöker data från olika arbetsytor, inklusive data om enheter, e-postmeddelanden, appar och identiteter från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. Om du vill använda avancerad jakt [aktiverar du Microsoft Threat Protection](mtp-enable.md).
+Funktionen liknar [Avancerad jakt i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), förutom att i Microsoft 365 säkerhets Center, har avancerad jakt stöd för frågor som visas i data från olika arbets ytor, inklusive data om enheter, e-post, appar och identiteter från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. [Aktivera skydd mot Microsoft Threat om](mtp-enable.md)du vill använda en avancerad jakt.
 
-## <a name="get-started-with-advanced-hunting"></a>Kom igång med avancerad jakt
+## <a name="get-started-with-advanced-hunting"></a>Komma igång med avancerad jakt
 
-Vi rekommenderar att du går igenom flera steg för att snabbt komma igång med avancerad jakt.
+Vi rekommenderar att du går igenom flera olika sätt för att snabbt komma igång med avancerad jakt.
 
-| Lärandemål | Beskrivning | Resurs |
+| Utbildnings mål | Beskrivning | Resurspool |
 |--|--|--|
-| **Få en känsla för språket** | Avancerad jakt baseras på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/), som stöder samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Översikt över frågespråk](advanced-hunting-query-language.md) |
-| **Lär dig hur du använder frågeresultaten** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Utforska hur du snabbt kan justera frågor, öka detaljnivån för att få rikare information och vidta svarsåtgärder. | - [Arbeta med frågeresultat](advanced-hunting-query-results.md)<br>- [Vidta åtgärder för frågeresultat](advanced-hunting-take-action.md) |
-| **Förstå schemat** | Få en bra förståelse på hög nivå av tabellerna i schemat och deras kolumner. Detta hjälper dig att avgöra var du ska leta efter data och hur du skapar dina frågor. | [Schemareferens](advanced-hunting-schema-tables.md) |
-| **Utnyttja fördefinierade frågor** | Utforska samlingar av fördefinierade frågor som täcker olika hotjaktsscenarier. | - [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och jaga](advanced-hunting-go-hunt.md) |
-| **Optimera frågor** | Förstå hur du skapar effektiva frågor och frågor som kombinerar data från e-postmeddelanden och enheter. | - [Metodtips för frågor](advanced-hunting-shared-queries.md) <br>- [Jaga mellan enheter och e-postmeddelanden](advanced-hunting-best-practices.md) |
-| **Skapa anpassade identifieringsregler** | Förstå hur du kan använda avancerade jaktfrågor för att utlösa aviseringar och tillämpa svarsåtgärder automatiskt. | - [Översikt över anpassade identifieringar](custom-detections-overview.md)<br>- [Regler för anpassad identifiering](custom-detection-rules.md) |
+| **Bekanta dig med språket** | Avancerad jakt är baserat på [Kusto frågespråk](https://docs.microsoft.com/azure/kusto/query/), med stöd för samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Frågespråk, översikt](advanced-hunting-query-language.md) |
+| **Lär dig hur du använder frågeresultat** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Lär dig hur du snabbt kan justera frågor, öka detalj nivån för att få bättre information och vidta åtgärder. | - [Arbeta med frågeresultat](advanced-hunting-query-results.md)<br>- [Vidta en åtgärd i frågeresultatet](advanced-hunting-take-action.md) |
+| **Förstå schemat** | Få en bra, högkvalitativ förståelse av tabellerna i schemat och deras kolumner. Detta hjälper dig att avgöra var du ska leta efter data och hur du skapar frågor. | [Schema referens](advanced-hunting-schema-tables.md) |
+| **Använda fördefinierade frågor** | Lär dig mer om de fördefinierade frågorna | - [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och leta](advanced-hunting-go-hunt.md) |
+| **Optimera frågor** | Förstå hur du skapar effektiva frågor och frågor som kombinerar data från e-post och enheter. | - [Metod tips för frågor](advanced-hunting-shared-queries.md) <br>- [Olika enheter och e-postmeddelanden](advanced-hunting-best-practices.md) |
+| **Skapa anpassade identifierings regler** | Förstå hur du kan använda avancerade frågor för att utlösa meddelanden och tillämpa svars åtgärder automatiskt. | - [Anpassade identifierings översikter](custom-detections-overview.md)<br>- [Anpassade identifierings regler](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Få åtkomst
-Om du vill använda avancerade jaktfunktioner eller andra [Microsoft Threat Protection-funktioner](microsoft-threat-protection.md) måste du tilldelas en lämplig roll i Azure AD. Observera att din åtkomst till slutpunktsdata påverkas av rollbaserade inställningar för åtkomstkontroll i Microsoft Defender ATP. [Läs om hur du hanterar åtkomst till Microsoft Threat Protection](mtp-permissions.md)
+Om du vill använda avancerad jakt eller annan [Microsoft Threat Protection](microsoft-threat-protection.md) -kapacitet måste du tilldela en lämplig roll i Azure AD. Observera att din åtkomst till slut punkts data påverkas av rollbaserad åtkomst kontroll inställningar i Microsoft Defender ATP. [Läs om hur du hanterar åtkomst till Microsoft Threat Protection](mtp-permissions.md)
 
-## <a name="data-freshness-and-update-frequency"></a>Datas fräschör och uppdateringsfrekvens
-Avancerade jaktdata kan kategoriseras i två olika typer, var och en konsoliderad på olika sätt.
+## <a name="data-freshness-and-update-frequency"></a>Data aktualitet och uppdaterings frekvens
+Avancerade jakt uppgifter kan kategoriseras i två distinkta typer, som varje konsol IDE rad är annorlunda.
 
-- **Händelse- eller aktivitetsdata** – fyller i tabeller om aviseringar, säkerhetshändelser, systemhändelser och rutinbedömningar. Avancerad jakt tar emot dessa data nästan omedelbart efter att sensorerna som samlar in dem framgångsrikt överför dem till motsvarande molntjänster. Du kan till exempel börja fråga händelsedata från felfria sensorer på arbetsstationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga på Microsoft Defender ATP och Azure ATP.
-- **Entitetsdata** – fyller i tabeller med konsoliderad information om användare och enheter. Dessa data kommer från både relativt statiska datakällor, till exempel Active Directory-poster och dynamiska källor, till exempel händelseloggar. För att ge nya data uppdateras tabeller var 15:e minut med ny information, vilket lägger till rader som kanske inte är helt ifyllda. Var 24:e timme konsolideras data för att infoga en post som innehåller den senaste, mest omfattande datauppsättningen om varje entitet.
+- **Händelse-eller aktivitets data** – fyller i tabeller om aviseringar, säkerhets händelser, system händelser och utvärderings bedömningar. Advanced jakt tar emot dessa data nästan omedelbart efter att de sensorer som samlar in dem lyckades överföra dem till motsvarande moln tjänster. Du kan till exempel starta frågor mot händelse data från friska sensorer på arbets stationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga i Microsoft Defender ATP och Azure ATP.
+- **Entitetsinformation** – fyller i tabeller med konsol IDE rad information om användare och enheter. Dessa data kommer från både relativt statiska data källor, till exempel Active Directory-poster och dynamiska källor, till exempel händelse loggar. Om du vill lägga till nya data uppdateras tabellerna var 15: e minut med ny information och rader som kanske inte är helt ifyllda. Var 24: e timme konsol IDE ras för att infoga en post som innehåller de senaste, mest omfattande data uppsättningarna för varje enhet.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
-- [Vidta åtgärder för frågeresultat](advanced-hunting-take-action.md)
+- [Utföra en åtgärd på frågeresultat](advanced-hunting-take-action.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Jakt efter hot på enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)
