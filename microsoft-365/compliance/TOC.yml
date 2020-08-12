@@ -243,7 +243,7 @@
   items:
     - name: Hantera informationsstyrning
       href: manage-information-governance.md
-    - name: Importera data
+    - name: Importera postlådedata
       items:
         - name: Översikt över importering av PST-filer
           href: importing-pst-files-to-office-365.md
@@ -251,8 +251,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: Använda enhetsleverans för att importera PST-filer
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: 'Använda PST Collection-verktyget för att hitta, kopiera och ta bort PST-filer'
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filtrera data vid import av PST-filer
           href: filter-data-when-importing-pst-files.md
         - name: Vanliga frågor om import av PST-filer
