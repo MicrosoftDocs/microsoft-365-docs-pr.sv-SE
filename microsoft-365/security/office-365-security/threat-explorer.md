@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577552"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641647"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -207,6 +207,20 @@ Om du vill granska Phish URL-adresser i meddelanden och klickar på URL: er i Ph
 
    > [!NOTE]
    > I dialog rutan URL-utfällbar text tas filtreringen av e-postmeddelanden bort så att du får fullständig vy över URL-vyns exponering i miljön. Med den här funktionen kan du filtrera ned e-postmeddelanden i Utforskaren till dem du är orolig för, hitta specifika URL-adresser som är potentiella hot och sedan utöka din förståelse av URL-exponeringen i din miljö (via dialog rutan URL-information) utan att behöva lägga till URL-filter i själva Utforskarvyn.
+
+
+**Tolkning av olika klick verdicts**
+
+I e-postmeddelandet eller URL-flyouts, de viktigaste tryckningarna samt i vår filter upplevelse ser du olika klick värden som en del av din jakt upplevelse. I det här avsnittet kan du välja Verdicts och deras tolkning:
+
+- **Ingen**: det gick inte att skapa Verdict för URL-adressen. Användaren kanske har klickat via webb adressen.
+- **Tillåten**: användaren har fått åtkomst till URL-adressen.
+- **Blockerat**: användaren hindrades från att navigera till webb adressen.
+- **Väntande Verdict**: användaren har presenter ATS med den väntande sidan för Sprängaren.
+- **Blockerad åsidosatt**: användaren hindrades från att gå till URL-adressen. användaren overrode dock att gå till URL-adressen.
+- **Väntande Verdict förbigåde**: användaren uppvisade sig med sidan detonation; användaren overrode till sidan för att gå till URL-adressen.
+- **Fel**: användaren uppvisade fel sidan. Det kan också betyda att det fanns ett fel när du hämtade Verdict.
+- **Fel**: ett okänt undantag uppstod när du hämtade Verdict. Användaren kanske har klickat via webb adressen. 
 
 ## <a name="review-email-messages-reported-by-users"></a>Granska e-postmeddelanden som rapporter ATS av användare
 

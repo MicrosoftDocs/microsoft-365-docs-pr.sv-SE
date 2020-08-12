@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
-ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601879"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632123"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -39,7 +39,7 @@ ms.locfileid: "46601879"
 
 SPF använder en DNS TXT-post för att tillhandahålla en lista över godkända avsändande IP-adresser för en viss domän. Normalt utförs bara SPF-kontroller mot 5321.MailFrom-adressen. Det betyder att 5322.From-adressen autentiseras inte när du använder SPF enskilt. Det möjliggör ett scenario där en användare kan ta emot ett meddelande som godkänns i en SPF-kontroll men har en förfalskad 5322.From-avsändaradress. Tänk dig till exempel den här SMTP-utskriften:
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -76,7 +76,7 @@ Liksom DNS-posterna för SPF är posten för DMARC en DNS-textpost (TXT) som hj�
 
 Microsofts DMARC TXT-post ser ut ungefär så här:
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -114,7 +114,7 @@ Nu när du har en lista över alla giltiga avsändare kan du följa stegen i [Ko
 
 Om till exempel att contoso.com skickar e-post från Exchange Online, en lokal Exchange-server har en IP-adress som är 192.168.0.1 och ett webbprogram har en IP-adress som är 192.168.100.100, så skulle SPF TXT-posten se ut så här:
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -132,7 +132,7 @@ Instruktioner för konfiguration av DKIM för externa användare så att de kan 
 
 Det finns andra syntaxalternativ som inte nämns här men dessa är de vanligaste alternativen för Microsoft 365. Skapa DMARC TXT-posten för din domän i följande format:
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -152,19 +152,19 @@ Exempel:
 
 - Principen inställd på none (ingen)
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - Principen inställd på quarantine (karantän)
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - Principen inställd på reject (avvisa)
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -187,6 +187,16 @@ Du kan implementera DMARC gradvis utan att det påverkar resten av ditt e-postfl
 3. Begära att externa e-postsystem inte accepterar meddelanden som inte klarar DMARC
 
     Det sista steget är att implementera en avvisningsprincip. En avvisningsprincip är en DMARC TXT-post som har principen inställd på avvisa (p=reject). När du gör det här uppmanar du DMARC-mottagare att inte acceptera meddelanden som inte klarar DMARC-kontrollerna.
+    
+4. Hur ställer du in DMARC för underdomän?
+
+DMARC implementeras genom att publicera en policy som en TXT-post i DNS och är hierarkisk (t.ex. en policy publicerad för contoso.com kommer att tillämpas på sub.domain.contonos.com om inte en annan policy definieras uttryckligen för underdomänet). Detta är användbart eftersom organisationer kanske kan specificera ett mindre antal DMARC-poster på hög nivå för bredare täckning. Man bör vara noga med att konfigurera explicita underdomän DMARC-poster där du inte vill att underdomänerna ska ärva topp nivå domänens DMARC-post.
+
+Du kan också lägga till en policy wildcard-typ för DMARC när domäner inte bör skicka e-post, genom att lägga till `sp=reject` värdet. Till exempel:
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Så hanterar Microsoft 365 utgående e-post som inte klarar DMARC
 
@@ -220,7 +230,7 @@ Om du har konfigurerat din domäns MX-poster där EOP inte är den första poste
 
 Om du är kund pekar din domäns primära MX-post inte på EOP får du inte fördelarna med DMARC. DMARC fungerar till exempel inte om du pekar MX-posten på din lokala e-postserver och dirigerar sedan e-post till EOP med hjälp av ett anslutningsprogram. I det här scenariot är den mottagande domänen en av dina godkända domäner men EOP inte är primär MX. Anta till exempel att contoso.com pekar MX mot sig själv och använder EOP som en sekundär MX-post, så ser MX-posten för contoso.com ut så här:
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```

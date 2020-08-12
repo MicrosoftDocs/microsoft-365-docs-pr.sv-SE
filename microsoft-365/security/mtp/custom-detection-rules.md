@@ -1,7 +1,7 @@
 ---
-title: Skapa och hantera anpassade identifieringsregler i Microsoft Threat Protection
-description: Lär dig hur du skapar och hanterar anpassade identifieringsregler baserat på avancerade jaktfrågor
-keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, regler, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, behörigheter, Microsoft Defender ATP
+title: Skapa och hantera anpassade identifierings regler i Microsoft Threat Protection
+description: Lär dig hur du skapar och hanterar anpassade identifierings regler baserat på avancerade jakt frågor
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, regler, schema, kusto, Microsoft 365, Microsoft Threat Protection, RBAC, behörigheter, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,52 +17,56 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005716"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632157"
 ---
-# <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera regler för anpassade identifieringar
+# <a name="create-and-manage-custom-detections-rules"></a>Skapa och hantera regler för anpassat identifiering
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
-Med anpassade identifieringsregler som skapats från [avancerade jaktfrågor](advanced-hunting-overview.md) kan du proaktivt övervaka olika händelser och systemtillstånd, inklusive misstänkt överträdelseaktivitet och felkonfigurerade slutpunkter. Du kan ställa in dem så att de körs med jämna mellanrum, generera aviseringar och vidta svarsåtgärder när det finns matchningar.
+Anpassade identifierings regler som bygger på [avancerade jakt](advanced-hunting-overview.md) frågor gör att du kan övervaka olika händelser och system tillstånd, inklusive misstänkta överträdelser och felkonfigurerade slut punkter. Du kan ange att de ska köras med jämna mellanrum, skapa aviseringar och vidta åtgärder när det finns träffar.
 
 ## <a name="required-permissions-for-managing-custom-detections"></a>Nödvändiga behörigheter för att hantera anpassade identifieringar
 
-Om du vill hantera anpassade identifieringar måste du tilldelas en av dessa roller:
+För att hantera anpassade identifieringar måste du tilldela en av följande roller:
 
-- **Säkerhetsadministratör** – säkerhetsadministratören eller säkerhetsadministratörsrollen är en [Azure Active Directory-roll](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) för att hantera olika säkerhetsinställningar i Microsoft 365-säkerhetscenter och olika portaler och tjänster.
+- **Säkerhets administratören** – rollen säkerhets administratör eller säkerhets administratör är en [Azure Active Directory-roll](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) för att hantera olika säkerhets inställningar i Microsoft 365 säkerhets Center och olika portaler och tjänster.
 
-- **Säkerhetsoperatör** – säkerhetsoperatörsrollen är en [Azure Active Directory-roll](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) för att hantera aviseringar och har global skrivskyddad åtkomst på säkerhetsrelaterade funktioner, inklusive all information i Microsoft 365-säkerhetscenter. Den här rollen är endast tillräcklig för att hantera anpassade identifieringar om rollbaserad åtkomstkontroll (RBAC) är inaktiverad i Microsoft Defender ATP. Om du har konfigurerat RBAC behöver du också behörigheten **hantera säkerhetsinställningar** för Microsoft Defender ATP.
+- **Säkerhets ansvarig** – rollen säkerhets ansvarig är en [Azure Active Directory-roll](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) för att hantera aviseringar och har globalt skrivskyddad åtkomst till säkerhetsrelaterade funktioner, inklusive all information i Microsoft 365 säkerhets Center. Den här rollen räcker bara till för att hantera anpassade identifieringar om RBAC (rollbaserad åtkomst kontroll) är inaktiverat i Microsoft Defender ATP. Om du har en RBAC-konfiguration behöver du även behörigheten **hantera säkerhets inställningar** för Microsoft Defender ATP.
 
-För att hantera nödvändiga behörigheter kan en **global administratör** göra följande:
+För att hantera nödvändiga behörigheter kan en **Global administratör** göra följande:
 
-- Tilldela **säkerhetsadministratören** eller **säkerhetsoperatörsrollen** i [Microsoft 365-administrationscentret](https://admin.microsoft.com/) under **Roles**  >  **Rollsäkerhetsadministratör**.
-- Kontrollera RBAC-inställningar för Microsoft Defender ATP i [Microsoft Defender Security Center](https://securitycenter.windows.com/) under Roller för **inställningar**  >  **behörigheter**  >  **Roles**. Välj motsvarande roll om du vill tilldela behörigheten **hantera säkerhetsinställningar.**
+- Koppla rollen som **säkerhets administratör** eller **säkerhets ansvarig** i [administrations centret för Microsoft 365](https://admin.microsoft.com/) under **roll**  >  **säkerhets administratör**.
+- Kontrol lera inställningar för RBAC för Microsoft Defender ATP i [Microsoft Defender säkerhets Center](https://securitycenter.windows.com/) under **Inställningar**för  >  **behörighets**  >  **roller**. Välj motsvarande roll för att tilldela behörigheten **hantera säkerhets inställningar** .
 
 > [!NOTE]
-> För att hantera anpassade identifieringar behöver **säkerhetsoperatörer** behörigheten **hantera säkerhetsinställningar** i Microsoft Defender ATP om RBAC är aktiverat.
+> För att hantera anpassade identifieringar måste **säkerhets operatörerna** **hantera säkerhets inställningar** i Microsoft Defender ATP om RBAC är aktiverat.
 
-## <a name="create-a-custom-detection-rule"></a>Skapa en anpassad identifieringsregel
-### <a name="1-prepare-the-query"></a>1. Förbered frågan.
+## <a name="create-a-custom-detection-rule"></a>Skapa en anpassad detektions regel
+### <a name="1-prepare-the-query"></a>1. förbereda frågan.
 
-I Microsoft 365 security center går du till **Avancerad jakt** och väljer en befintlig fråga eller skapar en ny fråga. När du använder en ny fråga kör du frågan för att identifiera fel och förstå möjliga resultat.
+I Microsoft 365 säkerhets Center går du till **Avancerad jakt** och väljer en befintlig fråga eller skapar en ny fråga. Kör frågan för att identifiera fel och förstå möjliga resultat när du använder en ny fråga.
 
-#### <a name="required-columns-in-the-query-results"></a>Obligatoriska kolumner i frågeresultatet
-Om du vill skapa en anpassad identifieringsregel måste frågan returnera följande kolumner:
+>[!IMPORTANT]
+>För att förhindra att tjänsten returnerar för många aviseringar begränsas varje regel för att bara generera 100-varningar när den körs. Innan du skapar en regel kan du ställa in din fråga för att undvika att aviseringar visas för normal, daglig aktivitet.
+
+
+#### <a name="required-columns-in-the-query-results"></a>Kolumner som krävs i frågeresultatet
+Om du vill skapa en anpassad detektions regel måste frågan returnera följande kolumner:
 
 - `Timestamp`
-- En av följande enhets-, användar- eller postlådekolumner:
+- En av följande kolumner för enhet, användare eller post lådor:
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress`(kuvertavsändare eller Retursökvägsadress)
-    - `SenderMailFromAddress`(avsändaradress visas av e-postklienten)
+    - `SenderFromAddress`(kuvert avsändare eller RETUR adress)
+    - `SenderMailFromAddress`(avsändar adress som visas i e-postklienten)
     - `RecipientObjectId`
     - `AccountObjectId`
     - `AccountSid`
@@ -71,13 +75,13 @@ Om du vill skapa en anpassad identifieringsregel måste frågan returnera följa
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
 >[!NOTE]
->Stöd för ytterligare entiteter läggs till när nya tabeller läggs till i det [avancerade jaktschemat](advanced-hunting-schema-tables.md).
+>Stöd för ytterligare enheter läggs till när nya tabeller läggs till i det [avancerade jakt schemat](advanced-hunting-schema-tables.md).
 
-Enkla frågor, till exempel de som inte använder `project` operatorn eller `summarize` för att anpassa eller aggregera resultat, returnerar vanligtvis dessa vanliga kolumner.
+Enkla frågor, till exempel dem som inte använder `project` `summarize` operatorn eller för att anpassa resultat, returnerar normalt dessa vanliga kolumner.
 
-Det finns olika sätt att se till att mer komplexa frågor returnerar dessa kolumner. Om du till exempel föredrar att aggregera och räkna efter entitet under en kolumn, till `DeviceId` exempel, kan du fortfarande returnera `Timestamp` den genom att hämta den från den senaste händelsen som involverar varje unik `DeviceId` .
+Det finns olika sätt att se till att komplexa frågor returnerar de här kolumnerna. Om du till exempel föredrar att aggregera och inventera efter entitet under en kolumn, `DeviceId` kan du ändå återgå till `Timestamp` genom att hämta den från den senaste händelsen som berör varje unikt `DeviceId` .
 
-Exempelfrågan nedan räknar antalet unika enheter ( `DeviceId` ) med antivirusidentifieringar och använder det här antalet för att bara hitta enheter med fler än fem identifieringar. För att returnera det senaste `Timestamp` använder den `summarize` operatorn med `arg_max` funktionen.
+I exempel frågan nedan räknas antalet unika enheter ( `DeviceId` ) med Antivirus identifieringar och använder det här antalet för att endast hitta enheter med fler än fem identifieringar. För att returnera det senaste `Timestamp` använder den `summarize` operatorn med `arg_max` funktionen.
 
 ```kusto
 DeviceEvents
@@ -85,109 +89,110 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
-### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Skapa ny regel och ge varningsinformation.
 
-Med frågan i frågeredigeraren väljer du **Skapa identifieringsregel** och anger följande varningsinformation:
+### <a name="2-create-new-rule-and-provide-alert-details"></a>2. skapa en ny regel och ange aviserings information.
 
-- **Identifieringsnamn** – namnet på identifieringsregeln
-- **Frekvens** – intervall för att köra frågan och vidta åtgärder. [Se ytterligare vägledning nedan](#rule-frequency)
-- **Varningsrubrik** – titel som visas med aviseringar som utlöses av regeln
-- **Allvarlighetsgrad** – potentiell risk för den komponent eller aktivitet som identifierats av regeln
-- **Kategori** – hotkomponent eller hotaktivitet som identifierats av regeln
-- **MITRE ATT&CK-teknik** – en eller flera angreppstekniker som identifierats av regeln enligt beskrivningen i [MITRE ATT&CK-ramverket.](https://attack.mitre.org/) Det här avsnittet gäller inte och är dolt för vissa varningskategorier, inklusive skadlig kod, ransomware, misstänkt aktivitet och oönskad programvara
-- **Beskrivning** – mer information om den komponent eller aktivitet som identifierats i regeln 
-- **Rekommenderade åtgärder** – ytterligare åtgärder som de som svarar kan vidta som svar på en avisering
+Med frågan i Frågeredigeraren väljer du **skapa detektions regel** och anger följande aviserings information:
 
-#### <a name="rule-frequency"></a>Regelfrekvens
-När den sparas körs en ny eller redigerad anpassad identifieringsregel omedelbart och söker efter matchningar från de senaste 30 dagarnas data. Regeln körs sedan igen med fasta intervall och tillbakablickslängder baserat på den frekvens du väljer:
+- **Identifierings namn** – namnet på identifierings regeln
+- **Frekvens** – ett tidsintervall som används för att köra frågan och vidta åtgärder. [Se ytterligare vägledning nedan](#rule-frequency)
+- **Aviserings rubrik** – titeln visas med notifieringar utlöst av regeln
+- **Allvarlighets grad** — den komponent eller aktivitet som identifieras av regeln
+- **Kategori** – hot komponent eller aktivitet som identifieras av regeln
+- **Mitre to&CK-teknik** – en eller flera angrepp som identifieras av regeln enligt anvisningarna i [&MITREs ramverk](https://attack.mitre.org/). Det här avsnittet gäller inte och är dolt för vissa varnings kategorier, inklusive skadlig program vara, utpressnings tro Jan, misstänkt aktivitet och oönskad tillämpning
+- **Beskrivning** – mer information om komponenten eller aktiviteten som identifieras av regeln 
+- **Rekommenderade åtgärder** – ytterligare åtgärder som svars handlingar kan ta emot när det gäller en avisering
 
-- **Var 24:e timme** – körs var 24:e timme, kontrollerar data från de senaste 30 dagarna
-- **Var 12:e timme** – körs var 12:e timme, kontrollerar data från de senaste 24 timmarna
-- **Var tredje timme** – körs var tredje timme, kontrollerar data från de senaste 6 timmarna
-- **Varje timme** – går varje timme, kontrollerar data från de senaste 2 timmarna
+#### <a name="rule-frequency"></a>Regel frekvens
+När den sparas körs en ny eller redige rad anpassad detektion direkt och söker efter träffar från de senaste 30 dagarna. Regeln körs sedan igen med fasta tidsintervall och lookback varaktighet baserat på den frekvens du väljer:
 
-Välj den frekvens som matchar hur nära du vill övervaka identifieringar och ta hänsyn till organisationens förmåga att svara på aviseringarna.
+- Med ett **dygn** – löper ett dygn runt data från de senaste 30 dagarna
+- **Var 12: e** timme – kör var tolfte timme och kontrol lera data från de senaste 24 timmarna
+- **Var tredje timme** – kör var tredje timme, kontrol lera data från de senaste 6 timmarna
+- **Varje timme** – kör per timme för att kontrol lera data från de senaste 2 timmarna
 
-### <a name="3-choose-the-impacted-entities"></a>3. Välj de påverkade enheterna.
-Identifiera kolumnerna i frågeresultaten där du förväntar dig att hitta de viktigaste påverkade eller påverkade entiteten. En fråga kan till exempel returnera avsändaradresser ( `SenderFromAddress` eller ) och mottagare ( `SenderMailFromAddress` `RecipientEmailAddress` ). Identifiera vilka av dessa kolumner som representerar de viktigaste påverkade entiteten hjälper tjänsten att aggregera relevanta aviseringar, korrelera incidenter och målsvarsåtgärder.
+Välj den frekvens som motsvarar hur nära du vill övervaka identifieringarna och Överväg organisationens kapacitet för att svara på aviseringarna.
 
-Du kan bara välja en kolumn för varje entitetstyp (postlåda, användare eller enhet). Kolumner som inte returneras av frågan kan inte markeras.
+### <a name="3-choose-the-impacted-entities"></a>3. Välj de enheter som påverkas.
+Identifiera kolumnerna i frågeresultatet där du förväntar dig att hitta den huvud enhet som påverkas eller påverkas. En fråga kan till exempel returnera avsändare ( `SenderFromAddress` eller `SenderMailFromAddress` )-och mottagar `RecipientEmailAddress` adresser. Att identifiera vilka av de här kolumnerna som representerar huvud enheten som påverkas hjälper tjänsten att aggregera relevanta aviseringar, korrelera problem och åtgärder för mål svar.
 
-### <a name="4-specify-actions"></a>4. Ange åtgärder.
-Din anpassade identifieringsregel kan automatiskt vidta åtgärder på enheter, filer eller användare som returneras av frågan.
+Du kan bara välja en kolumn för varje entitetstyp (post låda, användare eller enhet). Kolumner som inte returneras av frågan kan inte markeras.
+
+### <a name="4-specify-actions"></a>4. ange åtgärder.
+Din regel för anpassad avkänning kan automatiskt utföra åtgärder på enheter, filer eller användare som returneras av frågan.
 
 #### <a name="actions-on-devices"></a>Åtgärder på enheter
-Dessa åtgärder tillämpas på enheter i `DeviceId` kolumnen i frågeresultaten:
-- **Isolera enheten** – använder Microsoft Defender ATP för att tillämpa fullständig nätverksisolering, vilket förhindrar att enheten ansluter till något program eller någon tjänst. [Läs mer om isolering av Microsoft Defender ATP-datorer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **Samla in undersökningspaket** – samlar in enhetsinformation i en ZIP-fil. [Läs mer om microsoft Defender ATP-undersökningspaketet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Kör antivirussökning** – utför en fullständig Windows Defender Antivirus-genomsökning på enheten
-- **Inleder undersökning** – inleder en [automatiserad undersökning](mtp-autoir.md) på enheten
-- **Begränsa appkörning** – anger begränsningar för enheten så att endast filer som är signerade med ett Microsoft-utfärdat certifikat körs. [Läs mer om appbegränsningar med Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+De här åtgärderna tillämpas på enheter i `DeviceId` kolumnen i frågeresultatet:
+- **Isolera enhet** – använder Microsoft Defender ATP för att tillämpa fullständig nätverks isolering, så att enheten inte kan ansluta till något program eller någon tjänst. [Läs mer om dator isolering för Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Samla in undersöknings paket** – samlar in enhets information i en zip-fil. [Läs mer om Microsoft Defender-gransknings paketet för ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **Kör antivirus-genomsökning** – utför en fullständig Windows Defender Antivirus-genomsökning på enheten
+- **Inleda undersökning** – initierar en [Automatisk undersökning](mtp-autoir.md) på enheten
+- **Begränsa program körning** – anger begränsningar för enheter för att endast tillåta att filer som är signerade med ett Microsoft-utfärdat certifikat körs. [Läs mer om program begränsningar med Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
-#### <a name="actions-on-files"></a>Åtgärder för filer
-När du väljer det här alternativet kan du välja att använda **karantänfilåtgärden** på filer i `SHA1` `InitiatingProcessSHA1` `SHA256` frågeresultaten , , eller `InitiatingProcessSHA256` kolumnen. Den här åtgärden tar bort filen från den aktuella platsen och placerar en kopia i karantän.
+#### <a name="actions-on-files"></a>Åtgärder på filer
+När du väljer det här alternativet kan du välja att använda **karantän fil** åtgärden för filer `SHA1` i `InitiatingProcessSHA1` `SHA256` kolumnerna,, eller i `InitiatingProcessSHA256` frågeresultatet. Den här åtgärden tar bort filen från dess nuvarande plats och placerar en kopia i karantän.
 
 #### <a name="actions-on-users"></a>Åtgärder för användare
-När det här alternativet är markerat utförs **åtgärden Markera som komprometterade** åtgärder för användare i `AccountObjectId` , eller kolumnen i `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultatet. Den här åtgärden anger att användarnas risknivå är "hög" i Azure Active Directory, vilket utlöser motsvarande [principer för identitetsskydd](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+När **det här** alternativet är markerat vidtas användare i `AccountObjectId` `InitiatingProcessAccountObjectId` kolumnen, eller, eller i `RecipientObjectId` frågeresultatet. Den här åtgärden anger risk nivån för användare till "hög" i Azure Active Directory och utlöser motsvarande [identitets skydds principer](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
 > [!NOTE]
-> Tillåt- eller blockeringsåtgärden för anpassade identifieringsregler stöds för närvarande inte på Microsoft Threat Protection.
+> Åtgärden tillåta eller blockera för anpassade identifierings regler stöds för närvarande inte för skydd mot Microsoft-hotet.
 
-### <a name="5-set-the-rule-scope"></a>5. Ange regelomfattning.
-Ange omfånget för att ange vilka enheter som omfattas av regeln. Omfattningen påverkar regler som kontrollerar enheter och påverkar inte regler som bara kontrollerar postlådor och användarkonton eller identiteter.
+### <a name="5-set-the-rule-scope"></a>5. Ange regel omfånget.
+Ange omfattningen för att ange vilka enheter som omfattas av regeln. Omfattningen påverkar regler som kontrollerar enheter och påverkar inte regler som bara kontrollerar post lådor och användar konton eller identiteter.
 
-När du anger scopet kan du välja:
+När du ställer in omfattningen kan du välja:
 
 - Alla enheter
-- Specifika enhetsgrupper
+- Specifika enhets grupper
 
-Endast data från enheter i omfånget kommer att efterfrågas. Dessutom kommer åtgärder endast att vidtas på dessa enheter.
+Endast data från enheter i omfattning kommer att frågas. Åtgärder kommer också att vidtas för dessa enheter.
 
-### <a name="6-review-and-turn-on-the-rule"></a>6. Granska och slå på regeln.
-När du har granskat regeln klickar du på **Skapa** för att spara den. Den anpassade identifieringsregeln körs omedelbart. Den körs igen baserat på konfigurerad frekvens för att söka efter matchningar, generera aviseringar och vidta svarsåtgärder.
+### <a name="6-review-and-turn-on-the-rule"></a>6. granska och aktivera regeln.
+När du har granskat regeln klickar du på **skapa** för att spara den. Den anpassade detektions regeln körs omedelbart. Det körs igen baserat på konfigurerat frekvens för att kontrol lera träffar, generera aviseringar och vidta åtgärder.
 
-## <a name="manage-existing-custom-detection-rules"></a>Hantera befintliga anpassade identifieringsregler
-Du kan visa listan över befintliga anpassade identifieringsregler, kontrollera deras tidigare körningar och granska de aviseringar som de har utlöst. Du kan också köra en regel på begäran och ändra den.
+## <a name="manage-existing-custom-detection-rules"></a>Hantera befintliga regler för anpassat identifiering
+Du kan visa en lista med befintliga regler för anpassad avkänning, kontrol lera deras tidigare körningar och granska de notifieringar de har utlöst. Du kan också köra en regel på begäran och ändra den.
 
 ### <a name="view-existing-rules"></a>Visa befintliga regler
 
-Om du vill visa alla befintliga anpassade identifieringsregler navigerar du till **Anpassade**  >  **identifieringar**för Jakt . På sidan visas alla regler med följande körinformation:
+Om du vill visa alla befintliga regler för anpassat identifiering navigerar du till **jakt**i  >  **anpassat**läge. På sidan visas alla regler med följande kör information:
 
-- **Senaste körningen** – när en regel senast kördes för att söka efter frågematchningar och generera aviseringar
-- **Status för senaste körning** – om en regel har körts
-- **Nästa körning** – nästa schemalagda körning
-- **Status** – om en regel har aktiverats eller inaktiverats
+- **Senaste körning** – när en regel senast kördes för att kontrol lera frågan och generera aviseringar
+- **Senaste körnings status** – oavsett om en regel kördes
+- **Nästa kör** -nästa schemalagda körning
+- **Status** – om en regel har Aktiver ATS eller inaktiverats
 
-### <a name="view-rule-details-modify-rule-and-run-rule"></a>Visa regelinformation, ändra regel och kör regel
+### <a name="view-rule-details-modify-rule-and-run-rule"></a>Visa regel detaljer, ändra regel och kör regel
 
-Om du vill visa omfattande information om en anpassad identifieringsregel väljer du namnet på regeln i listan över regler i **Jakt**  >  **anpassade identifieringar**. Då öppnas en sida om den anpassade identifieringsregeln med allmän information om regeln, inklusive information om aviseringen, körstatusen och omfånget. Den innehåller också en lista över utlösta aviseringar och utlösta åtgärder.
+Om du vill visa omfattande information om en anpassad detektions regel väljer du namnet på regeln i listan med regler i **jaktens**  >  **anpassade identifieringar**. Då öppnas en sida om den anpassade identifierings regeln med allmän information om regeln, inklusive information om varningen, kör status och omfattning. Den innehåller också en lista över utlösta varningar och utlösta åtgärder.
 
-![Informationssida för anpassad identifieringsregel](../../media/custom-detection-details.png)<br>
-*Information om anpassad identifieringsregel*
+![Sidan information om anpassad identifierings regel](../../media/custom-detection-details.png)<br>
+*Information om anpassade identifierings regler*
 
 Du kan också vidta följande åtgärder på regeln från den här sidan:
 
 - **Kör** – kör regeln omedelbart. Detta återställer också intervallet för nästa körning.
 - **Redigera** – ändra regeln utan att ändra frågan
 - **Ändra fråga** – redigera frågan i avancerad jakt
-- **Slå på**  /  **Inaktivera** – aktivera regeln eller stoppa den från att köras
+- **Aktivera**  /  **Inaktivera** – aktivera regeln eller förhindra att den körs
 - **Ta bort** – inaktivera regeln och ta bort den
 
 ### <a name="view-and-manage-triggered-alerts"></a>Visa och hantera utlösta aviseringar
 
-På skärmen Regelinformation (**Jakt**  >  **anpassade identifieringar**  >  **[Regelnamn]**) går du till **Utlösta aviseringar** för att visa listan över aviseringar som genereras av matchningar till regeln. Välj en avisering om du vill visa detaljerad information om aviseringen och vidta följande åtgärder för den aviseringen:
+I fönstret med regel information (**jakt**  >  efter**anpassade identifieringar**  >  **[regel namn]**) går du till **utlösta varningar** för att visa listan med aviseringar som genererats av matchningar till regeln. Välj en avisering om du vill visa detaljerad information om den här aviseringen och vidta följande åtgärder för aviseringen:
 
-- Hantera aviseringen genom att ange dess status och klassificering (sann eller falsk avisering)
-- Länka aviseringen till en incident
-- Kör frågan som utlöste aviseringen vid avancerad jakt
+- Hantera varningen genom att ange dess status och klassificering (sant eller falsk)
+- Länka aviseringen till en olycka
+- Kör frågan som utlöste aviseringen om avancerad jakt
 
-### <a name="review-actions"></a>Granska åtgärder
-På skärmen Regelinformation (**Hunting**  >  **Custom detections**  >  **[Rule name]**) går du till Utlösta åtgärder för att visa listan över åtgärder som **vidtagits** baserat på matchningar till regeln.
+### <a name="review-actions"></a>Gransknings åtgärder
+I fönstret med regel detaljer (**jakt**på  >  **anpassade identifieringar**  >  **[regel namn]**) går du till **utlösta åtgärder** för att visa listan med åtgärder som utförs baserat på matchningar till regeln.
 
 >[!TIP]
->Om du snabbt vill visa information och vidta åtgärder för ett objekt i en tabell använder du markeringskolumnen [&#10003;] till vänster i tabellen.
+>Om du snabbt vill visa information och vidta åtgärder för ett objekt i en tabell använder du kolumn kolumnen [&#10003;] till vänster i tabellen.
 
-## <a name="related-topic"></a>Relaterat ämne
+## <a name="related-topic"></a>Närliggande ämne
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
-- [Lär dig det avancerade jaktfrågespråket](advanced-hunting-query-language.md)
+- [Lär dig mer om det avancerade frågespråket](advanced-hunting-query-language.md)

@@ -21,12 +21,12 @@ search.appverid:
 description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552452"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641591"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 
@@ -56,6 +56,9 @@ Spara tid genom att påbörja din tjänstbegäran online. Vi hjälper dig att hi
 Faktureringssupport ges på engelska kl. 9–17 (9–18 i Australien), måndag till fredag.
 Teknisk support på engelska dygnet runt alla dagar.\
 Ha kontouppgifterna redo när du ringer.
+
+> [!NOTE]
+> För att bättre skydda din organisation har vi lagt till ett PIN-baserat verifieringssteg till vår befintliga telefonbaserade verifieringsprocess. Om du kontaktar oss från ett nummer som inte är registrerat med din organisationsprofil, skickar Microsofts supportrepresentant en verifieringskod till det registrerade e-postmeddelandet eller telefonnumret i din Administrationscenter för Microsoft 365 profil. Du måste tillhandahålla den här koden till supportrepresentanten för att ge dem åtkomst till din organisations konto.
 
 - **I Sverige ringer du 020 160 5899. **
 
