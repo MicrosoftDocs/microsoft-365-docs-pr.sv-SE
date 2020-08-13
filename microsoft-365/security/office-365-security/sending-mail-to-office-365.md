@@ -17,23 +17,26 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig som extern avsändare hur du kan öka möjligheten att leverera e-post till användare i Microsoft 365. Lär dig också hur du anmäler skräppost & nätfiskeförsök som extern användare.
-ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: Lär dig som extern avsändare, hur kan du öka möjligheten att skicka e-post till användare i Microsoft 365. Läs även hur du rapporterar skräp post & nätfiske-försök som extern användare.
+ms.openlocfilehash: 76fc376d32904b5cb61080e88a38a1dda815836f
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209829"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652771"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Skicka e-post till Microsoft 365
 
-Dessa artiklar hjälper externa avsändare att förbättra sitt rykte och öka sin förmåga att leverera e-post till användare i Microsoft 365. De innehåller också viss information om hur du kan rapportera skräppost och nätfiskeförsök även om du själv inte är en Microsoft 365-användare.
+De här artiklarna hjälper externa avsändare att förbättra sitt rykte och öka sin förmåga att skicka e-post till användare i Microsoft 365. De innehåller också information om hur du kan rapportera skräp post och nät fiske försök även om du inte är en Microsoft 365-användare själv.
 
-Om du inte är kund, men försöker skicka e-post till någon i vem som är, är du på rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräppost är detta inte rätt avsnitt för dig. Gå istället till Skydd mot [skräppost och skadlig kod i Microsoft 365](anti-spam-and-anti-malware-protection.md).
+Om du inte är kund men försöker skicka e-post till någon i Vem är du på rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräp post är det här inte rätt avsnitt för dig. I stället kan du gå till [skydd mot skräp post och skyddar mot skadlig program vara i Microsoft 365](anti-spam-and-anti-malware-protection.md).
 
-|**För information om...**|**Se...**|
-|:-----|:-----|
-|Tjänster som vi tillhandahåller administratörer av e-postsystem som skickar individuell och massutskick av e-post till kunder.|[Tjänster för icke-kunder som skickar e-post till Office 365](services-for-non-customers.md)|
-|Så här åtgärdar du problem med att nå kunder i Microsoft 365 via e-post. Metodtips för att skicka massutskick till Microsoft 365-mottagare.|[Felsöka e-post som skickas till Office 365](troubleshooting-mail-sent-to-office-365.md)|
-|Hur Microsoft 365 förhindrar att skräppost, inklusive nätfiske och förfalskning av e-post, skickas till våra kunder.|[Skydd mot skräppost i Microsoft 365](anti-spam-protection.md)|
-|Hur du, en administratör som skickar e-post till Microsoft 365-kunder, kan undvika att e-post blockeras genom att följa våra policyer mot skräppost. Detta är den juridiska saker du behöver veta.|[Referens: principer, övningar och riktlinjer](reference-policies-practices-and-guidelines.md)|
+****
+
+|Information om...|Se...|
+|---|---|
+|Tjänster vi tillhandahåller administratörer för e-postsystem som skickar enskilda och Mass utskick via e-post till kunder.|[Tjänster för ej kunder som skickar e-post till Office 365](services-for-non-customers.md)|
+|Så här löser du problem med att nå kunder i Microsoft 365 via e-post. Metod tips för att skicka mass utskick till Microsoft 365-mottagare.|[Felsöka e-post som skickas till Office 365](troubleshooting-mail-sent-to-office-365.md)|
+|Hur Microsoft 365 hindrar skräp post, till exempel nätfiske och falska e-post, från att skickas till våra kunder.|[Skydd mot skräp post i Microsoft 365](anti-spam-protection.md)|
+|Hur du, en administratör som skickar e-post till Microsoft 365-kunder, kan förhindra att e-post blockeras genom att följa våra policyer för skräp post skydd. Det här är de juridiska saker du behöver veta.|[Referens: principer, övningar och riktlinjer](reference-policies-practices-and-guidelines.md)|
+|

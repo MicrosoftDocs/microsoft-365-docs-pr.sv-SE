@@ -1,7 +1,7 @@
 ---
-title: Avancerad jaktpraxis i Microsofts hotskydd
-description: Lär dig hur du konstruerar snabba, effektiva och felfria hotjaktsfrågor när du använder avancerad jakt
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade upptäckter, schema, kusto, undvika timeout, kommandorader, process-ID
+title: Avancerad jakt metod tips för Microsoft Threat Protection
+description: Lär dig hur du skapar snabba, effektiva och problem med hotfrågor när du använder avancerad jakt
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, undvika tids gräns, kommando rader, process-ID
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,43 +17,43 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: f66b17fbdaaa58cf12bd0373d0fece59349c3a48
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929510"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649505"
 ---
-# <a name="advanced-hunting-query-best-practices"></a>Metodtips för avancerad jaktfråga
+# <a name="advanced-hunting-query-best-practices"></a>Metod tips för avancerad jakt frågor
 
-**Gäller:**
-- Microsofts hotskydd
+**Gäller för:**
+- Microsoft Hotskydd
 
 
 
-## <a name="optimize-query-performance"></a>Optimera frågeprestanda
-Använd dessa rekommendationer för att få resultat snabbare och undvika timeout när du kör komplexa frågor:
-- När du provar nya `limit` frågor, använd alltid för att undvika extremt stora resultatuppsättningar. Du kan också först bedöma storleken på `count`resultatuppsättningen med .
-- Använd tidsfilter först. Begränsa dina frågor till jämna dagar.
-- Placera filter som förväntas ta bort de flesta data i början av frågan, direkt efter tidsfiltret.
-- Använd `has` operatorn `contains` över när du letar efter fullständiga tokens.
-- Titta i en viss kolumn i stället för att köra fulltextsökningar i alla kolumner.
-- När du sammanfogar tabeller anger du tabellen med färre rader först.
-- `project`bara nödvändiga kolumner från tabeller som du har gått med i.
+## <a name="optimize-query-performance"></a>Optimera frågeresultatet
+Använd dessa rekommendationer för att få snabbare resultat och undvika tids gränser när du kör komplexa frågor:
+- När du försöker med nya frågor bör `limit` du alltid använda för att undvika extremt stora resultat mängder. Du kan också börja med att bedöma storleken på resultatet som används `count` .
+- Använd tids filter först. Det bästa är att begränsa dina frågor till ännu dagar.
+- Placera filter som förväntas ta bort de flesta data i början av frågan, direkt efter tids filtret.
+- Använd `has` operatorn `contains` när du letar efter fullständiga token.
+- Leta i en viss kolumn i stället för att köra fullständig text ökning i alla kolumner.
+- När du kopplar tabeller ska du ange tabellen med färre rader först.
+- `project`endast kolumner från tabeller som du har anslutit till.
 
 >[!Tip]
->Mer information om hur du förbättrar frågeprestanda finns i [bästa praxis för Kusto-frågor](https://docs.microsoft.com/azure/kusto/query/best-practices).
+>För mer information om hur du förbättrar frågeresultatet kan du läsa [Kusto metod tips](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="query-tips-and-pitfalls"></a>Frågetips och fallgropar
+## <a name="query-tips-and-pitfalls"></a>Tips för frågor och fall GRO par
 
-### <a name="queries-with-process-ids"></a>Frågor med process-ID
-Process-ID (PID) återvinns i Windows och återanvänds för nya processer. På egen hand kan de inte fungera som unika identifierare för specifika processer.
+### <a name="queries-with-process-ids"></a>Frågor med process-ID: n
+Process-ID: n återvinns i Windows och återanvänds för nya processer. De kan inte fungera som unika identifierare för specifika processer.
 
-Om du vill få en unik identifierare för en process på en viss dator använder du process-ID:t tillsammans med processens skapandetid. När du sammanfogar eller summerar data runt processer, `DeviceId` `DeviceName`inkludera kolumner för`ProcessId` maskinidentifieraren (antingen eller ), process-ID (eller `InitiatingProcessId`), och processens skapandetid (`ProcessCreationTime` eller `InitiatingProcessCreationTime`)
+Om du vill ha en unik identifierare för en process på en specifik dator använder du process-ID: t tillsammans med processen för skapande av process. När du ansluter till eller sammanfattar data i processer inkluderar du kolumner för datorns ID (antingen `DeviceId` eller `DeviceName` ), process-ID ( `ProcessId` eller `InitiatingProcessId` ) och processens skapelse tid ( `ProcessCreationTime` eller `InitiatingProcessCreationTime` )
 
-Följande exempelfråga hittar processer som kommer åt mer än 10 IP-adresser över port 445 (SMB), eventuellt genomsökning efter filresurser.
+I följande exempel fråga hittas processer med åtkomst till fler än 10 IP-adresser över Port 445 (SMB), eventuellt genomsökning efter fil resurser.
 
-Exempelfråga:
+Exempel fråga:
 ```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
@@ -61,22 +61,22 @@ DeviceNetworkEvents
 | where RemoteIPCount > 10
 ```
 
-Frågan sammanfattas med `InitiatingProcessId` `InitiatingProcessCreationTime` båda och så att den tittar på en enda process, utan att blanda flera processer med samma process-ID.
+Frågan sammanfattar både efter båda `InitiatingProcessId` och `InitiatingProcessCreationTime` så att den ser ut på en enstaka gång, utan att flera processer med samma process-ID kan blandas.
 
-### <a name="queries-with-command-lines"></a>Frågor med kommandorader
+### <a name="queries-with-command-lines"></a>Frågor med kommando rader
 
-Kommandorader kan variera. I förekommande fall filtrera på filnamn och gör suddig matchning.
+Kommando rader kan variera. I tillämpliga fall filtrerar du efter fil namn och utför fuzzy-matchning.
 
-Det finns många sätt att skapa en kommandorad för att utföra en uppgift. En angripare kan till exempel referera till en bildfil med eller utan sökväg, utan filtillägg, använda miljövariabler eller med citattecken. Dessutom kan angriparen också ändra ordningen på parametrar eller lägga till flera citattecken och blanksteg.
+Det finns många olika sätt att skapa en kommando rad för att utföra en uppgift. En angripare kan till exempel referera till en bildfil med eller utan en sökväg, utan fil namns tillägg, med hjälp av miljövariabler eller med citat tecken. Dessutom kan angriparen också ändra ordningen på parametrar eller lägga till flera citat tecken och blank steg.
 
-Om du vill skapa mer varaktiga frågor med kommandorader använder du följande metoder:
+Gör så här om du vill skapa fler beständiga frågor med kommando rader:
 
-- Identifiera kända processer (till exempel *net.exe* eller *psexec.exe)* genom att matcha i filnamnsfälten i stället för att filtrera i kommandoradsfältet.
-- När du frågar efter kommandoradsargument ska du inte leta efter en exakt matchning på flera orelaterade argument i en viss ordning. Använd i stället reguljära uttryck eller använd flera separata operatorer.
-- Använd skiftläge okänsliga matchningar. Använd till `=~`exempel `in~`, `contains` och `==` `in`i stället för , och`contains_cs`
-- Om du vill minska DOS-kommandoradsfördunklingstekniker bör du överväga att ta bort citattecken, ersätta kommatecken med blanksteg och ersätta flera på varandra följande blanksteg med ett enda blanksteg. Observera att det finns mer komplexa DOS-fördunklingstekniker som kräver andra metoder, men dessa kan hjälpa till att ta itu med de vanligaste.
+- Identifiera kända processer (till exempel *net.exe* eller *psexec.exe*) genom att matcha fil namns fälten i stället för filtrering i kommando rads fältet.
+- Leta inte efter en exakt matchning på flera icke relaterade argument i en viss ordning när du frågar efter kommando rads argument. Använd i stället vanliga uttryck eller Använd flera separata innehåller operatorer.
+- Använd Skift läges okänsliga träffar. Till exempel använda `=~` , `in~` och `contains` i stället för `==` , `in` och`contains_cs`
+- Om du vill minska DOS-obfuscation metoder kan du ta bort citat tecken, ersätta kommatecken med blank steg och ersätta flera sammanhängande blank steg med ett enda blank steg. Observera att det finns mer komplexa DOS obfuscation-tekniker som kräver andra metoder, men dessa kan hjälpa till med att adressera de vanligaste.
 
-I följande exempel visas olika sätt att skapa en fråga som söker efter filen *net.exe* för att stoppa windows defender-brandväggen:
+Följande exempel visar olika sätt att skapa en fråga som söker efter filen *net.exe* att stoppa Windows Defender Firewall-tjänsten:
 
 ```kusto
 // Non-durable query - do not use
@@ -95,9 +95,9 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Avancerad jaktöversikt](advanced-hunting-overview.md)
+- [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)

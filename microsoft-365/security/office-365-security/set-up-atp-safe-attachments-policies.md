@@ -1,5 +1,5 @@
 ---
-title: Konfigurera principer för office 365 ATP-säkra bifogade filer
+title: Konfigurera Office 365-principer för säkra bifogade filer
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,97 +16,100 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Läs mer om hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer i e-post.
+description: Lär dig hur du definierar principer för säkra bifogade filer för att skydda din organisation från skadliga filer via e-post.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430429"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656640"
 ---
-# <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera principer för office 365 ATP-säkra bifogade filer
+# <a name="set-up-office-365-atp-safe-attachments-policies"></a>Konfigurera Office 365-principer för säkra bifogade filer
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare som letar efter information om säkra bilagor i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hem användare letar efter information om säkra bifogade filer i Outlook kan du läsa mer i [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Personer skickar, ta emot och delar regelbundet bifogade filer, till exempel dokument, presentationer, kalkylblad med mera. Det är inte alltid lätt att avgöra om en bifogad fil är säker eller skadlig bara genom att titta på ett e-postmeddelande. Och det sista du vill ha är en skadlig bilaga för att komma igenom, vilket orsakar förödelse för din organisation. Lyckligtvis kan [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) hjälpa till. Du kan ställa in principer för [betrodda bilagor](atp-safe-attachments.md) för att säkerställa att din organisation skyddas mot attacker av osäkra e-postbilagor.
+Personer skickar, tar emot och delar ut bifogade filer regelbundet, till exempel dokument, presentationer, kalkyl blad och annat. Det är inte alltid enkelt att berätta om en bifogad fil är säker eller skadlig genom att titta i ett e-postmeddelande. Och det sista du vill ha är en skadlig bifogad fil som wreaking Havoc för din organisation. Som tur är kan [Office 365 Avancerat skydd](office-365-atp.md) (ATP) vara till hjälp. Du kan ställa in principer för säker åtkomst till [ATP](atp-safe-attachments.md) för att säkerställa att organisationen skyddas mot attacker via osäkra e-postbilagor.
 
-## <a name="what-to-do"></a>Vad du ska göra
+## <a name="what-to-do"></a>Vad kan jag göra?
 
-1. Granska förutsättningarna
+1. Granska kraven
 
-2. Konfigurera en ATP-princip för säkra bilagor
+2. Konfigurera en policy för säkrade säkerhets meddelanden för ATP
 
-3. Läs mer om alternativ för ATP-säkra bilagor
+3. Läs mer om princip alternativ för säker användning av ATP
 
-## <a name="step-1-review-the-prerequisites"></a>Steg 1: Granska förutsättningarna
+## <a name="step-1-review-the-prerequisites"></a>Steg 1: granska kraven
 
-- Kontrollera att din organisation har [ett avancerat skydd mot Office 365.](office-365-atp.md)
+- Kontrol lera att din organisation har [Office 365 Avancerat skydd för hotet](office-365-atp.md).
 
-- Kontrollera att du har de behörigheter som krävs. Om du vill definiera (eller redigera) ATP-principer måste du antingen tilldelas en Exchange Online Organization Management-roll (global administratör tilldelas den här rollen som standard) eller både Exchange Online Hygiene Management och Säkerhetsadministratörsroller. Mer information finns i följande tabell:
+- Se till att du har nödvändig behörighet. Om du vill definiera (eller redigera) ATP-principer måste du ha tilldelats antingen rollen som organisations hantering för Exchange Online (global administratör är tilldelad till den här rollen) eller båda rollerna för Exchange Online hygien hantering och säkerhets administratörer. Mer information finns i följande tabell:
 
-  |Roll|Var/hur tilldelas|
-  |---------|---------|
-  |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-  |Säkerhetsadministratör |Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-  |Exchange Online Organisation Management, Exchange Online Hygien Management |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdlets (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+  ****
+
+  |Roll|Där/hur kopplat|
+  |---|---|
+  |global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Mer information finns i [om administratörs roller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+  |Säkerhets administratör |Azure Active Directory-administratörs Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+  |Exchange Online-organisations hantering, Exchange Online hygien hantering |Administrations Center för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
   |
 
-  Mer information om roller och behörigheter finns [i Behörigheter i &amp; Säkerhetsefterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+  Mer information om roller och behörigheter finns i [behörigheter i Center för säkerhets &amp; kontroll](permissions-in-the-security-and-compliance-center.md).
 
-- [Läs mer om alternativ för atp-säkra bifogade filer](#step-3-learn-about-atp-safe-attachments-policy-options) (i den här artikeln). Vissa alternativ, till exempel alternativen Bildskärm eller Ersätt, kan leda till en mindre fördröjning av e-post medan bifogade filer genomsöks. Om du vill undvika meddelandeförseningar bör du överväga att använda [dynamisk leverans och förhandsgranska](dynamic-delivery-and-previewing.md).
+- [Läs mer om princip alternativ för säker](#step-3-learn-about-atp-safe-attachments-policy-options) användning av ATP (i den här artikeln). Vissa alternativ, till exempel alternativen bildskärm och ersätta, kan resultera i en mindre fördröjning av e-postmeddelanden medan bilagor skannas. Överväg att använda [dynamisk leverans och förhands granskning](dynamic-delivery-and-previewing.md)för att undvika fördröjningar för meddelanden.
 
-- Tillåt upp till 30 minuter innan den nya eller uppdaterade principen sprids till alla Microsoft 365-datacenter.
+- Tillåt upp till 30 minuter för att den nya eller uppdaterade principen ska spridas till alla Microsoft 365-datacenter.
 
-## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Steg 2: Konfigurera (eller redigera) en ATP-princip för säkra bilagor
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Steg 2: Konfigurera (eller redigera) en policy för säkerhets meddelanden för ATP
 
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto.
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets-eller skol konto.
 
-2. Välj &amp; **Principsäkra** bilagor i det vänstra **Threat management**navigeringsfönstret i det vänstra \> **navigeringsfönstret.**
+2. I &amp; det vänstra navigerings fönstret i Center för säkerhets kontroll väljer du **princip** säkra bilagor under **Threat Management** \> **Safe Attachments**.
 
-3. Om du ser **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**rekommenderar vi att du väljer det här alternativet. Detta aktiverar [Office 365 Advanced Threat Protection för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) för din Microsoft 365-miljö.
+3. Om du ser **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**rekommenderar vi att du väljer det här alternativet. Detta aktiverar [Office 365 Avancerat skydd för SharePoint-, OneDrive-och Microsoft Teams](atp-for-spo-odb-and-teams.md) för din Microsoft 365-miljö.
 
-4. Välj **Ny** (knappen Nytt liknar ett plustecken ( **+** )) för att börja skapa din princip.
+4. Välj **nytt** (knappen Ny ser ut som ett plus tecken ( **+** )) för att börja skapa din princip.
 
-5. Ange namn, beskrivning och inställningar för principen.<br/><br/>**Exempel:** Om du vill ställa in en princip som kallas "inga fördröjningar" som levererar allas meddelanden omedelbart och sedan sätter i lösningar igen när de har skannats kan du ange följande inställningar:
+5. Ange namn, beskrivning och inställningar för policyn.<br/><br/>**Exempel:** Om du vill konfigurera en princip med namnet "ingen fördröjning" som levererar allas meddelanden omedelbart och sedan bifogar bilagor igen efter att de skannats kan du ange följande inställningar:
 
-   - Skriv inga fördröjningar i rutan **Namn.**
+   - I rutan **namn** skriver du inga fördröjningar.
 
-   - Skriv en beskrivning i rutan **Beskrivning** som, Levererar meddelanden omedelbart och fäster fasten igen efter skanning.
+   - I rutan **Beskrivning** skriver du en beskrivning, till exempel skickar meddelanden direkt och bifogar bilagor igen efter skanningen.
 
-   - Välj alternativet **Dynamisk leverans** i svarsavsnittet. (Läs[mer om dynamisk leverans och förhandsgranskning med ATP Säkra bilagor](dynamic-delivery-and-previewing.md).)
+   - I avsnittet svar väljer du alternativet **dynamisk leverans** . ([Läs mer om dynamisk leverans och för hands Visa med säkra bilagor från ATP](dynamic-delivery-and-previewing.md).)
 
-   - I avsnittet **Omdirigera bifogad fil** väljer du alternativet att aktivera omdirigering och skriver e-postadressen till den globala administratören, säkerhetsadministratören eller säkerhetsanalytikern som ska undersöka skadliga bilagor.
+   - I avsnittet **omdirigera bilaga** väljer du alternativet för att aktivera omdirigera och skriv e-postadressen till din globala administratör, säkerhets administratör eller säkerhetsanalytiker som kommer att undersöka skadliga bifogade filer.
 
-   - I avsnittet **Tillämpad på** väljer du **Den mottagande domänen är**och väljer sedan din domän. Välj **Lägg till**och välj sedan **OK**.
+   - I avsnittet **används** väljer **du mottagar domänen**och sedan din domän. Välj **Lägg till**och sedan **OK**.
 
 6. Välj **Save**.
 
-Överväg att ställa in flera ATP-principer för säkra bilagor för din organisation. Dessa principer tillämpas i den ordning de visas på sidan BETRODDa bilagor med **ATP.** När en princip har definierats eller redigerats tillåter du minst 30 minuter för att polisen ska börja gälla i microsoft-datacenter.
+Överväg att ange fler principer för säkerhets meddelanden i flera ATP för din organisation. Dessa principer tillämpas i den ordning som de visas på sidan för **säkra bifogade ATP-filer** . När en princip har definierats eller redigerats kan du låta minst 30 minuter för polisen genomföras i Microsoft Data Center.
 
-## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Steg 3: Lär dig mer om atp-principalternativ för säkra bilagor
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Steg 3: Lär dig mer om alternativ för att skydda ATP-filer
 
-När du ställer in principerna för betrodda bilagor i ATP väljer du bland många alternativ, till exempel Övervaka, Blockera, Ersätt, Dynamisk leverans och så vidare. Om du undrar vad dessa alternativ gör sammanfattar följande tabell varje och dess effekt.
+När du skapar principer för säkra bifogade filer via ATP väljer du bland många olika alternativ, till exempel övervaka, blockera, ersätta, dynamisk leverans och så vidare. Om du undrar över vad dessa alternativ gör, sammanfattar följande tabell och dess effekt.
 
-||||
+****
+
+|Alternativ|Fungerar|Använd när du vill:|
 |---|---|---|
-|**Alternativ**|**Effekt**|**Använd när du vill:**|
-|**Av**|Söker inte igenom bilagor efter skadlig kod  <br/> Försenar inte meddelandeleverans|Inaktivera skanningen för valda mottagare.  <br/> Förhindra onödiga fördröjningar i routning av intern e-post.  <br/> **Det här alternativet rekommenderas inte för de flesta användare. Du bör bara använda det här alternativet för att inaktivera ATP-säkra bilagor som söker efter mottagare som bara får e-postmeddelanden från betrodda avsändare.**|
-|**Övervaka**|Levererar meddelanden med bilagor och spårar sedan vad som händer med upptäckt skadlig kod|Se var upptäckt skadlig kod hamnar i organisationen|
-|**Blockera**|Förhindrar att meddelanden med identifierade bifogade filer för skadlig kod fortsätter  <br/> Skickar meddelanden med upptäckt skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhetsadministratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> Blockerar framtida meddelanden och bilagor automatiskt|Skydda din organisation från upprepade attacker med samma bifogade skadliga program|
-|**Ersätta**|Tar bort identifierade bifogade skadliga program  <br/> Meddelar mottagarna att bifogade filer har tagits bort  <br/> Skickar meddelanden med upptäckt skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhetsadministratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden|Öka synligheten för mottagare som bifogade filer har tagits bort på grund av upptäckt skadlig kod|
-|**Dynamisk leverans**|Levererar meddelanden omedelbart  <br/> Ersätter bifogade filer med en platshållarfil tills skanningen är klar och sätter sedan tillbaka bilagorna om ingen skadlig kod upptäcks  <br/> Inkluderar förhandsgranskningsfunktioner för bifogade filer för de flesta PDF-filer och Office-filer under skanningen  <br/> Skickar meddelanden med upptäckt skadlig kod till Karantän där en säkerhetsadministratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> [Lär dig mer om dynamisk leverans och förhandsgranskning med ATP Säkra bilagor](dynamic-delivery-and-previewing.md) <br/> |Undvik meddelandefördröjningar samtidigt som mottagare skyddas från skadliga filer  <br/> Gör det möjligt för mottagarna att förhandsgranska bifogade filer i felsäkert läge medan skanningen sker|
-|**Aktivera omdirigering**|Gäller när alternativet Bildskärm, Blockera eller Ersätt är valt  <br/> Skickar bilagor till en angiven e-postadress där säkerhetsadministratörer eller analytiker kan undersöka|Aktivera säkerhetsadministratörer och analytiker för att undersöka misstänkta bilagor|
-|**Använd ovanstående val om malware-sökning efter bilagor time out eller fel uppstår**|Tillämpar åtgärden som konfigurerats för osäkra bilagor till de bifogade filer som inte kan skannas (på grund av time out eller error)|
+|**Av**|Söker inte igenom bifogade filer för skadlig kod  <br/> Fördröj inte leverans av meddelanden|Inaktivera inaktive avsökning för markerade mottagare.  <br/> Förhindra onödiga fördröjningar i routning av intern e-post.  <br/> **Det här alternativet rekommenderas inte för de flesta användare. Du bör bara använda det här alternativet om du vill inaktivera sökningar efter ATP-säkra bilagor för mottagare som bara får e-post från betrodda avsändare.**|
+|**Övervaka**|Skickar meddelanden med bifogade filer och följer sedan upp vad som händer med identifierad skadlig kod|Se var upptäckta skadlig kod hamnar i din organisation|
+|**Spärrade**|Förhindrar att meddelanden med upptäckta bilagor för skadlig kod fortsätter  <br/> Skickar meddelanden med identifierat skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> Blockerar framtida meddelanden och bilagor automatiskt|Skydda din organisation från upprepade attacker med samma skadliga program vara|
+|**Byter**|Tar bort identifierade bifogade filer  <br/> Meddelar mottagare om att bifogade filer har tagits bort  <br/> Skickar meddelanden med identifierat skadlig kod till [karantän i Office 365](manage-quarantined-messages-and-files.md) där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden|Öka synligheten för mottagarna att bifogade filer har tagits bort på grund av upptäckt skadlig kod|
+|**Dynamisk leverans**|Skickar meddelanden omedelbart  <br/> Ersätter bifogade filer med en plats hållare tills genomsökningen är klar och bifogar sedan bilagor igen om ingen skadlig kod hittas  <br/> Inkluderar funktioner för förhands granskning av bifogade filer för de flesta PDF-och Office-filer under genomsökning  <br/> Skickar meddelanden med identifierat skadlig kod till karantän där en säkerhets administratör eller analytiker kan granska och släppa (eller ta bort) dessa meddelanden  <br/> [Lär dig mer om dynamisk leverans och förhands granskning med säkra filer för ATP](dynamic-delivery-and-previewing.md) <br/> |Undvik meddelande fördröjningar när du skyddar mottagare från skadliga filer  <br/> Aktivera användare för att förhandsgranska bifogade filer i fel säkert läge när genomsökning sker|
+|**Aktivera omdirigering**|Gäller när alternativet övervaka, blockera eller Ersätt är markerat  <br/> Skickar bifogade filer till en viss e-postadress där säkerhets administratörer och analytiker kan undersöka|Aktivera säkerhets administratörer och analytiker för att undersöka misstänkta bilagor|
+|**Använda ovanstående markering om genomsökning av skadlig kod för bifogade filer eller fel uppstår**|Tillämpar åtgärden som har kon figurer ATS för osäkra bifogade filer i bifogade filer som inte kan gås igenom (på grund av timeout eller fel)|
 |
 
 ## <a name="next-steps"></a>Nästa steg
 
-När dina ATP-principer för säkra bilagor är på plats kan du se hur ATP fungerar för din organisation genom att visa rapporter. Läs följande resurser om du vill veta mer:
+När dina principer för säkerhets meddelanden via ATP är på plats kan du se hur ATP fungerar för organisationen genom att visa rapporter. Mer information finns i följande resurser:
 
-- [Visa rapporter för avancerat hotskydd för Office 365](view-reports-for-atp.md)
+- [Visa rapporter för Office 365 Avancerat skydd](view-reports-for-atp.md)
 
-- [Använda Explorer i Security & Compliance Center](threat-explorer.md)
+- [Använda Utforskaren i säkerhets & Compliance Center](threat-explorer.md)
 
-Håll koll på nya funktioner som kommer till ATP. besök [Översikten för Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) och lär dig mer om [nya funktioner som läggs till i ATP](office-365-atp.md#new-features-in-office-365-atp).
+Håll koll på nya funktioner som kommer till ATP. Besök [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) och Läs mer om [nya funktioner som läggs till i ATP](office-365-atp.md#new-features-in-office-365-atp).

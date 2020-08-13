@@ -24,67 +24,73 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: I den här artikeln får du lära dig hur du använder Säkra länkar för att skydda din organisation från nätfiske och andra attacker.
-ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+description: I den här artikeln får du lära dig hur du använder säkra Länkar för att skydda din organisation från nätfiske och andra attacker.
+ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754754"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656987"
 ---
 # <a name="atp-safe-links"></a>Säkra ATP-länkar
 
-## <a name="overview-of-office-365-atp-safe-links"></a>Översikt över säkra länkar i Office 365 ATP
+## <a name="overview-of-office-365-atp-safe-links"></a>Översikt över Office 365 säkerhets Länkar för ATP
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och letar efter information om säkra länkar i Outlook läser du [Säkerhet för avancerad Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du använder Outlook.com, Microsoft 365 eller Microsoft 365 personal och du letar efter information om säkra länkar i Outlook kan du läsa mer i [avancerad Outlook.com-säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 ATP Safe Links (en del av [Office 365 Advanced Threat Protection)](office-365-atp.md)kan skydda din organisation genom att tillhandahålla snabbverifiering av webbadresser (WEBBADRESSER) i [e-postmeddelanden](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) och [Office-dokument](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). Skyddet definieras via [ATP Safe Links-principer](set-up-atp-safe-links-policies.md) som anges av ditt Microsoft 365-säkerhetsteam.
+Office 365 ATP-säkra länkar (ingår i [Office 365 Avancerat skydd](office-365-atp.md)) kan skydda din organisation genom att ange inloggnings kontroll för webb adresser (URL: er) i [e-postmeddelanden](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) och [Office-dokument](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). Skydd definieras genom [principer för säkra länkar i ATP](set-up-atp-safe-links-policies.md) som anges av din Microsoft 365-säkerhetsgrupp.
 
-När atp-principerna för säkra länkar har införts kan globala administratörer, säkerhetsadministratörer och säkerhetsläsare [visa rapporter för avancerat skydd mot hot](view-reports-for-atp.md). Informationen i dessa rapporter kan hjälpa säkerhetsteamet att vidta ytterligare åtgärder för att skydda din organisation eller undersöka säkerhetsincidenter.
+När du har gjort dina principer för säkra anslutningar för ATP kan du [Visa rapporter för avancerat skydd](view-reports-for-atp.md). Informationen i dessa rapporter kan hjälpa din säkerhets grupp att vidta ytterligare åtgärder för att skydda din organisation eller Research om säkerhets tillbud.
 
-När [nya funktioner läggs till i ATP](office-365-atp.md#new-features-in-office-365-atp)kan ditt Microsoft 365-säkerhetsteam lägga till eller redigera organisationens [ATP Safe Links-principer](set-up-atp-safe-links-policies.md). Dessutom kan du märka ändringar och förbättringar, till exempel våra nyligen reviderade [varningssidor](atp-safe-links-warning-pages.md) och inbyggd länkåtergivning i Outlook (som introducerades i Microsoft 365 Apps for Enterprise version 1809).
+När [nya funktioner läggs till i ATP](office-365-atp.md#new-features-in-office-365-atp)kan din Microsoft 365-säkerhetsgrupp lägga till eller redigera organisationens [principer för Safet ATP-länkar](set-up-atp-safe-links-policies.md). Dessutom kan du lägga till ändringar och förbättringar, till exempel våra nyligen reviderade [varnings sidor](atp-safe-links-warning-pages.md) och automatisk rendering av inbyggda länkar i Outlook (som introduceras i Microsoft 365-appar för enterprise version 1809).
 
-## <a name="how-to-get-atp-safe-links-protection"></a>Hur får ATP Safe Links skydd
+## <a name="how-to-get-atp-safe-links-protection"></a>Så här får du säkerhet för säkerhet för ATP
 
-**Kontrollera först att din prenumeration innehåller [ett avancerat skydd mot Office 365](office-365-atp.md) ** Plan 1 eller Plan 2. Office 365 ATP ingår i prenumerationer, till exempel [Microsoft 365 Enterprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home) [Microsoft 365 Business Premium,](https://www.microsoft.com/microsoft-365/business)Office 365 Enterprise E5, Office 365 Education A5 osv. Om din organisation har en Microsoft 365-prenumeration som inte innehåller Office 365 ATP kan du eventuellt köpa ATP som ett tillägg. Mer information finns i följande resurser: 
+**Först kontrollerar du att ditt abonnemang innehåller [Office 365 Avancerat skydd](office-365-atp.md) ** Abonnemang 1 eller abonnemang 2. Office 365 ATP ingår i abonnemang, till exempel [Microsoft 365 Enterprise, E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise, E5, Office 365 Education A5, etc. Om din organisation har en Microsoft 365-prenumeration som inte innehåller Office 365 ATP kan du eventuellt köpa ATP som ett tillägg. Mer information finns i följande resurser: 
 
-- [Office 365 Avancerade hotskyddsplaner och priser](https://products.office.com/exchange/advance-threat-protection)
+- [Office 365-abonnemang och priser för avancerat skydd](https://products.office.com/exchange/advance-threat-protection)
 
-- [Beskrivning av tjänsten för avancerat hotskydd i Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [Beskrivning av Office 365 Avancerat skydds tjänst](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-**Kontrollera sedan att atp-principerna för säkra länkar har definierats**. (Se [Konfigurera principer för betrodda länkar för Office 365 ATP](set-up-atp-safe-links-policies.md).) ATP Safe Links-funktionerna är aktiva när:
+**Kontrol lera sedan att dina principer för Safet ATP-länkar är definierade**. (Se [Konfigurera Office 365-principer för säkra Länkar för ATP](set-up-atp-safe-links-policies.md).) Funktioner för Safet ATP-länkar är aktiva när:
 
-- ATP-principer för säkra länkar har ställts in för e-post och Office-dokument. (Se [Konfigurera principer för betrodda länkar till ATP](set-up-atp-safe-links-policies.md).)
+- Principer för Safet ATP-länkar är inställda för e-post och för Office-dokument. (Mer information finns i [Konfigurera policys för säkra Länkar för ATP](set-up-atp-safe-links-policies.md).)
 
-- Microsoft 365-klientappar är konfigurerade för att använda modern autentisering (detta är för ATP Safe Links-skydd i Office-dokument). (Se [Modern autentisering för Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
+- Microsoft 365-klientprogram är konfigurerade att använda modern (Detta gäller för säkra anslutningar för säkerhets säkerhet i Office-dokument). (Se [modern verifikation för Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
 
-- Användare har loggat in med sitt arbets- eller skolkonto. (Se [Logga in på Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Användare har loggat in med sitt arbets-eller skol konto. (Mer information finns i [Logga in på Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
-- Organisationens e-post skickas via Exchange Online Protection.
+- Din organisations e-postadress passerar genom Exchange Online Protection.
 
-**Se också till att du har de nödvändiga behörigheterna**. Om du vill definiera (eller redigera) ATP-principer måste du tilldelas en lämplig roll. Några exempel beskrivs i följande tabell:
+**Kontrol lera också att du har nödvändig behörighet**. Om du vill definiera (eller redigera) ATP-principer måste du ha en lämplig roll. Några exempel beskrivs i följande tabell:
 
-|Roll|Var/hur tilldelas|
-|---------|---------|
-|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|Säkerhetsadministratör|Administrationscenter för Azure Active Directory ( <https://aad.portal.azure.com> )|
-|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( <https://outlook.office365.com/ecp> ) <br>eller <br>  PowerShell-cmdlets (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+****
 
-## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Så här ser du till att ATP Safe Links-skyddet finns på plats
+|Roll|Där/hur kopplat|
+|---|---|
+|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Mer information finns i [om administratörs roller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Säkerhets administratör|Azure Active Directory-administratörs Center ( <https://aad.portal.azure.com> )|
+|Organisations hantering i Exchange Online|Administrations Center för Exchange ( <https://outlook.office365.com/ecp> ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
-Som global administratör eller säkerhetsadministratör bör du granska dina [ATP Safe Links-principer](set-up-atp-safe-links-policies.md) regelbundet. ATP-principer för säkra länkar avgör om skydd gäller endast hyperlänkar i e-postmeddelanden eller även webbadresser i Office-dokument.
+## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Så här kontrollerar du att skydda säkerhets Länkar för ATP
 
-När ATP Safe Links-principer har införts kan organisationens säkerhetsteam se hur ATP Safe Links-skyddet fungerar för din organisation genom [att visa rapporter för avancerat skydd mot hot](view-reports-for-atp.md).
+Som global administratör eller säkerhets administratör är det viktigt att granska dina [principer för säkerhet per ATP](set-up-atp-safe-links-policies.md) regelbundet. Principer för Safet ATP-länkar avgör om skydd gäller endast för hyperlänkar i e-postmeddelanden eller till URL: er i Office-dokument.
 
-## <a name="example-scenarios"></a>Exempel på scenarier
+Efter att principer för säkra Länkar för ATP är på plats kan din organisations säkerhets team se hur skydd mot ATP Safe Links fungerar för din organisation genom att [Visa rapporter för avancerat skydd](view-reports-for-atp.md).
 
-I följande tabell beskrivs några exempelscenarier där ATP Safe Links-skydd kan finnas eller inte finns på plats. (I alla dessa fall antar vi att organisationen har Office 365 Enterprise E5.)
+## <a name="example-scenarios"></a>Exempel scenarier
 
-|Exempel scenario|Gäller ATP Safe Links-skydd i det här fallet?|
-|:-----|:-----|
-|Jean är medlem i en grupp som har ATP Safe Links-principer som täcker webbadresser i e-post- och Office-dokument. Jean öppnar en PowerPoint-presentation som någon har skickat och klickar sedan på en URL i presentationen.|Ja. DE ATP Safe Links-principer som har definierats gäller Jeans grupp-, Jean-e-post- och Word-, Excel-, PowerPoint- eller Visio-dokument som Jean öppnar, så länge Jean är inloggad och använder Microsoft 365 Apps för företag på Windows-, iOS- eller Android-enheter.|
-|I Chris organisation har inga globala administratörer eller säkerhetsadministratörer definierat några ATP-principer för säkra länkar ännu. Chris får ett e-postmeddelande som innehåller en webbadress till en skadlig webbplats. Chris är omedveten om webbadressen är skadlig och klickar på länken.|Nej. Standardprincipen som täcker webbadresser för alla i organisationen måste definieras för att skyddet ska vara på plats.|
-|I Pats organisation har inga globala administratörer eller säkerhetsadministratörer definierat eller redigerat några ATP Safe Links-principer ännu. Pat öppnar ett Word-dokument och klickar på en URL i filen.|Nej. En princip som innehåller Office-dokument måste definieras för att skyddet ska kunna finnas på plats. Se [Konfigurera ATP-principer för säkra länkar i Office 365](set-up-atp-safe-links-policies.md).|
-|Lees organisation har en ATP Safe Links-policy som har `https://tailspintoys.com` listats som en blockerad webbplats. Lee får ett e-postmeddelande som innehåller en URL till `https://tailspintoys.com/aboutus/trythispage` . Lee klickar på webbadressen.|Det beror på om hela webbplatsen och alla dess undersidor ingår i listan över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).|
-|Jamie, Jean kollega, skickar ett e-postmeddelande till Jean, utan att veta att e-postmeddelandet innehåller en skadlig webbadress.|Det beror på om ATP Safe Links-principer har definierats för e-post som skickas inom organisationen. Se [Konfigurera ATP-principer för säkra länkar i Office 365](set-up-atp-safe-links-policies.md).|
+I följande tabell beskrivs några exempel scenarier där säkra Länkar för ATP kan vara på plats. (I alla de här fallen antar vi att organisationen har Office 365 Enterprise, E5.)
+
+****
+
+|Exempel på scenario|Gäller det säkraste säkerhets problemet i ATP?|
+|---|---|
+|Jean är en medlem i en grupp med principer för Safet ATP-länkar som omfattar URL-adresser i e-post och Office-dokument. Jean öppnar en PowerPoint-presentation som någon har skickat och klickar sedan på en URL i presentationen.|Ja. De principer för Safet ATP-länkar som är definierade för Jean grupp, Jean och Word-, Excel-, PowerPoint-eller Visio-dokument som Jean öppnas, så länge Jean är inloggat och använder Microsoft 365-appar för företag på Windows-, iOS-eller Android-enheter.|
+|I Chris organisation har inga globala eller säkerhets administratörer några principer för Safet ATP-länkar ännu. Chris får ett e-postmeddelande som innehåller en URL till en illasinnad webbplats. Chris är inte på att webb adressen är skadlig och klickar på länken.|Nej. Standard principen som täcker URL: er för alla i organisationen måste definieras för att skydd ska kunna användas.|
+|I Pat organisation har ingen global eller säkerhets administratör definierat eller redigerat några principer för Safet ATP-länkar än. Pat öppnar ett Word-dokument och klickar på en URL i filen.|Nej. En princip som innehåller Office-dokument måste definieras för att skydd ska kunna användas. Se [Konfigurera principer för säkra säkerhets Länkar för ATP i Office 365](set-up-atp-safe-links-policies.md).|
+|Aaron Lee organisation har en policy för Safet ATP-länkar som har en `https://tailspintoys.com` lista över blockerade webbplatser. Aaron Lee får ett e-postmeddelande som innehåller en URL till `https://tailspintoys.com/aboutus/trythispage` . Aaron Lee klickar på URL-adressen.|Det beror på om hela webbplatsen och alla dess under sidor ingår i listan med blockerade URL: er. Se [Konfigurera en anpassad lista över blockerade URL-adresser med säkerhet för ATP](set-up-a-custom-blocked-urls-list-atp.md).|
+|Janne, Jean ' s kollega, skickar ett e-postmeddelande till Jean, och vet inte att e-postmeddelandet innehåller en skadlig URL.|Det beror på om principer för Safet ATP-länkar är definierade för e-post som skickas inom organisationen. Se [Konfigurera principer för säkra säkerhets Länkar för ATP i Office 365](set-up-atp-safe-links-policies.md).|
+|

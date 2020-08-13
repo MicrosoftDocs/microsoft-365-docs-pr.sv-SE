@@ -1,5 +1,5 @@
 ---
-title: Konfigurera en anpassad lista över webbadresser som inte skrivs om med hjälp av ATP Safe Links
+title: Konfigurera en egen gör-inte omskrivning av URL-lista med säkra ATP-länkar
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,74 +18,78 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig hur du konfigurerar anpassade blockerade webbadresser för användare och inte skriver om listan över webbadresser för en grupp användare i office 365 ATP-principer för säkra länkar.
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+description: 'Lär dig hur du konfigurerar anpassade blockerade URL: er för användare och gör om listan över URL: er för en grupp användare i Office 365-principer för säkra Länkar för säkerhets skull.'
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517479"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656975"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Konfigurera en anpassad lista över webbadresser som inte skrivs om med hjälp av ATP Safe Links
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Konfigurera en egen gör-inte omskrivning av URL-lista med säkra ATP-länkar
 
 > [!IMPORTANT]
-> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hemanvändare och letar efter information om säkra länkar i Outlook läser du [Avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Den här artikeln är avsedd för företagskunder som har [Office 365 Avancerat skydd](office-365-atp.md). Om du är hem användare letar efter information om säkra länkar i Outlook kan du läsa mer i [avancerad Outlook.com säkerhet](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Med [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kan din organisation ha en anpassad blockerade [webbadresser,](set-up-a-custom-blocked-urls-list-atp.md)så att när personer klickar på webbadresser (WEBBADRESSER) i e-postmeddelanden eller vissa Office-dokument hindras de från att gå till dessa webbadresser. Din organisation kan också ha anpassade listor "skriv inte om" för specifika grupper i organisationen. En "skriv inte om" lista gör det möjligt för vissa personer att besöka webbadresser som annars blockeras av [ATP Safe Links i Office 365](atp-safe-links.md).
+Med [Office 365 Avancerat skydd](office-365-atp.md) (ATP) kan organisationen ha [anpassade blockerade URL-adresser](set-up-a-custom-blocked-urls-list-atp.md), till exempel när personer klickar på webb adresser (URL: er) i e-postmeddelanden eller vissa Office-dokument, förhindras de från att gå till dessa URL-adresser. Din organisation kan också ha anpassade listor för "Skriv inte om" för specifika grupper i din organisation. En "Skriv inte in"-lista gör att vissa personer kan besöka URL: er som på annat sätt blockeras av [säkra Länkar för ATP i Office 365](atp-safe-links.md).
 
-I den här artikeln beskrivs hur du anger en lista över webbadresser som är undantagna från ATP-skanning av säkra länkar och några viktiga punkter att tänka på.
+I den här artikeln beskrivs hur du anger en lista med URL-adresser som är undantagna från genomsökning av Safe Links för ATP och några viktiga punkter att hålla koll på.
 
-## <a name="set-up-a-do-not-rewrite-list"></a>Skapa en lista över "skriv inte om"
+## <a name="set-up-a-do-not-rewrite-list"></a>Konfigurera en "Skriv ej-lista"
 
-ATP-skydd för säkra länkar använder flera listor, inklusive organisationens lista med blockerade webbadresser och listorna "skriv inte om" för undantag. Om du har de behörigheter som krävs kan du ställa in dina anpassade listor "skriv inte om". Du gör detta när du lägger till eller redigerar principer för säkra länkar som gäller för specifika mottagare i organisationen.
+Säkerhets antal säkra Länkar för ATP-skydd använder flera listor, inklusive din organisations blockerade URL-adresser och "Skriv inte om"-listor för undantag. Om du har nödvändig behörighet kan du ställa in dina anpassade "Skriv inte om"-listor. Du kan göra detta när du lägger till eller redigerar principer för säkra länkar som gäller för specifika mottagare i organisationen.
 
-Om du vill redigera (eller definiera) ATP-principer måste du tilldelas en lämplig roll. Följande tabell innehåller några exempel. Mer information finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Om du vill redigera (eller definiera) ATP-principer måste du ha en lämplig roll. Följande tabell innehåller några exempel. Mer information finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-|Roll  |Var/hur tilldelas  |
-|---------|---------|
-|global administratör |Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)         |
-|Säkerhetsadministratör |Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Hantering av Exchange Online-organisation |Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdlets (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|Roll|Där/hur kopplat|
+|---|---|
+|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Mer information finns i [om administratörs roller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Säkerhets administratör|Azure Active Directory-administratörs Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Organisations hantering i Exchange Online|Administrations Center för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
-> Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Så här visar eller redigerar du en anpassad webbadresslista för "skriv inte om"
+### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Så här visar eller redigerar du en anpassad "URL-lista" skrivs inte över "
 
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets- eller skolkonto.
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in med ditt arbets-eller skol konto.
 
-2. I den vänstra navigeringen, under **Hot management** \> **Policy** \> **Safe Links**.
+2. I det vänstra navigerings fältet, **Threat management** under \> **Policy** \> **skyddade länkar**för hot Management policy.
 
-3. I avsnittet **Principer som gäller för specifika mottagare** väljer du **Ny** (knappen Nytt liknar ett plustecken ( **+** )) för att skapa en ny princip. (Du kan också redigera en befintlig princip.)<br/>![Välj Ny om du vill lägga till en princip för säkra länkar för specifika e-postmottagare](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. I avsnittet **principer som gäller för specifika mottagare** väljer du **nytt** (den nya knappen ser ut som ett plus tecken ( **+** )) för att skapa en ny princip. (Du kan även redigera en befintlig princip.)<br/>![Välj nytt för att lägga till en policy för säkra Länkar för specifika e-postmottagare](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Ange ett namn och en beskrivning för principen.
 
-5. **Aktivera** webbadresser skrivs om och kontrolleras mot en lista med kända skadliga länkar när användaren klickar på länken.
+5. Aktivera URL-adresser **skrivs om och** kontrol leras med en lista över kända illasinnade länkar när användaren klickar på länken.
 
-6. I avsnittet **Skriv inte om följande webbadresser** väljer du rutan Ange en giltig **WEBBADRESS,** anger en URL och väljer sedan plustecknet (+).
+6. Markera rutan **Ange en giltig URL** , ange en URL-adress och välj sedan plus tecknet (+) i avsnittet **Skriv inte över följande URL-adresser** .
 
-7. I avsnittet **Tillämpad på** väljer du **Mottagaren är medlem i**och väljer sedan den grupp(er) som du vill ta med i principen. Välj **Lägg till**och välj sedan **OK**.
+7. I avsnittet **används för** väljer du **mottagaren är medlem i**och väljer sedan de grupper som du vill ta med i policyn. Välj **Lägg till**och sedan **OK**.
 
-8. När du har lagt till webbadresser väljer du **Spara**i det nedre högra hörnet av skärmen .
+8. När du är klar med att lägga till URL-adresser väljer du **Spara**längst ned till höger på skärmen.
 
 > [!NOTE]
-> Se till att granska organisationens anpassade lista över blockerade webbadresser. Se [Konfigurera en anpassad lista med blockerade webbadresser med ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).
+> Se till att granska din organisations anpassade lista med blockerade URL: er. Se [Konfigurera en anpassad lista över blockerade URL-adresser med säkerhet för ATP](set-up-a-custom-blocked-urls-list-atp.md).
 
-## <a name="important-points-to-keep-in-mind"></a>Viktiga punkter att tänka på
+## <a name="important-points-to-keep-in-mind"></a>Viktiga saker att tänka på
 
-- Alla webbadresser som du anger i listan "skriv inte om" är undantagna från ATP Safe Links-sökning efter de mottagare som du anger.
+- Alla URL-adresser som du anger i listan "Skriv inte in" exkluderas från sökningar efter de mottagare som du anger.
 
-- Överväg att lägga till vanliga interna webbadresser i listan "skriv inte om" för att förbättra användarupplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller Sharepoint, kan du lägga till deras webbadresser i listan för att utesluta dem från skanning.
+- Överväg att lägga till vanliga interna URL-adresser i listan "Skriv inte in" för att förbättra användar upplevelsen. Om du till exempel har lokala tjänster, till exempel Skype för företag eller SharePoint, kan du lägga till deras URL-adresser i listan för att utesluta dem från genomsökningen.
 
-- Om du redan har en lista med webbadresser i listan "Skriv inte om" kontrollerar du den listan och lägger till jokertecken efter behov. Om din befintliga lista till exempel har en post som `https://contoso.com/a` och du vill inkludera underbanor som i din `https://contoso.com/a/b` princip, lägger du till ett jokertecken i posten så att det ser ut som `https://contoso.com/a/*` .
+- Om du redan har en lista med URL-adresser i listan "Skriv inga ändringar" bör du kontrol lera listan och lägga till jokertecken. Om din befintliga lista till exempel har en post som `https://contoso.com/a` och du vill ta med under Sök vägar `https://contoso.com/a/b` i policyn lägger du till ett jokertecken i posten så att den ser ut `https://contoso.com/a/*` .
 
-- När du anger en lista över "skriv inte om" för en ATP Safe Links-princip kan du inkludera upp till tre jokertecken ( \* ). Jokertecken innehåller uttryckligen prefix eller underdomäner. Posten är till exempel `contoso.com` inte samma sak som , eftersom personer kan besöka `*.contoso.com/*` `*.contoso.com/*` underdomäner och sökvägar i den angivna domänen.
+- När du anger en policy för "Skriv inte in om" för en princip för säkerhet för ATP kan du ta med upp till tre jokertecken ( \* ). Jokertecken inkluderar uttryckligen prefix eller under domäner. Posten är till exempel `contoso.com` inte samma sak som `*.contoso.com/*` eftersom `*.contoso.com/*` tillåter personer att besöka under domäner och sökvägar i den angivna domänen.
 
-I följande tabell visas exempel på vad du kan ange och vilken effekt dessa poster har.
+I följande tabell visas exempel på vad du kan ange och vilken effekt de har.
 
-|Exempel på post|Vad den gör|
-|:-----|:-----|
-|`contoso.com`|Tillåter mottagare att besöka en webbplats som `https://contoso.com` men inte underdomäner eller sökvägar.|
-|`*.contoso.com/*`|Tillåter mottagare att besöka en domän, underdomäner och sökvägar, till exempel `https://www.contoso.com` `https://www.contoso.com` , , eller `https://maps.contoso.com` `https://www.contoso.com/a` . <br/><br/> Den här posten är till sin natur bättre än `*contoso.com*` , eftersom den inte innehåller potentiellt bedrägliga webbplatser, gilla `https://www.falsecontoso.com` eller`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Gör det möjligt för specifika mottagare att besöka en webbplats som `https://contoso.com/a` , men inte undersöker som`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Gör det möjligt för specifika mottagare att besöka en webbplats som `https://contoso.com/a` och undersöker som`https://contoso.com/a/b`|
+****
+
+|Exempel post|Vad det gör|
+|---|---|
+|`contoso.com`|Gör det möjligt för mottagarna att besöka en webbplats, till exempel `https://contoso.com` inte under domäner eller sökvägar.|
+|`*.contoso.com/*`|Gör det möjligt för mottagarna att besöka en domän, under domäner och sökvägar, till exempel `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` eller `https://www.contoso.com/a` . <br/><br/> Den här posten är mycket bättre än `*contoso.com*` eftersom den inte innehåller potentiellt bedrägliga webbplatser, till exempel `https://www.falsecontoso.com` eller `https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Gör att specifika mottagare kan besöka en webbplats `https://contoso.com/a` , till exempel inte under Sök vägar `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Gör att specifika mottagare kan besöka en webbplats `https://contoso.com/a` , till exempel och under Sök vägar, till exempel `https://contoso.com/a/b`|
+|

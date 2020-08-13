@@ -1,7 +1,7 @@
 ---
-title: MailAttachmentInfo tabellen i det avancerade jaktschemat
-description: Läs mer om information om bifogade filer i tabellen EmailAttachmentInfo i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailAttachmentInfo, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, bifogad filnamn, malware dom
+title: EmailAttachmentInfo-tabell i det avancerade jakt-schemat
+description: Lär dig mer om information om e-postbilagor i EmailAttachmentInfo-tabellen för Advanced jakt-schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, EmailAttachmentInfo, nätverks meddelande-ID, avsändare, mottagare, bifogade filer, namn och skadlig program vara Verdict
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,41 +17,41 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c396689942a72a03120f0acd41d0d76abb720702
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 2f050885d731563c27100b2d14a3c32cd1a84df1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899405"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648915"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-`EmailAttachmentInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om bilagor i e-postmeddelanden som bearbetas av Office 365 ATP. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`EmailAttachmentInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om bifogade filer i e-postmeddelanden som bearbetas av Office 365 ATP. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
-| `AttachmentId` | Sträng | Unik identifierare för bifogade filer för e-post |
-| `NetworkMessageId` | Sträng | Unik identifierare för e-postmeddelandet som genereras av Microsoft 365 |
-| `SenderFromAddress` | Sträng | Avsändare e-postadress i FRÅN-huvudet, som är synlig för e-postmottagare på deras e-postklienter |
-| `RecipientEmailAddress` | Sträng | Mottagarens e-postadress eller mottagarens e-postadress efter utvidgning av distributionslistan |
-| `FileName` | Sträng | Namnet på den fil som den registrerade åtgärden tillämpades på |
-| `FileType` | Sträng | Typ av filnamnstillägg |
-| `SHA256` | Sträng | SHA-256 i filen som den inspelade åtgärden tillämpades på. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
-| `MalwareFilterVerdict` | Sträng | Dom av e-filtrering stacken om huruvida e-post innehåller skadlig kod: Malware, Inte skadlig kod |
-| `MalwareDetectionMethod` | Sträng | Metod som används för att upptäcka skadlig kod i e-post: Antimalware motor, File rykte, ATP säkra bilagor |
+| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
+| `AttachmentId` | strängvärdet | Unikt ID för bifogad fil |
+| `NetworkMessageId` | strängvärdet | Unik identifierare för e-postmeddelandet, genererat av Microsoft 365 |
+| `SenderFromAddress` | strängvärdet | Avsändarens e-postadress i formuläret från som visas för e-postmottagare på sina e-postklienter |
+| `RecipientEmailAddress` | strängvärdet | E-postadress till mottagaren eller e-postadressen till mottagaren efter expansion av distributions lista |
+| `FileName` | strängvärdet | Namnet på filen som den inspelade åtgärden tillämpades för |
+| `FileType` | strängvärdet | Fil namns tillägg |
+| `SHA256` | strängvärdet | SHA-256 av filen som den registrerade åtgärden tillämpades på. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
+| `MalwareFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stack på om e-postmeddelandet innehåller skadlig kod: skadlig kod, inte skadlig kod |
+| `MalwareDetectionMethod` | strängvärdet | Metod som används för att upptäcka skadlig program vara i e-postmeddelandet: Antiskadlig kod, fil rykte, säkra filer för ATP |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

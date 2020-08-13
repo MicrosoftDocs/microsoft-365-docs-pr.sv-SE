@@ -1,7 +1,7 @@
 ---
-title: DeviceTvmSecureConfigurationAssessment tabellen i det avancerade jaktschemat
-description: Lär dig mer om säkerhetsbedömningshändelser för & sårbarhetshantering i tabellen DeviceTvmSecureConfigurationAssessment i det avancerade jaktschemat. Dessa händelser ger maskininformation samt information om säkerhetskonfiguration, påverkan och efterlevnadsinformation.
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, säkerhetskonfiguration, DeviceTvmSecureConfigurationAssesment
+title: DeviceTvmSecureConfigurationAssessment-tabell i det avancerade jakt-schemat
+description: Lär dig mer om hot & sårbarhet hantera händelser för säkerhets utvärdering i DeviceTvmSecureConfigurationAssessment-tabellen för det avancerade jakt schemat. De här händelserna innehåller dator information och information om säkerhets konfiguration, konsekvens och efterlevnad.
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, Hot & sårbarhets hantering, TVM, enhets hantering, säkerhets konfiguration, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,42 +17,42 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ade218a440f8e7db223460e95363eae2cb659622
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 38f5cefb9095ca6c1f628f25a5ed374516c2b0a4
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44328005"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649007"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-Varje rad i `DeviceTvmSecureConfigurationAssessment` tabellen innehåller en bedömningshändelse för en specifik säkerhetskonfiguration från [Hot & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Använd den här referensen för att kontrollera de senaste utvärderingsresultaten och avgöra om enheterna är kompatibla.
+Varje rad i `DeviceTvmSecureConfigurationAssessment` tabellen innehåller en utvärderings händelse för en viss säkerhets konfiguration från [hotet & sårbarhets hantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Använd den här referensen för att kontrol lera de senaste utvärderings resultaten och fastställa om enheter är kompatibla.
 
-Information om andra tabeller i det avancerade jaktschemat finns [i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema finns i [referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `DeviceId` | Sträng | Unik identifierare för maskinen i tjänsten |
-| `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för maskinen |
-| `OSPlatform` | Sträng | Plattform för operativsystemet som körs på maskinen. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7.|
-| `Timestamp` | Datetime | Datum och tid då posten genererades |
-| `ConfigurationId` | Sträng | Unik identifierare för en specifik konfiguration |
-| `ConfigurationCategory` | Sträng | Kategori eller gruppering som konfigurationen tillhör: Program, OS, Nätverk, Konton, Säkerhetskontroller |
-| `ConfigurationSubcategory` | Sträng | Underkategori eller undergrupp som konfigurationen tillhör. I många fall beskriver detta specifika funktioner. |
-| `ConfigurationImpact` | Sträng | Nominell påverkan av konfigurationen till den totala konfigurationspoängen (1-10) |
-| `IsCompliant` | Boolean | Anger om konfigurationen eller principen är korrekt konfigurerad |
+| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
+| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
+| `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på datorn. Detta indikerar specifika operativ system, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7.|
+| `Timestamp` | datetime | Datum och tid när posten skapades |
+| `ConfigurationId` | strängvärdet | Unik identifierare för en viss konfiguration |
+| `ConfigurationCategory` | strängvärdet | Kategori eller gruppering som konfigurationen tillhör: program, operativ system, nätverk, konton, säkerhets kontroller |
+| `ConfigurationSubcategory` | strängvärdet | Under kategori eller under grupp som konfigurationen tillhör. I många fall beskrivs specifika funktioner och funktioner. |
+| `ConfigurationImpact` | strängvärdet | Märkeffekt som påverkar konfigurationen till total poängen (1-10) |
+| `IsCompliant` | returtyp | Anger om konfigurationen eller principen är korrekt konfigurerad |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Har varit inaktivt för hot](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
-- [Översikt över hantering av hot & sårbarhet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Översikt över hotet & säkerhets problem hantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

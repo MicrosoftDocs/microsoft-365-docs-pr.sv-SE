@@ -1,6 +1,6 @@
 ---
-title: Adresskomprometerade användarkonton med automatisk undersökning och svar
-keywords: AIR, autoIR, ATP, automatiserad, utredning, svar, sanering, hot, avancerad, hot, skydd, komprometterade
+title: Lösa användar konton med automatisk undersökning och svar
+keywords: LUFT, autoIR, ATP, automatiserad, undersökning, svar, reparation, hot, Avancerat, hot, skydd, kompromissad
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,78 +13,80 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Lär dig hur du snabbar upp processen med att identifiera och adressera komprometterade användarkonton med automatiska undersöknings- och svarsfunktioner i Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Lär dig hur du påskyndar processen att upptäcka och rikta in användar konton med automatiserade undersökningar och svars funktioner i Office 365 Avancerat skydds abonnemang 2.
+ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635778"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656915"
 ---
-# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresskomprometerade användarkonton med automatisk undersökning och svar
+# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Lösa användar konton med automatisk undersökning och svar
 
-[Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) innehåller kraftfulla [funktioner för automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR). Sådana funktioner kan spara din säkerhetsoperation team mycket tid och ansträngning att hantera hot. Microsoft fortsätter att förbättra säkerhetsfunktionerna. Nyligen har AIR-funktionerna förbättrats så att de innehåller en komprometterade användarsäkerhetslekbok (för närvarande i förhandsversion). Läs den här artikeln om du vill veta mer om den komprometterade användarsäkerhetslekboken. Och se blogginlägget [Snabba upp tiden för att upptäcka och svara på användarnas kompromettering och begränsa överträdelseomfånget med Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) för ytterligare information.
+[Office 365 Avancerat skydds plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) inkluderar kraftfulla [automatiserade undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air). Sådana funktioner kan spara din säkerhets åtgärds grupp mycket tid och ansträngning för att hantera hot. Microsoft fortsätter att förbättra säkerhets funktionerna. De senaste lösningarna har förbättrats för att omfatta Playbook (för närvarande för hands version). Läs den här artikeln om du vill ha mer information om säkerhets Playbook. Och se hur det går [fortare att upptäcka och reagera på användarens kompromisser och begränsa omfattningen av intrång till Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 
-![Automatiserad undersökning för en komprometterade användare](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+![Automatiserad undersökning av en användare med kompromiss](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
-Den komprometterade användarsäkerhetsuppspelningsboken gör det möjligt för organisationens säkerhetsteam att:
+Användarens säkerhets Playbook gör att organisationens säkerhets team kan:
 
-- Påskynda identifieringen av komprometterade användarkonton.
+- Snabb identifiering av obehöriga användar konton;
 
-- Begränsa omfattningen av en överträdelse när ett konto har komprometterats. Och 
+- Begränsa omfattningen av en överträdelse när ett konto äventyras; och
 
-- Svara på komprometterade användare mer effektivt och ändamålsenligt.
+- Reagera på äventyrade användare effektivt och effektivt.
 
-## <a name="compromised-user-alerts"></a>Komprometterade användaraviseringar
+## <a name="compromised-user-alerts"></a>Obehöriga användar aviseringar
 
-När ett användarkonto komprometterats uppstår atypiska eller avvikande beteenden. Nätfiske- och skräppostmeddelanden kan till exempel skickas internt från ett betrott användarkonto. Office 365 Advanced Threat Protection kan identifiera sådana avvikelser i e-postmönster och samarbetsaktivitet i Office 365. När detta inträffar utlöses aviseringar och processen för att minska hotet börjar.
+När ett användar konto är skadat uppstår atypical eller avvikande beteende. Till exempel kan nätfiske och skräp post skickas internt från ett betrott användar konto. Office 365 Avancerat skydd kan upptäcka sådana avvikelser i e-postmönster och samarbets aktivitet i Office 365. När detta inträffar utlöses notifieringar och hotets minsknings processen påbörjas.
 
-Här är till exempel en avisering som utlöstes på grund av misstänkt e-postsändning:
+Här är en avisering som utlöstes på grund av misstänkt e-post:
 
-![Avisering utlöses på grund av misstänkt e-postsändning](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Avisering utlöses på grund av misstänkt e-post](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
-Och här är ett exempel på en avisering som utlöstes när en sändningsgräns uppnåddes för en användare:
+Här är ett exempel på en avisering som utlöstes när en användares skickade gräns nåddes:
 
-![Avisering som utlöses genom att skicka gränsen har nåtts](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
+![Avisering utlöst för att skicka gräns har uppnåtts](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
-## <a name="investigate-and-respond-to-a-compromised-user"></a>Undersöka och svara på en komprometterade användare
+## <a name="investigate-and-respond-to-a-compromised-user"></a>Undersöka och svara på en användare med kompromiss
 
-När ett användarkonto komprometteras utlöses aviseringar. Och i vissa fall blockeras det användarkontot och hindras från att skicka ytterligare e-postmeddelanden tills problemet har lösts av organisationens säkerhetsoperationsteam. I andra fall inleds en automatisk undersökning som kan resultera i rekommenderade åtgärder som säkerhetsteamet bör vidta.
+När ett användar konto är skadat utlöses notifieringarna. I vissa fall blockeras användar kontot och förhindras från att skicka fler e-postmeddelanden förrän problemet löses av organisationens säkerhets åtgärds team. I andra fall börjar en automatisk undersökning som kan resultera i rekommenderade åtgärder som din säkerhets grupp bör vidta.
 
 - [Visa och undersöka begränsade användare](#view-and-investigate-restricted-users)
 
 - [Visa information om automatiserade utredningar](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> Du måste ha rätt behörighet för att kunna utföra följande uppgifter. Se [Nödvändiga behörigheter för att använda AIR-funktioner](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities).
+> Du måste ha nödvändig behörighet för att utföra följande uppgifter. Se vilka [behörigheter som krävs för att använda Air-funktioner](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities).
 
 ### <a name="view-and-investigate-restricted-users"></a>Visa och undersöka begränsade användare
 
-Du har några alternativ för att navigera till en lista över begränsade användare. I Security & Compliance Center kan du till exempel gå till Begränsad användning **av hothanteringsgranskning** > **Review** > **Restricted Users**. Följande procedur beskriver navigering med hjälp av instrumentpanelen **Aviseringar,** vilket är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
+Det finns några olika alternativ för att gå till en lista över begränsade användare. I säkerhets & Compliance Center kan du till exempel gå till **Threat Management**  >  **Granska**  >  **begränsade användare**. I följande procedur beskrivs navigering med instrument panelen **aviseringar** , som är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
 
-1. Gå [https://protection.office.com](https://protection.office.com) till och logga in.
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in.
 
-2. Välj**Instrumentpanel**för aviseringar i **navigeringsfönstret** > .
+2. Välj instrument panel för **aviseringar**i navigerings fönstret  >  **Dashboard**.
 
-3. I widgeten **Andra aviseringar** väljer du **Begränsade användare**.<br/>
-   ![Widgeten Andra aviseringar](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
-   Då öppnas listan över begränsade användare.<br/>![Begränsade användare i Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
+3. I widgeten **andra varningar** väljer **du begränsade användare**.
 
-4. Välj ett användarkonto i listan om du vill visa information och vidta åtgärder, till exempel [släppa den begränsade användaren](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam). 
+   ![Widgeten andra varningar](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+
+   Listan med begränsade användare öppnas.<br/>![Begränsade användare i Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+
+4. Välj ett användar konto i listan för att visa information och vidta åtgärder, till exempel [att släppa den begränsade användaren](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ### <a name="view-details-about-automated-investigations"></a>Visa information om automatiserade utredningar
 
-När en automatiserad undersökning har inletts kan du se dess information och resulterar i Security & Compliance Center. Gå till > **Hothanteringsutredningar**och välj sedan en undersökning för att visa dess detaljer. **Threat management**
+När en automatiserad undersökning har påbörjats kan du se dess information och resultaten i säkerhets & Compliance Center. Gå till **Threat Management**  >  **utredningar**och välj sedan en undersökning för att visa dess uppgifter.
 
 Mer information finns i [Visa information om en undersökning](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
-## <a name="keep-the-following-points-in-mind"></a>Tänk på följande punkter
+## <a name="keep-the-following-points-in-mind"></a>Tänk på följande saker
 
-- **Håll koll på dina aviseringar.** Som ni vet, ju längre en kompromiss går oupptäckt, desto större potential för omfattande påverkan och kostnader för din organisation, kunder och partners. Tidig identifiering och snabb respons är avgörande för att minska hot, och särskilt när en användares konto äventyras. 
+- **Håll koll på dina aviseringar**. Som du vet är det längre en kompromiss som försvinner, desto större potential och kostnad för din organisation, kunder och partners. Tidiga identifieringar och svars tiden är kritiska för att minska risken för hot, särskilt när en användares konto äventyras.
 
-- **Automation hjälper, men ersätter inte, säkerhetsoperationsteamet**. Automatiserade undersöknings- och svarsfunktioner kan identifiera en komprometterade användare tidigt, men säkerhetsoperationsteamet kommer sannolikt att behöva engagera sig och göra en del undersökningar och reparation. Behöver du hjälp med det här? Se [Granska och godkänna åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
+- **Automatisering hjälper, men ersätter inte, din säkerhets åtgärd**. Automatiserade undersökningar och svars funktioner kan upptäcka en användare som är utsatt för tidigt, men din säkerhets åtgärd är antagligen tvungen att delta och göra vissa undersökningar och ny hjälp. Behöver du hjälp med det här? Se [Granska och godkänna åtgärder](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
 
-- **Lita inte på en misstänkt inloggningsvarning som din enda indikator**. När ett användarkonto har komprometterats kan det hända att det utlöser en misstänkt inloggningsavisering. Ibland är det serien aktiviteter som inträffar efter att ett konto har komprometterats som utlöser en avisering. Vill du veta mer om varningar? Se [Varningsprinciper](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+- **Använd inte en misstänkt inloggnings avisering som indikator**. Det kan hända att det inte går att utlösa en varning om misstänkt inloggning när ett användar konto är skadat. Ibland är det en serie aktiviteter som inträffar efter att ett konto har blivit utsatt för en avisering. Vill du veta mer om aviseringar? Se [aviserings principer](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -92,7 +94,7 @@ Mer information finns i [Visa information om en undersökning](https://docs.micr
 
 - [Hitta och undersöka skadlig e-post i Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
-- [Läs mer om AIR i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Lär dig mer om AIR i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Besök Översikten över Microsoft 365 för att se vad som kommer snart och rulla ut](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Besök Microsoft 365-översikten för att se vad som kommer snart och lanseras](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

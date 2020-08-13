@@ -11,119 +11,128 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Du kan använda regler för e-postflöde (transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom organisationen.
-ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: Du kan använda regler för e-postflöde för att identifiera och vidta åtgärder för meddelanden som flödar i din organisation.
+ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209697"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653695"
 ---
-# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regler för e-postflöde (transportregler) i fristående EOP
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>E-postflödesregler (transportregler) i fristående EOP
 
-I fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan du använda e-postflödesregler (kallas även transportregler) för att identifiera och vidta åtgärder för meddelanden som flödar genom din organisation.
+I fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan du använda regler för e-postflöde (kallas även transport regler) för att identifiera och vidta åtgärder för meddelanden som flödar i organisationen.
 
-I det här avsnittet beskrivs komponenterna i reglerna för e-postflöde och hur de fungerar.
+I det här avsnittet förklaras komponenterna i regler för e-postflöde och hur de fungerar.
 
-Steg om hur du skapar, kopierar och hanterar regler för e-postflöde finns [i Hantera regler för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). För varje regel har du möjlighet att verkställa den, testa den eller testa den och meddela avsändaren. Mer information om testningsalternativen finns i Testa regler för [e-postflöde](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) och [principtips i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
+Anvisningar för hur du skapar, kopierar och hanterar regler för e-postflöden finns i [Hantera regler för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). För varje regel kan du välja att tvinga fram, testa den eller testa den och meddela avsändaren. Mer information om test alternativen finns i [testa regler för e-postflöden](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) och [policy tips i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
-Sammanfattande och detaljerade rapporter om meddelanden som matchade regler för e-postflöde finns i [Använda e-postskyddsrapporter för att visa data om skadlig kod, skräppost och regelidentifieringar](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
+Information om vilka meddelanden som matchas med regler för e-postflöde finns i [använda e-postskydds rapporter för att visa information om skadlig program vara, skräp post och identifiering av regler](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
 
-Information om hur du implementerar specifika meddelandeprinciper med hjälp av regler för e-postflöde finns i följande avsnitt:
+Information om hur du implementerar specifika meddelande principer genom att använda e-postflödes regler finns i följande avsnitt:
 
-- [Använda regler för e-postflöde för att granska bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [Använda regler för e-postflöde för att inspektera bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Konfigurera kryptering i Office 365 Enterprise](../../compliance/set-up-encryption.md)
 
-- [Ansvarsfriskrivningar för hela organisationen, signaturer, sidfötter eller sidhuvuden i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [Meddelande fri skrivningar för hela organisationen, signaturer, sid fötter eller rubriker i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
-- [Använd regler för e-postflöde för att ställa in scl (Spam Confidence Level) i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+- [Använda regler för e-postflöde för att ange konfidensnivå för skräp post (SCL) i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- [Skapa blockavsändare i EOP](create-block-sender-lists-in-office-365.md)
+- [Skapa block avsändare i EOP](create-block-sender-lists-in-office-365.md)
 
-- [Minska hot mot skadlig kod genom blockering av bifogade filer i Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
+- [Minska risken mot skadlig kod genom blockering av bifogade filer i Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
 - [Definiera regler för att kryptera eller dekryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-Följande video ger en demonstration av att ställa in regler för e-postflöde i fristående EOP.
+Följande video visar en demonstration av hur du konfigurerar regler för e-postflöde i fristående EOP.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
-## <a name="mail-flow-rule-components"></a>Komponenter i regelkomponenter för e-postflöde
+## <a name="mail-flow-rule-components"></a>Komponent för e-postflöde
 
-En regel för e-postflöde består av villkor, undantag, åtgärder och egenskaper:
+En regel för e-postflöden består av villkor, undantag, åtgärder och egenskaper:
 
-- **Villkor**: Identifiera de meddelanden som du vill använda åtgärderna på. Vissa villkor undersöker fälten meddelandehuvud (till exempel fälten Till, Från eller Kopia). Andra villkor undersöker meddelandeegenskaper (till exempel meddelandeämne, brödtext, bilagor, meddelandestorlek eller meddelandeklassificering). De flesta villkor kräver att du anger en jämförelseoperator (till exempel lika med, inte är lika med eller innehåller) och ett värde som ska matchas. Om det inte finns några villkor eller undantag tillämpas regeln på alla meddelanden.
+- **Villkor**: identifiera de meddelanden som du vill tillämpa åtgärderna på. Vissa villkor undersöker meddelande rubrik fälten (till exempel fälten till, från eller kopia). Andra villkor kontrollerar meddelande egenskaper (till exempel meddelandets ämne, brödtext, bifogade filer, meddelande storlek eller meddelande klassificering). De flesta villkor kräver att du anger en jämförelse operator (till exempel lika med, inte lika med eller innehåller) och ett värde att matcha. Om det inte finns några villkor eller undantag tillämpas regeln på alla meddelanden.
 
-Mer information om regelvillkor för e-postflöde i fristående EOP finns i [Villkor och undantag för E-postflödesregel (predikat) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Mer information om villkor för regel för e-postflöde i fristående EOP finns i [villkor och undantag för e-postflödes regler (predikat) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Undantag**: Du kan också identifiera de meddelanden som åtgärderna inte ska gälla för. Samma meddelandeidentifierare som är tillgängliga i villkor är också tillgängliga i undantag. Undantag åsidosätter villkoren och förhindrar att regelåtgärderna tillämpas på ett meddelande, även om meddelandet matchar alla konfigurerade villkor.
+- **Undantag**: Ange eventuellt vilka meddelanden som åtgärderna ska tillämpas på. Samma meddelande identifierare som är tillgängliga under förhållanden är också tillgängliga i undantag. Undantag åsidosätta villkor och förhindra att regel åtgärderna tillämpas på ett meddelande, även om meddelandet matchar alla konfigurerade villkor.
 
-- **Åtgärder**: Ange vad du ska göra med meddelanden som matchar villkoren i regeln och matchar inte något av undantagen. Det finns många tillgängliga åtgärder, till exempel att avvisa, ta bort eller omdirigera meddelanden, lägga till ytterligare mottagare, lägga till prefix i meddelandeämnet eller infoga ansvarsfriskrivningar i meddelandetexten.
+- **Åtgärder**: ange vad du vill göra för meddelanden som uppfyller villkoren i regeln och inte matchar något av undantagen. Det finns många tillgängliga åtgärder, till exempel avvisa, ta bort eller omdirigera meddelanden, lägga till fler mottagare, lägga till prefix i meddelandets ämne eller infoga fri skrivningar i meddelande texten.
 
-Mer information om regelåtgärder för e-postflöde som är tillgängliga i fristående EOP finns [i Regelåtgärder för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+Mer information om åtgärder för regel för e-postflöde som är tillgängliga i fristående EOP finns i [åtgärder för e-postflödes regler i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Egenskaper**: Ange andra regelinställningar som inte är villkor, undantag eller åtgärder. Till exempel när regeln ska tillämpas, om regeln ska tillämpas eller testas och tidsperioden när regeln är aktiv.
+- **Egenskaper**: ange andra regel inställningar som inte är villkor, undantag eller åtgärder. Till exempel när regeln ska användas, om regeln ska tillämpas eller testas, samt tids perioden då regeln är aktiv.
 
-  Mer information finns i avsnittet Egenskaper för [e-postflödesregel](#mail-flow-rule-properties) i det här avsnittet.
+  Mer information finns i avsnittet [Egenskaper för regel för e-postflöde](#mail-flow-rule-properties) i det här avsnittet.
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Flera villkor, undantag och åtgärder
 
-Följande tabell visar hur flera villkor, villkorsvärden, undantag och åtgärder hanteras i en regel.
+I följande tabell visas hur flera villkor, villkors värden, undantag och åtgärder hanteras i en regel.
 
-|**Komponent**|**Logik**|**Kommentarer**|
-|:-----|:-----|:-----|
-|Flera villkor|Och|Ett meddelande måste matcha alla villkor i regeln. Om du behöver matcha ett eller annat villkor använder du separata regler för varje villkor. Om du till exempel vill lägga till samma ansvarsfriskrivning i meddelanden med bifogade filer och meddelanden som innehåller specifik text skapar du en regel för varje villkor. I EAC kan du enkelt kopiera en regel.|
-|Ett villkor med flera värden|ELLER|Med vissa villkor kan du ange mer än ett värde. Meddelandet måste matcha alla (inte alla) av de angivna värdena. Om ett e-postmeddelande till exempel har ämnesinformationen Lagerpris och **ämnet innehåller något av dessa ordvillkor** är konfigurerat för att matcha orden Contoso eller lager, är villkoret uppfyllt eftersom ämnet innehåller minst ett av de angivna värdena.|
-|Flera undantag|ELLER|Om ett meddelande matchar något av undantagen tillämpas inte åtgärderna på meddelandet. Meddelandet behöver inte matcha alla undantag.|
-|Flera åtgärder|Och|Meddelanden som matchar en regels villkor får alla åtgärder som anges i regeln. Om åtgärderna till exempel **Förbered ämnet för meddelandet med** och Lägg till mottagare i rutan Hemlig **kopia** är markerade, tillämpas båda åtgärderna på meddelandet. <br/><br/> Tänk på att vissa åtgärder, till exempel **Ta bort meddelandet utan att meddela någon** åtgärd, förhindrar att efterföljande regler tillämpas på ett meddelande. Andra åtgärder, till exempel **Vidarebefordra meddelandet** tillåter inte ytterligare åtgärder. <br/><br/> Du kan också ange en åtgärd för en regel så att efterföljande regler inte tillämpas på meddelandet när regeln tillämpas.|
+****
 
-### <a name="mail-flow-rule-properties"></a>Egenskaper för regelegenskaper för e-postflöde
+|Komponent|Logik|Anteckningar|
+|---|---|---|
+|Flera villkor|OCH|Ett meddelande måste matcha alla villkor i regeln. Om du behöver matcha ett villkor eller ett annat, Använd separata regler för varje villkor. Om du till exempel vill lägga till samma ansvars friskrivning för meddelanden med bifogade filer och meddelanden som innehåller viss text skapar du en regel för varje villkor. I UK kan du enkelt kopiera en regel.|
+|Ett villkor med flera värden|ELLER|Med vissa villkor kan du ange mer än ett värde. Meddelandet måste matcha alla (inte alla) värden. Om till exempel ett e-postmeddelande har aktie pris informationen och **ämnet inkluderar något av dessa** villkor är det konfigurerat att matcha orden contoso eller stock, att villkoret är uppfyllt eftersom ämnet innehåller minst ett av de angivna värdena.|
+|Flera undantag|ELLER|Om ett meddelande matchar någon av undantagen, tillämpas inte åtgärderna på meddelandet. Meddelandet behöver inte matcha alla undantagen.|
+|Flera åtgärder|OCH|Meddelanden som uppfyller villkoren för en regel får alla åtgärder som anges i regeln. Om åtgärderna **före meddelandets ämne med** och **Lägg till mottagare i rutan hemlig kopia** är markerade, tillämpas båda åtgärderna på meddelandet. <br/><br/> Tänk på att vissa åtgärder, till exempel **ta bort meddelandet utan att meddela någon** åtgärd, hindrar efterföljande regler från att tillämpas på ett meddelande. Andra åtgärder som **vidarebefordra meddelandet** tillåter inte ytterligare åtgärder. <br/><br/> Du kan också ange en åtgärd för en regel så att efterföljande regler inte tillämpas på meddelandet när den regeln tillämpas.|
+|
 
-I följande tabell beskrivs de regelegenskaper som är tillgängliga i regler för e-postflöde.
+### <a name="mail-flow-rule-properties"></a>Egenskaper för regel för e-postflöde
 
-|**Egenskapsnamn i EAC**|**Parameternamn i PowerShell**|**Beskrivning**|
-|:-----|:-----|:-----|
-|**Prioritet**|_Prioritet_|Anger den ordning som reglerna tillämpas på meddelanden. Standardprioriteten baseras på när regeln skapas (äldre regler har högre prioritet än nyare regler och regler med högre prioritet bearbetas före regler med lägre prioritet). <br/><br/> Du ändrar regelprioriteten i EAC genom att flytta regeln uppåt eller nedåt i regellistan. I PowerShell anger du prioritetsnumret (0 har högsta prioritet). <br/><br/> Om du till exempel har en regel för att avvisa meddelanden som innehåller ett kreditkortsnummer och en annan som kräver godkännande, vill du att avvisningsregeln ska ske först och sluta tillämpa andra regler.  |
-|**Läge**|_Läge_|Du kan ange om du vill att regeln ska börja bearbeta meddelanden omedelbart eller om du vill testa regler utan att påverka leveransen av meddelandet (med eller utan dataförlustskydd eller DLP-principtips). <br/><br/> Principtipsen visar en kort anteckning i Outlook eller Outlook på webben som innehåller information om möjliga policyöverträdelser till den person som skapar meddelandet. Mer information finns i **Policytips**. <br/><br/> Mer information om lägena finns i **Testa en regel för e-postflöde**.|
-|**Aktivera den här regeln på följande datum** <br/><br/> **Inaktivera den här regeln på följande datum**|_ActivationDate_ <br/> _UtgångsdatumDatum_|Anger datumintervallet när regeln är aktiv.|
-|**Markerad** eller inte markerad i kryssrutan markerad eller inte markerad|Nya regler: _Aktiverad_ parameter på cmdleten **New-TransportRule.** <br/><br/> Befintliga regler: Använd cmdlets **enable-transportRule** eller **Disable-TransportRule.** <br/><br/> Värdet visas i egenskapen **State** för regeln.|Du kan skapa en inaktiverad regel och aktivera den när du är redo att testa den. Du kan också inaktivera en regel utan att ta bort den för att bevara inställningarna.|
-|**Skjuta upp meddelandet om regelbearbetningen inte slutförs**|_RuleErrorAction (RuleErrorAction)_|Du kan ange hur meddelandet ska hanteras om regelbearbetningen inte kan slutföras. Som standard ignoreras regeln, men du kan välja att skicka meddelandet igen för bearbetning.|
-|**Matcha avsändaradress i meddelande**|_AvsändareAdressPlats_|Om regeln använder villkor eller undantag som undersöker avsändarens e-postadress kan du söka efter värdet i meddelandehuvudet, meddelandekuvertet eller båda.|
-|**Sluta bearbeta fler regler**|_AvsändareAdressPlats_|Detta är en åtgärd för regeln, men det ser ut som en egenskap i EAC. Du kan välja att sluta tillämpa ytterligare regler på ett meddelande när en regel har bearbetat ett meddelande.|
-|**Kommentarer**|_Kommentarer_|Du kan skriva beskrivande kommentarer om regeln.|
+I följande tabell beskrivs de regel egenskaper som är tillgängliga i regler för e-postflöde.
 
-## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Så här tillämpas regler för e-postflöde på meddelanden
+****
 
-Alla meddelanden som flödar genom din organisation utvärderas mot de aktiverade reglerna för e-postflöde i organisationen. Regler bearbetas i den ordning som anges på sidan **E-postflödesregler** \> **Rules** i EAC eller baserat på motsvarande _prioritetsparametervärde_ i PowerShell.
+|Egenskaps namn i UK|Parameter namn i PowerShell|Beskrivning|
+|---|---|---|
+|**Priority**|_Priority_|Anger i vilken ordning reglerna tillämpas på meddelanden. Standard prioriteten baseras på när regeln skapas (äldre regler har högre prioritet än nyare regler och högre prioritets regler bearbetas före lägre prioritets regler). <br/><br/> Du ändrar regel prioriteten i UK genom att flytta regeln uppåt eller nedåt i listan med regler. I PowerShell anger du prioritets nummer (0 är högsta prioritet). <br/><br/> Om du till exempel har en regel för att avvisa meddelanden som innehåller ett kreditkorts nummer och en annan som kräver godkännande, vill du att regeln för avslagning ska ske först och sluta tillämpa andra regler.  |
+|**Autentiseringsläget**|_Autentiseringsläget_|Du kan ange om du vill att regeln ska börja bearbeta meddelanden direkt, eller om du vill testa regler utan att påverka leveransen av meddelandet (med eller utan hinder för data förlust eller DLP-princip). <br/><br/> Princip Tips visar en kort anteckning i Outlook eller Outlook på webben som innehåller information om eventuella policy överträdelser till den person som skapar meddelandet. Mer information finns i **princip Tips**. <br/><br/> Mer information om lägen finns i **testa en regel för e-postflöde**.|
+|**Aktivera den här regeln på följande datum** <br/><br/> **Inaktivera den här regeln på följande datum**|_ActivationDate_ <br/> _ExpiryDate_|Anger det datum intervall då regeln är aktiv.|
+|Kryss rutan **på** markerad eller inte markerad|Nya regler: _aktive rad_ parameter i **New-TransportRule** cmdlet. <br/><br/> Befintliga regler: Använd cmdletarna **Enable-TransportRule** eller **disable-TransportRule** . <br/><br/> Värdet visas i egenskapen **State** för regeln.|Du kan skapa en inaktive rad regel och aktivera den när du är redo att testa den. Du kan också inaktivera en regel utan att ta bort den för att behålla inställningarna.|
+|**Skjuta upp meddelandet om regel bearbetning inte slutförts**|_RuleErrorAction_|Du kan ange hur meddelandet ska hanteras om regel bearbetningen inte kan slutföras. Regeln ignoreras som standard, men du kan välja att skicka meddelandet igen för bearbetning.|
+|**Matcha avsändar adress i meddelande**|_SenderAddressLocation_|Om regeln använder villkor eller undantag som undersöker avsändarens e-postadress kan du leta efter värdet i meddelande huvudet, meddelandets kuvert eller bådadera.|
+|**Sluta bearbeta fler regler**|_SenderAddressLocation_|Det här är en åtgärd för regeln men den ser ut som en egenskap i UK. Du kan välja att sluta använda ytterligare regler till ett meddelande när en regel bearbetar ett meddelande.|
+|**Anteckningar**|_Anteckningar_|Du kan ange en kommentar om regeln.|
+|
 
-Varje regel erbjuder också möjligheten att sluta bearbeta fler regler när regeln matchas. Den här inställningen är viktig för meddelanden som matchar villkoren i flera regler för e-postflöde (vilken regel vill du ha tillämpad på meddelandet? Alla? Bara en?).
+## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Hur regler för e-postflöde tillämpas på meddelanden
 
-### <a name="differences-in-processing-based-on-message-type"></a>Skillnader i bearbetning baserat på meddelandetyp
+Alla meddelanden som flödar genom organisationen utvärderas mot de aktiverade reglerna för e-postflöde i organisationen. Regler bearbetas i den ordning som visas på sidan regler för **e-postflöde** \> **Rules** i UK, eller _Priority_ baserat på motsvarande egenskaps värde i PowerShell.
 
-Det finns flera typer av meddelanden som passerar genom en organisation. I följande tabell visas vilka meddelandetyper som kan bearbetas av regler för e-postflöde.
+Varje regel erbjuder också alternativet att stoppa bearbetningen av fler regler när regeln matchas. Den här inställningen är viktig för meddelanden som uppfyller villkoren i flera regler för e-postflöde (vilken regel vill du använda i meddelandet? Alla? Bara en?).
 
-|**Typ av meddelande**|**Kan en regel tillämpas?**|
-|:-----|:-----|
-|**Vanliga meddelanden**: Meddelanden som innehåller ett enda RTF-format (RTF), HTML eller vanlig textmeddelandetext eller en flerdelad eller alternativ uppsättning meddelandekroppar.|Ja|
-|**Meddelandekryptering för Office 365:** Meddelanden krypterade med Office 365-meddelandekryptering i Office 365. Mer information finns [i Kryptering i Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regler kan alltid komma åt kuvertrubriker och processmeddelanden baserat på villkor som granskar dessa rubriker. <br/><br/> För att en regel ska kunna granska eller ändra innehållet i ett krypterat meddelande måste du kontrollera att transportdekrypning är aktiverat (Obligatoriskt eller Valfritt, standard är valfritt). Mer information finns i [Definiera regler för att kryptera eller dekryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
-|**S/MIME-krypterade meddelanden**|Regler kan bara komma åt kuvertrubriker och processmeddelanden baserat på villkor som granskar dessa rubriker. <br/><br/> Regler med villkor som kräver granskning av meddelandets innehåll eller åtgärder som ändrar meddelandets innehåll kan inte bearbetas.|
-|**RMS-skyddade meddelanden:** Meddelanden som hade en AD RMS-princip (Active Directory Rights Management Services) eller RMS -principen (Azure Rights Management) tillämpad.|Regler kan alltid komma åt kuvertrubriker och processmeddelanden baserat på villkor som granskar dessa rubriker. <br/><br/> För att en regel ska kunna granska eller ändra innehållet i ett RMS-skyddat meddelande måste du kontrollera att transportdekrypning är aktiverat (Obligatoriskt eller Valfritt, standard är valfritt).|
-|**Rensa signerade meddelanden**: Meddelanden som har signerats men inte krypterats.|Ja|
-|**UM-meddelanden:** Meddelanden som skapas eller bearbetas av tjänsten Unified Messaging, till exempel röstmeddelanden, fax, meddelanden om missade samtal och meddelanden som skapas eller vidarebefordras med hjälp av Microsoft Outlook Voice Access.|Ja|
-|**Anonyma meddelanden**: Meddelanden som skickas av anonyma avsändare.|Ja|
-|**Läs rapporter**: Rapporter som genereras som svar på begäran om läskvitto från avsändare. Läsrapporter har en meddelandeklass `IPM.Note*.MdnRead` eller `IPM.Note*.MdnNotRead` .|Ja|
+### <a name="differences-in-processing-based-on-message-type"></a>Skillnader i bearbetning baserat på meddelande typ
 
-## <a name="what-else-should-i-know"></a>Vad mer ska jag veta?
+Det finns flera typer av meddelanden som passerar genom en organisation. Följande tabell visar vilka meddelanden som kan bearbetas i regler för e-postflöde.
 
-- Egenskapsvärdet **version** eller **RuleVersion** för en regel är inte viktigt i Exchange Online Protection.
+****
 
-- När du har skapat eller ändrat en regel för e-postflöde kan det ta upp till 30 minuter innan den nya eller uppdaterade regeln tillämpas på meddelanden.
+|Typ av meddelande|Kan en regel användas?|
+|---|---|
+|**Vanliga meddelanden**: meddelanden som innehåller en RTF-, HTML-eller oformaterad textmeddelande text eller en grupp eller en alternativ uppsättning med meddelande texter.|Ja|
+|**Office 365 meddelande kryptering**: meddelanden krypterade av Office 365 meddelande kryptering i Office 365. Mer information finns i [kryptering i Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regler kan alltid komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <br/><br/> Om du vill ha en regel för att kontrol lera eller ändra innehållet i ett krypterat meddelande måste du kontrol lera att transport avkryptering är aktiverat (obligatoriskt eller frivilligt), Standardinställningen är valfri. Mer information finns i [definiera regler för att kryptera eller dekryptera e-postmeddelanden i Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
+|**S/MIME-krypterade meddelanden**|Regler kan bara komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <br/><br/> Regler med villkor som kräver kontroll av meddelandets innehåll, eller åtgärder som ändrar meddelandets innehåll kan inte behandlas.|
+|**RMS-skyddade meddelanden**: meddelanden som hade en AD RMS-(Active Directory Rights Management Services) eller en RMS-princip (Azure Rights Management).|Regler kan alltid komma åt kuvert rubriker och bearbeta meddelanden baserat på villkor som inspekterar dessa huvuden. <br/><br/> Om du vill ha en regel för att kontrol lera eller ändra innehållet i ett RMS-skyddat meddelande måste du kontrol lera att transport avkryptering är aktiverat (obligatoriskt eller frivilligt). standardvärdet är inte obligatoriskt).|
+|**Rensade meddelanden**: meddelanden som har signerats men inte krypterats.|Ja|
+|**UM-meddelanden**: meddelanden som skapas eller bearbetas av Unified Messaging-tjänsten, till exempel röst brev låda, Fax, missade samtals aviseringar och meddelanden som har skapats eller vidarebefordrats med hjälp av Microsoft Outlook Voice Access.|Ja|
+|**Anonyma meddelanden**: meddelanden som skickas av anonyma avsändare.|Ja|
+|**Läs rapporter**: rapporter som skapas som svar på begäran om Läs kvitton per avsändare. Läs rapporter har en meddelande klass av `IPM.Note*.MdnRead` eller `IPM.Note*.MdnNotRead` .|Ja|
+|
+
+## <a name="what-else-should-i-know"></a>Vad mer bör jag veta?
+
+- Egenskapen **version** eller **RuleVersion** för en regel är inte viktig i Exchange Online Protection.
+
+- När du har skapat eller ändrat en regel för e-postflöde kan det ta upp till 30 minuter innan den nya eller uppdaterade regeln läggs till för meddelanden.
 
 ## <a name="for-more-information"></a>Mer information
 
-[Använda regler för e-postflöde för att granska bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[Använda regler för e-postflöde för att inspektera bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[Kryptering av e-post i Office 365](../../compliance/email-encryption.md)
+[E-postkryptering i Office 365](../../compliance/email-encryption.md)
 
-[Regelgränser för journal, transport och inkorg](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
+[Regel begränsningar för journal, transport och Inkorgen](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

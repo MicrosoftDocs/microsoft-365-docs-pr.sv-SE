@@ -1,7 +1,7 @@
 ---
-title: Arbeta med avancerade jaktfrågeresultat i Microsoft Threat Protection
-description: Få ut det mesta av frågeresultaten som returneras av avancerad jakt i Microsoft Threat Protection
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, anpassade identifieringar, schema, kusto, microsoft 365, Microsoft Threat Protection, visualisering, diagram, filter, drill-down
+title: Arbeta med frågor för avancerad jakt i Microsoft Threat Protection
+description: Få ut mesta möjliga av frågeresultaten som har returnerats av Advanced jakt mot Microsoft Threat Protection
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, anpassade identifieringar, schema, kusto, Microsoft 365, Microsoft Threat Protection, visualisering, diagram, filter, detalj granskning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,60 +17,60 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899092"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649385"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>Arbeta med avancerade jaktfrågeresultat
+# <a name="work-with-advanced-hunting-query-results"></a>Arbeta med resultat från avancerad jakt fråga
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Även om du kan konstruera dina [avancerade jaktfrågor](advanced-hunting-overview.md) för att returnera mycket exakt information, kan du också arbeta med frågeresultaten för att få ytterligare insikt och undersöka specifika aktiviteter och indikatorer. Du kan vidta följande åtgärder för frågeresultaten:
+Du kan också använda frågeresultatet för att få mer detaljerad information och undersöka specifika aktiviteter och indikatorer, samtidigt som du skapar frågor för de [avancerade jakt](advanced-hunting-overview.md) frågorna. Du kan utföra följande åtgärder i frågeresultatet:
 
 - Visa resultat som en tabell eller ett diagram
 - Exportera tabeller och diagram
-- Öka detaljnivån till detaljerad information om entitet
-- Justera dina frågor direkt från resultaten eller tillämpa filter
+- Öka detalj nivån till detaljerad entitetsinformation
+- Justera dina frågor direkt från resultaten eller använda filter
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Visa frågeresultat som en tabell eller ett diagram
-Som standard visar avancerad jakt frågeresultat som tabelldata. Du kan också visa samma data som ett diagram. Avancerad jakt stöder följande vyer:
+Som standard visar Advanced jakt frågeresultat som tabell data. Du kan också visa samma data som ett diagram. Avancerad jakt stöder följande vyer:
 
-| Visa typ | Beskrivning |
+| Vytyp | Beskrivning |
 | -- | -- |
-| **Tabell** | Visar frågeresultatet i tabellformat |
-| **Stapeldiagram** | Återger en serie unika objekt på x-axeln som lodräta staplar vars höjder representerar numeriska värden från ett annat fält |
-| **Staplat stapeldiagram** | Återger en serie unika objekt på x-axeln som staplade lodräta staplar vars höjder representerar numeriska värden från ett eller flera andra fält |
-| **Cirkeldiagram** | Återger avsnittspajer som representerar unika objekt. Storleken på varje cirkel representerar numeriska värden från ett annat fält. |
-| **Donut diagram** | Återger sektionsbågar som representerar unika objekt. Längden på varje båge representerar numeriska värden från ett annat fält. |
-| **Linjediagram** | Ritar numeriska värden för en serie unika objekt och kopplar samman de ritade värdena |
-| **Punktdiagram** | Ritar numeriska värden för en serie unika objekt |
-| **Områdesdiagram** | Ritar numeriska värden för en serie unika objekt och fyller avsnitten under de ritade värdena |
+| **Tabell** | Visar frågeresultaten i tabell format |
+| **Stapeldiagram** | Återger en serie unika element på x-axeln som lodräta staplar vars höjder representerar numeriska värden från ett annat fält |
+| **Staplat stapeldiagram** | Återger en serie unika element på x-axeln som staplade lodräta staplar vars höjder representerar numeriska värden från ett eller flera andra fält |
+| **Cirkel diagram** | Återger avsnitts pajer som representerar unika objekt. Storleken på varje cirkel representerar numeriska värden från ett annat fält. |
+| **Ring diagram** | Återger avsnitts bågar som representerar unika objekt. Längden på varje båge representerar numeriska värden från ett annat fält. |
+| **Linje diagram** | Ritar numeriska värden för en serie unika objekt och kopplar de ritade värdena |
+| **Punkt diagram** | Ritar numeriska värden för en serie unika objekt |
+| **Ytdiagram** | Ritar numeriska värden för en serie unika element och fyller avsnitten nedanför de uppritade värdena |
 
-### <a name="construct-queries-for-effective-charts"></a>Konstruera frågor för effektiva diagram
-Vid rendering av diagram identifierar avancerad jakt automatiskt kolumner av intresse och de numeriska värdena som ska sammanställas. Skapa dina frågor för att returnera de specifika värden som du vill se visualiseras för att få meningsfulla diagram. Här är några exempelfrågor och de resulterande diagrammen.
+### <a name="construct-queries-for-effective-charts"></a>Skapa frågor för effektiva diagram
+Vid åter givning av diagram identifieras kolumner av intresse automatiskt och de numeriska värdena till aggregation. För att få meningsfulla diagram skapar du dina frågor för att returnera de specifika värden som du vill visa. Här är några exempel frågor och resulterande diagram.
 
-#### <a name="alerts-by-severity"></a>Aviseringar efter allvarlighetsgrad
-Använd `summarize` operatorn för att få ett numeriskt antal av de värden som du vill kartlägga. Frågan nedan använder `summarize` operatorn för att få antalet aviseringar efter allvarlighetsgrad.
+#### <a name="alerts-by-severity"></a>Aviseringar efter allvarlighets grad
+Använd `summarize` operatorn för att få ett numeriskt antal värden som du vill visa i diagrammet. I frågan nedan används `summarize` operatorn för att få antalet aviseringar efter allvarlighets grad.
 
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
 ```
-När resultaten återges visas varje allvarlighetsgrad i ett stapeldiagram:
+När du återger resultaten visas varje allvarlighets värde som en separat kolumn i ett stapeldiagram:
 
-![Bild av avancerade jaktfrågeresultat som visas som ett stapeldiagram ](../../media/advanced-hunting-column-chart.jpg)
- *Frågeresultat för aviseringar efter allvarlighetsgrad som visas som ett stapeldiagram*
+![En bild av de avancerade frågeresultaten visas som ett kolumn diagram ](../../media/advanced-hunting-column-chart.jpg)
+ *Frågeresultat för aviseringar efter allvarlighets grad visas som ett stapeldiagram*
 
-#### <a name="alert-severity-by-operating-system"></a>Allvarlighetsgrad för aviseringar efter operativsystem
-Du kan också använda `summarize` operatorn för att förbereda resultat för att kartlägga värden från flera fält. Du kanske till exempel vill förstå hur allvarlighetsgrader för aviseringar fördelas över operativsystem (OS). 
+#### <a name="alert-severity-by-operating-system"></a>Aviserings allvarlighets grad per operativ system
+Du kan också använda `summarize` operatorn för att förbereda resultat för diagram värden från flera fält. Du kanske till exempel vill förstå hur varnings allvarlighets grader distribueras för olika operativ system (OS). 
 
-Frågan nedan använder en `join` operator för att hämta OS-information från tabellen och sedan används för att räkna värden i både `DeviceInfo` `summarize` `OSPlatform` kolumnerna och `Severity` kolumnerna:
+Frågan nedan använder en `join` operator för att hämta OS-information från `DeviceInfo` tabellen och använder sedan `summarize` för att räkna värden i både `OSPlatform` `Severity` kolumnerna och.
 
 ```kusto
 AlertInfo
@@ -78,13 +78,13 @@ AlertInfo
 | join DeviceInfo on DeviceId
 | summarize Count = count() by OSPlatform, Severity 
 ```
-Dessa resultat visualiseras bäst med hjälp av ett staplat stapeldiagram:
+De här resultaten är bäst visualiserade med ett staplat stapeldiagram:
 
-![Bild av avancerade jaktfrågeresultat som visas som ett staplat diagram ](../../media/advanced-hunting-stacked-chart.jpg)
- *Frågeresultat för aviseringar efter operativsystem och allvarlighetsgrad som visas som ett staplat diagram*
+![En bild av de avancerade frågeresultaten visas som ett staplat diagram ](../../media/advanced-hunting-stacked-chart.jpg)
+ *Frågeresultat för aviseringar via OS och allvarlighets grad som visas som ett staplat diagram*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Nätfiskemeddelanden på de tio bästa avsändarna
-Om du har att göra med en lista med värden som inte är begränsad kan du använda `Top` operatorn för att bara kartlägga de värden som har flest instanser. Om du till exempel vill få de tio bästa avsändarna med de mest nätfiskemeddelanden använder du frågan nedan:
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Nät fiske meddelanden via de tio främsta avsändarenas domäner
+Om du arbetar med en lista med värden som inte är begränsade kan du använda `Top` operatorn för att endast visa de värden som har flest förekomster. Om du till exempel vill få de tio främsta avsändare-domänerna med flest nätfiske-meddelanden använder du frågan nedan:
 
 ```kusto
 EmailEvents
@@ -92,13 +92,13 @@ EmailEvents
 | summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-Använd cirkeldiagramvyn för att effektivt visa distributionen mellan de populäraste domänerna:
+Använd vyn cirkel diagram för att Visa fördelningen effektivt i de översta domänerna:
 
-![Bild av avancerade jaktfrågeresultat som visas som ett cirkeldiagram ](../../media/advanced-hunting-pie-chart.jpg)
- *Cirkeldiagram som visar distribution av nätfiskemeddelanden mellan de vanligaste avsändande domänerna*
+![En bild av de avancerade frågeresultaten visas som ett cirkel diagram i cirkel diagrammet som ](../../media/advanced-hunting-pie-chart.jpg)
+ *visar fördelningen av nät fiske meddelanden via överdelen översändare*
 
-#### <a name="file-activities-over-time"></a>Filaktiviteter över tid
-Med hjälp av `summarize` operatören med funktionen kan du söka efter händelser som `bin()` involverar en viss indikator över tid. Frågan nedan räknar händelser som involverar filen `invoice.doc` med 30 minuters intervall för att visa toppar i aktivitet som är relaterade till filen:
+#### <a name="file-activities-over-time"></a>Fil aktiviteter över tid
+Med `summarize` operatorn med `bin()` funktionen kan du söka efter händelser med en viss indikator över tiden. Frågan nedan räknar händelser som berör filen `invoice.doc` med 30 minuters mellanrum för att Visa mellanvara i en aktivitet som är relaterad till filen:
 
 ```kusto
 AppFileEvents
@@ -106,52 +106,52 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Linjediagrammet nedan belyser tydligt tidsperioder med mer aktivitet som `invoice.doc` omfattar: 
+Linje diagrammet nedan tydligt markerar tids perioder med mer aktivitet som berör `invoice.doc` : 
 
-![Bild av avancerade jaktfrågeresultat som visas som ett linjediagram ](../../media/advanced-hunting-line-chart.jpg)
- *Linjediagram som visar antalet händelser som involverar en fil över tid*
+![En bild av de avancerade frågeresultaten visas som ett linje ](../../media/advanced-hunting-line-chart.jpg)
+ *diagram med linjer som visar antalet händelser som rör en fil över tid*
 
 
 ## <a name="export-tables-and-charts"></a>Exportera tabeller och diagram
-När du har kört en fråga väljer du **Exportera** för att spara resultaten i den lokala filen. Den valda vyn avgör hur resultaten exporteras:
+När du har kört en fråga väljer du **Exportera** för att spara resultatet i en lokal fil. Den valda vyn bestämmer hur resultatet ska exporteras:
 
-- **Tabellvy** – frågeresultaten exporteras i tabellform som en Microsoft Excel-arbetsbok
-- **Alla diagram** – frågeresultaten exporteras som en JPEG-bild av det renderade diagrammet
+- **Tabellvy** – frågeresultaten exporteras i tabell form som en Microsoft Excel-arbetsbok
+- **Ett diagram** – frågeresultaten exporteras som en JPEG-bild av det återgivna diagrammet
 
-## <a name="drill-down-from-query-results"></a>Öka detaljnivån från frågeresultat
-Om du snabbt vill granska en post i frågeresultatet markerar du motsvarande rad för att öppna **inspelningspanelen Inspektera.** Panelen innehåller följande information baserat på den valda posten:
+## <a name="drill-down-from-query-results"></a>Öka detalj nivån från frågeresultat
+Om du snabbt vill inspektera en post i frågeresultatet markerar du motsvarande rad för att öppna panelen **Granska post** . Panelen innehåller följande information baserad på den valda posten:
 
-- **Tillgångar** – sammanfattad vy över de viktigaste tillgångarna (postlådor, enheter och användare) som finns i posten, berikade med tillgänglig information, till exempel risk- och exponeringsnivåer
-- **Processträd** – som genereras för poster med processinformation och berikas med hjälp av tillgänglig kontextuell information. I allmänhet kan frågor som returnerar fler kolumner resultera i rikare processträd.
-- **Alla detaljer** – alla värden från kolumnerna i posten  
+- **Till gångar** – sammanfattad vy över huvud till gångar (post lådor, enheter och användare) som finns i posten, förföljda uppgifter, till exempel risk-och exponerings nivåer
+- **Process träd** – genererat för poster med process information och som berikas med tillgängliga kontext uppgifter; i allmänhet kan frågor som returnerar fler kolumner leda till bättre process träd.
+- **All information** – alla värden från kolumnerna i posten  
 
-![Bild på vald post med panel för att kontrollera posten](../../media/mtp-ah/inspect-record.png)
+![Bild av den valda posten med panelen för kontroll av posten](../../media/mtp-ah/inspect-record.png)
 
-Om du vill visa mer information om en viss entitet i frågeresultaten, till exempel en dator, fil, användare, IP-adress eller URL, väljer du entitetsidentifieraren för att öppna en detaljerad profilsida för den entiteten.
+Om du vill visa mer information om en viss enhet i frågeresultatet, till exempel en dator, en fil, en användare, en IP-adress eller en URL, väljer du enhetens ID för att öppna en detaljerad profil sida för den enheten.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Justera dina frågor från resultaten
-Högerklicka på ett värde i resultatuppsättningen för att snabbt förbättra frågan. Du kan använda alternativen för att:
+Högerklicka på ett värde i resultatet för att snabbt förbättra din fråga. Du kan använda alternativen för att:
 
-- Leta uttryckligen efter det valda värdet ( `==` )
-- Uteslut det markerade värdet från frågan ( `!=` )
-- Få mer avancerade operatorer för att lägga till värdet i frågan, till exempel `contains` `starts with``ends with` 
+- Leta tydligt efter det markerade värdet ( `==` )
+- Exkludera det markerade värdet från frågan ( `!=` )
+- Få mer avancerade operatorer för att lägga till värdet i frågan, till `contains` exempel `starts with` och`ends with` 
 
-![Bild på avancerad jaktresultatuppsättning](../../media/advanced-hunting-results-filter.png)
+![Bild av avancerad jakt resultat uppsättning](../../media/advanced-hunting-results-filter.png)
 
-## <a name="filter-the-query-results"></a>Filtrera frågeresultaten
-Filtren som visas till höger ger en sammanfattning av resultatuppsättningen. Varje kolumn har ett eget avsnitt med de distinkta värden som hittats för den kolumnen och antalet instanser.
+## <a name="filter-the-query-results"></a>Filtrera frågeresultatet
+De filter som visas till höger ger en sammanfattning av resultatet. Varje kolumn har ett eget avsnitt med en lista med de DISTINCT-värden som hittas för den kolumnen och antalet förekomster.
 
-Förfina frågan genom att markera `+` knapparna eller `-` på de värden som du vill inkludera eller utesluta och sedan välja Kör **fråga**.
+Förfina frågan genom att välja `+` knapparna eller `-` på de värden som du vill inkludera eller exkludera och sedan välja **Kör fråga**.
 
-![Bild på avancerat jaktfilter](../../media/advanced-hunting-filter.png)
+![Bild av filtret Avancerat jakt](../../media/advanced-hunting-filter.png)
 
-När du har tillämpat filtret för att ändra frågan och sedan köra frågan uppdateras resultaten i enlighet med detta.
+När du har tillämpat filtret för att ändra frågan och sedan kör frågan uppdateras resultaten.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)

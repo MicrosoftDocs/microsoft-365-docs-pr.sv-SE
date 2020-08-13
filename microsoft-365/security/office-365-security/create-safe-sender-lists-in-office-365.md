@@ -15,123 +15,138 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+description: Administratörer kan läsa om tillgängliga och önskade alternativ för att tillåta inkommande meddelanden i Exchange Online Protection (EOP).
+ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005864"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652987"
 ---
-# <a name="create-safe-sender-lists-in-eop"></a>Skapa listor över betrodda avsändare i EOP
+# <a name="create-safe-sender-lists-in-eop"></a>Skapa listor med säkra avsändare i EOP
 
-Om du är en Microsoft 365-kund med postlådor i Exchange Online eller en fristående Exchange Online Protection -kund (EOP) utan Exchange Online-postlådor, erbjuder EOP flera sätt att se till att användarna får e-post från betrodda avsändare. Dessa alternativ omfattar regler för Exchange-e-postflöde (kallas även transportregler), outlook-betrodda avsändare, IP-listan (anslutningsfiltrering) och tillåtna avsändande listor eller tillåtna domänlistor i principer mot skräppost. Tillsammans kan du se dessa alternativ som _säkra avsändarelistor_.
+Om du är Microsoft 365-kund med post lådor i Exchange Online eller på en fristående Exchange Online Protection (EOP)-kund utan Exchange Online-postlådor, erbjuder EOP flera olika sätt att säkerställa att användarna får e-post från betrodda avsändare. Dessa alternativ inkluderar regler för Exchange-postflöde (kallas även transport regler), Outlook Safe avsändare, listan över tillåtna IP-adresser (anslutnings filter) och tillåtna avsändar listor eller tillåtna domän listor i principer för skräp post. Tillsammans kan du se dessa alternativ som _listor med säkra avsändare_.
 
-De tillgängliga listorna över betrodda avsändare beskrivs i följande lista för att från de flesta rekommenderade till minst rekommenderade:
+Tillgängliga listor över betrodda avsändare beskrivs i följande lista, i den ordning de rekommenderas till minst Rekommenderad:
 
 1. Regler för e-postflöde
-2. Betrodda avsändare i Outlook
-3. Lista över IP-tillåt (anslutningsfiltrering)
-4. Tillåtna avsändarlistor eller tillåtna domänlistor (policyer mot skräppost)
+2. Säkra avsändare i Outlook
+3. Lista över tillåtna IP-adresser (anslutnings filter)
+4. Listan Tillåtna avsändare eller tillåtna domän listor (principer för skräp post)
 
-Regler för e-postflöde ger mest flexibilitet för att säkerställa att endast rätt meddelanden tillåts. Tillåtna avsändare och tillåtna domänlistor i anti-spam-principer är inte lika säkra som IP-listan, eftersom avsändarens e-postdomän är lätt förfalskad. Men IP Allow List utgör också en risk, eftersom e-post från _alla_ domäner som skickas från den IP-adressen kommer att kringgå skräppostfiltrering.
+Reglerna för e-postflöden gör det möjligt att se till att endast rätt meddelanden är tillåtna. Tillåtna avsändare och tillåtna domän listor i principer för skräp post är inte så säkra som listan över tillåtna IP-adresser eftersom avsändarens e-postdomän är lätt att falska. Men i listan över tillåtna IP-adresser visas också en risk, eftersom e-post från vilken domän som _helst_ som skickas från den IP-adressen åsidosätter filtrering av skräp post.
 
 > [!IMPORTANT]
-> • Var noga med att noga övervaka *eventuella* undantag som du spam filtrering med hjälp av säkra avsändare listor. <br/><br/> • Även om du kan använda säkra avsänningslistor för att hjälpa till med falska positiva identifieringar (bra e-post markerad som skräppost), bör du betrakta användningen av säkra avsändarelistor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falska positiva identifieringar med hjälp av säkra avsänningslistor, eftersom undantag från skräppostfiltrering kan öppna din organisation för förfalskning och andra attacker. Om du insisterar på att använda säkra avsändarelistor för att hantera falska positiva identifieringar måste du vara vaksam och hålla ämnet [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) i redo. <br/><br/> • Om du vill att en domän ska kunna skicka oautentiserade e-postmeddelanden (kringgå skydd mot förfalskning) men inte kringgå kontroller av skräppost och skadlig kod kan du lägga till den i [listan Tillåtet Förspoof-värdeskåpavsändare](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP och Outlook granskar olika meddelandeegenskaper för att fastställa meddelandets avsändare. Mer information finns i avsnittet [Överväganden för massutskick av e-post](#considerations-for-bulk-email) senare i det här avsnittet.
+>
+> - Se till att noggrant övervaka *eventuella* undantag som du kan använda för att filtrera meddelanden med säkra avsändare.
+>
+> - Du kan använda listor med säkra avsändare för att få hjälp med falsk identifiering (god e-post markerat som spam), men du bör överväga att använda säkra avsändar listor som en tillfällig lösning som bör undvikas om möjligt. Vi rekommenderar inte att du hanterar falsk identifiering genom att använda listor med säkra avsändare, eftersom undantag för skräp post filtrering kan öppna din organisation för förfalskning och andra attacker. Om du måste med hjälp av säkra avsändar listor för att hantera falska positiva identifieringar måste du vara vigilant och hålla koll på [meddelandena och filerna till Microsoft](report-junk-email-messages-to-microsoft.md) när du är redo.
+>
+> - Om du vill tillåta att en domän skickar overifierad e-post (kringgå skydd mot förfalskning) men inte kringgår kontroll av skräp post och skadlig program vara, kan du lägga till den i [AllowedToSpoof Safe Sender List](walkthrough-spoof-intelligence-insight.md)
+>
+> - EOP och Outlook inspekterar olika meddelande egenskaper för att bestämma meddelandets avsändare. Mer information finns i avsnittet [om att skicka e-post](#considerations-for-bulk-email) längre ned i det här avsnittet.
 
-Däremot har du också flera alternativ för att blockera e-post från specifika källor med hjälp av _blockerade avsändarelistor_. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
+Däremot har du flera alternativ för att blockera e-post från specifika källor med _spärrade avsändare_. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
 
-## <a name="recommended-use-mail-flow-rules"></a>(Rekommenderas) Använda regler för e-postflöde
+## <a name="recommended-use-mail-flow-rules"></a>Lämpligt Använda regler för e-postflöde
 
-Regler för e-postflöde i Exchange Online och fristående EOP använder villkor och undantag för att identifiera meddelanden och åtgärder för att ange vad som ska göras med dessa meddelanden. Mer information finns i [Regler för e-postflöde (transportregler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Regler för e-postflöden i Exchange Online och fristående EOP användnings villkor och undantag för att identifiera meddelanden och åtgärder för att ange vad som ska göras i dessa meddelanden. Mer information finns i [regler för e-postflöde (transport regler) i Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-I följande exempel förutsätts att du behöver e-post från contoso.com för att hoppa över skräppostfiltrering. Det gör du genom att konfigurera följande inställningar:
+I följande exempel förutsätts att du behöver e-post från contoso.com för att hoppa över skräp post filtrering. Gör det genom att konfigurera följande inställningar:
 
-1. **Villkor**: **Avsändaren** \> **domänen är** \> contoso.com.
+1. **Villkor**: **avsändarens** \> **domän är** \> contoso.com.
 
 2. Konfigurera någon av följande inställningar:
 
-   - **Villkor för e-postflödesregel:** **Ett meddelandehuvud** \> **innehåller något av följande ord** \> **Rubriknamn:** `Authentication-Results` \> **Rubrikvärde**: eller `dmarc=pass` `dmarc=bestguesspass` .
+   - **Regel villkor för e-postflöde**: **ett meddelande huvud** \> **innehåller något av följande ord** \> **rubrik namn**: `Authentication-Results` \> **header-värde**: `dmarc=pass` eller `dmarc=bestguesspass` .
 
-     Det här villkoret kontrollerar avsändarautentiseringsstatusen för den sändande e-postdomänen för att säkerställa att den sändande domänen inte förfalskas. Mer information om e-postautentisering finns i [SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md).
+     Det här villkoret kontrollerar avsändarens autentiseringskrav för den sändande e-postdomänen för att säkerställa att den sändande domänen inte är falsk. Mer information om e-postauktorisering finns i [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md).
 
-   - **IP Tillåt lista:** Ange källans IP-adress eller adressintervall i anslutningsfilterprincipen.
+   - **Lista över tillåtna IP-** adresser: Ange käll-IP-adressen eller adress intervallet i anslutnings filter principen.
   
-     Använd den här inställningen om den sändande domänen inte har autentisering. Var så restriktiv som möjligt när det gäller källans IP-adresser i IP-listan. Vi rekommenderar ett IP-adressintervall på /24 eller mindre (mindre är bättre). Använd inte IP-adressintervall som tillhör konsumenttjänster (till exempel outlook.com) eller delade infrastrukturer.
+     Använd den här inställningen om den sändande domänen inte har någon behörighet. Var så restriktiv som möjligt när det kommer till käll-IP-adresserna i listan över tillåtna IP-adresser. Vi rekommenderar ett IP-adressintervall på/eller mindre (mindre är bättre). Använd inte IP-adressintervall som tillhör konsument tjänster (till exempel outlook.com) eller delade infrastrukturer.
 
    > [!IMPORTANT]
-   > <ul><li>Konfigurera aldrig konfigurera regler för e-postflöde med *endast* avsändningsdomänen som villkor för att hoppa över skräppostfiltrering. Om du gör *det* ökar sannolikheten avsevärt för att angripare kan förfalska den sändande domänen (eller utge sig för att vara den fullständiga e-postadressen), hoppa över all skräppostfiltrering och hoppa över autentiseringskontroller för avsändare så att meddelandet kommer till mottagarens inkorg.</li><li>Använd inte domäner som du äger (kallas även godkända domäner) eller populära domäner (till exempel microsoft.com) som villkor i regler för e-postflöde. Detta anses vara hög risk eftersom det skapar möjligheter för angripare att skicka e-post som annars skulle filtreras.</li><li>Om du tillåter en IP-adress som ligger bakom en NAT-gateway (Network Address Translation) måste du känna till de servrar som ingår i NAT-poolen för att känna till omfattningen av ip-listan. IP-adresser och NAT-deltagare kan ändras. Du måste regelbundet kontrollera dina IP Allow List-poster som en del av dina standardunderhållsprocedurer.</li></ul>
+   >
+   > - Konfigurera aldrig Konfigurera regler för e-postflöden med *endast* avsändarens domän som villkor för att hoppa över filtrering av skräp post. Om du gör *det ökar* sannolikheten för att angripare kan falska den sändande domänen (eller personifiera den fullständiga e-postadressen), hoppa över alla skräp post filter och hoppa över avsändare av verifikations kontroll så att meddelandet kommer till mottagarens inkorg.
+   >
+   > - Använd inte domäner som du äger (kallas även godkända domäner) eller vanliga domäner (till exempel microsoft.com) som villkor i regler för e-postflöde. Det betraktas som en hög risk eftersom det skapar möjligheter för angripare att skicka e-post som annars skulle filtreras.
+   >
+   > - Om du tillåter en IP-adress som ligger bakom en NAT-gateway (Network Address Translation) måste du känna till de servrar som ingår i NAT-poolen för att kunna veta omfattningen av listan över tillåtna IP-adresser. IP-adresser och NAT-deltagare kan ändra. Du måste regelbundet kontrol lera listan över tillåtna IP-poster som en del av dina standard underhålls procedurer.
 
-3. **Valfria villkor:**
+3. **Valfria villkor**:
 
-   - **Avsändaren** \> **är intern/extern** \> **Utanför organisationen**: Det här villkoret är implicit, men det är OK att använda det för att ta hänsyn till lokala e-postservrar som kanske inte är korrekt konfigurerade.
+   - **Avsändaren** \> **är intern/extern** \> **Utanför organisationen**: det här villkoret är implicit, men det är OK att använda det för att logga in på lokala e-postservrar som kanske inte är korrekt konfigurerade.
 
-   - **Ämnet eller kroppen** \> **ämne eller kropp innehåller något av dessa ord** \> \<keywords\>: Om du ytterligare kan begränsa meddelandena med nyckelord eller fraser i ämnesraden eller meddelandetexten kan du använda dessa ord som ett villkor.
+   - **Ämne eller brödtext** \> **ämne eller brödtext innehåller något av dessa ord** \> \<keywords\>: Om du kan begränsa meddelandena ytterligare med nyckelord eller fraser i ämnes raden eller meddelande texten kan du använda dessa ord som villkor.
 
-4. **Åtgärd**: Konfigurera båda dessa åtgärder i regeln:
+4. **Åtgärd**: Konfigurera båda de här åtgärderna i regeln:
 
-   a. **Ändra meddelandeegenskaperna** \> **ställa in spam konfidensnivå (SCL)** \> **Bypass spam filtrering**.
+   a. **Ändra meddelande egenskaper** \> **Ställ in nivån för skräp post (SCL)** \> **Kringgå filtrering av skräp post**.
 
-   b. **Ett meddelandehuvud** \> **innehåller något av dessa ord** \> **Rubriknamn**: \<CustomHeaderName\> **Rubrikvärde**: \<CustomHeaderValue\> .
+   b. **En meddelande rubrik** \> **inkluderar något av dessa ord** \> **Rubrik namn**: \<CustomHeaderName\> **header-värde**: \<CustomHeaderValue\> .
 
-      Till exempel `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Om du har mer än en domän i regeln kan du anpassa rubriktexten efter behov.
+      Till exempel `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Om du har fler än en domän i regeln kan du anpassa sidhuvud texten efter behov.
 
-      När ett meddelande hoppar över skräppostfiltrering på grund av en regel för e-postflöde `SFV:SKN` stämplas värdevärdet i **X-Forefront-Antispam-Report-huvudet.** Om meddelandet kommer från en källa som finns i listan TILLÅT IP `IPV:CAL` läggs värdet också till. Dessa värden kan hjälpa dig med felsökning.
+      När ett meddelande hoppar över skräp post filtrering på grund av en regel för e-postflöde stämplas värdet värde av `SFV:SKN` i huvudet **X-antispam-Report** . Om meddelandet kommer från en källa som är med i listan över tillåtna IP-adresser `IPV:CAL` läggs värdet också till. Dessa värden kan hjälpa dig med fel sökning.
 
-![Inställningar för e-postflödesregel i EAC för förbikoppling av skräppostfiltrering.](../../media/1-AllowList-SkipFilteringFromContoso.png)
+![Inställningar för regel för e-postflöde i UK för att hoppa över filtrering av skräp post.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## <a name="use-outlook-safe-senders"></a>Använda säkra avsändare i Outlook
+## <a name="use-outlook-safe-senders"></a>Använda betrodda avsändare i Outlook
 
-I stället för en organisationsinställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i postlådan. Instruktioner finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Detta är inte önskvärt i de flesta situationer eftersom avsändare kommer att kringgå delar av filtreringstacken. Även om du litar på avsändaren äventyras avsändaren fortfarande och kan skicka skadligt innehåll. Det är bäst att du låter våra filter göra vad som behövs för att kontrollera varje meddelande och sedan [rapportera det falska positiva/ negativa till Microsoft](report-junk-email-messages-to-microsoft.md) om våra filter fick det fel. Förbi filtreringsstacken stör också [ZAP](zero-hour-auto-purge.md).
+I stället för en organisations inställning kan användare eller administratörer lägga till avsändarens e-postadresser i listan Betrodda avsändare i post lådan. Anvisningar finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Detta är inte önskvärt i de flesta fall eftersom avsändare kringgår delar av filtrerings stacken. Trots att du litar på avsändaren är avsändarenas burkarna fortfarande komprometterade och kan skicka skadligt innehåll. Det är bäst att låta våra filter göra vad som behövs för att kontrol lera alla meddelanden och sedan [rapportera falskt positiv/negativ till Microsoft](report-junk-email-messages-to-microsoft.md) om våra filter har fel. Om du kringgår filtrerings stacken påverkas också inte med [ZAP](zero-hour-auto-purge.md).
 
-När meddelanden hoppar över skräppostfiltrering på grund av en användares lista Över betrodda avsändare innehåller huvudfältet **X-Forefront-Antispam-Report** värdet `SFV:SFE` , vilket anger att skräppost, förfalskning och phish-filtrering har kringgåts.
+När meddelanden hoppar över filtrering av skräp post på grund av en användares lista med betrodda avsändare kommer fältet **X-antispam – rapport** huvud att innehålla värdet `SFV:SFE` , vilket anger att skräp post, förfalskning och Phish filtrering har hoppats över.
 
-## <a name="use-the-ip-allow-list"></a>Använda listan TILLÅT IP
+## <a name="use-the-ip-allow-list"></a>Använd listan över tillåtna IP-adresser
 
-Om du inte kan använda e-postflödesregler som tidigare beskrivits är det näst bästa alternativet att lägga till källmeddelandeservern eller källservrarna i IP-listan tillåt i anslutningsfilterprincipen. Mer information finns [i Konfigurera anslutningsfiltrering i EOP](configure-the-connection-filter-policy.md).
+Om du inte kan använda regler för e-postflöde enligt beskrivningen ovan är nästa bästa alternativet att lägga till käll-e-postservern eller servrar i listan över tillåtna IP-adresser för anslutnings filter. Mer information finns i [Konfigurera anslutnings filtrering i EOP](configure-the-connection-filter-policy.md).
 
 **Anmärkningar**:
 
-- Det är viktigt att du håller antalet tillåtna IP-adresser till ett minimum, så undvik att använda hela IP-adressintervall när det är möjligt.
+- Det är viktigt att du behåller det minsta antalet tillåtna IP-adresser, så undvik att använda hela IP-adressintervallet när så är möjligt.
 
-- Använd inte IP-adressintervall som tillhör konsumenttjänster (till exempel outlook.com) eller delade infrastrukturer.
+- Använd inte IP-adressintervall som tillhör konsument tjänster (till exempel outlook.com) eller delade infrastrukturer.
 
-- Granska regelbundet posterna i LISTAN TILLÅT IP och ta bort de poster som du inte längre behöver.
-
-> [!CAUTION]
-> Utan ytterligare verifiering som regler för e-postflöde hoppar e-post från källor i IP Allow List över skräppostfiltrering och avsändandeautentisering (SPF, DKIM, DMARC) kontroller. Detta skapar en hög risk för angripare att leverera e-post till Inkorgen som annars skulle filtreras.
-
-## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Använda tillåtna avsänningslistor eller tillåtna domänlistor
-
-Det minst önskvärda alternativet är att använda den tillåtna avsända listan eller den tillåtna domänlistan i anti-spam-policyer. Du bör undvika det här alternativet *om det alls är möjligt* eftersom avsändare kringgår all skräppost, parodi och phish-skydd och avsändareautentisering (SPF, DKIM, DMARC). Den här metoden används bäst endast för tillfälliga tester. De detaljerade stegen finns i [Konfigurera principer mot skräppost i EOP-ämnet.](configure-your-spam-filter-policies.md)
-
-Den maximala gränsen för dessa listor är cirka 1000 poster. även om du bara kan ange 30 poster i portalen. Du måste använda PowerShell för att lägga till fler än 30 poster.
+- Granska posterna i listan över tillåtna IP-adresser och ta bort de uppgifter som du inte längre behöver.
 
 > [!CAUTION]
-> <ul><li>Den här metoden skapar en hög risk för att angripare lyckas leverera e-post till inkorgen som annars skulle filtreras.</li><li>Använd inte domäner som du äger (kallas även godkända domäner) eller populära domäner (till exempel microsoft.com) i tillåtna domänlistor.</li></ul>
+> Utan extra verifiering som regler för e-postflöde hoppar e-post från källor i listan över tillåtna IP-adresser över skräp post och avsändare (SPF, DKIM, DMARC). Detta skapar en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtrerats.
 
-## <a name="considerations-for-bulk-email"></a>Överväganden för mass-e-post
+## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Använda listor med tillåtna avsändare eller tillåtna domän listor
 
-Ett standardmeddelande för SMTP-meddelanden består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som krävs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelanderubriker (kallas gemensamt *meddelandehuvudet)* och meddelandetexten. Meddelandekuvertet beskrivs i RFC 5321 och meddelandehuvudet beskrivs i RFC 5322. Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
+Det minst önskvärda alternativet är att använda listan med tillåtna avsändare eller tillåtna domäner i principer för skräp post. Du bör undvika det här alternativet om det är *möjligt* eftersom avsändarna kringgår all skräp post, falskheten och Phish skydd och avsändare (SPF, DKIM, DMARC). Den här metoden är bäst för tillfälliga tester. Detaljerade anvisningar finns i [Konfigurera principer för skydd mot skräp post i EOP](configure-your-spam-filter-policies.md) avsnitt.
 
-- `5321.MailFrom`Adressen (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).** Om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR eller avvisningsmeddelande).
+Högsta tillåtna gräns för dessa listor är ungefär 1000 poster; Du kan dock bara ange 30 poster i portalen. Du måste använda PowerShell för att lägga till fler än 30 poster.
 
-- `5322.From`(även känd som **Från-adressen** eller P2-avsändaren) är e-postadressen i fältet **Från-rubrik** och är avsändarens e-postadress som visas i e-postklienter.
+> [!CAUTION]
+>
+> - Med den här metoden skapas en stor risk för att attackerare skickar e-post till Inkorgen som annars skulle filtreras.
+>
+> - Använd inte domäner som du äger (kallas även godkända domäner) eller vanliga domäner (till exempel microsoft.com) i listan över tillåtna domän rapporter.
 
-Ofta är `5321.MailFrom` och `5322.From` adresserna desamma (kommunikation mellan person och person). Men när e-post skickas på uppdrag av någon annan, kan adresserna vara olika. Detta händer oftast för massmeddelanden.
+## <a name="considerations-for-bulk-email"></a>Att tänka på för Mass utskick
 
-Anta till exempel att Blue Yonder Airlines har anlitat Margie's Travel för att skicka ut sin e-postreklam. Meddelandet du får i Inkorgen har följande egenskaper:
+Ett SMTP-standard-e-postmeddelande består av ett *meddelandes kuvert* och meddelande innehåll. Meddelandets kuvert innehåller information som krävs för överföring och leverans av meddelandet mellan SMTP-servrar. Meddelandets innehåll innehåller fält för meddelande rubrik (gemensamt kallat *meddelande huvudet*) och meddelande texten. Meddelandets kuvert beskrivs i RFC 5321 och meddelande huvudet beskrivs i RFC 5322. Mottagarna kan aldrig se det faktiska meddelandets kuvert eftersom det är genererat av meddelande överföringen och egentligen inte ingår i meddelandet.
 
-- `5321.MailFrom`Adressen är blueyonder.airlines@margiestravel.com.
+- `5321.MailFrom`Adressen (kallas även för **e-post från** adress, P1 avsändare eller kuvert avsändare) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen lagras normalt i huvud fältet för **RETUR-sökväg** i meddelande huvudet (även om det är möjligt för avsändaren att ange en annan e-postadress för **RETUR-sökvägen** ). Om det inte går att leverera meddelandet är det mottagaren för rapporten om utebliven leverans (kallas även för en NDR eller ett studs meddelande).
 
-- `5322.From`Adressen är blueyonder@news.blueyonderairlines.com, vilket är vad du ser i Outlook.
+- `5322.From`(Kallas även **från** -adressen eller P2-avsändaren) är e-postadressen i fältet **från** huvud och är avsändarens e-postadress som visas i e-postklienter.
 
-Säkra avsändarlistor och säkra domänlistor i anti-spam-principer i EOP inspekterar endast `5322.From` adresserna, detta liknar Outlook Safe Avsändare som använder `5322.From` adressen.
+Ofta är de `5321.MailFrom` och `5322.From` adresserna samma (person-till-person-kommunikation). Men när e-post skickas åt någon annan kan adresser vara olika. Detta gäller oftast för Mass utskick av e-postmeddelanden.
 
-Om du vill förhindra att det här meddelandet filtreras kan du vidta följande åtgärder:
+Anta till exempel att Blue Yonder-flyg bolag har hyrt Margie ' s Travel för att skicka ut sin e-postannonsering. Meddelandet som du får i Inkorgen har följande egenskaper:
 
-- Lägg till blueyonder@news.blueyonderairlines.com `5322.From` (adressen) som en säker avsändare i Outlook.
+- `5321.MailFrom`Adressen är blueyonder.Airlines@margiestravel.com.
 
-- Använd en regel för [e-postflöde](#recommended-use-mail-flow-rules) med ett villkor som söker efter meddelanden från blueyonder@news.blueyonderairlines.com `5322.From` (adressen, blueyonder.airlines@margiestravel.com `5321.MailFrom` (den ) eller båda.
+- `5322.From`Adressen är blueyonder@news.blueyonderairlines.com, som du kommer att se i Outlook.
 
-Mer information finns [i Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).
+Listorna Betrodda avsändare och betrodda domäner i en policy för borttagning av skräp post i EOP inspektera bara `5322.From` adresserna, det fungerar ungefär som betrodda avsändare med Outlook `5322.From` .
+
+Om du inte vill filtrera meddelandet kan du utföra följande steg:
+
+- Lägg till blueyonder@news.blueyonderairlines.com ( `5322.From` adressen) som en Outlook Safe-avsändare.
+
+- [Använd en regel för e-postflöde](#recommended-use-mail-flow-rules) med ett villkor som letar efter meddelanden från blueyonder@news.blueyonderairlines.com ( `5322.From` adress, blueyonder.Airlines@margiestravel.com (det `5321.MailFrom` ) eller båda.
+
+Mer information finns i [skapa säkra avsändare i EOP](create-safe-sender-lists-in-office-365.md).

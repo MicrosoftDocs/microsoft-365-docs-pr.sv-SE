@@ -17,162 +17,88 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig hur du använder Attack Simulator för att köra simulerade nätfiske- och lösenordsattacker i din Microsoft 365 E5- eller ATP Plan 2-organisation.
-ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: Lär dig hur du använder en angrepps Simulator för att köra simulerade nätfiske och lösen ords attacker i ditt Microsoft 365 E5-eller ATP-abonnemang 2-organisation.
+ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587574"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653227"
 ---
 # <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
 
-**Sammanfattning** Om du är en global administratör eller en säkerhetsadministratör och din organisation har Office 365 Advanced Threat Protection Plan 2, som innehåller [hotutrednings- och svarsfunktioner,](office-365-ti.md)kan du använda Attack Simulator för att köra realistiska attackscenarier i organisationen. Detta kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din vinst. Läs den här artikeln om du vill veta mer.
+**Sammanfattning** Om du är global administratör eller en säkerhets administratör och din organisation har Office 365 Avancerat skydds abonnemang 2, som innehåller [hot undersökningar och svars funktioner](office-365-ti.md), kan du använda en angrepps Simulator för att köra realistiska angrepp i din organisation. Det här kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Attack simulator finns på **Threat management** \> **Attack simulator**.
+- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Angrepps simulatorn **Threat management** finns i \> **angrepps**hanterings tjänsten.
 
-  ![Hothantering - Attack Simulator](../../media/ThreatMgmt-AttackSimulator.png)
+  ![Threat Management – angrepps Simulator](../../media/ThreatMgmt-AttackSimulator.png)
 
-- Mer information om tillgängligheten för Attack Simulator för olika Microsoft 365-prenumerationer finns i [office 365-tjänstbeskrivning för avancerat skydd mot hot](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Mer information om tillgängligheten för angrepps enheter för olika Microsoft 365-prenumerationer finns i [Beskrivning av Office 365 Advanced Threat Protection Service](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Du måste vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.** Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+- Du måste vara medlem i roll grupperna **organisations hantering** eller **säkerhets administratör** . Mer information om rollgrupper i Säkerhets- och efterlevnadscenter finns i [Behörigheter i Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
 
-- Ditt konto måste konfigureras för MFA (Multi Factor Authentication) för att skapa och hantera kampanjer i Attack Simulator. Instruktioner finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i angrepps Simulator. Anvisningar finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-För att en attack ska kunna startas kontrollerar du att kontot du använder för att köra simulerade attacker använder multifaktorautentisering. Dessutom måste du vara global administratör eller säkerhetsadministratör. (Mer information om roller och behörigheter finns [i Behörigheter i Säkerhets- & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
+För att angrepp ska kunna startas korrekt bör du kontrol lera att det konto du använder för att köra simulerade attacker använder multifaktorautentisering. Dessutom måste du vara global administratör eller säkerhets administratör. (Mer information om roller och behörigheter finns i [behörigheter i säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).)
 
-- Nätfiskekampanjer samlar in och behandlar händelser i 30 dagar. Historiska kampanjdata kommer att vara tillgängliga i upp till 90 dagar efter att du har startat kampanjen.
+- Nät fiske kampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanj data kommer att vara tillgängliga i upp till 90 dagar efter att du har lanserat kampanjen.
 
-- Det finns inga motsvarande PowerShell-cmdlets för Attack Simulator.
+- Det finns inga motsvarande PowerShell-cmdlets för angrepps Simulator.
 
-## <a name="spear-phishing-campaigns"></a>Nätfiskekampanjer för spjut
+## <a name="spear-phishing-campaigns"></a>Spear nät fiske kampanjer
 
-*Nätfiske* är en allmän term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. *Spear phishing* är en riktad nätfiskeattack som använder mycket fokuserat och anpassat innehåll som är särskilt anpassat till de riktade mottagarna (vanligtvis efter spaning på mottagarna av angriparen).
+*Nätfiske* är en generisk term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. *Spear nätfiske* är en riktad nätfiske-attack som använder mycket prioriterat och anpassat innehåll som är specifikt skräddarsydda för de riktade mottagarna (vanligt vis efter Reconnaissance på mottagarna).
 
-- Du är global administratör eller säkerhetsadministratör
+- Du är global administratör eller säkerhets administratör
 
-I Attack Simulator finns två olika typer av nätfiskekampanjer för spjut:
+I angrepps simulatorer är två olika typer av Spear nät fiske kampanjer tillgängliga:
 
-- [Multifaktorautentisering/villkorlig åtkomst](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) är aktiverat för åtminstone det globala administratörskontot och säkerhetsadministratörerna som ska använda Attack Simulator. (Helst är multifaktorautentisering/villkorlig åtkomst aktiverad för alla användare i organisationen.)
+- [Multifaktorautentisering/villkorlig åtkomst](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) är aktive rad för åtminstone det globala administratörs kontot och säkerhets administratören som använder en angrepps Simulator. (Idealed Multi-Factor User/villkorlig åtkomst är aktiverat för alla användare i organisationen.)
 
-  - En standardsida som förklarar detta var bara ett test och ger tips om hur du känner igen nätfiskemeddelanden.
+  - En standard sida som förklarar detta var ett test och ger tips för att känna igen nät fiske meddelanden.
 
-    ![Vad användarna ser om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter](../../media/attack-simulator-phishing-result.png)
+    ![Vad användarna ser om de klickar på nätfiske-länken och anger deras autentiseringsuppgifter](../../media/attack-simulator-phishing-result.png)
 
   - En anpassad sida (URL) som du anger.
 
-- **Spear phishing (bilaga)**: Attacken försöker övertyga mottagarna att öppna en .docx eller .pdf-bilaga i meddelandet. Den bifogade filen innehåller samma innehåll från standardlänken för nätfiske, men den första meningen börjar med " \<Display Name\> visas det här meddelandet som ett nytt e-postmeddelande som du öppnade...".
+- **Spear nätfiske (bifogad fil)**: med angreppet försöker mottagarna att öppna en. docx-eller. pdf-bilaga i meddelandet. Den bifogade filen innehåller samma innehåll från den vanliga nät fiske länken, men den första meningen börjar med " \<Display Name\> , du ser det här meddelandet som ett nyligen öppnade e-postmeddelande...".
 
 > [!NOTE]
-> För närvarande upphör inte spjutfiskekampanjer i Attack Simulator.
+> För närvarande upphör Spear nät fiske kampanjer inte att gälla.
 
-### <a name="create-a-spear-phishing-campaign"></a>Skapa en nätfiskekampanj för spjut
+### <a name="create-a-spear-phishing-campaign"></a>Skapa en Spear nätfiske-kampanj
 
-En viktig del av en spjutfiskekampanj är utseendet på det e-postmeddelande som skickas till de riktade mottagarna. Om du vill skapa och konfigurera e-postmeddelandet har du följande alternativ:
+En viktig del av alla Spear nät fiske kampanjer är utseendet och känslan hos det e-postmeddelande som skickas till mottagarna. För att skapa och konfigurera e-postmeddelandet har du följande alternativ:
 
-- **Använd en inbyggd e-postmall:** Två inbyggda mallar finns tillgängliga: **Pris giveaway** och **lön Uppdatering**. Du kan ytterligare anpassa vissa, alla eller ingen av e-postegenskaperna från mallen när du skapar och startar kampanjen.
+- **Använda en inbyggd e-postmall**: två inbyggda mallar är tillgängliga: **pris gåvo kampanjen** och **löne uppdatering**. Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
 
-- **Skapa en återanvändningsbar e-postmall**: När du har skapat och sparat e-postmallen kan du använda den igen i framtida nätfiskekampanjer. Du kan ytterligare anpassa vissa, alla eller ingen av e-postegenskaperna från mallen när du skapar och startar kampanjen.
+- **Skapa en återanvändbar e-postmall**: när du har skapat och sparat e-postmallen kan du använda den igen i framtida Spear nät fiske kampanjer. Du kan ytterligare anpassa vissa, alla eller inga av e-postegenskaperna från mallen när du skapar och startar kampanjen.
 
-- **Skapa e-postmeddelandet i guiden**: Du kan skapa e-postmeddelandet direkt i guiden när du skapar och startar nätfiskekampanjen för spjutet.
+- **Skapa e-postmeddelandet i guiden**: du kan skapa e-postmeddelandet direkt i guiden när du skapar och startar Spear phishing-kampanjen.
 
-#### <a name="step-1-optional-create-a-custom-email-template"></a>Steg 1 (valfritt): Skapa en anpassad e-postmall
+#### <a name="step-1-optional-create-a-custom-email-template"></a>Steg 1 (valfritt): skapa en anpassad e-postmall
 
 Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet direkt i guiden kan du hoppa över det här steget.
 
-1. Gå till simulator för **angreppshantering** för & säkerhet i \> **Attack simulator**säkerhetsorganisationscenter .
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **attack Simulator**.
 
-2. Klicka på **Attackinformation**i avsnitten **Spear Phishing (Credentials Harvest)** eller **Spear Phishing (Attachment)** på sidan **Simulera attacker.**
+2. På sidan **simulera attacker** , i något av **Spear phishing-** eller **Spear phishing-** avsnitt, klickar du på **angrepps information**.
 
-   Det spelar ingen roll var du skapar mallen. De tillgängliga alternativen i mallen är desamma för båda typerna av nätfiskeattacker.
+   Det spelar ingen roll var du skapar mallen. De tillgängliga alternativen i mallen är desamma för båda typerna av nät fiske attacker.
 
-3. Klicka på **Ny mall**i avsnittet Skapa mallar i avsnittet **Skapa mallar** på sidan **Attackinformation** som öppnas. **Create Templates**
+3. Klicka på **ny mall** **i området för** **nätfiske-mallar** på sidan **information om attack** som öppnas.
 
-4. Guiden **Konfigurera nätfiskemall** börjar i ett nytt utfällbart utfällbart. I steget **Start** anger du ett unikt visningsnamn för mallen och klickar sedan på **Nästa**.
+4. Guiden **Konfigurera nätfiske-mall** startas i en ny utfällning. Ange ett unikt visnings namn för mallen i steget **Starta** och klicka sedan på **Nästa**.
 
-5. Konfigurera följande inställningar i steget **Konfigurera e-postinformation:**
+5. Konfigurera följande inställningar i steget **Konfigurera e-postinformation** :
 
-   - **Från (Namn)**: Visningsnamnet som används för meddelandeavsändaren.
+   - **From (namn)**: visnings namnet som används för meddelande avsändare.
 
-   - **Från (E-post)**: Avsändarens e-postadress.
+   - **Från (e-post)**: avsändarens e-postadress.
 
-   - **Url till nätloggningsserver:** Klicka på listrutan och välj en av de tillgängliga webbadresserna i listan. Detta är webbadressen som användarna kommer att frestas att klicka. Alternativen är:
-
-     - <http://portal.docdeliveryapp.com>
-     - <http://portal.docdeliveryapp.net>
-     - <http://portal.docstoreinternal.com>
-     - <http://portal.docstoreinternal.net>
-     - <http://portal.hardwarecheck.net>
-     - <http://portal.hrsupportint.com>
-     - <http://portal.payrolltooling.com>
-     - <http://portal.payrolltooling.net>
-     - <http://portal.prizegiveaway.net>
-     - <http://portal.prizesforall.com>
-     - <http://portal.salarytoolint.com>
-     - <http://portal.salarytoolint.net>
-
-     > [!NOTE]
-     > <ul><li>Alla webbadresser är avsiktligt http, inte https.</li><li>En URL-ryktestjänst kan identifiera en eller flera av dessa webbadresser som osäkra. Kontrollera tillgängligheten för webbadressen i webbläsare som stöds innan du använder webbadressen i en nätfiskekampanj.</li></ul>
-
-   - **Url till anpassad målsida**: Ange en valfri målsida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardmålsidan. Om du till exempel har intern medvetenhetsutbildning kan du ange webbadressen här.
-
-   - **Kategori**: För närvarande används inte den här inställningen (allt du anger ignoreras).
-
-   - **Ämne**: **Fältet Ämne** i e-postmeddelandet.
-
-   När du är klar klickar du på **Nästa**.
-
-6. Skapa meddelandetexten för e-postmeddelandet i steget **Skriv e-post.** Du kan använda fliken **E-post** (en rtf-redigerare) eller fliken **Källa** (rå HTML-kod).
-
-   HTML-formateringen kan vara så enkel eller komplex som du behöver den för att vara. Du kan infoga bilder och text för att förbättra meddelandets trovärdighet i mottagarens e-postklient.
-
-   - `${username}`infogar mottagarens namn.
-
-   - `${loginserverurl}`**Url-värdet för nätfiske inloggningsservern** infogas från föregående steg.
-
-   När du är klar klickar du på **Nästa**.
-
-7. Klicka på **Slutför**i steget **Bekräfta.**
-
-#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Steg 2: Skapa och starta nätfiskekampanjen för spjut
-
-1. Gå till simulator för **angreppshantering** för & säkerhet i \> **Attack simulator**säkerhetsorganisationscenter .
-
-2. På sidan **Simulera attacker** gör du något av följande val baserat på vilken typ av kampanj du vill skapa:
-
-   - Klicka på **Starta attack** i avsnittet **Spear Phishing (Credentials Harvest)** eller klicka på **Attack Details** \> **Attackinformation Launch Attack**.
-
-   - Klicka på **Starta attack** i avsnittet **Spear Phishing (Attachment).** **Attack Details** \> **Launch Attack**
-
-3. Guiden **Konfigurera nätfiskeattack** startar i ett nytt utfällbart utfällbart. Gör **Start** något av följande i startsteget:
-
-   - Ange ett unikt visningsnamn för kampanjen i rutan **Namn.** Klicka inte på **Använd mall**eftersom du skapar e-postmeddelandet senare i guiden.
-
-   - Klicka på **Använd mall** och välj en inbyggd eller anpassad e-postmall. När du har valt mallen fylls rutan **Namn** automatiskt baserat på mallen, men du kan ändra namnet.
-
-   ![Startsida för nätfiske](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
-
-   När du är klar klickar du på **Nästa**.
-
-4. Gör något av följande i steget **Målmottagare:**
-
-   - Klicka på **Adressbok** om du vill välja mottagare (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online-postlåda. Om du klickar på **Filtrera** och **tillämpa** utan att ange några sökvillkor returneras alla mottagare och läggs till i kampanjen.
-
-   - Klicka på **Importera** och sedan **Filimport** om du vill importera ett kommaavgränsat värde (CSV) eller radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
-
-   När du är klar klickar du på **Nästa**.
-
-5. Konfigurera följande inställningar i steget **Konfigurera e-postinformation:**
-
-   Om du har valt en mall i **startsteget** är de flesta av dessa värden redan konfigurerade, men du kan ändra dem.
-
-   - **Från (Namn)**: Visningsnamnet som används för meddelandeavsändaren.
-
-   - **Från (E-post)**: Avsändarens e-postadress. Du kan ange en verklig eller falsk e-postadress från organisationens e-postdomän, eller så kan du ange en verklig eller falsk extern e-postadress. En giltig e-postadress för avsändaren från organisationen kommer faktiskt att matchas i mottagarens e-postklient.
-
-   - **Url till nätloggningsserver:** Klicka på listrutan och välj en av de tillgängliga webbadresserna i listan. Detta är webbadressen som användarna kommer att frestas att klicka. Alternativen är:
+   - **URL till nätfiske-inloggnings Server**: Klicka på den nedrullningsbara List rutan och välj en av de tillgängliga URL-adresserna i listan. Det här är URL-adressen som användarna blir frestade att klicka på. Alternativen är:
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -188,179 +114,261 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Alla webbadresser är avsiktligt http, inte https.</li><li>En URL-ryktestjänst kan identifiera en eller flera av dessa webbadresser som osäkra. Kontrollera tillgängligheten för webbadressen i webbläsare som stöds innan du använder webbadressen i en nätfiskekampanj.</li><li>Du måste välja en webbadress. För kampanjer <b>med spearfiske (bifogad fil)</b> kan du ta bort länken från meddelandets brödtext i nästa steg (annars innehåller meddelandet både en länk <b>och</b> en bifogad fil).</li></ul>
+     >
+     > - Alla URL-adresser är avsiktligt http, inte https.
+     >
+     > - En URL-ryktes tjänst kan identifiera en eller flera av dessa URL-adresser som osäkra. Kontrol lera tillgängligheten för URL-adressen i webbläsare som stöds innan du använder URL-adressen i en nätfiske-kampanj.
 
-   - **Typ av bifogade filer**: Den här inställningen är endast tillgänglig i **spearfiskekampanjer (bifogad fil).** Klicka på listrutan och välj **. DOCX** eller **. PDF** från listan.
+   - **Anpassad URL**för start sidan: Ange en extra landnings sida där användarna ska klicka på nätfiske-länken och ange deras autentiseringsuppgifter. Den här länken ersätter standard ingångs sidan. Om du till exempel har intern medvetenhets kurs kan du ange den URL-adressen här.
 
-   - **Namn på bifogade filer**: Den här inställningen är endast tillgänglig i **spearfiskekampanjer (bifogad fil).** Ange ett filnamn för bifogad fil i .docx eller .pdf.
+   - **Kategori**: den här inställningen används inte (något du anger ignoreras).
 
-   - **Url till anpassad målsida**: Ange en valfri målsida där användarna tas om de klickar på nätfiskelänken och anger sina autentiseringsuppgifter. Den här länken ersätter standardmålsidan. Om du till exempel har intern medvetenhetsutbildning kan du ange webbadressen här.
-
-   - **Ämne**: **Fältet Ämne** i e-postmeddelandet.
+   - **Ämne**: fältet **subject** i e-postmeddelandet.
 
    När du är klar klickar du på **Nästa**.
 
-6. Skapa meddelandetexten för e-postmeddelandet i steget **Skriv e-post.** Om du har valt en mall i **startsteget** är meddelandetexten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **E-post** (en rtf-redigerare) eller fliken **Källa** (rå HTML-kod).
+6. I steget Skapa **e-post** skapar du meddelande texten i e-postmeddelandet. Du kan använda fliken **e-post** (en RTF-HTML-redigerare) eller fliken **källa** (RAW HTML-kod).
 
-   HTML-formateringen kan vara så enkel eller komplex som du behöver den för att vara. Du kan infoga bilder och text för att förbättra meddelandets trovärdighet i mottagarens e-postklient.
+   HTML-formateringen kan vara så enkel eller komplex som du vill. Du kan infoga bilder och text för att förbättra believability för meddelandet i mottagarens e-postklient.
 
    - `${username}`infogar mottagarens namn.
 
-   - `${loginserverurl}`Url-värdet för **nätfiske inloggningsservern** infogas.
-
-   För kampanjer **med nätfiske (bifogad fil)** bör du ta bort länken från meddelandets brödtext (annars innehåller meddelandet både en länk **och** en bifogad fil och länkklick spåras inte i en kampanj för bifogade filer).
-
-   ![Skriv e-postkropp](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   - `${loginserverurl}`infogar URL-adressen för ett **nätfiske-inloggningsnamn** från föregående steg.
 
    När du är klar klickar du på **Nästa**.
 
-7. Klicka på **Slutför** i steget **Bekräfta** för att starta kampanjen. Nätfiskemeddelandet levereras till de riktade mottagarna.
+7. Klicka på **Slutför**i steget **Bekräfta** .
 
-## <a name="password-attack-campaigns"></a>Kampanjer för lösenordsattacker
+#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Steg 2: skapa och starta Spear phishing-kampanjen
 
-En *lösenordsattack* försöker gissa lösenord för användarkonton i en organisation, vanligtvis efter att angriparen har identifierat ett eller flera giltiga användarkonton.
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **attack Simulator**.
 
-I Attack Simulator är två olika typer av lösenordsattackkampanjer tillgängliga för dig att testa komplexiteten i användarnas lösenord:
+2. På sidan **simulera attacker** väljer du något av följande alternativ baserat på den typ av kampanj som du vill skapa:
 
-- **Brute force lösenord (ordbok attack)**: En *brute force* eller *ordbok* attack använder en stor ordbok fil av lösenord på ett användarkonto med hopp om att en av dem kommer att fungera (många lösenord mot ett konto). Felaktiga lösenordsspärrar hjälper till att avskräcka attacker mot brute force-lösenord.
+   - I avsnittet **Spear phishing (identifierings skörd)** klickar du på **Starta attack** eller klicka på **angrepps information** \> **Launch Attack**.
 
-  För ordlisteattacken kan du ange ett eller flera lösenord som ska provas (manuellt inmatat eller i en uppladdad fil) och du kan ange en eller flera användare.
+   - I avsnittet **Spear phishing (bilaga)** klickar du på **Starta attack** eller klicka på **angrepps information** \> **Launch Attack**.
 
-- **Lösenord spray attack:** Ett *lösenord spray* attack använder samma noggrant genomtänkta lösenord mot en lista över användarkonton (ett lösenord mot många konton). Lösenord spray attacker är svårare att upptäcka än brute force lösenord attacker (sannolikheten för framgång ökar när en angripare försöker ett lösenord över dussintals eller hundratals konton utan risk för att snubbla användarens felaktiga lösenord lock-out).
+3. Guiden **Konfigurera nätfiske-attack** startas med en ny utfällning. Gör något av följande i steget **Starta** :
 
-  För lösenordssprayattacken kan du bara ange ett lösenord att prova, och du kan ange en eller flera användare.
+   - I rutan **namn** anger du ett unikt visnings namn för kampanjen. Klicka inte på **Använd mall**eftersom du kommer att skapa e-postmeddelandet senare i guiden.
+
+   - Klicka på **Använd mall** och välj en inbyggd eller anpassad e-postmall. När du har valt mallen fylls **namn** rutan i automatiskt baserat på mallen, men du kan ändra namnet.
+
+   ![Start sida för nätfiske](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+
+   När du är klar klickar du på **Nästa**.
+
+4. Gör något av följande i steget **mål mottagare** :
+
+   - Klicka på **Adress bok** för att välja mottagarna (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online-postlåda. Om du klickar på **filter** och **använder** utan att ange ett Sök kriterium returneras alla mottagare och läggs till i kampanjen.
+
+   - Klicka på **Importera** sedan importera **fil** för att importera en CSV-eller rad avgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
+
+   När du är klar klickar du på **Nästa**.
+
+5. Konfigurera följande inställningar i steget **Konfigurera e-postinformation** :
+
+   Om du har valt en mall i **Start** steget är de flesta dessa värden redan konfigurerade, men du kan ändra dem.
+
+   - **From (namn)**: visnings namnet som används för meddelande avsändare.
+
+   - **Från (e-post)**: avsändarens e-postadress. Du kan ange en verklig eller falsk e-postadress från organisationens e-postdomän, eller så kan du ange en verklig eller falsk extern e-postadress. En giltig avsändares e-postadress från din organisation löses faktiskt i mottagarens e-postklient.
+
+   - **URL till nätfiske-inloggnings Server**: Klicka på den nedrullningsbara List rutan och välj en av de tillgängliga URL-adresserna i listan. Det här är URL-adressen som användarna blir frestade att klicka på. Alternativen är:
+
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
+
+     > [!NOTE]
+     >
+     > - Alla URL-adresser är avsiktligt http, inte https.
+     >
+     > - En URL-ryktes tjänst kan identifiera en eller flera av dessa URL-adresser som osäkra. Kontrol lera tillgängligheten för URL-adressen i webbläsare som stöds innan du använder URL-adressen i en nätfiske-kampanj.
+     >
+     > - Du måste välja en URL-adress. För **Spear nätfiske (Attachment)** kan du ta bort länken från meddelande texten i nästa steg (annars innehåller meddelandet både en länk **och** en bifogad fil).
+
+   - **Typ av bifogad fil**: den här inställningen är endast tillgänglig i **Spear nätfiske (bifogade filer)** . Klicka på den nedrullningsbara List rutan och välj **. DOCX** eller **. PDF** i listan.
+
+   - **Namn på bifogad fil**: den här inställningen är endast tillgänglig i **Spear nätfiske (bifogade filer)** . Ange ett fil namn för. docx-eller. pdf-bilagan.
+
+   - **Anpassad URL**för start sidan: Ange en extra landnings sida där användarna ska klicka på nätfiske-länken och ange deras autentiseringsuppgifter. Den här länken ersätter standard ingångs sidan. Om du till exempel har intern medvetenhets kurs kan du ange den URL-adressen här.
+
+   - **Ämne**: fältet **subject** i e-postmeddelandet.
+
+   När du är klar klickar du på **Nästa**.
+
+6. I steget Skapa **e-post** skapar du meddelande texten i e-postmeddelandet. Om du har valt en mall i **Start** steget är meddelande texten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **e-post** (en RTF-HTML-redigerare) eller fliken **källa** (RAW HTML-kod).
+
+   HTML-formateringen kan vara så enkel eller komplex som du vill. Du kan infoga bilder och text för att förbättra believability för meddelandet i mottagarens e-postklient.
+
+   - `${username}`infogar mottagarens namn.
+
+   - `${loginserverurl}`infogar URL-värdet för **nätfiske-inloggningsnamn** .
+
+   För **Spear phishing-kampanjer (bifogade filer)** bör du ta bort länken från meddelande texten (annars kommer meddelandet att innehålla både en länk **och** en bifogad fil, och länkar klickar spåras inte till en bifogad fil).
+
+   ![Skriv e-postmeddelande](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+
+   När du är klar klickar du på **Nästa**.
+
+7. Klicka på **Slutför** i steget **Bekräfta** för att starta kampanjen. Nät fiske meddelandet levereras till mottagarna.
+
+## <a name="password-attack-campaigns"></a>Lösen ords attacker
+
+Ett *lösen ords angrepp* försöker gissa lösen ord för användar konton i en organisation, vanligt vis efter att angriparen har identifierat ett eller flera giltiga användar konton.
+
+I angrepps simulatorer är två olika typer av lösen ords attacker tillgängliga för dig för att testa komplexiteten hos användarnas lösen ord:
+
+- **Råa force-lösenord (ordbok)**: en upptaget-eller *ordlisteattacker* *använder en stor* ordbok med lösen ord på ett användar konto med en fråga om att en av dem ska fungera (många lösen ord mot ett konto). Felaktig låsning-gräns för lösen ord
+
+  För ord listor kan du ange ett eller flera lösen ord (som anges manuellt eller i en uppladdad fil) och du kan ange en eller flera användare.
+
+- **Attack för lösen ords besprutning**: ett *lösen* ord som används för att skydda en dator använder samma noggrant övervägda lösen ord mot en lista över användar konton (ett lösen ord mot många konton) Lösen ords dusch attacker är svårare att upptäcka än problem med råa lösen ord (sannolikheten att lyckas ökar när en angripare försöker med ett lösen ord på dussin tals eller hundratals konton utan risk för att Tripping användarens felaktiga lösen ord).
+
+  För angrepp med lösen ord kan du bara ange ett lösen ord och du kan ange en eller flera användare.
 
 > [!NOTE]
-> Lösenordsattackerna i Attack Simulator skickar användarnamn och lösenord Grundläggande auth-begäranden till en slutpunkt, så de fungerar också med andra autentiseringsmetoder (AD FS, lösenordshösksynkronisering, vidaregång, PingFederate, etc.). För användare som har MFA aktiverat, även om **lösenordsattacken** försöker sitt faktiska lösenord, kommer försöket alltid att registrera sig som ett fel (med andra ord kommer MFA-användare aldrig att visas i antalet lyckade försök för kampanjen). Detta är det förväntade resultatet. MFA är en primär metod för att skydda mot lösenordsattacker.
+> Lösen ords attacker i angrepps Simulator vidarebefordrar användar namn och lösen ord för grundläggande autentisering till en slut punkt, så de fungerar även med andra autentiseringsmetoder (AD FS, lösen ords-hash-synkronisering, vidarekoppling, PingFederate, osv.). För användare som har MFA aktiverat, även om lösen ords attackeret försöker nå sitt faktiska lösen ord, kommer försöket alltid att registreras som ett fel (med andra ord kommer MFA-användarna aldrig att synas i kampanjens antal **lyckade försök** . Det här är det förväntade resultatet. MFA är en primär metod för att skydda mot lösen ords attacker.
 
-### <a name="create-and-launch-a-password-attack-campaign"></a>Skapa och starta en kampanj för lösenordsattack
+### <a name="create-and-launch-a-password-attack-campaign"></a>Skapa och starta en kampanj för att attackera lösen ord
 
-1. Gå till simulator för **angreppshantering** för & säkerhet i \> **Attack simulator**säkerhetsorganisationscenter .
+1. I säkerhets & Compliance Center går du till **Threat Management** \> **attack Simulator**.
 
-2. På sidan **Simulera attacker** gör du något av följande val baserat på vilken typ av kampanj du vill skapa:
+2. På sidan **simulera attacker** väljer du något av följande alternativ baserat på den typ av kampanj som du vill skapa:
 
-   - Klicka på **Starta attack** i avsnittet Brute Force **Password (Dictionary Attack)** eller klicka på **Attack Details** \> **Attackinformation Launch Attack**.
+   - I avsnittet **råa force-lösenord (ordbok)** klickar du på **Starta attack** eller klicka på **angrepps information** \> **Launch Attack**.
 
-   - I avsnittet **Lösenord spray attack,** klicka **på Starta attack** eller klicka på Attack **Detaljer** \> **Launch Attack**.
+   - Klicka på **Starta** attacker eller klicka på **angrepps information** i avsnittet **lösen ords besprutnings attacker** \> **Launch Attack**.
 
-3. Guiden **Konfigurera lösenordsattack** startar i ett nytt utfällbart alternativ. I steget **Start** anger du ett unikt visningsnamn för kampanjen och klickar sedan på **Nästa**.
+3. Guiden **Konfigurera lösen ords attacker** startar i en ny utfällning. Ange ett unikt visnings namn för kampanjen i steget **Starta** och klicka sedan på **Nästa**.
 
-4. Gör något av följande i steget **Rikta användare:**
+4. Gör något av följande i steget **mål användare** :
 
-   - Klicka på **Adressbok** om du vill välja mottagare (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online-postlåda. Om du klickar på **Filtrera** och **tillämpa** utan att ange några sökvillkor returneras alla mottagare och läggs till i kampanjen.
+   - Klicka på **Adress bok** för att välja mottagarna (användare eller grupper) för kampanjen. Varje riktad mottagare måste ha en Exchange Online-postlåda. Om du klickar på **filter** och **använder** utan att ange ett Sök kriterium returneras alla mottagare och läggs till i kampanjen.
 
-   - Klicka på **Importera** och sedan **Filimport** om du vill importera ett kommaavgränsat värde (CSV) eller radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
-
-   När du är klar klickar du på **Nästa**.
-
-5. I steget **Välj attackinställningar** väljer du vad du ska göra baserat på kampanjtypen:
-
-   - **Brute Force Password (Dictionary Attack)**: Gör något av följande steg:
-
-     - **Ange lösenord manuellt**: Skriv ett lösenord i rutan **Tryck på retur för att lägga till ett lösenord** och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
-
-     - **Ladda upp lösenord från en ordlistefil:** Klicka på **Ladda upp** om du vill importera en befintlig textfil som innehåller ett lösenord på varje rad och en tom sista rad. Textfilen måste vara 10 MB eller mindre stor och får inte innehålla fler än 3 0000 lösenord.
-
-   - **Lösenord spray attack:** I **det lösenord (er) att använda i attackrutan,** ange ett lösenord.
+   - Klicka på **Importera** sedan importera **fil** för att importera en CSV-eller rad avgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
    När du är klar klickar du på **Nästa**.
 
-6. Klicka på **Slutför** i steget **Bekräfta** för att starta kampanjen. De angivna lösenorden provas på användare som du har angett.
+5. Välj vad du vill göra i steget **Välj angrepps inställningar** :
 
-## <a name="view-campaign-results"></a>Visa kampanjresultat
+   - **Råa force-lösenord (ordbok)**: gör något av följande:
 
-När du har startat en kampanj kan du kontrollera förloppet och resultaten på huvudsidan **för simulera attacker.**
+     - **Ange lösen ord manuellt**: Skriv in ett lösen ord i rutan **Tryck på RETUR för att lägga till ett** lösenord och tryck sedan på RETUR. Upprepa det här steget så många gånger det behövs.
 
-Aktiva kampanjer visar ett statusfält, ett slutfört procentvärde och antalet "(slutförda användare) (totalt antal användare).Active campaigns will show a status bar, a completed percentage value and "(completed users) of (total users)" count. Om du klickar på knappen **Uppdatera** uppdatera uppdateras förloppet för alla aktiva kampanjer. Du kan också klicka på **Avsluta** för att stoppa en aktiv kampanj.
+     - **Ladda upp lösen ord från en ordlistefil**: Klicka på **Ladda upp** för att importera en befintlig textfil som innehåller ett lösen ord på varje rad och en tom sista rad. Text filen måste vara 10 MB eller mindre och får inte innehålla fler än 30000 lösen ord.
 
-När kampanjen är klar ändras statusen till **Attack slutförd**. Du kan visa resultatet av kampanjen genom att utföra någon av följande åtgärder:
+   - **Lösen ords besprutning**: Skriv ett lösen ord i **lösen ordet som ska användas i angrepps** rutan.
 
-- Klicka på **Visa rapport** under namnet på kampanjen på sidan **Simulera attacker.**
+   När du är klar klickar du på **Nästa**.
 
-- På sidan Simulera **attacker** för huvudformat klickar du på **Attackinformation** i avsnittet för typen av attack. På sidan **Attackinformation** som öppnas väljer du kampanjen i avsnittet **Attackhistorik.**
+6. Klicka på **Slutför** i steget **Bekräfta** för att starta kampanjen. De angivna lösen orden är på användare som du har angett.
 
-Någon av de tidigare åtgärderna tar dig till en sida med namnet **Attackinformation**. Den information som är tillgänglig på den här sidan för varje typ av kampanj beskrivs i följande avsnitt.
+## <a name="view-campaign-results"></a>Visa kampanj resultat
 
-### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Kampanjresultat för Spear Phishing (Credentials Harvest)
+När du har lanserat en kampanj kan du kontrol lera förlopp och resultat på huvud sidan **simulera attacker** .
 
-Följande information finns på sidan **Attackinformation** för varje kampanj:
+Aktiva kampanjer visar ett statusfält, ett slutfört procent värde och "(slutförda användare) av (totalt antal användare). Om du klickar på knappen **Uppdatera** uppdateras alla aktiva kampanjer. Du kan också klicka på **Avbryt** om du vill stoppa en aktiv kampanj.
 
-- Kampanjens varaktighet (startdatum/startdatum och slutdatum/sluttid).
+När kampanjen är klar ändras status till **angreppet**. Du kan visa kampanj resultaten genom att göra något av följande:
 
-- **Totalt antal användare riktade**
+- Klicka på **Visa rapport** under namnet på kampanjen på huvud sidan för **simulerade attacker** .
 
-- **Lyckade försök**: Antalet användare som klickade på länken **och** angav sina autentiseringsuppgifter *(alla* användarnamn och lösenordsvärde).
+- På huvud sidan **simulera attacker** klickar du på **angrepps information** i avsnittet för typen av attack. På sidan **information om attack** som öppnas väljer du kampanjen i avsnittet **attack historik** .
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
+En av de föregående åtgärderna tar dig till en sida med namnet **angrepps information**. Informationen som är tillgänglig på den här sidan för varje typ av kampanj beskrivs i följande avsnitt.
 
-- **Snabbaste klick:** Hur lång tid det tog den första användaren att klicka på länken efter att du startat kampanjen.
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Spear nätfiske (identitets skörd) kampanj resultat
 
-- **Genomsnittligt klick:** Summan av hur lång tid det tog för alla att klicka på länken dividerat med antalet användare som klickade på länken.
+Följande information finns på sidan **attack information** för varje kampanj:
 
-- **Klicka på Framgång:** En procentsats som beräknas av (antal användare som klickade på länken) / **Totalt antal användare riktade**.
+- Varaktigheten (start datum/tid och Slutdatum/tid) för kampanjen.
 
-- **Snabbaste autentiseringsuppgifter:** Hur lång tid det tog för den första användaren att ange sina autentiseringsuppgifter efter att du startat kampanjen.
+- **Totalt antal riktade användare**
 
-- **Genomsnittlig autentiseringsuppgifter:** Summan av hur lång tid det tog för alla att ange sina autentiseringsuppgifter dividerat med antalet användare som angett sina autentiseringsuppgifter.
+- **Lyckade försök**: antalet användare som klickade på länken **och** angett sina*autentiseringsuppgifter (användar* namn och lösen ord).
 
-- **Autentiseringsuppgifter Framgång:** En procentsats som beräknas av (antal användare som angett sina autentiseringsuppgifter) / **Totalt antal användare riktade**.
+- **Total framgång-frekvens**: en procents ATS som beräknas vid **lyckade försök**  /  **totalt för användare riktade**sig.
 
-- Ett stapeldiagram som visar **länken klickade** på och **Autentiseringsuppgifter som anges** nummer per dag.
+- **Snabbast Klicka**här: hur lång tid det tog för den första användaren att klicka på länken efter att du startade kampanjen.
 
-- Ett cirkeldiagram som visar **länken klickade på**, **Autentiseringsuppgifter som angetts**och **Inga** procentsatser för kampanjen.
+- **Genomsnittligt Klicka**på: summan av hur lång tid det tog för alla att klicka på länken dividerat med antalet användare som klickade på länken.
 
-- Avsnittet **Komprometterade användare** visar information om de användare som klickade på länken:
+- **Klicka på framgång-frekvens**: en procents ATS som beräknas av (antal användare som klickade på länken)/ **totalt riktade användare**.
+
+- **Snabbaste uppgifter**: hur länge den tog den första användaren att ange sina autentiseringsuppgifter efter att du har lanserat kampanjen.
+
+- **Genomsnittligt antal autentiseringsuppgifter**: summan av hur lång tid det tog för alla att ange sina inloggnings uppgifter dividerat med antalet användare som angav sina autentiseringsuppgifter.
+
+- **Framgång för lyckade**uppgifter: en procents ATS som beräknas av (antal användare som angav sina uppgifter)/ **totalt riktade till användare**.
+
+- Ett stapeldiagram som visar numret på den **klickade** och den **angivna autentiseringsuppgiften** per dag.
+
+- Ett cirkel diagram som visar den **länk som klickas**på, **autentiseringsuppgifter**och **ingen** procents ATS för kampanjen.
+
+- I avsnittet **kompromissade användare** visas information om de användare som klickade på länken:
 
   - Användarens e-postadress
 
-  - Datum/tid då de klickade på länken.
+  - Datum/tid när de klickade på länken.
 
-  - Klientens IP-adress.
+  - IP-adress för klienter.
 
   - Information om användarens version av Windows och webbläsare.
 
-  Du kan klicka på **Exportera** om du vill exportera resultaten till en CSV-fil.
+  Du kan klicka på **Exportera** för att exportera resultaten till en CSV-fil.
 
-### <a name="spear-phishing-attachment-campaign-results"></a>Kampanjresultat för Spear Phishing (Attachment)
+### <a name="spear-phishing-attachment-campaign-results"></a>Spear phishing (bilagor) kampanj resultat
 
-Följande information finns på sidan **Attackinformation** för varje kampanj:
+Följande information finns på sidan **attack information** för varje kampanj:
 
-- Kampanjens varaktighet (startdatum/startdatum och slutdatum/sluttid).
+- Varaktigheten (start datum/tid och Slutdatum/tid) för kampanjen.
 
-- **Totalt antal användare riktade**
+- **Totalt antal riktade användare**
 
-- **Lyckade försök**: Antalet användare som öppnade eller hämtade och öppnade den bifogade filen (förhandsgranskning räknas inte).
+- **Lyckade försök**: antalet användare som öppnade eller hämtade och öppnade den bifogade filen (för hands version).
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
+- **Total framgång-frekvens**: en procents ATS som beräknas vid **lyckade försök**  /  **totalt för användare riktade**sig.
 
-- **Snabbaste öppen tid för bifogade filer**: Hur lång tid det tog för den första användaren att öppna den bifogade filen när du startade kampanjen.
+- **Snabbare öppning av bifogade filer**: hur lång tid det tog för den första användaren att öppna den bifogade filen när du startade kampanjen.
 
-- **Genomsnittlig öppen tid för bifogade filer**: Summan av hur lång tid det tog för alla att öppna den bifogade filen dividerat med antalet användare som öppnade bilagan.
+- **Genomsnittlig öppnings tid för bifogade filer**: summan av hur lång tid det tog för alla att öppna den bifogade filen dividerat med antalet användare som öppnade den bifogade filen.
 
-- **Bifogad fil öppen framgång:** En procentsats som beräknas av (antal användare som öppnade bilagan) / **Totalt antal användare riktade**.
+- Slut för **ande frekvens för bifogad fil**: en procents ATS som beräknas av (antal användare som öppnade bilagan)/ **totalt riktade användare**.
 
-### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Kampanjresultat för Brute Force Password (Dictionary Attack)
+### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Lösen ords intrång (ord listor) kampanj resultat
 
-Följande information finns på sidan **Attackinformation** för varje kampanj:
+Följande information finns på sidan **attack information** för varje kampanj:
 
-- Kampanjens varaktighet (startdatum/startdatum och slutdatum/sluttid).
+- Varaktigheten (start datum/tid och Slutdatum/tid) för kampanjen.
 
-- **Totalt antal användare riktade**
+- **Totalt antal riktade användare**
 
-- **Lyckade försök**: Antalet användare som visade sig använda ett av de angivna lösenorden.
+- **Lyckade försök**: antalet användare som har hittat ett angivet lösen ord.
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
+- **Total framgång-frekvens**: en procents ATS som beräknas vid **lyckade försök**  /  **totalt för användare riktade**sig.
 
-- I avsnittet **Komprometterade användare** visas de berörda användarnas e-postadresser. Du kan klicka på **Exportera** om du vill exportera resultaten till en CSV-fil.
+- I avsnittet **kompromissade användare** visas e-postadresserna till de berörda användarna. Du kan klicka på **Exportera** för att exportera resultaten till en CSV-fil.
 
-### <a name="password-spray-attack-campaign-results"></a>Kampanjresultat för lösenordssprayattack
+### <a name="password-spray-attack-campaign-results"></a>Lösen ords spridningen kampanj resultat
 
-Följande information finns på sidan **Attackinformation** för varje kampanj:
+Följande information finns på sidan **attack information** för varje kampanj:
 
-- Kampanjens varaktighet (startdatum/startdatum och slutdatum/sluttid).
+- Varaktigheten (start datum/tid och Slutdatum/tid) för kampanjen.
 
-- **Totalt antal användare riktade**
+- **Totalt antal riktade användare**
 
-- **Lyckade försök**: Antalet användare som visade sig använda det angivna lösenordet.
+- **Lyckade försök**: antalet användare som har hittats med det angivna lösen ordet.
 
-- **Total framgång:** En procentsats som beräknas av **Lyckade försök**  /  **Totalt antal användare som är inriktade på**.
+- **Total framgång-frekvens**: en procents ATS som beräknas vid **lyckade försök**  /  **totalt för användare riktade**sig.

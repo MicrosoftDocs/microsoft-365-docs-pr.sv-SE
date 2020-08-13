@@ -1,7 +1,7 @@
 ---
-title: DeviceProcessEvents-tabellen i det avancerade jaktschemat
-description: Lär dig mer om processlek- eller skapelsehändelser i DeviceProcessEventstable av det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, processcreationevents, DeviceProcessEvents, process-ID, kommandorad, DeviceProcessEvents
+title: DeviceProcessEvents-tabell i det avancerade jakt-schemat
+description: Lär dig mer om hur processer håller på att starta eller skapa DeviceProcessEventstable i det avancerade jakt schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, processcreationevents, DeviceProcessEvents, process-ID, kommando rad, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,68 +17,68 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 104ca1b89c4dd6ede2ad06404bbdc0da7d11f689
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 80f1be5458474a34a303ae6c306c5907bde0df5a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899237"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649043"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-`DeviceProcessEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om processskapande och relaterade händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`DeviceProcessEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om hur du skapar och relaterade händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
-| `DeviceId` | Sträng | Unik identifierare för maskinen i tjänsten |
-| `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för maskinen |
-| `ActionType` | Sträng | Typ av aktivitet som utlöste händelsen |
-| `FileName` | Sträng | Namnet på den fil som den registrerade åtgärden tillämpades på |
-| `FolderPath` | Sträng | Mapp som innehåller filen som den inspelade åtgärden tillämpades på |
-| `SHA1` | Sträng | SHA-1 i den akt som den registrerade åtgärden tillämpades på |
-| `SHA256` | Sträng | SHA-256 i filen som den inspelade åtgärden tillämpades på. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
-| `MD5` | Sträng | MD5-hash i filen som den registrerade åtgärden tillämpades på |
-| `ProcessId` | Int | Process-ID (PID) för den nyskapade processen |
-| `ProcessCommandLine` | Sträng | Kommandorad som används för att skapa den nya processen |
-| `ProcessIntegrityLevel` | Sträng | Integritetsnivå för den nyskapade processen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från ett internet som hämtats. Dessa integritetsnivåer påverkar behörigheter för resurser |
-| `ProcessTokenElevation` | Sträng | Tokentyp som anger närvaron eller frånvaron av UAC-behörighetshöjning (User Access Control) som tillämpas på den nyligen skapade processen |
-| `ProcessCreationTime` | Datetime | Datum och tid då processen skapades |
-| `AccountDomain` | Sträng | Kontots domän |
-| `AccountName` | Sträng | Kontots användarnamn |
-| `AccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot |
-| `LogonId` | Sträng | Identifierare för en inloggningssession. Den här identifieraren är unik på samma dator endast mellan omstarter |
-| `InitiatingProcessAccountDomain` | Sträng | Domän för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessAccountName` | Sträng | Användarnamn för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessAccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessLogonId` | Sträng | Identifierare för en inloggningssession för processen som initierade händelsen. Den här identifieraren är unik på samma dator endast mellan omstarter. |
-| `InitiatingProcessIntegrityLevel` | Sträng | Integritetsnivå för den process som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från en nedladdning på Internet. Dessa integritetsnivåer påverkar behörigheter för resurser |
-| `InitiatingProcessTokenElevation` | Sträng | Tokentyp som anger närvaron eller frånvaron av UAC-behörighetshöjning (User Access Control) som tillämpas på den process som initierade händelsen |
-| `InitiatingProcessSHA1` | Sträng | SHA-1 av processen (bildfil) som initierade händelsen |
-| `InitiatingProcessSHA256` | Sträng | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när det är tillgängligt. |
-| `InitiatingProcessMD5` | Sträng | MD5-hash i processen (bildfil) som initierade händelsen |
-| `InitiatingProcessFileName` | Sträng | Namn på den process som initierade händelsen |
-| `InitiatingProcessId` | Int | Process-ID (PID) för den process som initierade händelsen |
-| `InitiatingProcessCommandLine` | Sträng | Kommandorad som används för att köra processen som initierade händelsen |
-| `InitiatingProcessCreationTime` | Datetime | Datum och tid då processen som initierade händelsen startades |
-| `InitiatingProcessFolderPath` | Sträng | Mapp som innehåller processen (bildfilen) som initierade händelsen |
-| `InitiatingProcessParentId` | Int | Process-ID (PID) för den överordnade processen som gav upphov till den process som var ansvarig för händelsen |
-| `InitiatingProcessParentFileName` | Sträng | Namn på den överordnade process som gav upphov till den process som var ansvarig för händelsen |
-| `InitiatingProcessParentCreationTime` | Datetime | Datum och tid då den överordnade processen som var ansvarig för händelsen startades |
-| `ReportId` | Lång | Händelseidentifierare baserat på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
-| `AppGuardContainerId` | Sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
+| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
+| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
+| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
+| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen |
+| `FileName` | strängvärdet | Namnet på filen som den inspelade åtgärden tillämpades för |
+| `FolderPath` | strängvärdet | Mapp som innehåller filen som den inspelade åtgärden tillämpades för |
+| `SHA1` | strängvärdet | SHA-1 av filen som den inspelade åtgärden tillämpades på |
+| `SHA256` | strängvärdet | SHA-256 av filen som den registrerade åtgärden tillämpades på. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
+| `MD5` | strängvärdet | MD5-hash för filen som den inspelade åtgärden tillämpades för |
+| `ProcessId` | signera | Process-ID (PID) för den nyskapade processen |
+| `ProcessCommandLine` | strängvärdet | Kommando rad som används för att skapa den nya processen |
+| `ProcessIntegrityLevel` | strängvärdet | Integritets nivå för den nyskapade processen. Windows tilldelar integritets nivåer för processer baserat på vissa egenskaper, till exempel om de startades från en Hämtad Internet. Dessa integritets nivåer påverkar behörigheter för resurser |
+| `ProcessTokenElevation` | strängvärdet | Tokentyp som anger närvaro eller frånvaro av behörighets höjning (UAC) för den nyskapade processen |
+| `ProcessCreationTime` | datetime | Datum och tid då processen skapades |
+| `AccountDomain` | strängvärdet | Kontots domän |
+| `AccountName` | strängvärdet | Kontots användar namn |
+| `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
+| `LogonId` | strängvärdet | Identifierare för en inloggningssession. Detta ID är endast unikt på samma dator mellan omstarter |
+| `InitiatingProcessAccountDomain` | strängvärdet | Domän för det konto som körde processen som är ansvarig för händelsen |
+| `InitiatingProcessAccountName` | strängvärdet | Användar namn för det konto som körde processen som är ansvarig för händelsen |
+| `InitiatingProcessAccountSid` | strängvärdet | Säkerhets identifierare (SID) för det konto som körde processen som är ansvarig för händelsen |
+| `InitiatingProcessLogonId` | strängvärdet | ID för en inloggningssession för den process som initierade händelsen. Detta ID är endast unikt på samma dator mellan omstarter. |
+| `InitiatingProcessIntegrityLevel` | strängvärdet | Integritets nivå för den process som initierade händelsen. Windows tilldelar integritets nivåer för processer baserat på vissa egenskaper, till exempel om de startades från en nedladdning via Internet. Dessa integritets nivåer påverkar behörigheter för resurser |
+| `InitiatingProcessTokenElevation` | strängvärdet | Tokentyp som anger närvaron av en behörighets höjning (User Access Control) som tillämpas på processen som initierade händelsen |
+| `InitiatingProcessSHA1` | strängvärdet | SHA-1 av processen (bildfil) som initierade händelsen |
+| `InitiatingProcessSHA256` | strängvärdet | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt. |
+| `InitiatingProcessMD5` | strängvärdet | MD5-hash för processen (bildfil) som initierade händelsen |
+| `InitiatingProcessFileName` | strängvärdet | Namn på processen som initierade händelsen |
+| `InitiatingProcessId` | signera | Process-ID (PID) för processen som initierade händelsen |
+| `InitiatingProcessCommandLine` | strängvärdet | Kommando rad som används för att köra processen som initierade händelsen |
+| `InitiatingProcessCreationTime` | datetime | Datum och tid när processen som initierade händelsen startade |
+| `InitiatingProcessFolderPath` | strängvärdet | Mapp som innehåller processen (bildfil) som initierade händelsen |
+| `InitiatingProcessParentId` | signera | Process-ID (PID) för den överordnade processen som skapade processen för händelsen |
+| `InitiatingProcessParentFileName` | strängvärdet | Namnet på den överordnade process som skapade processen som är ansvarig för händelsen |
+| `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade för processen som är ansvarig för händelsen startade |
+| `ReportId` | tids | Händelse identifierare baserad på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna enhets namn och tidsstämpel |
+| `AppGuardContainerId` | strängvärdet | Identifierare för den virtualiserade behållare som används av Application Guard för att isolera webbläsaren |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

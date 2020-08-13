@@ -15,184 +15,185 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om de anti-phishing-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+description: Administratörer kan lära sig mer om de anti-nätfiske-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
+ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754670"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652723"
 ---
-# <a name="anti-phishing-policies-in-microsoft-365"></a>Principer för bekämpning av nätfiske i Microsoft 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
-Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor och Office 365 Advanced Threat Protection-organisationer (Office 365 ATP).
+Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor och Office 365 Avancerat skydd (Office 365 ATP)-organisationer.
 
-ATP:s principer för nätfiske är endast tillgängliga i organisationer som har Office 365 ATP. Till exempel:
+ATP anti-phishing-principer är bara tillgängliga i organisationer som har Office 365 ATP. Till exempel:
 
-- Microsoft 365 Enterprise E5, Microsoft 365 Utbildning A5, etc.
+- Microsoft 365 Enterprise, E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
-- [Office 365 ATP som tillägg](https://products.office.com/exchange/advance-threat-protection)
+- [Office 365 ATP som ett tillägg](https://products.office.com/exchange/advance-threat-protection)
 
-Alla andra organisationer har policyer mot nätfiske.
+Alla andra organisationer har skydd mot nätfiske.
 
-Skillnaderna på hög nivå mellan anti-phishing-policyer och ATP-principer mot nätfiske beskrivs i följande tabell:
+De höga skillnaderna mellan anti-nätfiske-principer och Antivirus principer för ATP beskrivs i följande tabell:
 
-||||
+****
+
+|Funktion|Principer för skydd mot nätfiske|AntiPhishing-principer för ATP|
 |---|:---:|:---:|
-|**Funktion**|**Principer för skydd mot nätfiske**|**ATP:s policyer för phishing-phishing**|
-|Skapas automatiskt standardprincip|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Automatiskt skapad standard policy|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Skapa anpassade principer|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Principinställningar<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Princip inställningar<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Inställningar för personifiering||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Spoof-inställningar|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Avancerade tröskelvärden för nätfiske||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Inställningar för förfalskning|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Avancerade nät fiske trösklar||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>I standardprincipen är principnamnet och beskrivningen skrivskyddade (beskrivningen är tom) och du kan inte ange vem principen ska gälla för (standardprincipen gäller för alla mottagare).
+<sup>\*</sup>I standard principen är princip namnet och beskrivningen skrivskyddad (beskrivningen är tom) och du kan inte ange vem principen gäller för (standard policyn gäller för alla mottagare).
 
-Information om hur du konfigurerar principer mot nätfiske finns i följande avsnitt:
+Information om hur du konfigurerar principer för nätfiske finns i följande avsnitt:
 
-- [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md)
+- [Konfigurera AntiPhishing-principer i EOP](configure-anti-phishing-policies-eop.md)
 
-- [Konfigurera ATP-principer för phishing-phishing i Microsoft 365](configure-atp-anti-phishing-policies.md)
+- [Konfigurera AntiPhishing-principer för ATP i Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-I resten av det här avsnittet beskrivs de inställningar som är tillgängliga i anti-phishing-principer och ATP-principer för nätfiske.
+Resten av det här avsnittet beskriver vilka inställningar som är tillgängliga i principer för nätfiske och Antivirus policy.
 
-## <a name="spoof-settings"></a>Spoof-inställningar
+## <a name="spoof-settings"></a>Inställningar för förfalskning
 
-Förfalskning är när Från-adressen i ett e-postmeddelande (avsändarens adress som visas i e-postklienter) inte matchar e-postkällans domän. Mer information om förfalskning finns i Skydd mot förfalskning [i Microsoft 365](anti-spoofing-protection.md).
+Förfalskning är när från-adressen i ett e-postmeddelande (avsändar adressen som visas i e-postklienter) inte stämmer överens med e-postkällans domän. Mer information om förfalskning finns i skydd mot [förfalskning i Microsoft 365](anti-spoofing-protection.md).
 
-Följande falska inställningar är tillgängliga i anti-phishing-policyer och ATP-principer för nätfiske:
+Följande inställningar för förfalskning är tillgängliga i principer för nätfiske och stöldskydd med ATP:
 
-- **Skydd mot förfalskning**: Aktiverar eller inaktiverar skydd mot förfalskning. Vi rekommenderar att du lämnar den aktiverad. Du använder **falska underrättelsepolicy för** att tillåta eller blockera specifika förfalskade interna och externa avsändare. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
+- **Skydd mot förfalskning**: aktiverar eller inaktiverar skydd mot förfalskning. Vi rekommenderar att du låter den vara aktive rad. Du använder **principen för förfalsknings information** för att tillåta eller blockera viss falsk intern och extern avsändare. Mer information finns i [Konfigurera förfalskningsinformation i Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Förfalskade inställningar är aktiverade som standard i standardpolicyn mot nätfiske i EOP, standardpolicyn för ATP-phishing och i nya anpassade anti-phishing-principer eller ATP-principer mot nätfiske som du skapar. <br/><br/> Du behöver inte inaktivera förfalskningsskydd om MX-posten inte pekar på Microsoft 365. du aktiverar utökad filtrering för kontakter i stället. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Inställningar för förfalskning är aktiverat som standard i standard principen för anti-nätfiske i EOP, standard för ATP-säkerhetspolicyn, och i nya anpassade Antivirus principer eller ATP-nätfiske-principer som du skapar. <br/><br/> Du behöver inte inaktivera skydd mot förfalskning om din MX-post inte pekar på Microsoft 365; du aktiverar bättre filtrering för kopplingar i stället. Anvisningar finns i [utökad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-  För meddelanden från blockerade förfalskade avsändare kan du också ange vilken åtgärd som ska vidtas för meddelandena:
+  För meddelanden från blockerade avsändare som inte är falska kan du även ange vilken åtgärd som ska vidtas:
 
-  - **Flytta meddelande till mappen Skräppost:** Det här är standardvärdet. Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad i postlådan (det är aktiverat som standard). Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Flytta meddelandet till mappen skräp post**: det här är standardvärdet. Meddelandet skickas till post lådan och flyttas till mappen skräp post. I Exchange Online flyttas meddelandet till mappen skräp post om skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Karantän meddelandet**: Skickar meddelandet till karantän i stället för de avsedda mottagarna. Mer information om karantän finns i artiklarna om följande ämnen:
+  - **Karantän meddelandet**: skickar meddelandet till karantän i stället för avsedda mottagare. Mer information om karantän finns i artiklarna om följande ämnen:
 
     - [Karantän i Microsoft 365](quarantine-email-messages.md)
     - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Söka efter och släppa meddelanden i karantän som användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Hitta och släppa meddelanden i karantän som en användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Oautentiserade avsändaren**: Aktiverar eller inaktiverar oidentifierad avsändandeidentifiering i Outlook. Specifikt:
+- **Oautentiserad avsändare**: aktiverar eller inaktiverar identifiering av avsändare i Outlook. Verkligen
 
-  - Ett frågetecken (?) läggs till i avsändarens foto om meddelandet inte skickar SPF- eller DKIM-kontroller **och** meddelandet inte skickar DMARC eller [sammansatt autentisering](email-validation-and-authentication.md#composite-authentication).
+  - Ett frågetecken (?) läggs till avsändarens foto om meddelandet inte tillåter SPF-eller DKIM-kontroller **och** meddelandet klarar inte DMARC eller [sammansatt](email-validation-and-authentication.md#composite-authentication)behörighet.
 
-  - Via-taggen (chris@contoso.com <u>via</u> michelle@fabrikam.com) läggs till om domänen i från-adressen (meddelandeavsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **MAIL FROM-adressen.** Mer information om dessa adresser finns i [En översikt över e-postmeddelandenstandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+  - Via-taggen (chris@contoso.com <u>via</u> Michelle@fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
 
-  Om du vill förhindra att dessa identifierare läggs till i meddelanden från specifika avsändare har du följande alternativ:
+  För att förhindra att dessa identifierare läggs till i meddelanden från specifika avsändare har du följande alternativ:
 
-  - Låt avsändaren förfalska i falska underrättelsepolicyn. Instruktioner finns [i Konfigurera falska underrättelser i Microsoft 365](learn-about-spoof-intelligence.md).
+  - Tillåt avsändaren till förfalskning i policyn för förfalsknings information. Anvisningar finns i [Konfigurera förfalsknings intelligens i Microsoft 365](learn-about-spoof-intelligence.md).
 
-  - [Konfigurera e-postautentisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarendomänen.
+  - [Konfigurera e-postauktorisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarens domän.
   
-    - För frågetecknet i avsändarens foto är SPF eller DKIM de viktigaste.
-    - För via-taggen bekräftar du domänen i DKIM-signaturen eller **e-post från-adressen** matchar (eller är en underdomän för) domänen i Från-adressen.
+    - För frågetecknet i avsändarens foto, SPF eller DKIM är de viktigaste.
+    - För via-taggen bekräftar du domänen i DKIM signatur eller **e-** postadressen matchar (eller är en under domän av) domänen i från-adressen.
 
-  Mer information finns [i Identifiera misstänkta meddelanden i Outlook.com och Outlook på webben](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  Mer information finns i [identifiera misstänkta meddelanden i Outlook.com och Outlook på webben](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
-## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Exklusiva inställningar i ATP:s principer för phishing-phishing
+## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Exklusiva inställningar i Antivirus policys för ATP
 
-I det här avsnittet beskrivs de principinställningar som bara är tillgängliga i ATP:s principer för nätfiske.
+I det här avsnittet beskrivs de princip inställningar som endast är tillgängliga i principer för Antivirus-nätfiske.
 
 > [!NOTE]
-> Som standard är de exklusiva ATP-inställningarna inte konfigurerade eller aktiverade, inte ens i standardprincipen. Om du vill dra nytta av dessa funktioner måste du aktivera och konfigurera dem i standardprincipen för ATP-phishing, eller skapa och konfigurera anpassade ATP-principer för phishing.
+> Standardinställningen för ATP är inte konfigurerad eller aktive rad, även i standard principen. Om du vill utnyttja de här funktionerna måste du aktivera och konfigurera dem i standard policyn för ATP-nätfiske, eller så kan du skapa och konfigurera anpassade Antivirus principer för ATP.
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Principinställningar i ATP:s principer för nätfiske
+### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Princip inställningar i policyer för Stöldskydd med ATP
 
-Följande principinställningar är endast tillgängliga i ATP:s principer för nätfiske:
+Följande princip inställningar är bara tillgängliga i principer för Stöldskydd med ATP:
 
-- **Namn**: Du kan inte byta namn på standardpolicyn mot nätfiske, men du kan namnge och byta namn på anpassade principer som du skapar.
+- **Namn**: det går inte att byta namn på standard policyn för anti-phishing, men du kan namnge och byta namn på anpassade principer som du skapar.
 
-- **Beskrivning** Du kan inte lägga till en beskrivning i standardpolicyn mot nätfiske, men du kan lägga till och ändra beskrivningen för anpassade principer som du skapar.
+- **Beskrivning** Du kan inte lägga till en beskrivning av standard policyn för anti-nätfiske, men det går att lägga till och ändra beskrivningen för anpassade principer som du skapar.
 
-- **Används på**: Identifierar interna mottagare som ATP:s anti-phishing-policy gäller för. Det här värdet krävs i anpassade principer och inte tillgängligt i standardprincipen (standardprincipen gäller för alla mottagare).
+- **Tillämpat på**: identifierar interna mottagare som antivirus policyn för ATP gäller. Det här värdet är obligatoriskt i anpassade principer och är inte tillgängligt i standard principen (standard policyn gäller för alla mottagare).
 
     Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
-  - **Mottagaren är**: En eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen.
-  - **Mottagaren är medlem i**: En eller flera grupper i organisationen.
-  - **Mottagardomänen är**: En eller flera av de konfigurerade godkända domänerna i Microsoft 365.
+  - **Mottagare**: en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
+  - **Mottagaren är medlem i**en eller flera grupper i din organisation.
+  - **Mottagar domänen är**: en eller flera av de godkända domänerna i Microsoft 365.
 
-  - **Utom när**: Undantag för regeln. Inställningarna och beteendet är exakt som villkoren:
+  - **Förutom när**: undantag för regeln. Inställningarna och beteendet är exakt som villkor:
 
     - **Mottagaren är**
     - **Mottagaren är medlem i**
-    - **Mottagardomänen är**
+    - **Mottagar domänen är**
 
-### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Inställningar för personifiering i ATP:s principer för phishing-phishing
+### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Inställningar för personifiering i principer för Stöldskydd med ATP
 
-Personifiering är där avsändaren eller avsändarens e-postdomän i ett meddelande liknar en riktig avsändare eller domän:
+Personifiering är den plats där avsändaren eller avsändarens e-postdomän i ett meddelande ser ut ungefär som en riktig avsändare eller domän:
 
 - Ett exempel på personifiering av domänen contoso.com är ćóntoso.com.
 
-- Ett exempel personifiering av användaren michelle@contoso.com är michele@contoso.com.
+- Ett exempel på personifiering av användaren michelle@contoso.com är michele@contoso.com.
 
-En personifierad domän kan annars anses vara legitim (registrerad domän, konfigurerade e-postautentiseringsposter osv.), förutom att dess avsikt är att vilseleda mottagare.
+En personifierad domän kan på annat sätt anses vara legitim (registrerad domän, konfigurerade e-postautentiseringsmetoder, etc.), förutom att det är bra att vilseleda mottagare.
 
-Följande inställningar för personifiering är endast tillgängliga i ATP:s principer för phishing:
+Följande inställningar för personifiering är bara tillgängliga i principer för Stöldskydd mot nätfiske:
 
-- **Användare att skydda**: Förhindrar att angivna interna eller externa användare personifieras. Till exempel chefer (interna) och styrelseledamöter (externa). Du kan lägga till upp till 60 interna och externa adresser. Den här listan över skyddade användare skiljer sig från listan över mottagare som principen gäller för i inställningen **Tillämpad** på.
+- **Användare att skydda**: hindrar angivna interna eller externa användare från att personifieras. Till exempel chefer (interna) och styrelse medlemmar (extern). Du kan lägga till upp till 60 interna och externa adresser. Den här listan med skyddade användare skiljer sig från listan över mottagare som principen gäller för i inställningen **tillämpad** .
 
-  Du kan till exempel ange Felipe Apodaca (felipea@contoso.com) som en skyddad användare i en princip som gäller för gruppen Chefer. Inkommande meddelanden som skickas till medlemmar i gruppen Chefer där Felipe Apodaca personifieras kommer att hanteras av principen (den åtgärd som du konfigurerar för personifierade användare).
+  Du kan till exempel ange Felipe Apodaca (felipea@contoso.com) som en skyddad användare i en princip som gäller för gruppen chefer. Inkommande meddelanden som skickas till medlemmar i gruppen chefer där Felipe Apodaca är personifierat behandlas av principen (den åtgärd som du konfigurerar för personifierade användare).
 
-- **Domäner som ska skyddas**: Förhindra att de angivna domänerna personifieras. Till exempel alla domäner som du äger[(accepterade domäner)](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)eller specifika domäner (domäner som du äger eller partnerdomäner). Den här listan över skyddade domäner skiljer sig från listan över domäner som principen gäller för i inställningen **Tillämpad** på.
+- **Domäner att skydda**: förhindra att angivna domäner personifieras. Till exempel alla domäner som du äger ([godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) eller specifika domäner (domäner som du äger eller partner domäner). Den här listan över skyddade domäner skiljer sig från listan över domäner som principen gäller för i inställningen **tillämpad** .
 
-  Du kan till exempel ange tailspintoys.com som en skyddad domän i en princip som gäller för medlemmar i gruppen Chefer. Inkommande meddelanden som skickas till medlemmar i gruppen Chefer där tailspintoys.com personifieras kommer att hanteras av principen (den åtgärd som du konfigurerar för personifierade domäner).
+  Du kan till exempel ange tailspintoys.com som en skyddad domän i en princip som gäller för medlemmar i gruppen chefer. Inkommande meddelanden som skickas till medlemmar i gruppen chefer där tailspintoys.com är personifierat behandlas av principen (den åtgärd som du konfigurerar för personifierade domäner).
 
-- **Åtgärder för skyddade användare eller domäner**: Välj vilken åtgärd som ska vidtas för inkommande meddelanden som innehåller personifieringsförsök mot skyddade användare och skyddade domäner i principen. Du kan ange olika åtgärder för personifiering av skyddade användare jämfört med personifiering av skyddade domäner:
+- **Åtgärder för skyddade användare eller domäner**: Välj vilken åtgärd som ska vidtas i inkommande meddelanden som innehåller användnings försök mot de skyddade användarna och skyddade domäner i principen. Du kan ange olika åtgärder för personifiering av skyddade användare kontra personifiering av skyddade domäner:
 
-  - **Använd inga åtgärder**
+  - **Tillämpa inte någon åtgärd**
 
-  - **Omdirigera meddelande till andra e-postadresser**: Skickar meddelandet till de angivna mottagarna i stället för de avsedda mottagarna.
+  - **Omdirigera meddelande till andra e-postadresser**: skickar meddelandet till mottagarna i stället för avsedda mottagare.
 
-  - **Flytta meddelande till mappen Skräppost:** Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad i postlådan (det är aktiverat som standard). Mer information finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Flytta meddelandet till mappen skräp post**: meddelandet skickas till post lådan och flyttas till mappen skräp post. I Exchange Online flyttas meddelandet till mappen skräp post om skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Karantän meddelandet**: Skickar meddelandet till karantän i stället för de avsedda mottagarna. Mer information om karantän finns i artiklarna om följande ämnen:
+    - **Karantän meddelandet**: skickar meddelandet till karantän i stället för avsedda mottagare. Mer information om karantän finns i artiklarna om följande ämnen:
 
     - [Karantän i Microsoft 365](quarantine-email-messages.md)
     - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Söka efter och släppa meddelanden i karantän som användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Hitta och släppa meddelanden i karantän som en användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  - **Leverera meddelandet och lägg till andra adresser på raden Hemlig kopia:** Leverera meddelandet till de avsedda mottagarna och leverera meddelandet tyst till de angivna mottagarna.
+  - **Leverera meddelandet och Lägg till andra adresser till raden Hemlig kopia**: skicka meddelandet till de avsedda mottagarna och tyst skicka meddelandet till mottagarna.
 
-  - **Ta bort meddelandet innan det levereras:** Tar tyst bort hela meddelandet, inklusive alla bifogade filer.
+  - **Ta bort meddelandet innan det levereras**: det tar tyst bort hela meddelandet, inklusive alla bifogade filer.
 
-- **Säkerhetstips**: Aktiverar eller inaktiverar följande säkerhetstips för personifiering som visas meddelanden som misslyckas med personifieringskontroller:
+- **Säkerhets tips**: aktiverar eller inaktiverar följande säkerhets tips som kommer att visas meddelanden som inte fungerar:
 
-  - **Personifierade användare**: Från-adressen innehåller en skyddad användare.
-  - **Personifierade domäner**: Från-adressen innehåller en skyddad domän.
-  - **Ovanliga tecken**: Från-adressen innehåller ovanliga teckenuppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
+  - **Personifierade användare**: från-adressen innehåller en skyddad användare.
+  - **Personifierade domäner**: från-adressen innehåller en skyddad domän.
+  - **Ovanliga tecken**: från-adressen innehåller ovanliga tecken uppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
 
-- **Mailbox intelligence**: Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med sina frekventa kontakter. Den här inställningen hjälper AI att skilja mellan legitim och förfalskad e-post från dessa kontakter. Postlådeinformation är endast tillgänglig för Exchange Online-postlådor.
+- **Post låda**: aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användarnas e-postmönster med deras vanliga kontakter. Den här inställningen hjälper AI-åtskillnaden mellan legitim och falsk e-post från de kontakterna. Post låda-intelligens är bara tillgängligt för Exchange Online-postlådor.
 
-- **Informationsskydd för postlådans intelligens:** Aktiverar eller inaktiverar förbättrade personifieringsresultat baserat på varje användares individuella avsändare. Den här intelligensen gör det möjligt för Microsoft 365 att anpassa identifiering av användarens personifiering och bättre hantera falska positiva identifieringar. När användaren personifiera upptäcks, kan du definiera en specifik åtgärd att vidta på meddelandet:
+- **Post låda baserat på postskydd**: aktiverar eller inaktiverar utökade personifieringsnivå utifrån användarens enskilda avsändare. Med den här intelligensen kan Microsoft 365 anpassa identifiering av användarautentisering och bättre bevarade falsk identifiering. När personifiering av användare identifieras kan du ange en specifik åtgärd att vidta i meddelandet:
 
-  - **Använd inga åtgärder**
-  - **Omdirigera meddelande till andra e-postadresser**
-  - **Flytta meddelande till mappen Skräppost**
-  - **Karantän meddelandet**
+  - **Tillämpa inte någon åtgärd**
+  - **Omdirigera meddelanden till andra e-postadresser**
+  - **Flytta meddelandet till mappen skräp post**
+  - **Sätt i karantän meddelandet**
   - **Leverera meddelandet och lägga till andra adresser på raden Hemlig kopia**
   - **Ta bort meddelandet innan det levereras**
 
-- **Betrodda avsändare och domäner**: Undantag från inställningarna för personifieringsskydd. Meddelanden från angivna avsändare och avsändande domäner klassificeras aldrig som personifieringsbaserade attacker av principen. Med andra ord tillämpas inte åtgärden för skyddade avsändare, skyddade domäner eller intelligensskydd för postlådor på dessa betrodda avsändare eller avsändare. Den maximala gränsen för dessa listor är cirka 1000 poster.
+- **Betrodda avsändare och domäner**: undantag till inställningarna för skydd mot obehörig person. Meddelanden från angivna avsändare och avsändare klassificeras aldrig som personifieringsnivå av principen. Med andra ord tillämpas inte åtgärden för skyddade avsändare, skyddade domäner eller post lådans informations skydd för dessa betrodda avsändare eller avsändare. Högsta tillåtna gräns för dessa listor är ungefär 1000 poster.
 
-### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Avancerade tröskelvärden för nätfiske i ATP:s principer för nätfiske
+### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Avancerade nät fiske trösklar i ATP-nätfiske-principer
 
-Följande avancerade tröskelvärden för nätfiske är endast tillgängliga i ATP:s principer för phishing för att kontrollera känsligheten för att tillämpa maskininlärningsmodeller på meddelanden för att fastställa en phishing-dom:
+Följande avancerade nät fiske trösklar är bara tillgängliga i principer för ATP-nätfiske för att kontrol lera känsligheten för att använda dator utbildnings modeller på meddelanden för att fastställa en nät fiske Verdict:
 
-- **1 - Standard**: Detta är standardvärdet. Hur allvarlig åtgärden som vidtas på meddelandet är beror på graden av förtroende för att meddelandet är nätfiske (lågt, medium, högt eller mycket högt förtroende). Till exempel har meddelanden som identifieras som nätfiske med mycket hög grad av förtroende de allvarligaste åtgärderna, medan meddelanden som identifieras som nätfiske med låg grad av förtroende har mindre allvarliga åtgärder.
+- **1-standard**: det här är standardvärdet. Allvarlighets graden för den åtgärd som tas i meddelandet beror på hur mycket du är säker på att meddelandet är nätfiske (Low, medium, High eller mycket hög exakthet). Meddelanden som identifieras som nätfiske med en mycket stor exakthet har de svåraste åtgärderna, medan meddelanden som identifieras som nätfiske med låg exakthet har färre omfattande åtgärder.
 
-- **2 - Aggressiv**: Meddelanden som identifieras som nätfiske med en hög grad av förtroende behandlas som om de identifierades med en mycket hög grad av förtroende.
+- **2 – aggressiv**: meddelanden som identifieras som nätfiske med en hög exakthet behandlas som om de identifierades med en mycket stor tillförlitlighet.
 
-- **3 - Mer aggressiva:** Meddelanden som identifieras som nätfiske med en medelhög eller hög grad av förtroende behandlas som om de identifierades med en mycket hög grad av förtroende.
+- **3-fler aggressiva**: meddelanden som identifieras som nätfiske med medelhög eller hög tillförlitlighet behandlas som om de har identifierats med mycket stor tillförlitlighet.
 
-- **4 - Mest aggressiva:** Meddelanden som identifieras som nätfiske med låg, medel eller hög grad av förtroende behandlas som om de identifierades med en mycket hög grad av förtroende.
+- **4 – de flesta aggressiva**: meddelanden som identifieras som nätfiske med en låg, medels Tor eller hög exakthet behandlas som om de identifierades med en mycket stor exakthet.
 
-Risken för falska positiva identifieringar (bra meddelanden markerade som dåliga) ökar när du ökar den här inställningen. Information om de rekommenderade inställningarna finns i [Office ATP:s principinställningar för nätfiske](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+Chansen att falska positiva (negativa meddelanden är markerade som dåliga) ökar när du ökar den här inställningen. Information om rekommenderade inställningar finns i inställningar för [Office ATP-Antivirus princip](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).

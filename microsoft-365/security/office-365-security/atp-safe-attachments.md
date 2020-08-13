@@ -1,5 +1,5 @@
 ---
-title: ATP säkra bilagor
+title: Säkra filer för ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,56 +17,60 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig mer om funktionen BETRODDa bifogade filer för Office 365 och hur du skaffar funktionen för din prenumeration.
-ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+description: I den här artikeln får du lära dig mer om funktionen för säker åtkomst för varje ATP för Office 365 och hur du får till gång till prenumerationen.
+ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754766"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656999"
 ---
-# <a name="atp-safe-attachments"></a>ATP säkra bilagor
+# <a name="atp-safe-attachments"></a>Säkra filer för ATP
 
-## <a name="overview-of-office-365-atp-safe-attachments"></a>Översikt över office 365 ATP-säkra bilagor
+## <a name="overview-of-office-365-atp-safe-attachments"></a>Översikt över Office 365 ATP-säkra bifogade filer
 
-ATP Safe Attachments (tillsammans med [ATP Safe Links)](atp-safe-links.md)är en del av [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP). Funktionen Betrodda atp-filer kontrollerar om e-postbilagor är skadliga och vidtar sedan åtgärder för att skydda din organisation. Funktionen BETRODDa bifogade filer för ATP skyddar din organisation enligt [ATP:s principer för säkra bilagor](set-up-atp-safe-attachments-policies.md) som anges av dina globala administratörer eller säkerhetsadministratörer.
+ATP-säkra bifogade filer (tillsammans med [säkra anslutningar för ATP](atp-safe-links.md)) är en del av [Office 365 Avancerat skydd](office-365-atp.md) (ATP). Det säkraste alternativet för att se om e-postbilagor är skadliga och vidtar åtgärder för att skydda din organisation. Det säkraste alternativet för att skydda via säkerhets meddelanden skyddar din organisation enligt [principer för säkert bifogade filer för ATP](set-up-atp-safe-attachments-policies.md) som anges av din globala eller dina administratörer.
 
-ATP-skydd kan också utökas till filer i SharePoint Online, OneDrive för företag och Microsoft Teams. Mer information finns i [Office 365 Advanced Threat Protection för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
+ATP-skydd kan även utökas till filer i SharePoint Online, OneDrive för företag och Microsoft Teams. Mer information finns i [Office 365 Avancerat skydd för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-## <a name="how-to-get-atp-safe-attachments"></a>Så här får du ATP Säkra bilagor
+## <a name="how-to-get-atp-safe-attachments"></a>Skaffa säkra filer för ATP
 
-Kontrollera först att din prenumeration innehåller [avancerat skydd mot hot](office-365-atp.md). ATP ingår i prenumerationer, till exempel [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 E5, Office 365 A5 osv. Om din organisation har en Microsoft 365-prenumeration som inte innehåller Office 365 ATP kan du eventuellt köpa ATP som ett tillägg. Mer information finns i [Office 365 Advanced Threat Protection-abonnemang och priser](https://products.office.com/exchange/advance-threat-protection) och beskrivningen av Office [365 Advanced Threat Protection Service](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+Kontrol lera först att ditt abonnemang inkluderar [Avancerat skydd](office-365-atp.md). ATP ingår i abonnemang, till exempel [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 E5, Office 365 A5, etc. Om din organisation har en Microsoft 365-prenumeration som inte innehåller Office 365 ATP kan du eventuellt köpa ATP som ett tillägg. Mer information finns i Office 365-prenumerationer [och priser för avancerade hot skydd](https://products.office.com/exchange/advance-threat-protection) samt [Office 365-beskrivningen för avancerat skydd för hotet](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-Kontrollera sedan att principerna för betrodda bilagor är definierade. (Se Konfigurera principer för [betrodda bilagor i Office 365)](set-up-atp-safe-attachments-policies.md) ATP-funktioner för säkra bilagor är aktiva när:
+Se sedan till att dina principer för säkerhet via ATP har definierats. (Se [Konfigurera Office 365-principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md)) De säkraste bilage funktionerna är aktiva när:
 
-- ATP Principer för säkra bifogade filer har ställts in. (Se Konfigurera principer för [betrodda bilagor vid ATP i Office 365](set-up-atp-safe-attachments-policies.md).)
+- Principer för säker säkerhet för ATP är inställda. (Mer information finns i [Konfigurera principer för säkra bifogade säkerhets meddelanden i Office 365](set-up-atp-safe-attachments-policies.md).)
 
-- Användare har loggat in med sitt arbets- eller skolkonto. (Se [Logga in på Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Användare har loggat in med sitt arbets-eller skol konto. (Mer information finns i [Logga in på Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
-Om du vill definiera (eller redigera) ATP-principer måste du tilldelas en lämplig roll. Några exempel beskrivs i följande tabell:
+Om du vill definiera (eller redigera) ATP-principer måste du ha en lämplig roll. Några exempel beskrivs i följande tabell:
 
-|Roll|Var/hur tilldelas|
-|---------|---------|
-|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Läs [mer om microsoft 365-administratörsroller.)](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|Säkerhetsadministratör|Administrationscenter för Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Hantering av Exchange Online-organisation|Administrationscenter för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdlets (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|Roll|Där/hur kopplat|
+|---|---|
+|global administratör|Den person som registrerar sig för att köpa Microsoft 365 är en global administratör som standard. (Mer information finns i [om administratörs roller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Säkerhets administratör|Azure Active Directory-administratörs Center ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Organisations hantering i Exchange Online|Administrations Center för Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>eller <br>  PowerShell-cmdletar (se [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Hur man vet om ATP Säkra bilagor skydd är på plats
+## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Så här vet du om säkerhet för säkerhet för säkerhets skull är på plats
 
-När du har [definierat (eller granskat) dina ATP Safe Attachments-principer](set-up-atp-safe-attachments-policies.md)är ett bra sätt att se hur tjänsten fungerar genom att [visa rapporter för avancerat skydd mot hot](view-reports-for-atp.md).
+När du har [definierat (eller granskat) dina principer för säkrat ATP-filer](set-up-atp-safe-attachments-policies.md), ett bra sätt att se hur tjänsten fungerar är [att visa rapporter för avancerat skydd](view-reports-for-atp.md).
 
-I följande tabell beskrivs några exempelscenarier. I alla dessa fall antar vi att organisationen har en Microsoft 365-prenumeration som innehåller avancerat skydd mot hot.
+I följande tabell beskrivs några exempel scenarier. I alla de här fallen antar vi att organisationen har en Microsoft 365-prenumeration som innehåller Avancerat skydd.
 
-|**Exempel scenario**|**Gäller atp-skydd för säkra bilagor i det här fallet?**|
-|:-----|:-----|
-|Pats organisation har Office 365 E5, men ingen har definierat några principer för ATP Safe Attachments ännu.|Nej. Även om funktionen är tillgänglig måste minst en ATP-princip för säkra bilagor definieras för att ATP-skydd för säkra bilagor ska vara på plats.|
-|Lee är anställd på försäljningsavdelningen på Contoso. Lees organisation har en ATP Safe Attachments-policy som endast gäller ekonomianställda.|Nej. I det här fallet skulle ekonomianställda ha ATP Safe Attachments skydd, men andra anställda, inklusive försäljningsavdelningen, skulle inte förrän principer som innehåller dessa grupper har definierats.|
-|Igår, en administratör på Jean organisation inrätta en ATP säkra bilagor princip som gäller för alla anställda. Tidigare idag fick Jean ett e-postmeddelande som innehåller en bifogad fil.|Ja. I det här exemplet har Jean en licens för avancerat skydd mot hot och en ATP-princip för säkra bilagor som innehåller Jean har definierats. Det tar vanligtvis cirka 30 minuter innan en ny princip börjar gälla över datacenter. eftersom en dag har gått i detta fall bör politiken vara i kraft.|
-|Chris organisation har Office 365 E5 med ATP Safe Attachments-principer för alla i organisationen. Chris får ett e-postmeddelande som har en bifogad fil och vidarebefordrar meddelandet till andra som är utanför organisationen.|ATP-skydd för säkra bilagor finns på plats för meddelanden som Chris tar emot. Om mottagarnas organisationer också har ATP-principer för säkra bilagor, kommer meddelandet att Chris vidarebefordrar att omfattas av dessa principer när det vidarebefordrade meddelandet anländer.|
-|Jamies organisation har ATP-principer för säkra bifogade filer på plats och [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) har aktiverats. Janne förutsätter att alla filer i SharePoint Online har skannats och är säker att öppna eller hämta.|ATP-skydd för säkra bilagor finns på plats enligt de principer som har definierats. Detta innebär dock inte att varenda fil i SharePoint Online, OneDrive för företag eller Microsoft Teams genomsöks. (Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).)|
+****
 
-## <a name="submitting-files-for-malware-analysis"></a>Skicka in filer för analys av skadlig kod
+|Exempel på scenario|Gäller säkerhetslovade skydd mot bifogade filer i det här fallet?|
+|---|---|
+|Pat organisation har Office 365 E5, men ingen har definierat några principer för betrodda ATP-filer.|Nej. Även om funktionen är tillgänglig måste minst en policy för säkerhet för flera säkerhets meddelanden per ATP vara definierad för att skydda säkerheten för tillgängligt.|
+|Aaron Lee är en anställd på försäljnings avdelningen på contoso. Aaron Lee organisation har en policy för säker fil för ATP som gäller endast för ekonomiska medarbetare.|Nej. I det här fallet skulle de anställda ha ATP Safe Attachments, men andra anställda, inklusive försäljnings avdelningen, är inte förrän policyerna som innehåller dessa grupper har definierats.|
+|Igår, en administratör på Jean organisation som har en policy för säkerhet för ATP som gäller för alla anställda. Tidigare i dag fick Jean fått ett e-postmeddelande som innehåller en bifogad fil.|Ja. I det här exemplet har Jean en licens för avancerat skydd och en princip för säker användning av ATP med Jean har definierats. Det tar vanligt vis ungefär 30 minuter innan en ny princip börjar gälla i data centers. eftersom en dag har gått i det här fallet ska policyn vara aktiv.|
+|Chris organisation har Office 365 E5 med principer för säker bifogad fil med ATP för alla i organisationen. Chris får ett e-postmeddelande som innehåller en bifogad fil och vidarebefordrar meddelandet till andra personer utanför organisationen.|Säkerhet för ATP-säkerhet är på plats för meddelanden som Chris tar emot. Om mottagarnas organisationer också har principer för säkra bifogade filer (ATP), kommer meddelandet som Chris skickar tillbaka till dessa principer när det vidarebefordrade meddelandet anländer.|
+|Jannes organisation har principer för säkert bifogade filer på plats och [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md) har Aktiver ATS. Janne antar att alla filer i SharePoint Online har skannats och är säkra att öppna eller ladda ner.|Säkerhet för säkerhet per ATP är på plats enligt de principer som är definierade; men det betyder inte att alla filer i SharePoint Online, OneDrive för företag eller Microsoft Teams skannas. (Mer information finns i [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md).)|
+|
 
-- Om du får en fil som du vill be Microsoft att analysera besöker du [Skicka en fil för analys av skadlig kod](https://aka.ms/wdsi/submit).
+## <a name="submitting-files-for-malware-analysis"></a>Skicka filer för analys av skadlig program vara
 
-- Om du får ett e-postmeddelande (med eller utan en bifogad fil) som du vill skicka till Microsoft för analys läser du [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+- Om du får en fil som du vill be Microsoft att analysera kan du besöka [skicka en fil för analys av skadlig program vara](https://aka.ms/wdsi/submit).
+
+- Om du får ett e-postmeddelande (med eller utan en bifogad fil) som du vill skicka till Microsoft för analys kan du läsa [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).

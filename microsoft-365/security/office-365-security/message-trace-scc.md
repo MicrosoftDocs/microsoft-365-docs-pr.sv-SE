@@ -12,271 +12,274 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan använda meddelandespårning i Security & Compliance Center för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratörer kan använda meddelande spårning i säkerhets & efterlevnad för att ta reda på vad som hände med meddelanden.
+ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819346"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653647"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
-## <a name="message-trace-features"></a>Funktioner för meddelandespårning
+## <a name="message-trace-features"></a>Funktioner för meddelande spårning
 
-Meddelandespårning i Security & Compliance Center följer e-postmeddelanden när de färdas genom din Exchange Online-organisation. Du kan avgöra om ett meddelande togs emot, avvisades, sköts upp eller levererades av tjänsten. Den visar också vilka åtgärder som vidtogs på meddelandet innan det nådde sin slutliga status.
+Meddelande spårning i säkerhets & Compliance Center följer e-postmeddelanden när de reser genom Exchange Online-organisationen. Du kan bestämma om ett meddelande har tagits emot, nekats, uppskjuts eller levererats av tjänsten. Det visar också vilka åtgärder som vidtogs innan meddelandet nådde sin slutliga status.
 
-Meddelandespårning i Security & Compliance Center förbättrar den ursprungliga meddelandespårningen som var tillgänglig i Administrationscentret för Exchange (EAC). Du kan använda informationen från meddelandespårning för att effektivt svara på användarfrågor om vad som hände med meddelanden, felsöka problem med e-postflödet och validera principändringar.
+Meddelande spårning i säkerhets & uppfyller kraven på den ursprungliga meddelande spårningen i administrations centret för Exchange (UK). Du kan använda informationen från meddelande spårning för att effektivt besvara användar frågor om vad som hände med meddelanden, felsöka e-postflöden och validera princip ändringar.
 
 > [!NOTE]
-> • För att göra en meddelandespårning måste du vara medlem i rollgrupperna Organisation management, Compliance Management eller Help Desk. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Det maximala antalet meddelanden som visas i resultaten beror på vilken rapporttyp du har valt (mer information finns i avsnittet [Välj rapporttyp).](#choose-report-type) [Cmdlet get-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
+>
+> - Om du vill göra en meddelande spårning måste du vara medlem i roll grupperna organisations hantering eller supportavdelning. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+>
+> - Det maximala antalet meddelanden som visas i resultaten beror på vilken typ av rapport du valde (se avsnittet [Välj rapport typ](#choose-report-type) för detaljer). Cmdleten [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
 
-## <a name="open-message-trace"></a>Öppna meddelandespårning
+## <a name="open-message-trace"></a>Öppna meddelande spårning
 
-1. Öppna Säkerhets- & Compliance Center på <https://protection.office.com> .
+1. Öppna säkerhets & Compliance Center på <https://protection.office.com> .
 
-2. Expandera **e-postflödet**och välj sedan **Meddelandespårning**.
+2. Expandera **e-postflödet**och välj sedan **meddelande spårning**.
 
-## <a name="message-trace-page"></a>Sidan Spåra meddelanden
+## <a name="message-trace-page"></a>Sidan meddelande spårning
 
-Härifrån kan du starta en ny standardspårning genom att klicka på knappen **Starta en spårning.** Detta söker efter alla meddelanden för alla avsändare och mottagare under de senaste två dagarna. Du kan också använda en av de lagrade frågorna från de tillgängliga frågekategorierna och antingen köra dem som de är eller använda dem som utgångspunkter för dina egna frågor:
+Härifrån kan du starta en ny standard spårning genom att klicka på knappen **starta en spårning** . Detta söker efter alla meddelanden för alla avsändare och mottagare under de senaste två dagarna. Eller så kan du använda en av de lagrade frågorna från de tillgängliga kategorierna för frågor och antingen köra dem som de är eller använda dem som utgångs punkt för dina egna frågor:
 
-- **Standardfrågor**: Inbyggda frågor från Microsoft 365.
+- **Standard frågor**: inbyggda frågor som tillhandahålls av Microsoft 365.
 
-- **Anpassade frågor**: Frågor som sparats av administratörer i organisationen för framtida användning.
+- **Anpassade frågor**: frågor som sparats av administratörer i organisationen för framtida användning.
 
-- **Autosparade frågor**: De senaste tio senaste körningsfrågorna. Denna lista gör det enkelt att fortsätta där du slutade.
+- **Automatiskt sparade frågor**: de senaste tio vanligaste frågorna. Den här listan gör det enkelt att fortsätta där du slutade.
 
-På den här sidan finns också ett **avsnitt med nedladdningsbara rapporter** för de förfrågningar du har skickat in, samt själva rapporterna när det finns tillgängliga för nedladdning.
+Även på den här sidan finns ett område med **hämtnings bara rapporter** för de förfrågningar som du har skickat, samt själva rapporterna när det finns att ladda ner.
 
-## <a name="options-for-a-new-message-trace"></a>Alternativ för en ny meddelandespårning
+## <a name="options-for-a-new-message-trace"></a>Alternativ för en ny meddelande spårning
 
 ### <a name="filter-by-senders-and-recipients"></a>Filtrera efter avsändare och mottagare
 
-Standardvärdena är **Alla avsändare** och **Alla mottagare**, men du kan använda följande fält för att filtrera resultaten:
+Standardvärdena är **alla avsändare** och **alla mottagare**, men du kan använda följande fält för att filtrera resultat:
 
-- **Av dessa personer**: Klicka i det här fältet för att välja en eller flera avsändare från din organisation. Du kan också börja skriva ett namn och objekten i listan filtreras efter det du har skrivit, ungefär som hur en söksida fungerar.
+- **Av de här personerna**: Klicka i det här fältet för att välja en eller flera avsändare från din organisation. Du kan också börja skriva ett namn och objekten i listan filtreras efter vad du har skrivit, till exempel hur en Sök sida beter sig.
 
-- **Till dessa personer**: Klicka i det här fältet för att välja en eller flera mottagare i organisationen.
+- **Till de här personerna**: Klicka i det här fältet för att välja en eller flera användare i organisationen.
 
 > [!NOTE]
-> Du kan också skriva e-postadresser till externa avsändare och mottagare. Jokertecken stöds (till exempel `*@contoso.com` ), men du kan inte använda flera jokerteckenposter i samma fält samtidigt. <br/><br/> Du kan klistra in flera avsändare eller mottagarlistor avgränsade med semikolon ( `;` ). utrymmen ( `\s` ), vagnreturer ( `\r` ) eller nästa rader ( `\n` ).
+> Du kan också skriva e-postadresserna för externa avsändare och mottagare. Jokertecken stöds (till exempel `*@contoso.com` ), men du kan inte använda flera jokertecken i samma fält samtidigt. <br/><br/> Du kan klistra in flera avsändare eller mottagar listor avgränsade med semikolon ( `;` ). blank steg ( `\s` ), rad matningar ( `\r` ) eller Next-line ( `\n` ).
 
 ### <a name="time-range"></a>Tidsintervall
 
-Standardvärdet är **2 dagar,** men du kan ange datum-/tidsintervall på upp till 90 dagar. När du använder datum-/tidsintervall bör du tänka på följande:
+Standardvärdet är **2 dagar**, men du kan ange datum-och tidsintervall på upp till 90 dagar. Tänk på följande när du använder datum-och tidsintervall:
 
-- Som standard väljer du tidsintervallet i **skjutreglagevyn** med hjälp av en tidsrad. Du kan bara välja vilka dag- eller tidsinställningar som ska visas. Om du försöker välja ett mellanvärde fästs start-/slutbubblan mot närmaste visade inställning.
+- Som standard väljer du tidsintervall i vyn i **skjutreglaget** med en tids linje. Du kan bara välja de datum-och tids inställningar som visas. Om du försöker markera ett värde mellan två fäster du Start-och slut bubblan till den närmaste visade inställningen.
 
-  ![Ett skjutreglagetidsintervall i en ny meddelandespårning i Säkerhets- & Compliance Center](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Ett tidsintervall i en ny meddelande spårning i säkerhets & Compliance Center](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-  Men du kan också växla till **anpassad** vy där du kan ange **värdena startdatum** och **slutdatum** (inklusive tider) och du kan också välja **tidszonen** för datum-/tidsintervallet. Observera att **tidszonsinställningen** gäller både frågeindata och frågeresultat.
+  Men du kan också växla till den **anpassade** vyn där du kan ange värdena **start datum** och **slutdatum** (inklusive tid) och du kan också välja **tids zonen** för datum/tid-intervallet. Observera att inställningen för **tids zoner** gäller för både frågeresultatet och frågeresultaten.
 
-  ![Ett anpassat tidsintervall i en ny meddelandespårning i Security & Compliance Center](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Ett anpassat tidsintervall i en ny meddelande spårning i säkerhets & Compliance Center](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
-  I 10 dagar eller mindre är resultaten tillgängliga direkt som en **sammanfattande** rapport. Om du anger ett tidsintervall som är ännu något större än 10 dagar, kommer resultaten att försenas eftersom de bara är tillgängliga som en nedladdningsbar CSV-fil **(Förbättrad sammanfattning** eller **Utökade** rapporter).
+  I 10 dagar eller färre blir resultaten omedelbart tillgängliga som en **sammanfattnings** rapport. Om du anger ett tidsintervall som är ännu något mer än 10 dagar försenas resultatet eftersom det bara är tillgängligt som en CSV-fil som hämtas ( **utökad Sammanfattning** eller **utökade** rapporter).
 
-  Mer information om de olika rapporttyperna finns i avsnittet [Välj rapporttyp](#choose-report-type) i det här avsnittet.
+  Mer information om de olika rapport typerna finns i avsnittet [välja rapport typ](#choose-report-type) i det här avsnittet.
 
-  **Förbättrade**sammanfattnings- och utökade rapporter förbereds med hjälp av arkiverade meddelandespårningsdata, och det kan ta upp till flera timmar innan rapporten är tillgänglig för hämtning. Beroende på hur många andra administratörer som också har skickat rapportbegäranden ungefär samtidigt kan du också märka en fördröjning innan bearbetningen startar för din köbegäran.
+  **Obs!** förbättrad Sammanfattning och utökade rapporter är avsedda med arkiverade meddelanden och kan ta upp till flera timmar innan rapporten kan laddas ner. Beroende på hur många andra administratörer som också har lämnat rapport förfrågningar samtidigt kan du också få en fördröjning innan bearbetningen påbörjas för din kö.
 
-- Om du sparar en fråga i **skjutreglagevyn** sparar du det relativa tidsintervallet (till exempel 3 dagar från idag). Om du sparar en fråga i **anpassad** vy sparas det absoluta datum-/tidsintervallet (till exempel 2018-05-06 13:00 till 2018-05-08 18:00).
+- Om du sparar en fråga i vyn **Slider** sparas det relativa tidsintervallet (till exempel 3 dagar från idag). När du sparar en fråga i en **anpassad** vy sparas det absoluta datum-och tidsintervallet (till exempel 2018-05-06 13:00 till 2018-05-08 18:00).
 
 ### <a name="more-search-options"></a>Fler sökalternativ
 
-#### <a name="delivery-status"></a>Leveransstatus
+#### <a name="delivery-status"></a>Leverans status
 
-Du kan lämna standardvärdet **Alla** markerade, eller så kan du välja ett av följande värden för att filtrera resultaten:
+Du kan lämna standardvärdet **alla** markerat, eller så kan du välja ett av följande värden för att filtrera resultaten:
 
-- **Levererad**: Meddelandet har levererats till den avsedda destinationen.
+- **Levererat**: meddelandet skickades till destinationen.
 
-- **Väntar :** Leverans av meddelandet görs eller görs på nytt.
+- **Förestående**: meddelandets leverans försök pågår eller försök igen.
 
-- **Expanderad**: En mottagare av distributionsgrupper expanderades före leverans till de enskilda medlemmarna i gruppen.
+- **Expanderat**: en distributions grupp mottagare expanderades innan de köpte till de enskilda medlemmarna i gruppen.
 
-- **Misslyckades**: Meddelandet levererades inte.
+- **Misslyckades**: meddelandet levererades inte.
 
-- **I karantän**: Meddelandet sattes i karantän (som skräppost, massutskick eller nätfiske). Mer information finns [i EOP i karantän](quarantine-email-messages.md).
+- I **karantän**: meddelandet sattes i karantän (som skräp post, Mass utskick eller nätfiske). Mer information finns i [e-postmeddelanden i karantän i EOP](quarantine-email-messages.md).
 
-- **Filtreras som skräppost**: Meddelandet identifierades spam, och avvisades eller blockerades (inte karantän).
+- **Filtrerad som skräp post**: meddelandet identifierades som skräp post och avvisades eller blockerades (inte i karantän).
 
-- **Hämta status:** Meddelandet togs nyligen emot av Microsoft 365, men inga andra statusdata är ännu tillgängliga. Kom tillbaka om några minuter.
+- **Status:** Meddelandet togs nyligen emot av Microsoft 365, men inga andra status data är tillgängliga ännu. Kom tillbaka om några minuter.
 
-**De**värden som **väntar,** **sätts i karantän**och Filtrera som **skräppost** är endast tillgängliga för sökningar som är mindre än 10 dagar. Det kan också finnas en fördröjning på 5 till 10 minuter mellan den faktiska och rapporterade leveransstatusen.
+**Obs!** de värden som **väntar,** **satts i karantän**och **filtreras som skräp post** är bara tillgängliga för sökningar som är mindre än 10 dagar. Det kan också finnas en 5-till-10 minuters fördröjning mellan den faktiska och rapporterade leverans statusen.
 
 #### <a name="message-id"></a>Meddelande-ID
 
-Det här är internetmeddelande-ID (kallas även klient-ID) som finns i **fältet Meddelande-ID:** sidhuvud i meddelandehuvudet. Användare kan ge dig det här värdet för att undersöka specifika meddelanden.
+Det här är Internet meddelande-ID (kallas även klient-ID) som finns i fältet **meddelande-ID:** rubrik i meddelande huvudet. Användarna kan ge dig det här värdet för att undersöka specifika meddelanden.
 
-Det här värdet är konstant under meddelandets livstid. För meddelanden som skapats i Microsoft 365 eller Exchange är värdet i formatet `<GUID@ServerFQDN>` , inklusive vinkelparenteserna ( \< \> ). Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andra meddelandesystem kan använda olika syntax eller värden. Detta värde är tänkt att vara unik, men inte alla e-postsystem strikt följa detta krav. Om **fältet Meddelande-ID:** huvud inte finns eller är tomt för inkommande meddelanden från externa källor tilldelas ett godtyckligt värde.
+Det här värdet är konstant för meddelandets livstid. För meddelanden som har skapats i Microsoft 365 eller Exchange är värdet i formatet `<GUID@ServerFQDN>` , inklusive vinkelparenteser ( \< \> ). Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andra meddelande system kan använda olika syntax och värden. Det här värdet ska vara unikt, men inte alla e-postsystem följer det här kravet. Om fältet **meddelande-ID:** inte finns eller är tomt för inkommande meddelanden från externa källor tilldelas ett godtyckligt värde.
 
-När du använder **meddelande-ID** för att filtrera resultaten måste du inkludera hela strängen, inklusive eventuella vinkelparenteser.
+När du använder **meddelande-ID** för att filtrera resultaten måste du ta med hela strängen, inklusive alla vinkelparenteser.
 
 #### <a name="direction"></a>Riktning
 
-Du kan lämna standardvärdet **Alla** markerade eller välja **Inkommande** (meddelanden som skickas till mottagare i organisationen) eller **Utgående** (meddelanden som skickas från användare i organisationen) för att filtrera resultaten.
+Du kan lämna standardvärdet **alla** markerat, eller så kan du välja **inkommande** (meddelanden som skickas till mottagarna i organisationen) eller **utgående** (meddelanden som skickas från användare i organisationen) för att filtrera resultaten.
 
 #### <a name="original-client-ip-address"></a>Ursprunglig klient-IP-adress
 
-Du kan filer resultaten av klientens IP-adress för att undersöka hackade datorer som skickar stora mängder skräppost eller skadlig kod. Även om meddelandena kan verka komma från flera avsändare är det troligt att samma dator genererar alla meddelanden.
+Du kan skicka in resultaten efter klient-IP-adress för att undersöka hackade datorer som skickar stora mängder skräp post eller skadlig program vara. Även om meddelandena kan verka komma från flera avsändare beror det troligt vis på att samma dator genererar alla meddelanden.
 
-**Klientens**IP-adressinformation är endast tillgänglig i 10 dagar och är endast tillgänglig i **de utökade sammanfattningsrapporterna** eller **utökade** rapporter (nedladdningsbara CSV-filer).
+**Obs!** klient-IP-adress-informationen är bara tillgänglig i 10 dagar och är endast tillgänglig i **utökad Sammanfattning** eller **utökade** rapporter (nedladdnings bara CSV-filer).
 
-### <a name="choose-report-type"></a>Välj rapporttyp
+### <a name="choose-report-type"></a>Välj rapport typ
 
-De tillgängliga rapporttyperna är:
+Tillgängliga rapport typer är:
 
-- **Sammanfattning**: Tillgänglig om tidsintervallet är mindre än 10 dagar och kräver inga ytterligare filtreringsalternativ. Resultaten är tillgängliga nästan omedelbart efter att du klickar på **Sök**. Rapporten ger en avkastning på upp till 20000 års resultat.
+- **Sammanfattning**: tillgänglig om tidsintervallet är mindre än 10 dagar och kräver inga ytterligare filtrerings alternativ. Resultaten är tillgängliga nästan direkt efter att du klickat på **Sök**. Rapporten returnerar upp till 20000 resultat.
 
-- **Förbättrad sammanfattning** eller **Utökad:** Dessa rapporter är endast tillgängliga som nedladdningsbara CSV-filer och kräver ett eller flera av följande filtreringsalternativ oavsett tidsintervall: **Av dessa personer**, Till dessa **personer**eller **Meddelande-ID**. Du kan använda jokertecken för avsändare eller mottagare (till exempel \* @contoso.com). Den förbättrade sammanfattningsrapporten returnerar upp till 50000 resultat. Den utökade rapporten ger upp till 1 000 resultat.
+- **Förbättrad Sammanfattning** eller **utökad**: dessa rapporter är bara tillgängliga som nedladdnings bara CSV-filer och kräver ett eller flera av följande filtrerings alternativ oavsett tidsintervallet: **av dessa personer**, **till dessa personer**eller **meddelande-ID**. Du kan använda jokertecken för avsändare eller mottagare (till exempel \* @contoso. com). Den förbättrade sammanfattnings rapporten returnerar upp till 50000 resultat. Den utökade rapporten returnerar upp till 1000 resultat.
 
 **Anmärkningar**:
 
-- Förbättrade sammanfattningsrapporter och utökade rapporter förbereds med hjälp av arkiverade meddelandespårningsdata, och det kan ta upp till flera timmar innan rapporten är tillgänglig för nedladdning. Beroende på hur många andra administratörer som också har skickat rapportbegäranden ungefär samtidigt kan du också märka en fördröjning innan din köbegäran börjar bearbetas.
+- Förbättrad Sammanfattning och utökade rapporter är avsedda med arkiverade meddelanden och det kan ta upp till flera timmar innan rapporten kan laddas ner. Beroende på hur många andra administratörer som också har lämnat rapport förfrågningar samtidigt kan du också få en fördröjning innan den köade begäran börjar behandlas.
 
-- Du kan välja en utökad sammanfattning eller utökad rapport för alla datum-/tidsintervall, men vanligtvis är de senaste fyra timmarna arkiverade data ännu inte tillgängliga för dessa två typer av rapporter.
+- Du kan välja en utökad Sammanfattning eller utökad rapport för ett datum-och tidsintervall, vanligt vis är de fyra sista timmarna av arkiverade data inte tillgängliga för dessa två typer av rapporter.
 
-När du klickar på **Nästa**visas en sammanfattningssida med en lista över de filtreringsalternativ som du har valt, en unik (redigerbar) rubrik för rapporten och den e-postadress som tar emot meddelandet när meddelandespårningen har slutförts (även redigerbar och måste finnas i en av organisationens accepterade domäner). Klicka på **Förbered rapport** om du vill skicka meddelandespårningen. På huvudsidan **för meddelandespårning** kan du se rapportens status i avsnittet **Nedladdningsbara rapporter.**
+När du klickar på **Nästa**visas en sammanfattnings sida med de filtrerings alternativ som du har valt, en unik (redigerbar) rubrik för rapporten och e-postadressen som tar emot meddelandet när meddelande spårningen har slutförts (även redigerbart) och måste finnas i en av organisationens godkända domäner. Klicka på **Förbered rapport** för att skicka meddelande spårningen. På sidan för huvud **meddelande spårning** visas rapportens status i avsnittet **nedladdnings bara rapporter** .
 
-Mer information om informationen som returneras i de olika rapporttyperna finns i nästa avsnitt.
+Mer information om informationen som returneras i olika rapport typer finns i nästa avsnitt.
 
-## <a name="message-trace-results"></a>Resultat för meddelandespårning
+## <a name="message-trace-results"></a>Resultat för meddelande spårning
 
-De olika rapporttyperna returnerar olika informationsnivåer. Den information som är tillgänglig i de olika rapporterna beskrivs i följande avsnitt.
+De olika rapport typerna returnerar olika informations nivåer. Informationen som är tillgänglig i de olika rapporterna beskrivs i följande avsnitt.
 
-### <a name="summary-report-output"></a>Utdata för sammanfattande rapport
+### <a name="summary-report-output"></a>Sammanfattnings rapport
 
-När du har kört meddelandespårningen visas resultaten, sorterade efter fallande datum/tid (senaste först).
+När du har kört meddelande spårningen kommer resultatet att visas sorterade efter fallande datum/tid (senaste först).
 
-![Sammanfattningsrapportresultat för meddelandespårning i Säkerhets- & Compliance Center](../../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Sammanfattnings rapport resultat för meddelande spårning i säkerhets & efterlevnad](../../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
-Sammanfattningsrapporten innehåller följande information:
+Sammanfattnings rapporten innehåller följande information:
 
-- **Datum**: Datum och tid då meddelandet togs emot av tjänsten med hjälp av den konfigurerade UTC-tidszonen.
+- **Date**: det datum och den tid då meddelandet togs emot av tjänsten, med den konfigurerade tids zonen för UTC.
 
-- **Avsändare**: Avsändarens e-postadress*alias*( @ *aliasdomän*).
+- **Avsändare**: avsändarens e-postadress (*Ali Ask* @ *Domain*).
 
-- **Mottagare**: Mottagarens eller mottagarnas e-postadress. För ett meddelande som skickas till flera mottagare finns det en rad per mottagare. Om mottagaren är en distributionsgrupp, en dynamisk distributionsgrupp eller en e-postaktiverad säkerhetsgrupp blir gruppen den första mottagaren och sedan är varje medlem i gruppen på en separat rad.
+- **Mottagare**: mottagarens eller mottagarens e-postadress. Det finns en rad per mottagare för ett meddelande som skickas till flera mottagare. Om mottagaren är en distributions grupp, dynamisk distributions grupp eller en e-postaktive rad säkerhets grupp, blir gruppen den första mottagaren och sedan är varje medlem i gruppen en separat rad.
 
-- **Ämne**: De första 256 tecknen i meddelandets **fält ämne:**
+- **Ämne** **: fältets** första 256 tecken.
 
-- **Status**: Dessa värden beskrivs i avsnittet [Leveransstatus.](#delivery-status)
+- **Status**: de här värdena beskrivs i avsnittet [leverans status](#delivery-status) .
 
-Som standard läses de första 250 resultaten in och är lättillgängliga. När du rullar nedåt finns det en liten paus när nästa omgång resultat läses in. I stället för att rulla kan du klicka på **Ladda alla** för att läsa in alla resultat upp till maximalt 10 000.
+Normalt är de första 250-resultaten inlästa och lättillgängliga. När du rullar nedåt är det en liten paus när nästa resultat uppsättning laddas. I stället för att bläddra kan du klicka på **Läs in alla** om du vill att alla resultaten ska laddas upp till maximalt 10 000.
 
-Du kan klicka på kolumnrubrikerna för att sortera resultaten efter värdena i den kolumnen i stigande eller fallande ordning.
+Du kan klicka på kolumn rubrikerna för att sortera resultaten efter värdena i den kolumnen i stigande eller fallande ordning.
 
-Du kan klicka på **Filtrera resultat** om du vill filtrera resultaten efter en eller flera kolumner.
+Du kan klicka på **filtrera resultat** för att filtrera resultatet efter en eller flera kolumner.
 
-Du kan exportera resultaten när du har markerat en eller flera rader genom att klicka på **Exportera resultat** och sedan välja Exportera **alla resultat,** **Exportera inlästa resultat**eller Exportera **markerade**.
+Du kan exportera resultaten när du har markerat en eller flera rader genom att klicka på **Exportera resultat** och sedan välja **Exportera alla resultat**, **Exportera inlästa resultat**eller **Exportera markerade**.
 
 #### <a name="find-related-records-for-this-message"></a>Hitta relaterade poster för det här meddelandet
 
-Relaterade meddelandeposter är poster som delade samma meddelande-ID. Kom ihåg att även ett enda meddelande som skickas mellan två personer kan generera flera poster. Antalet poster ökar när meddelandet påverkas av distributionsgruppsexpansion, vidarebefordran, regler för e-postflöde (kallas även transportregler) etc.
+Relaterade meddelande poster är poster som har samma meddelande-ID. Kom ihåg att även ett enskilt meddelande som skickas mellan två personer kan generera flera poster. Antalet poster ökar när meddelandet påverkas av distributions grupp ökning, vidarebefordring, regler för e-postflöde (kallas även transport regler) osv.
 
-När du har markerat en rads kryssruta kan du hitta relaterade poster för meddelandet genom att klicka på knappen **Sök relaterad** som visas eller genom att välja **Fler alternativ** ![ Mer ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **sökrelaterade poster för det här meddelandet**).
+När du har markerat kryss rutan för en rad kan du söka efter relaterade poster för meddelandet genom att klicka på knappen **Sök relaterad** som visas, eller genom att välja **fler alternativ** ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **för att hitta relaterade poster för detta meddelande**.
 
-Mer information om meddelande-ID:t finns i avsnittet Meddelande-ID tidigare i det här avsnittet.
+Mer information om meddelande-ID finns i avsnittet meddelande-ID ovan i det här avsnittet.
 
-#### <a name="message-trace-details"></a>Information om meddelandespårning
+#### <a name="message-trace-details"></a>Information om meddelande spårning
 
-I utdata för sammanfattningsrapporten kan du visa information om ett meddelande med någon av följande metoder:
+I sammanfattnings rapportens utdata kan du Visa information om ett meddelande på något av följande sätt:
 
-- Markera raden (klicka var som helst på raden utom kryssrutan).
+- Markera raden (klicka någonstans på raden förutom kryss rutan).
 
-- Markera radens kryssruta och klicka på **Fler alternativ** Mer ![ Visa ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **meddelandeinformation**.
+- Markera kryss rutan för raden och klicka på **fler alternativ** ![ mer ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **information om meddelanden**.
 
-   ![Information efter att du har dubbelklickats på en rad i sammanfattningsrapportmeddelandespårningen resulterar i säkerhets- & Compliance Center](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Information efter att du dubbelklickar på en rad i sammanfattnings rapportens meddelande spårning resulterar i säkerhets & Compliance Center](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
-Meddelandespårningsinformationen innehåller följande ytterligare information som inte finns i sammanfattningsrapporten:
+Meddelande spårnings informationen innehåller följande ytterligare information som inte finns i sammanfattnings rapporten:
 
-- **Meddelandehändelser**: Det här avsnittet innehåller klassificeringar som hjälper till att kategorisera de åtgärder som tjänsten vidtar för meddelanden. **Några av de mer intressanta händelser** som du kan stöta på är:
+- **Meddelande händelser**: det här avsnittet innehåller klassificeringar som hjälper till att kategorisera åtgärderna som tjänsten utför på meddelanden. **Några av de mer intressanta händelser** som du kan stöta på är:
 
-  - **Ta emot**: Meddelandet togs emot av tjänsten.
+  - **Mottagning**: meddelandet togs emot av tjänsten.
 
-  - **Skicka**: Meddelandet skickades av tjänsten.
+  - **Skicka**: meddelandet skickades av tjänsten.
 
-  - **Misslyckas**: Det gick inte att leverera meddelandet.
+  - **Misslyckades**: det gick inte att leverera meddelandet.
 
-  - **Leverans**: Meddelandet levererades till en postlåda.
+  - **Leverera**: meddelandet skickades till en post låda.
 
-  - **Expandera**: Meddelandet skickades till en distributionsgrupp som har expanderats.
+  - **Expandera**: meddelandet skickades till en distributions grupp som har expanderats.
 
-  - **Överföring**: Mottagarna flyttades till ett bifurcated meddelande på grund av innehållskonvertering, meddelandemottagare gränser eller agenter.
+  - **Överföring**: mottagarna har flyttats till ett förgrenat meddelande på grund av innehålls konvertering, meddelande mottagarens gränser eller agenter.
 
-  - **Skjuta upp**: Meddelandet leveransen sköts upp och kan göras om senare.
+  - **Skjut**upp: meddelande leveransen uppskjuts och kan försöka igen senare.
 
-  - **Löst**: Meddelandet omdirigerades till en ny mottagaradress baserat på en Active Directory-uppslag. När detta inträffar visas den ursprungliga mottagaradressen på en separat rad i meddelandespårningen tillsammans med meddelandets slutliga leveransstatus.
+  - **Åtgärdat**: meddelandet har omdirigerats till en ny mottagar adress baserat på en Active Directory-uppkoppling. När detta inträffar visas den ursprungliga mottagar adressen på en separat rad i meddelande spårningen tillsammans med meddelandets slutliga leverans status.
 
   Kommentarer:
 
-  - Ett händelselöst meddelande som har levererats genererar flera **händelseposter** i meddelandespårningen.
+  - Ett fel meddelande som skickas genererar flera **händelse** poster i meddelande spårningen.
 
-  - Denna förteckning är inte avsedd att vara uttömmande. Beskrivningar av fler händelser finns [i Händelsetyper i meddelandespårningsloggen](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observera att den här länken är ett Exchange Server-ämne (lokalt Exchange).
+  - Denna lista är inte avsedd att vara uttömmande. Beskrivningar av fler händelser finns i [händelse typer i meddelande spårnings loggen](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observera att den här länken är ett Exchange Server-avsnitt (lokalt Exchange).
 
-- **Mer information**: Det här avsnittet innehåller följande information:
+- **Mer information**: det här avsnittet innehåller följande information:
 
-  - **Meddelande-ID:** Det här värdet beskrivs i avsnittet [Meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **Meddelande-ID**: det här värdet beskrivs i avsnittet [meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-  - **Meddelandestorlek**
+  - **Meddelande storlek**
 
-  - **Från IP:** IP-adressen för den dator som skickade meddelandet. För utgående meddelanden som skickas från Exchange Online är det här värdet tomt.
+  - **Från IP**: IP-adressen till den dator som skickade meddelandet. För utgående meddelanden som skickas från Exchange Online är det här värdet tomt.
 
-  - **Till IP:** IP-adressen eller adresserna där tjänsten försökte leverera meddelandet. Om meddelandet har flera mottagare visas dessa. För inkommande meddelanden som skickas till Exchange Online är det här värdet tomt.
+  - **IP**-adress eller adresser där tjänsten försökte leverera meddelandet. Om meddelandet har flera mottagare visas dessa. Det här värdet är tomt för inkommande meddelanden som skickas till Exchange Online.
 
-### <a name="enhanced-summary-reports"></a>Förbättrade sammanfattningsrapporter
+### <a name="enhanced-summary-reports"></a>Förbättrade sammanfattnings rapporter
 
-Tillgängliga (slutförda) Förbättrade sammanfattningsrapporter finns i avsnittet **Nedladdningsbara rapporter** i början av meddelandespårningen. Följande information finns i rapporten:
+Tillgängliga (slutförda) förbättrade sammanfattnings rapporter finns i avsnittet **nedladdnings rapporter** i den inledande meddelande spårningen. Följande information är tillgänglig i rapporten:
 
-- **origin_timestamp** <sup>*</sup> : Datum och tid då meddelandet ursprungligen togs emot av tjänsten med hjälp av den konfigurerade UTC-tidszonen.
+- **origin_timestamp** <sup>*</sup> : det datum och den tid då meddelandet ursprungligen togs emot av tjänsten med den konfigurerade tids zonen för UTC.
 
-- **sender_address**: Avsändarens e-postadress (*alias* @ *aliasdomän*).
+- **sender_address**: avsändarens e-postadress (*Ali* @ *Domain*).
 
-- **Recipient_status**: Status för leveransen av meddelandet till mottagaren. Om meddelandet skickades till flera mottagare visas alla mottagare och motsvarande status för varje, i formatet: \<*email address*\> ## \<*status*\> . Till exempel:
+- **Recipient_status**: leveransens status till mottagaren. Om meddelandet skickades till flera mottagare kommer det att visa alla mottagare och motsvarande status för varje, i formatet: \<*email address*\> ## \<*status*\> . Till exempel:
 
-  - **##Receive betyder Send** att meddelandet togs emot av tjänsten och skickades till det avsedda målet.
+  - **# #Receive** innebär att meddelandet togs emot av tjänsten och skickats till den avsedda platsen.
 
-  - **##Receive betyder det inte** att meddelandet togs emot av tjänsten men leveransen till det avsedda målet misslyckades.
+  - **# #Receive** betyder att meddelandet togs emot av tjänsten men leverans till den avsedda platsen misslyckades.
 
-  - **##Receive betyder att** meddelandet togs emot av tjänsten och levererades till mottagarens postlåda.
+  - **# #Receive** betyder att meddelandet togs emot av tjänsten och att det levererades till mottagarens post låda.
 
-- **message_subject**: De första 256 tecknen i meddelandets **ämnesfält.**
+- **message_subject**: de första 256 tecknen i meddelandets **ämnes** fält.
 
-- **total_bytes**: Meddelandets storlek i byte, inklusive bilagor.
+- **total_bytes**: meddelandets storlek i byte, inklusive bifogade filer.
 
-- **message_id**: Det här värdet beskrivs i avsnittet [Meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: det här värdet beskrivs i avsnittet [meddelande-ID](#message-id) tidigare i det här avsnittet. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-- **network_message_id**: Ett unikt meddelande-ID-värde som finns kvar i alla kopior av meddelandet som kan skapas på grund av bifurkation eller distributionsgruppsexpansion. Ett exempelvärde är `1341ac7b13fb42ab4d4408cf7f55890f` .
+- **network_message_id**: ett unikt meddelande-ID som finns kvar i alla kopior av meddelandet som kan skapas på grund av bifurcation eller distributions grupp. Ett exempel värde är `1341ac7b13fb42ab4d4408cf7f55890f` .
 
-- **original_client_ip**: IP-adressen för avsändarens klient.
+- **original_client_ip**: avsändarens klientens IP-adress.
 
-- **riktning**: Anger om meddelandet skickades inkommande (1) till din organisation eller om det skickades utgående (2) från din organisation.
+- **riktning**: anger om meddelandet skickades inkommande (1) till din organisation, eller om det skickades utgående (2) från din organisation.
 
-- **connector_id**: Namnet på käll- eller målkopplingen. Mer information om anslutningsappar i Exchange Online finns i [Konfigurera e-postflöde med anslutningsappar i Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+- **connector_id**: namnet på käll-eller destinations kopplingen. Mer information om anslutningar i Exchange Online finns i [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority** <sup>*</sup> : Om meddelandet skickades med **hög,** **låg**eller **normal** prioritet.
+- **delivery_priority** <sup>*</sup> : om meddelandet skickades med **hög**, **lägre**eller **Normal** prioritet.
 
-<sup>*</sup>Dessa egenskaper är endast tillgängliga i förbättrade sammanfattningsrapporter.
+<sup>*</sup>Dessa egenskaper är bara tillgängliga i förbättrade sammanfattnings rapporter.
 
 ### <a name="extended-reports"></a>Utökade rapporter
 
-Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsbara rapporter** i början av meddelandespårningen. Praktiskt taget all information från en förbättrad sammanfattande rapport finns i en utökad rapport (med undantag **för origin_timestamp** och **delivery_priority**). Följande ytterligare information är endast tillgänglig i en utökad rapport:
+Tillgängliga (slutförda) utökade rapporter finns i avsnittet **nedladdnings rapporter** i början av meddelande spårning. Praktiskt taget all information från en förbättrad sammanfattnings rapport finns i en utökad rapport (med undantag för **origin_timestamp** och **delivery_priority**). Följande ytterligare information är bara tillgänglig i en utökad rapport:
 
-- **client_ip**: IP-adressen för e-postservern eller meddelandeklienten som skickade meddelandet.
+- **client_ip**: IP-adressen för e-postservern eller meddelande klienten som skickade meddelandet.
 
-- **client_hostname**: Värdnamnet eller FQDN för e-postservern eller meddelandeklienten som skickade meddelandet.
+- **client_hostname**: värd namnet eller FQDN för e-postservern eller meddelande klienten som skickade meddelandet.
 
-- **server_ip**: Käll- eller målserverns IP-adress.
+- **server_ip**: käll-eller mål serverns IP-adress.
 
-- **server_hostname**: Målserverns värdnamn eller FQDN.
+- **server_hostname**: värd namnet eller FQDN för mål servern.
 
-- **source_context**: Extra information som är associerad med **källfältet.** Till exempel:
+- **source_context**: Mer information om fältet **källa** . Till exempel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **källa**: Exchange Online-komponenten som är ansvarig för händelsen. Till exempel:
+- **källa**: den Exchange Online-komponent som är ansvarig för händelsen. Till exempel:
 
   - `AGENT`
 
@@ -284,111 +287,120 @@ Tillgängliga (slutförda) Utökade rapporter finns i avsnittet **Nedladdningsba
 
   - `SMTP`
 
-- **event_id**: Dessa motsvarar de **meddelandehändelsevärden** som förklaras i avsnittet [Sök relaterade poster för det här meddelandet.](#find-related-records-for-this-message)
+- **event_id**: de motsvarar de händelse värden för **meddelanden** som förklaras i avsnittet [hitta relaterade poster för det här meddelandet](#find-related-records-for-this-message) .
 
-- **internal_message_id**: En meddelandeidentifierare som tilldelas av Exchange Online-servern som för närvarande bearbetar meddelandet.
+- **internal_message_id**: ett meddelande som är kopplat till Exchange Online-servern som för tillfället bearbetar meddelandet.
 
-- **recipient_address**: E-postadresserna till meddelandets mottagare. Flera e-postadresser avgränsas med semikolontecknet (;).
+- **recipient_address**: e-postadresserna till meddelandets mottagare. Flera e-postadresser avgränsas med semikolon (;).
 
-- **recipient_count**: Det totala antalet mottagare i meddelandet.
+- **recipient_count**: det totala antalet mottagare i meddelandet.
 
-- **related_recipient_address**: Används med `EXPAND` , och händelser för att visa andra mottagare `REDIRECT` `RESOLVE` e-postadresser som är associerade med meddelandet.
+- **related_recipient_address**: används med `EXPAND` , `REDIRECT` och `RESOLVE` händelser för att visa andra mottagares e-postadresser som är kopplade till meddelandet.
 
-- **referens**: Det här fältet innehåller ytterligare information för specifika typer av händelser. Till exempel:
+- **referens**: det här fältet innehåller ytterligare information om specifika typer av händelser. Till exempel:
 
-  - **DSN**: Innehåller rapportlänken, som är **det message_id** värdet för meddelandet om associerad leveransstatus (kallas även DSN, icke-leveransrapport, NDR eller avvisningsmeddelande) om ett DSN genereras efter den här händelsen. Om detta är ett DSN-meddelande innehåller det här fältet **värdet message_id** för det ursprungliga meddelandet som DSN skapades för.
+  - **DSN**: innehåller rapport länken, vilket är **message_id** värdet för den associerade leverans status aviseringen (kallas även DSN, rapport om utebliven leverans, NDR eller studs meddelande) om en DSN genereras efter den här händelsen. Om det är ett DSN-meddelande innehåller det här fältet **message_id** värdet för det ursprungliga meddelandet som DSN genererades för.
 
-  - **EXPANDERA**: Innehåller **värdet related_recipient_address** för relaterade meddelanden.
+  - **Expand**: innehåller **related_recipient_address** svärdet för de relaterade meddelandena.
 
-  - **MOTTAGNING:** Kan innehålla **message_id** värdet för det relaterade meddelandet om meddelandet genererades av andra processer (till exempel inkorgsregler).
+  - **Ta emot**: kan innehålla **message_id** -värdet för det relaterade meddelandet om meddelandet genererades av andra processer (till exempel regler för Inkorgen).
 
-  - **SKICKA**: Innehåller **värdet internal_message_id** för alla DSN-meddelanden.
+  - **Send**: innehåller **INTERNAL_MESSAGE_ID** värdet för DSN-meddelanden.
 
-  - **ÖVERFÖRING**: Innehåller **värdet internal_message_id** för meddelandet som klurs (till exempel genom innehållskonvertering, meddelandemottagaresgränser eller agenter).
+  - **Överföring**: innehåller **internal_message_id** värdet för det meddelande som används för grenar sig (till exempel genom innehålls konvertering, begränsningar för meddelande mottagare eller agenter).
 
-  - **MAILBOXRULE**: Innehåller **värdet internal_message_id** för det inkommande meddelandet som orsakade inkorgsregeln för att generera det utgående meddelandet.
+  - **MAILBOXRULE**: innehåller **internal_message_id** värdet för det inkommande meddelandet som orsakade att regeln om utgående meddelanden skapades.
 
-    För andra typer av händelser är det här fältet vanligtvis tomt.
+    För andra typer av händelser är det här fältet normalt tomt.
 
-- **return_path**: Den retur-e-postadress som anges av kommandot **MAIL FROM** som skickade meddelandet. Även om det här fältet aldrig är tomt kan null-adressvärdet representeras som `<>` .
+- **return_path**: den returnerade e-postadressen som anges av kommandot **e-post** som skickade meddelandet. Även om det här fältet aldrig är tomt kan värdet för null avsändar adress visas som `<>` .
 
-- **message_info**: Ytterligare information om meddelandet. Till exempel:
+- **message_info**: ytterligare information om meddelandet. Till exempel:
 
-  - Datumtid för meddelandeoriginering i UTC för `DELIVER` och `SEND` händelser. Datumtiden för originering är den tidpunkt då meddelandet först kom in i Exchange Online-organisationen. UTC-datumtiden representeras i DATUM-TIDSFORMATET ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ` , där `yyyy` = år, = `mm` månad, = `dd` dag, anger början på `T` tidskomponenten, `hh` = `mm` timme, = minut, `ss` = sekund, = `fff` bråkdelar av en sekund och betyder `Z` , vilket är ett annat sätt att beteckna `Zulu` UTC.
+  - Meddelandets ursprungs datum-tid i UTC för `DELIVER` och `SEND` events. Ursprungs datum-tid är den tid då meddelandet först registrerade Exchange Online-organisationen. UTC-datum-tiden visas i ISO 8601 datum-och tids format: `yyyy-mm-ddThh:mm:ss.fffZ` , där `yyyy` = år, `mm` = månad, `dd` = dag, `T` anger början av Time-komponenten, `hh` = timme, `mm` = minut, `ss` = Second, `fff` = bråktal för en sekund och `Z` betyder `Zulu` , vilket är ett annat sätt att beteckna UTC.
 
-  - Autentiseringsfel. Du kan till exempel se värdet `11a` och typen av autentisering som användes när autentiseringsfelet inträffade.
+  - Autentiseringsfel. Du kan till exempel se värdet `11a` och typen av verifikation som användes när autentiseringsfel inträffade.
 
-- **tenant_id**: Ett GUID-värde som representerar Exchange Online-organisationen (till exempel `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
+- **tenant_id**: ett GUID-värde som representerar Exchange Online-organisationen (till exempel `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 
-- **original_server_ip**: IP-adressen för den ursprungliga servern.
+- **original_server_ip**: den ursprungliga SERVERns IP-adress.
 
-- **custom_data**: Innehåller data som är relaterade till specifika händelsetyper. Mer information finns i följande avsnitt.
+- **custom_data**: innehåller data som är relaterade till specifika händelse typer. Mer information finns i följande avsnitt.
 
 #### <a name="custom_data-values"></a>custom_data värden
 
-Fältet **custom_data** för en `AGENTINFO` händelse används av en mängd olika Exchange Online-agenter för att logga information om meddelandebearbetning. Några av de mer intressanta agenter beskrivs i följande avsnitt.
+**Custom_data** fältet för en `AGENTINFO` händelse används av en mängd olika Exchange Online-agenter för att logga information om meddelanden. Vissa av de mer intressanta agenterna beskrivs i följande avsnitt.
 
-#### <a name="spam-filter-agent"></a>Agent för skräppostfilter
+#### <a name="spam-filter-agent"></a>Skräp post filter Agent
 
-Ett **custom_data** värde som börjar med `S:SFA` kommer från spamfilteragenten. De viktigaste detaljerna beskrivs i följande tabell:
+Ett **custom_data** värde som börjar med `S:SFA` kommer från agenten för skräp post filter. Informationen finns i följande tabell:
 
-|**Värde**|**Beskrivning**|
-|:-----|:-----|
+****
+
+|Value|Beskrivning|
+|---|---|
 |`SFV=NSPM`|Meddelandet har markerats som icke skräppost och skickats till avsedda mottagare.|
-|`SFV=SPM`|Meddelandet markerades som skräppost av skräppostfiltrering (kallas även innehållsfiltrering).|
-|`SFV=BLK`|Filtrering hoppades över och meddelandet blockerades eftersom det kom från en blockerad avsändare.|
-|`SFV=SKS`|Meddelandet markerades som skräppost innan det bearbetades av skräppostfiltrering. Detta inkluderar meddelanden där meddelandet har matchat en e-postflödesregel (även känt som transportregel) som automatiskt markerat det som skräppost och förbigått all ytterligare filtrering.|
-|`SCL=<number>`|Mer information om de olika SCL-värdena och vad de betyder finns i [Säkerhetsnivåer för skräppost](spam-confidence-levels.md).|
-|`PCL=<number>`|Pcl-värdet (Phishing Confidence Level) för meddelandet. Dessa kan tolkas på samma sätt som SCL värden dokumenteras i [Spam förtroende nivåer](spam-confidence-levels.md).|
+|`SFV=SPM`|Meddelandet har marker ATS som skräp post av filtrering av skräp post (kallas även innehålls filtrering).|
+|`SFV=BLK`|Filtreringen hoppades över och meddelandet blockerades eftersom det kom från en blockerad avsändare.|
+|`SFV=SKS`|Meddelandet har marker ATS som skräp post innan den bearbetas av skräp post filtrering. Detta inkluderar meddelanden där meddelandet har matchat en e-postflödesregel (även känt som transportregel) som automatiskt markerat det som skräppost och förbigått all ytterligare filtrering.|
+|`SCL=<number>`|Mer information om de olika SCL-värdena och vad de innebär finns i [säkerhets nivåer för skräp post](spam-confidence-levels.md).|
+|`PCL=<number>`|Meddelandets värde för nätfiske konfidensnivå (PCL). De här kan tolkas på samma sätt som de SCL värdena i [skräp post nivåer](spam-confidence-levels.md).|
 |`DI=SB`|Meddelandets avsändare blockerades.|
 |`DI=SQ`|Meddelandet sattes i karantän.|
 |`DI=SD`|Meddelandet har tagits bort.|
-|`DI=SJ`|Meddelandet skickades till mottagarens skräppostmapp.|
-|`DI=SN`|Meddelandet dirigerades genom den normala utgående leveranspoolen.|
-|`DI=SO`|Meddelandet dirigerades genom leveranspoolen för högre risk. Mer information finns i [Högriskleveranspool för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md).|
-|`SFS=[a]|SFS=[b]`|Detta anger att spam regler matchades.|
+|`DI=SJ`|Meddelandet skickades till mottagarens mapp för skräp post.|
+|`DI=SN`|Meddelandet dirigerades via den vanliga utgående leverans-poolen.|
+|`DI=SO`|Meddelandet dirigerades via poolen med högre risk. Mer information finns i [poolen högrisk leveranser för utgående meddelanden](high-risk-delivery-pool-for-outbound-messages.md).|
+|`SFS=[a]|SFS=[b]`|Detta anger att skräp post regler matchades.|
 |`IPV=CAL`|Meddelandet släpptes igenom skräppostfiltret då IP-adressen specificerades i en lista över tillåtna IP-adresser i anslutningsfiltret.|
 |`H=<EHLOstring>`|En anslutande e-mailservers HELO- eller OEHLO-sträng.|
-|`PTR=<ReverseDNS>`|PTR-posten för den sändande IP-adressen, även känd som den omvända DNS-adressen.|
+|`PTR=<ReverseDNS>`|PTR-posten för den sändande IP-adressen, som även kallas omvänd DNS-adress.|
+|
 
-Ett exempel **custom_data** värde för ett meddelande som filtreras för skräppost så här:
+Ett exempel **custom_data** värde för ett meddelande som filtrerats för skräp post så här:
 
 `S:SFA=SUM|SFV=SPM|IPV=CAL|SRV=BULK|SFS=470454002|SFS=349001|SCL=9|SCORE=-1|LIST=0|DI=SN|RD=ftmail.inc.com|H=ftmail.inc.com|CIP=98.129.140.74|SFP=1501|ASF=1|CTRY=US|CLTCTRY=|LANG=en|LAT=287|LAT=260|LAT=18;`
 
-#### <a name="malware-filter-agent"></a>Filteragent för skadlig kod
+#### <a name="malware-filter-agent"></a>Filter Agent för skadlig program vara
 
-Ett **custom_data** värde som börjar med `S:AMA` kommer från filteragenten för skadlig kod. De viktigaste detaljerna beskrivs i följande tabell:
+Ett **custom_data** värde som börjar med `S:AMA` kommer från filter agenten för skadlig program vara. Informationen finns i följande tabell:
 
-|**Värde**|**Beskrivning**|
-|:-----|:-----|
-|`AMA=SUM|v=1|`Eller`AMA=EV|v=1`|Meddelandet var fast beslutet att innehålla skadlig kod. `SUM`visar att skadlig kod kan ha upptäckts av valfritt antal motorer. `EV`visar att den skadliga koden upptäcktes av en viss motor. När skadlig kod upptäcks av en motor utlöser detta efterföljande åtgärder.|
+****
+
+|Value|Beskrivning|
+|---|---|
+|`AMA=SUM|v=1|`respektive`AMA=EV|v=1`|Meddelandet fastställdes att det innehåller skadlig program vara. `SUM`anger att den skadliga program varan kunde identifieras av ett antal motorer. `EV`anger att den skadliga program varan upptäcktes av en viss motor. När skadlig program vara identifieras av en motor utlöses följande åtgärder.|
 |`Action=r`|Meddelandet har ersatts.|
-|`Action=p`|Meddelandet gick förbi.|
-|`Action=d`|Meddelandet sköts upp.|
+|`Action=p`|Meddelandet har hoppats över.|
+|`Action=d`|Meddelandet skjuts upp.|
 |`Action=s`|Meddelandet har tagits bort.|
-|`Action=st`|Meddelandet gick förbi.|
-|`Action=sy`|Meddelandet gick förbi.|
-|`Action=ni`|Meddelandet avvisades.|
-|`Action=ne`|Meddelandet avvisades.|
+|`Action=st`|Meddelandet har hoppats över.|
+|`Action=sy`|Meddelandet har hoppats över.|
+|`Action=ni`|Meddelandet nekades.|
+|`Action=ne`|Meddelandet nekades.|
 |`Action=b`|Meddelandet blockerades.|
-|`Name=<malware>`|Namnet på den skadliga kod som upptäcktes.|
-|`File=<filename>`|Namnet på filen som innehöll den skadliga koden.|
+|`Name=<malware>`|Namnet på den skadliga program varan som upptäcktes.|
+|`File=<filename>`|Namnet på den fil som innehåller den skadliga program varan.|
+|
 
 Ett exempel **custom_data** värde för ett meddelande som innehåller skadlig kod ser ut så här:
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 
-#### <a name="transport-rule-agent"></a>Agent för transportregel
+#### <a name="transport-rule-agent"></a>Transport regel agent
 
-Ett **custom_data** värde som börjar är `S:TRA` från transportregelagenten för regler för e-postflöde (kallas även transportregler). De viktigaste detaljerna beskrivs i följande tabell:
+Ett **custom_data** värde som börjar med `S:TRA` är från transport regel agenten för regler för e-postflöde (kallas även transport regler). Informationen finns i följande tabell:
 
-|**Värde**|**Beskrivning**|
-|:-----|:-----|
-|`ETR|ruleId=<guid>`|Regel-ID:t som matchades.|
-|`St=<datetime>`|Datum och tid i UTC när regelmatchningen inträffade.|
-|`Action=<ActionDefinition>`|Åtgärden som tillämpades. En lista över tillgängliga åtgärder finns [i Regelåtgärder för e-postflöde i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Regelns läge. Giltiga värden är: <br/>* **Framtvinga:** Alla åtgärder för regeln kommer att verkställas. <br/>* **Testa med policytips:**: Alla policytipsåtgärder skickas, men andra verkställighetsåtgärder kommer inte att vidtas. <br/>* **Testa utan principtips**: Åtgärder visas i en loggfil, men avsändare kommer inte att meddelas på något sätt och verkställighetsåtgärder kommer inte att vidtas.|
+****
 
-Ett exempel **custom_data** värde för meddelanden som matchar villkoren för en regel för e-postflöde ser ut så här:
+|Value|Beskrivning|
+|---|---|
+|`ETR|ruleId=<guid>`|Regel-ID som matchades.|
+|`St=<datetime>`|Datum och tid i UTC när regeln matchar.|
+|`Action=<ActionDefinition>`|Åtgärden som användes. En lista över tillgängliga åtgärder finns i [åtgärder för e-postflödes regler i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
+|`Mode=<Mode>`|Regelns läge. Giltiga värden är: <br/>* **Påtvinga**: alla åtgärder i regeln tillämpas. <br/>* **Testa med princip Tips:**: alla princip Tips åtgärder skickas, men andra tvingande åtgärder kommer inte att genomföras. <br/>* **Testa utan princip Tips**: åtgärder visas i en loggfil, men avsändare kommer inte att meddelas på något sätt, och tvingande åtgärder kommer inte att genomföras.|
+|
+
+Ett exempel **custom_data** värde för ett meddelande som matchar villkoren för en regel för e-postflöde ser ut så här:
 
 `S:TRA=ETR|ruleId=19a25eb2-3e43-4896-ad9e-47b6c359779d|st=7/17/2017 12:31:25 AM|action=ApplyHtmlDisclaimer|sev=1|mode=Enforce`

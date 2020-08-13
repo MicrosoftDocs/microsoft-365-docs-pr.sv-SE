@@ -1,7 +1,7 @@
 ---
-title: DeviceTvmSoftwareVulnerabilitiesKB-tabellen i det avancerade jaktschemat
-description: Lär dig mer om de sårbarheter för programvara som spåras av Threat & Vulnerability Management i tabellen DeviceTvmSoftwareVulnerabilitiesKB i det avancerade jaktschemat.
-keywords: avancerad jakt, hotjakt, cyberhotjakt, Microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schema, referens, kusto, tabell, kolumn, datatyp, beskrivning, hot & sårbarhetshantering, TVM, enhetshantering, programvara, inventering, sårbarheter, CVE ID, CVSS, DeviceTvmSoftBevulnerabilitiesKB
+title: DeviceTvmSoftwareVulnerabilitiesKB-tabell i det avancerade jakt-schemat
+description: Lär dig mer om de program varu problem som spåras av hotet & säkerhets problem hantering i tabellen DeviceTvmSoftwareVulnerabilitiesKB i det avancerade antivirus programmet.
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema, referens, kusto, tabell, kolumn, datatyp, beskrivning, Hot & sårbarhets hantering, TVM, enhets hantering, program vara, inventering, sårbarhet, CVE-ID, CVSS, DeviceTvmSoftwareVulnerabilitiesKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,41 +17,41 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 378ffee34a24af225b1b6deebd7cc514c62e1926
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: d4969cdfa2851acc6f94e5e1a903a9b59f73489e
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44328004"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648927"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-`DeviceTvmSoftwareVulnerabilitiesKB`Tabellen i det avancerade jaktschemat innehåller en lista över sårbarheter Hot & [Sårbarhetshantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) bedömer enheter för. Använd den här referensen om du vill skapa frågor som returnerar information från tabellen.
+`DeviceTvmSoftwareVulnerabilitiesKB`Tabellen i det avancerade jakt schema innehåller en lista över sårbarhets [& sårbarhets hantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) bedömer enheter för. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 
-Information om andra tabeller i det avancerade jaktschemat finns [i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema finns i [referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `CveId` | Sträng | Unik identifierare som tilldelats säkerhetsproblemet under CVE-systemet (Common Vulnerabilities and Exposures) |
-| `CvssScore` | Sträng | Allvarlighetsgrad som tilldelats säkerhetsproblemet under cvss (Common Vulnerability Scoring System) |
-| `IsExploitAvailable` | Boolean | Anger om det är allmänt tillgängligt för att utnyttja kod för säkerhetsproblemet |
-| `VulnerabilitySeverityLevel` | Sträng | Allvarlighetsgrad som tilldelats säkerhetsproblemet baserat på CVSS-poängen och dynamiska faktorer som påverkas av hotbilden |
-| `LastModifiedTime` | Datetime | Datum och tid då objektet eller relaterade metadata senast ändrades |
-| `PublishedDate` | Datetime | Datum sårbarhet avslöjades för allmänheten |
-| `VulnerabilityDescription` | Sträng | Beskrivning av sårbarhet och därmed förbundna risker |
-| `AffectedSoftware` | Sträng | Lista över alla programvaruprodukter som påverkas av sårbarheten |
+| `CveId` | strängvärdet | Unik identifierare tilldelad säkerhets luckan under de allmänna sårbarheterna och exponeringarna (CVE) |
+| `CvssScore` | strängvärdet | Allvarlighets grad tilldelad det säkerhets problem som är kopplat till det vanliga säkerhets problemet (CVSS) |
+| `IsExploitAvailable` | returtyp | Anger om en skadlig kod för problemet är allmänt tillgänglig |
+| `VulnerabilitySeverityLevel` | strängvärdet | Allvarlighets grad tilldelad säkerhets luckan baserat på CVSS Poäng och dynamiska faktorer som påverkas av hotets liggande |
+| `LastModifiedTime` | datetime | Datum och tid då objektet eller relaterade metadata senast ändrades |
+| `PublishedDate` | datetime | Datum då säkerhets luckan skickades till offentlig |
+| `VulnerabilityDescription` | strängvärdet | Beskrivning av säkerhets problem och associerade risker |
+| `AffectedSoftware` | strängvärdet | Lista över alla program varu produkter som påverkas av problemet |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Proaktivt jakt efter hot](advanced-hunting-overview.md)
+- [Har varit inaktivt för hot](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
-- [Översikt över hantering av hot & sårbarhet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Översikt över hotet & säkerhets problem hantering](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

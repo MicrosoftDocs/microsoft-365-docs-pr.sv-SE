@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig mer om smarta rapporter och insikter som är tillgängliga i säkerhets & efterföljandekrav och hur du använder dem för att visa och utforska data och vidta snabb åtgärder.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577192"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652783"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
 
@@ -40,7 +40,9 @@ Förutom att markera problemområden kan smarta rapporter och insikter innehåll
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>Rapport typer i säkerhets & efterlevnad
 
 Det finns en mängd olika rapporter i säkerhets & Compliance Center. (Gå till **rapporter** \> **Instrument panel** för att få en mer vy.) I följande tabell visas tillgängliga rapporter med länkar till mer information:
-  
+
+****
+
 |Typ av information|Så här kommer du dit|Här hittar du mer information|
 |---|---|---|
 |**Rapporter om säkerhet & regelefterlevnad** (alla upp)  <br/> Top Insights och rekommendationer och länkar till säkerhets rapporter & efterlevnad, inklusive data förlust av rapporter, etiketter, e-postsäkerhets rapporter, avancerade hot skydds rapporter och mer|Gå till **rapport** \> **instrument panelen** i säkerhets & efterlevnad|[Övervaka och Visa rapporter i Microsoft 365 säkerhets Center](../mtp/monitoring-and-reporting.md)|
@@ -53,6 +55,7 @@ Det finns en mängd olika rapporter i säkerhets & Compliance Center. (Gå till 
 |**GDPR-efterlevnad** <br/> Information om GDPR efterlevnad, inklusive länkar till data ämnen, etikett trender och aktiva & stängda ärenden|I säkerhets & Compliance Center går du till instrument panelen för **data integritet** \> **GDPR**|[Informationsskydd för Office 365 för GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**Gransknings logg** <br/> Information om Microsoft 365-aktiviteter, användare, filer och mappar med mera|I fönstret säkerhets & efterlevnad går du till **Sök-& undersökning** av \> **gransknings loggs ökning**|[Söka i gransknings loggen i säkerhets & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Rapporter om efterlevnad** <br/> FedRAMP rapporter, styrelse former, rapporterings-och gransknings rapporter, ISO-rapporter för säkerhets hantering och tjänste organisations kontroller|Gå till **tjänste** gransknings \> **rapporter** i kontroll & efterlevnad|[Planera för säkerhets & efterlevnad i Office 365](../../compliance/plan-for-security-and-compliance.md)|
+|
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

@@ -1,5 +1,5 @@
 ---
-title: Upptäcka och åtgärda bidrag för olagligt samtycke
+title: Upptäcka och reparera bidrag för olaglig medgivande
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,108 +15,108 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Lär dig hur du känner igen och åtgärdar attacken mot olagliga samtyckesbidrag i Microsoft Office 365.
+description: Lär dig hur du känner igen och reparerar otillåtet medgivande i Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726800"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652963"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants"></a>Upptäcka och åtgärda bidrag för olagligt samtycke
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Upptäcka och reparera bidrag för olaglig medgivande
 
-**Sammanfattning**  Lär dig hur du känner igen och åtgärdar attacken mot olagliga samtyckesbidrag i Office 365.
+**Sammanfattning**  Lär dig hur du känner igen och reparerar otillåtet medgivande i Office 365.
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Vad är attacken mot det olagliga samtyckesbidraget i Office 365?
+## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Vad är godkännandet för medgivande i Office 365?
 
-I en attack med otillåtet medgivande skapar angriparen ett Azure-registrerat program som begär åtkomst till data som kontaktinformation, e-post eller dokument. Angriparen lurar sedan en slutanvändare att bevilja programmet samtycke till att få tillgång till sina data antingen genom en nätfiskeattack eller genom att injicera olaglig kod på en betrodd webbplats. När den olagliga ansökan har beviljats samtycke har den åtkomst på kontonivå till data utan att det behövs ett organisationskonto. Normala reparationssteg, som att återställa lösenord för överträdda konton eller kräva MFA (Multi-Factor Authentication) på konton, är inte effektiva mot den här typen av angrepp, eftersom dessa är program från tredje part och är externa för organisationen.
+Vid intrång i ett otillåtet medgivande ger angriparen ett Azure-registrerat program som begär åtkomst till data, till exempel kontakt information, e-post eller dokument. Angriparen får ett råd för slutanvändaren att få åtkomst till sina data via nätfiske eller genom att injicera illegal kod på en betrodd webbplats. När olaglig ansökan har beviljats har den åtkomst nivå till data utan att ett organisations konto behövs. De vanliga reparations stegen, som att återställa lösen ord för överstigta konton eller kräva multifaktorautentisering (MFA) på konton, är inte effektiva mot denna typ av attacker, eftersom dessa är tredjepartsprogram och är utanför organisationen.
 
-Dessa attacker utnyttjar en interaktionsmodell som förutsätter att entiteten som anropar informationen är automatisering och inte en människa.
+Dessa attacker utnyttjar en interaktions modell som förutsätter att den enhet som anropar informationen är automatisering och inte är en mänsklig.
 
 > [!IMPORTANT]
-> Misstänker du att du har problem med olagliga samtyckesbidrag från en app just nu? Microsoft Cloud App Security (MCAS) har verktyg för att identifiera, undersöka och åtgärda dina OAuth-appar. Den här MCAS-artikeln har en självstudiekurs som beskriver hur du undersöker [riskfyllda OAuth-appar](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). Du kan också ange [OAuth-appprinciper](https://docs.microsoft.com/cloud-app-security/app-permission-policy) för att undersöka appbeställda behörigheter, vilka användare som auktoriserar dessa appar och i stor utsträckning godkänner eller förbjuder dessa behörighetsbegäranden.
+> Misstänker du att du har problem med olaglig medgivande-bidrag från en app, just nu? Microsoft Cloud App Security (MCAS) har verktyg för att upptäcka, undersöka och åtgärda dina OAuth-appar. Den här MCAS artikeln har en själv studie kurs som innehåller information om hur du kommer igång med [riskfyllda OAuth-appar](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). Du kan också ange [principer för OAuth-appar](https://docs.microsoft.com/cloud-app-security/app-permission-policy) för att undersöka programbegärda behörigheter, vilka användare som auktoriserar dessa program och hur de kan godkänna eller förbjuda dessa behörighets begär Anden.
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Hur ser en olaglig bidragsattack ut i Office 365?
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Vad ser ett otillåtet medgivande i Office 365?
 
-Du måste söka i **granskningsloggen** för att hitta tecken, även kallade Indikatorer för kompromiss (IOK) av denna attack. För organisationer med många Azure-registrerade program och en stor användarbas är det bästa sättet att granska dina organisationers medgivandebidrag varje vecka.
+Du måste söka i **gransknings loggen** för att hitta tecken, även kallade anslags indikationer (IOC). För organisationer med många Azure-registrerade program och en stor användar bas är det bästa sättet att granska dina organisationers godkännanden varje vecka.
 
-### <a name="steps-for-finding-signs-of-this-attack"></a>Åtgärder för att hitta tecken på denna attack
+### <a name="steps-for-finding-signs-of-this-attack"></a>Anvisningar för att hitta tecken på det här angreppet
 
-1. Öppna **Säkerhets- & Compliance Center** på <https://protection.office.com> .
+1. Öppna **säkerhets & Compliance Center** på <https://protection.office.com> .
 
-2. Navigera till **Sök** och välj **Granskningsloggsökning**.
+2. Navigera till **Sök** och välj **gransknings loggs ökning**.
 
-3. Sök (alla aktiviteter och alla användare) och ange startdatum och slutdatum om det behövs och klicka sedan på **Sök**.
+3. Sök (alla aktiviteter och alla användare) och ange start datum och slutdatum om det behövs och klicka sedan på **Sök**.
 
-4. Klicka på **Filtrera resultat** och ange Samtycke till program i fältet **Aktivitet.**
+4. Klicka på **filtrera resultat** och ange medgivande till programmet i **aktivitets** fältet.
 
-5. Klicka på resultatet för att se information om aktiviteten. Klicka på **Mer information** om du vill ha information om aktiviteten. Kontrollera om IsAdminContent är inställt på Sant.
+5. Klicka på resultatet för att visa aktivitetens uppgifter. Klicka på **Mer information** om du vill ha mer information om aktiviteten. Kontrol lera om IsAdminContent är true.
 
 > [!NOTE]
-> 
-> Det kan ta från 30 minuter upp till 24 timmar innan motsvarande granskningsloggpost visas i sökresultaten när en händelse inträffar.
-> 
-> Hur länge en granskningspost behålls och söks i granskningsloggen beror på din Microsoft 365-prenumeration och specifikt vilken typ av licens som tilldelas en viss användare. Mer information finns i [Granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-> 
-> Om det här värdet är sant anger det att någon med global administratörsåtkomst kan ha gett bred åtkomst till data. Om detta är oväntat, vidta åtgärder för att [bekräfta en attack](#how-to-confirm-an-attack).
+>
+> Det kan ta från 30 minuter upp till 24 timmar innan motsvarande Gransknings logg post visas i Sök resultatet när en händelse inträffar.
+>
+> Den tid som en gransknings post bevaras och sökbar i gransknings loggen beror på din Microsoft 365-prenumeration och speciellt typen för den licens som är tilldelad till en viss användare. Mer information finns i [Gransknings logg](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+>
+> Om det här värdet är sant betyder det att någon med global administratörs åtkomst kan ha beviljat omfattande åtkomst till data. Om det här är oväntat, vidta åtgärder för att [Bekräfta ett angrepp](#how-to-confirm-an-attack).
 
-## <a name="how-to-confirm-an-attack"></a>Så här bekräftar du en attack
+## <a name="how-to-confirm-an-attack"></a>Så bekräftar du ett angrepp
 
-Om du har en eller flera instanser av IOCs som anges ovan, måste du göra ytterligare undersökning för att positivt bekräfta att attacken inträffade. Du kan använda någon av dessa tre metoder för att bekräfta attacken:
+Om du har en eller flera instanser av IOCs ovan måste du göra ytterligare undersökningar för att bekräfta att attacket har genomförts. Du kan använda någon av följande tre metoder för att bekräfta angreppet:
 
-- Inventeringsprogram och deras behörigheter med hjälp av Azure Active Directory-portalen. Denna metod är grundlig, men du kan bara kontrollera en användare i taget som kan vara mycket tidskrävande om du har många användare att kontrollera.
+- Inventerings program och deras behörigheter med Azure Active Directory-portalen. Den här metoden är fullständig, men du kan bara kontrol lera en användare i taget, om du har många användare att kontrol lera.
 
-- Inventeringsprogram och deras behörigheter med PowerShell. Detta är den snabbaste och mest grundliga metoden, med minst mängd omkostnader.
+- Inventerings program och deras behörigheter med PowerShell. Det här är den snabbaste och mest omfattande metoden, med minsta möjliga omkostnader.
 
-- Be användarna att individuellt kontrollera sina appar och behörigheter och rapportera resultaten tillbaka till administratörerna för reparation.
+- Be dina användare individuellt kontrol lera deras appar och behörigheter och rapportera resultatet tillbaka till administratörerna för reparation.
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>Inventera appar med åtkomst i organisationen
 
-Du kan göra detta för dina användare med antingen Azure Active Directory Portal eller PowerShell eller låta användarna räkna upp sin programåtkomst individuellt.
+Du kan göra detta för dina användare med antingen Azure Active Directory-portalen eller PowerShell eller låta dina användare individuellt räkna upp sin program åtkomst.
 
-### <a name="steps-for-using-the-azure-active-directory-portal"></a>Steg för att använda Azure Active Directory Portal
+### <a name="steps-for-using-the-azure-active-directory-portal"></a>Steg för att använda Azure Active Directory-portalen
 
-Du kan slå upp de program som varje enskild användare har beviljat behörigheter till med hjälp av [Azure Active Directory Portal](https://portal.azure.com/).
+Du kan leta upp program som en enskild användare har beviljat behörigheter med via [Azure Active Directory-portalen](https://portal.azure.com/).
 
-1. Logga in på Azure Portal med administrativa rättigheter.
+1. Logga in på Azure-portalen med administratörs behörighet.
 
 2. Välj Azure Active Directory-bladet.
 
 3. Välj **Användare**.
 
-4. Markera den användare som du vill granska.
+4. Välj den användare du vill granska.
 
 5. Välj **program**.
 
-Detta visar de appar som har tilldelats användaren och vilka behörigheter programmen har.
+Då visas de program som har tilldelats till användaren och vilken behörighet de har.
 
-### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Steg för att få användarna att räkna upp sin programåtkomst
+### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Anvisningar för att låta användarna räkna upp sin program åtkomst
 
-Låt användarna gå till https://myapps.microsoft.com och granska sin egen programåtkomst där. De bör kunna se alla appar med åtkomst, visa information om dem (inklusive åtkomstomfånget) och kunna återkalla privilegier till misstänkta eller olagliga appar.
+Låt användarna gå med https://myapps.microsoft.com och granska sin egen program åtkomst där. De bör kunna se alla program med Access, Visa information om dem (inklusive åtkomstscope) och kunna återkalla behörigheter till misstänkta och olagliga appar.
 
-### <a name="steps-for-doing-this-with-powershell"></a>Steg för att göra detta med PowerShell
+### <a name="steps-for-doing-this-with-powershell"></a>Anvisningar för hur du gör detta med PowerShell
 
-Det enklaste sättet att verifiera attacken mot otillåtet samtyckesbidrag är att köra [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), som dumpar alla OAuth-samtyckesbidrag och OAuth-appar för alla användare i din hyresrätt i en CSV-fil.
+Det enklaste sättet att kontrol lera godkännandet för ett otillåtet medgivande är att köra [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)som kommer att dumpa alla behörigheter för OAuth-godkännanden och OAuth-appar för alla användare i ditt innehav i en. csv-fil.
 
 #### <a name="pre-requisites"></a>Förutsättningar
 
-- Azure AD PowerShell-biblioteket har installerats.
+- Azure AD PowerShell-biblioteket installerat.
 
-- Globala administratörsrättigheter för klienten som skriptet ska köras mot.
+- Global administratörs behörighet på innehavaren som skriptet ska köra på.
 
-- Lokal administratör på datorn som ska köra skripten från.
+- Lokal administratör på den dator som kör skripten.
 
 > [!IMPORTANT]
-> Vi ***rekommenderar starkt*** att du behöver multifaktorautentisering på ditt administrativa konto. Det här skriptet stöder MFA-autentisering.
+> Vi ***rekommenderar starkt*** att du kräver multifaktorautentisering på ditt administratörs konto. Det här manuset stöder MFA-verifikation.
 
-1. Logga in på datorn som du ska köra skriptet från med lokala administratörsrättigheter.
+1. Logga in på datorn som du kör skriptet från med lokal administratörs behörighet.
 
-2. Hämta eller kopiera [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) skriptet från GitHub till en mapp där du ska köra skriptet. Detta kommer att vara samma mapp som utdata "permissions.csv" fil kommer att skrivas.
+2. Ladda ned eller kopiera [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) -skriptet från GitHub till en mapp som du vill köra skriptet från. Det här kommer att vara samma mapp som utgångs filen "permissions.csv" skrivs till.
 
-3. Öppna en PowerShell-instans som administratör och öppna för mappen som du sparade skriptet till.
+3. Öppna en PowerShell-instans som administratör och öppna mappen där du sparade skriptet.
 
-4. Anslut till din katalog med cmdlet [connect-AzureAD.](https://docs.microsoft.com/powershell/module/azuread/connect-azuread)
+4. Anslut till din katalog med cmdleten [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) .
 
 5. Kör det här PowerShell-kommandot:
 
@@ -124,44 +124,44 @@ Det enklaste sättet att verifiera attacken mot otillåtet samtyckesbidrag är a
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-Skriptet producerar en fil med namnet Permissions.csv. Följ dessa steg för att leta efter bidrag för otillåten ansökan:
+Skriptet skapar en fil med namnet Permissions.csv. Följ de här anvisningarna för att söka efter illegala program behörigheter:
 
-1. Sök efter värdet "AllPrinciples" i kolumnen ConsentType (kolumn G). Behörigheten AllPrincipals gör att klientprogrammet kan komma åt allas innehåll i hyresrätt. Inbyggda Microsoft 365-program behöver den här behörigheten för att fungera korrekt. Alla program som inte kommer från Microsoft med den här behörigheten bör granskas noggrant.
+1. I kolumnen ConsentType (kolumn G) söker du efter värdet "AllPrinciples". Med AllPrincipals-behörigheten kan klient programmet komma åt allt innehåll i innehavet. Microsoft 365-program behöver den här behörigheten för att fungera korrekt. Alla program som inte kommer från Microsoft med den här behörigheten bör ses över noggrant.
 
-2. I kolumnen Behörighet (kolumn F) granska de behörigheter som varje delegerat program har till innehåll. Leta efter behörigheten "Läs" och "Skriv" eller "*. Alla" tillstånd, och granska dessa noggrant eftersom de kanske inte är lämpliga.
+2. I kolumnen permission (kolumn F) granska de behörigheter som varje ombuds program har till innehåll. Leta efter "Läs-och" Skriv "-behörighet eller" *. Alla "tillstånd" och Läs dessa noggrant eftersom de kanske inte är lämpliga.
 
-3. Granska de specifika användare som har beviljat medgivanden. Om användare med hög profil eller hög påverkan har fått olämpliga medgivanden, bör du undersöka vidare.
+3. Granska de specifika användare som har meddelade medgivanden. Om högkvalitativa och högkvalitativa användare har olämpligt skickade beviljade, bör du undersöka ytterligare.
 
-4. Leta efter appar som verkar misstänkta i kolumnen ClientDisplayName (kolumn C). Appar med felstavade namn, super intetsägande namn eller hackerklingande namn bör granskas noggrant.
+4. Leta efter program som verkar vara misstänkta i kolumnen ClientDisplayName (kolumn C). Appar med felstavade namn, Super bland-namn eller hackare kan ses över noggrant.
 
-## <a name="determine-the-scope-of-the-attack"></a>Bestäm omfattningen av attacken
+## <a name="determine-the-scope-of-the-attack"></a>Fastställ omfattningen för angreppet
 
-När du har slutfört lagerinventeringen av programåtkomsten granskar du **granskningsloggen** för att fastställa hela omfattningen av överträdelsen. Sök på de berörda användarna, tidsramarna som det olagliga programmet hade åtkomst till din organisation och de behörigheter som appen hade. Du kan söka i **granskningsloggen** i [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+När du har slutfört inventeringen kan du granska **gransknings loggen** för att ta reda på vad som är fallet. Sök efter berörda användare, de tids ramar som olaglig ansökan hade till gång till i organisationen och de behörigheter appen hade. Du kan söka i **gransknings loggen** i [säkerhets-och kompatibilitetstillstånd för Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 > [!IMPORTANT]
-> [Postlådegranskning](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) och [aktivitetsgranskning för administratörer och användare](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) måste ha aktiverats före attacken för att du ska få den här informationen.
+> Gransknings-och gransknings kontroll för [post lådor](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) [för administratörer och användare](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) måste ha Aktiver ATS innan det angrips för att få den här informationen.
 
-## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Hur man kan stoppa och åtgärda en olaglig samtyckessanslagsattack
+## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Så här stoppar och reparerar du en olaglig attack för godkännande
 
-När du har identifierat ett program med olagliga behörigheter har du flera sätt att ta bort åtkomsten.
+När du har identifierat ett program med olaglig behörighet kan du ta bort det på flera sätt.
 
-- Du kan återkalla programmets behörighet i Azure Active Directory Portal genom att:
+- Du kan återkalla Programets behörighet i Azure Active Directory-portalen genom att:
 
-  - Navigera till den berörda användaren i **Azure Active Directory User** blade.
+  - Navigera till den berörda användaren i användar bladet i **Azure Active Directory** .
 
   - Välj **program**.
 
-  - Välj den olagliga applikationen.
+  - Välj illegal ansökan.
 
-  - Klicka på **Ta bort** i detaljgranskningen nedåt.
+  - Klicka på **ta bort** i detalj nivån.
 
-- Du kan återkalla OAuth-medgivandet med PowerShell genom att följa stegen i [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant).
+- Du kan återkalla OAuth medgivande-beviljande med PowerShell genom att följa stegen i [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant).
 
-- Du kan återkalla tjänstapprolltilldelningen med PowerShell genom att följa stegen i [Ta bort AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).
+- Du kan återkalla roll tilldelningen för tjänst program med PowerShell genom att följa stegen i [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).
 
-- Du kan också inaktivera inloggning för det berörda kontot helt och hållet, vilket i sin tur inaktiverar appåtkomst till data i det kontot. Detta är inte idealiskt för slutanvändarens produktivitet, naturligtvis, men om du arbetar för att begränsa effekten snabbt, kan det vara en livskraftig kortsiktig sanering.
+- Du kan också inaktivera inloggning för det berörda kontot helt och hållet, som i sin tur inaktiverar program åtkomst till data på det kontot. Det här är inte idealiskt för slutanvändarens produktivitet, men om du arbetar med att begränsa effekten snabbt kan det vara en livskraftig kortsiktig åtgärd.
 
-- Du kan stänga av integrerade program för din hyresrätt. Detta är ett drastiskt steg som inaktiverar slutanvändares möjlighet att bevilja samtycke på klientomfattande basis. Detta förhindrar att användarna av misstag beviljar åtkomst till ett skadligt program. Detta rekommenderas inte starkt eftersom det allvarligt försämrar användarnas förmåga att vara produktiv med tredjepartsprogram. Du kan göra detta genom att följa stegen i [Aktivera eller inaktivera integrerade appar](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
+- Du kan stänga av integrerade program för ditt innehav. Det här är ett drastiskt steg som inaktiverar möjligheten för slutanvändarna att ge tillstånd från en klient organisation. Detta förhindrar att användarna oavsiktligt tillåter åtkomst till ett skadligt program. Detta rekommenderas inte eftersom det kraftigt försämrar användarnas förmåga att vara produktiv med tredjepartsprogram. Du kan göra det genom att följa stegen i [Aktivera eller inaktivera integrerade appar](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
@@ -175,12 +175,12 @@ Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som 
 
 ## <a name="see-also"></a>Se även:
 
-- [Oväntat program i min programlista](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) går administratörer genom olika åtgärder som de kanske vill vidta efter att ha insett att det finns oväntade program med tillgång till data.
+- [Oväntat program i listan Mina program](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) gör att administratörer genom olika åtgärder kan ta sig vidare efter att det finns oväntade program med åtkomst till data.
 
-- [Att integrera program med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) är en översikt på hög nivå över medgivande och behörigheter.
+- Att [integrera program med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) är en högkvalitativ översikt över medgivande och behörigheter.
 
-- [Problem med att utveckla mitt program](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) ger länkar till olika samtycke relaterade artiklar.
+- [Problem med att utveckla mitt program](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) ger länkar till olika godkännande relaterade artiklar.
 
-- [Principobjekt för program och tjänst i Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) ger en översikt över huvudobjekten för programmet och tjänsten som är centrala för programmodellen.
+- [Program-och tjänst huvud objekt i Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) ger en översikt över de program-och tjänst huvud objekt som är kärnan i program modellen.
 
-- [Hantera åtkomst till appar](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) är en översikt över de funktioner som administratörer har för att hantera användaråtkomst till appar.
+- [Hantera åtkomst till program](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) är en översikt över de funktioner som administratörer har för att hantera användar åtkomst till appar.

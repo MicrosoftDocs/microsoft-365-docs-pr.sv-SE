@@ -1,7 +1,7 @@
 ---
-title: IdentityInfo-tabellen i det avancerade jaktschemat
-description: Läs mer om användarkontoinformation i tabellen IdentityInfo i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AccountInfo, IdentityInfo, konto
+title: IdentityInfo-tabell i det avancerade jakt-schemat
+description: Lär dig mer om användar konto information i tabellen IdentityInfo för Advanced jakt-schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, AccountInfo, IdentityInfo, konto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,48 +17,48 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204929"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649313"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
-`IdentityInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om användarkonton som hämtats från olika tjänster, inklusive Azure Active Directory. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`IdentityInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om användar konton som hämtas från olika tjänster, inklusive Azure Active Directory. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!NOTE]
->Den här tabellen har bytt namn från `AccountInfo` . Under namnbyten uppdateras alla frågor som sparats i portalen automatiskt. Kontrollera frågor som du har sparat någon annanstans.
+>Tabellen har bytt namn från `AccountInfo` . När du byter namn uppdateras alla frågor som sparats i portalen automatiskt. Kolla frågor som du har sparat någon annan stans.
 
-Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `AccountObjectId` | Sträng | Unik identifierare för kontot i Azure AD |
-| `AccountUpn` | Sträng | Användarens huvudnamn (UPN) för kontot |
-| `OnPremSid` | Sträng | Sid-säkerhetsidentifierare (On-premises security identifier) för kontot |
-| `CloudSid` | Sträng | Molnsäkerhetsidentifierare för kontot |
-| `GivenName` | Sträng | Kontoanvändarens förnamn eller förnamn |
-| `Surname` | Sträng | Kontoanvändarens efternamn, efternamn eller efternamn |
-| `AccountDisplayName` | Sträng | Namn på den kontoanvändare som visas i adressboken. Vanligtvis en kombination av ett givet eller förnamn, en mellaninitiering och ett efternamn eller efternamn. |
-| `Department` | Sträng | Namn på den avdelning som kontoanvändaren tillhör |
-| `JobTitle` | Sträng | Befattning för kontoanvändaren |
-| `AccountName` | Sträng | Kontots användarnamn |
-| `AccountDomain` | Sträng | Kontots domän |
-| `EmailAddress` | Sträng | SMTP-adressen för kontot |
-| `SipProxyAddress` | Sträng | SIP-adressen (Voice over IP) session initiation protocol (SIP) för kontot |
-| `City` | Sträng | Stad där kontoanvändaren finns |
-| `Country` | Sträng | Land/region där kontoanvändaren finns |
-| `IsAccountEnabled` | Boolean | Anger om kontot är aktiverat eller inte |
+| `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure AD |
+| `AccountUpn` | strängvärdet | Kontots huvud namn (UPN) |
+| `OnPremSid` | strängvärdet | Lokal säkerhets identifierare (SID) för kontot |
+| `CloudSid` | strängvärdet | Moln säkerhets identifierare för kontot |
+| `GivenName` | strängvärdet | Tilldelat namn eller förnamn för konto användaren |
+| `Surname` | strängvärdet | Efter namn, familje namn eller efter namnet på konto användaren |
+| `AccountDisplayName` | strängvärdet | Namnet på kontot som visas i adress boken. Vanligt vis en kombination av ett visst eller förnamn, en mellan initiering och ett efter namn eller från gång. |
+| `Department` | strängvärdet | Namn på avdelningen som konto användaren tillhör |
+| `JobTitle` | strängvärdet | Befattning för konto användaren |
+| `AccountName` | strängvärdet | Kontots användar namn |
+| `AccountDomain` | strängvärdet | Kontots domän |
+| `EmailAddress` | strängvärdet | SMTP-adressen för kontot |
+| `SipProxyAddress` | strängvärdet | Kontots SIP-adress (Voice over IP) |
+| `City` | strängvärdet | Ort där konto användaren finns |
+| `Country` | strängvärdet | Land/region där konto användaren finns |
+| `IsAccountEnabled` | returtyp | Anger om kontot är aktiverat eller inte |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

@@ -1,7 +1,7 @@
 ---
-title: Tabellen EmailEvents i det avancerade jaktschemat
-description: Lär dig mer om händelser som är associerade med Microsoft 365-e-postmeddelanden i tabellen EmailEvents i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, bifogad filnamn, dom för skadlig kod, phishing-dom, antal bilagor, antal länkar, url-antal
+title: EmailEvents-tabell i det avancerade jakt-schemat
+description: Lär dig mer om de händelser som är kopplade till Microsoft 365-e-postmeddelanden i tabellen EmailEvents i det avancerade jakt-schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, EmailEvents, nätverks meddelande-ID, avsändare, mottagare, bifogade filer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,57 +17,57 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eefd6848e5ae0ddb077db576d55aaf9555e33729
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: c4f7f578aef3612696a8d5ab2a76111ff16d27b7
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898999"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648893"
 ---
 # <a name="emailevents"></a>EmailEvents
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-`EmailEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om händelser som involverar bearbetning av e-postmeddelanden på Office 365 ATP. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`EmailEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om händelser som rör bearbetning av e-post i Office 365 ATP. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
-| `EmailId` | Sträng | Unik e-post- och mottagaridentifierare |
-| `NetworkMessageId` | Sträng | Unik identifierare för e-postmeddelandet som genereras av Microsoft 365 |
-| `InternetMessageId` | Sträng | Offentlig identifierare för e-postmeddelandet som anges av det sändande e-postsystemet |
-| `SenderMailFromAddress` | Sträng | Avsändaradress i MAIL FROM-huvudet, även känd som kuvertavsändaren eller retursökvägsadressen |
-| `SenderFromAddress` | Sträng | Avsändare e-postadress i FRÅN-huvudet, som är synlig för e-postmottagare på deras e-postklienter |
-| `SenderMailFromDomain` | Sträng | Avsändardomän i MAIL FROM-huvudet, även känd som kuvertavsändaren eller retursökvägsadressen |
-| `SenderFromDomain` | Sträng | Avsändaredomän i FRÅN-huvudet, som är synlig för e-postmottagare på deras e-postklienter |
-| `SenderIPv4` | Sträng | IPv4-adressen för den senast identifierade e-postservern som vidarebefordrade meddelandet |
-| `SenderIPv6` | Sträng | IPv6-adressen för den senast identifierade e-postservern som vidarebefordrade meddelandet |
-| `RecipientEmailAddress` | Sträng | Mottagarens e-postadress eller mottagarens e-postadress efter utvidgning av distributionslistan |
-| `Subject` | Sträng | Ämnet för e-postmeddelandet |
-| `EmailClusterId` | Sträng | Identifierare för gruppen av liknande e-postmeddelanden grupperade baserat på heuristisk analys av deras innehåll |
-| `EmailDirection` | Sträng | E-postmeddelandets riktning i förhållande till nätverket: Inkommande, Utgående, Intra-org |
-| `DeliveryAction` | Sträng | Leveransåtgärd för e-postmeddelandet: Levererad, skräppost, blockerad eller ersatt |
-| `DeliveryLocation` | Sträng | Plats där e-postmeddelandet levererades: Inkorg/mapp, lokalt/externt, Skräppost, Karantän, Misslyckades, Tappade, Borttagna objekt |
-| `PhishFilterVerdict` | Sträng | Dom av e-filtrering stack på om e-post är phish: Phish eller inte Phish |
-| `PhishDetectionMethod` | Sträng | Metod som används för att upptäcka e-post som en phish: Skadlig URL rykte, ATP Säkra länkar URL Detonation, Avancerad phish filter, Allmänt phish filter, Anti-Parodi: Intra-org, Anti-parodi: extern domän, Domän personifiering, Användare personifiering, Brand personifiering |
-| `MalwareFilterVerdict` | Sträng | Dom av e-filtrering stacken om huruvida e-post innehåller skadlig kod: Malware, Inte skadlig kod |
-| `MalwareDetectionMethod` | Sträng | Metod som används för att upptäcka skadlig kod i e-post: Antimalware motor, File rykte, ATP säkra bilagor |
-| `FinalEmailAction` | Sträng | Slutliga åtgärder som vidtas på e-postmeddelandet baserat på filterutlåtande, principer och användaråtgärder: Flytta meddelande till skräppostmapp, Lägg till X-header, Ändra ämne, Omdirigera meddelande, Ta bort meddelande, skicka till karantän, Ingen åtgärd vidtas, Hemlig meddelande |
-| `FinalEmailActionPolicy` | Sträng | Åtgärdspolicy som trädde i kraft: Antispam högt förtroende, Antispam, Antispam bulkpost, Antispam phishing, Anti-phishing domän personifiering, Anti-phishing användare personifiering, Anti-phishing parodi, Anti-phishing graf personifiering, Antimalware, säkra bilagor, Enterprise Transport Rules (ETR) |
-| `FinalEmailActionPolicyGuid` | Sträng | Unik identifierare för den princip som fastställde den slutliga e-poståtgärden |
-| `AttachmentCount` | Int | Antal bifogade filer i e-postmeddelandet |
-| `UrlCount` | Int | Antal inbäddade webbadresser i e-postmeddelandet |
-| `EmailLanguage` | Sträng | Det identifierade språket för e-postinnehållet |
+| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
+| `EmailId` | strängvärdet | Unikt ID för e-post och mottagare |
+| `NetworkMessageId` | strängvärdet | Unik identifierare för e-postmeddelandet, genererat av Microsoft 365 |
+| `InternetMessageId` | strängvärdet | Public-Facing ID för e-postmeddelandet som anges i det sändande e-postsystemet |
+| `SenderMailFromAddress` | strängvärdet | Avsändarens e-postadress i e-postmeddelandet från huvudet, som kallas avsändare eller avsändar adress |
+| `SenderFromAddress` | strängvärdet | Avsändarens e-postadress i formuläret från som visas för e-postmottagare på sina e-postklienter |
+| `SenderMailFromDomain` | strängvärdet | Avsändarens domän i e-post från huvudet, som även kallas kuvert avsändare eller avsändar adress |
+| `SenderFromDomain` | strängvärdet | Avsändarens domän i formuläret från som visas för e-postmottagare på sina e-postklienter |
+| `SenderIPv4` | strängvärdet | IPv4-adress för den senast identifierade e-postservern som vidarebefordrade meddelandet |
+| `SenderIPv6` | strängvärdet | IPv6-adress för den senast identifierade e-postservern som vidarebefordrade meddelandet |
+| `RecipientEmailAddress` | strängvärdet | E-postadress till mottagaren eller e-postadressen till mottagaren efter expansion av distributions lista |
+| `Subject` | strängvärdet | Ämne för e-postmeddelandet |
+| `EmailClusterId` | strängvärdet | ID för gruppen med likartade e-postmeddelanden grupperade baserat på heuristisk analys av innehållet |
+| `EmailDirection` | strängvärdet | E-postmeddelandets riktning i förhållande till ditt nätverk: inkommande, utgående, inom organisationen |
+| `DeliveryAction` | strängvärdet | Leverans åtgärd för e-postmeddelandet: levererat, mottaget, blockerat eller ersatt |
+| `DeliveryLocation` | strängvärdet | Plats där e-postmeddelandet levererades: Inkorgen/mapp, lokal/extern, skräp, karantän, misslyckad, avbruten, borttaget |
+| `PhishFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stacken på om e-postmeddelandet är Phish: Phish eller icke-Phish |
+| `PhishDetectionMethod` | strängvärdet | Metod som används för att hitta e-post som en Phish: skadlig URL-rykte, säkerhet för säkert Internet ATP URL-Sprängat, Avancerat Phish-filter, Allmänt Phish-filter, programförfalskningar: intra-org, stöldskydd: extern domän, domän användning |
+| `MalwareFilterVerdict` | strängvärdet | Verdict av e-postfiltrerings stack på om e-postmeddelandet innehåller skadlig kod: skadlig kod, inte skadlig kod |
+| `MalwareDetectionMethod` | strängvärdet | Metod som används för att upptäcka skadlig program vara i e-postmeddelandet: Antiskadlig kod, fil rykte, säkra filer för ATP |
+| `FinalEmailAction` | strängvärdet | Slutgiltig åtgärd som vidtas på e-postmeddelandet baserat på filter Verdict, principer och användar åtgärder: flytta meddelande till mappen skräp post, lägga till X-rubrik, ändra ämne, omdirigera meddelande, ta bort meddelande, skicka till karantän, ingen åtgärd vidtogs, hemlig kopia |
+| `FinalEmailActionPolicy` | strängvärdet | Åtgärds policy som vidtogs: antispam hög exakthet, antispam, antispam Mass utskick, antispam nätfiske, icke-nätfiske-domän-personifiering, Antinätfiske-användare, förfalskning mot nätfiske, skydd mot nätfiske, antiskadligt, säkra bifogade filer för företags transport (Exchange) |
+| `FinalEmailActionPolicyGuid` | strängvärdet | Unik identifierare för den policy som avgjorde den slutgiltiga e-poståtgärden |
+| `AttachmentCount` | signera | Antal bilagor i e-postmeddelandet |
+| `UrlCount` | signera | Antal inbäddade URL-adresser i e-postmeddelandet |
+| `EmailLanguage` | strängvärdet | Identifierat språk för e-postinnehållet |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

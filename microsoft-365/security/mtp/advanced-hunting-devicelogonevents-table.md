@@ -1,7 +1,7 @@
 ---
-title: DeviceLogonEvents-tabellen i det avancerade jaktschemat
-description: Lär dig mer om autentiserings- eller inloggningshändelser i tabellen DeviceLogonEvents i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, logonevents, DeviceLogonEvents, autentisering, inloggning, inloggning
+title: DeviceLogonEvents-tabell i det avancerade jakt-schemat
+description: Lär dig mer om inloggningsautentisering och inloggnings händelser i tabellen DeviceLogonEvents för Advanced jakt-schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, logonevents, DeviceLogonEvents, inloggningsautentisering, inloggning, logga in
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,64 +17,64 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 67fa551fd7c2add815d5698a22b5eb3ae607f716
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 0f93199fa23a422e82019730b38fcf407e8503a3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048285"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649421"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-`DeviceLogonEvents`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om användarinloggningar och andra autentiseringshändelser på enheter. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+`DeviceLogonEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om användar inloggningar och andra autentiseringsreferenser på enheter. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
-Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
-| `DeviceId` | Sträng | Unik identifierare för maskinen i tjänsten |
-| `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för maskinen |
-| `ActionType` | Sträng |Typ av aktivitet som utlöste händelsen |
-| `AccountDomain` | Sträng | Kontots domän |
-| `AccountName` | Sträng | Kontots användarnamn |
-| `AccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot |
-| `LogonType` | Sträng | Typ av inloggningssession, särskilt:<br><br> - **Interaktiv** - Användaren interagerar fysiskt med maskinen med det lokala tangentbordet och skärmen<br><br> - **Fjärr interaktiva (RDP)-inloggningar** - Användaren interagerar med datorn på distans med fjärrskrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - **Nätverk** - Session initieras när datorn används med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** - Session initierad av schemalagda aktiviteter<br><br> - **Service** - Session initierad av tjänster när de börjar<br> |
-| `LogonId` | Sträng | Identifierare för en inloggningssession. Den här identifieraren är unik på samma dator endast mellan omstarter |
-| `RemoteDeviceName` | Sträng | Namn på den maskin som utförde en fjärråtgärd på den berörda datorn. Beroende på vilken händelse som rapporteras kan det här namnet vara ett fullständigt kvalificerat domännamn (FQDN), ett NetBIOS-namn eller ett värdnamn utan domäninformation |
-| `RemoteIP` | Sträng | IP-adress som var ansluten till |
-| `RemoteIPType` | Sträng | Typ av IP-adress, till exempel Offentlig, Privat, Reserverad, Loopback, Teredo, FourToSixMapping och Broadcast |
-| `RemotePort` | Int | TCP-porten på fjärrenheten som var ansluten till |
-| `AdditionalFields` | Sträng | Ytterligare information om händelsen i JSON-matrisformat |
-| `InitiatingProcessAccountDomain` | Sträng | Domän för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessAccountName` | Sträng | Användarnamn för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessAccountSid` | Sträng | Säkerhetsidentifierare (SID) för kontot som körde processen som var ansvarig för händelsen |
-| `InitiatingProcessIntegrityLevel` | Sträng | Integritetsnivå för den process som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de lanserades från en nedladdning på Internet. Dessa integritetsnivåer påverkar behörigheter för resurser |
-| `InitiatingProcessTokenElevation` | Sträng | Tokentyp som anger närvaron eller frånvaron av UAC-behörighetshöjning (User Access Control) som tillämpas på den process som initierade händelsen |
-| `InitiatingProcessSHA1` | Sträng | SHA-1 av processen (bildfil) som initierade händelsen |
-| `InitiatingProcessSHA256` | Sträng | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd kolumnen SHA1 när den är tillgänglig |
-| `InitiatingProcessMD5` | Sträng | MD5-hash i processen (bildfil) som initierade händelsen |
-| `InitiatingProcessFileName` | Sträng | Namn på den process som initierade händelsen |
-| `InitiatingProcessId` | Int | Process-ID (PID) för den process som initierade händelsen |
-| `InitiatingProcessCommandLine` | Sträng | Kommandorad som används för att köra processen som initierade händelsen |
-| `InitiatingProcessCreationTime` | Datetime | Datum och tid då processen som initierade händelsen startades |
-| `InitiatingProcessFolderPath` | Sträng | Mapp som innehåller processen (bildfilen) som initierade händelsen |
-| `InitiatingProcessParentId` | Int | Process-ID (PID) för den överordnade processen som gav upphov till den process som var ansvarig för händelsen |
-| `InitiatingProcessParentFileName` | Sträng | Namn på den överordnade process som gav upphov till den process som var ansvarig för händelsen |
-| `InitiatingProcessParentCreationTime` | Datetime | Datum och tid då den överordnade processen som var ansvarig för händelsen startades |
-| `ReportId` | Lång | Händelseidentifierare baserat på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp |
-| `AppGuardContainerId` | Sträng | Identifierare för den virtualiserade behållaren som används av Application Guard för att isolera webbläsaraktivitet |
-| `IsLocalAdmin` | Boolean | Boolesk indikator på om användaren är en lokal administratör på datorn |
+| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
+| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
+| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
+| `ActionType` | strängvärdet |Typ av aktivitet som utlöste händelsen |
+| `AccountDomain` | strängvärdet | Kontots domän |
+| `AccountName` | strängvärdet | Kontots användar namn |
+| `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
+| `LogonType` | strängvärdet | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** -användaren interagerar med datorn med det lokala tangent bordet och skärmen<br><br> - **Interaktivt (RDP) inloggningar** – användaren interagerar med datorn via fjärr skrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - En **nätverks** session initieras när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** Gruppsession initierad av schemalagda aktiviteter<br><br> - **Tjänst** -session initierad av tjänster allteftersom de startas<br> |
+| `LogonId` | strängvärdet | Identifierare för en inloggningssession. Detta ID är endast unikt på samma dator mellan omstarter |
+| `RemoteDeviceName` | strängvärdet | Namnet på den dator som utförde en fjärråtgärd på den påverkade datorn. Beroende på vilken händelse som rapporteras kan detta namn vara ett fullkvalificerat domän namn (FQDN), ett NetBIOS-namn eller ett värdnamn utan domän information |
+| `RemoteIP` | strängvärdet | IP-adress som var ansluten till |
+| `RemoteIPType` | strängvärdet | Typ av IP-adress, till exempel offentlig, privat, reserverad, loopback, Teredo, FourToSixMapping och broadcast |
+| `RemotePort` | signera | TCP-port på fjär renheten som du anslöt till |
+| `AdditionalFields` | strängvärdet | Ytterligare information om händelsen i JSON-mat ris format |
+| `InitiatingProcessAccountDomain` | strängvärdet | Domän för det konto som körde processen som är ansvarig för händelsen |
+| `InitiatingProcessAccountName` | strängvärdet | Användar namn för det konto som körde processen som är ansvarig för händelsen |
+| `InitiatingProcessAccountSid` | strängvärdet | Säkerhets identifierare (SID) för det konto som körde processen som är ansvarig för händelsen |
+| `InitiatingProcessIntegrityLevel` | strängvärdet | Integritets nivå för den process som initierade händelsen. Windows tilldelar integritets nivåer för processer baserat på vissa egenskaper, till exempel om de startades från en nedladdning via Internet. Dessa integritets nivåer påverkar behörigheter för resurser |
+| `InitiatingProcessTokenElevation` | strängvärdet | Tokentyp som anger närvaron av en behörighets höjning (User Access Control) som tillämpas på processen som initierade händelsen |
+| `InitiatingProcessSHA1` | strängvärdet | SHA-1 av processen (bildfil) som initierade händelsen |
+| `InitiatingProcessSHA256` | strängvärdet | SHA-256 av processen (bildfil) som initierade händelsen. Det här fältet är oftast inte ifyllt – Använd SHA1-kolumnen när det är tillgängligt |
+| `InitiatingProcessMD5` | strängvärdet | MD5-hash för processen (bildfil) som initierade händelsen |
+| `InitiatingProcessFileName` | strängvärdet | Namn på processen som initierade händelsen |
+| `InitiatingProcessId` | signera | Process-ID (PID) för processen som initierade händelsen |
+| `InitiatingProcessCommandLine` | strängvärdet | Kommando rad som används för att köra processen som initierade händelsen |
+| `InitiatingProcessCreationTime` | datetime | Datum och tid när processen som initierade händelsen startade |
+| `InitiatingProcessFolderPath` | strängvärdet | Mapp som innehåller processen (bildfil) som initierade händelsen |
+| `InitiatingProcessParentId` | signera | Process-ID (PID) för den överordnade processen som skapade processen för händelsen |
+| `InitiatingProcessParentFileName` | strängvärdet | Namnet på den överordnade process som skapade processen som är ansvarig för händelsen |
+| `InitiatingProcessParentCreationTime` | datetime | Datum och tid då den överordnade för processen som är ansvarig för händelsen startade |
+| `ReportId` | tids | Händelse identifierare baserad på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna enhets namn och tidsstämpel |
+| `AppGuardContainerId` | strängvärdet | Identifierare för den virtualiserade behållare som används av Application Guard för att isolera webbläsaren |
+| `IsLocalAdmin` | returtyp | Boolesk indikator för om användaren är lokal administratör på datorn |
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

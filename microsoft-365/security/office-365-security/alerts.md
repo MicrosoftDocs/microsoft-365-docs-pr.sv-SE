@@ -1,11 +1,11 @@
 ---
-title: Aviseringar i Säkerhetsefterlevnadscenter &amp;
+title: Aviseringar i säkerhets & efterlevnad
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 2/14/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -17,48 +17,49 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: Lär dig mer om hur du använder aviseringarna i Office 365 Security & Compliance Center för att visa och hantera aviseringar, inklusive hantering av avancerade aviseringar.
+description: Lär dig mer om hur du använder aviserings funktionerna i säkerhets & för Office 365 för att visa och hantera aviseringar, till exempel hantera avancerade aviseringar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b0c2d89f7f91e1dfcae644663c43bc6e8640f37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c51d5d58b1af64a5066e6176fb2533c91bcf6f01
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033780"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653370"
 ---
-# <a name="alerts-in-the-security-amp-compliance-center"></a>Aviseringar i Säkerhetsefterlevnadscenter &amp;
+# <a name="alerts-in-the-security--compliance-center"></a>Aviseringar i säkerhets & efterlevnad
 
-Använd aviseringarna i Security &amp; Compliance Center för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade aviseringar som en del av [Microsoft Cloud App Security översikt](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
-  
-## <a name="how-to-get-to-the-alerts-features"></a>Så här kommer du till varningsfunktionerna
+Använd aviserings funktionerna i säkerhets & Compliance Center för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade varningar som en del av [Microsofts moln program säkerhet översikt](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
 
-Aviseringar finns i &amp; Security Compliance Center. Så här kommer du till sidan.
-  
- **Så här går &amp; du direkt till Security Compliance Center:**
-  
+## <a name="how-to-get-to-the-alerts-features"></a>Så här kommer du till aviserings funktionerna
+
+Aviseringar ligger i säkerhets & Compliance Center. Så här kommer du till sidan.
+
+### <a name="to-go-directly-to-the-security--compliance-center"></a>För att gå direkt till säkerhets & Compliance Center
+
 1. Gå till [https://protection.office.com](https://protection.office.com).
-    
-2. Logga in med ditt arbets- eller skolkonto. 
-    
-3. Klicka på **Aviseringar** i den vänstra rutan om du vill se aviseringarna. 
-    
- **Så här går &amp; du till Security Compliance Center med startprogrammet:**
-  
-1. Logga in med ditt arbets- eller skolkonto. 
-    
-2. Klicka på startprogrammet i det övre vänstra hörnet och klicka sedan på **Säkerhetsefterlevnad &amp; **.
-    
-    Hittar du inte appen du söker? Från appfönstret kan du välja **Alla appar** för att se en alfabetisk lista över tillgängliga Office 365-appar. Därifrån kan du söka efter en specifik app. 
-    
-3. Klicka på **Aviseringar** i den vänstra rutan om du vill se aviseringarna. 
-    
-## <a name="alerts-features"></a>Funktioner för aviseringar
 
-I följande tabell beskrivs de verktyg som är &amp; tillgängliga under Aviseringar i Säkerhetsefterlevnadscenter. **Alerts** 
-  
-|**Verktyg**|**Beskrivning**|
-|:-----|:-----|
-|[Hantera aviseringar](../../compliance/create-activity-alerts.md) <br/> |Använd aktivitetsaviseringar för att skicka e-postmeddelanden till dig själv eller andra administratörer när användare utför specifika aktiviteter i Office 365. Aktivitetsaviseringar liknar sökning i granskningsloggen efter händelser, förutom att du får ett e-postmeddelande när en händelse som du har skapat en avisering för inträffar.  <br/> |
-|[Hantera avancerade aviseringar](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Använd funktionen **Hantera avancerade aviseringar** i Office 365 Cloud App Security för att ställa in principer som kan varna dig för misstänkt och avvikande aktivitet i Office 365. När du har avisering kan du undersöka situationer som kan vara problematiska och vid behov vidta åtgärder för att lösa säkerhetsproblem.  <br/> |
-   
+2. Logga in med ditt arbets-eller skol konto.
 
+3. Klicka på **aviseringar** i det vänstra fönstret för att Visa aviserings funktionerna.
+
+### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>Gå till sidan säkerhets & efterlevnad med Start programmet
+
+1. Logga in med ditt arbets-eller skol konto.
+
+2. Klicka på Start programmet i det övre vänstra hörnet och klicka sedan på **säkerhets & efterlevnad**.
+
+    Hittar du inte appen du söker? Från appfönstret kan du välja **Alla appar** för att se en alfabetisk lista över tillgängliga Office 365-appar. Därifrån kan du söka efter en specifik app.
+
+3. Klicka på **aviseringar** i det vänstra fönstret för att Visa aviserings funktionerna.
+
+## <a name="alerts-features"></a>Aviserings funktioner
+
+I följande tabell beskrivs de verktyg som är tillgängliga under **aviseringar** i säkerhets & Compliance Center.
+
+****
+
+|Sysprep|Beskrivning|
+|---|---|
+|[Hantera aviseringar](../../compliance/create-activity-alerts.md)|Använd aktivitets aviseringar för att skicka e-postaviseringar till dig själv eller andra administratörer när användare utför specifika aktiviteter i Office 365. Aktivitets aviseringar liknar att söka i gransknings loggen efter händelser, förutom att du kommer att skicka ett e-postmeddelande när en händelse som du har skapat en avisering om inträffar.|
+|[Hantera avancerade aviseringar](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Använd funktionen **Hantera avancerade meddelanden** i Office 365 Cloud App Security för att skapa principer som kan varna dig för misstänkt och avvikande aktivitet i Office 365. När du har blivit aviserad kan du undersöka situationer som kan vara problematiska och, om det behövs, vidta åtgärder för att lösa säkerhets problem.|
+|

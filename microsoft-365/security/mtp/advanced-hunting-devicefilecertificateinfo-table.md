@@ -1,7 +1,7 @@
 ---
-title: DeviceFileCertificateInfo-tabellen i det avancerade jaktschemat
-description: Lär dig mer om filsigneringsinformation i tabellen DeviceFileCertificateInfo i det avancerade jaktschemat
-keywords: avancerad jakt, hotjakt, cyberhotjakt, microsoft threat protection, microsoft 365, mtp, m365, sök, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, digital signatur, certifikat, filsignering, DeviceFileCertificateInfo
+title: DeviceFileCertificateInfo-tabell i det avancerade jakt-schemat
+description: Lär dig mer om fil signerings information i tabellen DeviceFileCertificateInfo för Advanced jakt-schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, digital signatur, certifikat, fil signering, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,47 +17,47 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 33f9c726839f17afbb935c6d028cc4eaa5b74843
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899321"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649457"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
-`DeviceFileCertificateInfo`Tabellen i det avancerade [jaktschemat](advanced-hunting-overview.md) innehåller information om certifikat för filsignering. I den här tabellen används data som erhållits från certifikatverifieringsaktiviteter som regelbundet utförs på filer på slutpunkter.
+`DeviceFileCertificateInfo`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om fil signerings certifikat. I den här tabellen används data som hämtats från certifikat verifierings aktiviteter regelbundet på filer på slut punkter.
 
-Information om andra tabeller i det avancerade jaktschemat [finns i den avancerade jaktreferensen](advanced-hunting-schema-tables.md).
+Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
-| `Timestamp` | Datetime | Datum och tid då händelsen spelades in |
-| `DeviceId` | Sträng | Unik identifierare för maskinen i tjänsten |
-| `DeviceName` | Sträng | Fullständigt kvalificerat domännamn (FQDN) för maskinen |
-| `SHA1` | Sträng | SHA-1 i den akt som den registrerade åtgärden tillämpades på |
-| `IsSigned` | Boolean | Anger om filen är signerad |
-| `SignatureType` | Sträng | Anger om signaturinformation lästes som inbäddat innehåll i själva filen eller lästes från en extern katalogfil |
-| `Signer` | Sträng | Information om undertecknaren av filen |
-| `SignerHash` | Sträng | Unikt hash-värde som identifierar undertecknaren |
-| `Issuer` | Sträng | Information om den utfärdande certifikatutfärdaren |
-| `IssuerHash` | Sträng | Unikt hash-värde som identifierar utfärdande certifikatutfärdaren |
-| `CertificateSerialNumber` | Sträng | Identifierare för certifikatet som är unikt för den utfärdande certifikatutfärdaren |
-| `CrlDistributionPointUrls` | Sträng |  JSON-matris med url:er för nätverksresurser som innehåller certifikat och listor över återkallade certifikat (CRL:er) |
-| `CertificateCreationTime` | Datetime | Datum och tid då certifikatet skapades |
-| `CertificateExpirationTime` | Datetime | Datum och tid då certifikatet har angetts för att upphöra att gälla |
-| `CertificateCountersignatureTime` | Datetime | Datum och tid då certifikatet kontrasignerades |
-| `IsTrusted` | Boolean | Anger om filen är betrodd baserat på resultaten av winverifytrust-funktionen, som söker efter okänd rotcertifikatinformation, ogiltiga signaturer, återkallade certifikat och andra tvivelaktiga attribut |
-| `IsRootSignerMicrosoft` | Boolean | Anger om undertecknaren av rotcertifikatet är Microsoft |
-| `ReportId` | Lång | Händelseidentifierare baserat på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna DeviceName och Timestamp. | 
+| `Timestamp` | datetime | Datum och tid när händelsen registrerades |
+| `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
+| `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
+| `SHA1` | strängvärdet | SHA-1 av filen som den inspelade åtgärden tillämpades på |
+| `IsSigned` | returtyp | Anger om filen är signerad |
+| `SignatureType` | strängvärdet | Anger om signaturinformation lästes som inbäddat innehåll i filen eller läses från en extern katalog fil |
+| `Signer` | strängvärdet | Information om undertecknaren av filen |
+| `SignerHash` | strängvärdet | Unikt hashvärde identifierar undertecknaren |
+| `Issuer` | strängvärdet | Information om utfärdande av certifikat utfärdare (CA) |
+| `IssuerHash` | strängvärdet | Unikt hashvärde identifieras som utfärdar certifikat utfärdare (CA) |
+| `CertificateSerialNumber` | strängvärdet | Identifierare för det certifikat som är unikt för den utfärdande certifikat utfärdaren (CA) |
+| `CrlDistributionPointUrls` | strängvärdet |  JSON-matris som visar URL-adresserna för nätverks resurser som innehåller certifikat och listor över återkallade certifikat (CRL) |
+| `CertificateCreationTime` | datetime | Datum och tid då certifikatet skapades |
+| `CertificateExpirationTime` | datetime | Datum och tid då certifikatet är inställt på att upphöra |
+| `CertificateCountersignatureTime` | datetime | Datum och tid då certifikatet undertecknades |
+| `IsTrusted` | returtyp | Anger om filen är betrodd baserat på resultatet av WinVerifyTrust-funktionen, som söker efter information om okända rot certifikat, ogiltiga signaturer, återkallade certifikat och andra fråge bara attribut |
+| `IsRootSignerMicrosoft` | returtyp | Anger om undertecknaren hos rot certifikatet är Microsoft |
+| `ReportId` | tids | Händelse identifierare baserad på en upprepande räknare. För att identifiera unika händelser måste den här kolumnen användas tillsammans med kolumnerna enhets namn och tidsstämpel. | 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Jakten på hot på olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md)
+- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

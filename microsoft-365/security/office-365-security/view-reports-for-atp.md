@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Hitta och använda rapporter för Office 365 Avancerat skydd för säkerhets &amp; Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 194ce245e02490a313effdeaad0715fdd8035a19
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577990"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653539"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visa rapporter för Office 365 Avancerat skydd
 
@@ -265,14 +265,17 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 Utöver de ATP-rapporter som beskrivs i det här avsnittet är flera andra rapporter tillgängliga enligt följande tabell:
 
+****
+
 |Rapport|Ämnes|
 |---|---|
 |**Explorer** (ATP-abonnemang 2) eller **real tids identifiering** (ATP-abonnemang 1)|[Hotutforskaren (och realtidsidentifieringar)](threat-explorer.md)|
 |**Säkerhets rapporter för e-post**, till exempel rapporten Top avsändare och mottagare, rapporten Spoof meddelanden och rapporten skräp identifiering.|[Visa säkerhets rapporter för e-post i säkerhets & efterlevnad](view-email-security-reports.md)|
 |**E-postflödes rapporter**, till exempel vidarebefordran, rapporten flödes schema och rapport om avsändare och mottagare.|[Visa rapporter om e-postflöden i säkerhets & Compliance Center](view-mail-flow-reports.md)|
 |**URL-spårning för säkra ATP-länkar** (endast PowerShell). Utdata från den här cmdleten visar resultaten av aktiviteter under de senaste sju dagarna.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**Resultat för e-posttrafik för EOP och ATP** (endast PowerShell). Utdata från den här cmdleten innehåller information om domäner, datum, händelse typ, riktning, åtgärd och antal meddelanden.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**Resultat för e-posttrafik för EOP och ATP** (endast PowerShell). Utdata från den här cmdleten innehåller information om domäner, datum, händelse typ, riktning, åtgärd och antal meddelanden.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**E-postdetaljerad rapporter för EOP och ATP-identifiering** (endast PowerShell). Utdata från den här cmdleten innehåller information om skadliga filer och URL-adresser, nät fiske försök, personifiering och andra potentiella hot i e-post och filer.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Vilka behörigheter behövs för att Visa ATP-rapporter?
 

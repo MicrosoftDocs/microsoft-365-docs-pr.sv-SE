@@ -1,5 +1,5 @@
 ---
-title: SIEM-serverintegrering med Microsoft 365-tjänster och -program
+title: SIEM Server integration med Microsoft 365-tjänster och-program
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,56 +16,57 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: Få en översikt över SIEM-serverintegrering (Security Information and Event Management) med dina Microsoft 365-molntjänster och -program
-ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Få en översikt över säkerhets information och SIEM Server integration med Microsoft 365-molntjänster och-program
+ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035266"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653586"
 ---
-# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Siem-serverintegration (Security Information and Event Management) med Microsoft 365-tjänster och -program
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrering av säkerhets information och Event Management (SIEM) med Microsoft 365-tjänster och-program
 
 ## <a name="summary"></a>Sammanfattning
 
-Använder eller planerar din organisation att skaffa en SIEM-server (Security Information and Event Management). Du kanske undrar hur den integreras med Microsoft 365 eller Office 365. Den här artikeln innehåller en lista över resurser som du kan använda för att integrera din SIEM-server med Microsoft 365-tjänster och -program.
+Använder du din organisation för att få en server för säkerhets information och Event Management (SIEM)? Du kanske undrar hur det är integrerat med Microsoft 365 eller Office 365. I den här artikeln finns en lista med resurser som du kan använda för att integrera din SIEM-server med Microsoft 365-tjänster och-program.
 
 > [!TIP]
-> Om du inte har en SIEM-server ännu och utforskar dina alternativ bör du överväga **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**.
+> Om du inte har en SIEM-Server ännu och utforskar dina alternativ bör du överväga **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**.
 
-## <a name="do-i-need-a-siem-server"></a>Behöver jag en SIEM-server?
+## <a name="do-i-need-a-siem-server"></a>Behöver jag en SIEM-Server?
 
-Om du behöver en SIEM-server beror på många faktorer, till exempel organisationens säkerhetskrav och var dina data finns. Microsoft 365 innehåller en mängd olika säkerhetsfunktioner som uppfyller många organisationers säkerhetsbehov utan ytterligare servrar, till exempel en SIEM-server. Vissa organisationer har särskilda omständigheter som kräver användning av en SIEM-server. Här är några exempel:
+Om du behöver en SIEM-Server beror på många faktorer, till exempel organisationens säkerhets krav och var dina data finns. Microsoft 365 innehåller en mängd olika säkerhetsfunktioner som uppfyller många organisationers säkerhets behov utan extra servrar, till exempel en SIEM-Server. Vissa organisationer har särskilda omständigheter som kräver användning av en SIEM-Server. Här är några exempel:
 
-- *Fabrikam* har visst innehåll och program lokalt, och vissa i molnet (de har en hybridmolndistribution). För att få säkerhetsrapporter över allt innehåll och alla program har Fabrikam implementerat en SIEM-server.
+- *Fabrikam* har ett visst innehåll och program i lokaler och vissa i molnet (de har en hybrid moln distribution). Fabrikam har implementerat en SIEM-Server för att få säkerhets rapporter för allt innehåll och alla program.
 
-- *Contoso* är en organisation för finansiella tjänster som har särskilt stränga säkerhetskrav. De har lagt till en SIEM-server i sin miljö för att dra nytta av det extra säkerhetsskydd de behöver.
+- *Contoso* är en finans tjänst organisation som har särskilt stränga säkerhets krav. De har lagt till en SIEM-server i sin miljö för att utnyttja det extra säkerhets skydd de kräver.
 
-## <a name="siem-server-integration-with-microsoft-365"></a>SIEM-serverintegrering med Microsoft 365
+## <a name="siem-server-integration-with-microsoft-365"></a>SIEM Server integration med Microsoft 365
 
-En SIEM-server kan ta emot data från en mängd olika Microsoft 365-tjänster och -program. I följande tabell visas flera Microsoft 365-tjänster och -program, tillsammans med SIEM-serverindata och resurser för att lära dig mer.
+En SIEM-Server kan ta emot data från en mängd olika Microsoft 365-tjänster och-program. I följande tabell visas flera Microsoft 365-tjänster och-program, tillsammans med SIEM och resurser för att få mer information.
 
-||||
+****
+
+|Microsoft 365-tjänsten eller-programmet|SIEM-Server data/metoder|Resurser för att få mer information|
 |---|---|---|
-|**Microsoft 365-tjänst eller program**|**SIEM-serveringångar/metoder**|**Resurser för att få mer information**|
-|[Office 365 Avancerat skydd](office-365-atp.md)|Granskningsloggar|[SIEM-integrering med avancerat hotskydd i Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt som finns i Azure <br/>REST API|[Dra varningar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
-|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Loggintegrering|[SIEM-integrering med Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem)|
+|[Office 365 Avancerat skydd](office-365-atp.md)|Gransknings loggar|[SIEM integrering med Office 365 Avancerat skydd för hotet](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure värd <br/>REST API|[Dra aviseringar till dina SIEM-verktyg](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Logg integrering|[SIEM integrering med säkerhet för Microsoft Cloud App](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Ta en titt på [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel levereras med kopplingar för Microsoft-lösningar. Dessa kopplingar är tillgängliga "out of the box" och ger för integration i realtid. Du kan använda Azure Sentinel med dina Microsoft Threat Protection-lösningar och Microsoft 365-tjänster, inklusive Office 365, Azure AD, Azure ATP, Microsoft Cloud App Security med mera.
+> Ta en titt på [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). Azure Sentinel kommer med anslutningar för Microsoft Solutions. Dessa kopplingar är tillgängliga "i kartongen" och möjliggör integrering i real tid. Du kan använda Azure Sentinel med Microsoft Threat Protection Solutions och Microsoft 365-tjänsterna, inklusive Office 365, Azure AD, Azure ATP, Microsoft Cloud App Security och mycket mer.
 
-### <a name="audit-logging-must-be-turned-on"></a>Granskningsloggning måste vara aktiverat
+### <a name="audit-logging-must-be-turned-on"></a>Gransknings loggning måste aktive ras
 
-Kontrollera att granskningsloggning är aktiverat innan du konfigurerar INTEGRERING av SIEM-servrar.
+Kontrol lera att gransknings loggning är aktiverat innan du konfigurerar SIEM.
 
-- För SharePoint Online, OneDrive för företag och Azure Active Directory [aktiveras granskningsloggning i Security & Compliance Center](../../compliance/turn-audit-log-search-on-or-off.md).
+- För SharePoint Online, OneDrive för företag och Azure Active Directory [aktive ras gransknings loggning i säkerhets & Compliance Center](../../compliance/turn-audit-log-search-on-or-off.md).
 
-- För Exchange Online finns i [Hantera granskning av postlådan](../../compliance/enable-mailbox-auditing.md).
+- För Exchange Online, se [hantera granskning av post låda](../../compliance/enable-mailbox-auditing.md).
 
 ## <a name="more-resources"></a>Fler resurser
 
 [Integrera säkerhetslösningar i Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
-[Integrera Microsoft Graph Security API-varningar med en SIEM](https://docs.microsoft.com/graph/security-integration)
+[Integrera Microsoft Graph-säkerhetsfunktionerna med en SIEM](https://docs.microsoft.com/graph/security-integration)
