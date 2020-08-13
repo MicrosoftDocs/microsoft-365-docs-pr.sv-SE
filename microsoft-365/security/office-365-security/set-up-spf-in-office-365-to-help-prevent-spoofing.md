@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du uppdaterar en DNS-post (Domain Name Service) för att använda en SPF-post (Sender Policy Framework) med din anpassade domän i Office 365.
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632145"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656617"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurera SPF för att förhindra förfalskning
 
@@ -61,7 +61,9 @@ Samla in följande information:
 
 1. Kom ihåg att bekanta dig med SFP-syntaxen i följande tabell.
 
-   ||Om du använder...|Vanligt för kunder?|Lägg till detta...|
+   ****
+
+   |<!-- -->|Om du använder...|Vanligt för kunder?|Lägg till detta...|
    |---|---|---|---|
    |1|Ett e-postsystem (obligatoriskt)|Vanligt. SPF-poster som startar med det här värdet.|v=spf1|
    |2|Exchange Online|Vanligt|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ Samla in följande information:
    |5|E-postsystem från tredje part|Inte vanligt|include:\<domain name\>  <br/> Domännamnet är domännamnet för e-postsystemet från tredje part.|
    |6|Lokalt e-postsystem. Till exempel Exchange Online Protection plus ett annat e-postsystem.|Inte vanligt| Använd något av följande för varje extra e-postsystem: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  Värdet för \<_IP address_\> representerar IP-adressen för det andra e-postsystemet och \<_domain name_\> är domännamnet för det andra e-postsystemet som skickar e-post för domänen.|
    |7|Ett e-postsystem (obligatoriskt)|Vanligt. Alla SPF TXT-poster som slutar med det här värdet.|\<_enforcement rule_\>  <br/> Det här kan vara ett av flera värden. Vi rekommenderar att du använder **-all**.|
+   |
 
 2. Om du inte redan har gjort det kan du skapa en SPF TXT-post med hjälp av syntaxen i tabellen:
 
