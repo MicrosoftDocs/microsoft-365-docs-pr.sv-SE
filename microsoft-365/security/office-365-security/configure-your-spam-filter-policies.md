@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372567"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656821"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -118,19 +118,24 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
      - En bockmarkering ( ![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) anger att åtgärden är tillgänglig (alla åtgärder är inte tillgängliga för alla utfall av skräppostfiltrering).
      - En asterisk ( <sup>\*</sup> ) efter bockmarkeringen anger standardåtgärden för utfallet av skräppostfiltreringen.
 
-    |||||||
-    |:---|:---:|:---:|:---:|:---:|:---:|
-    ||**Skräppost**|**Skräppost<br/>med hög<br/>konfidens**|**Nätfiske-<br/>e-post**|**Nätfiske<br/>via e-post<br/>med hög<br/>konfidens**|**Mass-<br/>utskick**|
-    |**Flytta meddelandet till mappen skräppost**: Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-    |**Lägg till X-rubrik**: Lägger till ett X-huvud i meddelandehuvudet och levererar meddelandet till postlådan. <br/> Du anger fältnamnet för X-huvudet (inte värdet) senare i rutan **Lägg till följande X-sidhuvudtext**. <br/><br/> Om utfallet är **Skräppost** eller **Skräppost med hög konfidens** flyttas meddelandet till mappen Skräppost.<sup>1,2</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-    |**Lägg till text i ämnesraden**: Lägger till text i början av meddelandets ämnesrad. Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1,2</sup> <br/> Du anger texten senare i rutan **Lägg till den här texten i ämnesraden**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Omdirigera meddelandet till e-postadressen**: Skickar meddelandet till andra mottagare istället för till avsedda mottagare. <br/> Du anger mottagarna senare i rutan **Omdirigera till den här e-postadressen**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Ta bort meddelande**: Hela meddelandet tas tyst bort, inklusive alla bifogade filer.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Sätt meddelandet i karantän**: Skickar meddelandet till karantän istället för till avsedda mottagare. <br/> Du anger senare hur länge meddelandet ska hållas kvar i karantänen i rutan **Karantän**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**Ingen åtgärd**|||||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |
+     ****
 
-    > <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).<br/>I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
+     |<span>|Skräppost|Högsta<br/>konfidens<br/>skräppost|Fiske<br/>e-post|Högsta<br/>konfidens<br/>fiske<br/>e-post|Massutskick<br/>e-post|
+     |---|:---:|:---:|:---:|:---:|:---:|
+     |**Flytta meddelandet till mappen skräppost**: Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**Lägg till X-rubrik**: Lägger till ett X-huvud i meddelandehuvudet och levererar meddelandet till postlådan. <br/> Du anger fältnamnet för X-huvudet (inte värdet) senare i rutan **Lägg till följande X-sidhuvudtext**. <br/><br/> Om utfallet är **Skräppost** eller **Skräppost med hög konfidens** flyttas meddelandet till mappen Skräppost.<sup>1,2</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**Lägg till text i ämnesraden**: Lägger till text i början av meddelandets ämnesrad. Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1,2</sup> <br/> Du anger texten senare i rutan **Lägg till den här texten i ämnesraden**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Omdirigera meddelandet till e-postadressen**: Skickar meddelandet till andra mottagare istället för till avsedda mottagare. <br/> Du anger mottagarna senare i rutan **Omdirigera till den här e-postadressen**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Ta bort meddelande**: Hela meddelandet tas tyst bort, inklusive alla bifogade filer.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Sätt meddelandet i karantän**: Skickar meddelandet till karantän istället för till avsedda mottagare. <br/> Du anger senare hur länge meddelandet ska hållas kvar i karantänen i rutan **Karantän**.|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**Ingen åtgärd**|||||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |
+
+     > <sup>1</sup> I Exchange Online flyttas meddelandet till mappen Skräppost om regeln för skräppost har aktiverats för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
+     >
+     > I fristående EOP-miljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+     >
+     > <sup>2</sup> Du kan använda det här värdet som ett villkor i e-postflödesregler (kallas även transportregler) för att filtrera eller dirigera meddelandet.
 
    - **Välj tröskelvärde**: Anger klagomålsnivån på massutskick (BCL) för ett meddelande som utlöser angiven åtgärd för utfallet **Massutskick** av skräppostfiltreringen (större än det angivna värdet, inte större än eller lika med). Ett högre värde innebär att meddelandet är mindre önskvärt (mer troligt att det liknar skräppost). Standardvärdet är 7. Mer information finns i [Massklagomålsnivå (BCL) i EOP](bulk-complaint-level-values.md) och [Vad är skillnaden mellan skräppost och massutskick?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
@@ -169,7 +174,10 @@ När du skapar en anpassad princip för skräppostskydd i Säkerhets- och efterl
 5. (Valfritt) Utöka avsnittet **Tillståndslistor** om du vill konfigurera meddelandeavsändare efter e-postadress eller e-postdomän som får hoppa över skräppostfiltrering:
 
    > [!CAUTION]
-   > • Tänk efter noga innan du lägger till domäner här. Mer information finns i [Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md). <br/><br/> • Lägg aldrig till godkända domäner (domäner som du äger) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Då skulle angripare kunna skicka e-post till din organisation som kringgår skräppostfiltreringen.
+   >
+   > - Tänk efter noga innan du lägger till domäner här. Mer information finns i [Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).
+   >
+   > - Lägg aldrig till godkända domäner (domäner som du äger) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Då skulle angripare kunna skicka e-post till din organisation som kringgår skräppostfiltreringen.
 
    - **Tillåt avsändare**: Klicka på **Redigera**. I den utfällbara rutan **Lista över tillåtna avsändare** som visas gör du följande:
 

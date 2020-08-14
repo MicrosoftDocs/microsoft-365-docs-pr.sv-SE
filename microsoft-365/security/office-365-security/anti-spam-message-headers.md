@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig mer om de fält som läggs till i meddelanden av Exchange Online Protection (EOP). De här huvudfälten innehåller information om meddelandet och hur det behandlades.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755362"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653431"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Meddelandehuvuden för antiskräppost i Microsoft 365
 
@@ -43,9 +43,10 @@ De enskilda fälten och värdena beskrivs i följande tabell.
 > [!NOTE]
 > Rubriken **X-Forefront-Antispam-Report** innehåller många olika fält och värden för rubriker. Andra fält i den här rubriken som inte beskrivs i tabellen används exklusivt av Microsofts anti-spam-team av diagnostiska skäl.
 
-|||
+****
+
+|Rubrikfält|Beskrivning|
 |---|---|
-|**Rubrikfält**|**Beskrivning**|
 |ARC|ARC-protokollet har följande rubriker: <ul><li>AAR: registrerar innehållet i rubriken för verifieringsresultat från DMARC.</li><li>AMS: denna rubrik innehåller kryptografiska signaturer för meddelandet.</li><li>AS: innehåller kryptografiska signaturer för meddelanderubriker. Den här rubriken innehåller en tagg för en kedjeverifiering som kallas "cv=", som inkluderar resultatet av kedjeverifieringen som **ingen**, **gick igenom**och **misslyckades**.</li></ul>|
 |CAT:|Kategori för den skyddspolicy som används för meddelandet: <ul><li>BULK: Bulk</li><li>DIMP: Domain Impersonation</li><li>GIMP: imitationsskydd baserat på postlådeinformation</li><li>HPHSH or HPHISH : High confidence phishing</li><li>HSPM: High confidence spam</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: User Impersonation</li><li>AMP: Anti-malware</li><li>SAP: Säkra bifogade filer</li><li>OSPM: Utgående skräppost</li></ul><br/>Ett inkommande meddelande kan flaggas av flera olika typer av skydd och flera identifieringsgenomsökningar. Policyer har olika prioriteringar och den policy som har högst prioritet kommer att tillämpas först. Se [Vilken policy gäller när flera skyddsmetoder och identifieringsgenomsökningar körs på din e-post](how-policies-and-protections-are-combined.md) för mer information.|
 |CIP: \[IP-adress\]|Den anslutande IP-adressen. Du kan använda den här IP-adressen i listan över tillåtna IP-adresser eller IP-adresser som ska blockeras. Mer information finns i [konfigurera anslutningsfilter](configure-the-connection-filter-policy.md).|
@@ -75,9 +76,10 @@ De enskilda fälten och värdena beskrivs i följande tabell.
 
 Följande tabell beskriver användbara fält i meddelanderubriken **X-Microsoft-Antispam**. Andra fält i den här rubriken används exklusivt av Microsofts anti-spam-team av diagnostiska skäl.
 
-|||
+****
+
+|Rubrikfält|Beskrivning|
 |---|---|
-|**Rubrikfält**|**Beskrivning**|
 |BCL|Meddelande BCL (Bulk Complaint Level). En högre BCL anger att ett massutskick (som också kallas _grå e-post_) är mer sannolikt att skapa klagomål (och därmed med större sannolikhet skräppost). Se [Klagomålsnivå på massutskick (BCL)](bulk-complaint-level-values.md) för mer information.|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 Denna tabell beskriver fälten och möjliga värden för varje autentiseringskontroll av e-post.
 
-|||
+****
+
+|Rubrikfält|Beskrivning|
 |---|---|
-|**Rubrikfält**|**Beskrivning**|
 |åtgärd|Anger att den åtgärd som utförs av skräppostfiltret baseras på resultaten av DMARC-kontrollen. Till exempel: <ul><li>**oreject** eller **o.reject**: står för override reject. I detta fall använder Microsoft 365 åtgärden när det tar emot ett meddelande som misslyckas med DMARC-kontrollen från en domän vars DMARC TXT-register har en policy av p=reject. I stället för att ta bort eller avvisa meddelandet markerar Microsoft 365 meddelandet som skräppost. Se [Så hanterar Microsoft 365 inkommande e-postmeddelanden som inte går igenom DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc) för mer information om varför Microsoft 365 är konfigurerat på det viset.</li><li>**pct.quarantine**: anger att en procentsats på mindre än 100 % av meddelanden som inte går igenom DMARC kommer att levereras ändå. Det innebär att meddelandet inte gick igenom DMARC och att policyn ställdes in på karantän, men fältet PCT var inte inställt på 100 % och systemet bestämde sig slumpmässigt för att inte tillämpa DMARC-åtgärden enligt principen för den angivna domänen.</li><li>**pct.reject**: anger att en procentsats på mindre än 100 % av meddelanden som inte går igenom DMARC kommer att levereras ändå. Det innebär att meddelandet inte gick igenom DMARC och att policyn ställdes in på att avslå, men fältet PCT var inte inställt på 100 % och systemet bestämde sig slumpmässigt för att inte tillämpa DMARC-åtgärden enligt principen för den angivna domänen.</li><li>**PermError**: ett permanent fel uppstod när DMARC utvärderades, t. ex. ett felaktigt utformat DMARC register i DNS. Att försöka skicka meddelandet igen ger antagligen samma resultat. Försök istället att kontakta domänens ägare för att lösa problemet.</li><li>**temperror**: ett temporärt fel inträffade under DMARC-utvärderingen. Du kanske kan begära att avsändaren skickar meddelandet igen senare för att bearbeta e-postmeddelandet ordentligt.</li></ul>|
 |compauth|Resultat av sammansatt autentisering. Används av Microsoft 365 för att kombinera flera typer av autentisering som SPF, DKIM, DMARC eller andra delar av meddelandet för att avgöra huruvida meddelandet är autentiserat eller inte. Använder Från:-domänen som grund för utvärderingen.|
 |dkim|Beskriver resultaten av meddelandets DKIM-kontroll. Möjliga värden inkluderar: <ul><li>**pass**: anger att meddelandet gick igenom DKIM-kontrollen.</li><li>**fail (orsak)**: anger att meddelandet inte gick igenom DKIM-kontrollen och varför. Om du till exempel inte har signerat meddelandet eller om signaturen inte har verifierats.</li><li>**none**: anger att meddelandet inte signerats. Detta indikerar kanske, men kanske inte, att domänen har ett DKIM-register eller att DKIM-registret inte utvärderats till ett resultat, endast att meddelandet inte signerats.</li></ul>|

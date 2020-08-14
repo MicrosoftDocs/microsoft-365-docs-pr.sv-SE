@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Avancerat skydd innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
-ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434055"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653611"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Avancerat skydd
 
@@ -45,9 +45,11 @@ Office 365 Avancerat skydd (ATP) skyddar din organisation mot skadliga hot som k
 
 I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
-| Office 365 ATP-abonnemang 1 | Office 365 ATP-abonnemang 2 |
+****
+
+|Office 365 ATP-abonnemang 1|Office 365 ATP-abonnemang 2|
 |---|---|
-|Funktioner för konfiguration, skydd och identifiering:<br/>• [Säkra bifogade filer](atp-safe-attachments.md)<br/>• [Säkra länkar](atp-safe-links.md)<br/>• [ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP-skydd mot nätfiske](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Identifiering i realtid](threat-explorer.md)|Funktioner i Office 365 ATP-abonnemang 1<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:<br/>• [Hotspårare](threat-trackers.md)<br/>• [Hotutforskaren](threat-explorer.md)<br/>• [Automatisk undersökning och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Attacksimulator](attack-simulator.md)|
+|<br/>Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](atp-safe-attachments.md)</li><li>[Säkra länkar](atp-safe-links.md)</li><li>[ATP för SharePoint, OneDrive och Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[ATP-skydd mot nätfiske](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Funktioner i Office 365 ATP-abonnemang 1<br/>--- plus ---<br/>Funktioner för automatisering, undersökning, reparationer och utbildning:</li><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
 |
 
 - Office 365 ATP-abonnemang 2 ingår i Office 365 E5, Office 365 A5 och Microsoft 365 E5.
@@ -112,11 +114,11 @@ Office 365 ATP-abonnemang 2 inkluderar förstklassiga [verktyg för undersöknin
 För att få åtkomst till ATP-funktioner i Säkerhets- och efterlevnadscentret måste du vara tilldelad en lämplig roll. Följande tabell innehåller några exempel:
 
 |Roll eller rollgrupp|Resurser för att få mer information|
-|---------|---------|
-|Global administratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter) |[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter) |[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
+|---|---|
+|Global administratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter)|[Om administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i Säkerhets- och efterlevnadscenter)|[Administratörens rollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
 |Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
-|Sök och rensa (det här är bara tilldelat i Säkerhets- och efterlevnadscenter) |[Behörigheter i Säkerhets- och efterlevnadscenter] (permissions-in-the-security-and-compliance-center.md|
+|Sök och rensa (det här är bara tilldelat i Säkerhets- och efterlevnadscenter)|[Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)|
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 

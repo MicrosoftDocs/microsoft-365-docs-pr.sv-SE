@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577854"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653419"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -129,8 +129,7 @@ E-postlistor (även kallade diskussionslistor) är kända för att ha problem me
 
 Anta till exempel att Gabriela Laureano (glaureano@contoso.com) är intresserad av fågelskådning och går med i diskussionslistan fagelskadare@fabrikam.com. och skickar följande meddelande till listan:
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br/> 
-**Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <br/><br/>Vem vill kolla in denna veckas bilder från Mt. Rainier?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Till:** Birdwatcherens diskussions lista \<birdwatchers@fabrikam.com\> <br/> **Ämne:** Fantastiska bilder av blåskrika på Mt. Rainier denna vecka <br/><br/>Vem vill kolla in denna veckas bilder från Mt. Rainier?
 
 E-postlistans server tar emot meddelandet, ändrar innehållet och skickar tillbaka det till medlemmarna i listan. Det återgivna meddelandet har samma Från:-adress (glaureano@contoso.com) men en tagg har lagts till i ämnesraden och en sidfot har lagts till längst ned i meddelandet. Den här typen av ändringar är vanliga i distributionslistor och kan leda till falska positiva identifieringar av förfalskning.
 

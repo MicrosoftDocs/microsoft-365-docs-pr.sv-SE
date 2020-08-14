@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 633473206ebe95c14e351607175405988a933540
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588010"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652843"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Behörigheter i efterlevnadscentret i Microsoft 365 och säkerhetscentret i Microsoft 365
 
@@ -34,14 +34,17 @@ När den globala administratören har tilldelat dessa administratörsroller får
 
 De roller som visas i efterlevnadscentret i Microsoft 365 och säkerhetscentret i Microsoft 365 är Azure Active Directory-roller. Rollerna är utformade för att passa ihop med jobbfunktioner i din organisations IT-grupp, vilket gör det enkelt att ge en person alla de behörigheter som krävs för att få jobbet gjort.
 
-|**Roll**|**Beskrivning**|
-|:-----|:-----|
+****
+
+|Roll|Beskrivning|
+|---|---|
 |**Global administratör**|Användare som har den här rollen har tillgång till alla administrativa funktioner i alla Microsoft 365-tjänster. Det är bara globala administratörer som kan tilldela andra administratörsroller.|
 |**Administratör för efterlevnadsdata**|Användare som har den här rollen kan hålla reda på organisationens data i Microsoft 365, se till att de skyddas och få insikter om problem för att minska riskerna.|
 |**Efterlevnadsadministratör**|Användare som har den här rollen kan hjälpa din organisation att efterleva föreskrifter, hantera eDiscovery-ärenden och underhålla datastyrningsprinciper för Microsoft 365-platser, identiteter och appar.|
 |**Säkerhetsoperatör**|Användare som har den här rollen kan visa, undersöka och reagera på aktiva hot för dina Microsoft 365-användare, enheter och innehåll.|
 |**Säkerhetsläsare**|Användare som har den här rollen kan visa och undersöka aktiva hot mot dina Microsoft 365-användare, enheter och innehåll, men (i motsats till säkerhetsoperatören) har de inte behörighet att svara genom att vidta åtgärder.|
 |**Säkerhetsadministratör**|Användare som har den här rollen kan styra organisationens allmänna säkerhet genom att hantera säkerhetsprinciper, granska säkerhetsanalyser och -rapporter i Microsoft 365-produkter och hålla sig uppdaterade om hotet.|
+|
 
 ## <a name="what-the-microsoft-365-roles-have-access-to"></a>Det här har Microsoft 365-rollerna tillgång till
 
@@ -55,32 +58,40 @@ Användare som har den här rollen har tillgång till alla administrativa funkti
 
 Användare som har den här rollen har behörighet att hantera efterlevnadsrelaterade funktioner i Microsoft 365 Efterlevnadscenter, Administrationscenter för Microsoft 365, Azure och Säkerhets- och efterlevnadscenter. Användare kan även hantera alla funktioner i administrationscentret för Exchange och Administrationscenter för Teams och Skype för företag och skapa supportärenden för Azure och Microsoft 365.
 
-|**I den här tjänsten...**|**kan efterlevnadsadministratören...**|
-|:-----|:-----|
+****
+
+|I den här tjänsten...|Kan efterlevnadsadministratören...|
+|---|---|
 |[**Efterlevnadscentret i Microsoft 365**](https://compliance.microsoft.com/)|Skydda och hantera organisationens data i Microsoft 365-tjänsterna. <br/><br/> Hantera aviseringar om efterlevnad.|
 |[**Efterlevnadspoäng**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Spåra, tilldela och verifiera organisationens aktiviteter för regelefterlevnad.|
 |[**Säkerhets- och efterlevnadscenter**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Hantera datastyrning. <br/><br/> Utföra rätts- och dataundersökningar. <br/><br/> Hantera begäran från registrerad person.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visa alla Intune-granskningsdata.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Har skrivskyddad behörighet och kan hantera aviseringar. <br/><br/> Kan skapa och ändra filprinciper och tillåta åtgärder för filstyrning. <br/><br/> Kan visa alla inbyggda rapporter under datahantering.|
+|
 
 ### <a name="compliance-data-administrator"></a>Administratör för efterlevnadsdata
 
 Användare som har den här rollen har behörighet att skydda och spåra data i efterlevnadscentret i Microsoft 365, Administrationscenter för Microsoft 365 och Azure. Användare kan även hantera alla funktioner i Administrationscenter för Exchange och Administrationscenter för Teams och Skype för företag och skapa supportärenden för Azure och Microsoft 365.
 
-|**I den här tjänsten...**|**Administratören för efterlevnadsdata kan...**|
-|:-----|:-----|
+****
+
+|I den här tjänsten...|Kan administratören för efterlevnadsdata...|
+|---|---|
 |[**Efterlevnadscentret i Microsoft 365**](https://compliance.microsoft.com/)|Skydda och hantera organisationens data i Microsoft 365-tjänsterna. <br/><br/> Hantera aviseringar om efterlevnad. <br/><br/> Hantera känslighetsetiketter|
 |[**Efterlevnadspoäng**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Spåra, tilldela och verifiera organisationens aktiviteter för regelefterlevnad.|
 |[**Säkerhets- och efterlevnadscenter**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Hantera datastyrning. <br/><br/> Utföra rätts- och dataundersökningar. <br/><br/> Hantera begäran från registrerad person. <br/><br/> Hantera känslighetsetiketter|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (kommer snart)|Visa alla Intune-granskningsdata.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Använda läsbehörigheter för att visa information. <br/>Hantera aviseringar. <br/><br/> Skapa och ändra filprinciper och tillåta åtgärder för filstyrning. <br/><br/> Visa alla inbyggda rapporter under datahantering.|
+|
 
 ### <a name="security-administrator"></a>Säkerhetsadministratör
 
 Användare som har den här rollen har behörighet att hantera säkerhetsrelaterade funktioner i Microsoft 365 Säkerhetscenter, Azure Active Directory Identity Protection, Azure Information Protection och Säkerhets- och efterlevnadscenter.
 
-|**I den här tjänsten...**|**Säkerhetsadministratören kan...**|
-|:-----|:-----|
+****
+
+|I den här tjänsten...|Kan säkerhetsadministratören...|
+|---|---|
 |[**Microsoft 365 Säkerhetscenter**](https://security.microsoft.com/)|Övervaka säkerhetsrelaterade principer i Microsoft 365-tjänster. <br/><br/>  Hantera säkerhetshot och aviseringar. <br/><br/> Visa rapporter. <br/><br/> Hantera känslighetsetiketter.|
 |**Identity Protection Center**|Utföra allt som säkerhetsläsarrollen kan samt utföra alla åtgärder i Identity Protection Center, utom att återställa lösenord.|
 |[**Priviligierad identitetshantering**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Utföra allt som säkerhetsläsarrollen kan. <br/><br/> **Kan inte** hantera rolltilldelningar och inställningar för Azure AD.|
@@ -91,13 +102,16 @@ Användare som har den här rollen har behörighet att hantera säkerhetsrelater
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Lägga till administratörer, lägga till principer och inställningar, ladda upp loggar och utföra styrningsåtgärder.|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (kommer snart)|Visa säkerhetsprinciper, visa säkerhetstillstånd, redigera säkerhetsprinciper, visa aviseringar och rekommendationer, stänga av varningar och rekommendationer.|
 |[**Office 365-tjänststatus**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|
 
 ### <a name="security-operator"></a>Säkerhetsoperatör
 
 Användare som har den här rollen kan hantera aviseringar och har global skrivskyddad åtkomst till säkerhetsrelaterade funktioner, inklusive all information i Microsoft 365 Säkerhetscenter, Azure Active Directory, Identity Protection, Privileged Identity Management och möjlighet att läsa Azure Active Directory-inloggningsrapporter och granskningsloggar samt i Säkerhets- och efterlevnadscenter.
 
-|**I den här tjänsten...**|**Säkerhetsoperatören kan...**|
-|:-----|:-----|
+****
+
+|I den här tjänsten...|Kan säkerhetsoperatören...|
+|---|---|
 |[**Microsoft 365 Säkerhetscenter**](https://security.microsoft.com/)|Utföra allt som säkerhetsläsarrollen kan. <br/><br/> Visa, undersöka och reagera på säkerhetshot.|
 |**Identity Protection Center** (kommer snart)|Utföra allt som säkerhetsläsarrollen kan.|
 |[**Priviligierad identitetshantering**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Utföra allt som säkerhetsläsarrollen kan.|
@@ -106,13 +120,16 @@ Användare som har den här rollen kan hantera aviseringar och har global skrivs
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visar information om användare, enheter, registrering, konfiguration och program. <br/><br/> **Kan inte** göra ändringar i Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Utföra allt som säkerhetsläsarrollen kan, plus visa och stänga av varningar.|
 |[**Office 365-tjänststatus**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|
 
 ### <a name="security-reader"></a>Säkerhetsläsare
 
 Användare som har den här rollen har global skrivskyddad åtkomst till säkerhetsrelaterade funktioner, inklusive all information i Microsoft 365 Säkerhetscenter, Azure Active Directory, Identity Protection, Privileged Identity Management och möjlighet att läsa Azure Active Directory-inloggningsrapporter och granskningsloggar samt i Säkerhets- och efterlevnadscenter.
 
-|**I den här tjänsten...**|**Säkerhetsläsaren kan...**|
-|:-----|:-----|
+****
+
+|I den här tjänsten...|Kan säkerhetsläsaren...|
+|---|---|
 |[**Microsoft 365 Säkerhetscenter**](https://security.microsoft.com/)|Visa säkerhetsrelaterade principer i Microsoft 365-tjänster. <br/><br/> Visa säkerhetshot och aviseringar. <br/><br/> Visa rapporter.|
 |**Identity Protection Center**|Läsa alla säkerhetsrapporter och inställningsinformation för säkerhetsfunktioner: skydd mot skräppost, kryptering, skydd mot dataförlust (DLP), skydd mot skadlig programvara, avancerat hotskydd (ATP), skydd mot nätfiske och regler för e-postflöde (kallas även för transportregler).|
 |[**Priviligierad identitetshantering**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Använda skrivskyddad åtkomst för att visa all information som finns i Azure AD PIM: principer och rapporter för Azure AD-resurstilldelningar, säkerhetsgranskningar och (i framtiden) principdata och -rapporter för andra scenarier än rolltilldelning i Azure AD. <br/><br/> **Kan inte** registrera sig för Azure AD PIM eller göra ändringar i tjänsten. I PIM-portalen eller via PowerShell kan någon med den här rollen aktivera ytterligare roller (till exempel global administratör eller administratör för privilegierad roll), om användaren är behörig.|
@@ -122,6 +139,7 @@ Användare som har den här rollen har global skrivskyddad åtkomst till säkerh
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Använda läsbehörigheter för att visa information. <br/><br/> Hantera aviseringar.|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Visa rekommendationer och aviseringar. <br/><br/> Visa säkerhetsprinciper. <br/><br/> Visa säkerhets tillstånd, men kan inte göra ändringar.|
 |[**Office 365-tjänststatus**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>Globala administratörer kan hantera roller i Azure Active Directory
 
@@ -147,8 +165,10 @@ Det här kan vara användbart t. ex. om en person har tilldelats rollen som säk
 
 Genom att tilldela en användare någon av rollerna som efterlevnads- eller säkerhetsadministratör i Microsoft 365, ger du användaren behörighet till en uppsättning Microsoft 365-tjänster. Använd länkarna nedan om du vill ha mer information om de olika behörigheterna för en roll i respektive tjänst.
 
-|**Microsoft 365-tjänsten**|**Rollinformation**|
-|:-----|:-----|
+****
+
+|Microsoft 365-tjänsten|Rollinformation|
+|---|---|
 |Administratörsroller i Office 365 och Microsoft 365 Business-abonnemang|[Administratörsroller i Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) och Azure AD-identitetsskydd|[Administratörsroller för Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Azure ATP-rollgrupper](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
@@ -164,6 +184,7 @@ Genom att tilldela en användare någon av rollerna som efterlevnads- eller säk
 |SharePoint Online|[Administratörsroller för Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [Om SharePoint-administratörsrollen i Office 365](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|
 |Teams/Skype för företag|[Administratörsroller för Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Windows Defender – avancerat skydd mot hot|[Rollbaserad åtkomstkontroll för Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
+|
 
 ## <a name="what-is-coming-soon"></a>Det här kommer snart
 
