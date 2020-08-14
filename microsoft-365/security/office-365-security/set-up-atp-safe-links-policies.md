@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra Länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint-och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: 4aa6947af114856d73c3e048b829daf8f47f0f48
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652651"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662260"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera principer för säkra Office 365 ATP-länkar
 
@@ -82,13 +82,13 @@ När du har [Office 365 Avancerat skydd](office-365-atp.md)har du en standard pr
 5. Välj (eller avmarkera) de alternativ som du vill använda i avsnittet **inställningar som gäller förutom e-postadress** . (Vi rekommenderar att du markerar alla alternativ.)
 
 6. Välj **Save**.
+    
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>Steg 3: lägga till (eller redigera) principer för säkra anslutningar för ATP som gäller för alla eller vissa e-postmottagare
 
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Steg 3: lägga till (eller redigera) principer för säkra anslutningar för ATP som gäller för specifika e-postmottagare
-
-När du har granskat (eller redigerat) standard policyn för Safet säkerhet för ATP som gäller för alla, nästa steg är att definiera ytterligare principer som gäller för specifika mottagare. Du kan till exempel ange undantag för standard principen genom att definiera en ytterligare princip.
-
-1. Gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto.
-
+När du har granskat (eller redigerat) standard policyn för Safet säkerhet för ATP som gäller för alla är nästa steg att definiera ytterligare principer som gäller för alla eller specifika e-postmottagare. Du kan till exempel ange undantag för standard principen genom att definiera en ytterligare princip eller skapa mer detaljerade begränsningar för alla anställda.
+  
+1. Gå till <https://protection.office.com> och logga in med ditt arbets-eller skol konto. 
+    
 2. I det vänstra navigerings fältet under **Threat Management**väljer du **policy**.
 
 3. Välj **Safe Links**.
@@ -120,7 +120,7 @@ När du har granskat (eller redigerat) standard policyn för Safet säkerhet fö
 6. Välj **Save**.
 
 > [!NOTE]
-> Principer för Safet ATP-länkar med högre prioritet prioriteras. Om en användare lyder under två eller fler principer träder den i kraft.
+> Principer för Safet ATP-länkar med högre prioritet prioriteras. Om en användare lyder i två eller fler principer kommer bara den högre prioritets principen att träda i kraft. Om du vill att kund policyn ska ha högre prioritet måste du höja prioriteten för policyn.
 
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Steg 4: Lär dig mer om princip alternativ för att skydda ATP
 
