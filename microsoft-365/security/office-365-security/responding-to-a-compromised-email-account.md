@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
-ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527786"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674620"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
@@ -68,11 +68,8 @@ Om en användare rapporterar något av ovanstående symptom bör du utföra ytte
 - **Inloggningsloggar för Azure AD och andra riskrapporter på Azure AD-portalen**: Granska värdena i följande kolumner:
 
   - Granska IP-adress
-
   - inloggningsplatser
-
   - inloggningstider
-
   - lyckad eller misslyckad inloggning
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Så kan du skydda och återställa e-postfunktionen till ett konto eller en postlåda i Microsoft 365 som misstänks ha komprometterats
@@ -85,31 +82,31 @@ Du måste utföra alla följande steg för att återta åtkomsten till ditt kont
 
 ### <a name="step-1-reset-the-users-password"></a>Steg 1 Återställ användarens lösenord
 
-> [!WARNING]
-> Skicka inte det nya lösen ordet till den avsedda användaren via e-post, eftersom angriparen fortfarande har tillgång till postlådan.
+Följ anvisningarna i [återställa ett företags lösen ord för någon](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
-1. Följ rutinerna för att återställa ett lösenord för Microsoft 365-appar för företag för någon annan i [Återställa lösenord för Microsoft 365-appar för företag](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
-
-**Anmärkningar**:
-
-- Kontrollera att lösenordet är starkt och att det innehåller gemener, versaler, minst en siffra och minst ett specialtecken.
-
-- Återanvänd aldrig något av ditt senaste fem lösenord. Även om kravet för lösenordshistorik gör att du kan återanvända ett lösenord du använt nyligen bör du välja något som angriparen inte kan gissa.
-
-- Om din lokala identitet är federerad med Microsoft 365 måste du ändra ditt lösenord lokalt och därefter informera administratören om skadan.
-
-> [!TIP]
-> Vi rekommenderar att du aktiverar multifaktorautentisering (MFA) för att förhindra kompromettering, i synnerhet för konton med administratörsbehörigheter.  Mer information om MFA finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> [!IMPORTANT]
+>
+> - Skicka inte det nya lösen ordet till den avsedda användaren via e-post, eftersom angriparen fortfarande har tillgång till postlådan.
+>
+> - Kontrollera att lösenordet är starkt och att det innehåller gemener, versaler, minst en siffra och minst ett specialtecken.
+>
+> - Återanvänd aldrig något av ditt senaste fem lösenord. Även om kravet för lösenordshistorik gör att du kan återanvända ett lösenord du använt nyligen bör du välja något som angriparen inte kan gissa.
+>
+> - Om din lokala identitet är federerad med Microsoft 365 måste du ändra ditt lösenord lokalt och därefter informera administratören om skadan.
+>
+> - Se till att uppdatera applösenord. Applösenord återkallas inte automatiskt när ett lösenord för ett användarkonto återställs. Användaren ska ta bort befintliga applösenord och skapa nya. För instruktioner, se [Skapa och ta bort applösenord från sidan Ytterligare säkerhetsverifiering](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+>
+> - Vi rekommenderar att du aktiverar multifaktorautentisering (MFA) för att förhindra kompromettering, i synnerhet för konton med administratörsbehörigheter. Mer information om MFA finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Steg 2 Ta bort misstänkta adresser för vidarebefordran av e-post
 
-1. Öppna **administrationscentret för Microsoft 365 > Aktiva användare**.
+1. Öppna Administrationscenter för Microsoft 365 på <https://admin.microsoft.com>
 
-2. Leta reda på användarkontot i fråga och visa **E-postinställningar**.
+2. Gå till **användare** \> **aktiva användare**. Hitta användarkontot i fråga och välj användare (rad) utan att markera kryssrutan.
 
-3. Under **Vidarebefordran av e-post** klickar du på **Redigera**.
+3. I den information som visas, väljer du fliken **e-post**.
 
-4. Ta bort eventuella misstänkta vidarebefordringsadresser.
+4. Om värdet i avsnittet **vidarebefordra e-post** **tillämpas**klickar du på **hantera e-postvidarebefordran**. I **Hantera e vidarebefordran** flyout som visas klart **vidarebefordra all e-post som skickas till denna brevlåda**, och klicka sedan på **Spara ändringar**.
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Steg 3 Inaktivera alla misstänkta inkorgsregler
 
@@ -132,50 +129,50 @@ Om du vill tillåta att en postlåda skickar e-post igen följer du procedurerna
 > [!IMPORTANT]
 > Du kan blockera inloggning på det misstänkt komprometterade kontot tills du anser att det är säkert att aktivera åtkomst igen.
 
-1. Gå till administrationscentret för Microsoft 365.
+1. Öppna Administrationscenter för Microsoft 365 och gå till **användare** \> **aktiva användare**.
 
-2. I administrationscentret för Microsoft 365 väljer du **Användare**.
+2. Hitta och välj användarkontot, klicka på ![More-ikonen](../../media/ITPro-EAC-MoreOptionsIcon.png) och välj sedan **Redigera inloggningsstatus**.
 
-3. Markera den anställda du vill blockera och välj sedan **Redigera** bredvid **Inloggningsstatus** i användarfönstret.
+3. I fönstret **blockera inloggning** väljer du **blockerar användaren från sigining i**, och klickar sedan på **Spara ändringar**.
 
-4. I fönstret **Inloggningsstatus** väljer du **Inloggning blockerad** och sedan **Spara**.
+4. Öppna Exchange administrations centret (EAC) på <admin.protection.outlook.com/ecp/> och gå till **Mottagare> Mailboxes**.
 
-5. I det nedre vänstra navigeringsfönstret i administrationscentret expanderar du **Administratörscentra** och väljer **Exchange**.
+5. Hitta och välj markera användaren. Gör följande steg i detaljrutan:
 
-6. I administrationscentret för Exchange går du till **Mottagare > Postlådor**.
+   - Gör följande steg i avsnittet **Telefon- och röstfunktioner**:
 
-7. Markera användaren och under **Mobila enheter** på sidan med användaregenskaper klickar du på **Inaktivera Exchange ActiveSync** och **Inaktivera OWA för enheter** och svarar **Ja** på båda.
+     - Välj **inaktivera Exchange ActiveSync** och klicka sedan på **Ja** i varningen som visas.
+     - Välj **inaktivera OWA för enheter** och klicka sedan på **Ja** i varningen som visas.
 
-8. Under **E-postanslutning** väljer du **Inaktivera** och svarar **Ja**.
+   - Gå till avsnittet **e-postanslutning** för Outlook på webben. Klicka på **inaktivera** och klicka sedan på **Ja** i varningen som visas.
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Steg 6 valfritt: Ta bort det misstänkt komprometterade kontot från alla administrativa rollgrupper
 
 > [!NOTE]
 > Medlemskap i administratörsgruppen kan återställas när kontot har skyddats.
 
-1. Logga in på administrationscentret för Microsoft 365 med ett globalt administratörskonto och öppna **Aktiva användare**.
+1. Logga in med ett globalt administratörskonto:
 
-2. Leta reda på det misstänkt komprometterade kontot och kontrollera manuellt om det finns några administrativa roller som tilldelats kontot.
+2. Gör följande steg i Administrationscenter för Microsoft 365:
 
-3. Öppna **Säkerhets- och efterlevnadscenter**.
+   1. Gå till **användare** \> **aktiva användare**.
+   2. Hitta och välj användarkontot, klicka på ![More-ikonen](../../media/ITPro-EAC-MoreOptionsIcon.png) och välj sedan **Hantera roller**.
+   3. Ta bort alla administrativa roller som tilldelas kontot. När du är klar klickar du på **Spara ändringar**.
 
-4. Klicka på **Behörigheter**.
+3. I säkerhets & Compliance Center på <https://protection.office.com>gör du så här:
 
-5. Granska rollgrupperna manuellt för att se om det misstänkt komprometterade kontot är medlem i någon av dem.  Om så är fallet:
+   Välj **behörigheter**. Välj varje roll grupp i listan och leta efter användar kontot i **Medlemmar** delen av den information som visas. Om rollgruppen innehåller användarkontot gör du följande steg:
 
-   a. Klicka på rollgruppen och klicka på **Redigera rollgrupp**.
+   a. Klicka på **redigera** bredvid **medlemmar**.
+   b. I **redigerar väljer du medlemmar** utfällbar som visas klickar du på **redigera**.
+   c. I **Välj medlemmar** utfällbar som visas väljer du användar konto och klickar sedan på **ta bort**. När du är klar klickar du på **klar** **Spara**och **sedan**stänga.
 
-   b. Klicka på **Välj medlemmar** och **Redigera** för att ta bort användaren från rollgruppen.
+4. Gör följande steg i EAC på <admin.protection.outlook.com/ecp/>:
 
-6. Öppna **administrationscentret för Exchange**.
+   Välj **behörigheter**, markera varje roll grupp manuellt och kontrol lera sedan användar kontona i avsnittet **medlemmar** i informations fönstret.  Om rollgruppen innehåller användarkontot gör du följande steg:
 
-7. Klicka på **Behörigheter**.
-
-8. Granska rollgrupperna manuellt för att se om det misstänkt komprometterade kontot är medlem i någon av dem. Om så är fallet:
-
-   a. Klicka på rollgruppen och klicka på **Redigera**.
-
-   b. Klicka på avsnittet **Medlemmar** för att ta bort användaren från rollgruppen.
+   a. Välj roll gruppen och klicka på **redigera** ![redigera ikonen](../../media/ITPro-EAC-EditIcon.png).
+   b. Gå till avsnittet **medlem**, Välj användar kontot och klicka sedan på **ta bort** ![ta bort ikonen](../../media/ITPro-EAC-RemoveIcon.gif). Klicka på **Spara** när du är klar.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Steg 7 Valfritt: Ytterligare försiktighetsåtgärder
 
