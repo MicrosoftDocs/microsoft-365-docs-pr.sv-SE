@@ -1,0 +1,75 @@
+---
+title: Planera för nätverks enheter som ansluter till Office 365-tjänster
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 12/29/2016
+audience: ITPro
+ms.topic: conceptual
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Ent_O365
+f1.keywords:
+- CSH
+ms.custom: Adm_O365
+search.appverid:
+- MET150
+- MOE150
+- BCS160
+ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
+description: 'Sammanfattning: beskriver överväganden för nätverks kapacitet, WAN-acceleratorer och belastnings Utjämnings enheter som används för att ansluta till Office 365.'
+ms.openlocfilehash: a4ea75eb294d74004125be4d258dbe86d7d89810
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46694569"
+---
+# <a name="plan-for-network-devices-that-connect-to-office-365-services"></a><span data-ttu-id="e90a7-103">Planera för nätverks enheter som ansluter till Office 365-tjänster</span><span class="sxs-lookup"><span data-stu-id="e90a7-103">Plan for network devices that connect to Office 365 services</span></span>
+
+<span data-ttu-id="e90a7-104">*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="e90a7-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+  
+<span data-ttu-id="e90a7-105">Vissa nätverks enheter kan ha begränsningar för antalet samtidiga sessioner som stöds.</span><span class="sxs-lookup"><span data-stu-id="e90a7-105">Some network hardware may have limitations on the number of concurrent sessions that are supported.</span></span> <span data-ttu-id="e90a7-106">För organisationer med fler än 2 000 användare rekommenderar vi att de övervakar sina nätverks enheter så att de kan hantera ytterligare Office 365-tjänst trafik.</span><span class="sxs-lookup"><span data-stu-id="e90a7-106">For organizations having more than 2,000 users, we recommend that they monitor their network devices to ensure they are capable of handling the additional Office 365 service traffic.</span></span> <span data-ttu-id="e90a7-107">Med SNMP-programmet (Simple Network Management Protocol) kan du göra det här.</span><span class="sxs-lookup"><span data-stu-id="e90a7-107">Simple Network Management Protocol (SNMP) monitoring software can help you do this.</span></span>
+
+<span data-ttu-id="e90a7-108">Den här artikeln är en del av [nätverks planering och prestanda justering för Office 365](https://aka.ms/tune).</span><span class="sxs-lookup"><span data-stu-id="e90a7-108">This article is part of [Network planning and performance tuning for Office 365](https://aka.ms/tune).</span></span>
+
+<span data-ttu-id="e90a7-109">Lokala utgående Internet-proxyinställningar påverkar även anslutningar till Office 365-tjänster för dina klient program.</span><span class="sxs-lookup"><span data-stu-id="e90a7-109">On-premises outgoing Internet proxy settings also affect connectivity to Office 365 services for your client applications.</span></span> <span data-ttu-id="e90a7-110">Du måste också konfigurera nätenheter för att tillåta anslutningar för URL-adresser och program för Microsofts moln tjänster.</span><span class="sxs-lookup"><span data-stu-id="e90a7-110">You must also configure your network proxy devices to allow connections for Microsoft cloud services URLs and applications.</span></span> <span data-ttu-id="e90a7-111">Alla organisationer är olika.</span><span class="sxs-lookup"><span data-stu-id="e90a7-111">Every organization is different.</span></span> <span data-ttu-id="e90a7-112">För att få en uppfattning om hur Microsoft hanterar den här processen och hur mycket bandbredd vi tillhandahåller [läser du fallstudien](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).</span><span class="sxs-lookup"><span data-stu-id="e90a7-112">To get an idea for how Microsoft manages this process and the amount of bandwidth we provision, [read the case study](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).</span></span>
+  
+<span data-ttu-id="e90a7-113">Följande hjälp artiklar för Skype för företag har mer information om Skype för företag-inställningar:</span><span class="sxs-lookup"><span data-stu-id="e90a7-113">The following Skype for Business Help articles have more information about Skype for Business settings:</span></span>
+  
+- [<span data-ttu-id="e90a7-114">Felsöka inloggnings problem i Skype för företag – Online för administratörer</span><span class="sxs-lookup"><span data-stu-id="e90a7-114">Troubleshooting Skype for Business Online sign-in errors for administrators</span></span>](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+
+- [<span data-ttu-id="e90a7-115">Det går inte att ansluta till Skype för företag, eller vissa funktioner fungerar inte, eftersom en lokal brand vägg blockerar anslutningen</span><span class="sxs-lookup"><span data-stu-id="e90a7-115">You cannot connect to Skype for Business, or certain features do not work, because an on-premises firewall blocks the connection</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+
+> [!NOTE]
+> <span data-ttu-id="e90a7-116">Även om många av de här inställningarna är Skype för företag-specifika är de allmänna rikt linjerna för nätverks konfiguration användbara för alla Office 365-tjänster.</span><span class="sxs-lookup"><span data-stu-id="e90a7-116">While many of these settings are Skype for Business-specific, the general guidance on network configuration is useful for all Office 365 services.</span></span>
+  
+## <a name="determining-network-capacity"></a><span data-ttu-id="e90a7-117">Avgöra nätverks kapacitet</span><span class="sxs-lookup"><span data-stu-id="e90a7-117">Determining Network Capacity</span></span>
+
+<span data-ttu-id="e90a7-118">Alla nätverks enheter som finns på en anslutning har sin kapacitets gräns.</span><span class="sxs-lookup"><span data-stu-id="e90a7-118">Every network device that exists on a connection has its capacity limit.</span></span> <span data-ttu-id="e90a7-119">Dessa enheter inkluderar klient-och Server nätverkskort, routrar, växlar och hubbar som sammankopplar dem.</span><span class="sxs-lookup"><span data-stu-id="e90a7-119">These devices include the client and server network adapters, routers, switches, and hubs that interconnect them.</span></span> <span data-ttu-id="e90a7-120">Tillräcklig nätverks kapacitet innebär att inga av dem är mättade.</span><span class="sxs-lookup"><span data-stu-id="e90a7-120">Adequate network capacity means that none of them are saturated.</span></span> <span data-ttu-id="e90a7-121">Det är viktigt att övervaka nätverks aktivitet för att säkerställa att de faktiska belastningarna på alla nätverks enheter är mindre än deras högsta kapacitet.</span><span class="sxs-lookup"><span data-stu-id="e90a7-121">Monitoring network activity is essential to help ensure that the actual loads on all network devices are less than their maximum capacity.</span></span> <span data-ttu-id="e90a7-122">Nätverks kapaciteten påverkar enhetens prestanda.</span><span class="sxs-lookup"><span data-stu-id="e90a7-122">Network capacity affects proxy device performance.</span></span>
+  
+<span data-ttu-id="e90a7-123">I de flesta fall anger bandbredden för Internet anslutningen begränsningen för mängden trafik.</span><span class="sxs-lookup"><span data-stu-id="e90a7-123">In most situations, the Internet connection bandwidth sets the limit for the amount of traffic.</span></span> <span data-ttu-id="e90a7-124">Svag prestanda under hög trafik tid beror antagligen på att Internet länken används för många.</span><span class="sxs-lookup"><span data-stu-id="e90a7-124">Weak performance during peak traffic hours is probably caused by excessive use of the Internet link.</span></span> <span data-ttu-id="e90a7-125">Den här situationen gäller också för ett filial kontors scenario där lokal kontors proxyserver är ansluten till proxyservern på filialens huvud kontor via en långsam WAN-länk (Wide Area Network).</span><span class="sxs-lookup"><span data-stu-id="e90a7-125">This situation also applies to a branch office scenario, where branch office proxy server computers are connected to the proxy device at the branch's headquarters over a slow Wide Area Network (WAN) link.</span></span>
+  
+<span data-ttu-id="e90a7-126">Testa nätverks kapacitet genom att övervaka nätverks aktiviteten på proxy-nätverkets gränssnitt.</span><span class="sxs-lookup"><span data-stu-id="e90a7-126">To test network capacity, monitor the network activity on the proxy network interface.</span></span> <span data-ttu-id="e90a7-127">Om det är mer än 75 procent av den maximala bandbredden för ett nätverks gränssnitt, bör du överväga att öka bandbredden hos nätverks infrastrukturen som är otillräcklig.</span><span class="sxs-lookup"><span data-stu-id="e90a7-127">If it's more than 75 percent of the maximum bandwidth of any network interface, consider increasing the bandwidth of the network infrastructure that's inadequate.</span></span> <span data-ttu-id="e90a7-128">Eller Använd avancerade funktioner, till exempel HTTP-komprimering.</span><span class="sxs-lookup"><span data-stu-id="e90a7-128">Or, consider using advanced features, such as HTTP compression.</span></span>
+  
+## <a name="wan-accelerators"></a><span data-ttu-id="e90a7-129">WAN-acceleratorer</span><span class="sxs-lookup"><span data-stu-id="e90a7-129">WAN Accelerators</span></span>
+
+<span data-ttu-id="e90a7-130">Om din organisation använder WAN-acceleration (Wide Area Network) kan du stöta på problem när du använder Office 365-tjänsterna.</span><span class="sxs-lookup"><span data-stu-id="e90a7-130">If your organization uses wide area network (WAN) acceleration proxy appliances, you may encounter issues when you access the Office 365 services.</span></span> <span data-ttu-id="e90a7-131">Du kan behöva optimera nätverks enheter eller enheter för att säkerställa att användarna har en enhetlig upplevelse när de använder Office 365.</span><span class="sxs-lookup"><span data-stu-id="e90a7-131">You may need to optimize your network device or devices to ensure that your users have a consistent experience when accessing Office 365.</span></span> <span data-ttu-id="e90a7-132">Office 365-tjänster kryptera till exempel lite Office 365-innehåll och TCP-huvudet.</span><span class="sxs-lookup"><span data-stu-id="e90a7-132">For example, Office 365 services encrypt some Office 365 content and the TCP header.</span></span> <span data-ttu-id="e90a7-133">Din enhet kanske inte kan hantera den här typen av trafik.</span><span class="sxs-lookup"><span data-stu-id="e90a7-133">Your device may not be able to handle this kind of traffic.</span></span>
+  
+<span data-ttu-id="e90a7-134">Läs vår support policy om hur du [använder en styrenhet för WAN-optimering eller trafik-och inspektions enheter med Office 365](https://support.microsoft.com/kb/2690045).</span><span class="sxs-lookup"><span data-stu-id="e90a7-134">Read our support statement about [Using WAN Optimization Controller or Traffic/Inspection devices with Office 365](https://support.microsoft.com/kb/2690045).</span></span>
+  
+## <a name="hardware-and-software-load-balancing-devices"></a><span data-ttu-id="e90a7-135">Belastnings Utjämnings enheter för maskinvaru-och program vara</span><span class="sxs-lookup"><span data-stu-id="e90a7-135">Hardware and Software Load-balancing Devices</span></span>
+
+<span data-ttu-id="e90a7-136">Din organisation måste använda en maskinvarubaserad belastnings utjämning (HLB) eller en lösning för Utjämning av nätverks belastning (NLB) för att distribuera förfrågningar till dina AD FS-servrar (Active Directory Federation Services) och/eller dina Exchange-hybrider.</span><span class="sxs-lookup"><span data-stu-id="e90a7-136">Your organization needs to use a hardware load balancer (HLB) or a Network Load Balancing (NLB) solution to distribute requests to your Active Directory Federation Services (AD FS) servers and/or your Exchange hybrid servers.</span></span> <span data-ttu-id="e90a7-137">Enheter för belastnings utjämning styr nätverks trafiken till lokala servrar.</span><span class="sxs-lookup"><span data-stu-id="e90a7-137">Load-balancing devices control the network traffic to the on-premises servers.</span></span> <span data-ttu-id="e90a7-138">Dessa servrar är nödvändiga för att säkerställa tillgänglighet för enkel inloggning och Exchange-hybrid distribution.</span><span class="sxs-lookup"><span data-stu-id="e90a7-138">These servers are crucial in helping to ensure the availability of single sign-on and Exchange hybrid deployment.</span></span>
+  
+<span data-ttu-id="e90a7-139">En programvarubaserad NLB-lösning som är inbyggd i Windows Server tillhandahålls.</span><span class="sxs-lookup"><span data-stu-id="e90a7-139">We provide a software-based NLB solution built into Windows Server.</span></span> <span data-ttu-id="e90a7-140">Office 365 stöder den här lösningen för belastnings utjämning.</span><span class="sxs-lookup"><span data-stu-id="e90a7-140">Office 365 supports this solution to achieve load balancing.</span></span>
+  
+## <a name="firewalls-and-proxies"></a><span data-ttu-id="e90a7-141">Brand väggar och proxyservrar</span><span class="sxs-lookup"><span data-stu-id="e90a7-141">Firewalls and proxies</span></span>
+
+<span data-ttu-id="e90a7-142">Mer information om hur du konfigurerar brand väggar och proxyservrar att ansluta till Office 365 finns i [Hantera office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [utvärdera Office 365 nätverks anslutningar](assessing-network-connectivity.md)och [vanliga frågor och svar om Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) för att lära dig mer om enheter och krets val.</span><span class="sxs-lookup"><span data-stu-id="e90a7-142">For more details on configuring firewalls and proxies to connect to Office 365, read [Managing Office 365 endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Assessing Office 365 network connectivity](assessing-network-connectivity.md), and [Office 365 endpoints FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) to learn more about devices and circuit selection.</span></span>
+  
+## <a name="see-also"></a><span data-ttu-id="e90a7-143">Se även</span><span class="sxs-lookup"><span data-stu-id="e90a7-143">See also</span></span>
+
+[<span data-ttu-id="e90a7-144">Installations guider för Office 365-tjänster</span><span class="sxs-lookup"><span data-stu-id="e90a7-144">Setup guides for Office 365 services</span></span>](setup-guides-for-microsoft-365.md)
+
+[<span data-ttu-id="e90a7-145">Översikt över Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="e90a7-145">Microsoft 365 Enterprise overview</span></span>](microsoft-365-overview.md)
