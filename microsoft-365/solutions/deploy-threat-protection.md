@@ -1,6 +1,6 @@
 ---
-title: Distribuera hot Protection-funktioner i Microsoft 365
-description: Lär dig hur du distribuerar hot Protection Services och funktioner i Microsoft 365 E5.
+title: Distribuera nätverks säkerhets hotet för Microsoft 365
+description: Lär dig hur du distribuerar hot Protection Services och IT-säkerhetsfunktionerna i Microsoft 365 E5.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,18 +14,19 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 312df25bf4fe2b91bb60b4122378b4457b25723c
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 0736151f1ceacecb888c8a3eb3dd88183cc3a060
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588190"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662326"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuera hot Protection-funktioner i Microsoft 365
 
-[Skadlig program](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)vara och sofistikerade cyberattacks, till exempel [Filskydd](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats), är ofta en vanlig förekomst. Företagen måste skydda sig själva och deras kunder. Cyberterrorism säkerhets attacker kan orsaka större problem i din organisation, från förlust av förtroende till ekonomisk woes, Business-hotar nertid och mer. Det är viktigt att skydda mot hot, men det kan vara svårt att avgöra var du ska fokusera din organisations tid, ansträngning och resurser. 
+[Skadlig program](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)vara och sofistikerade cyberattacks, till exempel [Filskydd](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats), är ofta en vanlig förekomst. Företag måste skydda sig själva och deras kunder med effektiv IT-säkerhet. Sådana attacker kan orsaka större problem i din organisation, från förlorad tillförlitlighet på ekonomiska woes, Business-hotar nertid och mer. Det är viktigt att skydda mot hot, men det kan vara svårt att avgöra var du ska fokusera din organisations tid, ansträngning och resurser. 
 
-Microsoft Security Solutions är inbyggda i våra produkter och tjänster. Automatiserings-och maskin inlärnings funktioner minskar belastningen på dina säkerhets team för att se till att rätt objekt adresseras. Och styrkan hos Microsoft Security Solutions bygger på biljon tals won som vi behandlar varje dag i vårt [intelligenta säkerhets diagram](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph). Microsoft 365-säkerhetslösningar innehåller [hot mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)som sammankopplar dina e-postmeddelanden, data, enheter och identiteter för att måla en bild av avancerade hot mot din organisation.
+Microsoft Security Solutions är inbyggda i våra produkter och tjänster. Automatiserings-och maskin inlärnings funktioner minskar belastningen på dina säkerhets team för att se till att rätt objekt adresseras. Och styrkan i Microsofts nätverks säkerhets lösningar är byggd på biljon tals många olika typer av signaler som vi behandlar varje dag i vårt [intelligenta säkerhets diagram](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph). Microsoft 365-säkerhetslösningar innehåller [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), en lösning som sammankopplar dina e-postmeddelanden, data, enheter och identiteter för att måla en bild av avancerade hot mot din organisation.
+
 
 Titta på den här videon för en översikt över distributions processen.
 
@@ -73,7 +74,7 @@ Om du vill vara säker på att organisationen har bästa möjliga skydd kan du s
 7. [Övervaka status och utför åtgärder](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
 8. [Utbilda användare](deploy-threat-protection-configure.md#step-8-train-users)
 
-Skydds funktionerna för hotet kan konfigureras parallellt, så om du har flera säkerhets team ansvariga för olika tjänster kan de konfigurera organisationens skydds funktioner samtidigt. Följande diagram illustrerar den omfattande processen för distribution av skydds funktioner. 
+Dina skydds funktioner kan konfigureras parallellt, så om du har flera nätverks säkerhets team som är ansvariga för olika tjänster kan de konfigurera organisationens skydds funktioner samtidigt. Följande diagram illustrerar den omfattande processen för distribution av skydds funktioner. 
 
 ![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
 

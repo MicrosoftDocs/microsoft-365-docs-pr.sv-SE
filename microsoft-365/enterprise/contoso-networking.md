@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå molninfrastrukturen i Contoso och hur den använder SD-WAN-tekniken för optimal nätverksprestanda för molntjänster i Microsoft 365 Enterprise.
-ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+description: Förstå nätverks infrastrukturen contoso och hur den använder sin SD-WAN-teknik för optimal nätverks prestanda för Microsoft 365 för företags moln tjänster.
+ms.openlocfilehash: bc2ae68917258b94ed46ef0c1257f56e0736105c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625284"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685824"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Nätverk för Contoso Corporation
 
@@ -50,7 +50,7 @@ Bild 1 visar organisationens nätverksinfrastruktur och anslutningar till Intern
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Användning av SD-WAN för optimal nätverksanslutning till Microsoft
 
-Contoso följde [principerna för nätverksanslutningar för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) för att:
+Contoso följde [principerna för nätverksanslutningar för Microsoft 365](microsoft-365-network-connectivity-principles.md) för att:
 
 1. Identifiera och särskilja Microsoft 365-nätverkstrafik
 2. Utgående nätverksanslutningar lokalt
@@ -83,17 +83,17 @@ I bild 2 visas procentandelen nätverkstrafik vid anslutning till servrar på ol
 
 För användare på satellitkontor eller regionkontor kan 60 % av de resurser som medarbetarna behöver tillhandahållas av servrar på satellitkontor och regionkontor. Ytterligare 40 % av alla resursbegäranden måste gå via WAN-länken till företagets campus i Paris.
 
-## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-enterprise"></a>Contosos nätverksanalys och nätverksförberedelser för Microsoft 365 Enterprise
+## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-for-enterprise"></a>Organisationens nätverks analys och förberedelse av sitt nätverk för Microsoft 365 för företag
 
-En lyckad integrering av Microsoft 365 Enterprise-tjänster för Contosos användare är beroende av hög tillgänglighet och fungerande anslutningar till Internet, eller direkt till Microsofts molntjänster. Contoso genomförde de här åtgärderna för att planera för och implementera optimerad anslutning till Microsoft 365 Enterprise-molntjänster:
+Om du har godkänt Microsoft 365 för företags tjänster av Skype-användare beror det på hög tillgänglighet och anslutning till Internet, eller direkt till Microsofts moln tjänster. Contoso utförde de här stegen för att planera för och implementera optimerad anslutning till Microsoft 365 för företags moln tjänster:
 
 1. Skapade ett diagram över företagets WAN-nätverk för att underlätta planeringen
 
    Contoso inledde sin nätverksplanering med att skapa ett diagram som visade deras arbetsplatser, befintliga nätverksanslutningar, enheter inom befintlig nätverksgräns och tjänstklasser som hanteras i nätverket. De använde diagrammet för varje efterföljande steg under planering och implementering av nätverksanslutningen.
 
-2. Skapade en plan för Microsoft 365 Enterprise-nätverksanslutning
+2. Skapat en plan för Microsoft 365 för företags nätverks anslutning
 
-   Contoso använde sig av [principerna för nätverksanslutningar för Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) och tillhandahöll referensnätverksarkitekturer för att utse SD-WAN som föredragen topologi för Microsoft 365-anslutningar.
+   Contoso använde sig av [principerna för nätverksanslutningar för Microsoft 365](microsoft-365-network-connectivity-principles.md) och tillhandahöll referensnätverksarkitekturer för att utse SD-WAN som föredragen topologi för Microsoft 365-anslutningar.
 
 3. Analyserade användningen av Internet-anslutning och MPLS WAN-bandbredd för varje kontor och ökade bandbredd vid behov
 
@@ -109,7 +109,7 @@ En lyckad integrering av Microsoft 365 Enterprise-tjänster för Contosos använ
 
 6. Verifierade nätverksslutpunkter och portanslutningar
 
-   Contoso körde de testverktyg för nätverksanslutning som Microsoft tillhandahåller för att verifiera anslutningar för Microsoft 365 Enterprise-molntjänster.
+   Contoso körde nätverks anslutningar som tillhandahålls av Microsoft för att verifiera anslutningen för Microsoft 365 för företags moln tjänster.
 
 7. Optimerade medarbetarnas datorer för nätverksanslutning
 
@@ -121,8 +121,8 @@ En lyckad integrering av Microsoft 365 Enterprise-tjänster för Contosos använ
 
 ## <a name="see-also"></a>Se även
 
-[Nätverk för Microsoft 365 Enterprise](networking-infrastructure.md)
+[Nätverks översikt för Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Distributionsguide](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Testlabbguider](m365-enterprise-test-lab-guides.md)

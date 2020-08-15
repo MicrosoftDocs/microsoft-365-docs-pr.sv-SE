@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå vad Microsoft gör under en tjänstehändelse så att du bättre kan förbereda dina affärskontinuitetsplaner.
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809700"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686124"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Hantering av affärskontinuitet för företag för kund- och molnpartneransvar
 
@@ -65,7 +65,7 @@ När du funderar på kontinuitetsplanen ska du vara uppmärksam på händelser s
 
 ### <a name="location"></a>Plats
 Många organisationer kräver att medarbetare befinner sig på en angiven fysisk eller annan nätverksplats för att kunna ansluta till företagssystem och molntjänster.  
-Microsoft publicerar [principer för nätverksanslutningar](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) som hjälper företagen via metodtips för att konfigurera nätverksanslutningar till molnresurser. Exempel på optimering omfattar implementation av delade tunnel-VPN-nätverk för att tillåta anslutningar direkt från en användares nätverk istället för via en VPN-tunnel.  Även om de här anslutningsprinciperna är viktiga för att upprätthålla anslutningar med låg fördröjning kräver tjänstens återhämtning alternativa metoder för att ansluta till företagets resurser för generellt samarbete.
+Microsoft publicerar [principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md) som hjälper företagen via metodtips för att konfigurera nätverksanslutningar till molnresurser. Exempel på optimering omfattar implementation av delade tunnel-VPN-nätverk för att tillåta anslutningar direkt från en användares nätverk istället för via en VPN-tunnel.  Även om de här anslutningsprinciperna är viktiga för att upprätthålla anslutningar med låg fördröjning kräver tjänstens återhämtning alternativa metoder för att ansluta till företagets resurser för generellt samarbete.
 
 ### <a name="systems"></a>System
 Många samarbetslösningar är beroende av system, och detsamma gäller för företagets WAN-nätverk (wide area network). Hur svarar din organisation när systemen inte är tillgängliga?

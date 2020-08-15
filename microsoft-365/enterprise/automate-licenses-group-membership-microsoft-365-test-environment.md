@@ -1,5 +1,5 @@
 ---
-title: Automatisera licensiering och gruppmedlemskap för microsoft 365 Enterprise-testmiljön
+title: Automatisera licensierings-och grupp medlemskap för test miljön av Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,97 +14,97 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Konfigurera gruppbaserad licensiering och dynamiskt gruppmedlemskap i microsoft 365 Enterprise-testmiljön.
-ms.openlocfilehash: 266ae8cb133eccf74ea75382b400ca8241782ec5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Konfigurera gruppbaserade licensierings-och dynamiskt grupp medlemskap i test miljön för Microsoft 365 för företag.
+ms.openlocfilehash: a25a47b81ce8c119e7aeb44660af32bb9cafb08a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42809331"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685564"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatisera licensiering och gruppmedlemskap för microsoft 365 Enterprise-testmiljön
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatisera licensierings-och grupp medlemskap för test miljön av Microsoft 365 för företag
 
-*Den här testlabbet-guiden kan endast användas för Microsoft 365 Enterprise-testmiljöer.*
+*Den här test laboratorie guiden kan endast användas för test miljöer med Microsoft 365 för företags nätverk.*
 
-Gruppbaserad licensiering tilldelar eller tar automatiskt bort licenser för ett användarkonto baserat på gruppmedlemskap. Dynamiskt gruppmedlemskap lägger till eller tar bort medlemmar i en grupp baserat på användarkontoegenskaper, till exempel Avdelning eller Land. I den här artikeln beskrivs en demonstration av båda i microsoft 365 Enterprise-testmiljön.
+Gruppbaserade licenser tilldelar eller tar bort licenser automatiskt för ett användar konto baserat på grupp medlemskap. Dynamiskt grupp medlemskap lägger till eller tar bort medlemmar i en grupp baserat på Egenskaper för användar konton, till exempel avdelning eller land. I den här artikeln beskrivs en demonstration av båda test miljöerna i Microsoft 365 för företag.
 
-Det finns två faser för att konfigurera automatisk licensiering och dynamiskt gruppmedlemskap i microsoft 365 Enterprise-testmiljön:
+Det finns två faser för att konfigurera automatisk licensiering och dynamiskt grupp medlemskap i test miljön för Microsoft 365 för företag:
 
-1. Skapa testmiljön för Microsoft 365 Enterprise.
-2. Konfigurera och testa dynamiskt gruppmedlemskap och automatisk licensiering.
+1. Skapa test miljön för Microsoft 365 för företag.
+2. Konfigurera och testa dynamiskt grupp medlemskap och automatisk licensiering.
 
-![Testlabbguider för Microsoft-molnet](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill ha en visuell karta till alla artiklar i Microsoft 365 Enterprise Test Lab Guide-stacken.
+> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygg ut testmiljön för Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: bygga ut test miljön för Microsoft 365 för företag
 
-Om du bara vill testa automatiserad licensiering och gruppmedlemskap på ett lätt väg med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du bara vill testa automatiserade licensierings-och grupp medlemskap på ett enkelt sätt med minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Om du vill testa automatiserad licensiering och gruppmedlemskap i ett simulerat företag följer du instruktionerna i [Direktautentisering](pass-through-auth-m365-ent-test-environment.md).
+Om du vill testa automatiserade licensierings-och grupp medlemskap i ett simulerat företag följer du anvisningarna i [vidarekoppling](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testning av automatiserad licensiering och gruppmedlemskap kräver inte den simulerade företagstestmiljön, som innehåller ett simulerat intranät som är anslutet till Internet och katalogsynkronisering för en AD DS-skog (Active Directory Domain Services). Det finns här som ett alternativ så att du kan testa automatiserad licensiering och gruppmedlemskap och experimentera med det i en miljö som representerar en typisk organisation. 
+> För testning av automatiserade licensierings-och grupp medlemskap krävs inte den simulerade företags test miljön, som innehåller ett simulerat intranät som är kopplat till Internet och Directory-synkronisering för en AD DS-skog (Active Directory Domain Services). Det tillhandahålls här som ett alternativ så att du kan testa automatiserad licensiering och grupp medlemskap och experimentera med den i en miljö som representerar en typisk organisation. 
   
-## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Fas 2: Konfigurera och testa dynamiskt gruppmedlemskap och automatisk licensiering
+## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>Fas 2: Konfigurera och testa dynamiskt grupp medlemskap och automatisk licensiering
 
-Först skapar du en ny försäljningsgrupp och lägger till en dynamisk gruppmedlemskapsregel så att användarkonton med avdelningen som försäljning läggs automatiskt till i gruppen Försäljning.
+Först skapar du en ny Sälj grupp och lägger till en regel för dynamiskt grupp medlemskap så att användar konton med avdelningen satt till Sales läggs till automatiskt i Sälj gruppen.
 
-1. Logga in på Office 365-portalen med det [https://portal.office.com](https://portal.office.com) globala administratörskontot för din Microsoft 365 E5-testlabbprenumeration med en privat instans av webbläsaren.
-2. På en separat flik i webbläsaren går [https://portal.azure.com](https://portal.azure.com)du till Azure-portalen på .
-3. Skriv **grupper** i sökrutan i Azure-portalen och klicka sedan på **Grupper**.
-4. Klicka på **Ny grupp**i fönstret **Alla grupper** .
-5. Välj **Office 365**i **Grupptyp**.
-6. Skriv **Försäljning**i **Gruppnamn**.
-7. I **medlemstyp**väljer du **Dynamisk användare**.
-8. Klicka på **Dynamiska användare.**
-9. I fönstret **Regler för dynamiskt medlemskap:** 
-   - Välj **egenskapen avdelning.**
-   - Välj operatorn **Lika med.**
-   - Skriv **Försäljning** i **värde**.
+1. Använd en privat instans av webbläsaren och logga in på [administrations centret för microsoft 365](https://admin.microsoft.com) med det globala administratörs kontot för ditt Microsoft 365 E5 test labb-abonnemang.
+2. Gå till Azure Portal på en separat flik i webbläsaren [https://portal.azure.com](https://portal.azure.com) .
+3. I Azure-portalen skriver du **grupper** i sökrutan och klickar sedan på **grupper**.
+4. i fönstret **alla grupper** klickar du på **ny grupp**.
+5. Välj **Microsoft 365**i **grupptyp**.
+6. I **grupp namn**skriver du **Sales**.
+7. Välj **dynamisk användare**i **typ av medlemskap**.
+8. Klicka på **dynamiska användar medlemmar**.
+9. I fönstret **regler för dynamisk medlemskap** : 
+   - Välj egenskapen **avdelning** .
+   - Välj operatorn **Equal** .
+   - Ange **försäljning** i **värde**.
 10. Klicka på **Spara**.
 11. Klicka på **Skapa**.
 
-Därefter konfigurerar du försäljningsgruppen så att medlemmarna tilldelas Microsoft 365 E5-licensen automatiskt.
+Sedan konfigurerar du Sälj gruppen så att medlemmar tilldelas automatiskt Microsoft 365 E5-licensen.
 
-1. Klicka på gruppen **Försäljning** och sedan på **Licenser**.
-2. Välj **Microsoft 365 E5**i fönstret **Uppdatera licenstilldelningar** och klicka sedan på **Spara**.
-3. Stäng fliken Azure-portal i webbläsaren.
+1. Klicka på **försäljnings** gruppen och sedan på **licenser**.
+2. I fönstret **Uppdatera licens tilldelningar** väljer du **Microsoft 365 E5**och klickar sedan på **Spara**.
+3. Stäng fliken för Azure-portalen i webbläsaren.
 
-Därefter testar du dynamiskt gruppmedlemskap och automatisk licensiering på User 4-kontot. 
+Sedan testar du dynamiskt grupp medlemskap och automatisk licensiering på användare 4-kontot. 
 
-1. Klicka på **Admin**på fliken **Start för Microsoft Office** i webbläsaren .
-2. Klicka på **Aktiva användare**på fliken Administrationscenter för **Microsoft 365** .
-3. Klicka på kontot Användare **4** på sidan **Aktiva användare.**
-4. Klicka på **Redigera** för **produktlicenser**i fönstret **Användare 4** .
-5. Inaktivera **Microsoft 365 E5-licensen** i fönstret **Produktlicenser** och klicka sedan på **Spara > Stäng**.
-6. I egenskaperna för User 4-kontot kontrollerar du att inga produktlicenser har tilldelats och att det inte finns några gruppmedlemskap.
-7. Klicka på **Redigera** för **kontaktinformation**.
-8. Klicka på Kontaktinformation i fönstret **Redigera kontaktinformation.** **Contact information**
-9. Skriv **Försäljning**i fältet **Avdelning** och klicka sedan på Spara **> Stäng**.
-10. Vänta några minuter och klicka sedan regelbundet på uppdateringsikonen längst upp till höger i fönstret Användare 4-konto. 
+1. Klicka på **admin**på fliken **Microsoft Office Home** i webbläsaren.
+2. På fliken **administrations Center för Microsoft 365** klickar du på **aktiva användare**.
+3. På sidan **aktiva användare** klickar du på kontot **användare 4** .
+4. Klicka på **Redigera** för **produkt licenser**i fönstret **användare 4** .
+5. I fönstret **produkt licenser** inaktiverar du **Microsoft 365 E5** -licensen och klickar sedan på **Spara > Stäng**.
+6. I egenskaperna för användare 4-kontot kontrollerar du att inga produkt licenser har tilldelats och att det inte finns några grupp medlemskap.
+7. Klicka på **redigera** för **kontakt information**.
+8. Klicka på **kontakt information**i fönstret **Redigera kontakt information** .
+9. I fältet **avdelning** skriver du **försäljning**och klickar sedan på **Spara > Stäng**.
+10. Vänta några minuter och klicka sedan på ikonen uppdatera längst upp till höger i användarens konto fönster. 
 
-Med tiden bör du se:
+I tid bör du se:
 
-- **Egenskapen Gruppmedlemskap** har uppdaterats med gruppen **Försäljning.**
-- **Egenskapen Product licenses** har uppdaterats med **Microsoft 365** E5-licensen.
+- **Grupp medlemskaps** egenskapen har uppdaterats med **Sälj** gruppen.
+- Egenskapen **produkt licenser** har uppdaterats med **Microsoft 365 E5** -licensen.
 
-Se de här stegen i identitetsfasen för information och länkar för att distribuera dynamiskt gruppmedlemskap och automatisk licensiering i produktion:
+Se dessa artiklar för att distribuera dynamiskt grupp medlemskap och automatisk licensiering i produktion:
 
-- [Konfigurera automatisk licensiering](identity-use-group-management.md#identity-group-license)
-- [Konfigurera dynamiskt gruppmedlemskap](identity-use-group-management.md#identity-dyn-groups)
+- LÄNKA TBD
+- LÄNKA TBD
 
 ## <a name="next-step"></a>Nästa steg
 
-Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#identity) och funktioner i testmiljön.
+Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#identity) i testmiljön.
 
 ## <a name="see-also"></a>Se även
 
-[Fas 2: Identitet](identity-infrastructure.md)
+[Identitets översikt](identity-roadmap-microsoft-365.md)
 
-[Testlaboratorikguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
-[Distribution av Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Dokumentation från Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)

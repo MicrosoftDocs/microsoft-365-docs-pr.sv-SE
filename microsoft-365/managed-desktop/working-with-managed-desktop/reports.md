@@ -9,23 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3e42e39067c6bf89f94cfd0fe7593ea86dbf20a7
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 6981bdc0c0e79952701fdba91b1d43b317003af9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46613107"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686244"
 ---
 # <a name="work-with-reports"></a>Arbeta med rapporter
 
 Microsoft Managed Desktop tillhandahåller rapporter som IT-administratörer i din klient organisation kan använda för att förstå olika aspekter av populationen av enheter. Du kommer åt rapporterna i [administrations portalen ](https://aka.ms/mmdportal)under **rapportering**.
 
 
-## <a name="device-compliance-report"></a>Kompatibilitetsrapport för enheter
-
-I huvudvyn visas hur många procent av dina Microsoft-hanterade Station ära enheter som följer de efterlevnadsprinciper som är inställda i Microsoft Intune. Du kan också visa specifik information för antingen alla dina Microsoft-hanterade Skriv bords enheter eller endast enheter som inte följer reglerna för efterlevnad och exportera en fil med samma information.
-
-Läs mer om [rapporten för enhetens efterlevnad](device-compliance-report.md).
 
 ## <a name="device-inventory-report"></a>Enhets inventerings rapport
 

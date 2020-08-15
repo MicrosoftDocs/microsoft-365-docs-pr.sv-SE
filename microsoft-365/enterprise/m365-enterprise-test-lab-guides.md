@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Skapa miljöer för demonstrationer, funktionstest och utveckling/testning för Microsoft 365 för företag med hjälp av testlabbguider.
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818747"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686772"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Testlabbguider för Microsoft 365 för företag
 
@@ -43,7 +43,7 @@ Gå till [Samlingen med testlabbguider](../media/m365-enterprise-test-lab-guides
 
 ## <a name="base-configuration"></a>Grundläggande konfiguration
 
-Först skapar du en testmiljö för [Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365-enterprise/) som innehåller Office 365 E5, Enterprise Mobility + Security (EMS) E5 och Windows 10 Enterprise. Du kan skapa två olika typer av grundläggande konfigurationer:
+Först skapar du en test miljö för [Microsoft 365 för företag](https://docs.microsoft.com/microsoft-365-enterprise/). Du kan skapa två olika typer av grundläggande konfigurationer:
 
 - Använd den [enkla grundläggande konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md) när du vill konfigurera och demonstrera funktioner för Microsoft 365 för företag i en molnmiljö, som inte omfattar några lokala komponenter.
 
@@ -63,7 +63,7 @@ För en demonstration av identitetsrelaterade funktioner, se:
   
    Aktivera och testa direktautentisering till en AD DS-domänkontrollant.
 
-- [Federerad autentisering](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Federerad autentisering](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    Aktivera och testa federerad autentisering till en AD DS-domänkontrollant.
 

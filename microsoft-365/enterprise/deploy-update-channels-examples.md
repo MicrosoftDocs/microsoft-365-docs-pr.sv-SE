@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Hur exempel organisationer distribuerar och uppdaterar med hjälp av kanaler.
-ms.openlocfilehash: eaf962d7481027b49f26c79163aaae3753fdbb9b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200157"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686160"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Distribution och uppdatering av kanalkonfigurationer
 
@@ -49,6 +49,6 @@ Klicka på länken i **exempel** kolumnen om du vill stega igenom distributions 
 
 ## <a name="see-also"></a>Se även
 
-[Distributionsguide](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Testlabbguider](m365-enterprise-test-lab-guides.md)

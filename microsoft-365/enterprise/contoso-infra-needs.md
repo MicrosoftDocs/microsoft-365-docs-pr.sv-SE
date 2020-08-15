@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå den grundläggande strukturen i Contosos lokala IT-infrastruktur och hur företagets behov uppfylldes av Microsoft 365 Enterprise.
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: Förstå den grundläggande strukturen i den lokala IT-infrastrukturen och hur företags behoven uppfylls av Microsoft 365 för företag.
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011203"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685836"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contosos IT-infrastruktur och affärsbehov
 
@@ -112,20 +112,20 @@ Hantering:
 
   Automatisera installationen av uppdateringar av Windows-operativsystemet och Microsoft 365-applikationer för företag i hela organisationen.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Koppla Contosos affärsbehov till Microsoft 365 Enterprise
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Mappa Contosos företags behov till Microsoft 365 för företag
 
 Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 före distributionen:
 
-||||
+
+| Kategori | Affärsbehov | Microsoft 365 för företags produkter eller funktioner |
 |:-------|:-----|:-----|
-| **Kategori** | **Affärsbehov** | **Microsoft 365 Enterprise-produkter eller -funktioner** |
 | Produktivitet |  |  |
 |  | Förenkla samarbetet | Microsoft Teams, SharePoint, OneDrive |
 |  | Förbättra produktiviteten för distans- och mobila arbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
 |  | Öka kreativiteten och innovationen | Windows Ink, Cortana at Work, PowerPoint |
 | Säkerhet |  |  |
 |  | Identitets- och åtkomsthantering | Dedikerade globala administratörskonton med Azure Multi-Factor Authentication (MFA) och Azure AD Privileged Identity Management (PIM) <BR> MFA för alla användarkonton <BR> Med villkorsstyrd åtkomst <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Avancerat skydd <BR> Office 365 Avancerat skydd <BR> Office 365 undersökning av hot och svar <BR> |
+|  | Skydd mot hot | Advanced Threat Analytics <BR> Windows Defender <BR> Avancerat skydd <BR> Office 365 Avancerat skydd <BR> Microsoft 365 hot undersökningar och svar <BR> |
 |  | Informationsskydd | Azure Information Protection <BR> Skydd mot dataförlust (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Säkerhetshantering | Azure Security Center  <BR> Windows Defender Säkerhetscenter |
 | Fjärr- och mobilåtkomst för affärspartner |  |  |
@@ -133,7 +133,7 @@ Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 
 |  | Minska infrastrukturen för fjärråtkomst för medarbetare | Microsoft 365-arbetsbelastningar och molnbaserade data |
 |  | Ge bättre anslutningsbarhet och lägre kostnad för B2B-transaktioner | Federerad autentisering och molnbaserade resurser |
 | Efterlevnad |  |  |
-|  | Följa regionala efterlevnadskrav | GDPR-funktioner i Office 365 |
+|  | Följa regionala efterlevnadskrav | GDPR funktioner i Microsoft 365 |
 | Hantering |  |  |
 |  | Minska IT-omkostnaderna för installation av klientuppdateringar | Distributionsringar <BR> Windows 10 Enterprise-uppdateringar <BR> Microsoft 365-applikationer för företag uppdateringar |
 ||||
@@ -144,6 +144,6 @@ Contosos IT-avdelning fastställde följande affärsbehov för Microsoft 365 E5 
 
 ## <a name="see-also"></a>Se även
 
-[Distributionsguide](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Testlabbguider](m365-enterprise-test-lab-guides.md)

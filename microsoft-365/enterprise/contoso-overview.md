@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå företaget Contoso Corporation och dess hela struktur.
-ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42807004"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686458"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Översikt över Contoso Corporation
 
@@ -58,9 +58,9 @@ Contosos kontor runtom i världen har en utformning på tre nivåer.
 
 25 % av organisationens arbetsstyrka är endast mobil, med en högre procent andel mobila arbetare i de regionala naven och satellitkontoren. Att erbjuda bättre support för mobila arbetare är ett viktigt affärsmål för Contoso.
 
-## <a name="design-considerations-for-microsoft-365-enterprise"></a>Utformningsöverväganden för Microsoft 365 Enterprise
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Utformning av Microsoft 365 för företag
 
-Contosos IT-arkitekter identifierade följande utformningsbehov och överväganden vid distribution av Microsoft 365 Enterprise: 
+Contosos IT-arkitekter identifierade följande design krav och överväganden vid distribution av Microsoft 365 för företag: 
 
 - Flera geografiska platser med lokala regler och efterföljandekrav
 - Ett centralt intranät-datacenter i administrationscentret för Office och regionala programservrar som är värdar för interna affärsprogram
@@ -74,11 +74,11 @@ Contosos IT-arkitekter identifierade följande utformningsbehov och övervägand
 
 ## <a name="next-step"></a>Nästa steg
 
-[Läs mer](contoso-infra-needs.md) om Contosos lokala IT-infrastruktur och hur deras affärsbehov har uppfylldes av Microsoft 365 Enterprise.
+[Lär dig mer](contoso-infra-needs.md) om Contosos lokala IT-infrastruktur och hur deras företags behov är riktade mot Microsoft 365 för företag.
 
 ## <a name="see-also"></a>Snabbreferens
 
-[Distributionsguide](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Testlabbguider](m365-enterprise-test-lab-guides.md)
 

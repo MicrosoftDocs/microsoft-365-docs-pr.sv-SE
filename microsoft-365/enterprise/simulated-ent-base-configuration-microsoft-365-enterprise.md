@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,37 +17,37 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Använd den här testlabbguiden för att skapa en testmiljö för ett simulerat företag för Microsoft 365 Enterprise.
-ms.openlocfilehash: 486429bf9e1c0a88c9beb01a092f968256c1fa77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: Använd den här test laboratorie guiden för att skapa en simulerad företags test miljö för Microsoft 365 för företag.
+ms.openlocfilehash: 9f4cbb300946109368759d6ec8f1120332e1ed92
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818501"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685682"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Baskonfiguration för simulerat företag
 
-*Den här testlabbguiden kan användas i både Microsoft 365 Enterprise- och Office 365 Enterprise-testmiljöer.*
+*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
 
-I den här artikeln får du stegvisa instruktioner för hur du skapar en förenklad miljö för Microsoft 365 Enterprise som innefattar följande:
+I den här artikeln får du stegvisa instruktioner för hur du skapar en förenklad miljö för Microsoft 365 för företag som inkluderar:
 
 - En utvärderingsprenumeration eller betald prenumeration på Microsoft 365 E5.
 - Ett förenklat företagsintranät anslutet till Internet som består av tre virtuella datorer på ett virtuellt Azure-nätverk (DC1, APP1 och CLIENT1).
  
 ![Baskonfiguration för simulerat företag](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Du kan använda den resulterande miljön för att testa funktionerna och funktionaliteten i [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) med ytterligare [testlabbguider](m365-enterprise-test-lab-guides.md) eller på egen hand.
+Du kan använda den resulterande miljön för att testa funktionerna i [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/enterprise) med ytterligare [test labb guider](m365-enterprise-test-lab-guides.md) eller på egen hand.
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Gå till [Samling med testlabbguider för Microsoft 365 för företag](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
+> Gå till [Microsoft 365 för Enterprise test laboratorie guide stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) för en visuell karta till alla artiklar i Microsoft 365 för Enterprise Test Lab-guide.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Fas 1: Skapa ett simulerat intranät
 
 I den här fasen skapar du ett simulerat intranät it Azure-infrastrukturtjänster som omfattar en Active Directory Domain Services-domänkontrollant (AD DS), en programserver och en klientdator. 
 
-Du använder dessa datorer i ytterligare [testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md) till att konfigurera och visa hybrididentitet och andra funktioner.
+Dessa datorer används i ytterligare [Microsoft 365 för företags test labb guider](m365-enterprise-test-lab-guides.md) för att konfigurera och påvisa hybrid identitet och andra funktioner.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Metod 1: Skapa det simulerade intranätet med en Azure Resource Manager-mall
 
@@ -371,7 +371,7 @@ I den här fasen skapar du en ny Microsoft 365 E5-prenumeration som använder en
 
 Anslut till CLIENT1 med CORP\User1-kontot via Azure Portal.
 
-Om du vill skapa en ny Office 365 E5-utvärderingsprenumeration följer du anvisningarna i [Fas 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) i den enkla baskonfigurationen i testlabbguiden.
+Om du vill skapa en ny Office 365 E5-utvärderingsprenumeration följer du anvisningarna i [Fas 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) i den enkla baskonfigurationen i testlabbguiden.
 
 Om du vill konfigurera den nya Office 365 E5-utvärderingsprenumeration följer du anvisningarna i [Fas 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) i den enkla baskonfigurationen i testlabbguiden.
 
@@ -379,7 +379,7 @@ Om du vill konfigurera den nya Office 365 E5-utvärderingsprenumeration följer 
 
 Om allt du behöver är en Office 365-testmiljö kan du stanna här. 
 
-Se [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md) för ytterligare testlabbguider som gäller för både Office 365 och Microsoft 365.
+Se [microsoft 365 för företags test labb guider](m365-enterprise-test-lab-guides.md) för ytterligare test labb guider som gäller både Microsoft 365 och Office 365.
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Lägga till en utvärderingsprenumeration på Microsoft 365 E5
 
@@ -398,7 +398,7 @@ Det här är den slutliga konfigurationen.
   
 ![Fas 2 i baskonfiguration för simulerat företag](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Nu är du redo att experimentera med fler funktioner i [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+Nu kan du experimentera med fler funktioner i [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Nästa steg
 
@@ -410,8 +410,8 @@ Utforska dessa ytterligare uppsättningar testlabbguider:
 
 ## <a name="see-also"></a>Snabbreferens
 
-[Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
-[Distribuera Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)

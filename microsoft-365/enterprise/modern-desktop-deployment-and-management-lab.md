@@ -2,31 +2,31 @@
 title: Deployment Lab Kit för Windows och Office
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052731"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685504"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
-Dessa labbar är utformade för att hjälpa dig att planera, testa och verifiera din distribution och hantering av datorer med Windows 10 Enterprise och Microsoft 365 Apps för företag. Labbarna omfattar de steg och verktyg som beskrivs i skrivbordsdistributionshjulet, bland annat Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive och Windows Autopilot.
+Dessa övningar är avsedda att hjälpa dig att planera, testa och validera din installation och hantering av Station ära datorer med Windows 10 Enterprise och Microsoft 365-appar för företag. Lab-täckning med Konfigurations hanteraren för Microsoft-slutpunkter, skriv bords analyser, verktyget Office-anpassning, OneDrive, Windows autopilot och mer.
 
-Den här utbildningen rekommenderas starkt för organisationer som behöver migrera från Windows 7 eftersom supporten upphört, men gäller även för dig som har Windows 10 och Microsoft 365 Apps för företag (tidigare Office 365 ProPlus) eller Office 2019. Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.
+Detta paket rekommenderas starkt för organisationer som förbereder Windows 8-uppgraderingar och gäller även om du använder Windows 10, Microsoft 365-appar för företag (tidigare Office 365 ProPlus) eller Office 2019. Och som en isolerad miljö är Lab perfekt för att utforska distributionsverktyg för uppdateringar och testning av distributionsautomatisering.
 
 [Ladda ned Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -46,9 +46,8 @@ Du får en virtuell labbmiljö som etableras automatiskt, inklusive domänanslut
 
 Dessutom är labbet utformat för anslutning till utvärderingsversioner av: 
 
-  - Microsoft 365 E5 eller
-  - Office 365 Enterprise E5
-  - Enterprise Mobility + Security
+  - Microsoft 365 E5
+  - Office 365 Enterprise, E5 med Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Stegvisa labbuppgifter
 
@@ -57,14 +56,14 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 ### <a name="device-and-app-readiness"></a>Beredskap för enheter och appar
 
   - Desktop Analytics
-  - NYHET! Distribuera och uppdatera nya Microsoft Edge 
-  - NYHET! Installera och konfigurera Cloud Management Gateway (CMG) 
+  - Distribuera och uppdatera nya Microsoft Edge 
+  - Installera och konfigurera Cloud Management Gateway (CMG) 
   - Internet Explorer-läge 
   - Programskydd som 
 
 ### <a name="directory-and-network-readiness"></a>Beredskap för Katalog- och nätverks
 
-  - NYHET! Optimera Windows 10 uppdateringsleverans 
+  - Optimera Windows 10 uppdateringsleverans 
   - Konfigurationshanteraren och samhantering av Microsoft Intune
   - Fjärråtkomst (VPN)
 
@@ -110,7 +109,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
   - Underhålla Microsoft 365-applikationer för företag med Configuration Manager
   - NYHET! Office-uppdateringar med konfigurationshanteraren och Intune
   
-### <a name="new-windows-virtual-desktop"></a>NYHET! Windows Virtual Desktop
+### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
   - Windows Virtual Desktop: förbereda, distribuera, optimera 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Ladda ned Windows and Office Deployment Lab Kit
@@ -120,8 +119,6 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 *Använd en bredbandsuppkoppling när du laddar ned det här innehållet så att du får en smidig nedladdningsupplevelse. Tänk på att den automatiska etableringen kan ta ungefär 30–45 minuter. För labbmiljön krävs minst 16 GB ledigt minne och 150 GB ledigt diskutrymme. För optimala prestanda rekommenderas 32 GB ledigt minne. Labben utgår 12 september 2020. En ny version kommer att publiceras före detta utgångsdatum.*
 
 ## <a name="additional-guidance"></a>Ytterligare vägledning
-
-  - [Center för skrivbordsdistribution](https://www.aka.ms/howtoshift)
 
   - [Videor i skrivbordsdistributionsserien från Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 

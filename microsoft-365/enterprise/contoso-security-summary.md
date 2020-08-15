@@ -1,5 +1,5 @@
 ---
-title: Sammanfattning av Microsoft 365 Enterprise-säkerhet för Contoso Corporation
+title: Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 Enterprise.
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Hur Contoso använder säkerhetsfunktionerna i Microsoft 365 för företag.
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268404"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686446"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 Enterprise-säkerhet för Contoso Corporation
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Sammanfattning av Microsoft 365 för företags säkerhet för Contoso Corporation
 
-För att IT-säkerhetsavdelningen ska godkänna distributionen av Microsoft 365 genomfördes en noggrann översyn av säkerheten. Här är Contosos säkerhetskrav för molnet:
+En grundlig säkerhets granskning utfördes för att få en genom gång av hur distributionen av Microsoft 365 för IT-avdelningen får logga ut. Här är Contosos säkerhetskrav för molnet:
 
 - De starkaste autentiseringsmetoderna ska användas för medarbetarnas åtkomst till molnresurser
 - Datorer och mobila enheten måste kunna ansluta till och komma åt programmen på ett säkert sätt
@@ -36,7 +36,7 @@ För att IT-säkerhetsavdelningen ska godkänna distributionen av Microsoft 365 
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contosos väg till säkerhetsberedskap för Microsoft 365
 
-Contoso använde följande steg i deras säkerhetsförberedelser inför distributionen av Microsoft 365 Enterprise:
+Contoso har följande steg för att klara deras säkerhet vid distribution av Microsoft 365 för företag:
 
 1. Begränsade administratörskonton för molnet
 
@@ -44,13 +44,13 @@ Contoso använde följande steg i deras säkerhetsförberedelser inför distribu
 
 2. Dataklassificeringsanalyser utfördes på tre nivåer
 
-   Contoso gjorde en noggrann översyn och fastställde tre nivåer, som användes till att bestämma vilka Microsoft 365 Enterprise-funktioner som skulle användas för att skydda Contosos mest värdefulla data.
+   Contoso har gjort en noggrann recension och fastställt de tre nivåerna, som användes för att fastställa Microsoft 365 för Enterprise-funktioner för att skydda Contosos viktigaste data.
 
 3. Principer för åtkomst, bevarande och informationsskydd fastställdes som datanivåer
 
    Baserat på datanivåerna ställde Contoso upp detaljerade krav för att kvalificera framtida IT-arbetsbelastningar som flyttas till molnet.
 
-Contosos säkerhetsadministratörer och IT-avdelning distribuerade många säkerhetsfunktioner enligt metodtipsen för säkerhet och distributionskraven för Microsoft 365. Arbetet utfördes på det sätt som beskrivs i följande avsnitt.
+I enlighet med säkerhets rekommendationerna och Microsoft 365 för företags distributions krav har Contosos säkerhets administratörer och IT-avdelningen distribuerat många säkerhetsfunktioner och funktioner enligt beskrivningen i följande avsnitt.
 
 ## <a name="identity--access-management"></a>Identitets- och åtkomsthantering 
 

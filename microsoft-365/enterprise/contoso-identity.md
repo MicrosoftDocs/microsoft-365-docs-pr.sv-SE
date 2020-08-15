@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Hur Contoso använder sig av IDaaS (identitet som tjänst) och tillhandahåller molnbaserad autentisering för anställda och federerad autentisering för partner och kunder.
-ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42812930"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686040"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>ID för Contoso Corporation
 
-Microsoft tillhandahåller IDaaS (identitet som tjänst) i molnet med Azure Active Directory (Azure AD). För att kunna använda Microsoft 365 Enterprise behövde Contosos IDaaS-lösning använda sin lokala identitetsleverantör och fortfarande inkludera federerad autentisering med sina befintliga betrodda identitetsleverantörer från tredje part.
+Microsoft tillhandahåller IDaaS (identitet som tjänst) i molnet med Azure Active Directory (Azure AD). För att kunna använda Microsoft 365 för Enterprise, måste Contosos IDaaS-lösning utnyttja sin lokala identitets leverantör och ändå inkludera federerad identitet med sina befintliga betrodda tredjepartsleverantörer.
 
 ## <a name="contosos-active-directory-domain-services-forest"></a>Contosos Active Directory Domain Services-skog
 
@@ -55,7 +55,7 @@ Contoso bestämde sig för att behålla denna infrastruktur och dedikera den til
 
 Contoso ville använda sin lokala AD DS-skog för autentisering för Microsoft 365-molnresurser. De bestämde sig för synkronisering av lösenordshash (PHS).
 
-PHS synkroniserar den lokala AD DS-skogen med Azure AD-klientorganisationen för Microsoft 365 Enterprise-abonnemanget, kopierar användar- och gruppkonton och en hashad version av användarkontolösenord. 
+PHS synkroniserar den lokala AD DS-skogen med Azure AD-innehavaren av sitt Microsoft 365 för företags prenumeration, kopierar användare och grupp konton och en hash-version av användar konto lösen ord. 
 
 För att utföra en pågående katalogsynkronisering har Contoso distribuerat Azure AD Connect-verktyget på en server i sitt datacenter i Paris. 
 
@@ -81,8 +81,8 @@ Här är Contosos resulterande uppsättning principer för villkorsstyrd åtkoms
 
 ## <a name="see-also"></a>Snabbreferens
 
-[Identitet för Microsoft 365 Enterprise](identity-infrastructure.md)
+[Identitets översikt för Microsoft 365](identity-roadmap-microsoft-365.md)
 
-[Distributionsguide](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Testlabbguider](m365-enterprise-test-lab-guides.md)

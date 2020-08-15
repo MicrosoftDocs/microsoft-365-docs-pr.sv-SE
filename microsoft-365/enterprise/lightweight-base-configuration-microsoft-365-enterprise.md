@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,34 +17,34 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Använd den här testlabbguiden för att skapa en förenklad testmiljö för att testa Microsoft 365 Enterprise.
-ms.openlocfilehash: 7a4800d374416a1e197536bc1a867d3fbc4b1243
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: Använd den här test laboratorie guiden för att skapa en lätt test miljö för att testa Microsoft 365 för företag.
+ms.openlocfilehash: 5de9e44f83d4c6bbae2b4148ce39ca371ead2d34
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818759"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686784"
 ---
 # <a name="the-lightweight-base-configuration"></a>Den enkla baskonfigurationen
 
-*Den här testlabbguiden kan användas i både Microsoft 365 Enterprise- och Office 365 Enterprise-testmiljöer.*
+*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
 
 I den här artikeln får du stegvisa instruktioner för hur du skapar en förenklad miljö med en Microsoft 365 E5-prenumeration och en dator med Windows 10 Enterprise. 
 
 ![Den förenklade testmiljön för Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Använd den resulterande miljön för att testa funktionerna och funktionaliteten i [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+Använd den resulterande miljön för att testa funktionerna i [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/enterprise).
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Klicka på [Samling med testlabbguider för Microsoft 365 för företag](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
+> Klicka på [Microsoft 365 för företags test laboratorie guiden](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) för att få en visuell karta till alla artiklar i gruppen Microsoft 365 för Enterprise Test Lab.
 
-## <a name="phase-1-create-your-office-365-e5-subscription"></a>Fas 1: Skapa en Office 365 E5-prenumeration
+## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>Fas 1: skapa ditt Microsoft 365 E5-abonnemang
 
-Vi börjar med en utvärderingsprenumeration på Office 365 E5 och lägger sedan till Microsoft 365 E5-prenumerationen.
+Vi börjar med ett Microsoft 365 E5-prov abonnemang och lägger sedan till Microsoft 365 E5-abonnemanget.
 
-För att starta utvärderingsprenumerationen för Office 365 E5 behöver du först ett fiktivt företagsnamn och ett nytt Microsoft-konto.
+För att starta ett Microsoft 365 E5-prov abonnemang behöver du först ett fiktivt företags namn och ett nytt Microsoft-konto.
   
 1. Vi rekommenderar att du använder en variant av företagsnamnet Contoso som ditt företagsnamn, vilket är ett fiktivt företag som används i Microsoft-exempelinnehåll, men det är inget krav. Skriv ditt fiktiva företagsnamn här: ![Rad](../media/Common-Images/TableLine.png)
     
@@ -76,7 +76,7 @@ Du skapar en utvärderingsprenumeration på Office 365 för att testmiljön ska 
 
 I den här fasen konfigurerar du prenumerationen med ytterligare användare och tilldelar dem Office 365 E5-licenser.
   
-Använd anvisningarna i [Ansluta till Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) för att ansluta till prenumerationen med Azure Active Directory PowerShell för Graph-modulen från datorn.
+Använd anvisningarna i [ansluta till Microsoft 365 med PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) för att ansluta till din prenumeration med Azure Active Directory PowerShell för Graph-moduler från datorn.
     
 I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du det globala administratörsnamnet (t.ex. jdoe@contosotoycompany.onmicrosoft.com) och lösenordet.
   
@@ -151,7 +151,7 @@ Anteckna dessa värden:
 
 Om allt du behöver är en Office 365-testmiljö kan du stanna här. 
 
-Se [Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md) för ytterligare testlabbguider som gäller för både Office 365 och Microsoft 365.
+Se [Microsoft 365 för företags test labb guider](m365-enterprise-test-lab-guides.md) för ytterligare test labb guider som gäller både Office 365 och Microsoft 365.
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>Fas 3: Lägga till en utvärderingsprenumeration på Microsoft 365 E5
 
@@ -191,7 +191,7 @@ Din testmiljö har nu:
 - En utvärderingsprenumeration på Microsoft 365 E5.
 - Alla relevanta användarkonton (antingen bara det globala administratörskontot eller alla fem användarkonton) är aktiverade för att använda Microsoft 365 E5.
     
-Här är den resulterande konfigurationen som lägger till Microsoft 365 E5, där både Office 365 och Enterprise Security + Management (EMS) ingår.
+Här är din resulterande konfiguration, som lägger till Microsoft 365 E5.
   
 ![Fas 3 av testmiljön för Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -294,7 +294,7 @@ Anslut sedan WIN10-datorn till Azure AD-klienten för din Microsoft 365 E5-prenu
     
 Installera sedan Microsoft 365-applikationer för företag på WIN10-datorn.
   
-1. Öppna webbläsaren Microsoft Edge och logga in på Office-portalen med autentiseringsuppgifterna för ditt globala administratörskonto. Mer information finns i [Så här loggar du in i Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Öppna webbläsaren Microsoft Edge och logga in i [administrations centret för microsoft 365](https://admin.microsoft.com) med dina globala administratörs konto uppgifter.
     
 2. På fliken **Microsoft Office Home** klickar du på **Installera Office**.
     
@@ -312,7 +312,7 @@ Det här omfattar den WIN10-dator som har:
 - Registrerats som en Azure AD-enhet i Microsoft Intune (EMS).
 - Har Microsoft 365-applikationer för företag installerat.
   
-Nu är du redo att experimentera med fler funktioner i [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+Nu kan du experimentera med fler funktioner i [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Nästa steg
 
@@ -323,10 +323,10 @@ Utforska dessa ytterligare uppsättningar testlabbguider:
 - [Informationsskydd](m365-enterprise-test-lab-guides.md#information-protection)
    
 
-## <a name="see-also"></a>Snabbreferens
+## <a name="see-also"></a>Se även
 
-[Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
-[Distribuera Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)

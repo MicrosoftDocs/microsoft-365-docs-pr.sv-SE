@@ -1,5 +1,5 @@
 ---
-title: Ökad Microsoft 365-säkerhet för microsoft 365 Enterprise-testmiljön
+title: Ökad Microsoft 365-säkerhet för test miljön av Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,116 +13,114 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Använd den här testlabbet-guiden om du vill aktivera ytterligare microsoft 365-säkerhetsinställningar i Microsoft 365 Enterprise-testmiljön.
-ms.openlocfilehash: 53205f0626ce55c5a9627339f3631964e3374a19
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Använd den här test laboratorie guiden för att aktivera ytterligare Microsoft 365-säkerhets inställningar din Microsoft 365 för företags test miljö.
+ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631675"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686808"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Ökad Microsoft 365-säkerhet för microsoft 365 Enterprise-testmiljön
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Ökad Microsoft 365-säkerhet för test miljön av Microsoft 365 för företag
 
-*Den här testlabbguiden kan bara användas i Microsoft 365 Enterprise-testmiljöer.*
+*Den här test laboratorie guiden kan endast användas för test miljöer med Microsoft 365 för företags nätverk.*
 
-Med instruktionerna i den här artikeln konfigurerar du ytterligare Microsoft 365-inställningar för att öka säkerheten i microsoft 365 Enterprise-testmiljön.
+Med instruktionerna i den här artikeln konfigurerar du ytterligare Microsoft 365-inställningar för att öka säkerheten i test miljön av Microsoft 365 för företag.
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygga ut testmiljön i Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: bygga ut test miljön för Microsoft 365 för företag
 
-Om du bara vill konfigurera ökad Microsoft 365-säkerhet på ett lätt väg med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du bara vill konfigurera ökad Microsoft 365-säkerhet på ett enkelt sätt med minimi kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Om du vill konfigurera ökad Microsoft 365-säkerhet i ett simulerat företag följer du instruktionerna i [Direktautentisering](pass-through-auth-m365-ent-test-environment.md).
+Om du vill konfigurera utökad Microsoft 365-säkerhet i ett simulerat företag följer du anvisningarna i [vidarekoppling](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testning av ökad Microsoft 365-säkerhet kräver inte den simulerade företagstestmiljön, som innehåller ett simulerat intranät som är anslutet till Internet och katalogsynkronisering för en AD DS-skog (Active Directory Domain Services). Det finns här som ett alternativ så att du kan testa automatiserad licensiering och gruppmedlemskap och experimentera med det i en miljö som representerar en typisk organisation. 
+> Testning av utökad Microsoft 365-säkerhet kräver inte den simulerade företags test miljön, som innehåller ett simulerat intranät som är kopplat till Internet-och katalogs-synkronisering för en AD DS-skog (Active Directory Domain Services). Det tillhandahålls här som ett alternativ så att du kan testa automatiserad licensiering och grupp medlemskap och experimentera med den i en miljö som representerar en typisk organisation. 
 
-## <a name="phase-2-configure-increased-microsoft-365-security"></a>Fas 2: Konfigurera ökad Microsoft 365-säkerhet
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>Fas 2: Konfigurera utökad Microsoft 365-säkerhet
 
-I den här fasen aktiverar du ökad Microsoft 365-säkerhet för microsoft 365 Enterprise-testmiljön. Mer information och inställningar finns i [Konfigurera klienten för ökad säkerhet](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+I den här fasen aktiverar du ökad Microsoft 365-säkerhet för din test miljö för Microsoft 365. Mer information och inställningar finns i [Konfigurera din klient organisation för ökad säkerhet](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
-### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurera SharePoint Online för att blockera appar som inte stöder modern autentisering
+### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurera SharePoint Online för att blockera appar som inte stöder modern
 
-Appar som inte stöder modern autentisering kan inte ha [konfigurationer för identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) som tillämpas på dem, vilket är en viktig del för att skydda din Microsoft 365-prenumeration och dess digitala tillgångar. 
+Appar som inte stöder modern lösenordsautentisering kan inte ha [identitets-och enhets åtkomst inställningar](microsoft-365-policies-configurations.md) kopplade till dem, vilket är ett viktigt element för att skydda ditt Microsoft 365-abonnemang och dess digitala till gångar. 
 
-1. Gå till Microsoft 365[https://portal.microsoft.com](https://portal.microsoft.com)admincenter ( ) och logga in på din Microsoft 365 testlabbprenumeration med ditt globala administratörskonto.
+1. Gå till administrations centret för Microsoft 365 [https://portal.microsoft.com](https://portal.microsoft.com) och logga in på ditt microsoft 365 test laboratorie abonnemang med ditt globala administratörs konto.
     
-  - Om du använder den lätta testmiljön för Microsoft 365 loggar du in från den lokala datorn.
+  - Om du använder test miljön för det lättviktiga Microsoft 365 loggar du in från din lokala dator.
     
-  - Om du använder testmiljön för simulerade företag microsoft 365 använder du [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella klientdatorn och loggar sedan in från CLIENT1.
+  - Om du använder den simulerade företags test miljön för Microsoft 365 kan du använda [Azure-portalen](https://portal.azure.com) för att ansluta till den virtuella KLIENT1 och sedan logga in från KLIENT1.
  
-2. Klicka på **SharePoint**under **Administrationscenter** i det vänstra navigeringsfönstret på fliken **Microsoft 365 i administrationscentret.**
-3. Klicka på **Principer > Åtkomstkontroll**på fliken Nytt **administrationscenter i SharePoint.**
-4. Klicka på **Appar som inte stöder modern autentisering,** välj Blockera **åtkomst**och klicka sedan på **Spara**.
+2. På fliken ny **administrations Center för Microsoft 365** går du till **administrations** Center i det vänstra navigerings fönstret och klickar på **SharePoint**.
+3. Klicka på **principer > åtkomst kontroll**på fliken nytt **administrations Center för SharePoint** .
+4. Klicka på **appar som inte stöder modern auktorisering**, Välj **blockera åtkomst**och klicka sedan på **Spara**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivera avancerat skydd mot hot för SharePoint, OneDrive för företag och Microsoft Teams
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Aktivera avancerat skydd för SharePoint, OneDrive för företag och Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från att oavsiktligt dela skadliga filer.
+Office 365 Avancerat skydd (ATP) för SharePoint, OneDrive och Microsoft Teams skyddar din organisation från oavsiktlig delning av skadliga filer.
 
-1. Gå till [Security & Compliance Center](https://protection.office.com) och logga in med ditt globala administratörskonto.
+1. Gå till [säkerhets & Compliance Center](https://protection.office.com) och logga in med ditt globala administratörs konto.
 
-2. Klicka på **Princip**under **Hothantering**i det vänstra navigeringsfönstret och klicka sedan på **BETRODDa bifogade filer.** 
+2. I det vänstra navigerings fönstret, under **Threat Management**, klickar du på **princip**och sedan på **ATP Safe Attachments**. 
 
-3. Under **Skydda filer i SharePoint, OneDrive och Microsoft Teams**. välj **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
+3. Under **skydda filer i SharePoint, OneDrive och Microsoft Teams**. Välj **Aktivera ATP för SharePoint, OneDrive och Microsoft Teams**.
 
 4. Klicka på **Spara**.
 
 
-### <a name="enable-anti-malware"></a>Aktivera anti-malware
+### <a name="enable-anti-malware"></a>Aktivera skadlig program vara
 
-Skadlig kod består av virus och spionprogram. Virus infekterar andra program och data, och de sprids i hela datorn letar efter program att infektera. Spionprogram refererar till skadlig kod som samlar in din personliga information, till exempel inloggningsinformation och personuppgifter, och skickar tillbaka den till den skadliga koden. 
+Skadlig program vara består av virus och spionprogram. Virus angriper andra program och data och de fördelas på hela datorn och letar efter program att infektera. Spionprogram refererar till skadlig program vara som samlar in dina person uppgifter, till exempel inloggnings information och person uppgifter, och skickar tillbaka den till författaren med skadlig program vara. 
 
-Microsoft 365 har inbyggda funktioner för filtrering av skadlig kod och skräppost som skyddar inkommande och utgående meddelanden från skadlig programvara och skyddar dig från skräppost. Mer information finns i [Skydd mot skräppost & skydd mot skadlig kod i Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+Microsoft 365 har inbyggda funktioner för skräp post och spam som hjälper dig att skydda inkommande och utgående meddelanden från skadlig program vara och hjälpa till att skydda dig från skräp post. Mer information finns i [anti-spam & skydd mot skadlig program vara](../security/office-365-security/anti-spam-and-anti-malware-protection.md).
 
-Så här säkerställer du att bearbetning av skadlig kod utförs på filer med vanliga filtyper för bifogade filer:
+Så här kontrollerar du att behandling mot skadlig program vara utförs på filer med vanliga typer av bifogade filer:
 
-1. Klicka på bakåtknappen i webbläsaren för att komma tillbaka till **sidan Policy.**
-2. Klicka på **Anti-malware**.
-3. Dubbelklicka på principen **Standard**.
-4. Klicka på **Inställningar**i **policyfönstret mot skadlig kod** .
-4. Under **filtret Vanliga typer av bifogade filer**väljer du **På**och klickar sedan på **Spara**.
-
-
-## <a name="phase-3-examine-the-security-dashboard"></a>Fas 3: Undersök säkerhetsinstrumentpanelen
-
-Office 365-hothantering kan hjälpa dig att kontrollera och hantera åtkomst till mobila enheter till organisationens data, skydda din organisation från dataförlust och skydda inkommande och utgående meddelanden från skadlig programvara och skräppost. Du använder också hothantering för att skydda domänens rykte och för att avgöra om avsändare förfalskar konton från domänen eller inte. 
-
-Så här ser du säkerhetsinstrumentpanelen:
-
-1. Om det behövs går du till [Security & Compliance Center](https://protection.office.com) och loggar in med ditt globala administratörskonto.
-
-2. Klicka på **Instrumentpanel**under **Hothantering**i det vänstra navigeringsfönstret.
-
-Ta en närmare titt på alla kort på instrumentpanelen för att bekanta dig med den information som tillhandahålls.
-
-Mer information finns i [Säkerhetspanelen](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard).
+1. Klicka på knappen bakåt i webbläsaren för att gå tillbaka till **princip** sidan.
+2. Klicka på **skadlig program vara**.
+3. Dubbelklicka på den princip som heter **default**.
+4. Klicka på **Inställningar**i **princip fönstret mot skadlig program vara** .
+4. Välj **på**under **vanliga typer av bifogade filer**och klicka sedan på **Spara**.
 
 
-## <a name="phase-4-examine-microsoft-secure-score"></a>Fas 4: Undersök Microsoft Secure Score
+## <a name="phase-3-examine-the-security-dashboard"></a>Fas 3: granska säkerhets instrument panelen
 
-Microsoft Secure Score visar din säkerhetsposition som ett nummer, vilket anger din nuvarande nivå i förhållande till de funktioner som är tillgängliga i din prenumeration. Det ger dig också en lista över förbättringsåtgärder du kan vidta för att förbättra din poäng.
+Threat Management i Microsoft 365 hjälper dig att kontrol lera och hantera mobila enheters åtkomst till organisationens data, skydda din organisation från data förlust och hjälpa till att skydda inkommande och utgående meddelanden från skadlig program vara och skräp post. Du använder också Threat Management för att skydda din domäns rykte och för att avgöra om avsändaren är skadligt falsk från din domän. 
 
-1. Skapa en ny flik i webbläsaren och gå till [Säkerhetscentret för Microsoft 365](https://security.microsoft.com/)och klicka sedan på **Säker poäng**.
-2. På fliken **Översikt** noterar du ditt nuvarande säkra resultat och hur det kan jämföras med det globala genomsnittet och prenumerationerna med ett liknande antal licenser.
-3. På fliken **Förbättringsåtgärder** läser du igenom listan över åtgärder som du kan vidta för att öka din poäng.
+Så här visar du säkerhets instrument panelen:
 
-Mer information finns i [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
+1. Om det behövs går du till sidan [säkerhets & efterlevnad](https://protection.office.com) och loggar in med ditt globala administratörs konto.
+
+2. Klicka på **instrument panel**under **Threat Management**i det vänstra navigerings fönstret.
+
+Ta en titt på alla kort på instrument panelen för att bekanta dig med informationen.
+
+Mer information finns i [säkerhets instrument panelen](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard).
+
+
+## <a name="phase-4-examine-microsoft-secure-score"></a>Fas 4: Undersök Microsofts säkra Poäng
+
+Microsofts säkra poäng visar din Posture som ett nummer som visar din aktuella nivå i förhållande till de funktioner som är tillgängliga i ditt abonnemang. Du får också en lista över förbättrings åtgärder som du kan vidta för att förbättra din poäng.
+
+1. Skapa en ny flik i webbläsaren och gå till [Microsoft 365 säkerhets Center](https://security.microsoft.com/)och klicka sedan på **säker Poäng**.
+2. På fliken **Översikt**  ser du din nuvarande säkra poäng och hur den jämförs med det globala medelvärdet och abonnemanget med ett liknande antal licenser.
+3. På fliken **förbättrings åtgärder** läser du igenom listan med åtgärder du kan vidta för att öka poängen.
+
+Mer information finns i [Microsofts säkra Poäng](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 ## <a name="next-steps"></a>Nästa steg
 
-Se steget [Konfigurera ökad säkerhet för Microsoft 365](infoprotect-configure-increased-security-office-365.md) i **informationsskyddsfasen** för information och länkar för att konfigurera dessa inställningar i produktionen.
+Utforska ytterligare funktioner för [informations skydd](m365-enterprise-test-lab-guides.md#information-protection) i test miljön.
 
-Utforska ytterligare funktioner och funktioner för [informationsskydd](m365-enterprise-test-lab-guides.md#information-protection) i testmiljön.
+## <a name="see-also"></a>Se även
 
-## <a name="see-also"></a>Snabbreferens
+[Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
-[Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Distribuera Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
-
-[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
