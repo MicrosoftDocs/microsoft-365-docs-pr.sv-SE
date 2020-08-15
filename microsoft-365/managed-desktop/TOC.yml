@@ -106,8 +106,6 @@
         - name: Arbeta med rapporter
           href: working-with-managed-desktop/reports.md
           items:
-            - name: Kompatibilitetsrapport för enheter
-              href: working-with-managed-desktop/device-compliance-report.md
             - name: Enhets inventerings rapport
               href: working-with-managed-desktop/device-inventory-report.md
         - name: Arbeta med insikter

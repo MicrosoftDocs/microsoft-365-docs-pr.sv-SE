@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Förstå hur Contoso använder Microsoft Endpoint Configuration Manager för att distribuera Microsoft 365-applikationer för företag.
-ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
-ms.translationtype: HT
+ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679044"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695164"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365-applikationer för företagsdistribution av Contoso
 
@@ -79,12 +79,12 @@ Här är Contosos Microsoft 365-applikationer för företag installation och på
  
 ## <a name="next-step"></a>Nästa steg
 
-[Ta reda på mer](contoso-mdm.md) om hur Contoso använder Microsoft Intune i Microsoft 365 Enterprise för att hantera sina enheter och apparna som körs på dem i sin organisation.
+[Lär dig](contoso-mdm.md) hur Contoso använder Microsoft Intune i Microsoft 365 för företag för att hantera dess enheter och programmen som körs på dem i sin organisation.
 
 ## <a name="see-also"></a>Se även
 
-[Microsoft 365-applikationer för företag för Microsoft 365 Enterprise](office365proplus-infrastructure.md)
+[Microsoft 365 Apps för företag](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Distributionsguide](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
 [Testlabbguider](m365-enterprise-test-lab-guides.md)

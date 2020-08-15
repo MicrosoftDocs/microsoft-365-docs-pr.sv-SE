@@ -1,5 +1,5 @@
 ---
-title: Hantering av privilegierad åtkomst för microsoft 365 Enterprise-testmiljön
+title: Hantering av privilegie rad åtkomst för din test miljö för Microsoft 365 för företag
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,104 +14,104 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Använd den här testlabbet-guiden om du vill aktivera hantering av privilegierad åtkomst din Microsoft 365 Enterprise-testmiljö.
-ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Använd den här test laboratorie guiden för att aktivera hantering av privilegierad åtkomst för Microsoft 365 för företags test miljö.
+ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352528"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695152"
 ---
-# <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Hantering av privilegierad åtkomst för microsoft 365 Enterprise-testmiljön
+# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Hantering av privilegie rad åtkomst för din test miljö för Microsoft 365 för företag
 
-*Den här testlabbguiden kan användas i både Microsoft 365 Enterprise- och Office 365 Enterprise-testmiljöer.*
+*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
 
-Med instruktionerna i den här artikeln konfigurerar du hantering av privilegierad åtkomst för att öka säkerheten i microsoft 365 Enterprise-testmiljön.
+Genom att följa anvisningarna i den här artikeln kan du konfigurera hanteringen av behörig åtkomst för att öka säkerheten i test miljön av Microsoft 365 för företag.
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+>Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygga ut testmiljön i Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: bygga ut test miljön för Microsoft 365 för företag
 
-Om du bara vill konfigurera hantering av privilegierad åtkomst på ett lättviktssätt med minimikraven följer du instruktionerna i [Lightweight base-konfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md).
+Om du bara vill konfigurera privilegie rad åtkomst hantering på ett enkelt sätt med de minsta kraven följer du anvisningarna i [Lightweight Base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Om du vill konfigurera hantering av privilegierad åtkomst i ett simulerat företag följer du instruktionerna i [Direktautentisering](pass-through-auth-m365-ent-test-environment.md).
+Om du vill konfigurera privilegie rad åtkomst hantering i ett simulerat företag följer du anvisningarna i [vidarekoppling](pass-through-auth-m365-ent-test-environment.md).
   
 >[!NOTE]
->Testning av privilegierad åtkomsthantering kräver inte den simulerade företagstestmiljön, som innehåller ett simulerat intranät som är anslutet till Internet och katalogsynkronisering för en AD DS-skog. Det finns här som ett alternativ så att du kan testa privilegierad åtkomsthantering och experimentera med den i en miljö som representerar en typisk organisation. 
+>För att testa hanteringen av privilegierade åtkomst krävs inte den simulerade företags test miljön, som innehåller ett simulerat intranät som är kopplat till Internet och Directory-synkronisering för en AD DS-skog. Det finns ett alternativ som gör att du kan testa hanteringen av behörig åtkomst och experimentera med den i en miljö som representerar en typisk organisation. 
 
-## <a name="phase-2-configure-privileged-access-management"></a>Fas 2: Konfigurera hantering av privilegierad åtkomst
+## <a name="phase-2-configure-privileged-access-management"></a>Fas 2: Konfigurera hantering av behörig åtkomst
 
-I den här fasen konfigurerar du en godkännaregrupp och aktiverar hantering av privilegierad åtkomst för microsoft 365 Enterprise-testmiljön. Mer information och en översikt över hantering av privilegierad åtkomst finns i Hantering av [privilegierad åtkomst i Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+I den här fasen konfigurerar du en god kännare grupp och aktiverar hantering av privilegierade åtkomst för din Microsoft 365 för företags test miljö. Mer information och en översikt över privilegierade åtkomst hantering finns i [Hantera privilegierad åtkomst](../compliance/privileged-access-management-overview.md).
 
-Så här konfigurerar och använder du privilegierad åtkomst i organisationen:
+Följ de här stegen för att konfigurera och använda privilegie rad åtkomst i organisationen:
 
-- [Steg 1: Skapa en godkännargrupp](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
+- [Steg 1: skapa en god kännare grupp](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-    Innan du börjar använda behörighetsåtkomst bör du bestämma vem som har godkännandebehörighet för inkommande begäranden om åtkomst till förhöjda och privilegierade uppgifter. Alla användare som ingår i gruppen Godkännare kan godkänna åtkomstbegäranden. Detta aktiveras genom att skapa en e-postaktiverad säkerhetsgrupp i Office 365. Skapa en ny säkerhetsgrupp med namnet "Privileged Access Approvers" i testmiljön och lägg till "Användare 3" som tidigare skapats i tidigare testlabbguidesteg.
+    Innan du börjar använda privilegie rad åtkomst kan du bestämma vem som ska ha godkännande auktoritet för inkommande förfrågningar om åtkomst till förhöjda och behöriga uppgifter. Alla användare som är medlemmar i gruppen god kännare kan godkänna åtkomst förfrågningar. Det här är aktiverat genom att skapa en e-postaktive rad säkerhets grupp i Microsoft 365. Skapa en ny säkerhets grupp med namnet "behöriga åtkomst god kännare" i test miljön och Lägg till "användare 3" tidigare skapad i den föregående test laboratorie guiden.
 
-- [Steg 2: Aktivera privilegierad åtkomst](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
+- [Steg 2: Aktivera privilegie rad åtkomst](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-    Privilegierad åtkomst måste uttryckligen aktiveras i Office 365 med standardgodkärörsgruppen och inkludera en uppsättning systemkonton som du vill ska uteslutas från åtkomstkontrollen för privilegierad åtkomsthantering. Var noga med att aktivera privilegierad åtkomst i organisationen innan fas 3 i den här guiden startas.
+    Privilegie rad åtkomst måste aktive ras explicit i Microsoft 365 med standard gruppen för godkännande och inklusive en uppsättning system konton som du vill ska undantas från åtkomst kontroll för privilegie rad åtkomst. Se till att aktivera privilegie rad åtkomst i organisationen innan du startar fas 3 av den här guiden.
 
-## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fas 3: Kontrollera att godkännande krävs för förhöjda och privilegierade uppgifter
+## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fas 3: kontrol lera att godkännande krävs för förhöjda och behöriga uppgifter
 
-I den här fasen kontrollerar du att principen för privilegierad åtkomst fungerar och att användare kräver godkännande för att utföra definierade förhöjda och privilegierade uppgifter.
+I den här fasen kontrollerar du att principen för privilegie rad åtkomst fungerar och att användarna kräver godkännande för att utföra definierade förhöjda och behöriga uppgifter.
 
-### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testförmåga att utföra en uppgift SOM INTE har definierats i en privilegierad åtkomstprincip
+### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testa möjligheten att utföra en uppgift som inte har definierats i en policy för privilegie rad åtkomst
 
-Anslut först till Exchange Management PowerShell med autentiseringsuppgifterna för en användare som konfigurerats som global administratör i testmiljön och försök skapa en ny journalregel. [Aktiviteten Ny journalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) har för närvarande inte definierats i en privilegierad åtkomstprincip för din organisation.
+Först ansluter du till Exchange Management PowerShell med autentiseringsuppgifterna för en användare som har kon figurer ATS som global administratör i test miljön och försöker skapa en ny journal regel. Den [nya – JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) uppgiften är för närvarande inte definierad i en policy för privilegie rad åtkomst för organisationen.
 
-1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**Microsoft Exchange Online Remote PowerShell Module på den lokala datorn  >  **Microsoft Exchange Online Remote PowerShell Module** med hjälp av det globala administratörskontot för din testmiljö.
+1. På din lokala dator öppnar du och loggar in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**  >  **Microsoft Exchange Online Remote PowerShell module** med det globala administratörs kontot för test miljön.
 
-2. Skapa en ny journalregel för din organisation i PowerShell för Exchange Management:
+2. I Exchange Management PowerShell kan du skapa en ny journal regel för organisationen:
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
 
-4. Visa att den nya journalregeln har skapats i PowerShell för Exchange Management.
+4. Visa att den nya Journal regeln skapades i Exchange Management PowerShell.
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Skapa en ny princip för privilegierad åtkomst för aktiviteten Ny journalregel
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Skapa en ny privilegierad åtkomst policy för den nya-JournalRule-aktiviteten
 
 >[!NOTE]
->Om du inte redan har slutfört steg 1 och 2 från fas 2 i den här guiden måste du följa stegen för att skapa en godkännares grupp med namnet "Privilege Access Approvers" och aktivera privilegierad åtkomst i testmiljön.
+>Om du inte redan har slutfört steg 1 och 2 från fas 2 i den här guiden ska du läsa igenom stegen för att skapa en god kännare grupp med namnet "behörighets godkännanden" och aktivera privilegie rad åtkomst i test miljön.
 
-1. Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med autentiseringsuppgifterna för det globala administratörskontot för testmiljön.
+1. Logga in i [administrations centret för Microsoft 365](https://admin.microsoft.com) med autentiseringsuppgifter det globala administratörs kontot för test miljön.
 
-2. Gå till **Inställningar**  >  **&**  >  **sekretessbehörighet i**administrationscentret .
+2. I administrations centret går du till **Inställningar**  >  **säkerhet & integritet**  >  **privilegie rad åtkomst**.
 
-3. Välj **Hantera åtkomstprinciper och begäranden**.
+3. Välj **Hantera åtkomst principer och begär Anden**.
 
-4. Välj **Konfigurera principer** och välj Lägg till en **princip**.
+4. Välj **Konfigurera principer** och välj sedan **Lägg till en princip**.
 
-5. Markera eller ange följande värden i listrutan:
+5. Välj eller ange följande värden i list rutan.
 
-    **Principtyp**: Uppgift
+    **Princip typ**: uppgift
 
-    **Policyomfattning**: Exchange
+    **Princip omfattning**: Exchange
 
-    **Policynamn**: Ny journalregel
+    **Princip namn**: ny journal regel
 
-    **Typ av godkännande**: Manuell
+    **Godkännande typ**: manuell
 
-    **Godkännandegrupp**: Privilegierade åtkomstgodkännare
+    **Godkännande grupp**: god kännare för privilegie rad åtkomst
 
-6. Välj **Skapa** och **stäng**sedan . Det kan ta några minuter innan principen konfigureras och aktiveras helt. Var noga med att ge tid för principen att vara fullt aktiverad innan du testar godkännandekravet i nästa steg.
+6. Välj **skapa** och sedan **Stäng**. Det kan ta några minuter innan principen är fullständigt konfigurerad och aktive rad. Se till att tiden för principen är fullständigt aktive rad innan du testar godkännande kravet i nästa steg.
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Testgodkännandekrav för den new-journalRule-uppgift som definierats i en princip för privilegierad åtkomst
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Test godkännande krav för den nya-JournalRule-aktiviteten definierad i en policy för privilegie rad åtkomst
 
-1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**Microsoft Exchange Online Remote PowerShell Module på den lokala datorn  >  **Microsoft Exchange Online Remote PowerShell Module** med hjälp av ett globalt administratörskonto för din testmiljö.
+1. På din lokala dator öppnar du och loggar in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**  >  **Microsoft Exchange Online Remote PowerShell-modul** med ett Använd globalt administratörs konto för test miljön.
 
-2. Skapa en ny journalregel för din organisation i PowerShell för Exchange Management:
+2. I Exchange Management PowerShell kan du skapa en ny journal regel för organisationen:
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. Visa felet "Otillräckliga behörigheter" i PowerShell för Exchange Management:
+3. Visa fel meddelandet "otillräcklig behörighet" i Exchange Management PowerShell:
 
 ```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -121,58 +121,58 @@ Insufficient permissions. Please raise an elevated access request for this task.
     + PSComputerName        : outlook.office365.com
 ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Begär åtkomst för att skapa en ny journalregel med uppgift Ny journalregel
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Begära åtkomst för att skapa en ny journal regel med den nya-JournalRule-uppgiften
 
-1. Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med hjälp av det globala administratörskontot för testmiljön.
+1. Logga in i [administrations centret för Microsoft 365](https://admin.microsoft.com) med det globala administratörs kontot för test miljön.
 
-2. Gå till **Inställningar**  >  **&**  >  **sekretessbehörighet i**administrationscentret .
+2. I administrations centret går du till **Inställningar**  >  **säkerhet & integritet**  >  **privilegie rad åtkomst**.
 
-3. Välj **Hantera åtkomstprinciper och begäranden**.
+3. Välj **Hantera åtkomst principer och begär Anden**.
 
-4. Välj **Ny begäran**. Välj lämpliga värden för din organisation i listrutan:
+4. Välj **ny begäran**. Välj lämpliga värden för din organisation i list rutan:
 
-    **Typ av begäran**: Uppgift
+    **Begäran**: uppgift
 
-    **Omfattning för begäran:** Exchange
+    **Begärans omfattning**: Exchange
 
-    **Begäran om**: Ny journalregel
+    **Begäran om**ny journal regel
 
-    **Varaktighet (timmar):** 2
+    **Varaktighet (timmar)**: 2
 
-    **Kommentarer**: Begär behörighet att skapa en ny journalregel
+    **Kommentar**: begära behörighet att skapa en ny journal regel
 
-5. Välj **Spara** och **stäng**sedan . Din begäran kommer att skickas till godkännarens grupp via e-post.
+5. Välj **Spara** och sedan **Stäng**. Din begäran skickas till gruppen god kännare via e-post.
 
-### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Godkänna begäran om privilegierad åtkomst för att skapa en ny journalregel
+### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Godkänn behörig åtkomstbegäran för att skapa en ny journal regel
 
-1. Logga in på [Microsoft 365-administrationscentret](https://admin.microsoft.com) med autentiseringsuppgifterna för Användare 3 i testmiljön (medlem i säkerhetsgruppen "Privilegierade åtkomstgodtagare" i testmiljön).
+1. Logga in i [administrations centret för Microsoft 365](https://admin.microsoft.com) med hjälp av autentiseringsuppgifterna för användare 3 i test miljön (medlem i säkerhets gruppen "privilegie rad god kännare" i test miljön).
 
-2. Gå till **Inställningar**  >  **&**  >  **sekretessbehörighet i**administrationscentret .
+2. I administrations centret går du till **Inställningar**  >  **säkerhet & integritet**  >  **privilegie rad åtkomst**.
 
-3. Välj **Hantera åtkomstprinciper och begäranden**.
+3. Välj **Hantera åtkomst principer och begär Anden**.
 
-4. Välj den väntande begäran och välj **Godkänn** om du vill bevilja åtkomst till det globala administratörskontot för att skapa en ny journalregel. Ett e-postmeddelande som bekräftar att godkännande har beviljats skickas till det globala administratörskontot (den begärande användaren).  
+4. Välj den väntande begäran och välj **Godkänn** för att bevilja åtkomst till det globala administratörs kontot för att skapa en ny journal regel. Ett e-postmeddelande som bekräftar att godkännandet kommer att skickas till det globala administratörs kontot (den användare som begär detta).  
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testa att skapa en ny journalregel med privilegierad åtkomst godkänd för aktiviteten Ny journalregel
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testa att skapa en ny journal regel med behörig åtkomst godkänd för den nya-JournalRule-aktiviteten
 
-1. Öppna och logga in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**Microsoft Exchange Online Remote PowerShell Module på den lokala datorn  >  **Microsoft Exchange Online Remote PowerShell Module** med hjälp av det globala administratörskontot för din testmiljö.
+1. På din lokala dator öppnar du och loggar in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**  >  **Microsoft Exchange Online Remote PowerShell module** med det globala administratörs kontot för test miljön.
 
-2. Skapa en ny journalregel för din organisation i PowerShell för Exchange Management:
+2. I Exchange Management PowerShell kan du skapa en ny journal regel för organisationen:
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. Visa att den nya journalregeln har skapats i PowerShell för Exchange Management.
+3. Visa att den nya Journal regeln skapades i Exchange Management PowerShell.
 
 ## <a name="next-step"></a>Nästa steg
 
-Utforska ytterligare funktioner och funktioner för [informationsskydd](m365-enterprise-test-lab-guides.md#information-protection) i testmiljön.
+Utforska ytterligare funktioner för [informations skydd](m365-enterprise-test-lab-guides.md#information-protection) i test miljön.
 
 ## <a name="see-also"></a>Se även
 
-[Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
-[Distribuera Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)

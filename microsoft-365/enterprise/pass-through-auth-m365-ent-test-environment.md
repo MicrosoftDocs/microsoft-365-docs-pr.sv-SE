@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera direktautentisering för Microsoft 365-testmiljön.'
-ms.openlocfilehash: 8a9a8847d79e1d114f0ddfb4843cbb7b9f9f0d4c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 1b5540f2e16ac0267bf33faf42defe6bca6d25cd
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631423"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695200"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Direktautentisering för Microsoft 365-testmiljön
 
-*Den här testlabbguiden kan användas i både Microsoft 365 Enterprise- och Office 365 Enterprise-testmiljöer.*
+*Den här test laboratorie guiden kan användas för både Microsoft 365 för företags-och Office 365 företags test miljöer.*
 
 Organisationer som direkt vill använda sin lokala Active Directory Domain Services-infrastruktur vid autentisering till Microsofts molnbaserade tjänster och program, kan använda direktautentisering. I den här artikeln beskrivs hur du konfigurerar Microsoft 365-testmiljön för direktautentisering, vilket ger följande konfiguration:
   
@@ -41,7 +41,7 @@ Konfigurationen av testmiljön består av två faser:
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med Microsoft 365 Enterprise-testlabbguider.
+> Klicka [här](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) om du vill se en översikt över alla artiklar i samlingen med testlabbguider för Microsoft 365 för företag.
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön
 
@@ -51,7 +51,7 @@ Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](pass
   
 Konfigurationen består av: 
   
-- Utvärderingsversioner av eller betalda prenumerationer för Microsoft 365 E5 eller Office 365 E5.
+- Microsoft 365 E5-prov eller betalt abonnemang.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för din Microsoft 365-prenumeration regelbundet.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fas 2: Konfigurera Azure AD Connect på APP1 för direktautentisering
@@ -80,13 +80,13 @@ I den här fasen konfigurerar du att Azure AD Connect använder direktautentiser
 
 10.    Klicka på **Direktautentisering**. I fönstret **Direktautentisering** visas servrarna där dina autentiseringsagenter är installerade. Du bör se APP1 i listan. Stäng fönstret **Direktautentisering**.
 
-Prova sedan att det går att logga in på din prenumeration med <strong>user1@testlab.</strong>\<din offentliga domän> användarnamnet för User1-kontot.
+Prova sedan att logga in på ditt abonnemang med <strong>user1@testlab.</strong>\<your public domain> användarnamn för Användare1-kontot.
 
-1. Logga ut från APP1 och logga sedan in igen med ett annat konto.
+1. Logga ut från APP1 och logga sedan in igen. Den här gången med ett annat konto.
 
-2. När du uppmanas att ange ett användarnamn och lösenord, skriver du <strong>user1@testlab.</strong>\<din offentliga domän> och User1-lösenordet. Nu ska du loggas in som User1.
+2. När du uppmanas att ange ett användarnamn och lösenord anger du <strong>användare1@testlab.</strong>\<your public domain> och lösenordet för Användare1. Nu ska du loggas in som Användare1.
 
-Observera att User1 visserligen har domänadministratörsbehörighet för TESTLAB AD DS-domänen, men den är inte global administratör. Därför visas inte ikonen **Administratör** som ett alternativ.
+Observera att User1 visserligen har domänadministratörsbehörighet för TESTLAB AD DS-domänen, men den är inte global administratör. Därför visas inte **administratörsikonen** som ett alternativ.
 
 Här är konfigurationsresultatet:
 
@@ -94,7 +94,7 @@ Här är konfigurationsresultatet:
  
 Konfigurationen består av:
 
-- Utvärderingsversion eller betald prenumeration för Microsoft 365 E5 eller Office 365 E5 med DNS-domänen testlab.\<ditt domännamn> registrerad.
+- En utvärderings version av Microsoft 365 E5 eller betalda abonnemang med DNS-testlab.\<your domain name> registrerat.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. En autentiseringsagent körs i APP1 och hanterar direktautentiseringsförfrågningar från Azure AD-klienten för din Microsoft 365-prenumeration.
 
 ## <a name="next-step"></a>Nästa steg
@@ -103,8 +103,8 @@ Utforska ytterligare [identitetsfunktioner](m365-enterprise-test-lab-guides.md#i
 
 ## <a name="see-also"></a>Se även
 
-[Testlabbguider för Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Testlabbguider för Microsoft 365 för företag](m365-enterprise-test-lab-guides.md)
 
-[Distribuera Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise-dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 för företags dokumentation](https://docs.microsoft.com/microsoft-365-enterprise/)

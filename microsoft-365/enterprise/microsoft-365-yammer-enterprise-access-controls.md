@@ -1,0 +1,32 @@
+---
+title: Microsoft 365 Yammer Enterprise Access-kontroller
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+f1.keywords:
+- NOCSH
+description: Den här artikeln innehåller en kort sammanfattning av företags åtkomst kontroller för Yammer i produktions miljön.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8bdf357ddd7f5c0b549d291fd4732924608085b9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46696741"
+---
+# <a name="yammer-enterprise-access-controls"></a>Kontroller för Yammer Enterprise Access 
+
+Fysisk och logisk åtkomst till Yammer-produktions miljön begränsas till en mindre uppsättning människor (infrastruktur och tjänster). Precis som med andra Microsoft 365-tekniker har Yammer-tekniker ingen ständig åtkomst till kunddata. Åtkomst måste begäras med hjälp av ett godkännande baserat inloggnings system som liknar låsning med ett begränsat antal god kännare. God kännare verifiera begäran (till exempel kontrollerar de om begäran är legitim baserat på behov, affärs fråga, tid etc.) och Godkänn eller avvisa begäran. Om begäran godkänns ges JIT-åtkomst under en definierad och begränsad tid. När åtkomst tiden har överskridits förfaller Access automatiskt.
+
+Precis som med andra Microsoft 365-tjänster använder multi-factority all åtkomst till produktions miljön för Yammer. Alla Access-och kommando historik skrivs till en användare, och loggas och granskas regelbundet av Yammer-säkerhetsgruppen.
+
+Mer information om Yammer-administration och-hantering finns i [Hjälp för Yammer-administratörer](https://docs.microsoft.com/yammer/yammer-landing-page).
