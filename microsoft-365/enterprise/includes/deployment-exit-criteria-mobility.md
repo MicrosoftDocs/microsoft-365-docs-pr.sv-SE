@@ -1,5 +1,0 @@
-- Intune är konfigurerat, inklusive skapande av Azure AD-användare och -grupper för tillämpning av organisationens regler för enheter.
-- Du har registrerat enheter i Intune så att enheterna kan ta emot de principer som du skapar.
-- Appar läggs till på enheter så att användarna får tillgång till organisationens Microsoft 365-molntjänster, t.ex. Exchange Online och SharePoint Online.
-- Funktioner och inställningar konfigureras och tillämpas på enheterna med de Azure AD-användare och -grupper som du skapar, det kan till exempel vara att aktivera virusskydd och begränsa specifika appar.
-- Principer för efterlevnad finns som kräver en brandvägg eller lösenordslängd på en enhet. Om enheterna inte uppfyller detta, blockerar villkorsstyrd åtkomst tillgången till organisationens data.
