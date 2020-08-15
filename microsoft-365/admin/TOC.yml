@@ -133,20 +133,8 @@
               href: create-groups/add-or-remove-members-from-groups.md
             - name: Återställa en borttagen grupp
               href: create-groups/restore-deleted-group.md
-            - name: Planera för styrning av grupper
-              href: create-groups/plan-for-groups-governance.md
-            - name: Hantera skapande av grupper
-              href: create-groups/manage-creation-of-groups.md
-            - name: Välj domän för grupper
-              href: create-groups/choose-domain-to-create-groups.md
-            - name: Översikt över principer för namngivning av grupper
-              href: create-groups/groups-naming-policy.md
-            - name: Tillåt att medlemmar skickar e-post till och från grupper
-              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
             - name: Hantera gäståtkomst till grupper
               href: create-groups/manage-guest-access-in-groups.md
-            - name: Använda känslighetsetiketter med grupper
-              href: ../compliance/sensitivity-labels-teams-groups-sites.md
     - name: Hantera e-post och kalendrar
       href: email/index.yml
       items:

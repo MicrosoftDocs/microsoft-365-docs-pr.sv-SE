@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Lär dig hur man tilldelar licenser till användare.
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015953"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757563"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -160,6 +160,25 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 5. Längst ned i fönstret **Produktlicenser** väljer du **Spara** \> **Stäng** \> **Stäng**.
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>Tilldela en licens till en gästanvändare
+
+Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter. För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+
+> [!IMPORTANT]
+> Du måste vara en global administratör för att utföra de här stegen.
+
+1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory-administratörcenter</a>
+2. Välj **Användare** i navigeringsfönstret.
+3. På **Användare | Alla användare (Förhandsgranskning)** sidan väljer du **Lägg till filter**.
+4. I **Välj ett fält** väljer du **Användartyp**och sedan **Verkställ**.
+5. I nästa meny väljer du **Gäst**.
+6. Välj den användare som behöver en licens i resultatlistan.
+7. Under **Hantera**väljer du **Licenser**.
+8. Välj **Uppgifter**.
+9. På sidan **Uppdatera licenstilldelningar** väljer du den produkt som du vill tilldela en licens för.
+10. Gå till höger och avmarkera kryssrutorna för de tjänster som du inte vill att gäst användaren ska ha tillgång till.
+11. Välj **Spara**.
 
 ## <a name="next-steps"></a>Nästa steg
 
