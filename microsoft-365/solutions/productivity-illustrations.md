@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d8601538b440b5133731d67743379bdc7980d1d5
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d10b4a7d47f849769d0a534941bddc1c3678f3a4
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522247"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695224"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -37,7 +37,7 @@ Det IT-arkitekter behöver veta om grupper i Microsoft 365
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Miniatyrbild av infografiken för grupper](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Uppdaterad maj 2020|De här illustrationerna beskriver de olika typerna av grupper, hur de skapas och hanteras samt några rekommendationer för styrning.|
+|[![Miniatyrbild av infografiken för grupper](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Uppdaterat maj 2020|De här illustrationerna beskriver de olika typerna av grupper, hur de skapas och hanteras samt några rekommendationer för styrning.|
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Säkerhet och informationsskydd för organisationer i flera regioner
 Säkerhet och informationsskydd för organisationer i flera regioner med en enda Microsoft 365-klientorganisation
@@ -56,16 +56,6 @@ Beroende på din miljö passar vissa verktyg bättre för vissa arkitekturer.
 |[![Miniatyrbild av distributionsstrategin för Microsoft Defender Avancerat skydd](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Uppdaterad i februari 2020| Med hjälp av arkitekturmaterialet kan du planera din distribution för följande arkitekturer: <ul><li> Molnbaserad </li><li> Samhantering </li><li> Lokal</li><li>Utvärdering och lokal registrering</li>
 
 
-<a name="m365foundationinfra"></a>
-### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Grundläggande infrastruktur för Microsoft 365 Enterprise
-
-Få en översikt över den [grundläggande infrastrukturen](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) för Microsoft 365 Enterprise för att komma igång med distributionen.
-  
-|**Objekt**|**Beskrivning**|
-|:-----|:-----|
-|[![Miniatyrbild av affischen för grundläggande infrastruktur för Microsoft 365 Enterprise](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Visa online](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> Uppdaterad i december 2019| I den här affischen sammanfattas varje fas i den grundläggande infrastrukturen när det gäller mål, funktioner och verktyg, utformningsbeslut, konfigurationsresultat, registrering och fortlöpande övervakning och uppdateringar. <br/>| 
-
-   
 <a name="BKMK_O365IDP"></a>
 ### <a name="identity-and-device-protection-for-office-365"></a>Identitets- och enhetsskydd för Office 365
 

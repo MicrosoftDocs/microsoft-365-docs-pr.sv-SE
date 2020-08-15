@@ -1,5 +1,5 @@
 ---
-title: Rekommenderade principer för säker dokument – Microsoft 365 Enterprise | Microsoft-dok
+title: Rekommenderade principer för säkra dokument – Microsoft 365 för företag | Microsoft-dok
 description: Beskriver policyerna för Microsoft-rekommendationer om hur du skyddar åtkomst till SharePoint-filer.
 author: BrendaCarter
 manager: laurawi
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617192"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695049"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Policy rekommendationer för att skydda SharePoint-webbplatser och-filer
 
@@ -85,5 +85,4 @@ På bilden:
 - Om Johan har åtkomst till en känslig eller högreglerad webbplats han är medlem i sin dator, ges hans åtkomst så länge datorn är kompatibel.
 - Om Jonas öppnar en känslig webbplats han är medlem i att använda sin ohanterade telefon, som är tillåten för bas linje användare, får han eller hon skrivskyddad åtkomst till den känsliga webbplatsen på grund av enhets åtkomst principen som har kon figurer ATS för den här webbplatsen.
 - Om Johan har åtkomst till en högreglerad webbplats som han är medlem i med sin ohanterade telefon kommer han att blockeras på grund av åtkomst principen som har kon figurer ATS för den här webbplatsen. Han kan bara komma åt den här webbplatsen via sin hanterade och kompatibla dator.
-
 
