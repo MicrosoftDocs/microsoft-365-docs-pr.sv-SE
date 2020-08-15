@@ -2,220 +2,697 @@
   href: index.yml
 - name: Översikt över Microsoft 365 för företag
   href: microsoft-365-overview.md
-- name: Distribuera Microsoft 365 för företag
-  href: deploy-microsoft-365-enterprise.md
+- name: Nätverk
   items:
-    - name: Distribuera grundläggande infrastruktur
-      href: deploy-foundation-infrastructure.md
+    - name: Översikt
+      href: networking-roadmap-microsoft-365.md
+    - name: Planera
       items:
-        - name: Fas 1 – Nätverk
-          href: networking-infrastructure.md
-          items:
-            - name: Steg 1 – Förbereda nätverket för Microsoft 365
-              href: networking-provide-bandwidth-cloud-services.md
-            - name: Steg 2 – Konfigurera lokala Internetanslutningar för varje kontor
-              href: networking-dns-resolution-same-location.md
-            - name: Steg 3 – Undvika nätverkshairpins
-              href: networking-avoid-network-hairpins.md
-            - name: Steg 4 – Konfigurera förbikoppling av trafik
-              href: networking-configure-proxies-firewalls.md
-            - name: Steg 5 – Optimera prestanda för klienten och tjänsten
-              href: networking-optimize-tcp-performance.md
-            - name: Avslutsvillkor för nätverk
-              href: networking-exit-criteria.md
-        - name: Fas 2 – Identitet
-          href: identity-infrastructure.md
-          items:
-            - name: Steg 1 – Skapa och skydda dina globala administratörskonton
-              href: identity-create-protect-global-admins.md
-            - name: Steg 2 – Skydda dina lösenord
-              href: identity-secure-your-passwords.md
-            - name: Steg 3 – Skydda och hantera användarinloggningar
-              href: identity-secure-user-sign-ins.md
-            - name: Steg 4 – Lägga till användarkonton
-              href: identity-add-user-accounts.md
-            - name: Steg 5 – Använda grupper för hantering
-              href: identity-use-group-management.md
-            - name: Step 6 – Konfigurera identitetsstyrning
-              href: identity-configure-identity-governance.md
-            - name: Avslutsvillkor för identitet
-              href: identity-exit-criteria.md
-        - name: Fas 3 – Windows 10 Enterprise
-          href: windows10-infrastructure.md
-          items:
-            - name: Steg 1 – Förbereda din organisation
-              href: windows10-prepare-your-org.md
-            - name: Steg 2 – Distribuera som en uppgradering på plats
-              href: windows10-deploy-inplaceupgrade.md
-            - name: Steg 3 – Distribuera för nya enheter
-              href: windows10-deploy-autopilot.md
-            - name: Steg 4 – Övervaka enhetens hälsotillstånd och efterlevnad
-              href: windows10-enable-windows-analytics.md
-            - name: Steg 5 – Distribuera säkerhetsfunktioner
-              href: windows10-enable-security-features.md
-            - name: Avslutsvillkor för Windows 10 Enterprise
-              href: windows10-exit-criteria.md
-        - name: Fas 4 – Microsoft 365 Apps för företag
-          href: office365proplus-infrastructure.md
-          items:
-            - name: Avslutsvillkor för Microsoft 365 Apps för företag
-              href: office365proplus-exit-criteria.md
-        - name: Fas 5 – Hantering av mobilenheter
-          href: mobility-infrastructure.md
-          items:
-            - name: Avslutsvillkor för hantering av mobilenheter
-              href: mobility-infrastructure-exit-criteria.md
-        - name: Fas 6 – Informationsskydd
-          href: infoprotect-infrastructure.md
-          items:
-            - name: Steg 1 – Definiera säkerhets- och informationsskyddsnivåer
-              href: infoprotect-define-sec-infoprotect-levels.md
-            - name: Steg 2 – Konfigurera klassificering för din miljö
-              href: infoprotect-configure-classification.md
-            - name: Steg 3 – Konfigurera ökad säkerhet för Microsoft 365
-              href: infoprotect-configure-increased-security-office-365.md
-            - name: Steg 4 – Konfigurera Windows informationsskydd
-              href: infoprotect-deploy-windows-information-protection.md
-            - name: Steg 5 – Konfigurera skydd mot dataförlust
-              href: infoprotect-data-loss-prevention.md
-            - name: Steg 6 – Konfigurera e-postkryptering
-              href: infoprotect-email-encryption.md
-            - name: Steg 7 – Konfigurera Privileged Access Management i Office 365
-              href: infoprotect-configure-privileged-access-management.md
-            - name: Avslutsvillkor för informationsskydd
-              href: infoprotect-exit-criteria.md
-        - name: Distributionsstrategier
-          href: deployment-strategies-microsoft-365-enterprise.md
-        - name: Distribuera med befintlig infrastruktur
-          href: deploy-with-existing-infrastructure.md
-        - name: Distribution och uppdatering av kanalkonfigurationer
-          href: deploy-update-channels-examples.md
-          items:
-            - name: Bred distribution av de senaste utgåvorna
-              href: deploy-update-channels-examples-rapid-deploy.md
-        - name: Distribuera för andra än stora företag
-          href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Distribuera arbetsbelastningar
-      href: deploy-workloads.md
+        - name: Översikt för Microsoft 365 nätverksanslutning
+          href: microsoft-365-networking-overview.md
+        - name: Microsoft 365 principer för nätverksanslutningar
+          href: microsoft-365-network-connectivity-principles.md
+        - name: Utvärdera Microsoft 365 nätverksanslutningar
+          href: assessing-network-connectivity.md
+        - name: Nätverksplanering med ExpressRoute för Office 365
+          href: network-planning-with-expressroute.md
+        - name: Planera för nätverksenheter som ansluter till Microsoft 365-tjänster
+          href: plan-for-network-devices.md
+        - name: Nätverks- och migreringsplanering för Microsoft 365
+          href: network-and-migration-planning.md
+    - name: Distribuera
       items:
-        - name: Microsoft Teams
-          href: teams-workload.md
-        - name: Exchange Online
-          href: exchangeonline-workload.md
-        - name: SharePoint och OneDrive för företag
-          href: sharepoint-online-onedrive-workload.md
-        - name: Migrering
-          href: migration-microsoft-365-enterprise-workload.md
-    - name: Testlabbguider
-      href: m365-enterprise-test-lab-guides.md
+        - name: Lägga till en domän
+          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: Konfigurera M365E tillåten slutpunkt
+          items:
+            - name: Office 365 IP-adress och URL webbtjänst
+              href: microsoft-365-ip-web-service.md
+            - name: Ytterligare slutpunkter som inte ingår i webbtjänsten
+              href: additional-office365-ip-addresses-and-urls.md
+        - name: Använda Office 365 CDN med SharePoint Online
+          href: use-microsoft-365-cdn-with-spo.md
+        - name: Optimera anslutningen för fjärranvändare
+          items:
+            - name: Översikt över uppdelad VPN-tunnel
+              href: microsoft-365-vpn-split-tunnel.md
+            - name: Implementera uppdelad VPN-tunnel
+              href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Microsoft 365-optimering för användare i Kina
+              href: microsoft-365-networking-china.md
+            - name: Optimera Microsoft 365-trafik för fjärranvändare med den interna Windows 10 VPN-klienten
+              href: 'https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+        - name: ExpressRoute för Office 365
+          href: azure-expressroute.md
+          items:
+            - name: Dirigering med ExpressRoute för Office 365
+              href: routing-with-expressroute.md
+    - name: Hantera
       items:
-        - name: Grundläggande konfiguration
+        - name: Office 365-slutpunkter
           items:
-            - name: Enkel
-              href: lightweight-base-configuration-microsoft-365-enterprise.md
-            - name: Simulerat företag
-              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
-        - name: Identitet
+            - name: Microsoft 365-slutpunkter
+              href: microsoft-365-endpoints.md
+            - name: Globala slutpunkter
+              href: urls-and-ip-address-ranges.md
+            - name: Slutpunkter för Myndighetsskydd i USA
+              href: microsoft-365-u-s-government-dod-endpoints.md
+            - name: Slutpunkter för Myndighetsskydd i USA (GCC High)
+              href: microsoft-365-u-s-government-gcc-high-endpoints.md
+            - name: Office 365 som drivs av 21Vianet – Slutpunkter
+              href: urls-and-ip-address-ranges-21vianet.md
+            - name: Slutpunkter för Office 365 Germany
+              href: microsoft-365-germany-endpoints.md
+        - name: Content Delivery Networks
+          href: content-delivery-networks.md
+        - name: IPv6-stöd i Office 365-tjänster
+          href: ipv6-support.md
+        - name: Stöd för NAT med Office 365
+          href: nat-support-with-microsoft-365.md
+        - name: Nätverksbegäranden i Office för Mac
+          href: network-requests-in-office-2016-for-mac.md
+        - name: Nätverksplanering och prestandaplanering
+          href: network-planning-and-performance.md
+        - name: Övervaka anslutningar
+          href: monitor-connectivity.md
+        - name: Hantera ExpressRoute
+          href: managing-expressroute-for-connectivity.md
+    - name: Microsoft 365 Nätverkspartnerprogram
+      href: microsoft-365-networking-partner-program.md
+- name: Klientorganisation
+  items:
+    - name: Översikt
+      href: tenant-roadmap-microsoft-365.md
+    - name: Planera
+      items:
+        - name: 'Prenumerationer, licenser, konton och klientorganisationer'
+          href: subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md
+        - name: Planera för tredje parts SSL-certifikat
+          href: plan-for-third-party-ssl-certificates.md
+        - name: Installationsguider
+          href: setup-guides-for-microsoft-365.md
+        - name: Integrering
           items:
-            - name: Synkronisering av lösenordshash
-              href: password-hash-sync-m365-ent-test-environment.md
-            - name: Direktautentisering
-              href: pass-through-auth-m365-ent-test-environment.md
-            - name: Federerad autentisering
-              href: federated-identity-for-your-office-365-dev-test-environment.md
-            - name: Enkel inloggning med Azure AD
-              href: single-sign-on-m365-ent-test-environment.md
-            - name: Multifaktorautentisering
-              href: multi-factor-authentication-microsoft-365-test-environment.md
-            - name: Skydda globala administratörskonton
-              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
-            - name: Tillbakaskrivning av lösenord
-              href: password-writeback-m365-ent-test-environment.md
-            - name: Återställning av lösenord
-              href: password-reset-m365-ent-test-environment.md
-            - name: Automatisk licensiering och gruppmedlemskap
-              href: automate-licenses-group-membership-microsoft-365-test-environment.md
-            - name: Azure AD Identity Protection
-              href: azure-ad-identity-protection-microsoft-365-test-environment.md
-            - name: Identitets- och enhetsåtkomst
-              href: identity-device-access-m365-test-environment.md
+            - name: Integrerade appar och Azure AD
+              href: integrated-apps-and-azure-ads.md
+            - name: Integrering med lokala
+              href: microsoft-365-integration.md
+            - name: Azure-integrering
+              href: azure-integration.md
+            - name: Azure ExpressRoute
+              href: azure-expressroute.md
+            - name: Hur modern autentisering fungerar för Office 2013- och Office 2016-klientprogram
+              href: modern-auth-for-office-2013-and-2016.md
+        - name: Samarbete mellan klientorganisationer
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Stöd för klientapp
+          items:
+            - name: Certifikatbaserad autentisering
+              href: microsoft-365-client-support-certificate-based-authentication.md
+            - name: Med villkorsstyrd åtkomst
+              href: microsoft-365-client-support-conditional-access.md
+            - name: Välj mellan grundläggande mobilitetssäkerhet och Intune
+              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
+            - name: Modern autentisering
+              href: microsoft-365-client-support-modern-authentication.md
+            - name: Enkel inloggning
+              href: microsoft-365-client-support-single-sign-on.md
+        - name: Hybrid modern autentisering
+          items:
+            - name: Förkunskapskrav för Skype för företag – Server och Exchange Server
+              href: hybrid-modern-auth-overview.md
+            - name: Konfigurera Exchange Server
+              href: configure-exchange-server-for-hybrid-modern-authentication.md
+            - name: Konfigurera Skype för företag
+              href: configure-skype-for-business-for-hybrid-modern-authentication.md
+            - name: Ta bort eller inaktivera för Skype för företag och Exchange
+              href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+        - name: Planera din uppgradering
+          href: plan-upgrade-previous-versions-office.md
+          items:
+            - name: Office 2007
               items:
-                - name: Endast molnet
-                  href: cloud-only-prereqs-m365-test-environment.md
-                - name: Synkronisering av lösenordshash
-                  href: phs-prereqs-m365-test-environment.md
-                - name: Direktautentisering
-                  href: pta-prereqs-m365-test-environment.md
-        - name: Hantering av mobilenheter
+                - name: Uppgradera från Office 2007-servrar och -klienter
+                  href: upgrade-from-office-2007-servers-and-products.md
+                - name: Office 2007 skrivbord
+                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap'
+                - name: Exchange 2007
+                  href: exchange-2007-end-of-support.md
+                - name: SharePoint 2007
+                  href: sharepoint-2007-end-of-support.md
+                - name: Office Communications Server
+                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                - name: PerformancePoint Server 2007
+                  href: pps-2007-end-of-support.md
+                - name: Project Server 2007
+                  href: project-server-2007-end-of-support.md
+            - name: Office 2010
+              items:
+                - name: Uppgradera från Office 2010-servrar och -klienter
+                  href: upgrade-from-office-2010-servers-and-products.md
+                - name: Office 2010 skrivbord
+                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap'
+                - name: Exchange 2010
+                  href: exchange-2010-end-of-support.md
+                - name: SharePoint 2010
+                  href: upgrade-from-sharepoint-2010.md
+                - name: Lync Server 2010
+                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                - name: Project Server 2010
+                  href: project-server-2010-end-of-support.md
+        - name: Klientisolering i Microsoft 365
+          href: microsoft-365-tenant-isolation-overview.md
           items:
-            - name: Registrera iOS- och Android-enheter
-              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
-            - name: Principer för enhetsefterlevnad
-              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
-        - name: Informationsskydd
+            - name: Isolering och åtkomstkontroll i Azure Active Directory
+              href: microsoft-365-isolation-in-azure-active-directory.md
+            - name: Övervaka och testa klientorganisations begränsningar
+              href: microsoft-365-monitoring-and-testing.md
+            - name: Resursgränser
+              href: microsoft-365-resource-limits.md
+            - name: Isolering och åtkomstkontroll
+              href: microsoft-365-isolation-in-microsoft-365.md
+            - name: Klientisolering i Sök
+              href: microsoft-365-isolation-in-microsoft-365-search.md
+            - name: Klientisolering i Video
+              href: microsoft-365-isolation-in-microsoft-365-video.md
+            - name: Klientisolering i Office Graph och Delve
+              href: microsoft-365-isolation-in-graph-and-delve.md
+        - name: Tjänstgranskning
           items:
-            - name: Ökad Microsoft 365-säkerhet
-              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
-            - name: Dataklassificering
-              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-            - name: Privileged Access Management
-              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
-    - name: Contoso-fallstudie
-      href: contoso-case-study.md
+            - name: Tjänstgranskning i Säkerhets- och efterlevnadscenter
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/service-assurance'
+            - name: Administrativa åtkomstkontroller
+              href: microsoft-365-administrative-access-controls-overview.md
+              items:
+                - name: Övervakning och granskning av åtkomstkontroller
+                  href: microsoft-365-monitoring-and-auditing-access-controls.md
+                - name: Isoleringskontroller
+                  href: microsoft-365-isolation-controls.md
+                - name: Personalkontroller
+                  href: microsoft-365-personnel-controls.md
+                - name: echnology-kontroller
+                  href: microsoft-365-technology-controls.md
+                - name: Åtkomstkontroller för Yammer Enterprise
+                  href: microsoft-365-yammer-enterprise-access-controls.md
+            - name: Granskning och rapportering
+              href: microsoft-365-auditing-and-reporting-overview.md
+              items:
+                - name: Rapporteringsfunktioner
+                  href: microsoft-365-reporting-features.md
+                - name: eDiscovery och sökfunktioner
+                  href: microsoft-365-ediscovery-and-search-features.md
+                - name: Intern loggning för Microsoft 365-teknik
+                  href: microsoft-365-internal-logging.md
+                - name: Migrering av postlåda
+                  href: microsoft-365-mailbox-migrations.md
+                - name: API för hanteringsaktivitet
+                  href: microsoft-365-management-activity-api.md
+            - name: Dataåterhämtning
+              href: microsoft-365-data-resiliency-overview.md
+              items:
+                - name: Hantera skadade data
+                  href: microsoft-365-dealing-with-data-corruption.md
+                - name: Dataåterhämtning för Exchange Online
+                  href: microsoft-365-exchange-data-resiliency.md
+                - name: Skydd mot skadlig kod och utpressningstrojan
+                  href: microsoft-365-malware-and-ransomware-protection.md
+                - name: Övervakning och självåterställning
+                  href: microsoft-365-monitoring-and-self-healing.md
+            - name: 'Databevarande, borttagning och destruktion'
+              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
+              items:
+                - name: Datadestruktion
+                  href: microsoft-365-data-destruction.md
+                - name: Oföränderlighet
+                  href: microsoft-365-data-immutability.md
+                - name: Databorttagning för Exchange Online
+                  href: microsoft-365-exchange-online-data-deletion.md
+                - name: SharePoint Online Data Deletion
+                  href: microsoft-365-sharepoint-online-data-deletion.md
+                - name: Databorttagning för Skype för företag
+                  href: microsoft-365-skype-data-deletion.md
+            - name: Skydd mot överbelastningsattacker
+              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
+              items:
+                - name: Microsofts skyddsstrategi mot överbelastningsattacker
+                  href: microsoft-365-microsoft-dos-defense-strategy.md
+                - name: Grundläggande principer för skydd mot överbelastningsattacker
+                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
+            - name: Kryptering i Microsoft-molnet
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview'
+              items:
+                - name: Tjänstkryptering i Microsoft 365
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption'
+                - name: Kryptering för data i transit
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit'
+                - name: Kundhanterade krypterings funktioner
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features'
+                - name: Krypteringsrisker och skydd
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections'
+                - name: 'Kryptering för Skype för företag, OneDrive för företag, SharePoint Online och Exchange Online'
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange'
+                - name: Kryptering i Microsoft Dynamics 365
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365'
+                - name: Kryptering i Azure
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption'
+    - name: Distribuera
       items:
-        - name: Översikt
-          href: contoso-overview.md
-        - name: Contosos IT-infrastruktur och behov
-          href: contoso-infra-needs.md
-        - name: Nätverk
-          href: contoso-networking.md
-        - name: Identitet
-          href: contoso-identity.md
-        - name: Windows 10 Enterprise
-          href: contoso-win10.md
-        - name: ' Microsoft 365 Apps för företag'
-          href: contoso-o365pp.md
-        - name: Hantering av mobilenheter
-          href: contoso-mdm.md
-        - name: Informationsskydd
-          href: contoso-info-protect.md
-        - name: Sammanfattning av säkerhet
-          href: contoso-security-summary.md
-    - name: Hälsostatus för Microsoft 365-tjänsten
-      href: microsoft-365-service-health.md
-- name: Center för skrivbordsdistribution
-  href: desktop-deployment-center-home.md
+        - name: Lägga till en domän
+          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: Multi-geo
+      items:
+        - name: Microsoft 365 Multi-Geo
+          href: microsoft-365-multi-geo.md
+        - name: OneDrive och SharePoint multi-geo
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
+        - name: Exchange Multi-Geo
+          href: multi-geo-capabilities-in-exchange-online.md
+        - name: Planera
+          items:
+            - name: Planera för multi-geo
+              href: plan-for-multi-geo.md
+            - name: Administrationsfunktioner
+              href: administering-a-multi-geo-environment.md
+            - name: Användarupplevelse
+              href: multi-geo-user-experience.md
+        - name: Distribuera
+          items:
+            - name: Konfigurera multi-geo
+              href: multi-geo-tenant-configuration.md
+            - name: Konfigurera önskad dataplats
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json
+            - name: Konfigurera sökning
+              href: configure-search-for-multi-geo.md
+        - name: Hantera
+          items:
+            - name: Administrera en Multi-Geo-Miljö
+              href: administering-a-multi-geo-environment.md
+            - name: Hantera SharePoint-kvoter
+              href: sharepoint-multi-geo-storage-quota.md
+            - name: Flytta en OneDrive-webbplats
+              href: move-onedrive-between-geo-locations.md
+            - name: Flytta en SharePoint-webbplats
+              href: move-sharepoint-between-geo-locations.md
+            - name: Lägga till eller ta bort en geo-administratör
+              href: add-a-sharepoint-geo-admin.md
+            - name: Begränsa innehållet till en Geo-plats
+              href: restrict-content-to-geo-location.md
+            - name: Konfigurera Microsoft 365 Multi-Geo eDiscovery
+              href: multi-geo-ediscovery-configuration.md
+            - name: Skapa en grupp med en särskild PDL
+              href: multi-geo-add-group-with-pdl.md
+            - name: Ta bort en geo-plats
+              href: delete-a-geo-location.md
+            - name: Aktivera SharePoint Multi-Geo på din satelits geo-plats
+              href: enabling-SP-multigeo-satellite-geolocation.md
+            - name: Administrera Exchange Multi-Geo
+              href: administering-exchange-online-multi-geo.md
+    - name: Flytta till ett nytt Microsoft 365 Data Center geo
+      href: moving-data-to-new-datacenter-geos.md
+      items:
+        - name: Hur du begär din dataflytt
+          href: request-your-data-move.md
+        - name: Under och efter dataflytt
+          href: during-and-after-your-data-move.md
+        - name: Vanliga frågor och svar om dataflytt
+          href: data-move-faq.md
+        - name: Microsoft Cloud Deutschland – Office 365-Migreringsverktyg
+          href: ms-cloud-germany-transition.md
+        - name: Microsoft Cloud Deutschland – Välja till migrering
+          href: ms-cloud-germany-migration-opt-in.md
+        - name: Där kunddata lagras
+          href: o365-data-locations.md
+- name: Identitet
   items:
-    - name: 'Komma igång – Vägledning om användning, process och teknik'
-      href: getting-started.md
-    - name: Steg 1 – Beredskap för enheter och appar
-      href: step-1-device-and-app-readiness.md
-    - name: Steg 2 – Katalog- och nätverksberedskap
-      href: step-2-directory-and-network-readiness.md
-    - name: Steg 3 – Leverans av Office och verksamhetsspecifika appar
-      href: step-3-office-and-lob-app-delivery.md
-    - name: Steg 4 – Migrering av användares filer och inställningar
-      href: step-4-user-files-and-settings-migration.md
-    - name: Steg 5 – Överväganden för säkerhet och efterlevnad
-      href: step-5-security-and-compliance.md
-    - name: Steg 6 – Distribution av operativsystem och uppdateringar av funktioner
-      href: step-6-os-deployment-and-feature-updates.md
-    - name: Steg 7 – Underhåll av Windows och Office
-      href: step-7-windows-and-office-as-a-service.md
-    - name: Steg 8 – Kommunikation och utbildning för användare
-      href: step-8-user-communications-and-training.md
-    - name: Manuell uppgradering av Windows 7 till Windows 10
-      href: windows-7-to-windows-10-upgrade-manual.md
-    - name: Automatiserade uppgraderingar av Windows 7 till Windows 10
-      href: windows-7-to-windows-10-upgrade-automated.md
-    - name: Deployment Lab Kit för Windows och Office
-      href: modern-desktop-deployment-and-management-lab.md
-    - name: Hitta hjälp för din distribution
-      href: find-help-for-modern-desktop-deployment.md
+    - name: Översikt
+      href: identity-roadmap-microsoft-365.md
+    - name: Planera
+      items:
+        - name: Identitetsmodeller
+          href: about-microsoft-365-identity.md
+        - name: Hybrididentitet
+          href: plan-for-directory-synchronization.md
+    - name: Distribuera
+      items:
+        - name: Skydda globala administratörskonton
+          href: protect-your-global-administrator-accounts.md
+        - name: Identitet endast för molnet
+          href: cloud-only-identities.md
+        - name: Hybrididentitet
+          href: prepare-for-directory-synchronization.md
+        - name: Förbereda en icke-dirigerbar domän för katalogsynkronisering
+          href: prepare-a-non-routable-domain-for-directory-synchronization.md
+        - name: Konfigurera katalogsynkronisering
+          href: set-up-directory-synchronization.md
+        - name: Hybridlösningar
+          items:
+            - name: Översikt
+              href: hybrid-solutions.md
+            - name: Använd Azure Active Directory för SharePoint Server 2016 autentisering
+              href: using-azure-ad-for-sharepoint-server-authentication.md
+            - name: Ansluta ett lokalt nätverk till ett virtuellt Azure-nätverk
+              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+            - name: Distribuera en katalogpartition för servrar i Azure IaaS
+              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+            - name: Distribuera federerad autentisering med hög tillgänglighet i Azure
+              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+              items:
+                - name: Fas 1 – Konfigurera Azure
+                  href: high-availability-federated-authentication-phase-1-configure-azure.md
+                - name: Fas 2 – Konfigurera domänkontrollanter
+                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                - name: Fas 3 – Konfigurera AD FS-servrar
+                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                - name: Fas 4 – Konfigurera WAPs (Web App proxy)
+                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                - name: Fas 5 – Konfigurera federerad autentisering
+                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+            - name: SharePoint Server 2013 katastrofåterställning i Microsoft Azure
+              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+    - name: Hantera
+      items:
+        - name: Tilldela licenser till användarkonton
+          href: assign-licenses-to-user-accounts.md
+        - name: Hjälpcenter för Microsoft 365
+          href: 'https://docs.microsoft.com/office365/admin/admin-home'
+        - name: Verktyg för att hantera användarkonton
+          href: manage-microsoft-365-accounts.md
+        - name: Lägga till flera användare samtidigt
+          href: add-several-users-at-the-same-time.md
+        - name: Återskapa borttagna objekt i en användares postlåda
+          href: recover-deleted-items-in-a-mailbox.md
+        - name: 'Katalogsynkronisering:'
+          items:
+            - name: Visa katalogsynkroniseringsstatus
+              href: view-directory-synchronization-status.md
+            - name: Identifiera katalogsynkroniseringsfel
+              href: identify-directory-synchronization-errors.md
+            - name: Åtgärda problem med katalogsynkronisering
+              href: fix-problems-with-directory-synchronization.md
+            - name: Inaktivera katalogsynkronisering
+              href: turn-off-directory-synchronization.md
+- name: Klient-och serverprogramvara
+  items:
+    - name: Översikt
+      href: client-server-software-roadmap-microsoft-365.md
+    - name: Planera
+      items:
+        - name: Planera din uppgradering
+          href: plan-upgrade-previous-versions-office.md
+    - name: Distribuera
+      items:
+        - name: Office 2007
+          items:
+            - name: Uppgradera från Office 2007-servrar och -klienter
+              href: upgrade-from-office-2007-servers-and-products.md
+            - name: Office 2007 skrivbord
+              href: 'https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap'
+            - name: Exchange 2007
+              href: exchange-2007-end-of-support.md
+            - name: SharePoint 2007
+              href: sharepoint-2007-end-of-support.md
+            - name: Office Communications Server
+              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+            - name: PerformancePoint Server 2007
+              href: pps-2007-end-of-support.md
+            - name: Project Server 2007
+              href: project-server-2007-end-of-support.md
+        - name: Office 2010
+          items:
+            - name: Uppgradera från Office 2010-servrar och -klienter
+              href: upgrade-from-office-2010-servers-and-products.md
+            - name: Office 2010 skrivbord
+              href: 'https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap'
+            - name: Exchange 2010
+              href: exchange-2010-end-of-support.md
+            - name: SharePoint 2010
+              href: upgrade-from-sharepoint-2010.md
+            - name: Lync Server 2010
+              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+            - name: Project Server 2010
+              href: project-server-2010-end-of-support.md
+- name: Säkerhet och efterlevnad
+  href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap'
+- name: Molntjänster
+  items:
+    - name: Översikt
+      href: cloud-services-roadmap-microsoft-365.md
+    - name: Distribuera
+      items:
+        - name: Gör dig redo
+          href: configure-services-and-applications.md
+        - name: Exchange Online
+          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+        - name: SharePoint
+          href: 'https://docs.microsoft.com/sharepoint/sharepoint-online'
+        - name: Skype för företag
+          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+        - name: Microsoft Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/Teams-overview'
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: Aktivera rättighetshantering
+          href: activate-rms-in-microsoft-365.md
+        - name: Konfigurera versionsalternativ
+          href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
+        - name: Utbilda dina användare
+          href: 'https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users'
+    - name: Hantera
+      items:
+        - name: Kontrollera tjänstens hälsa
+          href: view-service-health.md
+        - name: Supportalternativ
+          href: 'https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b'
+        - name: Exchange Online
+          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+        - name: SharePoint
+          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
+        - name: Skype för företag
+          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+        - name: Microsoft Teams
+          href: 'https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide'
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: Prestanda och justering
+          items:
+            - name: Justera prestandan i Microsoft 365
+              href: tune-microsoft-365-performance.md
+            - name: Prestandajustering med baslinjer och prestandahistorik
+              href: performance-tuning-using-baselines-and-history.md
+            - name: Justera Exchange Online-prestanda
+              href: tune-exchange-online-performance.md
+            - name: Justera SharePoint prestanda
+              href: tune-sharepoint-online-performance.md
+              items:
+                - name: Introduktion till prestandajustering för SharePoint
+                  href: introduction-to-performance-tuning-for-sharepoint-online.md
+                - name: Diagnostisering av prestandaproblem i SharePoint
+                  href: diagnosing-performance-issues-with-sharepoint-online.md
+            - name: Ställa in prestanda för Skype för företag online
+              href: tune-skype-for-business-online-performance.md
+            - name: Justera Project Point Online-prestanda
+              href: 'https://docs.microsoft.com/ProjectOnline/tune-project-online-performance'
+            - name: Plan för prestandafelsökning
+              href: performance-troubleshooting-plan.md
+- name: Windows 10
+  href: 'https://docs.microsoft.com/windows/deployment/'
+- name: Microsoft 365-applikationer för företag
+  href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: Distribution och uppdatering av kanalkonfigurationer
+  items:
+    - name: Översikt
+      href: deploy-update-channels-examples.md
+    - name: Bred distribution av de senaste utgåvorna
+      href: deploy-update-channels-examples-rapid-deploy.md
+- name: Enhetshantering
+  items:
+    - name: Översikt
+      href: device-management-roadmap-microsoft-365.md
+- name: Hantera Microsoft 365 med PowerShell
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
+  items:
+    - name: Komma igång
+      href: getting-started-with-microsoft-365-powershell.md
+      items:
+        - name: Varför du behöver använda PowerShell
+          href: why-you-need-to-use-microsoft-365-powershell.md
+        - name: Ansluta till Microsoft 365 med PowerShell
+          href: connect-to-microsoft-365-powershell.md
+        - name: Ansluta till alla Microsoft 365-tjänster i ett enda Windows PowerShell-fönster
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
+        - name: Skapa rapporter med PowerShell
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
+        - name: Cmdlet-referenser för Microsoft 365-tjänster
+          href: cmdlet-references-for-microsoft-365-services.md
+        - name: PowerShell-communityresurser
+          href: microsoft-365-powershell-community-resources.md
+    - name: 'Hantera användarkonton,-licenser och-grupper med PowerShell'
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
+      items:
+        - name: Användarkonton
+          items:
+            - name: Skapa
+              href: create-user-accounts-with-microsoft-365-powershell.md
+            - name: Visa
+              href: view-user-accounts-with-microsoft-365-powershell.md
+            - name: Konfigurera egenskaper
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
+            - name: Tilldela roller
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
+            - name: Ta bort och återställ
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
+            - name: Blockera
+              href: block-user-accounts-with-microsoft-365-powershell.md
+        - name: Licenser och tjänster
+          items:
+            - name: Visa
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
+            - name: Visa licensierade och olicensierade användare
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
+            - name: Tilldela licenser till användarkonton
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
+            - name: Visa information om kontolicenser och-tjänster
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Inaktivera åtkomst till tjänster
+              href: disable-access-to-services-with-microsoft-365-powershell.md
+              items:
+                - name: Inaktivera åtkomst till Sway
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
+                - name: Inaktivera åtkomst till tjänster när du tilldelar användarlicenser
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+                - name: Ta bort licenser från användarkonton
+                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
+        - name: Grupper
+          items:
+            - name: Hantera gruppmedlemskap
+              href: maintain-group-membership-with-microsoft-365-powershell.md
+            - name: Hantera Microsoft 365-grupper
+              href: manage-microsoft-365-groups-with-powershell.md
+    - name: Hantera SharePoint Online
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
+      items:
+        - name: Skapa SharePoint Online-webbplatser och lägga till användare
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: Hantera användarprofiler och grupper i SharePoint Online
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: Hantera SharePoint Online-webbplatsgrupper
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: Hantera Exchange Online
+      href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+    - name: Använda PowerShell för e-postmigrering till Microsoft 365
+      href: use-powershell-for-email-migration-to-microsoft-365.md
+      items:
+        - name: Använda PowerShell för att utföra en snabb migrering till Microsoft 365
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
+        - name: Använda PowerShell för att utföra en IMAP-migrering till Microsoft 365
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
+        - name: Använda PowerShell för att utföra en stegvis migrering till Microsoft 365
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
+    - name: Hantera Microsoft 365 med Windows PowerShell för delegerade åtkomstpartners
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items:
+        - name: Hantera Microsoft 365-klientorganisationer med Windows PowerShell för delegerade åtkomstpartners
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: Lägga till en domän till en klientorganisation med Windows PowerShell för delegerade åtkomstpartners
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: Fjärransluta till Exchange Online med Windows PowerShell för partner för delegerade åtkomstpartners
+          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+        - name: Hämta kundrapportdata via Windows PowerShell för delegerade åtkomstpartners
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: Manage Microsoft Teams
+      href: 'https://docs.microsoft.com/microsoftteams/teams-powershell-install'
+    - name: Hantera Skype för företag – Online
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
+      items:
+        - name: Hantera Skype för företag – Onlineprinciper
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
+        - name: Tilldela per användare Skype för företag – Onlineprinciper
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
+    - name: Hantera tillägg med Centraliserad distribution PowerShell
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: Testlabbguider
+  href: m365-enterprise-test-lab-guides.md
+  items:
+    - name: Grundläggande konfiguration
+      items:
+        - name: Enkel
+          href: lightweight-base-configuration-microsoft-365-enterprise.md
+        - name: Simulerat företag
+          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+    - name: Identitet
+      items:
+        - name: Synkronisering av lösenordshash
+          href: password-hash-sync-m365-ent-test-environment.md
+        - name: Direktautentisering
+          href: pass-through-auth-m365-ent-test-environment.md
+        - name: Federerad autentisering
+          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
+        - name: Enkel inloggning med Azure AD
+          href: single-sign-on-m365-ent-test-environment.md
+        - name: Multifaktorautentisering
+          href: multi-factor-authentication-microsoft-365-test-environment.md
+        - name: Skydda globala administratörskonton
+          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+        - name: Tillbakaskrivning av lösenord
+          href: password-writeback-m365-ent-test-environment.md
+        - name: Återställning av lösenord
+          href: password-reset-m365-ent-test-environment.md
+        - name: Automatisk licensiering och gruppmedlemskap
+          href: automate-licenses-group-membership-microsoft-365-test-environment.md
+        - name: Azure AD Identity Protection
+          href: azure-ad-identity-protection-microsoft-365-test-environment.md
+        - name: Identitets- och enhetsåtkomst
+          href: identity-device-access-m365-test-environment.md
+          items:
+            - name: Endast molnet
+              href: cloud-only-prereqs-m365-test-environment.md
+            - name: Synkronisering av lösenordshash
+              href: phs-prereqs-m365-test-environment.md
+            - name: Direktautentisering
+              href: pta-prereqs-m365-test-environment.md
+    - name: Hantering av mobilenheter
+      items:
+        - name: Registrera iOS- och Android-enheter
+          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+        - name: Principer för enhetsefterlevnad
+          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+    - name: Informationsskydd
+      items:
+        - name: Ökad Microsoft 365-säkerhet
+          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+        - name: Dataklassificering
+          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+        - name: Privileged Access Management
+          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+- name: Contoso-fallstudie
+  href: contoso-case-study.md
+  items:
+    - name: Översikt
+      href: contoso-overview.md
+    - name: Contosos IT-infrastruktur och behov
+      href: contoso-infra-needs.md
+    - name: Nätverk
+      href: contoso-networking.md
+    - name: Identitet
+      href: contoso-identity.md
+    - name: Windows 10 Enterprise
+      href: contoso-win10.md
+    - name: ' Microsoft 365 Apps för företag'
+      href: contoso-o365pp.md
+    - name: Hantering av mobilenheter
+      href: contoso-mdm.md
+    - name: Informationsskydd
+      href: contoso-info-protect.md
+    - name: Sammanfattning av säkerhet
+      href: contoso-security-summary.md
+- name: Hälsostatus för Microsoft 365-tjänsten
+  href: microsoft-365-service-health.md
 - name: Microsoft 365 Efterlevnad
   href: ../compliance/index.yml
-- name: Microsoft 365 Säkerhet
+- name: Microsoft 365-säkerhet
   href: ../security/index.yml
+- name: Microsoft 365-arkitektur och lösningar
+  href: ../solutions/index.yml
 - name: Hantera affärskontinuitet (EBCM) med molntjänster
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
@@ -227,3 +704,5 @@
       href: ebcm-developing-your-ebcm-plan.md
     - name: Scenarier för att minimera incidenter i tjänsten
       href: ebcm-microsoft-365-mitigations.md
+- name: Microsoft 365 för företag
+  href: ../admin/index.yml
