@@ -343,8 +343,12 @@
       items:
         - name: Hantering av arkivhandlingar
           href: records-management.md
-        - name: Poster
+        - name: Mer information om arkivhandlingar
           href: records.md
+        - name: Deklarera arkivhandling
+          href: declare-records.md
+        - name: Versionshantering av arkivhandlingar
+          href: record-versioning.md
 - name: Hantera eDiscovery
   items:
     - name: eDiscovery i Microsoft 365
