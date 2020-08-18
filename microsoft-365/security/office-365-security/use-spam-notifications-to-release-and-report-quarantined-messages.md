@@ -20,18 +20,22 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig om skräp post meddelanden för meddelanden i karantän i Exchange Online Protection (EOP).
-ms.openlocfilehash: b196a9e11d54d9d86acc991ba877279f1fa3d115
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: 2786c90f6f5fb66cbb96b0375dacf7793894f72e
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608305"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778510"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräp post meddelanden för att frigöra och rapportera översatta meddelanden
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [karantän meddelanden i EOP](quarantine-email-messages.md).
 
 Som standard är skräp post meddelanden avaktiverade i principer för skräp post. När en administratör [aktiverar skräp post meddelanden för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), får mottagarna (inklusive delade post lådor med Automappning aktiverat) regelbundna meddelanden om sina meddelanden som sattes i karantän som skräp post, Mass utskick eller (från april 2020) nätfiske.
+
+För delade post lådor stöds inte skräp post meddelanden för användare som har tilldelats behörigheten Full Access-behörighet till den delade post lådan. Mer information finns i [använda UK för att redigera delegerade post lådor](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
+
+Det går inte att skicka skräp post till slutanvändaren för grupper.
 
 > [!NOTE]
 > Meddelanden som satts i karantän som nätfiske, skadlig program vara eller enligt regler för e-postflöde (kallas även transport regler) är endast tillgängliga för administratörer. Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
