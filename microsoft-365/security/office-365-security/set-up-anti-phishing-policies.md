@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om de anti-nätfiske-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652723"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804284"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -50,15 +50,37 @@ De höga skillnaderna mellan anti-nätfiske-principer och Antivirus principer f�
 |Avancerade nät fiske trösklar||![Bockmarkering](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>I standard principen är princip namnet och beskrivningen skrivskyddad (beskrivningen är tom) och du kan inte ange vem principen gäller för (standard policyn gäller för alla mottagare).
+<sup>\*</sup> I standard principen är princip namnet och beskrivningen skrivskyddad (beskrivningen är tom) och du kan inte ange vem principen gäller för (standard policyn gäller för alla mottagare).
 
-Information om hur du konfigurerar principer för nätfiske finns i följande avsnitt:
+Information om hur du konfigurerar principer för nätfiske finns i följande artiklar:
 
 - [Konfigurera AntiPhishing-principer i EOP](configure-anti-phishing-policies-eop.md)
 
 - [Konfigurera AntiPhishing-principer för ATP i Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Resten av det här avsnittet beskriver vilka inställningar som är tillgängliga i principer för nätfiske och Antivirus policy.
+Resten av den här artikeln beskriver de inställningar som är tillgängliga i principer för nätfiske och Antivirus policy.
+
+## <a name="policy-settings"></a>Princip inställningar
+
+Följande princip inställningar är tillgängliga i principer för nätfiske och stöldskydd med ATP:
+
+- **Namn**: det går inte att byta namn på standard policyn för anti-phishing, men du kan namnge och byta namn på anpassade principer som du skapar.
+
+- **Beskrivning** Du kan inte lägga till en beskrivning av standard policyn för anti-nätfiske, men det går att lägga till och ändra beskrivningen för anpassade principer som du skapar.
+
+- **Tillämpat på**: identifierar interna mottagare som antivirus policyn gäller för. Det här värdet är obligatoriskt i anpassade principer och är inte tillgängligt i standard principen (standard policyn gäller för alla mottagare).
+
+  Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
+
+  - **Mottagare**: en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
+  - **Mottagaren är medlem i**en eller flera grupper i din organisation.
+  - **Mottagar domänen är**: en eller flera av de godkända domänerna i Microsoft 365.
+
+  - **Förutom när**: undantag för regeln. Inställningarna och beteendet är exakt som villkor:
+
+    - **Mottagaren är**
+    - **Mottagaren är medlem i**
+    - **Mottagar domänen är**
 
 ## <a name="spoof-settings"></a>Inställningar för förfalskning
 
@@ -75,28 +97,34 @@ Följande inställningar för förfalskning är tillgängliga i principer för n
 
   - **Flytta meddelandet till mappen skräp post**: det här är standardvärdet. Meddelandet skickas till post lådan och flyttas till mappen skräp post. I Exchange Online flyttas meddelandet till mappen skräp post om skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Karantän meddelandet**: skickar meddelandet till karantän i stället för avsedda mottagare. Mer information om karantän finns i artiklarna om följande ämnen:
+  - **Karantän meddelandet**: skickar meddelandet till karantän i stället för avsedda mottagare. Information om karantän finns i följande artiklar:
 
     - [Karantän i Microsoft 365](quarantine-email-messages.md)
     - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Hitta och släppa meddelanden i karantän som en användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Oautentiserad avsändare**: aktiverar eller inaktiverar identifiering av avsändare i Outlook. Verkligen
+- **Oautentiserad avsändare**: Se beskrivningen i nästa avsnitt.
 
-  - Ett frågetecken (?) läggs till avsändarens foto om meddelandet inte tillåter SPF-eller DKIM-kontroller **och** meddelandet klarar inte DMARC eller [sammansatt](email-validation-and-authentication.md#composite-authentication)behörighet.
+### <a name="unauthenticated-sender"></a>Overifierad avsändare
 
-  - Via-taggen (chris@contoso.com <u>via</u> Michelle@fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+Overifierad avsändare är en del av de [förfalsknings inställningar](#spoof-settings) som är tillgängliga i principer för nätfiske och ATP-nätfiske enligt beskrivningen i föregående avsnitt.
 
-  För att förhindra att dessa identifierare läggs till i meddelanden från specifika avsändare har du följande alternativ:
+Inställningen för **overifierad avsändare** aktiverar eller inaktiverar avsändaren av avsändar-ID i Outlook. Verkligen
 
-  - Tillåt avsändaren till förfalskning i policyn för förfalsknings information. Anvisningar finns i [Konfigurera förfalsknings intelligens i Microsoft 365](learn-about-spoof-intelligence.md).
+- Ett frågetecken (?) läggs till avsändarens foto om meddelandet inte tillåter SPF-eller DKIM-kontroller **och** meddelandet klarar inte DMARC eller [sammansatt](email-validation-and-authentication.md#composite-authentication)behörighet.
 
-  - [Konfigurera e-postauktorisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarens domän.
+- Via-taggen (chris@contoso.com <u>via</u> Michelle@fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+
+För att förhindra att dessa identifierare läggs till i meddelanden från specifika avsändare har du följande alternativ:
+
+- Tillåt avsändaren till förfalskning i policyn för förfalsknings information. Anvisningar finns i [Konfigurera förfalsknings intelligens i Microsoft 365](learn-about-spoof-intelligence.md).
+
+- [Konfigurera e-postauktorisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarens domän.
   
-    - För frågetecknet i avsändarens foto, SPF eller DKIM är de viktigaste.
-    - För via-taggen bekräftar du domänen i DKIM signatur eller **e-** postadressen matchar (eller är en under domän av) domänen i från-adressen.
+  - För frågetecknet i avsändarens foto, SPF eller DKIM är de viktigaste.
+  - För via-taggen bekräftar du domänen i DKIM signatur eller **e-** postadressen matchar (eller är en under domän av) domänen i från-adressen.
 
-  Mer information finns i [identifiera misstänkta meddelanden i Outlook.com och Outlook på webben](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+Mer information finns i [identifiera misstänkta meddelanden i Outlook.com och Outlook på webben](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Exklusiva inställningar i Antivirus policys för ATP
 
@@ -105,34 +133,11 @@ I det här avsnittet beskrivs de princip inställningar som endast är tillgäng
 > [!NOTE]
 > Standardinställningen för ATP är inte konfigurerad eller aktive rad, även i standard principen. Om du vill utnyttja de här funktionerna måste du aktivera och konfigurera dem i standard policyn för ATP-nätfiske, eller så kan du skapa och konfigurera anpassade Antivirus principer för ATP.
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Princip inställningar i policyer för Stöldskydd med ATP
-
-Följande princip inställningar är bara tillgängliga i principer för Stöldskydd med ATP:
-
-- **Namn**: det går inte att byta namn på standard policyn för anti-phishing, men du kan namnge och byta namn på anpassade principer som du skapar.
-
-- **Beskrivning** Du kan inte lägga till en beskrivning av standard policyn för anti-nätfiske, men det går att lägga till och ändra beskrivningen för anpassade principer som du skapar.
-
-- **Tillämpat på**: identifierar interna mottagare som antivirus policyn för ATP gäller. Det här värdet är obligatoriskt i anpassade principer och är inte tillgängligt i standard principen (standard policyn gäller för alla mottagare).
-
-    Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
-
-  - **Mottagare**: en eller flera post lådor, e-postkonton eller e-postkontakter i din organisation.
-  - **Mottagaren är medlem i**en eller flera grupper i din organisation.
-  - **Mottagar domänen är**: en eller flera av de godkända domänerna i Microsoft 365.
-
-  - **Förutom när**: undantag för regeln. Inställningarna och beteendet är exakt som villkor:
-
-    - **Mottagaren är**
-    - **Mottagaren är medlem i**
-    - **Mottagar domänen är**
-
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Inställningar för personifiering i principer för Stöldskydd med ATP
 
 Personifiering är den plats där avsändaren eller avsändarens e-postdomän i ett meddelande ser ut ungefär som en riktig avsändare eller domän:
 
 - Ett exempel på personifiering av domänen contoso.com är ćóntoso.com.
-
 - Ett exempel på personifiering av användaren michelle@contoso.com är michele@contoso.com.
 
 En personifierad domän kan på annat sätt anses vara legitim (registrerad domän, konfigurerade e-postautentiseringsmetoder, etc.), förutom att det är bra att vilseleda mottagare.
@@ -155,7 +160,7 @@ Följande inställningar för personifiering är bara tillgängliga i principer 
 
   - **Flytta meddelandet till mappen skräp post**: meddelandet skickas till post lådan och flyttas till mappen skräp post. I Exchange Online flyttas meddelandet till mappen skräp post om skräp post regeln är aktive rad på post lådan (den är aktive rad som standard). Mer information finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Karantän meddelandet**: skickar meddelandet till karantän i stället för avsedda mottagare. Mer information om karantän finns i artiklarna om följande ämnen:
+    - **Karantän meddelandet**: skickar meddelandet till karantän i stället för avsedda mottagare. Information om karantän finns i följande artiklar:
 
     - [Karantän i Microsoft 365](quarantine-email-messages.md)
     - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)

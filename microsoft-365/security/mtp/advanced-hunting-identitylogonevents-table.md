@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 86212bdecb58b2e79a94d0129a0a531ef22bd6e4
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648833"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797846"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "46648833"
 - Microsoft Hotskydd
 
 `IdentityLogonEvents`Tabellen i det [avancerade](advanced-hunting-overview.md) antivirus programmet innehåller information om de autentiseringsförfrågningar som görs via den lokala Active Directory som tagits fram av Azure ATP-och budgetaktiviteter som är relaterade till Microsoft Online Services som fångats av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+
+>[!TIP]
+> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
 
 >[!NOTE]
 >I den här tabellen beskrivs Azure Active Directory (AD)-inloggnings aktiviteter som spåras av Cloud App Security, särskilt interaktiva inloggnings-och autentiseringsdata med ActiveSync och andra äldre protokoll. Icke-interaktiva inloggningar som inte är tillgängliga i den här tabellen kan visas i Azure AD audit-loggen. [Läs mer om att ansluta Cloud App Security till Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
@@ -39,7 +42,7 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | Kolumnnamn | Datatyp | Beskrivning |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum och tid när händelsen registrerades |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen |
+| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `LogonType` | strängvärdet | Typ av inloggningssession, särskilt:<br><br> - **Interaktivt** -användaren interagerar med datorn med det lokala tangent bordet och skärmen<br><br> - **Interaktivt (RDP) inloggningar** – användaren interagerar med datorn via fjärr skrivbord, Terminal Services, Fjärrhjälp eller andra RDP-klienter<br><br> - En **nätverks** session initieras när datorn nås med PsExec eller när delade resurser på datorn, till exempel skrivare och delade mappar, används<br><br> - **Batch** Gruppsession initierad av schemalagda aktiviteter<br><br> - **Tjänst** -session initierad av tjänster allteftersom de startas |
 | `Application` | strängvärdet | Program som utförde den inspelade åtgärden |
 | `Protocol` | strängvärdet | Använda nätverks protokoll |
@@ -67,6 +70,6 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

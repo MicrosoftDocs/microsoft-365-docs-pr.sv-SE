@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9b5fd9bfe881ec1313afb26da5d19cd96054862
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649301"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797834"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade jakt schema
 
@@ -46,7 +46,7 @@ Om du snabbt vill komma åt schema referensen markerar du kryss rutan **Visa ref
 
 ![Bild som visar hur du kommer åt referenser för en portal schema ](../../media/mtp-ah/ah-reference.png) 
 
-## <a name="schema-tables"></a>Schema tabeller
+## <a name="learn-the-schema-tables"></a>Lär dig hur schema tabellerna
 I följande referens visas alla tabeller i schemat. Varje tabell namn länkar till en sida som beskriver kolumn namnen för tabellen. Tabell-och kolumn namn visas också i säkerhets Center som en del av schema presentationen på den avancerade jakt skärmen.
 
 | Tabellnamn | Beskrivning |
@@ -72,6 +72,7 @@ I följande referens visas alla tabeller i schemat. Varje tabell namn länkar ti
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365-e-posthändelser, inklusive händelser för e-postleverans och blockering |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Säkerhets händelser som inträffar efter leverans efter att Microsoft 365 har levererat e-postmeddelandet till mottagar post lådan |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information om URL: er för e-postmeddelanden |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller flera identitetsbaserade händelser samt system händelser på domänkontrollanten. |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Konto information från olika källor, inklusive Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Autentiseringsproblem för Active Directory och Microsoft Online-tjänster |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Fråge aktiviteter utförs mot Active Directory-objekt, till exempel användare, grupper, enheter och domäner |
@@ -81,5 +82,5 @@ I följande referens visas alla tabeller i schemat. Varje tabell namn länkar ti
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

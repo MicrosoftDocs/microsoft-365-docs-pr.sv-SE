@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Lär dig hur du konfigurerar anpassade blockerade URL: er för användare och gör om listan över URL: er för en grupp användare i Office 365-principer för säkra Länkar för säkerhets skull.'
-ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 17828566769f438439eebcb4e460ecac1147a648
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656975"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798336"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Konfigurera en egen gör-inte omskrivning av URL-lista med säkra ATP-länkar
 
@@ -34,6 +34,9 @@ ms.locfileid: "46656975"
 Med [Office 365 Avancerat skydd](office-365-atp.md) (ATP) kan organisationen ha [anpassade blockerade URL-adresser](set-up-a-custom-blocked-urls-list-atp.md), till exempel när personer klickar på webb adresser (URL: er) i e-postmeddelanden eller vissa Office-dokument, förhindras de från att gå till dessa URL-adresser. Din organisation kan också ha anpassade listor för "Skriv inte om" för specifika grupper i din organisation. En "Skriv inte in"-lista gör att vissa personer kan besöka URL: er som på annat sätt blockeras av [säkra Länkar för ATP i Office 365](atp-safe-links.md).
 
 I den här artikeln beskrivs hur du anger en lista med URL-adresser som är undantagna från genomsökning av Safe Links för ATP och några viktiga punkter att hålla koll på.
+
+> [!NOTE]
+> Om din organisation använder principer för säkra länkar är listan "Skriv inte in" är den enda metod som stöds för nät fiske test.
 
 ## <a name="set-up-a-do-not-rewrite-list"></a>Konfigurera en "Skriv ej-lista"
 

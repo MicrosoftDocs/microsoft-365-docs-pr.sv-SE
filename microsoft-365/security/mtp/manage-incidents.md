@@ -1,7 +1,7 @@
 ---
-title: Hantera incidenter i Microsoft Threat Protection
-description: Lär dig hur du tilldelar, uppdaterar status,
-keywords: incident, incidenter, varningar, korrelerade aviseringar, tilldela, uppdatera, status, hantera, klassificering, microsoft, 365, m365
+title: Hantera incidenter i skydd mot Microsoft Threat
+description: Lär dig hur du tilldelar, uppdaterar status
+keywords: incident, incidenter, aviseringar, korrelerade notifieringar, tilldela, uppdatera, status, hantera, klassificering, Microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,61 +19,61 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148120"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798216"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>Hantera incidenter i Microsoft Threat Protection
+# <a name="manage-incidents-in-microsoft-threat-protection"></a>Hantera incidenter i skydd mot Microsoft Threat
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
 
-Hanteringen av incidenter är avgörande för att säkerställa att hoten begränsas och åtgärdas. I Microsoft Threat Protection har du åtkomst till hantering av incidenter på enheter, användare och postlådor. 
+Det är viktigt att hantera incidenter för att säkerställa att hoten är placerade och riktade. I Microsoft Threat Protection har du åtkomst till hantering av incidenter på enheter, användare och post lådor. 
 
 
-Du kan hantera incidenter genom att välja en incident från **kön Incidenter**. 
+Du kan hantera incidenter genom att välja en incident från **kön med incidenter**. 
 
-Du kan redigera namnet på en incident, lösa den, ange dess klassificering och bestämning. Du kan också tilldela incidenten till dig själv, lägga till incidenttaggar och kommentarer.
+Du kan redigera namnet på en olycka, lösa det och ange dess klassificering och analys. Du kan också koppla dig själv, lägga till incident märkningar och kommentarer.
 
-I de fall där du under utredningen vill flytta aviseringar från en incident till en annan kan du också göra det från fliken Aviseringar, vilket skapar en större eller mindre incident som innehåller alla relevanta aviseringar.
+I de fall där du skulle vilja flytta aviseringar från en incident till en annan kan du även göra det på fliken aviseringar och på så sätt skapa en större eller mindre olycka som innehåller alla relevanta aviseringar.
 
-## <a name="edit-incident-name"></a>Redigera incidentnamn
-Som standard tilldelas en incident ett nummer. Du kan ändra incidentnamnet så att det stämmer överens med den namngivningskonvention som du föredrar.
+## <a name="edit-incident-name"></a>Redigera incident namn
+Incidenter tilldelas automatiskt ett namn baserat på notifieringsregler, till exempel antalet slut punkter som påverkas, användare som påverkas, identifierings källor eller kategorier. Då kan du snabbt förstå omfattningen av incidenten.
 
-> [!TIP]
-> För ytterligare synlighet via ett ögonkast genererar automatisk incidentnamn, som för närvarande finns i offentlig förhandsversion, incidentnamn baserat på varningsattribut som antalet slutpunkter som påverkas, användare som påverkas, identifieringskällor eller kategorier. På så sätt kan du snabbt förstå omfattningen av incidenten.
->
-> Till exempel: *Flerstegsincident på flera slutpunkter som rapporterats av flera källor.*
->
-> Incidenter som fanns före utrullningen av automatisk incidentnamn kommer inte att få sitt namn ändrat.
->
-> Läs mer om [hur du aktiverar förhandsgranskningsfunktioner](preview.md#turn-on-preview-features).
+Till exempel: *flera händelser på flera faser som rapporter ATS av flera källor.*
 
-## <a name="assign-incidents"></a>Tilldela incidenter
-Om en incident ännu inte har tilldelats kan du välja **Tilldela mig** för att tilldela händelsen till dig själv. Detta förutsätter ägandet av inte bara händelsen, men också alla varningar i samband med den.
+Du kan ändra namnet på incidenten så att det passar bättre.
+
+> [!NOTE]
+> Incidenter som fanns före lanseringen av funktionen för automatisk anmälan av tillbud behåller sitt namn.
+
+
+
+## <a name="assign-incidents"></a>Koppla incidenter
+Om en olycka ännu inte har tilldelats kan du välja **tilldela till mig** för att koppla dig själv. Detta innebär att ägandet av inte bara är det som är associerat med den.
 
 ## <a name="set-status-and-classification"></a>Ange status och klassificering
-### <a name="incident-status"></a>Status för incident
-Du kan kategorisera incidenter (som **Aktiv**eller **Löst)** genom att ändra deras status under utredningens gång. Detta hjälper dig att organisera och hantera hur ditt team kan svara på incidenter.
+### <a name="incident-status"></a>Incident status
+Du kan kategorisera incidenter (som **aktiva**eller **stängda**) genom att ändra deras status allteftersom undersökningen fortskrider. Det hjälper dig att organisera och hantera hur ditt team kan reagera på händelser.
 
-Till exempel kan din SOC-analytiker granska de brådskande **aktiva** incidenter för dagen och besluta att tilldela dem till sig själv för undersökning.
+Ditt SOC analytiker kan till exempel granska brådskande **aktiva** tillbud för dagen och besluta att tilldela dem själv för undersökning.
 
-Alternativt kan din SOC-analytiker ange incidenten som **Löst** om incidenten har åtgärdats. Om du löser en incident stängs alla aviseringar som ingår i incidenten automatiskt. 
+Alternativt kan SOC analytiker ställa in händelsen som **löst** om incidenten har åtgärd ATS. När du löser ett samtal stängs alla aviseringar som är en del av incidenten och fortfarande öppen. 
 
 ### <a name="classification-and-determination"></a>Klassificering och bestämning
-Du kan välja att inte ange en klassificering eller bestämma dig för att ange om en incident är sann eller falsk. Detta hjälper teamet att se mönster och lära av dem. 
+Du kan välja att inte ange en klassificering eller välja om en incident är sann eller falsk. Om du gör det kan teamet se mönster och lära sig mer om dem. 
 
 ## <a name="add-comments"></a>Lägga till kommentarer
-Du kan lägga till kommentarer och visa historiska händelser om en incident för att se tidigare ändringar som gjorts i den.
+Du kan lägga till kommentarer och Visa historiska händelser om en olycka för att se tidigare gjorda ändringar.
 
-När en ändring eller kommentar görs i en avisering registreras den i avsnittet Kommentarer och historik.
+När en ändring eller kommentar görs i en avisering sparas den i avsnittet kommentarer och historik.
 
 Tillagda kommentarer visas direkt i fönstret.
 
-## <a name="add-incident-tags"></a>Lägga till incidenttaggar
-Du kan lägga till anpassade taggar i en incident, till exempel för att flagga en grupp incidenter med gemensamma egenskaper. Du kan senare filtrera incidentkön för alla incidenter som innehåller en viss tagg.
+## <a name="add-incident-tags"></a>Lägga till incident koder
+Du kan lägga till egna taggar till en olycka, till exempel för att flagga en grupp med incidenter med gemensamma egenskaper. Du kan senare filtrera händelse kön för alla händelser som innehåller en viss tagg.

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649397"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797858"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Lär dig mer om det avancerade frågespråket
 
@@ -66,7 +66,7 @@ En kort kommentar har lagts till i början av frågan för att beskriva vad den 
 // Finds PowerShell execution events that could involve a download
 ```
 
-Frågan börjar normalt med ett tabell namn följt av en serie element som startas av ett vertikalstreck ( `|` ). I det här exemplet börjar vi med att skapa en union av två tabeller `DeviceProcessEvents` och `DeviceNetworkEvents` lägga till piped-element efter behov.
+Frågan börjar normalt med ett tabell namn följt av en serie element som startas av ett vertikalstreck ( `|` ). I det här exemplet börjar vi med att skapa en union av två tabeller  `DeviceProcessEvents` och `DeviceNetworkEvents` lägga till piped-element efter behov.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ Därefter söker frågan efter strängar i kommando rader som vanligt vis använ
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Anpassa resultat kolumner och längd 
-Nu när frågan tydligt identifierar de data som du vill hitta kan du lägga till element som definierar hur resultatet ser ut. `project`Returnerar specifika kolumner och `top` begränsar antalet resultat. Dessa operatörer ser till att resultaten är välformaterade och rimligt stora och lätta att bearbeta.
+Nu när frågan tydligt identifierar de data som du vill hitta kan du lägga till element som definierar hur resultatet ser ut. `project` Returnerar specifika kolumner och `top` begränsar antalet resultat. Dessa operatörer ser till att resultaten är välformaterade och rimligt stora och lätta att bearbeta.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -117,7 +117,7 @@ Klicka på **Kör fråga** för att visa resultatet. Välj ikonen Expandera län
 >[!TIP]
 >Du kan visa frågeresultat som diagram och snabbt justera filter. [Läs mer om hur du arbetar med frågeresultat](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>Lär dig mer om vanliga fråge operatörer för avancerad jakt
+## <a name="learn-common-query-operators"></a>Lär dig vanliga frågor
 
 Nu när du har kört den första frågan och har en allmän uppfattning om dess komponenter är det dags att gå tillbaka lite bit och lära dig grunderna. Kusto Query-språk som används i Advanced jakt har stöd för en rad operatörer, bland annat följande.
 
@@ -136,7 +136,7 @@ Nu när du har kört den första frågan och har en allmän uppfattning om dess 
 
 Om du vill se ett exempel på dessa operatörer kan du köra det från avsnittet **komma igång** i avancerad jakt.
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>Förstå data typer och deras frågeresultat
+## <a name="understand-data-types"></a>Förstå data typer
 
 Data i de avancerade jakt tabellerna klassificeras normalt i följande data typer.
 
@@ -147,6 +147,8 @@ Data i de avancerade jakt tabellerna klassificeras normalt i följande data type
 | `bool` | Sant eller falskt |
 | `int` | 32-bitars numeriskt värde  |
 | `long` | 64-bitars numeriskt värde |
+
+Om du vill veta mer om de här data typerna och deras konsekvenser kan du [läsa mer om Kusto skalära data typer](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Få hjälp medan du skriver frågor
 Dra nytta av följande funktioner när du vill skriva frågor snabbare:
@@ -179,6 +181,6 @@ Mer information om Kusto-frågespråk och operatorer som stöds finns i [dokumen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

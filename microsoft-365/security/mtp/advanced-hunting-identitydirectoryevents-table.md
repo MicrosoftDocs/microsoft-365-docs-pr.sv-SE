@@ -1,7 +1,7 @@
 ---
-title: AppFileEvents-tabell i det avancerade jakt-schemat
-description: Lär dig mer om filrelaterade händelser som är kopplade till moln program och-tjänster i tabellen AppFileEvents i det avancerade Antivirus schemat
-keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, AppFileEvents, Cloud App-säkerhet, MCAS
+title: IdentityDirectoryEvents-tabell i det avancerade jakt-schemat
+description: Lär dig mer om domän kontrol Lanterna och Active Directory-händelser i tabellen IdentityDirectoryEvents för Advanced jakt-schemat
+keywords: Avancerad jakt, Hot jakt, cyberterrorism hotet om Microsoft Threat Protection, Microsoft 365, MTP, m365, sökning, frågor, telemetri, schema referens, kusto, tabell, kolumn, datatyp, beskrivning, IdentityDirectoryEvents, domänkontrollant, Active Directory, Azure ATP, identiteter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7ddbc5b5cc330496c01d956c4bcecceb897a9a
+ms.openlocfilehash: 1a65a8e78dfa09bc0a417669a1efd35320e261da
 ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798044"
+ms.locfileid: "46798796"
 ---
-# <a name="appfileevents"></a>AppFileEvents
+# <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
 **Gäller för:**
 - Microsoft Hotskydd
 
-`AppFileEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om filrelaterade aktiviteter i moln program och tjänster som övervakas av Microsoft Cloud App Security. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+`IdentityDirectoryEvents`Tabellen i det [avancerade](advanced-hunting-overview.md) antivirus programmet innehåller händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller olika identitets relaterade händelser, till exempel lösen ords ändringar, lösen ords giltighet och UPN-ändringar. Den fångar också system händelser på domänkontrollanten, som schemaläggning av uppgifter och PowerShell-aktivitet. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
@@ -41,24 +43,24 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `Timestamp` | datetime | Datum och tid när händelsen registrerades |
 | `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `Application` | strängvärdet | Program som utförde den inspelade åtgärden |
-| `FileName` | strängvärdet | Namnet på filen som den inspelade åtgärden tillämpades för |
-| `FolderPath` | strängvärdet | Mapp som innehåller filen som den inspelade åtgärden tillämpades för |
-| `PreviousFileName` | strängvärdet | Ursprungligt namn på den fil som har bytt namn som resultat av åtgärden |
-| `PreviousFolderPath` | strängvärdet | Den ursprungliga mappen som innehåller filen innan den inspelade åtgärden tillämpades |
-| `Protocol` | strängvärdet | Använda nätverks protokoll |
+| `TargetAccountUpn` | strängvärdet | Användarens huvud namn (UPN) för det konto som den inspelade åtgärden tillämpades på |
+| `TargetAccountDisplayName` | strängvärdet | Visnings namn för det konto som den inspelade åtgärden tillämpades på |
+| `TargetDeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för enheten som den inspelade åtgärden tillämpades på |
+| `DestinationDeviceName` | strängvärdet | Namn på den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
+| `DestinationIPAddress` | strängvärdet | IP-adress för enheten som kör serverprogrammet som bearbetade den inspelade åtgärden |
+| `DestinationPort` | strängvärdet | Mål Port för aktiviteten |
+| `Protocol` | strängvärdet | Protokoll som används under kommunikationen |
 | `AccountName` | strängvärdet | Kontots användar namn |
 | `AccountDomain` | strängvärdet | Kontots domän |
 | `AccountUpn` | strängvärdet | Kontots huvud namn (UPN) |
+| `AccountSid` | strängvärdet | Kontots säkerhets identifierare (SID) |
 | `AccountObjectId` | strängvärdet | Unik identifierare för kontot i Azure AD |
 | `AccountDisplayName` | strängvärdet | Namnet på kontot som visas i adress boken. Vanligt vis en kombination av ett visst eller förnamn, en mellan initiering och ett efter namn eller från gång. |
 | `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för enheten |
-| `DeviceType` | strängvärdet | Enhets typ | 
-| `OSPlatform` | strängvärdet | Plattformen för det operativ system som körs på enheten. Detta indikerar specifika operativ system, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
-| `IPAddress` | strängvärdet | IP-adress tilldelad till slut punkten och används under relaterad nätverkskommunikation |
-| `DestinationDeviceName` | strängvärdet | Namn på den enhet som kör serverprogrammet som bearbetade den inspelade åtgärden |
-| `DestinationIPAddress` | strängvärdet | IP-adress för enheten som kör serverprogrammet som bearbetade den inspelade åtgärden |
+| `IPAddress` | strängvärdet | Den IP-adress som tilldelats enheten under kommunikationen |
+| `Port` | strängvärdet | TCP-port som används under kommunikation |
 | `Location` | strängvärdet | Ort, land eller annan geografisk plats som är kopplad till evenemanget |
-| `Isp` | strängvärdet | Internet leverantör (ISP) associerad med slut punktens IP-adress |
+| `ISP` | strängvärdet | Internet leverantör associerad med IP-adressen |
 | `ReportId` | tids | Unik identifierare för händelsen |
 | `AdditionalFields` | strängvärdet | Ytterligare information om enheten eller händelsen |
 

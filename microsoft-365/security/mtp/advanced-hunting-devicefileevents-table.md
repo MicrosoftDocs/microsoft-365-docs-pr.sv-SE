@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b88bdb09b84db5de813fc9020d9695f26c61f105
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b4656c4fd7666ba99ca6125331bdc458d3835edb
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649445"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798010"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -31,6 +31,9 @@ ms.locfileid: "46649445"
 
 `DeviceFileEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om hur du skapar, ändrar och andra fil system händelser. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
+>[!TIP]
+> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
+
 Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
 | Kolumnnamn | Datatyp | Beskrivning |
@@ -38,7 +41,7 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 | `Timestamp` | datetime | Datum och tid när händelsen registrerades |
 | `DeviceId` | strängvärdet | Unik identifierare för datorn i tjänsten |
 | `DeviceName` | strängvärdet | Det fullständigt kvalificerade domän namnet (FQDN) för datorn |
-| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen |
+| `ActionType` | strängvärdet | Typ av aktivitet som utlöste händelsen. Mer information finns [i referens för in-Portal schema](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `FileName` | strängvärdet | Namnet på filen som den inspelade åtgärden tillämpades för |
 | `FolderPath` | strängvärdet | Mapp som innehåller filen som den inspelade åtgärden tillämpades för |
 | `SHA1` | strängvärdet | SHA-1 av filen som den inspelade åtgärden tillämpades på |
@@ -80,6 +83,6 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

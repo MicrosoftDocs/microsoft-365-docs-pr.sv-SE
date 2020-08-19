@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
-ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 21e2142eb62c25a7301e2ea5f9160ef6d6ef7947
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656821"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804226"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -31,39 +31,24 @@ Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardp
 
 Du kan konfigurera principer för skräppostskydd i Säkerhets- och efterlevnadscenter eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Principer för skräppostskydd i Säkerhets- och efterlevnadscenter jämfört med Windows PowerShell
-
-De grundläggande elementen i en princip för skräppostskydd i EOP är:
+De grundläggande delarna av en anti-spam-policy är:
 
 - **Principen för skräppostfilter**: anger åtgärderna för utfall av skräppostfiltrering och aviseringsalternativen.
-
 - **Regeln för skräppostfilter**: anger prioritets- och mottagarfilter (vem principen gäller för) för en princip för skräppostfilter.
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar principer för skräppostskydd i Säkerhets- och efterlevnadscenter:
 
-- När du skapar en princip för skräppostskydd i Säkerhets- och efterlevnadscenter skapar du i själva verket en regel för skräppostfilter och samtidigt den associerade principen för skräppostfilter med samma namn för båda två.
+- När du skapar en anti-spam policy skapar du faktiskt en spamfilterregel och tillhörande spamfilterpolicy samtidigt som du använder samma namn för båda.
+- När du ändrar en anti-spam-policy ändrar inställningar relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagarfilter spamregeln. Alla andra inställningar ändrar den associerade principen för skräppostfilter.
+- När du tar bort en anti-spam-policy tas spam-filterregeln och tillhörande spamfilterpolicy bort.
 
-- När du ändrar en princip för skräppostskydd i Säkerhets- och efterlevnadscenter ändrar inställningar för namn, prioritet, aktiverat eller inaktiverat och mottagarfilter regeln för skräppostfilter. Alla andra inställningar ändrar den associerade principen för skräppostfilter.
-
-- När du tar bort en princip för skräppostskydd från Säkerhets- och efterlevnadscenter tas regeln för skräppostfilter och den associerade principen för skräppostfilter bort.
-
-I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan principer för skräppostfilter och regler för skräppostfilter uppenbar. Du hanterar principer för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterPolicy**, och du hanterar regler för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterRule**.
-
-- I PowerShell skapar du först principen för skräppostfilter. Sedan skapar du regeln för skräppostfilter som identifierar principen som regeln gäller för.
-
-- I PowerShell ändrar du inställningarna för principen för skräppostfilter och regeln för skräppostfilter separat.
-
-- När du tar bort en princip för skräppostfilter från PowerShell tas motsvarande regel för skräppostfilter inte automatiskt bort och tvärtom.
-
-### <a name="default-anti-spam-policy"></a>Standardprincip för skräppostskydd
+I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i [Använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera avsnittet om antispampolicy](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) senare i det här ämnet.
 
 Alla organisationer har en inbyggd princip för skräppostskydd som heter Standard och som har följande egenskaper:
 
-- Principen för skräppostfilter som heter Standard tillämpas för alla mottagare i organisationen, även om det inte finns någon regel för skräppostfilter (mottagarfilter) som är associerade med principen.
-
-- Principen med namnet Standard har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (principen tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen som heter Standard.
-
-- Principen som heter Standard är standardprincipen (egenskapen **IsDefault** har värdet `True`), och du kan inte ta bort standardprincipen.
+- Principen tillämpas på alla mottagare i organisationen, även om det inte finns någon regel om skräppostfilter (mottagarfilter) associerade med policyn.
+- Principen har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (policyn tillämpas alltid sist). Alla anpassade policyer som du skapar har alltid högre prioritet.
+- Politik är standardpolicyn (egenskapen **IsDefault** har värdet `True`) och du kan inte ta bort standardpolicyn.
 
 Om du vill öka effektiviteten för filtrering av skräppost kan du skapa anpassade principer för skräppostskydd med striktare inställningar som tillämpas för vissa användare eller grupper av användare.
 
@@ -320,7 +305,9 @@ Du kan inte inaktivera standardprincipen för skräppostskydd.
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Ange prioritet för anpassade principer för skräppostskydd
 
-Som standard tilldelas principer för skräppostskydd en prioritet baserat på den ordning de har skapats i (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Två principer kan inte ha samma prioritet.
+Som standard tilldelas principer för skräppostskydd en prioritet baserat på den ordning de har skapats i (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
+
+För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
 Anpassade principer för skräppostskydd visas i den ordning som de bearbetas (den första principen har värdet 0 för **Prioritet**). Standardprincipen för skräppostskydd med namnet **Standardprincip för skräppostfilter** har prioritetsvärdet **Lägsta**, och du kan inte ändra det.
 
@@ -383,6 +370,14 @@ Du kan inte ta bort standardprincipen.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för skräppostskydd
 
+Som tidigare beskrivits består en anti-spam policy av en policy för spamfilter och en regel för spamfilter.
+
+I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan principer för skräppostfilter och regler för skräppostfilter uppenbar. Du hanterar principer för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterPolicy**, och du hanterar regler för skräppostfilter genom att använda cmdletarna **\*-HostedContentFilterRule**.
+
+- I PowerShell skapar du först principen för skräppostfilter. Sedan skapar du regeln för skräppostfilter som identifierar principen som regeln gäller för.
+- I PowerShell ändrar du inställningarna för principen för skräppostfilter och regeln för skräppostfilter separat.
+- När du tar bort en princip för skräppostfilter från PowerShell tas motsvarande regel för skräppostfilter inte automatiskt bort och tvärtom.
+
 Följande inställningar för principer för skräppostskydd är endast tillgängliga i PowerShell:
 
 - Parametern _MarkAsSpamBulkMail_ som är `On` (På) som standard. Effekterna av den här inställningen beskrevs i avsnittet [Använda Säkerhets- och efterlevnadscenter för att skapa principer för skräppostskydd](#use-the-security--compliance-center-to-create-anti-spam-policies) tidigare i den här artikeln.
@@ -398,7 +393,6 @@ Följande inställningar för principer för skräppostskydd är endast tillgän
 Du skapar en princip för skräppostskydd i PowerShell i två steg:
 
 1. Skapa principen för skräppostfilter.
-
 2. Skapa regeln för skräppostfilter som anger den princip för skräppostfilter som regeln gäller för.
 
  **Anmärkningar**:
@@ -408,7 +402,6 @@ Du skapar en princip för skräppostskydd i PowerShell i två steg:
 - Du kan konfigurera följande inställningar i nya principer för skräppostfilter i PowerShell som inte är tillgängliga i Säkerhets- och efterlevnadscenter förrän du har skapat principen:
 
   - Skapa den nya principen som inaktiverad (_Enabled_ `$false` i cmdleten **New-HostedContentFilterRule**).
-
   - Ange prioriteten för principen när du skapar den (_Priority_ _\<Number\>_) i cmdleten **New-HostedContentFilterRule**).
 
 - En ny princip för skräppostfilter som du skapar i PowerShell är inte synlig i Säkerhets- och efterlevnadscenter förrän du tilldelar principen till en regel för skräppostfilter.

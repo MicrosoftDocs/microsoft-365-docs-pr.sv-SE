@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0f93199fa23a422e82019730b38fcf407e8503a3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: f3c13025203a59eb192b9e0d193c429be57a83ce
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649421"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797986"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -32,6 +32,9 @@ ms.locfileid: "46649421"
 
 
 `DeviceLogonEvents`Tabellen i det [avancerade jakt](advanced-hunting-overview.md) -schemat innehåller information om användar inloggningar och andra autentiseringsreferenser på enheter. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+
+>[!TIP]
+> Detaljerad information om de händelse typer ( `ActionType` värden) som stöds av en tabell finns i den [inbyggda schema referensen](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) i säkerhets Center.
 
 Information om andra tabeller i det avancerade jakt schema [finns i referens för avancerad jakt](advanced-hunting-schema-tables.md).
 
@@ -75,6 +78,6 @@ Information om andra tabeller i det avancerade jakt schema [finns i referens fö
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)

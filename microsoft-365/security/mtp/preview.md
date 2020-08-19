@@ -1,7 +1,7 @@
 ---
-title: Förhandsgranska funktioner i Microsoft Threat Protection
-description: Läs mer om nya funktioner i Microsoft 365-säkerhet
-keywords: förhandsgranskning, ny, m365 säkerhet, säkerhet, 365, funktioner
+title: För hands versions funktioner i Microsoft Threat Protection
+description: Lär dig mer om nya funktioner i Microsoft 365-säkerhet
+keywords: för hands version, ny, m365 säkerhet, säkerhet, 365, funktioner
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,45 +19,46 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552668"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798240"
 ---
-# <a name="microsoft-threat-protection-preview-features"></a>Förhandsgranskningsfunktioner för Microsoft Threat Protection
+# <a name="microsoft-threat-protection-preview-features"></a>Funktioner för förhands granskning av Microsoft Threat Protection
 
-**Gäller:**
+**Gäller för:**
 - Microsoft Hotskydd
 
 
-Microsoft Threat Protection-tjänsten uppdateras ständigt för att inkludera nya funktionsförbättringar och funktioner.
+Microsoft Threat Protection-tjänsten uppdateras ständigt för att omfatta nya funktioner och funktioner.
 
-Lär dig mer om nya funktioner i förhandsversionen av Microsoft Threat Protection och bli bland de första som provar kommande funktioner genom att aktivera förhandsgranskningsupplevelsen.
+Lär dig mer om nya funktioner i för hands versionen av Microsoft Threat Protection och bli bland de första som får prova på kommande funktioner genom att aktivera för hands versionen.
 
-Mer information om nya funktioner som är allmänt tillgängliga finns [i Nyheter i Microsoft Threat Protection](whats-new.md).
+Mer information om nya funktioner som är allmänt tillgängliga finns i [Nyheter i Microsoft Threat Protection](whats-new.md).
 
-## <a name="turn-on-preview-features"></a>Aktivera förhandsgranskningsfunktioner
-Du får tillgång till kommande funktioner som du kan ge feedback på för att förbättra den övergripande upplevelsen innan funktioner är allmänt tillgängliga.
+## <a name="turn-on-preview-features"></a>Aktivera förhands gransknings funktioner
+Du får till gång till kommande funktioner som du kan ge feedback om för att förbättra den övergripande upplevelsen innan funktionerna är allmänt tillgängliga.
 
-Aktivera inställningen för förhandsgranskningsupplevelsen så att den är bland de första som kan prova kommande funktioner.
+Aktivera inställningen för förhands gransknings upplevelsen för att vara bland de första som får prova på kommande funktioner.
 
-1. Välj **Inställningar**i navigeringsfönstret .
+1. I navigerings fönstret väljer du **Inställningar**.
 
 2. Välj **Microsoft Threat Protection**.
 
 
-3. Välj **Förhandsgranskningsfunktioner**  >  **Aktivera förhandsgranskningsfunktioner**. 
+3. Välj **förhands gransknings**funktioner  >  **Aktivera förhands granskning**. 
 
 3. Välj **Spara**.
 
-Du vet att du har aktiverat förhandsgranskningsfunktioner när du ser att kryssrutan **Aktivera förhandsgranskningsfunktioner** är markerad. 
+Du vet att du har aktiverat funktionerna för förhands granskning när du ser att kryss rutan **Aktivera förhands gransknings funktioner** är markerad. 
 
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
-Följande funktioner och förbättringar är för närvarande tillgängliga vid förhandsversionen:
+Följande funktioner och förbättringar är för närvarande tillgängliga för förhands granskning:
 
-- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – Innehåller snabbt hot eller adresserar komprometterade tillgångar som du hittar i avancerad [jakt](advanced-hunting-overview.md).
-
-- **[Schemareferens för portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – Få information om avancerade jaktschematabeller direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här praktiska referensen information om händelsetyper som stöds `ActionType` (värden) och exempelfrågor.
+- **[IdentityDirectoryEvents-tabell i avancerad jakt](advanced-hunting-identitydirectoryevents-table.md)** – hitta händelser som berör en lokal domänkontrollant som kör Active Directory (AD). Den här tabellen innehåller flera identitetsbaserade händelser samt system händelser på domänkontrollanten.
+- **[Funktionen AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** – Använd den här funktionen i avancerad jakt för att snabbt få de senaste IP-adresserna som har tilldelats till en enhet eller de senaste IP-adresserna från en viss tidpunkt.
+- **[Vidta åtgärder i avancerad jakt](advanced-hunting-take-action.md)** – snabb till gångar som du hittar i en [Avancerad jakt](advanced-hunting-overview.md)snabbt.
+- **[Schema referens i portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – få information om avancerade tilläggs schema tabeller direkt i säkerhets Center. Förutom tabell-och kolumn beskrivningar innehåller den här smidiga referensen information om händelse typer `ActionType` som stöds och exempel frågor.
 
