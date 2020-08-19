@@ -183,6 +183,10 @@
           href: get-help-with-domains/buy-a-domain-name.md
         - name: Ta bort en domän
           href: get-help-with-domains/remove-a-domain.md
+        - name: Överför en domän från Microsoft 365 till en annan värd
+          href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
+        - name: Pilot Microsoft 365 från min anpassade domän
+          href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Vanliga frågor och svar om domäner
           href: setup/domains-faq.md
         - name: Värdspecifika instruktioner
