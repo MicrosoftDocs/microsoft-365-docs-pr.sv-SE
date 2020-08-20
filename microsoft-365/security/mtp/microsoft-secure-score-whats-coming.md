@@ -1,7 +1,7 @@
 ---
-title: Vad kommer till Microsoft Secure Score
-description: I artikeln beskrivs vilka nya ändringar som kommer till Microsoft Secure Score i microsoft 365 security center.
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
+title: Det här kommer att komma till Microsofts säkra Poäng
+description: Här beskrivs vilka nya ändringar som kommer till Microsofts säkra poäng i säkerhets Center för Microsoft 365.
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säker poäng, säkerhets Center, förbättrings åtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,31 +17,26 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 634f4194e450a7f3835ae0003c5632220a63108e
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 1b6bd81bc194a3b8d972661eaca393571b1ad199
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200056"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815225"
 ---
-# <a name="whats-coming-to-microsoft-secure-score"></a>Vad kommer till Microsoft Secure Score
+# <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
-För att göra [Microsoft Secure Score](microsoft-secure-score.md) till en bättre representant för din säkerhetsposition och förbättra användbarheten gör vi vissa ändringar inom en snar framtid. Din poäng och högsta möjliga poäng kan ändras.
+För att göra [Microsoft säkert Poäng](microsoft-secure-score.md) en bättre representant för dina säkerhets Posture och förbättra användbarheten gör vi några ändringar i hela tiden. Ditt Poäng och högsta möjliga poäng kan förändras.
 
 ## <a name="proposed-changes"></a>Föreslagna ändringar
 
-Dessa ändringar kan komma till din Microsoft Secure Score snart, beroende på din licens. Mer information om de senaste ändringarna finns [i Nyheter i Microsoft Secure Score?](microsoft-secure-score-whats-new.md)
+Dessa ändringar kan komma till din säkra Microsoft-poäng snart, beroende på vilken licens du har. Om du vill veta mer om de senaste ändringarna kan du läsa [Nyheter i Microsoft säkra Poäng?](microsoft-secure-score-whats-new.md)
 
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Lägga till förbättringsåtgärder för Azure Advanced Threat Protection
-
-- Riskfyllda sidorörelser
-- Oskyddade kontoattribut
-- Aktivera säkerhetsfunktioner i Active Directory-förtroenden
-- Ta bort osäkra SID-historikattribut från entiteter
+- Om du ändrar Max poängen från 7 till 8 för förbättrings åtgärden för Azure Active Directory med namnet "Aktivera princip för blockering av äldre-verifikation"
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Översikt över Microsoft Secure Score](microsoft-secure-score.md)
-- [Bedöm din säkerhetsposition](microsoft-secure-score-improvement-actions.md)
-- [Spåra din Microsoft Secure Score-historik och uppnå mål](microsoft-secure-score-history-metrics-trends.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
+- [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
+- [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

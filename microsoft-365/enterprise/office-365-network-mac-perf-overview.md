@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Översikt över nätverks anslutningar i Microsoft 365 Admin Center (för hands version)
-ms.openlocfilehash: 7171565b6bd3bfba3defb49b51349c95d1598367
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794328"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815249"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Nätverks anslutning i Microsoft 365 Admin Center (för hands version)
 
@@ -27,7 +27,7 @@ Administrations centret för Microsoft 365 includesaggregated nu nätverks anslu
 
 ![Sidan nätverks prestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
-När du först navigerar till sidan Nätverks anslutning visas en översikts ruta med en karta över globala nätverks prestanda, en nätverks utvärdering omfångst till hela klient organisationen och en lista över aktuella problem. Från översikten kan du öka detalj nivån för att visa specifika mått för nätverks prestanda och problem efter plats. Mer information finns i [Översikt över nätverkets prestanda i administrations centret för Microsoft 365](#network-performance-overview-in-the-microsoft-365-admin-center).
+När du först navigerar till sidan Nätverks anslutning visas en översikts ruta med en karta över globala nätverks prestanda, en nätverks utvärdering omfångst till hela klient organisationen och en lista över aktuella problem. Från översikten kan du öka detalj nivån för att visa specifika mått för nätverks prestanda och problem efter plats. Mer information finns i [Översikt över nätverkets prestanda i administrations centret för Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Förutsättningar för att nätverks anslutningar ska visas
 

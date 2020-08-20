@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'När du är inloggad med giltiga arbets-eller skol konton kan användarna få molnbaserade stöd tjänster med Cortana i Microsoft 365-upplevelser som uppfyller Office 365: s sekretess, säkerhet och efterlevnad.'
-ms.openlocfilehash: 29e04726b04fafb0b79e5ba4625dce2ae74bfc67
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788854"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818307"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -101,6 +101,8 @@ Enskilda användare kan testa Cortana-hjälpen i Teams-mobilappen genom att klic
 
 4. Flytta växlings knappen till på eller av, beroende på om du vill ha Cortana-Hjälp på den här enheten.
 
+[Läs mer om Cortana-assistans i Teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+
 ### <a name="play-my-emails"></a>Spela upp mina e-postmeddelanden
 
 Spela upp mina e-postmeddelanden (som är anslutna till dig via Outlook Mobile) är en dator som är en kostnads fri hands funktion för att lyssna på nya meddelanden i deras prioriterade inkorg och ändringar i deras dag via högtalarna på deras telefon, hörlurar eller anslutna ljud enheter. Användare kan be Cortana att läsa de senaste e-postmeddelandena och be Cortana att vidta åtgärder som flagga, arkivera, ta bort och hoppa över meddelanden. Den här funktionen är särskilt användbar för att hålla kontakten med e-post medan du reser, multitasking eller är på språng. När användaren pratar med Cortana i spela mina e-postmeddelanden skickas röst meddelandet direkt till Cortana Enterprise-tjänsterna. En text till tal som avstår från användarens e-postadress bearbetas inuti Office 365-molnet. Under den här processen bearbetas inga Office 365-data på användarens mobila enhet och inga e-postdata sparas. En avskrift av talade kommandon (d.v.s. "Markera som läst", "Nästa", "flagga" osv.) kan bevaras i enlighet med villkoren för data skydd i Microsofts [Online Services-villkor](https://www.microsoft.com/licensing/product-licensing/products).
@@ -133,7 +135,7 @@ Administratörer kan konfigurera sitt eget företags organisation med [PowerShel
 
 Vi fortsätter att introducera fler upplevelser som ovan för att öka organisationens produktivitet.
 
-Lär dig mer om [Microsofts efterföljandekrav](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
+[Lär dig mer om Microsofts efterföljandekrav](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Hur är leveransen av Cortana Enterprise-tjänster annorlunda jämfört med leverans av andra Cortana-funktioner?
 

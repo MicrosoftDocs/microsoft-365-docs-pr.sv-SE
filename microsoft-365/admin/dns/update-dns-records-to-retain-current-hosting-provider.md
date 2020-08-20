@@ -20,46 +20,48 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Lär dig hur du dirigerar trafik till en befintlig offentlig webbplats som finns utanför Microsoft om du har angett att Microsoft ska hantera DNS-poster för din anpassade domän.
-ms.openlocfilehash: c33dd9253da2e8833ec6ae4693be34739b31ea63
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du dirigerar trafik till en befintlig offentlig webbplats som ligger utanför Microsoft, om du har konfigurerat Microsoft för att hantera DNS-poster för din egen domän.
+ms.openlocfilehash: 9a7090eef3ce7d1c67839e7320f31d7bd32aa6a7
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400226"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814404"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Uppdatera DNS-poster för att behålla din webbplats hos ditt nuvarande webbhotell
 
- **Om du hanterar domänens Microsoft-poster hos din DNS-värd**behöver du inte oroa dig för stegen i det här avsnittet. Din webbplats finns kvar på samma plats och användarna kan fortfarande komma åt den. 
+ **Om du hanterar din domäns Microsoft-poster hos din DNS-värd**behöver du inte oroa dig för stegen i det här avsnittet. Din webbplats finns kvar på samma plats och användarna kan fortfarande komma åt den. 
   
- **Om Microsoft hanterar dina DNS-poster**gör du följande när du har lagt till din domän i Microsoft: 
+ **Om Microsoft hanterar dina DNS-poster**och dirigerar trafik till en befintlig offentlig webbplats som finns utanför Microsoft, efter att du har lagt till din domän i Microsoft, gör du följande: 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Uppdatera DNS-poster i microsoft 365-administrationscentret
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Uppdatera DNS-poster i administrations centret för Microsoft 365
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
-2. På sidan **Domäner**, i listan över domäner, väljer du den domän du använder för webbplatsen och väljer sedan **DNS-inställningar** i hanteringsfönstret. 
+2. På sidan **domäner** väljer du domänen och sedan **DNS Records**.
+
+3. Under **DNS-inställningar**väljer du **anpassade poster**.
+
+4. Välj **+ Ny anpassad post** och ange följande: 
     
-3. Välj **+ Ny anpassad post** och ange följande: 
+   - Ange följande för **DNS-typ**: **A (adress)**
     
-  - Ange följande för **DNS-typ**: **A (adress)**
+   - I **Värdnamn eller alias** skriver du in **@**
     
-  - I **Värdnamn eller alias** skriver du in **@**
+   - I **IP-adress** skriver du in den statiska IP-adress där webbplatsen finns för närvarande (till exempel 172.16.140.1). 
     
-  - I **IP-adress** skriver du in den statiska IP-adress där webbplatsen finns för närvarande (till exempel 172.16.140.1). 
+   Det måste vara en  *statisk*  IP-adress för webbplatsen, inte en  *dynamisk*  IP-adress.Kontrollera med webbplatsen som är värd för din webbplats för att se till att du kan få en statisk IP-adress till din offentliga webbplats. 
     
-    Det måste vara en  *statisk*  IP-adress för webbplatsen, inte en  *dynamisk*  IP-adress.Kontrollera med webbplatsen som är värd för din webbplats för att se till att du kan få en statisk IP-adress till din offentliga webbplats. 
-    
-3. Välj **Spara**. 
+5. Välj **Spara**. 
     
 Du kan dessutom skapa en CNAME-post för att kunderna lättare ska kunna hitta till webbplatsen.
   
 1. Välj **+ Ny anpassad post** och ange följande: 
     
-  - Ange följande för **DNS-typ**: **CNAME (alias)**
+   - Ange följande för **DNS-typ**: **CNAME (alias)**
     
-  - I **Värdnamn eller alias** skriver du in **www**
+   - I **Värdnamn eller alias** skriver du in **www**
     
-  - I **Pekar på adress** skriver du in det fullständiga domännamnet (FQDN) för webbplatsen (till exempel contoso.com). 
+   - I **Pekar på adress** skriver du in det fullständiga domännamnet (FQDN) för webbplatsen (till exempel contoso.com). 
     
 2. Välj **Spara**. 
     
@@ -67,5 +69,5 @@ Gör sedan följande:
   
 [Uppdatera domänens NS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) så att de pekar på Microsoft. 
   
-När NS-posterna har uppdaterats så att de pekar på Microsoft är domänen konfigurerad. E-post dirigeras till Microsoft och trafiken till din webbadress fortsätter att gå till din nuvarande webbplatsvärd.
+När NS-posterna har uppdaterats så att de pekar på Microsoft är din domän konfigurerad. E-postmeddelandet dirigeras till Microsoft och trafik till din webb adress fortsätter att gå till din aktuella webbplats värd.
  

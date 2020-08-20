@@ -1,5 +1,5 @@
 ---
-title: Rapportera skräppost och nätfiskemeddelanden i Outlook på webben
+title: Rapportera skräp post och nätfiske i Outlook på webben
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,123 +15,123 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig mer om de inbyggda alternativen för skräppost, inte skräppost och rapportering av nätfiske i Outlook på webben (Outlook Web App) i Exchange Online och hur du inaktiverar dessa rapporteringsalternativ för användare.
-ms.openlocfilehash: adbb4f16201e221bce2405a7b715dd6a630e9e1d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: Administratörer kan lära sig mer om de inbyggda alternativen för skräp post, inte skräp post och nätfiske i Outlook på webben (Outlook Web App) i Exchange Online och hur du inaktiverar dessa rapporterings alternativ för användare.
+ms.openlocfilehash: a364afed9bb7e61d5f34ffc0206ede1c5155db65
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617326"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818339"
 ---
-# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Rapportera skräppost och nätfiskemeddelanden i Outlook på webben i Exchange Online
+# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Rapportera skräp post och nätfiske i Outlook på webben i Exchange Online
 
-I Microsoft 365-organisationer med postlådor i Exchange Online kan du använda de inbyggda rapporteringsalternativen i Outlook på webben (tidigare kallat Outlook Web App) för att skicka in falska positiva identifieringar (bra e-post markerat som skräppost), falska negativ (felaktig e-post tillåten) och nätfiskemeddelanden till Exchange Online Protection (EOP).
+I Microsoft 365-organisationer med post lådor i Exchange Online kan du använda de inbyggda rapporterings alternativen i Outlook på webben (tidigare Outlook Web App) för att skicka falska positiva (e-postmeddelanden markerade som skräp post), falskt negativ (dålig e-post) och nätfiske-meddelanden till Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen Inlämningar i Security & Compliance Center. Mer information finns i [Använda administratörsöverföring för att skicka misstänkt skräppost, phish, URL:er och filer till Microsoft](admin-submission.md).
+- Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för säkerhets & efterlevnad. Mer information finns i [använda administratörs överföring för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft](admin-submission.md).
 
-- Administratörer kan inaktivera eller aktivera möjligheten för användare att rapportera meddelanden till Microsoft i Outlook på webben. Mer information finns i [avsnittet Inaktivera eller aktivera skräppostrapportering i Outlook på webben](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) senare i det här avsnittet.
+- Administratörer kan inaktivera eller aktivera möjligheten för användare att rapportera meddelanden till Microsoft i Outlook på webben. Mer information finns i [Aktivera eller inaktivera rapportering av skräp post i Outlook på webben](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) längre ned i det här avsnittet.
 
-- Du kan konfigurera rapporterade meddelanden som ska kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i [Ange en postlåda för användarinlämningar av skräppost och nätfiskemeddelanden i Exchange Online](user-submission.md).
+- Du kan konfigurera vilka meddelanden som ska kopieras eller dirigeras om till en post låda som du anger. Mer information finns i [Ange en post låda för användar överföringar av skräp post och nät fiske meddelanden i Exchange Online](user-submission.md).
 
-- Mer information om hur du anmäler meddelanden till Microsoft finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+- Mer information om hur du rapporterar meddelanden till Microsoft finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>Rapportera skräppost och nätfiskemeddelanden i Outlook på webben
+## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>Rapportera skräp post och nät fiske meddelanden i Outlook på webben
 
-1. För meddelanden i Inkorgen eller någon annan e-postmapp utom skräppost använder du någon av följande metoder för att rapportera skräppost och nätfiskemeddelanden:
+1. Använd någon av följande metoder för att rapportera skräp post och nät fiske meddelanden, för meddelanden i Inkorgen eller annan mapp för e-post utom skräp posten:
 
-   - Markera meddelandet, klicka på **Skräppost** i verktygsfältet och välj sedan **Skräppost** eller **Nätfiske**.
+   - Markera meddelandet, klicka på **skräp post** i verktygsfältet och välj sedan **skräp post** eller **nätfiske**.
 
-     ![Rapportera skräppost eller nätfiskemeddelande från menyfliksområdet](../../media/owa-report-junk.png)
+     ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/owa-report-junk.png)
 
-   - Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som skräppost**.
+   - Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som skräp post**.
 
-2. Klicka på **Rapportera**i dialogrutan som visas. Om du ändrar dig klickar du på **Rapportera inte**.
+2. Klicka på **rapport**i dialog rutan som visas. Om du ändrar dig klickar du på **rapportera inte**.
 
-   ![Rapport som skräppostdialogruta](../../media/owa-report-as-junk-dialog.png)
+   |Mappen|Fiske|
+   |:---:|:---:|
+   |![Dialog rutan rapportera som skräp post](../../media/owa-report-as-junk-dialog.png)|![Dialog rutan rapportera som nätfiske](../../media/owa-report-as-phishing-dialog.png)|
 
-   ![Dialogrutan Rapportera som nätfiske](../../media/owa-report-as-phishing-dialog.png)
+3. De valda meddelandena skickas till Microsoft för analys. Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.
 
-3. De valda meddelandena skickas till Microsoft för analys. Om du vill bekräfta att meddelandena har skickats öppnar du mappen **Skickat för** att visa de skickade meddelandena.
+## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a>Rapportera icke-spam-och nät fiske meddelanden från mappen skräp post i Outlook på webben
 
-## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a>Rapportera meddelanden som inte är skräppost och nätfiske från mappen Skräppost i Outlook på webben
+1. I mappen skräp post kan du använda någon av följande metoder för att rapportera skräp post i falsk positiv eller nätfiske:
 
-1. I mappen Skräppost använder du någon av följande metoder för att rapportera falska positiva skräppost eller nätfiskemeddelanden:
+   - Markera meddelandet, klicka på **inte skräp post** i verktygsfältet och välj **inte skräp post** eller **nätfiske**.
 
-   - Markera meddelandet, klicka på **Inte skräppost** i verktygsfältet och välj sedan **Inte skräppost** eller **nätfiske**.
+     ![Rapportera skräp post eller nätfiske via menyfliksområdet](../../media/owa-report-not-junk.png)
 
-     ![Rapportera skräppost eller nätfiskemeddelande från menyfliksområdet](../../media/owa-report-not-junk.png)
+   - Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som inte skräp post**.
 
-   - Markera ett eller flera meddelanden, högerklicka och välj sedan **Markera som inte skräppost**.
+2. Läs informationen i dialog rutan som visas och klicka på **rapportera**. Om du ändrar dig klickar du på **rapportera inte**.
 
-2. Läs informationen i dialogrutan som visas och klicka på **Rapportera**. Om du ändrar dig klickar du på **Rapportera inte**.
+   |Inte skräp post|Fiske|
+   |:---:|:---:|
+   |![Dialog rutan rapportera inte som skräp post](../../media/owa-report-as-not-junk-dialog.png)|![Dialog rutan rapportera som nätfiske](../../media/owa-report-as-phishing-dialog.png)|
 
-   ![Rapportera som inte skräppostdialogruta](../../media/owa-report-as-not-junk-dialog.png)
+3. De valda meddelandena skickas till Microsoft för analys. Bekräfta att meddelanden har skickats genom att öppna mappen **skickat** för att visa de meddelanden som skickats.
 
-   ![Dialogrutan Rapportera som nätfiske](../../media/owa-report-as-phishing-dialog.png)
+## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Inaktivera eller aktivera rapportering av skräp post i Outlook på webben
 
-3. De valda meddelandena skickas till Microsoft för analys. Om du vill bekräfta att meddelandena har skickats öppnar du mappen **Skickat för** att visa de skickade meddelandena.
-
-## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Inaktivera eller aktivera skräppostrapportering i Outlook på webben
-
-Som standard kan användare rapportera falska positiva skräpposter, falska negativ och nätfiskemeddelanden till Microsoft för analys i Outlook på webben. Administratörer kan konfigurera Outlook på webbpostlådeprinciperna i Exchange Online PowerShell för att förhindra att användare rapporterar falska positiva skräpposter och falska skräppost negativ till Microsoft. Du kan inte inaktivera möjligheten för användare att rapportera nätfiskemeddelanden till Microsoft.
+Som standard kan användare rapportera skräp post i falsk positiv, falsk negativ och nätfiske till Microsoft för analys i Outlook på webben. Administratörer kan konfigurera Outlook på webbens post lådans principer i Exchange Online PowerShell för att förhindra att användare rapporterar skräp post falsk positiv och skräp post till Microsoft. Du kan inte inaktivera möjligheten för användare att rapportera nät fiske meddelanden till Microsoft.
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i [Anslut till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Du behöver som standard rollerna **Mottagare eller** **E-postmottagare** i Exchange Online, som tilldelas rollgrupperna **Organisationshantering** och **Mottagarhantering** som standard. Mer information om rollgrupper i Exchange Online finns [i Ändra rollgrupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
+- Du måste ha tilldelats behörigheter för att kunna utföra de här procedurerna. Specifikt du behöver **mottagar principer** eller **e-postmottagare** roller i Exchange Online, som är tilldelade till roll grupperna **organisations hantering** och **mottagare** . Mer information om roll grupper i Exchange Online finns i [ändra roll grupper i Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups).
 
-- Varje organisation har en standardprincip med namnet OwaMailboxPolicy-Default, men du kan skapa anpassade principer. Anpassade principer tillämpas på begränsade användare före standardprincipen. Mer information om Outlook i principerna för webbpostlåda finns i Outlook i principerna för [webbpostlådan i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
+- Varje organisation har en standard princip som heter OwaMailboxPolicy-Default, men du kan skapa anpassade principer. Anpassade principer tillämpas på användare med begränsad räckvidd före standard principen. Mer information om Outlook på principer för webb post lådor finns i [Outlook på principer för Internet post lådor i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies).
 
-- Om du inaktiverar skräppostrapportering tas inte möjligheten att markera ett meddelande som skräppost eller inte skräppost i Outlook på webben. Om du markerar ett meddelande i mappen Skräppost och klickar på **Inte skräppost** flyttas meddelandet tillbaka till \> **Not junk** Inkorgen. Om du markerar ett meddelande i **Junk** en annan e-postmapp och klickar på \> **Skräppost** flyttas meddelandet fortfarande till mappen Skräppost. Det som inte längre är tillgängligt är alternativet att rapportera meddelandet till Microsoft.
+- Om du inaktiverar skräp post rapportering tas inte möjligheten att markera ett meddelande som skräp post eller inte skräp post i Outlook på webben. Om du markerar ett meddelande i mappen skräp post och klickar på **inte skräp** \> **post** flyttas meddelandet tillbaka till Inkorgen. Om du markerar ett meddelande i en annan e-postmapp och sedan klickar på **skräp** \> **post** flyttas meddelandet till mappen skräp post. Det går inte längre att rapportera meddelandet till Microsoft.
 
-### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Använda Exchange Online PowerShell för att inaktivera eller aktivera skräppostrapportering i Outlook på webben
+### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Använda Exchange Online PowerShell för att inaktivera eller aktivera rapportering av skräp post i Outlook på webben
 
-1. Om du vill hitta dina befintliga Outlook på webbpostlådeprinciperna och statusen för skräppostrapportering kör du följande kommando:
+1. Om du vill hitta dina befintliga Outlook-principer och status för skräp post rapportering kör du följande kommando:
 
    ```powershell
    Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
    ```
 
-2. Om du vill inaktivera eller aktivera skräppostrapportering i Outlook på webben använder du följande syntax:
+2. Om du vill inaktivera eller aktivera skräp post rapportering i Outlook på webben kan du använda följande syntax:
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
    ```
 
-   I det här exemplet inaktiveras skräppostrapportering i standardprincipen.
+   I det här exemplet inaktive ras skräp post rapportering i standard policyn.
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
    ```
 
-   I det här exemplet kan skräppostrapportering i den anpassade principen Contoso Managers.
+   I det här exemplet aktive ras skräp post rapportering i den anpassade principen med contoso Managers.
 
    ```powershell
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
    ```
 
-Detaljerad syntax- och parameterinformation finns i [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy) och [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
+Detaljerad information om syntax och parametrar finns i [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy) och [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
 
 ### <a name="how-do-you-know-this-worked"></a>Hur vet du att det fungerade?
 
-Om du vill kontrollera att du har aktiverat eller inaktiverat skräppostrapportering i Outlook på webben använder du något av följande:
+Gör så här för att kontrol lera att du har aktiverat eller inaktiverat skräp post rapportering i Outlook på webben:
 
-- I Exchange Online PowerShell kör du följande kommando och verifierar egenskapsvärdet **ReportJunkEmailEnabled:**
+- Kör följande kommando i Exchange Online PowerShell och kontrol lera värdet för egenskapen **ReportJunkEmailEnabled** :
 
   ```powershell
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Öppna en berörd användares postlåda i Outlook på webben, **Junk** välj ett meddelande i Inkorgen, klicka på \> **Skräppost** och kontrollera uppmaningen att rapportera meddelandet till Microsoft visas eller visas inte.<sup>\*</sup>
+- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i Inkorgen, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft är eller visas inte.<sup>\*</sup>
 
-- Öppna en berörd användares postlåda i Outlook på webben, välj **Junk** ett meddelande i mappen Skräppost, klicka på \> **Skräppost** och kontrollera uppmaningen om att rapportera meddelandet till Microsoft visas eller visas inte.<sup>\*</sup>
+- Öppna en användares post låda i Outlook på webben, Välj ett meddelande i mappen skräp post, klicka på **skräp** \> **post** och bekräfta uppmaningen att rapportera meddelandet till Microsoft, eller så visas det inte.<sup>\*</sup>
 
-<sup>\*</sup>Användare kan dölja uppmaningen om att rapportera meddelandet medan de fortfarande anmäler meddelandet. Så här kontrollerar du den här inställningen i Outlook på webben:
+<sup>\*</sup> Användare kan dölja uppmaningen att rapportera meddelandet medan det rapporteras. Så här kontrollerar du inställningen i Outlook på webben:
 
-1. Klicka på **Inställningar** ![ Outlook på ikonen för webbinställningar Visa ](../../media/owa-settings-icon.png) \> **alla** \> **Skräppostinställningar i**Outlook .
-2. Kontrollera värdet i avsnittet **Rapportering:** **Fråga mig innan du skickar en rapport**.
+1. Klicka på **Inställningar** ![ i Outlook på webb inställnings ikonen ](../../media/owa-settings-icon.png) \> **Visa alla** \> **skräp post**i Outlook-inställningar.
+2. Kontrol lera värdet i avsnittet **rapportering** **innan du skickar en rapport**.
 
-   ![Outlook på webben Inställningar för rapportering av skräppost](../../media/owa-junk-email-reporting-options.png)
+   ![Inställningar för skräp post rapportering i Outlook på webben](../../media/owa-junk-email-reporting-options.png)

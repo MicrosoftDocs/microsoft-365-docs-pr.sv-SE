@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Läs om hur du köper ett domännamn i Microsoft 365.
-ms.openlocfilehash: fcf13314d7206837f10459ed8c0a44e5d41f219b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Lär dig hur du köper ett domän namn i Microsoft 365.
+ms.openlocfilehash: c9b4ac4cff7ad8166caa28b89e1195d98b3f6d27
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780199"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814462"
 ---
 # <a name="buy-a-domain-name"></a>Köpa ett domännamn
 
@@ -40,50 +40,50 @@ ms.locfileid: "44780199"
 
 ::: moniker-end
 
- *Om du vill lägga till, ändra eller ta bort domäner **måste** du vara **global administratör för** ett företag eller en [företagsplan](https://products.office.com/business/office). Dessa ändringar påverkar hela klienten, *anpassade administratörer* eller *vanliga användare* kan inte göra dessa ändringar.*  
+ *För att lägga till, ändra eller ta bort domäner **måste** du vara **Global administratör** för [företags-eller företags abonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klient organisationen, *anpassade administratörer* eller *vanliga användare* kommer inte att kunna göra dessa ändringar.*  
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Logga in och gå till Inställningar \> Domäner \> Köp en domän
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Logga in och gå till inställnings \> domäner \> köpa en domän
 
 1. I administrationscentret går du till **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
     
-3. På sidan **Domäner** väljer du **Köp domän**.
+3. På sidan **domäner** väljer du **Köp domän**.
     
 Du kan välja bland följande toppnivådomän för din domän.
   
-- .biz (biz)
+- . B2B argumentssida
     
-- .com (på marknaden)
+- . com
     
-- .info (info)
+- . info
     
-- .me
+- . mig
     
-- .mobi (mobi)
+- .mobi
     
-- .net (netto)
+- Studio
     
-- .org (på andra)
+- . org
     
-- .tv (tv)
+- . TV
     
-- .co.uk
+- . co.uk
     
 - org.uk
     
 
 > [!NOTE]
-> När du väljer **Köp domän**kan du omdirigeras till din Microsoft-partners webbplats om klienten köps/hanteras via en Microsoft-partner.
+> När du väljer **Köp domän**kanske du omdirigeras till din Microsoft-partners webbplats om klient organisationen köps/hanteras via en Microsoft-partner.
 
-### <a name="domain-privacy"></a>Domän sekretess
-Vi erbjuder en gratis prenumeration på domänsekretess vid köp av en domän. Detta håller dina kontaktuppgifter kopplade till registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
+### <a name="domain-privacy"></a>Domän integritet
+Vi tillhandahåller ett kostnads fritt domän integritets abonnemang med köp av en domän. Då hålls dina kontakt uppgifter kopplade till registreringen av din domän med ICANN privat. [Lära sig mer.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Köpa en domän från en annan domänregistrator
-Om du vill köpa en domän från en annan domänregistrator än [GoDaddy](https://www.godaddy.com)rekommenderar vi att du använder en nedan som stöder automatisk installation (Domain Connect). 
+Om du vill köpa en domän från en annan domän registrator än [GoDaddy](https://www.godaddy.com)rekommenderar vi att du använder en nedan som stöder automatisk konfigurering (Domain Connect). 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
-- [Wordpress](https://www.wordpress.com) 
+- [WordPress](https://www.wordpress.com) 
 
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Överföra din domän till en annan domänregistrator
@@ -102,21 +102,21 @@ Begär överföringen hos registratorn du vill flytta din domän till. Titta eft
 
 Om du inte redan har en egen domän kan du enkelt köpa en online hos en domännamnsregistrator, en domänåterförsäljare eller hos din nuvarande Internetleverantör. Du får ett domännamn när du registrerar dig för Office 365 med 21Vianet, till exempel contoso.partner.onmschina.cn. Men du kanske vill använda ett eget domännamn, till exempel fourthcoffee.com.
   
-Om du vill konfigurera en domän i Microsoft 365 måste du äga en domän och ändra några av DNS-posterna för domänen.
+Om du vill konfigurera en domän i Microsoft 365 måste du äga en domän och ändra vissa av domänens DNS-poster.
   
 > [!CAUTION]
-> Vissa domänregistratorer eller DNS-värdleverantörer tillåter inte att du skapar alla DNS-poster som krävs av Microsoft 365. Följande lista med värdtjänster stöder alla nödvändiga poster. Om du funderar på att använda en annan värdtjänst bör du [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Vissa domän registratorer eller DNS-värdar tillåter inte att de DNS-poster som krävs av Microsoft 365 skapas. Följande lista med värdtjänster stöder alla nödvändiga poster. Om du funderar på att använda en annan värdtjänst bör du [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-När du har registrerat domänen (hos en domänregistrare) loggar du in på Microsoft 365 som administratör och konfigurerar domänen så att du kan använda den med din e-postadress och andra tjänster..
+När du har registrerat din domän (hos en domän registrator) loggar du in på Microsoft 365 som administratör och konfigurerar din domän så att du kan använda den med din e-postadress och andra tjänster..
   
 > [!NOTE]
-> Informationen om den offentliga sharepoint-webbplatsen för SharePoint Online i den här artikeln gäller endast om din organisation köpte Microsoft 365 före den 9 mars 2015. 
+> Informationen om den offentliga SharePoint Online-webbplatsen i den här artikeln gäller endast om din organisation köpte Microsoft 365 före den 9 mars 2015. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänregistratorer som stöder alla DNS-poster som krävs för Microsoft 365
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domän registratorer som stöder alla DNS-poster som krävs för Microsoft 365
 
 - [Oray](https://oray.com/)
     
-- [HejKina](https://www.hichina.com/)
+- [HiChina](https://www.hichina.com/)
     
 - [east.net](http://www.east.net/)
     
@@ -130,6 +130,4 @@ När du har registrerat domänen (hos en domänregistrare) loggar du in på Micr
 
 [Vanliga frågor och svar om domäner](../setup/domains-faq.md)
 
-[Få hjälp med domäner](get-help-with-domains.md)
-
-[Uppdatera DNS-poster för att hålla din webbplats med din nuvarande webbhotell](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).
+[Uppdatera DNS-poster för att behålla din webbplats hos din nuvarande värd](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

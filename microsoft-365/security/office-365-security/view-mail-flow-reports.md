@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om vilka e-postflödes rapporter som är tillgängliga på instrument panelen för rapporter i säkerhets & efterlevnad.
 ms.custom: ''
-ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635040"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814522"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa rapporter om e-postflöden i instrument panelen för säkerhet &
 
@@ -233,7 +233,7 @@ När du öppnar rapporten är fliken **typ** markerad som standard. Den här vyn
 
 Diagrammet är ordnat efter **textvärdena** .
 
-Du kan ändra filtren genom att klicka på **filter** eller genom att klicka på ett värde i diagram förklaringen.
+Du kan ändra dessa filter genom att klicka på **filter** eller genom att klicka på ett värde i diagram förklaringen.
 
 Data tabellen innehåller följande information:
 
@@ -279,6 +279,123 @@ För detaljvyn kan du bara exportera data för en dag. Om du till exempel vill e
 Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data för den dagen innehåller fler än 150 000 rader skapas flera CSV-filer.
 
 ![Vyn riktning i rapporten flödes status ](../../media/mail-flow-status-report-direction-view.png)
+
+### <a name="funnel-view-for-the-mailflow-status-report"></a>Vyn tratt för status rapporten flöde
+
+I vyn **tratt** visas hur Microsofts funktioner för skydd mot e-posthotet filtrerar inkommande och utgående e-post i organisationen. Den innehåller detaljerad information om det totala antalet e-postmeddelanden och hur de konfigurerade hot skydds funktionerna, inklusive Edge Protection, skadlig program vara, anti-nätfiske, anti-spam och skydd mot förfalskning påverkar det här antalet.
+
+Om du klickar på fliken **tratt** visas den här vyn som standard ett diagram och en data tabell som är konfigurerad med följande filter:
+
+- **Datum**: de senaste sju dagarna.
+
+- **Riktning**:
+
+  - **Inkommande**
+  - **Gående**
+  - **Inom organisationen**: det här antalet är för meddelanden som skickas inom en klient organisation. avsändare skickar abc@domain.com till mottagaren xyz@domain.com (räknas åtskilt från inkommande och utgående).
+
+I vyn mängd och data tabell kan du se 90 dagar.
+
+Om du klickar på **filter**kan du filtrera både diagrammet och data tabellen.
+
+Det här diagrammet visar antalet e-postmeddelanden ordnade efter:
+
+  - **Totalt e-postmeddelande**
+  - **E-post efter Edge-skydd**
+  - **E-post efter skadlig program vara, fil rykte, fil typs block**
+  - **E-post efter anti-Phish, URL-rykte, varumärkes-och programförfalskning**
+  - **E-post efter anti-spam, Mass utskick**
+  - **E-post efter användare och domän-personifiering**<sup>1</sup>
+  - **E-post efter fil-och URL-sprängning**<sup>1</sup>
+  - **E-post identifieras som oskadlig efter efter leverans skydd (URL-adress klicka på tids skydd)**
+
+<sup>1</sup> Office 365 ATP
+
+Om du vill visa e-postmeddelandet filtrerat efter EOP eller ATP klickar du på värdet i diagram förklaringen.
+
+Data tabellen innehåller följande information, som visas i fallande ordning:
+
+ - **Datum**
+ - **Totalt e-postmeddelande**
+ - **Edge Protection**
+ - **Skadlig program vara, fil rykte, fil typs block**
+ - **Anti-Phish, URL-rykte, varumärkes-och programförfalskning**
+ - **Skydd mot skräp post, Mass utskick**
+ - **Användar-och domän personifiering (ATP)**
+ - **Fil-och URL-sprängning (ATP)**
+ - **Efter leverans skydd och ZAP (ATP) eller ZAP (EOP)**
+
+Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
+
+**Exportera**:
+
+När du klickar på **Exportera** under **alternativ**kan du välja ett av följande värden:
+
+- **Sammanfattning (med data för de senaste 90 dagarna)**
+- **Uppgifter (med data för de senaste 30 dagarna)**
+
+Under **datum**väljer du ett område och klickar sedan på **Använd**. Data för de aktuella filtren exporteras till en. csv-fil.
+
+Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data innehåller fler än 150 000 rader skapas flera CSV-filer.
+
+ ![Vyn tratt i rapporten flödes status ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### <a name="tech-view-for-the-mailflow-status-report"></a>Teknisk vy för rapporten flödes schema
+
+**Tech-vyn** liknar vyn **tratt** och ger mer detaljerad information om de konfigurerade hot skydds funktionerna. Från diagrammet kan du se hur meddelanden kategoriseras i olika stadier av hotets skydd.
+
+Om du klickar på fliken **teknisk vy** innehåller den här vyn som standard ett diagram och en data tabell som är konfigurerad med följande filter:
+
+- **Datum**: de senaste sju dagarna.
+
+- **Riktning**:
+
+  - **Inkommande**
+  - **Gående**
+  - **Inom organisationen**: det här antalet är för meddelanden inom en klient organisation, d.v.s. avsändarens abc@domain.com skickar till mottagaren xyz@domain.com (räknas separat från inkommande och utgående)
+
+I vyn mängd och data tabell kan du se 90 dagar.
+
+Om du klickar på **filter**kan du filtrera både diagrammet och data tabellen.
+
+I det här diagrammet visas meddelanden ordnade i följande kategorier:
+
+  - **Totalt e-postmeddelande**
+  - **Edge Allow, Edge filtrerat**
+  - **Ej skadlig kod, identifiering av säkra bifogade filer (ATP), identifiering av skadlig program vara, regel block**
+  - **Inte Phish, DMARC-fel, identifiering av obehörig person, förfalsknings avkänning, Phish-identifiering**
+  - **Ingen identifiering med URL-sprängning, identifiering av URL-sprängor (ATP)**
+  - **Inte skräp post, spam**
+  - **Icke-skadlig e-post, identifiering av säkra länkar (ATP), ZAP**
+
+När du hovrar över en kategori i diagrammet kan du se antalet meddelanden i den kategorin.
+
+Data tabellen innehåller följande information, som visas i fallande ordning:
+
+  - **Datum**  
+  - **Totalt e-postmeddelande**
+  - **Filtrerad**
+  - **Skydd mot skadlig program vara, säkra bilagor, regel filtrerat**
+  - **DMARC, Phish, filtrerat**
+  - **Identifiering av URL-sprängning**
+  - **Skräp post filter**
+  - **ZAP borttagen**
+  - **Identifiering via säkra länkar**
+
+Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
+
+**Exportera**:
+
+Om du klickar på **Exportera**kan du välja ett av följande värden under **alternativ** :
+
+- **Sammanfattning (med data för de senaste 90 dagarna)**
+- **Uppgifter (med data för de senaste 30 dagarna)**
+
+Under **datum**väljer du ett område och klickar sedan på **Använd**. Data för de aktuella filtren exporteras till en. csv-fil.
+
+Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data innehåller fler än 150 000 rader skapas flera CSV-filer.
+
+ ![Teknisk vy i rapporten flödes status ](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Skicka och ta emot e-postrapport
 

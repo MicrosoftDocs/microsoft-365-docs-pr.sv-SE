@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägga till din domän i Microsoft 365 i Microsoft 365 Admin Center genom att lägga till en DNS-post hos din DNS-värd. Installations guiden hjälper dig genom processen.
-ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592304"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814438"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -96,7 +96,7 @@ ms.locfileid: "46592304"
   
     2. Välj **jag lägger till DNS-posterna själv** om du bara vill bifoga specifika Microsoft 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och gör det senare. **Välj det här alternativet om du vet exakt vad du gör.**
     
-7. Om du väljer att *lägga till DNS-poster själv* väljer du **Nästa** så visas en sida med alla de poster du behöver lägga till på webbplatsen för registratorer för att konfigurera din domän. 
+7. Om du väljer att  *lägga till DNS-poster själv*  väljer du **Nästa** så visas en sida med alla de poster du behöver lägga till på webbplatsen för registratorer för att konfigurera din domän. 
     
   
   
@@ -163,5 +163,3 @@ Om du har en webbplats som du använder med ditt företag kommer den att fortsä
 [Köpa ett domännamn i Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Konfigurera din domän (tjänstspecifika instruktioner)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Få hjälp med domäner](../get-help-with-domains/get-help-with-domains.md)

@@ -1,5 +1,5 @@
 ---
-title: Utför ett internt administrationsövertagande
+title: Utföra en intern administrativ övertag Ande
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -19,62 +19,60 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Läs om hur du verifierar din e-post och domänägarskap för att ta över en ohanterat klientorganisation i Microsoft 365
-ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+description: Lär dig hur du verifierar din e-post och domän ägarskap för att ta över en ohanterad klient organisation i Microsoft 365
+ms.openlocfilehash: 9c1d98616b10737553060bcbad62df9b3b4c0c9a
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022163"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814474"
 ---
-# <a name="perform-an-internal-admin-takeover"></a>Utför ett internt administrationsövertagande
+# <a name="perform-an-internal-admin-takeover"></a>Utföra en intern administrativ övertag Ande
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.md)** om du inte hittar det du letar efter. 
 
-Om du är administratör och vill ta över en ohanterat klient som skapats av en självbetjäningsanvändaranst registrering kan du göra detta med ett internt administrationsövertagande.
+Om du är administratör och vill ta över en ohanterad klient organisation som skapats av en självbetjänings användar registrering kan du göra det med en intern administratörs övertag Ande.
 
 > [!NOTE]
-> En självbetjäningslogga för alla molntjänster som använder Azure AD lägger till användaren i en ohanterad eller "skugga" Azure AD-katalog och skapar en ohanterad klient. En ohantend klient är en katalog utan global administratör. Information om huruvida en klient hanteras eller inte hanteras finns i [Bestämma klienttyp](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> Ett själv underhåll för alla moln tjänster som använder Azure AD lägger till användaren i en ohanterad eller "skugg" Azure AD-katalog och skapar en ohanterad klient organisation. En ohanterad klient organisation är en katalog utan global administratör. För att avgöra om en klient organisation är hanterad eller ohanterad, se kontrol lera [klient organisations typ](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
   
-## <a name="step-1-verify-your-email-address"></a>Steg 1: Verifiera din e-postadress
+## <a name="step-1-verify-your-email-address"></a>Steg 1: bekräfta din e-postadress
 
 > [!NOTE]
-> Om självbetjäning är aktiverat i din klientorganisation kan användare prenumerera på kostnadsfria tjänster, till exempel Power BI, på egen hand. De här stegen förutsätter att en självbetjäningsanvändarprenumeration har skapat den ohanterat klient som du vill ta över som administratör. I det första steget skapar du en användarkontext i den ohanterat klienten med Power BI för att illustrera sökvägen till admin-uppköp.
+> Om själv service är aktiverat i din klient organisation kan användare abonnera på gratis tjänster, till exempel Power BI, på egen hand. De här stegen förutsätter att en självbetjänings användar prenumeration har skapat den ohanterade klient organisation som du vill ta över som administratör. I det första steget skapar du en användar kontext i den ohanterade innehavaren med Power BI för att illustrera administratörs upptagnings vägen.
 
-1. Om du vill registrera dig för Power BI går du till [Power BI-webbplatsen](https://powerbi.com) och väljer **Startfri**  >  **startfri provperiod** (i rutan Dela med Power BI Pro). 
+1. Registrera dig för Power BI genom att gå till [Power BI-webbplatsen](https://powerbi.com) och välja **Starta**gratis  >  **prov period** (i dela med Power BI Pro). 
 
-2. Registrera dig med ett användarkonto som använder domännamnet för din organisation (till exempel `powerbiadmin@contoso.com` ). Om ditt konto redan används loggar du in med ditt nuvarande lösenord.
+2. Registrera dig med ett användar konto som använder organisationens domän namn (till exempel `powerbiadmin@contoso.com` ). Om ditt konto redan används loggar du in med ditt nuvarande lösen ord.
 
-3. Kontrollera din e-post för **verifieringskoden** och ange koden för att validera din e-postadress.
+3. Kontrol lera e-postmeddelandet **och ange koden för** att verifiera din e-postadress.
     
-## <a name="step-2-create-a-new-account"></a>Steg 2: Skapa ett nytt konto
+## <a name="step-2-create-a-new-account"></a>Steg 2: skapa ett nytt konto
 
-1. När du anger verifieringskoden kommer du till en sida där du kan skapa ett nytt konto. 
+1. När du anger verifierings koden kommer du till en sida där du kan skapa ett nytt konto. 
     
-2. Fyll i användarnamn och lösenord med det konto som du vill använda och välj sedan **Start**. 
+2. Fyll i fälten användar namn och lösen ord med det konto som du vill använda och välj sedan **Starta**. 
     
-## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Steg 3: Verifiera domänägarskap och bli administratör
+## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Steg 3: bekräfta domän ägandet och bli administratör
 
-1. Guiden **Bli administratör öppnas.** Om guiden inte startar letar du efter panelen **Admin** och väljer den. 
+1. Då öppnas **Administratörs** guiden. Om guiden inte startar letar du reda på panelen **Administratörer** och väljer den. 
 
 2. Välj **Ja, jag vill vara administratör**.
 
-3. Kontrollera att du äger den domän som du vill ta över genom att lägga till en TXT-post i domänregistraren. Guiden ger dig TXT-posten att lägga till, samt ger en länk till din registrators webbplats och en länk till steg-för-steg-instruktioner.
+3. Verifiera att du äger den domän som du vill ta med genom att lägga till en TXT-post i domän registratorn. Guiden ger dig TXT-posten att lägga till samt en länk till registratorns webbplats samt en länk till steg-för-steg-instruktioner.
     
-4. När du har lagt till TXT-posten på din registratorswebbplats går du tillbaka till guiden och väljer **Okej, jag har lagt till posten**.
+4. När du har lagt till TXT-posten på din registrators webbplats går du tillbaka till guiden och väljer **OK, jag har lagt till posten**.
     
 > [!NOTE]
-> Om du tar över skuggklienten påverkas ingen befintlig information eller tjänster. Om några användare i domänen har registrerat sig för tjänster som kräver en licens blir du ombedd att köpa licenser för dem som en del av att ta över administratörsrollen. Du kan köpa eller ta bort licenser när administratörsinstallationen är klar.
+> Att ta över skugg klient organisationen påverkar inte befintliga uppgifter eller tjänster. Om en användare i domänen har registrerat sig för tjänster som kräver en licens uppmanas du att köpa licenser för dem som en del av att ta över administratörs rollen. Du kan köpa eller ta bort licenser när administratörs konfigurationen är klar.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-YouTube: [3 steg för att göra en IT-administratör Takeover för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 steg för att utföra en IT-administratörs övertag Ande för Power BI och Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
-[Admin övertagande i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Administratörs övertag Ande i Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Få hjälp med domäner](../get-help-with-domains/get-help-with-domains.md)
-
-[Använda självbetjäningsanmäla i din organisation](self-service-sign-up.md)
+[Använda automatisk registrering i din organisation](self-service-sign-up.md)
   
-[Förstå rollen power bi-tjänstadministratör](https://docs.microsoft.com/power-bi/service-admin-role)
+[Förstå administratörs rollen för Power BI-tjänsten](https://docs.microsoft.com/power-bi/service-admin-role)
 

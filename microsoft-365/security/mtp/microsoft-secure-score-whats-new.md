@@ -1,7 +1,7 @@
 ---
-title: Nyheter i Microsoft Secure Score
-description: I artikeln beskrivs vilka nya ändringar som har hänt microsoft secure score i microsoft 365 security center.
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
+title: Nyheter i Microsofts säkra Poäng
+description: Här beskrivs vilka nya ändringar som har hänt för säkert Poäng i Microsoft 365 säkerhets Center.
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säker poäng, säkerhets Center, förbättrings åtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,69 +20,78 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f9f4f40b9cd88cad1676417d467d04367eaa0be
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200170"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815237"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsoft Secure Score
+# <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
-För att göra Microsoft Secure Score till en bättre representant för din säkerhetsposition har vi gjort vissa ändringar. Mer information om planerade ändringar finns [i Vad som kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+Vi har gjort några ändringar för att göra Microsoft säkert poäng en bättre representant för dina säkerhets Posture. Om du vill veta mer om planerade ändringar kan du läsa [vad som kommer i Microsofts säkra Poäng?](microsoft-secure-score-whats-coming.md).
+
+## <a name="july-2020"></a>Juli 2020
+
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Lägga till förbättrings åtgärder för avancerat Azure-skydd
+
+- Sido rörelse banor
+- Oskyddade objektattribut
+- Aktivera säkerhetsfunktioner för Active Directory-förtroenden
+- Ta bort attribut för osäkra SID-historik från enheter
 
 ## <a name="june-2020"></a>Juni 2020
 
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Borttagen förbättringsåtgärd för Microsoft Defender Advanced Threat Protection
+### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Åtgärd för förbättring av Microsoft Defender Avancerat skydd
 
-* Aktivera regler för minskning av attackytan
+* Aktivera regler för reducering av attack ytan
 
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Lade till förbättringsåtgärder för Microsoft Defender Advanced Threat Protection
+### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Förbättrade förbättrings åtgärder för Microsoft Defender Avancerat skydd
 
 * Blockera Adobe Reader från att skapa underordnade processer
-* Använd avancerat skydd mot ransomware
+* Använd avancerat skydd mot utpressnings tro Jan
 * Blockera alla Office-program från att skapa underordnade processer
 * Blockera Office-program från att skapa körbart innehåll
-* Blockera JavaScript eller VBScript från att starta nedladdat körbart innehåll
-* Blockera körning av potentiellt fördunklade skript
-* Blockera körbart innehåll från e-postklient och webbmail
+* Blockera java script eller VBScript från att starta hämtat körbart innehåll
+* Blockera körning av potentiellt Obfuscated-skript
+* Blockera körbart innehåll från e-postklient och WebPost
 * Blockera Office-kommunikationsprogram från att skapa underordnade processer
-* Blockera ej betrodda och osignerade processer som körs från USB
-* Blockera persistens genom WMI-händelseprenumeration
+* Blockera icke-betrodda och osignerade processer som körs från USB
+* Blockera beständighet via WMI-prenumeration
 * Blockera Office-program från att injicera kod i andra processer
-* Blockera körbara filer från att köras om de inte uppfyller ett prevalens-, ålders- eller tillförlitligt listkriterium
-* Blockera processskapanden från PSExec- och WMI-kommandon
-* Blockera stöld av autentiseringsuppgifter från undersystemet Windows lokala säkerhetsmyndighet (lsass.exe)
-* Blockera Win32 API-anrop från Office-makron
+* Blockera körbara filer från att köras såvida de inte uppfyller villkoren för ett förekomst-, ålder eller betrott lista
+* Blockera skapande av processer från PSExec-och WMI-kommandon
+* Blockera autentiseringsuppgifter som stjäls från Windows Local Security Authority Subsystem (lsass.exe)
+* Blockera Win32 API-samtal från Office-makron
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med Identity Secure Score och Graph API
+## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilitet med identitets säkra poäng-och diagram-API
 
-I den senaste versionen av Microsoft Secure Score har en förbättrad poängsättningsmodell släppts. Dessa ändringar möjliggör en mer flexibel och korrekt bild av din säkerhetsposition. Dessa uppdateringar har dock gjort Microsoft Secure Score tillfälligt inkompatibelt med Identity Secure Score och Graph API.
+I den senaste versionen av Microsofts säkra poäng är en förbättrad Poäng modell släppt. Dessa ändringar ger en mer flexibel och korrekt översikt av dina säkerhets Posture. Men de här uppdateringarna har gjort Microsoft säker Poäng tillfälligt inkompatibelt med identitets säkra poäng och diagram-API.
 
-Med tiden antar Identity Secure Score och Graph API den nya bedömningsmodellen. Fram till dess ser kunderna skillnader i poängen som rapporteras av Microsoft Secure Score, Identity Secure Score och Graph API. Vi ber om ursäkt för eventuella besvär detta orsakar, och arbetar för att säkerställa dessa erfarenheter är mer kompatibla i framtiden.
+I tid kommer identitets säkra poäng och Graph API att anta den nya bedömnings modellen. Till dess kommer kunderna att se skillnaderna i resultaten som rapporter ATS av säkra poäng, identitets säkra poäng och diagram-API. Vi ber om ursäkt för eventuella besvär som det här orsakar och arbetar för att säkerställa att dessa upplevelser är mer kompatibla i framtiden.
 
-## <a name="updated-improvement-actions"></a>Uppdaterade förbättringsåtgärder
+## <a name="updated-improvement-actions"></a>Uppdaterade förbättrings åtgärder
 
-- Lade till förbättringarsåtgärder för Azure Active Directory
-- Lade till Azure Advanced Threat Protection improvement-åtgärder
-- Stöd för säkerhetsrekommendationer för Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-    - Alla utgivna säkerhetsrekommendationer från TVM finns nu tillgängliga
+- Åtgärder för Azure Active Directory-förbättring har lagts till
+- Förbättrade åtgärder för förbättring av integritets skydd för Azure
+- Stöd för Microsoft Defender ATP- [&](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) säkerhets rekommendationer
+    - Alla publicerade säkerhets rekommendationer från TVM är nu tillgängliga
 
-## <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktionalitet
+## <a name="updated-interface-and-functionality"></a>Uppdaterat gränssnitt och funktioner
 
-* Alla nya statistik- och trendersvyer för CISO- och leadnivådiskussioner
-* Nya sätt att spåra och jämföra din poäng
-* Bättre spårning och förståelse för poängregressioner
-* Filtrera, tagga, söka och gruppera förbättringsåtgärder
-* Hantera mot dina framtida mål med hjälp av resultatprognoser och planerade åtgärder
+* Alla nya mått och trender för diskussioner på CISO och lead-nivå
+* Nya sätt att spåra och mäta Poäng
+* Bättre spårning och förståelse för resultat regressioner
+* Filtrera, tagga, söka och gruppera dina förbättrings åtgärder
+* Hantera dina framtida mål med Poäng prognoser och planerade åtgärder
 * Och mer!
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Om du har några problem, vänligen meddela oss genom att publicera i [security, privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar samhället och kommer att ge hjälp.
+Om du har några problem kan du meddela oss genom att publicera i [säkerhets-, integritets &](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar communityn och ger hjälp.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Bedöm din säkerhetsposition](microsoft-secure-score-improvement-actions.md)
-- [Spåra din Microsoft Secure Score-historik och uppnå mål](microsoft-secure-score-history-metrics-trends.md)
+- [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
+- [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
