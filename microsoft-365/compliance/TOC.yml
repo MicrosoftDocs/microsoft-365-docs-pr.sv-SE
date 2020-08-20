@@ -6,8 +6,6 @@
       href: compliance-quick-tasks.md
     - name: Nyheter i efterlevnadscentret
       href: whats-new.md
-    - name: Senaste uppdateringar i efterlevnadsinnehåll
-      href: recently-updated-topics-mcc.md
     - name: Microsoft 365 Efterlevnadscenter
       href: microsoft-365-compliance-center.md
     - name: Lösningskatalog för Microsoft 365
@@ -341,13 +339,13 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: Hantering av arkivhandlingar
       items:
-        - name: Hantering av arkivhandlingar
+        - name: Mer om hantering av arkivhandlingar
           href: records-management.md
-        - name: Mer information om arkivhandlingar
-          href: records.md
+        - name: Kom igång med hantering av arkivhandlingar
+          href: get-started-with-records-management.md
         - name: Deklarera arkivhandling
           href: declare-records.md
-        - name: Versionshantering av arkivhandlingar
+        - name: Versionsanvändning av arkivhandlingar
           href: record-versioning.md
 - name: Hantera eDiscovery
   items:

@@ -28,8 +28,10 @@
           href: service-description/device-services.md
         - name: Enhetskonfiguration
           href: service-description/device-policies.md
-        - name: Säkerhet
+        - name: Säkerhets tekniker
           href: service-description/security.md
+        - name: Säkerhetsåtgärder
+          href: service-description/security-operations.md
         - name: Uppdateringar
           href: service-description/updates.md
         - name: Support

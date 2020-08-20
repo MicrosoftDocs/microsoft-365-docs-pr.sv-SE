@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Konfigurera säkerheten och infrastrukturen som gör att dina anställda kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522259"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778351"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Konfigurera en grupp med säkerhetsisolering i en utvecklings-/testmiljö
 
@@ -33,15 +33,15 @@ Använd utvecklings-/testmiljön för att experimentera och finjustera inställn
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fas 1: Bygga ut testmiljön i Microsoft 365 Enterprise
 
-Om du bara vill testa känsliga och strikt konfidentiella grupper på ett enkelt sätt med lägsta möjliga krav, följer du anvisningarna i [Enkel baskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Om du bara vill testa känsliga och strikt konfidentiella grupper på ett enkelt sätt med lägsta möjliga krav, följer du anvisningarna i [Enkel baskonfiguration](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
-Om du vill testa känsliga och strikt konfidentiella grupper i ett simulerat företag, följer du anvisningarna i [Synkronisering av lösenordshash](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
+Om du vill testa känsliga och strikt konfidentiella grupper i ett simulerat företag, följer du anvisningarna i [Synkronisering av lösenordshash](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
 >[!Note]
 >Att testa känsliga och strikt konfidentiella grupper kräver inte någon simulerad företagstestmiljö som innehåller ett simulerat intranät som är kopplat till Internet och katalogsynkronisering för en AD DS-skog (Active Directory Domain Services). Det här är ett alternativ där du kan testa känsliga och strikt konfidentiella grupper, samt experimentera i en miljö som motsvarar en vanlig organisation.
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>Fas 2: Skapa och konfigurera grupper och användare i Azure Active Directory
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>Fas 2: Skapa och konfigurera grupper och användare i Azure Active Directory (Azure AD)
 
 I den här fasen skapar och konfigurerar du Azure Active Directory-grupper och användare för din fiktiva organisation.
   
@@ -77,7 +77,7 @@ Konfigurera automatiskt licensiering så att medlemmar i den nya gruppen **C-Sui
     
 6. Stäng fliken för Azure-portalen i webbläsaren.
     
-Därefter [ansluter du med Azure Active Directory Windows PowerShell för Graph-modulen](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Därefter [ansluter du med Azure Active Directory Windows PowerShell för Graph-modulen](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Fyll i organisationsnamn, plats och lösenord samt kör dessa kommandon från Windows PowerShell-kommandotolken eller en ISE (Integrated Script Environment) för att skapa användarkonton och lägga till dem i gruppen C-Suite:
   
@@ -115,7 +115,7 @@ Använd stegen för att kontrollera att gruppbaserad licensiering fungerar som d
 
 I den här fasen skapar och konfigurerar du en grupp med säkerhetsisolering för medlemmar i chefsledarskap för att samarbeta med företagsstrategi.
 
-Kontrollera att du har aktiverat känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser innan du fortsätter med stegen i [den här artikeln](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Kontrollera att du har aktiverat känslighetsetiketter för att skydda innehåll i Microsoft Teams, Office 365-grupper och SharePoint-webbplatser innan du fortsätter med stegen i [den här artikeln](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Skapa sedan gruppen:
 
@@ -126,9 +126,15 @@ Skapa sedan gruppen:
 5. Under **Sekretess**klickar du på **Privat**.
 6. Skriv **Företagsstrategi**och klicka sedan på **Skapa** > **Stäng**.
 
+Härnäst ska du begränsa skapandet av privata kanaler till ägare av gruppen företags strategi.
+
+1. Klicka på **Fler alternativ**i teamet och klicka sedan på **Hantera team**.
+2. På fliken **Inställningar**, expandera **medlemsbehörigheter**.
+3. Avmarkera kryssrutan **Tillåt att medlemmar skapar privata kanaler**.
+
 Sedan behöver du konfigurera en känslighetsetikett med följande inställningar:
 
-- Etikettnamnet är Företagsstrategi
+- Namnet är företags strategin
 - Kryptering är aktiverat
 - Gruppen Företagsstrategi har samredigeringsbehörighet
 
@@ -199,10 +205,6 @@ Här är den resulterande konfigurationen för gruppen Företagsstrategi.
 
 ![Konfiguration av den isolerade gruppen Företagsstrategi.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-Medlemmarna i gruppen Företagsstrategi kan tilldela känslighetsetiketten Företagsstrategi till filer i gruppen. Här är ett exempel.
-
-![Exempel på en fil där känslighetsetiketten Företagsstrategi används](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
 ## <a name="next-step"></a>Nästa steg
 
-När du är redo för distribuering i produktion kan du läsa mer i [Konfigurera en grupp med säkerhetsisolering](secure-teams-security-isolation.md) detaljerad konfigurationsinformation.
+När du är redo för distribution kan du läsa de här [konfigurations anvisningar](secure-teams-security-isolation.md).
