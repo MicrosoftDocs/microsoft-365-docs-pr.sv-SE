@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Administratörer kan läsa mer om hur du använder portalen för att skicka e-postmeddelanden, misstänkta nätfiske-meddelanden, skräp post och andra potentiellt skadligt meddelande, URL: er och filer till Microsoft för genomsökning i & den här gruppen.'
-ms.openlocfilehash: 4d0737d881334db9cc4aeda43037ab89d7444618
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 1b3715e3ed6f0472d9202573ff0cab92f7240ffa
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577876"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845972"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administratörs sändning för att skicka misstänkt skräp post, Phish, URL: er och filer till Microsoft
 
@@ -52,11 +52,9 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Rapportera misstänkt innehåll till Microsoft
 
-1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
+1. I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions**, kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
-2. Klicka på knappen **ny sändning** på sidan för **skickade inlägg** .
-
-3. Använd **New submission** utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
+2. Använd **New submission** utfällbar text som visas för att skicka meddelandet, URL: en eller bifogad fil enligt beskrivningen i följande avsnitt.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Skicka ett tveksamt e-postmeddelande till Microsoft
 
@@ -114,9 +112,7 @@ Andra sätt att skicka e-postmeddelanden, webb adresser och bilagor till Microso
 
 ## <a name="view-admin-submissions"></a>Visa administratörs inlämningar
 
-1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
-
-2. På sidan för att **Skicka** objekt som visas kontrollerar du att fliken **Administratörs överföringar** är markerad.
+I säkerhets & Compliance Center går du till **Threat Management** -undersändningar \> **Submissions**, kontrollerar att du är på fliken **admin-överföring** och klickar sedan på **ny överföring**.
 
 Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **överförings-ID** (ett GUID-värde som är kopplat till varje överföring) genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
@@ -152,7 +148,7 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 - **Kontroll typ**
 - **Kontroll källa**
 
-  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
+  <sup>\*</sup> Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
 ### <a name="view-admin-url-submissions"></a>Visa URL-överföringar för administratörer
 
@@ -167,7 +163,7 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 - **Sändnings typ**
 - **Status**<sup>\*</sup>
 
-  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
+  <sup>\*</sup> Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
 ### <a name="view-admin-attachment-submissions"></a>Visa underlämning av administrativa bilagor
 
@@ -182,15 +178,15 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 - **Sändnings typ**
 - **Status**<sup>\*</sup>
 
-  <sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
+  <sup>\*</sup> Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
 ## <a name="view-user-submissions-to-microsoft"></a>Visa användar inlämningar till Microsoft
 
 Om du har distribuerat [tillägget för rapport meddelanden](enable-the-report-message-add-in.md), eller om personer använder den [inbyggda rapporteringen i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), kan du se vilka användare som rapporterar på fliken **användar överföringar** .
 
-1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
+1. I säkerhets & Compliance Center går du till **Threat Management** - \> **inlämningar**.
 
-2. På sidan för **skickade inlägg** klickar du på fliken **användar överföringar** .
+2. Välj fliken **användar överföringar** och klicka sedan på **ny överföring**.
 
 Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 
@@ -201,7 +197,7 @@ Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för
 - **Avsändarens IP**<sup>\*</sup>
 - **Sändnings typ**
 
-<sup>\*</sup>Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
+<sup>\*</sup> Om du klickar på det här värdet visas detaljerad information i utfällbar skick.
 
 Högst upp på sidan kan du ange ett start datum, ett slutdatum och (som standard) som du kan filtrera efter **avsändare** genom att ange ett värde i rutan och klicka på ![ knappen uppdatera ](../../media/scc-quarantine-refresh.png) . Du kan ange flera värden avgränsade med kommatecken.
 
@@ -221,9 +217,9 @@ Exportera resultatet genom att klicka på **Exportera** överst på sidan och v�
 
 Om du har [konfigurerat en egen post låda](user-submission.md) för att få användardefinierade meddelanden kan du Visa och även skicka meddelanden som har levererats till rapporterings post lådan.
 
-1. Gå till **Threat Management** på fliken säkerhet & efterlevnad \> **Review** \> **Admin submission messages**.
+1. I säkerhets & Compliance Center går du till **Threat Management** - \> **inlämningar**.
 
-2. På sidan för **skickade inlägg** klickar du på fliken **anpassad post låda** .
+2. Välj fliken **egen post låda** .
 
 Du kan klicka på knappen **kolumn alternativ** nära längst ned på sidan för att lägga till eller ta bort kolumner i vyn:
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa, skapa, ändra och ta bort utgående skräp post principer i Exchange Online Protection (EOP).
-ms.openlocfilehash: 22a809370787df1798f2f777c852d1004565d2a6
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 530c1af9b7802be6073f19331ce7f6a20bdb2668
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798288"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845984"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräp post filtrering i EOP
 
@@ -37,39 +37,24 @@ Administratörer kan visa, redigera och konfigurera (men inte ta bort) standard 
 
 Du kan konfigurera regler för utgående skräp post i säkerhets & efterföljandekrav eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med post lådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
-## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Principer för utgående skräp post i säkerhets & överensstämmelse Center kontra PowerShell
-
 De grundläggande delarna i en regel för utgående e-post i EOP är:
 
 - **Filter policy för utgående e-post**: anger åtgärderna för utgående spam-filtrering verdicts och meddelande alternativen.
-
 - **Filter regeln för utgående e-post**: anger de prioritets-och mottagar filter (som principen gäller för) för en utgående filter policy för skräp post.
 
 Skillnaden mellan dessa två element är inte uppenbar när du hanterar utgående spam-principer i säkerhets & Compliance Center:
 
-- När du skapar en princip för utgående skräp post i säkerhets & Compliance Center skapar du verkligen en utgående filter regel för skräp post och den associerade principen för skräp post filter samtidigt med samma namn för båda.
+- När du skapar en princip skapar du verkligen en utgående filter regel för skräp post och den associerade principen för skräp post filter samtidigt med samma namn för båda.
+- När du ändrar en princip kan inställningar som är relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagar filter ändra regeln för utgående skräp post filter. Alla andra inställningar ändrar den associerade filtret för skräp post filter.
+- När du tar bort en princip tas regeln för utgående skräp post bort och den associerade filtrerings principen för utgående e-post raderas.
 
-- När du ändrar en utgående skräp post policy i säkerhets & Compliance Center, inställningar som är relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagar filter ändrar regeln för utgående skräp post filter. Alla andra inställningar ändrar den associerade filtret för skräp post filter.
-
-- När du tar bort en utgående skräp post policy från säkerhets & uppfyller villkoren för filtrering av skräp post och den associerade principen för skräp post filter tas bort.
-
-I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan utgående filter principer för skräp post och filter regler för utgående e-post synlig. Du hanterar principer för utgående skräp post filter genom att använda cmdletarna ** \* -HostedOutboundSpamFilterPolicy** och du hanterar utgående filter regler för skräp post genom att använda cmdlet ** \* -HostedOutboundSpamFilterRule** .
-
-- I PowerShell skapar du principen för utgående skräp post filter först och sedan skapar du regeln för utgående skräp post filter som identifierar den princip som regeln gäller för.
-
-- I PowerShell ändrar du inställningarna för filtrering av skräp post filter och regeln för utgående skräp post filter separat.
-
-- När du tar bort en regel för utgående skräp post från PowerShell tas den motsvarande filtret för skräp post filter inte bort automatiskt och vice versa.
-
-### <a name="default-outbound-spam-policy"></a>Standard princip för utgående skräp post
+I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policyn och regeln separat. Mer information finns i [använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera avsnittet för principer för skräp post](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) .
 
 Varje organisation har inbyggd princip för skräp post som heter standard och har följande egenskaper:
 
-- Filtret för utgående skräp post som heter default tillämpas på alla användare i organisationen, även om det inte finns någon utgående filter regel (mottagar filter) som är kopplad till principen.
-
-- Principen med namnet Standard har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (principen tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen som heter Standard.
-
-- Principen som heter Standard är standardprincipen (egenskapen **IsDefault** har värdet `True`), och du kan inte ta bort standardprincipen.
+- Principen tillämpas på alla användare i organisationen, även om det inte finns någon utgående filter regel (mottagar filter) som är kopplad till principen.
+- Principen har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (policyn tillämpas alltid sist). Alla anpassade principer som du skapar har alltid högre prioritet än principen som heter Standard.
+- Politik är standardpolicyn (egenskapen **IsDefault** har värdet `True`) och du kan inte ta bort standardpolicyn.
 
 Om du vill öka effektiviteten för utgående skräp post filtrering kan du skapa anpassade principer för utgående e-post med striktare inställningar som tillämpas på specifika användare eller grupper av användare.
 
@@ -170,18 +155,24 @@ Om du skapar en anpassad princip för utgående e-post i säkerhets & Compliance
      - **Hindra användaren från att skicka e-post**: e-postaviseringar skickas, användaren läggs till i gruppen **[ <https://sip.protection.office.com/restrictedusers> begränsade användare]** i säkerhets & Compliance Center och användaren kan inte skicka e-post förrän de tas bort från portalen för **begränsade användare** av en administratör. När en administratör tar bort användaren från listan kommer användaren inte att begränsas till den dagen. Anvisningar finns i [ta bort en användare från portalen med begränsade användare när du skickar skräp post](removing-user-from-restricted-users-portal-after-spam.md).
 
      - **Ingen åtgärd, endast meddelande**: e-postaviseringar skickas.
-6. Skriver Expandera avsnittet **Automatic Forwarding** för att konfigurera kontroller för hur automatisk vidarebefordran av användare styrs.
+
+6. Skriver Expandera avsnittet **Automatic Forwarding** för att styra automatisk vidarebefordran av e-post till externa avsändare. Mer information om automatisk vidarebefordran finns i [Konfigurera e-postvidarekoppling](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
 
    > [!NOTE]
-   > De här inställningarna gäller endast för molnbaserade post lådor.
+   >
+   > - Före den september 2020 är de här inställningarna tillgängliga men inte tvingande.
+   >
+   > - De här inställningarna gäller endast för molnbaserade post lådor.
+   >
+   > - Automatisk vidarebefordran till interna mottagare påverkas inte av den här inställningen.
 
-   - **Automatisk vidarebefordran**
-  
-      Välj ett av alternativen för att styra hur automatisk vidarebefordran hanteras.
+   De tillgängliga värdena är:
 
-      - **Automatisk**: standardinställning som gör att systemet kan kontrol lera automatisk vidarekoppling med automatisk vidarebefordran som standard.
-      - **On**: extern vidarebefordran är aktive rad inom principen utan begränsning.
-      - **Av**: extern vidarekoppling är inaktiverat och kommer att blockeras
+   - **Automatisk Systemstyrd**: tillåter utgående skräp post filtrering för automatisk överföring av externa e-postmeddelanden. Det här är standardvärdet.
+
+   - **Den**: automatisk överföring av externa e-post är inte inaktive rad av principen.
+
+   - **Av**den här principen är inaktive rad för automatisk vidarebefordring av externa e-postmeddelanden.
 
 7. Kunna Expandera avsnittet **används** för att identifiera de interna avsändare som principen gäller för.
 
@@ -245,7 +236,7 @@ Det går inte att inaktivera standard principen för utgående e-post.
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>Ange prioritet för anpassade principer för utgående skräp post
 
-Som standard ges principer för utgående skräp post en prioritet som baseras på den ordning de skapades (nyare policys är lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två principer kan ha samma prioritet och princip bearbetning stoppas efter den första principen tillämpas.
+Som standard ges principer för utgående skräp post en prioritet som baseras på den ordning de skapades (nyare policys är lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
 Anpassade principer för utgående skräp post visas i den ordning de behandlas (den första principen har **prioritet** svärdet 0). Standardvärdet för utgående skräp post **filtrerings princip** har värdet **lägst**och kan inte ändras.
 
@@ -277,12 +268,19 @@ Du kan inte ta bort standardprincipen.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Använda Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera principer för utgående skräp post
 
+Som du redan har beskrivit innehåller en utgående skräp post princip och en regel för utgående skräp post filter.
+
+I Exchange Online PowerShell eller fristående EOP PowerShell är skillnaden mellan utgående filter principer för skräp post och filter regler för utgående e-post synlig. Du hanterar principer för utgående skräp post filter genom att använda cmdletarna ** \* -HostedOutboundSpamFilterPolicy** och du hanterar utgående filter regler för skräp post genom att använda cmdlet ** \* -HostedOutboundSpamFilterRule** .
+
+- I PowerShell skapar du principen för utgående skräp post filter först och sedan skapar du regeln för utgående skräp post filter som identifierar den princip som regeln gäller för.
+- I PowerShell ändrar du inställningarna för filtrering av skräp post filter och regeln för utgående skräp post filter separat.
+- När du tar bort en regel för utgående skräp post från PowerShell tas den motsvarande filtret för skräp post filter inte bort automatiskt och vice versa.
+
 ### <a name="use-powershell-to-create-outbound-spam-policies"></a>Använda PowerShell för att skapa regler för utgående skräp post
 
 Det är en process i två steg:
 
 1. Skapa filtret för utgående skräp post.
-
 2. Skapa filter regeln för utgående e-post som anger vilken regel för utgående skräp post som regeln gäller för.
 
  **Anmärkningar**:
@@ -292,7 +290,6 @@ Det är en process i två steg:
 - Du kan konfigurera följande inställningar på nya utgående filter principer för skräp post i PowerShell som inte är tillgängliga i säkerhets & Compliance Center förrän efter att du har skapat principen:
 
   - Skapa den nya principen som inaktive rad (_aktive rad_ `$false` på **New-HostedOutboundSpamFilterRule-** cmdleten).
-
   - Ange prioriteten för principen när den skapas (_prioritet_ _\<Number\>_ ) på den **nya HostedOutboundSpamFilterRule-** cmdleten.
 
 - En ny regel för utgående skräp post som du skapar i PowerShell visas inte i säkerhets & Compliance Center förrän du tilldelar principen till en skräp post filter.

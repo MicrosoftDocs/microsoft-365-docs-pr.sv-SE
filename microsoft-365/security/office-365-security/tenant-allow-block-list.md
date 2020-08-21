@@ -1,5 +1,5 @@
 ---
-title: Hantera tillåtna och blockerade webbadresser i listan Tillåt/blockera klient
+title: Hantera tillåtna och blockerade webb adresser i listan Tillåt/blockera i klient organisationen
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,285 +7,285 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur du konfigurerar URL-poster i listan Tillåt/blockera klient i säkerhets- & Compliance Center.
-ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: Administratörer kan läsa mer om hur du konfigurerar URL-poster i listan Tillåt/blockera i klient organisationen för säkerhets &.
+ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552556"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845948"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera url:er i listan Tillåt/blockera klient
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Hantera URL: er i listan Tillåt / blockera hyresgäster
 
 > [!NOTE]
-> Funktionerna som beskrivs i det här avsnittet är i förhandsversion, kan komma att ändras och är inte tillgängliga i alla organisationer.
+> De funktioner som beskrivs i det här avsnittet är i förhands gransknings syfte och kan ändras och är inte tillgängliga i alla organisationer.
 
-I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kanske du inte håller med om EOP-filtreringsdomen. Ett bra meddelande kan till exempel markeras som dåligt (falskt positivt) eller så kan ett felaktigt meddelande tillåtas (ett falskt negativt).
+I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kanske du inte kan komma att behöva filtrera EOP Verdict. Ett bra meddelande kan till exempel vara markerat som dåligt (ett falskt positivt) eller så tillåts ett ogiltigt meddelande genom (ett falskt negativt).
 
-Listan Tillåt/blockera innehavare i Security & Compliance Center ger dig ett sätt att manuellt åsidosätta Microsoft 365-filtreringsutlåtandena. Listan Tillåt/blockera klienter används under e-postflödet och vid tidpunkten för användarens klick. Du kan ange webbadresser som ska tillåtas eller blockeras i listan Tillåt/blockera klient.
+Med listan Tillåt/begränsa klient organisation i säkerhets & Compliance Center kan du manuellt åsidosätta Microsoft 365 filter-verdicts. Listan över tillåtna/blockerade innehavare används under e-postflöde och när användaren klickar på den. Du kan ange URL-adresser att tillåta eller blockera i listan Tillåt/blockera för klient organisation.
 
-I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blockera klient i Security & Compliance Center eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+I det här avsnittet beskrivs hur du konfigurerar poster i listan Tillåt/blockera i säkerhets & för kontroll av klient organisation eller i PowerShell-organisationen (Exchange Online PowerShell för Microsoft 365-organisationer med post lådor i Exchange Online; fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Tillåt/blockera lista för klienter** använder du <https://protection.office.com/tenantAllowBlockList> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan **Tillåt/blockera lista för klient organisation** , Använd <https://protection.office.com/tenantAllowBlockList> .
 
-- De tillgängliga URL-värdena beskrivs i [URL-syntaxen för avsnittet Tillåt/blockera klient](#url-syntax-for-the-tenant-allowblock-list) senare i det här avsnittet.
+- Tillgängliga URL-värden beskrivs i [URL-syntaxen för avsnittet Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i det här avsnittet.
 
-- Med listan Tillåt/blockera klient kan högst 500 poster för webbadresser.
+- Listan Tillåt/blockera för klient organisationer tillåter högst 500 poster för URL: er.
 
 - En post ska vara aktiv inom 15 minuter.
 
-- Blockposter har företräde framför tillåta transaktioner.
+- Block poster har högre prioritet än Tillåt-poster.
 
-- Som standard upphör posterna i listan Tillåt/blockera klient att gälla efter 30 dagar. Du kan ange ett datum eller ange att de aldrig ska upphöra att gälla.
+- Poster i listan Tillåt/blockera för klient organisationer upphör som standard efter 30 dagar. Du kan ange ett datum eller ange att de aldrig ska upphöra att gälla.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
 
-  - Om du vill lägga till och ta bort värden från listan Tillåt/blockera klient måste du vara medlem i någon av följande rollgrupper:
+  - Om du vill lägga till och ta bort värden från listan Tillåt/blockera för klient organisationer måste du vara medlem i någon av följande roll grupper:
 
     - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
     - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - För skrivskyddad åtkomst till listan Tillåt/blockera klient måste du vara medlem i någon av följande rollgrupper:
+  - Om du vill ha skrivskyddad åtkomst till listan Tillåt/blockera för klient organisationer måste du vara medlem i någon av följande roll grupper:
 
     - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
     - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Använda security & Compliance Center för att skapa URL-poster i listan Tillåt/blockera klient
+## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & efterlevnad för att skapa URL-poster i listan Tillåt/blockera för klient organisation
 
-Mer information om syntaxen för URL-poster finns i [URL-syntaxen för avsnittet Tillåt/blockera klient](#url-syntax-for-the-tenant-allowblock-list) senare i det här avsnittet.
+Mer information om syntaxen för URL-poster finns i [URL-syntaxen för listan Tillåt/blockera lista för klient organisation](#url-syntax-for-the-tenant-allowblock-list) längre ned i det här avsnittet.
 
-1. Gå till Tillåt/blockera listor för **&-efterlevnad** i säkerhets- & \> **Policy** \> **efterlevnadscenter**.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
 
-2. Kontrollera att fliken **Webbadresser** är markerad på sidan **Tillåt/blockera lista** för klienter och klicka sedan på **Lägg till**
+2. På sidan **Tillåt/blockera lista för klient organisation** kontrollerar du att fliken **URL: er** är markerad och klickar sedan på **Lägg till** .
 
-3. Konfigurera följande inställningar i utfällbara **url:er** som visas:
+3. I **Lägg till** utfällbara URL-adresser som visas konfigurerar du följande inställningar:
 
-   - **Lägg till webbadresser med jokertecken:** Ange en URL per rad, upp till högst 20.
+   - **Lägga till URL-adresser med jokertecken**: Ange en URL per rad, upp till maximalt 20.
 
-   - **Blockera/tillåt**: Välj om du vill **tillåta** eller **blockera** de angivna webbadresserna.
+   - **Blockera/Tillåt**: Välj om du vill **tillåta** eller **blockera** angivna URL-adresser.
 
-   - **Upphör aldrig att gälla**: Gör något av följande:
+   - **Aldrig giltig**: gör något av följande:
 
-     - Kontrollera att inställningen är inaktiverad ( ![ Stäng av ) och använd rutan Upphör att gälla för att ange ](../../media/scc-toggle-off.png) **utgångsdatum** för transaktionerna.
+     - Kontrol lera att inställningen är avstängt ![ ](../../media/scc-toggle-off.png) och ange förfallo datumet för posterna genom att använda rutan **upphör att gälla** .
 
      eller
 
-     - Flytta växlingsknappen åt höger för att konfigurera posterna så att de aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Flytta växlings knappen till höger för att konfigurera att posterna aldrig ska förfalla: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
 
-   - **Valfri anmärkning:** Ange beskrivande text för posterna.
+   - **Valfri anmärkning**: Ange en beskrivande text för posterna.
 
 4. När du är klar klickar du på **Lägg till**.
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Använda säkerhets- & compliance center för att visa poster i listan Tillåt/blockera klient
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & Compliance Center för att visa poster i listan Tillåt/blockera för klient organisation
 
-1. Gå till Tillåt/blockera listor för **&-efterlevnad** i säkerhets- & \> **Policy** \> **efterlevnadscenter**.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
 
-2. Välj fliken **Webbadresser.**
+2. Välj fliken **URL: er** .
 
-Klicka på följande kolumnrubriker för att sortera i stigande eller fallande ordning:
+Klicka på följande kolumn rubriker för att sortera i stigande eller fallande ordning:
 
 - **Värde**
-- **Åtgärd**: **Blockera** eller **tillåt**.
-- **Senast uppdaterat datum**
-- **Utgångsdatum**
-- **Observera**
+- **Åtgärd**: **blockera** eller **Tillåt**.
+- **Senast uppdaterad**
+- **Utgångs datum**
+- **Fotnot**
 
-Klicka på **Gruppera** om du vill gruppera transaktionerna efter **Åtgärd** (**Block** eller **Tillåt**) eller **Ingen**.
+Klicka på **gruppera** för att gruppera posterna **efter åtgärd** (**blockera** eller **Tillåt**) eller **ingen**.
 
-Klicka på **Sök,** ange hela eller delar av ett värde och tryck sedan på RETUR för att hitta ett visst värde. När du är klar klickar du på **Rensa** ![ sökikonen Rensa sökning ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
+Klicka på **Sök**, ange hela eller delar av ett värde och tryck sedan på RETUR för att hitta ett visst värde. När du är klar klickar du på **Rensa sökning** ![ rensa Sök ikonen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
 
-Klicka på **Filter**. Konfigurera någon av följande inställningar i **utfällbara filter** som visas:
+Klicka på **filter**. I det **filter** som visas konfigurerar du följande inställningar:
 
-- **Åtgärd**: Välj **Tillåt,** **Blockera** eller båda.
+- **Åtgärd**: Välj **Tillåt**, **blockera** eller båda.
 
-- **Upphör aldrig att gälla:** Välj av ![ (Växla ](../../media/scc-toggle-off.png) av) eller på ( ![ Växla på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
+- **Aldrig förfaller**: Välj av ( ![ Växla av ](../../media/scc-toggle-off.png) ) eller på ( ![ växling på ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
 
-- **Senast uppdaterad**: Välj ett startdatum (**Från**), ett slutdatum (**Till**) eller båda.
+- **Uppdaterades senast**: Välj ett start datum (**från**), ett slutdatum (**till**) eller båda.
 
-- **Utgångsdatum**: Välj ett startdatum (**Från**), ett slutdatum (**Till**) eller båda.
+- **Utgångs datum**: Välj ett start datum (**från**), ett slutdatum (**till**) eller båda.
 
 När du är klar klickar du på **Använd**.
 
-Om du vill ta bort befintliga filter klickar du på **Filtrera**och klickar på **Rensa filter**i det utfällbara **filter som** visas.
+Om du vill ta bort befintliga filter klickar du på **filter**och sedan på **Rensa filter**i det **filter** som visas.
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Använda säkerhets- & compliance center för att ändra poster i listan Tillåt/blockera klient
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Använd säkerhets & Compliance Center för att ändra poster i listan Tillåt/blockera för klient organisation
 
-Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och återskapa den.
+Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och skapa den igen.
 
-1. Gå till Tillåt/blockera listor för **&-efterlevnad** i säkerhets- & \> **Policy** \> **efterlevnadscenter**.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
 
-2. Välj fliken **Webbadresser.**
+2. Välj fliken **URL: er** .
 
-3. Markera den post som du vill ändra och klicka sedan på **Ikonen Redigera** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) redigera.
+3. Markera den post som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) .
 
-4. Konfigurera följande inställningar i utfällbara utfällbara inställningar:
+4. I den utfällbara filen som visas konfigurerar du följande inställningar:
 
-   - **Blockera/tillåt**: Välj **Tillåt** eller **Blockera**.
+   - **Blockera/Tillåt**: Välj **Tillåt** eller **blockera**.
 
-   - **Upphör aldrig att gälla**: Gör något av följande:
+   - **Aldrig giltig**: gör något av följande:
 
-     - Kontrollera att inställningen är inaktiverad ( ![ Stäng av ) och använd rutan Upphör att gälla ](../../media/scc-toggle-off.png) **för** att ange förfallodatumet för transaktionen.
+     - Kontrol lera att inställningen är avstängt ![ ](../../media/scc-toggle-off.png) och ange förfallo datumet för posten i rutan **upphör att gälla** .
 
      eller
 
-     - Flytta växlingsknappen åt höger för att konfigurera posten så att den aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Flytta växlings knappen till höger för att konfigurera posten så att den aldrig förfaller: ![Växlingsknapp aktiverad](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
 
-   - **Valfri anmärkning:** Ange beskrivande text för posten.
+   - **Valfri anmärkning**: Ange en beskrivande text för posten.
 
 5. Klicka på **Spara** när du är klar.
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Använd Security & Compliance Center för att ta bort poster från listan Tillåt/blockera klient
+## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Använd säkerhets & Compliance Center för att ta bort poster från listan Tillåt/blockera för klient organisation
 
-1. Gå till Tillåt/blockera listor för **&-efterlevnad** i säkerhets- & \> **Policy** \> **efterlevnadscenter**.
+1. Gå till fliken **Threat Management** \> **policy** för \> **Tillåt/blockera listor**i säkerhets & efterlevnad.
 
-2. Välj fliken **Webbadresser.**
+2. Välj fliken **URL: er** .
 
-3. Markera den post som du vill ta bort och klicka sedan på **Ikonen Ta bort borttagning** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) .
+3. Markera den post som du vill ta bort och klicka sedan på **ta bort** ![ ikon för borttagning ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) .
 
-4. Klicka på **Ta bort**i varningsdialogrutan som visas.
+4. I varnings dialog rutan som visas klickar du på **ta bort**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Använd Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera listan Tillåt/blockera klient
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Använd Exchange Online PowerShell eller fristående EOP PowerShell för att konfigurera listan Tillåt/blockera klient organisation
 
-### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att lägga till poster i listan Tillåt/blockera klient
+### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>Använd PowerShell för att lägga till poster i listan Tillåt/blockera för klient organisation
 
-Om du vill lägga till poster i listan Tillåt/blockera klienter använder du följande syntax:
+Använd följande syntax för att lägga till poster i listan Tillåt/blockera i klient organisationen:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-I det här exemplet läggs en URL-blockpost för contoso.com och alla underdomäner (till exempel contoso.com, www.contoso.com och xyz.abc.contoso.com). Eftersom vi inte använde parametrarna ExpirationDate eller NoExpiration upphör posten att gälla efter 30 dagar.
+Det här exemplet lägger till en URL-adressblock för contoso.com och alla under domäner (till exempel contoso.com, www.contoso.com och xyz.abc.contoso.com). Eftersom vi inte använde parametrarna förfallo eller noexpires upphör posten efter 30 dagar.
 
 ```powershell
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ny-KlientEns 111111.For](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)detailed syntax and parameter information, see New-TenantAllowBlockListItems .
+Detaljerad information om syntax och parametrar finns i [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att visa poster i listan Tillåt/blockera klient
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att visa poster i listan Tillåt/blockera i klient organisationen
 
-Om du vill visa poster i listan Tillåt/blockera klienter använder du följande syntax:
+Om du vill visa poster i listan Tillåt/begränsa klient organisation använder du följande syntax:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
-I det här exemplet returneras alla blockerade webbadresser.
+I det här exemplet returneras alla blockerade URL: er.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Hämta-klientEnAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
+Detaljerad information om syntax och parametrar finns i [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att ändra poster i listan Tillåt/blockera klient
+### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att ändra poster i listan Tillåt/blockera för klient organisation
 
-Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och återskapa den.
+Du kan inte ändra själva URL-värdet. I stället måste du ta bort posten och skapa den igen.
 
-Om du vill ändra poster i listan Tillåt/blockera klienter använder du följande syntax:
+Om du vill ändra poster i listan Tillåt/blockera för klient organisation använder du följande syntax:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-I det här exemplet ändras förfallodatumet för den angivna posten.
+I det här exemplet ändras utgångs datumet för den angivna posten.
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ange-klientEnAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
+Detaljerad information om syntax och parametrar finns i [set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>Använda PowerShell för att ta bort poster från listan Tillåt/blockera klient
+### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>Använd PowerShell för att ta bort poster från listan Tillåt/blockera för klient organisation
 
-Om du vill ta bort poster från listan Tillåt/blockera klienter använder du följande syntax:
+Om du vill ta bort poster från listan Tillåt/blockera klient organisation använder du följande syntax:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
 ```
 
-I det här exemplet tas den angivna URL-posten bort från listan Tillåt/blockera klient.
+I det här exemplet tas den angivna URL-posten bort från listan Tillåt/blockera för klient organisation.
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ta bort-klientEnAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
+Detaljerad information om syntax och parametrar finns i [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-## <a name="url-syntax-for-the-tenant-allowblock-list"></a>URL-syntax för listan Tillåt/blockera klient
+## <a name="url-syntax-for-the-tenant-allowblock-list"></a>URL-syntax för listan Tillåt/blockera för klient organisation
 
-- IP4v- och IPv6-adresser är tillåtna, men TCP/UDP-portar är det inte.
+- IP4v-och IPv6-adresser är tillåtna, men TCP/UDP-portarna är inte det.
 
-- Filnamnstillägg är inte tillåtna (till exempel test.pdf).
+- Fil namns tillägg tillåts inte (till exempel test.pdf).
 
-- Unicode stöds inte, men Punycode är.
+- Unicode stöds inte, men punycode är.
 
-- Värdnamn är tillåtna om alla följande satser är sanna:
+- Värddator namn är tillåtna om följande påståenden stämmer:
 
-  - Värdnamnet innehåller en punkt.
+  - Värd namnet innehåller en punkt.
   - Det finns minst ett tecken till vänster om perioden.
   - Det finns minst två tecken till höger om perioden.
 
-  Till exempel `t.co` är tillåtet, `.com` eller är inte `contoso.` tillåtna.
+  Till exempel `t.co` tillåts `.com` eller `contoso.` är inte tillåtet.
 
-- Undervägar är inte underförstådda.
+- Under Sök vägar är inte underförstådda.
 
   Innehåller till exempel `contoso.com` inte `contoso.com/a` .
 
-- Jokertecken (*) tillåts i följande scenarier:
+- Jokertecken (*) tillåts i följande fall:
 
-  - Ett vänster jokertecken måste följas av en punkt för att ange en underdomän.
+  - Ett vänster jokertecken måste följas av en punkt för att ange en under domän.
 
-    Till exempel `*.contoso.com` är tillåtet, `*contoso.com` är inte tillåtet.
+    Till exempel `*.contoso.com` tillåts; `*contoso.com` är inte tillåtet.
 
-  - Ett höger jokertecken måste följa ett snedstreck (/) för att ange en bana.
+  - Ett höger jokertecken måste följa ett snedstreck (/) för att ange en sökväg.
 
-    Till exempel `contoso.com/*` är tillåtet, `contoso.com*` eller är inte `contoso.com/ab*` tillåtna.
+    Till exempel `contoso.com/*` tillåts `contoso.com*` eller `contoso.com/ab*` är inte tillåtet.
 
-  - Alla underbanor är inte underförstådda av ett höger jokertecken.
+  - Alla under Sök vägar underförstås inte med ett höger jokertecken.
 
     Innehåller till exempel `contoso.com/*` inte `contoso.com/a` .
 
-  - `*.com*`är ogiltigt (inte en lösningsbar domän och det högra jokertecknet följer inte ett snedstreck).
+  - `*.com*` är ogiltig (inte en matchad domän och höger jokertecken följer inte ett snedstreck).
 
-  - Jokertecken är inte tillåtna i IP-adresser.
+  - Jokertecken tillåts inte i IP-adresser.
 
-- Tilde -tecknet (~) är tillgängligt i följande scenarier:
+- Tilde-tecknet (~) är tillgängligt i följande fall:
 
-  - En vänster tilde innebär en domän och alla underdomäner.
+  - Ett Vänsterställt tildetecken innebär en domän och alla under domäner.
 
-    Till exempel `~contoso.com` innehåller `contoso.com` och `*.contoso.com` .
+    Till exempel `~contoso.com` inkluderar `contoso.com` och `*.contoso.com` .
 
-- URL-poster som innehåller protokoll (till exempel `http://` `https://` , eller ) `ftp://` misslyckas, eftersom URL-poster gäller för alla protokoll.
+- URL-poster som innehåller protokoll (till exempel `http://` , `https://` eller `ftp://` ) fungerar inte eftersom URL-poster gäller för alla protokoll.
 
-- Ett användarnamn eller lösenord stöds inte eller krävs inte.
+- Det finns inget användar namn eller lösen ord.
 
-- Citattecken (' eller ") är ogiltiga tecken.
+- Citat tecken ("or") är ogiltiga tecken.
 
-- En webbadress bör innehålla alla omdirigeringar där det är möjligt.
+- En URL ska inkludera alla omdirigeringar om möjligt.
 
 ### <a name="url-entry-scenarios"></a>Scenarier för URL-post
 
-Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
+Giltiga URL-värden och deras resultat beskrivs i följande avsnitt.
 
-#### <a name="scenario-no-wildcards"></a>Scenario: Inga jokertecken
+#### <a name="scenario-no-wildcards"></a>Scenario: inga jokertecken
 
-**Inträde**:`contoso.com`
+**Post**: `contoso.com`
 
 - **Tillåt matchning**: contoso.com
 
-- **Tillåt inte matchad:**
+- **Tillåt ej matchad**:
 
   - abc-contoso.com
   - contoso.com/a
@@ -293,9 +293,9 @@ Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
   - test.com/contoso.com
   - test.com/q=contoso.com
   - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - www. contoso. com/q = a@contoso. com
   
-- **Blockera matchning:**
+- **Blockera träff**:
 
   - contoso.com
   - contoso.com/a
@@ -303,66 +303,66 @@ Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
   - test.com/contoso.com
   - test.com/q=contoso.com
   - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - www. contoso. com/q = a@contoso. com
 
-- **Blocket matchas inte:** abc-contoso.com
+- **Blockering ej matchad**: ABC-contoso.com
 
-#### <a name="scenario-left-wildcard-subdomain"></a>Scenario: Vänster jokertecken (underdomän)
+#### <a name="scenario-left-wildcard-subdomain"></a>Scenario: vänster jokertecken (under domän)
 
-**Inträde**:`*.contoso.com`
+**Post**: `*.contoso.com`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Tillåt inte matchade** och **Blockera matchas inte:**
+- **Tillåt ej matchat** och **Blockera ej matchade**:
 
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
   
-#### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenario: Höger jokertecken högst upp i banan
+#### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenario: höger mönster överst i sökvägen
 
-**Inträde**:`contoso.com/a/*`
+**Post**: `contoso.com/a/*`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
-  - contoso.com/a/?q=joe@t.com
+  - contoso. com/a/? q = joe@t. com
 
-- **Tillåt inte matchade** och **Blockera matchas inte:**
+- **Tillåt ej matchat** och **Blockera ej matchade**:
 
   - contoso.com
   - contoso.com/a
   - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - www. contoso. com/q = a@contoso. com
   
-#### <a name="scenario-left-tilde"></a>Scenario: Vänster tilde
+#### <a name="scenario-left-tilde"></a>Scenario: vänster Tilde
 
-**Inträde**:`~contoso.com`
+**Post**: `~contoso.com`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Tillåt inte matchade** och **Blockera matchas inte:**
+- **Tillåt ej matchat** och **Blockera ej matchade**:
 
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
 
-#### <a name="scenario-right-wildcard-suffix"></a>Scenario: Höger jokertecken suffix
+#### <a name="scenario-right-wildcard-suffix"></a>Scenario: höger jokertecken
 
-**Inträde**:`contoso.com/*`
+**Post**: `contoso.com/*`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
-  - contoso.com/?q=whatever@fabrikam.com
+  - contoso. com/? q = whatever@fabrikam. com
   - contoso.com/a
   - contoso.com/a/b/c
   - contoso.com/ab
@@ -370,13 +370,13 @@ Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **Tillåt inte matchade** och **Blockera inte matchas:** contoso.com
+- **Tillåt ej matchat** och **blockera icke matchade**: contoso.com
 
-#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scenario: Vänster jokertecken underdomän och höger jokertecken suffix
+#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scenario: vänster-domän och höger jokertecken
 
-**Inträde**:`*.contoso.com/*`
+**Post**: `*.contoso.com/*`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -384,13 +384,13 @@ Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Tillåt inte matchade** och **Blockera inte matchas:** contoso.com/b
+- **Tillåt ej matchat** och **blockera icke matchade**: contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>Scenario: Vänster och höger tilde
+#### <a name="scenario-left-and-right-tilde"></a>Scenario: vänster och höger Tilde
 
-**Inträde**:`~contoso.com~`
+**Post**: `~contoso.com~`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
   - contoso.com
   - contoso.com/a
@@ -398,27 +398,27 @@ Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **Tillåt inte matchade** och **Blockera matchas inte:**
+- **Tillåt ej matchat** och **Blockera ej matchade**:
 
   - 123contoso.com
   - contoso.org
 
 #### <a name="scenario-ip-address"></a>Scenario: IP-adress
 
-**Inträde**:`1.2.3.4`
+**Post**: `1.2.3.4`
 
-- **Tillåt matchning** och **blockmatchning:** 1.2.3.4
+- **Tillåt matchning** och **blockering**: 1.2.3.4
 
-- **Tillåt inte matchade** och **Blockera matchas inte:**
+- **Tillåt ej matchat** och **Blockera ej matchade**:
 
   - 1.2.3.4/a
   - 11.2.3.4/a
 
 #### <a name="ip-address-with-right-wildcard"></a>IP-adress med höger jokertecken
 
-**Inträde**:`1.2.3.4/*`
+**Post**: `1.2.3.4/*`
 
-- **Tillåt matchning** och **blockmatchning:**
+- **Tillåt matcha** och **blockera matchning**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -427,14 +427,14 @@ Giltiga URL-poster och deras resultat beskrivs i följande avsnitt.
 
 Följande poster är ogiltiga:
 
-- **Domänvärden som saknas eller är ogiltiga:**
+- **Domän värden saknas eller är ogiltiga**:
 
-  - Contoso
-  - \*.contoso.\*
-  - \*.com (på marknaden)
-  - \*Pdf
+  - contoso
+  - \*contoso.\*
+  - \*. com
+  - \*. pdf
 
-- **Jokertecken på text eller utan mellanrumstecken:**
+- **Jokertecken på text eller utan blank steg**:
 
   - \*contoso.com
   - contoso.com\*
@@ -443,22 +443,22 @@ Följande poster är ogiltiga:
   - contoso.com/a\*
   - contoso.com/ab\*
 
-- **IP-adresser med portar:**
+- **IP-adresser med portar**:
 
   - contoso.com:443
   - abc.contoso.com:25
 
-- **Icke-beskrivande jokertecken:**
+- **Icke beskrivande jokertecken**:
 
   - \*
   - \*.\*
 
-- **Jokertecken i mitten:**
+- **Jokertecken**:
 
   - conto \* so.com
-  - conto ~so.com
+  - conto ~ så. com
 
-- **Dubbla jokertecken**
+- **Dubbel jokertecken**
 
   - contoso.com/\*\*
   - contoso.com/\*/\*
