@@ -6,157 +6,157 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur du använder standard- och strikta principinställningar för skyddsfunktionerna i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+description: Administratörer kan lära sig att använda standard-och strikta princip inställningar i skydds funktionerna i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (ATP)
+ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430405"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825263"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Förinställda säkerhetsprinciper i EOP och Office 365 ATP
+# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Förvalda säkerhets principer i EOP och Office 365 ATP
 
-Förinställda säkerhetsprinciper ger en centraliserad plats för att tillämpa alla rekommenderade principer för skräppost, skadlig kod och nätfiske på användare samtidigt. Principinställningarna kan inte konfigureras. Istället är de som av oss och bygger på våra observationer och erfarenheter i datacenter för en balans mellan att hålla skadligt innehåll borta från användare utan att störa deras arbete.
+Förvalda säkerhets principer är en central plats för att tillämpa alla rekommenderade spam-, malware-och phishing-principer för användare samtidigt. Princip inställningarna kan inte konfigureras. I stället ställs de in av oss och baseras på våra observationer och erfarenheter i data centret för en avvägning mellan att hålla skadligt innehåll från användare utan att störa deras arbete.
 
-I resten av det här avsnittet beskrivs förinställda säkerhetsprinciper och hur du konfigurerar dem.
+Resten av det här avsnittet beskriver förvalda säkerhets principer och hur du konfigurerar dem.
 
-## <a name="what-preset-security-policies-are-made-of"></a>Vilka förinställda säkerhetsprinciper som görs av
+## <a name="what-preset-security-policies-are-made-of"></a>Vilka säkerhets principer som är gjorda för
 
-Förinställda säkerhetsprinciper består av följande element:
+Förvalda säkerhets principer består av följande element:
 
-- Profiler
-- Politik
-- Principinställningar
+- Principer
+- Principerna
+- Princip inställningar
 
-Dessutom är prioritetsordningen viktig om flera förinställda säkerhetsprinciper och andra principer gäller för samma person.
+Prioritetsordning är dessutom viktigt om flera förvalda säkerhets principer och andra principer gäller för samma person.
 
-### <a name="profiles-in-preset-security-policies"></a>Profiler i förinställda säkerhetsprinciper
+### <a name="profiles-in-preset-security-policies"></a>Profiler i förvalda säkerhets principer
 
-En profil bestämmer skyddsnivån. Följande profiler är tillgängliga:
+En profil bestämmer skydds nivån. Följande profiler är tillgängliga:
 
-- **Standardskydd**: En baslinjeskyddsprofil som är lämplig för de flesta användare.
-- **Strikt skydd**: En mer aggressiv skyddsprofil för utvalda användare (högt värdemål eller prioriterade användare).
+- **Standard skydd**: en grundläggande skydds profil som passar de flesta användare.
+- **Strikt skydd**: en mer aggressiv skydds profil för utvalda användare (högsta värde mål eller prioriterade användare).
 
-Du använder regler med villkor och undantag som avgör vilka profilerna är eller inte tillämpas på.
+Du använder regler med villkor och undantag som avgör vem profilen är eller inte är kopplad till.
 
 Du kan bara använda ett villkor eller undantag en gång, men du kan ange flera värden för villkoret eller undantaget. Flera värden för samma villkor eller undantag använder ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_). Olika villkor och undantag använder OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_).
 
 De tillgängliga villkoren och undantagen är:
 
-- **Mottagarna är**: Postlådor, e-postanvändare eller e-postkontakter i organisationen.
-- **Mottagarna är medlemmar**i : Grupper i organisationen.
-- **Mottagarnatrdomäner är**: Godkända domäner som är konfigurerade i Microsoft 365.
+- **Mottagarna är**: post lådor, e-postanvändare eller e-postkontakter i din organisation.
+- **Mottagarna är medlemmar i**: grupper i din organisation.
+- **Mottagar domäner är**: godkända domäner som är konfigurerade i Microsoft 365.
 
-### <a name="policies-in-preset-security-policies"></a>Principer i förinställda säkerhetsprinciper
+### <a name="policies-in-preset-security-policies"></a>Principer i förvalda säkerhets principer
 
-Förinställda säkerhetsprinciper använder motsvarande principer från de olika skyddsfunktionerna i EOP och Office 365 ATP. Dessa principer skapas _när_ du har tilldelat **standardskydd** eller förinställda säkerhetsprinciper **för strikt skydd** till användare. Du kan inte ändra dessa principer.
+Förvalda säkerhets principer Använd motsvarande principer från de olika skydds funktionerna i EOP och Office 365 ATP. Dessa principer skapas _efter_ att du har tilldelat **standard** säkerhets principer för förvalda skydd eller **strikta skydd** för användare. Du kan inte ändra dessa principer.
 
-- **EOP-principer (Exchange Online Protection):** Detta inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
+- **Principer för Exchange Online Protection (EOP)**: det inkluderar Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer utan Exchange Online-postlådor:
   
-  - [Anti-spam-principer](configure-your-spam-filter-policies.md) med namnet **Standard förinställd säkerhetsprincip** och **strikt förinställd säkerhetsprincip**.
-  - [Principer mot skadlig kod](configure-anti-malware-policies.md) med namnet **Standardförinställd säkerhetsprincip** och **strikt förinställd säkerhetsprincip**.
-  - [EOP:s principer för phishing-phishing](set-up-anti-phishing-policies.md#spoof-settings) med namnet **Standardförinställd säkerhetsprincip** och **strikt förinställd säkerhetsprincip** (falska inställningar).
+  - [Principer för skräp post](configure-your-spam-filter-policies.md) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
+  - [Principer mot skadlig program vara](configure-anti-malware-policies.md) med namnet **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
+  - [EOP anti-nätfiske-principer](set-up-anti-phishing-policies.md#spoof-settings) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets princip** (Spoof-inställningar).
 
-- **Office 365 Advanced Threat Protection (ATP)-principer**: Detta inkluderar organisationer med Microsoft 365 E5- eller Office 365 ATP-tilläggsprenumerationer:
+- **Office 365 principer för avancerat skydd (ATP)**: Detta inkluderar organisationer med Microsoft 365 E5 eller Office 365 ATP-tilläggs abonnemang:
 
-  - ATP-principer för nätfiske med namnet **Standard förinställd säkerhetsprincip** och **strikt förinställd säkerhetsprincip**, som omfattar:
+  - ATP anti-nätfiske-principer som heter **Standard säkerhets princip för Förinställdhet** och **strikt förinställd säkerhets princip**, som omfattar:
 
-    - Samma [falska inställningar](set-up-anti-phishing-policies.md#spoof-settings) som är tillgängliga i EOP:s policyer för nätfiske.
+    - Samma [falska inställningar](set-up-anti-phishing-policies.md#spoof-settings) som är tillgängliga i EOP anti-phishing-principer.
     - [Inställningar för personifiering](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Avancerade tröskelvärden för nätfiske](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Avancerade nät fiske trösklar](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [Principer för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) med namnet **Standardförinställd säkerhetsprincip** och **strikt förinställd säkerhetsprincip**.
+  - [Principer för säkra länkar](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) som heter **Standard säkerhets princip** och **strikt förinställd säkerhets policy**.
 
-  - [Principer för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users) med namnet **Standardförinställd säkerhetsprincip** och **strikt förinställd säkerhetsprincip**.
+  - [Principer för säkra bifogade filer](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users) med **standard** säkerhets princip och **strikt förinställd säkerhets policy**.
 
-Observera att du kan använda EOP-skydd för andra användare än ATP-skydd.
+Observera att du kan använda EOP skydd för olika användare än ATP-skydd.
 
-### <a name="policy-settings-in-preset-security-policies"></a>Principinställningar i förinställda säkerhetsprinciper
+### <a name="policy-settings-in-preset-security-policies"></a>Princip inställningar i förvalda säkerhets principer
 
-Du kan inte ändra principinställningarna i skyddsprofilerna. Principinställningsvärdena **Standard** och **Strikt** beskrivs i [Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet](recommended-settings-for-eop-and-office365-atp.md).
+Du kan inte ändra princip inställningarna i skydds profilerna. Värdena för **standard** -och **strict** -princip beskrivs i [rekommenderade inställningar för EOP och Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
 
-### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Prioritetsordning för förinställda säkerhetsprinciper och andra principer
+### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Prioritetsordning för förvalda säkerhets principer och andra principer
 
 När flera principer tillämpas på en användare tillämpas följande ordning från högsta prioritet till lägsta prioritet:
 
-1. **Strikt säkerhetsprincip** för skydd
-2. Förinställd säkerhetsprincip för **standardskydd**
-3. Anpassade säkerhetsprinciper
-4. Standardsäkerhetsprinciper
+1. **Strikt skydd** för förvalda säkerhets principer
+2. **Standard** säkerhets princip för förinställd skydd
+3. Anpassade säkerhets principer
+4. Standard säkerhets principer
 
-Med andra ord åsidosätter inställningarna i principen **Strikt skydd** inställningarna för **standardskyddsprincipen,** som åsidosätter inställningarna från en anpassad princip, som åsidosätter inställningarna från standardprincipen.
+Med andra ord åsidosätter inställningarna för principen för **strikt skydd** standardinställningarna för **skydds** princip, som åsidosätter inställningarna från en anpassad princip som åsidosätter inställningarna från standard principen.
 
-## <a name="assign-preset-security-policies-to-users"></a>Tilldela förinställda säkerhetsprinciper till användare
+## <a name="assign-preset-security-policies-to-users"></a>Tilldela användare förvalda säkerhets principer
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå direkt till sidan **Förinställda säkerhetsprinciper** använder du <https://protection.office.com/presetSecurityPolicies> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till sidan för **förvalda säkerhets principer** , Använd <https://protection.office.com/presetSecurityPolicies> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
 
-  - Om du vill konfigurera förinställda säkerhetsprinciper måste du vara medlem i någon av följande rollgrupper:
+  - Om du vill konfigurera förvalda säkerhets principer måste du vara medlem i någon av följande roll grupper:
 
     - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
     - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - För skrivskyddad åtkomst till förinställda säkerhetsprinciper måste du vara medlem i någon av följande rollgrupper:
+  - Om du vill ha skrivskyddad åtkomst till förvalda säkerhets principer måste du vara medlem i någon av följande roll grupper:
 
     - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
     - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använda Säkerhets- & Compliance Center för att tilldela förinställda säkerhetsprinciper till användare
+### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Använd säkerhets & Compliance Center för att tilldela förvalda säkerhets principer till användare
 
-1. Gå till **Threat management** \> **Policy** \> **säkerhetsprinciper för principförinställda säkerhetsprinciper i säkerhetsprinciper**för & säkerhetsprinciper för & efterlevnad.
+1. Gå till säkerhets principer för principer för **hot Management** policy i säkerhets & efterlevnad \> **Policy** \> **Preset security policies**.
 
-2. Klicka på **Redigera**under **Standardskydd** eller **Strikt skydd**.
+2. Under **standard skydd** eller **strikt skydd**klickar du på **Redigera**.
 
-3. Guiden **Använd standardskydd** eller **Använd strikt skydd** startar. När det gäller **EOP-skydd för** steg, identifiera de interna mottagare som [EOP-skydd](#policies-in-preset-security-policies) gäller för
+3. Guiden **Använd standard skydd** eller **Använd strikt skydd** startas. På **EOP skydd gäller för** steg hur du identifierar de interna mottagarna som [EOP skydd](#policies-in-preset-security-policies) gäller för:
 
-   1. Klicka på **Lägg till ett villkor**. I listrutan som visas väljer du ett villkor under **Tillämpad om:**
+   1. Klicka på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **används om**:
 
-      - **Mottagarna är**
+      - **Mottagarna**
       - **Mottagarna är medlemmar i**
-      - **De mottagande domänerna är**
+      - **Mottagar domänerna**
 
-      Du kan bara använda ett villkor en gång, men du kan ange flera värden för villkoret. Flera värden med samma villkor använder ELLER-logik (till exempel _\<recipient1\>_ _\<recipient2\>_ eller ).
+      Du kan bara använda ett villkor en gång, men du kan ange flera värden för villkoret. Flera värden med samma villkor används eller logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_ ).
 
-   2. Villkoret som du valde visas i ett skuggat avsnitt. Klicka i rutan **Någon av dessa** i det avsnittet. Om du väntar ett ögonblick visas en lista så att du kan välja ett värde. Du kan också börja skriva ett värde för att filtrera listan och välja ett värde. Upprepa det här steget så många gånger det behövs. Om du vill ta bort ett enskilt värde klickar du på **Ikonen Ta bort** ta bort på ![ ](../../media/scc-remove-icon.png) värdet. Om du vill ta bort hela villkoret klickar du på **Ikonen Ta bort** ta bort på ![ ](../../media/scc-remove-icon.png) villkoret.
+   2. Det villkor som du valde visas i ett skuggat avsnitt. Klicka i **någon av** rutorna i det avsnittet. Om du väntar ett tag visas en lista så att du kan välja ett värde. Eller så kan du börja skriva ett värde för att filtrera listan och välja ett värde. Upprepa det här steget så många gånger det behövs. Om du vill ta bort ett enskilt värde klickar du på **ta bort** - ![ ikonen ](../../media/scc-remove-icon.png) för värdet. Om du vill ta bort hela villkoret klickar du på **ta bort** ![ ikonen Ta bort ](../../media/scc-remove-icon.png) .
 
-   3. Om du vill lägga till ett annat villkor klickar du på **Lägg till ett villkor** och väljer från de återstående villkoren. Olika villkor använder OCH logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
+   3. Om du vill lägga till ytterligare villkor klickar du på **Lägg till ett villkor** och väljer bland de återstående villkoren. Olika villkor används och logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_ ).
 
-      Upprepa föregående steg för att lägga till värden i villkoret och upprepa det här steget så många gånger som det behövs eller tills villkoren har tagit.
+      Upprepa föregående steg för att lägga till värden i villkoret och upprepa det här steget så många gånger som behövs eller tills du får slut på villkoren.
 
-   4. Om du vill lägga till ett undantag klickar du på **Lägg till ett villkor**. I listrutan som visas väljer du ett villkor under **Förutom när**. Inställningarna och beteendet är likadana som villkoren.
-
-   När du är klar klickar du på **Nästa**.
-
-4. Om din organisation har Office 365 ATP tas du till **ATP-skydden för** att gå för att identifiera de interna mottagare som [Office 365 ATP-skydd](#policies-in-preset-security-policies) gäller för.
-
-   Inställningarna och beteendet är precis som **eop-skydden gäller för** steg.
+   4. Om du vill lägga till ett undantag klickar du på **Lägg till ett villkor**. I den nedrullningsbara List rutan som visas väljer du ett villkor under **utom när**. Inställningarna och beteendet är likadana som villkoren.
 
    När du är klar klickar du på **Nästa**.
 
-5. Kontrollera dina val i steget **Bekräfta** och klicka sedan på **Bekräfta**.
+4. Om din organisation har Office 365 ATP kan du **använda säkerhets inställningarna för ATP** för att identifiera de interna mottagare som [Office 365 ATP-skydden](#policies-in-preset-security-policies) gäller för.
 
-### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Använd Säkerhets- & Compliance Center för att ändra tilldelningarna av förinställda säkerhetsprinciper
+   Inställningarna och beteendet är exakt likadant som **EOP skydd gäller för** steg.
 
-Stegen för att ändra tilldelningen av **säkerhetsprincipen Standardskydd** eller **Strikt skydd** är desamma som när du först [tilldelade användarna de förinställda säkerhetsprinciperna](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
+   När du är klar klickar du på **Nästa**.
 
-Om du vill inaktivera säkerhetsprinciperna **för standardskydd** eller **strikt skydd** samtidigt som de befintliga villkoren och undantagen bevaras, drar du växlingsknappen till **Inaktiverad**. Om du vill aktivera principerna drar du växlingsknappen till **Aktiverad**.
+5. I **bekräftelse** steget verifierar du dina val och klickar sedan på **Bekräfta**.
+
+### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Använd säkerhets & Compliance Center för att ändra tilldelningarna för förvalda säkerhets principer
+
+Åtgärderna för att ändra tilldelningen av standard säkerhets principer för **skydd** eller **strikta skydd** är desamma som när du ursprungligen [tilldelade de förvalda säkerhets principerna till användarna](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
+
+Om du vill inaktivera **standard skydds** -eller **strikta** säkerhets principer och samtidigt behålla de befintliga villkoren och undantagen drar du reglaget till **inaktive rad**. Aktivera principer genom att dra reglaget till **aktiverat**.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
-Om du vill kontrollera att du har tilldelat en användare **standardskydds-** eller strikt skyddssäkerhetsprincip använder du en skyddsinställning där standardvärdet skiljer sig från **standardskyddsinställningen,** vilket är annorlunda än inställningen **Strikt skydd.** **Strict protection**
+Om du vill kontrol lera att du har tilldelat **standard** säkerhets principen för skydd eller **strikt skydd** till en användare använder du en skydds inställning där standardvärdet skiljer sig från standardinställningen för **standard skydd** , som är den **strikta** inställningen för begränsning.
 
-Till exempel, för e-post som upptäcks som skräppost (inte hög förtroende spam) kontrollera att meddelandet levereras till skräppostmappen för **standardskydd** användare, och karantän för **strikt skydd** användare.
+Till exempel, för e-postmeddelanden som identifieras som skräp post (inte med hög exakthet) kontrollerar du att meddelandet levereras till mappen skräp post för **standard skydds** användare och karantän för **strikta skydds** användare.
 
-Eller, för [massmeddelande](bulk-complaint-level-values.md), kontrollera att BCL-värdet 6 eller högre levererar meddelandet till mappen Skräppost för **standardskyddsanvändare** och BCL-värdet 4 eller högre i karantän meddelandet för **användare av strikt skydd.**
+Om du har ett [Mass utskick av e-post](bulk-complaint-level-values.md)kan du kontrol lera att BCL värde 6 eller högre skickar meddelandet till mappen skräp post för **standard skydds** användare, och BCL värde 4 eller högre gör att meddelandet för **strikta skydds** användare.

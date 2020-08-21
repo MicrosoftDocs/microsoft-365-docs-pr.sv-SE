@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 02/14/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Administratörer kan läsa mer om vilka behörigheter som är tillgängliga i Microsoft 365 Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6cf0913b4aebad5199b1da4a1794542c9c2d5362
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: be26607ce261dd109ce6c61cfa3f8e63f43fecb4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653623"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826843"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Behörigheter i Säkerhets- och efterlevnadscentret
 
@@ -60,7 +60,7 @@ Om du vill se hur du beviljar åtkomst till säkerhets & Compliance Center kan d
 |**Innehålls översikt för innehålls Utforskaren**|Visa innehållsfilerna i innehålls Utforskaren.|Innehålls översikt för data klassificering|
 |**Listvy för innehålls Utforskaren**|Visa alla objekt i innehålls Utforskaren endast i list format.|Visnings program för data klassificering|
 |**Data utredning**|Medlemmar kan utföra sökningar på post lådor, SharePoint-webbplatser och OneDrive-konton.|Kommunikation <br/><br/> Sökning efter efterlevnad <br/><br/> Custodian <br/><br/> Hantering av data undersökning <br/><br/> Ören<br/><br/> Automatisk <br/><br/> RMS-kryptering <br/><br/> Översikt<br/><br/> Sök och ta bort|
-|**eDiscovery Manager**|Medlemmar kan utföra sökningar och plats undantag på post lådor, SharePoint Online-webbplatser och OneDrive för företag-platser. Medlemmar kan också skapa och hantera eDiscovery-ärenden, lägga till och ta bort medlemmar i ett ärende, skapa och redigera innehålls sökningar associerade med ett ärende och komma åt ärende data i Avancerad eDiscovery. <br/><br/> En eDiscovery-administratör är medlem i roll gruppen eDiscovery Manager som har tilldelats ytterligare behörigheter. Utöver de uppgifter som en eDiscovery Manager kan utföra kan en eDiscovery-administratör: <br/>* Visa alla eDiscovery-ärenden i organisationen. <br/>* Hantera eventuella eDiscovery-fall när de lägger till sig själva som en medlem i ärendet. <br/><br/> Den primära skillnaden mellan en eDiscovery Manager och en eDiscovery-administratör är att en eDiscovery-administratör kan komma åt alla ärenden som visas på sidan **eDiscovery-ärenden** i säkerhets & Compliance Center. En eDiscovery Manager kan bara komma åt de ärenden som de skapar eller fall de är medlemmar i. Mer information om hur du gör en användare till en eDiscovery-administratör finns i [tilldela eDiscovery-behörigheter i säkerhets & Compliance Center](../../compliance/assign-ediscovery-permissions.md).|Ärende hantering <br/><br/> Kommunikation <br/><br/> Sökning efter efterlevnad <br/><br/> Custodian <br/><br/> Ören <br/><br/> Låta <br/><br/> Automatisk <br/><br/> RMS-kryptering <br/><br/> Översikt|
+|**eDiscovery Manager**|Medlemmar kan utföra sökningar och plats undantag på post lådor, SharePoint Online-webbplatser och OneDrive för företag-platser. Medlemmar kan också skapa och hantera eDiscovery-ärenden, lägga till och ta bort medlemmar i ett ärende, skapa och redigera innehålls sökningar associerade med ett ärende och komma åt ärende data i Avancerad eDiscovery. <br/><br/> En eDiscovery-administratör är medlem i roll gruppen eDiscovery Manager som har tilldelats ytterligare behörigheter. Utöver de uppgifter som en eDiscovery Manager kan utföra kan en eDiscovery-administratör:<ul><li>Visa alla eDiscovery-ärenden i organisationen.</li><li>Hantera ett eDiscovery-fall när de lägger till sig själva som en medlem i ärendet.</li></ul> <br/> Den primära skillnaden mellan en eDiscovery Manager och en eDiscovery-administratör är att en eDiscovery-administratör kan komma åt alla ärenden som visas på sidan **eDiscovery-ärenden** i säkerhets & Compliance Center. En eDiscovery Manager kan bara komma åt de ärenden som de skapar eller fall de är medlemmar i. Mer information om hur du gör en användare till en eDiscovery-administratör finns i [tilldela eDiscovery-behörigheter i säkerhets & Compliance Center](../../compliance/assign-ediscovery-permissions.md).|Ärende hantering <br/><br/> Kommunikation <br/><br/> Sökning efter efterlevnad <br/><br/> Custodian <br/><br/> Ören <br/><br/> Låta <br/><br/> Automatisk <br/><br/> RMS-kryptering <br/><br/> Översikt|
 |**Global läsare**|Medlemmar har skrivskyddad åtkomst till rapporter, aviseringar och kan visa all konfiguration och alla inställningar.<br/><br/> Den primära skillnaden mellan global läsare och säkerhets läsare är att en global läsare kan komma åt **konfiguration och inställningar**.|Säkerhets läsare <br/><br/> Etikett läsare med känslighet <br/><br/> Vyn tjänste granskning <br/><br/> Gransknings loggar endast för visning <br/><br/> Skrivskyddad DLP Compliance Management <br/><br/> Hantera endast enheter <br/><br/> Skrivskyddad hantering i IB <br/><br/> Visa endast hantera aviseringar <br/><br/> Endast visning-mottagare <br/><br/> Skrivskyddad post hantering <br/><br/> Skrivskyddad hantering av bevarande|
 |**Insider riskhantering**|Använd den här roll gruppen för att hantera hanteringen av Insider-risker för din organisation i en grupp. Genom att lägga till alla användar konton för administratörer, analytiker och granskare kan du konfigurera Insider riskhantering i en och samma grupp. Den här roll gruppen innehåller alla behörighets roller för hantering av Insider-risker. Det är det enklaste sättet att snabbt komma igång med Insider riskhantering och är en lämplig plats för organisationer som inte behöver särskilda behörigheter definierade för olika grupper av användare.|Ärende hantering <br/><br/> Hanterings administratör för Insider-riskhantering <br/><br/> Hanterings analys för Insider-riskhantering <br/><br/> Insider riskhantering <br/><br/> Tillfälligt bidrag för Insider riskhantering|
 |**Insider riskhantering administratörer**|Använd den här roll gruppen för att konfigurera Insider riskhantering och senare att dela Insider-risk administratörer till en definierad grupp. Användare i den här roll gruppen kan skapa, läsa, uppdatera och ta bort Insider riskhantering-principer, globala inställningar och roll grupp tilldelningar.|Ärende hantering <br/><br/> Hanterings administratör för Insider-riskhantering|

@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: overview
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,23 +17,21 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Lär dig hur du använder en angrepps Simulator för att köra simulerade nätfiske och lösen ords attacker i ditt Microsoft 365 E5-eller ATP-abonnemang 2-organisation.
-ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+description: Administratörer kan lära sig att använda en angrepps Simulator för att köra simulerade nätfiske och lösen ords attacker i sina Microsoft 365 E5-eller ATP-abonnemang 2-organisationer.
+ms.openlocfilehash: 017376d8002811398fe3ce2d94f7c207cd718a78
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653227"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825839"
 ---
 # <a name="attack-simulator-in-atp"></a>Attack Simulator i ATP
 
-**Sammanfattning** Om du är global administratör eller en säkerhets administratör och din organisation har Office 365 Avancerat skydds abonnemang 2, som innehåller [hot undersökningar och svars funktioner](office-365-ti.md), kan du använda en angrepps Simulator för att köra realistiska angrepp i din organisation. Det här kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
+Om din organisation har Office 365-abonnemang 2 för avancerat skydd (ATP), som innehåller [hot undersökningar och svars funktioner](office-365-ti.md), kan du använda angrepps simulatorn i säkerhets & för att köra realistiska angrepp i din organisation. Dessa simulerade attacker kan hjälpa dig att identifiera och hitta sårbara användare innan en verklig attack påverkar din botten linje. Läs den här artikeln om du vill veta mer.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Angrepps simulatorn **Threat management** finns i \> **angrepps**hanterings tjänsten.
-
-  ![Threat Management – angrepps Simulator](../../media/ThreatMgmt-AttackSimulator.png)
+- Gå till <https://protection.office.com/> för att öppna Säkerhets- och efterlevnadscenter. Angrepps simulatorn **Threat management** finns i \> **angrepps**hanterings tjänsten. Gå direkt till angrepps simulatorn, öppen <https://protection.office.com/attacksimulator> .
 
 - Mer information om tillgängligheten för angrepps enheter för olika Microsoft 365-prenumerationer finns i [Beskrivning av Office 365 Advanced Threat Protection Service](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
@@ -41,23 +39,19 @@ ms.locfileid: "46653227"
 
 - Ditt konto måste konfigureras för multifaktorautentisering (MFA) för att skapa och hantera kampanjer i angrepps Simulator. Anvisningar finns i [Konfigurera multifaktorautentisering](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-För att angrepp ska kunna startas korrekt bör du kontrol lera att det konto du använder för att köra simulerade attacker använder multifaktorautentisering. Dessutom måste du vara global administratör eller säkerhets administratör. (Mer information om roller och behörigheter finns i [behörigheter i säkerhets & efterlevnad](permissions-in-the-security-and-compliance-center.md).)
-
 - Nät fiske kampanjer samlar in och bearbetar händelser i 30 dagar. Historiska kampanj data kommer att vara tillgängliga i upp till 90 dagar efter att du har lanserat kampanjen.
 
 - Det finns inga motsvarande PowerShell-cmdlets för angrepps Simulator.
 
 ## <a name="spear-phishing-campaigns"></a>Spear nät fiske kampanjer
 
-*Nätfiske* är en generisk term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. *Spear nätfiske* är en riktad nätfiske-attack som använder mycket prioriterat och anpassat innehåll som är specifikt skräddarsydda för de riktade mottagarna (vanligt vis efter Reconnaissance på mottagarna).
-
-- Du är global administratör eller säkerhets administratör
+*Nätfiske* är en generisk term för e-postattacker som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. *Spear nätfiske* är ett riktat nätfiske-angrepp som använder prioriterat och anpassat innehåll som är specifikt skräddarsydda för de riktade mottagarna (vanligt vis efter Reconnaissance på mottagarna).
 
 I angrepps simulatorer är två olika typer av Spear nät fiske kampanjer tillgängliga:
 
-- [Multifaktorautentisering/villkorlig åtkomst](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) är aktive rad för åtminstone det globala administratörs kontot och säkerhets administratören som använder en angrepps Simulator. (Idealed Multi-Factor User/villkorlig åtkomst är aktiverat för alla användare i organisationen.)
+- **Spear nätfiske (uppgifter om skörd)**: ett försök görs att få mottagarna att klicka på en URL i meddelandet. Om de klickar på länken uppmanas de att ange sina autentiseringsuppgifter. Om de gör det tas de till någon av följande platser:
 
-  - En standard sida som förklarar detta var ett test och ger tips för att känna igen nät fiske meddelanden.
+  - En standard sida som förklarar att detta var ett test och ger tips för att känna igen nät fiske meddelanden.
 
     ![Vad användarna ser om de klickar på nätfiske-länken och anger deras autentiseringsuppgifter](../../media/attack-simulator-phishing-result.png)
 
@@ -131,9 +125,9 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    HTML-formateringen kan vara så enkel eller komplex som du vill. Du kan infoga bilder och text för att förbättra believability för meddelandet i mottagarens e-postklient.
 
-   - `${username}`infogar mottagarens namn.
+   - `${username}` infogar mottagarens namn.
 
-   - `${loginserverurl}`infogar URL-adressen för ett **nätfiske-inloggningsnamn** från föregående steg.
+   - `${loginserverurl}` infogar URL-adressen för ett **nätfiske-inloggningsnamn** från föregående steg.
 
    När du är klar klickar du på **Nästa**.
 
@@ -212,9 +206,9 @@ Om du ska använda någon av de inbyggda mallarna eller skapa e-postmeddelandet 
 
    HTML-formateringen kan vara så enkel eller komplex som du vill. Du kan infoga bilder och text för att förbättra believability för meddelandet i mottagarens e-postklient.
 
-   - `${username}`infogar mottagarens namn.
+   - `${username}` infogar mottagarens namn.
 
-   - `${loginserverurl}`infogar URL-värdet för **nätfiske-inloggningsnamn** .
+   - `${loginserverurl}` infogar URL-värdet för **nätfiske-inloggningsnamn** .
 
    För **Spear phishing-kampanjer (bifogade filer)** bör du ta bort länken från meddelande texten (annars kommer meddelandet att innehålla både en länk **och** en bifogad fil, och länkar klickar spåras inte till en bifogad fil).
 

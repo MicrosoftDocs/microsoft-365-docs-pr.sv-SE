@@ -1,5 +1,5 @@
 ---
-title: Exempel på skript för EOP-inställningar – flera klienter
+title: Exempel skript för EOP-inställningar-flera innehavare
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,35 +7,35 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du använder PowerShell för att tillämpa konfigurationsinställningar för dina klienter i Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: I den här artikeln lär du dig hur du använder PowerShell för att tillämpa konfigurations inställningar för klient organisationer i Microsoft Exchange Online Protection (EOP).
+ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209145"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827463"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exempelskript för att tillämpa EOP-inställningar i flera klientorganisationer
 
-Med följande exempelskript kan Microsoft Exchange Online Protection (EOP) administratörer som hanterar flera klienter (företag) använda Windows PowerShell för att tillämpa konfigurationsinställningar för sina klienter.
+Med följande exempel skript kan EOP-administratörer (Microsoft Exchange Online Protection) som hanterar flera klient organisationer (företag) använda Windows PowerShell för att tillämpa konfigurations inställningar på sina klient organisationer.
 
-## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Så här kör du ett skript eller en cmdlet på flera klienter
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Köra ett skript eller en cmdlet på flera klient organisationer
 
-1. Skapa en CSV-fil med hjälp av ett program som Excel (till exempel c:\scripts\inputfile.csv):
+1. Skapa en CSV-fil med hjälp av ett program som Excel, till exempel c:\scripts\inputfile.csv):
 
-2. I CSV-filen anger du två kolumnnamn: Användarnamn och Cmdlet.
+2. Ange två kolumn namn i CSV-filen: UserName och cmdlet.
 
-3. För varje rad i CSV-filen lägger du till klientens administratörsnamn i kolumnen Användarnamn och den cmdlet som ska köras för klienten i kolumnen Cmdlet. Använd till exempel admin@contoso.com och Get-AcceptedDomain.
+3. För varje rad i CSV-filen lägger du till innehavarens administratörs namn i kolumnen UserName och cmdleten som ska köras för den klient organisationen i kolumnen cmdlet. Använd till exempel admin@contoso.com och get-AcceptedDomain.
 
-4. Kopiera skriptet [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) till Anteckningar och spara sedan filen på en plats som är lätt att hitta (till exempel c:\scripts).
+4. Kopiera [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) -skript till anteckningar och spara sedan filen på en plats som är lätt att hitta (till exempel c:\Scripts).
 
-5. Kör skriptet med hjälp av följande syntax:
+5. Kör skriptet genom att använda följande syntax:
 
    ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
@@ -44,10 +44,10 @@ Med följande exempelskript kan Microsoft Exchange Online Protection (EOP) admin
    Här är ett exempel:
 
    ```powershell
-   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. Varje klient loggas in på och skriptet körs.
+6. Varje klient organisation kommer att vara inloggad på och skriptet körs.
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 

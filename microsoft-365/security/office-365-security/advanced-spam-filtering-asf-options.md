@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de avancerade inställningarna för skräp post filter (ASF) som är tillgängliga i principer för skräp post överföring i Exchange Online Protection (EOP).
-ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653347"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827343"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräp post filter (ASF) i EOP
 
@@ -34,6 +34,7 @@ I Microsoft 365-organisationer med post lådor i Exchange Online eller friståen
 
 > [!NOTE]
 > Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för filtrering av skräp post. Du kan inte rapportera meddelanden som filtrerats efter ASF som falska positiva positiv. Du kan identifiera meddelanden som filtrerats efter ASF av:
+>
 > - Regelbunden skräp avisering om slutanvändare.
 >
 > - Det finns filtrerade meddelanden i karantänen.

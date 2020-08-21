@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Du kan använda regler för e-postflöde för att identifiera och vidta åtgärder för meddelanden som flödar i din organisation.
-ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: ed17ac62009f5e766772095985441fad2367edf4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653695"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827707"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>E-postflödesregler (transportregler) i fristående EOP
 

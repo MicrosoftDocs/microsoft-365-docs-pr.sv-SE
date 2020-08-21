@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du konfigurerar inställningar för skräp post i Exchange Online-postlådor. Många av de här inställningarna är tillgängliga för användare i Outlook eller Outlook på webben.
-ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653047"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825719"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurera inställningar för skräppost i Exchange Online-postlådor
 
@@ -42,7 +42,7 @@ När skräp post regeln är aktive rad på post lådan kan EOP flytta meddelande
 Administratörer kan använda Exchange Online PowerShell för att inaktivera, aktivera och Visa status för skräp post regeln i post lådor. Administratörer kan även använda Exchange Online PowerShell för att konfigurera poster i säker lista-samlingen på post lådor (listan Betrodda avsändare, listan Betrodda mottagare och listan med spärrade avsändare).
 
 > [!NOTE]
-> Meddelanden från avsändare som användare har lagt till i sina egna listor för betrodda avsändare kommer att hoppa över filtrering för EOP (SCL är-1). Om du inte vill att användarna ska kunna lägga till poster i listan Betrodda avsändare i Outlook kan du använda grup princip som nämns i [om inställningar för skräp post i Outlook](#about-junk-email-settings-in-outlook) avsnitt längre ned i det här avsnittet. Princip filtrering, innehålls filtrering och kontroll av avancerat skydd (ATP) tillämpas fortfarande på meddelanden.
+> Meddelanden från avsändare som användare har lagt till i sina egna listor för betrodda avsändare kommer att hoppa över filtrering för EOP (SCL är-1). Om du inte vill att användarna ska kunna lägga till poster i listan Betrodda avsändare i Outlook kan du använda grup princip som nämns i  [om inställningar för skräp post i Outlook](#about-junk-email-settings-in-outlook) avsnitt längre ned i det här avsnittet. Princip filtrering, innehålls filtrering och kontroll av avancerat skydd (ATP) tillämpas fortfarande på meddelanden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -57,7 +57,7 @@ Administratörer kan använda Exchange Online PowerShell för att inaktivera, ak
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Använda Exchange Online PowerShell för att aktivera eller inaktivera regeln för skräp post i en post låda
 
 > [!NOTE]
-> Du kan bara använda cmdleten **set-MailboxJunkEmailConfiguration** för att inaktivera skräp post regeln för en post låda som har öppnats i Outlook (i cachelagrat Exchange-läge) eller i Outlook på webben. Om post lådan inte har öppnats får du felet: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` om du inte vill att det här felet ska visas för Mass åtgärder kan du lägga till `-ErrorAction SlientlyContinue` kommandot **set-MailboxJunkEmailConfiguration** .
+> Du kan bara använda cmdleten **set-MailboxJunkEmailConfiguration** för att inaktivera skräp post regeln för en post låda som har öppnats i Outlook (i cachelagrat Exchange-läge) eller i Outlook på webben. Om post lådan inte har öppnats får du felet: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` om du inte vill att det här felet ska visas för Mass åtgärder kan du lägga till `-ErrorAction SilentlyContinue` kommandot **set-MailboxJunkEmailConfiguration** .
 
 Om du vill aktivera eller inaktivera skräp post regeln i en post låda använder du följande syntax:
 
@@ -81,7 +81,7 @@ Detaljerad information om syntax och parametrar finns i [set-MailboxJunkEmailCon
 
 > [!NOTE]
 >
-> - Om användaren aldrig har öppnat post lådan kanske du får ett fel meddelande när du kör föregående kommando. Om du vill dölja det här felet för Mass åtgärder lägger `-ErrorAction SlientlyContinue` du till kommandot **set-MailboxJunkEmailConfiguration** .
+> - Om användaren aldrig har öppnat post lådan kanske du får ett fel meddelande när du kör föregående kommando. Om du vill dölja det här felet för Mass åtgärder lägger `-ErrorAction SilentlyContinue` du till kommandot **set-MailboxJunkEmailConfiguration** .
 >
 > - Även om du inaktiverar skräp post regeln kan skräp post filtret i Outlook (beroende på hur det är konfigurerat) också avgöra om ett meddelande är skräp post och kan flytta meddelanden till Inkorgen eller mappen skräp post i post lådan. Mer information finns i avsnittet [om inställningar för skräp post i](#about-junk-email-settings-in-outlook) det här avsnittet.
 
@@ -121,7 +121,7 @@ Om du vill konfigurera säker lista-samlingen på en post låda använder du fö
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Om du vill ange flera värden och skriva över befintliga poster för parametrarna _BlockedSendersAndDomains_ och _TrustedSendersAndDomains_ använder du följande syntax: `"<Value1>","<Value2>"...` . Använd följande syntax för att lägga till eller ta bort ett eller flera värden utan att påverka andra befintliga poster:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Om du vill ange flera värden och skriva över befintliga poster för parametrarna _BlockedSendersAndDomains_ och _TrustedSendersAndDomains_ använder du följande syntax: `"<Value1>","<Value2>"...` . Använd följande syntax för att lägga till eller ta bort ett eller flera värden utan att påverka andra befintliga poster: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 I det här exemplet konfigureras följande inställningar för säker lista-samlingen i Ori Epsteins post låda:
 
@@ -145,7 +145,7 @@ Detaljerad information om syntax och parametrar finns i [set-MailboxJunkEmailCon
 
 > [!NOTE]
 >
-> - Om användaren aldrig har öppnat post lådan kanske du får ett fel meddelande när du kör föregående kommandon. Om du vill dölja det här felet för Mass åtgärder lägger `-ErrorAction SlientlyContinue` du till kommandot **set-MailboxJunkEmailConfiguration** .
+> - Om användaren aldrig har öppnat post lådan kanske du får ett fel meddelande när du kör föregående kommandon. Om du vill dölja det här felet för Mass åtgärder lägger `-ErrorAction SilentlyContinue` du till kommandot **set-MailboxJunkEmailConfiguration** .
 >
 > - Även om skräp post regeln är inaktive rad i post lådan kan du ändå konfigurera säker lista-samlingen och skräp post filtret i Outlook kan flytta meddelanden till Inkorgen eller mappen skräp post. Mer information finns i avsnittet [om inställningar för skräp post i](#about-junk-email-settings-in-outlook) det här avsnittet.
 >

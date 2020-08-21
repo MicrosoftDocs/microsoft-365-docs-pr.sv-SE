@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om kampanjmallar i Office 365 Avancerat skydd.
-ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653239"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825803"
 ---
 # <a name="campaign-views-in-atp"></a>Kampanjmallar i ATP
 
@@ -237,9 +237,9 @@ Diagrammet innehåller följande information:
   |**ZAP**|ej tillämpligt|[Automatisk rensning för en hel timme (Zap)](zero-hour-auto-purge.md) vidtog en åtgärd på det levererade meddelandet enligt inställningarna för skydd mot skräp post (flyttad till mappen Skräppost eller karantän).|
   |
 
-  <sup>\*</sup>Granska dina skydd mot skräp post eftersom det tillåtna meddelandet förmodligen har blockerats av tjänsten.
+  <sup>\*</sup> Granska dina skydd mot skräp post eftersom det tillåtna meddelandet förmodligen har blockerats av tjänsten.
 
-  <sup>\*\*</sup>Granska dina principer för skräp post, eftersom dessa meddelanden bör vara i karantän, inte levereras.
+  <sup>\*\*</sup> Granska dina principer för skräp post, eftersom dessa meddelanden bör vara i karantän, inte levereras.
 
 - **Leverans ställen**: du kommer troligen att behöva undersöka meddelanden som faktiskt har levererats till mottagarna (antingen till Inkorgen eller mappen skräp post), även om användarna inte klickat på URL: en för nytto lasten i meddelandet. Du kan också ta bort meddelanden i karantänen från karantänen. Mer information finns i [e-postmeddelanden i karantän i EOP](quarantine-email-messages.md).
 
@@ -317,7 +317,7 @@ Flikarna i vyn kampanj information gör att du kan undersöka kampanjen ytterlig
   - **:**<sup>\*</sup>
   - **Totalt antal**
 
-<sup>\*</sup>Om du klickar på det här värdet öppnas en ny utfällare som innehåller mer information om det angivna objektet (användare, URL: er osv.). Om du vill gå tillbaka till vyn kampanj Detaljer klickar du på **klar** i den nya utfällbara menyn.
+<sup>\*</sup> Om du klickar på det här värdet öppnas en ny utfällare som innehåller mer information om det angivna objektet (användare, URL: er osv.). Om du vill gå tillbaka till vyn kampanj Detaljer klickar du på **klar** i den nya utfällbara menyn.
 
 ### <a name="buttons"></a>Pilknapp
 

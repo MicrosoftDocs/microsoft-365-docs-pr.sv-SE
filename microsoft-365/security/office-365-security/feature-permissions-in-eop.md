@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Läs mer om den behörighet som krävs för uppgifter i det fristående Exchange Online Protection
-ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652903"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826631"
 ---
 # <a name="permissions-in-standalone-eop"></a>Behörigheter i fristående EOP
 
@@ -114,7 +114,7 @@ De inbyggda rollerna som är tillgängliga i fristående EOP beskrivs i följand
 |Skrivskyddad Threat Intelligence<sup>\*</sup>||I <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |
 
-<sup>\*</sup>Även om den här rollen är tillgänglig gör den egentligen inget användbart i fristående EOP.
+<sup>\*</sup> Även om den här rollen är tillgänglig gör den egentligen inget användbart i fristående EOP.
 
 ## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365-behörigheter i fristående EOP
 

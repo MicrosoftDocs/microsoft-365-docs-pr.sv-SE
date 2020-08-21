@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om vilka e-postflödes rapporter som är tillgängliga på instrument panelen för rapporter i säkerhets & efterlevnad.
 ms.custom: ''
-ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 9e9249eab5d3519dac0e33acf40d600d471b7cb2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814522"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826463"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa rapporter om e-postflöden i instrument panelen för säkerhet &
 
@@ -51,7 +51,7 @@ Följande diagram är tillgängliga i rapportvyn:
   - **Från Internet utan en koppling**
   - **Till Internet utan en koppling**
   - En specifik koppling som du har konfigurerat.
-  
+
   Om du vill isolera data i diagrammet använder du kryss rutan **Visa data för** kontroll och väljer ett av dessa alternativ eller **alla e-postflöde**.
 
   ![Visa data efter e-postflöde i kopplings rapporten](../../media/connector-report-view-data-by-mail-flow.png)
@@ -206,7 +206,7 @@ Om du vill gå tillbaka till rapportvyn klickar du på **Visa rapport**.
 
 ## <a name="mailflow-status-report"></a>Flödes status rapport
 
-**Status rapporten** för [skicka och ta emot liknar e-](#sent-and-received-email-report)postmeddelandet, med ytterligare information om e-post som tillåts eller blockeras. Det här är den enda rapporten som innehåller information om skydd och visar hur många e-postmeddelanden som blockeras innan de tillåts i tjänsten för utvärdering genom Exchange Online Protection (EOP). Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.  
+**Status rapporten** för [skicka och ta emot liknar e-](#sent-and-received-email-report)postmeddelandet, med ytterligare information om e-post som tillåts eller blockeras. Det här är den enda rapporten som innehåller information om skydd och visar hur många e-postmeddelanden som blockeras innan de tillåts i tjänsten för utvärdering genom Exchange Online Protection (EOP). Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 Om du vill visa rapporten öppnar du [säkerhets & Compliance Center](https://protection.office.com), går till **rapport** \> **instrument panelen** och väljer **flödes status rapport**. Om du vill gå direkt till **rapporten status för e-postflöde**öppnar du <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget för status rapport för flödes schema i instrument panelen rapporter](../../media/mail-flow-status-report-widget.png)
@@ -300,14 +300,14 @@ Om du klickar på **filter**kan du filtrera både diagrammet och data tabellen.
 
 Det här diagrammet visar antalet e-postmeddelanden ordnade efter:
 
-  - **Totalt e-postmeddelande**
-  - **E-post efter Edge-skydd**
-  - **E-post efter skadlig program vara, fil rykte, fil typs block**
-  - **E-post efter anti-Phish, URL-rykte, varumärkes-och programförfalskning**
-  - **E-post efter anti-spam, Mass utskick**
-  - **E-post efter användare och domän-personifiering**<sup>1</sup>
-  - **E-post efter fil-och URL-sprängning**<sup>1</sup>
-  - **E-post identifieras som oskadlig efter efter leverans skydd (URL-adress klicka på tids skydd)**
+- **Totalt e-postmeddelande**
+- **E-post efter Edge-skydd**
+- **E-post efter skadlig program vara, fil rykte, fil typs block**
+- **E-post efter anti-Phish, URL-rykte, varumärkes-och programförfalskning**
+- **E-post efter anti-spam, Mass utskick**
+- **E-post efter användare och domän-personifiering**<sup>1</sup>
+- **E-post efter fil-och URL-sprängning**<sup>1</sup>
+- **E-post identifieras som oskadlig efter efter leverans skydd (URL-adress klicka på tids skydd)**
 
 <sup>1</sup> Office 365 ATP
 
@@ -315,15 +315,15 @@ Om du vill visa e-postmeddelandet filtrerat efter EOP eller ATP klickar du på v
 
 Data tabellen innehåller följande information, som visas i fallande ordning:
 
- - **Datum**
- - **Totalt e-postmeddelande**
- - **Edge Protection**
- - **Skadlig program vara, fil rykte, fil typs block**
- - **Anti-Phish, URL-rykte, varumärkes-och programförfalskning**
- - **Skydd mot skräp post, Mass utskick**
- - **Användar-och domän personifiering (ATP)**
- - **Fil-och URL-sprängning (ATP)**
- - **Efter leverans skydd och ZAP (ATP) eller ZAP (EOP)**
+- **Datum**
+- **Totalt e-postmeddelande**
+- **Edge Protection**
+- **Skadlig program vara, fil rykte, fil typs block**
+- **Anti-Phish, URL-rykte, varumärkes-och programförfalskning**
+- **Skydd mot skräp post, Mass utskick**
+- **Användar-och domän personifiering (ATP)**
+- **Fil-och URL-sprängning (ATP)**
+- **Efter leverans skydd och ZAP (ATP) eller ZAP (EOP)**
 
 Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
 
@@ -340,7 +340,7 @@ Alla exporterade CSV-filer är begränsade till 150 000 rader. Om data innehåll
 
  ![Vyn tratt i rapporten flödes status ](../../media/mail-flow-status-report-funnel-view.png)
 
- ### <a name="tech-view-for-the-mailflow-status-report"></a>Teknisk vy för rapporten flödes schema
+### <a name="tech-view-for-the-mailflow-status-report"></a>Teknisk vy för rapporten flödes schema
 
 **Tech-vyn** liknar vyn **tratt** och ger mer detaljerad information om de konfigurerade hot skydds funktionerna. Från diagrammet kan du se hur meddelanden kategoriseras i olika stadier av hotets skydd.
 
@@ -360,27 +360,27 @@ Om du klickar på **filter**kan du filtrera både diagrammet och data tabellen.
 
 I det här diagrammet visas meddelanden ordnade i följande kategorier:
 
-  - **Totalt e-postmeddelande**
-  - **Edge Allow, Edge filtrerat**
-  - **Ej skadlig kod, identifiering av säkra bifogade filer (ATP), identifiering av skadlig program vara, regel block**
-  - **Inte Phish, DMARC-fel, identifiering av obehörig person, förfalsknings avkänning, Phish-identifiering**
-  - **Ingen identifiering med URL-sprängning, identifiering av URL-sprängor (ATP)**
-  - **Inte skräp post, spam**
-  - **Icke-skadlig e-post, identifiering av säkra länkar (ATP), ZAP**
+- **Totalt e-postmeddelande**
+- **Edge Allow, Edge filtrerat**
+- **Ej skadlig kod, identifiering av säkra bifogade filer (ATP), identifiering av skadlig program vara, regel block**
+- **Inte Phish, DMARC-fel, identifiering av obehörig person, förfalsknings avkänning, Phish-identifiering**
+- **Ingen identifiering med URL-sprängning, identifiering av URL-sprängor (ATP)**
+- **Inte skräp post, spam**
+- **Icke-skadlig e-post, identifiering av säkra länkar (ATP), ZAP**
 
 När du hovrar över en kategori i diagrammet kan du se antalet meddelanden i den kategorin.
 
 Data tabellen innehåller följande information, som visas i fallande ordning:
 
-  - **Datum**  
-  - **Totalt e-postmeddelande**
-  - **Filtrerad**
-  - **Skydd mot skadlig program vara, säkra bilagor, regel filtrerat**
-  - **DMARC, Phish, filtrerat**
-  - **Identifiering av URL-sprängning**
-  - **Skräp post filter**
-  - **ZAP borttagen**
-  - **Identifiering via säkra länkar**
+- **Datum**
+- **Totalt e-postmeddelande**
+- **Filtrerad**
+- **Skydd mot skadlig program vara, säkra bilagor, regel filtrerat**
+- **DMARC, Phish, filtrerat**
+- **Identifiering av URL-sprängning**
+- **Skräp post filter**
+- **ZAP borttagen**
+- **Identifiering via säkra länkar**
 
 Om du markerar en rad i data tabellen visas en uppdelning av antalet e-postmeddelanden.
 

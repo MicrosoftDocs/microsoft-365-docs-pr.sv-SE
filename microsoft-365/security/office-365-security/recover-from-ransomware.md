@@ -5,149 +5,149 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365-administratörer kan lära sig att återställa från en ransomware-attack.
-ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+description: Microsoft 365-administratörer kan läsa mer om hur man återställer från en utpressnings tro Jan attack.
+ms.openlocfilehash: 2f8e5f5deb18cadfaea7acc1cffe73abbc43010b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811032"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827839"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återhämta dig från en ransomware attack i Microsoft 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställ från en utpressnings tro Jan attack i Microsoft 365
 
-Även om du vidtar alla försiktighetsåtgärder för att skydda din organisation, kan du fortfarande falla offer för en [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware är big business, och attackerna är verifiera sofistikerade.
+Även om du gör alla försiktighets åtgärder för att skydda din organisation kan du fortfarande falla ned till en [utpressnings tro Jan](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Utpressnings tro vara är stort företag och det är bara att kontrol lera avancerade.
 
-Stegen i det här avsnittet ger dig den bästa chansen att återställa data som krypterades av ransomware, och hjälper till att stoppa spridningen av infektionen i din organisation. Innan du börjar bör du tänka på följande:
+Stegen i det här avsnittet ger dig den bästa chansen att återställa data som har krypterats av utpressnings program varan och hjälper till att stoppa spridningen av infektionen i organisationen. Tänk på följande innan du börjar:
 
-- Det finns ingen garanti för att betala lösen kommer att returnera tillgång till dina filer. Faktum är att betala lösen kan göra dig till ett mål för mer ransomware. Om du redan har betalat, men du kunde återställa dina filer utan att behöva använda angriparens lösning, bör du ringa din bank för att se om de kan blockera transaktionen. Vi rekommenderar också att du rapporterar ransomware-attacken till brottsbekämpande myndigheter, webbplatser för bedrägerirapportering och Microsoft enligt beskrivningen senare i det här avsnittet.
+- Det är inte säkert att betala utpressnings tro återkommer till dina filer. Det kan vara enklare för dig att betala utpressnings tro. Om du redan har betalat, men du kan återställa dina filer utan att behöva använda angriparens upplösning, bör du ringa till din bank för att se om de kan blockera transaktionen. Vi rekommenderar också att du rapporterar utpressnings tro Jan attack för att genomdriva, bedrägeri rapporterings webbplatser och Microsoft enligt beskrivningen längre ned i det här avsnittet.
 
-- Det är mycket viktigt att du reagerar snabbt på attacken och dess konsekvenser. Ju längre du väntar, desto mindre sannolikt är det att du kan återställa de berörda data.
+- Det är mycket viktigt att du svarar snabbt på angreppet och dess konsekvenser. Det längre du väntar, det mindre troligt att du kan återställa de data som påverkas.
 
-## <a name="step-1-verify-your-backups"></a>Steg 1: Verifiera dina säkerhetskopior
+## <a name="step-1-verify-your-backups"></a>Steg 1: kontrol lera säkerhets kopiorna
 
-Om du har offlinesäkerhetskopior kan du förmodligen återställa krypterade data **när** du har tagit bort nyttolasten för ransomware (malware) från din miljö.
+Om du har säkerhets kopiering offline kan du troligt vis återställa krypterade data **när** du har tagit bort utpressnings Tronas nytto Last (malware) från din miljö.
 
-Om du inte har säkerhetskopior, eller om dina säkerhetskopior också påverkades av ransomware, kan du hoppa över det här steget.
+Om du inte har säkerhets kopior, eller om dina säkerhets kopior också påverkas av utpressnings tro Jan, kan du hoppa över det här steget.
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>Steg 2: Inaktivera ActiveSync- och OneDrive-synkronisering
+## <a name="step-2-disable-activesync-and-onedrive-sync"></a>Steg 2: inaktivera synkronisering av ActiveSync och OneDrive
 
-Den viktigaste punkten här är att stoppa spridningen av datakryptering av ransomware.
+Huvud punkten här är att stoppa spridningen av data kryptering av utpressnings tro janheten.
 
-Om du misstänker att e-post är ett mål bör du tillfälligt inaktivera användaråtkomst till postlådor. Exchange ActiveSync används av mobila enheter för att synkronisera data mellan enheten och Exchange Online-postlådan.
+Om du misstänker att e-posten är ett mål bör du tillfälligt inaktivera användar åtkomst till post lådor. Exchange ActiveSync används av mobila enheter för att synkronisera data mellan enheten och Exchange Online-postlådan.
 
-Information om hur du inaktiverar ActiveSync för en postlåda finns i [Inaktivera Exchange ActiveSync för användare i Exchange Online](https://support.microsoft.com/help/2795303).
+Information om hur du inaktiverar ActiveSync för en post låda finns i [så här inaktiverar du Exchange ActiveSync för användare i Exchange Online](https://support.microsoft.com/help/2795303).
 
-Om du vill inaktivera andra typer av åtkomst till en postlåda läser du:
+Information om hur du inaktiverar andra typer av åtkomst till en post låda finns i:
 
-- [Aktivera eller inaktivera MAPI för en postlåda](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
+- [Aktivera eller inaktivera MAPI för en post låda](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
 
-- [Aktivera eller inaktivera POP3- eller IMAP4-åtkomst för en användare](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
+- [Aktivera eller inaktivera POP3-eller IMAP4-åtkomst för en användare](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Om du pausar OneDrive-synkronisering kan du skydda molndata från att uppdateras av potentiellt infekterade enheter. Mer information finns [i Så här pausar och återupptar du synkroniseringen i OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+Om du pausar OneDrive-synkronisering kommer dina moln data att skyddas från potentiellt infekterade enheter. Mer information finns i [så här pausar och återupptar du synkronisering på OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
-## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Steg 3: Ta bort skadlig kod från de berörda enheterna
+## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Steg 3: ta bort skadlig kod från berörda enheter
 
-Kör en fullständig antivirussökning med de senaste uppdateringarna på alla misstänkta datorer och enheter för att upptäcka och ta bort nyttolasten som är associerad med ransomware. Glöm inte enheter som synkroniserar data eller målet för mappade nätverksenheter (dessa datorer och enheter måste också skannas).
+Kör en fullständig Antivirus sökning med de senaste uppdateringarna på alla misstänkta datorer och enheter för att upptäcka och ta bort den nytto last som är associerad med utpressnings versionen. Glöm inte enheter som synkroniserar data, eller för anslutna nätverks enheter (dessa datorer och enheter måste också genomsökas).
 
-Du kan använda [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) eller (för äldre klienter) Microsoft [Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
+Du kan använda [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) eller (för äldre klienter) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
-Ett alternativ som också hjälper dig att ta bort ransomware eller skadlig kod är [Malicious Software Removal Tool (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
+Ett alternativ som du kan använda för att ta bort utpressnings tro Jan eller skadlig [program vara (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
 
-Om de här alternativen inte fungerar kan du prova [Windows Defender Offline](https://support.microsoft.com/help/17466) eller [felsöka problem med att identifiera och ta bort skadlig kod](https://support.microsoft.com/help/4466982).
+Om de här alternativen inte fungerar kan du prova [Windows Defender Offline](https://support.microsoft.com/help/17466) eller [Felsöka problem med att upptäcka och ta bort skadlig kod](https://support.microsoft.com/help/4466982).
 
-## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Steg 4: Återställa filer på en rengjord dator eller enhet
+## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Steg 4: återställa filer på en ren dator eller enhet
 
-När du har slutfört föregående steg för att ta bort ransomware nyttolasten från din miljö (vilket kommer att hindra ransomware från att kryptera eller ta bort dina filer), kan du använda [Filhistorik](https://support.microsoft.com/help/17128) i Windows 10 och Windows 8.1 eller Systemskydd i Windows 7 för att försöka återställa dina lokala filer och mappar.
+När du har slutfört föregående steg för att ta bort utpressnings tro janheten från din miljö (som hindrar utpressnings tro från att kryptera eller ta bort filer) kan du använda [fil historik](https://support.microsoft.com/help/17128) i Windows 10 och Windows 8,1 eller system skydd i Windows 7 för att försöka återställa dina lokala filer och mappar.
 
 **Anmärkningar**:
 
-- Vissa ransomware krypterar eller tar bort de säkerhetskopierade versionerna, så du kan inte använda Filhistorik eller Systemskydd för att återställa filer. Om det händer måste du använda säkerhetskopior på externa enheter eller enheter som inte påverkades av ransomware eller OneDrive enligt beskrivningen i nästa avsnitt.
+- Vissa utpressnings Jan program kommer också att kryptera eller ta bort säkerhets kopior, så du kan inte använda fil historik eller system skydd för att återställa filer. Om det inträffar behöver du använda säkerhets kopior på externa enheter eller enheter som inte påverkades av utpressnings tro Jan eller OneDrive enligt beskrivningen i nästa avsnitt.
 
-- Om en mapp är synkroniserad med OneDrive och du inte använder den senaste versionen av Windows kan det finnas vissa begränsningar med filhistorik.
+- Om en mapp synkroniseras med OneDrive och du inte använder den senaste versionen av Windows, kan det finnas vissa begränsningar i fil historiken.
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Steg 5: Återställa dina filer i Din OneDrive för företag
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Steg 5: återställa filer i OneDrive för företag
 
-Med Filåterställning i OneDrive för företag kan du återställa hela OneDrive till en tidigare tidpunkt inom de senaste 30 dagarna. Mer information finns i [Återställa din OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
+Med återställning av filer i OneDrive för företag kan du återställa hela OneDrive till en tidigare tidpunkt inom de senaste 30 dagarna. Mer information finns i [återställa OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
-## <a name="step-6-recover-deleted-email"></a>Steg 6: Återställa borttaget e-postmeddelande
+## <a name="step-6-recover-deleted-email"></a>Steg 6: återställa borttagna e-postmeddelanden
 
-I det sällsynta fallet att ransomware bort alla dina e-postmeddelanden, kan du förmodligen återställa de borttagna objekten. Mer information finns i:
+I det sällsynta fallet att undertecknings program varan tagit bort all e-post kan du troligt vis återställa borttagna objekt. Mer information finns i:
 
-- [Återställa borttagna meddelanden i en användares postlåda](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
+- [Återställa borttagna meddelanden i en användares post låda](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Återställa borttagna objekt i Outlook för Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [Återskapa borttagna objekt i Outlook för Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: Återaktivera Synkronisering av Exchange ActiveSync och OneDrive
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: återaktivera Exchange ActiveSync och OneDrive-synkronisering
 
-När du har rensat dina datorer och enheter och återställt dina data kan du återaktivera ActiveSync- och OneDrive-synkronisering som du tidigare inaktiverat i [steg 2](#step-2-disable-activesync-and-onedrive-sync).
+När du har rensat dina datorer och enheter och återställt dina data kan du återaktivera ActiveSync-och OneDrive-synkronisering som du tidigare inaktiverat i [steg 2](#step-2-disable-activesync-and-onedrive-sync).
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive-synkronisering för specifika filtillägg
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive-synkronisering för specifika fil namns tillägg
 
-När du har återställt kan du förhindra att OneDrive för företag-klienter synkroniserar de filtyper som påverkades av det här ransomware.After you've recovered, you can prevent OneDrive for Business clients from synchronizing the file types that were affected by this ransomware. Mer information finns i [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+När du har återställt kan du förhindra att OneDrive för företag-klienter synkroniserar de filtyper som påverkades av den här utpressnings tro varan. Mer information finns i [set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
-## <a name="report-the-attack"></a>Rapportera attacken
+## <a name="report-the-attack"></a>Rapportera angreppet
 
-### <a name="contact-law-enforcement"></a>Kontakta polisen
+### <a name="contact-law-enforcement"></a>Kontakta juridisk användning
 
-Du bör kontakta din lokala eller federala brottsbekämpande organ. Om du till exempel befinner dig i USA kan du kontakta [FBI:s lokala fältkontor,](https://www.fbi.gov/contact-us/field) [IC3](http://www.ic3.gov/complaint/default.aspx) eller [Secret Service](http://www.secretservice.gov/).
+Du bör kontakta den lokala eller federala polismyndigheten. Om du till exempel är i USA kan du kontakta [FBI lokala fält](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) eller [hemliga tjänsten](http://www.secretservice.gov/).
 
-### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Skicka en rapport till ditt lands webbplats för bedrägerirapportering
+### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Skicka en rapport till ditt lands webbplats för bedrägeri rapportering
 
-Bluff rapportering webbplatser ger information om hur man kan förebygga och undvika bedrägerier. De ger också mekanismer för att rapportera om du var offer för bluff.
+Webbplatser för bluff rapportering ger information om hur du undviker och undviker bedrägerier. De tillhandahåller också mekanismer för att rapportera om du har blivit utsatt för bedrägeri.
 
 - Australien: [SCAMwatch](http://www.scamwatch.gov.au/)
 
-- Kanada: [Kanadensiska Bedrägeribekämpning Centre](http://www.antifraudcentre-centreantifraude.ca/)
+- Kanada: [kanadensiska centrum för bedrägeri bekämpning](http://www.antifraudcentre-centreantifraude.ca/)
 
-- Frankrike: [Agence nationale de la sécurité des systèmes d'information](http://www.ssi.gouv.fr/)
+- Frankrike: [Agence nation Ale de la sécurité des Systèmes D'information](http://www.ssi.gouv.fr/)
 
-- Tyskland: [Bundesamt für Sicherheit in der Informationstechnik](https://www.bsi.bund.de/DE/Home/home_node.html)
+- Tyskland: [Bundesamt für Sicherheit i der Informationstechnik](https://www.bsi.bund.de/DE/Home/home_node.html)
 
-- Irland: [En Garda Síochána](http://www.garda.ie/)
+- Irland: [en Garda Síochána](http://www.garda.ie/)
 
-- Nya Zeeland: [Konsumentfrågor Scams](http://www.consumeraffairs.govt.nz/scams)
+- Nya Zeeland: [konsument frågor](http://www.consumeraffairs.govt.nz/scams)
 
-- Storbritannien: [Action Fraud](http://www.actionfraud.police.uk/)
+- Storbritannien: [bedrägeri åtgärd](http://www.actionfraud.police.uk/)
 
-- USA: [On Guard Online](http://www.onguardonline.gov/)
+- USA: [on Guard online](http://www.onguardonline.gov/)
 
-Om ditt land inte finns med i listan frågar du dina lokala eller federala brottsbekämpande organ.
+Om ditt land inte finns med i listan kan du fråga dina myndigheter för kommuner och myndigheter.
 
 ### <a name="submit-email-messages-to-microsoft"></a>Skicka e-postmeddelanden till Microsoft
 
-Du kan rapportera nätfiskemeddelanden som innehåller ransomware med hjälp av någon av flera metoder. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+Du kan rapportera nät fiske meddelanden som innehåller utpressnings tro Jan med någon av flera olika metoder. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Se även
 
-- [Ransomware (lösenköp)](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
+- [Utpressningstrojaner](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
-- [Ransomware svar-att betala eller inte betala?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Utpressnings tro-och-svar – betalar eller inte betalar?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 
-- [Norsk Hydro svarar på ransomware attack med öppenhet](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Norsk Hydro svarar på utpressnings tro Jan attack med öppenhet](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Ransomware identifiering och återställa dina filer i OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Identifiering av utpressnings tro Jan och återställa dina filer i OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
-- [Microsofts säkerhetsinformationsrapport](https://www.microsoft.com/securityinsights/)
+- [Microsoft Security Intelligence-rapport](https://www.microsoft.com/securityinsights/)
 
 - [Aktivera eller inaktivera makron i Office-filer](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Rekommenderade inställningar för EOP- och Office 365 ATP-säkerhet](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [Rekommenderade inställningar för EOP och Office 365 säkerhet för ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 
-- [En värdig uppgradering: Nästa generations säkerhet på Windows 10 visar sig vara motståndskraftig mot ransomware utbrott i 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [En minnes-uppgradering: nästa generations säkerhet i Windows 10 visar att det är elastiskt mot utpressnings brott i 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [Ingen mas, Samas: Vad finns i denna ransomware modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [Ingen Mas, samas: Vad är den här utpressnings tro Jans modus-operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 
-- [Locky malware, tur att undvika det](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+- [Lås skadlig kod, Lucky för att undvika det](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
 
-- [MSRT juli 2016: Cerber ransomware](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [MSRT juli 2016: Cerber utpressnings tro Jan](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
 
-- [De tre cheferna för Cerberus-liknande Cerber ransomware](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
+- [De tre huvudena på Cerberus-liknande Cerber](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
 
-- [Troldesh ransomware påverkas av (den) Da Vinci-koden](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)
+- [Troldesh utpressnings Jan attack som påverkas av (den) da Vinci-koden](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

@@ -1,22 +1,22 @@
 ---
-title: Nya användare vidarebefordrar e-postinsikt
+title: Nya användare vidarebefordrar insikt via e-post
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan lära sig hur de nya användarna vidarebefordrar e-postmeddelandena i säkerhets & efterlevnad för att undersöka när användare i organisationen vidarebefordrar meddelanden till nya domäner.
-ms.openlocfilehash: 73ab6d1c9601ad40d469984b0ba18191a0917941
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578411"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826993"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nya användare som vidarebefordrar e-postmeddelande för säkerhets &
 
@@ -26,7 +26,7 @@ De **nya domänerna som vidarebefordras via e-post** meddelar dig när nyskapade
 
 Denna inblick visas bara när problemet identifieras och visas på sidan för [vidarebefordran av rapporter](view-mail-flow-reports.md#forwarding-report) .
 
-![Nya användare vidarebefordrar e-postinsikt](../../media/mfi-new-users-forwarding-email.png)
+![Nya användare vidarebefordrar insikt via e-post](../../media/mfi-new-users-forwarding-email.png)
 
 När du klickar på widgeten visas en utfällbar plats där du kan hitta mer information om de vidarebefordrade meddelandena, inklusive en länk till [rapporten ändringar i vidarebefordring](#forwarding-modifications-report) enligt beskrivningen i det här avsnittet.
 
@@ -58,11 +58,11 @@ Följande diagram är tillgängliga i rapportvyn:
 
 - **Visa data för: nya vidarebefordrande användare**:
 
-  ![Ny vy för vidarebefordrade användare i rapporten ändringar av vidarebefordran](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![Ny vy för vidarebefordrade användare i rapporten ändringar av vidarebefordran](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Visa data för: nya vidarebefordrande domäner**:
 
-  ![Vyn nya vidarebefordrade domäner i rapporten ändringar i vidarebefordran](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![Vyn nya vidarebefordrade domäner i rapporten ändringar i vidarebefordran](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 Om du klickar på **filter** i en rapportvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
 

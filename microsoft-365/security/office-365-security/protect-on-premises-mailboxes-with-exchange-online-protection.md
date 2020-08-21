@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -20,73 +20,73 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer i Kina som använder Office 365 som drivs av 21Vianet kan lära sig hur du använder fristående Exchange Online Protection (EOP) för att skydda sina lokala postlådor.
-ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: Administratörer i Kina som använder Office 365 som drivs av 21Vianet kan läsa mer om hur du använder fristående Exchange Online Protection (EOP) för att skydda sina lokala post lådor.
+ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587986"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826819"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Skydda lokala postlådor i Kina med fristående EOP
 
 > [!NOTE]
-> Den här artikeln gäller endast Office 365 som drivs av 21Vianet i Kina.
+> Den här artikeln gäller endast för Office 365 som drivs av 21Vianet i Kina.
 
-Även om du planerar att vara värd för vissa eller alla dina postlådor lokalt kan du fortfarande skydda postlådorna med Exchange Online Protection (EOP). Om du vill konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange Company-administratör (rollgruppen Organisationshantering). Information om hur Office 365-behörigheter relaterar till Exchange-behörigheter finns [i Tilldela administratörsroller i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Om alla Exchange-postlådor är lokala följer du dessa steg för att konfigurera eOP-tjänsten.
+Även om du planerar att hantera vissa eller alla dina post lådor lokalt kan du fortfarande skydda post lådorna med Exchange Online Protection (EOP). För att kunna konfigurera kopplingar måste ditt konto vara en global administratör eller en Exchange-kontoadministratör (organisations hanterings grupp). Information om hur Office 365-behörigheter relaterar till Exchange-behörigheter finns i [tilldela administratörs roller i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Om alla dina Exchange-postlådor finns på plats gör du så här för att konfigurera EOP-tjänsten.
 
-## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Steg 1: Använda administrationscentret för Microsoft 365 för att lägga till och verifiera din domän
+## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Steg 1: Använd administrations centret för Microsoft 365 för att lägga till och verifiera din domän
 
-1. I administrationscentret för Microsoft 365 navigerar du till installationsprogrammet för att lägga till domänen i tjänsten.
+1. I administrations centret för Microsoft 365 navigerar du till installations programmet för att lägga till domänen i tjänsten.
 
-2. Följ stegen i portalen för att lägga till tillämpliga DNS-poster i din DNS-värd för att verifiera domänägarskap.
+2. Följ stegen i portalen för att lägga till de DNS-poster som är tillämpliga på din DNS-värd för att verifiera domänens ägarskap.
 
 > [!TIP]
-> [Lägga till din domän och användare i Office 365 som drivs av 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) och [Skapa DNS-poster för Office 365 när du hanterar DINA DNS-poster](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) är användbara resurser att referera till när du lägger till domänen i tjänsten och konfigurerar DNS.
+> [Lägga till din domän och användare i office 365 som drivs av 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) och [Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) är användbara resurser att referera till när du lägger till domänen till tjänsten och konfigurerar DNS.
 
-### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Steg 2: Lägga till mottagare och konfigurera domäntypen
+### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Steg 2: Lägg till mottagare och konfigurera domän typen
 
-Innan du konfigurerar din e-post så att den flödar till och från EOP-tjänsten rekommenderar vi att du lägger till mottagarna i tjänsten. Det finns flera sätt att göra detta, vilket dokumenteras i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md). Om du vill aktivera DBEB (Directory Based Edge Blocking) för att framtvinga mottagarverifiering inom tjänsten efter att du har lagt till mottagarna måste du ställa in domäntypen till Auktoritär. Mer information om DBEB finns i [Använda katalogbaserad kantblockering för att avvisa meddelanden som skickas till ogiltiga mottagare](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+Innan du konfigurerar din e-post som ska flöda till och från EOP-tjänsten rekommenderar vi att du lägger till mottagarna i tjänsten. Det finns flera sätt som du kan göra det på, som dokumenterade i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md). Om du vill aktivera Directory-baserad Edge-blockering (DBEB) för att tvinga mottagar verifiering i tjänsten efter att du har lagt till mottagarna måste du ange domän typen till auktoritär. Mer information om DBEB finns i [använda katalogbaserade kant spärr för att neka meddelanden skickade till ogiltiga mottagare](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Steg 3: Använd EAC för att ställa in e-postflöde
+## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Steg 3: använda UK för att konfigurera e-postflöde
 
-Skapa kopplingar i Administrationscenter för Exchange (EAC) som möjliggör e-postflöde mellan EOP och dina lokala e-postservrar. Detaljerade instruktioner finns i [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+Skapa kopplingar i administrations centret för Exchange (UK) som möjliggör e-postflöde mellan EOP och dina lokala e-postservrar. Detaljerade anvisningar finns i [Konfigurera e-postflöde med kopplingar i Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
- Hur vet du att den här uppgiften fungerade?
+ Hur vet jag att den här uppgiften fungerade?
 
- Se [Testa e-postflöde genom att verifiera dina Office 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+ Se [Testa e-postflödet genom att verifiera dina Office 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Steg 4: Tillåt inkommande port 25 SMTP-åtkomst
 
-När du har konfigurerat kopplingar väntar du 72 timmar på att tillåta spridning av DNS-postuppdateringar. Därefter begränsar du inkommande port-25 SMTP-trafik på brandväggen eller e-postservrarna så att den bara tar emot e-post från EOP-datacenter, särskilt från IP-adresserna som anges vid [URL:er och IP-adressintervall för Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). Detta skyddar din lokala miljö genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på e-postservern som styr de IP-adresser som tillåts ansluta för e-postrelä uppdaterar du dessutom dessa inställningar.
+När du har konfigurerat kopplingar väntar du 72 timmar för att tillåta spridningen av DNS-postuppdateringarna. Därefter kan du begränsa inkommande port-25 SMTP-trafik på din brand vägg eller e-postserver så att den endast kan skicka e-post från EOP Data Center, specifikt från IP-adresserna som visas i [URL: er och IP-adressintervall för Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). Då skyddas den lokala miljön genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på din e-postserver som styr vilka IP-adresser som är tillåtna för att ansluta till e-post kan du även uppdatera dessa inställningar.
 
 > [!TIP]
-> Konfigurera inställningar på SMTP-servern med en anslutningstid på 60 sekunder. Den här inställningen är godtagbar för de flesta situationer, vilket möjliggör viss fördröjning när det gäller ett meddelande som skickas med en stor bifogad fil, till exempel.
+> Konfigurera inställningar på SMTP-servern med en anslutnings tid på 60 sekunder. Den här inställningen är acceptabel i de flesta fall, vilket gör att en viss fördröjning i ett meddelande som skickas med en stor bilaga till exempel.
 
-## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Steg 5: Se till att skräppost dirigeras till varje användares skräppostmapp
+## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Steg 5: kontrol lera att skräp post vidarebefordras till varje användares mapp för skräp post
 
-Om du vill vara säkra på att skräppost e-post dirigeras korrekt till varje användares skräppostmapp måste du utföra ett par konfigurationssteg. Stegen finns i [Konfigurera fristående EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Om du inte vill flytta meddelanden till varje användares skräppostmapp kan du välja en annan åtgärd genom att redigera dina policyer mot skräppost (kallas även principer för innehållsfilter). Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
+För att säkerställa att skräp post meddelanden vidarebefordras korrekt till varje användares skräppost-mapp måste du utföra några olika konfigurations steg. Anvisningarna finns i [Konfigurera fristående EOP för att skicka skräp post till skräppostmappen i hybrid miljöer](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Om du inte vill flytta meddelanden till varje användares skräppost-mapp kan du välja en annan åtgärd genom att redigera principer för skräp post (kallas även för innehålls filter principer). Mer information finns i [Konfigurera principer för skräppostskydd i Office 365](configure-your-spam-filter-policies.md).
 
-## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrationscentret för Microsoft 365 för att peka ut MX-posten till EOP
+## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Steg 6: Använd administrations centret för Microsoft 365 för att peka din MX-post på EOP
 
-Följ konfigurationsstegen för Office 365-domänen för att uppdatera MX-posten för din domän så att din inkommande e-post flödar via EOP. Om du vill ha mer information kan du återigen referera till [Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Följ stegen i domän konfigurationen för Office 365 för att uppdatera MX-posten för din domän så att dina inkommande e-postmeddelanden genom EOP. Om du vill ha mer information kan du återigen referera till [Skapa DNS-poster för Office 365 när du hanterar dina DNS-poster](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-Hur vet du att den här uppgiften fungerade?
+Hur vet jag att den här uppgiften fungerade?
 
- Se [Testa e-postflöde genom att verifiera dina Office 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+ Se [Testa e-postflödet genom att verifiera dina Office 365-kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
-Nu har du verifierat tjänstleverans för en korrekt konfigurerad utgående lokal anslutningsapp och du har verifierat att MX-posten pekar på EOP. Du kan nu välja att köra följande ytterligare tester för att kontrollera att ett e-postmeddelande kommer att levereras av tjänsten till din lokala miljö:
+I det här läget har du bekräftat tjänste leverans för en korrekt konfigurerad utgående lokal koppling, och du har verifierat att din MX-post pekar på EOP. Du kan välja att köra följande ytterligare test för att verifiera att ett e-postmeddelande kommer att skickas till din lokala miljö:
 
-- Klicka på fliken **Office 365** i Remote Connectivity Analyzer och kör sedan det **inkommande SMTP-e-e-posttestet** som finns under **Internet-e-posttester**.
+- I fjärr anslutnings analys klickar du på fliken **Office 365** och kör sedan det **inkommande SMTP-** Testtestet under **Internet-e-PostTest**.
 
-- Skicka ett e-postmeddelande från ett webbaserat e-postkonto till en e-postmottagare i organisationen vars domän matchar domänen som du lade till i tjänsten. Bekräfta leveransen av meddelandet till den lokala postlådan med Microsoft Outlook eller en annan e-postklient.
+- Skicka ett e-postmeddelande från ett webbaserat e-postkonto till en e-postmottagare i din organisation vars domän matchar den domän som du har lagt till i tjänsten. Bekräfta leverans av meddelandet till den lokala post lådan med hjälp av Microsoft Outlook eller en annan e-postklient.
 
-- Om du vill köra ett utgående e-posttest kan du skicka ett e-postmeddelande från en användare i organisationen till ett webbaserat e-postkonto och bekräfta att meddelandet tas emot.
+- Om du vill köra ett utgående e-PostTest kan du skicka ett e-postmeddelande från en användare i din organisation till ett webbaserat e-postkonto och bekräfta att meddelandet har tagits emot.
 
-## <a name="less-common-a-hybrid-setup-with-mailboxes-on-premises-and-in-the-cloud"></a>Mindre vanligt: En hybridinstallation med postlådor lokalt och i molnet
+## <a name="less-common-a-hybrid-setup-with-mailboxes-on-premises-and-in-the-cloud"></a>Mindre vanligt: en hybrid installation med post lådor lokalt och i molnet
 
-Om du har Exchange-postlådor lokalt och en eller flera postlådor i molnet i Exchange Online har du en *hybridkonfiguration.* I en hybridkonfiguration fungerar funktioner som ledig/upptagen kalenderdelning och e-postroutning tillsammans i lokala miljöer och molnmiljöer. Du kan ha en hybridkonfiguration på plats medan du överför postlådor till Exchange Online. En hybridmiljö ställs in på ett annat sätt än EOP-fristående skydd.
+Om du har Exchange-postlådor lokalt och en eller flera post lådor i molnet i Exchange Online har du en *hybrid* konfiguration. I en hybrid installation fungerar funktioner som ledig/upptagen kalender delning och e-postdirigering i dina lokala och moln miljöer. Du kanske har en hybrid installation när du över gång till post lådor till Exchange Online. En hybrid miljö är inställd på annat sätt än EOP fristående skydd.
 
-Du kan välja ett hybridscenario för att dra nytta av molnbaserad e-post för de flesta av dina anställda. Du kan göra detta samtidigt som du är värd för vissa postlådor lokalt. till exempel för din juridiska avdelning.
+Du kan välja ett hybrid scenario för att utnyttja det molnbaserade e-postmeddelandet för de flesta anställda. Du kan göra detta samtidigt som du är värd för vissa post lådor lokalt; för din juridiska avdelning.
 
-En hybridinställning kan vara komplex, men den har många fördelar. Mer information om hur du konfigurerar hybridscenarier med Exchange finns i [Hybriddistributioner av Exchange Server](https://docs.microsoft.com/Exchange/exchange-hybrid).
+En hybrid konfiguration kan vara komplicerad men har många fördelar. Mer information om hur du konfigurerar hybrid scenarier med Exchange finns i [Exchange Server hybrid distributioner](https://docs.microsoft.com/Exchange/exchange-hybrid).

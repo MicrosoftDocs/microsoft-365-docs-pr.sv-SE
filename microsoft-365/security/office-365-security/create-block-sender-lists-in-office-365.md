@@ -7,76 +7,76 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Administratörer kan lära sig mer om tillgängliga och önskade alternativ för att blockera inkommande meddelanden i Exchange Online Protection (EOP).
-ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+description: Administratörer kan läsa om tillgängliga och önskade alternativ för att blockera inkommande meddelanden i Exchange Online Protection (EOP).
+ms.openlocfilehash: 9b676f96ccdff8be1fa49841a9e0ce44bb59964c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545906"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827319"
 ---
-# <a name="create-blocked-sender-lists-in-eop"></a>Skapa blockerade avsändarelistor i EOP
+# <a name="create-blocked-sender-lists-in-eop"></a>Skapa listor spärrade avsändare i EOP
 
-I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor erbjuder EOP flera sätt att blockera e-post från oönskade avsändare. Dessa alternativ inkluderar Outlook-blockerade avsändare, blockerade avsändare eller blockerade domänlistor i anti-spam-principer, Exchange-regler för e-postflöde (kallas även transportregler) och IP-blockeringslistan (anslutningsfiltrering). Tillsammans kan du se dessa alternativ som _blockerade avsändarelistor_.
+I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan EOP blockera e-post från oönskade avsändare. De här alternativen inkluderar Outlook-blockerade avsändare, spärrade avsändare eller blockerade domän listor i principer för skräp post, Exchange mail flöde-regler (kallas även transport regler) och IP-blockeringslistan (anslutnings filter). Tillsammans kan du se dessa alternativ som _spärrade avsändare_.
 
-Den bästa metoden för att blockera avsändare varierar beroende på omfattningen av påverkan. För en enskild användare kan rätt lösning vara Outlook-blockerade avsändare. För många användare skulle ett av de andra alternativen vara lämpligare. Följande alternativ rangordnas efter både effektomfång och bredd. Listan går från smal till bred, men *läs detaljerna* för fullständiga rekommendationer.
+Den bästa metoden för att blockera avsändare beror på islagsnas omfattning. För en enskild användare kan rätt lösning vara blockerade Outlook-avsändare. För många användare är ett av de andra alternativen mer lämpligt. Följande alternativ rangordnas efter omfattning och bredd. Listan går från smal till bred, men *läser de specifika* rekommendationerna.
 
-1. Outlook-blockerade avsändare (listan Blockerade avsändare som lagras i varje postlåda)
+1. Outlook blockerade avsändare (listan med spärrade avsändare som lagras i varje post låda)
 
-2. Blockerade avsändande listor eller blockerade domänlistor (policyer mot skräppost)
+2. Spärrade avsändare eller blockerade domän listor (principer för skräp post)
 
 3. Regler för e-postflöde
 
-4. IP-blockeringslistan (anslutningsfiltrering)
+4. IP-blockeringslistan (anslutnings filter)
 
 > [!NOTE]
-> Även om du kan använda organisationsomfattande blockinställningar för att åtgärda falska negativ (missat skräppost), bör du också skicka dessa meddelanden till Microsoft för analys. Om du hanterar falska negativ genom att använda blockeringslistor ökar dina administrativa kostnader avsevärt. Om du använder blockeringslistor för att avleda missade skräppost måste du hålla ämnet [Rapportmeddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) redo.
+> Du kan använda spärr inställningar för hela organisationen för att adressera falska negativa (missade skräp post), men du bör även skicka dessa meddelanden till Microsoft för analys. Om du hanterar falska Negatives genom att använda blockerade listor blir administrationen betydligt bättre. Om du använder blockeringslistan för att sätta på missade skräp post måste du hålla informationen om [meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md) när du är klar.
 
-Däremot har du också flera alternativ för att alltid tillåta e-post från specifika källor med hjälp av _säkra avsändarelistor_. Mer information finns i [Skapa listor över betrodda avsändare](create-safe-sender-lists-in-office-365.md).
+I motsats till det finns flera alternativ som gör att e-post alltid tillåts från specifika källor med _säkra avsändar listor_. Mer information finns i [Skapa listor över betrodda avsändare](create-safe-sender-lists-in-office-365.md).
 
-## <a name="email-message-basics"></a>Grunderna i e-postmeddelande
+## <a name="email-message-basics"></a>Grunderna i e-postmeddelanden
 
-Ett standardmeddelande för SMTP-meddelanden består av ett *meddelandekuvert* och meddelandeinnehåll. Meddelandekuvertet innehåller information som krävs för att överföra och leverera meddelandet mellan SMTP-servrar. Meddelandeinnehållet innehåller fält för meddelandehuvud (kallas gemensamt *meddelandehuvudet)* och meddelandetexten. Meddelandekuvertet beskrivs i RFC 5321 och meddelandehuvudet beskrivs i RFC 5322. Mottagarna ser aldrig det faktiska meddelandekuvertet eftersom det genereras av meddelandeöverföringsprocessen och det är faktiskt inte en del av meddelandet.
+Ett SMTP-standard-e-postmeddelande består av ett *meddelandes kuvert* och meddelande innehåll. Meddelandets kuvert innehåller information som krävs för överföring och leverans av meddelandet mellan SMTP-servrar. Meddelandets innehåll innehåller fält för meddelande rubrik (gemensamt kallat *meddelande huvudet*) och meddelande texten. Meddelandets kuvert beskrivs i RFC 5321 och meddelande huvudet beskrivs i RFC 5322. Mottagarna kan aldrig se det faktiska meddelandets kuvert eftersom det är genererat av meddelande överföringen och egentligen inte ingår i meddelandet.
 
-- `5321.MailFrom`Adressen (kallas även **MAIL FROM-adressen,** P1-avsändaren eller kuvertavsändaren) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen registreras vanligtvis i fältet **Retursökväg** i meddelandehuvudet (även om avsändaren kan ange en annan **e-postadress för retursökväg).** Om meddelandet inte kan levereras är det mottagaren för rapporten om utebliven leverans (kallas även NDR eller avvisningsmeddelande).
+- `5321.MailFrom`Adressen (kallas även för **e-post från** adress, P1 avsändare eller kuvert avsändare) är den e-postadress som används i SMTP-överföringen av meddelandet. Den här e-postadressen lagras normalt i huvud fältet för **RETUR-sökväg** i meddelande huvudet (även om det är möjligt för avsändaren att ange en annan e-postadress för **RETUR-sökvägen** ). Om det inte går att leverera meddelandet är det mottagaren för rapporten om utebliven leverans (kallas även för en NDR eller ett studs meddelande).
 
-- `5322.From`(även känd som **Från-adressen** eller P2-avsändaren) är e-postadressen i fältet **Från-huvud** och är avsändarens e-postadress som visas i e-postklienter.
+- `5322.From`(Kallas även **från** -adressen eller P2-avsändaren) är e-postadressen i fältet **från** huvud och är avsändarens e-postadress som visas i e-postklienter.
 
-Ofta är `5321.MailFrom` adresserna och `5322.From` desamma (kommunikation mellan person och person). Men när e-post skickas på uppdrag av någon annan, kan adresserna vara olika.
+Ofta är de `5321.MailFrom` och `5322.From` adresserna samma (person-till-person-kommunikation). Men när e-post skickas åt någon annan kan adresser vara olika.
 
-Blockerade avsändarelistor och blockerade domänlistor i anti-spam-principer i EOP inspekterar både `5321.MailFrom` `5322.From` och adresser. Outlook Blockerade avsändare använder bara `5322.From` adressen.
+Blockerade avsändare och blockerade domän listor i en policy för borttagning av skräp post i EOP inspektera både `5321.MailFrom` `5322.From` adresserna och. Spärrade avsändare i Outlook använder endast `5322.From` adressen.
 
-## <a name="use-outlook-blocked-senders"></a>Använda Outlook-blockerade avsändare
+## <a name="use-outlook-blocked-senders"></a>Använda spärrade avsändare i Outlook
 
-När endast ett litet antal användare fick oönskad e-post kan användare eller administratörer lägga till avsändarens e-postadresser i listan Blockerade avsändare i postlådan. Instruktioner finns i [Konfigurera inställningar för skräppost på Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
+När bara ett fåtal användare får oönskad e-post kan användare eller administratörer lägga till avsändarens e-postadresser i listan Spärrade avsändare i post lådan. Anvisningar finns i [Konfigurera inställningar för skräp post i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
 
-När meddelanden har blockerats på grund av en användares lista Blockerade avsändare innehåller huvudfältet **X-Forefront-Antispam-Report** värdet `SFV:BLK` .
+När meddelanden blockeras på grund av en användares lista med spärrade avsändare, innehåller fältet **X-antispam – rapport** huvud värdet `SFV:BLK` .
 
 > [!NOTE]
-> Om de oönskade meddelandena är nyhetsbrev från en ansedd och igenkännlig källa, är avskrivning från e-postmeddelandet ett annat alternativ för att hindra användaren från att ta emot meddelandena.
+> Om de oönskade meddelandena är nyhets brev från en seriös och igenkännlig källa är det ett annat alternativ att avbryta användaren från att ta emot meddelanden.
 
-## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Använda blockerade avsändarelistor eller blockerade domänlistor
+## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Använda spärrade avsändare listor eller blockerade domän listor
 
-När flera användare påverkas är omfattningen bredare, så det näst bästa alternativet är blockerade avsändarelistor eller blockerade domänlistor i anti-spam-principer. Meddelanden från avsändare i listorna markeras som **Skräppost**och den åtgärd som du har konfigurerat för domen i **skräppostfiltret** tas med i meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
+När flera användare påverkas är omfattningen bredare, så det bästa alternativet är blockerade avsändare listor eller blockerade domän listor i principer för skräp post. Meddelanden från avsändare i listorna markeras som **skräp post**och åtgärden som du har konfigurerat för **skräp post** filtret Verdict tas med i meddelandet. Mer information finns i [Konfigurera principer för skräppostskydd](configure-your-spam-filter-policies.md).
 
-Den maximala gränsen för dessa listor är cirka 1000 poster.
+Högsta tillåtna gräns för dessa listor är ungefär 1000 poster.
 
 ## <a name="use-mail-flow-rules"></a>Använda regler för e-postflöde
 
-Om du behöver blockera meddelanden som skickas till specifika användare eller i hela organisationen kan du använda regler för e-postflöde. Regler för e-postflöde är mer flexibla än blockavsändare eller blockerade avsändaredomänlistor eftersom de också kan söka efter nyckelord eller andra egenskaper i de oönskade meddelandena.
+Om du behöver spärra meddelanden som skickas till specifika användare eller i hela organisationen kan du använda regler för e-postflöde. Regler för e-postflöde är mer flexibla än spärrade avsändare eller spärrade avsändare domän listor eftersom de också kan leta efter nyckelord eller andra egenskaper i de oönskade meddelandena.
 
-Oavsett de villkor eller undantag som du använder för att identifiera meddelandena konfigurerar du åtgärden för att ställa in skräppostförtroendenivån (SCL) för meddelandet till 9, vilket markerar meddelandet som ett **skräppost med högt förtroende**. Mer information finns i [Använda regler för e-postflöde för att ange SCL i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Oavsett vilka villkor eller undantag som du använder för att identifiera meddelanden kan du konfigurera åtgärden för att ställa in meddelandets säkerhets nivå (SCL) för meddelandet till 9, vilket markerar meddelandet som **skräp post**. Mer information finns i [använda regler för e-postflöde för att ange SCL i meddelanden](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 > [!IMPORTANT]
-> Det är enkelt att skapa regler som är *alltför* aggressiva, så det är viktigt att du bara identifierar de meddelanden som du vill blockera med mycket specifika kriterier. Se också till att aktivera granskning av regeln och testa resultatet av regeln för att säkerställa att allt fungerar som förväntat.
+> Det är enkelt att skapa regler *som är mycket* aggressiva, så det är viktigt att du bara identifierar de meddelanden som du vill blockera genom att använda specifika villkor. Kontrol lera också att du aktiverar granskning för regeln och testar resultatet av regeln för att se till att allting fungerar som förväntat.
 
-## <a name="use-the-ip-block-list"></a>Använda IP-blockeringslistan
+## <a name="use-the-ip-block-list"></a>Använd IP-blockeringslistan
 
-När det inte är möjligt att använda något av de andra alternativen för att blockera en avsändare bör du *först då* använda IP-blockeringslistan i anslutningsfilterprincipen. Mer information finns i [konfigurera policy för anslutningsfilter](configure-the-connection-filter-policy.md). Det är viktigt att hålla antalet blockerade IP-adresser till ett minimum, så att blockera hela IP-adressintervall rekommenderas *inte.*
+När det inte går att använda något av de andra alternativen för att blockera en avsändare ska du *bara* använda IP-blockeringslistan i princip för anslutnings filter. Mer information finns i [konfigurera policy för anslutningsfilter](configure-the-connection-filter-policy.md). Det är viktigt att du behåller det minsta antalet blockerade IP-adresser så att hela IP-adressintervall *inte* rekommenderas.
 
-Du bör *särskilt* undvika att lägga till IP-adressintervall som tillhör konsumenttjänster (till exempel outlook.com) eller delade infrastrukturer, och även se till att du granskar listan över blockerade IP-adresser som en del av regelbundet underhåll.
+Du bör *särskilt* undvika att lägga till IP-adressintervall som tillhör konsument tjänster (till exempel Outlook.com) eller delade infrastrukturer, samt att se till att du granskar listan med blockerade IP-adresser som en del av vanligt underhåll.

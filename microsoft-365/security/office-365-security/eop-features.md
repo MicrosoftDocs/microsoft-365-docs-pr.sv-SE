@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: I följande tabell finns en lista med funktioner som är tillgängliga i e-postfiltret för Exchange Online Protection (EOP).
-ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 0df2f9afa8be6feba6734d2b07e7b7de5c13c994
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652879"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827779"
 ---
 # <a name="eop-features"></a>Funktioner i EOP
 
@@ -77,7 +77,7 @@ I följande tabell finns en lista med funktioner som är tillgängliga i e-postf
 |Kontrol lera bifogade filer|Du kan granska innehållet i en bilaga eller egenskaperna för en bifogad fil och definiera en åtgärd som ska utföras baserat på vad som hittas. Mer information finns i [använda regler för e-postflöde för att kontrol lera bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).|
 |**Administration**||
 |Webbaserad administration|Administratörer kan hantera tjänsten i administrations centret för Exchange (UK), som stöds i 60-språk. Mer information finns i [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).|
-|Katalog-synkronisering|Directory-synkronisering är tillgänglig via Azure Active Directory Sync Tool. Mer information finns i avsnittet "använda katalog synkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).|
+|Katalogsynkronisering:|Directory-synkronisering är tillgänglig via Azure Active Directory Sync Tool. Mer information finns i avsnittet "använda katalog synkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md).|
 |Mappbaserade Edge-blockering (DBEB)|Med funktionen DBEB kan du avvisa meddelanden om ogiltiga mottagare i tjänst nätverkets perimeter. DBEB låter administratörer lägga till e-postaktiverade mottagare i Microsoft 365 och blockera alla meddelanden som skickas till e-postadresser som inte finns i Microsoft 365. Mer information om hur du konfigurerar DBEB finns i [använda katalogbaserade kant spärr för att neka meddelanden skickade till ogiltiga mottagare](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
 |PowerShell|Fullständiga funktioner för EOP är tillgängliga i fristående EOP PowerShell. Mer information finns i [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).|
 |**Rapportering och loggning**||
@@ -85,8 +85,8 @@ I följande tabell finns en lista med funktioner som är tillgängliga i e-postf
 |Webbaserade rapporter|Rapporterna för e-postskydd i säkerhets & Compliance tillhandahåller meddelande data. Du kan till exempel övervaka hur mycket skräp post och skadlig kod som identifieras eller hur ofta dina e-postflöden matchas. Med dessa interaktiva rapporter kan du snabbt få en visuell rapport om sammanfattnings data och öka detalj nivån till information om enskilda meddelanden, så långt tillbaka som 90 dagar. Mer information finns i [använda e-postskydds rapporter för att visa information om skadlig program vara, skräp post och identifiering av regler](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
 |Gransknings loggning|Roll gruppen administratör och administratörs gransknings loggen är tillgängliga för EOP-administratörer. Mer information finns i [granska rapporter i EOP](auditing-reports-in-eop.md).|
 |**Service nivå avtal (SLAs) och support**||
-|Service nivå avtal för skräp post|\>99%|
-|Falskt positivt förhållande SLA|\<1:250000|
+|Service nivå avtal för skräp post|\> 99%|
+|Falskt positivt förhållande SLA|\< 1:250000|
 |SLA för virus avkänning och blockering|100% kända virus|
 |Månads vis drift tid SLA|99,999%|
 |Teknisk telefon och webb support dygnet runt, sju dagar i veckan|Mer information om EOP hjälp-och support alternativ finns i [Hjälp och support för EOP](help-and-support-for-eop.md).|

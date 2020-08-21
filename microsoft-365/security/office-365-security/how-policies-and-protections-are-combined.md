@@ -8,7 +8,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om program ordningen för skydd i Exchange Online Protection (EOP) och hur prioritet svärdet i skydds principer bestämmer vilken princip som tillämpas.
-ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653694"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827415"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Prioritetsordning för e-postskydd
 
@@ -42,12 +42,12 @@ Det finns två huvud faktorer som avgör vilken princip som tillämpas på ett m
   |amp;3D|Skräppost med hög konfidens|KAT: HSPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |9.4|Förfalskning|KAT: FALSKA IDENTITETER|[Konfigurera förfalsknings information i EOP](learn-about-spoof-intelligence.md)|
   |T5|Skräppost|KAT: SPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
-  |18.6|Bulk (Massutskick)|KAT: BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
+  |18.6|Massutskick|KAT: BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |borttagning<sup>\*</sup>|Domän personifiering (skyddade användare)|DIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
   |8.2<sup>\*</sup>|Användarens personifiering (skyddade domäner)|UIMP|[Konfigurera principer för ATP-skydd mot nätfiske](configure-atp-anti-phishing-policies.md)|
   |
 
-  <sup>\*</sup>Dessa funktioner är endast tillgängliga i principer för Stöldskydd mot ATP.
+  <sup>\*</sup> Dessa funktioner är endast tillgängliga i principer för Stöldskydd mot ATP.
 
 - **Prioriteten för principen**: för varje skydds typ (anti-spam, mot skadlig kod, anti-nätfiske etc.) finns det en standard princip som gäller för alla, men du kan skapa anpassade principer som gäller för specifika användare. Varje anpassad princip har ett prioritets värde som anger i vilken ordning principerna tillämpas. Standard principen tillämpas alltid sist.
 

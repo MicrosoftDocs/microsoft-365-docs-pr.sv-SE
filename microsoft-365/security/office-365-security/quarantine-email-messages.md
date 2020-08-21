@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -20,29 +20,29 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om karantän i Exchange Online Protection (EOP) som innehåller potentiellt farliga eller oönskade meddelanden.
-ms.openlocfilehash: 71a5f32fe6888d751bf2c4020fca4df671ac96d1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d2ccf174ae929c6db14f2a5319e9594495c0778e
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208288"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826807"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>E-postmeddelanden i karantän i EOP
 
-I Microsoft 365-organisationer med postlådor i Exchange Online- eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor är karantän tillgänglig för att lagra potentiellt farliga eller oönskade meddelanden.
+I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor är det möjligt att hålla farliga eller oönskade meddelanden.
 
-Policyer mot skadlig kod sätter automatiskt ett meddelande i karantän om *någon* bifogad fil visar sig innehålla skadlig kod. Mer information finns i [Konfigurera principer mot skadlig kod i EOP](configure-anti-malware-policies.md).
+Principer mot skadlig program vara automatiskt karantän ett meddelande *om en* bifogad fil hittas för att innehålla skadlig kod. Mer information finns i [Konfigurera principer för skydd mot skadlig program vara i EOP](configure-anti-malware-policies.md).
 
-Som standard, anti-spam polisen karantän phishing-meddelanden, och leverera skräppost och bulk e-postmeddelanden till användarens skräppostmapp. Men du kan också skapa och anpassa anti-spam-policyer för att sätta skräppost och massmeddelanden i karantän. Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
+Som standard bevarar antivirus program nät fiske meddelanden och skickar skräp post och Mass utskick via e-post till användarens mapp för skräp post. Men du kan också skapa och anpassa principer för skräp post till skräp post och Mass utskick via e-post. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
 Både användare och administratörer kan arbeta med meddelanden i karantän:
 
-- Administratörer kan arbeta med alla typer av meddelanden i karantän för alla användare. Endast administratörer kan arbeta med meddelanden som har satts i karantän som skadlig kod, nätfiske med högt förtroende eller som ett resultat av regler för e-postflöde (kallas även transportregler). Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
+- Administratörer kan arbeta med alla typer av meddelanden i karantän för alla användare. Endast administratörer kan arbeta med meddelanden som satts i karantän som skadlig program vara, högsäker nät fiske eller resultat av regler för e-postflöde (kallas även transport regler). Mer information finns i [Hantera meddelanden och filer i karantän som administratör i EOP](manage-quarantined-messages-and-files.md).
 
-- Användare kan arbeta med meddelanden i karantän där de är mottagare om meddelandet har satts i karantän som skräppost, massmeddelande eller (från och med april 2020) nätfiske. Mer information finns i [Hitta och släppa meddelanden i karantän som användare i EOP](find-and-release-quarantined-messages-as-a-user.md).
+- Användarna kan arbeta med meddelanden i karantän när de är en mottagare om meddelandet sattes i karantän som skräp post, Mass utskick eller (från april 2020) nätfiske. Mer information finns i [hitta och släppa meddelanden i karantän som en användare i EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-  För att förhindra att användare hanterar sina egna nätfiskemeddelanden i karantän kan administratörer konfigurera en annan åtgärd för **e-nätfiskefiltreringsdomen** i policyer för skräppostskydd. Mer information finns [i Konfigurera principer mot skräppost i EOP](configure-your-spam-filter-policies.md).
+  Administratörer kan konfigurera en annan åtgärd för Verdict för att förhindra att användare hanterar sina egna **nät fiske meddelanden** . Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
-- Administratörer och användare kan rapportera falska positiva identifieringar till Microsoft i karantän.
+- Administratörer och användare kan rapportera falska positiva positiv till Microsoft i karantän.
 
-Mer information om, karantän finns i [Vanliga frågor och svar](quarantine-faq.md)om karantän i karantän .
+Mer information om karantän finns i [vanliga frågor om karantän](quarantine-faq.md).

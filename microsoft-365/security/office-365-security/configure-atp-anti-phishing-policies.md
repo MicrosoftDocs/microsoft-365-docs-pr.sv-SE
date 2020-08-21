@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa mer om hur du skapar, ändrar och tar bort de avancerade AntiPhishing-principer som är tillgängliga i organisationer med Office 365-tjänsten för avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804238"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825743"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Konfigurera principer för ATP-skydd mot nätfiske
 
@@ -49,8 +49,8 @@ I Exchange Online PowerShell hanterar du policyn och regeln separat. Mer informa
 Varje Office 365 ATP-organisation har en inbyggd ATP-Antivirus princip som heter Office365 AntiPhish standard och har följande egenskaper:
 
 - Principen tillämpas på alla mottagare i organisationen, även om det inte finns någon anti-Phish-regel (mottagar filter) som är kopplade till principen.
-- Principen har det anpassade **prioritet svärdet som** du inte kan ändra (principen tillämpas alltid sist). Alla anpassade principer som du skapar alltid har högre prioritet.
-- Principen är standard princip (egenskapen **IsDefault** har värdet `True` ) och det går inte att ta bort standard principen.
+- Principen har det anpassade prioritetsvärdet **Lägsta** som du inte kan ändra (policyn tillämpas alltid sist). Alla anpassade policyer som du skapar har alltid högre prioritet.
+- Politik är standardpolicyn (egenskapen **IsDefault** har värdet `True`) och du kan inte ta bort standardpolicyn.
 
 För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade principer för ATP-nätfiske med striktare inställningar som tillämpas på specifika användare eller grupper av användare.
 
@@ -318,9 +318,9 @@ Du kan inte inaktivera standard policyn för skydd mot nätfiske.
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>Ange prioritet för anpassade Antivirus principer för ATP
 
-Som standard ges ATP-Antivirus principer en prioritet som baseras på den ordning de skapades (nyare principer är lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två principer kan ha samma prioritet och princip bearbetning stoppas efter den första principen tillämpas.
+Som standard ges ATP-Antivirus principer en prioritet som baseras på den ordning de skapades (nyare principer är lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
-Mer information om prioritetsordning och hur flera principer utvärderas och används finns i [order och prioritetsordning för e-postskydd](how-policies-and-protections-are-combined.md).
+För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
 Anpassade Antivirus principer för ATP visas i den ordning de behandlas (den första principen har **prioritet** svärdet 0). Standard policyn för anti-phishing med namnet Office365 AntiPhish standard har värdet **lägst**och kan inte ändras.
 

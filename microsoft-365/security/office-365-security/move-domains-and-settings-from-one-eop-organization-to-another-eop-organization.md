@@ -1,5 +1,5 @@
 ---
-title: Flytta domäner & inställningar från en EOP-organisation till en annan
+title: Flytta domäner & inställningar från en EOP organisation till en annan
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,63 +7,63 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation (klientorganisation) till en annan.
-ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: I den här artikeln får du lära dig hur du flyttar domäner och inställningar från en Microsoft Exchange Online Protection (EOP)-organisation till en annan.
+ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617456"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827695"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Flytta domäner och inställningar från en EOP-organisation till en annan
 
-Om du ändrar affärskrav kan det ibland krävas att en Organisation (EOP) (Microsoft Exchange Online Protection) (2019) delas upp i två separata organisationer, sammanför två organisationer till en eller att dina domäner och EOP-inställningar flyttas från en organisation till en annan organisation. Att gå från en EOP-organisation till en andra EOP-organisation kan vara en utmaning, men med några grundläggande fjärrskript för Windows PowerShell och en liten mängd förberedelser kan detta uppnås med ett relativt litet underhållsfönster.
+Du kan ibland behöva dela en Microsoft Exchange Online Protection-organisation (EOP) i två separata organisationer, slå samman två organisationer till en eller flytta domän-och EOP-inställningar från en organisation till en annan organisation. Att förflytta dig från en EOP-organisation till en andra EOP-organisation kan vara utmanande, men med ett fåtal grundläggande Windows PowerShell-skript och en liten mängd förberedelse kan detta uppnås med ett relativt litet underhålls fönster.
 
 > [!NOTE]
-> Inställningar kan endast flyttas på ett tillförlitligt sätt från en EOP-fristående organisation (Standard) till antingen en annan EOP-standard eller en Exchange Enterprise CAL med Services (EOP Premium) organisation, eller från en EOP Premium-organisation till en annan EOP Premium-organisation. Eftersom vissa premiumfunktioner inte stöds i EOP Standard-organisationer kanske det inte går att flytta från en EOP Premium-organisation till en EOP Standard-organisation. <br><br> Dessa instruktioner gäller för EOP-filtreringsorganisationer. Det finns ytterligare överväganden när du flyttar från en Exchange Online-organisation till en annan Exchange Online-organisation. Exchange Online-organisationer har inte samma utrymme för dessa instruktioner.
+> Inställningarna kan endast göras tillförlitliga från en EOP fristående (standard) organisation till en annan EOP-standard eller en Exchange Enterprise-CAL med Service (EOP Premium)-organisation eller från en EOP Premium-organisation till en annan EOP Premium-organisation. Eftersom det inte går att använda vissa Premium-funktioner i EOP standard organisationer, flyttas från en EOP Premium-organisation till en EOP-standard organisation. <br><br> De här instruktionerna gäller för EOP-specifika organisationer. Det finns andra saker du bör tänka på när du flyttar från en Exchange Online-organisation till en annan Exchange Online-organisation. Exchange Online-organisationer saknar omfattning för dessa instruktioner.
 
-I följande exempel har Contoso, Ltd. gått samman med Contoso Suites. Följande bild visar processen för att flytta domäner, e-postanvändare och grupper samt inställningar från eop-organisationen (contoso.onmicrosoft.com) till mål-EOP-organisationen (contososuites.onmicrosoft.com):
+I följande exempel har contoso, Ltd. slagit samman med contoso-serier. Följande bild visar processen för att flytta domäner, e-postanvändare och grupper och inställningar från source EOP-organisationen (contoso.onmicrosoft.com) till mål EOP organisationen (contososuites.onmicrosoft.com):
 
-![Flytta EOP-domäner och inställningar](../../media/EOP-Move-domains-and-settings.jpg)
+![Flytta EOP-domäner och-inställningar](../../media/EOP-Move-domains-and-settings.jpg)
 
-Utmaningen med att flytta domäner från en organisation till en annan är att en verifierad domän inte kan finnas i två organisationer samtidigt. Följande steg hjälper dig att arbeta igenom detta.
+Utmaningen med att flytta domäner från en organisation till en annan är att en verifierad domän inte kan finnas i två organisationer samtidigt. Följ de här anvisningarna för att arbeta mer.
 
-## <a name="step-1-collect-data-from-the-source-organization"></a>Steg 1: Samla in data från källorganisationen
+## <a name="step-1-collect-data-from-the-source-organization"></a>Steg 1: samla in data från käll organisationen
 
-För att återskapa källorganisationen i målorganisationen kontrollerar du att du samlar in och lagrar följande information om källorganisationen:
+För att kunna återskapa käll organisationen i mål organisationen ska du se till att du samlar in och lagrar följande information om käll organisationen:
 
 - Domäner
 
-- Användare av e-post
+- E-postanvändare
 
 - Grupper
 
-- Anti-spam
+- Skydd mot skräp post
 
-  - Policyer mot skräppost (kallas även innehållsfilterprinciper)
-  - Principer för skräppostutgående skräppost
-  - Principer för anslutningsfilter
+  - Principer för skräp post (kallas även för principer för innehålls filter)
+  - Utgående filter principer för skräp post
+  - Principer för anslutnings filter
 
-- Policyer mot skadlig kod
+- Principer mot skadlig program vara
 
-- Kontakter
+- Koppling
 
-- Regler för e-postflöde (kallas även transportregler)
+- Regler för e-postflöde (kallas även transport regler)
 
   > [!NOTE]
-  > Cmdlet-stöd för export och import av e-postflödesregelsamlingen stöds för närvarande endast för EOP Premium-prenumerationsplaner.
+  > Cmdlet-stöd för att kunna exportera och importera regel samlingen för e-postflöde stöds för närvarande endast för EOP Premium-abonnemang.
 
-Det enklaste sättet att samla alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+Det enklaste sättet att samla in alla dina inställningar är att använda PowerShell. Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-Därefter kan du samla in alla dina inställningar och exportera dem till en XML-fil som ska importeras till målklienten. I allmänhet kan du skriva **Get** utdata för Get-cmdlet för varje inställning till **cmdleten Export-Clixml** för att spara inställningarna i XML-filer, som visas i följande kodexempel.
+Sedan kan du samla in alla dina inställningar och exportera dem till en XML-fil som ska importeras till mål klient organisationen. I allmänhet kan du gå till utdata från cmdleten **Get** för varje inställning till cmdleten **export-CliXml** för att spara inställningarna i XML-filer, enligt följande kod exempel.
 
-Skapa en katalog som heter Exportera på en plats som är lätt att hitta och ändra till den katalogen i fristående EOP PowerShell. Ett exempel:
+I fristående EOP PowerShell skapar du en katalog som heter exportera på en plats som är lätt att hitta och ändra till den katalogen. Till exempel:
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -73,7 +73,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Följande skript kan användas för att samla in alla e-postanvändare, grupper, anti-spam-inställningar, inställningar mot skadlig kod, kopplingar och regler för e-postflöde i källorganisationen. Kopiera och klistra in följande text i en textredigerare som Anteckningar, spara filen som Source_EOP_Settings.ps1 i exportkatalogen som du just skapade och kör följande kommando:
+Följande skript kan användas för att samla alla e-postanvändare, grupper, inställningar för skräp post, inställningar för skadlig program vara, kopplingar och regler för e-postflöden i käll organisationen. Kopiera och klistra in följande text i en text redigerare, till exempel anteckningar, och spara filen som Source_EOP_Settings.ps1 i export katalogen du just skapade och kör följande kommando:
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -145,22 +145,22 @@ $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 ```
 
-Kör följande kommandon från exportkatalogen för att uppdatera XML-filerna med målorganisationen. Ersätt contoso.onmicrosoft.com och contososuites.onmicrosoft.com med dina käll- och målorganisationsnamn.
+Kör följande kommandon från export katalogen för att uppdatera XML-filerna med mål organisationen. Ersätt contoso.onmicrosoft.com och contososuites.onmicrosoft.com med företagets namn.
 
 ```PowerShell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
 
-## <a name="step-2-add-domains-to-the-target-organization"></a>Steg 2: Lägga till domäner i målorganisationen
+## <a name="step-2-add-domains-to-the-target-organization"></a>Steg 2: lägga till domäner i mål organisationen
 
-Lägg till domäner i målorganisationen med hjälp av följande skript. Kopiera och klistra in texten i en textredigerare som Anteckningar, spara skriptet som C:\EOP\Export\Add_Domains.ps1 och kör följande kommando:
+Lägg till domäner i mål organisationen med hjälp av följande skript. Kopiera och klistra in texten i en text redigerare som anteckningar, Spara skriptet som C:\EOP\Export\Add_Domains.ps1 och kör följande kommando:
 
 ```PowerShell
 & "C:\EOP\Export\Add_Domains.ps1"
 ```
 
-Dessa domäner verifieras inte och kan inte användas för att dirigera e-post, men när domänerna har lagts till kan du samla in den information som behövs för att verifiera domänerna och så småningom uppdatera dina MX-poster för den nya klienten.
+De här domänerna verifieras inte och kan inte användas för att dirigera e-post, men när domäner har lagts till kan du samla in information som behövs för att verifiera domänerna och slutligen uppdatera dina MX-poster för den nya innehavaren.
 
 ```PowerShell
 #***********************************************************************
@@ -177,38 +177,38 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-Nu kan du granska och samla in information från Microsoft 365-administrationscentret för din målorganisation så att du snabbt kan verifiera dina domäner när det är dags:
+Nu kan du granska och samla in informationen från administrations centret för Microsoft 365 i din mål organisation så att du snabbt kan verifiera dina domäner när tiden blir:
 
-1. Logga in på Microsoft 365 admin center på <https://portal.office.com> .
+1. Logga in på administrations centret för Microsoft 365 på <https://portal.office.com> .
 
-2. Klicka på **Domäner**.
+2. Klicka på **domäner**.
 
-   Om du inte ser domäner klickar du på **Anpassa navigering,** väljer **Installationsprogrammet**och sedan på **Spara**.
+   Om du inte ser domäner klickar du på **Anpassa navigering**, väljer **Konfigurera**och klickar sedan på **Spara**.
 
-3. Klicka på varje **länk för startinställningar** och fortsätt sedan genom installationsguiden.
+3. Klicka på länken **Start setup** och fortsätt sedan med installations guiden.
 
-4. På sidan **Bekräfta ägarskap** väljer du **Allmänna instruktioner**för **Se steg-för-steg-instruktioner för att utföra det här steget med**.
+4. Välj **allmänna instruktioner**för att **Visa stegvisa instruktioner för hur du utför det här steget**på sidan **bekräfta ägande** .
 
-5. Spela in MX-posten eller TXT-posten som du ska använda för att verifiera domänen och slutför installationsguiden.
+5. Spela in MX-posten eller TXT-posten som du ska använda för att verifiera din domän och slutför installations guiden.
 
-6. Lägg till verifierings-TXT-posterna i dina DNS-poster. På så sätt kan du snabbare verifiera domänerna i källorganisationen när de har tagits bort från målorganisationen. Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Lägg till verifierings-TXT-posterna i dina DNS-poster. Då får du mer information om hur du snabbt kontrollerar domänerna i käll organisationen när de har tagits bort från mål organisationen. Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos en DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-## <a name="step-3-force-senders-to-queue-mail"></a>Steg 3: Tvinga avsändare att köa e-post
+## <a name="step-3-force-senders-to-queue-mail"></a>Steg 3: tvinga avsändare att köa e-post
 
-När du flyttar domänerna från en klient till en annan måste du ta bort domänerna från källorganisationen och sedan verifiera dem i din målorganisation. Under den här tiden kan du inte dirigera e-post via EOP.
+När du flyttar domäner från en klient organisation till en annan måste du ta bort domänerna från käll organisationen och sedan verifiera dem i din mål organisation. Under tiden kan du inte dirigera e-post till EOP.
 
-Ett alternativ för att tvinga avsändare att köa e-post är att uppdatera MX-posterna så att de pekar direkt på den lokala e-postservern.
+Ett alternativ till att tvinga avsändare att köa e-post är att uppdatera MX-posterna så att de pekar direkt till den lokala e-postservern.
 
-Ett annat alternativ är att placera en ogiltig MX-post i varje domän där DNS-posterna för din domän sparas (kallas även dns-värdtjänst). Detta medför att avsändaren köar e-post och försöker igen (typiska försök att försöka igen är i 48 timmar, men det kan variera från leverantör till leverantör). Du kan använda invalid.outlook.com som ett ogiltigt MX-mål. Genom att sänka värdet för tid till live (TTL) till fem minuter på MX-posten kan ändringen spridas till DNS-providers snabbare.
+Ett annat alternativ är att lägga till en ogiltig MX-post i varje domän där DNS-posterna för din domän bevaras (kallas även din DNS-värd). Detta kommer att orsaka att avsändaren köas din e-post och försöker igen (vanliga försök är för 48 timmar men detta kan variera från leverantör till leverantör). Du kan använda invalid.outlook.com som ett ogiltigt MX-mål. Om du sänker TTL-värdet (Time to Live) till fem minuter i MX-posten kan ändringen spridas till DNS-leverantörer snabbare.
 
-Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos en DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!IMPORTANT]
-> Olika leverantörer köar post under olika tidsperioder. Du måste konfigurera din nya klient organisation snabbt och återställa DNS-inställningarna för att undvika att icke-leveransrapporter (NDRs) skickas till avsändaren om kötiden går ut.
+> Olika providrar i kö för olika tids perioder. Du måste konfigurera din nya klient organisation snabbt och återställa dina DNS-inställningar för att undvika att rapporter om utebliven leverans (NDR) skickas till avsändaren om tiden för kön upphör.
 
-## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>Steg 4: Ta bort användare, grupper och domäner från källorganisationen
+## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>Steg 4: ta bort användare, grupper och domäner från käll organisationen
 
-Följande skript tar bort användare, grupper och domäner från källklienten med hjälp av Azure Active Directory PowerShell. Kopiera och klistra in följande text i en textredigerare som Anteckningar, spara filen som C:\EOP\Export\Remove_Users_and_Groups.ps1 och kör följande kommando:
+Följande skript tar bort användare, grupper och domäner från käll klient organisationen med Azure Active Directory PowerShell. Kopiera och klistra in följande text i en text redigerare som anteckningar, spara filen som C:\EOP\Export\Remove_Users_and_Groups.ps1 och kör följande kommando:
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
@@ -247,19 +247,19 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 }
 ```
 
-## <a name="step-5-verify-domains-for-the-target-organization"></a>Steg 5: Verifiera domäner för målorganisationen
+## <a name="step-5-verify-domains-for-the-target-organization"></a>Steg 5: verifiera domänerna för mål organisationen
 
-1. Logga in på administrationscentret på [https://portal.office.com](https://portal.office.com) .
+1. Logga in på administrations centret på [https://portal.office.com](https://portal.office.com) .
 
-2. Klicka på **Domäner**.
+2. Klicka på **domäner**.
 
-3. Klicka på varje **startinställningslänk** för måldomänen och gå vidare genom installationsguiden.
+3. Klicka på **Start installations** länken för mål domänen och fortsätt med installations guiden.
 
-## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Steg 6: Lägga till e-postanvändare och e-postgrupper i målorganisationen
+## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Steg 6: lägga till e-postanvändare och grupper i mål organisationen
 
-En bra metod för EOP är att använda Azure Active Directory för att synkronisera din lokala Active Directory till din målklient. Mer information om hur du gör detta finns i "Använd katalogsynkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md). Du kan också använda följande skript för att återskapa användare och grupper från källklienten. Det går inte att flytta användarlösenord. Nya användarlösenord skapas och sparas i filen UsersAndGroups.ps1.
+Metod tips för EOP är att använda Azure Active Directory för att synkronisera din lokala Active Directory med din mål klient organisation. Mer information om hur du gör detta finns i "använda katalog synkronisering för att hantera e-postanvändare" i [Hantera e-postanvändare i EOP](manage-mail-users-in-eop.md). Du kan också använda följande skript för att återskapa användarna och grupperna från din käll klient organisation. Obs! användar lösen ord kan inte flyttas. Nya lösen ord skapas och sparas i filen med namnet UsersAndGroups.ps1.
 
-Om du vill använda skriptet kopierar och klistrar du in följande text i en textredigerare som Anteckningar, sparar filen som C:\EOP\Export\Add_Users_and_Groups.ps1 och kör följande kommando:
+Om du vill använda skriptet kopierar och klistrar du in följande text i en text redigerare som anteckningar, sparar filen som C:\EOP\Export\Add_Users_and_Groups.ps1 och kör följande kommando:
 
 ```PowerShell
 & "C:\EOP\Export\Add_Users_and_Groups.ps1"
@@ -607,11 +607,11 @@ if($MailContactsCount -gt 0){
 }
 ```
 
-## <a name="step-7-add-protection-settings-to-the-target-organization"></a>Steg 7: Lägga till skyddsinställningar i målorganisationen
+## <a name="step-7-add-protection-settings-to-the-target-organization"></a>Steg 7: lägga till skydds inställningar i mål organisationen
 
-Du kan köra följande skript från exportkatalogen när du är inloggad i målorganisationen för att återskapa inställningarna som exporterades till XML-filer tidigare från källorganisationen.
+Du kan köra följande skript från export katalogen när du är inloggad på din mål organisation för att återskapa de exporterade inställningarna till XML-filer tidigare från käll organisationen.
 
-Kopiera och klistra in skripttexten i en textredigerare som Anteckningar, spara filen som C:\EOP\Export\Import_Settings.ps1 och kör följande kommando:
+Kopiera och klistra in skript texten i en text redigerare som anteckningar, spara filen som C:\EOP\Export\Import_Settings.ps1 och kör följande kommando:
 
 ```PowerShell
 & "C:\EOP\Export\Import_Settings.ps1"
@@ -646,11 +646,11 @@ rm -erroraction 'silentlycontinue' $outfile
 #****************************************************************************
 # HostedContentFilterPolicy
 #****************************************************************************
-$HostedContentFilterPolicys = Import-Clixml ".\HostedContentFilterPolicy.xml"
-$HostedContentFilterPolicyCount = $HostedContentFilterPolicys.Name.Count
+$HostedContentFilterPolicies = Import-Clixml ".\HostedContentFilterPolicy.xml"
+$HostedContentFilterPolicyCount = $HostedContentFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedContentFilterPolicyCount Inbound Connectors"
-    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicys) {
+    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicies) {
         $HostedContentFilterPolicyCmdlet = "New-HostedContentFilterPolicy"
         if($HostedContentFilterPolicy.Name -eq "Default") {$HostedContentFilterPolicyCmdlet = "Set-HostedContentFilterPolicy -Identity Default"}
         else {
@@ -726,11 +726,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedOutboundSpamFilterPolicy
 #****************************************************************************
-$HostedOutboundSpamFilterPolicys = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
-$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicys.Name.Count
+$HostedOutboundSpamFilterPolicies = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
+$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedOutboundSpamFilterPolicyCount Hosted Outbound Spam Filter Policies"
-    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicys) {
+    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicies) {
         $HostedOutboundSpamFilterPolicyCmdlet = "Set-HostedOutboundSpamFilterPolicy Default"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedOutboundSpamFilterPolicy.AdminDisplayName
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients"
@@ -747,11 +747,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedConnectionFilterPolicy
 #****************************************************************************
-$HostedConnectionFilterPolicys = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
-$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicys.Name.Count
+$HostedConnectionFilterPolicies = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
+$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedConnectionFilterPolicyCount Hosted Connection Filter Policies"
-    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicys) {
+    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicies) {
         $HostedConnectionFilterPolicyCmdlet = "Set-HostedConnectionFilterPolicy"
         $HostedConnectionFilterPolicyCmdlet += makeparam "Identity" $HostedConnectionFilterPolicy.Name
         $HostedConnectionFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedConnectionFilterPolicy.AdminDisplayName
@@ -768,11 +768,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # MalwareFilterPolicy
 #****************************************************************************
-$MalwareFilterPolicys = Import-Clixml ".\MalwareFilterPolicy.xml"
-$MalwareFilterPolicyCount = $MalwareFilterPolicys.Name.Count
+$MalwareFilterPolicies = Import-Clixml ".\MalwareFilterPolicy.xml"
+$MalwareFilterPolicyCount = $MalwareFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $MalwareFilterPolicyCount Malware Filter Policies"
-    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicys) {
+    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicies) {
         $MalwareFilterPolicyCmdlet = "New-MalwareFilterPolicy"
         if($MalwareFilterPolicy.Name -eq "Default") {$MalwareFilterPolicyCmdlet = "Set-MalwareFilterPolicy Default"}
         else {
@@ -929,6 +929,6 @@ if($HostedContentFilterPolicyCount -gt 0){
  }
 ```
 
-## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Steg 8: Återställ DNS-inställningarna för att stoppa e-postköer
+## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Steg 8: återställa DNS-inställningarna för att stoppa e-postköer
 
-Om du väljer att ange MX-posterna till en ogiltig adress så att avsändarna köar e-post under övergången måste du ställa tillbaka dem till rätt värde enligt [administrationscentret](https://admin.microsoft.com). Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos alla DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Om du väljer att ange dina MX-poster till en ogiltig adress för att ge avsändaren behörighet att köa e-post under över gången måste du återställa dem till rätt värde som anges i [administrations centret](https://admin.microsoft.com). Mer information om hur du konfigurerar DNS finns i [Skapa DNS-poster hos en DNS-värd för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).

@@ -6,18 +6,18 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratörer kan läsa mer om insikter och rapporter som är tillgängliga i instrument panelen för e-postflöde i säkerhets & Compliance Center.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577799"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826571"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-postflödesinsikter i Säkerhets- och efterlevnadscenter
 
@@ -27,13 +27,13 @@ Administratörer kan använda instrument panelen för e-postflöden i säkerhets
 
 Tillgängliga insikter är:
 
-- [Inblick i meddelanden som skickas automatiskt](mfi-auto-forwarded-messages-report.md)
+- [Auto-vidarebefordrade meddelanden insikt](mfi-auto-forwarded-messages-report.md)
 
 - [Åtgärda möjliga e-postloop Insight](mfi-mail-loop-insight.md)<sup>1</sup>
 
 - [Åtgärda regler för långsam e-postflöde, inblick](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Översikt över e-postflöde](mfi-mail-flow-map-report.md)
+- [E-postflödeskarta](mfi-mail-flow-map-report.md)
 
 - [Nya domäner vidarekopplas med e-post, Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
@@ -43,11 +43,11 @@ Tillgängliga insikter är:
 
 - [Rapport om misslyckad leverans](mfi-non-delivery-report.md)
 
-- [Ingående och inkommande e-postflöde](mfi-outbound-and-inbound-mail-flow.md)
+- [Insikt om utgående och inkommande e-postflöden](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Inblick i köer](mfi-queue-alerts-and-queues.md)
+- [Köer insikt](mfi-queue-alerts-and-queues.md)
 
-- [SMTP-AUTH-klienter inblick och rapport](mfi-smtp-auth-clients-report.md)
+- [SMTP Auth-klienter insikt och rapport](mfi-smtp-auth-clients-report.md)
 
 - [Insikten E-postflödesstatus för översta domäner](mfi-domain-mail-flow-status-insight.md)
 

@@ -6,68 +6,68 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Administratörer kan lära sig att identifiera orsakerna till och hur ett nätfiskemeddelande kom fram i Microsoft 365 och vad de ska göra för att förhindra fler nätfiskemeddelanden i framtiden.
-ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+description: Administratörer kan lära sig att identifiera varför och hur ett nät fiske meddelande gick igenom i Microsoft 365 och vad man bör göra för att förhindra fler nät fiske meddelanden i framtiden.
+ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755058"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825215"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
-Även om Microsoft 365 levereras med en mängd olika funktioner mot nätfiske som är aktiverade som standard, är det möjligt att vissa nätfiskemeddelanden fortfarande kan komma fram till dina postlådor. I det här avsnittet beskrivs vad du kan göra för att ta reda på varför ett nätfiskemeddelande kom fram och vad du kan göra för att justera inställningarna mot nätfiske i din Microsoft 365-organisation utan att _göra det värre_.
+Ã ven om Microsoft 365 kommer med en mängd anti-nätfiske-funktioner som är aktiverade som standard, är det möjligt att vissa nät fiske meddelanden ändå kan komma fram till dina post lådor. I det här avsnittet beskrivs vad du kan göra för att ta reda på varför ett nät fiske meddelande hamnade och vad du kan göra för att justera inställningarna för nät fiske i din Microsoft 365-organisation _utan att göra saker ännu värre_.
 
-## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Första saker först: ta itu med eventuella komprometterade konton och se till att du blockerar fler nätfiskemeddelanden från att komma igenom
+## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Först: hantera alla kompromissade konton och kontrol lera att du blockerar fler nät fiske meddelanden från att komma igenom
 
-Om en mottagares konto har komprometterats till följd av nätfiskemeddelandet följer du stegen i [Att svara på ett komprometterat e-postkonto i Microsoft 365](responding-to-a-compromised-email-account.md).
+Om en mottagares konto har komprometterats som ett resultat av nät fiske meddelandet följer du stegen i [svara på ett anslaget e-postkonto i Microsoft 365](responding-to-a-compromised-email-account.md).
 
-Om din prenumeration innehåller Atp (Advanced Threat Protection) kan du använda [Office 365 Threat Intelligence](office-365-ti.md) för att identifiera andra användare som också har fått nätfiskemeddelandet. Du har ytterligare alternativ för att blockera nätfiskemeddelanden:
+Om ditt abonnemang inkluderar Avancerat skydd (ATP) kan du använda [Office 365 Threat Intelligence](office-365-ti.md) för att identifiera andra användare som också har tagit emot nät fiske meddelandet. Du har ytterligare alternativ för att blockera nät fiske meddelanden:
 
 - [Säkra ATP-länkar](set-up-atp-safe-links-policies.md)
 
-- [ATP säkra bilagor](set-up-atp-safe-attachments-policies.md)
+- [Säkra filer för ATP](set-up-atp-safe-attachments-policies.md)
 
-- [ATP:s principer för phishing-phishing i Microsoft 365](configure-atp-anti-phishing-policies.md). Observera att du tillfälligt kan öka **tröskelvärdena för avancerat nätfiske** i principen från **Standard** till **Aggressiv,** **Mer aggressiv**eller **Mest aggressiva**.
+- [ATP anti-phishing-principer i Microsoft 365](configure-atp-anti-phishing-policies.md). Observera att du kan tillfälligt öka de **avancerade nät fiske trösklarna** i principen från **standard** till **aggressivt**, **mer aggressivt**eller **de flesta aggressivt**.
 
-Kontrollera att dessa ATP-funktioner är aktiverade.
+Kontrol lera att dessa ATP-funktioner är aktiverade.
 
-## <a name="report-the-phishing-message-to-microsoft"></a>Rapportera nätfiskemeddelandet till Microsoft
+## <a name="report-the-phishing-message-to-microsoft"></a>Rapportera nät fiske meddelandet till Microsoft
 
-Att rapportera nätfiskemeddelanden är användbart när du justerar de filter som används för att skydda alla kunder i Microsoft 365. Instruktioner finns i [Rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+Att rapportera nät fiske meddelanden är användbart när du vill justera filtren som används för att skydda alla kunder i Microsoft 365. Anvisningar finns i [rapportera meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="inspect-the-message-headers"></a>Kontrollera meddelanderubrikerna
+## <a name="inspect-the-message-headers"></a>Kontrol lera meddelande rubrikerna
 
-Du kan undersöka rubrikerna i nätfiskemeddelandet för att se om det finns något du kan göra själv för att förhindra att fler nätfiskemeddelanden kommer igenom. Med andra ord kan granskningen av meddelandenrubrikerna hjälpa dig att identifiera alla inställningar i organisationen som var ansvariga för att tillåta nätfiskemeddelandena.
+Du kan granska meddelande huvudena för nät fiske meddelandet för att se om det finns något du kan göra för att förhindra att fler nät fiske meddelanden kommer fram. Med andra ord kan du med hjälp av meddelande rubrikerna se vilka inställningar i organisationen som är ansvariga för att tillåta nät fiske meddelanden.
 
-Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i meddelanderubrikerna för indikationer på överhoppad skräppost eller phish-filtrering i värdet För skräppostfiltrering (SFV). Meddelanden som hoppar över filtrering kommer att ha en post `SCL:-1` i , vilket innebär att en av dina inställningar tillåts detta meddelande genom att åsidosätta spam eller phish domar som bestämdes av tjänsten. Mer information om hur du får meddelanderubriker och en fullständig lista över alla tillgängliga rubriker mot skräppost och anti-phish finns [i Rubriker för skräppostmeddelande i Microsoft 365](anti-spam-message-headers.md).
+Om du vill kan du kontrol lera om fältet **X-antispam-rapport** huvud i meddelande rubrikerna inte har hoppat över skräp post eller PHISH i SFV-värdet. Meddelanden som hoppar över filtrering kommer att ha en inmatning `SCL:-1` , vilket innebär att en av dina inställningar tillåter det här meddelandet genom att åsidosätta skräp post eller Phish verdicts som bestämts av tjänsten. Mer information om hur du hämtar meddelande rubriker och en fullständig lista över alla tillgängliga skräp post-och Phish meddelande rubriker finns i [meddelande rubriker för skräp post i Microsoft 365](anti-spam-message-headers.md).
 
-## <a name="best-practices-to-stay-protected"></a>Bästa praxis för att skydda
+## <a name="best-practices-to-stay-protected"></a>Metod tips för att skydda dig
 
-- Kör [Säkerhetspoäng](../mtp/microsoft-secure-score.md) varje månad för att bedöma organisationens säkerhetsinställningar.
+- Per månad kan du använda [säkert Poäng](../mtp/microsoft-secure-score.md) för att utvärdera organisationens säkerhets inställningar.
 
-- För meddelanden som hamnar i karantän av misstag, eller för meddelanden som är tillåtna genom, rekommenderar vi att du söker efter dessa meddelanden i [Threat Explorer och realtidsidentifieringar](threat-explorer.md). Du kan söka efter avsändare, mottagare eller meddelande-ID. När du har hittat meddelandet går du till information genom att klicka på ämnet. För ett meddelande i karantän, se vad "identifieringsteknik" var så att du kan använda lämplig metod för att åsidosätta. Ett tillåtet meddelande finns i vilken princip som tillät meddelandet. 
+- För meddelanden som slutar med misstag eller för meddelanden som tillåts genom rekommenderar vi att du söker efter dessa meddelanden i [Threat Explorer och identifieringar i real tid](threat-explorer.md). Du kan söka efter avsändare, mottagare eller meddelande-ID. När du har hittat meddelandet går du till uppgifter genom att klicka på ämnet. Om du har ett meddelande i karantän kan du titta på "identifierings teknik", så att du kan använda lämplig metod för att åsidosätta. För ett tillåtet meddelande, se efter vilken princip som får meddelandet. 
 
-- Förfalskad e-post är taggad som phish i ATP. Ibland är parodi godartad, och ibland användare inte vill ha det i karantän. Om du vill minimera påverkan för användarna går du regelbundet igenom [informationsrapporten](learn-about-spoof-intelligence.md)för falska uppgifter . När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [konfigurera falska underrättelser](set-up-anti-phishing-policies.md#spoof-settings) till misstänkta meddelanden i **karantän** i stället för att leverera dem till användarens skräppostmapp.
+- Falsk e-post är märkt som Phish i ATP. Ibland är falska förfalskningar ofarliga och ibland vill användarna inte att den ska placeras i karantän. Om du vill minimera effekten för användarna kan du regelbundet granska [förfalsknings intelligens-rapporten](learn-about-spoof-intelligence.md). När du har granskat och gjort nödvändiga åsidosättningar kan du vara säker på att [Konfigurera förfalsknings intelligens](set-up-anti-phishing-policies.md#spoof-settings) mot **Quarantine** -misstänkta meddelanden i stället för att skicka dem till användarens mapp för skräp post.
 
-- Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsrapporten hittas under **Översikt** över \> **instrumentpanelen** för hothantering \> **Insights**.
+- Du kan upprepa ovanstående steg för personifiering (domän eller användare). Personifieringsnivå hittas under **Threat Management** \> **instrument panels** \> **insikter**för hot Management.
 
-- Granska [regelbundet rapporten Status för skydd mot hot](view-reports-for-atp.md#threat-protection-status-report).
+- Gå regelbundet igenom [status rapporten för hotet skydd](view-reports-for-atp.md#threat-protection-status-report).
 
-- Vissa kunder tillåter oavsiktligt nätfiskemeddelanden genom att placera sina egna domäner i listan Tillåt avsändare eller Tillåt domän i policyer mot skräppost. Även om denna konfiguration kommer att tillåta vissa legitima meddelanden genom, kommer det också att tillåta skadliga meddelanden som normalt skulle blockeras av spam och / eller phish filter. I stället för att tillåta domänen bör du korrigera det underliggande problemet.
+- Vissa kunder oavsiktligt tillåter nät fiske meddelanden genom att lägga till sina egna domäner i listan Tillåt avsändare eller Tillåt domän i principer för skräp post. Även om den här konfigurationen tillåter vissa legitima meddelanden via, tillåter den också skadliga meddelanden som normalt skulle blockeras av skräp post och/eller Phish filtren. I stället för att tillåta domänen bör du korrigera det underliggande problemet.
 
-  Det bästa sättet att hantera legitima meddelanden som blockeras av Microsoft 365 (falskt positiva) som involverar avsändare i domänen är att helt och fullständigt konfigurera SPF-, DKIM- och DMARC-postposterna i DNS för _alla_ dina e-postdomäner:
+  Det bästa sättet att hantera legitima meddelanden som blockeras av Microsoft 365 (falska positiva positivt) som involverar avsändare i din domän är att fullständigt och helt konfigurera SPF-, DKIM-och DMARC-posterna i DNS för _alla_ dina e-postdomäner:
 
-  - Kontrollera att SPF-posten identifierar _alla_ e-postkällor för avsändare på domänen (glöm inte tjänster från tredje part!).
+  - Kontrol lera att din SPF-post identifierar _alla_ källor till e-post för avsändare i din domän (Glöm inte tjänster från tredje part).
 
-  - Använd hårddisken \- (alla) för att säkerställa att obehöriga avsändare avvisas av e-postsystem som är konfigurerade för att göra det. Du kan använda [falska underrättelser](learn-about-spoof-intelligence.md) för att identifiera avsändare som använder din domän så att du kan inkludera auktoriserade avsändare från tredje part i SPF-posten.
+  - Använd hårda fel ( \- alla) för att se till att obehöriga avsändare nekas via e-postsystem som är konfigurerade för detta. Du kan använda [falsk intelligens](learn-about-spoof-intelligence.md) för att identifiera avsändare som använder din domän så att du kan ta med auktoriserade tredjeparts avsändare i SPF-posten.
 
-  Instruktioner för konfiguration finns i:
+  Anvisningar för konfiguration finns i:
   
   - [Konfigurera SPF för att förhindra förfalskning](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
@@ -75,10 +75,10 @@ Specifikt bör du kontrollera fältet **X-Forefront-Antispam-Report-huvud** i me
 
   - [Använda DMARC för att validera e-post](use-dmarc-to-validate-email.md)
 
-- När det är möjligt rekommenderar vi att du levererar e-post för din domän direkt till Microsoft 365. Med andra ord, peka din Microsoft 365 domän MX post till Microsoft 365. Exchange Online Protection (EOP) kan ge det bästa skyddet för dina molnanvändare när deras e-post levereras direkt till Microsoft 365. Om du måste använda ett e-posthygiensystem från tredje part framför EOP använder du Förbättrad filtrering för kontakter. Instruktioner finns i [Förbättrad filtrering för anslutningsappar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- När det är möjligt rekommenderar vi att du skickar e-post till din domän direkt till Microsoft 365. Med andra ord pekar du din Microsoft 365-domäns MX-post till Microsoft 365. Exchange Online Protection (EOP) ger det bästa skyddet för dina moln användare när deras e-post levereras direkt till Microsoft 365. Om du måste använda ett system för e-posthygien från tredje part framför EOP kan du använda förbättrad filtrering för kopplingar. Anvisningar finns i [utökad filtrering för kopplingar i Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Användare bör [rapportera meddelanden](enable-the-report-message-add-in.md) till Microsoft, som kan träna vårt system. Administratörer bör också dra nytta av [funktionerna för administratörsbidrag.](admin-submission.md)
+- Användarna bör [rapportera meddelanden](enable-the-report-message-add-in.md) till Microsoft, vilket kan träna vårt system. Administratörer bör också utnyttja [administrativa](admin-submission.md) uppgifter.
 
-- Multifaktorautentisering (MFA) är ett bra sätt att förhindra komprometterade konton. Du bör starkt överväga att aktivera MFA för alla dina användare. För en stegvis metod, börja med att aktivera MFA för dina mest känsliga användare (administratörer, chefer, etc.) innan du aktiverar MFA för alla. Instruktioner finns i [Konfigurera multifaktorautentisering](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+- Multifaktorautentisering är ett bra sätt att förhindra att konton skadas. Du bör starkt överväga att aktivera MFA för alla dina användare. Börja med att aktivera MFA för dina mest känsliga användare (administratörer, chefer o.s.v.) innan du aktiverar MFA för alla. Anvisningar finns i [Konfigurera multifaktorautentisering](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-- Vidarebefordringsregler till externa mottagare används ofta av angripare för att extrahera data. Använd informationen **om vidarebefordrade postlåderegler** i [Microsoft Secure Score](../mtp/microsoft-secure-score.md) för att hitta och till och med förhindra vidarekopplingsregler till externa mottagare. Mer information finns i [Förmildrande regler](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)för extern vidarebefordran av klienter med säker poäng .
+- Regler för vidarebefordran till externa mottagare används ofta av angripare för att extrahera data. Använd informationen i **avsnittet granska vidarebefordran av post lådor** i [Microsofts säkra Poäng](../mtp/microsoft-secure-score.md) för att hitta och till och med förhindra regler för vidarebefordran till externa mottagare. Mer information finns i [begränsa regler för extern vidarebefordring med klienter med säkra Poäng](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score).

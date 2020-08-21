@@ -1,5 +1,5 @@
 ---
-title: Hantera rollgrupper i EOP
+title: Hantera roll grupper i EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,240 +7,240 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: Administratörer kan lära sig att tilldela eller ta bort behörigheter i Administrationscenter för Exchange (EAC) i Exchange Online Protection.
-ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: Administratörer kan läsa mer om hur du tilldelar eller tar bort behörigheter i administrations centret för Exchange (UK) i Exchange Online Protection.
+ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616520"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825695"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Hantera rollgrupper i fristående EOP
 
-I fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan du använda Administrationscenter för Exchange (EAC) för att lägga till användare i rollgrupper. Genom att lägga till en användare i en rollgrupp får användaren behörighet att utföra specifika administratörsuppgifter. Du kan också ta bort användare från rollgrupper.
+I fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor kan du använda administrations centret för Exchange (UK) för att lägga till användare i roll grupper. Om du lägger till en användare i en roll grupp får användaren behörighet att utföra särskilda administratörs uppgifter. Du kan också ta bort användare från roll grupper.
 
-Mer information om roller och rollgrupper finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md).
+Mer information om roller och roll grupper finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Om du vill öppna Administrationscenter för Exchange (EAC) finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Om du vill öppna administrations centret för Exchange (UK) läser du [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Information om hur du öppnar fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Information om hur du öppnar fristående EOP PowerShell finns i [ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver rollrollen Rollhantering, som som tilldelas rollgruppen OrganizationManagement (global admins) som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver bara rollen roll hantering, som är tilldelad till rollen i (globala administratörer) som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om kortkommandon som kan gälla för procedurerna i det här avsnittet finns [i Kortkommandon för administrationscentret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Har du problem? Be om hjälp i Forumet för [Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Har du problem? Be om hjälp i [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
 
-## <a name="use-the-eac-to-manage-role-groups"></a>Använd EAC för att hantera rollgrupper
+## <a name="use-the-eac-to-manage-role-groups"></a>Använda UK för att hantera roll grupper
 
-### <a name="use-the-eac-to-view-role-groups"></a>Använda EAC för att visa rollgrupper
+### <a name="use-the-eac-to-view-role-groups"></a>Använda roll grupperna UK för att Visa
 
-1. Gå till **Behörighetsadministratörsroller** \> **Admin roles**i EAC. Alla rollgrupper i organisationen visas här.
+1. Gå till **Permissions** \> **rollerna för administratörs**behörighet i UK. Alla roll grupper i din organisation visas här.
 
-2. Välj en rollgrupp. I fönstret Information visas **rollgruppens namn,** **beskrivning,** **tilldelade roller**och **Hanterad** av. Du kan också se den **Edit** här informationen genom att klicka på ![ Ikonen Redigera redigera ](../../media/ITPro-EAC-EditIcon.png) .
+2. Välj en roll grupp. I informations fönstret visas **namnet**, **beskrivningen**, **tilldelade roller**och **som hanteras av** roll gruppen. Du kan också se informationen genom att klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
 
-### <a name="use-the-eac-to-create-role-groups"></a>Använd EAC för att skapa rollgrupper
+### <a name="use-the-eac-to-create-role-groups"></a>Använda UK för att skapa roll grupper
 
-När du skapar en ny rollgrupp kan du konfigurera alla inställningar själv (under skapandet av gruppen eller efter). Du kan också kopiera en befintlig rollgrupp och ändra den.
+När du skapar en ny roll grupp kan du konfigurera alla inställningar själv (när du skapar gruppen eller efter). Eller så kan du kopiera en befintlig roll grupp och ändra den.
 
-1. Gå till **Behörighetsadministratörsroller** i EAC \> **Admin roles**och gör sedan något av följande:
+1. Gå **till** \> **Administratörs roller**i UK och gör sedan något av följande:
 
-   - **Skapa en ny rollgrupp manuellt:** Klicka på **Ikonen Lägg till** lägg till ![ ](../../media/ITPro-EAC-AddIcon.png) .
+   - **Skapa en ny roll grupp manuellt**: Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) .
 
-   - **Kopiera en befintlig rollgrupp**: Markera den rollgrupp som du vill kopiera och klicka sedan på **Ikonen Kopiera** ![ kopia ](../../media/ITPro-EAC-CopyIcon.png) .
+   - **Kopiera en befintlig roll grupp**: Välj den roll grupp som du vill kopiera och klicka sedan på **Kopiera** ![ kopierings ikon ](../../media/ITPro-EAC-CopyIcon.png) .
 
-2. Konfigurera följande inställningar i fönstret **Ny rollgrupp** som visas:
+2. I fönstret **ny roll grupp** som visas konfigurerar du följande inställningar:
 
-    - **Namn**: Ange ett unikt namn för rollgruppen.
+    - **Namn**: Ange ett unikt namn för roll gruppen.
 
-    - **Beskrivning**: Ange en valfri beskrivning för rollgruppen.
+    - **Beskrivning**: Ange en valfri beskrivning för roll gruppen.
 
-    - **Roller**: Klicka på **Ikonen Lägg** till eller ![ Ta ](../../media/ITPro-EAC-AddIcon.png) **bort** ![ ITPro-EAC-RemoveIcon.gif ](../../media/ITPro-EAC-RemoveIcon.gif) för att markera eller ändra de roller som har tilldelats rollgruppen.
+    - **Roller**: Klicka på **Lägg** till ![ ikonen lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) för att välja eller ändra de roller som är tilldelade till roll gruppen.
 
-    - **Medlemmar**: Klicka på **Lägg till** ikonen Lägg till eller ![ Ta ](../../media/ITPro-EAC-AddIcon.png) **bort** ![ ITPro-EAC-RemoveIcon.gif ](../../media/ITPro-EAC-RemoveIcon.gif) om du vill ändra rollgruppens medlemskap.
+    - **Medlemmar**: Klicka på **Lägg** till ![ ikonen lägg till ](../../media/ITPro-EAC-AddIcon.png) eller **ta bort** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) om du vill ändra medlemskap i roll gruppen.
 
-3. När du är klar klickar du på **Spara** för att skapa rollgruppen.
+3. När du är klar klickar du på **Spara** för att skapa roll gruppen.
 
-### <a name="use-the-eac-to-modify-role-groups"></a>Använda EAC för att ändra rollgrupper
+### <a name="use-the-eac-to-modify-role-groups"></a>Använda UK för att ändra roll grupper
 
-Gå till **Behörighetsadministratörsroller** i EAC, \> **Admin roles**välj den rollgrupp som du vill ändra och klicka sedan på Ikonen **Redigera** ![ ](../../media/ITPro-EAC-EditIcon.png) redigera.
+I avsnittet UK går du till **behörigheter för behörighets** \> **Administration**, väljer den roll grupp som du vill ändra och klickar sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
 
-Samma alternativ är tillgängliga när du ändrar rollgrupper som när du skapar rollgrupper. Du kan:
+Samma alternativ är tillgängliga när du ändrar roll grupper som när du skapar roll grupper. Du kan:
 
 - Ändra namn och beskrivning.
 
-- Lägga till och ta bort hanteringsroller (skapa eller ta bort rolltilldelningar).
+- Lägga till och ta bort hanterings roller (skapa eller ta bort roll tilldelningar).
 
-- Lägg till och ta bort medlemmar.
+- Lägga till och ta bort medlemmar.
 
-**Vissa**rollgrupper (till exempel Organisationshantering) begränsar de roller som du kan ta bort från gruppen.
+**Obs!** vissa roll grupper (till exempel organisations hantering) begränsar vilka roller du kan ta bort från gruppen.
 
-#### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Använda EAC ändra listan över medlemmar i rollgrupper
+#### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Använda UK ändra listan över medlemmar i roll grupper
 
-1. Gå till **Behörighetsadministratörsroller** i \> **Admin roles**EAC, välj den rollgrupp som du vill ändra och klicka sedan på **Ikonen Redigera** ![ ](../../media/ITPro-EAC-EditIcon.png) redigera.
+1. Gå **till** \> **Administratörs roller**i UK, Välj den roll grupp som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) .
 
-2. Gör något av följande i avsnittet **Memebers** i egenskapssidan för rollgrupp som öppnas:
+2. Gör något av följande i avsnittet **medlemmar** på sidan roll grupp egenskaper som öppnas:
 
-   - Klicka på **Lägg till** ikonen För lägg ![ till ](../../media/ITPro-EAC-AddIcon.png) . På sidan som visas hittar du den användare som wou vill lägga till och klickar sedan på **lägg till ->**. Markera användare och klicka på **Lägg till ->** många gånger om det behövs. När du är klar klickar du på **OK**.
+   - Klicka på **Lägg** till ![ ikonen Lägg till ](../../media/ITPro-EAC-AddIcon.png) . Leta reda på den användare som Wou vill lägga till på sidan som visas och klicka sedan på **Lägg till >**. Välj användare och klicka på **Lägg till >** många gånger efter behov. När du är klar klickar du på **OK**.
 
-   - Markera de användare som du vill ta bort och klicka sedan på **Ikonen Ta bort** ta bort ![ ](../../media/ITPro-EAC-RemoveIcon.gif) .
+   - Markera de användare som du vill ta bort och klicka sedan på **ta bort** ![ ikonen Ta bort ](../../media/ITPro-EAC-RemoveIcon.gif) .
 
 3. Klicka på **Spara** när du är klar.
 
    > [!NOTE]
-   > Användare kan behöva logga ut och logga in igen för att se ändringen av sina administrativa rättigheter när du har lagt till eller tagit bort medlemmar från rollgruppen.
+   > Användarna kan behöva logga ut och logga in igen för att se ändringarna i deras administrativa rättigheter efter att du har lagt till eller tagit bort medlemmar från roll gruppen.
 
-### <a name="use-the-eac-to-remove-role-groups"></a>Använd EAC för att ta bort rollgrupper
+### <a name="use-the-eac-to-remove-role-groups"></a>Använda UK för att ta bort roll grupper
 
-Du kan inte ta bort inbyggda rollgrupper, men du kan ta bort anpassade rollgrupper som du har skapat.
+Det går inte att ta bort inbyggda roll grupper, men du kan ta bort anpassade roll grupper som du har skapat.
 
-1. Gå till **Behörighetsadministratörsroller** \> **Admin roles**i EAC.
+1. Gå till **Permissions** \> **rollerna för administratörs**behörighet i UK.
 
-2. Markera den rollgrupp som du vill ta bort och klicka sedan på **Ikonen Ta bort borttagning** ![ ](../../media/ITPro-EAC-DeleteIcon.png) .
+2. Välj den roll grupp du vill ta bort och klicka sedan på **ta bort** ![ ikon för borttagning ](../../media/ITPro-EAC-DeleteIcon.png) .
 
-3. Klicka på **Ja** i bekräftelsefönstret som visas.
+3. Klicka på **Ja** i bekräftelse fönstret som visas.
 
-## <a name="use-powershell-to-manage-role-groups"></a>Använda PowerShell för att hantera rollgrupper
+## <a name="use-powershell-to-manage-role-groups"></a>Använda PowerShell för att hantera roll grupper
 
-### <a name="use-standalone-eop-powershell-to-view-role-groups"></a>Använda fristående EOP PowerShell för att visa rollgrupper
+### <a name="use-standalone-eop-powershell-to-view-role-groups"></a>Använd fristående EOP PowerShell för att Visa roll grupper
 
-Om du vill visa en rollgrupp använder du följande syntax:
+Använd följande syntax för att visa en roll grupp:
 
 ```PowerShell
 Get-RoleGroup [-Identity "<Role Group Name>"] [-Filter <Filter>]
 ```
 
-I det här exemplet returneras en sammanfattningslista över alla rollgrupper.
+I det här exemplet returneras en sammanfattnings lista över alla roll grupper.
 
 ```PowerShell
 Get-RoleGroup
 ```
 
-I det här exemplet returneras detaljerad information för rollgruppen Med namnet Mottagaradministratörer.
+Det här exemplet returnerar detaljerad information för roll gruppen som heter mottagare.
 
 ```PowerShell
 Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 ```
 
-I det här exemplet returneras alla rollgrupper där användaren Julia är medlem. Du måste använda värdet DistinguishedName (DN) för Julia, som du kan hitta genom att köra kommandot: `Get-User -Identity Julia | Format-List DistinguishedName` .
+I det här exemplet returneras alla roll grupper där användaren Julia är medlem. Du måste använda värdet för DistinguishedName (DN) för Julia, som du kan söka efter genom att köra kommandot: `Get-User -Identity Julia | Format-List DistinguishedName` .
 
 ```PowerShell
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
+Detaljerad information om syntax och parametrar finns i [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
-### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Använda fristående EOP PowerShell för att skapa rollgrupper
+### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Använda fristående EOP PowerShell för att skapa roll grupper
 
-När du skapar en ny rollgrupp kan du konfigurera alla inställningar manuellt (under skapandet av gruppen eller efter). Du kan också kopiera en befintlig rollgrupp och ändra den.
+När du skapar en ny roll grupp kan du konfigurera alla inställningar manuellt (när du skapar gruppen eller efter). Eller så kan du kopiera en befintlig roll grupp och ändra den.
 
-- Om du vill skapa en ny rollgrupp manuellt använder du följande syntax:
+- Använd följande syntax för att manuellt skapa en ny roll grupp:
 
   ```PowerShell
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - Parametern _Roller_ anger vilka hanteringsroller som ska tilldelas rollgruppen med hjälp av följande syntax `"Role1","Role1",..."RoleN"` . Du kan se tillgängliga roller med hjälp av **Cmdlet Get-ManagementRole.**
+  - Parametern _roles_ anger de hanterings roller som ska tilldelas roll gruppen genom att använda följande syntax `"Role1","Role1",..."RoleN"` . Du kan se tillgängliga roller med cmdleten **Get-ManagementRole** .
 
-  - Parametern _Medlemmar_ anger medlemmarna i rollgruppen med hjälp av följande syntax: `"Member1","Member2",..."MemberN"` . Du kan ange användare, e-postaktiverade universella säkerhetsgrupper (USGs) eller andra rollgrupper (säkerhetsobjekt).
+  - Parametern _members_ anger medlemmar i roll gruppen genom att använda följande syntax: `"Member1","Member2",..."MemberN"` . Du kan ange användare, e-postaktiverade universella säkerhets grupper (USGs) eller andra roll grupper (säkerhets objekt).
 
-  I det här exemplet skapas en ny rollgrupp med namnet "Begränsad mottagarehantering" med följande inställningar:
+  I det här exemplet skapas en ny roll grupp med namnet "begränsad mottagar hantering" med följande inställningar:
 
-  - Rollen Mottagare av e-post tilldelas rollgruppen.
+  - Rollen e-postmottagare är tilldelad roll gruppen.
 
-  - Användarna Kim och Martin läggs till som medlemmar.
+  - Användare Kim och Martin läggs till som medlemmar.
 
   ```PowerShell
   New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients" -Members "Kim","Martin"
   ```
 
-- Så här kopierar du en befintlig rollgrupp:
+- Gör så här om du vill kopiera en befintlig roll grupp:
 
-  1. Lagra den rollgrupp som du vill kopiera i en variabel med följande syntax:
+  1. Lagra den roll grupp som du vill kopiera med hjälp av följande syntax:
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "<Existing Role Group Name>"
      ```
 
-  2. Skapa den nya rollgruppen med följande syntax:
+  2. Skapa den nya roll gruppen med följande syntax:
 
      ```PowerShell
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     Parametern _Medlemmar_ anger medlemmarna i rollgruppen med hjälp av följande syntax: `"Member1","Member2",..."MemberN"` . Du kan ange användare, e-postaktiverade universella säkerhetsgrupper (USGs) eller andra rollgrupper (säkerhetsobjekt).
+     Parametern _members_ anger medlemmar i roll gruppen genom att använda följande syntax: `"Member1","Member2",..."MemberN"` . Du kan ange användare, e-postaktiverade universella säkerhets grupper (USGs) eller andra roll grupper (säkerhets objekt).
 
-     I det här exemplet kopieras rollgruppen Organisationshantering till den nya rollgruppen "Begränsad organisationshantering". Rollgruppmedlemmarna är Isabelle, Carter och Lukas.
+     I det här exemplet kopieras roll gruppen organisations hantering till den nya roll gruppen "begränsad organisations hantering". Medlemmar i roll gruppen är Isabelle, Cartere och Lukas.
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "Organization Management"
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-Detaljerad syntax- och parameterinformation, [Nyrollgrupp](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
+Detaljerad information om syntax och parametrar finns i [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
-### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Använda fristående EOP PowerShell ändra listan över medlemmar i rollgrupper
+### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Använda fristående EOP PowerShell ändra listan över medlemmar i roll grupper
 
-- Cmdlets **för Add-RoleGroupMember** och **Remove-RoleGroupMember** lägger till eller tar bort enskilda medlemmar en i taget. **Cmdlet för Update-RoleGroupMember** kan ersätta eller ändra den befintliga medlemslistan.
+- Cmdletarna **Add-RoleGroupMember** och **Remove-RoleGroupMember** lägger till eller tar bort enskilda medlemmar ett i taget. Cmdleten **Update-RoleGroupMember** kan ersätta eller ändra befintlig lista över medlemmar.
 
-- Medlemmarna i en rollgrupp kan vara användare, e-postaktiverade universella säkerhetsgrupper (USGs) eller andra rollgrupper (säkerhetsobjekt).
+- Medlemmar i en roll grupp kan vara användare, e-postaktiverade universella säkerhets grupper (USGs) eller andra roll grupper (säkerhets objekt).
 
-Om du vill ändra medlemmarna i en rollgrupp använder du följande syntax:
+Använd följande syntax för att ändra medlemmar i en roll grupp:
 
 ```PowerShell
 Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members>
 ```
 
-- Om du vill _ersätta_ den befintliga medlemslistan med de värden du anger använder du följande syntax: `"Member1","Member2",..."MemberN"` .
+- Använd följande syntax för att _ersätta_ den befintliga listan över medlemmar med de värden du anger: `"Member1","Member2",..."MemberN"` .
 
-- Om du vill ändra den befintliga medlemslistan _selektivt_ använder du följande syntax: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` .
+- Om du vill _ändra_ den befintliga listan med medlemmar kan du använda följande syntax: `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` .
 
-Det här exemplet ersätter alla aktuella medlemmar i rollgruppen Help Desk med de angivna användarna.
+I det här exemplet ersätts alla aktuella medlemmar i roll gruppen supportavdelning med de angivna användarna.
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
 ```
 
-I det här exemplet läggs Daigoro Akai till och Valeria Barrio tas bort från listan över medlemmar i rollgruppen Help Desk.
+I det här exemplet läggs Daigoro Akai och tas bort från listan med medlemmar i roll gruppen supportavdelning.
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Uppdatera rollgruppmedlem](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
+Detaljerad information om syntax och parametrar finns i [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
-### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Använd fristående EOP PowerShell för att ta bort rollgrupper
+### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Använd fristående EOP-PowerShell för att ta bort roll grupper
 
-Du kan inte ta bort inbyggda rollgrupper, men du kan ta bort anpassade rollgrupper som du har skapat.
+Det går inte att ta bort inbyggda roll grupper, men du kan ta bort anpassade roll grupper som du har skapat.
 
-Om du vill ta bort en anpassad rollgrupp använder du följande syntax:
+Använd följande syntax för att ta bort en anpassad roll grupp:
 
 ```PowerShell
 Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck]
 ```
 
-I det här exemplet tas rollgruppen Utbildningsadministratörer bort.
+I det här exemplet tas roll gruppen utbildnings administratörer bort.
 
 ```PowerShell
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ta bort rollgrupp](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
+Detaljerad information om syntax och parametrar finns i [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
-Så här kontrollerar du att du har kopierat en rollgrupp:
+Om du vill kontrol lera att du har kopierat en roll grupp gör du något av följande:
 
-- Gå till **Behörighetsadministratörsroller** i EAC och kontrollera att \> **Admin roles**rollgruppen visas (eller inte visas). Markera rollgruppen och kontrollera inställningarna i informationsfönstret eller klicka på **Redigera** ![ redigera ikon för att verifiera ](../../media/ITPro-EAC-EditIcon.png) inställningarna.
+- Gå **till** \> **Administratörs rollerna**i UK och kontrol lera att roll gruppen är listad (eller inte listad). Välj roll gruppen och kontrol lera inställningarna i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) för att bekräfta inställningarna.
 
-- I Exchange Online PowerShell ersätter du \<Role Group Name\> med namnet på rollgruppen och kör följande kommando för att verifiera att rollgruppen finns (eller inte finns) och verifiera inställningarna:
+- I Exchange Online PowerShell ersätter du \<Role Group Name\> namnet på roll gruppen och kör följande kommando för att kontrol lera att roll gruppen finns (eller inte existerar) och verifierar inställningarna:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

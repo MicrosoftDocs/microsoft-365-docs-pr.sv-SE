@@ -1,22 +1,22 @@
 ---
-title: Nya domäner vidarebefordrar e-postinsikt
+title: Nya domäner som vidarebefordras via e-post
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Administratörer kan läsa mer om hur du använder de nya domänerna som vidarebefordrar e-postmeddelande inblick i det moderna administrations centret för Exchange för att undersöka när användare i organisationen vidarebefordrar meddelanden till externa domäner som aldrig har vidarebefordrats till.
-ms.openlocfilehash: 81a596d48696f28d62d68594f27081435487d17f
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 0b4cd0490feebc8e05deb889b3cf54e1ea9f5928
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578471"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826935"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nya domäner vidarebefordras med e-post i säkerhets & efterlevnad
 
@@ -26,7 +26,7 @@ De **nya domänerna som vidarebefordras via e-post** meddelar dig när användar
 
 Denna inblick visas bara när problemet identifieras och visas på sidan för [vidarebefordran av rapporter](view-mail-flow-reports.md#forwarding-report) .
 
-![Nya domäner vidarebefordrar e-postinsikt](../../media/mfi-new-domains-being-forwarded.png)
+![Nya domäner som vidarebefordras via e-post](../../media/mfi-new-domains-being-forwarded.png)
 
 När du klickar på widgeten visas en utfällbar plats där du kan hitta mer information om de vidarebefordrade meddelandena, inklusive en länk tillbaka till [vidarebefordrings rapporten](view-mail-flow-reports.md#forwarding-report).
 

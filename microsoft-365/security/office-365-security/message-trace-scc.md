@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan använda meddelande spårning i säkerhets & efterlevnad för att ta reda på vad som hände med meddelanden.
-ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653647"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827057"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Meddelandespårning i Säkerhets- och efterlevnadscenter
 
@@ -369,7 +369,7 @@ Ett **custom_data** värde som börjar med `S:AMA` kommer från filter agenten f
 
 |Value|Beskrivning|
 |---|---|
-|`AMA=SUM|v=1|`respektive`AMA=EV|v=1`|Meddelandet fastställdes att det innehåller skadlig program vara. `SUM`anger att den skadliga program varan kunde identifieras av ett antal motorer. `EV`anger att den skadliga program varan upptäcktes av en viss motor. När skadlig program vara identifieras av en motor utlöses följande åtgärder.|
+|`AMA=SUM|v=1|` respektive `AMA=EV|v=1`|Meddelandet fastställdes att det innehåller skadlig program vara. `SUM` anger att den skadliga program varan kunde identifieras av ett antal motorer. `EV` anger att den skadliga program varan upptäcktes av en viss motor. När skadlig program vara identifieras av en motor utlöses följande åtgärder.|
 |`Action=r`|Meddelandet har ersatts.|
 |`Action=p`|Meddelandet har hoppats över.|
 |`Action=d`|Meddelandet skjuts upp.|
@@ -398,7 +398,7 @@ Ett **custom_data** värde som börjar med `S:TRA` är från transport regel age
 |`ETR|ruleId=<guid>`|Regel-ID som matchades.|
 |`St=<datetime>`|Datum och tid i UTC när regeln matchar.|
 |`Action=<ActionDefinition>`|Åtgärden som användes. En lista över tillgängliga åtgärder finns i [åtgärder för e-postflödes regler i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Regelns läge. Giltiga värden är: <br/>* **Påtvinga**: alla åtgärder i regeln tillämpas. <br/>* **Testa med princip Tips:**: alla princip Tips åtgärder skickas, men andra tvingande åtgärder kommer inte att genomföras. <br/>* **Testa utan princip Tips**: åtgärder visas i en loggfil, men avsändare kommer inte att meddelas på något sätt, och tvingande åtgärder kommer inte att genomföras.|
+|`Mode=<Mode>`|Regelns läge. Giltiga värden är:<ul><li>**Påtvinga**: alla åtgärder i regeln tillämpas.</li><li>**Testa med princip Tips:**: alla princip Tips åtgärder skickas, men andra tvingande åtgärder kommer inte att genomföras.</li><li>**Testa utan princip Tips**: åtgärder visas i en loggfil, men avsändare kommer inte att meddelas på något sätt, och tvingande åtgärder kommer inte att genomföras.</li></ul>|
 |
 
 Ett exempel **custom_data** värde för ett meddelande som matchar villkoren för en regel för e-postflöde ser ut så här:

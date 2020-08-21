@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 'Lär dig hur du konfigurerar anpassade blockerade URL: er för användare och gör om listan över URL: er för en grupp användare i Office 365-principer för säkra Länkar för säkerhets skull.'
-ms.openlocfilehash: 17828566769f438439eebcb4e460ecac1147a648
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 9ec9c92e038aee33c716405916df009e3f4c60c5
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798336"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825239"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Konfigurera en egen gör-inte omskrivning av URL-lista med säkra ATP-länkar
 

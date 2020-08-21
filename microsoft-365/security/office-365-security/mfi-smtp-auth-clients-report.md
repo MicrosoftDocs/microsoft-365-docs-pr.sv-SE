@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder SMTP AUTH inblick och rapport i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka e-avsändare i organisationen som använder autentiserad SMTP (SMTP AUTH) för att skicka e-postmeddelanden.
-ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577257"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826875"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP-AUTH-klienter inblick och rapportera i säkerhets & Compliance Center
 
@@ -73,7 +73,7 @@ Om du klickar på **Visa informations tabell**beror informationen som visas på 
   - **TLS 1.2%**<sup>\*</sup>
   - **Antal meddelanden**
 
-  <sup>\*</sup>I den här kolumnen visas både procent andelen och antalet meddelanden från avsändaren.
+  <sup>\*</sup> I den här kolumnen visas både procent andelen och antalet meddelanden från avsändaren.
 
 Om du klickar på **filter** i en detaljerad tabellvy kan du ange ett datum intervall med **start datum** och **slutdatum**.
 

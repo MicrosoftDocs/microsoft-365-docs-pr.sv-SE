@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Lär dig mer om domäner genom att hitta svar på vanliga frågor.
-ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804202"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845850"
 ---
 # <a name="domains-faq"></a>Vanliga frågor och svar om domäner
 
@@ -52,7 +52,7 @@ I den här artikeln
 - [Vad händer om min DNS-värd inte har stöd för vissa typer av poster?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Hur ställer jag in eller ändrar standard domänen i Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Kan jag lägga till egna under domäner eller flera domäner i Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [Hur överför jag en domän från Microsoft 365 till en annan värd?]
+- [Hur överför jag en domän från Microsoft 365 till en annan värd?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [Varför har jag en onmicrosoft.com-domän?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Varför har jag en "onmicrosoft.de"-domän?](#why-do-i-have-an-onmicrosoftde-domain)
 - [Hur verifierar jag min status som inte vinst eller utbildning?](#how-do-i-verify-my-nonprofit-or-education-status)

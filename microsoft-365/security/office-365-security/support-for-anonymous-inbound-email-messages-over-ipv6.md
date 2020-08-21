@@ -6,7 +6,7 @@ author: chrisda
 ms.author: chrisda
 manager: chrisda
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,39 +16,39 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratör kan lära sig hur du konfigurerar stöd för anonym inkommande e-post från IPv6-källor i Exchange Online och Exchange Online Protection.
-ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Administratören kan läsa om hur du konfigurerar stöd för anonym inkommande e-post från IPv6-källor i Exchange Online och Exchange Online Protection.
+ms.openlocfilehash: 7384c1044cc02ec20079dc03068c2ca99e68d2c2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818715"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826783"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Lägga till stöd för anonym inkommande e-post via IPv6 i Microsoft 365
 
-Microsoft 365-organisationer med Exchange Online-postlådor och fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor stöder anonym inkommande e-post via IPv6. Käll-IPv6-e-postservern måste uppfylla båda följande krav:
+Microsoft 365-organisationer med Exchange Online-postlådor och fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor stöder anonym inkommande e-post via IPv6. Käll-e-postservern för IPv6 måste uppfylla följande krav:
 
-- Käll-IPv6-adressen måste ha en giltig PTR-post (Reverse DNS lookup) som gör att målet kan hitta domännamnet från IPv6-adressen.
+- Källans IPv6-adress måste ha en giltig PTR-post (omvänd DNS lookup) som tillåter målet att hitta domän namnet från IPv6-adressen.
 
-- Avsändaren måste passera antingen SPF-verifiering (definierad i [RFC 7208)](https://tools.ietf.org/html/rfc7208)eller [DKIM-verifiering](https://dkim.org/) (definierad i [RFC 6376).](https://www.rfc-editor.org/rfc/rfc6376.txt)
+- Avsändaren måste klara antingen SPF-verifiering (definieras i [rfc 7208](https://tools.ietf.org/html/rfc7208)) eller [DKIM-verifiering](https://dkim.org/) (definieras i [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
-Innan din organisation kan ta emot anonymt inkommande e-postmeddelande via IPv6 måste en administratör kontakta Microsoft-supporten och be om den. Instruktioner om hur du öppnar en supportbegäran finns i [Kontakta support för företagsprodukter - Hjälp om administratörer](../../admin/contact-support-for-business-products.md).
+Innan din organisation kan ta emot anonym inkommande e-post via IPv6 måste en administratör kontakta Microsoft support och be om det. Anvisningar för hur du öppnar en supportbegäran finns i [kontakta supporten för företags produkter – hjälp för administratörer](../../admin/contact-support-for-business-products.md).
 
-När stöd för anonym inkommande IPv6-meddelanden har aktiverats i organisationen går meddelandet igenom den normala meddelandefiltrering som tillhandahålls av tjänsten.
+När anonymt stöd för inkommande IPv6-meddelanden är aktiverat i din organisation kommer meddelandet att gå igenom den vanliga meddelande filtreringen som tillhandahålls av tjänsten.
 
 ## <a name="troubleshooting"></a>Felsökning
 
-- Om källmeddelandeservern inte har en omvänd DNS-sökningspost för IPv6 avvisas meddelandena med följande fel:
+- Om käll-e-postservern inte har en omvänd IPv4-uppslags post nekas meddelandena med följande fel:
 
-  > 450 4.7.25 Tjänsten är inte tillgänglig, vilket skickar IPv6-adress [2a01:111:f200:2004::240] måste ha omvänd DNS-post.
+  > 450 4.7.25-tjänsten är inte tillgänglig, skickar IPv6-adress [2a01: F200:2004:: 240] måste ha omvänd DNS-post.
 
-- Om avsändaren inte skickar SPF- eller DKIM-validering avvisas meddelandena med följande fel:
+- Om avsändaren inte skickar SPF-eller DKIM-verifiering nekas meddelandena med följande fel:
 
-  > 450 4.7.26 Tjänsten är inte tillgänglig, meddelande som skickas via IPv6 [2a01:111:f200:2004::240] måste skicka antingen SPF- eller DKIM-validering.
+  > 450 4.7.26-tjänsten är inte tillgänglig, meddelande skickat via IPv6 [2a01:111: F200:2004:: 240] måste klara antingen SPF-eller DKIM-verifiering.
 
-- Om du försöker ta emot anonyma IPv6-meddelanden innan du har anmält dig kommer meddelandet att avvisas med följande fel:
+- Om du försöker ta emot anonyma IPv6-meddelanden innan du har angett avvisas meddelandet med följande fel:
 
-  > 550 5.2.1 Tjänsten är inte tillgänglig, [contoso.com] accepterar inte e-post via IPv6.
+  > 550 5.2.1-tjänsten är inte tillgänglig, [contoso.com] accepterar inte e-post via IPv6.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

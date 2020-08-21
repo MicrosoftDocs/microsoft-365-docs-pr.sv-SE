@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,50 +18,50 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: Administratörer kan lära sig mer om funktionerna för skydd mot nätfiske i Exchange Online Protection (EOP) och Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: Administratörer kan lära sig mer om skydd mot nätfiske-funktioner i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
+ms.openlocfilehash: 5594c4e7033ab70a622403bca7759cd4b89f111a
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588318"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827451"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
-*Nätfiske* är en e-postattack som försöker stjäla känslig information i meddelanden som verkar komma från legitima eller betrodda avsändare. Det finns specifika kategorier av nätfiske. Ett exempel:
+*Nätfiske* är ett e-postangrepp som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. Det finns särskilda typer av nät fiske. Till exempel:
 
-- **Spear phishing** använder mycket fokuserat och anpassat innehåll som är särskilt anpassat till de riktade mottagarna (vanligtvis efter spaning på mottagarna av angriparen).
+- **Spear nätfiske** använder mycket prioriterat och anpassat innehåll som är specifikt skräddarsydda för de riktade mottagarna (vanligt vis efter att ha Reconnaissance mottagare).
 
-- **Valfångst** riktas mot chefer eller andra högt värderade mål inom en organisation för maximal effekt.
+- **Whaling** riktar sig till chefer eller andra mål inom en organisation för maximal effekt.
 
-- **Business email compromise (BEC)** använder förfalskade betrodda avsändare (ekonomiansvariga, kunder, betrodda partner, etc.) i ett försök att lura mottagaren att godkänna betalningar, överföra pengar eller avslöja kunddata.
+- **Företags-e-postkompromisser (BEC)** använder förfalskade betrodda avsändare (finans tjänstemän, kunder, betrodda partners etc.) för att lura mottagaren att godkänna betalningar, överföra penning medel eller lämna kund uppgifter.
 
-- **Ransomware** som krypterar dina data och kräver betalning för att dekryptera det nästan alltid börjar i phishing-meddelanden. Skydd mot nätfiske kan inte hjälpa dig att dekryptera krypterade filer, men det kan hjälpa dig att identifiera de första nätfiskemeddelanden som är associerade med ransomware-kampanjen. Mer information om hur du återställer från en ransomware-attack finns i [Återställ från en ransomware-attack i Microsoft 365](recover-from-ransomware.md).
+- **Utpressnings tro** vara som krypterar dina data och kräver betalning för att dekryptera det nästan alltid med nät fiske meddelanden. Skydd mot nätfiske kan inte hjälpa dig att dekryptera krypterade filer, men det kan hjälpa till att identifiera de inledande nät fiske meddelandena som är kopplade till utpressnings bara kampanjen. Mer information om hur du återställer från en utpressnings tro Jan attack finns i [återställa från en utpressnings tro Jan attack i Microsoft 365](recover-from-ransomware.md).
 
-Med den växande komplexiteten i attacker är det till och med svårt för utbildade användare att identifiera sofistikerade nätfiskemeddelanden. Lyckligtvis kan Exchange Online Protection (EOP) och ytterligare funktioner i Office 365 Advanced Threat Protection (Office 365 ATP) hjälpa till.
+Det är ännu svårt för utbildade användare att identifiera avancerade nät fiske meddelanden. Som tur är kan Exchange Online Protection (EOP) och ytterligare funktioner i Office 365 Avancerat skydd (Office 365 ATP) hjälpa dig.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Skydd mot nätfiske i EOP
 
-EOP (det vill säga Microsoft 365-organisationer utan ATP) innehåller funktioner som kan skydda din organisation från nätfiskehot:
+EOP (det vill säga Microsoft 365-organisationer utan ATP) innehåller funktioner som kan skydda din organisation från nätfiske-hot:
 
-- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns [i Konfigurera falska underrättelser i EOP](learn-about-spoof-intelligence.md).
+- **Förfalskningsinformation**: granska falska meddelanden från avsändare i interna och externa domäner samt tillåt eller blockera avsändarna. Mer information finns i [Konfigurera förfalsknings information i EOP](learn-about-spoof-intelligence.md).
 
-- **Anti-phishing-principer i EOP:** Aktivera eller inaktivera falska underrättelser, aktivera eller inaktivera oautentiserade avsändande avsändare i Outlook och ange åtgärden för blockerade förfalskade avsändare (flytta till skräppostmapp eller karantän). Mer information finns i [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
+- **Anti-nätfiske-principer i EOP**: Aktivera eller inaktivera förfalsknings intelligens, Aktivera oautentiserad avsändare i Outlook på eller av och ange åtgärd för blockerade avsändare (flytta till mappen skräp post eller karantän). Mer information finns i [Konfigurera principer för nätfiske i EOP](configure-anti-phishing-policies-eop.md).
 
-- **Implicit e-postautentisering:** EOP förbättrar standardkontroller av e-postautentisering för inkommande e-post[(SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC)](use-dmarc-to-validate-email.md)med avsändarens rykte, avsändarehistorik, mottagarhistorik, beteendeanalys och andra avancerade tekniker för att identifiera förfalskade avsändare. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
+- **Implicit e-postauktorisering**: EOP förbättrar standardinställningarna för inkommande e-post ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)och [DMARC](use-dmarc-to-validate-email.md)) med avsändarens rykte, avsändarens historik, mottagar historik, beteende analys och andra avancerade tekniker som hjälper dig att identifiera förfalskade avsändare. Mer information finns i [E-postautentisering i Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Ytterligare skydd mot nätfiske i Office 365 ATP
 
-Office 365 ATP innehåller ytterligare och mer avancerade funktioner mot nätfiske:
+Office 365 ATP innehåller fler och mer avancerade nät fiske funktioner:
 
-- **ATP:s principer för phishing:** Skapa nya anpassade principer, konfigurera inställningar för anti-personifiering (skydda användare och domäner från personifiering), inställningar för postlådans intelligens och justerbara avancerade tröskelvärden för nätfiske. Mer information finns [i Konfigurera ATP-principer för nätfiske i Microsoft 365](configure-atp-anti-phishing-policies.md). Mer information om skillnaderna mellan anti-phishing-policyer och ATP-principer för nätfiske finns [i policyer för nätfiske mot nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
+- **AntiPhishing-principer för ATP**: skapa nya anpassade principer, konfigurera inställningar för skydd mot obehörig person (skydda användare och domäner från personifiering), inställningar för post låda och justerbara avancerade tröskelvärden för nätfiske. Mer information finns i [Konfigurera AntiPhishing-principer för ATP i Microsoft 365](configure-atp-anti-phishing-policies.md). Mer information om skillnaderna mellan anti-nätfiske-principer och Antivirus principer för ATP finns i [principer för nätfiske i Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Kampanjvyer**: Maskininlärning och andra heuristik identifierar och analyserar meddelanden som är involverade i samordnade nätfiskeattacker mot hela tjänsten och din organisation. Mer information finns [i Kampanjvyer i Office 365 ATP](campaigns.md).
+- **Kampanjmallar**: maskin inlärning och andra heuristik identifierar och analyserar meddelanden som ingår i koordinerade nätfiske-attacker mot hela tjänsten och din organisation. Mer information finns [i vyn kampanjmallar i Office 365 ATP](campaigns.md).
 
-- **Attack simulator:** Administratörer kan skapa falska nätfiskemeddelanden och skicka dem till interna användare som ett utbildningsverktyg. Mer information finns [i Attack Simulator i Office 365 ATP](attack-simulator.md).
+- **Angrepps Simulator**: administratörer kan skapa falska nät fiske meddelanden och skicka dem till interna användare som utbildnings verktyg. Mer information finns i [angrepps Simulator i Office 365 ATP](attack-simulator.md).
 
-## <a name="other-anti-phishing-resources"></a>Andra anti-phishing-resurser
+## <a name="other-anti-phishing-resources"></a>Andra AntiPhishing-resurser
 
-- För slutanvändare: [Skydda dig mot nätfiske och andra former av onlinebedrägerier](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593).
+- För slutanvändare: [skydda dig från nätfiske och andra former av bedrägerier online](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593).
 
-- [Så här validerar Microsoft 365 Från-adressen för att förhindra nätfiske](how-office-365-validates-the-from-address.md).
+- [Hur Microsoft 365 verifierar från-adressen för att förhindra nätfiske](how-office-365-validates-the-from-address.md).

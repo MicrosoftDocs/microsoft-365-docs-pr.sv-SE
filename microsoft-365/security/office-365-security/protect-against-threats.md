@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656641"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826831"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -34,7 +34,7 @@ Microsoft 365 innehåller flera olika skydds funktioner. Här är en snabb start
 
 ## <a name="requirements"></a>Krav
 
-### <a name="subscriptions"></a>Prenumerera
+### <a name="subscriptions"></a>Prenumerationer
 
 Hot Protection-funktioner ingår i alla Microsoft 365-abonnemang; Vissa abonnemang innehåller dessutom mer avancerade funktioner. I följande tabell finns de skydds funktioner som ingår i den här artikeln tillsammans med de minsta abonnemangs kraven.
 
@@ -110,7 +110,7 @@ För att konfigurera [säkerhet för säkerhets](atp-safe-attachments.md)skull f
 
 5. Klicka på **Spara**.
 
-6. (**Rekommenderat steg**) Som global administratör eller SharePoint Online-administratör kör cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern **DisallowInfectedFileDownload** inställd på *True* för din Microsoft 365-miljö. (Detta förhindrar att personer öppnar, flyttar, kopierar eller delar filer som identifieras som skadliga.)
+6. (**Rekommenderat steg**) Som global administratör eller SharePoint Online-administratör kör cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern **DisallowInfectedFileDownload** inställd på  *True* för din Microsoft 365-miljö. (Detta förhindrar att personer öppnar, flyttar, kopierar eller delar filer som identifieras som skadliga.)
 
 Mer information finns i [Konfigurera office 365-principer för säkra bifogade filer](set-up-atp-safe-attachments-policies.md) och [aktivera Office 365 ATP för SharePoint-, OneDrive-och Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 

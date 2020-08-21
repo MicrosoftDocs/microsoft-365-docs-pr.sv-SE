@@ -7,102 +7,102 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
-description: Lär dig mer om hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda katalogsynkronisering, EAC och PowerShell för att hantera användare.
+description: Lär dig hur du hanterar e-postanvändare i Exchange Online Protection (EOP), inklusive att använda Directory-synkronisering, UK och PowerShell för att hantera användare.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616840"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827081"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Hantera e-postanvändare i fristående EOP
 
-I fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor är e-postanvändare den grundläggande typen av användarkonto. En e-postanvändare har kontouppgifter i din fristående EOP-organisation och kan komma åt resurser (har tilldelats behörigheter). En e-postanvändares e-postadress är extern (till exempel i din lokala e-postmiljö).
+I fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor är e-postanvändarna grundläggande användar konto. En e-postanvändare har kontoautentiseringsuppgifter i din fristående EOP-organisation och kan komma åt resurser (har tilldelade behörigheter). E-postadressen till en e-postanvändare är extern (till exempel i din lokala e-postmiljö).
 
 > [!NOTE]
-> När du skapar en e-postanvändare är motsvarande användarkonto tillgängligt i microsoft 365-administrationscentret. När du skapar ett användarkonto i administrationscentret för Microsoft 365 kan du inte använda det kontot för att skapa en e-postanvändare.
+> När du skapar en e-postanvändare finns motsvarande användar konto i administrations centret för Microsoft 365. När du skapar ett användar konto i administrations centret för Microsoft 365 kan du inte använda det kontot för att skapa en e-postanvändare.
 
-Den rekommenderade metoden för att skapa och hantera e-postanvändare i fristående EOP är att använda katalogsynkronisering enligt beskrivningen i avsnittet [Använd katalogsynkronisering för att hantera e-postanvändare](#use-directory-synchronization-to-manage-mail-users) senare i det här avsnittet.
+Den rekommenderade metoden för att skapa och hantera e-postanvändare i fristående EOP är att använda profilsynkronisering enligt beskrivningen i avsnittet [använda katalog synkronisering för att hantera e-postanvändare](#use-directory-synchronization-to-manage-mail-users) i det här avsnittet.
 
-För fristående EOP-organisationer med ett litet antal användare kan du lägga till och hantera e-postanvändare i Administrationscenter för Exchange (EAC) eller i fristående EOP PowerShell enligt beskrivningen i det här avsnittet.
+För fristående EOP-organisationer med ett fåtal användare kan du lägga till och hantera e-postanvändare i administrations centret för Exchange (UK) eller fristående EOP PowerShell enligt beskrivningen i det här avsnittet.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Om du vill öppna Administrationscenter för Exchange (EAC) finns [i Administrationscenter för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Om du vill öppna administrations centret för Exchange (UK) läser du [administrations Center för Exchange i fristående EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Information om hur du ansluter till fristående EOP PowerShell finns i artikeln om att [Ansluta till Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- När du skapar e-postanvändare i EOP PowerShell kan du stöta på begränsning. EOP PowerShell-cmdlets använder också en batchbearbetningsmetod som resulterar i en spridningsfördröjning på några minuter innan resultaten av kommandona är synliga.
+- När du skapar e-postanvändare i EOP PowerShell kan du stöta på begränsning. Dessutom använder PowerShell-cmdlets för EOP en grupp bearbetnings metod som resulterar i ett par minuter innan resultatet av kommandona visas.
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Du behöver som standard rollerna För skapande av e-postmottagare (skapa) och E-postmottagare (ändra) som har tilldelats rollgrupperna OrganizationManagement (global admins) och RecipientManagement som standard. Mer information finns [i Behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd EAC ändra listan över medlemmar i rollgrupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna. Specifikt behöver du skapa en e-postmottagare (skapa) och e-postmottagare (ändra), som är tilldelad till i (globala administratörer) och RecipientManagement roll grupper som standard. Mer information finns i [behörigheter i fristående EOP](feature-permissions-in-eop.md) och [Använd UK för att ändra listan över medlemmar i roll grupper](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Information om kortkommandon som kan gälla för procedurerna i det här avsnittet finns [i Kortkommandon för administrationscentret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Information om tangent bords gen vägar som kan gälla för procedurerna i det här avsnittet finns i kortkommandon [för administrations centret för Exchange i Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Har du problem? Be om hjälp i Exchange-forumen. Besök [forumet för Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Har du problem? Be om hjälp i Exchange-forumen. Gå till [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
 
-## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Använda administrationscentret för Exchange för att hantera e-postanvändare
+## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Använda administrations centret för Exchange för att hantera e-postanvändare
 
-### <a name="use-the-eac-to-create-mail-users"></a>Använda EAC för att skapa e-postanvändare
+### <a name="use-the-eac-to-create-mail-users"></a>Använda UK för att skapa e-postanvändare
 
-1. Gå till **Mottagare** \> **Kontakter i** EAC
+1. Gå till **mottagare** \> **kontakter** i UK.
 
-2. Klicka på **Ny** ![ ny ikon ](../../media/ITPro-EAC-AddIcon.png) . Konfigurera följande inställningar på **den nya e-postanvändarsidan** som öppnas. Inställningar markerade med en <sup>\*</sup> krävs.
+2. Klicka på **ny** ![ ny ikon ](../../media/ITPro-EAC-AddIcon.png) . På sidan **ny e-postanvändare** som öppnas konfigurerar du följande inställningar. Inställningar som är markerade med <sup>\*</sup> är obligatoriska.
 
    - **Förnamn**
 
-   - **Initialer**: Personens mellersta initial.
+   - **Initialer**: personens initialer för mellan namn.
 
-   - **Efternamn**
+   - **Efter namn**
 
-   - <sup>\*</sup>**Visningsnamn**: Som standard visar den här rutan värdena från rutorna **Förnamn,** **Initialer**och **Efternamn.** Du kan acceptera det här värdet eller ändra det. Värdet ska vara unikt och ha en maximal längd på 64 tecken.
+   - <sup>\*</sup>**Visnings namn**: den här rutan visar som standard värdena i rutorna för **förnamn**, **initialer**och **efter namn** . Du kan acceptera det här värdet eller ändra det. Värdet ska vara unikt och får innehålla högst 64 tecken.
 
-   - <sup>\*</sup>**Alias:** Ange ett unikt alias med upp till 64 tecken för användaren
+   - <sup>\*</sup>**Alias**: Ange ett unikt alias med upp till 64 tecken för användaren
 
-   - **Extern e-postadress**: Ange användarens e-postadress. Domänen ska vara extern till din molnbaserade organisation.
+   - **Extern e-post adress**: Ange användarens e-postadress. Domänen bör vara extern för den molnbaserade organisationen.
 
-   - <sup>\*</sup>**Användar-ID:** Ange det konto som personen ska använda för att logga in på tjänsten. Användar-ID:t består av ett användarnamn till vänster om symbolen at (@) (@) och en domän till höger.
+   - <sup>\*</sup>**Användar-ID**: Ange det konto som personen ska använda för att logga in på tjänsten. Användar-ID: t består av ett användar namn på vänster sida av snabel-a (@) och en domän på höger sida.
 
-   - <sup>\*</sup>**Nytt lösenord** och <sup>\*</sup> **Bekräfta lösenord**: Ange och ange lösenordet igen. Kontrollera att lösenordet uppfyller kraven för lösenordslängd, komplexitet och historik i din organisation.
+   - <sup>\*</sup>**Nytt lösen** ord och <sup>\*</sup> **Bekräfta lösen ord**: Ange och ange lösen ordet för kontot igen. Kontrol lera att lösen ordet uppfyller kraven för lösen ord, komplexitet och historik för din organisation.
 
-3. När du är klar klickar du på **Spara** för att skapa e-postanvändaren.
+3. När du är klar klickar du på **Spara** för att skapa e-postkontot.
 
-### <a name="use-the-eac-to-modify-mail-users"></a>Använda EAC för att ändra e-postanvändare
+### <a name="use-the-eac-to-modify-mail-users"></a>Använda UK för att ändra e-postanvändare
 
-1. Gå till **Mottagare** \> **kontakter**i EAC.
+1. Gå till **mottagare** \> **kontakter**i UK.
 
-2. Markera den e-postanvändare som du vill ändra och klicka sedan på **Ikonen Redigera** ![ ](../../media/ITPro-EAC-AddIcon.png) redigera.
+2. Markera den e-postanvändare som du vill ändra och klicka sedan på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-AddIcon.png) .
 
-3. På sidan Egenskaper för e-postanvändare som öppnas klickar du på någon av följande flikar för att visa eller ändra egenskaper.
+3. På sidan med egenskaper för e-postkonton som öppnas klickar du på någon av följande flikar för att visa eller ändra egenskaper.
 
    Klicka på **Spara** när du är klar.
 
 #### <a name="general"></a>Allmänt
 
-Använd fliken **Allmänt** om du vill visa eller ändra grundläggande information om e-postanvändaren.
+Använd fliken **Allmänt** för att visa eller ändra grundläggande information om e-postkontot.
 
 - **Förnamn**
 
 - **Initialer**
 
-- **Efternamn**
+- **Efter namn**
 
-- **Visningsnamn**: Det här namnet visas i organisationens adressbok, på raderna Till och Från i e-post och i listan över kontakter i EAC. Det här namnet får inte innehålla tomma blanksteg före eller efter visningsnamnet.
+- **Visnings namn**: det här namnet visas i organisationens adress bok på raderna till: och från: i e-post och i listan med kontakter i UK. Det här namnet får inte innehålla tomma blank steg före eller efter visnings namnet.
 
-- **Användar-ID:** Detta är användarens konto i Microsoft 365. Du kan inte ändra det här värdet här.
+- **Användar-ID**: det här är användarens konto i Microsoft 365. Du kan inte ändra detta värde här.
 
-#### <a name="contact-information"></a>Kontaktuppgifter
+#### <a name="contact-information"></a>Kontakt information
 
-Använd fliken **Kontaktinformation** om du vill visa eller ändra användarens kontaktinformation. Informationen på den här sidan visas i adressboken.
+Använd fliken **kontakt information** för att visa eller ändra användarens kontakt information. Informationen på den här sidan visas i adress boken.
 
-- **Street**
+- **Gatu**
 - **Ort**
-- **Stat/provins**
+- **Delstat/provins**
 - **Postnummer**
 - **Land/region**
 - **Telefon, arbete**
@@ -113,33 +113,33 @@ Använd fliken **Kontaktinformation** om du vill visa eller ändra användarens 
   - **Office**
   - **Telefon hem**
   - **Webbsida**
-  - **Kommentar**
+  - **Kommentarer**
 
 #### <a name="organization"></a>Organisation
 
-Använd fliken **Organisation** om du vill registrera detaljerad information om användarens roll i organisationen.
+Använd fliken **organisation** för att registrera detaljerad information om användarens roll i organisationen.
 
 - **Title**
 - **Department**
 - **Company**
 
-### <a name="use-the-eac-to-remove-mail-users"></a>Använda EAC för att ta bort e-postanvändare
+### <a name="use-the-eac-to-remove-mail-users"></a>Använda UK för att ta bort e-postanvändare
 
-1. Gå till **Mottagare** \> **kontakter**i EAC.
+1. Gå till **mottagare** \> **kontakter**i UK.
 
-2. Markera den e-postanvändare som du vill ta bort och klicka sedan på **Ikonen Ta bort** ta bort ![ ](../../media/ITPro-EAC-RemoveIcon.gif) .
+2. Markera den e-postanvändare som du vill ta bort och klicka sedan på **ta bort** ![ ikonen Ta bort ](../../media/ITPro-EAC-RemoveIcon.gif) .
 
 ## <a name="use-powershell-to-manage-mail-users"></a>Använda PowerShell för att hantera e-postanvändare
 
 ### <a name="use-standalone-eop-powershell-to-view-mail-users"></a>Använda fristående EOP PowerShell för att visa e-postanvändare
 
-Om du vill returnera en sammanfattningslista över alla e-postanvändare i fristående EOP PowerShell kör du följande kommando:
+Om du vill returnera en sammanfattnings lista över alla e-postanvändare i fristående EOP PowerShell kör du följande kommando:
 
 ```powershell
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-Om du vill visa detaljerad information om en viss e-postanvändare ersätter du \<MailUserIdentity\> med e-postanvändarens namn, alias eller kontonamn och kör följande kommandon:
+Om du vill visa detaljerad information om en viss e-postanvändare ersätter du \<MailUserIdentity\> med namn, alias eller konto namn för e-postkontot och kör följande kommandon:
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Hämta mottagare](https://docs.microsoft.com/powershell/module/exchange/get-recipient) och [hämta användare](https://docs.microsoft.com/powershell/module/exchange/get-user).
+Detaljerad information om syntax och parametrar finns i [Hämta-mottagare](https://docs.microsoft.com/powershell/module/exchange/get-recipient) och [få-användare](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>Använda fristående EOP PowerShell för att skapa e-postanvändare
 
@@ -161,81 +161,81 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 
 **Anmärkningar**:
 
-- Parametern _Name_ krävs, har en maximal längd på 64 tecken och måste vara unik. Om du inte använder parametern _DisplayName_ används värdet för parametern _Name_ för visningsnamnet.
-- Om du inte använder parametern _Alias_ används den vänstra sidan av _parametern MicrosoftOnlneServicesID_ för aliaset.
-- Om du inte använder parametern _ExternalEmailAddress_ används _MicrosoftOnlineServicesID-värdet_ för den externa e-postadressen.
+- Parametern _namn_ är obligatorisk, har en maximal längd på 64 tecken och måste vara unik. Om du inte använder parametern _DisplayName_ används värdet för _namn_ parametern som visnings namn.
+- Om du inte använder _Ali Aset_ används den vänstra sidan av parametern _MicrosoftOnlineServicesID_ för aliaset.
+- Om du inte använder parametern _ExternalEmailAddress_ används värdet _MicrosoftOnlineServicesID_ för den externa e-postadressen.
 
 I det här exemplet skapas en e-postanvändare med följande inställningar:
 
-- Namnet är JeffreyZeng och visningsnamnet är Jeffrey Zeng.
-- Förnamnet är Jeffrey och efternamnet är Zeng.
-- Alias är Jeffreyz.
+- Namnet är JeffreyZeng och visnings namnet är Jeffrey Zeng.
+- Förnamnet är Jeffrey och efter namnet är Zeng.
+- Aliaset är jeffreyz.
 - Den externa e-postadressen är jzeng@tailspintoys.com.
-- Kontonamnet är jeffreyz@contoso.onmicrosoft.com.
-- Lösenordet är Pa $ $word1.
+- Konto namnet är jeffreyz@contoso.onmicrosoft.com.
+- Lösen ordet är pa $ $word 1.
 
 ```PowerShell
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ny-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser).
+Detaljerad information om syntax och parametrar finns i [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>Använda fristående EOP PowerShell för att ändra e-postanvändare
 
 Om du vill ändra befintliga e-postanvändare i fristående EOP PowerShell använder du följande syntax:
 
 ```powershell
-Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Text>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
 ```
 
 ```powershell
 Set-EOPUser -Identity <MailUserIdentity> [-City <Text>] [-Company <Text>] [-CountryOrRegion <CountryInfo>] [-Department <Text>] [-Fax <PhoneNumber>] [-FirstName <Text>] [-HomePhone <PhoneNumber>] [-Initials <Text>] [-LastName <Text>] [-MobilePhone <PhoneNumber>] [-Notes <Text>] [-Office <Text>] [-Phone <PhoneNumber>] [-PostalCode <String>] [-StateOrProvince <String>] [-StreetAddress <Tet>] [-Title <Text>] [-WebPage <Text>]
 ```
 
-I det här exemplet anges den externa e-postadressen för Pilar Pinilla.
+I det här exemplet anges den externa e-postadressen för pilar Pinilla.
 
 ```PowerShell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
-I det här exemplet anges egenskapen Företag för alla e-postanvändare till Contoso.
+I det här exemplet anges företags egenskapen för alla e-postanvändare till contoso.
 
 ```PowerShell
 $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ange-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser).
+Detaljerad information om syntax och parametrar finns i [set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Använda fristående EOP PowerShell för att ta bort e-postanvändare
 
-Om du vill ta bort e-postanvändare i fristående EOP PowerShell ersätter du \<MailUserIdentity\> med e-postanvändarens namn, alias eller kontonamn och kör följande kommando:
+Om du vill ta bort e-postkonton i fristående EOP PowerShell ersätter du \<MailUserIdentity\> med namn, alias eller konto namn för e-postanvändaren och kör följande kommando:
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
 ```
 
-I det här exemplet tas e-postanvändaren bort för Jeffrey Zeng.
+Det här exemplet tar bort e-postkontot för Jeffrey Zeng.
 
 ```PowerShell
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-Detaljerad syntax- och parameterinformation finns i [Ta bort EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser).
+Detaljerad information om syntax och parametrar finns i [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
-Om du vill kontrollera att du har skapat, ändrat eller tagit bort e-postanvändare i fristående EOP använder du något av följande:
+Så här kontrollerar du att du har skapat, ändrat eller tagit bort e-postanvändare i fristående EOP:
 
-- Gå till **Mottagare** \> **kontakter**i EAC. Kontrollera att e-postanvändaren finns med i listan (eller inte finns med i listan). Markera e-postanvändaren och visa informationen i informationsfönstret eller klicka på **Ikonen Redigera** redigera för att ![ visa ](../../media/ITPro-EAC-AddIcon.png) inställningarna.
+- Gå till **mottagare** \> **kontakter**i UK. Kontrol lera att e-postmeddelandet finns med i listan (eller inte listat). Markera e-postkontot och Visa informationen i informations fönstret eller klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-AddIcon.png) för att visa inställningarna.
 
-- I fristående EOP PowerShell kör du följande kommando för att kontrollera att e-postanvändaren finns med i listan (eller inte finns med i listan):
+- I fristående EOP PowerShell kör du följande kommando för att kontrol lera att e-postmeddelandet är listad (eller inte listad):
 
   ```powershell
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- Ersätt \<MailUserIdentity\> med e-postanvändarens namn, alias eller kontonamn och kör följande kommandon för att verifiera inställningarna:
+- Ersätt \<MailUserIdentity\> med namn, alias eller konto namn för e-postkontot och kör följande kommandon för att kontrol lera inställningarna:
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -245,41 +245,41 @@ Om du vill kontrollera att du har skapat, ändrat eller tagit bort e-postanvänd
   Get-User -Identity <MailUserIdentity> | Format-List
   ```
 
-## <a name="use-directory-synchronization-to-manage-mail-users"></a>Använda katalogsynkronisering för att hantera e-postanvändare
+## <a name="use-directory-synchronization-to-manage-mail-users"></a>Använda Katalogduplicering för att hantera e-postanvändare
 
-I fristående EOP är katalogsynkronisering tillgänglig för kunder med lokal Active Directory. Du kan synkronisera dessa konton till Azure Active Directory (Azure AD), där kopior av kontona lagras i molnet. När du synkroniserar dina befintliga användarkonton till Azure Active Directory kan du visa dessa användare i fönstret Mottagare i **Administrationscenter** för Exchange (EAC) eller i fristående EOP PowerShell.
+I fristående EOP är Directory-synkronisering tillgängligt för kunder med lokal Active Directory. Du kan synkronisera dessa konton med Azure Active Directory (Azure AD), där kopior av kontona lagras i molnet. När du synkroniserar dina befintliga användar konton till Azure Active Directory kan du visa dessa användare i fönstret **mottagare** i administrations centret för Exchange (UK) eller i fristående EOP PowerShell.
 
 **Anmärkningar**:
 
-- Om du använder katalogsynkronisering för att hantera mottagarna kan du fortfarande lägga till och hantera användare i Microsoft 365-administrationscentret, men de synkroniseras inte med den lokala Active Directory. Detta beror på att katalogsynkronisering bara synkroniserar mottagare från den lokala Active Directory till molnet.
+- Om du använder katalog synkronisering för att hantera mottagarna kan du ändå lägga till och hantera användare i administrations centret för Microsoft 365, men de kommer inte att synkroniseras med din lokala Active Directory. Detta beror på att Active Directory-synkroniseringen bara synkroniserar mottagare från din lokala aktiva katalog till molnet.
 
-- Användning av katalogsynkronisering rekommenderas för användning med följande funktioner:
+- Du rekommenderas att använda profilsynkronisering med följande funktioner:
 
-  - **Outlook Safe Sender listor och blockerade avsändare listor:** När synkroniseras till tjänsten, dessa listor kommer att ha företräde framför spam filtrering i tjänsten. På så sätt kan användare hantera sin egen lista över betrodda avsändare och blockerad avsändare med enskilda avsändare och domänposter. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listorna **Betrodda avsändare och spärrade avsändare i Outlook**: när du synkroniserar till tjänsten får de här listorna högre prioritet än skräp post filtrering i tjänsten. Då kan användarna hantera sin egen lista över betrodda avsändare och spärrade avsändare med enskilda avsändare och domän poster. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
 
-  - **Katalogbaserad kantblockering (DBEB):** Mer information om DBEB finns i [Använda katalogbaserad kantblockering för att avvisa meddelanden som skickas till ogiltiga mottagare](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+  - **Mappbaserade Edge-blockering (DBEB)**: Mer information om DBEB finns i [använda katalogbaserade Edge-blockering för att neka meddelanden skickade till ogiltiga mottagare](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Slutanvändarens åtkomst till karantän:** För att komma åt sina meddelanden i karantän måste mottagarna ha ett giltigt användar-ID och lösenord i tjänsten. Mer information om karantän finns i [Hitta och släppa meddelanden i karantän som användare](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **Slutanvändare åtkomst till karantän**: för att få åtkomst till deras karantän meddelanden måste mottagarna ha ett giltigt användar-ID och lösen ord i tjänsten. Mer information om karantän finns i [hitta och släppa meddelanden i karantän som en användare](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
 
-  - **Regler för e-postflöde (kallas även transportregler):** När du använder katalogsynkronisering överförs dina befintliga Active Directory-användare och -grupper automatiskt till molnet och du kan sedan skapa regler för e-postflöde som riktar sig till specifika användare och/eller grupper utan att behöva lägga till dem manuellt i tjänsten. Observera att [dynamiska distributionsgrupper](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) inte kan synkroniseras via katalogsynkronisering.
+  - **Regler för e-postflöde (kallas även transport regler)**: när du använder katalog synkronisering laddas de befintliga Active Directory-användarna och-grupperna automatiskt till molnet, och du kan skapa regler för e-postflöde som riktar sig till specifika användare och/eller grupper utan att behöva lägga till dem manuellt i tjänsten. Observera att [dynamiska distributions grupper](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) inte kan synkroniseras med katalog synkronisering.
 
-Hämta nödvändiga behörigheter och förbereda för katalogsynkronisering enligt beskrivningen i [Vad är hybrididentitet med Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+Skaffa nödvändiga behörigheter och förbereda för Active Directory-synkronisering enligt beskrivningen i [Vad är hybrid identitet med Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>Synkronisera kataloger med Azure Active Directory Connect (AAD Connect)
 
-1. Aktivera katalogsynkronisering enligt beskrivningen i [Azure AD Connect-synkronisering: Förstå och anpassa synkronisering](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+1. Aktivera katalog synkronisering enligt beskrivningen i [Azure AD Connect-synkronisering: förstå och anpassa synkronisering](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
-2. Installera och konfigurera en lokal dator för att köra AAD Connect enligt beskrivningen i [Förutsättningar för Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
+2. Installera och konfigurera en lokal dator för att köra AAD Connect enligt beskrivningen i [förutsättningar för Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
-3. [Välj vilken installationstyp som ska användas för Azure AD Connect:](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)
+3. [Välj vilken Installations typ som ska användas för Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
 
-   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Uttrycklig](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
-   - [Anpassade](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+   - [Företagsanpassade](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 
    - [Direktautentisering](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
-> När du är klar med konfigurationsguiden för Azure Active Directory Sync Tool skapas **MSOL_AD_SYNC-kontot** i Active Directory-skogen. Det här kontot används för att läsa och synkronisera din lokala Active Directory-information. För att katalogsynkroniseringen ska fungera korrekt kontrollerar du att TCP 443 på den lokala katalogsynkroniseringsservern är öppen.
+> När du är klar med konfigurations guiden för Azure Active Directory-Synkroniseringshanteraren skapas **MSOL_AD_Sync** -kontot i Active Directory-skogen. Det här kontot används för att läsa och synkronisera din lokala Active Directory-information. För att Active Directory-synkroniseringen ska fungera korrekt kontrollerar du att TCP 443 på den lokala katalogpartitionen är öppen.
 
-När du har konfigurerat synkroniseringen måste du kontrollera att AAD Connect synkroniseras korrekt. I EAC går du till **Mottagare** \> **Kontakter** och visa att listan över användare har synkroniserats korrekt från din lokala miljö.
+När du har konfigurerat din synkronisering måste du kontrol lera att AAD Connect är synkroniserat korrekt. I UK går du till **mottagare** - \> **kontakter** och visar att listan över användare har synkroniserats korrekt från din lokala miljö.
