@@ -313,6 +313,8 @@
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: Rapportera skräppost och nätfiske i Outlook på webben
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                    - name: Rapportera skräppost och phishing i Outlook för iOS och Android
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md
                     - name: Skicka meddelanden till Microsoft manuellt
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Använd regler för e-postflöde för att se vad dina användare rapporterar till Microsoft
@@ -382,6 +384,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: Använda DMARC för att validera e-post
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Installera Application Guard för Office
+              href: ./office-365-security/install-app-guard.md
             - name: Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Översikt över instrumentpanelen för säkerhet
