@@ -1,5 +1,5 @@
 ---
-title: Microsofts produktivitetspoäng
+title: Microsoft produktivitets Poäng
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,62 +18,62 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Översikt över Microsofts produktivitetspoäng.
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+description: Översikt över Microsoft produktivitets poäng.
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101653"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868861"
 ---
-# <a name="microsoft-productivity-score-preview"></a>Microsofts produktivitetspoäng (förhandsgranskning)
+# <a name="microsoft-productivity-score-preview"></a>Microsoft produktivitets Poäng (för hands version)
 
-Produktivitetspoäng hjälper organisationer att förändra hur arbetet utförs med insikter om hur människor använder Microsoft 365 och de teknikupplevelser som stöder dem. Poängen återspeglar organisationens resultat mot mått på medarbetar- och teknikupplevelse och jämför dina poäng med organisationer som din.
+Produktivitets poäng gör det lättare för organisationer att omvandla hur arbete görs med insikter om hur människor använder Microsoft 365 och de teknik funktioner som har stöd för dem. Poängen återspeglar organisationens prestanda i förhållande till anställda och teknik och jämför poängen med organisationer som dina egna.
 
 Poängen inkluderar:
 
-- **Mätvärden** som hjälper dig att se hur personer använder Microsoft 365-produkter för att samarbeta, kommunicera och arbeta på olika plattformar.
-- **Insikter** om data som hjälper dig att identifiera möjligheter att förbättra medarbetarnas produktivitet och tillfredsställelse.
-- **Rekommenderade åtgärder** som du kan vidta för att hjälpa användarna i organisationen att använda Microsoft 365-produkter effektivt så att alla kan göra sitt bästa.
+- **Mått** för att se hur andra använder Microsoft 365-produkter för att samar beta, kommunicera och arbeta på olika plattformar.
+- **Insikter** om data för att hjälpa dig att identifiera möjligheter för att förbättra produktivitet och tillfredsställelse hos din personal.
+- **Rekommenderade åtgärder** du kan vidta för att hjälpa personer i din organisation att använda Microsoft 365-produkter effektivt så att alla kan göra sitt bästa arbete.
 
-Vi tillhandahåller data, insikter och rekommendationer inom två områden: 
+Vi tillhandahåller data, insikter och rekommendationer i två områden: 
 
-- **Medarbetarnas erfarenhet:** Vi mäter hur personer samarbetar med innehåll, hur de använder Microsoft 365-produkter för att kommunicera och om de använder Microsoft 365 på olika plattformar. 
+- **Personens upplevelse:** Vi mäter hur personer samarbetar med innehåll, hur de använder Microsoft 365-produkter för att kommunicera och om de använder Microsoft 365 på olika plattformar. 
 
-    Vi ger dessa insikter eftersom när människor samarbetar online sparar de tid. När de har friheten att arbeta på alla enheter, de är mer produktiva och nöjda. När de kan kommunicera på ett flexibelt sätt är de mer effektiva, bildar bättre relationer och din organisation är mer enhetlig. För bevis, se [Forrester rapport](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Vi tillhandahåller dessa insikter eftersom de när folk samarbetar online sparar tid. När de har frihet att arbeta på alla enheter är de mer produktiva och uppfyllda. När de kan kommunicera på ett flexibelt sätt är de effektivare, bildar bättre relationer och din organisation är mer enhetlig. Mer information finns i [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Teknikerfarenhet:** Produktiviteten är beroende av tillförlitlig och högpresterande teknik samt effektiv användning av Microsoft 365. Vi tillhandahåller slutpunktsanalys, som ger dig insikter och rekommendationer om enhetsinstallation och starttider, och vi tillhandahåller Microsoft 365 nätverksanslutningsinsikter för din organisation.
+- **Teknik upplevelse:** Produktiviteten beror på tillförlitlig och högpresterande teknologi samt användning av Microsoft 365. Vi tillhandahåller [slut punkts analys](https://aka.ms/endpointanalytics), som hjälper dig att förstå hur användarnas produktivitet kan påverkas av prestanda-och hälso problem med slut punkts maskin vara och program vara, samtidigt som rekommenderade åtgärder kan åtgärdas. och vi tillhandahåller Microsoft 365-nät anslutnings barhet för din organisation.
 
-Mer information om slutpunktsanalys finns [i översikten över nätverksanslutningen](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Se [Vad är slut punkts analys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och krav uppgifter. Om du vill veta mer om Microsoft 365 Network Connectivity kan du läsa [Översikt över nätverks anslutningen](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
-## <a name="how-the-score-is-calculated"></a>Hur poängen beräknas
+## <a name="how-the-score-is-calculated"></a>Så här beräknas poängen
 
-Din produktivitetspoäng baseras på de sammanlagda poängen för dina kategorier av medarbetar- och teknikupplevelse. Varje kategori viktas lika, med totalt 100 poäng per kategori. Den totala möjliga poäng för produktivitetspoäng är 500.
+Produktivitets poängen baseras på de kombinerade poängen från kategorierna för anställda och teknik. Varje kategori viktas lika, med totalt 100 poäng per kategori. De totala möjliga poängen för produktivitets Poäng är 500.
 
-### <a name="score-categories"></a>Poängkategorier 
+### <a name="score-categories"></a>Poäng kategorier 
 
-- Samarbete med innehåll (100 poäng)
-- Meddelande (100 poäng)
-- Rörlighet (100 poäng)
-- Slutpunktsanalys (100 poäng)
-- Nätverksanslutning (100 poäng)
-- **Totalt möjligt = 500 poäng**
+- Innehålls samarbete (100 poäng)
+- Kommunikation (100 poäng)
+- Mobilitet (100 poäng)
+- Slut punkts analys (100 poäng)
+- Nätverks anslutning (100 poäng)
+- **Totalt antal möjliga = 500 punkter**
  
- I varje kategori identifierar vi mönster för viktiga aktiviteter som är indikatorer för hur personer använder Microsoft 365-produkter för att samarbeta, kommunicera och arbeta på olika plattformar. Vi erbjuder 28-dagars och 180-dagars utsikt över de viktigaste aktiviteterna. Vi tillhandahåller också stödmått som inte ingår i poängberäkningen men som är viktiga för att hjälpa dig att identifiera underliggande beteenden och inställningar som du kan agera på för att driva förändring.
+ I varje kategori identifierar vi mönster för viktiga aktiviteter som är symboler för hur folk använder Microsoft 365-produkter för att samar beta, kommunicera och arbeta på olika plattformar. Vi tillhandahåller 28-dagars-och 180-dagars visningar av viktiga aktiviteter. Vi tillhandahåller också stödjande mått som inte är en del av poängen och som är viktiga för att du ska kunna identifiera underliggande beteenden och inställningar som du kan vidta för att göra en ändring.
 
-### <a name="products-included-in-productivity-score"></a>Produkter som ingår i produktivitetspoäng 
+### <a name="products-included-in-productivity-score"></a>Produkter inkluderade i produktivitets Poäng 
 
-Produktivitetspoängen omfattar data från Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer och Skype.
+Produktivitets Poäng inkluderar data från Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer och Skype.
 
-Din poäng uppdateras dagligen och återspeglar användaråtgärder som slutförts under de senaste 28 till 180 dagarna (inklusive den aktuella dagen).
+Ditt resultat uppdateras dagligen och återspeglar användar åtgärderna som har slutförts de senaste 28 till 180 dagar (inklusive den aktuella dagen).
 
 
 ## <a name="pre-requisites"></a>Förutsättningar 
 
-Du behöver en Microsoft 365 för företag eller Office 365 för företagsprenumeration för att få data om medarbetarupplevelsen och du måste använda molntjänster för flera innehavare. Om du vill hämta slutpunktsanalysdata för din klientorganisation måste du lägga till Microsoft Intune i prenumerationen. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar.       När du har Intune kan du aktivera slutpunktsanalys inom Intune-upplevelsen. Läs mer om Microsoft Intune. 
+Du behöver ett Microsoft 365 för företag eller Office 365 för företags abonnemang för att få information om anställda och du måste använda flera klient organisationer. För att få slut punkts analys data för din klient organisation måste du lägga till Microsoft Intune i ditt abonnemang. Intune hjälper dig att skydda organisationens data genom att hantera enheter och appar.       När du har Intune kan du aktivera slut punkts analys i Intune-upplevelsen. Läs mer om Microsoft Intune. 
 
-Om du vill visa produktivitetspoängen för din organisation måste du ha en av följande roller: 
+Om du vill visa produktivitets poängen för din organisation måste du ha av någon av följande roller: 
 
 - Global administratör 
 - Exchange-administratörer
@@ -81,76 +81,76 @@ Om du vill visa produktivitetspoängen för din organisation måste du ha en av 
 - Skype för företag-administratör 
 - Teams-administratör 
 - Global läsare 
-- Rapporter Reader 
+- Rapport läsare 
 
-Du kan komma åt upplevelsen från Microsoft 365 Admin home under **Reports**  >  **Productivity Score**.
+Du kan komma åt upplevelsen från Microsoft 365 admin Home under **rapporter**om  >  **produktivitets Poäng**.
 
-## <a name="interpreting-productivity-score"></a>Tolka produktivitetspoäng 
+## <a name="interpreting-productivity-score"></a>Tolka Poäng för produktivitet 
 
-På hemsidan för produktivitetspoäng visas din totala poäng- och poänghistorik samt den primära insikten för varje kategori
+På Start sidan för produktivitets Poäng visas ditt totala poäng-och Poäng historik samt den främsta inblicken för varje kategori
 
-![Startsida för produktivitetsresultat](../../media/pslanding.png)
+![Start sida för produktivitets Poäng](../../media/pslanding.png)
 
-**Din poäng** visas som ett procentvärde såväl som i poäng så att du kan se dina poäng (täljare) och högsta möjliga poäng (nämnare).
+**Poängen** visas som ett procentuellt värde samt i punkter så att du kan se dina Points (täljare) och högsta möjliga poäng (nämnare).
 
-**Peer riktmärken** kan du jämföra dina poäng med organisationer som din. För kategorierna medarbetarnas erfarenhet beräknas peer-benchmark-måttet som medelvärdet av mått inom en uppsättning liknande organisationer. Uppsättningen består av organisationer i din region med ett liknande antal licensierade användare, typer av licenser, bransch och anställning med Microsoft 365. 
+Med funktioner för **peer-prestandatest** kan du jämföra poängen med organisationer som dina egna. För kategorierna Employee Experience beräknas mått för peer-benchmark som medelvärdet av mått inom en uppsättning likartade organisationer. Uppsättningen består av organisationer i din region med ett liknande antal licensierade användare, typer av licenser, bransch och besittning med Microsoft 365. 
 
-Peer-riktmärket för slutpunktsanalys innehåller mål för enhetens startprestanda och rekommenderad programvarukonfiguration baserat på aggregerade medianvärden för alla klienter.
+Resurs benchmark för slut punkts analys inkluderar mål för start prestanda och Rekommenderad program konfiguration baserat på aggregerade median värden för alla klienter.
 
-För nätverksanslutning är det rekommenderade riktmärket 80 poäng.
+För nätverks anslutning är det rekommenderade benchmark 80-poäng.
 
-Avsnittet **Poängfördelning** ger en uppdelning av produktivitetspoängen med riktmärken efter anställdas och teknikerfarenhetsområden.
+I avsnittet **Poäng uppdelning** får du en uppdelning av produktivitets poängen med benchmarks i områdena anställda och teknik.
 
-Poänghistoriken visar hur dina poäng i varje kategori har ändrats under de senaste 6 månaderna.
+Resultat historik visar hur poängen i varje kategori har ändrats under de senaste sex månaderna.
 
-**Erfarenhetsområdena Medarbetarnas erfarenhet** och **Teknik** innehåller de primära insikterna för kategorierna inom dessa områden. Du kan klicka på varje kategori för att se djupare insikter.
+Funktionerna för **personens upplevelse** och **teknik** innehåller de viktigaste insikterna för kategorierna i dessa områden. Du kan klicka på varje kategori för att se djupare insikter.
 
-## <a name="category-details-pages"></a>Kategoriinformationssidor
+## <a name="category-details-pages"></a>Kategori informations sidor
 
-Varje kategoriinformationssida visar den primära insikten och stödmåtten samt relaterad forskning och åtgärder som du kan vidta för att driva förändring i organisationen. Forskning stöder vikten och logiken bakom de primära insikterna för varje kategori. Mer information [finns i Forrester-rapporten](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Varje kategori informations sida visar huvud inblick och stödjande mått samt relaterade undersökningar och åtgärder som du kan vidta för att driva en ändring i organisationen. Forskningen har funktioner för betydelse och rationellt bakom primär insikter för varje kategori. Mer information finns [i Forrester-rapporten](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-### <a name="content-collaboration-details"></a>Information om innehållssamarbete
+### <a name="content-collaboration-details"></a>Information om innehålls samarbete
 
-Den primära insikten för innehållssamarbete är antalet personer som skapar, läser och samarbetar (redigerar och delar) online. Dessa åtgärder är viktiga eftersom forskning visar att när människor samarbetar med online-filer, sparar varje person i genomsnitt 100 minuter, eller nästan 2 timmar, per vecka.
+Den främsta inblicken för innehålls samarbete är antalet personer som skapar, läser och samarbetar (redigera och dela) online. De här åtgärderna är viktiga eftersom forskningen visar att när personer samarbetar med online-filer sparar varje person ett medelvärde på 100 minuter eller nästan två timmar per vecka.
 
-Vi definierar innehållssamarbete som en person som skapar och delar en Office-fil och sedan minst en annan person som redigerar den. 
+Vi definierar innehålls samarbete som en person som skapar och delar en Office-fil och sedan minst en annan person som redigerar den. 
 
-Läsare: Personer som kommer åt eller laddar ned onlinefiler i OneDrive eller SharePoint.
+Läsare: personer som får till gång till eller laddar ned online-filer i OneDrive eller SharePoint.
 
-**Skapare:** Personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar Online-OneDrive- eller SharePoint-filer.
+**Skapare:** Personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar OneDrive-eller SharePoint-filer online.
 
-Medarbetare: Personer som samarbetar med onlinefiler med OneDrive eller SharePoint. Två personer är medarbetare om en av dem läser eller redigerar ett onlinedokument i Word, Excel, PowerPoint, OneNote eller PDF när den andra personen har skapat eller modifierat det i ett 28-dagarsfönster.
+Samarbetsor: personer som samarbetar med online-filer med OneDrive eller SharePoint. Två personer är samarbetsor om en av dem läser eller redigerar ett Word-, Excel-, PowerPoint-, OneNote-eller PDF-moln-dokument efter att den andra personen skapar eller ändrar det i ett 28-dagars fönster.
 
-De filtyper som övervägs för samarbete är Word-, Excel-, PowerPoint-, OneNote- och PDF-filer.
+De filtyper som behandlas för samarbete är Word-, Excel-, PowerPoint-, OneNote-och PDF-filer.
 
-Vi ger insikter om starttider och konfigurera för enheter i din organisation samt nätverksanslutningsinsikter för innehållssamarbete eftersom samarbete med onlinefiler kräver tillförlitliga enheter som startar snabbt och har uppdaterad programvara samt bra anslutning till Microsoft 365.
+Vi tillhandahåller insikter i Start tiderna och konfigurerar enheter i din organisation såväl som nätverks anslutnings insikter för innehålls samarbete eftersom online-filsamarbete kräver tillförlitliga enheter som kan komma att startas snabbt och ha en bra förbindelse till Microsoft 365.
 
-### <a name="communication-details"></a>Information om kommunikation
+### <a name="communication-details"></a>Kommunikations uppgifter
 
-Den primära insikten för kommunikation är hur ofta personer i organisationen använder e-post, chatt och communityinlägg för att kommunicera. Den här insikten är viktig eftersom när människor använder en mängd olika kommunikationsverktyg i realtid kan de välja det kommunikationssätt som hjälper dem att bli mest effektiva, och de har verktyg som chatt och grupper som hjälper dem att utveckla relationer över kontorsplatser.
+Den främsta inblicken för kommunikation är hur ofta folk i din organisation använder e-post, chatt och gemenskaps inlägg för kommunikation. Det här är en insikt om när personer använder en mängd olika kommunikations verktyg i real tid kan de välja kommunikations läget som hjälper dem att bli effektiv och de har verktyg som chatt och grupper som hjälper dem att utveckla relationer mellan olika Office-platser.
 
-### <a name="mobility-details"></a>Information om rörlighet
+### <a name="mobility-details"></a>Information om mobilitet
 
-Den primära insikten för mobilitet är antalet personer som får åtkomst till filer och använder e-post och chatt på flera plattformar. Möjligheten att arbeta från vilken plats som helst på vilken enhet de väljer är viktigt för personer med försäljningsroller, högre chefer, konsulter och andra som behöver arbeta bort från kontoret för att vara produktiva. Förbättringar för dessa arbetstagare har stor inverkan. 
+Den främsta inblicken för rörlighet är antalet personer som får till gång till filer och använder e-post och chatt på flera plattformar. Möjligheten att arbeta från vilken plats som helst på vilken enhet de väljer är viktig för personer med Sälj roller, chefs chefer, konsulter och andra som behöver göra jobbet borta från kontoret. Förbättringar av dessa arbets tagare har stor betydelse. 
 
-Vi mäter procentandelen och det absoluta antalet personer som använde minst en Microsoft 365 produktivitetsapp på två eller flera plattformar, inklusive stationära, mobila och webb. De produktivitetsappar vi mäter är Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype. Personer måste ha Microsoft 365-appar för företags-, Exchange-, Yammer-, Skype- eller Teams-licenser som ska mätas. 
+Vi mäter det procenttal och det absoluta antalet personer som använder minst en Microsoft 365-produktivitet på två eller fler plattformar, inklusive skriv bord, mobil och Internet. Produktivitets programmen vi mäter är Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer och Skype. Personer måste ha Microsoft 365-appar för Enterprise-, Exchange-, Yammer-, Skype-eller teams-licenser. 
 
-## <a name="business-continuity-special-report"></a>Särskild rapport om kontinuitet i verksamheten
+## <a name="business-continuity-special-report"></a>Special rapport för affärs kontinuitet
 
-Rapporten Affärskontinuitet är en begränsad workplace intelligence-rapport som är tillgänglig för alla Microsoft 365-kunder för att hjälpa dem att vägleda sina organisationer under den här utmanande tiden.  
+Rapporten kontinuitet för företag är en begränsad tids rapport för arbets plats information som är tillgänglig för alla Microsoft 365-kunder så att de kan hjälpa dem att vägleda sina organisationer under denna utmanande tid.  
 
-Den här rapporten hjälper företagsledare att förstå: 
+Den här rapporten hjälper företags ledare att förstå: 
 
-- Hur samarbete och kommunikation påverkas av övergången till distansarbete. 
+- Hur samarbete och kommunikation påverkas av SKIFT för fjärrarbete. 
 
-- Effekten på balansen mellan arbete och privatliv när människor anpassar sig till att arbeta hemifrån. 
+- Det påverkar arbetets livs längd och det går att arbeta hemifrån. 
 
-- Om fjärrmöten stöder ett effektivt beslutsfattande.
+- Om fjärrsamtal-möten har stöd för effektivt beslut.
 
-[Läs mer om rapporten Affärskontinuitet](https://aka.ms/bcrps)
+[Lär dig mer om kontinuitets rapporten för företag](https://aka.ms/bcrps)
 
-[Läs mer om Microsoft Graph](https://docs.microsoft.com/graph/)
+[Lär dig mer om Microsoft Graph](https://docs.microsoft.com/graph/)
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Vänligen dela dina tankar om Produktivitetspoäng och dina idéer om hur du kan förbättra den. Använd avsnitten **Feedback** i produkten och/eller kontakta produktivitetspoängteamet på ProductivityScorePreview@service.microsoft.com.
+Berätta vad du tycker om produktivitets Poäng och dina idéer om hur du kan förbättra det. Använd **feedback** -avsnitten i produkten och/eller nå produktivitets gruppen på ProductivityScorePreview@service.microsoft.com.

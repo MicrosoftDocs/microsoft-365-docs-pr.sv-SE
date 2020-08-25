@@ -18,19 +18,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om de avancerade inställningarna för skräp post filter (ASF) som är tillgängliga i principer för skräp post överföring i Exchange Online Protection (EOP).
-ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827343"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867227"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräp post filter (ASF) i EOP
 
 > [!NOTE]
 > ASF-inställningar som för närvarande är tillgängliga i principer för skräp post är i föråldrade. Vi rekommenderar att du inte använder dessa inställningar i principer för skräp post. Funktionerna i dessa ASF-inställningar läggs in i andra delar av filtrerings stacken. Mer information finns i [EOP princip inställningar för skräp post](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-I Microsoft 365-organisationer med post lådor i Exchange Online eller fristående Exchange Online Protection (EOP)-organisationer utan Exchange Online-postlådor, kan de avancerade skräp post filter (ASF) i principer för skräp post (även kallat skräp post filter principer eller innehålls filter principer) tillåta administratörer att markera meddelanden som skräp post baserat på specifika meddelande egenskaper. ASF specifikt riktar sig på dessa egenskaper eftersom de ofta finns i spam. Beroende på egenskapen kan ASF-identifieringar antingen markera meddelandet som **skräp post** eller **snabb skräp post**.
+I alla Microsoft 365-organisationer är det avancerade skräp post filtret (ASF) för principer för skräp post i EOP att administratörer kan markera meddelanden som skräp post baserat på specifika meddelande egenskaper. ASF specifikt riktar sig på dessa egenskaper eftersom de ofta finns i spam. Beroende på egenskapen kan ASF-identifieringar antingen markera meddelandet som **skräp post** eller **snabb skräp post**.
 
 > [!NOTE]
 > Att aktivera en eller flera av ASF-inställningarna är en aggressiv metod för filtrering av skräp post. Du kan inte rapportera meddelanden som filtrerats efter ASF som falska positiva positiv. Du kan identifiera meddelanden som filtrerats efter ASF av:
@@ -53,11 +53,11 @@ För varje ASF-inställning är följande alternativ tillgängliga i principer f
 
 - **Test**: ASF lägger till motsvarande X-huvud-fält i meddelandet. Vad som händer med meddelandet beror på alternativ för **testläge** (*TestModeAction*):
 
-  - **Ingen**: meddelande cirkulation och leverans påverkas inte av ASF-identifieringen. Meddelandet gäller fortfarande andra typer av filtrering och regler i EOP.
+  - **Ingen**: meddelande leverans påverkas inte av ASF-identifieringen. Meddelandet gäller fortfarande andra typer av filtrering och regler i EOP.
 
-  - **Lägg till standard text för x-rubrik (*AddXHeader*)**: värdet x-Head `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i regler för Inkorgen eller regler för e-postflöde (kallas även transport regler) för att påverka Routning och leverans av meddelandet.
+  - **Lägg till standard text för x-rubrik (*AddXHeader*)**: värdet x-Head `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i regler för Inkorgen eller regler för e-postflöde (kallas även transport regler) för att påverka leveransen av meddelandet.
 
-  - **Skicka hemlig kopia (*BccMessage*)**: de angivna e-postadresserna ( *TestModeBccToRecipients* -parametervärdet i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet skickas till mottagaren. I säkerhets & Compliance Center avgränsar du flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
+  - **Skicka hemlig kopia (*BccMessage*)**: de angivna e-postadresserna ( *TestModeBccToRecipients* -parametervärdet i PowerShell) läggs till i fältet Hemlig kopia i meddelandet och meddelandet skickas till övriga mottagare. I säkerhets & Compliance Center avgränsar du flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
 
   **Anmärkningar**:
 
@@ -80,7 +80,7 @@ Följande ASF-inställningar anger SCL (skräp Utjämnings grad) för identifier
 |**Bild länkar till fjärranslutna webbplatser** <br/><br/> *IncreaseScoreWithImageLinks*|Meddelanden som innehåller `<Img>` HTML-taggar till fjärranslutna webbplatser (till exempel http) markeras som skräp post.|`X-CustomSpam: Image links to remote sites`|
 |**URL-omdirigering till annan port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Meddelande som innehåller hyperlänkar som omdirigeras till andra TCP-portar än 80 (HTTP), 8080 (alternativ HTTP) eller 443 (HTTPS) markeras som skräp post.|`X-CustomSpam: URL redirect to other port`|
 |**Numerisk IP-adress i URL** <br/><br/> *IncreaseScoreWithNumericIps*|Meddelanden som innehåller numeriska adresser (vanligt vis IP-adresser) markeras som skräp post.|`X-CustomSpam: Numeric IP in URL`|
-|**URL till. B2B argumentssida eller. info webbplatser** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Meddelanden som innehåller. B2B argumentssida eller. info-länkar i meddelande texten markeras som skräp post.|`X-CustomSpam: URL to .biz or .info websites`|
+|**URL till. B2B argumentssida eller. info webbplatser** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Meddelanden som innehåller `.biz` eller `.info` länkar i meddelande texten markeras som skräp post.|`X-CustomSpam: URL to .biz or .info websites`|
 |
 
 ## <a name="mark-as-spam-settings"></a>Markera som skräp post inställningar
@@ -95,9 +95,9 @@ Följande ASF-inställningar anger SCL för identifierade meddelanden till 9, so
 |**Java Script eller VBScript i HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Meddelanden som använder Java Script eller Visual Basic script Edition i HTML markeras som skräp post som är säkrare. <br/><br/> Dessa skript språk används i e-postmeddelanden för att göra att specifika åtgärder utförs automatiskt.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Ram-eller IFrame-Taggar i HTML** <br><br/> *MarkAsSpamFramesInHtml*|Meddelanden som innehåller `<frame>` eller `<iframe>` HTML-taggar markeras som skräp post. <br/><br/> Dessa taggar används i e-postmeddelanden för att formatera sidan för att visa text eller bilder.|`X-CustomSpam: IFRAME or FRAME in HTML`|
 |**Objekt-Taggar i HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Meddelanden som innehåller `<object>` HTML-taggar markeras som skräp post. <br/><br/> Den här taggen gör att plugin-program eller program kan köras i ett HTML-fönster.|`X-CustomSpam: Object tag in html`|
-|**Bädda in Taggar i HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Meddelande som innehåller `<embed>` HTML-taggar är markerade som skräp post med hög exakthet. <br/><br/> Med den här taggen kan du bädda in olika typer av dokument med olika data typer i ett HTML-dokument (till exempel ljud, filmer eller bilder).|`X-CustomSpam: Embed tag in html`|
+|**Bädda in Taggar i HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Meddelande som innehåller `<embed>` HTML-taggar är markerade som skräp post med hög exakthet. <br/><br/> Med den här taggen kan du bädda in olika typer av dokument i ett HTML-dokument (till exempel ljud, video eller bilder).|`X-CustomSpam: Embed tag in html`|
 |**Formulär-Taggar i HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Meddelanden som innehåller `<form>` HTML-taggar markeras som skräp post. <br/><br/> Den här taggen används för att skapa webbplats formulär. E-postannonser inkluderar ofta denna märkning för att skicka information från mottagaren.|`X-CustomSpam: Form tag in html`|
-|**Webb program fel i HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Ett *webb program fel* (kallas även för en *Web beacon*) är ett grafiskt element (lika mycket som en bild punkt per bild punkt) som används i e-postmeddelanden för att avgöra om meddelandet lästes. <br/><br/> Meddelanden som innehåller webb fel är markerade som skräp post med hög exakthet. <br/><br/> Legitima nyhets brev kan använda webb program, även om många anser det här en webb integritet. |`X-CustomSpam: Web bug`|
+|**Webb program fel i HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Ett *webb program fel* (kallas även för en *Web beacon*) är ett grafik element (ofta i en bild punkt) som används i e-postmeddelanden för att avgöra om meddelandet lästes av mottagaren. <br/><br/> Meddelanden som innehåller webb fel är markerade som skräp post med hög exakthet. <br/><br/> Legitima nyhets brev kan använda webb program, även om många anser det här en webb integritet. |`X-CustomSpam: Web bug`|
 |**Använda känslig ord lista** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft hanterar en dynamisk men inte redigerbar lista över ord som är kopplade till potentiellt stötande meddelanden. <br/><br/> Meddelanden som innehåller ord från den känsliga ord listan i ämnet eller meddelande texten markeras som skräp post.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-post: hårda fel** <br><br/> *MarkAsSpamSpfRecordHardFail*|Meddelanden som skickas från en IP-adress som inte anges i SPF-posten (SPF avsändaren Policy Framework) i DNS för källan e-postdomänen markeras som skräp post som är säkrare. <br/><br/> Test läget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF Record Fail`|
 |**ID för villkorsstyrd avsändare: hårda fel** <br><br/> *MarkAsSpamFromAddressAuthFail*|Meddelanden som inte fungerar på ett annat sätt är markerade som skräp post. <br/><br/> Den här inställningen kombinerar en SPF-kontroll med avsändarens ID-kontroll för att skydda mot meddelande rubriker som innehåller förfalskade avsändare. <br/><br/> Test läget är inte tillgängligt för den här inställningen.|`X-CustomSpam: SPF From Record Fail`|

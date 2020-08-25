@@ -1,7 +1,7 @@
 ---
-title: Spåra din Microsoft Secure Score-historik och uppnå mål
-description: Få insikter om aktiviteter som har påverkat ditt säkra resultat. Upptäck trender och sätt upp mål.
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
+title: Spåra din Microsoft säkra Poäng historik och uppfylla målen
+description: Få information som påverkar din säkra poäng. Upptäck trender och ställa in mål.
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säker poäng, säkerhets Center, förbättrings åtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,62 +20,62 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 46a45eac2fe5d1a19b0d2c40c6c1405f31b7f7f7
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200092"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866713"
 ---
-# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Spåra din Microsoft Secure Score-historik och uppnå mål
+# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Spåra din Microsoft säkra Poäng historik och uppfylla målen
 
-[Microsoft Secure Score](microsoft-secure-score.md) är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns https://security.microsoft.com/securescore på i Microsoft [365 security center](overview-security-center.md).
+[Microsoft Secure score](microsoft-secure-score.md) är ett mått på en organisations säkerhets Posture, med ett högre nummer som indikerar fler förbättrings åtgärder. Den finns https://security.microsoft.com/securescore i [säkerhets Center för Microsoft 365](overview-security-center.md).
 
-## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Få insikter om aktivitet som har påverkat dina poäng
+## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Få information som har påverkat poängen
 
-Visa ett diagram över organisationens poäng över tid på fliken **Historik.**
+Visa ett diagram över din organisations poäng över tiden på fliken **Historik** .
 
-Under diagrammet finns en lista över alla åtgärder som vidtagits i det valda tidsintervallet och deras attribut, till exempel resulterande punkter och kategori. Du kan anpassa ett datumintervall och filtrera efter kategori.
+Under diagrammet visas en lista över alla åtgärder som utförs under det valda tidsintervallet och deras attribut, till exempel resulterande Poäng och kategori. Du kan anpassa ett datum intervall och filtrera efter kategori.
 
-![Aktivitetshistorik](../../media/secure-score/secure-score-history-activity.png)
+![Aktivitets historik](../../media/secure-score/secure-score-history-activity.png)
 
-Om du väljer förbättringsåtgärden som är associerad med en aktivitet visas den fullständiga förbättringsåtgärdens utfällbara åtgärd.
+Om du väljer förbättrings åtgärden som är kopplad till en aktivitet visas den utfällbara åtgärden fullständig förbättring.
 
-Om du vill visa all historik för den specifika förbättringsåtgärden väljer du historiklänken i utfällbara.
+Om du vill visa all historik för den specifika förbättrings åtgärden väljer du länken historik i utfälld.
 
-![Förbättringsåtgärder historia](../../media/secure-score/secure-score-history-flyout.png)
+![Åtgärds historik för förbättring](../../media/secure-score/secure-score-history-flyout.png)
 
-## <a name="discover-trends-and-set-goals"></a>Upptäck trender och sätta upp mål
+## <a name="discover-trends-and-set-goals"></a>Upptäck trender och ställa in mål
 
-På fliken **Mått & trender** finns det flera diagram som ger dig större insyn i trender och sätta upp mål. Du kan ange datumintervallet för hela sidan med visualiseringar. Visualiseringarna inkluderar:
+På fliken **mått & trender** finns det flera diagram för att du ska få mer insyn i trender och ställa in mål. Du kan ange datum intervall för hela sidan av visualiseringar. Visualiseringarna inkluderar:
 
-* **Zonen Secure Score** – Anpassad baserat på organisationens mål och definitioner av bra, okej och dåliga resultatintervall.
-* **Regressionstrend** – En tidslinje med punkter som har gått tillbaka på grund av konfiguration, användar- eller enhetsändringar.  
-* **Jämförelsetrend** – Hur organisationens säkra resultat kan jämföras med andras över tid. Den här vyn kan innehålla rader som representerar poänggenomsnittet för organisationer med liknande platsantal och en anpassad jämförelsevy som du kan ange.
-* **Risk acceptans trend** - Tidslinje för förbättringsåtgärder markerade som "risk accepteras."
-* **Poängändringar** – Antalet uppnådda poäng, poäng som gått tillbaka, tillsammans med den efterföljande poängändringen, i det angivna datumintervallet.
+* **Din säkra Poäng zon** – anpassad baserat på organisationens mål och definitioner av bra, OK och dåliga poäng områden.
+* **Regressions trend** – en tids linje med punkter som har regressed på grund av ändringar av konfiguration, användare eller enhet.  
+* **Jämförelse trend** – hur din organisations säkra Poäng jämförs med andra med över tiden. I den här vyn kan du inkludera rader som representerar medelvärdet av organisationer med liknande antal och en anpassad jämförelse vy som du kan ange.
+* **Trend** -och tids linje för att acceptera riskerna.
+* **Poäng ändringar** -antalet poäng uppnåddes, Points regressed, tillsammans med följande Poäng ändring, i det angivna datum intervallet.
 
-### <a name="compare-your-score-to-organizations-like-yours"></a>Jämför dina poäng med organisationer som din
+### <a name="compare-your-score-to-organizations-like-yours"></a>Jämför poängen med dina organisationer som dina
 
-Det finns två plats där du kan se hur dina poäng kan jämföras med organisationer som liknar dig.
+Det finns två platser för att se hur poängen jämförs med organisationer som liknar dig.
 
-Den första platsen finns på fliken **Översikt,** där du kan se ett jämförelsefältsdiagram. Hovra över diagrammet för att visa poäng- och poängmöjligheten.
+Den första placeringen är på fliken **Översikt** , där du kan se ett stapeldiagram för jämförelse. Hovra över diagrammet för att Visa poängen och poängen.
 
-![Stapeldiagram över liknande organisations poäng](../../media/secure-score/secure-score-comparison-bar.png)
+![Stapeldiagram med likartad Poäng](../../media/secure-score/secure-score-comparison-bar.png)
 
-Den andra platsen finns på fliken **Mått & trender,** där du kan visa hur organisationens säkra resultat kan jämföras med andras över tid.
+Den andra platsen finns på fliken **mått & trender** , där du kan se hur organisationens säkra Poäng jämförs med andras över tid.
 
-![Linjediagram över liknande organisations poäng över tid](../../media/secure-score/secure-score-comparison-trend.png)
+![Linje diagram med en liknande organisations resultat över tid](../../media/secure-score/secure-score-comparison-trend.png)
 
-I båda diagrammen kan du välja **Hantera jämförelser** för att visa och redigera organisationens information. Du kan också skapa en anpassad jämförelse baserat på bransch, organisationsstorlek, licenser och regioner. 
+I båda diagrammen kan du välja **Hantera jämförelser** för att visa och redigera din organisations information. Du kan också skapa en anpassad jämförelse utifrån bransch, organisationens storlek, licenser och regioner.
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Om du har några problem, vänligen meddela oss genom att publicera i [security, privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar samhället och kommer att ge hjälp.
+Om du har några problem kan du meddela oss genom att publicera det i [säkerhets-, integritets &](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar communityn och ger hjälp.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Översikt över Microsoft Secure Score](microsoft-secure-score.md)
-- [Bedöm din säkerhetsposition](microsoft-secure-score-improvement-actions.md)
+- [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
+- [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

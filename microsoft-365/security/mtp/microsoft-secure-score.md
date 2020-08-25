@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score
-description: I artikeln beskrivs Microsoft Secure Score i säkerhetscentret Microsoft 365, hur du kan förbättra säkerhetspositionen och vad säkerhetsadministratörer kan förvänta sig.
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, säker poäng, säkerhetscenter, förbättringsåtgärder
+description: Här beskrivs säker Poäng i Microsoft 365 Security Center, hur du förbättrar Posture och vilka säkerhets administratörer som kan förvänta dig.
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säker poäng, säkerhets Center, förbättrings åtgärder
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,102 +20,110 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200044"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866877"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
-Microsoft Secure Score är ett mått på en organisations säkerhetsposition, med ett högre antal som anger fler förbättringsåtgärder som vidtas. Den finns https://security.microsoft.com/securescore på i Microsoft [365 security center](overview-security-center.md).
+Microsoft Secure score är ett mått på en organisations säkerhets Posture, med ett högre nummer som indikerar fler förbättrings åtgärder. Den finns https://security.microsoft.com/securescore i [säkerhets Center för Microsoft 365](overview-security-center.md).
 
-Om du följer rekommendationerna för säker poäng kan du skydda din organisation från hot. Från en centraliserad instrumentpanel i Microsoft 365-säkerhetscentret kan organisationer övervaka och arbeta med säkerheten för sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
+Genom att följa rekommendationerna för säker Poäng kan du skydda din organisation mot hot. Från en central instrument panel i Microsoft 365 Security Center kan organisationer övervaka och arbeta med säkerheten hos sina Microsoft 365-identiteter, data, appar, enheter och infrastruktur.
 
-Secure Score hjälper organisationer:  
+Säkra poäng gör att organisationer:  
 
-* Rapport om det aktuella läget för organisationens säkerhetsposition.
-* Förbättra deras säkerhetsposition genom att tillhandahålla upptäckbarhet, synlighet, vägledning och kontroll.  
-* Jämför med riktmärken och fastställ nyckeltal.
+* Rapportera om organisationens säkerhets Posture.
+* Förbättra deras säkerhets Posture genom att tillhandahålla upptäckter, synlighet, vägledning och kontroll.  
+* Jämför med benchmarks och skapa KPI: er (Key Performance Indicators).
 
-Organisationer får tillgång till robusta visualiseringar av mått och trender, integrering med andra Microsoft-produkter, poängjämlikhet med liknande organisationer och mycket mer. Poängen kan också återspegla när tredjepartslösningar har åtgärdat rekommenderade åtgärder.
+Organisationer får till gång till stabila visualiseringar av mått och trender, integrering med andra Microsoft-produkter, resultat jämförelse med liknande organisationer och mycket mer. Poängen kan också återspegla när lösningar från tredje part har åtgärdat rekommenderade åtgärder.
 
-![Startsida för säkra poäng](../../media/secure-score/secure-score-homepage-new.png)
+![Säkra Poäng start sidan](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="how-it-works"></a>Så här fungerar det
 
-Du får poäng för att konfigurera rekommenderade säkerhetsfunktioner, utföra säkerhetsrelaterade uppgifter eller åtgärda förbättringsåtgärden med ett program eller program från tredje part, eller en alternativ begränsning. Vissa förbättringsåtgärder ger bara poäng när de är helt slutförda, och vissa ger partiella poäng om de slutförs för vissa enheter eller användare. Om du inte kan eller inte vill anta någon av förbättringsåtgärderna kan du välja att acceptera risken eller den återstående risken.
+Du får poäng för följande åtgärder:
 
-Om du har en licens för en av microsoft-produkter som stöds visas rekommendationer för dessa produkter. Vi visar dig alla möjliga förbättringar för en produkt, oavsett licensutgåva, prenumeration eller abonnemang, så att du kan förstå bästa säkerhetspraxis och förbättra dina poäng. Din absoluta säkerhetsposition representeras av Secure Score, som förblir densamma oavsett vilka licenser din organisation äger för en viss produkt. Tänk på att säkerheten bör balanseras med användbarhet, och inte varje rekommendation kan fungera för din miljö.
+- Konfigurera rekommenderade säkerhetsfunktioner
+- Utföra säkerhetsrelaterade uppgifter
+- Adressera förbättrings åtgärden med ett program eller program från tredje part, eller en alternativ minskning
 
-Din poäng uppdateras i realtid för att återspegla den information som presenteras i visualiseringar och förbättring åtgärd sidor. Secure Score synkroniserar också dagligen för att ta emot systemdata om dina uppnådda poäng för varje åtgärd.
+Vissa förbättrings åtgärder ger bara poäng när det är fullständigt ifyllt. Vissa delar ger ofullständiga punkter om de är klara för vissa enheter eller användare. Om du inte kan eller inte vill använda en av förbättrings åtgärderna kan du välja att acceptera risken eller återstående risk.
+
+Om du har en licens för en av de Microsoft-produkter som stöds, ser du rekommendationer för dessa produkter. Vi visar alla möjliga förbättringar för en produkt, oavsett om det gäller licens, abonnemang eller abonnemang. På så sätt förstår du säkerhets rekommendationer och förbättrar poängen. Dina absoluta säkerhets Posture, som representeras av säkra poäng, förblir desamma, oavsett vilka licenser organisationen äger för en viss produkt. Tänk på att säkerheten bör balanseras med användbarhet och inte varje rekommendation kan fungera för din miljö.
+
+Resultatet uppdateras i real tid för att visa informationen som visas i åtgärds sidorna visualiseringar och förbättring. Säkra Poäng synkroniserar också varje dag med att ta emot system data om dina erhållna Poäng för varje åtgärd.
 
 ### <a name="key-scenarios"></a>Viktiga scenarier
 
-- [Kontrollera din aktuella poäng](microsoft-secure-score-improvement-actions.md#check-your-current-score)
-- [Jämför dina poäng med organisationer som din](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
-- [Visa förbättringsåtgärder och bestäm en handlingsplan](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
-- [Initiera arbetsflöden för att undersöka eller implementera](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 säkerhetscenter och ServiceNow-integrering](tickets-security-center.md)
+- [Kontrol lera aktuell Poäng](microsoft-secure-score-improvement-actions.md#check-your-current-score)
+- [Jämför poängen med dina organisationer som dina](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
+- [Visa förbättrings åtgärder och bestäm ett åtgärds abonnemang](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
+- [Initiera och implementera arbets flöden](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
+    - [Microsoft 365 säkerhets Center och ServiceNow-integrering](tickets-security-center.md)
 
-### <a name="how-improvement-actions-are-scored"></a>Hur förbättringsåtgärder görs
+### <a name="how-improvement-actions-are-scored"></a>Hur förbättrings åtgärder betygs ätts
 
-Varje förbättringsåtgärd är värd 10 poäng eller mindre. De flesta görs på ett binärt sätt - om du genomför förbättringsåtgärden, som att skapa en ny princip eller aktivera en viss inställning, får du 100% av poängen. För andra förbättringsåtgärder anges punkter som en procentandel av den totala konfigurationen. Till exempel, om förbättringen åtgärd stater du får 10 poäng genom att skydda alla dina användare med multifaktorautentisering och du bara har 50 av 100 totala användare skyddade, skulle du få en partiell poäng på 5 poäng (50 skyddade / 100 totalt * 10 max poäng = 5 poäng partiell poäng).
+Varje förbättrings åtgärd är värt 10 Poäng eller mindre och de flesta är på ett binärt sätt. Om du implementerar förbättrings åtgärden, till exempel skapa en ny princip eller aktiverar en specifik inställning, får du 100% av punkterna. För andra förbättrings åtgärder anges Poäng som en procent andel av den totala konfigurationen.
 
-### <a name="products-included-in-secure-score"></a>Produkter som ingår i Secure Score
+En förbättrings åtgärd visar till exempel 10 Poäng genom att skydda alla användare med multifaktorautentisering. Du har bara 50 av 100 totalt antal användare som är skyddade, så du får lite poäng med 5 Poäng (50 skyddat/100 totalt * 10 Max punkter = 5 punkter).
 
-För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhetsprodukter kommer snart. Rekommendationerna kommer inte att täcka alla angreppsytor som är associerade med varje produkt, men de är en bra baslinje. Du kan också markera förbättringsåtgärderna som omfattas av en tredje part eller alternativ begränsning.
+### <a name="products-included-in-secure-score"></a>Produkter ingår i säkra Poäng
+
+För närvarande finns det rekommendationer för Microsoft 365 (inklusive Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP och Cloud App Security. Rekommendationer för andra säkerhets produkter kommer snart. Rekommendationerna täcker inte alla de attack ytor som är associerade med varje produkt, men de är en bra original plan. Du kan också markera förbättrings åtgärderna som täcks av tredje part eller annan åtgärd.
 
 ### <a name="security-defaults"></a>Standardinställningar för säkerhet
 
-Microsoft Secure Score har uppdaterade förbättringsåtgärder för att stödja [säkerhetsstandarder i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), vilket gör det enklare att skydda din organisation med förkonfigurerade säkerhetsinställningar för vanliga attacker.
+Microsofts säkra poäng har uppdaterat förbättrings åtgärder för att hantera [säkerhets standarder i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), vilket gör det enklare att skydda din organisation med förkonfigurerade säkerhets inställningar för vanliga angrepp.
 
-Om du aktiverar standardvärden för säkerhet får du fullständiga poäng för följande förbättringsåtgärder:
+Om du aktiverar säkerhets inställningar får du fullständiga Points för följande förbättringar:
 
-- Se till att alla användare kan slutföra multifaktorautentisering för säker åtkomst (9 poäng)
-- Kräv MFA för administrativa roller (10 poäng)
-- Aktivera principen för att blockera äldre autentisering (7 poäng)
+- Se till att alla användare kan slutföra multifaktorautentisering för säker åtkomst (9 Poäng)
+- Kräv MFA för administrativa roller (10 Poäng)
+- Aktivera princip för blockering av bakåtkompatibel-inloggningsautentisering (7 Poäng)
 
 >[!IMPORTANT]
->Standardinställningar för säkerhet omfattar säkerhetsfunktioner som ger liknande säkerhet som förbättringsåtgärderna för "inloggningsrisk" och "användarriskprincip". I stället för att ställa in dessa principer ovanpå säkerhetsinställningarna rekommenderar vi att de uppdateras till "Löst genom alternativ begränsning".
+>Säkerhets standarder inkluderar säkerhetsfunktioner som ger liknande säkerhet i avsnittet "policy för inloggnings risker" och "förbättring av användar risk policy". I stället för att konfigurera dessa principer ovanpå säkerhets standardinställningarna rekommenderar vi att du uppdaterar deras status till "löst via annan begränsning".
 
 ## <a name="required-permissions"></a>Nödvändiga behörigheter
 
-Om du vill ha behörighet att komma åt Microsoft Secure Score måste du tilldelas en av följande roller i Azure Active Directory.
+För att få åtkomst till Microsoft Secure score måste du ha en av följande roller i Azure Active Directory.
 
-### <a name="read-and-write-roles"></a>Läs- och skrivroller
+### <a name="read-and-write-roles"></a>Läsa och skriva roller
 
-Med läs- och skrivåtkomst kan du göra ändringar och interagera direkt med Secure Score. Du kan också tilldela skrivskyddad åtkomst till andra användare.
+Med Läs-och skriv åtkomst kan du göra ändringar och direkt interagera med säkra poäng. Du kan också tilldela skrivskyddad åtkomst till andra användare.
 
 * Global administratör
 * Säkerhetsadministratör
 * Exchange-administratör
 * SharePoint-administratör
-* Kontoadministratör
+* Konto administratör
 
 ### <a name="read-only-roles"></a>Skrivskyddade roller
 
-Med skrivskyddad åtkomst kan du inte redigera status eller anteckningar för en förbättringsåtgärd, redigera poängzoner eller redigera anpassade jämförelser.
+Med skrivskyddad åtkomst kan du inte redigera status eller anteckningar för en förbättrings åtgärd, redigera Poäng zoner eller redigera anpassade jämförelser.
 
 * Helpdesk-administratör
 * Användaradministratör
-* Tjänstadministratör
+* Tjänst administratör
 * Säkerhetsläsare
 * Säkerhetsoperatör
 * Global läsare
 
-## <a name="risk-awareness"></a>Riskmedvetenhet
+## <a name="risk-awareness"></a>Risk medvetenhet
 
-Microsoft Secure Score är en numerisk sammanfattning av din säkerhetsposition baserat på systemkonfigurationer, användarbeteende och andra säkerhetsrelaterade mätningar. Det är inte ett absolut mått på hur sannolikt ditt system eller data kommer att brytas. Snarare är det i vilken utsträckning du har antagit säkerhetskontroller i din Microsoft-miljö som kan bidra till att kompensera risken för att brytas. Ingen onlinetjänst är helt immun mot säkerhetsöverträdelser, och säker poäng bör inte tolkas som en garanti mot säkerhetsöverträdelse på något sätt.
+Microsofts säkra poäng är en numerisk Sammanfattning av dina säkerhets Posture, baserat på systemkonfigurationer, användar beteende och andra säkerhetsrelaterade mått. Det är inte ett absolut mått på hur troligt det är att systemet eller data blir. I stället representerar den utsträckning som du har antagit säkerhets kontroller i din Microsoft-miljö som kan hjälpa till att undanröja risken att bli intrång. Ingen online tjänst är helt immun mot säkerhets brott och säkra Poäng bör inte tolkas som en garanti mot säkerhets brott på något sätt.
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Om du har några problem, vänligen meddela oss genom att publicera i [security, privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar samhället och kommer att ge hjälp.
+Om du har några problem kan du meddela oss genom att publicera det i [säkerhets-, integritets &](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar communityn och ger hjälp.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Bedöm din säkerhetsposition](microsoft-secure-score-improvement-actions.md)
-- [Spåra din Microsoft Secure Score-historik och uppnå mål](microsoft-secure-score-history-metrics-trends.md)
+- [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
+- [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Nyheter](microsoft-secure-score-whats-new.md)
+- [Vad är nytt](microsoft-secure-score-whats-new.md)

@@ -19,22 +19,22 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om skydd mot nätfiske-funktioner i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: 5594c4e7033ab70a622403bca7759cd4b89f111a
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f6d864a7f9995de64f3714dffcd1838b2480a627
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827451"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867181"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
 *Nätfiske* är ett e-postangrepp som försöker stjäla känslig information i meddelanden som verkar vara från legitima eller betrodda avsändare. Det finns särskilda typer av nät fiske. Till exempel:
 
-- **Spear nätfiske** använder mycket prioriterat och anpassat innehåll som är specifikt skräddarsydda för de riktade mottagarna (vanligt vis efter att ha Reconnaissance mottagare).
+- **Spear nätfiske** använder prioriterat, anpassat innehåll som är specifikt skräddarsydda för de riktade mottagarna (vanligt vis efter Reconnaissance på mottagarnas mottagare).
 
 - **Whaling** riktar sig till chefer eller andra mål inom en organisation för maximal effekt.
 
-- **Företags-e-postkompromisser (BEC)** använder förfalskade betrodda avsändare (finans tjänstemän, kunder, betrodda partners etc.) för att lura mottagaren att godkänna betalningar, överföra penning medel eller lämna kund uppgifter.
+- **Företags-e-postkompromisser (BEC)** använder förfalskade betrodda avsändare (finans tjänstemän, kunder, betrodda partners etc.) för att lura mottagarna att godkänna betalningar, överföra penning medel eller Visa kunddata.
 
 - **Utpressnings tro** vara som krypterar dina data och kräver betalning för att dekryptera det nästan alltid med nät fiske meddelanden. Skydd mot nätfiske kan inte hjälpa dig att dekryptera krypterade filer, men det kan hjälpa till att identifiera de inledande nät fiske meddelandena som är kopplade till utpressnings bara kampanjen. Mer information om hur du återställer från en utpressnings tro Jan attack finns i [återställa från en utpressnings tro Jan attack i Microsoft 365](recover-from-ransomware.md).
 

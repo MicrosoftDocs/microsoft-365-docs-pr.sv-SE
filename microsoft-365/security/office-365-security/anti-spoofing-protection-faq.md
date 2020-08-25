@@ -16,16 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan se vanliga frågor och svar om skydd mot förfalskning i Exchange Online Protection (EOP).
-ms.openlocfilehash: 66dbedaf638154c4a35359a4e5bc66c326c04d1e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826679"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867145"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Skydd mot förfalskning frågor och svar
 
-Det här avsnittet innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med post lådor i Exchange Online eller fristående organisationer för Exchange Online Protection (EOP) utan Exchange Online-postlådor.
+Den här artikeln innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med post lådor i Exchange Online eller fristående organisationer för Exchange Online Protection (EOP) utan Exchange Online-postlådor.
 
 Frågor och svar om skydd mot skräp post finns i [vanliga frågor om skydd mot skräp post](anti-spam-protection-faq.md).
 
@@ -33,11 +33,11 @@ Frågor och svar om skydd mot skadlig program vara finns i [vanliga frågor om s
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Varför väljer Microsoft att skicka skräp post som inte verifierats som overifierat?
 
-På grund av nät fiske attackerens påverkan, och eftersom e-postautentisering har varit nära över 15 år, anser Microsoft att risken att fortsätta tillåta overifierad inkommande e-post är högre än risken att du förlorar legitim inkommande e-post.
+Microsoft anser att risken för att overifierad inkommande e-post tillåts vara högre än risken att du förlorar legitim inkommande e-post.
 
 ## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Orsakar skräp post av oautentiserad e-post att legitim e-post markeras som skräp post?
 
-När Microsoft aktiverade den här funktionen i 2018 skedde vissa falska positiva (goda meddelanden). Men över tiden har avsändarna justerats efter de nya kraven för avsändare och antalet meddelanden som identifierats som falsk är försumbart för de flesta e-postsök vägar.
+När Microsoft aktiverade den här funktionen i 2018 skedde vissa falska positiva (goda meddelanden). Men över tiden har avsändare justerats efter kraven. Antalet meddelanden som identifierats som falsk är försumbart för de flesta e-postsök vägar.
 
 Microsoft antog först de nya e-postautentiseringskravna flera veckor innan de distribueras till kunderna. I början förekom störningar men de minskade gradvis.
 
@@ -45,7 +45,7 @@ Microsoft antog först de nya e-postautentiseringskravna flera veckor innan de d
 
 Ja. Från och med oktober 2018 är Spoof-intelligens tillgänglig för alla organisationer med post lådor i Exchange Online och fristående EOP-organisationer utan Exchange Online-postlådor.
 
-Skydd mot dataförfalskning distribuerades ursprungligen endast till organisationer som hade Office 365 Enterprise, E5-prenumerationer eller Office 365 Advanced Threat Protection-tilläggsprogrammet (Office 365 ATP) för deras abonnemang.
+Tekniken mot förfalskning är ursprungligen endast tillgänglig i Office 365 Avancerat skydd för hotet. Till exempel Microsoft E5-abonnemang eller ATP-tillägg.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Hur kan jag rapportera spam eller inte spam-meddelanden tillbaka till Microsoft?
 
@@ -57,9 +57,9 @@ Se [att du inte känner till alla källor för din e-post](email-validation-and-
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>Vad händer om jag inaktiverar skydd mot förfalskning för min organisation?
 
-Vi rekommenderar inte detta eftersom du exponeras för fler missade nätfiske- och skräppostmeddelanden. Allt nätfiske är inte förfalskningar och alla förfalskningar missas inte. Men du löper högre risk än en kund som aktiverar förfalskningsskydd.
+Vi rekommenderar inte att du inaktiverar skydd mot förfalskning. Om du inaktiverar skyddet kan fler nätfiske och skräp post skickas till din organisation. Alla nätfiske är inte falska och alla falska meddelanden kommer inte att missas. Men din risk är högre.
 
-Nu när det finns [förbättrade filter för kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) är det inte längre möjligt att inaktivera skydd mot förfalskning om din MX-post pekar på en annan server eller tjänst innan du skickar e-post till EOP.
+Nu när det finns [förbättrade filter för kopplingar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) är det inte längre möjligt att stänga av skyddet mot förfalskning när din e-post dirigeras via en annan tjänst före EOP.
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Innebär skydd mot förfalskning att jag skyddas från alla nätfiske?
 
@@ -71,7 +71,7 @@ Nästan alla stora e-posttjänster implementerar traditionella SPF-, DKIM-och DM
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Måste jag ändå aktivera avancerade inställningar för skräp post filtret "SPF record: hårda fail" (_MarkAsSpamSpfRecordHardFail_) om jag aktiverar mot förfalskning?
 
-Nej. Den här ASF-inställningen är inte längre nödvändig eftersom anti-förfalskning inte bara tar till SPF-hårda fel, men en mycket större uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
+Nej. Den här ASF-inställningen behövs inte längre. Skydd mot förfalskningar betraktar både SPF-hårda fel och en större uppsättning villkor. Om du har aktiverat skydd mot förfalskning och **SPF-post: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) aktiverad kommer du antagligen att få mer falska positiva identifieringar.
 
 Vi rekommenderar att du inaktiverar den här funktionen eftersom den inte har någon ytterligare förmån för att upptäcka skräp post eller nätfiske och skulle i stället generera mest falska positiva positiv. Mer information finns i [Avancerade inställningar för skräp post filter (ASF) i EOP](advanced-spam-filtering-asf-options.md).
 

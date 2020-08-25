@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: e31389705ddd8de4854a3477012d7fa90b78c7ee
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815237"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866901"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nyheter i Microsofts säkra Poäng
 
@@ -88,7 +88,7 @@ I tid kommer identitets säkra poäng och Graph API att anta den nya bedömnings
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Om du har några problem kan du meddela oss genom att publicera i [säkerhets-, integritets &](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar communityn och ger hjälp.
+Om du har några problem kan du meddela oss genom att publicera det i [säkerhets-, integritets &](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Vi övervakar communityn och ger hjälp.
 
 ## <a name="related-resources"></a>Relaterade resurser
 

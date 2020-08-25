@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan lära sig hur de använder konfigurations analys för att hitta och åtgärda säkerhets principer som innehåller inställningar som finns under standard säkerhets principer för förvalda skydd och begränsande skydd.
-ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Administratörer kan lära sig hur de använder konfigurations analys för att hitta och åtgärda säkerhets principer som är under standard säkerhets principer för förvalda skydd och begränsande skydd.
+ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825779"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867169"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Konfigurations analys för skydds principer i EOP och Office 365 ATP
 
 > [!NOTE]
 > De funktioner som beskrivs i det här avsnittet är i för hands version, är inte tillgängliga i alla organisationer och kan komma att ändras.
 
-Med konfigurations analys i säkerhets & Compliance Center får du en central plats för att hitta och åtgärda någon av dina säkerhets principer som innehåller inställningar som är lägre än standard skydds-och strikta skydds inställningar för [säkerhets principer](preset-security-policies.md).
+Med konfigurations analys i säkerhets & Compliance Center får du en central plats för att hitta och åtgärda säkerhets principer där inställningarna är under standard skydds-och strikta skydds profil inställningar i [förvalda säkerhets principer](preset-security-policies.md).
 
 Följande typer av principer analyseras av konfigurations analys:
 
@@ -59,7 +59,7 @@ De **vanliga** och **strikta** princip inställnings värden som används som ba
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
 
   - För att använda konfigurations analys **och** göra uppdateringar av säkerhets principer måste du vara medlem i någon av följande roll grupper:
 
@@ -81,7 +81,7 @@ Konfigurations analysen har två primära flikar:
 
 - **Inställningar och rekommendationer**: du väljer standard eller Strict och jämför dessa inställningar med dina befintliga säkerhets principer. I resultatet kan du justera värdena för inställningarna så att de får samma nivå som standard eller strikt.
 
-- **Analys och historik för konfigurations avvikelse**: med den här vyn kan du spåra de ändringar som du har gjort av dina principer baserat på resultaten av Configuration Analyzer över tiden.
+- **Analys och historik för konfigurations avvikelse**: med den här vyn kan du spåra princip förändringar med tiden.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Fliken inställning och rekommendationer i konfigurations analys
 
@@ -89,7 +89,7 @@ Som standard öppnas fliken i jämförelsen med standard skydds profilen. Du kan
 
 ![Vyn inställningar och rekommendationer i konfigurations analys](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Som standard innehåller kolumnen **princip grupp/inställnings namn** en dold vy av de olika typerna av säkerhets principer och antalet inställningar i de principer som behöver förbättras. Följande typer av principer är:
+Som standard innehåller kolumnen **princip grupp/inställnings namn** en dold vy av de olika typerna av säkerhets principer och det antal inställningar som behöver förbättras. Följande typer av principer är:
 
 - **Skydd mot skräp post**
 - **Anti-nätfiske**
@@ -97,11 +97,11 @@ Som standard innehåller kolumnen **princip grupp/inställnings namn** en dold v
 - **Säkra filer för ATP** (om ditt abonnemang inkluderar ATP)
 - **Säkerhet för ATP** (om ditt abonnemang inkluderar ATP)
 
-I standardvyn är allting dolda. Bredvid varje princip visas en sammanfattning av jämförelse resultat från dina principer (som du kan ändra) och inställningarna i motsvarande principer för standard-eller sträng skydds profilerna (som du inte kan ändra). Följande information visas:
+I standardvyn är allting dolda. Bredvid varje princip finns en sammanfattning av jämförelse resultat från dina principer (som du kan ändra) och inställningarna i motsvarande principer för standard-eller sträng skydds profilerna (som du inte kan ändra). Följande information om den skydds profil som du jämför med ska visas:
 
-- **Grön**: alla inställningar i alla befintliga principer är åtminstone lika säkra som den skydds profil som du jämför med.
-- **Gul**: ett litet antal inställningar i de befintliga principerna är inte lika säkert som den skydds profil som du jämför med.
-- **Rött**: ett stort antal inställningar i de befintliga principerna är inte lika säkert som den skydds profil som du jämför med. Det här kan vara några få inställningar i många principer eller många inställningar i en princip.
+- **Grön**: alla inställningar i alla befintliga principer är åtminstone lika säkra som skydds profilen.
+- **Gul**: ett litet antal inställningar i befintliga principer är inte så säkert som skydds profilen.
+- **Rött**: ett stort antal inställningar i befintliga principer är inte så säkert som skydds profilen. Det här kan vara några få inställningar i många principer eller många inställningar i en princip.
 
 För fördelaktig jämförelser visas texten: **alla inställningar följer** \<**Standard** or **Strict**\> **rekommendationer**. I annat fall ser du antalet rekommenderade inställningar att ändra.
 
@@ -123,7 +123,7 @@ Om jämförelsen inte har några rekommendationer för förbättring (grön) kan
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Konfiguration av avvikelser och historik i konfigurations analys
 
-Med den här fliken kan du spåra de ändringar som du har gjort i dina anpassade säkerhets principer baserat på informationen i säkerhets analys. Följande information visas som standard:
+Med den här fliken kan du spåra de ändringar du har gjort i dina anpassade säkerhets principer. Följande information visas som standard:
 
 - **Senast ändrad**
 - **Ändrat av**

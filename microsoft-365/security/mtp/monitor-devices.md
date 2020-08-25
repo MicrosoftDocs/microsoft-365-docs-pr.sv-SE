@@ -1,7 +1,7 @@
 ---
-title: Enhetsövervakning & rapportering - Säkerhetscenter
-description: Beskriver hur du kan skydda dina enheter, uppdaterade och upptäcka potentiella hot i organisationen
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, säkerhetscenter, övervaka, rapportera, enheter
+title: Enhets övervakning & rapportering – säkerhets Center
+description: Här beskrivs hur du kan hålla enheterna säkra, uppdaterade och hitta potentiella hot på din organisation
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säkerhets Center, skärm, rapport, enheter
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -15,196 +15,196 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 870d2ce1f70028c917cc8b165e8a1c55b746100a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8abb4960318bb12b0205d014c32e48a60d4b9ae5
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034004"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866819"
 ---
-# <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Enhetsövervakning och rapportering i Microsoft 365-säkerhetscentret
+# <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Enhets övervakning och rapportering i säkerhets Center för Microsoft 365
 
-Skydda dina enheter, uppdaterade och upptäck potentiella hot i säkerhetscentret Microsoft 365.
+Håll enheterna säkra, uppdaterade och håll potentiella hot i Microsoft 365 Security Center.
 
-## <a name="view-device-alerts"></a>Visa enhetsaviseringar
+## <a name="view-device-alerts"></a>Visa enhets aviseringar
 
-Få aktuella aviseringar om intrångsaktivitet och andra hot på dina enheter från Microsoft Defender ATP (tillgängligt med en E5-licens). Microsoft 365-säkerhetscenter övervakar effektivt dessa aviseringar på en hög nivå med hjälp av ditt önskade arbetsflöde.
+Få uppdaterade meddelanden om intrång och andra hot på dina enheter från Microsoft Defender ATP (tillgängligt med en E5-licens). I Microsoft 365 säkerhets Center övervakas de här aviseringarna på en hög nivå med önskat arbets flöde.
 
-### <a name="monitor-high-impact-alerts"></a>Övervaka varningar med hög genomslagskraft
+### <a name="monitor-high-impact-alerts"></a>Övervaka varnings aviseringar
 
-Varje Microsoft Defender ATP-avisering har en motsvarande allvarlighetsgrad (hög, medel, låg eller informativ) som anger dess potentiella inverkan på nätverket om den lämnas obevakad.  
+Varje Microsoft Defender ATP-varning har en motsvarande allvarlighets grad (hög, medium, Low eller information). Det här är en potentiell påverkan på nätverket om det inte finns någon.  
 
-Använd **allvarlighetsgradkortet för enhetsavisering** för att specifikt fokusera på aviseringar som är allvarligare och som kan kräva omedelbara svar. På det här kortet kan du visa mer information på Microsoft Defender Security Center-portalen.
+Använd kortet med **allvarlighets grad för enhet** för att fokusera specifikt på meddelanden som är mer svåra och kan behöva svar direkt. Från det här kortet kan du läsa mer i Microsoft Defender Security Center-portalen.
 
-![Allvarlighetskort för enhetsaviseringar](../../media/device-alerts-severity.png)
+![Allvarlighets kort för enhets aviseringar](../../media/device-alerts-severity.png)
 
-### <a name="understand-sources-of-alerts"></a>Förstå källor till varningar
+### <a name="understand-sources-of-alerts"></a>Förstå aviserings källor
 
-Microsoft Defender ATP utnyttjar data från ett brett spektrum av säkerhetssensorer och underrättelsekällor för att generera aviseringar. Den kan till exempel använda identifieringsinformation från Windows Defender Antivirus och antimalware från tredje part, samt din egen anpassade hotinformation som tillhandahålls via webbtjänst-API:et.
+Microsoft Defender ATP utnyttjar data från ett brett utbud av säkerhets sensorer och informations källor för att generera aviseringar. Den kan till exempel använda identifierings information från Microsoft Defender Antivirus och oberoende virus kontroll från tredje part. Den kan även använda din egen anpassade Threat-information via webb tjänstens API.
 
-Kortet För identifiering av **enhetsaviseringsidentifiering** visar distributionen av aviseringar efter källa. Det här kortet kan hjälpa dig att spåra aktivitet som är relaterad till vissa källor, särskilt dina anpassade källor. Du kan också använda detta för att fokusera på aviseringar som kommer från sensorer som inte är konfigurerade för att automatiskt blockera skadlig aktivitet eller komponenter.
+Kortet för **identifiering av enhets aviseringar** visar distributionen av aviseringar per källa. Spåra aktivitet relaterade till vissa källor, särskilt dina anpassade källor. Du kan också använda kortet för att fokusera på aviseringar som kommer från sensorer som inte är konfigurerade för automatisk blockering av skadlig aktivitet eller komponenter.
 
-![Informationstecken för enhetsaviseringsidentifiering](../../media/device-alert-detection-sources.png)
+![Kort för identifiering av enhets aviseringar](../../media/device-alert-detection-sources.png)
 
-På det här kortet kan du visa mer information på Microsoft Defender Security Center-portalen.
+Från det här kortet kan du läsa mer i Microsoft Defender Security Center-portalen.
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Förstå vilka typer av hot som utlöser aviseringar
 
-Microsoft Defender ATP sorterar varje avisering i en kategori som representerar ett visst stadium i attackkedjan eller en typ av hotkomponent. En identifierad hotaktivitet kan till exempel kategoriseras som "lateral rörelse" för att indikera att det gjordes ett försök att nå andra enheter i nätverket. Aktiviteten har också sannolikt inträffat efter att angripare fått ett första fotfäste. När en hotkomponent upptäcks kan den antingen klassificeras som skadlig kod eller mer specifikt som ransomware, stöld av autentiseringsuppgifter eller andra typer av skadlig eller oönskad programvara.
+Microsoft Defender ATP sorterar varje varning i en kategori som representerar ett visst Stadium i angrepps kedjan eller typen av hot komponent. En upptäckt hot-aktivitet kan till exempel kategoriseras som "sido rörelse" för att indikera att det fanns ett försök att nå andra enheter i nätverket. Aktiviteten har troligt vis uppstått efter att angriparen fått ett inledande foothold. När en hot komponent identifieras kan den klassificeras brett som skadlig program vara eller specifikt som en viss hot-typ. Vissa specifika uppgifter är utpressnings tro Jan, autentiseringsuppgiften stjäla eller andra typer av skadlig eller oönskad program vara.
 
-Kortet **Enhetshotkategorier** visar fördelningen av aviseringar i dessa kategorier. Du kan använda den här informationen för att identifiera hotaktivitet, till exempel stöldförsök, som kan ha större inverkan jämfört med sociala ingenjörsförsök. Du kan också använda den här informationen för att övervaka potentiellt destruktiva hot som ransomware.
+Kortet **enhets hot kategori** visar fördelningen av aviseringar i dessa kategorier. Använd den här informationen för att identifiera hot aktivitet, till exempel försök att stjäla autentiseringsuppgiften, som vanligt vis har högre påverkan än sociala teknik försök. Du kan också övervaka för potentiellt destruktiva hot som utpressnings tro Jan program vara.
 
-![Kort för kategorier av enhetshot](../../media/device-threat-categories.png)
+![Kategori kort för enhets hot](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>Övervaka aktiva aviseringar
 
-**Statuskortet för enhetsavisering** anger antalet aviseringar som inte har lösts och som kan kräva uppmärksamhet. På det här kortet kan du visa mer information på Microsoft Defender Security Center-portalen.
+Status kortet för **enhets aviseringar** anger antalet aviseringar som inte har lösts och kan kräva en åtgärd. Från det här kortet kan du läsa mer i Microsoft Defender Security Center-portalen.
 
-![Statuskort för enhetsavisering](../../media/device-alert-status.png)
+![Status kort för enhets avisering](../../media/device-alert-status.png)
 
-### <a name="monitor-classification-of-resolved-alerts"></a>Övervaka klassificering av lösta aviseringar
+### <a name="monitor-classification-of-resolved-alerts"></a>Övervaka klassificering av lösta varningar
 
-När du löser en Microsoft Defender ATP-avisering kan säkerhetspersonalen ange om en avisering har verifierats som:
+När du löser en Microsoft Defender ATP-avisering kan din säkerhets personal ange om en avisering har verifierats som:
 
-* En sann avisering som identifierar faktisk intrångsaktivitet eller hotkomponenter
-* En falsk avisering som felaktigt har upptäckt normal aktivitet
+* En verklig avisering som identifierar faktiska brott mot aktivitets-eller hot komponenter
+* En falsk varning som felaktigt upptäckte normal aktivitet
 
-**Klassificeringskortet för enhetsvarningar** visar om dina lösta aviseringar har klassificerats som sanna eller falska aviseringar. På det här kortet kan du visa mer information på Microsoft Defender Security Center-portalen.
+**Klassificerings kortet för enhets aviseringar** visar om dina lösta meddelanden har klassificerats som sant eller falsk. Från det här kortet kan du läsa mer i Microsoft Defender Security Center-portalen.
 
-I vissa fall är klassificeringsinformation inte tillgänglig för vissa aviseringar.
+Obs! i vissa fall är klassificerings informationen inte tillgänglig för vissa aviseringar.
 
-![Klassificeringskort för enhetsvarning](../../media/device-alert-classification.png)
+![Klassificerings kort för enhets avisering](../../media/device-alert-classification.png)
 
-### <a name="monitor-determination-of-resolved-alerts"></a>Övervaka bestämning av lösta aviseringar
+### <a name="monitor-determination-of-resolved-alerts"></a>Övervaka fast ställande av lösta varningar
 
-Förutom att klassificera om en avisering är sann eller falsk under upplösningen kan säkerhetspersonalen ange vilken typ av normal eller skadlig aktivitet som hittades när aviseringen validerades.
+Tillsammans med klassificering av om en avisering är sann eller falsk under upplösningen kan din säkerhets personal ge en kontroll. En bestämning anger typen av normal eller skadlig aktivitet som hittades när aviseringen verifierades.
 
-**Bestämningskortet för enhetsvarning** visar den bestämning som anges för varje varning.
+**Enhetens** uppställnings kort visar vilken bestämning som tillhandahålls för varje avisering.
 
-* **APT**: avancerat beständigt hot, vilket indikerar att den upptäckta aktiviteten eller hotkomponenten är en del av en sofistikerad överträdelse som är utformad för att få fotfäste i det berörda nätverket  
-* **Skadlig kod:** skadlig fil eller kod
-* **Säkerhetspersonal**: normal verksamhet utförd av säkerhetspersonal
-* **Säkerhetstestning:** aktivitet eller komponenter som utformats för att simulera faktiska hot och förväntas utlösa säkerhetssensorer och generera varningar
-* **Oönskad programvara:** appar och annan programvara som inte anses vara skadlig, men som på annat sätt bryter mot policy- eller godtagbara användningsstandarder
-* **Övrigt:** varje annan bestämning som inte omfattas av de angivna typerna
+* **Apt**: Avancerat, beständiga hot, som indikerar att den identifierade aktivitetens eller hot komponentens komponenter är en del av ett avancerat brott som är utformat för att få en foothold i det berörda nätverket  
+* **Skadlig program vara**: skadlig fil eller kod
+* **Säkerhets personal**: normal aktivitet genomförd av säkerhets personal
+* **Säkerhets testning**: aktivitet eller komponenter som utformats för att simulera faktiska hot och förväntas utlösa säkerhets sensorer och generera aviseringar
+* **Oönskad program vara**: appar och annan program vara som inte betraktas som skadlig, men på annat sätt strider mot policy eller acceptabla användnings standarder
+* **Andra**: alla andra bestämningar som inte faller under de tillhandahållna typerna
 
-På det här kortet kan du visa mer information i Microsoft Defender Security Center.
+Från det här kortet kan du läsa mer i Microsoft Defender säkerhets Center.
 
-![Bestämningskort för enhetsvarning](../../media/device-alert-determination.png)
+![Varnings kort för enhets avisering](../../media/device-alert-determination.png)
 
-### <a name="understand-which-devices-are-at-risk"></a>Förstå vilka enheter som är i riskzonen
+### <a name="understand-which-devices-are-at-risk"></a>Förstå vilka enheter som är utsatta för risk
 
-**Enhetsskydd** visar risknivån för enheter. Risknivån baseras på faktorer som typ och allvarlighetsgrad för aviseringar på enheten.
+**Enhets skydd** visar risk nivå för enheter. Risk nivån baseras på faktorer som typ och allvarlighets grad för aviseringar på enheten.
 
-![Enhetsskyddskort](../../media/device-protection.png)
+![Enhets skydds kort](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Övervaka och rapportera status för Intune-hanterade enheter
 
-Följande rapporter innehåller data från enheter som registrerats i Intune. Data från ej registrerade enheter ingår inte. Endast globala administratörer kan visa dessa kort.
+Följande rapporter innehåller data från enheter som registrerats i Intune. Data från oregistrerade enheter ingår inte. Endast globala administratörer kan visa dessa kort.
 
-Intune-registrerade enhetsdata omfattar:
+Intune registrerade enhets data inkluderar:
 
-* Enhetsefterlevnad
-* Enheter med aktiv skadlig kod
-* Typer av skadlig kod på enheter
+* Kompatibilitet med enheter
+* Enheter med aktiv skadlig program vara
+* Typer av skadlig program vara på enheter
 * Skadlig kod på enheter
-* Enheter med identifiering av skadlig programvara
-* Användare med upptäckt av skadlig programvara
+* Enheter med identifiering av skadlig program vara
+* Användare med identifiering av skadlig program vara
 
-### <a name="monitor-device-compliance"></a>Övervaka enhetens efterlevnad
+### <a name="monitor-device-compliance"></a>Övervaka kompatibilitet med enheter
 
-**Enhetsefterlevnad** visar hur många enheter som är registrerade i Intune följer konfigurationsprinciper.
+**Enhetens efterlevnad** visar hur många enheter som är registrerade i Intune med konfigurations principer.
 
-![Kortet för enhetsefterlevnad](../../media/device-compliance.png)
+![Enhetens kompatibilitetsstatus](../../media/device-compliance.png)
 
-### <a name="discover-devices-with-malware-detections"></a>Upptäck enheter med identifiering av skadlig programvara
+### <a name="discover-devices-with-malware-detections"></a>Upptäck enheter med identifiering av skadlig program vara
 
-**Identifiering av skadlig programvara** för enhet ger antalet Intune-registrerade enheter med skadlig kod som inte har lösts helt. Detta kan bero på väntande åtgärder, en omstart, en fullständig genomsökning, manuella användaråtgärder eller om reparationsåtgärden inte slutfördes.
+**Identifiering av enhetens skadlig kod** anger antalet Intune-registrerade enheter med skadlig kod som inte har lösts helt. En brist på upplösning kan bero på att du har väntande åtgärder, en omstart, en fullständig genomsökning, manuella användar åtgärder eller om åtgärds åtgärden inte lyckades.
 
-![Identifieringskort för enhets skadlig programvara](../../media/device-malware-detections.png)
+![Nätverkskort för identifiering av skadlig kod](../../media/device-malware-detections.png)
 
-### <a name="understand-the-types-of-malware-detected"></a>Förstå vilka typer av skadlig kod som har upptäckts
+### <a name="understand-the-types-of-malware-detected"></a>Förstå vilka typer av skadlig program vara som identifieras
 
-**Typer av skadlig kod på enheter** visar olika typer av skadlig kod som har upptäckts på enheter som registrerats i Intune. Du kan undersöka varje typ i Microsoft 365-säkerhetscentret.
+**Typer av skadlig program vara på enheter** visar olika typer av skadlig program vara som har identifierats på enheter som har registrerats i Intune. Du kan undersöka varje typ i säkerhets Center för Microsoft 365.
 
-![Typer av skadlig kod på enhetskort](../../media/types-of-malware-on-devices.png)
+![Typer av skadlig program vara på enhets kortet](../../media/types-of-malware-on-devices.png)
 
-### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Förstå den specifika skadlig kod som upptäckts på dina enheter
+### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Förstå vilken skadlig program vara som identifieras på dina enheter
 
-**Skadlig kod på enheter** innehåller en lista över den specifika skadlig kod som har upptäckts på dina enheter.
+**Skadlig program vara på enheter** ger en lista över det specifika skadlig program vara som identifieras på dina enheter.
 
-![Malware på enheter kort](../../media/malware-on-devices.png)
+![Skadlig program vara på kortet enheter](../../media/malware-on-devices.png)
 
-### <a name="understand-which-devices-have-the-most-malware"></a>Förstå vilka enheter som har mest skadlig kod
+### <a name="understand-which-devices-have-the-most-malware"></a>Förstå vilka enheter som har flest skadligt
 
-**Enheter med identifiering av skadlig programvara** visar vilka enheter som har flest identifieringar av skadlig kod. I Säkerhetscentret Microsoft 365 kan du undersöka om skadlig kod är aktiv, vem som använder enheten och dess hanteringsstatus i Intune.
+**Enheter med identifiering av skadlig kod** visar vilka enheter som har flest identifiering av skadlig kod. i säkerhets Center för Microsoft 365 kan du undersöka om skadlig kod är aktiv, vem som använder enheten och dess hanterings status i Intune.
 
-![Enheter med kort för identifiering av skadlig kod](../../media/devices-with-malware-detections.png)
+![Enheter med identifierings kort för skadlig kod](../../media/devices-with-malware-detections.png)
 
-### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Förstå vilka användare som har enheter med mest skadlig kod
+### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Förstå vilka användare som har enheter med flest skadligt
 
-**Användare med identifiering av skadlig programvara** visar användare med enheter som hade flest identifieringar av skadlig kod. I säkerhetscentret Microsoft 365 kan du se hur många enheter som tilldelas varje användare och mer information om varje enhet och vilken typ av skadlig kod som ska utföras.
+**Användare med identifiering av skadlig kod** visar användare med enheter som hade flest identifierings program. I Microsoft 365 säkerhets Center kan du se hur många enheter som har tilldelats till varje användare och mer information om varje enhet och typen av skadlig program vara.
 
-![Användare med detektionskort för skadlig programvara](../../media/users-with-malware-detections.png)
+![Användare med identifiering av skadlig kod](../../media/users-with-malware-detections.png)
 
-## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Övervaka och hantera ASR-regeldistribution och identifieringar
+## <a name="monitor-and-manage-attack-surface-reduction-rule-deployment-and-detections"></a>Övervaka och hantera distribution och identifiering av attack ytans reducerings regler
 
-[Asr-regler (Attack Surface Reduction)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) förhindrar åtgärder och appar som vanligtvis används genom att använda skadlig kod för att infektera enheter. Dessa regler styr när och hur körbara filer kan köras. Du kan till exempel förhindra att JavaScript eller VBScript startar en nedladdad körbar, blockerar Win32 API-anrop från Office-makron eller blockerar processer som körs från USB-enheter.
+[Reglerna för att minska attack ytan (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) hjälper till att förhindra åtgärder och program som vanligt vis används av skadlig program vara för att infektera enheter. Dessa regler bestämmer när och hur körbara filer kan köras. Du kan till exempel förhindra att Java Script eller VBScript startar en Hämtad körbar fil, blockerar Win32 API-samtal från Office-makron eller blockerar processer som körs från USB-enheter.
 
-![Attack yta minskningar kort](../../media/attack-surface-reduction-rules.png)
+![Kort för reducering av attack yta](../../media/attack-surface-reduction-rules.png)
 
-Attack **surface reduction rules-kortet** ger en översikt över distributionen av regler på dina enheter.
+Ett kort med **regler för reducering av attack ytan** ger en översikt över drift sättningen av regler på dina enheter.
 
-Det övre fältet på kortet visar det totala antalet enheter som finns i följande distributionslägen:
+I det övre fältet på kortet visas det totala antalet enheter i följande distributions lägen:
 
-* **Blockläge:** enheter med minst en regel konfigurerad för att blockera upptäckt aktivitet
-* **Granskningsläge:** enheter utan regler inställda på att blockera upptäckt aktivitet, men har minst en regel inställd på granskning av upptäckt aktivitet  
-* **Av**: enheter med alla ASR-regler avstängda
+* **Blockeringsregler**: enheter med minst en regel konfigurerad för att blockera upptäckta aktiviteter
+* **Gransknings läge**: enheter utan regler som ställts in på blockera upptäckta aktiviteter, men har minst en regel inställd på att granska upptäckta aktiviteter  
+* **Av**: enheter där alla ASR-regler är inaktiverade
 
-Den nedre delen av det här kortet visar inställningar efter regel på dina enheter. Varje stapel anger antalet enheter som är inställda på att blockera eller granska identifiering eller har regeln helt avstängd.
+I den nedre delen av det här kortet visas inställningar efter linje på dina enheter. Varje stapel visar antalet enheter som är inställda på att blockera, granska identifiering eller låta regeln vara avaktiverad.
 
 ### <a name="view-asr-detections"></a>Visa ASR-identifieringar
 
-Om du vill visa detaljerad information om ASR-regelidentifieringar i nätverket väljer du **Visa identifieringar** på **attacksäkerhetsdeduktionsregelkortet.** Fliken **Identifieringar** på den detaljerade rapportsidan öppnas.
+Om du vill visa detaljerad information om identifieringar av ASR-regler i nätverket väljer du **Visa identifieringar** på kortet för **reducerings regler för attack ytan** . Fliken **identifieringar** på sidan detaljerad rapport öppnas.
 
-![Fliken Identifieringar](../../media/detections-tab.png)
+![Fliken identifieringar](../../media/detections-tab.png)
 
-Diagrammet högst upp på sidan visar identifieringar över tid som stackningsidentifieringar som antingen blockerades eller granskades. Tabellen längst ned visar de senaste identifieringarna. Använd följande information i tabellen för att förstå vilken typ av identifieringar:
+Diagrammet högst upp på sidan visar identifieringar som antingen blockerades eller granskats. Tabellen längst ned visar de senaste identifieringarna. Använd följande information om tabellen för att förstå vad identifieringarna är:
 
-* **Upptäckt fil:** filen, vanligtvis ett skript eller ett dokument, vars innehåll utlöste den misstänkta attackaktiviteten
-* **Regel**: namn som beskriver attacken aktiviteter regeln är utformad för att fånga. Läs om befintliga ASR-regler
-* **Källapp:** programmet som läste in eller utförde innehåll som utlöser den misstänkta attackaktiviteten. Detta kan vara ett legitimt program, till exempel webbläsare, ett Office-program eller ett systemverktyg som PowerShell
-* **Utgivare**: leverantören som släppte källappen
+* **Identifierad fil**: filen, vanligt vis ett skript eller dokument, vars innehåll utlöste den misstänkta angrepps aktiviteten
+* **Regel**: namn som beskriver de angrepps aktiviteter som regeln har utformats för att fånga. Läsa om befintliga ASR-regler
+* **Käll program**: programmet som läste in eller utförde innehåll utlöste den misstänkta angrepps aktiviteten. Det kan vara ett legitimt program, till exempel en webbläsare, ett Office-program eller ett system verktyg som PowerShell
+* **Utgivare**: den leverantör som släppte källmappen
 
-### <a name="review-device-asr-rule-settings"></a>Granska asr-regelinställningar för enheten
+### <a name="review-device-asr-rule-settings"></a>Granska inställningar för enhet i ASR-regler
 
-På rapportsidan **Attack surface reduction rules** går du till fliken **Konfiguration** för att granska regelinställningar för enskilda enheter. Välj en enhet för att få detaljerad information om huruvida varje regel är i blockläge, granskningsläge eller helt avstängd.
+Gå till fliken **konfiguration** och granska regel inställningar för enskilda enheter på sidan för **reducerings regler för attack yta** . Välj en enhet för att få detaljerad information om huruvida varje regel är i spärr läge, gransknings läge eller inaktive rad.
 
-![Fliken Konfiguration](../../media/configuration-tab.png)
+![Fliken konfiguration](../../media/configuration-tab.png)
 
-Microsoft Intune tillhandahåller hanteringsfunktioner för ASR-reglerna. Om du vill uppdatera inställningarna väljer du **Kom igång** under **Konfigurera enheter** på fliken för att öppna enhetshanteringen på Intune.
+Microsoft Intune tillhandahåller hanterings funktioner för dina ASR-regler. Om du vill uppdatera dina inställningar väljer du **komma igång** under **Konfigurera enheter** på fliken för att öppna enhets hantering för Intune.
 
-### <a name="exclude-files-from-asr-rules"></a>Exkludera filer från ASR-regler
+### <a name="exclude-files-from-asr-rules"></a>Utesluta filer från ASR-regler
 
-Microsoft 365 security center samlar in namnen på de [filer som du kanske vill utesluta](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) från identifieringar genom regler för att minska angreppsytan. Genom att utesluta filer kan du minska falska positiva identifieringar och mer säkert distribuera regler för att minska angreppsytan i blockläge.
+I Microsoft 365 säkerhets Center samlas namnen på de [filer som du vill ska undantas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) från identifiering av regler för reducering av attack ytan. Genom att utesluta filer kan du minska falska positiva identifieringar och mer säkert distribuera regler för begränsning av attack ytan i block läge.
 
-Undantagen hanteras på Microsoft Intune, men Microsoft 365 security center tillhandahåller ett analysverktyg som hjälper dig att förstå filerna. Om du vill börja samla in filer för uteslutning går du till fliken **Lägg till undantag** på rapportsidan Attack surface reduction **rules.**
+Undantagen hanteras i Microsoft Intune, men i säkerhets Center för Microsoft 365 finns ett analys verktyg som hjälper dig att förstå filerna. Om du vill börja samla in filer som ska uteslutas går du till fliken **Lägg till undantag** på sidan **reducerings regler för attack yta** .
 
 >[!NOTE]  
->Verktyget analyserar identifieringar av alla regler för att minska angreppsytan, men [endast vissa regler stöder undantag](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
+>Med verktyget analyseras eventuella reducerings regler för attack ytan, men [endast vissa regler stöder undantag](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
 
-![Fliken Lägg till undantag](../../media/add-exclusions-tab.png)
+![Fliken för att lägga till undantag](../../media/add-exclusions-tab.png)
 
-I tabellen visas alla filnamn som identifieras av reglerna för att minska angreppsytan. Du kan välja filer för att granska effekten av att utesluta dem:
+I tabellen visas alla fil namn som identifieras av reglerna för reducering av attack ytan. Du kan välja filer för att se hur utesluta dem:
 
 * Hur många färre identifieringar
-* Hur många färre enheter rapporterar identifieringarna
+* Hur många färre enheter rapporterar identifieringen
 
-Om du vill hämta en lista över de markerade filerna med fullständiga sökvägar för uteslutning väljer du **Hämta uteslutningssökvägar**.
+Om du vill ha en lista över de markerade filerna med deras fullständiga sökvägar, väljer du **Hämta undantags Sök vägar**.
 
-Loggar för ASR-regeln **Blockera autentiseringsuppgifter stjäla från Windows lokala säkerhetsmyndigheten undersystem (lsass.exe)** fånga källappen **lsass.exe**, en normal systemfil, som den identifierade filen. Därför innehåller den genererade listan över uteslutningssökvägar den här filen. Om du vill utesluta filen som utlöste den här regeln i stället för **lsass.exe**använder du sökvägen till källappen i stället för den identifierade filen.
+Loggar för automatisk uppdatering av ASR **-regel blocket som stjälas från Windows lokala säkerhets auktoritets under system (lsass.exe)** Hämta käll programmet **lsass.exe**. Det är en normal system fil, men den identifieras som den upptäckta filen. Det innebär att den genererade listan med undantags Sök vägar inkluderar den här filen. Om du vill utesluta filen som utlöste den här regeln i stället för **lsass.exe**använder du sökvägen till käll programmet i stället för den identifierade filen.
 
-Om du vill hitta källappen kör du följande [avancerade jaktfråga](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) för den här specifika regeln (identifieras med regel-ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
+Om du vill leta reda på käll programmet kör du följande frågor för den här [frågan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) (identifieras enligt regel-ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
 ```kusto
 DeviceEvents
@@ -214,13 +214,13 @@ DeviceEvents
 | project InitiatingProcessFolderPath, InitiatingProcessFileName
 ```
 
-#### <a name="check-files-for-exclusion"></a>Kontrollera om du vill utesluta filer
+#### <a name="check-files-for-exclusion"></a>Kontrol lera filer för uteslutning
 
-Innan du utesluter en fil från ASR rekommenderar vi att du inspekterar filen för att avgöra om den verkligen inte är skadlig.
+Innan du utesluter en fil från ASR rekommenderar vi att du kontrollerar filen för att ta reda på om den inte är skadlig.
 
-Om du vill granska en fil använder du [filinformationssidan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) på Microsoft Defender Security Center. Sidan innehåller prevalensinformation samt virustotal antivirus upptäckt förhållandet. Du kan också använda sidan för att skicka filen för djupanalys.
+Om du vill granska en fil använder du [fil informations sidan](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) i Microsoft Defender säkerhets Center. Sidan visar information om förvalen och VirusTotal Antivirus täckning. Du kan också använda sidan för att skicka filen för djup analys.
 
-Om du vill hitta en identifierad fil i Microsoft Defender Security Center söker du efter alla ASR-identifieringar med följande avancerade jaktfråga:
+Leta reda på en identifierad fil i Microsoft Defender säkerhets Center genom att söka efter alla ASR-identifieringar med följande avancerade jakt frågor:
 
 ```kusto
 MiscEvents
@@ -229,4 +229,4 @@ MiscEvents
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
 ```
 
-Använd **SHA1** eller **InitiatingProcessSHA1** i resultaten för att söka efter filen med hjälp av det universella sökfältet i Microsoft Defender Security Center.
+Använd **SHA1** eller **InitiatingProcessSHA1** i resultaten för att söka efter filen med hjälp av det universella Sök fältet i Microsoft Defender säkerhets Center.

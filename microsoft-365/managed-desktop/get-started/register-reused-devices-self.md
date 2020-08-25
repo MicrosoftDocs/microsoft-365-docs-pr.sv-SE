@@ -1,262 +1,186 @@
 ---
 title: Registrera befintliga enheter själv
-description: Registrera återanvända enheter som du kanske redan har själv så att de kan hanteras av Microsoft Managed Desktop
+description: Registrera åter användnings bara enheter du kanske redan har själv så att de kan hanteras av Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: a9ff0e76448df183ac5c34c5832155e0b135d313
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101491"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46869001"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrera befintliga enheter själv
 
 >[!NOTE]
->I det här avsnittet beskrivs stegen för att återanvända enheter som du redan har och registrera dem på Microsoft Managed Desktop. Om du arbetar med helt nya enheter följer du stegen i [Registrera nya enheter på Microsoft Managed Desktop själv](register-devices-self.md) i stället.
+>I det här avsnittet beskrivs vad du kan göra för att återanvända enheter som du redan har och registrera dem på Microsoft Managed Desktop. Om du arbetar med helt nya enheter följer du anvisningarna i [registrera nya enheter på Microsoft Managed Desktop](register-devices-self.md) i stället.
 
-Processen för partners dokumenteras i [Steg för partner för att registrera enheter](register-devices-partner.md).
+Processen för partners är dokumenterad i [steg för att partners ska kunna registrera enheter](register-devices-partner.md).
 
-Microsoft Managed Desktop kan fungera med helt nya enheter eller så kan du återanvända enheter som du kanske redan har (vilket kräver att du avbildar dem igen). Du kan registrera enheter med hjälp av Microsoft Managed Desktop Admin Portal.
+Microsoft Managed Desktop kan fungera med helt nya enheter eller kan du återanvända enheter som du kanske redan har (som kräver att du skriver ut dem igen). Du kan registrera enheter på Microsoft Managed Desktop admin-portalen.
 
-## <a name="prepare-to-register-existing-devices"></a>Förbereda för att registrera befintliga enheter
+## <a name="prepare-to-register-existing-devices"></a>Förbereda att registrera befintliga enheter
 
 
-Så här registrerar du befintliga enheter:
+Följ de här stegen för att registrera befintliga enheter:
 
-1. [Hämta maskinvaruhhhen för varje enhet.](#obtain-the-hardware-hash)
+1. [Skaffa maskinvaru-hashvärdet för varje enhet.](#obtain-the-hardware-hash)
 2. [Slå samman hash-data](#merge-hash-data)
-3. [Registrera enheterna i Microsoft Managed Desktop](#register-devices).
-4. [Dubbelkolla att bilden är korrekt.](#check-the-image)
+3. [Registrera enheterna på Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
+4. [Kontrol lera att bilden är korrekt.](#check-the-image)
 5. [Leverera enheten](#deliver-the-device)
 
-### <a name="obtain-the-hardware-hash"></a>Skaffa maskinvaruhhh
+### <a name="obtain-the-hardware-hash"></a>Skaffa maskinvaru-hashvärdet
 
-Microsoft Managed Desktop identifierar varje enhet unikt genom att referera till dess maskinvaruhhh. Du har fyra alternativ för att hämta den här informationen från enheter som du redan använder:
+Microsoft Managed Desktop identifierar varje enhet unikt genom att referera till dess maskinvaru-hash. Du har fyra alternativ för att få informationen från enheter som du redan använder:
 
-- Fråga oem-leverantören om registreringsfilen för Autopilot, som innehåller maskinvaruhännaren.
-- Skapa en anpassad rapport i [Configuration Manager](#configuration-manager).
-- Kör ett Windows PowerShell-skript – antingen med hjälp av [Active Directory](#active-directory-powershell-script-method) eller [manuellt](#manual-powershell-script-method) på varje enhet – och samla in resultaten i en fil.
-- Starta varje enhet – men slutför inte installationsupplevelsen för Windows – och [samla in hasharen på ett flyttbart flashminne](#flash-drive-method).
+- Be din OEM-leverantör om den autopilot registrerings filen som kommer att innehålla maskinvaru-hashar.
+- Samla in information i [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).
+- Kör ett Windows PowerShell-skript – antingen via [Active Directory](#active-directory-powershell-script-method) eller [manuellt](#manual-powershell-script-method) på varje enhet – och samla in resultatet i en fil.
+- Starta varje enhet, men Slutför inte installations upplevelsen för Windows--och [samla in hash-värden på ett löstagbart minne](#flash-drive-method).
 
-#### <a name="configuration-manager"></a>Konfigurationshanteraren
+#### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft konfigurationshanterare för slutpunkt
 
-Du kan använda Microsoft Endpoint Configuration Manager för att samla in maskinvaruhcens från befintliga enheter som du vill registrera dig på Microsoft Managed Desktop.
-
-> [!IMPORTANT]
-> Alla enheter som du vill hämta den här informationen för måste köra Windows 10, version 1703 eller senare. Du behöver också en enhet som är en Configuration Manager-klient som är ansluten till Configuration Manager-platsen (Current Branch). Du behöver också rollen Reporting Point Site System som konfigurerats i din miljö med SQL Server Reporting Services aktiverat. 
-
-Om du har uppfyllt alla dessa förutsättningar är du redo att samla in informationen genom att följa dessa steg:
-
-1. Välj **Övervakning**i Configuration Manager-konsolen . 
-2. Expandera **Rapportering**på arbetsytan Övervakning och välj sedan **Rapporter**. 
-3. Öppna guiden Skapa rapport i avsnittet **Skapa** **rapport** på fliken **Start.** 
-4. På sidan **Information** ställer du in följande inställningar: 
-    - **Namn:** Ange ett namn för rapporten. 
-    - **Beskrivning:** Ange en beskrivning av rapporten. 
-    - **Server:** Visar namnet på den rapportserver där du skapar den här rapporten. 
-    - **Sökväg:** Välj **Bläddra** om du vill ange en mapp där du vill lagra rapporten. 
-5. Välj **Nästa**. 
-6. Granska inställningarna på sidan **Sammanfattning.** Välj **Föregående** om du vill ändra inställningarna eller välj **Nästa** om du vill skapa rapporten i Configuration Manager. 
-7. På sidan **Slutförd** väljer du **Stäng** för att avsluta guiden och öppnar **Report Builder** för att ange rapportinställningarna. Ange ditt användarkonto och lösenord om du uppmanas att göra det och välj sedan **OK.** Om Report Builder inte är installerat på enheten uppmanas du att installera den. Välj **Kör om du vill installera Report Builder**, som krävs för att ändra och skapa rapporter. 
-
-
-**I Microsoft Report Builder**anger du SQL-uttrycket för rapporten och gör så här:
-
-1. Välj **Datauppsättningar**i den vänstra rutan och högerklicka sedan på Lägg till **datauppsättning**.
-2. Gå till fliken **Fråga** och ange sedan namnet som *DataSet0*. 
-3. Välj **Använd en datauppsättning som är inbäddad i rapporten.** Report Builder öppnas.
-4. Välj **Datakälla**i **Report Builder:**. Välj standarddatakällan, som ska börja med "AutoGen". 
-5. Välj **Frågetyp som text**och ange sedan den här frågan:
-
-
-
-
-```sql
-SELECT comp.manufacturer0      AS Manufacturer,  
-       comp.model0             AS Model,  
-       bios.serialnumber0      AS Serial_Number,  
-       mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
-
-       INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
-               ON comp.resourceid = bios.resourceid  
-       INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
-               ON comp.resourceid = mdm.resourceid
-```
-
-
-
-
-5. Navigera till fliken **Fält,** wehre-värden för **Fältnamn** och **Fältkälla** bör redan fyllas i. Om de inte är det väljer du **Lägg till**och väljer sedan **Frågefält**. Ange **fältnamn** och **fältkälla**.
-6. Upprepa för vart och ett av dessa värden: 
-    - Tillverkare 
-    - Modell 
-    - Tal 
-    - HårdvaraHash
-7. Välj **OK**.
-
-**Definiera sedan rapportens visning och skapa rapporten** genom att följa dessa steg:
-
-1. Välj **Tabell eller Matris**; en ny guide öppnas.
-2. Välj **en befintlig datauppsättning i den här rapporten eller en delad datauppsättning i**Välj en datauppsättning i Välj en **datauppsättning**.  
-3. Välj **DataSet0** (standard) och välj sedan **Nästa**.
-4. Dra **tillverkare,** **modell**och **serienummer** till rutan **Radgrupper.** Dra **HardwareHash** till rutan **Värden** och välj sedan **Nästa**.
-5. Avmarkera kryssrutorna för **Visa delsummor och totalsummor** och **Grupper för expandera/komprimera.** Välj **Nästa**.
-6. Välj **Slutför**.
-7. Välj **Kör** för att köra rapporten. Kontrollera att rapporten innehåller den information du förväntar dig. Om det behövs väljer du **Design** för att återgå till designvyn för att ändra rapporten.
-8. Välj **Spara** om du vill spara rapporten på rapportservern. Du kan köra den nya rapporten i noden Rapporter på arbetsytan Övervakning. 
-
-**Slutligen exportera rapporten och använda den för att registrera enheter** genom att följa dessa steg. (Du bör bara behöva följa steg 1 och 2 i det här avsnittet om du har navigerat bort efter föregående steg.):
-
-1. Välj **Övervakning**i Configuration Manager-konsolen .
-2. Expandera Rapportering **i** **Övervakning**och välj sedan **Rapporter**.
-3. Leta reda på rapporten med det namn du skapade tidigare.
-4. Högerklicka på den här rapporten och välj **Kör**.
-5. I dialogrutan som öppnas väljer du **Exportera** och väljer sedan **Spara som CSV**.
-6. Den här versionen av rapportextraheringshas från alla Windows 10-enheter som Configuration Manager kommunicerar med. Du måste filtrera resultaten till just de enheter som du planerar att registrera dig hos Microsoft Managed Desktop.
-
+Du kan använda Microsoft Endpoint Configuration Manager för att samla in maskinvaru-hashar från befintliga enheter som du vill registrera med Microsoft Managed Desktop.
 
 > [!IMPORTANT]
-> Frågan i Configuration Manager tillåter inte blanksteg i exporterade kolumnnamn. Det är därför stegen hade du ange "Serial_Number" och "HardwareHash." Nu när du har den exporterade CSV-filen måste du redigera rapportrubrikerna för att läsa *Serienummer* och *Maskinvaruh hash* som visas här innan du fortsätter med enhetsregistrering.
+> Alla enheter som ska få den här informationen för måste ha Windows 10, version 1703 eller senare. 
 
-Nu kan du gå vidare till [Registrera enheter med hjälp av Admin Portal](#register-devices-by-using-the-admin-portal).
+Om du har uppfyllt alla dessa krav kan du börja samla in informationen genom att följa de här stegen:
+
+1. I Configuration Manager-konsolen väljer du **övervakning**. 
+2. Expandera noden **rapportering** i arbets ytan övervakning, expandera **rapporter**och välj **maskin varan-General-** noden. 
+3. Kör informationen i rapporten, **Windows autopilot-enhet**och visa resultaten.
+4. I rapport visnings programmet väljer du ikonen **Exportera** och väljer alternativet **CSV (kommaavgränsad)** .
+5. När du har sparat filen måste du filtrera resultat efter de enheter som du planerar att registrera med Microsoft Managed Desktop och överföra data till [administrations portalen](https://aka.ms/mmdportal)för Microsoft Managed Desktop, välja **enheter** i det vänstra navigerings fönstret. Välj **+ registrera enheter**; infarten öppnas:
 
 
-#### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell-skriptmetod
+Mer information finns i [registrera enheter med hjälp av administrations portalen](#register-devices-by-using-the-admin-portal) .
 
-I en Active Directory-miljö kan du använda `Get-MMDRegistrationInfo` PowerShell-cmdlet för att fjärrsamla information från enheter i Active Directory-grupper med hjälp av WinRM. Du kan också använda `Get-AD Computer` cmdlet och få filtrerade resultat för en viss maskinvarumodell namn som ingår i katalogen. För att göra detta, först bekräfta dessa förutsättningar och sedan gå vidare med stegen:
+
+#### <a name="active-directory-powershell-script-method"></a>PowerShell-skriptfil för Active Directory
+
+I en Active Directory-miljö kan du använda `Get-WindowsAutoPilotInfo` PowerShell-cmdleten för att fjärrsamla in informationen från enheter i Active Directory-grupper med WinRM. Du kan också använda `Get-AD Computer` cmdleten och få filtrerade resultat för vissa maskin varu modell namn som finns i katalogen. För att göra detta måste du först bekräfta dessa krav och sedan gå vidare med de här stegen:
 
 - WinRM är aktiverat.
-- De enheter som du vill registrera är aktiva i nätverket (det vill säga de är inte frånkopplade eller avstängda).
-- Kontrollera att du har en domänautentiseringsparameter som har behörighet att köras på distans på enheterna.
-- Kontrollera att Windows-brandväggen ger åtkomst till WMI. Gör så här:
-    1. Öppna kontrollpanelen **för Windows Defender-brandväggen** och välj **Tillåt en app eller funktion via Windows Defender-brandväggen**.
-    2. Leta reda på **WMI (Windows Management Instrumentation)** i listan, aktivera både **privat och offentligt**och välj sedan **OK**.
+- De enheter som du vill registrera är aktiva i nätverket (det vill säga att de inte kopplas bort eller inaktive RAS).
+- Kontrol lera att du har en parameter för inloggnings uppgifter som har behörighet att köra på enheterna.
+- Kontrol lera att Windows-brandväggen tillåter åtkomst till WMI. Gör så här:
 
-1.  Öppna en PowerShell-prompt med administrativa rättigheter.
+    1. Öppna kontroll panelen i **Windows Defender-brandväggen** och välj **Tillåt en app eller funktion via Windows Defender-brandväggen**.
+    
+    2. Sök efter **WMI (Windows Management Instrumentation)** i listan, aktivera både **privat och offentlig**och välj sedan **OK**.
+
+1.  Öppna en PowerShell-kommandotolk med administrativa rättigheter.
+
 2.  Kör *något* av följande skript:
-```powershell
-Install-script -name Get-MMDRegistrationInfo 
-#example one – leverage Get-ADComputer to enumerate devices 
-Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname>
-```
-```powershell 
-#example two – target specific devices: 
-Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
-```
-3. Få tillgång till alla kataloger där det kan finnas poster för enheterna. Ta bort poster för varje enhet från *alla* kataloger, inklusive Windows Server Active Directory Domain Services och Azure Active Directory. Tänk på att denna borttagning kan ta några timmar att helt bearbeta.
-4. Åtkomsthanteringstjänster där det kan finnas poster för enheterna. Ta bort poster för varje enhet från *alla* hanteringstjänster, inklusive Microsoft Endpoint Configuration Manager, Microsoft Intune och Windows Autopilot. Tänk på att denna borttagning kan ta några timmar att helt bearbeta.
 
-Nu kan du fortsätta att [registrera enheter](#register-devices).
+    ```powershell
+    Install-script -name Get-WindowsAutoPilotInfo 
+    #example one – leverage Get-ADComputer to enumerate devices 
+    Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname>
+    ```
 
-#### <a name="manual-powershell-script-method"></a>Manuell PowerShell-skriptmetod
+    ```powershell 
+    #example two – target specific devices: 
+    Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
+    ```
 
-1.  Öppna en PowerShell-prompt med administrativa rättigheter.
-2.  Köra`Install-Script -Name Get-MMDRegistrationInfo`
-3.  Köra`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+3. Åtkomst till alla kataloger där det finns poster för enheterna. Ta bort poster för varje enhet från *alla* kataloger, inklusive Windows Server Active Directory Domain Services och Azure Active Directory. Tänk på att borttagningen kan ta några timmar innan du slutför processen.
+
+4. Access Management Services där det finns poster för enheterna. Ta bort poster för varje enhet från *alla* hanterings tjänster, inklusive Microsoft Endpoint Configuration Manager, Microsoft Intune och Windows autopilot. Tänk på att borttagningen kan ta några timmar innan du slutför processen.
+
+Nu kan du fortsätta med att [registrera enheter](#register-devices-by-using-the-admin-portal).
+
+#### <a name="manual-powershell-script-method"></a>Metod för manuell PowerShell-skript
+
+1.  Öppna en PowerShell-kommandotolk med administrativa rättigheter.
+2.  Använda `Install-Script -Name Get-WindowsAutoPilotInfo`
+3.  Använda `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [Slå samman hash-data.](#merge-hash-data)
 
-#### <a name="flash-drive-method"></a>Flash-enhet metod
+#### <a name="flash-drive-method"></a>Flash-enhet, metod
 
-1. På en annan enhet än den du registrerar sätter du i en USB-enhet.
-2. Öppna en PowerShell-prompt med administrativa rättigheter.
-3. Köra`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
-4. Slå på enheten du registrerar, men *starta inte installationsupplevelsen*. Om du av misstag startar installationen måste du återställa eller konfigurera om enheten.
-5. Sätt i USB-enheten och tryck sedan på SKIFT + F10.
-6. Öppna en PowerShell-prompt med administrativa rättigheter och kör sedan `cd <pathToUsb>` .
-7. Köra`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Köra`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
-9. Ta bort USB-enheten och stäng sedan av enheten genom att köra`shutdown -s -t 0`
+1. På en annan enhet än den du registrerar kan du sätta in en USB-enhet.
+2. Öppna en PowerShell-kommandotolk med administrativa rättigheter.
+3. Använda `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+4. Slå på den enhet du registrerar, men *Starta inte installations upplevelsen*. Om du råkar starta installations upplevelsen måste du återställa eller återanvända enheten.
+5. Sätt in USB-enheten och tryck sedan på SKIFT + F10.
+6. Öppna en PowerShell-kommandotolk med administrativa rättigheter och kör den sedan `cd <pathToUsb>` .
+7. Använda `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+8. Använda `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+9. Ta bort USB-enheten och stäng sedan av enheten genom att köra `shutdown -s -t 0`
 10. [Slå samman hash-data.](#merge-hash-data)
 
 >[!IMPORTANT]
->Slå inte på enheten du registrerar igen förrän du har registrerat dig för den. 
+>Koppla inte på den enhet du registrerar igen förrän du har registrerat dig. 
 
 
 
-### <a name="merge-hash-data"></a>Sammanfoga hash-data
+### <a name="merge-hash-data"></a>Slå samman hash-data
 
-Om du samlade in maskinvaruhhh-data med de manuella PowerShell- eller flash-enhetsmetoderna måste du nu ha data i CSV-filerna kombinerade till en enda fil för att slutföra registreringen. Här är ett exempel på PowerShell-skript för att göra det enkelt:
+Om du har samlat in maskinvaru-hash-data med de manuella PowerShell-eller Flash-enhets metoderna måste du nu använda data i CSV-filerna i en enda fil för att slutföra registreringen. Här är ett exempel på PowerShell-skript som gör det enkelt:
 
-`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
+```powershell
+Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
+```
 
-Med hash-data sammanslagna till en CSV-fil kan du nu fortsätta att [registrera enheterna](#register-devices).
-
-### <a name="register-devices"></a>Registrera enheter
-
-CSV-filen måste vara i ett särskilt format för registrering. Om du själv har samlat in data i föregående steg bör filen redan vara i rätt format. Om du hämtar filen från en leverantör kan du behöva justera formatet.
-
->[!NOTE]
->För din bekvämlighet kan du ladda ner en [mall](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) för den här CSV-filen.
-
-Filen måste innehålla **exakt samma kolumnrubriker** som exemplet en (tillverkare, modell, etc.), men dina egna data för de andra raderna. Om du använder mallen öppnar du den i ett textredigeringsverktyg som Anteckningar och överväg att lämna alla data enbart på rad 1, och ange bara data i raderna 2 och lägre. 
-    
-  ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,dGhpc2RldmljZWlzYW5tbWRkZXZpY2U
-  
-  
-  ```
-
->[!NOTE]
->Om du glömmer att ändra någon av exempeldata, kommer registreringen misslyckas.
-
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av adminportalen
-
-Välj **Enheter** i det vänstra navigeringsfönstret i Microsoft Managed Desktop [Admin Portal.](https://aka.ms/mmdportal) Välj **+ Registrera enheter;** fly-in öppnar:
-
-[![Fly-in efter att ha valt Registrera enheter, lista enheter med kolumner för tilldelade användare, serienummer, status, senast sett datum och ålder](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
+Med hash-data som kopplats till en CSV-fil kan du fortsätta att [Registrera enheterna](#register-devices-by-using-the-admin-portal).
 
 
-[//]: # (Tyvärr är detta inte sant. Vi kan ta bort denna anmärkning - men lämnar det nu tills vi har en chans att prata om det.)
+#### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrations portalen
+
+Välj **enheter** i det vänstra navigerings fönstret på portalen Microsoft Managed Desktop [admin](https://aka.ms/mmdportal). Välj **+ registrera enheter**; infarten öppnas:
+
+[![Flyg in när du har valt registrera enheter, visar enheter med kolumner för tilldelade användare, serie nummer, status, senaste datum och ålder](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
 Gör så här:
 
-1. I **Filöverföring**anger du en sökväg till CSV-filen som du skapade tidigare.
-2. Du kan också lägga till ett **order-ID** eller **inköps-ID** för dina egna spårningsändamål. Det finns inga formatkrav för dessa värden.
-3. Välj **Registrera enheter**. Systemet lägger till enheterna i listan över enheter på **bladet Enheter**, markerade som **Registrering väntar**. Registreringen tar vanligtvis mindre än 10 minuter, och när den lyckas visas enheten som **redo för användaren,** vilket innebär att den är klar och väntar på att en slutanvändare ska börja använda.
+1. Ange en sökväg till CSV-filen som du skapade tidigare i **fil överföring**.
+
+1. Välj **registrera enheter**. Systemet lägger till enheter i listan med enheter i **bladet enheter**, markerade som **AutopilotRegistrationRequested**. Registreringen tar vanligt vis mindre än 10 minuter och när enheten lyckas visas den som **klar för användarna** , vilket betyder att det är klart och väntar på att en användare ska börja använda.
 
 
-Du kan övervaka förloppet för enhetsregistrering på sidan **Microsoft Managed Desktop - Devices.** Möjliga tillstånd som rapporteras där inkluderar:
+Du kan övervaka förloppet av enhets registreringen på huvud sidan för **hanterade skriv bord i Microsoft** . Möjliga tillstånd rapporterade att inkludera:
 
-| Statligt | Beskrivning |
+| Sessionsläget | Beskrivning |
 |---------------|-------------|
-| Registrering väntar | Registreringen är inte klar ännu. Kom tillbaka senare. |
-| Registreringen misslyckades | Det gick inte att slutföra registreringen. Mer information finns i [Registrering av felsökning av enheten.](#troubleshooting-device-registration) |
-| Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till slutanvändaren. Microsoft Managed Desktop guidar dem genom första gången set-up, så det finns ingen anledning för dig att göra några ytterligare förberedelser. |
-| Aktiva | Enheten har levererats till slutanvändaren och de har registrerat sig hos din klient. Detta indikerar också att de regelbundet använder enheten. |
-| Inaktiva | Enheten har levererats till slutanvändaren och de har registrerat sig hos din klient. De har dock inte använt enheten nyligen (under de senaste 7 dagarna).  | 
+| AutopilotRegistrationRequested | Registreringen är inte klar ännu. Kom tillbaka senare. |
+| Registreringen misslyckades | Det gick inte att genomföra registreringen. Mer information finns i [fel sökning av enhets registrering](#troubleshooting-device-registration) . |
+| Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till slutanvändaren. Microsoft Managed Desktop vägleder dem genom första gången, vilket innebär att du inte behöver göra några fler förberedelser. |
+| Aktiva | Enheten har levererats till slutanvändaren och de har registrerat sig hos din klient organisation. Detta indikerar också att de ofta använder enheten. |
+| Inaktiv | Enheten har levererats till slutanvändaren och de har registrerat sig hos din klient organisation. De har emellertid inte använt enheten nyligen (under de senaste 7 dagarna).  | 
 
-#### <a name="troubleshooting-device-registration"></a>Felsöka enhetsregistrering
+#### <a name="troubleshooting-device-registration"></a>Felsöka registrering av enheter
 
-| Felmeddelande | Information |
+| Fel meddelande | Information |
 |---------------|-------------|
-| Enheten hittades inte | Vi kunde inte registrera den här enheten eftersom vi inte kunde hitta en matchning för den angivna tillverkaren, modellen eller serienumret. Bekräfta dessa värden med din enhetsleverantör. |
-| Maskinvaruh hash är ogiltigt | Maskinvaruhhingen som du angav för den här enheten har inte formaterats korrekt. Dubbelkolla maskinvaruhhhen och skicka sedan in den igen. |
-| Enheten har redan registrerats | Den här enheten är redan registrerad i din organisation. Inga ytterligare åtgärder krävs. |
-| Enhet som påstås av en annan organisation | Den här enheten har redan hävdats av en annan organisation. Kontrollera med din enhetsleverantör. |
-| Oväntat fel | Det gick inte att bearbeta din begäran automatiskt. Kontakta supporten och ange ID:et för begäran:<requestId> |
+| Enheten hittades inte | Det gick inte att registrera den här enheten eftersom vi inte kunde hitta en träff för den medföljande tillverkaren, modellen eller serie numret. Bekräfta dessa värden med din enhets leverantör. |
+| Maskinvaru-hashvärdet är inte giltigt | Den maskinvaru-hash som du har angett för enheten är inte korrekt formaterad. Dubbel kontrol lera maskinvaru-hashvärdet och skicka sedan igen. |
+| Enheten är redan registrerad | Enheten är redan registrerad i din organisation. Ingen ytterligare åtgärd krävs. |
+| Enhet som ägs av en annan organisation | Den här enheten har redan hävdats av en annan organisation. Hör med din enhets leverantör. |
+| Oväntat fel | Begäran kunde inte behandlas automatiskt. Kontakta supporten och ange begäran-ID: <requestId> |
 
-### <a name="check-the-image"></a>Kontrollera bilden
+### <a name="check-the-image"></a>Kontrol lera bilden
 
-Om enheten kommer från en Microsoft Managed Desktop-partnerleverantör ska avbildningen vara korrekt.
+Om din enhet kommer från en Microsoft Managed Desktop partner-leverantör ska bilden vara korrekt.
 
-Du är också välkommen att använda bilden på egen hand om du föredrar. För att komma igång kontaktar du den Microsoft-representant du arbetar med och de ger dig plats och steg för att tillämpa avbildningen.
+Du är också välkommen att lägga till din egen image om du vill. För att komma igång kontaktar du den Microsoft-representant du arbetar med och ger dig en plats och anvisningar för hur du kan använda bilden.
 
 ### <a name="deliver-the-device"></a>Leverera enheten
 
 > [!IMPORTANT]
-> Innan du lämnar över enheten till användaren ska du se till att du har skaffat och tillämpat [lämpliga licenser](../get-ready/prerequisites.md) för den användaren.
+> Innan du lämnar in enheten till din användare bör du kontrol lera att du har skaffat [rätt licenser](../get-ready/prerequisites.md) för den användaren.
 
-Om alla licenser tillämpas kan du [göra användarna redo att använda enheter](get-started-devices.md)och sedan kan användaren starta enheten och gå vidare genom installationen av Windows.
+Om alla licenser tillämpas kan du [få användarna redo att använda enheter](get-started-devices.md)och sedan kan användaren starta enheten och gå igenom installations upplevelsen i Windows.
 
 
 

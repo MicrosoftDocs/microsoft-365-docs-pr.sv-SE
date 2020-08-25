@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1b6bd81bc194a3b8d972661eaca393571b1ad199
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815225"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866925"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
-För att göra [Microsoft säkert Poäng](microsoft-secure-score.md) en bättre representant för dina säkerhets Posture och förbättra användbarheten gör vi några ändringar i hela tiden. Ditt Poäng och högsta möjliga poäng kan förändras.
+Vi håller på att göra några ändringar i närmaste framtid och gör [Microsoft säkert Poäng](microsoft-secure-score.md) en bättre representant för din säkerhets Posture och bättre användbarhet. Ditt Poäng och högsta möjliga poäng kan förändras.
 
 ## <a name="proposed-changes"></a>Föreslagna ändringar
 
-Dessa ändringar kan komma till din säkra Microsoft-poäng snart, beroende på vilken licens du har. Om du vill veta mer om de senaste ändringarna kan du läsa [Nyheter i Microsoft säkra Poäng?](microsoft-secure-score-whats-new.md)
+Dessa ändringar kan komma till din säkra poäng i Microsoft snart, beroende på vilken licens du har. Om du vill veta mer om de senaste ändringarna kan du läsa [Nyheter i Microsoft säkra Poäng?](microsoft-secure-score-whats-new.md)
 
 - Om du ändrar Max poängen från 7 till 8 för förbättrings åtgärden för Azure Active Directory med namnet "Aktivera princip för blockering av äldre-verifikation"
 

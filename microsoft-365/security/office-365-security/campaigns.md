@@ -1,5 +1,5 @@
 ---
-title: Kampanjmallar i ATP
+title: Kampanjmallar i Office 365 ATP-abonnemang
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,21 +17,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Lär dig mer om kampanjmallar i Office 365 Avancerat skydd.
-ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825803"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867205"
 ---
-# <a name="campaign-views-in-atp"></a>Kampanjmallar i ATP
+# <a name="campaign-views-in-office-365-atp"></a>Analysvyer i Office 365 ATP
 
-Kampanjmallar är en funktion i avancerat skydd (ATP) i säkerhets & efterlevnad som identifierar och kategoriserar nät fiske attacker i tjänsten. Med hjälp av kampanjmallar kan du:
+Kampanjmallar är en funktion i abonnemanget Avancerat skydd (ATP) (till exempel Microsoft 365 E5 eller organisationer med ett ATP-abonnemang 2-tillägg). I Campaing i säkerhets & identifieras och kategoriseras nät fiske attacker i tjänsten. Med hjälp av kampanjmallar kan du:
 
 - Undersök och svara på nät fiske attacker effektivt.
-
 - Bättre förståelse för attackens omfattning.
-
 - Visa värde för besluts fattare.
 
 Med kampanjmallar kan du se en stor bild av en attack snabbare och mer komplett än de som är på människa.
@@ -43,11 +41,8 @@ En kampanj är en koordinerad e-postattack mot en eller flera organisationer. E-
 Microsoft utnyttjar de stora mängderna nätfiske, anti-spam och data mot skadlig program vara via hela tjänsten för att identifiera kampanjer. Vi analyserar och klassificerar angrepps informationen enligt flera faktorer. Till exempel:
 
 - **Attack källa**: käll-IP-adresser och e-postdomäner.
-
-- **Egenskaper för attack meddelande**: innehåll, format och ton för meddelanden.
-
-- **Attack mottagare**: mottagar domäner, funktioner för mottagaren (administratörer, chefer etc.), företags typer (stort, litet, offentligt, privat etc.) och branscher.
-
+- **Meddelande egenskaper**: innehåll, format och ton för meddelanden.
+- **Mottagare**: hur mottagarna är relaterade. Till exempel mottagare och mottagare, arbets uppgifter (administratörer, chefer etc.), företags typer (stor, liten, offentlig, privat etc.) och branscher.
 - **Attack-nyttolast**: illasinnade länkar, bifogade filer eller andra nytto laster i meddelanden.
 
 En kampanj kan vara kort livs längd eller kunna omfatta flera dagar, veckor eller månader med aktiva och inaktiva perioder. En kampanj kan startas mot din specifika organisation, eller så kan din organisation vara en del av en större kampanj i flera företag.
@@ -85,7 +80,7 @@ På resten av översikts sidan visas följande information på fliken **kampanj*
 
 - **Exempel ämne**: ämnes raden för ett av meddelandena i kampanjen. Observera att alla meddelanden i kampanjen inte nödvändigt vis har samma ämne.
 
-- **Riktad**: den procents ATS som beräknas av: (antalet mottagare av kampanjen i organisationen)/(det totala antalet mottagare i kampanjen i alla organisationer i tjänsten). Det här värdet anger i vilken grad kampanjen specifikt riktas till din organisation (ett högre värde) kontra direkt till andra organisationer i tjänsten (ett lägre värde).
+- **Riktad**: den procents ATS som beräknas av: (antalet mottagare av kampanjen i organisationen)/(det totala antalet mottagare i kampanjen i alla organisationer i tjänsten). Det här värdet anger i vilken utsträckning kampanjen bara riktas in på din organisation (ett högre värde) kontra riktas till andra organisationer i tjänsten (ett lägre värde).
 
 - **Typ**: det här värdet är antingen **Phish** eller **skadlig program vara**.
 
@@ -103,9 +98,9 @@ Där det är tillgängligt, det märke som phished av kampanjen. När identifier
 
 - **Klickar**du på: antalet användare som klickade på URL-adressen eller öppnade den bifogade filen i nät fiske meddelandet.
 
-- **Klicka på ränta**: procent satsen beräknat av "**klickade**på  /  **Inkorgen**". Det här värdet är en indikator på kampanjens effektivitet och om mottagarna kan identifiera meddelandet som nätfiske och undvika att klicka på URL: en för nytto lasten.
+- **Klicka på ränta**: procent satsen beräknat av "**klickade**på  /  **Inkorgen**". Detta värde är en indikator för kampanjens effektivitet. Med andra ord, om mottagarna kunde identifiera meddelandet som nätfiske, och om de inte klickade på nytto lastens URL.
 
-  Observera att det här värdet inte används för kampanjer med skadlig program vara.
+  Observera att **Klicka på ränta** inte används i kampanjer med skadlig program vara.
 
 - **Besökt**: hur många användare faktiskt gjorde det till nytto Last webbplatsen. Om du **klickade på** värden, men säkra länkar blockerade åtkomst till webbplatsen, är det här värdet noll.
 
@@ -123,7 +118,7 @@ Om du vill filtrera vyn ytterligare kan du utföra en enskild egenskap med filtr
 
 De tillgängliga kampanj egenskaperna beskrivs i följande lista:
 
-- Basisk
+- Basic
 
   - **Kampanj typ**: Välj **skadlig** eller **Phish**. Om du avmarkerar valen är det samma resultat som att markera båda.
   - **Kampanj namn**
@@ -194,11 +189,11 @@ Högst upp i vyn kampanj information är följande kampanj information tillgäng
   - Hur många användare klickar på URL-nyttolasten i nät fiske meddelandet.
   - Howe många användare besöker URL-adressen.
 
-- **Riktad**: den procents ATS som beräknas av: (antalet mottagare av kampanjen i organisationen)/(det totala antalet mottagare i kampanjen i alla organisationer i tjänsten). Observera att det här värdet beräknas under hela kampanjens livstid och ändrar inte filter datumen.
+- **Riktad**: den procents ATS som beräknas av: (antalet mottagare av kampanjen i organisationen)/(det totala antalet mottagare i kampanjen i alla organisationer i tjänsten). Observera att det här värdet beräknas under hela kampanjens livstid och inte ändras utifrån datum filter.
 
 - En interaktiv tids linje med kampanj aktivitet: tids linjen visar aktivitet under hela kampanjens livstid. Som standard innehåller det skuggade området det datum intervall som du valde i översikten. Du kan klicka och dra för att välja en specifik start punkt och slut punkt, <u>som ändrar informationen som visas i området **påverkan** och på resten av sidan enligt beskrivningen i nästa avsnitt</u>.
 
-I namn listen kan du klicka på knappen **Hämta kampanjens uppskrivnings** ![ ikon för att hämta kampanj ](../../media/download-campaign-write-up-button.png) informationen till ett Word-dokument (som standard heter CampaignReport.docx). Observera att det här dokumentet innehåller information över hela kampanjens livstid (inte bara valda filter datum).
+I namn listen kan du klicka på knappen **Hämta kampanjens uppskrivnings** ![ ikon för att hämta kampanj ](../../media/download-campaign-write-up-button.png) informationen till ett Word-dokument (som standard heter CampaignReport.docx). Observera att nedladdningen innehåller information under hela kampanjens livstid (inte bara valda filter datum).
 
 ![Kampanj information](../../media/campaign-details-campaign-info.png)
 
@@ -219,29 +214,29 @@ Diagrammet innehåller följande information:
 
 - **Avsändare**
 
-- **Filtrera verdicts**: de här värdena är relaterade till de tillgängliga phishing-och skräp post filtrerings verdicts enligt beskrivningen i [meddelandehuvuden](anti-spam-message-headers.md). De tillgängliga värdena beskrivs i följande tabell:
+- **Filter verdicts**: Verdict-värden är relaterade till de tillgängliga phishing-och skräp post filtrerings verdicts som beskrivs i [meddelandehuvuden](anti-spam-message-headers.md). De tillgängliga värdena beskrivs i följande tabell:
 
   ****
 
   |Value|Skräp post filter Verdict|Beskrivning|
   |---|---|---|
-  |**Möjlighet**|`SFV:SKN` <br/><br/> `SFV:SKI`|Meddelandet har marker ATS som inte skräp post och/eller ignorerade filtrering innan den utvärderas av skräp post filtreringen (till exempel i en regel för e-postflöde).<br/><br/>Meddelandet ignorerade spam av andra orsaker (till exempel att avsändaren och mottagaren ser ut att vara i samma organisation).|
-  |**Blockering**|`SFV:SKS`|Meddelandet har marker ATS som skräp post innan det utvärderas av skräp post filtreringen (till exempel i en regel för e-postflöde).|
+  |**Möjlighet**|`SFV:SKN` <br/><br/> `SFV:SKI`|Meddelandet har marker ATS som icke skräp post och/eller ignorerade filtrering innan skräp post filtrering. Meddelandet markerades till exempel som inte skräp post av en regel för e-postflöde (kallas även transport regel).<br/><br/>Meddelandet ignorerade spam av andra orsaker. Avsändaren och mottagaren ser till exempel ut i samma organisation.|
+  |**Blockering**|`SFV:SKS`|Meddelandet har marker ATS som skräp post innan det utvärderas av skräp post filtrering. Till exempel med en regel för e-postflöde.|
   |**Upptäckte**|`SFV:SPM`|Meddelandet markerades som skräppost av skräppostfiltret.|
   |**Identifieras inte**|`SFV:NSPM`|Meddelandet har marker ATS som inte skräp post av filtrering av skräp post.|
   |**Levereras**|`SFV:SKQ`|Meddelandet hoppade över skräp post filtrering eftersom det släpptes från karantän.|
-  |**Tillåt klient organisation**<sup>\*</sup>|`SFV:SKA`|Meddelandet hoppade över skräp post filtrering på grund av princip inställningar för skräp post (till exempel att avsändaren var i listan över tillåtna avsändare eller listan över tillåtna domäner).|
-  |**Klient blockering**<sup>\*\*</sup>|`SFV:SKA`|Meddelandet blockerades av skräp post filtrering på grund av princip inställningar för skräp post (till exempel att avsändaren fanns i listan över tillåtna avsändare eller listan över tillåtna domäner).|
-  |**Tillåt användare**<sup>\*</sup>|`SFV:SFE`|Meddelandet hoppade över skräp post filtrering eftersom avsändaren fanns i en användares lista med betrodda avsändare i Outlook.|
-  |**User block**<sup>\*\*</sup>|`SFV:BLK`|Meddelandet blockerades av filtrering av skräp post eftersom avsändaren fanns i en användares lista över spärrade avsändare i Outlook.|
-  |**ZAP**|ej tillämpligt|[Automatisk rensning för en hel timme (Zap)](zero-hour-auto-purge.md) vidtog en åtgärd på det levererade meddelandet enligt inställningarna för skydd mot skräp post (flyttad till mappen Skräppost eller karantän).|
+  |**Tillåt klient organisation**<sup>\*</sup>|`SFV:SKA`|Meddelandet hoppade över skräp post filtrering på grund av inställningarna i en policy för skräp post. Avsändaren fanns till exempel i listan över tillåtna avsändare eller tillåtna domäner.|
+  |**Klient blockering**<sup>\*\*</sup>|`SFV:SKA`|Meddelandet blockerades av filtrering av skräp post på grund av inställningarna i en policy för skräp post. Avsändaren fanns till exempel i listan över tillåtna avsändare eller tillåtna domäner.|
+  |**Tillåt användare**<sup>\*</sup>|`SFV:SFE`|Meddelandet hoppade över skräp post filtrering eftersom avsändaren fanns i en användares lista med betrodda avsändare.|
+  |**User block**<sup>\*\*</sup>|`SFV:BLK`|Meddelandet blockerades av skräp post filtrering eftersom avsändaren fanns i en användares lista över spärrade avsändare.|
+  |**ZAP**|ej tillämpligt|[Automatisk rensning av Tom timme (Zap)](zero-hour-auto-purge.md) flyttade det levererade meddelandet till mappen skräp post eller karantän. Du konfigurerar åtgärden i policyn för skydd mot skräp post.|
   |
 
   <sup>\*</sup> Granska dina skydd mot skräp post eftersom det tillåtna meddelandet förmodligen har blockerats av tjänsten.
 
   <sup>\*\*</sup> Granska dina principer för skräp post, eftersom dessa meddelanden bör vara i karantän, inte levereras.
 
-- **Leverans ställen**: du kommer troligen att behöva undersöka meddelanden som faktiskt har levererats till mottagarna (antingen till Inkorgen eller mappen skräp post), även om användarna inte klickat på URL: en för nytto lasten i meddelandet. Du kan också ta bort meddelanden i karantänen från karantänen. Mer information finns i [e-postmeddelanden i karantän i EOP](quarantine-email-messages.md).
+- **Leverans ställen**: du kommer troligen att behöva undersöka meddelanden som har levererats till mottagarna (antingen till Inkorgen eller mappen skräp post), även om användarna inte klickar på nytto lastens URL i meddelandet. Du kan också ta bort meddelanden i karantänen från karantänen. Mer information finns i [e-postmeddelanden i karantän i EOP](quarantine-email-messages.md).
 
   - **Borttagen mapp**
   - **Avbröts**
@@ -253,14 +248,14 @@ Diagrammet innehåller följande information:
   - **Karantän**
   - **Okänd**
 
-- **URL-musklick**: de här beskrivs i nästa avsnitt.
+- **URL-musklick**: de här värdena beskrivs i nästa avsnitt.
 
 > [!NOTE]
 > I alla lager som innehåller fler än 10 objekt visas de 10 översta objekten, medan resten samlas samman i **andra**.
 
 #### <a name="url-clicks"></a>URL-klickningar
 
-När ett nät fiske meddelande levereras till en mottagare (till Inkorgen eller mappen skräp post) finns det en chans att användaren klickar på nytto lastens URL-adress. Det går inte att klicka på URL-adressen i ett levererat meddelande, men du måste fastställa varför nät fiske meddelandet levererades till post lådan.
+När ett nät fiske meddelande levereras till en mottagares inkorg eller mapp för skräp post kan användaren klicka på nytto lastens URL-adress. Att klicka på URL-adressen är en liten mått på framgång, men du måste fastställa varför nät fiske meddelandet levererades till post lådan.
 
 Om en användare klickar på nytto lastens URL i nät fiske meddelandet visas åtgärderna i området URL- **klickning** i diagrammet i vyn kampanj information.
 
@@ -268,9 +263,9 @@ Om en användare klickar på nytto lastens URL i nät fiske meddelandet visas å
 
 - **BlockPage**: mottagaren klickade på nytto lastens URL, men deras åtkomst till den illasinnade webbplatsen blockerades av principerna för [Safe Links för ATP](atp-safe-links.md) i din organisation.
 
-- **BlockPageOverride**: mottagaren klickade på nytto lastens URL-adress i meddelandet, men de har kunnat åsidosätta det. Du måste undersöka dina [principer för säkra länkar](set-up-atp-safe-links-policies.md) för att se varför användare har tillåtelse att åsidosätta Safe Links-Verdict och fortsätta till den illasinnade webbplatsen.
+- **BlockPageOverride**: mottagaren klickade på nytto lastens URL-adress i meddelandet, men de har kunnat åsidosätta det. Undersök dina [principer för säkra länkar](set-up-atp-safe-links-policies.md) för att se varför användare tillåts att åsidosätta Safe Links-Verdict och fortsätta till den illasinnade webbplatsen.
 
-- **PendingDetonationPage**: säkra bifogade filer med ATP är att öppna nytto lastens URL i en virtuell dator miljö och se vad som händer.
+- **PendingDetonationPage**: säkra bilagor i Office 365 ATP är att öppna och undersöka nytto lastens URL i en virtuell dator miljö.
 
 - **PendingDetonationPageOverride**: mottagaren har fått tillåtelse att åsidosätta nytto toner processen och öppna URL: en utan att vänta på resultaten.
 
@@ -281,7 +276,7 @@ Flikarna i vyn kampanj information gör att du kan undersöka kampanjen ytterlig
 > [!TIP]
 > Informationen som visas på flikarna styrs av det skuggade datum intervallet i tids linjen enligt beskrivningen i avsnittet [kampanj information](#campaign-information) .
 
-- **URL klickar**på: om användare inte klickar på nytto lastens URL i nät fiske meddelandet är det här avsnittet tomt. Om en användare kunde klicka på URL-adressen fylls följande värden i:
+- **URL klickar**på: om användare inte klickar på nytto lastens URL i meddelandet är det här avsnittet tomt. Om en användare kunde klicka på URL-adressen fylls följande värden i:
 
   - **Användarläge**<sup>\*</sup>
   - **:**<sup>\*</sup>
@@ -294,7 +289,7 @@ Flikarna i vyn kampanj information gör att du kan undersöka kampanjen ytterlig
   - **Totalt antal**
   - **Inkorgen**
   - **Inte i Inkorgen**
-  - **SPF skickades**: avsändaren autentiserades av [SPF (avsändare Policy Framework)](how-office-365-uses-spf-to-prevent-spoofing.md). En avsändare som inte skickar SPF-verifiering indikerar att avsändaren inte är autentiserad eller att meddelandet har falskats för en legitim avsändare.
+  - **SPF skickades**: avsändaren autentiserades av [SPF (avsändare Policy Framework)](how-office-365-uses-spf-to-prevent-spoofing.md). En avsändare som inte skickar SPF-verifiering indikerar en oautentiserad avsändare eller meddelandet har falskats för en legitim avsändare.
 
 - **Avsändare**
 
@@ -302,8 +297,8 @@ Flikarna i vyn kampanj information gör att du kan undersöka kampanjen ytterlig
   - **Totalt antal**
   - **Inkorgen**
   - **Inte i Inkorgen**
-  - **DKIM lyckades**: avsändaren autentiserades av [domän nycklar som identifieras via e-post (DKIM)](support-for-validation-of-dkim-signed-messages.md). En avsändare som inte klarar DKIM-verifiering anger att avsändaren inte är autentiserad eller att meddelandet har falskats för en legitim avsändare.
-  - **DMARC skickades**: avsändaren autentiserades av [domänbaserad autentisering, rapportering och omslutande (DMARC)](use-dmarc-to-validate-email.md). En avsändare som inte klarar DMARC-verifiering anger att avsändaren inte är autentiserad eller att meddelandet har falskats för en legitim avsändare.
+  - **DKIM lyckades**: avsändaren autentiserades av [domän nycklar som identifieras via e-post (DKIM)](support-for-validation-of-dkim-signed-messages.md). En avsändare som inte skickar DKIM verifiering indikerar en overifierad avsändare eller meddelandet har falskats för en legitim avsändare.
+  - **DMARC skickades**: avsändaren autentiserades av [domänbaserad autentisering, rapportering och omslutande (DMARC)](use-dmarc-to-validate-email.md). En avsändare som inte skickar DMARC verifiering indikerar en overifierad avsändare eller meddelandet har falskats för en legitim avsändare.
 
 - **Bifogade filer**
 

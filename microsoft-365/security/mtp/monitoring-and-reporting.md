@@ -1,7 +1,7 @@
 ---
-title: Övervaka och visa rapporter - Säkerhetscenter
-description: Beskriver hur Microsoft 365-säkerhetscenter snabbt ger en sammanfattning av skydd och säkerhetsstatus.
-keywords: säkerhet, skadlig kod, Microsoft 365, M365, säkerhetscenter, övervaka, rapportera, status
+title: Övervaka och Visa rapporter – säkerhets Center
+description: Här beskrivs hur Microsoft 365 säkerhets Center ger en översikt över skydds-och säkerhets status.
+keywords: säkerhet, skadlig program vara, Microsoft 365, M365, säkerhets Center, övervaka, rapport, status
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -15,31 +15,31 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 987f3a60b514874bd970b93bdcc2c08832345b4b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033992"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866725"
 ---
-# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Övervaka och visa rapporter i microsoft 365-säkerhetscentret
+# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Övervaka och Visa rapporter i Microsoft 365 säkerhets Center
 
-Microsoft 365-säkerhetscentret ger en översiktlig sammanfattning av skydds- och säkerhetsstatus i microsoft 365-miljön.
+I säkerhets Center för Microsoft 365 finns en sammanfattning av skydds-och säkerhets status i Microsoft 365-miljön.
 
-Säkerhetscentret innehåller ett **avsnittet Rapporter** som innehåller en mängd kort som täcker en mängd olika områden som säkerhetsanalytiker och administratörer spårar som en del av sin dagliga verksamhet. Vid detaljgranskning ger kort detaljerade rapporter och, i vissa fall, hanteringsalternativ.
+Säkerhets Center innehåller avsnittet **rapporter** som är en värd för kort som omfattar en mängd olika områden. Säkerhets analyser och administratörer kan spåra korten som en del av deras dagliga operationer. För att detaljgranska kan kort tillhandahålla detaljerade rapporter och, i vissa fall, hanterings alternativ.
 
 ## <a name="customize-views"></a>Anpassa vyer
 
-Som standard grupperas korten i följande kategorier:
+Som standard grupperas korten i dessa kategorier:
   
-* [Identiteter](monitor-and-report-identities.md) - användarkonton och autentiseringsuppgifter
-* [Data](monitor-data.md) - e-post och dokumentinnehåll
-* [Enheter](monitor-devices.md) - datorer, mobiltelefoner och andra enheter
-* [Appar](monitor-apps.md) - program och bifogade onlinetjänster
+* [Identiteter](monitor-and-report-identities.md) – användar konton och autentiseringsuppgifter
+* [Data](monitor-data.md) – e-post och dokument innehåll
+* [Enheter](monitor-devices.md) – datorer, mobil telefoner och andra enheter
+* [Appar](monitor-apps.md) – program och anslutna online tjänster
 
-Växla till **Grupp för ämne**om du vill ordna om korten och gruppera dem i följande:
+Växla till **Gruppera efter ämne**för att ordna om korten och gruppera dem i följande avsnitt:
 
-* **Risk** - kort som markerar entiteter, till exempel konton och enheter, som kan vara i riskzonen. Dessa kort belyser också möjliga riskkällor, till exempel nya hotkampanjer och privilegierade molnappar  
-* **Identifieringstrender** - kort som belyser nya hotidentifieringar, avvikelser och policyöverträdelser
-* **Konfiguration och hälsa** - kort som täcker konfiguration och distribution av säkerhetskontroller, inklusive enhetsinbordingstillstånd till hanteringstjänster
-* **Övrigt** - alla andra kort som inte kategoriseras under andra ämnen
+* **Risk** -kort som framhäver enheter, till exempel konton och enheter, som kan vara utsatta för risk. Dessa kort kan också framhäva potentiella risk källor, till exempel nya hot-kampanjer och behöriga molnappar  
+* **Identifierings trender** -kort som markerar nya hot identifieringar, avvikelser och policy överträdelser
+* **Konfiguration och hälsa** -kort som täcker konfiguration och distribution av säkerhets kontroller, inklusive enhetens registrerings tillstånd för Management Services
+* **Övrigt** – alla andra kort kategoriseras inte under andra ämnen

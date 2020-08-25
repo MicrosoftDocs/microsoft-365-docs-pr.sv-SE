@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: 76264801820b6a41ee744a8adcc3b3b48a8e9479
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826747"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866937"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Ange en post låda för användar överföringar av skräp post och nät fiske meddelanden i Exchange Online
 
@@ -30,7 +30,7 @@ I Microsoft 365-organisationer med Exchange Online-postlådor kan du ange en pos
 
 - [Inbyggd rapportering i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (tidigare Outlook Web App)
 
-- Inbyggd rapportering i Outlook för iOS och Android
+- [Inbyggd rapportering i Outlook för iOS och Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
   > Om rapportering har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), åsidosätter du den inställningen och gör att användare kan rapportera meddelanden i Outlook på webben igen.

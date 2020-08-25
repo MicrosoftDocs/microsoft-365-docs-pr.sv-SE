@@ -1,7 +1,7 @@
 ---
-title: Skapa och spåra ServiceNow-biljetter i Microsoft 365-säkerhetscentret
-description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Microsoft 365-säkerhetscenter.
-keywords: säkerhet, Microsoft 365, M365, säker poäng, säkerhetscenter, ServiceNow, biljetter, uppgifter
+title: Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365
+description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Microsoft 365 Security Center.
+keywords: säkerhet, Microsoft 365, M365, säker poäng, säkerhets Center, ServiceNow, biljetter, uppgifter
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,58 +19,58 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: bd5bf8533d38337c063acdf0dda073e4961e416a
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094840"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867251"
 ---
-# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Skapa och spåra ServiceNow-biljetter i Microsoft 365-säkerhetscentret
+# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Skapa och spåra ServiceNow biljetter i säkerhets Center för Microsoft 365
 
-[Microsoft 365-säkerhetscentret](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow. [Läs mer om ServiceNow](https://www.servicenow.com/)
+[Säkerhets Center för Microsoft 365](overview-security-center.md) har förbättrats med möjligheten att skapa och spåra biljetter i ServiceNow. [Lär dig mer om ServiceNow](https://www.servicenow.com/)
 
-I säkerhetscentret kan säkerhetsadministratörer skicka en förbättringsåtgärd för [Microsoft Secure Score](microsoft-secure-score.md) direkt till ServiceNow och skapa en biljett. Både incidenthantering och ändringshanteringsbiljetter kan skapas. De kan sedan spåras på säkerhetscentrets startsida och ServiceNow.
+I säkerhets Center kan säkerhets administratörer skicka en åtgärd för [säker Poäng](microsoft-secure-score.md) förbättring direkt till ServiceNow och skapa en biljett. Både hantering av problem och hantering av ändringar kan skapas. Spåra biljetter i säkerhets centrets start sida och ServiceNow.
 
-- [**Läs mer om förutsättningar, datautbyte och felsökning**](tickets.md)
-- **Hantera ServiceNow-biljetter i efterlevnadscentret** (kommer snart)
+- [**Läs mer om förutsättningar, data utbyte och fel sökning**](tickets.md)
+- **Hantera ServiceNow biljetter i överensstämmelse Center** (kommer snart)
 
-## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Ansluta Microsoft 365-säkerhetscenter till ServiceNow
+## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Ansluta Microsoft 365 säkerhets Center till ServiceNow
 
-Gå till startsidan för Microsoft 365-säkerhetscentret för att se ServiceNow-anslutningskortet.
+Gå till start sidan för Microsoft 365 säkerhets Center för att se ServiceNow-anslutnings kortet.
 
 ![Använder du ServiceNow](../../media/do-you-use-servicenow-250.png)
 
-Välj "Anslut till ServiceNow" för att gå till servicenow-inställningssidan. Följ instruktionerna för att auktorisera Microsoft 365 Connector-appen.
+Välj "Anslut till ServiceNow" för att gå till sidan för inställning av ServiceNow. Följ instruktionerna för att auktorisera Microsoft 365 Connector-appen.
 
 > [!NOTE]
-> Innan du godkänner anslutningen mellan Microsoft 365 security center och ServiceNow ska du se till att du använder den användarinloggning och lösenord för integrering som du skapade i installationsstegen. Använd inte dina personliga inloggningsuppgifter.
+> Innan du godkänner anslutningen mellan Microsoft 365 säkerhets Center och ServiceNow bör du kontrol lera att du använder den inloggning och det lösen ord som du skapade i installations stegen. Använd inte dina personliga autentiseringsuppgifter.
 
-När du har följt anvisningarna och auktoriserat anslutningen kan du visa anslutningsstatusen på både microsoft 365-säkerhetscentrets anslutningssida och i ServiceNow Microsoft 365 Ticketing Connector App-upplevelsen. Nu är du redo att börja skapa uppgifter!
+När du har följt anvisningarna och godkänt anslutningen kan du Visa anslutnings statusen på sidan för Microsoft 365 Security Centre-anslutningen och i ServiceNow Microsoft 365 Ticking Connector. Nu är du redo att börja skapa aktiviteter.
 
 ### <a name="troubleshooting"></a>Felsökning
 
-Lär dig vanliga fel som kan uppstå i anslutningsprocessen och hur du kan minska dem i [felsökningsavsnittet](tickets.md#troubleshooting).
+Lär dig mer om vanliga fel som kan komma att visas i anslutnings processen och hur du minskar dem i [avsnittet fel sökning](tickets.md#troubleshooting).
 
-## <a name="create-a-task-and-share-it-to-servicenow"></a>Skapa en uppgift och dela den till ServiceNow
+## <a name="create-a-task-and-share-it-to-servicenow"></a>Skapa en uppgift och dela den med ServiceNow
 
-När integreringen har konfigurerats skapar du ServiceNow-uppgifter baserat på specifika [microsoft secure score-förbättringsåtgärder.](microsoft-secure-score.md) Gå till alla förbättringsåtgärder i Secure Score i Microsoft 365 security center-portalen och välj **Dela**. Ett av listrutan är ServiceNow.
+När integrationen är aktive rad kan du skapa ServiceNow uppgifter baserat på specifika åtgärder för [säker Poäng](microsoft-secure-score.md) förbättring. Gå till alla åtgärder för säker Poäng förbättring i säkerhets Center för Microsoft 365 och välj **dela**. Ett av de nedrullningsbara alternativen är ServiceNow.
 
-En aktivitet genereras där du kan ange prioritet och redigera namn, beskrivning eller förfallodatum. När alla obligatoriska fält har fyllts i skickar du uppgiften till ServiceNow.
+En aktivitet skapas där du kan ange prioritet och redigera namn, beskrivning eller förfallo datum. När alla obligatoriska fält är ifyllda skickar du uppgiften till ServiceNow.
 
-Uppgiften visas i ServiceNow som en microsoft 365-begäran om säkerhet och konfigurationsändring.
+Aktiviteten visas i ServiceNow som en begäran om ändring av en Microsoft 365-säkerhet och-konfiguration.
 
 ## <a name="track-tickets"></a>Spåra biljetter
 
-När ServiceNow-biljetter för ändringshantering och incidenthantering har skapats visas de på kort på startsidan för Microsoft 365-säkerhetscentret. Från dessa kort kan du skapa en biljett, visa alla biljetter eller hantera ServiceNow-konfigurationen.
+När ServiceNow för hantering av ändringar har skapats visas de på kort på Start sidan för Microsoft 365 säkerhets Center. Från dessa kort kan du skapa en biljett, Visa alla biljetter eller hantera ServiceNow-konfigurationen.
 
-![ServiceNow ändringshanteringsbiljetter](../../media/change-management-375.png)  ![ServiceNow incidenthanteringsbiljetter](../../media/incident-management-375.png)
+![ServiceNow för ändrings hantering](../../media/change-management-375.png)  ![ServiceNow ärende hantering biljetter](../../media/incident-management-375.png)
 
-Om du vill återupprätta eller hantera din ServiceNow-integrering i Microsoft 365-säkerhetscentret väljer du **Hantera ServiceNow-konfiguration** på något av korten. Därifrån tar du bort den aktuella ServiceNow-anslutningen och anpassar biljetttillståndsnamn.
+Om du vill etablera eller hantera din ServiceNow-integrering i säkerhets Center för Microsoft 365 väljer du **Hantera ServiceNow-konfiguration** på något av korten. Därifrån kan du ta bort den aktuella ServiceNow-anslutningen och anpassa namn på biljett status.
 
-Med ServiceNow-biljetter synliga i Microsoft 365-säkerhetscentret bor dina uppgifter på en plats där de kan spåras och hanteras tillsammans med dina andra säkerhetsinstrumentpanelobjekt.
+Med ServiceNow biljetter som visas i Microsoft 365 Security Center är dina uppgifter aktiva på en plats där de kan spåras och behandlas på andra säkerhets instrument paneler.
 
 ## <a name="resources"></a>Resurser
 
-- [Läs mer om förutsättningar, datautbyte och felsökning](tickets.md)
+- [Läs mer om förutsättningar, data utbyte och fel sökning](tickets.md)
 - [Microsoft Secure Score](microsoft-secure-score.md)
