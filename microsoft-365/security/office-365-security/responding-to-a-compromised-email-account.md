@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
-ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
-ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
+ms.openlocfilehash: cfd20b0d5e6e13343346761b9b909a333b9a6ff5
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674620"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827523"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
@@ -133,7 +133,7 @@ Om du vill tillåta att en postlåda skickar e-post igen följer du procedurerna
 
 2. Hitta och välj användarkontot, klicka på ![More-ikonen](../../media/ITPro-EAC-MoreOptionsIcon.png) och välj sedan **Redigera inloggningsstatus**.
 
-3. I fönstret **blockera inloggning** väljer du **blockerar användaren från sigining i**, och klickar sedan på **Spara ändringar**.
+3. I fönstret **Blockera inloggning** väljer du **Blockera användaren från att logga in**, och klickar sedan på **Spara ändringar**.
 
 4. Öppna Exchange administrations centret (EAC) på <admin.protection.outlook.com/ecp/> och gå till **Mottagare> Mailboxes**.
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Administratörer kan läsa mer om hur Exchange Online Protection (EOP) använder e-postautentisering (SPF, DKIM och DMARC) för att förhindra förfalskning, nätfiske och skräppost.
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209505"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826655"
 ---
 # <a name="email-authentication-in-eop"></a>E-postautentisering i EOP
 
@@ -41,7 +41,7 @@ I resten av det här avsnittet förklaras hur dessa tekniker fungerar och hur EO
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>Använda e-postautentisering för att förhindra förfalskning
 
-DMARC förhindrar förfalskning genom att granska **från** adress i meddelanden (den avsändar-e-postadress som användarna ser i sina e-postklienter). Mottagande e-postorganisationer kan också verifiera att e-postdomänen har godkänts i SPF- eller DKIM-kontrollen, vilket betyder att domänen har autentiserats och är därför ingen förfalskning. 
+DMARC förhindrar förfalskning genom att granska **från** adress i meddelanden (den avsändar-e-postadress som användarna ser i sina e-postklienter). Mottagande e-postorganisationer kan också verifiera att e-postdomänen har godkänts i SPF- eller DKIM-kontrollen, vilket betyder att domänen har autentiserats och är därför ingen förfalskning.
 
 Men problemet är att SPF-, DKIM- och DMARC-poster i DNS för e-postautentisering (kollektivt kallat principer för e-postautentisering) är helt valfria. Det innebär att domäner med kraftfulla autentiseringsprinciper som microsoft.com och skype.com skyddas från förfalskning medan domäner som publicerar svagare autentiseringsprinciper eller ingen princip alls, är mål för att bli förfalskade.
 
@@ -61,7 +61,7 @@ Du kan läsa Microsofts allmänna meddelande i [Ett hav av nätfiskare, del 2 �
 
 SPF, DKIM och DMARC är alla användbara men de kommunicerar inte tillräckligt om autentiseringsstatus om ett meddelande inte har explicita autentiseringsposter. Därför har Microsoft utvecklat en algoritm för implicit e-postautentisering som kombinerar flera signaler till ett enda värde som kallas _sammansatt autentisering_ – eller förkortat till compauth. Compauth-värden är stämplade i **Autentiseringsresult**-huvudet i meddelandehuvudena.
 
-> Autentiseringsresultat:<br/>&nbsp;&nbsp;&nbsp;compauth =\<misslyckat| godkänt | softpass | ingen\> anledning =\<yyy\>
+> Autentiseringsresultat:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
 Dessa värden förklaras i [Meddelanderubriken Authentication-results](anti-spam-message-headers.md#authentication-results-message-header).
 
