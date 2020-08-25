@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
-ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826667"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868885"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -162,3 +162,7 @@ Du kan också kontakta din administratör som kan skapa ett supportärende hos M
 ## <a name="considerations-for-anti-spoofing-protection"></a>Överväganden för skydd mot förfalskning
 
 Om du är en administratör som för närvarande skickar meddelanden till Microsoft 365 måste du se till att e-postmeddelandet autentiseras på rätt sätt. Annars kan det markeras som skräppost eller nätfiske. Mer information finns i [Lösningar för legitima avsändare som skickar icke autentiserad e-post](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+
+Avsändare i en enskild användares (eller administratörs) lista över säkra avsändare kommer att kringgå delar av filtreringsstacken, inklusive falskt skydd. Mer information finns i [Outlook Safe avsändare](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+
+Administratörer bör (om möjligt) undvika att använda tillåtna avsändarlistor eller tillåtna domänlistor. Dessa avsändare övergår allt skräppost, förfalskning och nätfiskningsskydd och även avsändarautentisering (SPF, DKIM, DMARC). Mer information finns i [Använd tillåtna avsändarlistor eller tillåtna domänlistor](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).
