@@ -1,14 +1,14 @@
 ---
 title: Konfigurationer för identitets-och enhets åtkomst – Microsoft 365 för företag
 description: Här beskrivs Microsofts rekommendationer och grundläggande koncept för distribution av säkra principer och konfigurationer för e-post, dokument och appar.
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686632"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898170"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -64,15 +64,14 @@ Varje bransch har också sin egen uppsättning specialiserade regler. I stället
 
 Den här vägledningen visar hur du implementerar skydd för identiteter och enheter för var och en av de här skydds nivåerna. Använd den här vägledningen som utgångs punkt för organisationen och justera principerna för att uppfylla organisationens specifika krav.
 
-Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Om du till exempel implementerar den här vägledningen bör du se till att skydda dina data på jämförbara nivåer. De här arkitektur modellerna visar vilka funktioner som är jämförbara.
+Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Om du till exempel implementerar den här vägledningen bör du se till att skydda dina data på jämförbara nivåer. 
 
-**Identitet och enhets skydd för Office 365**<br/>
+Arkitekturen **för identitet och enhet för Office 365** -arkitektur visar vilka funktioner som är jämförbara.
+
 ![Miniatyr för affisch "identitets-och enhets skydd för Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  |  [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  |  [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Lösningar för filskydd i Office 365**<br/>
-![Miniatyr för affischer "fil skydds lösningar i Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+Se dessutom artikeln [distribuera informations skydd för data integritets regler](../solutions/information-protection-deploy.md) för att skydda information som lagras i Microsoft 365.
 
 ## <a name="security-and-productivity-trade-offs"></a>Handel med säkerhet och produktivitet
 

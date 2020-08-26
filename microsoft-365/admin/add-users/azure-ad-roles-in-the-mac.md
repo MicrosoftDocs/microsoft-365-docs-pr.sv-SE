@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Hantera dessa Azure-administratörsroller i administrationscentret för Microsoft 365.
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432485"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898034"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Azure Active Directory-roller i administrationscentret för Microsoft 365
 
@@ -68,6 +68,7 @@ Här följer en lista över alla tillgängliga administratörsroller i administr
 |Sekretessläsare i meddelandecenter     |    Åtkomst till datasekretessmeddelanden i meddelandecenter, hämtar e-postmeddelanden.     |
 |Meddelandecenter-administratör     | Läser och delar vanliga meddelanden i meddelandecenter, hämtar e-postsammandrag varje vecka, har skrivskyddad åtkomst till användare, grupper, domäner och prenumerationer.     |
 |Administratör för Office-program    |   Hanterar molnbaserade principer för Office och nyhetsinnehållet som användarna ser i sina Office-program.   |
+|Lösenordsadministratör    |   Återställ lösenord för användare som inte är administratörer eller medlemmar i följande roller: Katalogläsare, gästinbjudare, lösenordsadministratör. Denna roll kan inte ge möjlighet att hantera tjänsteförfrågningar eller övervaka tjänsthälsa.   |
 |Power BI-administratör    |   Fullständig åtkomst till Power BI-hanteringsuppgifter, hanterar tjänsteförfrågningar och övervakar tjänstens status.   |
 |Administratör för Power Platform     |    Full tillgång till Microsoft Dynamics 365, PowerApps, principer för dataförlustskydd och Microsoft Flow.     |
 |Administratör för privilegierad roll     |    Hanterar rolltilldelningar och alla funktioner för åtkomstbehörighet för privilegierad identitetshantering.     |

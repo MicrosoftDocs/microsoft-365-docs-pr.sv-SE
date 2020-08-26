@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Så här kommer du till resurserna som motsvarar det föråldrade Desktop Deployment Center.
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686136"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898022"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Desktop Deployment Center (inaktuellt)
 
@@ -33,7 +33,7 @@ Använd dessa resurser för att distribuera moderna datorer:
 
 Du kan också titta på [videoklipp från Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
-Du kan även [hitta hjälp](https://aka.ms/mddhelp) för din datordistribution från Microsoft-partner och FastTrack-tjänster.
+Du kan också hitta hjälp för din dator distribution från Microsoft partners och [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 

@@ -1,13 +1,13 @@
 ---
 title: Vanliga principer för identitets-och enhets åtkomst – Microsoft 365 för företag | Microsoft-dok
 description: Beskriver policyer för Microsoft-rekommendationer om hur du tillämpar åtkomst principer och konfigurationer för identiteter och enheter.
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685980"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898122"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs vanliga rekommenderade principer för att skydda åtkomst till moln tjänster, inklusive lokala program som publicerats med Azure AD Application Proxy. 
@@ -172,7 +172,7 @@ Logga in på [Microsoft Azure-portalen ( https://portal.azure.com) ](https://por
 |Type (Typ)|Fjärråtkomstsegenskaper|Värden|Kommentarer|
 |:---|:---------|:-----|:----|
 |Användare|Inkludera|Alla användare|Markerade|
-||Ta|Inga||
+||Ta|Ingen||
 |Situationer|Risk för användare|Högsta|Markerade|
 
 **Kontroller**
@@ -250,7 +250,7 @@ Skapa en princip för varje plattform:
 - Android Enterprise
 - iOS/iPad
 - macOS
-- Windows Phone 8,1
+- Windows Phone 8.1
 - Windows 8,1 och senare
 - Windows 10 och senare
 
@@ -282,7 +282,7 @@ Följande inställningar rekommenderas för Windows 10.
 |Type (Typ)|Fjärråtkomstsegenskaper|Värden|Kommentarer|
 |:---|:---------|:-----|:----|
 |Lösenord|Kräv lösen ord för att låsa upp mobila enheter|Nödvändig||
-||Enkla lösen ord|Spärrade||
+||Enkla lösen ord|Blockera||
 ||Lösen ords typ|Enhetens standard||
 ||Minsta längd på lösen ord|18.6||
 ||Maximalt antal minuter av inaktivitet innan lösen ord krävs|0,15|Den här inställningen stöds för Android-versionerna 4,0 och senare eller KNOX 4,0 och senare. För iOS-enheter stöds det för iOS 8,0 och senare|

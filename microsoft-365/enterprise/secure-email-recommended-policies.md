@@ -1,13 +1,13 @@
 ---
 title: Säker e-postadress rekommenderade principer-Microsoft 365 för företag | Microsoft-dok
 description: Beskriver policyerna för Microsoft-rekommendationer om hur du använder e-postprinciper och konfigurationer.
-author: brendacarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 39e7be86c06a471a4eefc0cacd3657c363eddae6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685612"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898146"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policy rekommendationer för att skydda e-post
 
@@ -39,7 +39,7 @@ Följande diagram illustrerar den vanliga principer för identitets-och enhets �
 
 [Visa en större version av bilden](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
 
-Om du har inkluderat Exchange Online och Outlook enligt principernas omfattning när du ställer in dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska de principer som visas i tabellen nedan och gör de rekommenderade tilläggen, eller bekräfta att dessa redan är med. Varje regel länkar till de associerade konfigurations anvisningarna i artikeln om [åtkomst principer för allmänna identiteter och enheter](identity-access-policies.md) .
+Om du har inkluderat Exchange Online och Outlook enligt principernas omfattning när du ställer in dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska de principer som visas i tabellen nedan och gör de rekommenderade tilläggen, eller bekräfta att dessa redan är med. Varje regel länkar till de associerade konfigurations anvisningarna i [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
 
 |Skydds nivå|Principerna|Mer information|
 |:---------------|:-------|:----------------|

@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597503"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903877"
 ---
 # <a name="new-microsoft-edge-app"></a>Ny Microsoft Edge-app
 
@@ -25,13 +25,13 @@ I den nya [webbläsaren Microsoft Edge](https://www.microsoft.com/edge) får du 
 
 Om du vill migrera dina Microsoft Managed Station ära enheter till den nya webbläsaren Microsoft Edge kan du läsa en IT support-biljett via Microsoft Managed Desktop-portalen. Vi kommer att distribuera Edge stabil kanal till test gruppen när du arkiverar biljetten och sedan distribuera den i varje senare distributions grupp varje dygn. Om du vill pausa distributionen kan du spara en fil i en annan biljett.
 
-[Beta kanal] (finns https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) också på begäran om representativ verifiering inom din organisation. Microsoft Managed Desktop distribuerar programmet som obligatoriskt för test och första grupper så att alla dessa användare har beta kanalen utöver den stabila kanalen. För alla ytterligare användare som behöver komma åt beta kanalen ska du lägga till dem i den **moderna beta-användare-gruppen på arbets platsen** och låta dem installera den från företags portalen
+[Beta kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) är också tillgänglig på begäran om representativ verifiering inom din organisation. Microsoft Managed Desktop distribuerar programmet som obligatoriskt för test och första grupper så att alla dessa användare har beta kanalen utöver den stabila kanalen. För alla ytterligare användare som behöver komma åt beta kanalen ska du lägga till dem i den **moderna beta-användare-gruppen på arbets platsen** och låta dem installera den från företags portalen
 
 ## <a name="updates-to-microsoft-edge"></a>Uppdateringar av Microsoft Edge
 
 Microsoft Managed Desktop distribuerar den [stabila kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) i Microsoft Edge som uppdateras automatiskt var sjätte vecka. Uppdateringar i den stabila kanalen lyfts [successivt](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) av Microsoft Edge-produktnyckeln för att säkerställa den bästa upplevelsen för kunder. 
 
-[Beta kanal] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) distribueras till enheter i både test-och första grupperna för representativ verifiering i organisationen. Denna kanal stöds helt och uppdateras automatiskt med nya funktioner ungefär var sjätte vecka.
+[Beta kanalen](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) distribueras till enheter i både test-och första grupperna för representativ verifiering i organisationen. Denna kanal stöds helt och uppdateras automatiskt med nya funktioner ungefär var sjätte vecka.
 
 Om du vill vara säker på att Microsoft Edge uppdateras korrekt ska du inte ändra Microsofts Edge [Update-principer](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
@@ -49,7 +49,7 @@ Säkerhets bas linjen för Microsoft Edge på Microsoft Managed Station ära dat
 #### <a name="extension-installation-blocklist"></a>Installations blockeringslista
 **Standardvärde:** Alla
 
-Microsoft Managed Desktop anger den här principen för att förhindra att Chrome-tillägg installeras på hanterade slut punkter. Det finns kända risk sassociated med krom tilläggs modellen, inklusive data förlust skydd, integritet och andra risker som kan äventyra enheter. 
+Microsoft Managed Desktop anger den här principen för att förhindra att Chrome-tillägg installeras på hanterade slut punkter. Det finns kända risker som är förknippade med krom tilläggs modellen, inklusive data förlust skydd, integritet och andra risker som kan äventyra enheter. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Tillåt interna meddelanden på användar nivå (installeras utan Administratörs behörigheter)
 
@@ -71,7 +71,7 @@ Om du vill använda den mindre säkra TLS-1,1 kan du begära detta.
 
 Vi rekommenderar inte att du aktiverar den här inställningen eftersom den tillåter användare att besöka webbplatser med SSL-fel.
 
-### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart skärm
+### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
 #### <a name="configure-windows-defender-smartscreen"></a>Konfigurera Windows Defender SmartScreen
 

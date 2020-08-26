@@ -1,5 +1,5 @@
 ---
-title: Konfigurera och styra extern vidarebefordran av e-post, Automatisk vidarebefordran, 5.7.520 Åtkomst nekad, inaktivera extern vidarebefordran, Administratören har inaktiverat extern vidarebefordran, utgående policy mot skräppost
+title: Konfigurera och kontrol lera extern e-postvidarekoppling, automatisk vidarebefordran, 5.7.520 åtkomst nekad, inaktivera extern vidarebefordran, administratören har inaktiverat extern vidarebefordran, utgående princip för skräp post
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,38 +14,43 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 88c3dae4f5a6786fe4eddea0d5e1c61dda837a87
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080119"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898058"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Konfigurera extern vidarebefordran av e-post i Office 365
 
-Extern vidarebefordran styrs av principen *om utgående skräppost* och begränsas till användare baserat på den konfigurerade inställningen. För närvarande stöds 3 inställningar:
+Extern vidarebefordran styrs av *principen för utgående skräp post* och omfattning för användare baserat på den konfigurerade inställningen. För närvarande finns det stöd för tre inställningar:
 
-- **Automatisk** – I det här läget är systemet ansvarigt för att avgöra om ett vidarebefordrat meddelande är tillåtet eller inte.  Detta är standardläget och i det här läget blockerar systemet automatisk extern vidarebefordran.
+- **Automatiskt** – i det här läget är systemet ansvarigt för att bestämma om ett vidarebefordrat meddelande tillåts eller inte.  Det här är standard läget och i det här läget blockerar systemet automatisk extern vidarebefordran.
 
-- **På** – Automatisk extern vidarebefordran är tillåten och inte begränsad.
+- **På** – automatisk extern vidarebefordran är tillåten och inte begränsad.
 
-- **Av** – Automatisk extern vidarebefordran är inaktiverad och resulterar i en rapport om utebliven leverans (NDR) till slutanvändaren.
+- **Av** – automatisk extern vidarekoppling är inaktiverat och resulterar i en rapport om utebliven leverans (NDR) för slutanvändaren.
 
-Mer information om hur du konfigurerar dessa inställningar finns [i Konfigurera skräppostfiltrering i EOP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide)
+Mer information om hur du konfigurerar dessa inställningar finns i [Konfigurera filtrering för utgående e-post i EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) .
 
-## <a name="controlling-external-email-forwarding"></a>Styra vidarebefordran av extern e-post
+## <a name="controlling-external-email-forwarding"></a>Styra extern e-postvidarebefordran
 
-Som administratör för en organisation kan du ha företagskrav för att begränsa eller kontrollera vem som automatiskt kan vidarebefordra e-postmeddelanden med hjälp av inkorgsregler, eller SMTP-vidarebefordran, utanför organisationen. Vidarebefordran av e-post kan vara en användbar funktion, men kan också utgöra en risk genom att eventuellt lämna ut information, även genom att tillhandahålla information till angripare som kan utnyttjas för att attackera organisationen eller dess partner.
+Som administratör för en organisation kan du ha företags krav för att begränsa eller kontrol lera vem som kan vidarebefordra e-postmeddelanden med hjälp av regler för Inkorgen, eller SMTP-vidarekoppling utanför organisationen. Vidarebefordran av e-post kan vara en användbar funktion, men du kan också skapa en risk genom att informationen avslöjas, även genom att tillhandahålla information till angripare som kan utnyttja organisationen eller dess partners.
 
-Office 365 tillåter inte automatisk extern vidarekoppling av vare sig inkorgsregler eller e-postboxkonfiguration, vilket ger en säker standardprincip. Administratören kan dock ändra dessa inställningar för alla eller vissa användare i organisationen. Vidarebefordra meddelanden mellan interna användare påverkas inte av en sådan ändring.
+Office 365 tillåter inte automatisk extern vidarebefordran av antingen Inkorgshanteraren eller konfiguration av e-postlåda, vilket ger en säker standard princip. Administratören kan dock ändra dessa inställningar för alla eller vissa användare i organisationen. Vidarebefordrade meddelanden mellan interna användare påverkas inte av en sådan modifiering.
 
 > [!NOTE]
-> Inaktivera automatisk vidarebefordran till externa adresser i Office 365 rullas ut i faser med information som kommuniceras via [Message Center-inlägg.](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) För att hjälpa administratörer att förbereda sig för dessa ändringar får de ändra principer i förväg för att säkerställa att det inte finns några störningar för användarna.
+> Det går inte att inaktivera automatisk vidarebefordran till externa adresser i Office 365 i faser med uppgifter som kommunicerats via [meddelanden i meddelande Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . För att administratörer ska kunna förbereda sig för dessa ändringar har de ändrat principer i förväg för att säkerställa att användarna inte störs.
 
-Mer information om användare som använder automatisk vidarebefordran (inkorgsregler eller SMTP-vidarebefordran) i organisationen finns i [rapporten Automatiskt vidarebefordrade meddelanden](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+Mer information om användare som använder automatisk vidarebefordran (regler för Inkorgen eller SMTP-vidarekoppling) i din organisation finns i [rapporten automatisk vidarebefordrade meddelanden](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
 
-## <a name="the-blocked-email-forwarding-message"></a>Meddelandet om vidarebefordran av e-post
+## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Hur fungerar den här principen med andra kontroller för vidarekoppling av automatiskt
 
-När ett meddelande identifieras som automatiskt vidarebefordras och *organisationsprincipen blockerar* aktiviteten genereras en rapport **om utebliven leverans (NDR)** tillbaka till slutanvändaren. Rapporten visar att meddelandet inte levererades. NDR kommer att ha följande format: 
+Som administratör kan du ha andra typer av kontroller på plats, så blockering av automatisk vidarebefordran i [fjärrdomäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) och användning av en Exchange-Exchange. Båda de här kontrollerna är oberoende av den här funktionen, till exempel om du tillåter automatisk vidarebefordran av en fjärrdomän, men blockerar automatisk vidarebefordran via den skräp post princip som visas, blir det automatiskt vidarebefordrade meddelandet blockerat. Om du tillåter automatisk vidarebefordran i principen för utgående skräp post men blockerar den i en Exchange eller fjärrdomän blockeras meddelandet av någon av dessa kontroller. Då kan du till exempel tillåta automatisk vidarebefordran i principen för utgående skräp post och använda fjärrdomäner för att styra domänerna som användarna kan vidarekoppla meddelanden automatiskt till.
+
+
+## <a name="the-blocked-email-forwarding-message"></a>Meddelande om blockerad e-post
+
+När ett meddelande identifieras som automatiskt vidarebefordrat och organisations princip *blocken* som **aktivitet kommer att** genereras tillbaka till slutanvändaren. Rapporten indikerar att meddelandet inte har levererats. NDR har följande format: 
 
 `5.7.520 Access Denied – Your administrator has disabled external forwarding – AS(XXXX)`
