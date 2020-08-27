@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1fa80d79c1802d96fc755def3b8ec15af13b0c9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649409"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255751"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Det står proaktivt för problem med avancerad jakt i Microsoft Threat Protection
 
@@ -51,7 +51,7 @@ Vi rekommenderar att du går igenom flera olika sätt för att snabbt komma igå
 | **Lär dig hur du använder frågeresultat** | Lär dig mer om diagram och olika sätt att visa eller exportera dina resultat. Lär dig hur du snabbt kan justera frågor, öka detalj nivån för att få bättre information och vidta åtgärder. | - [Arbeta med frågeresultat](advanced-hunting-query-results.md)<br>- [Vidta en åtgärd i frågeresultatet](advanced-hunting-take-action.md) |
 | **Förstå schemat** | Få en bra, högkvalitativ förståelse av tabellerna i schemat och deras kolumner. Detta hjälper dig att avgöra var du ska leta efter data och hur du skapar frågor. | [Schema referens](advanced-hunting-schema-tables.md) |
 | **Använda fördefinierade frågor** | Lär dig mer om de fördefinierade frågorna | - [Använda delade frågor](advanced-hunting-shared-queries.md)<br>- [Gå och leta](advanced-hunting-go-hunt.md) |
-| **Optimera frågor** | Förstå hur du skapar effektiva frågor och frågor som kombinerar data från e-post och enheter. | - [Metod tips för frågor](advanced-hunting-shared-queries.md) <br>- [Olika enheter och e-postmeddelanden](advanced-hunting-best-practices.md) |
+| **Optimera frågor** | Förstå hur du skapar effektiva frågor och frågor som kombinerar data från e-post och enheter. | - [Metod tips för frågor](advanced-hunting-best-practices.md) <br>- [Olika enheter och e-postmeddelanden](advanced-hunting-query-emails-devices.md) |
 | **Skapa anpassade identifierings regler** | Förstå hur du kan använda avancerade frågor för att utlösa meddelanden och tillämpa svars åtgärder automatiskt. | - [Anpassade identifierings översikter](custom-detections-overview.md)<br>- [Anpassade identifierings regler](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Få åtkomst
@@ -63,12 +63,15 @@ Avancerade jakt uppgifter kan kategoriseras i två distinkta typer, som varje ko
 - **Händelse-eller aktivitets data** – fyller i tabeller om aviseringar, säkerhets händelser, system händelser och utvärderings bedömningar. Advanced jakt tar emot dessa data nästan omedelbart efter att de sensorer som samlar in dem lyckades överföra dem till motsvarande moln tjänster. Du kan till exempel starta frågor mot händelse data från friska sensorer på arbets stationer eller domänkontrollanter nästan omedelbart efter att de är tillgängliga i Microsoft Defender ATP och Azure ATP.
 - **Entitetsinformation** – fyller i tabeller med konsol IDE rad information om användare och enheter. Dessa data kommer från både relativt statiska data källor, till exempel Active Directory-poster och dynamiska källor, till exempel händelse loggar. Om du vill lägga till nya data uppdateras tabellerna var 15: e minut med ny information och rader som kanske inte är helt ifyllda. Var 24: e timme konsol IDE ras för att infoga en post som innehåller de senaste, mest omfattande data uppsättningarna för varje enhet.
 
+## <a name="time-zone"></a>Tidszon
+All tidsinformation i Advanced jakt är i UTC-tidszonen.
+
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Lär dig frågespråket](advanced-hunting-query-language.md)
 - [Arbeta med frågeresultat](advanced-hunting-query-results.md)
 - [Utföra en åtgärd på frågeresultat](advanced-hunting-take-action.md)
 - [Använda delade frågor](advanced-hunting-shared-queries.md)
-- [Olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
+- [Jaga över olika enheter, e-postmeddelanden, appar och identiteter](advanced-hunting-query-emails-devices.md)
 - [Förstå schemat](advanced-hunting-schema-tables.md)
 - [Använda metodtips för frågor](advanced-hunting-best-practices.md)
 - [Översikt över anpassade identifieringar](custom-detections-overview.md)

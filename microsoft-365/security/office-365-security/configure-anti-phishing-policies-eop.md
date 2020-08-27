@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan lära sig hur de skapar, ändrar och tar bort de anti-phishing-principer som är tillgängliga i EOP-organisationer (Exchange Online Protection) med eller utan Exchange Online-postlådor.
-ms.openlocfilehash: af6577d32d43300867d29a365baaa4e1e7e1b5e3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3b83bcd3c60dbd779d727a79f6689fdf0004d340
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825755"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255763"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera AntiPhishing-principer i EOP
 
@@ -42,7 +42,7 @@ Skillnaden mellan dessa två element är inte uppenbar när du hanterar skydd mo
 - När du ändrar en skydds princip kan inställningar som är relaterade till namn, prioritet, aktiverade eller inaktiverade och mottagar filter ändra regeln för Phish. Alla andra inställningar ändra den associerade policyn för Phish.
 - När du tar bort en AntiPhishing-princip tas regeln mot Phish och tillhör ande policy mot Phish bort.
 
-I Exchange Online PowerShell hanterar du policyn och regeln separat. Mer information finns i avsnittet [använda Exchange Online PowerShell för att konfigurera skydd mot nätfiske-principer](#use-exchange-online-powershell-to-configure-anti-phishing-policies) längre ned i det här avsnittet.
+I Exchange Online PowerShell hanterar du policyn och regeln separat. Mer information finns i avsnittet [använda Exchange Online PowerShell för att konfigurera principer för nätfiske (policys](#use-exchange-online-powershell-to-configure-anti-phishing-policies) ) längre fram i den här artikeln.
 
 Varje organisation har en inbyggd policy för anti-nätfiske som heter Office365 AntiPhish standard och har följande egenskaper:
 
@@ -60,7 +60,7 @@ För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade sky
 
   Du kan inte hantera anti-nätfiske-principer i fristående EOP PowerShell.
 
-- Du måste ha tilldelats behörigheter innan du kan genomföra de här procedurerna för detta ämne:
+- Du måste tilldelas behörigheter innan du kan utföra åtgärderna i den här artikeln:
 
   - För att lägga till, ändra och ta bort skydd mot nätfiske måste du vara medlem i någon av följande roll grupper:
 
@@ -72,7 +72,7 @@ För att öka effektiviteten för skydd mot nätfiske kan du skapa anpassade sky
     - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
     - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- För att kunna skapa och ändra principer för skräp post i fristående EOP måste du göra något som kräver _Hydration_ för din klient organisation. I Exchange Admin Center (UK) kan du till exempel gå till fliken **behörigheter** , välja en befintlig roll grupp, klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) och ta bort en roll (som du kommer att lägga till igen). Om klient organisationen aldrig har fått en sådan status får du en dialog som heter **Update organisations inställningar** med en förlopps indikator som ska utföras. Mer information om Hydration finns i cmdleten [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (som inte är tillgänglig i den fristående EOP PowerShell eller i säkerhets & Compliance Center).
+- Om du vill skapa och ändra skydds principer för fristående EOP måste du göra något som kräver _Hydration_ för din klient organisation. I Exchange Admin Center (UK) kan du till exempel gå till fliken **behörigheter** , välja en befintlig roll grupp, klicka på **Redigera** ![ redigerings ikon ](../../media/ITPro-EAC-EditIcon.png) och ta bort en roll (som du kommer att lägga till igen). Om klient organisationen aldrig har fått en sådan status får du en dialog som heter **Update organisations inställningar** med en förlopps indikator som ska utföras. Mer information om Hydration finns i cmdleten [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (som inte är tillgänglig i den fristående EOP PowerShell eller i säkerhets & Compliance Center).
 
 - De rekommenderade inställningarna för skydd mot nätfiske finns i [EOP standardinställningar för skydd mot nätfiske](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -269,7 +269,7 @@ Du kan inte ta bort standardprincipen.
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Använda Exchange Online PowerShell för att konfigurera skydd mot nätfiske-principer
 
-Som du redan har beskrivt består en policy mot skräp post och en Phish policy.
+Som tidigare beskrivits består en policy för skydd mot Phish och en antiphish-regel.
 
 I Exchange Online PowerShell är skillnaden mellan policyer för Phish och Phish regler uppenbar. Du hanterar policyn för Phish genom att använda cmdletarna ** \* -AntiPhishPolicy** och du hanterar anti-Phish-regler med hjälp av cmdlet ** \* -AntiPhishRule** .
 
@@ -306,9 +306,8 @@ Använd följande syntax för att skapa en policy för Phish:
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
-I det här exemplet skapas policy för Phish forsknings karantän med följande inställningar:
+I det här exemplet skapas en policy med Phish forsknings karantän med följande inställningar:
 
-- Principen är aktive rad (vi använder inte den _aktiverade_ parametern och standardvärdet `$true` ).
 - Beskrivningen är: policy för forsknings avdelningen.
 - Ändrar standard åtgärden för förfalskning till karantän.
 
@@ -394,7 +393,7 @@ Detaljerad information om syntax och parametrar finns i [Get-AntiPhishRule](http
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Använda PowerShell för att ändra policyn för Phish
 
-Förutom följande objekt är samma inställningar tillgängliga när du ändrar en policy för Phish i PowerShell som när du skapar policyn enligt beskrivningen i [steg 1: använda PowerShell för att skapa ett princip policy för Phish](#step-1-use-powershell-to-create-an-anti-phish-policy) .
+Förutom följande objekt är samma inställningar tillgängliga när du ändrar en policy mot Phish i PowerShell som när du skapar en princip enligt beskrivningen i [steg 1: använda PowerShell för att skapa en policy för att Phish en](#step-1-use-powershell-to-create-an-anti-phish-policy) tidigare version av den här artikeln.
 
 - _MakeDefault_ -växeln som aktiverar den angivna principen till standard principen (tillämpas på alla, alltid **lägst** prioritet och du kan inte ta bort den) är bara tillgänglig när du ändrar en policy mot Phish i PowerShell.
 
@@ -412,7 +411,7 @@ Detaljerad information om syntax och parametrar finns i [set-AntiPhishPolicy](ht
 
 Den enda inställning som inte är tillgänglig när du ändrar en anti-Phish-regel i PowerShell är den _aktiverade_ parametern som gör att du kan skapa en inaktive rad regel. Information om hur du aktiverar eller inaktiverar befintliga regler för Phish finns i nästa avsnitt.
 
-Annars är inga ytterligare inställningar tillgängliga när du ändrar en Phish-regel i PowerShell. Samma inställningar är tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa en antiphish regel](#step-2-use-powershell-to-create-an-anti-phish-rule) -avsnitt tidigare i det här avsnittet.
+I annat fall är samma inställningar tillgängliga när du skapar en regel enligt beskrivningen i [steg 2: använda PowerShell för att skapa en antiphish regel](#step-2-use-powershell-to-create-an-anti-phish-rule) -avsnitt tidigare i den här artikeln.
 
 Om du vill ändra en Phish regel använder du följande syntax:
 
@@ -444,7 +443,7 @@ I det här exemplet aktiveras samma regel.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Detaljerad information om syntax och parametrar finns i [Aktivera-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) och [disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule).
+Detaljerad information om syntax och parametrar finns i [Aktivera-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) och [disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Använd PowerShell för att ange prioriteten för antiphish-regler
 
@@ -513,7 +512,7 @@ Gör något av följande om du vill verifiera att du har konfigurerat ATP-skydds
   - Välj en princip i listan och visa detaljerna i den utfällbara informationen.
   - Klicka på **standard policy** och se informationen i utfällbar form.
 
-- I Exchange Online PowerShell ersätter du \<Name\> med namnet på principen eller regeln och kör följande kommando och kontrollerar inställningarna:
+- I Exchange Online PowerShell ersätter du \<Name\> med namnet på principen eller regeln, kör följande kommando och kontrollerar inställningarna:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"
