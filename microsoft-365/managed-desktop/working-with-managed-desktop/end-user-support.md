@@ -1,5 +1,5 @@
 ---
-title: Få support för Microsoft Managed Desktop
+title: Support för Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -9,66 +9,66 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529761"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289693"
 ---
-# <a name="getting-help-for-end-users"></a><span data-ttu-id="967d6-103">Få hjälp för slutanvändare</span><span class="sxs-lookup"><span data-stu-id="967d6-103">Getting help for end users</span></span>
+# <a name="getting-help-for-users"></a><span data-ttu-id="663b3-103">Få hjälp för användare</span><span class="sxs-lookup"><span data-stu-id="663b3-103">Getting help for users</span></span>
 
-<span data-ttu-id="967d6-104">Det finns två sätt som användare i organisationen kan få hjälp med sina Microsoft-hanterade stationära enheter: **Skaffa hjälpapp** eller telefonsupport.</span><span class="sxs-lookup"><span data-stu-id="967d6-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="967d6-105">Båda dessa supportalternativ är tillgängliga för användare 24 timmar om dygnet, 7 dagar i veckan.</span><span class="sxs-lookup"><span data-stu-id="967d6-105">Both of these support options are available to users 24 hours a day, 7 days a week.</span></span>
+<span data-ttu-id="663b3-104">Det finns två sätt som användare i organisationen kan få hjälp med på sina Microsoft-hanterade Skriv bords enheter: **få hjälp** program eller telefon support.</span><span class="sxs-lookup"><span data-stu-id="663b3-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="663b3-105">Båda de här support alternativen är tillgängliga för användare dygnet runt, alla dagar.</span><span class="sxs-lookup"><span data-stu-id="663b3-105">Both of these support options are available to users 24 hours a day, 7 days a week.</span></span>
  
 >[!NOTE]
-><span data-ttu-id="967d6-106">Dessa supportalternativ är inte tillgängliga för enheter i gruppen Test.</span><span class="sxs-lookup"><span data-stu-id="967d6-106">These support options are not available for devices in the Test group.</span></span>
+><span data-ttu-id="663b3-106">De här support alternativen är inte tillgängliga för enheter i test gruppen.</span><span class="sxs-lookup"><span data-stu-id="663b3-106">These support options are not available for devices in the Test group.</span></span>
 
-## <a name="get-help-app"></a><span data-ttu-id="967d6-107">Appen Skaffa hjälp</span><span class="sxs-lookup"><span data-stu-id="967d6-107">Get Help app</span></span>
+## <a name="get-help-app"></a><span data-ttu-id="663b3-107">Skaffa hjälp programmet</span><span class="sxs-lookup"><span data-stu-id="663b3-107">Get Help app</span></span>
 
-<span data-ttu-id="967d6-108">Den metod som föredras för att ge stöd till användarna är **Get Help**, ett lättanvänt gränssnitt inbyggt i slutanvändarens enhet.</span><span class="sxs-lookup"><span data-stu-id="967d6-108">The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.</span></span>  
+<span data-ttu-id="663b3-108">Den bästa metoden för att tillhandahålla stöd för dina användare är **att få hjälp**, ett lättanvänt gränssnitt inbyggt i användarnas enheter.</span><span class="sxs-lookup"><span data-stu-id="663b3-108">The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the user device.</span></span>  
 
-![Ikonen Skaffa hjälpapp](../../media/get-help.png)
+![Ikonen skaffa hjälp program](../../media/get-help.png)
 
-<span data-ttu-id="967d6-110">Det här är ett program som är installerat på alla Microsoft Managed Desktop-enheter och som är fäst i aktivitetsfältet.</span><span class="sxs-lookup"><span data-stu-id="967d6-110">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+<span data-ttu-id="663b3-110">Det här är ett program som är installerat på alla Microsoft Managed Station ära enheter och är fästa i aktivitets fältet.</span><span class="sxs-lookup"><span data-stu-id="663b3-110">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
 
-- <span data-ttu-id="967d6-111">Slutanvändare kan begära ett samtal tillbaka till ett medgett telefonnummer eller chatta online med en servicerepresentant.</span><span class="sxs-lookup"><span data-stu-id="967d6-111">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
-- <span data-ttu-id="967d6-112">Begäranden som faller utanför Supportomfattningen för Microsoft Managed Desktop omdirigeras till den lokala IT-supporten via telefonsamtal.</span><span class="sxs-lookup"><span data-stu-id="967d6-112">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>
+- <span data-ttu-id="663b3-111">användare kan begära samtal tillbaka till ett angivet telefonnummer eller chatta online med en service representant.</span><span class="sxs-lookup"><span data-stu-id="663b3-111">users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
+- <span data-ttu-id="663b3-112">Förfrågningar som faller utanför Microsoft Managed Desktop support scope dirigeras om till den lokala IT-supportavdelningen via telefonsamtal.</span><span class="sxs-lookup"><span data-stu-id="663b3-112">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="967d6-113">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="967d6-113">Prerequisites</span></span>
-<span data-ttu-id="967d6-114">För att dina slutanvändare ska kunna få hjälp via appen kontrollerar du att dessa förutsättningar är uppfyllda:</span><span class="sxs-lookup"><span data-stu-id="967d6-114">For your end users to be able to get help through the app, make sure these prerequisites are met:</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="663b3-113">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="663b3-113">Prerequisites</span></span>
+<span data-ttu-id="663b3-114">För att användarna ska kunna få hjälp via programmet kontrollerar du att följande förutsättningar uppfylls:</span><span class="sxs-lookup"><span data-stu-id="663b3-114">For your users to be able to get help through the app, make sure these prerequisites are met:</span></span>
 
-- <span data-ttu-id="967d6-115">Enheten måste vara registrerad hos Microsoft Managed Desktop med någon av metoderna i [Konfigurera Microsoft Managed Desktop-enheter,](../get-started/set-up-devices.md)till exempel [Registrera nya enheter själv](../get-started/register-devices-self.md).</span><span class="sxs-lookup"><span data-stu-id="967d6-115">The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).</span></span>
-- <span data-ttu-id="967d6-116">Visningsspråket för enheten måste vara inställt på någon av dessa engelskspråkiga språk: en-us, en-gb, en-au, en-nz eller en-ca.</span><span class="sxs-lookup"><span data-stu-id="967d6-116">The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.</span></span>
-- <span data-ttu-id="967d6-117">Appen Skaffa hjälp ska vara uppdaterad.</span><span class="sxs-lookup"><span data-stu-id="967d6-117">The Get Help app should be up to date.</span></span> <span data-ttu-id="967d6-118">Kontrollera om det finns några appuppdateringar i Microsoft Store för att bekräfta detta.</span><span class="sxs-lookup"><span data-stu-id="967d6-118">To confirm this, check for app updates in the Microsoft Store.</span></span>
-- <span data-ttu-id="967d6-119">Vissa [slutpunkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.</span><span class="sxs-lookup"><span data-stu-id="967d6-119">Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.</span></span>
+- <span data-ttu-id="663b3-115">Enheten måste vara registrerad med Microsoft Managed Desktop med någon av metoderna i [Konfigurera Microsoft Managed Station ära enheter](../get-started/set-up-devices.md), till exempel [registrera nya enheter själv](../get-started/register-devices-self.md).</span><span class="sxs-lookup"><span data-stu-id="663b3-115">The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).</span></span>
+- <span data-ttu-id="663b3-116">Visnings språket för enheten måste vara inställt på något av dessa engelska språk: en-US, en-GB, en-au, en-NZ eller en-ca.</span><span class="sxs-lookup"><span data-stu-id="663b3-116">The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.</span></span>
+- <span data-ttu-id="663b3-117">Appen skaffa hjälp ska vara uppdaterad.</span><span class="sxs-lookup"><span data-stu-id="663b3-117">The Get Help app should be up to date.</span></span> <span data-ttu-id="663b3-118">Bekräfta program uppdateringar i Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="663b3-118">To confirm this, check for app updates in the Microsoft Store.</span></span>
+- <span data-ttu-id="663b3-119">Vissa [slut punkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.</span><span class="sxs-lookup"><span data-stu-id="663b3-119">Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="967d6-120">Appen Hämta hjälp kan ta upp till en timme efter att en enhet har distribuerats för att fungera fullt ut.</span><span class="sxs-lookup"><span data-stu-id="967d6-120">The Get Help app can take up to one hour after a device is deployed to fully function.</span></span>
+> <span data-ttu-id="663b3-120">Appen skaffa hjälp kan ta upp till en timme efter att en enhet har distribuerats till helt.</span><span class="sxs-lookup"><span data-stu-id="663b3-120">The Get Help app can take up to one hour after a device is deployed to fully function.</span></span>
 
-<span data-ttu-id="967d6-121">Om du har kontrollerat dessa förutsättningar och appen Hämta hjälp fortfarande inte fungerar bör du som IT-administratör lämna in en [supportbegäran](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="967d6-121">If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).</span></span>
+<span data-ttu-id="663b3-121">Om du har kontrollerat de här kraven och det inte fungerar att få hjälp appen är det lämpligt att en IT-administratör ska spara ett [support ärende](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="663b3-121">If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).</span></span>
 
-## <a name="phone-support"></a><span data-ttu-id="967d6-122">Telefonsupport</span><span class="sxs-lookup"><span data-stu-id="967d6-122">Phone support</span></span>
+## <a name="phone-support"></a><span data-ttu-id="663b3-122">Telefonsupport</span><span class="sxs-lookup"><span data-stu-id="663b3-122">Phone support</span></span>
 
-<span data-ttu-id="967d6-123">Slutanvändare med Microsoft Managed Desktop-enheter har också tillgång till avgiftsfria telefonnummer som de kan ringa.</span><span class="sxs-lookup"><span data-stu-id="967d6-123">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="967d6-124">Detta är tänkt att användas när Få hjälp inte är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="967d6-124">This is meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="967d6-125">Om de till exempel inte kan logga in på enheten eller om enheten är trasig.</span><span class="sxs-lookup"><span data-stu-id="967d6-125">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="967d6-126">Här är telefonnummer för telefonsupport:</span><span class="sxs-lookup"><span data-stu-id="967d6-126">Here are the phone numbers for phone support:</span></span>
+<span data-ttu-id="663b3-123">användare med Microsoft hanterade Station ära Skriv bords enheter har också till gång till avgiftsfria telefonnummer de kan ringa.</span><span class="sxs-lookup"><span data-stu-id="663b3-123">users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="663b3-124">Det är avsett att användas när det inte går att få hjälp.</span><span class="sxs-lookup"><span data-stu-id="663b3-124">This is meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="663b3-125">Till exempel, om de inte kan logga in på enheten eller om enheten har brutits.</span><span class="sxs-lookup"><span data-stu-id="663b3-125">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="663b3-126">Här är telefonnummer för telefon support:</span><span class="sxs-lookup"><span data-stu-id="663b3-126">Here are the phone numbers for phone support:</span></span>
 
-- <span data-ttu-id="967d6-127">Förenta staterna: +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="967d6-127">United States: +1 855 425 0216</span></span>
-- <span data-ttu-id="967d6-128">Kanada (exklusive Quebec): +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="967d6-128">Canada (excluding Quebec): +1 855 425 0216</span></span>
-- <span data-ttu-id="967d6-129">Storbritannien: +44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="967d6-129">United Kingdom: +44 800 026 0698</span></span>
-- <span data-ttu-id="967d6-130">Belgien: +32 800 58533</span><span class="sxs-lookup"><span data-stu-id="967d6-130">Belgium: +32 800 58533</span></span>
-- <span data-ttu-id="967d6-131">Luxemburg: +352 800 40119</span><span class="sxs-lookup"><span data-stu-id="967d6-131">Luxembourg: +352 800 40119</span></span>
-- <span data-ttu-id="967d6-132">Australien: +61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="967d6-132">Australia: +61 180 037 0619</span></span>
-- <span data-ttu-id="967d6-133">Nya Zeeland: +64 988 44380</span><span class="sxs-lookup"><span data-stu-id="967d6-133">New Zealand: +64 988 44380</span></span>
-- <span data-ttu-id="967d6-134">Sverige: +46 20 120 3554</span><span class="sxs-lookup"><span data-stu-id="967d6-134">Sweden: +46 20 120 3554</span></span>
-- <span data-ttu-id="967d6-135">Norge: +47 800 62584</span><span class="sxs-lookup"><span data-stu-id="967d6-135">Norway: +47 800 62584</span></span>
-- <span data-ttu-id="967d6-136">Island: +354 800 9006</span><span class="sxs-lookup"><span data-stu-id="967d6-136">Iceland: +354 800 9006</span></span>
-- <span data-ttu-id="967d6-137">Irland: +353 1 800 832272</span><span class="sxs-lookup"><span data-stu-id="967d6-137">Ireland: +353 1 800 832272</span></span>
-- <span data-ttu-id="967d6-138">Danmark: +45 80 40 04 01</span><span class="sxs-lookup"><span data-stu-id="967d6-138">Denmark: +45 80 40 04 01</span></span>
-- <span data-ttu-id="967d6-139">Finland: +358 800 525088</span><span class="sxs-lookup"><span data-stu-id="967d6-139">Finland: +358 800 525088</span></span>
+- <span data-ttu-id="663b3-127">USA: + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="663b3-127">United States: +1 855 425 0216</span></span>
+- <span data-ttu-id="663b3-128">Kanada (exklusive Quebec): + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="663b3-128">Canada (excluding Quebec): +1 855 425 0216</span></span>
+- <span data-ttu-id="663b3-129">Storbritannien: + 44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="663b3-129">United Kingdom: +44 800 026 0698</span></span>
+- <span data-ttu-id="663b3-130">Belgien: + 32 800 58533</span><span class="sxs-lookup"><span data-stu-id="663b3-130">Belgium: +32 800 58533</span></span>
+- <span data-ttu-id="663b3-131">Luxemburg: + 352 800 40119</span><span class="sxs-lookup"><span data-stu-id="663b3-131">Luxembourg: +352 800 40119</span></span>
+- <span data-ttu-id="663b3-132">Australien: + 61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="663b3-132">Australia: +61 180 037 0619</span></span>
+- <span data-ttu-id="663b3-133">Nya Zeeland: + 64 988 44380</span><span class="sxs-lookup"><span data-stu-id="663b3-133">New Zealand: +64 988 44380</span></span>
+- <span data-ttu-id="663b3-134">Sverige: + 46 20 120 3554</span><span class="sxs-lookup"><span data-stu-id="663b3-134">Sweden: +46 20 120 3554</span></span>
+- <span data-ttu-id="663b3-135">Norge: + 47 800 62584</span><span class="sxs-lookup"><span data-stu-id="663b3-135">Norway: +47 800 62584</span></span>
+- <span data-ttu-id="663b3-136">Island: + 354 800 9006</span><span class="sxs-lookup"><span data-stu-id="663b3-136">Iceland: +354 800 9006</span></span>
+- <span data-ttu-id="663b3-137">Irland: + 353 1 800 832272</span><span class="sxs-lookup"><span data-stu-id="663b3-137">Ireland: +353 1 800 832272</span></span>
+- <span data-ttu-id="663b3-138">Danmark: + 45 80 40 04 01</span><span class="sxs-lookup"><span data-stu-id="663b3-138">Denmark: +45 80 40 04 01</span></span>
+- <span data-ttu-id="663b3-139">Finland: + 358 800 525088</span><span class="sxs-lookup"><span data-stu-id="663b3-139">Finland: +358 800 525088</span></span>
 
 >[!NOTE]
-><span data-ttu-id="967d6-140">Du måste ha din organisations-e-postadress redo när du ringer för att verifiera din identitet.</span><span class="sxs-lookup"><span data-stu-id="967d6-140">You'll need to have your organizational email address ready when you call to verify your identity.</span></span> 
+><span data-ttu-id="663b3-140">Du måste ha din organisations e-postadress klar när du ringer för att bekräfta din identitet.</span><span class="sxs-lookup"><span data-stu-id="663b3-140">You'll need to have your organizational email address ready when you call to verify your identity.</span></span> 
 
-## <a name="additional-resources"></a><span data-ttu-id="967d6-141">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="967d6-141">Additional resources</span></span>
-- <span data-ttu-id="967d6-142">[Administratörsstöd för Microsoft Managed Desktop](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="967d6-142">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
-- <span data-ttu-id="967d6-143">[Stöd för Microsoft Managed Desktop](../service-description/support.md).</span><span class="sxs-lookup"><span data-stu-id="967d6-143">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
-- <span data-ttu-id="967d6-144">Om du redan prenumererar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, processflöden, arbetsinstruktioner och vanliga frågor i administratörshandboken för Microsoft Managed Desktop i avsnittet **Onlineresurser** i [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).</span><span class="sxs-lookup"><span data-stu-id="967d6-144">If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="663b3-141">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="663b3-141">Additional resources</span></span>
+- <span data-ttu-id="663b3-142">[Administratörs support för Microsoft Managed Desktop](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="663b3-142">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
+- <span data-ttu-id="663b3-143">[Stöd för Microsoft Managed Desktop](../service-description/support.md).</span><span class="sxs-lookup"><span data-stu-id="663b3-143">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
+- <span data-ttu-id="663b3-144">Om du redan abonnerar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft-hanterade skriv bord i avsnittet **online-resurser** på [administrations portalen för Microsoft Managed Desktop](https://aka.ms/mwaasportal).</span><span class="sxs-lookup"><span data-stu-id="663b3-144">If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).</span></span>
