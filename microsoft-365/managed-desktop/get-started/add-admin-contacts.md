@@ -1,6 +1,6 @@
 ---
 title: Lägga till och verifiera administratörskontakter i administratörsportalen
-description: Berätta vem vi ska kontakta för varje fokusområde.
+description: Berätta för oss vem du ska kontakta för varje fokus område.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,67 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529809"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289267"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Lägga till och verifiera administratörskontakter i administratörsportalen
 
-Det finns flera sätt att kommunicera med kunder i Microsoft Managed Desktop. För att effektivisera kommunikationen och se till att vi kontrollerar med rätt personer måste du tillhandahålla en uppsättning administratörskontakter. Microsoft Managed Desktop IT Operations kontaktar dessa personer för att få hjälp med felsökningsproblem för din klientorganisation.
+Det finns flera sätt som Microsoft Managed Desktop Service kommunicerar med kunder. För att effektivisera kommunikationen och kontrol lera att vi håller på att kontrol lera med rätt personer måste du ange en uppsättning administratörs kontakter. Microsoft Managed Desktop den här personen kontaktar de här personerna för att få hjälp med fel söknings problem för din klient organisation.
 
 > [!IMPORTANT]
-> Du kanske redan har lagt till dessa kontakter i administratörsportalen. Om så är fallet, ta en stund nu att dubbelkolla att kontaktlistan är korrekt, eftersom Microsoft Managed Desktop **måste** kunna nå dem om en allvarlig incident inträffar.
+> Du kanske redan har lagt till dessa kontakter i administrations portalen. Om så är fallet, ta ett tag nu för att kontrol lera att kontakt listan stämmer, eftersom Microsoft Managed Desktop **måste** kunna nå dem om en allvarlig olycka inträffar.
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory-åtkomst för Microsoft Managed Desktop Admin portal
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Åtkomst för Azure Active Directory-portalen för Microsoft Managed Desktop-administratörer
 
-Microsofts administratörsportal för hanterade skrivbord kräver att personer som ansluter till portalen har någon av dessa Azure Active Directory-roller (AD):
+Administrations portalen för Microsoft Managed Desktop kräver att personer som använder portalen har en av dessa Azure Active Directory (AD)-roller:
 - Global administratör
-- Administratör för Intune-tjänsten
+- Intune tjänst administratör
 - Global läsare
-- Administratör för servicesupport
+- Support administratör för tjänsten
 
-Den globala administratören måste vara den som registrerar din organisation på Microsoft Managed Desktop. Alla fem rollerna har samma åtkomst i administratörsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar dessa roller i Azure AD finns [i Administratörsrollbehörigheter i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+Den globala administratören måste vara den som ska registrera din organisation på Microsoft Managed Desktop. Alla fem roller har samma åtkomst i administrations portalen för att initiera och Visa aktiviteter. Mer information om hur du tilldelar dessa roller i Azure AD finns i [behörigheter för administratörs roller i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
-## <a name="admin-contact-areas-of-focus"></a>Admin kontaktområden i fokus
+## <a name="admin-contact-areas-of-focus"></a>Administrations kontakt områden i fokus
 
-Administratörskontakter bör vara den bästa personen eller gruppen som kan svara på frågor och fatta beslut för olika fokusområden. **Microsoft Managed Desktop Operations kontaktar dessa administratörskontakter för frågor som rör supportförfrågningar som lämnats in av kunden.** Dessa administratörskontakter får meddelanden om uppdateringar av supportbegäran och nya meddelanden. Dessa områden omfattar:
+Administratörs kontakterna bör vara den bästa personen eller gruppen som kan besvara frågor och fatta beslut för olika fokus områden. **Microsoft Managed Station ära datorer kontaktar dessa administratörs kontakter för frågor som berör support ärenden som skickas av kunden.** Dessa administratörs kontakter får aviseringar om uppdateringar och nya meddelanden om supportinformation. Dessa områden inkluderar:
 
-Fokusområde | För frågor om
+Fokus område | Om du har frågor om
 --- | ---
-Förpackning av appar | Felsöka appförpackningar
-Enheter | Enhetshälsa, felsökning med Microsoft Hanterade skrivbordsenheter
-Säkerhet | Felsöka säkerhetsproblem med Microsoft Managed Desktop-enheter
-IT-support | i de fall där vår supportpersonal lämnar över slutanvändarbiljetter utanför Microsoft Managed Desktop-supportområden 
-Annat | För frågor som inte omfattas av andra områden
+Program packning | Felsöka programpaket
+Anordningar | Enhets hälsa, fel sökning med Microsoft hanterade Station ära enheter
+Säkerhet | Felsöka säkerhets problem med Microsoft hanterade Station ära enheter
+IT-support | i de fall vår support personal händer över användar biljetter utanför Microsoft Managed Desktop support-områden 
+Annat | För problem som inte täcks av andra områden
 
-**Den du väljer för dessa kontakter måste ha kunskap och behörighet att fatta beslut för din Microsoft Managed Desktop-miljö.** När du är ombord på microsoft managed desktop-miljön uppmanas du att lägga till kontakter för din lokala helpdesk och säkerhet. 
+**Den du väljer för dessa kontakter måste ha kunskap och behörighet för att fatta beslut för din Microsoft-hanterade Skriv bords miljö.** När du har en Microsoft Managed Desktop-miljö uppmanas du att lägga till kontakter för ditt lokala helpdesk och din säkerhet. 
 
-Administratörskontakter krävs när du [skickar en supportbegäran](../service-description/support.md). Du måste ha en administratörskontakt för fokusområdet för supportbegäran. 
+Administratörs kontakter krävs när du [skickar in en supportbegäran](../service-description/support.md). Du måste ha en administratörs kontakt för att fokusera på support förfrågan. 
 
-**Så här lägger du till administratörskontakter**
+**Lägga till administratörs kontakter**
 
-1.  Logga in på [Microsoft Managed Desktop admin portal](https://aka.ms/mwaasportal). 
+1.  Logga in på [administrations portalen för Microsoft Managed Desktop](https://aka.ms/mwaasportal). 
 
-2.  Under **Support**väljer du **Admin-kontakter**. 
+2.  Välj **admin-kontakter**under **support**. 
 
-    ![Stödmeny, Admin-kontakter längst upp markerade](../../media/admincontacts.png)
+    ![Menyn support, administratörs kontakter nära det markerade överst](../../media/admincontacts.png)
 
 3. Välj **Lägg till**.
 
-    ![Admin portal, Lägg till knappen, till vänster om Exportera och uppdatera](../../media/adminadd.png)
+    ![Administrations portalen, knappen Lägg till, till vänster om exportera och uppdatera](../../media/adminadd.png)
 
-4.  Välj ett **fokusområde** och ange informationen för kontakten. 
+4.  Markera ett **område med fokus** och ange informationen för kontakten. 
 
-    ![listan över fokusområden, till exempel Andra, Appar och Säkerhet](../../media/areaoffocus.png)
+    ![listan med fokus områden, till exempel andra, appar och säkerhet](../../media/areaoffocus.png)
 
-5. Upprepa för varje fokusområde. 
+5. Upprepa för varje fokus område. 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
 
-1. Lägga till och verifiera administratörskontakter i administratörsportalen (det här avsnittet)
+1. Lägga till och verifiera administratörs kontakter i administrations portalen (det här avsnittet)
 2. [Justera villkorsstyrd åtkomst](conditional-access.md)
 3. [Koppla licenser](assign-licenses.md)
 4. [Installera Intune-företagsportal på enheter](company-portal.md)

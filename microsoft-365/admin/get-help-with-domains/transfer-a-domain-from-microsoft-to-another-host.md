@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Hitta stegen här för att överföra en domän från Microsoft till en annan registrator. '
-ms.openlocfilehash: 7e00f5ae2c36a06803a3f7a8acd825dcab90805c
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788993"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289177"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Överföra en domän från Microsoft till en annan värd
 
@@ -43,7 +43,7 @@ Följ de här stegen för att få en kod på Microsoft 365 och gå sedan till de
 
 1. Gå till inställningar i administrations centret  **Settings**   >  **Domains**.
 
-2. <på sidan **domäner** väljer du den Microsoft 365-domän som du vill överföra till en annan domän registrator och väljer sedan **kontrol lera hälsa**.
+2. På sidan **domäner** väljer du den Microsoft 365-domän som du vill överföra till en annan domän registrator och väljer sedan **kontrol lera hälsa**.
 
 3. Högst upp på sidan väljer du **överför domän**.
 

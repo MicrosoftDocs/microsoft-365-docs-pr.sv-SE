@@ -1,6 +1,6 @@
 ---
 title: Teknologier i Microsoft Hanterat skrivbord
-description: I det här avsnittet visas de tekniker och appar som används i Microsoft Managed Desktop.
+description: I det här avsnittet finns en lista över teknologier och program som används på Microsoft Managed Desktop.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,45 +9,45 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1f82c339e8cbe4426c87eae045107d26201b0025
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530025"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289111"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Teknologier i Microsoft Hanterat skrivbord
 
-I det här avsnittet visas de tekniker och appar som används i Microsoft Managed Desktop.
+I det här avsnittet finns en lista över teknologier och program som används på Microsoft Managed Desktop.
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Microsoft 365 Enterprise-licensiering krävs för alla Microsoft Managed Desktop-användare. Mer information om licenskrav för tjänsten finns i [Förutsättningar för Microsoft Managed Desktop](../get-ready/prerequisites.md).
+Microsoft 365 Enterprise-licensiering krävs för alla hanterade Microsoft-användare. För mer information om licens krav för tjänsten, se [förutsättningar för Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
-I det här avsnittet sammanfattas de komponenter som ingår i de nödvändiga Företagslicenserna, med en beskrivning av hur tjänsten använder varje komponent med Microsoft Managed Desktop-enheter. Specifika roller och ansvarsområden för varje område beskrivs i microsofts hanterade skrivbordsdokumentation. 
+I det här avsnittet sammanfattas de komponenter som ingår i de företags licenser som krävs, med en beskrivning av hur tjänsten använder varje komponent med Microsoft-hanterade Station ära enheter. Specifika roller och ansvars områden för varje område är detaljerade i Microsoft Managed Desktop Documentation. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 eller E5
  |
  --- | ---
-Microsoft 365-appar för företag (64-bitars) | Dessa Office-program levereras med enheten: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag, OneNote.<br><br>De 64-bitars fullständiga versionerna av Microsoft Project och Microsoft Visio ingår inte. Eftersom installationen av dessa program beror på Microsoft 365 Apps för företagsinstallation har Microsoft Managed Desktop skapat standarddistributioner och säkerhetsgrupper för Microsoft Intune som du sedan kan använda för att distribuera dessa program till licensierade slutanvändare. Mer information finns i [Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Desktop-enheter](../get-started/project-visio.md).
-OneDrive för företag |Enkel inloggning i Azure Active Directory är aktiverat för slutanvändare när de loggar in på OneDrive för företag.<br><br>Kända mappomdirigering för mapparna "Skrivbord", "Dokument" och "Bilder" ingår. aktiveras och konfigureras av Microsoft Managed Desktop. 
-Lagra appar |    Microsoft Sway och Power BI levereras inte med enheten. Dessa appar är tillgängliga för nedladdning från Microsoft Store.
-Win32-program |    Team levereras inte med enheten, men är paketerade och tillhandahålls av Microsoft för Microsoft Managed Desktop-enheter. Azure Information Protection Client levereras inte med enheten, men du kan få det här paketerat för distribution. 
-Webbprogram |  Yammer, Office i en webbläsare, Delve, Flow, StaffHub, PowerApps och Planner levereras inte med enheten. Användare kan komma åt webbversionen av dessa program med en webbläsare.
+Microsoft 365-appar för Enterprise (64-bitar) | Dessa Office-program levereras med enheten: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag, OneNote.<br><br>De 64-bitars fullständiga versionerna av Microsoft Project och Microsoft Visio ingår inte. Men eftersom installationen av dessa program beror på Microsoft 365-programmen för installation av Enterprise har Microsoft Managed Desktop skapat Microsoft Intune-distributioner och säkerhets grupper som du kan använda för att distribuera dessa program till licensierade användare. Mer information finns i [Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Station ära enheter](../get-started/project-visio.md).
+OneDrive för företag |Enkel inloggning med Azure Active Directory är aktiverat för användare vid första inloggningen till OneDrive för företag.<br><br>Kända Mappomdirigering för "Skriv bord", "dokument" och "bilder"-mappar är inkluderade. aktiverat och konfigurerat av Microsoft Managed Desktop. 
+Store-appar |    Microsoft Sway och Power BI levereras inte med enheten. Dessa appar kan laddas ned från Microsoft Store.
+Win32-program |    Teams levereras inte med enheten men är paketerad och tillhandahålls av Microsoft för Microsoft-hanterade Station ära datorer. Azure information Protection-klienten levereras inte med enheten, men du kan ha denna paketerad installation. 
+Webb program |  Yammer, Office i en webbläsare, Delve, Flow, StaffHub, PowerApps och Planner levereras inte med enheten. Användare kan komma åt webb versionen av dessa program med en webbläsare.
 
 
-## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 Enterprise E3 eller E5
-
- |
- --- | ---
-Programvirtualisering (App-V) |    Kunder kan distribuera App-V-paket med hjälp av Intune Win32-apphanteringsklienten.
-Microsoft Defender Avancerat skydd |  Microsoft Managed Desktop använder detta för att övervaka enhetssäkerheten. 
-
-## <a name="enterprise-mobility--security-e5"></a>Företagsmobilitet + Säkerhet E5
+## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 Enterprise, E3 eller E5
 
  |
  --- | ---
-Företagsmobilitet + Säkerhet E3<br>Azure Active Directory Premium P2 |    Du kan använda alla funktioner i Enterprise Mobility + Security E3 och Azure Active Directory Premium P2 för att hantera MDM-enheter.
-Microsoft Cloud App Security |  Du kan använda den här valfria funktionen med Microsoft Managed Desktop.
-Azure informationsskydd P2  | Du kan använda den här valfria funktionen med Microsoft Managed Desktop.
+Application Virtualization (App-V) |    Kunderna kan distribuera App-V-paket med hjälp av Intune Win32 app Management-klienten.
+Microsoft Defender Avancerat skydd |  Microsoft Managed Desktop använder detta för att övervaka enhets säkerhet. 
+
+## <a name="enterprise-mobility--security-e5"></a>Företags mobilitet + säkerhet, E5
+
+ |
+ --- | ---
+Företags mobilitet + säkerhet E3<br>Azure Active Directory Premium P2 |    Du kan använda alla funktioner i Enterprise Mobility + Security E3 och Azure Active Directory Premium P2 för att hantera MDM-enheter.
+Microsoft Cloud App Security |  Du kan använda den här valfria funktionen med Microsoft hanterat skriv bord.
+Azure information Protection P2  | Du kan använda den här valfria funktionen med Microsoft hanterat skriv bord.

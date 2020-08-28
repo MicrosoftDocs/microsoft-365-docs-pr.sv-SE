@@ -10,70 +10,70 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f11c7a4aa69c96232a33c565e7bf20d04b96d1f7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529977"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289133"
 ---
 # <a name="app-control"></a>Appkontroll
 
-Appkontroll är en valfri säkerhetspraxis i Microsoft Managed Desktop som begränsar körningen av kod på klientenheter. Den här kontrollen minskar risken för skadlig kod eller skadliga skript genom att kräva att endast kod som signeras av en kundgodkänd lista över utgivare kan köras. Det finns många säkerhetsfördelar med denna kontroll, men det syftar främst till att skydda data och identitet från kundbaserade bedrifter.
+App Control är en valfri säkerhets metod på Microsoft Managed Desktop som begränsar körning av kod på klient enheter. Den här kontrollen minskar risken för skadliga program eller skadliga skript genom att kräva att endast kod som är signerad av en kund godkänd lista över utgivare kan köras. Det finns många säkerhets fördelarna med den här kontrollen, men det är främst att skydda data och identitet från klientbaserade sårbarheter.
 
-Microsoft Managed Desktop förenklar hanteringen av appkontrollprinciper genom att skapa en basprincip som möjliggör grundläggande produktivitetsscenarier. Du kan utöka förtroendet till ytterligare undertecknare som är specifika för appar och skript i din miljö. 
+Med Microsoft Managed Station ära datorer blir det enklare att hantera program kontroll principer genom att skapa en bas policy som möjliggör grundläggande produktivitets scenarier. Du kan utöka förtroendet till ytterligare undertecknare som är specifika för appar och skript i miljön. 
 
 
-All säkerhetsteknik kräver en balans mellan användarupplevelse, säkerhet och kostnad. Appkontrollen minskar risken för skadlig programvara i din miljö, men det får konsekvenser för slutanvändaren och ytterligare åtgärder för IT-administratören.
+Alla säkerhets tekniker kräver en avvägning mellan användar upplevelse, säkerhet och kostnad. Program kontroll minskar risken för skadliga program i miljön, men det finns konsekvenser för användaren och ytterligare åtgärder för IT-administratören.
 
 **Ytterligare säkerhet:**
 
-Appar eller skript som inte är betrodda av appkontrollprincipen blockeras från att köras på enheter.
+Appar eller skript som inte är betrodda av program kontroll principen blockeras från att köras på enheter.
 
-**Dina extra ansvarsområden:**
+**Dina ytterligare ansvars områden:**
 
-- Du är ansvarig för att testa dina appar för att identifiera om de skulle blockeras av programkontrollprincipen.
-- Om en app blockeras (eller skulle blockeras) är du ansvarig för att identifiera de uppgifter som behövs undertecknare och begära en ändring via adminportalen.
+- Du är ansvarig för att testa dina program för att identifiera om de blockeras av program kontroll principen.
+- Om ett program är (eller skulle bli) blockerat är du ansvarig för att identifiera de uppgifter som behövs och begära en ändring via administrations portalen.
 
-**Microsoft Hanterade skrivbordsansvar:**
+**Microsoft Managed Desktop ansvars område:**
 
-- Microsoft Managed Desktop underhåller basprincipen som aktiverar centrala Microsoft-produkter som M365 Apps, Windows, Teams, OneDrive och så vidare.
-- Microsoft Managed Desktop infogar dina betrodda undertecknare och distribuerar den uppdaterade principen till dina enheter.
-
-
-## <a name="managing-trust-in-applications"></a>Hantera förtroende för program
-
-Microsoft Managed Desktop ger en basprincip som litar på kärnkomponenterna i Microsoft-teknik. Du *lägger* sedan till förtroende för dina egna program och skript genom att informera Microsoft Managed Desktop vilken av dem du redan litar på.
-
-### <a name="base-policy"></a>Baspolicy
-
-Microsoft Managed Desktop skapar och underhåller i samarbete med Microsofts cybersäkerhetsexperter en standardprincip som gör att de flesta appar som distribueras via Microsoft Intune kan blockeras samtidigt som farliga aktiviteter som kodkompilering eller körning av ej betrodda filer blockeras.
-
-Grundprincipen har följande metod för att begränsa programkörning:
-
-- Filer som körs av administratörer tillåts att köras.
-- Filer på platser som *inte* finns i användardokumentade kataloger tillåts att köras.
-- Filer signeras av en [betrodd undertecknare](#signer-requests).
-- De flesta filer som signeras av Microsoft kommer att köras, men vissa är blockerade för att förhindra högriskåtgärder som kodkompilering.
+- Microsoft Managed Desktop har grundläggande policy som gör att du kan använda de grundläggande Microsoft-produkterna som M365-appar, Windows, teams, OneDrive och så vidare.
+- Microsoft Managed Desktop infogar betrodda undertecknare och distribuerar den uppdaterade principen på dina enheter.
 
 
-Om en annan användare än en administratör kunde ha lagt till en app eller ett skript på en enhet (det vill säga den finns i en katalog som kan skrivas av användaren) tillåter vi inte att den körs om den inte redan har tillåtits specifikt av en administratör. Om en användare luras att försöka installera skadlig kod, om ett säkerhetsproblem i en app användaren kör försöker installera skadlig kod, eller om en användare avsiktligt försöker köra en obehörig app eller skript, kommer vår policy att stoppa körningen.
+## <a name="managing-trust-in-applications"></a>Hantera förtroende i program
 
-### <a name="signer-requests"></a>Begäran om undertecknare
+Microsoft Managed Desktop-granskare en bas policy som är betrodd för huvud komponenterna i Microsoft Technologies. Sedan kan du *lägga till* förtroende för dina egna program och skript genom att informerar Microsoft Managed Desktop, vilket du redan har förtroende för.
 
-Du informerar oss om vilka appar som tillhandahålls av programvaruleverantörer som du litar på genom att lämna in en *undertecknarbegäran.* På så sätt lägger vi till att lita på information i principen för grundläggande programkontroll och tillåter all programvara som signerats med utgivarens certifikat att köras på dina enheter.
+### <a name="base-policy"></a>Bas policy
 
-## <a name="audit-and-enforced-policies"></a>Gransknings- och verkställda principer
+Microsoft Managed Desktop, i samarbete med Microsoft Cybersecurity experter, skapar och hanterar en standard policy som gör att de flesta program som distribueras via Microsoft Intune blockerar farliga aktiviteter, till exempel kodning eller körning av obetrodda filer.
 
-Microsoft Managed Desktop använder två Microsoft Intune-principer för att tillhandahålla appkontroll:
+Bas policyn har följande metod för att begränsa program körning:
 
-### <a name="audit-policy"></a>Revisionspolicy
-Den här principen skapar loggar för att registrera om en app eller ett skript skulle blockeras av principen Tvingande. Granskningsprinciper tillämpar inte appkontrollregler och är avsedda för testning för att identifiera om ett program kräver ett undantag från utgivaren. Den loggar varningar (8003 eller 8006 händelser) i Loggboken i stället för att blockera körningen eller installationen av angivna appar eller skript.
+- Filer som körs av administratörer kan köras.
+- Filer på platser som *inte* finns i användarnas skrivbara kataloger kommer att tillåtas att köras.
+- Filer är signerade av en [betrodd undertecknare](#signer-requests).
+- De flesta filer som är signerade med Microsoft körs, men vissa blockeras för att förhindra högrisk åtgärder, till exempel kod kompilering.
 
-### <a name="enforced-policy"></a>Tvingande policy
-Den här principen blockerar ej betrodda appar och skript från att köras och skapar loggar när en app eller ett skript blockeras. Tvingande principer hindrar standardanvändare från att köra appar eller skript som lagras i användarskrivna kataloger.
 
-Enheter i gruppen Test har en granskningsprincip tillämpad så att du kan använda dem för att verifiera om några program orsakar problem. Alla andra grupper (Första, Fasta och Breda) använder en tvingande princip, så att slutanvändare i dessa grupper inte kan köra ej betrodda appar eller skript.
+Om en annan användare än en administratör har lagt till en app eller ett skript till en enhet (det vill säga att det är i en användardefinierad katalog) tillåter vi inte att den körs såvida den inte redan har tillåtits av en administratör. Om en användare luras att försöka installera skadlig program vara, om ett säkerhets problem i en app som användaren kör försöker installera skadlig program vara, eller om en användare medvetet försöker köra en otillåten app eller skript, kommer vår policy att sluta utföra.
+
+### <a name="signer-requests"></a>Signerings förfrågningar
+
+Du informerar dig om vilka appar som tillhandahålls av program varu leverantörer som du litar på genom att arkivera en *registreringsbegäran*. Genom att göra så lägger vi till den förtroende information i princip policyn för program kontroll och gör att program vara som är signerad med den utgivarens certifikat körs på dina enheter.
+
+## <a name="audit-and-enforced-policies"></a>Gransknings-och genomdrivta principer
+
+Microsoft Managed Desktop använder två Microsoft Intune-principer för att tillhandahålla program kontroll:
+
+### <a name="audit-policy"></a>Gransknings princip
+Med den här principen kan du ange om en app eller ett skript ska blockeras av den tvingande principen. Gransknings principer tvingar inte program kontroll regler och är avsedda för testning för att avgöra om ett program kräver ett undantag från utgivaren. Den loggar varningar (8003 eller 8006) i logg boken i stället för att blockera körning eller installation av angivna appar eller skript.
+
+### <a name="enforced-policy"></a>Tvingande princip
+Denna princip blockerar icke betrodda appar och skript att köra och skapar loggar när en app eller ett skript blockeras. Tillämpade principer hindrar vanliga användare från att köra appar eller skript som lagras i användarnas skrivbara kataloger.
+
+Enheter i test gruppen har en gransknings princip som tillämpas så att du kan använda dem för att kontrol lera om några program orsakar problem. Alla andra grupper (första, snabba och breda) använder en tvingande princip, så att användare i dessa grupper inte kan köra icke betrodda appar eller skript.
 
 
 
