@@ -1,6 +1,6 @@
 ---
 title: Nya Microsoft Edge
-description: ''
+description: Förklarar hur den nya webbläsaren distribueras och uppdateras
 keywords: webbläsare, Microsoft hanterat skriv bord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903877"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294680"
 ---
 # <a name="new-microsoft-edge-app"></a>Ny Microsoft Edge-app
 
@@ -35,7 +35,6 @@ Microsoft Managed Desktop distribuerar den [stabila kanalen](https://docs.micros
 
 Om du vill vara säker på att Microsoft Edge uppdateras korrekt ska du inte ändra Microsofts Edge [Update-principer](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-### <a name="microsoft-edge-beta-channel"></a>Beta kanal för Microsoft Edge
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Inställningar som hanteras av Microsoft Managed Desktop
@@ -44,7 +43,7 @@ Microsoft Managed Desktop har skapat en standard uppsättning principer för Mic
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge-tillägg
 
-Säkerhets bas linjen för Microsoft Edge på Microsoft Managed Station ära datorer har två principer för att inaktivera alla Chrome-tillägg och säkra slutanvändare. Om du vill aktivera och distribuera tillägg i miljön läser du inställningar som du hanterar. 
+Säkerhets bas linjen för Microsoft Edge på Microsoft Managed Station ära datorer ställer in två principer för att inaktivera alla Chrome-tillägg och säkra användare. Om du vill aktivera och distribuera tillägg i miljön läser du inställningar som du hanterar. 
 
 #### <a name="extension-installation-blocklist"></a>Installations blockeringslista
 **Standardvärde:** Alla
@@ -77,7 +76,7 @@ Vi rekommenderar inte att du aktiverar den här inställningen eftersom den till
 
 **Standardvärde:** Aktiverat
 
-Aktiverat som standard för att skydda slutanvändare.
+Aktiverat som standard för att skydda användare.
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen-frågor för webbplatser
 
@@ -105,7 +104,7 @@ Vi rekommenderar inte att du använder Flash på grund av associerade säkerhets
 
 **Standardvärde:** Aktiv
 
-Vi rekommenderar inte att användarna sparar lösen ord på sina enheter.
+Vi rekommenderar inte att användare sparar lösen ord på sina enheter.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer-läge i Microsoft Edge
 I IE-läge på Microsoft Edge är det enkelt att använda alla webbplatser som organisationen behöver i en och samma webbläsare. Den integrerade krom motorn används för webbplatser som är kompatibla med krom åter givnings motorn och använder Trident MSHTML-motorn från Internet Explorer 11 (IE11) för webbplatser som inte är eller har beroenden till IE-funktioner. [Läs mer] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

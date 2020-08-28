@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa hur du konfigurerar en post låda för att samla in skräp post och nätfiske som rapporteras av användare.
-ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866937"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294759"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Ange en post låda för användar överföringar av skräp post och nät fiske meddelanden i Exchange Online
 
@@ -47,10 +47,10 @@ Om du levererar rapporter till en egen post låda i stället för direkt till Mi
 
   - Om du vill ändra konfigurationen för användar inlämningar måste du vara medlem i någon av följande roll grupper:
 
-    - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+    - **[Exchange-administratör](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure AD **och organisations hantering** eller **säkerhets administratör** och i [Center för säkerhets &](permissions-in-the-security-and-compliance-center.md).
     - **Organisationshantering** eller **Hygienhantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - Om du vill ha skrivskyddad åtkomst till användar innehåll måste du vara medlem i någon av följande roll grupper:
+  - Om du vill ha skrivskyddad åtkomst till användar innehåll måste du vara medlem i båda följande roll grupper:
 
     - **Säkerhetsläsare** i [Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
     - **Skrivskyddad organisationshantering** i [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).

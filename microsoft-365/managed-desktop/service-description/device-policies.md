@@ -1,6 +1,6 @@
 ---
 title: Enhetskonfiguration
-description: Lär dig mer om standardprinciperna för Microsoft Managed Desktop-enheter.
+description: Läs mer om standard principerna som används på Microsoft Managed Station ära enheter.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d16f63490de8060eea7ef06a4ad6960d846f16eb
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529391"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289715"
 ---
 # <a name="device-configuration"></a>Enhetskonfiguration
 
@@ -23,35 +23,35 @@ ms.locfileid: "46529391"
 
 <!-- Device configuration and Security Addendum-->
 
-När en ny Microsoft Managed Desktop-enhet konfigureras ser vi till att den har rätt konfiguration optimerad för Microsoft Managed Desktop. Detta inkluderar en uppsättning standardprinciper som anges som en del av introduktionsprocessen. Dessa principer levereras med hjälp av MDM (Mobile Device Management) när det är möjligt. Mer information finns i [Hantering av mobila enheter](https://docs.microsoft.com/windows/client-management/mdm/). 
+När en ny Microsoft-hanterad stationär enhet konfigureras kontrollerar vi att den har rätt konfiguration som är optimerad för Microsoft Managed Desktop. Detta inkluderar en uppsättning standard principer som är inställda som en del av registrerings processen. Dessa principer levereras med hantering av mobila enheter (MDM) när så är möjligt. Mer information finns i [Hantera mobila enheter](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 >[!NOTE]
->Ändra inte dessa principer för att undvika konflikter.
+>För att undvika konflikter bör du inte ändra dessa principer.
 
-Enheter kommer fram med en signaturavbildning och ansluter sedan till Azure Active Directory-domänen när den första användaren loggar in. Enheten installerar automatiskt nödvändiga principer och program utan att din IT-personal behöver ingripa.
+Enheter kommer med en disksignatur och ansluter sedan till Azure Active Directory-domänen när den första användaren loggar in. Enheten installerar automatiskt nödvändiga principer och program utan att behöva göra något från din IT-personal.
 
-## <a name="default-policies"></a>Standardprinciper
+## <a name="default-policies"></a>Standard principer
 
-I den här tabellen visas standardprinciper som tillämpas på alla Microsoft-hanterade skrivbordsenheter under enhetsetablering. Alla identifierade ändringar som inte godkänts av Microsoft Managed Desktop Operations Team till objekt som hanteras av Microsoft Managed Desktop återställs.
+I den här tabellen står det standard principer som används för alla Microsoft-hanterade Skriv bords enheter under enhets etablering. Alla upptäckta ändringar som inte har godkänts av Microsoft Managed Desktop Operations team för objekt som hanteras av Microsoft Managed Desktop återställs.
 
-Politik | Beskrivning
+Autentiseringsprincip | Beskrivning
 --- | ---
-Säkerhetsbaslinje | [Microsofts säkerhetsbaslinje](https://docs.microsoft.com/windows/device-security/windows-security-baselines) för MDM är konfigurerad för alla Microsoft Managed Desktop-enheter. Den här baslinjen är konfigurationen av branschstandard. Det är offentligt släppt, väl testat och har granskats av Microsofts säkerhetsexperter för att hålla Microsoft Managed Desktop-enheter och appar säkra på den moderna arbetsplatsen. <br><br>För att minska hoten i det ständigt föränderliga säkerhetshotlandskapet uppdateras och distribueras Microsofts säkerhetsbaslinje till Microsoft Hanterade stationära enheter med varje Windows 10-funktionsuppdatering.<br><br>Mer information finns i [Windows säkerhetsbaslinjer](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
-Microsoft Managed Desktop rekommenderad säkerhetsmall | En uppsättning rekommenderade ändringar av säkerhetsbaslinjen som optimerar användarupplevelsen.  Dessa ändringar dokumenteras i [säkerhetstillägget](#security-addendum). Uppdateringar av principtillägget sker efter behov.  
-Uppdatera distribution | Använd Windows Update för företag för att utföra gradvis distribution av programuppdateringar. IT-administratörer kan inte ändra inställningarna för distributionsgruppsprinciperna. Mer information om gruppbaserad distribution finns i Så här [hanteras uppdateringar i Microsoft Managed Desktop](updates.md).
-Anslutningar med datapriser | Som standard inaktiveras uppdateringar över anslutningar med datapriser (till exempel LTE-nätverk), även om varje användare självständigt kan aktivera den här funktionen i **Inställningar > Uppdateringar > Avancerade alternativ**. Om du vill tillåta alla användare att aktivera uppdateringar via anslutningar med datapriser [skickar du en ändringsbegäran](../working-with-managed-desktop/admin-support.md)som aktiverar den här inställningen för alla enheter.
-| Enhetsefterlevnad | Dessa principer är konfigurerade för alla Microsoft Managed Desktop-enheter. En enhet rapporteras som icke-kompatibel när den driver från vår nödvändiga säkerhetskonfiguration.
+Säkerhets bas linje | [Microsofts säkerhets bas linje](https://docs.microsoft.com/windows/device-security/windows-security-baselines) för MDM är konfigurerat för alla Microsoft-hanterade Skriv bords enheter. Denna bas linje är den branschstandardiserade konfigurationen. Den är offentlig, väl testad och har granskats av Microsofts säkerhets experter för att hålla Microsoft Managed Station ära enheter och appar säkra på den moderna arbets platsen. <br><br>För att minska riskerna i den ständigt växande säkerhets hotet, kommer Microsofts säkerhets bas linje att uppdateras och distribueras till Microsoft Managed Desktop-enheter med varje Windows 10-funktions uppdatering.<br><br>Mer information finns i [säkerhets bas linjer för Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
+Microsoft Managed Desktop-Rekommenderad säkerhetsmall | En uppsättning rekommenderade ändringar av säkerhets bas linjen som optimerar användar upplevelsen.  Dessa ändringar dokumenteras i [säkerhets tillägget](#security-addendum). Uppdateringar av princip tillägget sker på ett lämpligt sätt.  
+Uppdaterings distribution | Använd Windows Update för företag för att utföra en successiv distribution av program varu uppdateringar. IT-administratörer kan inte ändra inställningar för grup principer för distribution. Mer information om gruppbaserad distribution finns i [hur uppdateringar hanteras på Microsoft Managed Desktop](updates.md).
+Anslutningar med datapriser | Uppdateringar över anslutningar med datapriser (till exempel LTE-nätverk) är inaktiverade som standard, även om varje användare kan aktivera den här funktionen i **inställningar > uppdateringar > avancerade alternativ**. Om du vill tillåta att alla användare aktiverar uppdateringar via anslutningar med datapriser [skickar du en ändringsbegäran](../working-with-managed-desktop/admin-support.md)och aktiverar den här inställningen för alla enheter.
+| Kompatibilitet med enheter | Dessa principer är konfigurerade för alla Microsoft-hanterade Skriv bords enheter. En enhet rapporteras som icke-kompatibel när vår säkerhets konfiguration används.
 
 ## <a name="diagnostic-data"></a>Diagnostikdata
 
- Enheter kommer att ställas in för att ge förbättrade diagnostikdata till Microsoft under en känd kommersiell identifierare. Som en del av Microsoft Managed Desktop kan IT-administratörer inte ändra dessa inställningar. För kunder i allmänna dataskyddsförordning (GDPR) regioner, slutanvändare kan minska nivån på diagnostiska data som tillhandahålls, men det kommer att bli en minskning av tjänsten. Microsoft Managed Desktop kan till exempel inte samla in de data som krävs för att iterera om inställningar och principer för att bäst tillgodose prestanda- och säkerhetsbehov. Mer information finns [i Konfigurera Windows-diagnostikdata i organisationen.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Enheter ställs in för att tillhandahålla utökade diagnostikdata till Microsoft under ett känt handels-ID. Som en del av Microsoft Managed Desktop kan IT-administratörer inte ändra de här inställningarna. För kunder i GDPR-regioner (General Data Protection förordning) kan användarna minska den nivå med diagnostikdata som tillhandahålls, men tjänsten minskar också. Microsoft Managed Desktop kan till exempel inte samla in de data som behövs för att iterera efter inställningar och policyer för bästa prestanda och säkerhets behov. Mer information finns i [Konfigurera diagnostikdata för Windows i organisationen.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
-## <a name="security-addendum"></a>Tillägg för säkerhet
+## <a name="security-addendum"></a>Säkerhets tillägg
 
- I det här avsnittet beskrivs de principer som ska distribueras utöver standardprinciperna för Microsoft Managed Desktop som anges i [standardprinciper](#default-policies). Den här konfigurationen är utformad med finansiella tjänster och högt reglerade branscher i åtanke, optimera för högsta säkerhet samtidigt som användarnas produktivitet bibehålls.
+ I det här avsnittet beskrivs de principer som ska distribueras utöver de vanliga Microsoft Managed Desktop-principerna i [standard principer](#default-policies). Denna konfiguration är utvecklad med finans tjänster och högreglerade branscher och optimerar för högsta säkerheten samtidigt som användar produktiviteten upprätthålls.
 
- ### <a name="additional-security-policies"></a>Ytterligare säkerhetsprinciper
+ ### <a name="additional-security-policies"></a>Ytterligare säkerhets principer
 
- Denna politik läggs till för att öka säkerheten för starkt reglerade industrier. 
- - **Säkerhetsövervakning:** Microsoft övervakar enheter med [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Om ett hot upptäcks meddelar Microsoft kunden, isolerar enheten och åtgärdar problemet på distans. 
- - **Inaktivera PowerShell V2**: Microsoft tog bort PowerShell V2 i augusti 2017. Den här funktionen har inaktiverats på alla Microsoft Managed Desktop-enheter. Mer information om den här ändringen finns i [Windows PowerShell 2.0 Deprecation](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ Dessa principer läggs till för att öka säkerheten för högreglerade branscher. 
+ - **Säkerhets övervakning**: Microsoft övervakar enheter med [Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Om ett hot identifieras meddelar Microsoft kunden, isolerar enheten och kan lösa problemet från fjärran. 
+ - **Inaktivera PowerShell V2**: Microsoft har tagit bort PowerShell V2 i augusti 2017. Den här funktionen har inaktiverats på alla Microsoft-hanterade Skriv bords enheter. Mer information om den här ändringen finns i [Windows PowerShell 2,0-utfasning](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

@@ -10,69 +10,69 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430453"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289465"
 ---
 # <a name="work-with-app-control"></a>Arbeta med appens kontroll
 
-När appkontrollen har distribuerats i din miljö har både du och Microsoft Managed Desktop Operations kontinuerligt ansvar. Du kanske till exempel vill lägga till en ny app i miljön eller lägga till (eller ta bort) en betrodd undertecknare. För att förbättra säkerheten bör alla appar vara kodsignerade innan du släpper dem till slutanvändare. En apps utgivarinformation innehåller information om undertecknaren.
+När app-kontrollen har distribuerats i din miljö har både du och Microsoft hanterade Skriv bords operationer kontinuerlig ansvar. Du kanske till exempel vill lägga till en ny app i miljön eller lägga till (eller ta bort) en betrodd undertecknare. För att förbättra säkerheten bör alla appar vara kodade innan de släpps till användarna. Ett programs publicerings information innehåller information om undertecknaren.
 
 
-## <a name="add-a-new-app"></a>Lägga till en ny app
+## <a name="add-a-new-app"></a>Lägga till ett nytt program
 
-Så här lägger du till en ny app:
+Följ de här stegen om du vill lägga till ett nytt program:
 
-1. Lägg till appen [i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management).
-2. Distribuera appen till valfri enhet i testringen. 
-3. Testa din app enligt dina vanliga affärsprocesser. 
-4. Kontrollera Loggboken under **Program- och tjänstloggar\Microsoft\Windows\AppLocker**och leta efter eventuella **8003-** eller **8006-händelser.** Dessa händelser indikerar att appen skulle blockeras. Mer information om alla App Locker-händelser och deras betydelser finns i [Använda Loggboken med AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
-5. Om du hittar någon av dessa händelser öppnar du en undertecknarbegäran med Microsoft Managed Desktop Operations.
+1. Lägg till programmet i [Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management).
+2. Distribuera appen till valfri enhet i test ringen. 
+3. Testa programmet enligt dina vanliga affärs processer. 
+4. Kontrol lera logg boken under **program-och Logs\Microsoft\Windows\AppLocker**, och leta efter eventuella **8003** -eller **8006** -händelser. De här händelserna indikerar att programmet blockerades. Mer information om alla program lås händelser och deras betydelser finns i [använda logg boken med AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
+5. Om du hittar några av de här händelserna kan du öppna en undertecknare med Microsoft Managed Station ära datorer.
 
 ## <a name="add-or-remove-a-trusted-signer"></a>Lägga till (eller ta bort) en betrodd undertecknare
 
-När du öppnar en undertecknarbegäran måste du ange viktig information om utgivaren först. Följ sedan dessa steg:
+När du öppnar en undertecknare måste du ange viktig information om utgivaren först. Gör sedan följande:
 
-1. [Samla in information om utgivare](#gather-publisher-details).
-2. Öppna en biljett med Microsoft Managed Desktop Operations för att begära undertecknarregeln och inkludera följande information:  
-    - Programnamn 
-    - Programversion 
+1. [Samla in information om utgivaren](#gather-publisher-details).
+2. Öppna en biljett med Microsoft Managed Station ära datorer för att begära undertecknarens regel och ange följande information:  
+    - Program namn 
+    - Program version 
     - Beskrivning 
-    - Ändra typ ("lägg till" eller "ta bort")  
-    - Information om utgivare (till exempel : "O= <publisher name> ,L= <location> ,S=State,C=Country") 
+    - Ändra typ ("Lägg till" eller "ta bort")  
+    - Information om utgivaren (till exempel: "O = <publisher name> , L = <location> , S = State, C = Country") 
 
 > [!NOTE]
-> Om du vill ta bort förtroendet för en app följer du samma steg, men anger **Ändra typ** för att *ta bort*.
+> Om du vill ta bort förtroendet för ett program följer du samma steg, men ange **ändra typ** för att *ta bort*.
 
-Åtgärder distribuerar progressivt principer till distributionsgrupper enligt det här schemat:
+Operationer distribuerar automatiskt principer till distributions grupper enligt det här schemat:
 
 
-|Distributions grupp  |Typ av princip  |Timing  |
+|Distributions grupp  |Typ av princip  |Avseende  |
 |---------|---------|---------|
-|Test     |  Revision       |  Dag 0       |
-|Första     | Verkställas        | Dag 1        |
-|Snabb     | Verkställas        |  Dag 2       |
-|Bred     | Verkställas        |  Dag 3       |
+|Tävlingar     |  Revisions       |  Dag 0       |
+|Skapas     | Tvingande        | Dag 1        |
+|Snabbspola     | Tvingande        |  Dag 2       |
+|Personer     | Tvingande        |  Dag 3       |
 
 
-Du kan pausa eller återställa distributionen när som helst under distributionen. Det gör du genom att öppna en annan tjänstbegäran med åtgärder.
+Du kan pausa eller återställa distributionen när som helst under installationen. Det gör du genom att öppna en annan tjänstbegäran med operationer.
 
 > [!NOTE]
-> Om du pausar frisättningen av en undertecknarregel måste den regeln antingen återställas eller slutföras innan en annan distribution kan starta.
+> Om du pausar utgivningen av en signerings regel måste den regeln antingen ångras eller slutföras innan en ny installation kan startas.
 
 ## <a name="gather-publisher-details"></a>Samla in information om utgivare
 
-Så här kommer du åt utgivardata för en app:
+Följ de här stegen om du vill få åtkomst till Publisher-data för en app:
 
-1. Hitta en Microsoft-hanterad skrivbordsenhet i testringen som har en princip för granskningsläge tillämpad. 
+1. Hitta en Microsoft-hanterad stationär enhet i test ringen som har en policy för gransknings läge installerad. 
 2. Försök att installera appen på enheten.
-3. Öppna Loggboken på den enheten. 
-4. I Loggboken navigerar du till **program- och tjänstloggar\Microsoft\Windows**och väljer sedan **AppLocker**. 
-5. Hitta en händelse på **8003** eller **8006** och kopiera sedan information från evenemanget: 
-    - Programnamn 
-    - Programversion 
+3. Öppna logg boken på enheten. 
+4. I logg boken navigerar du till **program-och Logs\Microsoft\Windows**och väljer sedan **AppLocker**. 
+5. Hitta en **8003** -eller **8006** -händelse och kopiera sedan information från händelsen: 
+    - Program namn 
+    - Program version 
     - Beskrivning 
-    - Information om utgivare (till exempel: "O= <publisher name> , L= <location> , S=State, C=Country") 
+    - Information om utgivaren (till exempel: "O = <publisher name> , L = <location> , S = State, C = Country") 

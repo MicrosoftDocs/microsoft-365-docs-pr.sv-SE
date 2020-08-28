@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 470047da0a1902a6076add27a6e7ac516edd3150
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46869013"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289763"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
@@ -93,9 +93,9 @@ Du kan övervaka förloppet av enhets registreringen på huvud sidan för **hant
 |---------------|-------------|
 | AutopilotRegistrationRequested | Registreringen är inte klar ännu. Kom tillbaka senare. |
 | Registreringen misslyckades | Det gick inte att genomföra registreringen. Mer information finns i [fel sökning av enhets registrering](#troubleshooting-device-registration) . |
-| Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till slutanvändaren. Microsoft Managed Desktop vägleder dem genom första gången, vilket innebär att du inte behöver göra några fler förberedelser. |
-| Aktiva | Enheten har levererats till slutanvändaren och de har registrerat sig hos din klient organisation. Detta indikerar också att de ofta använder enheten. |
-| Inaktiv | Enheten har levererats till slutanvändaren och de har registrerat sig hos din klient organisation. De har emellertid inte använt enheten nyligen (under de senaste 7 dagarna).  | 
+| Redo för användare | Registreringen lyckades och enheten är nu klar att levereras till användaren. Microsoft Managed Desktop vägleder dem genom första gången, vilket innebär att du inte behöver göra några fler förberedelser. |
+| Aktiva | Enheten har levererats till användaren och har registrerats hos din klient organisation. Detta indikerar också att de ofta använder enheten. |
+| Inaktiv | Enheten har levererats till användaren och har registrerats hos din klient organisation. De har emellertid inte använt enheten nyligen (under de senaste 7 dagarna).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Felsöka registrering av enheter
 

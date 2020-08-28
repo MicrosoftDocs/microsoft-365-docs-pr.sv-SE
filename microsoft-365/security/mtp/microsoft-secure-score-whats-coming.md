@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866925"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289669"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Det här kommer att komma till Microsofts säkra Poäng
 
@@ -30,13 +30,12 @@ Vi håller på att göra några ändringar i närmaste framtid och gör [Microso
 
 ## <a name="proposed-changes"></a>Föreslagna ändringar
 
-Dessa ändringar kan komma till din säkra poäng i Microsoft snart, beroende på vilken licens du har. Om du vill veta mer om de senaste ändringarna kan du läsa [Nyheter i Microsoft säkra Poäng?](microsoft-secure-score-whats-new.md)
-
-- Om du ändrar Max poängen från 7 till 8 för förbättrings åtgärden för Azure Active Directory med namnet "Aktivera princip för blockering av äldre-verifikation"
+### <a name="september-2020"></a>September 2020
+- Inga ändringar planerade
 
 ## <a name="related-resources"></a>Relaterade resurser
 
 - [Översikt över Microsofts säkra Poäng](microsoft-secure-score.md)
 - [Utvärdera säkerhets genom övergå molnet](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft säkra Poäng historik och uppfylla målen](microsoft-secure-score-history-metrics-trends.md)
-- [Vad är nytt](microsoft-secure-score-whats-new.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)

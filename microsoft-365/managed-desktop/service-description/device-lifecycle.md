@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop-produktlivscykel
-description: I det här avsnittet visas enhetsspecifikationerna som används i Microsoft Managed Desktop.
+title: Produkt livs cykel för Microsoft Managed Desktop
+description: I det här avsnittet finns en lista med de enhetsspecifika som används på Microsoft Managed Desktop.
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -8,107 +8,107 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 89dbf0e67c112743a557842bb32555d3a079743b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529953"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289799"
 ---
-# <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Managed Desktop-produktlivscykel
+# <a name="microsoft-managed-desktop-product-lifecycle"></a>Produkt livs cykel för Microsoft Managed Desktop
 
-Microsoft Managed Desktop gynnar slutanvändare som försäkrar att de alltid använder enheter som erbjuder bästa prestanda, tillförlitlighet, design och säkerhetsfunktioner (till exempel stöd för funktioner som Windows Hello). För att åstadkomma detta har Microsoft Managed Desktop en kort katalog med kontinuerligt uppdaterade [godkända enheter](device-list.md). 
+Microsoft Managed Station ära datorer gör det möjligt för användare att alltid använda enheter som erbjuder bästa prestanda, tillförlitlighet, design och säkerhets kapacitet (till exempel support för funktioner som Windows Hello). Det här kan du göra genom att Microsoft Managed Desktop hanterar en kort katalog med kontinuerligt uppdaterade [godkända enheter](device-list.md). 
  
-I det här avsnittet beskrivs enheternas livscykel när de läggs till och tas bort från den godkända katalogen. 
+I det här avsnittet beskrivs enheternas livs cykel när de läggs till och tas bort från den godkända katalogen. 
 
 > [!NOTE]
-> I det här avsnittet kommer vi att göra en åtskillnad mellan en "enhet" och en "produkt". Med "enhet" menar vi en enskild, specifik dator. Till exempel "Serienummer 1234", "Bill's laptop", "Delad VM XYZ" hänvisar till specifika enheter. En "produkt" avser dock en samling eller en familj av enheter. Till exempel "Fabrikam Laptop", "Adatum ZX450 Laptop", etc. Detta är viktigt eftersom produkter läggs till i vår [godkända lista](device-list.md)eller katalog, och enheter är det som registreras på Microsoft Managed Desktop.
+> I det här avsnittet ska vi skilja mellan en "enhet" och en "produkt". Med "enhet" innebär detta en person, specifik dator. Till exempel "seriellt nummer 1234", "Bill ' s laptop", "Shared VM XYZ" refererar till specifika enheter. En "produkt" refererar emellertid till en samling eller en familj av enheter. Till exempel "Fabrikam laptop", "adatum ZX450 laptop" osv. Det är viktigt eftersom produkter läggs till i vår [godkända lista](device-list.md)eller katalog och enheter är de som finns registrerade på Microsoft Managed Desktop.
 
 ## <a name="product-lifecycle"></a>Produktens livscykel
 
- I allmänhet rör sig produkterna genom dessa livscykelfaser:
+ Vanligt vis rör sig produkterna i dessa livscykler:
 
-- [Produktrelease och utvärdering](#product-release-and-evaluation)
-- [Produktens primära tillgänglighetsperiod](#product-primary-availability-period)
-- [Produktens respitperiod](#product-grace-period)
-- [Pensionering av produkter](#product-retirement)
+- [Produkt lansering och utvärdering](#product-release-and-evaluation)
+- [Primär tillgänglighets period för produkten](#product-primary-availability-period)
+- [Respittid för produkter](#product-grace-period)
+- [Produkt Pension](#product-retirement)
 
 
 Den här bilden visar hela sekvensen:
 
-![livscykeltidslinje: från och med produktens allmänna tillgänglighet varar "primär tillgänglighet" i två år. Under denna tid slutar certifieringsfönstret och någon gång enheten är ombord. I slutet av den primära tillgängligheten arkiveras produkten och "respitperioden" på tre år börjar. Från och med enheten är ombord, den har en 3-års användningsperiod tills den tas bort från ledningen. I slutet av respitperioden tar vi bort produkten från katalogen.](../../media/non-dark1-edits.PNG)
+![tids linje för livs cykel: att börja med produktens allmänna tillgänglighet, varar i två år. Under den här tiden är certifierings fönstret slut och vid viss tidpunkt är enheten indriven. Vid slutet av primär tillgängligheten arkiveras produkten och "respitperioden" för tre år börjar. Med början när enheten är uppkopplad, har den en 3-års period för användning tills den tas bort från ledningen. I slutet av respitperioden tar vi bort produkten från katalogen.](../../media/non-dark1-edits.PNG)
 
-Produkterna finns kvar i katalogen i upp till 24 månader, men <em>enheterna</em> är fortfarande under hantering i 3 år baserat på deras individuella registreringsdatum. Effektivt, varje produkt har tre viktiga datum, men varje enhet har bara en. För produkter beräknas alla tre dessa datum baserat på <em>godkännandedatumet,</em>och därför publicerar vi dessa datum efter godkännande så att du alltid kan se framåt och planera på lämpligt sätt för produktens hela livscykel.
+Produkterna finns kvar i katalogen i upp till 24 månader men <em>enheter</em> kan fortfarande vara under hantering för 3 år baserat på deras enskilda registrerings datum. Varje produkt har dessutom tre viktiga datum men varje enhet har bara en. För produkter beräknas alla tre dessa datum utifrån <em>godkännande datum</em>och därför publicerar vi dessa datum vid godkännandet så att du alltid kan se upp och planera lämpligt för hela livs cykeln.
 
-I den här tabellen visas exempeldatum för en teoretisk produkt:
+I den här tabellen visas exempel datum för en teoretisk produkt:
 
 
-|Produkt  |Godkänt datum  |på primär tillgänglighet  |på behörigheten  |
+|Produkt  |Godkänt datum  |Slut på primär tillgänglighet  |Slut på berättigande  |
 |---------|---------|---------|---------|
-|Fabrikam Bärbar dator    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
-|Adatum Bärbar dator   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
+|Fabrikam bärbar dator    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
+|Adatum bärbar dator   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
 
-I den här tabellen visas exempeldatum för teoretiska *enheter:*
+I den här tabellen visas exempel datum för teoretiska *enheter*:
 
 
-|Enhets-ID  |Datum för registrering  |Pensioneringsdatum  |
+|Enhets-ID  |Registrerings datum  |Pensions datum  |
 |---------|---------|---------|
-|Laptop #123412     |  2/3/2018       |  2/3/2021       |
-|Stationär #321513     | 6/2/2018        |  6/2/2021       |
+|#123412 för bärbara datorer     |  2/3/2018       |  2/3/2021       |
+|Skriv bords #321513     | 6/2/2018        |  6/2/2021       |
 
 
-## <a name="product-release-and-evaluation"></a>Produktrelease och utvärdering
+## <a name="product-release-and-evaluation"></a>Produkt lansering och utvärdering
 
-Produktens livscykel startar när en tillverkare offentliggör produkten:
+Produkt livs cykeln startar när en tillverkare släpper produkten allmänt:
 
-![livscykeltidslinje som visar utgivnings- och utvärderingsperioden](../../media/non-dark3-edits.PNG)
+![livscykel tids linje som visar släpp-och utvärderings period](../../media/non-dark3-edits.PNG)
 
-Under det här skedet gör Microsoft Managed Desktop-teknikteamet utvärdering och certifiering av en produkt. Teamet utvärderar saker som tillförlitlighet och prestanda med Windows, efterlevnad av en maskinvarubaslinje, marknadssentiment och lager- och kanalberedskap, bland annat. Denna process tar vanligtvis cirka 6 veckor.
+Under den här fasen utför Microsoft Managed Desktop Engineering-teamet sin utvärdering och certifiering av en produkt. Teamet utvärderar saker som pålitlighet och prestanda med Windows, uppfyllt med en maskin varu bas, marknads attityd och lager-och kanal beredskap, bland annat. Den här processen tar vanligt vis ungefär 6 veckor.
   
-Microsoft Managed Desktop utvärderar endast enheter för certifiering inom de första 6 månadernas tillgänglighet. Detta säkerställer att vi alltid fokuserar våra ansträngningar på den senaste generationens hårdvara.
+Microsoft Managed Station ära dator utvärdera endast enheter för certifiering inom de första 6 månaderna efter tillgänglighet. Detta garanterar att vi alltid fokuserar våra ansträngningar på den senaste generationens maskin vara.
  
-I slutet av den här fasen lägger Microsoft Managed Desktop till produkten i den [godkända listan](device-list.md)och släpper produkten effektivt för kundregistreringar. Oavsett vilket datum en enhet är certifierad är dess **godkända datum** back-daterat till produktens eget allmänna tillgänglighetsdatum. 
+I slutet av den här fasen lägger Microsoft hanterat skriv bord med produkten till den [godkända listan](device-list.md)och fri släpp produkten för kund registrering. Oavsett det datum då en enhet **är godkänd, dateras den tillbaka** till produktens eget allmänna tillgänglighets datum. 
 
 
-## <a name="product-primary-availability-period"></a>Produktens primära tillgänglighetsperiod
+## <a name="product-primary-availability-period"></a>Primär tillgänglighets period för produkten
 
-Denna period är kärnan i produkttillgängligheten:
+Den här perioden är kärnan till produkt tillgänglighet:
 
-![livscykeltidstidslinje som visar primär tillgänglighet](../../media/non-dark4-edits.PNG)
+![livs cykel med primär tillgänglighet](../../media/non-dark4-edits.PNG)
 
-Alla enheter som registreras under den här perioden får hela tre års support från Microsoft Managed Desktop (vilket visas av den blå tidslinjen). Den här perioden varar till ett slutdatum som är satt till 24 månader från det allmänna tillgänglighetsdatumet.
+Alla enheter som registrerats under den här perioden får de tre bästa supporterna från Microsoft Managed Desktop (som visas i den blå tids linjen). Denna period varar i ett slutdatum som infaller 24 månader efter det allmänna tillgänglighets datumet.
 
-Du kan se den här perioden som en effektiv "öppen registrering", så för att maximera värdet på Microsoft Managed Desktop bör du inrikta dina anskaffningsmodeller och utvalda produkter att omfattas av den här perioden. Som ett litet exempel bör en kund undvika att lösa en tvåårig utrullningsperiod med hjälp av en produkt som är i sin sista månad med primär tillgänglighet – de flesta av dessa enheter kommer inte att få hela tre år av Microsoft Managed Desktop-hantering (se [respitperiod](#product-grace-period) för mer information).  
+Du kan se den här tiden som effektivt "öppna registrering", så för att maximera värdet på Microsoft Managed Desktop bör du rikta dina inköps modeller och produkter att falla under den här perioden. Som ett litet exempel bör en kund inte kvittas under en två års period med hjälp av en produkt som finns i dess slutliga månads primära tillgänglighet – de flesta av dessa enheter kommer inte att få de tre åren av Microsoft Managed Desktop Management (se [respitperioden](#product-grace-period) för mer information).  
 
-## <a name="product-grace-period"></a>Produktens respitperiod
+## <a name="product-grace-period"></a>Respittid för produkter
 
-Produktens respitperiod är en treårsperiod efter primär tillgänglighet. Med den här fasen kan du registrera enheter som kommer från en produktfamilj som stöds, men ändå hålla fast vid löftena från Microsoft Managed Desktop om modern maskinvara och enhetsprestanda. Den här fasen är idealisk för kunder som har fattat upphandlingsbeslut innan de vet om Microsoft Managed Desktop. 
+Respittiden för produkten är en tre års period efter primär tillgänglighet. I den här fasen kan du registrera enheter som kommer från en produkt familj som stöds, men du kan fortfarande hålla fast till löftet av Microsoft Managed Desktop angående modern hård vara och enhets prestanda. Den här fasen är idealisk för kunder som har fattat beslut om offentlig upphandling innan de vet om Microsoft Managed Desktop. 
 
-Om du nyligen har köpt ett antal godkända enheter innan du registrerar dig på Microsoft Managed Desktop kan du fortfarande registrera dem, men du får inte hela tre års hantering. Istället kommer de att falla ur överensstämmelse på pensionering datum, oavsett när de var inskrivna. Bakom kulisserna behandlar Microsoft Managed Desktop dessa enheter som om de registrerades den sista dagen av primär tillgänglighet. I den här bilden kan du se det här scenariot genom att notera att både den blå och den gröna enheten slutar på samma dag, trots deras ett års skillnad i registrering:
+Om du nyligen har köpt ett antal godkända enheter innan du har registrerat dig hos Microsoft Managed Desktop kan du ändå registrera dem, men du får inte ett fullständigt tre års hanterings stöd. I stället kommer de att falla på avtiden, oavsett när de registrerades. Bakom kulisserna behandlas dessa enheter som om de var registrerade på den sista dagen med primär tillgänglighet. I den här bilden kan du se det här scenariot genom att Observera att både den blå och gröna enheten slutar på samma dag, trots en års skillnad i anmälan:
 
 
-![livscykeltidslinje som visar respitperiod](../../media/non-dark2-edits.PNG)
+![livs cykel med tids period](../../media/non-dark2-edits.PNG)
 
-Exemplet Fabrikam Laptop från föregående tabell illustrerar den här situationen: 
+I exemplet Fabrikam laptop från föregående tabell visas den här situationen: 
 
-|Produkt  |Godkänt datum  |på primär tillgänglighet  |på behörigheten  |
+|Produkt  |Godkänt datum  |Slut på primär tillgänglighet  |Slut på berättigande  |
 |---------|---------|---------|---------|
-|Fabrikam Bärbar dator    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
+|Fabrikam bärbar dator    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
-Som kund kan du registrera Fabrikam-bärbara datorer hela vägen fram till 2022-06-01 – men de kommer alla att behandlas som om du registrerade dem den 6/1/2019. Om du registrerar en fabrikam-bärbar dator den 2021-06-1 får du bara ett års hantering. Med den här principen kan du extrahera partiella livscykler från produkter som tidigare stöddes, i stället för att behöva skaffa nya enheter i förtid. 
+Som kund kan du registrera Fabrikam-datorer på alla sätt tills 6/1/2022 – de kommer att behandlas som om du registrerade dem på 6/1/2019. Om du registrerar en dator med Fabrikam på 6/1/2021 får du bara ett års administration. Med den här principen kan du extrahera delvis livscykler från produkter som tidigare stöddes, i stället för att behöva skaffa nya enheter för tidigt. 
 
-Slutligen tas enheten bort från [enhetslistan](device-list.md) under den här fasen och flyttas till listan [över arkiverade enheter](archived-device-list.md).
+Under den här fasen tas enheten bort från [enhets listan](device-list.md) och flyttas till [listan med arkiverade enheter](archived-device-list.md).
 
 
-## <a name="product-retirement"></a>Pensionering av produkter
+## <a name="product-retirement"></a>Produkt Pension
 
-Produktpensionering är livscykelns slutfas. I den här fasen kan inga nya enheter av den produkttypen registreras i Microsoft Managed Desktop och per definition ligger alla befintliga enheter nu utanför den tillåtna treårsperioden. Under den här tiden tar Microsoft Managed Desktop bort enheten helt och hållet. Det är också under denna fas där du, om du inte redan har skaffat ersättningar, börjar se minskade tjänster när Microsoft Managed Desktop börjar rampa ner på de enheter som inte uppfyller kraven. 
+Produkt Pension är den sista fasen i livs cykeln. I den här fasen kan inga nya enheter med den här produkt typen vara registrerade på Microsoft Managed Desktop och efter definition finns alla befintliga enheter nu utanför deras tillåtna tre års period. Under den här tiden tas enheten bort från den offentliga listan helt och hållet. Det är också under den här fasen, där, om du inte redan har gjort det, kommer du att se mindre tjänster som Microsoft Managed Desktop startar för att öka rampen på de enheter som uppfyller kraven. 
 
 ## <a name="devices-that-are-out-of-compliance"></a>Enheter som inte uppfyller kraven
 
-En enhet är inte förenligt när det tillåtna fönstret för Hantering av Microsoft Managed Desktop har förflutit. Detta inträffar när enheten har uppnått tre års hantering eller när den produkttypen tas bort från enhetskatalogen, beroende på vilket som inträffar först. Du bör alltid inrikta dig på dina anskaffningscykler så att nya enheter distribueras innan aktuella enheter inte uppfyller kraven.
+En enhet har slut på efterlevnad när dess tillåtna fönster för Microsoft Managed Desktop Management har förflutit. Detta inträffar när enheten har nått tre års hantering eller när den produkt typen tas bort från enhets katalogen, beroende på vilket som inträffar först. Du bör alltid vara riktad på dina inköps cyklar, så att nya enheter distribueras före de aktuella enheterna.
 
-Microsoft Managed Desktop-teamet vet att anskaffningscyklerna är långa och planerade kring tidskrävande budgetar. För att säkerställa att du alltid är medveten om tillståndet för din enhetspopulation tillhandahåller vi en [webbplats](https://aka.ms/mmdportal) som listar varje enhet som är under hantering, dess ålder och en status som anger att den uppfyller kraven. Det innebär att du alltid har den senaste informationen om enhetens ålder och kan använda rapporten i alla planeringscykler för upphandlingar. 
+Microsoft Managed Desktop-teamet vet att de uppringda serierna är långa och planerade för långsiktiga budgetar. För att se till att du alltid känner till statusen för din enhets population tillhandahåller vi en [webbplats](https://aka.ms/mmdportal) med en lista över alla enheter under hantering, dess ålder och en status som anger hur de efterlevs. Det innebär att du alltid har den senaste informationen om enhetens ålder och kan använda rapporten i en planerings cykel för inköp. 
 
 
 

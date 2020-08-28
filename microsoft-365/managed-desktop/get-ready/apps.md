@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530109"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289597"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Appar på Microsoft Hanterat skrivbord
 
@@ -22,53 +22,53 @@ ms.locfileid: "46530109"
 
 <!--Applications: supported/onboard/deployment -->
  
-## <a name="apps-generally"></a>Appar i allmänhet
+## <a name="apps-generally"></a>Vanligt vis appar
 
-Microsoft innehåller vissa viktiga appar tillsammans med microsoft 365 E3- eller E5-licensen som behövs för att delta i Microsoft Managed Desktop. Men även om vi tillhandahåller dessa appar har du fortfarande vissa ansvarsområden och åtgärder att slutföra.
+Microsoft inkluderar vissa viktiga appar tillsammans med Microsoft 365 E3-eller E5-licensen som behövs för att delta på Microsoft Managed Desktop. Men även om vi tillhandahåller dessa appar har du fortfarande vissa skyldigheter och åtgärder att slutföra.
 
-Du kan också distribuera ytterligare appar som inte kommer från Microsoft till slutanvändarna för självbetjäning via företagsportalen eller en nödvändig bakgrundsinstallation, som alla använder Microsoft Intunes distributionspipeline. Om du har den expertis som du har den expertis du behöver själv. Alternativt hjälper Microsoft Consulting Services (MCS) eller leverantörer utanför Microsoft dig gärna med ett paketerings- och migreringsprojekt. Mer information om hur du arbetar med MCS finns i [Arbeta med Microsoft Consulting Services](apps-MCS.md).
-
-
-## <a name="apps-provided-by-microsoft"></a>Appar från Microsoft
-
-Med din Microsoft Managed Desktop-licens ingår 64-bitarsversioner av apparna i Microsoft 365 Apps for Enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag och OneNote.) Klicka-och-kör-versioner av Microsoft Project och Visio ingår *inte* som standard, men du kan begära att de läggs till. Mer information om dessa appar finns i [Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Desktop-enheter](../get-started/project-visio.md).
-
-### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Vad Microsoft gör för att stödja de appar vi tillhandahåller
-
-Microsoft tillhandahåller full service för distribution, uppdatering och support för de inkluderade Microsoft 365 Apps för företagsappar. Klicka-och-kör-versioner av Microsoft Project och Visio ingår *inte* som standard, men Microsoft Managed Desktop tillhandahåller distributionsgrupper som gör det möjligt för IT-administratören att hantera licenser och distribuera dessa program på rätt sätt för din organisation. Microsoft stöder slutanvändare av dessa program via Microsoft Managed Desktop-supportkanalerna.
-
-### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Vad du behöver göra för att stödja de appar vi tillhandahåller
-
-Det finns fortfarande vissa saker du behöver göra med dessa appar:
-
-- **Tilldela licenser** – Du ansvarar för att skaffa och tilldela lämpliga licenser till slutanvändare för Microsoft 365 Apps för företag.
-- **Lägg till användare i säkerhetsgrupper** – Om du använder Microsoft Project eller Visio måste IT-administratören lägga till dessa användare i lämpliga distributionsgrupper. IT-administratörer är också ansvariga för att återkräva licenser från dessa användare om de lämnar företaget.
-- **Distribuera Microsoft 365-tillägg** – Om du behöver tillägg för någon av Microsoft 365 Apps för företagsappar kan du distribuera dem centralt som alla andra Windows 32-appar. 
-
-## <a name="apps-you-provide"></a>Appar som du tillhandahåller
-
-Naturligtvis har du förmodligen ett antal andra appar som du behöver för din verksamhet. Dessa kan endast distribueras till Microsoft Hanterade stationära enheter med hjälp av Microsoft Intunes distributionspipeline. Om appen behöver det kan du få dem paketerade av en leverantör (som kan vara en icke-Microsoft-leverantör eller Microsoft Consulting Services (MCS)) eller om du har möjlighet, kan du paketera dem själv. Du lägger sedan till dessa paket i Microsoft Managed Desktop-portalen och tilldelar dem till Azure Active Directory-grupper för att utlösa distributionen. 
-
-Om du för närvarande distribuerar dina appar med Hjälp av Microsoft Endpoint Configuration Manager kan Microsoft Managed Desktop ge dig en fråga för att bedöma dina appar och ta reda på vilka som är redo att migrera till Microsoft Intune och vilka som kan behöva justeras.
+Du kan också distribuera ytterligare icke-Microsoft-appar till dina användare själv-tjänst via företags portalen eller en nödvändig bakgrunds installation med hjälp av Microsoft Intunes drift sättning. Om du har expert isen kan du migrera de program du behöver själv; Du kan också använda MCS (Microsoft Consulting Services) eller icke-Microsoft-leverantörer för att hjälpa dig med ett paket för paketering och migrering. Mer information om hur du arbetar med MCS finns i [arbeta med Microsoft Consulting Services](apps-MCS.md).
 
 
-### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Förbereda egna appar för inkludering i Microsoft Managed Desktop
-Granska dina appar och kontrollera:
+## <a name="apps-provided-by-microsoft"></a>Appar som tillhandahålls av Microsoft
 
-- Ingen av apparna är förbjudna eller har begränsat beteende, enligt beskrivningen i [Microsoft Managed Desktop-appkrav](https://aka.ms/app-req).
-- Appar måste vara klara för hantering av Microsoft Intune. Mer information om detta finns i [distributionen av Windows 10-appar med Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) och [Lägg till appar i Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
-- Andra förpaketeringskrav, till exempel tillhandahålla licensnycklar, avtal med licensvillkor och förinställning av serveranslutningar.
+Inkluderat med din Microsoft-hanterade Skriv bords licens är 64-bitars versioner av programmen i Microsoft 365-apparna för Enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag och OneNote). Klicka-och-kör-versioner av Microsoft Project och Visio ingår *inte* som standard, men du kan begära att de ska läggas till. Mer information om de här apparna finns i [Installera Microsoft Project eller Microsoft Visio på Microsoft Managed Station ära enheter](../get-started/project-visio.md).
 
-### <a name="decide-how-to-package-apps"></a>Bestäm hur du ska paketera appar
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Vad Microsoft gör för att stödja de program vi tillhandahåller
 
-Vissa oberoende programvaruleverantörer kan kräva att dina appar är paketerade innan de distribueras centralt. "Förpackning" innebär att appens installationsprogram är konfigurerat med inställningar som licensnycklar, fjärrserverplatser eller genvägar till skrivbordet så att appen kan installeras i bakgrunden.
+Microsoft tillhandahåller fullständig service för distribution, uppdatering och support för de medföljande Microsoft 365-apparna för företags program. Klicka-och-kör-versioner av Microsoft Project och Visio ingår *inte* som standard, men Microsoft Managed Desktop tillhandahåller distributions grupper som gör att IT-administratören kan hantera licenser och distribuera dessa program på lämpligt sätt för din organisation. Microsoft kommer att stödja användare av dessa program via stöd kanaler i Microsoft Managed Desktop support.
 
-Det finns tre alternativ för att få dina appar paketerade: 
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Det här behöver du för att stödja de program vi tillhandahåller
+
+Det finns fortfarande vissa saker du måste göra med de här apparna:
+
+- **Tilldela licenser** – du ansvarar för att erhålla och tilldela lämpliga licenser till användare för Microsoft 365-appar för företag.
+- **Lägga till användare i säkerhets grupper** – om du använder Microsoft Project eller Visio måste din IT-administratör lägga till dessa användare i distributions grupperna. IT-administratörer ansvarar också för att återta licenser från dessa användare om de lämnar företaget.
+- **Distribuera Microsoft 365-tillägg** – om du behöver några tillägg för någon av Microsoft 365-apparna för företags program kan du använda dem centralt som alla andra Windows 32-program. 
+
+## <a name="apps-you-provide"></a>Program du tillhandahåller
+
+Självklart är det troligt att du har ett antal andra program som du behöver för ditt företag. Dessa kan bara distribueras till Microsoft Managed Station ära datorer med hjälp av Microsoft Intunes drift sättning. Om appen behöver den kan du ha dem paketerade av en leverantör (som kan vara en leverantör eller Microsoft Consulting Services), eller om du har det kan du paketera dem själv. Sedan lägger du till dessa paket till Microsoft Managed Desktop Portal och tilldelar dem till Azure Active Directory-grupper för att utlösa distributionen. 
+
+Om du för närvarande distribuerar dina program med hjälp av Microsoft Endpoint Configuration Manager kan Microsoft Managed Desktop förse dig med en fråga för att utvärdera dina appar och upptäcka vilka som är klara att migreras till Microsoft Intune och vilka som kan behöva justeras.
+
+
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Förbereda dina egna appar för inkludering på Microsoft Managed Desktop
+Granska dina appar, kontrol lera:
+
+- Inga av programmen är förbjudna eller har begränsat beteende, enligt beskrivningen i [Microsofts hanterade program krav](https://aka.ms/app-req).
+- Program måste vara klara för hantering av Microsoft Intune. Mer information om detta finns i [Windows 10-programdistribution med Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) och [Lägg till program i Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
+- Andra krav för förpackning som att tillhandahålla licens nycklar, avtal med licens villkor och för att konfigurera server anslutningar.
+
+### <a name="decide-how-to-package-apps"></a>Bestämma hur du ska paketera appar
+
+Vissa oberoende program varu leverantörer kan kräva att dina appar paketeras innan de distribueras centralt. "Paketera" betyder att appens installations program är konfigurerat med inställningar som licens nycklar, fjärrplatser eller Skriv bords gen vägar så att programmet kan installeras i bakgrunden.
+
+Det finns tre sätt att få dina appar paketerade: 
 
 
 - Du kan paketera appar själv
-- Du kan arbeta med en leverantör som inte kommer från Microsoft
-- Du kan samarbeta med MCS för att paketera dina appar. Arbeta med din Microsoft-kontorepresentant. Mer information finns i [Arbeta med Microsoft Consulting Services](apps-MCS.md).
+- Du kan arbeta med en leverantör som inte tillhör Microsoft
+- Du kan samar beta med MCS för att paketera dina appar. Arbeta med ditt Microsoft-konto. Mer information finns i [arbeta med Microsoft Consulting Services](apps-MCS.md).
 
 
 
@@ -78,6 +78,6 @@ Det finns tre alternativ för att få dina appar paketerade:
 
 ## <a name="deploying-apps"></a>Distribuera appar
 
-Oavsett vilken metod du använder för att paketera appar är du redo att följa stegen i [Distribuera appar till Microsoft Hanterade skrivbordsenheter](../get-started/deploy-apps.md)när du är klar.
+Oavsett vilken metod du använder för att få appar paketerade, när de är klara kan du följa stegen i [distribuera appar till Microsoft Managed Station ära datorer](../get-started/deploy-apps.md).
 
 

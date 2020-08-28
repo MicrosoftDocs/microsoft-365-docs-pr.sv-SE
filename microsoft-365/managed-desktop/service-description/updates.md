@@ -1,7 +1,7 @@
 ---
-title: Så här hanteras uppdateringar på Microsoft Managed Desktop
+title: Hur uppdateringar hanteras på Microsoft Managed Desktop
 description: Att hålla Microsoft Managed Desktop uppdaterat är en balans mellan hastighet och stabilitet.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,76 +9,76 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e7889cb1540cb2cb164cbbd44e9ec0e480a6fd5
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678700"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289501"
 ---
-# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Så här hanteras uppdateringar på Microsoft Managed Desktop
+# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Hur uppdateringar hanteras på Microsoft Managed Desktop
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/update-rings); do not delete.-->
 
 <!--Update management -->
 
-Microsoft Managed Desktop ansluter alla enheter till en modern molnbaserad infrastruktur. Att hålla Windows, Office, drivrutiner, inbyggd programvara och Microsoft Store för företag-program uppdaterade är en balans mellan hastighet och stabilitet. Distributionsgrupper används för att säkerställa att uppdateringar och principer för operativsystemet distribueras på ett säkert sätt. Mer information om detta finns i videon [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
+Microsoft Managed Desktop ansluter alla enheter till en modern molnbaserade infrastruktur. Att hålla Windows, Office, driv rutiner, fast program vara och Microsoft Store för företag-program uppdaterade är en balans mellan hastighet och stabilitet. Distributions grupper används för att säkerställa att uppdateringar och policyer för operativ systemet distribueras på ett säkert sätt. Mer information om detta finns i avsnittet om att [hantera ändringar och versioner av Microsoft Managed Desktop](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
-Uppdateringar som släpps av Microsoft är kumulativa och kategoriseras som kvalitets- eller funktionsuppdateringar.
-Mer information finns i [Windows Update för företag: Uppdateringstyper](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
+Uppdateringar som släpps av Microsoft är kumulativa och kategoriseras som kvalitet eller funktions uppdateringar.
+Mer information finns i [Windows Update för företag: uppdaterings typer](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
 ## <a name="update-groups"></a>Uppdatera grupper
 
 Microsoft Managed Desktop använder fyra Azure AD-grupper för att hantera uppdateringar:
 
-- **Test:** Används för att validera ändringar av Microsoft Managed Desktop-princip, uppdateringar av operativsystem, funktionsuppdateringar och andra ändringar som har pressats till klienten. Det bör inte finnas några slutanvändare placerade i testgruppen. Testgruppen är undantagen från alla etablerade servicenivåavtal och slutanvändarsupport. Den här gruppen är tillgänglig för användning för att verifiera kompatibilitet för program med nya princip- eller operativsystemändringar.  
-- **Första**: Innehåller tidiga programantörer och enheter som kan vara föremål för uppdateringar i förhandsversionen. Enheter i den här gruppen kan drabbas av avbrott om det finns scenarier som inte täcktes under testningen i testringen.
-- **Snabb**: Prioriterar hastighet framför stabilitet. Användbart för att upptäcka kvalitetsproblem innan de erbjuds till broad-gruppen. Den här gruppen fungerar som nästa verifieringslager men är i allmänhet stabilare än test- och förstagrupperna. 
-- **Bred:** Sista gruppen att ha funktions- och kvalitetsuppdateringar tillgängliga. Den här gruppen innehåller majoriteten av användarna i klienten och gynnar därför stabilitet framför hastighet i distributionen. Testning av appar bör göras här eftersom miljön är mest stabil. 
+- **Test**: används för att validera ändringar i Microsoft hanterade Skriv bords principer, operativ system uppdateringar, funktions uppdateringar och andra ändringar som skickas till innehavaren. Det ska inte finnas några användare i test gruppen. Test gruppen är undantagen från alla etablerade service nivå avtal och användar support. Den här gruppen kan användas för att verifiera kompatibiliteten för program med nya princip-eller operativ Systems ändringar.  
+- **Först**: innehåller tidiga program vara och enheter som kan vara föremål för för hands uppdateringar. Enheter i den här gruppen kan uppleva problem om det finns scenarier som inte täcktes under testningen av test ringen.
+- **Snabb**: prioriterar fortare. Användbart för att upptäcka kvalitets problem innan de erbjuds till den breda gruppen. Den här gruppen fungerar som en nästa validerings nivå men är ofta mer stabil än test och första grupp. 
+- **Brett**: senaste gruppen för att få funktioner och kvalitets uppdateringar tillgängliga. Den här gruppen innehåller de flesta användare i klient organisationen och förökade stabilitet i distributionen. Test av program bör göras här eftersom miljön är stabilare. 
 
 > [!NOTE]
-> Om du behöver flytta en användare till en annan uppdateringsgrupp skickar du en supportbegäran. Mer information om hur du skickar supportbegäranden finns i [Support för Microsoft Managed Desktop.](support.md) Om du flyttar en användare själv återställs flytten.
+> Om du behöver flytta en användare till en annan uppdaterings grupp ska du skicka en supportbegäran. Se [Support för Microsoft Managed Desktop](support.md) om du vill ha mer information om att skicka support förfrågningar. Om du flyttar en användare själv återställs flytten.
 
-Mer information om roller och ansvarsområden med dessa distributionsgrupper finns i [Microsoft Hanterade skrivbordsroller och ansvarsområden](../intro/roles-and-responsibilities.md)
+Mer information om roller och ansvars områden med de här distributions grupperna finns i [Microsoft hanterade Skriv bords roller och ansvar](../intro/roles-and-responsibilities.md)
 
-Så här fungerar uppdateringsdistribution:
-- Microsoft Managed Desktop distribuerar en ny funktion eller kvalitetsuppdatering enligt det schema som anges nedan.
-- Under distributionen övervakar Microsoft Hanterade skrivbord tecken på fel eller avbrott (baserat på diagnostikdata och slutanvändarens supportsystem). Om någon identifieras pausas distributionen till alla aktuella och framtida grupper omedelbart.
-    - Exempel: Om ett problem upptäcks när en kvalitetsuppdatering distribueras till den första gruppen, pausas alla distributioner till Först, Snabb och Bred tills problemet är löst.
-    - Kompatibilitetsproblem kan rapporteras genom att du skickar en biljett i Microsoft Managed Desktop Admin-portalen.
-- Funktions- och kvalitetsuppdateringar pausas oberoende av dem. Paus är i kraft i 35 dagar som standard, men kan minskas eller förlängas beroende på om problemet åtgärdas.
-- När grupperna inte har pausats återupptas distributionen enligt schemat nedan.
-- Den här distributionsprocessen gäller både funktions- och kvalitetsuppdateringar, även om tidslinjen varierar för varje.
+Så här fungerar uppdaterings distribution:
+- Microsoft Managed Desktop distribuerar en ny funktion eller kvalitets uppdatering enligt det schema som anges nedan.
+- Under distributionen är Microsoft Managed Desktop Monitors för tecken på misslyckanden eller avbrott (baserat på diagnostikdata och användar support systemet). Om det finns en sådan hittas distributionen till alla aktuella och framtida grupper omedelbart.
+    - Exempel: om ett problem upptäcks när du distribuerar en kvalitets uppdatering till den första gruppen pausas alla distributioner till första, snabba och breda tills problemet löses.
+    - Kompatibilitetsproblem kan rapporteras genom att en biljett skickas till Microsoft Managed Desktop admin-portalen.
+- Uppdateringar av funktioner och kvalitet pausas oberoende av varandra. Paus gäller för 35 dagar som standard, men kan minskas eller utökas beroende på om problemet är åtgärdat.
+- När grupperna har avbrutits återställs distributionen enligt schemat nedan.
+- Den här distributions processen gäller både funktions-och kvalitets uppdateringar, även om tids linjen varierar beroende på var och en av dem.
 
 
 
 
 <table>
-<tr><th colspan="5">Uppdatera distributionsinställningar</th></tr>
-<tr><th>Typ av uppdatering</th><th>Test</th><th>Första</th><th>Snabb</th><th>Bred</th></tr>
-<tr><td>Kvalitetsuppdateringar för operativsystemet</td><td>0 dagar</td><td>0 dagar</td><td>0 dagar</td><td>3 dagar</td></tr>
-<tr><td>Funktionsuppdateringar för operativsystem</td><td>0 dagar</td><td>30 dagar</td><td>60 dagar</td><td>90 dagar</td></tr>
-<tr><td>Drivrutiner/inbyggd programvara</td><td colspan="4">Följer schemat för kvalitetsuppdateringar</td></tr>
-<tr><td>Definition av virusskydd</td><td colspan="4">Uppdaterad med varje genomsökning</td></tr>
-<tr><td>Microsoft 365-applikationer för företag</td><td colspan="4">Följer Office nuvarande kanal
+<tr><th colspan="5">Inställningar för uppdaterings distribution</th></tr>
+<tr><th>Uppdaterings typ</th><th>Tävlingar</th><th>Skapas</th><th>Snabbspola</th><th>Personer</th></tr>
+<tr><td>Kvalitets uppdateringar för operativ systemet</td><td>0 dagar</td><td>0 dagar</td><td>0 dagar</td><td>3 dagar</td></tr>
+<tr><td>Funktions uppdateringar för operativ system</td><td>0 dagar</td><td>30 dagar</td><td>60 dagar</td><td>90 dagar</td></tr>
+<tr><td>Driv rutiner/inbyggd program vara</td><td colspan="4">Följer schemat för kvalitets uppdateringar</td></tr>
+<tr><td>Antivirus definition</td><td colspan="4">Uppdaterat med varje genomsökning</td></tr>
+<tr><td> Microsoft 365 Apps för företag</td><td colspan="4">Följer den aktuella kanalen för Office
 </table>
 
-Mer information om Aktuell kanal för Microsoft 365 Apps för företag finns i [Översikt över uppdateringskanaler för Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+Mer information om den aktuella kanalen för Microsoft 365-appar för företag finns i [Översikt över uppdaterings kanaler för microsoft 365-appar](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
->Dessa uppskovsperioder är avsiktligt utformade för att säkerställa höga säkerhets- och prestandastandarder för alla användare. Dessutom, baserat på data som samlats in på alla Microsoft Managed Desktop-enheter och den varierande omfattningen och effekten av uppdateringar, förbehåller sig Microsoft Managed Desktop flexibilitet att ändra längden på ovanstående uppskovsperioder för alla distributionsgrupper på ad hoc-basis.
+>Dessa avstängnings perioder är avsiktligt utformade för att säkerställa hög säkerhet och prestanda för alla användare. Baserat på data som samlats in på alla Microsoft-hanterade Skriv bords enheter och omfattningen av olika uppdateringar, förbehåller sig Microsoft Managed Station ära datorer flexibilitet att ändra längden på de ovanstående avstängnings perioderna för alla och alla distributions grupper på ett ad hoc-basis.
 >
->Microsoft Managed Desktop gör en oberoende bedömning av varje Windows-funktionsutgåva för att utvärdera dess nödvändighet och användbarhet för sina hanterade klienter. Microsoft Managed Desktop kanske eller kanske inte distribuerar alla Windows-funktionsuppdateringar. 
+>Microsoft Managed Desktop sköter en oberoende utvärdering av varje version av Windows-funktioner för att utvärdera deras nödvändighet och användbarhet på sina hanterade klient organisationer. Därför kan Microsoft Managed Desktop eller kanske inte distribuera alla uppdateringar av Windows-funktioner. 
 
-## <a name="windows-insider-program"></a>Windows Insider-program
+## <a name="windows-insider-program"></a>Windows Insider program
 
-Microsoft Managed Desktop stöder inte enheter som ingår i Windows Insider-programmet. Windows Insider-programmet används för att validera förversion av Windows-programvara och är avsett för enheter som inte är verksamhetskritiska. Detta är ett viktigt Microsoft-initiativ, men det är inte avsett för bred distribution i produktionsmiljöer. 
+Microsoft Managed Desktop stöder inte enheter som ingår i Windows Insider-programmet. Windows Insider-programmet används för att validera för hands versionen av Windows-programvaran och är avsedd för enheter som inte är verksamhets kritiska. Det här är ett viktigt Microsoft-initiativ och är inte avsett för allmän distribution i produktions miljöer. 
 
-Alla enheter som hittas med Windows Insider-versioner kan placeras i testgruppen och undantas från uppdateringsservicenivåavtal och slutanvändarsupport från Microsoft Managed Desktop.
+Alla enheter som hittas med Windows Insider-versioner kan ingå i test gruppen och undantas från uppdatering av service nivå avtal och användar stöd från Microsoft Managed Desktop.
 
-## <a name="bandwidth-management"></a>Bandbreddshantering
+## <a name="bandwidth-management"></a>Bandbredds hantering
 
-Vi använder [leveransoptimering](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) för alla operativsystem och drivrutinsuppdateringar. Detta minimerar nedladdningsstorleken från Windows Update-tjänsten genom att söka efter uppdateringar från peer-datorer i företagsnätverket.
+Vi använder [leverans optimering](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) för alla operativ system och driv rutiner. Detta minimerar nedladdnings storleken från Windows Update-tjänsten genom att söka efter uppdateringar från peers i företags nätverket.
 
 

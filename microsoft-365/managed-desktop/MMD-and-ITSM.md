@@ -1,60 +1,60 @@
 ---
-title: Microsoft Managed Desktop och ITIL
+title: Microsoft Hanterat skrivbord och ITIL
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation, ITISM
+keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation, ITISM
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: bd03331bc27b68017ced179627ec02cb95616611
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: 05bd5a2ee36633b7ccf9ae61e601988a7268bb2c
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "42805858"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289811"
 ---
-# <a name="microsoft-managed-desktop-and-itil"></a>Microsoft Managed Desktop och ITIL
+# <a name="microsoft-managed-desktop-and-itil"></a>Microsoft Hanterat skrivbord och ITIL
 
-Många organisationer tycker att det är värdefullt att strukturera sina IT-tjänster i linje med en formaliserad IT Service Model (ITSM), såsom [ITIL](https://www.axelos.com/best-practice-solutions/itil). 
+Många organisationer tycker att det är värdefullt att strukturera sina IT-tjänster utmed linjerna i en formaliserad IT-ITSM, till exempel [ITIL](https://www.axelos.com/best-practice-solutions/itil). 
 
-Med Microsoft Managed Desktop kan din organisation följa många viktiga aspekter av sådana formaliserade ITSM-modeller. Med ITIL som exempel hjälper det här avsnittet dig att se anslutningarna mellan vanliga ITIL-faser och processer och motsvarande Microsoft Managed Desktop-funktioner, där så är tillämpligt. Detta gäller endast för delen Microsoft Managed Desktop i organisationen.
+Microsoft Managed Desktop gör att organisationen kan uppfylla många viktiga aspekter av sådana formaliserade ITSM-modeller. I det här avsnittet får du hjälp med att se dina anslutningar mellan vanliga ITIL-faser och processer samt motsvarande Microsoft hanterade Skriv bords funktioner, där så är tillämpligt. Det här gäller endast för Microsoft Managed Desktop-delen av organisationen.
 
-För mer omfattande om ITIL och dess faser och process se deras [dokumentation](https://www.axelos.com/best-practice-solutions/itil).
-
-
-## <a name="service-design"></a>Design av tjänster
-
-Den här tabellen relaterar viktiga ITIL-faser och processer till Microsoft Managed Desktop-funktioner, med länkar till vår dokumentation för mer information:
+Mer omfattande information om ITIL och dess faser och processer finns i deras [dokumentation](https://www.axelos.com/best-practice-solutions/itil).
 
 
+## <a name="service-design"></a>Tjänst design
 
-|ITIL-processen |Beskrivning  |Dokumentation |
+I den här tabellen hör viktiga ITIL-faser och processer till Microsoft Managed Desktop-funktioner, med länkar till vår dokumentation för mer information:
+
+
+
+|ITIL-process |Beskrivning  |Dokumentation |
 |---------|---------|---------|
-|Hantering på servicenivå     | Svarstider har definierats för administratörssupportförfrågningar och incidenter.  |  [Administratörsstöd för Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)  |
-|Hantering av tjänstkataloger     | Servicebeskrivning med uppgifter om komponenter i tjänsten hålls trogen tjänstens tillstånd, tillgängligt för alla aktuella och intresserade kunder.<br><br>Förutsättningar detaljerade för att förstå vad som behövs för att driva tjänsten.  | - [Microsoft Managed Desktop-tjänstbeskrivning](service-description/index.md)<br><br>- [Gör dig redo för registrering på Microsoft Managed Desktop](get-ready/index.md)  |
-|Hantering av informationssäkerhet     | Säkerhetsinformation, inklusive informationssäkerhet för tjänsten.<br><br> Säkerhetsrelaterade principer och annan information om hur enheter konfigureras.   | - [Säkerhet på Microsoft Managed Desktop](service-description/security.md)<br><br>- [Enhetskonfiguration](service-description/device-policies.md)  |
-|Hantering av tillgänglighet     |  Microsoft Managed Desktop balanserar ansvaret med din organisation för att säkerställa tillgängligheten av tjänsten.<br><br>Administratörer och slutanvändare har vägar till respektive support vid service- eller tillgänglighetsproblem. | - [Microsoft Managed Desktop-åtgärder och övervakning](service-description/operations-and-monitoring.md)<br><br>- [Administratörsstöd för Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)<br>- [Få hjälp för slutanvändare](working-with-managed-desktop/end-user-support.md)  |
+|Tjänst nivå hantering     | Svars tider är definierade för förfrågningar och händelser för administratörs support.  |  [Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md)  |
+|Tjänst katalog hantering     | Tjänste beskrivningens detalj komponenter i tjänsten behålls enligt tjänstens status som tillgängliga för alla aktuella och intresserade kunder.<br><br>Förutsättningar för att förstå vad som behövs för att driva tjänsten.  | - [Beskrivning av tjänsten Microsoft Managed Desktop](service-description/index.md)<br><br>- [Förbered dig för registrering på Microsoft Managed Desktop](get-ready/index.md)  |
+|Informations säkerhets hantering     | Säkerhets information, inklusive information om tjänsten.<br><br> Säkerhetsrelaterade principer och annan information om hur enheter har kon figurer ATS.   | - [Säkerhet på Microsoft Managed Desktop](service-description/security.md)<br><br>- [Enhets konfiguration](service-description/device-policies.md)  |
+|Tillgänglighets hantering     |  Microsoft Managed Desktop-saldon med din organisation för att säkerställa tillgänglighet för tjänsten.<br><br>Administratörer och användare har vägar till respektive support i händelse av tjänst-eller tillgänglighets problem. | - [Microsoft Managed Station ära datorer och övervakning](service-description/operations-and-monitoring.md)<br><br>- [Administratörs support för Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)<br>- [Få hjälp för användare](working-with-managed-desktop/end-user-support.md)  |
 
 
 
-## <a name="service-transition"></a>Övergång till tjänsten
+## <a name="service-transition"></a>Service över gång
 
 
-|ITIL-processen |Beskrivning  |Dokumentation |
+|ITIL-process |Beskrivning  |Dokumentation |
 |---------|---------|---------|
-|Ändra hantering     | Definierad ansvarsfördelning, processöversikt och typer relaterade till tillgänglig ändringshantering.  | [Microsoft Managed Desktop-åtgärder och övervakning](service-description/operations-and-monitoring.md#change-management) |
-|Hantering av utgivning och distribution     |  Microsoft Managed Desktop hanterar uppdateringar för enheter som är registrerade i tjänsten.  | [Så här hanteras uppdateringar på Microsoft Managed Desktop](service-description/updates.md)        |
-|Hantering av servicetillgångar och konfiguration     | Information om organisationens Microsoft Managed Desktop-distribution finns på IT-administratörsportalen.  | [Administratörsstöd för Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) |
-|Kunskapshantering     | Informationen om Microsoft Managed Desktop-tjänsten hålls uppdaterad på den här webbplatsen.   | [Ändra historik för dokumentationen för Microsoft Managed Desktop](change-history-managed-desktop.md)        |
+|Ändrings hantering     | Definierad betalnings ansvar, process översikt och typer relaterade till ändrings hantering.  | [Microsoft Managed Station ära datorer och övervakning](service-description/operations-and-monitoring.md#change-management) |
+|Hantering och distribution     |  Microsoft Managed Desktop hanterar uppdateringar för enheter som är registrerade i tjänsten.  | [Hur uppdateringar hanteras på Microsoft Managed Desktop](service-description/updates.md)        |
+|Tjänst till gång och konfigurations hantering     | Information om organisationens distribution av Microsoft Managed Desktop är tillgänglig på portalen för IT-administratörer.  | [Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md) |
+|Kunskaps hantering     | Information om Microsoft Managed Desktop-tjänsten hålls uppdaterad på den här webbplatsen.   | [Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord](change-history-managed-desktop.md)        |
 
 
 
-## <a name="service-operation"></a>Servicedrift
+## <a name="service-operation"></a>Tjänst åtgärd
 
 
-|ITIL-processen |Beskrivning  |Dokumentation  |
+|ITIL-process |Beskrivning  |Dokumentation  |
 |---------|---------|---------|
-|Händelsehantering     |  Information om övervakning av enheter finns.<br><br>Standardrutiner för Microsoft Managed Desktop-tjänsten beskrivs. |  - [Säkerhet på Microsoft Managed Desktop](service-description/security.md)<br>- [Microsoft Managed Desktop-åtgärder och övervakning](service-description/operations-and-monitoring.md)       |
-|Hantering av incidenter  | Microsoft Managed Desktop undersöker och agerar på incidenter enligt definierade allvarlighetsgrader.  |  [Allvarlighetsdefinitioner för supportbegäran](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |
-|Begäran uppfyllelse förvaltning     |  Process för begäranden om information och ändringsbegäranden som är relaterade till Microsoft Managed Desktop-tjänsten definieras.         |[Administratörsstöd för Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md)         |
-|Problemhantering     | Eventuella problem med tjänsten ska riktas till ditt lokala kontoteam just nu. | Dokumentation i utveckling |
-|Åtkomsthantering     | Åtkomsthanteringskomponenter och ansvar för kunden för att säkerställa att funktionaliteten är detaljerad.  | [Identitets- och åtkomsthantering](service-description/security.md#identity-and-access-management)        |
+|Händelse hantering     |  Information om övervakning av enheter tillhandahålls.<br><br>De vanliga rutinerna för Microsoft Managed Desktop-tjänsten är detaljerade. |  - [Säkerhet på Microsoft Managed Desktop](service-description/security.md)<br>- [Microsoft Managed Station ära datorer och övervakning](service-description/operations-and-monitoring.md)       |
+|Ärende hantering  | Microsoft Managed Desktop undersöker och åtgärdar händelser i enlighet med definierade allvarlighets definitioner.  |  [Support ärende definitioner för allvarlighets grad](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |
+|Hantering av begäran     |  Processen för begäran om information och ändrings förfrågningar relaterade till Microsoft Managed Desktop-tjänsten har definierats.         |[Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md)         |
+|Problem hantering     | Eventuella problem med tjänsten ska riktas till ditt lokala konto team. | Dokumentation i utveckling |
+|Åtkomst hantering     | Åtkomst hanterings komponenter och ansvars områden för kunden för att säkerställa att funktionerna är detaljerade.  | [Identitets- och åtkomsthantering](service-description/security.md#identity-and-access-management)        |
