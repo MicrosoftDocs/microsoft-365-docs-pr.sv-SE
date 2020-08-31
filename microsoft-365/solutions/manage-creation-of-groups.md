@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Lär dig hur du styr vilka användare som kan skapa Microsoft 365-grupper.
-ms.openlocfilehash: f2b2837a762398bb065d36c7f849b2fdcbbb5816
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: d6e6c6d9caff2ac7c13d03dad97b73906a509f46
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788890"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307865"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Hantera vilka som kan skapa Microsoft 365-grupper
 
@@ -123,7 +123,7 @@ Kör skriptet genom att skriva:
 
 `.\GroupCreators.ps1`
 
-och [Logga in med ditt administratörs konto](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#step-2-connect-to-azure-ad-for-your-office-365-subscription) när du uppmanas till det.
+och [Logga in med ditt administratörs konto](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) när du uppmanas till det.
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"

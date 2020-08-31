@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på Bluehost för Microsoft.
-ms.openlocfilehash: 7b241c4635ecc4a8092702f95d19df7ed94ce1cd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400563"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307049"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Skapa DNS-poster på Bluehost för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "44400563"
   
 Om Bluehost är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag - Online och så vidare.
   
-När du har lagt till dessa poster på Bluehost konfigureras domänen så att den fungerar med Microsoft-tjänster.
+När du har lagt till dessa poster på Bluehost är din domän konfigurerad för att fungera med Microsoft-tjänster.
 
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
@@ -53,7 +53,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
     (Du kan behöva rulla nedåt.)
     
-3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
+3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -64,11 +64,11 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
     |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Obs!** Det här är ett exempel. Använd ditt specifika **Mål eller pekar på adress ** värde här, från tabellen. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
-5. Välj **lägg till post**.
+5. Välj **Add Record**.
     
 6. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär en sökning efter posten.
+Nu när du har lagt till posten på domän registratorns webbplats kan du gå tillbaka till Microsoft och begära en sökning efter posten.
   
 När Microsoft hittar rätt TXT-post är din domän verifierad.
   
@@ -93,7 +93,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
+3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -101,27 +101,27 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Host Record**|**TTL**|**Type**|**Points To**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*.mail.protection.outlook.com  <br/>**Anm.:** Hämta ditt \<*domain-key*\> från ditt Microsoft-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Obs!** Hämta din \<*domain-key*\> från ditt Microsoft-konto. [Hur hittar jag det?](../get-help-with-domains/information-for-dns-records.md)          |siffrorna  <br/> Mer information om prioritet finns i [Vad är MX-prioritet?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
-   ![Välj Typ i listrutan](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
+   ![Välj typ i list rutan](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
-5. Välj **lägg till post**.
+5. Välj **Add Record**.
     
     ![Välj Lägg till post](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
 6. Om det finns andra MX-poster i avsnittet **MX (Mail Exchanger)** ska du ta bort dem. 
     
-    För en av de andra MX-posterna väljer du **Ta bort.**
+    Välj **ta bort** för någon av de andra MX-posterna.
     
     ![Välj Ta bort för varje ytterligare MX-post](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
-7. Välj **OK**i bekräftelsedialogrutan .
+7. Välj **OK**i bekräftelse dialog rutan.
     
     ![Välj OK](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
 8. Du använder samma process för att ta bort eventuella andra MX-poster som visas.
     
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-poster som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på Bluehost genom att klicka på [den här länken](https://my.bluehost.com/cgi/dm). Du uppmanas att logga in först.
@@ -130,12 +130,12 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
+3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
     
-4. Leta reda på raden för posten för **automatisk upptäckt** i avsnittet **A (Värd)** och välj sedan **ta bort** för den raden. 
+4. Leta reda på raden för posten **Autodiscover** i avsnittet **a (hosts)** Records och välj **ta bort** för den raden. 
     
     > [!IMPORTANT]
-    > Du måste ta bort den befintliga posten för **automatisk upptäckt** *innan* du lägger till den **automatiska upptäcktspost** som krävs av Microsoft. Bluehost tillåter inte att du har två **autodiscover** -poster samtidigt. 
+    > Du måste ta bort den befintliga posten för **automatisk upptäckt**  *innan*  du lägger till en post för **automatisk upptäckt** som Microsoft har angett. Bluehost tillåter inte att du har två **autodiscover** -poster samtidigt. 
   
     ![Välj Ta bort](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
@@ -159,13 +159,13 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
    
     ![Skapa den första CNAME-posten](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
-7. Välj **lägg till post**.
+7. Välj **Add Record**.
     
     ![Välj Lägg till post](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. Lägg till de andra fem CNAME-posterna var för sig.
     
-    I avsnittet **Lägg till DNS-post** skapar du en post med hjälp av värdena från nästa rad i tabellen och väljer sedan **lägga till post** igen för att slutföra posten. 
+    I avsnittet **Add DNS Record** skapar du en post med värdena från nästa rad i tabellen och väljer sedan **Add Record** igen för att slutföra posten. 
     
     Upprepa proceduren tills du har skapat alla sex CNAME-posterna.
     
@@ -173,7 +173,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Om du vill validera SPF-posten kan du använda något av dessa[SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsoft. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Du kan validera SPF-posten genom att använda någon av dessa[SPF-verifierings verktyg](../setup/domains-faq.md). 
   
 1. Kom igång genom att gå till domänsidan på Bluehost genom att klicka på [den här länken](https://my.bluehost.com/cgi/dm). Du uppmanas att logga in först.
     
@@ -181,7 +181,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
+3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
     
 4. Gå till sidan **DNS Zone Editor** och området **Add DNS Record**. I den nya postens rutor skriver du in, eller kopierar och klistrar in värdena från följande tabell. 
     
@@ -193,7 +193,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
    
     ![Kopiera TXT-värdet](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
-5. Välj **lägg till post**.
+5. Välj **Add Record**.
     
     ![Välj Lägg till post](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
@@ -206,7 +206,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Du kan behöva rulla nedåt.)
     
-3. Välj **Hantera DNS-poster**på raden **DNS Zone Editor** i området ***domain_name*** .
+3. I området ***domain_name*** på raden **DNS Zone Editor** väljer du **Manage DNS Records**.
     
 4. Skapa den första av de två SRV-posterna.
     
@@ -216,18 +216,18 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     |**Service**|**Protocol**|**Host**|**TTL**|**Type**|**Prioritet**|**Vikt**|**Port**|**Points To**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |9.1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |9.1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Kopiera värdet för den nya posten](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
-5. Välj **lägg till post**.
+5. Välj **Add Record**.
     
     ![Välj Lägg till post](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. Lägg till den andra SRV-posten.
     
-    I avsnittet **Lägg till DNS-post** skapar du en post med hjälp av värdena från den andra raden i tabellen och väljer sedan **lägga till post** igen för att slutföra posten. 
+    I avsnittet **Add DNS Record** skapar du en post med värdena från den andra raden i tabellen och väljer sedan **Add Record** igen för att slutföra posten. 
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 

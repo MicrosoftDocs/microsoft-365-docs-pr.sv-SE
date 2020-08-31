@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratörer kan läsa mer om fel koderna som är kopplade till meddelande leverans via kopplingar (kallas även för e-postflöde).
-ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827719"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307923"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>E-postflödesinformation i EOP
 
@@ -62,7 +62,7 @@ Vanligt vis betyder det att Microsoft 365 stötte på ett anslutnings fel när d
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Hur åtgärdar jag felkod 450 4.4.316?
 
-- Om du har post lådor i den lokala miljön måste du ändra brand Väggs inställningarna för att tillåta anslutningar från Microsoft 365-IP-adresser på TCP port 25 till lokala e-postservrar. En lista med IP-adresser för Microsoft 365 finns i [microsoft 365 URL: er och IP-adressintervall](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Om du har post lådor i den lokala miljön måste du ändra brand Väggs inställningarna för att tillåta anslutningar från Microsoft 365-IP-adresser på TCP port 25 till lokala e-postservrar. En lista med IP-adresser för Microsoft 365 finns i [microsoft 365 URL: er och IP-adressintervall](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 - Om du inte vill skicka fler meddelanden till den lokala miljön klickar du på **åtgärda nu** i aviseringen så att Microsoft 365 omedelbart neka meddelanden med ogiltiga mottagare. Detta minskar risken för att organisationens kvot överskrids för ogiltiga mottagare, vilket kan påverka normal meddelande leverans. Eller så kan du använda följande anvisningar för att lösa problemet manuellt:
 

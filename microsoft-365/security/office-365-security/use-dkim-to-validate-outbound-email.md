@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632169"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307853"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -83,7 +83,7 @@ Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar riktningarna h
 
 1. När du **redan har konfigurerat DKIM** kan du rotera bitar enligt följande:
 
-   1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.)
+   1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Cmdleten kommer från Exchange Online.)
    1. Kör följande kommando:
 
       ```powershell 
@@ -92,7 +92,7 @@ Eftersom både 1024 och 2048 bitar stöds för DKIM-nycklar visar riktningarna h
 
 1. Eller för en **ny implementation av DKIM**:
 
-   1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Det här är en Exchange Online-cmdlet.)
+   1. [Ansluta till Office 365-arbetsbelastningar via PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Det här är en Exchange Online-cmdlet.)
    1. Kör följande kommando:
 
       ```powershell

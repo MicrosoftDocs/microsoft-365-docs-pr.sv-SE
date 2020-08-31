@@ -21,27 +21,23 @@ description: Microsoft 365 Admin Center – lär dig mer om de funktioner som ha
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
+ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635028"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300473"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nyheter i administrations centret för Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Viss information i den här artikeln kanske inte gäller för Office 365 som drivs av 21Vianet.
+> En del av informationen i den här artikeln kanske inte gäller för Office 365 som drivs av 21Vianet.
 
 ::: moniker-end
 
 Vi lägger till nya funktioner kontinuerligt i [administrations centret för Microsoft 365](microsoft-365-admin-center-preview.md), åtgärdar problem vi lär dig och gör ändringar baserat på din feedback. Ta en titt nedan för att se vad som är tillgängligt för dig idag. Vissa funktioner är uppkopplade med olika hastigheter till våra kunder. Om du inte ser en funktion ännu kan du [försöka med att lägga till dig själv i mål versionen](manage/release-options-in-office-365.md).
-
-> [!IMPORTANT]
-> **"Klassiskt" tids dragning för administrations centret med början i mars**<br><br>
-När du loggar in i Microsoft 365 Admin Center kommer du nu till det nya administrations centret varje gång. Och i mars började vi inaktivera möjligheten att växla tillbaka till det klassiska administrations centret. För närvarande kan du fortfarande gå tillbaka, men när det nya administrations centret kommer att vara paritet (och senare än det) stänger vi av växeln för alla organisationer. <br><br> *Uppdaterades senast: 11 maj 2020*
 
 Och om du vill veta vad som är nytt med andra moln tjänster från Microsoft:
 
@@ -53,6 +49,34 @@ Och om du vill veta vad som är nytt med andra moln tjänster från Microsoft:
 - [Nyheter i administrations centret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office-uppdateringar](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="july-2020"></a>Juli 2020
+
+### <a name="getting-ready-for-ignite-2020"></a>Förbereder dig för 2020
+
+När vi rör sig in i säsongen hos Microsoft släpps vi inte så många funktioner så att vi kan prata om under våra sessioner. 
+
+Nästa uppdatering av den här artikeln kommer att vara samma dag som det första Online-Only. Och det här året är det gratis att delta! Kolla in det, få registrera dig: [Microsoft är 2020](https://www.microsoft.com/ignite).
+
+### <a name="your-products"></a>Dina produkter
+
+Det har skett mycket arbete med abonnemangs hanteringen för att det ska gå snabbare att läsa in och hitta det du letar efter och att möta webb acessibility standarder (reglerna i[WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
+
+- **Tabell design**: tabellen har omarbetats så att du kan gruppera liknande abonnemang. Gå till **fakturering**  >  **av dina produkter**.
+- **Produkt information**: få mer information än någonsin dina abonnemang genom att välja produkten i listan.
+- **Gör allt**härifrån: och du behöver inte gå till flera sidor för att hantera en produkt. Om du till exempel behöver avbryta ett abonnemang öppnas panelen för att utföra åtgärden.
+
+![Sidan produkter med panelen Avsluta prenumeration öppen.](../media/MAC-WN-SubscrDetails.png)
+
+### <a name="domains"></a>Domäner
+
+Domän hanteringen kan vara komplicerad och vi har publicerat en ny funktion som gör det enklare. Gå till inställningar > domäner och välj sedan en domän för att få mer information om domänen och domänens hälsa.
+
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Sidan Domains information för contoso.com":::
+
+### <a name="docs-training-and-videos"></a>Dokument, utbildningar och videoklipp
+
+[Nyheter i Microsoft 365](https://youtu.be/m1Nu8WJgCDY) Video Series: den här månaden täcker vi den nya Yammer-upplevelsen för webben och mobil, hur du integrerar programmet Yammer-communities för Microsoft Teams, nya policy paket för att stödja firstline-arbetare och-chefer.
+
 ## <a name="june-2020"></a>Juni 2020
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Håll kontakten med Office vad är nytt Management
@@ -62,7 +86,6 @@ För några månader sedan har vi lagt till en inställning som låter dig hante
 ### <a name="docs-training-and-videos-june"></a>Dokument, utbildningar och videoklipp (juni)
 
 - [Komma igång med Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
-
 
 ## <a name="may-2020"></a>Maj 2020
 
@@ -100,9 +123,9 @@ I den här månaden släppte vi en ny webbplats [https://docs.microsoft.com](htt
 - Branschledande råd
 - Företags arkitektur
 
-### <a name="docs-training-and-videos"></a>Dokument, utbildningar och videoklipp
+### <a name="docs-training-and-videos-may"></a>Dokument, utbildningar och videoklipp (kan)
 
-- **Nyheter i microsoft 365 Video Series**: den här månaden täcker vi den nya support upplevelsen i Teams administration och säkerhet och efterlevnad, Planner-integrering med meddelande Center och den nya 3x3-videolayouten i Microsoft Teams. [Nyheter i Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **Nyheter i microsoft 365 Video Series**: den här månaden täcker vi den nya support upplevelsen i Teams administration och säkerhet och efterlevnad, Planner-integrering med meddelande Center och den nya 3x3-videolayouten i Microsoft Teams. 
 - Sidan [Hjälp Hub för Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/) har uppdaterats för att hjälpa dig att hitta det du behöver. Och om du tittar på den sidan just nu har vi lagt till ett kort som informerar dig om viktiga uppdateringar och ändringar.
 
 ## <a name="april-2020"></a>April 2020
@@ -334,7 +357,7 @@ I november gav vi ut ett par Sök vägar till [Microsofts](https://docs.microsof
 - [Microsoft 365-modernisera din företags distribution med Windows 10-och Microsoft 365-appar för företag](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Hantera din företags distribution med Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Uppgradera Microsoft Office för IT på skala](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
-- [Leverera fjärr skrivbord och appar från Azure med virtuellt Windows-skrivbord](https://docs.microsoft.com/learn/paths/m365-wvd/)
+- [Leverera fjärr skrivbord och appar från Azure med virtuellt Windows-skrivbord ](https://docs.microsoft.com/learn/paths/m365-wvd/)
 - [Modernisera din arbets plats med Microsoft 365 och Surface for Business](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
 - [Skydda identitet och åtkomst med Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Skydda företags information med Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
@@ -382,7 +405,7 @@ När en viktig Office-funktion släpps i en Office-app får användarna ett "Nyh
 
 Tekniskt är det här inte Microsoft 365 admin Centers nyheter för att berätta, men vi är så glada att vi ville se att du ser dessa nyheter:
 > [!IMPORTANT]
-> Nu kan du gå till administrations centret för SharePoint med en vanlig URL-adress:[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
+> Nu kan du gå till administrations centret för SharePoint med en vanlig URL-adress: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
 Mer information finns i [Nyheter i administrations centret för SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 

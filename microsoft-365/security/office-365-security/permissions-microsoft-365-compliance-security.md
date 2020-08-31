@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Med hjälp av Microsoft 365 Säkerhetscenter och Microsoft 365 Efterlevnadscenter kan du hantera behörigheter centralt för alla uppgifter som är relaterade till säkerhet och efterlevnad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652843"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307779"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Behörigheter i efterlevnadscentret i Microsoft 365 och säkerhetscentret i Microsoft 365
 
@@ -101,7 +101,7 @@ Användare som har den här rollen har behörighet att hantera säkerhetsrelater
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visar information om användare, enheter, registrering, konfiguration och program. <br/><br/> **Kan inte** göra ändringar i Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Lägga till administratörer, lägga till principer och inställningar, ladda upp loggar och utföra styrningsåtgärder.|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (kommer snart)|Visa säkerhetsprinciper, visa säkerhetstillstånd, redigera säkerhetsprinciper, visa aviseringar och rekommendationer, stänga av varningar och rekommendationer.|
-|[**Office 365-tjänststatus**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|[**Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
 |
 
 ### <a name="security-operator"></a>Säkerhetsoperatör
@@ -119,7 +119,7 @@ Användare som har den här rollen kan hantera aviseringar och har global skrivs
 |**Windows Defender ATP och EDR**|Utföra allt som säkerhetsläsarrollen kan. <br/><br/> Visa, undersöka och reagera på aviseringar.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visar information om användare, enheter, registrering, konfiguration och program. <br/><br/> **Kan inte** göra ändringar i Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Utföra allt som säkerhetsläsarrollen kan, plus visa och stänga av varningar.|
-|[**Office 365-tjänststatus**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|[**Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
 |
 
 ### <a name="security-reader"></a>Säkerhetsläsare
@@ -138,7 +138,7 @@ Användare som har den här rollen har global skrivskyddad åtkomst till säkerh
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visar information om användare, enheter, registrering, konfiguration och program. <br/><br/> **Kan inte** göra ändringar i Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Använda läsbehörigheter för att visa information. <br/><br/> Hantera aviseringar.|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Visa rekommendationer och aviseringar. <br/><br/> Visa säkerhetsprinciper. <br/><br/> Visa säkerhets tillstånd, men kan inte göra ändringar.|
-|[**Office 365-tjänststatus**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
+|[**Office 365-tjänststatus**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Visa status för Office 365-tjänster.|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>Globala administratörer kan hantera roller i Azure Active Directory

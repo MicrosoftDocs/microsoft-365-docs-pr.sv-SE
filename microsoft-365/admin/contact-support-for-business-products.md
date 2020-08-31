@@ -21,12 +21,12 @@ search.appverid:
 description: Få teknisk support och faktureringssupport via de telefonnummer som anges för ditt land eller region eller genom att skicka en tjänstbegäran online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641591"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307367"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Sätt för att kontakta supporten för företagsprodukter – hjälp för administratörer
 
@@ -35,7 +35,7 @@ ms.locfileid: "46641591"
 > [!IMPORTANT]
 > Du måste vara administratör för en företags prenumeration för att kunna använda dessa supportvägar. Om du inte är administratör för en organisation kan du använda [den här supportsidan](https://support.microsoft.com/help/contactus).
 
-Börja med att [kontrollera aktuell hälsostatus för dina tjänster](https://docs.microsoft.com/office365/enterprise/view-service-health). Du kan visa detaljerad information om aktuella och tidigare problem på <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Instrumentpanel för tjänststatus</a>. Om du har ett problem som inte finns med i listan kan du få support på något av följande sätt:
+Börja med att [kontrollera aktuell hälsostatus för dina tjänster](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Du kan visa detaljerad information om aktuella och tidigare problem på <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Instrumentpanel för tjänststatus</a>. Om du har ett problem som inte finns med i listan kan du få support på något av följande sätt:
 
 ## <a name="online-support"></a>Onlinesupport
 

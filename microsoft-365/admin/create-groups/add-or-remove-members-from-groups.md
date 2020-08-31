@@ -20,15 +20,15 @@ search.appverid:
 - MOE150
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlem från grupp och hanterar gruppägarstatus i administrationscentret för Microsoft 365.
-ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Lär dig hur du lägger till en medlem i en grupp, tar bort medlem från grupp och hanterar grupp ägar status i administrations centret för Microsoft 365.
+ms.openlocfilehash: 1d11e527f4f8759511a64036a71e837689bcbcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780487"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307332"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med hjälp av administrationscentret
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Lägga till eller ta bort medlemmar från Microsoft 365-grupper med administrations centret
 
 ::: moniker range="o365-21vianet"
 
@@ -37,20 +37,20 @@ ms.locfileid: "44780487"
 
 ::: moniker-end
 
-I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till sig i grupper som de vill gå med i eller är inbjudna av gruppägare. Om gruppägarskapet ändras, eller om du bestämmer dig för att en medlem ska läggas till eller tas bort, som administratör kan du också göra den ändringen. Endast en global administratör, Exchange-administratör, gruppadministratör eller användaradministratör kan göra dessa ändringar. [Vad är en Microsoft 365-grupp?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+I Microsoft 365 skapar grupp medlemmar normalt deras egna grupper, lägger till sig själva i grupper som de vill delta i, eller är inbjudna efter grupp ägare. Om grupp ägandet ändras, eller om du fastställer att en medlem ska läggas till eller tas bort, som administratör kan du även göra den ändringen. Endast globala administratörer, Exchange-administratörer, grupp administratörer och användar administratörer kan göra dessa ändringar. [Vad är en Microsoft 365-grupp?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
 > Om du inte är administratör kan du [lägga till eller ta bort medlemmar med hjälp av Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
-## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Lägga till en medlem i en grupp i administrationscentret
+## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Lägga till en medlem i en grupp i administrations centret
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.  
+1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .  
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. I informationsfönstret väljer du **Visa alla och hanterar medlemmar**på fliken **Medlemmar** och väljer sedan Lägg **till medlemmar**.
+3. Välj **Visa alla och hantera medlemmar**på fliken **medlemmar** i informations fönstret och välj sedan **Lägg till medlemmar**.
 
 4. Sök efter eller välj namnet på den person som du vill lägga till.
 
@@ -60,11 +60,11 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> \> **Groups**  
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a> \> **Groups** .  
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Medlemmar**i informationsfönstret och välj sedan **Lägg till medlemmar**.
+3. Välj **Redigera**bredvid **medlemmar**i informations fönstret och välj sedan **Lägg till medlemmar**.
 
 4. Sök efter eller välj namnet på den person som du vill lägga till.
 
@@ -74,11 +74,11 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a> \> **Groups**
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a> \> **Groups** .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Medlemmar**i informationsfönstret och välj sedan **Lägg till medlemmar**.
+3. Välj **Redigera**bredvid **medlemmar**i informations fönstret och välj sedan **Lägg till medlemmar**.
 
 4. Sök efter eller välj namnet på den person som du vill lägga till.
 
@@ -86,7 +86,7 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 ::: moniker-end
 
-## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Lägga till en grupp i en medlem i administrationscentret
+## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Lägga till en grupp till en medlem i administrations centret
 
 ::: moniker range="o365-worldwide"
 
@@ -94,9 +94,9 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 2. Välj en användare.
 
-3. Välj **Hantera grupper**på fliken **Konto** i informationsfönstret .
+3. Välj **hantera grupper**på fliken **konto** i informations fönstret.
 
-4. Sök efter eller välj namnet på den grupp som du vill lägga till.
+4. Sök efter eller välj namnet på den grupp du vill lägga till.
 
 5. Välj **Spara**.
 
@@ -106,11 +106,11 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.  
 
-2. Välj ett användarnamn.
+2. Välj ett användar namn.
 
-3. Välj **Redigera**bredvid **Gruppmedlemskap i informationsfönstret**och välj sedan **Lägg till medlemskap**.
+3. I informations fönstret, bredvid **grupp medlemskap**, väljer du **Redigera**och sedan **Lägg till medlemskap**.
 
-4. Sök efter eller välj namnet på den grupp som du vill lägga till.
+4. Sök efter eller välj namnet på den grupp du vill lägga till.
 
 5. Välj **Spara**.
 
@@ -120,126 +120,126 @@ I Microsoft 365 skapar gruppmedlemmar vanligtvis sina egna grupper, lägger till
 
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.
 
-2. Välj ett användarnamn.
+2. Välj ett användar namn.
 
-3. Välj **Redigera**bredvid **Gruppmedlemskap i informationsfönstret**och välj sedan **Lägg till medlemskap**.
+3. I informations fönstret, bredvid **grupp medlemskap**, väljer du **Redigera**och sedan **Lägg till medlemskap**.
 
-4. Sök efter eller välj namnet på den grupp som du vill lägga till.
+4. Sök efter eller välj namnet på den grupp du vill lägga till.
 
 5. Välj **Spara**.
 
 ::: moniker-end
 
-## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Ta bort en medlem från en grupp i administrationscentret
+## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Ta bort en medlem från en grupp i administrations centret
 
 > [!NOTE]
 > När du tar bort en medlem från en privat grupp tar det 5 minuter innan personen blockeras från gruppen (sedan medlemskapsändringar har replikerats fullständigt bland domänkontrollanter).
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
+1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Visa alla och hantera medlemmar**på fliken **Medlemmar** i informationsfönstret .
+3. Välj **Visa alla och hantera medlemmar**på fliken **medlemmar** i informations fönstret.
 
-4. Välj X bredvid den medlem som du vill ta bort.
+4. Markera kryss rutan X bredvid medlemmen du vill ta bort.
 
-5. Välj **Spara** om du vill ta bort medlemmen.
+5. Klicka på **Spara** för att ta bort medlemmen.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> \> **Groups**  
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a> \> **Groups** .  
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Medlemmar**i informationsfönstret.
+3. Välj **Redigera**bredvid **medlemmar**i informations fönstret.
 
-4. Välj X bredvid den medlem som du vill ta bort.
+4. Markera kryss rutan X bredvid medlemmen du vill ta bort.
 
-5. Välj **Spara** om du vill ta bort medlemmen.
+5. Klicka på **Spara** för att ta bort medlemmen.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a> \> **Groups**
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a> \> **Groups** .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Medlemmar**i informationsfönstret.
+3. Välj **Redigera**bredvid **medlemmar**i informations fönstret.
 
-4. Välj X bredvid den medlem som du vill ta bort.
+4. Markera kryss rutan X bredvid medlemmen du vill ta bort.
 
-5. Välj **Spara** om du vill ta bort medlemmen.
+5. Klicka på **Spara** för att ta bort medlemmen.
 
 ::: moniker-end
 
-## <a name="manage-group-owner-status"></a>Hantera gruppägarestatus
+## <a name="manage-group-owner-status"></a>Hantera grupp ägar status
 
 Personen som skapade gruppen är som standard gruppägare. Grupper har ofta flera ägare för stöd av säkerhetskopiering eller av andra orsaker. Medlemmar kan flyttas upp till ägarstatus och ägare kan flyttas ned till medlemsstatus.
   
-### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Befordra en medlem till ägarstatus i administrationscentret
+### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Befordra en medlem till ägar status i Admin Center
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
+1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Visa alla och hantera ägare**på fliken **Medlemmar** i informationsfönstret .
+3. Välj **Visa alla och hantera ägare**på fliken **medlemmar** i informations fönstret.
 
-4. Sök efter en medlem eller välj **Lägg till ägare**.
+4. Sök efter en medlem eller Välj **Lägg till ägare**.
 
-5. Markera kryssrutan bredvid namnet på den medlem som du vill lägga till.
+5. Markera kryss rutan bredvid namnet på den medlem som du vill lägga till.
 
-6. Välj **Spara**och **stäng**sedan .
+6. Välj **Spara**och sedan **Stäng**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a> \> **Groups**
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a> \> **Groups** .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Ägare**i informationsfönstret.
+3. Välj **Redigera**bredvid **ägare**i informations fönstret.
 
-4. Sök efter en medlem eller välj **Lägg till ägare**.
+4. Sök efter en medlem eller Välj **Lägg till ägare**.
 
-5. Markera kryssrutan bredvid namnet på den medlem som du vill lägga till.
+5. Markera kryss rutan bredvid namnet på den medlem som du vill lägga till.
 
-6. Välj **Spara**och **stäng**sedan .
+6. Välj **Spara**och sedan **Stäng**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> \> **Groups**  
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a> \> **Groups** .  
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Ägare**i informationsfönstret.
+3. Välj **Redigera**bredvid **ägare**i informations fönstret.
 
-4. Sök efter en medlem eller välj **Lägg till ägare**.
+4. Sök efter en medlem eller Välj **Lägg till ägare**.
 
-5. Markera kryssrutan bredvid namnet på den medlem som du vill lägga till.
+5. Markera kryss rutan bredvid namnet på den medlem som du vill lägga till.
 
-6. Välj **Spara**och **stäng**sedan .
+6. Välj **Spara**och sedan **Stäng**.
 
 ::: moniker-end
 
-### <a name="remove-owner-status-in-the-admin-center"></a>Ta bort ägarstatus i administrationscentret
+### <a name="remove-owner-status-in-the-admin-center"></a>Ta bort ägar status i administrations centret
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppergrupper i</a> administrationscentret.
+1. Gå till sidan grupper i administrations centret **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Visa alla och hantera ägare**på fliken **Medlemmar** i informationsfönstret .
+3. Välj **Visa alla och hantera ägare**på fliken **medlemmar** i informations fönstret.
 
 4. Välj X bredvid ägarens namn.
 
@@ -249,11 +249,11 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrationscentret.</a> \> **Groups**  
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">administrations centret</a> \> **Groups** .  
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Ägare**i informationsfönstret.
+3. Välj **Redigera**bredvid **ägare**i informations fönstret.
 
 4. Välj X bredvid ägarens namn.
 
@@ -263,11 +263,11 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Gruppergrupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrationscentret.</a> \> **Groups**
+1. Gå till sidan **grupper** i <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">administrations centret</a> \> **Groups** .
 
-2. Välj ett gruppnamn.
+2. Välj ett grupp namn.
 
-3. Välj **Redigera**bredvid **Ägare**i informationsfönstret.
+3. Välj **Redigera**bredvid **ägare**i informations fönstret.
 
 4. Välj X bredvid ägarens namn.
 
@@ -279,18 +279,18 @@ Personen som skapade gruppen är som standard gruppägare. Grupper har ofta fler
 
 - [Hantera grupper dynamiskt i Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): mer information finns i avsnittet "Hur kan jag hantera medlemskapet för en grupp dynamiskt?"
 
-- Om du vill lägga till hundratals eller tusentals användare i grupper använder du [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
+- Om du vill lägga till hundratals eller tusentals användare i grupper använder du [unifiedgrouplinkshttps](https://go.microsoft.com/fwlink/p/?LinkId=616191).
 
 - [Tilldela en ny ägare till en överbliven grupp](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 ## <a name="articles-about-managing-groups"></a>Artiklar om att hantera grupper
 
-- [Uppgradera distributionslistor till Microsoft 365-grupper i Outlook](../manage/upgrade-distribution-lists.md)
+- [Uppgradera distributions listor till Microsoft 365-grupper i Outlook](../manage/upgrade-distribution-lists.md)
 
 - [Varför du bör uppgradera dina distributionslistor till grupper i Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- [Hantera gäståtkomst i Microsoft 365-grupper](manage-guest-access-in-groups.md)
+- [Hantera gäst åtkomst i Microsoft 365-grupper](manage-guest-access-in-groups.md)
 
-- [Hantera Microsoft 365-grupper med PowerShell:](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)den här artikeln introducerar dig till viktiga cmdlets och ger exempel
+- [Hantera Microsoft 365-grupper med PowerShell: i](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)den här artikeln får du en introduktion till viktiga cmdlets och ger exempel
 
-- [Namngivningsprincip för Microsoft 365-grupper](groups-naming-policy.md)
+- [Microsoft 365 grupper namn princip](groups-naming-policy.md)

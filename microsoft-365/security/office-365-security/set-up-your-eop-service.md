@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratörer kan läsa mer om hur du installerar ett fristående Exchange Online Protection (EOP) för att skydda lokala e-postmiljöer.
-ms.openlocfilehash: cf49cf4b0784731c23c0c36de44d3b0b2cb78dc8
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e6ca3965dd82bf0e6ed7e361984758ab34e3eea0
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827827"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307597"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Konfigurera din fristående EOP-tjänst
 
@@ -64,7 +64,7 @@ Kontrol lera e-postflödet mellan tjänsten och din miljö. Mer information finn
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Steg 4: Tillåt inkommande port 25 SMTP-åtkomst
 
-När du har konfigurerat kopplingar väntar du 72 timmar för att tillåta spridning av DNS-postuppdateringarna. Därefter kan du begränsa inkommande port-25 SMTP-trafik på din brand vägg eller e-postserver så att den endast accepterar e-post från EOP Data Center, särskilt från IP-adresserna som visas i [Exchange Online Protection IP-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Då skyddas den lokala miljön genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på din e-postserver som styr vilka IP-adresser som är tillåtna för att ansluta till e-post kan du även uppdatera dessa inställningar.
+När du har konfigurerat kopplingar väntar du 72 timmar för att tillåta spridning av DNS-postuppdateringarna. Därefter kan du begränsa inkommande port-25 SMTP-trafik på din brand vägg eller e-postserver så att den endast accepterar e-post från EOP Data Center, särskilt från IP-adresserna som visas i [Exchange Online Protection IP-adresser](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges). Då skyddas den lokala miljön genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på din e-postserver som styr vilka IP-adresser som är tillåtna för att ansluta till e-post kan du även uppdatera dessa inställningar.
 
 > [!TIP]
 > Konfigurera inställningar på SMTP-servern med en anslutnings tid på 60 sekunder. Den här inställningen är acceptabel i de flesta fall och gör det möjligt för en viss fördröjning om ett meddelande skickas med en stor bifogad fil.

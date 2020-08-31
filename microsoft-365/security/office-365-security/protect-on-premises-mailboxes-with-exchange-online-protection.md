@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer i Kina som använder Office 365 som drivs av 21Vianet kan läsa mer om hur du använder fristående Exchange Online Protection (EOP) för att skydda sina lokala post lådor.
-ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826819"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307755"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Skydda lokala postlådor i Kina med fristående EOP
 
@@ -58,7 +58,7 @@ Skapa kopplingar i administrations centret för Exchange (UK) som möjliggör e-
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Steg 4: Tillåt inkommande port 25 SMTP-åtkomst
 
-När du har konfigurerat kopplingar väntar du 72 timmar för att tillåta spridningen av DNS-postuppdateringarna. Därefter kan du begränsa inkommande port-25 SMTP-trafik på din brand vägg eller e-postserver så att den endast kan skicka e-post från EOP Data Center, specifikt från IP-adresserna som visas i [URL: er och IP-adressintervall för Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). Då skyddas den lokala miljön genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på din e-postserver som styr vilka IP-adresser som är tillåtna för att ansluta till e-post kan du även uppdatera dessa inställningar.
+När du har konfigurerat kopplingar väntar du 72 timmar för att tillåta spridningen av DNS-postuppdateringarna. Därefter kan du begränsa inkommande port-25 SMTP-trafik på din brand vägg eller e-postserver så att den endast kan skicka e-post från EOP Data Center, specifikt från IP-adresserna som visas i [URL: er och IP-adressintervall för Office 365](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints). Då skyddas den lokala miljön genom att begränsa omfattningen av inkommande meddelanden som du kan ta emot. Om du har inställningar på din e-postserver som styr vilka IP-adresser som är tillåtna för att ansluta till e-post kan du även uppdatera dessa inställningar.
 
 > [!TIP]
 > Konfigurera inställningar på SMTP-servern med en anslutnings tid på 60 sekunder. Den här inställningen är acceptabel i de flesta fall, vilket gör att en viss fördröjning i ett meddelande som skickas med en stor bilaga till exempel.

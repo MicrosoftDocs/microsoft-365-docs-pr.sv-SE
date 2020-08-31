@@ -1,6 +1,6 @@
 ---
 title: Microsoft Cloud-arkitekturmodeller
-description: De här moln arkitekturs förhands granskningen ger dig information om Microsofts moln tjänster, inklusive Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online och hybrid lokala och moln lösningar.
+description: De här moln arkitekturs förhands granskningarna ger dig information om Microsofts moln tjänster, inklusive Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 och hybrid lösningar.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,17 +12,28 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 636ac13ffa4e17411e59e47d7aa532a6f0e516e3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 08b899582e6401c0950a1c7349b73130ee62acb4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578012"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308213"
 ---
-# <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft Cloud för Enterprise Architects-illustrationer
+# <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationer för Microsoft moln för företagsarkitektur
 
-De här moln arkitekturs förhands granskningen ger dig information om Microsofts moln tjänster, inklusive Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online och hybrid lokala och moln lösningar. Besluts fattare och arkitekter kan använda de här resurserna för att fastställa de idealiska lösningarna för deras arbets belastning och för att fatta beslut om kärn infrastruktur komponenter som identitet och säkerhet.
+De här moln arkitekturs förhands granskningarna ger dig information om Microsofts moln tjänster, inklusive Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 och hybrid lösningar. 
 
+Besluts fattare och arkitekter kan använda de här resurserna för att fastställa de idealiska lösningarna för deras arbets belastning och för att fatta beslut om kärn infrastruktur komponenter som nätverk, identitet och säkerhet.
+
+
+<a name="identity"></a>
+### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft Cloud Identity för Enterprise Architects
+
+Vad IT-arkitekten behöver veta om att utforma identitet för organisationer som använder Microsofts moln tjänster och plattformar.
+  
+|**Objekt**|**Beskrivning**|
+|:-----|:-----|
+|[![Bild av knapp](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [Visa som en PDF-fil](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>Uppdaterat 2020 | Den här modellen innehåller:  <ul> <li> Introduktion till identitet med Microsofts moln </li><li> Azure AD IDaaS-funktioner </li><li> Integrera lokala AD DS-konton (Active Directory Domain Services) med Azure AD </li><li> Lägga till katalog komponenter i Azure IaaS </li><li> AD DS-alternativ för arbets belastning i Azure IaaS </li></ul><br/>  <br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking for Enterprise Architects
@@ -31,7 +42,7 @@ Det här behöver du veta mer om nätverk för Microsofts moln tjänster och pla
   
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Bild av knapp](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx) <br/>Uppdaterat 2020 | Den här modellen innehåller: <ul><li> Skydda nätverket för moln anslutningar </li><li> Vanliga element i Microsoft Cloud Connectivity </li><li> ExpressRoute för Microsoft Cloud Connectivity </li><li> Designa nätverk för Microsoft SaaS, Azure PaaS och Azure IaaS </li></ul><br/>  <br/>|
+|[![Bild av knapp](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [Visa som en PDF-fil](../downloads/MSFT_cloud_architecture_networking.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>Uppdaterat 2020 | Den här modellen innehåller: <ul><li> Skydda nätverket för moln anslutningar </li><li> Vanliga element i Microsoft Cloud Connectivity </li><li> ExpressRoute för Microsoft Cloud Connectivity </li><li> Designa nätverk för Microsoft SaaS, Azure PaaS och Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsofts hybrid moln för Enterprise Architects
@@ -40,7 +51,7 @@ Vad IT-arkitekten behöver veta om hybrid moln för Microsoft-tjänster och plat
   
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Bild av knapp för Microsoft Hybrid Cloud-modellen](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx) <br>Uppdaterat 2020 | Den här modellen innehåller: <ul><li> Microsofts moln tjänster (SaaS, Azure PaaS och Azure IaaS) och deras gemensamma element </li><li> Hybrid moln arkitektur för Microsofts moln tjänster </li><li> Hybrid moln scenarier för Microsoft SaaS (Office 365), Azure PaaS och Azure IaaS </li></ul><br/>|
+|[![Bild av knapp för Microsoft Hybrid Cloud-modellen](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [Visa som en PDF-fil](../downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>Uppdaterat 2020 | Den här modellen innehåller: <ul><li> Microsofts moln tjänster (SaaS, Azure PaaS och Azure IaaS) och deras gemensamma element </li><li> Hybrid moln arkitektur för Microsofts moln tjänster </li><li> Hybrid moln scenarier för Microsoft SaaS (Office 365), Azure PaaS och Azure IaaS </li></ul><br/>|
    
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Arkitektur som gäller för Microsofts moln innehavare-migreringar 
@@ -68,13 +79,3 @@ Lär dig mer om de vanligaste cyberterrorism-attackerna och hur Microsoft kan hj
 |:-----|:-----|
 |[![Bild av vanliga angrepp. ](../media/solutions-architecture-center/common-attacks-model-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Uppdaterat 2017 | Denna affisch illustrerar sökvägen till vanliga attacker och beskriver vilka funktioner som hjälper dig att stoppa attackerarna i varje steg av en attack. <br/>|
 
-
-<a name="identity"></a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft Cloud Identity för Enterprise Architects
-
-Vad IT-arkitekten behöver veta om att utforma identitet för organisationer som använder Microsofts moln tjänster och plattformar.
-  
-|**Objekt**|**Beskrivning**|
-|:-----|:-----|
-|[![Bild av knapp](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=54431)              <br/>Uppdaterat 2016 | Den här modellen innehåller: <ul><li>Introduktion till identitet med Microsofts moln </li><li>Azure AD IDaaS-funktioner </li><li>Integrera lokala Active Directory Domain Services-konton med Microsoft Azure Active Directory </li><li>Lägga till katalog komponenter i Azure </li><li>Alternativ för domän tjänster för arbets belastningar i Azure IaaS </li></ul><br/>|
-   

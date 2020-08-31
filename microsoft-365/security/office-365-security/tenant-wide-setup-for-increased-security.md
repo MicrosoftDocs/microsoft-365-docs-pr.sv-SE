@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: I det här avsnittet får du hjälp med rekommenderad konfiguration för klient organisationens inställningar som påverkar säkerheten för din Microsoft 365-miljö.
-ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653563"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308225"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera Microsoft 365-klient organisationen för ökad säkerhet
 
@@ -77,7 +77,7 @@ Många av kontrollerna för säkerhet och skydd i administrations centret för E
 |Under|Innehåller en standard princip|Rekommendation|
 |---|---|---|
 |**E-postflöde** (regler för e-postflöde, kallas även transport regler)|Nej|Lägga till en regel för e-postflöde för att skydda mot utpressnings tro Jan program vara genom att blockera filtyper och Office-filtyper som innehåller makron Mer information finns i [använda regler för e-postflöde för att inspektera bifogade filer i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Se följande avsnitt: <br/>* [Skydda mot utpressnings tro Jan](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Skydd mot skadlig program vara och utpressnings Jan attack i Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Återställ från en utpressnings tro Jan attack i Office 365](recover-from-ransomware.md) <br/><br/> Skapa en regel för e-postflöde för att förhindra vidarebefordran av e-post till externa domäner automatiskt. Mer information finns i [begränsa regler för extern vidarebefordring med klienter med säkra Poäng](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Mer information: [regler för e-postflöde (transport regler) i Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Aktivera modern verifikation**|Nej|Modern verifiering är en förutsättning för att använda multifaktorautentisering. MFA rekommenderas för att skydda åtkomst till moln resurser, inklusive e-post. <br/><br/> Se följande avsnitt: <br/>* [Aktivera eller inaktivera modern lösenordsautentisering i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype för företag – online: aktivera din klient organisation för modern](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Modern autentisering är aktive rad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. <br/><br/> Mer information: [så här fungerar den moderna autentiseringsprocessen för office 2013-och office 2016-klient program](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**Aktivera modern verifikation**|Nej|Modern verifiering är en förutsättning för att använda multifaktorautentisering. MFA rekommenderas för att skydda åtkomst till moln resurser, inklusive e-post. <br/><br/> Se följande avsnitt: <br/>* [Aktivera eller inaktivera modern lösenordsautentisering i Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype för företag – online: aktivera din klient organisation för modern](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Modern autentisering är aktive rad som standard för Office 2016-klienter, SharePoint Online och OneDrive för företag. <br/><br/> Mer information: [så här fungerar den moderna autentiseringsprocessen för office 2013-och office 2016-klient program](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Konfigurera delnings principer för hela klient organisationen i administrations centret för SharePoint

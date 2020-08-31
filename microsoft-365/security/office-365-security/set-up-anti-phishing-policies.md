@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om de anti-nätfiske-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: f671588ff4232c6ca1c1342475f48802bf1a0076
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825107"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308201"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
@@ -81,6 +81,9 @@ Följande princip inställningar är tillgängliga i principer för nätfiske oc
     - **Mottagaren är**
     - **Mottagaren är medlem i**
     - **Mottagar domänen är**
+
+  > [!NOTE]
+  > Inställningen **tillämpa på** är obligatorisk i anpassade policyer för att ta bort nätfiske för att identifiera vilka **mottagare** <u>som principen gäller för</u>. ATP-nätfiske-principer har också [personifieringsparametrar](#impersonation-settings-in-atp-anti-phishing-policies) , där du kan ange enskilda avsändare-e-postadresser eller avsändar domäner <u>som</u> beskrivs längre fram i det här avsnittet.
 
 ## <a name="spoof-settings"></a>Inställningar för förfalskning
 
@@ -144,13 +147,21 @@ En personifierad domän kan på annat sätt anses vara legitim (registrerad dom�
 
 Följande inställningar för personifiering är bara tillgängliga i principer för Stöldskydd mot nätfiske:
 
-- **Användare att skydda**: hindrar angivna interna eller externa användare från att personifieras. Till exempel chefer (interna) och styrelse medlemmar (extern). Du kan lägga till upp till 60 interna och externa adresser. Den här listan med skyddade användare skiljer sig från listan över mottagare som principen gäller för i inställningen **tillämpad** .
+- **Användare att skydda**: förhindrar att angivna interna eller externa e-postadresser personifieras **som avsändare**. Till exempel chefer (interna avsändare) och styrelse medlemmar (externa avsändare). Du kan lägga till upp till 60 interna och externa avsändare e-postadresser för att skydda mot personifiering. Den här listan över **avsändare** som skyddas mot personifiering skiljer sig från listan över **mottagare** som principen gäller för.
 
-  Du kan till exempel ange Felipe Apodaca (felipea@contoso.com) som en skyddad användare i en princip som gäller för gruppen chefer. Inkommande meddelanden som skickas till medlemmar i gruppen chefer där Felipe Apodaca är personifierat behandlas av principen (den åtgärd som du konfigurerar för personifierade användare).
+  Standard policyn gäller för meddelanden som skickas till alla mottagare, medan anpassade principer endast gäller för meddelanden som skickas till mottagarna som du anger i inställningen **tillämpad** på enligt anvisningarna i avsnittet [princip inställningar](#policy-settings) .
 
-- **Domäner att skydda**: förhindra att angivna domäner personifieras. Till exempel alla domäner som du äger ([godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) eller specifika domäner (domäner som du äger eller partner domäner). Den här listan över skyddade domäner skiljer sig från listan över domäner som principen gäller för i inställningen **tillämpad** .
+  Standardinställningen är att inga e-postadresser för avsändare har kon figurer ATS för personifieringsnivå för **användare att skydda**. Därför är inte e-postadresserna för avsändare täckta av personifiering, antingen i standard principen eller i anpassade principer.
 
-  Du kan till exempel ange tailspintoys.com som en skyddad domän i en princip som gäller för medlemmar i gruppen chefer. Inkommande meddelanden som skickas till medlemmar i gruppen chefer där tailspintoys.com är personifierat behandlas av principen (den åtgärd som du konfigurerar för personifierade domäner).
+  När du lägger till interna eller externa e-postadresser i listan **användare att skydda** lista, är meddelanden från dessa **avsändare** föremål för kontroll av integritets skydd. Meddelandet kontrol leras för personifiering **om** meddelandet skickas till en **mottagare** som policyn gäller för (alla mottagare för standard principen; **Tillämpas på** mottagare i anpassade principer). Om personifiering upptäcks i avsändarens e-postadress tillämpas åtgärdens skydds åtgärder för användare i meddelandet (åtgärd för meddelandet, de personifierade användarnas säkerhets tips, osv.).
+
+- **Domäner att skydda**: förhindrar att de angivna domänerna personifieras **i meddelandets avsändares domän**. Till exempel alla domäner som du äger ([godkända domäner](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) eller specifika domäner (domäner som du äger eller partner domäner). Den här listan över **avsändare** som skyddas mot personifiering skiljer sig från listan över **mottagare** som principen gäller för.
+
+  Standard policyn gäller för meddelanden som skickas till alla mottagare, medan anpassade principer endast gäller för meddelanden som skickas till mottagarna som du anger i inställningen **tillämpad** på enligt anvisningarna i avsnittet [princip inställningar](#policy-settings) .
+
+  Som standard är inga avsändare konfigurerade för personifierings skydd i **domäner att skydda**. Därför täcks inte heller inga avsändare via personifiering, antingen i standard principen eller i anpassade principer.
+
+  När du lägger till domäner i **domänen för att skydda** listan är meddelanden från **avsändare i dessa domäner** föremål för skydds kontroller för obehöriga. Meddelandet kontrol leras för personifiering **om** meddelandet skickas till en **mottagare** som policyn gäller för (alla mottagare för standard principen; **Tillämpas på** mottagare i anpassade principer). Om personifiering upptäcks i avsändarens domän tillämpas åtgärderna för skydd mot personifiering för domänerna (åtgärden i meddelandet, de personifierade domänernas säkerhets tips, osv.).
 
 - **Åtgärder för skyddade användare eller domäner**: Välj vilken åtgärd som ska vidtas i inkommande meddelanden som innehåller användnings försök mot de skyddade användarna och skyddade domäner i principen. Du kan ange olika åtgärder för personifiering av skyddade användare kontra personifiering av skyddade domäner:
 

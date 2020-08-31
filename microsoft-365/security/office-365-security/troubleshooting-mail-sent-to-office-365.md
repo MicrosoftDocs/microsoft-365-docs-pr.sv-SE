@@ -17,117 +17,117 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Den här artikeln innehåller felsökningsinformation för problem med att skicka e-post till inkorgar i Microsoft 365 & metodtips för massutskick till Microsoft 365-kunder.
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: Den här artikeln innehåller felsöknings information för problem med att skicka e-post till Inkorgen i Microsoft 365 & metod tips för Mass utskick till Microsoft 365-kunder.
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208603"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307585"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Felsöka e-post som skickas till Microsoft 365
 
-Den här artikeln innehåller felsökningsinformation för avsändare som har problem när de försöker skicka e-post till inkorgar i Microsoft 365 och metodtips för massutskick till kunder.
+Den här artikeln innehåller felsöknings information för avsändare som har problem med att skicka e-post till inkorgar i Microsoft 365 och metod tips för Mass utskick till kunder.
 
-## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Hanterar du din IP och domänens skicka rykte?
+## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Hanterar du din IP-och domäns sändande rykte?
 
-EOP-filtreringstekniker är utformade för att ge skydd mot skräppost för Microsoft 365 och andra Microsoft-produkter som Exchange Server. Vi utnyttjar också SPF, DKIM och DMARC; e-postautentiseringstekniker som hjälper till att lösa problemet med förfalskning och nätfiske genom att verifiera att domänen som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till den sändande IP, domän, autentisering, lista noggrannhet, klagomål priser, innehåll och mycket mer. Av dessa, en av de viktigaste faktorerna för att köra ner en avsändare rykte och deras förmåga att leverera e-post är deras skräp e klagomål takt.
+EOP filter Technologies är avsedda att tillhandahålla skydd mot skräp post för Microsoft 365 samt andra Microsoft-produkter som Exchange Server. Vi använder också SPF, DKIM och DMARC; tekniker för e-postverifiering som hjälper dig att lösa problemet med förfalskningar och nätfiske genom att verifiera att den domän som skickar e-postmeddelandet är behörig att göra det. EOP-filtreringen påverkas av ett antal faktorer som är relaterade till sändnings-IP-, domän-, verifikations-, list precision, klagomåls taxa, innehåll och annat. Av dessa är en av huvud faktorerna för att hålla ned avsändarens rykte och deras förmåga att skicka e-post till sin skräp post.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Skickar du e-post från nya IP-adresser?
 
-IP-adresser som inte tidigare använts för att skicka e-post har vanligtvis inget rykte byggt upp i våra system. Som ett resultat, e-post från nya IPs är mer benägna att uppleva leveransproblem. När IP har byggt upp ett rykte för att inte skicka skräppost, eop kommer vanligtvis att möjliggöra en bättre e-postleverans upplevelse.
+IP-adresser som tidigare inte har använts för att skicka e-post har vanligt vis inget rykte inbyggt i våra system. Som ett resultat av detta är det mer sannolikt att skicka e-post från nya IP-adresser. När undersöknings perioden har byggt ett rykte för att inte skicka skräp post, ger EOP vanligt vis bättre funktioner för e-postleverans.
 
-Nya IPs som läggs till för domäner som autentiseras under befintliga SPF-poster får vanligtvis den extra fördelen att ärva en del av domänens sändningsrykte. Om din domän har ett gott sändningsrykt kan nya IPs uppleva en snabbare uppramptid. En ny IP kan förvänta sig att vara helt ramped inom ett par veckor eller tidigare beroende på volym, lista noggrannhet och skräp e-post klagomål priser.
+Nya IP-adresser som läggs till för domäner som är autentiserade under befintliga SPF-poster har vanligt vis utnyttjat fördelarna med att ärva en del av domänens avsändnings rykte. Om din domän har ett bra avsändar rykte kan nya IP-adresser uppleva snabbare. En ny IP-adress kan förvänta sig att bli helt ramp inom några veckor eller snart beroende på volym, lista över riktighet och skräp post taxa.
 
-## <a name="confirm-that-your-dns-is-set-up-correctly"></a>Bekräfta att DNS:en är korrekt konfigurerad
+## <a name="confirm-that-your-dns-is-set-up-correctly"></a>Kontrol lera att din DNS är korrekt konfigurerad
 
-Om du vill ha instruktioner om hur du skapar och underhåller DNS-poster, inklusive MX-posten som krävs för e-postroutning, måste du kontakta din DNS-värd.
+Instruktioner om hur du skapar och hanterar DNS-poster, inklusive MX-posten som krävs för e-postdirigering, måste du kontakta din DNS-värd.
 
-## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Se till att du inte annonserar själv som en icke-dirigerbar IP
+## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Se till att du inte annonserar dig själv som en icke-Routing-IP
 
-Vi kanske inte accepterar e-post från avsändare som misslyckas med en omvänd DNS-sökning. I vissa fall annonserar legitima avsändare sig felaktigt som en icke-internetdigerbar IP när de försöker öppna en anslutning till EOP. IP-adresser som är reserverade för privata (icke-dirigerbara) nätverk inkluderar:
+Vi kanske inte accepterar e-post från avsändare som inte har en omvänd DNS-sökning. I vissa fall annonseras legitima avsändare felaktigt som icke-Internetbaserad IP-adress när du försöker öppna en anslutning till EOP. IP-adresser som reserveras för privata (icke-dirigerbart) nätverk inkluderar:
 
-- 192.168.0.0/16 (eller 192.168.0.0 - 192.168.255.255)
+- 192.168.0.0/16 (eller 192.168.0.0 – 192.168.255.255)
 
-- 10.0.0.0/8 (eller 10.0.0.0 - 10.255.255.255)
+- 10.0.0.0/8 (eller 10.0.0.0-10.255.255.255)
 
-- 172.16.0.0/11 (eller 172.16.0.0 - 172.31.255.255)
+- 172.16.0.0/11 (eller 172.16.0.0 – 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du har fått en rapport om utebliven leverans (NDR) när du skickade e-post till en användare i Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du fick en rapport om utebliven leverans (NDR) när du skickar e-post till en användare i Office 365
 
-Vissa leveransproblem är resultatet av att avsändarens IP-adress blockeras av Microsoft eller på att användarkontot identifieras som förbjudna avsändare på grund av tidigare skräppostaktivitet. Om du tror att du har fått NDR av misstag, följ först eventuella instruktioner i NDR-meddelandet för att lösa problemet.
+Vissa leverans problem är resultatet av avsändarens IP-adress som blockeras av Microsoft eller på grund av att användar kontot identifieras som blockerad avsändare på grund av tidigare spam. Om du tror att du har fått fel meddelandet om MISSLYCKAd leverans problem, följer du först anvisningarna i NDR för att lösa problemet.
 
-Mer information om felet du fick finns i listan över felkoder i [rapporter om utebliven leverans via e-post i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Om du vill ha mer information om det fel du fick kan du läsa listan med felkoder i [rapportera inte meddelanden om e-post i Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
- Om du till exempel får följande NDR anger den att den sändande IP-adressen har blockerats av Microsoft:
+ Om du till exempel tar emot följande NDR anger det att den sändande IP-adressen blockerades av Microsoft:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Om du vill begära borttagning från den här listan kan du [använda avlistningsportalen för att ta bort dig själv från listan blockerade avsändare](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+För att begära borttagning från den här listan kan du [ta bort dig själv från listan Spärrade avsändare](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)genom att använda List portalen.
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Min e-post landade i mottagarens skräppostmapp
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mitt e-postmeddelande landats i mottagarens mapp för skräp post
 
-Om ett meddelande felaktigt har identifierats som skräppost av EOP kan du arbeta med mottagaren för att skicka det här falska positiva meddelandet till Microsoft Spam Analysis Team, som utvärderar och analyserar meddelandet. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
+Om ett meddelande felaktigt har identifierats som skräp post av EOP kan du arbeta med mottagaren för att skicka detta falska positiva meddelande till Microsoft spam-gruppen, som kommer att utvärdera och analysera meddelandet. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Trafiken från min IP-adress begränsas av EOP
+## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>Trafik från min IP-adress begränsas av EOP
 
-Om du får en NDR från EOP som anger att din IP-adress begränsas av EOP, till exempel:
+Om du får en NDR från EOP att din IP-adress begränsas av EOP, till exempel:
 
  `host xxxx.outlook.com [x.x.x.x]: 451 4.7.550 Access denied, please try again later`
 
-Du har fått NDR eftersom misstänkt aktivitet har upptäckts från IP-adressen och den har begränsats tillfälligt medan den utvärderas ytterligare. Om misstanken undanröjs genom utvärdering kommer denna begränsning att hävas inom kort.
+Du fick meddelandet NDR eftersom misstänkt aktivitet har upptäckts från IP-adressen och den har tillfälligt begränsats medan den utvärderas vidare. Om misstanken är klar genom utvärdering kommer denna begränsning att hävas snart.
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Jag kan inte ta emot e-post från avsändare i Microsoft 365
 
- För att ta emot meddelanden från våra användare, se till att ditt nätverk tillåter anslutningar från IP-adresser som EOP använder i våra datacenter. Mer information finns i [Exchange Online Protection IP-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+ För att ta emot meddelanden från våra användare ska du kontrol lera att nätverket tillåter anslutningar från IP-adresserna som EOP använder i våra data Center. Mer information finns i [Exchange Online Protection IP-adresser](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Metodtips för massutskick av e-post till Microsoft 365-användare
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Metod tips för Mass utskick via e-post till Microsoft 365-användare
 
-Om du ofta genomför massutskick av e-post till Microsoft 365-användare och vill se till att dina e-postmeddelanden kommer fram på ett säkert och snabbt sätt följer du tipsen i det här avsnittet.
+Om du ofta utför Mass utskick av e-post till Microsoft 365-användare och vill försäkra dig om att dina e-postmeddelanden kommer till ett säkert och tidseffektivt sätt, följer du tipsen i det här avsnittet.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Se till att namnet Från visar vem som skickar meddelandet
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Kontrol lera att från-namnet återspeglar vem som skickar meddelandet
 
-Ämnet bör vara en kort sammanfattning av vad meddelandet handlar om, och meddelandetexten bör tydligt och kortfattat ange vad erbjudandet, tjänsten eller produkten handlar om. Till exempel:
+Ämnet bör vara en kort sammanfattning av vad meddelandet rör sig om och meddelandets brödtext bör tydligt och succinctly Visa vad erbjudandet, tjänsten eller produkten är till för. Till exempel:
 
-Korrekt:
+Rätt:
 
-> Från: marketing@shoppershandbag.com <br/> Ämne: Uppdaterad katalog för julen!
+> Från: marketing@shoppershandbag.com <br/> Ämne: Uppdaterad katalog för jul säsongen!
 
-Felaktig:
+Fel:
 
-> Från: someone@outlook.com <br/> Ämne: Kataloger
+> Från: someone@outlook.com <br/> Ämne: kataloger
 
-Ju lättare du gör det för människor att veta vem du är och vad du gör, desto mindre svårigheter kommer du att ha leverera genom de flesta spamfilter.
+Ju lättare du gör det för folk att veta vem du är och vad du gör är det mindre svårt att få fram de flesta spam.
 
-### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Inkludera alltid ett alternativ för att avsluta prenumerationen i kampanjmeddelanden
+### <a name="always-include-an-unsubscribe-option-in-campaign-emails"></a>Inkludera alltid alternativet för att avbryta prenumerationer i e-post för kampanjer
 
-Marknadsföring e-post, särskilt nyhetsbrev, bör alltid innehålla ett sätt att avregistrera sig från framtida e-postmeddelanden. Till exempel:
+Marknadsförings-e-postmeddelanden, särskilt nyhets brev, bör alltid innehålla ett sätt att avsluta en framtida e-post. Till exempel:
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
  `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
-Vissa avsändare inkluderar det här alternativet genom att kräva att mottagarna skickar ett e-postmeddelande till ett visst alias med "Avsluta prenumeration" i ämnet. Detta är inte att föredra framför ett klick exempel ovan. Om du väljer att kräva att mottagarna skickar ett e-postmeddelande kontrollerar du att alla obligatoriska fält är förifyllda när de klickar på länken.
+Vissa avsändare inkluderar det här alternativet genom att kräva att mottagarna skickar ett e-postmeddelande till ett visst alias med "avabonnera" i ämnes raden. Det är inte lämpligt att använda ett av exemplen ovan. Om du väljer att kräva att mottagarna skickar ett e-postmeddelande, se till att när de klickar på länken är alla obligatoriska fält ifyllda.
 
-### <a name="use-the-double-opt-in-option-for-marketing-email-or-newsletter-registration"></a>Använd alternativet dubbel opt-in för marknadsföring e-post eller nyhetsbrev registrering
+### <a name="use-the-double-opt-in-option-for-marketing-email-or-newsletter-registration"></a>Använd alternativet dubbelt opt-in för marknadsföring via e-post eller nyhets brev
 
-Den här bästa branschen rekommenderas om ditt företag kräver eller uppmuntrar användare att registrera sina kontaktuppgifter för att få tillgång till din produkt eller dina tjänster. Vissa företag gör det till en praxis att automatiskt registrera sina användare för marknadsföring e-post eller e-nyhetsbrev under registreringsprocessen, men detta anses vara en tvivelaktig marknadsföring praxis i en värld av e-filtrering.
+Vi rekommenderar att du använder denna bransch metod om företaget kräver eller uppmuntrar användare att registrera sin kontakt information för att få åtkomst till din produkt eller tjänst. Vissa företag gör det för att automatiskt registrera sina användare för marknadsförings-e-post eller e-postnyhetsbrev under registrerings processen, men det anses vara en tveksam marknadsförings övning i världen med e-postfiltrering.
 
-Under registreringsprocessen, om "Ja, skicka mig ditt nyhetsbrev" eller "Ja, skicka mig specialerbjudanden" kryssrutan väljs som standard, användare som inte betalar stor uppmärksamhet kan oavsiktligt registrera dig för marknadsföring e-post eller nyhetsbrev som de inte vill få.
+Under registrerings processen, om kryss rutan "Ja, skicka mig ett nyhets brev" eller "Ja, skicka mig med Special erbjudanden" är markerat som standard kan användare som inte betalar nära uppmärksamheten registrera sig för marknadsföring via e-post eller nyhets brev som de inte vill ta emot.
 
- Vi rekommenderar alternativet dubbel opt-in i stället, vilket innebär att kryssrutan för marknadsföring av e-postmeddelanden eller nyhetsbrev är avmarkerad som standard. Dessutom, när registreringsformuläret har skickats, en verifiering e-post skickas till användaren med en webbadress som tillåter dem att bekräfta sitt beslut att ta emot marknadsföring e-post.
+ Vi rekommenderar alternativet dubbel opt-in i stället, vilket betyder att kryss rutan för marknadsförings-e-post eller nyhets brev inte är markerad som standard. När registrerings formuläret har skickats skickas dessutom en bekräftelse via e-post till användaren med en URL som gör att de kan bekräfta marknadsförings-e-postmeddelanden.
 
- Detta bidrar till att säkerställa att endast de användare som vill få marknadsföring e-post är registrerade för e-post, därefter rensa det sändande företaget av tvivelaktiga e-postmarknadsföring praxis.
+ Då ser du till att bara de användare som vill få marknadsförings-e-post är registrerade för e-postmeddelandena och sedan Rensa det sändande företaget av en tveksam e-postmarknadsförings praxis.
 
-### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Se till att e-postmeddelandets innehåll är genomskinligt och spårbart
+### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Kontrol lera att e-postmeddelandets innehåll är transparent och kan spåras
 
-Lika viktigt som hur e-postmeddelandena skickas är innehållet de innehåller. När du skapar e-postinnehåll använder du följande metodtips för att se till att dina e-postmeddelanden inte flaggas av e-postfiltreringstjänster:
+Precis så viktigt som att e-postmeddelandena skickas är innehållet de innehåller. När du skapar e-post kan du använda följande metod tips för att se till att dina e-postmeddelanden inte flaggas via e-post filter tjänster:
 
-- När e-postmeddelandet begär att mottagarna lägger till avsändaren i adressboken, bör det tydligt anges att en sådan åtgärd inte är en garanti för leverans.
+- När e-postmeddelandet begär att mottagarna lägger till avsändaren i adress boken bör det tydligt uppges att sådan åtgärd inte är en garanti för leverans.
 
-- Omdirigeringar som ingår i meddelandets brödtext ska vara lika och konsekventa och inte flera och varierande. En omdirigering i det här sammanhanget är allt som pekar bort från meddelandet, till exempel länkar och dokument. Om du har många annonserings- eller unsubscribe-länkar eller uppdatera profillänkarna bör de alla peka på samma domän. Till exempel:
+- Omdirigeringar som ingår i meddelandets brödtext ska vara liknande och enhetliga och inte multipla och varierande. Det är bara att omdirigera från meddelandet, till exempel länkar och dokument. Om du har många annonserings-eller avprenumerations länkar eller uppdaterar profil länkarna måste de peka på samma domän. Till exempel:
 
-  Korrekt:
+  Rätt:
 
   `unsubscribe.bulkmailer.com`
 
@@ -135,7 +135,7 @@ Lika viktigt som hur e-postmeddelandena skickas är innehållet de innehåller. 
 
   `options.bulkmailer.com`
 
-  Felaktig:
+  Fel:
 
   `unsubscribe.bulkmailer.com`
 
@@ -143,10 +143,10 @@ Lika viktigt som hur e-postmeddelandena skickas är innehållet de innehåller. 
 
   `options.yahoo.com`
 
-- Undvik innehåll med stora bilder och bifogade filer eller meddelanden som enbart består av en bild.
+- Undvik innehåll med stora bilder och bifogade filer eller meddelanden som bara består av en bild.
 
-- Din offentliga integritet eller P3P-inställningar bör tydligt ange förekomsten av spårningspixlar (webbbuggar eller beacons).
+- Dina offentliga integritets-eller P3P-inställningar bör tydligt ange närvaron av spårnings pixlar (webb programs och beacons).
 
-### <a name="remove-incorrect-email-aliases-from-your-databases"></a>Ta bort felaktiga e-postalias från databaserna
+### <a name="remove-incorrect-email-aliases-from-your-databases"></a>Ta bort felaktiga e-postalias från dina databaser
 
-Alla e-postalias i databasen som skapar en studsa tillbaka är onödigt och sätter dina utgående e-postmeddelanden i riskzonen för ytterligare granskning av e-filtreringstjänster. Se till att din e-postdatabas är uppdaterad.
+Alla e-postalias i databasen som skapar en återuppringning är onödigt och gör dina utgående e-postmeddelanden till risk för ytterligare granskning via e-post filter tjänster. Kontrol lera att din e-postdatabas är uppdaterad.

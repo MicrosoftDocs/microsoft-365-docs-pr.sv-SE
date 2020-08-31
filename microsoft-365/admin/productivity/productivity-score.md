@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Microsoft produktivitets poäng.
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868861"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307483"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft produktivitets Poäng (för hands version)
 
@@ -44,7 +44,7 @@ Vi tillhandahåller data, insikter och rekommendationer i två områden:
 
 - **Teknik upplevelse:** Produktiviteten beror på tillförlitlig och högpresterande teknologi samt användning av Microsoft 365. Vi tillhandahåller [slut punkts analys](https://aka.ms/endpointanalytics), som hjälper dig att förstå hur användarnas produktivitet kan påverkas av prestanda-och hälso problem med slut punkts maskin vara och program vara, samtidigt som rekommenderade åtgärder kan åtgärdas. och vi tillhandahåller Microsoft 365-nät anslutnings barhet för din organisation.
 
-Se [Vad är slut punkts analys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och krav uppgifter. Om du vill veta mer om Microsoft 365 Network Connectivity kan du läsa [Översikt över nätverks anslutningen](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Se [Vad är slut punkts analys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och krav uppgifter. Om du vill veta mer om Microsoft 365 Network Connectivity kan du läsa [Översikt över nätverks anslutningen](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Så här beräknas poängen

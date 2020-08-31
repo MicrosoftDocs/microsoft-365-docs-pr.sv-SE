@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Sammanfattning: Vägledning för planering och implementering för snabbrörliga organisationer som har en ökad hotprofil.'
-ms.openlocfilehash: 98ede8a7dade750413dbdf2f35394cb8b15513e5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 79384277ec470d5545e9fe8127a95532e892fb45
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652891"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307889"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsofts säkerhetsvägledning för politiska kampanjer, ideella föreningar och andra snabbrörliga organisationer
 
@@ -62,6 +62,6 @@ Fler säkerhetsfunktioner för demonstration eller koncepttest finns i [Testlabb
 
 ## <a name="see-also"></a>Se även
 
-[Testlabbguider för integrering med molntjänster](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Testlabbguider för integrering med molntjänster](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[IT-arkitekturresurser för Microsoft Cloud](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
+[IT-arkitekturresurser för Microsoft Cloud](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)

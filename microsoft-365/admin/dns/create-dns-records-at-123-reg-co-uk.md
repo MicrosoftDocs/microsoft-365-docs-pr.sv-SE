@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster på 123-reg.co.uk för Microsoft.
-ms.openlocfilehash: 3c188c7e9f2f9390aa45196d798e04441d33bcb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 51542e1f00153a87ca06ec540d391de6ca621bab
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400587"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307037"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Skapa DNS-poster på 123-reg.co.uk för Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "44400587"
   
 Om 123-reg.co.uk är din DNS-värd följer du stegen i den här artikeln för att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och så vidare.
   
-När du har lagt till dessa poster i 123-reg.co.uk konfigureras domänen så att den fungerar med Microsoft-tjänster.
+När du har lagt till dessa poster på 123-reg.co.uk är din domän konfigurerad för att fungera med Microsoft-tjänster.
   
   
 > [!NOTE]
@@ -54,7 +54,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
 3. Välj **DNS** i listrutan **Välj åtgärd**. 
     
-4. Välj fliken **Avancerat DNS** på sidan **Hantera DNS.** 
+4. På sidan **hantera DNS** väljer du fliken **Avancerat DNS** . 
     
 5. Gå till avsnittet **Advanced DNS**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -69,7 +69,7 @@ Innan du använder din domän med Microsoft, vill vi vara säkra på att det är
     
 7. Vänta några minuter innan du fortsätter, så att den post som du nyss skapade kan uppdateras på Internet.
     
-Nu när du har lagt till posten på domänregistratorerns webbplats går du tillbaka till Microsoft och begär en sökning efter posten.
+Nu när du har lagt till posten på domän registratorns webbplats kan du gå tillbaka till Microsoft och begära en sökning efter posten.
   
 När Microsoft hittar rätt TXT-post är din domän verifierad.
   
@@ -94,15 +94,15 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 3. Välj **DNS** i listrutan **Välj åtgärd**. 
     
-4. Välj fliken **Avancerat DNS** på sidan **Hantera DNS.** 
+4. På sidan **hantera DNS** väljer du fliken **Avancerat DNS** . 
     
 5. Gå till avsnittet **Advanced DNS**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
     (Välj värdet för **Type** i listrutan.) 
     
-    |**Hostname**|**Type**|**Priority**|**Destination MX**|
+    |**Hostname**|**Type**|**Priority**|**Mål-MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/> | *\<domain-key\>*.mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Anm.:** Hämta ditt \<domain-key\> från ditt Microsoft-konto. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |9.1  <br/> [Mer information om prioritet finns i ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)Vad är MX-prioritet? <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> **Obs!** Hämta din \<domain-key\> från ditt Microsoft-konto. [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Kopiera och klistra in värden från tabellen](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
@@ -110,11 +110,11 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ![Välj Lägg till](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
-7. Om det finns några andra MX-poster tar du bort var och en genom att välja ikonen **Ta bort (papperskorgen)** för den posten. 
+7. Om det finns andra MX-poster tar du bort var och en genom att välja ikonen **ta bort (pappers korg)** för den posten. 
     
-    ![Välj Ta bort (papperskorgen ikon)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![Välj Ta bort (pappers korgs ikonen)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-poster som krävs för Microsoft
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Lägga till de sex CNAME-posterna som krävs för Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Kom igång genom att gå till domänsidan på 123-reg.co.uk genom att klicka på [den här länken](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Du uppmanas att logga in först.
@@ -123,7 +123,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 3. Välj **DNS** i listrutan **Välj åtgärd**. 
     
-4. Välj fliken **Avancerat DNS** på sidan **Hantera DNS.** 
+4. På sidan **hantera DNS** väljer du fliken **Avancerat DNS** . 
     
 5. Lägg till den första av de sex CNAME-posterna.
     
@@ -131,7 +131,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     (Välj värdet för **Type** i listrutan.) 
     
-    |**Hostname**|**Type**|**Mål CNAME**|
+    |**Hostname**|**Type**|**Mål-CNAME**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **Värdet MÅSTE sluta med en punkt (.)** <br/> |
@@ -147,7 +147,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 7. Lägg till de andra fem CNAME-posterna.
     
-    Skapa en post med värdena från nästa rad i tabellen i avsnittet **Avancerad DNS** och välj sedan **Lägg** till igen för att slutföra posten. 
+    I avsnittet **Advanced DNS** skapar du en post med värdena från nästa rad i tabellen och väljer sedan **Add** för att slutföra den posten. 
     
     Upprepa proceduren tills du har skapat alla sex CNAME-posterna.
     
@@ -155,7 +155,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för din domän ska du inte skapa en ny för Microsfot. Lägg i stället till de nödvändiga Microsoft-värdena i den aktuella posten så att du har en *enda* SPF-post som innehåller båda uppsättningarna värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
+> Du kan inte ha fler än en TXT-post för SPF för en domän. Om din domän har fler än en SPF-post får du e-postfel och problem med leveranser och skräppostklassificering. Om du redan har en SPF-post för domänen ska du inte skapa en ny för Microsfot. I stället kan du lägga till de Microsoft-värden som krävs i den aktuella posten så att du har en  *enda*  SPF-post som innehåller båda uppsättningar med värden. Behöver du exempel? Ta en titt på dessa [externa DNS-poster för Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf). Om du vill validera SPF-posten kan du använda något av dessa [SPF-valideringsverktyg](../setup/domains-faq.md). 
   
 1. Kom igång genom att gå till domänsidan på 123-reg.co.uk genom att klicka på [den här länken](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Du uppmanas att logga in först.
     
@@ -163,7 +163,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 3. Välj **DNS** i listrutan **Välj åtgärd**. 
     
-4. Välj fliken **Avancerat DNS** på sidan **Hantera DNS.** 
+4. På sidan **hantera DNS** väljer du fliken **Avancerat DNS** . 
     
 5. Gå till avsnittet **Advanced DNS**. I den nya postens rutor skriver du in, eller kopierar och klistrar in, värdena från följande tabell. 
     
@@ -173,7 +173,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
-    ![123Reg-BP-Konfigurera-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
+    ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
 6. Välj **Lägg till**.
     
@@ -188,7 +188,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
 3. Välj **DNS** i listrutan **Välj åtgärd**. 
     
-4. Välj fliken **Avancerat DNS** på sidan **Hantera DNS.** 
+4. På sidan **hantera DNS** väljer du fliken **Avancerat DNS** . 
     
 5. Lägg till den första av de två SRV-posterna:
     
@@ -198,9 +198,9 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
     
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
-    |Hostname|Type (Typ)|Prioritet|TTL|Destination SRV|
-    |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
-    |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)** <br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
+    |Hostname|Type (Typ)|Ordningen|TTL|Destinations-SRV|
+    |_sip. _tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)**<br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
+    |_sipfederationtls. _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Värdet MÅSTE sluta med en punkt (.)** <br> **Obs!** Vi rekommenderar att du kopierar och klistrar in den här posten så att alla avstånd förblir korrekta.               |
    
     ![Kopiera och klistra in värdena från tabellen](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
@@ -210,7 +210,7 @@ När Microsoft hittar rätt TXT-post är din domän verifierad.
   
 7. Lägg till den andra SRV-posten:
     
-    Skapa en post i avsnittet **Avancerad DNS** med hjälp av värdena från den andra raden i tabellen och välj sedan **Lägg** till igen för att slutföra posten. 
+    I avsnittet **Advanced DNS** skapar du en post med värdena från den andra raden i tabellen och väljer sedan **Add** för att slutföra den posten. 
     
 > [!NOTE]
 > Det brukar ta omkring 15 minuter för DNS-ändringarna att gå igenom. Ibland kan det dock ta längre tid att uppdatera DNS-systemet på Internet för en ändring som du har gjort. Om du stöter på problem med e-postflödet eller får andra problem när du har lagt till DNS-posterna, går du till [Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster i Microsoft](../get-help-with-domains/find-and-fix-issues.md). 

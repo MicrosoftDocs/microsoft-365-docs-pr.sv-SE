@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Konfigurera principer för säkra Länkar för att skydda din organisation från skadliga länkar i Word-, Excel-, PowerPoint-och Visio-filer samt i e-postmeddelanden.
-ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662260"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307767"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Konfigurera principer för säkra Office 365 ATP-länkar
 
@@ -59,7 +59,7 @@ Med Safet ATP-länkar aktiverat, om en användare klickar på en länk i ett e-p
 
     Mer information om roller och behörigheter finns i [behörigheter i säkerhets & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Kontrol lera att Office-klienter är konfigurerade för att använda [modern](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) säkerhet (det här gäller för säkerhet i Office-dokument).
+- Kontrol lera att Office-klienter är konfigurerade för att använda [modern](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) säkerhet (det här gäller för säkerhet i Office-dokument).
 
 - [Läs mer om princip alternativ för säker användning för ATP](#step-4-learn-about-atp-safe-links-policy-options) (i den här artikeln).
 

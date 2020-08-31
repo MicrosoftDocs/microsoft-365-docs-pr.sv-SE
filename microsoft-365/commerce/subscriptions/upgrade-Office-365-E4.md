@@ -20,12 +20,12 @@ search.appverid:
 description: Lär dig hur du uppgraderar från en Office 365 E4-prenumeration.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694731"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308011"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Uppgradera från ett Office 365 E4-abonnemang
 
@@ -130,7 +130,7 @@ Innan du går vidare till nästa steg är det viktigt att se till att alla tjän
 Du kan använda Microsoft 365 Admin Center för att tilldela licenser för upp till 20 användare åt gången. Mer information finns i [flytta användare till ett annat abonnemang](move-users-different-subscription.md).
 
 > [!TIP]
-> Om du har många användare kan du [använda Office 365 PowerShell för att tilldela användar licenser i bulk](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell).
+> Om du har många användare kan du [använda Office 365 PowerShell för att tilldela användar licenser i bulk](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Steg 4: Avbryt Office 365 E4-abonnemanget
 

@@ -22,48 +22,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Synkronisera domänkontrollerade användare med Microsoft 365 för företag.
-ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+description: Synkronisera domän kontrollerade användare med Microsoft 365 för företag.
+ms.openlocfilehash: 9495d893eb6870ef7c417a78f921296bfc0e6705
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080065"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306458"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synkronisera domänanvändare med Microsoft 365
 
-## <a name="1-prepare-for-directory-synchronization"></a>1. Förbered för katalogsynkronisering 
+## <a name="1-prepare-for-directory-synchronization"></a>1. förbereda för Active Directory-synkronisering 
 
-Innan du synkroniserar användare och datorer från den lokala Active Directory-domänen läser du [Förbered för katalogsynkronisering med Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). I synnerhet gäller följande:
+Innan du synkroniserar användare och datorer från den lokala Active Directory-domänen bör du kontrol lera [förbereda för Active Directory-synkronisering till Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/prepare-for-directory-synchronization). Särskilt:
 
-   - Kontrollera att det inte finns några dubbletter i katalogen för följande attribut: **e-post**, **proxyAdresser**och **userPrincipalName**. Dessa värden måste vara unika och eventuella dubbletter måste tas bort.
+   - Kontrol lera att det inte finns några dubbletter i katalogen för följande attribut: **mail**, **proxyAddresses**och **userPrincipalName**. Dessa värden måste vara unika och dubbletter måste tas bort.
    
-   - Vi rekommenderar att du konfigurerar attributet **userPrincipalName** (UPN) för varje lokalt användarkonto så att det matchar den primära e-postadressen som motsvarar den licensierade Microsoft 365-användaren. Till exempel: *mary.shelley@contoso.com* i stället *för mary@contoso.local*
+   - Vi rekommenderar att du konfigurerar **userPrincipalName** -attributet (UPN) för varje lokalt användar konto så att det stämmer överens med den primära e-postadressen som motsvarar den licensierade Microsoft 365-användaren. Till exempel: *Mary.Shelley@contoso.com* i stället för *Mary@contoso. local*
    
-   - Om Active Directory-domänen slutar i ett suffix som inte är dirigerbart som *.local* eller *.lan*i stället för ett internetrdigerbart suffix som *.com* eller *.org*justerar du UPN-suffixet för de lokala användarkontona först enligt beskrivningen i [Förbered en icke-dirigerbar domän för katalogsynkronisering](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+   - Om Active Directory-domänen slutar på ett icke-dirigerbart till exempel *. local* eller *. LAN*, kan du i stället för ett dirigerbart Internet *-suffix som. com* eller *. org*justera UPN-suffixet för de lokala användar kontona enligt beskrivningen i [förbereda en icke-dirigerbart domän för Active Directory-synkronisering](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
-**Run IdFix** i steg fyra (4) nedan, kommer också att se till att din lokala Active Directory är redo för dir-synkronisering.
+**Kör IdFix** i steg fyra (4) nedan kontrollerar också att den lokala Active Directory är klar för dir-synkronisering.
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. Installera och konfigurera Azure AD Connect
 
-Om du vill synkronisera användare, grupper och kontakter från den lokala Active Directory till Azure Active Directory installerar du Azure Active Directory Connect och konfigurerar katalogsynkronisering. 
+Om du vill synkronisera dina användare, grupper och kontakter från den lokala Active Directory i Azure Active Directory installerar du Azure Active Directory Connect och konfigurera katalog synkronisering. 
 
- 1. Välj Inställningar i den vänstra navigeringscentralen i administrationscentret vid <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> administrationscentret. **Setup**
+ 1. I administrations centret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Select **Setup** i det vänstra navigerings fältet.
 
- 2. Under **Logga in och säkerhet**väljer du **Visa** under Synkronisera användare **från organisationens katalog**.
+ 2. Under **inloggning och säkerhet**väljer du **Visa**  under **synkronisera användare i organisationens katalog**.
 
- 3. På **synkroniseringsanvändarna från organisationens katalogsida** väljer du **Kom igång**.
+ 3. På sidan **synkronisera användare från organisationens katalog** sida väljer du **komma igång**.
 
- 4. I det första steget kör IdFix-verktyget för att förbereda för katalogsynkronisering.
+ 4. I det första steget Kör IdFix verktyg för att förbereda för katalog synkronisering.
 
- 5. Följ guidestegen för att hämta Azure AD Connect och använda den för att synkronisera dina domänkontrollerade användare till Microsoft 365.
+ 5. Följ stegen i guiden för att ladda ned Azure AD Connect och Använd den för att synkronisera domän kontrollerade användare till Microsoft 365.
 
 
-Mer information finns i [Konfigurera katalogsynkronisering för Microsoft 365.](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)
+Mer information finns i [Konfigurera katalog-synkronisering för Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) .
 
-När du konfigurerar dina alternativ för Azure AD Connect rekommenderar vi att du aktiverar **lösenordssynkronisering**, **Sömlös enkel inloggning**och **tillbakaskrivningsfunktionen** för lösenord, som också stöds i Microsoft 365 för företag.
+När du konfigurerar alternativen för Azure AD Connect rekommenderar **vi att du aktiverar Lösenordssynkronisering**, **sömlös enkel inloggning**och funktionen för att ändra **lösen ord** , som också stöds i Microsoft 365 för företag.
 
 > [!NOTE]
-> Det finns ytterligare några steg för återställning av lösenord utanför kryssrutan i Azure AD Connect. Mer information finns i [Så här konfigurerar du tillbaka lösenordet](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
+> Det finns ytterligare anvisningar för att ångra lösen ordet utöver kryss rutan i Azure AD Connect. Mer information finns i [så här konfigurerar du tillbakaskrivning av lösen ord](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
 
-Om du också vill hantera domänanslutna Windows 10-enheter läser du [Aktivera domänanslutna Windows 10-enheter som ska hanteras av Microsoft 365 Business Premium](manage-windows-devices.md) för att konfigurera en hybrid-Azure AD-koppling. 
+Om du vill hantera domänanslutna Windows 10-enheter kan du läsa [Aktivera domän anslutna Windows 10-enheter som hanteras av Microsoft 365 Business Premium](manage-windows-devices.md) för att konfigurera en hybrid Azure AD-anslutning. 
