@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Sammanfattning: skapa utvärderingsversioner av Office 365 och Enterprise Mobility + Security (EMS) med användare och grupper i en utvecklings-/test miljö för en politisk kampanj.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d8c315364e9a00a49ad825ef2652ff4e8a7476b
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 7282659399d2541b50c43dffc9fc8690baecd803
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755278"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308445"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurera grupper och användare i en utvecklings-/testmiljö för en politisk kampanj
 
@@ -133,7 +133,7 @@ Därefter konfigurerar du grupperna så att medlemmarna automatiskt tilldelas Of
 
 I den här fasen lägger du till exempelanvändarkonton för din politiska kampanj.
 
-Först [Anslut med Azure Active Directory PowerShell för diagrammodulen](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Först [Anslut med Azure Active Directory PowerShell för diagrammodulen](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
 
 Därefter fyller du i ditt organisationsnamn, din plats och ett vanligt lösenord och kör dessa kommandon från PowerShells kommandotolk eller integrerat skriptmiljö (ISE):
 
@@ -206,6 +206,6 @@ Skapa fyra olika typer av SharePoint Online-gruppwebbplatser i den här utveckli
 
 [Skapa gruppwebbplatser i en utvecklings-/testmiljö för en politisk kampanj](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[TLG (Test Lab Guides) för integrering med molntjänster](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[TLG (Test Lab Guides) för integrering med molntjänster](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Integrering av moln- och hybridlösningar](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

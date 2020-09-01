@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294781"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308385"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nyheter i Office 365 ATP
 
@@ -39,7 +40,7 @@ Den här artikeln innehåller de nya funktionerna i den senaste versionen av Off
 
 - [Kontrol lera dina policyer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Åsidosätt filter manuellt verdicts med listan Tillåt/blockera klient organisation](tenant-allow-block-list.md)
-- [Utökade funktioner i Threat Explorer, inklusive Top riktade användare, transport regler och kopplingar](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [Utökade funktioner i Threat Explorer, inklusive Top riktade användare, transport regler och kopplingar](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - Visa åsidosätter information i [Threat Explorer](threat-explorer.md) (e-post tillåts/blockerades av innehavaren/användar policyn)
 - Visa URL-hot i [Threat Explorer](threat-explorer.md) (skadlig program vara, Phish, spam eller ingen)
 

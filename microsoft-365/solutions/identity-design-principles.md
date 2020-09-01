@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 427d266ea46c184a87b8b0b4fbe242adfb8deff1
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597549"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308373"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Till identitet och efter – en arkitekts synvinklar
 
@@ -113,7 +113,7 @@ Den här typen av whiteboard-ritningar illustrerar var säkerhets principer till
 
 Vi har jagar drömn med [enkel inloggning](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) (SSO) så länge jag kommer ihåg. Vissa kunder tror att de kan nå detta genom att välja "Right" Federation (STS)-leverantören. Azure AD kan avsevärt bidra till att [Aktivera SSO](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-sso-deployment) -funktioner, men ingen STS är magiska. Det finns för många "gamla" autentiseringsmetoder som fortfarande används för kritiska program. Att utöka Azure AD med [partner lösningar](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) kan adressera många av dessa scenarier. SSO är en strategi och en resa. Det går inte att hitta utan att flytta till [standarder för program](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types). Relaterat till det här avsnittet handlar om att svara på [lösen ords](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless) lös problem som också inte har ett magiska-svar. 
 
-[Multifaktorautentisering](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) är viktig i dag ([här](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) för mer). Lägg till [användar beteende analys](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) och du har en lösning som förhindrar de flesta vanliga cyberterrorism-attacker. Även konsument tjänster flyttar till Kräv MFA. Men jag träffas ändå med många kunder som inte vill gå vidare med [moderna autentiseringsmetoder](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) . Det största argument jag hör är att det påverkar användare och äldre program. Ibland kan det vara bra att använda kunderna för att flytta längs Exchange Online- [ändringar](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282). Massor av Azure AD- [rapporter](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) är nu tillgängliga för att hjälpa kunder med över gången.
+[Multifaktorautentisering](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) är viktig i dag ([här](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) för mer). Lägg till [användar beteende analys](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) och du har en lösning som förhindrar de flesta vanliga cyberterrorism-attacker. Även konsument tjänster flyttar till Kräv MFA. Men jag träffas ändå med många kunder som inte vill gå vidare med [moderna autentiseringsmetoder](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview) . Det största argument jag hör är att det påverkar användare och äldre program. Ibland kan det vara bra att använda kunderna för att flytta längs Exchange Online- [ändringar](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282). Massor av Azure AD- [rapporter](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) är nu tillgängliga för att hjälpa kunder med över gången.
 
 
 
@@ -187,12 +187,12 @@ I dessa scenarier med flera innehavare vill kunderna ofta hålla en del konfigur
 
 ### <a name="multi-geo"></a>Multi-geo 
 
-För [multi-geo](https://docs.microsoft.com/office365/enterprise/office-365-multi-geo) eller inte till multi-geo, det är frågan. Med Office 365 multi-geo kan du tillhandahålla och lagra data på andra geo platser som du har valt att uppfylla [data de](https://docs.microsoft.com/office365/enterprise/o365-data-locations) kraven. Det finns många olika former av den här funktionen. Tänk på följande: 
+För [multi-geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) eller inte till multi-geo, det är frågan. Med Office 365 multi-geo kan du tillhandahålla och lagra data på andra geo platser som du har valt att uppfylla [data de](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations) kraven. Det finns många olika former av den här funktionen. Tänk på följande: 
 - Den ger inte prestanda för delar. Prestanda förbättras om [nätverks designen](https://aka.ms/office365networking) inte stämmer. Skaffa enheter "Stäng" till Microsoft-nätverket, inte nödvändigt vis för dina data.
 - Det är inte en lösning för [GDPR efterlevnad](https://www.microsoft.com/trust-center/privacy/gdpr-overview). GDPR fokuserar inte på data suveränitet eller lagrings platser. Det finns andra ramverk för efterlevnad.
 - Den löser inte delegation av administrationen (se nedan) eller [informations hinder](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
 - Det är inte samma sak som flera klient organisationer och kräver ytterligare [användar konfiguration](https:/docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) för arbets flöden.
-- Den flyttar inte [klient](https://docs.microsoft.com/office365/enterprise/moving-data-to-new-datacenter-geos) organisationen (din Azure AD) till en annan geografi. 
+- Den flyttar inte [klient](https://docs.microsoft.com/microsoft-365/enterprise/moving-data-to-new-datacenter-geos) organisationen (din Azure AD) till en annan geografi. 
 
 ## <a name="delegation-of-administration"></a>Delegerad administration
 
@@ -202,7 +202,7 @@ I de flesta stora organisationer är det en nödvändig verklighet att separera 
 
 Det finns en lång och växande lista över [inbyggda roller](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Varje roll består av en lista med roll behörigheter grupperade för att tillåta att specifika åtgärder utförs. Du kan se dessa behörigheter på fliken "Beskrivning" i varje roll. Alternativt kan du se en mer lättläst version av dessa i administrations centret för Microsoft 365. Definitionerna för inbyggda roller kan inte ändras. I allmänhet kan du gruppera dessa i tre kategorier:
 
-- **Global administratör** – den här "alla kraftfulla" rollen bör vara [mycket skyddad](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) precis som i andra system. Vanliga rekommendationer är: ingen permanent tilldelning och användning av Azure AD reserverad Identity Management (PIM); starkt verifierat; o.d.. Den här rollen ger dig inte till gång till allting som standard. Vanligt vis ser jag förvirring om åtkomst till efterlevnad och Azure Access som diskuteras senare. Denna roll kan alltid tilldela åtkomst till andra tjänster i klient organisationen. 
+- **Global administratör** – den här "alla kraftfulla" rollen bör vara [mycket skyddad](https://docs.microsoft.com/microsoft-365/enterprise/protect-your-global-administrator-accounts) precis som i andra system. Vanliga rekommendationer är: ingen permanent tilldelning och användning av Azure AD reserverad Identity Management (PIM); starkt verifierat; o.d.. Den här rollen ger dig inte till gång till allting som standard. Vanligt vis ser jag förvirring om åtkomst till efterlevnad och Azure Access som diskuteras senare. Denna roll kan alltid tilldela åtkomst till andra tjänster i klient organisationen. 
 - **Specifika tjänst administratörer** – vissa tjänster (Exchange, SharePoint, Power BI, etc.) använder administrations roller på flera nivåer från Azure AD. Detta är inte konsekvent med alla tjänster och det finns fler tjänst roller som diskuteras senare.
 - **Funktionell** – det finns en lång (och mer ökande) lista över roller fokuserat på specifika operationer (gäst Inbjudnings programmet osv.). Med jämna mellanrum läggs fler av dessa till utifrån kundernas behov.
 
@@ -248,8 +248,8 @@ Som tidigare nämnts är många kunder som vill ha en mer detaljerad delegations
   + **Efterföljandekrav**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
   + **Avancerad eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
-- **Multi-geo** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
-- **Dynamics 365** –[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
+- **Multi-geo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin) 
+- **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   OBS! den här länken är till roten i dokumentationen. Det finns flera typer av tjänster med variationer i administratörs-och Delegerings modellen.
 - **Power Platform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
   + **Power Apps**  -  [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
