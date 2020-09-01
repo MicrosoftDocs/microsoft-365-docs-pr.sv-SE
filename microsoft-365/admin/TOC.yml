@@ -293,7 +293,7 @@
           items:
             - name: Validera inställningar på Android eller iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Ange inställningar för enhetsskydd för Windows 10
+        - name: Redigera eller skapa inställningar för enhetsskydd för Windows 10-datorer
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Validera inställningar på Windows 10-datorer

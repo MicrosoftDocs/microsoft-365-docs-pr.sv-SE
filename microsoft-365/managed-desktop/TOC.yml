@@ -102,6 +102,8 @@
               href: get-started/project-visio.md
             - name: Nya Microsoft Edge
               href: get-started/edge-browser-app.md
+            - name: Microsoft 365-applikationer för företag
+              href: get-started/m365-apps.md
     - name: Arbeta med Microsoft Hanterat skrivbord
       href: working-with-managed-desktop/index.md
       items:
@@ -123,7 +125,7 @@
               href: working-with-managed-desktop/security-update-insights.md
         - name: Support för administratörer
           href: working-with-managed-desktop/admin-support.md
-        - name: Support för slutanvändare
+        - name: Användarsupport
           href: working-with-managed-desktop/end-user-support.md
         - name: Hantera appar
           href: working-with-managed-desktop/manage-apps.md
