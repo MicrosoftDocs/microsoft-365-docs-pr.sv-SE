@@ -1,9 +1,9 @@
 ---
-title: Ansluta till alla Microsoft 365-tjänster i ett enda Windows PowerShell-fönster
+title: Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2020
+ms.date: 08/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,29 +17,27 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: 'Sammanfattning: Ansluta Windows PowerShell till alla Microsoft 365-tjänster i ett enda Windows PowerShell-fönster.'
-ms.openlocfilehash: d4e4bf6ec07ee4a0a5b2f8cb1c83ffacd221eaa0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Sammanfattning: Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster.'
+ms.openlocfilehash: af676434017cbe7025baa5e8509e6203a5d59674
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694674"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307631"
 ---
-# <a name="connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window"></a>Ansluta till alla Microsoft 365-tjänster i ett enda Windows PowerShell-fönster
+# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Ansluta till alla Microsoft 365-tjänster i ett enda PowerShell-fönster
 
-När du använder PowerShell för att hantera Microsoft 365 går det att ha upp till fem olika Windows PowerShell-sessioner öppna samtidigt, vilket motsvarar Administrationscenter för Microsoft 365, SharePoint Online, Exchange Online, Skype för företag – Online, Microsoft Teams och &amp; säkerhet- och efterlevnadscenter. Med fem olika anslutningsmetoder i skilda Windows PowerShell-sessioner kan skrivbordet se ut så här:
+När du använder PowerShell för att hantera Microsoft 365 går det att ha flera olika PowerShell-sessioner öppna samtidigt i olika PowerShell-fönster som hör till hanterade användarkonton, SharePoint Online, Exchange Online, Skype för företag – Online, Microsoft Teams och Säkerhets- &amp; efterlevnadscenter. 
   
-![Fem Windows PowerShell-konsoler körs samtidigt](../media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
-  
-Du kan inte använda det här alternativet för att hantera Microsoft 365 eftersom du inte kan utbyta data mellan dessa fem fönster för hantering av flera tjänster. I den här artikeln beskrivs hur du använder en enda instans av Windows PowerShell, som du kan använda för att hantera Microsoft 365-konton, Skype för företag – Online, Exchange Online, SharePoint Online, Microsoft Teams och &amp; säkerhet- och efterlevnadscenter.
+Du kan inte använda det här alternativet för att hantera Microsoft 365 eftersom du inte kan utbyta data mellan fönstren för hantering av flera tjänster. I den här artikeln beskrivs hur du använder en enda instans av PowerShell, som du kan använda för att hantera Microsoft 365-konton, Skype för företag – Online, Exchange Online, SharePoint Online, Microsoft Teams och Säkerhets- &amp; efterlevnadscenter.
 
 >[!Note]
->I den här artikeln finns för närvarande bara kommandon för att ansluta till molnet över hela världen (+GCC). I fler kommentarer finns länkar till artiklar med information om hur du ansluter till andra Microsoft 365-moln.
+>I den här artikeln finns för närvarande bara kommandon för att ansluta till molnet över hela världen (+GCC). I kommentarerna finns länkar till artiklar med information om hur du ansluter till andra Microsoft 365-moln.
 >
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Innan du kan hantera hela Microsoft 365 från en enda instans av Windows PowerShell måste följande förutsättningar vara uppfyllda:
+Innan du kan hantera hela Microsoft 365 från en enda instans av PowerShell måste följande förutsättningar vara uppfyllda:
   
 - Det Microsoft 365-konto för arbete eller skola som du använder för de här procedurerna måste vara medlem i en administratörsroll för Microsoft 365. Mer information finns i [Om administratörsroller](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Det här är ett krav för PowerShell för Microsoft 365, inte nödvändigtvis för alla andra Microsoft 365-tjänster.
     
@@ -67,11 +65,11 @@ Innan du kan hantera hela Microsoft 365 från en enda instans av Windows PowerSh
     
    - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [Skype för företag – Online, Windows PowerShell-modul](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [Skype för företag – Online, PowerShell-modul](https://go.microsoft.com/fwlink/p/?LinkId=532439)
    - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Teams PowerShell översikt](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  Windows PowerShell måste konfigureras för körning av signerade skript för Skype för företag – Online och &amp; säkerhet- och efterlevnadscenter. Det gör du genom att köra följande kommando i en upphöjd Windows PowerShell-session (ett Windows PowerShell-fönster som du öppnar genom att välja **Kör som administratör**).
+-  PowerShell måste konfigureras för körning av signerade skript för Skype för företag – Online och Säkerhets- &amp; efterlevnadscenter. Det gör du genom att köra följande kommando i en upphöjd PowerShell-session (ett PowerShell-fönster som du öppnar genom att välja **Kör som administratör**).
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -95,14 +93,14 @@ Här är några steg för att ansluta till alla tjänster i ett enda PowerShell-
    Connect-AzureAD -Credential $credential
    ```
   
-   Om du använder modulen Microsoft Azure Active Directory-modul för Windows PowerShell kör du det här kommandot.
+   Om du däremot använder modulen Microsoft Azure Active Directory för PowerShell-moduler kör du det här kommandot.
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
+   > PowerShell Core stöder inte modulen Microsoft Azure Active Directory för PowerShell-moduler och -cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från PowerShell.
 
 4. Kör dessa kommandon för att ansluta till SharePoint Online. Ange organisationsnamnet för din domän. Till exempel, för "litwareinc.onmicrosoft.com" är organisationensnamnet "litwareinc".
     
@@ -166,7 +164,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Här finns alla kommandon i ett enda block när du använder Microsoft Azure Active Directory-modul för Windows PowerShell-modul. Ange namnet på domänvärden och kör alla samtidigt.
+Alternativt finns här alla kommandon i ett enda block när du använder modulen Microsoft Azure Active Directory för PowerShell-moduler. Ange namnet på domänvärden och kör alla samtidigt.
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -184,7 +182,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-När du är redo att stänga Windows PowerShell-fönstret kör du det här kommandot för att ta bort aktiva sessioner till Skype för företag – Online, SharePoint Online, &amp; säkerhet- och efterlevnadscenter, och Teams:
+När du är redo att stänga PowerShell-fönstret kör du det här kommandot för att ta bort aktiva sessioner till Skype för företag – Online, SharePoint Online, Säkerhets- &amp; efterlevnadscenter och Teams:
   
 ```powershell
 Remove-PSSession $sfboSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
@@ -211,7 +209,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-Här finns alla kommandon när du använder Microsoft Azure Active Directory-modul för Windows PowerShell-modul.
+Här finns annars alla kommandon när du använder modulen Microsoft Azure Active Directory för PowerShell-moduler.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -237,4 +235,3 @@ I &amp; säkerhet- och efterlevnadscenter hittar du information om [Ansluta till
 - [Ansluta till Microsoft 365 med PowerShell](connect-to-microsoft-365-powershell.md)
 - [Hantera SharePoint Online med PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
 - [Hantera Microsoft 365-användarkonton,-licenser och-grupper med PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-- [Använda Windows PowerShell för att skapa rapporter i Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)

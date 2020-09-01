@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Hantera dessa Azure-administratörsroller i administrationscentret för Microsoft 365.
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898034"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289099"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Azure Active Directory-roller i administrationscentret för Microsoft 365
 
@@ -62,6 +62,8 @@ Här följer en lista över alla tillgängliga administratörsroller i administr
 |Grupper-administratör   |Skapar grupper och hanterar alla Grupper-inställningar i olika administrationscenter.|
 |Gästinbjudare     |    Hanterar Azure Active Directory B2B-inbjudningar till gästanvändare.     |
 |Supportadministratör     | Återställer lösenord och omautentiseringar för alla icke-administratörer och vissa administratörsroller, hanterar tjänsteförfrågningar och övervakar tjänstens status.      |
+|Insights-administratör     | Hanterar alla aspekter av programmet Microsoft 365 Insights, läser Azure Active Directory-information och kan övervaka tjänststatus och skapa och hantera tjänstförfrågningar.      |
+|Företagsadministratör för Insights     | Läsa rapporter och insikter i programmet Microsoft 365 Insights.      |
 |Intune-administratör     | Fullständig åtkomst till Intune, hanterar användare och enheter för att associera principer, skapar och hanterar grupper.      |
 |Kaizala-administratör     |    Full tillgång till alla Kaizala-hanteringsfunktioner och data, hanterar tjänsteförfrågningar.     |
 |Licensadministratör     |     Tilldelar och tar bort licenser från användare och redigerar deras användningsplatser.    |
