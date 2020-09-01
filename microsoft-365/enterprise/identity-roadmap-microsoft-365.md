@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Översikt till identitet för Microsoft 365.
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694931"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315805"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitets översikt för Microsoft 365
 
@@ -42,31 +42,31 @@ Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microso
 
 ## <a name="plan"></a>Planera
 
-I planerings fasen av din identitets implementering:
+För att planera för din identitets implementering:
 
 - [Förstå de olika identitets modellerna](about-microsoft-365-identity.md)
 - [Planera för Hybrid identitet och katalog synkronisering](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>Distribuera
 
-I distributions fasen av din identitets implementering:
+Så här distribuerar du din identitets implementering:
 
-- [Skydda globala administratörs konton](protect-your-global-administrator-accounts.md)
+- [Skydda globala administratörskonton](protect-your-global-administrator-accounts.md)
 - [Konfigurera och använda moln-Only-identiteter](cloud-only-identities.md)
 - [Konfigurera och använda Hybrid identiteter](prepare-for-directory-synchronization.md)
-- [Konfigurera katalog synkronisering](set-up-directory-synchronization.md)
+- [Konfigurera katalogsynkronisering](set-up-directory-synchronization.md)
 - Om det behövs kan du använda ett [hybrid identitets scenario](hybrid-solutions.md)
 
 ### <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. Använd rekommendationer och inställningar för identitet i följande artiklar tillsammans med stegen i den här fasen:
+Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. Använd rekommendationer och inställningar i de här artiklarna för identitet:
 
 - [Krav](identity-access-prerequisites.md)
 - [Vanliga principer för identitets- och enhetsåtkomst](identity-access-policies.md)
 
 ## <a name="manage"></a>Hantera
 
-I hanterings fasen av din identitets implementering:
+För att hantera din identitets implementering:
 
 - [Tilldela licenser och hantera användar konton](assign-licenses-to-user-accounts.md)
 - [Övervaka katalog synkronisering](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Lär dig hur IT-experter på Microsoft [hanterar identiteter och säker åtkomst
 
 Se hur Contoso Corporation, ett fiktivt men representativt multinationellt företag, [distribuerade en hybrididentitetsinfrastruktur](contoso-identity.md) för Microsoft 365-molntjänster.
 
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>Nästa steg
 
 Påbörja din identitets planering med [identitets modeller](about-microsoft-365-identity.md).
-

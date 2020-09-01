@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Översikten för konfiguration av enhets hantering för Microsoft 365.
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694550"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315747"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Enhets hanterings översikt för Microsoft 365
 
@@ -47,17 +47,11 @@ Börja [här](https://support.microsoft.com/office/set-up-basic-mobility-and-sec
  
 ## <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. För enhets åtkomst använder du rekommendationer och inställningar i följande artiklar tillsammans med stegen i den här fasen:
+Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. Använd rekommendationer och inställningar i följande artiklar för att få åtkomst till enheter:
 
 - [Krav](identity-access-prerequisites.md)
 - [Vanliga principer för identitets- och enhetsåtkomst](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>Hur Microsoft hanterar enhets hantering för Microsoft 365
-
-Lär dig hur IT-experter på Microsoft [Hantera enheter med EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Hur contoso hanterade enhets hantering för Microsoft 365
 
 Se hur Contoso Corporation, en fiktiv men är representativ för flera nationella företag, [distribuera sin infrastruktur för mobila enheter](contoso-mdm.md) med Microsoft 365-molntjänster.
-
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)

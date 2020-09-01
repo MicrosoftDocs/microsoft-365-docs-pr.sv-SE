@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägga till din domän i Microsoft 365 i Microsoft 365 Admin Center genom att lägga till en DNS-post hos din DNS-värd. Installations guiden hjälper dig genom processen.
-ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814438"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315723"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -83,11 +83,13 @@ ms.locfileid: "46814438"
     
 5. Välj hur du vill verifiera att du äger domänen.
     
-    1. Om din domän är registrerad på GoDaddy eller 1 &amp; 1 väljer du **Logga in på**  >  **Nästa** och Microsoft [konfigurerar posterna automatiskt](../get-help-with-domains/domain-connect.md).
+    1. Om domän registratorn använder [domän Anslut](#domain-connect-registrars-integrating-with-microsoft-365)väljer du **Logga in på**  >  **Nästa** och Microsoft registrerar [dina poster automatiskt](../get-help-with-domains/domain-connect.md).
     
     2. Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod. Om du inte känner igen eller har åtkomst till e-postmeddelandet i posten kan du använda det tredje alternativet.
     
     3. Du kan använda en TXT-post för att verifiera din domän. Välj det här alternativet och välj **Nästa** för att Visa anvisningar för hur du lägger till den här DNS-posten på din registrators webbplats. Det kan ta upp till 30 minuter innan du har lagt till posten. 
+
+    4. Du kan lägga till en textfil till din domäns webbplats. Välj och ladda ner txt-filen från installations guiden och ladda upp filen till webbplatsen på den översta nivån. Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` . Vi bekräftar att du äger domänen genom att hitta filen på webbplatsen.
     
 6. Välj hur du vill göra de DNS-ändringar som krävs för att Office ska kunna använda domänen.
     
