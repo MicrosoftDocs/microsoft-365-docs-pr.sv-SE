@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Läs om hur du uppdaterar dina faktureringsadresser för Microsoft 365 för företag. Du kan också uppdatera den e-postadress som används för att ta emot faktureringsmeddelanden.
-ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Lär dig hur du uppdaterar din fakturerings adress för Microsoft 365 för företag. Du kan också uppdatera e-postadressen som används för att ta emot fakturerings aviseringar.
+ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817035"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324358"
 ---
 # <a name="change-your-billing-addresses"></a>Ändra dina faktureringsadresser
 
@@ -41,7 +41,7 @@ ms.locfileid: "44817035"
 
 ::: moniker-end
 
-Din faktura innehåller tre adresser:
+Fakturan eller fakturan innehåller tre adresser:
   
 - **Såld till-adress** Företagets namn och adress, som visas i organisations profil.
 
@@ -49,32 +49,31 @@ Din faktura innehåller tre adresser:
 
 - **Tjänstanvändningsadress** Adressen där tjänsten används, vanligtvis samma som **Såld till**-adressen. Om organisationen har fjärranvändare eller flera kontor använder du adressen där majoriteten av användarna finns.
 
-I de flesta fall är de här adresserna desamma. Om du behöver ändra en eller flera adresser kan du göra det. Du kan också ange en alternativ e-postadress för att få faktureringsaviseringar, samt ändra den alternativa e-postadressen för andra administratörer.
+I de flesta fall är de här adresserna desamma. Om du behöver ändra en eller flera adresser kan du göra det. Du kan också ange en alternativ e-postadress för att få fakturerings aviseringar och ändra den alternativa e-postadressen för andra administratörer.
   
 ::: moniker range="o365-worldwide"
 
-Mer information om fakturan eller fakturan finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md) och [Förstå din faktura eller faktura](understand-your-invoice2.md).
+Mer information om fakturan finns i [Visa din](view-your-bill-or-invoice.md) faktura och [förstå din](understand-your-invoice2.md)faktura.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Mer information om fakturan eller fakturan finns i [Visa fakturan eller fakturan](view-your-bill-or-invoice.md) och [Förstå din faktura eller din faktura.](understand-your-invoice2.md)
+Mer information om fakturan finns i [Visa din](view-your-bill-or-invoice.md) faktura och [förstå din orinvoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din faktura eller får Fapiaos för Office 365 som drivs av 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+Om du använder Office 365 som drivs av 21Vianet i Kina kan du läsa se [din faktura eller skaffa fapiaos för Office 365 som drivs av 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
-
 ## <a name="change-your-sold-to-address"></a>Ändra Såld till-adressen
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Faktureringskonton</a> i administrationscentret.
+1. I administrations centret går du till sidan **fakturerings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">konton</a> .
 
-2. välj **Redigera faktureringskontoinformation**.
+2. Välj **Redigera information om fakturerings konto**.
 
 3. Uppdatera organisationsinformationen och välj sedan **Spara**.
   
@@ -82,13 +81,13 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Faktureringsbetalningsmetoder</a> i administrationscentret.
+1. Gå till **Billing** \> sidan <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">betalnings metod</a> för fakturering i administrations centret.
 
-2. Välj det kreditkort eller bankkonto som du vill ändra.
+2. Välj det kredit kort eller bank konto som du vill ändra.
 
-3. På sidan **Information om betalningsmetod** väljer du **Redigera**.
+3. På sidan **betalnings metod information** väljer du **Redigera**.
 
-4. Uppdatera faktureringsadressen och välj sedan **Spara** \> **klar**.
+4. Uppdatera din fakturerings adress och välj sedan **Spara** \> **klar**.
 
 ::: moniker-end
 
@@ -96,19 +95,19 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj den prenumeration som du vill ändra och välj sedan **Ändra betalningsinformation**.
+2. Välj den prenumeration som du vill ändra och välj sedan **ändra betalnings information**.
 
     ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
   
-3. *Kreditkorts- och bankkontokunder:*  På sidan **Ändra betalningsinformation** väljer du det kreditkort eller bankkonto som du vill uppdatera, väljer **Redigera information,** uppdaterar faktureringsadressen och väljer sedan **Skicka**.
+3. *Kredit korts-och bank konto kunder:*  På sidan **ändra betalnings information** väljer du det kredit kort eller bank konto du vill uppdatera, väljer **Redigera information**, uppdaterar din fakturerings adress och väljer sedan **Skicka**.
   
     > [!NOTE]
-    > Möjligheten att betala med bankkonto är inte tillgänglig i vissa länder eller regioner.
+    > Möjligheten att betala via bank konto är inte tillgänglig i vissa länder eller regioner.
 
-     *Fakturakunder:*  På sidan **Ändra betalningsinformation** uppdaterar du faktureringsadressen och väljer sedan **Skicka**.
+     *Faktura kunder:*  Uppdatera din fakturerings adress på sidan **ändra betalnings information** och välj sedan **Skicka**.
   
     > [!NOTE]
-    > Möjligheten att betala en faktura med check är inte tillgänglig i vissa länder eller regioner.
+    > Det går inte att betala en faktura genom att checka ut i vissa länder eller regioner.
 
 ::: moniker-end
 
@@ -116,11 +115,11 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj den prenumeration som du vill ändra och välj sedan **Ändra betalningsinformation**.
+2. Välj den prenumeration som du vill ändra och välj sedan **ändra betalnings information**.
 
     ![The Payment method section of a Subscription card for a subscription that pays by invoice.](../../media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
   
-3. På sidan **Ändra betalningsinformation** uppdaterar du faktureringsadressen och väljer sedan **Skicka**.
+3. Uppdatera din fakturerings adress på sidan **ändra betalnings information** och välj sedan **Skicka**.
 
     Du kan [ändra din betalningsmetod för Office 365 som drivs av 21Vianet](change-payment-method.md) från faktura till onlinebetalning (eller vice versa) med Alipay eller China UnionPay.
 
@@ -131,10 +130,9 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 ::: moniker range="o365-worldwide"
 
 1. I administrationscentret går du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Dina produkter</a>.
-
-2. Leta reda på den prenumeration du vill ändra. I avsnittet **Inställningar & Åtgärder** väljer du Redigera **tjänstanvändningsadress**.
-
-3. Uppdatera adressen i fönstret **Redigera tjänstanvändningsadress** och välj sedan **Spara**.
+2. På fliken **produkter** väljer du den prenumeration som du vill ändra.
+3. På sidan prenumerations information i avsnittet **tjänst användnings adress** väljer du **Redigera tjänst användnings adress**.
+4. Uppdatera din adress i fönstret **Redigera tjänst användnings adress** och välj sedan **Spara**.
 
 ::: moniker-end
 
@@ -142,11 +140,11 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj den prenumeration du vill ändra, välj **Fler åtgärder**och välj sedan **Redigera tjänstanvändningsadress**.
+2. Välj den prenumeration som du vill ändra, Välj **fler åtgärder**och välj sedan **Redigera tjänst användnings adress**.
 
     ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
-3. Uppdatera adressen för tjänsten i fönstret **Redigera tjänstanvändningsadress** och välj sedan **Skicka**.
+3. Uppdatera din adress i fönstret **Redigera din tjänst användnings adress** och välj sedan **Skicka**.
 
 ::: moniker-end
 
@@ -154,27 +152,27 @@ Om du använder Office 365 som drivs av 21Vianet i Kina läser [du Visa din fakt
 
 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prenumerationer</a> i administrationscentret.
 
-2. Välj den prenumeration du vill ändra, välj **Fler åtgärder**och välj sedan **Redigera tjänstanvändningsadress**.
+2. Välj den prenumeration som du vill ändra, Välj **fler åtgärder**och välj sedan **Redigera tjänst användnings adress**.
 
     ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
-3. Uppdatera adressen för tjänsten i fönstret **Redigera tjänstanvändningsadress** och välj sedan **Skicka**.
+3. Uppdatera din adress i fönstret **Redigera din tjänst användnings adress** och välj sedan **Skicka**.
 
 ::: moniker-end
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Ändra den alternativa e-postadressen dina faktureringsaviseringar skickas till
 
-Som standard skickas organisationens faktureringsmeddelanden till Microsofts e-postadress och den alternativa e-postadressen för alla globala administratörer och faktureringsadministratörer i organisationen. Alla administratörer kan ändra sin alternativa e-postadress genom att uppdatera profilinformationen.
+Standardinställningen är att organisationens fakturerings aviseringar skickas till Microsoft-e-postadressen och den alternativa e-postadressen för varje global och fakturerings administratör i organisationen. Alla administratörer kan ändra sin alternativa e-postadress genom att uppdatera profilinformationen.
   
-1. Logga in på Microsoft 365 med ditt arbets- eller skolkonto som global administratör. [Läs om hur du loggar in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Logga in på Microsoft 365 med ditt arbets-eller skol konto som global administratör. [Läs mer om hur du loggar](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)in.
 
-2. Välj **ikonen Användare**och välj sedan **Mitt konto**.
+2. Välj **ikonen användare**och välj sedan **mitt konto**.
   
-3. Välj **Personlig information**.
+3. Välj **personlig info**.
   
-4. Välj **Redigera**i rutan **Kontaktuppgifter** .
+4. Välj **Redigera**i rutan **kontakt information** .
 
-5. I rutan **Alternativ e-post** skriver du den alternativa e-postadress som du vill använda och väljer sedan **Spara**.
+5. Skriv den alternativa e-postadressen som du vill använda i rutan **alternativ e-post** och välj sedan **Spara**.
   
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändra den alternativa e-postadressen för en annan administratör
 
@@ -182,25 +180,25 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 
 ::: moniker range="o365-worldwide"
   
-1. Gå till sidan **Faktureringsmeddelanden** på sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsfakturering</a> i administrationscentret.
+1. Gå till sidan för **fakturerings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">aviseringar</a> i administrations centret.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Gå till sidan **Faktureringsmeddelanden** på sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Faktureringsfakturering</a> i administrationscentret.
+1. Gå till sidan för **fakturerings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">aviseringar</a> i administrations centret.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Faktureringsmeddelanden</a> i administrationscentret.
+1. Gå till sidan för **fakturerings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">aviseringar</a> i administrations centret.
 
 ::: moniker-end
 
-2. På sidan **Faktureringsaviseringar** väljer du den administratör som du vill ändra.
+2. På sidan **fakturerings aviseringar** väljer du den administratör som du vill ändra.
 
-3. I fönstret **Redigera användarroller** skriver du den alternativa e-postadress som du vill använda och väljer sedan **Spara**.
+3. Skriv den alternativa e-postadressen som du vill använda i fönstret **Redigera användar roller** och välj sedan **Spara**.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
@@ -210,4 +208,4 @@ Du kan även ändra den alternativa e-postadressen till andra globala administra
 
 [Betala för prenumerationen](pay-for-your-subscription.md)
 
-[Prenumerationer och fakturering – hjälp om administratörer](../index.yml)
+[Abonnemang och fakturering-hjälp för administratörer](../index.yml)

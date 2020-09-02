@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Lär dig hur du använder Utforskaren och real tids identifiering i &amp; Center för säkerhets kontroll för att undersöka och reagera på hot effektivt och effektivt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641647"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47322046"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer och real tids identifiering
 
@@ -30,7 +30,7 @@ Om din organisation har [office 365 Avancerat skydd](office-365-atp.md) (Office 
 
 |Med ATP-abonnemang 2 ser du:|Med ATP-abonnemang 1 ser du:|
 |---|---|
-|![Threat Explorer](../../media/threatmgmt-explorer.png)|![Realtidsidentifiering](../../media/threatmgmt-realtimedetections.png)|
+|![Threat Explorer](../../media/threatmgmt-explorer.png)|![Identifiering i realtid](../../media/threatmgmt-realtimedetections.png)|
 |
 
 Med Explorer (eller real tids identifieringar) har du en kraftfull rapport som gör det möjligt för säkerhets åtgärds gruppen att undersöka och reagera på hot effektivt och effektivt. Rapporten ser ut ungefär så här:
@@ -78,8 +78,39 @@ Du bör också läsa mer om produkten. Det totala antalet Sök resultat inom rut
 
 ![Visa information om produkten](../../media/ProductInfo.png)
 
+## <a name="extended-capabilities-in-threat-explorer"></a>Utökade funktioner i Threat Explorer
 
-## <a name="new-features-in-real-time-detections"></a>Nya funktioner i real tids identifiering
+### <a name="top-targeted-users"></a>Vanligaste riktade användare
+
+Idag står det för en lista över de vanligaste riktade användarna i vyn mot skadlig kod för e-postmeddelanden (i den övre delen av familjen med skadlig kod). Vi kommer att utöka den här vyn i Phish och alla e-postvyer, där du kan se de fem vanligaste användarna tillsammans med antalet försök för varje användare för motsvarande vy (till exempel för Phish-vy kan du se antalet Phish-försök).
+Du kan också exportera listan med riktade användare till en gräns på 3000 tillsammans med antalet försök för offline-analys för varje e-postvy. Det är bara att välja Nej. av försök (till exempel 13 försök nedan) öppnar en filtrerad vy i Threat Explorer så att du kan titta på mer information i alla e-postmeddelanden och hot för den användaren. 
+
+![Vanligaste riktade användare](../../media/Top_Targeted_Users.png)
+
+
+### <a name="exchange-transport-rules"></a>Exchange Transport-regler
+Som en del av data berikning bör du även kunna se alla olika transport regler som används för ett meddelande. Den här informationen visas i vyn e-post-rutnät (om du vill visa det väljer du kolumn alternativ i rutnätet och Lägg till Exchange-transportläge från kolumn alternativen i rutnätet) samt information som visas i e-postmeddelandet.
+Du kan se både GUID och namnet på de transport regler som har lagts till i meddelandet. Dessutom kan du söka efter meddelanden med hjälp av namnet på transport regeln. Det här är en "innehåller"-sökning vilket innebär att du kan söka i vissa sökningar. 
+
+#### <a name="important-note"></a>Viktigt Obs! 
+Exchange Sök-och namn tillgänglighet beror på vilken roll som har tilldelats dig. Du måste ha någon av följande roller/behörigheter för att kunna visa Exchange namn och sökning.  Om du inte har någon av följande roller kopplade till dig kan du inte se namnen på transport reglerna och söka efter meddelanden med hjälp av Exchange-namnen. Men du kan se Exchange etikett och GUID-information i e-postinformationen. Det går inte att visa poster i e-postrutnät, e-flyouts, filter och export påverkas inte. 
+ 
+- Endast EXO – förhindra data förlust: alla
+- Endast EXO-O365SupportViewConfig: alla
+- AAD eller EXO-säkerhets administratör: alla
+- AAD eller EXO – säkerhets läsare: alla
+- Endast EXO – transport regler: alla
+- Endast EXO-endast visning-konfiguration: alla
+
+I e-postrutnätet, den utfällbara informationen och exporterad CSV-fil visas ETR med ett namn/GUID som visas nedan. 
+
+![Exchange Transport-regler](../../media/ETR_Details.png)
+
+### <a name="inbound-connectors"></a>Inkommande kopplingar 
+
+Kopplingar är en samling instruktioner som anpassar hur din e-post flödar till och från din Microsoft 365-eller Office 365-organisation, med möjligheten att tillämpa säkerhets begränsningar eller kontroller. I Threat Explorer kan du nu Visa kopplingarna som är relaterade till ett e-postmeddelande och söka efter e-postmeddelanden med hjälp av kopplings namnen. Sök efter anslutningar är "innehåller", vilket innebär att ofullständiga nyckelords sökningar också fungerar. I vyn huvud rutnät, den utfällbara informationen och den exporterade CSV-filen visas kopplingarna i namn/GUID-formatet enligt nedan: 
+
+![Anslutnings information](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nya funktioner i Threat Explorer och identifiering av real tid
 
@@ -294,4 +325,3 @@ Mer information om roller och behörigheter finns i följande resurser:
 - Fler filter funktioner och tillgängliga åtgärder ingår i **Threat Explorer**.
 
 Mer information finns i avsnittet [Office 365 ATP Service Description: funktions tillgänglighet för abonnemang för avancerat hot Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-

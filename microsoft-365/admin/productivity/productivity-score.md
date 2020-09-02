@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Översikt över Microsoft produktivitets poäng.
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307483"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324440"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft produktivitets Poäng (för hands version)
 
@@ -40,9 +40,9 @@ Vi tillhandahåller data, insikter och rekommendationer i två områden:
 
 - **Personens upplevelse:** Vi mäter hur personer samarbetar med innehåll, hur de använder Microsoft 365-produkter för att kommunicera och om de använder Microsoft 365 på olika plattformar. 
 
-    Vi tillhandahåller dessa insikter eftersom de när folk samarbetar online sparar tid. När de har frihet att arbeta på alla enheter är de mer produktiva och uppfyllda. När de kan kommunicera på ett flexibelt sätt är de effektivare, bildar bättre relationer och din organisation är mer enhetlig. Mer information finns i [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Vi tillhandahåller dessa insikter eftersom de när folk samarbetar online sparar tid. Med friheten att arbeta på alla enheter är det mer produktivt och uppfyllt. Kommunikation på ett flexibelt sätt gör det lättare för människor att effektivisera, bilda bättre relationer och organisationen är mer enhetlig. Mer information finns i [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Teknik upplevelse:** Produktiviteten beror på tillförlitlig och högpresterande teknologi samt användning av Microsoft 365. Vi tillhandahåller [slut punkts analys](https://aka.ms/endpointanalytics), som hjälper dig att förstå hur användarnas produktivitet kan påverkas av prestanda-och hälso problem med slut punkts maskin vara och program vara, samtidigt som rekommenderade åtgärder kan åtgärdas. och vi tillhandahåller Microsoft 365-nät anslutnings barhet för din organisation.
+- **Teknik upplevelse:** Produktiviteten beror på tillförlitlig och högpresterande teknologi samt användning av Microsoft 365. Vi tillhandahåller [slut punkts analys](https://aka.ms/endpointanalytics), som hjälper dig att förstå hur användarnas produktivitet kan påverkas av prestanda-och hälso problem med slut punktens maskin vara och program vara. Vi tillhandahåller också rekommenderade åtgärder för att åtgärda dem samt Microsoft 365 Network Connectivity Insights för din organisation.
 
 Se [Vad är slut punkts analys](https://docs.microsoft.com/mem/analytics/overview) för en översikt och krav uppgifter. Om du vill veta mer om Microsoft 365 Network Connectivity kan du läsa [Översikt över nätverks anslutningen](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -66,7 +66,7 @@ Produktivitets poängen baseras på de kombinerade poängen från kategorierna f
 
 Produktivitets Poäng inkluderar data från Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer och Skype.
 
-Ditt resultat uppdateras dagligen och återspeglar användar åtgärderna som har slutförts de senaste 28 till 180 dagar (inklusive den aktuella dagen).
+Ditt resultat uppdateras dagligen och återspeglar användar åtgärderna som har slutförts under de senaste 28 (inklusive den aktuella dagen).
 
 
 ## <a name="pre-requisites"></a>Förutsättningar 
@@ -111,15 +111,15 @@ Varje kategori informations sida visar huvud inblick och stödjande mått samt r
 
 ### <a name="content-collaboration-details"></a>Information om innehålls samarbete
 
-Den främsta inblicken för innehålls samarbete är antalet personer som skapar, läser och samarbetar (redigera och dela) online. De här åtgärderna är viktiga eftersom forskningen visar att när personer samarbetar med online-filer sparar varje person ett medelvärde på 100 minuter eller nästan två timmar per vecka.
+Den främsta inblicken för innehålls samarbete är antalet personer som skapar, läser och samarbetar (redigera och dela) online. De här åtgärderna är viktiga eftersom forskningen visar att när personer samarbetar med online-filer sparar varje person ett medelvärde på nästan två timmar per vecka.
 
-Vi definierar innehålls samarbete som en person som skapar och delar en Office-fil och sedan minst en annan person som redigerar den. 
+Vi definierar innehålls samarbete som en person som skapar och delar en Office-fil och sedan åtminstone en annan person som läser den. 
 
-Läsare: personer som får till gång till eller laddar ned online-filer i OneDrive eller SharePoint.
+**Läsare**: personer som får till gång till eller laddar ned online-filer i OneDrive eller SharePoint.
 
 **Skapare:** Personer som skapar, ändrar, laddar upp, synkroniserar, checkar in, kopierar eller flyttar OneDrive-eller SharePoint-filer online.
 
-Samarbetsor: personer som samarbetar med online-filer med OneDrive eller SharePoint. Två personer är samarbetsor om en av dem läser eller redigerar ett Word-, Excel-, PowerPoint-, OneNote-eller PDF-moln-dokument efter att den andra personen skapar eller ändrar det i ett 28-dagars fönster.
+**Samarbetsor**: personer som samarbetar med online-filer med OneDrive eller SharePoint. Två personer är kollegor om en av dem läser eller redigerar ett Office-program eller ett PDF-moln-dokument efter att den andra personen har skapat eller ändrat det, inom ett fönster med 28 dagar.
 
 De filtyper som behandlas för samarbete är Word-, Excel-, PowerPoint-, OneNote-och PDF-filer.
 
@@ -127,7 +127,7 @@ Vi tillhandahåller insikter i Start tiderna och konfigurerar enheter i din orga
 
 ### <a name="communication-details"></a>Kommunikations uppgifter
 
-Den främsta inblicken för kommunikation är hur ofta folk i din organisation använder e-post, chatt och gemenskaps inlägg för kommunikation. Det här är en insikt om när personer använder en mängd olika kommunikations verktyg i real tid kan de välja kommunikations läget som hjälper dem att bli effektiv och de har verktyg som chatt och grupper som hjälper dem att utveckla relationer mellan olika Office-platser.
+Den främsta inblicken för kommunikation är hur ofta folk i din organisation använder e-post, chatt och gemenskaps inlägg för kommunikation. När personer använder en mängd olika kommunikations verktyg i real tid kan de välja kommunikations läget som hjälper dem att vara mest effektiva, som chatt och communities som hjälper dem att utveckla relationer mellan olika Office-platser.
 
 ### <a name="mobility-details"></a>Information om mobilitet
 
@@ -153,4 +153,4 @@ Den här rapporten hjälper företags ledare att förstå:
 
 ## <a name="we-want-to-hear-from-you"></a>Vi vill höra från dig
 
-Berätta vad du tycker om produktivitets Poäng och dina idéer om hur du kan förbättra det. Använd **feedback** -avsnitten i produkten och/eller nå produktivitets gruppen på ProductivityScorePreview@service.microsoft.com.
+Dela dina tankar om produktivitets Poäng och dina idéer om hur du kan förbättra det. Använd **feedback** -avsnitten i produkten och/eller nå produktivitets gruppen på ProductivityScorePreview@service.microsoft.com.
