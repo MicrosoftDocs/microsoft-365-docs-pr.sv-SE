@@ -4,7 +4,7 @@
   items:
     - name: Snabbuppgifter för att komma igång med efterlevnad
       href: compliance-quick-tasks.md
-    - name: Nyheter i efterlevnadscentret
+    - name: Nyheter i Microsoft 365 Efterlevnad
       href: whats-new.md
     - name: Microsoft 365 Efterlevnadscenter
       href: microsoft-365-compliance-center.md
