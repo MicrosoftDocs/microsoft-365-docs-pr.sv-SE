@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Sammanfattning: Konfigurera Microsoft Azure-infrastrukturen för att hantera federerad åtkomst med hög tillgänglighet för Microsoft 365.'
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694832"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332346"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Mellanliggande federerad autentiseringsläge med hög tillgänglighet: Konfigurera Azure
 
@@ -57,11 +57,11 @@ För de tre första under näten anger du ett namn och ett enskilt IP-adressutry
     
 2. Konvertera de resulterande bitarna till decimal och uttrycka det som ett adress utrymme med prefixlängden angiven till gateway-undernätets längd.
     
-Se [adress utrymmes Kalkylatorn för Azure Gateway-undernät](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) för ett PowerShell Command block-och C#-eller python-konsol program som utför den här beräkningen åt dig.
+Se [adress utrymmes Kalkylatorn för Azure Gateway-undernät](address-space-calculator-for-azure-gateway-subnets.md) för ett PowerShell Command block-och C#-eller python-konsol program som utför den här beräkningen åt dig.
   
 Arbeta med IT-avdelningen för att fastställa dessa adress utrymmen från det virtuella nätverkets adress utrymme.
   
-|**Objekt**|**Namn på undernät**|**Adress utrymme för undernät**|**Ändamål**|
+|**Objekt**|**Namn på undernät**|**Adress utrymme för undernät**|**Syfte**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |Det undernät som används av AD DS-domänkontrollanten (Active Directory Domain Services) och virtuella datorer för katalogpartition för katalog.  <br/> |
 |2.  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |Under nätet som används av AD FS VM.  <br/> |
@@ -72,7 +72,7 @@ Arbeta med IT-avdelningen för att fastställa dessa adress utrymmen från det v
   
 Fyll i tabell I för de statiska IP-adresser som är tilldelade till virtuella datorer och belastnings Utjämnings instanser.
   
-|**Objekt**|**Ändamål**|**IP-adress på under nätet**|**Värde**|
+|**Objekt**|**Syfte**|**IP-adress på under nätet**|**Värde**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statisk IP-adress för den första domänkontrollanten  <br/> |Den fjärde möjliga IP-adressen för adress utrymmet för under nätet som definieras i punkt 1 i tabell S.  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Den andra domänkontrollantens statiska IP-adress  <br/> |Den femte möjliga IP-adressen för adress utrymmet för under nätet som definieras i punkt 1 i tabell S.  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |
@@ -147,7 +147,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Fyll i följande tabell efter uppsättningen med unika resurs grupps namn.
   
-|**Objekt**|**Resurs grupps namn**|**Ändamål**|
+|**Objekt**|**Resurs grupps namn**|**Syfte**|
 |:-----|:-----|:-----|
 |1.  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |Domänkontrollanter  <br/> |
 |2.  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |AD FS-servrar  <br/> |
@@ -273,7 +273,7 @@ Kontrol lera sedan att adress utrymmet för det virtuella nätverket kan nås fr
   
 Definiera sedan namnen på tre tillgänglighets uppsättningar. Fyll i tabell A. 
   
-|**Objekt**|**Ändamål**|**Namn på tillgänglighets uppsättning**|
+|**Objekt**|**Syfte**|**Namn på tillgänglighets uppsättning**|
 |:-----|:-----|:-----|
 |1.  <br/> |Domänkontrollanter  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS-servrar  <br/> |![linjetyp](../media/Common-Images/TableLine.png)  <br/> |

@@ -1,6 +1,6 @@
 ---
 title: Vanliga principer för identitets-och enhets åtkomst – Microsoft 365 för företag | Microsoft-dok
-description: Beskriver policyer för Microsoft-rekommendationer om hur du tillämpar åtkomst principer och konfigurationer för identiteter och enheter.
+description: Här beskrivs rekommenderade vanliga principer och konfigurationer för identitets-och enhets åtkomst.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898122"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332127"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 I den här artikeln beskrivs vanliga rekommenderade principer för att skydda åtkomst till moln tjänster, inklusive lokala program som publicerats med Azure AD Application Proxy. 
@@ -32,8 +32,8 @@ Den här vägledningen handlar om hur du distribuerar rekommenderade principer i
 
 Följande diagram illustrerar den rekommenderade uppsättningen principer. Det visar vilken skydds nivå varje princip gäller för och om policyn gäller för datorer eller telefoner och surfplattor, eller båda enhets kategorierna. Det visar också var dessa principer är konfigurerade.
 
-[ ![ Vanliga principer för att konfigurera åtkomst till identiteter och enheter](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [se en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Vanliga principer för att konfigurera åtkomst till identiteter och enheter](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [se en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 I resten av den här artikeln beskrivs hur du konfigurerar dessa principer. 
 
@@ -63,13 +63,13 @@ Ett rekommenderat tillvägagångs sätt är att skapa en Azure AD-grupp för und
 
 I följande diagram finns ett exempel på användar tilldelning och undantag.
 
-![Exempel på användar tilldelning och undantag för MFA-regler](../media/identity-access-policies-assignment.png)
+![Exempel på användar tilldelning och undantag för MFA-regler](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 I bilden är "Top Secret Project X team" tilldelad en princip för villkorsstyrd åtkomst som kräver MFA *alltid*. Bli judicious när du tillämpar högre skydds nivåer för användarna. Medlemmar i den här projekt gruppen måste kunna ge två typer av verifikation varje gång de loggar in, även om de inte visar mycket reglerad information.  
 
-Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Detta är särskilt viktigt för distributionen av Azure information Protection (AIP) när du skyddar dokument i SharePoint Online.
+Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Det är viktigt att du använder känslighets etiketter när du skyddar dokument i SharePoint Online.
 
-![Skärmdump för att skapa Microsoft 365-grupper](../media/identity-device-AAD-groups.png)
+![Skärmdump för att skapa Microsoft 365-grupper](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Kräv MFA baserat på inloggnings risker
@@ -172,7 +172,7 @@ Logga in på [Microsoft Azure-portalen ( https://portal.azure.com) ](https://por
 |Type (Typ)|Fjärråtkomstsegenskaper|Värden|Kommentarer|
 |:---|:---------|:-----|:----|
 |Användare|Inkludera|Alla användare|Markerade|
-||Ta|Ingen||
+||Ta|Inga||
 |Situationer|Risk för användare|Högsta|Markerade|
 
 **Kontroller**
@@ -289,7 +289,7 @@ Följande inställningar rekommenderas för Windows 10.
 ||Lösen ordet upphör (dagar)|41||
 ||Antal tidigare lösen ord för att förhindra åter användning|T5||
 ||Kräv lösen ord när enheten återgår från Idle-tillstånd (mobil och Holographic)|Nödvändig|Tillgängligt för Windows 10 och senare|
-|Krypteringsalgoritmer|Kryptering av data lagring på enhet|Nödvändig||
+|Kryptering|Kryptering av data lagring på enhet|Nödvändig||
 |Enhets säkerhet|Vägg|Nödvändig||
 ||Viktigt|Nödvändig||
 ||Antispionprogram|Nödvändig|Den här inställningen kräver en lösning för antispionprogram som är registrerad i Windows säkerhets Center|

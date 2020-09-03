@@ -1,7 +1,7 @@
 ---
 title: Klient isolering i Office 365 Video
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,19 +16,19 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln finns en förklaring av hur klient isolering behåller varje klient organisations lagrade videor i Office 365-Video.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f46812bb2bf9432252c2de6bb46fbb47cb71221
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 626a995fc5a3ac971c48cc87bec1017134e87b88
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694649"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332250"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Klient isolering i Office 365 Video
 
 > [!NOTE]
 > Office 365-videon ersätts av Microsoft Stream. Om du vill veta mer om den nya företags video tjänsten som lägger till intelligens i video samarbete och mer information om över gången abonnemang för aktuella Microsoft 365-videosamtal, se [Office 365 Video över gång till Microsoft Stream-översikt](https://docs.microsoft.com/stream/migrate-from-office-365).
 
-## <a name="introduction"></a>Introduktion
+## <a name="introduction"></a>Inledning
 
 Azure Storage används för att lagra data för flera Office 365-tjänster, inklusive Office 365-Video och Sway. Azure Storage inkluderar Blob Storage, som är en skalbar, REST-baserad, moln objekt lagring som används för att lagra ostrukturerade data. Azure-lagring använder en enkel åtkomst kontroll modell; varje Azure-prenumeration kan skapa ett eller flera lagrings konton. Varje lagrings konto har en hemlig nyckel som används för att kontrol lera åtkomsten till alla data på det lagrings kontot. Detta stöder det typiska scenario där lagring är kopplad till program och att dessa program har fullständig kontroll över tillhör ande data; Sway lagrar till exempel innehåll i Azure-lagring. Allt kund innehåll för Sway lagras i delade Azure Storage-konton. Varje användares innehåll är i ett separat katalog träd med blobbar i Azure-lagring.
 

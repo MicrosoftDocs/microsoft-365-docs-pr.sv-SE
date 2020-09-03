@@ -1,7 +1,7 @@
 ---
 title: Översikt över eDiscovery-och Sök funktioner i Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: En översikt över eDiscovery-funktionen och andra Sök funktioner i Microsoft 365 för gransknings användning och transparens.
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694763"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331866"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Översikt över eDiscovery-och Sök funktioner i Microsoft 365 
 
@@ -48,7 +48,7 @@ Följande tabell visar en del av informationen som visas i aktivitets rapporter.
 | ClientIP | IPv4-eller IPv6-adress för enheten som används när aktiviteten protokollfördes. |
 | CreationTime | Datum och tid i UTC (Coordinated Universal Time) när användaren utförde aktiviteten. |
 | EventSource | Anger att en händelse inträffade. Möjliga värden är SharePoint och ObjectModel. |
-| ET | ID för rapport posten. ID: t identifierar rapport posten unikt. |
+| ID | ID för rapport posten. ID: t identifierar rapport posten unikt. |
 | Operativ | Namnet på användaren eller aktiviteten, som motsvarar det värde som valts i visnings resultatet för den här användar aktiviteten. |
 | OrganizationId | GUID för organisationens Microsoft 365-tjänst där händelsen inträffade. |
 | UserAgent | Information om användarens webbläsare, som tillhandahålls av webbläsaren. |

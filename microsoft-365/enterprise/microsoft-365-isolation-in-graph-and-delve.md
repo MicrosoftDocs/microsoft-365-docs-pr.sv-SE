@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365-klient isolering i Microsoft Graph och Delve
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln finns en förklaring av hur Microsoft 365-klient isolering fungerar i Office Graph och i Delve.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab9b216656e076cc3ba02a4ef6c75b25b94547fe
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 966f02726a2cce18e30e4d5bc7ab0beb5db51a29
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694651"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332394"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft 365-klient isolering i Microsoft Graph och Delve
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365-klientprogram – enkel inloggning
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln lär du dig vilka plattformar, klienter och PowerShell-moduler som stöder enkel inloggning för Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0171e277d6072515e7fe0ca8ede8b8005ad8fe2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ab973fcfb0cc61378ee06c115264e308d8ec3ad
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694528"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332010"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365-klientprogram – enkel inloggning
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Enkel inloggning (SSO) lägger till säkerhet och bekvämlighet när användarna loggar in på program i Azure Active Directory (Azure AD). Med enkel inloggning loggar användarna in en gång med ett konto för att komma åt domänanslutna enheter, företags resurser, program vara som tjänst (SaaS) och webb program.
 

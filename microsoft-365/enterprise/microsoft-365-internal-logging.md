@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 intern loggning för Microsoft 365-teknik
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln finns en förklaring av hur intern loggning för Microsoft 365 Engineering Teams fungerar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696723"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332514"
 ---
 # <a name="internal-logging-for-microsoft-365-engineering"></a>Intern loggning för Microsoft 365-teknik
 

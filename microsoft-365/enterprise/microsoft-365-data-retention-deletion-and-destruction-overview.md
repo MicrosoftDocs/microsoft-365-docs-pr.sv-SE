@@ -1,7 +1,7 @@
 ---
 title: Data lagring, borttagning och destruktion i Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: En översikt över Microsofts principer för Microsoft 365 rörande data lagring, borttagning och destruktion.
-ms.openlocfilehash: c522c1a1a4de46a4fc36bd87a031be8b47c5523d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9708ed618528ce0ad5ef8656a85ffd4311395deb
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694508"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331902"
 ---
 # <a name="data-retention-deletion-and-destruction-in-microsoft-365"></a>Data lagring, borttagning och destruktion i Microsoft 365
 
@@ -53,8 +53,8 @@ Mer information om hur du påskyndar inetableringen finns i [avbryta prenumerati
 
 ## <a name="related-links"></a>Relaterade länkar
 
-- [Data förstörelse](microsoft-365-data-destruction.md)
+- [Datadestruktion](microsoft-365-data-destruction.md)
 - [Immutability i Office 365](microsoft-365-data-immutability.md)
-- [Exchange Online-Databorttagning](microsoft-365-exchange-online-data-deletion.md)
-- [SharePoint Online-Databorttagning](microsoft-365-sharepoint-online-data-deletion.md)
-- [Data borttagning i Skype för företag](microsoft-365-skype-data-deletion.md)
+- [Databorttagning för Exchange Online](microsoft-365-exchange-online-data-deletion.md)
+- [SharePoint Online Data Deletion](microsoft-365-sharepoint-online-data-deletion.md)
+- [Databorttagning för Skype för företag](microsoft-365-skype-data-deletion.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Microsoft 365 grundläggande principer för skydd mot dos: denial-of-service'
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Hur Microsoft utnyttjar de grundläggande principerna för absorption, identifiering och skydd mot DoS-attacker (Denial-of-Service).
-ms.openlocfilehash: b04ec717f7c97e44c6ed4011156666e8c27f06c0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb3446570dd8e99ccdb3005a6a7c90ca90a81aee
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694521"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331914"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Grundläggande principer för skydd mot dos: denial-of-service
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Grundläggande principer för skydd mot överbelastningsattacker
 
 De tre grundläggande principerna när skydd mot nätbaserade DoS-attacker är absorption, identifiering och minskning. Absorption sker före identifiering och identifiering sker innan den begränsas. Absorption är det bästa försvaret mot en DoS-attack. Om det inte går att hitta angreppet kan det inte begränsas. Men om ännu den minsta DoS-attacken inte kan absorberas kommer inte tjänsterna att överleva tillräckligt länge för att angreppet ska kunna identifieras.
 

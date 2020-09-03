@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321952"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332755"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -161,7 +161,7 @@ Vi rekommenderar att organisations enheter hanteras av Intune eller domänbasera
 ![Anvisningar för hur du konfigurerar åtkomst till identitet och enheter.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Konfigurera nödvändiga identitets funktioner och deras inställningar.
-2. Konfigurera de vanligaste principerna för principer för villkorlig åtkomst.
+2. Konfigurera principer för villkorsstyrd åtkomst för den gemensamma identiteten och åtkomsten.
 3. Konfigurera villkorsstyrda åtkomst principer för gäster och externa användare.
 4. Konfigurera villkorsstyrd åtkomst policy för Microsoft 365-molnappar som Microsoft Teams, Exchange Online och SharePoint.
 
