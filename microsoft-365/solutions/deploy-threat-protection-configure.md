@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: fb1290a0f0b884fdbc630cbfcd10cd1102c8acae
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: a5f3f93ad70210143cbe774c2a4e96542b1cfd34
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597515"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332682"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurera hot Protection-funktioner i Microsoft 365
 
@@ -32,12 +32,12 @@ Följ de här stegen för att konfigurera hotets skydd i Microsoft 365.
 Microsoft har testat och rekommenderar en specifik uppsättning villkors åtkomst och relaterade principer för att skydda åtkomst till alla dina SaaS-program, särskilt Microsoft 365. Principer rekommenderas för baseline, känsligheten och starkt reglerat skydd. Börja med att implementera principer för baseline-skyddet. 
 
 
-[ ![ Vanliga principer för att konfigurera åtkomst till identiteter och enheter](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [se en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Vanliga principer för att konfigurera åtkomst till identiteter och enheter](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [se en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Så här implementerar du baseline Protection för Microsoft 365
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
+![Process för distribution av original plan för skydd](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Konfigurera förutsättningar, inklusive Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
 2. [Konfigurera vanliga principer för identitets-och enhets åtkomst](../enterprise/identity-access-policies.md) för baseline-skyddet.
@@ -60,7 +60,7 @@ Med Azure ATP kan SecOps-analytiker (Security Operations) och säkerhets experte
 
 ### <a name="to-set-up-azure-atp"></a>Så här konfigurerar du Azure ATP
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Process för distribution av Azure ATP](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
 1. [Konfigurera Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) för att skydda dina primära miljöer.
 2. Skydda alla [domänkontrollanter](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) och [skogar](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
@@ -80,7 +80,7 @@ Microsoft Threat Protection interagerar med aviseringar, tillbud, automatiserad 
 
 ### <a name="to-set-up-microsoft-threat-protection"></a>Så här konfigurerar du skydd mot Microsoft Threat
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Process för distribution av skydd mot Microsoft Threat](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [Granska kraven](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 2. [Aktivera skydd mot Microsoft Threat](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
@@ -97,14 +97,14 @@ Microsoft Threat Protection interagerar med aviseringar, tillbud, automatiserad 
 
 |Konfiguration, skydd och identifiering|Automatisering, undersökning, reparation och utbildning|
 |---|---|
-|[Säkra bifogade filer](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Säkra länkar](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Säkra dokument](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Stöldskydd mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Hotspårare](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Hotutforskaren](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automatiska undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Attacksimulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
+|[Säkra bifogade filer](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Säkra länkar](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Säkra dokument](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP för SharePoint, OneDrive och Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP-skydd mot nätfiske](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Hotspårare](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Hotutforskaren](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automatiska undersökningar och svar](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Attacksimulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
 Med Office 365 ATP kan folk i hela organisationen kommunicera och samar beta säkrare, med hotet om hot mot deras e-postinnehåll och Office-dokument.
 
 ### <a name="to-set-up-office-365-atp"></a>Konfigurera Office 365 ATP
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Process för distribution av Office 365 ATP](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
 1. Konfigurera [och konfigurera principer för Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 2. [Visa och Använd dina Office 365 ATP-rapporter](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
@@ -122,7 +122,7 @@ Med Office 365 ATP kan folk i hela organisationen kommunicera och samar beta sä
 
 ### <a name="set-up-microsoft-defender-atp"></a>Konfigurera Microsoft Defender ATP
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Process för distribution av Microsoft Defender ATP](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
 1. [Förbereda din distribution av Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
 2. [Konfigurera din distribution av Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
@@ -140,7 +140,7 @@ Med Office 365 ATP kan folk i hela organisationen kommunicera och samar beta sä
 
 ### <a name="set-up-microsoft-cloud-app-security"></a>Konfigurera säkerhet för Microsoft Cloud App
 
-![Process för distribution av hot Protection-funktioner](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Process för distribution av säkerhets funktioner för Microsoft Cloud App](../media/solutions-architecture-center/deploy-mcas-steps.png) 
 
 1. [Ställ in portalen och andra grundläggande krav](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. [Konfigurera identifiering av moln](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) och [ansluta appar](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).

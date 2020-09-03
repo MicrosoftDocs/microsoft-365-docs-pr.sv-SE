@@ -1,7 +1,7 @@
 ---
 title: Klient isolering i Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Den här artikeln innehåller en sammanfattning av hur Microsoft tillämpar klient isolering i moln tjänster som Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ea97cbe9b6c23f7ed0006fbe78a4deb5f35b5ab7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7aca35fc61d03e94225375fcf67970e13dd691c9
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694701"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332694"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Klient isolering i Microsoft 365
 
@@ -45,10 +45,10 @@ Tillsammans ger de ovanstående skydden robusta logiska isolerings kontroller so
 
 ## <a name="related-links"></a>Relaterade länkar
 
-- [Isolering och åtkomst kontroll i Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
-- [Klient isolering i Office Graph och Delve](microsoft-365-isolation-in-graph-and-delve.md)
+- [Isolering och åtkomstkontroll i Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
+- [Klientisolering i Office Graph och Delve](microsoft-365-isolation-in-graph-and-delve.md)
 - [Klient isolering i Microsoft 365 search](microsoft-365-isolation-in-microsoft-365-search.md)
 - [Klient isolering i Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
-- [Resurs begränsningar](microsoft-365-resource-limits.md)
-- [Övervakning och testning av innehavarens gränser](microsoft-365-monitoring-and-testing.md)
+- [Resursgränser](microsoft-365-resource-limits.md)
+- [Övervaka och testa klientorganisations begränsningar](microsoft-365-monitoring-and-testing.md)
 - [Isolering och åtkomst kontroll i Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)
