@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder översikten för e-postflöden i instrument panelen för e-postflöde i säkerhets & efterföljandekrav för att visualisera och spåra hur e-flöden kommer till och från sin organisation via kopplingar och utan att använda kopplingar.
-ms.openlocfilehash: d27513b905a2b6c1a7ae366040e9e29b2d67b258
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827007"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358596"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Översikt över e-postflöde i säkerhets & efterlevnad
 
-**E-postflödes kartan** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & Compliance Center ger en överblick över hur e-flöden passerar genom din organisation. Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.
+**E-postflödes kartan** i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) ger en överblick över hur e-flöden passerar genom din organisation. Du kan använda den här informationen för att lära dig mönster, identifiera avvikelser och åtgärda problem när de uppstår.
 
 ![Widget för e-postflödes karta i instrument panelen för säkerhet &](../../media/mfi-mail-flow-map-widget.png)
 

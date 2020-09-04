@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Administratörer kan lära sig mer om utgående och inkommande e-postflöde i instrument panelen för e-postflöde i säkerhets & Compliance Center.
-ms.openlocfilehash: 920c1212f4d6dee508704c93272e48140e199710
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826899"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357428"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Utgående och inkommande e-postflöde inblick i säkerhets-& Compliance Center
 
-Det **utgående och inkommande e-postflödet** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center kombinerar informationen från [kopplings rapporten](view-mail-flow-reports.md#connector-report) och den tidigare **TLS-översikten** på ett och samma ställe.
+Det **utgående och inkommande e-postflödet** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) kombinerar informationen från [kopplings rapporten](view-mail-flow-reports.md#connector-report) och den tidigare **TLS-översikten** på ett och samma ställe.
 
 Widgeten visar TLS-kryptering som används för anslutningen när meddelanden levereras till och från din organisation. De anslutningar som upprättas med andra e-posttjänster krypteras av TLS när TLS erbjuds på båda sidor. Widgeten erbjuder en ögonblicks bild av den sista veckan i e-postflödet.
 

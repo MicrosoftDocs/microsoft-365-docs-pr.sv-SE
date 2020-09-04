@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder rapporten för information om ej leverans i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka de vanligaste fel koderna i rapporter som inte kunde levereras (kallas även NDR eller studs meddelanden) från avsändare i din organisation.
-ms.openlocfilehash: bdc2a2a16f76f4e6ada629c82b86423422ab56c9
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f9017a7f041037c5db2dc9b9f4f5155b038bf2c7
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826923"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357416"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport om utebliven leverans i säkerhets & efterlevnad
 
-I **rapporten om utebliven leverans** i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center visas de mest upptäckta fel koderna i rapporter för inte leverans (kallas även för NDR eller studs meddelanden) för användare i organisationen. Den här rapporten visar information om NDR så att du kan felsöka problem med e-postleverans.
+I **rapporten om utebliven leverans** i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) visas de mest upptäckta fel koderna i rapporter för inte leverans (kallas även för NDR eller studs meddelanden) för användare i organisationen. Den här rapporten visar information om NDR så att du kan felsöka problem med e-postleverans.
 
 ![Widget för rapport om utebliven leverans i instrument panelen för e-postflöde i säkerhets & efterlevnad](../../media/mfi-non-delivery-report-widget.png)
 

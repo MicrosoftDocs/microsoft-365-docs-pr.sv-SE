@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda den icke godkända domän rapporten i instrument panelen för e-postflöde i säkerhets & efterlevnad för att övervaka meddelanden från din lokala organisation där avsändarens domän inte är konfigurerad i Microsoft 365.
-ms.openlocfilehash: ef5f1c26168347b6696e90292d9c957e63615c0f
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 02692fbded20aa5062ce8add83925fb65c116630
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826947"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358584"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Icke godkänd domän rapport i Center för säkerhets &
 
-Den **icke godkända domän** rapporten i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & Compliance Center visar information om meddelanden från din lokala e-postorganisation där avsändarens domän inte är konfigurerad som en godkänd domän i Microsoft 365-organisationen.
+Den **icke godkända domän** rapporten i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) visar information om meddelanden från din lokala e-postorganisation där avsändarens domän inte är konfigurerad som en godkänd domän i Microsoft 365-organisationen.
 
 Microsoft 365 kan begränsa dessa meddelanden om vi har data som visar att syftet med dessa meddelanden är skadligt. Därför är det viktigt att du förstår vad som händer och för att åtgärda problemet.
 

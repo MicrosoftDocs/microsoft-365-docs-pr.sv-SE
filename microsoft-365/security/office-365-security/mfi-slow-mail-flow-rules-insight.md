@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig att använda åtgärds reglerna för långsam e-postflöde inblick i säkerhets & Compliance Center för att identifiera och åtgärda ineffektiva eller felaktiga regler för e-postflöde (kallas även transport regler) i organisationen.
-ms.openlocfilehash: 6319633c47e34d7b62c4f68bfbda7fe298c0deb3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c933a6816c82161d0f4a6199ff1a339dd8a10eae
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826887"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357350"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Åtgärda regler för långsam e-postflöde inblick i centret för säkerhets & efterlevnad
 
@@ -29,7 +29,7 @@ Ineffektiva regler för e-postflöde (kallas även transport regler) kan leda ti
 - Villkor som använder regex-mönster matchning (komplext).
 - Villkor som använder innehålls kontroll i bifogade filer.
 
-Reglerna för att **åtgärda långsamma e-postflöde** är inblickade i det **rekommenderade för dig** -området i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i säkerhets & efterlevnaden meddelar dig när det tar för lång tid att slutföra en regel för e-postflöde. Denna inblick visas bara efter det att villkoret har identifierats (om du inte har några e-postloopar visas inte inblicken).
+Reglerna för att **åtgärda långsamma e-postflöde** är inblickade i det **rekommenderade för dig** -området i [instrument panelen för e-postflöde](mail-flow-insights-v2.md) i [säkerhets & efterlevnaden](https://protection.office.com) meddelar dig när det tar för lång tid att slutföra en regel för e-postflöde. Denna inblick visas bara efter det att villkoret har identifierats (om du inte har några e-postloopar visas inte inblicken).
 
 Du kan använda det här meddelandet för att identifiera och finjustera regler för e-postflöde för att minska fördröjningar för e-postflöde.
 

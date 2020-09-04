@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan läsa mer om hur du använder den främsta domänens e-postflödes status inblick i instrument panelen för e-postflöde i säkerhets & efterlevnad för att felsöka e-postproblem i samband med MX-poster i deras e-
-ms.openlocfilehash: 9640d5e37932efeb7c0c8f8c56d0a15bc7f07e5b
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 34b80bee48bd91524fbd95961c473f50fbe394b7
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827021"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358318"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Den främsta domänens e-postflödes status inblick i säkerhets & Compliance Center
 
-Statusen för den **främsta domänens e-postflöde** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i säkerhets & Compliance Center ger dig den aktuella statusen för organisationens domäner i termer av e-postflöde. Denna inblick hjälper dig att identifiera och felsöka domäner som ***påverkar problem med e-postflöde*** (till exempel att det inte går att ta emot extern e-post), särskilt upphör att gälla för domänen eller domäner med felaktiga MX-poster.
+Statusen för den **främsta domänens e-postflöde** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) i [säkerhets & Compliance Center](https://protection.office.com) ger dig den aktuella statusen för organisationens domäner i termer av e-postflöde. Denna inblick hjälper dig att identifiera och felsöka domäner som ***påverkar problem med e-postflöde*** (till exempel att det inte går att ta emot extern e-post), särskilt upphör att gälla för domänen eller domäner med felaktiga MX-poster.
 
 ![Flödes schema för bästa domän status i instrument panelen för e-postflöde i säkerhets & Compliance Center](../../media/mfi-top-domain-mail-flow-status-widget.png)
 

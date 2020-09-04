@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca898fa76ff45fe15a6dc48e7ad8bcae3e94951c
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332562"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357980"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Nödvändigt arbete för implementering av identitets-och enhets åtkomst principer
 
@@ -87,7 +87,7 @@ Följande klienter rekommenderas när en princip för säker dokument tillämpas
 
 |Plattform|Word/Excel/PowerPoint|OneNote|OneDrive-appen|SharePoint-App|[OneDrive-synkroniseringsklient](https://docs.microsoft.com/onedrive/enable-conditional-access)|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 8,1|Stöds|Stöds|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds|
+|Windows 8.1|Stöds|Stöds|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds|
 |Windows 10|Stöds|Stöds|EJ TILLÄMPLIGT|EJ TILLÄMPLIGT|Stöds|
 |Android|Stöds|Stöds|Stöds|Stöds|Saknas|
 |iOS|Stöds|Stöds|Stöds|Stöds|Saknas|
@@ -116,6 +116,6 @@ Här är några ytterligare rekommendationer:
 
 ## <a name="next-step"></a>Nästa steg
 
-![Steg 2: konfigurera principer för villkorsstyrd åtkomst för den gemensamma identiteten och åtkomsten.](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+![Steg 2: konfigurera principer för villkorlig åtkomst för en gemensam identitet och åtkomst](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
 
 [Konfigurera principer för åtkomst för identitet och enheter](identity-access-policies.md)

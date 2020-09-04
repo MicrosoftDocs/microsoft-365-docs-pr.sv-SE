@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära dig hur du använder SMTP AUTH inblick och rapport i instrument panelen för e-postflöde i säkerhets & Compliance Center för att övervaka e-avsändare i organisationen som använder autentiserad SMTP (SMTP AUTH) för att skicka e-postmeddelanden.
-ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826875"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357440"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP-AUTH-klienter inblick och rapportera i säkerhets & Compliance Center
 
-**SMTP-AUTH-klienterna** fokuserar på [instrument panelen för e-postflöden](mail-flow-insights-v2.md) och den associerade [SMTP-authn-rapporten](#smtp-auth-clients-report) markerar användning av SMTP auth client sändning Protocol via användare eller system konton i din organisation. Det här bakåtkompatibla protokollet (som använder slut punkts smtp.office365.com) endast erbjuder grundläggande inloggningsautentisering och är känsligt för att användas av obehöriga konton för att skicka e-post. Med inblick och rapport kan du söka efter ovanlig aktivitet för SMTP-profilens e-postinlägg. Det visar också TLS-dataanvändningen för klienter eller enheter med SMTP-autentisering.
+**SMTP-AUTH-klienterna** inblickar i [instrument panelen för e-postflöden](mail-flow-insights-v2.md) och den tillhör ande [SMTP-authn-rapporten](#smtp-auth-clients-report) i [säkerhets & Compliance Center](https://protection.office.com) markerar användning av SMTP auth client-klientprogrammet för överföring av användare eller system konton i din organisation. Det här bakåtkompatibla protokollet (som använder slut punkts smtp.office365.com) endast erbjuder grundläggande inloggningsautentisering och är känsligt för att användas av obehöriga konton för att skicka e-post. Med inblick och rapport kan du söka efter ovanlig aktivitet för SMTP-profilens e-postinlägg. Det visar också TLS-dataanvändningen för klienter eller enheter med SMTP-autentisering.
 
 Widgeten visar antalet användare eller tjänst konton som har använt SMTP Authentication Protocol under de senaste 7 dagarna.
 
