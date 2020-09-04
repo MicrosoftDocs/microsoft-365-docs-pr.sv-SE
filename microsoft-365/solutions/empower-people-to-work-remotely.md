@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurera säkerhets- och tjänstinfrastrukturen som gör att dina arbetare kan arbeta på distans på valfri plats och när som helst.
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898134"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357308"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Underlätta för distansarbetare med Microsoft 365
 
@@ -37,13 +37,33 @@ Microsoft 365 har förmågan att låta dina medarbetare att arbeta på distans.
 
 ![Underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| Nyckelfunktionalitet | Beskrivning |
-|:-------|:-----|
-| Ansluten | Oavsett tid och plats kan distansarbetare komma åt: <ul><li>Molnbaserade tjänster och data i din Microsoft 365-prenumeration. </li><li>Organisationsresurser av samma slag som finns att tillgå med programdatacentraler på plats.</li></ul> |
-| Säker | Inloggningarna skyddas med multifaktorautentisering (MFA) och inbyggda säkerhetsfunktioner i Microsoft 365 och Windows 10 skyddar mot skadlig programvara, skadliga attacker och dataförluster. |
-| Hanteras | Din distansarbetares enheter kan hanteras från molnet med säkerhetsinställningar, tillåtna appar och för att kräva överensstämmelse med systemsäkerheten. |
-| Samarbetsvilliga och produktiva | Dina distansarbetare kan vara lika produktiva som på plats på ett mycket samarbetande sätt med: <ul><li>Onlinemöten och chattsessioner med Teams. </li><li>Delade arbetsytor för molnbaserad fillagring med global tillgänglighet och samarbete i realtid med SharePoint och OneDrive. </li><li>Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda. </li></ul> |
-|||
+Titta på den här videon för att få en översikt över distributionsprocessen.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+Den här lösningen har de här nyckelfunktionerna.
+
+- Ansluten
+
+  Oavsett tid och plats kan distansarbetare komma åt: 
+
+  - Molnbaserade tjänster och data i din Microsoft 365-prenumeration. 
+  - Organisationsresurser av samma slag som finns att tillgå med programdatacentraler på plats.
+
+- Säker
+
+  Inloggningarna skyddas med multifaktorautentisering (MFA) och inbyggda säkerhetsfunktioner i Microsoft 365 och Windows 10 skyddar mot skadlig programvara, skadliga attacker och dataförluster.
+
+- Hanteras
+
+  Din distansarbetares enheter kan hanteras från molnet med säkerhetsinställningar, tillåtna appar och för att kräva överensstämmelse med systemsäkerheten.
+
+- Samarbetsvilliga och produktiva
+
+  Dina distansarbetare kan vara lika produktiva som på plats på ett mycket samarbetande sätt med:
+  - Onlinemöten och chattsessioner med Teams. 
+  - Delade arbetsytor för molnbaserad fillagring med global tillgänglighet och samarbete i realtid med SharePoint och OneDrive.
+  - Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda. 
 
 För smidig inloggning lokalt bör dina användarkonton i Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD). För att skydda dina Windows 10-enheter bör de registreras i Intune. Här är en övergripande vy över infrastrukturen.
 
