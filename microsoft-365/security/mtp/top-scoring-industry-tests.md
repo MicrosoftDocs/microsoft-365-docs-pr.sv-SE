@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b26250c54c30b2da4dbda50a5909a168f09bbe73
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 40d0ffa779b0ab13a0bdd887b12d69c20892662d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866689"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399355"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Bästa poängen vid bransch test
 
@@ -37,7 +37,7 @@ Kärnan till MITRE är att emulera riktiga attacker för att förstå om lösnin
 
 - Att&CK-baserad utvärdering av Microsoft Threat Protection – maj 2020: [med rad identifiering i Real världen](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft Threat Protection gav nästan 100 procent täckning i de olika attack kedjan. Den levererar ledande synligheten utanför kartongen med angrepps aktiviteter. Synligheten minskar dramatiskt manuell arbete för säkerhets åtgärds Center och leverantörs lösningar som förlitar sig på specifika konfigurations ändringar. Det hade också minst ett antal luckor i synligheten, vilket försämrar möjligheten att driva intrång.
+    Microsoft Threat Protection gav nästan 100 procent täckning i de olika attack kedjan. Den levererar ledande synligheten utanför kartongen med angrepps aktiviteter. Synligheten minskar dramatiskt manuell arbete för säkerhets åtgärds Center och leverantörs lösningar som förlitar sig på specifika konfigurations ändringar. Microsoft Threat Protection hade också minst minsta mellanrum för att minska risken för angripare att fungera inte.
 
 ## <a name="next-generation-protection"></a>Nästa generations skydd
 
@@ -45,15 +45,17 @@ Kärnan till MITRE är att emulera riktiga attacker för att förstå om lösnin
 
 Microsoft Defender Antivirus är [Nästa generations skydds](https://www.youtube.com/watch?v=Xy3MOxkX_o4) funktioner i [Microsoft Defender ATP Windows 10-säkerhetsstacken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) med de senaste och mest avancerade hoten idag. I vissa fall kanske kunderna inte ens vet att de var skyddade eftersom en cyberattack har stoppats i [millisekunder efter att en kampanj har startat](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). Det beror på att Microsoft Defender Antivirus och annan [EPP-kapacitet (Endpoint Protection Platform)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) i Microsoft Defender ATP identifierar och stoppar skadlig program vara. De använder [dator inlärning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [artificiell intelligens](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), beteende analys och andra avancerade teknologier.
 
-### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-TEST: skydds poängen för 5.5/6.0 i det senaste testet
+### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST: skydds poängen för 6.0/6.0 i det senaste testet
 
 Test av produkt granskning och certifierings rapporter i tre kategorier: skydd, prestanda och användbarhet. Följande Poäng är till skydds kategorin med två Poäng: testning av Real-världen och AV-TEST-referens uppsättningen (kallas vanliga skadliga program).
 
 **Ladda ned den senaste genomskinlighets rapporten: [Granska av-test resultat, januari-2020 februari](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- Mars — test AV företags användare i april 2020: [skydds Poäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**senaste**</sup>
+- Maj — företags användarens juni 2020 AV-TEST: [skydds Poäng 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**senaste**</sup>
 
-    Microsoft Defender Antivirus har uppnått ett totalt skydds resultat på 5.5/6.0 med 20 540 skadliga program för skadlig kod.
+    Microsoft Defender Antivirus har uppnått ett perfekt skydd för 6.0/6.0 med 100% i maj och juni. 22 190 program mot skadlig kod användes.
+
+- Mars-april 2020 AV-TEST Business User test: [skydds Poäng 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
 - Januari – test av företags användare i februari 2020 av-test: [skydds Poäng 5.5/6.0-](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
@@ -65,13 +67,13 @@ Test av produkt granskning och certifierings rapporter i tre kategorier: skydd, 
 
 - Maj [: företags](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)användare test för 2019 juni-test  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
-### <a name="av-comparatives-protection-rating-of-995-in-the-latest-test"></a>AV-jämförelser: skydds betyg för 99,5% i det senaste testet
+### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-jämförelser: skydds betyg för 99,7% i det senaste testet
 
 Säkerhets test för företag består av tre huvud delar: det riktiga skydds testet som imiterar attacker mot skadlig program vara, test av skadlig program vara där den skadliga program varan kommer från en annan dator utanför Internet (till exempel USB) och prestandatest som påverkar påverkan på systemets prestanda.
 
-- Business Security test 2020 FACTSHEET (mars – april): [verklig skydds taxa 99,5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**senaste**</sup>
+- Business Security test 2020 (mars – juni): [verklig skydds taxa 99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**senaste**</sup>
 
-    Microsoft Defender Antivirus har lyckats med alla priser i verkligheten under det föregående året med 99,5% i det senaste testet.
+    Microsoft Defender Antivirus har lyckats med alla priser i verkligheten under det föregående året med 99,7% i det senaste testet.
 
 - Business Security test 2019 (augusti – november): [verklig skydds skatt 99,6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
@@ -85,9 +87,11 @@ SE-labb testar en rad lösningar som används av produkter och tjänster för at
 
 **Ladda ned den senaste genomskinlighets rapporten: [undersöker se test resultat för Labs, januari 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- Enterprise Endpoint Protection januari — mars 2020: [AAA Award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Enterprise Endpoint Protection april – juni 2020: [AAA Award](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-    Microsofts nästa generations skydd hette en av de ledande produkterna, stoppar alla riktade attacker och alla utom ett offentligt hot.
+    Microsofts nästa generations skydd hette en av de ledande produkterna, vilket skyddar mot alla offentliga och riktade attacker. Microsoft Defender Antivirus har uppnått ett bra resultat och kan blockera skadlig URL-adresser, hantera utnyttjanden och korrekt klassificera legitima program och webbplatser.
+
+- Enterprise Endpoint Protection januari — mars 2020: [AAA Award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) av <sup>**PDF-**</sup>  |  [analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
 - Enterprise Endpoint Protection oktober – december 2019: [AAA Award](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) för <sup>**PDF**</sup>
 
@@ -101,7 +105,7 @@ SE-labb testar en rad lösningar som används av produkter och tjänster för at
 
 Microsoft Defender-funktioner för [identifiering och svar av slut punkter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) för att ge avancerade angrepps regler som är nära real tids och actionable. Säkerhets analytiker kan prioritera aviseringar effektivt, få insyn i hela omfattningen av en överträdelse och vidta åtgärder för att åtgärda hot.
 
-EDR och slut punkts skydds funktioner i Microsoft Defender ATP har fått positiva resultat från bransch test och publicering. [SC Labs bedömde säkerhets verktygen för slut punkter](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) i juni 2020 och gav Microsoft Defender ATP [5/5-stjärnor](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). De heter Microsoft Defender ATP för att skydda organisationer mot modern hot-landskap med en komplett uppsättning säkerhets funktioner. De identifierade också slut punkten säkerhets lösningen som holistisk och Unified. De godkände också konvergensen av Endpoint Protection med slut för avkänning och svar, eftersom attack kedjan nu fullt ut omfattas av lösningar.
+EDR och slut punkts skydds funktioner i Microsoft Defender ATP har fått positiva resultat från bransch test och publicering. [SC Labs bedömde säkerhets verktygen för slut punkter](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) i juni 2020 och gav Microsoft Defender ATP [5/5-stjärnor](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). De heter Microsoft Defender ATP för att skydda organisationer mot modern hot-landskap med en komplett uppsättning säkerhets funktioner. SC Labs identifierade också slut för säkerhets lösningen för slutvaran och Unified. De godkände också konvergensen av Endpoint Protection med slut för avkänning och svar, eftersom attack kedjan nu fullt ut omfattas av lösningar.
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: branschledande optik och upptäckta funktioner
 

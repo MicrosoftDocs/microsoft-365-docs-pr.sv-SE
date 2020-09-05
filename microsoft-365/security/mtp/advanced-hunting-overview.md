@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255751"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394687"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Det står proaktivt för problem med avancerad jakt i Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ Advanced jakt är ett fråge baserat Threat-verktyg som gör att du kan utforska
 
 Du kan använda samma hot-jakt-frågor för att skapa anpassade identifierings regler. Dessa regler körs automatiskt för att söka efter och svara på olika händelser och system tillstånd, inklusive misstänkt överträdelse och felkonfigurerade maskiner.
 
-Funktionen liknar [Avancerad jakt i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), förutom att i Microsoft 365 säkerhets Center, har avancerad jakt stöd för frågor som visas i data från olika arbets ytor, inklusive data om enheter, e-post, appar och identiteter från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. [Aktivera skydd mot Microsoft Threat om](mtp-enable.md)du vill använda en avancerad jakt.
+Denna funktion liknar [Avancerad jakt i Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), förutom den avancerade jakt i Microsoft Threat Protection – tillgänglig i Microsoft 365 Security Center – stöd för frågor som gäller för olika arbets ytor, inklusive data om enheter, e-post, appar och identiteter från Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security och Azure ATP. [Aktivera skydd mot Microsoft Threat om](mtp-enable.md)du vill använda en avancerad jakt.
 
 ## <a name="get-started-with-advanced-hunting"></a>Komma igång med avancerad jakt
 
