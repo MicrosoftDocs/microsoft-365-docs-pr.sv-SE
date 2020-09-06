@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: 'Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365. '
-ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+description: Lär dig hur du anger en förfalloprincip för lösenord i organisationen i administrationscentret för Microsoft 365.
+ms.openlocfilehash: 59e9f4e36843d7c5d977a49d42ae0a11e9a2db25
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868873"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47362115"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -37,11 +37,17 @@ ms.locfileid: "46868873"
 
 ::: moniker-end
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening.  
+## <a name="before-you-begin"></a>Innan du börjar
+
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../admin-overview/admin-overview.md).
+
+Du måste vara [global administratör eller lösenordsadministratör](../add-users/about-admin-roles.md) för att utföra de här stegen.
 
 Om du är en användare har du inte behörighet att ange att ditt lösenord aldrig ska upphöra. Be den tekniska supporten på ditt företag eller din skola att göra stegen i denna artikel åt dig.
 
-Som administratör kan du göra så att användarlösenord upphör efter ett visst antal dagar, eller ställa in så att lösenord aldrig upphör. 
+Som administratör kan du göra så att användarlösenord upphör efter ett visst antal dagar, eller ställa in så att lösenord aldrig upphör.
+
+## <a name="set-password-expiration-policy"></a>Ange förfalloprincip för lösenordet
 
 > [!Tip]
 > Standard är att lösenord är inställda på att upphöra efter 90 dagar. Aktuella undersökningar tyder starkt på att tvingande lösenordsändringar gör mer skada än nytta. Det får användarna att välja svagare lösenord, återanvända lösenord eller uppdatera gamla lösenord på ett sätt som gör det enkelt för hackare att gissa sig till dem. Om du ställer in lösenord att aldrig upphöra rekommenderar vi att du aktiverar [multifaktorautentisering](../security-and-compliance/set-up-multi-factor-authentication.md).
@@ -62,7 +68,7 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
 5. Ange hur ofta lösenord ska upphöra. Välj ett antal dagar mellan 14 och 730.
   
 6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara**. Du kan välja ett antal dagar mellan 1 och 30.
-    
+
 7. När användarens lösenord slutar gälla, visas ett meddelande om detta i det nedre högra hörnet på skärmen.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Viktiga saker du behöver veta om funktionen för lösenords giltighetstid
@@ -70,9 +76,9 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
 Här är några saker som kan vara bra att känna till om hur denna funktion fungerar från och med januari 2018:
   
 - Personer som endast använder Outlook-appen tvingas inte återställa lösenordet för Microsoft 365 förrän det slutar gälla i cachen. Det kan dröja flera dagar från det faktiska utgångsdatumet. Det finns ingen lösning på det här felet på administratörsnivå.
-    
+
 - Användarna får inget e-postmeddelande om att lösenordet slutar gälla om X dagar. Vill du ha den här funktionen? **[Rösta här!](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
-    
+
 ## <a name="prevent-last-password-from-being-used-again"></a>Förhindra att det senaste lösenordet används igen
 
 Om du inte vill att användarna ska kunna återanvända gamla lösenord kan du aktivera lösenordshistorik i lokala Active Directory (AD). Se [Skapa en anpassad lösenordspolicy](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
@@ -85,9 +91,18 @@ Den här artikeln handlar om att ange förfalloprincipen för användare som bar
   
 Information om hur du synkroniserar användarlösenordshashar från lokal AD till Azure AD finns i [Implementera synkronisering av lösenordshashar med Azure AD Connect-synkronisering](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
+## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>Lösenordsprinciper och kontobegränsningar i Azure Active Directory
+
+Du kan konfigurera fler lösenordsprinciper och begränsningar i Azure Active Directory. Gå till [Lösenordsprinciper och kontobegränsningar i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy) för mer information.
 
 ## <a name="update-password-policy"></a>Uppdatera lösenordspolicy
 
 Set-MsolPasswordPolicy cmdlet uppdaterar lösenordspolicyn för en specificerad domän eller hyresgäst. Två inställningar krävs; den första är att ange hur lång tid ett lösenord förblir giltigt innan det måste ändras och det andra är att ange antalet dagar innan lösenordets utgångsdatum som kommer att trigga när användare kommer att få sitt första meddelande om att deras lösenord snart kommer att löpa ut.
 
 Information om hur du uppdaterar lösenordspolicyn för en specifik domän eller hyresgäst finns i [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+
+## <a name="related-content"></a>Relaterat innehåll
+
+[Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md)
+
+[Återställa lösenord](../add-users/reset-passwords.md)
