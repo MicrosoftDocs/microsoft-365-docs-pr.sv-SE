@@ -548,10 +548,10 @@
         - name: Exportera ärendedata
           href: exporting-data-ediscover20.md
           items:
+            - name: Ladda ner dokument från en granskningssats
+              href: download-documents-from-review-set.md
             - name: Exportera dokument från en granskningsuppsättning
               href: export-documents-from-review-set.md
-            - name: Ladda ned exportjobb
-              href: download-export-jobs.md
         - name: Hantera jobb
           href: managing-jobs-ediscovery20.md
         - name: Konfigurera ärendeinställningar
