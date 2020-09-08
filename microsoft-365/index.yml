@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 Help Center för administratörer och IT-proffs
-summary: Utforska Microsoft 365 hjälp- och utbildningsresurser.
+title: Microsoft 365-dokumentation
+summary: Hitta de lösningar, scenarier och resurser du behöver för att komma igång med Microsoft 365 för ditt företag eller din organisation.
 brand: m365
 metadata:
-  title: Microsoft 365 Help Center för administratörer och IT-proffs
-  description: Konfigurera, distribuera och hantera Microsoft 365 för att stödja din organisation, litet företag, kampanj eller lärare och elever
+  title: Microsoft 365-dokumentation
+  description: Hitta de lösningar, scenarier och resurser du behöver för att komma igång med Microsoft 365 för ditt företag eller din organisation.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -13,61 +13,241 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
-  ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+  ms.openlocfilehash: 2f414fe4556735a367bab9f08d8496f48843cb9e
+  ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "44909294"
+  ms.lasthandoff: 09/04/2020
+  ms.locfileid: "47399117"
 highlightedContent:
   items:
-  - title: Utbildning för administratörer och IT-proffs
-    itemType: learn
-    url: https://docs.microsoft.com/learn/m365/
-  - title: Utbildning för slutanvändare
-    itemType: learn
-    url: https://support.office.com/modernworkplace
-  - title: Konfigurera ditt företag i molnet
-    itemType: learn
-    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: Testlabbguider för IT-proffs
+  - title: Ge distansarbetare goda förutsättningar
     itemType: how-to-guide
-    url: ./enterprise/m365-enterprise-test-lab-guides.md
-  - title: Microsoft 365 Tech Community
+    url: solutions/empower-people-to-work-remotely.md
+  - title: Fjärranlärning med Microsoft Teams
     itemType: get-started
-    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-  - title: Resurser för utvecklare
-    itemType: reference
-    url: https://developer.microsoft.com/microsoft-365
+    url: /MicrosoftTeams/remote-learning-edu
+  - title: Bygg dina färdigheter med Microsoft Learn
+    itemType: learn
+    url: /learn/m365/
+  - title: Få Small Business igång med Microsoft 365
+    itemType: quickstart
+    url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+productDirectory:
+  title: Microsoft 365-lösningar och scenarier
+  items:
+  - title: Microsoft 365-lösningar
+    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    links:
+    - url: solutions/empower-people-to-work-remotely.md
+      text: Ge distansarbetare goda förutsättningar
+    - url: solutions/setup-secure-collaboration-with-teams.md
+      text: Konfigurera säkert samarbete
+    - url: solutions/deploy-threat-protection.md
+      text: Implementera skydd mot hot
+    - url: solutions/information-protection-deploy.md
+      text: Distribuera informationsskydd för datasekretessregler
+    - url: campaigns/index.md
+      text: Microsoft 365 för kampanjer (säkerhetsvägledning för alla småföretag)
+  - title: Möt och kommunicera
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    links:
+    - url: /MicrosoftTeams/quick-start-meetings-live-events
+      text: Möten och liveevenemang i Microsoft Teams
+    - url: /MicrosoftTeams/business-voice/whats-business-voice
+      text: Microsoft 365 Business Voice
+    - url: /MicrosoftTeams/cloud-voice-landing-page
+      text: Moln röst i Microsoft Teams
+    - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+      text: Microsofts telefonilösningar
+  - title: Samarbeta i din arbetsgrupp
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    links:
+    - url: solutions/collaborate-with-people-outside-your-organization.md
+      text: Konfigurera extern delning
+    - url: /sharepoint/plan-intranet
+      text: Planera ett intelligent SharePoint-intranät
+    - url: /sharepoint/deploy-file-collaboration
+      text: Fil samarbete i SharePoint
+    - url: /onedrive/plan-onedrive-enterprise
+      text: OneDrive-guide för företag
+  - title: Arkitekturresurser
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    links:
+    - url: solutions/productivity-illustrations.md
+      text: Produktivitetsillustrationer för Microsoft 365
+    - url: solutions/cloud-architecture-models.md
+      text: Microsoft Cloud-arkitekturmodeller
+    - url: solutions/design-principles.md
+      text: Designprinciper för företagsarkitektur
+  - title: Skydda organisationen
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    links:
+    - url: security/top-security-tasks-for-remote-work.md
+      text: Viktigaste åtgärderna för säkerhetsteam för att stödja arbete hemifrån
+    - url: solutions/configure-teams-three-tiers-protection.md
+      text: Konfigurera tre skyddsnivåer med Microsoft Teams
+    - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+      text: Distribuera Microsoft Defender Avancerat skydd
+    - url: security/office-365-security/office-365-atp.md
+      text: Distribuera Office 365 avancerat hot skydd
+    - url: enterprise/microsoft-365-policies-configurations.md
+      text: Konfigurera identitets- och enhets åtkomstskydd
+  - title: Skydda din information och följ reglerna
+    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    links:
+    - url: compliance/compliance-quick-tasks.md
+      text: Snabba uppgifter för att komma igång med Microsoft 365 Efterlevnadscenter
+    - url: compliance/protect-information.md
+      text: Hantera informationsskydd
+    - url: compliance/manage-information-governance.md
+      text: Hantera informationsstyrning
+    - url: compliance/overview-data-investigations.md
+      text: Hantera interna och externa utredningar
+    - url: compliance/insider-risk-management.md
+      text: Hantera insiderrisker
+  - title: Distribuera och hantera dina stationära datorer och enheter
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    links:
+    - url: /DeployOffice/plan-microsoft-365-apps
+      text: Distribuera Microsoft 365-applikationer
+    - url: /windows/deployment/
+      text: Distribuera Windows 10
+    - url: /microsoft-365/managed-desktop/
+      text: Microsoft Hanterat skrivbord
+    - url: /mem/intune/fundamentals/what-is-intune
+      text: Enhetshantering med Microsoft Intune
+  - title: Migrera till Microsoft 365
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    links:
+    - url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      text: Migrera till Microsoft Teams
+    - url: /sharepointmigration/migrate-to-sharepoint-online
+      text: Migrera ditt innehåll till SharePoint, OneDrive och Teams
+    - url: /Exchange/mailbox-migration/mailbox-migration
+      text: Migrera flera e-postkonton till Microsoft 365
+  - title: Branschspecifika lösningar och scenarier
+    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    links:
+    - url: solutions/financial-services-secure-collaboration.md
+      text: Säkerhet och efterlevnad för finansiella tjänster
+    - url: solutions/energy-secure-collaboration.md
+      text: Säkerhet och efterlevnad för tjänster för energi och gas/vatten/el
+    - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+      text: Teams för vårdorganisationer
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
+      text: Teams för utbildning
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
+      text: Teams för myndigheter
+    - url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+      text: Stöd fjärrstyrningsarbetare med Microsoft Teams
 additionalContent:
   sections:
-  - title: Få hjälp med Microsoft 365
-    summary: Välj ett kort om du vill få mer information om Microsoft 365.
+  - title: Alla appar och tjänster
+    summary: Dokumentation för alla appar och produkter som ingår i Microsoft 365.
     items:
-    - title: Administrationscenter för Microsoft 365
+    - title: Microsoft 365
       summary: Konfigurera och hantera Microsoft 365-tjänster för din organisation.
-      url: ./admin/index.yml
-    - title: Microsoft 365 Business Premium
-      summary: Utformad för små och medelstora företag. Driv verksamheten med de senaste versionerna av Windows- och Office-appar som Excel och Outlook. Dra nytta av dataskydd och säkerhet som täcker alla dina företagsenheter.
-      url: ./business/index.yml
-    - title: Microsoft 365 Enterprise
-      summary: Utformad för stora organisationer. Skydda företaget och transformera ditt sätt att arbeta med Office-appar, Windows 10 och Enterprise Mobility + Security.
-      url: ./enterprise/index.yml
-    - title: Microsoft 365-center för lösningar och arkitektur
-      summary: Lär dig hur du utformar en lösning och en arkitektur som passar din organisation.
-      url: ./solutions/index.yml
-    - title: Microsoft 365 Education
-      summary: Utformad för lärare för att uppmuntra kreativitet, främja samarbete och ge en enkel och säker upplevelse i en specifik och prisvärd lösning som är utformad för utbildning.
-      url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 Efterlevnad
-      summary: Hjälpa din organisation att styra information, skydda mot risker och följa lagar och föreskrifter.
-      url: ./compliance/index.yml
-    - title: Microsoft 365 Säkerhet
-      summary: Läs mer om robusta säkerhetslösningar och tjänster i Microsoft 365 Säkerhet, så att du kan skydda din organisation bättre från en mängd olika attacker.
-      url: ./security/index.yml
-    - title: Microsoft 365 for Campaigns
-      summary: Håll din kampanj eller dina företagsdata samt all kommunikation säker med den här rekommenderade konfigurationen för Microsoft 365 för företag.
-      url: ./campaigns/index.md
-    - title: Microsoft Hanterat skrivbord
-      summary: Microsoft Hanterat skrivbord sammanför Microsoft 365 Enterprise, molnbaserad enhetshantering av Microsoft och säkerhetsövervakning så du kan frigöra IT-grupper att fokusera på viktiga företagsbehov.
-      url: ./managed-desktop/index.yml
+      links:
+      - text: Administrationscenter för Microsoft 365
+        url: admin/index.yml
+      - text: Microsoft 365 Business Premium
+        url: business/index.yml
+      - text: Microsoft 365 för företag
+        url: enterprise/index.yml
+      - text: Microsoft 365 Efterlevnad
+        url: compliance/index.yml
+      - text: Microsoft 365-säkerhet
+        url: security/index.yml
+      - text: Microsoft Hanterat skrivbord
+        url: managed-desktop/index.yml
+      - text: Felsökning och support
+        url: /office/troubleshoot
+    - title: Microsoft Teams
+      links:
+      - text: Administratörsdokumentation
+        url: /MicrosoftTeams/Teams-overview
+      - text: Säkerhet och efterlevnad i Teams
+        url: /MicrosoftTeams/security-compliance-overview
+      - text: Uppgradera från Skype för företag till Teams
+        url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      - text: Mer >
+        url: /MicrosoftTeams
+    - title: Distribuera Office
+      links:
+      - text: Microsoft 365-applikationer
+        url: /DeployOffice/plan-microsoft-365-apps
+      - text: Office för Mac
+        url: /DeployOffice/mac
+      - text: Office 2019
+        url: /DeployOffice/office2019
+      - text: Mer >
+        url: /DeployOffice
+    - title: SharePoint
+      links:
+      - text: SharePoint Online
+        url: /sharepoint/sharepoint-online
+      - text: SharePoint Server
+        url: /sharepoint/sharepoint-server
+      - text: Hybrid
+        url: /sharepoint/hybrid/hybrid
+      - text: PowerShell-referens för SharePoint
+        url: /powershell/sharepoint
+      - text: Mer >
+        url: /sharepoint
+    - title: OneDrive
+      links:
+      - text: Planera, distribuera och hantera
+        url: /onedrive/onedrive
+      - text: Mer OneDrive >
+        url: /onedrive
+    - title: Outlook och Exchange
+      links:
+      - text: Outlook för iOS och Android
+        url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+      - text: Exchange Online
+        url: /Exchange/exchange-online
+      - text: Mer Exchange >
+        url: /Exchange
+    - title: Planerare och projekt
+      links:
+      - text: Administrations hjälp för Planner
+        url: /office365/planner/planner-admin-home
+      - text: Project för webben
+        url: /project-for-the-web/projectforweb-admin-home
+      - text: Mer projekt >
+        url: /Project
+    - title: Yammer
+      links:
+      - text: Hjälp för administratörer
+        url: /yammer/yammer-landing-page
+    - title: Kaizala
+      links:
+      - text: Komma igång
+        url: /Kaizala
+    - title: Microsoft Stream
+      links:
+      - text: Hjälpdokumentation
+        url: /stream/
+    - title: Skype för företag
+      links:
+      - text: IT Pro-dokumentation
+        url: /skypeforbusiness
+    - title: Office Online Server
+      links:
+      - text: Komma igång
+        url: /officeonlineserver
+  - title: Relaterad vägledning och resurser
+    items:
+    - title: Utvecklare
+      summary: Hitta handledning, referenser och andra resurser för utvecklare i Microsoft 365 dev Center.
+      url: https://developer.microsoft.com/microsoft-365
+    - title: 'Slutanvändare:'
+      summary: Hitta utbildning, instruktioner och hjälpinnehåll för användare av Microsoft 365 på support.microsoft.com.
+      url: https://support.microsoft.com/microsoft-365
+    - title: Lärare
+      summary: Lär dig hur du låser upp kreativitet, främjar lagarbete och har en säker och enkel upplevelse med Microsoft 365 Education.
+      url: /education
+    - title: Tech community
+      summary: Gå med i Microsoft 365 Tech-communityn för att dela erfarenheter, engagera och lära av experter.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
