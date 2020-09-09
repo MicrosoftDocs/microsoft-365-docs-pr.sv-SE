@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Beskriver viktig skillnad mellan dokument-och formulär bearbetnings modeller.
-ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612744"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405634"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Skillnad mellan dokument förståelse och modeller för formulär bearbetning (för hands version)
 
@@ -31,7 +31,7 @@ Med innehålls förståelse kan du skapa *modeller* för att identifiera och ext
 - [Förstå dokument](document-understanding-overview.md)
 - [Formulär bearbetnings modeller](form-processing-overview.md)
 
-Även om båda modellerna används i samma syfte är det viktiga skillnader som påverkar vilka du kan välja att använda.
+Även om båda modellerna används i samma syfte är det viktiga skillnader som påverkar vilken som kan välja att använda.
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturerat kontra ostrukturerat och indelat innehåll

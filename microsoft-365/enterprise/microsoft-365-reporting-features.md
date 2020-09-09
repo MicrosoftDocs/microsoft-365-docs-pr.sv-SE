@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig mer om olika rapporterings funktioner i Microsoft 365, inklusive Azure Active Directory och Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332742"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407922"
 ---
 # <a name="microsoft-365-reporting-features"></a>Rapporterings funktioner i Microsoft 365
 
@@ -71,9 +71,9 @@ Gransknings rapporter för Exchange Online innehåller information om åtkomst t
 
 ## <a name="device-compliance-reports"></a>Kompatibilitetsrapport för enheter
 
-Du hanterar och skyddar mobila enheter som är anslutna till ditt abonnemang med hjälp av Microsoft 365 Mobile Device Management (MDM). Mobila enheter som används för att komma åt e-post, kalender, kontakter och dokument spelar en betydande del av att de anställda kan arbeta när som helst och var de än är. Det är viktigt att du skyddar organisationens information. Du använder Microsoft 365 MDM för att ange säkerhets principer och åtkomst regler för enheter. Om du förlorar eller stulna kan du också använda Microsoft 365 MDM för att rensa mobila enheter.
+Du hanterar och skyddar mobila enheter som är anslutna till ditt abonnemang med grundläggande mobilitet och säkerhet för Microsoft 365. Mobila enheter som används för att komma åt e-post, kalender, kontakter och dokument spelar en betydande del av att de anställda kan arbeta när som helst och var de än är. Det är viktigt att du skyddar organisationens information. Du använder grundläggande mobilitet och säkerhet för Microsoft 365 för att ange säkerhets principer och åtkomst regler för enheter. Om det försvinner eller blir stulet använder du också grundläggande mobilitet och säkerhet för Microsoft 365 för att rensa mobila enheter.
 
-MDM-rapporter ger en översikt över principer som ställts in av en organisation för att skydda mobila enheter som har till gång till Microsoft 365-data. I rapporten kan du filtrera enheter efter kompatibilitetsstatus, rapporterade överträdelser, blockerade enheter och hur många enheter som rensas genom säkerhets principer. Mer information finns i [Översikt över hantering av mobila enheter för Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+Grundläggande rapporter om mobilitet och säkerhet ger en översikt över principer som ställts in av en organisation för att skydda mobila enheter som har till gång till Microsoft 365-data. I rapporten kan du filtrera enheter efter kompatibilitetsstatus, rapporterade överträdelser, blockerade enheter och hur många enheter som rensas genom säkerhets principer. Mer information finns i [Översikt över grundläggande mobilitet och säkerhet för Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## <a name="data-loss-prevention"></a>Förhindra data förlust
 

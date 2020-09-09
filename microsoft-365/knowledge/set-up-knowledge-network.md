@@ -11,12 +11,12 @@ ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612554"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405669"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Konfigurera kunskaps hantering (för hands version)
 
@@ -71,11 +71,27 @@ Så här konfigurerar du ditt kunskaps nätverk:
    
 5. I avsnittet **undanta ämnen efter namn** kan du välja att inkludera namn på ämnen som du inte vill ska finnas med i resultatet. Använd den här inställningen för att förhindra att känsliga ämnen tas med i kunskaps nätet. Alternativen är:</br>
     a. **Utelämna inte ämnen** </br>
-    b. **Utelämna ämnen som innehåller följande villkor**: om du har ämnen som du inte vill visa för användarna som en del av kunskaps nätet.
-   -Ladda ner den medföljande mallen.
-   -Ange ämnen som du vill undanta. Du måste ange matchnings typen som exakt eller delvis. Exakt matchning innebär att ämnen som uppfyller den exakta termen utesluts. Delvis träff är striktare och innebär att ämnen som innehåller termen utesluts. Om du till exempel anger *doc* som ämnes namn utesluts *dokument sammansättning* när *docknings stationen* inte gör det. Ämnes namn är Skift läges känsliga.  
-        -Välj  **+**   för att importera den färdiga CSV-filen. Välj sedan **Ladda upp**. En grön bock markering visas om filen har bearbetats. Välj **Nästa**.</br>
+    b. **Utelämna ämnen efter namn**: om du har ämnen som du inte vill visa för användarna som en del av kunskaps nätverket.</br>
 
+    ![Utelämna ämnen](../media/content-understanding/topics-excluded-by-name.png) </br>
+
+    #### <a name="how-to-exclude-topics-by-name"></a>Så här utesluter du ämnen efter namn    
+
+    Om du behöver undanta ämnen, efter att du har valt **Uteslut ämnen efter namn**, väljer **du Hämta CSV-mallen**. Använda Excel. CSV-mallen för att inkludera en lista med ämnen som du vill undanta från identifierings resultaten.
+
+    ![Uteslut avsnitt i en CSV-mall](../media/content-understanding/csv1.png) </br>
+
+    I CSV-mallen anger du följande information om de avsnitt som du vill undanta:
+
+    - **Namn**: Skriv namnet på det ämne som du vill undanta. Du kan göra det på två sätt:</br>
+        - Exakt träff: du kan ange exakt namn eller akronym (till exempel *contoso* eller *ATL*).</br>
+        - Ofullständig matchning: du kan exkludera alla ämnen som har ett visst ord i det.  Till exempel kommer *bågen* att exkludera alla ämnen med ord *båge* i det, till exempel *båge cirkel*, *plasma båge svets*eller *tränings båge*. Observera att den inte utesluter ämnen där texten är inkluderad som en del av ett ord, till exempel *arkitekturen*.</br>
+    - **Expansion (valfritt)**: om du vill utesluta en akronym skriver du orden som akronym står för.</br>
+    - **MatchType-exakt/delvis**: Skriv om det namn du angav är en *exakt* eller *delvis* matchnings typ.</br>
+
+    När du har slutfört och sparat CSV-mallfilen väljer du **Bläddra** och letar reda på och markerar den.
+    
+    Välj **Nästa**.</br>
 
 6. På sidan **vem kan se ämnen och var de kan se dem** ser du avsnitts visning. I listan **vilka kan se ämnen i kunskaps nätverkets** inställning väljer du vilka som ska ha åtkomst till ämnen, till exempel markerade ämnen, ämnes kort, ämnes svar i sökningar och avsnitts sidor. Du kan välja:</br>
     a. **Alla i organisationen**</br>

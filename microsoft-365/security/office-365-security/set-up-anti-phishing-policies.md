@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratörer kan lära sig mer om de anti-nätfiske-principer som är tillgängliga i Exchange Online Protection (EOP) och Office 365 Avancerat skydd (Office 365 ATP).
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308201"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407934"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Anti-nätfiske-principer i Microsoft 365
 
 Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor och Office 365 Avancerat skydd (Office 365 ATP)-organisationer.
 
-ATP anti-phishing-principer är bara tillgängliga i organisationer som har Office 365 ATP. Till exempel:
+ATP anti-phishing-principer är bara tillgängliga i organisationer som har Office 365 ATP. Ett exempel:
 
 - Microsoft 365 Enterprise, E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -106,21 +106,23 @@ Följande inställningar för förfalskning är tillgängliga i principer för n
     - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Hitta och släppa meddelanden i karantän som en användare i Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Oautentiserad avsändare**: Se beskrivningen i nästa avsnitt.
+- **Oautentiserad avsändare**: se informationen i nästa avsnitt.
 
 ### <a name="unauthenticated-sender"></a>Overifierad avsändare
 
 Overifierad avsändare är en del av de [förfalsknings inställningar](#spoof-settings) som är tillgängliga i principer för nätfiske och ATP-nätfiske enligt beskrivningen i föregående avsnitt.
 
-Inställningen för **overifierad avsändare** aktiverar eller inaktiverar avsändaren av avsändar-ID i Outlook. Verkligen
+Inställningen **overifierad avsändare** aktiverar eller inaktiverar icke autentiserad avsändare i Outlook. Verkligen
 
-- Ett frågetecken (?) läggs till avsändarens foto om meddelandet inte tillåter SPF-eller DKIM-kontroller **och** meddelandet klarar inte DMARC eller [sammansatt](email-validation-and-authentication.md#composite-authentication)behörighet.
+- Ett frågetecken (?) läggs till avsändarens foto om meddelandet inte tillåter SPF-eller DKIM-kontroller **och** meddelandet klarar inte DMARC eller [sammansatt](email-validation-and-authentication.md#composite-authentication)behörighet. Om du inaktiverar overifierad avsändare hindrar du att frågetecknet läggs till i avsändarens bild.
 
-- Via-taggen (chris@contoso.com <u>via</u> Michelle@fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+- Via-taggen (chris@contoso.com <u>via</u> Michelle@fabrikam.com) läggs till om domänen i from-adressen (meddelande avsändaren som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller **e-** postadressen. Mer information om dessa adresser finns i [Översikt över e-poststandarder](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-För att förhindra att dessa identifierare läggs till i meddelanden från specifika avsändare har du följande alternativ:
+  Inaktive ring av overifierad avsändare förhindrar inte att taggen via läggs till om domänen i från-adressen är annorlunda i DKIM-signaturen eller e-postadressen.
 
-- Tillåt avsändaren till förfalskning i policyn för förfalsknings information. Anvisningar finns i [Konfigurera förfalsknings intelligens i Microsoft 365](learn-about-spoof-intelligence.md).
+För att förhindra att frågetecknet eller via-tagg läggs till i meddelanden från specifika avsändare har du följande alternativ:
+
+- Tillåt avsändaren till förfalskning i policyn för förfalsknings information. Med den här åtgärden kan du förhindra att via-märket visas i meddelanden från avsändaren när avsändaren av avsändar-ID är inaktive rad. Anvisningar finns i [Konfigurera förfalsknings intelligens i Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Konfigurera e-postauktorisering](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) för avsändarens domän.
   

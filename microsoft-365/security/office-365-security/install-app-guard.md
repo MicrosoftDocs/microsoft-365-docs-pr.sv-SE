@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Få det senaste inom maskinvarubaserad isolering. Förhindra nuvarande och framväxande attacker som att utnyttja och sabotera inte fungerar för att störa företagets produktivitet och företags säkerhet.
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867542"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405547"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Application Guard för Office (offentlig för hands version) för administratörer
 
@@ -45,7 +45,7 @@ Microsoft Defender Application Guard för Office (Application Guard för Office)
 
 * **Windows 10**: Windows 10 Enterprise Edition, Client version 2004 (20H1) build 19041
 * **Office**: Office beta Channel version 2008 16.0.13212 eller senare
-* **Uppdaterings paket**: Windows 10 kumulativa [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) säkerhets uppdateringar 
+* **Uppdaterings paket**: Windows 10 kumulativa [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) säkerhets uppdateringar 
 
 Detaljerade system krav finns i [system krav för Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Mer information om för hands versionen av Office Insider finns i [komma igång med distribution av Office Insider-versioner](https://insider.office.com/business/deploy).
 
@@ -56,28 +56,9 @@ Detaljerade system krav finns i [system krav för Microsoft Defender Application
 
 ### <a name="enable-application-guard-for-office"></a>Aktivera Application Guard för Office
 
-1.  Ladda ned och installera **Windows 10 kumulativa KB4566782 för säkerhets uppdateringar**. 
+1.  Ladda ned och installera **Windows 10 kumulativa KB4571756 för säkerhets uppdateringar**. 
 
-2. Ladda ned och installera [**funktionen för att aktivera Application Guard för Office**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). Det här paketet installerar en grup princip med namnet "KB4559004 Issue 001 Preview" under **Datorkonfiguration\administrativa mallar**. Ställ in den här grup principen på **aktive rad**.
-     ![Redigeraren för lokala grup principer](../../media/ag01-deploy.png)
-
-     ![KB4559004 problem 001 för hands version](../../media/ag02-deploy.png)
-
-    Du kan också ange följande REG-nycklar direkt: 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    Kör sedan det här PowerShell-kommandot: 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  Välj **Microsoft Defender Application Guard** under Windows-funktioner och välj **OK**. Om du aktiverar funktionen Application Guard ombeds du att starta om datorn. Du kan välja att starta om nu eller efter steg 4.
+2.  Välj **Microsoft Defender Application Guard** under Windows-funktioner och välj **OK**. Om du aktiverar funktionen Application Guard ombeds du att starta om datorn. Du kan välja att starta om nu eller efter steg 3.
 
     ![Dialog rutan Windows-funktioner med AG](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ Detaljerade system krav finns i [system krav för Microsoft Defender Application
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  Leta efter Microsoft Defender Application Guard i grup principen hanterat läge på **dator konfiguration \\ administrativa mallar \\ Windows-komponenter \\ Microsoft Defender Application Guard**. Aktivera den här principen genom att ange värdet under alternativ som **2** eller **3** och sedan klicka på **OK** eller **Använd**.
+3.  Leta efter Microsoft Defender Application Guard i grup principen hanterat läge på **dator konfiguration \\ administrativa mallar \\ Windows-komponenter \\ Microsoft Defender Application Guard**. Aktivera den här principen genom att ange värdet under alternativ som **2** eller **3** och sedan klicka på **OK** eller **Använd**.
 
     ![Aktivera AG i hanterat läge](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ Detaljerade system krav finns i [system krav för Microsoft Defender Application
     <br>Värde: **2**
 
 
-5.  Starta om systemet.
+4.  Starta om systemet.
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Ställa in diagnostik & feedback för att skicka fullständiga data
 

@@ -13,17 +13,29 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: f1606e62813aa63225113b38414338c4e2ff7d57
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289609"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405683"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
 
 I den här artikeln finns nya och uppdaterade artiklar i [Microsoft Managed Desktop](index.yml). "Uppdaterade" artiklar är de som har använt material tillägg eller korrigeringar – smärre korrigeringar som korrigering av skrivfel, format eller formateringsfel visas inte. Du kan alltid visa historiken för specifika skrivningar (inklusive uppgifter om eventuella ändringar) genom att gå in på [repo på GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## <a name="august-2020"></a>Augusti 2020
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Enhets inventerings rapport](working-with-managed-desktop/device-inventory-report.md) | Ny artikel
+[Ny Microsoft Edge-app](get-started/edge-browser-app.md) | Uppdaterad artikel
+[Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
+[Registrera befintliga enheter själv](get-started/register-reused-devices-self.md) | Uppdaterad artikel
+[Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
+[Säkerhets åtgärder på Microsoft Managed Desktop](service-description/security-operations.md) | Ny artikel
+[Gå till administrations portalen](get-started/access-admin-portal.md) | Uppdaterad artikel
+[Microsoft 365 Apps för företag](get-started/m365-apps.md) | Ny artikel
+[Integritets-och person uppgifter](service-description/privacy-personal-data.md) | Ny artikel
 
 ## <a name="july-2020"></a>Juli 2020
 Ny eller ändrad artikel | Beskrivning
@@ -167,7 +179,7 @@ Ny eller ändrad artikel | Beskrivning
 ## <a name="june-2019"></a>Juni 2019
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Appar på Microsoft Hanterat skrivbord](get-ready/apps.md) | Uppdaterad artikel
+[Appar i Microsoft Hanterat skrivbord](get-ready/apps.md) | Uppdaterad artikel
 [Arbeta med Microsoft Consulting Services](get-ready/apps-mcs.md) | Ny artikel
 [Roller och ansvar för Microsoft Hanterat skrivbord](intro/roles-and-responsibilities.md) | Uppdaterad artikel
 [Produkt livs cykel för Microsoft Managed Desktop](service-description/device-lifecycle.md) | Ny artikel
