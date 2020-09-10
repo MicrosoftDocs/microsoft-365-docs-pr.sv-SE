@@ -1,0 +1,45 @@
+- name: Microsoft-bokningar
+  href: bookings-overview.md
+  items:
+    - name: Installation
+      items:
+        - name: Få till gång till bokningar
+          href: get-access.md
+        - name: Ange din företags information
+          href: enter-business-information.md
+        - name: Definiera dina tjänst möjligheter
+          href: define-service-offerings.md
+        - name: Schemalägg företags stängning och ledighet
+          href: schedule-closures-time-off-vacation.md
+        - name: Ange schemaläggnings principer
+          href: set-scheduling-policies.md
+        - name: Anpassa och publicera boknings sidan
+          href: customize-booking-page.md
+        - name: Skapa en manuell bokning
+          href: create-a-manual-booking.md
+        - name: Schemalägg företags stängning och ledighet
+          href: schedule-closures-time-off-vacation.md
+        - name: Anställda timmar
+          href: employee-hours.md
+        - name: Lägga till anpassade och nödvändiga frågor på boknings sidan
+          href: add-questions.md
+        - name: Ange buffertstorlek
+          href: set-buffer-time.md
+        - name: Mått och aktivitets spårning
+          href: metrics-and-activity-tracking.md
+        - name: Ange språk och tidszon
+          href: set-language-time-zones.md
+    - name: Hämta programmet bokningar
+      href: get-bookings-app.md
+    - name: Program och virtuella besök i Microsoft Teams
+      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+    - name: Jämförelse diagram – Web App och Teams-appen
+      href: comparison-chart.md
+    - name: Ta bort en boknings kalender
+      href: delete-calendar.md
+    - name: Aktivera eller inaktivera Microsoft-bokningar
+      href: turn-bookings-on-or-off.md
+    - name: Rapporterings information för Microsoft-bokningar
+      href: reporting-info.md
+    - name: Vanliga frågor och svar om Microsoft-bokningar
+      href: bookings-faq.md
