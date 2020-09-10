@@ -3,7 +3,7 @@ title: Skydda dina Microsoft 365-globala administratörs konton
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/08/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: I den här artikeln finns information om hur du skyddar global administratör till din Microsoft 365-prenumeration.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08e0960e7150395b2997dbd9ff0a1818822e17e2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb8f85b3ee5c0f72c2dd93517e68784459c32e7e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696693"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416392"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Skydda dina Microsoft 365-globala administratörs konton
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Säkerhets brott för en Microsoft 365-prenumeration, inklusive information om att skörda och nätfiske-attacker, görs normalt genom att kompromissa med autentiseringsuppgifterna för ett globalt administratörs konto för Microsoft 365. Säkerhet i molnet är ett samarbete mellan dig och Microsoft:
   
@@ -43,13 +43,14 @@ Microsoft tillhandahåller funktioner för att skydda din organisation, men de g
     
 2. Konfigurera multifaktorautentisering för dina dedikerade Microsoft 365-globala administratörs konton och Använd den starkaste formen av sekundär verifikation.
     
-> [! OBS! om den här artikeln är inriktad på globala administratörs konton bör du överväga om ytterligare konton med behörighet att få åtkomst till data i ditt abonnemang, till exempel en eDiscovery-administratör eller säkerhets-eller efterlevnad administratörs konton, ska skyddas på samma sätt. <br > Ett globalt administratörs konto kan skapas utan att några licenser läggs till.
+> [!Note]
+> Även om den här artikeln är inriktad på globala administratörs konton bör du överväga om ytterligare konton med behörighet att komma åt data i ditt abonnemang, till exempel en eDiscovery-administratör eller säkerhets-eller efterlevnad administratörs konton, ska skyddas på samma sätt. <br > Ett globalt administratörs konto kan skapas utan att några licenser läggs till.
   
 ## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Steg 1. Skapa dedikerade Microsoft 365-globala administratörs konton och Använd dem bara när det behövs
 
 Det finns relativt få administrativa uppgifter, till exempel tilldela roller till användar konton, som kräver globala administratörs behörigheter. I stället för att använda vardagliga användar konton som har tilldelats rollen som global administratör gör du därför följande:
   
-1. Bestäm vilka användar konton som har tilldelats rollen som global administratör. Det här kan du göra med kommandot Azure Active (Azure AD) Directory PowerShell for Graph:
+1. Bestäm vilka användar konton som har tilldelats rollen som global administratör. Du kan göra detta med följande kommando i Azure Active (Azure AD) Directory PowerShell for Graph:
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -120,15 +121,15 @@ Om du är en större organisation som använder en Microsoft 365-Hybrid identite
     
 Om säkerhets infrastrukturen för den önskade starkare verifierings metoden inte är avsedd för Microsoft 365 MFA rekommenderar vi starkt att du konfigurerar dedikerade globala administratörs konton med MFA med hjälp av Microsoft Authenticator-appen, ett telefonsamtal eller en verifierings kod för SMS till en smart telefon för dina globala administratörs konton som en interimistisk säkerhets åtgärd. Lämna inte dina dedikerade globala administratörs konton utan ytterligare skydd från MFA.
   
-Mer information finns i [Planera för multifaktorautentisering för Microsoft 365-distributioner](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Mer information finns i [MFA för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
   
 Om du vill ansluta till Microsoft 365-tjänster med MFA och PowerShell kan du läsa följande artiklar:
 
 - [PowerShell för Microsoft 365 för användar konton, grupper och licenser](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype för företag – Online] hantera-Skype-för-företag-Online-med-Microsoft-365-PowerShell # Connect-on-a-Skype-för-företag-Online-administratör-konto-med-Multi-Factor-Cover)
+- [Skype för företag Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Ytterligare skydd för företags organisationer
 

@@ -936,7 +936,7 @@
 - name: Efterlevnadserbjudanden
   items:
     - name: Efterlevnadserbjudanden från Microsoft
-      href: offering-home.md
+      href: offering-home.yml
     - name: Global
       items:
         - name: CIS-riktmärke

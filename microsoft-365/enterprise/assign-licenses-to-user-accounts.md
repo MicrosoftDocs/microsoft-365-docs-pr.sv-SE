@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beskriver hur du tilldelar Microsoft 365-licenser till användar konton, antingen individuellt eller baserat på grupp medlemskap.
-ms.openlocfilehash: 60936e52bffa58d50419f771e670848ee76271fd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e132a8c2d65c401899624b9d255050385f2cb721
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694365"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417104"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Tilldela Microsoft 365-licenser till användar konton
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 För den molnbaserade identitets modellen kan du tilldela Microsoft 365-licenser till användar konton när de skapas, beroende på hur du skapar dem.
 
@@ -58,5 +58,5 @@ Med alla användar konton som har tilldelats licenser är du nu redo att:
 
 - [Implementera säkerhet](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Distribuera klient program vara, till exempel Microsoft 365-appar](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [Konfigurera hantering av mobila enheter i Microsoft 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Konfigurera grundläggande mobilitet och säkerhet i Microsoft 365](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Konfigurera tjänster och program](configure-services-and-applications.md)
