@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd inbyggd grundläggande mobilitet och säkerhet för att ta bort information från registrerade enheter.
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47337119"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429956"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Rensa en mobil enhet i grundläggande mobilitet och säkerhet
 
@@ -39,7 +39,7 @@ Mobila enheter kan lagra känslig organisationsinformation och ge till gång til
 
 - **När en enhet rensas (fabriks återställning eller tar bort företags data)** tas enheten bort från listan med hanterade enheter.
     
-- **Återställa en enhet automatiskt**: du kan konfigurera en grundläggande mobilitet och säkerhets principer som automatiskt fabrik återställer en enhet efter det att användaren försöker ange enhets lösen ordet ett visst antal gånger. Följ stegen i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies-in-basic-mmobility-and-security.md).
+- **Återställa en enhet automatiskt**: du kan konfigurera en grundläggande mobilitet och säkerhets principer som automatiskt fabrik återställer en enhet efter det att användaren försöker ange enhets lösen ordet ett visst antal gånger. Följ stegen i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md).
     
 - **Om du vill ha information om hur du kan ta reda på användar upplevelsen** när du rensar sin enhet, se  [Vad är användare och enhets påverkan?](#whats-the-user-and-device-impact).   
 
@@ -91,4 +91,4 @@ Rensningen skickas direkt till den mobila enheten och enheten markeras som icke-
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Konfigurera grundläggande mobilitet och säkerhet](set-up-basic-mobility-and-security.md)
+[Konfigurera grundläggande mobilitet och säkerhet](set-up.md)

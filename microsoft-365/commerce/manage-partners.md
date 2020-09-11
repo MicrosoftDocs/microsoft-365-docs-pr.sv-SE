@@ -1,10 +1,10 @@
 ---
-title: Hantera partnerrelationer
+title: Hantera partner relationer
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,16 +14,15 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Lär dig hur du arbetar med Microsoft-certifierade lösningsleverantörer (partner) för att köpa och hantera produkter och tjänster för din organisation eller skola.
-keywords: partner, lösningsleverantör
-ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lär dig hur du arbetar med Microsoft-certifierade lösnings leverantörer (partners) för att köpa och hantera produkter och tjänster för din organisation eller skola.
+ms.openlocfilehash: 6cce3640a321d1eab31d527369a303cfde646718
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402600"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430028"
 ---
-# <a name="manage-partner-relationships"></a>Hantera partnerrelationer
+# <a name="manage-partner-relationships"></a>Hantera partner relationer
 
 ::: moniker range="o365-21vianet"
 
@@ -32,74 +31,69 @@ ms.locfileid: "44402600"
 
 ::: moniker-end
 
-Du kan arbeta med Microsoft-certifierade lösningsleverantörer (partner) för att köpa och hantera produkter och tjänster för din organisation eller skola. Det finns några steg inblandade i att få saker och ting inställda.
+Du kan arbeta med Microsoft-certifierade lösnings leverantörer (partner) för att köpa och hantera produkter och tjänster för organisationen eller skolan. Det finns några olika sätt att komma igång med saker.
 
-- Administratörer hitta och kontakta en partner med hjälp av formuläret på <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
-- Partner skickar en e-postbegäran till kunder för att upprätta en partnerrelation.
-- Kunderna accepterar inbjudan i Microsoft 365 admincenter och börja arbeta med partnern.
+1. Administratörer hittar och kontaktar en partner med hjälp av formuläret på <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
+2. Partner skickar en e-postbegäran till kunder för att etablera ett partner förhållande.
+3. Kunderna accepterar inbjudan i Microsoft 365 Admin Center och börjar arbeta med partnern.
+
+## <a name="before-you-begin"></a>Innan du börjar
+
+Du måste antingen vara global eller fakturerings administratör för att kunna utföra de här stegen. Mer information finns i [Om administratörsroller](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Vad kan en partner göra för min organisation eller skola?
 
-Det finns flera sätt att en partner kan arbeta med dig. Baserat på dina angivna affärsbehov väljer de en av dessa typer när de skickar sin begäran om att arbeta med dig.
+Det finns flera sätt som en partner kan arbeta med dig på. Beroende på dina företags behov väljer du någon av dessa typer när de skickar sin begäran om att få arbeta med dig.
 
-| Typ av partner | Beskrivning |
+| Partner typ | Beskrivning |
 | ------ | ------------------- |
-| Återförsäljare | Partner som säljer Microsoft-produkter till din organisation eller skola. |
-| Delegerad administratör | Partner som hanterar produkter och tjänster för din organisation eller skola. I Azure Active Directory (AD) är partnern en global administratör för din klientorganisation. Med den här rollen kan de hantera tjänster som att skapa användarkonton, tilldela och hantera licenser och återställa lösenord. |
-| Återförsäljare & delegerad administratör | Partner som säljer och hanterar Microsofts produkter och tjänster till din organisation eller skola. |
-| Partner | Du ger din partner ett användarkonto i din klientorganisation och de arbetar med andra Microsoft-tjänster för din räkning. |
-| Rådgivare | Partner kan återställa lösenord och hantera supportincidenter åt dig. |
-| Mpsa-partner (Microsoft Products & Services Agreement) | Om du har arbetat med flera partner via MPSA-programmet kan du låta dem se köp som görs av varandra. |
-| OEM PC-partner | Partner kan ladda upp enhets-ID:n för datorer som du [hanterar med Autopilot](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
-| LOB-partner (Line-of-business) | Partner kan utveckla, skicka in och hantera LOB-appar som är specifika för din organisation eller skola. |
+| Åter försäljaren | Partner som säljer Microsoft-produkter till din organisation eller skola. |
+| Delegerad administratör | Partner som hanterar produkter och tjänster för din organisation eller skola. I Azure Active Directory (AD) är partnern en global administratör för din klient organisation. Med den här rollen kan de hantera tjänster som att skapa användar konton, tilldela och hantera licenser samt återställa lösen ord. |
+| Åter försäljaren & delegerad administratör | Partner som säljer och hanterar Microsofts produkter och tjänster till din organisation eller skola. |
+| Partner | Du ger din partner ett användar konto i din klient organisation och de samarbetar med andra Microsoft-tjänster åt dig. |
+| Rådgivare | Partners kan återställa lösen ord och hantera support händelser åt dig. |
+| Microsoft Products & Services Agreement (MPSA)-partner | Om du har arbetat med flera partners via MPSA program kan du låta dem se inköp som görs av varandra. |
+| Partner för företags verksamhet (LOB) | Partners kan utveckla, skicka och hantera LOB-program som är specifika för din organisation eller skola. |
 
 ## <a name="find-a-partner"></a>Hitta en partner
 
 1. Gå till <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>.
-2. Ange din plats, välj organisationsstorlek, lägg till nyckelord för den typ av tjänster du behöver och välj sedan **Gå**.
-3. Välj en eller flera partner och välj sedan **Kontakta valda leverantörer**.
-4. Fyll i formuläret för att beskriva dina affärsbehov och välj sedan **Skicka**.
+2. Ange din plats, Välj organisationens storlek, Lägg till nyckelord för den typ av tjänster du behöver och välj sedan **gå**.
+3. Välj en eller flera partners och välj sedan **Kontakta valda leverantörer**.
+4. Fyll i formuläret och Beskriv dina affärs behov och välj sedan **Skicka**.
 
-Partnern kontaktar dig och ger dig en chans att lära dig mer om dem. Om du bestämmer dig för att arbeta med dem skickar de en e-postanbjudan för att upprätta en partnerrelation.
+Partnern kontaktar dig och ger dig en chans att få reda på mer om dem. Om du bestämmer dig för att arbeta med dem kan de skicka en inbjudan via e-post för att etablera ett partner förhållande.
 
-## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Granska och acceptera en partnerrelation och Microsofts kundavtal
+## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Granska och acceptera ett partner-och Microsoft-kundavtal
 
-När du har hittat en partner och bestämmer dig för att arbeta med dem skickar de en e-postanbjudan.
+När du har hittat en partner och bestämmer dig för att arbeta med dem, skickar de en e-postinbjudan.
 
-1. Välj länken i e-postmeddelandet för att gå till microsoft 365-administrationscentret.
-2. På **sidan Acceptera avtal & auktorisera partner** väljer du länken för **Microsofts kundavtal**och läser dokumentet.
-3. Markera rutan för att bekräfta att du har läst avtalet.
-4. Välj **Acceptera & auktorisera**.
-5. Listan över partner som du arbetar med visas. Välj en partner om du vill se information.
+1. I e-postmeddelandet väljer du länken för att gå till administrations centret för Microsoft 365.
+2. På sidan **Godkänn avtal & Godkänn partner** väljer du länken för **Microsofts kund avtal**och läser dokumentet.
+3. Markera rutan för att bekräfta att du läser avtalet.
+4. Välj **acceptera & verifiera**.
+5. Listan över partners som du arbetar med visas. Välj en partner för att visa detaljer.
 
 ## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Granska och acceptera ett Microsoft-kundavtal
 
-Om du redan har en partner men ännu inte har undertecknat ett Microsoft-kundavtal måste du acceptera avtalet innan de kan göra inköp eller hantera dina prenumerationer för din räkning.
+Om du redan har en partner men ännu inte har undertecknat ett Microsoft-avtal måste du godkänna avtalet innan de kan göra inköp eller hantera dina abonnemang åt dig.
 
-1. Om du får ett e-postmeddelande från din partner väljer du länken för att gå till administrationscentret för Microsoft 365 eller gå till sidan <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">Acceptera avtal.</a>
-2. Välj länken för **Microsofts kundavtal** och läs dokumentet.
-3. Markera rutan för att bekräfta att du har läst avtalet.
-4. Välj **Acceptera**.
-5. Listan över partner som du arbetar med visas. Välj en partner om du vill se information.
+1. Om du får ett e-postmeddelande från din partner väljer du länken för att gå till administrations centret för Microsoft 365 eller gå till sidan <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">Godkänn avtal</a> .
+2. Välj länken för **Microsofts kund avtal** och Läs dokumentet.
+3. Markera rutan för att bekräfta att du läser avtalet.
+4. Välj **acceptera**.
+5. Listan över partners som du arbetar med visas. Välj en partner för att visa detaljer.
 
-## <a name="remove-partner-admin-privileges"></a>Ta bort partneradministratörsbehörighet
+## <a name="remove-partner-admin-roles"></a>Ta bort roller för partner administratörer
 
-Beroende på partnerns begäran ingår att en del av accepterande av inbjudan går med på att ge dem delegerade administratörsbehörighet. Mer information finns [i Delegerade administratörsbehörigheter i Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+Beroende på vilken begäran som utfärdas av partnern godkänner du att ge dem globala roller för administratörer och supportavdelning. När du ger dessa administratörs roller till en partner ger du automatiskt delegerade administratörs behörigheter i Azure AD. Mer information finns i [delegerade administratörs behörigheter i Azure AD](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-Om du inte vill delegera administratörsbehörighet till partnern avbryter du inbjudan i stället för att acceptera den.
+Om du inte vill ge administratörs rollerna till partnern kan du avbryta inbjudan i stället för att acceptera den.
 
-Om du delegerar administratörsbehörighet till en partner kan du ta bort dessa privilegier när som helst. Om du tar bort administratörsbehörighet tas inte partnerrelationen bort. De kan fortfarande arbeta med dig, till exempel som återförsäljare.
+Du kan när som helst ta bort administratörs roller från en partner. Om du tar bort administratörs rollerna tas inte partner relationen bort. De kan fortfarande arbeta med dig i en annan kapacitet, till exempel åter försäljare. Om du bestämmer dig för att du inte vill arbeta med en partner längre kontaktar du din partner för att avsluta relationen.
 
-1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringskonton</a> i administrationscentret.
-2. På sidan **Faktureringskonton** väljer du fliken **Partnerrelationer.**
+1. Gå till sidan för **fakturerings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partner relationer</a> i administrations centret.
+2. På sidan **partner relationer** markerar du den rad som innehåller namnet på den partner du vill ta bort.
 3. Markera raden som innehåller namnet på partnern.
-4. På partnersidan väljer du **Ta bort administratörsroller**.
-
-## <a name="delete-a-partner-relationship"></a>Ta bort en partnerrelation
-
-Om du bestämmer dig för att du inte vill arbeta med en partner längre kan du avsluta relationen. Du kan dock bara ta bort relationer där partnern antingen är delegerad administratör eller rådgivare. För alla andra partnertyper kontaktar du din partner för att avsluta relationen.
-
-1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faktureringskonton</a> i administrationscentret.
-2. På sidan **Faktureringskonton** väljer du fliken **Partnerrelationer.**
-3. Markera raden som innehåller namnet på partnern.
-4. På partnerinformationssidan väljer du **Ta bort partner**.
+4. På sidan partner väljer du **ta bort roller**.
+5. I dialog rutan **ta bort roller?** väljer du **Ja**.

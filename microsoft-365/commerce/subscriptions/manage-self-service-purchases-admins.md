@@ -1,5 +1,5 @@
 ---
-title: Hantera självbetjäningsköp (administratörer)
+title: Hantera självbetjänings köp (administratörer)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,13 +14,13 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Administratörer kan lära sig att hantera självbetjäningsköp som görs av användare i organisationen.
-ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Administratörer kan lära sig att hantera självbetjänings köp som görs av användare i organisationen.
+ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403276"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430004"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
 
@@ -31,65 +31,90 @@ ms.locfileid: "44403276"
 
 ::: moniker-end
 
-Som administratör kan du se självbetjäningsköp som görs av personer i organisationen. Du kan se produkten, köparens namn, köpta prenumerationer, utgångsdatum, inköpspris och tilldelade användare för varje självbetjäningsköp. Om det behövs för din organisation kan du inaktivera självbetjäningsköp per produkt via PowerShell. Du har samma datahanterings- och åtkomstpolicyer över produkter som köpts via självbetjäningsköp eller centralt.
+Som administratör kan du se självbetjänings köp som görs av personer i din organisation. Du ser produkt namn, köpar namn, köpta abonnemang, utgångs datum, inköps pris och tilldelade användare för varje själv service-inköp. Om organisationen kräver det, kan du stänga av självbetjänings köp per produkt med hjälp av PowerShell. Du har samma data hanterings-och åtkomst principer som gäller för produkter som köpts via eget köp eller centralt.
 
-Du kan också styra om användare i organisationen kan göra självbetjäningsköp. Mer information finns i [Använd AllowSelfServicePurchase för MSCommerce PowerShell-modulen](allowselfservicepurchase-powershell.md).
+Du kan också kontrol lera om användare i din organisation kan göra självbetjänings köp. Mer information finns i [använda AllowSelfServicePurchase för MSCommerce PowerShell-modulen](allowselfservicepurchase-powershell.md).
 
-## <a name="view-self-service-subscriptions"></a>Visa självbetjäningsprenumerationer
+## <a name="view-self-service-subscriptions"></a>Visa självbetjänings abonnemang
 
-1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
+1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
+2. Bredvid **förfina resultat**väljer du **själv tjänst**i list rutan **Kontotyp** .
+3. Om du vill visa mer information om ett abonnemang väljer du en i listan.
 
-2. Välj **Självbetjäning**i listrutan **Kontotyp** bredvid **Förfina**resultat .
+## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visa vem som har licenser för ett självbetjänings abonnemang
 
-3. Om du vill visa mer information om en prenumeration väljer du en i listan.
-
-## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visa vem som har licenser för en självbetjäningsköpsprenumeration
-
-1. Gå till sidan **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Faktureringslicenser</a> i administrationscentret.
-
-2. Välj filterikonen och välj sedan **Självbetjäning**.
-
-3. Välj en produkt om du vill visa licenser som tilldelats personer.
-
+1. Gå till sidan för **fakturerings**licenser i administrations centret  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> .
+2. Välj filter ikonen och välj sedan **själv service**.
+3. Välj en produkt för att se licenser tilldelade till personer.
     > [!NOTE]
-    > Om det finns flera inköp för en produkt visas den produkten bara en gång och kolumnen **Tillgänglig kvantitet** visar summan av alla prenumerationer som köpts för den produkten.
+    > Om det finns flera köp för en produkt visas produkten endast en gång och kolumnen **disponibelt antal** visar summan av alla abonnemang som har köpts för produkten.
+4. Listan **användare** är grupperad efter namnen på personer som gjorde själv service inköp.
+5. Om du vill exportera en lista över användare med licenser för dessa prenumerationer väljer du de abonnemang som du vill exportera och väljer sedan **exportera användare**.
 
-4. **Listan Användare** grupperas efter namnen på personer som gjort självbetjäningsköp.
+## <a name="disable-or-enable-self-service-purchases"></a>Inaktivera eller aktivera självbetjänings köp
 
-5. Om du vill exportera en lista över användare med licenser för dessa prenumerationer väljer du de prenumerationer som du vill exportera och väljer sedan **Exportera användare**.
+Du kan inaktivera eller aktivera självbetjänings köp för användare i organisationen. **MSCommerce** PowerShell-modulen innehåller ett **PolicyID** parameter värde för **AllowSelfServicePurchase** där du kan kontrol lera om användare i din organisation kan göra självbetjänings köp och för vilka produkter.
 
-## <a name="disable-or-enable-self-service-purchases"></a>Inaktivera eller aktivera självbetjäningsköp
+Du kan använda **MSCommerce** PowerShell-modulen till att:
 
-Du kan inaktivera eller aktivera självbetjäningsköp för användare i organisationen. **MSCommerce** PowerShell-modulen innehåller ett **PolicyID-parametervärde** för **AllowSelfServicePurchase** som låter dig styra om användare i organisationen kan göra självbetjäningsköp och för vilka produkter.
+- Visa standard tillståndet för parametervärdet för **AllowSelfServicePurchase** – oavsett om det är aktiverat eller inaktiverat av produkten
+- Visa en lista över tillämpliga produkter och om självbetjänings inköp är aktiverat eller inaktiverat
+- Visa eller ändra den aktuella inställningen för en viss produkt för att aktivera eller inaktivera den
 
-Du kan använda **MSCommerce** PowerShell-modulen för att:
-
-- Visa standardtillståndet för parametervärdet **Tillåt självtjänstköpa** om &mdash; det är aktiverat eller inaktiverat av produkten
-- Visa en lista över tillämpliga produkter och om självbetjäningsköp är aktiverat eller inaktiverat
-- Visa eller ändra den aktuella inställningen för en viss produkt för att antingen aktivera eller inaktivera den
-
-Mer information finns i [Använd AllowSelfServicePurchase för MSCommerce PowerShell-modulen](allowselfservicepurchase-powershell.md).
+Mer information finns i [använda AllowSelfServicePurchase för MSCommerce PowerShell-modulen](allowselfservicepurchase-powershell.md).
 
 ## <a name="centralize-licenses-under-a-single-subscription"></a>Centralisera licenser under en enda prenumeration
 
-Du kan tilldela befintliga licenser eller köpa ytterligare prenumerationer via befintliga avtal för användare som tilldelats självbetjäningsköp. När du har tilldelat dessa centralt köpta licenser kan du begära att inköpare säger upp sina befintliga prenumerationer.
+Du kan tilldela befintliga licenser eller köpa ytterligare abonnemang genom befintliga avtal för användare tilldelade till självbetjänings köp. När du har kopplat dessa licenser kan du begära att dessa inköpare annullerar sina befintliga abonnemang.
 
-1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret</a> med ditt globala administratörs- eller faktureringsadministratörskonto.
+1. Logga in i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret</a> med ditt konto för global administratör eller fakturerings administratör.
+2. Gå till sidan **fakturerings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Köp tjänster</a> .
+3. Leta reda på och välj den produkt som du vill köpa och välj sedan **köp**.
+4. Utför resten av stegen för att slutföra köpet.
+5. Följ stegen i [Visa vilka som har licenser för en självbetjänings prenumeration](#view-who-has-licenses-for-a-self-service-purchase-subscription) för att exportera en lista med användare som ska referera till i steg 6.
+6. Tilldela licenser till alla som har en licens i det andra abonnemanget. Fullständiga anvisningar finns i [tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md).
+7. Kontakta den person som köpte självbetjänings abonnemanget och be dem att annullera det.
 
-2. Gå till **Billing**sidan  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
+## <a name="take-over-a-self-service-purchase-subscription"></a>Ta över ett självbetjänings abonnemang
 
-3. Hitta och välj den produkt som du vill köpa och välj sedan **Köp.**
+Du kan ta över ett abonnemang för självbetjäning som görs av en användare i organisationen. När du tar över ett själv service abonnemang har du två alternativ:
 
-4. Slutför de återstående stegen för att slutföra köpet.
+1. Flytta användarna till ett annat abonnemang och Avbryt det ursprungliga abonnemanget.
+2. Avbryt självbetjänings abonnemanget och ta bort licenser från tilldelade användare.
 
-5. Följ stegen i [Visa vem som har licenser för en självbetjäningsköpt prenumeration för](#view-who-has-licenses-for-a-self-service-purchase-subscription) att exportera en lista över användare som ska referera till i steg 6.
+### <a name="move-users-to-a-different-subscription"></a>Flytta användare till en annan prenumeration
 
-6. Tilldela licenser till alla som har en licens i den andra prenumerationen. Fullständiga steg finns i [Tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md).
+När du flyttar användare till ett annat abonnemang avbryts det gamla abonnemanget automatiskt. Den användare som ursprungligen köpte självbetjänings köpet får ett e-postmeddelande om att abonnemanget har annullerats.
 
-7. Kontakta personen som köpte självbetjäningsköpsprenumerationen och be dem att avbryta den.
+> [!NOTE]
+> Du måste ha en tillgänglig licens för varje användare som du flyttar i prenumerationen som du flyttar användare till.
+
+1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
+2. På fliken **produkter** väljer du filter ikonen och sedan **själv service**.
+3. Välj den prenumeration som du vill ta över.
+4. På sidan prenumerations information i avsnittet **prenumerationer och inställningar** väljer du **ta kontroll för det här abonnemanget**.
+5. I det högra fönstret väljer **du flytta användare**.
+6. Välj den produkt som du vill flytta användarna till och välj sedan **flytta användare**.
+7. I rutan **flytta användare till väljer du** **flytta användare**. Det kan ta flera minuter att flytta. Stäng inte webbläsaren medan processen körs.
+8. När flytt processen är klar stänger du **fönstret flytta slutfört**.
+9. På sidan prenumerations information visas **prenumerations statusen** för det självbetjänings abonnemang som har **tagits bort**.
+
+### <a name="cancel-a-self-service-purchase-subscription"></a>Avbryta ett självbetjänings abonnemang
+
+När du väljer att avbryta ett abonnemang för självbetjäning, förlorar användare med licenser åtkomst till produkten. Den användare som ursprungligen köpte självbetjänings köpet får ett e-postmeddelande om att abonnemanget har annullerats.
+
+1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
+2. På fliken **produkter** väljer du filter ikonen och sedan **själv service**.
+3. Välj den prenumeration som du vill avbryta.
+4. På sidan prenumerations information i avsnittet **prenumerationer och inställningar** väljer du **ta kontroll för det här abonnemanget**.
+5. I det högra fönstret väljer du **Avbryt prenumeration**.
+6. Välj en anledning till annulleringen i list rutan och välj sedan **Avbryt prenumeration**.
+7. I rutan **är du säker på att du vill avbryta?** väljer du **Avbryt prenumeration**.
+8. Stänga fönstret till höger.
+9. På sidan prenumerations information visas **prenumerationens status** som **borttagen**.
 
 ## <a name="need-help-contact-us"></a>Behöver du hjälp? Kontakta oss.
 
-Vanliga frågor om självbetjäningsköp finns i [Vanliga frågor om självbetjäningsköp](self-service-purchase-faq.md).
+Vanliga frågor om självbetjänings köp finns i [vanliga frågor och svar om inköp](self-service-purchase-faq.md).
 
-Om du har frågor eller behöver hjälp med självbetjäningsköp [kontaktar du supporten](../../admin/contact-support-for-business-products.md).
+Om du har frågor eller behöver hjälp med självbetjänings köp kan du [kontakta supporten](../../admin/contact-support-for-business-products.md).

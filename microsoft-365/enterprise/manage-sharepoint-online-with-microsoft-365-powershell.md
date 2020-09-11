@@ -1,5 +1,5 @@
 ---
-title: Hantera SharePoint Online med PowerShell
+title: Hantera SharePoint med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,21 +19,21 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: I den här artikeln lär du dig hur du använder PowerShell för Microsoft 365 för att hantera användare, grupper och webbplats grupper för SharePoint Online.
-ms.openlocfilehash: 6885452441bccff92469587d36bc57c6ba43fa09
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Lär dig hur du använder PowerShell för Microsoft 365 för att hantera användare, grupper och webbplats grupper.
+ms.openlocfilehash: dd3ae1ee27d0a3e7c46eb4b62b42165279656aeb
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694779"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429812"
 ---
-# <a name="manage-sharepoint-online-with-powershell"></a>Hantera SharePoint Online med PowerShell
+# <a name="manage-sharepoint-with-powershell"></a>Hantera SharePoint med PowerShell
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-En av de viktigaste uppgifterna i en SharePoint Online-administratör hanterar webbplatser, webbplats grupper och användare. Även om du kan utföra vissa av de här uppgifterna i administrations centret för Microsoft 365 är det mycket snabbare och enklare att i PowerShell. Mer information finns i följande avsnitt:
+SharePoint-administratörer måste hantera webbplatser, webbplats grupper och användare. Även om du kan göra något av följande i administrations centret för Microsoft 365 är det enklare för andra att i PowerShell. Mer information finns i följande artiklar:
 
-- [Ansluta till SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+- [Komma igång med SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
 - [Skapa SharePoint Online-webbplatser och lägga till användare med PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     
