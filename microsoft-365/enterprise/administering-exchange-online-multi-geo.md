@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Lär dig hur du hanterar Exchange Online multi-geo-inställningar i din Microsoft 365-miljö med PowerShell.
-ms.openlocfilehash: 645d48066ca02dbf3480e20ae30dc187f84293cf
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 996566d67aa8ba7ebca1406cd5d6265458637fee
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694315"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546252"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administrera Exchange Online-postlådor i en multi-geo-miljö
 
-Remote PowerShell krävs för att visa och konfigurera multi geo-egenskaper i din Microsoft 365-miljö. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+Exchange Online PowerShell krävs för att visa och konfigurera multi geo-egenskaper i din Microsoft 365-miljö. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 Du behöver [Microsoft Azure Active Directory PowerShell modul](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v 1.1.166.0 eller senare i v1. x för att se egenskapen **PreferredDataLocation** för användar objekt. De användar objekt som synkroniseras via AAD Connect into AAD kan inte ha sitt **PreferredDataLocation** -värde direkt ändrat via AAD PowerShell. Endast molnbaserade användar objekt kan ändras via AAD PowerShell. Information om hur du ansluter till Azure AD PowerShell finns i [ansluta till PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -29,9 +29,37 @@ Du behöver [Microsoft Azure Active Directory PowerShell modul](https://social.t
 
 Normalt ansluter Exchange Online PowerShell till Central geo-platsen. Men du kan också ansluta direkt till satellit platser på andra ställen. På grund av förbättringar av prestanda rekommenderar vi att du ansluter direkt till satellitens Geo plats när du bara hanterar användare på den platsen.
 
-Om du vill ansluta till en viss Geo-plats är *ConnectionUri* -parametern annorlunda än de vanliga anslutnings anvisningarna. Resten av kommandona och värdena är desamma. Stegen är:
+Kraven för att installera och använda EXO v2 finns beskrivna i [Installera och underhålla EXO v2-modulen](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-1. Öppna Windows PowerShell på din lokala dator och kör följande kommando:
+Om du vill ansluta Exchange Online PowerShell till en specifik Geo-plats är *ConnectionUri* -parametern annorlunda än de vanliga anslutnings anvisningarna. Resten av kommandona och värdena är desamma.
+
+Specifikt måste du lägga till `?email=<emailaddress>` värdet i slutet av _ConnectionUri_ -värdet. `<emailaddress>` är e-postadressen till **alla** post lådor på Geo-platsen för mål. Din behörighet till post lådan eller relationen till dina autentiseringsuppgifter är inte en faktor; e-postadressen säger bara till Exchange Online PowerShell för anslutning.
+
+Microsoft 365 eller Microsoft 365 GCC-kunder behöver vanligt vis inte använda parametern _ConnectionUri_ för att ansluta till Exchange Online PowerShell. Men om du vill ansluta till en specifik Geo-plats måste du använda _ConnectionUri_ parameter så att du kan använda `?email=<emailaddress>` i värdet.
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>Ansluta till en Geo-plats i Exchange Online PowerShell med multifaktorautentisering (MFA)
+
+1. Öppna modulen EXO v2 i ett Windows PowerShell-fönster genom att köra följande kommando:
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. I det här exemplet är admin@contoso.onmicrosoft.com administratörs konto och mål-geo-platsen där post lådans olga@contoso.onmicrosoft.com finns.
+
+  ```powershell
+  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+  ```
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>Ansluta till en Geo-plats i Exchange Online PowerShell utan MFA
+
+1. Öppna modulen EXO v2 i ett Windows PowerShell-fönster genom att köra följande kommando:
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. Kör följande kommando:
 
    ```powershell
    $UserCredential = Get-Credential
@@ -39,23 +67,11 @@ Om du vill ansluta till en viss Geo-plats är *ConnectionUri* -parametern annorl
 
    I dialog rutan **begäran om autentiseringsuppgifter för Windows PowerShell** anger du ditt arbets-eller skol konto och lösen ord och klickar sedan på **OK**.
 
-2. Ersätt `<emailaddress>` med e-postadressen för **en** post låda på mål-geo platsen och kör följande kommando. Din behörighet på post lådan och relationen till dina inloggnings uppgifter i steg 1 är inte en faktor; e-postadressen säger bara till Exchange Online var du kan ansluta.
-  
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-
-   Om till exempel olga@contoso.onmicrosoft.com är e-postadressen till en giltig post låda på den Geo-plats där du vill ansluta kör du följande kommando:
+3. I det här exemplet är mål-geo platsen där olga@contoso.onmicrosoft.com finns.
 
    ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
-
-3. Kör följande kommando:
-
-    ```powershell
-    Import-PSSession $Session
-    ```
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Visa tillgängliga geo-platser som är konfigurerade i din Exchange Online-organisation
 
@@ -135,14 +151,13 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 ```
 
 > [!NOTE]
+>
 > - Som tidigare nämnts kan du inte använda den här proceduren för synkroniserade användar objekt från lokala Active Directory. Du måste ändra värdet för **PreferredDataLocation** i Active Directory och synkronisera det med hjälp av AAD Connect. Mer information finns i [Azure Active Directory Connect Sync: konfigurera önskad data plats för Microsoft 365-resurser](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-> 
+>
 > - Hur lång tid det tar att hitta en post låda på en ny Geo-plats beror på flera faktorer:
-> 
+>
 >   - Storlek och typ av post låda.
-> 
 >   - Antalet post lådor som flyttas.
-> 
 >   - Tillgängligheten för att flytta resurser.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Flytta inaktiverade post lådor som har en tvist kvar
@@ -172,17 +187,11 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 I det här exemplet skapas ett nytt användar konto för Elizabeth Brunner med följande värden:
 
 - Användarens huvud namn: ebrunner@contoso.onmicrosoft.com
-
 - Förnamn: Elizabeth
-
 - Efter namn: Brunner
-
 - Visnings namn: Elizabeth Brunner
-
 - Lösen ord: skapas och visas slumpmässigt i resultatet av kommandot (eftersom det inte använder *lösen ords* parametern)
-
 - Licens: `contoso:ENTERPRISEPREMIUM` (E5)
-
 - Plats: Australien (Australien)
 
 ```powershell

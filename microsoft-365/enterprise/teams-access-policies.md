@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dde82ef9deb4d515ea5223470f7c96c1fe28a26
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685660"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546380"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Policy rekommendationer för att skydda Teams, grupper och filer
 
-I den här artikeln beskrivs hur du implementerar de rekommenderade identiteterna och enhets åtkomst principerna för att skydda Teams, grupper och innehåll som filer och kalendrar. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md), med ytterligare information som Teams-specifika. Eftersom team integreras med våra andra produkter kan du även läsa [Policy rekommendationer för att skydda SharePoint-webbplatser och filer](sharepoint-file-access-policies.md) och [Policy rekommendationer för att skydda e-post](secure-email-recommended-policies.md).
+I den här artikeln beskrivs hur du implementerar de rekommenderade identiteterna och enhets åtkomst principer för att skydda Microsoft Teams-chattar, grupper och innehåll som filer och kalendrar. Den här vägledningen bygger på [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md), med ytterligare information som Teams-specifika. Eftersom team integreras med våra andra produkter kan du även läsa [Policy rekommendationer för att skydda SharePoint-webbplatser och filer](sharepoint-file-access-policies.md) och [Policy rekommendationer för att skydda e-post](secure-email-recommended-policies.md).
 
 Dessa rekommendationer är baserade på tre olika nivåer av säkerhet och skydd för team som kan användas baserat på hur dina behov fungerar: bas linje, känslig och högreglerad. Du kan läsa mer om de här säkerhets nivåerna och rekommenderade principer som refereras av av dessa rekommendationer i [konfigurationerna för identitets-och enhets åtkomst](microsoft-365-policies-configurations.md).
 
@@ -38,25 +38,27 @@ Du behöver inte aktivera beroende tjänster för att komma igång med Microsoft
 - Microsoft 365-grupper
 - SharePoint-gruppwebbplatser
 - OneDrive för företag
-- Post lådor
+- Exchange-postlådor
 - Ström-och planerings planer (om de här tjänsterna är aktiverade)
 
 ## <a name="updating-common-policies-to-include-teams"></a>Uppdatera gemensamma principer för att inkludera team
 
-I följande diagram visas en uppsättning rekommenderade principer för att skydda chatt, grupper och innehåll i team. Penn ikonen anger vilka principer som måste återbesökas för att vara säker på att team och beroende tjänster ingår i tilldelningen av Cloud-appar.
+För att skydda chatt, grupper och innehåll i team visar följande diagram vilka principer som ska uppdateras från principer för åtkomst för identitet och enheter. För varje princip som ska uppdateras bör du kontrol lera att team och beroende tjänster ingår i tilldelningen av Cloud-appar.
 
-![Ett diagram som visar hur du använder Microsoft Teams på olika enheter.](../media/identity-access-ruleset-teams.png)
+[![Sammanfattning av princip uppdateringar för att skydda åtkomst till team och dess beroende tjänster](../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+
+[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 Det här är de tjänster som är underordnade för tilldelning av moln program för grupper:
 
 - Microsoft Teams
-- SharePoint Online och OneDrive för företag
+- SharePoint och OneDrive för företag
 - Exchange Online
 - Skype för företag – Online
 - Microsoft Stream (Mötes inspelningar)
 - Microsoft Planner (Planner-uppgifter och planera data)
 
-I den här tabellen visas de principer som måste återanvändas och länkar till varje princip i [gemensamma principer för identitets-och enhets åtkomst](identity-access-policies.md), som har den bredare regel uppsättning för alla Office-program.
+I den här tabellen visas de principer som måste återanvändas och länkar till varje princip i den [allmänna principer för identitets-och enhets åtkomst](identity-access-policies.md), som har den bredare princip som är inställd för alla Office-program.
 
 |Skydds nivå|Principerna|Ytterligare information om Team implementering|
 |:---------------|:-------|:----------------|
@@ -76,7 +78,7 @@ I den här tabellen visas de principer som måste återanvändas och länkar til
 
 Följande diagram visar att tjänsterna är bevarade för referens. Mer information och ytterligare illustrationer finns i [Microsoft Teams och relaterade produktivitets tjänster i microsoft 365 för IT-arkitekter](../solutions/productivity-illustrations.md).
 
-![Diagram som visar team beroenden i SharePoint Online, OneDrive för företag och Exchange.](../media/identity-access-logical-architecture-teams.png)
+![Diagram som visar team beroenden på SharePoint, OneDrive för företag och Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Aktivera gäst och extern åtkomst till Teams
 
@@ -120,6 +122,10 @@ Mer information om behörighets principer för appar finns [i Hantera principer 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Lär dig hur du aktiverar villkorsstyrd åtkomst för Exchange Online](secure-email-recommended-policies.md)
+![Steg 4: principer för Microsoft 365-molnappar](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+Konfigurera principer för villkorsstyrd åtkomst för:
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

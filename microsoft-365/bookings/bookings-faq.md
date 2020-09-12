@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Vanliga frågor och svar om Microsoft-bokningar.
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420281"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545722"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Vanliga frågor och svar om Microsoft-bokningar
 
@@ -180,7 +180,7 @@ Det finns ingen möjlighet att ställa in tidszon för personal i bokningar. Tid
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>Kan e-postaviseringar skickas som klient organisationens domän namn?
 
-E-postadresserna kontrol leras och hanteras på nivån Microsoft 365-inställningar och beror på domänens konfigurations inställningar där. Mer information finns [här](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps).
+E-postadresserna kontrol leras och hanteras på nivån Microsoft 365-inställningar och beror på domänens konfigurations inställningar där. Mer information finns [här](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>Är det möjligt att skicka SMS-meddelanden beroende på en annan tjänst eller specifik konfiguration?
 
@@ -366,7 +366,7 @@ Om du fortfarande får det här felet efter en längre tid eller om du ser det o
 
   - [Anpassa och publicera boknings sidan](customize-booking-page.md)
 
-  - [Konfiguration av klient post lådor](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [Konfiguration av klient post lådor](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [Grupp bokningar](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

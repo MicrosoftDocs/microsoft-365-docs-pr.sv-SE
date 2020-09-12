@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Microsoft 365 multi-geo eDiscovery
+title: Konfigurera Microsoft 365 Multi-Geo eDiscovery
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Lär dig hur du använder parametern region för att konfigurera eDiscovery för användning på satellit platser i Microsoft 365 multi-geo.
-ms.openlocfilehash: 83141f824c76ca5531e1b390b91adcdb4f3874de
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694485"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547956"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 multi-geo eDiscovery-konfiguration
 
@@ -35,7 +35,7 @@ När rollen eDiscovery Manager eller administratör anges för en viss satellit 
 
 Så här anger du säkerhets filter för efterlevnad för en region:
 
-1. [Ansluta till Microsoft 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Ansluta till Microsoft 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. Använd följande syntax:
 
@@ -43,10 +43,10 @@ Så här anger du säkerhets filter för efterlevnad för en region:
    New-ComplianceSecurityFilter -Action All -FilterName <TheNameYouWantToAssign> -Region <RegionValue> -Users <UserPrincipalName>
    ```
 
-   Till exempel:
+   Ett exempel:
 
    ```powershell
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-Se artikeln [ny ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) för ytterligare parametrar och syntax.
+Se artikeln [ny ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) för ytterligare parametrar och syntax.

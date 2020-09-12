@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Lär dig mer om Office 365 Germany.
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307283"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545924"
 ---
 # <a name="learn-about-office-365-germany"></a>Läs om Office 365 Germany
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307283"
 
 Office 365 Germany var ett differentierat alternativ till Office 365-tjänsterna i Europa. Den hjälpte till att hantera behoven hos de mest reglerade kunderna i Tyskland, Europeiska unionen (EU) och Europeiska fri handels sammanslutningen (EFTA) genom att tillhandahålla vår branschledande produktivitets tjänst för digitalt arbete, från tyska data källor, med data de i Tyskland och strikta data åtkomst och kontroll åtgärder via en unik förlitare som lyder under tysk lag.
   
-Dataförvaltaren, T-Systems International, ett oberoende tyskt företag som är ett dotterbolag till Deutsche Telekom, styr den fysiska och logiska åtkomsten till kundernas data. Kunddata kan inte nås utan godkännande från eller överseende av dataförvaltaren, som styrs av tysk lag.
+Dataförvaltaren, T-Systems International, ett oberoende tyskt företag som är ett dotterbolag till Deutsche Telekom, styr den fysiska och logiska åtkomsten till kundernas data. Det går inte att få åtkomst till kunddata utan godkännande från eller kontroll av den som förvaltar informationen, som lyder under tysk lag.
   
-Kundernas behov har flyttats och isoleringen av Office 365 Germany uppställt gränser för dess förmåga att hantera flexibiliteten och konsekvensen som kunderna önskar. Sedan augusti 2018 accepterar vi inte längre nya kunder eller distribuerar nya tjänster från den tillgängliga Microsoft-molnet Tyskland. Mer information finns i det här blogg inlägget: [Microsoft tillhandahåller moln tjänster från nya datacentres i Tyskland i 2019 för att uppfylla föränderliga kund behov](https://go.microsoft.com/fwlink/p/?linkid=839016).
+Kundernas behov har flyttats och isoleringen av Office 365 Germany uppställt gräns för dess förmåga att hantera flexibiliteten och konsekvensen för dina kunder. Sedan augusti 2018 accepterar vi inte längre nya kunder eller distribuerar nya tjänster från den tillgängliga Microsoft-molnet Tyskland. Mer information finns i det här blogg inlägget: [Microsoft tillhandahåller moln tjänster från nya datacentres i Tyskland i 2019 för att uppfylla föränderliga kund behov](https://go.microsoft.com/fwlink/p/?linkid=839016).
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Vilka av Microsofts online-tjänster är tillgängliga i Office 365 Germany?
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Vilka Microsoft Online-tjänster är tillgängliga i Office 365 Germany?
 
 Plan erbjudanden för Office 365 för Tyskland justeras så mycket som möjligt i denna isolerade miljö. Undantag från detta omfattar Yammer-relaterade abonnemang, abonnemang som är på väg att löpa ut och abonnemang som är tillgängliga genom program för ideell verksamhet. Office 365 E5, SPE och andra tjänster kommer att vara tillgängliga efter allmän tillgänglighet av Office 365 Germany. 
   
@@ -89,7 +89,7 @@ Följande tjänster och funktioner är tillgängliga en del [Office 365 Germany-
   
 ## <a name="general-information"></a>Allmän information
 
-|||
+|Objekt|Information |
 |-----|-----|
 |Inloggningsportal  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Prenumerationer, fakturering och teknisk support  <br/> |Tysk support för mer information finns i [kontakta supporten för företags produkter – hjälp för administratörer](../contact-support-for-business-products.md).  <br/> |

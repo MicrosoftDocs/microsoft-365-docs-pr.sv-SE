@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar sökning i en multi-geo-miljö. Endast vissa klienter, till exempel OneDrive för företag, kan returnera resultat i en multi-geo-miljö.
-ms.openlocfilehash: 22c71661e8f3b643a1fd7afa33b38584a1cd1be5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695091"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547158"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurera sökning för Microsoft 365 multi-geo
 
@@ -30,15 +30,11 @@ En användare på en Geo-plats kan till exempel söka efter innehåll som lagras
 
 Dessa klienter kan returnera resultat från alla geo-platser:
 
--   OneDrive för företag
-
--   Delve
-
--   Start sidan för SharePoint
-
--   Sök Center
-
--   Anpassade Sök program som använder SharePoint Search API
+- OneDrive för företag
+- Delve
+- Start sidan för SharePoint
+- Sök Center
+- Anpassade Sök program som använder SharePoint Search API
 
 ### <a name="onedrive-for-business"></a>OneDrive för företag
 
@@ -136,14 +132,12 @@ Vissa av de Sök funktioner du kanske är van vid, stöds inte i en multi-geo-mi
 
 Alla Sök klienter använder de befintliga SharePoint-sökningens REST-API: er för att interagera med Sök indexen.
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![Diagram som visar hur resten av API för SharePoint-sökning interagerar med Sök indexen](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. En Sök klient anropar Sök öknings slut punkten med Frågeparametern EnableMultiGeoSearch = True.
 2. Frågan skickas till alla geo-platser i klient organisationen.
 3. Sök Resultat från varje Geo-plats slås samman och rangordnas.
 4. Klienten får enhetliga Sök resultat.
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Observera att vi inte sammanfogar Sök resultaten förrän vi har fått resultat från alla geo platser. Det innebär att multi-geo-sökningar har ytterligare fördröjning jämfört med sökningar i en miljö med bara en Geo-plats.
 
@@ -152,29 +146,32 @@ Alla Sök klienter använder de befintliga SharePoint-sökningens REST-API: er f
 
 Varje Sök Center innehåller flera lodräta och du måste ställa in varje lodrätt.
 
-1.  Kontrol lera att du utför de här stegen med ett konto som har behörighet att redigera Sök Resultat sidan och webb delen Sök resultat.
+1. Kontrol lera att du utför de här stegen med ett konto som har behörighet att redigera Sök Resultat sidan och webb delen Sök resultat.
 
-2.  Gå till sidan med Sök resultat (se [listan](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) med Sök Resultat sidor)
+2. Gå till sidan med Sök resultat (se [listan](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) med Sök Resultat sidor)
 
-3.  Markera kryss rutan lodrätt och klicka på **Inställningar** kugg hjul i det övre högra hörnet och klicka sedan på **Redigera sida**. Sidan Sök Resultat öppnas i redigerings läge.
+3. Markera kryss rutan lodrätt och klicka på **Inställningar** kugg hjul i det övre högra hörnet och klicka sedan på **Redigera sida**. Sidan Sök Resultat öppnas i redigerings läge.
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  I webb delen Sök Resultat flyttar du pekaren till det övre högra hörnet av webb delen, klickar på pilen och sedan på **Redigera webbdel** på menyn. Verktygs fönstret för webb delen Sök Resultat öppnas under menyfliksområdet längst upp till höger på sidan. ![](../media/configure-search-for-multi-geo-image3.png)
+   ![Redigera sid val i inställningar](../media/configure-search-for-multi-geo-image2.png)
 
-1.  I verktygs fönstret webbdel, i avsnittet **Inställningar** , under **resultat kontroll inställningar**väljer du **Visa multi-geo Results** för att få webb delen Sök Resultat för att visa resultat från alla geo-platser.
+4. I webb delen Sök Resultat flyttar du pekaren till det övre högra hörnet av webb delen, klickar på pilen och sedan på **Redigera webbdel** på menyn. Verktygs fönstret för webb delen Sök Resultat öppnas under menyfliksområdet längst upp till höger på sidan.
 
-2.  Klicka på **OK** för att spara ändringen och stänga verktygs fönstret för webb delen.
+   ![Redigera webb dels val](../media/configure-search-for-multi-geo-image3.png)
 
-3.  Kontrol lera dina ändringar i webb delen Sök resultat genom att klicka på **checka** in på fliken sida i huvud menyn.
+5. I verktygs fönstret webbdel, i avsnittet **Inställningar** , under **resultat kontroll inställningar**väljer du **Visa multi-geo Results** för att få webb delen Sök Resultat för att visa resultat från alla geo-platser.
 
-4.  Publicera ändringarna med länken i anteckningen högst upp på sidan.
+6. Klicka på **OK** för att spara ändringen och stänga verktygs fönstret för webb delen.
+
+7. Kontrol lera dina ändringar i webb delen Sök resultat genom att klicka på **checka** in på fliken sida i huvud menyn.
+
+8. Publicera ändringarna med länken i anteckningen högst upp på sidan.
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Få anpassade Sök program för att visa resultat från alla eller vissa geo-platser
 
 Anpassade Sök program får resultat från alla eller vissa geo platser genom att ange frågeparametrar med begäran till den REST-API för SharePoint-sökning.Beroende på frågeparametrarna är frågan fanned ut till alla geo platser eller till vissa geo platser. Om du till exempel bara behöver fråga en delmängd geo platser för att hitta relevant information kan du bara kontrol lera fläkten till dessa. Om begäran lyckas returneras svars data i SharePoint Search REST API.
 
-**Krav**
+### <a name="requirement"></a>Krav
 
 För varje Geo-plats måste du se till att alla användare i organisationen har fått behörighets nivån **läsa** för rot webbplatsen (till exempel contoso**APAC**. SharePoint.com/och contoso**EU**. SharePoint.com/). [Läs mer om behörigheter](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
@@ -231,14 +228,12 @@ MultiGeoSearchStatus – det här är en egenskap som SharePoint Search API retu
 <td align="left">Partiell</td>
 <td align="left">Delar av resultat från en eller flera geo platser. Resultaten är ofullständiga på grund av ett tillfälligt fel.</td>
 </tr>
-
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>Fråga med REST-tjänsten
 
 Med en GET-begäran anger du frågeparametrarna i URL: en. Med en POST-begäran skickar du frågeparametrarna i bröd texten i JSON-format (Java Script Object Notation).
-
 
 #### <a name="request-headers"></a>Begärandehuvuden
 
@@ -270,8 +265,9 @@ https:// \<tenant\> / \_ API/Sök/fråga? querytext = ' site ' &ClientType = ' m
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exempel på inlägg som fanned ut till **alla** geo-platser
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -290,11 +286,11 @@ https:// \<tenant\> / \_ API/Sök/fråga? querytext = ' site ' &ClientType = ' m
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Exempel på inlägg som fanned ut till **vissa** geo platser
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -319,13 +315,15 @@ https:// \<tenant\> / \_ API/Sök/fråga? querytext = ' site ' &ClientType = ' m
             }
         }
     }
+```
 
 ### <a name="query-using-csom"></a>Fråga med CSOM
 
 Här är ett exempel på en CSOM fråga som fanned på **alla** geo platser:
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

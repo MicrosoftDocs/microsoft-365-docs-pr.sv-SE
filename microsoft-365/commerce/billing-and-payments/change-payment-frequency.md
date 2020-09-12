@@ -1,10 +1,10 @@
 ---
-title: Ändra faktureringsfrekvens
+title: Ändra fakturerings frekvens
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,15 +20,15 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Läs om hur du ändrar hur ofta du faktureras för din företagsprenumeration.
-ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+description: Lär dig hur du ändrar hur ofta du faktureras för ditt företag.
+ms.openlocfilehash: 0a4dccd69092c849637a5c79bd1bfe6d7faa1202
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430008"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545936"
 ---
-# <a name="change-your-billing-frequency"></a>Ändra faktureringsfrekvens
+# <a name="change-your-billing-frequency"></a>Ändra fakturerings frekvens
 
 ::: moniker range="o365-21vianet"
 
@@ -37,10 +37,9 @@ ms.locfileid: "45430008"
 
 ::: moniker-end
 
-När du köper en prenumeration väljer du månads- eller årsfakturering. Om du vill ändra hur ofta du faktureras för en prenumeration följer du följande steg.
+När du köper ett abonnemang väljer du månads-eller års debitering. Följ stegen nedan om du vill ändra hur ofta du faktureras för en prenumeration.
 
-1. Gå till sidan **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Faktureringsprodukter</a> i administrationscentret.
-
-2. Leta reda på den prenumeration som du vill ändra. Välj **Redigera** **bredvid faktureras månadsvis** eller **faktureras varje månad**i avsnittet **Fakturering.**
-
-3. Välj alternativet för hur ofta du vill faktureras och välj sedan **Ändra**.
+1. Gå till sidan fakturering i administrations centret **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
+2. På fliken **produkter** väljer du den prenumeration som du vill ändra.
+3. På sidan prenumerations information går du till avsnittet **prenumerations-och betalnings inställningar** och väljer **Redigera fakturerings frekvens**.
+4. I fönstret **Redigera fakturerings frekvens** väljer du alternativet för hur ofta du vill fakturera och väljer sedan **ändra**.

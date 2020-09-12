@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: I den här artikeln beskrivs hur du tar bort eller inaktiverar HYBRIDS ökning från Skype för företag och Exchange.
-ms.openlocfilehash: da0887936f5def69ad80c8f04381bcb3a85c2349
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694390"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547102"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Ta bort eller inaktivera Hybrid från Skype för företag och Exchange
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Om du har aktiverat hybrid modern (HMA) endast för att hitta den olämplig för din nuvarande miljö kan du avaktivera HMA. I den här artikeln förklaras hur.
   
@@ -47,7 +47,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [Anslut till Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) med Remote PowerShell. Kör följande kommando för att aktivera flaggan  *OAuth2ClientProfileEnabled*  till "false":
+2. **Exchange Online**: [Anslut till Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) med Remote PowerShell. Kör följande kommando för att aktivera flaggan  *OAuth2ClientProfileEnabled*  till "false":
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Administratörer kan lära sig att hantera självbetjänings köp som görs av användare i organisationen.
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430004"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546680"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Hantera självbetjäningsköp (administratörer)
 
@@ -38,7 +38,7 @@ Du kan också kontrol lera om användare i din organisation kan göra självbetj
 ## <a name="view-self-service-subscriptions"></a>Visa självbetjänings abonnemang
 
 1. Gå till sidan fakturering i administrations centret **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> .
-2. Bredvid **förfina resultat**väljer du **själv tjänst**i list rutan **Kontotyp** .
+2. På fliken **produkter** väljer du filter ikonen och sedan **själv service**.
 3. Om du vill visa mer information om ett abonnemang väljer du en i listan.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visa vem som har licenser för ett självbetjänings abonnemang
@@ -67,13 +67,12 @@ Mer information finns i [använda AllowSelfServicePurchase för MSCommerce Power
 
 Du kan tilldela befintliga licenser eller köpa ytterligare abonnemang genom befintliga avtal för användare tilldelade till självbetjänings köp. När du har kopplat dessa licenser kan du begära att dessa inköpare annullerar sina befintliga abonnemang.
 
-1. Logga in i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrations centret</a> med ditt konto för global administratör eller fakturerings administratör.
-2. Gå till sidan **fakturerings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Köp tjänster</a> .
-3. Leta reda på och välj den produkt som du vill köpa och välj sedan **köp**.
-4. Utför resten av stegen för att slutföra köpet.
-5. Följ stegen i [Visa vilka som har licenser för en självbetjänings prenumeration](#view-who-has-licenses-for-a-self-service-purchase-subscription) för att exportera en lista med användare som ska referera till i steg 6.
-6. Tilldela licenser till alla som har en licens i det andra abonnemanget. Fullständiga anvisningar finns i [tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md).
-7. Kontakta den person som köpte självbetjänings abonnemanget och be dem att annullera det.
+1. Gå till sidan **fakturerings** tjänster i administrations centret \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> .
+2. Leta reda på och välj den produkt som du vill köpa och välj sedan **köp**.
+3. Utför resten av stegen för att slutföra köpet.
+4. Följ stegen i [Visa vilka som har licenser för en självbetjänings prenumeration](#view-who-has-licenses-for-a-self-service-purchase-subscription) för att exportera en lista med användare som ska referera till nästa steg.
+5. Tilldela licenser till alla som har en licens i det andra abonnemanget. Fullständiga anvisningar finns i [tilldela licenser till användare](../../admin/manage/assign-licenses-to-users.md).
+6. Kontakta den person som köpte självbetjänings abonnemanget och be dem att [annullera det](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Ta över ett självbetjänings abonnemang
 

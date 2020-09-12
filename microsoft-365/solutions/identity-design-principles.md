@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308373"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547835"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Till identitet och efter – en arkitekts synvinklar
 
@@ -272,7 +272,7 @@ Office 365 har en [enhetlig Gransknings logg](https://docs.microsoft.com/microso
 
 Här är några exempel på Microsoft 365-loggar som nås via andra API: er.
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (aktiviteter som inte är relaterade till Office 365)
-- [Exchange meddelande spårning](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
+- [Exchange meddelande spårning](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - Hot/UEBA-system som diskuteras ovan (till exempel Azure AD Identity-skydd, Microsoft Cloud App Security, Microsoft Defender ATP etc.)
 - [Microsoft informations skydd](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender Avancerat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

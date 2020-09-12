@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundläggande mobilitet och säkerhet kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430337"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545902"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Möjligheter till grundläggande mobilitet och säkerhet
 
@@ -166,9 +166,9 @@ Följande alternativ kan hindra användare från att komma åt sin Microsoft 365
 |Blockera anslutning med flyttbart lagrings utrymme |Ja|Ja|Nej|
 |Blockera Bluetooth-anslutning |Ja|Ja|Nej|
 
-##  <a name="additional-settings"></a>Ytterligare inställningar 
+## <a name="additional-settings"></a>Ytterligare inställningar
 
-Du kan ange följande princip inställningar genom att använda PowerShell-cmdletar. Mer information finns i [säkerhets & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Du kan ange följande princip inställningar genom att använda säkerhets & kompatibilitetskontroll för PowerShell-cmdletar. Mer information finns i [säkerhets & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell).
 
 |**Ställa in namn**|**iOS 7,1 och senare**|**Android 5 och senare**|
 |:-----|:-----|:-----|

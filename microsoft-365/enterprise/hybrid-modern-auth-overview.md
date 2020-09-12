@@ -16,19 +16,19 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: I den här artikeln får du lära dig om hybrid modern verifiering och förutsättningar för användning med lokala Skype för företag-och Exchange-servrar.
-ms.openlocfilehash: 1dbea7643685d68564b1ba09b17c41aa2e5e42f1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694345"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546450"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Hybrid modern verifierings översikt och förutsättningar för att använda den med lokala Skype för företag-och Exchange-servrar
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 _Modern autentisering_ är en metod för identitets hantering som erbjuder säkrare användarautentisering och verifiering. Den är tillgänglig för Office 365 Hybrid distributioner av Skype för företag-Server lokalt och Exchange Server lokalt, samt för delade domäner med Skype för företag-hybrider. Den här artikeln länkar till relaterade dokument om förutsättningar, konfiguration/inaktive ring av modern verifiering och till en del av den relaterade klienten (ex. Outlook-och Skype-klienter) information.
-  
+
 - [Vad är modern lösenordsautentisering?](hybrid-modern-auth-overview.md#BKMK_WhatisModAuth)
 - [Vad ändras när jag använder modern lösenordsautentisering?](hybrid-modern-auth-overview.md#BKMK_WhatChanges)
 - [Kontrol lera modern status för den lokala miljön](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
@@ -39,36 +39,36 @@ _Modern autentisering_ är en metod för identitets hantering som erbjuder säkr
 <a name="BKMK_WhatisModAuth"> </a>
 
 Modern autentisering är en parasoll för en kombination av autentiserings-och auktoriseringsregler mellan en klient (till exempel din bärbara dator eller din telefon) och en server samt vissa säkerhets åtgärder som kräver åtkomst principer som du kanske redan är bekant med. Det innehåller:
-  
+
 - **Autentiseringsmetoder**: MULTIFAKTORAUTENTISERING (MFA); Smart Card-identifiering; klient certifikat-baserad verifikation
 - **Auktoriseringsregler**: Microsofts implementering av Open Authorization (OAuth)
 - **Villkor för villkorsstyrd åtkomst**: villkorlig åtkomst för Mam (Mobile Application Management) och Azure Active Directory (Azure AD)
 
 Om du hanterar användar identiteter med modern verifikation får administratörer många olika verktyg som du kan använda när de kommer att skydda resurser och erbjuder säkrare metoder för identitets hantering till både lokala (Exchange-och Skype för företag), Exchange-hybrider och Skype för företag hybrid/delade domän scenarier.
-  
+
 Tänk på att eftersom Skype för företag fungerar tätt med Exchange kommer användar beteendet för Skype för företag-klienter att påverkas av modern status för Exchange. Detta gäller även om du har en hybrid arkitektur för Skype för företag, som du använder för både Skype för företag _–_ online och Skype för företag, med användare som har Home på båda platserna.
 
 Mer information om modern auktorisering i Office 365 finns i [Support för office 365-appen-modern-verifikation](microsoft-365-client-support-modern-authentication.md).
-  
+
 > [!IMPORTANT]
 > Från och med augusti 2017 har alla nya Office 365-klient organisationer som har Skype för företag – Online och Exchange Online aktiverat modern autentisering som standard. Befintliga klient organisationer har ingen ändring i standard läget MA, men alla nya klient organisationer stöder automatiskt den utökade uppsättning med identitets funktioner som visas ovan. Om du vill kontrol lera MA-status läser du den [moderna autentiseringsinställningarna för den lokala miljö](hybrid-modern-auth-overview.md#BKMK_CheckStatus) avdelningen.
-  
+
 ## <a name="what-changes-when-i-use-modern-authentication"></a>Vad ändras när jag använder modern lösenordsautentisering?
 <a name="BKMK_WhatChanges"> </a>
 
 När du använder modern autentisering med lokala Skype för företag eller Exchange Server *verifierar* du fortfarande lokala användare, men artikeln om att *auktorisera* åtkomsten till resurser (som filer eller e-post) ändras. Det här är orsaken, men modern autentisering gäller för klient-och server kommunikation, de åtgärder som vidtas vid konfigurering av MA-resultat i evoSTS (en säkerhetstokentjänst som används av Azure AD) anges som auth Server för Skype för företag och Exchange Server lokalt.
-  
+
 Ändringen av evoSTS gör att dina lokala servrar kan utnyttja OAuth (token-utgivning) för att auktorisera klienterna och även tillåta dina lokala säkerhets metoder i molnet (som multifaktorautentisering). Dessutom utfärdar evoSTS de token som gör att användare kan begära åtkomst till resurser utan att ange deras lösen ord som en del av begäran. Det spelar ingen roll var användarna är anslutna (online eller lokalt), och oavsett vilken plats som är värd för den resurs som krävs, kommer EvoSTS att bli den grundläggande delen av att auktorisera användare och klienter när modern autentisering har kon figurer ATS.
-  
+
 Om till exempel en Skype för företag-klient behöver komma åt Exchange Server för att få kalender information för en användares räkning använder den Active Directory-autentiseringsschemat (ADAL) för att göra det. ADAL är ett kod bibliotek som är utformat för att göra skyddade resurser i katalogen tillgängliga för klient program som använder OAuth-säkerhetstoken. ADAL fungerar med OAuth för att verifiera anspråk och till Exchange-token (istället för lösen ord) för att ge en användare åtkomst till en resurs. Förr i tiden har myndigheten i en transaktion som den här en--server som känner till hur man verifierar användar anspråk och utfärdar de nödvändiga tokens--tjänsten (Security Token Service) eller ens Active Directory Federation Services. Men den här funktionen centraliserar modern användning av Azure AD.
-  
+
 Det innebär också att även om Exchange-servern och Skype för företag-miljön kanske är lokalt, är den auktoriserade servern online och den lokala miljön måste kunna skapa och underhålla en anslutning till din Office 365-prenumeration i molnet (och den Azure AD-instans som din prenumeration använder som katalog).
-  
+
 Vad är inte ändrat? Oavsett om du befinner dig i en delad domän hybrid eller använder Skype för företag och Exchange Server lokalt måste alla användare först verifiera *lokala*. I en hybrid implementering av modern inloggningsautentisering kan _Lyncdiscovery_ och _Autodiscover_ båda peka på den lokala servern.
-  
+
 > [!IMPORTANT]
 > Om du behöver veta de specifika topologierna för Skype för företag med MA är det [dokumenterat här](https://technet.microsoft.com/library/mt803262.aspx).
-  
+
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Kontrol lera modern status för den lokala miljön
 <a name="BKMK_CheckStatus"> </a>
 
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 Om värdet för egenskapen _OAuth2ClientProfileEnabled_ är **false**är modern verifikation inaktive rad.
 
-Mer information om cmdleten Get-OrganizationConfig finns i [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/get-organizationconfig).
+Mer information om cmdleten Get-OrganizationConfig finns i [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
 Du kan kontrol lera dina Skype för företag-servrar genom att köra följande PowerShell-kommando:
 
@@ -91,17 +91,17 @@ Get-CSOAuthConfiguration
 Om kommandot returnerar en tom _OAuthServers_ -egenskap, eller om värdet för egenskapen _ClientADALAuthOverride_ inte **tillåts**, är modern verifikation inaktive rad.
 
 Mer information om cmdleten Get-CsOAuthConfiguration finns i [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
-  
+
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Möter du moderna verifierings krav?
 
 Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
-  
+
 - **Skype för företag – specifikt**
   - Alla servrar måste ha 2017 Cumulative Update (CU5) för Skype för företag – Server 2015 eller senare
     - **Exception** -SBA (efterlevande) kan finnas i den aktuella versionen (baserat på Lync 2013)
   - Din SIP-domän läggs till som en federerad domän i Office 365
   - Alla SFB frontend-enheter måste ha anslutningar som är utgående till Internet, till Office 365-URL: er (TCP 443) och välkända certifikat rot listor (TCP 80) som visas i raderna 56 och 125 i avsnittet "Microsoft 365 common och Office" i [Office URL-adresser och IP-adressintervall](urls-and-ip-address-ranges.md).
-  
+
 - **Skype för företag – lokalt i en hybrid Office 365-miljö**
   - En distribution av Skype för företag – Server 2019 med alla servrar som kör Skype för företag – Server 2019.
   - En distribution av Skype för företag – Server 2015 med alla servrar som kör Skype för företag – Server 2015.
@@ -113,7 +113,7 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
 
 >[!NOTE]
 >Om dina Skype för företag-frontend-servrar använder en proxyserver för Internet åtkomst måste den IP-adress och det port nummer som används anges i konfigurations delen av web.config filen för varje klient.
-  
+
 - C:\Program Files\Skype for Business Server 2015 \ webb Components\Web ticket\int\web.config
 - C:\Program Files\Skype for Business Server 2015 \ webb Components\Web ticket\ext\web.config
 
@@ -131,13 +131,13 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
 
 > [!IMPORTANT]
 > Se till att du abonnerar på RSS-feeden för [Office 365 URL-adresser och IP-adressintervall](urls-and-ip-address-ranges.md) för att hålla sig uppdaterade med de senaste tablåerna av obligatoriska webb adresser.
-  
+
 - **Exchange Server specifikt**
   - Du använder antingen Exchange Server 2013 CU19 och up, Exchange Server 2016 CU8 och up eller Exchange Server 2019 CU1 och upp.
   - Det finns ingen Exchange Server 2010 i miljön.
   - SSL-avläsning är inte konfigurerat. SSL-terminering och omkryptering stöds.
   - I händelse av att din miljö använder en proxyserver för att tillåta servrar att ansluta till Internet bör du kontrol lera att alla Exchange-servrar har den proxyserver som är angiven i egenskapen [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) .
-  
+
 - **Exchange Server lokalt i en hybrid Office 365-miljö**
 
   - Om du använder Exchange Server 2013, måste minst en server ha installerat server för post lådor och klient åtkomst. Det går att installera rollerna post låda och klient åtkomst på separata servrar, men vi rekommenderar starkt att du installerar båda rollerna på samma server för att ge ytterligare pålitlighet och bättre prestanda.
@@ -146,7 +146,7 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
   - Alla Exchange-servrar måste ha de senaste kumulativa uppdateringarna installerade, se [Uppgradera Exchange till de senaste kumulativa uppdateringarna](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) för att hitta och hantera alla tillgängliga uppdateringar.
 
 - **Krav för Exchange-klient och-protokoll**
-  
+
   - Följande klienter har stöd för modern inloggningsautentisering:
 
   |**Förvirra**|**Primärt protokoll**|**Kommentarer**|
@@ -172,7 +172,7 @@ Kontrol lera och kontrol lera dessa objekt i listan innan du fortsätter:
 - Alla scenarier för lokala servrar är bland annat att konfigurera modern lokal inloggning (i själva verket för Skype för företag finns det en lista över topologier som stöds, så att den server som ansvarar för autentisering och godkännande finns i Microsofts moln (Azure AD-säkerhetstokentjänsten, som heter ' evoSTS ') och uppdaterar Azure AD angående de URL-adresser eller namn områden som används av din lokala installation av antingen Skype för företag eller Exchange. Därför tar lokala servrar ett Microsoft-moln beroende. Att vidta den här åtgärden kan överväga att konfigurera "hybrid auth".
 - Den här artikeln länkar ut till andra som hjälper dig att välja moderna autentiseringsmetoder (endast för Skype för företag) och instruktioner om hur du gör för att göra det, eller hur du inaktiverar modern behörighet, för Exchange lokalt och Skype för företag. Favorit den här sidan i din webbläsare om du vill ha en start bas för modern lösenordsautentisering i din server miljö.
 
-## <a name="related-topics"></a>Närliggande ämnen
+## <a name="related-topics"></a>Relaterade ämnen
 <a name="BKMK_URLListforMA"> </a>
 
 - [Konfigurera Exchange Server lokalt för användning av modern](configure-exchange-server-for-hybrid-modern-authentication.md)

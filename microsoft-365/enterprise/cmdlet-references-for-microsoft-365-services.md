@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Hitta Microsoft 365 PowerShell-referenser för Azure AD, Exchange Online, SharePoint Online, Skype för företag – Online och säkerhets & efterlevnad.
-ms.openlocfilehash: 4905c20216e6df02399fe372ec31fe3bedfde6c4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8f2aa4b123e3b7e3f92aabee7f9e8adeeb9c154f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694736"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547124"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Cmdlet-referenser för Microsoft 365-tjänster
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Cmdlet Reference ämnen för de olika Microsoft 365-tjänsterna innehåller detaljerad information och instruktioner om hur du använder de olika cmdletarna. Dessutom kräver alla Microsoft 365-tjänster som har stöd för PowerShell olika anslutnings instruktioner.
   
@@ -42,7 +42,7 @@ Instruktioner för anslutning till Microsoft 365 PowerShell finns i [ansluta til
   
 ## <a name="exchange-online-powershell-cmdlets"></a>PowerShell-cmdlets för Exchange Online
 
-Referens avsnitt för Exchange Online-cmdleten finns i avsnittet **referens** i [Exchange Online PowerShell-dokumentationen](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Referens avsnitt för Exchange Online-cmdleten finns i avsnittet **referens** i [Exchange Online PowerShell-dokumentationen](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
 För anslutnings instruktioner för Exchange Online PowerShell klickar [du på Anslut till Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
@@ -61,17 +61,14 @@ För information om cmdlets för Skype för företag – Online klickar du på [
   
 Klicka på [hantera Skype för företag – Online med PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)för anslutnings instruktioner för Skype för företag Online PowerShell.
 
-## <a name="security-amp-compliance-center-powershell-cmdlets"></a>&amp;PowerShell cmdlets för säkerhetskompatibilitet
+## <a name="security--compliance-center-powershell-cmdlets"></a>Säkerhets & Compliance Center PowerShell-cmdletar
 
-&amp;Referensmaterial för Microsoft 365 Security Compliance Center finns i avsnittet **referens** i [Exchange Online PowerShell-dokumentationen](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Referensmaterial för Microsoft 365 Security & kompatibilitetskontroll finns i avsnittet **referens** för [säkerhets & kompatibilitet PowerShell-dokumentationen](https://docs.microsoft.com/powershell/exchange/scc-powershell).
   
-Om du vill ha anslutnings instruktioner för &amp; PowerShell för säkerhetskompatibilitet klickar du på [Anslut till &amp; PowerShell för säkerhetskompatibilitet Center](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+Klicka på [Anslut till säkerhets & kompabilitet för kompatibilitet Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)för anslutnings instruktioner för säkerhets & kompatibilitetskontrollen.
 
-
-  
 ## <a name="see-also"></a>Se även
 
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Komma igång med PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
+[Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

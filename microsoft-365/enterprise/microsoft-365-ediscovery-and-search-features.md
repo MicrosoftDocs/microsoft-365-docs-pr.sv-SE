@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: En översikt över eDiscovery-funktionen och andra Sök funktioner i Microsoft 365 för gransknings användning och transparens.
-ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d18d3d4776c434788ee8fef7fb8be9edf339ff04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331866"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547776"
 ---
-# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Översikt över eDiscovery-och Sök funktioner i Microsoft 365 
+# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Översikt över eDiscovery-och Sök funktioner i Microsoft 365
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -67,6 +67,6 @@ Detaljerade anvisningar om hur du söker efter Microsoft 365-gransknings loggar 
 
 ## <a name="search-unified-audit-log"></a>Sök enhetlig Gransknings logg
 
-Använd funktionen Sök efter sökning för att söka i den enhetliga gransknings loggen. I Microsoft 365 kan du även söka i den här loggen via Remote PowerShell. [Sök-UnifiedAuditLog cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) i Exchange Online PowerShell används för att söka i den enhetliga gransknings loggen för händelser relaterade till användar åtgärder från Exchange Online, SharePoint Online, OneDrive för företag och Azure AD. 
+Använd funktionen Sök efter sökning för att söka i den enhetliga gransknings loggen. I Microsoft 365 kan du även söka i den här loggen via Remote PowerShell. [Sök-UnifiedAuditLog cmdlet](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) i Exchange Online PowerShell används för att söka i den enhetliga gransknings loggen för händelser relaterade till användar åtgärder från Exchange Online, SharePoint Online, OneDrive för företag och Azure AD.
 
 Du kan söka efter alla händelser inom ett visst datum intervall, eller så kan du filtrera resultaten baserat på specifika villkor, till exempel en viss åtgärd, den användare som utförde åtgärden eller målobjektet. Administratörer kan använda upp till tre samtidigt med Exchange Online PowerShell-sessioner för att dela upp stora sökningar i datum intervall.

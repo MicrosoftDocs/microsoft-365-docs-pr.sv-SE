@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Använd den här test laboratorie guiden för att aktivera hantering av privilegierad åtkomst för Microsoft 365 för företags test miljö.
-ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d8d92aa86076e323e4b5bb5c8eb1385edcac420c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695152"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545948"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Hantering av privilegie rad åtkomst för din test miljö för Microsoft 365 för företag
 
@@ -62,7 +62,7 @@ I den här fasen kontrollerar du att principen för privilegie rad åtkomst fung
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Testa möjligheten att utföra en uppgift som inte har definierats i en policy för privilegie rad åtkomst
 
-Först ansluter du till Exchange Management PowerShell med autentiseringsuppgifterna för en användare som har kon figurer ATS som global administratör i test miljön och försöker skapa en ny journal regel. Den [nya – JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) uppgiften är för närvarande inte definierad i en policy för privilegie rad åtkomst för organisationen.
+Först ansluter du till Exchange Management PowerShell med autentiseringsuppgifterna för en användare som har kon figurer ATS som global administratör i test miljön och försöker skapa en ny journal regel. Den [nya – JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule) uppgiften är för närvarande inte definierad i en policy för privilegie rad åtkomst för organisationen.
 
 1. På din lokala dator öppnar du och loggar in på Exchange Online Remote PowerShell-modulen på **Microsoft Corporation**  >  **Microsoft Exchange Online Remote PowerShell module** med det globala administratörs kontot för test miljön.
 

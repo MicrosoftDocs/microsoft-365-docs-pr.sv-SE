@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 043f5882dcaa15576317958523d6e57d4667ef45
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308091"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546197"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -57,13 +57,13 @@ Beroende på din miljö passar vissa verktyg bättre för vissa arkitekturer.
 
 
 <a name="BKMK_O365IDP"></a>
-### <a name="identity-and-device-protection-for-office-365"></a>Identitets- och enhetsskydd för Office 365
+### <a name="identity-and-device-protection-for-microsoft-365"></a>Identitet och enhets skydd för Microsoft 365
 
-Rekommenderade funktioner för att skydda identiteter och enheter som kommer åt Office 365, andra SaaS-tjänster och lokala program som publicerats med Azure AD-programproxy.
+Rekommenderade funktioner för att skydda identiteter och enheter som kommer åt Microsoft 365, andra SaaS-tjänster och lokala program som har publicerats med Azure AD Application Proxy.
 
 |**Objekt**|**Beskrivning**|
 |:-----|:-----|
-|[![Modellaffisch: Identitets- och enhetsskydd för Office 365 och andra SaaS-program](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032) <br/> Uppdaterad i november 2018|Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. I det här dokumentet kan du se vilka funktioner som är jämförbara och få mer information om funktioner för att skydda identiteter och enheter.  <br/> |
+|[![Modell affisch: identitet och enhets skydd för Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visa som en PDF-fil](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Uppdaterat 2020 september|Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Den här modellen visar vilka funktioner som är jämförbara med mer information om funktioner för att skydda identiteter och enheter.  <br/> |
    
 <!--
 

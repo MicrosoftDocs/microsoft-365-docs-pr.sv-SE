@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332755"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546648"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationer av identiteter och enhetsåtkomst
 
@@ -73,10 +73,9 @@ Den här vägledningen visar hur du implementerar skydd för identiteter och enh
 
 Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Om du till exempel implementerar den här vägledningen bör du se till att skydda dina data på jämförbara nivåer. 
 
-Arkitekturen **för identitet och enhet för Office 365** -arkitektur visar vilka funktioner som är jämförbara.
+Arkitekturen **för identiteter och enheter för Microsoft 365** -arkitekturer visar vilka funktioner som är jämförbara.
 
-![Miniatyr för affisch "identitets-och enhets skydd för Office 365"](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  |  [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  |  [Fler språk](https://www.microsoft.com/download/details.aspx?id=55032)
+[![Bild av knapp för identitet och enhets skydd för Microsoft 365-affisch](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visa som en PDF-fil](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Se dessutom artikeln [distribuera informations skydd för data integritets regler](../solutions/information-protection-deploy.md) för att skydda information som lagras i Microsoft 365.
 
@@ -105,10 +104,11 @@ Azure AD tillhandahåller en full uppsättning funktioner för identitets hanter
 |:-------|:-----|:-------|
 | [Multifaktorautentisering (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | MFA kräver att användare tillhandahåller två former av verifiering, till exempel ett användar lösen ord samt ett meddelande från programmet Microsoft Authenticator eller ett telefonsamtal. MFA minskar risken att stulna uppgifter kan användas för att komma åt din miljö. Microsoft 365 använder Azure Multi-Factor autentiseringstjänst-tjänsten för MFA-baserade inloggnings program. | Microsoft 365 E3 eller E5 |
 | [Med villkorsstyrd åtkomst](/azure/active-directory/conditional-access/overview) | Azure AD utvärderar villkoren för användarens inloggning och använder principer för villkorsstyrd åtkomst för att fastställa tillåten åtkomst. I den här vägledningen visar vi dig hur du skapar en princip för villkorsstyrd åtkomst så att du måste ha nödvändig åtkomst till känslig information. Detta minskar risken för att en hackare med sin egen enhet och stulna autentiseringsuppgifter kan komma åt dina känsliga data. Det skyddar också känslig information på enheterna, eftersom enheterna måste uppfylla specifika krav på hälsa och säkerhet. | Microsoft 365 E3 eller E5 |
-| [Azure AD-grupper](/azure/active-directory/fundamentals/active-directory-manage-groups) | Regler för villkorsstyrd åtkomst, enhets hantering med Intune och till och med behörigheter till filer och webbplatser i din organisation är beroende av tilldelningen till användar konton eller Azure AD-grupper. Vi rekommenderar att du skapar Azure AD-grupper som motsvarar den skydds nivå du implementerar. Din exekutiva personal är till exempel troligen högre värde mål för hackare. Därför är det bra att lägga till användar konton för dessa anställda i en Azure AD-grupp och tilldela den här gruppen till principer för villkorlig åtkomst och andra principer som tvingar fram en högre skydds nivå för Access. | Microsoft 365 E3 eller E5 |
-| [Enhets registrering](/azure/active-directory/devices/overview) | Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Denna identitet används för att autentisera enheten när en användare loggar in och för att tillämpa regler för villkorlig åtkomst som kräver domänanslutna eller kompatibla datorer. För den här vägledningen använder vi enhets registrering för att automatiskt registrera domänanslutna Windows-datorer. Enhets registrering är en förutsättning för att hantera enheter med Intune. | Microsoft 365 E3 eller E5 |
+| [Azure AD-grupper](/azure/active-directory/fundamentals/active-directory-manage-groups) | Principer för villkorsstyrd åtkomst, enhets hantering med Intune och till och med behörigheter till filer och webbplatser i din organisation är beroende av tilldelningen till användar konton eller Azure AD-grupper. Vi rekommenderar att du skapar Azure AD-grupper som motsvarar den skydds nivå du implementerar. Din exekutiva personal är till exempel troligen högre värde mål för hackare. Därför är det bra att lägga till användar konton för dessa anställda i en Azure AD-grupp och tilldela den här gruppen till principer för villkorlig åtkomst och andra principer som tvingar fram en högre skydds nivå för Access. | Microsoft 365 E3 eller E5 |
+| [Enhets registrering](/azure/active-directory/devices/overview) | Du registrerar en enhet i Azure AD för att skapa en identitet för enheten. Denna identitet används för att autentisera enheten när en användare loggar in och för att tillämpa villkorsstyrda åtkomst principer som kräver domänanslutna eller kompatibla datorer. För den här vägledningen använder vi enhets registrering för att automatiskt registrera domänanslutna Windows-datorer. Enhets registrering är en förutsättning för att hantera enheter med Intune. | Microsoft 365 E3 eller E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Gör det möjligt att upptäcka potentiella säkerhets problem som påverkar organisationens identitet och konfigurera automatisk reparations princip för att Visa riskerna med låg, medelhög och stor inloggning och användare. Den här vägledningen är beroende av denna riskbedömning för att tillämpa principer för villkorsstyrd åtkomst för multifaktorautentisering. Den här vägledningen innehåller även en policy för villkorsstyrd åtkomst som kräver att användare ändrar sitt lösen ord om en aktivitet med hög risk identifieras för deras konto. | Microsoft 365 E5, Microsoft 365 E3 med tillägget identitets & hot Protection, EMS E5 eller Azure Premium P2-licenser |
 | [Självbetjäning för återställning av lösen ord (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Tillåt att dina användare återställer sina lösen ord på ett säkert sätt och utan hjälp genom att kontrol lera flera autentiseringsmetoder som administratören kan kontrol lera. | Microsoft 365 E3 eller E5 |
+| [Lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Identifiera och blockera kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Standard listan över blockerade lösen ord tillämpas automatiskt på alla användare i en Azure AD-klient. Du kan definiera ytterligare poster i en anpassad lista över blockerade lösen ord. När användare ändrar eller återställer sina lösen ord är de här förbjudna lösen ords listorna markerade för att använda starka lösen ord. |  Microsoft 365 E3 eller E5 |
 ||||
 
 ![Komponenter i åtkomst till identiteter och enheter.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

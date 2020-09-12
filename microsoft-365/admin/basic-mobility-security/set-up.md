@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Konfigurera grundläggande mobilitet och säkerhet för att skydda och hantera användares mobila enheter.
-ms.openlocfilehash: cb010668d95e51edfbc913caa308ddd830d674e2
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430322"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545814"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Konfigurera grundläggande mobilitet och säkerhet
 
@@ -36,11 +36,10 @@ Enhets hantering är en del av säkerhets & Compliance Center så du måste gå 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Aktivera den grundläggande mobilitets-och säkerhets tjänsten
 
 1. Logga in på Microsoft 365 med ditt globala administratörs konto.
-    
 
 2. Gå till [aktivera grundläggande mobilitet och säkerhet](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
-    
-    Det kan ta lite tid att aktivera grundläggande mobilitet och säkerhet. När det är klart får du ett e-postmeddelande som förklarar nästa steg.
+
+   Det kan ta lite tid att aktivera grundläggande mobilitet och säkerhet. När det är klart får du ett e-postmeddelande som förklarar nästa steg.
 
 ## <a name="set-up-mobile-device-management"></a>Konfigurera hantering av mobila enheter
 
@@ -58,38 +57,36 @@ När du har lagt till de två CNAME-posterna kan du gå tillbaka till sidan säk
 
 För att hantera iOS-enheter som iPad och iPhone måste du skapa ett APN-certifikat.
 
-1. Logga in på Microsoft 365 med ditt globala administratörs konto.   
+1. Logga in på Microsoft 365 med ditt globala administratörs konto.
 
-2. I webbläsaren:  [https://protection.office.com](https://protection.office.com/) .  
+2. I webbläsaren:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Välj **Hantera data förlust**   >  **Device management**och välj **APNs-certifikat för iOS-enheter**.   
+3. Välj **Hantera data förlust**   >  **Device management**och välj **APNs-certifikat för iOS-enheter**.
 
-4. På sidan Inställningar för Apple Push Notification-certifikat väljer du **Nästa**.  
+4. På sidan Inställningar för Apple Push Notification-certifikat väljer du **Nästa**.
 
 5. Välj **Ladda ned din CSR-fil**   och spara begäran om certifikat signering någonstans på din dator som du kommer ihåg. Välj **Nästa**.
-    
+
 6. På sidan Skapa ett APN-certifikat:
-    
-    - Välj Apple-APN-portalen för att öppna Apple Push certificates-portalen.
-    - Logga in med ett Apple-ID.
 
-    >[!IMPORTANT]
-    >Använd ett Apple-ID för företag som är kopplat till ett e-postkonto som kommer att fortsätta med din organisation även om den användare som hanterar kontot lämnar. Spara detta ID eftersom du måste använda samma ID när det är dags att förnya certifikatet.
+   - Välj Apple-APN-portalen för att öppna Apple Push certificates-portalen.
+   - Logga in med ett Apple-ID.
 
-    - Välj Skapa ett certifikat och godkänn användnings villkoren.
-    
-    - Browseto som du laddat ner till din dator från Microsoft 365 och selectUpload.
-    
-    - Downloadthe APN-certifikat skapat av Apple Push Certificate-portalen till din dator.
+     > [!IMPORTANT]
+     > Använd ett Apple-ID för företag som är kopplat till ett e-postkonto som kommer att fortsätta med din organisation även om den användare som hanterar kontot lämnar. Spara detta ID eftersom du måste använda samma ID när det är dags att förnya certifikatet.
 
-    >[!TIP]
-    >Om du har problem med att ladda ner certifikatet kan du uppdatera webbläsaren.
+   - Välj Skapa ett certifikat och godkänn användnings villkoren.
+   - Bläddra till den begäran om certifikat signering som du hämtade till datorn från Microsoft 365 och selectUpload.
+   - Ladda ned APN-certifikatet som skapades av Apple Push Certificate-portalen till datorn.
 
-7. Gå tillbaka till Microsoft 365 och välj **Nästa**.   
+     > [!TIP]
+     > Om du har problem med att ladda ner certifikatet kan du uppdatera webbläsaren.
 
-8. Bläddra till det APN-certifikat som du laddade ned från Apple Push certificates-portalen.   
+7. Gå tillbaka till Microsoft 365 och välj **Nästa**.
 
-9. Välj  **Slutför**.  
+8. Bläddra till det APN-certifikat som du laddade ned från Apple Push certificates-portalen.
+
+9. Välj  **Slutför**.
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Steg 3: (rekommenderas) Konfigurera multifaktorautentisering
 
@@ -103,25 +100,30 @@ När du har konfigurerat MFA kan du gå tillbaka till säkerhets & Compliance Ce
 
 Nästa steg är att skapa och distribuera säkerhets principer för enheter för att skydda dina Microsoft 365-organisations data. Du kan till exempel förhindra data förlust om en användare förlorar sin enhet genom att skapa en princip för att låsa enheter efter fem minuters inaktivitet och rensa enheter efter tre inloggnings problem.
 
-1. Logga in på Microsoft 365 med ditt globala administratörs konto. 
+1. Logga in på Microsoft 365 med ditt globala administratörs konto.
 
 2. Välj [aktivera hantering av mobila enheter](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Om tjänsten är aktive rad kommer du att se en länk för att [Hantera enheter](https://admin.microsoft.com/adminportal/home#/MifoDevices)i stället   .
-    
+
 3. Gå till **enhets principer**.
 
-     :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Grundläggande principer för säkerhet och mobilitet":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Grundläggande principer för säkerhet och mobilitet":::
 
 4. Skapa och distribuera säkerhets principer för enheter som passar din organisation enligt anvisningarna i [skapa säkerhets principer för enheter i grundläggande mobilitet och säkerhet](create-device-security-policies.md).
 
->[!TIP]
-    - När du skapar en ny princip kanske du vill ange principen för att tillåta åtkomst-och rapport policy brott där en användare het inte är kompatibel med principen. Då kan du se hur många mobila enheter som påverkas av principen utan att blockera åtkomst till Microsoft 365.<br/>-Innan du distribuerar en ny princip till alla i organisationen rekommenderar vi att du testar den på de enheter som används av ett litet antal användare.<br/>-Innan du distribuerar principer kan din organisation ta reda på de potentiella konsekvenserna av att registrera en enhet i grundläggande mobilitet och säkerhet. Beroende på hur du konfigurerar principer kan enheter som inte uppfyller principer (icke-kompatibla enheter) blockeras från att få åtkomst till Microsoft 365. Icke-kompatibla enheter kan också ha installerade appar, foton och annan personlig information som på en registrerad enhet kan tas bort om enheten rensas. Mer information finns i [Rensa en mobil enhet i grundläggande mobilitet och säkerhet](wipe-mobile-device.md).
-    
+> [!TIP]
+>
+> - När du skapar en ny princip kanske du vill ange principen för att tillåta åtkomst-och rapport policy brott där en användare het inte är kompatibel med principen. Då kan du se hur många mobila enheter som påverkas av principen utan att blockera åtkomst till Microsoft 365.
+>
+> - Innan du distribuerar en ny princip till alla i organisationen rekommenderar vi att du testar den på de enheter som används av ett litet antal användare.
+>
+> - Innan du distribuerar principer kan din organisation dessutom få reda på de potentiella konsekvenserna av att registrera en enhet i grundläggande mobilitet och säkerhet. Beroende på hur du konfigurerar principer kan enheter som inte uppfyller principer (icke-kompatibla enheter) blockeras från att få åtkomst till Microsoft 365. Icke-kompatibla enheter kan också ha installerade appar, foton och annan personlig information som på en registrerad enhet kan tas bort om enheten rensas. Mer information finns i [Rensa en mobil enhet i grundläggande mobilitet och säkerhet](wipe-mobile-device.md).
+
 ## <a name="make-sure-users-enroll-their-devices"></a>Se till att användarna registrerar sina enheter
 
 När du har skapat och distribuerat en hanterings princip för mobila enheter kan varje licensierad Microsoft 365-användare i organisationen som enhets principen gäller för få ett registrerings meddelande nästa gång de loggar in på Microsoft 365 från sin mobila enhet. De måste slutföra registrerings-och aktiverings stegen innan de kan komma åt Microsoft 365-e-post och dokument. Mer information finns i [Registrera din mobila enhet med grundläggande mobilitet och säkerhet](enroll-your-mobile-device.md).
 
->[!IMPORTANT]
->Om en användares prioriterade språk inte stöds av registrerings processen kan användarna få ett meddelande om registrering och anvisningar på sina mobila enheter på ett annat språk. Det går för närvarande inte att använda alla språk i Microsoft 365 för att registrera dig på mobila enheter.
+> [!IMPORTANT]
+> Om en användares prioriterade språk inte stöds av registrerings processen kan användarna få ett meddelande om registrering och anvisningar på sina mobila enheter på ett annat språk. Det går för närvarande inte att använda alla språk i Microsoft 365 för att registrera dig på mobila enheter.
 
 Användare med Android-eller iOS-enheter måste installera företagsportalsappen som en del av registrerings processen.
 

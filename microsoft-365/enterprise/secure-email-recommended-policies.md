@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2dfaf33a837a74d92ec9bbbbb7f04b726e7f3744
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898146"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547871"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Policy rekommendationer för att skydda e-post
 
@@ -33,13 +33,15 @@ Dessa rekommendationer kräver att användarna använder moderna e-postklienter,
 
 ## <a name="updating-common-policies-to-include-email"></a>Uppdatera gemensamma principer för att inkludera e-post
 
-Följande diagram illustrerar den vanliga principer för identitets-och enhets åtkomst och visar vilka principer som måste uppdateras för att skydda e-post. Observera tillägget av en ny regel för Exchange Online för att blockera ActiveSync-klienter. Detta framtvingar användning av Outlook Mobile.
+För att skydda e-post visar följande diagram vilka principer som ska uppdateras från den vanliga policyn för identitets-och enhets åtkomst.
 
-![Sammanfattning av princip uppdateringar för att skydda e-post](../media/identity-access-ruleset-mail.png)
+[![Sammanfattning av princip uppdateringar för att skydda åtkomst till team och dess beroende tjänster](../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-[Visa en större version av bilden](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+[Visa en större version av bilden](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-Om du har inkluderat Exchange Online och Outlook enligt principernas omfattning när du ställer in dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska de principer som visas i tabellen nedan och gör de rekommenderade tilläggen, eller bekräfta att dessa redan är med. Varje regel länkar till de associerade konfigurations anvisningarna i [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
+Observera att en ny princip för Exchange Online läggs till för att blockera ActiveSync-klienter. Detta framtvingar användning av Outlook Mobile.
+
+Om du har inkluderat Exchange Online och Outlook enligt principernas omfattning när du ställer in dem behöver du bara skapa den nya principen för att blockera ActiveSync-klienter. Granska de principer som visas i tabellen nedan och gör de rekommenderade tilläggen, eller bekräfta att dessa redan är med. Varje princip länkar till de associerade konfigurations anvisningarna i [vanliga principer för identitets-och enhets åtkomst](identity-access-policies.md).
 
 |Skydds nivå|Principerna|Mer information|
 |:---------------|:-------|:----------------|
@@ -55,7 +57,7 @@ Om du har inkluderat Exchange Online och Outlook enligt principernas omfattning 
 
 ## <a name="block-activesync-clients"></a>Blockera ActiveSync-klienter
 
-Den här principen hindrar ActiveSync-klienter från att kringgå andra regler för villkorlig åtkomst. Regel konfigurationen gäller endast för ActiveSync-klienter. Om du väljer **[Kräv program skydds princip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** spärrar den här principen ActiveSync-klienter. Information om hur du skapar den här principen finns i [Kräv program skydds princip för Cloud App Access med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+Den här principen hindrar ActiveSync-klienter från att kringgå andra principer för villkorsstyrd åtkomst. Princip konfigurationen gäller endast för ActiveSync-klienter. Om du väljer **[Kräv program skydds princip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** spärrar den här principen ActiveSync-klienter. Information om hur du skapar den här principen finns i [Kräv program skydds princip för Cloud App Access med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Följ anvisningarna i "steg 2: Konfigurera en princip för villkorsstyrd åtkomst för Azure AD för Exchange Online med ActiveSync (EAS)" i [Scenario 1: Office 365-appar kräver godkända appar med program skydds principer](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), som hindrar Exchange ActiveSync-klienterna från att ansluta till Exchange Online.
 
@@ -67,4 +69,9 @@ Mer information finns i [Konfigurera nya funktioner för kryptering av Office 36
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Lär dig mer om policy rekommendationer för att skydda SharePoint-webbplatser och-filer](sharepoint-file-access-policies.md)
+![Steg 4: principer för Microsoft 365-molnappar](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Konfigurera principer för villkorsstyrd åtkomst för:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)

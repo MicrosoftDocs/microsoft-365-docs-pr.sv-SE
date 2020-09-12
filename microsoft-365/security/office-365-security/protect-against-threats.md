@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Administratörer kan läsa om hotets skydd i Microsoft 365 och konfigurera hur det ska användas för din organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417128"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547368"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -230,17 +230,17 @@ Arbets belastningar som SharePoint, OneDrive och Teams är byggda för samarbete
 
 5. Granska (och, om tillämpligt, redigera) organisationens principer för [säkert bifogade filer](set-up-atp-safe-attachments-policies.md) och [säkra länkar](set-up-atp-safe-links-policies.md).
 
-6. Lämpligt Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern _DisallowInfectedFileDownload_ angiven till *True*.
+6. Lämpligt Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** med parametern _DisallowInfectedFileDownload_ inställd på `$true` .
 
-   - Om du anger parametern till *True* blockeras alla åtgärder (förutom borttagning) för identifierade filer. Personer kan inte öppna, flytta, kopiera eller dela identifierade filer.
+   - `$true` blockerar alla åtgärder (förutom borttagning) för identifierade filer. Personer kan inte öppna, flytta, kopiera eller dela identifierade filer.
+   - `$false` alla åtgärder förutom Delete och nedladdning blockeras. Andra kan välja att acceptera risken och hämta en identifierad fil.
 
-   - Om du anger parametern till *falskt* blockeras alla åtgärder förutom Delete och nedladdning. Andra kan välja att acceptera risken och hämta en identifierad fil.
-   > [!TIP] Mer information om hur du använder PowerShell med Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
+   > [!TIP]
+   > Mer information om hur du använder PowerShell med Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
 7. Tillåt upp till 30 minuter för att ändringarna ska spridas till alla Microsoft 365-datacenter.
 
-
-#### <a name="now-set-up-alerts-for-detected-files"></a>Konfigurera aviseringar för identifierade filer
+### <a name="now-set-up-alerts-for-detected-files"></a>Konfigurera aviseringar för identifierade filer
 
 Om du vill få aviseringar när en fil i SharePoint Online, OneDrive för företag eller Microsoft Teams har identifierats som skadlig kan du ställa in en avisering.
 
@@ -266,9 +266,10 @@ Om du vill veta mer om aviseringar läser [du skapa aktivitets aviseringar i avs
 
 > [!NOTE]
 > När du är klar med konfigurationen kan du använda de här länkarna för att starta arbets belastnings undersökningar:
->- [Visa information om skadliga filer som identifieras i SharePoint, OneDrive eller Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
->- [Vad kan jag göra? när en skadlig fil hittas i SharePoint Online, OneDrive eller Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md) 
+>
+> - [Visa information om skadliga filer som identifieras i SharePoint, OneDrive eller Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+> - [Vad kan jag göra? när en skadlig fil hittas i SharePoint Online, OneDrive eller Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>Del 6 – ytterligare inställningar att konfigurera
 

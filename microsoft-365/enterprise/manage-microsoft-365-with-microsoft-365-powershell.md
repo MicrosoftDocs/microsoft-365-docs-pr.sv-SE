@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Lär dig hur du hanterar Microsoft 365-användare, licenser och 365-appar med PowerShell.
-ms.openlocfilehash: 0af4a47b713da1f0316ae4be91fb7c6472f0e625
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429908"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547920"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Hantera Microsoft 365 med PowerShell
 
@@ -47,7 +47,7 @@ Välj bland följande avsnitt om du vill lära dig hur du använder PowerShell f
 
     Börja här om du har installerat Microsoft 365-moduler och vill använda automatiserings kommandon för att hantera SharePoint.
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     Börja här om du vill använda automatiserings kommandon för att hantera Exchange Online.
 
@@ -55,7 +55,7 @@ Välj bland följande avsnitt om du vill lära dig hur du använder PowerShell f
 
     Börja här om du har installerat PowerShell 365-modulerna och vill migrera din e-post från befintliga system.
 
-- [**Säkerhets- och efterlevnadscenter**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**Säkerhets- och efterlevnadscenter**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     Börja här om du vill använda automatiserings kommandon för att hantera säkerhets & Compliance Center PowerShell.
 

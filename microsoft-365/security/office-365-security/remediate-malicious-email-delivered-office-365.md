@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Hot-reparation
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903889"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547246"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Åtgärda skadlig e-post som skickas i Office 365
 
@@ -39,7 +39,6 @@ Om du vill visa meddelande rubriker eller hämta e-postinnehåll måste du ha en
 |Använd Threat Explorer (och real tids identifieringar) för att analysera hot |Global administratör <br> Säkerhets administratör <br> Säkerhets läsare|Nej|
 |Använd Threat Explorer (och identifiering i real tid) för att visa rubriker för e-postmeddelanden och för att förhandsgranska och hämta e-postmeddelanden i karantän|Global administratör <br> Säkerhets administratör <br>Säkerhets läsare|Nej|
 |Använda Threat Explorer för att visa rubriker och hämta e-postmeddelanden som skickas till post lådor|Global administratör <br>Säkerhets administratör <br> Säkerhets läsare <br> Automatisk|Ja|
-
 
 > [!NOTE]
 > För hands versionen är en *roll*och inte en *roll grupp*. Förhands gransknings rollen måste läggas till i en befintlig roll grupp för Office 365. *Rollen global administratör* är tilldelad i [administrations centret för Microsoft 365](https://admin.microsoft.com). Rollerna säkerhets-och säkerhets läsare är kopplade till [säkerhets-och efterlevnadsprinciper](https://protection.office.com). Mer information om roller och behörigheter finns i [behörigheter i avsnittet säkerhet och efterlevnad](permissions-in-the-security-and-compliance-center.md).

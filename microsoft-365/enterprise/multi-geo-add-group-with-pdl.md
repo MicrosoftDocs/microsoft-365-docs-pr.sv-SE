@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Lär dig hur du skapar en Microsoft 365-grupp med angiven önskad data plats i en multi-geo-miljö.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0906d0b4881dd69bbf47cbb536c6c448a1a4f611
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694637"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547740"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Skapa en Microsoft 365-grupp med en viss PDL
 
@@ -28,7 +28,7 @@ Om du behöver skapa en grupp med en viss PDL kan du göra det från administrat
 
 Om du vill skapa en Microsoft 365-grupp med den PDL som du anger går du till administrations centret för SharePoint på den Geo-plats där du vill skapa grupp webbplatsen.
 
-Till exempel:
+Ett exempel:
 
 Om du vill skapa en grupp webbplats på din Australien-plats kan du gå till https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
 
@@ -41,7 +41,7 @@ Använda Exchange PowerShell
 
 Anslut till Exchange Online PowerShell och överför parametern *-MailBoxRegion* till geo-platsens kod.
 
-Till exempel: 
+Ett exempel: 
 
 ```PowerShell
 New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Public -MailboxRegion EUR 
@@ -57,4 +57,4 @@ Observera att etableringen av SharePoint-gruppwebbplatsen är på begäran. Webb
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+[Ansluta till Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)

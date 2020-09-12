@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du flyttar en SharePoint-webbplats till en annan Geo-plats i din multi-geo-miljö och förmedlar förväntningarna på ändringarna för användarna.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694301"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545642"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Flytta en SharePoint-webbplats till en annan Geo-plats
 
@@ -36,13 +36,13 @@ Följande typer av webbplatser kan flyttas mellan geo platserna:
 Du måste vara global administratör eller SharePoint-administratör för att kunna flytta en webbplats mellan geo platserna.
 
 Det finns ett skrivskyddat fönster under en SharePoint-webbplats geo flytt mellan 4-6 timmar, beroende på webbplats innehåll.
- 
+
 ## <a name="best-practices"></a>Metodtips
 
-- Pröva en SharePoint-webbplats på en testwebbplats för att få bekanta dig med proceduren. 
-- Verifiera om webbplatsen kan flyttas innan den schemaläggs eller när den flyttas. 
+- Pröva en SharePoint-webbplats på en testwebbplats för att få bekanta dig med proceduren.
+- Verifiera om webbplatsen kan flyttas innan den schemaläggs eller när den flyttas.
 - När möjligt schemaläggning mellan olika geo-webbplatser flyttas för mer än en arbets tid för att minska användar påverkan.
-- Kommunicera med påverkade användare innan platserna flyttas. 
+- Kommunicera med påverkade användare innan platserna flyttas.
 
 ## <a name="communicating-to-your-users"></a>Kommunicera med användarna
 
@@ -62,10 +62,11 @@ Du kan schemalägga att en SharePoint-webbplats flyttas i förväg (beskrivs lä
 
 - Du kan schemalägga upp till 4 000 i taget.
 - När flytten börjar kan du schemalägga mer, med högst 4 000 i kön och när som helst.
- 
+
 Om du vill schemalägga en SharePoint-webbplats med geo-flytt för en senare tillfälle, lägger du till en av följande parametrar när du börjar flytta:
+
 - `PreferredMoveBeginDate` – Flytten kommer sannolikt att börja vid den här tidpunkten.
-- `PreferredMoveEndDate` – Flytten kommer sannolikt att genomföras efter den angivna tiden, på bästa möjliga sätt. 
+- `PreferredMoveEndDate` – Flytten kommer sannolikt att genomföras efter den angivna tiden, på bästa möjliga sätt.
 
 Tid måste anges i UTC (Coordinated Universal Time) för båda parametrarna.
 
@@ -73,24 +74,27 @@ Tid måste anges i UTC (Coordinated Universal Time) för båda parametrarna.
 
 För att SharePoint-webbplatsen ska kunna flyttas måste du ansluta och genomföra flytten från URL-adressen för SharePoint-administration på den Geo-plats där webbplatsen är.
 
-Om du till exempel har webbplats-URL: en https://contosohealthcare.sharepoint.com/sites/Turbines , ansluter du till administrations-URL: en för SharePoint på https://contosohealthcare-admin.sharepoint.com:
+Om webb adressen till webbplatsen är <https://contosohealthcare.sharepoint.com/sites/Turbines> , ansluter du till URL-adressen för SharePoint-administratörer på <https://contosohealthcare-admin.sharepoint.com> :
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![SharePoint Online Management Shell-fönstret med kommandot Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>Verifiera miljön
 
 Vi rekommenderar att du gör en verifiering för att se till att webbplatsen kan flyttas innan du schemalägger en webbplats förflyttning.
 
 Vi stöder inte flytt av webbplatser med:
--    Konnektivitetstjänster för företag
--    InfoPath-formulär 
+
+- Konnektivitetstjänster för företag
+- InfoPath-formulär
 - Använda IRM-mallar (Information Rights Management)
 
 För att säkerställa att alla geo-platser är kompatibla kör du `Get-SPOGeoMoveCrossCompatibilityStatus` . Då visas alla dina geo-platser och om miljön är kompatibel med geo-platsen.
 
-Om du vill utföra en verifierings kontroll på webbplatsen använder du `Start-SPOSiteContentMove` `-ValidationOnly` parametern för att validera om webbplatsen kan flyttas. Till exempel:
+Om du vill utföra en verifierings kontroll på webbplatsen använder du `Start-SPOSiteContentMove` `-ValidationOnly` parametern för att validera om webbplatsen kan flyttas. Ett exempel:
 
 ```PowerShell
 Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -DestinationDataLocation <DestinationLocation>
@@ -100,17 +104,19 @@ Detta returnerar *framgång* om webbplatsen är redo att flyttas eller *inte fun
 
 ### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Starta en SharePoint-webbplats geo Move för en webbplats utan associerad Microsoft 365-grupp
 
-Som standard ändras initial URL för webbplatsen till URL-adressen för målets Geo-plats. Till exempel:
+Som standard ändras initial URL för webbplatsen till URL-adressen för målets Geo-plats. Ett exempel:
 
-https://Contoso.sharepoint.com/sites/projectx som https://ContosoEUR.sharepoint.com/sites/projectx
+<https://Contoso.sharepoint.com/sites/projectx> som <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-För webbplatser som inte har Microsoft 365-gruppassociationer kan du även byta namn på webbplatsen med hjälp av `-DestinationUrl` parametern. Till exempel:
+För webbplatser som inte har Microsoft 365-gruppassociationer kan du även byta namn på webbplatsen med hjälp av `-DestinationUrl` parametern. Ett exempel:
 
-https://Contoso.sharepoint.com/sites/projectx som https://ContosoEUR.sharepoint.com/sites/projecty
+<https://Contoso.sharepoint.com/sites/projectx> som <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 Starta webbplatsen genom att köra:
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![Skärm bild av PowerShell-fönstret med start-SPOSiteContentMove cmdlet](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ Så här anger du PDL för en Microsoft 365-grupp:
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-När du har uppdaterat PDL kan du börja flytta webbplatsen: 
+
+När du har uppdaterat PDL kan du börja flytta webbplatsen:
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,23 +146,26 @@ Du kan stoppa en SharePoint-webbplats geo flytt, förutsatt att flytten inte på
 Du kan bestämma statusen för en webbplats som flyttas i vårt från den geo som du är ansluten till genom att använda följande cmdletar:
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (icke-gruppanslutna webbplatser)
-- Get-SPOUnifiedGroupMoveState (gruppanslutna webbplatser)
+- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (gruppanslutna webbplatser)
 
 Använd `-SourceSiteUrl` parametern för att ange den webbplats som du vill visa status för.
 
 Flytt status beskrivs i följande tabell.
 
+****
+
 |Status|Beskrivning|
-|:-----|:----------|
+|---|---|
 |Redo att utlösa|Flytten har inte påbörjats.|
 |Överföring|Flyttningen är i kö men har inte startat ännu.|
 |Inaktivitet (ej tillämpligt)|Flytten pågår i något av följande lägen: verifiering (1/4), säkerhets kopiering (2/4), återställning (3/4), rensning (4/4).|
 |Bra|Flyttningen har slutförts.|
 |Misslyckades|Det gick inte att flytta.|
+|
 
 Du kan också använda `-Verbose` alternativet för att visa ytterligare information om flytten.
 
-## <a name="user-experience"></a>Användar upplevelse
+## <a name="user-experience"></a>Användarupplevelse
 
 Webbplats användare bör meddela minimala störningar när deras webbplats flyttas till en annan Geo-plats. Om du tar bort ett kort känsligt tillstånd under flytten fortsätter befintliga länkar och behörigheter att fungera som förväntat när flytten är klar.
 
@@ -215,4 +225,4 @@ PowerApps måste återskapas på mål platsen.
 
 ### <a name="data-movement-between-geo-locations"></a>Data förflyttning mellan geo-platser
 
-SharePoint använder Azure Blob Storage för innehållet, medan metadata som är kopplade till webbplatser och dess filer lagras i SharePoint. När webbplatsen har flyttats från källans Geo-plats till dess mål plats, flyttas även dess tillhör ande blob-lagring. Blob-lagringen flyttas i cirka 40 dagar. 
+SharePoint använder Azure Blob Storage för innehållet, medan metadata som är kopplade till webbplatser och dess filer lagras i SharePoint. När webbplatsen har flyttats från källans Geo-plats till dess mål plats, flyttas även dess tillhör ande blob-lagring. Blob-lagringen flyttas i cirka 40 dagar.
