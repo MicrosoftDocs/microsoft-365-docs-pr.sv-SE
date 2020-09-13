@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 28d47ae30d47430744729705d9ace2e1ea0a6b97
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419174"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547234"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Vanliga principer för identitets- och enhetsåtkomst
 
@@ -62,11 +62,11 @@ För att ge dig tid att utföra dessa uppgifter rekommenderar vi att du implemen
 
 Innan du konfigurerar principer ska du identifiera de Azure AD-grupper du använder för varje skydds nivå. Bas linje skydd gäller normalt för alla i organisationen. En användare som ingår i både bas linje och känsligt skydd får alla rikt linjer som tillämpas samt känsliga principer. Skyddet är kumulativt och den mest restriktiva principen tillämpas. 
 
-Ett rekommenderat tillvägagångs sätt är att skapa en Azure AD-grupp för undantag för villkorlig åtkomst. Lägg till den här gruppen i alla villkorliga Access-regler i **uteslutning** svärdet för **användare och grupper** i avsnittet **uppgifter** . Det gör att du kan ge åtkomst till en användare när du felsöker åtkomst problem. Detta rekommenderas endast som en tillfällig lösning. Övervaka den här gruppen för ändringar och kontrol lera att exkluderings gruppen bara används som avsett. 
+Ett rekommenderat tillvägagångs sätt är att skapa en Azure AD-grupp för undantag för villkorlig åtkomst. Lägg till den här gruppen i alla principer för villkorsstyrd åtkomst i området **exkludera** för **användare och grupper** i avsnittet **uppgifter** . Det gör att du kan ge åtkomst till en användare när du felsöker åtkomst problem. Detta rekommenderas endast som en tillfällig lösning. Övervaka den här gruppen för ändringar och kontrol lera att exkluderings gruppen bara används som avsett. 
 
 Här är ett exempel på grupp tilldelning och undantag för MFA.
 
-![Exempel på grupp tilldelning och undantag för MFA-regler](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Exempel på grupp tilldelning och undantag för MFA-principer](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Här är resultatet:
 
@@ -82,7 +82,7 @@ Här är resultatet:
 
 Var försiktig när du tillämpar högre skydds nivåer för grupper och användare. Till exempel måste du använda MFA varje gång de loggar in, även om de inte arbetar med det starkt reglerade innehållet i Project X.  
 
-Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Det här är viktigt för att du ska kunna distribuera känslighets etiketter när du skyddar dokument i Microsoft Teams och SharePoint Online.
+Alla Azure AD-grupper som skapas som en del av dessa rekommendationer måste skapas som Microsoft 365-grupper. Det här är viktigt för att du ska kunna distribuera känslighets etiketter när du skyddar dokument i Microsoft Teams och SharePoint.
 
 ![Skärmdump för att skapa Microsoft 365-grupper](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
@@ -105,7 +105,7 @@ I avsnittet **uppgifter** :
 |:---|:---------|:-----|:----|
 |Användare och grupper|Inkludera| **Välj användare och grupper > användare och grupper**: Välj specifika grupper som innehåller riktade användar konton. |Börja med gruppen som innehåller pilot användar konton.|
 ||Ta| **Användare och grupper**: Välj en undantags grupp för villkorlig åtkomst. tjänst konton (program identiteter).|Medlemskapet bör ändras efter behov.|
-|Moln program eller-åtgärder| **> moln program inkluderar** | **Välj appar**: Välj de program som du vill att regeln ska gälla för. Välj till exempel Exchange Online.||
+|Moln program eller-åtgärder| **> moln program inkluderar** | **Välj appar**: Välj de program du vill att den här policyn ska tillämpas på. Välj till exempel Exchange Online.||
 |Situationer| | |Konfigurera villkor som är specifika för din miljö och dina behov.|
 ||Inloggnings risker||Se anvisningarna i följande tabell.|
 |||||
@@ -194,6 +194,8 @@ Välj slutligen **på** för att **påtvinga policy**och välj sedan **Spara**.
 
 Överväg att använda [verktyget för att testa](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) policyn.
 
+Använd den här principen tillsammans med [konfiguration av lösen ords skydd i Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)som identifierar och blockerar kända svaga lösen ord och deras varianter och ytterligare svaga termer som är specifika för din organisation. Genom att använda lösen ords skydd för Azure AD ser du till att ändrade lösen ord är starka.
+
 ## <a name="apply-app-data-protection-policies"></a>Tillämpa program data skydds policy
 
 App Protection policies (APP) definierar vilka appar som tillåts och vilka åtgärder de kan utföra med din organisations data. De val som är tillgängliga i appen gör det möjligt för organisationer att skräddarsy skyddet mot deras specifika behov. I vissa fall är det kanske inte uppenbart vilka princip inställningar som krävs för att implementera ett fullständigt scenario. För att hjälpa organisationer att prioritera en mobil klient Bryt punkts härdning har Microsoft infört taxonomi för programmets data skydds ramverk för iOS-och Android-mobilappar. 
@@ -221,11 +223,11 @@ Om du vill skapa en ny skydds princip för varje plattform (iOS och Android) i M
 
 ## <a name="require-approved-apps-and-app-protection"></a>Kräv godkända appar och program skydd
 
-För att tvinga program skydds principerna som du använde i Intune måste du skapa en regel för villkorsstyrd åtkomst för att kräva godkända klient program och de villkor som ställts in i APPENs skydds principer. 
+För att påtvinga program skydds principer som du använde i Intune måste du skapa en princip för villkorsstyrd åtkomst för att Kräv godkända klient program och de villkor som ställts in i APPENs skydds principer. 
 
 För att tvinga skydds principer för appar krävs en uppsättning principer som beskrivs i [Kräv program skydds princip för Cloud App Access med villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Dessa principer ingår i de rekommenderade uppsättningarna med identitets-och åtkomst principer.
 
-Om du vill skapa en regel för villkorlig åtkomst som kräver godkända appar och APP Protection följer du anvisningarna i "steg 1: Konfigurera en princip för villkorsstyrd åtkomst i Azure AD för Microsoft 365" i [Scenario 1: Microsoft 365-program kräver godkända appar med skydds principer för appar](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), som tillåter Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
+Om du vill skapa principen för villkorsstyrd åtkomst som kräver godkända appar och APP Protection följer du anvisningarna i "steg 1: Konfigurera en princip för villkorlig åtkomst för Azure AD för Microsoft 365" i [Scenario 1: Microsoft 365-appar kräver godkända appar med skydds principer för appar](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), som tillåter Outlook för iOS och Android, men blockerar OAuth-kompatibla Exchange ActiveSync-klienter från att ansluta till Exchange Online.
 
    > [!NOTE]
    > Den här principen gör att mobila användare kan komma åt alla Office-slutpunkter med hjälp av tillämpliga appar.
@@ -234,7 +236,7 @@ Om du aktiverar mobil åtkomst till Exchange Online implementerar du [spärrar A
 
  Dessa principer använder kontrollen för [godkända klienter](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) och kräver [program skydds princip](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-Om du blockerar äldre klientautentisering för andra klient program på iOS-och Android-enheter ser du till att dessa klienter inte kan kringgå regler för villkorlig åtkomst. Om du följer anvisningarna i den här artikeln har du redan konfigurerat [blockera klienter som inte stöder modern](#block-clients-that-dont-support-modern-authentication).
+Om du blockerar äldre klientautentisering för andra klient program på iOS-och Android-enheter säkerställer du att dessa klienter inte kan kringgå principer för villkorlig åtkomst. Om du följer anvisningarna i den här artikeln har du redan konfigurerat [blockera klienter som inte stöder modern](#block-clients-that-dont-support-modern-authentication).
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

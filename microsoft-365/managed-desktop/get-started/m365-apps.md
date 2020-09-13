@@ -1,8 +1,8 @@
 ---
-title: " Microsoft 365 Apps för företag"
+title: Microsoft 365 Apps för företag
 description: Distribuera Microsoft 365-appar, hur de uppdateras och hur inställningar hanteras
 keywords: ändrings historik
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:
@@ -10,14 +10,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b3843da0d35d78486ed22af6d057930ee4ad5bc9
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 767489ba9f9ac63bc1a2d8b4999b6634335b1aef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47295275"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547752"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
+# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps för företag
 
 ## <a name="initial-deployment"></a>Inledande distribution
 
