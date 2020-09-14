@@ -13,28 +13,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Sammanfattning: Använd PowerShell för Microsoft 365 om du vill hantera principer för Skype för företag – Online, principer för användare och mötesinställningar.'
-ms.openlocfilehash: aea78d135a5d7ffbb5d8480c549d0fdee88f7d51
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Använd PowerShell för Microsoft 365 om du vill hantera principer för Skype för företag – Online, principer för användare och mötesinställningar.
+ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694773"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430040"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Hantera Skype för företag – Online med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-En av de viktigaste aktiviteterna i valfri Skype för företag – Online-administratör är hantering av principer. Även om du kan utföra vissa av de här uppgifterna i administrationscentret för Microsoft 365, kan andra uppgifter vara mycket snabbare och enklare i PowerShell. 
+Administratörer av Skype för företag – Online ansvarar för hantering av principer. Även om du kan utföra vissa av de här uppgifterna i administrationscentret för Microsoft 365, kan andra uppgifter vara enklare i PowerShell.
 
 ## <a name="before-you-start"></a>Innan du börjar
 
-Ladda ned och installera [ Anslutningsmodulen för Skype för företag – Online](https://www.microsoft.com/download/details.aspx?id=39366)och starta om datorn.
+Ladda ned och installera [ Windows PowerShellmodulen för Skype för företag – Online](https://www.microsoft.com/download/details.aspx?id=39366)och starta om datorn.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Ansluta med namnet och lösenordet för ditt administratörskonto för Skype för företag – Online
+## <a name="connect-using-skype-for-business-online-admin-credentials"></a>Ansluta med inloggningsuppgifter för Skype för företag – Online
 
-1. Öppna en Windows PowerShell kommandotolk och kör följande kommandon: 
+1. Öppna en Windows PowerShell kommandotolk och kör följande kommandon:
     
    ```powershell
    Import-Module SkypeOnlineConnector
@@ -43,10 +43,10 @@ Ladda ned och installera [ Anslutningsmodulen för Skype för företag – Onlin
    Import-PSSession $sfbSession
    ```
 
-2. I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du användarnamnet och lösenordet för ditt administratörskonto för Skype för företag – Online och klickar på **OK**.
+2. I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du användarnamnet och lösenordet för ditt administratörskonto för Skype för företag – Online och välj **OK**.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>Ansluta med ett namnet och lösenordet för ditt administratörskonto för Skype för företag – Online med multifaktorautentisering
+## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Ansluta med ett administratörskonto med multifaktorautentisering
 
 1. Öppna en Windows PowerShell kommandotolk och kör följande kommandon:
 
@@ -58,11 +58,11 @@ Ladda ned och installera [ Anslutningsmodulen för Skype för företag – Onlin
 
 2. Skriv användarnamnet för ditt administratörskonto för Skype för företag – Online när du uppmanas av kommandot **New-CsOnlineSession**.
 
-3. I dialogrutan **Logga in på ditt konto** skriver du ditt lösenordet för ditt administratörskonto för Skype för företag – Online och klickar sedan på **logga in**.
+3. I dialogrutan **Logga in på ditt konto** skriver du ditt lösenordet för ditt administratörskonto för Skype för företag – Online och välj sedan **logga in**.
 
-4. Följ anvisningarna i dialogrutan **Logga in på ditt konto** för att ange ytterligare autentiseringsinformation, till exempel en verifieringskod, och klicka sedan på **Logga in**.
+4. I dialogrutan **Logga in på ditt konto** följ anvisningarna för att lägga till autentiseringsinformation, till exempel en verifieringskod, och välj sedan **Verifiera**.
 
-Mer information finns i följande avsnitt:
+Mer information finns i:
   
 - [Hantera Skype för företag – Onlineprinciper med PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
     
@@ -75,4 +75,3 @@ Mer information finns i följande avsnitt:
 [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
 [PowerShell cmdlet-referenser för Skype för företag](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
-

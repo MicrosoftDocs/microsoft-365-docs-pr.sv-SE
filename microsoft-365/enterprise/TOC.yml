@@ -582,7 +582,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Hantera Microsoft 365-grupper
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: Hantera SharePoint Online
+    - name: Hantera SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items:
         - name: Skapa SharePoint Online-webbplatser och lägga till användare
@@ -593,7 +593,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Hantera Exchange Online
       href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
-    - name: Använda PowerShell för e-postmigrering till Microsoft 365
+    - name: Använda PowerShell till att migrera e-post till Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items:
         - name: Använda PowerShell för att utföra en snabb migrering till Microsoft 365
