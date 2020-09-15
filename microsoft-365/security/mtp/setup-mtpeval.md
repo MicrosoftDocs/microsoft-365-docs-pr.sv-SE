@@ -1,7 +1,7 @@
 ---
-title: Konfigurera utvärderings labb miljön för Microsoft Threat Protection
-description: Gå till Microsoft 365 säkerhets Center och ställ sedan in utvärderings labb miljön för Microsoft Threat Protection
-keywords: Utvärderings version av Microsoft Threat Protection prova Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab-konfiguration
+title: Ställ in ett utvärderings labb eller pilot miljö för Microsoft Threat Protection
+description: Få till gång till Microsoft 365 säkerhets Center och konfigurera sedan utvärderings labb miljön för Microsoft Threat Protection
+keywords: Utvärderings version av Microsoft Threat Protection – Microsoft Threat Protection pilot-konfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650075"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817187"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Konfigurera utvärderings labb miljön för Microsoft Threat Protection 
 
@@ -28,26 +28,26 @@ ms.locfileid: "47650075"
 - Microsoft Hotskydd 
 
 
-Att skapa en test laboratorie miljö för Microsoft Threat Protection och distribuera det är en process i tre steg:
+Att skapa ett utvärderings labb för Microsoft Threat-eller pilot miljö och distribuera det är en process i tre steg:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Förbereda ett utvärderings labb för Microsoft Threat Protection eller pilot miljö" />
       <br/>Fas 1: förbereda </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Konfigurera Microsoft Threat Protection Evaluation Lab" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Ställ in ett utvärderings labb eller pilot miljö för Microsoft Threat Protection" />
       <br/>Fas 2: konfiguration </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
-Konfigurera var and rings skydd för ditt Microsoft Threat Protection utvärderings labb miljö och få slut punkter" />
+Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
+Konfigurera var and rings skydd för ditt Microsoft Threat Protection utvärderings labb eller pilot miljö och få dina slut punkter" />
       <br/>Steg 3: Konfigurera & inbyggt </a><br>
 </td>
 
@@ -55,12 +55,12 @@ Konfigurera var and rings skydd för ditt Microsoft Threat Protection utvärderi
   </tr>
 </table>
 
-Du befinner dig i fasen inställning. Utför de första stegen för att komma åt Microsoft 365 Security Center och ställ sedan in utvärderings laboratorie miljön.
+Du befinner dig i fasen inställning. Vidta de första stegen för att komma åt Microsoft 365 Security Center och konfigurera sedan utvärderings labbet eller pilot miljön.
 
 Registrera dig för en Office 365-eller Azure Active Directory-prenumeration och generera en *. onmicrosoft.com* -klient organisation som du kan använda för att registrera dig för din Microsoft 365 E5-licens. 
 
 >[!NOTE]
->Om du redan har en prenumeration på Office 365 eller Azure Active Directory kan du hoppa över stegen för att skapa ett Office 365 E5-prov.
+>Om du redan har en prenumeration på Office 365 eller Azure Active Directory kan du hoppa över Office 365 E5-utvärderings-och pilot klient skapande anvisningar.
 
 I den här fasen vägleds du:
 - Skapa en Office 365 E5-prov klient
@@ -77,7 +77,7 @@ I den här fasen vägleds du:
 2. Slutför utvärderings registreringen genom att ange din e-postadress (privat eller företag). Klicka på **Konfigurera konto**.
 ![Bild of_Office 365 E5 prov registrerings sida för utvärderings version](../../media/mtp-eval-10.png) <br> 
 
-3. Fyll i ditt förnamn, efter namn, företags telefonnummer, företags namn, företagets storlek och land eller region.  
+3. Fyll i ditt förnamn, efter namn, företags telefonnummer, företags namn, företags storlek och land eller region.  
 <br>![Bild of_Office 365 E5 utvärderings versionen av prov registrerings sidan som frågar efter namn, telefon och företagets uppgifter](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >Det land eller den region som du anger här bestämmer vilket område i data centret som Office 365 hanteras på.
@@ -88,7 +88,7 @@ I den här fasen vägleds du:
 5. Ange det anpassade domän namnet för din klient organisation och klicka sedan på **Nästa**.
 <br>![Bild of_Office 365 E5 prov registrerings sidan där du kan konfigurera ditt eget domän namn](../../media/mtp-eval-13.png) <br>
  
-6. Konfigurera den första identiteten som är global administratör för klient organisationen. Fyll i **namn** och **lösen ord**. Klicka på **Registrera dig**.
+6. Konfigurera den första identiteten, som är global administratör för klient organisationen. Fyll i **namn** och **lösen ord**. Klicka på **Registrera dig**.
 ![Bild of_Office 365 E5 prov registrerings sidan där du kan ställa in din företags identitet](../../media/mtp-eval-14.png) <br>
 
 7. Klicka på **gå till installations programmet** för att slutföra Office 365 E5-etableringen för utvärderings version.
@@ -97,7 +97,7 @@ I den här fasen vägleds du:
 8. Anslut företags domänen till Office 365-klient organisationen. Skriver Välj **Anslut en domän som du redan äger** och skriv in ditt domän namn. Klicka på **Nästa**.
 <br>![Bild of_Office 365 E5 – installations sida där du bör anpassa inloggnings-och e-post](../../media/mtp-eval-16.png) <br>
  
-9. Du måste lägga till en TXT-eller MX-post för att verifiera domänens ägarskap. När du har lagt till TXT-eller MX-posten i domänen väljer du **Verifiera**.
+9. Lägga till en TXT-eller MX-post för att verifiera domänens ägarskap. När du har lagt till TXT-eller MX-posten i domänen väljer du **Verifiera**.
 <br>![Bild of_Office 365 E5-installationsfilen där du bör lägga till en TXT-post för att verifiera din domän](../../media/mtp-eval-17.png) <br>
  
 10. Skriver Skapa fler användar konton för din klient organisation. Du kan hoppa över det här steget genom att klicka på **Nästa**.
@@ -149,4 +149,4 @@ I den här fasen vägleds du:
 
 
 ## <a name="next-step"></a>Nästa steg
-![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) <br>Konfigurera varje skydd mot Microsoft Threat för ditt Microsoft Threat Protection Evaluation Lab och publicera dina slut punkter.
+![Steg 3: Konfigurera & inbyggt](../../media/config-onboard.png) <br>[Steg 3: Konfigurera & inbyggt](config-mtpeval.md) <br>Konfigurera varje skydd mot Microsoft Threat för ditt utvärderings labb eller pilot miljö för Microsoft Threat Protection och har gjort slut punkterna.

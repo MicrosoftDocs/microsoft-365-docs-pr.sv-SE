@@ -17,13 +17,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Hitta svar på vanliga frågor om självbetjänings köp.
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653707"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816931"
 ---
 # <a name="self-service-purchase-faq"></a>Frågor om självbetjänings köp
 
@@ -32,7 +32,7 @@ Självbetjänings köp ger användarna en chans att pröva nya tekniker och utve
 Självbetjänings köp är tillgängligt för Power Platform (Power BI, Power app och Power autoautomatisera), Project och Visio.
 
 > [!NOTE]
-> Självbetjänings köp är inte tillgängligt i Indien och är inte tillgängligt för statliga eller utbildnings kunder.
+> Självbetjänings köp är inte tillgängligt i Indien eller för andra institutioner. Project och Visio är inte tillgängliga för självbetjänings köp i Brasilien och demokratiska republiken Kongo.
 
 ## <a name="making-a-self-service-purchase"></a>Skapa ett självbetjänings köp
 
