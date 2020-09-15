@@ -26,27 +26,27 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägga till din domän i Microsoft 365 i Microsoft 365 Admin Center genom att lägga till en DNS-post hos din DNS-värd. Installations guiden hjälper dig genom processen.
-ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315723"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775165"
 ---
-# <a name="add-a-domain-to-microsoft-365"></a><span data-ttu-id="56d59-104">Lägga till en domän i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="56d59-104">Add a domain to Microsoft 365</span></span>
+# <a name="add-a-domain-to-microsoft-365"></a><span data-ttu-id="60d04-104">Lägga till en domän i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="60d04-104">Add a domain to Microsoft 365</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="56d59-105">Administrationscentret förändras.</span><span class="sxs-lookup"><span data-stu-id="56d59-105">The admin center is changing.</span></span> <span data-ttu-id="56d59-106">Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="56d59-106">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="60d04-105">Administrationscentret förändras.</span><span class="sxs-lookup"><span data-stu-id="60d04-105">The admin center is changing.</span></span> <span data-ttu-id="60d04-106">Om dina erfarenheter inte överensstämmer med uppgifterna som visas här kan du läsa mer i [Om det nya administrationscentret för Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="60d04-106">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
- <span data-ttu-id="56d59-107">**[Läs frågor och svar om domäner](domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="56d59-107">**[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="60d04-107">**[Läs frågor och svar om domäner](domains-faq.md)** om du inte hittar det du letar efter.</span><span class="sxs-lookup"><span data-stu-id="60d04-107">**[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
- <span data-ttu-id="56d59-108">*För att lägga till, ändra eller ta bort domäner **måste** du vara **Global administratör** för [företags-eller företags abonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klient organisationen, *anpassade administratörer* eller *vanliga användare* kommer inte att kunna göra dessa ändringar.*</span><span class="sxs-lookup"><span data-stu-id="56d59-108">*To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*</span></span>  
+ <span data-ttu-id="60d04-108">*För att lägga till, ändra eller ta bort domäner **måste** du vara **Global administratör** för [företags-eller företags abonnemang](https://products.office.com/business/office). Dessa ändringar påverkar hela klient organisationen, *anpassade administratörer* eller *vanliga användare* kommer inte att kunna göra dessa ändringar.*</span><span class="sxs-lookup"><span data-stu-id="60d04-108">*To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*</span></span>  
 
- <span data-ttu-id="56d59-109">Följ de här anvisningarna för att lägga till, konfigurera eller fortsätta konfigurera en domän.</span><span class="sxs-lookup"><span data-stu-id="56d59-109">Follow these steps to add, set up, or continue setting up a domain.</span></span> 
+ <span data-ttu-id="60d04-109">Följ de här anvisningarna för att lägga till, konfigurera eller fortsätta konfigurera en domän.</span><span class="sxs-lookup"><span data-stu-id="60d04-109">Follow these steps to add, set up, or continue setting up a domain.</span></span> 
 
 ::: moniker range="o365-worldwide"
   
@@ -60,108 +60,101 @@ ms.locfileid: "47315723"
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="56d59-110">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="56d59-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
+1. <span data-ttu-id="60d04-110">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="60d04-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
 ::: moniker-end
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="56d59-111">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="56d59-111">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
+1. <span data-ttu-id="60d04-111">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="60d04-111">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="56d59-112">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span><span class="sxs-lookup"><span data-stu-id="56d59-112">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span></span>
+1. <span data-ttu-id="60d04-112">Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span><span class="sxs-lookup"><span data-stu-id="60d04-112">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="56d59-113">Gå till sidan **Inställningar**-  >  **domäner** .</span><span class="sxs-lookup"><span data-stu-id="56d59-113">Go to the **Settings** > **Domains** page.</span></span> 
+2. <span data-ttu-id="60d04-113">Gå till sidan **Inställningar**-  >  **domäner** .</span><span class="sxs-lookup"><span data-stu-id="60d04-113">Go to the **Settings** > **Domains** page.</span></span> 
 
-3. <span data-ttu-id="56d59-114">Välj **Lägg till domän**.</span><span class="sxs-lookup"><span data-stu-id="56d59-114">Select **Add domain**.</span></span>
+3. <span data-ttu-id="60d04-114">Välj **Lägg till domän**.</span><span class="sxs-lookup"><span data-stu-id="60d04-114">Select **Add domain**.</span></span>
     
-4. <span data-ttu-id="56d59-115">Ange namnet på den domän som du vill lägga till och välj sedan **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="56d59-115">Enter the name of the domain you want to add, then select **Next**.</span></span>
+4. <span data-ttu-id="60d04-115">Ange namnet på den domän som du vill lägga till och välj sedan **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="60d04-115">Enter the name of the domain you want to add, then select **Next**.</span></span>
     
-5. <span data-ttu-id="56d59-116">Välj hur du vill verifiera att du äger domänen.</span><span class="sxs-lookup"><span data-stu-id="56d59-116">Choose how you want to verify that you own the domain.</span></span>
+5. <span data-ttu-id="60d04-116">Välj hur du vill verifiera att du äger domänen.</span><span class="sxs-lookup"><span data-stu-id="60d04-116">Choose how you want to verify that you own the domain.</span></span>
     
-    1. <span data-ttu-id="56d59-117">Om domän registratorn använder [domän Anslut](#domain-connect-registrars-integrating-with-microsoft-365)väljer du **Logga in på**  >  **Nästa** och Microsoft registrerar [dina poster automatiskt](../get-help-with-domains/domain-connect.md).</span><span class="sxs-lookup"><span data-stu-id="56d59-117">If your domain registrar uses [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), select **Sign in** > **Next** and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md).</span></span>
+    1. <span data-ttu-id="60d04-117">Om domän registratorn använder [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365)konfigurerar Microsoft [posterna automatiskt](../get-help-with-domains/domain-connect.md) genom att logga in på din registrator och bekräfta anslutningen till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="60d04-117">If your domain registrar uses [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md) by having you sign in to your registrar and confirm the connection to Microsoft 365.</span></span> <span data-ttu-id="60d04-118">Du kommer att återföras till administrations centret och Microsoft verifierar sedan automatiskt din domän.</span><span class="sxs-lookup"><span data-stu-id="60d04-118">You'll be returned to the admin center and Microsoft will then automatically verify your domain.</span></span>
+    2. <span data-ttu-id="60d04-119">Du kan använda en TXT-post för att verifiera din domän.</span><span class="sxs-lookup"><span data-stu-id="60d04-119">You can use a TXT record to verify your domain.</span></span> <span data-ttu-id="60d04-120">Välj det här alternativet och välj **Nästa** för att Visa anvisningar för hur du lägger till den här DNS-posten på din registrators webbplats.</span><span class="sxs-lookup"><span data-stu-id="60d04-120">Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website.</span></span> <span data-ttu-id="60d04-121">Det kan ta upp till 30 minuter innan du har lagt till posten.</span><span class="sxs-lookup"><span data-stu-id="60d04-121">This can take up to 30 minutes to verify after you've added the record.</span></span> 
+    3. <span data-ttu-id="60d04-122">Du kan lägga till en textfil till din domäns webbplats.</span><span class="sxs-lookup"><span data-stu-id="60d04-122">You can add a text file to your domain's website.</span></span> <span data-ttu-id="60d04-123">Välj och ladda ner txt-filen från installations guiden och ladda upp filen till webbplatsen på den översta nivån.</span><span class="sxs-lookup"><span data-stu-id="60d04-123">Select and download the .txt file from the setup wizard, then upload the file to your website's top level folder.</span></span> <span data-ttu-id="60d04-124">Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` .</span><span class="sxs-lookup"><span data-stu-id="60d04-124">The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`.</span></span> <span data-ttu-id="60d04-125">Vi bekräftar att du äger domänen genom att hitta filen på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="60d04-125">We'll confirm you own the domain by finding the file on your website.</span></span>
     
-    2. <span data-ttu-id="56d59-118">Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod.</span><span class="sxs-lookup"><span data-stu-id="56d59-118">You can have an email sent to the registered contact for the domain with a verification code.</span></span> <span data-ttu-id="56d59-119">Om du inte känner igen eller har åtkomst till e-postmeddelandet i posten kan du använda det tredje alternativet.</span><span class="sxs-lookup"><span data-stu-id="56d59-119">If you don't recognize or have access to the email on record, you can use the third option.</span></span>
+6. <span data-ttu-id="60d04-126">Välj hur du vill göra DNS-ändringarna obligatoriska för Microsoft att använda din domän.</span><span class="sxs-lookup"><span data-stu-id="60d04-126">Choose how you want to make the DNS changes required for Microsoft to use your domain.</span></span>
     
-    3. <span data-ttu-id="56d59-120">Du kan använda en TXT-post för att verifiera din domän.</span><span class="sxs-lookup"><span data-stu-id="56d59-120">You can use a TXT record to verify your domain.</span></span> <span data-ttu-id="56d59-121">Välj det här alternativet och välj **Nästa** för att Visa anvisningar för hur du lägger till den här DNS-posten på din registrators webbplats.</span><span class="sxs-lookup"><span data-stu-id="56d59-121">Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website.</span></span> <span data-ttu-id="56d59-122">Det kan ta upp till 30 minuter innan du har lagt till posten.</span><span class="sxs-lookup"><span data-stu-id="56d59-122">This can take up to 30 minutes to verify after you've added the record.</span></span> 
+    1. <span data-ttu-id="60d04-127">Välj **Lägg till DNS-posterna åt mig** om din registrator har stöd för [domän anslutning](#domain-connect-registrars-integrating-with-microsoft-365)och Microsoft registrerar [dina poster automatiskt](../get-help-with-domains/domain-connect.md) genom att logga in på din registrator och bekräfta anslutningen till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="60d04-127">Choose **Add the DNS records for me** if your registrar supports [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md) by having you sign in to your registrar and confirm the connection to Microsoft 365.</span></span>
+    2. <span data-ttu-id="60d04-128">Välj **jag lägger till DNS-posterna själv** om du bara vill bifoga specifika Microsoft 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och gör det senare.</span><span class="sxs-lookup"><span data-stu-id="60d04-128">Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later.</span></span> <span data-ttu-id="60d04-129">**Välj det här alternativet om du vet exakt vad du gör.**</span><span class="sxs-lookup"><span data-stu-id="60d04-129">**Choose this option if you know exactly what you're doing.**</span></span>
 
-    4. <span data-ttu-id="56d59-123">Du kan lägga till en textfil till din domäns webbplats.</span><span class="sxs-lookup"><span data-stu-id="56d59-123">You can add a text file to your domain's website.</span></span> <span data-ttu-id="56d59-124">Välj och ladda ner txt-filen från installations guiden och ladda upp filen till webbplatsen på den översta nivån.</span><span class="sxs-lookup"><span data-stu-id="56d59-124">Select and download the .txt file from the setup wizard, then upload the file to your website's top level folder.</span></span> <span data-ttu-id="56d59-125">Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` .</span><span class="sxs-lookup"><span data-stu-id="56d59-125">The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`.</span></span> <span data-ttu-id="56d59-126">Vi bekräftar att du äger domänen genom att hitta filen på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="56d59-126">We'll confirm you own the domain by finding the file on your website.</span></span>
+7. <span data-ttu-id="60d04-130">Om du väljer att *lägga till DNS-poster själv*  väljer du **Nästa** så visas en sida med alla de poster du behöver lägga till på webbplatsen för registratorer för att konfigurera din domän.</span><span class="sxs-lookup"><span data-stu-id="60d04-130">If you chose to *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain.</span></span> 
+
+    <span data-ttu-id="60d04-131">Om portalen inte känner igen din registrator kan du [följa de här allmänna anvisningarna.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span><span class="sxs-lookup"><span data-stu-id="60d04-131">If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span></span>
     
-6. <span data-ttu-id="56d59-127">Välj hur du vill göra de DNS-ändringar som krävs för att Office ska kunna använda domänen.</span><span class="sxs-lookup"><span data-stu-id="56d59-127">Choose how you want to make the DNS changes required for Office to use your domain.</span></span>
+    <span data-ttu-id="60d04-132">Kontrollera listan med [värdspecifika instruktioner](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) för att hitta din värd och följ sedan anvisningarna för att lägga till alla posterna du behöver.</span><span class="sxs-lookup"><span data-stu-id="60d04-132">Check our list of [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to find your host and follow the steps to add all the records you need.</span></span> 
     
-    1. <span data-ttu-id="56d59-128">Välj **Lägg till DNS-posterna åt mig** om du vill att Office ska konfigurera DNS automatiskt.</span><span class="sxs-lookup"><span data-stu-id="56d59-128">Choose **Add the DNS records for me** if you want Office to configure your DNS automatically.</span></span> 
+    <span data-ttu-id="60d04-133">Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md).</span><span class="sxs-lookup"><span data-stu-id="60d04-133">If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).</span></span>
     
+    <span data-ttu-id="60d04-134">Om du vill vänta senare, avmarkerar du alla tjänster och klickar på **Fortsätt**, eller i föregående steg i domän anslutningen väljer du **fler alternativ** och väljer **hoppa över detta**.</span><span class="sxs-lookup"><span data-stu-id="60d04-134">If you want to wait for later, either unselect all the services and click **Continue**, or in the previous domain connection step choose **More Options** and select **Skip this for now**.</span></span>
+    
+8. <span data-ttu-id="60d04-135">Välj **finish** – nu är du klar!</span><span class="sxs-lookup"><span data-stu-id="60d04-135">Select **Finish** - you're done!</span></span>
+
+## <a name="add-or-edit-custom-dns-records"></a><span data-ttu-id="60d04-136">Lägga till eller redigera anpassade DNS-poster</span><span class="sxs-lookup"><span data-stu-id="60d04-136">Add or edit custom DNS records</span></span>
+
+<span data-ttu-id="60d04-137">Följ stegen nedan om du vill lägga till en anpassad post för en webbplats eller tredje parts tjänst.</span><span class="sxs-lookup"><span data-stu-id="60d04-137">Follow the steps below to add a custom record for a website or 3rd party service.</span></span>
+
+1. <span data-ttu-id="60d04-138">Logga in på administrations centret för Microsoft på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .</span><span class="sxs-lookup"><span data-stu-id="60d04-138">Sign in to the Microsoft admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
+
+2. <span data-ttu-id="60d04-139">Gå till sidan **Inställningar**-   >  **domäner** .</span><span class="sxs-lookup"><span data-stu-id="60d04-139">Go to the **Settings**  > **Domains** page.</span></span>
+
+3. <span data-ttu-id="60d04-140">Välj en domän på sidan **Domäner**.</span><span class="sxs-lookup"><span data-stu-id="60d04-140">On the **Domains** page, select a domain.</span></span> 
+    
+4. <span data-ttu-id="60d04-141">Välj **anpassade poster**under **DNS-inställningar**. Välj sedan **ny anpassad post**.</span><span class="sxs-lookup"><span data-stu-id="60d04-141">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
+
+5. <span data-ttu-id="60d04-142">Välj den typ av DNS-post du vill lägga till och ange informationen för den nya posten.</span><span class="sxs-lookup"><span data-stu-id="60d04-142">Select the type of DNS record you want to add and type the information for the new record.</span></span>
+    
+6. <span data-ttu-id="60d04-143">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="60d04-143">Select **Save**.</span></span>
+
+## <a name="registrars-with-domain-connect"></a><span data-ttu-id="60d04-144">Registratorer med domän anslutning</span><span class="sxs-lookup"><span data-stu-id="60d04-144">Registrars with Domain Connect</span></span>
+
+<span data-ttu-id="60d04-145">Med [domän Connect-reservdomänkontrollanter](https://www.domainconnect.org/) kan du lägga till din domän i Microsoft 365 i en tre stegs process som tar minuter.</span><span class="sxs-lookup"><span data-stu-id="60d04-145">[Domain Connect](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
   
-    2. <span data-ttu-id="56d59-129">Välj **jag lägger till DNS-posterna själv** om du bara vill bifoga specifika Microsoft 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och gör det senare.</span><span class="sxs-lookup"><span data-stu-id="56d59-129">Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later.</span></span> <span data-ttu-id="56d59-130">**Välj det här alternativet om du vet exakt vad du gör.**</span><span class="sxs-lookup"><span data-stu-id="56d59-130">**Choose this option if you know exactly what you're doing.**</span></span>
-    
-7. <span data-ttu-id="56d59-131">Om du väljer att  *lägga till DNS-poster själv*  väljer du **Nästa** så visas en sida med alla de poster du behöver lägga till på webbplatsen för registratorer för att konfigurera din domän.</span><span class="sxs-lookup"><span data-stu-id="56d59-131">If you chose to  *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain.</span></span> 
-    
-  
-  
-    <span data-ttu-id="56d59-132">Om portalen inte känner igen din registrator kan du [följa de här allmänna anvisningarna.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span><span class="sxs-lookup"><span data-stu-id="56d59-132">If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span></span>
-    
-    <span data-ttu-id="56d59-133">Kontrollera listan med [värdspecifika instruktioner](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) för att hitta din värd och följ sedan anvisningarna för att lägga till alla posterna du behöver.</span><span class="sxs-lookup"><span data-stu-id="56d59-133">Check our list of [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to find your host and follow the steps to add all the records you need.</span></span> 
-    
-    <span data-ttu-id="56d59-134">Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md).</span><span class="sxs-lookup"><span data-stu-id="56d59-134">If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).</span></span>
-    
-    <span data-ttu-id="56d59-135">Om du vill vänta senare bläddrar du längst ned och väljer **hoppa över det här steget**.</span><span class="sxs-lookup"><span data-stu-id="56d59-135">If you want to wait for later, scroll to the bottom and select **Skip this step**.</span></span>
-    
-8. <span data-ttu-id="56d59-136">Välj **finish** – nu är du klar!</span><span class="sxs-lookup"><span data-stu-id="56d59-136">Select **Finish** - you're done!</span></span> 
-
-## <a name="add-or-edit-custom-dns-records"></a><span data-ttu-id="56d59-137">Lägga till eller redigera anpassade DNS-poster</span><span class="sxs-lookup"><span data-stu-id="56d59-137">Add or edit custom DNS records</span></span>
-
-<span data-ttu-id="56d59-138">Följ stegen nedan om du vill lägga till en anpassad post för en webbplats eller tredje parts tjänst.</span><span class="sxs-lookup"><span data-stu-id="56d59-138">Follow the steps below to add a custom record for a website or 3rd party service.</span></span>
-
-1. <span data-ttu-id="56d59-139">Logga in på administrations centret för Microsoft på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .</span><span class="sxs-lookup"><span data-stu-id="56d59-139">Sign in to the Microsoft admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
-
-2. <span data-ttu-id="56d59-140">Gå till sidan **Inställningar**-   >  **domäner** .</span><span class="sxs-lookup"><span data-stu-id="56d59-140">Go to the **Settings**  > **Domains** page.</span></span>
-
-3. <span data-ttu-id="56d59-141">Välj en domän på sidan **Domäner**.</span><span class="sxs-lookup"><span data-stu-id="56d59-141">On the **Domains** page, select a domain.</span></span> 
-    
-4. <span data-ttu-id="56d59-142">Välj **anpassade poster**under **DNS-inställningar**. Välj sedan **ny anpassad post**.</span><span class="sxs-lookup"><span data-stu-id="56d59-142">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
-
-5. <span data-ttu-id="56d59-143">Välj den typ av DNS-post du vill lägga till och ange informationen för den nya posten.</span><span class="sxs-lookup"><span data-stu-id="56d59-143">Select the type of DNS record you want to add and type the information for the new record.</span></span>
-    
-6. <span data-ttu-id="56d59-144">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="56d59-144">Select **Save**.</span></span>
-
-## <a name="registrars-with-domain-connect"></a><span data-ttu-id="56d59-145">Registratorer med domän anslutning</span><span class="sxs-lookup"><span data-stu-id="56d59-145">Registrars with Domain Connect</span></span>
-
-<span data-ttu-id="56d59-146">Med [domän Connect-reservdomänkontrollanter](https://www.domainconnect.org/) kan du lägga till din domän i Microsoft 365 i en tre stegs process som tar minuter.</span><span class="sxs-lookup"><span data-stu-id="56d59-146">[Domain Connect](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
-  
-<span data-ttu-id="56d59-147">I guiden bekräftar vi bara att du äger domänen och registrerar sedan automatiskt domänens poster, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, till exempel Teams, fungerar med din domän.</span><span class="sxs-lookup"><span data-stu-id="56d59-147">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
+<span data-ttu-id="60d04-146">I guiden bekräftar vi bara att du äger domänen och registrerar sedan automatiskt domänens poster, så att e-post kommer till Microsoft 365 och andra Microsoft 365-tjänster, till exempel Teams, fungerar med din domän.</span><span class="sxs-lookup"><span data-stu-id="60d04-146">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="56d59-148">Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.</span><span class="sxs-lookup"><span data-stu-id="56d59-148">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
+> <span data-ttu-id="60d04-147">Se till att inaktivera popup-blockerare i webbläsaren innan du startar installationsguiden.</span><span class="sxs-lookup"><span data-stu-id="60d04-147">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
   
-### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="56d59-149">Domän anslutnings registratorer som integreras med Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="56d59-149">Domain Connect registrars integrating with Microsoft 365</span></span>
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="60d04-148">Domän anslutnings registratorer som integreras med Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="60d04-148">Domain Connect registrars integrating with Microsoft 365</span></span>
 
-- [<span data-ttu-id="56d59-150">1 &amp; 1 IONOS</span><span class="sxs-lookup"><span data-stu-id="56d59-150">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
-- [<span data-ttu-id="56d59-151">123Reg</span><span class="sxs-lookup"><span data-stu-id="56d59-151">123Reg</span></span>](https://www.123-reg.co.uk/)
-- [<span data-ttu-id="56d59-152">CloudFlare</span><span class="sxs-lookup"><span data-stu-id="56d59-152">Cloudflare</span></span>](https://www.cloudflare.com/)
-- [<span data-ttu-id="56d59-153">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="56d59-153">GoDaddy</span></span>](https://www.godaddy.com/)
-- [<span data-ttu-id="56d59-154">WordPress</span><span class="sxs-lookup"><span data-stu-id="56d59-154">WordPress</span></span>](https://wordpress.com/)
-- [<span data-ttu-id="56d59-155">Plesk</span><span class="sxs-lookup"><span data-stu-id="56d59-155">Plesk</span></span>](https://www.plesk.com/)
-- [<span data-ttu-id="56d59-156">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="56d59-156">MediaTemple</span></span>](https://mediatemple.net/)
-- <span data-ttu-id="56d59-157">SecureServer eller WildWestDomains (GoDaddy åter försäljare med SecureServer DNS-värd)</span><span class="sxs-lookup"><span data-stu-id="56d59-157">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
-    - [<span data-ttu-id="56d59-158">MadDog-domäner</span><span class="sxs-lookup"><span data-stu-id="56d59-158">MadDog Domains</span></span>](https://www.maddogdomains.com/)
-    - [<span data-ttu-id="56d59-159">CheapNames</span><span class="sxs-lookup"><span data-stu-id="56d59-159">CheapNames</span></span>](https://www.cheapnames.com)
+- [<span data-ttu-id="60d04-149">1 &amp; 1 IONOS</span><span class="sxs-lookup"><span data-stu-id="60d04-149">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
+- [<span data-ttu-id="60d04-150">EuroDNS</span><span class="sxs-lookup"><span data-stu-id="60d04-150">EuroDNS</span></span>](https://www.eurodns.com/)
+- [<span data-ttu-id="60d04-151">CloudFlare</span><span class="sxs-lookup"><span data-stu-id="60d04-151">Cloudflare</span></span>](https://www.cloudflare.com/)
+- [<span data-ttu-id="60d04-152">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="60d04-152">GoDaddy</span></span>](https://www.godaddy.com/)
+- [<span data-ttu-id="60d04-153">WordPress</span><span class="sxs-lookup"><span data-stu-id="60d04-153">WordPress</span></span>](https://wordpress.com/)
+- [<span data-ttu-id="60d04-154">Plesk</span><span class="sxs-lookup"><span data-stu-id="60d04-154">Plesk</span></span>](https://www.plesk.com/)
+- [<span data-ttu-id="60d04-155">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="60d04-155">MediaTemple</span></span>](https://mediatemple.net/)
+- <span data-ttu-id="60d04-156">SecureServer eller WildWestDomains (GoDaddy åter försäljare med SecureServer DNS-värd)</span><span class="sxs-lookup"><span data-stu-id="60d04-156">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
+    - <span data-ttu-id="60d04-157">Exempel:</span><span class="sxs-lookup"><span data-stu-id="60d04-157">Examples:</span></span>
+        - [<span data-ttu-id="60d04-158">DomainsPricedRight</span><span class="sxs-lookup"><span data-stu-id="60d04-158">DomainsPricedRight</span></span>](https://www.domainspricedright.com/products/domain-registration)
+        - [<span data-ttu-id="60d04-159">DomainRightNow</span><span class="sxs-lookup"><span data-stu-id="60d04-159">DomainRightNow</span></span>](https://www.domainrightnow.com/)
 
-### <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="56d59-160">Vad händer med min e-post och webbplats?</span><span class="sxs-lookup"><span data-stu-id="56d59-160">What happens to my email and website?</span></span>
+### <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="60d04-160">Vad händer med min e-post och webbplats?</span><span class="sxs-lookup"><span data-stu-id="60d04-160">What happens to my email and website?</span></span>
 
-<span data-ttu-id="56d59-161">När du har slutfört installationen uppdateras MX-posten för domänen så att den pekar på Microsoft 365 och alla e-postmeddelanden för domänen kommer att komma till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="56d59-161">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="56d59-162">Kontrol lera att du har lagt till användare och konfigurerat post lådor i Microsoft 365 för alla som får e-post på din domän!</span><span class="sxs-lookup"><span data-stu-id="56d59-162">Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!</span></span>
+<span data-ttu-id="60d04-161">När du har slutfört installationen uppdateras MX-posten för domänen så att den pekar på Microsoft 365 och alla e-postmeddelanden för domänen kommer att komma till Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="60d04-161">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="60d04-162">Kontrol lera att du har lagt till användare och konfigurerat post lådor i Microsoft 365 för alla som får e-post på din domän!</span><span class="sxs-lookup"><span data-stu-id="60d04-162">Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!</span></span>
   
-<span data-ttu-id="56d59-163">Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är.</span><span class="sxs-lookup"><span data-stu-id="56d59-163">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="56d59-164">Anvisningarna för att konfigurera domänen påverkar inte din webbplats.</span><span class="sxs-lookup"><span data-stu-id="56d59-164">The Domain Connect setup steps don't affect your website.</span></span>
+<span data-ttu-id="60d04-163">Om du har en webbplats som du använder med ditt företag kommer den att fortsätta fungera där den är.</span><span class="sxs-lookup"><span data-stu-id="60d04-163">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="60d04-164">Anvisningarna för att konfigurera domänen påverkar inte din webbplats.</span><span class="sxs-lookup"><span data-stu-id="60d04-164">The Domain Connect setup steps don't affect your website.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="56d59-165">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="56d59-165">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="60d04-165">Relaterade artiklar</span><span class="sxs-lookup"><span data-stu-id="60d04-165">Related articles</span></span>
 
-[<span data-ttu-id="56d59-166">Vanliga frågor och svar om domäner</span><span class="sxs-lookup"><span data-stu-id="56d59-166">Domains FAQ</span></span>](domains-faq.md)
+[<span data-ttu-id="60d04-166">Vanliga frågor och svar om domäner</span><span class="sxs-lookup"><span data-stu-id="60d04-166">Domains FAQ</span></span>](domains-faq.md)
 
-[<span data-ttu-id="56d59-167">Vad är en domän?</span><span class="sxs-lookup"><span data-stu-id="56d59-167">What is a domain?</span></span>](../get-help-with-domains/what-is-a-domain.md)
+[<span data-ttu-id="60d04-167">Vad är en domän?</span><span class="sxs-lookup"><span data-stu-id="60d04-167">What is a domain?</span></span>](../get-help-with-domains/what-is-a-domain.md)
 
-[<span data-ttu-id="56d59-168">Köpa ett domännamn i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="56d59-168">Buy a domain name in Microsoft 365</span></span>](../get-help-with-domains/buy-a-domain-name.md)
+[<span data-ttu-id="60d04-168">Köpa ett domännamn i Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="60d04-168">Buy a domain name in Microsoft 365</span></span>](../get-help-with-domains/buy-a-domain-name.md)
 
-[<span data-ttu-id="56d59-169">Konfigurera din domän (tjänstspecifika instruktioner)</span><span class="sxs-lookup"><span data-stu-id="56d59-169">Set up your domain (host-specific instructions)</span></span>](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[<span data-ttu-id="60d04-169">Konfigurera din domän (tjänstspecifika instruktioner)</span><span class="sxs-lookup"><span data-stu-id="60d04-169">Set up your domain (host-specific instructions)</span></span>](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
