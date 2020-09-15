@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Översikten för konfiguration av klient organisationer för Microsoft 365.
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315759"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775153"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Klient organisations översikt för Microsoft 365
 
-Din Microsoft 365-klient är den uppsättning tjänster som är tilldelade till din organisation. Denna klient organisation är normalt kopplad till ett eller flera av dina DNS-domännamn och fungerar som en central behållare för olika prenumerationer och de licenser som du tilldelar användar konton. 
+Din Microsoft 365-klient är den uppsättning tjänster som är tilldelade till din organisation. Den här innehavaren är normalt kopplad till ett eller flera av dina DNS-domännamn och fungerar som en central behållare för olika prenumerationer och de licenser som du tilldelar användar konton.
 
 När du skapar en Microsoft 365-klient organisation tilldelar du den till en specifik geografisk plats. Du kan också ha en innehavare med flera geografiska platser och flytta klient organisationen från en plats till en annan.
 
-En välplanerad och utförd klient konfiguration är avgörande för att få den att fungera för de grundläggande tjänsterna i nätverk och identitet.
+För att få klient organisationen redo för de grundläggande tjänsterna i nätverk och identitet är det viktigt att noggrant planera och köra klient konfigurationen.
 
 ## <a name="plan"></a>Planera
 
@@ -50,13 +50,13 @@ Om du vill distribuera din klient organisation [lägger du till DNS-domänerna](
 
 Med Microsoft 365 multi-geo kan din organisation utöka sin Microsoft 365-närvaro till flera geografiska regioner och/eller länder inom din befintliga klient organisation.
 
-[Komma igång](microsoft-365-multi-geo.md) med att förstå, planera, konfigurera och administrera med Microsoft 365 multi-geo.
+Information om Microsoft 365 multi-geo, inklusive hur du planerar, konfigurerar och administrerar den, finns [här](microsoft-365-multi-geo.md).
 
 ## <a name="move-a-tenants-geographic-locations"></a>Flytta en innehavares geografiska platser
 
 Microsoft fortsätter att öppna nya data Center geografiska platser (geos) för Microsoft 365-tjänster. De här nya data Center geos lägger till kapacitet och kan beräkna resurser för att stödja kund behov och förbruknings tillväxt. Dessutom ger det nya data Center geos in-Geo data de för grundläggande kunddata.
 
-Komma igång med att förstå och begära en Geo data förflyttning med [flytt av grundläggande data till nya Microsoft 365 Data Center geo](moving-data-to-new-datacenter-geos.md).
+[Börja här](moving-data-to-new-datacenter-geos.md)om du vill ha information om Microsoft 365 Data Center geo, inklusive hur du kan begära en Geo data flytt.
 
 ## <a name="next-step"></a>Nästa steg
 

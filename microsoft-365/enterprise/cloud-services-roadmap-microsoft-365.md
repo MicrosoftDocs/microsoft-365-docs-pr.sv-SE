@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Översikten för att konfigurera moln tjänsterna för Microsoft 365.
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315771"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775141"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Cloud Services-översikt för Microsoft 365
 
 För att få fördelarna med kreativitet, samarbete och produktivitet i Microsoft 365 för företag kan du distribuera de moln tjänster som bäst passar organisationens behov.
 
-Om du har befintliga serverbaserade distributioner för Exchange, SharePoint eller Skype för företag kan du gå till [Översikt över klient-och Server program vara](client-server-software-roadmap-microsoft-365.md) för att migrera hela organisationen till Microsoft 365 för företag. Denna översikt innehåller Microsoft Office-klientprodukter, lokala Office Server-produkter och Microsoft Windows-baserade enheter.
+Om du har befintliga serverbaserade distributioner för Exchange, SharePoint eller Skype för företag och vill migrera hela organisationen till Microsoft 365 för företag kan du läsa i [Översikt över klient-och Server program vara](client-server-software-roadmap-microsoft-365.md). Denna översikt innehåller Microsoft Office-klientprodukter, lokala Office Server-produkter och Microsoft Windows- &ndash; baserade enheter.
 
 ## <a name="deploy"></a>Distribuera
 
@@ -56,12 +56,12 @@ Så här hanterar du moln tjänsterna:
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Så här fungerar Microsoft med moln tjänster för Microsoft 365
 
-För att se hur Microsofts IT-Division har distribuerats eller är att hantera Microsoft 365-moln tjänster:
+Information om hur Microsoft IT har distribuerat eller är att hantera Microsoft 365-moln tjänster:
 
-1. Gå till [Microsofts IT-presentation](https://www.microsoft.com/itshowcase).
+1. Gå till [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Välj **Sök innehåll**.
-3. I **förfina resultaten**väljer **du IT-proffs** under **mål grupp**och den moln tjänst du är intresse rad av under **produkt**.
+3. Under **förfina resultat**väljer **du IT Pro** under **mål grupp**och väljer sedan en moln tjänst under **produkt**.
 
 ## <a name="next-step"></a>Nästa steg
 
-Starta implementering av moln tjänster med [Kom igång](configure-services-and-applications.md).
+Starta implementeringen av moln tjänster. Mer information finns i [Konfigurera Microsoft 365 Enterprise Services och-program](configure-services-and-applications.md).

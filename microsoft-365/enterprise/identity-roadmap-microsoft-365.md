@@ -15,30 +15,30 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Översikt till identitet för Microsoft 365.
-ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315805"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775129"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitets översikt för Microsoft 365
 
-I Microsoft 365 för företag är en välplanerad och utförd identitets infrastruktur paves för bättre säkerhet och till gång till dina produktivitets arbets uppgifter och deras data enbart av autentiserade användare och enheter.
+I Microsoft 365 för företag är en välplanerad och utförd identitets infrastruktur paves för bättre säkerhet, inklusive begränsning av åtkomst till din produktivitets arbets belastning och deras data till enbart autentiserade användare och enheter.
 
-Titta på den här videon om du vill ha en översikt över identitets modeller och-auktorisering för Microsoft 365 för företag.
+En översikt över identitets modeller och-auktorisering för Microsoft 365 för företag finns i den här videon:
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-För identitets funktionerna i varje Microsoft 365 för företag-abonnemang, rollen för Azure Active Directory (Azure AD), lokala och molnbaserade komponenter, samt de vanligaste autentiseringsinställningarna, kan du se [förhands granskning av identitet](../downloads/m365e-identity-infra.pdf).
+Information om de olika identitets funktionerna i varje Microsoft 365 för företag-abonnemang, rollen för Azure Active Directory, både lokala och molnbaserade komponenter och de vanligaste autentiseringsinställningarna finns i [infrastruktur förhands granskningen](../downloads/m365e-identity-infra.pdf).
 
 [![Identitetsinfrastruktur (affisch)](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-Denna affisch med två sidor är ett snabbt sätt att ställa upp identitets koncept och konfigurationer för Microsoft 365 för företag.
+Granska den här tvåsidiga affischen för att snabbt komma igång med identitets koncept och konfigurationer för Microsoft 365 för företag.
 
-Du kan också [ladda ner denna affisch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) och skriva ut den i formaten Letter, Legal och tabloid (11 x 17).
+Du kan också [Ladda ned den här affischen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf). Du kan skriva ut det i Letter-, Legal-och Tabloid-format (11 x 17).
 
 ## <a name="plan"></a>Planera
 
@@ -59,7 +59,7 @@ Så här distribuerar du din identitets implementering:
 
 ### <a name="identity-and-device-access-recommendations"></a>Rekommendationer för identitets- och enhetsåtkomst
 
-Microsoft tillhandahåller en uppsättning rekommendationer för [identitets- och enhetsåtkomst](microsoft-365-policies-configurations.md) för att säkerställa en säker och produktiv arbetsstyrka. Använd rekommendationer och inställningar i de här artiklarna för identitet:
+Microsoft tillhandahåller en uppsättning rekommendationer för [åtkomst till identiteter och enheter](microsoft-365-policies-configurations.md)för att säkerställa en säker och produktiv arbets styrka. Använd rekommendationer och inställningar i de här artiklarna för identitet:
 
 - [Krav](identity-access-prerequisites.md)
 - [Vanliga principer för identitets- och enhetsåtkomst](identity-access-policies.md)
@@ -76,12 +76,12 @@ För att hantera din identitets implementering:
 Lär dig hur IT-experter på Microsoft [hanterar identiteter och säker åtkomst](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
 
 >[!Note]
->Den här IT-showcaseresurs är endast tillgänglig på engelska.
+>Den här resursen är bara tillgänglig på engelska.
 >
 
 ## <a name="how-contoso-did-identity-for-microsoft-365"></a>Hur contoso lyckades för Microsoft 365
 
-Se hur Contoso Corporation, ett fiktivt men representativt multinationellt företag, [distribuerade en hybrididentitetsinfrastruktur](contoso-identity.md) för Microsoft 365-molntjänster.
+Ett exempel på hur en fiktiv men representativ multinationella organisation har distribuerat en hybrid identitets infrastruktur för Microsoft 365-moln tjänster, se [identitet för Contoso Corporation](contoso-identity.md).
 
 ## <a name="next-step"></a>Nästa steg
 

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Lägga till din domän i Microsoft 365 i Microsoft 365 Admin Center genom att lägga till en DNS-post hos din DNS-värd. Installations guiden hjälper dig genom processen.
-ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315723"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775165"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -83,34 +83,26 @@ ms.locfileid: "47315723"
     
 5. Välj hur du vill verifiera att du äger domänen.
     
-    1. Om domän registratorn använder [domän Anslut](#domain-connect-registrars-integrating-with-microsoft-365)väljer du **Logga in på**  >  **Nästa** och Microsoft registrerar [dina poster automatiskt](../get-help-with-domains/domain-connect.md).
+    1. Om domän registratorn använder [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365)konfigurerar Microsoft [posterna automatiskt](../get-help-with-domains/domain-connect.md) genom att logga in på din registrator och bekräfta anslutningen till Microsoft 365. Du kommer att återföras till administrations centret och Microsoft verifierar sedan automatiskt din domän.
+    2. Du kan använda en TXT-post för att verifiera din domän. Välj det här alternativet och välj **Nästa** för att Visa anvisningar för hur du lägger till den här DNS-posten på din registrators webbplats. Det kan ta upp till 30 minuter innan du har lagt till posten. 
+    3. Du kan lägga till en textfil till din domäns webbplats. Välj och ladda ner txt-filen från installations guiden och ladda upp filen till webbplatsen på den översta nivån. Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` . Vi bekräftar att du äger domänen genom att hitta filen på webbplatsen.
     
-    2. Du kan välja att ett e-postmeddelande ska skickas till den registrerade kontakten för domänen med en verifieringskod. Om du inte känner igen eller har åtkomst till e-postmeddelandet i posten kan du använda det tredje alternativet.
+6. Välj hur du vill göra DNS-ändringarna obligatoriska för Microsoft att använda din domän.
     
-    3. Du kan använda en TXT-post för att verifiera din domän. Välj det här alternativet och välj **Nästa** för att Visa anvisningar för hur du lägger till den här DNS-posten på din registrators webbplats. Det kan ta upp till 30 minuter innan du har lagt till posten. 
-
-    4. Du kan lägga till en textfil till din domäns webbplats. Välj och ladda ner txt-filen från installations guiden och ladda upp filen till webbplatsen på den översta nivån. Sökvägen till filen bör se ut ungefär så här: `http://mydomain.com/ms39978200.txt` . Vi bekräftar att du äger domänen genom att hitta filen på webbplatsen.
-    
-6. Välj hur du vill göra de DNS-ändringar som krävs för att Office ska kunna använda domänen.
-    
-    1. Välj **Lägg till DNS-posterna åt mig** om du vill att Office ska konfigurera DNS automatiskt. 
-    
-  
+    1. Välj **Lägg till DNS-posterna åt mig** om din registrator har stöd för [domän anslutning](#domain-connect-registrars-integrating-with-microsoft-365)och Microsoft registrerar [dina poster automatiskt](../get-help-with-domains/domain-connect.md) genom att logga in på din registrator och bekräfta anslutningen till Microsoft 365.
     2. Välj **jag lägger till DNS-posterna själv** om du bara vill bifoga specifika Microsoft 365-tjänster till din domän eller om du vill hoppa över detta för tillfället och gör det senare. **Välj det här alternativet om du vet exakt vad du gör.**
-    
-7. Om du väljer att  *lägga till DNS-poster själv*  väljer du **Nästa** så visas en sida med alla de poster du behöver lägga till på webbplatsen för registratorer för att konfigurera din domän. 
-    
-  
-  
+
+7. Om du väljer att *lägga till DNS-poster själv*  väljer du **Nästa** så visas en sida med alla de poster du behöver lägga till på webbplatsen för registratorer för att konfigurera din domän. 
+
     Om portalen inte känner igen din registrator kan du [följa de här allmänna anvisningarna.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
     Kontrollera listan med [värdspecifika instruktioner](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) för att hitta din värd och följ sedan anvisningarna för att lägga till alla posterna du behöver. 
     
     Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Om du vill vänta senare bläddrar du längst ned och väljer **hoppa över det här steget**.
+    Om du vill vänta senare, avmarkerar du alla tjänster och klickar på **Fortsätt**, eller i föregående steg i domän anslutningen väljer du **fler alternativ** och väljer **hoppa över detta**.
     
-8. Välj **finish** – nu är du klar! 
+8. Välj **finish** – nu är du klar!
 
 ## <a name="add-or-edit-custom-dns-records"></a>Lägga till eller redigera anpassade DNS-poster
 
@@ -140,15 +132,16 @@ I guiden bekräftar vi bara att du äger domänen och registrerar sedan automati
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domän anslutnings registratorer som integreras med Microsoft 365
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
-- [123Reg](https://www.123-reg.co.uk/)
+- [EuroDNS](https://www.eurodns.com/)
 - [CloudFlare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer eller WildWestDomains (GoDaddy åter försäljare med SecureServer DNS-värd)
-    - [MadDog-domäner](https://www.maddogdomains.com/)
-    - [CheapNames](https://www.cheapnames.com)
+    - Exempel:
+        - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
+        - [DomainRightNow](https://www.domainrightnow.com/)
 
 ### <a name="what-happens-to-my-email-and-website"></a>Vad händer med min e-post och webbplats?
 
